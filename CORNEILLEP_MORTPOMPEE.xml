@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>LA MORT DE POMPÉE, TRAGÉDIE</title>
-        <author born="1606" born_location="Rouen" death="1684" death_location="Paris" academie="1647">CORNEILLE, Pierre</author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">CORNEILLE, Pierre</author>
         <date>1643</date>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE</p>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE</p>
         <p>Mai 2006</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -40,7 +41,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -52,7 +53,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1644">M. DC. XLIV. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor id="CORNEILLE, Pierre" bio="corneillep">[Pierre CORNEILLE]</docAuthor>
+      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">[Pierre CORNEILLE]</docAuthor>
       <docImprint>
         <privilege id="1644-01-22">
           <head>Privilège du roi</head>
@@ -137,31 +138,31 @@
       <castList>
         <head>ACTEURS</head>
         <castItem>
-          <role xml:id="JULESCESAR" id="JULES CÉSAR" sex="1" type="H" statut="empereur" age="A" stat_amour="amoureux">JULES CÉSAR</role>
+          <role age="A" civil="M" id="CESAR" rend="male" stat_amour="amoureux" statut="empereur" type="H" xml:id="CESAR">JULES CÉSAR</role>
         </castItem>
         <castItem>
-          <role xml:id="MARCANTOINE" id="ANTOINE" sex="1" type="H" statut="général" age="A" stat_amour="néant">MARC ANTOINE</role>
+          <role age="A" civil="M" id="ANTOINE" rend="male" stat_amour="néant" statut="général" type="H" xml:id="ANTOINE">MARC ANTOINE</role>
         </castItem>
-        <castItem><role xml:id="CORNELIE" id="CORNÉLIE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">CORNÉLIE</role>, Femme de Pompée.</castItem>
-        <castItem><role xml:id="PTOLEMEE" id="PTOLÉMÉE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">PTOLÉMÉE</role>, roi d'Égypte.</castItem>
-        <castItem><role xml:id="CLEOPATRE" id="CLÉOPATRE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="amoureux">CLÉOPATRE</role>, soeur de Ptolomée.</castItem>
-        <castItem><role xml:id="PHOTIN" id="PHOTIN" sex="1" type="H" statut="ministre" age="A" stat_amour="néant">PHOTIN</role>, chef du conseil d'Égypte.</castItem>
-        <castItem><role xml:id="ACHILLAS" id="ACHILLAS" sex="1" type="H" statut="général" age="A" stat_amour="néant">ACHILLAS</role>, lieutenant général des armées du roi d'Égypte.</castItem>
-        <castItem><role xml:id="SEPTIME" id="SEPTIME" sex="1" type="H" statut="tribun" age="A" stat_amour="néant">SEPTIME</role>, tribun romain, à la solde du roi d'Égypte.</castItem>
-        <castItem><role xml:id="CHARMION" id="CHARMION" sex="2" type="H" statut="dame d'honneur" age="A" stat_amour="néant">CHARMION</role>, dame d'honneur de Cléopâtre.</castItem>
-        <castItem><role xml:id="ACHOREE" id="ACHOREE" sex="1" type="H" statut="écuyer" age="A" stat_amour="néant">ACHORÉE</role>, écuyer de Cléopâtre.</castItem>
-        <castItem><role xml:id="PHILIPPE" id="PHILIPPE" sex="1" type="H" statut="affranchi" age="A" stat_amour="néant">PHILIPPE</role>, affranchi de Pompée.</castItem>
-        <castItem><role xml:id="Troupederomains" id="ROMAINS" sex="9" type="H" statut="soldat" age="A" stat_amour="néant">Troupe de romains</role>.</castItem>
-        <castItem><role xml:id="TroupedEgyptiens" id="EGYPTIENS" sex="9" type="H" statut="soldat" age="A" stat_amour="néant">Troupe d'Égyptiens</role>.</castItem>
+        <castItem><role age="A" civil="F" id="CORNELIE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="CORNELIE">CORNÉLIE</role>, Femme de Pompée.</castItem>
+        <castItem><role age="A" civil="M" id="PTOLEMEE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="PTOLEMEE">PTOLÉMÉE</role>, roi d'Égypte.</castItem>
+        <castItem><role age="A" civil="F" id="CLEOPATRE" rend="female" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="CLEOPATRE">CLÉOPATRE</role>, soeur de Ptolomée.</castItem>
+        <castItem><role age="A" civil="M" id="PHOTIN" rend="male" stat_amour="néant" statut="ministre" type="H" xml:id="PHOTIN">PHOTIN</role>, chef du conseil d'Égypte.</castItem>
+        <castItem><role age="A" civil="M" id="ACHILLAS" rend="male" stat_amour="néant" statut="général" type="H" xml:id="ACHILLAS">ACHILLAS</role>, lieutenant général des armées du roi d'Égypte.</castItem>
+        <castItem><role age="A" civil="M" id="SEPTIME" rend="male" stat_amour="néant" statut="tribun" type="H" xml:id="SEPTIME">SEPTIME</role>, tribun romain, à la solde du roi d'Égypte.</castItem>
+        <castItem><role age="A" civil="F" id="CHARMION" rend="female" stat_amour="néant" statut="dame d'honneur" type="H" xml:id="CHARMION">CHARMION</role>, dame d'honneur de Cléopâtre.</castItem>
+        <castItem><role age="A" civil="M" id="ACHOREE" rend="male" stat_amour="néant" statut="écuyer" type="H" xml:id="ACHOREE">ACHORÉE</role>, écuyer de Cléopâtre.</castItem>
+        <castItem><role age="A" civil="M" id="PHILIPPE" rend="male" stat_amour="néant" statut="affranchi" type="H" xml:id="PHILIPPE">PHILIPPE</role>, affranchi de Pompée.</castItem>
+        <castItem><role age="A" civil="G" id="ROMAINS" rend="group" stat_amour="néant" statut="soldat" type="H" xml:id="ROMAINS">Troupe de romains</role>.</castItem>
+        <castItem><role age="A" civil="G" id="EGYPTIENS" rend="group" stat_amour="néant" statut="soldat" type="H" xml:id="EGYPTIENS">Troupe d'Égyptiens</role>.</castItem>
       </castList>
-      <set location="Alexandrie" country="Egypte" periode="Ier avant JC">La scène est à Alexandrie, dans le palais de Ptolomée.</set>
+      <set country="Egypte" location="Alexandrie" periode="Ier avant JC">La scène est à Alexandrie, dans le palais de Ptolomée.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Ptolomée, Photin, Achillas, Septime.</head>
-          <sp xml:id="I01-1" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I01-1">
             <speaker>PTOLÉMÉE</speaker>
             <l n="1" xml:id="l1">Le destin se déclare, et nous venons d'entendre</l>
             <l n="2" xml:id="l2">Ce qu'il a résolu du beau-père et du gendre.</l>
@@ -212,7 +213,7 @@
             <l n="47" xml:id="l47">Et je puis dire enfin que jamais potentat</l>
             <l n="48" xml:id="l48">N'eut à délibérer d'un si grand coup d'état.</l>
           </sp>
-          <sp xml:id="I01-2" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="I01-2">
             <speaker>PHOTIN</speaker>
             <l n="49" xml:id="l49">Seigneur, quand par le fer les choses sont vidées,</l>
             <l n="50" xml:id="l50">La justice et le droit sont de vaines idées ;</l>
@@ -283,7 +284,7 @@
             <l n="115" xml:id="l115">Chacun a son avis ; mais quel que soit le leur.</l>
             <l n="116" xml:id="l116">Qui punit le vaincu ne craint point le vainqueur.</l>
           </sp>
-          <sp xml:id="I01-3" who="ACHILLAS">
+          <sp who="ACHILLAS" xml:id="I01-3">
             <speaker>ACHILLAS</speaker>
             <l n="117" xml:id="l117">Seigneur, Photin dit vrai ; mais quoique de Pompée</l>
             <l n="118" xml:id="l118">Je voie et la fortune et la valeur trompée,</l>
@@ -330,7 +331,7 @@
             <l n="159" xml:id="l159">J'obéis avec joie, et je serais jaloux</l>
             <l n="160" xml:id="l160">Qu'autre bras que le mien portât les premiers coups.</l>
           </sp>
-          <sp xml:id="I01-4" who="SEPTIME">
+          <sp who="SEPTIME" xml:id="I01-4">
             <speaker>SEPTIME</speaker>
             <l n="161" xml:id="l161">Seigneur, je suis romain : je connais l'un et l'autre.</l>
             <l n="162" xml:id="l162">Pompée a besoin d'aide, il vient chercher la vôtre ;</l>
@@ -361,7 +362,7 @@
             <l n="187" xml:id="l187">Mais suivant d'Achillas le conseil hasardeux,</l>
             <l n="188" xml:id="l188">Vous n'en gagnez aucun, et les perdez tous deux.</l>
           </sp>
-          <sp xml:id="I01-5" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I01-5">
             <speaker>PTOLÉMÉE</speaker>
             <l n="189" xml:id="l189">N'examinons donc plus la justice des causes,</l>
             <l n="190" xml:id="l190">Et cédons au torrent qui roule toutes choses.</l>
@@ -384,20 +385,20 @@
             <l n="207" xml:id="l207">Qu'il plaise au ciel ou non, laissez-m'en le souci.</l>
             <l n="208" xml:id="l208">Je crois qu'il veut sa mort, puisqu'il l'amène ici.</l>
           </sp>
-          <sp xml:id="I01-6" who="ACHILLAS">
+          <sp who="ACHILLAS" xml:id="I01-6">
             <speaker>ACHILLAS</speaker>
             <l n="209" xml:id="l209">Seigneur, je crois tout juste alors qu'un roi l'ordonne.</l>
           </sp>
-          <sp xml:id="I01-7" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I01-7">
             <speaker>PTOLÉMÉE</speaker>
             <l n="210" xml:id="l210">Allez, et hâtez-vous d'assurer ma couronne,</l>
             <l n="211" xml:id="l211">Et vous ressouvenez que je mets en vos mains</l>
             <l n="212" xml:id="l212">Le destin de l'Égypte et celui des Romains.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCENE II. Ptolomée, Photin.</head>
-          <sp xml:id="I02-1" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I02-1">
             <speaker>PTOLÉMÉE</speaker>
             <l n="213" xml:id="l213">Photin, ou je me trompe, ou ma soeur est déçue :</l>
             <l n="214" xml:id="l214">De l'abord de Pompée elle espère autre issue.</l>
@@ -410,7 +411,7 @@
             <l n="221" xml:id="l221">Où de son vain orgueil les cendres rallumées</l>
             <l n="222" xml:id="l222">Poussent déjà dans l'air de nouvelles fumées.</l>
           </sp>
-          <sp xml:id="I02-2" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="I02-2">
             <speaker>PHOTIN</speaker>
             <l n="223" xml:id="l223">Seigneur, c'est un motif que je ne disais pas,</l>
             <l n="224" xml:id="l224">Qui devait de Pompée avancer le trépas.</l>
@@ -427,105 +428,105 @@
             <l n="235" xml:id="l235">Et les raisons d'état... Mais, seigneur, la voici.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Ptolomée, Cléopâtre, Photin.</head>
-          <sp xml:id="I03-1" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-1">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="236" xml:id="l236">Seigneur, Pompée arrive, et vous êtes ici !</l>
           </sp>
-          <sp xml:id="I03-2" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-2">
             <speaker>PTOLÉMÉE</speaker>
             <l n="237" xml:id="l237">J'attends dans mon palais ce guerrier magnanime,</l>
             <l n="238" xml:id="l238">Et lui viens d'envoyer Achillas et Septime.</l>
           </sp>
-          <sp xml:id="I03-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-3">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="239" xml:id="l239">Quoi ? Septime à Pompée, à Pompée Achillas !</l>
           </sp>
-          <sp xml:id="I03-4" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-4">
             <speaker>PTOLÉMÉE</speaker>
             <l n="240" xml:id="l240">Si ce n'est assez d'eux, allez, suivez leurs pas.</l>
           </sp>
-          <sp xml:id="I03-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-5">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="241" xml:id="l241">Donc pour le recevoir c'est trop que de vous-même ?</l>
           </sp>
-          <sp xml:id="I03-6" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-6">
             <speaker>PTOLÉMÉE</speaker>
             <l n="242" xml:id="l242">Ma soeur, je dois garder l'honneur du diadème.</l>
           </sp>
-          <sp xml:id="I03-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-7">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="243" xml:id="l243">Si vous en portez un, ne vous en souvenez</l>
             <l n="244" xml:id="l244">Que pour baiser la main de qui vous le tenez,</l>
             <l n="245" xml:id="l245">Que pour en faire hommage aux pieds d'un si grand homme.</l>
           </sp>
-          <sp xml:id="I03-8" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-8">
             <speaker>PTOLÉMÉE</speaker>
             <l n="246" xml:id="l246">Au sortir de Pharsale est-ce ainsi qu'on le nomme ?</l>
           </sp>
-          <sp xml:id="I03-9" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-9">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="247" xml:id="l247">Fût-il dans son malheur de tous abandonné,</l>
             <l n="248" xml:id="l248">Il est toujours Pompée, et vous a couronné.</l>
           </sp>
-          <sp xml:id="I03-10" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-10">
             <speaker>PTOLÉMÉE</speaker>
             <l n="249" xml:id="l249">Il n'en est plus que l'ombre, et couronna mon père,</l>
             <l n="250" xml:id="l250">Dont l'ombre et non pas moi lui doit ce qu'il espère.</l>
             <l n="251" xml:id="l251">Il peut aller, s'il veut, dessus son monument</l>
             <l n="252" xml:id="l252">Recevoir ses devoirs et son remerciement.</l>
           </sp>
-          <sp xml:id="I03-11" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-11">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="253" xml:id="l253">Après un tel bienfait, c'est ainsi qu'on le traite !</l>
           </sp>
-          <sp xml:id="I03-12" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-12">
             <speaker>PTOLÉMÉE</speaker>
             <l n="254" xml:id="l254">Je m'en souviens, ma soeur, et je vois sa défaite.</l>
           </sp>
-          <sp xml:id="I03-13" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-13">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="255" xml:id="l255">Vous la voyez de vrai, mais d'un oeil de mépris.</l>
           </sp>
-          <sp xml:id="I03-14" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-14">
             <speaker>PTOLÉMÉE</speaker>
             <l n="256" xml:id="l256">Le temps de chaque chose ordonne et fait le prix.</l>
             <l n="257" xml:id="l257">Vous qui l'estimez tant, allez lui rendre hommage ;</l>
             <l n="258" xml:id="l258">Mais songez qu'au port même il peut faire naufrage.</l>
           </sp>
-          <sp xml:id="I03-15" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-15">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="259" xml:id="l259">Il peut faire naufrage, et même dans le port !</l>
             <l n="260" xml:id="l260">Quoi ? Vous auriez osé lui préparer la mort !</l>
           </sp>
-          <sp xml:id="I03-16" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-16">
             <speaker>PTOLÉMÉE</speaker>
             <l n="261" xml:id="l261">J'ai fait ce que les dieux m'ont inspiré de faire,</l>
             <l n="262" xml:id="l262">Et que pour mon état j'ai jugé nécessaire.</l>
           </sp>
-          <sp xml:id="I03-17" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-17">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="263" xml:id="l263">Je ne le vois que trop, Photin et ses pareils</l>
             <l n="264" xml:id="l264">Vous ont empoisonné de leurs lâches conseils :</l>
             <l n="265" xml:id="l265">Ces âmes que le ciel ne forma que de boue...</l>
           </sp>
-          <sp xml:id="I03-18" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="I03-18">
             <speaker>PHOTIN</speaker>
             <l n="266" xml:id="l266">Ce sont de nos conseils, oui, madame, et j'avoue...</l>
           </sp>
-          <sp xml:id="I03-19" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-19">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="267" xml:id="l267">Photin, je parle au roi ; vous répondrez pour tous</l>
             <l n="268" xml:id="l268">Quand je m'abaisserai jusqu'à parler à vous.</l>
           </sp>
-          <sp xml:id="I03-20" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-20">
             <speaker>PTOLÉMÉE, à Photin.</speaker>
             <l n="269" xml:id="l269">Il faut un peu souffrir de cette humeur hautaine.</l>
             <l n="270" xml:id="l270">Je sais votre innocence, et je connais sa haine ;</l>
             <l n="271" xml:id="l271">Après tout, c'est ma soeur, oyez sans repartir.</l>
           </sp>
-          <sp xml:id="I03-21" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-21">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="272" xml:id="l272">Ah ! S'il est encore temps de vous en repentir,</l>
             <l n="273" xml:id="l273">Affranchissez-vous d'eux et de leur tyrannie ;</l>
@@ -533,7 +534,7 @@
             <l n="275" xml:id="l275">Cette haute vertu dont le ciel et le sang</l>
             <l n="276" xml:id="l276">Enflent toujours les coeurs de ceux de notre rang.</l>
           </sp>
-          <sp xml:id="I03-22" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-22">
             <speaker>PTOLÉMÉE</speaker>
             <l n="277" xml:id="l277">Quoi ? D'un frivole espoir déjà préoccupée,</l>
             <l n="278" xml:id="l278">Vous me parlez en reine en parlant de Pompée ;</l>
@@ -541,9 +542,9 @@
             <l n="280" xml:id="l280">Fait agir l'intérêt sous le nom de vertu !</l>
             <l n="281" xml:id="l281">Confessez-le, ma soeur, vous sauriez vous en taire,</l>
             <l n="282" xml:id="l282">N'était le testament du feu roi notre père :</l>
-            <l n="283" xml:id="l283" part="I">Vous savez qu'il le garde.</l>
+            <l n="283" part="I" xml:id="l283">Vous savez qu'il le garde.</l>
           </sp>
-          <sp xml:id="I03-23" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-23">
             <speaker>CLÉOPÂTRE</speaker>
             <l part="F">Et vous saurez aussi</l>
             <l n="284" xml:id="l284">Que la seule vertu me fait parler ainsi,</l>
@@ -584,11 +585,11 @@
             <l n="319" xml:id="l319">Et l'osez accuser d'une aveugle amitié,</l>
             <l n="320" xml:id="l320">Quand du tout qu'il me doit il me rend la moitié.</l>
           </sp>
-          <sp xml:id="I03-24" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I03-24">
             <speaker>PTOLÉMÉE</speaker>
             <l n="321" xml:id="l321">Certes, ma soeur, le conte est fait avec adresse.</l>
           </sp>
-          <sp xml:id="I03-25" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-25">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="322" xml:id="l322">César viendra bientôt, et j'en ai lettre expresse ;</l>
             <l n="323" xml:id="l323">Et peut-être aujourd'hui vos yeux seront témoins</l>
@@ -607,13 +608,13 @@
             <l n="336" xml:id="l336">Quel était l'intérêt qui me faisait parler.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Ptolomée, Photin.</head>
-          <sp xml:id="I04-1" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I04-1">
             <speaker>PTOLÉMÉE</speaker>
             <l n="337" xml:id="l337">Que dites-vous, ami, de cette âme orgueilleuse ?</l>
           </sp>
-          <sp xml:id="I04-2" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="I04-2">
             <speaker>PHOTIN</speaker>
             <l n="338" xml:id="l338">Seigneur, cette surprise est pour moi merveilleuse ;</l>
             <l n="339" xml:id="l339">Je n'en sais que penser, et mon coeur étonné</l>
@@ -621,11 +622,11 @@
             <l n="341" xml:id="l341">Inconstant et confus dans son incertitude,</l>
             <l n="342" xml:id="l342">Ne se résout à rien qu'avec inquiétude.</l>
           </sp>
-          <sp xml:id="I04-3" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I04-3">
             <speaker>PTOLÉMÉE</speaker>
-            <l n="343" xml:id="l343" part="I">Sauverons-nous Pompée ?</l>
+            <l n="343" part="I" xml:id="l343">Sauverons-nous Pompée ?</l>
           </sp>
-          <sp xml:id="I04-4" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="I04-4">
             <speaker>PHOTIN</speaker>
             <l part="F">Il faudrait faire effort,</l>
             <l n="344" xml:id="l344">Si nous l'avions sauvé, pour conclure sa mort.</l>
@@ -634,36 +635,36 @@
             <l n="347" xml:id="l347">La tête de Pompée est l'unique présent</l>
             <l n="348" xml:id="l348">Qui vous fasse contre elle un rempart suffisant.</l>
           </sp>
-          <sp xml:id="I04-5" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I04-5">
             <speaker>PTOLÉMÉE</speaker>
             <l n="349" xml:id="l349">Ce dangereux esprit a beaucoup d'artifice.</l>
           </sp>
-          <sp xml:id="I04-6" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="I04-6">
             <speaker>PHOTIN</speaker>
             <l n="350" xml:id="l350">Son artifice est peu contre un si grand service.</l>
           </sp>
-          <sp xml:id="I04-7" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I04-7">
             <speaker>PTOLÉMÉE</speaker>
             <l n="351" xml:id="l351">Mais si, tout grand qu'il est, il cède à ses appas ?</l>
           </sp>
-          <sp xml:id="I04-8" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="I04-8">
             <speaker>PHOTIN</speaker>
             <l n="352" xml:id="l352">Il la faudra flatter ; mais ne m'en croyez pas,</l>
             <l n="353" xml:id="l353">Et pour mieux empêcher qu'elle ne vous opprime,</l>
             <l n="354" xml:id="l354">Consultez-en encore Achillas et Septime.</l>
           </sp>
-          <sp xml:id="I04-9" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="I04-9">
             <speaker>PTOLÉMÉE</speaker>
             <l n="355" xml:id="l355">Allons donc les voir faire, et montons à la tour ;</l>
             <l n="356" xml:id="l356">Et nous en résoudrons ensemble à leur retour.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Cléopâtre, Charmion.</head>
-          <sp xml:id="II01-1" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II01-1">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="357" xml:id="l357">Je l'aime ; mais l'éclat d'une si belle flamme,</l>
             <l n="358" xml:id="l358">Quelque brillant qu'il soit, n'éblouit point mon âme,</l>
@@ -674,7 +675,7 @@
             <l n="363" xml:id="l363">Et je le traiterais avec indignité,</l>
             <l n="364" xml:id="l364">Si j'aspirais à lui par une lâcheté.</l>
           </sp>
-          <sp xml:id="II01-2" who="CHARMION">
+          <sp who="CHARMION" xml:id="II01-2">
             <speaker>CHARMION</speaker>
             <l n="365" xml:id="l365">Quoi ? Vous aimez César, et si vous étiez crue,</l>
             <l n="366" xml:id="l366">L'Égypte pour Pompée armerait à sa vue,</l>
@@ -682,7 +683,7 @@
             <l n="368" xml:id="l368">Du destin de Pharsale arrêterait le cours !</l>
             <l n="369" xml:id="l369">L'amour certes sur vous a bien peu de puissance.</l>
           </sp>
-          <sp xml:id="II01-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II01-3">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="370" xml:id="l370">Les princes ont cela de leur haute naissance :</l>
             <l n="371" xml:id="l371">Leur âme dans leur sang prend des impressions</l>
@@ -696,28 +697,28 @@
             <l n="379" xml:id="l379">Il croit cette âme basse, et se montre sans foi ;</l>
             <l n="380" xml:id="l380">Mais s'il croyait la sienne, il agirait en roi.</l>
           </sp>
-          <sp xml:id="II01-4" who="CHARMION">
+          <sp who="CHARMION" xml:id="II01-4">
             <speaker>CHARMION</speaker>
             <l n="381" xml:id="l381">Ainsi donc de César l'amante et l'ennemie...</l>
           </sp>
-          <sp xml:id="II01-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II01-5">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="382" xml:id="l382">Je lui garde ma flamme exempte d'infamie,</l>
-            <l n="383" xml:id="l383" part="I">Un coeur digne de lui.</l>
+            <l n="383" part="I" xml:id="l383">Un coeur digne de lui.</l>
           </sp>
-          <sp xml:id="II01-6" who="CHARMION">
+          <sp who="CHARMION" xml:id="II01-6">
             <speaker>CHARMION</speaker>
             <l part="F">Vous possédez le sien ?</l>
           </sp>
-          <sp xml:id="II01-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II01-7">
             <speaker>CLÉOPÂTRE</speaker>
-            <l n="384" xml:id="l384" part="I">Je crois le posséder.</l>
+            <l n="384" part="I" xml:id="l384">Je crois le posséder.</l>
           </sp>
-          <sp xml:id="II01-8" who="CHARMION">
+          <sp who="CHARMION" xml:id="II01-8">
             <speaker>CHARMION</speaker>
             <l part="F">Mais le savez-vous bien ?</l>
           </sp>
-          <sp xml:id="II01-9" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II01-9">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="385" xml:id="l385">Apprends qu'une princesse aimant sa renommée,</l>
             <l n="386" xml:id="l386">Quand elle dit qu'elle aime, est sûre d'être aimée,</l>
@@ -746,7 +747,7 @@
             <l n="409" xml:id="l409">Et ma rigueur, mêlée aux faveurs de la guerre,</l>
             <l n="410" xml:id="l410">Ferait un malheureux du maître de la terre.</l>
           </sp>
-          <sp xml:id="II01-10" who="CHARMION">
+          <sp who="CHARMION" xml:id="II01-10">
             <speaker>CHARMION</speaker>
             <l n="411" xml:id="l411">J'oserais bien jurer que vos charmants appas</l>
             <l n="412" xml:id="l412">Se vantent d'un pouvoir dont ils n'useront pas,</l>
@@ -757,18 +758,18 @@
             <l n="417" xml:id="l417">Et qu'avec Calphurnie un paisible hyménée</l>
             <l n="418" xml:id="l418">Par des liens sacrés tient son âme enchaînée ?</l>
           </sp>
-          <sp xml:id="II01-11" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II01-11">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="419" xml:id="l419">Le divorce, aujourd'hui si commun aux Romains,</l>
             <l n="420" xml:id="l420">Peut rendre en ma faveur tous ces obstacles vains :</l>
             <l n="421" xml:id="l421">César en sait l'usage et la cérémonie ;</l>
             <l n="422" xml:id="l422">Un divorce chez lui fit place à Calphurnie.</l>
           </sp>
-          <sp xml:id="II01-12" who="CHARMION">
+          <sp who="CHARMION" xml:id="II01-12">
             <speaker>CHARMION</speaker>
             <l n="423" xml:id="l423">Par cette même voie il pourra vous quitter.</l>
           </sp>
-          <sp xml:id="II01-13" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II01-13">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="424" xml:id="l424">Peut-être mon bonheur saura mieux l'arrêter ;</l>
             <l n="425" xml:id="l425">Peut-être mon amour aura quelque avantage</l>
@@ -795,14 +796,14 @@
             <l n="446" xml:id="l446">Par qui j'en apprendrai la nouvelle assurée.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Cléopâtre, Achorée, Charmion.</head>
-          <sp xml:id="II02-1" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II02-1">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="447" xml:id="l447">En est-ce déjà fait, et nos bords malheureux</l>
             <l n="448" xml:id="l448">Sont-ils déjà souillés d'un sang si généreux ?</l>
           </sp>
-          <sp xml:id="II02-2" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="II02-2">
             <speaker>ACHORÉE</speaker>
             <l n="449" xml:id="l449">Madame, j'ai couru par votre ordre au rivage ;</l>
             <l n="450" xml:id="l450">J'ai vu la trahison, j'ai vu toute sa rage ;</l>
@@ -853,12 +854,12 @@
             <l n="495" xml:id="l495">Et croit que César même à de si grands malheurs</l>
             <l n="496" xml:id="l496">Ne pourra refuser des soupirs et des pleurs.</l>
           </sp>
-          <sp xml:id="II02-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II02-3">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="497" xml:id="l497">N'épargnez pas les miens : achevez, Achorée,</l>
             <l n="498" xml:id="l498">L'histoire d'une mort que j'ai déjà pleurée.</l>
           </sp>
-          <sp xml:id="II02-4" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="II02-4">
             <speaker>ACHORÉE</speaker>
             <l n="499" xml:id="l499">On l'amène ; et du port nous le voyons venir,</l>
             <l n="500" xml:id="l500">Sans que pas un d'entre eux daigne l'entretenir.</l>
@@ -871,7 +872,7 @@
             <l n="507" xml:id="l507">Tandis qu'Achillas même, épouvanté d'horreur,</l>
             <l n="508" xml:id="l508">De ces quatre enragés admire la fureur.</l>
           </sp>
-          <sp xml:id="II02-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II02-5">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="509" xml:id="l509">Vous qui livrez la terre aux discordes civiles,</l>
             <l n="510" xml:id="l510">Si vous vengez sa mort, dieux, épargnez nos villes !</l>
@@ -879,7 +880,7 @@
             <l n="512" xml:id="l512">Le crime de l'Égypte est fait par des Romains.</l>
             <l n="513" xml:id="l513">Mais que fait et que dit ce généreux courage ?</l>
           </sp>
-          <sp xml:id="II02-6" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="II02-6">
             <speaker>ACHORÉE</speaker>
             <l n="514" xml:id="l514">D'un des pans de sa robe il couvre son visage,</l>
             <l n="515" xml:id="l515">À son mauvais destin en aveugle obéit,</l>
@@ -936,7 +937,7 @@
             <l n="566" xml:id="l566">On voit d'ailleurs César venir de Thessalie :</l>
             <l n="567" xml:id="l567">Une flotte paraît qu'on a peine à compter...</l>
           </sp>
-          <sp xml:id="II02-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II02-7">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="568" xml:id="l568">C'est lui-même, Achorée, il n'en faut point douter.</l>
             <l n="569" xml:id="l569">Tremblez, tremblez, méchants, voici venir la foudre ;</l>
@@ -962,61 +963,61 @@
             <l n="589" xml:id="l589">Rendez l'augure faux, dieux qui voyez mes larmes,</l>
             <l n="590" xml:id="l590">Et secondez partout et mes voeux et ses armes !</l>
           </sp>
-          <sp xml:id="II02-8" who="CHARMION">
+          <sp who="CHARMION" xml:id="II02-8">
             <speaker>CHARMION</speaker>
             <l n="591" xml:id="l591">Madame, le roi vient, qui pourra vous ouïr.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Ptolomée, Cléopâtre, Charmion.</head>
-          <sp xml:id="II03-1" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-1">
             <speaker>PTOLÉMÉE</speaker>
             <l n="592" xml:id="l592">Savez-vous le bonheur dont nous allons jouir,</l>
-            <l n="593" xml:id="l593" part="I">Ma soeur ?</l>
+            <l n="593" part="I" xml:id="l593">Ma soeur ?</l>
           </sp>
-          <sp xml:id="II03-2" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-2">
             <speaker>CLÉOPÂTRE</speaker>
             <l part="F">Oui, je le sais, le grand César arrive :</l>
             <l n="594" xml:id="l594">Sous les lois de Photin je ne suis plus captive.</l>
           </sp>
-          <sp xml:id="II03-3" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-3">
             <speaker>PTOLÉMÉE</speaker>
             <l n="595" xml:id="l595">Vous haïssez toujours ce fidèle sujet ?</l>
           </sp>
-          <sp xml:id="II03-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-4">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="596" xml:id="l596">Non, mais en liberté je ris de son projet.</l>
           </sp>
-          <sp xml:id="II03-5" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-5">
             <speaker>PTOLÉMÉE</speaker>
             <l n="597" xml:id="l597">Quel projet faisait-il dont vous pussiez vous plaindre ?</l>
           </sp>
-          <sp xml:id="II03-6" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-6">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="598" xml:id="l598">J'en ai souffert beaucoup, et j'avais plus à craindre :</l>
             <l n="599" xml:id="l599">Un si grand politique est capable de tout ;</l>
             <note type="L">Donner les mains : Donner les mains à quelque chose, y consentir, y condescendre. [L]</note>
             <l n="600" xml:id="l600">Et vous donnez les mains à tout ce qu'il résout.</l>
           </sp>
-          <sp xml:id="II03-7" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-7">
             <speaker>PTOLÉMÉE</speaker>
             <l n="601" xml:id="l601">Si je suis ses conseils, j'en connais la prudence.</l>
           </sp>
-          <sp xml:id="II03-8" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-8">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="602" xml:id="l602">Si j'en crains les effets, j'en vois la violence.</l>
           </sp>
-          <sp xml:id="II03-9" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-9">
             <speaker>PTOLÉMÉE</speaker>
             <l n="603" xml:id="l603">Pour le bien de l'état tout est juste en un roi.</l>
           </sp>
-          <sp xml:id="II03-10" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-10">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="604" xml:id="l604">Ce genre de justice est à craindre pour moi :</l>
             <l n="605" xml:id="l605">Après ma part du sceptre, à ce titre usurpée,</l>
             <l n="606" xml:id="l606">Il en coûte la vie et la tête à Pompée.</l>
           </sp>
-          <sp xml:id="II03-11" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-11">
             <speaker>PTOLÉMÉE</speaker>
             <l n="607" xml:id="l607">Jamais un coup d'état ne fut mieux entrepris.</l>
             <l n="608" xml:id="l608">Le voulant secourir, César nous eût surpris :</l>
@@ -1025,48 +1026,48 @@
             <l n="611" xml:id="l611">Mais je puis maintenant à cet heureux vainqueur</l>
             <l n="612" xml:id="l612">Offrir en sûreté mon trône et votre coeur.</l>
           </sp>
-          <sp xml:id="II03-12" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-12">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="613" xml:id="l613">Je ferai mes présents ; n'ayez soin que des vôtres,</l>
             <l n="614" xml:id="l614">Et dans vos intérêts n'en confondez point d'autres.</l>
           </sp>
-          <sp xml:id="II03-13" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-13">
             <speaker>PTOLÉMÉE</speaker>
             <l n="615" xml:id="l615">Les vôtres sont les miens, étant de même sang.</l>
           </sp>
-          <sp xml:id="II03-14" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-14">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="616" xml:id="l616">Vous pouvez dire encore, étant de même rang,</l>
             <l n="617" xml:id="l617">étant rois l'un et l'autre ; et toutefois je pense</l>
             <l n="618" xml:id="l618">Que nos deux intérêts ont quelque différence.</l>
           </sp>
-          <sp xml:id="II03-15" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-15">
             <speaker>PTOLÉMÉE</speaker>
             <l n="619" xml:id="l619">Oui, ma soeur ; car l'état dont mon coeur est content,</l>
             <l n="620" xml:id="l620">Sur quelques bords du Nil à grand'peine s'étend ;</l>
             <l n="621" xml:id="l621">Mais César, à vos lois soumettant son courage,</l>
             <l n="622" xml:id="l622">Vous va faire régner sur le Gange et le Tage.</l>
           </sp>
-          <sp xml:id="II03-16" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-16">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="623" xml:id="l623">J'ai de l'ambition, mais je la sais régler :</l>
             <l n="624" xml:id="l624">Elle peut m'éblouir, et non pas m'aveugler.</l>
             <l n="625" xml:id="l625">Ne parlons point ici du Tage ni du Gange ;</l>
             <l n="626" xml:id="l626">Je connais ma portée, et ne prends point le change.</l>
           </sp>
-          <sp xml:id="II03-17" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-17">
             <speaker>PTOLÉMÉE</speaker>
             <l n="627" xml:id="l627">L'occasion vous rit, et vous en userez.</l>
           </sp>
-          <sp xml:id="II03-18" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-18">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="628" xml:id="l628">Si je n'en use bien, vous m'en accuserez.</l>
           </sp>
-          <sp xml:id="II03-19" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-19">
             <speaker>PTOLÉMÉE</speaker>
             <l n="629" xml:id="l629">J'en espère beaucoup, vu l'amour qui l'engage.</l>
           </sp>
-          <sp xml:id="II03-20" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-20">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="630" xml:id="l630">Vous la craignez peut-être encore davantage ;</l>
             <l n="631" xml:id="l631">Mais quelque occasion qui me rie aujourd'hui,</l>
@@ -1074,27 +1075,27 @@
             <l n="633" xml:id="l633">Je ne garde pour vous ni haine ni colère,</l>
             <l n="634" xml:id="l634">Et je suis bonne soeur, si vous n'êtes bon frère.</l>
           </sp>
-          <sp xml:id="II03-21" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-21">
             <speaker>PTOLÉMÉE</speaker>
             <l n="635" xml:id="l635">Vous montrez cependant un peu bien du mépris.</l>
           </sp>
-          <sp xml:id="II03-22" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-22">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="636" xml:id="l636">Le temps de chaque chose ordonne et fait le prix.</l>
           </sp>
-          <sp xml:id="II03-23" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-23">
             <speaker>PTOLÉMÉE</speaker>
             <l n="637" xml:id="l637">Votre façon d'agir le fait assez connaître.</l>
           </sp>
-          <sp xml:id="II03-24" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-24">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="638" xml:id="l638">Le grand César arrive, et vous avez un maître.</l>
           </sp>
-          <sp xml:id="II03-25" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II03-25">
             <speaker>PTOLÉMÉE</speaker>
             <l n="639" xml:id="l639">Il l'est de tout le monde, et je l'ai fait le mien.</l>
           </sp>
-          <sp xml:id="II03-26" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-26">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="640" xml:id="l640">Allez lui rendre hommage, et j'attendrai le sien ;</l>
             <l n="641" xml:id="l641">Allez, ce n'est pas trop pour lui que de vous-même :</l>
@@ -1103,9 +1104,9 @@
             <l n="644" xml:id="l644">Consultez avec lui quel est votre devoir.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Ptolomée, Photin.</head>
-          <sp xml:id="II04-1" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II04-1">
             <speaker>PTOLÉMÉE</speaker>
             <l n="645" xml:id="l645">J'ai suivi tes conseils ; mais plus je l'ai flattée,</l>
             <l n="646" xml:id="l646">Et plus dans l'insolence elle s'est emportée ;</l>
@@ -1126,7 +1127,7 @@
             <l n="661" xml:id="l661">Et ne permettons pas qu'après tant de bravades,</l>
             <l n="662" xml:id="l662">Mon sceptre soit le prix d'une de ses oeillades.</l>
           </sp>
-          <sp xml:id="II04-2" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="II04-2">
             <speaker>PHOTIN</speaker>
             <l n="663" xml:id="l663">Seigneur, ne donnez point de prétexte à César</l>
             <l n="664" xml:id="l664">Pour attacher l'Égypte aux pompes de son char.</l>
@@ -1139,29 +1140,29 @@
             <l n="671" xml:id="l671">Et pour s'assujettir et vos états et vous,</l>
             <l n="672" xml:id="l672">Imputerait à crime un si juste courroux.</l>
           </sp>
-          <sp xml:id="II04-3" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II04-3">
             <speaker>PTOLÉMÉE</speaker>
             <l n="673" xml:id="l673">Si Cléopatre vit, s'il la voit, elle est reine.</l>
           </sp>
-          <sp xml:id="II04-4" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="II04-4">
             <speaker>PHOTIN</speaker>
             <l n="674" xml:id="l674">Si Cléopatre meurt, votre perte est certaine.</l>
           </sp>
-          <sp xml:id="II04-5" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II04-5">
             <speaker>PTOLÉMÉE</speaker>
             <l n="675" xml:id="l675">Je perdrai qui me perd, ne pouvant me sauver.</l>
           </sp>
-          <sp xml:id="II04-6" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="II04-6">
             <speaker>PHOTIN</speaker>
             <l n="676" xml:id="l676">Pour la perdre avec joie, il faut vous conserver.</l>
           </sp>
-          <sp xml:id="II04-7" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II04-7">
             <speaker>PTOLÉMÉE</speaker>
             <l n="677" xml:id="l677">Quoi ? Pour voir sur sa tête éclater ma couronne ?</l>
             <l n="678" xml:id="l678">Sceptre, s'il faut enfin que ma main t'abandonne,</l>
             <l n="679" xml:id="l679">Passe, passe plutôt en celle du vainqueur.</l>
           </sp>
-          <sp xml:id="II04-8" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="II04-8">
             <speaker>PHOTIN</speaker>
             <l n="680" xml:id="l680">Vous l'arracherez mieux de celle d'une soeur.</l>
             <l n="681" xml:id="l681">Quelques feux que d'abord il lui fasse paraître,</l>
@@ -1199,7 +1200,7 @@
             <l n="713" xml:id="l713">Les bravades enfin sont des discours frivoles,</l>
             <l n="714" xml:id="l714">Et qui songe aux effets néglige les paroles.</l>
           </sp>
-          <sp xml:id="II04-9" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="II04-9">
             <speaker>PTOLÉMÉE</speaker>
             <l n="715" xml:id="l715">Ah ! Tu me rends la vie et le sceptre à la fois :</l>
             <l n="716" xml:id="l716">Un sage conseiller est le bonheur des rois.</l>
@@ -1210,11 +1211,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Charmion, Achorée.</head>
-          <sp xml:id="III01-1" who="CHARMION">
+          <sp who="CHARMION" xml:id="III01-1">
             <speaker>CHARMION</speaker>
             <l n="721" xml:id="l721">Oui, tandis que le roi va lui-même en personne</l>
             <l n="722" xml:id="l722">Jusqu'aux pieds de César prosterner sa couronne,</l>
@@ -1222,14 +1223,14 @@
             <l n="724" xml:id="l724">Et sans s'en émouvoir attend son compliment.</l>
             <l n="725" xml:id="l725">Comment nommerez-vous une humeur si hautaine ?</l>
           </sp>
-          <sp xml:id="III01-2" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="III01-2">
             <speaker>ACHORÉE</speaker>
             <l n="726" xml:id="l726">Un orgueil noble et juste, et digne d'une reine</l>
             <l n="727" xml:id="l727">Qui soutient avec coeur et magnanimité</l>
             <l n="728" xml:id="l728">L'honneur de sa naissance et de sa dignité :</l>
-            <l n="729" xml:id="l729" part="I">Lui pourrai-je parler ?</l>
+            <l n="729" part="I" xml:id="l729">Lui pourrai-je parler ?</l>
           </sp>
-          <sp xml:id="III01-3" who="CHARMION">
+          <sp who="CHARMION" xml:id="III01-3">
             <speaker>CHARMION</speaker>
             <l part="F">Non ; mais elle m'envoie</l>
             <l n="730" xml:id="l730">Savoir à cet abord ce qu'on a vu de joie ;</l>
@@ -1238,7 +1239,7 @@
             <l n="733" xml:id="l733">S'il traite avec douceur, s'il traite avec empire ;</l>
             <l n="734" xml:id="l734">Ce qu'à nos assassins enfin il a su dire.</l>
           </sp>
-          <sp xml:id="III01-4" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="III01-4">
             <speaker>ACHORÉE</speaker>
             <l n="735" xml:id="l735">La tête de Pompée a produit des effets</l>
             <l n="736" xml:id="l736">Dont ils n'ont pas sujet d'être fort satisfaits.</l>
@@ -1304,16 +1305,16 @@
             <l n="796" xml:id="l796">Fait voir sa défiance, ainsi que ses regrets,</l>
             <l n="797" xml:id="l797">Parle d'Égypte en maître et de son adversaire,</l>
             <l n="798" xml:id="l798">Non plus comme ennemi, mais comme son beau-père.</l>
-            <l n="799" xml:id="l799" part="I">Voilà ce que j'ai vu.</l>
+            <l n="799" part="I" xml:id="l799">Voilà ce que j'ai vu.</l>
           </sp>
-          <sp xml:id="III01-5" who="CHARMION">
+          <sp who="CHARMION" xml:id="III01-5">
             <speaker>CHARMION</speaker>
             <l part="F">Voilà ce qu'attendait,</l>
             <l n="800" xml:id="l800">Ce qu'au juste Osiris la reine demandait.</l>
             <l n="801" xml:id="l801">Je vais bien la ravir avec cette nouvelle.</l>
             <l n="802" xml:id="l802">Vous, continuez-lui ce service fidèle.</l>
           </sp>
-          <sp xml:id="III01-6" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="III01-6">
             <speaker>ACHORÉE</speaker>
             <l n="803" xml:id="l803">Qu'elle n'en doute point. Mais César vient. Allez,</l>
             <l n="804" xml:id="l804">Peignez-lui bien nos gens pâles et désolés ;</l>
@@ -1321,13 +1322,13 @@
             <l n="806" xml:id="l806">J'irai l'entretenir quand j'aurai vu le reste.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. César, Ptolémée, Lépide, Photin, Achorée, Soldats romains, Soldats égyptiens.</head>
-          <sp xml:id="III02-1" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="III02-1">
             <speaker>PTOLÉMÉE</speaker>
             <l n="807" xml:id="l807">Seigneur, montez au trône, et commandez ici.</l>
           </sp>
-          <sp xml:id="III02-2" who="CESAR">
+          <sp who="CESAR" xml:id="III02-2">
             <speaker>CÉSAR</speaker>
             <l n="808" xml:id="l808">Connaissez-vous César, de lui parler ainsi ?</l>
             <l n="809" xml:id="l809">Que m'offrirait de pis la fortune ennemie,</l>
@@ -1374,7 +1375,7 @@
             <l n="850" xml:id="l850">Que règle la fortune, et qui tourne avec elle !</l>
             <l n="851" xml:id="l851">Mais parlez, c'est trop être interdit et confus.</l>
           </sp>
-          <sp xml:id="III02-3" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="III02-3">
             <speaker>PTOLÉMÉE</speaker>
             <l n="852" xml:id="l852">Je le suis, il est vrai, si jamais je le fus ;</l>
             <l n="853" xml:id="l853">Et vous-même avouerez que j'ai sujet de l'être.</l>
@@ -1406,14 +1407,14 @@
             <l n="879" xml:id="l879">Mais voyant son pouvoir, de vos succès jaloux,</l>
             <l n="880" xml:id="l880">Passer en tyrannie, et s'armer contre vous...</l>
           </sp>
-          <sp xml:id="III02-4" who="CESAR">
+          <sp who="CESAR" xml:id="III02-4">
             <speaker>CÉSAR</speaker>
             <l n="881" xml:id="l881">Tout beau : que votre haine en son sang assouvie</l>
             <l n="882" xml:id="l882">N'aille point à sa gloire ; il suffit de sa vie.</l>
             <l n="883" xml:id="l883">N'avancez rien ici que Rome ose nier ;</l>
             <l n="884" xml:id="l884">Et justifiez-vous sans le calomnier.</l>
           </sp>
-          <sp xml:id="III02-5" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="III02-5">
             <speaker>PTOLÉMÉE</speaker>
             <l n="885" xml:id="l885">Je laisse donc aux dieux à juger ses pensées,</l>
             <l n="886" xml:id="l886">Et dirai seulement qu'en vos guerres passées,</l>
@@ -1440,7 +1441,7 @@
             <l n="907" xml:id="l907">Et que ce sacrifice, offert par mon devoir,</l>
             <l n="908" xml:id="l908">Vous assure la vôtre avec votre pouvoir.</l>
           </sp>
-          <sp xml:id="III02-6" who="CESAR">
+          <sp who="CESAR" xml:id="III02-6">
             <speaker>CÉSAR</speaker>
             <l n="909" xml:id="l909">Vous cherchez, Ptolomée, avec trop de ruses,</l>
             <l n="910" xml:id="l910">De mauvaises couleurs et de froides excuses.</l>
@@ -1480,13 +1481,13 @@
             <l n="944" xml:id="l944">Entretenir les miens sur quelque autre souci.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. César, Antoine, Lépide.</head>
-          <sp xml:id="III03-1" who="CESAR">
+          <sp who="CESAR" xml:id="III03-1">
             <speaker>CÉSAR</speaker>
             <l n="945" xml:id="l945">Antoine, avez-vous vu cette reine adorable ?</l>
           </sp>
-          <sp xml:id="III03-2" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III03-2">
             <speaker>ANTOINE</speaker>
             <l n="946" xml:id="l946">Oui, seigneur, je l'ai vue : elle est incomparable ;</l>
             <l n="947" xml:id="l947">Le ciel n'a point encore, par de si doux accords,</l>
@@ -1496,21 +1497,21 @@
             <l n="951" xml:id="l951">Ses yeux savent ravir, son discours sait charmer ;</l>
             <l n="952" xml:id="l952">Et si j'étais César, je la voudrais aimer.</l>
           </sp>
-          <sp xml:id="III03-3" who="CESAR">
+          <sp who="CESAR" xml:id="III03-3">
             <speaker>CÉSAR</speaker>
             <l n="953" xml:id="l953">Comme a-t-elle reçu les offres de ma flamme ?</l>
           </sp>
-          <sp xml:id="III03-4" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III03-4">
             <speaker>ANTOINE</speaker>
             <l n="954" xml:id="l954">Comme n'osant la croire, et la croyant dans l'âme ;</l>
             <l n="955" xml:id="l955">Par un refus modeste et fait pour inviter,</l>
             <l n="956" xml:id="l956">Elle s'en dit indigne, et la croit mériter.</l>
           </sp>
-          <sp xml:id="III03-5" who="CESAR">
+          <sp who="CESAR" xml:id="III03-5">
             <speaker>CÉSAR</speaker>
-            <l n="957" xml:id="l957" part="I">En pourrai-je être aimé ?</l>
+            <l n="957" part="I" xml:id="l957">En pourrai-je être aimé ?</l>
           </sp>
-          <sp xml:id="III03-6" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III03-6">
             <speaker>ANTOINE</speaker>
             <l part="F">Douter qu'elle vous aime,</l>
             <l n="958" xml:id="l958">Elle qui de vous seul attend son diadème,</l>
@@ -1525,13 +1526,13 @@
             <l n="967" xml:id="l967">Vous ferez succéder un espoir assez doux,</l>
             <l n="968" xml:id="l968">Lorsque vous daignerez lui dire un mot pour vous.</l>
           </sp>
-          <sp xml:id="III03-7" who="CESAR">
+          <sp who="CESAR" xml:id="III03-7">
             <speaker>CÉSAR</speaker>
             <l n="969" xml:id="l969">Allons donc l'affranchir de ces frivoles craintes,</l>
             <l n="970" xml:id="l970">Lui montrer de mon coeur les sensibles atteintes ;</l>
-            <l n="971" xml:id="l971" part="I">Allons, ne tardons plus.</l>
+            <l n="971" part="I" xml:id="l971">Allons, ne tardons plus.</l>
           </sp>
-          <sp xml:id="III03-8" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III03-8">
             <speaker>ANTOINE</speaker>
             <l part="F">Avant que de la voir,</l>
             <l n="972" xml:id="l972">Sachez que Cornélie est en votre pouvoir ;</l>
@@ -1540,7 +1541,7 @@
             <l n="975" xml:id="l975">Dès qu'ils ont abordé, vos chefs, par vous instruits,</l>
             <l n="976" xml:id="l976">Sans leur rien témoigner, les ont ici conduits.</l>
           </sp>
-          <sp xml:id="III03-9" who="CESAR">
+          <sp who="CESAR" xml:id="III03-9">
             <speaker>CÉSAR</speaker>
             <l n="977" xml:id="l977">Qu'elle entre. Ah ! L'importune et fâcheuse nouvelle !</l>
             <l n="978" xml:id="l978">Qu'à mon impatience elle semble cruelle !</l>
@@ -1548,20 +1549,20 @@
             <l n="980" xml:id="l980">Donner en liberté ce qui reste du jour ?</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. César, Cornélie, Antoine, Lépide, Septime.</head>
-          <sp xml:id="III04-1" who="SEPTIME">
+          <sp who="SEPTIME" xml:id="III04-1">
             <speaker>SEPTIME</speaker>
-            <l n="981" xml:id="l981" part="I">Seigneur...</l>
+            <l n="981" part="I" xml:id="l981">Seigneur...</l>
           </sp>
-          <sp xml:id="III04-2" who="CESAR">
+          <sp who="CESAR" xml:id="III04-2">
             <speaker>CÉSAR</speaker>
             <l part="F">Allez, Septime, allez vers votre maître.</l>
             <l n="982" xml:id="l982">César ne peut souffrir la présence d'un traître,</l>
             <l n="983" xml:id="l983">D'un Romain lâche assez pour servir sous un roi,</l>
             <l n="984" xml:id="l984">Après avoir servi sous Pompée et sous moi.</l>
           </sp>
-          <sp xml:id="III04-3" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="III04-3">
             <speaker>CORNÉLIE</speaker>
             <l n="985" xml:id="l985">César, car le destin, que dans tes fers je brave,</l>
             <l n="986" xml:id="l986">Me fait ta prisonnière et non pas ton esclave,</l>
@@ -1606,7 +1607,7 @@
             <l n="1025" xml:id="l1025">Ordonne ; et sans vouloir qu'il tremble ou s'humilie,</l>
             <l n="1026" xml:id="l1026">Souviens-toi seulement que je suis Cornélie.</l>
           </sp>
-          <sp xml:id="III04-4" who="CESAR">
+          <sp who="CESAR" xml:id="III04-4">
             <speaker>CÉSAR</speaker>
             <l n="1027" xml:id="l1027">Ô d'un illustre époux noble et digne moitié,</l>
             <l n="1028" xml:id="l1028">Dont le courage étonne, et le sort fait pitié !</l>
@@ -1654,24 +1655,24 @@
             <l n="1070" xml:id="l1070">C'est-à-dire un peu plus qu'on n'honore la reine.</l>
             <l n="1071" xml:id="l1071">Commandez, et chacun aura soin d'obéir.</l>
           </sp>
-          <sp xml:id="III04-5" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="III04-5">
             <speaker>CORNÉLIE</speaker>
             <l n="1072" xml:id="l1072">Ô ciel, que de vertus vous me faites haïr !</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Ptolémée, Achillas, Pholin.</head>
-          <sp xml:id="IV01-1" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV01-1">
             <speaker>PTOLÉMÉE</speaker>
             <l n="1073" xml:id="l1073">Quoi ? De la même main et de la même épée</l>
             <l n="1074" xml:id="l1074">Dont il vient d'immoler le malheureux Pompée,</l>
             <l n="1075" xml:id="l1075">Septime, par César indignement chassé,</l>
             <l n="1076" xml:id="l1076">Dans un tel désespoir à vos yeux a passé ?</l>
           </sp>
-          <sp xml:id="IV01-2" who="ACHILLAS">
+          <sp who="ACHILLAS" xml:id="IV01-2">
             <speaker>ACHILLAS</speaker>
             <l n="1077" xml:id="l1077">Oui, seigneur ; et sa mort a de quoi vous apprendre</l>
             <l n="1078" xml:id="l1078">La honte qu'il prévient et qu'il vous faut attendre.</l>
@@ -1686,7 +1687,7 @@
             <l n="1087" xml:id="l1087">Et veut tirer à soi, par un courroux accort,</l>
             <l n="1088" xml:id="l1088">L'honneur de sa vengeance et le fruit de sa mort.</l>
           </sp>
-          <sp xml:id="IV01-3" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV01-3">
             <speaker>PTOLÉMÉE</speaker>
             <l n="1089" xml:id="l1089">Ah ! Si je t'avais cru, je n'aurais pas de maître :</l>
             <l n="1090" xml:id="l1090">Je serais dans le trône où le ciel m'a fait naître ;</l>
@@ -1697,7 +1698,7 @@
             <l n="1095" xml:id="l1095">Cette fausse clarté, dont il les éblouit,</l>
             <l n="1096" xml:id="l1096">Les plonge dans un gouffre, et puis s'évanouit.</l>
           </sp>
-          <sp xml:id="IV01-4" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="IV01-4">
             <speaker>PHOTIN</speaker>
             <l n="1097" xml:id="l1097">J'ai mal connu César ; mais puisqu'en son estime</l>
             <l n="1098" xml:id="l1098">Un si rare service est un énorme crime,</l>
@@ -1712,7 +1713,7 @@
             <l n="1107" xml:id="l1107">Rome, sans leur donner de titres différents,</l>
             <l n="1108" xml:id="l1108">Se croira par vous seul libre de deux tyrans.</l>
           </sp>
-          <sp xml:id="IV01-5" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV01-5">
             <speaker>PTOLÉMÉE</speaker>
             <l n="1109" xml:id="l1109">Oui, par là seulement ma perte est évitable :</l>
             <l n="1110" xml:id="l1110">C'est trop craindre un tyran que j'ai fait redoutable.</l>
@@ -1747,7 +1748,7 @@
             <l n="1139" xml:id="l1139">Que pouvons-nous contre eux ? Et pour les prévenir,</l>
             <l n="1140" xml:id="l1140">Quel temps devons-nous prendre, et quel ordre tenir ?</l>
           </sp>
-          <sp xml:id="IV01-6" who="ACHILLAS">
+          <sp who="ACHILLAS" xml:id="IV01-6">
             <speaker>ACHILLAS</speaker>
             <l n="1141" xml:id="l1141">Nous pouvons tout, seigneur, en l'état où nous sommes.</l>
             <l n="1142" xml:id="l1142">À deux milles d'ici vous avez six mille hommes,</l>
@@ -1774,12 +1775,12 @@
             <l n="1163" xml:id="l1163">Ne cherchent qu'à venger par un coup généreux</l>
             <l n="1164" xml:id="l1164">Le mépris qu'en leur chef ce superbe a fait d'eux.</l>
           </sp>
-          <sp xml:id="IV01-7" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV01-7">
             <speaker>PTOLÉMÉE</speaker>
             <l n="1165" xml:id="l1165">Mais qui pourra de nous approcher sa personne,</l>
             <l n="1166" xml:id="l1166">Si durant le festin sa garde l'environne ?</l>
           </sp>
-          <sp xml:id="IV01-8" who="PHOTIN">
+          <sp who="PHOTIN" xml:id="IV01-8">
             <speaker>PHOTIN</speaker>
             <l n="1167" xml:id="l1167">Les gens de Cornélie, entre qui vos Romains</l>
             <l n="1168" xml:id="l1168">Ont déjà reconnu des frères, des germains,</l>
@@ -1796,25 +1797,25 @@
             <l n="1179" xml:id="l1179">Nous allons vous quitter, comme objets odieux</l>
             <l n="1180" xml:id="l1180">Dont l'aspect importun offenserait ses yeux.</l>
           </sp>
-          <sp xml:id="IV01-9" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV01-9">
             <speaker>PTOLÉMÉE</speaker>
-            <l n="1181" xml:id="l1181" part="I">Allez, je vous rejoins.</l>
+            <l n="1181" part="I" xml:id="l1181">Allez, je vous rejoins.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Ptolomée, Cléopâtre, Achorée, Charmion.</head>
-          <sp xml:id="IV02-1" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV02-1">
             <speaker>CLÉOPÂTRE</speaker>
             <l part="F">J'ai vu César, mon frère,</l>
             <l n="1182" xml:id="l1182">Et de tout mon pouvoir combattu sa colère.</l>
           </sp>
-          <sp xml:id="IV02-2" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV02-2">
             <speaker>PTOLÉMÉE</speaker>
             <l n="1183" xml:id="l1183">Vous êtes généreuse ; et j'avais attendu</l>
             <l n="1184" xml:id="l1184">Cet office de soeur que vous m'avez rendu.</l>
             <l n="1185" xml:id="l1185">Mais cet illustre amant vous a bientôt quittée.</l>
           </sp>
-          <sp xml:id="IV02-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV02-3">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1186" xml:id="l1186">Sur quelque brouillerie, en la ville excitée :</l>
             <l n="1187" xml:id="l1187">Il a voulu lui-même apaiser les débats</l>
@@ -1832,7 +1833,7 @@
             <l n="1199" xml:id="l1199">Et sa main, que le crime en vain fait redouter,</l>
             <l n="1200" xml:id="l1200">Laisse choir le fardeau qu'elle ne peut porter.</l>
           </sp>
-          <sp xml:id="IV02-4" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV02-4">
             <speaker>PTOLÉMÉE</speaker>
             <l n="1201" xml:id="l1201">Vous dites vrai, ma soeur, et ces effets sinistres</l>
             <l n="1202" xml:id="l1202">Me font bien voir ma faute au choix de mes ministres.</l>
@@ -1861,7 +1862,7 @@
             <l n="1225" xml:id="l1225">Que je vous doive tout : César cherche à vous plaire,</l>
             <l n="1226" xml:id="l1226">Et vous pouvez d'un mot désarmer sa colère.</l>
           </sp>
-          <sp xml:id="IV02-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV02-5">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1227" xml:id="l1227">Si j'avais en mes mains leur vie et leur trépas,</l>
             <l n="1228" xml:id="l1228">Je les méprise assez pour ne m'en venger pas ;</l>
@@ -1873,9 +1874,9 @@
             <l n="1234" xml:id="l1234">Il n'a ni refusé, ni souffert ma prière.</l>
             <l n="1235" xml:id="l1235">Je veux bien toutefois encor m'y hasarder,</l>
             <l n="1236" xml:id="l1236">Mes efforts redoublés pourront mieux succéder ;</l>
-            <l n="1237" xml:id="l1237" part="I">Et j'ose croire...</l>
+            <l n="1237" part="I" xml:id="l1237">Et j'ose croire...</l>
           </sp>
-          <sp xml:id="IV02-6" who="PTOLEMEE">
+          <sp who="PTOLEMEE" xml:id="IV02-6">
             <speaker>PTOLÉMÉE</speaker>
             <l part="F">Il vient ; souffrez que je l'évite :</l>
             <l n="1238" xml:id="l1238">Je crains que ma présence à vos yeux ne l'irrite,</l>
@@ -1883,9 +1884,9 @@
             <l n="1240" xml:id="l1240">Et vous agirez seule avec plus de pouvoir.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. César, Cléopâtre, Antoine, Lépide, Charmion, Achorée, romains.</head>
-          <sp xml:id="IV03-1" who="CESAR">
+          <sp who="CESAR" xml:id="IV03-1">
             <speaker>CÉSAR</speaker>
             <l n="1241" xml:id="l1241">Reine, tout est paisible ; et la ville calmée,</l>
             <l n="1242" xml:id="l1242">Qu'un trouble assez léger avait trop alarmée,</l>
@@ -1930,7 +1931,7 @@
             <l n="1281" xml:id="l1281">Heureux, si mon esprit gagne tant sur le vôtre,</l>
             <l n="1282" xml:id="l1282">Qu'il en estime l'un et me permette l'autre !</l>
           </sp>
-          <sp xml:id="IV03-2" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV03-2">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1283" xml:id="l1283">Je sais ce que je dois au souverain bonheur</l>
             <l n="1284" xml:id="l1284">Dont me comble et m'accable un tel excès d'honneur.</l>
@@ -1963,7 +1964,7 @@
             <l n="1311" xml:id="l1311">Votre bras dans Pharsale a fait de plus grands coups,</l>
             <l n="1312" xml:id="l1312">Et je ne les demande à d'autres dieux qu'à vous.</l>
           </sp>
-          <sp xml:id="IV03-3" who="CESAR">
+          <sp who="CESAR" xml:id="IV03-3">
             <speaker>CÉSAR</speaker>
             <l n="1313" xml:id="l1313">Tout miracle est facile où mon amour s'applique.</l>
             <l n="1314" xml:id="l1314">Je n'ai plus qu'à courir les côtes de l'Afrique,</l>
@@ -1990,7 +1991,7 @@
             <l n="1335" xml:id="l1335">Pour faire dire encore aux peuples pleins d'effroi,</l>
             <l n="1336" xml:id="l1336">Que venir, voir et vaincre est même chose en moi.</l>
           </sp>
-          <sp xml:id="IV03-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV03-4">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1337" xml:id="l1337">C'est trop, c'est trop, seigneur, souffrez que j'en abuse :</l>
             <l n="1338" xml:id="l1338">Votre amour fait ma faute, il fera mon excuse.</l>
@@ -2004,9 +2005,9 @@
             <l n="1346" xml:id="l1346">Et montre à tous par là que j'ai repris ma place.</l>
             <l n="1347" xml:id="l1347">Achillas et Photin sont gens à dédaigner :</l>
             <l n="1348" xml:id="l1348">Ils sont assez punis en me voyant régner ;</l>
-            <l n="1349" xml:id="l1349" part="I">Et leur crime...</l>
+            <l n="1349" part="I" xml:id="l1349">Et leur crime...</l>
           </sp>
-          <sp xml:id="IV03-5" who="CESAR">
+          <sp who="CESAR" xml:id="IV03-5">
             <speaker>CÉSAR</speaker>
             <l part="F">Ah ! Prenez d'autres marques de reine :</l>
             <l n="1350" xml:id="l1350">Dessus mes volontés vous êtes souveraine ;</l>
@@ -2015,12 +2016,12 @@
             <l n="1353" xml:id="l1353">Ne vous donnez sur moi qu'un pouvoir légitime,</l>
             <l n="1354" xml:id="l1354">Et ne me rendez point complice de leur crime.</l>
             <l n="1355" xml:id="l1355">C'est beaucoup que pour vous j'ose épargner le roi,</l>
-            <l n="1356" xml:id="l1356" part="I">Et si mes feux n'étaient...</l>
+            <l n="1356" part="I" xml:id="l1356">Et si mes feux n'étaient...</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. César, Cornélie, Cléopâtre, Achorée, Antoine, Lépide, Charmion, romains.</head>
-          <sp xml:id="IV04-1" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="IV04-1">
             <speaker>CORNÉLIE</speaker>
             <l part="F">César, prends garde à toi :</l>
             <l n="1357" xml:id="l1357">Ta mort est résolue, on la jure, on l'apprête ;</l>
@@ -2029,9 +2030,9 @@
             <l n="1360" xml:id="l1360">Bientôt parmi le sien se verra confondu.</l>
             <l n="1361" xml:id="l1361">Mes esclaves en sont ; apprends de leurs indices</l>
             <l n="1362" xml:id="l1362">L'auteur de l'attentat, et l'ordre, et les complices :</l>
-            <l n="1363" xml:id="l1363" part="I">Je te les abandonne.</l>
+            <l n="1363" part="I" xml:id="l1363">Je te les abandonne.</l>
           </sp>
-          <sp xml:id="IV04-2" who="CESAR">
+          <sp who="CESAR" xml:id="IV04-2">
             <speaker>CÉSAR</speaker>
             <l part="F">Ô coeur vraiment romain,</l>
             <l n="1364" xml:id="l1364">Et digne du héros qui vous donna la main !</l>
@@ -2044,7 +2045,7 @@
             <l n="1371" xml:id="l1371">Il la pousse, et l'oppose à cette indignité,</l>
             <l n="1372" xml:id="l1372">Pour me vaincre par elle en générosité.</l>
           </sp>
-          <sp xml:id="IV04-3" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="IV04-3">
             <speaker>CORNÉLIE</speaker>
             <l n="1373" xml:id="l1373">Tu te flattes, César, de mettre en ta croyance</l>
             <l n="1374" xml:id="l1374">Que la haine ait fait place à la reconnaissance :</l>
@@ -2100,14 +2101,14 @@
             <l n="1424" xml:id="l1424">Te vanter qu'une fois j'ai fait pour toi des voeux.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. César, Cléopâtre, Antoine, Lépide, Achorée, Charmion.</head>
-          <sp xml:id="IV05-1" who="CESAR">
+          <sp who="CESAR" xml:id="IV05-1">
             <speaker>CÉSAR</speaker>
             <l n="1425" xml:id="l1425">Son courage m'étonne autant que leur audace.</l>
             <l n="1426" xml:id="l1426">Reine, voyez pour qui vous me demandiez grâce !</l>
           </sp>
-          <sp xml:id="IV05-2" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV05-2">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1427" xml:id="l1427">Je n'ai rien à vous dire : allez, seigneur, allez</l>
             <l n="1428" xml:id="l1428">Venger sur ces méchants tant de droits violés.</l>
@@ -2120,7 +2121,7 @@
             <l n="1435" xml:id="l1435">Le saurez-vous, seigneur ? Et pourrai-je obtenir</l>
             <l n="1436" xml:id="l1436">Que ce coeur irrité daigne s'en souvenir ?</l>
           </sp>
-          <sp xml:id="IV05-3" who="CESAR">
+          <sp who="CESAR" xml:id="IV05-3">
             <speaker>CÉSAR</speaker>
             <l n="1437" xml:id="l1437">Oui, je me souviendrai que ce coeur magnanime</l>
             <l n="1438" xml:id="l1438">Au bonheur de son sang veut pardonner son crime.</l>
@@ -2130,9 +2131,9 @@
             <l n="1442" xml:id="l1442">Je n'ai qu'à déployer l'appareil des supplices,</l>
             <l n="1443" xml:id="l1443">Et pour soldats choisis, envoyer des bourreaux</l>
             <l n="1444" xml:id="l1444">Qui portent hautement mes haches pour drapeaux.</l>
-            <stage type="[N/A]">César rentre avec les Romains.</stage>
+            <stage>César rentre avec les Romains.</stage>
           </sp>
-          <sp xml:id="IV05-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV05-4">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1445" xml:id="l1445">Ne quittez pas César : allez, cher Achorée,</l>
             <l n="1446" xml:id="l1446">Repousser avec lui ma mort qu'on a jurée ;</l>
@@ -2141,18 +2142,18 @@
             <l n="1449" xml:id="l1449">Ayez l'oeil sur le roi dans la chaleur des armes,</l>
             <l n="1450" xml:id="l1450">Et conservez son sang pour épargner mes larmes.</l>
           </sp>
-          <sp xml:id="IV05-5" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="IV05-5">
             <speaker>ACHORÉE</speaker>
             <l n="1451" xml:id="l1451">Madame, assurez-vous qu'il ne peut y périr,</l>
             <l n="1452" xml:id="l1452">Si mon zèle et mes soins peuvent le secourir.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Cornélie, tenant une petite, urne en sa main, Philippe.</head>
-          <sp xml:id="V01-1" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V01-1">
             <speaker>CORNÉLIE</speaker>
             <l n="1453" xml:id="l1453">Mes yeux, puis-je vous croire, et n'est-ce point un songe</l>
             <l n="1454" xml:id="l1454">Qui sur mes tristes voeux a formé ce mensonge ?</l>
@@ -2187,7 +2188,7 @@
             <l n="1483" xml:id="l1483">Dis-moi, quel bon démon a mis en ton pouvoir</l>
             <l n="1484" xml:id="l1484">De rendre à ce héros ce funèbre devoir ?</l>
           </sp>
-          <sp xml:id="V01-2" who="PHILIPPE">
+          <sp who="PHILIPPE" xml:id="V01-2">
             <speaker>PHILIPPE</speaker>
             <l n="1485" xml:id="l1485">Tout couvert de son sang, et plus mort que lui-même,</l>
             <l n="1486" xml:id="l1486">Après avoir cent fois maudit le diadème,</l>
@@ -2222,11 +2223,11 @@
             <l n="1515" xml:id="l1515">Où sa main et la mienne enfin ont renfermé</l>
             <l n="1516" xml:id="l1516">Ces restes d'un héros par le feu consumé.</l>
           </sp>
-          <sp xml:id="V01-3" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V01-3">
             <speaker>CORNÉLIE</speaker>
             <l n="1517" xml:id="l1517">Oh ! Que sa piété mérite de louanges !</l>
           </sp>
-          <sp xml:id="V01-4" who="PHILIPE">
+          <sp who="PHILIPPE" xml:id="V01-4">
             <speaker>PHILIPPE</speaker>
             <l n="1518" xml:id="l1518">En entrant j'ai trouvé des désordres étranges.</l>
             <l n="1519" xml:id="l1519">J'ai vu fuir tout un peuple en foule vers le port,</l>
@@ -2248,7 +2249,7 @@
             <l n="1535" xml:id="l1535">Ce grand homme à ces mots me quitte en soupirant,</l>
             <l n="1536" xml:id="l1536">Et baise avec respect ce vase qu'il me rend.</l>
           </sp>
-          <sp xml:id="V01-5" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V01-5">
             <speaker>CORNÉLIE</speaker>
             <l n="1537" xml:id="l1537">Ô soupirs ! ô respect ! Oh ! Qu'il est doux de plaindre</l>
             <l n="1538" xml:id="l1538">Le sort d'un ennemi quand il n'est plus à craindre !</l>
@@ -2272,9 +2273,9 @@
             <l n="1556" xml:id="l1556">Parce qu'au point qu'il est j'en voudrais faire autant.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Cléopâtre, Cornélie, Philippe, Charmion.</head>
-          <sp xml:id="V02-1" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-1">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1557" xml:id="l1557">Je ne viens pas ici pour troubler une plainte</l>
             <l n="1558" xml:id="l1558">Trop juste à la douleur dont vous êtes atteinte :</l>
@@ -2290,23 +2291,23 @@
             <l n="1568" xml:id="l1568">Je vous dirais aussi qu'on vient de vous venger,</l>
             <l n="1569" xml:id="l1569">Que le traître Photin... Vous le savez peut-être ?</l>
           </sp>
-          <sp xml:id="V02-2" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V02-2">
             <speaker>CORNÉLIE</speaker>
             <l n="1570" xml:id="l1570">Oui, princesse, je sais qu'on a puni ce traître.</l>
           </sp>
-          <sp xml:id="V02-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-3">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1571" xml:id="l1571">Un si prompt châtiment vous doit être bien doux.</l>
           </sp>
-          <sp xml:id="V02-4" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V02-4">
             <speaker>CORNÉLIE</speaker>
             <l n="1572" xml:id="l1572">S'il a quelque douceur, elle n'est que pour vous.</l>
           </sp>
-          <sp xml:id="V02-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-5">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1573" xml:id="l1573">Tous les coeurs trouvent doux le succès qu'ils espèrent.</l>
           </sp>
-          <sp xml:id="V02-6" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V02-6">
             <speaker>CORNÉLIE</speaker>
             <l n="1574" xml:id="l1574">Comme nos intérêts, nos sentiments diffèrent.</l>
             <l n="1575" xml:id="l1575">Si César à sa mort joint celle d'Achillas,</l>
@@ -2328,52 +2329,52 @@
             <l n="1591" xml:id="l1591">Mais si ce grand souhait demande trop pour moi,</l>
             <l n="1592" xml:id="l1592">Si vous n'en perdez qu'un, ô ciel ! Perdez le roi.</l>
           </sp>
-          <sp xml:id="V02-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-7">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1593" xml:id="l1593">Le ciel sur nos souhaits ne règle pas les choses.</l>
           </sp>
-          <sp xml:id="V02-8" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V02-8">
             <speaker>CORNÉLIE</speaker>
             <l n="1594" xml:id="l1594">Le ciel règle souvent les effets sur les causes,</l>
             <l n="1595" xml:id="l1595">Et rend aux criminels ce qu'ils ont mérité.</l>
           </sp>
-          <sp xml:id="V02-9" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-9">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1596" xml:id="l1596">Comme de la justice, il a de la bonté.</l>
           </sp>
-          <sp xml:id="V02-10" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V02-10">
             <speaker>CORNÉLIE</speaker>
             <l n="1597" xml:id="l1597">Oui ; mais il fait juger, à voir comme il commence,</l>
             <l n="1598" xml:id="l1598">Que sa justice agit, et non pas sa clémence.</l>
           </sp>
-          <sp xml:id="V02-11" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-11">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1599" xml:id="l1599">Souvent de la justice il passe à la douceur.</l>
           </sp>
-          <sp xml:id="V02-12" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V02-12">
             <speaker>CORNÉLIE</speaker>
             <l n="1600" xml:id="l1600">Reine, je parle en veuve, et vous parlez en soeur.</l>
             <l n="1601" xml:id="l1601">Chacune a son sujet d'aigreur ou de tendresse,</l>
             <l n="1602" xml:id="l1602">Qui dans le sort du roi justement l'intéresse.</l>
             <l n="1603" xml:id="l1603">Apprenons par le sang qu'on aura répandu</l>
             <l n="1604" xml:id="l1604">À quels souhaits le ciel a le mieux répondu.</l>
-            <l n="1605" xml:id="l1605" part="I">Voici votre Achorée.</l>
+            <l n="1605" part="I" xml:id="l1605">Voici votre Achorée.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Cornélie, Cléopâtre, Achorée, Philippe, Charmion.</head>
-          <sp xml:id="V03-1" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V03-1">
             <speaker>CLÉOPÂTRE</speaker>
             <l part="F">Hélas ! Sur son visage</l>
             <l n="1606" xml:id="l1606">Rien ne s'offre à mes yeux que de mauvais présage.</l>
             <l n="1607" xml:id="l1607">Ne nous déguisez rien, parlez sans me flatter :</l>
             <l n="1608" xml:id="l1608">Qu'ai-je à craindre, Achorée, ou qu'ai-je à regretter ?</l>
           </sp>
-          <sp xml:id="V03-2" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="V03-2">
             <speaker>ACHORÉE</speaker>
             <l n="1609" xml:id="l1609">Aussitôt que César eut su la perfidie...</l>
           </sp>
-          <sp xml:id="V03-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V03-3">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1610" xml:id="l1610">Ce ne sont pas ses soins que je veux qu'on me die.</l>
             <l n="1611" xml:id="l1611">Je sais qu'il fit trancher et clore ce conduit</l>
@@ -2387,42 +2388,42 @@
             <l n="1619" xml:id="l1619">Que César l'a rejoint ; et je ne doute pas</l>
             <l n="1620" xml:id="l1620">Qu'il n'ait su vaincre encore, et punir Achillas.</l>
           </sp>
-          <sp xml:id="V03-4" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="V03-4">
             <speaker>ACHORÉE</speaker>
             <l n="1621" xml:id="l1621">Oui, madame, on a vu son bonheur ordinaire...</l>
           </sp>
-          <sp xml:id="V03-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V03-5">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1622" xml:id="l1622">Dites-moi seulement s'il a sauvé mon frère,</l>
-            <l n="1623" xml:id="l1623" part="I">S'il m'a tenu promesse.</l>
+            <l n="1623" part="I" xml:id="l1623">S'il m'a tenu promesse.</l>
           </sp>
-          <sp xml:id="V03-6" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="V03-6">
             <speaker>ACHORÉE</speaker>
             <l part="F">Oui, de tout son pouvoir.</l>
           </sp>
-          <sp xml:id="V03-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V03-7">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1624" xml:id="l1624">C'est là l'unique point que je voulais savoir.</l>
             <l n="1625" xml:id="l1625">Madame, vous voyez, les dieux m'ont écoutée.</l>
           </sp>
-          <sp xml:id="V03-8" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V03-8">
             <speaker>CORNÉLIE</speaker>
             <l n="1626" xml:id="l1626">Ils n'ont que différé la peine méritée.</l>
           </sp>
-          <sp xml:id="V03-9" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V03-9">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1627" xml:id="l1627">Vous la vouliez sur l'heure, ils l'en ont garanti.</l>
           </sp>
-          <sp xml:id="V03-10" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="V03-10">
             <speaker>ACHORÉE</speaker>
             <l n="1628" xml:id="l1628">Il faudrait qu'à nos voeux il eût mieux consenti.</l>
           </sp>
-          <sp xml:id="V03-11" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V03-11">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1629" xml:id="l1629">Que disiez-vous naguère, et que viens-je d'entendre ?</l>
             <l n="1630" xml:id="l1630">Accordez ces discours, que j'ai peine à comprendre.</l>
           </sp>
-          <sp xml:id="V03-12" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="V03-12">
             <speaker>ACHORÉE</speaker>
             <l n="1631" xml:id="l1631">Aucuns ordres ni soins n'ont pu le secourir :</l>
             <l n="1632" xml:id="l1632">Malgré César et nous il a voulu périr ;</l>
@@ -2460,9 +2461,9 @@
             <l n="1664" xml:id="l1664">Que lui donne du roi l'invincible malheur.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. César, Cornélie, Cléopâtre, Antoine, Lépide, Achorée, Charmion, Philippe.</head>
-          <sp xml:id="V04-1" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V04-1">
             <speaker>CORNÉLIE</speaker>
             <l n="1665" xml:id="l1665">César, tiens-moi parole, et me rends mes galères.</l>
             <l n="1666" xml:id="l1666">Achillas et Photin ont reçu leurs salaires ;</l>
@@ -2481,7 +2482,7 @@
             <l n="1679" xml:id="l1679">Ne me la retiens plus, c'est l'unique faveur</l>
             <l n="1680" xml:id="l1680">Dont je te puis encore prier avec honneur.</l>
           </sp>
-          <sp xml:id="V04-2" who="CESAR">
+          <sp who="CESAR" xml:id="V04-2">
             <speaker>CÉSAR</speaker>
             <l n="1681" xml:id="l1681">Il est juste, et César est tout prêt de vous rendre</l>
             <l n="1682" xml:id="l1682">Ce reste où vous avez tant de droit de prétendre ;</l>
@@ -2502,9 +2503,9 @@
             <l n="1697" xml:id="l1697">Faites un peu de force à votre impatience ;</l>
             <l n="1698" xml:id="l1698">Vous êtes libre après : partez en diligence ;</l>
             <l n="1699" xml:id="l1699">Portez à notre Rome un si digne trésor ;</l>
-            <l n="1700" xml:id="l1700" part="I">Portez...</l>
+            <l n="1700" part="I" xml:id="l1700">Portez...</l>
           </sp>
-          <sp xml:id="V04-3" who="CORNELIE">
+          <sp who="CORNELIE" xml:id="V04-3">
             <speaker>CORNÉLIE</speaker>
             <l part="F">Non pas, César, non pas à Rome encore :</l>
             <l n="1701" xml:id="l1701">Il faut que ta défaite et que tes funérailles</l>
@@ -2563,9 +2564,9 @@
             <l n="1754" xml:id="l1754">Adieu : j'attends demain l'effet de tes promesses.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. César, Cléopâtre, Antoine, Lépide, Achorée, Charmion.</head>
-          <sp xml:id="V05-1" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V05-1">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1755" xml:id="l1755">Plutôt qu'à ces périls je vous puisse exposer,</l>
             <l n="1756" xml:id="l1756">Seigneur, perdez en moi ce qui les peut causer :</l>
@@ -2574,7 +2575,7 @@
             <l n="1759" xml:id="l1759">Indigne que je suis d'un César pour époux,</l>
             <l n="1760" xml:id="l1760">Que de vivre en votre âme, étant morte pour vous.</l>
           </sp>
-          <sp xml:id="V05-2" who="CESAR">
+          <sp who="CESAR" xml:id="V05-2">
             <speaker>CÉSAR</speaker>
             <l n="1761" xml:id="l1761">Reine, ces vains projets sont le seul avantage</l>
             <l n="1762" xml:id="l1762">Qu'un grand coeur impuissant a du ciel en partage :</l>
@@ -2601,7 +2602,7 @@
             <l n="1783" xml:id="l1783">Sa rigueur envers lui vous ouvre un sort plus doux,</l>
             <l n="1784" xml:id="l1784">Puisque par cette mort l'Égypte est toute à vous.</l>
           </sp>
-          <sp xml:id="V05-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V05-3">
             <speaker>CLÉOPÂTRE</speaker>
             <l n="1785" xml:id="l1785">Je sais que j'en reçois un nouveau diadème,</l>
             <l n="1786" xml:id="l1786">Qu'on n'en peut accuser que les dieux et lui-même ;</l>
@@ -2616,14 +2617,14 @@
             <l n="1795" xml:id="l1795">J'en ressens dans mon âme un murmure secret,</l>
             <l n="1796" xml:id="l1796">Et ne puis remonter au trône sans regret.</l>
           </sp>
-          <sp xml:id="V05-4" who="ACHOREE">
+          <sp who="ACHOREE" xml:id="V05-4">
             <speaker>ACHORÉE</speaker>
             <l n="1797" xml:id="l1797">Un grand peuple, seigneur, dont cette cour est pleine,</l>
             <l n="1798" xml:id="l1798">Par des cris redoublés demande à voir sa reine,</l>
             <l n="1799" xml:id="l1799">Et tout impatient déjà se plaint aux cieux</l>
             <l n="1800" xml:id="l1800">Qu'on lui donne trop tard un bien si précieux.</l>
           </sp>
-          <sp xml:id="V05-5" who="CESAR">
+          <sp who="CESAR" xml:id="V05-5">
             <speaker>CÉSAR</speaker>
             <l n="1801" xml:id="l1801">Ne lui refusons plus le bonheur qu'il désire :</l>
             <l n="1802" xml:id="l1802">Princesse, allons par là commencer votre empire.</l>

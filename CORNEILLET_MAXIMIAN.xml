@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>MAXIMIAN, TRAGÉDIE</title>
-        <author born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" academie="1685">CORNEILLE, Thomas</author>
+        <author academie="1685" born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" key="Corneille, Thomas (1625-1709)">CORNEILLE, Thomas</author>
         <date>1662</date>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <p>publié par Ernest FIEVRE, Mai 2009</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -39,7 +40,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -51,7 +52,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1662">M. DC LXII.</docDate>
-      <docAuthor id="CORNEILLE, Thomas" bio="corneillet">Thomas Corneille</docAuthor>
+      <docAuthor bio="corneillet" id="CORNEILLE, Thomas">Thomas Corneille</docAuthor>
       <docImprint>
         <privilege id=""/>
         <acheveImprime id=""/>
@@ -62,27 +63,27 @@
       </performance>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="CONSTANTIN" id="CONSTANTIN" sex="1" type="H" statut="empereur" age="A" stat_amour="néant">CONSTANTIN</role>, Empereur.</castItem>
-        <castItem><role xml:id="MAXIMIAN" id="MAXIMIAN" sex="1" type="H" statut="aritocrate" age="A" stat_amour="néant">MAXIMIAN</role>, père de Fauste.</castItem>
-        <castItem><role xml:id="FAUSTE" id="FAUSTE" sex="2" type="H" statut="empereur" age="A" stat_amour="néant">FAUSTE</role>, femme de Constantin.</castItem>
-        <castItem><role xml:id="CONSTANCE" id="CONSTANCE" sex="2" type="H" statut="empereur" age="A" stat_amour="néant">CONSTANCE</role>, soeur de Constantin.</castItem>
-        <castItem><role xml:id="SEVERE" id="SEVERE" sex="1" type="H" statut="général" age="A" stat_amour="néant">SÉVÈRE</role>, lieutenant Général des Armées de l'Empereur.</castItem>
-        <castItem><role xml:id="LICINE" id="LICINE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">LICINE</role>, amant de Constance.</castItem>
-        <castItem><role xml:id="MAXIME" id="MAXIME" sex="1" type="H" statut="capitaine" age="A" stat_amour="néant">MAXIME</role>, capitaine des Gardes de l'Empereur.</castItem>
-        <castItem><role xml:id="MARTIAN" id="MARTIAN" sex="1" type="H" statut="confident" age="A" stat_amour="néant">MARTIAN</role>, confident de Maximin.</castItem>
-        <castItem><role xml:id="FLAVIE" id="FLAVIE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">FLAVIE</role>, confidente de Fauste.</castItem>
-        <castItem><role xml:id="LUCIE" id="LUCIE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">LUCIE</role>, confidente de Constance.</castItem>
-        <castItem><role xml:id="SuitedelEmpereur" id="SUITE_EMPEREUR" sex="9">Suite de l'Empereur</role>.</castItem>
+        <castItem><role age="A" civil="M" id="CONSTANTIN" rend="male" stat_amour="néant" statut="empereur" type="H" xml:id="CONSTANTIN">CONSTANTIN</role>, Empereur.</castItem>
+        <castItem><role age="A" civil="M" id="MAXIMIAN" rend="male" stat_amour="néant" statut="aritocrate" type="H" xml:id="MAXIMIAN">MAXIMIAN</role>, père de Fauste.</castItem>
+        <castItem><role age="A" civil="F" id="FAUSTE" rend="female" stat_amour="néant" statut="empereur" type="H" xml:id="FAUSTE">FAUSTE</role>, femme de Constantin.</castItem>
+        <castItem><role age="A" civil="F" id="CONSTANCE" rend="female" stat_amour="néant" statut="empereur" type="H" xml:id="CONSTANCE">CONSTANCE</role>, soeur de Constantin.</castItem>
+        <castItem><role age="A" civil="M" id="SEVERE" rend="male" stat_amour="néant" statut="général" type="H" xml:id="SEVERE">SÉVÈRE</role>, lieutenant Général des Armées de l'Empereur.</castItem>
+        <castItem><role age="A" civil="M" id="LICINE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="LICINE">LICINE</role>, amant de Constance.</castItem>
+        <castItem><role age="A" civil="M" id="MAXIME" rend="male" stat_amour="néant" statut="capitaine" type="H" xml:id="MAXIME">MAXIME</role>, capitaine des Gardes de l'Empereur.</castItem>
+        <castItem><role age="A" civil="M" id="MARTIAN" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="MARTIAN">MARTIAN</role>, confident de Maximin.</castItem>
+        <castItem><role age="A" civil="F" id="FLAVIE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="FLAVIE">FLAVIE</role>, confidente de Fauste.</castItem>
+        <castItem><role age="A" civil="F" id="LUCIE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="LUCIE">LUCIE</role>, confidente de Constance.</castItem>
+        <castItem><role civil="G" id="SUITE_EMPEREUR" rend="group" xml:id="SuitedelEmpereur">Suite de l'Empereur</role>.</castItem>
       </castList>
-      <set location="Marseille" country="France" periode="IVème avant JC" link="">Le scène est à Marseille.</set>
+      <set country="France" link="" location="Marseille" periode="IVème avant JC">Le scène est à Marseille.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Maximian, Licine. </head>
-          <sp xml:id="I01-1" who="LICINE">
-            <SPEAKER>LICINE.</SPEAKER>
+          <sp who="LICINE" xml:id="I01-1">
+            <speaker>LICINE.</speaker>
             <l n="1" xml:id="l1">Seigneur, je le confesse, on ne peut plus rien faire, </l>
             <l n="2" xml:id="l2">Dont la gloire ne cède à celle de Sévère ; </l>
             <l n="3" xml:id="l3">L'honneur d'avoir rangé la Gaule sous nos lois </l>
@@ -96,7 +97,7 @@
             <l n="11" xml:id="l11">Et je ne puis, Seigneur, que je ne sois surpris </l>
             <l n="12" xml:id="l12">De voir qu'à tant de gloire on joigne un si haut prix. </l>
           </sp>
-          <sp xml:id="I01-2" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I01-2">
             <speaker>MAXIMIAN.</speaker>
             <l n="13" xml:id="l13">Cette gloire où pour lui je vois que l'on s'obstine, </l>
             <l n="14" xml:id="l14">A lieu d'être sensible au généreux Licine, </l>
@@ -110,7 +111,7 @@
             <l n="22" xml:id="l22">Le seul rang de César peut consacrer sa gloire ; </l>
             <l n="23" xml:id="l23">Et sans voir que c'est faire un attentat sur vous... </l>
           </sp>
-          <sp xml:id="I01-3" who="LICINE">
+          <sp who="LICINE" xml:id="I01-3">
             <speaker>LICINE.</speaker>
             <l n="24" xml:id="l24">Non, Seigneur, de ce rang je ne suis point jaloux. </l>
             <l n="25" xml:id="l25">Qu'il coure vers le Trône où son destin l'entraîne, </l>
@@ -138,7 +139,7 @@
             <l n="47" xml:id="l47">Et quoi qu'à l'Empereur vous vouliez inspirer </l>
             <l n="48" xml:id="l48">Il vous estime trop pour n'y pas déférer. </l>
           </sp>
-          <sp xml:id="I01-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I01-4">
             <speaker>MAXIMIAN.</speaker>
             <l n="49" xml:id="l49">Depuis que Constantin en épousant ma Fille </l>
             <l n="50" xml:id="l50">A remis malgré moi le Trône en ma famille, </l>
@@ -158,7 +159,7 @@
             <l n="64" xml:id="l64">Le vif ressentiment qui vous fait murmurer. </l>
             <l n="65" xml:id="l65">Il le sait, et pour vous sa colère est à craindre. </l>
           </sp>
-          <sp xml:id="I01-5" who="LICINE">
+          <sp who="LICINE" xml:id="I01-5">
             <speaker>LICINE.</speaker>
             <l n="66" xml:id="l66">L'amour qu'on désespère a-t-il à se contraindre, </l>
             <l n="67" xml:id="l67">Et si malgré Constance on engage sa foi, </l>
@@ -166,36 +167,36 @@
             <l n="69" xml:id="l69">Encor un coup, Seigneur, permettez-moi l'audace </l>
             <l n="70" xml:id="l70">Qui force mon amour à vous demander grâce. </l>
             <l n="71" xml:id="l71">Il aspire à des droits qu'on cherche à violer, </l>
-            <l n="72" xml:id="l72" part="I">Et ma foi... </l>
+            <l n="72" part="I" xml:id="l72">Et ma foi... </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Maximian, Licine, Maxime, Martian.</head>
-          <sp xml:id="I02-1" who="MAXIME">
+          <sp who="MAXIME" xml:id="I02-1">
             <speaker>MAXIME, à Licine.</speaker>
             <l part="F">L'Empereur demande à vous parler. </l>
           </sp>
-          <sp xml:id="I02-2" who="LICINE">
+          <sp who="LICINE" xml:id="I02-2">
             <speaker>LICINE.</speaker>
-            <l n="73" xml:id="l73" part="I">À moi, Maxime ? </l>
+            <l n="73" part="I" xml:id="l73">À moi, Maxime ? </l>
           </sp>
-          <sp xml:id="I02-3" who="MAXIME">
+          <sp who="MAXIME" xml:id="I02-3">
             <speaker>MAXIME.</speaker>
             <l part="F">À vous, Seigneur ; son ordre presse. </l>
           </sp>
-          <sp xml:id="I02-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I02-4">
             <speaker>MAXIMIAN, à Licine.</speaker>
             <l n="74" xml:id="l74">Ménagez son courroux avec un peu d'adresse, </l>
             <l n="75" xml:id="l75">Quand vous l'aurez quitté, j'aurai soin de le voir. </l>
           </sp>
-          <sp xml:id="I02-5" who="LICINE">
+          <sp who="LICINE" xml:id="I02-5">
             <speaker>LICINE.</speaker>
             <l n="76" xml:id="l76">Enfin c'est de vous seul que dépend mon espoir. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Maximian, Martian. </head>
-          <sp xml:id="I03-1" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I03-1">
             <speaker>MAXIMIAN.</speaker>
             <l n="77" xml:id="l77">Et bien, cher Martian, que faut-il que j'espère ? </l>
             <l n="78" xml:id="l78">Dans quels secrets transports as-tu trouvé Sévère ? </l>
@@ -206,7 +207,7 @@
             <l n="83" xml:id="l83">Qu'en vain sans son appui j'ose me découvrir, </l>
             <l n="84" xml:id="l84">Avant toute autre chose il faut nous l'acquérir. </l>
           </sp>
-          <sp xml:id="I03-2" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="I03-2">
             <speaker>MARTIAN.</speaker>
             <l n="85" xml:id="l85">Vous le ferez sans peine, et la secrète rage </l>
             <l n="86" xml:id="l86">Où la perte de Fauste abîme son courage, </l>
@@ -221,7 +222,7 @@
             <l n="95" xml:id="l95">Et l'amas des lauriers dont il revient couvert, </l>
             <l n="96" xml:id="l96">N'a rien qu'il considère auprès de ce qu'il perd. </l>
           </sp>
-          <sp xml:id="I03-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I03-3">
             <speaker>MAXIMIAN.</speaker>
             <l n="97" xml:id="l97">Prenons donc à nos voeux un temps si favorable, </l>
             <l n="98" xml:id="l98">Pressons adroitement la douleur qui l'accable, </l>
@@ -236,7 +237,7 @@
             <l n="107" xml:id="l107">Ébloui d'un faux jour il aime à s'y placer, </l>
             <l n="108" xml:id="l108">Et pour peu qu'on le pousse, il s'y laisse glisser. </l>
           </sp>
-          <sp xml:id="I03-4" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="I03-4">
             <speaker>MARTIAN.</speaker>
             <l n="109" xml:id="l109">C'est ce qu'attend Sévère, et puisque l'entreprise </l>
             <l n="110" xml:id="l110">N'est qu'un projet mal sûr à moins qu'il l'autorise, </l>
@@ -248,11 +249,11 @@
             <l n="116" xml:id="l116">Aspirent chaque jour à changer de destin. </l>
             <l n="117" xml:id="l117">J'ai peine à retenir l'ardeur qui les emporte. </l>
           </sp>
-          <sp xml:id="I03-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I03-5">
             <speaker>MAXIMIAN.</speaker>
             <l n="118" xml:id="l118">Et toujours cette ardeur est également forte ? </l>
           </sp>
-          <sp xml:id="I03-6" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="I03-6">
             <speaker>MARTIAN.</speaker>
             <l n="119" xml:id="l119">Quand quelque lâche entre eux se pourrait déguiser, </l>
             <l n="120" xml:id="l120">Vous êtes à couvert de ce qu'il peut oser. </l>
@@ -266,7 +267,7 @@
             <l n="128" xml:id="l128">De sauver votre gloire en vous cachant toujours ; </l>
             <l n="129" xml:id="l129">Lui mort, la brigue est forte à vous choisir pour Maître. </l>
           </sp>
-          <sp xml:id="I03-7" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I03-7">
             <speaker>MAXIMIAN.</speaker>
             <l n="130" xml:id="l130">Non, Sévère a moins lieu de se faire connaître, </l>
             <l n="131" xml:id="l131">Et si nos Mécontents par un secret appui </l>
@@ -304,13 +305,13 @@
             <l n="163" xml:id="l163">Et par de grands effets hâtons-nous d'enseigner </l>
             <l n="164" xml:id="l164">Qu'on doit nommer vertu tout ce qui fait régner. </l>
           </sp>
-          <sp xml:id="I03-8" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="I03-8">
             <speaker>MARTIAN.</speaker>
             <l n="165" xml:id="l165">L'hymen où pour Sévère on veut forcer Constance </l>
             <l n="166" xml:id="l166">Su succès de vos voeux nous donne l'assurance, </l>
             <l n="167" xml:id="l167">Puisque Licine et lui piqués que l'Empereur... </l>
           </sp>
-          <sp xml:id="I03-9" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I03-9">
             <speaker>MAXIMIAN.</speaker>
             <l n="168" xml:id="l168">Par ce nom odieux redouble ma fureur, </l>
             <l n="169" xml:id="l169">Et pour hâter le coup dont tu vois la menace, </l>
@@ -335,26 +336,26 @@
             <l n="188" xml:id="l188">Je ne sais s'il est beau de les craindre toujours. </l>
             <l n="189" xml:id="l189">Quoi qu'il en soit enfin, dans ce grand sacrifice... </l>
           </sp>
-          <sp xml:id="I03-10" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="I03-10">
             <speaker>MARTIAN.</speaker>
             <l n="190" xml:id="l190">Seigneur, ne dites rien, voici l'Impératrice. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Maximian, Fauste, Flavie, Martian.</head>
-          <sp xml:id="I04-1" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I04-1">
             <speaker>MAXIMIAN.</speaker>
             <l n="191" xml:id="l191">Madame, savez-vous que Licine aujourd'hui </l>
             <l n="192" xml:id="l192">Pour fléchir Constantin implore mon appui ? </l>
             <l n="193" xml:id="l193">Il adore Constance, et l'hymen de Sévère...</l>
           </sp>
-          <sp xml:id="I04-2" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I04-2">
             <speaker>FAUSTE.</speaker>
             <l n="194" xml:id="l194">Seigneur, sa passion n'a pu si bien se taire, </l>
             <l n="195" xml:id="l195">Qu'au malheur qui la suit son transport n'ait cédé, </l>
             <l n="196" xml:id="l196">Et pour s'en éclaircir l'Empereur l'a mandé. </l>
           </sp>
-          <sp xml:id="I04-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="I04-3">
             <speaker>MAXIMIAN.</speaker>
             <l n="197" xml:id="l197">Le coup est assez rude, et Sévère lui-même </l>
             <l n="198" xml:id="l198">Ne pourra sans douleur lui ravir ce qu'il aime ; </l>
@@ -366,49 +367,49 @@
             <l n="204" xml:id="l204">Vous savez quels conseils vous avez à donner. </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Fauste, Flavie.</head>
-          <sp xml:id="I05-1" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I05-1">
             <speaker>FAUSTE.</speaker>
             <l n="205" xml:id="l205">Ah, funestes conseils, dont la rigueur extrême </l>
             <l n="206" xml:id="l206">Me force pour ma gloire à m'immoler moi-même ! </l>
             <l n="207" xml:id="l207">Après ce que mon coeur a voulu lui céder, </l>
             <l n="208" xml:id="l208">Faut-il qu'il donne encor ce qu'il n'ose garder ? </l>
           </sp>
-          <sp xml:id="I05-2" who="FLAVIE">
+          <sp who="FLAVIE" xml:id="I05-2">
             <speaker>FLAVIE.</speaker>
             <l n="209" xml:id="l209">Quoi ! Parmi tant d'honneurs, et de pompe et de gloire, </l>
             <l n="210" xml:id="l210">Vous conservez, Madame, une humeur sombre et noire, </l>
             <l n="211" xml:id="l211">Et pour vaincre l'ennui qui traverse vos jours, </l>
             <l n="212" xml:id="l212">Le rang d'Impératrice est un faible secours ? </l>
           </sp>
-          <sp xml:id="I05-3" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I05-3">
             <speaker>FAUSTE.</speaker>
             <l n="213" xml:id="l213">S'il assure à mon sort la gloire la plus haute, </l>
             <l n="214" xml:id="l214">Qui me rendra le bien que cette gloire m'ôte ? </l>
-            <l n="215" xml:id="l215" part="I">Dieux ! </l>
+            <l n="215" part="I" xml:id="l215">Dieux ! </l>
           </sp>
-          <sp xml:id="I05-4" who="FLAVIE">
+          <sp who="FLAVIE" xml:id="I05-4">
             <speaker>FLAVIE.</speaker>
             <l part="M">Vous n'achevez point ? </l>
           </sp>
-          <sp xml:id="I05-5" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I05-5">
             <speaker>FAUSTE.</speaker>
             <l part="M">Si pour Sévère... </l>
           </sp>
-          <sp xml:id="I05-6" who="FLAVIE">
+          <sp who="FLAVIE" xml:id="I05-6">
             <speaker>FLAVIE.</speaker>
             <l part="F">Et bien ? </l>
           </sp>
-          <sp xml:id="I05-7" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I05-7">
             <speaker>FAUSTE.</speaker>
-            <l n="216" xml:id="l216" part="I">Je t'en dis trop, hélas ! </l>
+            <l n="216" part="I" xml:id="l216">Je t'en dis trop, hélas ! </l>
           </sp>
-          <sp xml:id="I05-8" who="FLAVIE">
+          <sp who="FLAVIE" xml:id="I05-8">
             <speaker>FLAVIE.</speaker>
             <l part="F">Mais vous ne dites rien ? </l>
           </sp>
-          <sp xml:id="I05-9" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I05-9">
             <speaker>FAUSTE.</speaker>
             <l n="217" xml:id="l217">Après ce nom fatal que ma douleur attire, </l>
             <l n="218" xml:id="l218">Soupirer et me taire, est-ce ne te rien dire ? </l>
@@ -436,27 +437,27 @@
             <l n="240" xml:id="l240">Cependant aujourd'hui Sévère est de retour, </l>
             <l n="241" xml:id="l241">Et pour comble de maux ma gloire m'intéresse </l>
             <l n="242" xml:id="l242">À conseiller pour lui l'hymen de la Princesse. </l>
-            <l n="243" xml:id="l243" part="I">Mais Dieux ! </l>
+            <l n="243" part="I" xml:id="l243">Mais Dieux ! </l>
           </sp>
-          <sp xml:id="I05-10" who="FLAVIE">
+          <sp who="FLAVIE" xml:id="I05-10">
             <speaker>FLAVIE.</speaker>
             <l part="F">Il vient ici, Madame, songez bien... </l>
           </sp>
-          <sp xml:id="I05-11" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I05-11">
             <speaker>FAUSTE.</speaker>
             <l n="244" xml:id="l244">Hélas ! Quand on perd tout, peut-on songer à rien ? </l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="I06">
           <head>SCÈNE VI. Fauste, Sévère, Flavie.</head>
-          <sp xml:id="I06-1" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-1">
             <speaker>FAUSTE.</speaker>
             <l n="245" xml:id="l245">Quel dessein vous engage à rechercher ma vue ? </l>
             <l n="246" xml:id="l246">Est-ce trop peu pour moi du tourment qui me tue, </l>
             <l n="247" xml:id="l247">Et quand à sa rigueur je n'ai pu m'arracher, </l>
             <l n="248" xml:id="l248">Venez-vous pour m'en plaindre, ou me le reprocher ? </l>
           </sp>
-          <sp xml:id="I06-2" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-2">
             <speaker>SÉVÈRE.</speaker>
             <l n="249" xml:id="l249">Madame, pour commettre une telle injustice, </l>
             <l n="250" xml:id="l250">Je dois trop de respect à mon Impératrice. </l>
@@ -467,7 +468,7 @@
             <l n="255" xml:id="l255">Le pressant désespoir qu'ici je viens aigrir </l>
             <l n="256" xml:id="l256">Ne lui laissera pas longtemps à la souffrir. </l>
           </sp>
-          <sp xml:id="I06-3" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-3">
             <speaker>FAUSTE.</speaker>
             <l n="257" xml:id="l257">Que Sévère m'offense, et que malgré son zèle </l>
             <l n="258" xml:id="l258">La plainte qu'il étouffe en est une cruelle ! </l>
@@ -478,7 +479,7 @@
             <l n="263" xml:id="l263">Que j'ai couru moi-même à l'infidélité, </l>
             <l n="264" xml:id="l264">Le reproche est bien juste, et j'ai tout mérité. </l>
           </sp>
-          <sp xml:id="I06-4" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-4">
             <speaker>SÉVÈRE.</speaker>
             <l n="265" xml:id="l265">Quand le Ciel vous élève au rang le plus insigne, </l>
             <l n="266" xml:id="l266">Est-ce vous offenser que vous en trouver digne ? </l>
@@ -497,7 +498,7 @@
             <l n="279" xml:id="l279">Et si son triste excès semble vous étonner, </l>
             <l n="280" xml:id="l280">L'avez-vous pu comprendre, et m'y voir condamner ? </l>
           </sp>
-          <sp xml:id="I06-5" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-5">
             <speaker>FAUSTE.</speaker>
             <l n="281" xml:id="l281">Oui, je l'ai pu, Sévère et prête à m'y contraindre, </l>
             <l n="282" xml:id="l282">J'ai vu ces maux affreux qui vous rendent à plaindre, </l>
@@ -516,7 +517,7 @@
             <l n="295" xml:id="l295">Et le trouble où je suis est un aveu secret, </l>
             <l n="296" xml:id="l296">Que réduit à vous perdre, il vous perd à regret. </l>
           </sp>
-          <sp xml:id="I06-6" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-6">
             <speaker>SÉVÈRE.</speaker>
             <l n="297" xml:id="l297">Triste soulagement dans un mal sans remède ! </l>
             <l n="298" xml:id="l298">Votre coeur est un bien que mon amour possède, </l>
@@ -555,76 +556,76 @@
             <l n="331" xml:id="l331">Je trouve un nouveau mal où je crois voir un bien. </l>
             <l n="332" xml:id="l332">Mais hélas ! En est-il pour qui n'espère rien ? </l>
           </sp>
-          <sp xml:id="I06-7" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-7">
             <speaker>FAUSTE.</speaker>
             <l n="333" xml:id="l333">Oui, Sévère, il en est, et quoi qu'en apparence </l>
             <l n="334" xml:id="l334">Vous puissiez dans vos maux garder peu d'espérance, </l>
             <l n="335" xml:id="l335">Le temps et la raison où l'on doit recourir, </l>
             <l n="336" xml:id="l336">Sauront vous assurer les moyens d'en guérir. </l>
           </sp>
-          <sp xml:id="I06-8" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-8">
             <speaker>SÉVÈRE.</speaker>
             <l n="337" xml:id="l337">Ainsi cette raison à votre aide appelée </l>
             <l n="338" xml:id="l338">D'un si beau feu trahi vous aura consolée, </l>
             <l n="339" xml:id="l339">Et ce qu'en votre coeur l'amour avait tracé, </l>
             <l n="340" xml:id="l340">N'a plus rien que déjà le temps n'ait effacé ? </l>
           </sp>
-          <sp xml:id="I06-9" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-9">
             <speaker>FAUSTE.</speaker>
             <l n="341" xml:id="l341">C'est ce qu'ils ont dû faire, et quoi qu'ils me proposent </l>
             <l n="342" xml:id="l342">Si mes sens révoltés à leur secours s'opposent, </l>
             <l n="343" xml:id="l343">Mon coeur se contraindra si bien à le cacher, </l>
             <l n="344" xml:id="l344">Qu'à peine aurai-je droit de me le reprocher. </l>
           </sp>
-          <sp xml:id="I06-10" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-10">
             <speaker>SÉVÈRE.</speaker>
             <l n="345" xml:id="l345">Quoi, si de mes malheurs quelquefois il soupire, </l>
             <l n="346" xml:id="l346">M'envier la douceur de vous l'entendre dire ? </l>
             <l n="347" xml:id="l347">Pourquoi me refuser cet innocent aveu ? </l>
             <l n="348" xml:id="l348">Vous coûterait-il tant pour me donner si peu ? </l>
           </sp>
-          <sp xml:id="I06-11" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-11">
             <speaker>FAUSTE.</speaker>
             <l n="349" xml:id="l349">Trop, puisqu'il n'est pas tel que vous le voulez croire. </l>
           </sp>
-          <sp xml:id="I06-12" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-12">
             <speaker>SÉVÈRE.</speaker>
-            <l n="350" xml:id="l350" part="I">Qu'a-t-il de condamnable ? </l>
+            <l n="350" part="I" xml:id="l350">Qu'a-t-il de condamnable ? </l>
           </sp>
-          <sp xml:id="I06-13" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-13">
             <speaker>FAUSTE.</speaker>
             <l part="F">Il hasarde ma gloire. </l>
           </sp>
-          <sp xml:id="I06-14" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-14">
             <speaker>SÉVÈRE.</speaker>
             <l n="351" xml:id="l351">Par ce feu, ce beau feu qu'honora votre foi. </l>
           </sp>
-          <sp xml:id="I06-15" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-15">
             <speaker>FAUSTE.</speaker>
             <l n="352" xml:id="l352">Je l'étouffe pour elle, étouffez-le pour moi. </l>
             <note type="C">Le vers 353 était attribué à Fauste, il semble qu'il appartient à Sévère.</note>
           </sp>
-          <sp xml:id="I06-16" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-16">
             <speaker>SÉVÈRE.</speaker>
             <l n="353" xml:id="l353">C'est à quoi sans effort vous savez vous contraindre ? </l>
           </sp>
-          <sp xml:id="I06-17" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-17">
             <speaker>FAUSTE.</speaker>
             <l n="354" xml:id="l354">Mon devoir l'alluma, mon devoir sait l'éteindre. </l>
           </sp>
-          <sp xml:id="I06-18" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-18">
             <speaker>SÉVÈRE.</speaker>
             <l n="355" xml:id="l355">Qu'il l'éteint bien plutôt qu'il ne fut allumé ! </l>
             <l n="356" xml:id="l356">Et vous disiez encor que vous m'avez aimé ? </l>
           </sp>
-          <sp xml:id="I06-19" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-19">
             <speaker>FAUSTE.</speaker>
             <l n="357" xml:id="l357">Adieu, Sévère, adieu ; quelque effort que je fasse, </l>
             <l n="358" xml:id="l358">Je sens que malgré moi ma vertu s'embarrasse, </l>
             <l n="359" xml:id="l359">Non que de la victoire elle ait lieu de douter, </l>
             <l n="360" xml:id="l360">Mais c'est l'acheter trop que de la disputer. </l>
           </sp>
-          <sp xml:id="I06-20" who="SEVERE">
+          <sp who="SEVERE" xml:id="I06-20">
             <speaker>SÉVÈRE.</speaker>
             <l n="361" xml:id="l361">Quoi, vous m'abandonnez ? Ah ! Divine Princesse, </l>
             <l n="362" xml:id="l362">Avec tant de vertu craignez-vous ma faiblesse ? </l>
@@ -635,9 +636,9 @@
             <l n="367" xml:id="l367">Quelque reste d'amour semble vous alarmer, </l>
             <l n="368" xml:id="l368">Je n'y résiste point, il faut cesser d'aimer, </l>
             <l n="369" xml:id="l369">N'aimez plus, j'y consens, mais souffrez qu'à ma rage </l>
-            <l n="370" xml:id="l370" part="I">Vos regards... </l>
+            <l n="370" part="I" xml:id="l370">Vos regards... </l>
           </sp>
-          <sp xml:id="I06-21" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="I06-21">
             <speaker>FAUSTE.</speaker>
             <l part="F">Je ne puis écouter davantage, </l>
             <l n="371" xml:id="l371">Vos plaintes sur mon coeur prennent trop de pouvoir, </l>
@@ -645,19 +646,19 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Constantin, Maxime. </head>
-          <sp xml:id="II01-1" who="CONSTANTIN">
-            <SPEAKER>CONSTANTIN.</SPEAKER>
+          <sp who="CONSTANTIN" xml:id="II01-1">
+            <speaker>CONSTANTIN.</speaker>
             <l n="373" xml:id="l373">Je l'avais bien prévu, que cette résistance </l>
             <l n="374" xml:id="l374">Venait d'un feu secret qui plaît trop à Constance, </l>
             <l n="375" xml:id="l375">Sans mon ordre en son coeur ce feu s'est allumé, </l>
             <l n="376" xml:id="l376">Et si Licine l'aime, il n'est pas moins aimé ; </l>
             <l n="377" xml:id="l377">Je viens de lui parler, et l'ai trop su connaître. </l>
           </sp>
-          <sp xml:id="II01-2" who="MAXIME">
+          <sp who="MAXIME" xml:id="II01-2">
             <speaker>MAXIME.</speaker>
             <l n="378" xml:id="l378">Sa passion toujours affectait de paraître, </l>
             <l n="379" xml:id="l379">Mais jusqu'ici, Seigneur, rien n'avait fait juger </l>
@@ -666,18 +667,18 @@
             <l n="382" xml:id="l382">De l'espoir de sa main on flatte un peu Sévère. </l>
             <l n="383" xml:id="l383">L'Amour soutient longtemps la gloire de son choix. </l>
           </sp>
-          <sp xml:id="II01-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="II01-3">
             <speaker>CONSTANTIN.</speaker>
             <l n="384" xml:id="l384">Mais je suis dans le Trône, et j'en connais les droits. </l>
           </sp>
-          <sp xml:id="II01-4" who="MAXIME">
+          <sp who="MAXIME" xml:id="II01-4">
             <speaker>MAXIME.</speaker>
             <l n="385" xml:id="l385">N'en croyez point l'aigreur qui vous parle contre elle </l>
             <l n="386" xml:id="l386">Licine est un Sujet grand, illustre, fidèle, </l>
             <l n="387" xml:id="l387">Et je ne vois enfin Sévère à préférer </l>
             <l n="388" xml:id="l388">Que par l'auguste rang qu'on lui fait espérer...</l>
           </sp>
-          <sp xml:id="II01-5" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="II01-5">
             <speaker>CONSTANTIN.</speaker>
             <l n="389" xml:id="l389">Du titre de César je fais sa récompense ; </l>
             <l n="390" xml:id="l390">Mais sais-tu que pour lui je fais moins qu'on ne pense, </l>
@@ -723,12 +724,12 @@
             <l n="430" xml:id="l430">Je l'éloigne des lieux où je crains sa présence, </l>
             <l n="431" xml:id="l431">Et le faisant régner où je ne serai pas, </l>
             <l n="432" xml:id="l432">J'empêche... Mais Constance adresse ici ses pas ; </l>
-            <l n="433" xml:id="l433" part="I">Sachons ses sentiments. </l>
+            <l n="433" part="I" xml:id="l433">Sachons ses sentiments. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Constantin, Constance, Maxime, Lucie.</head>
-          <sp xml:id="II02-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="II02-1">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Ma soeur, j'ai peine à croire </l>
             <l n="434" xml:id="l434">Un bruit sourd que l'envie oppose à votre gloire. </l>
@@ -743,7 +744,7 @@
             <l n="443" xml:id="l443">Mais si trop de fierté tient les vôtres séduits, </l>
             <l n="444" xml:id="l444">Sachant ce que je veux, craignez ce que je puis. </l>
           </sp>
-          <sp xml:id="II02-2" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II02-2">
             <speaker>CONSTANCE.</speaker>
             <l n="445" xml:id="l445">Ces soins de m'élever à la grandeur suprême </l>
             <l n="446" xml:id="l446">Sont sans doute l'effet d'une tendresse extrême, </l>
@@ -762,21 +763,21 @@
             <l n="459" xml:id="l459">Et mon ambition s'en laisse en vain flatter </l>
             <l n="460" xml:id="l460">Si mon coeur est le prix dont je dois l'acheter. </l>
           </sp>
-          <sp xml:id="II02-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="II02-3">
             <speaker>CONSTANTIN.</speaker>
             <l n="461" xml:id="l461">Ce prix est-il si haut que tout couvert de gloire, </l>
             <l n="462" xml:id="l462">Tout brillant de l'éclat d'une illustre victoire, </l>
             <l n="463" xml:id="l463">Sévère à trop d'orgueil semble s'abandonner, </l>
             <l n="464" xml:id="l464">S'il en reçoit l'espoir que je lui fais donner ? </l>
           </sp>
-          <sp xml:id="II02-4" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II02-4">
             <speaker>CONSTANCE.</speaker>
             <l n="465" xml:id="l465">Sévère a des vertus dignes de sa naissance ; </l>
             <l n="466" xml:id="l466">Mais mon coeur est jaloux de son indépendance, </l>
             <l n="467" xml:id="l467">Et quoi que mon devoir ait d'empire sur lui, </l>
             <l n="468" xml:id="l468">Il dédaigne d'aimer par les ordres d'autrui. </l>
           </sp>
-          <sp xml:id="II02-5" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="II02-5">
             <speaker>CONSTANTIN.</speaker>
             <l n="469" xml:id="l469">Dites, dites plutôt que ce coeur téméraire </l>
             <l n="470" xml:id="l470">Pour se donner ailleurs se refuse à Sévère, </l>
@@ -791,7 +792,7 @@
             <l n="479" xml:id="l479">Et quelque passion qui les puisse aveugler, </l>
             <l n="480" xml:id="l480">Un si noble intérêt la doit toujours régler. </l>
           </sp>
-          <sp xml:id="II02-6" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II02-6">
             <speaker>CONSTANCE.</speaker>
             <l n="481" xml:id="l481">Je sais que plus le rang approche des Couronnes, </l>
             <l n="482" xml:id="l482">Plus la fière grandeur asservit nos personnes, </l>
@@ -805,7 +806,7 @@
             <l n="490" xml:id="l490">Quand votre seul dessein est d'élever Sévère, </l>
             <l n="491" xml:id="l491">Et je ne dois point tant au soin de sa grandeur... </l>
           </sp>
-          <sp xml:id="II02-7" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="II02-7">
             <speaker>CONSTANTIN.</speaker>
             <l n="492" xml:id="l492">Et bien, pour cet hymen je fais voir trop d'ardeur, </l>
             <l n="493" xml:id="l493">L'État en peut tenir les droits illégitimes, </l>
@@ -822,24 +823,24 @@
             <l n="504" xml:id="l504">Et c'est lui seul aussi que j'en saurai punir. </l>
             <l n="505" xml:id="l505">Il est en votre choix d'arrêter ma colère ; </l>
             <l n="506" xml:id="l506">Mais tremblez pour sa tête, ou songez à me plaire, </l>
-            <l n="507" xml:id="l507" part="I">Je vous laisse en résoudre, adieu. </l>
+            <l n="507" part="I" xml:id="l507">Je vous laisse en résoudre, adieu. </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Constance, Lucie.</head>
-          <sp xml:id="II03-1" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II03-1">
             <speaker>CONSTANCE.</speaker>
             <l part="F">Qui l'eût pensé, </l>
             <l n="508" xml:id="l508">Qu'à tant de tyrannie il se fut dispensé, </l>
             <l n="509" xml:id="l509">Qu'il eût prêté la main au coup qui m'assassine ? </l>
           </sp>
-          <sp xml:id="II03-2" who="LUCIE">
+          <sp who="LUCIE" xml:id="II03-2">
             <speaker>LUCIE.</speaker>
             <l n="510" xml:id="l510">J'en soupire pour vous, et tremble pour Licine, </l>
             <l n="511" xml:id="l511">Et si de ce revers votre coeur combattu </l>
             <l n="512" xml:id="l512">N'en trouvait le remède en sa propre vertu... </l>
           </sp>
-          <sp xml:id="II03-3" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II03-3">
             <speaker>CONSTANCE.</speaker>
             <l n="513" xml:id="l513">Quel remède, Lucie, et qu'il a d'amertume </l>
             <l n="514" xml:id="l514">Quand l'amour est un feu que le mérite allume, </l>
@@ -854,7 +855,7 @@
             <l n="523" xml:id="l523">Et Tyran malgré lui de ses plus chers souhaits, </l>
             <l n="524" xml:id="l524">S'il osait ne pas vaincre, il ne vaincrait jamais</l>
           </sp>
-          <sp xml:id="II03-4" who="LUCIE">
+          <sp who="LUCIE" xml:id="II03-4">
             <speaker>LUCIE.</speaker>
             <l n="525" xml:id="l525">J'ose encor me flatter d'un succès plus propice, </l>
             <l n="526" xml:id="l526">S'il est vrai que Sévère aime l'Impératrice ; </l>
@@ -862,9 +863,9 @@
             <l n="528" xml:id="l528">S'armant contre Licine, on dit... Mais le voici. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Constance, Licine, Lucie.</head>
-          <sp xml:id="II04-1" who="LICINE">
+          <sp who="LICINE" xml:id="II04-1">
             <speaker>LICINE.</speaker>
             <l n="529" xml:id="l529">Dans l'état déplorable où me réduit l'envie, </l>
             <l n="530" xml:id="l530">Madame, qu'avez-vous résolu de ma vie ? </l>
@@ -875,7 +876,7 @@
             <l n="535" xml:id="l535">Et toute la rigueur des Destins irrités </l>
             <l n="536" xml:id="l536">Ne peut rien contre moi si vous n'y consentez. </l>
           </sp>
-          <sp xml:id="II04-2" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II04-2">
             <speaker>CONSTANCE.</speaker>
             <l n="537" xml:id="l537">Si pour vous en secret mon coeur toujours propice </l>
             <l n="538" xml:id="l538">Suffit de leur courroux à rompre l'injustice, </l>
@@ -898,7 +899,7 @@
             <l n="555" xml:id="l555">Mais si c'est peu pour lui, dans ce que je me dois </l>
             <l n="556" xml:id="l556">Peut-être avouerez-vous que c'est beaucoup pour moi. </l>
           </sp>
-          <sp xml:id="II04-3" who="LICINE">
+          <sp who="LICINE" xml:id="II04-3">
             <speaker>LICINE.</speaker>
             <l n="557" xml:id="l557">Oui, c'est beaucoup, Madame, et d'un sort si funeste </l>
             <l n="558" xml:id="l558">Le coup doit m'être doux si cet espoir me reste. </l>
@@ -917,7 +918,7 @@
             <l n="571" xml:id="l571">Et vous laisseriez voir un courage abattu </l>
             <l n="572" xml:id="l572">Si vous n'étiez cruelle à force de vertu. </l>
           </sp>
-          <sp xml:id="II04-4" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II04-4">
             <speaker>CONSTANCE.</speaker>
             <l n="573" xml:id="l573">J'excuse des transports qui trop prompts à paraître </l>
             <l n="574" xml:id="l574">Suivent l'aveuglement du feu qui les fait naître, </l>
@@ -926,9 +927,9 @@
             <l n="577" xml:id="l577">Voyez ce que je suis, et ce que l'on m'ordonne ; </l>
             <l n="578" xml:id="l578">Au choix qu'on me prescrit ma gloire m'abandonne, </l>
             <l n="579" xml:id="l579">Contre vous, contre moi, tout conspire à s'armer. </l>
-            <l n="580" xml:id="l580" part="I">Dans ces extrémités que puis-je faire ? </l>
+            <l n="580" part="I" xml:id="l580">Dans ces extrémités que puis-je faire ? </l>
           </sp>
-          <sp xml:id="II04-5" who="LICINE">
+          <sp who="LICINE" xml:id="II04-5">
             <speaker>LICINE.</speaker>
             <l part="F">Aimer. </l>
             <l n="581" xml:id="l581">Que sans cesse on oppose obstacles sur obstacles, </l>
@@ -936,28 +937,28 @@
             <l n="583" xml:id="l583">Des plus rudes assauts sans peine il vient à bout, </l>
             <l n="584" xml:id="l584">Et pourvu que l'on aime, on triomphe de tout. </l>
           </sp>
-          <sp xml:id="II04-6" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II04-6">
             <speaker>CONSTANCE.</speaker>
             <l n="585" xml:id="l585">Quoi que vous en croyiez, tout ce que je puis faire </l>
             <l n="586" xml:id="l586">C'est d'oser expliquer ma contrainte à Sévère, </l>
             <l n="587" xml:id="l587">D'obtenir son refus pour prétexte du mien ; </l>
             <l n="588" xml:id="l588">Mais après cet effort ne me demandez rien. </l>
           </sp>
-          <sp xml:id="II04-7" who="LICINE">
+          <sp who="LICINE" xml:id="II04-7">
             <speaker>LICINE.</speaker>
             <l n="589" xml:id="l589">Quoi, si l'ambition l'oblige à se défendre </l>
             <l n="590" xml:id="l590">De céder à ma foi ce qu'elle osait attendre, </l>
             <l n="591" xml:id="l591">Cette fière vertu que vous mettez au jour, </l>
             <l n="592" xml:id="l592">Fera de votre coeur le prix de son amour ? </l>
           </sp>
-          <sp xml:id="II04-8" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II04-8">
             <speaker>CONSTANCE.</speaker>
             <l n="593" xml:id="l593">Jugez-en par mon rang qui vous force à le croire ; </l>
             <l n="594" xml:id="l594">Plus il est élevé, plus je dois à ma gloire ; </l>
             <l n="595" xml:id="l595">Et je souffrirai moins à le laisser agir, </l>
             <l n="596" xml:id="l596">Qu'à jouir d'un bonheur dont j'aurais à rougir. </l>
           </sp>
-          <sp xml:id="II04-9" who="LICINE">
+          <sp who="LICINE" xml:id="II04-9">
             <speaker>LICINE.</speaker>
             <l n="597" xml:id="l597">Ainsi vous l'aimerez si le devoir l'ordonne ? </l>
             <l n="598" xml:id="l598">À quels cruels tourments cet aveu m'abandonne ! </l>
@@ -976,7 +977,7 @@
             <l n="611" xml:id="l611">Et c'est aimer bien peu, qu'être sûr d'un secours </l>
             <l n="612" xml:id="l612">Qui nous mette en pouvoir de n'aimer pas toujours. </l>
           </sp>
-          <sp xml:id="II04-10" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II04-10">
             <speaker>CONSTANCE.</speaker>
             <l n="613" xml:id="l613">Quoique le trop de zèle où pour vous je m'engage, </l>
             <l n="614" xml:id="l614">D'un reproche pareil dût m'épargner l'outrage, </l>
@@ -987,7 +988,7 @@
             <l n="619" xml:id="l619">Et leur rébellion, par un indigne éclat, </l>
             <l n="620" xml:id="l620">Ne me coûterait pas la honte du combat. </l>
           </sp>
-          <sp xml:id="II04-11" who="LICINE">
+          <sp who="LICINE" xml:id="II04-11">
             <speaker>LICINE.</speaker>
             <l n="621" xml:id="l621">Que de vertu, Madame, et que je suis à plaindre, </l>
             <l n="622" xml:id="l622">Puisqu'à tant d'injustice elle peut vous contraindre, </l>
@@ -1007,9 +1008,9 @@
             <l n="636" xml:id="l636">Les transports violents qu'elle a droit d'animer. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. Constance, Sévère, Lucie.</head>
-          <sp xml:id="II05-1" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II05-1">
             <speaker>CONSTANCE.</speaker>
             <l n="637" xml:id="l637">J'aspirais à vous voir, Sévère, et ce mérite </l>
             <l n="638" xml:id="l638">Dont le brillant éclat pour vous me sollicite, </l>
@@ -1032,11 +1033,11 @@
             <l n="655" xml:id="l655">Mais vous vous connaissez, et jamais on eut droit </l>
             <l n="656" xml:id="l656">D'exciter un grand coeur à faire ce qu'il doit. </l>
           </sp>
-          <sp xml:id="II05-2" who="SEVERE">
+          <sp who="SEVERE" xml:id="II05-2">
             <speaker>SÉVÈRE.</speaker>
-            <l n="657" xml:id="l657" part="I">Madame... </l>
+            <l n="657" part="I" xml:id="l657">Madame... </l>
           </sp>
-          <sp xml:id="II05-3" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="II05-3">
             <speaker>CONSTANCE.</speaker>
             <l part="F">Adieu, c'est trop, Maximian s'avance. </l>
             <l n="658" xml:id="l658">Je vous ai répondu de mon obéissance, </l>
@@ -1044,13 +1045,13 @@
             <l n="660" xml:id="l660">Vous m'apprendrez vous-même à bien juger de vous. </l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="II06">
           <head>SCÈNE VI. Maximian, Sévère.</head>
-          <sp xml:id="II06-1" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="II06-1">
             <speaker>MAXIMIAN.</speaker>
             <l n="661" xml:id="l661">Quoi, pousser des soupirs en quittant la Princesse ? </l>
           </sp>
-          <sp xml:id="II06-2" who="SEVERE">
+          <sp who="SEVERE" xml:id="II06-2">
             <speaker>SÉVÈRE.</speaker>
             <l n="662" xml:id="l662">Ah, Seigneur, épargnez la douleur qui me presse. </l>
             <l n="663" xml:id="l663">Je ne vous parle point en amant outragé </l>
@@ -1072,7 +1073,7 @@
             <l n="679" xml:id="l679">Lui soumettre mes jours, et les abandonner </l>
             <l n="680" xml:id="l680">À la triste langueur qui les doit terminer. </l>
           </sp>
-          <sp xml:id="II06-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="II06-3">
             <speaker>MAXIMIAN.</speaker>
             <l n="681" xml:id="l681">Quoi, Sévère, il se peut que le sort qui t'outrage </l>
             <l n="682" xml:id="l682">Te fasse des malheurs plus grands que ton courage ? </l>
@@ -1099,7 +1100,7 @@
             <l n="703" xml:id="l703">Et mes voeux par contrainte à ses ordres soumis </l>
             <l n="704" xml:id="l704">Sont l'effet du repos que je m'étais promis. </l>
           </sp>
-          <sp xml:id="II06-4" who="SEVERE">
+          <sp who="SEVERE" xml:id="II06-4">
             <speaker>SÉVÈRE.</speaker>
             <l n="705" xml:id="l705">C'est trop, Seigneur, c'est trop, tant de bonté m'accable. </l>
             <l n="706" xml:id="l706">Le Destin a rendu ma perte irréparable ; </l>
@@ -1109,7 +1110,7 @@
             <l n="710" xml:id="l710">À l'hymen où pour moi l'Empereur se dispose, </l>
             <l n="711" xml:id="l711">Qu'on ne me force point à l'éclatant refus... </l>
           </sp>
-          <sp xml:id="II06-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="II06-5">
             <speaker>MAXIMIAN.</speaker>
             <l n="712" xml:id="l712">Et si je te disais que je veux faire plus ? </l>
             <l n="713" xml:id="l713">J'ai besoin seulement de trouver dans Sévère </l>
@@ -1117,14 +1118,14 @@
             <l n="715" xml:id="l715">Elle aide à repousser le sort le plus affreux, </l>
             <l n="716" xml:id="l716">Et si tu l'as enfin, tu n'es plus malheureux. </l>
           </sp>
-          <sp xml:id="II06-6" who="SEVERE">
+          <sp who="SEVERE" xml:id="II06-6">
             <speaker>SÉVÈRE.</speaker>
             <l n="717" xml:id="l717">Ah, seigneur, pour guérir le mal qui me possède, </l>
             <l n="718" xml:id="l718">La grandeur de courage est un faible remède ; </l>
             <l n="719" xml:id="l719">Contre un si rude assaut il n'est point de vertu, </l>
-            <l n="720" xml:id="l720" part="I">Et qui sait bien aimer... </l>
+            <l n="720" part="I" xml:id="l720">Et qui sait bien aimer... </l>
           </sp>
-          <sp xml:id="II06-7" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="II06-7">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Mais enfin aimes-tu ? </l>
             <l n="721" xml:id="l721">Sous un indigne joug Constantin me fait vivre, </l>
@@ -1132,11 +1133,11 @@
             <l n="723" xml:id="l723">Sur tous deux sa rigueur aime à se découvrir, </l>
             <l n="724" xml:id="l724">Je suis las d'être esclave, es-tu las de souffrir ? </l>
           </sp>
-          <sp xml:id="II06-8" who="SEVERE">
+          <sp who="SEVERE" xml:id="II06-8">
             <speaker>SÉVÈRE.</speaker>
-            <l n="725" xml:id="l725" part="I">Seigneur. </l>
+            <l n="725" part="I" xml:id="l725">Seigneur. </l>
           </sp>
-          <sp xml:id="II06-9" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="II06-9">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Explique-toi sans que rien ne retienne, </l>
             <l n="726" xml:id="l726">Ton choix seul peut résoudre ou sa perte ou la mienne. </l>
@@ -1151,11 +1152,11 @@
             <l n="735" xml:id="l735">Sa tyrannie est prête à lui coûter le jour, </l>
             <l n="736" xml:id="l736">J'ai consulté mon coeur, consulte ton amour. </l>
           </sp>
-          <sp xml:id="II06-10" who="SEVERE">
+          <sp who="SEVERE" xml:id="II06-10">
             <speaker>SÉVÈRE.</speaker>
-            <l n="737" xml:id="l737" part="I">L'écouter fut un crime... </l>
+            <l n="737" part="I" xml:id="l737">L'écouter fut un crime... </l>
           </sp>
-          <sp xml:id="II06-11" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="II06-11">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Et quoi, tu t'embarrasses ? </l>
             <l n="738" xml:id="l738">Les crimes ne sont faits que pour les âmes basses, </l>
@@ -1182,7 +1183,7 @@
             <l n="759" xml:id="l759">Puisque, quelque succès qui suive mon effort, </l>
             <l n="760" xml:id="l760">Il assure à mes voeux ou le Trône, ou la mort. </l>
           </sp>
-          <sp xml:id="II06-12" who="SEVERE">
+          <sp who="SEVERE" xml:id="II06-12">
             <speaker>SÉVÈRE.</speaker>
             <l n="761" xml:id="l761">Le désordre où me jette une telle entreprise </l>
             <l n="762" xml:id="l762">Ne souffre point, Seigneur, que je vous le déguise, </l>
@@ -1193,7 +1194,7 @@
             <l n="767" xml:id="l767">Connaissez mieux Sévère, et croyez que ma foi </l>
             <l n="768" xml:id="l768">Sait trop ce qu'il faut rendre à qui fait tout pour moi. </l>
           </sp>
-          <sp xml:id="II06-13" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="II06-13">
             <speaker>MAXIMIAN.</speaker>
             <l n="769" xml:id="l769">Ô généreux Ami que touche ma disgrâce ! </l>
             <l n="770" xml:id="l770">Viens dans mon cabinet savoir ce qui se passe, </l>
@@ -1202,18 +1203,18 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Fauste, Sévère.</head>
-          <sp xml:id="III01-1" who="FAUSTE">
-            <SPEAKER>FAUSTE.</SPEAKER>
+          <sp who="FAUSTE" xml:id="III01-1">
+            <speaker>FAUSTE.</speaker>
             <l n="773" xml:id="l773">Non, c'est vous abuser que de l'oser prétendre, </l>
             <l n="774" xml:id="l774">Il n'est rien que de vous je puisse encor entendre, </l>
             <l n="775" xml:id="l775">Et dans l'étroit scrupule où m'engage ma foi, </l>
             <l n="776" xml:id="l776">Un second entretien est un crime pour moi. </l>
           </sp>
-          <sp xml:id="III01-2" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-2">
             <speaker>SÉVÈRE.</speaker>
             <l n="777" xml:id="l777">Quoi, vous jugez si mal de l'ardeur qui m'anime, </l>
             <l n="778" xml:id="l778">Qu'elle puisse à vos yeux offrir l'ombre d'un crime, </l>
@@ -1228,25 +1229,25 @@
             <l n="787" xml:id="l787">Et que dans ce grand coeur trop justement charmé </l>
             <l n="788" xml:id="l788">Jamais un si beau feu ne s'était allumé. </l>
           </sp>
-          <sp xml:id="III01-3" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-3">
             <speaker>FAUSTE.</speaker>
             <l n="789" xml:id="l789">Ah ! Si ce charme a fait le bonheur de ma vie, </l>
             <l n="790" xml:id="l790">C'est là ce qu'aujourd'hui l'honneur veut que j'oublie. </l>
             <l n="791" xml:id="l791">Autrefois, je l'avoue, il eût pu m'être doux, </l>
             <l n="792" xml:id="l792">Mais devant tout mon coeur à l'amour d'un époux... </l>
           </sp>
-          <sp xml:id="III01-4" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-4">
             <speaker>SÉVÈRE.</speaker>
             <l n="793" xml:id="l793">Je sais qu'à l'Empereur les droits de l'hyménée </l>
             <l n="794" xml:id="l794">En acquièrent la part que vous m'aviez donnée, </l>
             <l n="795" xml:id="l795">Qu'à lui seul le devoir vous fait l'assujettir, </l>
             <l n="796" xml:id="l796">Mais l'Empereur n'est plus si j'y veux consentir. </l>
           </sp>
-          <sp xml:id="III01-5" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-5">
             <speaker>FAUSTE.</speaker>
-            <l n="797" xml:id="l797" part="I">On en veut à ses jours ? </l>
+            <l n="797" part="I" xml:id="l797">On en veut à ses jours ? </l>
           </sp>
-          <sp xml:id="III01-6" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-6">
             <speaker>SÉVÈRE.</speaker>
             <l part="F">Oui, Madame, on conspire, </l>
             <l n="798" xml:id="l798">On cherche à lui ravir et le jour et l'Empire, </l>
@@ -1265,7 +1266,7 @@
             <l n="811" xml:id="l811">Et j'aurai l'avantage en ce funeste jour </l>
             <l n="812" xml:id="l812">D'emporter votre estime en perdant votre amour. </l>
           </sp>
-          <sp xml:id="III01-7" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-7">
             <speaker>FAUSTE.</speaker>
             <l n="813" xml:id="l813">En vain à vous l'ôter on voudrait me contraindre ; </l>
             <l n="814" xml:id="l814">Mais je n'ai rien à dire où je vois tout à craindre, </l>
@@ -1275,7 +1276,7 @@
             <l n="818" xml:id="l818">Parlez, est-ce un effet de l'amour de Licine ? </l>
             <l n="819" xml:id="l819">Il murmure, il s'emporte, et dans son désespoir... </l>
           </sp>
-          <sp xml:id="III01-8" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-8">
             <speaker>SÉVÈRE.</speaker>
             <l n="820" xml:id="l820">Non, Madame, Licine est ferme en son devoir, </l>
             <l n="821" xml:id="l821">Il ignore le crime, et loin qu'il l'autorise, </l>
@@ -1286,60 +1287,60 @@
             <l n="826" xml:id="l826">Pour le rendre suspect, vont tout mettre en usage. </l>
             <l n="827" xml:id="l827">C'est à vous d'empêcher qu'ils n'en viennent à bout, </l>
             <l n="828" xml:id="l828">S'ils font changer la Garde, ils sont maître de tout, </l>
-            <l n="829" xml:id="l829" part="I">Et... </l>
+            <l n="829" part="I" xml:id="l829">Et... </l>
           </sp>
-          <sp xml:id="III01-9" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-9">
             <speaker>FAUSTE.</speaker>
             <l part="F">Mais à l'Empereur ont-ils pouvoir de nuire, </l>
             <l n="830" xml:id="l830">Si sachant l'attentat nous le pouvons détruire ? </l>
             <l n="831" xml:id="l831">Allons lui découvrir les noms des Conjurés. </l>
           </sp>
-          <sp xml:id="III01-10" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-10">
             <speaker>SÉVÈRE.</speaker>
             <l n="832" xml:id="l832">Le voudrez-vous, hélas ! Lorsque vous les saurez ? </l>
             <l n="833" xml:id="l833">Jusqu'ici Martian a conduit l'entreprise, </l>
             <l n="834" xml:id="l834">Avec Pompilius Straton la favorise, </l>
             <l n="835" xml:id="l835">Lucile, Eutrope, Albin, s'en déclarent l'appui, </l>
-            <l n="836" xml:id="l836" part="I">Mais leur Chef... </l>
+            <l n="836" part="I" xml:id="l836">Mais leur Chef... </l>
           </sp>
-          <sp xml:id="III01-11" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-11">
             <speaker>FAUSTE.</speaker>
             <l part="M">Achevez. </l>
           </sp>
-          <sp xml:id="III01-12" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-12">
             <speaker>SÉVÈRE.</speaker>
             <l part="F">Le croirez-vous de lui ? </l>
             <l n="837" xml:id="l837">Contre un lâche Assassin arme votre colère, </l>
             <l n="838" xml:id="l838">Mais, Madame, tremblez au nom de votre père. </l>
             <l n="839" xml:id="l839">Pour remonter au Trône, et changer de destin, </l>
-            <l n="840" xml:id="l840" part="I">Maximian... </l>
+            <l n="840" part="I" xml:id="l840">Maximian... </l>
           </sp>
-          <sp xml:id="III01-13" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-13">
             <speaker>FAUSTE.</speaker>
             <l part="M">Ô Dieux ! </l>
           </sp>
-          <sp xml:id="III01-14" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-14">
             <speaker>SÉVÈRE.</speaker>
             <l part="F">Veut perdre Constantin. </l>
           </sp>
-          <sp xml:id="III01-15" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-15">
             <speaker>FAUSTE.</speaker>
-            <l n="841" xml:id="l841" part="I">Quoi, c'est lui qui conspire ? </l>
+            <l n="841" part="I" xml:id="l841">Quoi, c'est lui qui conspire ? </l>
           </sp>
-          <sp xml:id="III01-16" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-16">
             <speaker>SÉVÈRE.</speaker>
             <l part="F">Et ce qui doit surprendre, </l>
             <l n="842" xml:id="l842">C'est par Martian seul qu'il a fait entreprendre, </l>
             <l n="843" xml:id="l843">Sans que les Conjurés, dont il est le soutien, </l>
             <l n="844" xml:id="l844">Sachent dans ce projet ni son nom ni le mien. </l>
           </sp>
-          <sp xml:id="III01-17" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-17">
             <speaker>FAUSTE.</speaker>
             <l n="845" xml:id="l845">On vous trompe, Sévère, et pour noircir sa gloire </l>
             <l n="846" xml:id="l846">L'imposture a songé ce qu'on vous a fait croire. </l>
-            <l n="847" xml:id="l847" part="I">Maximian ne peut... </l>
+            <l n="847" part="I" xml:id="l847">Maximian ne peut... </l>
           </sp>
-          <sp xml:id="III01-18" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-18">
             <speaker>SÉVÈRE.</speaker>
             <l part="F">Hélas ! Que n'est-il vrai ? </l>
             <l n="848" xml:id="l848">Mais de lui seul enfin je tiens ce que je sais. </l>
@@ -1348,7 +1349,7 @@
             <l n="851" xml:id="l851">Un père ambitieux veut perdre votre époux, </l>
             <l n="852" xml:id="l852">Et je viens pour agir prendre l'ordre de vous. </l>
           </sp>
-          <sp xml:id="III01-19" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-19">
             <speaker>FAUSTE.</speaker>
             <l n="853" xml:id="l853">Ah, si ma gloire encor vous avait été chère, </l>
             <l n="854" xml:id="l854">C'est sans m'en consulter que vous le deviez faire, </l>
@@ -1375,7 +1376,7 @@
             <l n="875" xml:id="l875">Si dans quelques ennuis j'ai pu vous engager, </l>
             <l n="876" xml:id="l876">Est-ce ainsi qu'un grand coeur se plaît à se venger ? </l>
           </sp>
-          <sp xml:id="III01-20" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-20">
             <speaker>SÉVÈRE.</speaker>
             <l n="877" xml:id="l877">Continuez, Madame, et par cette injustice </l>
             <l n="878" xml:id="l878">D'un amour qui perd tout augmentez le supplice. </l>
@@ -1394,7 +1395,7 @@
             <l n="891" xml:id="l891">Vous n'avez qu'à souffrir que j'ose me cacher </l>
             <l n="892" xml:id="l892">Ce qu'exige de vous un intérêt si cher. </l>
           </sp>
-          <sp xml:id="III01-21" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III01-21">
             <speaker>FAUSTE.</speaker>
             <l n="893" xml:id="l893">Non, si mes tristes voeux n'osent rien se permettre, </l>
             <l n="894" xml:id="l894">Ce choix n'est pas un droit qu'ils puissent vous remettre. </l>
@@ -1414,27 +1415,27 @@
             <l n="908" xml:id="l908">À faire un prompt éclat se trouvent préparés, </l>
             <l n="909" xml:id="l909">Alors contre le coup que leur rage médite... </l>
           </sp>
-          <sp xml:id="III01-22" who="SEVERE">
+          <sp who="SEVERE" xml:id="III01-22">
             <speaker>SÉVÈRE.</speaker>
             <l n="910" xml:id="l910">Maximian paraît, souffrez que je vous quitte, </l>
             <l n="911" xml:id="l911">Vos ordres que j'attends en régleront le sort. </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Maximian, Fauste, Sévère. </head>
-          <sp xml:id="III02-1" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III02-1">
             <speaker>MAXIMIAN.</speaker>
             <l n="912" xml:id="l912">Quoi, Sévère prend soin d'éviter mon abord, </l>
             <l n="913" xml:id="l913">Il me fuit, et pour lui ma vue est un supplice ! </l>
           </sp>
-          <sp xml:id="III02-2" who="SEVERE">
+          <sp who="SEVERE" xml:id="III02-2">
             <speaker>SÉVÈRE.</speaker>
             <l n="914" xml:id="l914">Ma présence, Seigneur, blesse l'Impératrice, </l>
             <l n="915" xml:id="l915">Et voyant ce qu'elle est, je sais trop mon devoir </l>
             <l n="916" xml:id="l916">Pour la vouloir contraindre à l'ennui de me voir. </l>
-            <stage type="[N/A]">Sévère sort. </stage>
+            <stage>Sévère sort. </stage>
           </sp>
-          <sp xml:id="III02-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III02-3">
             <speaker>MAXIMIAN.</speaker>
             <l n="917" xml:id="l917">Quelque austère vertu dont la rigueur vous porte </l>
             <l n="918" xml:id="l918">À traiter aujourd'hui Sévère de la sorte, </l>
@@ -1445,14 +1446,14 @@
             <l n="923" xml:id="l923">Il est des Mécontents, vous le poussez à bout, </l>
             <l n="924" xml:id="l924">Et qui n'espère rien est capable de tout. </l>
           </sp>
-          <sp xml:id="III02-4" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III02-4">
             <speaker>FAUSTE.</speaker>
             <l n="925" xml:id="l925">Ah, Seigneur, jugez mieux de ce qu'il en faut croire, </l>
             <l n="926" xml:id="l926">Soupçonnez sa douleur, mais épargnez sa gloire, </l>
             <l n="927" xml:id="l927">Et quelque désespoir dont il soit combattu, </l>
             <l n="928" xml:id="l928">Craignez-le pour sa vie, et non pour sa vertu. </l>
           </sp>
-          <sp xml:id="III02-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III02-5">
             <speaker>MAXIMIAN.</speaker>
             <l n="929" xml:id="l929">J'en craindrais moins l'effet si l'hymen de Constance</l>
             <l n="930" xml:id="l930">Lui souffrait d'en calmer la juste violence, </l>
@@ -1479,7 +1480,7 @@
             <l n="951" xml:id="l951">Et dans le moindre lieu de craindre un attentat, </l>
             <l n="952" xml:id="l952">Le trop de confiance est un crime d'État. </l>
           </sp>
-          <sp xml:id="III02-6" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III02-6">
             <speaker>FAUSTE.</speaker>
             <l n="953" xml:id="l953">Je sais que pour me mettre à couvert de ces crimes </l>
             <l n="954" xml:id="l954">Je ne puis faire mieux que suivre vos maximes, </l>
@@ -1494,7 +1495,7 @@
             <l n="963" xml:id="l963">Et vois trop quels périls s'offrent à redouter </l>
             <l n="964" xml:id="l964">Pour laisser les moyens de rien exécuter. </l>
           </sp>
-          <sp xml:id="III02-7" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III02-7">
             <speaker>MAXIMIAN.</speaker>
             <l n="965" xml:id="l965">Mais malgré tous vos soins, si la Garde est la même, </l>
             <l n="966" xml:id="l966">L'Empereur est toujours dans un péril extrême, </l>
@@ -1506,9 +1507,9 @@
             <l n="972" xml:id="l972">Dans ses transports secrets lui-même il se trahit. </l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Maximian, Fauste, Licine.</head>
-          <sp xml:id="III03-1" who="LICINE">
+          <sp who="LICINE" xml:id="III03-1">
             <speaker>LICINE.</speaker>
             <l n="973" xml:id="l973">Vous a-t-on averti de tout ce qui se passe, </l>
             <l n="974" xml:id="l974">Seigneur ? J'ignore encor quel destin nous menace, </l>
@@ -1519,11 +1520,11 @@
             <l n="979" xml:id="l979">On parle d'entreprise, on murmure, on se plaint, </l>
             <l n="980" xml:id="l980">Et quoiqu'on craigne tout, on ne sait ce qu'on craint. </l>
           </sp>
-          <sp xml:id="III03-2" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III03-2">
             <speaker>FAUSTE.</speaker>
-            <l n="981" xml:id="l981" part="I">Et l'Empereur, Licine ? </l>
+            <l n="981" part="I" xml:id="l981">Et l'Empereur, Licine ? </l>
           </sp>
-          <sp xml:id="III03-3" who="LICINE">
+          <sp who="LICINE" xml:id="III03-3">
             <speaker>LICINE.</speaker>
             <l part="F">Il fait effort, Madame, </l>
             <l n="982" xml:id="l982">Pour ne pas découvrir le trouble de son âme, </l>
@@ -1534,11 +1535,11 @@
             <l n="987" xml:id="l987">Vous savez ceux déjà qu'il a fait arrêter, </l>
             <l n="988" xml:id="l988">Et le reste sans doute est tout prêt d'éclater. </l>
           </sp>
-          <sp xml:id="III03-4" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III03-4">
             <speaker>FAUSTE.</speaker>
-            <l n="989" xml:id="l989" part="I">Seigneur, quelle surprise ! </l>
+            <l n="989" part="I" xml:id="l989">Seigneur, quelle surprise ! </l>
           </sp>
-          <sp xml:id="III03-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III03-5">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Elle est telle qu'à peine </l>
             <l n="990" xml:id="l990">Je puis me dérober à tout ce qui me gêne, </l>
@@ -1546,26 +1547,26 @@
             <l n="992" xml:id="l992">Et si pour Constantin... Mais le voici qui vient. </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Constantin, Maximian, Fauste, Licine, Suite. </head>
-          <sp xml:id="III04-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III04-1">
             <speaker>CONSTANTIN.</speaker>
             <l n="993" xml:id="l993">L'auriez-vous cru, Madame ? Un traître, un Parricide </l>
             <l n="994" xml:id="l994">S'abandonne aux transports dont la fureur le guide, </l>
             <l n="995" xml:id="l995">Et ma vie immolée est le titre éclatant </l>
             <l n="996" xml:id="l996">Qui lui répond du trône où son orgueil prétend. </l>
           </sp>
-          <sp xml:id="III04-2" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III04-2">
             <speaker>FAUSTE.</speaker>
-            <l n="997" xml:id="l997" part="I">On conspire, Seigneur ? </l>
+            <l n="997" part="I" xml:id="l997">On conspire, Seigneur ? </l>
           </sp>
-          <sp xml:id="III04-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III04-3">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Seigneur est-il possible </l>
             <l n="998" xml:id="l998">Qu'à l'éclat des vertus on soit si peu sensible, </l>
-            <l n="999" xml:id="l999" part="I">Que fut un lâche espoir... </l>
+            <l n="999" part="I" xml:id="l999">Que fut un lâche espoir... </l>
           </sp>
-          <sp xml:id="III04-4" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III04-4">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Non, non, Seigneur, jamais </l>
             <l n="1000" xml:id="l1000">Un Souverain n'agit au gré de ses Sujets. </l>
@@ -1582,19 +1583,19 @@
             <l n="1011" xml:id="l1011">Et je vois contre moi cent lâches déclarés, </l>
             <l n="1012" xml:id="l1012">Sans que son nom encor soit su des Conjurés. </l>
           </sp>
-          <sp xml:id="III04-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III04-5">
             <speaker>MAXIMIAN.</speaker>
             <l n="1013" xml:id="l1013">Quoi, Straton ne sait pas qui les fait entreprendre ? </l>
           </sp>
-          <sp xml:id="III04-6" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III04-6">
             <speaker>CONSTANTIN.</speaker>
             <l n="1014" xml:id="l1014">Voici par qui, Seigneur, nous allons tout apprendre ; </l>
             <l n="1015" xml:id="l1015">D'un complot si hardi ce traître est le soutien. </l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Constantin, Maximian, Fauste, Licine, Martian, Maxime, Suite.</head>
-          <sp xml:id="III05-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-1">
             <speaker>CONSTANTIN.</speaker>
             <l n="1016" xml:id="l1016">Viens, méchant, et surtout ne nous déguise rien. </l>
             <l n="1017" xml:id="l1017">On en veut à ma vie, et par tes artifices </l>
@@ -1602,7 +1603,7 @@
             <l n="1019" xml:id="l1019">Toi seul en sais l'Auteur ; parle, et nous fait savoir </l>
             <l n="1020" xml:id="l1020">Quels charmes dans ma perte ont flatté ton espoir. </l>
           </sp>
-          <sp xml:id="III05-2" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="III05-2">
             <speaker>MARTIAN.</speaker>
             <l n="1021" xml:id="l1021">Seigneur, le Ciel est juste, et j'apprends de Maxime </l>
             <l n="1022" xml:id="l1022">Qu'en vain je tâcherais à déguiser mon crime ; </l>
@@ -1621,11 +1622,11 @@
             <l n="1035" xml:id="l1035">Mais le moins que je puisse après ma lâcheté, </l>
             <l n="1036" xml:id="l1036">C'est de donner sa vie à votre sûreté. </l>
           </sp>
-          <sp xml:id="III05-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III05-3">
             <speaker>MAXIMIAN.</speaker>
             <l n="1037" xml:id="l1037">Dis tout, traître, il est temps que ta rage s'explique. </l>
           </sp>
-          <sp xml:id="III05-4" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="III05-4">
             <speaker>MARTIAN? à Maximian.</speaker>
             <l n="1038" xml:id="l1038">Seigneur, que votre haine à ma perte s'applique. </l>
             <l n="1039" xml:id="l1039">Si déjà mon forfait éclate aux yeux de tous, </l>
@@ -1635,13 +1636,13 @@
             <l n="1043" xml:id="l1043">Et la même fureur qui sut armer mon bras </l>
             <l n="1044" xml:id="l1044">Vous mettait hors d'état de venger son trépas. </l>
           </sp>
-          <sp xml:id="III05-5" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-5">
             <speaker>CONSTANTIN.</speaker>
             <l n="1045" xml:id="l1045">Quoi, sur Maximian ton insolente rage </l>
             <l n="1046" xml:id="l1046">Résolvait lâchement d'achever son ouvrage ! </l>
             <note>Les vers 1047 à 1052 étaient la suite des 2 vers précédents attribués à Constantin. Cela ne semble pas vraisemblable, le locuteur ne peut-être que Maximian. </note>
           </sp>
-          <sp xml:id="III05-6" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III05-6">
             <speaker>MAXIMIAN.</speaker>
             <l n="1047" xml:id="l1047">Seigneur, à mon injure il ne faut plus songer, </l>
             <l n="1048" xml:id="l1048">C'est la vôtre, c'est vous que l'État doit venger. </l>
@@ -1650,43 +1651,43 @@
             <l n="1051" xml:id="l1051">Mais privé de défense en perdant votre appui, </l>
             <l n="1052" xml:id="l1052">Le fruit de vos travaux périssait avec lui. </l>
           </sp>
-          <sp xml:id="III05-7" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III05-7">
             <speaker>FAUSTE.</speaker>
-            <l n="1053" xml:id="l1053" part="I">Juste Ciel ! </l>
+            <l n="1053" part="I" xml:id="l1053">Juste Ciel ! </l>
           </sp>
-          <sp xml:id="III05-8" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-8">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Dis le reste, et sachons qui conspire. </l>
           </sp>
-          <sp xml:id="III05-9" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="III05-9">
             <speaker>MARTIAN.</speaker>
             <l n="1054" xml:id="l1054">Licine peut parler, je n'ai plus rien à dire. </l>
           </sp>
-          <sp xml:id="III05-10" who="LICINE">
+          <sp who="LICINE" xml:id="III05-10">
             <speaker>LICINE.</speaker>
-            <l n="1055" xml:id="l1055" part="I">Quoi, méchant ? </l>
+            <l n="1055" part="I" xml:id="l1055">Quoi, méchant ? </l>
           </sp>
-          <sp xml:id="III05-11" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="III05-11">
             <speaker>MARTIAN.</speaker>
             <l part="F">Malgré moi l'on a tout découvert, </l>
             <l n="1056" xml:id="l1056">Et Straton me contraint de perdre qui me perd. </l>
           </sp>
-          <sp xml:id="III05-12" who="LICINE">
+          <sp who="LICINE" xml:id="III05-12">
             <speaker>LICINE.</speaker>
             <l n="1057" xml:id="l1057">Moi, j'ai pris quelque part aux projets d'un infâme ? </l>
-            <l n="1058" xml:id="l1058" part="I">J'ai su ta trahison ? </l>
+            <l n="1058" part="I" xml:id="l1058">J'ai su ta trahison ? </l>
           </sp>
-          <sp xml:id="III05-13" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III05-13">
             <speaker>MAXIMIAN, à Fauste.</speaker>
             <l part="F">Vous le voyez, Madame, </l>
             <l n="1059" xml:id="l1059">Lorsqu'à tant de murmure il s'est abandonné, </l>
             <l n="1060" xml:id="l1060">Si c'était sans raison que je l'ai soupçonné. </l>
           </sp>
-          <sp xml:id="III05-14" who="LICINE">
+          <sp who="LICINE" xml:id="III05-14">
             <speaker>LICINE, à Maximian.</speaker>
             <l n="1061" xml:id="l1061">Ah, Seigneur, contre moi croyez-vous l'imposture ? </l>
           </sp>
-          <sp xml:id="III05-15" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-15">
             <speaker>CONSTANTIN.</speaker>
             <l n="1062" xml:id="l1062">C'est donc là cette foi, pleine, sincère, pure, </l>
             <l n="1063" xml:id="l1063">Et l'hymen de ma Soeur contraire à tes souhaits, </l>
@@ -1697,7 +1698,7 @@
             <l n="1068" xml:id="l1068">Tu n'y vois de sa main ton feu récompensé.</l>
             <l n="1069" xml:id="l1069">Le Ciel ne l'a souffert que pour mieux te confondre. </l>
           </sp>
-          <sp xml:id="III05-16" who="LICINE">
+          <sp who="LICINE" xml:id="III05-16">
             <speaker>LICINE.</speaker>
             <l n="1070" xml:id="l1070">La surprise, Seigneur, m'empêche de répondre, </l>
             <l n="1071" xml:id="l1071">Et de pareils malheurs permettent rarement </l>
@@ -1715,13 +1716,13 @@
             <l n="1083" xml:id="l1083">Et dans cette rigueur forcez-vous à chercher </l>
             <l n="1084" xml:id="l1084">L'aveu des vérités qu'on aime à vous cacher. </l>
           </sp>
-          <sp xml:id="III05-17" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-17">
             <speaker>CONSTANTIN.</speaker>
             <l n="1085" xml:id="l1085">En vain tu crois t'absoudre en bravant les supplices, </l>
             <l n="1086" xml:id="l1086">Tu n'as point d'intérêt au rapport des Complices, </l>
             <l n="1087" xml:id="l1087">Ignorant ton secret, qu'ont-ils à déposer ? </l>
           </sp>
-          <sp xml:id="III05-18" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III05-18">
             <speaker>MAXIMIAN.</speaker>
             <l n="1088" xml:id="l1088">Cesse en te déguisant, cesse de t'abuser. </l>
             <l n="1089" xml:id="l1089">Déjà de mon esprit ton attentat s'efface, </l>
@@ -1736,15 +1737,15 @@
             <l n="1098" xml:id="l1098">Par tes emportements je l'ai trop su comprendre. </l>
             <l n="1099" xml:id="l1099">Tu ne m'as point caché que dans ton désespoir </l>
             <l n="1100" xml:id="l1100">Tu ne connaîtrais plus ni raison ni devoir, </l>
-            <l n="1101" xml:id="l1101" part="I">Et puisque Martian... </l>
+            <l n="1101" part="I" xml:id="l1101">Et puisque Martian... </l>
           </sp>
-          <sp xml:id="III05-19" who="LICINE">
+          <sp who="LICINE" xml:id="III05-19">
             <speaker>LICINE.</speaker>
             <l part="F">Quoi, par sa calomnie </l>
             <l n="1102" xml:id="l1102">L'on souffrira qu'ainsi ma gloire soit ternie ? </l>
             <l n="1103" xml:id="l1103">Non, non, Seigneur, qu'il parle, et d'un coup si fatal...</l>
           </sp>
-          <sp xml:id="III05-20" who="MARTIAN">
+          <sp who="MARTIAN" xml:id="III05-20">
             <speaker>MARTIAN.</speaker>
             <l n="1104" xml:id="l1104">Quoi qu'on veuille en juger, mon destin est égal. </l>
             <l n="1105" xml:id="l1105">Qu'on vous croie innocent, qu'on vous tienne coupable, </l>
@@ -1752,36 +1753,36 @@
             <l n="1107" xml:id="l1107">Et si le crime un jour au Trône vous fait seoir, </l>
             <l n="1108" xml:id="l1108">Il suffit qu'en mourant j'aurai fait mon devoir. </l>
           </sp>
-          <sp xml:id="III05-21" who="LICINE">
+          <sp who="LICINE" xml:id="III05-21">
             <speaker>LICINE.</speaker>
-            <l n="1109" xml:id="l1109" part="I">Tu fais ton devoir, Traître ? </l>
+            <l n="1109" part="I" xml:id="l1109">Tu fais ton devoir, Traître ? </l>
           </sp>
-          <sp xml:id="III05-22" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-22">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">On vous rendra justice. </l>
           </sp>
-          <sp xml:id="III05-23" who="LICINE">
+          <sp who="LICINE" xml:id="III05-23">
             <speaker>LICINE.</speaker>
             <l n="1110" xml:id="l1110">D'un si lâche Imposteur redoutez l'artifice, </l>
             <l n="1111" xml:id="l1111">Seigneur, il vous perdra si vous vous assurez... </l>
           </sp>
-          <sp xml:id="III05-24" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-24">
             <speaker>CONSTANTIN.</speaker>
             <l n="1112" xml:id="l1112">Qu'on les tienne en lieu sûr, et qu'ils soient séparés, </l>
-            <l n="1113" xml:id="l1113" part="I">C'est trop les écouter. </l>
+            <l n="1113" part="I" xml:id="l1113">C'est trop les écouter. </l>
           </sp>
-          <sp xml:id="III05-25" who="LICINE">
+          <sp who="LICINE" xml:id="III05-25">
             <speaker>LICINE.</speaker>
             <l part="M">De grâce... </l>
           </sp>
-          <sp xml:id="III05-26" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III05-26">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Allez, Maxime. </l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI. Constantin, Maximian, Fauste.</head>
-          <sp xml:id="III06-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III06-1">
             <speaker>CONSTANTIN.</speaker>
             <l n="1114" xml:id="l1114">Madame, on ne peut trop s'étonner de leur crime ; </l>
             <l n="1115" xml:id="l1115">Mais à l'examiner, ce qui plus me surprend, </l>
@@ -1791,7 +1792,7 @@
             <l n="1119" xml:id="l1119">J'observe votre trouble, il m'accable, et j'y vois </l>
             <l n="1120" xml:id="l1120">Plus de pitié pour lui que de crainte pour moi. </l>
           </sp>
-          <sp xml:id="III06-2" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III06-2">
             <speaker>FAUSTE.</speaker>
             <l n="1121" xml:id="l1121">Seigneur, il m'est bien dur que ma foi soupçonnée </l>
             <l n="1122" xml:id="l1122">Redouble les malheurs où je suis destinée. </l>
@@ -1802,7 +1803,7 @@
             <l n="1127" xml:id="l1127">Et peut-être jamais de si pressants ennuis </l>
             <l n="1128" xml:id="l1128">N'avaient autorisé le désordre où je suis. </l>
           </sp>
-          <sp xml:id="III06-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III06-3">
             <speaker>CONSTANTIN.</speaker>
             <l n="1129" xml:id="l1129">Ah, si j'étais aimé vous n'auriez pu vous taire ; </l>
             <l n="1130" xml:id="l1130">Le crime eût contre un lâche armé votre colère, </l>
@@ -1820,16 +1821,16 @@
             <l n="1142" xml:id="l1142">Le malheur de ma mort vous aurait peu touchée, </l>
             <l n="1143" xml:id="l1143">Et que ce feu secret qu'on ne peut ébranler, </l>
             <l n="1144" xml:id="l1144">Eût trouvé les moyens de vous en consoler ; </l>
-            <l n="1145" xml:id="l1145" part="I">Mais... </l>
+            <l n="1145" part="I" xml:id="l1145">Mais... </l>
           </sp>
-          <sp xml:id="III06-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III06-4">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Contre elle, Seigneur, trop d'aigreur vous engage, </l>
             <l n="1146" xml:id="l1146">Au sang dont elle sort ce soupçon fait outrage, </l>
             <l n="1147" xml:id="l1147">Et d'un feu criminel lui reprocher l'ardeur, </l>
             <l n="1148" xml:id="l1148">C'est jusque dans sa source en souiller la splendeur. </l>
           </sp>
-          <sp xml:id="III06-5" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III06-5">
             <speaker>CONSTANTIN.</speaker>
             <l n="1149" xml:id="l1149">En l'état où je suis je ne sais que vous dire. </l>
             <l n="1150" xml:id="l1150">Dans mes honteux soupçons moi-même je m'admire, </l>
@@ -1843,31 +1844,31 @@
             <l n="1158" xml:id="l1158">Seigneur, à votre choix, faites justice ou grâce, </l>
             <l n="1159" xml:id="l1159">Punissez, pardonnez, je n'examine rien. </l>
           </sp>
-          <sp xml:id="III06-6" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III06-6">
             <speaker>MAXIMIAN.</speaker>
             <l n="1160" xml:id="l1160">Non, non, votre intérêt l'emporte sur le mien, </l>
             <l n="1161" xml:id="l1161">Et comme tout l'État en vous seul se hasarde, </l>
             <l n="1162" xml:id="l1162">Le soin le plus pressant c'est de changer la garde. </l>
             <l n="1163" xml:id="l1163">Licine l'a choisie, et sa lâche fureur... </l>
           </sp>
-          <sp xml:id="III06-7" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III06-7">
             <speaker>FAUSTE.</speaker>
             <l n="1164" xml:id="l1164">Seigneur, je prendrai soin des jours de l'Empereur, </l>
-            <l n="1165" xml:id="l1165" part="I">J'en connais le péril. </l>
+            <l n="1165" part="I" xml:id="l1165">J'en connais le péril. </l>
           </sp>
-          <sp xml:id="III06-8" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="III06-8">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Ordonnez-en, Madame, </l>
             <l n="1166" xml:id="l1166">Votre Empire est toujours absolu sur mon âme, </l>
             <l n="1167" xml:id="l1167">Et quoi que m'offre à craindre un désespoir jaloux, </l>
             <l n="1168" xml:id="l1168">Venant de votre main tout me semblera doux. </l>
           </sp>
-          <sp xml:id="III06-9" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="III06-9">
             <speaker>MAXIMIAN, arrêtant Fauste.</speaker>
             <l n="1169" xml:id="l1169">Madame, l'Empereur trompé par votre zèle, </l>
-            <l n="1170" xml:id="l1170" part="I">Loin de fuir... </l>
+            <l n="1170" part="I" xml:id="l1170">Loin de fuir... </l>
           </sp>
-          <sp xml:id="III06-10" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="III06-10">
             <speaker>FAUSTE.</speaker>
             <l part="F">Son malheur auprès de lui m'appelle, </l>
             <l n="1171" xml:id="l1171">Seigneur, et du forfait quoi qu'on veuille espérer, </l>
@@ -1875,12 +1876,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Maximian, Constance.</head>
-          <sp xml:id="IV01-1" who="CONSTANCE">
-            <SPEAKER>CONSTANCE.</SPEAKER>
+          <sp who="CONSTANCE" xml:id="IV01-1">
+            <speaker>CONSTANCE.</speaker>
             <l n="1173" xml:id="l1173">Quoi, n'avoir point encor par l'effroi des supplices </l>
             <l n="1174" xml:id="l1174">Chercher la vérité dans le sein des Complices, </l>
             <l n="1175" xml:id="l1175">Et souffrir si longtemps sans les faire parler </l>
@@ -1890,7 +1891,7 @@
             <l n="1179" xml:id="l1179">Et l'on ne peut trop tôt dans ces obscurités </l>
             <l n="1180" xml:id="l1180">Faire effort à trouver de fidèles clartés. </l>
           </sp>
-          <sp xml:id="IV01-2" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV01-2">
             <speaker>MAXIMIAN.</speaker>
             <l n="1181" xml:id="l1181">Madame, en ce forfait quoi que l'on examine, </l>
             <l n="1182" xml:id="l1182">Il est bon d'épargner la gloire de Licine, </l>
@@ -1906,7 +1907,7 @@
             <l n="1192" xml:id="l1192">D'ôter tout lieu de nuire à son ambition,</l>
             <l n="1193" xml:id="l1193">Et prévenant par là tout ce qu'on appréhende... </l>
           </sp>
-          <sp xml:id="IV01-3" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="IV01-3">
             <speaker>CONSTANCE.</speaker>
             <l n="1194" xml:id="l1194">Ah, Seigneur, ce n'est pas ce que je vous demande, </l>
             <l n="1195" xml:id="l1195">Et Licine est d'un rang à ne pouvoir souffrir </l>
@@ -1920,11 +1921,11 @@
             <l n="1203" xml:id="l1203">Et si d'un faux brillant les indignes appas </l>
             <l n="1204" xml:id="l1204">Lui gagnèrent un prix qu'il ne méritait pas. </l>
           </sp>
-          <sp xml:id="IV01-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV01-4">
             <speaker>MAXIMIAN.</speaker>
             <l n="1205" xml:id="l1205">Jusqu'à cette rigueur contre lui vous contraindre ? </l>
           </sp>
-          <sp xml:id="IV01-5" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="IV01-5">
             <speaker>CONSTANCE.</speaker>
             <l n="1206" xml:id="l1206">À dire vrai, Seigneur, je n'ai pas tout à craindre, </l>
             <l n="1207" xml:id="l1207">L'attentat m'est suspect, et pour votre intérêt </l>
@@ -1942,14 +1943,14 @@
             <l n="1219" xml:id="l1219">Il vous en laisse arbitre, et dans ce plein pouvoir, </l>
             <l n="1220" xml:id="l1220">Punissant Martian, vous pourrez tout savoir. </l>
           </sp>
-          <sp xml:id="IV01-6" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV01-6">
             <speaker>MAXIMIAN.</speaker>
             <l n="1221" xml:id="l1221">Il est juste, et dans peu par les plus rudes gênes </l>
             <l n="1222" xml:id="l1222">On m'en verra tirer des lumières certaines. </l>
             <l n="1223" xml:id="l1223">Je craignais pour Licine à trop examiner, </l>
             <l n="1224" xml:id="l1224">Mais s'il est innocent, qui peut-on soupçonner ? </l>
           </sp>
-          <sp xml:id="IV01-7" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="IV01-7">
             <speaker>CONSTANCE.</speaker>
             <l n="1225" xml:id="l1225">Seigneur, une belle âme incapable de crime </l>
             <l n="1226" xml:id="l1226">Ne croit former jamais de soupçon légitime, </l>
@@ -1957,9 +1958,9 @@
             <l n="1228" xml:id="l1228">Vous laisse là-dessus Sévère à consulter. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Maximian, Sévère. </head>
-          <sp xml:id="IV02-1" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV02-1">
             <speaker>MAXIMIAN.</speaker>
             <l n="1229" xml:id="l1229">Viens, il faut de nouveau résoudre l'entreprise. </l>
             <l n="1230" xml:id="l1230">La prison de Licine en vain la favorise, </l>
@@ -1982,13 +1983,13 @@
             <l n="1247" xml:id="l1247">Et rompt ce que par eux, les faisant écouter, </l>
             <l n="1248" xml:id="l1248">Nous pouvions être sûrs de voir exécuter. </l>
           </sp>
-          <sp xml:id="IV02-2" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV02-2">
             <speaker>SÉVÈRE.</speaker>
             <l n="1249" xml:id="l1249">Cet obstacle, Seigneur a droit de vous surprendre, </l>
             <l n="1250" xml:id="l1250">Mais vous teniez trop sûr ce moyen d'entreprendre, </l>
             <l n="1251" xml:id="l1251">Le coup précipité m'en semblait hasardeux. </l>
           </sp>
-          <sp xml:id="IV02-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV02-3">
             <speaker>MAXIMIAN.</speaker>
             <l n="1252" xml:id="l1252">Non, non, il n'offrait rien à craindre que pour eux, </l>
             <l n="1253" xml:id="l1253">Et si leur mort sur l'heure eût terminé leur peine, </l>
@@ -2000,7 +2001,7 @@
             <l n="1259" xml:id="l1259">Par ce hardi projet maîtres de tout l'État, </l>
             <l n="1260" xml:id="l1260">Nous n'aurions pas eu de peine à cacher l'attentat. </l>
           </sp>
-          <sp xml:id="IV02-4" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV02-4">
             <speaker>SÉVÈRE.</speaker>
             <l n="1261" xml:id="l1261">Craignez de trop céder à l'espoir qui vous flatte, </l>
             <l n="1262" xml:id="l1262">Quand le secours du Ciel pour l'Empereur éclate. </l>
@@ -2011,7 +2012,7 @@
             <l n="1267" xml:id="l1267">Redoutez un projet dont le succès douteux, </l>
             <l n="1268" xml:id="l1268">S'il tourne contre vous, n'a rien que de honteux. </l>
           </sp>
-          <sp xml:id="IV02-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV02-5">
             <speaker>MAXIMIAN.</speaker>
             <l n="1269" xml:id="l1269">Et soumis au destin dont la rigueur me brave, </l>
             <l n="1270" xml:id="l1270">Tu ne crois point de honte à demeurer esclave, </l>
@@ -2028,9 +2029,9 @@
             <l n="1281" xml:id="l1281">Ainsi, quelques périls où j'expose ma tête... </l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Constantin, Maximian, Sévère, Suite.</head>
-          <sp xml:id="IV03-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-1">
             <speaker>CONSTANTIN.</speaker>
             <l n="1282" xml:id="l1282">Ah, Seigneur, que de maux le Destin nous apprête, </l>
             <l n="1283" xml:id="l1283">Et qu'on m'eût épargné de peines à souffrir </l>
@@ -2044,34 +2045,34 @@
             <l n="1291" xml:id="l1291">Et pour sa gloire au moins n'aidât à déguiser </l>
             <l n="1292" xml:id="l1292">Ce que les Conjurés auraient pu déposer. </l>
           </sp>
-          <sp xml:id="IV03-2" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV03-2">
             <speaker>MAXIMIAN.</speaker>
-            <l n="1293" xml:id="l1293" part="I">Que dites-vous, Seigneur ? </l>
+            <l n="1293" part="I" xml:id="l1293">Que dites-vous, Seigneur ? </l>
           </sp>
-          <sp xml:id="IV03-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-3">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Que la rage et l'envie </l>
             <l n="1294" xml:id="l1294">Par son seul ordre, hélas attentent sur ma vie, </l>
             <l n="1295" xml:id="l1295">Et que d'un premier feu le souvenir trop doux </l>
             <l n="1296" xml:id="l1296">Lui fait tremper les mains dans le sang d'un époux. </l>
           </sp>
-          <sp xml:id="IV03-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV03-4">
             <speaker>MAXIMIAN.</speaker>
             <l n="1297" xml:id="l1297">Ah, Seigneur, de ma Fille épargnez l'innocence. </l>
             <l n="1298" xml:id="l1298">Je vous l'ai déjà dit, ce sentiment m'offense, </l>
             <l n="1299" xml:id="l1299">Et quoi que l'imposture ait oser publier, </l>
             <l n="1300" xml:id="l1300">Le sang dont elle sort la doit justifier. </l>
           </sp>
-          <sp xml:id="IV03-5" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-5">
             <speaker>CONSTANTIN.</speaker>
-            <l n="1301" xml:id="l1301" part="I">Il le devrait, mais las ! </l>
+            <l n="1301" part="I" xml:id="l1301">Il le devrait, mais las ! </l>
           </sp>
-          <sp xml:id="IV03-6" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV03-6">
             <speaker>SÉVÈRE.</speaker>
             <l part="F">Quoi, Seigneur, il peut être </l>
-            <l n="1302" xml:id="l1302" part="I">Que d'aveugles soupçons tombent... </l>
+            <l n="1302" part="I" xml:id="l1302">Que d'aveugles soupçons tombent... </l>
           </sp>
-          <sp xml:id="IV03-7" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-7">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Ne dis rien, traître. </l>
             <l n="1303" xml:id="l1303">C'est toi de qui l'amour dans son coeur enflammé </l>
@@ -2080,15 +2081,15 @@
             <l n="1306" xml:id="l1306">S'il te faut des témoins je ne veux que toi-même, </l>
             <l n="1307" xml:id="l1307">Lâche, dans ce billet reconnais-tu ta main ? </l>
           </sp>
-          <sp xml:id="IV03-8" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV03-8">
             <speaker>MAXIMIAN.</speaker>
-            <l n="1308" xml:id="l1308" part="I">Ô Ciel !</l>
+            <l n="1308" part="I" xml:id="l1308">Ô Ciel !</l>
           </sp>
-          <sp xml:id="IV03-9" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-9">
             <speaker>CONSTANTIN, donnant le billet à Maximin.</speaker>
             <l part="F">Voyez, Seigneur, s'il a part au dessein. </l>
           </sp>
-          <sp xml:id="IV03-10" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV03-10">
             <speaker>MAXIMIAN, lit.</speaker>
             <l n="1309" xml:id="l1309">Quoi que de l'attentat on ait donné d'indices, </l>
             <l n="1310" xml:id="l1310">Peut-être dès ce soir vous n'aurez plus d'Époux. </l>
@@ -2100,9 +2101,9 @@
             <l n="1316" xml:id="l1316">À vos ressentiments la veut voir exposée, </l>
             <l n="1317" xml:id="l1317">Et par ce faux billet qu'il vous fait supposer</l>
             <l n="1318" xml:id="l1318">Il s'accuse lui-même afin de l'accuser. </l>
-            <l n="1319" xml:id="l1319" part="I">L'ardeur de la noircir... </l>
+            <l n="1319" part="I" xml:id="l1319">L'ardeur de la noircir... </l>
           </sp>
-          <sp xml:id="IV03-11" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-11">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Pouvez-vous la défendre, </l>
             <l n="1320" xml:id="l1320">Si moi-même en ses mains je viens de le surprendre ? </l>
@@ -2121,7 +2122,7 @@
             <l n="1333" xml:id="l1333">On va vous l'amener afin que sa fureur </l>
             <l n="1334" xml:id="l1334">Vous oblige avec moi d'en partager l'horreur. </l>
           </sp>
-          <sp xml:id="IV03-12" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV03-12">
             <speaker>MAXIMIAN.</speaker>
             <l n="1335" xml:id="l1335">Dans l'affreux désespoir où me plonge son crime, </l>
             <l n="1336" xml:id="l1336">Pardonnez le désordre où ma raison s'abîme. </l>
@@ -2136,27 +2137,27 @@
             <l n="1345" xml:id="l1345">Et dans l'accablement de mes tristes ennuis, </l>
             <l n="1346" xml:id="l1346">Je me pers, je m'égare, et ne sais qui je suis. </l>
           </sp>
-          <sp xml:id="IV03-13" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-13">
             <speaker>CONSTANTIN.</speaker>
             <l n="1347" xml:id="l1347">Ah, si vous l'ignorez, puis-je encor me connaître ? </l>
             <l n="1348" xml:id="l1348">L'Amour de tous mes voeux s'est rendu le seul Maître, </l>
             <l n="1349" xml:id="l1349">Je ne vis que pour Fauste, et la soif de mon sang </l>
             <l n="1350" xml:id="l1350">Est le prix du beau feu qui l'élève à mon rang. </l>
           </sp>
-          <sp xml:id="IV03-14" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV03-14">
             <speaker>SÉVÈRE.</speaker>
             <l n="1351" xml:id="l1351">Et vous pouvez souffrir qu'une aveugle injustice </l>
             <l n="1352" xml:id="l1352">Étende sa rigueur jusqu'à l'Impératrice ? </l>
             <l n="1353" xml:id="l1353">Par sa haute vertu vos soupçons repoussés </l>
-            <l n="1354" xml:id="l1354" part="I">N'ont rien... </l>
+            <l n="1354" part="I" xml:id="l1354">N'ont rien... </l>
           </sp>
-          <sp xml:id="IV03-15" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-15">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Quoi, ce Billet ne m'en dit pas assez, </l>
             <l n="1355" xml:id="l1355">Traître, et ton fol espoir veut que je me déguise </l>
             <l n="1356" xml:id="l1356">Qu'ainsi qu'elle avant moi tu savais l'entreprise ? </l>
           </sp>
-          <sp xml:id="IV03-16" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV03-16">
             <speaker>SÉVÈRE.</speaker>
             <l n="1357" xml:id="l1357">Non, si de ce forfait mon sang vous doit raison, </l>
             <l n="1358" xml:id="l1358">Condamnez, punissez, j'ai su la trahison ; </l>
@@ -2165,20 +2166,20 @@
             <l n="1361" xml:id="l1361">Le favorable arrêt qui saura les finir, </l>
             <l n="1362" xml:id="l1362">Par la mort que j'attends n'aura rien à punir. </l>
           </sp>
-          <sp xml:id="IV03-17" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV03-17">
             <speaker>MAXIMIAN.</speaker>
             <l n="1363" xml:id="l1363">Oui, tu mourras, perfide, et ta lâche complice </l>
             <l n="1364" xml:id="l1364">Dans ta peine du moins trouvera son supplice, </l>
             <l n="1365" xml:id="l1365">Et puisque mon amour par un tendre intérêt... </l>
           </sp>
-          <sp xml:id="IV03-18" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV03-18">
             <speaker>SÉVÈRE.</speaker>
             <l n="1366" xml:id="l1366">Ah, contre elle, Seigneur, suspendez votre arrêt. </l>
             <l n="1367" xml:id="l1367">Quoi que vous fasse croire une indigne apparence, </l>
             <l n="1368" xml:id="l1368">Jamais tant de vertu ne soutint l'innocence, </l>
-            <l n="1369" xml:id="l1369" part="I">Et j'atteste les Dieux... </l>
+            <l n="1369" part="I" xml:id="l1369">Et j'atteste les Dieux... </l>
           </sp>
-          <sp xml:id="IV03-19" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV03-19">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Cesse de t'obstiner, </l>
             <l n="1370" xml:id="l1370">Si tu n'as pour témoins que les Dieux à donner. </l>
@@ -2186,7 +2187,7 @@
             <l n="1372" xml:id="l1372">Quand ta main te convainc, te peuvent-ils absoudre, </l>
             <l n="1373" xml:id="l1373">Et crois-tu que le Ciel voulut favoriser... </l>
           </sp>
-          <sp xml:id="IV03-20" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV03-20">
             <speaker>SÉVÈRE.</speaker>
             <l n="1374" xml:id="l1374">Quoi, vous-même, Seigneur, vous pouvez l'accuser, </l>
             <l n="1375" xml:id="l1375">Vous à qui sa vertu par des clartés secrètes</l>
@@ -2194,7 +2195,7 @@
             <l n="1377" xml:id="l1377">Et pour braver un sort de sa gloire jaloux </l>
             <l n="1378" xml:id="l1378">Prend pour elle en vous-même un témoin contre vous ? </l>
           </sp>
-          <sp xml:id="IV03-21" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-21">
             <speaker>CONSTANTIN.</speaker>
             <l n="1379" xml:id="l1379">J'en aurais cru ce sang, qu'avant un coup si lâche </l>
             <l n="1380" xml:id="l1380">J'avais pris tant de soin de conserver sans tache ; </l>
@@ -2208,7 +2209,7 @@
             <l n="1388" xml:id="l1388">Force l'Impératrice à vous être infidèle, </l>
             <l n="1389" xml:id="l1389">Il m'en coûte ma gloire, et pour venger mon rang... </l>
           </sp>
-          <sp xml:id="IV03-22" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV03-22">
             <speaker>SÉVÈRE.</speaker>
             <l n="1390" xml:id="l1390">Et bien, à cette gloire abandonnez mon sang, </l>
             <l n="1391" xml:id="l1391">Mais songez, si l'amour me la rendait moins chère, </l>
@@ -2218,18 +2219,18 @@
             <l n="1395" xml:id="l1395">Par de honteux soupçons qui noircissent son zèle </l>
             <l n="1396" xml:id="l1396">Ne me contraignez point à m'expliquer pour elle, </l>
             <l n="1397" xml:id="l1397">Son intérêt me touche, et pour la maintenir, </l>
-            <l n="1398" xml:id="l1398" part="I">Mon coeur... </l>
+            <l n="1398" part="I" xml:id="l1398">Mon coeur... </l>
           </sp>
-          <sp xml:id="IV03-23" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV03-23">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Et c'est de quoi je saurai te punir, </l>
             <l n="1399" xml:id="l1399">Lâche, fais gloire encor de ta coupable flamme, </l>
-            <l n="1400" xml:id="l1400" part="I">On vient te seconder. </l>
+            <l n="1400" part="I" xml:id="l1400">On vient te seconder. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Constantin, Maximian, Fauste, Sévère, Maxime, Suite.</head>
-          <sp xml:id="IV04-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV04-1">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Parlez, parlez, Madame, </l>
             <l n="1401" xml:id="l1401">Et par le noble éclat d'un généreux amour </l>
@@ -2239,7 +2240,7 @@
             <l n="1405" xml:id="l1405">Et ce sera pour vous un reproche éternel </l>
             <l n="1406" xml:id="l1406">Si lorsqu'il vous absout il reste criminel. </l>
           </sp>
-          <sp xml:id="IV04-2" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV04-2">
             <speaker>FAUSTE.</speaker>
             <l n="1407" xml:id="l1407">Seigneur, n'attendez point qu'en faveur de Sévère </l>
             <l n="1408" xml:id="l1408">Je cherche à déguiser ce qu'on ne peut plus taire. </l>
@@ -2258,7 +2259,7 @@
             <l n="1421" xml:id="l1421">Et pour conseil utile en de si lâches coups, </l>
             <l n="1422" xml:id="l1422">Si vous les voulez fuir, n'en prenez que de vous. </l>
           </sp>
-          <sp xml:id="IV04-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV04-3">
             <speaker>CONSTANTIN.</speaker>
             <l n="1423" xml:id="l1423">Ah, que de ce conseil j'ai sujet de me plaindre ! </l>
             <l n="1424" xml:id="l1424">Pour confondre mes soins il m'oblige à tout craindre, </l>
@@ -2277,13 +2278,13 @@
             <l n="1437" xml:id="l1437">Et si ma mort a droit d'adoucir vos malheurs, </l>
             <l n="1438" xml:id="l1438">La sienne auparavant vous coûtera des pleurs. </l>
           </sp>
-          <sp xml:id="IV04-4" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV04-4">
             <speaker>FAUSTE.</speaker>
             <l n="1439" xml:id="l1439">J'aurai lieu d'en donner au malheur qui l'accable </l>
             <l n="1440" xml:id="l1440">Puisque c'est malgré lui qu'il s'est rendu coupable, </l>
             <l n="1441" xml:id="l1441">Et qu'à mes intérêts s'osant sacrifier... </l>
           </sp>
-          <sp xml:id="IV04-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV04-5">
             <speaker>MAXIMIAN.</speaker>
             <l n="1442" xml:id="l1442">Cherchez, cherchez, Madame, à le justifier, </l>
             <l n="1443" xml:id="l1443">Et quelque affront par là qui sur mon sang s'imprime, </l>
@@ -2292,17 +2293,17 @@
             <l n="1446" xml:id="l1446">Sans ce honteux aveu n'éclate pas assez, </l>
             <l n="1447" xml:id="l1447">Il faut par une audace, et lâche, et téméraire... </l>
           </sp>
-          <sp xml:id="IV04-6" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV04-6">
             <speaker>SÉVÈRE.</speaker>
             <l n="1448" xml:id="l1448">Seigneur, encor un coup souffrez-moi de me taire, </l>
             <l n="1449" xml:id="l1449">Et de l'Impératrice épargnant la vertu, </l>
-            <l n="1450" xml:id="l1450" part="I">Laissez-moi le pouvoir... </l>
+            <l n="1450" part="I" xml:id="l1450">Laissez-moi le pouvoir... </l>
           </sp>
-          <sp xml:id="IV04-7" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV04-7">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Lâche, que dirais-tu ? </l>
           </sp>
-          <sp xml:id="IV04-8" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV04-8">
             <speaker>MAXIMIAN.</speaker>
             <l n="1451" xml:id="l1451">Seigneur, il faut qu'il parle, et qu'il nous fasse entendre </l>
             <l n="1452" xml:id="l1452">Jusqu'à quelle fureur le crime a pu s'étendre. </l>
@@ -2312,7 +2313,7 @@
             <l n="1456" xml:id="l1456">Plus de gloire pour moi quand Fauste est criminelle, </l>
             <l n="1457" xml:id="l1457">Son forfait dont l'image à mes yeux vient s'offrir... </l>
           </sp>
-          <sp xml:id="IV04-9" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV04-9">
             <speaker>SÉVÈRE.</speaker>
             <l n="1458" xml:id="l1458">Enfin, Madame, enfin je n'en puis plus souffrir, </l>
             <l n="1459" xml:id="l1459">Et quelque fort respect qui m'oblige au silence, </l>
@@ -2321,11 +2322,11 @@
             <l n="1462" xml:id="l1462">C'est dans Maximian qu'il vous le faut chercher, </l>
             <l n="1463" xml:id="l1463">Lui seul fait conspirer, et Chef de l'entreprise... </l>
           </sp>
-          <sp xml:id="IV04-10" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV04-10">
             <speaker>CONSTANTIN.</speaker>
-            <l n="1464" xml:id="l1464" part="I">Traître, Maximian ? </l>
+            <l n="1464" part="I" xml:id="l1464">Traître, Maximian ? </l>
           </sp>
-          <sp xml:id="IV04-11" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV04-11">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">J'avouerai ma surprise, </l>
             <l n="1465" xml:id="l1465">À ce coup imprévu je ne sais qu'opposer ; </l>
@@ -2333,7 +2334,7 @@
             <l n="1467" xml:id="l1467">Et ne puis faire mieux, pour confondre l'Envie, </l>
             <l n="1468" xml:id="l1468">Que laisser ma défense à l'éclat de ma vie. </l>
           </sp>
-          <sp xml:id="IV04-12" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV04-12">
             <speaker>CONSTANTIN, à Sévère.</speaker>
             <l n="1469" xml:id="l1469">Ah, lâche, c'est donc là cet important secret </l>
             <l n="1470" xml:id="l1470">Que ta jalouse rage abandonne à regret, </l>
@@ -2346,7 +2347,7 @@
             <l n="1477" xml:id="l1477">Veux-tu que par un crime aussi noir que honteux </l>
             <l n="1478" xml:id="l1478">L'objet de son mépris soit celui de ses voeux ? </l>
           </sp>
-          <sp xml:id="IV04-13" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV04-13">
             <speaker>SÉVÈRE.</speaker>
             <l n="1479" xml:id="l1479">À quoi qu'en sa faveur un tel mépris vous force, </l>
             <l n="1480" xml:id="l1480">L'éclat d'une Couronne est une douce amorce, </l>
@@ -2369,21 +2370,21 @@
             <l n="1497" xml:id="l1497">Et j'expose à vos yeux, sans plus rien vous cacher, </l>
             <l n="1498" xml:id="l1498">Tout ce que dans son crime on peut me reprocher. </l>
           </sp>
-          <sp xml:id="IV04-14" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV04-14">
             <speaker>CONSTANTIN.</speaker>
             <l n="1499" xml:id="l1499">Mais si par ce Billet sa trahison connue </l>
             <l n="1500" xml:id="l1500">Ne t'en eût pas fait voir la rage prévenue, </l>
             <l n="1501" xml:id="l1501">Sans nommer le Coupable, et me rien découvrir, </l>
             <l n="1502" xml:id="l1502">Ton jaloux désespoir m'aurait laissé périr ? </l>
           </sp>
-          <sp xml:id="IV04-15" who="SEVERE">
+          <sp who="SEVERE" xml:id="IV04-15">
             <speaker>SÉVÈRE.</speaker>
             <l n="1503" xml:id="l1503">Pour l'arracher au crime où le Trône l'engage, </l>
             <l n="1504" xml:id="l1504">J'aurais mis en secret toute chose en usage, </l>
             <l n="1505" xml:id="l1505">Et si tous mes efforts n'eussent pu l'émouvoir, </l>
             <l n="1506" xml:id="l1506">Le péril redoublant je savais mon devoir. </l>
           </sp>
-          <sp xml:id="IV04-16" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV04-16">
             <speaker>MAXIMIAN.</speaker>
             <l n="1507" xml:id="l1507">Ah, puisque ce devoir était inébranlable, </l>
             <l n="1508" xml:id="l1508">Tu devais m'accuser quand tu me sus coupable, </l>
@@ -2402,7 +2403,7 @@
             <l n="1521" xml:id="l1521">Le sang contre l'Amour s'explique vainement, </l>
             <l n="1522" xml:id="l1522">Et ce n'est rien qu'un père, où l'on sauve un amant. </l>
           </sp>
-          <sp xml:id="IV04-17" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV04-17">
             <speaker>FAUSTE.</speaker>
             <l n="1523" xml:id="l1523">Dans les cruels soupçons que mon malheur m'attire, </l>
             <l n="1524" xml:id="l1524">Après ce que j'ai dit je n'ai plus rien à dire. </l>
@@ -2413,7 +2414,7 @@
             <l n="1529" xml:id="l1529">Se défier sans cesse, et pour sa sûreté </l>
             <l n="1530" xml:id="l1530">Voir et craindre partout de l'infidélité. </l>
           </sp>
-          <sp xml:id="IV04-18" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="IV04-18">
             <speaker>CONSTANTIN.</speaker>
             <l n="1531" xml:id="l1531">Hélas ! Pour mon repos ainsi que pour ma gloire </l>
             <l n="1532" xml:id="l1532">Je ne connais que trop ce qu'il faut craindre et croire, </l>
@@ -2441,14 +2442,14 @@
             <l n="1554" xml:id="l1554">Si Sévère est puni, je suis assez vengé. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Maximian, Fauste. </head>
-          <sp xml:id="IV05-1" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV05-1">
             <speaker>FAUSTE.</speaker>
             <l n="1555" xml:id="l1555">Ah, Seigneur, si jamais la pitié sur votre âme, </l>
-            <l n="1556" xml:id="l1556" part="I">Par un juste pouvoir... </l>
+            <l n="1556" part="I" xml:id="l1556">Par un juste pouvoir... </l>
           </sp>
-          <sp xml:id="IV05-2" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV05-2">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Nous sommes seuls, Madame, </l>
             <l n="1557" xml:id="l1557">Et pour vous épargner des efforts superflus, </l>
@@ -2458,66 +2459,66 @@
             <l n="1561" xml:id="l1561">Et mon coeur insensible à toutes vos douleurs </l>
             <l n="1562" xml:id="l1562">Verra couler son sang de même que vos pleurs. </l>
           </sp>
-          <sp xml:id="IV05-3" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV05-3">
             <speaker>FAUSTE.</speaker>
             <l n="1563" xml:id="l1563">Quoi ? L'aveugle transport que vous prenez pour guide </l>
             <l n="1564" xml:id="l1564">L'emporte sur l'horreur d'un si noir parricide, </l>
             <l n="1565" xml:id="l1565">Et par lui votre coeur au crime abandonné </l>
             <l n="1566" xml:id="l1566">N'épargne point l'époux que vous m'avez donné ? </l>
           </sp>
-          <sp xml:id="IV05-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV05-4">
             <speaker>MAXIMIAN.</speaker>
             <l n="1567" xml:id="l1567">Ce titre de ma haine aurait dû le défendre, </l>
             <l n="1568" xml:id="l1568">Mais il est Empereur aussi bien que mon gendre, </l>
             <l n="1569" xml:id="l1569">Et l'inquiète ardeur dont je me sens brûler </l>
             <l n="1570" xml:id="l1570">Ne l'a fait votre époux que pour me l'immoler. </l>
           </sp>
-          <sp xml:id="IV05-5" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV05-5">
             <speaker>FAUSTE.</speaker>
             <l n="1571" xml:id="l1571">S'il n'est point de fureur qu'un nom si doux n'éteigne, </l>
-            <l n="1572" xml:id="l1572" part="I">Sur quel crime assez grand... </l>
+            <l n="1572" part="I" xml:id="l1572">Sur quel crime assez grand... </l>
           </sp>
-          <sp xml:id="IV05-6" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV05-6">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Il est au trône, il règne, </l>
             <l n="1573" xml:id="l1573">Et dans l'abaissement du rang où je me vois, </l>
             <l n="1574" xml:id="l1574">Quiconque est au-dessus est coupable vers moi</l>
           </sp>
-          <sp xml:id="IV05-7" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV05-7">
             <speaker>FAUSTE.</speaker>
             <l n="1575" xml:id="l1575">Peut-il l'être vers vous d'un Trône héréditaire ? </l>
             <l n="1576" xml:id="l1576">Votre place à remplir y fit monter son père, </l>
             <l n="1577" xml:id="l1577">Et lors que la vertu vous l'a fait dédaigner, </l>
             <l n="1578" xml:id="l1578">Est-ce un crime pour lui que le droit de régner ? </l>
           </sp>
-          <sp xml:id="IV05-8" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV05-8">
             <speaker>MAXIMIAN.</speaker>
             <l n="1579" xml:id="l1579">Si des projets si bas surprirent ma faiblesse, </l>
             <l n="1580" xml:id="l1580">À m'en faire raison ma gloire s'intéresse, </l>
             <l n="1581" xml:id="l1581">Et pour les réparer dans l'éclat qu'ils ont eu, </l>
             <l n="1582" xml:id="l1582">Je dois un crime illustre à ma lâche vertu. </l>
           </sp>
-          <sp xml:id="IV05-9" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV05-9">
             <speaker>FAUSTE.</speaker>
             <l n="1583" xml:id="l1583">Quoi ! Réduite aux devoirs et de Fille et de Femme, </l>
-            <l n="1584" xml:id="l1584" part="I">Ce déplorable état... </l>
+            <l n="1584" part="I" xml:id="l1584">Ce déplorable état... </l>
           </sp>
-          <sp xml:id="IV05-10" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV05-10">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">C'est perdre temps, Madame, </l>
             <l n="1585" xml:id="l1585">Les larmes dans vos maux sont un faible secours, </l>
             <l n="1586" xml:id="l1586">Et le Trône vaut bien les forfaits où je cours.</l>
           </sp>
-          <sp xml:id="IV05-11" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV05-11">
             <speaker>FAUSTE.</speaker>
             <l n="1587" xml:id="l1587">Et bien, père cruel, il faut être cruelle, </l>
             <l n="1588" xml:id="l1588">Votre infidélité me va rendre infidèle, </l>
             <l n="1589" xml:id="l1589">Et contre la Nature un juste désespoir </l>
             <l n="1590" xml:id="l1590">Fait déjà dans mon coeur révolter mon devoir. </l>
             <l n="1591" xml:id="l1591">Pour sauver mon époux, j'accuserai mon père, </l>
-            <l n="1592" xml:id="l1592" part="I">Et... </l>
+            <l n="1592" part="I" xml:id="l1592">Et... </l>
           </sp>
-          <sp xml:id="IV05-12" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV05-12">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Vous craindrai-je plus que je n'ai fait Sévère ? </l>
             <l n="1593" xml:id="l1593">Après que son rapport n'a pu trouver de foi, </l>
@@ -2528,28 +2529,28 @@
             <l n="1598" xml:id="l1598">De la pleine douceur d'avoir osé trahir. </l>
             <l n="1599" xml:id="l1599">Mais enfin de sa peine il est temps qu'on ordonne, </l>
             <l n="1600" xml:id="l1600">Vous savez le pouvoir que l'Empereur me donne, </l>
-            <l n="1601" xml:id="l1601" part="I">J'en saurai bien user. </l>
+            <l n="1601" part="I" xml:id="l1601">J'en saurai bien user. </l>
           </sp>
-          <sp xml:id="IV05-13" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="IV05-13">
             <speaker>FAUSTE.</speaker>
             <l part="M">Hélas ! </l>
           </sp>
-          <sp xml:id="IV05-14" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="IV05-14">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Dans un moment </l>
             <l n="1602" xml:id="l1602">Vous recevrez mon ordre en votre appartement</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Constantin, Constance. </head>
-          <sp xml:id="V01-1" who="CONSTANTIN">
-            <SPEAKER>CONSTANTIN.</SPEAKER>
+          <sp who="CONSTANTIN" xml:id="V01-1">
+            <speaker>CONSTANTIN.</speaker>
             <l n="1603" xml:id="l1603">Quoi, ma Soeur, c'est par vous que sa prison ouverte... </l>
           </sp>
-          <sp xml:id="V01-2" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="V01-2">
             <speaker>CONSTANCE.</speaker>
             <l n="1604" xml:id="l1604">Seigneur, je vous voyais au point de votre perte. </l>
             <l n="1605" xml:id="l1605">Déjà des Révoltés l'aveugle emportement </l>
@@ -2571,7 +2572,7 @@
             <l n="1621" xml:id="l1621">Et si dans ce qu'elle ose il leur doit quelque appui, </l>
             <l n="1622" xml:id="l1622">Je le connais assez pour répondre de lui. </l>
           </sp>
-          <sp xml:id="V01-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V01-3">
             <speaker>CONSTANTIN.</speaker>
             <l n="1623" xml:id="l1623">Je n'en suis point en peine, et ce qui m'inquiète </l>
             <l n="1624" xml:id="l1624">C'est le secret remords où la raison me jette. </l>
@@ -2582,7 +2583,7 @@
             <l n="1629" xml:id="l1629">Et pour en voir soudain le soupçon rejeté, </l>
             <l n="1630" xml:id="l1630">Mon coeur n'avait besoin d'aucune autre clarté. </l>
           </sp>
-          <sp xml:id="V01-4" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="V01-4">
             <speaker>CONSTANCE.</speaker>
             <l n="1631" xml:id="l1631">L'attentat est si noir, qu'avec trop d'injustice </l>
             <l n="1632" xml:id="l1632">Du coup qui vous perdait vous la croyiez complice. </l>
@@ -2593,7 +2594,7 @@
             <l n="1637" xml:id="l1637">Et connu de lui seul, quoi qu'il veuille tenter, </l>
             <l n="1638" xml:id="l1638">Ne l'en pouvant convaincre il est à redouter. </l>
           </sp>
-          <sp xml:id="V01-5" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V01-5">
             <speaker>CONSTANTIN.</speaker>
             <l n="1639" xml:id="l1639">Sa fuite n'a pas eu le succès que l'on pense, </l>
             <l n="1640" xml:id="l1640">Et s'il peut mériter encor quelque croyance, </l>
@@ -2608,11 +2609,11 @@
             <l n="1649" xml:id="l1649">De ses déguisements le but mystérieux, </l>
             <l n="1650" xml:id="l1650">Après ce que je sais, se découvrira mieux. </l>
           </sp>
-          <sp xml:id="V01-6" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="V01-6">
             <speaker>CONSTANCE.</speaker>
-            <l n="1651" xml:id="l1651" part="I">Et Martian ? </l>
+            <l n="1651" part="I" xml:id="l1651">Et Martian ? </l>
           </sp>
-          <sp xml:id="V01-7" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V01-7">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">D'abord il a voulu se taire, </l>
             <l n="1652" xml:id="l1652">Mais resté sans secours, et trahi par Valère, </l>
@@ -2627,27 +2628,27 @@
             <l n="1661" xml:id="l1661">Et craignant des mutins le murmure indiscret, </l>
             <l n="1662" xml:id="l1662">Il a cru par sa fuite assurer son secret. </l>
           </sp>
-          <sp xml:id="V01-8" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="V01-8">
             <speaker>CONSTANCE.</speaker>
-            <l n="1663" xml:id="l1663" part="I">Quelle rage, Seigneur ? </l>
+            <l n="1663" part="I" xml:id="l1663">Quelle rage, Seigneur ? </l>
           </sp>
-          <sp xml:id="V01-9" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V01-9">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Ce qui me désespère, </l>
             <l n="1664" xml:id="l1664">C'est le contraint aveu que m'en a fait Sévère, </l>
             <l n="1665" xml:id="l1665">Qui sachant le secret du lâche qui me perd, </l>
             <l n="1666" xml:id="l1666">Si Straton n'eût parlé, ne m'eût rien découvert. </l>
             <l n="1667" xml:id="l1667">Maxime nous l'amène, afin qu'en sa présence </l>
-            <l n="1668" xml:id="l1668" part="I">Fauste puisse... </l>
+            <l n="1668" part="I" xml:id="l1668">Fauste puisse... </l>
           </sp>
-          <sp xml:id="V01-10" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="V01-10">
             <speaker>CONSTANCE.</speaker>
             <l part="F">Seigneur, la voici qui s'avance. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Constantin, Fauste, Constance. </head>
-          <sp xml:id="V02-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V02-1">
             <speaker>CONSTANTIN.</speaker>
             <l n="1669" xml:id="l1669">Dans le confus désordre où mon malheur me met, </l>
             <l n="1670" xml:id="l1670">Madame, oublierez-vous l'affront qu'on vous a fait ? </l>
@@ -2656,7 +2657,7 @@
             <l n="1673" xml:id="l1673">L'outrage m'est sensible, et pour le réparer, </l>
             <l n="1674" xml:id="l1674">Il n'est rien que de moi l'on est droit d'espérer. </l>
           </sp>
-          <sp xml:id="V02-2" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="V02-2">
             <speaker>FAUSTE.</speaker>
             <l n="1675" xml:id="l1675">Ah, Seigneur, il n'est point de peine assez cruelle </l>
             <l n="1676" xml:id="l1676">Pour punir mon forfait si je suis criminelle, </l>
@@ -2671,7 +2672,7 @@
             <l n="1685" xml:id="l1685">Partout d'un noir destin vos jours sont menacés, </l>
             <l n="1686" xml:id="l1686">Et ne rien dire plus c'est vous en dire assez. </l>
           </sp>
-          <sp xml:id="V02-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V02-3">
             <speaker>CONSTANTIN.</speaker>
             <l n="1687" xml:id="l1687">Oui, c'est m'en dire assez, et le soin de ma gloire </l>
             <l n="1688" xml:id="l1688">Suffisait à forcer mon amour à vous croire, </l>
@@ -2683,9 +2684,9 @@
             <l n="1694" xml:id="l1694">M'a de Maximian... Mais je le vois venir. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Constantin, Maximian, Fauste, Constance. </head>
-          <sp xml:id="V03-1" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V03-1">
             <speaker>MAXIMIAN.</speaker>
             <l n="1695" xml:id="l1695">Et bien, après l'éclat que le Peuple autorise, </l>
             <l n="1696" xml:id="l1696">Douterez-vous, Seigneur, des Chefs de l'entreprise ? </l>
@@ -2696,7 +2697,7 @@
             <l n="1701" xml:id="l1701">Par là leur fermeté bravait votre courroux, </l>
             <l n="1702" xml:id="l1702">Et sûrs d'une révolte ils n'ont rien craint de vous. </l>
           </sp>
-          <sp xml:id="V03-2" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V03-2">
             <speaker>CONSTANTIN.</speaker>
             <l n="1703" xml:id="l1703">S'ils n'ont rien craint de moi, je vois beaucoup à craindre, </l>
             <l n="1704" xml:id="l1704">Et l'on ne connaît pas combien je suis à plaindre. </l>
@@ -2707,7 +2708,7 @@
             <l n="1709" xml:id="l1709">Et dans ce que de moi Fauste a droit d'obtenir, </l>
             <l n="1710" xml:id="l1710">C'est mal savoir aimer que songer à punir. </l>
           </sp>
-          <sp xml:id="V03-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V03-3">
             <speaker>MAXIMIAN.</speaker>
             <l n="1711" xml:id="l1711">Quoi, Seigneur, à l'État, à vous-même perfide, </l>
             <l n="1712" xml:id="l1712">Vous pourriez épargnez un lâche Parricide, </l>
@@ -2730,20 +2731,20 @@
             <l n="1729" xml:id="l1729">Du moins mon sang versé, s'il ne peut l'émouvoir, </l>
             <l n="1730" xml:id="l1730">Justifiera l'avis que j'ai cru vous devoir. </l>
           </sp>
-          <sp xml:id="V03-4" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="V03-4">
             <speaker>FAUSTE.</speaker>
             <l n="1731" xml:id="l1731">De tout ce que j'entends interdite et confuse, </l>
             <l n="1732" xml:id="l1732">Je n'ose murmurer quand mon père m'accuse, </l>
             <l n="1733" xml:id="l1733">Mais après mon silence il m'est bien dur de voir </l>
             <l n="1734" xml:id="l1734">Que sur lui la Nature ait si peu de pouvoir. </l>
           </sp>
-          <sp xml:id="V03-5" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V03-5">
             <speaker>MAXIMIAN.</speaker>
             <l n="1735" xml:id="l1735">Moi, je l'écouterais quand je vois Licine </l>
             <l n="1736" xml:id="l1736">Avec vous de l'État a juré la ruine ? </l>
             <l n="1737" xml:id="l1737">Voyez ce que pour lui les Mutins ont osé. </l>
           </sp>
-          <sp xml:id="V03-6" who="CONSTANCE">
+          <sp who="CONSTANCE" xml:id="V03-6">
             <speaker>CONSTANCE.</speaker>
             <l n="1738" xml:id="l1738">Il doit être suspect puisqu'il est accusé ; </l>
             <l n="1739" xml:id="l1739">Mais je doute, Seigneur, si ce serait un crime </l>
@@ -2751,7 +2752,7 @@
             <l n="1741" xml:id="l1741">Et de se hasarder à juger un peu mieux </l>
             <l n="1742" xml:id="l1742">Du secret intérêt qu'il prend aux factieux. </l>
           </sp>
-          <sp xml:id="V03-7" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V03-7">
             <speaker>MAXIMIAN.</speaker>
             <l n="1743" xml:id="l1743">En vain votre pitié veut être son refuge. </l>
             <l n="1744" xml:id="l1744">Qui se trouve innocent n'a jamais craint son Juge, </l>
@@ -2770,13 +2771,13 @@
             <l n="1757" xml:id="l1757">En prévenir la rage avec tant de langueur, </l>
             <l n="1758" xml:id="l1758">C'est pousser le poignard qui vous perce le coeur. </l>
           </sp>
-          <sp xml:id="V03-8" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V03-8">
             <speaker>CONSTANTIN.</speaker>
             <l n="1759" xml:id="l1759">Ainsi tout prêt à voir l'entreprise détruite, </l>
             <l n="1760" xml:id="l1760">De Martian Licine a pratiqué la fuite ? </l>
             <l n="1761" xml:id="l1761">C'est par lui que ce Traître est hors de mon pouvoir ? </l>
           </sp>
-          <sp xml:id="V03-9" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V03-9">
             <speaker>MAXIMIAN.</speaker>
             <l n="1762" xml:id="l1762">Lui-même par la sienne il vous le fait trop voir. </l>
             <l n="1763" xml:id="l1763">Ne craignant rien d'ailleurs dans l'horreur des supplices, </l>
@@ -2784,28 +2785,28 @@
             <l n="1765" xml:id="l1765">Martian au remords avait déjà cédé, </l>
             <l n="1766" xml:id="l1766">Lui seul l'eût convaincu, lui seul est évadé. </l>
           </sp>
-          <sp xml:id="V03-10" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V03-10">
             <speaker>CONSTANTIN.</speaker>
             <l n="1767" xml:id="l1767">D'autres témoins peut-être auront peine à se taire, </l>
-            <l n="1768" xml:id="l1768" part="I">Voici Maxime. </l>
+            <l n="1768" part="I" xml:id="l1768">Voici Maxime. </l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. Constantin, Maximian, Fauste, Constance, Maxime.</head>
-          <sp xml:id="V04-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V04-1">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Et bien, amène-t-on Sévère ? </l>
           </sp>
-          <sp xml:id="V04-2" who="MAXIME">
+          <sp who="MAXIME" xml:id="V04-2">
             <speaker>MAXIME.</speaker>
             <l n="1769" xml:id="l1769">Seigneur, le triste état où la perte du sang </l>
             <l n="1770" xml:id="l1770">Que trois coups de poignard ont tiré de son flanc... </l>
           </sp>
-          <sp xml:id="V04-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V04-3">
             <speaker>CONSTANTIN.</speaker>
-            <l n="1771" xml:id="l1771" part="I">Quoi, Sévère est blessé ? </l>
+            <l n="1771" part="I" xml:id="l1771">Quoi, Sévère est blessé ? </l>
           </sp>
-          <sp xml:id="V04-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V04-4">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Seigneur, quelle surprise ! </l>
             <l n="1772" xml:id="l1772">Mais s'il n'est que mourant le Ciel me favorise. </l>
@@ -2813,7 +2814,7 @@
             <l n="1774" xml:id="l1774">Pour recouvrer ma gloire allons dans sa prison, </l>
             <l n="1775" xml:id="l1775">Il parlera sans doute, et voudra se dédire. </l>
           </sp>
-          <sp xml:id="V04-5" who="MAXIME">
+          <sp who="MAXIME" xml:id="V04-5">
             <speaker>MAXIME.</speaker>
             <l n="1776" xml:id="l1776">À peine y suis-je entré qu'on l'entend qui soupire, </l>
             <l n="1777" xml:id="l1777">Et nous voyant saisis d'épouvante et d'horreur, </l>
@@ -2822,45 +2823,45 @@
             <l n="1780" xml:id="l1780">Et sa voix... Mais, Seigneur, le voici qu'on amène. </l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. Constantin, Maximian, Fauste, Constance, Sévère, Maxime, Suite.</head>
-          <sp xml:id="V05-1" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V05-1">
             <speaker>CONSTANTIN.</speaker>
-            <l n="1781" xml:id="l1781" part="I">Ah, Sévère ! </l>
+            <l n="1781" part="I" xml:id="l1781">Ah, Sévère ! </l>
           </sp>
-          <sp xml:id="V05-2" who="SEVERE">
+          <sp who="SEVERE" xml:id="V05-2">
             <speaker>SÉVÈRE.</speaker>
             <l part="M">Ah, Seigneur. </l>
           </sp>
-          <sp xml:id="V05-3" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V05-3">
             <speaker>MAXIMIAN.</speaker>
             <l part="F">Hâte-toi de parler, </l>
             <l n="1782" xml:id="l1782">Quelle main à sa rage a voulu t'immoler ? </l>
           </sp>
-          <sp xml:id="V05-4" who="SEVERE">
+          <sp who="SEVERE" xml:id="V05-4">
             <speaker>SÉVÈRE.</speaker>
             <l n="1783" xml:id="l1783">Où la faut-il chercher qu'en celle qui conspire ? </l>
           </sp>
-          <sp xml:id="V05-5" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="V05-5">
             <speaker>FAUSTE.</speaker>
-            <l n="1784" xml:id="l1784" part="I">Dieux ! </l>
+            <l n="1784" part="I" xml:id="l1784">Dieux ! </l>
           </sp>
-          <sp xml:id="V05-6" who="SEVERE">
+          <sp who="SEVERE" xml:id="V05-6">
             <speaker>SÉVÈRE, à Maximian.</speaker>
             <l part="F">Je ne dirai rien que vous n'eussiez pu dire. </l>
-            <stage type="toward">À Constantin. </stage>
+            <stage>À Constantin. </stage>
             <l n="1785" xml:id="l1785">Seigneur, Maximian par moi seul découvert </l>
             <l n="1786" xml:id="l1786">M'a cru devoir punir d'un rapport qui le perd, </l>
             <l n="1787" xml:id="l1787">Mais le Ciel malgré lui contraire à son envie </l>
             <l n="1788" xml:id="l1788">Pour l'accuser encor me laisse assez de vie, </l>
             <l n="1789" xml:id="l1789">Lui seul des Conjurés engage la fureur. </l>
           </sp>
-          <sp xml:id="V05-7" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V05-7">
             <speaker>MAXIMIAN.</speaker>
             <l n="1790" xml:id="l1790">Quoi, Traître, les forfaits te font si peu d'horreur, </l>
             <l n="1791" xml:id="l1791">Que pour plaire à l'amour, ton indigne imposture... </l>
           </sp>
-          <sp xml:id="V05-8" who="SEVERE">
+          <sp who="SEVERE" xml:id="V05-8">
             <speaker>SÉVÈRE.</speaker>
             <l n="1792" xml:id="l1792">Ce que je viens de dire est la vérité pure. </l>
             <l n="1793" xml:id="l1793">Dans le funeste état, Seigneur, où je me vois, </l>
@@ -2877,16 +2878,16 @@
             <l n="1804" xml:id="l1804">Songez que tout mon crime est l'excès de ma flamme, </l>
             <l n="1805" xml:id="l1805">Et que malgré le sort à ma perte animé, </l>
             <l n="1806" xml:id="l1806">Je serais innocent si j'avais moins aimé. </l>
-            <l n="1807" xml:id="l1807" part="I">C'en est fait, et déjà... </l>
+            <l n="1807" part="I" xml:id="l1807">C'en est fait, et déjà... </l>
           </sp>
-          <sp xml:id="V05-9" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V05-9">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Prenez en soin, Maxime. </l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI. Constantin, Maximian, Fauste, Constance, Suite. </head>
-          <sp xml:id="V06-1" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V06-1">
             <speaker>MAXIMIAN.</speaker>
             <l n="1808" xml:id="l1808">J'ai voulu jusqu'au bout lui voir pousser son crime, </l>
             <l n="1809" xml:id="l1809">Il meurt en m'accusant ; laissez couler vos pleurs, </l>
@@ -2896,31 +2897,31 @@
             <l n="1813" xml:id="l1813">Et leur seule tendresse a droit de mériter </l>
             <l n="1814" xml:id="l1814">Ceux que sur moi sa rage a voulu rejeter. </l>
           </sp>
-          <sp xml:id="V06-2" who="FAUSTE">
+          <sp who="FAUSTE" xml:id="V06-2">
             <speaker>FAUSTE, à Maximian.</speaker>
             <l n="1815" xml:id="l1815">Vous le savez, Seigneur ; quoi que m'impute un père, </l>
             <l n="1816" xml:id="l1816">Le respect, le devoir m'ont appris à me taire, </l>
             <l n="1817" xml:id="l1817">Heureuse dans un mal qui veut un prompt secours, </l>
             <l n="1818" xml:id="l1818">S'il peut m'être permis de me taire toujours. </l>
           </sp>
-          <sp xml:id="V06-3" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V06-3">
             <speaker>CONSTANTIN, à Maximian.</speaker>
             <l n="1819" xml:id="l1819">Dans ce que d'un Mourant le Ciel nous fait entendre, </l>
             <l n="1820" xml:id="l1820">C'est trop que d'accuser, songez à vous défendre. </l>
             <l n="1821" xml:id="l1821">Sévère est mort, à qui le doit-on imputer ? </l>
           </sp>
-          <sp xml:id="V06-4" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V06-4">
             <speaker>MAXIMIAN.</speaker>
             <l n="1822" xml:id="l1822">Quoi, parce qu'il m'accuse on voudrait en douter ? </l>
             <l n="1823" xml:id="l1823">Pour en craindre l'effet l'imposture est trop claire ; </l>
             <l n="1824" xml:id="l1824">Qui fait fuir Martian a fait périr Sévère, </l>
-            <l n="1825" xml:id="l1825" part="I">Licine seul... </l>
+            <l n="1825" part="I" xml:id="l1825">Licine seul... </l>
           </sp>
-          <sp xml:id="V06-5" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V06-5">
             <speaker>CONSTANTIN.</speaker>
             <l part="F">Seigneur, sur quoi l'en soupçonner ? </l>
           </sp>
-          <sp xml:id="V06-6" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V06-6">
             <speaker>MAXIMIAN.</speaker>
             <l n="1826" xml:id="l1826">Sur l'excès d'un orgueil qui se veut couronner ; </l>
             <l n="1827" xml:id="l1827">Puis qu'enfin de deux Chefs que l'ambition presse, </l>
@@ -2929,12 +2930,12 @@
             <l n="1830" xml:id="l1830">Met son heur le plus grand à perdre son rival. </l>
             <l n="1831" xml:id="l1831">Voilà sur quels motifs le coupable Licine... </l>
           </sp>
-          <sp xml:id="V06-7" who="CONSTANTIN">
+          <sp who="CONSTANTIN" xml:id="V06-7">
             <speaker>CONSTANTIN.</speaker>
             <l n="1832" xml:id="l1832">Mais dans sa trahison voyons-nous qu'il s'obstine ? </l>
             <l n="1833" xml:id="l1833">Si le Peuple s'emporte, il sait le retenir. </l>
           </sp>
-          <sp xml:id="V06-8" who="MAXIMIAN">
+          <sp who="MAXIMIAN" xml:id="V06-8">
             <speaker>MAXIMIAN.</speaker>
             <l n="1834" xml:id="l1834">Et c'est un crime encor dont il le faut punir. </l>
             <l n="1835" xml:id="l1835">Ce que sur les Mutins il s'est acquis d'empire </l>
@@ -2948,11 +2949,194 @@
             <l n="1843" xml:id="l1843">Ils ont beau s'attacher aux intérêts d'un Traître, </l>
             <l n="1844" xml:id="l1844">Pour faire avorter tout je ne veux que paraître, </l>
             <l n="1845" xml:id="l1845">Et quoi qu'à se garder Licine ait pris de soin, </l>
-            <l n="1846" xml:id="l1846" part="I">L'arrachant de leurs mains... </l>
+            <l n="1846" part="I" xml:id="l1846">L'arrachant de leurs mains... </l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7"><head>SCÈNE VII. Constantin, Maximian, Fauste, Constance, </head>Licine, Suite. 
-<sp xml:id="V07-1" who="LICINE"><speaker>LICINE.</speaker><l part="F">Il n'en est pas besoin. </l><l n="1847" xml:id="l1847">Seigneur, il vient se rendre, et dérober sa gloire </l><l n="1848" xml:id="l1848">À ce qu'un imposteur a donné lieu de croire. </l><l n="1849" xml:id="l1849">La fuite où m'a forcé le seul bien de l'État </l><l n="1850" xml:id="l1850">Eût de la calomnie autorisé l'éclat. </l><l n="1851" xml:id="l1851">Dans rébellion le Peuple était à craindre, </l><l n="1852" xml:id="l1852">Le feu m'a paru grand, j'ai tâché de l'éteindre, </l><l n="1853" xml:id="l1853">Et comme à l'innocence on doit se confier, </l><l n="1854" xml:id="l1854">Je reviens, ou mourir ou me justifier. </l></sp><sp xml:id="V07-2" who="CONSTANCE"><speaker>CONSTANCE, à Constantin.</speaker><l n="1855" xml:id="l1855">Vous le voyez, Seigneur, si j'ai dû vous répondre </l><l n="1856" xml:id="l1856">Que bravant l'imposture il saurait la confondre. </l><l n="1857" xml:id="l1857">Son retour à sa gloire assure assez l'éclat. </l></sp><sp xml:id="V07-3" who="CONSTANTIN"><speaker>CONSTANTIN, à Maximian.</speaker><l n="1858" xml:id="l1858">Lui voudrez-vous encor imputer l'attentat ? </l><l n="1859" xml:id="l1859" part="I">Vous paraissez surpris ? </l></sp><sp xml:id="V07-4" who="MAXIMIAN"><speaker>MAXIMIAN.</speaker><l part="F">Je n'ai plus rien à dire, </l><l n="1860" xml:id="l1860">Pour justifier Fauste on veut que je conspire, </l><l n="1861" xml:id="l1861">J'y consens, croyez tout, l'indice est trop pressant, </l><l n="1862" xml:id="l1862">Licine vient s'offrir, il doit être innocent. </l><l n="1863" xml:id="l1863">Mais que hasarde-t-il ? Un grand Peuple rebelle, </l><l n="1864" xml:id="l1864">Si vous le condamnez, va prendre sa querelle, </l><l n="1865" xml:id="l1865">Et sûr de son secours, il doit peu redouter </l><l n="1866" xml:id="l1866">La rigueur d'un arrêt qu'on n'ose exécuter. </l></sp><sp xml:id="V07-5" who="LICINE"><speaker>LICINE.</speaker><l n="1867" xml:id="l1867">J'avais de vous, Seigneur, attendu plus d'estime, </l><l n="1868" xml:id="l1868">Mais l'Empereur sans doute éclaircira le crime, </l><l n="1869" xml:id="l1869">Et l'imposture en vain l'aura sur moi jeté, </l><l n="1870" xml:id="l1870">Si contre Martian Sévère est écouté. </l></sp><sp xml:id="V07-6" who="CONSTANTIN"><speaker>CONSTANTIN, à Licine.</speaker><l n="1871" xml:id="l1871">Bien loin de te flatter d'un si faible avantage, </l><l n="1872" xml:id="l1872">Tremble, Sévère est mort, on l'impute à ta rage. </l><l n="1873" xml:id="l1873">Purge-toi, si tu peux, de l'avoir fait périr. </l></sp><sp xml:id="V07-7" who="LICINE"><speaker>LICINE.</speaker><l n="1874" xml:id="l1874">Sévère ne vit plus ! Et bien, il faut mourir. </l><l n="1875" xml:id="l1875">J'aurais beau repousser un crime détestable, </l><l n="1876" xml:id="l1876">Puisque Sévère est mort, on veut me voir coupable, </l><l n="1877" xml:id="l1877">Et quoi que l'imposture invente contre moi, </l><l n="1878" xml:id="l1878">Le traître Martian sera digne de foi. </l></sp><sp xml:id="V07-8" who="CONSTANTIN"><speaker>CONSTANTIN.</speaker><l n="1879" xml:id="l1879">Feins de le craindre encor, quand par tes artifices </l><l n="1880" xml:id="l1880">Sa fuite l'a soustrait aux plus affreux supplices. </l><l n="1881" xml:id="l1881">Tu l'as fait évader, et reviens sans effroi, </l><l n="1882" xml:id="l1882">N'ayant plus de témoin qui parle contre toi. </l><l n="1883" xml:id="l1883">Nie encor, et par là prouve ton innocence. </l></sp><sp xml:id="V07-9" who="LICINE"><speaker>LICINE.</speaker><l n="1884" xml:id="l1884">Moi, qu'avec Martian je sois d'intelligence ? </l><l n="1885" xml:id="l1885">Ai-je quelque intérêt à le faire évader </l><l n="1886" xml:id="l1886">Quand de l'Auteur du crime il peut seul décider ? </l><l n="1887" xml:id="l1887">Si m'étant confronté je ne le fais dédire, </l><l n="1888" xml:id="l1888">Je demeure coupable, et c'est moi qui conspire. </l><l n="1889" xml:id="l1889">Qu'attends-je de sa fuite, et quel est mon espoir ? </l></sp><sp xml:id="V07-10" who="MAXIMIAN"><speaker>MAXIMIAN.</speaker><l n="1890" xml:id="l1890">Par ces fausses clartés tâche à nous décevoir. </l><l n="1891" xml:id="l1891">Pour te justifier c'est peu que l'apparence. </l></sp><sp xml:id="V07-11" who="CONSTANTIN"><speaker>CONSTANTIN.</speaker><l n="1892" xml:id="l1892">Elle fait encor plus pour lui que l'on ne pense, </l><l n="1893" xml:id="l1893">Et pour tout dire enfin, il me serait bien doux </l><l n="1894" xml:id="l1894">Qu'avec autant de force elle parlât pour vous. </l><l n="1895" xml:id="l1895">Sévère a soutenu que pour vous on conspire, </l><l n="1896" xml:id="l1896">Et sa mort l'a puni de ce qu'il a su dire ; </l><l n="1897" xml:id="l1897">Votre intérêt ailleurs se trouve conservé, </l><l n="1898" xml:id="l1898">Martian n'a rien dit, Martian est sauvé. </l></sp><sp xml:id="V07-12" who="MAXIMIAN"><speaker>MAXIMIAN.</speaker><l n="1899" xml:id="l1899">Enfin je suis coupable, et l'éclat de ma gloire </l><l n="1900" xml:id="l1900">Est trop peu pour régler ce que vous devez croire ? </l><l n="1901" xml:id="l1901">Mais si j'avais encor Martian pour témoin... </l></sp><sp xml:id="V07-13" who="CONSTANTIN"><speaker>CONSTANTIN.</speaker><l n="1902" xml:id="l1902">Et bien, s'il vous le faut, Martian n'est pas loin. </l><l n="1903" xml:id="l1903">Voulez-vous qu'on l'amène, et que Valère ensuite </l><l n="1904" xml:id="l1904">Vienne vous expliquer ce qu'il sait de sa fuite ? </l><l n="1905" xml:id="l1905">Voulez-vous savoir d'eux d'où j'ai pu deviner </l><l n="1906" xml:id="l1906">Que jusque dans mon lit on doit m'assassiner, </l><l n="1907" xml:id="l1907">Et que dès cette nuit pour cet excès de rage </l><l n="1908" xml:id="l1908">Par votre appartement on trouve au mien passage ? </l><l n="1909" xml:id="l1909">Qu'on les fasse venir. Pour peu qu'ils soient pressés... </l></sp><sp xml:id="V07-14" who="MAXIMIAN"><speaker>MAXIMIAN.</speaker><l n="1910" xml:id="l1910">Arrête, Constantin, tu m'en as dit assez. </l><l n="1911" xml:id="l1911">Je vois que tu sais tout, et qu'instruit par Valère </l><l n="1912" xml:id="l1912">De mes déguisements tu perces le mystère. </l><l n="1913" xml:id="l1913">Martian dont la fuite assurait mes desseins, </l><l n="1914" xml:id="l1914">Quand je le crois sauvé, se trouve entre tes mains, </l><l n="1915" xml:id="l1915">Il t'a tout découvert, et dans la défiance </l><l n="1916" xml:id="l1916">Où de mes voeux trahis te met la connaissance, </l><l n="1917" xml:id="l1917">Me voyant hors d'espoir d'en obtenir l'effet, </l><l n="1918" xml:id="l1918">Je n'ai plus d'intérêt à cacher mon forfait. </l><l n="1919" xml:id="l1919">Quand en n'avouant rien je pourrais te réduire </l><l n="1920" xml:id="l1920">À douter si c'est moi qui cherche à te détruire, </l><l n="1921" xml:id="l1921">Observé dans ta Cour, haï de toutes parts, </l><l n="1922" xml:id="l1922">J'aurais beau vers le Trône élever mes regards. </l><l n="1923" xml:id="l1923">On ne me laisserait aucun lieu d'entreprendre, </l><l n="1924" xml:id="l1924">Et puis que je connais qu'il n'y faut plus prétendre, </l><l n="1925" xml:id="l1925">J'aime mieux, te pressant de ne pas m'épargner, </l><l n="1926" xml:id="l1926">Mourir dans cet orgueil, que vivre sans régner. </l><l n="1927" xml:id="l1927">Peut-être à déguiser ce qu'on t'a fait connaître, </l><l n="1928" xml:id="l1928">De tes jours malgré toi j'aurais pu me voir maître </l><l n="1929" xml:id="l1929">Et soulager du moins la peine où je me vois </l><l n="1930" xml:id="l1930">Par la fausse douceur de te perdre avec moi ; </l><l n="1931" xml:id="l1931">Mais comme à l'attentat le Trône seul m'anime, </l><l n="1932" xml:id="l1932">Lorsque j'en perds l'espoir, je perds l'ardeur du crime, </l><l n="1933" xml:id="l1933">Et dans l'avide soif de reprendre ton rang, </l><l n="1934" xml:id="l1934">Ne pouvant te l'ôter, je dédaigne ton sang. </l><l n="1935" xml:id="l1935">Prononce, Martian n'a plus rien à te dire. </l></sp><sp xml:id="V07-15" who="MAXIMIAN"><speaker>MAXIMIAN.</speaker><l n="1936" xml:id="l1936">Qu'au Trône par ma mort Maximian aspire ! </l><l n="1937" xml:id="l1937">Lui qui dans mes États plus Souverain que moi, </l><l n="1938" xml:id="l1938">Puisqu'il voulait régner, pouvait donner la loi ! </l></sp><sp xml:id="V07-16" who="FAUSTE"><speaker>FAUSTE.</speaker><l n="1939" xml:id="l1939">Seigneur, n'écoutez pas toute votre colère, </l><l n="1940" xml:id="l1940">Et s'il est criminel, songez qu'il est mon père. </l><l n="1941" xml:id="l1941">Non que d'un attentat qu'on ne peut trop punir, </l><l n="1942" xml:id="l1942">Je veuille vous ôter le fatal souvenir, </l><l n="1943" xml:id="l1943">Mais qu'il vive, et s'il faut qu'enfin le sang efface... </l></sp><sp xml:id="V07-17" who="CONSTANTIN"><speaker>CONSTANTIN.</speaker><l n="1944" xml:id="l1944">Moi vivre ! Moi de lui daigner recevoir grâce ! </l><l n="1945" xml:id="l1945">Régnez, régnez, Madame, et cesser de penser </l><l n="1946" xml:id="l1946">Qu'au rang de vos Sujets je puisse m'abaisser ; </l><l n="1947" xml:id="l1947">Et pour vous et pour moi je sais ce qu'il faut faire. </l><l n="1948" xml:id="l1948">Toi, Constantin, jouis de la mort de Sévère. </l><l n="1949" xml:id="l1949">C'est à moi que tu dois le bonheur sans égal </l><l n="1950" xml:id="l1950">De n'avoir plus enfin à craindre de rival. </l><l n="1951" xml:id="l1951">Son sang à ma vengeance a servi de victime, </l><l n="1952" xml:id="l1952">Et loin de démentir la fierté de mon crime, </l><l n="1953" xml:id="l1953">Je veux te faire voir, qu'indigne d'obéir, </l><l n="1954" xml:id="l1954">Je sais braver les Dieux qui m'ont osé trahir. </l><l n="1955" xml:id="l1955">Pour rentrer dans ce Trône où tu remplis ma place, </l><l n="1956" xml:id="l1956">J'eusse aux plus noirs forfaits élevé mon audace, </l><l n="1957" xml:id="l1957">Et comme l'ardeur de te le dérober </l><l n="1958" xml:id="l1958">J'avais songé d'abord à t'en faire tomber, </l><l n="1959" xml:id="l1959">Voilà pour me punir d'avoir manqué ta chute, </l><l n="1960" xml:id="l1960">Et comme je prononce, et comme j'exécute. </l><stage type="[N/A]">Il tire un poignard dont il se tue. </stage><l n="1961" xml:id="l1961" part="I">Qu'on m'emporte. </l></sp><sp xml:id="V07-18" who="FAUSTE"><speaker>FAUSTE suivant Maximian. </speaker><l part="M">Ah, Seigneur. </l></sp><sp xml:id="V07-19" who="CONSTANTIN"><speaker>CONSTANTIN.</speaker><l part="F">Courons la seconder. </l><l n="1962" xml:id="l1962">Son intérêt ici doit seul se regarder ; </l><l n="1963" xml:id="l1963">Et quand un peu de calme après ce grand orage </l><l n="1964" xml:id="l1964">M'aura tiré du trouble où ce revers m'engage, </l><l n="1965" xml:id="l1965">Licine aura sujet d'oublier son malheur, </l><l n="1966" xml:id="l1966">Par le rang de Sévère, et l'hymen de ma Soeur. </l></sp></div2>
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE VII. Constantin, Maximian, Fauste, Constance, Licine, Suite.</head>
+          <sp who="LICINE" xml:id="V07-1">
+            <speaker>LICINE.</speaker>
+            <l part="F">Il n'en est pas besoin. </l>
+            <l n="1847" xml:id="l1847">Seigneur, il vient se rendre, et dérober sa gloire </l>
+            <l n="1848" xml:id="l1848">À ce qu'un imposteur a donné lieu de croire. </l>
+            <l n="1849" xml:id="l1849">La fuite où m'a forcé le seul bien de l'État </l>
+            <l n="1850" xml:id="l1850">Eût de la calomnie autorisé l'éclat. </l>
+            <l n="1851" xml:id="l1851">Dans rébellion le Peuple était à craindre, </l>
+            <l n="1852" xml:id="l1852">Le feu m'a paru grand, j'ai tâché de l'éteindre, </l>
+            <l n="1853" xml:id="l1853">Et comme à l'innocence on doit se confier, </l>
+            <l n="1854" xml:id="l1854">Je reviens, ou mourir ou me justifier. </l>
+          </sp>
+          <sp who="CONSTANCE" xml:id="V07-2">
+            <speaker>CONSTANCE, à Constantin.</speaker>
+            <l n="1855" xml:id="l1855">Vous le voyez, Seigneur, si j'ai dû vous répondre </l>
+            <l n="1856" xml:id="l1856">Que bravant l'imposture il saurait la confondre. </l>
+            <l n="1857" xml:id="l1857">Son retour à sa gloire assure assez l'éclat. </l>
+          </sp>
+          <sp who="CONSTANTIN" xml:id="V07-3">
+            <speaker>CONSTANTIN, à Maximian.</speaker>
+            <l n="1858" xml:id="l1858">Lui voudrez-vous encor imputer l'attentat ? </l>
+            <l n="1859" part="I" xml:id="l1859">Vous paraissez surpris ? </l>
+          </sp>
+          <sp who="MAXIMIAN" xml:id="V07-4">
+            <speaker>MAXIMIAN.</speaker>
+            <l part="F">Je n'ai plus rien à dire, </l>
+            <l n="1860" xml:id="l1860">Pour justifier Fauste on veut que je conspire, </l>
+            <l n="1861" xml:id="l1861">J'y consens, croyez tout, l'indice est trop pressant, </l>
+            <l n="1862" xml:id="l1862">Licine vient s'offrir, il doit être innocent. </l>
+            <l n="1863" xml:id="l1863">Mais que hasarde-t-il ? Un grand Peuple rebelle, </l>
+            <l n="1864" xml:id="l1864">Si vous le condamnez, va prendre sa querelle, </l>
+            <l n="1865" xml:id="l1865">Et sûr de son secours, il doit peu redouter </l>
+            <l n="1866" xml:id="l1866">La rigueur d'un arrêt qu'on n'ose exécuter. </l>
+          </sp>
+          <sp who="LICINE" xml:id="V07-5">
+            <speaker>LICINE.</speaker>
+            <l n="1867" xml:id="l1867">J'avais de vous, Seigneur, attendu plus d'estime, </l>
+            <l n="1868" xml:id="l1868">Mais l'Empereur sans doute éclaircira le crime, </l>
+            <l n="1869" xml:id="l1869">Et l'imposture en vain l'aura sur moi jeté, </l>
+            <l n="1870" xml:id="l1870">Si contre Martian Sévère est écouté. </l>
+          </sp>
+          <sp who="CONSTANTIN" xml:id="V07-6">
+            <speaker>CONSTANTIN, à Licine.</speaker>
+            <l n="1871" xml:id="l1871">Bien loin de te flatter d'un si faible avantage, </l>
+            <l n="1872" xml:id="l1872">Tremble, Sévère est mort, on l'impute à ta rage. </l>
+            <l n="1873" xml:id="l1873">Purge-toi, si tu peux, de l'avoir fait périr. </l>
+          </sp>
+          <sp who="LICINE" xml:id="V07-7">
+            <speaker>LICINE.</speaker>
+            <l n="1874" xml:id="l1874">Sévère ne vit plus ! Et bien, il faut mourir. </l>
+            <l n="1875" xml:id="l1875">J'aurais beau repousser un crime détestable, </l>
+            <l n="1876" xml:id="l1876">Puisque Sévère est mort, on veut me voir coupable, </l>
+            <l n="1877" xml:id="l1877">Et quoi que l'imposture invente contre moi, </l>
+            <l n="1878" xml:id="l1878">Le traître Martian sera digne de foi. </l>
+          </sp>
+          <sp who="CONSTANTIN" xml:id="V07-8">
+            <speaker>CONSTANTIN.</speaker>
+            <l n="1879" xml:id="l1879">Feins de le craindre encor, quand par tes artifices </l>
+            <l n="1880" xml:id="l1880">Sa fuite l'a soustrait aux plus affreux supplices. </l>
+            <l n="1881" xml:id="l1881">Tu l'as fait évader, et reviens sans effroi, </l>
+            <l n="1882" xml:id="l1882">N'ayant plus de témoin qui parle contre toi. </l>
+            <l n="1883" xml:id="l1883">Nie encor, et par là prouve ton innocence. </l>
+          </sp>
+          <sp who="LICINE" xml:id="V07-9">
+            <speaker>LICINE.</speaker>
+            <l n="1884" xml:id="l1884">Moi, qu'avec Martian je sois d'intelligence ? </l>
+            <l n="1885" xml:id="l1885">Ai-je quelque intérêt à le faire évader </l>
+            <l n="1886" xml:id="l1886">Quand de l'Auteur du crime il peut seul décider ? </l>
+            <l n="1887" xml:id="l1887">Si m'étant confronté je ne le fais dédire, </l>
+            <l n="1888" xml:id="l1888">Je demeure coupable, et c'est moi qui conspire. </l>
+            <l n="1889" xml:id="l1889">Qu'attends-je de sa fuite, et quel est mon espoir ? </l>
+          </sp>
+          <sp who="MAXIMIAN" xml:id="V07-10">
+            <speaker>MAXIMIAN.</speaker>
+            <l n="1890" xml:id="l1890">Par ces fausses clartés tâche à nous décevoir. </l>
+            <l n="1891" xml:id="l1891">Pour te justifier c'est peu que l'apparence. </l>
+          </sp>
+          <sp who="CONSTANTIN" xml:id="V07-11">
+            <speaker>CONSTANTIN.</speaker>
+            <l n="1892" xml:id="l1892">Elle fait encor plus pour lui que l'on ne pense, </l>
+            <l n="1893" xml:id="l1893">Et pour tout dire enfin, il me serait bien doux </l>
+            <l n="1894" xml:id="l1894">Qu'avec autant de force elle parlât pour vous. </l>
+            <l n="1895" xml:id="l1895">Sévère a soutenu que pour vous on conspire, </l>
+            <l n="1896" xml:id="l1896">Et sa mort l'a puni de ce qu'il a su dire ; </l>
+            <l n="1897" xml:id="l1897">Votre intérêt ailleurs se trouve conservé, </l>
+            <l n="1898" xml:id="l1898">Martian n'a rien dit, Martian est sauvé. </l>
+          </sp>
+          <sp who="MAXIMIAN" xml:id="V07-12">
+            <speaker>MAXIMIAN.</speaker>
+            <l n="1899" xml:id="l1899">Enfin je suis coupable, et l'éclat de ma gloire </l>
+            <l n="1900" xml:id="l1900">Est trop peu pour régler ce que vous devez croire ? </l>
+            <l n="1901" xml:id="l1901">Mais si j'avais encor Martian pour témoin... </l>
+          </sp>
+          <sp who="CONSTANTIN" xml:id="V07-13">
+            <speaker>CONSTANTIN.</speaker>
+            <l n="1902" xml:id="l1902">Et bien, s'il vous le faut, Martian n'est pas loin. </l>
+            <l n="1903" xml:id="l1903">Voulez-vous qu'on l'amène, et que Valère ensuite </l>
+            <l n="1904" xml:id="l1904">Vienne vous expliquer ce qu'il sait de sa fuite ? </l>
+            <l n="1905" xml:id="l1905">Voulez-vous savoir d'eux d'où j'ai pu deviner </l>
+            <l n="1906" xml:id="l1906">Que jusque dans mon lit on doit m'assassiner, </l>
+            <l n="1907" xml:id="l1907">Et que dès cette nuit pour cet excès de rage </l>
+            <l n="1908" xml:id="l1908">Par votre appartement on trouve au mien passage ? </l>
+            <l n="1909" xml:id="l1909">Qu'on les fasse venir. Pour peu qu'ils soient pressés... </l>
+          </sp>
+          <sp who="MAXIMIAN" xml:id="V07-14">
+            <speaker>MAXIMIAN.</speaker>
+            <l n="1910" xml:id="l1910">Arrête, Constantin, tu m'en as dit assez. </l>
+            <l n="1911" xml:id="l1911">Je vois que tu sais tout, et qu'instruit par Valère </l>
+            <l n="1912" xml:id="l1912">De mes déguisements tu perces le mystère. </l>
+            <l n="1913" xml:id="l1913">Martian dont la fuite assurait mes desseins, </l>
+            <l n="1914" xml:id="l1914">Quand je le crois sauvé, se trouve entre tes mains, </l>
+            <l n="1915" xml:id="l1915">Il t'a tout découvert, et dans la défiance </l>
+            <l n="1916" xml:id="l1916">Où de mes voeux trahis te met la connaissance, </l>
+            <l n="1917" xml:id="l1917">Me voyant hors d'espoir d'en obtenir l'effet, </l>
+            <l n="1918" xml:id="l1918">Je n'ai plus d'intérêt à cacher mon forfait. </l>
+            <l n="1919" xml:id="l1919">Quand en n'avouant rien je pourrais te réduire </l>
+            <l n="1920" xml:id="l1920">À douter si c'est moi qui cherche à te détruire, </l>
+            <l n="1921" xml:id="l1921">Observé dans ta Cour, haï de toutes parts, </l>
+            <l n="1922" xml:id="l1922">J'aurais beau vers le Trône élever mes regards. </l>
+            <l n="1923" xml:id="l1923">On ne me laisserait aucun lieu d'entreprendre, </l>
+            <l n="1924" xml:id="l1924">Et puis que je connais qu'il n'y faut plus prétendre, </l>
+            <l n="1925" xml:id="l1925">J'aime mieux, te pressant de ne pas m'épargner, </l>
+            <l n="1926" xml:id="l1926">Mourir dans cet orgueil, que vivre sans régner. </l>
+            <l n="1927" xml:id="l1927">Peut-être à déguiser ce qu'on t'a fait connaître, </l>
+            <l n="1928" xml:id="l1928">De tes jours malgré toi j'aurais pu me voir maître </l>
+            <l n="1929" xml:id="l1929">Et soulager du moins la peine où je me vois </l>
+            <l n="1930" xml:id="l1930">Par la fausse douceur de te perdre avec moi ; </l>
+            <l n="1931" xml:id="l1931">Mais comme à l'attentat le Trône seul m'anime, </l>
+            <l n="1932" xml:id="l1932">Lorsque j'en perds l'espoir, je perds l'ardeur du crime, </l>
+            <l n="1933" xml:id="l1933">Et dans l'avide soif de reprendre ton rang, </l>
+            <l n="1934" xml:id="l1934">Ne pouvant te l'ôter, je dédaigne ton sang. </l>
+            <l n="1935" xml:id="l1935">Prononce, Martian n'a plus rien à te dire. </l>
+          </sp>
+          <sp who="MAXIMIAN" xml:id="V07-15">
+            <speaker>MAXIMIAN.</speaker>
+            <l n="1936" xml:id="l1936">Qu'au Trône par ma mort Maximian aspire ! </l>
+            <l n="1937" xml:id="l1937">Lui qui dans mes États plus Souverain que moi, </l>
+            <l n="1938" xml:id="l1938">Puisqu'il voulait régner, pouvait donner la loi ! </l>
+          </sp>
+          <sp who="FAUSTE" xml:id="V07-16">
+            <speaker>FAUSTE.</speaker>
+            <l n="1939" xml:id="l1939">Seigneur, n'écoutez pas toute votre colère, </l>
+            <l n="1940" xml:id="l1940">Et s'il est criminel, songez qu'il est mon père. </l>
+            <l n="1941" xml:id="l1941">Non que d'un attentat qu'on ne peut trop punir, </l>
+            <l n="1942" xml:id="l1942">Je veuille vous ôter le fatal souvenir, </l>
+            <l n="1943" xml:id="l1943">Mais qu'il vive, et s'il faut qu'enfin le sang efface... </l>
+          </sp>
+          <sp who="CONSTANTIN" xml:id="V07-17">
+            <speaker>CONSTANTIN.</speaker>
+            <l n="1944" xml:id="l1944">Moi vivre ! Moi de lui daigner recevoir grâce ! </l>
+            <l n="1945" xml:id="l1945">Régnez, régnez, Madame, et cesser de penser </l>
+            <l n="1946" xml:id="l1946">Qu'au rang de vos Sujets je puisse m'abaisser ; </l>
+            <l n="1947" xml:id="l1947">Et pour vous et pour moi je sais ce qu'il faut faire. </l>
+            <l n="1948" xml:id="l1948">Toi, Constantin, jouis de la mort de Sévère. </l>
+            <l n="1949" xml:id="l1949">C'est à moi que tu dois le bonheur sans égal </l>
+            <l n="1950" xml:id="l1950">De n'avoir plus enfin à craindre de rival. </l>
+            <l n="1951" xml:id="l1951">Son sang à ma vengeance a servi de victime, </l>
+            <l n="1952" xml:id="l1952">Et loin de démentir la fierté de mon crime, </l>
+            <l n="1953" xml:id="l1953">Je veux te faire voir, qu'indigne d'obéir, </l>
+            <l n="1954" xml:id="l1954">Je sais braver les Dieux qui m'ont osé trahir. </l>
+            <l n="1955" xml:id="l1955">Pour rentrer dans ce Trône où tu remplis ma place, </l>
+            <l n="1956" xml:id="l1956">J'eusse aux plus noirs forfaits élevé mon audace, </l>
+            <l n="1957" xml:id="l1957">Et comme l'ardeur de te le dérober </l>
+            <l n="1958" xml:id="l1958">J'avais songé d'abord à t'en faire tomber, </l>
+            <l n="1959" xml:id="l1959">Voilà pour me punir d'avoir manqué ta chute, </l>
+            <l n="1960" xml:id="l1960">Et comme je prononce, et comme j'exécute. </l>
+            <stage>Il tire un poignard dont il se tue. </stage>
+            <l n="1961" part="I" xml:id="l1961">Qu'on m'emporte. </l>
+          </sp>
+          <sp who="FAUSTE" xml:id="V07-18">
+            <speaker>FAUSTE suivant Maximian. </speaker>
+            <l part="M">Ah, Seigneur. </l>
+          </sp>
+          <sp who="CONSTANTIN" xml:id="V07-19">
+            <speaker>CONSTANTIN.</speaker>
+            <l part="F">Courons la seconder. </l>
+            <l n="1962" xml:id="l1962">Son intérêt ici doit seul se regarder ; </l>
+            <l n="1963" xml:id="l1963">Et quand un peu de calme après ce grand orage </l>
+            <l n="1964" xml:id="l1964">M'aura tiré du trouble où ce revers m'engage, </l>
+            <l n="1965" xml:id="l1965">Licine aura sujet d'oublier son malheur, </l>
+            <l n="1966" xml:id="l1966">Par le rang de Sévère, et l'hymen de ma Soeur. </l>
+          </sp>
+        </div2>
       </div1>
     </body>
   </text>

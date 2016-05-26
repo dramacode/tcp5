@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
 <?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>MITHRIDATE, TRAGÉDIE.</title>
-        <author born="1639" born_location="La Ferté Millon" death="1699" death_location="Paris" academie="1673">RACINE, Jean</author>
+        <author academie="1673" born="1639" born_location="La Ferté Millon" death="1699" death_location="Paris" key="Racine, Jean (1639-1699)">RACINE, Jean</author>
+        <date>1673</date>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE, octobre 2008, revu octobre 2011, revu mars 2014.</p>
-        <idno>RACINE_MITHRIDATE</idno>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE, octobre 2008, revu octobre 2011, revu mars 2014.</p>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -20,9 +21,12 @@
         <periode>1671-1680</periode>
         <taille>1500-1750</taille>
         <permalien>http://gallica.bnf.fr/ark:/12148/bpt6k70412h</permalien>
-        <liens>
-          <lien type="auteur cité">Appien d'Alexandrie</lien>
-        </liens>
+        <sources>
+          <source id="1">
+            <author>Appien d'Alexandrie</author>
+            <text>***</text>
+          </source>
+        </sources>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -35,7 +39,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -47,7 +51,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1673">M. DC. LXXIII. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor id="RACINE, Jean" bio="racine">par Mr RACINE.</docAuthor>
+      <docAuthor bio="racine" id="RACINE, Jean">par Mr RACINE.</docAuthor>
       <docImprint>
         <privilege id="1673-03-02">
           <head>EXTRAIT DU PRIVILÈGE DU ROI.</head>
@@ -60,7 +64,7 @@
         <printer id="BARBIN">À PARIS, Chez Claude Barbin, au Palais, sur le second perron de la Sainte-Chapelle.</printer>
       </docImprint>
       <performance>
-        <premiere date="1673-01-13" location="Hôtel de Bourgogne">Représenté pour le première fois le 13 janvier 1673 à l'Hôtel de Bourgogne.</premiere>
+        <premiere date="1673-01-13" location="Hôtel de Bourgogne">Réprésenté pour le première fois le 13 janvier 1673 à l'Hôtel de Bourgogne.</premiere>
       </performance>
       <div type="preface">
         <head>PRÉFACE.</head>
@@ -77,24 +81,24 @@
       </div>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="MIHRIDATE" id="MITHRIDATE" sex="1" type="H" statut="roi" age="A" stat_amour="Monime">MIHRIDATE</role>, roi de Pont et de quantité d'autres royaumes.</castItem>
-        <castItem><role xml:id="MONIME" rend="junior" id="MONIME" sex="2" type="H" statut="prince" age="J" stat_amour="néant">MONIME</role> accordée avec Mithridate, et déjà déclarée reine.</castItem>
-        <castItem><role xml:id="PHARNACE" rend="junior" id="PHARNACE" sex="1" type="H" statut="prince" age="J" stat_amour="néant">PHARNACE</role>, fils de Mithridate.</castItem>
-        <castItem><role xml:id="XIPHARES" rend="junior" id="XIPHARÈS" sex="1" type="H" statut="prince" age="J" stat_amour="Monime">XIPHARÈS</role>, fils de Mithridate, mais d'une mère différente.</castItem>
-        <castItem><role xml:id="ARBATE" id="ARBATE" sex="1" type="H" statut="gouverneur" age="A" stat_amour="néant">ARBATE</role>, confident de Mithridate, et gouverneur de la place de Nymphée.</castItem>
-        <castItem><role xml:id="PHOEDIME" id="PHOEDIME" sex="2" type="H" statut="confident" age="A" stat_amour="néant">PHOEDIME</role>, confidente de Monime.</castItem>
-        <castItem><role xml:id="ARCAS" id="ARCAS" sex="1" type="H" statut="domestique" age="A" stat_amour="néant">ARCAS</role>, domestique de Mithridate.</castItem>
-        <castItem><role xml:id="GARDES" id="GARDES" sex="9" type="H" statut="garde" age="A" stat_amour="néant">GARDES</role>.</castItem>
+        <castItem><role age="A" civil="M" id="MITHRIDATE" rend="male" stat_amour="Monime" statut="roi" type="H" xml:id="MITHRIDATE">MITHRIDATE</role>, roi de Pont et de quantité d'autres royaumes.</castItem>
+        <castItem><role age="A" civil="F" id="MONIME" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="MONIME">MONIME</role> accordée avec Mithridate, et déjà déclarée reine.</castItem>
+        <castItem><role age="A" civil="M" id="PHARNACE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="PHARNACE">PHARNACE</role>, fils de Mithridate.</castItem>
+        <castItem><role age="A" civil="M" id="XIPHARÈS" rend="male" stat_amour="Monime" statut="prince" type="H" xml:id="XIPHARES">XIPHARÈS</role>, fils de Mithridate, mais d'une mère différente.</castItem>
+        <castItem><role age="A" civil="M" id="ARBATE" rend="male" stat_amour="néant" statut="gouverneur" type="H" xml:id="ARBATE">ARBATE</role>, confident de Mithridate, et gouverneur de la place de Nymphée.</castItem>
+        <castItem><role age="A" civil="F" id="PHOEDIME" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="PHOEDIME">PHOEDIME</role>, confidente de Monime.</castItem>
+        <castItem><role age="A" civil="M" id="ARCAS" rend="male" stat_amour="néant" statut="domestique" type="H" xml:id="ARCAS">ARCAS</role>, domestique de Mithridate.</castItem>
+        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="GARDES">GARDES</role>.</castItem>
       </castList>
-      <set location="Nymphée" country="Crimée" periode="IIème avant JC" link="">La scene est à Nymphée, port de mer sur le Bosphore Cimmérien, dans la Taurique Chersonèse.</set>
+      <set country="Crimée" link="" location="Nymphée" periode="IIème avant JC">La scene est à Nymphée, port de mer sur le Bosphore Cimmérien, dans la Taurique Chersonèse.</set>
       <note>Le texte est celui de l'édition 1697.</note>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE I. Xipharès, Arbate.</head>
-          <sp xml:id="I01-1" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I01-1">
             <speaker>XIPHARÈS.</speaker>
             <l n="1" xml:id="l1">On nous faisait, Arbate, un fidèle rapport. </l>
             <l n="2" xml:id="l2">Rome en effet triomphe, et Mithridate est mort.</l>
@@ -111,12 +115,12 @@
             <l n="13" xml:id="l13">Meurt, et laisse après lui pour venger son trépas,</l>
             <l n="14" xml:id="l14">Deux fils infortunés qui ne s'accordent pas.</l>
           </sp>
-          <sp xml:id="I01-2" who="ARBATE">
+          <sp who="ARBATE" xml:id="I01-2">
             <speaker>ARBATE.</speaker>
             <l n="15" xml:id="l15">Vous, Seigneur ! Quoi ? l'ardeur de régner en sa place</l>
             <l n="16" xml:id="l16">Rend déjà Xipharès ennemi de Pharnace ?</l>
           </sp>
-          <sp xml:id="I01-3" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I01-3">
             <speaker>XIPHARÈS.</speaker>
             <l n="17" xml:id="l17">Non, je ne prétends point, cher Arbate, à ce prix</l>
             <l n="18" xml:id="l18">D'un malheureux empire acheter le débris.</l>
@@ -125,12 +129,12 @@
             <l n="21" xml:id="l21">Je verrai sans regret tomber entre ses mains</l>
             <l n="22" xml:id="l22">Tout ce que lui promet l'amitié des Romains.</l>
           </sp>
-          <sp xml:id="I01-4" who="ARBATE">
+          <sp who="ARBATE" xml:id="I01-4">
             <speaker>ARBATE.</speaker>
             <l n="23" xml:id="l23">L'amitié des Romains ? Le fils de Mithridate, </l>
-            <l n="24" xml:id="l24" part="I">Seigneur ? Est-il bien vrai ?</l>
+            <l n="24" part="I" xml:id="l24">Seigneur ? Est-il bien vrai ?</l>
           </sp>
-          <sp xml:id="I01-5" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I01-5">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">N'en doute point, Arbate.</l>
             <l n="25" xml:id="l25">Pharnace dès longtemps tout Romain dans le coeur</l>
@@ -140,21 +144,21 @@
             <l n="29" xml:id="l29">Cependant et ma haine, et ses prétentions </l>
             <l n="30" xml:id="l30">Sont les moindres sujets de nos divisions. </l>
           </sp>
-          <sp xml:id="I01-6" who="ARBATE">
+          <sp who="ARBATE" xml:id="I01-6">
             <speaker>ARBATE.</speaker>
             <l n="31" xml:id="l31">Et quel autre intérêt contre lui vous anime ?</l>
           </sp>
-          <sp xml:id="I01-7" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I01-7">
             <speaker>XIPHARÈS.</speaker>
             <l n="32" xml:id="l32">Je m'en vais t'étonner. Cette belle Monime</l>
             <l n="33" xml:id="l33">Qui du roi notre père attira tous les voeux,</l>
             <l n="34" xml:id="l34">Dont Pharnace après lui se déclare amoureux...</l>
           </sp>
-          <sp xml:id="I01-8" who="ARBATE">
+          <sp who="ARBATE" xml:id="I01-8">
             <speaker>ARBATE.</speaker>
-            <l n="35" xml:id="l35" part="I">Hé bien, Seigneur ?</l>
+            <l n="35" part="I" xml:id="l35">Hé bien, Seigneur ?</l>
           </sp>
-          <sp xml:id="I01-9" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I01-9">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Je l'aime, et ne veux plus m'en taire</l>
             <l n="36" xml:id="l36">Puisqu'enfin pour rival je n'ai plus que mon frère.</l>
@@ -239,7 +243,7 @@
             <l n="115" xml:id="l115">Et l'on sait que toujours la Colchide et ses princes </l>
             <l n="116" xml:id="l116">Ont compté ce Bosphore au rang de leurs provinces.</l>
           </sp>
-          <sp xml:id="I01-10" who="ARBATE">
+          <sp who="ARBATE" xml:id="I01-10">
             <speaker>ARBATE.</speaker>
             <l n="117" xml:id="l117">Commandez-moi, Seigneur. Si j'ai quelque pouvoir</l>
             <l n="118" xml:id="l118">Mon choix est déjà fait, je ferai mon devoir. </l>
@@ -256,15 +260,15 @@
             <l n="129" xml:id="l129">Ou Pharnace laissant le Bosphore en vos mains, </l>
             <l n="130" xml:id="l130">Ira jouir ailleurs des bontés des Romains. </l>
           </sp>
-          <sp xml:id="I01-11" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I01-11">
             <speaker>XIPHARÈS.</speaker>
             <l n="131" xml:id="l131">Que ne devrai-je point à cette ardeur extrême ?</l>
             <l n="132" xml:id="l132">Mais on vient. Cours, ami, c'est Monime, elle-même.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Monime, Xipharès.</head>
-          <sp xml:id="I02-1" who="MONIME">
+          <sp who="MONIME" xml:id="I02-1">
             <speaker>MONIME.</speaker>
             <l n="133" xml:id="l133">Seigneur, je viens à vous. Car enfin aujourd'hui</l>
             <l n="134" xml:id="l134">Si vous m'abandonnez, quel sera mon appui ?</l>
@@ -297,29 +301,29 @@
             <l n="161" xml:id="l161">Percer ce triste coeur qu'on veut tyranniser,</l>
             <l n="162" xml:id="l162">Et dont jamais encor je n'ai pu disposer.</l>
           </sp>
-          <sp xml:id="I02-2" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-2">
             <speaker>XIPHARÈS.</speaker>
             <l n="163" xml:id="l163">Madame, assurez-vous de mon obéissance.</l>
             <l n="164" xml:id="l164">Vous avez dans ces lieux une entière puissance. </l>
             <l n="165" xml:id="l165">Pharnace ira, s'il veut, se faire craindre ailleurs. </l>
             <l n="166" xml:id="l166">Mais vous ne savez pas encor tous vos malheurs.</l>
           </sp>
-          <sp xml:id="I02-3" who="MONIME">
+          <sp who="MONIME" xml:id="I02-3">
             <speaker>MONIME.</speaker>
             <l n="167" xml:id="l167">Hé ! quel nouveau malheur peut affliger Monime, </l>
-            <l n="168" xml:id="l168" part="I">Seigneur ?</l>
+            <l n="168" part="I" xml:id="l168">Seigneur ?</l>
           </sp>
-          <sp xml:id="I02-4" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-4">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Si vous aimer c'est faire un si grand crime, </l>
             <l n="169" xml:id="l169">Pharnace n'en est pas seul coupable aujourd'hui,</l>
             <l n="170" xml:id="l170">Et je suis mille fois plus criminel que lui. </l>
           </sp>
-          <sp xml:id="I02-5" who="MONIME">
+          <sp who="MONIME" xml:id="I02-5">
             <speaker>MONIME.</speaker>
-            <l n="171" xml:id="l171" part="I">Vous !</l>
+            <l n="171" part="I" xml:id="l171">Vous !</l>
           </sp>
-          <sp xml:id="I02-6" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-6">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Mettez ce malheur au rang des plus funestes.</l>
             <l n="172" xml:id="l172">Attestez, s'il le faut, les puissances célestes </l>
@@ -342,11 +346,11 @@
             <l n="189" xml:id="l189">Pour prix d'avoir si bien secondé vos souhaits, </l>
             <l n="190" xml:id="l190">Faudra-t-il me résoudre à ne vous voir jamais ? </l>
           </sp>
-          <sp xml:id="I02-7" who="MONIME">
+          <sp who="MONIME" xml:id="I02-7">
             <speaker>MONIME.</speaker>
-            <l n="191" xml:id="l191" part="I">Ah ! que m'apprenez-vous ?</l>
+            <l n="191" part="I" xml:id="l191">Ah ! que m'apprenez-vous ?</l>
           </sp>
-          <sp xml:id="I02-8" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-8">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Hé quoi, belle Monime,</l>
             <l n="192" xml:id="l192">Si le temps peut donner quelque droit légitime,</l>
@@ -367,55 +371,55 @@
             <l n="207" xml:id="l207">Contente et résolue à l'hymen de mon père,</l>
             <l n="208" xml:id="l208">Tous les malheurs du fils ne vous affligeaient guère.</l>
           </sp>
-          <sp xml:id="I02-9" who="MONIME">
+          <sp who="MONIME" xml:id="I02-9">
             <speaker>MONIME.</speaker>
-            <l n="209" xml:id="l209" part="I">Hélas !</l>
+            <l n="209" part="I" xml:id="l209">Hélas !</l>
           </sp>
-          <sp xml:id="I02-10" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-10">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Avez-vous plaint un moment mes ennuis ?</l>
           </sp>
-          <sp xml:id="I02-11" who="MONIME">
+          <sp who="MONIME" xml:id="I02-11">
             <speaker>MONIME.</speaker>
             <l n="210" xml:id="l210">Prince... n'abusez point de l'état où je suis. </l>
           </sp>
-          <sp xml:id="I02-12" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-12">
             <speaker>XIPHARÈS.</speaker>
             <l n="211" xml:id="l211">En abuser ! Ô ciel ! Quand je cours vous défendre, </l>
             <l n="212" xml:id="l212">Sans vous demander rien, sans oser rien prétendre.</l>
             <l n="213" xml:id="l213">Que vous dirai-je enfin ? Lorsque je vous promets </l>
             <l n="214" xml:id="l214">De vous mettre en état de ne me voir jamais.</l>
           </sp>
-          <sp xml:id="I02-13" who="MONIME">
+          <sp who="MONIME" xml:id="I02-13">
             <speaker>MONIME.</speaker>
             <l n="215" xml:id="l215">C'est me promettre plus que vous ne sauriez faire. </l>
           </sp>
-          <sp xml:id="I02-14" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-14">
             <speaker>XIPHARÈS.</speaker>
             <l n="216" xml:id="l216">Quoi, malgré mes serments vous croyez le contraire ? </l>
             <l n="217" xml:id="l217">Vous croyez qu'abusant de mon autorité, </l>
             <l n="218" xml:id="l218">Je prétends attenter à votre liberté ! </l>
             <l n="219" xml:id="l219">On vient, Madame, on vient... Expliquez-vous de grâce. </l>
-            <l n="220" xml:id="l220" part="I">Un mot.</l>
+            <l n="220" part="I" xml:id="l220">Un mot.</l>
           </sp>
-          <sp xml:id="I02-15" who="MONIME">
+          <sp who="MONIME" xml:id="I02-15">
             <speaker>MONIME.</speaker>
             <l part="F">Défendez-moi des fureurs de Pharnace. </l>
             <l n="221" xml:id="l221">Pour me faire, Seigneur, consentir à vous voir,</l>
             <l n="222" xml:id="l222">Vous n'aurez pas besoin d'un injuste pouvoir.</l>
           </sp>
-          <sp xml:id="I02-16" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I02-16">
             <speaker>XIPHARÈS.</speaker>
-            <l n="223" xml:id="l223" part="I">Ah ! Madame...</l>
+            <l n="223" part="I" xml:id="l223">Ah ! Madame...</l>
           </sp>
-          <sp xml:id="I02-17" who="MONIME">
+          <sp who="MONIME" xml:id="I02-17">
             <speaker>MONIME.</speaker>
             <l part="F">Seigneur, vous voyez votre frère.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Monime, Pharnace, Xipharès.</head>
-          <sp xml:id="I03-1" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-1">
             <speaker>PHARNACE.</speaker>
             <l n="224" xml:id="l224">Jusques à quand, Madame, attendrez-vous mon père ? </l>
             <l n="225" xml:id="l225">Des témoins de sa mort viennent à tous moments </l>
@@ -437,18 +441,18 @@
             <l n="241" xml:id="l241">Et du pied de l'autel vous y pouvez monter, </l>
             <l n="242" xml:id="l242">Souveraine des mers, qui vous doivent porter.</l>
           </sp>
-          <sp xml:id="I03-2" who="MONIME">
+          <sp who="MONIME" xml:id="I03-2">
             <speaker>MONIME.</speaker>
             <l n="243" xml:id="l243">Seigneur, tant de bontés ont lieu de me confondre. </l>
             <l n="244" xml:id="l244">Mais puisque le temps presse, et qu'il faut vous répondre,</l>
             <l n="245" xml:id="l245">Puis-je laissant la feinte et les déguisements, </l>
             <l n="246" xml:id="l246">Vous découvrir ici mes secrets sentiments ?</l>
           </sp>
-          <sp xml:id="I03-3" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-3">
             <speaker>PHARNACE.</speaker>
-            <l n="247" xml:id="l247" part="I">Vous pouvez tout.</l>
+            <l n="247" part="I" xml:id="l247">Vous pouvez tout.</l>
           </sp>
-          <sp xml:id="I03-4" who="MONIME">
+          <sp who="MONIME" xml:id="I03-4">
             <speaker>MONIME.</speaker>
             <l part="F">Je crois que je vous suis connue.</l>
             <l n="248" xml:id="l248">Éphèse est mon pays. Mais je suis descendue</l>
@@ -479,13 +483,13 @@
             <l n="273" xml:id="l273">De ne point dans son sang aller tremper mes mains,</l>
             <l n="274" xml:id="l274">En épousant en vous l'allié des Romains.</l>
           </sp>
-          <sp xml:id="I03-5" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-5">
             <speaker>PHARNACE.</speaker>
             <l n="275" xml:id="l275">Que parlez-vous de Rome, et de son alliance ?</l>
             <l n="276" xml:id="l276">Pourquoi tout ce discours et cette défiance ?</l>
             <l n="277" xml:id="l277">Qui vous dit qu'avec eux je prétends m'allier ?</l>
           </sp>
-          <sp xml:id="I03-6" who="MONIME">
+          <sp who="MONIME" xml:id="I03-6">
             <speaker>MONIME.</speaker>
             <l n="278" xml:id="l278">Mais vous-même, Seigneur, pouvez-vous le nier ? </l>
             <l n="279" xml:id="l279">Comment m'offririez-vous l'entrée et la couronne </l>
@@ -493,7 +497,7 @@
             <l n="281" xml:id="l281">Si le traité secret qui vous lie aux Romains </l>
             <l n="282" xml:id="l282">Ne vous en assurait l'empire et les chemins ?</l>
           </sp>
-          <sp xml:id="I03-7" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-7">
             <speaker>PHARNACE.</speaker>
             <l n="283" xml:id="l283">De mes intentions je pourrais vous instruire,</l>
             <l n="284" xml:id="l284">Et je sais les raisons que j'aurais à vous dire, </l>
@@ -504,7 +508,7 @@
             <l n="289" xml:id="l289">Je crois voir l'intérêt que vous voulez celer, </l>
             <l n="290" xml:id="l290">Et qu'un autre qu'un père ici vous fait parler. </l>
           </sp>
-          <sp xml:id="I03-8" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I03-8">
             <speaker>XIPHARÈS.</speaker>
             <l n="291" xml:id="l291">Quel que soit l'intérêt qui fait parler la reine, </l>
             <l n="292" xml:id="l292">La réponse, Seigneur, doit-elle être incertaine ? </l>
@@ -531,85 +535,85 @@
             <l n="313" xml:id="l313">À défendre du joug et nous et nos États, </l>
             <l n="314" xml:id="l314">Qu'à contraindre des coeurs, qui ne se donnent pas.</l>
           </sp>
-          <sp xml:id="I03-9" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-9">
             <speaker>PHARNACE.</speaker>
             <l n="315" xml:id="l315">Il sait vos sentiments. Me trompais-je, Madame ? </l>
             <l n="316" xml:id="l316">Voilà cet intérêt si puissant sur votre âme, </l>
             <l n="317" xml:id="l317">Ce père, ces Romains que vous me reprochez.</l>
           </sp>
-          <sp xml:id="I03-10" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I03-10">
             <speaker>XIPHARÈS.</speaker>
             <l n="318" xml:id="l318">J'ignore de son coeur les sentiments cachés. </l>
             <l n="319" xml:id="l319">Mais je m'y soumettrais, sans vouloir rien prétendre, </l>
             <l n="320" xml:id="l320">Si comme vous, Seigneur, je croyais les entendre. </l>
           </sp>
-          <sp xml:id="I03-11" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-11">
             <speaker>PHARNACE.</speaker>
             <l n="321" xml:id="l321">Vous feriez bien, et moi je fais ce que dois. </l>
             <l n="322" xml:id="l322">Votre exemple n'est pas une règle pour moi.</l>
           </sp>
-          <sp xml:id="I03-12" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I03-12">
             <speaker>XIPHARÈS.</speaker>
             <l n="323" xml:id="l323">Toutefois en ces lieux je ne connais personne,</l>
             <l n="324" xml:id="l324">Qui ne doive imiter l'exemple que je donne.</l>
           </sp>
-          <sp xml:id="I03-13" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-13">
             <speaker>PHARNACE.</speaker>
             <l n="325" xml:id="l325">Vous pourriez à Colchos vous expliquer ainsi. </l>
           </sp>
-          <sp xml:id="I03-14" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I03-14">
             <speaker>XIPHARÈS.</speaker>
             <l n="326" xml:id="l326">Je le puis à Colchos, et je le puis ici.</l>
           </sp>
-          <sp xml:id="I03-15" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I03-15">
             <speaker>PHARNACE.</speaker>
             <l n="327" xml:id="l327">Ici ? Vous y pourriez rencontrer votre perte...</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Monime, Pharnace, Xipharès, Phoedime.</head>
-          <sp xml:id="I04-1" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="I04-1">
             <speaker>PHOEDIME.</speaker>
             <l n="328" xml:id="l328">Princes, toute la mer est de vaisseaux couverte, </l>
             <l n="329" xml:id="l329">Et bientôt démentant le faux bruit de sa mort</l>
             <l n="330" xml:id="l330">Mithridate lui-même arrive dans le port. </l>
           </sp>
-          <sp xml:id="I04-2" who="MONIME">
+          <sp who="MONIME" xml:id="I04-2">
             <speaker>MONIME.</speaker>
-            <l n="331" xml:id="l331" part="I">Mithridate !</l>
+            <l n="331" part="I" xml:id="l331">Mithridate !</l>
           </sp>
-          <sp xml:id="I04-3" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I04-3">
             <speaker>XIPHARÈS.</speaker>
             <l part="M">Mon père !</l>
           </sp>
-          <sp xml:id="I04-4" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I04-4">
             <speaker>PHARNACE.</speaker>
             <l part="F">Ah ! que viens-je d'entendre ?</l>
           </sp>
-          <sp xml:id="I04-5" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="I04-5">
             <speaker>PHOEDIME.</speaker>
             <l n="332" xml:id="l332">Quelques vaisseaux légers sont venus nous l'apprendre,</l>
             <l n="333" xml:id="l333">C'est lui-même. Et déjà pressé de son devoir</l>
             <l n="334" xml:id="l334">Arbate loin du bord l'est allé recevoir.</l>
           </sp>
-          <sp xml:id="I04-6" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I04-6">
             <speaker>XIPHARÈS.</speaker>
-            <l n="335" xml:id="l335" part="I">Qu'avons-nous fait !</l>
+            <l n="335" part="I" xml:id="l335">Qu'avons-nous fait !</l>
           </sp>
-          <sp xml:id="I04-7" who="MONIME">
+          <sp who="MONIME" xml:id="I04-7">
             <speaker>MONIME, à Xipharès.</speaker>
             <l part="F">Adieu, Prince. Quelle nouvelle ! </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Pharnace, Xipharès.</head>
-          <sp xml:id="I05-1" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I05-1">
             <speaker>PHARNACE.</speaker>
             <l n="336" xml:id="l336">Mithridate revient ? Ah ! Fortune cruelle !</l>
             <l n="337" xml:id="l337">Ma vie et mon amour tous deux courent hasard.</l>
             <l n="338" xml:id="l338">Les Romains que j'attends arriveront trop tard.</l>
-            <l n="339" xml:id="l339" part="I">Comment faire ? </l>
-            <stage type="toward">À Xipharès.</stage>
+            <l n="339" part="I" xml:id="l339">Comment faire ? </l>
+            <stage>À Xipharès.</stage>
             <l part="F">J'entends que votre coeur soupire, </l>
             <l n="340" xml:id="l340">Et j'ai conçu l'adieu qu'elle vient de vous dire, </l>
             <l n="341" xml:id="l341">Prince. Mais ce discours demande un autre temps. </l>
@@ -635,14 +639,14 @@
             <l n="361" xml:id="l361">Et faisons qu'à ses fils il ne puisse dicter </l>
             <l n="362" xml:id="l362">Que les conditions qu'ils voudront accepter.</l>
           </sp>
-          <sp xml:id="I05-2" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="I05-2">
             <speaker>XIPHARÈS.</speaker>
             <l n="363" xml:id="l363">Je sais quel est mon crime, et je connais mon père.</l>
             <l n="364" xml:id="l364">Et j'ai par-dessus vous le crime de ma mère.</l>
             <l n="365" xml:id="l365">Mais quelque amour encor qui me pût éblouir, </l>
             <l n="366" xml:id="l366">Quand mon père paraît je ne sais qu'obéir.</l>
           </sp>
-          <sp xml:id="I05-3" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I05-3">
             <speaker>PHARNACE.</speaker>
             <l n="367" xml:id="l367">Soyons-nous donc au moins fidèles l'un à l'autre. </l>
             <l n="368" xml:id="l368">Vous savez mon secret, j'ai pénétré le vôtre. </l>
@@ -655,26 +659,26 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Monime, Phoedime.</head>
-          <sp xml:id="II01-1" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="II01-1">
             <speaker>PHOEDIME.</speaker>
             <l n="375" xml:id="l375">Quoi, vous êtes ici quand Mithridate arrive, </l>
             <l n="376" xml:id="l376">Quand, pour le recevoir chacun court sur la rive,</l>
             <l n="377" xml:id="l377">Que faites-vous, Madame ? Et quel ressouvenir</l>
             <l n="378" xml:id="l378">Tout à coup vous arrête, et vous fait revenir ?</l>
             <l n="379" xml:id="l379">N'offenserez-vous point un roi qui vous adore,</l>
-            <l n="380" xml:id="l380" part="I">Qui presque votre époux...</l>
+            <l n="380" part="I" xml:id="l380">Qui presque votre époux...</l>
           </sp>
-          <sp xml:id="II01-2" who="MONIME">
+          <sp who="MONIME" xml:id="II01-2">
             <speaker>MONIME.</speaker>
             <l part="F">Il ne l'est pas encore, </l>
             <l n="381" xml:id="l381">Phoedime, et jusque-là je crois que mon devoir </l>
             <l n="382" xml:id="l382">Est de l'attendre ici, sans l'aller recevoir.</l>
           </sp>
-          <sp xml:id="II01-3" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="II01-3">
             <speaker>PHOEDIME.</speaker>
             <l n="383" xml:id="l383">Mais ce n'est point, Madame, un amant ordinaire. </l>
             <l n="384" xml:id="l384">Songez qu'à ce grand roi promise par un père, </l>
@@ -682,30 +686,30 @@
             <l n="386" xml:id="l386">Qu'il peut quand il voudra, confirmer à l'autel. </l>
             <l n="387" xml:id="l387">Croyez-moi, montrez-vous, venez à sa rencontre.</l>
           </sp>
-          <sp xml:id="II01-4" who="MONIME">
+          <sp who="MONIME" xml:id="II01-4">
             <speaker>MONIME.</speaker>
             <l n="388" xml:id="l388">Regarde en quel état tu veux que je me montre. </l>
             <l n="389" xml:id="l389">Vois ce visage en pleurs, et loin de le chercher, </l>
             <l n="390" xml:id="l390">Dis-moi plutôt, dis-moi que je m'aille cacher. </l>
           </sp>
-          <sp xml:id="II01-5" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="II01-5">
             <speaker>PHOEDIME.</speaker>
-            <l n="391" xml:id="l391" part="I">Que dites-vous ? Ô dieux !</l>
+            <l n="391" part="I" xml:id="l391">Que dites-vous ? Ô dieux !</l>
           </sp>
-          <sp xml:id="II01-6" who="MONIME">
+          <sp who="MONIME" xml:id="II01-6">
             <speaker>MONIME.</speaker>
             <l part="F">Ah retour qui me tue ! </l>
             <l n="392" xml:id="l392">Malheureuse ! Comment paraîtrai-je à sa vue, </l>
             <l n="393" xml:id="l393">Son diadème au front, et dans le fond du coeur, </l>
             <l n="394" xml:id="l394">Phoedime... Tu m'entends, et tu vois ma rougeur. </l>
           </sp>
-          <sp xml:id="II01-7" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="II01-7">
             <speaker>PHOEDIME.</speaker>
             <l n="395" xml:id="l395">Ainsi vous retombez dans les mêmes alarmes,</l>
             <l n="396" xml:id="l396">Qui vous ont dans la Grèce arraché tant de larmes ?</l>
             <l n="397" xml:id="l397">Et toujours Xipharès revient vous traverser ?</l>
           </sp>
-          <sp xml:id="II01-8" who="MONIME">
+          <sp who="MONIME" xml:id="II01-8">
             <speaker>MONIME.</speaker>
             <l n="398" xml:id="l398">Mon malheur est plus grand que tu ne peux penser. </l>
             <l n="399" xml:id="l399">Xipharès ne s'offrait alors à ma mémoire, </l>
@@ -713,22 +717,22 @@
             <l n="401" xml:id="l401">Et je ne savais pas que pour moi plein de feux</l>
             <l n="402" xml:id="l402">Xipharès des mortels fût le plus amoureux.</l>
           </sp>
-          <sp xml:id="II01-9" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="II01-9">
             <speaker>PHOEDIME.</speaker>
             <l n="403" xml:id="l403">Il vous aime, Madame ! Et ce héros aimable...</l>
           </sp>
-          <sp xml:id="II01-10" who="MONIME">
+          <sp who="MONIME" xml:id="II01-10">
             <speaker>MONIME.</speaker>
             <l n="404" xml:id="l404">Est aussi malheureux que je suis misérable. </l>
             <l n="405" xml:id="l405">Il m'adore, Phoedime, et les mêmes douleurs </l>
             <l n="406" xml:id="l406">Qui m'affligeaient ici le tourmentaient ailleurs.</l>
           </sp>
-          <sp xml:id="II01-11" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="II01-11">
             <speaker>PHOEDIME.</speaker>
             <l n="407" xml:id="l407">Sait-il en sa faveur jusqu'où va votre estime ? </l>
-            <l n="408" xml:id="l408" part="I">Sait-il que vous l'aimez ?</l>
+            <l n="408" part="I" xml:id="l408">Sait-il que vous l'aimez ?</l>
           </sp>
-          <sp xml:id="II01-12" who="MONIME">
+          <sp who="MONIME" xml:id="II01-12">
             <speaker>MONIME.</speaker>
             <l part="F">Il l'ignore, Phoedime,</l>
             <l n="409" xml:id="l409">Les dieux m'ont secourue, et mon coeur affermi</l>
@@ -744,19 +748,19 @@
             <l n="419" xml:id="l419">Je lui vendrai si cher ce bonheur qu'il ignore, </l>
             <l n="420" xml:id="l420">Qu'il vaudrait mieux pour lui qu'il l'ignorât encore. </l>
           </sp>
-          <sp xml:id="II01-13" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="II01-13">
             <speaker>PHOEDIME.</speaker>
-            <l n="421" xml:id="l421" part="I">On vient. Que faites-vous, Madame ?</l>
+            <l n="421" part="I" xml:id="l421">On vient. Que faites-vous, Madame ?</l>
           </sp>
-          <sp xml:id="II01-14" who="MONIME">
+          <sp who="MONIME" xml:id="II01-14">
             <speaker>MONIME.</speaker>
             <l part="F">Je ne puis. </l>
             <l n="422" xml:id="l422">Je ne paraîtrai point dans le trouble où je suis.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Mithridate, Pharnace, Xipharès, Arbate, Gardes.</head>
-          <sp xml:id="II02-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II02-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="423" xml:id="l423">Princes, quelques raisons que vous me puissiez dire</l>
             <l n="424" xml:id="l424">Votre devoir ici n'a point dû vous conduire, </l>
@@ -772,9 +776,9 @@
             <l n="434" xml:id="l434">Allez, et laissez-moi reposer un moment. </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Mithridate, Arbate.</head>
-          <sp xml:id="II03-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="435" xml:id="l435">Enfin après un an, tu me revois, Arbate, </l>
             <l n="436" xml:id="l436">Non plus comme autrefois cet heureux Mithridate,</l>
@@ -805,11 +809,11 @@
             <l n="461" xml:id="l461">Et n'a point d'ennemis, qui lui soient odieux,</l>
             <l n="462" xml:id="l462">Plus que deux fils ingrats, que je trouve en ces lieux.</l>
           </sp>
-          <sp xml:id="II03-2" who="ARBATE">
+          <sp who="ARBATE" xml:id="II03-2">
             <speaker>ARBATE.</speaker>
-            <l n="463" xml:id="l463" part="I">Deux fils, Seigneur ?</l>
+            <l n="463" part="I" xml:id="l463">Deux fils, Seigneur ?</l>
           </sp>
-          <sp xml:id="II03-3" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-3">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Écoute. À travers ma colère</l>
             <l n="464" xml:id="l464">Je veux bien distinguer Xipharès de son frère. </l>
@@ -818,7 +822,7 @@
             <l n="467" xml:id="l467">Et j'ai vu sa valeur à me plaire attachée</l>
             <l n="468" xml:id="l468">Justifier pour lui ma tendresse cachée. </l>
             <l n="469" xml:id="l469">Je sais même, je sais avec quel désespoir, </l>
-            <l n="470" xml:id="l470">À tout autre intérêt préférant son devoir,  </l>
+            <l n="470" xml:id="l470">À tout autre intérêt préférant son devoir, </l>
             <l n="471" xml:id="l471">Il courut démentir une mère infidèle</l>
             <l n="472" xml:id="l472">Et tira de son crime une gloire nouvelle.</l>
             <l n="473" xml:id="l473">Et je ne puis encor, ni n'oserais penser </l>
@@ -832,7 +836,7 @@
             <l n="481" xml:id="l481">Qu'est-ce qui s'est passé ? Qu'as-tu vu ? Que sais-tu ? </l>
             <l n="482" xml:id="l482">Depuis quel temps, pourquoi, comment t'es-tu rendu ?</l>
           </sp>
-          <sp xml:id="II03-4" who="ARBATE">
+          <sp who="ARBATE" xml:id="II03-4">
             <speaker>ARBATE.</speaker>
             <l n="483" xml:id="l483">Seigneur, depuis huit jours l'impatient Pharnace </l>
             <l n="484" xml:id="l484">Aborda le premier au pied de cette place. </l>
@@ -843,43 +847,43 @@
             <l n="489" xml:id="l489">Bien moins par ses discours, Seigneur, que par ses pleurs</l>
             <l n="490" xml:id="l490">Ne m'eût en arrivant confirmé vos malheurs. </l>
           </sp>
-          <sp xml:id="II03-5" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-5">
             <speaker>MITHRIDATE.</speaker>
-            <l n="491" xml:id="l491" part="I">Enfin que firent-ils ?</l>
+            <l n="491" part="I" xml:id="l491">Enfin que firent-ils ?</l>
           </sp>
-          <sp xml:id="II03-6" who="ARBATE">
+          <sp who="ARBATE" xml:id="II03-6">
             <speaker>ARBATE.</speaker>
             <l part="F">Pharnace entrait à peine</l>
             <l n="492" xml:id="l492">Qu'il courut de ses feux entretenir la reine,</l>
             <l n="493" xml:id="l493">Et s'offrir d'assurer par un hymen prochain</l>
             <l n="494" xml:id="l494">Le bandeau qu'elle avait reçu de votre main. </l>
           </sp>
-          <sp xml:id="II03-7" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-7">
             <speaker>MITHRIDATE.</speaker>
             <l n="495" xml:id="l495">Traître ! sans lui donner le loisir de répandre </l>
             <l n="496" xml:id="l496">Les pleurs que son amour aurait dûs à ma cendre ! </l>
-            <l n="497" xml:id="l497" part="I">Et son frère ?</l>
+            <l n="497" part="I" xml:id="l497">Et son frère ?</l>
           </sp>
-          <sp xml:id="II03-8" who="ARBATE">
+          <sp who="ARBATE" xml:id="II03-8">
             <speaker>ARBATE.</speaker>
             <l part="F">Son frère, au moins jusqu'à ce jour,</l>
             <l n="498" xml:id="l498">Seigneur, dans ses desseins n'a point marqué d'amour, </l>
             <l n="499" xml:id="l499">Et toujours avec vous son coeur d'intelligence </l>
             <l n="500" xml:id="l500">N'a semblé respirer que guerre et que vengeance. </l>
           </sp>
-          <sp xml:id="II03-9" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-9">
             <speaker>MITHRIDATE.</speaker>
             <l n="501" xml:id="l501">Mais encor quel dessein le conduisait ici ?</l>
           </sp>
-          <sp xml:id="II03-10" who="ARBATE">
+          <sp who="ARBATE" xml:id="II03-10">
             <speaker>ARBATE.</speaker>
             <l n="502" xml:id="l502">Seigneur, vous en serez tôt ou tard éclairci.</l>
           </sp>
-          <sp xml:id="II03-11" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-11">
             <speaker>MITHRIDATE.</speaker>
             <l n="503" xml:id="l503">Parle, je te l'ordonne, et je veux tout apprendre.</l>
           </sp>
-          <sp xml:id="II03-12" who="ARBATE">
+          <sp who="ARBATE" xml:id="II03-12">
             <speaker>ARBATE.</speaker>
             <l n="504" xml:id="l504">Seigneur, jusqu'à ce jour, ce que j'ai pu comprendre,</l>
             <l n="505" xml:id="l505">Ce prince a cru pouvoir après votre trépas</l>
@@ -887,7 +891,7 @@
             <l n="507" xml:id="l507">Et sans connaître ici de lois que son courage,</l>
             <l n="508" xml:id="l508">Il venait par la force appuyer son partage.</l>
           </sp>
-          <sp xml:id="II03-13" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-13">
             <speaker>MITHRIDATE.</speaker>
             <l n="509" xml:id="l509">Ah ! c'est le moindre prix qu'il se doit proposer,</l>
             <l n="510" xml:id="l510">Si le ciel de mon sort me laisse disposer. </l>
@@ -903,13 +907,13 @@
             <l n="520" xml:id="l520">Ait pu porter ailleurs une amour qui m'est due, </l>
             <l n="521" xml:id="l521">Malheur au criminel qui vient me la ravir,</l>
             <l n="522" xml:id="l522">Et qui m'ose offenser, et n'ose me servir.</l>
-            <l n="523" xml:id="l523" part="I">L'aime-t-elle ?</l>
+            <l n="523" part="I" xml:id="l523">L'aime-t-elle ?</l>
           </sp>
-          <sp xml:id="II03-14" who="ARBATE">
+          <sp who="ARBATE" xml:id="II03-14">
             <speaker>ARBATE.</speaker>
             <l part="F">Seigneur, je vois venir la reine.</l>
           </sp>
-          <sp xml:id="II03-15" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II03-15">
             <speaker>MITHRIDATE.</speaker>
             <l n="524" xml:id="l524">Dieux, qui voyez ici mon amour et ma haine, </l>
             <l n="525" xml:id="l525">Épargnez mes malheurs, et daignez empêcher </l>
@@ -917,9 +921,9 @@
             <l n="527" xml:id="l527">Arbate, c'est assez, qu'on me laisse avec elle.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Mithridate, Monime.</head>
-          <sp xml:id="II04-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II04-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="528" xml:id="l528">Madame, enfin le ciel près de vous me rappelle,</l>
             <l n="529" xml:id="l529">Et secondant du moins mes plus tendres souhaits</l>
@@ -941,14 +945,14 @@
             <l n="545" xml:id="l545">Et sans perdre un moment pour ce noble dessein, </l>
             <l n="546" xml:id="l546">Aujourd'hui votre époux, il faut partir demain.</l>
           </sp>
-          <sp xml:id="II04-2" who="MONIME">
+          <sp who="MONIME" xml:id="II04-2">
             <speaker>MONIME.</speaker>
             <l n="547" xml:id="l547">Seigneur, vous pouvez tout. Ceux par qui je respire </l>
             <l n="548" xml:id="l548">Vous ont cédé sur moi leur souverain empire.</l>
             <l n="549" xml:id="l549">Et quand vous userez de ce droit tout-puissant, </l>
             <l n="550" xml:id="l550">Je ne vous répondrai qu'en vous obéissant. </l>
           </sp>
-          <sp xml:id="II04-3" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II04-3">
             <speaker>MITHRIDATE.</speaker>
             <l n="551" xml:id="l551">Ainsi, prête à subir un joug qui vous opprime</l>
             <l n="552" xml:id="l552">Vous n'allez à l'autel que comme une victime :</l>
@@ -983,13 +987,13 @@
             <l n="581" xml:id="l581">Vous demeurez muette, et loin de me parler, </l>
             <l n="582" xml:id="l582">Je vois malgré vos soins vos pleurs prêts à couler.</l>
           </sp>
-          <sp xml:id="II04-4" who="MONIME">
+          <sp who="MONIME" xml:id="II04-4">
             <speaker>MONIME.</speaker>
             <l n="583" xml:id="l583">Moi, Seigneur ? Je n'ai point de larmes à répandre.</l>
             <l n="584" xml:id="l584">J'obéis. N'est-ce pas assez me faire entendre ?</l>
-            <l n="585" xml:id="l585" part="I">Et ne suffit-il pas...</l>
+            <l n="585" part="I" xml:id="l585">Et ne suffit-il pas...</l>
           </sp>
-          <sp xml:id="II04-5" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II04-5">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Non, ce n'est pas assez. </l>
             <l n="586" xml:id="l586">Je vous entends ici mieux que vous ne pensez. </l>
@@ -1001,14 +1005,14 @@
             <l n="592" xml:id="l592">Mais il jouira peu de vos pleurs infidèles, </l>
             <l n="593" xml:id="l593">Madame, et désormais tout est sourd à mes lois, </l>
             <l n="594" xml:id="l594">Ou bien vous l'avez vu pour la dernière fois. </l>
-            <l n="595" xml:id="l595" part="I">Appelez Xipharès.</l>
+            <l n="595" part="I" xml:id="l595">Appelez Xipharès.</l>
           </sp>
-          <sp xml:id="II04-6" who="MONIME">
+          <sp who="MONIME" xml:id="II04-6">
             <speaker>MONIME.</speaker>
             <l part="F">Ah ! que voulez-vous faire ? </l>
-            <l n="596" xml:id="l596" part="I">Xipharès...</l>
+            <l n="596" part="I" xml:id="l596">Xipharès...</l>
           </sp>
-          <sp xml:id="II04-7" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II04-7">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Xipharès n'a point trahi son père.</l>
             <l n="597" xml:id="l597">Vous vous pressez en vain de le désavouer, </l>
@@ -1022,9 +1026,9 @@
             <l n="605" xml:id="l605">Qu'il soit aimé, Madame, et que je sois haï ? </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. Mithridate, Monime, Xipharès.</head>
-          <sp xml:id="II05-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="II05-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="606" xml:id="l606">Venez, mon fils, venez, votre père est trahi. </l>
             <l n="607" xml:id="l607">Un fils audacieux insulte à ma ruine, </l>
@@ -1057,9 +1061,9 @@
             <l n="634" xml:id="l634">Ne se repentirait qu'après s'être vengé.</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="II06">
           <head>SCÈNE VI. Monime, Xipharès.</head>
-          <sp xml:id="II06-1" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="II06-1">
             <speaker>XIPHARÈS.</speaker>
             <l n="635" xml:id="l635">Que dirai-je, Madame ? Et comment dois-je entendre</l>
             <l n="636" xml:id="l636">Cet ordre, ce discours que je ne puis comprendre ?</l>
@@ -1067,7 +1071,7 @@
             <l n="638" xml:id="l638">Pharnace eût en effet mérité ce courroux ?</l>
             <l n="639" xml:id="l639">Pharnace aurait-il part à ce désordre extrême ?</l>
           </sp>
-          <sp xml:id="II06-2" who="MONIME">
+          <sp who="MONIME" xml:id="II06-2">
             <speaker>MONIME.</speaker>
             <l n="640" xml:id="l640">Pharnace ? Ô ciel ! Pharnace ? Ah qu'entends-je moi-même ? </l>
             <l n="641" xml:id="l641">Ce n'est donc pas assez que ce funeste jour </l>
@@ -1081,7 +1085,7 @@
             <l n="649" xml:id="l649">Et qui de mes secrets ne peut être éclairci. </l>
             <l n="650" xml:id="l650">Mais vous, Seigneur, mais vous, me traitez-vous ainsi ? </l>
           </sp>
-          <sp xml:id="II06-3" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="II06-3">
             <speaker>XIPHARÈS.</speaker>
             <l n="651" xml:id="l651">Ah, Madame, excusez un amant qui s'égare, </l>
             <l n="652" xml:id="l652">Qui lui-même lié par un devoir barbare, </l>
@@ -1089,14 +1093,14 @@
             <l n="654" xml:id="l654">Mais des fureurs du roi que puis-je enfin juger ? </l>
             <l n="655" xml:id="l655">Il se plaint qu'à ses voeux un autre amour s'oppose. </l>
             <l n="656" xml:id="l656">Quel heureux criminel en peut être la cause ? </l>
-            <l n="657" xml:id="l657" part="I">Qui ? Parlez.</l>
+            <l n="657" part="I" xml:id="l657">Qui ? Parlez.</l>
           </sp>
-          <sp xml:id="II06-4" who="MONIME">
+          <sp who="MONIME" xml:id="II06-4">
             <speaker>MONIME.</speaker>
             <l part="F">Vous cherchez, Prince, à vous tourmenter. </l>
             <l n="658" xml:id="l658">Plaignez votre malheur sans vouloir l'augmenter.</l>
           </sp>
-          <sp xml:id="II06-5" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="II06-5">
             <speaker>XIPHARÈS.</speaker>
             <l n="659" xml:id="l659">Je sais trop quel tourment je m'apprête moi-même. </l>
             <l n="660" xml:id="l660">C'est peu de voir un père épouser ce que j'aime. </l>
@@ -1106,7 +1110,7 @@
             <l n="664" xml:id="l664">Madame, par pitié, faites-le moi connaître. </l>
             <l n="665" xml:id="l665">Quel est-il cet amant ? Qui dois-je soupçonner ? </l>
           </sp>
-          <sp xml:id="II06-6" who="MONIME">
+          <sp who="MONIME" xml:id="II06-6">
             <speaker>MONIME.</speaker>
             <l n="666" xml:id="l666">Avez-vous tant de peine à vous l'imaginer ? </l>
             <l n="667" xml:id="l667">Tantôt quand je fuyais une injuste contrainte, </l>
@@ -1114,13 +1118,13 @@
             <l n="669" xml:id="l669">Sous quel appui tantôt mon coeur s'est-il jeté ? </l>
             <l n="670" xml:id="l670">Quel amour ai-je enfin sans colère écouté ? </l>
           </sp>
-          <sp xml:id="II06-7" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="II06-7">
             <speaker>XIPHARÈS.</speaker>
             <l n="671" xml:id="l671">Ô ciel ! Quoi, je serais ce bienheureux coupable </l>
             <l n="672" xml:id="l672">Que vous avez pu voir d'un regard favorable ? </l>
             <l n="673" xml:id="l673">Vos pleurs pour Xipharès auraient daigné couler ?</l>
           </sp>
-          <sp xml:id="II06-8" who="MONIME">
+          <sp who="MONIME" xml:id="II06-8">
             <speaker>MONIME.</speaker>
             <l n="674" xml:id="l674">Oui, Prince, il n'est plus temps de le dissimuler.</l>
             <l n="675" xml:id="l675">Ma douleur pour se taire a trop de violence. </l>
@@ -1160,7 +1164,7 @@
             <l n="709" xml:id="l709">Je ne reconnais plus la foi de vos discours,</l>
             <l n="710" xml:id="l710">Qu'au soin que vous prendrez de m'éviter toujours. </l>
           </sp>
-          <sp xml:id="II06-9" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="II06-9">
             <speaker>XIPHARÈS.</speaker>
             <l n="711" xml:id="l711">Quelle marque, grands dieux ! d'un amour déplorable ! </l>
             <l n="712" xml:id="l712">Combien en un moment heureux et misérable ! </l>
@@ -1172,9 +1176,9 @@
             <l n="718" xml:id="l718">Père injuste, cruel, mais d'ailleurs malheureux !</l>
             <l n="719" xml:id="l719">Vous voulez que je fuie, et que je vous évite ? </l>
             <l n="720" xml:id="l720">Et cependant le roi m'attache à votre suite. </l>
-            <l n="721" xml:id="l721" part="I">Que dira-t-il ?</l>
+            <l n="721" part="I" xml:id="l721">Que dira-t-il ?</l>
           </sp>
-          <sp xml:id="II06-10" who="MONIME">
+          <sp who="MONIME" xml:id="II06-10">
             <speaker>MONIME.</speaker>
             <l part="F">N'importe, il me faut obéir. </l>
             <l n="722" xml:id="l722">Inventez des raisons qui puissent l'éblouir. </l>
@@ -1203,7 +1207,7 @@
             <l n="745" xml:id="l745">Je fuis. Souvenez-vous, Prince, de m'éviter, </l>
             <l n="746" xml:id="l746">Et méritez les pleurs que vous m'allez coûter.</l>
           </sp>
-          <sp xml:id="II06-11" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="II06-11">
             <speaker>XIPHARÈS.</speaker>
             <l n="747" xml:id="l747">Ah ! Madame... Elle fuit, et ne veut plus m'entendre. </l>
             <l n="748" xml:id="l748">Malheureux Xipharès, quel parti dois-tu prendre ? </l>
@@ -1216,11 +1220,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Mithridate, Pharnace, Xipharès.</head>
-          <sp xml:id="III01-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III01-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="755" xml:id="l755">Approchez, mes enfants. Enfin l'heure est venue</l>
             <l n="756" xml:id="l756">Qu'il faut que mon secret éclate à votre vue. </l>
@@ -1331,7 +1335,7 @@
             <l n="861" xml:id="l861">Que nos tyrans communs en pâlissent d'effroi, </l>
             <l n="862" xml:id="l862">Et que le bruit à Rome en vienne jusqu'à moi.</l>
           </sp>
-          <sp xml:id="III01-2" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="III01-2">
             <speaker>PHARNACE.</speaker>
             <l n="863" xml:id="l863">Seigneur, je ne vous puis déguiser ma surprise. </l>
             <l n="864" xml:id="l864">J'écoute avec transport cette grande entreprise.</l>
@@ -1377,7 +1381,7 @@
             <l n="904" xml:id="l904">Jetons-nous dans les bras qu'on nous tend avec joie.</l>
             <l n="905" xml:id="l905">Rome en votre faveur facile à s'apaiser... </l>
           </sp>
-          <sp xml:id="III01-3" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="III01-3">
             <speaker>XIPHARÈS.</speaker>
             <l n="906" xml:id="l906">Rome, mon frère ! ô ciel ! Qu'osez-vous proposer ?</l>
             <l n="907" xml:id="l907">Vous voulez que le roi s'abaisse et s'humilie ?</l>
@@ -1421,7 +1425,7 @@
             <l n="945" xml:id="l945">Et Rome unique objet d'un désespoir si beau, </l>
             <l n="946" xml:id="l946">Du fils de Mithridate est le digne tombeau.</l>
           </sp>
-          <sp xml:id="III01-4" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III01-4">
             <speaker>MITHRIDATE, se levant.</speaker>
             <l n="947" xml:id="l947">Mon fils, ne parlons plus d'une mère infidèle. </l>
             <l n="948" xml:id="l948">Votre père est content, il connaît votre zèle,</l>
@@ -1436,34 +1440,34 @@
             <l n="957" xml:id="l957">Allez. Et soutenant l'honneur de vos aïeux, </l>
             <l n="958" xml:id="l958">Dans cet embrassement recevez mes adieux.</l>
           </sp>
-          <sp xml:id="III01-5" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="III01-5">
             <speaker>PHARNACE.</speaker>
-            <l n="959" xml:id="l959" part="I">Seigneur...</l>
+            <l n="959" part="I" xml:id="l959">Seigneur...</l>
           </sp>
-          <sp xml:id="III01-6" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III01-6">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Ma volonté, Prince, vous doit suffire. </l>
             <l n="960" xml:id="l960">Obéissez. C'est trop vous le faire redire. </l>
           </sp>
-          <sp xml:id="III01-7" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="III01-7">
             <speaker>PHARNACE.</speaker>
             <l n="961" xml:id="l961">Seigneur, si pour vous plaire il ne faut que périr,</l>
             <l n="962" xml:id="l962">Plus ardent qu'aucun autre on m'y verra courir. </l>
             <l n="963" xml:id="l963">Combattant à vos yeux permettez que je meure.</l>
           </sp>
-          <sp xml:id="III01-8" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III01-8">
             <speaker>MITHRIDATE.</speaker>
             <l n="964" xml:id="l964">Je vous ai commandé de partir tout à l'heure. </l>
             <l n="965" xml:id="l965">Mais après ce moment... Prince, vous m'entendez, </l>
             <l n="966" xml:id="l966">Et vous êtes perdu si vous me répondez.</l>
           </sp>
-          <sp xml:id="III01-9" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="III01-9">
             <speaker>PHARNACE.</speaker>
             <l n="967" xml:id="l967">Dussiez vous présenter mille morts à ma vue, </l>
             <l n="968" xml:id="l968">Je ne saurais chercher une fille inconnue. </l>
-            <l n="969" xml:id="l969" part="I">Ma vie est en vos mains.</l>
+            <l n="969" part="I" xml:id="l969">Ma vie est en vos mains.</l>
           </sp>
-          <sp xml:id="III01-10" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III01-10">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Ah ! c'est où je t'attends. </l>
             <l n="970" xml:id="l970">Tu ne saurais partir, perfide, et je t'entends. </l>
@@ -1484,18 +1488,18 @@
             <l n="985" xml:id="l985">Il te tarde déjà qu'échappé de mes mains </l>
             <l n="986" xml:id="l986">Tu ne coures me perdre, et me vendre aux Romains.</l>
             <l n="987" xml:id="l987">Mais avant que partir je me ferai justice.</l>
-            <l n="988" xml:id="l988" part="I">Je te l'ai dit.</l>
+            <l n="988" part="I" xml:id="l988">Je te l'ai dit.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Mithridate, Pharnace, Xipharès, Gardes.</head>
-          <sp xml:id="III02-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III02-1">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Holà, gardes. Qu'on le saisisse. </l>
             <l n="989" xml:id="l989">Oui, lui-même, Pharnace. Allez, et de ce pas </l>
             <l n="990" xml:id="l990">Qu'enfermé dans la tour on ne le quitte pas. </l>
           </sp>
-          <sp xml:id="III02-2" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="III02-2">
             <speaker>PHARNACE.</speaker>
             <l n="991" xml:id="l991">Hé bien ! Sans me parer d'une innocence vaine,</l>
             <l n="992" xml:id="l992">Il est vrai mon amour mérite votre haine. </l>
@@ -1507,13 +1511,13 @@
             <l n="998" xml:id="l998">Il aime aussi la reine, et même en est aimé.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Mithridate, Xipahrès.</head>
-          <sp xml:id="III03-1" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="III03-1">
             <speaker>XIPHARÈS.</speaker>
             <l n="999" xml:id="l999">Seigneur, le croirez-vous qu'un dessein si coupable... </l>
           </sp>
-          <sp xml:id="III03-2" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III03-2">
             <speaker>MITHRIDATE.</speaker>
             <l n="1000" xml:id="l1000">Mon fils, je sais de quoi votre frère est capable. </l>
             <l n="1001" xml:id="l1001">Me préserve le ciel de soupçonner jamais </l>
@@ -1524,9 +1528,9 @@
             <l n="1006" xml:id="l1006">Je ne vais désormais penser qu'à nous venger.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV.</head>
-          <sp xml:id="III04-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III04-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="1007" xml:id="l1007">Je ne le croirai point ? Vain espoir qui me flatte ! </l>
             <l n="1008" xml:id="l1008">Tu ne le crois que trop, malheureux Mithridate.</l>
@@ -1558,9 +1562,9 @@
             <l n="1034" xml:id="l1034">Par un mensonge adroit tirons la vérité.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Mithridate, Monime.</head>
-          <sp xml:id="III05-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III05-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="1035" xml:id="l1035">Enfin j'ouvre les yeux, et je me fais justice. </l>
             <l n="1036" xml:id="l1036">C'est faire à vos beautés un triste sacrifice, </l>
@@ -1591,11 +1595,11 @@
             <l n="1061" xml:id="l1061">Xipharès en un mot devenant votre époux,</l>
             <l n="1062" xml:id="l1062">Me venge de Pharnace, et m'acquitte envers vous.</l>
           </sp>
-          <sp xml:id="III05-2" who="MONIME">
+          <sp who="MONIME" xml:id="III05-2">
             <speaker>MONIME.</speaker>
-            <l n="1063" xml:id="l1063" part="I">Xipharès ! Lui, Seigneur !</l>
+            <l n="1063" part="I" xml:id="l1063">Xipharès ! Lui, Seigneur !</l>
           </sp>
-          <sp xml:id="III05-3" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III05-3">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Oui lui-même, Madame. </l>
             <l n="1064" xml:id="l1064">D'où peut naître à ce nom le trouble de votre âme ? </l>
@@ -1608,7 +1612,7 @@
             <l n="1071" xml:id="l1071">Et quoi que votre amour ait osé se promettre,</l>
             <l n="1072" xml:id="l1072">Ce n'est qu'entre ses mains que je puis vous remettre.</l>
           </sp>
-          <sp xml:id="III05-4" who="MONIME">
+          <sp who="MONIME" xml:id="III05-4">
             <speaker>MONIME.</speaker>
             <l n="1073" xml:id="l1073">Que dites-vous ? Ô ciel ! Pourriez-vous approuver... </l>
             <l n="1074" xml:id="l1074">Pourquoi, Seigneur, pourquoi voulez-vous m'éprouver ? </l>
@@ -1616,20 +1620,20 @@
             <l n="1076" xml:id="l1076">Je sais que c'est à vous que je fus destinée.</l>
             <l n="1077" xml:id="l1077">Je sais qu'en ce moment pour ce noeud solennel</l>
             <l n="1078" xml:id="l1078">La victime, Seigneur, nous attend à l'autel. </l>
-            <l n="1079" xml:id="l1079" part="I">Venez.</l>
+            <l n="1079" part="I" xml:id="l1079">Venez.</l>
           </sp>
-          <sp xml:id="III05-5" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III05-5">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Je le vois bien, quelque effort que je fasse, </l>
             <l n="1080" xml:id="l1080">Madame, vous voulez vous garder à Pharnace. </l>
             <l n="1081" xml:id="l1081">Je reconnais toujours vos injustes mépris,</l>
             <l n="1082" xml:id="l1082">Ils ont même passé sur mon malheureux fils.</l>
           </sp>
-          <sp xml:id="III05-6" who="MONIME">
+          <sp who="MONIME" xml:id="III05-6">
             <speaker>MONIME.</speaker>
-            <l n="1083" xml:id="l1083" part="I">Je le méprise !</l>
+            <l n="1083" part="I" xml:id="l1083">Je le méprise !</l>
           </sp>
-          <sp xml:id="III05-7" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III05-7">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Hé bien ! n'en parlons plus, Madame.</l>
             <l n="1084" xml:id="l1084">Continuez. Brûlez d'une honteuse flamme. </l>
@@ -1643,15 +1647,15 @@
             <l n="1092" xml:id="l1092">Je veux laisser de vous jusqu'à votre mémoire. </l>
             <l n="1093" xml:id="l1093">Allons, Madame, allons. Je m'en vais vous unir.</l>
           </sp>
-          <sp xml:id="III05-8" who="MONIME">
+          <sp who="MONIME" xml:id="III05-8">
             <speaker>MONIME.</speaker>
             <l n="1094" xml:id="l1094">Plutôt de mille morts dussiez-vous me punir.</l>
           </sp>
-          <sp xml:id="III05-9" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III05-9">
             <speaker>MITHRIDATE.</speaker>
             <l n="1095" xml:id="l1095">Vous résistez en vain, et j'entends votre fuite. </l>
           </sp>
-          <sp xml:id="III05-10" who="MONIME">
+          <sp who="MONIME" xml:id="III05-10">
             <speaker>MONIME.</speaker>
             <l n="1096" xml:id="l1096">En quelle extrémité, Seigneur, suis-je réduite ?</l>
             <l n="1097" xml:id="l1097">Mais enfin je vous crois, et je ne puis penser</l>
@@ -1667,32 +1671,32 @@
             <l n="1107" xml:id="l1107">Cet ennemi de Rome et cet autre vous-même,</l>
             <l n="1108" xml:id="l1108">Enfin ce Xipharès que vous voulez que j'aime...</l>
           </sp>
-          <sp xml:id="III05-11" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III05-11">
             <speaker>MITHRIDATE.</speaker>
-            <l n="1109" xml:id="l1109" part="I">Vous l'aimez ?</l>
+            <l n="1109" part="I" xml:id="l1109">Vous l'aimez ?</l>
           </sp>
-          <sp xml:id="III05-12" who="MONIME">
+          <sp who="MONIME" xml:id="III05-12">
             <speaker>MONIME.</speaker>
             <l part="F">Si le sort ne m'eût donnée à vous, </l>
             <l n="1110" xml:id="l1110">Mon bonheur dépendait de l'avoir pour époux ; </l>
             <l n="1111" xml:id="l1111">Avant que votre amour m'eût envoyé ce gage,</l>
             <l n="1112" xml:id="l1112">Nous nous aimions... Seigneur, vous changez de visage.</l>
           </sp>
-          <sp xml:id="III05-13" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III05-13">
             <speaker>MITHRIDATE.</speaker>
             <l n="1113" xml:id="l1113">Non, Madame. Il suffit. Je vais vous l'envoyer. </l>
             <l n="1114" xml:id="l1114">Allez. Le temps est cher. Il le faut employer. </l>
             <l n="1115" xml:id="l1115">Je vois qu'à m'obéir vous êtes disposée. </l>
-            <l n="1116" xml:id="l1116" part="I">Je suis content.</l>
+            <l n="1116" part="I" xml:id="l1116">Je suis content.</l>
           </sp>
-          <sp xml:id="III05-14" who="MONIME">
+          <sp who="MONIME" xml:id="III05-14">
             <speaker>MONIME, en s'en allant.</speaker>
             <l part="F">Ô ciel ! Me serais-je abusée ?</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="III06-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="III06-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="1117" xml:id="l1117">Ils s'aiment. C'est ainsi qu'on se jouait de nous. </l>
             <l n="1118" xml:id="l1118">Ah fils ingrat ! Tu vas me répondre pour tous. </l>
@@ -1707,11 +1711,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Monime, Phoedime.</head>
-          <sp xml:id="IV01-1" who="MONIME">
+          <sp who="MONIME" xml:id="IV01-1">
             <speaker>MONIME.</speaker>
             <l n="1127" xml:id="l1127">Phoedime, au nom des dieux, fais ce que je désire.</l>
             <l n="1128" xml:id="l1128">Va voir ce qui se passe, et reviens me le dire.</l>
@@ -1734,7 +1738,7 @@
             <l n="1145" xml:id="l1145">Je parle et trop facile à me laisser tromper, </l>
             <l n="1146" xml:id="l1146">Je lui marque le coeur où sa main doit frapper.</l>
           </sp>
-          <sp xml:id="IV01-2" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="IV01-2">
             <speaker>PHOEDIME.</speaker>
             <l n="1147" xml:id="l1147">Ah ! traitez-le, Madame, avec plus de justice.</l>
             <l n="1148" xml:id="l1148">Un grand roi descend-il jusqu'à cet artifice ? </l>
@@ -1751,30 +1755,30 @@
             <l n="1159" xml:id="l1159">D'un rival en fureur est-ce là la conduite ? </l>
             <l n="1160" xml:id="l1160">Et voit-on ses discours démentis par la suite ? </l>
           </sp>
-          <sp xml:id="IV01-3" who="MONIME">
+          <sp who="MONIME" xml:id="IV01-3">
             <speaker>MONIME.</speaker>
             <l n="1161" xml:id="l1161">Pharnace cependant par son ordre arrêté</l>
             <l n="1162" xml:id="l1162">Trouve en lui d'un rival toute la dureté. </l>
             <l n="1163" xml:id="l1163">Phoedime, à Xipharès fera-t-il plus de grâce ?</l>
           </sp>
-          <sp xml:id="IV01-4" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="IV01-4">
             <speaker>PHOEDIME.</speaker>
             <l n="1164" xml:id="l1164">C'est l'ami des Romains qu'il punit en Pharnace. </l>
             <l n="1165" xml:id="l1165">L'amour a peu de part à ses justes soupçons. </l>
           </sp>
-          <sp xml:id="IV01-5" who="MONIME">
+          <sp who="MONIME" xml:id="IV01-5">
             <speaker>MONIME.</speaker>
             <l n="1166" xml:id="l1166">Autant que je le puis je cède à tes raisons.</l>
             <l n="1167" xml:id="l1167">Elles calment un peu l'ennui qui me dévore. </l>
             <l n="1168" xml:id="l1168">Mais pourtant Xipharès ne paraît point encore.</l>
           </sp>
-          <sp xml:id="IV01-6" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="IV01-6">
             <speaker>PHOEDIME.</speaker>
             <l n="1169" xml:id="l1169">Vaine erreur des amants, qui pleins de leurs désirs, </l>
             <l n="1170" xml:id="l1170">Voudraient que tout cédât au soin de leurs plaisirs ! </l>
             <l n="1171" xml:id="l1171">Qui prêts à s'irriter contre le moindre obstacle...</l>
           </sp>
-          <sp xml:id="IV01-7" who="MONIME">
+          <sp who="MONIME" xml:id="IV01-7">
             <speaker>MONIME.</speaker>
             <l n="1172" xml:id="l1172">Ma Phoedime, et qui peut concevoir ce miracle ?</l>
             <l n="1173" xml:id="l1173">Après deux ans d'ennuis, dont tu sais tout le poids,</l>
@@ -1784,34 +1788,34 @@
             <l n="1177" xml:id="l1177">Tu verrais ton devoir, je verrais ma vertu</l>
             <l n="1178" xml:id="l1178">Approuver un amour si longtemps combattu ?</l>
             <l n="1179" xml:id="l1179">Je pourrais tous les jours t'assurer que je t'aime ? </l>
-            <l n="1180" xml:id="l1180" part="I">Que ne viens-tu...</l>
+            <l n="1180" part="I" xml:id="l1180">Que ne viens-tu...</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Monime, Xipharès, Phoedime.</head>
-          <sp xml:id="IV02-1" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-1">
             <speaker>MONIME.</speaker>
             <l part="F">Seigneur, je parlais de vous-même. </l>
             <l n="1181" xml:id="l1181">Mon âme souhaitait de vous voir en ce lieu, </l>
-            <l n="1182" xml:id="l1182" part="I">Pour vous...</l>
+            <l n="1182" part="I" xml:id="l1182">Pour vous...</l>
           </sp>
-          <sp xml:id="IV02-2" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-2">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">C'est maintenant qu'il faut vous dire adieu.</l>
           </sp>
-          <sp xml:id="IV02-3" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-3">
             <speaker>MONIME.</speaker>
-            <l n="1183" xml:id="l1183" part="I">Adieu ! Vous ?</l>
+            <l n="1183" part="I" xml:id="l1183">Adieu ! Vous ?</l>
           </sp>
-          <sp xml:id="IV02-4" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-4">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Oui, Madame, et pour toute ma vie. </l>
           </sp>
-          <sp xml:id="IV02-5" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-5">
             <speaker>MONIME.</speaker>
             <l n="1184" xml:id="l1184">Qu'entends-je ? On me disait... Hélas ! ils m'ont trahie. </l>
           </sp>
-          <sp xml:id="IV02-6" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-6">
             <speaker>XIPHARÈS.</speaker>
             <l n="1185" xml:id="l1185">Madame, je ne sais quel ennemi couvert</l>
             <l n="1186" xml:id="l1186">Révélant nos secrets vous trahit, et me perd. </l>
@@ -1844,11 +1848,11 @@
             <l n="1213" xml:id="l1213">Vivez, et permettez que dans tous mes malheurs </l>
             <l n="1214" xml:id="l1214">Je puisse à votre amour ne coûter que des pleurs.</l>
           </sp>
-          <sp xml:id="IV02-7" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-7">
             <speaker>MONIME.</speaker>
-            <l n="1215" xml:id="l1215" part="I">Ah ! je vous ai perdu !</l>
+            <l n="1215" part="I" xml:id="l1215">Ah ! je vous ai perdu !</l>
           </sp>
-          <sp xml:id="IV02-8" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-8">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Généreuse Monime, </l>
             <l n="1216" xml:id="l1216">Ne vous imputez point le malheur qui m'opprime.</l>
@@ -1859,28 +1863,28 @@
             <l n="1221" xml:id="l1221">Et vient de susciter dans ce moment affreux,</l>
             <l n="1222" xml:id="l1222">Un secret ennemi pour nous trahir tous deux.</l>
           </sp>
-          <sp xml:id="IV02-9" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-9">
             <speaker>MONIME.</speaker>
             <l n="1223" xml:id="l1223">Hé quoi ? Cet ennemi vous l'ignorez encore ?</l>
           </sp>
-          <sp xml:id="IV02-10" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-10">
             <speaker>XIPHARÈS.</speaker>
             <l n="1224" xml:id="l1224">Pour surcroît de douleur, Madame, je l'ignore.</l>
             <l n="1225" xml:id="l1225">Heureux ! si je pouvais avant que m'immoler, </l>
             <l n="1226" xml:id="l1226">Percer le traître coeur qui m'a pu déceler.</l>
           </sp>
-          <sp xml:id="IV02-11" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-11">
             <speaker>MONIME.</speaker>
             <l n="1227" xml:id="l1227">Hé bien, Seigneur, il faut vous le faire connaître. </l>
             <l n="1228" xml:id="l1228">Ne cherchez point ailleurs, cet ennemi, ce traître,</l>
             <l n="1229" xml:id="l1229">Frappez. Aucun respect ne vous doit retenir. </l>
             <l n="1230" xml:id="l1230">J'ai tout fait. Et c'est moi que vous devez punir. </l>
           </sp>
-          <sp xml:id="IV02-12" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-12">
             <speaker>XIPHARÈS.</speaker>
-            <l n="1231" xml:id="l1231" part="I">Vous !</l>
+            <l n="1231" part="I" xml:id="l1231">Vous !</l>
           </sp>
-          <sp xml:id="IV02-13" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-13">
             <speaker>MONIME.</speaker>
             <l part="F">Ah ! si vous saviez, Prince, avec quelle adresse</l>
             <l n="1232" xml:id="l1232">Le cruel est venu surprendre ma tendresse ! </l>
@@ -1895,7 +1899,7 @@
             <l n="1241" xml:id="l1241">J'ai dû craindre du roi les dons empoisonnés, </l>
             <l n="1242" xml:id="l1242">Et je m'en punirai si vous me pardonnez.</l>
           </sp>
-          <sp xml:id="IV02-14" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-14">
             <speaker>XIPHARÈS.</speaker>
             <l n="1243" xml:id="l1243">Quoi ! Madame ? C'est vous, c'est l'amour qui m'expose ?</l>
             <l n="1244" xml:id="l1244">Mon malheur est parti d'une si belle cause ? </l>
@@ -1906,17 +1910,17 @@
             <l n="1249" xml:id="l1249">Consentez-y, Madame, et sans plus résister</l>
             <l n="1250" xml:id="l1250">Achevez un hymen qui vous y fait monter. </l>
           </sp>
-          <sp xml:id="IV02-15" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-15">
             <speaker>MONIME.</speaker>
             <l n="1251" xml:id="l1251">Quoi vous me demandez que j'épouse un barbare,</l>
             <l n="1252" xml:id="l1252">Dont l'odieux amour pour jamais nous sépare ?</l>
           </sp>
-          <sp xml:id="IV02-16" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="IV02-16">
             <speaker>XIPHARÈS.</speaker>
             <l n="1253" xml:id="l1253">Songez que ce matin, soumise à ses souhaits</l>
             <l n="1254" xml:id="l1254">Vous deviez l'épouser et ne me voir jamais.</l>
           </sp>
-          <sp xml:id="IV02-17" who="MONIME">
+          <sp who="MONIME" xml:id="IV02-17">
             <speaker>MONIME.</speaker>
             <l n="1255" xml:id="l1255">Et connaissais-je alors toute sa barbarie ? </l>
             <l n="1256" xml:id="l1256">Ne voudriez-vous point qu'approuvant sa furie, </l>
@@ -1932,23 +1936,23 @@
             <l n="1266" xml:id="l1266">Et du moins attendez quel sera mon destin.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Monime, Phoedime.</head>
-          <sp xml:id="IV03-1" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="IV03-1">
             <speaker>PHOEDIME.</speaker>
             <l n="1267" xml:id="l1267">Madame, à quels périls il exposait sa vie !</l>
-            <l n="1268" xml:id="l1268" part="I">C'est le roi.</l>
+            <l n="1268" part="I" xml:id="l1268">C'est le roi.</l>
           </sp>
-          <sp xml:id="IV03-2" who="MONIME">
+          <sp who="MONIME" xml:id="IV03-2">
             <speaker>MONIME.</speaker>
             <l part="F">Cours l'aider à cacher sa sortie. </l>
             <l n="1269" xml:id="l1269">Va, ne le quitte point ; et qu'il se garde bien </l>
             <l n="1270" xml:id="l1270">D'ordonner de son sort, sans être instruit du mien.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Mithridate, Monime.</head>
-          <sp xml:id="IV04-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV04-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="1271" xml:id="l1271">Allons, Madame, allons. Une raison secrète </l>
             <l n="1272" xml:id="l1272">Me fait quitter ces lieux, et hâter ma retraite.</l>
@@ -1957,38 +1961,38 @@
             <l n="1275" xml:id="l1275">Venez, et qu'à l'autel ma promesse accomplie </l>
             <l n="1276" xml:id="l1276">Par des noeuds éternels l'un à l'autre nous lie.</l>
           </sp>
-          <sp xml:id="IV04-2" who="MONIME">
+          <sp who="MONIME" xml:id="IV04-2">
             <speaker>MONIME.</speaker>
-            <l n="1277" xml:id="l1277" part="I">Nous, Seigneur ?</l>
+            <l n="1277" part="I" xml:id="l1277">Nous, Seigneur ?</l>
           </sp>
-          <sp xml:id="IV04-3" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV04-3">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Quoi, Madame ! osez-vous balancer ?</l>
           </sp>
-          <sp xml:id="IV04-4" who="MONIME">
+          <sp who="MONIME" xml:id="IV04-4">
             <speaker>MONIME.</speaker>
             <l n="1278" xml:id="l1278">Et ne m'avez-vous pas défendu d'y penser ?</l>
           </sp>
-          <sp xml:id="IV04-5" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV04-5">
             <speaker>MITHRIDATE.</speaker>
             <l n="1279" xml:id="l1279">J'eus mes raisons alors. Oublions-les, Madame. </l>
             <l n="1280" xml:id="l1280">Ne songez maintenant qu'à répondre à ma flamme. </l>
             <l n="1281" xml:id="l1281">Songez que votre coeur est un bien qui m'est dû.</l>
           </sp>
-          <sp xml:id="IV04-6" who="MONIME">
+          <sp who="MONIME" xml:id="IV04-6">
             <speaker>MONIME.</speaker>
             <l n="1282" xml:id="l1282">Hé pourquoi donc, Seigneur, me l'avez-vous rendu ?</l>
           </sp>
-          <sp xml:id="IV04-7" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV04-7">
             <speaker>MITHRIDATE.</speaker>
             <l n="1283" xml:id="l1283">Quoi ! pour un fils ingrat toujours préoccupée</l>
-            <l n="1284" xml:id="l1284" part="I">Vous croiriez...</l>
+            <l n="1284" part="I" xml:id="l1284">Vous croiriez...</l>
           </sp>
-          <sp xml:id="IV04-8" who="MONIME">
+          <sp who="MONIME" xml:id="IV04-8">
             <speaker>MONIME.</speaker>
             <l part="F">Quoi, Seigneur ! vous m'auriez donc trompée ?</l>
           </sp>
-          <sp xml:id="IV04-9" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV04-9">
             <speaker>MITHRIDATE.</speaker>
             <l n="1285" xml:id="l1285">Perfide ! Il vous sied bien de tenir ce discours, </l>
             <l n="1286" xml:id="l1286">Vous, qui gardant au coeur d'infidèles amours, </l>
@@ -2029,7 +2033,7 @@
             <l n="1321" xml:id="l1321">Et désormais sensible à ma seule bonté, </l>
             <l n="1322" xml:id="l1322">Méritez le pardon qui vous est présenté.</l>
           </sp>
-          <sp xml:id="IV04-10" who="MONIME">
+          <sp who="MONIME" xml:id="IV04-10">
             <speaker>MONIME.</speaker>
             <l n="1323" xml:id="l1323">Je n'ai point oublié quelle reconnaissance,</l>
             <l n="1324" xml:id="l1324">Seigneur, m'a dû ranger sous votre obéissance. </l>
@@ -2064,13 +2068,13 @@
             <l n="1353" xml:id="l1353">Et qui me préparant un éternel ennui, </l>
             <l n="1354" xml:id="l1354">M'a fait rougir d'un feu, qui n'était pas pour lui.</l>
           </sp>
-          <sp xml:id="IV04-11" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV04-11">
             <speaker>MITHRIDATE.</speaker>
             <l n="1355" xml:id="l1355">C'est donc votre réponse ? Et sans plus me complaire</l>
             <l n="1356" xml:id="l1356">Vous refusez l'honneur que je voulais vous faire ? </l>
             <l n="1357" xml:id="l1357">Pensez-y bien. J'attends pour me déterminer.</l>
           </sp>
-          <sp xml:id="IV04-12" who="MONIME">
+          <sp who="MONIME" xml:id="IV04-12">
             <speaker>MONIME.</speaker>
             <l n="1358" xml:id="l1358">Non, Seigneur, vainement vous croyez m'étonner. </l>
             <l n="1359" xml:id="l1359">Je vous connais. Je sais tout ce que je m'apprête, </l>
@@ -2095,9 +2099,9 @@
             <l n="1378" xml:id="l1378">Si j'en croyais, Seigneur, les voeux de votre fils.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V.</head>
-          <sp xml:id="IV05-1" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV05-1">
             <speaker>MITHRIDATE.</speaker>
             <l n="1379" xml:id="l1379">Elle me quitte ! Et moi dans un lâche silence,</l>
             <l n="1380" xml:id="l1380">Je semble de sa fuite approuver l'insolence ? </l>
@@ -2144,19 +2148,19 @@
             <l n="1421" xml:id="l1421">De ce trouble fatal par où dois-je sortir ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="IV06">
           <head>SCÈNE VI. Mithridate, Arbate.</head>
-          <sp xml:id="IV06-1" who="ARBATE">
+          <sp who="ARBATE" xml:id="IV06-1">
             <speaker>ARBATE.</speaker>
             <l n="1422" xml:id="l1422">Seigneur, tous vos soldats refusent de partir. </l>
             <l n="1423" xml:id="l1423">Pharnace les retient. Pharnace leur révèle </l>
             <l n="1424" xml:id="l1424">Que vous cherchez à Rome une guerre nouvelle.</l>
           </sp>
-          <sp xml:id="IV06-2" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV06-2">
             <speaker>MITHRIDATE.</speaker>
-            <l n="1425" xml:id="l1425" part="I">Pharnace ?</l>
+            <l n="1425" part="I" xml:id="l1425">Pharnace ?</l>
           </sp>
-          <sp xml:id="IV06-3" who="ARBATE">
+          <sp who="ARBATE" xml:id="IV06-3">
             <speaker>ARBATE.</speaker>
             <l part="F">Il a séduit ses gardes les premiers, </l>
             <l n="1426" xml:id="l1426">Et le seul nom de Rome étonne les plus fiers.</l>
@@ -2169,20 +2173,20 @@
             <l n="1433" xml:id="l1433">Pharnace est à leur tête, et flattant leurs souhaits</l>
             <l n="1434" xml:id="l1434">De la part des Romains il leur promet la paix.</l>
           </sp>
-          <sp xml:id="IV06-4" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV06-4">
             <speaker>MITHRIDATE.</speaker>
             <l n="1435" xml:id="l1435">Ah le traître ! Courez. Qu'on appelle son frère, </l>
             <l n="1436" xml:id="l1436">Qu'il me suive, qu'il vienne au secours de son père.</l>
           </sp>
-          <sp xml:id="IV06-5" who="ARBATE">
+          <sp who="ARBATE" xml:id="IV06-5">
             <speaker>ARBATE.</speaker>
             <l n="1437" xml:id="l1437">J'ignore son dessein. Mais un soudain transport</l>
             <l n="1438" xml:id="l1438">L'a déjà fait descendre, et courir vers le port. </l>
             <l n="1439" xml:id="l1439">Et l'on dit que suivi d'un gros d'amis fidèles.</l>
             <l n="1440" xml:id="l1440">On l'a vu se mêler au milieu des rebelles. </l>
-            <l n="1441" xml:id="l1441" part="I">C'est tout ce que j'en sais.</l>
+            <l n="1441" part="I" xml:id="l1441">C'est tout ce que j'en sais.</l>
           </sp>
-          <sp xml:id="IV06-6" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV06-6">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Ah ! qu'est-ce que j'entends ?</l>
             <l n="1442" xml:id="l1442">Perfides, ma vengeance a tardé trop longtemps. </l>
@@ -2192,36 +2196,36 @@
             <l n="1446" xml:id="l1446">Immoler de ma main deux fils audacieux.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="IV07">
           <head>SCÈNE VII. Mithridate, Arbate, Arcas.</head>
-          <sp xml:id="IV07-1" who="ARCAS">
+          <sp who="ARCAS" xml:id="IV07-1">
             <speaker>ARCAS.</speaker>
             <l n="1447" xml:id="l1447">Seigneur, tout est perdu. Les rebelles, Pharnace,</l>
             <l n="1448" xml:id="l1448">Les Romains sont en foule autour de cette place.</l>
           </sp>
-          <sp xml:id="IV07-2" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV07-2">
             <speaker>MITHRIDATE.</speaker>
-            <l n="1449" xml:id="l1449" part="I">Les Romains !</l>
+            <l n="1449" part="I" xml:id="l1449">Les Romains !</l>
           </sp>
-          <sp xml:id="IV07-3" who="ARCAS">
+          <sp who="ARCAS" xml:id="IV07-3">
             <speaker>ARCAS.</speaker>
             <l part="F">De Romains le rivage est chargé.</l>
             <l n="1450" xml:id="l1450">Et bientôt dans ces murs vous êtes assiégé. </l>
           </sp>
-          <sp xml:id="IV07-4" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="IV07-4">
             <speaker>MITHRIDATE.</speaker>
-            <l n="1451" xml:id="l1451" part="I">Ciel ! Courons. </l>
-            <stage type="toward">À Arcas.</stage>
+            <l n="1451" part="I" xml:id="l1451">Ciel ! Courons. </l>
+            <stage>À Arcas.</stage>
             <l part="F">Écoutez. Du malheur qui me presse </l>
             <l n="1452" xml:id="l1452">Tu ne jouiras pas, infidèle princesse.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Monime, Phoedime.</head>
-          <sp xml:id="V01-1" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="V01-1">
             <speaker>PHOEDIME.</speaker>
             <l n="1453" xml:id="l1453">Madame, où courez-vous ? Quels aveugles transports </l>
             <l n="1454" xml:id="l1454">Vous font tenter sur vous de criminels efforts ? </l>
@@ -2230,7 +2234,7 @@
             <l n="1457" xml:id="l1457">Ah ! ne voyez-vous pas, que les dieux plus humains</l>
             <l n="1458" xml:id="l1458">Ont eux-mêmes rompu ce bandeau dans vos mains ?</l>
           </sp>
-          <sp xml:id="V01-2" who="MONIME">
+          <sp who="MONIME" xml:id="V01-2">
             <speaker>MONIME.</speaker>
             <l n="1459" xml:id="l1459">Hé ! par quelle fureur obstinée à me suivre</l>
             <l n="1460" xml:id="l1460">Toi-même malgré moi veux-tu me faire vivre ? </l>
@@ -2239,7 +2243,7 @@
             <l n="1463" xml:id="l1463">Quel fruit te promets-tu de ta coupable audace ? </l>
             <l n="1464" xml:id="l1464">Perfide, prétends-tu me livrer à Pharnace ?</l>
           </sp>
-          <sp xml:id="V01-3" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="V01-3">
             <speaker>PHOEDIME.</speaker>
             <l n="1465" xml:id="l1465">Ah ! du moins attendez qu'un fidèle rapport </l>
             <l n="1466" xml:id="l1466">De son malheureux frère ait confirmé la mort. </l>
@@ -2251,7 +2255,7 @@
             <l n="1472" xml:id="l1472">Ont tourné contre lui leurs armes criminelles. </l>
             <l n="1473" xml:id="l1473">Jugez de l'un par l'autre. Et daignez écouter...</l>
           </sp>
-          <sp xml:id="V01-4" who="MONIME">
+          <sp who="MONIME" xml:id="V01-4">
             <speaker>MONIME.</speaker>
             <l n="1474" xml:id="l1474">Xipharès ne vit plus, il n'en faut point douter. </l>
             <l n="1475" xml:id="l1475">L'événement n'a point démenti mon attente. </l>
@@ -2289,29 +2293,29 @@
             <l n="1507" xml:id="l1507">Et périsse le jour, et la main meurtrière </l>
             <l n="1508" xml:id="l1508">Qui jadis sur mon front t'attacha la première.</l>
           </sp>
-          <sp xml:id="V01-5" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="V01-5">
             <speaker>PHOEDIME.</speaker>
             <l n="1509" xml:id="l1509">On vient, Madame, on vient. Et j'espère qu'Arcas </l>
             <l n="1510" xml:id="l1510">Pour bannir vos frayeurs porte vers vous ses pas. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Monime, Phoedime, Arcas.</head>
-          <sp xml:id="V02-1" who="MONIME">
+          <sp who="MONIME" xml:id="V02-1">
             <speaker>MONIME.</speaker>
             <l n="1511" xml:id="l1511">En est-ce fait, Arcas ? Et le cruel Pharnace...</l>
           </sp>
-          <sp xml:id="V02-2" who="ARCAS">
+          <sp who="ARCAS" xml:id="V02-2">
             <speaker>ARCAS.</speaker>
             <l n="1512" xml:id="l1512">Ne me demandez rien de tout ce qui se passe, </l>
             <l n="1513" xml:id="l1513">Madame. On m'a chargé d'un plus funeste emploi, </l>
             <l n="1514" xml:id="l1514">Et ce poison vous dit la volonté du roi.</l>
           </sp>
-          <sp xml:id="V02-3" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="V02-3">
             <speaker>PHOEDIME.</speaker>
-            <l n="1515" xml:id="l1515" part="I">Malheureuse Princesse !</l>
+            <l n="1515" part="I" xml:id="l1515">Malheureuse Princesse !</l>
           </sp>
-          <sp xml:id="V02-4" who="MONIME">
+          <sp who="MONIME" xml:id="V02-4">
             <speaker>MONIME.</speaker>
             <l part="F">Ah quel comble de joie ! </l>
             <l n="1516" xml:id="l1516">Donnez. Dites, Arcas, au roi qui me l'envoie,</l>
@@ -2322,11 +2326,11 @@
             <l n="1521" xml:id="l1521">Maîtresse de moi-même, il veut bien qu'une fois </l>
             <l n="1522" xml:id="l1522">Je puisse de mon sort disposer à mon choix.</l>
           </sp>
-          <sp xml:id="V02-5" who="PHOEDIME">
+          <sp who="PHOEDIME" xml:id="V02-5">
             <speaker>PHOEDIME.</speaker>
-            <l n="1523" xml:id="l1523" part="I">Hélas !</l>
+            <l n="1523" part="I" xml:id="l1523">Hélas !</l>
           </sp>
-          <sp xml:id="V02-6" who="MONIME">
+          <sp who="MONIME" xml:id="V02-6">
             <speaker>MONIME.</speaker>
             <l part="F">Retiens tes cris, et par d'indignes larmes</l>
             <l n="1524" xml:id="l1524">De cet heureux moment ne trouble point les charmes.</l>
@@ -2346,25 +2350,25 @@
             <l n="1538" xml:id="l1538">Ce poison expier le sang de mon amant.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Monime, Phoedime, Arcas.</head>
-          <sp xml:id="V03-1" who="ARBATE">
+          <sp who="ARBATE" xml:id="V03-1">
             <speaker>ARBATE.</speaker>
-            <l n="1539" xml:id="l1539" part="I">Arrêtez, arrêtez.</l>
+            <l n="1539" part="I" xml:id="l1539">Arrêtez, arrêtez.</l>
           </sp>
-          <sp xml:id="V03-2" who="ARCAS">
+          <sp who="ARCAS" xml:id="V03-2">
             <speaker>ARCAS.</speaker>
             <l part="F">Que faites-vous, Arbate ?</l>
           </sp>
-          <sp xml:id="V03-3" who="ARBATE">
+          <sp who="ARBATE" xml:id="V03-3">
             <speaker>ARBATE.</speaker>
             <l n="1540" xml:id="l1540">Arrêtez. J'accomplis l'ordre de Mithridate. </l>
           </sp>
-          <sp xml:id="V03-4" who="MONIME">
+          <sp who="MONIME" xml:id="V03-4">
             <speaker>MONIME.</speaker>
-            <l n="1541" xml:id="l1541" part="I">Ah ! laissez-moi.</l>
+            <l n="1541" part="I" xml:id="l1541">Ah ! laissez-moi.</l>
           </sp>
-          <sp xml:id="V03-5" who="ARBATE">
+          <sp who="ARBATE" xml:id="V03-5">
             <speaker>ARBATE, jetant le poison.</speaker>
             <l part="F">Cessez, vous dis-je, et laissez-moi, </l>
             <l n="1542" xml:id="l1542">Madame, exécuter les volontés du roi. </l>
@@ -2372,38 +2376,38 @@
             <l n="1544" xml:id="l1544">Courez à Mithridate apprendre la nouvelle.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. Monime, Arbate, Phoedime.</head>
-          <sp xml:id="V04-1" who="MONIME">
+          <sp who="MONIME" xml:id="V04-1">
             <speaker>MONIME.</speaker>
             <l n="1545" xml:id="l1545">Ah ! trop cruel Arbate, à quoi m'exposez-vous ? </l>
             <l n="1546" xml:id="l1546">Est-ce qu'on croit encor mon supplice trop doux ?</l>
             <l n="1547" xml:id="l1547">Et le roi m'enviant une mort si soudaine</l>
             <l n="1548" xml:id="l1548">Veut-il plus d'un trépas pour contenter sa haine ?</l>
           </sp>
-          <sp xml:id="V04-2" who="ARBATE">
+          <sp who="ARBATE" xml:id="V04-2">
             <speaker>ARBATE.</speaker>
             <l n="1549" xml:id="l1549">Vous l'allez voir paraître, et j'ose m'assurer</l>
             <l n="1550" xml:id="l1550">Que vous-même avec moi vous allez le pleurer. </l>
           </sp>
-          <sp xml:id="V04-3" who="MONIME">
+          <sp who="MONIME" xml:id="V04-3">
             <speaker>MONIME.</speaker>
-            <l n="1551" xml:id="l1551" part="I">Quoi le roi...</l>
+            <l n="1551" part="I" xml:id="l1551">Quoi le roi...</l>
           </sp>
-          <sp xml:id="V04-4" who="ARBATE">
+          <sp who="ARBATE" xml:id="V04-4">
             <speaker>ARBATE.</speaker>
             <l part="F">Le roi touche à son heure dernière,</l>
             <l n="1552" xml:id="l1552">Madame, et ne voit plus qu'un reste de lumière.</l>
             <l n="1553" xml:id="l1553">Je l'ai laissé sanglant, porté par des soldats,</l>
             <l n="1554" xml:id="l1554">Et Xipharès en pleurs accompagne leurs pas.</l>
           </sp>
-          <sp xml:id="V04-5" who="MONIME">
+          <sp who="MONIME" xml:id="V04-5">
             <speaker>MONIME.</speaker>
             <l n="1555" xml:id="l1555">Xipharès ? Ah grands dieux ? Je doute si je veille, </l>
             <l n="1556" xml:id="l1556">Et n'ose qu'en tremblant en croire mon oreille.</l>
             <l n="1557" xml:id="l1557">Xipharès vit encor, Xipharès, que mes pleurs...</l>
           </sp>
-          <sp xml:id="V04-6" who="ARBATE">
+          <sp who="ARBATE" xml:id="V04-6">
             <speaker>ARBATE.</speaker>
             <l n="1558" xml:id="l1558">Il vit chargé de gloire, accablé de douleurs.</l>
             <l n="1559" xml:id="l1559">De sa mort en ces lieux la nouvelle semée</l>
@@ -2467,11 +2471,11 @@
             <l n="1617" xml:id="l1617">Et le vainqueur vers nous s'avançant de plus près, </l>
             <l n="1618" xml:id="l1618">À mes yeux éperdus a montré Xipharès.</l>
           </sp>
-          <sp xml:id="V04-7" who="MONIME">
+          <sp who="MONIME" xml:id="V04-7">
             <speaker>MONIME.</speaker>
-            <l n="1619" xml:id="l1619" part="I">Juste ciel !</l>
+            <l n="1619" part="I" xml:id="l1619">Juste ciel !</l>
           </sp>
-          <sp xml:id="V04-8" who="ARBATE">
+          <sp who="ARBATE" xml:id="V04-8">
             <speaker>ARBATE.</speaker>
             <l part="F">Xipharès, toujours resté fidèle,</l>
             <l n="1620" xml:id="l1620">Et qu'au fort du combat une troupe rebelle</l>
@@ -2494,7 +2498,7 @@
             <l n="1637" xml:id="l1637">Et malgré nos malheurs, je me tiens trop heureux</l>
             <l n="1638" xml:id="l1638">D'avoir paré le coup qui vous perdait tous deux.</l>
           </sp>
-          <sp xml:id="V04-9" who="MONIME">
+          <sp who="MONIME" xml:id="V04-9">
             <speaker>MONIME.</speaker>
             <l n="1639" xml:id="l1639">Ah ! que de tant d'horreurs justement étonnée,</l>
             <l n="1640" xml:id="l1640">Je plains de ce grand roi la triste destinée ! </l>
@@ -2506,16 +2510,16 @@
             <l n="1646" xml:id="l1646">Le sang du père, ô ciel, et les larmes du fils !</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE DERNIÈRE. MITHRIDATE, MONIME, XIPHARÈS, ARBATE, ARCAS, GARDES qui soutiennent Mithridate.</head>
-          <sp xml:id="V05-1" who="MONIME">
+          <sp who="MONIME" xml:id="V05-1">
             <speaker>MONIME.</speaker>
             <l n="1647" xml:id="l1647">Ah que vois-je, Seigneur, et quel sort est le vôtre !</l>
           </sp>
-          <sp xml:id="V05-2" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="V05-2">
             <speaker>MITHRIDATE.</speaker>
             <l n="1648" xml:id="l1648">Cessez, et retenez vos larmes l'un et l'autre.</l>
-            <stage type="action">En montrant Xipharès.</stage>
+            <stage>En montrant Xipharès.</stage>
             <l n="1649" xml:id="l1649">Mon sort de sa tendresse, et de votre amitié </l>
             <l n="1650" xml:id="l1650">Veut d'autres sentiments que ceux de la pitié ; </l>
             <l n="1651" xml:id="l1651">Et ma gloire plutôt digne d'être admirée</l>
@@ -2543,14 +2547,14 @@
             <l n="1673" xml:id="l1673">Madame, et tous ces voeux que j'exigeais de vous,</l>
             <l n="1674" xml:id="l1674">Mon coeur pour Xipharès vous les demande tous.</l>
           </sp>
-          <sp xml:id="V05-3" who="MONIME">
+          <sp who="MONIME" xml:id="V05-3">
             <speaker>MONIME.</speaker>
             <l n="1675" xml:id="l1675">Vivez, Seigneur, vivez, pour le bonheur du monde, </l>
             <l n="1676" xml:id="l1676">Et pour sa liberté qui sur vous seul se fonde.</l>
             <l n="1677" xml:id="l1677">Vivez, pour triompher d'un ennemi vaincu,</l>
-            <l n="1678" xml:id="l1678" part="I">Pour venger...</l>
+            <l n="1678" part="I" xml:id="l1678">Pour venger...</l>
           </sp>
-          <sp xml:id="V05-4" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="V05-4">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">C'en est fait, Madame et j'ai vécu.</l>
             <l n="1679" xml:id="l1679">Mon fils, songez à vous. Gardez-vous de prétendre</l>
@@ -2562,15 +2566,15 @@
             <l n="1685" xml:id="l1685">Tant de Romains sans vie en cent lieux dispersés</l>
             <l n="1686" xml:id="l1686">Suffisent à ma cendre, et l'honorent assez.</l>
             <l n="1687" xml:id="l1687">Cachez leur pour un temps vos noms, et votre vie.</l>
-            <l n="1688" xml:id="l1688" part="I">Allez, réservez-vous...</l>
+            <l n="1688" part="I" xml:id="l1688">Allez, réservez-vous...</l>
           </sp>
-          <sp xml:id="V05-5" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="V05-5">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Moi, Seigneur, que je fuie !</l>
             <l n="1689" xml:id="l1689">Que Pharnace impuni, les Romains triomphants</l>
-            <l n="1690" xml:id="l1690" part="I">N'éprouvent pas bientôt...</l>
+            <l n="1690" part="I" xml:id="l1690">N'éprouvent pas bientôt...</l>
           </sp>
-          <sp xml:id="V05-6" who="MITHRIDATE">
+          <sp who="MITHRIDATE" xml:id="V05-6">
             <speaker>MITHRIDATE.</speaker>
             <l part="F">Non, je vous le défends. </l>
             <l n="1691" xml:id="l1691">Tôt ou tard il faudra que Pharnace périsse.</l>
@@ -2580,11 +2584,11 @@
             <l n="1695" xml:id="l1695">Dans cet embrassement dont la douceur me flatte, </l>
             <l n="1696" xml:id="l1696">Venez, et recevez l'âme de Mithridate.</l>
           </sp>
-          <sp xml:id="V05-7" who="MONIME">
+          <sp who="MONIME" xml:id="V05-7">
             <speaker>MONIME.</speaker>
-            <l n="1697" xml:id="l1697" part="I">Il expire.</l>
+            <l n="1697" part="I" xml:id="l1697">Il expire.</l>
           </sp>
-          <sp xml:id="V05-8" who="XIPHARES">
+          <sp who="XIPHARES" xml:id="V05-8">
             <speaker>XIPHARÈS.</speaker>
             <l part="F">Ah, Madame ! unissons nos douleurs,</l>
             <l n="1698" xml:id="l1698">Et par tout l'univers cherchons-lui des vengeurs. </l>

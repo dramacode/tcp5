@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>MÉDÉE, TRAGÉDIE</title>
-        <author born="1606" born_location="Rouen" death="1684" death_location="Paris" academie="1647">CORNEILLE, Pierre</author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">CORNEILLE, Pierre</author>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE, juillet 2015</p>
-        <idno/>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE, juillet 2015</p>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -38,7 +39,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -50,7 +51,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1639">M. DC. XXXIX. AVEC PRIVILÈRE DU ROI.</docDate>
-      <docAuthor id="CORNEILLE, Pierre" bio="corneillep"/>
+      <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
       <docImprint>
         <privilege id="1639-02-11">
           <head>Extrait du privilège du Roi.</head>
@@ -73,50 +74,50 @@
       </performance>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="CREON" id="CRÉON" sex="1" type="H" statut="roi" age="A" stat_amour="néant">CRÉON</role>, roi de Corinthe.</castItem>
-        <castItem><role xml:id="AEGEE" id="AEGÉE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">AEGÉE</role>, roi d'Athènes.</castItem>
-        <castItem><role xml:id="JASON" id="JASON" sex="1" type="H" statut="roi" age="A" stat_amour="néant">JASON</role>, mari de Médée.</castItem>
-        <castItem><role xml:id="POLLUX" id="POLLUX" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">POLLUX</role>, Argonaute, ami de Jason.</castItem>
-        <castItem><role xml:id="CREUSE" rend="junior" id="CRÉUSE" sex="2" type="H" statut="prince" age="J" stat_amour="néant">CRÉUSE</role>, fille de Créon.</castItem>
-        <castItem><role xml:id="MEDEE" id="MÉDÉE" sex="2" type="H" statut="roi" age="A" stat_amour="néant">MÉDÉE</role>, femme de Jason.</castItem>
-        <castItem><role xml:id="CLEONE" id="CLÉONE" sex="2" type="H" statut="gouvernante" age="A" stat_amour="néant">CLÉONE</role>, gouvernante de Créuse.</castItem>
-        <castItem><role xml:id="NERINE" id="NÉRINE" sex="2" type="H" statut="suivante" age="A" stat_amour="néant">NÉRINE</role>, suivante de Médée.</castItem>
-        <castItem><role xml:id="THEUDAS" id="THEUDAS" sex="1" type="H" statut="domestique" age="A" stat_amour="néant">THEUDAS</role>, domestique de Créon.</castItem>
-        <castItem><role xml:id="TROUPES,desGardesdeCréon" id="GARDES" sex="9" type="H" statut="garde" age="A" stat_amour="néant">TROUPES, des Gardes de Créon</role>.</castItem>
+        <castItem><role age="A" civil="M" id="CRÉON" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="CREON">CRÉON</role>, roi de Corinthe.</castItem>
+        <castItem><role age="A" civil="M" id="AEGÉE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="AEGEE">AEGÉE</role>, roi d'Athènes.</castItem>
+        <castItem><role age="A" civil="M" id="JASON" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="JASON">JASON</role>, mari de Médée.</castItem>
+        <castItem><role age="A" civil="M" id="POLLUX" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="POLLUX">POLLUX</role>, Argonaute, ami de Jason.</castItem>
+        <castItem><role age="A" civil="F" id="CRÉUSE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="CREUSE">CRÉUSE</role>, fille de Créon.</castItem>
+        <castItem><role age="A" civil="F" id="MÉDÉE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="MEDEE">MÉDÉE</role>, femme de Jason.</castItem>
+        <castItem><role age="A" civil="F" id="CLÉONE" rend="female" stat_amour="néant" statut="gouvernante" type="H" xml:id="CLEONE">CLÉONE</role>, gouvernante de Créuse.</castItem>
+        <castItem><role age="A" civil="F" id="NÉRINE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="NERINE">NÉRINE</role>, suivante de Médée.</castItem>
+        <castItem><role age="A" civil="M" id="THEUDAS" rend="male" stat_amour="néant" statut="domestique" type="H" xml:id="THEUDAS">THEUDAS</role>, domestique de Créon.</castItem>
+        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="GARDES">TROUPES, des Gardes de Créon</role>.</castItem>
       </castList>
-      <set location="Corinthe" country="Grèce" periode="Temps mythologiques" link="">La scène est à Corinthe.</set>
+      <set country="Grèce" link="" location="Corinthe" periode="Temps mythologiques">La scène est à Corinthe.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Pollux, Jason.</head>
-          <sp xml:id="I01-1" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-1">
             <speaker>POLLUX.</speaker>
             <l n="1" xml:id="l1">Que je sens à la fois de surprise et de joie !</l>
             <l n="2" xml:id="l2">Se peut-il qu'en ces lieux enfin je vous revoie,</l>
             <l n="3" xml:id="l3">Que Pollux dans Corinthe ait rencontré Jason ?</l>
           </sp>
-          <sp xml:id="I01-2" who="JASON">
+          <sp who="JASON" xml:id="I01-2">
             <speaker>JASON.</speaker>
             <l n="4" xml:id="l4">Vous n'y pouviez venir en meilleure saison,</l>
             <l n="5" xml:id="l5">Et pour vous rendre encore l'âme plus étonnée</l>
             <l n="6" xml:id="l6">Préparez-vous dans peu mon hyménée.</l>
           </sp>
-          <sp xml:id="I01-3" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-3">
             <speaker>POLLUX.</speaker>
-            <l n="7" xml:id="l7" part="I">Quoi ! Médée est donc morte, à ce compte ?</l>
+            <l n="7" part="I" xml:id="l7">Quoi ! Médée est donc morte, à ce compte ?</l>
           </sp>
-          <sp xml:id="I01-4" who="JASON">
+          <sp who="JASON" xml:id="I01-4">
             <speaker>JASON.</speaker>
             <l part="F">Elle vit ;</l>
             <l n="8" xml:id="l8">Mais un objet plus beau la chasse de mon lit.</l>
           </sp>
-          <sp xml:id="I01-5" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-5">
             <speaker>POLLUX.</speaker>
-            <l n="9" xml:id="l9" part="I">Dieux ! Et que fera-t-elle ?</l>
+            <l n="9" part="I" xml:id="l9">Dieux ! Et que fera-t-elle ?</l>
           </sp>
-          <sp xml:id="I01-6" who="JASON">
+          <sp who="JASON" xml:id="I01-6">
             <speaker>JASON.</speaker>
             <l part="F">Et que fit Hypsipyle</l>
             <l n="10" xml:id="l10">Que former dans son coeur un regret inutile,</l>
@@ -125,7 +126,7 @@
             <l n="13" xml:id="l13">Je la quitte à regret, mais je n'ai point d'excuse</l>
             <l n="14" xml:id="l14">Contre un pouvoir plus fort qui me donne à Créuse.</l>
           </sp>
-          <sp xml:id="I01-7" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-7">
             <speaker>POLLUX.</speaker>
             <l n="15" xml:id="l15">C'est donc là cet objet qui vous vient enchaîner ?</l>
             <l n="16" xml:id="l16">Sans l'entendre nommer je l'avais deviné,</l>
@@ -139,7 +140,7 @@
             <l n="23" xml:id="l23">Font bien voir qu'en tous lieux sans lancer d'autres dards</l>
             <l n="24" xml:id="l24">Les sceptres sont acquis à ses moindres regards.</l>
           </sp>
-          <sp xml:id="I01-8" who="JASON">
+          <sp who="JASON" xml:id="I01-8">
             <speaker>JASON.</speaker>
             <l n="25" xml:id="l25">Aussi je ne suis pas de ces amants vulgaires,</l>
             <note type="L">Accommoder : Conformer, approprier. Accommoder son discours aux circonstances. Il accommodait les lois à ses passions. [L]</note>
@@ -159,19 +160,19 @@
             <l n="39" xml:id="l39">Et j'ai trouvé l'adresse, en lui faisant la cour,</l>
             <l n="40" xml:id="l40">De relever mon sort sur les ailes d'Amour.</l>
           </sp>
-          <sp xml:id="I01-9" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-9">
             <speaker>POLLUX.</speaker>
             <l n="41" xml:id="l41">Que parlez-vous d'exil ? La haine de Pélie...</l>
           </sp>
-          <sp xml:id="I01-10" who="JASON">
+          <sp who="JASON" xml:id="I01-10">
             <speaker>JASON.</speaker>
             <l n="42" xml:id="l42">Me fait, tout mort qu'il est, fuir de sa Thessalie.</l>
           </sp>
-          <sp xml:id="I01-11" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-11">
             <speaker>POLLUX.</speaker>
-            <l n="43" xml:id="l43" part="I">Il est mort !</l>
+            <l n="43" part="I" xml:id="l43">Il est mort !</l>
           </sp>
-          <sp xml:id="I01-12" who="JASON">
+          <sp who="JASON" xml:id="I01-12">
             <speaker>JASON.</speaker>
             <l part="F">Écoutez, et vous saurez comment</l>
             <l n="44" xml:id="l44">Son trépas seul me force à cet éloignement.</l>
@@ -181,7 +182,7 @@
             <l n="47" xml:id="l47">Mon père tout caduc émouvant ma pitié,</l>
             <l n="48" xml:id="l48">Je conjurai Médée, au nom de l'amitié.</l>
           </sp>
-          <sp xml:id="I01-13" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-13">
             <speaker>POLLUX.</speaker>
             <l n="49" xml:id="l49">J'ai su comme son art, forçant les destinées</l>
             <l n="50" xml:id="l50">Lui rendit la vigueur de ses jeunes années,</l>
@@ -189,9 +190,9 @@
             <l n="52" xml:id="l52">D'où soudain un voyage en Asie entrepris</l>
             <l n="53" xml:id="l53">Fait que, nos deux séjours divisés par Neptune,</l>
             <l n="54" xml:id="l54">Je n'ai point su depuis quelle est votre fortune,</l>
-            <l n="55" xml:id="l55" part="I">Je n'en fais qu'arriver.</l>
+            <l n="55" part="I" xml:id="l55">Je n'en fais qu'arriver.</l>
           </sp>
-          <sp xml:id="I01-14" who="JASON">
+          <sp who="JASON" xml:id="I01-14">
             <speaker>JASON.</speaker>
             <l part="F">Apprenez donc de moi</l>
             <l n="56" xml:id="l56">Le sujet qui m'oblige à lui manquer de foi.</l>
@@ -230,14 +231,14 @@
             <l n="87" xml:id="l87">et refusant ses yeux à conduire sa main,</l>
             <l n="88" xml:id="l88">N'ose voir les effets de son pieux dessein.</l>
           </sp>
-          <sp xml:id="I01-15" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-15">
             <speaker>POLLUX.</speaker>
             <l n="89" xml:id="l89">À me représenter ce tragique spectacle</l>
             <l n="90" xml:id="l90">Qui fait un parricide et promet un miracle,</l>
             <l n="91" xml:id="l91">J'ai de l'horreur moi-même, et ne puis concevoir</l>
             <l n="92" xml:id="l92">Qu'un esprit jusque-là se laisse décevoir.</l>
           </sp>
-          <sp xml:id="I01-16" who="JASON">
+          <sp who="JASON" xml:id="I01-16">
             <speaker>JASON.</speaker>
             <l n="93" xml:id="l93">Ainsi mon père Aeson recouvra sa jeunesse,</l>
             <l n="94" xml:id="l94">Mais oyez le surplus. Ce grand courage cesse,</l>
@@ -286,7 +287,7 @@
             <l n="136" xml:id="l136">Avec Médée et moi les tire du tombeau,</l>
             <l n="137" xml:id="l137">Eux seuls m'ont fait résoudre, et la paix s'est conclue.</l>
           </sp>
-          <sp xml:id="I01-17" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-17">
             <speaker>POLLUX.</speaker>
             <l n="138" xml:id="l138">Bien que de tous côtés l'affaire résolue</l>
             <l n="139" xml:id="l139">Ne laisse aucune place aux conseils d'un ami,</l>
@@ -297,31 +298,31 @@
             <l n="144" xml:id="l144">Il faut craindre après tout son courage offensé,</l>
             <l n="145" xml:id="l145">Vous savez mieux que moi ce que peuvent ses charmes.</l>
           </sp>
-          <sp xml:id="I01-18" who="JASON">
+          <sp who="JASON" xml:id="I01-18">
             <speaker>JASON.</speaker>
             <l n="146" xml:id="l146">Ce sont à sa fureur d'épouvantables armes,</l>
             <l n="147" xml:id="l147">Mais son bannissement nous en va garantir.</l>
           </sp>
-          <sp xml:id="I01-19" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-19">
             <speaker>POLLUX.</speaker>
             <l n="148" xml:id="l148">Gardez d'avoir sujet de vous en repentir.</l>
           </sp>
-          <sp xml:id="I01-20" who="JASON">
+          <sp who="JASON" xml:id="I01-20">
             <speaker>JASON.</speaker>
             <l n="149" xml:id="l149">Quoi qu'il puisse arriver, ami, c'est chose faite.</l>
           </sp>
-          <sp xml:id="I01-21" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-21">
             <speaker>POLLUX.</speaker>
             <l n="150" xml:id="l150">La termine le ciel comme je le souhaite,</l>
             <l n="151" xml:id="l151">Permettez cependant qu'afin de m'acquitter</l>
             <l n="152" xml:id="l152">J'aille trouver le roi pour l'en féliciter.</l>
           </sp>
-          <sp xml:id="I01-22" who="JASON">
+          <sp who="JASON" xml:id="I01-22">
             <speaker>JASON.</speaker>
             <l n="153" xml:id="l153">Je vous y conduirais, mais j'attends ma princesse,</l>
-            <l n="154" xml:id="l154" part="I">Qui va sortir du temple.</l>
+            <l n="154" part="I" xml:id="l154">Qui va sortir du temple.</l>
           </sp>
-          <sp xml:id="I01-23" who="POLLUX">
+          <sp who="POLLUX" xml:id="I01-23">
             <speaker>POLLUX.</speaker>
             <l part="F">Adieu : l'amour vous presse,</l>
             <note type="L">Marri : Repentant, fâché, qui a du regret d'avoir fait quelque chose. [F]</note>
@@ -329,9 +330,9 @@
             <l n="156" xml:id="l156">Vous fît perdre pour moi des temps si précieux.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II.</head>
-          <sp xml:id="I02-1" who="JASON">
+          <sp who="JASON" xml:id="I02-1">
             <speaker>JASON.</speaker>
             <l n="157" xml:id="l157">Depuis que mon esprit est capable de flamme,</l>
             <l n="158" xml:id="l158">Jamais un trouble égal ne confondit mon âme :</l>
@@ -351,19 +352,19 @@
             <l n="172" xml:id="l172">D'avoir osé tenir contre tant de beauté.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Jason, Créuse, Cléone.</head>
-          <sp xml:id="I03-1" who="JASON">
+          <sp who="JASON" xml:id="I03-1">
             <speaker>JASON.</speaker>
             <l n="173" xml:id="l173">Que vos dévotions d'un longue souffrance</l>
             <l n="174" xml:id="l174">Gênent un pauvre amant, qui meurt en votre absence !</l>
           </sp>
-          <sp xml:id="I03-2" who="CREUSE">
+          <sp who="CREUSE" xml:id="I03-2">
             <speaker>CRÉUSE.</speaker>
             <l n="175" xml:id="l175">Je n'avais pourtant rien à demander aux Dieux,</l>
             <l n="176" xml:id="l176">Ayant Jason à moi, j'ai tout ce que je veux.</l>
           </sp>
-          <sp xml:id="I03-3" who="JASON">
+          <sp who="JASON" xml:id="I03-3">
             <speaker>JASON.</speaker>
             <l n="177" xml:id="l177">Et moi, puis-je espérer l'effet d'une prière</l>
             <l n="178" xml:id="l178">Que ma flamme tiendrait à faveur singulière,</l>
@@ -374,23 +375,23 @@
             <l n="183" xml:id="l183">C'est lui seul qui bannit ces petits malheureux,</l>
             <l n="184" xml:id="l184">Puisque dans les traités il n'est point parlé d'eux.</l>
           </sp>
-          <sp xml:id="I03-4" who="CREUSE">
+          <sp who="CREUSE" xml:id="I03-4">
             <speaker>CRÉUSE.</speaker>
             <l n="185" xml:id="l185">J'avais déjà pitié de leur tendre innocence,</l>
             <l n="186" xml:id="l186">Et vous y servirai de toute ma puissance,</l>
             <l n="187" xml:id="l187">Pourvu qu'à votre tour vous m'accordiez un point</l>
             <l n="188" xml:id="l188">Que jusques à tantôt je ne vous dirai point.</l>
           </sp>
-          <sp xml:id="I03-5" who="JASON">
+          <sp who="JASON" xml:id="I03-5">
             <speaker>JASON.</speaker>
             <l n="189" xml:id="l189">Dites, et quel qu'il soit, que ma reine en dispose.</l>
           </sp>
-          <sp xml:id="I03-6" who="CREUSE">
+          <sp who="CREUSE" xml:id="I03-6">
             <speaker>CRÉUSE.</speaker>
             <l n="190" xml:id="l190">Si je puis sur mon père obtenir quelque chose,</l>
             <l n="191" xml:id="l191">Vous le saurez après, je ne veux rien pour rien.</l>
           </sp>
-          <sp xml:id="I03-7" who="CLEONE">
+          <sp who="CLEONE" xml:id="I03-7">
             <speaker>CLÉONE.</speaker>
             <l n="192" xml:id="l192">Vous pourrez au palais suivre cet entretien,</l>
             <l n="193" xml:id="l193">On ouvre chez Médée, ôtez-vous de sa vue,</l>
@@ -399,9 +400,9 @@
             <l n="196" xml:id="l196">Mêlât son amertume à des plaisirs si doux.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I04">
           <head>SCÈNE III.</head>
-          <sp xml:id="I04-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="I04-1">
             <speaker>MÉDÉE.</speaker>
             <l n="197" xml:id="l197">Souverains protecteurs des lois de l'hyménée,</l>
             <l n="198" xml:id="l198">Dieux garants de la foi que Jason m'a donnée,</l>
@@ -482,9 +483,9 @@
             <l n="268" xml:id="l268">L'Isthme n'empêche plus les deux mers de s'unir.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Médée, Nérine.</head>
-          <sp xml:id="I05-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-1">
             <speaker>MÉDÉE.</speaker>
             <l n="269" xml:id="l269">Eh bien, Nérine, à quand, à quand cet hyménée ?</l>
             <l n="270" xml:id="l270">En ont-ils choisi l'heure ? En sais-tu la journée ?</l>
@@ -495,7 +496,7 @@
             <l n="275" xml:id="l275">Il verra, le perfide, à quel comble d'horreur</l>
             <l n="276" xml:id="l276">De mes ressentiments peut monter la fureur.</l>
           </sp>
-          <sp xml:id="I05-2" who="NERINE">
+          <sp who="NERINE" xml:id="I05-2">
             <speaker>NÉRINE.</speaker>
             <l n="277" xml:id="l277">Modérez les bouillons de cette violence,</l>
             <l n="278" xml:id="l278">Et laissez déguiser vos douleurs au silence,</l>
@@ -510,7 +511,7 @@
             <l n="287" xml:id="l287">Et sa feinte douceur, sous un appas mortel,</l>
             <l n="288" xml:id="l288">Mène insensiblement sa victime à l'autel.</l>
           </sp>
-          <sp xml:id="I05-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-3">
             <speaker>MÉDÉE.</speaker>
             <l n="289" xml:id="l289">Tu veux que je me taise et que je dissimule !</l>
             <l n="290" xml:id="l290">Nérine, porte ailleurs ce conseil ridicule,</l>
@@ -519,79 +520,78 @@
             <l n="293" xml:id="l293">Jason m'a fait trahir mon pays et mon père,</l>
             <l n="294" xml:id="l294">Et me laisse au milieu d'une terre étrangère,</l>
             <l n="295" xml:id="l295">Sans support, sans amis, sans retraite, sans bien,</l>
-            <note typ="L">Fable : Sujet de malins récits. [L]</note>
+            <note type="L">Fable : Sujet de malins récits. [L]</note>
             <l n="296" xml:id="l296">La fable de son peuple, et la haine du mien :</l>
             <l n="297" xml:id="l297">Nérine, après cela, tu veux que je me taise !</l>
             <l n="298" xml:id="l298">Ne dois-je point encore en témoigner de l'aise,</l>
             <l n="299" xml:id="l299">De ce royal hymen souhaiter l'heureux jour,</l>
             <l n="300" xml:id="l300">Et forcer tous mes soins à servir son amour ?</l>
           </sp>
-          <sp xml:id="I05-4" who="NERINE">
+          <sp who="NERINE" xml:id="I05-4">
             <speaker>NÉRINE.</speaker>
             <l n="301" xml:id="l301">Madame, pensez mieux à l'éclat que vous faites :</l>
             <l n="302" xml:id="l302">Quelque juste qu'il soit, regardez où vous êtes ;</l>
             <l n="303" xml:id="l303">Considérez qu'à peine un esprit plus remis</l>
             <l n="304" xml:id="l304">Vous tient en sûreté parmi vos ennemis.</l>
           </sp>
-          <sp xml:id="I05-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-5">
             <speaker>MÉDÉE.</speaker>
             <l n="305" xml:id="l305">L'âme doit se raidir plus elle est menacée,</l>
             <l n="306" xml:id="l306">Et contre la fortune aller tête baissée,</l>
-            <note tye="L">Hardiment : Avec hardiesse, [qui est la] qualité de
-celui qui est hardi, qui ose beaucoup. [L]</note>
+            <note type="L">Hardiment : Avec hardiesse, [qui est la] qualité de celui qui est hardi, qui ose beaucoup. [L]</note>
             <l n="307" xml:id="l307">La choquer hardiment, et sans craindre la mort</l>
             <l n="308" xml:id="l308">Se présenter de front à son plus rude effort,</l>
             <l n="309" xml:id="l309">Cette lâche ennemie a peur des grands courages,</l>
             <l n="310" xml:id="l310">Et sur ceux qu'elle abat redouble ses outrages.</l>
           </sp>
-          <sp xml:id="I05-6" who="NERINE">
+          <sp who="NERINE" xml:id="I05-6">
             <speaker>NÉRINE.</speaker>
             <l n="311" xml:id="l311">Que sert ce grand courage où l'on est sans pouvoir ?</l>
           </sp>
-          <sp xml:id="I05-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-7">
             <speaker>MÉDÉE.</speaker>
             <l n="312" xml:id="l312">Il trouve toujours lieu de se faire valoir.</l>
           </sp>
-          <sp xml:id="I05-8" who="NERINE">
+          <sp who="NERINE" xml:id="I05-8">
             <speaker>NÉRINE.</speaker>
             <note type="L">Forcer : Surmonter, vaincre. [L]</note>
             <l n="313" xml:id="l313">Forcez l'aveuglement dont vous êtes séduite,</l>
             <l n="314" xml:id="l314">Pour voir en quel état le sort vous a réduite,</l>
             <l n="315" xml:id="l315">Votre pays vous hait, votre époux est sans foi,</l>
-            <l n="316" xml:id="l316" part="I">Dans un si grand revers que vous reste-t-il ?</l>
+            <l n="316" part="I" xml:id="l316">Dans un si grand revers que vous reste-t-il ?</l>
           </sp>
-          <sp xml:id="I05-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-9">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Moi,</l>
-            <l n="317" xml:id="l317" part="I">Moi dis-je, et c'est assez.</l>
+            <l n="317" part="I" xml:id="l317">Moi dis-je, et c'est assez.</l>
           </sp>
-          <sp xml:id="I05-10" who="NERINE">
+          <sp who="NERINE" xml:id="I05-10">
             <speaker>NÉRINE.</speaker>
             <l part="F">Quoi ! Vous seule, madame ?</l>
           </sp>
-          <sp xml:id="I05-11" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-11">
             <speaker>MÉDÉE.</speaker>
             <l n="318" xml:id="l318">Oui, tu vois en moi seule, et le fer, et la flamme,</l>
             <l n="319" xml:id="l319">Et la terre, et la mer, et l'enfer, et les Cieux,</l>
             <note type="C">Le mot foudre est autant masculin que féminin au XVIIème comme signalé par Furetière dans son Dictionnaire universel, Tome second.</note>
             <l n="320" xml:id="l320">Et le sceptre des Rois, et le foudre des Dieux.</l>
           </sp>
-          <sp xml:id="I05-12" who="NERINE">
+          <sp who="NERINE" xml:id="I05-12">
             <speaker>NÉRINE.</speaker>
             <l n="321" xml:id="l321">L'impétueuse ardeur d'un courage sensible</l>
             <l n="322" xml:id="l322">À vos ressentiments figure tout possible,</l>
             <l n="323" xml:id="l323">Mais il faut craindre un Roi fort de tant de sujets.</l>
           </sp>
-          <sp xml:id="I05-13" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-13">
             <speaker>MÉDÉE.</speaker>
             <l n="324" xml:id="l324">Mon père qui l'était rompit-il mes projets ?</l>
           </sp>
-          <sp xml:id="I05-14" who="NERINE">
+          <sp who="NERINE" xml:id="I05-14">
             <speaker>NÉRINE.</speaker>
             <l n="325" xml:id="l325">Non, mais il fut surpris, et Créon se défie.</l>
             <l n="326" xml:id="l326">Fuyez, qu'à ses soupçons il ne vous sacrifie.</l>
           </sp>
-          <sp xml:id="I05-15" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-15">
             <speaker>MÉDÉE.</speaker>
             <note type="L">Las : Lnterjection plaintive. [L]</note>
             <l n="327" xml:id="l327">Las ! Je n'ai que trop fui, cette infidélité</l>
@@ -602,11 +602,11 @@ celui qui est hardi, qui ose beaucoup. [L]</note>
             <l n="331" xml:id="l331">Il n'eût point vu Créuse, et cet objet nouveau</l>
             <l n="332" xml:id="l332">N'eût point de notre hymen étouffé le flambeau.</l>
           </sp>
-          <sp xml:id="I05-16" who="NERINE">
+          <sp who="NERINE" xml:id="I05-16">
             <speaker>NÉRINE.</speaker>
-            <l n="333" xml:id="l333" part="I">Fuyez encore de grâce.</l>
+            <l n="333" part="I" xml:id="l333">Fuyez encore de grâce.</l>
           </sp>
-          <sp xml:id="I05-17" who="MEDEE">
+          <sp who="MEDEE" xml:id="I05-17">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Oui, je fuirai, Nérine,</l>
             <l n="334" xml:id="l334">Mais avant de Créon on verra la ruine.</l>
@@ -615,7 +615,7 @@ celui qui est hardi, qui ose beaucoup. [L]</note>
             <l n="337" xml:id="l337">Sois seulement fidèle, et sans te mettre en peine</l>
             <l n="338" xml:id="l338">Laisse agir pleinement mon savoir et ma haine.</l>
           </sp>
-          <sp xml:id="I05-18" who="NERINE">
+          <sp who="NERINE" xml:id="I05-18">
             <speaker>NÉRINE, seule.</speaker>
             <l n="339" xml:id="l339">Madame. Elle s'enfuit au lieu de m'écouter,</l>
             <l n="340" xml:id="l340">Ces violents transports la vont précipiter,</l>
@@ -626,11 +626,11 @@ celui qui est hardi, qui ose beaucoup. [L]</note>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Médée, Nérine.</head>
-          <sp xml:id="II01-1" who="NERINE">
+          <sp who="NERINE" xml:id="II01-1">
             <speaker>NÉRINE.</speaker>
             <l n="345" xml:id="l345">Bien qu'un péril certain suive votre entreprise,</l>
             <l n="346" xml:id="l346">Assurez-vous sur moi, je vous suis toute acquise,</l>
@@ -640,7 +640,7 @@ celui qui est hardi, qui ose beaucoup. [L]</note>
             <l n="350" xml:id="l350">Le regret de sa mort vous coûterait la vie,</l>
             <l n="351" xml:id="l351">Et les coups violents d'un rigoureux ennui.</l>
           </sp>
-          <sp xml:id="II01-2" who="MEDEE">
+          <sp who="MEDEE" xml:id="II01-2">
             <speaker>MÉDÉE.</speaker>
             <l n="352" xml:id="l352">Cesse de m'en parler, et ne crains rien pour lui,</l>
             <l n="353" xml:id="l353">Ma fureur jusque-là n'oserait me séduire,</l>
@@ -661,14 +661,14 @@ celui qui est hardi, qui ose beaucoup. [L]</note>
             <l n="366" xml:id="l366">Eux seuls termineront toute la Tragédie,</l>
             <l n="367" xml:id="l367">Leur perte achèvera cette fatale paix.</l>
           </sp>
-          <sp xml:id="II01-3" who="NERINE">
+          <sp who="NERINE" xml:id="II01-3">
             <speaker>NÉRINE.</speaker>
             <l n="368" xml:id="l368">Contenez-vous Madame, il sort de son palais.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Créon, Médée, Nérine, soldats.</head>
-          <sp xml:id="II02-1" who="CREON">
+          <sp who="CREON" xml:id="II02-1">
             <speaker>CRÉON.</speaker>
             <l n="369" xml:id="l369">Quoi ? Je te vois encore ! Avec quelle impudence</l>
             <l n="370" xml:id="l370">Peux-tu, sans t'effrayer, soutenir ma présence ?</l>
@@ -680,16 +680,15 @@ celui qui est hardi, qui ose beaucoup. [L]</note>
             <l n="376" xml:id="l376">Va, purge mes États d'un monstre tel que toi,</l>
             <l n="377" xml:id="l377">Délivre mes sujets, et moi-même de crainte.</l>
           </sp>
-          <sp xml:id="II02-2" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-2">
             <speaker>MÉDÉE.</speaker>
             <l n="378" xml:id="l378">De quoi m'accuse-t-on ? Quel crime, quelle plainte</l>
             <l n="379" xml:id="l379">Vous porte à me chasser avecque tant d'ardeur ?</l>
           </sp>
-          <sp xml:id="II02-3" who="CREON">
+          <sp who="CREON" xml:id="II02-3">
             <speaker>CRÉON.</speaker>
             <l n="380" xml:id="l380">Ah l'innocence même, et la même candeur !</l>
-            <note type="L">Miroir : Fig. Ce qui représente une chose et la met pour ainsi dire sous
-nos yeux. [L]</note>
+            <note type="L">Miroir : Fig. Ce qui représente une chose et la met pour ainsi dire sous nos yeux. [L]</note>
             <l n="381" xml:id="l381">Médée est un miroir de vertu signalée,</l>
             <l n="382" xml:id="l382">Quelle inhumanité de l'avoir exilée !</l>
             <l n="383" xml:id="l383">Barbare as-tu sitôt oublié tant d'horreurs ?</l>
@@ -704,7 +703,7 @@ nos yeux. [L]</note>
             <l n="391" xml:id="l391">Va pratiquer ailleurs tes noires actions,</l>
             <l n="392" xml:id="l392">J'ai racheté la paix à ces conditions.</l>
           </sp>
-          <sp xml:id="II02-4" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-4">
             <speaker>MÉDÉE.</speaker>
             <l n="393" xml:id="l393">Lâche paix, qu'entre vous, sans m'avoir écoutée</l>
             <l n="394" xml:id="l394">Pour m'arracher mon bien vous avez complotée,</l>
@@ -713,12 +712,12 @@ nos yeux. [L]</note>
             <l n="397" xml:id="l397">Bien qu'il eut mille fois mérité le supplice,</l>
             <l n="398" xml:id="l398">D'un juste châtiment il fait une injustice.</l>
           </sp>
-          <sp xml:id="II02-5" who="CREON">
+          <sp who="CREON" xml:id="II02-5">
             <speaker>CRÉON.</speaker>
             <l n="399" xml:id="l399">Au regard de Pélie, il fut bien mieux traité,</l>
             <l n="400" xml:id="l400">Avant que l'égorger tu l'avais écouté ?</l>
           </sp>
-          <sp xml:id="II02-6" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-6">
             <speaker>MÉDÉE.</speaker>
             <l n="401" xml:id="l401">Écouta-t-il Jason, quand sa haine couverte</l>
             <l n="402" xml:id="l402">L'envoya sur nos bords se livrer à sa perte,</l>
@@ -770,11 +769,11 @@ nos yeux. [L]</note>
             <l n="445" xml:id="l445">Est-ce user comme il faut d'un pouvoir légitime,</l>
             <l n="446" xml:id="l446">Que me faire coupable et jouir de mon crime ?</l>
           </sp>
-          <sp xml:id="II02-7" who="CREON">
+          <sp who="CREON" xml:id="II02-7">
             <speaker>CRÉON.</speaker>
-            <l n="447" xml:id="l447" part="I">Va te plaindre à Colchos.</l>
+            <l n="447" part="I" xml:id="l447">Va te plaindre à Colchos.</l>
           </sp>
-          <sp xml:id="II02-8" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-8">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Le retour m'y plaira.</l>
             <l n="448" xml:id="l448">Que Jason m'y remette ainsi qu'il m'en tira,</l>
@@ -785,7 +784,7 @@ nos yeux. [L]</note>
             <l n="453" xml:id="l453">Vous voulez qu'on l'honore, et que de deux complices</l>
             <l n="454" xml:id="l454">L'un ait votre couronne, et l'autre des supplices.</l>
           </sp>
-          <sp xml:id="II02-9" who="CREON">
+          <sp who="CREON" xml:id="II02-9">
             <speaker>CRÉON.</speaker>
             <l n="455" xml:id="l455">Cesse de plus mêler ton intérêt au sien,</l>
             <l n="456" xml:id="l456">Ton Jason pris à part est trop homme de bien,</l>
@@ -800,7 +799,7 @@ nos yeux. [L]</note>
             <l n="465" xml:id="l465">Tes herbes, tes poisons, ton coeur impitoyable,</l>
             <l n="466" xml:id="l466">Tout ce qui me fait craindre, et rend Jason coupable.</l>
           </sp>
-          <sp xml:id="II02-10" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-10">
             <speaker>MÉDÉE.</speaker>
             <note type="L">Noire : Fig. Méchant, avec mélange de trahison, de perfidie, en parlant des choses. [L]</note>
             <note type="L">Peindre : Fig. Décrire, représenter vivement par le discours. [L]</note>
@@ -823,17 +822,17 @@ nos yeux. [L]</note>
             <l n="483" xml:id="l483">Sinon, à quel propos me traitez-vous ainsi ?</l>
             <l n="484" xml:id="l484">Je suis coupable ailleurs, mais innocente ici.</l>
           </sp>
-          <sp xml:id="II02-11" who="CREON">
+          <sp who="CREON" xml:id="II02-11">
             <speaker>CRÉON.</speaker>
             <l n="485" xml:id="l485">Je ne veux plus ici d'une telle innocence,</l>
             <l n="486" xml:id="l486">Ni souffrir en ma cour ta fatale présence.</l>
-            <l n="487" xml:id="l487" part="I">Va...</l>
+            <l n="487" part="I" xml:id="l487">Va...</l>
           </sp>
-          <sp xml:id="II02-12" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-12">
             <speaker>MÉDÉE.</speaker>
             <l part="M">Dieux, justes vengeurs !</l>
           </sp>
-          <sp xml:id="II02-13" who="CREON">
+          <sp who="CREON" xml:id="II02-13">
             <speaker>CRÉON.</speaker>
             <l part="F">Va, dis-je, en d'autres lieux</l>
             <l n="488" xml:id="l488">Par tes cris importuns solliciter les Dieux.</l>
@@ -842,25 +841,25 @@ nos yeux. [L]</note>
             <l n="491" xml:id="l491">Et bien que je le pusse avec juste raison,</l>
             <l n="492" xml:id="l492">Ma fille les demande en faveur de Jason.</l>
           </sp>
-          <sp xml:id="II02-14" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-14">
             <speaker>MÉDÉE.</speaker>
             <l n="493" xml:id="l493">Barbare humanité, qui m'arrache à moi-même,</l>
             <l n="494" xml:id="l494">Et feint de la douceur pour m'ôter ce que j'aime !</l>
             <l n="495" xml:id="l495">Si Jason et Créuse ainsi l'ont ordonné,</l>
             <l n="496" xml:id="l496">Qu'ils me rendent le sang que je leur ai donné.</l>
           </sp>
-          <sp xml:id="II02-15" who="CREON">
+          <sp who="CREON" xml:id="II02-15">
             <speaker>CRÉON.</speaker>
             <l n="497" xml:id="l497">Ne me réplique plus, suis la loi qui t'est faite ;</l>
             <l n="498" xml:id="l498">Prépare ton départ, et pense à ta retraite,</l>
             <l n="499" xml:id="l499">Pour en délibérer, et choisir le quartier,</l>
             <l n="500" xml:id="l500">De grâce ma bonté te donne un jour entier.</l>
           </sp>
-          <sp xml:id="II02-16" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-16">
             <speaker>MÉDÉE.</speaker>
-            <l n="501" xml:id="l501" part="I">Quelle grâce !</l>
+            <l n="501" part="I" xml:id="l501">Quelle grâce !</l>
           </sp>
-          <sp xml:id="II02-17" who="CREON">
+          <sp who="CREON" xml:id="II02-17">
             <speaker>CRÉON.</speaker>
             <l part="F">Soldats, remettez-la chez elle,</l>
             <l n="502" xml:id="l502">Sa contestation se rendrait éternelle.</l>
@@ -873,9 +872,9 @@ nos yeux. [L]</note>
             <l n="508" xml:id="l508">En a-t-il arraché quelque soumission ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Créon, Jason, Créuse, Cléone, soldats.</head>
-          <sp xml:id="II03-1" who="CREON">
+          <sp who="CREON" xml:id="II03-1">
             <speaker>CRÉON.</speaker>
             <l n="509" xml:id="l509">Te voilà sans rivale, et mon pays sans guerres,</l>
             <l n="510" xml:id="l510">Ma fille, c'est demain qu'elle sort de ma terre.</l>
@@ -886,7 +885,7 @@ nos yeux. [L]</note>
             <l n="515" xml:id="l515">Fais état que demain nous assure à jamais</l>
             <l n="516" xml:id="l516">Et dedans et dehors une profonde paix.</l>
           </sp>
-          <sp xml:id="II03-2" who="CREUSE">
+          <sp who="CREUSE" xml:id="II03-2">
             <speaker>CRÉUSE.</speaker>
             <l n="517" xml:id="l517">Je ne crois pas, Seigneur, que ce vieux roi d'Athènes</l>
             <l n="518" xml:id="l518">Voyant aux mains d'autrui le fruit de tant de peines,</l>
@@ -897,7 +896,7 @@ nos yeux. [L]</note>
             <l n="523" xml:id="l523">Dont l'âge peu sortable et l'inclination</l>
             <l n="524" xml:id="l524">Répondaient assez mal à son affection.</l>
           </sp>
-          <sp xml:id="II03-3" who="JASON">
+          <sp who="JASON" xml:id="II03-3">
             <speaker>JASON.</speaker>
             <l n="525" xml:id="l525">Il doit vous témoigner par son obéissance</l>
             <l n="526" xml:id="l526">Combien sur son esprit vous avez de puissance,</l>
@@ -906,7 +905,7 @@ nos yeux. [L]</note>
             <l n="529" xml:id="l529">Et nos préparatifs contre la Thessalie</l>
             <l n="530" xml:id="l530">Ne sont que trop bâtants à ranger sa folie.</l>
           </sp>
-          <sp xml:id="II03-4" who="CREON">
+          <sp who="CREON" xml:id="II03-4">
             <speaker>CRÉON.</speaker>
             <l n="531" xml:id="l531">Nous n'en viendrons pas là, regarde seulement</l>
             <l n="532" xml:id="l532">À le payer d'estime et de remerciement.</l>
@@ -920,9 +919,9 @@ nos yeux. [L]</note>
             <l n="540" xml:id="l540">Surtout ne le reçois qu'avec civilité.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Jason, Créuse, Cléone.</head>
-          <sp xml:id="II04-1" who="JASON">
+          <sp who="JASON" xml:id="II04-1">
             <speaker>JASON.</speaker>
             <l n="541" xml:id="l541">Que ne vous dois-je point pour cette préférence,</l>
             <l n="542" xml:id="l542">Où mes désirs n'osaient porter mon espérance !</l>
@@ -932,7 +931,7 @@ nos yeux. [L]</note>
             <l n="546" xml:id="l546">Tourner en ma faveur les volontés d'un père !</l>
             <l n="547" xml:id="l547">Garantir mes enfants d'un exil rigoureux !</l>
           </sp>
-          <sp xml:id="II04-2" who="CREUSE">
+          <sp who="CREUSE" xml:id="II04-2">
             <speaker>CRÉUSE.</speaker>
             <l n="548" xml:id="l548">Qu'a pu faire de moindre un courage amoureux ?</l>
             <l n="549" xml:id="l549">La fortune a montré dedans votre naissance</l>
@@ -952,14 +951,14 @@ nos yeux. [L]</note>
             <note type="L">Phénix : Fig. Personne unique dans son genre, supérieure aux autres. [L]</note>
             <l n="562" xml:id="l562">Prête de posséder le phénix de la Grèce,</l>
             <l n="563" xml:id="l563">La fleur de nos guerriers, le sang de tant de Dieux,</l>
-            <note tyep="L">Donner dans : Se plaire excessivement à. [L]</note>
+            <note type="L">Donner dans : Se plaire excessivement à. [L]</note>
             <l n="564" xml:id="l564">La robe de Médée a donné dans mes yeux.</l>
             <l n="565" xml:id="l565">Mon caprice à son lustre attachant mon envie</l>
             <l n="566" xml:id="l566">Sans elle trouve à dire au bonheur de ma vie,</l>
             <l n="567" xml:id="l567">C'est ce qu'ont prétendu mes desseins relevés</l>
             <l n="568" xml:id="l568">Pour le prix des enfants que je vous ai sauvés.</l>
           </sp>
-          <sp xml:id="II04-3" who="JASON">
+          <sp who="JASON" xml:id="II04-3">
             <speaker>JASON.</speaker>
             <l n="569" xml:id="l569">Que ce prix est léger pour un si bon office !</l>
             <l n="570" xml:id="l570">Il y faut toutefois employer l'artifice :</l>
@@ -969,7 +968,7 @@ nos yeux. [L]</note>
             <l n="573" xml:id="l573">Des trésors dont son père épuise la Scythie,</l>
             <l n="574" xml:id="l574">C'est tout ce qu'elle a pris quand elle en est sortie.</l>
           </sp>
-          <sp xml:id="II04-4" who="CREUSE">
+          <sp who="CREUSE" xml:id="II04-4">
             <speaker>CRÉUSE.</speaker>
             <l n="575" xml:id="l575">Qu'elle a fait un beau choix ! Jamais éclat pareil</l>
             <l n="576" xml:id="l576">Ne sema dans la nuit les clartés du Soleil ;</l>
@@ -987,7 +986,7 @@ nos yeux. [L]</note>
             <l n="587" xml:id="l587">Lui met à l'abandon tous les trésors du roi,</l>
             <l n="588" xml:id="l588">Pourvu que cette robe, et Jason soient à moi.</l>
           </sp>
-          <sp xml:id="II04-5" who="JASON">
+          <sp who="JASON" xml:id="II04-5">
             <speaker>JASON.</speaker>
             <l n="589" xml:id="l589">N'en doutez point ma Reine, elle vous est acquise</l>
             <l n="590" xml:id="l590">Je vais chercher Nérine, et par son entremise</l>
@@ -1007,27 +1006,27 @@ nos yeux. [L]</note>
             <l n="603" xml:id="l603">Souffrez, pour avancer votre contentement</l>
             <l n="604" xml:id="l604">Que malgré mon amour je vous quitte un moment.</l>
           </sp>
-          <sp xml:id="II04-6" who="CLEONE">
+          <sp who="CLEONE" xml:id="II04-6">
             <speaker>CLÉONE.</speaker>
             <l n="605" xml:id="l605">Madame, j'aperçois venir le Roi d'Athènes.</l>
           </sp>
-          <sp xml:id="II04-7" who="CREUSE">
+          <sp who="CREUSE" xml:id="II04-7">
             <speaker>CRÉUSE.</speaker>
             <l n="606" xml:id="l606">Allez donc, votre vue augmenterait ses peines.</l>
           </sp>
-          <sp xml:id="II04-8" who="CLEONE">
+          <sp who="CLEONE" xml:id="II04-8">
             <speaker>CLÉONE.</speaker>
             <l n="607" xml:id="l607">Souvenez-vous de l'air dont il le faut traiter.</l>
           </sp>
-          <sp xml:id="II04-9" who="CREUSE">
+          <sp who="CREUSE" xml:id="II04-9">
             <speaker>CRÉUSE.</speaker>
             <note type="L">Accortement : De manière accorte. Qui est de gentil esprit, qui est à la fois avisé et gracieux. [L]</note>
             <l n="608" xml:id="l608">Ma bouche accortement saura s'en acquitter.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. AEgée, Créuse, Cléone.</head>
-          <sp xml:id="II05-1" who="AEGEE">
+          <sp who="AEGEE" xml:id="II05-1">
             <speaker>AEGÉE.</speaker>
             <l n="609" xml:id="l609">Sur un bruit qui m'étonne et que je ne puis croire</l>
             <l n="610" xml:id="l610">Madame, mon amour jaloux de votre gloire,</l>
@@ -1043,7 +1042,7 @@ nos yeux. [L]</note>
             <l n="619" xml:id="l619">Et qu'il faille ajouter à vos titres d'honneur,</l>
             <l n="620" xml:id="l620">Femme d'un assassin et d'un empoisonneur.</l>
           </sp>
-          <sp xml:id="II05-2" who="CREUSE">
+          <sp who="CREUSE" xml:id="II05-2">
             <speaker>CRÉUSE.</speaker>
             <l n="621" xml:id="l621">Laissez agir, grand Roi, la raison sur votre âme,</l>
             <l n="622" xml:id="l622">Et ne le chargez point des crimes de sa femme.</l>
@@ -1070,7 +1069,7 @@ nos yeux. [L]</note>
             <l n="641" xml:id="l641">D'abord dans mon esprit vous eûtes ce partage,</l>
             <l n="642" xml:id="l642">Je vous estimai plus, et l'aimai davantage.</l>
           </sp>
-          <sp xml:id="II05-3" who="AEGEE">
+          <sp who="AEGEE" xml:id="II05-3">
             <speaker>AEGÉE.</speaker>
             <l n="643" xml:id="l643">Gardez ces compliments pour de moins enflammés,</l>
             <l n="644" xml:id="l644">Et ne m'estimez point qu'autant que vous m'aimez.</l>
@@ -1079,7 +1078,7 @@ nos yeux. [L]</note>
             <l n="647" xml:id="l647">N'accusez point l'amour ni son aveuglement,</l>
             <l n="648" xml:id="l648">Quand on connaît sa faute, on pèche doublement.</l>
           </sp>
-          <sp xml:id="II05-4" who="CREUSE">
+          <sp who="CREUSE" xml:id="II05-4">
             <speaker>CRÉUSE.</speaker>
             <l n="649" xml:id="l649">Puis donc que vous trouvez la mienne inexcusable,</l>
             <l n="650" xml:id="l650">Je ne veux plus, Seigneur, me confesser coupable.</l>
@@ -1106,7 +1105,7 @@ nos yeux. [L]</note>
             <l n="669" xml:id="l669">Et vous reconnaîtrez que je ne vous préfère</l>
             <l n="670" xml:id="l670">Que le bien de l'État, mon pays et mon père.</l>
           </sp>
-          <sp xml:id="II05-5" who="AEGEE">
+          <sp who="AEGEE" xml:id="II05-5">
             <speaker>AEGÉE.</speaker>
             <l n="671" xml:id="l671">Puisque mon mauvais sort à ce point me réduit,</l>
             <l n="672" xml:id="l672">Qu'au lieu de me servir ma couronne me nuit :</l>
@@ -1119,16 +1118,16 @@ nos yeux. [L]</note>
             <l n="679" xml:id="l679">Je hais ce nom de Roi qui s'oppose à mes voeux,</l>
             <l n="680" xml:id="l680">Et le titre d'esclave est le seul que je veux.</l>
           </sp>
-          <sp xml:id="II05-6" who="CREUSE">
+          <sp who="CREUSE" xml:id="II05-6">
             <speaker>CRÉUSE.</speaker>
             <l n="681" xml:id="l681">Sans plus vous emporter à cette complaisance </l>
             <l n="682" xml:id="l682">Perdez mon souvenir avecque ma présence,</l>
             <l n="683" xml:id="l683">Et puisque mes raisons ont si peu de pouvoir</l>
             <l n="684" xml:id="l684">Que votre émotion se redouble à me voir,</l>
             <l n="685" xml:id="l685">Afin de redonner le repos à votre âme,</l>
-            <l n="686" xml:id="l686" part="I">Souffrez que je vous quitte.</l>
+            <l n="686" part="I" xml:id="l686">Souffrez que je vous quitte.</l>
           </sp>
-          <sp xml:id="II05-7" who="AEGEE">
+          <sp who="AEGEE" xml:id="II05-7">
             <speaker>AEGÉE, seul.</speaker>
             <l part="F">Allez, allez, madame,</l>
             <l n="687" xml:id="l687">Étaler vos appas et vanter vos mépris</l>
@@ -1149,11 +1148,11 @@ nos yeux. [L]</note>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE.</head>
-          <sp xml:id="III01-1" who="NERINE">
+          <sp who="NERINE" xml:id="III01-1">
             <speaker>NÉRINE.</speaker>
             <l n="701" xml:id="l701">Malheureux instrument du malheur qui nous presse,</l>
             <l n="702" xml:id="l702">Que j'ai pitié de toi, déplorable princesse !</l>
@@ -1187,22 +1186,22 @@ nos yeux. [L]</note>
             <l n="728" xml:id="l728">Les desseins que je veux et n'ose traverser.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Jason, Nérine.</head>
-          <sp xml:id="III02-1" who="JASON">
+          <sp who="JASON" xml:id="III02-1">
             <speaker>JASON.</speaker>
             <l n="729" xml:id="l729">Nérine, et bien que dit notre pauvre exilée ?</l>
             <l n="730" xml:id="l730">Tes sages entretiens l'ont ils point consolée ?</l>
             <l n="731" xml:id="l731">Veut-elle bien céder à la nécessité ?</l>
           </sp>
-          <sp xml:id="III02-2" who="NERINE">
+          <sp who="NERINE" xml:id="III02-2">
             <speaker>NÉRINE.</speaker>
             <l n="732" xml:id="l732">Elle a bien refroidit son d'animosité ;</l>
             <l n="733" xml:id="l733">De moment en moment son âme plus humaine</l>
             <l n="734" xml:id="l734">Abaisse sa colère, et rabat de sa haine,</l>
             <l n="735" xml:id="l735">Déjà son déplaisir ne vous veut plus de mal.</l>
           </sp>
-          <sp xml:id="III02-3" who="JASON">
+          <sp who="JASON" xml:id="III02-3">
             <speaker>JASON.</speaker>
             <l n="736" xml:id="l736">Fais-lui prendre pour tous un sentiment égal,</l>
             <l n="737" xml:id="l737">Toi qui de mon amour connaissais la tendresse,</l>
@@ -1221,7 +1220,7 @@ nos yeux. [L]</note>
             <l n="749" xml:id="l749">Et malgré les malheurs où le sort l'a réduite</l>
             <l n="750" xml:id="l750">Soulageraient sa peine, et soutiendraient sa fuite.</l>
           </sp>
-          <sp xml:id="III02-4" who="NERINE">
+          <sp who="NERINE" xml:id="III02-4">
             <speaker>NÉRINE.</speaker>
             <l n="751" xml:id="l751">Puisqu'il faut se résoudre à ce bannissement,</l>
             <l n="752" xml:id="l752">Il faut en adoucir le mécontentement,</l>
@@ -1232,7 +1231,7 @@ nos yeux. [L]</note>
             <l n="757" xml:id="l757">L'objet de votre amour et de sa jalousie</l>
             <l n="758" xml:id="l758">De toutes ses fureurs l'aurait tôt ressaisie.</l>
           </sp>
-          <sp xml:id="III02-5" who="JASON">
+          <sp who="JASON" xml:id="III02-5">
             <speaker>JASON.</speaker>
             <l n="759" xml:id="l759">Pour montrer sans les voir son courage apaisé</l>
             <l n="760" xml:id="l760">Je te dirai, Nérine, un moyen fort aisé ;</l>
@@ -1257,9 +1256,9 @@ nos yeux. [L]</note>
             <l n="778" xml:id="l778">Ma rencontre la trouble je le vois qui s'irrite.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Médée, Jason, Nérine.</head>
-          <sp xml:id="III03-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-1">
             <speaker>MÉDÉE.</speaker>
             <l n="779" xml:id="l779">Ne fuyez pas, Jason, de ces funestes lieux,</l>
             <l n="780" xml:id="l780">C'est à moi d'en partir, recevez mes adieux.</l>
@@ -1315,7 +1314,7 @@ nos yeux. [L]</note>
             <l n="827" xml:id="l827">Et prendre une moitié qui n'a rien plus que moi</l>
             <l n="828" xml:id="l828">Que le bandeau royal que j'ai quitté pour toi.</l>
           </sp>
-          <sp xml:id="III03-2" who="JASON">
+          <sp who="JASON" xml:id="III03-2">
             <speaker>JASON.</speaker>
             <l n="829" xml:id="l829">Ah ! Que n'as-tu des yeux à lire dans mon âme,</l>
             <l n="830" xml:id="l830">Et voir les purs motifs de ma nouvelle flamme !</l>
@@ -1330,7 +1329,7 @@ nos yeux. [L]</note>
             <l n="839" xml:id="l839">C'est rendre la pareille à tes grands coups d'effort,</l>
             <l n="840" xml:id="l840">Tu m'as sauvé la vie, et j'empêche ta mort.</l>
           </sp>
-          <sp xml:id="III03-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-3">
             <speaker>MÉDÉE.</speaker>
             <l n="841" xml:id="l841">On ne m'a que bannie ! Ô bonté souveraine !</l>
             <l n="842" xml:id="l842">C'est donc une faveur, et non pas une peine !</l>
@@ -1341,54 +1340,54 @@ nos yeux. [L]</note>
             <l n="847" xml:id="l847">Quand il n'égorge point, il croit nous pardonner,</l>
             <l n="848" xml:id="l848">Et ce qu'il n'ôte pas, il pense le donner.</l>
           </sp>
-          <sp xml:id="III03-4" who="JASON">
+          <sp who="JASON" xml:id="III03-4">
             <speaker>JASON.</speaker>
             <l n="849" xml:id="l849">Tes discours, dont Créon de plus en plus s'offense</l>
             <l n="850" xml:id="l850">Le forceraient enfin à quelque violence,</l>
             <l n="851" xml:id="l851">Éloigne-toi d'ici tandis qu'il t'est permis,</l>
             <l n="852" xml:id="l852">Les Rois ne sont jamais de faibles ennemis.</l>
           </sp>
-          <sp xml:id="III03-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-5">
             <speaker>MÉDÉE.</speaker>
             <l n="853" xml:id="l853">À travers tes conseils je vois assez ta ruse,</l>
             <l n="854" xml:id="l854">Ce n'est là m'en donner qu'en faveur de Créuse.</l>
             <l n="855" xml:id="l855">Ton amour, déguisé d'un soin officieux,</l>
             <l n="856" xml:id="l856">D'un objet importun veut délivrer ses yeux.</l>
           </sp>
-          <sp xml:id="III03-6" who="JASON">
+          <sp who="JASON" xml:id="III03-6">
             <speaker>JASON.</speaker>
             <l n="857" xml:id="l857">N'appelle point amour un change inévitable</l>
             <l n="858" xml:id="l858">Où Créuse fait moins que le sort qui m'accable.</l>
           </sp>
-          <sp xml:id="III03-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-7">
             <speaker>MÉDÉE.</speaker>
             <l n="859" xml:id="l859">Peux-tu bien, sans rougir, désavouer tes feux ?</l>
           </sp>
-          <sp xml:id="III03-8" who="JASON">
+          <sp who="JASON" xml:id="III03-8">
             <speaker>JASON.</speaker>
             <l n="860" xml:id="l860">Eh bien soit, ses attraits captivent tous mes voeux :</l>
             <note type="L">Furtif : Qui se fait comme un vol, en cachette, à la dérobée. Entrer d'un pas furtif. Regard furtif. OEillades furtives. [L]</note>
             <l n="861" xml:id="l861">Toi qu'un amour furtif souilla de tant de crimes</l>
             <l n="862" xml:id="l862">M'oses-tu reprocher des ardeurs légitimes ?</l>
           </sp>
-          <sp xml:id="III03-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-9">
             <speaker>MÉDÉE.</speaker>
-            <l n="863" xml:id="l863" part="I">Oui, je te les reproche, et de plus...</l>
+            <l n="863" part="I" xml:id="l863">Oui, je te les reproche, et de plus...</l>
           </sp>
-          <sp xml:id="III03-10" who="JASON">
+          <sp who="JASON" xml:id="III03-10">
             <speaker>JASON.</speaker>
             <l part="F">Quels forfaits ?</l>
           </sp>
-          <sp xml:id="III03-11" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-11">
             <speaker>MÉDÉE.</speaker>
             <l n="864" xml:id="l864">La trahison, le meurtre, et tous ceux que j'ai faits.</l>
           </sp>
-          <sp xml:id="III03-12" who="JASON">
+          <sp who="JASON" xml:id="III03-12">
             <speaker>JASON.</speaker>
             <l n="865" xml:id="l865">Il manque encore ce point à mon sort déplorable</l>
             <l n="866" xml:id="l866">Que de tes cruautés on me fasse coupable.</l>
           </sp>
-          <sp xml:id="III03-13" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-13">
             <speaker>MÉDÉE.</speaker>
             <l n="867" xml:id="l867">Tu présumes en vain de t'en mettre à couvert,</l>
             <l n="868" xml:id="l868">Celui-là fait le crime à qui le crime sert.</l>
@@ -1397,23 +1396,23 @@ nos yeux. [L]</note>
             <l n="871" xml:id="l871">Toi seul, dont ses forfaits ont fait tout le bonheur,</l>
             <l n="872" xml:id="l872">Tiens-la pour innocente, et défends son honneur.</l>
           </sp>
-          <sp xml:id="III03-14" who="JASON">
+          <sp who="JASON" xml:id="III03-14">
             <speaker>JASON.</speaker>
             <l n="873" xml:id="l873">J'ai honte de ma vie, et je hais son usage</l>
             <l n="874" xml:id="l874">Depuis que je la dois aux effets de ta rage.</l>
           </sp>
-          <sp xml:id="III03-15" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-15">
             <speaker>MÉDÉE.</speaker>
             <l n="875" xml:id="l875">La honte généreuse, et la haute vertu !</l>
             <l n="876" xml:id="l876">Si tu la hais si fort pourquoi la gardes-tu ?</l>
           </sp>
-          <sp xml:id="III03-16" who="JASON">
+          <sp who="JASON" xml:id="III03-16">
             <speaker>JASON.</speaker>
             <l n="877" xml:id="l877">Au bien de nos enfants, dont l'âge faible et tendre</l>
             <l n="878" xml:id="l878">Contre tant de malheurs ne saurait se défendre,</l>
             <l n="879" xml:id="l879">Deviens en leur faveur d'un naturel plus doux.</l>
           </sp>
-          <sp xml:id="III03-17" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-17">
             <speaker>MÉDÉE.</speaker>
             <l n="880" xml:id="l880">Mon âme à leur sujet redouble son courroux,</l>
             <l n="881" xml:id="l881">Faut-il ce déshonneur pour comble à mes misères</l>
@@ -1421,43 +1420,43 @@ nos yeux. [L]</note>
             <l n="883" xml:id="l883">Tu vas mêler, impie, et mettre en rang pareil</l>
             <l n="884" xml:id="l884">Des neveux de Sisyphe avec ceux du Soleil !</l>
           </sp>
-          <sp xml:id="III03-18" who="JASON">
+          <sp who="JASON" xml:id="III03-18">
             <speaker>JASON.</speaker>
             <l n="885" xml:id="l885">Leur grandeur soutiendra la fortune des autres,</l>
             <l n="886" xml:id="l886">Créuse et ses enfants conserveront les nôtres.</l>
           </sp>
-          <sp xml:id="III03-19" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-19">
             <speaker>MÉDÉE.</speaker>
             <l n="887" xml:id="l887">Je l'empêcherai bien, ce mélange odieux,</l>
             <l n="888" xml:id="l888">Qui déshonore ensemble et ma race et les Dieux.</l>
           </sp>
-          <sp xml:id="III03-20" who="JASON">
+          <sp who="JASON" xml:id="III03-20">
             <speaker>JASON.</speaker>
             <l n="889" xml:id="l889">Lassés de tant de maux cédons à la fortune.</l>
           </sp>
-          <sp xml:id="III03-21" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-21">
             <speaker>MÉDÉE.</speaker>
             <l n="890" xml:id="l890">Ce corps n'enferme pas une âme si commune,</l>
             <l n="891" xml:id="l891">Je n'ai jamais souffert qu'elle me fît la loi,</l>
             <l n="892" xml:id="l892">Et toujours ma fortune a dépendu de moi.</l>
           </sp>
-          <sp xml:id="III03-22" who="JASON">
+          <sp who="JASON" xml:id="III03-22">
             <speaker>JASON.</speaker>
-            <l n="893" xml:id="l893" part="I">La peur que j'ai d'un sceptre...</l>
+            <l n="893" part="I" xml:id="l893">La peur que j'ai d'un sceptre...</l>
           </sp>
-          <sp xml:id="III03-23" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-23">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Ah ! Coeur rempli de feinte !</l>
             <l n="894" xml:id="l894">Tu masques tes désirs d'un faux titre de crainte,</l>
             <l n="895" xml:id="l895">Un sceptre pour ton change a seul de vrais appas.</l>
           </sp>
-          <sp xml:id="III03-24" who="JASON">
+          <sp who="JASON" xml:id="III03-24">
             <speaker>JASON.</speaker>
             <l n="896" xml:id="l896">Vois l'état où je suis, j'ai deux Rois sur les bras,</l>
             <l n="897" xml:id="l897">Acaste à la campagne, et Créon dans la ville,</l>
             <l n="898" xml:id="l898">Que leur puisse opposer qu'un courage inutile ?</l>
           </sp>
-          <sp xml:id="III03-25" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-25">
             <speaker>MÉDÉE.</speaker>
             <l n="899" xml:id="l899">Fuis-les tous les deux pour moi, suis Médée à ton tour,</l>
             <l n="900" xml:id="l900">Sauve ton innocence avecque ton amour.</l>
@@ -1466,11 +1465,11 @@ nos yeux. [L]</note>
             <note type="C">Au début du vers ci contre, il y a N'y au lieu de Ni.</note>
             <l n="902" xml:id="l902">Ni contre ton perent, ni contre ton beau-père.</l>
           </sp>
-          <sp xml:id="III03-26" who="JASON">
+          <sp who="JASON" xml:id="III03-26">
             <speaker>JASON.</speaker>
             <l n="903" xml:id="l903">Qui leur résistera, s'ils viennent à s'unir ?</l>
           </sp>
-          <sp xml:id="III03-27" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-27">
             <speaker>MÉDÉE.</speaker>
             <l n="904" xml:id="l904">Qui me résistera si je te veux punir ?</l>
             <l n="905" xml:id="l905">Déloyal, auprès d'eux crains-tu si peu Médée ?</l>
@@ -1500,7 +1499,7 @@ nos yeux. [L]</note>
             <l n="929" xml:id="l929">Et que leur cher objet entretenant ma flamme</l>
             <l n="930" xml:id="l930">Te présente à mes yeux aussi bien qu'à mon âme.</l>
           </sp>
-          <sp xml:id="III03-28" who="JASON">
+          <sp who="JASON" xml:id="III03-28">
             <speaker>JASON.</speaker>
             <l n="931" xml:id="l931">Ah ! Reprends ta colère, elle a moins de rigueur.</l>
             <l n="932" xml:id="l932">M'enlever mes enfants, c'est m'arracher le coeur,</l>
@@ -1511,14 +1510,14 @@ nos yeux. [L]</note>
             <l n="935" xml:id="l935">C'est pour eux que je change ; et la Parque, sans eux,</l>
             <l n="936" xml:id="l936">Seule eut de notre hymen rompu les chastes noeuds.</l>
           </sp>
-          <sp xml:id="III03-29" who="MEDEE">
+          <sp who="MEDEE" xml:id="III03-29">
             <speaker>MÉDÉE.</speaker>
             <l n="937" xml:id="l937">Cet amour paternel, qui te fournit d'excuses</l>
             <l n="938" xml:id="l938">Me fait souffrir aussi que tu me les refuses,</l>
             <l n="939" xml:id="l939">Je ne t'en presse plus, et prête à me bannir</l>
             <l n="940" xml:id="l940">Je ne veux plus de toi qu'un léger souvenir.</l>
           </sp>
-          <sp xml:id="III03-30" who="JASON">
+          <sp who="JASON" xml:id="III03-30">
             <speaker>JASON.</speaker>
             <l n="941" xml:id="l941">Ton amour vertueux fait ma plus grande gloire,</l>
             <l n="942" xml:id="l942">Ce serait me trahir qu'en perdre la mémoire,</l>
@@ -1530,9 +1529,9 @@ nos yeux. [L]</note>
             <l n="948" xml:id="l948">Si je ne perds la vie avant ton souvenir.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Médée, Nérine.</head>
-          <sp xml:id="III04-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-1">
             <speaker>MÉDÉE.</speaker>
             <l n="949" xml:id="l949">J'y donnerai bon ordre : il est en ta puissance</l>
             <l n="950" xml:id="l950">D'oublier mon amour, mais non pas ma vengeance :</l>
@@ -1544,7 +1543,7 @@ nos yeux. [L]</note>
             <l n="955" xml:id="l955">Par eux mon bras armé d'une juste rigueur</l>
             <l n="956" xml:id="l956">Va trouver des chemins à lui percer le coeur.</l>
           </sp>
-          <sp xml:id="III04-2" who="NERINE">
+          <sp who="NERINE" xml:id="III04-2">
             <speaker>NÉRINE.</speaker>
             <note type="L">Entrailles : Ce qui sort de nous, notre famille, nos enfants. [L]</note>
             <l n="957" xml:id="l957">Madame, épargnez-les, épargnez vos entrailles,</l>
@@ -1553,36 +1552,36 @@ nos yeux. [L]</note>
             <l n="960" xml:id="l960">Si Créuse en vos lacs se vient précipiter ?</l>
             <l n="961" xml:id="l961">Elle-même s'y jette, et Jason vous la livre.</l>
           </sp>
-          <sp xml:id="III04-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-3">
             <speaker>MÉDÉE.</speaker>
-            <l n="962" xml:id="l962" part="I">Tu flattes mes désirs.</l>
+            <l n="962" part="I" xml:id="l962">Tu flattes mes désirs.</l>
           </sp>
-          <sp xml:id="III04-4" who="NERINE">
+          <sp who="NERINE" xml:id="III04-4">
             <speaker>NÉRINE.</speaker>
             <l part="F">Que je cesse de vivre</l>
             <l n="963" xml:id="l963">Si ce que je vous dis n'est pure vérité.</l>
           </sp>
-          <sp xml:id="III04-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-5">
             <speaker>MÉDÉE.</speaker>
             <l n="964" xml:id="l964">Ah ! Ne me tiens donc plus l'âme en perplexité.</l>
           </sp>
-          <sp xml:id="III04-6" who="NERINE">
+          <sp who="NERINE" xml:id="III04-6">
             <speaker>NÉRINE.</speaker>
             <l n="965" xml:id="l965">Madame, il faut garder que quelqu'un ne nous voie,</l>
             <l n="966" xml:id="l966">Et du palais du roi découvre notre joie,</l>
             <l n="967" xml:id="l967">Un dessein éventé succède rarement.</l>
           </sp>
-          <sp xml:id="III04-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-7">
             <speaker>MÉDÉE.</speaker>
             <l n="968" xml:id="l968">Rentrons donc, et mettons nos secrets sûrement.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Médée, Nérine.</head>
-          <sp xml:id="IV01-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-1">
             <speaker>MÉDÉE, seule.</speaker>
             <l n="969" xml:id="l969">C'est trop peu de Jason que ton oeil me dérobe,</l>
             <l n="970" xml:id="l970">C'est trop peu de mon lit, tu veux encore ma robe,</l>
@@ -1632,7 +1631,7 @@ nos yeux. [L]</note>
             <l n="1007" xml:id="l1007">Les traîtres apprendront à se jouer à moi.</l>
             <l n="1008" xml:id="l1008">Mais d'où provient ce bruit dans le palais du Roi ?</l>
           </sp>
-          <sp xml:id="IV01-2" who="NERINE">
+          <sp who="NERINE" xml:id="IV01-2">
             <speaker>NÉRINE.</speaker>
             <l n="1009" xml:id="l1009">Du bonheur de Jason, et du malheur d'Aegée,</l>
             <l n="1010" xml:id="l1010">Madame, peu s'en faut qu'il ne vous ait vengée.</l>
@@ -1658,18 +1657,18 @@ nos yeux. [L]</note>
             <l n="1028" xml:id="l1028">Laissait honteusement Créuse à leurs vainqueurs,</l>
             <l n="1029" xml:id="l1029">Déjà presque en leur bord elle était enlevée...</l>
           </sp>
-          <sp xml:id="IV01-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-3">
             <speaker>MÉDÉE.</speaker>
             <l n="1030" xml:id="l1030">Je devine la fin, mon traître l'a sauvée.</l>
           </sp>
-          <sp xml:id="IV01-4" who="NERINE">
+          <sp who="NERINE" xml:id="IV01-4">
             <speaker>NÉRINE.</speaker>
             <l n="1031" xml:id="l1031">Oui, Madame, et de plus Aegée est prisonnier,</l>
             <note type="L">Myrte : Arbrisseau toujours vert. Fig. et poétiquement, l'amour, à cause que le myrte, chez les anciens, était consacré à Vénus. [L]</note>
             <l n="1032" xml:id="l1032">Votre époux à son myrte ajoute ce laurier,</l>
-            <l n="1033" xml:id="l1033" part="I">Mais apprenez comment.</l>
+            <l n="1033" part="I" xml:id="l1033">Mais apprenez comment.</l>
           </sp>
-          <sp xml:id="IV01-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-5">
             <speaker>MÉDÉE.</speaker>
             <l part="F">N'en dis pas davantage,</l>
             <l n="1034" xml:id="l1034">Je ne veux point savoir ce qu'a fait son courage,</l>
@@ -1685,13 +1684,13 @@ nos yeux. [L]</note>
             <l n="1044" xml:id="l1044">Que d'un titre plus vrai j'appelle ma rançon,</l>
             <l n="1045" xml:id="l1045">Produiront des effets bien plus doux à ma haine.</l>
           </sp>
-          <sp xml:id="IV01-6" who="NERINE">
+          <sp who="NERINE" xml:id="IV01-6">
             <speaker>NÉRINE.</speaker>
             <l n="1046" xml:id="l1046">Par là vous vous vengez, et sa perte est certaine,</l>
             <l n="1047" xml:id="l1047">Mais contre la fureur de son père irrité,</l>
             <l n="1048" xml:id="l1048">Où pensez-vous trouver un lieu de sûreté ?</l>
           </sp>
-          <sp xml:id="IV01-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-7">
             <speaker>MÉDÉE.</speaker>
             <l n="1049" xml:id="l1049">Si la prison d'Aegée a suivi sa défaite,</l>
             <l n="1050" xml:id="l1050">Tu peux voir qu'en l'ouvrant je m'ouvre une retraite,</l>
@@ -1702,7 +1701,7 @@ nos yeux. [L]</note>
             <l n="1055" xml:id="l1055">Mène-lui mes enfants, et fais-les si tu peux</l>
             <l n="1056" xml:id="l1056">Présenter par leur père à l'objet de ses voeux.</l>
           </sp>
-          <sp xml:id="IV01-8" who="NERINE">
+          <sp who="NERINE" xml:id="IV01-8">
             <speaker>NÉRINE.</speaker>
             <note type="L">Empester : Infecter de la peste ou de toute autre maladie contagieuse. [L]</note>
             <l n="1057" xml:id="l1057">Mais, Madame, porter cette robe empestée,</l>
@@ -1710,7 +1709,7 @@ nos yeux. [L]</note>
             <l n="1059" xml:id="l1059">C'est pour votre Nérine un trop funeste emploi,</l>
             <l n="1060" xml:id="l1060">Avant que sur Créuse ils agiraient sur moi.</l>
           </sp>
-          <sp xml:id="IV01-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-9">
             <speaker>MÉDÉE.</speaker>
             <l n="1061" xml:id="l1061">Ne crains pas leur vertu, mon charme la modère,</l>
             <l n="1062" xml:id="l1062">Et lui défend d'agir que sur elle et son père.</l>
@@ -1718,9 +1717,9 @@ nos yeux. [L]</note>
             <l n="1064" xml:id="l1064">Et sans me répliquer, fais ce que je te dis.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Créon, Pollux, soldats.</head>
-          <sp xml:id="IV02-1" who="CREON">
+          <sp who="CREON" xml:id="IV02-1">
             <speaker>CRÉON.</speaker>
             <l n="1065" xml:id="l1065">Nous devons bien chérir cette valeur parfaite</l>
             <l n="1066" xml:id="l1066">Qui de nos ravisseurs nous donne la défaite,</l>
@@ -1731,7 +1730,7 @@ nos yeux. [L]</note>
             <l n="1071" xml:id="l1071">Met Aegée en prison, et son orgueil à bas,</l>
             <l n="1072" xml:id="l1072">Et fait mordre la terre à ses meilleurs soldats.</l>
           </sp>
-          <sp xml:id="IV02-2" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV02-2">
             <speaker>POLLUX.</speaker>
             <l n="1073" xml:id="l1073">Grand roi, l'heureux succès de cette délivrance</l>
             <l n="1074" xml:id="l1074">Vous est beaucoup mieux dû qu'à mon peu de vaillance.</l>
@@ -1746,7 +1745,7 @@ nos yeux. [L]</note>
             <l n="1083" xml:id="l1083">Qui pourrait reculer en combattant sous vous ?</l>
             <l n="1084" xml:id="l1084">Et qui n'aurait du coeur à seconder vos coups ?</l>
           </sp>
-          <sp xml:id="IV02-3" who="CREON">
+          <sp who="CREON" xml:id="IV02-3">
             <speaker>CRÉON.</speaker>
             <l n="1085" xml:id="l1085">Votre valeur qui souffre en cette repartie</l>
             <l n="1086" xml:id="l1086">Ôte toute croyance à votre modestie :</l>
@@ -1765,15 +1764,15 @@ nos yeux. [L]</note>
             <l n="1099" xml:id="l1099">Qu'avons-nous plus à craindre, et quel destin jaloux</l>
             <l n="1100" xml:id="l1100">Tant que nous vous aurons s'osera prendre à nous ?</l>
           </sp>
-          <sp xml:id="IV02-4" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV02-4">
             <speaker>POLLUX.</speaker>
-            <l n="1101" xml:id="l1101" part="I">Appréhendez pourtant, grand Prince.</l>
+            <l n="1101" part="I" xml:id="l1101">Appréhendez pourtant, grand Prince.</l>
           </sp>
-          <sp xml:id="IV02-5" who="CREON">
+          <sp who="CREON" xml:id="IV02-5">
             <speaker>CRÉON.</speaker>
             <l part="M">Et quoi ?</l>
           </sp>
-          <sp xml:id="IV02-6" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV02-6">
             <speaker>POLLUX.</speaker>
             <l part="F">Médée,</l>
             <l n="1102" xml:id="l1102">Qui par vous de son lit se voit dépossédée.</l>
@@ -1786,7 +1785,7 @@ nos yeux. [L]</note>
             <l n="1109" xml:id="l1109">Et ne présumez pas, quoi que Jason vous die,</l>
             <l n="1110" xml:id="l1110">Que pour le conserver elle soit moins hardie.</l>
           </sp>
-          <sp xml:id="IV02-7" who="CREON">
+          <sp who="CREON" xml:id="IV02-7">
             <speaker>CRÉON.</speaker>
             <l n="1111" xml:id="l1111">C'est de quoi mon esprit n'est plus inquiété ;</l>
             <l n="1112" xml:id="l1112">Par son bannissement j'ai fait ma sûreté ;</l>
@@ -1794,36 +1793,36 @@ nos yeux. [L]</note>
             <l n="1114" xml:id="l1114">Mais en si peu de temps que peut faire une femme ?</l>
             <l n="1115" xml:id="l1115">Je n'ai prescrit qu'un jour de terme à son départ.</l>
           </sp>
-          <sp xml:id="IV02-8" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV02-8">
             <speaker>POLLUX.</speaker>
             <l n="1116" xml:id="l1116">C'est peu pour une femme, et beaucoup pour son art,</l>
             <l n="1117" xml:id="l1117">Sur le pouvoir humain ne réglez pas les charmes.</l>
           </sp>
-          <sp xml:id="IV02-9" who="CREON">
+          <sp who="CREON" xml:id="IV02-9">
             <speaker>CRÉON.</speaker>
             <l n="1118" xml:id="l1118">Quelques puissants qu'ils soient, je n'en ai point d'alarmes,</l>
             <l n="1119" xml:id="l1119">Et quand bien ce délai devrait tout hasarder,</l>
             <l n="1120" xml:id="l1120">Ma parole est donnée, et je la veux garder.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Créon, Pollux, Cléone.</head>
-          <sp xml:id="IV03-1" who="CREON">
+          <sp who="CREON" xml:id="IV03-1">
             <speaker>CRÉON.</speaker>
-            <l n="1121" xml:id="l1121" part="I">Que font nos deux amants, Cléone ?</l>
+            <l n="1121" part="I" xml:id="l1121">Que font nos deux amants, Cléone ?</l>
           </sp>
-          <sp xml:id="IV03-2" who="CLEONE">
+          <sp who="CLEONE" xml:id="IV03-2">
             <speaker>CLÉONE.</speaker>
             <l part="F">La princesse,</l>
             <l n="1122" xml:id="l1122">Sire, auprès de Jason reprend son allégresse,</l>
             <l n="1123" xml:id="l1123">Et ce qui sert beaucoup à son contentement,</l>
             <l n="1124" xml:id="l1124">C'est de voir que Médée est sans ressentiment.</l>
           </sp>
-          <sp xml:id="IV03-3" who="CREON">
+          <sp who="CREON" xml:id="IV03-3">
             <speaker>CRÉON.</speaker>
             <l n="1125" xml:id="l1125">Et quel Dieu si propice a calmé son courage ?</l>
           </sp>
-          <sp xml:id="IV03-4" who="CLEONE">
+          <sp who="CLEONE" xml:id="IV03-4">
             <speaker>CLÉONE.</speaker>
             <l n="1126" xml:id="l1126">Jason et ses enfants qu'elle vous laisse en gage.</l>
             <l n="1127" xml:id="l1127">La grâce que pour eux Madame obtient de vous</l>
@@ -1837,19 +1836,19 @@ nos yeux. [L]</note>
             <l n="1135" xml:id="l1135">Et fait voir clairement les merveilleux effets</l>
             <l n="1136" xml:id="l1136">Qu'en un coeur irrité produisent les bienfaits.</l>
           </sp>
-          <sp xml:id="IV03-5" who="CREON">
+          <sp who="CREON" xml:id="IV03-5">
             <speaker>CRÉON.</speaker>
             <l n="1137" xml:id="l1137">Eh bien, qu'en dites-vous ? Qu'avons-nous plus à craindre ?</l>
           </sp>
-          <sp xml:id="IV03-6" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV03-6">
             <speaker>POLLUX.</speaker>
             <l n="1138" xml:id="l1138">Si vous ne craignez rien, que je vous trouve à plaindre ?</l>
           </sp>
-          <sp xml:id="IV03-7" who="CREON">
+          <sp who="CREON" xml:id="IV03-7">
             <speaker>CRÉON.</speaker>
             <l n="1139" xml:id="l1139">Un si rare présent montre un esprit remis.</l>
           </sp>
-          <sp xml:id="IV03-8" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV03-8">
             <speaker>POLLUX.</speaker>
             <l n="1140" xml:id="l1140">J'eus toujours pour suspects les dons des ennemis,</l>
             <l n="1141" xml:id="l1141">Ils font assez souvent ce que n'ont pu leurs armes,</l>
@@ -1857,12 +1856,12 @@ nos yeux. [L]</note>
             <l n="1143" xml:id="l1143">Et veux bien m'exposer aux plus cruels trépas</l>
             <l n="1144" xml:id="l1144">Si ce rare présent n'est un mortel appas.</l>
           </sp>
-          <sp xml:id="IV03-9" who="CREON">
+          <sp who="CREON" xml:id="IV03-9">
             <speaker>CRÉON.</speaker>
             <l n="1145" xml:id="l1145">Ses enfants si chéris qui nous servent d'otages</l>
             <l n="1146" xml:id="l1146">Nous peuvent-ils laisser quelque sorte d'ombrages ?</l>
           </sp>
-          <sp xml:id="IV03-10" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV03-10">
             <speaker>POLLUX.</speaker>
             <l n="1147" xml:id="l1147">Peut-être que contre eux s'étend sa trahison,</l>
             <l n="1148" xml:id="l1148">Qu'elle ne les prend plus que pour ceux de Jason,</l>
@@ -1872,19 +1871,19 @@ nos yeux. [L]</note>
             <l n="1151" xml:id="l1151">Sire, renvoyez-lui ce don pernicieux,</l>
             <l n="1152" xml:id="l1152">Et ne vous chargez point d'un poison précieux.</l>
           </sp>
-          <sp xml:id="IV03-11" who="CLEONE">
+          <sp who="CLEONE" xml:id="IV03-11">
             <speaker>CLÉONE.</speaker>
             <l n="1153" xml:id="l1153">Madame cependant en est toute ravie,</l>
             <l n="1154" xml:id="l1154">Et de s'en voir parée elle brûle d'envie.</l>
           </sp>
-          <sp xml:id="IV03-12" who="POLLUX">
+          <sp who="POLLUX" xml:id="IV03-12">
             <speaker>POLLUX.</speaker>
             <l n="1155" xml:id="l1155">Où le péril égale et passe le plaisir,</l>
             <l n="1156" xml:id="l1156">Il faut se faire force, et vaincre son désir.</l>
             <l n="1157" xml:id="l1157">Jason dans son amour a trop de complaisance</l>
             <l n="1158" xml:id="l1158">De souffrir qu'un tel don s'accepte en sa présence.</l>
           </sp>
-          <sp xml:id="IV03-13" who="CREON">
+          <sp who="CREON" xml:id="IV03-13">
             <speaker>CRÉON.</speaker>
             <note type="L">Dextrement : Avec dextérité. [L]</note>
             <l n="1159" xml:id="l1159">Sans rien mettre au hasard, je saurai dextrement</l>
@@ -1899,9 +1898,9 @@ nos yeux. [L]</note>
             <l n="1168" xml:id="l1168">De temps ni de discours en débats superflus.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV.</head>
-          <sp xml:id="IV04-1" who="AEGEE">
+          <sp who="AEGEE" xml:id="IV04-1">
             <speaker>AEGÉE, en prison.</speaker>
             <lg type="stances">
               <lg n="1">
@@ -1968,9 +1967,9 @@ nos yeux. [L]</note>
             </lg>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. AEgée, Médée.</head>
-          <sp xml:id="IV05-1" who="AEGEE">
+          <sp who="AEGEE" xml:id="IV05-1">
             <speaker>AEGÉE.</speaker>
             <l n="1217" xml:id="l1217">Mais d'où vient ce bruit sourd ? Quelle pâle lumière</l>
             <l n="1218" xml:id="l1218">Dissipe ces horreurs et frappe ma paupière ?</l>
@@ -1981,7 +1980,7 @@ nos yeux. [L]</note>
             <l n="1223" xml:id="l1223">Donne-moi les moyens d'un généreux effort</l>
             <l n="1224" xml:id="l1224">Qui des mains des bourreaux affranchisse ma mort.</l>
           </sp>
-          <sp xml:id="IV05-2" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV05-2">
             <speaker>MÉDÉE.</speaker>
             <l n="1225" xml:id="l1225">Je viens l'en affranchir : ne craignez plus, grand Prince,</l>
             <l n="1226" xml:id="l1226">Ne pensez qu'à revoir votre chère province.</l>
@@ -1995,7 +1994,7 @@ nos yeux. [L]</note>
             <l n="1232" xml:id="l1232">Joindrait votre supplice à mon bannissement,</l>
             <l n="1233" xml:id="l1233">Avec la liberté reprenez le courage.</l>
           </sp>
-          <sp xml:id="IV05-3" who="AEGEE">
+          <sp who="AEGEE" xml:id="IV05-3">
             <speaker>AEGÉE.</speaker>
             <l n="1234" xml:id="l1234">Je les reprends tous deux pour vous en faire hommage.</l>
             <l n="1235" xml:id="l1235">Princesse de qui l'art propice aux malheureux</l>
@@ -2014,7 +2013,7 @@ nos yeux. [L]</note>
             <l n="1247" xml:id="l1247">Et remettre en vos mains et Créuse et Jason</l>
             <l n="1248" xml:id="l1248">Pour venger votre exil plutôt que ma prison.</l>
           </sp>
-          <sp xml:id="IV05-4" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV05-4">
             <speaker>MÉDÉE.</speaker>
             <l n="1249" xml:id="l1249">Je veux une vengeance, et plus haute, et plus prompte ;</l>
             <l n="1250" xml:id="l1250">Ne l'entreprenez pas, votre offre me fait honte :</l>
@@ -2029,14 +2028,14 @@ nos yeux. [L]</note>
             <l n="1259" xml:id="l1259">Demain je suis Médée et je tire raison</l>
             <l n="1260" xml:id="l1260">De mon bannissement et de votre prison.</l>
           </sp>
-          <sp xml:id="IV05-5" who="AEGEE">
+          <sp who="AEGEE" xml:id="IV05-5">
             <speaker>AEGÉE.</speaker>
             <l n="1261" xml:id="l1261">Quoi, Madame, faut-il que mon peu de puissance</l>
             <l n="1262" xml:id="l1262">Etouffe les devoirs de ma reconnaissance ?</l>
             <l n="1263" xml:id="l1263">Mon sceptre ne peut-il être employé pour vous ?</l>
             <l n="1264" xml:id="l1264">Et vous serai-je ingrat autant que votre époux ?</l>
           </sp>
-          <sp xml:id="IV05-6" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV05-6">
             <speaker>MÉDÉE.</speaker>
             <l n="1265" xml:id="l1265">Si je vous ai servi, tout ce que j'en souhaite,</l>
             <l n="1266" xml:id="l1266">C'est de trouver chez vous une sûre retraite,</l>
@@ -2048,7 +2047,7 @@ nos yeux. [L]</note>
             <l n="1271" xml:id="l1271">Mais je hais ce désordre, et n'aime pas à voir</l>
             <l n="1272" xml:id="l1272">Qu'il me faille pour vivre user de mon savoir.</l>
           </sp>
-          <sp xml:id="IV05-7" who="AEGEE">
+          <sp who="AEGEE" xml:id="IV05-7">
             <speaker>AEGÉE.</speaker>
             <l n="1273" xml:id="l1273">L'honneur de recevoir une si grande hôtesse</l>
             <l n="1274" xml:id="l1274">De mes malheurs passés efface la tristesse,</l>
@@ -2061,7 +2060,7 @@ nos yeux. [L]</note>
             <l n="1281" xml:id="l1281">Allons Madame, allons, et par votre conduite</l>
             <l n="1282" xml:id="l1282">Faites la sûreté que demande ma fuite.</l>
           </sp>
-          <sp xml:id="IV05-8" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV05-8">
             <speaker>MÉDÉE.</speaker>
             <l n="1283" xml:id="l1283">Ma vengeance n'aurait qu'un succès imparfait,</l>
             <l n="1284" xml:id="l1284">Je ne me venge pas si je n'en vois l'effet,</l>
@@ -2080,14 +2079,14 @@ nos yeux. [L]</note>
             <l n="1295" xml:id="l1295">Partez sans plus tarder, Prince chéri des Dieux,</l>
             <l n="1296" xml:id="l1296">Et quittez pour jamais ces détestables lieux.</l>
           </sp>
-          <sp xml:id="IV05-9" who="AEGEE">
+          <sp who="AEGEE" xml:id="IV05-9">
             <speaker>AEGÉE.</speaker>
             <l n="1297" xml:id="l1297">J'obéis sans réplique, et je pars sans remise,</l>
             <l n="1298" xml:id="l1298">Puisse d'un prompt succès votre grande entreprise</l>
             <l n="1299" xml:id="l1299">Combler nos ennemis d'un mortel désespoir,</l>
             <l n="1300" xml:id="l1300">Et me donner bientôt le bien de vous revoir.</l>
           </sp>
-          <sp xml:id="IV05-10" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV05-10">
             <speaker>MÉDÉE.</speaker>
             <l n="1301" xml:id="l1301">Auparavant que vous je ferai dans Athènes,</l>
             <l n="1302" xml:id="l1302">Cependant pour loyer de ces légères peines</l>
@@ -2096,26 +2095,26 @@ nos yeux. [L]</note>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Médée, Theudas.</head>
-          <sp xml:id="V01-1" who="THEUDAS">
+          <sp who="THEUDAS" xml:id="V01-1">
             <speaker>THEUDAS.</speaker>
             <l n="1305" xml:id="l1305">Ah ! Déplorable prince ! Ah Fortune cruelle !</l>
             <l n="1306" xml:id="l1306">Que je porte à Jason une triste nouvelle !</l>
-            <stage type="[N/A]">Médée, lui donnant un coup de baguette qui le fait demeurer immobile.</stage>
+            <stage>Médée, lui donnant un coup de baguette qui le fait demeurer immobile.</stage>
           </sp>
-          <sp xml:id="V01-2" who="MEDEE">
+          <sp who="MEDEE" xml:id="V01-2">
             <speaker>MÉDÉE.</speaker>
             <l n="1307" xml:id="l1307">Arrête, misérable, et m'apprends quel effet</l>
             <l n="1308" xml:id="l1308">A produit chez le Roi le présent que j'ai fait.</l>
           </sp>
-          <sp xml:id="V01-3" who="THEUDAS">
+          <sp who="THEUDAS" xml:id="V01-3">
             <speaker>THEUDAS.</speaker>
             <l n="1309" xml:id="l1309">Dieux ! Je suis dans les fers d'une invisible chaîne !</l>
           </sp>
-          <sp xml:id="V01-4" who="MEDEE">
+          <sp who="MEDEE" xml:id="V01-4">
             <speaker>MÉDÉE.</speaker>
             <l n="1310" xml:id="l1310">Dépêche, ou ces longueurs attireront ma haine.</l>
             <l n="1311" xml:id="l1311">Ma verge qui déjà t'empêche de courir</l>
@@ -2123,7 +2122,7 @@ nos yeux. [L]</note>
             <l n="1313" xml:id="l1313">Garde toi seulement d'irriter ma colère,</l>
             <l n="1314" xml:id="l1314">Et pense que ta mort dépend de me déplaire.</l>
           </sp>
-          <sp xml:id="V01-5" who="THEUDAS">
+          <sp who="THEUDAS" xml:id="V01-5">
             <speaker>THEUDAS.</speaker>
             <l n="1315" xml:id="l1315">Apprenez donc l'effet le plus prodigieux</l>
             <l n="1316" xml:id="l1316">Que jamais la vengeance ait offert à nos yeux.</l>
@@ -2140,11 +2139,11 @@ nos yeux. [L]</note>
             <l n="1327" xml:id="l1327">Ce feu saisit le Roi, ce Prince en un moment</l>
             <l n="1328" xml:id="l1328">Se trouve enveloppé du même embrasement.</l>
           </sp>
-          <sp xml:id="V01-6" who="MEDEE">
+          <sp who="MEDEE" xml:id="V01-6">
             <speaker>MÉDÉE.</speaker>
             <l n="1329" xml:id="l1329">Courage, enfin il faut que l'un et l'autre meure.</l>
           </sp>
-          <sp xml:id="V01-7" who="THEUDAS">
+          <sp who="THEUDAS" xml:id="V01-7">
             <speaker>THEUDAS.</speaker>
             <l n="1330" xml:id="l1330">La flamme disparaît, mais l'ardeur leur demeure,</l>
             <l n="1331" xml:id="l1331">Et leurs habits charmés, malgré nos vains efforts</l>
@@ -2153,11 +2152,11 @@ nos yeux. [L]</note>
             <note type="L">Martyre : La mort ou les tourments endurés pour la religion chrétienne. Par extension; souffrance très intense. [L]</note>
             <l n="1334" xml:id="l1334">Et ce nouveau secours est un nouveau martyre.</l>
           </sp>
-          <sp xml:id="V01-8" who="MEDEE">
+          <sp who="MEDEE" xml:id="V01-8">
             <speaker>MÉDÉE.</speaker>
             <l n="1335" xml:id="l1335">Que dit mon déloyal, que fait-il là dedans ?</l>
           </sp>
-          <sp xml:id="V01-9" who="THEUDAS">
+          <sp who="THEUDAS" xml:id="V01-9">
             <speaker>THEUDAS.</speaker>
             <l n="1336" xml:id="l1336">Jason sans rien savoir de tous ces accidents,</l>
             <l n="1337" xml:id="l1337">S'acquitte des devoirs d'une amitié civile</l>
@@ -2166,7 +2165,7 @@ nos yeux. [L]</note>
             <l n="1340" xml:id="l1340">Dont bientôt Ménélas doit être possesseur,</l>
             <l n="1341" xml:id="l1341">Et j'allais lui porter ce funeste message.</l>
           </sp>
-          <sp xml:id="V01-10" who="MEDEE">
+          <sp who="MEDEE" xml:id="V01-10">
             <speaker>MÉDÉE lui donnant un autre coup de sa baguette.</speaker>
             <l n="1342" xml:id="l1342">Va, tu peux maintenant achever ton voyage.</l>
             <l n="1343" xml:id="l1343">Est-ce assez, ma vengeance, est-ce assez de deux morts ?</l>
@@ -2204,9 +2203,9 @@ nos yeux. [L]</note>
             <l n="1374" xml:id="l1374">Allons à son trépas ajouter ce carnage.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V02">
           <head>SCÈNE III. Créon, domestiques.</head>
-          <sp xml:id="V02-1" who="CREON">
+          <sp who="CREON" xml:id="V02-1">
             <speaker>CRÉON.</speaker>
             <l n="1375" xml:id="l1375">Loin de me soulager, vous croissez mes tourments,</l>
             <l n="1376" xml:id="l1376">Le poison à mon corps unit mes vêtements,</l>
@@ -2227,9 +2226,9 @@ nos yeux. [L]</note>
             <l n="1391" xml:id="l1391">Il faut ainsi payer votre cruel secours.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V03">
           <head>SCÈNE IV. Créon, Créuse, Cléone.</head>
-          <sp xml:id="V03-1" who="CREUSE">
+          <sp who="CREUSE" xml:id="V03-1">
             <speaker>CRÉUSE.</speaker>
             <l n="1392" xml:id="l1392">Où fuyez-vous de moi, cher auteur de mes jours ?</l>
             <l n="1393" xml:id="l1393">Fuyez-vous l'innocente et malheureuse source</l>
@@ -2246,7 +2245,7 @@ nos yeux. [L]</note>
             <l n="1403" xml:id="l1403">Et je crois qu'Ixion au choix des châtiments,</l>
             <l n="1404" xml:id="l1404">Préférerait sa roue à mes embrasements.</l>
           </sp>
-          <sp xml:id="V03-2" who="CREON">
+          <sp who="CREON" xml:id="V03-2">
             <speaker>CRÉON.</speaker>
             <l n="1405" xml:id="l1405">Si ton jeune désir eut beaucoup d'imprudence,</l>
             <l n="1406" xml:id="l1406">Ma fille, j'y devais opposer ma défense.</l>
@@ -2258,7 +2257,7 @@ nos yeux. [L]</note>
             <l n="1412" xml:id="l1412">Me porte bien des coups plus vifs, et plus pressants.</l>
             <l n="1413" xml:id="l1413">Ma fille, c'est donc là ce royal hyménée</l>
             <l n="1414" xml:id="l1414">Dont nous pensions toucher la pompeuse journée !</l>
-            <note type="L">Clothon :  ou Clotho. Mythologie. Celle des trois Parques qui file le fil de la vie des hommes. [L]</note>
+            <note type="L">Clothon : ou Clotho. Mythologie. Celle des trois Parques qui file le fil de la vie des hommes. [L]</note>
             <note type="L">Impiteux : Qui est fans pitié, qui est cruel. [F]</note>
             <l n="1415" xml:id="l1415">L'impiteuse Clothon en porte le flambeau,</l>
             <l n="1416" xml:id="l1416">Et pour lit nuptial il te faut un tombeau.</l>
@@ -2271,7 +2270,7 @@ nos yeux. [L]</note>
             <l n="1423" xml:id="l1423">Et cet espoir si doux, qui m'a toujours flatté</l>
             <l n="1424" xml:id="l1424">De revivre à jamais en sa postérité.</l>
           </sp>
-          <sp xml:id="V03-3" who="CREUSE">
+          <sp who="CREUSE" xml:id="V03-3">
             <speaker>CRÉUSE.</speaker>
             <l n="1425" xml:id="l1425">Cléone soutenez, les forces me défaillent,</l>
             <l n="1426" xml:id="l1426">Et ma vigueur succombe aux douleurs qui m'assaillent,</l>
@@ -2285,26 +2284,26 @@ nos yeux. [L]</note>
             <l n="1433" xml:id="l1433">Ah je brûle, je meurs, je ne suis plus que flamme,</l>
             <l n="1434" xml:id="l1434">De grâce hâtez-vous de recevoir mon âme.</l>
           </sp>
-          <sp xml:id="V03-4" who="CREON">
+          <sp who="CREON" xml:id="V03-4">
             <speaker>CRÉON.</speaker>
-            <l n="1435" xml:id="l1435" part="I">Ah ma fille.</l>
+            <l n="1435" part="I" xml:id="l1435">Ah ma fille.</l>
           </sp>
-          <sp xml:id="V03-5" who="CREUSE">
+          <sp who="CREUSE" xml:id="V03-5">
             <speaker>CRÉUSE.</speaker>
             <l part="M">Ah mon père.</l>
           </sp>
-          <sp xml:id="V03-6" who="CREON">
+          <sp who="CREON" xml:id="V03-6">
             <speaker>CRÉON.</speaker>
             <l part="F">À ces embrassements</l>
             <l n="1436" xml:id="l1436">Qui retiendrait ses pleurs, et ses gémissements ?</l>
             <l n="1437" xml:id="l1437">Dns ces ardents baisers leurs âmes se confondent,</l>
             <l n="1438" xml:id="l1438">Et leurs tristes sanglots seulement se répondent.</l>
           </sp>
-          <sp xml:id="V03-7" who="CREUSE">
+          <sp who="CREUSE" xml:id="V03-7">
             <speaker>CRÉUSE.</speaker>
-            <l n="1439" xml:id="l1439" part="I">Hé quoi ? Vous me quittez !</l>
+            <l n="1439" part="I" xml:id="l1439">Hé quoi ? Vous me quittez !</l>
           </sp>
-          <sp xml:id="V03-8" who="CREON">
+          <sp who="CREON" xml:id="V03-8">
             <speaker>CRÉON.</speaker>
             <l part="F">Oui, je ne verrai pas</l>
             <l n="1440" xml:id="l1440">Comme un lâche témoin ton indigne trépas,</l>
@@ -2312,26 +2311,26 @@ nos yeux. [L]</note>
             <l n="1442" xml:id="l1442">De l'infâme regret de t'avoir pu survivre.</l>
             <l n="1443" xml:id="l1443">Invisible ennemi, sors avec mon sang.</l>
           </sp>
-          <sp xml:id="V03-9" who="CREUSE">
+          <sp who="CREUSE" xml:id="V03-9">
             <speaker>CRÉUSE.</speaker>
             <l n="1444" xml:id="l1444">Courez à lui, Cléone, il se perce le flanc.</l>
           </sp>
-          <sp xml:id="V03-10" who="CREON">
+          <sp who="CREON" xml:id="V03-10">
             <speaker>CRÉON.</speaker>
             <l n="1445" xml:id="l1445">Retourne : c'en est fait. Ma fille. Adieu, j'expire,</l>
             <l n="1446" xml:id="l1446">Et ce dernier soupir, met fin à mon martyre,</l>
             <l n="1447" xml:id="l1447">Je laisse à ton Jason le soin de nous venger.</l>
           </sp>
-          <sp xml:id="V03-11" who="CREUSE">
+          <sp who="CREUSE" xml:id="V03-11">
             <speaker>CRÉUSE.</speaker>
             <l n="1448" xml:id="l1448">Vain et triste confort, soulagement léger.</l>
-            <l n="1449" xml:id="l1449" part="I">Mon père...</l>
+            <l n="1449" part="I" xml:id="l1449">Mon père...</l>
           </sp>
-          <sp xml:id="V03-12" who="CLEONE">
+          <sp who="CLEONE" xml:id="V03-12">
             <speaker>CLÉONE.</speaker>
             <l part="F">Il ne vit plus, sa grande âme est partie.</l>
           </sp>
-          <sp xml:id="V03-13" who="CREUSE">
+          <sp who="CREUSE" xml:id="V03-13">
             <speaker>CRÉUSE.</speaker>
             <l n="1450" xml:id="l1450">Donnez donc à la mienne une même sortie,</l>
             <l n="1451" xml:id="l1451">Apportez-moi ce fer qui de ses maux vainqueur,</l>
@@ -2341,7 +2340,7 @@ nos yeux. [L]</note>
             <l n="1455" xml:id="l1455">Hélas que de douceur aurait un prompt trépas !</l>
             <l n="1456" xml:id="l1456">Dépêchez-vous Cléone aidez mon faible bras.</l>
           </sp>
-          <sp xml:id="V03-14" who="CLEONE">
+          <sp who="CLEONE" xml:id="V03-14">
             <speaker>CLÉONE.</speaker>
             <l n="1457" xml:id="l1457">Ne désespérez point, les Dieux plus pitoyables</l>
             <note type="L">Exorable : Qui se laisse fléchir par des supplications. [L]</note>
@@ -2353,9 +2352,9 @@ nos yeux. [L]</note>
             <l n="1463" xml:id="l1463">Et son étonnement va passer en fureur.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V04">
           <head>SCÈNE V. Jason, Créuse, Cléone, Theudas.</head>
-          <sp xml:id="V04-1" who="JASON">
+          <sp who="JASON" xml:id="V04-1">
             <speaker>JASON.</speaker>
             <l n="1464" xml:id="l1464">Que vois-je ici, grands dieux ! Quel spectacle d'horreur !</l>
             <l n="1465" xml:id="l1465">Quelque part que mes yeux portent ma vue errante,</l>
@@ -2367,7 +2366,7 @@ nos yeux. [L]</note>
             <l n="1471" xml:id="l1471">Et que ce scorpion sur la plaie écrasé,</l>
             <l n="1472" xml:id="l1472">Fournisse le remède au mal qu'il a causé.</l>
           </sp>
-          <sp xml:id="V04-2" who="CREUSE">
+          <sp who="CREUSE" xml:id="V04-2">
             <speaker>CRÉUSE.</speaker>
             <l n="1473" xml:id="l1473">Il n'en faut point chercher au poison qui me tue,</l>
             <l n="1474" xml:id="l1474">Laisse-moi le bonheur d'expirer à ta vue,</l>
@@ -2386,7 +2385,7 @@ nos yeux. [L]</note>
             <l n="1487" xml:id="l1487">Ah quel âpre tourment ! Quels douloureux abois !</l>
             <l n="1488" xml:id="l1488">Et que je sens de morts sans mourir une fois !</l>
           </sp>
-          <sp xml:id="V04-3" who="JASON">
+          <sp who="JASON" xml:id="V04-3">
             <speaker>JASON.</speaker>
             <l n="1489" xml:id="l1489">Quoi ? Vous m'estimez donc si lâche que de vivre</l>
             <l n="1490" xml:id="l1490">Et de si beaux chemins sont ouverts pour vous suivre ?</l>
@@ -2417,7 +2416,7 @@ nos yeux. [L]</note>
             <l n="1513" xml:id="l1513">Instruit suffisamment un généreux courage</l>
             <l n="1514" xml:id="l1514">Des moyens de braver le destin qui l'outrage.</l>
           </sp>
-          <sp xml:id="V04-4" who="CREUSE">
+          <sp who="CREUSE" xml:id="V04-4">
             <speaker>CRÉUSE.</speaker>
             <l n="1515" xml:id="l1515">Si Créuse eut jamais sur toi quelque pouvoir,</l>
             <l n="1516" xml:id="l1516">Ne t'abandonne point aux coups du désespoir ;</l>
@@ -2429,9 +2428,9 @@ nos yeux. [L]</note>
             <l n="1522" xml:id="l1522">J'emporte chez Pluton le nom de ton épouse,</l>
             <l n="1523" xml:id="l1523">Ah douleurs ! C'en est fait, je meurs à cette fois,</l>
             <l n="1524" xml:id="l1524">Et perds en ce moment la vie avec la voix.</l>
-            <l n="1525" xml:id="l1525" part="I">Si tu m'aimes...</l>
+            <l n="1525" part="I" xml:id="l1525">Si tu m'aimes...</l>
           </sp>
-          <sp xml:id="V04-5" who="JASON">
+          <sp who="JASON" xml:id="V04-5">
             <speaker>JASON.</speaker>
             <l part="F">Ce mot lui coupe la parole,</l>
             <l n="1526" xml:id="l1526">Et je ne suivrai pas son âme qui s'envole ?</l>
@@ -2478,9 +2477,9 @@ nos yeux. [L]</note>
             <l n="1565" xml:id="l1565">Toutefois qu'ont-ils fait qu'obéir à leur mère ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V05">
           <head>SCÈNE VI. Médée, Jason.</head>
-          <sp xml:id="V05-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-1">
             <speaker>MÉDÉE.</speaker>
             <l n="1566" xml:id="l1566">Lâche, ton désespoir encore en délibère ?</l>
             <l n="1567" xml:id="l1567">Lève les yeux perfide, et reconnais ce bras.</l>
@@ -2494,11 +2493,11 @@ nos yeux. [L]</note>
             <l n="1575" xml:id="l1575">Ces gages de nos feux ne feront plus pour moi</l>
             <l n="1576" xml:id="l1576">De reproches secrets à ton manque de foi.</l>
           </sp>
-          <sp xml:id="V05-2" who="JASON">
+          <sp who="JASON" xml:id="V05-2">
             <speaker>JASON.</speaker>
             <l n="1577" xml:id="l1577">Horreur de la nature exécrable tigresse !</l>
           </sp>
-          <sp xml:id="V05-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-3">
             <speaker>MÉDÉE.</speaker>
             <l n="1578" xml:id="l1578">Va, bienheureux amant, cajoler ta maîtresse,</l>
             <l n="1579" xml:id="l1579">À cet objet si cher tu dois tous tes discours</l>
@@ -2506,20 +2505,20 @@ nos yeux. [L]</note>
             <l n="1581" xml:id="l1581">Va lui, va lui conter tes rares aventures,</l>
             <l n="1582" xml:id="l1582">Et contre mes effets ne combats point d'injures.</l>
           </sp>
-          <sp xml:id="V05-4" who="JASON">
+          <sp who="JASON" xml:id="V05-4">
             <speaker>JASON.</speaker>
             <l n="1583" xml:id="l1583">Quoi tu m'oses braver, et ta brutalité</l>
             <l n="1584" xml:id="l1584">Pense encore échapper à mon bras irrité ?</l>
             <l n="1585" xml:id="l1585">Tu redoubles ta peine avec cette insolence.</l>
           </sp>
-          <sp xml:id="V05-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-5">
             <speaker>MÉDÉE.</speaker>
             <note type="L">Débile : Qui manque de force, au physique et au moral. [L]</note>
             <l n="1586" xml:id="l1586">Et que peut contre moi ta débile vaillance ?</l>
             <l n="1587" xml:id="l1587">Mon art faisait ta force, et tes exploits guerriers</l>
             <l n="1588" xml:id="l1588">Tiennent de mon secours ce qu'ils ont de lauriers.</l>
           </sp>
-          <sp xml:id="V05-6" who="JASON">
+          <sp who="JASON" xml:id="V05-6">
             <speaker>JASON.</speaker>
             <l n="1589" xml:id="l1589">Ah c'est trop en souffrir : il faut qu'un prompt supplice</l>
             <l n="1590" xml:id="l1590">De tant de cruautés, à la fin te punisse</l>
@@ -2527,7 +2526,7 @@ nos yeux. [L]</note>
             <l n="1592" xml:id="l1592">Que des bourreaux soudain m'en fassent la raison</l>
             <l n="1593" xml:id="l1593">Ta tête répondra de tant de barbaries.</l>
           </sp>
-          <sp xml:id="V05-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-7">
             <speaker>MÉDÉE.</speaker>
             <l n="1594" xml:id="l1594">Que sert de t'emporter à ces vaines furies,</l>
             <l n="1595" xml:id="l1595">Épargne cher époux des efforts que tu perds,</l>
@@ -2547,9 +2546,9 @@ nos yeux. [L]</note>
             <l n="1608" xml:id="l1608">Lequel est plus à craindre ou d'elle ou de deux rois.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="V06">
           <head>SCÈNE VII.</head>
-          <sp xml:id="V06-1" who="JASON">
+          <sp who="JASON" xml:id="V06-1">
             <speaker>JASON.</speaker>
             <note type="L">Nue : Toute masse de vapeur d'eau répandue dans l'atmosphère. [L]</note>
             <l n="1609" xml:id="l1609">Ô dieux ! Ce char volant, disparu dans la nue,</l>

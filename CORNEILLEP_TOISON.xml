@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>LA CONQUÊTE DE LA TOISON D'OR, TRAGÉDIE</title>
-        <author born="1606" born_location="Rouen" death="1684" death_location="Paris" academie="1647">CORNEILLE, Pierre</author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">CORNEILLE, Pierre</author>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE</p>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE</p>
         <p>Mai 2006</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -39,7 +38,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -51,7 +50,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1661">1661</docDate>
-      <docAuthor id="CORNEILLE, Pierre" bio="corneillep">Pierre Corneille</docAuthor>
+      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
       <docImprint>
         <privilege id=""/>
         <acheveImprime id=""/>
@@ -62,54 +61,50 @@
       </performance>
       <castList>
         <head>Acteurs </head>
-        <castItem><role xml:id="LAFRANCE" id="FRANCE" sex="2" type="P" statut="pays" age="A" stat_amour="néant">LA FRANCE</role>.</castItem>
-        <castItem><role xml:id="LAVICTOIRE" id="VICTOIRE" sex="2" type="P" statut="événement" age="A" stat_amour="néant">LA VICTOIRE</role>.</castItem>
-        <castItem><role xml:id="MARS" id="MARS" sex="1" type="D" statut="dieu" age="A" stat_amour="néant">MARS</role>.</castItem>
-        <castItem><role xml:id="LAPAIX" id="PAIX" sex="2" type="P" statut="événement" age="A" stat_amour="néant">LA PAIX</role>.</castItem>
-        <castItem><role xml:id="LHYMENEE" id="HYMENEE" sex="2" type="D" statut="dieu" age="A" stat_amour="néant">L'HYMÉNÉE</role>.</castItem>
+        <castItem><role age="A" civil="F" id="FRANCE" rend="female" stat_amour="néant" statut="personnification" type="A" xml:id="LAFRANCE">LA FRANCE</role>.</castItem>
+        <castItem><role age="allégorie" civil="F" id="VICTOIRE" rend="female" stat_amour="néant" statut="allégorie" type="A" xml:id="LAVICTOIRE">LA VICTOIRE</role>.</castItem>
+        <castItem><role age="A" civil="M" id="MARS" rend="male" stat_amour="néant" statut="dieu" type="D" xml:id="MARS">MARS</role>.</castItem>
+        <castItem><role age="A" civil="F" id="PAIX" rend="female" stat_amour="néant" statut="allégorie" type="A" xml:id="LAPAIX">LA PAIX</role>.</castItem>
+        <castItem><role age="A" civil="F" id="HYMENEE" rend="female" stat_amour="néant" statut="dieu" type="D" xml:id="LHYMENEE">L'HYMÉNÉE</role>.</castItem>
         <castItem>
-          <role xml:id="LENVIE" id="ENVIE" sex="2" type="P" statut="allégorie" age="A" stat_amour="néant">L'ENVIE</role>
+          <role age="A" civil="F" id="ENVIE" rend="female" stat_amour="néant" statut="allégorie" type="A" xml:id="LENVIE">L'ENVIE</role>
         </castItem>
         <castItem>
-          <role xml:id="LADISCORDE" id="DISCORDE" sex="2" type="H" statut="allégorie" age="A" stat_amour="néant">LA DISCORDE</role>
+          <role age="A" civil="F" id="DISCORDE" rend="female" stat_amour="néant" statut="allégorie" type="H" xml:id="LADISCORDE">LA DISCORDE</role>
         </castItem>
         <castItem>
-          <role xml:id="LECHOEURdemusique" id="CHOEUR_MUSIQUE" sex="9" type="H" statut="choeur" age="A" stat_amour="néant">LE CHOEUR de musique</role>
+          <role age="A" civil="G" id="CHOEUR_MUSIQUE" rend="group" stat_amour="néant" statut="choeur" type="H" xml:id="LECHOEURdemusique">LE CHOEUR de musique</role>
         </castItem>
-        <castItem><role xml:id="AAETE" id="AAETE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">AAETE</role>, roi de Colchos, fils du Soleil.</castItem>
-        <castItem><role xml:id="ABSYRTE" rend="junior" id="ABSYRTE" sex="1" type="H" statut="prince" age="J" stat_amour="néant">ABSYRTE</role>, fils d'Aaete.</castItem>
-        <castItem><role xml:id="CHALCIOPE" rend="junior" id="CHALCIOPE" sex="2" type="H" statut="prince" age="J" stat_amour="néant">CHALCIOPE</role>, fille d'Aaete, veuve de Phryxus.</castItem>
-        <castItem><role xml:id="MEDEE" rend="junior" id="MÉDÉE" sex="2" type="H" statut="prince" age="J" stat_amour="néant">MÉDÉE</role>, fille d'Aaete, amante de Jason.</castItem>
-        <castItem><role xml:id="HYPSIPYLE" id="HYPSIPYLE" sex="2" type="H" statut="roi" age="A" stat_amour="néant">HYPSIPYLE</role>, reine de Lemnos.</castItem>
-        <castItem><role xml:id="JASON" id="JASON" sex="1" type="H" statut="prince" age="A" stat_amour="néant">JASON</role>, prince de Thessalie, chef des Argonautes.</castItem>
-        <castItem><role xml:id="PELEE" id="PÉLÉE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">PÉLÉE</role>, argonaute.</castItem>
-        <castItem><role xml:id="IPHITE" id="IPHITE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">IPHITE</role>, argonaute.</castItem>
-        <castItem><role xml:id="ORPHEE" id="ORPHÉE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">ORPHÉE</role>, argonaute.</castItem>
-        <castItem><role xml:id="ZETHES" id="ZÉTHÈS" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">ZÉTHÈS</role>, argonaute allié, fils de Borée et d'Orithye.</castItem>
-        <castItem><role xml:id="CALAIS" id="CALAIS" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">CALAIS</role>, argonaute allié, fils de Borée et d'Orithye.</castItem>
-        <castItem><role xml:id="GLAUQUE" id="GLAUQUE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">GLAUQUE</role>, argonaute allié, fils de Borée et d'Orithye.</castItem>
-        <castItem><role xml:id="SOLEIL" id="SOLEIL" sex="1" type="D" statut="dieu" age="A" stat_amour="néant">SOLEIL</role>.</castItem>
-        <castItem><role xml:id="IRIS" id="IRIS" sex="2" type="D" statut="dieu" age="A" stat_amour="néant">IRIS</role>.</castItem>
-        <castItem><role xml:id="JUNON" id="JUNON" sex="2" type="D" statut="dieu" age="A" stat_amour="néant">JUNON</role>.</castItem>
-        <castItem><role xml:id="JUPITER" id="JUPITER" sex="1" type="D" statut="dieu" age="A" stat_amour="néant">JUPITER</role>.</castItem>
-        <castItem><role xml:id="DeuxTRITONS" id="TRITONS" sex="9" type="D" statut="dieu" age="A" stat_amour="néant">Deux TRITONS</role>.</castItem>
-        <castItem><role xml:id="DeuxSIRENES" id="SIRENES" sex="9" type="D" statut="dieu" age="A" stat_amour="néant">Deux SIRÈNES</role>.</castItem>
-        <castItem><role xml:id="QUATREVENTS" id="VENTS" sex="1" type="D" statut="personnification" age="A" stat_amour="néant">QUATRE VENTS</role>.</castItem>
+        <castItem><role age="A" civil="M" id="AAETE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="AAETE">AAETE</role>, roi de Colchos, fils du Soleil.</castItem>
+        <castItem><role age="A" civil="M" id="ABSYRTE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="ABSYRTE">ABSYRTE</role>, fils d'Aaete.</castItem>
+        <castItem><role age="A" civil="F" id="CHALCIOPE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="CHALCIOPE">CHALCIOPE</role>, fille d'Aaete, veuve de Phryxus.</castItem>
+        <castItem><role age="A" civil="F" id="MÉDÉE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="MEDEE">MÉDÉE</role>, fille d'Aaete, amante de Jason.</castItem>
+        <castItem><role age="A" civil="F" id="HYPSIPYLE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="HYPSIPYLE">HYPSIPYLE</role>, reine de Lemnos.</castItem>
+        <castItem><role age="A" civil="M" id="JASON" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="JASON">JASON</role>, prince de Thessalie, chef des Argonautes.</castItem>
+        <castItem><role age="A" civil="M" id="PÉLÉE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="PELEE">PÉLÉE</role>, argonaute.</castItem>
+        <castItem><role age="A" civil="M" id="IPHITE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="IPHITE">IPHITE</role>, argonaute.</castItem>
+        <castItem><role age="A" civil="M" id="ORPHÉE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ORPHEE">ORPHÉE</role>, argonaute.</castItem>
+        <castItem><role age="A" civil="M" id="ZÉTHÈS" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ZETHES">ZÉTHÈS</role>, argonaute allié, fils de Borée et d'Orithye.</castItem>
+        <castItem><role age="A" civil="M" id="CALAIS" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="CALAIS">CALAIS</role>, argonaute allié, fils de Borée et d'Orithye.</castItem>
+        <castItem><role age="A" civil="M" id="GLAUQUE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="GLAUQUE">GLAUQUE</role>, argonaute allié, fils de Borée et d'Orithye.</castItem>
+        <castItem><role age="A" civil="M" id="SOLEIL" rend="male" stat_amour="néant" statut="dieu" type="D" xml:id="SOLEIL">SOLEIL</role>.</castItem>
+        <castItem><role age="A" civil="F" id="IRIS" rend="female" stat_amour="néant" statut="dieu" type="D" xml:id="IRIS">IRIS</role>.</castItem>
+        <castItem><role age="A" civil="F" id="JUNON" rend="female" stat_amour="néant" statut="dieu" type="D" xml:id="JUNON">JUNON</role>.</castItem>
+        <castItem><role age="A" civil="M" id="JUPITER" rend="male" stat_amour="néant" statut="dieu" type="D" xml:id="JUPITER">JUPITER</role>.</castItem>
+        <castItem><role age="A" civil="G" id="TRITONS" rend="group" stat_amour="néant" statut="dieu" type="D" xml:id="DeuxTRITONS">Deux TRITONS</role>.</castItem>
+        <castItem><role age="A" civil="G" id="SIRENES" rend="group" stat_amour="néant" statut="dieu" type="D" xml:id="DeuxSIRENES">Deux SIRÈNES</role>.</castItem>
+        <castItem><role age="A" civil="M" id="VENTS" rend="male" stat_amour="néant" statut="personnification" type="D" xml:id="QuatreVENTS">Quatre VENTS</role>.<role n="LA PAIX" xml:id="PAIX"/><role n="LA FRANCE" xml:id="FRANCE"/><role n="LA VICTOIRE" xml:id="VICTOIRE"/><role n="L’HYMÉNÉE" xml:id="HYMENEE"/><role n="LA DISCORDE" xml:id="DISCORDE"/><role n="L’ENVIE" xml:id="ENVIE"/><role n="L’AMOUR" xml:id="AMOUR"/><role n="UNE VOIX" xml:id="VOIX"/><role n="SIRÈNES" xml:id="SIRENES"/><role n="PALLAS" xml:id="PALLAS"/><role n="CHŒUR" xml:id="CHOEUR"/></castItem>
       </castList>
-      <set location="Colchos" country="Georgie" periode="Temps mythologiques" link="">La scène est à Colchos.</set>
+      <set country="Georgie" link="" location="Colchos" periode="Temps mythologiques">La scène est à Colchos.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="prologue" n="1">
+      <div n="1" type="prologue" xml:id="A">
         <head>PROLOGUE</head>
-        <stage type="[N/A]">DÉCORATION DU PROLOGUE.
-L'heureux mariage de Sa Majesté, et la paix qu'il lui a pu donner à ses peuples, ayant été les motifs de la réjouissance publique pour laquelle cette tragédie a été préparée, non seulement il était juste qu'ils servissent de sujet au prologue qui la précède, mais il était même absolument impossible d'en choisir une plus illustre matière.
-L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé dans son enfoncement par une ville qui n'en est pas mieux traitée, ce qui marque le pitoyable état ou la France était réduite avant cette faveur du ciel, qu'elle a si longtemps souhaitée, et dont la bonté de son généreux monarque la fait jouir à présent.</stage>
-        <div2 xml:id="I01" type="scene" n="1">
+        <stage>DÉCORATION DU PROLOGUE. L'heureux mariage de Sa Majesté, et la paix qu'il lui a pu donner à ses peuples, ayant été les motifs de la réjouissance publique pour laquelle cette tragédie a été préparée, non seulement il était juste qu'ils servissent de sujet au prologue qui la précède, mais il était même absolument impossible d'en choisir une plus illustre matière. L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé dans son enfoncement par une ville qui n'en est pas mieux traitée, ce qui marque le pitoyable état ou la France était réduite avant cette faveur du ciel, qu'elle a si longtemps souhaitée, et dont la bonté de son généreux monarque la fait jouir à présent.</stage>
+        <div n="1" type="scene" xml:id="A01">
           <head>SCÈNE PREMIÈRE. La France, La Victoire.</head>
-          <stage type="[N/A]">DÉCORATION DU THÉÂTRE.
-L'heureux mariage de Sa Majesté, et la paix qu'il lui a plu donner à ses peuples, ayant été les motifs de la réjouissance publique pour laquelle cette tragédie a été préparée, non seulement il était juste qu'ils servissent de sujet au prologue qui la précède, mais il était même absolument impossible d'en choisir une plus illustre matière.
-L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé dans son enfoncement par une ville qui n'en est pas mieux traitée, ce qui marque le pitoyable état où la France était réduite avant cette faveur du ciel, qu'elle a si longtemps souhaitée, et dont la bonté de son généreux monarque la fait jouir à présent.</stage>
-          <sp xml:id="I01-1" who="FRANCE">
+          <stage>DÉCORATION DU THÉÂTRE. L'heureux mariage de Sa Majesté, et la paix qu'il lui a plu donner à ses peuples, ayant été les motifs de la réjouissance publique pour laquelle cette tragédie a été préparée, non seulement il était juste qu'ils servissent de sujet au prologue qui la précède, mais il était même absolument impossible d'en choisir une plus illustre matière. L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé dans son enfoncement par une ville qui n'en est pas mieux traitée, ce qui marque le pitoyable état où la France était réduite avant cette faveur du ciel, qu'elle a si longtemps souhaitée, et dont la bonté de son généreux monarque la fait jouir à présent.</stage>
+          <sp who="FRANCE" xml:id="A01-1">
             <speaker>LA FRANCE.</speaker>
             <l n="1" xml:id="l1">Doux charme des héros, immortelle Victoire,</l>
             <l n="2" xml:id="l2">Âme de leur vaillance, et source de leur gloire,</l>
@@ -124,7 +119,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="11" xml:id="l11">Et quand je vois quel prix me coûtent vos lauriers,</l>
             <l n="12" xml:id="l12">J'en vois avec chagrin couronner mes guerriers.</l>
           </sp>
-          <sp xml:id="I01-2" who="VICTOIRE">
+          <sp who="VICTOIRE" xml:id="A01-2">
             <speaker>LA VICTOIRE.</speaker>
             <l n="13" xml:id="l13">Je ne me repents point, incomparable France,</l>
             <l n="14" xml:id="l14">De vous avoir suivie avec tant de constance :</l>
@@ -134,7 +129,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="18" xml:id="l18">De moi qui de vos fils assure la mémoire,</l>
             <l n="19" xml:id="l19">Qui fais marcher partout l'effroi devant leurs pas ?</l>
           </sp>
-          <sp xml:id="I01-3" who="FRANCE">
+          <sp who="FRANCE" xml:id="A01-3">
             <speaker>LA FRANCE.</speaker>
             <l n="20" xml:id="l20">Ah ! Victoire, pour fils n'ai-je que des soldats ?</l>
             <l n="21" xml:id="l21">La gloire qui les couvre, à moi-même funeste,</l>
@@ -166,7 +161,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="47" xml:id="l47">Ce coeur se laisse vaincre aux voeux que j'ai formés,</l>
             <l n="48" xml:id="l48">Pour faire respirer ce que vous opprimez.</l>
           </sp>
-          <sp xml:id="I01-4" who="VICTOIRE">
+          <sp who="VICTOIRE" xml:id="A01-4">
             <speaker>LA VICTOIRE.</speaker>
             <l n="49" xml:id="l49">France, j'opprime donc ce que je favorise !</l>
             <l n="50" xml:id="l50">À ce nouveau reproche excusez ma surprise :</l>
@@ -174,7 +169,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="52" xml:id="l52">Ces termes odieux pouvaient être permis,</l>
             <l n="53" xml:id="l53">Qu'eux seuls de ma conduite avaient droit de se plaindre.</l>
           </sp>
-          <sp xml:id="I01-5" who="FRANCE">
+          <sp who="FRANCE" xml:id="A01-5">
             <speaker>LA FRANCE.</speaker>
             <l n="54" xml:id="l54">Vos dons sont à chérir, mais leur suite est à craindre :</l>
             <l n="55" xml:id="l55">Pour faire deux héros ils font cent malheureux ;</l>
@@ -182,7 +177,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="57" xml:id="l57">M'éclaire à voir les maux qu'à ma gloire il attache,</l>
             <l n="58" xml:id="l58">Le sang dont il m'épuise, et les nerfs qu'il m'arrache.</l>
           </sp>
-          <sp xml:id="I01-6" who="VICTOIRE">
+          <sp who="VICTOIRE" xml:id="A01-6">
             <speaker>LA VICTOIRE.</speaker>
             <l n="59" xml:id="l59">Je n'ose condamner de si justes ennuis,</l>
             <l n="60" xml:id="l60">Quand je vois quels malheurs malgré moi je produis ;</l>
@@ -192,12 +187,12 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="64" xml:id="l64">Qui vous lance du ciel de farouches regards ;</l>
             <l n="65" xml:id="l65">Il menace, il descend : apaisez sa colère</l>
             <l n="66" xml:id="l66">Par le prompt désaveu d'un souhait téméraire.</l>
-            <stage type="[N/A]">Le ciel s'ouvre et fait voir Mars en posture menaçante, un pied en l'air, et l'autre porté sur son étoile. Il descend ainsi à un de ses côtés du théâtre, qu'il traverse en parlant, et sitôt qu'il a parlé, il remonte au même lieu dont il est parti.</stage>
+            <stage>Le ciel s'ouvre et fait voir Mars en posture menaçante, un pied en l'air, et l'autre porté sur son étoile. Il descend ainsi à un de ses côtés du théâtre, qu'il traverse en parlant, et sitôt qu'il a parlé, il remonte au même lieu dont il est parti.</stage>
           </sp>
-        </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        </div>
+        <div n="2" type="scene" xml:id="A02">
           <head>SCÈNE II. Mars, la France, la Victoire.</head>
-          <sp xml:id="I02-1" who="MARS">
+          <sp who="MARS" xml:id="A02-1">
             <speaker>MARS.</speaker>
             <l n="67" xml:id="l67">France ingrate, tu veux la paix !</l>
             <l n="68" xml:id="l68">Et pour toute reconnaissance</l>
@@ -219,12 +214,12 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="84" xml:id="l84">J'en veux bien faire encor ta compagne éternelle ;</l>
             <l n="85" xml:id="l85">Mais sache que je la rappelle,</l>
             <l n="86" xml:id="l86">Si tu manques d'en bien user.</l>
-            <stage type="[N/A]">Avant que de disparaître, ce dieu, en colère contre la France, lui fait voir la Paix, qu'elle demande avec tant d'ardeur, prisonnière dans son palais, entre les mains de la Discorde et de l'Envie, qu'il lui a donnée pour garder. Ce palais a pour colonnes des canons, qui ont pour bases des mortiers, et des boulets pour chapiteaux; le tout accompagné, pour ornement, de trompettes, de tambours, et autres instruments de guerre entrelacés ensemble et découpés à jour, qui font comme un second rang de colonnes. Le lambris est composé de trophée d'armes, et de tout ce qui peut désigner et embellir la demeure de ce dieu des batailles.</stage>
+            <stage>Avant que de disparaître, ce dieu, en colère contre la France, lui fait voir la Paix, qu'elle demande avec tant d'ardeur, prisonnière dans son palais, entre les mains de la Discorde et de l'Envie, qu'il lui a donnée pour garder. Ce palais a pour colonnes des canons, qui ont pour bases des mortiers, et des boulets pour chapiteaux; le tout accompagné, pour ornement, de trompettes, de tambours, et autres instruments de guerre entrelacés ensemble et découpés à jour, qui font comme un second rang de colonnes. Le lambris est composé de trophée d'armes, et de tout ce qui peut désigner et embellir la demeure de ce dieu des batailles.</stage>
           </sp>
-        </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        </div>
+        <div n="3" type="scene" xml:id="A03">
           <head>SCÈNE III. La Paix, La Discorde, L'Envie, La France, La Vicroire.</head>
-          <sp xml:id="I03-1" who="PAIX">
+          <sp who="PAIX" xml:id="A03-1">
             <speaker>LA PAIX.</speaker>
             <l n="87" xml:id="l87">En vain à tes soupirs il est inexorable :</l>
             <l n="88" xml:id="l88">Un dieu plus fort que lui me va rejoindre à toi ;</l>
@@ -277,22 +272,22 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="135" xml:id="l135">Mais enfin je le vois, leur accord me l'envoie.</l>
             <l n="136" xml:id="l136">France, ouvre ton coeur à la joie ;</l>
             <l n="137" xml:id="l137">Et vous, monstres, fuyez ; ce grand jour est venu.</l>
-            <stage type="[N/A]">L'Hyménée paraît, couronné de leurs, portant en sa main droite un dard semé de lys et de roses, et en la gauche le portrait de la Reine peint sur son bouclier.</stage>
+            <stage>L'Hyménée paraît, couronné de leurs, portant en sa main droite un dard semé de lys et de roses, et en la gauche le portrait de la Reine peint sur son bouclier.</stage>
           </sp>
-        </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        </div>
+        <div n="4" type="scene" xml:id="A04">
           <head>SCÈNE IV. L'Hyménée, La Paix, la Discorde, l'Envie, La France, La Victoire, Choeur de musique.</head>
-          <sp xml:id="I04-1" who="DISCORDE">
+          <sp who="DISCORDE" xml:id="A04-1">
             <speaker>LA DISCORDE.</speaker>
             <l n="138" xml:id="l138">En vain tu le veux croire, orgueilleuse captive :</l>
             <l n="139" xml:id="l139">Pourrions-nous fuir le secours qui t'arrive ?</l>
           </sp>
-          <sp xml:id="I04-2" who="ENVIE">
+          <sp who="ENVIE" xml:id="A04-2">
             <speaker>L'ENVIE.</speaker>
             <l n="140" xml:id="l140">Pourrions-nous craindre un dieu qui contre nos fureurs</l>
             <l n="141" xml:id="l141">Ne prend pour armes que des fleurs ?</l>
           </sp>
-          <sp xml:id="I04-3" who="HYMENEE">
+          <sp who="HYMENEE" xml:id="A04-3">
             <speaker>L'HYMÉNÉE.</speaker>
             <l n="142" xml:id="l142">Oui, monstres, oui, craignez cette main vengeresse ;</l>
             <l n="143" xml:id="l143">Mais craignez encor plus cette grande princesse</l>
@@ -305,41 +300,41 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="150" xml:id="l150">Tombez, fers odieux, à ce divin aspect,</l>
             <l n="151" xml:id="l151">Et pour lui rendre un prompt hommage,</l>
             <l n="152" xml:id="l152">Anéantissez-vous de honte ou de respect.</l>
-            <stage type="[N/A]">Il présente ce portrait aux yeux de la Discorde et de l'Envie, qui trébuchent aussitôt aux enfers, et ensuite il le présente aux chaînes qui tiennent la Paix prisonnière, lesquelles tombent et se brisent tout à l'heure.</stage>
+            <stage>Il présente ce portrait aux yeux de la Discorde et de l'Envie, qui trébuchent aussitôt aux enfers, et ensuite il le présente aux chaînes qui tiennent la Paix prisonnière, lesquelles tombent et se brisent tout à l'heure.</stage>
           </sp>
-          <sp xml:id="I04-4" who="PAIX">
+          <sp who="PAIX" xml:id="A04-4">
             <speaker>LA PAIX.</speaker>
             <l n="153" xml:id="l153">Dieu des sacrés plaisirs, vous venez de me rendre</l>
             <l n="154" xml:id="l154">Un bien dont les dieux même ont lieu d'être jaloux ;</l>
             <l n="155" xml:id="l155">Mais ce n'est pas assez, il est temps de descendre,</l>
             <l n="156" xml:id="l156">Et de remplir les voeux qu'en terre on fait pour nous.</l>
           </sp>
-          <sp xml:id="I04-5" who="HYMENEE">
+          <sp who="HYMENEE" xml:id="A04-5">
             <speaker>L'HYMÉNÉE.</speaker>
             <l n="157" xml:id="l157">Il en est temps, déesse, et c'est trop faire attendre</l>
             <l n="158" xml:id="l158">Les effets d'un espoir si doux.</l>
             <l n="159" xml:id="l159">Vous donc, mes ministres fidèles,</l>
             <l n="160" xml:id="l160">Venez, amours, et prêtez-nous vos ailes.</l>
-            <stage type="[N/A]">Quatre Amours descendent du ciel, deux de chaque côtés, et s'attachent à l'Hyménée et à la Paix pour les apporter en terre.</stage>
+            <stage>Quatre Amours descendent du ciel, deux de chaque côtés, et s'attachent à l'Hyménée et à la Paix pour les apporter en terre.</stage>
           </sp>
-          <sp xml:id="I04-6" who="FRANCE">
+          <sp who="FRANCE" xml:id="A04-6">
             <speaker>LA FRANCE.</speaker>
             <l n="161" xml:id="l161">Peuple, fais voir ta joie à ces divinités</l>
             <l n="162" xml:id="l162">Qui vont tarir le cours de tes calamités.</l>
           </sp>
-          <sp xml:id="I04-7" who="CHOEUR_MUSIQUE">
+          <sp who="CHOEUR" xml:id="A04-7">
             <speaker>CHOEUR DE MUSIQUE.</speaker>
-            <stage type="[N/A]">L'Hyménée, la Paix et les quatre amours descendent cependant qu'il chante.</stage>
+            <stage>L'Hyménée, la Paix et les quatre amours descendent cependant qu'il chante.</stage>
             <l n="163" xml:id="l163">Descends, Hymen, et ramène sur terre</l>
             <l n="164" xml:id="l164">Les délices avec la paix ;</l>
             <l n="165" xml:id="l165">Descends, objet divin de nos plus doux souhaits,</l>
             <l n="166" xml:id="l166">Et par tes feux éteins ceux de la guerre.</l>
-            <stage type="[N/A]">Après que l'Hyménée et la Paix sont descendus, les quatre Amours remontent du ciel, premièrement de droit il tous quatre ensemble, et puis se séparant deu à deux et croisant leur vol, en sorte que ceux qui sont au côté droit se retirent à gauche dans les nues, et ceux qui sont au gauche se perdent dans celles du côté droit.</stage>
+            <stage>Après que l'Hyménée et la Paix sont descendus, les quatre Amours remontent du ciel, premièrement de droit il tous quatre ensemble, et puis se séparant deu à deux et croisant leur vol, en sorte que ceux qui sont au côté droit se retirent à gauche dans les nues, et ceux qui sont au gauche se perdent dans celles du côté droit.</stage>
           </sp>
-        </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        </div>
+        <div n="5" type="scene" xml:id="A05">
           <head>SCÈNE V. L'Hyménée, La Paix, La France, La Victoire.</head>
-          <sp xml:id="I05-1" who="FRANCE">
+          <sp who="FRANCE" xml:id="A05-1">
             <speaker>LA FRANCE, à La Paix.</speaker>
             <l n="167" xml:id="l167">Adorable souhait des peuples gémissants,</l>
             <l n="168" xml:id="l168">Féconde sûreté des travaux innocents,</l>
@@ -350,7 +345,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="173" xml:id="l173">Puis-je en croire mes yeux, et dans chaque province</l>
             <l n="174" xml:id="l174">De votre heureux retour faire bénir mon prince ?</l>
           </sp>
-          <sp xml:id="I05-2" who="PAIX">
+          <sp who="PAIX" xml:id="A05-2">
             <speaker>LA PAIX.</speaker>
             <l n="175" xml:id="l175">France, apprends que lui-même il aime à le devoir</l>
             <l n="176" xml:id="l176">À ces yeux dont tu vois le souverain pouvoir.</l>
@@ -360,26 +355,26 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="180" xml:id="l180">Pour n'avoir pas besoin d'emprunter rien ailleurs.</l>
             <l n="181" xml:id="l181">Ose donc, et fais voir que ta reconnaissance...</l>
           </sp>
-          <sp xml:id="I05-3" who="FRANCE">
+          <sp who="FRANCE" xml:id="A05-3">
             <speaker>LA FRANCE.</speaker>
             <l n="182" xml:id="l182">De grâce, voyez mieux quelle est mon impuissance.</l>
             <l n="183" xml:id="l183">Est-il effort humain qui jamais ait tiré</l>
             <l n="184" xml:id="l184">Des spectacles pompeux d'un sein si déchiré ?</l>
             <l n="185" xml:id="l185">Il faudroit que vos soins par le cours des années...</l>
           </sp>
-          <sp xml:id="I05-4" who="HYMENEE">
+          <sp who="HYMENEE" xml:id="A05-4">
             <speaker>L'HYMÉNÉE.</speaker>
             <l n="186" xml:id="l186">Ces traits divins n'ont pas des forces si bornées.</l>
             <l n="187" xml:id="l187">Mes roses et mes lys par eux en un moment</l>
             <l n="188" xml:id="l188">À ces lieux désolés vont servir d'ornement.</l>
             <l n="189" xml:id="l189">Promets, et tu verras l'effet de ma parole.</l>
           </sp>
-          <sp xml:id="I05-5" who="FRANCE">
+          <sp who="FRANCE" xml:id="A05-5">
             <speaker>LA FRANCE.</speaker>
             <l n="190" xml:id="l190">J'entreprendrai beaucoup ; mais ce qui m'en console</l>
-            <l n="191" xml:id="l191" part="I">C'est que sous votre aveu...</l>
+            <l n="191" part="I" xml:id="l191">C'est que sous votre aveu...</l>
           </sp>
-          <sp xml:id="I05-6" who="HYMENEE">
+          <sp who="HYMENEE" xml:id="A05-6">
             <speaker>L'HYMÉNÉE.</speaker>
             <l part="F">Va, n'appréhende rien :</l>
             <l n="192" xml:id="l192">Nous serons à l'envi nous-mêmes ton soutien.</l>
@@ -387,12 +382,12 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="194" xml:id="l194">Que des plus heureux temps l'éclat s'y renouvelle :</l>
             <l n="195" xml:id="l195">Nous en partagerons la gloire et le souci.</l>
           </sp>
-          <sp xml:id="I05-7" who="VICTOIRE">
+          <sp who="VICTOIRE" xml:id="A05-7">
             <speaker>LA VICTOIRE.</speaker>
             <l n="196" xml:id="l196">Cependant la Victoire est inutile ici :</l>
             <l n="197" xml:id="l197">Puisque la paix y règne, il faut qu'elle s'exile.</l>
           </sp>
-          <sp xml:id="I05-8" who="PAIX">
+          <sp who="PAIX" xml:id="A05-8">
             <speaker>LA PAIX.</speaker>
             <l n="198" xml:id="l198">Non, Victoire : avec moi tu n'es pas inutile.</l>
             <l n="199" xml:id="l199">Si la France en repos n'a plus où t'employer,</l>
@@ -406,7 +401,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="207" xml:id="l207">Fais-lui donc cette grâce, et prends part comme nous</l>
             <l n="208" xml:id="l208">À ce qu'auront d'heureux des spectacles si doux.</l>
           </sp>
-          <sp xml:id="I05-9" who="VICTOIRE">
+          <sp who="VICTOIRE" xml:id="A05-9">
             <speaker>LA VICTOIRE.</speaker>
             <l n="209" xml:id="l209">J'y consens, et m'arrête aux rives de la Seine,</l>
             <l n="210" xml:id="l210">Pour rendre un long hommage à l'une et l'autre reine,</l>
@@ -421,7 +416,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="219" xml:id="l219">Et sous d'autres climats couronner ses hauts faits</l>
             <l n="220" xml:id="l220">Des lauriers qu'en ceux-ci lui dérobe la Paix !</l>
           </sp>
-          <sp xml:id="I05-10" who="HYMENEE">
+          <sp who="HYMENEE" xml:id="A05-10">
             <speaker>L'HYMÉNÉE.</speaker>
             <l n="221" xml:id="l221">Tu vas voir davantage, et les dieux, qui m'ordonnent</l>
             <l n="222" xml:id="l222">Qu'attendant tes lauriers mes myrtes le couronnent,</l>
@@ -436,33 +431,34 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="231" xml:id="l231">Et la paix, qui succède à ses tristes efforts,</l>
             <l n="232" xml:id="l232">Te livre par ma main leurs plus rares trésors.</l>
           </sp>
-          <sp xml:id="I05-11" who="PAIX">
+          <sp who="PAIX" xml:id="A05-11">
             <speaker>LA PAIX.</speaker>
             <l n="233" xml:id="l233">Allons sans plus tarder mettre ordre à tes spectacles ;</l>
             <l n="234" xml:id="l234">Et pour les commencer par de nouveaux miracles,</l>
             <l n="235" xml:id="l235">Toi que rend tout-puissant ce chef-d'oeuvre des cieux,</l>
             <l n="236" xml:id="l236">Hymen, fais-lui changer la face de ces lieux.</l>
           </sp>
-          <sp xml:id="I05-12" who="HYMENEE">
+          <sp who="HYMENEE" xml:id="A05-12">
             <speaker>L'HYMÉNÉE, seule.</speaker>
             <l n="237" xml:id="l237">Naissez à cet aspect, fontaines, fleurs, bocages ;</l>
             <l n="238" xml:id="l238">Chassez de ces débris les funestes images,</l>
             <l n="239" xml:id="l239">Et formez des jardins tels qu'avec quatre mots</l>
             <l n="240" xml:id="l240">Le grand art de Médée en fit naître à Colchos.</l>
-            <stage type="[N/A]">Tout le théâtre se change en un jardin magnifique à la vue du portrait de la Reine, que l'Hyménée lui présente.</stage>
+            <stage>Tout le théâtre se change en un jardin magnifique à la vue du portrait de la Reine, que l'Hyménée lui présente.</stage>
           </sp>
-        </div2>
-      </div1>
-      <div1 xml:id="II" type="act" n="1">
+        </div>
+      </div>
+      <div n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <stage type="decor">DÉCORATION DU PREMIER ACTE. Ce grand jardin, qui en fait la scène, est composé de trois rangs de cyprès, à côté desquels on voit alternativement en chaque châssis des statues de marbre blanc à l'antique, qui versent de gros jets d'eau dans de grands bassins, soutenues par des tritons, qui leur servent de piédestal, ou trois vases qui portent, l'un des orangers et les deux autres diverses fleurs en confusion, chantournées et découpées à jour. Les ornements de ces vases et de ces bassins sont rehaussés d'or, et ces statues portent sur leurs têtes des corbeilles d'or treillissées et remplies de pareilles leurs. Le théâtre est fermé par une grand arcade de verdure, orné de festons de leurs avec une grande corbeille d'or sur le milieu, qui en est remplie par les autres. Quatre autres arcades qui le suivent composent avec elle un berceau qui laisse voir plus loin un autre jardin de cyprès, entremêlées avec quantité d'autres statues à l'antique, et la perspective du fond borne la vue par un parterre encore plus éloigné, au milieu duquel s'élève une ontaine avec divers autres jets d'eau, qui ne font pas le moindre agrément de ce spectacle.</stage>
-        <div2 xml:id="II01" type="scene" n="1">
+        <stage>DÉCORATION DU PREMIER ACTE.</stage>
+        <stage>Ce grand jardin, qui en fait la scène, est composé de trois rangs de cyprès, à côté desquels on voit alternativement en chque châssis des statues de marbre blanc à l'antique, qui versent de gros jets d'eau dans de grands bassins, soutenues par des tritons, qui leur servent de piédestal, ou trois vases qui portent, l'un des orangers et les deux autres diverses fleurs en confusion, chantournées et découpées à jour. Les ornements de ces vases et de ces bassins sont rehaussés d'or, et ces statues portent sur leurs têtes des corbeilles d'or treillissées et remplies de pareilles leurs. Le théâtre est fermé par une grand arcade de verdure, orné de festons de leurs avec une grande corbeille d'or sur le milieu, qui en est remplie par les autres. Quatre autres arcades qui le suivent composent avec elle un berceau qui laisse voir plus loin un autre jardin de cyprès, entremêlées avec quantité d'autres statues à l'antique, et la perspective du fond borne la vue par un parterre encore plus éloigné, au milieu duquel s'élève une ontaine avec divers autres jets d'eau, qui ne font pas le moindre agrément de ce spectacle.</stage>
+        <div n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Chalciope, Médée.</head>
-          <sp xml:id="II01-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="I01-1">
             <speaker>MÉDÉE.</speaker>
             <l n="241" xml:id="l241">Parmi ces grands sujets d'allégresse publique,</l>
             <l n="242" xml:id="l242">Vous portez sur le front un air mélancolique :</l>
-            <l n="243" xml:id="l243">Votre humeur paraît sombre ; et vous semblez, ma soeur,</l>
+            <l n="243" xml:id="l243">Votre humeur paroît sombre ; et vous semblez, ma soeur,</l>
             <l n="244" xml:id="l244">Murmurer en secret contre notre bonheur.</l>
             <l n="245" xml:id="l245">La veuve de Phryxus et la fille d'Aaete</l>
             <l n="246" xml:id="l246">Plaint-elle de Persès la honte et la défaite ?</l>
@@ -471,7 +467,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="249" xml:id="l249">Et le vaillant Jason pourroit-il vous déplaire</l>
             <l n="250" xml:id="l250">Alors que dans son trône il rétablit mon père ?</l>
           </sp>
-          <sp xml:id="II01-2" who="CHALCIOPE">
+          <sp who="CHALCIOPE" xml:id="I01-2">
             <speaker>CHALCIOPE.</speaker>
             <l n="251" xml:id="l251">Vous m'offensez, ma soeur : celles de notre rang</l>
             <l n="252" xml:id="l252">Ne savent point trahir leur pays ni leur sang ;</l>
@@ -504,7 +500,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="279" xml:id="l279">Et son départ subit ne vous laisseroit plus</l>
             <l n="280" xml:id="l280">Qu'un coeur embarrassé de soucis superflus.</l>
           </sp>
-          <sp xml:id="II01-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="I01-3">
             <speaker>MÉDÉE.</speaker>
             <l n="281" xml:id="l281">La remontrance est douce, obligeante, civile ;</l>
             <l n="282" xml:id="l282">Mais à parler sans feinte elle est fort inutile :</l>
@@ -519,7 +515,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="291" xml:id="l291">Mais s'il m'en doit bientôt coûter un repentir,</l>
             <l n="292" xml:id="l292">D'où pouvez-vous savoir qu'il soit prêt à partir ?</l>
           </sp>
-          <sp xml:id="II01-4" who="CHALCIOPE">
+          <sp who="CHALCIOPE" xml:id="I01-4">
             <speaker>CHALCIOPE.</speaker>
             <l n="293" xml:id="l293">Je le sais de mes fils, qu'une ardeur de jeunesse</l>
             <l n="294" xml:id="l294">Emporte malgré moi jusqu'à le suivre en Grèce,</l>
@@ -533,7 +529,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="302" xml:id="l302">Tant leur valeur rougit sitôt qu'elle est oisive.</l>
             <l n="303" xml:id="l303">Jason veut seulement une grâce du roi.</l>
           </sp>
-          <sp xml:id="II01-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="I01-5">
             <speaker>MÉDÉE.</speaker>
             <l n="304" xml:id="l304">Cette grâce, ma soeur, n'est sans doute que moi.</l>
             <l n="305" xml:id="l305">Ce n'est plus avec vous qu'il faut que je déguise.</l>
@@ -544,9 +540,9 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="310" xml:id="l310">Il a sauvé l'état, sans chercher qu'à me plaire.</l>
             <l n="311" xml:id="l311">Vous l'avez vu peut-être, et vos yeux sont témoins</l>
             <l n="312" xml:id="l312">De combien chaque jour il y donne de soins,</l>
-            <l n="313" xml:id="l313" part="I">Avec combien d'ardeur...</l>
+            <l n="313" part="I" xml:id="l313">Avec combien d'ardeur...</l>
           </sp>
-          <sp xml:id="II01-6" who="CHALCIOPE">
+          <sp who="CHALCIOPE" xml:id="I01-6">
             <speaker>CHALCIOPE.</speaker>
             <l part="F">Oui, je l'ai vu moi-même,</l>
             <l n="314" xml:id="l314">Que pour plaire à vos yeux il prend un soin extrême ;</l>
@@ -558,13 +554,13 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="320" xml:id="l320">Le souvenir des traits qui vous ont su blesser.</l>
             <l n="321" xml:id="l321">En un mot, vous l'aimez, et ce que j'appréhende...</l>
           </sp>
-          <sp xml:id="II01-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="I01-7">
             <speaker>MÉDÉE.</speaker>
             <l n="322" xml:id="l322">Je suis prête à l'aimer, si le roi le commande ;</l>
             <l n="323" xml:id="l323">Mais jusque-là, ma soeur, je ne fais que souffrir</l>
             <l n="324" xml:id="l324">Les soupirs et les voeux qu'il prend soin de m'offrir.</l>
           </sp>
-          <sp xml:id="II01-8" who="CHALCIOPE">
+          <sp who="CHALCIOPE" xml:id="I01-8">
             <speaker>CHALCIOPE.</speaker>
             <l n="325" xml:id="l325">Quittez ce faux devoir dont l'ombre vous amuse.</l>
             <l n="326" xml:id="l326">Vous irez plus avant si le roi le refuse ;</l>
@@ -572,10 +568,10 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="328" xml:id="l328">Vous obéirez mal s'il vous défend d'aimer.</l>
             <l n="329" xml:id="l329">Je sais... Mais le voici, que le prince accompagne.</l>
           </sp>
-        </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        </div>
+        <div n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Aaete, Absyrte, Chalciope, Médée.</head>
-          <sp xml:id="II02-1" who="AAETE">
+          <sp who="AAETE" xml:id="I02-1">
             <speaker>AAETE.</speaker>
             <l n="330" xml:id="l330">Enfin nos ennemis nous cèdent la campagne,</l>
             <l n="331" xml:id="l331">Et des Scythes défaits le camp abandonné</l>
@@ -605,7 +601,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="355" xml:id="l355">N'est-il herbes, parfums, ni chants mystérieux,</l>
             <l n="356" xml:id="l356">Qui puissent nous unir ces bras victorieux ?</l>
           </sp>
-          <sp xml:id="II02-2" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="I02-2">
             <speaker>ABSYRTE.</speaker>
             <l n="357" xml:id="l357">Seigneur, il est en vous d'avoir cet avantage :</l>
             <l n="358" xml:id="l358">Le charme qu'il y faut est tout sur son visage.</l>
@@ -620,7 +616,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="367" xml:id="l367">Et tous ainsi que lui permettroient à l'amour</l>
             <l n="368" xml:id="l368">D'obstiner des héros à grossir votre cour.</l>
           </sp>
-          <sp xml:id="II02-3" who="AAETE">
+          <sp who="AAETE" xml:id="I02-3">
             <speaker>AAETE.</speaker>
             <l n="369" xml:id="l369">Le refus d'un tel heur auroit trop d'injustice.</l>
             <l n="370" xml:id="l370">Puis-je d'un moindre prix payer un tel service ?</l>
@@ -632,7 +628,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="376" xml:id="l376">L'incomparable choix d'un si grand successeur.</l>
             <l n="377" xml:id="l377">Ma fille, si jamais les droits de la naissance...</l>
           </sp>
-          <sp xml:id="II02-4" who="CHALCIOPE">
+          <sp who="CHALCIOPE" xml:id="I02-4">
             <speaker>CHALCIOPE.</speaker>
             <l n="378" xml:id="l378">Seigneur, je vous réponds de son obéissance ;</l>
             <l n="379" xml:id="l379">Mais je ne réponds pas que vous trouviez les Grecs</l>
@@ -660,7 +656,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="401" xml:id="l401">La Grèce en leur idée est un séjour céleste,</l>
             <l n="402" xml:id="l402">Un lieu seul digne d'eux. Par là jugez du reste.</l>
           </sp>
-          <sp xml:id="II02-5" who="AAETE">
+          <sp who="AAETE" xml:id="I02-5">
             <speaker>AAETE.</speaker>
             <l n="403" xml:id="l403">Faites-les-moi venir : que de leur propre voix</l>
             <l n="404" xml:id="l404">J'apprenne les raisons de cet injuste choix.</l>
@@ -687,7 +683,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="425" xml:id="l425">Et c'est toujours prudence, en un péril funeste,</l>
             <l n="426" xml:id="l426">D'offrir une moitié pour conserver le reste.</l>
           </sp>
-          <sp xml:id="II02-6" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="I02-6">
             <speaker>ABSYRTE.</speaker>
             <l n="427" xml:id="l427">Vous les connoissez mal : ils sont trop généreux</l>
             <l n="428" xml:id="l428">Pour vous vendre à ce prix le besoin qu'on a d'eux.</l>
@@ -708,7 +704,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="443" xml:id="l443">Et l'hymen unira par des liens plus doux</l>
             <l n="444" xml:id="l444">Des rois sauvés par eux à des rois faits par nous.</l>
           </sp>
-          <sp xml:id="II02-7" who="AAETE">
+          <sp who="AAETE" xml:id="I02-7">
             <speaker>AAETE.</speaker>
             <l n="445" xml:id="l445">Vous regardez trop tôt comme votre héritage</l>
             <l n="446" xml:id="l446">Un trône dont en vain vous craignez le partage.</l>
@@ -719,10 +715,10 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="451" xml:id="l451">Les voici : parlons-leur ; et pour les arrêter,</l>
             <l n="452" xml:id="l452">Ne leur refusons rien qu'ils daignent souhaiter.</l>
           </sp>
-        </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        </div>
+        <div n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Aaete, Absyrte, Médée, Jason, Pélée, Iphite, Orphée, Argonautes.</head>
-          <sp xml:id="II03-1" who="AAETE">
+          <sp who="AAETE" xml:id="I03-1">
             <speaker>AAETE.</speaker>
             <l n="453" xml:id="l453">Guerriers par qui mon sort devient digne d'envie,</l>
             <l n="454" xml:id="l454">Héros à qui je dois et le sceptre et la vie,</l>
@@ -737,7 +733,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="463" xml:id="l463">Et je croirois devoir à ce précieux choix</l>
             <l n="464" xml:id="l464">L'heur de vous rendre un peu de ce que je vous dois.</l>
           </sp>
-          <sp xml:id="II03-2" who="JASON">
+          <sp who="JASON" xml:id="I03-2">
             <speaker>JASON.</speaker>
             <l n="465" xml:id="l465">Si nos bras, animés par vos destins propices,</l>
             <l n="466" xml:id="l466">Vous ont rendu, seigneur, quelques foibles services,</l>
@@ -747,7 +743,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="470" xml:id="l470">Et pour ce qu'on a fait et pour ce qu'on peut faire ;</l>
             <l n="471" xml:id="l471">Et s'il nous est permis de vous le demander...</l>
           </sp>
-          <sp xml:id="II03-3" who="AAETE">
+          <sp who="AAETE" xml:id="I03-3">
             <speaker>AAETE.</speaker>
             <l n="472" xml:id="l472">Attendez tout d'un roi qui veut tout accorder :</l>
             <l n="473" xml:id="l473">J'en jure le dieu Mars, et le Soleil mon père ;</l>
@@ -755,35 +751,35 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="475" xml:id="l475">Si mes serments pour vous n'ont de si prompts effets,</l>
             <l n="476" xml:id="l476">Que vos voeux dès ce jour se verront satisfaits !</l>
           </sp>
-          <sp xml:id="II03-4" who="JASON">
+          <sp who="JASON" xml:id="I03-4">
             <speaker>JASON.</speaker>
             <l n="477" xml:id="l477">Seigneur, j'ose vous dire, après cette promesse,</l>
             <l n="478" xml:id="l478">Que vous voyez la fleur des princes de la Grèce,</l>
             <l n="479" xml:id="l479">Qui vous demandent tous d'une commune voix</l>
             <l n="480" xml:id="l480">Un trésor qui jadis fut celui de ses rois :</l>
             <l n="481" xml:id="l481">La toison d'or, seigneur, que Phryxus, votre gendre,</l>
-            <l n="482" xml:id="l482" part="I">Phryxus, notre parent...</l>
+            <l n="482" part="I" xml:id="l482">Phryxus, notre parent...</l>
           </sp>
-          <sp xml:id="II03-5" who="AAETE">
+          <sp who="AAETE" xml:id="I03-5">
             <speaker>AAETE.</speaker>
             <l part="F">Ah ! Que viens-je d'entendre !</l>
           </sp>
-          <sp xml:id="II03-6" who="MEDEE">
+          <sp who="MEDEE" xml:id="I03-6">
             <speaker>MÉDÉE.</speaker>
-            <l n="483" xml:id="l483" part="I">Ah ! Perfide.</l>
+            <l n="483" part="I" xml:id="l483">Ah ! Perfide.</l>
           </sp>
-          <sp xml:id="II03-7" who="JASON">
+          <sp who="JASON" xml:id="I03-7">
             <speaker>JASON.</speaker>
             <l part="F">À ce mot vous paraissez surpris !</l>
             <l n="484" xml:id="l484">Notre peu de secours se met à trop haut prix ;</l>
             <l n="485" xml:id="l485">Mais enfin, je l'avoue, un si précieux gage</l>
             <l n="486" xml:id="l486">Est l'unique motif de tout notre voyage.</l>
-            <l n="486" xml:id="l486">Telle est la dure loi que nous font nos tyrans,</l>
-            <l n="487" xml:id="l487">Que lui seul nous peut rendre au sein de nos parents ;</l>
+            <l n="487" xml:id="l487">Telle est la dure loi que nous font nos tyrans,</l>
+            <l n="488" xml:id="l488">Que lui seul nous peut rendre au sein de nos parents ;</l>
             <l n="489" xml:id="l489">Et telle est leur rigueur, que sans cette conquête</l>
             <l n="490" xml:id="l490">Le retour au pays nous coûterait la tête.</l>
           </sp>
-          <sp xml:id="II03-8" who="AAETE">
+          <sp who="AAETE" xml:id="I03-8">
             <speaker>AAETE.</speaker>
             <l n="491" xml:id="l491">Ah ! Si vous ne pouvez y rentrer autrement,</l>
             <l n="492" xml:id="l492">Dure, dure à jamais votre bannissement !</l>
@@ -794,18 +790,18 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="497" xml:id="l497">Et si jusqu'à l'effet vous pouvez le réduire,</l>
             <l n="498" xml:id="l498">Vous ne m'avez sauvé que pour mieux me détruire</l>
           </sp>
-          <sp xml:id="II03-9" who="JASON">
+          <sp who="JASON" xml:id="I03-9">
             <speaker>JASON.</speaker>
             <l n="499" xml:id="l499">Qui vous l'a dit, seigneur ? Quel tyrannique effroi</l>
             <l n="500" xml:id="l500">Fait cette illusion aux destins d'un grand roi ?</l>
           </sp>
-          <sp xml:id="II03-10" who="AAETE">
+          <sp who="AAETE" xml:id="I03-10">
             <speaker>AAETE.</speaker>
             <l n="501" xml:id="l501">Votre Phryxus lui-même a servi d'interprète</l>
             <l n="502" xml:id="l502">À ces ordres des dieux dont l'effet m'inquiète :</l>
             <l n="503" xml:id="l503">Son ombre en mots exprès nous les a fait savoir.</l>
           </sp>
-          <sp xml:id="II03-11" who="JASON">
+          <sp who="JASON" xml:id="I03-11">
             <speaker>JASON.</speaker>
             <l n="504" xml:id="l504">À des fantômes vains donnez moins de pouvoir.</l>
             <l n="505" xml:id="l505">Une ombre est toujours ombre, et des nuits éternelles</l>
@@ -817,7 +813,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="511" xml:id="l511">Et c'est pour colorer un trop juste refus</l>
             <l n="512" xml:id="l512">Que vous faites parler cette ombre de Phryxus.</l>
           </sp>
-          <sp xml:id="II03-12" who="AAETE">
+          <sp who="AAETE" xml:id="I03-12">
             <speaker>AAETE.</speaker>
             <l n="513" xml:id="l513">Quoi ? De mon noir destin la triste certitude</l>
             <l n="514" xml:id="l514">Ne seroit qu'un prétexte à mon ingratitude ?</l>
@@ -828,7 +824,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="519" xml:id="l519">Cette offre peut-elle être un refus coloré,</l>
             <l n="520" xml:id="l520">Et répond-elle mal à ce que j'ai juré ?</l>
           </sp>
-          <sp xml:id="II03-13" who="JASON">
+          <sp who="JASON" xml:id="I03-13">
             <speaker>JASON.</speaker>
             <l n="521" xml:id="l521">D'autres l'accepteroient avec pleine allégresse ;</l>
             <l n="522" xml:id="l522">Mais elle n'ouvre pas les chemins de la Grèce ;</l>
@@ -837,17 +833,17 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="525" xml:id="l525">C'est à l'heur du retour que leur courage aspire,</l>
             <l n="526" xml:id="l526">Et non pas à l'honneur de me faire un empire.</l>
           </sp>
-          <sp xml:id="II03-14" who="AAETE">
+          <sp who="AAETE" xml:id="I03-14">
             <speaker>AAETE.</speaker>
             <l n="527" xml:id="l527">Rien ne peut donc changer ce rigoureux desir ?</l>
           </sp>
-          <sp xml:id="II03-15" who="JASON">
+          <sp who="JASON" xml:id="I03-15">
             <speaker>JASON.</speaker>
             <l n="528" xml:id="l528">Seigneur, nous n'avons pas le pouvoir de choisir.</l>
             <l n="529" xml:id="l529">Ce n'est que perdre temps qu'en parler davantage ;</l>
             <l n="530" xml:id="l530">Et vous savez à quoi le serment vous engage.</l>
           </sp>
-          <sp xml:id="II03-16" who="AAETE">
+          <sp who="AAETE" xml:id="I03-16">
             <speaker>AAETE.</speaker>
             <l n="531" xml:id="l531">Téméraire serment qui me fait une loi</l>
             <l n="532" xml:id="l532">Dangereuse pour vous, ou funeste pour moi !</l>
@@ -868,28 +864,28 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="547" xml:id="l547">Adieu : pensez-y bien. Toi, ma fille, dis-lui</l>
             <l n="548" xml:id="l548">À quels affreux périls il se livre aujourd'hui.</l>
           </sp>
-        </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        </div>
+        <div n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Médée, Jason, Argonautes.</head>
-          <sp xml:id="II04-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="I04-1">
             <speaker>MÉDÉE.</speaker>
-            <l n="549" xml:id="l549" part="I">Ces périls sont légers.</l>
+            <l n="549" part="I" xml:id="l549">Ces périls sont légers.</l>
           </sp>
-          <sp xml:id="II04-2" who="JASON">
+          <sp who="JASON" xml:id="I04-2">
             <speaker>JASON.</speaker>
             <l part="F">Ah ! Divine princesse !</l>
           </sp>
-          <sp xml:id="II04-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="I04-3">
             <speaker>MÉDÉE.</speaker>
             <l n="550" xml:id="l550">Il n'y faut que du coeur, des forces, de l'adresse.</l>
             <l n="551" xml:id="l551">Vous en avez, Jason ; mais peut-être, après tout,</l>
             <l n="552" xml:id="l552">Ce que vous en avez n'en viendra pas à bout.</l>
           </sp>
-          <sp xml:id="II04-4" who="JASON">
+          <sp who="JASON" xml:id="I04-4">
             <speaker>JASON.</speaker>
-            <l n="553" xml:id="l553" part="I">Madame, si jamais...</l>
+            <l n="553" part="I" xml:id="l553">Madame, si jamais...</l>
           </sp>
-          <sp xml:id="II04-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="I04-5">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Ne dis rien, téméraire.</l>
             <l n="554" xml:id="l554">Tu ne savois que trop quel choix pouvoit me plaire.</l>
@@ -916,17 +912,17 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="575" xml:id="l575">Juge par là, Jason, de la gloire où tu cours,</l>
             <l n="576" xml:id="l576">Et cherche où tu pourras des bras et du secours.</l>
           </sp>
-        </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        </div>
+        <div n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Jason, Pélée, Iphite, Orphée, Argonautes.</head>
-          <sp xml:id="II05-1" who="JASON">
+          <sp who="JASON" xml:id="I05-1">
             <speaker>JASON.</speaker>
             <l n="577" xml:id="l577">Amis, voilà l'effet de votre impatience.</l>
             <l n="578" xml:id="l578">Si j'avais eu sur vous un peu plus de croyance,</l>
             <l n="579" xml:id="l579">L'amour m'auroit livré ce précieux dépôt,</l>
             <l n="580" xml:id="l580">Et vous l'avez perdu pour le vouloir trop tôt.</l>
           </sp>
-          <sp xml:id="II05-2" who="PELEE">
+          <sp who="PELEE" xml:id="I05-2">
             <speaker>PÉLÉE.</speaker>
             <l n="581" xml:id="l581">L'amour vous est bien doux, et votre espoir tranquille,</l>
             <l n="582" xml:id="l582">Qui vous fit consumer deux ans chez Hypsipyle,</l>
@@ -937,12 +933,12 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="587" xml:id="l587">Mais puisqu'on la refuse au service rendu,</l>
             <l n="588" xml:id="l588">Il faut avoir de force un bien qui nous est dû.</l>
           </sp>
-          <sp xml:id="II05-3" who="JASON">
+          <sp who="JASON" xml:id="I05-3">
             <speaker>JASON.</speaker>
             <l n="589" xml:id="l589">De Médée en courroux dissipez donc les charmes ;</l>
             <l n="590" xml:id="l590">Combattez ce dragon, ces taureaux, ces gensdarmes.</l>
           </sp>
-          <sp xml:id="II05-4" who="IPHITE">
+          <sp who="IPHITE" xml:id="I05-4">
             <speaker>Iphite.</speaker>
             <l n="591" xml:id="l591">Les dieux nous ont sauvés de mille autres dangers,</l>
             <l n="592" xml:id="l592">Et sont les mêmes dieux en ces bords étrangers.</l>
@@ -957,10 +953,10 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="601" xml:id="l601">Prends ton luth, cher Orphée, et montre à la déesse</l>
             <l n="602" xml:id="l602">Combien ce doux espoir charme notre tristesse.</l>
           </sp>
-        </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        </div>
+        <div n="6" type="scene" xml:id="I06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="II06-1" who="ORPHEE">
+          <sp who="ORPHEE" xml:id="I06-1">
             <speaker>ORPHÉE chante.</speaker>
             <l n="603" xml:id="l603">Femme et soeur du maître des dieux,</l>
             <l n="604" xml:id="l604">De qui le seul regard fait nos destins propices,</l>
@@ -971,7 +967,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="609" xml:id="l609">Contre les monstres et les charmes</l>
             <l n="610" xml:id="l610">C'est à toi maintenant de nous prêter ton bras.</l>
           </sp>
-          <sp xml:id="II06-2" who="IRIS">
+          <sp who="IRIS" xml:id="I06-2">
             <speaker>IRIS.</speaker>
             <l n="611" xml:id="l611">Princes, ne perdez pas courage ;</l>
             <l n="612" xml:id="l612">Les deux mêmes divinités</l>
@@ -984,7 +980,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="619" xml:id="l619">Écoutez leurs conseils, et tenez l'âme prête</l>
             <l n="620" xml:id="l620">À les exécuter.</l>
           </sp>
-          <sp xml:id="II06-3" who="JUNON">
+          <sp who="JUNON" xml:id="I06-3">
             <speaker>JUNON.</speaker>
             <l n="621" xml:id="l621">Tous vos bras et toutes vos armes</l>
             <l n="622" xml:id="l622">Ne peuvent rien contre les charmes</l>
@@ -997,7 +993,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="629" xml:id="l629">Rien ne vous peut servir si vous n'avez son coeur ;</l>
             <l n="630" xml:id="l630">Et si vous le gagnez, rien ne vous sauroit nuire.</l>
           </sp>
-          <sp xml:id="II06-4" who="PALLAS">
+          <sp who="PALLAS" xml:id="I06-4">
             <speaker>PALLAS.</speaker>
             <l n="631" xml:id="l631">Pour vous secourir en ces lieux,</l>
             <l n="632" xml:id="l632">Junon change de forme et va descendre en terre ;</l>
@@ -1011,11 +1007,11 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="640" xml:id="l640">L'amour fera votre destin,</l>
             <l n="641" xml:id="l641">Et vous donnera tout, s'il vous donne Médée.</l>
           </sp>
-          <sp xml:id="II06-5" who="JASON">
+          <sp who="JASON" xml:id="I06-5">
             <speaker>JASON.</speaker>
-            <l n="642" xml:id="l642" part="I">Eh bien ! Si mes conseils...</l>
+            <l n="642" part="I" xml:id="l642">Eh bien ! Si mes conseils...</l>
           </sp>
-          <sp xml:id="II06-6" who="PELEE">
+          <sp who="PELEE" xml:id="I06-6">
             <speaker>PÉLÉE.</speaker>
             <l part="F">N'en parlons plus, Jason :</l>
             <l n="643" xml:id="l643">Cet oracle l'emporte, et vous aviez raison.</l>
@@ -1024,15 +1020,15 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="646" xml:id="l646">N'y perdons point de temps, et sans plus de séjour</l>
             <l n="647" xml:id="l647">Allons sacrifier au tout-puissant Amour.</l>
           </sp>
-        </div2>
-      </div1>
-      <div1 xml:id="III" type="act" n="2">
+        </div>
+      </div>
+      <div n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <stage type="[N/A]">DÉCORATION DU SECOND ACTE.</stage>
-        <stage type="[N/A]">La rivière du Phase et le paysage qu'elle traverse succèdent </stage>
-        <div2 xml:id="III01" type="scene" n="1">
+        <stage>DÉCORATION DU SECOND ACTE.</stage>
+        <stage>La rivière du Phase et le paysage qu'elle traverse succèdent </stage>
+        <div n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Junon, Jason sous le visage de Chalciope.</head>
-          <sp xml:id="III01-1" who="JUNON">
+          <sp who="JUNON" xml:id="II01-1">
             <speaker>JUNON.</speaker>
             <l n="648" xml:id="l648">Nous pouvons à l'écart, sur ces rives du Phase,</l>
             <l n="649" xml:id="l649">Parler en sûreté du feu qui vous embrase.</l>
@@ -1055,11 +1051,11 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="666" xml:id="l666">Et qu'un secret retour le force à ressentir</l>
             <l n="667" xml:id="l667">De sa fureur trop prompte un tendre repentir.</l>
           </sp>
-          <sp xml:id="III01-2" who="JASON">
+          <sp who="JASON" xml:id="II01-2">
             <speaker>JASON.</speaker>
-            <l n="668" xml:id="l668" part="I">Déesse, quels encens...</l>
+            <l n="668" part="I" xml:id="l668">Déesse, quels encens...</l>
           </sp>
-          <sp xml:id="III01-3" who="JUNON">
+          <sp who="JUNON" xml:id="II01-3">
             <speaker>JUNON.</speaker>
             <l part="F">Traitez-moi de princesse,</l>
             <l n="669" xml:id="l669">Jason, et laissez là l'encens et la déesse.</l>
@@ -1069,14 +1065,14 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="673" xml:id="l673">Laissez-y-moi passer pour ce que je feins d'être,</l>
             <l n="674" xml:id="l674">Jusqu'à ce que le coeur de Médée adouci...</l>
           </sp>
-          <sp xml:id="III01-4" who="JASON">
+          <sp who="JASON" xml:id="II01-4">
             <speaker>JASON.</speaker>
             <l n="675" xml:id="l675">Madame, puisqu'il faut ne vous nommer qu'ainsi,</l>
             <l n="676" xml:id="l676">Vos ordres me seront des lois inviolables :</l>
             <l n="677" xml:id="l677">J'aurai pour les remplir des soins infatigables ;</l>
-            <l n="678" xml:id="l678" part="I">Et mon amour plus fort...</l>
+            <l n="678" part="I" xml:id="l678">Et mon amour plus fort...</l>
           </sp>
-          <sp xml:id="III01-5" who="JUNON">
+          <sp who="JUNON" xml:id="II01-5">
             <speaker>JUNON.</speaker>
             <l part="F">Je sais que vous aimez,</l>
             <l n="679" xml:id="l679">Que Médée a des traits dont vos sens sont charmés.</l>
@@ -1085,15 +1081,15 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="682" xml:id="l682">Ne souffre-t-elle plus l'image du passé ?</l>
             <l n="683" xml:id="l683">Le portrait d'Hypsipyle est-il tout effacé ?</l>
           </sp>
-          <sp xml:id="III01-6" who="JASON">
+          <sp who="JASON" xml:id="II01-6">
             <speaker>JASON.</speaker>
-            <l n="684" xml:id="l684" part="I">Ah !</l>
+            <l n="684" part="I" xml:id="l684">Ah !</l>
           </sp>
-          <sp xml:id="III01-7" who="JUNON">
+          <sp who="JUNON" xml:id="II01-7">
             <speaker>JUNON.</speaker>
             <l part="M">Vous en soupirez !</l>
           </sp>
-          <sp xml:id="III01-8" who="JASON">
+          <sp who="JASON" xml:id="II01-8">
             <speaker>JASON.</speaker>
             <l part="F">Un reste de tendresse</l>
             <l n="685" xml:id="l685">M'échappe encore au nom d'une belle princesse ;</l>
@@ -1102,7 +1098,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="688" xml:id="l688">Les charmes de Médée ont aisément la gloire</l>
             <l n="689" xml:id="l689">D'abattre dans le mien l'effet de sa mémoire.</l>
           </sp>
-          <sp xml:id="III01-9" who="JUNON">
+          <sp who="JUNON" xml:id="II01-9">
             <speaker>JUNON.</speaker>
             <l n="690" xml:id="l690">Peut-être elle n'est pas si loin que vous pensez.</l>
             <l n="691" xml:id="l691">Ses voeux de vous attendre enfin se sont lassés,</l>
@@ -1115,11 +1111,11 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="698" xml:id="l698">J'ai soulevé les vents, qui brisant son vaisseau,</l>
             <l n="699" xml:id="l699">Dans les flots mutinés ont ouvert son tombeau.</l>
           </sp>
-          <sp xml:id="III01-10" who="JASON">
+          <sp who="JASON" xml:id="II01-10">
             <speaker>JASON.</speaker>
-            <l n="700" xml:id="l700" part="I">Hélas !</l>
+            <l n="700" part="I" xml:id="l700">Hélas !</l>
           </sp>
-          <sp xml:id="III01-11" who="JUNON">
+          <sp who="JUNON" xml:id="II01-11">
             <speaker>JUNON.</speaker>
             <l part="F">N'en craignez point une funeste issue :</l>
             <l n="701" xml:id="l701">Dans son propre palais Neptune l'a reçue.</l>
@@ -1142,17 +1138,17 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="718" xml:id="l718">Votre amante paroît : agissez en amant</l>
             <l n="719" xml:id="l719">Qui veut en effet vaincre, et vaincre promptement.</l>
           </sp>
-        </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        </div>
+        <div n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Jason, Junon, Médée.</head>
-          <sp xml:id="III02-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-1">
             <speaker>MÉDÉE.</speaker>
             <l n="720" xml:id="l720">Que faites-vous, ma soeur, avec ce téméraire ?</l>
             <l n="721" xml:id="l721">Quand son orgueil m'outrage, a-t-il de quoi vous plaire ?</l>
             <l n="722" xml:id="l722">Et vous a-t-il réduite à lui servir d'appui,</l>
             <l n="723" xml:id="l723">Vous qui parliez tantôt, et si haut, contre lui ?</l>
           </sp>
-          <sp xml:id="III02-2" who="JUNON">
+          <sp who="JUNON" xml:id="II02-2">
             <speaker>JUNON.</speaker>
             <l n="724" xml:id="l724">Je suis toujours sincère ; et dans l'idolâtrie</l>
             <l n="725" xml:id="l725">Qu'en tous ces héros grecs je vois pour leur patrie,</l>
@@ -1162,7 +1158,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="729" xml:id="l729">Mais l'amour sur tous deux a déjà trop d'empire :</l>
             <l n="730" xml:id="l730">Il vous aime, et je vois qu'avec les mêmes traits...</l>
           </sp>
-          <sp xml:id="III02-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-3">
             <speaker>MÉDÉE.</speaker>
             <l n="731" xml:id="l731">Que dites-vous, ma soeur ? Il ne m'aima jamais.</l>
             <l n="732" xml:id="l732">À quelque complaisance il a pu se contraindre ;</l>
@@ -1170,7 +1166,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="734" xml:id="l734">Et me l'a bien fait voir en demandant au roi,</l>
             <l n="735" xml:id="l735">En ma présence même, un autre prix que moi.</l>
           </sp>
-          <sp xml:id="III02-4" who="JUNON">
+          <sp who="JUNON" xml:id="II02-4">
             <speaker>JUNON.</speaker>
             <l n="736" xml:id="l736">Ne condamnons personne avant que de l'entendre.</l>
             <l n="737" xml:id="l737">Savez-vous les raisons dont il se peut défendre ?</l>
@@ -1181,13 +1177,13 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="742" xml:id="l742">Et si vous la saviez, peut-être à votre tour</l>
             <l n="743" xml:id="l743">Vous trouveriez moins lieu d'accuser son amour.</l>
           </sp>
-          <sp xml:id="III02-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-5">
             <speaker>MÉDÉE.</speaker>
             <l n="744" xml:id="l744">Quoi ? Ce lâche tantôt ne m'a pas regardée ;</l>
             <l n="745" xml:id="l745">Il n'a montré qu'orgueil, que mépris pour Médée,</l>
             <l n="746" xml:id="l746">Et je pourrois encor l'entendre discourir !</l>
           </sp>
-          <sp xml:id="III02-6" who="JASON">
+          <sp who="JASON" xml:id="II02-6">
             <speaker>JASON.</speaker>
             <l n="747" xml:id="l747">Le discours siéroit mal à qui cherche à mourir.</l>
             <l n="748" xml:id="l748">J'ai mérité la mort si j'ai pu vous déplaire ;</l>
@@ -1196,7 +1192,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="751" xml:id="l751">Dites-moi seulement que vous ne m'aimez plus :</l>
             <l n="752" xml:id="l752">Ces deux mots suffiront pour réduire en poussière...</l>
           </sp>
-          <sp xml:id="III02-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-7">
             <speaker>MÉDÉE.</speaker>
             <l n="753" xml:id="l753">Va, quand il me plaira, j'en sais bien la manière ;</l>
             <l n="754" xml:id="l754">Et si ma bouche encor n'en fulmine l'arrêt,</l>
@@ -1219,7 +1215,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="771" xml:id="l771">Je te haïrois peu, si je ne t'aimois pas.</l>
             <l n="772" xml:id="l772">Mais parle, et si tu peux, montre quelque innocence.</l>
           </sp>
-          <sp xml:id="III02-8" who="JASON">
+          <sp who="JASON" xml:id="II02-8">
             <speaker>JASON.</speaker>
             <l n="773" xml:id="l773">Je renonce, madame, à toute autre défense.</l>
             <l n="774" xml:id="l774">Si vous m'aimez encore, et si l'amour en vous</l>
@@ -1250,12 +1246,12 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="799" xml:id="l799">Joindre le nom de lâche et le titre d'ingrat ?</l>
             <l n="800" xml:id="l800">Auriez-vous pu m'aimer couvert de cette honte ?</l>
           </sp>
-          <sp xml:id="III02-9" who="JUNON">
+          <sp who="JUNON" xml:id="II02-9">
             <speaker>JUNON.</speaker>
             <l n="801" xml:id="l801">Ma soeur, dites le vrai, n'étiez-vous point trop prompte ?</l>
             <l n="802" xml:id="l802">Qu'a-t-il fait qu'un coeur noble et vraiment généreux...</l>
           </sp>
-          <sp xml:id="III02-10" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-10">
             <speaker>MÉDÉE.</speaker>
             <l n="803" xml:id="l803">Ma soeur, je le voulois seulement amoureux.</l>
             <l n="804" xml:id="l804">En qui sauroit aimer seroit-ce donc un crime,</l>
@@ -1268,7 +1264,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="811" xml:id="l811">Mais non pas t'en haïr, non pas t'en moins aimer.</l>
             <l n="812" xml:id="l812">Tout oblige en amour, quand l'amour en est cause.</l>
           </sp>
-          <sp xml:id="III02-11" who="JUNON">
+          <sp who="JUNON" xml:id="II02-11">
             <speaker>JUNON.</speaker>
             <l n="813" xml:id="l813">Voyez à quoi pour vous cet amour la dispose.</l>
             <l n="814" xml:id="l814">N'abusez point, Jason, des bontés de ma soeur,</l>
@@ -1276,15 +1272,15 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="816" xml:id="l816">Et laissez à vos Grecs, au péril de leur vie,</l>
             <l n="817" xml:id="l817">Chercher cette toison si chère à leur envie.</l>
           </sp>
-          <sp xml:id="III02-12" who="JASON">
+          <sp who="JASON" xml:id="II02-12">
             <speaker>JASON.</speaker>
             <l n="818" xml:id="l818">Quoi ? Les abandonner en ce pas dangereux !</l>
           </sp>
-          <sp xml:id="III02-13" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-13">
             <speaker>MÉDÉE.</speaker>
             <l n="819" xml:id="l819">N'as-tu point assez fait d'avoir parlé pour eux ?</l>
           </sp>
-          <sp xml:id="III02-14" who="JASON">
+          <sp who="JASON" xml:id="II02-14">
             <speaker>JASON.</speaker>
             <l n="820" xml:id="l820">Je suis leur chef, madame ; et pour cette conquête</l>
             <l n="821" xml:id="l821">Mon honneur me condamne à marcher à leur tête :</l>
@@ -1308,9 +1304,9 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="839" xml:id="l839">" un respect amoureux a seul causé ma mort ! "</l>
             <l n="840" xml:id="l840">Quel heur de voir ma mort charger la renommée</l>
             <l n="841" xml:id="l841">De tout ce digne excès dont vous êtes aimée,</l>
-            <l n="842" xml:id="l842" part="I">Et dans tout l'avenir...</l>
+            <l n="842" part="I" xml:id="l842">Et dans tout l'avenir...</l>
           </sp>
-          <sp xml:id="III02-15" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-15">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Va, ne me dis plus rien ;</l>
             <l n="843" xml:id="l843">Je ferai mon devoir, comme tu fais le tien.</l>
@@ -1331,7 +1327,7 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="858" xml:id="l858">Je reprends cette foi que tu crains d'accepter,</l>
             <l n="859" xml:id="l859">Et préviens un ingrat qui cherche à me quitter.</l>
           </sp>
-          <sp xml:id="III02-16" who="JASON">
+          <sp who="JASON" xml:id="II02-16">
             <speaker>JASON.</speaker>
             <l n="860" xml:id="l860">Moi, vous quitter, madame ! Ah ! Que c'est mal connoître</l>
             <l n="861" xml:id="l861">Le pouvoir du beau feu que vos yeux ont fait naître !</l>
@@ -1349,21 +1345,21 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="873" xml:id="l873">Les routes me plairont que vous m'aurez tracées :</l>
             <l n="874" xml:id="l874">J'y baiserai partout les marques de vos pas.</l>
             <l n="875" xml:id="l875">Point pour moi de patrie où vous ne serez pas ;</l>
-            <l n="876" xml:id="l876" part="I">Point pour moi...</l>
+            <l n="876" part="I" xml:id="l876">Point pour moi...</l>
           </sp>
-          <sp xml:id="III02-17" who="MEDEE">
+          <sp who="MEDEE" xml:id="II02-17">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Quoi ? Jason, tu pourrois pour Médée</l>
             <l n="877" xml:id="l877">Etouffer de ta Grèce et l'amour et l'idée ?</l>
           </sp>
-          <sp xml:id="III02-18" who="JASON">
+          <sp who="JASON" xml:id="II02-18">
             <speaker>JASON.</speaker>
-            <l n="878" xml:id="l878" part="I">Je le pourrai, madame, et de plus...</l>
+            <l n="878" part="I" xml:id="l878">Je le pourrai, madame, et de plus...</l>
           </sp>
-        </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        </div>
+        <div n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Adsyrte, Junon, Jason, Médée.</head>
-          <sp xml:id="III03-1" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II03-1">
             <speaker>ABSYRTE.</speaker>
             <l part="F">Ah ! Mes soeurs,</l>
             <l n="879" xml:id="l879">Quel miracle nouveau va ravir tous nos coeurs !</l>
@@ -1387,23 +1383,19 @@ L'ouverture du théâtre fait voir un pays ruiné par les guerres, et terminé d
             <l n="897" xml:id="l897">Admirez avec moi ce merveilleux spectacle.</l>
             <l n="898" xml:id="l898">Le voilà qui les suit. Voyez-le s'avancer.</l>
           </sp>
-          <sp xml:id="III03-2" who="JASON">
+          <sp who="JASON" xml:id="II03-2">
             <speaker>JASON.</speaker>
-            <l n="899" xml:id="l899" part="I">Ah ! Madame.</l>
+            <l n="899" part="I" xml:id="l899">Ah ! Madame.</l>
           </sp>
-          <sp xml:id="III03-3" who="JUNON">
+          <sp who="JUNON" xml:id="II03-3">
             <speaker>JUNON.</speaker>
             <l part="F">Voyez sans vous embarrasser.</l>
           </sp>
-          <stage type="[N/A]">Ici l'on voit sortir du milieu du Phase le dieu Glauque avec deux tritons et deux sirènes qui chantent, cependant qu'une grande conque de nacre, semée de branches de coral et de pierres précieuses, portée par quatre dauphins, et soutenue par quatre vents en l'air, vient insensiblement s'arrêtér au milieu de ce même fleuve.
-Tandis qu'elles chantent, le devant ce cette conque merveilleuse fond dans l'eau, et l'aisse voir la reine Hypsipyle assise comme dans un trône ;
-et soudain Glauque commande aux vents de s'envoler, aux tritons et aux sirènes de disparaître, et ua fleuve de retirer une partie de ses eaux pour 
-laisser prendre tyerre à Hypsipyle. Les tritons, le fleuve, les vents et les sirène obéissent, et Glauque se perd lui-même 
-au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hypsipyle pour sortir de cette conque, qui s'abîme aussitôt dans le fleuve. </stage>
-        </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+          <stage>Ici l'on voit sortir du milieu du Phase le dieu Glauque avec deux tritons et deux sirènes qui chantent, cependant qu'une grande conque de nacre, semée de branches de coral et de pierres précieuses, portée par quatre dauphins, et soutenue par quatre vents en l'air, vient insensiblement s'arrêtér au milieu de ce même fleuve. Tandis qu'elles chantent, le devant ce cette conque merveilleuse fond dans l'eau, et l'aisse voir la reine Hypsipyle assise comme dans un trône ; et soudain Glauque commande aux vents de s'envoler, aux tritons et aux sirènes de disparaître, et ua fleuve de retirer une partie de ses eaux pour laisser prendre tyerre à Hypsipyle. Les tritons, le fleuve, les vents et les sirène obéissent, et Glauque se perd lui-même au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hypsipyle pour sortir de cette conque, qui s'abîme aussitôt dans le fleuve. </stage>
+        </div>
+        <div n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Absyrte, Junon, Médée, Jason, Glauque, sirènes, tritons, Hypsipyle.</head>
-          <sp xml:id="III04-1" who="SIRENES">
+          <sp who="SIRENES" xml:id="II04-1">
             <speaker>CHANT DES SIRÈNES.</speaker>
             <l n="900" xml:id="l900">Telle Vénus sortit du sein de l'onde,</l>
             <l n="901" xml:id="l901">Pour faire régner dans le monde</l>
@@ -1418,17 +1410,17 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="910" xml:id="l910">Que n'est Vénus, que n'est l'aurore,</l>
             <l n="911" xml:id="l911">Tu vas y faire un nouveau jour.</l>
           </sp>
-          <sp xml:id="III04-2" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II04-2">
             <speaker>ABSYRTE.</speaker>
             <l n="912" xml:id="l912">Quelle beauté, mes soeurs, dans ce trône enfermée,</l>
             <l n="913" xml:id="l913">De son premier coup d'oeil a mon âme charmée ?</l>
             <l n="914" xml:id="l914">Quel coeur pourroit tenir contre de tels appas ?</l>
           </sp>
-          <sp xml:id="III04-3" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II04-3">
             <speaker>HYPSIPYLE.</speaker>
             <l n="915" xml:id="l915">Juste ciel, il me voit, et ne s'avance pas !</l>
           </sp>
-          <sp xml:id="III04-4" who="GLAUQUE">
+          <sp who="GLAUQUE" xml:id="II04-4">
             <speaker>GLAUQUE.</speaker>
             <l n="916" xml:id="l916">Allez, tritons, allez, sirènes ;</l>
             <l n="917" xml:id="l917">Allez, vents, et rompez vos chaînes ;</l>
@@ -1445,7 +1437,7 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="928" xml:id="l928">Fleuve, pour un moment retire un peu tes flots,</l>
             <l n="929" xml:id="l929">Et laisse approcher ton rivage.</l>
           </sp>
-          <sp xml:id="III04-5" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II04-5">
             <speaker>ABSYRTE.</speaker>
             <l n="930" xml:id="l930">Princesse, en qui du ciel les merveilleux efforts</l>
             <l n="931" xml:id="l931">Se sont plu d'animer ses plus rares trésors,</l>
@@ -1454,44 +1446,44 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="934" xml:id="l934">Régnez dans ses états, régnez dans son palais ;</l>
             <l n="935" xml:id="l935">Et pour premier hommage à vos divins attraits...</l>
           </sp>
-          <sp xml:id="III04-6" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II04-6">
             <speaker>HYPSIPYLE.</speaker>
             <l n="936" xml:id="l936">Faites moins d'honneur, prince, à mon peu de mérite :</l>
             <l n="937" xml:id="l937">Je ne cherche en ces lieux qu'un ingrat qui m'évite.</l>
             <l n="938" xml:id="l938">Au lieu de m'aborder, Jason, vous pâlissez !</l>
             <l n="939" xml:id="l939">Dites-moi pour le moins si vous me connoissez.</l>
           </sp>
-          <sp xml:id="III04-7" who="JASON">
+          <sp who="JASON" xml:id="II04-7">
             <speaker>JASON.</speaker>
             <l n="940" xml:id="l940">Je sais bien qu'à Lemnos vous étiez Hypsipyle ;</l>
-            <l n="941" xml:id="l941" part="I">Mais ici...</l>
+            <l n="941" part="I" xml:id="l941">Mais ici...</l>
           </sp>
-          <sp xml:id="III04-8" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II04-8">
             <speaker>HYPSIPYLE.</speaker>
             <l part="F">Qui vous rend de la sorte immobile ?</l>
             <l n="942" xml:id="l942">Ne suis-je plus la même arrivant à Colchos ?</l>
           </sp>
-          <sp xml:id="III04-9" who="JASON">
+          <sp who="JASON" xml:id="II04-9">
             <speaker>JASON.</speaker>
             <l n="943" xml:id="l943">Oui ; mais je n'y suis pas le même qu'à Lemnos.</l>
           </sp>
-          <sp xml:id="III04-10" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II04-10">
             <speaker>HYPSIPYLE.</speaker>
-            <l n="944" xml:id="l944" part="I">Dieux ! Que viens-je d'ouïr ?</l>
+            <l n="944" part="I" xml:id="l944">Dieux ! Que viens-je d'ouïr ?</l>
           </sp>
-          <sp xml:id="III04-11" who="JASON">
+          <sp who="JASON" xml:id="II04-11">
             <speaker>JASON.</speaker>
             <l part="F">J'ai d'autres yeux, madame :</l>
             <l n="945" xml:id="l945">Voyez cette princesse, elle a toute mon âme ;</l>
             <l n="946" xml:id="l946">Et pour vous épargner les discours superflus,</l>
             <l n="947" xml:id="l947">Ici je ne connois et ne vois rien de plus.</l>
           </sp>
-          <sp xml:id="III04-12" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II04-12">
             <speaker>HYPSIPYLE.</speaker>
             <l n="948" xml:id="l948">Ô faveurs de Neptune, où m'avez-vous conduite ?</l>
             <l n="949" xml:id="l949">Et s'il commence ainsi, quelle sera la suite ?</l>
           </sp>
-          <sp xml:id="III04-13" who="MEDEE">
+          <sp who="MEDEE" xml:id="II04-13">
             <speaker>MÉDÉE.</speaker>
             <l n="950" xml:id="l950">Non, non, madame, non, je ne veux rien d'autrui :</l>
             <l n="951" xml:id="l951">Reprenez votre amant, je vous laisse avec lui.</l>
@@ -1499,11 +1491,11 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="953" xml:id="l953">Volage, et reçois mieux cette grande princesse.</l>
             <l n="954" xml:id="l954">Adieu : des yeux si beaux valent bien la toison.</l>
           </sp>
-          <sp xml:id="III04-14" who="JASON">
+          <sp who="JASON" xml:id="II04-14">
             <speaker>JASON.</speaker>
             <l n="955" xml:id="l955">Ah ! Madame, voyez qu'avec peu de raison...</l>
           </sp>
-          <sp xml:id="III04-15" who="JUNON">
+          <sp who="JUNON" xml:id="II04-15">
             <speaker>JUNON.</speaker>
             <l n="956" xml:id="l956">Suivez sans perdre temps, je saurai vous rejoindre.</l>
             <l n="957" xml:id="l957">Madame, on vous trahit ; mais votre heur n'est pas moindre.</l>
@@ -1514,10 +1506,10 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="962" xml:id="l962">Je vous laisse en résoudre, et prends quelques moments</l>
             <l n="963" xml:id="l963">Pour rétablir le calme entre ces deux amants.</l>
           </sp>
-        </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        </div>
+        <div n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. Absyrte, Hypsipyle.</head>
-          <sp xml:id="III05-1" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II05-1">
             <speaker>ABSYRTE.</speaker>
             <l n="964" xml:id="l964">Madame, si j'osois, dans le trouble où vous êtes,</l>
             <l n="965" xml:id="l965">Montrer à vos beaux yeux des peines plus secrètes,</l>
@@ -1530,7 +1522,7 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="972" xml:id="l972">Et tant que le respect m'imposera silence,</l>
             <l n="973" xml:id="l973">Expliquez-vous pour eux toute leur violence.</l>
           </sp>
-          <sp xml:id="III05-2" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II05-2">
             <speaker>HYPSIPYLE.</speaker>
             <l n="974" xml:id="l974">Prince, que voulez-vous d'un coeur préoccupé</l>
             <l n="975" xml:id="l975">Sur qui domine encor l'ingrat qui l'a trompé ?</l>
@@ -1547,7 +1539,7 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="986" xml:id="l986">Quand l'univers entier vous connoîtroit pour roi,</l>
             <l n="987" xml:id="l987">Que pourrois-je pour vous, si je ne suis à moi ?</l>
           </sp>
-          <sp xml:id="III05-3" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II05-3">
             <speaker>ABSYRTE.</speaker>
             <l n="988" xml:id="l988">Vous y serez, madame, et pourrez toute chose :</l>
             <l n="989" xml:id="l989">Le change de Jason déjà vous y dispose ;</l>
@@ -1555,16 +1547,16 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="991" xml:id="l991">Le dépit, malgré vous, vous rendra votre coeur.</l>
             <l n="992" xml:id="l992">D'un si volage amant que pourriez-vous attendre ?</l>
           </sp>
-          <sp xml:id="III05-4" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II05-4">
             <speaker>HYPSIPYLE.</speaker>
             <l n="993" xml:id="l993">L'inconstance me l'ôte, elle peut me le rendre.</l>
           </sp>
-          <sp xml:id="III05-5" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II05-5">
             <speaker>ABSYRTE.</speaker>
             <l n="994" xml:id="l994">Quoi ? Vous pourriez l'aimer, s'il rentroit sous vos lois</l>
             <l n="995" xml:id="l995">En devenant perfide une seconde fois ?</l>
           </sp>
-          <sp xml:id="III05-6" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II05-6">
             <speaker>HYPSIPYLE.</speaker>
             <l n="996" xml:id="l996">Prince, vous savez mal combien charme un courage</l>
             <l n="997" xml:id="l997">Le plus frivole espoir de reprendre un volage,</l>
@@ -1579,19 +1571,19 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="1006" xml:id="l1006">Et s'il vous reste encor quelque bonté pour moi,</l>
             <l n="1007" xml:id="l1007">Aidez contre un ingrat ma plainte auprès du roi.</l>
           </sp>
-          <sp xml:id="III05-7" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II05-7">
             <speaker>ABSYRTE.</speaker>
             <l n="1008" xml:id="l1008">Votre plainte, madame, auroit pour toute issue</l>
             <l n="1009" xml:id="l1009">Un nouveau déplaisir de la voir mal reçue.</l>
             <l n="1010" xml:id="l1010">Le roi le veut pour gendre, et ma soeur pour époux.</l>
           </sp>
-          <sp xml:id="III05-8" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="II05-8">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1011" xml:id="l1011">Il me rendra justice, un roi la doit à tous ;</l>
             <l n="1012" xml:id="l1012">Et qui la sacrifie aux tendresses de père</l>
             <l n="1013" xml:id="l1013">Est d'un pouvoir si saint mauvais dépositaire.</l>
           </sp>
-          <sp xml:id="III05-9" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="II05-9">
             <speaker>ABSYRTE.</speaker>
             <l n="1014" xml:id="l1014">À quelle rude épreuve engagez-vous ma foi,</l>
             <l n="1015" xml:id="l1015">De me forcer d'agir contre ma soeur et moi !</l>
@@ -1600,21 +1592,15 @@ au fond de l'eau, si tôt qu'il a parlé ; de quoi Absyrte donne la main à Hyps
             <l n="1018" xml:id="l1018">Tandis souvenez-vous que jusqu'à se trahir</l>
             <l n="1019" xml:id="l1019">Ce prince malheureux cherche à vous obéir.</l>
           </sp>
-        </div2>
-      </div1>
-      <div1 xml:id="IV" type="act" n="3">
+        </div>
+      </div>
+      <div n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <stage type="[N/A]">DÉCORATION DU TROISIÈME ACTE.</stage>
-        <stage type="[N/A]">Nos théâtres n'ont encore rien fait paraître de si brillant que le palais du roi Aaete qui sert de décoration à cet acte. 
-On y voit de chaque côté deux rang de colonnes de japse torses, et environnées de pampre d'or à grands feuillages, chantournées, 
-et découpées à jour, au milieu desquelles sont des statues d'or à l'antique, de grandeur naturelle. Les frises, les festons, les corniches et les chapiteaux 
-sont pareillement d'or, et portent pour finissement des vases de porcelaine d'où sortent de gros bouquets de fleurs aussi au naturel. 
-Les bases et les piédestaux sont enrichis des basses-tailles, où sont peintes diverses fables de l'antiquité. Un grand portique doré, soutenu par 
-quatre autres colonnes dans le même ordre, fait la face du théâtre, et est suivi de cinq ou six autres de même manière ; qui forment, par le moyen de ses colonnes, comme cinq galeries, où la vue s'enfonçant découvre ce même jardin 
-de cyprès qui a paru au premier acte.</stage>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <stage>DÉCORATION DU TROISIÈME ACTE.</stage>
+        <stage>Nos théâtres n'ont encore rien fait paraître de si brillant que le palais du roi Aaete qui sert de décoration à cet acte. On y voit de chaque côté deux rang de colonnes de japse torses, et environnées de pampre d'or à grands feuillages, chantournées, et découpées à jour, au milieu desquelles sont des statues d'or à l'antique, de grandeur naturelle. Les frises, les festons, les corniches et les chapiteaux sont pareillement d'or, et portent pour finissement des vases de porcelaine d'où sortent de gros bouquets de fleurs aussi au naturel. Les bases et les piédestaux sont enrichis des basses-tailles, où sont peintes diverses fables de l'antiquité. Un grand portique doré, soutenu par quatre autres colonnes dans le même ordre, fait la face du théâtre, et est suivi de cinq ou six autres de même manière ; qui forment, par le moyen de ses colonnes, comme cinq galeries, où la vue s'enfonçant découvre ce même jardin de cyprès qui a paru au premier acte.</stage>
+        <div n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Aaete, Jason.</head>
-          <sp xml:id="IV01-1" who="AAETE">
+          <sp who="AAETE" xml:id="III01-1">
             <speaker>AAETE.</speaker>
             <l n="1020" xml:id="l1020">Je vous devois assez pour vous donner Médée,</l>
             <l n="1021" xml:id="l1021">Jason ; et si tantôt vous l'aviez demandée,</l>
@@ -1635,7 +1621,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1036" xml:id="l1036">Hypsipyle vous aime, elle est reine, elle est belle ;</l>
             <l n="1037" xml:id="l1037">Fuyez notre vengeance, et régnez avec elle.</l>
           </sp>
-          <sp xml:id="IV01-2" who="JASON">
+          <sp who="JASON" xml:id="III01-2">
             <speaker>JASON.</speaker>
             <l n="1038" xml:id="l1038">Quoi ? Parler de vengeance, et d'un oeil de courroux</l>
             <l n="1039" xml:id="l1039">Voir l'immuable ardeur de m'attacher à vous !</l>
@@ -1652,7 +1638,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1050" xml:id="l1050">Et que ce même bras qui vous a pu sauver</l>
             <l n="1051" xml:id="l1051">Sera toujours armé pour vous la conserver.</l>
           </sp>
-          <sp xml:id="IV01-3" who="AAETE">
+          <sp who="AAETE" xml:id="III01-3">
             <speaker>AAETE.</speaker>
             <l n="1052" xml:id="l1052">Vous prenez un peu tard une mauvaise adresse :</l>
             <l n="1053" xml:id="l1053">Nos esprits sont plus lourds que ceux de votre Grèce ;</l>
@@ -1669,7 +1655,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1064" xml:id="l1064">Et que si mon malheur vous l'avait accordée,</l>
             <l n="1065" xml:id="l1065">Vous n'auriez jamais fait aucuns voeux pour Médée.</l>
           </sp>
-          <sp xml:id="IV01-4" who="JASON">
+          <sp who="JASON" xml:id="III01-4">
             <speaker>JASON.</speaker>
             <l n="1066" xml:id="l1066">C'est faire trop d'outrage à mon coeur enflammé.</l>
             <l n="1067" xml:id="l1067">Dès l'abord je la vis, dès l'abord je l'aimai ;</l>
@@ -1686,7 +1672,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1078" xml:id="l1078">J'ose, un peu moins timide, offrir, avec ma foi,</l>
             <l n="1079" xml:id="l1079">Ce que veut une reine à la fille d'un roi.</l>
           </sp>
-          <sp xml:id="IV01-5" who="AAETE">
+          <sp who="AAETE" xml:id="III01-5">
             <speaker>AAETE.</speaker>
             <l n="1080" xml:id="l1080">Et cette même reine est un exemple illustre</l>
             <l n="1081" xml:id="l1081">Qui met tous vos hauts faits en leur plus digne lustre.</l>
@@ -1713,10 +1699,10 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1102" xml:id="l1102">Mais je ne dois pas craindre en ces périls nouveaux</l>
             <l n="1103" xml:id="l1103">Que votre vie échappe aux feux de nos taureaux.</l>
           </sp>
-        </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        </div>
+        <div n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Aaete, Hypsipyle, Jason.</head>
-          <sp xml:id="IV02-1" who="AAETE">
+          <sp who="AAETE" xml:id="III02-1">
             <speaker>AAETE.</speaker>
             <l n="1104" xml:id="l1104">Madame, j'ai parlé ; mais toutes mes paroles</l>
             <l n="1105" xml:id="l1105">Ne sont auprès de lui que des discours frivoles.</l>
@@ -1729,10 +1715,10 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1112" xml:id="l1112">Devant ce que je dois au secours de ses armes,</l>
             <l n="1113" xml:id="l1113">Rompre son mauvais sort, c'est épargner nos larmes.</l>
           </sp>
-        </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        </div>
+        <div n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Hypsipyle, Jason.</head>
-          <sp xml:id="IV03-1" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III03-1">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1114" xml:id="l1114">Eh bien ! Jason, la mort a-t-elle de tels biens</l>
             <l n="1115" xml:id="l1115">Qu'elle soit plus aimable à vos yeux que les miens ?</l>
@@ -1769,7 +1755,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1146" xml:id="l1146">Quoi ? Tu ne réponds rien, et mes plaintes en l'air</l>
             <l n="1147" xml:id="l1147">N'ont rien d'assez puissant pour te faire parler ?</l>
           </sp>
-          <sp xml:id="IV03-2" who="JASON">
+          <sp who="JASON" xml:id="III03-2">
             <speaker>JASON.</speaker>
             <l n="1148" xml:id="l1148">Que voulez-vous, madame, ici que je vous die ?</l>
             <l n="1149" xml:id="l1149">Je ne connois que trop quelle est ma perfidie ;</l>
@@ -1780,7 +1766,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1154" xml:id="l1154">Laissez dans le silence un coupable obstiné,</l>
             <l n="1155" xml:id="l1155">Qui se plaît dans son crime, et n'en est point gêné.</l>
           </sp>
-          <sp xml:id="IV03-3" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III03-3">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1156" xml:id="l1156">Parle toutefois, parle, et non plus pour me plaire,</l>
             <l n="1157" xml:id="l1157">Mais pour rendre la force à ma juste colère ;</l>
@@ -1793,7 +1779,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1164" xml:id="l1164">Et si de tes forfaits la peinture étendue</l>
             <l n="1165" xml:id="l1165">Ne laisse plus flotter ma haine suspendue.</l>
           </sp>
-          <sp xml:id="IV03-4" who="JASON">
+          <sp who="JASON" xml:id="III03-4">
             <speaker>JASON.</speaker>
             <l n="1166" xml:id="l1166">Que dirai-je, après tout, que ce que vous savez ?</l>
             <l n="1167" xml:id="l1167">Madame, rendez-vous ce que vous vous devez.</l>
@@ -1804,7 +1790,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1172" xml:id="l1172">Et que c'est profaner la dignité suprême</l>
             <l n="1173" xml:id="l1173">Que de lui laisser dire : " on me trahit, et j'aime. "</l>
           </sp>
-          <sp xml:id="IV03-5" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III03-5">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1174" xml:id="l1174">Je le puis dire, ingrat, sans blesser mon devoir :</l>
             <l n="1175" xml:id="l1175">C'est mon époux en toi que le ciel me fait voir,</l>
@@ -1833,7 +1819,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1198" xml:id="l1198">Parle donc et sans feinte : où porte-t-il ta foi ?</l>
             <l n="1199" xml:id="l1199">Va-t-il vers ma rivale, ou revient-il vers moi ?</l>
           </sp>
-          <sp xml:id="IV03-6" who="JASON">
+          <sp who="JASON" xml:id="III03-6">
             <speaker>JASON.</speaker>
             <l n="1200" xml:id="l1200">Osez autant qu'une autre ; entendez-le, madame,</l>
             <l n="1201" xml:id="l1201">Ce soupir qui vers vous pousse toute mon âme ;</l>
@@ -1881,7 +1867,7 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1243" xml:id="l1243">Tout ingrat qu'il paroît, ne vous oubliera pas :</l>
             <l n="1244" xml:id="l1244">Apprenez à quitter un lâche qui vous quitte.</l>
           </sp>
-          <sp xml:id="IV03-7" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III03-7">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1245" xml:id="l1245">Tu te confesses lâche, et veux que je t'imite ;</l>
             <l n="1246" xml:id="l1246">Et quand tu fais effort pour te justifier,</l>
@@ -1907,17 +1893,17 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1266" xml:id="l1266">Et c'est faire un hommage et ridicule et vain</l>
             <l n="1267" xml:id="l1267">De présenter le coeur et retirer la main.</l>
           </sp>
-          <sp xml:id="IV03-8" who="JASON">
+          <sp who="JASON" xml:id="III03-8">
             <speaker>JASON.</speaker>
-            <l n="1268" xml:id="l1268" part="I">L'un et l'autre est à vous, si...</l>
+            <l n="1268" part="I" xml:id="l1268">L'un et l'autre est à vous, si...</l>
           </sp>
-          <sp xml:id="IV03-9" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III03-9">
             <speaker>HYPSIPYLE.</speaker>
             <l part="F">N'achève pas, traître ;</l>
             <l n="1269" xml:id="l1269">Ce que tu veux cacher se feroit trop paroître :</l>
             <l n="1270" xml:id="l1270">Un véritable amour ne parle point ainsi.</l>
           </sp>
-          <sp xml:id="IV03-10" who="JASON">
+          <sp who="JASON" xml:id="III03-10">
             <speaker>JASON.</speaker>
             <l n="1271" xml:id="l1271">Trouvez donc les moyens de nous tirer d'ici.</l>
             <l n="1272" xml:id="l1272">La toison emportée, il agira, madame,</l>
@@ -1925,162 +1911,162 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1274" xml:id="l1274">Sinon... Mais dieux ! Que vois-je ? ô ciel ! Je suis perdu,</l>
             <l n="1275" xml:id="l1275">Si j'ai tant de malheur qu'elle m'aye entendu.</l>
           </sp>
-        </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        </div>
+        <div n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Médée, Hypsipile.</head>
-          <sp xml:id="IV04-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-1">
             <speaker>MÉDÉE.</speaker>
             <l n="1276" xml:id="l1276">Vous l'avez vu, madame, êtes-vous satisfaite ?</l>
           </sp>
-          <sp xml:id="IV04-2" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-2">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1277" xml:id="l1277">Vous en pouvez juger par sa prompte retraite.</l>
           </sp>
-          <sp xml:id="IV04-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-3">
             <speaker>MÉDÉE.</speaker>
             <l n="1278" xml:id="l1278">Elle marque le trouble où son coeur est réduit ;</l>
             <l n="1279" xml:id="l1279">Mais j'ignore, après tout, s'il vous quitte ou me fuit.</l>
           </sp>
-          <sp xml:id="IV04-4" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-4">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1280" xml:id="l1280">Vous pouvez donc, madame, ignorer quelque chose ?</l>
           </sp>
-          <sp xml:id="IV04-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-5">
             <speaker>MÉDÉE.</speaker>
             <l n="1281" xml:id="l1281">Je sais que, s'il me fuit, vous en êtes la cause.</l>
           </sp>
-          <sp xml:id="IV04-6" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-6">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1282" xml:id="l1282">Moi, je n'en sais pas tant ; mais j'avoue entre nous</l>
             <l n="1283" xml:id="l1283">Que s'il faut qu'il me quitte, il a besoin de vous.</l>
           </sp>
-          <sp xml:id="IV04-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-7">
             <speaker>MÉDÉE.</speaker>
             <l n="1284" xml:id="l1284">Ce que vous en pensez me donne peu d'alarmes.</l>
           </sp>
-          <sp xml:id="IV04-8" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-8">
             <speaker>HYPSIPYLE.</speaker>
             <note type="C">Ce vers est célèbre comme étant un "concetto", un jeu de mots sur le terme charme synonyme de d'attraits et synonyme de sort jété par une sorcier ou une sorcière.</note>
             <l n="1285" xml:id="l1285">Je n'ai que des attraits, et vous avez des charmes.</l>
           </sp>
-          <sp xml:id="IV04-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-9">
             <speaker>MÉDÉE.</speaker>
             <l n="1286" xml:id="l1286">C'est beaucoup en amour que de savoir charmer.</l>
           </sp>
-          <sp xml:id="IV04-10" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-10">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1287" xml:id="l1287">Et c'est beaucoup aussi que de se faire aimer.</l>
           </sp>
-          <sp xml:id="IV04-11" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-11">
             <speaker>MÉDÉE.</speaker>
             <l n="1288" xml:id="l1288">Si vous en avez l'art, j'ai celui d'y contraindre.</l>
           </sp>
-          <sp xml:id="IV04-12" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-12">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1289" xml:id="l1289">À faute d'être aimée, on peut se faire craindre.</l>
           </sp>
-          <sp xml:id="IV04-13" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-13">
             <speaker>MÉDÉE.</speaker>
-            <l n="1290" xml:id="l1290" part="I">Il vous aima jadis ?</l>
+            <l n="1290" part="I" xml:id="l1290">Il vous aima jadis ?</l>
           </sp>
-          <sp xml:id="IV04-14" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-14">
             <speaker>HYPSIPYLE.</speaker>
             <l part="F">Peut-être il m'aime encor,</l>
             <l n="1291" xml:id="l1291">Moins que vous toutefois, ou que la toison d'or.</l>
           </sp>
-          <sp xml:id="IV04-15" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-15">
             <speaker>MÉDÉE.</speaker>
             <l n="1292" xml:id="l1292">Du moins, quand je voudrai flatter son espérance,</l>
             <l n="1293" xml:id="l1293">Il saura de nous deux faire la différence.</l>
           </sp>
-          <sp xml:id="IV04-16" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-16">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1294" xml:id="l1294">J'en vois la différence assez grande à Colchos ;</l>
             <l n="1295" xml:id="l1295">Mais elle seroit autre et plus grande à Lemnos.</l>
             <l n="1296" xml:id="l1296">Les lieux aident au choix ; et peut-être qu'en Grèce</l>
             <l n="1297" xml:id="l1297">Quelque troisième objet surprendroit sa tendresse.</l>
           </sp>
-          <sp xml:id="IV04-17" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-17">
             <speaker>MÉDÉE.</speaker>
             <l n="1298" xml:id="l1298">J'appréhende assez peu qu'il me manque de foi.</l>
           </sp>
-          <sp xml:id="IV04-18" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-18">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1299" xml:id="l1299">Vous êtes plus adroite et plus belle que moi :</l>
             <l n="1300" xml:id="l1300">Tant qu'il aura des yeux vous n'avez rien à craindre.</l>
           </sp>
-          <sp xml:id="IV04-19" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-19">
             <speaker>MÉDÉE.</speaker>
             <l n="1301" xml:id="l1301">J'allume peu de feux qu'un autre puisse éteindre ;</l>
             <l n="1302" xml:id="l1302">Et puisqu'il me promet un coeur ferme et constant...</l>
           </sp>
-          <sp xml:id="IV04-20" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-20">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1303" xml:id="l1303">Autrefois à Lemnos il m'en promit autant.</l>
           </sp>
-          <sp xml:id="IV04-21" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-21">
             <speaker>MÉDÉE.</speaker>
             <l n="1304" xml:id="l1304">D'un amant qui s'en va de quoi sert la parole ?</l>
           </sp>
-          <sp xml:id="IV04-22" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-22">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1305" xml:id="l1305">À montrer qu'on vous peut voler ce qu'on me vole.</l>
             <l n="1306" xml:id="l1306">Ces beaux feux qu'en mon île il n'osoit démentir...</l>
           </sp>
-          <sp xml:id="IV04-23" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-23">
             <speaker>MÉDÉE.</speaker>
             <l n="1307" xml:id="l1307">Eurent un peu de tort de le laisser partir.</l>
           </sp>
-          <sp xml:id="IV04-24" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-24">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1308" xml:id="l1308">Comme vous en aurez, si jamais ce volage</l>
             <l n="1309" xml:id="l1309">Porte à quelque autre objet ce qu'il vous rend d'hommage.</l>
           </sp>
-          <sp xml:id="IV04-25" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-25">
             <speaker>MÉDÉE.</speaker>
             <l n="1310" xml:id="l1310">Les captifs mal gardés ont droit de nous quitter.</l>
           </sp>
-          <sp xml:id="IV04-26" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-26">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1311" xml:id="l1311">J'avais quelque mérite, et n'ai pu l'arrêter.</l>
           </sp>
-          <sp xml:id="IV04-27" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-27">
             <speaker>MÉDÉE.</speaker>
             <l n="1312" xml:id="l1312">J'en ai peu, mais enfin s'il fait plus que le vôtre ?</l>
           </sp>
-          <sp xml:id="IV04-28" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-28">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1313" xml:id="l1313">Vous avez lieu de croire en valoir bien un autre ;</l>
             <l n="1314" xml:id="l1314">Mais prenez moins d'appui sur un coeur usurpé :</l>
             <l n="1315" xml:id="l1315">Il peut vous échapper, puisqu'il m'est échappé.</l>
           </sp>
-          <sp xml:id="IV04-29" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-29">
             <speaker>MÉDÉE.</speaker>
             <l n="1316" xml:id="l1316">Votre esprit n'est rempli que de mauvais augures.</l>
           </sp>
-          <sp xml:id="IV04-30" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-30">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1317" xml:id="l1317">On peut sur le passé former ses conjectures.</l>
           </sp>
-          <sp xml:id="IV04-31" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-31">
             <speaker>MÉDÉE.</speaker>
             <l n="1318" xml:id="l1318">Le passé mal conduit n'est qu'un miroir trompeur,</l>
             <l n="1319" xml:id="l1319">Où l'oeil bien éclairé ne fonde espoir ni peur.</l>
           </sp>
-          <sp xml:id="IV04-32" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-32">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1320" xml:id="l1320">Si j'ai conçu pour vous des craintes mal fondées...</l>
           </sp>
-          <sp xml:id="IV04-33" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-33">
             <speaker>MÉDÉE.</speaker>
             <l n="1321" xml:id="l1321">Laissons faire Jason, et gardons nos idées.</l>
           </sp>
-          <sp xml:id="IV04-34" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-34">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1322" xml:id="l1322">Avec sincérité je dois vous avouer</l>
             <l n="1323" xml:id="l1323">Que j'ai quelque sujet encor de m'en louer.</l>
           </sp>
-          <sp xml:id="IV04-35" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-35">
             <speaker>MÉDÉE.</speaker>
             <l n="1324" xml:id="l1324">Avec sincérité je dois aussi vous dire</l>
             <l n="1325" xml:id="l1325">Qu'assez malaisément on sort de mon empire,</l>
@@ -2088,20 +2074,20 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1327" xml:id="l1327">On ne s'abaisse plus à vous considérer.</l>
             <l n="1328" xml:id="l1328">Profitez des avis que ma pitié vous donne.</l>
           </sp>
-          <sp xml:id="IV04-36" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-36">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1329" xml:id="l1329">À vous dire le vrai, cette hauteur m'étonne.</l>
             <l n="1330" xml:id="l1330">Je suis reine, madame, et les fronts couronnés...</l>
           </sp>
-          <sp xml:id="IV04-37" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-37">
             <speaker>MÉDÉE.</speaker>
             <l n="1331" xml:id="l1331">Et moi je suis Médée, et vous m'importunez.</l>
           </sp>
-          <sp xml:id="IV04-38" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III04-38">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1332" xml:id="l1332">Cet indigne mépris que de mon rang vous faites...</l>
           </sp>
-          <sp xml:id="IV04-39" who="MEDEE">
+          <sp who="MEDEE" xml:id="III04-39">
             <speaker>MÉDÉE.</speaker>
             <l n="1333" xml:id="l1333">Connoissez-moi, madame, et voyez où vous êtes.</l>
             <l n="1334" xml:id="l1334">Si Jason pour vos yeux ose encor soupirer,</l>
@@ -2109,15 +2095,11 @@ de cyprès qui a paru au premier acte.</stage>
             <l n="1336" xml:id="l1336">Adieu : souvenez-vous, au lieu de vous en plaindre,</l>
             <l n="1337" xml:id="l1337">Qu'à faute d'être aimée, on peut se faire craindre.</l>
           </sp>
-          <stage type="[N/A]">Ce palais doré en un palais d'horreur sitôt que Médée a dit le premier de ces cinq derniers vers, et qu'elle a donné un coup de baguette. 
-Tout ce qu'il y a d'épouvantable en la nature y sert de termes. L'éléphant, le rhinocéros, le lion, l'once, les tigres, les léopards, 
-les panthères, les dragons, les serpents, tous avec leurs antipathies à leurs pieds, y lancent des regards menaçants. une grotte obscure borne la vue, 
-au travers de laquelle l'oeil ne laisse pas de découvrir un éloignement merveilleux que fait la perspective. Quatre monstres ailés et quatre rampants enferment 
-Hypsipyle, et semblent prêts à la dévorer.</stage>
-        </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+          <stage>Ce palais doré en un palais d'horreur sitôt que Médée a dit le premier de ces cinq derniers vers, et qu'elle a donné un coup de baguette. Tout ce qu'il y a d'épouvantable en la nature y sert de termes. L'éléphant, le rhinocéros, le lion, l'once, les tigres, les léopards, les panthères, les dragons, les serpents, tous avec leurs antipathies à leurs pieds, y lancent des regards menaçants. une grotte obscure borne la vue, au travers de laquelle l'oeil ne laisse pas de découvrir un éloignement merveilleux que fait la perspective. Quatre monstres ailés et quatre rampants enferment Hypsipyle, et semblent prêts à la dévorer.</stage>
+        </div>
+        <div n="5" type="scene" xml:id="III05">
           <head>SCÈNE V.</head>
-          <sp xml:id="IV05-1" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III05-1">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1338" xml:id="l1338">Que vois-je ? Où suis-je ? Ô dieux ! Quels abîmes ouverts</l>
             <l n="1339" xml:id="l1339">Exhalent jusqu'à moi les vapeurs des enfers !</l>
@@ -2134,29 +2116,29 @@ Hypsipyle, et semblent prêts à la dévorer.</stage>
             <l n="1350" xml:id="l1350">Cette honte est pour moi pire que le trépas.</l>
             <l n="1351" xml:id="l1351">Je ne veux plus mourir ; monstres, n'avancez pas.</l>
           </sp>
-          <sp xml:id="IV05-2" who="VOIX">
+          <sp who="VOIX" xml:id="III05-2">
             <speaker>UNE VOIX, derrière le théâtre.</speaker>
             <l n="1352" xml:id="l1352">Monstres, n'avancez pas, une reine l'ordonne ;</l>
             <l n="1353" xml:id="l1353">Respectez ses appas ;</l>
             <l n="1354" xml:id="l1354">Suivez les lois qu'elle vous donne :</l>
             <l n="1355" xml:id="l1355">Monstres, n'avancez pas.</l>
-            <stage type="[N/A]">Les monstres s'arrêtent sitôt que cette voix chante.</stage>
+            <stage>Les monstres s'arrêtent sitôt que cette voix chante.</stage>
           </sp>
-          <sp xml:id="IV05-3" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III05-3">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1356" xml:id="l1356">Quel favorable écho, pendant que je soupire,</l>
             <l n="1357" xml:id="l1357">Répète mes frayeurs avec un tel empire ?</l>
             <l n="1358" xml:id="l1358">Et d'où vient que frappés par ces divins accents,</l>
             <l n="1359" xml:id="l1359">Ces monstres tout à coup deviennent impuissants ?</l>
           </sp>
-          <sp xml:id="IV05-4" who="VOIX">
+          <sp who="VOIX" xml:id="III05-4">
             <speaker>LA VOIX.</speaker>
             <l n="1360" xml:id="l1360">C'est l'amour qui fait ce miracle,</l>
             <l n="1361" xml:id="l1361">Et veut plus faire en ta faveur.</l>
             <l n="1362" xml:id="l1362">N'y mets donc point d'obstacle :</l>
             <l n="1363" xml:id="l1363">Aime qui t'aime, et donne coeur pour coeur.</l>
           </sp>
-          <sp xml:id="IV05-5" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III05-5">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1364" xml:id="l1364">Quel prodige nouveau ! Cet amas de nuages</l>
             <l n="1365" xml:id="l1365">Vient-il dessus ma tête éclater en orages ?</l>
@@ -2164,13 +2146,13 @@ Hypsipyle, et semblent prêts à la dévorer.</stage>
             <l n="1367" xml:id="l1367">M'annoncez-vous par là ma perte ou mon salut ?</l>
             <l n="1368" xml:id="l1368">Le nuage descend, il s'arrête, il s'entr'ouvre ;</l>
             <l n="1369" xml:id="l1369">Et je vois... Mais, ô dieux, qu'est-ce que j'y découvre ?</l>
-            <l n="1370" xml:id="l1370" part="I">Seroit-ce bien le prince ?</l>
+            <l n="1370" part="I" xml:id="l1370">Seroit-ce bien le prince ?</l>
           </sp>
-          <stage type="[N/A]">Un nuage descend jusqu'à terre, et, s'y séparant en deux moitiés, qui se perdent chacune de son côté, il laisse sur le théâtre le prince Absyrte.</stage>
-        </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+          <stage>Un nuage descend jusqu'à terre, et, s'y séparant en deux moitiés, qui se perdent chacune de son côté, il laisse sur le théâtre le prince Absyrte.</stage>
+        </div>
+        <div n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI. Absyrte, Hypsipyle.</head>
-          <sp xml:id="IV06-1" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="III06-1">
             <speaker>ABSYRTE.</speaker>
             <l part="F">Oui, madame, c'est lui</l>
             <l n="1371" xml:id="l1371">Dont l'amour vous apporte un ferme et sûr appui :</l>
@@ -2182,7 +2164,7 @@ Hypsipyle, et semblent prêts à la dévorer.</stage>
             <l n="1377" xml:id="l1377">Je ne me connois plus, je cesse d'être frère.</l>
             <l n="1378" xml:id="l1378">Monstres, disparoissez ; fuyez de ces beaux yeux</l>
             <l n="1379" xml:id="l1379">Que vous avez en vain obsédés en ces lieux.</l>
-            <stage type="[N/A]">Tous les monstres s'envolent ou fondent sous terre, et Absyrte continue.</stage>
+            <stage>Tous les monstres s'envolent ou fondent sous terre, et Absyrte continue.</stage>
             <l n="1380" xml:id="l1380">Et vous, divin objet, n'en ayez plus d'alarmes.</l>
             <l n="1381" xml:id="l1381">Pour détruire le reste, il faudroit d'autres charmes.</l>
             <l n="1382" xml:id="l1382">Contre ceux qu'on pressoit de vous faire périr,</l>
@@ -2191,34 +2173,31 @@ Hypsipyle, et semblent prêts à la dévorer.</stage>
             <l n="1385" xml:id="l1385">Ne me laissoient ouvert que le milieu des nues ;</l>
             <l n="1386" xml:id="l1386">Mais le mien, quoique moindre, a pleine autorité</l>
             <l n="1387" xml:id="l1387">De nous faire sortir d'un séjour enchanté.</l>
-            <l n="1388" xml:id="l1388" part="I">Allons, madame.</l>
+            <l n="1388" part="I" xml:id="l1388">Allons, madame.</l>
           </sp>
-          <sp xml:id="IV06-2" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III06-2">
             <speaker>HYPSIPYLE.</speaker>
             <l part="F">Allons, prince trop magnanime,</l>
             <l n="1389" xml:id="l1389">Prince digne en effet de toute mon estime.</l>
           </sp>
-          <sp xml:id="IV06-3" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="III06-3">
             <speaker>ABSYRTE.</speaker>
             <l n="1390" xml:id="l1390">N'aurez-vous rien de plus pour des voeux si constants ?</l>
-            <l n="1391" xml:id="l1391" part="I">Et ne pourrai-je...</l>
+            <l n="1391" part="I" xml:id="l1391">Et ne pourrai-je...</l>
           </sp>
-          <sp xml:id="IV06-4" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="III06-4">
             <speaker>HYPSIPYLE.</speaker>
             <l part="F">Allons, et laissez faire au temps.</l>
           </sp>
-        </div2>
-      </div1>
-      <div1 xml:id="V" type="act" n="4">
+        </div>
+      </div>
+      <div n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <stage type="[N/A]">DÉCORATION DU QUATRIÈME ACTE.</stage>
-        <stage type="[N/A]">Ce théâtre horrible fait place à un plus agréable : c'est le désert où Médée à coutume de se retirer pour faire ses enchantements. 
-Il est tout de rochers qui laissent sortir de leurs fentes quelques filaments d'herbes rampantes et quelques arbres moitié verts et moitié 
-secs ; ces rochers sont d'une pierre blanche et luisante, de sorte que que comme l'autre théâtre était fort chargé d'ombres, le changement 
-subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stage>
-        <div2 xml:id="V01" type="scene" n="1">
+        <stage>DÉCORATION DU QUATRIÈME ACTE.</stage>
+        <stage>Ce théâtre horrible fait place à un plus agréable : c'est le désert où Médée à coutume de se retirer pour faire ses enchantements. Il est tout de rochers qui laissent sortir de leurs fentes quelques filaments d'herbes rampantes et quelques arbres moitié verts et moitié secs ; ces rochers sont d'une pierre blanche et luisante, de sorte que que comme l'autre théâtre était fort chargé d'ombres, le changement subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stage>
+        <div n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Absyrte, Médée.</head>
-          <sp xml:id="V01-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-1">
             <speaker>MÉDÉE.</speaker>
             <l n="1392" xml:id="l1392">Qui donne cette audace à votre inquiétude,</l>
             <l n="1393" xml:id="l1393">Prince, de me troubler jusqu'en ma solitude ?</l>
@@ -2227,7 +2206,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1396" xml:id="l1396">Et qu'étant par mon art consacrés au silence,</l>
             <l n="1397" xml:id="l1397">Aucun ne peut sans crime y mêler sa présence ?</l>
           </sp>
-          <sp xml:id="V01-2" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="IV01-2">
             <speaker>ABSYRTE.</speaker>
             <l n="1398" xml:id="l1398">De vos bontés, ma soeur, c'est sans doute abuser ;</l>
             <l n="1399" xml:id="l1399">Mais l'ardeur d'un amant a droit de tout oser.</l>
@@ -2236,7 +2215,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1402" xml:id="l1402">Vous demander un charme à détacher un coeur,</l>
             <l n="1403" xml:id="l1403">À dérober une âme à son premier vainqueur.</l>
           </sp>
-          <sp xml:id="V01-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-3">
             <speaker>MÉDÉE.</speaker>
             <l n="1404" xml:id="l1404">Hélas ! Cet art, mon frère, impuissant sur les âmes,</l>
             <l n="1405" xml:id="l1405">Ne sait que c'est d'éteindre ou d'allumer des flammes</l>
@@ -2249,7 +2228,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1412" xml:id="l1412">Et son ingratitude au dernier point éclate,</l>
             <l n="1413" xml:id="l1413">Si d'une ombre d'espoir cet effroi ne vous flatte.</l>
           </sp>
-          <sp xml:id="V01-4" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="IV01-4">
             <speaker>ABSYRTE.</speaker>
             <l n="1414" xml:id="l1414">Elle croit qu'en votre art aussi savant que vous,</l>
             <l n="1415" xml:id="l1415">Je prends plaisir pour elle à rabattre vos coups ;</l>
@@ -2258,7 +2237,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1418" xml:id="l1418">Mais à moins toutefois que de perdre l'espoir,</l>
             <l n="1419" xml:id="l1419">Du côté de l'amour rien ne peut l'émouvoir.</l>
           </sp>
-          <sp xml:id="V01-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-5">
             <speaker>MÉDÉE.</speaker>
             <l n="1420" xml:id="l1420">L'espoir qu'elle conserve aura peu de durée,</l>
             <l n="1421" xml:id="l1421">Puisque Jason en veut à la toison dorée,</l>
@@ -2266,9 +2245,9 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1423" xml:id="l1423">C'est se livrer soi-même et courir à la mort.</l>
             <l n="1424" xml:id="l1424">Oui, mon frère, prenez un esprit plus tranquille,</l>
             <l n="1425" xml:id="l1425">Si la mort d'un rival vous assure Hypsipyle ;</l>
-            <l n="1426" xml:id="l1426" part="I">Et croyez...</l>
+            <l n="1426" part="I" xml:id="l1426">Et croyez...</l>
           </sp>
-          <sp xml:id="V01-6" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="IV01-6">
             <speaker>ABSYRTE.</speaker>
             <l part="F">Ah ! Ma soeur, ce seroit me trahir</l>
             <l n="1427" xml:id="l1427">Que de perdre Jason sans le faire haïr.</l>
@@ -2291,7 +2270,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1444" xml:id="l1444">C'est ce que je demande à cette amitié pure</l>
             <l n="1445" xml:id="l1445">Qu'avec le jour pour moi vous donna la nature.</l>
           </sp>
-          <sp xml:id="V01-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-7">
             <speaker>MÉDÉE.</speaker>
             <l n="1446" xml:id="l1446">Puis-je m'en faire aimer sans l'aimer à mon tour,</l>
             <l n="1447" xml:id="l1447">Et pour un coeur sans foi me souffrir de l'amour ?</l>
@@ -2300,7 +2279,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1450" xml:id="l1450">Ou si par nos taureaux il se fait déchirer,</l>
             <l n="1451" xml:id="l1451">Voulez-vous que je l'aime, afin de le pleurer ?</l>
           </sp>
-          <sp xml:id="V01-8" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="IV01-8">
             <speaker>ABSYRTE.</speaker>
             <l n="1452" xml:id="l1452">Aimez, ou n'aimez pas, il suffit qu'il vous aime ;</l>
             <l n="1453" xml:id="l1453">Et quant à ces périls pour notre diadème,</l>
@@ -2319,7 +2298,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1466" xml:id="l1466">Tomber à bas d'un trône est un sort rigoureux ;</l>
             <l n="1467" xml:id="l1467">Mais quitter l'un pour l'autre est un échange heureux.</l>
           </sp>
-          <sp xml:id="V01-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV01-9">
             <speaker>MÉDÉE.</speaker>
             <l n="1468" xml:id="l1468">Un amant tel que vous, pour gagner ce qu'il aime,</l>
             <l n="1469" xml:id="l1469">Changeroit sans remords d'air et de diadème...</l>
@@ -2334,10 +2313,10 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1478" xml:id="l1478">Allez sans perdre temps, et laissez-moi rêver</l>
             <l n="1479" xml:id="l1479">Aux beaux commencements que je veux achever.</l>
           </sp>
-        </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        </div>
+        <div n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II.</head>
-          <sp xml:id="V02-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV02-1">
             <speaker>MÉDÉE.</speaker>
             <l n="1480" xml:id="l1480">Tranquille et vaste solitude,</l>
             <l n="1481" xml:id="l1481">Qu'à votre calme heureux j'ose en vain recourir !</l>
@@ -2380,10 +2359,10 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1518" xml:id="l1518">Sauve tout le dehors du honteux esclavage</l>
             <l n="1519" xml:id="l1519">Qui t'enlève tout le dedans.</l>
           </sp>
-        </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        </div>
+        <div n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Junon, Médée.</head>
-          <sp xml:id="V03-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV03-1">
             <speaker>MÉDÉE.</speaker>
             <l n="1520" xml:id="l1520">L'avez-vous vu, ma soeur, cet amant infidèle ?</l>
             <l n="1521" xml:id="l1521">Que répond-il aux pleurs d'une reine si belle ?</l>
@@ -2392,13 +2371,13 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1524" xml:id="l1524">Croit-il qu'un tel exemple ait su si peu m'instruire,</l>
             <l n="1525" xml:id="l1525">Qu'il lui laisse encor lieu de me pouvoir séduire ?</l>
           </sp>
-          <sp xml:id="V03-2" who="JUNON">
+          <sp who="JUNON" xml:id="IV03-2">
             <speaker>JUNON.</speaker>
             <l n="1526" xml:id="l1526">Modérez ces chaleurs de votre esprit jaloux :</l>
             <l n="1527" xml:id="l1527">Prenez des sentiments plus justes et plus doux ;</l>
             <l n="1528" xml:id="l1528">Et sans vous emporter souffrez que je vous die...</l>
           </sp>
-          <sp xml:id="V03-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV03-3">
             <speaker>MÉDÉE.</speaker>
             <l n="1529" xml:id="l1529">Qu'il pense m'acquérir par cette perfidie ?</l>
             <l n="1530" xml:id="l1530">Et que ce qu'il fait voir de tendresse et d'amour,</l>
@@ -2412,7 +2391,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1538" xml:id="l1538">Lisez-vous dans son coeur pour voir ce qui s'y fait,</l>
             <l n="1539" xml:id="l1539">Et si j'ai de ces feux l'apparence ou l'effet ?</l>
           </sp>
-          <sp xml:id="V03-4" who="JUNON">
+          <sp who="JUNON" xml:id="IV03-4">
             <speaker>JUNON.</speaker>
             <l n="1540" xml:id="l1540">Quoi ? Vous vous offensez d'Hypsipyle quittée !</l>
             <l n="1541" xml:id="l1541">D'Hypsipyle pour vous à vos yeux maltraitée !</l>
@@ -2441,9 +2420,9 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1564" xml:id="l1564">Si c'est votre dessein, en faisant la cruelle,</l>
             <l n="1565" xml:id="l1565">D'obliger ce héros à retourner vers elle,</l>
             <l n="1566" xml:id="l1566">Vous en pourrez avoir un succès assez prompt ;</l>
-            <l n="1567" xml:id="l1567" part="I">Sinon...</l>
+            <l n="1567" part="I" xml:id="l1567">Sinon...</l>
           </sp>
-          <sp xml:id="V03-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV03-5">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Plutôt la mort qu'un si honteux affront.</l>
             <l n="1568" xml:id="l1568">Je ne souffrirai point qu'Hypsipyle me brave,</l>
@@ -2459,12 +2438,12 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1578" xml:id="l1578">Qu'il soit pareille joie ; et je mourrois, ma soeur,</l>
             <l n="1579" xml:id="l1579">S'il falloit qu'à son tour elle eût même douceur.</l>
           </sp>
-          <sp xml:id="V03-6" who="JUNON">
+          <sp who="JUNON" xml:id="IV03-6">
             <speaker>JUNON.</speaker>
             <l n="1580" xml:id="l1580">Quoi ? Pour vous cette honte est un malheur extrême ?</l>
-            <l n="1581" xml:id="l1581" part="I">Ah ! Vous l'aimez encor.</l>
+            <l n="1581" part="I" xml:id="l1581">Ah ! Vous l'aimez encor.</l>
           </sp>
-          <sp xml:id="V03-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV03-7">
             <speaker>MÉDÉE.</speaker>
             <l part="F">Non ; mais je veux qu'il m'aime.</l>
             <l n="1582" xml:id="l1582">Je veux, pour éviter un si mortel ennui,</l>
@@ -2478,27 +2457,27 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1590" xml:id="l1590">Et je saurai sur lui nous venger toutes deux,</l>
             <l n="1591" xml:id="l1591">Sitôt qu'il n'aura plus à qui porter ses voeux.</l>
           </sp>
-          <sp xml:id="V03-8" who="JUNON">
+          <sp who="JUNON" xml:id="IV03-8">
             <speaker>JUNON.</speaker>
             <l n="1592" xml:id="l1592">Vous vous promettez plus que vous ne voudrez faire,</l>
             <l n="1593" xml:id="l1593">Et vous n'en croirez pas toute cette colère.</l>
           </sp>
-          <sp xml:id="V03-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV03-9">
             <speaker>MÉDÉE.</speaker>
             <l n="1594" xml:id="l1594">Je ferai plus encor que je ne me promets,</l>
             <l n="1595" xml:id="l1595">Si vous pouvez, ma soeur, quitter ses intérêts.</l>
           </sp>
-          <sp xml:id="V03-10" who="JUNON">
+          <sp who="JUNON" xml:id="IV03-10">
             <speaker>JUNON.</speaker>
             <l n="1596" xml:id="l1596">Quelques chers qu'ils me soient, je veux bien m'y contraindre,</l>
             <l n="1597" xml:id="l1597">Et pour mieux vous ôter tout sujet de me craindre,</l>
             <l n="1598" xml:id="l1598">Le voilà qui paroît, je vous laisse avec lui.</l>
             <l n="1599" xml:id="l1599">Vous me rappellerez, s'il a besoin d'appui.</l>
           </sp>
-        </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        </div>
+        <div n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Jason, Médée.</head>
-          <sp xml:id="V04-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV04-1">
             <speaker>MÉDÉE.</speaker>
             <l n="1600" xml:id="l1600">êtes-vous prêt, Jason, d'entrer dans la carrière ?</l>
             <l n="1601" xml:id="l1601">Faut-il du champ de Mars vous ouvrir la barrière,</l>
@@ -2519,7 +2498,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1616" xml:id="l1616">Vous n'avez qu'à paroître, et sans autre artifice,</l>
             <l n="1617" xml:id="l1617">Un coup d'oeil détruira ce qu'il rend de service.</l>
           </sp>
-          <sp xml:id="V04-2" who="JASON">
+          <sp who="JASON" xml:id="IV04-2">
             <speaker>JASON.</speaker>
             <l n="1618" xml:id="l1618">Qu'un si cruel reproche à mon coeur seroit doux</l>
             <l n="1619" xml:id="l1619">S'il avait pu partir d'un sentiment jaloux,</l>
@@ -2540,7 +2519,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1634" xml:id="l1634">Ce sont des vérités que vous vous dites mieux,</l>
             <l n="1635" xml:id="l1635">Et j'ai tort de parler où vous avez des yeux.</l>
           </sp>
-          <sp xml:id="V04-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV04-3">
             <speaker>MÉDÉE.</speaker>
             <l n="1636" xml:id="l1636">Oui, j'ai des yeux, ingrat, meilleurs que tu ne penses,</l>
             <l n="1637" xml:id="l1637">Et vois jusqu'en ton coeur tes fausses préférences.</l>
@@ -2569,7 +2548,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1660" xml:id="l1660">Et que pour toi mon âme, hélas ! Trop enflammée,</l>
             <l n="1661" xml:id="l1661">Auroit pu te donner, si tu m'avais aimée.</l>
           </sp>
-          <sp xml:id="V04-4" who="JASON">
+          <sp who="JASON" xml:id="IV04-4">
             <speaker>JASON.</speaker>
             <l n="1662" xml:id="l1662">Ah ! Si le pur amour peut mériter ce don,</l>
             <l n="1663" xml:id="l1663">À qui peut-il, madame, être dû qu'à Jason ?</l>
@@ -2605,7 +2584,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1693" xml:id="l1693">Un exil couronné peut faire aimer la vie.</l>
             <l n="1694" xml:id="l1694">Mille autres en ma place, au lieu de s'alarmer...</l>
           </sp>
-          <sp xml:id="V04-5" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV04-5">
             <speaker>MÉDÉE.</speaker>
             <l n="1695" xml:id="l1695">Eh bien ! Je t'aimerai, s'il ne faut que t'aimer :</l>
             <l n="1696" xml:id="l1696">Malgré tous ces héros, malgré tous ces monarques,</l>
@@ -2616,7 +2595,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1701" xml:id="l1701">Qu'un exil avec moi peut faire aimer la vie,</l>
             <l n="1702" xml:id="l1702">Ose prendre à ce prix le nom de mon époux.</l>
           </sp>
-          <sp xml:id="V04-6" who="JASON">
+          <sp who="JASON" xml:id="IV04-6">
             <speaker>JASON.</speaker>
             <l n="1703" xml:id="l1703">Oui, madame, à ce prix tout exil m'est trop doux ;</l>
             <l n="1704" xml:id="l1704">Mais je veux être aimé, je veux pouvoir le croire ;</l>
@@ -2629,7 +2608,7 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1711" xml:id="l1711">Elle m'offre encor tout ce qu'elle peut donner ;</l>
             <l n="1712" xml:id="l1712">Malgré mon inconstance, elle aime sans réserve.</l>
           </sp>
-          <sp xml:id="V04-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV04-7">
             <speaker>MÉDÉE.</speaker>
             <l n="1713" xml:id="l1713">Et moi, je n'aime point, à moins que je te serve ?</l>
             <l n="1714" xml:id="l1714">Cherche un autre prétexte à lui rendre ta foi ;</l>
@@ -2645,16 +2624,16 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1724" xml:id="l1724">Y préparent déjà leurs ailes enhardies</l>
             <l n="1725" xml:id="l1725">D'avoir pour coup d'essai triomphé des Harpies ;</l>
             <l n="1726" xml:id="l1726">Orphée avec ses chants se promet le bonheur</l>
-            <l n="1727" xml:id="l1727" part="I">D'assoupir...</l>
+            <l n="1727" part="I" xml:id="l1727">D'assoupir...</l>
           </sp>
-          <sp xml:id="V04-8" who="JASON">
+          <sp who="JASON" xml:id="IV04-8">
             <speaker>JASON.</speaker>
             <l part="F">Ah ! Madame, ils auront tout l'honneur,</l>
             <l n="1728" xml:id="l1728">Ou du moins j'aurai part moi-même à leur défaite,</l>
             <l n="1729" xml:id="l1729">Si je laisse comme eux la conquête imparfaite :</l>
             <l n="1730" xml:id="l1730">Il me la faut entière ; et je veux vous devoir...</l>
           </sp>
-          <sp xml:id="V04-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="IV04-9">
             <speaker>MÉDÉE.</speaker>
             <l n="1731" xml:id="l1731">Va, laisse quelque chose, ingrat, en mon pouvoir ;</l>
             <l n="1732" xml:id="l1732">J'en ai déjà trop fait pour une âme infidèle.</l>
@@ -2672,11 +2651,11 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1744" xml:id="l1744">Je n'ai pour t'acheter sceptres ni diadèmes ;</l>
             <l n="1745" xml:id="l1745">Mais telle que je suis, crains-moi, si tu ne m'aimes.</l>
           </sp>
-        </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        </div>
+        <div n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Junon, jason, L'Amour.</head>
-          <stage type="[N/A]">L'amour est dans le ciel de Vénus.</stage>
-          <sp xml:id="V05-1" who="JUNON">
+          <stage>L'amour est dans le ciel de Vénus.</stage>
+          <sp who="JUNON" xml:id="IV05-1">
             <speaker>JUNON.</speaker>
             <l n="1746" xml:id="l1746">À bien examiner l'éclat de ce grand bruit,</l>
             <l n="1747" xml:id="l1747">Hypsipyle vous sert plus qu'elle ne vous nuit.</l>
@@ -2697,8 +2676,8 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1762" xml:id="l1762">Il veut parler à nous : écoutez quel appui</l>
             <l n="1763" xml:id="l1763">Le trouble où je vous vois peut espérer de lui.</l>
           </sp>
-          <stage type="[N/A]">Le ciel s'ouvre et fait voior le palais de Vénus , composé de Termes à face humaine et revêtus de gazes d'or, qui lui servent de colonnes ; le lambris n'en est pas moins riche. L'Amour y araît seul, et sitôt qu'il a parlé, il s'élance ne l'air, et traverse le théâtre en volant, non pas d'un côté à l'autre, comme se font les vols ordinaires, mais d'un bout à l'autre, en tirant vers les spectateurs, ce qui n'a point encore été pratique en France de cette manière.</stage>
-          <sp xml:id="V05-2" who="AMOUR">
+          <stage>Le ciel s'ouvre et fait voior le palais de Vénus , composé de Termes à face humaine et revêtus de gazes d'or, qui lui servent de colonnes ; le lambris n'en est pas moins riche. L'Amour y araît seul, et sitôt qu'il a parlé, il s'élance ne l'air, et traverse le théâtre en volant, non pas d'un côté à l'autre, comme se font les vols ordinaires, mais d'un bout à l'autre, en tirant vers les spectateurs, ce qui n'a point encore été pratique en France de cette manière.</stage>
+          <sp who="AMOUR" xml:id="IV05-2">
             <speaker>L'AMOUR.</speaker>
             <l n="1764" xml:id="l1764">Cessez de m'accuser, soupçonneuse déesse ; </l>
             <l n="1765" xml:id="l1765">Je sais tenir promesse :</l>
@@ -2709,32 +2688,30 @@ subit de l'un de l'autre fait qu'il semble qu'on passe de la nuit au jour.</stag
             <l n="1770" xml:id="l1770">Toi, si tu sais aimer, ne crains rien de funeste ;</l>
             <l n="1771" xml:id="l1771">Obéis à Médée, et j'aurai soin du reste.</l>
           </sp>
-          <sp xml:id="V05-3" who="JUNON">
+          <sp who="JUNON" xml:id="IV05-3">
             <speaker>JUNON.</speaker>
             <l n="1772" xml:id="l1772">Ces favorables mots vous ont rendu le coeur.</l>
           </sp>
-          <sp xml:id="V05-4" who="JASON">
+          <sp who="JASON" xml:id="IV05-4">
             <speaker>JASON.</speaker>
             <l n="1773" xml:id="l1773">Mon espoir abattu reprend d'eux sa vigueur.</l>
             <l n="1774" xml:id="l1774">Allons, déesse, allons, et sûrs de l'entreprise,</l>
             <l n="1775" xml:id="l1775">Reportons à Médée une âme plus soumise.</l>
           </sp>
-          <sp xml:id="V05-5" who="JUNON">
+          <sp who="JUNON" xml:id="IV05-5">
             <speaker>JUNON.</speaker>
             <l n="1776" xml:id="l1776">Allons, je veux encor seconder vos projets,</l>
             <l n="1777" xml:id="l1777">Sans remonter au ciel qu'après leurs pleins effets.</l>
           </sp>
-        </div2>
-      </div1>
-      <div1 xml:id="VI" type="act" n="5">
+        </div>
+      </div>
+      <div n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="VI01" type="scene" n="1">
+        <div n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Absyrte, Hypsipyle.</head>
-          <stage type="[N/A]">DÉCORATION DU CINQUIÈME ACTE.</stage>
-          <stage type="[N/A]">Ce dernier spectacle présente à la vue une forêt épaisse, composée de divers arbres entrelacés ensemble, et si touffus qu'il est 
-aisé de juger que le respect qu'on porte au dieu Mars, à qui elle est consacrée, fait qu'on n'ose en couper aucune branche, ni même brosser 
-au travers : les trophées d'armes appendus en haut de la plupart des arbres marquent encore plus particlièrement qu'elle appartient à ce dieu. La Toison d'or est sur le plus élevé, qu'on voit seul de son rang, au milieu de cette forêt, et la perspective du fond fait paraître en éloignement la rivière du Phase, avec le navire Argo, qui semble n'attendre plus que jason et sa conqupte pour partir.</stage>
-          <sp xml:id="VI01-1" who="ABSYRTE">
+          <stage>DÉCORATION DU CINQUIÈME ACTE.</stage>
+          <stage>Ce dernier spectacle présente à la vue une forêt épaisse, composée de divers arbres entrelacés ensemble, et si touffus qu'il est aisé de juger que le respect qu'on porte au dieu Mars, à qui elle est consacrée, fait qu'on n'ose en couper aucune branche, ni même brosser au travers : les trophées d'armes appendus en haut de la plupart des arbres marquent encore plus particlièrement qu'elle appartient à ce dieu. La Toison d'or est sur le plus élevé, qu'on voit seul de son rang, au milieu de cette forêt, et la perspective du fond fait paraître en éloignement la rivière du Phase, avec le navire Argo, qui semble n'attendre plus que jason et sa conqupte pour partir.</stage>
+          <sp who="ABSYRTE" xml:id="V01-1">
             <speaker>ABSYRTE.</speaker>
             <l n="1778" xml:id="l1778">Voilà ce prix fameux où votre ingrat aspire,</l>
             <l n="1779" xml:id="l1779">Ce gage où les destins attachent notre empire,</l>
@@ -2761,7 +2738,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1800" xml:id="l1800">Et que je vous consacre aussi bien que mes jours,</l>
             <l n="1801" xml:id="l1801">Par le milieu des airs n'eût porté du secours.</l>
           </sp>
-          <sp xml:id="VI01-2" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V01-2">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1802" xml:id="l1802">Je n'oublierai jamais que sa jalouse envie</l>
             <l n="1803" xml:id="l1803">Se fût sans vos bontés sacrifié ma vie ;</l>
@@ -2788,7 +2765,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1824" xml:id="l1824">Et dans la liberté de faire un second choix,</l>
             <l n="1825" xml:id="l1825">Je saurai mieux penser à ce que je vous dois.</l>
           </sp>
-          <sp xml:id="VI01-3" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V01-3">
             <speaker>ABSYRTE.</speaker>
             <l n="1826" xml:id="l1826">Je ne sais si ma soeur voudra prendre assurance</l>
             <l n="1827" xml:id="l1827">Sur des serments trompeurs que rompt son inconstance ;</l>
@@ -2797,32 +2774,32 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1830" xml:id="l1830">Il combat nos taureaux, et telle est leur furie,</l>
             <l n="1831" xml:id="l1831">Qu'il faut qu'il y périsse, ou lui doive la vie.</l>
           </sp>
-          <sp xml:id="VI01-4" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V01-4">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1832" xml:id="l1832">Il combat vos taureaux ! Ah ! Que me dites-vous ?</l>
           </sp>
-          <sp xml:id="VI01-5" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V01-5">
             <speaker>ABSYRTE.</speaker>
             <l n="1833" xml:id="l1833">Qu'il n'en peut plus sortir que mort, ou son époux.</l>
           </sp>
-          <sp xml:id="VI01-6" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V01-6">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1834" xml:id="l1834">Ah ! Prince, votre soeur peut croire encor qu'il m'aime,</l>
             <l n="1835" xml:id="l1835">Et sur ce faux soupçon se venger elle-même.</l>
             <l n="1836" xml:id="l1836">Pour bien rompre le coup d'un malheur si pressant,</l>
             <l n="1837" xml:id="l1837">Peut-être que son art n'est pas assez puissant :</l>
             <l n="1838" xml:id="l1838">De grâce en ma faveur joignez-y tout le vôtre ;</l>
-            <l n="1839" xml:id="l1839" part="I">Et si...</l>
+            <l n="1839" part="I" xml:id="l1839">Et si...</l>
           </sp>
-          <sp xml:id="VI01-7" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V01-7">
             <speaker>ABSYRTE.</speaker>
             <l part="F">Quoi ? Vous voulez qu'il vive pour un autre ?</l>
           </sp>
-          <sp xml:id="VI01-8" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V01-8">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1840" xml:id="l1840">Oui, qu'il vive, et laissons tout le reste au hasard.</l>
           </sp>
-          <sp xml:id="VI01-9" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V01-9">
             <speaker>ABSYRTE.</speaker>
             <l n="1841" xml:id="l1841">Ah ! Reine, en votre coeur il garde trop de part ;</l>
             <l n="1842" xml:id="l1842">Et s'il faut vous parler avec une âme ouverte,</l>
@@ -2842,7 +2819,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1856" xml:id="l1856">Je veux bien qu'on l'impute à mon dépit jaloux ;</l>
             <l n="1857" xml:id="l1857">Mais vous, qui m'y forcez, ne l'imputez yu'à vous.</l>
           </sp>
-          <sp xml:id="VI01-10" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V01-10">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1858" xml:id="l1858">Ce reste d'intérêt que je prends en sa vie</l>
             <l n="1859" xml:id="l1859">Donne trop d'aigreur, prince, à votre jalousie.</l>
@@ -2871,10 +2848,10 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1882" xml:id="l1882">Prenez soin de sa vie, ou perdez cette reine ;</l>
             <l n="1883" xml:id="l1883">Et si je crains sa mort, craignez aussi ma haine.</l>
           </sp>
-        </div2>
-        <div2 xml:id="VI02" type="scene" n="2">
+        </div>
+        <div n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Aaete, Absyrte, Hypsipyle.</head>
-          <sp xml:id="VI02-1" who="AAETE">
+          <sp who="AAETE" xml:id="V02-1">
             <speaker>AAETE.</speaker>
             <l n="1884" xml:id="l1884">Ah ! Madame, est-ce là cette fidélité</l>
             <l n="1885" xml:id="l1885">Que vous gardez aux droits de l'hospitalité ?</l>
@@ -2889,7 +2866,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1894" xml:id="l1894">Et que sa foi vous fût indignement offerte,</l>
             <l n="1895" xml:id="l1895">À moins que son destin éclatât par ma perte !</l>
           </sp>
-          <sp xml:id="VI02-2" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V02-2">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1896" xml:id="l1896">Je ne sais pas, seigneur, à quel point vous réduit</l>
             <l n="1897" xml:id="l1897">Cette témérité de l'ingrat qui me fuit ;</l>
@@ -2898,7 +2875,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1900" xml:id="l1900">Et que si je savois ce grand art de charmer,</l>
             <l n="1901" xml:id="l1901">Je ne m'en servirois que pour m'en faire aimer.</l>
           </sp>
-          <sp xml:id="VI02-3" who="AAETE">
+          <sp who="AAETE" xml:id="V02-3">
             <speaker>AAETE.</speaker>
             <l n="1902" xml:id="l1902">Ah ! Je n'ai que trop cru vos plaintes ajustées</l>
             <l n="1903" xml:id="l1903">À des illusions entre vous concertées ;</l>
@@ -2915,26 +2892,26 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1914" xml:id="l1914">Et vos pleurs ne sembloient m'en demander vengeance</l>
             <l n="1915" xml:id="l1915">Que pour mieux faire place à votre intelligence.</l>
           </sp>
-          <sp xml:id="VI02-4" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V02-4">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1916" xml:id="l1916">Que ne sont vos soupçons autant de vérités,</l>
             <l n="1917" xml:id="l1917">Et que ne puis-je ici ce que vous m'imputez !</l>
           </sp>
-          <sp xml:id="VI02-5" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V02-5">
             <speaker>ABSYRTE.</speaker>
             <l n="1918" xml:id="l1918">Qu'a fait Jason, seigneur, et quel mal vous menace,</l>
             <l n="1919" xml:id="l1919">Quand nous voyons encor la toison en sa place ?</l>
           </sp>
-          <sp xml:id="VI02-6" who="AAETE">
+          <sp who="AAETE" xml:id="V02-6">
             <speaker>AAETE.</speaker>
             <l n="1920" xml:id="l1920">Nos taureaux sont domptés, nos gensdarmes défaits,</l>
             <l n="1921" xml:id="l1921">Absyrte : après cela crains les derniers effets.</l>
           </sp>
-          <sp xml:id="VI02-7" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V02-7">
             <speaker>ABSYRTE.</speaker>
-            <l n="1922" xml:id="l1922" part="I">Quoi ? Son bras...</l>
+            <l n="1922" part="I" xml:id="l1922">Quoi ? Son bras...</l>
           </sp>
-          <sp xml:id="VI02-8" who="AAETE">
+          <sp who="AAETE" xml:id="V02-8">
             <speaker>AAETE.</speaker>
             <l part="F">Oui, son bras, secondé par ses charmes,</l>
             <l n="1923" xml:id="l1923">A dompté nos taureaux et défait nos gensdarmes :</l>
@@ -2965,7 +2942,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1948" xml:id="l1948">Et l'on va faire hommage à votre heureux secours</l>
             <l n="1949" xml:id="l1949">Du destin de mon sceptre et de mes tristes jours.</l>
           </sp>
-          <sp xml:id="VI02-9" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V02-9">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1950" xml:id="l1950">Connoissez mieux, seigneur, la main qui vous offense ;</l>
             <l n="1951" xml:id="l1951">Et lorsque je perds tout, laissez-moi l'innocence.</l>
@@ -2974,7 +2951,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1954" xml:id="l1954">Chez vous en est la source ; et Médée elle-même</l>
             <l n="1955" xml:id="l1955">Rompt son art par son art, pour plaire à ce qu'elle aime.</l>
           </sp>
-          <sp xml:id="VI02-10" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V02-10">
             <speaker>ABSYRTE.</speaker>
             <l n="1956" xml:id="l1956">Ne l'en accusez point, elle hait trop Jason.</l>
             <l n="1957" xml:id="l1957">De sa haine, seigneur, vous savez la raison :</l>
@@ -2983,7 +2960,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1960" xml:id="l1960">Et si contre son art ce prince a réussi,</l>
             <l n="1961" xml:id="l1961">C'est qu'on le sait en Grèce autant ou plus qu'ici.</l>
           </sp>
-          <sp xml:id="VI02-11" who="AAETE">
+          <sp who="AAETE" xml:id="V02-11">
             <speaker>AAETE.</speaker>
             <l n="1962" xml:id="l1962">Ah ! Que tu connois mal jusqu'à quelle manie</l>
             <l n="1963" xml:id="l1963">D'un amour déréglé passe la tyrannie !</l>
@@ -2998,11 +2975,11 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1972" xml:id="l1972">Le destin ne me perd que par l'ordre des miens,</l>
             <l n="1973" xml:id="l1973">Et mon trône est brisé par ses propres soutiens.</l>
           </sp>
-          <sp xml:id="VI02-12" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V02-12">
             <speaker>ABSYRTE.</speaker>
             <l n="1974" xml:id="l1974">Quoi ? Seigneur, vous croiriez qu'une action si noire... </l>
           </sp>
-          <sp xml:id="VI02-13" who="AAETE">
+          <sp who="AAETE" xml:id="V02-13">
             <speaker>AAETE.</speaker>
             <l n="1975" xml:id="l1975">Je sais ce qu'il faut craindre, et non ce qu'il faut croire.</l>
             <l n="1976" xml:id="l1976">Dans cette obscurité tout me devient suspect :</l>
@@ -3016,22 +2993,22 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1984" xml:id="l1984">Je ne cherche qu'en vain à qui les imputer ;</l>
             <l n="1985" xml:id="l1985">Et ne discernant rien, j'ai tout à redouter.</l>
           </sp>
-          <sp xml:id="VI02-14" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V02-14">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1986" xml:id="l1986">La vérité, seigneur, se va faire connoître :</l>
             <l n="1987" xml:id="l1987">À travers ces rameaux je vois venir mon traître.</l>
           </sp>
-        </div2>
-        <div2 xml:id="VI03" type="scene" n="3">
+        </div>
+        <div n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Aaete, Absyrte, Hypsipyle, Jason, Orphée, Zéthès, Calaïs.</head>
-          <sp xml:id="VI03-1" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V03-1">
             <speaker>HYPSIPYLE.</speaker>
             <l n="1988" xml:id="l1988">Parlez, parlez, Jason ; dites sans feinte au roi</l>
             <l n="1989" xml:id="l1989">Qui vous seconde ici de Médée ou de moi :</l>
             <l n="1990" xml:id="l1990">Dites, est-ce elle ou moi qui contre lui conspire ?</l>
             <l n="1991" xml:id="l1991">Est-ce pour elle ou moi que votre coeur soupire ?</l>
           </sp>
-          <sp xml:id="VI03-2" who="JASON">
+          <sp who="JASON" xml:id="V03-2">
             <speaker>JASON.</speaker>
             <l n="1992" xml:id="l1992">La demande est, madame, un peu hors de saison :</l>
             <l n="1993" xml:id="l1993">Je vous y répondrai quand j'aurai la toison.</l>
@@ -3040,12 +3017,12 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="1996" xml:id="l1996">Elle veut que du ciel je presse le secours,</l>
             <l n="1997" xml:id="l1997">Et ce qu'il m'en promet ne descend pas toujours.</l>
           </sp>
-          <sp xml:id="VI03-3" who="AAETE">
+          <sp who="AAETE" xml:id="V03-3">
             <speaker>AAETE.</speaker>
             <l n="1998" xml:id="l1998">Hâtez à votre gré ce secours de descendre ;</l>
             <l n="1999" xml:id="l1999">Mais encore une fois gardez de vous méprendre.</l>
           </sp>
-          <sp xml:id="VI03-4" who="JASON">
+          <sp who="JASON" xml:id="V03-4">
             <speaker>JASON.</speaker>
             <l n="2000" xml:id="l2000">Par ce qu'ont vu vos yeux jugez ce que je puis :</l>
             <l n="2001" xml:id="l2001">Tout me paroît facile en l'état où je suis ;</l>
@@ -3053,10 +3030,10 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2003" xml:id="l2003">Il en est parmi nous qui peuvent davantage.</l>
             <l n="2004" xml:id="l2004">Souffrez donc que l'ardeur dont je me sens brûler...</l>
           </sp>
-        </div2>
-        <div2 xml:id="VI04" type="scene" n="4">
+        </div>
+        <div n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. Aaete, Absyrte, Hypsipyle, Médée, Jason, Orphée, Zéthès, Calïs.</head>
-          <sp xml:id="VI04-1" who="MEDEE">
+          <sp who="MEDEE" xml:id="V04-1">
             <speaker>MÉDÉE, sur le dragon, élévée en l'air à la hauteur d'un homme.</speaker>
             <l n="2005" xml:id="l2005">Arrête, déloyal, et laisse-moi parler :</l>
             <l n="2006" xml:id="l2006">Que je rende un plein lustre à ma gloire ternie</l>
@@ -3074,11 +3051,11 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2018" xml:id="l2018">Et j'aurai soutenu des revers bien funestes</l>
             <l n="2019" xml:id="l2019">Avant que je me daigne enrichir de vos restes.</l>
           </sp>
-          <sp xml:id="VI04-2" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V04-2">
             <speaker>HYPSIPYLE.</speaker>
             <l n="2020" xml:id="l2020">Puissiez-vous conserver ces nobles sentiments !</l>
           </sp>
-          <sp xml:id="VI04-3" who="MEDEE">
+          <sp who="MEDEE" xml:id="V04-3">
             <speaker>MÉDÉE.</speaker>
             <l n="2021" xml:id="l2021">N'en croyez plus, seigneur, que les événements.</l>
             <l n="2022" xml:id="l2022">Ce ne sont plus ici ces taureaux, ces gensdarmes</l>
@@ -3089,7 +3066,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2027" xml:id="l2027">Arbre, que tout exprès mon charme avait fait naître,</l>
             <l n="2028" xml:id="l2028">Tu nous défendrois mal contre ceux de Jason ;</l>
             <l n="2029" xml:id="l2029">Retourne en ton néant, et rends-moi la toison.</l>
-            <stage type="[N/A]">Elle prend la Toison en sa main, et la met sur le col du dragon ; L'arbre où elle était suspendue disparaît, et se retire derrière le théâtre, après quoi Médée continue en parlant à Jason.</stage>
+            <stage>Elle prend la Toison en sa main, et la met sur le col du dragon ; L'arbre où elle était suspendue disparaît, et se retire derrière le théâtre, après quoi Médée continue en parlant à Jason.</stage>
             <l n="2030" xml:id="l2030">Ce n'est qu'avec le jour qu'elle peut m'être ôtée.</l>
             <l n="2031" xml:id="l2031">Viens donc, viens, téméraire, elle est à ta portée ;</l>
             <l n="2032" xml:id="l2032">Viens teindre de mon sang cet or qui t'est si cher,</l>
@@ -3099,14 +3076,14 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2036" xml:id="l2036">Et sans perdre un moment en de vains entretiens,</l>
             <l n="2037" xml:id="l2037">Voyons qui peut le plus de tes dieux ou des miens.</l>
           </sp>
-          <sp xml:id="VI04-4" who="AAETE">
+          <sp who="AAETE" xml:id="V04-4">
             <speaker>AAETE.</speaker>
             <l n="2038" xml:id="l2038">À ce digne courroux je reconnais ma fille :</l>
             <l n="2039" xml:id="l2039">C'est mon sang dans ses yeux, c'est son aïeul qui brille ;</l>
             <l n="2040" xml:id="l2040">C'est le soleil mon père. Avancez donc, Jason,</l>
             <l n="2041" xml:id="l2041">Et sur cette ennemie emportez la toison.</l>
           </sp>
-          <sp xml:id="VI04-5" who="JASON">
+          <sp who="JASON" xml:id="V04-5">
             <speaker>JASON.</speaker>
             <l n="2042" xml:id="l2042">Seigneur, contre ses yeux qui voudroit se défendre ?</l>
             <l n="2043" xml:id="l2043">Il ne faut point combattre où l'on aime à se rendre.</l>
@@ -3123,23 +3100,23 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2054" xml:id="l2054">Je vais dans le navire attendre une défaite,</l>
             <l n="2055" xml:id="l2055">Qui vous fera bientôt imiter ma retraite.</l>
           </sp>
-          <sp xml:id="VI04-6" who="ZETHES">
+          <sp who="ZETHES" xml:id="V04-6">
             <speaker>ZÉTHÈS.</speaker>
             <l n="2056" xml:id="l2056">Montrez plus d'espérance, et souvenez-vous mieux</l>
             <l n="2057" xml:id="l2057">Que nous avons dompté des monstres à vos yeux.</l>
           </sp>
-        </div2>
-        <div2 xml:id="VI05" type="scene" n="5">
+        </div>
+        <div n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. Aaete, Absyrte, Hypsipyle, Médée, Zéthès, Calaïs, Orphée.</head>
-          <sp xml:id="VI05-1" who="CALAIS">
+          <sp who="CALAIS" xml:id="V05-1">
             <speaker>CALAÏS.</speaker>
             <l n="2058" xml:id="l2058">Élevons-nous, mon frère, au-dessus des nuages :</l>
             <l n="2059" xml:id="l2059">Du sang dont nous sortons prenons les avantages ;</l>
             <l n="2060" xml:id="l2060">Surtout obéissons aux ordres de Jason :</l>
             <l n="2061" xml:id="l2061">Respectons la princesse, et donnons au dragon.</l>
-            <stage type="[N/A]">ici Zéthès et Calïs s'élèvent au plus haut des  nuages en croisant leur vol.</stage>
+            <stage>ici Zéthès et Calïs s'élèvent au plus haut des nuages en croisant leur vol.</stage>
           </sp>
-          <sp xml:id="VI05-2" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-2">
             <speaker>MÉDÉE.</speaker>
             <l n="2062" xml:id="l2062">Donnez où vous pourrez ; ce vain respect m'outrage :</l>
             <l n="2063" xml:id="l2063">Du sang dont vous sortez prenez tout l'avantage.</l>
@@ -3154,7 +3131,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2072" xml:id="l2072">Ne m'en crois pas, Orphée, et prends l'occasion</l>
             <l n="2073" xml:id="l2073">De partager leur gloire ou leur confusion.</l>
           </sp>
-          <sp xml:id="VI05-3" who="ORPHEE">
+          <sp who="ORPHEE" xml:id="V05-3">
             <speaker>ORPHÉE, chante.</speaker>
             <l n="2074" xml:id="l2074">Hâtez-vous, enfants de Borée,</l>
             <l n="2075" xml:id="l2075">Demi-dieux, hâtez-vous,</l>
@@ -3162,31 +3139,31 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2077" xml:id="l2077">À vos exploits la victoire assurée</l>
             <l n="2078" xml:id="l2078">Suit l'effort de vos moindres coups.</l>
           </sp>
-          <sp xml:id="VI05-4" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-4">
             <speaker>MÉDÉE.</speaker>
             <l n="2079" xml:id="l2079">Vos demi-dieux, Orphée, ont peine à vous entendre :</l>
             <l n="2080" xml:id="l2080">Ils ont volé si haut qu'ils n'en peuvent descendre ;</l>
             <l n="2081" xml:id="l2081">De ce nuage épais sachez les dégager,</l>
             <l n="2082" xml:id="l2082">Et pratiquez mieux l'art de les encourager.</l>
           </sp>
-          <sp xml:id="VI05-5" who="ORPHEE">
+          <sp who="ORPHEE" xml:id="V05-5">
             <speaker>ORPHÉE.</speaker>
-            <stage type="sing">Il chante ce second couplet cependant que Zéthès et Calïs fondent l'un après l'autre sur le dragon, et le combattent en milieu de l'air. Ils se relèvent aussitôt qu'ils ont tâché de lui porter une atteinte, et tournent face en même temps pour revenir à la charge. Médée ets au milieu des deux, qui pare leurs coups, et fait tourner le dragon vers l'un et vers l'autre, quivant qu'ils se présentent.</stage>
+            <stage>Il chante ce second couplet cependant que Zéthès et Calïs fondent l'un après l'autre sur le dragon, et le combattent en milieu de l'air. Ils se relèvent aussitôt qu'ils ont tâché de lui porter une atteinte, et tournent face en même temps pour revenir à la charge. Médée ets au milieu des deux, qui pare leurs coups, et fait tourner le dragon vers l'un et vers l'autre, quivant qu'ils se présentent.</stage>
             <l n="2083" xml:id="l2083">Combattez, race d'Orithye,</l>
             <l n="2084" xml:id="l2084">Demi-dieux, combattez,</l>
             <l n="2085" xml:id="l2085">Et faites voir que vos bras indomptés</l>
             <l n="2086" xml:id="l2086">Se font partout une heureuse sortie</l>
             <l n="2087" xml:id="l2087">Des périls les plus redoutés.</l>
           </sp>
-          <sp xml:id="VI05-6" who="ZETHES">
+          <sp who="ZETHES" xml:id="V05-6">
             <speaker>Zéthès.</speaker>
             <l n="2088" xml:id="l2088">Fuyons, sans plus tarder, la vapeur infernale</l>
             <l n="2089" xml:id="l2089">Que ce dragon affreux de son gosier exhale :</l>
             <l n="2090" xml:id="l2090">La valeur ne peut rien contre un air empesté.</l>
             <l n="2091" xml:id="l2091">Fais comme nous, Orphée, et fuis de ton côté.</l>
-            <stage type="[N/A]">Zéthès, Calaïs et Orphée s'enfuient.</stage>
+            <stage>Zéthès, Calaïs et Orphée s'enfuient.</stage>
           </sp>
-          <sp xml:id="VI05-7" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-7">
             <speaker>MÉDÉE.</speaker>
             <l n="2092" xml:id="l2092">Allez, vaillants guerriers, envoyez-moi Pélée,</l>
             <l n="2093" xml:id="l2093">Mopse, Iphite, échion, Eurydamas, Oilée,</l>
@@ -3200,16 +3177,16 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2101" xml:id="l2101">Par le milieu des airs, courons à leur défaite ;</l>
             <l n="2102" xml:id="l2102">Et nous-mêmes portons à leur témérité</l>
             <l n="2103" xml:id="l2103">Jusque dans ce vaisseau ce qu'elle a mérité.</l>
-            <stage type="[N/A]">Médée s'élève encore plus haut sur le dragon.</stage>
+            <stage>Médée s'élève encore plus haut sur le dragon.</stage>
           </sp>
-          <sp xml:id="VI05-8" who="AAETE">
+          <sp who="AAETE" xml:id="V05-8">
             <speaker>AAETE.</speaker>
             <l n="2104" xml:id="l2104">Que fais-tu ? La toison ainsi que toi s'envole !</l>
             <l n="2105" xml:id="l2105">Ah ! Perfide, est-ce ainsi que tu me tiens parole,</l>
             <l n="2106" xml:id="l2106">Toi qui me promettois, même aux yeux de Jason,</l>
             <l n="2107" xml:id="l2107">Qu'on t'ôteroit le jour avant que la toison ?</l>
           </sp>
-          <sp xml:id="VI05-9" who="MEDEE">
+          <sp who="MEDEE" xml:id="V05-9">
             <speaker>MÉDÉE, ne s'envolant.</speaker>
             <l n="2108" xml:id="l2108">Encor tout de nouveau je vous en fais promesse,</l>
             <l n="2109" xml:id="l2109">Et vais vous la garder au milieu de la Grèce.</l>
@@ -3220,18 +3197,18 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2114" xml:id="l2114">De toutes deux madame ici vous tiendra lieu.</l>
             <l n="2115" xml:id="l2115">Consolez-vous, seigneur, et pour jamais adieu.</l>
           </sp>
-          <stage type="[N/A]">Elle s'envole avec la Toison.</stage>
-        </div2>
-        <div2 xml:id="VI06" type="scene" n="6">
+          <stage>Elle s'envole avec la Toison.</stage>
+        </div>
+        <div n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI. Aaete, Absyrte, Hypsipyle, Junon.</head>
-          <sp xml:id="VI06-1" who="AAETE">
+          <sp who="AAETE" xml:id="V06-1">
             <speaker>AAETE.</speaker>
             <l n="2116" xml:id="l2116">Ah ! Madame ; ah ! Mon fils ; ah ! Sort inexorable.</l>
             <l n="2117" xml:id="l2117">Est-il sur terre un père, un roi plus déplorable ?</l>
             <l n="2118" xml:id="l2118">Mes filles toutes deux contre moi se ranger !</l>
             <l n="2119" xml:id="l2119">Toutes deux à ma perte à l'envi s'engager !</l>
           </sp>
-          <sp xml:id="VI06-2" who="JUNON">
+          <sp who="JUNON" xml:id="V06-2">
             <speaker>JUNON, dans son char.</speaker>
             <l n="2120" xml:id="l2120">On vous abuse, Aaete ; et Médée elle-même,</l>
             <l n="2121" xml:id="l2121">Dans l'amour qui la force à suivre ce qu'elle aime,</l>
@@ -3248,19 +3225,19 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2132" xml:id="l2132">Mettez votre esprit en repos ;</l>
             <l n="2133" xml:id="l2133">Si le destin vous est contraire</l>
             <l n="2134" xml:id="l2134">Lemnos peut réparer la perte de Colchos.</l>
-            <stage type="[N/A]">junon remonte au ciel dans ce même char.</stage>
+            <stage>junon remonte au ciel dans ce même char.</stage>
           </sp>
-          <sp xml:id="VI06-3" who="AAETE">
+          <sp who="AAETE" xml:id="V06-3">
             <speaker>AAETE.</speaker>
             <l n="2135" xml:id="l2135">Qu'ai-je fait, que le ciel contre moi s'intéresse</l>
             <l n="2136" xml:id="l2136">Jusqu'à faire descendre en terre une déesse ?</l>
           </sp>
-          <sp xml:id="VI06-4" who="ABSYRTE">
+          <sp who="ABSYRTE" xml:id="V06-4">
             <speaker>ABSYRTE.</speaker>
             <l n="2137" xml:id="l2137">La désavouerez-vous, madame, et votre coeur</l>
             <l n="2138" xml:id="l2138">Dédira-t-il sa voix qui parle en ma faveur ?</l>
           </sp>
-          <sp xml:id="VI06-5" who="AAETE">
+          <sp who="AAETE" xml:id="V06-5">
             <speaker>AAETE.</speaker>
             <l n="2139" xml:id="l2139">Absyrte, il n'est plus temps de parler de ta flamme.</l>
             <l n="2140" xml:id="l2140">Qu'as-tu pour mériter quelque part en son âme ?</l>
@@ -3270,12 +3247,12 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2144" xml:id="l2144">Nous aurons dieux pour dieux à nous faire justice ;</l>
             <l n="2145" xml:id="l2145">Et déjà le soleil, pour nous prêter secours,</l>
             <l n="2146" xml:id="l2146">Fait ouvrir son palais, et détourne son cours.</l>
-            <stage type="[N/A]">Le ciel s'ouvre, et fait paraître le palais du soleil, où l'on le voit dans son char tout brillant de lumière s'avancer vers les spectateurs, et sortant de ce palais, s'élever en haut pour parler à Jupiter, dont le palais souvre aussi quelques moments après. Ce maître des Dieux y paraît sur son trône, avec Junon à ses côtés. Ces trois théâtres, qu'on voit tout à la fois, font un spectacle tout à fait agréable et majestueux. La sombre verdure de la forêt épaisse, qui occupe le premier, relève d'autant plus la clarté des deux autres, par l'opposition de ses ombres. La palais du Soleil, qui fait le second, a ses colonnes toutes d'oripeau, et sonlambris doré, avec divers grands feuillages à l'arabesque. le rejaillissement des lumières qui portent sur ces dorures produit un jour merveilleux, qu'augmente celui qui sort du trône de Jupiter, qui n'a pas moins d'ornement. Ses marches ont au deux bouts et au milieu des aigles d'or, entre lesquelles on voit peintes en basse taille toutes les amours de ce dieu. Les deux côtés font voir chacun un rang de piliers enrichis de diverses pierres précieuses, environnées chacunes d'un cercle et d'un carré d'or. Au haut de ces piliers sont d'uatres grandes aigles d'or quisoutiennet de leur bec le plafond de ce palais, composé de riches étoffes de diverses couleurs, qui font comme autant de courtines, dont les aigles laissent pendre les bouts en forme d'écharpe. Jupiter a un autre grand aigle à ses pieds, qui porte son foudre, et Junon est à sa gauche, avec un paon aussi à ses pieds, de grandeur et de couleur naturelle.</stage>
+            <stage>Le ciel s'ouvre, et fait paraître le palais du soleil, où l'on le voit dans son char tout brillant de lumière s'avancer vers les spectateurs, et sortant de ce palais, s'élever en haut pour parler à Jupiter, dont le palais souvre aussi quelques moments après. Ce maître des Dieux y paraît sur son trône, avec Junon à ses côtés. Ces trois théâtres, qu'on voit tout à la fois, font un spectacle tout à fait agréable et majestueux. La sombre verdure de la forêt épaisse, qui occupe le premier, relève d'autant plus la clarté des deux autres, par l'opposition de ses ombres. La palais du Soleil, qui fait le second, a ses colonnes toutes d'oripeau, et sonlambris doré, avec divers grands feuillages à l'arabesque. le rejaillissement des lumières qui portent sur ces dorures produit un jour merveilleux, qu'augmente celui qui sort du trône de Jupiter, qui n'a pas moins d'ornement. Ses marches ont au deux bouts et au milieu des aigles d'or, entre lesquelles on voit peintes en basse taille toutes les amours de ce dieu. Les deux côtés font voir chacun un rang de piliers enrichis de diverses pierres précieuses, environnées chacunes d'un cercle et d'un carré d'or. Au haut de ces piliers sont d'uatres grandes aigles d'or quisoutiennet de leur bec le plafond de ce palais, composé de riches étoffes de diverses couleurs, qui font comme autant de courtines, dont les aigles laissent pendre les bouts en forme d'écharpe. Jupiter a un autre grand aigle à ses pieds, qui porte son foudre, et Junon est à sa gauche, avec un paon aussi à ses pieds, de grandeur et de couleur naturelle.</stage>
           </sp>
-        </div2>
-        <div2 xml:id="VI07" type="scene" n="7">
+        </div>
+        <div n="7" type="scene" xml:id="V07">
           <head>SCÈNE VII. La Soleil, Jupiter, Junon, Aaete, Hypsipyle, Absyrte.</head>
-          <sp xml:id="VI07-1" who="AAETE">
+          <sp who="AAETE" xml:id="V07-1">
             <speaker>AAETE.</speaker>
             <l n="2147" xml:id="l2147">Âme de l'univers, auteur de ma naissance,</l>
             <l n="2148" xml:id="l2148">Dont nous voyons partout éclater la puissance,</l>
@@ -3298,7 +3275,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2165" xml:id="l2165">Parle donc, et fais voir aux destins ennemis</l>
             <l n="2166" xml:id="l2166">De quelle ardeur tu prends les intérêts d'un fils.</l>
           </sp>
-          <sp xml:id="VI07-2" who="SOLEIL">
+          <sp who="SOLEIL" xml:id="V07-2">
             <speaker>LE SOLEIL.</speaker>
             <l n="2167" xml:id="l2167">Je plains ton infortune, et ne puis davantage :</l>
             <l n="2168" xml:id="l2168">Un noir destin s'oppose à tes justes desseins,</l>
@@ -3308,7 +3285,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2172" xml:id="l2172">Je dispense en esclave et les nuits et les jours.</l>
             <l n="2173" xml:id="l2173">Mais enfin ton père t'écoute,</l>
             <l n="2174" xml:id="l2174">Et joint ses voeux aux tiens pour un plus fort secours.</l>
-            <stage type="[N/A]">Ici s'ouvre le ceil de Jupiter, et le soleil continue en lui adressant sa parole.</stage>
+            <stage>Ici s'ouvre le ceil de Jupiter, et le soleil continue en lui adressant sa parole.</stage>
             <l n="2175" xml:id="l2175">Maître absolu des destinées,</l>
             <l n="2176" xml:id="l2176">Change leurs dures lois en faveur de mon sang,</l>
             <l n="2177" xml:id="l2177">Et laisse-lui garder son rang</l>
@@ -3319,7 +3296,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2182" xml:id="l2182">Il détruit ton ouvrage, et fait des attentats</l>
             <l n="2183" xml:id="l2183">Qui dérobent ce que tu donnes.</l>
           </sp>
-          <sp xml:id="VI07-3" who="JUNON">
+          <sp who="JUNON" xml:id="V07-3">
             <speaker>JUNON.</speaker>
             <l n="2184" xml:id="l2184">Je ne mets point d'obstacle à de si justes voeux ;</l>
             <l n="2185" xml:id="l2185">Mais laissez ma puissance entière ;</l>
@@ -3332,7 +3309,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2192" xml:id="l2192">Mais de la même main assurez à Jason</l>
             <l n="2193" xml:id="l2193">Médée et la toison.</l>
           </sp>
-          <sp xml:id="VI07-4" who="JUPITER">
+          <sp who="JUPITER" xml:id="V07-4">
             <speaker>JUPITER.</speaker>
             <l n="2194" xml:id="l2194">Des arrêts du destin l'ordre est invariable,</l>
             <l n="2195" xml:id="l2195">Rien ne sauroit le rompre en faveur de ton fils,</l>
@@ -3356,9 +3333,9 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2213" xml:id="l2213">Et mille grands exploits qui doivent l'ennoblir,</l>
             <l n="2214" xml:id="l2214">Feront de tous vos maux les assurés remèdes,</l>
             <l n="2215" xml:id="l2215">Et donneront naissance à l'empire des Mèdes.</l>
-            <stage type="[N/A]">Le palais de Jupiter et celui du Soleil se referment.</stage>
+            <stage>Le palais de Jupiter et celui du Soleil se referment.</stage>
           </sp>
-          <sp xml:id="VI07-5" who="SOLEIL">
+          <sp who="SOLEIL" xml:id="V07-5">
             <speaker>LE SOLEIL.</speaker>
             <l n="2216" xml:id="l2216">Ne vous permettez plus d'inutiles soupirs,</l>
             <l n="2217" xml:id="l2217">Puisque le ciel répare et venge votre perte,</l>
@@ -3370,9 +3347,9 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2223" xml:id="l2223">Allez, heureux amants,</l>
             <l n="2224" xml:id="l2224">Pour qui Jupiter montre une faveur entière ;</l>
             <l n="2225" xml:id="l2225">Hâtez-vous d'obéir à ses commandements.</l>
-            <stage type="[N/A]">Il disparaît en baissant, comme pour fondre dans la mer.</stage>
+            <stage>Il disparaît en baissant, comme pour fondre dans la mer.</stage>
           </sp>
-          <sp xml:id="VI07-6" who="HYPSIPYLE">
+          <sp who="HYPSIPYLE" xml:id="V07-6">
             <speaker>HYPSIPYLE.</speaker>
             <l n="2226" xml:id="l2226">J'obéis avec joie à tout ce qu'il m'ordonne :</l>
             <l n="2227" xml:id="l2227">Un prince si bien né vaut mieux qu'une couronne.</l>
@@ -3380,7 +3357,7 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2229" xml:id="l2229">Et ma foi pour Jason nuisoit seule à son feu ;</l>
             <l n="2230" xml:id="l2230">Mais à présent, seigneur, cette foi dégagée...</l>
           </sp>
-          <sp xml:id="VI07-7" who="AAETE">
+          <sp who="AAETE" xml:id="V07-7">
             <speaker>AAETE.</speaker>
             <l n="2231" xml:id="l2231">Ah ! Madame, ma perte est déjà trop vengée,</l>
             <l n="2232" xml:id="l2232">Et vous faites trop voir comme un coeur généreux</l>
@@ -3390,8 +3367,8 @@ au travers : les trophées d'armes appendus en haut de la plupart des arbres mar
             <l n="2236" xml:id="l2236">Et par nos voeux unis répondre au doux espoir</l>
             <l n="2237" xml:id="l2237">Que daigne un dieu si grand nous faire concevoir.</l>
           </sp>
-        </div2>
-      </div1>
+        </div>
+      </div>
     </body>
   </text>
 </TEI>

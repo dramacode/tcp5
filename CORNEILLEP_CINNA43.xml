@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
 <?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>CINNA ou LA CLÉMENCE D'AUGUSTE, TRAGÉDIE</title>
-        <author born="1606" born_location="Rouen" death="1684" death_location="Paris" academie="1647">CORNEILLE, Pierre</author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">CORNEILLE, Pierre</author>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE, Mai 2006, revu décembre 2014.</p>
-        <idno>CORNEILLEP_CINNA43</idno>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE, Mai 2006, revu décembre 2014.</p>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -20,9 +20,12 @@
         <periode>1641-1650</periode>
         <taille>1750-2000</taille>
         <permalien>http://gallica.bnf.fr/ark:/12148/bpt6k70140x</permalien>
-        <liens>
-          <lien type="auteur cité">Sénèque</lien>
-        </liens>
+        <sources>
+          <source id="1">
+            <author/>
+            <text/>
+          </source>
+        </sources>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -35,7 +38,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -48,7 +51,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1643">M. DC. XLIII. AVEC PRIVILÈGE DU ROI</docDate>
-      <docAuthor id="CORNEILLE, Pierre" bio="corneillep"/>
+      <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
       <docImprint>
         <privilege id="1642-08-01">
           <head>Extrait du Privilège du Roi.</head>
@@ -79,24 +82,24 @@
       </performance>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="OCTAVECESARAUGUSTE" id="OCTAVE" sex="1" type="H" statut="empereur" age="A" stat_amour="néant">OCTAVE-CÉSAR AUGUSTE</role>, Empereur de Rome.</castItem>
-        <castItem><role xml:id="LIVIE" id="LIVIE" sex="2" type="H" statut="empereur" age="A" stat_amour="Octave">LIVIE</role>, Impératrice.</castItem>
-        <castItem><role xml:id="CINNA" id="CINNA" sex="1" type="H" statut="aristocrate" age="A" stat_amour="Émilie">CINNA</role>, fils d'une fille de Pompée, chef de la conjuration contre Auguste.</castItem>
-        <castItem><role xml:id="MAXIME" id="MAXIME" sex="1" type="H" statut="aristocrate" age="A" stat_amour="Émilie">MAXIME</role>, autre chef de la conjuration.</castItem>
-        <castItem><role xml:id="EMILIE" id="ÉMILIE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="Cinna">ÉMILIE</role>, fille de C. Toranius, tuteur d'Auguste, et proscrit par lui durant le triumvirat.</castItem>
-        <castItem><role xml:id="FULVIE" id="FULVIE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">FULVIE</role>, confidente d'Émilie.</castItem>
-        <castItem><role xml:id="POLYCLETE" id="POLYCLETE" sex="1" type="H" statut="affranchi" age="A" stat_amour="néant">POLYCLÈTE</role>, affranchi d'Auguste.</castItem>
-        <castItem><role xml:id="EVANDRE" id="EVANDRE" sex="1" type="H" statut="affranchi" age="A" stat_amour="néant">ÉVANDRE</role>, affranchi de Cinna.</castItem>
-        <castItem><role xml:id="EUPHORBE" id="EUPHORBE" sex="1" type="H" statut="affranchi" age="A" stat_amour="néant">EUPHORBE</role>, affranchi de Maxime.</castItem>
+        <castItem><role age="A" civil="M" id="OCTAVE" rend="male" stat_amour="néant" statut="empereur" type="H" xml:id="AUGUSTE">OCTAVE-CÉSAR AUGUSTE</role>, Empereur de Rome.</castItem>
+        <castItem><role age="A" civil="F" id="LIVIE" rend="female" stat_amour="Octave" statut="empereur" type="H" xml:id="LIVIE">LIVIE</role>, Impératrice.</castItem>
+        <castItem><role age="A" civil="M" id="CINNA" rend="male" stat_amour="Émilie" statut="aristocrate" type="H" xml:id="CINNA">CINNA</role>, fils d'une fille de Pompée, chef de la conjuration contre Auguste.</castItem>
+        <castItem><role age="A" civil="M" id="MAXIME" rend="male" stat_amour="Émilie" statut="aristocrate" type="H" xml:id="MAXIME">MAXIME</role>, autre chef de la conjuration.</castItem>
+        <castItem><role age="A" civil="F" id="ÉMILIE" rend="female" stat_amour="Cinna" statut="aristocrate" type="H" xml:id="EMILIE">ÉMILIE</role>, fille de C. Toranius, tuteur d'Auguste, et proscrit par lui durant le triumvirat.</castItem>
+        <castItem><role age="A" civil="F" id="FULVIE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="FULVIE">FULVIE</role>, confidente d'Émilie.</castItem>
+        <castItem><role age="A" civil="M" id="POLYCLETE" rend="male" stat_amour="néant" statut="affranchi" type="H" xml:id="POLYCLETE">POLYCLÈTE</role>, affranchi d'Auguste.</castItem>
+        <castItem><role age="A" civil="M" id="EVANDRE" rend="male" stat_amour="néant" statut="affranchi" type="H" xml:id="EVANDRE">ÉVANDRE</role>, affranchi de Cinna.</castItem>
+        <castItem><role age="A" civil="M" id="EUPHORBE" rend="male" stat_amour="néant" statut="affranchi" type="H" xml:id="EUPHORBE">EUPHORBE</role>, affranchi de Maxime.</castItem>
       </castList>
-      <set location="Rome" country="Italie" periode="Ier avant JC" link="">La scène est à Rome.</set>
+      <set country="Italie" link="" location="Rome" periode="Ier avant JC">La scène est à Rome.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE.</head>
-          <sp xml:id="I01-1" who="EMILIE">
+          <sp who="EMILIE" xml:id="I01-1">
             <speaker>ÉMILIE</speaker>
             <l n="1" xml:id="l1">Impatients désirs d'une illustre vengeance</l>
             <l n="2" xml:id="l2">Dont la mort de mon père a formé la naissance,</l>
@@ -152,9 +155,9 @@
             <l n="52" xml:id="l52">Et ne triomphera que pour te couronner.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Émilie, Fulvie.</head>
-          <sp xml:id="I02-1" who="EMILIE">
+          <sp who="EMILIE" xml:id="I02-1">
             <speaker>ÉMILIE</speaker>
             <l n="53" xml:id="l53">Je l'ai juré, Fulvie, et je le jure encore,</l>
             <l n="54" xml:id="l54">Quoique j'aime Cinna, quoique mon cœur l'adore,</l>
@@ -162,7 +165,7 @@
             <l n="56" xml:id="l56">Sa tête est le seul prix dont il peut m'acquérir.</l>
             <l n="57" xml:id="l57">Je lui prescris la loi que mon devoir m'impose.</l>
           </sp>
-          <sp xml:id="I02-2" who="FULVIE">
+          <sp who="FULVIE" xml:id="I02-2">
             <speaker>FULVIE</speaker>
             <l n="58" xml:id="l58">Elle a pour la blâmer une trop juste cause,</l>
             <l n="59" xml:id="l59">Par un si grand dessein vous vous faites juger</l>
@@ -176,7 +179,7 @@
             <l n="67" xml:id="l67">Et de ses courtisans souvent les plus heureux</l>
             <l n="68" xml:id="l68">Ont encore besoin que vous parliez pour eux.</l>
           </sp>
-          <sp xml:id="I02-3" who="EMILIE">
+          <sp who="EMILIE" xml:id="I02-3">
             <speaker>ÉMILIE</speaker>
             <l n="69" xml:id="l69">Toute cette faveur ne me rend pas mon père,</l>
             <l n="70" xml:id="l70">Et de quelque façon que l'on me considère,</l>
@@ -195,7 +198,7 @@
             <l n="83" xml:id="l83">Pour qui venge son père il n'est point de forfaits,</l>
             <l n="84" xml:id="l84">Et c'est vendre son sang que se rendre aux bienfaits.</l>
           </sp>
-          <sp xml:id="I02-4" who="FULVIE">
+          <sp who="FULVIE" xml:id="I02-4">
             <speaker>FULVIE</speaker>
             <l n="85" xml:id="l85">Quel besoin toutefois de passer pour ingrate ?</l>
             <l n="86" xml:id="l86">Ne pouvez-vous haïr sans que la haine éclate ?</l>
@@ -210,7 +213,7 @@
             <l n="95" xml:id="l95">Remettez à leurs bras les communs intérêts,</l>
             <l n="96" xml:id="l96">Et n'aidez leurs desseins que par des vœux secrets.</l>
           </sp>
-          <sp xml:id="I02-5" who="EMILIE">
+          <sp who="EMILIE" xml:id="I02-5">
             <speaker>ÉMILIE</speaker>
             <l n="97" xml:id="l97">Quoi ? Je le haïrai sans tâcher de lui nuire ?</l>
             <l n="98" xml:id="l98">J'attendrai du hasard qu'il ose le détruire ?</l>
@@ -229,7 +232,7 @@
             <l n="111" xml:id="l111">On a touché son âme, et son cœur s'est épris,</l>
             <l n="112" xml:id="l112">Mais elle n'a donné son amour qu'à ce prix.</l>
           </sp>
-          <sp xml:id="I02-6" who="FULVIE">
+          <sp who="FULVIE" xml:id="I02-6">
             <speaker>FULVIE</speaker>
             <l n="113" xml:id="l113">Votre amour à ce prix n'est qu'un présent funeste</l>
             <l n="114" xml:id="l114">Qui porte à votre amant sa perte manifeste.</l>
@@ -237,7 +240,7 @@
             <l n="116" xml:id="l116">Combien à cet écueil se sont déjà brisés,</l>
             <l n="117" xml:id="l117">Ne vous aveuglez point quand sa mort est visible.</l>
           </sp>
-          <sp xml:id="I02-7" who="EMILIE">
+          <sp who="EMILIE" xml:id="I02-7">
             <speaker>ÉMILIE</speaker>
             <l n="118" xml:id="l118">Ah ! Tu sais me frapper par où je suis sensible,</l>
             <l n="119" xml:id="l119">Quand je songe aux hasards que je lui fais courir,</l>
@@ -264,16 +267,16 @@
             <l n="140" xml:id="l140">Et c'est à faire enfin à mourir après lui.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Cinna, Émilie, Fulvie.</head>
-          <sp xml:id="I03-1" who="EMILIE">
+          <sp who="EMILIE" xml:id="I03-1">
             <speaker>ÉMILIE</speaker>
             <l n="141" xml:id="l141">Mais le voici qui vient. Cinna, votre assemblée</l>
             <l n="142" xml:id="l142">Des grandeurs du péril n'est-elle point troublée,</l>
             <l n="143" xml:id="l143">Et reconnaissez-vous au front de vos amis</l>
             <l n="144" xml:id="l144">Qu'ils soient prêts à tenir ce qu'ils vous ont promis ?</l>
           </sp>
-          <sp xml:id="I03-2" who="CINNA">
+          <sp who="CINNA" xml:id="I03-2">
             <speaker>CINNA</speaker>
             <l n="145" xml:id="l145">Jamais contre un tyran entreprise conçue</l>
             <l n="146" xml:id="l146">Ne permit d'espérer une si belle issue,</l>
@@ -285,14 +288,14 @@
             <l n="151" xml:id="l151">Et tous font éclater un si puissant courroux,</l>
             <l n="152" xml:id="l152">Qu'ils semblent tous venger un père comme vous.</l>
           </sp>
-          <sp xml:id="I03-3" who="EMILIE">
+          <sp who="EMILIE" xml:id="I03-3">
             <speaker>ÉMILIE</speaker>
             <l n="153" xml:id="l153">Je l'avais bien prévu que pour un tel ouvrage</l>
             <l n="154" xml:id="l154">Cinna saurait choisir des hommes de courage,</l>
             <l n="155" xml:id="l155">Et ne remettrait pas en de mauvaises mains</l>
             <l n="156" xml:id="l156">L'intérêt d'Émilie et celui des Romains.</l>
           </sp>
-          <sp xml:id="I03-4" who="CINNA">
+          <sp who="CINNA" xml:id="I03-4">
             <speaker>CINNA</speaker>
             <l n="157" xml:id="l157">Plût aux Dieux que vous-même eussiez vu de quel zèle</l>
             <l n="158" xml:id="l158">Cette troupe entreprend une action si belle ! </l>
@@ -329,7 +332,7 @@
             <l n="189" xml:id="l189">J'ajoute à ces tableaux la peinture effroyable</l>
             <l n="190" xml:id="l190">De leur concorde affreuse, horrible, impitoyable,</l>
             <l n="191" xml:id="l191">Funeste aux gens de bien, aux riches, au Sénat,</l>
-            <l n="192" xml:id="l192">Et pour tout dire enfin	de leur Triumvirat.</l>
+            <l n="192" xml:id="l192">Et pour tout dire enfin de leur Triumvirat.</l>
             <l n="193" xml:id="l193">Mais je ne trouve point de couleurs assez noires</l>
             <l n="194" xml:id="l194">Pour en représenter les tragiques histoires.</l>
             <l n="195" xml:id="l195">Je les peins dans le meurtre à l'envi triomphants,</l>
@@ -400,7 +403,7 @@
             <l n="259" xml:id="l259">Que Rome se déclare, ou pour, ou contre nous,</l>
             <l n="260" xml:id="l260">Mourant pour vous servir tout me semblera doux.</l>
           </sp>
-          <sp xml:id="I03-5" who="EMILIE">
+          <sp who="EMILIE" xml:id="I03-5">
             <speaker>ÉMILIE</speaker>
             <l n="261" xml:id="l261">Ne crains point de succès qui souille ta mémoire,</l>
             <l n="262" xml:id="l262">Le bon et le mauvais sont égaux pour ta gloire,</l>
@@ -423,34 +426,34 @@
             <l n="279" xml:id="l279">Et que... Mais quel sujet mène Évandre vers nous ?</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Cinna, Émilie, Évandre, Fulvie.</head>
-          <sp xml:id="I04-1" who="EVANDRE">
+          <sp who="EVANDRE" xml:id="I04-1">
             <speaker>ÉVANDRE</speaker>
             <l n="280" xml:id="l280">Seigneur, César vous mande, et Maxime avec vous.</l>
           </sp>
-          <sp xml:id="I04-2" who="CINNA">
+          <sp who="CINNA" xml:id="I04-2">
             <speaker>CINNA</speaker>
             <l n="281" xml:id="l281">Et Maxime avec moi ! Le sais-tu bien, Évandre ?</l>
           </sp>
-          <sp xml:id="I04-3" who="EVANDRE">
+          <sp who="EVANDRE" xml:id="I04-3">
             <speaker>ÉVANDRE</speaker>
             <l n="282" xml:id="l282">Polyclète est encor chez vous à vous attendre,</l>
             <l n="283" xml:id="l283">Et fût venu lui-même avec moi vous chercher,</l>
             <l n="284" xml:id="l284">Si ma dextérité n'eût su l'en empêcher :</l>
             <l n="285" xml:id="l285">Je vous en donne avis de peur d'une surprise,</l>
-            <l n="286" xml:id="l286" part="I">Il presse fort.</l>
+            <l n="286" part="I" xml:id="l286">Il presse fort.</l>
           </sp>
-          <sp xml:id="I04-4" who="EMILIE">
+          <sp who="EMILIE" xml:id="I04-4">
             <speaker>ÉMILIE</speaker>
             <l part="F">Mander les chefs de l'entreprise ! </l>
             <l n="287" xml:id="l287">Tous deux ! En même temps ! Vous êtes découverts.</l>
           </sp>
-          <sp xml:id="I04-5" who="CINNA">
+          <sp who="CINNA" xml:id="I04-5">
             <speaker>CINNA</speaker>
-            <l n="288" xml:id="l288" part="I">Espérons mieux, de grâce.</l>
+            <l n="288" part="I" xml:id="l288">Espérons mieux, de grâce.</l>
           </sp>
-          <sp xml:id="I04-6" who="EMILIE">
+          <sp who="EMILIE" xml:id="I04-6">
             <speaker>ÉMILIE</speaker>
             <l part="F">Ah ! Cinna, je te perds,</l>
             <l n="289" xml:id="l289">Et les Dieux obstinés à nous donner un maître</l>
@@ -458,14 +461,14 @@
             <l n="291" xml:id="l291">Il n'en faut point douter, Auguste a tout appris,</l>
             <l n="292" xml:id="l292">Quoi, tous deux ! Et sitôt que le conseil est pris ! </l>
           </sp>
-          <sp xml:id="I04-7" who="CINNA">
+          <sp who="CINNA" xml:id="I04-7">
             <speaker>CINNA</speaker>
             <l n="293" xml:id="l293">Je ne vous puis celer que son ordre m'étonne,</l>
             <l n="294" xml:id="l294">Mais souvent il m'appelle auprès de sa personne,</l>
             <l n="295" xml:id="l295">Maxime est comme moi de ses plus confidents,</l>
             <l n="296" xml:id="l296">Et nous nous alarmons peut-être en imprudents.</l>
           </sp>
-          <sp xml:id="I04-8" who="EMILIE">
+          <sp who="EMILIE" xml:id="I04-8">
             <speaker>ÉMILIE</speaker>
             <l n="297" xml:id="l297">Sois moins ingénieux à te tromper toi-même,</l>
             <l n="298" xml:id="l298">Cinna, ne porte point mes maux jusqu'à l'extrême,</l>
@@ -476,7 +479,7 @@
             <l n="303" xml:id="l303">N'aigris point ma douleur par un nouveau tourment,</l>
             <l n="304" xml:id="l304">Et ne lui permets point à pleurer mon amant.</l>
           </sp>
-          <sp xml:id="I04-9" who="CINNA">
+          <sp who="CINNA" xml:id="I04-9">
             <speaker>CINNA</speaker>
             <l n="305" xml:id="l305">Quoi ! Sur l'illusion d'une terreur panique</l>
             <l n="306" xml:id="l306">Trahir vos intérêts et la cause publique !</l>
@@ -484,11 +487,11 @@
             <l n="308" xml:id="l308">Et tout abandonner quand il faut tout oser ! </l>
             <l n="309" xml:id="l309">Que feront nos amis si vous êtes déçue ?</l>
           </sp>
-          <sp xml:id="I04-10" who="EMILIE">
+          <sp who="EMILIE" xml:id="I04-10">
             <speaker>ÉMILIE</speaker>
             <l n="310" xml:id="l310">Mais que deviendras-tu si l'entreprise est sue ?</l>
           </sp>
-          <sp xml:id="I04-11" who="CINNA">
+          <sp who="CINNA" xml:id="I04-11">
             <speaker>CINNA</speaker>
             <l n="311" xml:id="l311">S'il est pour me trahir des esprits assez bas,</l>
             <l n="312" xml:id="l312">Ma vertu pour le moins ne me trahira pas,</l>
@@ -503,7 +506,7 @@
             <l n="321" xml:id="l321">Heureux pour vous servir d'abandonner la vie,</l>
             <l n="322" xml:id="l322">Malheureux de mourir sans vous avoir servie.</l>
           </sp>
-          <sp xml:id="I04-12" who="EMILIE">
+          <sp who="EMILIE" xml:id="I04-12">
             <speaker>ÉMILIE</speaker>
             <l n="323" xml:id="l323">Oui, va, n'écoute plus ma voix qui te retient,</l>
             <l n="324" xml:id="l324">Mon trouble se dissipe, et ma raison revient,</l>
@@ -519,7 +522,7 @@
             <l n="334" xml:id="l334">Ta mort emportera mon âme vers la tienne,</l>
             <l n="335" xml:id="l335">Et mon cœur aussitôt, percé des mêmes coups...</l>
           </sp>
-          <sp xml:id="I04-13" who="CINNA">
+          <sp who="CINNA" xml:id="I04-13">
             <speaker>CINNA</speaker>
             <l n="336" xml:id="l336">Ah ! Souffrez que tout mort je vive encore en vous,</l>
             <l n="337" xml:id="l337">Et du moins en mourant permettez que j'espère</l>
@@ -532,7 +535,7 @@
             <l n="344" xml:id="l344">Sur mon visage ému peignit nos secrets.</l>
             <l n="345" xml:id="l345">Notre amour n'est connu que d'Evandre et Fulvie.</l>
           </sp>
-          <sp xml:id="I04-14" who="EMILIE">
+          <sp who="EMILIE" xml:id="I04-14">
             <speaker>ÉMILIE</speaker>
             <l n="346" xml:id="l346">Avec moins de frayeur je vais donc chez Livie,</l>
             <l n="347" xml:id="l347">Puisque dans ton péril il me reste un moyen</l>
@@ -542,21 +545,21 @@
             <l n="351" xml:id="l351">Je fais de ton destin des règles à mon sort,</l>
             <l n="352" xml:id="l352">Et j'obtiendrai ta vie, ou je suivrai ta mort.</l>
           </sp>
-          <sp xml:id="I04-15" who="CINNA">
+          <sp who="CINNA" xml:id="I04-15">
             <speaker>CINNA</speaker>
             <l n="353" xml:id="l353">Soyez en ma faveur moins cruelle à vous-même.</l>
           </sp>
-          <sp xml:id="I04-16" who="EMILIE">
+          <sp who="EMILIE" xml:id="I04-16">
             <speaker>ÉMILIE</speaker>
             <l n="354" xml:id="l354">Va-t'en, et souviens-toi seulement que je t'aime.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Auguste, Cinna, Maxime, troupe de courtisans.</head>
-          <sp xml:id="II01-1" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="II01-1">
             <speaker>AUGUSTE</speaker>
             <l n="355" xml:id="l355">Que chacun se retire, et qu'aucun n'entre ici.</l>
             <l n="356" xml:id="l356">Vous Cinna demeurez, et vous Maxime aussi.</l>
@@ -609,7 +612,7 @@
             <l n="403" xml:id="l403">Votre avis est ma règle, et par ce seul moyen</l>
             <l n="404" xml:id="l404">Je veux être Empereur, ou simple citoyen.</l>
           </sp>
-          <sp xml:id="II01-2" who="CINNA">
+          <sp who="CINNA" xml:id="II01-2">
             <speaker>CINNA</speaker>
             <l n="405" xml:id="l405">Malgré notre surprise et mon insuffisance,</l>
             <l n="406" xml:id="l406">Je vous obéirai, Seigneur, sans complaisance,</l>
@@ -650,7 +653,7 @@
             <l n="441" xml:id="l441">C'est ce qu'en peu de mots j'ose dire, et j'estime</l>
             <l n="442" xml:id="l442">Que ce peu que j'ai dit est l'avis de Maxime.</l>
           </sp>
-          <sp xml:id="II01-3" who="MAXIME">
+          <sp who="MAXIME" xml:id="II01-3">
             <speaker>MAXIME</speaker>
             <l n="443" xml:id="l443">Oui, j'accorde qu'Auguste a droit de conserver</l>
             <l n="444" xml:id="l444">L'Empire où sa vertu l'a fait seule arriver,</l>
@@ -709,7 +712,7 @@
             <l n="497" xml:id="l497">Mais la plus belle mort souille notre mémoire</l>
             <l n="498" xml:id="l498">Quand nous avons pu vivre avecque plus de gloire.</l>
           </sp>
-          <sp xml:id="II01-4" who="CINNA">
+          <sp who="CINNA" xml:id="II01-4">
             <speaker>CINNA</speaker>
             <l n="499" xml:id="l499">Si l'amour du pays doit ici prévaloir,</l>
             <l n="500" xml:id="l500">C'est son bien seulement que vous devez vouloir,</l>
@@ -735,14 +738,14 @@
             <l n="520" xml:id="l520">Espérant à son tour un pareil traitement :</l>
             <l n="521" xml:id="l521">Le pire des États est l'État populaire.</l>
           </sp>
-          <sp xml:id="II01-5" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="II01-5">
             <speaker>AUGUSTE</speaker>
             <l n="522" xml:id="l522">Et toutefois le seul qui dans Rome peut plaire,</l>
             <l n="523" xml:id="l523">Cette haine des rois que depuis cinq cents ans</l>
             <l n="524" xml:id="l524">Avec le premier lait sucent tous ses enfants</l>
             <l n="525" xml:id="l525">Pour l'arracher des cœurs est trop enracinée.</l>
           </sp>
-          <sp xml:id="II01-6" who="MAXIME">
+          <sp who="MAXIME" xml:id="II01-6">
             <speaker>MAXIME</speaker>
             <l n="526" xml:id="l526">Oui, Seigneur, dans son mal Rome est trop obstinée,</l>
             <l n="527" xml:id="l527">Son peuple qui s'y plaît en fuit la guérison,</l>
@@ -765,7 +768,7 @@
             <l n="543" xml:id="l543">Les Parthes, les Persans veulent des souverains,</l>
             <l n="544" xml:id="l544">Et le seul Consulat est bon pour les Romains.</l>
           </sp>
-          <sp xml:id="II01-7" who="CINNA">
+          <sp who="CINNA" xml:id="II01-7">
             <speaker>CINNA</speaker>
             <l n="545" xml:id="l545">S'il est vrai que du ciel la prudence infinie</l>
             <l n="546" xml:id="l546">Départ à chaque peuple un différent génie,</l>
@@ -781,12 +784,12 @@
             <l n="555" xml:id="l555">Ce que sous ses consuls n'ont pu faire que deux fois,</l>
             <l n="556" xml:id="l556">Et qu'a fait avant eux le second de ses rois.</l>
           </sp>
-          <sp xml:id="II01-8" who="MAXIME">
+          <sp who="MAXIME" xml:id="II01-8">
             <speaker>MAXIME</speaker>
             <l n="557" xml:id="l557">Les changements d'État que fait l'ordre céleste</l>
             <l n="558" xml:id="l558">Ne coûtent point de sang, n'ont rien qui soit funeste.</l>
           </sp>
-          <sp xml:id="II01-9" who="CINNA">
+          <sp who="CINNA" xml:id="II01-9">
             <speaker>CINNA</speaker>
             <l n="559" xml:id="l559">C'est un ordre des Dieux qui jamais ne se rompt</l>
             <l n="560" xml:id="l560">De nous vendre un peu cher les grands biens qu'ils nous font,</l>
@@ -794,13 +797,13 @@
             <l n="561" xml:id="l561">L'exil des Tarquins même ensanglanta nos terres,</l>
             <l n="562" xml:id="l562">Et nos premiers Consuls nous ont coûté des guerres.</l>
           </sp>
-          <sp xml:id="II01-10" who="MAXIME">
+          <sp who="MAXIME" xml:id="II01-10">
             <speaker>MAXIME</speaker>
             <note type="C">Pierre Corneille, fit aussi une tragédie intitulée "La Mort de Pompée" en 1644.</note>
             <l n="563" xml:id="l563">Donc votre aïeul Pompée au ciel a résisté</l>
             <l n="564" xml:id="l564">Quand il a combattu pour notre liberté ?</l>
           </sp>
-          <sp xml:id="II01-11" who="CINNA">
+          <sp who="CINNA" xml:id="II01-11">
             <speaker>CINNA</speaker>
             <l n="565" xml:id="l565">Si le ciel n'eût voulu que Rome l'eût perdue,</l>
             <l n="566" xml:id="l566">Par les mains de Pompée il l'aurait défendue,</l>
@@ -862,7 +865,7 @@
             <l n="619" xml:id="l619">Et daignez assurer le bien commun de tous</l>
             <l n="620" xml:id="l620">Donnez un successeur qui soit digne de vous.</l>
           </sp>
-          <sp xml:id="II01-12" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="II01-12">
             <speaker>AUGUSTE</speaker>
             <l n="621" xml:id="l621">N'en délibérons plus, cette pitié l'emporte.</l>
             <l n="622" xml:id="l622">Mon repos m'est bien cher, mais Rome est la plus forte,</l>
@@ -892,29 +895,29 @@
             <l n="646" xml:id="l646">Adieu, j'en veux porter la nouvelle à Livie.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Cinna, Maxime.</head>
-          <sp xml:id="II02-1" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-1">
             <speaker>MAXIME</speaker>
             <l n="647" xml:id="l647">Quel est votre dessein après ces beaux discours ?</l>
           </sp>
-          <sp xml:id="II02-2" who="CINNA">
+          <sp who="CINNA" xml:id="II02-2">
             <speaker>CINNA</speaker>
             <l n="648" xml:id="l648">Le même que j'avais, et que j'aurai toujours.</l>
           </sp>
-          <sp xml:id="II02-3" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-3">
             <speaker>MAXIME</speaker>
             <l n="649" xml:id="l649">Un chef de conjurés flatte la tyrannie ! </l>
           </sp>
-          <sp xml:id="II02-4" who="CINNA">
+          <sp who="CINNA" xml:id="II02-4">
             <speaker>CINNA</speaker>
             <l n="650" xml:id="l650">Un chef de conjurés la veut voir impunie ! </l>
           </sp>
-          <sp xml:id="II02-5" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-5">
             <speaker>MAXIME</speaker>
-            <l n="651" xml:id="l651" part="I">Je veux voir Rome libre.</l>
+            <l n="651" part="I" xml:id="l651">Je veux voir Rome libre.</l>
           </sp>
-          <sp xml:id="II02-6" who="CINNA">
+          <sp who="CINNA" xml:id="II02-6">
             <speaker>CINNA</speaker>
             <l part="F">Et vous pouvez juger</l>
             <l n="652" xml:id="l652">Que je veux l'affranchir ensemble et la venger.</l>
@@ -931,21 +934,21 @@
             <l n="663" xml:id="l663">Que le peuple aux tyrans ne soit plus exposé,</l>
             <l n="664" xml:id="l664">S'il eût puni Sylla, César eût moins osé.</l>
           </sp>
-          <sp xml:id="II02-7" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-7">
             <speaker>MAXIME</speaker>
             <l n="665" xml:id="l665">Mais la mort de César, que vous trouvez si juste</l>
             <l n="666" xml:id="l666">A servi de prétexte aux cruautés d'Auguste,</l>
             <l n="667" xml:id="l667">Voulant nous affranchir Brute s'est abusé :</l>
             <l n="668" xml:id="l668">S'il n'eût puni César, Auguste eût moins osé.</l>
           </sp>
-          <sp xml:id="II02-8" who="CINNA">
+          <sp who="CINNA" xml:id="II02-8">
             <speaker>CINNA</speaker>
             <l n="669" xml:id="l669">La faute de Cassie, et ses terreurs paniques,</l>
             <l n="670" xml:id="l670">Ont fait rentrer l'État sous des lois tyranniques,</l>
             <l n="671" xml:id="l671">Mais nous ne verrons point de pareils accidents</l>
             <l n="672" xml:id="l672">Lorsque Rome suivra des chefs moins imprudents.</l>
           </sp>
-          <sp xml:id="II02-9" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-9">
             <speaker>MAXIME</speaker>
             <l n="673" xml:id="l673">Nous sommes encor loin de mettre en évidence</l>
             <note type="C">Vers 674, on lit conduirons au lieu de conduisons.</note>
@@ -953,35 +956,35 @@
             <l n="675" xml:id="l675">Cependant c'en est peu que de n'accepter pas</l>
             <l n="676" xml:id="l676">Le bonheur qu'on recherche au péril du trépas.</l>
           </sp>
-          <sp xml:id="II02-10" who="CINNA">
+          <sp who="CINNA" xml:id="II02-10">
             <speaker>CINNA</speaker>
             <l n="677" xml:id="l677">C'en est encor bien moins alors qu'on s'imagine</l>
             <l n="678" xml:id="l678">Guérir un mal si grand sans couper la racine :</l>
             <l n="679" xml:id="l679">Employer la douceur à cette guérison,</l>
             <l n="680" xml:id="l680">C'est, en fermant la plaie, y verser du poison.</l>
           </sp>
-          <sp xml:id="II02-11" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-11">
             <speaker>MAXIME</speaker>
             <l n="681" xml:id="l681">Vous la voulez sanglante, et la rendez douteuse.</l>
           </sp>
-          <sp xml:id="II02-12" who="CINNA">
+          <sp who="CINNA" xml:id="II02-12">
             <speaker>CINNA</speaker>
             <l n="682" xml:id="l682">Vous la voulez sans peine, et la rendez honteuse.</l>
           </sp>
-          <sp xml:id="II02-13" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-13">
             <speaker>MAXIME</speaker>
             <l n="683" xml:id="l683">Pour sortir de ses fers jamais on ne rougit.</l>
           </sp>
-          <sp xml:id="II02-14" who="CINNA">
+          <sp who="CINNA" xml:id="II02-14">
             <speaker>CINNA</speaker>
             <l n="684" xml:id="l684">On en sort lâchement si la vertu n'agit.</l>
           </sp>
-          <sp xml:id="II02-15" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-15">
             <speaker>MAXIME</speaker>
             <l n="685" xml:id="l685">Jamais la liberté ne cesse d'être aimable,</l>
             <l n="686" xml:id="l686">Et c'est toujours pour Rome un bien inestimable.</l>
           </sp>
-          <sp xml:id="II02-16" who="CINNA">
+          <sp who="CINNA" xml:id="II02-16">
             <speaker>CINNA</speaker>
             <l n="687" xml:id="l687">Ce ne peut être un bien qu'elle daigne estimer</l>
             <l n="688" xml:id="l688">Quand il vient d'une main lasse de l'opprimer :</l>
@@ -990,12 +993,12 @@
             <l n="691" xml:id="l691">Et tout ce que la gloire a de vrais partisans</l>
             <l n="692" xml:id="l692">Le hait trop puissamment pour aimer ses présents.</l>
           </sp>
-          <sp xml:id="II02-17" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-17">
             <speaker>MAXIME</speaker>
             <l n="693" xml:id="l693">Donc pour vous Émilie est un objet de haine,</l>
             <l n="694" xml:id="l694">Et cette récompense est pour vous une peine ?</l>
           </sp>
-          <sp xml:id="II02-18" who="CINNA">
+          <sp who="CINNA" xml:id="II02-18">
             <speaker>CINNA</speaker>
             <l n="695" xml:id="l695">Oui, mais pour le braver jusque dans les Enfers,</l>
             <l n="696" xml:id="l696">Mais quand j'aurai vengé Rome des maux soufferts,</l>
@@ -1004,13 +1007,13 @@
             <l n="699" xml:id="l699">L'épouser sur sa cendre, et qu'après notre effort</l>
             <l n="700" xml:id="l700">Les présents du tyran soient le prix de sa mort.</l>
           </sp>
-          <sp xml:id="II02-19" who="MAXIME">
+          <sp who="MAXIME" xml:id="II02-19">
             <speaker>MAXIME</speaker>
             <l n="701" xml:id="l701">Mais l'apparence, ami, que vous puissiez lui plaire,</l>
             <l n="702" xml:id="l702">Teint du sang de celui qu'elle aime comme un père,</l>
             <l n="703" xml:id="l703">Car vous n'êtes pas homme à la violenter.</l>
           </sp>
-          <sp xml:id="II02-20" who="CINNA">
+          <sp who="CINNA" xml:id="II02-20">
             <speaker>CINNA</speaker>
             <l n="704" xml:id="l704">Ami, dans ce palais on peut nous écouter,</l>
             <l n="705" xml:id="l705">Et nous parlons peut-être avec trop d'imprudence</l>
@@ -1020,36 +1023,36 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Maxime, Euphorbe.</head>
-          <sp xml:id="III01-1" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-1">
             <speaker>MAXIME</speaker>
             <l n="709" xml:id="l709">Lui-même il m'a tout dit, leur flamme est mutuelle,</l>
             <l n="710" xml:id="l710">Il adore Émilie, il est adoré d'elle,</l>
             <l n="711" xml:id="l711">Mais sans venger son père il n'y peut aspirer,</l>
             <l n="712" xml:id="l712">Et c'est pour l'acquérir qu'il nous fait conspirer.</l>
           </sp>
-          <sp xml:id="III01-2" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-2">
             <speaker>EUPHORBE</speaker>
             <l n="713" xml:id="l713">Je ne m'étonne plus de cette violence</l>
             <l n="714" xml:id="l714">Dont il contraint Auguste à garder sa puissance,</l>
             <l n="715" xml:id="l715">La ligue se romprait s'il s'en était démis,</l>
             <l n="716" xml:id="l716">Et tous vos conjurés deviendraient ses amis.</l>
           </sp>
-          <sp xml:id="III01-3" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-3">
             <speaker>MAXIME</speaker>
             <l n="717" xml:id="l717">Ils servent, abusés, la passion d'un homme</l>
             <l n="718" xml:id="l718">Qui n'agit que pour soi feignant d'agir pour Rome,</l>
             <l n="719" xml:id="l719">Et moi par un malheur qui n'eût jamais d'égal</l>
             <l n="720" xml:id="l720">Je pense servir Rome, et je sers mon rival ! </l>
           </sp>
-          <sp xml:id="III01-4" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-4">
             <speaker>EUPHORBE</speaker>
-            <l n="721" xml:id="l721" part="I">Vous êtes son rival !</l>
+            <l n="721" part="I" xml:id="l721">Vous êtes son rival !</l>
           </sp>
-          <sp xml:id="III01-5" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-5">
             <speaker>MAXIME</speaker>
             <l part="F">Oui, j'aime sa maîtresse,</l>
             <l n="722" xml:id="l722">Et l'ai caché toujours avec assez d'adresse,</l>
@@ -1061,7 +1064,7 @@
             <l n="728" xml:id="l728">Et pour m'assassiner je lui prête mon bras.</l>
             <l n="729" xml:id="l729">Que l'amitié me plonge en un malheur extrême !</l>
           </sp>
-          <sp xml:id="III01-6" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-6">
             <speaker>EUPHORBE</speaker>
             <l n="730" xml:id="l730">L'issue en est aisée ; agissez pour vous-même,</l>
             <l n="731" xml:id="l731">D'un dessein qui vous perd rompez le coup fatal,</l>
@@ -1069,11 +1072,11 @@
             <l n="733" xml:id="l733">Auguste à qui par là vous sauverez la vie</l>
             <l n="734" xml:id="l734">Ne vous pourra jamais refuser Émilie.</l>
           </sp>
-          <sp xml:id="III01-7" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-7">
             <speaker>MAXIME</speaker>
-            <l n="735" xml:id="l735" part="I">Quoi, trahir mon ami !</l>
+            <l n="735" part="I" xml:id="l735">Quoi, trahir mon ami !</l>
           </sp>
-          <sp xml:id="III01-8" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-8">
             <speaker>EUPHORBE</speaker>
             <l part="F">L'amour rend tout permis,</l>
             <l n="736" xml:id="l736">Un véritable amant ne connaît point d'amis,</l>
@@ -1081,20 +1084,20 @@
             <l n="738" xml:id="l738">Qui pour une maîtresse ose trahir son maître.</l>
             <l n="739" xml:id="l739">Oubliez l'amitié comme lui les bienfaits.</l>
           </sp>
-          <sp xml:id="III01-9" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-9">
             <speaker>MAXIME</speaker>
             <l n="740" xml:id="l740">Un exemple à faillir n'autorise jamais.</l>
           </sp>
-          <sp xml:id="III01-10" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-10">
             <speaker>EUPHORBE</speaker>
             <l n="741" xml:id="l741">Sa faute contre lui vous rend tout légitime,</l>
             <l n="742" xml:id="l742">On n'est point criminel quand on punit un crime.</l>
           </sp>
-          <sp xml:id="III01-11" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-11">
             <speaker>MAXIME</speaker>
             <l n="743" xml:id="l743">Un crime par qui Rome obtient sa liberté ! </l>
           </sp>
-          <sp xml:id="III01-12" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-12">
             <speaker>EUPHORBE</speaker>
             <l n="744" xml:id="l744">Craignez tout d'un esprit si plein de lâcheté,</l>
             <l n="745" xml:id="l745">L'intérêt du pays n'est point ce qui l'engage,</l>
@@ -1110,7 +1113,7 @@
             <l n="755" xml:id="l755">Qu'il vous compte déjà pour un de ses sujets,</l>
             <l n="756" xml:id="l756">Ou que sur votre perte il fonde ses projets.</l>
           </sp>
-          <sp xml:id="III01-13" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-13">
             <speaker>MAXIME</speaker>
             <l n="757" xml:id="l757">Mais comment l'accuser sans nommer tout le reste ?</l>
             <l n="758" xml:id="l758">À tous nos conjurés l'avis serait funeste,</l>
@@ -1120,7 +1123,7 @@
             <l n="762" xml:id="l762">Il perd trop d'innocents pour punir un coupable,</l>
             <l n="763" xml:id="l763">J'ose tout contre lui, mais je crains tout pour eux.</l>
           </sp>
-          <sp xml:id="III01-14" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-14">
             <speaker>EUPHORBE</speaker>
             <l n="764" xml:id="l764">Auguste s'est lassé d'être si rigoureux,</l>
             <l n="765" xml:id="l765">En ces occasions ennuyé de supplices</l>
@@ -1128,7 +1131,7 @@
             <l n="767" xml:id="l767">Si toutefois pour eux vous craignez son courroux,</l>
             <l n="768" xml:id="l768">Quand vous lui parlerez, parlez au nom de tous.</l>
           </sp>
-          <sp xml:id="III01-15" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-15">
             <speaker>MAXIME</speaker>
             <l n="769" xml:id="l769">Nous disputons en vain, et ce n'est que folie</l>
             <l n="770" xml:id="l770">De vouloir par sa perte acquérir Émilie,</l>
@@ -1143,49 +1146,49 @@
             <l n="779" xml:id="l779">Je conserve le sang qu'elle veut voir périr,</l>
             <l n="780" xml:id="l780">Et j'aurais quelque espoir qu'elle me pût chérir !</l>
           </sp>
-          <sp xml:id="III01-16" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-16">
             <speaker>EUPHORBE</speaker>
             <l n="781" xml:id="l781">C'est ce qu'à dire vrai je vois fort difficile.</l>
             <l n="782" xml:id="l782">L'artifice pourtant vous y peut être utile,</l>
             <l n="783" xml:id="l783">Il en faut trouver un qui la puisse abuser,</l>
             <l n="784" xml:id="l784">Et du reste, le temps en pourra disposer.</l>
           </sp>
-          <sp xml:id="III01-17" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-17">
             <speaker>MAXIME</speaker>
             <l n="785" xml:id="l785">Mais si pour s'excuser il nomme sa complice ?</l>
             <l n="786" xml:id="l786">S'il arrive qu'Auguste avec lui la punisse ?</l>
             <l n="787" xml:id="l787">Puis-je lui demander pour prix de mon rapport,</l>
             <l n="788" xml:id="l788">Celle qui nous oblige à conspirer sa mort ?</l>
           </sp>
-          <sp xml:id="III01-18" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="III01-18">
             <speaker>EUPHORBE</speaker>
             <l n="789" xml:id="l789">Vous pourriez m'opposer tant et de tels obstacles,</l>
             <l n="790" xml:id="l790">Que pour les surmonter il faudrait des miracles,</l>
             <l n="791" xml:id="l791">J'espère toutefois qu'à force d'y rêver...</l>
           </sp>
-          <sp xml:id="III01-19" who="MAXIME">
+          <sp who="MAXIME" xml:id="III01-19">
             <speaker>MAXIME</speaker>
             <l n="792" xml:id="l792">Va, devant qu'il soit peu j'irai retrouver,</l>
             <l n="793" xml:id="l793">Cinna vient, et je veux en tirer quelque chose</l>
             <l n="794" xml:id="l794">Pour mieux résoudre après ce que je me propose.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Cinna, Maxime.</head>
-          <sp xml:id="III02-1" who="MAXIME">
+          <sp who="MAXIME" xml:id="III02-1">
             <speaker>MAXIME</speaker>
-            <l n="795" xml:id="l795" part="I">Vous me semblez pensif.</l>
+            <l n="795" part="I" xml:id="l795">Vous me semblez pensif.</l>
           </sp>
-          <sp xml:id="III02-2" who="CINNA">
+          <sp who="CINNA" xml:id="III02-2">
             <speaker>CINNA</speaker>
             <l part="F">Ce n'est pas sans sujet.</l>
           </sp>
-          <sp xml:id="III02-3" who="MAXIME">
+          <sp who="MAXIME" xml:id="III02-3">
             <speaker>MAXIME</speaker>
             <note type="L">Penser : nom masculin au XVIIème pour « pensée ».</note>
             <l n="796" xml:id="l796">D'un penser si profond quel est le triste objet ?</l>
           </sp>
-          <sp xml:id="III02-4" who="CINNA">
+          <sp who="CINNA" xml:id="III02-4">
             <speaker>CINNA</speaker>
             <l n="797" xml:id="l797">Émilie et César, l'un et l'autre me gêne,</l>
             <l n="798" xml:id="l798">L'un me semble trop bon, l'autre trop inhumaine,</l>
@@ -1210,13 +1213,13 @@
             <l n="817" xml:id="l817">Je deviens sacrilège, ou je suis parricide,</l>
             <l n="818" xml:id="l818">Et vers l'un ou vers l'autre il faut être perfide.</l>
           </sp>
-          <sp xml:id="III02-5" who="MAXIME">
+          <sp who="MAXIME" xml:id="III02-5">
             <speaker>MAXIME</speaker>
             <l n="819" xml:id="l819">Vous n'aviez point tantôt ces agitations,</l>
             <l n="820" xml:id="l820">Vous paraissiez plus ferme en vos intentions,</l>
             <l n="821" xml:id="l821">Vous ne sentiez au cœur ni remords, ni reproche.</l>
           </sp>
-          <sp xml:id="III02-6" who="CINNA">
+          <sp who="CINNA" xml:id="III02-6">
             <speaker>CINNA</speaker>
             <l n="822" xml:id="l822">On ne les sent aussi que quand le coup approche,</l>
             <l n="823" xml:id="l823">Et l'on ne reconnaît de semblables forfaits</l>
@@ -1230,7 +1233,7 @@
             <l n="831" xml:id="l831">Qu'avant que frapper elle lui fit sentir</l>
             <l n="832" xml:id="l832">Plus d'un remords en l'âme et plus d'un repentir.</l>
           </sp>
-          <sp xml:id="III02-7" who="MAXIME">
+          <sp who="MAXIME" xml:id="III02-7">
             <speaker>MAXIME</speaker>
             <l n="833" xml:id="l833">Il eut trop de vertu pour tant d'inquiétude,</l>
             <l n="834" xml:id="l834">Il ne soupçonna point sa main d'ingratitude,</l>
@@ -1251,7 +1254,7 @@
             <l n="849" xml:id="l849">Et si tu m'as tantôt préféré ta maîtresse,</l>
             <l n="850" xml:id="l850">Ne me préfère pas le tyran qui m'oppresse.</l>
           </sp>
-          <sp xml:id="III02-8" who="CINNA">
+          <sp who="CINNA" xml:id="III02-8">
             <speaker>CINNA</speaker>
             <l n="851" xml:id="l851">Ami, n'accable plus un esprit malheureux</l>
             <l n="852" xml:id="l852">Qui même fait en lâche un acte généreux.</l>
@@ -1264,7 +1267,7 @@
             <l n="859" xml:id="l859">Mon chagrin t'importune, et le trouble où je suis</l>
             <l n="860" xml:id="l860">Veut de la solitude à calmer tant d'ennuis.</l>
           </sp>
-          <sp xml:id="III02-9" who="MAXIME">
+          <sp who="MAXIME" xml:id="III02-9">
             <speaker>MAXIME</speaker>
             <l n="861" xml:id="l861">Vous voulez rendre compte à l'objet qui vous blesse</l>
             <l n="862" xml:id="l862">De la bonté d'Octave et de votre faiblesse,</l>
@@ -1272,9 +1275,9 @@
             <l n="864" xml:id="l864">Adieu. Je me retire en confident discret.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III.</head>
-          <sp xml:id="III03-1" who="CINNA">
+          <sp who="CINNA" xml:id="III03-1">
             <speaker>CINNA</speaker>
             <l n="865" xml:id="l865">Que tu sais mal nommer le glorieux Empire</l>
             <l n="866" xml:id="l866">Du noble sentiment que la vertu m'inspire,</l>
@@ -1319,9 +1322,9 @@
             <l n="905" xml:id="l905">Mais voici de retour cette belle inhumaine.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Émilie, Cinna, Fulvie.</head>
-          <sp xml:id="III04-1" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-1">
             <speaker>ÉMILIE</speaker>
             <l n="906" xml:id="l906">Grâces aux dieux, Cinna, ma frayeur était vaine,</l>
             <l n="907" xml:id="l907">Aucun de tes amis ne t'a manqué de foi,</l>
@@ -1329,34 +1332,34 @@
             <l n="909" xml:id="l909">Octave en ma présence a tout dit à Livie,</l>
             <l n="910" xml:id="l910">Et par cette nouvelle il m'a rendu la vie.</l>
           </sp>
-          <sp xml:id="III04-2" who="CINNA">
+          <sp who="CINNA" xml:id="III04-2">
             <speaker>CINNA</speaker>
             <l n="911" xml:id="l911">Le désavouerez-vous, et du don qu'il me fait</l>
             <l n="912" xml:id="l912">Voudrez-vous retarder le bienheureux effet ?</l>
           </sp>
-          <sp xml:id="III04-3" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-3">
             <speaker>ÉMILIE</speaker>
-            <l n="913" xml:id="l913" part="I">L'effet est en ta main.</l>
+            <l n="913" part="I" xml:id="l913">L'effet est en ta main.</l>
           </sp>
-          <sp xml:id="III04-4" who="CINNA">
+          <sp who="CINNA" xml:id="III04-4">
             <speaker>CINNA</speaker>
             <l part="F">Mais plutôt en la vôtre.</l>
           </sp>
-          <sp xml:id="III04-5" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-5">
             <speaker>ÉMILIE</speaker>
             <l n="914" xml:id="l914">Je suis toujours moi-même, et mon cœur n'est point autre,</l>
             <l n="915" xml:id="l915">Me donner à Cinna, c'est ne lui donner rien,</l>
             <l n="916" xml:id="l916">C'est seulement lui faire un présent de son bien.</l>
           </sp>
-          <sp xml:id="III04-6" who="CINNA">
+          <sp who="CINNA" xml:id="III04-6">
             <speaker>CINNA</speaker>
             <l n="917" xml:id="l917">Vous pouvez toutefois... Ô ciel ! L'osai-je dire ?</l>
           </sp>
-          <sp xml:id="III04-7" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-7">
             <speaker>ÉMILIE</speaker>
-            <l n="918" xml:id="l918" part="I">Que puis-je, et que crains-tu ?</l>
+            <l n="918" part="I" xml:id="l918">Que puis-je, et que crains-tu ?</l>
           </sp>
-          <sp xml:id="III04-8" who="CINNA">
+          <sp who="CINNA" xml:id="III04-8">
             <speaker>CINNA</speaker>
             <l part="F">Je tremble, je soupire,</l>
             <l n="919" xml:id="l919">Et si nos coeurs étaient conformes en désirs,</l>
@@ -1364,11 +1367,11 @@
             <l n="921" xml:id="l921">Ainsi je suis trop sûr que je vais vous déplaire,</l>
             <l n="922" xml:id="l922">Mais je n'ose parler, et je ne puis me taire.</l>
           </sp>
-          <sp xml:id="III04-9" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-9">
             <speaker>ÉMILIE</speaker>
-            <l n="923" xml:id="l923" part="I">C'est trop me gêner, parle.</l>
+            <l n="923" part="I" xml:id="l923">C'est trop me gêner, parle.</l>
           </sp>
-          <sp xml:id="III04-10" who="CINNA">
+          <sp who="CINNA" xml:id="III04-10">
             <speaker>CINNA</speaker>
             <l part="F">Il faut vous obéir,</l>
             <l n="924" xml:id="l924">Je vais donc vous déplaire, et vous m'allez haïr.</l>
@@ -1378,9 +1381,9 @@
             <l n="928" xml:id="l928">Que peut un bel objet attendre d'un grand cœur : </l>
             <l n="929" xml:id="l929">Mais voyez à quel prix vous me donnez votre âme,</l>
             <l n="930" xml:id="l930">En me rendant heureux vous me rendez infâme,</l>
-            <l n="931" xml:id="l931" part="I">Cette bonté d'Auguste...</l>
+            <l n="931" part="I" xml:id="l931">Cette bonté d'Auguste...</l>
           </sp>
-          <sp xml:id="III04-11" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-11">
             <speaker>ÉMILIE</speaker>
             <l part="F">Il suffit, je t'entends,</l>
             <l n="932" xml:id="l932">Je vois ton repentir et tes vœux inconstants,</l>
@@ -1396,7 +1399,7 @@
             <l n="942" xml:id="l942">Et changer à son gré l'ordre de tout le monde :</l>
             <l n="943" xml:id="l943">Mais le cœur d'Émilie est hors de son pouvoir.</l>
           </sp>
-          <sp xml:id="III04-12" who="CINNA">
+          <sp who="CINNA" xml:id="III04-12">
             <speaker>CINNA</speaker>
             <l n="944" xml:id="l944">Aussi n'est-ce qu'à vous que je veux le devoir ;</l>
             <l n="945" xml:id="l945">Je suis toujours moi-même, et ma foi toujours pure,</l>
@@ -1412,14 +1415,14 @@
             <l n="955" xml:id="l955">Moi seul j'ai raffermi son esprit étonné,</l>
             <l n="956" xml:id="l956">Et pour vous l'immoler ma main l'a couronné.</l>
           </sp>
-          <sp xml:id="III04-13" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-13">
             <speaker>ÉMILIE</speaker>
             <l n="957" xml:id="l957">Pour me l'immoler, traître ! Et tu veux que moi-même</l>
             <l n="958" xml:id="l958">Je retienne ta main ! Qu'il vive et que je l'aime ! </l>
             <l n="959" xml:id="l959">Que je sois le butin de qui l'ose épargner,</l>
             <l n="960" xml:id="l960">Et le prix du conseil qui le force à régner ! </l>
           </sp>
-          <sp xml:id="III04-14" who="CINNA">
+          <sp who="CINNA" xml:id="III04-14">
             <speaker>CINNA</speaker>
             <l n="961" xml:id="l961">Ne me condamnez point quand je vous ai servie,</l>
             <l n="962" xml:id="l962">Sans moi vous n'auriez plus de pouvoir sur sa vie,</l>
@@ -1434,32 +1437,32 @@
             <l n="971" xml:id="l971">Elle en hait l'infamie attachée au bonheur,</l>
             <l n="972" xml:id="l972">Et n'accepte aucun bien aux dépens de l'honneur.</l>
           </sp>
-          <sp xml:id="III04-15" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-15">
             <speaker>ÉMILIE</speaker>
             <l n="973" xml:id="l973">Je fais gloire, pour moi, de cette ignominie,</l>
             <l n="974" xml:id="l974">La perfidie est noble envers la tyrannie,</l>
             <l n="975" xml:id="l975">Et quand on rompt le cours d'un sort si malheureux,</l>
             <l n="976" xml:id="l976">Les cœurs les plus ingrats sont les plus généreux.</l>
           </sp>
-          <sp xml:id="III04-16" who="CINNA">
+          <sp who="CINNA" xml:id="III04-16">
             <speaker>CINNA</speaker>
             <l n="977" xml:id="l977">Vous faites des vertus au gré de votre haine.</l>
           </sp>
-          <sp xml:id="III04-17" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-17">
             <speaker>ÉMILIE</speaker>
             <l n="978" xml:id="l978">Je me fais des vertus dignes d'une Romaine.</l>
           </sp>
-          <sp xml:id="III04-18" who="CINNA">
+          <sp who="CINNA" xml:id="III04-18">
             <speaker>CINNA</speaker>
-            <l n="979" xml:id="l979" part="I">Un cœur vraiment romain...</l>
+            <l n="979" part="I" xml:id="l979">Un cœur vraiment romain...</l>
           </sp>
-          <sp xml:id="III04-19" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-19">
             <speaker>ÉMILIE</speaker>
             <l part="F">Ose tout pour ravir</l>
             <l n="980" xml:id="l980">Et le sang et la vie à qui le fait servir ;</l>
             <l n="981" xml:id="l981">Il fuit plus que la mort la honte d'être esclave.</l>
           </sp>
-          <sp xml:id="III04-20" who="CINNA">
+          <sp who="CINNA" xml:id="III04-20">
             <speaker>CINNA</speaker>
             <l n="982" xml:id="l982">C'est l'être avec honneur que de l'être d'Octave,</l>
             <l n="983" xml:id="l983">Et nous voyons souvent des rois à nos genoux</l>
@@ -1470,7 +1473,7 @@
             <l n="987" xml:id="l987">Il prend d'eux les tributs dont il nous enrichit,</l>
             <l n="988" xml:id="l988">Et leur impose un joug dont il nous affranchit.</l>
           </sp>
-          <sp xml:id="III04-21" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-21">
             <speaker>ÉMILIE</speaker>
             <l n="989" xml:id="l989">L'indigne ambition que ton cœur se propose ! </l>
             <l n="990" xml:id="l990">Pour être plus qu'un roi, tu te crois quelque chose ! </l>
@@ -1488,7 +1491,7 @@
             <l n="1001" xml:id="l1001">Sache qu'il n'en est point que le Ciel n'ait fait naître</l>
             <l n="1002" xml:id="l1002">Pour commander aux rois, et pour vivre sans maître.</l>
           </sp>
-          <sp xml:id="III04-22" who="CINNA">
+          <sp who="CINNA" xml:id="III04-22">
             <speaker>CINNA</speaker>
             <l n="1003" xml:id="l1003">Le Ciel a trop fait voir en de tels attentats</l>
             <l n="1004" xml:id="l1004">Qu'il hait les assassins et punit les ingrats,</l>
@@ -1499,7 +1502,7 @@
             <l n="1009" xml:id="l1009">Et quand à les punir il a pu se résoudre,</l>
             <l n="1010" xml:id="l1010">De pareils châtiments n'appartiennent qu'au foudre.</l>
           </sp>
-          <sp xml:id="III04-23" who="EMILIE">
+          <sp who="EMILIE" xml:id="III04-23">
             <speaker>ÉMILIE</speaker>
             <l n="1011" xml:id="l1011">Dis que de leur parti toi-même tu te rends</l>
             <l n="1012" xml:id="l1012">De te remettre au foudre à punir les tyrans.</l>
@@ -1540,7 +1543,7 @@
             <l n="1047" xml:id="l1047">Je meurs en détruisant un pouvoir absolu,</l>
             <l n="1048" xml:id="l1048">Mais je vivrais à toi si tu l'avais voulu.</l>
           </sp>
-          <sp xml:id="III04-24" who="CINNA">
+          <sp who="CINNA" xml:id="III04-24">
             <speaker>CINNA</speaker>
             <l n="1049" xml:id="l1049">Eh bien ! Vous le voulez, il faut vous satisfaire,</l>
             <l n="1050" xml:id="l1050">Il faut affranchir Rome, il faut venger un père,</l>
@@ -1560,65 +1563,65 @@
             <l n="1064" xml:id="l1064">À ce crime forcé joindra le châtiment,</l>
             <l n="1065" xml:id="l1065">Et par cette action dans l'autre confondue</l>
             <l n="1066" xml:id="l1066">Recouvrera ma gloire aussitôt que perdue.</l>
-            <l n="1067" xml:id="l1067" part="I">Adieu.</l>
+            <l n="1067" part="I" xml:id="l1067">Adieu.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Émilie, Fulvie.</head>
-          <sp xml:id="III05-1" who="FULVIE">
+          <sp who="FULVIE" xml:id="III05-1">
             <speaker>FULVIE</speaker>
             <l part="F">Vous avez mis son âme au désespoir.</l>
           </sp>
-          <sp xml:id="III05-2" who="EMILIE">
+          <sp who="EMILIE" xml:id="III05-2">
             <speaker>ÉMILIE</speaker>
             <l n="1068" xml:id="l1068">Qu'il cesse de m'aimer, ou suive son devoir.</l>
           </sp>
-          <sp xml:id="III05-3" who="FULVIE">
+          <sp who="FULVIE" xml:id="III05-3">
             <speaker>FULVIE</speaker>
             <l n="1069" xml:id="l1069">Il va vous obéir aux dépens de sa vie ;</l>
-            <l n="1070" xml:id="l1070" part="I">Vous en pleurez ! </l>
+            <l n="1070" part="I" xml:id="l1070">Vous en pleurez ! </l>
           </sp>
-          <sp xml:id="III05-4" who="EMILIE">
+          <sp who="EMILIE" xml:id="III05-4">
             <speaker>ÉMILIE</speaker>
             <l part="F">Hélas ! Cours après lui, Fulvie,</l>
             <l n="1071" xml:id="l1071">Et si ton amitié daigne me secourir,</l>
             <l n="1072" xml:id="l1072">Arrache-lui du cœur ce dessein de mourir,</l>
-            <l n="1073" xml:id="l1073" part="I">Dis-lui...</l>
+            <l n="1073" part="I" xml:id="l1073">Dis-lui...</l>
           </sp>
-          <sp xml:id="III05-5" who="FULVIE">
+          <sp who="FULVIE" xml:id="III05-5">
             <speaker>FULVIE</speaker>
             <l part="F">Qu'en sa faveur vous laissez vivre Auguste ?</l>
           </sp>
-          <sp xml:id="III05-6" who="EMILIE">
+          <sp who="EMILIE" xml:id="III05-6">
             <speaker>ÉMILIE</speaker>
             <l n="1074" xml:id="l1074">Ah ! C'est faire à ma haine une loi trop injuste.</l>
           </sp>
-          <sp xml:id="III05-7" who="FULVIE">
+          <sp who="FULVIE" xml:id="III05-7">
             <speaker>FULVIE</speaker>
-            <l n="1075" xml:id="l1075" part="I">Et quoi donc ?</l>
+            <l n="1075" part="I" xml:id="l1075">Et quoi donc ?</l>
           </sp>
-          <sp xml:id="III05-8" who="EMILIE">
+          <sp who="EMILIE" xml:id="III05-8">
             <speaker>ÉMILIE</speaker>
             <l part="F">Qu'il achève, et dégage sa foi,</l>
             <l n="1076" xml:id="l1076">Et qu'il choisisse après de la mort, ou de moi.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Auguste, Euphorbe, Polyclète, gardes.</head>
-          <sp xml:id="IV01-1" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV01-1">
             <speaker>AUGUSTE</speaker>
             <l n="1077" xml:id="l1077">Tout ce que tu me dis, Euphorbe, est incroyable.</l>
           </sp>
-          <sp xml:id="IV01-2" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="IV01-2">
             <speaker>EUPHORBE</speaker>
             <l n="1078" xml:id="l1078">Seigneur, le récit même en paraît effroyable,</l>
             <l n="1079" xml:id="l1079">On ne conçoit qu'à peine une telle fureur,</l>
             <l n="1080" xml:id="l1080">Et la seule pensée en fait frémir d'horreur.</l>
           </sp>
-          <sp xml:id="IV01-3" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV01-3">
             <speaker>AUGUSTE</speaker>
             <l n="1081" xml:id="l1081">Quoi, mes plus chers amis ! Quoi, Cinna ! Quoi, Maxime ! </l>
             <l n="1082" xml:id="l1082">Les deux que j'honorais d'une si haute estime !</l>
@@ -1628,9 +1631,9 @@
             <l n="1086" xml:id="l1086">Pour m'arracher le jour l'un et l'autre conspire ! </l>
             <l n="1087" xml:id="l1087">Encore pour Maxime, il m'en fait avertir,</l>
             <l n="1088" xml:id="l1088">Et s'est laissé toucher d'un juste repentir,</l>
-            <l n="1089" xml:id="l1089" part="I">Mais Cinna ! </l>
+            <l n="1089" part="I" xml:id="l1089">Mais Cinna ! </l>
           </sp>
-          <sp xml:id="IV01-4" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="IV01-4">
             <speaker>EUPHORBE</speaker>
             <l part="F">Cinna seul dans sa rage s'obstine,</l>
             <l n="1090" xml:id="l1090">Et contre vos bontés d'autant plus se mutine :</l>
@@ -1639,7 +1642,7 @@
             <l n="1093" xml:id="l1093">Et malgré les frayeurs à leurs regrets mêlées</l>
             <l n="1094" xml:id="l1094">Il tâche à raffermir leurs âmes ébranlées.</l>
           </sp>
-          <sp xml:id="IV01-5" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV01-5">
             <speaker>AUGUSTE</speaker>
             <l n="1095" xml:id="l1095">Lui seul les encourage, et lui seul les séduit ! </l>
             <l n="1096" xml:id="l1096">Ô le plus déloyal que l'Enfer ait produit ! </l>
@@ -1647,16 +1650,16 @@
             <l n="1098" xml:id="l1098">Ô trop sensible coup d'une main si chérie ! </l>
             <l n="1099" xml:id="l1099">Cinna, tu me trahis ! Polyclète, écoutez.</l>
           </sp>
-          <sp xml:id="IV01-6" who="POLYCLETE">
+          <sp who="POLYCLETE" xml:id="IV01-6">
             <speaker>POLYCLETE</speaker>
             <l n="1100" xml:id="l1100">Tous vos ordres, Seigneur, seront exécutés.</l>
           </sp>
-          <sp xml:id="IV01-7" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV01-7">
             <speaker>AUGUSTE</speaker>
             <l n="1101" xml:id="l1101">Qu'Eraste en même temps aille dire à Maxime</l>
             <l n="1102" xml:id="l1102">Qu'il vienne recevoir le pardon de son crime.</l>
           </sp>
-          <sp xml:id="IV01-8" who="EUPHORBE">
+          <sp who="EUPHORBE" xml:id="IV01-8">
             <speaker>EUPHORBE</speaker>
             <l n="1103" xml:id="l1103">Il l'a jugé trop grand pour se le pardonner.</l>
             <l n="1104" xml:id="l1104">À peine du palais il a pu retourner,</l>
@@ -1671,7 +1674,7 @@
             <l n="1113" xml:id="l1113">Et l'eau grosse et rapide et la nuit survenue</l>
             <l n="1114" xml:id="l1114">L'ont dérobé sur l'heure à ma débile vue.</l>
           </sp>
-          <sp xml:id="IV01-9" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV01-9">
             <speaker>AUGUSTE</speaker>
             <l n="1115" xml:id="l1115">Sous ses justes remords il a trop succombé</l>
             <l n="1116" xml:id="l1116">Et s'est à mes bontés lui-même dérobé,</l>
@@ -1681,9 +1684,9 @@
             <l n="1120" xml:id="l1120">De tenir en lieu sûr ce fidèle témoin.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II.</head>
-          <sp xml:id="IV02-1" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV02-1">
             <speaker>AUGUSTE</speaker>
             <l n="1121" xml:id="l1121">Ciel, à qui voulez-vous désormais que je fie</l>
             <l n="1122" xml:id="l1122">Les secrets de mon âme, et le soin de ma vie ?</l>
@@ -1760,25 +1763,25 @@
             <l n="1192" xml:id="l1192">Ou laissez-moi périr, ou laissez-moi régner.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Auguste, Livie.</head>
-          <sp xml:id="IV03-1" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-1">
             <speaker>AUGUSTE</speaker>
             <l n="1193" xml:id="l1193">Madame, on me trahit, et la main qui me tue</l>
             <l n="1194" xml:id="l1194">Rend sous mes déplaisirs ma constance abattue,</l>
-            <l n="1195" xml:id="l1195" part="I">Cinna, Cinna, le traître...</l>
+            <l n="1195" part="I" xml:id="l1195">Cinna, Cinna, le traître...</l>
           </sp>
-          <sp xml:id="IV03-2" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-2">
             <speaker>LIVIE</speaker>
             <l part="F">Euphorbe m'a tout dit,</l>
             <l n="1196" xml:id="l1196">Seigneur, et j'ai pâli cent fois à ce récit.</l>
             <l n="1197" xml:id="l1197">Mais écouteriez-vous les conseils d'une femme ?</l>
           </sp>
-          <sp xml:id="IV03-3" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-3">
             <speaker>AUGUSTE</speaker>
             <l n="1198" xml:id="l1198">Hélas ! De quel conseil est capable mon âme ?</l>
           </sp>
-          <sp xml:id="IV03-4" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-4">
             <speaker>LIVIE</speaker>
             <l n="1199" xml:id="l1199">Seigneur, jusques ici votre sévérité</l>
             <l n="1200" xml:id="l1200">A fait beaucoup de bruit et n'a rien profité,</l>
@@ -1799,7 +1802,7 @@
             <l n="1215" xml:id="l1215">Et ceux que vos rigueurs ne font qu'effaroucher</l>
             <l n="1216" xml:id="l1216">Peut-être à vos bontés se laisseront toucher.</l>
           </sp>
-          <sp xml:id="IV03-5" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-5">
             <speaker>AUGUSTE</speaker>
             <l n="1217" xml:id="l1217">Gagnons-les tout à fait en quittant cet Empire</l>
             <l n="1218" xml:id="l1218">Qui nous rend odieux, contre qui l'on conspire,</l>
@@ -1814,44 +1817,44 @@
             <l n="1227" xml:id="l1227">De tout ce qu'eut Sylla de puissance et d'honneur,</l>
             <l n="1228" xml:id="l1228">Lassé comme il en fut, j'aspire à son bonheur.</l>
           </sp>
-          <sp xml:id="IV03-6" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-6">
             <speaker>LIVIE</speaker>
             <l n="1229" xml:id="l1229">Assez et trop longtemps son exemple vous flatte,</l>
             <l n="1230" xml:id="l1230">Mais gardez que sur vous le contraire n'éclate :</l>
             <l n="1231" xml:id="l1231">Ce bonheur sans pareil qui conserva ses jours</l>
             <l n="1232" xml:id="l1232">Ne serait pas bonheur s'il arrivait toujours.</l>
           </sp>
-          <sp xml:id="IV03-7" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-7">
             <speaker>AUGUSTE</speaker>
             <l n="1233" xml:id="l1233">Aussi dedans la place où je m'en vais descendre</l>
             <l n="1234" xml:id="l1234">J'abandonne mon sang à qui voudra l'épandre.</l>
             <l n="1235" xml:id="l1235">Après un long orage il faut trouver un port,</l>
             <l n="1236" xml:id="l1236">Et je n'en vois que deux, le repos ou la mort.</l>
           </sp>
-          <sp xml:id="IV03-8" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-8">
             <speaker>LIVIE</speaker>
             <l n="1237" xml:id="l1237">Quoi ! Vous voulez quitter le fruit de tant de peines !</l>
           </sp>
-          <sp xml:id="IV03-9" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-9">
             <speaker>AUGUSTE</speaker>
             <l n="1238" xml:id="l1238">Quoi ! Vous voulez garder l'objet de tant de haines !</l>
           </sp>
-          <sp xml:id="IV03-10" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-10">
             <speaker>LIVIE</speaker>
             <l n="1239" xml:id="l1239">Seigneur, vous emporter à cette extrémité</l>
             <l n="1240" xml:id="l1240">C'est plutôt désespoir que générosité.</l>
           </sp>
-          <sp xml:id="IV03-11" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-11">
             <speaker>AUGUSTE</speaker>
             <l n="1241" xml:id="l1241">Régner et caresser une main si traîtresse</l>
             <l n="1242" xml:id="l1242">Au lieu de sa vertu c'est montrer sa faiblesse.</l>
           </sp>
-          <sp xml:id="IV03-12" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-12">
             <speaker>LIVIE</speaker>
             <l n="1243" xml:id="l1243">C'est régner sur vous-même, et par un noble choix,</l>
             <l n="1244" xml:id="l1244">Pratiquer la vertu la plus digne des Rois.</l>
           </sp>
-          <sp xml:id="IV03-13" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-13">
             <speaker>AUGUSTE</speaker>
             <l n="1245" xml:id="l1245">Vous m'aviez bien promis des conseils d'une femme,</l>
             <l n="1246" xml:id="l1246">Vous me tenez parole, et c'en sont là, Madame.</l>
@@ -1864,33 +1867,33 @@
             <l n="1253" xml:id="l1253">Une offense qu'on fait à toute sa province,</l>
             <l n="1254" xml:id="l1254">Dont il faut qu'il la venge, ou cesse d'être prince.</l>
           </sp>
-          <sp xml:id="IV03-14" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-14">
             <speaker>LIVIE</speaker>
             <l n="1255" xml:id="l1255">Donnez moins de croyance à votre passion.</l>
           </sp>
-          <sp xml:id="IV03-15" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-15">
             <speaker>AUGUSTE</speaker>
             <l n="1256" xml:id="l1256">Ayez moins de faiblesse, ou moins d'ambition.</l>
           </sp>
-          <sp xml:id="IV03-16" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-16">
             <speaker>LIVIE</speaker>
             <l n="1257" xml:id="l1257">Ne traitez plus si mal un conseil salutaire.</l>
           </sp>
-          <sp xml:id="IV03-17" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-17">
             <speaker>AUGUSTE</speaker>
             <l n="1258" xml:id="l1258">Le ciel m'inspirera ce qu'ici je dois faire,</l>
-            <l n="1259" xml:id="l1259" part="I">Adieu, nous perdons temps.</l>
+            <l n="1259" part="I" xml:id="l1259">Adieu, nous perdons temps.</l>
           </sp>
-          <sp xml:id="IV03-18" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-18">
             <speaker>LIVIE</speaker>
             <l part="F">Je ne vous quitte point,</l>
             <l n="1260" xml:id="l1260">Seigneur, que mon amour n'ait obtenu ce point.</l>
           </sp>
-          <sp xml:id="IV03-19" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="IV03-19">
             <speaker>AUGUSTE</speaker>
             <l n="1261" xml:id="l1261">C'est l'amour des grandeurs qui vous rend importune.</l>
           </sp>
-          <sp xml:id="IV03-20" who="LIVIE">
+          <sp who="LIVIE" xml:id="IV03-20">
             <speaker>LIVIE</speaker>
             <l n="1262" xml:id="l1262">J'aime votre personne, et non votre fortune.</l>
             <l n="1263" xml:id="l1263">Il m'échappe, suivons, et forçons-le de voir</l>
@@ -1899,9 +1902,9 @@
             <l n="1266" xml:id="l1266">Qui fasse à l'Univers connaître un vrai monarque.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Émilie, Fulvie.</head>
-          <sp xml:id="IV04-1" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV04-1">
             <speaker>ÉMILIE</speaker>
             <l n="1267" xml:id="l1267">D'où me vient cette joie, et que mal à propos</l>
             <l n="1268" xml:id="l1268">Mon esprit malgré moi goûte un entier repos ! </l>
@@ -1911,7 +1914,7 @@
             <l n="1272" xml:id="l1272">Que tout doit succéder à mon contentement !</l>
             <l n="1273" xml:id="l1273">Ai-je bien entendu ? Me l'as-tu dit, Fulvie ?</l>
           </sp>
-          <sp xml:id="IV04-2" who="FULVIE">
+          <sp who="FULVIE" xml:id="IV04-2">
             <speaker>FULVIE</speaker>
             <l n="1274" xml:id="l1274">J'avais gagné sur lui qu'il aimerait la vie,</l>
             <l n="1275" xml:id="l1275">Et je vous l'amenais plus traitable et plus doux</l>
@@ -1933,7 +1936,7 @@
             <note type="L">Tibre : Fleuve célèbre d'Italie, naît dans les Appenins, en Toscane, (...) coule généralement au Sud, arrose la Toscane, la territoire romain, baigne Rome et Ostie (...) et se jette dans la Mer Tyrrénienne sous Ostie par deux bras, après un cours d'environ 370 Km. [B]</note>
             <l n="1290" xml:id="l1290">On parle d'eaux, de Tibre, et l'on se tait du reste.</l>
           </sp>
-          <sp xml:id="IV04-3" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV04-3">
             <speaker>ÉMILIE</speaker>
             <l n="1291" xml:id="l1291">Que de sujets de craindre et de désespérer</l>
             <l n="1292" xml:id="l1292">Sans que mon triste cœur en daigne murmurer ! </l>
@@ -1948,7 +1951,7 @@
             <l n="1301" xml:id="l1301">Vous voulez que je meure avec ce grand courage</l>
             <l n="1302" xml:id="l1302">Qui m'a fait entreprendre un si fameux ouvrage,</l>
             <l n="1303" xml:id="l1303">Et je veux bien périr comme vous l'ordonnez,</l>
-            <note type="L">Assiette :  Fig. État, disposition de l'esprit. Garder son assiette. Quand l'esprit est dans son assiette. Faire sortir l'âme de son assiette. [L]</note>
+            <note type="L">Assiette : Fig. État, disposition de l'esprit. Garder son assiette. Quand l'esprit est dans son assiette. Faire sortir l'âme de son assiette. [L]</note>
             <l n="1304" xml:id="l1304">Et dans la même assiette où vous me retenez.</l>
             <l n="1305" xml:id="l1305">Ô liberté de Rome, ô mânes de mon père,</l>
             <l n="1306" xml:id="l1306">J'ai fait de mon côté tout ce que j'ai pu faire,</l>
@@ -1962,23 +1965,23 @@
             <l n="1314" xml:id="l1314">Le sang des grands héros dont vous m'avez fait naître.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Maxime, Émilie, Fulvie.</head>
-          <sp xml:id="IV05-1" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-1">
             <speaker>ÉMILIE</speaker>
             <l n="1315" xml:id="l1315">Mais je vous vois, Maxime, et l'on vous faisait mort ! </l>
           </sp>
-          <sp xml:id="IV05-2" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-2">
             <speaker>MAXIME</speaker>
             <l n="1316" xml:id="l1316">Euphorbe trompe Auguste avec ce faux rapport,</l>
             <l n="1317" xml:id="l1317">Se voyant arrêté, la trame découverte,</l>
             <l n="1318" xml:id="l1318">Il a feint ce trépas pour empêcher ma perte.</l>
           </sp>
-          <sp xml:id="IV05-3" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-3">
             <speaker>ÉMILIE</speaker>
-            <l n="1319" xml:id="l1319" part="I">Que dit-on de Cinna ?</l>
+            <l n="1319" part="I" xml:id="l1319">Que dit-on de Cinna ?</l>
           </sp>
-          <sp xml:id="IV05-4" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-4">
             <speaker>MAXIME</speaker>
             <l part="F">Que son plus grand regret</l>
             <l n="1320" xml:id="l1320">Est de voir que César sait tout votre secret,</l>
@@ -1986,20 +1989,20 @@
             <l n="1322" xml:id="l1322">Évandre a tout conté pour excuser son maître,</l>
             <l n="1323" xml:id="l1323">Et par ordre d'Auguste on vient vous arrêter.</l>
           </sp>
-          <sp xml:id="IV05-5" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-5">
             <speaker>ÉMILIE</speaker>
             <l n="1324" xml:id="l1324">Celui qui l'a reçu tarde à l'exécuter,</l>
             <l n="1325" xml:id="l1325">Je suis prête à le suivre, et lasse de l'attendre.</l>
           </sp>
-          <sp xml:id="IV05-6" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-6">
             <speaker>MAXIME</speaker>
-            <l n="1326" xml:id="l1326" part="I">Il vous attend chez moi.</l>
+            <l n="1326" part="I" xml:id="l1326">Il vous attend chez moi.</l>
           </sp>
-          <sp xml:id="IV05-7" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-7">
             <speaker>ÉMILIE</speaker>
             <l part="M">Chez vous ! </l>
           </sp>
-          <sp xml:id="IV05-8" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-8">
             <speaker>MAXIME</speaker>
             <l part="F">C'est vous surprendre,</l>
             <l n="1327" xml:id="l1327">Mais apprenez le soin que le Ciel a de vous,</l>
@@ -2007,11 +2010,11 @@
             <l n="1329" xml:id="l1329">Prenons notre avantage avant qu'on nous poursuive,</l>
             <l n="1330" xml:id="l1330">Nous avons un vaisseau tout prêt dessus la rive.</l>
           </sp>
-          <sp xml:id="IV05-9" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-9">
             <speaker>ÉMILIE</speaker>
             <l n="1331" xml:id="l1331">Me connais-tu, Maxime, et sais-tu qui je suis ?</l>
           </sp>
-          <sp xml:id="IV05-10" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-10">
             <speaker>MAXIME</speaker>
             <l n="1332" xml:id="l1332">En faveur de Cinna je fais ce que je puis,</l>
             <l n="1333" xml:id="l1333">Et tâche à garantir de ce malheur extrême</l>
@@ -2019,14 +2022,14 @@
             <l n="1335" xml:id="l1335">Sauvons-nous, Émilie, et conservons le jour</l>
             <l n="1336" xml:id="l1336">Afin de le venger par un heureux retour.</l>
           </sp>
-          <sp xml:id="IV05-11" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-11">
             <speaker>ÉMILIE</speaker>
             <l n="1337" xml:id="l1337">Cinna dans son malheur est de ceux qu'il faut suivre,</l>
             <l n="1338" xml:id="l1338">Qu'il ne faut pas venger de peur de leur survivre :</l>
             <l n="1339" xml:id="l1339">Quiconque après sa perte aspire à se sauver,</l>
             <l n="1340" xml:id="l1340">Est indigne du jour qu'il tâche à conserver.</l>
           </sp>
-          <sp xml:id="IV05-12" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-12">
             <speaker>MAXIME</speaker>
             <l n="1341" xml:id="l1341">Quel désespoir aveugle à ces fureurs vous porte ?</l>
             <l n="1342" xml:id="l1342">Ô dieux ! Que de faiblesse en une âme si forte ! </l>
@@ -2039,9 +2042,9 @@
             <l n="1349" xml:id="l1349">Et puisque l'amitié n'en faisait plus qu'une âme,</l>
             <l n="1350" xml:id="l1350">Aimez en cet ami l'objet de votre flamme ;</l>
             <l n="1351" xml:id="l1351">Avec la même ardeur il saura vous chérir</l>
-            <l n="1352" xml:id="l1352" part="I">Que...</l>
+            <l n="1352" part="I" xml:id="l1352">Que...</l>
           </sp>
-          <sp xml:id="IV05-13" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-13">
             <speaker>ÉMILIE</speaker>
             <l part="F">Tu m'oses aimer, et tu n'oses mourir ! </l>
             <l n="1353" xml:id="l1353">Tu prétends un peu trop, mais quoi que tu prétendes,</l>
@@ -2057,23 +2060,23 @@
             <l n="1363" xml:id="l1363">Apprends, apprends de moi quel en est le devoir,</l>
             <l n="1364" xml:id="l1364">Et donne m'en l'exemple, ou viens le recevoir.</l>
           </sp>
-          <sp xml:id="IV05-14" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-14">
             <speaker>MAXIME</speaker>
             <l n="1365" xml:id="l1365">Votre juste douleur est trop impétueuse.</l>
           </sp>
-          <sp xml:id="IV05-15" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-15">
             <speaker>ÉMILIE</speaker>
             <l n="1366" xml:id="l1366">La tienne en ta faveur est trop ingénieuse.</l>
             <l n="1367" xml:id="l1367">Tu me parles déjà d'un bienheureux retour,</l>
             <l n="1368" xml:id="l1368">Et dans tes déplaisirs tu conçois de l'amour ! </l>
           </sp>
-          <sp xml:id="IV05-16" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-16">
             <speaker>MAXIME</speaker>
             <l n="1369" xml:id="l1369">Cet amour en naissant est toutefois extrême,</l>
             <l n="1370" xml:id="l1370">C'est votre amant en vous, c'est mon ami que j'aime.</l>
             <l n="1371" xml:id="l1371">Et des mêmes ardeurs dont il fut embrasé...</l>
           </sp>
-          <sp xml:id="IV05-17" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-17">
             <speaker>ÉMILIE</speaker>
             <l n="1372" xml:id="l1372">Maxime, en voilà trop pour un homme avisé.</l>
             <l n="1373" xml:id="l1373">Ma perte m'a surprise, et ne m'a point troublée,</l>
@@ -2081,11 +2084,11 @@
             <l n="1375" xml:id="l1375">Ma vertu tout entière agit sans s'émouvoir,</l>
             <l n="1376" xml:id="l1376">Et je vois malgré moi plus que je ne veux voir.</l>
           </sp>
-          <sp xml:id="IV05-18" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-18">
             <speaker>MAXIME</speaker>
             <l n="1377" xml:id="l1377">Quoi ? Vous suis-je suspect de quelque perfidie ?</l>
           </sp>
-          <sp xml:id="IV05-19" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-19">
             <speaker>ÉMILIE</speaker>
             <l n="1378" xml:id="l1378">Oui, tu l'es, puisqu'enfin tu veux que je le die,</l>
             <l n="1379" xml:id="l1379">L'ordre de notre fuite est trop bien concerté</l>
@@ -2094,11 +2097,11 @@
             <l n="1382" xml:id="l1382">S'ils en avaient sans loi levé tous les obstacles :</l>
             <l n="1383" xml:id="l1383">Fuis sans moi, tes amours sont ici superflus.</l>
           </sp>
-          <sp xml:id="IV05-20" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-20">
             <speaker>MAXIME</speaker>
-            <l n="1384" xml:id="l1384" part="I">Ah ! Vous m'en dites trop.</l>
+            <l n="1384" part="I" xml:id="l1384">Ah ! Vous m'en dites trop.</l>
           </sp>
-          <sp xml:id="IV05-21" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-21">
             <speaker>ÉMILIE</speaker>
             <l part="F">J'en présume encor plus,</l>
             <l n="1385" xml:id="l1385">Ne crains pas toutefois que j'éclate en injures,</l>
@@ -2106,19 +2109,19 @@
             <l n="1387" xml:id="l1387">Si c'est te faire tort que de m'en défier,</l>
             <l n="1388" xml:id="l1388">Viens mourir avec moi pour te justifier.</l>
           </sp>
-          <sp xml:id="IV05-22" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV05-22">
             <speaker>MAXIME</speaker>
             <l n="1389" xml:id="l1389">Vivez, belle Émilie, et souffrez qu'un esclave...</l>
           </sp>
-          <sp xml:id="IV05-23" who="EMILIE">
+          <sp who="EMILIE" xml:id="IV05-23">
             <speaker>ÉMILIE</speaker>
             <l n="1390" xml:id="l1390">Je ne t'écoute plus qu'en présence d'Octave.</l>
-            <l n="1391" xml:id="l1391" part="I">Allons, Fulvie, allons.</l>
+            <l n="1391" part="I" xml:id="l1391">Allons, Fulvie, allons.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="IV06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="IV06-1" who="MAXIME">
+          <sp who="MAXIME" xml:id="IV06-1">
             <speaker>MAXIME</speaker>
             <l part="F">Désespéré, confus,</l>
             <l n="1392" xml:id="l1392">Et digne, s'il se peut, d'un plus cruel refus,</l>
@@ -2157,11 +2160,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Auguste, Cinna.</head>
-          <sp xml:id="V01-1" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V01-1">
             <speaker>AUGUSTE</speaker>
             <l n="1425" xml:id="l1425">Prends un siège, Cinna, prends, et sur toute chose</l>
             <l n="1426" xml:id="l1426">Observe exactement la loi que je t'impose.</l>
@@ -2172,11 +2175,11 @@
             <l n="1431" xml:id="l1431">Tu pourras me répondre après tout à loisir,</l>
             <l n="1432" xml:id="l1432">Sur ce point seulement contente mon désir.</l>
           </sp>
-          <sp xml:id="V01-2" who="CINNA">
+          <sp who="CINNA" xml:id="V01-2">
             <speaker>CINNA</speaker>
-            <l n="1433" xml:id="l1433" part="I">Je vous obéirai, Seigneur.</l>
+            <l n="1433" part="I" xml:id="l1433">Je vous obéirai, Seigneur.</l>
           </sp>
-          <sp xml:id="V01-3" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V01-3">
             <speaker>AUGUSTE</speaker>
             <l part="F">Qu'il te souvienne</l>
             <l n="1434" xml:id="l1434">De garder ta parole, et je tiendrai la mienne.</l>
@@ -2223,12 +2226,12 @@
             <l n="1475" xml:id="l1475">Mais ce qu'on ne pourrait jamais s'imaginer,</l>
             <l n="1476" xml:id="l1476">Cinna, tu t'en souviens et veux m'assassiner.</l>
           </sp>
-          <sp xml:id="V01-4" who="CINNA">
+          <sp who="CINNA" xml:id="V01-4">
             <speaker>CINNA</speaker>
             <l n="1477" xml:id="l1477">Moi, Seigneur, moi, que j'eusse une âme si traîtresse ! </l>
-            <l n="1478" xml:id="l1478" part="I">Qu'un si lâche dessein...</l>
+            <l n="1478" part="I" xml:id="l1478">Qu'un si lâche dessein...</l>
           </sp>
-          <sp xml:id="V01-5" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V01-5">
             <speaker>AUGUSTE</speaker>
             <l part="F">Tu tiens mal ta promesse,</l>
             <l n="1479" xml:id="l1479">Sied toi, je n'ai pas dit encor ce que je veux,</l>
@@ -2293,9 +2296,9 @@
             <l n="1538" xml:id="l1538">Des héros de leur sang sont les vives images,</l>
             <l n="1539" xml:id="l1539">Quittent le noble orgueil d'un sang si généreux.</l>
             <l n="1540" xml:id="l1540">Jusqu'à pouvoir souffrir que tu règnes sur eux ?</l>
-            <l n="1541" xml:id="l1541" part="I">Parle, parle, il est temps.</l>
+            <l n="1541" part="I" xml:id="l1541">Parle, parle, il est temps.</l>
           </sp>
-          <sp xml:id="V01-6" who="CINNA">
+          <sp who="CINNA" xml:id="V01-6">
             <speaker>CINNA</speaker>
             <l part="F">Je demeure stupide,</l>
             <l n="1542" xml:id="l1542">Non que votre colère ou la mort m'intimide,</l>
@@ -2314,7 +2317,7 @@
             <l n="1555" xml:id="l1555">Vous devez un exemple à la postérité,</l>
             <l n="1556" xml:id="l1556">Et mon trépas importe à votre sûreté.</l>
           </sp>
-          <sp xml:id="V01-7" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V01-7">
             <speaker>AUGUSTE</speaker>
             <l n="1557" xml:id="l1557">Tu me braves, Cinna, tu fais le magnanime,</l>
             <l n="1558" xml:id="l1558">Et loin de t'excuser tu couronnes ton crime.</l>
@@ -2323,34 +2326,34 @@
             <l n="1561" xml:id="l1561">Fais ton arrêt toi-même, et choisis tes supplices.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Auguste, Livie, Cinna, Émilie, Fulvie.</head>
-          <sp xml:id="V02-1" who="LIVIE">
+          <sp who="LIVIE" xml:id="V02-1">
             <speaker>LIVIE</speaker>
             <l n="1562" xml:id="l1562">Vous ne connaissez pas encor tous les complices,</l>
             <l n="1563" xml:id="l1563">Votre Émilie en est, Seigneur, et la voici.</l>
           </sp>
-          <sp xml:id="V02-2" who="CINNA">
+          <sp who="CINNA" xml:id="V02-2">
             <speaker>CINNA</speaker>
-            <l n="1564" xml:id="l1564" part="I">C'est elle-même, ô dieux ! </l>
+            <l n="1564" part="I" xml:id="l1564">C'est elle-même, ô dieux ! </l>
           </sp>
-          <sp xml:id="V02-3" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V02-3">
             <speaker>AUGUSTE</speaker>
             <l part="F">Et toi, ma fille, aussi ! </l>
           </sp>
-          <sp xml:id="V02-4" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-4">
             <speaker>ÉMILIE</speaker>
             <l n="1565" xml:id="l1565">Oui, Seigneur, du dessein je suis la seule cause,</l>
             <l n="1566" xml:id="l1566">C'est pour moi qu'il conspire, et c'est pour moi qu'il ose.</l>
           </sp>
-          <sp xml:id="V02-5" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V02-5">
             <speaker>AUGUSTE</speaker>
             <l n="1567" xml:id="l1567">Quoi ! L'amour qu'en ton cœur j'ai fait naître aujourd'hui</l>
             <l n="1568" xml:id="l1568">T'emporte-t-il déjà jusqu'à mourir pour lui ?</l>
             <l n="1569" xml:id="l1569">Ton âme à ces transports un peu trop s'abandonne,</l>
             <l n="1570" xml:id="l1570">Et c'est trop tôt aimer l'amant que je te donne.</l>
           </sp>
-          <sp xml:id="V02-6" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-6">
             <speaker>ÉMILIE</speaker>
             <l n="1571" xml:id="l1571">Cet amour qui m'expose à vos ressentiments</l>
             <l n="1572" xml:id="l1572">N'est point le prompt effet de vos commandements,</l>
@@ -2369,7 +2372,7 @@
             <l n="1585" xml:id="l1585">Mourir en sa présence, et rejoindre mon père</l>
             <l n="1586" xml:id="l1586">C'est tout ce qui m'amène, et tout ce que j'espère.</l>
           </sp>
-          <sp xml:id="V02-7" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V02-7">
             <speaker>AUGUSTE</speaker>
             <l n="1587" xml:id="l1587">Jusques à quand, ô ciel, et par quelle raison</l>
             <l n="1588" xml:id="l1588">Prendrez-vous contre moi des traits dans ma maison ?</l>
@@ -2381,15 +2384,15 @@
             <l n="1594" xml:id="l1594">L'une fut impudique et l'autre est parricide.</l>
             <l n="1595" xml:id="l1595">Ô ma fille, est-ce là le prix de mes bienfaits ?</l>
           </sp>
-          <sp xml:id="V02-8" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-8">
             <speaker>ÉMILIE</speaker>
             <l n="1596" xml:id="l1596">Mon père l'eut pareil de ceux qu'il vous a faits.</l>
           </sp>
-          <sp xml:id="V02-9" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V02-9">
             <speaker>AUGUSTE</speaker>
             <l n="1597" xml:id="l1597">Songe avec quel amour j'élevai ta jeunesse.</l>
           </sp>
-          <sp xml:id="V02-10" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-10">
             <speaker>ÉMILIE</speaker>
             <l n="1598" xml:id="l1598">Il éleva la vôtre avec même tendresse,</l>
             <l n="1599" xml:id="l1599">Il fut votre tuteur, et vous son assassin,</l>
@@ -2399,7 +2402,7 @@
             <l n="1603" xml:id="l1603">Et qu'un juste courroux dont je me sens brûler</l>
             <l n="1604" xml:id="l1604">À son sang innocent voulait vous immoler.</l>
           </sp>
-          <sp xml:id="V02-11" who="LIVIE">
+          <sp who="LIVIE" xml:id="V02-11">
             <speaker>LIVIE</speaker>
             <l n="1605" xml:id="l1605">C'en est trop, Émilie, arrête, et considère</l>
             <l n="1606" xml:id="l1606">Qu'il t'a trop bien payé les bienfaits de ton père :</l>
@@ -2414,7 +2417,7 @@
             <l n="1615" xml:id="l1615">Nous lui devons nos biens, nos jours sont en sa main,</l>
             <l n="1616" xml:id="l1616">Et jamais on n'a droit sur ceux du souverain.</l>
           </sp>
-          <sp xml:id="V02-12" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-12">
             <speaker>ÉMILIE</speaker>
             <l n="1617" xml:id="l1617">Aussi, dans le discours que vous venez d'entendre,</l>
             <l n="1618" xml:id="l1618">Je parlais pour l'aigrir et non pour me défendre.</l>
@@ -2425,7 +2428,7 @@
             <l n="1623" xml:id="l1623">Et je suis plus à craindre, et vous plus en danger</l>
             <l n="1624" xml:id="l1624">Si j'ai l'amour ensemble et le sang à venger.</l>
           </sp>
-          <sp xml:id="V02-13" who="CINNA">
+          <sp who="CINNA" xml:id="V02-13">
             <speaker>CINNA</speaker>
             <l n="1625" xml:id="l1625">Que vous m'ayez séduit, et que je souffre encore</l>
             <l n="1626" xml:id="l1626">D'être déshonoré par celle que j'adore !</l>
@@ -2442,25 +2445,25 @@
             <l n="1637" xml:id="l1637">Elle n'a conspiré que par mon artifice,</l>
             <l n="1638" xml:id="l1638">J'en suis le seul auteur, elle n'est que complice.</l>
           </sp>
-          <sp xml:id="V02-14" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-14">
             <speaker>ÉMILIE</speaker>
             <l n="1639" xml:id="l1639">Cinna, qu'oses-tu dire ? Est-ce là me chérir</l>
             <l n="1640" xml:id="l1640">Que de m'ôter l'honneur quand il me faut mourir ?</l>
           </sp>
-          <sp xml:id="V02-15" who="CINNA">
+          <sp who="CINNA" xml:id="V02-15">
             <speaker>CINNA</speaker>
             <l n="1641" xml:id="l1641">Mourez, mais en mourant ne souillez point ma gloire.</l>
           </sp>
-          <sp xml:id="V02-16" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-16">
             <speaker>ÉMILIE</speaker>
             <l n="1642" xml:id="l1642">La mienne se flétrit, si César te veut croire.</l>
           </sp>
-          <sp xml:id="V02-17" who="CINNA">
+          <sp who="CINNA" xml:id="V02-17">
             <speaker>CINNA</speaker>
             <l n="1643" xml:id="l1643">Et la mienne se perd, si vous tirez à vous</l>
             <l n="1644" xml:id="l1644">Toute celle qui suit de si généreux coups.</l>
           </sp>
-          <sp xml:id="V02-18" who="EMILIE">
+          <sp who="EMILIE" xml:id="V02-18">
             <speaker>ÉMILIE</speaker>
             <l n="1645" xml:id="l1645">Eh bien, prends-en ta part et me laisse la mienne,</l>
             <l n="1646" xml:id="l1646">Ce serait l'affaiblir que d'affaiblir la tienne,</l>
@@ -2475,7 +2478,7 @@
             <l n="1655" xml:id="l1655">Ensemble nous cherchons l'honneur d'un beau trépas,</l>
             <l n="1656" xml:id="l1656">Vous vouliez nous unir, ne nous séparez pas.</l>
           </sp>
-          <sp xml:id="V02-19" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V02-19">
             <speaker>AUGUSTE</speaker>
             <l n="1657" xml:id="l1657">Oui, je vous unirai, couple ingrat et perfide,</l>
             <l n="1658" xml:id="l1658">Et plus mon ennemi qu'Antoine, ni Lépide,</l>
@@ -2485,25 +2488,25 @@
             <l n="1662" xml:id="l1662">S'étonne du supplice aussi bien que du crime.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Auguste, Livie, Cinna, Maxime, Émilie, Fulvie.</head>
-          <sp xml:id="V03-1" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V03-1">
             <speaker>AUGUSTE</speaker>
             <l n="1663" xml:id="l1663">Mais enfin le Ciel m'aime, et parmi tant de maux</l>
             <l n="1664" xml:id="l1664">Il m'a rendu Maxime, et l'a sauvé des eaux.</l>
             <l n="1665" xml:id="l1665">Approche, seul ami que j'éprouve fidèle.</l>
           </sp>
-          <sp xml:id="V03-2" who="MAXIME">
+          <sp who="MAXIME" xml:id="V03-2">
             <speaker>MAXIME</speaker>
             <l n="1666" xml:id="l1666">Honorez moins, Seigneur, une âme criminelle.</l>
           </sp>
-          <sp xml:id="V03-3" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V03-3">
             <speaker>AUGUSTE</speaker>
             <l n="1667" xml:id="l1667">Ne parlons plus de crime après ton repentir,</l>
             <l n="1668" xml:id="l1668">Après que du péril tu m'as su garantir,</l>
             <l n="1669" xml:id="l1669">C'est à toi que je dois et le jour et l'Empire.</l>
           </sp>
-          <sp xml:id="V03-4" who="MAXIME">
+          <sp who="MAXIME" xml:id="V03-4">
             <speaker>MAXIME</speaker>
             <l n="1670" xml:id="l1670">De tous vos ennemis connaissez mieux le pire,</l>
             <l n="1671" xml:id="l1671">Si vous régnez encor, Seigneur, si vous vivez</l>
@@ -2529,7 +2532,7 @@
             <l n="1691" xml:id="l1691">Et croirai toutefois mon bonheur infini,</l>
             <l n="1692" xml:id="l1692">Si je puis m'en punir après l'avoir puni.</l>
           </sp>
-          <sp xml:id="V03-5" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V03-5">
             <speaker>AUGUSTE</speaker>
             <l n="1693" xml:id="l1693">En est-ce assez, ô ciel, et le sort pour me nuire,</l>
             <l n="1694" xml:id="l1694">A-t-il quelqu'un des miens qu'il veuille encor séduire ?</l>
@@ -2554,7 +2557,7 @@
             <l n="1713" xml:id="l1713">Apprends sur mon exemple à vaincre ta colère,</l>
             <l n="1714" xml:id="l1714">Te rendant un époux, je te rends plus qu'un père.</l>
           </sp>
-          <sp xml:id="V03-6" who="EMILIE">
+          <sp who="EMILIE" xml:id="V03-6">
             <speaker>ÉMILIE</speaker>
             <l n="1715" xml:id="l1715">Et je me rends, Seigneur, à ces hautes bontés,</l>
             <l n="1716" xml:id="l1716">Je recouvre la vue auprès de leurs clartés,</l>
@@ -2571,14 +2574,14 @@
             <l n="1727" xml:id="l1727">Et prenant désormais cette haine en horreur,</l>
             <l n="1728" xml:id="l1728">L'ardeur de vous servir succède à sa fureur.</l>
           </sp>
-          <sp xml:id="V03-7" who="CINNA">
+          <sp who="CINNA" xml:id="V03-7">
             <speaker>CINNA</speaker>
             <l n="1729" xml:id="l1729">Seigneur, que vous dirai-je après que nos offenses</l>
             <l n="1730" xml:id="l1730">Au lieu de châtiments trouvent des récompenses ?</l>
             <l n="1731" xml:id="l1731">Ô vertu sans exemple ! Ô clémence, qui rend</l>
             <l n="1732" xml:id="l1732">Votre pouvoir plus juste et mon crime plus grand !</l>
           </sp>
-          <sp xml:id="V03-8" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V03-8">
             <speaker>AUGUSTE</speaker>
             <l n="1733" xml:id="l1733">Cesse d'en retarder un oubli magnanime,</l>
             <l n="1734" xml:id="l1734">Et tous deux avec moi faites grâce à Maxime,</l>
@@ -2590,13 +2593,13 @@
             <l n="1740" xml:id="l1740">Et que demain l'hymen couronne leur amour.</l>
             <l n="1741" xml:id="l1741">Si tu l'aimes encor, ce sera ton supplice.</l>
           </sp>
-          <sp xml:id="V03-9" who="MAXIME">
+          <sp who="MAXIME" xml:id="V03-9">
             <speaker>MAXIME</speaker>
             <l n="1742" xml:id="l1742">Je n'en murmure point, il a trop de justice,</l>
             <l n="1743" xml:id="l1743">Et je suis plus confus, Seigneur, de vos bontés,</l>
             <l n="1744" xml:id="l1744">Que je ne suis jaloux du bien que vous m'ôtez.</l>
           </sp>
-          <sp xml:id="V03-10" who="CINNA">
+          <sp who="CINNA" xml:id="V03-10">
             <speaker>CINNA</speaker>
             <l n="1745" xml:id="l1745">Souffrez que ma vertu dans mon cœur rappelée</l>
             <l n="1746" xml:id="l1746">Vous consacre une foi lâchement violée,</l>
@@ -2607,7 +2610,7 @@
             <l n="1751" xml:id="l1751">Et moi par un bonheur dont chacun soit jaloux</l>
             <l n="1752" xml:id="l1752">Perdre pour vous cent fois ce que je tiens de vous.</l>
           </sp>
-          <sp xml:id="V03-11" who="LIVIE">
+          <sp who="LIVIE" xml:id="V03-11">
             <speaker>LIVIE</speaker>
             <l n="1753" xml:id="l1753">Ce n'est pas tout, Seigneur, une céleste flamme</l>
             <l n="1754" xml:id="l1754">D'un rayon prophétique illumine mon âme,</l>
@@ -2632,7 +2635,7 @@
             <l n="1773" xml:id="l1773">Et la postérité, dans toutes les provinces</l>
             <l n="1774" xml:id="l1774">Donnera votre exemple aux plus généreux princes.</l>
           </sp>
-          <sp xml:id="V03-12" who="AUGUSTE">
+          <sp who="AUGUSTE" xml:id="V03-12">
             <speaker>AUGUSTE</speaker>
             <l n="1775" xml:id="l1775">J'en accepte l'augure, et j'ose l'espérer,</l>
             <l n="1776" xml:id="l1776">Ainsi toujours les Dieux vous daignent inspirer ;</l>
@@ -2644,24 +2647,23 @@
         </div2>
       </div1>
     </body>
+    <back>
+      <div1 n="1" type="annexe">
+        <head>ANNEXES</head>
+        <div2 n="1" type="abstract">
+          <head>RÉSUMÉ DE LA PIÈCE</head>
+          <p>ACTE I</p>
+          <p>Émilie seule fait part de ses tourments : venger son père exilé et aimer Cinna qui doit la venger. Il faut tuer Octave (scène 1). Fulvie la rejoint et lui présente les avantages et inconvénients de cette vengeance ou du moins de s'en montrer l'auteur (scène 2). Cinna arrive pour présenter son ardeur funeste et abattre l'Empereur Octave-Auguste pour retrouver la République à Rome (scène 3). Évandre vient annoncer que Cinna et Maxime, son complice, sont attendus par Octave. Croyant le complot révélé, Émilie demande à Cinna de fuir. Cinna refuse et préfère braver le danger. Émilie s'y résout avec ferveur et clos l'acte avec "je t'aime" (scène 4).</p>
+          <p>ACTE II</p>
+          <p>Auguste, accablé par sa charge d'Empereur, reçoit Maxime et Cinna et demande leurs avis sur la conduite à suivre : continuer à être Empereur ou quitter l'Empire. Cinna répond qu'Auguste doit garder son trône comme Jules César puis Maxime l'invite à quitter le titre d'Empereur. Auguste se range à l'avis de Cinna et récompense ses deux conseillers en offrant la Sicile à Maxime et Émilie à Cinna (scène I). Maxime et Cinna, seuls, continuent le débat sur le moyen de faire cesser l'Empire. (scène 2)</p>
+          <p>ACTE III</p>
+          <p>Maxime rencontre Euphorbe et lui fait part de son amour secret pour Émilie. Euphorbe lui conseille de trahir Cinna et explique que la haine de Cinna pour Auguste est lié à l'amour qu'il a pour Émilie. Maxime lui présente des arguments contraires, il hésite quand Cinna revient (scène 1). Cinna hésite entre être sacrilège ou parricide. Maxime lui reproche ses hésitations et excite son esprit de vengeance (scène 2). Cinna seul poursuit son introspection : devoir, amour, vengeance. Il trouve le crime odieux. (scène 3) Émilie et Fulvie le rejoignent, Cinna tente d'infléchir la haine d'Émilie mais c'est l'inverse qui se produit puis ils se menacent mutuellement de se donner la mort. Cinna sort (scène IV). Emilie envoie Fulvie pour lui délivrer un message d'apaisement pour qu'il ne meure pas mais la venge quand même (scène 5). </p>
+          <p>ACTE IV</p>
+          <p>Auguste est averti de la conjuration par Euphorbe et s'en trouve étonné. Euphorbe charge Cinna. On apprend que Maxime s'est jeté dans le Tibre. (scène 1) Auguste seul, déplore longuement (77 vers) la trahison de ses amis (scène 2). Livie rejoint Auguste. Elle est au courant du complot et propose à Auguste la clémence mais Auguste, troublé, veut quitter l'Empire. Ils sortent (scène 3). Fulvie annonce à Émilie des messages funestes et confus ; Emilie s'alarme et s'attend à devoir mourir. (scène4). Entre Maxime alors que tous le croyait mort. Il propose à Émilie de fuir Rome : elle refuse par fierté et par amour. Maxime découvre son amour, Émilie s'en offusque et le repousse. (scène 5). Maxime seul désespère : il trahit son souverain puis son ami Cinna et n'obtient pas l'amour Émilie. Il accuse Euphorbe de l'avoir mal conseillé et veut le tuer.</p>
+          <p>ACTE V</p>
+          <p>Auguste reçoit Cinna et lui intime l'ordre de l'écouter. Auguste énumère ses bienfaits et l'interroge sur ses motivations. Cinna reste secret, résigné mais constant attend la mort. (scène 1) Livie arrive avec Émilie et la dénonce. Pour des raisons différentes, Auguste et Cinna sont surpris. Émilie réclame la mort et déclare son amour. Elle rappelle à Octave les bienfaits de son propre père à son égard. Cinna et Émilie rivalisent pour endosser la responsabilité du crime puis Émilie demande à être punit avec Cinna. Octave dit qu'il les unira (scène 2). Maxime revient, Octave s'en réjouit : mais Maxime demande à être punit de ses crimes de trahisons multiples. Octave s'étonne encore. Tous ces aveux le font redoubler de générosité et absout tous les crimes. Tous s'inclinent de respect (scène 3).</p>
+        </div2>
+      </div1>
+    </back>
   </text>
-  <back>
-    <div1 type="annexe" n="1">
-      <head>ANNEXES</head>
-      <div2 type="abstract" n="1">
-        <head>RÉSUMÉ DE LA PIÈCE</head>
-        <p>ACTE I</p>
-        <p>Émilie seule fait part de ses tourments : venger son père exilé et aimer Cinna qui doit la venger. Il faut tuer Octave (scène 1). Fulvie la rejoint et lui présente les avantages et inconvénients de cette vengeance ou du moins de s'en montrer l'auteur (scène 2). Cinna arrive pour présenter son ardeur funeste et abattre l'Empereur Octave-Auguste pour retrouver la République à Rome (scène 3). Évandre vient annoncer que Cinna et Maxime, son complice, sont attendus par Octave. Croyant le complot révélé, Émilie demande à Cinna de fuir. Cinna refuse et préfère braver le danger. Émilie s'y résout avec ferveur et clos l'acte avec "je t'aime" (scène 4).</p>
-        <p>ACTE II</p>
-        <p>Auguste, accablé par sa charge d'Empereur, reçoit Maxime et Cinna et demande leurs avis sur la conduite à suivre : continuer à être Empereur ou quitter l'Empire. Cinna répond qu'Auguste doit garder son trône comme Jules César puis Maxime l'invite à quitter le titre d'Empereur. Auguste se range à l'avis de Cinna et récompense ses deux conseillers en offrant la Sicile à Maxime et Émilie à Cinna (scène I). Maxime et Cinna, seuls, continuent le débat sur le moyen de faire cesser l'Empire. (scène 2)</p>
-        <p>ACTE III</p>
-        <p>Maxime rencontre Euphorbe et lui fait part de son amour secret pour Émilie. Euphorbe lui conseille de trahir Cinna et explique que la haine de Cinna pour Auguste est lié à l'amour qu'il a pour Émilie. Maxime lui présente des arguments contraires, il hésite quand Cinna revient (scène 1). Cinna hésite entre être sacrilège ou parricide. Maxime lui reproche ses hésitations et excite son esprit de vengeance (scène 2). Cinna seul poursuit son introspection : devoir, amour, vengeance. Il trouve le crime odieux. (scène 3) Émilie et Fulvie le rejoignent, Cinna tente d'infléchir la haine d'Émilie mais c'est l'inverse qui se produit puis ils se menacent mutuellement de se donner la mort. Cinna sort (scène IV). Emilie envoie Fulvie pour lui délivrer un message d'apaisement pour qu'il ne meure pas mais la venge quand même (scène 5).
-</p>
-        <p>ACTE IV</p>
-        <p>Auguste est averti de la conjuration par Euphorbe et s'en trouve étonné. Euphorbe charge Cinna. On apprend que Maxime s'est jeté dans le Tibre. (scène 1) Auguste seul, déplore longuement (77 vers) la trahison de ses amis (scène 2). Livie rejoint Auguste. Elle est au courant du complot et propose à Auguste la clémence mais Auguste, troublé, veut quitter l'Empire. Ils sortent (scène 3). Fulvie annonce à Émilie des messages funestes et confus ; Emilie s'alarme et s'attend à devoir mourir. (scène4). Entre Maxime alors que tous le croyait mort. Il propose à Émilie de fuir Rome : elle refuse par fierté et par amour. Maxime découvre son amour, Émilie s'en offusque et le repousse. (scène 5). Maxime seul désespère : il trahit son souverain puis son ami Cinna et n'obtient pas l'amour Émilie. Il accuse Euphorbe de l'avoir mal conseillé et veut le tuer.</p>
-        <p>ACTE V</p>
-        <p>Auguste reçoit Cinna et lui intime l'ordre de l'écouter. Auguste énumère ses bienfaits et l'interroge sur ses motivations. Cinna reste secret, résigné mais constant attend la mort. (scène 1) Livie arrive avec Émilie et la dénonce. Pour des raisons différentes, Auguste et Cinna sont surpris. Émilie réclame la mort et déclare son amour. Elle rappelle à Octave les bienfaits de son propre père à son égard. Cinna et Émilie rivalisent pour endosser la responsabilité du crime puis Émilie demande à être punit avec Cinna. Octave dit qu'il les unira (scène 2). Maxime revient, Octave s'en réjouit : mais Maxime demande à être punit de ses crimes de trahisons multiples. Octave s'étonne encore. Tous ces aveux le font redoubler de générosité et absout tous les crimes. Tous s'inclinent de respect (scène 3).</p>
-      </div2>
-    </div1>
-  </back>
 </TEI>

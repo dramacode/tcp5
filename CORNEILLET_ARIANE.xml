@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>ARIANE, TRAGÉDIE</title>
-        <author born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" academie="1685">CORNEILLE, Thomas</author>
+        <author academie="1685" born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" key="Corneille, Thomas (1625-1709)">CORNEILLE, Thomas</author>
         <date>1672</date>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <p>publié par Ernest FIEVRE</p>
         <p>Mars 2009</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -40,20 +41,45 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
   </teiHeader>
   <text>
-    <front><docTitle><titlePart type="main">ARIANE</titlePart><titlePart type="sub">TRAGÉDIE</titlePart></docTitle><docDate value="1672">M. DC. LXXII.</docDate><docAuthor id="CORNEILLE, Thomas" bio="corneillet">Thomas Corneille</docAuthor><docImprint><privilege id=""/><acheveImprime id=""/><printer>À PARIS, Chez Guillaume de Lyunes, Libraire juré au Palais, sous la montée de la Cour des Aides.</printer></docImprint><performance><premiere date="1672-02-26" location="Hôtel de Bourgogne">Représenté pour la première fois le 26 février 1672 au Théâtre de l'Hôtel de Bourgogne.</premiere></performance>
-. <castList><head>ACTEURS</head><castItem><role xml:id="OENARUS" id="OENARUS" sex="1" type="H" statut="roi" age="A" stat_amour="néant">OENARUS</role>, roi de Naxe.</castItem><castItem><role xml:id="THESEE" id="THÉSÉE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">THÉSÉE</role>, fils d'AEgée, Roi d'Athènes.</castItem><castItem><role xml:id="PIRITHOUS" id="PIRITHOUS" sex="1" type="H" statut="roi" age="A" stat_amour="néant">PIRITHOÜS</role>, fils d'Ixion, Roi des Lapithes.</castItem><castItem><role xml:id="ARIANE" id="ARIANE" sex="2" type="H" statut="prince" age="A" stat_amour="néant">ARIANE</role>, fille de Minos, Roi de Crète.</castItem><castItem><role xml:id="PHEDRE" id="PHÈDRE" sex="1" type="H" statut="prince" age="A" stat_amour="néant">PHÈDRE</role>, soeur d'Ariane.</castItem><castItem><role xml:id="NERINE" id="NÉRINE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">NÉRINE</role>, confidente d'Ariane.</castItem><castItem><role xml:id="ARCAS" id="ARCAS" sex="1" type="H" statut="confident" age="A" stat_amour="néant">ARCAS</role>, Naxien, Confident d'OEnarus.</castItem></castList><set location="Ile de Naxos" country="Grèce" periode="Temps mythologiques" link="">La Scène est dans l'ile de Naxe.</set></front>
+    <front>
+      <docTitle>
+        <titlePart type="main">ARIANE</titlePart>
+        <titlePart type="sub">TRAGÉDIE</titlePart>
+      </docTitle>
+      <docDate value="1672">M. DC. LXXII.</docDate>
+      <docAuthor bio="corneillet" id="CORNEILLE, Thomas">Thomas Corneille</docAuthor>
+      <docImprint>
+        <privilege id=""/>
+        <acheveImprime id=""/>
+        <printer>À PARIS, Chez Guillaume de Lyunes, Libraire juré au Palais, sous la montée de la Cour des Aides.</printer>
+      </docImprint>
+      <performance>
+        <premiere date="1672-02-26" location="Hôtel de Bourgogne">Représenté pour la première fois le 26 février 1672 au Théâtre de l'Hôtel de Bourgogne.</premiere>
+      </performance>
+      <castList>
+        <head>ACTEURS</head>
+        <castItem><role age="A" civil="M" id="OENARUS" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="OENARUS">OENARUS</role>, roi de Naxe.</castItem>
+        <castItem><role age="A" civil="M" id="THÉSÉE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="THESEE">THÉSÉE</role>, fils d'AEgée, Roi d'Athènes.</castItem>
+        <castItem><role age="A" civil="M" id="PIRITHOUS" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="PIRITHOUS">PIRITHOÜS</role>, fils d'Ixion, Roi des Lapithes.</castItem>
+        <castItem><role age="A" civil="F" id="ARIANE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="ARIANE">ARIANE</role>, fille de Minos, Roi de Crète.</castItem>
+        <castItem><role age="A" civil="M" id="PHÈDRE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="PHEDRE">PHÈDRE</role>, soeur d'Ariane.</castItem>
+        <castItem><role age="A" civil="F" id="NÉRINE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="NERINE">NÉRINE</role>, confidente d'Ariane.</castItem>
+        <castItem><role age="A" civil="M" id="ARCAS" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="ARCAS">ARCAS</role>, Naxien, Confident d'OEnarus.</castItem>
+      </castList>
+      <set country="Grèce" link="" location="Ile de Naxos" periode="Temps mythologiques">La Scène est dans l'ile de Naxe.</set>
+    </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. OEnarus, Arcas.</head>
-          <sp xml:id="I01-1" who="OENARUS">
+          <sp who="OENARUS" xml:id="I01-1">
             <speaker>OENARUS.</speaker>
             <l n="1" xml:id="l1">Je le confesse, Arcas, ma faiblesse redouble,</l>
             <l n="2" xml:id="l2">Je ne puis voir ici Pirithoüs sans trouble.</l>
@@ -72,7 +98,7 @@
             <l n="15" xml:id="l15">Et me soumettre enfin au tourment sans égal</l>
             <l n="16" xml:id="l16">De voir tout ce que j'aime au pouvoir d'un Rival.</l>
           </sp>
-          <sp xml:id="I01-2" who="ARCAS">
+          <sp who="ARCAS" xml:id="I01-2">
             <speaker>ARCAS.</speaker>
             <l n="17" xml:id="l17">Ariane vous charme, et sans doute elle est belle ;</l>
             <l n="18" xml:id="l18">Mais Seigneur, quand l'Amour vous a parlé pour elle,</l>
@@ -91,7 +117,7 @@
             <l n="31" xml:id="l31">Vous les pressiez d'abord d'avancer l'heureux jour</l>
             <l n="32" xml:id="l32">Qui devait par l'hymen couronner leur amour.</l>
           </sp>
-          <sp xml:id="I01-3" who="OENARUS">
+          <sp who="OENARUS" xml:id="I01-3">
             <speaker>OENARUS.</speaker>
             <l n="33" xml:id="l33">Que n'ont-ils pu me croire ? Ils m'auraient vu sans peine</l>
             <l n="34" xml:id="l34">Consentir à ces noeuds, dont l'image me gêne.</l>
@@ -118,7 +144,7 @@
             <l n="55" xml:id="l55">Et j'allais quelquefois jusqu'à m'imaginer</l>
             <l n="56" xml:id="l56">Qu'il dédaignait un bien qu'il n'osait me donner.</l>
           </sp>
-          <sp xml:id="I01-4" who="ARCAS">
+          <sp who="ARCAS" xml:id="I01-4">
             <speaker>ARCAS.</speaker>
             <l n="57" xml:id="l57">Dans l'étroite amitié qui depuis tant d'années</l>
             <l n="58" xml:id="l58">De deux Amis si chers unit les destinées,</l>
@@ -130,7 +156,7 @@
             <l n="64" xml:id="l64">Blâmé pour un Ami ce trop d'empressement ?</l>
             <l n="65" xml:id="l65">En avez-vous trouvé plus d'accès auprès d'elle ?</l>
           </sp>
-          <sp xml:id="I01-5" who="OENARUS">
+          <sp who="OENARUS" xml:id="I01-5">
             <speaker>OENARUS.</speaker>
             <l n="66" xml:id="l66">C'est là ma peine, Arcas, Ariane est fidèle.</l>
             <l n="67" xml:id="l67">Mes languissants regards, mes inquiets soupirs</l>
@@ -144,14 +170,14 @@
             <l n="75" xml:id="l75">Et comme il ne faut rien pour flatter un Amant,</l>
             <l n="76" xml:id="l76">Je m'obstine pour elle, et chéris mon tourment.</l>
           </sp>
-          <sp xml:id="I01-6" who="ARCAS">
+          <sp who="ARCAS" xml:id="I01-6">
             <speaker>ARCAS.</speaker>
             <l n="77" xml:id="l77">Avec un tel secours vous êtes moins à plaindre ;</l>
             <l n="78" xml:id="l78">Mais Phèdre est sans amour, et d'un mérite à craindre.</l>
             <l n="79" xml:id="l79">Vous la voyez souvent, et j'admire, Seigneur,</l>
             <l n="80" xml:id="l80">Que sa beauté n'ait rien qui touche votre coeur.</l>
           </sp>
-          <sp xml:id="I01-7" who="OENARUS">
+          <sp who="OENARUS" xml:id="I01-7">
             <speaker>OENARUS.</speaker>
             <l n="81" xml:id="l81">Vois par là de l'Amour le bizarre caprice.</l>
             <l n="82" xml:id="l82">Phèdre dans sa beauté n'a rien qui n'éblouisse.</l>
@@ -170,12 +196,12 @@
             <l n="95" xml:id="l95">Et quoi que sur le choix ma raison ait de jour,</l>
             <l n="96" xml:id="l96">L'une a ma seule estime, et l'autre mon amour.</l>
           </sp>
-          <sp xml:id="I01-8" who="ARCAS">
+          <sp who="ARCAS" xml:id="I01-8">
             <speaker>ARCAS.</speaker>
             <l n="97" xml:id="l97">Mais d'un pareil amour n'êtes-vous pas le maître ?</l>
-            <l n="98" xml:id="l98" part="I">Qui peut tout, ose tout.</l>
+            <l n="98" part="I" xml:id="l98">Qui peut tout, ose tout.</l>
           </sp>
-          <sp xml:id="I01-9" who="OENARUS">
+          <sp who="OENARUS" xml:id="I01-9">
             <speaker>OENARUS.</speaker>
             <l part="F">Que me fais-tu connaître</l>
             <l n="99" xml:id="l99">L'ayant reçue ici, j'aurais la lâcheté</l>
@@ -192,9 +218,9 @@
             <l n="110" xml:id="l110">Et malgré mon amour... Mais les Princes paraissent.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. OEnarus, Thésée, Pirithoüs, Arcas.</head>
-          <sp xml:id="I02-1" who="OENARUS">
+          <sp who="OENARUS" xml:id="I02-1">
             <speaker>OENARUS.</speaker>
             <l n="111" xml:id="l111">Enfin voici ce jour si longtemps attendu.</l>
             <l n="112" xml:id="l112">Pirithoüs dans Naxe à Thésée est rendu,</l>
@@ -202,7 +228,7 @@
             <l n="114" xml:id="l114">Il n'est pas malaisé de juger de sa joie.</l>
             <l n="115" xml:id="l115">Après un tel bonheur rien ne manque à sa foi.</l>
           </sp>
-          <sp xml:id="I02-2" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I02-2">
             <speaker>PIRITHOÜS.</speaker>
             <l n="116" xml:id="l116">Cette joie est encor plus sensible pour moi,</l>
             <l n="117" xml:id="l117">Seigneur ; et de plus Thésée a pendant mon absence</l>
@@ -222,44 +248,44 @@
             <l n="131" xml:id="l131">Que tout comblé qu'il est des faveurs d'un grand Roi,</l>
             <l n="132" xml:id="l132">Même zèle toujours l'intéresse pour moi.</l>
           </sp>
-          <sp xml:id="I02-3" who="OENARUS">
+          <sp who="OENARUS" xml:id="I02-3">
             <speaker>OENARUS.</speaker>
             <l n="133" xml:id="l133">Que Thésée est heureux ! Tandis qu'il peut attendre</l>
             <l n="134" xml:id="l134">Tous les biens que promet l'amitié la plus tendre,</l>
             <l n="135" xml:id="l135">Du plus parfait amour les favorables noeuds</l>
             <l n="136" xml:id="l136">N'ont rien qu'un bel Objet n'abandonne à ses voeux.</l>
           </sp>
-          <sp xml:id="I02-4" who="THESEE">
+          <sp who="THESEE" xml:id="I02-4">
             <speaker>THÉSÉE.</speaker>
             <l n="137" xml:id="l137">Il ne faut pas juger sur ce qu'on voit paraître ;</l>
             <l n="138" xml:id="l138">Seigneur, on n'est heureux qu'autant qu'on le croit être.</l>
             <l n="139" xml:id="l139">Vous m'accablez de biens, et quand je vous dois tant,</l>
             <l n="140" xml:id="l140">Ne pouvant m'acquitter, je ne vis point content.</l>
           </sp>
-          <sp xml:id="I02-5" who="OENARUS">
+          <sp who="OENARUS" xml:id="I02-5">
             <speaker>OENARUS.</speaker>
             <l n="141" xml:id="l141">Ce que j'ai fait pour vous vaut peu que l'on y pense ;</l>
             <l n="142" xml:id="l142">Mais si j'en attendais quelque reconnaissance,</l>
             <l n="143" xml:id="l143">Prince, me dussiez-vous et la vie et l'honneur,</l>
-            <l n="144" xml:id="l144" part="I">Il serait un moyen...</l>
+            <l n="144" part="I" xml:id="l144">Il serait un moyen...</l>
           </sp>
-          <sp xml:id="I02-6" who="THESEE">
+          <sp who="THESEE" xml:id="I02-6">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Quel ? Achevez, Seigneur.</l>
             <l n="145" xml:id="l145">J'offre tout, et déjà mon coeur cède à la joie,</l>
-            <l n="146" xml:id="l146" part="I">De penser...</l>
+            <l n="146" part="I" xml:id="l146">De penser...</l>
           </sp>
-          <sp xml:id="I02-7" who="OENARUS">
+          <sp who="OENARUS" xml:id="I02-7">
             <speaker>OENARUS.</speaker>
             <l part="F">Vous voulez en vain que je le croie.</l>
             <l n="147" xml:id="l147">Cessez d'avoir pour moi des soins trop empressés ;</l>
             <l n="148" xml:id="l148">Il vous en coûterait plus que vous ne pensez.</l>
           </sp>
-          <sp xml:id="I02-8" who="THESEE">
+          <sp who="THESEE" xml:id="I02-8">
             <speaker>THÉSÉE.</speaker>
-            <l n="149" xml:id="l149" part="I">Doutez-vous de mon zèle, et...</l>
+            <l n="149" part="I" xml:id="l149">Doutez-vous de mon zèle, et...</l>
           </sp>
-          <sp xml:id="I02-9" who="OENARUS">
+          <sp who="OENARUS" xml:id="I02-9">
             <speaker>OENARUS.</speaker>
             <l part="F">Non, je me condamne.</l>
             <l n="150" xml:id="l150">Aimez Pirithoüs, possédez Ariane.</l>
@@ -268,22 +294,22 @@
             <l n="153" xml:id="l153">Ma gloire le veut, Prince, et je vous le demande.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Pirithoüs, Thésée.</head>
-          <sp xml:id="I03-1" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-1">
             <speaker>PIRITHOÜS.</speaker>
             <l n="154" xml:id="l154">Je ne sais si le Roi ne veut pas qu'on l'entende ;</l>
             <l n="155" xml:id="l155">Mais au nom d'Ariane un peu trop de chaleur</l>
             <l n="156" xml:id="l156">Me fait craindre pour vous le trouble de son coeur.</l>
             <l n="157" xml:id="l157">Songez-y ; s'il fallait qu'épris d'amour pour elle...</l>
           </sp>
-          <sp xml:id="I03-2" who="THESEE">
+          <sp who="THESEE" xml:id="I03-2">
             <speaker>THÉSÉE.</speaker>
             <l n="158" xml:id="l158">Sa passion est forte, et ne m'est pas nouvelle.</l>
             <l n="159" xml:id="l159">Je la sus dès l'instant qu'il s'en laissa charmer ;</l>
             <l n="160" xml:id="l160">Mais ce n'est pas un mal qui me doive alarmer.</l>
           </sp>
-          <sp xml:id="I03-3" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-3">
             <speaker>PIRITHOÜS.</speaker>
             <l n="161" xml:id="l161">Il est vrai qu'Ariane aurait lieu de se plaindre,</l>
             <l n="162" xml:id="l162">Si chéri sans réserve elle vous voyait craindre.</l>
@@ -293,22 +319,22 @@
             <l n="166" xml:id="l166">Que quoi que pour vous plaire il fallût entreprendre,</l>
             <l n="167" xml:id="l167">Son coeur de cette gloire uniquement charmé...</l>
           </sp>
-          <sp xml:id="I03-4" who="THESEE">
+          <sp who="THESEE" xml:id="I03-4">
             <speaker>THÉSÉE.</speaker>
             <l n="168" xml:id="l168">Hélas ! Et que ne puis-je en être moins aimé !</l>
             <l n="169" xml:id="l169">Je ne me verrais pas dans l'état déplorable</l>
             <l n="170" xml:id="l170">Où me réduit sans cesse un amour qui m'accable,</l>
             <l n="171" xml:id="l171">Un amour qui ne montre à mes sens désolés...</l>
-            <l n="172" xml:id="l172" part="I">Le puis-je dire ?</l>
+            <l n="172" part="I" xml:id="l172">Le puis-je dire ?</l>
           </sp>
-          <sp xml:id="I03-5" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-5">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Ô Dieux ! Est-ce vous qui parlez ?</l>
             <l n="173" xml:id="l173">Ariane en beauté partout si renommée,</l>
             <l n="174" xml:id="l174">Aimant avec excès, ne serait point aimée ?</l>
             <l n="175" xml:id="l175">Vous seriez insensible à de si doux appas ?</l>
           </sp>
-          <sp xml:id="I03-6" who="THESEE">
+          <sp who="THESEE" xml:id="I03-6">
             <speaker>THÉSÉE.</speaker>
             <l n="176" xml:id="l176">Ils ont de quoi toucher, je ne l'ignore pas.</l>
             <l n="177" xml:id="l177">Ma raison qui toujours s'intéresse pour elle,</l>
@@ -320,13 +346,13 @@
             <l n="183" xml:id="l183">Et ne confond d'abord pas ses doux embarras</l>
             <l n="184" xml:id="l184">Tous les raisonnements d'aimer, ou n'aimer pas.</l>
           </sp>
-          <sp xml:id="I03-7" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-7">
             <speaker>PIRITHOÜS.</speaker>
             <l n="185" xml:id="l185">Mais vous souvenez-vous que pour sauver Thésée</l>
             <l n="186" xml:id="l186">La fidèle Ariane à tout s'est exposée ?</l>
             <l n="187" xml:id="l187">Par là du labyrinthe heureusement tiré...</l>
           </sp>
-          <sp xml:id="I03-8" who="THESEE">
+          <sp who="THESEE" xml:id="I03-8">
             <speaker>THÉSÉE.</speaker>
             <l n="188" xml:id="l188">Il est vrai, tout sans elle était désespéré.</l>
             <l n="189" xml:id="l189">Du succès attendu son adresse suivie,</l>
@@ -342,14 +368,14 @@
             <l n="199" xml:id="l199">Et l'on s'efforce en vain par d'assidus combats</l>
             <l n="200" xml:id="l200">À disposer d'un coeur qui ne se donne pas.</l>
           </sp>
-          <sp xml:id="I03-9" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-9">
             <speaker>PIRITHOÜS.</speaker>
             <l n="201" xml:id="l201">Votre mérite est grand, et peut l'avoir charmée ;</l>
             <l n="202" xml:id="l202">Mais quand elle vous aime, elle se croit aimée.</l>
             <l n="203" xml:id="l203">Ainsi vos voeux d'abord auront flatté sa foi,</l>
-            <l n="204" xml:id="l204" part="I">Et vous aurez juré...</l>
+            <l n="204" part="I" xml:id="l204">Et vous aurez juré...</l>
           </sp>
-          <sp xml:id="I03-10" who="THESEE">
+          <sp who="THESEE" xml:id="I03-10">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Qui n'eût fait comme moi ?</l>
             <l n="205" xml:id="l205">Pour me suivre, Ariane abandonnait son Père,</l>
@@ -366,11 +392,11 @@
             <l n="216" xml:id="l216">Que souvent pour aimer c'est peu que le vouloir.</l>
             <l n="217" xml:id="l217">Phèdre à mes yeux surpris à toute heure exposée...</l>
           </sp>
-          <sp xml:id="I03-11" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-11">
             <speaker>PIRITHOÜS.</speaker>
             <l n="218" xml:id="l218">Quoi, la Soeur d'Ariane a fait changer Thésée ?</l>
           </sp>
-          <sp xml:id="I03-12" who="THESEE">
+          <sp who="THESEE" xml:id="I03-12">
             <speaker>THÉSÉE.</speaker>
             <l n="219" xml:id="l219">Oui, je l'aime, et telle est cette brûlante ardeur,</l>
             <l n="220" xml:id="l220">Qu'il n'est rien qui la puisse arracher de mon coeur.</l>
@@ -379,11 +405,11 @@
             <l n="223" xml:id="l223">Je l'ai connu par elle, et ne m'en sens charmé</l>
             <l n="224" xml:id="l224">Que depuis que je l'aime, et que j'en suis aimé.</l>
           </sp>
-          <sp xml:id="I03-13" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-13">
             <speaker>PIRITHOÜS.</speaker>
-            <l n="225" xml:id="l225" part="I">Elle vous aime ?</l>
+            <l n="225" part="I" xml:id="l225">Elle vous aime ?</l>
           </sp>
-          <sp xml:id="I03-14" who="THESEE">
+          <sp who="THESEE" xml:id="I03-14">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Autant que je le puis attendre</l>
             <l n="226" xml:id="l226">Dans l'intérêt du sang qu'une soeur lui fait prendre.</l>
@@ -394,7 +420,7 @@
             <l n="231" xml:id="l231">Et voudrait, pour montrer ce qu'elle sent pour moi,</l>
             <l n="232" xml:id="l232">Qu'Ariane eût cessé de prétendre à ma foi.</l>
             <l n="233" xml:id="l233">Cependant pour ôter toute défiance</l>
-            <l n="234" xml:id="l234">Qu'aurait donné  le cours de notre intelligence,</l>
+            <l n="234" xml:id="l234">Qu'aurait donné le cours de notre intelligence,</l>
             <l n="235" xml:id="l235">Naxe a peu de Beautés pour qui des soins rendus</l>
             <l n="236" xml:id="l236">Ne me semblent coûter quelques soupirs perdus ;</l>
             <l n="237" xml:id="l237">Cyane, AEglé, Mégiste ont part à cet hommage.</l>
@@ -402,27 +428,27 @@
             <l n="239" xml:id="l239">Rien n'alarme son coeur, tant ce que je lui dois</l>
             <l n="240" xml:id="l240">Contre ma trahison lui répond de ma foi.</l>
           </sp>
-          <sp xml:id="I03-15" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-15">
             <speaker>PIRITHOÜS.</speaker>
             <l n="241" xml:id="l241">Ces devoirs partagés ont trop d'indifférence</l>
             <l n="242" xml:id="l242">Pour vous faire aisément soupçonner d'inconstance.</l>
             <l n="243" xml:id="l243">Mais quand depuis trois mois vous m'avez attendu,</l>
             <l n="244" xml:id="l244">Ne vous déclarant point, qu'avez-vous prétendu ?</l>
           </sp>
-          <sp xml:id="I03-16" who="THESEE">
+          <sp who="THESEE" xml:id="I03-16">
             <speaker>THÉSÉE.</speaker>
             <l n="245" xml:id="l245">Flatter l'espoir du Roi, donner temps à sa flamme</l>
             <l n="246" xml:id="l246">De pouvoir malgré lui tyranniser son âme,</l>
             <l n="247" xml:id="l247">Gagner l'esprit de Phèdre, et me débarrasser</l>
             <l n="248" xml:id="l248">D'un hymen dont peut-être on m'aurait fait presser.</l>
           </sp>
-          <sp xml:id="I03-17" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-17">
             <speaker>PIRITHOÜS.</speaker>
             <l n="249" xml:id="l249">Mais me voici dans Naxe, et quoi qu'on puisse faire,</l>
             <l n="250" xml:id="l250">Votre infidélité ne saurait plus se taire.</l>
             <l n="251" xml:id="l251">Quel prétexte auriez-vous encor à différer ?</l>
           </sp>
-          <sp xml:id="I03-18" who="THESEE">
+          <sp who="THESEE" xml:id="I03-18">
             <speaker>THÉSÉE.</speaker>
             <l n="252" xml:id="l252">Je me suis trop contraint, il faut me déclarer.</l>
             <l n="253" xml:id="l253">Quoi que doive Ariane en ressentir de peine,</l>
@@ -442,7 +468,7 @@
             <l n="267" xml:id="l267">Sur qui que ses soupçons puissent ailleurs tomber,</l>
             <l n="268" xml:id="l268">Phèdre à sa défiance est seule à dérober.</l>
           </sp>
-          <sp xml:id="I03-19" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="I03-19">
             <speaker>PIRITHOÜS.</speaker>
             <l n="269" xml:id="l269">Je tairai ce qu'il faut ; mais comme je condamne</l>
             <l n="270" xml:id="l270">Votre ingrate conduite au regard d'Ariane,</l>
@@ -452,16 +478,16 @@
             <l n="274" xml:id="l274">Cependant mon secours vous étant nécessaire,</l>
             <l n="275" xml:id="l275">Si sur l'hymen du Roi je puis être écouté,</l>
             <l n="276" xml:id="l276">J'appuierai le projet dont je vous vois flatté.</l>
-            <l n="277" xml:id="l277" part="I">Phèdre vient, je vous laisse.</l>
+            <l n="277" part="I" xml:id="l277">Phèdre vient, je vous laisse.</l>
           </sp>
-          <sp xml:id="I03-20" who="THESEE">
+          <sp who="THESEE" xml:id="I03-20">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Ô trop charmante vue !</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Thésée, Phèdre.</head>
-          <sp xml:id="I04-1" who="THESEE">
+          <sp who="THESEE" xml:id="I04-1">
             <speaker>THÉSÉE.</speaker>
             <l n="278" xml:id="l278">Et bien ? À quoi, Madame, êtes-vous résolue ?</l>
             <l n="279" xml:id="l279">Je n'ai plus de prétexte à cacher mon secret.</l>
@@ -471,7 +497,7 @@
             <l n="283" xml:id="l283">M'aimerez-vous si peu, que pour le retarder</l>
             <l n="284" xml:id="l284">Vous me disiez encor que c'est trop hasarder ?</l>
           </sp>
-          <sp xml:id="I04-2" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="I04-2">
             <speaker>PHÈDRE.</speaker>
             <l n="285" xml:id="l285">Vous pouvez là-dessus vous répondre vous-même.</l>
             <l n="286" xml:id="l286">Prince, je vous l'ai dit, il est vrai, je vous aime,</l>
@@ -497,7 +523,7 @@
             <l n="306" xml:id="l306">Vous lui devez la foi que votre amour m'engage ;</l>
             <l n="307" xml:id="l307">Vous lui devez ces voeux que déjà tant de fois...</l>
           </sp>
-          <sp xml:id="I04-3" who="THESEE">
+          <sp who="THESEE" xml:id="I04-3">
             <speaker>THÉSÉE.</speaker>
             <l n="308" xml:id="l308">Ah, ne me parlez plus de ce que je lui dois.</l>
             <l n="309" xml:id="l309">Pour elle contre vous qu'ai-je oublié de faire ?</l>
@@ -515,7 +541,7 @@
             <l n="321" xml:id="l321">Et sentais dissiper par cette ardeur nouvelle</l>
             <l n="322" xml:id="l322">Tous les projets d'amour que j'avais faits pour elle.</l>
           </sp>
-          <sp xml:id="I04-4" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="I04-4">
             <speaker>PHÈDRE.</speaker>
             <l n="323" xml:id="l323">J'aurais de ces combats affranchi votre coeur,</l>
             <l n="324" xml:id="l324">Si j'eusse eu pour Rivale une autre qu'une Soeur ;</l>
@@ -526,9 +552,9 @@
             <l n="329" xml:id="l329">Rendez-lui votre amour, cet amour qui sans elle</l>
             <l n="330" xml:id="l330">Aurait peut-être dû me demeurer fidèle ;</l>
             <l n="331" xml:id="l331">Cet amour qui toujours trop propre à me charmer,</l>
-            <l n="332" xml:id="l332" part="I">N'ose...</l>
+            <l n="332" part="I" xml:id="l332">N'ose...</l>
           </sp>
-          <sp xml:id="I04-5" who="THESEE">
+          <sp who="THESEE" xml:id="I04-5">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Apprenez-moi donc à ne vous plus aimer,</l>
             <l n="333" xml:id="l333">À briser ces liens où mon âme asservie</l>
@@ -540,7 +566,7 @@
             <l n="339" xml:id="l339">Si la douceur d'aimer a pour vous quelque appas,</l>
             <l n="340" xml:id="l340">Me pourriez-vous apprendre à ne vous aimer pas ?</l>
           </sp>
-          <sp xml:id="I04-6" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="I04-6">
             <speaker>PHÈDRE.</speaker>
             <l n="341" xml:id="l341">Il en est un moyen que ma gloire envisage</l>
             <l n="342" xml:id="l342">Il faut de votre coeur arracher cette image.</l>
@@ -551,16 +577,16 @@
             <l n="347" xml:id="l347">Ce n'est qu'en s'éloignant qu'on pare de tels coups</l>
             <l n="348" xml:id="l348">Si le triomphe est rude, il est digne de vous.</l>
             <l n="349" xml:id="l349">Il est beau d'étouffer ce qui peut trop nous plaire</l>
-            <l n="350" xml:id="l350" part="I">D'immoler à sa gloire...</l>
+            <l n="350" part="I" xml:id="l350">D'immoler à sa gloire...</l>
           </sp>
-          <sp xml:id="I04-7" who="THESEE">
+          <sp who="THESEE" xml:id="I04-7">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Et le pouvez-vous faire</l>
             <l n="351" xml:id="l351">Ces traits qu'en votre coeur mon amour a tracés,</l>
             <l n="352" xml:id="l352">Quand vous me verrez moins, seront-ils effacés ?</l>
             <l n="353" xml:id="l353">Oublierez-vous sitôt cet ardent sacrifice...</l>
           </sp>
-          <sp xml:id="I04-8" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="I04-8">
             <speaker>PHÈDRE.</speaker>
             <l n="354" xml:id="l354">Cruel, pourquoi vouloir accroître mon supplice ?</l>
             <l n="355" xml:id="l355">M'accable-t-il si peu, qu'il y faille ajouter ?</l>
@@ -575,18 +601,18 @@
             <l n="363" xml:id="l363">Il se trouble, il s'emporte, et dès que je vous vois,</l>
             <l n="364" xml:id="l364">Ma tremblante vertu ne répond plus de moi.</l>
           </sp>
-          <sp xml:id="I04-9" who="THESEE">
+          <sp who="THESEE" xml:id="I04-9">
             <speaker>THÉSÉE.</speaker>
             <l n="365" xml:id="l365">Ah, puisqu'en ma faveur l'Amour fait ce miracle,</l>
             <l n="366" xml:id="l366">Oubliez qu'une Soeur y voudra mettre obstacle.</l>
             <l n="367" xml:id="l367">Pourquoi pour l'épargner trahir un si beau feu ?</l>
           </sp>
-          <sp xml:id="I04-10" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="I04-10">
             <speaker>PHÈDRE.</speaker>
             <l n="368" xml:id="l368">Mais sur quoi vous flattez d'obtenir son aveu ?</l>
-            <l n="369" xml:id="l369" part="I">Sachant que vous m'aimez...</l>
+            <l n="369" part="I" xml:id="l369">Sachant que vous m'aimez...</l>
           </sp>
-          <sp xml:id="I04-11" who="THESEE">
+          <sp who="THESEE" xml:id="I04-11">
             <speaker>THÉSÉE.</speaker>
             <l part="F">C'est ce qu'il faut lui taire.</l>
             <l n="370" xml:id="l370">Sa fuite de Minos allume la colère,</l>
@@ -603,9 +629,9 @@
             <l n="381" xml:id="l381">De voir que dans vos yeux, quand ce projet me flatte,</l>
             <l n="382" xml:id="l382">En faveur de l'Amour un peu de joie éclate ;</l>
             <l n="383" xml:id="l383">Que contre vos frayeurs rassurant votre esprit,</l>
-            <l n="384" xml:id="l384" part="I">Elle efface...</l>
+            <l n="384" part="I" xml:id="l384">Elle efface...</l>
           </sp>
-          <sp xml:id="I04-12" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="I04-12">
             <speaker>PHÈDRE.</speaker>
             <l part="F">Allez, Prince, on vous aime, il suffit.</l>
             <l n="385" xml:id="l385">Peut-être que sur moi la crainte a trop d'empire.</l>
@@ -615,11 +641,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Ariane, Nérine. </head>
-          <sp xml:id="II01-1" who="NERINE">
+          <sp who="NERINE" xml:id="II01-1">
             <speaker>NÉRINE.</speaker>
             <l n="389" xml:id="l389">Le Roi, de ce refus eût eu lieu de se plaindre,</l>
             <l n="390" xml:id="l390">Madame, vous devez un moment vous contraindre ;</l>
@@ -629,7 +655,7 @@
             <l n="394" xml:id="l394">Semble vous obliger à cette complaisance.</l>
             <l n="395" xml:id="l395">Il vous perd, et la plainte a de quoi soulager.</l>
           </sp>
-          <sp xml:id="II01-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="II01-2">
             <speaker>ARIANE.</speaker>
             <l n="396" xml:id="l396">Je sais qu'avec le Roi j'ai tout à ménager,</l>
             <l n="397" xml:id="l397">J'aurais tout de l'aigrir. L'asile qu'il nous prête</l>
@@ -646,13 +672,13 @@
             <l n="408" xml:id="l408">Peins-moi bien tout l'amour dont il brûle pour moi ;</l>
             <l n="409" xml:id="l409">Offres-en à mes yeux la plus sensible image.</l>
           </sp>
-          <sp xml:id="II01-3" who="NERINE">
+          <sp who="NERINE" xml:id="II01-3">
             <speaker>NÉRINE.</speaker>
             <l n="410" xml:id="l410">Je crois que de son coeur vous avez tout l'hommage ;</l>
             <l n="411" xml:id="l411">Mais au point que de lui je vois vos sens charmés,</l>
             <l n="412" xml:id="l412">C'est beaucoup s'il vous aime autant que vous l'aimez.</l>
           </sp>
-          <sp xml:id="II01-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="II01-4">
             <speaker>ARIANE.</speaker>
             <l n="413" xml:id="l413">Et puis-je trop l'aimer, quand tout brillant de gloire</l>
             <l n="414" xml:id="l414">Mille fameux exploits l'offrent à ma mémoire ?</l>
@@ -676,26 +702,26 @@
             <l n="432" xml:id="l432">De ce charmant Héros élever les hauts faits.</l>
             <l n="433" xml:id="l433">Il faut en leur faveur expliquer son silence.</l>
           </sp>
-          <sp xml:id="II01-5" who="NERINE">
+          <sp who="NERINE" xml:id="II01-5">
             <speaker>NÉRINE.</speaker>
             <l n="434" xml:id="l434">Je ne m'étonne point de cette indifférence.</l>
             <l n="435" xml:id="l435">N'ayant jamais aimé, son coeur ne conçoit pas...</l>
           </sp>
-          <sp xml:id="II01-6" who="ARIANE">
+          <sp who="ARIANE" xml:id="II01-6">
             <speaker>ARIANE.</speaker>
             <l n="436" xml:id="l436">Elle évite peut-être un cruel embarras.</l>
             <l n="437" xml:id="l437">L'Amour n'a bien souvent qu'une douceur trompeuse ;</l>
             <l n="438" xml:id="l438">Mais vivre indifférente, est-ce une vie heureuse ?</l>
           </sp>
-          <sp xml:id="II01-7" who="NERINE">
+          <sp who="NERINE" xml:id="II01-7">
             <speaker>NÉRINE.</speaker>
             <l n="439" xml:id="l439">Apprenez-le du Roi, qui de vous trop charmé</l>
             <l n="440" xml:id="l440">Ne souffrirait pas tant, s'il n'avait point aimé.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. OEnarus, Ariane, Nérine.</head>
-          <sp xml:id="II02-1" who="OENARUS">
+          <sp who="OENARUS" xml:id="II02-1">
             <speaker>OENARUS.</speaker>
             <l n="441" xml:id="l441">Ne vous offensez point, Princesse incomparable,</l>
             <l n="442" xml:id="l442">Si prêt à succomber au malheur qui m'accable.</l>
@@ -706,7 +732,7 @@
             <l n="447" xml:id="l447">Vous pouvez sans scrupule en voir mon coeur atteint,</l>
             <l n="448" xml:id="l448">Quand pour prix de mes maux je ne veux qu'être plaint.</l>
           </sp>
-          <sp xml:id="II02-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="II02-2">
             <speaker>ARIANE.</speaker>
             <l n="449" xml:id="l449">Je connais tout l'amour dont votre âme est éprise.</l>
             <l n="450" xml:id="l450">Son excès m'a souvent causé de la surprise,</l>
@@ -719,7 +745,7 @@
             <l n="457" xml:id="l457">Vous savez son mérite, et le prix qu'il me coûte.</l>
             <l n="458" xml:id="l458">Après cela, Seigneur, parlez, je vous écoute.</l>
           </sp>
-          <sp xml:id="II02-3" who="OENARUS">
+          <sp who="OENARUS" xml:id="II02-3">
             <speaker>OENARUS.</speaker>
             <l n="459" xml:id="l459">Thésée a du mérite, et je l'ai dit cent fois,</l>
             <l n="460" xml:id="l460">Votre amour eût eu peine à faire un plus beau choix.</l>
@@ -764,7 +790,7 @@
             <l n="499" xml:id="l499">Mais un mot favorable, un sincère soupir,</l>
             <l n="500" xml:id="l500">Est tout pour qui ne veut que l'entendre et mourir.</l>
           </sp>
-          <sp xml:id="II02-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="II02-4">
             <speaker>ARIANE.</speaker>
             <l n="501" xml:id="l501">Seigneur, tant de vertu dans votre amour éclate,</l>
             <l n="502" xml:id="l502">Qu'il faut vous l'avouer, je ne suis point ingrate.</l>
@@ -774,9 +800,9 @@
             <l n="506" xml:id="l506">Si l'infidélité vous en rendait le maître.</l>
             <l n="507" xml:id="l507">Thésée y règne seul, et s'y trouve adoré.</l>
             <l n="508" xml:id="l508">Dès la première fois je vous l'ai déclaré,</l>
-            <l n="509" xml:id="l509" part="I">Dès la première fois...</l>
+            <l n="509" part="I" xml:id="l509">Dès la première fois...</l>
           </sp>
-          <sp xml:id="II02-5" who="OENARUS">
+          <sp who="OENARUS" xml:id="II02-5">
             <speaker>OENARUS.</speaker>
             <l part="F">C'en est assez, Madame.</l>
             <l n="510" xml:id="l510">Thésée a mérité que vous payiez sa flamme.</l>
@@ -792,9 +818,9 @@
             <l n="520" xml:id="l520">Et j'aime mieux mourir que cesser de vous voir.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. OEnarus, Thésée, Ariane, Nérine.</head>
-          <sp xml:id="II03-1" who="OENARUS">
+          <sp who="OENARUS" xml:id="II03-1">
             <speaker>OENARUS.</speaker>
             <l n="521" xml:id="l521">Prince, mon trouble parle ; et quand je voudrais taire</l>
             <l n="522" xml:id="l522">Le supplice où m'expose un destin trop contraire,</l>
@@ -820,18 +846,18 @@
             <l n="542" xml:id="l542">Ma Cour qui vous honore attend ce grand spectacle.</l>
             <l n="543" xml:id="l543">Ordonnez-en la pompe, et dans un sort si doux,</l>
             <l n="544" xml:id="l544">Quoi que j'aie à souffrir, ne regardez que vous,</l>
-            <l n="545" xml:id="l545" part="I">Adieu, Madame.</l>
+            <l n="545" part="I" xml:id="l545">Adieu, Madame.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Thésée, Ariane, Nérine.</head>
-          <sp xml:id="II04-1" who="THESEE">
+          <sp who="THESEE" xml:id="II04-1">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Il faut l'avouer à sa gloire,</l>
             <l n="546" xml:id="l546">Sa vertu va plus loin que je n'aurais pu croire.</l>
             <l n="547" xml:id="l547">Au bonheur d'un Rival lui-même consentir ?</l>
           </sp>
-          <sp xml:id="II04-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-2">
             <speaker>ARIANE.</speaker>
             <l n="548" xml:id="l548">L'honneur à cet effort a dû l'assujettir.</l>
             <l n="549" xml:id="l549">Qu'eût-il fait ? Il sait trop que mon amour extrême,</l>
@@ -839,12 +865,12 @@
             <l n="551" xml:id="l551">Et qu'ayant tout quitté pour vous prouver ma foi,</l>
             <l n="552" xml:id="l552">Mille Trônes offerts ne pourraient rien sur moi.</l>
           </sp>
-          <sp xml:id="II04-3" who="THESEE">
+          <sp who="THESEE" xml:id="II04-3">
             <speaker>THÉSÉE.</speaker>
             <l n="553" xml:id="l553">Tant d'amour me confond, et plus je vois, Madame,</l>
-            <l n="554" xml:id="l554" part="I">Que je dois...</l>
+            <l n="554" part="I" xml:id="l554">Que je dois...</l>
           </sp>
-          <sp xml:id="II04-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-4">
             <speaker>ARIANE.</speaker>
             <l part="F">Apprenez un projet de ma flamme.</l>
             <l n="555" xml:id="l555">Pour m'attacher à vous par de plus fermes noeuds,</l>
@@ -858,65 +884,65 @@
             <l n="563" xml:id="l563">Voyez Pirithoüs, et tâchez d'obtenir</l>
             <l n="564" xml:id="l564">Que par elle avec nous il consente à s'unir.</l>
           </sp>
-          <sp xml:id="II04-5" who="THESEE">
+          <sp who="THESEE" xml:id="II04-5">
             <speaker>THÉSÉE.</speaker>
             <l n="565" xml:id="l565">L'offre de cet hymen rendra sa joie extrême ;</l>
             <l n="566" xml:id="l566">Mais, Madame, le Roi... Vous savez qu'il vous aime.</l>
-            <l n="567" xml:id="l567" part="I">S'il faut...</l>
+            <l n="567" part="I" xml:id="l567">S'il faut...</l>
           </sp>
-          <sp xml:id="II04-6" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-6">
             <speaker>ARIANE.</speaker>
             <l part="F">Je vous entends ; le Roi trop combattu</l>
             <l n="568" xml:id="l568">Peut laisser à l'Amour séduire sa vertu.</l>
             <l n="569" xml:id="l569">Cet inquiet souci ne saurait me déplaire,</l>
             <l n="570" xml:id="l570">Et pour le dissiper je sais ce qu'il faut faire.</l>
           </sp>
-          <sp xml:id="II04-7" who="THESEE">
+          <sp who="THESEE" xml:id="II04-7">
             <speaker>THÉSÉE.</speaker>
-            <l n="571" xml:id="l571" part="I">C'en est trop, mon coeur... Dieux !</l>
+            <l n="571" part="I" xml:id="l571">C'en est trop, mon coeur... Dieux !</l>
           </sp>
-          <sp xml:id="II04-8" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-8">
             <speaker>ARIANE.</speaker>
             <l part="F">Que ce trouble m'est doux !</l>
             <l n="572" xml:id="l572">Ce qu'il vous fait sentir, je me le dis pour vous.</l>
-            <l n="573" xml:id="l573" part="I">Je me dis...</l>
+            <l n="573" part="I" xml:id="l573">Je me dis...</l>
           </sp>
-          <sp xml:id="II04-9" who="THESEE">
+          <sp who="THESEE" xml:id="II04-9">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Plût aux Dieux ! Vous sauriez la contrainte...</l>
           </sp>
-          <sp xml:id="II04-10" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-10">
             <speaker>ARIANE.</speaker>
             <l n="574" xml:id="l574">Encor un coup perdez cette jalouse crainte ;</l>
             <l n="575" xml:id="l575">J'en connais le remède, et si l'on m'ose aimer,</l>
             <l n="576" xml:id="l576">Vous n'aurez pas longtemps à vous en alarmer.</l>
           </sp>
-          <sp xml:id="II04-11" who="THESEE">
+          <sp who="THESEE" xml:id="II04-11">
             <speaker>THÉSÉE.</speaker>
             <l n="577" xml:id="l577">Minos peut vous poursuivre, et si de sa vengeance...</l>
           </sp>
-          <sp xml:id="II04-12" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-12">
             <speaker>ARIANE.</speaker>
             <l n="578" xml:id="l578">Et n'ai-je pas en vous une sûre défense ?</l>
           </sp>
-          <sp xml:id="II04-13" who="THESEE">
+          <sp who="THESEE" xml:id="II04-13">
             <speaker>THÉSÉE.</speaker>
-            <l n="579" xml:id="l579" part="I">Elle est sûre, il est vrai, mais...</l>
+            <l n="579" part="I" xml:id="l579">Elle est sûre, il est vrai, mais...</l>
           </sp>
-          <sp xml:id="II04-14" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-14">
             <speaker>ARIANE.</speaker>
             <l part="M">Achevez.</l>
           </sp>
-          <sp xml:id="II04-15" who="THESEE">
+          <sp who="THESEE" xml:id="II04-15">
             <speaker>THÉSÉE.</speaker>
             <l part="F">J'attends...</l>
           </sp>
-          <sp xml:id="II04-16" who="ARIANE">
+          <sp who="ARIANE" xml:id="II04-16">
             <speaker>ARIANE.</speaker>
             <l n="580" xml:id="l580">Ce désordre me gêne, et dure trop longtemps ;</l>
-            <l n="581" xml:id="l581" part="I">Expliquez-vous enfin.</l>
+            <l n="581" part="I" xml:id="l581">Expliquez-vous enfin.</l>
           </sp>
-          <sp xml:id="II04-17" who="THESEE">
+          <sp who="THESEE" xml:id="II04-17">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Je le veux, et ne l'ose ;</l>
             <l n="582" xml:id="l582">À mes propres souhaits moi-même je m'oppose,</l>
@@ -932,19 +958,19 @@
             <l n="592" xml:id="l592">Je vous conseillerais de ne l'apprendre pas.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. Ariane, Pirithoüs, Nérine.</head>
-          <sp xml:id="II05-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-1">
             <speaker>ARIANE.</speaker>
             <l n="593" xml:id="l593">Quel est ce grand secret, Prince, et par quel mystère</l>
             <l n="594" xml:id="l594">Vouloir me l'expliquer, et tout à coup se taire ?</l>
           </sp>
-          <sp xml:id="II05-2" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-2">
             <speaker>PIRITHOÜS.</speaker>
             <l n="595" xml:id="l595">Ne me demandez rien, il sort tout interdit,</l>
             <l n="596" xml:id="l596">Madame, et par son trouble il vous en a trop dit.</l>
           </sp>
-          <sp xml:id="II05-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-3">
             <speaker>ARIANE.</speaker>
             <l n="597" xml:id="l597">Je vous comprends tous deux, vous arrivez d'Athènes.</l>
             <l n="598" xml:id="l598">Du sang dont je suis née on n'y veut point de Reines,</l>
@@ -955,9 +981,9 @@
             <l n="603" xml:id="l603">Trône, Sceptre, grandeurs, sont des biens superflus ;</l>
             <l n="604" xml:id="l604">Thésée étant à moi, je ne veux rien de plus.</l>
             <l n="605" xml:id="l605">Son amour paye assez ce que le mien me coûte,</l>
-            <l n="606" xml:id="l606" part="I">Le reste est peu de chose.</l>
+            <l n="606" part="I" xml:id="l606">Le reste est peu de chose.</l>
           </sp>
-          <sp xml:id="II05-4" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-4">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Il vous aime sans doute,</l>
             <l n="607" xml:id="l607">Et comment pourrait-il avoir le coeur si bas,</l>
@@ -969,16 +995,16 @@
             <l n="613" xml:id="l613">Et l'hymen seul du Roi peut sans incertitude</l>
             <l n="614" xml:id="l614">Vous ôter là-dessus tout lieu d'inquiétude.</l>
             <l n="615" xml:id="l615">Il vous aime, et de vous Naxe prenant la loi,</l>
-            <l n="616" xml:id="l616" part="I">Calmera...</l>
+            <l n="616" part="I" xml:id="l616">Calmera...</l>
           </sp>
-          <sp xml:id="II05-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-5">
             <speaker>ARIANE.</speaker>
             <l part="F">Vous voulez que j'épouse le Roi ?</l>
             <l n="617" xml:id="l617">Certes l'avis est rare, et si j'ose vous croire,</l>
             <l n="618" xml:id="l618">Un noble changement me va combler de gloire.</l>
-            <l n="619" xml:id="l619" part="I">Me connaissez-vous bien ?</l>
+            <l n="619" part="I" xml:id="l619">Me connaissez-vous bien ?</l>
           </sp>
-          <sp xml:id="II05-6" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-6">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Les moindres lâchetés</l>
             <l n="620" xml:id="l620">Sont pour votre grand coeur des crimes détestés,</l>
@@ -987,7 +1013,7 @@
             <l n="623" xml:id="l623">Et si vous me croyez, quels que soient mes avis,</l>
             <l n="624" xml:id="l624">Vous vous trouverez bien de les avoir suivis.</l>
           </sp>
-          <sp xml:id="II05-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-7">
             <speaker>ARIANE.</speaker>
             <l n="625" xml:id="l625">Qui ? Moi les suivre ? Moi, qui voudrais pour Thésée</l>
             <l n="626" xml:id="l626">À cent et cent périls voir ma vie exposée ?</l>
@@ -995,25 +1021,25 @@
             <l n="628" xml:id="l628">S'il savait qu'un Ami parlât pour son Rival ?</l>
             <l n="629" xml:id="l629">S'il savait qu'il voulût lui ravir ce qu'il aime ?</l>
           </sp>
-          <sp xml:id="II05-8" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-8">
             <speaker>PIRITHOÜS.</speaker>
             <l n="630" xml:id="l630">Vous le consulterez, n'en croyez que lui-même.</l>
           </sp>
-          <sp xml:id="II05-9" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-9">
             <speaker>ARIANE.</speaker>
             <l n="631" xml:id="l631">Quoi, si l'offre d'un Trône avait pu m'éblouir,</l>
             <l n="632" xml:id="l632">Je lui demanderais si je dois le trahir,</l>
             <l n="633" xml:id="l633">Si je dois l'exposer au plus cruel martyre</l>
-            <l n="634" xml:id="l634" part="I">Qu'un amant...</l>
+            <l n="634" part="I" xml:id="l634">Qu'un amant...</l>
           </sp>
-          <sp xml:id="II05-10" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-10">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Je n'ai dit que ce que j'ai dû dire.</l>
             <l n="635" xml:id="l635">Vous y penserez mieux, et peut-être qu'un jour</l>
             <l n="636" xml:id="l636">Vous prendrez un peu moins le parti de l'Amour.</l>
-            <l n="637" xml:id="l637" part="I">Adieu, Madame.</l>
+            <l n="637" part="I" xml:id="l637">Adieu, Madame.</l>
           </sp>
-          <sp xml:id="II05-11" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-11">
             <speaker>ARIANE.</speaker>
             <l part="F">Il dit ce qu'il faut qu'il me dise !</l>
             <l n="638" xml:id="l638">Demeurez, avec moi c'est en vain qu'on déguise.</l>
@@ -1025,11 +1051,11 @@
             <l n="644" xml:id="l644">Rend Thésée infidèle, et me vole son coeur ;</l>
             <l n="645" xml:id="l645">Que pour un autre Objet, sans souci de sa gloire...</l>
           </sp>
-          <sp xml:id="II05-12" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-12">
             <speaker>PIRITHOÜS.</speaker>
             <l n="646" xml:id="l646">Je me tais, c'est à vous à voir ce qu'il faut croire.</l>
           </sp>
-          <sp xml:id="II05-13" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-13">
             <speaker>ARIANE.</speaker>
             <l n="647" xml:id="l647">Ce qu'il faut croire ? Ah Dieux ! Vous me désespérez,</l>
             <l n="648" xml:id="l648">Je verrais à mes voeux d'autres voeux préférés ?</l>
@@ -1038,16 +1064,16 @@
             <l n="651" xml:id="l651">Il m'aime ; et s'il m'en faut séparer quelque jour,</l>
             <l n="652" xml:id="l652">Je pleurerai sa mort, et non pas son amour.</l>
           </sp>
-          <sp xml:id="II05-14" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-14">
             <speaker>PIRITHOÜS.</speaker>
             <l n="653" xml:id="l653">Souvent ce qui nous plaît par une erreur fatale...</l>
           </sp>
-          <sp xml:id="II05-15" who="ARIANE">
+          <sp who="ARIANE" xml:id="II05-15">
             <speaker>ARIANE.</speaker>
             <l n="654" xml:id="l654">Parlez plus clairement, ai-je quelque Rivale ?</l>
             <l n="655" xml:id="l655">Thésée a-t-il changé ? Viole-t-il sa foi ?</l>
           </sp>
-          <sp xml:id="II05-16" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="II05-16">
             <speaker>PIRITHOÜS.</speaker>
             <l n="656" xml:id="l656">Mon silence déjà s'est expliqué pour moi ;</l>
             <l n="657" xml:id="l657">Par là je vous dis tout. Vos ennuis me font peine ;</l>
@@ -1055,22 +1081,22 @@
             <l n="659" xml:id="l659">N'oubliez point qu'à Naxe on veut vous couronner,</l>
             <l n="660" xml:id="l660">C'est le meilleur conseil qu'on vous puisse donner.</l>
             <l n="661" xml:id="l661">Ma présence commence à vous être importune,</l>
-            <l n="662" xml:id="l662" part="I">Je me retire.</l>
+            <l n="662" part="I" xml:id="l662">Je me retire.</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="II06">
           <head>SCÈNE VI. Ariane, Nérine.</head>
-          <sp xml:id="II06-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="II06-1">
             <speaker>ARIANE.</speaker>
             <l part="F">As-tu conçu mon infortune ?</l>
             <l n="663" xml:id="l663">Il n'en faut point douter, je suis trahie. Hélas !</l>
-            <l n="664" xml:id="l664" part="I">Nérine.</l>
+            <l n="664" part="I" xml:id="l664">Nérine.</l>
           </sp>
-          <sp xml:id="II06-2" who="NERINE">
+          <sp who="NERINE" xml:id="II06-2">
             <speaker>NÉRINE.</speaker>
             <l part="M">Je vous plains.</l>
           </sp>
-          <sp xml:id="II06-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="II06-3">
             <speaker>ARIANE.</speaker>
             <l part="F">Qui ne me plaindrait pas ?</l>
             <l n="665" xml:id="l665">Tu le sais, tu l'as vu, j'ai tout fait pour Thésée.</l>
@@ -1083,14 +1109,14 @@
             <l n="672" xml:id="l672">Thésée a trop de coeur pour tant de lâcheté,</l>
             <l n="673" xml:id="l673">Pour croire qu'à ma mort son injustice aspire.</l>
           </sp>
-          <sp xml:id="II06-4" who="NERINE">
+          <sp who="NERINE" xml:id="II06-4">
             <speaker>NÉRINE.</speaker>
             <l n="674" xml:id="l674">Pirithoüs ne dit que ce qu'il lui fait dire ;</l>
             <l n="675" xml:id="l675">Et quand il a voulu l'attendre si longtemps,</l>
             <l n="676" xml:id="l676">Ce n'était qu'un prétexte à ses feux inconstants.</l>
             <l n="677" xml:id="l677">Il nourrissait dès lors l'ardeur qui le domine.</l>
           </sp>
-          <sp xml:id="II06-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="II06-5">
             <speaker>ARIANE.</speaker>
             <l n="678" xml:id="l678">Ah, que me fais-tu voir, trop cruelle Nérine ?</l>
             <l n="679" xml:id="l679">Sur le gouffre des maux qui me vont abîmer,</l>
@@ -1106,9 +1132,9 @@
             <l n="689" xml:id="l689">Quoi, Nérine, pour prix de l'amour le plus tendre...</l>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="II07">
           <head>SCÈNE VII. Ariane, Phèdre, Nérine.</head>
-          <sp xml:id="II07-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="II07-1">
             <speaker>ARIANE.</speaker>
             <l n="690" xml:id="l690">Ah, ma Soeur, savez-vous ce qu'on vient de m'apprendre ?</l>
             <l n="691" xml:id="l691">Vous avez cru Thésée un Héros tout parfait,</l>
@@ -1116,11 +1142,11 @@
             <l n="693" xml:id="l693">N'attendez plus de foi, plus d'honneur, tout chancelle,</l>
             <l n="694" xml:id="l694">Tout doit être suspect, Thésée est infidèle.</l>
           </sp>
-          <sp xml:id="II07-2" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="II07-2">
             <speaker>PHÈDRE.</speaker>
-            <l n="695" xml:id="l695" part="I">Quoi, Thésée...</l>
+            <l n="695" part="I" xml:id="l695">Quoi, Thésée...</l>
           </sp>
-          <sp xml:id="II07-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="II07-3">
             <speaker>ARIANE.</speaker>
             <l part="F">Oui, ma Soeur, après ce qu'il me doit,</l>
             <l n="696" xml:id="l696">Me quitter est le prix que ma flamme en reçoit,</l>
@@ -1137,13 +1163,13 @@
             <l n="707" xml:id="l707">Ma main tremble, et malgré son parjure odieux,</l>
             <l n="708" xml:id="l708">Je vois toujours en lui ce que j'aime le mieux.</l>
           </sp>
-          <sp xml:id="II07-4" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="II07-4">
             <speaker>PHÈDRE.</speaker>
             <l n="709" xml:id="l709">Un revers si cruel vous rend sans doute à plaindre ;</l>
             <l n="710" xml:id="l710">Et vous voyant souffrir ce qu'on n'a pas dû craindre,</l>
             <l n="711" xml:id="l711">On conçoit aisément jusqu'où le désespoir...</l>
           </sp>
-          <sp xml:id="II07-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="II07-5">
             <speaker>ARIANE.</speaker>
             <l n="712" xml:id="l712">Ah, qu'on est éloigné de le bien concevoir !</l>
             <l n="713" xml:id="l713">Pour pénétrer l'horreur du tourment de mon âme,</l>
@@ -1172,12 +1198,12 @@
             <l n="736" xml:id="l736">Le funeste besoin que j'en devais avoir.</l>
             <l n="737" xml:id="l737">Sans vous, à mes malheurs où chercher du remède ?</l>
           </sp>
-          <sp xml:id="II07-6" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="II07-6">
             <speaker>PHÈDRE.</speaker>
             <l n="738" xml:id="l738">Je vais mander Thésée, et si son coeur ne cède,</l>
             <l n="739" xml:id="l739">Madame, en lui parlant, vous devez présumer...</l>
           </sp>
-          <sp xml:id="II07-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="II07-7">
             <speaker>ARIANE.</speaker>
             <l n="740" xml:id="l740">Hélas ! Et plût au Ciel que vous sussiez aimer,</l>
             <l n="741" xml:id="l741">Que vous pussiez savoir par votre expérience</l>
@@ -1195,11 +1221,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Pirithoüs, Phèdre.</head>
-          <sp xml:id="III01-1" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III01-1">
             <speaker>PIRITHOÜS.</speaker>
             <l n="753" xml:id="l753">Ce serait perdre temps, il ne faut plus prétendre</l>
             <l n="754" xml:id="l754">Que rien touche Thésée, et le force à se rendre.</l>
@@ -1218,7 +1244,7 @@
             <l n="767" xml:id="l767">Quoi que vous ait promis ce repentir confus,</l>
             <l n="768" xml:id="l768">Sitôt qu'il vous regarde, il ne s'en souvient plus.</l>
           </sp>
-          <sp xml:id="III01-2" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="III01-2">
             <speaker>PHÈDRE.</speaker>
             <l n="769" xml:id="l769">Les Dieux me sont témoins que de son injustice</l>
             <l n="770" xml:id="l770">Je souffre malgré moi qu'il me rende complice.</l>
@@ -1250,7 +1276,7 @@
             <l n="796" xml:id="l796">Ôtez-lui tout espoir que je puisse être à lui ;</l>
             <l n="797" xml:id="l797">J'ai déjà beaucoup dit, dites-lui plus encore.</l>
           </sp>
-          <sp xml:id="III01-3" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III01-3">
             <speaker>PIRITHOÜS.</speaker>
             <l n="798" xml:id="l798">Nous avancerions peu, Madame, il vous adore</l>
             <l n="799" xml:id="l799">Et quand pour l'étonner à force de refus,</l>
@@ -1265,7 +1291,7 @@
             <l n="808" xml:id="l808">La gloire d'un hymen qui la fera régner.</l>
             <l n="809" xml:id="l809">Le Roi l'aime, et son Trône est pour elle un asile.</l>
           </sp>
-          <sp xml:id="III01-4" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="III01-4">
             <speaker>PHÈDRE.</speaker>
             <l n="810" xml:id="l810">Quoi, je la trahirais, elle qui trop facile,</l>
             <l n="811" xml:id="l811">Trop aveugle à m'aimer, se confie à ma foi,</l>
@@ -1275,25 +1301,25 @@
             <l n="815" xml:id="l815">Je pourrais à ses yeux lâchement exposer</l>
             <l n="816" xml:id="l816">Les criminels appas qui la font mépriser ?</l>
             <l n="817" xml:id="l817">Je pourrais soutenir le sensible reproche</l>
-            <l n="818" xml:id="l818" part="I">Qu'un trop juste courroux...</l>
+            <l n="818" part="I" xml:id="l818">Qu'un trop juste courroux...</l>
           </sp>
-          <sp xml:id="III01-5" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III01-5">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Voyez qu'elle s'approche.</l>
             <l n="819" xml:id="l819">Parlons, son intérêt nous oblige à bannir</l>
             <l n="820" xml:id="l820">Tout l'espoir que son feu tâche d'entretenir.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Ariane, Pirithoüs, Phèdre, Nérine.</head>
-          <sp xml:id="III02-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="III02-1">
             <speaker>ARIANE.</speaker>
             <l n="821" xml:id="l821">Et bien, ma Soeur ? Thésée est-il inexorable ?</l>
             <l n="822" xml:id="l822">N'avez-vous pu surprendre un soupir favorable,</l>
             <l n="823" xml:id="l823">Et quand au repentir on le porte à céder,</l>
             <l n="824" xml:id="l824">Croit-il que mon amour ose trop demander ?</l>
           </sp>
-          <sp xml:id="III02-2" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="III02-2">
             <speaker>PHÈDRE.</speaker>
             <l n="825" xml:id="l825">Madame, j'ai tout fait pour ébranler son âme.</l>
             <l n="826" xml:id="l826">J'ai peint son changement lâche, odieux, infâme.</l>
@@ -1306,7 +1332,7 @@
             <l n="833" xml:id="l833">Et le Destin plus fort que sa reconnaissance,</l>
             <l n="834" xml:id="l834">Malgré ce qu'il vous doit, l'entraîne à l'inconstance.</l>
           </sp>
-          <sp xml:id="III02-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="III02-3">
             <speaker>ARIANE.</speaker>
             <l n="835" xml:id="l835">Quelle excuse ! Et pour moi qu'il rend peu de combat !</l>
             <l n="836" xml:id="l836">Il hait l'ingratitude, et se plaît d'être ingrat.</l>
@@ -1319,24 +1345,24 @@
             <l n="843" xml:id="l843">Il y serait sensible, et ne pourrait souffrir</l>
             <l n="844" xml:id="l844">Que qui sauva ses jours fût forcée à mourir.</l>
           </sp>
-          <sp xml:id="III02-4" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="III02-4">
             <speaker>PHÈDRE.</speaker>
             <l n="845" xml:id="l845">Si vous saviez pour vous ce qu'a fait ma tendresse,</l>
-            <l n="846" xml:id="l846" part="I">Vous soupçonneriez moins...</l>
+            <l n="846" part="I" xml:id="l846">Vous soupçonneriez moins...</l>
           </sp>
-          <sp xml:id="III02-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="III02-5">
             <speaker>ARIANE.</speaker>
             <l part="F">J'ai tort, je le confesse ;</l>
             <l n="847" xml:id="l847">Mais dans un mal, sous qui la constance est à bout,</l>
             <l n="848" xml:id="l848">On s'égare, on s'emporte, et l'on s'en prend à tout.</l>
           </sp>
-          <sp xml:id="III02-6" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III02-6">
             <speaker>PIRITHOÜS.</speaker>
             <l n="849" xml:id="l849">Madame, de ces maux à qui la raison cède,</l>
             <l n="850" xml:id="l850">Le temps qui calme tout est l'unique remède.</l>
-            <l n="851" xml:id="l851" part="I">C'est par lui seul...</l>
+            <l n="851" part="I" xml:id="l851">C'est par lui seul...</l>
           </sp>
-          <sp xml:id="III02-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="III02-7">
             <speaker>ARIANE.</speaker>
             <l part="F">Les coups n'en sont guère importants,</l>
             <l n="852" xml:id="l852">Quand on peut se résoudre à s'en remettre au temps.</l>
@@ -1344,7 +1370,7 @@
             <l n="854" xml:id="l854">Il y consent ; je veux l'apprendre de sa bouche.</l>
             <l n="855" xml:id="l855">Je l'attendrai, ma Soeur, qu'il vienne.</l>
           </sp>
-          <sp xml:id="III02-8" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III02-8">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Je crains bien</l>
             <l n="856" xml:id="l856">Que vous ne vous plaigniez de ce triste entretien.</l>
@@ -1352,14 +1378,14 @@
             <l n="858" xml:id="l858">C'est de tous les ennuis l'ennui le plus sensible,</l>
             <l n="859" xml:id="l859">Vous en souffrirez trop, et pour peu de souci...</l>
           </sp>
-          <sp xml:id="III02-9" who="ARIANE">
+          <sp who="ARIANE" xml:id="III02-9">
             <speaker>ARIANE.</speaker>
             <l n="860" xml:id="l860">Allez, ma Soeur, de grâce, et l'envoyez ici.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Ariane, Pirithoüs, Nérine.</head>
-          <sp xml:id="III03-1" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III03-1">
             <speaker>PIRITHOÜS.</speaker>
             <l n="861" xml:id="l861">Par ce que je vous dis, ne croyez pas, Madame,</l>
             <l n="862" xml:id="l862">Que je veuille applaudir à sa nouvelle flamme.</l>
@@ -1374,7 +1400,7 @@
             <l n="871" xml:id="l871">Et qu'il ne m'attendait que pour vous annoncer</l>
             <l n="872" xml:id="l872">L'injustice où l'Amour se plaît à le forcer.</l>
           </sp>
-          <sp xml:id="III03-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="III03-2">
             <speaker>ARIANE.</speaker>
             <l n="873" xml:id="l873">Et ne devais-je pas, quoi qu'il me fît entendre,</l>
             <l n="874" xml:id="l874">Pénétrer les raisons qui vous faisaient attendre,</l>
@@ -1395,15 +1421,15 @@
             <l n="889" xml:id="l889">Mais enfin puisque rien pour lui n'est plus à taire,</l>
             <l n="890" xml:id="l890">Quel est ce rare Objet que son choix me préfère ?</l>
           </sp>
-          <sp xml:id="III03-3" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III03-3">
             <speaker>PIRITHOÜS.</speaker>
             <l n="891" xml:id="l891">C'est ce que de son coeur je ne puis arracher.</l>
           </sp>
-          <sp xml:id="III03-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="III03-4">
             <speaker>ARIANE.</speaker>
             <l n="892" xml:id="l892">Ma colère est suspecte, il faut me le cacher.</l>
           </sp>
-          <sp xml:id="III03-5" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III03-5">
             <speaker>PIRITHOÜS.</speaker>
             <l n="893" xml:id="l893">J'ignore ce qu'il craint, mais lorsqu'il vous outrage,</l>
             <l n="894" xml:id="l894">Songez que d'un grand Roi vous recevez l'Hommage ;</l>
@@ -1412,9 +1438,9 @@
             <l n="897" xml:id="l897">Tout vous porte, Madame, à ce grand hyménée.</l>
             <l n="898" xml:id="l898">Pourriez-vous demeurer errante, abandonnée ?</l>
             <l n="899" xml:id="l899">Déjà la Crète cherche à se venger de vous.</l>
-            <l n="900" xml:id="l900" part="I">Et Minos...</l>
+            <l n="900" part="I" xml:id="l900">Et Minos...</l>
           </sp>
-          <sp xml:id="III03-6" who="ARIANE">
+          <sp who="ARIANE" xml:id="III03-6">
             <speaker>ARIANE.</speaker>
             <l part="F">J'en crains peu le plus ardent courroux.</l>
             <l n="901" xml:id="l901">Qu'il s'arme contre moi, que j'en sois poursuivie,</l>
@@ -1426,7 +1452,7 @@
             <l n="907" xml:id="l907">Et lui laisser sentir pour double châtiment,</l>
             <l n="908" xml:id="l908">Le remords de ma perte, et de son changement.</l>
           </sp>
-          <sp xml:id="III03-7" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="III03-7">
             <speaker>PIRITHOÜS.</speaker>
             <l n="909" xml:id="l909">Le voici qui paraît ; n'épargnez rien, Madame,</l>
             <l n="910" xml:id="l910">Pour rentrer dans vos droits, pour regagner son âme ;</l>
@@ -1434,9 +1460,9 @@
             <l n="912" xml:id="l912">Songez ce qu'offre un Trône à qui peut y monter.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Ariane, Thésée, Nérine. </head>
-          <sp xml:id="III04-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-1">
             <speaker>ARIANE.</speaker>
             <l n="913" xml:id="l913">Approchez-vous, Thésée, et perdez cette crainte.</l>
             <l n="914" xml:id="l914">Pourquoi dans vos regards marquer tant de contrainte,</l>
@@ -1451,7 +1477,7 @@
             <l n="923" xml:id="l923">Et d'où vient qu'exposée à de si rudes coups,</l>
             <l n="924" xml:id="l924">Ariane n'est plus ce qu'elle fut pour vous.</l>
           </sp>
-          <sp xml:id="III04-2" who="THESEE">
+          <sp who="THESEE" xml:id="III04-2">
             <speaker>THÉSÉE.</speaker>
             <l n="925" xml:id="l925">Ah, pourquoi le penser ? Elle est toujours la même,</l>
             <l n="926" xml:id="l926">Même zèle toujours suit mon respect extrême,</l>
@@ -1462,7 +1488,7 @@
             <l n="931" xml:id="l931">Si la fin vous en plaît, le sort me sera doux</l>
             <l n="932" xml:id="l932">Par qui j'obtiendrai l'heur de la perdre pour vous.</l>
           </sp>
-          <sp xml:id="III04-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-3">
             <speaker>ARIANE.</speaker>
             <l n="933" xml:id="l933">Si quand je vous connus la fin eût pu m'en plaire,</l>
             <l n="934" xml:id="l934">Le Destin la vouloir, je l'aurais laissé faire.</l>
@@ -1475,9 +1501,9 @@
             <l n="941" xml:id="l941">Un service pareil veut un autre salaire.</l>
             <l n="942" xml:id="l942">C'est le coeur, le coeur seul, qui peut y satisfaire.</l>
             <l n="943" xml:id="l943">Il a seul pour mes voeux ce qui peut les borner,</l>
-            <l n="944" xml:id="l944" part="I">C'est lui seul...</l>
+            <l n="944" part="I" xml:id="l944">C'est lui seul...</l>
           </sp>
-          <sp xml:id="III04-4" who="THESEE">
+          <sp who="THESEE" xml:id="III04-4">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Je voudrais vous le pouvoir donner,</l>
             <l n="945" xml:id="l945">Mais ce coeur malgré moi vit sous un autre empire,</l>
@@ -1485,7 +1511,7 @@
             <l n="947" xml:id="l947">Et quand je plains vos feux par ma flamme déçus,</l>
             <l n="948" xml:id="l948">Je hais mon injustice, et ne puis rien de plus.</l>
           </sp>
-          <sp xml:id="III04-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-5">
             <speaker>ARIANE.</speaker>
             <l n="949" xml:id="l949">Tu ne peux rien de plus ! Qu'aurais-tu fait, Parjure,</l>
             <l n="950" xml:id="l950">Si quand tu vins du Monstre éprouver l'aventure,</l>
@@ -1504,7 +1530,7 @@
             <l n="963" xml:id="l963">Et désavouant tout, éblouis-moi si bien,</l>
             <l n="964" xml:id="l964">Que je puisse penser que tu ne me dois rien.</l>
           </sp>
-          <sp xml:id="III04-6" who="THESEE">
+          <sp who="THESEE" xml:id="III04-6">
             <speaker>THÉSÉE.</speaker>
             <l n="965" xml:id="l965">Comment désavouer ce que l'honneur me presse</l>
             <l n="966" xml:id="l966">De voir, d'examiner, de me dire sans cesse ?</l>
@@ -1523,7 +1549,7 @@
             <l n="979" xml:id="l979">Quoi qu'aujourd'hui pour moi l'inconstance ait de doux,</l>
             <l n="980" xml:id="l980">Vous perdant pour jamais, je perdrai plus que vous.</l>
           </sp>
-          <sp xml:id="III04-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-7">
             <speaker>ARIANE.</speaker>
             <l n="981" xml:id="l981">Quelle perte, grands Dieux, quand elle est volontaire ?</l>
             <l n="982" xml:id="l982">Périsse tout, s'il faut cesser de t'être chère.</l>
@@ -1543,12 +1569,12 @@
             <l n="996" xml:id="l996">Tu n'as qu'à dire un mot, ce crime est effacé.</l>
             <l n="997" xml:id="l997">C'en est fait, tu le vois, je n'ai plus de colère.</l>
           </sp>
-          <sp xml:id="III04-8" who="THESEE">
+          <sp who="THESEE" xml:id="III04-8">
             <speaker>THÉSÉE.</speaker>
             <l n="998" xml:id="l998">Un si beau feu m'accable, il devrait seul me plaire ;</l>
             <l n="999" xml:id="l999">Mais telle est de l'Amour la tyrannique ardeur...</l>
           </sp>
-          <sp xml:id="III04-9" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-9">
             <speaker>ARIANE.</speaker>
             <l n="1000" xml:id="l1000">Va, tu me répondras des transports de mon coeur.</l>
             <l n="1001" xml:id="l1001">Si ma flamme sur toi n'avait qu'un faible empire,</l>
@@ -1559,15 +1585,15 @@
             <l n="1006" xml:id="l1006">Tu t'es plu sans m'aimer à me le faire croire :</l>
             <l n="1007" xml:id="l1007">Tes indignes serments sur mon crédule esprit...</l>
           </sp>
-          <sp xml:id="III04-10" who="THESEE">
+          <sp who="THESEE" xml:id="III04-10">
             <speaker>THÉSÉE.</speaker>
             <l n="1008" xml:id="l1008">Quand je vous les ai faits, j'ai cru ce que j'ai dit.</l>
             <l n="1009" xml:id="l1009">Je partais glorieux d'être votre conquête ;</l>
             <l n="1010" xml:id="l1010">Mais enfin dans ces lieux poussé par la tempête,</l>
             <l n="1011" xml:id="l1011">J'ai trop vu ce qu'à voir me conviait l'Amour,</l>
-            <l n="1012" xml:id="l1012" part="I">J'ai trop...</l>
+            <l n="1012" part="I" xml:id="l1012">J'ai trop...</l>
           </sp>
-          <sp xml:id="III04-11" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-11">
             <speaker>ARIANE.</speaker>
             <l part="F">Naxe te change ? Ah ! Funeste séjour !</l>
             <l n="1013" xml:id="l1013">Dans Naxe, tu le sais, un Roi, grand, magnanime,</l>
@@ -1604,7 +1630,7 @@
             <l n="1044" xml:id="l1044">Toute aimable à tes yeux méritait bien ton choix :</l>
             <l n="1045" xml:id="l1045">Elle n'a point changé, d'où vient que ton coeur change ?</l>
           </sp>
-          <sp xml:id="III04-12" who="THESEE">
+          <sp who="THESEE" xml:id="III04-12">
             <speaker>THÉSÉE.</speaker>
             <l n="1046" xml:id="l1046">Par un amour forcé qui sous ses lois me range.</l>
             <l n="1047" xml:id="l1047">Je le crois comme vous ; le Ciel est juste, un jour</l>
@@ -1613,7 +1639,7 @@
             <l n="1049" xml:id="l1049">Mais à sa violence il faut que ma foi cède.</l>
             <l n="1050" xml:id="l1050">Je vous l'ai déjà dit, c'est un mal sans remède.</l>
           </sp>
-          <sp xml:id="III04-13" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-13">
             <speaker>ARIANE.</speaker>
             <l n="1051" xml:id="l1051">Ah, c'est trop, puisque rien ne te saurait toucher,</l>
             <l n="1052" xml:id="l1052">Parjure, oublie un feu qui dût t'être si cher.</l>
@@ -1627,13 +1653,13 @@
             <l n="1059" xml:id="l1059">La Crète, où pour toi seul je me suis fait haïr,</l>
             <l n="1060" xml:id="l1060">Me plaira mieux que Naxe, où tu m'oses trahir.</l>
           </sp>
-          <sp xml:id="III04-14" who="THESEE">
+          <sp who="THESEE" xml:id="III04-14">
             <speaker>THÉSÉE.</speaker>
             <l n="1061" xml:id="l1061">Vous remener en Crète ! Oubliez-vous, Madame,</l>
             <l n="1062" xml:id="l1062">Ce qu'est pour vous un Père, et quel courroux l'enflamme ?</l>
             <l n="1063" xml:id="l1063">Songez-vous quels ennuis vous y sont apprêtés ?</l>
           </sp>
-          <sp xml:id="III04-15" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-15">
             <speaker>ARIANE.</speaker>
             <l n="1064" xml:id="l1064">Laisse-moi les souffrir, je les ai mérités ;</l>
             <l n="1065" xml:id="l1065">Mais de ton faux amour les feintes concertées,</l>
@@ -1657,57 +1683,57 @@
             <l n="1083" xml:id="l1083">J'ai trahi mon Pays, et mon Père et mon Roi ;</l>
             <l n="1084" xml:id="l1084">Cependant vois le prix, ingrat, que j'en reçois."</l>
           </sp>
-          <sp xml:id="III04-16" who="THESEE">
+          <sp who="THESEE" xml:id="III04-16">
             <speaker>THÉSÉE.</speaker>
             <l n="1085" xml:id="l1085">Ah, si mon changement doit causer votre perte,</l>
             <l n="1086" xml:id="l1086">Frappez, prenez ma vie, elle vous est offerte.</l>
             <l n="1087" xml:id="l1087">Prévenez par ce coup le forfait odieux</l>
-            <l n="1088" xml:id="l1088" part="I">Qu'un amour trop aveugle...</l>
+            <l n="1088" part="I" xml:id="l1088">Qu'un amour trop aveugle...</l>
           </sp>
-          <sp xml:id="III04-17" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-17">
             <speaker>ARIANE.</speaker>
             <l part="F">Ôte-toi de mes yeux.</l>
             <l n="1089" xml:id="l1089">De ta constance ailleurs va montrer les mérites ;</l>
             <l n="1090" xml:id="l1090">Je ne veux pas avoir l'affront que tu me quittes.</l>
           </sp>
-          <sp xml:id="III04-18" who="THESEE">
+          <sp who="THESEE" xml:id="III04-18">
             <speaker>THÉSÉE.</speaker>
-            <l n="1091" xml:id="l1091" part="I">Madame...</l>
+            <l n="1091" part="I" xml:id="l1091">Madame...</l>
           </sp>
-          <sp xml:id="III04-19" who="ARIANE">
+          <sp who="ARIANE" xml:id="III04-19">
             <speaker>ARIANE.</speaker>
             <l part="F">Ôte toi, dis-je, et me laisse en pouvoir</l>
             <l n="1092" xml:id="l1092">De te haïr autant que je le crois devoir.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Ariane, Nérine.</head>
-          <sp xml:id="III05-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="III05-1">
             <speaker>ARIANE.</speaker>
-            <l n="1093" xml:id="l1093" part="I">Il sort, Nérine. Hélas !</l>
+            <l n="1093" part="I" xml:id="l1093">Il sort, Nérine. Hélas !</l>
           </sp>
-          <sp xml:id="III05-2" who="NERINE">
+          <sp who="NERINE" xml:id="III05-2">
             <speaker>NÉRINE.</speaker>
             <l part="F">Qu'aurait fait sa présence,</l>
             <l n="1094" xml:id="l1094">Qu'accroître de vos maux la triste violence ?</l>
           </sp>
-          <sp xml:id="III05-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="III05-3">
             <speaker>ARIANE.</speaker>
             <l n="1095" xml:id="l1095">M'avoir ainsi quittée, et partout me trahir !</l>
           </sp>
-          <sp xml:id="III05-4" who="NERINE">
+          <sp who="NERINE" xml:id="III05-4">
             <speaker>NÉRINE.</speaker>
-            <l n="1096" xml:id="l1096" part="I">Vous l'avez commandé.</l>
+            <l n="1096" part="I" xml:id="l1096">Vous l'avez commandé.</l>
           </sp>
-          <sp xml:id="III05-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="III05-5">
             <speaker>ARIANE.</speaker>
             <l part="F">Devait-il obéir !</l>
           </sp>
-          <sp xml:id="III05-6" who="NERINE">
+          <sp who="NERINE" xml:id="III05-6">
             <speaker>NÉRINE.</speaker>
             <l n="1097" xml:id="l1097">Que vouliez-vous qu'il fît ? Vous pressiez sa retraite</l>
           </sp>
-          <sp xml:id="III05-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="III05-7">
             <speaker>ARIANE.</speaker>
             <l n="1098" xml:id="l1098">Qu'il sût en s'emportant, ce que l'Amour souhaite,</l>
             <l n="1099" xml:id="l1099">Et qu'à mon désespoir souffrant un libre cours,</l>
@@ -1717,16 +1743,16 @@
             <l n="1103" xml:id="l1103">Mais il ne saurait plus souffrir la mienne. Ah Dieux !</l>
             <l n="1104" xml:id="l1104">As-tu vu quelle joie a paru dans ses yeux ?</l>
             <l n="1105" xml:id="l1105">Combien il est sorti satisfait da ma haine ?</l>
-            <l n="1106" xml:id="l1106" part="I">Que de mépris !</l>
+            <l n="1106" part="I" xml:id="l1106">Que de mépris !</l>
           </sp>
-          <sp xml:id="III05-8" who="NERINE">
+          <sp who="NERINE" xml:id="III05-8">
             <speaker>NÉRINE.</speaker>
             <l part="F">Son crime auprès de vous le gêne,</l>
             <l n="1107" xml:id="l1107">Madame, et n'ayant point d'excuse à vous donner,</l>
             <l n="1108" xml:id="l1108">S'il vous fuit, j'y vois peu de quoi vous étonner.</l>
             <l n="1109" xml:id="l1109">Il s'épargne une peine à peu d'autres égale.</l>
           </sp>
-          <sp xml:id="III05-9" who="ARIANE">
+          <sp who="ARIANE" xml:id="III05-9">
             <speaker>ARIANE.</speaker>
             <l n="1110" xml:id="l1110">M'en voir trahie ! Il faut découvrir ma Rivale.</l>
             <l n="1111" xml:id="l1111">Examine avec moi. De toute cette Cour</l>
@@ -1746,11 +1772,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. OEnarus, Phèdre.</head>
-          <sp xml:id="IV01-1" who="OENARUS">
+          <sp who="OENARUS" xml:id="IV01-1">
             <speaker>OENARUS.</speaker>
             <l n="1125" xml:id="l1125">Un si grand changement ne peut trop me surprendre,</l>
             <l n="1126" xml:id="l1126">J'en ai la certitude, et ne le puis comprendre.</l>
@@ -1766,14 +1792,14 @@
             <l n="1136" xml:id="l1136">Passe tous les malheurs qu'on ait à redouter.</l>
             <l n="1137" xml:id="l1137">C'est du courroux du Ciel la plus funeste preuve.</l>
           </sp>
-          <sp xml:id="IV01-2" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV01-2">
             <speaker>PHÈDRE.</speaker>
             <l n="1138" xml:id="l1138">Ariane, Seigneur, en fait la triste épreuve,</l>
             <l n="1139" xml:id="l1139">Et si de ses ennuis vous n'arrêtez le cours,</l>
             <l n="1140" xml:id="l1140">J'ignore, pour le rompre, où chercher du secours.</l>
             <l n="1141" xml:id="l1141">Son coeur est accablé d'une douleur mortelle.</l>
           </sp>
-          <sp xml:id="IV01-3" who="OENARUS">
+          <sp who="OENARUS" xml:id="IV01-3">
             <speaker>OENARUS.</speaker>
             <l n="1142" xml:id="l1142">Vous ne savez que trop l'amour que j'ai pour elle,</l>
             <l n="1143" xml:id="l1143">Il veut, il offre tout ; mais hélas ! je crains bien</l>
@@ -1783,7 +1809,7 @@
             <l n="1147" xml:id="l1147">Et sans doute on voudra que je sois le garant</l>
             <l n="1148" xml:id="l1148">De l'hommage inconnu que sa flamme lui rend.</l>
           </sp>
-          <sp xml:id="IV01-4" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV01-4">
             <speaker>PHÈDRE.</speaker>
             <l n="1149" xml:id="l1149">Je doute qu'Ariane, encor que méprisée,</l>
             <l n="1150" xml:id="l1150">Veuille par votre hymen se venger de Thésée ;</l>
@@ -1799,23 +1825,23 @@
             <l n="1160" xml:id="l1160">Au courroux de Minos ne l'abandonnez pas.</l>
             <l n="1161" xml:id="l1161">Vous savez les périls où sa fuite l'expose.</l>
           </sp>
-          <sp xml:id="IV01-5" who="OENARUS">
+          <sp who="OENARUS" xml:id="IV01-5">
             <speaker>OENARUS.</speaker>
             <l n="1162" xml:id="l1162">Ah, pour l'en garantir, il n'est rien que je n'ose,</l>
             <l n="1163" xml:id="l1163">Madame, et vous verrez mon Trône trébucher</l>
             <l n="1164" xml:id="l1164">Avant que je néglige in intérêt si cher.</l>
             <l n="1165" xml:id="l1165">Plût aux Dieux que ce soin la tînt seul inquiète !</l>
           </sp>
-          <sp xml:id="IV01-6" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV01-6">
             <speaker>PHÈDRE.</speaker>
             <l n="1166" xml:id="l1166">Voyez dans quels ennuis ce changement la jette...</l>
             <l n="1167" xml:id="l1167">Son visage vous parle, et sa triste langueur</l>
             <l n="1168" xml:id="l1168">Vous fait lire en ses yeux ce que souffre son coeur.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. OEnarus, Ariane, Phèdre, Nérine.</head>
-          <sp xml:id="IV02-1" who="OENARUS">
+          <sp who="OENARUS" xml:id="IV02-1">
             <speaker>OENARUS.</speaker>
             <l n="1169" xml:id="l1169">Madame, je ne sais si l'ennui qui vous touche</l>
             <l n="1170" xml:id="l1170">Doit m'ouvrir pour vous plaindre, ou me fermer la bouche.</l>
@@ -1828,9 +1854,9 @@
             <l n="1177" xml:id="l1177">Il est certain pourtant, et le Ciel qui m'écoute</l>
             <l n="1178" xml:id="l1178">M'en sera le témoin, si votre coeur en doute,</l>
             <l n="1179" xml:id="l1179">Que si de tout mon sang je pouvais racheter</l>
-            <l n="1180" xml:id="l1180" part="I">Ce que...</l>
+            <l n="1180" part="I" xml:id="l1180">Ce que...</l>
           </sp>
-          <sp xml:id="IV02-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV02-2">
             <speaker>ARIANE.</speaker>
             <l part="F">Cessez, Seigneur, de me le protester.</l>
             <l n="1181" xml:id="l1181">S'il dépendait de vous de me rendre Thésée,</l>
@@ -1874,11 +1900,11 @@
             <l n="1219" xml:id="l1219">Et pour être en état de remplir votre espoir,</l>
             <l n="1220" xml:id="l1220">Cette estime suffit à qui sait son devoir.</l>
           </sp>
-          <sp xml:id="IV02-3" who="OENARUS">
+          <sp who="OENARUS" xml:id="IV02-3">
             <speaker>OENARUS.</speaker>
             <l n="1221" xml:id="l1221">Ah, pour la mériter, si le plus pur hommage...</l>
           </sp>
-          <sp xml:id="IV02-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV02-4">
             <speaker>ARIANE.</speaker>
             <l n="1222" xml:id="l1222">Seigneur, dispensez-moi d'en ouïr davantage.</l>
             <l n="1223" xml:id="l1223">J'ai tous les sens encor de trouble embarrassés,</l>
@@ -1905,49 +1931,49 @@
             <l n="1244" xml:id="l1244">De mon coeur, de ma foi, n'ayez aucun souci ;</l>
             <l n="1245" xml:id="l1245">Après ce que j'ai dit, vous en êtes le maître.</l>
           </sp>
-          <sp xml:id="IV02-5" who="OENARUS">
+          <sp who="OENARUS" xml:id="IV02-5">
             <speaker>OENARUS.</speaker>
             <l n="1246" xml:id="l1246">Ah, Madame, par où puis-je assez reconnaître...</l>
           </sp>
-          <sp xml:id="IV02-6" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV02-6">
             <speaker>ARIANE.</speaker>
             <l n="1247" xml:id="l1247">Seigneur, un peu de trêve ; en l'état où je suis,</l>
             <l n="1248" xml:id="l1248">J'ai comblé votre espoir, c'est tout ce que je puis.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Ariane, Phèdre. </head>
-          <sp xml:id="IV03-1" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-1">
             <speaker>PHÈDRE.</speaker>
             <l n="1249" xml:id="l1249">Ce retour me surprend. Tantôt contre Thésée</l>
             <l n="1250" xml:id="l1250">Du plus ardent courroux vous étiez embrasée,</l>
             <l n="1251" xml:id="l1251">Et déjà la raison a calmé ce transport ?</l>
           </sp>
-          <sp xml:id="IV03-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-2">
             <speaker>ARIANE.</speaker>
             <l n="1252" xml:id="l1252">Que ferais-je, ma Soeur ? C'est un Arrêt du Sort.</l>
             <l n="1253" xml:id="l1253">Thésée a résolu d'achever son parjure,</l>
             <l n="1254" xml:id="l1254">Il veut me voir souffrir, je me tais, et j'endure.</l>
           </sp>
-          <sp xml:id="IV03-3" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-3">
             <speaker>PHÈDRE.</speaker>
             <l n="1255" xml:id="l1255">Mais vous répondez-vous d'oublier aisément</l>
             <l n="1256" xml:id="l1256">Ce que sa passion eut pour vous de charmant ?</l>
             <l n="1257" xml:id="l1257">D'avoir à d'autres voeux un coeur si peu contraire,</l>
-            <l n="1258" xml:id="l1258" part="I">Que...</l>
+            <l n="1258" part="I" xml:id="l1258">Que...</l>
           </sp>
-          <sp xml:id="IV03-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-4">
             <speaker>ARIANE.</speaker>
             <l part="F">Je n'ai rien promis que je ne veuille faire.</l>
             <l n="1259" xml:id="l1259">Qu'il s'engage à l'hymen, j'épouserai le Roi.</l>
           </sp>
-          <sp xml:id="IV03-5" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-5">
             <speaker>PHÈDRE.</speaker>
             <l n="1260" xml:id="l1260">Quoi ? Par votre aveu même il donnera sa foi ;</l>
             <l n="1261" xml:id="l1261">Et lorsque son amour a tant reçu du vôtre,</l>
             <l n="1262" xml:id="l1262">Vous le verrez sans peine entre les bras d'une autre ?</l>
           </sp>
-          <sp xml:id="IV03-6" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-6">
             <speaker>ARIANE.</speaker>
             <l n="1263" xml:id="l1263">Entre les bras d'une autre ! Avant ce coup, ma Soeur,</l>
             <l n="1264" xml:id="l1264">J'aime, je suis trahie, on connaîtra mon coeur.</l>
@@ -1967,11 +1993,11 @@
             <l n="1278" xml:id="l1278">Contre sa trahison n'arme votre colère,</l>
             <l n="1279" xml:id="l1279">Que vous ne ressentiez tout ce que sent mon coeur.</l>
           </sp>
-          <sp xml:id="IV03-7" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-7">
             <speaker>PHÈDRE.</speaker>
-            <l n="1280" xml:id="l1280" part="I">Madame, vous savez...</l>
+            <l n="1280" part="I" xml:id="l1280">Madame, vous savez...</l>
           </sp>
-          <sp xml:id="IV03-8" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-8">
             <speaker>ARIANE.</speaker>
             <l part="F">Je vous connais, ma Soeur.</l>
             <l n="1281" xml:id="l1281">Aussi c'est seulement en vous ouvrant mon âme,</l>
@@ -1988,13 +2014,13 @@
             <l n="1292" xml:id="l1292">Vous savez que l'Amour aisément se trahit.</l>
             <l n="1293" xml:id="l1293">Observez ses regards, son trouble, son silence.</l>
           </sp>
-          <sp xml:id="IV03-9" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-9">
             <speaker>PHÈDRE.</speaker>
             <l n="1294" xml:id="l1294">J'y prends trop d'intérêt pour manquer de prudence.</l>
             <l n="1295" xml:id="l1295">Dans l'ardeur de venger tant de droits violés,</l>
             <l n="1296" xml:id="l1296">C'est donc cette Rivale à qui vous en voulez ?</l>
           </sp>
-          <sp xml:id="IV03-10" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-10">
             <speaker>ARIANE.</speaker>
             <l n="1297" xml:id="l1297">Pour porter sur l'Ingrate un coup vraiment terrible,</l>
             <l n="1298" xml:id="l1298">Il faut frapper par là, c'est un endroit sensible.</l>
@@ -2020,13 +2046,13 @@
             <l n="1318" xml:id="l1318">La fureur qui m'anime, afin qu'on me le paye.</l>
             <l n="1319" xml:id="l1319">J'en mettrai haut le prix, c'est à lui d'y penser.</l>
           </sp>
-          <sp xml:id="IV03-11" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-11">
             <speaker>PHÈDRE.</speaker>
             <l n="1320" xml:id="l1320">Ce revers est sensible, il faut le confesser.</l>
             <l n="1321" xml:id="l1321">Mais quand vous connaîtrez celle qu'il vous préfère,</l>
             <l n="1322" xml:id="l1322">Pour venger votre amour, que prétendez-vous faire ?</l>
           </sp>
-          <sp xml:id="IV03-12" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-12">
             <speaker>ARIANE.</speaker>
             <l n="1323" xml:id="l1323">L'aller trouver, la voir, et de ma propre main</l>
             <l n="1324" xml:id="l1324">Lui mettre, lui plonger un poignard dans le sein.</l>
@@ -2039,13 +2065,13 @@
             <l n="1331" xml:id="l1331">Alors il me dira, si se voir lâchement</l>
             <l n="1332" xml:id="l1332">Arracher ce qu'on aime, est un léger tourment.</l>
           </sp>
-          <sp xml:id="IV03-13" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-13">
             <speaker>PHÈDRE.</speaker>
             <l n="1333" xml:id="l1333">Mais sans l'autoriser à vous être infidèle,</l>
             <l n="1334" xml:id="l1334">Cette Rivale a pu le voir brûler pour elle</l>
             <l n="1335" xml:id="l1335">Elle a peine à ses voeux peut-être consentir.</l>
           </sp>
-          <sp xml:id="IV03-14" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-14">
             <speaker>ARIANE.</speaker>
             <l n="1336" xml:id="l1336">Point de pardon, ma Soeur, il fallait m'avertir.</l>
             <l n="1337" xml:id="l1337">Son silence fait voir qu'elle a part au parjure.</l>
@@ -2069,11 +2095,11 @@
             <l n="1355" xml:id="l1355">Et ce sera de quoi mieux combler son ennui,</l>
             <l n="1356" xml:id="l1356">Que de vivre à ses yeux pour un autre que lui.</l>
           </sp>
-          <sp xml:id="IV03-15" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV03-15">
             <speaker>PHÈDRE.</speaker>
             <l n="1357" xml:id="l1357">Mais pour aimer le Roi, vous sentez-vous dans l'âme...</l>
           </sp>
-          <sp xml:id="IV03-16" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV03-16">
             <speaker>ARIANE.</speaker>
             <l n="1358" xml:id="l1358">Et le moyen, ma Soeur, qu'un autre Objet m'enflamme ?</l>
             <l n="1359" xml:id="l1359">Jamais, soit qu'on se trompe, ou réussisse au choix,</l>
@@ -2088,9 +2114,9 @@
             <l n="1368" xml:id="l1368">Que de mon artifice il ne soupçonne rien.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Ariane, Thésée, Phèdre, Nérine. </head>
-          <sp xml:id="IV04-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV04-1">
             <speaker>ARIANE.</speaker>
             <l n="1369" xml:id="l1369">Enfin à la raison mon courroux rend les armes ;</l>
             <l n="1370" xml:id="l1370">De l'Amour aisément on ne vainc pas les charmes.</l>
@@ -2112,11 +2138,11 @@
             <l n="1386" xml:id="l1386">C'est à vous de hâter le coup qui nous sépare.</l>
             <l n="1387" xml:id="l1387">Votre intérêt le veut encor plus que le mien.</l>
           </sp>
-          <sp xml:id="IV04-2" who="THESEE">
+          <sp who="THESEE" xml:id="IV04-2">
             <speaker>THÉSÉE.</speaker>
-            <l n="1388" xml:id="l1388" part="I">Madame, je n'ai pas...</l>
+            <l n="1388" part="I" xml:id="l1388">Madame, je n'ai pas...</l>
           </sp>
-          <sp xml:id="IV04-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="IV04-3">
             <speaker>ARIANE.</speaker>
             <l part="F">Ne me répliquez rien.</l>
             <l n="1389" xml:id="l1389">Si ma perte est un mal dont votre coeur soupire,</l>
@@ -2125,9 +2151,9 @@
             <l n="1392" xml:id="l1392">Saura ce qu'il vous reste encor à consulter.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Phèdre, Thésée. </head>
-          <sp xml:id="IV05-1" who="THESEE">
+          <sp who="THESEE" xml:id="IV05-1">
             <speaker>THÉSÉE.</speaker>
             <l n="1393" xml:id="l1393">Le Ciel à mon amour serait-il favorable,</l>
             <l n="1394" xml:id="l1394">Jusqu'à rendre sitôt Ariane exorable ?</l>
@@ -2135,7 +2161,7 @@
             <l n="1396" xml:id="l1396">Je pusse sans contrainte expliquez mes désirs,</l>
             <l n="1397" xml:id="l1397">Vous peindre en liberté ce que pour vous m'inspire...</l>
           </sp>
-          <sp xml:id="IV05-2" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV05-2">
             <speaker>PHÈDRE.</speaker>
             <l n="1398" xml:id="l1398">Renfermez-le, de grâce, et craignez d'en trop dire.</l>
             <l n="1399" xml:id="l1399">Vous voyez que j'observe, avant que vous parler,</l>
@@ -2159,7 +2185,7 @@
             <l n="1417" xml:id="l1417">Mon sang doit s'apprêter à laver son outrage.</l>
             <l n="1418" xml:id="l1418">Vous l'avez voulu, Prince, achevez votre ouvrage.</l>
           </sp>
-          <sp xml:id="IV05-3" who="THESEE">
+          <sp who="THESEE" xml:id="IV05-3">
             <speaker>THÉSÉE.</speaker>
             <l n="1419" xml:id="l1419">À quoi que son courroux puisse être disposé,</l>
             <l n="1420" xml:id="l1420">Il est pour s'en défendre un moyen bien aisé.</l>
@@ -2177,19 +2203,19 @@
             <l n="1432" xml:id="l1432">N'aura plus de prétexte à refuser le Roi.</l>
             <l n="1433" xml:id="l1433">Pour son propre intérêt il faut s'éloigner d'elle.</l>
           </sp>
-          <sp xml:id="IV05-4" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV05-4">
             <speaker>PHÈDRE.</speaker>
             <l n="1434" xml:id="l1434">Et qui me répondra que vous serez fidèle ?</l>
           </sp>
-          <sp xml:id="IV05-5" who="THESEE">
+          <sp who="THESEE" xml:id="IV05-5">
             <speaker>THÉSÉE.</speaker>
             <l n="1435" xml:id="l1435">Ma foi, que ni le temps, ni le Ciel en courroux...</l>
           </sp>
-          <sp xml:id="IV05-6" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV05-6">
             <speaker>PHÈDRE.</speaker>
             <l n="1436" xml:id="l1436">Ma Soeur l'avait reçue en fuyant avec vous.</l>
           </sp>
-          <sp xml:id="IV05-7" who="THESEE">
+          <sp who="THESEE" xml:id="IV05-7">
             <speaker>THÉSÉE.</speaker>
             <l n="1437" xml:id="l1437">L'emmener avec moi fut un coup nécessaire.</l>
             <l n="1438" xml:id="l1438">Il fallait la sauver de la fureur d'un Père,</l>
@@ -2212,25 +2238,25 @@
             <l n="1455" xml:id="l1455">Je songeais seulement à vous marquer ma foi,</l>
             <l n="1456" xml:id="l1456">Je me faisais entendre, et c'était tout pour moi.</l>
           </sp>
-          <sp xml:id="IV05-8" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV05-8">
             <speaker>PHÈDRE.</speaker>
             <l n="1457" xml:id="l1457">Dieux, qu'elle en souffrira ! Que d'ennuis ! Que de larmes !</l>
             <l n="1458" xml:id="l1458">J'en sens naître en mon coeur les plus rudes alarmes.</l>
             <l n="1459" xml:id="l1459">Il voit avec horreur ce qui doit arriver,</l>
             <l n="1460" xml:id="l1460">Cependant j'ai trop fait pour ne pas achever.</l>
             <l n="1461" xml:id="l1461">Ces foudroyants regards, ces accablants reproches,</l>
-            <l n="1462" xml:id="l1462">Dont par son désespoir  je vois les coups si proches,</l>
+            <l n="1462" xml:id="l1462">Dont par son désespoir je vois les coups si proches,</l>
             <l n="1463" xml:id="l1463">Pour moi, pour une Soeur, sont plus à redouter</l>
             <l n="1464" xml:id="l1464">Que cette triste mort qu'elle croit m'apprêter.</l>
             <l n="1465" xml:id="l1465">Elle a su votre amour, elle saura le reste.</l>
             <l n="1466" xml:id="l1466">De ses pleurs, de ses cris, fuyons l'éclat funeste,</l>
             <l n="1467" xml:id="l1467">Je vois bien qu'il le faut, mais las !</l>
           </sp>
-          <sp xml:id="IV05-9" who="THESEE">
+          <sp who="THESEE" xml:id="IV05-9">
             <speaker>THÉSÉE.</speaker>
-            <l n="1468" xml:id="l1468" part="I">Vous soupirez ?</l>
+            <l n="1468" part="I" xml:id="l1468">Vous soupirez ?</l>
           </sp>
-          <sp xml:id="IV05-10" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV05-10">
             <speaker>PHÈDRE.</speaker>
             <l part="F">Oui, Prince, je veux trop ce que vous désirez.</l>
             <l n="1469" xml:id="l1469">Elle se fie à moi cette Soeur, elle m'aime,</l>
@@ -2239,13 +2265,13 @@
             <l n="1472" xml:id="l1472">Pour l'en récompenser je lui vole son bien,</l>
             <l n="1473" xml:id="l1473">Je l'expose aux rigueurs du sort le plus sévère,</l>
             <l n="1474" xml:id="l1474">Je la tue, et c'est vous qui me le faites faire.</l>
-            <l n="1475" xml:id="l1475" part="I">Pourquoi vous ai-je aimé ?</l>
+            <l n="1475" part="I" xml:id="l1475">Pourquoi vous ai-je aimé ?</l>
           </sp>
-          <sp xml:id="IV05-11" who="THESEE">
+          <sp who="THESEE" xml:id="IV05-11">
             <speaker>THÉSÉE.</speaker>
             <l part="F">Vous en repentez-vous ?</l>
           </sp>
-          <sp xml:id="IV05-12" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV05-12">
             <speaker>PHÈDRE.</speaker>
             <l n="1476" xml:id="l1476">Je ne sais ; pour mon coeur il n'est rien de plus doux,</l>
             <l n="1477" xml:id="l1477">Mais vous le remarquez, ce coeur tremble, soupire,</l>
@@ -2256,11 +2282,11 @@
             <l n="1482" xml:id="l1482">Sur l'exemple éclatant d'Ariane trahie ?</l>
             <l n="1483" xml:id="l1483">Je l'aurai bien voulu, mais c'en est fait, partons.</l>
           </sp>
-          <sp xml:id="IV05-13" who="THESEE">
+          <sp who="THESEE" xml:id="IV05-13">
             <speaker>THÉSÉE.</speaker>
-            <l n="1484" xml:id="l1484" part="I">En vain...</l>
+            <l n="1484" part="I" xml:id="l1484">En vain...</l>
           </sp>
-          <sp xml:id="IV05-14" who="PHEDRE">
+          <sp who="PHEDRE" xml:id="IV05-14">
             <speaker>PHÈDRE.</speaker>
             <l part="F">Le temps se perd quand nous en consultons.</l>
             <l n="1485" xml:id="l1485">Si vous blâmez la crainte où ce soupçon me livre,</l>
@@ -2270,11 +2296,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Ariane, Nérine.</head>
-          <sp xml:id="V01-1" who="NERINE">
+          <sp who="NERINE" xml:id="V01-1">
             <speaker>NÉRINE.</speaker>
             <l n="1489" xml:id="l1489">Un peu plus de pouvoir, Madame, sur vous-même.</l>
             <l n="1490" xml:id="l1490">À quoi sert ce transport, ce désespoir extrême ?</l>
@@ -2284,7 +2310,7 @@
             <l n="1494" xml:id="l1494">Vous avez laissé voir la douleur qui vous tue.</l>
             <l n="1495" xml:id="l1495">Ce ne sont que soupirs, que larmes, que sanglots.</l>
           </sp>
-          <sp xml:id="V01-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="V01-2">
             <speaker>ARIANE.</speaker>
             <l n="1496" xml:id="l1496">On me trahit, Nérine, où trouver du repos ?</l>
             <l n="1497" xml:id="l1497">Quoi, ce parfait amour dont mon âme ravie</l>
@@ -2295,23 +2321,23 @@
             <l n="1502" xml:id="l1502">Ma mort n'est qu'un malheur qui ne vaut pas le craindre.</l>
             <l n="1503" xml:id="l1503">Et ce parjure Amant qui se rit de ma foi,</l>
             <l n="1504" xml:id="l1504">Quoi qu'il vive toujours, ne vivra plus pour moi ?</l>
-            <l n="1505" xml:id="l1505" part="I">Que fait Pirithoüs ? Viendra-t-il ?</l>
+            <l n="1505" part="I" xml:id="l1505">Que fait Pirithoüs ? Viendra-t-il ?</l>
           </sp>
-          <sp xml:id="V01-3" who="NERINE">
+          <sp who="NERINE" xml:id="V01-3">
             <speaker>NÉRINE.</speaker>
             <l part="F">Oui, Madame,</l>
-            <l n="1506" xml:id="l1506" part="I">Je l'ai fait avertir.</l>
+            <l n="1506" part="I" xml:id="l1506">Je l'ai fait avertir.</l>
           </sp>
-          <sp xml:id="V01-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="V01-4">
             <speaker>ARIANE.</speaker>
             <l part="F">Quels combats dans mon âme !</l>
           </sp>
-          <sp xml:id="V01-5" who="NERINE">
+          <sp who="NERINE" xml:id="V01-5">
             <speaker>NÉRINE.</speaker>
             <l n="1507" xml:id="l1507">Pirithoüs viendra ; mais ce transport jaloux</l>
             <l n="1508" xml:id="l1508">Qu'attend-il de sa vue, et que lui direz-vous ?</l>
           </sp>
-          <sp xml:id="V01-6" who="ARIANE">
+          <sp who="ARIANE" xml:id="V01-6">
             <speaker>ARIANE.</speaker>
             <l n="1509" xml:id="l1509">Dans l'excès étonnant de mon cruel martyre,</l>
             <l n="1510" xml:id="l1510">Hélas ! Demandes-tu ce que je pourrai dire ?</l>
@@ -2320,15 +2346,15 @@
             <l n="1513" xml:id="l1513">Tu dis donc qu'hier au soir chacun avec murmure</l>
             <l n="1514" xml:id="l1514">Parlait diversement de ma triste aventure ?</l>
             <l n="1515" xml:id="l1515">Que la jeune Cyane est celle que l'on croit</l>
-            <l n="1516" xml:id="l1516" part="I">Que Thésée...</l>
+            <l n="1516" part="I" xml:id="l1516">Que Thésée...</l>
           </sp>
-          <sp xml:id="V01-7" who="NERINE">
+          <sp who="NERINE" xml:id="V01-7">
             <speaker>NÉRINE.</speaker>
             <l part="F">On la nomme à cause qu'il la voit,</l>
             <l n="1517" xml:id="l1517">Mais qu'en pouvoir juger ? Il voit Phèdre de même,</l>
             <l n="1518" xml:id="l1518">Et cependant, Madame, est-ce Phèdre qu'il aime ?</l>
           </sp>
-          <sp xml:id="V01-8" who="ARIANE">
+          <sp who="ARIANE" xml:id="V01-8">
             <speaker>ARIANE.</speaker>
             <l n="1519" xml:id="l1519">Que n'a-t-il pu l'aimer ? Phèdre l'aurait connu,</l>
             <l n="1520" xml:id="l1520">Et par là mon malheur eût été prévenu.</l>
@@ -2336,13 +2362,13 @@
             <l n="1522" xml:id="l1522">Dans sa première ardeur je l'aurais amortie.</l>
             <l n="1523" xml:id="l1523">Par où vaincre d'ailleurs les rebuts de ma Soeur ?</l>
           </sp>
-          <sp xml:id="V01-9" who="NERINE">
+          <sp who="NERINE" xml:id="V01-9">
             <speaker>NÉRINE.</speaker>
             <l n="1524" xml:id="l1524">En vain il aurait cru pouvoir toucher son coeur,</l>
             <l n="1525" xml:id="l1525">Je le sais ; mais enfin quand un Amant sait plaire,</l>
             <l n="1526" xml:id="l1526">Qui consent à l'ouïr peut l'aimer, et se taire.</l>
           </sp>
-          <sp xml:id="V01-10" who="ARIANE">
+          <sp who="ARIANE" xml:id="V01-10">
             <speaker>ARIANE.</speaker>
             <l n="1527" xml:id="l1527">Je soupçonnerais Phèdre, elle de qui les pleurs</l>
             <l n="1528" xml:id="l1528">Semblaient en s'embarquant présager nos malheurs ?</l>
@@ -2350,13 +2376,13 @@
             <l n="1530" xml:id="l1530">À quoi pour la gagner ne fus-je pas réduite ?</l>
             <l n="1531" xml:id="l1531">Combien de résistance et d'obstinés refus ?</l>
           </sp>
-          <sp xml:id="V01-11" who="NERINE">
+          <sp who="NERINE" xml:id="V01-11">
             <speaker>NÉRINE.</speaker>
             <l n="1532" xml:id="l1532">Vous n'avez rien, Madame, à craindre là-dessus.</l>
             <l n="1533" xml:id="l1533">Je connais sa tendresse, elle est pour vous si forte,</l>
-            <l n="1534" xml:id="l1534" part="I">Qu'elle mourrait plutôt...</l>
+            <l n="1534" part="I" xml:id="l1534">Qu'elle mourrait plutôt...</l>
           </sp>
-          <sp xml:id="V01-12" who="ARIANE">
+          <sp who="ARIANE" xml:id="V01-12">
             <speaker>ARIANE.</speaker>
             <l part="F">Je veux la voir, n'importe.</l>
             <l n="1535" xml:id="l1535">Va, fais-lui promptement savoir que je l'attends.</l>
@@ -2367,23 +2393,23 @@
             <l n="1540" xml:id="l1540">Pirithoüs paraît, fais-la venir ici.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Ariane, Pirithoüs.</head>
-          <sp xml:id="V02-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="V02-1">
             <speaker>ARIANE.</speaker>
             <l n="1541" xml:id="l1541">Et bien ? Puis-je accepter la main qui m'est offerte ?</l>
             <l n="1542" xml:id="l1542">Le Roi sur s'empresse-t-il à réparer ma perte,</l>
             <l n="1543" xml:id="l1543">Et pour me laisser libre à payer son amour,</l>
             <l n="1544" xml:id="l1544">De l'hymen de Thésée a-t-il choisi le jour ?</l>
           </sp>
-          <sp xml:id="V02-2" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V02-2">
             <speaker>PIRITHOÜS.</speaker>
             <l n="1545" xml:id="l1545">Le Roi sur ce projet entretint hier Thésée,</l>
             <l n="1546" xml:id="l1546">Mais il trouva son âme encor mal disposée.</l>
             <l n="1547" xml:id="l1547">Il est pour les Ingrats de rigoureux instants,</l>
             <l n="1548" xml:id="l1548">Thésée en fit l'épreuve, et demanda du temps.</l>
           </sp>
-          <sp xml:id="V02-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="V02-3">
             <speaker>ARIANE.</speaker>
             <l n="1549" xml:id="l1549">Différer d'être heureux après son inconstance,</l>
             <l n="1550" xml:id="l1550">C'est montrer en aimant bien peu d'impatience ;</l>
@@ -2395,42 +2421,42 @@
             <l n="1556" xml:id="l1556">Eût pu déjà fixer mon destin incertain.</l>
             <l n="1557" xml:id="l1557">L'irrésolution m'embarrasse et me gêne.</l>
           </sp>
-          <sp xml:id="V02-4" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V02-4">
             <speaker>PIRITHOÜS.</speaker>
             <l n="1558" xml:id="l1558">Si l'on m'avait dit vrai, vous seriez hors de peine ;</l>
             <l n="1559" xml:id="l1559">Mais, Madame, je puis être mal averti.</l>
           </sp>
-          <sp xml:id="V02-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="V02-5">
             <speaker>ARIANE.</speaker>
-            <l n="1560" xml:id="l1560" part="I">Et de quoi, Prince ?</l>
+            <l n="1560" part="I" xml:id="l1560">Et de quoi, Prince ?</l>
           </sp>
-          <sp xml:id="V02-6" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V02-6">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">On dit que Thésée est parti.</l>
-            <l n="1561" xml:id="l1561" part="I">Par là vous seriez libre.</l>
+            <l n="1561" part="I" xml:id="l1561">Par là vous seriez libre.</l>
           </sp>
-          <sp xml:id="V02-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="V02-7">
             <speaker>ARIANE.</speaker>
             <l part="F">Ah, que viens-je d'entendre ?</l>
-            <l n="1562" xml:id="l1562" part="I">Il est parti, dit-on ?</l>
+            <l n="1562" part="I" xml:id="l1562">Il est parti, dit-on ?</l>
           </sp>
-          <sp xml:id="V02-8" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V02-8">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Ce bruit doit vous surprendre.</l>
           </sp>
-          <sp xml:id="V02-9" who="ARIANE">
+          <sp who="ARIANE" xml:id="V02-9">
             <speaker>ARIANE.</speaker>
             <l n="1563" xml:id="l1563">Il est parti ! Le Ciel me trahirait toujours !</l>
             <l n="1564" xml:id="l1564">Mais non ; que deviendraient ses nouvelles amours ?</l>
             <l n="1565" xml:id="l1565">Ferait-il cet outrage à l'Objet qui l'enflamme ?</l>
-            <l n="1566" xml:id="l1566" part="I">L'abandonnerait-il ?</l>
+            <l n="1566" part="I" xml:id="l1566">L'abandonnerait-il ?</l>
           </sp>
-          <sp xml:id="V02-10" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V02-10">
             <speaker>PIRITHOÜS.</speaker>
             <l part="F">Je ne sais ; mais, Madame,</l>
             <l n="1567" xml:id="l1567">Un vaisseau cette nuit s'est échappé du Port.</l>
           </sp>
-          <sp xml:id="V02-11" who="ARIANE">
+          <sp who="ARIANE" xml:id="V02-11">
             <speaker>ARIANE.</speaker>
             <l n="1568" xml:id="l1568">Ce n'est pas lui sans doute, on le soupçonne à tort.</l>
             <l n="1569" xml:id="l1569">Peut-être est-il parti sans que le Roi le sache ?</l>
@@ -2438,46 +2464,46 @@
             <l n="1571" xml:id="l1571">Sans qu'enfin... Mais de quoi me voudrais-je étonner ?</l>
             <l n="1572" xml:id="l1572">Que ne peut-il faire ? Il m'ose abandonner,</l>
             <l n="1573" xml:id="l1573">Oublier un amour, qui toujours trop fidèle</l>
-            <l n="1574" xml:id="l1574" part="I">M'oblige encor pour lui...</l>
+            <l n="1574" part="I" xml:id="l1574">M'oblige encor pour lui...</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Ariane, Pirithoüs, Nérine.</head>
-          <sp xml:id="V03-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="V03-1">
             <speaker>ARIANE, à Nérine.</speaker>
             <l part="F">Que fait ma Soeur ? Vient-elle ?</l>
             <l n="1575" xml:id="l1575">Avec quelle surprise elle va recevoir</l>
             <l n="1576" xml:id="l1576">La nouvelle d'un coup qui confond mon espoir !</l>
             <l n="1577" xml:id="l1577">D'un coup par qui ma haine à languir est forcée !</l>
           </sp>
-          <sp xml:id="V03-2" who="NERINE">
+          <sp who="NERINE" xml:id="V03-2">
             <speaker>NÉRINE.</speaker>
-            <l n="1578" xml:id="l1578" part="I">Madame, j'ai longtemps...</l>
+            <l n="1578" part="I" xml:id="l1578">Madame, j'ai longtemps...</l>
           </sp>
-          <sp xml:id="V03-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="V03-3">
             <speaker>ARIANE.</speaker>
             <l part="F">Où l'as-tu donc laissé ?</l>
-            <l n="1579" xml:id="l1579" part="I">Parle.</l>
+            <l n="1579" part="I" xml:id="l1579">Parle.</l>
           </sp>
-          <sp xml:id="V03-4" who="NERINE">
+          <sp who="NERINE" xml:id="V03-4">
             <speaker>NÉRINE.</speaker>
             <l part="F">De tous côtés j'ai couru vainement,</l>
             <l n="1580" xml:id="l1580">On ne la trouve point dans son appartement.</l>
           </sp>
-          <sp xml:id="V03-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="V03-5">
             <speaker>ARIANE.</speaker>
             <l n="1581" xml:id="l1581">On ne la trouve point ! Quoi, si matin ! Je tremble</l>
             <l n="1582" xml:id="l1582">Tant de maux à mes yeux viennent s'offrir ensemble,</l>
             <l n="1583" xml:id="l1583">Que stupide, égarée, en ce trouble importun,</l>
             <l n="1584" xml:id="l1584">De crainte d'en trop voir, je n'en regarde aucun.</l>
-            <l n="1585" xml:id="l1585" part="I">N'as-tu rien ouï dire ?</l>
+            <l n="1585" part="I" xml:id="l1585">N'as-tu rien ouï dire ?</l>
           </sp>
-          <sp xml:id="V03-6" who="NERINE">
+          <sp who="NERINE" xml:id="V03-6">
             <speaker>NÉRINE.</speaker>
             <l part="F">On parle de Thésée.</l>
             <l n="1586" xml:id="l1586">On veut que cette nuit voyant la fuite aisée...</l>
           </sp>
-          <sp xml:id="V03-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="V03-7">
             <speaker>ARIANE.</speaker>
             <l n="1587" xml:id="l1587">Ô nuit ! Ô trahison dont la double noirceur</l>
             <l n="1588" xml:id="l1588">Passe tout... Mais pourquoi m'alarmer de ma Soeur ?</l>
@@ -2492,28 +2518,28 @@
             <l n="1597" xml:id="l1597">La moindre inquiétude est trop tard apaisée.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. Ariane, Pirithoüs, Arcas, Nérine</head>
-          <sp xml:id="V04-1" who="ARCAS">
+          <sp who="ARCAS" xml:id="V04-1">
             <speaker>ARCAS, à Pirithoüs.</speaker>
             <l n="1598" xml:id="l1598">Seigneur, je vous apporte un Billet de Thésée.</l>
           </sp>
-          <sp xml:id="V04-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="V04-2">
             <speaker>ARIANE.</speaker>
             <l n="1599" xml:id="l1599">Donnez, je le verrai. Par qui l'a-t-on reçu ?</l>
             <l n="1600" xml:id="l1600">D'où l'a-t-on envoyé ? Qu'a-t-on fait ? Qu'a-t-on su ?</l>
             <l n="1601" xml:id="l1601">Il est parti, Nérine. Ah, trop funeste marque !</l>
           </sp>
-          <sp xml:id="V04-3" who="ARCAS">
+          <sp who="ARCAS" xml:id="V04-3">
             <speaker>ARCAS.</speaker>
             <l n="1602" xml:id="l1602">On vient de voir au Port arriver une Barque.</l>
             <l n="1603" xml:id="l1603">C'est de là qu'est venu le Billet que voici.</l>
           </sp>
-          <sp xml:id="V04-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="V04-4">
             <speaker>ARIANE.</speaker>
             <l n="1604" xml:id="l1604">Lisons, mon amour tremble à se voir éclairci.</l>
           </sp>
-          <sp xml:id="V04-5" who="THESEE">
+          <sp who="THESEE" xml:id="V04-5">
             <speaker>THÉSÉE, à Pirithoüs.</speaker>
             <l n="1605" xml:id="l1605">Pardonnez une fuite où l'Amour me condamne ;</l>
             <l n="1606" xml:id="l1606">Je pars sans vous en avertir.</l>
@@ -2522,50 +2548,50 @@
             <l n="1609" xml:id="l1609">Prenez soin d'Ariane ! Il viole sa foi,</l>
             <l n="1610" xml:id="l1610">Ma désespère, et veut qu'on prenne soin de moi.</l>
           </sp>
-          <sp xml:id="V04-6" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V04-6">
             <speaker>PIRITHOÜS.</speaker>
             <l n="1611" xml:id="l1611">Madame, en vos malheurs qui font peine à comprendre...</l>
           </sp>
-          <sp xml:id="V04-7" who="ARIANE">
+          <sp who="ARIANE" xml:id="V04-7">
             <speaker>ARIANE.</speaker>
             <l n="1612" xml:id="l1612">Laissez-moi, je ne veux vous voir, ni vous entendre.</l>
             <l n="1613" xml:id="l1613">C'est vous, Pirithoüs, dont le funeste abord,</l>
             <l n="1614" xml:id="l1614">Toujours fatal pour moi, précipite ma mort.</l>
           </sp>
-          <sp xml:id="V04-8" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V04-8">
             <speaker>PIRITHOÜS.</speaker>
-            <l n="1615" xml:id="l1615" part="I">J'ignore...</l>
+            <l n="1615" part="I" xml:id="l1615">J'ignore...</l>
           </sp>
-          <sp xml:id="V04-9" who="ARIANE">
+          <sp who="ARIANE" xml:id="V04-9">
             <speaker>ARIANE.</speaker>
             <l part="F">Allez au Roi porter cette nouvelle.</l>
             <l n="1616" xml:id="l1616">Nérine me demeure, il me suffira d'elle.</l>
           </sp>
-          <sp xml:id="V04-10" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V04-10">
             <speaker>PIRITHOÜS.</speaker>
             <l n="1617" xml:id="l1617">D'un départ si secret le Roi sera surpris.</l>
           </sp>
-          <sp xml:id="V04-11" who="ARIANE">
+          <sp who="ARIANE" xml:id="V04-11">
             <speaker>ARIANE.</speaker>
             <l n="1618" xml:id="l1618">Sans son ordre Thésée eût-il rien entrepris ?</l>
             <l n="1619" xml:id="l1619">Son aveu l'autorise, et de ses injustices</l>
             <l n="1620" xml:id="l1620">Le Roi, vous, et les Dieux, vous êtes tous complices.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. Ariane, Nérine.</head>
-          <sp xml:id="V05-1" who="ARIANE">
+          <sp who="ARIANE" xml:id="V05-1">
             <speaker>ARIANE.</speaker>
-            <l n="1621" xml:id="l1621" part="I">Ah, Nérine !</l>
+            <l n="1621" part="I" xml:id="l1621">Ah, Nérine !</l>
           </sp>
-          <sp xml:id="V05-2" who="NERINE">
+          <sp who="NERINE" xml:id="V05-2">
             <speaker>NÉRINE.</speaker>
             <l part="F">Madame, après ce que je vois,</l>
             <l n="1622" xml:id="l1622">Je l'avoue, il n'est plus ni d'honneur, ni de foi.</l>
             <l n="1623" xml:id="l1623">Sur les plus saints devoirs l'Injustice l'emporte.</l>
-            <l n="1624" xml:id="l1624" part="I">Que de chagrins !</l>
+            <l n="1624" part="I" xml:id="l1624">Que de chagrins !</l>
           </sp>
-          <sp xml:id="V05-3" who="ARIANE">
+          <sp who="ARIANE" xml:id="V05-3">
             <speaker>ARIANE.</speaker>
             <l part="F">Tu vois, ma douleur est si forte,</l>
             <l n="1625" xml:id="l1625">Que succombant aux maux qu'on me fait découvrir,</l>
@@ -2608,13 +2634,13 @@
             <l n="1662" xml:id="l1662">Elle n'est pas encor où son espoir la met.</l>
             <l n="1663" xml:id="l1663">Sa mort, sa seule mort, mais une mort cruelle...</l>
           </sp>
-          <sp xml:id="V05-4" who="NERINE">
+          <sp who="NERINE" xml:id="V05-4">
             <speaker>NÉRINE.</speaker>
             <l n="1664" xml:id="l1664">Calmez cette douleur, où vous emporte-t-elle ?</l>
             <l n="1665" xml:id="l1665">Madame, songez-vous que tous ces vains projets</l>
             <l n="1666" xml:id="l1666">Par l'éclat de vos cris s'entendent au Palais ?</l>
           </sp>
-          <sp xml:id="V05-5" who="ARIANE">
+          <sp who="ARIANE" xml:id="V05-5">
             <speaker>ARIANE.</speaker>
             <l n="1667" xml:id="l1667">Qu'importe que partout mes plaintes soient ouïes !</l>
             <l n="1668" xml:id="l1668">On connaît, on a vu des Amantes trahies,</l>
@@ -2654,36 +2680,36 @@
             <l n="1702" xml:id="l1702">Je souffre plus encor qu'elle ne peut punir.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI. OEnarus, Ariane, Pirithoüs, Nérine, Arcas. </head>
-          <sp xml:id="V06-1" who="OENARUS">
+          <sp who="OENARUS" xml:id="V06-1">
             <speaker>OENARUS.</speaker>
             <l n="1703" xml:id="l1703">Je ne viens point, Madame, opposer à vos plaintes,</l>
             <l n="1704" xml:id="l1704">De faux raisonnements, ou d'injustes contraintes ;</l>
             <l n="1705" xml:id="l1705">Je viens vous protester que tout ce qu'en ma Cour...</l>
           </sp>
-          <sp xml:id="V06-2" who="ARIANE">
+          <sp who="ARIANE" xml:id="V06-2">
             <speaker>ARIANE.</speaker>
             <l n="1706" xml:id="l1706">Je sais ce que je dois, Seigneur, à votre amour.</l>
             <l n="1707" xml:id="l1707">Je connais même à quoi ma parole m'engage ;</l>
-            <l n="1708" xml:id="l1708" part="I">Mais...</l>
+            <l n="1708" part="I" xml:id="l1708">Mais...</l>
           </sp>
-          <sp xml:id="V06-3" who="OENARUS">
+          <sp who="OENARUS" xml:id="V06-3">
             <speaker>OENARUS.</speaker>
             <l part="F">À vos déplaisirs épargnons cette image,</l>
-            <l n="1709" xml:id="l1709" part="I">Vous répondriez mal d'un coeur...</l>
+            <l n="1709" part="I" xml:id="l1709">Vous répondriez mal d'un coeur...</l>
           </sp>
-          <sp xml:id="V06-4" who="ARIANE">
+          <sp who="ARIANE" xml:id="V06-4">
             <speaker>ARIANE.</speaker>
             <l part="F">Comment, hélas !</l>
             <l n="1710" xml:id="l1710">Répondrais-je de moi ? Je ne me connais pas.</l>
           </sp>
-          <sp xml:id="V06-5" who="OENARUS">
+          <sp who="OENARUS" xml:id="V06-5">
             <speaker>OENARUS.</speaker>
             <l n="1711" xml:id="l1711">Si du secours du temps ma foi favorisée</l>
             <l n="1712" xml:id="l1712">Pour mériter qu'un jour vous oubliiez Thésée...</l>
           </sp>
-          <sp xml:id="V06-6" who="ARIANE">
+          <sp who="ARIANE" xml:id="V06-6">
             <speaker>ARIANE.</speaker>
             <l n="1713" xml:id="l1713">Si j'oubliais Thésée ? Ah Dieux, mon lâche coeur</l>
             <l n="1714" xml:id="l1714">Nourrirait pour Thésée une honteuse ardeur !</l>
@@ -2696,11 +2722,11 @@
             <l n="1721" xml:id="l1721">Que j'oublierai Thésée, et que pour m'émouvoir,</l>
             <l n="1722" xml:id="l1722">Remords, larmes, soupirs, manqueront de pouvoir.</l>
           </sp>
-          <sp xml:id="V06-7" who="PIRITHOUS">
+          <sp who="PIRITHOUS" xml:id="V06-7">
             <speaker>PIRITHOÜS.</speaker>
-            <l n="1723" xml:id="l1723" part="I">Madame, si j'osais...</l>
+            <l n="1723" part="I" xml:id="l1723">Madame, si j'osais...</l>
           </sp>
-          <sp xml:id="V06-8" who="ARIANE">
+          <sp who="ARIANE" xml:id="V06-8">
             <speaker>ARIANE.</speaker>
             <l part="F">Non, parjure Thésée,</l>
             <l n="1724" xml:id="l1724">Ne crois pas que jamais je puisse être apaisée.</l>
@@ -2723,30 +2749,30 @@
             <l n="1741" xml:id="l1741">Par ce terrible éclat signalez ce grand jour,</l>
             <l n="1742" xml:id="l1742">Et méritez ma main en vengeant mon amour.</l>
           </sp>
-          <sp xml:id="V06-9" who="OENARUS">
+          <sp who="OENARUS" xml:id="V06-9">
             <speaker>OENARUS.</speaker>
             <l n="1743" xml:id="l1743">Consultons-en le temps, Madame, et s'il faut faire...</l>
           </sp>
-          <sp xml:id="V06-10" who="ARIANE">
+          <sp who="ARIANE" xml:id="V06-10">
             <speaker>ARIANE.</speaker>
             <l n="1744" xml:id="l1744">Le temps ! Mon désespoir souffre-t-il qu'on diffère ?</l>
             <l n="1745" xml:id="l1745">Puisque tout m'abandonne, il est pour mon secours</l>
             <l n="1746" xml:id="l1746">Une plus sûre voie, et des moyens plus courts.</l>
-            <l n="1747" xml:id="l1747" part="I">Tu m'arrêtes, cruel ?</l>
-            <stage type="[N/A]">Elle se jette sur l'épée de Pirithoüs.</stage>
+            <l n="1747" part="I" xml:id="l1747">Tu m'arrêtes, cruel ?</l>
+            <stage>Elle se jette sur l'épée de Pirithoüs.</stage>
           </sp>
-          <sp xml:id="V06-11" who="NERINE">
+          <sp who="NERINE" xml:id="V06-11">
             <speaker>NÉRINE.</speaker>
             <l part="F">Que faites-vous, Madame ?</l>
           </sp>
-          <sp xml:id="V06-12" who="ARIANE">
+          <sp who="ARIANE" xml:id="V06-12">
             <speaker>ARIANE, à Nérine.</speaker>
             <note type="L">Transports : se dit aussi figurémment en choses morales, du trouble, ou de l'agitation de l'âme par la violence des passions. [F]</note>
             <l n="1748" xml:id="l1748">Soutiens-moi, je succombe aux transports de mon âme.</l>
             <l n="1749" xml:id="l1749">Si dans mes déplaisirs tu veux me secourir,</l>
             <l n="1750" xml:id="l1750">Ajoute à ma faiblesse, et me laisse mourir.</l>
           </sp>
-          <sp xml:id="V06-13" who="OENARUS">
+          <sp who="OENARUS" xml:id="V06-13">
             <speaker>OENARUS.</speaker>
             <l n="1751" xml:id="l1751">Elle semble pâmer. Qu'on la secoure, vite.</l>
             <l n="1752" xml:id="l1752">Sa douleur est un mal qu'un prompt remède irrite ;</l>

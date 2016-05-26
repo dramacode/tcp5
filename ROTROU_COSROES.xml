@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>COSROËS, TRAGÉDIE.</title>
-        <author born="1609" born_location="Dreux" death="1650" death_location="Dreux" academie="">ROTROU, Jean</author>
+        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)">ROTROU, Jean</author>
         <date>1649</date>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <authority>publié par Ernest FIEVRE, mars 2007</authority>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -33,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -45,11 +46,11 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1649">M. DC. XXXXIX</docDate>
-      <docAuthor id="ROTROU, Jean" bio="rotrou">PAR Mr DE ROTROU </docAuthor>
+      <docAuthor bio="rotrou" id="ROTROU, Jean">PAR Mr DE ROTROU </docAuthor>
       <docImprint>
         <privilege id="1649-09-27">
           <head>AVEC PRIVILEGE DU ROI.</head>
-          <p>Extrait du Privilège du Roi. Par Grâce et Privilège du Roi, en date du 27 septembre 1649. signées, Par le Roi en son Conseil, E N, Il est permis à ANTOINE DE SOMMAVILLE, Marchand Libraire à Paris, d'Imprimer ou faire Imprimer, vendre et débiter COSROES TRAGÉDIE de Monsieur de ROTROU, et ce pendant l'espace de cinq ans, à compter du jour qu'elle sera achevée d'Imprimer. Et  défenses sont faites à tous autres de l'Imprimer, sur peine d'amende et de confiscation des exemplaires ; ainsi qu'il est plus amplement porté par les dites Lettres de Privilège.</p>
+          <p>Extrait du Privilège du Roi. Par Grâce et Privilège du Roi, en date du 27 septembre 1649. signées, Par le Roi en son Conseil, E N, Il est permis à ANTOINE DE SOMMAVILLE, Marchand Libraire à Paris, d'Imprimer ou faire Imprimer, vendre et débiter COSROES TRAGÉDIE de Monsieur de ROTROU, et ce pendant l'espace de cinq ans, à compter du jour qu'elle sera achevée d'Imprimer. Et défenses sont faites à tous autres de l'Imprimer, sur peine d'amende et de confiscation des exemplaires ; ainsi qu'il est plus amplement porté par les dites Lettres de Privilège.</p>
         </privilege>
         <imprimeur id="SOMMAVILLE">À PARIS, Chez ANTHOINE DE SOMMAVILLE, Au Palais, en la petite Salle des Merciers, à l'Écu de France.</imprimeur>
         <acheveImprime id="1649-12-01"> Achevé d'Imprimer le premier jour de Décembre, mil six cent quarante-neuf. </acheveImprime>
@@ -59,56 +60,56 @@
       </performance>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="COSROES" id="COSROES" sex="1">COSROËS</role>, roi de Perse.</castItem>
-        <castItem><role xml:id="SYRA" id="SYRA" sex="2">SYRA</role>, reine de Perse.</castItem>
-        <castItem><role xml:id="SYROES" id="SYROES" sex="1">SYROËS</role>, fils du Roi de Perse.</castItem>
-        <castItem><role xml:id="NARSEE" id="NARSEE" sex="2">NARSÉE</role>, femme de Syroës.</castItem>
-        <castItem><role xml:id="MARDESANE" id="MARDESANE" sex="1">MARDESANE</role>, fils de Cosroës et de Syra.</castItem>
-        <castItem><role xml:id="SARDARIGUE" id="SARDARIGUE" sex="1">SARDARIGUE</role>, père de Narsée.</castItem>
-        <castItem><role xml:id="PALMYRAS" id="PALMYRAS" sex="1">PALMYRAS</role>.</castItem>
-        <castItem><role xml:id="PHARNACE" id="PHARNACE" sex="1">PHARNACE</role>.</castItem>
-        <castItem><role xml:id="SATRAPES" id="SATRAPES" sex="9">SATRAPES</role>.</castItem>
-        <castItem><role xml:id="GARDES" id="GARDES" sex="9">GARDES</role>.</castItem>
+        <castItem><role civil="M" id="COSROES" rend="male" xml:id="COSROES">COSROËS</role>, roi de Perse.</castItem>
+        <castItem><role civil="F" id="SYRA" rend="female" xml:id="SYRA">SYRA</role>, reine de Perse.<role xml:id="HORMISDATE" n="HORMISDATE"/></castItem>
+        <castItem><role civil="M" id="SYROES" rend="male" xml:id="SYROES">SYROËS</role>, fils du Roi de Perse.<role xml:id="ARTANASDE" n="ARTANASDE"/></castItem>
+        <castItem><role civil="F" id="NARSEE" rend="female" xml:id="NARSEE">NARSÉE</role>, femme de Syroës.</castItem>
+        <castItem><role civil="M" id="MARDESANE" rend="male" xml:id="MARDESANE">MARDESANE</role>, fils de Cosroës et de Syra.</castItem>
+        <castItem><role civil="M" id="SARDARIGUE" rend="male" xml:id="SARDARIGUE">SARDARIGUE</role>, père de Narsée.</castItem>
+        <castItem><role civil="M" id="PALMYRAS" rend="male" xml:id="PALMYRAS">PALMYRAS</role>.</castItem>
+        <castItem><role civil="M" id="PHARNACE" rend="male" xml:id="PHARNACE">PHARNACE</role>.</castItem>
+        <castItem><role civil="G" id="SATRAPES" rend="group" xml:id="SATRAPES">SATRAPES</role>.</castItem>
+        <castItem><role civil="G" id="GARDES" rend="group" xml:id="GARDES">GARDES</role>.</castItem>
       </castList>
-      <set location="Ctésiphon" country="Irak" periode="VIème" link="">La scène est au Palais du Roi de Perse.</set>
+      <set country="Irak" link="" location="Ctésiphon" periode="VIème">La scène est au Palais du Roi de Perse.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Syra, Syroës. </head>
-          <sp xml:id="I01-1" who="SYRA">
+          <sp who="SYRA" xml:id="I01-1">
             <speaker>SYRA</speaker>
             <l n="1" xml:id="l1">Quoi ! vous, contre mon fils ! vous, son indigne frère !</l>
-            <l n="2" xml:id="l2" part="I">Vous insolent !</l>
+            <l n="2" part="I" xml:id="l2">Vous insolent !</l>
           </sp>
-          <sp xml:id="I01-2" who="SYROES">
+          <sp who="SYROES" xml:id="I01-2">
             <speaker>SYROËS</speaker>
             <l part="F">Madame, un peu moins de colère !</l>
           </sp>
-          <sp xml:id="I01-3" who="SYRA">
+          <sp who="SYRA" xml:id="I01-3">
             <speaker>SYRA</speaker>
             <l n="3" xml:id="l3">Et me comprendre, encor, dans votre différend !</l>
           </sp>
-          <sp xml:id="I01-4" who="SYROES">
+          <sp who="SYROES" xml:id="I01-4">
             <speaker>SYROËS</speaker>
             <l n="4" xml:id="l4">Je vous honore en Reine, et l'estime en parent.</l>
             <l n="5" xml:id="l5">Mais, s'il forge un fantôme, afin de le combattre...</l>
           </sp>
-          <sp xml:id="I01-5" who="SYRA">
+          <sp who="SYRA" xml:id="I01-5">
             <speaker>SYRA</speaker>
-            <l n="6" xml:id="l6" part="I">Je saurai bien, perfide.</l>
+            <l n="6" part="I" xml:id="l6">Je saurai bien, perfide.</l>
           </sp>
-          <sp xml:id="I01-6" who="SYROES">
+          <sp who="SYROES" xml:id="I01-6">
             <speaker>SYROËS</speaker>
             <l part="F">Ha ! Cruelle marâtre !</l>
           </sp>
-          <sp xml:id="I01-7" who="SYRA">
+          <sp who="SYRA" xml:id="I01-7">
             <speaker>SYRA</speaker>
             <l n="7" xml:id="l7">À qui lui déplaira, faire perdre le jour,</l>
             <l n="8" xml:id="l8">Et contre qui le hait, lui montrer mon amour.</l>
           </sp>
-          <sp xml:id="I01-8" who="SYROES">
+          <sp who="SYROES" xml:id="I01-8">
             <speaker>SYROËS</speaker>
             <l n="9" xml:id="l9">Madame, quand le sang, qui me le rang si proche,</l>
             <l n="10" xml:id="l10">Ne me laverait pas, d'un semblable reproche ;</l>
@@ -119,11 +120,11 @@
             <l n="15" xml:id="l15">De ces raisons aussi, me faisant une loi,</l>
             <l n="16" xml:id="l16">J'ai pour lui le respect, qu'il dut avoir pour moi.</l>
           </sp>
-          <sp xml:id="I01-9" who="SYRA">
+          <sp who="SYRA" xml:id="I01-9">
             <speaker>SYRA</speaker>
-            <l n="17" xml:id="l17" part="I">Lui, pour vous !</l>
+            <l n="17" part="I" xml:id="l17">Lui, pour vous !</l>
           </sp>
-          <sp xml:id="I01-10" who="SYROES">
+          <sp who="SYROES" xml:id="I01-10">
             <speaker>SYROËS</speaker>
             <l part="F">Oui, pour moi ! L'humeur, où je me trouve,</l>
             <l n="18" xml:id="l18">Fait de ma patience, une trop rude épreuve ;</l>
@@ -137,11 +138,11 @@
             <l n="26" xml:id="l26">Pour devoir l'obliger à quelque déférence,</l>
             <l n="27" xml:id="l27">Mais, Madame, cessons, cet indigne entretien.</l>
           </sp>
-          <sp xml:id="I01-11" who="SYRA">
+          <sp who="SYRA" xml:id="I01-11">
             <speaker>SYRA</speaker>
             <l n="28" xml:id="l28">Comparez-vous le sang d'Abdenede, et le mien !</l>
           </sp>
-          <sp xml:id="I01-12" who="SYROES">
+          <sp who="SYROES" xml:id="I01-12">
             <speaker>SYROËS</speaker>
             <l n="29" xml:id="l29">Je sais, que sa naissance, à la vôtre inégale,</l>
             <l n="30" xml:id="l30">Ne se peut pas vanter, d'une tige Royale ;</l>
@@ -152,7 +153,7 @@
             <l n="35" xml:id="l35">Et cet honneur, sans doute, est le plus glorieux,</l>
             <l n="36" xml:id="l36">Qui sur vous, aujourd'hui, fasse jeter les yeux.</l>
           </sp>
-          <sp xml:id="I01-13" who="SYRA">
+          <sp who="SYRA" xml:id="I01-13">
             <speaker>SYRA</speaker>
             <l n="37" xml:id="l37">Quand il m'a partagé, l'éclat qui l'environne,</l>
             <l n="38" xml:id="l38">J'ai dans son alliance, apporté ma Couronne ;</l>
@@ -162,26 +163,26 @@
             <l n="42" xml:id="l42">Abdenede, avec lui, n'apporta qu'elle-même ;</l>
             <l n="43" xml:id="l43">Et le trésor, encor, n'était pas de grand prix.</l>
           </sp>
-          <sp xml:id="I01-14" who="SYROES">
+          <sp who="SYROES" xml:id="I01-14">
             <speaker>SYROËS</speaker>
             <l n="44" xml:id="l44">Il faut bien du respect, à souffrir vos mépris !</l>
           </sp>
-          <sp xml:id="I01-15" who="SYRA">
+          <sp who="SYRA" xml:id="I01-15">
             <speaker>SYRA</speaker>
             <l n="45" xml:id="l45">Vous vous plaindrez, encor, après votre insolence !</l>
           </sp>
-          <sp xml:id="I01-16" who="SYROES">
+          <sp who="SYROES" xml:id="I01-16">
             <speaker>SYROËS</speaker>
             <l n="46" xml:id="l46">Vous ne sauriez parler, qu'avecques violence !</l>
             <l n="47" xml:id="l47">Cette fureur, sied mal, au rang que vous tenez.</l>
           </sp>
-          <sp xml:id="I01-17" who="SYRA">
+          <sp who="SYRA" xml:id="I01-17">
             <speaker>SYRA</speaker>
             <l n="48" xml:id="l48">Il sied bien, de ranger, des esprits mutinés ;</l>
             <l n="49" xml:id="l49">J'ai raison de venger, mon sang, de vos outrages ;</l>
             <l n="50" xml:id="l50">Et gardez, de me faire, éclaircir vos ombrages.</l>
           </sp>
-          <sp xml:id="I01-18" who="SYROES">
+          <sp who="SYROES" xml:id="I01-18">
             <speaker>SYROËS</speaker>
             <l n="51" xml:id="l51">Je sais, qu'il ne tient pas, à choquer mon crédit</l>
             <l n="52" xml:id="l52">Que l'espoir de l'État, ne me soit interdit.</l>
@@ -202,67 +203,67 @@
             <l n="67" xml:id="l67">Le crime lui plairait, mais la punition</l>
             <l n="68" xml:id="l68">Lui fait fermer l'oreille, à votre ambition.</l>
           </sp>
-          <sp xml:id="I01-19" who="SYRA">
+          <sp who="SYRA" xml:id="I01-19">
             <speaker>SYRA</speaker>
             <l n="69" xml:id="l69">C'est bien vous déclarer, et nous jurer la guerre,</l>
             <l n="70" xml:id="l70">Que de nous menacer, du Ciel et de la terre,</l>
             <l n="71" xml:id="l71">Nous verrons, quel effet, nous en succédera ;</l>
             <l n="72" xml:id="l72">Mais, je périrai, traître, ou mon fils régnera.</l>
-            <stage type="exit">S'en allant, elle rencontre Mardesane et s'arrête.</stage>
+            <stage>S'en allant, elle rencontre Mardesane et s'arrête.</stage>
           </sp>
-          <sp xml:id="I01-20" who="SYROES">
+          <sp who="SYROES" xml:id="I01-20">
             <speaker>SYROËS touchant son épée, dit hautement.</speaker>
             <l n="73" xml:id="l73">Il faut donc, que ce fer, me devienne inutile,</l>
             <l n="74" xml:id="l74">Ce coeur, sans sentiment, et ce bras immobile.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Mardesane, Syroës, Syra.</head>
-          <sp xml:id="I02-1" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-1">
             <speaker>MARDESANE avec le bâton de Général d'armée.</speaker>
             <l n="75" xml:id="l75">Quel trouble, Syroës, émeut votre courroux !</l>
             <l n="76" xml:id="l76">Quoi ? La main sur l'épée ! Et la Reine avec vous !</l>
-            <l n="77" xml:id="l77" part="I">Dieux !</l>
+            <l n="77" part="I" xml:id="l77">Dieux !</l>
           </sp>
-          <sp xml:id="I02-2" who="SYROES">
+          <sp who="SYROES" xml:id="I02-2">
             <speaker>SYROËS</speaker>
             <l part="F">J'y portais la main, mais sans aucune envie,</l>
-            <l n="78" xml:id="l78" part="I">Que...</l>
+            <l n="78" part="I" xml:id="l78">Que...</l>
           </sp>
-          <sp xml:id="I02-3" who="SYRA">
+          <sp who="SYRA" xml:id="I02-3">
             <speaker>SYRA s'en allant furieuse.</speaker>
             <l n="79" xml:id="l79">Que de, simplement, attenter sur ma vie.</l>
           </sp>
-          <sp xml:id="I02-4" who="SYROES">
+          <sp who="SYROES" xml:id="I02-4">
             <speaker>SYROËS</speaker>
             <l n="80" xml:id="l80">Soleil, pour qui nos coeurs, n'ont point d'obscurité,</l>
             <l n="81" xml:id="l81">Juge, et témoin commun, tu sais la vérité ;</l>
             <l n="82" xml:id="l82">Et tu la soutiens trop, pour laisser impunie,</l>
             <l n="83" xml:id="l83">Une si détestable, et noire calomnie.</l>
           </sp>
-          <sp xml:id="I02-5" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-5">
             <speaker>MARDESANE</speaker>
             <l n="84" xml:id="l84">Étais-je le sujet, de votre différend ?</l>
           </sp>
-          <sp xml:id="I02-6" who="SYROES">
+          <sp who="SYROES" xml:id="I02-6">
             <speaker>SYROËS</speaker>
             <l n="85" xml:id="l85">Elle m'entretenait des soins qu'elle vous rend, ;</l>
             <l n="86" xml:id="l86">Qui dessus votre front, vont mettre la Couronne.</l>
           </sp>
-          <sp xml:id="I02-7" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-7">
             <speaker>MARDESANE</speaker>
             <l n="87" xml:id="l87">Vous peut-on dépouiller, du droit qui vous la donne ?</l>
           </sp>
-          <sp xml:id="I02-8" who="SYROES">
+          <sp who="SYROES" xml:id="I02-8">
             <speaker>SYROËS</speaker>
             <l n="88" xml:id="l88">Je lui montrais ce fer, comme mon défenseur,</l>
             <l n="89" xml:id="l89">Si, vivant, j'en voyais, un autre possesseur.</l>
           </sp>
-          <sp xml:id="I02-9" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-9">
             <speaker>MARDESANE</speaker>
             <l n="90" xml:id="l90">N'étions-nous pas d'accord, touchant cette querelle.</l>
           </sp>
-          <sp xml:id="I02-10" who="SYROES">
+          <sp who="SYROES" xml:id="I02-10">
             <speaker>SYROËS</speaker>
             <l n="91" xml:id="l91">Je l'étais avec vous, mais non pas avec elle ;</l>
             <l n="92" xml:id="l92">Et son ambition, si son crédit n'est vain,</l>
@@ -272,7 +273,7 @@
             <l n="96" xml:id="l96">Et je fais plus pour vous, de vous en détourner,</l>
             <l n="97" xml:id="l97">Qu'elle de vous l'offrir, et de vous couronner.</l>
           </sp>
-          <sp xml:id="I02-11" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-11">
             <speaker>MARDESANE</speaker>
             <l n="98" xml:id="l98">Vous inquiétez-vous, du Zèle d'une mère,</l>
             <l n="99" xml:id="l99">Qui de ce vain espoir, aime à se satisfaire.</l>
@@ -286,21 +287,21 @@
             <l n="107" xml:id="l107">Qui de tout autre soin, le rendent incapable ;</l>
             <l n="108" xml:id="l108">Et font qu'en son chagrin, tout l'irrite, et lui nuit.</l>
           </sp>
-          <sp xml:id="I02-12" who="SYROES">
+          <sp who="SYROES" xml:id="I02-12">
             <speaker>SYROËS</speaker>
             <l n="109" xml:id="l109">J'ai pour lui des respects, dont j'obtiens peu de fruit,</l>
             <l n="110" xml:id="l110">Mais que j'acquière, enfin, son amour, ou sa haine,</l>
             <l n="111" xml:id="l111">Il faut laisser agir le crédit de la Reine,</l>
             <l n="112" xml:id="l112">Et prendre avis du temps, et des événements.</l>
           </sp>
-          <sp xml:id="I02-13" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-13">
             <speaker>MARDESANE</speaker>
             <l n="113" xml:id="l113">Vous gardez vos soupçons, et moi, mes sentiments.</l>
             <l n="114" xml:id="l114">Et j'estime trop peu, l'éclat d'une Couronne,</l>
             <l n="115" xml:id="l115">Pour me gêner l'esprit, du soin qu'elle vous donne,</l>
             <l n="116" xml:id="l116">Ce n'est qu'un joug pompeux, le repos m'est plus doux ;</l>
           </sp>
-          <sp xml:id="I02-14" who="SYROES">
+          <sp who="SYROES" xml:id="I02-14">
             <speaker>SYROËS</speaker>
             <l n="117" xml:id="l117">Vous n'avez rien à faire, on travaille pour vous ;</l>
             <l n="118" xml:id="l118">Et vous pouvez juger, si l'Empire à des charmes.</l>
@@ -315,7 +316,7 @@
             <l n="127" xml:id="l127">Vous conduira sans peine, où votre mère aspire ;</l>
             <l n="128" xml:id="l128">Votre consentement, ne lui déniera rien.</l>
           </sp>
-          <sp xml:id="I02-15" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-15">
             <speaker>MARDESANE</speaker>
             <l n="129" xml:id="l129">C'est votre sentiment, et ce n'est pas le mien ;</l>
             <l n="130" xml:id="l130">Non, que je ne me sente, et d'âme, et de naissance,</l>
@@ -333,7 +334,7 @@
             <l n="142" xml:id="l142">Ce pouvoir usurpé, ce règne imaginaire,</l>
             <l n="143" xml:id="l143">Que vous n'excusez pas, de l'amour d'une mère.</l>
           </sp>
-          <sp xml:id="I02-16" who="SYROES">
+          <sp who="SYROES" xml:id="I02-16">
             <speaker>SYROËS</speaker>
             <l n="144" xml:id="l144">Puisque vous le voulez, il l'en faut excuser,</l>
             <l n="145" xml:id="l145">Et dessus votre foi, j'ose m'en reposer ;</l>
@@ -348,19 +349,19 @@
             <l n="154" xml:id="l154">Lavez-le de mon sang, avant que d'y paraître,</l>
             <l n="155" xml:id="l155">Sinon, n'espérez pas, être longtemps mon maître ;</l>
           </sp>
-          <sp xml:id="I02-17" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="I02-17">
             <speaker>MARDESANE voyant Palmyras.</speaker>
             <l n="156" xml:id="l156">Il est bien mal aisé, de vous dissuader !</l>
             <l n="157" xml:id="l157">Palmyras, qui me voit, n'ose vous aborder</l>
             <l n="158" xml:id="l158">Et comme vous, encor, m'impute sa disgrâce.</l>
-            <stage type="[N/A]">Il dit à Palmyras.</stage>
+            <stage>Il dit à Palmyras.</stage>
             <l n="159" xml:id="l159">Entrez, je me retire, et vous cède la place ;</l>
-            <l n="160" xml:id="l160" part="I">Je vous suis importun.</l>
+            <l n="160" part="I" xml:id="l160">Je vous suis importun.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Palmyras, Satrape, Syroës.</head>
-          <sp xml:id="I03-1" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I03-1">
             <speaker>PALMYRAS</speaker>
             <l part="F">C'est mal me la céder,</l>
             <l n="161" xml:id="l161">Que briguer mes emplois, et m'en déposséder,</l>
@@ -380,7 +381,7 @@
             <l n="175" xml:id="l175">Et sage, détruisez, ce qui vous peut détruire ;</l>
             <l n="176" xml:id="l176">Sinon, jusques sur vous, ce foudre éclatera.</l>
           </sp>
-          <sp xml:id="I03-2" who="SYROES">
+          <sp who="SYROES" xml:id="I03-2">
             <speaker>SYROËS rêvant, et se promenant.</speaker>
             <l n="177" xml:id="l177">Mais, je périrai, traître, ou mon fils régnera ;</l>
             <l n="178" xml:id="l178">Qu'ai-je à délibérer, après cette menace !</l>
@@ -410,7 +411,7 @@
             <l n="202" xml:id="l202">Et d'un tyran naissant, détruisant l'insolence,</l>
             <l n="203" xml:id="l203">Affermissez l'appui, d'un trône qui balance.</l>
           </sp>
-          <sp xml:id="I03-3" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I03-3">
             <speaker>PALMYRAS</speaker>
             <l n="204" xml:id="l204">Mais, soutenez-le, Prince, et prêtez-y le bras ;</l>
             <l n="205" xml:id="l205">Le Ciel est inutile, à qui ne s'aide pas ;</l>
@@ -468,39 +469,39 @@
             <l n="257" xml:id="l257">Et le sang, que sans fruit, les légions romaines,</l>
             <l n="258" xml:id="l258">En tant d'occasions, ont puisé de ses veines.</l>
           </sp>
-          <sp xml:id="I03-4" who="SYROES">
+          <sp who="SYROES" xml:id="I03-4">
             <speaker>SYROËS rêvant.</speaker>
             <l n="259" xml:id="l259">Laisser ravir un trône , est une lâcheté,</l>
             <l n="260" xml:id="l260">Mais en chasser un père, est une impiété ;</l>
           </sp>
-          <sp xml:id="I03-5" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I03-5">
             <speaker>PALMYRAS</speaker>
             <l n="261" xml:id="l261">Que, (pour vous l'enseigner) lui-même il a commise ;</l>
           </sp>
-          <sp xml:id="I03-6" who="SYROES">
+          <sp who="SYROES" xml:id="I03-6">
             <speaker>SYROËS</speaker>
             <l n="262" xml:id="l262">Par son exemple, hélas ! M'est-elle plus permise !</l>
             <l n="263" xml:id="l263">Et me produira-t-elle, un moindre repentir.</l>
           </sp>
-          <sp xml:id="I03-7" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I03-7">
             <speaker>PALMYRAS</speaker>
             <l n="264" xml:id="l264">Vous ne l'en chassez pas, puisqu'il en veut sortir,</l>
             <l n="265" xml:id="l265">Ou, que votre marâtre, à mieux parler, l'en chasse,</l>
             <l n="266" xml:id="l266">Pour y faire à son fils, occuper votre place.</l>
           </sp>
-          <sp xml:id="I03-8" who="SYROES">
+          <sp who="SYROES" xml:id="I03-8">
             <speaker>SYROËS</speaker>
-            <l n="267" xml:id="l267" part="I">Il m'a donné le jour !</l>
+            <l n="267" part="I" xml:id="l267">Il m'a donné le jour !</l>
           </sp>
-          <sp xml:id="I03-9" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I03-9">
             <speaker>PALMYRAS</speaker>
             <l part="F">Il donne votre bien !</l>
           </sp>
-          <sp xml:id="I03-10" who="SYROES">
+          <sp who="SYROES" xml:id="I03-10">
             <speaker>SYROËS</speaker>
-            <l n="268" xml:id="l268" part="I">Mais, c'est mon père, enfin !</l>
+            <l n="268" part="I" xml:id="l268">Mais, c'est mon père, enfin !</l>
           </sp>
-          <sp xml:id="I03-11" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I03-11">
             <speaker>PALMYRAS</speaker>
             <l part="F">Hormisdas fut le sien ;</l>
             <l n="269" xml:id="l269">Et si vous agissez, d'un esprit si timide,</l>
@@ -508,7 +509,7 @@
             <l n="271" xml:id="l271">Qui n'a point épargné, le sang dont il est né,</l>
             <l n="272" xml:id="l272">Peut bien n'épargner pas, celui qu'il a donné.</l>
           </sp>
-          <sp xml:id="I03-12" who="SYROES">
+          <sp who="SYROES" xml:id="I03-12">
             <speaker>SYROËS</speaker>
             <l n="273" xml:id="l273">Ô dure destinée, et fatale aventure,</l>
             <l n="274" xml:id="l274">J'ai pour moi la raison, le droit, et la nature ;</l>
@@ -525,44 +526,44 @@
             <l n="285" xml:id="l285">Et ne puis-je occuper un trône héréditaire,</l>
             <l n="286" xml:id="l286">Qu'au prix de la prison, ou du sang de mon Père.</l>
           </sp>
-          <sp xml:id="I03-13" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I03-13">
             <speaker>PALMYRAS</speaker>
             <l n="287" xml:id="l287">Je vois, qu'il faut, Seigneur, encor quelques moments,</l>
             <l n="288" xml:id="l288">À votre piété, laisser les sentiments,</l>
             <l n="289" xml:id="l289">Mais, que vous veut Pharnace, il vous sert avec zèle.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Pahrnace, Syroës, Palmyras.</head>
-          <sp xml:id="I04-1" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I04-1">
             <speaker>PHARNACE, étonné.</speaker>
             <l n="290" xml:id="l290">Ô Dieux ! Du Camp, Seigneur, savez-vous la nouvelle !</l>
           </sp>
-          <sp xml:id="I04-2" who="SYROES">
+          <sp who="SYROES" xml:id="I04-2">
             <speaker>SYROËS</speaker>
-            <l n="291" xml:id="l291" part="I">Quelle !</l>
+            <l n="291" part="I" xml:id="l291">Quelle !</l>
           </sp>
-          <sp xml:id="I04-3" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I04-3">
             <speaker>PHARNACE regardant autour de soi.</speaker>
             <l part="F">Qu'on vous trahit, et que le Roi prétend ;</l>
-            <l n="292" xml:id="l292" part="I">Mais...</l>
+            <l n="292" part="I" xml:id="l292">Mais...</l>
           </sp>
-          <sp xml:id="I04-4" who="SYROES">
+          <sp who="SYROES" xml:id="I04-4">
             <speaker>SYROËS</speaker>
             <l part="F">Parlez, sans rien craindre, aucun ne nous entend.</l>
           </sp>
-          <sp xml:id="I04-5" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I04-5">
             <speaker>PHARNACE</speaker>
             <l n="293" xml:id="l293">Au mépris de vos droits, et de la loi Persane,</l>
             <l n="294" xml:id="l294">À la tête du Camp, couronner Mardesane.</l>
           </sp>
-          <sp xml:id="I04-6" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I04-6">
             <speaker>PALMYRAS</speaker>
             <l n="295" xml:id="l295">Voyez, si j'ai raison, Grand Prince, et si mon soin,</l>
             <l n="296" xml:id="l296">A d'un trop prompt avis, prévenu le besoin ;</l>
             <l n="297" xml:id="l297">Mais, quel effet, au Camp, produit cette aventure.</l>
           </sp>
-          <sp xml:id="I04-7" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="I04-7">
             <speaker>PHARNACE</speaker>
             <l n="298" xml:id="l298">On a peine à le croire, et chacun en murmure ;</l>
             <l n="299" xml:id="l299">On tient, ce bruit fermé, pour éprouver les coeurs,</l>
@@ -580,7 +581,7 @@
             <l n="311" xml:id="l311">Quel progrès ferait-il, furieux, ou charmé ?</l>
             <l n="312" xml:id="l312">Par l'une hors du sens, par l'autre désarmé.</l>
             <l n="313" xml:id="l313">Ce murmure assez haut, court par toute l'armée,</l>
-            <stage type="[N/A]">Montrant Palmyras.</stage>
+            <stage>Montrant Palmyras.</stage>
             <l n="314" xml:id="l314">De son chef, qu'elle perd, encor toute alarmée ;</l>
             <l n="315" xml:id="l315">Et pour peu, qu'on la porte à vous donner les mains,</l>
             <l n="316" xml:id="l316">Et que l'on veuille entendre, au traité des Romains ;</l>
@@ -588,7 +589,7 @@
             <l n="318" xml:id="l318">Et ma tête, Seigneur, vous répond de l'Empire,</l>
             <l n="319" xml:id="l319">Ou pour vous maintenir, tout l'État périra.</l>
           </sp>
-          <sp xml:id="I04-8" who="SYROES">
+          <sp who="SYROES" xml:id="I04-8">
             <speaker>SYROËS rêvant, et se promenant.</speaker>
             <l n="320" xml:id="l320">Mais, je périrai, traître, ou mon Fils régnera :</l>
             <l n="321" xml:id="l321">Oui, oui, qu'elle périsse, et nous régnons, Pharnace,</l>
@@ -610,7 +611,7 @@
             <l n="337" xml:id="l337">À vous, dignes auteurs, de cette noble audace,</l>
             <l n="338" xml:id="l338">Qui m'appelle à mon trône, et m'y montre ma place.</l>
           </sp>
-          <sp xml:id="I04-9" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="I04-9">
             <speaker>PALMYRAS</speaker>
             <l n="339" xml:id="l339">Je cherchais Syroës, parmi tant de froideur,</l>
             <l n="340" xml:id="l340">Mais, je le reconnais, à cette noble ardeur ;</l>
@@ -625,11 +626,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Cosroës, Syra, Sardarigue, Gardes.</head>
-          <sp xml:id="II01-1" who="COSROES">
+          <sp who="COSROES" xml:id="II01-1">
             <speaker>COSROËS furieux, suivi des autres.</speaker>
             <l n="349" xml:id="l349">Noires divinités, filles impitoyables,</l>
             <l n="350" xml:id="l350">Des vengeances du Ciel, ministres effroyables,</l>
@@ -644,14 +645,14 @@
             <l n="359" xml:id="l359">Achevez de me perdre, et dedans son tombeau,</l>
             <l n="360" xml:id="l360">Enfermez avec lui, son fils, et son bourreau.</l>
           </sp>
-          <sp xml:id="II01-2" who="SYRA">
+          <sp who="SYRA" xml:id="II01-2">
             <speaker>SYRA</speaker>
             <l n="361" xml:id="l361">Chassez de votre esprit, les soins mélancoliques,</l>
             <l n="362" xml:id="l362">Qui montrent à vos yeux, ces objets chimériques ;</l>
             <l n="363" xml:id="l363">C'est une illusion, dont ils sont effrayés,</l>
             <l n="364" xml:id="l364">Et vous ne voyez rien, de ce que vous voyez.</l>
           </sp>
-          <sp xml:id="II01-3" who="COSROES">
+          <sp who="COSROES" xml:id="II01-3">
             <speaker>COSROËS</speaker>
             <l n="365" xml:id="l365">Quoi, n'entendez-vous pas, du fonds de cet abîme,</l>
             <l n="366" xml:id="l366">Une effroyable voix, me reprocher mon crime,</l>
@@ -659,7 +660,7 @@
             <l n="368" xml:id="l368">Contre mon propre flanc, solliciter ma main ?</l>
             <l n="369" xml:id="l369">N'apercevez-vous pas, dans cet épais nuage,</l>
             <l n="370" xml:id="l370">De mon Père expirant, la ténébreuse image,</l>
-            <l n="371" xml:id="l371">M'ordonner de sortir, de son  trône usurpé,</l>
+            <l n="371" xml:id="l371">M'ordonner de sortir, de son trône usurpé,</l>
             <l n="372" xml:id="l372">Et me montrer l'endroit, par où je l'ai frappé ;</l>
             <l n="373" xml:id="l373">Voyez-vous pas sortir, de cet horrible gouffre,</l>
             <l n="374" xml:id="l374">Qui n'exhale, que feu, que bitume, et que soufre ;</l>
@@ -676,26 +677,26 @@
             <l n="385" xml:id="l385">Il te faut de moi-même, encor le sacrifice,</l>
             <l n="386" xml:id="l386">Et déjà, dans le Ciel, j'ois gronder mon supplice ;</l>
             <l n="387" xml:id="l387">Et son funèbre apprêt, noircir tout l'horizon.</l>
-            <stage type="[N/A]">Il se promène, et fait des signes de revenir en lui-même.</stage>
+            <stage>Il se promène, et fait des signes de revenir en lui-même.</stage>
           </sp>
-          <sp xml:id="II01-4" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II01-4">
             <speaker>SARDARIGUE</speaker>
             <l n="388" xml:id="l388">Cet accès, a longtemps, possédé sa raison.</l>
           </sp>
-          <sp xml:id="II01-5" who="SYRA">
+          <sp who="SYRA" xml:id="II01-5">
             <speaker>SYRA</speaker>
             <l n="389" xml:id="l389">Il cesse, et son bon sens, recouvre son usage ;</l>
-            <stage type="mezzo voce">Bas.</stage>
+            <stage>Bas.</stage>
             <l n="390" xml:id="l390">De cette occasion, il faut prendre avantage,</l>
             <l n="391" xml:id="l391">Et pressant son dessein, savoir le temps précis,</l>
             <l n="392" xml:id="l392">Qui doit combler mes voeux, en couronnant mon fils.</l>
-            <stage type="[N/A]">On lui donne un siège.</stage>
+            <stage>On lui donne un siège.</stage>
             <l n="393" xml:id="l393">Nourrirez-vous toujours, ce remords qui vous reste ;</l>
             <l n="394" xml:id="l394">Si vous ne l'étouffez, il vous sera funeste ;</l>
             <l n="395" xml:id="l395">De ce malheur, Seigneur, perdez le souvenir,</l>
             <l n="396" xml:id="l396">L'avoir gardé vingt ans, est trop vous en punir.</l>
           </sp>
-          <sp xml:id="II01-6" who="COSROES">
+          <sp who="COSROES" xml:id="II01-6">
             <speaker>COSROËS</speaker>
             <l n="397" xml:id="l397">Tout l'État, où j'occupe un rang illégitime,</l>
             <l n="398" xml:id="l398">M'entretient cette idée, et me montre mon crime ;</l>
@@ -708,7 +709,7 @@
             <l n="405" xml:id="l405">Mais plus de honte, encor, de son énorme cause,</l>
             <l n="406" xml:id="l406">Qui fol, et parricide, à tout l'État m'expose.</l>
           </sp>
-          <sp xml:id="II01-7" who="SYRA">
+          <sp who="SYRA" xml:id="II01-7">
             <speaker>SYRA</speaker>
             <l n="407" xml:id="l407">Tant que vous retiendrez les rênes de l'État</l>
             <l n="408" xml:id="l408">Vous y verrez l'objet, qui fit votre attentat ;</l>
@@ -729,7 +730,7 @@
             <l n="423" xml:id="l423">Et nous ne perdons rien, lorsque le même rang,</l>
             <l n="424" xml:id="l424">Quoique sous d'autres noms, demeure à notre sang.</l>
           </sp>
-          <sp xml:id="II01-8" who="COSROES">
+          <sp who="COSROES" xml:id="II01-8">
             <speaker>COSROËS</speaker>
             <l n="425" xml:id="l425">J'ai trop d'expérience, et j'ai trop vu de marques,</l>
             <l n="426" xml:id="l426">Ô généreux Surgeon, et tige de Monarques,</l>
@@ -762,7 +763,7 @@
             <l n="453" xml:id="l453">Mon sceptre soutenu, d'une main plus capable,</l>
             <l n="454" xml:id="l454">Et mon sang innocent, succéder au coupable.</l>
           </sp>
-          <sp xml:id="II01-9" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II01-9">
             <speaker>SARDARIGUE</speaker>
             <l n="455" xml:id="l455">Mais peut-il l'accepter, Seigneur, sans attentat</l>
             <l n="456" xml:id="l456">Contre le droit d'aînesse, et la loi de l'État ?</l>
@@ -773,7 +774,7 @@
             <l n="461" xml:id="l461">Songez à quels malheurs vous l'exposez en butte,</l>
             <l n="462" xml:id="l462">Un rang si élevé, vaut bien qu'on le dispute.</l>
           </sp>
-          <sp xml:id="II01-10" who="SYRA">
+          <sp who="SYRA" xml:id="II01-10">
             <speaker>SYRA</speaker>
             <l n="463" xml:id="l463">Objet de nos encens, Soleil ! tu m'es témoin,</l>
             <l n="464" xml:id="l464">Si l'intérêt d'un fils, me produit aucun soin !</l>
@@ -799,11 +800,11 @@
             <l n="484" xml:id="l484">Il eût, sans Mardesane, été mon assassin ;</l>
             <l n="485" xml:id="l485">Et que pour cet effet, il a tiré l'épée.</l>
           </sp>
-          <sp xml:id="II01-11" who="COSROES">
+          <sp who="COSROES" xml:id="II01-11">
             <speaker>COSROËS</speaker>
-            <l n="486" xml:id="l486" part="I">Ô Dieux ! que dites-vous !</l>
+            <l n="486" part="I" xml:id="l486">Ô Dieux ! que dites-vous !</l>
           </sp>
-          <sp xml:id="II01-12" who="SYRA">
+          <sp who="SYRA" xml:id="II01-12">
             <speaker>SYRA</speaker>
             <l part="F">Il ne m'a point trompée ;</l>
             <l n="487" xml:id="l487">Comme il croit mon crédit, fatal à son espoir,</l>
@@ -812,11 +813,11 @@
             <l n="490" xml:id="l490">Et la haine du fils, naît de l'amour du Père.</l>
             <l n="491" xml:id="l491">Que puis-je attendre, donc, de son autorité ?</l>
           </sp>
-          <sp xml:id="II01-13" who="COSROES">
+          <sp who="COSROES" xml:id="II01-13">
             <speaker>COSROËS</speaker>
             <l n="492" xml:id="l492">Je pourvoirai, Madame, à votre sûreté.</l>
           </sp>
-          <sp xml:id="II01-14" who="SYRA">
+          <sp who="SYRA" xml:id="II01-14">
             <speaker>SYRA</speaker>
             <l n="493" xml:id="l493">Élevant Mardesane, à ce degré suprême,</l>
             <l n="494" xml:id="l494">Vous régnerez (Seigneur) en un autre vous-même ;</l>
@@ -831,7 +832,7 @@
             <l n="503" xml:id="l503">Dont vos chastes ardeurs, ont honoré ce flanc,</l>
             <l n="504" xml:id="l504">Et que j'ose pleiger, du reste de mon sang.</l>
           </sp>
-          <sp xml:id="II01-15" who="COSROES">
+          <sp who="COSROES" xml:id="II01-15">
             <speaker>COSROËS</speaker>
             <l n="505" xml:id="l505">Par les pleurs, que je dois, aux cendres de mon père,</l>
             <l n="506" xml:id="l506">Par le char éclatant, du Dieu que je révère,</l>
@@ -842,45 +843,45 @@
             <l n="511" xml:id="l511">Par forme, Sardarigue, assemblez le Conseil,</l>
             <l n="512" xml:id="l512">Mais, du couronnement, disposez l'appareil.</l>
           </sp>
-          <sp xml:id="II01-16" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II01-16">
             <speaker>SARDARIGUE</speaker>
             <l n="513" xml:id="l513">Ou la Reine, Seigneur, semble être intéressée,</l>
             <l n="514" xml:id="l514">Je n'ose plus avant, vous ouvrir ma pensée ;</l>
-            <l n="515" xml:id="l515" part="I">Mais...</l>
+            <l n="515" part="I" xml:id="l515">Mais...</l>
           </sp>
-          <sp xml:id="II01-17" who="SYRA">
+          <sp who="SYRA" xml:id="II01-17">
             <speaker>SYRA</speaker>
             <l part="F">On n'a pas dessein, d'en croire vos avis.</l>
           </sp>
-          <sp xml:id="II01-18" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II01-18">
             <speaker>SARDARIGUE</speaker>
             <l n="516" xml:id="l516">Ils n'ont point fait de tort, quand on les a suivis.</l>
             <l n="517" xml:id="l517">Et ce projet, Madame, est d'assez d'importance,</l>
             <l n="518" xml:id="l518">Pour ne le pas presser, avecques tant d'instance.</l>
             <l n="519" xml:id="l519">Si j'en prévois l'issue, elle doit aller loin.</l>
           </sp>
-          <sp xml:id="II01-19" who="COSROES">
+          <sp who="COSROES" xml:id="II01-19">
             <speaker>COSROËS</speaker>
             <l n="520" xml:id="l520">Je prendrai vos conseils, quand j'en aurai besoin.</l>
             <l n="521" xml:id="l521">Cependant, pour ne rien tenter à notre honte,</l>
             <l n="522" xml:id="l522">Arrêtez Syroës, et m'en rendez bon compte.</l>
           </sp>
-          <sp xml:id="II01-20" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II01-20">
             <speaker>SARDARIGUE</speaker>
             <l n="523" xml:id="l523">Si vous voulez (grand Roi) voir le peuple en courroux,</l>
             <l n="524" xml:id="l524">Le camp, et tout l'État, soulevés contre vous ;</l>
             <l n="525" xml:id="l525">Imposez-moi cet ordre, et faites qu'on l'arrête.</l>
           </sp>
-          <sp xml:id="II01-21" who="COSROES">
+          <sp who="COSROES" xml:id="II01-21">
             <speaker>COSROËS</speaker>
             <l n="526" xml:id="l526">À ne pas obéir, il va de votre tête.</l>
           </sp>
-          <sp xml:id="II01-22" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II01-22">
             <speaker>SARDARIGUE bas, sortant avec ses Gardes.</speaker>
             <l n="527" xml:id="l527">Ô Dieux, dont les décrets passent nos jugements,</l>
             <l n="528" xml:id="l528">Rendez vaine, l'horreur, de mes pressentiments !</l>
           </sp>
-          <sp xml:id="II01-23" who="SYRA">
+          <sp who="SYRA" xml:id="II01-23">
             <speaker>SYRA</speaker>
             <l n="529" xml:id="l529">Si les Grands écoutaient, tout ce qu'on leur propose,</l>
             <l n="530" xml:id="l530">Ils ne résoudraient rien, et craindrais toute chose,</l>
@@ -890,19 +891,19 @@
             <l n="534" xml:id="l534">En ces soulèvements, désarme tout le reste.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Mardesane, Cosroës, Syra, Hormisdate, Gardes.</head>
-          <sp xml:id="II02-1" who="COSROES">
+          <sp who="COSROES" xml:id="II02-1">
             <speaker>COSROËS à Mardesane.</speaker>
             <l n="535" xml:id="l535">Venez, l'État lassé, de ployer sous ma loi,</l>
             <l n="536" xml:id="l536">Et mon propre repos, nous demandent un Roi ;</l>
             <l n="537" xml:id="l537">Prince, allons le donner, et consultez vos forces.</l>
           </sp>
-          <sp xml:id="II02-2" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="II02-2">
             <speaker>MARDESANE bas.</speaker>
             <l n="538" xml:id="l538">Funeste ambition, cache-moi tes amorces !</l>
           </sp>
-          <sp xml:id="II02-3" who="COSROES">
+          <sp who="COSROES" xml:id="II02-3">
             <speaker>COSROËS</speaker>
             <l n="539" xml:id="l539">Mes jours, prêts d'arriver, à leur dernière nuit,</l>
             <l n="540" xml:id="l540">Et l'incommodité, qui les presse, et les suit,</l>
@@ -921,7 +922,7 @@
             <l n="553" xml:id="l553">Remplissez dignement, le trône, et notre attente,</l>
             <l n="554" xml:id="l554">Et représentez bien, celui qui vous présente.</l>
           </sp>
-          <sp xml:id="II02-4" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="II02-4">
             <speaker>MARDESANE</speaker>
             <l n="555" xml:id="l555">Je suis à vous, Grand Prince, et je serais jaloux,</l>
             <l n="556" xml:id="l556">Qu'un autre eût plus de zèle, et plus d'ardeur pour vous ;</l>
@@ -941,11 +942,11 @@
             <l n="570" xml:id="l570">Doit tomber de vos mains, en celles de mon frère ;</l>
             <l n="571" xml:id="l571">Comblez-le des bontés, que vous avez pour moi.</l>
           </sp>
-          <sp xml:id="II02-5" who="COSROES">
+          <sp who="COSROES" xml:id="II02-5">
             <speaker>COSROËS</speaker>
             <l n="572" xml:id="l572">La loi, qu'impose un père, est la première loi.</l>
           </sp>
-          <sp xml:id="II02-6" who="SYRA">
+          <sp who="SYRA" xml:id="II02-6">
             <speaker>SYRA</speaker>
             <l n="573" xml:id="l573">Vains sentiments de mère, importune tendresse !</l>
             <l n="574" xml:id="l574">On reçoit vos faveurs, avec tant de faiblesse !</l>
@@ -956,7 +957,7 @@
             <l n="579" xml:id="l579">Et l'offre qu'on lui fait, d'un pouvoir absolu,</l>
             <l n="580" xml:id="l580">Peut trouver en son sein, un coeur irrésolu.</l>
           </sp>
-          <sp xml:id="II02-7" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="II02-7">
             <speaker>MARDESANE</speaker>
             <l n="581" xml:id="l581">D'un sang assez ardent, n'animez point les flammes,</l>
             <l n="582" xml:id="l582">J'ai tous les sentiments, dignes des grandes âmes.</l>
@@ -1007,7 +1008,7 @@
             <l n="627" xml:id="l627">Et l'État est le temple, et le trône l'autel,</l>
             <l n="628" xml:id="l628">Où cette malheureuse, attend le coup mortel.</l>
           </sp>
-          <sp xml:id="II02-8" who="COSROES">
+          <sp who="COSROES" xml:id="II02-8">
             <speaker>COSROËS</speaker>
             <l n="629" xml:id="l629">Vous craignez de régner, faute d'expérience ;</l>
             <l n="630" xml:id="l630">Il y faut de l'ardeur, et de la confiance ;</l>
@@ -1020,19 +1021,19 @@
             <l n="637" xml:id="l637">Je puis, sur qui me plaît, reposer ma couronne ;</l>
             <l n="638" xml:id="l638">Et pour toute raison, portez-la, je l'ordonne.</l>
           </sp>
-          <sp xml:id="II02-9" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="II02-9">
             <speaker>MARDESANE</speaker>
             <l n="639" xml:id="l639">C'est un de vos présents, je ne puis le haïr ;</l>
             <l n="640" xml:id="l640">Vous voulez que je règne, il vous faut obéir.</l>
             <l n="641" xml:id="l641">Mais je monte à regret, assuré de ma chute,</l>
             <l n="642" xml:id="l642">Et plaise au Ciel ! Qu'au sort, mes jours soient seuls en butte !</l>
-            <stage type="[N/A]">Parlant à Syra.</stage>
+            <stage>Parlant à Syra.</stage>
             <l n="643" xml:id="l643">Ha, Madame ! Quel fruit, me produit votre amour.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Syroës, Cosroës, Mardesane, Syra, Hormisdate, Gardes.</head>
-          <sp xml:id="II03-1" who="SYROES">
+          <sp who="SYROES" xml:id="II03-1">
             <speaker>SYROËS</speaker>
             <l n="644" xml:id="l644">Quel bruit s'émeut, Seigneur, et s'épand à la Cour ?</l>
             <l n="645" xml:id="l645">Quelle aveugle fureur, quelle invincible haine,</l>
@@ -1049,74 +1050,74 @@
             <l n="656" xml:id="l656">Naguère, enveloppé, dans les rangs ennemis ;</l>
             <l n="657" xml:id="l657">Prince, il vous en souvient ; vous le savez, Madame !</l>
           </sp>
-          <sp xml:id="II03-2" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="II03-2">
             <speaker>MARDESANE</speaker>
             <l n="658" xml:id="l658">Le souvenir m'en reste, au plus profond de l'âme.</l>
           </sp>
-          <sp xml:id="II03-3" who="SYRA">
+          <sp who="SYRA" xml:id="II03-3">
             <speaker>SYRA</speaker>
             <l n="659" xml:id="l659">Ce reproche est fréquent, et nous l'apprend assez ;</l>
             <l n="660" xml:id="l660">Mais, je puis l'ignorer, quand vous me menacez,</l>
             <l n="661" xml:id="l661">Et douter que pour lui, vous l'ayez dû répandre,</l>
             <l n="662" xml:id="l662">Alors que dans mon sein, vous le vouliez reprendre.</l>
           </sp>
-          <sp xml:id="II03-4" who="SYROES">
+          <sp who="SYROES" xml:id="II03-4">
             <speaker>SYROËS</speaker>
             <l n="663" xml:id="l663">L'exploit serait illustre, et bien digne de moi ;</l>
             <l n="664" xml:id="l664">Et vous me mettriez bien, dans l'estime du Roi,</l>
             <l n="665" xml:id="l665">Si ce lâche rapport, obtenait sa créance ;</l>
             <l n="666" xml:id="l666">Mais en son sentiment, j'ai plus de confiance.</l>
           </sp>
-          <sp xml:id="II03-5" who="SYRA">
+          <sp who="SYRA" xml:id="II03-5">
             <speaker>SYRA</speaker>
             <l n="667" xml:id="l667">Le coup, dont Mardesane, a diverti l'effort,</l>
             <l n="668" xml:id="l668">Partait d'une âme lâche, et non pas ce rapport.</l>
           </sp>
-          <sp xml:id="II03-6" who="SYROES">
+          <sp who="SYROES" xml:id="II03-6">
             <speaker>SYROËS</speaker>
             <l n="669" xml:id="l669">Contre cette imposture, ô Ciel, prends ma défense.</l>
           </sp>
-          <sp xml:id="II03-7" who="SYRA">
+          <sp who="SYRA" xml:id="II03-7">
             <speaker>SYRA</speaker>
             <l n="670" xml:id="l670">Vous voyez ; s'il profère un mot, qui ne m'offense.</l>
           </sp>
-          <sp xml:id="II03-8" who="SYROES">
+          <sp who="SYROES" xml:id="II03-8">
             <speaker>SYROËS</speaker>
             <l n="671" xml:id="l671">Votre fils, qui s'en tait, sert mal votre désir ;</l>
-            <l n="672" xml:id="l672" part="I">Et...</l>
+            <l n="672" part="I" xml:id="l672">Et...</l>
           </sp>
-          <sp xml:id="II03-9" who="COSROES">
+          <sp who="COSROES" xml:id="II03-9">
             <speaker>COSROËS s'en allant.</speaker>
             <l part="F">Nous apprendrons tout, avec plus de loisir ;</l>
-            <stage type="[N/A]">Sardarigue entre avec des Gardes.</stage>
+            <stage>Sardarigue entre avec des Gardes.</stage>
             <l n="673" xml:id="l673">Je fais un tour au Camp, pour un soin qui m'importe ;</l>
             <l n="674" xml:id="l674">Cependant, recevez, l'ordre, qu'on vous apporte,</l>
-            <l n="675" xml:id="l675" part="I">Prince, c'est de ma part.</l>
-            <stage type="[N/A]">La Reine sortant, regarde Syroës avec orgueil.</stage>
+            <l n="675" part="I" xml:id="l675">Prince, c'est de ma part.</l>
+            <stage>La Reine sortant, regarde Syroës avec orgueil.</stage>
           </sp>
-          <sp xml:id="II03-10" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="II03-10">
             <speaker>MARDESANE suivant Cosroës.</speaker>
             <l part="F">Périlleuse vertu !</l>
             <l n="676" xml:id="l676">Fatale obéissance ! à quoi me résous-tu ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Sardarigue, Syroës.</head>
-          <sp xml:id="II04-1" who="SYROES">
+          <sp who="SYROES" xml:id="II04-1">
             <speaker>SYROËS</speaker>
             <l n="677" xml:id="l677">Quel ordre, Sardarigue, avez-vous de la Reine,</l>
             <l n="678" xml:id="l678">Car le Roi n'agit plus, que pour servir sa haine ;</l>
             <l n="679" xml:id="l679">Et c'est elle qui parle, en tout ce qu'il prescrit.</l>
           </sp>
-          <sp xml:id="II04-2" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II04-2">
             <speaker>SARDARIGUE</speaker>
             <l n="680" xml:id="l680">Ha, Seigneur, redoutez ce dangereux esprit !</l>
           </sp>
-          <sp xml:id="II04-3" who="SYROES">
+          <sp who="SYROES" xml:id="II04-3">
             <speaker>SYROËS</speaker>
-            <l n="681" xml:id="l681" part="I">Et votre ordre !</l>
+            <l n="681" part="I" xml:id="l681">Et votre ordre !</l>
           </sp>
-          <sp xml:id="II04-4" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="II04-4">
             <speaker>SARDARIGUE</speaker>
             <l part="F">Mon ordre, est que je vous arrête ;</l>
             <l n="682" xml:id="l682">À n'y pas obéir, il y va de ma tête ?</l>
@@ -1130,7 +1131,7 @@
             <l n="690" xml:id="l690">Détruisez son parti, par un parti contraire ;</l>
             <l n="691" xml:id="l691">Si vous vous déclarez, tous leurs projets sont vains,</l>
             <l n="692" xml:id="l692">Le sort vous aidera, mais prêtez-lui les mains ;</l>
-            <l n="693" xml:id="l693">Il est temps, d'arracher,  des mains d'une marâtre,</l>
+            <l n="693" xml:id="l693">Il est temps, d'arracher, des mains d'une marâtre,</l>
             <l n="694" xml:id="l694">L'État qui vous appelle, et qui vous idolâtre ;</l>
             <l n="695" xml:id="l695">Il n'est plus de respect, qui doive retenir,</l>
             <l n="696" xml:id="l696">La généreuse ardeur, qui vous doit maintenir ;</l>
@@ -1140,7 +1141,7 @@
             <l n="700" xml:id="l700">Des coeurs qu'ils ont gagnés, vous vont armer les bras,</l>
             <l n="701" xml:id="l701">Et pour vous tout l'État, n'est qu'une seule brigue.</l>
           </sp>
-          <sp xml:id="II04-5" who="SYROES">
+          <sp who="SYROES" xml:id="II04-5">
             <speaker>SYROËS l'embrassant.</speaker>
             <l n="702" xml:id="l702">Et pour comble d'espoir, j'ai pour moi Sardarigue ;</l>
             <l n="703" xml:id="l703">J'ai, pour, me garantir d'un triste événement,</l>
@@ -1152,11 +1153,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Syra, Hormisdate.</head>
-          <sp xml:id="III01-1" who="SYRA">
+          <sp who="SYRA" xml:id="III01-1">
             <speaker>SYRA</speaker>
             <l n="709" xml:id="l709">Enfin, selon mes voeux, malgré la Loi Persane,</l>
             <l n="710" xml:id="l710">Au trône de Cyrus, j'ai placé Mardesane ;</l>
@@ -1169,7 +1170,7 @@
             <l n="717" xml:id="l717">Et Mardesane, enfin, successeur d'Artaxerce,</l>
             <l n="718" xml:id="l718">Règne, et fait, aujourd'hui, le destin de la Perse.</l>
           </sp>
-          <sp xml:id="III01-2" who="HORMISDATE">
+          <sp who="HORMISDATE" xml:id="III01-2">
             <speaker>HORMISDATE</speaker>
             <l n="719" xml:id="l719">Madame, pardonnez, si je vous le redis,</l>
             <l n="720" xml:id="l720">Vous venez d'achever, un projet bien hardi ;</l>
@@ -1193,7 +1194,7 @@
             <l n="738" xml:id="l738">Et les choses bientôt, prennent une autre face ;</l>
             <l n="739" xml:id="l739">Le sort est inconstant, et le peuple est trompeur.</l>
           </sp>
-          <sp xml:id="III01-3" who="SYRA">
+          <sp who="SYRA" xml:id="III01-3">
             <speaker>SYRA</speaker>
             <l n="740" xml:id="l740">L'arrêt de Syroës, me lève cette peur.</l>
             <l n="741" xml:id="l741">Et de ses Partisans, à l'ardeur amortie.</l>
@@ -1205,54 +1206,54 @@
             <l n="747" xml:id="l747">Et dans mes intérêts entrant aveuglement,</l>
             <l n="748" xml:id="l748">D'un glorieux destin, fais-toi le fondement.</l>
           </sp>
-          <sp xml:id="III01-4" who="HORMISDATE">
+          <sp who="HORMISDATE" xml:id="III01-4">
             <speaker>HORMISDATE</speaker>
             <l n="749" xml:id="l749">L'amour perd de son prix, quand on la sollicite,</l>
             <l n="750" xml:id="l750">Si la mienne, Madame, est de quelque mérite,</l>
             <l n="751" xml:id="l751">Considérez-la nue, et ne l'intéressez,</l>
             <l n="752" xml:id="l752">Que par sa pureté, qui vous paraît assez.</l>
           </sp>
-          <sp xml:id="III01-5" who="SYRA">
+          <sp who="SYRA" xml:id="III01-5">
             <speaker>SYRA</speaker>
             <l n="753" xml:id="l753">Puis-je avoir confiance, au zèle de ton frère.</l>
           </sp>
-          <sp xml:id="III01-6" who="HORMISDATE">
+          <sp who="HORMISDATE" xml:id="III01-6">
             <speaker>HORMISDATE</speaker>
             <l n="754" xml:id="l754">Madame, il est tout vôtre, et peut tout pour vous plaire ;</l>
             <l n="755" xml:id="l755">Je vous réponds pour lui, d'une fidélité,</l>
             <l n="756" xml:id="l756">Qui le sacrifiera, pour votre Majesté.</l>
           </sp>
-          <sp xml:id="III01-7" who="SYRA">
+          <sp who="SYRA" xml:id="III01-7">
             <speaker>SYRA</speaker>
             <l n="757" xml:id="l757">J'en demande une épreuve, et si j'en suis ingrate,</l>
             <l n="758" xml:id="l758">Je veux voir sans effet, l'espoir dont je me flatte.</l>
           </sp>
-          <sp xml:id="III01-8" who="HORMISDATE">
+          <sp who="HORMISDATE" xml:id="III01-8">
             <speaker>HORMISDATE</speaker>
-            <l n="759" xml:id="l759" part="I">Quelle ?</l>
+            <l n="759" part="I" xml:id="l759">Quelle ?</l>
           </sp>
-          <sp xml:id="III01-9" who="SYRA">
+          <sp who="SYRA" xml:id="III01-9">
             <speaker>SYRA lui donnant un poignard, et du poison.</speaker>
             <l part="F">Que par ses mains, le Prince en sa prison,</l>
             <l n="760" xml:id="l760">Recevant de ma part, ce fer, et ce poison,</l>
             <l n="761" xml:id="l761">Choisisse, en l'un des deux, l'instrument de sa perte ;</l>
           </sp>
-          <sp xml:id="III01-10" who="HORMISDATE">
+          <sp who="HORMISDATE" xml:id="III01-10">
             <speaker>HORMISDATE</speaker>
             <l n="762" xml:id="l762">Justes Dieux ! quelle injure en avez-vous soufferte,</l>
             <l n="763" xml:id="l763">Qui porte à cet excès, votre ressentiment.</l>
           </sp>
-          <sp xml:id="III01-11" who="SYRA">
+          <sp who="SYRA" xml:id="III01-11">
             <speaker>SYRA</speaker>
             <l n="764" xml:id="l764">Ou qu'au refus, ton frère, en pousse l'instrument.</l>
           </sp>
-          <sp xml:id="III01-12" who="HORMISDATE">
+          <sp who="HORMISDATE" xml:id="III01-12">
             <speaker>HORMISDATE</speaker>
             <l n="765" xml:id="l765">Madame, au seul penser, d'un destin si funeste,</l>
             <l n="766" xml:id="l766">Je crois voir dessus moi, choir le courroux céleste !</l>
             <l n="767" xml:id="l767">J'en demeure interdite, et j'en frémis d'horreur !</l>
           </sp>
-          <sp xml:id="III01-13" who="SYRA">
+          <sp who="SYRA" xml:id="III01-13">
             <speaker>SYRA</speaker>
             <l n="768" xml:id="l768">Il faut bien plus de force, à servir ma fureur ;</l>
             <l n="769" xml:id="l769">On achète à bon prix l'État, dont la conquête</l>
@@ -1261,7 +1262,7 @@
             <l n="772" xml:id="l772">Que nul, plus près que lui, n'approchera mon sang ;</l>
             <l n="773" xml:id="l773">Et la part qu'il aura dedans le ministère...</l>
           </sp>
-          <sp xml:id="III01-14" who="HORMISDATE">
+          <sp who="HORMISDATE" xml:id="III01-14">
             <speaker>HORMISDATE</speaker>
             <l n="774" xml:id="l774">C'est aux sujets, enfin, d'obéir, et se taire.</l>
             <l n="775" xml:id="l775">Vous m'avez jointe à vous d'un si ferme lien,</l>
@@ -1270,9 +1271,9 @@
             <l n="778" xml:id="l778">Et porte ce présent, et votre ordre à mon frère ;</l>
             <l n="779" xml:id="l779">Mais je crains, de vous rendre, un service fatal ;</l>
             <l n="780" xml:id="l780">Et, j'ose dire plus, que j'en augure mal.</l>
-            <stage type="exit">Elle sort.</stage>
+            <stage>Elle sort.</stage>
           </sp>
-          <sp xml:id="III01-15" who="SYRA">
+          <sp who="SYRA" xml:id="III01-15">
             <speaker>SYRA</speaker>
             <l n="781" xml:id="l781">Qui croit aux lois des Dieux, ne croit point aux augures,</l>
             <l n="782" xml:id="l782">Ils ont déjà réglé, toutes mes aventures ;</l>
@@ -1281,84 +1282,84 @@
             <l n="785" xml:id="l785">Tant de précaution, aux grands projets est vaine ;</l>
             <l n="786" xml:id="l786">Je veux purger l'État, de l'objet de ma haine ;</l>
             <l n="787" xml:id="l787">Et tends, à me venger, plus qu'à ma sûreté ;</l>
-            <stage type="[N/A]">Sardarigue entre avec des gardes.</stage>
+            <stage>Sardarigue entre avec des gardes.</stage>
             <l n="788" xml:id="l788">Votre ordre, Sardarigue, est-il exécuté ?</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Sardarigue, Gardes, Syra.</head>
-          <sp xml:id="III02-1" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-1">
             <speaker>SARDARIGUE</speaker>
             <l n="789" xml:id="l789">Non, Madame, à regret, j'en exécute un autre.</l>
           </sp>
-          <sp xml:id="III02-2" who="SYRA">
+          <sp who="SYRA" xml:id="III02-2">
             <speaker>SYRA</speaker>
-            <l n="790" xml:id="l790" part="I">Quel !</l>
+            <l n="790" part="I" xml:id="l790">Quel !</l>
           </sp>
-          <sp xml:id="III02-3" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-3">
             <speaker>SARDARIGUE</speaker>
             <l part="M">De vous arrêter.</l>
           </sp>
-          <sp xml:id="III02-4" who="SYRA">
+          <sp who="SYRA" xml:id="III02-4">
             <speaker>SYRA</speaker>
             <l part="F">Quelle audace est la vôtre !</l>
-            <l n="791" xml:id="l791" part="I">Moi, téméraire.</l>
+            <l n="791" part="I" xml:id="l791">Moi, téméraire.</l>
           </sp>
-          <sp xml:id="III02-5" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-5">
             <speaker>SARDARIGUE</speaker>
             <l part="M">Vous !</l>
           </sp>
-          <sp xml:id="III02-6" who="SYRA">
+          <sp who="SYRA" xml:id="III02-6">
             <speaker>SYRA</speaker>
             <l part="M">De quelle part ?</l>
           </sp>
-          <sp xml:id="III02-7" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-7">
             <speaker>SARDARIGUE</speaker>
             <l part="F">Du Roi.</l>
           </sp>
-          <sp xml:id="III02-8" who="SYRA">
+          <sp who="SYRA" xml:id="III02-8">
             <speaker>SYRA</speaker>
             <l n="792" xml:id="l792">Imposteur ! Cosroës, t'impose cette loi !</l>
           </sp>
-          <sp xml:id="III02-9" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-9">
             <speaker>SARDARIGUE</speaker>
             <l n="793" xml:id="l793">Cosroës, n'a-t-il pas déposé la couronne ?</l>
           </sp>
-          <sp xml:id="III02-10" who="SYRA">
+          <sp who="SYRA" xml:id="III02-10">
             <speaker>SYRA</speaker>
             <l n="794" xml:id="l794">Qui donc ? est-ce mon fils, traître, qui te l'ordonne !</l>
           </sp>
-          <sp xml:id="III02-11" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-11">
             <speaker>SARDARIGUE</speaker>
             <l n="795" xml:id="l795">Votre fils m'ordonner ? En quelle qualité ?</l>
           </sp>
-          <sp xml:id="III02-12" who="SYRA">
+          <sp who="SYRA" xml:id="III02-12">
             <speaker>SYRA</speaker>
             <l n="796" xml:id="l796">De ton Roi ? De ton Maître ? Insolent ! Effronté !</l>
           </sp>
-          <sp xml:id="III02-13" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-13">
             <speaker>SARDARIGUE</speaker>
             <l n="797" xml:id="l797">Syroës est mon Roi, Syroës est mon maître,</l>
             <l n="798" xml:id="l798">La Perse, sous ces noms, vient de le reconnaître.</l>
           </sp>
-          <sp xml:id="III02-14" who="SYRA">
+          <sp who="SYRA" xml:id="III02-14">
             <speaker>SYRA</speaker>
-            <l n="799" xml:id="l799" part="I">Dieux !</l>
+            <l n="799" part="I" xml:id="l799">Dieux !</l>
           </sp>
-          <sp xml:id="III02-15" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-15">
             <speaker>SARDARIGUE</speaker>
             <l part="F">Et pour le venir reconnaître avec nous,</l>
             <l n="800" xml:id="l800">Nous avons ordre exprès, de nous saisir de vous.</l>
           </sp>
-          <sp xml:id="III02-16" who="SYRA">
+          <sp who="SYRA" xml:id="III02-16">
             <speaker>SYRA</speaker>
-            <l n="801" xml:id="l801" part="I">De te saisir de moi, perfide ?</l>
+            <l n="801" part="I" xml:id="l801">De te saisir de moi, perfide ?</l>
           </sp>
-          <sp xml:id="III02-17" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-17">
             <speaker>SARDARIGUE</speaker>
             <l part="F">De vous-même.</l>
           </sp>
-          <sp xml:id="III02-18" who="SYRA">
+          <sp who="SYRA" xml:id="III02-18">
             <speaker>SYRA regardant autour de soi.</speaker>
             <l n="802" xml:id="l802">Et l'on ne punit pas cette insolence extrême ?</l>
             <l n="803" xml:id="l803">Un traître, un déloyal, pour ma garde commis,</l>
@@ -1376,35 +1377,35 @@
             <l n="815" xml:id="l815">Ma plainte est inutile, et mes cris superflus ?</l>
             <l n="816" xml:id="l816">Et la Cour, dans la Cour, ne se trouvera plus.</l>
           </sp>
-          <sp xml:id="III02-19" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-19">
             <speaker>SARDARIGUE</speaker>
             <l n="817" xml:id="l817">Allons, votre parti, ne trouvera personne.</l>
           </sp>
-          <sp xml:id="III02-20" who="SYRA">
+          <sp who="SYRA" xml:id="III02-20">
             <speaker>SYRA</speaker>
             <l n="818" xml:id="l818">Le Ciel l'embrassera, si le sort l'abandonne ;</l>
             <l n="819" xml:id="l819">Et veille avec trop d'yeux, sur l'intérêt des Rois,</l>
             <l n="820" xml:id="l820">Pour laisser outrager, la majesté des lois.</l>
           </sp>
-          <sp xml:id="III02-21" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-21">
             <speaker>SARDARIGUE</speaker>
             <l n="821" xml:id="l821">C'est en son équité, que Syroës espère.</l>
           </sp>
-          <sp xml:id="III02-22" who="SYRA">
+          <sp who="SYRA" xml:id="III02-22">
             <speaker>SYRA</speaker>
             <l n="822" xml:id="l822">Après s'être emparé, du trône de son père !</l>
           </sp>
-          <sp xml:id="III02-23" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-23">
             <speaker>SARDARIGUE</speaker>
             <l n="823" xml:id="l823">Après que votre fils veut s'emparer du sien :</l>
             <l n="824" xml:id="l824">Mais j'obéis, Madame, et n'examine rien.</l>
           </sp>
-          <sp xml:id="III02-24" who="SYRA">
+          <sp who="SYRA" xml:id="III02-24">
             <speaker>SYRA</speaker>
             <l n="825" xml:id="l825">Il faut que tout périsse, ou ma vengeance, traître,</l>
             <l n="826" xml:id="l826">M'apportera ta tête, et celle de ton maître.</l>
           </sp>
-          <sp xml:id="III02-25" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-25">
             <speaker>SARDARIGUE</speaker>
             <l n="827" xml:id="l827">Le plus faible parti, prendra loi du plus fort ;</l>
             <l n="828" xml:id="l828">Mais de votre prison, il attend le rapport,</l>
@@ -1413,7 +1414,7 @@
             <l n="831" xml:id="l831">J'ai peine à vous traiter, avec indignité,</l>
             <l n="832" xml:id="l832">Allons, épargnez-nous, cette nécessité.</l>
           </sp>
-          <sp xml:id="III02-26" who="SYRA">
+          <sp who="SYRA" xml:id="III02-26">
             <speaker>SYRA</speaker>
             <l n="833" xml:id="l833">Il n'est pas merveilleux, qu'un sujet infidèle,</l>
             <l n="834" xml:id="l834">Écoute encor la foi, qui tremble, et qui chancelle,</l>
@@ -1436,12 +1437,12 @@
             <l n="851" xml:id="l851">Que jamais faction, ne naîtra sans trembler,</l>
             <l n="852" xml:id="l852">Et craindre le revers, qui pourra l'accabler.</l>
           </sp>
-          <sp xml:id="III02-27" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="III02-27">
             <speaker>SARDARIGUE</speaker>
             <l n="853" xml:id="l853">Je laisse à la fortune à disposer des choses,</l>
-            <l n="854" xml:id="l854" part="I">Mais l'heure...</l>
+            <l n="854" part="I" xml:id="l854">Mais l'heure...</l>
           </sp>
-          <sp xml:id="III02-28" who="SYRA">
+          <sp who="SYRA" xml:id="III02-28">
             <speaker>SYRA</speaker>
             <l part="F">Approche, viens, traîne-moi, si tu l'oses ;</l>
             <l n="855" xml:id="l855">Et si le nom qu'hier, je te vis adorer,</l>
@@ -1451,9 +1452,9 @@
             <l n="859" xml:id="l859">Et d'un coeur abattu, consentir ma prison ;</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Syroës, Gardes, Parmyras, Syra, Sardarigue, Gardes.</head>
-          <sp xml:id="III03-1" who="SYROES">
+          <sp who="SYROES" xml:id="III03-1">
             <speaker>SYROËS</speaker>
             <l n="860" xml:id="l860">Trêve d'orgueil, Princesse, il n'est plus de saison ;</l>
             <l n="861" xml:id="l861">La grandeur qui n'est plus, n'est plus considérée ;</l>
@@ -1461,93 +1462,93 @@
             <l n="863" xml:id="l863">Sujette, c'est à vous, à révérer les Rois,</l>
             <l n="864" xml:id="l864">Et quand je vous commande, obéir à mes lois ?</l>
           </sp>
-          <sp xml:id="III03-2" who="SYRA">
+          <sp who="SYRA" xml:id="III03-2">
             <speaker>SYRA</speaker>
             <l n="865" xml:id="l865">Perfide, après ma place, en mon trône usurpée !</l>
           </sp>
-          <sp xml:id="III03-3" who="SYROES">
+          <sp who="SYROES" xml:id="III03-3">
             <speaker>SYROËS</speaker>
             <l n="866" xml:id="l866">Après ma place, au mien, justement occupée ;</l>
           </sp>
-          <sp xml:id="III03-4" who="SYRA">
+          <sp who="SYRA" xml:id="III03-4">
             <speaker>SYRA</speaker>
             <l n="867" xml:id="l867">Vôtre, un père vivant ! et pendant que je vis !</l>
           </sp>
-          <sp xml:id="III03-5" who="SYROES">
+          <sp who="SYROES" xml:id="III03-5">
             <speaker>SYROËS</speaker>
             <l n="868" xml:id="l868">Mien, quand vous prétendez, y placer votre fils.</l>
           </sp>
-          <sp xml:id="III03-6" who="SYRA">
+          <sp who="SYRA" xml:id="III03-6">
             <speaker>SYRA</speaker>
             <l n="869" xml:id="l869">Si le Sceptre est un faix, que le Roi lui dépose.</l>
           </sp>
-          <sp xml:id="III03-7" who="SYROES">
+          <sp who="SYROES" xml:id="III03-7">
             <speaker>SYROËS</speaker>
             <l n="870" xml:id="l870">Si la loi de l'État, autrement en dispose !</l>
           </sp>
-          <sp xml:id="III03-8" who="SYRA">
+          <sp who="SYRA" xml:id="III03-8">
             <speaker>SYRA</speaker>
             <l n="871" xml:id="l871">Le Roi n'étant point mort, vous n'avez point de droit.</l>
           </sp>
-          <sp xml:id="III03-9" who="SYROES">
+          <sp who="SYROES" xml:id="III03-9">
             <speaker>SYROËS</speaker>
             <l n="872" xml:id="l872">Quittant le nom de Roi, c'est à moi qu'il le doit.</l>
           </sp>
-          <sp xml:id="III03-10" who="SYRA">
+          <sp who="SYRA" xml:id="III03-10">
             <speaker>SYRA</speaker>
             <l n="873" xml:id="l873">Il croit servir l'État, par cette préférence.</l>
           </sp>
-          <sp xml:id="III03-11" who="SYROES">
+          <sp who="SYROES" xml:id="III03-11">
             <speaker>SYROËS</speaker>
             <l n="874" xml:id="l874">L'État, de l'un, et l'autre, a fait la différence.</l>
           </sp>
-          <sp xml:id="III03-12" who="SYRA">
+          <sp who="SYRA" xml:id="III03-12">
             <speaker>SYRA</speaker>
             <l n="875" xml:id="l875">Appelez-vous l'État, Pharnace et Palmyras !</l>
           </sp>
-          <sp xml:id="III03-13" who="SYROES">
+          <sp who="SYROES" xml:id="III03-13">
             <speaker>SYROËS</speaker>
             <l n="876" xml:id="l876">Quand on m'a voulu perdre, ils m'ont tendu les bras.</l>
           </sp>
-          <sp xml:id="III03-14" who="SYRA">
+          <sp who="SYRA" xml:id="III03-14">
             <speaker>SYRA</speaker>
             <l n="877" xml:id="l877">Et donné les conseils, dont ils vous empoisonnent.</l>
           </sp>
-          <sp xml:id="III03-15" who="SYROES">
+          <sp who="SYROES" xml:id="III03-15">
             <speaker>SYROËS</speaker>
             <l n="878" xml:id="l878">Il ne me prend point mal, des avis qu'ils me donnent.</l>
           </sp>
-          <sp xml:id="III03-16" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="III03-16">
             <speaker>PALMYRAS</speaker>
             <l n="879" xml:id="l879">Sire, l'ordre n'est point, de tant parlementer,</l>
             <l n="880" xml:id="l880">Avec des criminels, qu'on prescrit d'arrêter.</l>
           </sp>
-          <sp xml:id="III03-17" who="SYRA">
+          <sp who="SYRA" xml:id="III03-17">
             <speaker>SYRA</speaker>
-            <l n="881" xml:id="l881" part="I">Criminels, insolents ?</l>
+            <l n="881" part="I" xml:id="l881">Criminels, insolents ?</l>
           </sp>
-          <sp xml:id="III03-18" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="III03-18">
             <speaker>PALMYRAS</speaker>
             <l part="F">Les injures, Madame,</l>
             <l n="882" xml:id="l882">Sont dans le désespoir, les armes d'une femme ;</l>
             <l n="883" xml:id="l883">Et nous font moins de mal, que de compassion.</l>
             <l n="884" xml:id="l884">Sardarigue, achevez, votre commission.</l>
           </sp>
-          <sp xml:id="III03-19" who="SYRA">
+          <sp who="SYRA" xml:id="III03-19">
             <speaker>SYRA à Sardarigue.</speaker>
             <l n="885" xml:id="l885">Allons, délivre-moi, de ces objets funestes,</l>
             <l n="886" xml:id="l886">Ces horreurs de mes yeux, ces odieuses pestes,</l>
             <l n="887" xml:id="l887">N'importe où je les fuie, ils me sont plus affreux,</l>
             <l n="888" xml:id="l888">Que le plus noir cachot, qui m'éloignera d'eux,</l>
-            <l n="889" xml:id="l889" part="I">Allons.</l>
-            <stage type="[N/A]">Sardarigue l'emmène avec les Gardes.</stage>
+            <l n="889" part="I" xml:id="l889">Allons.</l>
+            <stage>Sardarigue l'emmène avec les Gardes.</stage>
           </sp>
-          <sp xml:id="III03-20" who="SYROES">
+          <sp who="SYROES" xml:id="III03-20">
             <speaker>SYROËS</speaker>
             <l part="F">Mon règne naît, sous de tristes auspices,</l>
             <l n="890" xml:id="l890">Si je lui dois, d'abord, du sang, et des supplices.</l>
           </sp>
-          <sp xml:id="III03-21" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="III03-21">
             <speaker>PALMYRAS</speaker>
             <l n="891" xml:id="l891">D'un trône, où l'on se veut établir sûrement,</l>
             <l n="892" xml:id="l892">Le sang des ennemis, est le vrai fondement ;</l>
@@ -1555,7 +1556,7 @@
             <l n="894" xml:id="l894">Et la pitié, n'est pas la vertu des Monarques ;</l>
             <l n="895" xml:id="l895">Du droit qu'on vous ravit, tout le Camp est jaloux,</l>
             <l n="896" xml:id="l896">Les voix nommant son fils, tous les coeurs sont pour vous,</l>
-            <l n="897" xml:id="l897">Il faut vaincre, ou périr,  en ce fameux divorce,</l>
+            <l n="897" xml:id="l897">Il faut vaincre, ou périr, en ce fameux divorce,</l>
             <l n="898" xml:id="l898">Héritier de Cyrus, héritier de sa force,</l>
             <l n="899" xml:id="l899">Qui rendit ce grand Roi, si craint, et si puissant,</l>
             <l n="900" xml:id="l900">Que les fameux proscrits, de son règne naissant ;</l>
@@ -1570,18 +1571,18 @@
             <l n="909" xml:id="l909">Qu'il faut d'un vigueur, mâle, et plus que commune,</l>
             <l n="910" xml:id="l910">Aider les changements, qu'entreprend la fortune.</l>
           </sp>
-          <sp xml:id="III03-22" who="SYROES">
+          <sp who="SYROES" xml:id="III03-22">
             <speaker>SYROËS</speaker>
             <l n="911" xml:id="l911">J'aurais d'autres rigueurs, pour d'autres ennemis ;</l>
             <l n="912" xml:id="l912">Mais je sens, quoique Roi, que je suis encore fils.</l>
           </sp>
-          <sp xml:id="III03-23" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="III03-23">
             <speaker>PALMYRAS</speaker>
             <l n="913" xml:id="l913">D'un père, qui pour vous, ne sent plus qu'il est père,</l>
             <l n="914" xml:id="l914">Qui ne reconnaît plus de fils, que votre frère,</l>
             <l n="915" xml:id="l915">Et pour vous en frustrer, l'admet en vos États.</l>
           </sp>
-          <sp xml:id="III03-24" who="SYROES">
+          <sp who="SYROES" xml:id="III03-24">
             <speaker>SYROËS</speaker>
             <l n="916" xml:id="l916">La raison est pour moi, mais le sang ne l'est pas,</l>
             <l n="917" xml:id="l917">Quelle fatalité, de devoir par un crime,</l>
@@ -1599,18 +1600,18 @@
             <l n="929" xml:id="l929">Revoyez les quartiers, et soignez que la ville,</l>
             <l n="930" xml:id="l930">Dans ce grand changement, nous soit un sûr asile.</l>
           </sp>
-          <sp xml:id="III03-25" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="III03-25">
             <speaker>PALMYRAS</speaker>
             <l n="931" xml:id="l931">Vous armant de vertu, tout succédera bien.</l>
           </sp>
-          <sp xml:id="III03-26" who="SYROES">
+          <sp who="SYROES" xml:id="III03-26">
             <speaker>SYROËS</speaker>
             <l n="932" xml:id="l932">Assurez-vous, des chefs, et ne négligez rien.</l>
             <l n="933" xml:id="l933">Cependant que je dompte un reste de faiblesse,</l>
             <l n="934" xml:id="l934">Qui dans mon coeur ; encor, souffre quelque tendresse.</l>
-            <stage type="exit">Palmyre sort.</stage>
+            <stage>Palmyre sort.</stage>
           </sp>
-          <sp xml:id="III03-27" who="SYROES">
+          <sp who="SYROES" xml:id="III03-27">
             <speaker>SYROËS seul, continue.</speaker>
             <l n="935" xml:id="l935">Que tu m'aurais, ô sort ! Dans un rang plus obscur,</l>
             <l n="936" xml:id="l936">Fait goûter un repos, bien plus calme, et plus pur ;</l>
@@ -1619,12 +1620,12 @@
             <l n="939" xml:id="l939">Et ce vain ornement, marque bien la rigueur,</l>
             <l n="940" xml:id="l940">De poignantes douleurs, qui nous percent le coeur ;</l>
             <l n="941" xml:id="l941">Celle qu'on veut m'ôter, à peine est sur ma tête,</l>
-            <l n="942" xml:id="l942">Mais Dieux, à quel combat,  faut-il que je m'apprête.</l>
+            <l n="942" xml:id="l942">Mais Dieux, à quel combat, faut-il que je m'apprête.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Narsée, Syroës, Gardes.</head>
-          <sp xml:id="III04-1" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-1">
             <speaker>NARSÉE</speaker>
             <l n="943" xml:id="l943">Apprenez-moi, Seigneur, le nom que je vous dois !</l>
             <l n="944" xml:id="l944">Parlai-je à mon amant, où parlai-je à mon Roi ?</l>
@@ -1635,7 +1636,7 @@
             <l n="949" xml:id="l949">Apprenez-moi mon sort, et par nos différences,</l>
             <l n="950" xml:id="l950">Réglant nos qualités, réglez mes déférences.</l>
           </sp>
-          <sp xml:id="III04-2" who="SYROES">
+          <sp who="SYROES" xml:id="III04-2">
             <speaker>SYROËS</speaker>
             <l n="951" xml:id="l951">Votre sort est le mien, notre amour l'a réglé,</l>
             <l n="952" xml:id="l952">Et le bandeau Royal, ne l'a point aveuglé ;</l>
@@ -1647,14 +1648,14 @@
             <l n="958" xml:id="l958">Je suis son souverain, et vous ma souveraine ;</l>
             <l n="959" xml:id="l959">Et mon pouvoir, accru, que le titre de Roi,</l>
             <l n="960" xml:id="l960">N'altère point, celui, que avez sur moi.</l>
-            <l n="961" xml:id="l961" part="I">Voilà nos qualités.</l>
+            <l n="961" part="I" xml:id="l961">Voilà nos qualités.</l>
           </sp>
-          <sp xml:id="III04-3" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-3">
             <speaker>NARSÉE</speaker>
             <l part="F">Quelle aveugle colère,</l>
             <l n="962" xml:id="l962">Vous fait donc oublier, que la Reine est ma mère ?</l>
           </sp>
-          <sp xml:id="III04-4" who="SYROES">
+          <sp who="SYROES" xml:id="III04-4">
             <speaker>SYROËS</speaker>
             <l n="963" xml:id="l963">La colère, Princesse, ou plutôt la raison,</l>
             <l n="964" xml:id="l964">Qui me fait de mon père, ordonner la prison,</l>
@@ -1667,19 +1668,19 @@
             <l n="971" xml:id="l971">Le mal qu'on veut guérir, ne se doit point flatter,</l>
             <l n="972" xml:id="l972">Et ce sont nos bourreaux, que je fais arrêter.</l>
           </sp>
-          <sp xml:id="III04-5" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-5">
             <speaker>NARSÉE</speaker>
             <l n="973" xml:id="l973">Nos bourreaux, les auteurs du jour qui nous éclaire !</l>
           </sp>
-          <sp xml:id="III04-6" who="SYROES">
+          <sp who="SYROES" xml:id="III04-6">
             <speaker>SYROËS</speaker>
             <l n="974" xml:id="l974">Les auteurs de l'affront, qu'ils nous ont voulu faire.</l>
           </sp>
-          <sp xml:id="III04-7" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-7">
             <speaker>NARSÉE</speaker>
             <l n="975" xml:id="l975">Un Empire, vaut-il, cette inhumanité !</l>
           </sp>
-          <sp xml:id="III04-8" who="SYROES">
+          <sp who="SYROES" xml:id="III04-8">
             <speaker>SYROËS</speaker>
             <l n="976" xml:id="l976">Vaut-il, nous menacer de cette indignité ?</l>
             <l n="977" xml:id="l977">Et qu'un père aveuglé, destine pour victime,</l>
@@ -1701,13 +1702,13 @@
             <l n="993" xml:id="l993">Et sur un échafaud, envoyer une tête,</l>
             <l n="994" xml:id="l994">Dont vos yeux, ont daigné d'avouer la conquête.</l>
           </sp>
-          <sp xml:id="III04-9" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-9">
             <speaker>NARSÉE</speaker>
             <l n="995" xml:id="l995">Redoutez-vous plus rien ? Et vos soins providents,</l>
             <l n="996" xml:id="l996">N'ont-ils pas su prévoir, à tous les accidents,</l>
             <l n="997" xml:id="l997">Que vous peut susciter le courroux d'une femme ?</l>
           </sp>
-          <sp xml:id="III04-10" who="SYROES">
+          <sp who="SYROES" xml:id="III04-10">
             <speaker>SYROËS</speaker>
             <l n="998" xml:id="l998">Tel, peut-être, nous rit ; qui nous trahit dans l'âme ;</l>
             <l n="999" xml:id="l999">Et cherche un mécontent, à qui prêter le bras,</l>
@@ -1717,17 +1718,17 @@
             <l n="1003" xml:id="l1003">Et souvent à leur foi, les peuples renonçants,</l>
             <l n="1004" xml:id="l1004">Aiment ceux affligés, qu'ils ont haïs puissants.</l>
           </sp>
-          <sp xml:id="III04-11" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-11">
             <speaker>NARSÉE</speaker>
             <l n="1005" xml:id="l1005">Une Reine en des fers, n'est donc pas affligée ?</l>
           </sp>
-          <sp xml:id="III04-12" who="SYROES">
+          <sp who="SYROES" xml:id="III04-12">
             <speaker>SYROËS</speaker>
             <l n="1006" xml:id="l1006">Elle n'est pas en lieu, d'en être soulagée ;</l>
             <l n="1007" xml:id="l1007">Et de mettre en usage, un reste de pouvoir</l>
             <l n="1008" xml:id="l1008">Qui pourrait pratiquer leur servile devoir.</l>
           </sp>
-          <sp xml:id="III04-13" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-13">
             <speaker>NARSÉE</speaker>
             <l n="1009" xml:id="l1009">N'attends point de succès, ô prière importune !</l>
             <l n="1010" xml:id="l1010">Je ne suis plus maîtresse, où règne la fortune ;</l>
@@ -1763,18 +1764,18 @@
             <l n="1040" xml:id="l1040">J'aurais plus obtenu, du secours de mes pleurs ;</l>
             <l n="1041" xml:id="l1041">Mais un extrême ennui, n'en est guère prodigue.</l>
           </sp>
-          <sp xml:id="III04-14" who="SYROES">
+          <sp who="SYROES" xml:id="III04-14">
             <speaker>SYROËS</speaker>
             <l n="1042" xml:id="l1042">Gardes, suivez Madame, Et cherchez Sardarigue,</l>
             <l n="1043" xml:id="l1043">Qu'il obéisse aux lois, qu'elle lui prescrira.</l>
             <l n="1044" xml:id="l1044">Et surtout, qu'en ses mains, il remette Syra ;</l>
-            <l n="1045" xml:id="l1045" part="I">Allez.</l>
+            <l n="1045" part="I" xml:id="l1045">Allez.</l>
           </sp>
-          <sp xml:id="III04-15" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-15">
             <speaker>NARSÉE</speaker>
             <l part="F">Cette faveur, vous coûte trop de peine,</l>
           </sp>
-          <sp xml:id="III04-16" who="SYROES">
+          <sp who="SYROES" xml:id="III04-16">
             <speaker>SYROËS</speaker>
             <l n="1046" xml:id="l1046">Non, non, je m'abandonne, aux fureurs de la Reine,</l>
             <l n="1047" xml:id="l1047">Et ne regarde plus, ni le droit qui m'est dû,</l>
@@ -1788,7 +1789,7 @@
             <l n="1055" xml:id="l1055">Et qu'au point du succès, dont je flattais mes voeux,</l>
             <l n="1056" xml:id="l1056">L'heur de vous posséder, me deviennent douteux,</l>
           </sp>
-          <sp xml:id="III04-17" who="NARSEE">
+          <sp who="NARSEE" xml:id="III04-17">
             <speaker>NARSÉE</speaker>
             <l n="1057" xml:id="l1057">Quoi que vous hasardiez, je cours même aventure,</l>
             <l n="1058" xml:id="l1058">Nous aurons même couche, ou même sépulture ;</l>
@@ -1803,7 +1804,7 @@
             <l n="1067" xml:id="l1067">Qui de vos ennemis, vous parera les coups,</l>
             <l n="1068" xml:id="l1068">Ou qu'il faudra percer, pour aller jusqu'à vous.</l>
           </sp>
-          <sp xml:id="III04-18" who="SYROES">
+          <sp who="SYROES" xml:id="III04-18">
             <speaker>SYROËS s'en allant d'un autre côté.</speaker>
             <l n="1069" xml:id="l1069">Réglez à votre gré, la fortune publique,</l>
             <l n="1070" xml:id="l1070">Usez, comme il vous plaît, d'un pouvoir tyrannique ;</l>
@@ -1812,23 +1813,23 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Syroës, Artanasde.</head>
-          <sp xml:id="IV01-1" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-1">
             <speaker>SYROËS lisant un billet.</speaker>
             <l n="1073" xml:id="l1073">Ce billet est un gage, à votre Majesté,</l>
             <l n="1074" xml:id="l1074">Qu'elle peut avec confiance,</l>
             <l n="1075" xml:id="l1075">Donner à son porteur, une entière créance,</l>
             <l n="1076" xml:id="l1076">Et s'assurer sur moi, de sa fidélité.</l>
-            <stage type="[N/A]">Palmyras.</stage>
+            <stage>Palmyras.</stage>
           </sp>
-          <sp xml:id="IV01-2" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-2">
             <speaker>SYROËS continue.</speaker>
-            <l n="1077" xml:id="l1077" part="I">Qu'est-ce Artanasde ?</l>
+            <l n="1077" part="I" xml:id="l1077">Qu'est-ce Artanasde ?</l>
           </sp>
-          <sp xml:id="IV01-3" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV01-3">
             <speaker>ARTANASDE</speaker>
             <l part="F">Ha Sire ! à la seule pensée,</l>
             <l n="1078" xml:id="l1078">De ce fatal rapport, j'ai l'âme encor glacée ;</l>
@@ -1838,22 +1839,22 @@
             <l n="1082" xml:id="l1082">M'a commis par ma soeur, un présent à vous faire,</l>
             <l n="1083" xml:id="l1083">Pour vous voir immoler, à son ressentiment,</l>
             <l n="1084" xml:id="l1084">Ou pour votre refus, en être l'instrument,</l>
-            <stage type="[N/A]">Lui montrant le poignard et le poison.</stage>
-            <l n="1085" xml:id="l1085" part="I">Ce fer, ou ce poison.</l>
+            <stage>Lui montrant le poignard et le poison.</stage>
+            <l n="1085" part="I" xml:id="l1085">Ce fer, ou ce poison.</l>
           </sp>
-          <sp xml:id="IV01-4" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-4">
             <speaker>SYROËS</speaker>
             <l part="F">Ô détestable femme !</l>
           </sp>
-          <sp xml:id="IV01-5" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV01-5">
             <speaker>ARTANASDE</speaker>
             <l n="1086" xml:id="l1086">De vos jours innocents, devait couper la trame ;</l>
           </sp>
-          <sp xml:id="IV01-6" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-6">
             <speaker>SYROËS</speaker>
-            <l n="1087" xml:id="l1087" part="I">Ô Dieux !</l>
+            <l n="1087" part="I" xml:id="l1087">Ô Dieux !</l>
           </sp>
-          <sp xml:id="IV01-7" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV01-7">
             <speaker>ARTANASDE</speaker>
             <l part="F">Et j'en ai l'ordre, à dessein accepté,</l>
             <l n="1088" xml:id="l1088">Craignant qu'un autre bras, ne l'eût exécuté ;</l>
@@ -1874,7 +1875,7 @@
             <l n="1103" xml:id="l1103">Mais travaillant ailleurs, il s'en est défendu,</l>
             <l n="1104" xml:id="l1104">Par le mot de sa main, que je vous ai rendu.</l>
           </sp>
-          <sp xml:id="IV01-8" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-8">
             <speaker>SYROËS</speaker>
             <l n="1105" xml:id="l1105">Artanasde, croyez, que ma reconnaissance,</l>
             <l n="1106" xml:id="l1106">Ne cessera jamais, qu'avecques ma puissance ;</l>
@@ -1887,16 +1888,16 @@
             <l n="1113" xml:id="l1113">Ô redoutable esprit, ô marâtre cruelle !</l>
             <l n="1114" xml:id="l1114">Trop pieuse Narsée, et mère indigne d'elle !</l>
           </sp>
-          <sp xml:id="IV01-9" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV01-9">
             <speaker>ARTANASDE</speaker>
             <l n="1115" xml:id="l1115">Non pas mère, Seigneur, et j'ai sur ce propos,</l>
             <l n="1116" xml:id="l1116">Un secret, qui regarde encore votre repos.</l>
           </sp>
-          <sp xml:id="IV01-10" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-10">
             <speaker>SYROËS</speaker>
             <l n="1117" xml:id="l1117">Quel secret, Artanasde ? éclairez-m'en, de grâce.</l>
           </sp>
-          <sp xml:id="IV01-11" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV01-11">
             <speaker>ARTANASDE</speaker>
             <l n="1118" xml:id="l1118">Puisque le sort de Perse, a pris une autre face ;</l>
             <l n="1119" xml:id="l1119">Sachez un accident, heureux pour votre amour,</l>
@@ -1904,11 +1905,11 @@
             <l n="1121" xml:id="l1121">Et dont la vérité fera voir que Narsée,</l>
             <l n="1122" xml:id="l1122">Au parti de Syra, n'est point intéressée.</l>
           </sp>
-          <sp xml:id="IV01-12" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-12">
             <speaker>SYROËS</speaker>
-            <l n="1123" xml:id="l1123" part="I">Ô Dieux !</l>
+            <l n="1123" part="I" xml:id="l1123">Ô Dieux !</l>
           </sp>
-          <sp xml:id="IV01-13" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV01-13">
             <speaker>ARTANASDE</speaker>
             <l part="F">Quand d'Abdenede, encore en son matin,</l>
             <l n="1124" xml:id="l1124">Une troisième course, eût tranché le destin ;</l>
@@ -1953,7 +1954,7 @@
             <l n="1163" xml:id="l1163">Et voit en ce jeune astre éclater des appas,</l>
             <l n="1164" xml:id="l1164">Dont vingt ans, ont fait croire, et pleurer le trépas.</l>
           </sp>
-          <sp xml:id="IV01-14" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-14">
             <speaker>SYROËS</speaker>
             <l n="1165" xml:id="l1165">Ô Dieux, si ce rapport, n'abuse mon oreille,</l>
             <l n="1166" xml:id="l1166">Qu'ai-je, à vous demander, après cette merveille !</l>
@@ -1967,7 +1968,7 @@
             <l n="1174" xml:id="l1174">N'aimait rien de Syra, quand il aimait Narsée,</l>
             <l n="1175" xml:id="l1175">Mais sur ce seul rapport, te puis-je ajouter foi,</l>
           </sp>
-          <sp xml:id="IV01-15" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV01-15">
             <speaker>ARTANASDE</speaker>
             <l n="1176" xml:id="l1176">Si les respects, qu'on doit, aux oreilles d'un Roi ;</l>
             <l n="1177" xml:id="l1177">Si la sincérité d'une âme assez loyale,</l>
@@ -1982,7 +1983,7 @@
             <l n="1186" xml:id="l1186">Vous n'en tirerez pas, des vérités plus pures ;</l>
             <l n="1187" xml:id="l1187">Quinze lustres, et plus, ont dû prouver ma foi.</l>
           </sp>
-          <sp xml:id="IV01-16" who="SYROES">
+          <sp who="SYROES" xml:id="IV01-16">
             <speaker>SYROËS</speaker>
             <l n="1188" xml:id="l1188">Quelles grâces, bons Dieux ! et quel heur je vous dois,</l>
             <l n="1189" xml:id="l1189">Et toi, qui rends le calme, à notre amour flottante,</l>
@@ -1991,9 +1992,9 @@
             <l n="1192" xml:id="l1192">Allons, et garde-moi, ce fer, et ce poison.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Sardarigue, Syroës, Gardes, Artanasde.</head>
-          <sp xml:id="IV02-1" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="IV02-1">
             <speaker>SARDARIGUE</speaker>
             <l n="1193" xml:id="l1193">Sire, votre grandeur, ne trouve plus d'obstacles ;</l>
             <l n="1194" xml:id="l1194">Chaque heure, chaque instant, vous produit des miracles ?</l>
@@ -2004,13 +2005,13 @@
             <l n="1199" xml:id="l1199">Est que tous les soldats, d'un même coeur unis,</l>
             <l n="1200" xml:id="l1200">Amènent prisonniers, Cosroës, et son fils.</l>
           </sp>
-          <sp xml:id="IV02-2" who="SYROES">
+          <sp who="SYROES" xml:id="IV02-2">
             <speaker>SYROËS</speaker>
             <l n="1201" xml:id="l1201">Cosroës ! Dieux ! je tremble ! et malgré ma colère,</l>
             <l n="1202" xml:id="l1202">À ce malheureux nom, connais encor mon père ;</l>
             <l n="1203" xml:id="l1203">Mais, pour se saisir d'eux, quel ordre a-t-on suivi ;</l>
           </sp>
-          <sp xml:id="IV02-3" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="IV02-3">
             <speaker>SARDARIGUE</speaker>
             <l n="1204" xml:id="l1204">Nul, que le zèle ardent, dont tous vous ont servi ;</l>
             <l n="1205" xml:id="l1205">À peine un bruit confus, de quelque voix forcées,</l>
@@ -2034,23 +2035,23 @@
             <l n="1223" xml:id="l1223">Pharnace les amène, et tout le camp qui suit,</l>
             <l n="1224" xml:id="l1224">Vient de ce zèle ardent, vous demander le fruit ;</l>
           </sp>
-          <sp xml:id="IV02-4" who="SYROES">
+          <sp who="SYROES" xml:id="IV02-4">
             <speaker>SYROËS pleurant.</speaker>
             <l n="1225" xml:id="l1225">Que votre faste est vain, ô grandeurs souveraines,</l>
             <l n="1226" xml:id="l1226">S'il peut si tôt changer, des Sceptres, en des chaînes.</l>
           </sp>
-          <sp xml:id="IV02-5" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="IV02-5">
             <speaker>SARDARIGUE</speaker>
             <l n="1227" xml:id="l1227">Goûtez mieux la faveur d'un changement si prompt,</l>
             <l n="1228" xml:id="l1228">N'en soyez pas ingrat, aux Dieux, qui vous la font.</l>
           </sp>
-          <sp xml:id="IV02-6" who="SYROES">
+          <sp who="SYROES" xml:id="IV02-6">
             <speaker>SYROËS</speaker>
             <l n="1229" xml:id="l1229">Sardarigue, souffrez, que ma douleur vous marque,</l>
             <l n="1230" xml:id="l1230">Les sentiments d'un fils, parmi ceux d'un Monarque ;</l>
             <l n="1231" xml:id="l1231">Et plaigne un père aux fers, qui régnait aujourd'hui ;</l>
           </sp>
-          <sp xml:id="IV02-7" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="IV02-7">
             <speaker>SARDARIGUE</speaker>
             <l n="1232" xml:id="l1232">Il vous a plus produit, pour l'État que pour lui ;</l>
             <l n="1233" xml:id="l1233">Considérez son crime, et non pas sa misère,</l>
@@ -2059,24 +2060,24 @@
             <l n="1236" xml:id="l1236">Le temps peut arracher, les armes de la main ;</l>
             <l n="1237" xml:id="l1237">Et les faire passer, en celle du coupable ;</l>
             <l n="1238" xml:id="l1238">Quand de le prévenir, on s'est fait incapable ;</l>
-            <l n="1239" xml:id="l1239" part="I">Le fera-t-on entrer ?</l>
+            <l n="1239" part="I" xml:id="l1239">Le fera-t-on entrer ?</l>
           </sp>
-          <sp xml:id="IV02-8" who="SYROES">
+          <sp who="SYROES" xml:id="IV02-8">
             <speaker>SYROËS pleurant.</speaker>
             <l part="F">Attendez, laissez-moi,</l>
             <l n="1240" xml:id="l1240">Reprendre auparavant des sentiments de Roi,</l>
             <l n="1241" xml:id="l1241">Puisqu'il faut étouffer la pitié qui me reste,</l>
             <l n="1242" xml:id="l1242">Laissez-moi préparer, à ce combat funeste,</l>
             <l n="1243" xml:id="l1243">Ou, contre les conseils, de mon ambition,</l>
-            <l n="1244" xml:id="l1244">Mon sang, sans l'avouer,  prend sa protection.</l>
+            <l n="1244" xml:id="l1244">Mon sang, sans l'avouer, prend sa protection.</l>
             <l n="1245" xml:id="l1245">Puis-je sans crime, hélas, lancer ce coup de foudre ;</l>
             <l n="1246" xml:id="l1246">Condamné par mes pleurs, quel Dieu pourra m'absoudre ?</l>
           </sp>
-          <sp xml:id="IV02-9" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="IV02-9">
             <speaker>SARDARIGUE</speaker>
             <l n="1247" xml:id="l1247">Ces faiblesses, Seigneur, démentent votre rang.</l>
           </sp>
-          <sp xml:id="IV02-10" who="SYROES">
+          <sp who="SYROES" xml:id="IV02-10">
             <speaker>SYROËS</speaker>
             <l n="1248" xml:id="l1248">Pour les faire cesser, faites taire mon sang,</l>
             <l n="1249" xml:id="l1249">Contre ses mouvements, ma résistance est vaine ;</l>
@@ -2089,9 +2090,9 @@
             <l n="1256" xml:id="l1256">Ô père infortuné, demande ton arrêt ;</l>
             <l n="1257" xml:id="l1257">J'ai son autorité, vainement combattue,</l>
             <l n="1258" xml:id="l1258">Et l'or de ta couronne, est le fer qui le tue.</l>
-            <stage type="exit">Il sort.</stage>
+            <stage>Il sort.</stage>
           </sp>
-          <sp xml:id="IV02-11" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="IV02-11">
             <speaker>SARDARIGUE seul;</speaker>
             <l n="1259" xml:id="l1259">Que ton droit, absolu, sur tout ce que nous sommes,</l>
             <l n="1260" xml:id="l1260">Est, comme aux plus petits, fatal aux plus grands hommes ?</l>
@@ -2099,43 +2100,43 @@
             <l n="1262" xml:id="l1262">Ne se peut dire, ô sort, exempt de tes revers.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Narsée, Gardes, Sardarigue.</head>
-          <sp xml:id="IV03-1" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV03-1">
             <speaker>NARSÉE</speaker>
             <l n="1263" xml:id="l1263">Suivez-moi, Sardarigue, et délivrez la Reine.</l>
           </sp>
-          <sp xml:id="IV03-2" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="IV03-2">
             <speaker>SARDARIGUE</speaker>
             <l n="1264" xml:id="l1264">Par votre hymen futur, je vous crois souveraine ;</l>
             <l n="1265" xml:id="l1265">Et sans l'examiner, recevrais cette loi ;</l>
             <l n="1266" xml:id="l1266">Mais, ce dessein, Madame, importe trop au Roi,</l>
             <l n="1267" xml:id="l1267">Pour...</l>
           </sp>
-          <sp xml:id="IV03-3" who="GARDE">
+          <sp who="GARDES" xml:id="IV03-3">
             <speaker>Un GARDE</speaker>
             <l part="F">J'en apporte l'ordre, et je viens vous l'apprendre</l>
-            <stage type="[N/A]">Palmyras entre.</stage>
+            <stage>Palmyras entre.</stage>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Palmyras, Narsée, Sardarigue, Gardes.</head>
-          <sp xml:id="IV04-1" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-1">
             <speaker>PALMYRAS</speaker>
             <l n="1268" xml:id="l1268">J'en apporte un contraire, et viens vous le défendre ;</l>
           </sp>
-          <sp xml:id="IV04-2" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-2">
             <speaker>NARSÉE</speaker>
-            <l n="1269" xml:id="l1269" part="I">Me connaissez-vous, Prince ?</l>
+            <l n="1269" part="I" xml:id="l1269">Me connaissez-vous, Prince ?</l>
           </sp>
-          <sp xml:id="IV04-3" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-3">
             <speaker>PALMYRAS</speaker>
             <l part="F">Oui, Madame, et connais,</l>
             <l n="1270" xml:id="l1270">Ce que vous me devez, et ce que je vous dois ;</l>
             <l n="1271" xml:id="l1271">Mais, il n'est pas de saison de m'ouvrir davantage.</l>
-            <stage type="[N/A]">Sardarigue s'en va.</stage>
+            <stage>Sardarigue s'en va.</stage>
           </sp>
-          <sp xml:id="IV04-4" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-4">
             <speaker>NARSÉE</speaker>
             <l n="1272" xml:id="l1272">L'État, de vos conseils, tire un grand avantage ;</l>
             <l n="1273" xml:id="l1273">Le trouble qui l'agite, et que vous y semez,</l>
@@ -2143,76 +2144,76 @@
             <l n="1275" xml:id="l1275">Ont fait naître un divorce en la maison Royale,</l>
             <l n="1276" xml:id="l1276">Qui part d'un zèle ardent ? et d'une âme loyale !</l>
           </sp>
-          <sp xml:id="IV04-5" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-5">
             <speaker>PALMYRAS</speaker>
             <l n="1277" xml:id="l1277">Ce divorce, vous monte, en un si haut degré,</l>
             <l n="1278" xml:id="l1278">Que vous serez ingrate, ou vous m'en saurez gré.</l>
           </sp>
-          <sp xml:id="IV04-6" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-6">
             <speaker>NARSÉE</speaker>
             <l n="1279" xml:id="l1279">La Reine étant aux fers, toute grandeur m'est vaine.</l>
           </sp>
-          <sp xml:id="IV04-7" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-7">
             <speaker>PALMYRAS</speaker>
             <l n="1280" xml:id="l1280">L'État, ne connaît plus, et n'a que vous de Reine.</l>
           </sp>
-          <sp xml:id="IV04-8" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-8">
             <speaker>NARSÉE</speaker>
             <l n="1281" xml:id="l1281">Vos devoirs, en effet, me le montrent assez !</l>
           </sp>
-          <sp xml:id="IV04-9" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-9">
             <speaker>PALMYRAS</speaker>
             <l n="1282" xml:id="l1282">Je vous en ai rendu, plus que vous ne pensez.</l>
           </sp>
-          <sp xml:id="IV04-10" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-10">
             <speaker>NARSÉE</speaker>
             <l n="1283" xml:id="l1283">Entre autres, ce dernier, prouve fort votre zèle.</l>
           </sp>
-          <sp xml:id="IV04-11" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-11">
             <speaker>PALMYRAS</speaker>
             <l n="1284" xml:id="l1284">Vous saurez quelque jour, si je vous suis fidèle.</l>
           </sp>
-          <sp xml:id="IV04-12" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-12">
             <speaker>NARSÉE</speaker>
             <l n="1285" xml:id="l1285">Si l'on craint pour le Roi, je réponds de ses jours.</l>
           </sp>
-          <sp xml:id="IV04-13" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-13">
             <speaker>PALMYRAS</speaker>
             <l n="1286" xml:id="l1286">J'en réponds, sans vos soins, et sans votre secours.</l>
           </sp>
-          <sp xml:id="IV04-14" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-14">
             <speaker>NARSÉE</speaker>
             <l n="1287" xml:id="l1287">J'admire, quelle ardeur, son salut vous excite !</l>
           </sp>
-          <sp xml:id="IV04-15" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-15">
             <speaker>PALMYRAS</speaker>
             <l n="1288" xml:id="l1288">Le temps vous en fera connaître le mérite.</l>
           </sp>
-          <sp xml:id="IV04-16" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-16">
             <speaker>NARSÉE</speaker>
             <l n="1289" xml:id="l1289">J'ai malgré mon courroux, du respect pour le Roi.</l>
           </sp>
-          <sp xml:id="IV04-17" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-17">
             <speaker>PALMYRAS</speaker>
             <l n="1290" xml:id="l1290">Quand vous me connaîtrez, vous en aurez pour moi !</l>
           </sp>
-          <sp xml:id="IV04-18" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-18">
             <speaker>NARSÉE</speaker>
             <l n="1291" xml:id="l1291">Quel objet de respect, l'ennemi de ma mère !</l>
           </sp>
-          <sp xml:id="IV04-19" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-19">
             <speaker>PALMYRAS</speaker>
             <l n="1292" xml:id="l1292">Votre mère, plutôt, m'a toujours été chère !</l>
           </sp>
-          <sp xml:id="IV04-20" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-20">
             <speaker>NARSÉE</speaker>
             <l n="1293" xml:id="l1293">Vous la faites, du moins garder avec grand soin.</l>
           </sp>
-          <sp xml:id="IV04-21" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-21">
             <speaker>PALMYRAS</speaker>
             <l n="1294" xml:id="l1294">Je m'expliquerai mieux, quand il sera besoin.</l>
           </sp>
-          <sp xml:id="IV04-22" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-22">
             <speaker>NARSÉE</speaker>
             <l n="1295" xml:id="l1295">Enfin, tout mon crédit, ô déplorable Reine,</l>
             <l n="1296" xml:id="l1296">De vos persécuteurs, ne peut vaincre la haine ;</l>
@@ -2221,12 +2222,12 @@
             <l n="1299" xml:id="l1299">Ô barbare amitié, qui produit le servage ?</l>
             <l n="1300" xml:id="l1300">Dont les pleurs sont un fruit, et les chaînes un gage.</l>
           </sp>
-          <sp xml:id="IV04-23" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-23">
             <speaker>PALMYRAS</speaker>
             <l n="1301" xml:id="l1301">Ni la mort de Syra, ni sa captivité,</l>
             <l n="1302" xml:id="l1302">N'importe en rien, Madame, à votre Majesté ;</l>
           </sp>
-          <sp xml:id="IV04-24" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV04-24">
             <speaker>NARSÉE</speaker>
             <l n="1303" xml:id="l1303">Ha ! comment contenir, la douleur qui m'emporte.</l>
             <l n="1304" xml:id="l1304">La prison de Syra, ni sa mort ne m'importe.</l>
@@ -2235,7 +2236,7 @@
             <l n="1307" xml:id="l1307">On naissant, suça-t-il, au sein d'une Lionne,</l>
             <l n="1308" xml:id="l1308">Les cruels, sentiments, que mon malheur lui donne ?</l>
           </sp>
-          <sp xml:id="IV04-25" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV04-25">
             <speaker>PALMYRAS</speaker>
             <l n="1309" xml:id="l1309">Votre ennui m'attendrit ; ô Nature, il est temps,</l>
             <l n="1310" xml:id="l1310">Que tu mettes au jour, un secret de vingt ans ;</l>
@@ -2246,9 +2247,9 @@
             <l n="1315" xml:id="l1315">Et si j'obtiens de vous, un peu de confiance...</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Artanasde, Palmyras, Narsée.</head>
-          <sp xml:id="IV05-1" who="ARTANASDE">
+          <sp who="ARTANASDE" xml:id="IV05-1">
             <speaker>ARTANASDE</speaker>
             <l n="1316" xml:id="l1316">Seigneur, on vous souhaite, avec impatience,</l>
             <l n="1317" xml:id="l1317">On voit l'esprit du Roi, si fort irrésolu,</l>
@@ -2261,19 +2262,19 @@
             <l n="1324" xml:id="l1324">Son esprit, ne reprend, une assiette plus ferme ;</l>
             <l n="1325" xml:id="l1325">Et l'on attend, Seigneur, cet effort que de vous.</l>
           </sp>
-          <sp xml:id="IV05-2" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="IV05-2">
             <speaker>PALMYRAS</speaker>
             <l n="1326" xml:id="l1326">De nos têtes, ô Ciel, détourne ton courroux !</l>
             <l n="1327" xml:id="l1327">Sauve un Roi trop pieux, de sa propre faiblesse,</l>
             <l n="1328" xml:id="l1328">Et ceux, qu'en son parti, sa fortune intéresse ;</l>
             <l n="1329" xml:id="l1329">Voyons le Roi, Madame, Artanasde, et sa soeur,</l>
             <l n="1330" xml:id="l1330">Achèveront pour moi, de vous ouvrir mon coeur ;</l>
-            <stage type="[N/A]">Parlant à Narsée.</stage>
+            <stage>Parlant à Narsée.</stage>
             <l n="1331" xml:id="l1331">Et moins intéressés, me feront mieux entendre.</l>
           </sp>
-          <sp xml:id="IV05-3" who="NARSEE">
+          <sp who="NARSEE" xml:id="IV05-3">
             <speaker>NARSÉE s'en allant.</speaker>
-            <stage type="mezzo voce">Bas.</stage>
+            <stage>Bas.</stage>
             <l n="1332" xml:id="l1332">Dieux ! Quel est cette énigme, et qu'y puis-je comprendre !</l>
             <note>Dans l'édition originale « enigme » est au singulier.</note>
             <l n="1333" xml:id="l1333">Quel jour puis-je tirer, de tant d'obscurité !</l>
@@ -2281,11 +2282,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Syra, Sardarigue, Gardes.</head>
-          <sp xml:id="V01-1" who="SYRA">
+          <sp who="SYRA" xml:id="V01-1">
             <speaker>SYRA</speaker>
             <l n="1335" xml:id="l1335">Moi, lâche ? Moi, le craindre, au point de le prier,</l>
             <l n="1336" xml:id="l1336">Moi, qui porte un coeur libre, en un corps prisonnier !</l>
@@ -2306,22 +2307,22 @@
             <l n="1351" xml:id="l1351">Si pour ce qu'à mes yeux, il reste de clarté,</l>
             <l n="1352" xml:id="l1352">J'avais à souhaiter un peu de liberté,</l>
             <l n="1353" xml:id="l1353">Ce serait, pour pouvoir mourir son homicide ;</l>
-            <stage type="[N/A]">Syroës, Palmyras et Pharnace entrent, et l'écoutent.</stage>
+            <stage>Syroës, Palmyras et Pharnace entrent, et l'écoutent.</stage>
             <l n="1354" xml:id="l1354">Et si je l'attaquais, d'un bras mol, et timide,</l>
             <l n="1355" xml:id="l1355">Comme ce lâche coeur, que j'avais pratiqué,</l>
             <l n="1356" xml:id="l1356">Il se pourrait vanter, que je l'aurais manqué.</l>
-            <l n="1357" xml:id="l1357" part="I">Mais...</l>
+            <l n="1357" part="I" xml:id="l1357">Mais...</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Syroës, Palmyras, Pharnace, Syra, Sardarigue, Gardes.</head>
-          <sp xml:id="V02-1" who="SYROES">
+          <sp who="SYROES" xml:id="V02-1">
             <speaker>SYROËS assis.</speaker>
             <l part="F">Nous venons pourvoir, contre la violence,</l>
             <l n="1358" xml:id="l1358">Et de votre furie, et de votre insolence.</l>
-            <l n="1359" xml:id="l1359" part="I">Hé bien, Madame !</l>
+            <l n="1359" part="I" xml:id="l1359">Hé bien, Madame !</l>
           </sp>
-          <sp xml:id="V02-2" who="SYRA">
+          <sp who="SYRA" xml:id="V02-2">
             <speaker>SYRA</speaker>
             <l part="F">Hé bien, traître, te voilà Roi ?</l>
             <l n="1360" xml:id="l1360">La pointe de mes traits, a tourné contre moi ;</l>
@@ -2338,14 +2339,14 @@
             <l n="1371" xml:id="l1371">Est-ce assez ? les témoins sont ici superflus,</l>
             <l n="1372" xml:id="l1372">Mon procès est bien court, prononce là-dessus.</l>
           </sp>
-          <sp xml:id="V02-3" who="SYROES">
+          <sp who="SYROES" xml:id="V02-3">
             <speaker>SYROËS</speaker>
             <l n="1373" xml:id="l1373">J'admire ce grand coeur, et nous devons, Madame,</l>
             <l n="1374" xml:id="l1374">Un renom mémorable, à cette force d'âme ;</l>
             <l n="1375" xml:id="l1375">Vous avez dans l'État, avec ce grand courroux,</l>
             <l n="1376" xml:id="l1376">Fait de grands changements, mais funestes pour vous.</l>
           </sp>
-          <sp xml:id="V02-4" who="SYRA">
+          <sp who="SYRA" xml:id="V02-4">
             <speaker>SYRA</speaker>
             <l n="1377" xml:id="l1377">Je considère peu, ce qui m'en est funeste ?</l>
             <l n="1378" xml:id="l1378">Tout le mal qui m'en vient, est le bien qui t'en reste ;</l>
@@ -2353,7 +2354,7 @@
             <l n="1380" xml:id="l1380">Si sujet de mon fils, tu survivais ma mort ;</l>
             <l n="1381" xml:id="l1381">Ou si de tes destins, j'avais tranché la trame.</l>
           </sp>
-          <sp xml:id="V02-5" who="SYROES">
+          <sp who="SYROES" xml:id="V02-5">
             <speaker>SYROËS</speaker>
             <l n="1382" xml:id="l1382">C'étaient de grands desseins, pour la main d'une femme ;</l>
             <l n="1383" xml:id="l1383">Et qui méritaient bien, d'en délibérer mieux,</l>
@@ -2373,7 +2374,7 @@
             <l n="1397" xml:id="l1397">Doutez-vous, que l'objet, de leurs soins plus augustes,</l>
             <l n="1398" xml:id="l1398">Est l'intérêt des Rois, dont les causes sont justes ?</l>
           </sp>
-          <sp xml:id="V02-6" who="SYRA">
+          <sp who="SYRA" xml:id="V02-6">
             <speaker>SYRA</speaker>
             <l n="1399" xml:id="l1399">Ils l'ont mal témoigné, quittant notre parti,</l>
             <l n="1400" xml:id="l1400">Et souffrant pour le tien, ce qu'ils ont consenti ;</l>
@@ -2384,13 +2385,13 @@
             <l n="1405" xml:id="l1405">Chaque trait m'en punit, chaque regard m'en tue,</l>
             <l n="1406" xml:id="l1406">Et mon plus grand supplice, est celui de ta vue.</l>
           </sp>
-          <sp xml:id="V02-7" who="SYROES">
+          <sp who="SYROES" xml:id="V02-7">
             <speaker>SYROËS</speaker>
             <l n="1407" xml:id="l1407">Il vous faut affranchir, d'un si cruel tourment ?</l>
-            <stage type="[N/A]">Il parle aux Satrapes.</stage>
+            <stage>Il parle aux Satrapes.</stage>
             <l n="1408" xml:id="l1408">Princes, délivrez-l'en par votre jugement.</l>
           </sp>
-          <sp xml:id="V02-8" who="SYRA">
+          <sp who="SYRA" xml:id="V02-8">
             <speaker>SYRA</speaker>
             <l n="1409" xml:id="l1409">Délibère cruel, consulte tes Ministres,</l>
             <l n="1410" xml:id="l1410">Nos malheurs sont le fruit, de leurs avis sinistres ;</l>
@@ -2403,31 +2404,31 @@
             <l n="1417" xml:id="l1417">Hé bien perfide ! lâches suppôts de traîtres,</l>
             <l n="1418" xml:id="l1418">Qu'avez-vous résolu, mes Juges, et mes Maîtres ?</l>
           </sp>
-          <sp xml:id="V02-9" who="SYROES">
+          <sp who="SYROES" xml:id="V02-9">
             <speaker>SYROËS lui montrant le poignard et le poison, qu'un Garde lui baille.</speaker>
             <l n="1419" xml:id="l1419">On m'a de votre part, apporté ces présents.</l>
           </sp>
-          <sp xml:id="V02-10" who="SYRA">
+          <sp who="SYRA" xml:id="V02-10">
             <speaker>SYRA</speaker>
-            <l n="1420" xml:id="l1420" part="I">Hé, bien ?</l>
+            <l n="1420" part="I" xml:id="l1420">Hé, bien ?</l>
           </sp>
-          <sp xml:id="V02-11" who="SYROES">
+          <sp who="SYROES" xml:id="V02-11">
             <speaker>SYROËS</speaker>
             <l part="F">Les trouvez-vous, des témoins suffisants,</l>
             <l n="1421" xml:id="l1421">Ou s'il faut autre chose, afin de vous confondre ?</l>
           </sp>
-          <sp xml:id="V02-12" who="SYRA">
+          <sp who="SYRA" xml:id="V02-12">
             <speaker>SYRA</speaker>
             <l n="1422" xml:id="l1422">Quand j'ai tout avoué, je n'ai rien à répondre ;</l>
             <l n="1423" xml:id="l1423">Je prends droit par moi-même, et mon plus grand forfait,</l>
             <l n="1424" xml:id="l1424">Est, non d'avoir osé, mais osé sans effet.</l>
           </sp>
-          <sp xml:id="V02-13" who="SYROES">
+          <sp who="SYROES" xml:id="V02-13">
             <speaker>SYROËS</speaker>
             <l n="1425" xml:id="l1425">Les instruments du mal, le seront du supplice,</l>
             <l n="1426" xml:id="l1426">Choisissez l'un des deux, et faites-vous justice ;</l>
           </sp>
-          <sp xml:id="V02-14" who="SYRA">
+          <sp who="SYRA" xml:id="V02-14">
             <speaker>SYRA</speaker>
             <l n="1427" xml:id="l1427">C'est quelque grâce, encor, je n'osais l'espérer ;</l>
             <l n="1428" xml:id="l1428">Je choisis le poison, fais-le moi préparer ;</l>
@@ -2443,23 +2444,23 @@
             <l n="1438" xml:id="l1438">De recevoir des lois, d'une main ennemie,</l>
             <l n="1439" xml:id="l1439">Vivant, de son crédit, tu craindrais les effets ;</l>
           </sp>
-          <sp xml:id="V02-15" who="SYROES">
+          <sp who="SYROES" xml:id="V02-15">
             <speaker>SYROËS</speaker>
             <l n="1440" xml:id="l1440">Vos voeux sont généreux, ils seront satisfaits ;</l>
             <l n="1441" xml:id="l1441">Qu'il entre, Sardarigue, et remenez la Reine.</l>
           </sp>
-          <sp xml:id="V02-16" who="SYRA">
+          <sp who="SYRA" xml:id="V02-16">
             <speaker>SYRA sortant superbement, et en furie.</speaker>
             <l n="1442" xml:id="l1442">Reine est ma qualité, quand tu sais qu'elle est vaine !</l>
             <l n="1443" xml:id="l1443">Hier, j'étais ta Marâtre, et je tiens à grand bien,</l>
-            <stage type="exit">Elle sort avec Sardarigue et les Gardes.</stage>
+            <stage>Elle sort avec Sardarigue et les Gardes.</stage>
             <l n="1444" xml:id="l1444">De mourir aujourd'hui, pour ne t'être plus rien.</l>
           </sp>
-          <sp xml:id="V02-17" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="V02-17">
             <speaker>PALMYRAS</speaker>
             <l n="1445" xml:id="l1445">Donnez au désespoir, ces reproches frivoles.</l>
           </sp>
-          <sp xml:id="V02-18" who="SYROES">
+          <sp who="SYROES" xml:id="V02-18">
             <speaker>SYROËS</speaker>
             <l n="1446" xml:id="l1446">Elle est femme, elle meurt, et ce sont des paroles ;</l>
             <l n="1447" xml:id="l1447">Bien plus si l'intérêt, de mon autorité,</l>
@@ -2469,7 +2470,7 @@
             <l n="1451" xml:id="l1451">Et malgré tant d'effets de son aversion,</l>
             <l n="1452" xml:id="l1452">Préférerais sa grâce, à sa punition.</l>
           </sp>
-          <sp xml:id="V02-19" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="V02-19">
             <speaker>PALMYRAS</speaker>
             <l n="1453" xml:id="l1453">Remettant l'intérêt, qui touche sa personne,</l>
             <l n="1454" xml:id="l1454">Un Roi, ne peut donner, celui de la Couronne ;</l>
@@ -2480,16 +2481,16 @@
             <l n="1459" xml:id="l1459">Et l'indulgence, enfin, qui hasarde un État,</l>
             <l n="1460" xml:id="l1460">Est le plus grand défaut, qu'ait un grand Potentat.</l>
           </sp>
-          <sp xml:id="V02-20" who="SYROES">
+          <sp who="SYROES" xml:id="V02-20">
             <speaker>SYROËS</speaker>
             <l n="1461" xml:id="l1461">Le voici, tout son crime, est l'orgueil de sa mère,</l>
-            <stage type="[N/A]">On amène Mardesane.</stage>
+            <stage>On amène Mardesane.</stage>
             <l n="1462" xml:id="l1462">Et mon ressentiment, soutient mal ma colère.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Syroës, Mardesane, Sardarigue, Gardes, Palmyras, Pharnace.</head>
-          <sp xml:id="V03-1" who="SYROES">
+          <sp who="SYROES" xml:id="V03-1">
             <speaker>SYROËS continue.</speaker>
             <l n="1463" xml:id="l1463">Enfin, vous avez mal, observé mes avis,</l>
             <l n="1464" xml:id="l1464">Prince ! Il vous serait mieux, de les avoir suivis ;</l>
@@ -2502,81 +2503,81 @@
             <l n="1471" xml:id="l1471">Enfin, suis-je avec droit, d'un Empire jaloux,</l>
             <l n="1472" xml:id="l1472">Et le sceptre de Perse, est-il un faix bien doux ?</l>
           </sp>
-          <sp xml:id="V03-2" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-2">
             <speaker>MARDESANE</speaker>
             <l n="1473" xml:id="l1473">Pour avoir pu goûter, la douceur qui s'y trouve,</l>
             <l n="1474" xml:id="l1474">Il en eût fallu faire, une plus longue épreuve ;</l>
           </sp>
-          <sp xml:id="V03-3" who="SYROES">
+          <sp who="SYROES" xml:id="V03-3">
             <speaker>SYROËS</speaker>
             <l n="1475" xml:id="l1475">L'acceptant, vous devez, vous consulter un peu ;</l>
             <l n="1476" xml:id="l1476">Ne vous doutiez-vous pas, qu'un Sceptre était de feu ?</l>
             <l n="1477" xml:id="l1477">Et qu'y portant la main, il vous serait nuisible ?</l>
           </sp>
-          <sp xml:id="V03-4" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-4">
             <speaker>MARDESANE</speaker>
             <l n="1478" xml:id="l1478">En effet, cette épreuve, en vous-même est visible,</l>
             <l n="1479" xml:id="l1479">Quand pour l'avoir touché, vous brûlez de courroux.</l>
           </sp>
-          <sp xml:id="V03-5" who="SYROES">
+          <sp who="SYROES" xml:id="V03-5">
             <speaker>SYROËS</speaker>
             <l n="1480" xml:id="l1480">Mais, par quel droit, encor, vous en empariez-vous ?</l>
           </sp>
-          <sp xml:id="V03-6" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-6">
             <speaker>MARDESANE</speaker>
             <l n="1481" xml:id="l1481">Par droit d'obéissance, et par l'ordre d'un père.</l>
           </sp>
-          <sp xml:id="V03-7" who="SYROES">
+          <sp who="SYROES" xml:id="V03-7">
             <speaker>SYROËS</speaker>
             <l n="1482" xml:id="l1482">Contre un droit naturel, quel père m'est contraire ?</l>
           </sp>
-          <sp xml:id="V03-8" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-8">
             <speaker>MARDESANE</speaker>
             <l n="1483" xml:id="l1483">Quel ! le vôtre, et le mien, qui juge de son sang ;</l>
             <l n="1484" xml:id="l1484">À selon son désir, disposé de son rang.</l>
           </sp>
-          <sp xml:id="V03-9" who="SYROES">
+          <sp who="SYROES" xml:id="V03-9">
             <speaker>SYROËS</speaker>
             <l n="1485" xml:id="l1485">Il a fondé ce choix, dessus votre mérite.</l>
           </sp>
-          <sp xml:id="V03-10" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-10">
             <speaker>MARDESANE</speaker>
             <l n="1486" xml:id="l1486">Je n'ai point expliqué la loi, qu'il m'a prescrite !</l>
           </sp>
-          <sp xml:id="V03-11" who="SYROES">
+          <sp who="SYROES" xml:id="V03-11">
             <speaker>SYROËS</speaker>
             <l n="1487" xml:id="l1487">Vous exécutez mal, la foi que vous donnez ;</l>
             <l n="1488" xml:id="l1488">Je vous la tiendrai mieux, que vous ne la tenez.</l>
           </sp>
-          <sp xml:id="V03-12" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-12">
             <speaker>MARDESANE</speaker>
             <l n="1489" xml:id="l1489">Généreux, j'aime mieux avouer une offense,</l>
             <l n="1490" xml:id="l1490">Que timide, et tremblant, parler en ma défense.</l>
           </sp>
-          <sp xml:id="V03-13" who="SYROES">
+          <sp who="SYROES" xml:id="V03-13">
             <speaker>SYROËS</speaker>
             <l n="1491" xml:id="l1491">Juste, j'ai plus de lieu, de vous faire punir,</l>
             <l n="1492" xml:id="l1492">Que lâche, d'un affront, perdre le souvenir,</l>
           </sp>
-          <sp xml:id="V03-14" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-14">
             <speaker>MARDESANE</speaker>
             <l n="1493" xml:id="l1493">Vous en vengeant, au moins, vous n'aurez pas la gloire,</l>
             <l n="1494" xml:id="l1494">D'avoir été prié, d'en perdre la mémoire.</l>
           </sp>
-          <sp xml:id="V03-15" who="SYROES">
+          <sp who="SYROES" xml:id="V03-15">
             <speaker>SYROËS</speaker>
-            <l n="1495" xml:id="l1495" part="I">Vous avez trop de coeur !</l>
+            <l n="1495" part="I" xml:id="l1495">Vous avez trop de coeur !</l>
           </sp>
-          <sp xml:id="V03-16" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-16">
             <speaker>MARDESANE</speaker>
             <l part="F">Assez, pour faire voir,</l>
             <l n="1496" xml:id="l1496">Une grande vertu, dans un grand désespoir.</l>
           </sp>
-          <sp xml:id="V03-17" who="SYROES">
+          <sp who="SYROES" xml:id="V03-17">
             <speaker>SYROËS</speaker>
-            <l n="1497" xml:id="l1497" part="I">Mais, il se produit tard.</l>
+            <l n="1497" part="I" xml:id="l1497">Mais, il se produit tard.</l>
           </sp>
-          <sp xml:id="V03-18" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-18">
             <speaker>MARDESANE</speaker>
             <l part="F">Assez tôt, pour déplaire,</l>
             <l n="1498" xml:id="l1498">À qui brûlant d'orgueil, voit braver sa colère.</l>
@@ -2601,11 +2602,11 @@
             <l n="1517" xml:id="l1517">Et pour me conserver, le bien de la lumière,</l>
             <l n="1518" xml:id="l1518">À votre vanité, plaindrais une prière.</l>
           </sp>
-          <sp xml:id="V03-19" who="SYROES">
+          <sp who="SYROES" xml:id="V03-19">
             <speaker>SYROËS</speaker>
             <l n="1519" xml:id="l1519">Hé bien Prince, la mort, domptera cet orgueil !</l>
           </sp>
-          <sp xml:id="V03-20" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-20">
             <speaker>MARDESANE</speaker>
             <l n="1520" xml:id="l1520">On ne peut mieux tomber, du trône, qu'au cercueil ;</l>
             <l n="1521" xml:id="l1521">L'ardeur de commander,trop puissamment convie,</l>
@@ -2630,34 +2631,34 @@
             <l n="1540" xml:id="l1540">Et tout ce qu'à ma peur, vous pouvez reprocher ;</l>
             <l n="1541" xml:id="l1541">J'en laisse à décider, à votre tyrannie.</l>
           </sp>
-          <sp xml:id="V03-21" who="SYROES">
+          <sp who="SYROES" xml:id="V03-21">
             <speaker>SYROËS</speaker>
             <l n="1542" xml:id="l1542">J'inclinais, à laisser, votre offense impunie ;</l>
             <l n="1543" xml:id="l1543">Mais vous vous opposez, avec trop de fierté,</l>
             <l n="1544" xml:id="l1544">Aux pieux mouvements, de cette impunité,</l>
             <l n="1545" xml:id="l1545">Et ménagez trop mal, le soin de votre tête,</l>
-            <l n="1546" xml:id="l1546" part="I">Ôtez-le, Sardarigue.</l>
+            <l n="1546" part="I" xml:id="l1546">Ôtez-le, Sardarigue.</l>
           </sp>
-          <sp xml:id="V03-22" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-22">
             <speaker>MARDESANE</speaker>
             <l part="F">Allons la voilà prête.</l>
           </sp>
-          <sp xml:id="V03-23" who="SYROES">
+          <sp who="SYROES" xml:id="V03-23">
             <speaker>SYROËS</speaker>
             <l n="1547" xml:id="l1547">Et pour punir d'un temps, l'orgueil désordonné,</l>
             <l n="1548" xml:id="l1548">Des yeux, si désireux, de le voir couronné,</l>
             <l n="1549" xml:id="l1549">Faites ceux de Syra, témoins de ce spectacle.</l>
           </sp>
-          <sp xml:id="V03-24" who="MARDESANE">
+          <sp who="MARDESANE" xml:id="V03-24">
             <speaker>MARDESANE sortant avec Sardarigue.</speaker>
             <l n="1550" xml:id="l1550">Allons, Règne, Tyran, règne, enfin, sans obstacle,</l>
             <l n="1551" xml:id="l1551">J'ai reçu de mon père, avecques son pouvoir,</l>
             <l n="1552" xml:id="l1552">Celui, d'aller trouver la mort, sans désespoir ;</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. Syroës, Palmyras, Pharnaces, Gardes.</head>
-          <sp xml:id="V04-1" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="V04-1">
             <speaker>PALMYRAS</speaker>
             <l n="1553" xml:id="l1553">J'admire la vertu, qu'un sceptre vous apporte,</l>
             <l n="1554" xml:id="l1554">Vous le méritez, Sire, avec cette âme forte ;</l>
@@ -2666,43 +2667,43 @@
             <l n="1557" xml:id="l1557">Vous vaincrez tout, grand Prince, en vous vainquant vous-même ;</l>
             <l n="1558" xml:id="l1558">Mais, il reste une épreuve, à cette force extrême,</l>
             <l n="1559" xml:id="l1559">Et c'est ici, qu'il faut montrer tout Syroës ;</l>
-            <stage type="toward">À un garde.</stage>
+            <stage>À un garde.</stage>
             <l n="1560" xml:id="l1560">Garde, avec Sardarigue, amenez Cosroës.</l>
           </sp>
-          <sp xml:id="V04-2" who="SYROES">
+          <sp who="SYROES" xml:id="V04-2">
             <speaker>SYROËS se lève, et le Garde sort.</speaker>
-            <l n="1561" xml:id="l1561" part="I">Attends, Garde.</l>
+            <l n="1561" part="I" xml:id="l1561">Attends, Garde.</l>
           </sp>
-          <sp xml:id="V04-3" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="V04-3">
             <speaker>PALMYRAS</speaker>
             <l part="F">Seigneur, il vous est d'importance,</l>
-            <l n="1562" xml:id="l1562" part="I">De joindre !</l>
+            <l n="1562" part="I" xml:id="l1562">De joindre !</l>
           </sp>
-          <sp xml:id="V04-4" who="SYROES">
+          <sp who="SYROES" xml:id="V04-4">
             <speaker>SYROËS</speaker>
             <l part="F">Ha ! C'est ici, que cède ma confiance !</l>
             <l n="1563" xml:id="l1563">Qu'interdit, qu'effrayé, je ne sens plus mon rang,</l>
             <l n="1564" xml:id="l1564">Et qu'en mon ennemi, j'aime encore mon sang.</l>
-            <l n="1565" xml:id="l1565" part="I">Ô Nature !</l>
+            <l n="1565" part="I" xml:id="l1565">Ô Nature !</l>
           </sp>
-          <sp xml:id="V04-5" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="V04-5">
             <speaker>PALMYRAS</speaker>
             <l part="F">Il s'agit d'une grande victoire,</l>
             <l n="1566" xml:id="l1566">Et rarement, Seigneur, on arrive à la gloire,</l>
             <l n="1567" xml:id="l1567">Par les chemins communs, et les sentiers battus.</l>
           </sp>
-          <sp xml:id="V04-6" who="SYROES">
+          <sp who="SYROES" xml:id="V04-6">
             <speaker>SYROËS</speaker>
             <l n="1568" xml:id="l1568">Ha ! j'ai trop pratiqué, vos barbares vertus,</l>
             <l n="1569" xml:id="l1569">Je ne puis acheter, les douceurs d'un Empire,</l>
             <l n="1570" xml:id="l1570">Aux dépends de l'auteur, du jour que je respire.</l>
           </sp>
-          <sp xml:id="V04-7" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="V04-7">
             <speaker>PHARNACE</speaker>
             <l n="1571" xml:id="l1571">Ce tendre sentiment, vous vient hors de propos ;</l>
             <l n="1572" xml:id="l1572">Il faut de votre État, assurer le repos.</l>
           </sp>
-          <sp xml:id="V04-8" who="SYROES">
+          <sp who="SYROES" xml:id="V04-8">
             <speaker>SYROËS</speaker>
             <l n="1573" xml:id="l1573">Je m'en démets, cruels, régnez, je l'abandonne ;</l>
             <l n="1574" xml:id="l1574">Et ma tête, à ce prix, ne veut point de couronne ;</l>
@@ -2734,12 +2735,12 @@
             <l n="1600" xml:id="l1600">Qu'il sait être sa source, et dont il est sorti ;</l>
             <l n="1601" xml:id="l1601">Le voici ! Dieux, je tremble ! et ma voix interdite,</l>
             <l n="1602" xml:id="l1602">En ce profond respect, sur mes lèvres hésite ;</l>
-            <l n="1603" xml:id="l1603" part="I">Mais qu'attends-je ?</l>
+            <l n="1603" part="I" xml:id="l1603">Mais qu'attends-je ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V . Cosroës, Sardarigue, Gardes, Syroës, Palmyras, Pharnace.</head>
-          <sp xml:id="V05-1" who="COSROES">
+          <sp who="COSROES" xml:id="V05-1">
             <speaker>COSROËS</speaker>
             <l part="F">Ô Nature ! et vous Dieux ses auteurs ?</l>
             <l n="1604" xml:id="l1604">D'un prodige inouï, soyez les spectateurs !</l>
@@ -2754,7 +2755,7 @@
             <l n="1613" xml:id="l1613">Et vous, que mon malheur, rend si fiers, et si braves,</l>
             <l n="1614" xml:id="l1614">Ce soir mes souverains, ce matin, mes esclaves.</l>
           </sp>
-          <sp xml:id="V05-2" who="SYROES">
+          <sp who="SYROES" xml:id="V05-2">
             <speaker>SYROËS à genoux.</speaker>
             <l n="1615" xml:id="l1615">Seigneur, daignez m'entendre ? ô nature ! et vous Dieux ?</l>
             <l n="1616" xml:id="l1616">Vous pouvez sans horreur, jeter ici les yeux ?</l>
@@ -2779,39 +2780,39 @@
             <l n="1635" xml:id="l1635">Ne le déposez pas, aux dépends de mes droits,</l>
             <l n="1636" xml:id="l1636">Entretenez en paix, votre sang sous vos lois.</l>
           </sp>
-          <sp xml:id="V05-3" who="COSROES">
+          <sp who="COSROES" xml:id="V05-3">
             <speaker>COSROËS</speaker>
             <l n="1637" xml:id="l1637">L'arrêt de Mardesane, et celui de la Reine,</l>
             <l n="1638" xml:id="l1638">Me peuvent-ils souffrir, une attente si vaine ?</l>
             <l n="1639" xml:id="l1639">Traître, joins-tu la fourbe, à l'inhumanité ?</l>
           </sp>
-          <sp xml:id="V05-4" who="SYROES">
+          <sp who="SYROES" xml:id="V05-4">
             <speaker>SYROËS</speaker>
             <l n="1640" xml:id="l1640">Éprouvez ma franchise, et votre autorité.</l>
           </sp>
-          <sp xml:id="V05-5" who="COSROES">
+          <sp who="COSROES" xml:id="V05-5">
             <speaker>COSROËS</speaker>
             <l n="1641" xml:id="l1641">Révoquez donc leur mort, et fais qu'on me les donne.</l>
           </sp>
-          <sp xml:id="V05-6" who="SYROES">
+          <sp who="SYROES" xml:id="V05-6">
             <speaker>SYROËS</speaker>
             <l n="1642" xml:id="l1642">Gardes, suivez le Roi, faites ce qu'il ordonne,</l>
             <l n="1643" xml:id="l1643">Et sans prévoir l'effet, qui m'en succédera...</l>
           </sp>
-          <sp xml:id="V05-7" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="V05-7">
             <speaker>SARDARIGUE</speaker>
-            <l n="1644" xml:id="l1644" part="I">Seigneur ?</l>
+            <l n="1644" part="I" xml:id="l1644">Seigneur ?</l>
           </sp>
-          <sp xml:id="V05-8" who="SYROES">
+          <sp who="SYROES" xml:id="V05-8">
             <speaker>SYROËS</speaker>
             <l part="F">Rendez le Prince, et délivrez Syra.</l>
-            <l n="1645" xml:id="l1645" part="I">Allez...</l>
-            <stage type="exit">Cosroës, Sardarigue, et les Gardes sortent.</stage>
+            <l n="1645" part="I" xml:id="l1645">Allez...</l>
+            <stage>Cosroës, Sardarigue, et les Gardes sortent.</stage>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI. Palmyras, Pharnace, Syroës.</head>
-          <sp xml:id="V06-1" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="V06-1">
             <speaker>PALMYRAS</speaker>
             <l part="F">Vous oubliez, que Palmyras, Pharnace,</l>
             <l n="1646" xml:id="l1646">Et tout votre Conseil, aillent tenir leur place.</l>
@@ -2828,7 +2829,7 @@
             <l n="1657" xml:id="l1657">Et donnera bon ordre, à ce que la couronne,</l>
             <l n="1658" xml:id="l1658">Ne pèze plus au front, qui sitôt l'abandonne.</l>
           </sp>
-          <sp xml:id="V06-2" who="SYROES">
+          <sp who="SYROES" xml:id="V06-2">
             <speaker>SYROËS</speaker>
             <l n="1659" xml:id="l1659">Je n'ai pu mieux défendre un coeur irrésolu,</l>
             <l n="1660" xml:id="l1660">Où le sang, a repris, un Empire absolu ;</l>
@@ -2838,26 +2839,26 @@
             <l n="1664" xml:id="l1664">À l'inhumanité, d'un si Barbare effort.</l>
             <l n="1665" xml:id="l1665">Il faut pour tant de force, une vertu trop dure.</l>
           </sp>
-          <sp xml:id="V06-3" who="PHARNACE">
+          <sp who="PHARNACE" xml:id="V06-3">
             <speaker>PHARNACE</speaker>
             <l n="1666" xml:id="l1666">N'augurons point, Seigneur, de sinistre aventure ;</l>
             <l n="1667" xml:id="l1667">Le trône tombera, devant votre débris,</l>
             <l n="1668" xml:id="l1668">Et tant de piété, ne peut perdre son prix ;</l>
-            <l n="1669" xml:id="l1669" part="I">Mais que vous veut Narsée</l>
+            <l n="1669" part="I" xml:id="l1669">Mais que vous veut Narsée</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="V07">
           <head>SCÈNE VII. Narsées, Syroës, Palmyras, Pharnace.</head>
-          <sp xml:id="V07-1" who="NARSEE">
+          <sp who="NARSEE" xml:id="V07-1">
             <speaker>NARSÉE</speaker>
             <l part="F">Ô destin déplorable !</l>
             <l n="1670" xml:id="l1670">Ô prince généreux, autant que misérable.</l>
           </sp>
-          <sp xml:id="V07-2" who="SYROES">
+          <sp who="SYROES" xml:id="V07-2">
             <speaker>SYROËS</speaker>
-            <l n="1671" xml:id="l1671" part="I">Qu'est-ce, Madame !</l>
+            <l n="1671" part="I" xml:id="l1671">Qu'est-ce, Madame !</l>
           </sp>
-          <sp xml:id="V07-3" who="NARSEE">
+          <sp who="NARSEE" xml:id="V07-3">
             <speaker>NARSÉE</speaker>
             <l part="F">Hélas ! Mardesane, Seigneur,</l>
             <l n="1672" xml:id="l1672">Perd le trône, et le jour, mais en homme de coeur !</l>
@@ -2870,11 +2871,11 @@
             <l n="1679" xml:id="l1679">Un prompt torrent de sang, est sorti de son sein ;</l>
             <l n="1680" xml:id="l1680">Et l'on a plutôt vu sa mort, que son dessein.</l>
           </sp>
-          <sp xml:id="V07-4" who="SYROES">
+          <sp who="SYROES" xml:id="V07-4">
             <speaker>SYROËS</speaker>
             <l n="1681" xml:id="l1681">Cruels, voilà l'effet, de vos nobles maximes.</l>
           </sp>
-          <sp xml:id="V07-5" who="NARSEE">
+          <sp who="NARSEE" xml:id="V07-5">
             <speaker>NARSÉE</speaker>
             <l n="1682" xml:id="l1682">Je rendais à Syra, des devoirs légitimes ;</l>
             <l n="1683" xml:id="l1683">Et quoique le secret, dont mon sort fut voilé,</l>
@@ -2893,18 +2894,18 @@
             <l n="1696" xml:id="l1696">Que pour son châtiment, vous avez ordonné.</l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="V08">
           <head>SCÈNE DERNIÈRE. Sardarigue, Syroës, Palmyras, Pharnace, Gardes.</head>
-          <sp xml:id="V08-1" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="V08-1">
             <speaker>SARDARIGUE</speaker>
             <l n="1697" xml:id="l1697">Ha Sire ! Malgré vous, le destin de la Perse,</l>
             <l n="1698" xml:id="l1698">Vous protège, et détruit, tout ce qui vous traverse.</l>
           </sp>
-          <sp xml:id="V08-2" who="SYROES">
+          <sp who="SYROES" xml:id="V08-2">
             <speaker>SYROËS</speaker>
-            <l n="1699" xml:id="l1699" part="I">Qu'est-ce, encor ?</l>
+            <l n="1699" part="I" xml:id="l1699">Qu'est-ce, encor ?</l>
           </sp>
-          <sp xml:id="V08-3" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="V08-3">
             <speaker>SARDARIGUE</speaker>
             <l part="F">Cosroës, rentre dans la prison,</l>
             <l n="1700" xml:id="l1700">Ayant vu que la Reine, y prenait le poison ;</l>
@@ -2918,20 +2919,20 @@
             <l n="1708" xml:id="l1708">Laisser à Syroës, le trône qu'il prétend,</l>
             <l n="1709" xml:id="l1709">Et de tant de Tyrans, terminer la dispute ;</l>
             <l n="1710" xml:id="l1710">Là, tombant, quelque Garde, a soutenu sa chute.</l>
-            <l n="1711" xml:id="l1711" part="I">Et nous...</l>
+            <l n="1711" part="I" xml:id="l1711">Et nous...</l>
           </sp>
-          <sp xml:id="V08-4" who="SYROES">
+          <sp who="SYROES" xml:id="V08-4">
             <speaker>SYROËS furieux.</speaker>
             <l part="F">Et bien cruels, êtes-vous satisfaits,</l>
             <l n="1712" xml:id="l1712">Mon règne produit-il, d'assez tristes effets ?</l>
             <l n="1713" xml:id="l1713">La Couronne, inhumaine, à ce prix m'est trop chère ?</l>
             <l n="1714" xml:id="l1714">Allons, Madame, allons, suivre ou sauver un père.</l>
           </sp>
-          <sp xml:id="V08-5" who="PALMYRAS">
+          <sp who="PALMYRAS" xml:id="V08-5">
             <speaker> PALMYRAS le suivant.</speaker>
-            <l n="1715" xml:id="l1715" part="I">Ne l'abandonnons point.</l>
+            <l n="1715" part="I" xml:id="l1715">Ne l'abandonnons point.</l>
           </sp>
-          <sp xml:id="V08-6" who="SARDARIGUE">
+          <sp who="SARDARIGUE" xml:id="V08-6">
             <speaker>SARDARIGUE</speaker>
             <l part="F">Ses soins sont superflus,</l>
             <l n="1716" xml:id="l1716">Le poison est trop prompt, le Tyran ne vit plus.</l>

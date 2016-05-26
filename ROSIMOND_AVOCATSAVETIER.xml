@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>AVOCAT SAVETIER, COMÉDIE.</title>
-        <author born="1640" born_location="" death="1686" death_location="" academie="">ROSIMOND, DUMESNIL Jean-Baptiste dit</author>
+        <author academie="" born="1640" born_location="" death="1686" death_location="" key="Rosimond, Jean-Baptiste du Mesnil dit Claude La Rose (1640-1686)">ROSIMOND, DUMESNIL Jean-Baptiste dit</author>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <p>publié par Paul FIEVRE, janvier 2014.</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Comédie</genre>
@@ -38,7 +39,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -50,7 +51,7 @@
         <titlePart type="sub">COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1683">M. DC. LXXXIII.</docDate>
-      <docAuthor id="ROSIMOND" bio="scipion">Par le Sieur SCIPION. COMÉDIEN DU ROI.</docAuthor>
+      <docAuthor bio="scipion" id="ROSIMOND">Par le Sieur SCIPION. COMÉDIEN DU ROI.</docAuthor>
       <docImprint>
         <approbation>
           <head/>
@@ -59,66 +60,66 @@
         <printer id="">À LA HAYE, Chez ADRIAN MOETJENS, Marchand-Libraire près le Cour, à la Librairie Française.</printer>
       </docImprint>
       <performance>
-        <premiere location="Théâtre du Marais" date="1670">Représentée pour la première fois en 1670 au Théâtre du Marais.</premiere>
+        <premiere date="1670" location="Théâtre du Marais">Représentée pour la première fois en 1670 au Théâtre du Marais.</premiere>
       </performance>
       <castList>
         <head>ACTEURS.</head>
-        <castItem><role xml:id="ROSANDRE" id="ROSANDRE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="amoureux">ROSANDRE</role>, amoureux de Lisimène.</castItem>
-        <castItem><role xml:id="PANCRACE" id="PANCRACE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">PANCRACE</role>, père de Lisimène.</castItem>
-        <castItem><role xml:id="LISIMENE" id="LISIMÈNE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="amoureux">LISIMÈNE</role>, fille de Pancrace.</castItem>
-        <castItem><role xml:id="BAGOLIN" id="BAGOLIN" sex="1" type="H" statut="savetier" age="A" stat_amour="néant">BAGOLIN</role>, honnête savetier.</castItem>
-        <castItem><role xml:id="LECOUSIN" id="LE-COUSIN" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">LE COUSIN</role> de Pancrace.</castItem>
-        <castItem><role xml:id="LEDOCTEUR" id="LE DOCTEUR" sex="1" type="H" statut="médecin" age="A" stat_amour="néant">LE DOCTEUR</role>.</castItem>
-        <castItem><role xml:id="UNSERGENT" id="UN-SERGENT" sex="1" type="H" statut="sergent" age="A" stat_amour="néant">UN SERGENT</role> du quartier.</castItem>
-        <castItem><role xml:id="PLUSIEURSRECORS" id="RECORS" sex="9" type="H" statut="record" age="A" stat_amour="néant">PLUSIEURS RECORS</role>.</castItem>
+        <castItem><role age="A" civil="M" id="ROSANDRE" rend="male" stat_amour="amoureux" statut="bourgeois" type="H" xml:id="ROSANDRE">ROSANDRE</role>, amoureux de Lisimène.</castItem>
+        <castItem><role age="A" civil="M" id="PANCRACE" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="PANCRACE">PANCRACE</role>, père de Lisimène.</castItem>
+        <castItem><role age="A" civil="F" id="LISIMÈNE" rend="female" stat_amour="amoureux" statut="bourgeois" type="H" xml:id="LISIMENE">LISIMÈNE</role>, fille de Pancrace.</castItem>
+        <castItem><role age="A" civil="M" id="BAGOLIN" rend="male" stat_amour="néant" statut="savetier" type="H" xml:id="BAGOLIN">BAGOLIN</role>, honnête savetier.</castItem>
+        <castItem><role age="A" civil="M" id="LE-COUSIN" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="LECOUSIN">LE COUSIN</role> de Pancrace.</castItem>
+        <castItem><role age="A" civil="M" id="LE DOCTEUR" rend="male" stat_amour="néant" statut="médecin" type="H" xml:id="LEDOCTEUR">LE DOCTEUR</role>.</castItem>
+        <castItem><role age="A" civil="M" id="UN-SERGENT" rend="male" stat_amour="néant" statut="sergent" type="H" xml:id="SERGENT">UN SERGENT</role> du quartier.</castItem>
+        <castItem><role age="A" civil="G" id="RECORS" rend="group" stat_amour="néant" statut="record" type="H" xml:id="RECORS">PLUSIEURS RECORS</role>.</castItem>
       </castList>
-      <set location="(non indiqué)" country="(non indiqué)" periode="XVIIème" link=""/>
+      <set country="(non indiqué)" link="" location="(non indiqué)" periode="XVIIème"/>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head/>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE I. Rosandre, Pancrace.</head>
-          <sp xml:id="I01-1" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-1">
             <speaker>ROSANDRE.</speaker>
             <l n="1" xml:id="l1">Ah ! Mon très cher ami, je vous trouve à propos,</l>
             <l n="2" xml:id="l2">Seriez-vous en humeur d'écouter quatre mots ?</l>
           </sp>
-          <sp xml:id="I01-2" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-2">
             <speaker>PANCRACE.</speaker>
             <l n="3" xml:id="l3">Cher ami, depuis quand Monsieur je vous supplie,</l>
             <l n="4" xml:id="l4">Je ne vous vis jamais que je crois de ma vie.</l>
           </sp>
-          <sp xml:id="I01-3" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-3">
             <speaker>ROSANDRE.</speaker>
             <l n="5" xml:id="l5">Encore que jamais je ne vous vis aussi,</l>
             <l n="6" xml:id="l6">Je crois, vous faire honneur de vous traiter ainsi ; </l>
             <l n="7" xml:id="l7">Pancrace est votre nom je pense ?</l>
           </sp>
-          <sp xml:id="I01-4" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-4">
             <speaker>PANCRACE.</speaker>
             <l n="8" xml:id="l8">Oui Monsieur sous ce nom, l'on me connais en France.</l>
           </sp>
-          <sp xml:id="I01-5" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-5">
             <speaker>ROSANDRE.</speaker>
             <l n="9" xml:id="l9">J'étais prêt d'envoyer un de mes gens chez vous,</l>
-            <l n="10" xml:id="l10" part="I">Mais vous trouvant ici...</l>
+            <l n="10" part="I" xml:id="l10">Mais vous trouvant ici...</l>
           </sp>
-          <sp xml:id="I01-6" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-6">
             <speaker>PANCRACE.</speaker>
             <l part="F">Je n'étais pas chez nous.</l>
           </sp>
-          <sp xml:id="I01-7" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-7">
             <speaker>ROSANDRE.</speaker>
             <l n="11" xml:id="l11">La cause entre nous deux, n'est que fort peu de chose,</l>
             <l n="12" xml:id="l12">Il faut tout maintenant que je vous la propose,</l>
             <l n="13" xml:id="l13">Un laquais comme moi vous en eu fait savant.</l>
           </sp>
-          <sp xml:id="I01-8" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-8">
             <speaker>PANCRACE.</speaker>
             <l n="14" xml:id="l14">Votre laquais, ou vous Monsieur passons avant.</l>
           </sp>
-          <sp xml:id="I01-9" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-9">
             <speaker>ROSANDRE.</speaker>
             <l n="15" xml:id="l15">Je suis né gentilhomme, et d'un vieillard fort riche,</l>
             <l n="16" xml:id="l16">J'héritai force bien, donc je ne fus pas chiche,</l>
@@ -137,11 +138,11 @@
             <note type="L">Filouter : tirer la laine, ou voler et tromper quelqu'un par de mauvaises voies et artifices. [F]</note>
             <l n="28" xml:id="l28">Pour m'en récompenser maintenant je filoute.</l>
           </sp>
-          <sp xml:id="I01-10" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-10">
             <speaker>PANCRACE.</speaker>
-            <l n="29" xml:id="l29" part="I">Fort bien.</l>
+            <l n="29" part="I" xml:id="l29">Fort bien.</l>
           </sp>
-          <sp xml:id="I01-11" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-11">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Toutes les nuits, en batteur de pavé,</l>
             <l n="30" xml:id="l30">À tirer des manteaux on m'a souvent trouvé,</l>
@@ -155,34 +156,34 @@
             <l n="36" xml:id="l36">Je me dis, de quelqu'un, ou je cherche querelle,</l>
             <l n="37" xml:id="l37">Ou prenant du tabac, je fume à qui plus plus.</l>
           </sp>
-          <sp xml:id="I01-12" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-12">
             <speaker>PANCRACE.</speaker>
             <l n="38" xml:id="l38">Finissez le récit, de toutes vos vertus.</l>
           </sp>
-          <sp xml:id="I01-13" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-13">
             <speaker>ROSANDRE.</speaker>
             <l n="39" xml:id="l39">Dès hier, on me dit que dans votre famille,.</l>
             <l n="40" xml:id="l40">Vous aviez seulement, une fort belle fille,</l>
             <l n="41" xml:id="l41">A l'âge que je crois, d'une vingtaine d'ans,</l>
             <l n="42" xml:id="l42">À qui vous donneriez bien trente mille francs.</l>
           </sp>
-          <sp xml:id="I01-14" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-14">
             <speaker>PANCRACE.</speaker>
-            <l n="43" xml:id="l43" part="I">Il est vrai.</l>
+            <l n="43" part="I" xml:id="l43">Il est vrai.</l>
           </sp>
-          <sp xml:id="I01-15" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-15">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Ce grand bien, m'a fait naître dans l'âme,</l>
             <l n="44" xml:id="l44">Le désir a peu près, de la prendre pour femme ;</l>
             <l n="45" xml:id="l45">Afin que son argent peut satisfaire aux frais,</l>
             <l n="46" xml:id="l46">Qu'en débauché garçon incessamment je fais.</l>
           </sp>
-          <sp xml:id="I01-16" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-16">
             <speaker>PANCRACE.</speaker>
             <l n="47" xml:id="l47">Ce n'est donc que son bien qui vous fait entreprendre</l>
             <l n="48" xml:id="l48">De l'avoir en vos mains, d'être à peu près mon gendre ?</l>
           </sp>
-          <sp xml:id="I01-17" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-17">
             <speaker>ROSANDRE.</speaker>
             <l n="49" xml:id="l49">Rien autre. Et sans cela, votre fille, ni vous,</l>
             <l n="50" xml:id="l50">N'eussiez put rencontrer un si parfait époux.</l>
@@ -195,15 +196,15 @@
             <l n="57" xml:id="l57">Ayant dit au marchant, pour avoir de l'argent,</l>
             <l n="58" xml:id="l58">Qu'on s'en alla chez vous ; suis-je pas obligeant ?</l>
           </sp>
-          <sp xml:id="I01-18" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-18">
             <speaker>PANCRACE.</speaker>
-            <l n="59" xml:id="l59" part="I">Est-ce tout ?</l>
+            <l n="59" part="I" xml:id="l59">Est-ce tout ?</l>
           </sp>
-          <sp xml:id="I01-19" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-19">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Au regard de ce qu'à vous m'amène.</l>
           </sp>
-          <sp xml:id="I01-20" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-20">
             <speaker>PANCRACE.</speaker>
             <l n="60" xml:id="l60">Ce n'est pas encore tout, Monsieur, prenez la peine</l>
             <l n="61" xml:id="l61">De rendre à vos marchands les draps, et les habits.</l>
@@ -220,11 +221,11 @@
             <l n="71" xml:id="l71">Et pour vous dont mon bien a su chatouiller l'âme</l>
             <l n="72" xml:id="l72">Vous pouvez autre part vous pourvoir d'une femme.</l>
           </sp>
-          <sp xml:id="I01-21" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-21">
             <speaker>ROSANDRE.</speaker>
-            <l n="73" xml:id="l73" part="I">Comment ?</l>
+            <l n="73" part="I" xml:id="l73">Comment ?</l>
           </sp>
-          <sp xml:id="I01-22" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-22">
             <speaker>PANCRACE.</speaker>
             <l part="F">Pour mon beau fils nous sommes résolus,</l>
             <l n="74" xml:id="l74">De n'en prendre jamais s'y remplis de vertus,</l>
@@ -235,21 +236,21 @@
             <l n="77" xml:id="l77">Et qui sous tous le jour renie en charretier</l>
             <l n="78" xml:id="l78">À moins que quereller lui servent de métier.</l>
           </sp>
-          <sp xml:id="I01-23" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I01-23">
             <speaker>ROSANDRE.</speaker>
             <l n="79" xml:id="l79">Me refuser pour gendre, est-ce que je m'abuse ?</l>
           </sp>
-          <sp xml:id="I01-24" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I01-24">
             <speaker>PANCRACE.</speaker>
             <l n="80" xml:id="l80">Je ne le pense pas puisque je vous refuse,</l>
             <l n="81" xml:id="l81">Et si vous le disant, cela ne vous suffit,</l>
             <l n="82" xml:id="l82">Je suis prêt de le mettre encore par écrit.</l>
-            <l n="83" xml:id="l83" part="I">Serviteur cher ami...</l>
+            <l n="83" part="I" xml:id="l83">Serviteur cher ami...</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Rosandre, Bagolin.</head>
-          <sp xml:id="I02-1" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-1">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Jamais tour agréable </l>
             <l n="84" xml:id="l84">Pour se bien divertir, au mien ne fut semblable,</l>
@@ -261,42 +262,42 @@
             <l n="90" xml:id="l90">Il faut à me servir, qu'il applique son soin.</l>
             <l n="91" xml:id="l91">Et que l'embarrassant d'une attente frivole,</l>
             <l n="92" xml:id="l92">Dans cette Comédie, y joue un plaisant rôle.</l>
-            <stage type="[N/A]">On lève un petit rideau, Bagolin paraît dans sa boutique, chante, et veut apprendre à siffler à son oiseau.</stage>
+            <stage>On lève un petit rideau, Bagolin paraît dans sa boutique, chante, et veut apprendre à siffler à son oiseau.</stage>
           </sp>
-          <sp xml:id="I02-2" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-2">
             <speaker>BAGOLIN, chantant.</speaker>
             <l n="93" xml:id="l93">Quoi ? Maudit animal, tu ne siffleras pas ?</l>
             <l n="94" xml:id="l94">Ou je me trompe fort, ou bien tu siffleras.</l>
           </sp>
-          <sp xml:id="I02-3" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-3">
             <speaker>ROSANDRE.</speaker>
             <l n="95" xml:id="l95">Je suis de Bagolin l'ami très véritable.</l>
           </sp>
-          <sp xml:id="I02-4" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-4">
             <speaker>BAGOLIN.</speaker>
             <l n="96" xml:id="l96">Je pense que tu veux que je te donne au diable ?</l>
           </sp>
-          <sp xml:id="I02-5" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-5">
             <speaker>ROSANDRE.</speaker>
             <l n="97" xml:id="l97">Pourrait-on point l'ami, quelque temps vous parler ?</l>
           </sp>
-          <sp xml:id="I02-6" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-6">
             <speaker>BAGOLIN.</speaker>
             <l n="98" xml:id="l98">Tu ne veux pas siffler ? Je vais pour toi siffler.</l>
           </sp>
-          <sp xml:id="I02-7" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-7">
             <speaker>ROSANDRE.</speaker>
             <l n="99" xml:id="l99">Mon très cher Bagolin, un petit mot de grâce.</l>
           </sp>
-          <sp xml:id="I02-8" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-8">
             <speaker>BAGOLIN.</speaker>
             <l n="100" xml:id="l100">Mon bon Monsieur Rosandre, ha ! Que je vous embrasse</l>
             <l n="101" xml:id="l101">Comment vous portez-vous, depuis que dans Paris,</l>
             <l n="102" xml:id="l102">J'étais orfèvre en cuir devant votre logis ?</l>
             <l n="103" xml:id="l103">Depuis quand en ce lieu ? Et comment va le père,</l>
-            <l n="104" xml:id="l104" part="I">Qui vous amène ici ?</l>
+            <l n="104" part="I" xml:id="l104">Qui vous amène ici ?</l>
           </sp>
-          <sp xml:id="I02-9" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-9">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Une importante affaire ;</l>
             <l n="105" xml:id="l105">Mets cette affaire à part, je te veux marier,</l>
@@ -304,31 +305,31 @@
             <l n="107" xml:id="l107">Tu sais que dès longtemps je fus ton plus intime,</l>
             <l n="108" xml:id="l108">Et c'est pour t'enrichir le sujet qui m'anime.</l>
           </sp>
-          <sp xml:id="I02-10" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-10">
             <speaker>BAGOLIN.</speaker>
             <l n="109" xml:id="l109">Qui moi me marier ? Vous vous moquez ma foi ;</l>
             <l n="110" xml:id="l110">Je ne saurais gagner de quoi me nourrir moi, </l>
             <l n="111" xml:id="l111">Et je pourrais prétendre, à nourrir une femme ?</l>
           </sp>
-          <sp xml:id="I02-11" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-11">
             <speaker>ROSANDRE.</speaker>
             <l n="112" xml:id="l112">Que ce soin important, n'alarme point ton âme.</l>
             <l n="113" xml:id="l113">Cette illustre famille, où je veux t'allier,</l>
             <note type="L">Savetier : Artisan qui raccommode les vieilles chaussures, souliers, bottes, pantoufles. [F] C'est aussi un terme péjoratif pour dire de quelqu'un qu'il travaille mal.</note>
             <l n="114" xml:id="l114">Ne permettra jamais, que tu sois savetier.</l>
           </sp>
-          <sp xml:id="I02-12" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-12">
             <speaker>BAGOLIN.</speaker>
             <l n="115" xml:id="l115">En disant Savetier, dites par révérence,</l>
             <l n="116" xml:id="l116">C'est un métier d'honneur, et des plus grands de France.</l>
           </sp>
-          <sp xml:id="I02-13" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-13">
             <speaker>ROSANDRE.</speaker>
             <l n="117" xml:id="l117">La fille dont je parle a trente mille francs,</l>
             <l n="118" xml:id="l118">Elle est belle, elle est riche, et n'a rien que vingt ans,</l>
             <l n="119" xml:id="l119">Vois, si ce grand parti, te pourrait satisfaire ?</l>
           </sp>
-          <sp xml:id="I02-14" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-14">
             <speaker>BAGOLIN.</speaker>
             <l n="120" xml:id="l120">Oui trente mille francs, ferait bien mon affaire ;</l>
             <l n="121" xml:id="l121">J'aurais de quoi goinfrer sans jamais travailler.</l>
@@ -336,109 +337,109 @@
             <l n="123" xml:id="l123">Comme je suis d'humeur, à n'avoir point famille,</l>
             <l n="124" xml:id="l124">Qu'on me donne l'argent, et qu'on garde la fille.</l>
           </sp>
-          <sp xml:id="I02-15" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-15">
             <speaker>ROSANDRE.</speaker>
             <l n="125" xml:id="l125">Quoi dont dix mille écus, pour devenir l'époux ?</l>
-            <l n="126" xml:id="l126" part="I">De...</l>
+            <l n="126" part="I" xml:id="l126">De...</l>
           </sp>
-          <sp xml:id="I02-16" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-16">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Et bien ! De parbleu Monsieur marions nous.</l>
             <l n="127" xml:id="l127">Aussi bien m'a-t-on dit, pour garder ma boutique,</l>
             <l n="128" xml:id="l128">Que j'avais grand besoin, d'un diable domestique.</l>
             <l n="129" xml:id="l129">Mais comment en ceci, doit agir Bagolin ?</l>
           </sp>
-          <sp xml:id="I02-17" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-17">
             <speaker>ROSANDRE.</speaker>
             <l n="130" xml:id="l130">Par fortune, dis-moi, sais-tu parler Latin ?</l>
           </sp>
-          <sp xml:id="I02-18" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-18">
             <speaker>BAGOLIN.</speaker>
             <l n="131" xml:id="l131">Ho qu'oui, le matin, ou le soir, ne m'importe,</l>
             <note type="L">Drôle : Se dit d'un homme ou d'un enfant qui, ayant quelque chose de décidé, de déluré, ne laisse pas d'exciter quelque inquiétude, et sur lequel d'ailleurs on s'attribue quelque supériorité. [L]</note>
             <l n="132" xml:id="l132">Je jase comme une drôle, et de la bonne sorte.</l>
           </sp>
-          <sp xml:id="I02-19" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-19">
             <speaker>ROSANDRE.</speaker>
-            <l n="133" xml:id="l133" part="I">Je dis Latin stupide, et non matin ?</l>
+            <l n="133" part="I" xml:id="l133">Je dis Latin stupide, et non matin ?</l>
           </sp>
-          <sp xml:id="I02-20" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-20">
             <speaker>BAGOLIN. </speaker>
             <l part="F">Tout doux,</l>
             <l n="134" xml:id="l134">Quoi pour se marier il faut avoir des coups ?</l>
             <l n="135" xml:id="l135">Je renonce au Latin, ainsi qu'au cocuage.</l>
           </sp>
-          <sp xml:id="I02-21" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-21">
             <speaker>ROSANDRE.</speaker>
-            <l n="136" xml:id="l136" part="I">He ! Que dis tu ?</l>
+            <l n="136" part="I" xml:id="l136">He ! Que dis tu ?</l>
           </sp>
-          <sp xml:id="I02-22" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-22">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Doucement, je dis du mariage,</l>
-            <l n="137" xml:id="l137" part="I">Mais pourquoi ce Latin ?</l>
+            <l n="137" part="I" xml:id="l137">Mais pourquoi ce Latin ?</l>
           </sp>
-          <sp xml:id="I02-23" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-23">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Pancrace m'a fait voir,</l>
             <l n="138" xml:id="l138">Qu'il voulait pour son gendre, un homme de savoir.</l>
           </sp>
-          <sp xml:id="I02-24" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-24">
             <speaker>BAGOLIN.</speaker>
             <l n="139" xml:id="l139">Et pour homme d'esprit, vous voulez me commettre</l>
             <l n="140" xml:id="l140">Moi, qui ne sut jamais, ce que c'est qu'une lettre ?</l>
             <note type="L">Pied-plat : et quelquefois plat pied, homme qui ne mérite aucune considération : locution qui vient non du vice de conformation indiqué ci-dessus, mais d'une différence de chaussure entre les gens du peuple et les gentilshommes, ceux-ci portant des souliers avec des talons rouges très relevés, tandis que les ouvriers et les bourgeois portaient des souliers plats. [L]</note>
             <l n="141" xml:id="l141">Ah ! Prenez pour cela, quelqu'autre qu'un pied plat.</l>
           </sp>
-          <sp xml:id="I02-25" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-25">
             <speaker>ROSANDRE.</speaker>
             <l n="142" xml:id="l142">Je prétends t'ériger pourtant en avocat,</l>
             <l n="143" xml:id="l143">Et te donner du bien, ainsi que de la gloire,</l>
             <l n="144" xml:id="l144">Pourvu que ce Latin, entre dans ta mémoire.</l>
           </sp>
-          <sp xml:id="I02-26" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-26">
             <speaker>BAGOLIN.</speaker>
             <l n="145" xml:id="l145">Comment dit ce Latin ? Commençons par un bout.</l>
           </sp>
-          <sp xml:id="I02-27" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-27">
             <speaker>ROSANDRE.</speaker>
-            <l n="146" xml:id="l146" part="I">Ca, dit donc, <foreign xml:lang="latin">Ego sum</foreign>.</l>
+            <l n="146" part="I" xml:id="l146">Ca, dit donc, <foreign xml:lang="latin">Ego sum</foreign>.</l>
           </sp>
-          <sp xml:id="I02-28" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-28">
             <speaker>BAGOLIN.</speaker>
             <l part="M">Après.</l>
           </sp>
-          <sp xml:id="I02-29" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-29">
             <speaker>ROSANDRE.</speaker>
             <l part="M"><foreign xml:lang="latin">Avocatus</foreign>.</l>
           </sp>
-          <sp xml:id="I02-30" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-30">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Est-ce tout ?</l>
           </sp>
-          <sp xml:id="I02-31" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-31">
             <speaker>ROSANDRE.</speaker>
-            <l n="147" xml:id="l147" part="I">Oui.</l>
+            <l n="147" part="I" xml:id="l147">Oui.</l>
           </sp>
-          <sp xml:id="I02-32" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-32">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Mais en français cela que veux-t-il dire ?</l>
           </sp>
-          <sp xml:id="I02-33" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-33">
             <speaker>ROSANDRE.</speaker>
-            <l n="148" xml:id="l148" part="I">Que je suis avocat.</l>
+            <l n="148" part="I" xml:id="l148">Que je suis avocat.</l>
           </sp>
-          <sp xml:id="I02-34" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-34">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Vous me faites bien rire,</l>
             <l n="149" xml:id="l149">Si vous êtes Docteur, allez vous marier,</l>
             <l n="150" xml:id="l150">Vit-on jamais au monde Avocat Savetier ?</l>
           </sp>
-          <sp xml:id="I02-35" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-35">
             <speaker>ROSANDRE.</speaker>
             <l n="151" xml:id="l151">Mais c'est toi qui sera le gendre de Pancrace,</l>
-            <l n="152" xml:id="l152" part="I">Et trente mille francs.</l>
+            <l n="152" part="I" xml:id="l152">Et trente mille francs.</l>
           </sp>
-          <sp xml:id="I02-36" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-36">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Et bien, je prends la place,</l>
             <l n="153" xml:id="l153">Et me résous enfin, pour les dix mille écus,</l>
@@ -447,65 +448,65 @@
             <note type="L">Faire Jacques d'éloge : s'enfuir, s'évader. [L]</note>
             <l n="156" xml:id="l156">Vous répondrez, ou bien, je fais Jacques d'éloge.</l>
           </sp>
-          <sp xml:id="I02-37" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-37">
             <speaker>ROSANDRE.</speaker>
             <l n="157" xml:id="l157">Pancrace est ignorant, et ce seul mot bien dit,</l>
             <l n="158" xml:id="l158">Te fait passer d'abord pour un homme d'esprit,</l>
             <l n="159" xml:id="l159">Mais il te faut marcher sur un ton gravissime,</l>
             <l n="160" xml:id="l160">Et devant lui, parler en homme doctissime,</l>
-            <note type="l">Jason :  un personnage de la mythologie grecque.</note>
+            <note type="l">Jason : un personnage de la mythologie grecque.</note>
             <note type="L">Cujas, Jacques [1520-1590] : célèbre jurisconsulte. Aucun n'a pénétré plus avant dans la connaissance et l'explication des lois romaines, et aucun n'a écrit la langue latine avec plus de pureté.</note>
             <l n="161" xml:id="l161">Citer avec en face, et Jason, et Cujas,</l>
             <l n="162" xml:id="l162">Auteurs, que ce vieillard, je crois, ne connaît pas.</l>
           </sp>
-          <sp xml:id="I02-38" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-38">
             <speaker>BAGOLIN.</speaker>
-            <l n="163" xml:id="l163" part="I">Ma foi ni toi non plus.</l>
+            <l n="163" part="I" xml:id="l163">Ma foi ni toi non plus.</l>
           </sp>
-          <sp xml:id="I02-39" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-39">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Je vais trouver Pancrace, </l>
             <l n="164" xml:id="l164">Reviens dans un moment, en cette même place,</l>
-            <l n="165" xml:id="l165" part="I">Nous y serons ensemble.</l>
+            <l n="165" part="I" xml:id="l165">Nous y serons ensemble.</l>
           </sp>
-          <sp xml:id="I02-40" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-40">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Avant de s'en aller,</l>
             <l n="166" xml:id="l166">Dites pour ce Latin, comme il faut s'habiller.</l>
           </sp>
-          <sp xml:id="I02-41" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I02-41">
             <speaker>ROSANDRE.</speaker>
             <l n="167" xml:id="l167">Te mettre proprement, sous une robe noire.</l>
           </sp>
-          <sp xml:id="I02-42" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I02-42">
             <speaker>BAGOLIN.</speaker>
             <l n="168" xml:id="l168">Bon, j'ai su tout d'un coup me mettre en la mémoire,</l>
             <l n="169" xml:id="l169">Certain habit que j'ai, du dernier carnaval.</l>
             <l n="170" xml:id="l170">Qui pour me déguiser, ne servira pas mal,</l>
-            <l n="171" xml:id="l171" part="I">Adieu, je vais le mettre, et je reviens.</l>
+            <l n="171" part="I" xml:id="l171">Adieu, je vais le mettre, et je reviens.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Rosandre, Pancrace.</head>
-          <sp xml:id="I03-1" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I03-1">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Courage,</l>
             <l n="172" xml:id="l172">Bagolin, a ravi, jouera son personnage,</l>
-            <l n="173" xml:id="l173" part="I">Hola.</l>
+            <l n="173" part="I" xml:id="l173">Hola.</l>
           </sp>
-          <sp xml:id="I03-2" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I03-2">
             <speaker>PANCRACE.</speaker>
             <l part="F">He bien ! Monsieur ? Que voulez vous de moi ?</l>
           </sp>
-          <sp xml:id="I03-3" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I03-3">
             <speaker>ROSANDRE.</speaker>
-            <l n="174" xml:id="l174" part="I">Je viens vous retrouver.</l>
+            <l n="174" part="I" xml:id="l174">Je viens vous retrouver.</l>
           </sp>
-          <sp xml:id="I03-4" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I03-4">
             <speaker>PANCRACE.</speaker>
             <l part="F">Peut-on savoir pourquoi ?</l>
           </sp>
-          <sp xml:id="I03-5" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I03-5">
             <speaker>ROSANDRE.</speaker>
             <l n="175" xml:id="l175">J'ai pour vous une estime, et haute, et fort sincère,</l>
             <l n="176" xml:id="l176">Je vous trouve brave homme, et vous honore en père,</l>
@@ -513,16 +514,16 @@
             <l n="178" xml:id="l178">L'on ait vu vos mépris, allez jusqu'au courroux,</l>
             <l n="179" xml:id="l179">Je sais qu'avec raison, mon attente est trompée,</l>
             <l n="180" xml:id="l180">Puisque vous n'êtes pas, pour un homme d'épée.</l>
-            <note ytpe="L">Soutane : habit que porte les hommes d'église et plus particulièrement les curés.</note>
+            <note type="L">Soutane : habit que porte les hommes d'église et plus particulièrement les curés.</note>
             <l n="181" xml:id="l181">Vous aimez la soutane, et je viens vous revoir</l>
             <l n="182" xml:id="l182">Pour savoir si mon frère arrive d'hier au soir,</l>
             <l n="183" xml:id="l183">Pourrait avoir l'honneur d'épouser votre fille ?</l>
           </sp>
-          <sp xml:id="I03-6" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I03-6">
             <speaker>PANCRACE.</speaker>
-            <l n="184" xml:id="l184" part="I">Quel est ce frère ?</l>
+            <l n="184" part="I" xml:id="l184">Quel est ce frère ?</l>
           </sp>
-          <sp xml:id="I03-7" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I03-7">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Un homme en qui le savoir brille,</l>
             <l n="185" xml:id="l185">Plus docte qu'Aristote, et qui dedans Paris</l>
@@ -530,63 +531,63 @@
             <l n="187" xml:id="l187">Au restes fort bien fait galant de sa personne. </l>
             <l n="188" xml:id="l188">D'une humeur enjouée, et qui semble bouffonne.</l>
           </sp>
-          <sp xml:id="I03-8" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I03-8">
             <speaker>PANCRACE.</speaker>
-            <l n="189" xml:id="l189" part="I">Tant mieux.</l>
+            <l n="189" part="I" xml:id="l189">Tant mieux.</l>
           </sp>
-          <sp xml:id="I03-9" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I03-9">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Et plus que tout, c'est que deux mil écus</l>
             <l n="190" xml:id="l190">De ses biens tous les ans, font les beaux revenus.</l>
           </sp>
-          <sp xml:id="I03-10" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I03-10">
             <speaker>PANCRACE.</speaker>
-            <l n="191" xml:id="l191" part="I">Tant mieux encore.</l>
+            <l n="191" part="I" xml:id="l191">Tant mieux encore.</l>
           </sp>
-          <sp xml:id="I03-11" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I03-11">
             <speaker>ROSANDRE.</speaker>
             <l part="F">En arrivant, il me fit presque entendre,</l>
             <l n="192" xml:id="l192">Le désir qu'il avait de se voir votre gendre.</l>
             <l n="193" xml:id="l193">Ayant su dans Paris quel homme vous étiez,</l>
             <l n="194" xml:id="l194">Et par le bruit commun, ce que vous méritiez.</l>
           </sp>
-          <sp xml:id="I03-12" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I03-12">
             <speaker>PANCRACE.</speaker>
             <l n="195" xml:id="l195">Ah ! Je serais ravi, qu'il entre en ma famille.</l>
             <l n="196" xml:id="l196">Et je vais sans tarder en parler à ma fille.</l>
-            <l n="197" xml:id="l197" part="I">Lisimène ?</l>
+            <l n="197" part="I" xml:id="l197">Lisimène ?</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Lisimène, Pancrace, Rosandre, Bagolin.</head>
-          <sp xml:id="I04-1" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I04-1">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Papa, Papa que me désirez-vous ?</l>
           </sp>
-          <sp xml:id="I04-2" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-2">
             <speaker>PANCRACE.</speaker>
             <l n="198" xml:id="l198">Je veux dés aujourd'hui, vous donner une époux.</l>
             <note type="L">Doctrine : Savoir, érudition, ce qu'on a appris en lisant, en voyant le monde. [F]</note>
             <l n="199" xml:id="l199">Mais un époux illustre, et de qui la Doctrine</l>
             <l n="200" xml:id="l200">Fait cacher Aristote, et fait endormir Pline.</l>
-            <l n="201" xml:id="l201" part="I">Fort riche ; n'est ce pas ?</l>
+            <l n="201" part="I" xml:id="l201">Fort riche ; n'est ce pas ?</l>
           </sp>
-          <sp xml:id="I04-3" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-3">
             <speaker>ROSANDRE.</speaker>
             <l part="M">Oui, Monsieur.</l>
           </sp>
-          <sp xml:id="I04-4" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-4">
             <speaker>PANCRACE.</speaker>
             <l part="F">Et bien fait,</l>
             <l n="202" xml:id="l202">C'est un homme en un mot, digne d'être en portrait.</l>
             <l n="203" xml:id="l203">Voilà Monsieur son frère, et bientôt ce beau gendre.</l>
           </sp>
-          <sp xml:id="I04-5" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I04-5">
             <speaker>LISIMÈNE.</speaker>
             <l n="204" xml:id="l204">Vous ne songez donc pas, que promis à Rosandre.</l>
-            <l n="205" xml:id="l205" part="I">Qui vient pour m'épouser...</l>
+            <l n="205" part="I" xml:id="l205">Qui vient pour m'épouser...</l>
           </sp>
-          <sp xml:id="I04-6" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-6">
             <speaker>PANCRACE.</speaker>
             <l part="F">Rosandre est un badin,</l>
             <l n="206" xml:id="l206">Qui s'amuse à dormir je crois par le chemin ,</l>
@@ -594,157 +595,157 @@
             <l n="208" xml:id="l208">En un mot, je prétends qu'en fille obéissante,</l>
             <l n="209" xml:id="l209">Vous épousiez, Monsieur... Comment le nomme-t-on ?</l>
           </sp>
-          <sp xml:id="I04-7" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-7">
             <speaker>ROSANDRE.</speaker>
             <l n="210" xml:id="l210">Entre les gens d'esprit, le Docteur Barabon,</l>
             <l n="211" xml:id="l211">Mais pour vous saluer vers vous y s'achemine.</l>
           </sp>
-          <sp xml:id="I04-8" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-8">
             <speaker>PANCRACE.</speaker>
             <l n="212" xml:id="l212">Que cet homme est savant, et qu'il a bonne mine.</l>
           </sp>
-          <sp xml:id="I04-9" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-9">
             <speaker>BAGOLIN, en habit de Docteur.</speaker>
             <l n="213" xml:id="l213">Est-ce là, le beau-père, où je dois m'allier ?</l>
           </sp>
-          <sp xml:id="I04-10" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-10">
             <speaker>ROSANDRE.</speaker>
             <note type="L">Establier : Celui qui tient une auberge et qui y travaille.</note>
             <l n="214" xml:id="l214">Et sa fille avec lui, cache l'établier.</l>
             <l n="215" xml:id="l215">Que tu ne sois connu, et surtout prend bien garde</l>
-            <l n="216" xml:id="l216" part="I">À ce que tu diras.</l>
+            <l n="216" part="I" xml:id="l216">À ce que tu diras.</l>
           </sp>
-          <sp xml:id="I04-11" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-11">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Le barbon me regarde.</l>
           </sp>
-          <sp xml:id="I04-12" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-12">
             <speaker>ROSANDRE.</speaker>
             <l n="217" xml:id="l217">Laisse le regarder, et porte bien ton bois.</l>
           </sp>
-          <sp xml:id="I04-13" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-13">
             <speaker>BAGOLIN.</speaker>
             <l n="218" xml:id="l218">Dois-je parler d'abord ou Latin, ou François ?</l>
           </sp>
-          <sp xml:id="I04-14" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-14">
             <speaker>ROSANDRE.</speaker>
             <l n="219" xml:id="l219">Il faut en premier lieu, suivant la bienséance,</l>
             <l n="220" xml:id="l220">Lui lever le chapeau, faire la révérence,</l>
-            <l n="221" xml:id="l221" part="I">Puis dire ton Latin.</l>
+            <l n="221" part="I" xml:id="l221">Puis dire ton Latin.</l>
           </sp>
-          <sp xml:id="I04-15" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-15">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Il ne m'en souvient plus.</l>
           </sp>
-          <sp xml:id="I04-16" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-16">
             <speaker>ROSANDRE.</speaker>
-            <l n="222" xml:id="l222" part="I"><foreign type="latin">Ego sum</foreign>.</l>
+            <l n="222" part="I" xml:id="l222"><foreign xml:lang="la">Ego sum</foreign>.</l>
           </sp>
-          <sp xml:id="I04-17" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-17">
             <speaker>BAGOLIN.</speaker>
             <l part="M">Après ?</l>
           </sp>
-          <sp xml:id="I04-18" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-18">
             <speaker>ROSANDRE.</speaker>
-            <l part="F"><foreign type="latin">Advocatus</foreign>.</l>
+            <l part="F"><foreign xml:lang="la">Advocatus</foreign>.</l>
           </sp>
-          <sp xml:id="I04-19" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-19">
             <speaker>BAGOLIN.</speaker>
             <l n="223" xml:id="l223">Je m'en vais l'aborder, et de la bonne sorte,</l>
             <l n="224" xml:id="l224">Je suis Advocatus, ou le diable m'en porte.</l>
           </sp>
-          <sp xml:id="I04-20" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-20">
             <speaker>PANCRACE.</speaker>
             <l n="225" xml:id="l225">Il m'ôte mon chapeau, Monsieur est-ce qu'il rit ?</l>
           </sp>
-          <sp xml:id="I04-21" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-21">
             <speaker>ROSANDRE.</speaker>
             <l n="226" xml:id="l226">C'est la mode à présent entre les gens d'esprit.</l>
           </sp>
-          <sp xml:id="I04-22" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-22">
             <speaker>PANCRACE.</speaker>
             <l n="227" xml:id="l227">Cette mode à mon sens, me semble ridicule ;</l>
             <l n="228" xml:id="l228">Mais n'importe, écoutons son docte préambule.</l>
           </sp>
-          <sp xml:id="I04-23" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-23">
             <speaker>ROSANDRE.</speaker>
             <l n="229" xml:id="l229">Veux-tu me faire ici recevoir un affront,</l>
-            <l n="230" xml:id="l230" part="I">Songe à ce que tu fais, Gar...</l>
+            <l n="230" part="I" xml:id="l230">Songe à ce que tu fais, Gar...</l>
           </sp>
-          <sp xml:id="I04-24" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-24">
             <speaker>BAGOLIN.</speaker>
-            <l part="F"><foreign type="latin">Adbvocatus sunt</foreign>.</l>
+            <l part="F"><foreign xml:lang="la">Adbvocatus sunt</foreign>.</l>
             <l n="231" xml:id="l231">Non pas Advocatus des quinze à la douzaine,</l>
             <l n="232" xml:id="l232">Puisque des plus savant, je suis le capitaine ; </l>
             <l n="233" xml:id="l233">Mais des Advocatus, vénérable patron, </l>
             <note type="L">Carteron : (quarteron) Compte qui fait le quart d'un cent. On dit proverbialement d'une chose qu'on estime, qu'on ménage, qu'il n'y en a pas trois douzaines au quarteron. [F]</note>
             <l n="234" xml:id="l234">Dont on ne voit jamais que dix au carteron.</l>
-            <l n="235" xml:id="l235" part="I">Connaissez vous Platon, ce grand homme de Genève !</l>
+            <l n="235" part="I" xml:id="l235">Connaissez vous Platon, ce grand homme de Genève !</l>
           </sp>
-          <sp xml:id="I04-25" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-25">
             <speaker>PANCRACE.</speaker>
             <l part="F">Non.</l>
           </sp>
-          <sp xml:id="I04-26" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-26">
             <speaker>BAGOLIN.</speaker>
-            <l n="236" xml:id="l236" part="I">Et Séneque ?</l>
+            <l n="236" part="I" xml:id="l236">Et Séneque ?</l>
           </sp>
-          <sp xml:id="I04-27" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-27">
             <speaker>PANCRACE.</speaker>
             <l part="M">Encore moins.</l>
           </sp>
-          <sp xml:id="I04-28" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-28">
             <speaker>BAGOLIN.</speaker>
             <l part="F">S'ils étaient sur la terre</l>
             <l n="237" xml:id="l237">Avant qu'il fut deux jours, au seul bruit de mon nom,</l>
             <l n="238" xml:id="l238">On ne trouverait plus Sénèque, ni Caton,</l>
             <l n="239" xml:id="l239">Car ils s'iraisent cacher dans le pot au vinaigre.</l>
           </sp>
-          <sp xml:id="I04-29" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-29">
             <speaker>PANCRACE.</speaker>
             <l n="240" xml:id="l240">Que Monsieur votre frère est un docteur allègre,</l>
             <l n="241" xml:id="l241">Il parle comme un livre, et rit incessamment.</l>
           </sp>
-          <sp xml:id="I04-30" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-30">
             <speaker>ROSANDRE.</speaker>
             <l n="242" xml:id="l242">Ne vous ai-je pas dit, qu'il raillait doctement.</l>
           </sp>
-          <sp xml:id="I04-31" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-31">
             <speaker>PANCRACE.</speaker>
-            <l n="243" xml:id="l243" part="I">Vous avez fait, Monsieur, tous vos degrés ?</l>
+            <l n="243" part="I" xml:id="l243">Vous avez fait, Monsieur, tous vos degrés ?</l>
           </sp>
-          <sp xml:id="I04-32" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-32">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Sans doute,</l>
             <l n="244" xml:id="l244">Je saurai l'autre jour, notre montée toute,</l>
             <l n="245" xml:id="l245">Sans un degré de manque, étant saoul de muscat.</l>
           </sp>
-          <sp xml:id="I04-33" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-33">
             <speaker>PANCRACE.</speaker>
             <l n="246" xml:id="l246">Et depuis quand Monsieur êtes vous avocat ?</l>
           </sp>
-          <sp xml:id="I04-34" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I04-34">
             <speaker>LISIMÈNE.</speaker>
             <l n="247" xml:id="l247">Peut-on le demander sans paraître incivil.</l>
           </sp>
-          <sp xml:id="I04-35" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-35">
             <speaker>BAGOLIN.</speaker>
             <l n="248" xml:id="l248">Depuis que ce jeune homme arrivant dans la ville,</l>
             <l n="249" xml:id="l249">Pour avoir votre fille et vos dix mille écus.</l>
-            <l n="250" xml:id="l250">M'apprit à décliner, je suis <foreign type="latin">Advocatus</foreign>.</l>
+            <l n="250" xml:id="l250">M'apprit à décliner, je suis <foreign xml:lang="la">Advocatus</foreign>.</l>
           </sp>
-          <sp xml:id="I04-36" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-36">
             <speaker>ROSANDRE.</speaker>
             <l n="251" xml:id="l251">Il est vrai, qu'aussitôt que je le vis paraître ,</l>
             <l n="252" xml:id="l252">Sachant que vous vouliez un grand homme de lettres,</l>
             <l n="253" xml:id="l253">Je dis qu'un avocat y parut aujourd'hui,</l>
             <l n="254" xml:id="l254">Et que ce bel objet pouvait être pour lui.</l>
           </sp>
-          <sp xml:id="I04-37" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-37">
             <speaker>PANCRACE.</speaker>
             <l n="255" xml:id="l255">Fort bien. Et son humeur me paraît agréable.</l>
           </sp>
-          <sp xml:id="I04-38" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-38">
             <speaker>BAGOLIN.</speaker>
             <l n="256" xml:id="l256">Au reste sachant tout, la science m'accable,</l>
             <l n="257" xml:id="l257">J'ai quatre onces du moins, de l'hébreu le plus fin.</l>
@@ -767,118 +768,118 @@
             <l n="273" xml:id="l273">Et quand il vous faudra rajuster vos souliers,</l>
             <l n="274" xml:id="l274">Vous verrez si l'on voit de meilleurs savetiers.</l>
           </sp>
-          <sp xml:id="I04-39" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-39">
             <speaker>PANCRACE.</speaker>
             <l n="275" xml:id="l275">Se moque-t-il de nous ? Quoi la Saveterie ?</l>
-            <l n="276" xml:id="l276" part="I">L'occupe quelquefois ?</l>
+            <l n="276" part="I" xml:id="l276">L'occupe quelquefois ?</l>
           </sp>
-          <sp xml:id="I04-40" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-40">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Ce n'est que raillerie,</l>
             <l n="277" xml:id="l277">En vous parlant de lui, ne vous ai-je pas dit</l>
             <l n="278" xml:id="l278">Qu'il montre à tous moments, le feu de son esprit.</l>
           </sp>
-          <sp xml:id="I04-41" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-41">
             <speaker>PANCRACE.</speaker>
             <l n="279" xml:id="l279">Combien de mille écus possédez-vous de rente !</l>
           </sp>
-          <sp xml:id="I04-42" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-42">
             <speaker>ROSANDRE.</speaker>
             <l n="280" xml:id="l280">Deux mille pour le moins, sans le bien d'une tante,</l>
-            <l n="281" xml:id="l281" part="I">Qui....</l>
+            <l n="281" part="I" xml:id="l281">Qui....</l>
           </sp>
-          <sp xml:id="I04-43" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-43">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Qui, moi, deux mille écus, malpeste du fol,</l>
             <l n="282" xml:id="l282">Jamais d'argent comptant je ne me vis deux sols.</l>
           </sp>
-          <sp xml:id="I04-44" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-44">
             <speaker>ROSANDRE.</speaker>
             <l n="283" xml:id="l283">Vous ne comprenez pas ou tendent ses paroles,</l>
             <l n="284" xml:id="l284">Il n'eut jamais deux sols, mais bien force pistoles.</l>
           </sp>
-          <sp xml:id="I04-45" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-45">
             <speaker>PANCRACE.</speaker>
             <l n="285" xml:id="l285">Or ça, Monsieur mon gendre, ou Monsieur l'Avocat,</l>
             <l n="286" xml:id="l286">Pour votre mariage, il faut faire un contrat,</l>
             <l n="287" xml:id="l287">Et sans que de vos biens autrement je m'informe,</l>
             <l n="288" xml:id="l288">Faisons le si vous plaît, qui soit en bonne forme.</l>
           </sp>
-          <sp xml:id="I04-46" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-46">
             <speaker>BAGOLIN.</speaker>
             <note type="L">Forme : Signifie quelquefois, un moule, un modèle, et se dit particulièrement de ceux des souliers. [F]</note>
             <note type="L">Forme : On appelle un arrêt en forme, un contrat en forme, ceux qui sont en parchemin, en grosse, signés, et scellé en forme probante, et authentique. [F]</note>
             <l n="289" xml:id="l289">Celle-ci que je crois, sera bonne pour vous,</l>
-            <l n="290" xml:id="l290" part="I">Elle vient de Paris.</l>
+            <l n="290" part="I" xml:id="l290">Elle vient de Paris.</l>
           </sp>
-          <sp xml:id="I04-47" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-47">
             <speaker>PANCRACE.</speaker>
             <l part="F">Se moque-t-il de nous ;</l>
             <l n="291" xml:id="l291">Une forme est-ce que par gageure...</l>
           </sp>
-          <sp xml:id="I04-48" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-48">
             <speaker>ROSANDRE.</speaker>
             <l n="292" xml:id="l292">C'est que mon frère est propre, et surtout en chaussure,</l>
             <l n="293" xml:id="l293">Et craignant en ce lieu qu'on le trouva mal mis, </l>
             <l n="294" xml:id="l294">Il a fait apporter sa forme de Paris.</l>
           </sp>
-          <sp xml:id="I04-49" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-49">
             <speaker>PANCRACE.</speaker>
             <l n="295" xml:id="l295">Mais il est à propos touchant ce mariage, </l>
             <l n="296" xml:id="l296">De savoir si ma fille aura quelque avantage ?</l>
             <note type="C">L'original ecrit "le dot", nous corrigeons.</note>
-            <l n="297" xml:id="l297" part="I">Vous savez que la dot...</l>
+            <l n="297" part="I" xml:id="l297">Vous savez que la dot...</l>
           </sp>
-          <sp xml:id="I04-50" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-50">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Que vous êtes badin, </l>
             <note type="L">Saint Crépin : on appelle aussi Saint Crépin tous les outils du cordonnier. [F]</note>
             <l n="298" xml:id="l298">Ma femme après ma mort aura mon Saint-Crespin.</l>
           </sp>
-          <sp xml:id="I04-51" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-51">
             <speaker>PANCRACE.</speaker>
-            <l n="299" xml:id="l299" part="I">Qu'est-ce qu'un Saint-Crespin ?</l>
+            <l n="299" part="I" xml:id="l299">Qu'est-ce qu'un Saint-Crespin ?</l>
           </sp>
-          <sp xml:id="I04-52" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-52">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Que votre espoir s'y fonde , </l>
             <l n="300" xml:id="l300">Il entend tout le bien, qu'il a dedans le monde.</l>
           </sp>
-          <sp xml:id="I04-53" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-53">
             <speaker>BAGOLIN.</speaker>
             <l n="301" xml:id="l301">Mais aussi, je prétends que les dix mille écus,</l>
             <note type="L">Gousset : signifie aussi, une petite bourse qu'on attahce à présent aux hauts de chausses et qu'on mettait autrefois sous l'aisselle, comme font encore aujourd'hui les paysans [XVIIème siècle NdR]. [F]</note>
-            <l n="302" xml:id="l302">Viendront dans le gousset du sieur <foreign type="latin">Advocatus</foreign>.</l>
+            <l n="302" xml:id="l302">Viendront dans le gousset du sieur <foreign xml:lang="la">Advocatus</foreign>.</l>
           </sp>
-          <sp xml:id="I04-54" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-54">
             <speaker>PANCRACE.</speaker>
             <l n="303" xml:id="l303">Nous l'entendons ainsi, ça vite Lisimène</l>
             <l n="304" xml:id="l304">De déchausser le gant, il faut prendre la peine.</l>
           </sp>
-          <sp xml:id="I04-55" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I04-55">
             <speaker>LISIMÈNE.</speaker>
-            <l n="305" xml:id="l305" part="I">Rosandre, mon papa...</l>
+            <l n="305" part="I" xml:id="l305">Rosandre, mon papa...</l>
           </sp>
-          <sp xml:id="I04-56" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-56">
             <speaker>PANCRACE.</speaker>
             <l part="F">Vous résistez en vain,</l>
             <note type="L">Badot : ou Badaud. Sot, niais, ignorant. C'est un sobriquet injurieux qu'on a donné aux habitant de Paris, à cause qu'ils s'attroupent, et d'amusent à voir, et à admirer tout ce qu'ils rencontrent en chemin, pour peu qu'il leur semble extraordinaire. [F]</note>
             <l n="306" xml:id="l306">Rosandre est un badot, ça monsieur votre main.</l>
             <l n="307" xml:id="l307">Pour se donner la foi, c'est le premier article.</l>
           </sp>
-          <sp xml:id="I04-57" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I04-57">
             <speaker>LISIMÈNE.</speaker>
-            <l n="308" xml:id="l308" part="I">Papa, qu'est-ce la foi ?</l>
+            <l n="308" part="I" xml:id="l308">Papa, qu'est-ce la foi ?</l>
           </sp>
-          <sp xml:id="I04-58" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-58">
             <speaker>BAGOLIN.</speaker>
             <note type="L">Manicle : Ce sont des fers qu'on met aux mains es prisonniers On dit ordinairement des menottes. Les confiseurs se servent aussi de ce mot pour signifier quelque morceau de papier avec quoi ils lèvent la poêle de dessus le feu, de peur de sse brûler les mains. [F]</note>
             <l part="F">C'est une manicle,</l>
             <note type="L">Ligneuil : Cordon qui se fait de plusieurs fils attachés ensemble par de la poix. [F]</note>
             <l n="309" xml:id="l309">Pour tirer le ligneuil, de crainte que la poix,</l>
-            <l n="310" xml:id="l310" part="I">Ne s'attache à la main.</l>
+            <l n="310" part="I" xml:id="l310">Ne s'attache à la main.</l>
           </sp>
-          <sp xml:id="I04-59" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I04-59">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Oui, c'est que l'autre fois.</l>
             <l n="311" xml:id="l311">En n'écrivant un mot avec tranche plume,</l>
@@ -886,41 +887,41 @@
             <l n="313" xml:id="l313">Dont le chirurgien, l'a su persuader, </l>
             <l n="314" xml:id="l314">De porter cette peau, pour la consolider.</l>
           </sp>
-          <sp xml:id="I04-60" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-60">
             <speaker>PANCRACE.</speaker>
             <l n="315" xml:id="l315">Vite, touché, palette, allons mon future gendre.</l>
           </sp>
-          <sp xml:id="I04-61" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I04-61">
             <speaker>LISIMÈNE.</speaker>
             <l n="316" xml:id="l316">J'obéis à mon père, et la donne à Rosandre.</l>
           </sp>
-          <sp xml:id="I04-62" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-62">
             <speaker>BAGOLIN.</speaker>
             <l n="317" xml:id="l317">Bon, me voila déjà marié d'une main.</l>
           </sp>
-          <sp xml:id="I04-63" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-63">
             <speaker>PANCRACE.</speaker>
             <l n="318" xml:id="l318">Les noces, si vous plaît ; se feront dès demain.</l>
             <l n="319" xml:id="l319">Le plutôt vaut le mieux, en cas de mariage.</l>
           </sp>
-          <sp xml:id="I04-64" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-64">
             <speaker>BAGOLIN.</speaker>
             <l n="320" xml:id="l320">Je vais faire chez vous porter tout mon bagage.</l>
           </sp>
-          <sp xml:id="I04-65" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-65">
             <speaker>PANCRACE.</speaker>
             <l n="321" xml:id="l321">Fort bien. Mais voulez-vous qu'avec vos laquais,</l>
             <note type="L">Portefaix : On appelle portefaix des crocheteurs, et gens de peine propres à porter des meubles, et les provisions. [F]</note>
             <l n="322" xml:id="l322">J'envoie une charrette ou quelque portefaix ?</l>
           </sp>
-          <sp xml:id="I04-66" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I04-66">
             <speaker>BAGOLIN.</speaker>
             <l n="323" xml:id="l323">Vous vous moquez de moi, j'ai l'échine assez large</l>
             <l n="324" xml:id="l324">Pour pouvoir supporter une plus lourde charge,</l>
             <l n="325" xml:id="l325">Adieu, je reviendrai plutôt que l'on ne croit,</l>
             <l n="326" xml:id="l326">Mon frère cependant faite l'amour pour moi.</l>
           </sp>
-          <sp xml:id="I04-67" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I04-67">
             <speaker>PANCRACE.</speaker>
             <l n="327" xml:id="l327">Son humeur qui me charme, est sans doute agréable.</l>
             <l n="328" xml:id="l328">Et je crois qu'à railler elle est incomparable,</l>
@@ -929,13 +930,13 @@
             <l n="331" xml:id="l331">Ma fille entretenez cet aimable beau frère.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Lisimène, Rosandre.</head>
-          <sp xml:id="I05-1" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I05-1">
             <speaker>LISIMÈNE.</speaker>
             <l n="332" xml:id="l332">Hé bien, que dites vous de l'humeur de mon père ?</l>
           </sp>
-          <sp xml:id="I05-2" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I05-2">
             <speaker>ROSANDRE.</speaker>
             <l n="333" xml:id="l333">Elle est assez facile, à ne vous rien celer,</l>
             <l n="334" xml:id="l334">Et pour le voir duper on n'a rien qu'à parler,</l>
@@ -945,18 +946,18 @@
             <l n="338" xml:id="l338">Joindre le nom d'époux, aux ardeurs, d'un amant,</l>
             <l n="339" xml:id="l339">Et vous voir à mes yeux destiné pour un autre.</l>
           </sp>
-          <sp xml:id="I05-3" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I05-3">
             <speaker>LISIMÈNE.</speaker>
             <l n="340" xml:id="l340">La faute, ou je me trompe, est entièrement vôtre,</l>
             <l n="341" xml:id="l341">Vous vouliez le jouer, mais Rosandre avouée,</l>
             <l n="342" xml:id="l342">Que souvent les plus fins en jouant sont joués.</l>
           </sp>
-          <sp xml:id="I05-4" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I05-4">
             <speaker>ROSANDRE.</speaker>
             <l n="343" xml:id="l343">Mais, depuis quatre jours qu'auprès de vos appas, </l>
-            <l n="344" xml:id="l344" part="I">On me voit de retour ?</l>
+            <l n="344" part="I" xml:id="l344">On me voit de retour ?</l>
           </sp>
-          <sp xml:id="I05-5" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I05-5">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Il ne vous connaît pas.</l>
             <l n="345" xml:id="l345">Et qui plus est encor, vous m'avez fait paraître,</l>
@@ -964,56 +965,56 @@
             <l n="347" xml:id="l347">Je n'ai rien dit, ainsi vous devez aujourd'hui,</l>
             <l n="348" xml:id="l348">Vous plaindre de Rosandre, et point du tout de lui.</l>
           </sp>
-          <sp xml:id="I05-6" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I05-6">
             <speaker>ROSANDRE.</speaker>
             <l n="349" xml:id="l349">Mais puis-je m'assurer que Lisimène m'aime ?</l>
           </sp>
-          <sp xml:id="I05-7" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I05-7">
             <speaker>LISIMÈNE.</speaker>
             <l n="350" xml:id="l350">Sans doute, et beaucoup plus qu'elle ne fait soi-même,</l>
             <l n="351" xml:id="l351">Ne doutez donc de rien, et calmez ce couroux ?</l>
             <l n="352" xml:id="l352">Croyez qu'absolument Lisimène est à vous.</l>
           </sp>
-          <sp xml:id="I05-8" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I05-8">
             <speaker>ROSANDRE.</speaker>
             <l n="353" xml:id="l353">Jamais son changement n'entrât dans ma pensée,</l>
-            <note tyep="L">Fourbe : tromperie, déguisement de la vérité. [F]</note>
+            <note type="L">Fourbe : tromperie, déguisement de la vérité. [F]</note>
             <l n="354" xml:id="l354">Mais allons achever la fourbe commencée,</l>
             <l n="355" xml:id="l355">Et voir si l'avocat emportera le prix,</l>
-            <l n="356" xml:id="l356" part="I">Je vais trouver Pancrace.</l>
+            <l n="356" part="I" xml:id="l356">Je vais trouver Pancrace.</l>
           </sp>
-          <sp xml:id="I05-9" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I05-9">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Et moi j'entre au logis.</l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="I06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="I06-1" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-1">
             <speaker>BAGOLIN, en traînant une caisse.</speaker>
             <l n="357" xml:id="l357">Quand un homme prend femme, et qu'il entre en ménage,</l>
             <l n="358" xml:id="l358">On m'a dit qu'il y doit porter tout son bagage,</l>
             <l n="359" xml:id="l359">Aussi je veux savoir en portant tout le mien,</l>
             <l n="360" xml:id="l360">Si notre chère épouse a pour moi tout le sien !</l>
-            <l n="361" xml:id="l361" part="I">Hola ho ?</l>
+            <l n="361" part="I" xml:id="l361">Hola ho ?</l>
           </sp>
-          <sp xml:id="I06-2" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-2">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Quoi vous-même vous prenez cette peine.</l>
           </sp>
-          <sp xml:id="I06-3" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-3">
             <speaker>BAGOLIN.</speaker>
             <l n="362" xml:id="l362">Je la prends aujourd'hui charmante Lisimène.</l>
             <l n="363" xml:id="l363">Mais entrant dès demain, en ménage nouveau,</l>
             <l n="364" xml:id="l364">Vous m'aiderez je pense à porter le fardeau.</l>
             <l n="365" xml:id="l365">Ça prêtez moi la main, pour décharger ma caisse.</l>
           </sp>
-          <sp xml:id="I06-4" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-4">
             <speaker>LISIMÈNE.</speaker>
             <note type="L">Crocheteur : Qui crochète des portes, des serrures. Signifie aussi un portefaix qui porte des fardeaux sur des crochets. [F]</note>
-            <l n="366" xml:id="l366" part="I">Un avocat bon Dieu, crocheteur.</l>
+            <l n="366" part="I" xml:id="l366">Un avocat bon Dieu, crocheteur.</l>
           </sp>
-          <sp xml:id="I06-5" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-5">
             <speaker>BAGOLIN.</speaker>
             <l part="F">He bien ! qu'est-ce ? </l>
             <l n="367" xml:id="l367">Si l'on voit large dos à Monsieur votre époux,</l>
@@ -1022,140 +1023,140 @@
             <l n="369" xml:id="l369">Quand il faudra pour vous exercer son échine,</l>
             <l n="370" xml:id="l370">L'avocat gagnera de quoi boire chopine.</l>
           </sp>
-          <sp xml:id="I06-6" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-6">
             <speaker>LISIMÈNE.</speaker>
             <note type="L">Hardes : signifie les habits et meubles et portatifs qui servent à v^tir ou parer une personne, ou sa chambre. [F]</note>
             <l n="371" xml:id="l371">Pouvons nous visiter les hardes que voilà,</l>
-            <l n="372" xml:id="l372" part="I">Voir vos coffres ici ?</l>
+            <l n="372" part="I" xml:id="l372">Voir vos coffres ici ?</l>
           </sp>
-          <sp xml:id="I06-7" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-7">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Oui da, mettez-vous là.</l>
           </sp>
-          <sp xml:id="I06-8" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-8">
             <speaker>LISIMÈNE.</speaker>
             <note type="L">Guenille : habit déchiré, et tombant en lambeaux. [F]</note>
-            <l n="373" xml:id="l373" part="I">Quelle guenille au Ciel !</l>
+            <l n="373" part="I" xml:id="l373">Quelle guenille au Ciel !</l>
           </sp>
-          <sp xml:id="I06-9" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-9">
             <speaker>BAGOLIN.</speaker>
             <l part="F">C'est mon habit de noce.</l>
             <note type="C">v. 374, la fin du vers est graphié : "au chosses"</note>
             <l n="374" xml:id="l374">Voyez-vous le pourpoint, il revient bien aux chausses,</l>
             <l n="375" xml:id="l375">Je le mets le dimanche avec ce grand chapeau.</l>
           </sp>
-          <sp xml:id="I06-10" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-10">
             <speaker>LISIMÈNE.</speaker>
             <l n="376" xml:id="l376">Vous êtes lors bien mis, car l'équipage est beau.</l>
           </sp>
-          <sp xml:id="I06-11" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-11">
             <speaker>BAGOLIN.</speaker>
-            <l n="377" xml:id="l377" part="I">Voilà mon Saint-Crespin, et mon linge.</l>
+            <l n="377" part="I" xml:id="l377">Voilà mon Saint-Crespin, et mon linge.</l>
           </sp>
-          <sp xml:id="I06-12" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-12">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Il me semble,</l>
             <l n="378" xml:id="l378">Que le linge et l'habit reviennent bien ensemble.</l>
           </sp>
-          <sp xml:id="I06-13" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-13">
             <speaker>BAGOLIN.</speaker>
             <l n="379" xml:id="l379">Il est sale, il est vrai, mais vous devez savoir,</l>
             <l n="380" xml:id="l380">Que tant plus je le porte, et plus il devient noir.</l>
           </sp>
-          <sp xml:id="I06-14" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-14">
             <speaker>LISIMÈNE.</speaker>
-            <l n="381" xml:id="l381" part="I">Qu'est cela ?</l>
+            <l n="381" part="I" xml:id="l381">Qu'est cela ?</l>
           </sp>
-          <sp xml:id="I06-15" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-15">
             <speaker>BAGOLIN.</speaker>
             <l part="F">D'un cocu le plumage</l>
             <l n="382" xml:id="l382">Il est bon d'en avoir quand on entre en ménage.</l>
             <l n="383" xml:id="l383">On s'en sert quelquefois pour manche de couteaux.</l>
             <l n="384" xml:id="l384">Pourrai-je quelque jour être de ses oiseaux,</l>
-            <l n="385" xml:id="l385" part="I">Dites ?</l>
+            <l n="385" part="I" xml:id="l385">Dites ?</l>
           </sp>
-          <sp xml:id="I06-16" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-16">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Cela se peut, et l'homme le plus sage...</l>
           </sp>
-          <sp xml:id="I06-17" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-17">
             <speaker>BAGOLIN.</speaker>
             <l n="386" xml:id="l386">Je vous en fait présent, au nom de mariage.</l>
           </sp>
-          <sp xml:id="I06-18" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-18">
             <speaker>LISIMÈNE.</speaker>
             <l n="387" xml:id="l387">Ah ! Gardez-les pour vous, pour moi, je n'en veux point.</l>
           </sp>
-          <sp xml:id="I06-19" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-19">
             <speaker>BAGOLIN.</speaker>
             <l n="388" xml:id="l388">Et vous m'en fournirez quand j'en aurai besoin,</l>
-            <l n="389" xml:id="l389" part="I">Prenez.</l>
+            <l n="389" part="I" xml:id="l389">Prenez.</l>
           </sp>
-          <sp xml:id="I06-20" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-20">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Encore un coup je n'en veux point des vôtres.</l>
           </sp>
-          <sp xml:id="I06-21" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-21">
             <speaker>BAGOLIN.</speaker>
             <l n="390" xml:id="l390">Et prenez celle-ci, vous en donnerai d'autres.</l>
-            <l n="391" xml:id="l391" part="I">Mais que vois-je...</l>
+            <l n="391" part="I" xml:id="l391">Mais que vois-je...</l>
           </sp>
-          <sp xml:id="I06-22" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I06-22">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Mon père, et mon cousin aussi.</l>
           </sp>
-          <sp xml:id="I06-23" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I06-23">
             <speaker>BAGOLIN.</speaker>
             <l n="392" xml:id="l392">J'entre dans le logis, et je reviens ici.</l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="I07">
           <head>SCÈNE VII. Le Cousin, Pancrace, Le Docteur, Bagolin, Rosandre, Lisimène.</head>
-          <sp xml:id="I07-1" who="LECOUSIN">
+          <sp who="LECOUSIN" xml:id="I07-1">
             <speaker>LE COUSIN.</speaker>
             <l n="393" xml:id="l393">C'est bien précipiter un pareil mariage.</l>
           </sp>
-          <sp xml:id="I07-2" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-2">
             <speaker>PANCRACE.</speaker>
             <l n="394" xml:id="l394">Il le faut, quand on trouve un si grand avantage.</l>
             <l n="395" xml:id="l395">Un avocat bien fait, richissime et savant.</l>
           </sp>
-          <sp xml:id="I07-3" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-3">
             <speaker>LE DOCTEUR.</speaker>
             <l n="396" xml:id="l396">La plus belle apparence est trompeuse souvent</l>
             <l n="397" xml:id="l397">Dit Sénèque, et souvent par une fausse amorce,</l>
             <l n="398" xml:id="l398">On trouve un méchant bois, sous une belle écorce.</l>
-            <l n="399" xml:id="l399" part="I">Est-il fort docte ?</l>
+            <l n="399" part="I" xml:id="l399">Est-il fort docte ?</l>
           </sp>
-          <sp xml:id="I07-4" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-4">
             <speaker>PANCRACE.</speaker>
             <l part="F">Autant que feu Nostradamus.</l>
           </sp>
-          <sp xml:id="I07-5" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-5">
             <speaker>LE DOCTEUR.</speaker>
-            <l n="400" xml:id="l400"><foreign type="latin">Mortalibus doctrina honnore est omnibus</foreign>.</l>
+            <l n="400" xml:id="l400"><foreign xml:lang="la">Mortalibus doctrina honnore est omnibus</foreign>.</l>
             <l n="401" xml:id="l401">Oui, le profond, savoir est un rare avantage,</l>
             <l n="402" xml:id="l402">Il nous honore, et rien n'est comparable au sage,</l>
             <l n="403" xml:id="l403">Sitôt que j'aurai vu ce gendre prétendu,</l>
             <l n="404" xml:id="l404">Qui peut porter le nom de rare individu,</l>
-            <note tpe="L">Interrogat : Question, demande qu'on fit en justice, et dont on attend une réponse. [F]</note>
+            <note type="L">Interrogat : Question, demande qu'on fit en justice, et dont on attend une réponse. [F]</note>
             <l n="405" xml:id="l405">Un bon interrogat, nous apprendra peut-être,</l>
             <l n="406" xml:id="l406">S'y dans le droit civil, il sera passé maître.</l>
           </sp>
-          <sp xml:id="I07-6" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-6">
             <speaker>PANCRACE.</speaker>
             <l n="407" xml:id="l407">Le voici, dites-moi qu'est-ce que son esprit.</l>
           </sp>
-          <sp xml:id="I07-7" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-7">
             <speaker>LE DOCTEUR.</speaker>
             <l n="408" xml:id="l408">On en peut pas juger n'ayant encore rien dit.</l>
-            <l n="409" xml:id="l409" part="I">Je vais l'interroger.</l>
+            <l n="409" part="I" xml:id="l409">Je vais l'interroger.</l>
           </sp>
-          <sp xml:id="I07-8" who="LECOUSIN">
+          <sp who="LECOUSIN" xml:id="I07-8">
             <speaker>LE COUSIN.</speaker>
             <l part="F">Il a mauvaise mine.</l>
           </sp>
-          <sp xml:id="I07-9" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-9">
             <speaker>LE DOCTEUR.</speaker>
             <l n="410" xml:id="l410">C'est un dont ennoré sans doute à la Doctrine.</l>
             <l n="411" xml:id="l411">Ami du Sieur Pancrace, et docteur dans les lois,</l>
@@ -1165,29 +1166,29 @@
             <l n="415" xml:id="l415">Souffrez qu'à ce brillant qui me met à qui a,</l>
             <l n="416" xml:id="l416">Je puis se demander <foreign xml:lang="latin">quid est Justicia</foreign> ?</l>
           </sp>
-          <sp xml:id="I07-10" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-10">
             <speaker>BAGOLIN.</speaker>
-            <l n="417" xml:id="l417" part="I">Que dit-il ?</l>
+            <l n="417" part="I" xml:id="l417">Que dit-il ?</l>
           </sp>
-          <sp xml:id="I07-11" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I07-11">
             <speaker>ROSANDRE.</speaker>
             <l part="F">En Latin qu'es-ce que la Justice. </l>
           </sp>
-          <sp xml:id="I07-12" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-12">
             <speaker>BAGOLIN.</speaker>
             <l n="418" xml:id="l418">Je suis <foreign xml:lang="latin">Advocatus visage decrevice</foreign>,</l>
-            <l n="419" xml:id="l419" part="I">Cela dit <foreign xml:lang="latin">et cetera</foreign>.</l>
+            <l n="419" part="I" xml:id="l419">Cela dit <foreign xml:lang="latin">et cetera</foreign>.</l>
           </sp>
-          <sp xml:id="I07-13" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-13">
             <speaker>LE DOCTEUR.</speaker>
             <l part="M">Répondez</l>
           </sp>
-          <sp xml:id="I07-14" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-14">
             <speaker>BAGOLIN.</speaker>
             <l part="F">On y va.</l>
             <l n="420" xml:id="l420">Mais toi-même réponds, <foreign xml:lang="latin">Quid est ce Justitia</foreign>.</l>
           </sp>
-          <sp xml:id="I07-15" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-15">
             <speaker>LE DOCTEUR.</speaker>
             <l n="421" xml:id="l421"><foreign xml:lang="latin">Justicia est, Constans et perpetua Volontas</foreign>,</l>
             <l n="422" xml:id="l422"><foreign xml:lang="latin">Jus suum Cuiqué tribuendi</foreign>.</l>
@@ -1195,11 +1196,11 @@
             <l n="424" xml:id="l424">Qu'on voit perpétuel et qu'on nomme Constante,</l>
             <l n="425" xml:id="l425">À rendre à tout chacun ce qui leur appartient.</l>
           </sp>
-          <sp xml:id="I07-16" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-16">
             <speaker>BAGOLIN.</speaker>
             <l n="426" xml:id="l426">D'accord, car je soutiens ce que Monsieur soutient.</l>
           </sp>
-          <sp xml:id="I07-17" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-17">
             <speaker>LE DOCTEUR.</speaker>
             <l n="427" xml:id="l427">Le grand Justinien, cet empereur Illustre,</l>
             <l n="428" xml:id="l428">Qui fit voir la Justice en son plus digne lustre,</l>
@@ -1212,22 +1213,22 @@
             <l n="435" xml:id="l435">Il en forma les lois que notre siècle honore,</l>
             <l n="436" xml:id="l436">Et qui jusqu'à présent porte son nom encore.</l>
           </sp>
-          <sp xml:id="I07-18" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-18">
             <speaker>BAGOLIN.</speaker>
             <l n="437" xml:id="l437">Que vous raisonnez bien, que vous avez d'esprit.</l>
           </sp>
-          <sp xml:id="I07-19" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-19">
             <speaker>LE DOCTEUR.</speaker>
             <l n="438" xml:id="l438">Depuis que ce grand homme, eût fait ce que j'ai dit,</l>
             <l n="439" xml:id="l439">On n'a vu dans l'instant s'installer dans le monde.</l>
             <l n="440" xml:id="l440">Tant de livres de droit, que le siècle en abonde.</l>
           </sp>
-          <sp xml:id="I07-20" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-20">
             <speaker>BAGOLIN.</speaker>
             <l n="441" xml:id="l441">Des Lièvres ? Il est vrai, on en voit bien parfois,</l>
-            <l n="442" xml:id="l442" part="I">Et des lapins aussi.</l>
+            <l n="442" part="I" xml:id="l442">Et des lapins aussi.</l>
           </sp>
-          <sp xml:id="I07-21" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-21">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Latin, Grec, et François.</l>
             <l n="443" xml:id="l443">Or, parmi ses docteurs dont les sciences brillent,</l>
@@ -1251,12 +1252,12 @@
             <l n="461" xml:id="l461">Qui vont embarrassant quand on veut l'embrasser,</l>
             <l n="462" xml:id="l462">Des Cerveaux, qu'avec peine on peut débarrasser.</l>
           </sp>
-          <sp xml:id="I07-22" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-22">
             <speaker>PANCRACE.</speaker>
             <l n="463" xml:id="l463">Je ne comprends rien là, du moins qui me remembre,</l>
             <l n="464" xml:id="l464">Tandis, qu'ils finiront, je vais jusqu'à ma chambre.</l>
           </sp>
-          <sp xml:id="I07-23" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-23">
             <speaker>LE DOCTEUR.</speaker>
             <l n="465" xml:id="l465">De ses savants aux lois, que l'on nomme Docteurs, </l>
             <l n="466" xml:id="l466">Les uns sont chicanants, chicanez, chicaneurs ,</l>
@@ -1265,17 +1266,17 @@
             <l n="469" xml:id="l469">Les uns praticiens, d'autres instituteurs ,</l>
             <l n="470" xml:id="l470">Interprète du Droit, et qui solliciteurs.</l>
           </sp>
-          <sp xml:id="I07-24" who="LECOUSIN">
+          <sp who="LECOUSIN" xml:id="I07-24">
             <speaker>LE COUSIN.</speaker>
             <l n="471" xml:id="l471">Que d'un pareil discours la longueur m'assassine,</l>
             <l n="472" xml:id="l472">J'entre dans le logis, et reviens ma cousine.</l>
           </sp>
-          <sp xml:id="I07-25" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-25">
             <speaker>LE DOCTEUR.</speaker>
             <l n="473" xml:id="l473">Un parfait avocat doit savoir tout cela, </l>
             <l n="474" xml:id="l474">Et pour se rendre Illustre aller jusqu'au delà,</l>
-            <l n="475" xml:id="l475">N'ignorer ce que c'est, que ces fins <em>dilatoires</em>, </l>
-            <l n="476" xml:id="l476">Piramtoire même, et <em>fins déclinatoires</em>,</l>
+            <l n="475" xml:id="l475">N'ignorer ce que c'est, que ces fins <hi rend="i">dilatoires</hi>, </l>
+            <l n="476" xml:id="l476">Piramtoire même, et <hi rend="i">fins déclinatoires</hi>,</l>
             <l n="477" xml:id="l477">Qu'est-ce que nullités, qu'est-ce qu'originaux, </l>
             <l n="478" xml:id="l478">Promesses et contrats, achats, lettre royaux, publiques, </l>
             <l n="479" xml:id="l479">Écritures publiques, épreuves, et requêtes,</l>
@@ -1289,24 +1290,24 @@
             <l n="487" xml:id="l487">Parties jointes, et de plus tous ces noms innombrables</l>
             <l n="488" xml:id="l488">Qu'au Palais tous les jours vont forgeant nos semblables.</l>
           </sp>
-          <sp xml:id="I07-26" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I07-26">
             <speaker>LISIMÈNE.</speaker>
-            <l n="489" xml:id="l489" part="I">Je m'ennuie beaucoup.</l>
+            <l n="489" part="I" xml:id="l489">Je m'ennuie beaucoup.</l>
           </sp>
-          <sp xml:id="I07-27" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I07-27">
             <speaker>ROSANDRE.</speaker>
             <l part="F">Peut-on pas s'en aller ?</l>
           </sp>
-          <sp xml:id="I07-28" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I07-28">
             <speaker>LISIMÈNE.</speaker>
             <l n="490" xml:id="l490">Suivez-moi dont aussi, car je vous veux parler.</l>
           </sp>
-          <sp xml:id="I07-29" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-29">
             <speaker>BAGOLIN.</speaker>
             <l n="491" xml:id="l491">Tout le jour faudra-t-il que j'ai la bouche close ?</l>
             <l n="492" xml:id="l492">Et quand diable Monsieur dirai-je quelque chose ?</l>
           </sp>
-          <sp xml:id="I07-30" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-30">
             <speaker>LE DOCTEUR.</speaker>
             <l n="493" xml:id="l493">Je n'ai plus qu'à parler deux heures seulement,</l>
             <l n="494" xml:id="l494">Et puis, vous me pouvez répondre congrument. </l>
@@ -1314,47 +1315,47 @@
             <l n="496" xml:id="l496">Dans Rome, ayant trouvé, deux cent mille volumes,</l>
             <l n="497" xml:id="l497">Composé du depuis Justin, à Romulus.</l>
           </sp>
-          <sp xml:id="I07-31" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-31">
             <speaker>BAGOLIN.</speaker>
             <l n="498" xml:id="l498">La langue me démange enfin, je n'en puis plus.</l>
           </sp>
-          <sp xml:id="I07-32" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-32">
             <speaker>LE DOCTEUR.</speaker>
             <l n="499" xml:id="l499">Pour laisser aux mortels, sa mémoire immortelle...</l>
           </sp>
-          <sp xml:id="I07-33" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-33">
             <speaker>BAGOLIN.</speaker>
             <l n="500" xml:id="l500">Je veux parler te dis-je, ou nous aurons querelles.</l>
           </sp>
-          <sp xml:id="I07-34" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-34">
             <speaker>LE DOCTEUR.</speaker>
             <l n="501" xml:id="l501">Et que tout l'avenir profitas de ces soins.</l>
           </sp>
-          <sp xml:id="I07-35" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-35">
             <speaker>BAGOLIN.</speaker>
             <l n="502" xml:id="l502">Il va dans un moment, pleuvoir des coups de poings.</l>
           </sp>
-          <sp xml:id="I07-36" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-36">
             <speaker>LE DOCTEUR.</speaker>
             <l n="503" xml:id="l503">Ayant formé ces lois que je viens de vous dire </l>
             <l n="504" xml:id="l504">Dès lors... Mais Domine vous voulez je crois rire ?</l>
           </sp>
-          <sp xml:id="I07-37" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-37">
             <speaker>BAGOLIN.</speaker>
-            <l n="505" xml:id="l505" part="I">Quoi je ne dirai mot ?</l>
+            <l n="505" part="I" xml:id="l505">Quoi je ne dirai mot ?</l>
           </sp>
-          <sp xml:id="I07-38" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-38">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Je dois être entendu,</l>
-            <l n="506" xml:id="l506">Car.... vous êtes un sot, <foreign xml.lang="la">insupremo gradu</foreign>, </l>
+            <l n="506" xml:id="l506">Car.... vous êtes un sot, <foreign xml:lang="la">insupremo gradu</foreign>, </l>
             <l n="507" xml:id="l507">Écoute, et saches que Cujas... à leschine,</l>
             <l n="508" xml:id="l508">L'on va dans un instant voir battre la Doctrine.</l>
           </sp>
-          <sp xml:id="I07-39" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-39">
             <speaker>BAGOLIN.</speaker>
-            <l n="509" xml:id="l509" part="I">Voilà pour commencer.</l>
+            <l n="509" part="I" xml:id="l509">Voilà pour commencer.</l>
           </sp>
-          <sp xml:id="I07-40" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-40">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Ah ! Suivons mon courroux,</l>
             <l n="510" xml:id="l510">C'est par trop en souffrir, il faut donner des coups,</l>
@@ -1372,124 +1373,124 @@
             <l n="522" xml:id="l522">Il n'en faut plus douter, c'est un magicien. </l>
             <l n="523" xml:id="l523">Ne perdons point de temps, faisons venir Pancrace, </l>
             <l n="524" xml:id="l524">Et lui montrons l'époux, qu'il veut mettre en sa race.</l>
-            <l n="525" xml:id="l525" part="I">Hola vite.</l>
+            <l n="525" part="I" xml:id="l525">Hola vite.</l>
           </sp>
-          <sp xml:id="I07-41" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-41">
             <speaker>PANCRACE.</speaker>
             <l part="F">Bonjour, avez-vous achevé ?</l>
           </sp>
-          <sp xml:id="I07-42" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-42">
             <speaker>LE DOCTEUR.</speaker>
             <l n="526" xml:id="l526">Ah ! Que je suis heureux de vous avoir trouvé, </l>
-            <l n="527" xml:id="l527" part="I">Laissez-moi prendre haleine.</l>
+            <l n="527" part="I" xml:id="l527">Laissez-moi prendre haleine.</l>
           </sp>
-          <sp xml:id="I07-43" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-43">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Ha, que la farce est drôle,</l>
             <l n="528" xml:id="l528">Mettons nous dans la robe, et finissons le rôle.</l>
           </sp>
-          <sp xml:id="I07-44" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-44">
             <speaker>PANCRACE.</speaker>
             <l n="529" xml:id="l529">Venez-vous me donner quelques avis importants ?</l>
           </sp>
-          <sp xml:id="I07-45" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-45">
             <speaker>LE DOCTEUR.</speaker>
             <l n="530" xml:id="l530">Je viens vous raconter un cas exorbitant,</l>
-            <l n="531" xml:id="l531" part="I">L'avocat...</l>
+            <l n="531" part="I" xml:id="l531">L'avocat...</l>
           </sp>
-          <sp xml:id="I07-46" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-46">
             <speaker>PANCRACE.</speaker>
             <l part="M">He bien quoi.</l>
           </sp>
-          <sp xml:id="I07-47" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-47">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">N'avait rien que l'externe, </l>
             <l n="532" xml:id="l532">Étant dans l'intérieur ignorant subalterne,</l>
             <l n="533" xml:id="l533">Outre qu'il est sans doute un insigne sorcier.</l>
           </sp>
-          <sp xml:id="I07-48" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-48">
             <speaker>PANCRACE.</speaker>
             <l n="534" xml:id="l534">Et de plus m'a-t-on dit un méchant savetier,</l>
             <l n="535" xml:id="l535">Qui voulait m'attraper ; mais je le ferai pendre, </l>
             <l n="536" xml:id="l536">Ne voulant ni le sorcier, ni savetier pour gendre.</l>
           </sp>
-          <sp xml:id="I07-49" who="LECOUSIN">
-            <speaker>LE COUSIN.	</speaker>
+          <sp who="LECOUSIN" xml:id="I07-49">
+            <speaker>LE COUSIN. </speaker>
             <l n="537" xml:id="l537">Je le connais fort bien, son nom est Bagolin.</l>
           </sp>
-          <sp xml:id="I07-50" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I07-50">
             <speaker>LE DOCTEUR.</speaker>
             <l n="538" xml:id="l538">Sachez qu'en nous frottant, c'est homme diablotin, </l>
             <l n="539" xml:id="l539">De me voir, le plus fort prévoyant sa disgrâce, </l>
             <l n="540" xml:id="l540">N'a laissé dans mes mains, qu'une robe en sa place... </l>
             <l n="541" xml:id="l541">Mais il est de retour, saisissons-nous de lui.</l>
           </sp>
-          <sp xml:id="I07-51" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-51">
             <speaker>PANCRACE.</speaker>
             <l n="542" xml:id="l542">Ha pendard, je te tiens, ou du moins ton étui,</l>
             <l n="543" xml:id="l543">Allons il faut dans peu venir à la Justice, </l>
             <l n="544" xml:id="l544">Et dedans un bon feu, recevoir ton supplice.</l>
           </sp>
-          <sp xml:id="I07-52" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I07-52">
             <speaker>BAGOLIN.</speaker>
             <l n="545" xml:id="l545">Quoi, pour être avocat, il faut être grillé,</l>
             <l n="546" xml:id="l546">Ha, l'on verra bientôt l'avocat dépouillé, </l>
             <l n="547" xml:id="l547">Je veux être pendu, en cas qu'on m'y rattrape.</l>
           </sp>
-          <sp xml:id="I07-53" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I07-53">
             <speaker>PANCRACE.</speaker>
             <l n="548" xml:id="l548">Tenez le bien tous deux, de crainte qu'il n'échappe</l>
             <l n="549" xml:id="l549">Je m'en vais appeler le sergent du quartier,</l>
-            <l n="550" xml:id="l550" part="I">Hola.</l>
+            <l n="550" part="I" xml:id="l550">Hola.</l>
           </sp>
         </div2>
-        <div2 xml:id="I08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="I08">
           <head>SCÈNE VIII. Sergent, Pancrace, Le Docteur, Un Sergent.</head>
-          <sp xml:id="I08-1" who="SERGENTETRECORS">
+          <sp who="SERGENT RECORS" xml:id="I08-1">
             <speaker>SERGENT, et Recors.</speaker>
             <l part="M">Que voulez-vous ?</l>
           </sp>
-          <sp xml:id="I08-2" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I08-2">
             <speaker>PANCRACE.</speaker>
             <l part="F">Nous avons un sorcier</l>
             <l n="551" xml:id="l551">Qui faut mettre en prison, sans tarder davantage.</l>
-            <l n="552" xml:id="l552" part="I">Tenez bien.</l>
+            <l n="552" part="I" xml:id="l552">Tenez bien.</l>
           </sp>
-          <sp xml:id="I08-3" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I08-3">
             <speaker>LE DOCTEUR.</speaker>
             <l part="M">N'ayez peur.</l>
           </sp>
-          <sp xml:id="I08-4" who="SERGENT">
+          <sp who="SERGENT" xml:id="I08-4">
             <speaker>SERGENT.</speaker>
             <l part="F">Voyons le personnage ;</l>
             <l n="553" xml:id="l553">Ah galant ! Je te tiens, c'est de la part du Roi,</l>
             <l n="554" xml:id="l554">Allons y faut marcher, vous moquez-vous de moi,</l>
             <l n="555" xml:id="l555">Pourquoi mettre en prison cette jaquette noire ?</l>
           </sp>
-          <sp xml:id="I08-5" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I08-5">
             <speaker>LE DOCTEUR.</speaker>
             <note type="L">Grimoire : Livre qu'on n'a jamais vu, où on prétend qu'il y a des conjurations propres pour faire évoquer les démons. [F]</note>
             <l n="556" xml:id="l556">Il est plus fin que nous, autre tour de grimoire.</l>
           </sp>
-          <sp xml:id="I08-6" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I08-6">
             <speaker>PANCRACE.</speaker>
             <l n="557" xml:id="l557">Monsieur, nous nous étions de son corps emparé,</l>
             <l n="558" xml:id="l558">Mais comme il est sorcier y s'est évaporé.</l>
           </sp>
-          <sp xml:id="I08-7" who="SERGENT">
+          <sp who="SERGENT" xml:id="I08-7">
             <speaker>SERGENT.</speaker>
             <l n="559" xml:id="l559">Il faut courir après, mais si l'on vous l'amène...</l>
           </sp>
-          <sp xml:id="I08-8" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I08-8">
             <speaker>PANCRACE.</speaker>
             <l n="560" xml:id="l560">Et vous, et vos records, chacun aura sa peine,</l>
             <l n="561" xml:id="l561">Votre argent est tout prêt, s'y peut-être arrêté,</l>
             <l n="562" xml:id="l562">Mais sans perdre de temps courons de ce côté.</l>
           </sp>
         </div2>
-        <div2 xml:id="I09" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I09">
           <head>SCÈNE I..</head>
-          <sp xml:id="I09-1" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I09-1">
             <speaker>BAGOLIN, seul.</speaker>
             <note type="L">Séquelle : Nom collectif qui se dit d'une suite de personnes, ou de choses, qui vont ordinairement ensemble, ou qui sont attachés au parti, aux sentiments, aux intérêts communs. [F]</note>
             <l n="563" xml:id="l563">Je n'ai jamais mieux fait, voyant cette séquelle, </l>
@@ -1509,29 +1510,29 @@
             <l n="574" xml:id="l574">Le pauvre Bagolin allait être étrillé.</l>
           </sp>
         </div2>
-        <div2 xml:id="I10" type="scene" n="10">
+        <div2 n="10" type="scene" xml:id="I10">
           <head>SCÈNE X. Le Cousin , Sergent, Bagolin.</head>
-          <sp xml:id="I10-1" who="LECOUSIN">
+          <sp who="LECOUSIN" xml:id="I10-1">
             <speaker>LE COUSIN.</speaker>
             <l n="575" xml:id="l575">Voilà notre galant, niché dans sa boutique,</l>
             <l n="576" xml:id="l576">Songez en le prenant, qu'il entend l'art magique, </l>
             <l n="577" xml:id="l577">Que pour être invisible il n'a qu'à le vouloir.</l>
           </sp>
-          <sp xml:id="I10-2" who="SERGENT">
+          <sp who="SERGENT" xml:id="I10-2">
             <speaker>SERGENT.</speaker>
             <l n="578" xml:id="l578">Sorcier en nos mains, n'a plus aucun pouvoir.</l>
-            <l n="579" xml:id="l579" part="I">C'est de la part du Roi...</l>
+            <l n="579" part="I" xml:id="l579">C'est de la part du Roi...</l>
           </sp>
-          <sp xml:id="I10-3" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I10-3">
             <speaker>BAGOLIN.</speaker>
             <l part="M">He bien, quoi !</l>
           </sp>
-          <sp xml:id="I10-4" who="SERGENT">
+          <sp who="SERGENT" xml:id="I10-4">
             <speaker>SERGENT.</speaker>
             <l part="F">Que je vous commande.</l>
-            <l n="580" xml:id="l580" part="I">De venir en prison.</l>
+            <l n="580" part="I" xml:id="l580">De venir en prison.</l>
           </sp>
-          <sp xml:id="I10-5" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I10-5">
             <speaker>BAGOLIN.</speaker>
             <l part="F">À vous, à votre bande,</l>
             <l n="581" xml:id="l581">Je commande à mon tour, que sans plus retarder,</l>
@@ -1540,62 +1541,62 @@
             <l n="584" xml:id="l584">Sans aille faire un tour, sur votre friperie.</l>
           </sp>
         </div2>
-        <div2 xml:id="I11" type="scene" n="11">
+        <div2 n="11" type="scene" xml:id="I11">
           <head>SCÈNE XI. Pancrace, Bagolin, Recors, Le Docteur, Sergent.</head>
-          <sp xml:id="I11-1" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I11-1">
             <speaker>PANCRACE.</speaker>
             <l n="585" xml:id="l585">Voilà notre avocat, notre illustre enchanteur,</l>
             <l n="586" xml:id="l586">Vite, vite, Sergent saisissez l'imposteur.</l>
           </sp>
-          <sp xml:id="I11-2" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I11-2">
             <speaker>BAGOLIN.</speaker>
             <l n="587" xml:id="l587">Ah ! Vieux fol édenté tu veux donc qu'on m'arrête,</l>
-            <l n="588" xml:id="l588" part="I">Ce coup est pour ton conte.</l>
+            <l n="588" part="I" xml:id="l588">Ce coup est pour ton conte.</l>
           </sp>
-          <sp xml:id="I11-3" who="RECORS">
+          <sp who="RECORS" xml:id="I11-3">
             <speaker>RECORS.</speaker>
             <l part="M">Ah ! L'épaule !</l>
           </sp>
-          <sp xml:id="I11-4" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I11-4">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Ah ! La tête !</l>
           </sp>
-          <sp xml:id="I11-5" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I11-5">
             <speaker>PANCRACE.</speaker>
             <note type="L">Recors : Aide de sergent, celui qui assiste, lorsqu'il va faire quelque exploit, ou exécution, qui lui sert de témoin, et qui lui prête main forte. [F]</note>
-            <l n="589" xml:id="l589" part="I">Saisissez le, Recors.</l>
+            <l n="589" part="I" xml:id="l589">Saisissez le, Recors.</l>
           </sp>
-          <sp xml:id="I11-6" who="SERGENT">
+          <sp who="SERGENT" xml:id="I11-6">
             <speaker>SERGENT.</speaker>
             <l part="F">Il nous est échappé,</l>
             <l n="590" xml:id="l590">Courons après enfants, et qu'il soit attrapé.</l>
           </sp>
         </div2>
-        <div2 xml:id="I12" type="scene" n="12">
+        <div2 n="12" type="scene" xml:id="I12">
           <head>SCÈNE XII. Lisimèn, Rosandre.</head>
-          <sp xml:id="I12-1" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I12-1">
             <speaker>LISIMÈNE.</speaker>
             <l n="591" xml:id="l591">Oui Rosandre, il est temps de faire voir Rosandre,</l>
             <l n="592" xml:id="l592">C'est trop jouer mon père, et c'est trop l'entreprendre,</l>
             <l n="593" xml:id="l593">L'honneur... mais quel grand bruit provient jusques ici ? </l>
           </sp>
-          <sp xml:id="I12-2" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I12-2">
             <speaker>ROSANDRE.</speaker>
             <l n="594" xml:id="l594">Ce sera Bagolin qui fuyant... le voici.</l>
           </sp>
         </div2>
-        <div2 xml:id="I13" type="scene" n="10">
+        <div2 n="10" type="scene" xml:id="I13">
           <head>SCÈNE X.II. Recors, Sergent, Lisimène, Rosandre, Le Docteur, Pancrace, Le Cousin.</head>
-          <sp xml:id="I13-1" who="RECORS">
+          <sp who="RECORS" xml:id="I13-1">
             <speaker>RECORS.</speaker>
-            <l n="595" xml:id="l595" part="I">Arrête, arrête.</l>
+            <l n="595" part="I" xml:id="l595">Arrête, arrête.</l>
           </sp>
-          <sp xml:id="I13-2" who="SERGENT">
+          <sp who="SERGENT" xml:id="I13-2">
             <speaker>SERGENT.</speaker>
             <l part="F">Vite, que l'on le prenne, </l>
             <l n="596" xml:id="l596">Il m'a tant fait courir, que j'en suis hors d'haleine.</l>
           </sp>
-          <sp xml:id="I13-3" who="RECORS">
+          <sp who="RECORS" xml:id="I13-3">
             <speaker>RECORS.</speaker>
             <note type="L">Collet : Partie de l'habillement qui joint le cou, qui se met autour du cou. En ce sens on appelle Petit collet, un homme qui s'est mis dans la réforme, dans la dévotion, parce que les gens d'église portent par modestie de petits collets, tandis que les gens du monde en portent de grands ornés de points et de dentelles.</note>
             <l n="597" xml:id="l597">Qu'on le prenne au collet, il doit être en ces lieux, </l>
@@ -1603,55 +1604,55 @@
             <l n="599" xml:id="l599">C'est un franc enchanteur, j'y gagerais ma tête,</l>
             <l n="600" xml:id="l600">Visitons bien partout, il faut... arrête, arrête.</l>
           </sp>
-          <sp xml:id="I13-4" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I13-4">
             <speaker>LISIMÈNE.</speaker>
             <l n="601" xml:id="l601">La pièce est admirable, et pour n'en rire pas, </l>
             <l n="602" xml:id="l602">Il faudrait aux plaisirs ne trouver nul appas.</l>
           </sp>
-          <sp xml:id="I13-5" who="RECORS">
+          <sp who="RECORS" xml:id="I13-5">
             <speaker>RECORS.</speaker>
-            <l n="603" xml:id="l603" part="I">Au sorcier, au sorcier.</l>
+            <l n="603" part="I" xml:id="l603">Au sorcier, au sorcier.</l>
           </sp>
-          <sp xml:id="I13-6" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I13-6">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">La prise est infaillible,</l>
           </sp>
-          <sp xml:id="I13-7" who="RECORS">
+          <sp who="RECORS" xml:id="I13-7">
             <speaker>RECORS.</speaker>
-            <l n="604" xml:id="l604" part="I">L'avez vous ?</l>
+            <l n="604" part="I" xml:id="l604">L'avez vous ?</l>
           </sp>
-          <sp xml:id="I13-8" who="SERGENT">
+          <sp who="SERGENT" xml:id="I13-8">
             <speaker>SERGENT.</speaker>
             <l part="F">Et deux fois qui se rend invisible ;</l>
             <l n="605" xml:id="l605">Nous le tenions au dos quand il a disparu.</l>
           </sp>
-          <sp xml:id="I13-9" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I13-9">
             <speaker>LE DOCTEUR.</speaker>
             <l n="606" xml:id="l606">Souvent le lièvre est pris, quand il a bien couru, </l>
-            <l n="607" xml:id="l607" part="I">Visitons bien partout....</l>
+            <l n="607" part="I" xml:id="l607">Visitons bien partout....</l>
           </sp>
-          <sp xml:id="I13-10" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I13-10">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Gagnons au pied, et vite.</l>
           </sp>
-          <sp xml:id="I13-11" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I13-11">
             <speaker>LE DOCTEUR.</speaker>
             <l n="608" xml:id="l608">Nous tenons le renard, il est pris dans le gîte.</l>
           </sp>
-          <sp xml:id="I13-12" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-12">
             <speaker>PANCRACE.</speaker>
             <l n="609" xml:id="l609">L'Enchanteur est-il pris, et malgré son pouvoir...</l>
           </sp>
-          <sp xml:id="I13-13" who="SERGENT">
+          <sp who="SERGENT" xml:id="I13-13">
             <speaker>SERGENT.</speaker>
             <l n="610" xml:id="l610">Il est dans cette caisse, et vous le pouvez voir.</l>
           </sp>
-          <sp xml:id="I13-14" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-14">
             <speaker>PANCRACE.</speaker>
             <note type="L">Dauber : Battre sur le dos à coups de poings, comme font les petites gens, et les écoliers. Il est bas. [F]</note>
             <l n="611" xml:id="l611">Il faut qu'à mon plaisir maintenant je le daube.</l>
           </sp>
-          <sp xml:id="I13-15" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I13-15">
             <speaker>LE DOCTEUR.</speaker>
             <l n="612" xml:id="l612">Il s'est évanoui, comme il fait de la robe.</l>
             <l n="613" xml:id="l613">Mais Chut ne dites mot, j'aperçois son secret. </l>
@@ -1662,118 +1663,118 @@
             <l n="617" xml:id="l617">Et s'il y rentre, encore, il faudra l'investir,</l>
             <l n="618" xml:id="l618">C'est un diable, s'il a le pouvoir d'en sortir.</l>
           </sp>
-          <sp xml:id="I13-16" who="LECOUSIN">
+          <sp who="LECOUSIN" xml:id="I13-16">
             <speaker>LE COUSIN.</speaker>
             <l n="619" xml:id="l619">Bon, bon, que dites-vous ? Une autre adresse presse, </l>
-            <l n="620" xml:id="l620" part="I">Sitôt...</l>
+            <l n="620" part="I" xml:id="l620">Sitôt...</l>
           </sp>
-          <sp xml:id="I13-17" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I13-17">
             <speaker>BAGOLIN.</speaker>
             <l part="M">Bonjour, bonjour.</l>
           </sp>
-          <sp xml:id="I13-18" who="RECORS">
+          <sp who="RECORS" xml:id="I13-18">
             <speaker>RECORS.</speaker>
             <l part="F">Arrête, arrête.</l>
           </sp>
-          <sp xml:id="I13-19" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I13-19">
             <speaker>LISIMÈNE.</speaker>
             <l n="621" xml:id="l621">Bagolin comme il faut, égaye ses esprits,</l>
             <l n="622" xml:id="l622">Ce trait qui les surprend, m'a dans l'abord surpris.</l>
           </sp>
-          <sp xml:id="I13-20" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I13-20">
             <speaker>ROSANDRE.</speaker>
             <l n="623" xml:id="l623">Oui, je trouve à mon sens l'invention jolie </l>
             <l n="624" xml:id="l624">Elle serait plaisante en une comédie ;</l>
             <l n="625" xml:id="l625">Mais encore une fois les voici de retour.</l>
           </sp>
-          <sp xml:id="I13-21" who="RECORS">
+          <sp who="RECORS" xml:id="I13-21">
             <speaker>RECORS.</speaker>
-            <l n="626" xml:id="l626" part="I">Au sorcier, au sorcier.</l>
+            <l n="626" part="I" xml:id="l626">Au sorcier, au sorcier.</l>
           </sp>
-          <sp xml:id="I13-22" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I13-22">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Mettez-vous à l'entour,</l>
             <l n="627" xml:id="l627">Il vous a dit bonsoir, donnez lui le bonjour.</l>
             <l n="628" xml:id="l628">..........................</l>
           </sp>
-          <sp xml:id="I13-23" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-23">
             <speaker>PANCRACE.</speaker>
             <l n="629" xml:id="l629">Ah ! Sorcier mon ami, ta magie étant vaine,</l>
             <l n="630" xml:id="l630">De m'avoir fait courir, tu payeras la peine, </l>
             <note type="L">Dégoiser : Se dit figurément et dans le style burlesque de ceux qui parlent trop et mal à propos. [L]</note>
             <l n="631" xml:id="l631">Il faut dans un cachot, le faire dégoiser.</l>
           </sp>
-          <sp xml:id="I13-24" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I13-24">
             <speaker>LISIMÈNE.</speaker>
             <l n="632" xml:id="l632">Non mon père, il est temps de vous désabuser,</l>
             <l n="633" xml:id="l633">Ce homme est innocent, mais puisqu'il faut tout dire,</l>
             <l n="634" xml:id="l634">Tout et qu'il s'est passé, ne s'est fait que pour rire.</l>
           </sp>
-          <sp xml:id="I13-25" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-25">
             <speaker>PANCRACE.</speaker>
-            <l n="635" xml:id="l635" part="I">Bagolin ?</l>
+            <l n="635" part="I" xml:id="l635">Bagolin ?</l>
           </sp>
-          <sp xml:id="I13-26" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I13-26">
             <speaker>BAGOLIN.</speaker>
             <l part="F">Bagolin, bien loin d'être sorcier,</l>
             <l n="636" xml:id="l636">N'a jamais eu l'esprit que d'être Savetier.</l>
           </sp>
-          <sp xml:id="I13-27" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I13-27">
             <speaker>LISIMÈNE.</speaker>
-            <l n="637" xml:id="l637" part="I">Mon père connaissez....</l>
+            <l n="637" part="I" xml:id="l637">Mon père connaissez....</l>
           </sp>
-          <sp xml:id="I13-28" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-28">
             <speaker>PANCRACE.</speaker>
             <l part="M">Qui ma fille ?</l>
           </sp>
-          <sp xml:id="I13-29" who="LISIMENE">
+          <sp who="LISIMENE" xml:id="I13-29">
             <speaker>LISIMÈNE.</speaker>
             <l part="F">Rosandre.</l>
           </sp>
-          <sp xml:id="I13-30" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I13-30">
             <speaker>ROSANDRE.</speaker>
             <l n="638" xml:id="l638">Qui prétend à l'honneur, de se voir votre gendre ;</l>
             <l n="639" xml:id="l639">La lettre fait foi, de ce que je vous dis :</l>
             <l n="640" xml:id="l640">Je suis pour ce sujet arrivé de Paris,</l>
             <l n="641" xml:id="l641">J'ai failli vous jouant, mais pour ravoir ma grâce.</l>
           </sp>
-          <sp xml:id="I13-31" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-31">
             <speaker>PANCRACE.</speaker>
             <l n="642" xml:id="l642">Rosandre mon enfant, ah ! Que je vous embrasse,</l>
             <l n="643" xml:id="l643">Lisimène est à vous, puisque je l'ai promis,</l>
             <l n="644" xml:id="l644">Je ne pouvais trouver un plus aimable fils.</l>
           </sp>
-          <sp xml:id="I13-32" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I13-32">
             <speaker>ROSANDRE.</speaker>
             <l n="645" xml:id="l645">C'est le meilleur effet de ma bonne fortune.</l>
           </sp>
-          <sp xml:id="I13-33" who="SERGENT">
+          <sp who="SERGENT" xml:id="I13-33">
             <speaker>SERGENT.</speaker>
-            <l n="646" xml:id="l646" part="I">Monsieur...</l>
+            <l n="646" part="I" xml:id="l646">Monsieur...</l>
           </sp>
-          <sp xml:id="I13-34" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-34">
             <speaker>PANCRACE.</speaker>
             <note type="L">Pécune : ou pequeune. Vieux mot qui signifiait autrefois de l'argent. [F]</note>
             <l part="F">Je vous entends, voilà de la pécune,</l>
             <l n="647" xml:id="l647">Pour vous le cher ami, vous serez du festin.</l>
           </sp>
-          <sp xml:id="I13-35" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I13-35">
             <speaker>LE DOCTEUR.</speaker>
             <l n="648" xml:id="l648">Le Philosophe dit, que quand un bon dessein...</l>
           </sp>
-          <sp xml:id="I13-36" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I13-36">
             <speaker>BAGOLIN.</speaker>
             <l n="649" xml:id="l649">Et le pauvre avocat n'aura rien pour sa peine ?</l>
           </sp>
-          <sp xml:id="I13-37" who="ROSANDRE">
+          <sp who="ROSANDRE" xml:id="I13-37">
             <speaker>ROSANDRE.</speaker>
             <l n="650" xml:id="l650">Bagolin, dix louis, seront pour ton étrenne.</l>
           </sp>
-          <sp xml:id="I13-38" who="BAGOLIN">
+          <sp who="BAGOLIN" xml:id="I13-38">
             <speaker>BAGOLIN.</speaker>
-            <l n="651" xml:id="l651" part="I">Fort bien.</l>
+            <l n="651" part="I" xml:id="l651">Fort bien.</l>
           </sp>
-          <sp xml:id="I13-39" who="PANCRACE">
+          <sp who="PANCRACE" xml:id="I13-39">
             <speaker>PANCRACE.</speaker>
             <l part="F">Rentrons, et dès demain sans perdre plus de temps,</l>
             <l n="652" xml:id="l652">Rendons par cette hymen, tous vos désirs contents.</l>

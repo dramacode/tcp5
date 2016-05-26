@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?><?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>LA COMTESSE D'ORGUEIL, COMÉDIE</title>
-        <author born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" academie="1685">CORNEILLE, Thomas</author>
+        <author academie="1685" born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" key="Corneille, Thomas (1625-1709)">CORNEILLE, Thomas</author>
         <date>1653</date>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <p>publié par Ernest FIEVRE</p>
         <p>Mars 2009</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Comédie</genre>
@@ -40,18 +38,45 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
   </teiHeader>
   <text>
-    <front><docTitle><titlePart type="main">LA COMTESSE D'ORGUEIL</titlePart><titlePart type="sub">COMÉDIE</titlePart></docTitle><docDate value="1690">M. DC. LXXXX.</docDate><docAuthor id="CORNEILLE, Thomas" bio="corneillet">par T. CORNEILLE</docAuthor><docImprint><privilege id=""/><acheveImprime id=""/><printer/></docImprint><performance><premiere date="1653-01-28" location="Hôtel de Bourgogne">Représenté pour la première fois le 28 janvier 1653 au Théâtre de la Monnaie à Bruxelles.</premiere></performance>
-. <castList><head>ACTEURS</head><castItem><role xml:id="LEMARQUISdeLorgnac" id="LE-MARQUIS" sex="1" type="H" statut="marquis" age="A" stat_amour="néant">LE MARQUIS de Lorgnac</role>.</castItem><castItem><role xml:id="LECHEVALIER" id="LE-CHEVALIER" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">LE CHEVALIER</role>, frère du Marquis, amant d'Olimpe.</castItem><castItem><role xml:id="ORONTE" id="ORONTE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">ORONTE</role>, amant de Lucrèce.</castItem><castItem><role xml:id="ANSELME" id="ANSELME" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">ANSELME</role>, père d'Olimpe, et tuteur de Lucrèce.</castItem><castItem><role xml:id="OLIMPE" id="OLIMPE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">OLIMPE</role>, fille d'Anselme.</castItem><castItem><role xml:id="LUCRECE" id="LUCRECE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">LUCRÈCE</role>, nièce d'Anselme.</castItem><castItem><role xml:id="VIRGINE" id="VIRGINE" sex="2" type="H" statut="suivante" age="A" stat_amour="néant">VIRGINE</role>, suivante d'Olimpe.</castItem><castItem><role xml:id="LISE" id="LISE" sex="2" type="H" statut="suivante" age="A" stat_amour="néant">LISE</role>, suivante de la Comtesse d'Orgueil.</castItem><castItem><role xml:id="CARLIN" id="CARLIN" sex="1" type="H" statut="valet" age="A" stat_amour="néant">CARLIN</role>, valet du Marquis.</castItem></castList><set location="Paris" country="France" periode="XVIIème" link="">La Scène est à Paris. </set></front>
+    <front>
+      <docTitle>
+        <titlePart type="main">LA COMTESSE D'ORGUEIL</titlePart>
+        <titlePart type="sub">COMÉDIE</titlePart>
+      </docTitle>
+      <docDate value="1690">M. DC. LXXXX.</docDate>
+      <docAuthor bio="corneillet" id="CORNEILLE, Thomas">par T. CORNEILLE</docAuthor>
+      <docImprint>
+        <privilege id=""/>
+        <acheveImprime id=""/>
+        <printer/>
+      </docImprint>
+      <performance>
+        <premiere date="1653-01-28" location="Hôtel de Bourgogne">Représenté pour la première fois le 28 janvier 1653 au Théâtre de la Monnaie à Bruxelles.</premiere>
+      </performance>
+      <castList>
+        <head>ACTEURS</head>
+        <castItem><role age="A" civil="M" id="LE-MARQUIS" rend="male" stat_amour="néant" statut="marquis" type="H" xml:id="LEMARQUIS">LE MARQUIS de Lorgnac</role>.</castItem>
+        <castItem><role age="A" civil="M" id="LE-CHEVALIER" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="LECHEVALIER">LE CHEVALIER</role>, frère du Marquis, amant d'Olimpe.</castItem>
+        <castItem><role age="A" civil="M" id="ORONTE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ORONTE">ORONTE</role>, amant de Lucrèce.</castItem>
+        <castItem><role age="A" civil="M" id="ANSELME" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ANSELME">ANSELME</role>, père d'Olimpe, et tuteur de Lucrèce.</castItem>
+        <castItem><role age="A" civil="F" id="OLIMPE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="OLIMPE">OLIMPE</role>, fille d'Anselme.</castItem>
+        <castItem><role age="A" civil="F" id="LUCRECE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="LUCRECE">LUCRÈCE</role>, nièce d'Anselme.</castItem>
+        <castItem><role age="A" civil="F" id="VIRGINE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="VIRGINE">VIRGINE</role>, suivante d'Olimpe.</castItem>
+        <castItem><role age="A" civil="F" id="LISE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="LISE">LISE</role>, suivante de la Comtesse d'Orgueil.</castItem>
+        <castItem><role age="A" civil="M" id="CARLIN" rend="male" stat_amour="néant" statut="valet" type="H" xml:id="CARLIN">CARLIN</role>, valet du Marquis.<role xml:id="CASCARET" n="Cascaret"/></castItem>
+      </castList>
+      <set country="France" link="" location="Paris" periode="XVIIème">La Scène est à Paris. </set>
+    </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 xml:id="I" n="1" type="act">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 type="scene" xml:id="I01" n="1">
           <head>SCÈNE PREMIÈRE. Carlin, Lise.</head>
           <sp xml:id="I01-1" who="CARLIN">
             <speaker>CARLIN.</speaker>
@@ -70,8 +95,8 @@
           <sp xml:id="I01-3" who="CARLIN">
             <speaker>CARLIN.</speaker>
             <l n="9" xml:id="l9">Tant mieux pour toi, d'avoir liberté toute entière</l>
-            <l n="18" xml:id="l18">De prendre du bon temps, et te donner carrière.</l>
-            <l n="18" xml:id="l18">Ah, si pour moi le coeur t'en disait tant soit peu,</l>
+            <l n="10" xml:id="l10">De prendre du bon temps, et te donner carrière.</l>
+            <l n="11" xml:id="l11">Ah, si pour moi le coeur t'en disait tant soit peu,</l>
             <l n="12" xml:id="l12" part="I">Sotte !</l>
           </sp>
           <sp xml:id="I01-4" who="LISE">
@@ -81,10 +106,10 @@
           <sp xml:id="I01-5" who="CARLIN">
             <speaker>CARLIN.</speaker>
             <l part="F">Le mien est tout en feu,</l>
-            <l n="18" xml:id="l18">Et depuis cette noce où tu me fis tant boire,</l>
-            <l n="18" xml:id="l18">Je me suis si bien mis ta largesse en mémoire,</l>
-            <l n="18" xml:id="l18">Qu'aussitôt que la soif commence à me presser,</l>
-            <l n="18" xml:id="l18">Pour en guérir plutôt je voudrais t'embrasser.</l>
+            <l n="13" xml:id="l13">Et depuis cette noce où tu me fis tant boire,</l>
+            <l n="14" xml:id="l14">Je me suis si bien mis ta largesse en mémoire,</l>
+            <l n="15" xml:id="l15">Qu'aussitôt que la soif commence à me presser,</l>
+            <l n="16" xml:id="l16">Pour en guérir plutôt je voudrais t'embrasser.</l>
           </sp>
           <sp xml:id="I01-6" who="LISE">
             <speaker>LISE.</speaker>
@@ -250,7 +275,7 @@
             <note type="L">affriquet : terme de raillerie dont on se sert pour parlant des parures des femmes, quand elles sont légères, superflues et affectées. [F]</note>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 type="scene" xml:id="I02" n="2">
           <head>SCÈNE II. Le Marquis, Carlin, Lise, Cascaret.</head>
           <sp xml:id="I02-1" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Carlin montrant Lise.</speaker>
@@ -389,7 +414,7 @@
           <sp xml:id="I02-27" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
             <l part="M">Oui, va.</l>
-            <stage type="toward">À Carlin.</stage>
+            <stage>À Carlin.</stage>
             <l part="F">Je puis m'en divertir.</l>
             <l n="121" xml:id="l121">Et selon... Mais je vois mon impertinent frère.</l>
           </sp>
@@ -406,7 +431,7 @@
             <l n="123" xml:id="l123">Est-il original qui vaille ton Marquis ?</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 type="scene" xml:id="I03" n="3">
           <head>SCÈNE III. Le Marquis, Le Chevalier, Carlin.</head>
           <sp xml:id="I03-1" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
@@ -562,7 +587,7 @@
             <l n="183" xml:id="l183">Moi parlant, moi faisant la demande pour vous,</l>
             <l n="184" xml:id="l184">Je crois qu'il recevra cet honneur à genoux.</l>
             <l n="185" xml:id="l185">Un faquin qu'on a vu petit clerc de notaire,</l>
-            <note tyep="L">Faquin : crocheteur, homme de la lie du peuple, vil et méprisable. [L]</note>
+            <note type="L">Faquin : crocheteur, homme de la lie du peuple, vil et méprisable. [L]</note>
             <l n="186" xml:id="l186">D'un cadet de Marquis devenir le beau-père,</l>
             <l n="187" xml:id="l187" part="I">S'allier des Lorgnacs, peste !</l>
           </sp>
@@ -661,7 +686,7 @@
           <sp xml:id="I03-43" who="CARLIN">
             <speaker>CARLIN.</speaker>
             <l part="M">Monsieur.</l>
-            <stage type="[N/A]">Il lui parle à l'oreille. </stage>
+            <stage>Il lui parle à l'oreille. </stage>
             <l part="M">J'entends.</l>
           </sp>
           <sp xml:id="I03-44" who="LEMARQUIS">
@@ -670,7 +695,7 @@
             <l n="224" xml:id="l224">Si la Marquise vient, qu'on me fasse chercher.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 type="scene" xml:id="I04" n="4">
           <head>SCÈNE IV. Le Chevalier, Carlin.</head>
           <sp xml:id="I04-1" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
@@ -729,7 +754,7 @@
             <l part="F">Tais-toi, je vois venir Oronte.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 type="scene" xml:id="I05" n="5">
           <head>SCÈNE V. Le Chevalier, Oronte, Carlin.</head>
           <sp xml:id="I05-1" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
@@ -798,7 +823,7 @@
             <l n="272" xml:id="l272">Quel accueil du vieillard ma flamme aura reçu.</l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
+        <div2 type="scene" xml:id="I06" n="6">
           <head>SCÈNE VI. Oronte, Olimpe, Lucrèce.</head>
           <sp xml:id="I06-1" who="ORONTE">
             <speaker>ORONTE, à Lucrèce.</speaker>
@@ -849,7 +874,7 @@
             <l part="F">Vous l'avez mendiée.</l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
+        <div2 type="scene" xml:id="I07" n="7">
           <head>SCÈNE VII. Olimpe, Lucrèce, Oronte, Virgine.</head>
           <sp xml:id="I07-1" who="VIRGINE">
             <speaker>VIRGINE, à Olimpe.</speaker>
@@ -1065,9 +1090,9 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 xml:id="II" n="2" type="act">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 type="scene" xml:id="II01" n="1">
           <head>SCÈNE PREMIÈRE. Le Marquis, Anselme.</head>
           <sp xml:id="II01-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -1338,7 +1363,7 @@
             <l part="F">Eh, je sais trop où lui tient l'encloueure.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 type="scene" xml:id="II02" n="2">
           <head>SCÈNE II. Le Marquis, Anselme, Carlin.</head>
           <sp xml:id="II02-1" who="CARLIN">
             <speaker>CARLIN, au Marquis.</speaker>
@@ -1359,7 +1384,7 @@
             <l n="477" xml:id="l477" part="I">Bonsoir.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 type="scene" xml:id="II03" n="3">
           <head>SCÈNE III. Le Marquis, Carlin.</head>
           <sp xml:id="II03-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -1527,7 +1552,7 @@
             <l part="F">Je vais la reconnaître.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 type="scene" xml:id="II04" n="4">
           <head>SCÈNE IV. Le Marquis, Virgine, Carlin.</head>
           <sp xml:id="II04-1" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -1592,7 +1617,7 @@
             <l n="556" xml:id="l556" part="I">Va vite.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 type="scene" xml:id="II05" n="5">
           <head>SCÈNE V. Le Marquis, Virgine.</head>
           <sp xml:id="II05-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -1656,7 +1681,7 @@
             <l n="576" xml:id="l576" part="I">J'entends marcher, adieu.</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        <div2 type="scene" xml:id="II06" n="6">
           <head>SCÈNE VI. Le Marquis, Le Chevalier.</head>
           <sp xml:id="II06-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -1747,7 +1772,7 @@
             <l part="F">Enfin me suivez-vous, ou non ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
+        <div2 type="scene" xml:id="II07" n="7">
           <head>SCÈNE VII. Lucrèce, Olimpe, Virgine.</head>
           <sp xml:id="II07-1" who="LUCRECE">
             <speaker>LUCRÈCE, dans le Balcon.</speaker>
@@ -1774,7 +1799,7 @@
             <l n="604" xml:id="l604">Repose-t-en sur moi, tu l'auras trait pour trait.</l>
           </sp>
         </div2>
-        <div2 xml:id="II08" type="scene" n="8">
+        <div2 type="scene" xml:id="II08" n="8">
           <head>SCÈNE VIII. Olimpe, Virgine.</head>
           <sp xml:id="II08-1" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -1806,7 +1831,7 @@
             <l n="616" xml:id="l616">Qu'en l'épousant, Lucrèce ait moins de rang que vous.</l>
           </sp>
         </div2>
-        <div2 xml:id="II09" type="scene" n="9">
+        <div2 type="scene" xml:id="II09" n="9">
           <head>SCÈNE IX. Le Chevalier, Olimpe, Virgine.</head>
           <sp xml:id="II09-1" who="LECHEVALIER">
             <speaker>LE CHEVALIER, Bas.</speaker>
@@ -1995,7 +2020,7 @@
           <sp xml:id="II09-29" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
             <l part="F">Non, Madame, achevez.</l>
-            <stage type="[N/A]">Bas. </stage>
+            <stage>Bas. </stage>
             <l n="708" xml:id="l708">Voilà les derniers coups qu'il m'avait réservés</l>
             <l n="709" xml:id="l709">Je le vois trop, le lâche a parlé pour lui-même.</l>
           </sp>
@@ -2062,7 +2087,7 @@
             <l n="735" xml:id="l735" part="I">C'est qu'on fait quelque bruit, et qu'il écoute.</l>
           </sp>
         </div2>
-        <div2 xml:id="II10" type="scene" n="10">
+        <div2 type="scene" xml:id="II10" n="10">
           <head>SCÈNE X. Le Marquis, Olimpe, Le Chevalier, Virgine, Carlin.</head>
           <sp xml:id="II10-1" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Carlin.</speaker>
@@ -2216,9 +2241,9 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 xml:id="III" n="3" type="act">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 type="scene" xml:id="III01" n="1">
           <head>SCÈNE PREMIÈRE. Lucrèce, Oronte.</head>
           <sp xml:id="III01-1" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
@@ -2289,7 +2314,7 @@
             <l n="789" xml:id="l789">Rien moins, et l'on croirait qu'il cherche à faire rire.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 type="scene" xml:id="III02" n="2">
           <head>SCÈNE II. Olimpe, Lucrèce, Oronte.</head>
           <sp xml:id="III02-1" who="OLIMPE">
             <speaker>OLIMPE, à Oronte.</speaker>
@@ -2314,7 +2339,7 @@
             <l n="797" xml:id="l797">Ainsi puisqu'il le faut je m'arrache à moi-même.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 type="scene" xml:id="III03" n="3">
           <head>SCÈNE III. Olimpe, Lucrèce.</head>
           <sp xml:id="III03-1" who="OLIMPE">
             <speaker>OLIMPE.</speaker>
@@ -2412,7 +2437,7 @@
             <l n="840" xml:id="l840">Il repoussa son frère, et le fit reculer...</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 type="scene" xml:id="III04" n="4">
           <head>SCÈNE IV. Olimpe, Lucrèce, Virgine.</head>
           <sp xml:id="III04-1" who="VIRGINE">
             <speaker>VIRGINE, à Olimpe.</speaker>
@@ -2453,7 +2478,7 @@
             <l n="852" xml:id="l852">J'emploierai le Marquis, va, je te le promets.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 type="scene" xml:id="III05" n="5">
           <head>SCÈNE V. Le Chevalier, Olimpe, Lucrèce.</head>
           <sp xml:id="III05-1" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
@@ -2500,7 +2525,7 @@
             <speaker>OLIMPE.</speaker>
             <l part="F">Non, j'en suis assez contente ;</l>
             <l n="882" xml:id="l882">Mais le Marquis, c'est bien autre chose, il enchante.</l>
-            <stage type="toward">Au Chevalier. </stage>
+            <stage>Au Chevalier. </stage>
             <l n="883" xml:id="l883">J'étais peu préparée à recevoir de vous</l>
             <l n="884" xml:id="l884">Des éloges conçus en des termes si doux ;</l>
             <l n="885" xml:id="l885" part="I">Je les trouve un peu forts.</l>
@@ -2584,7 +2609,7 @@
             <l n="916" xml:id="l916">Aux sensibles douceurs de vos heureux destins.</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 type="scene" xml:id="III06" n="6">
           <head>SCÈNE VI. Lucrèce, Olimpe.</head>
           <sp xml:id="III06-1" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
@@ -2636,7 +2661,7 @@
             <l n="932" xml:id="l932" part="I">Voici quelque message.</l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 type="scene" xml:id="III07" n="7">
           <head>SCÈNE VII. Olimpe, Lucrèce, Carlin.</head>
           <sp xml:id="III07-1" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
@@ -2692,12 +2717,12 @@
             <l n="939" xml:id="l939">Que dis-tu de son air ? L'a-t-il galant et doux ?</l>
           </sp>
         </div2>
-        <div2 xml:id="III08" type="scene" n="8">
+        <div2 type="scene" xml:id="III08" n="8">
           <head>SCÈNE VIII. Le Marquis, Olimpe, Lucrèce, Carlin.</head>
           <sp xml:id="III08-1" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Carlin.</speaker>
             <l n="940" xml:id="l940" part="I">C'est celle-ci ?</l>
-            <stage type="toward">À Olimpe. </stage>
+            <stage>À Olimpe. </stage>
             <l part="F">Bonjour. Comment vous portez-vous ?</l>
           </sp>
           <sp xml:id="III08-2" who="OLIMPE">
@@ -2791,7 +2816,7 @@
             <l n="970" xml:id="l970">Cet oeil perçant ? Ce tour de visage ? Ah, friponne !</l>
             <l n="971" xml:id="l971">Je vous vois me lancer un regard tendre et doux,</l>
             <l n="972" xml:id="l972" part="I">Qui fait...</l>
-            <stage type="toward">À Olimpe. </stage>
+            <stage>À Olimpe. </stage>
             <l part="F">Votre Cousine est plus belle que vous.</l>
           </sp>
           <sp xml:id="III08-19" who="LUCRECE">
@@ -3085,7 +3110,7 @@
             <l n="1049" xml:id="l1049" part="I">J'en vais danser de joie.</l>
           </sp>
         </div2>
-        <div2 xml:id="III09" type="scene" n="9">
+        <div2 type="scene" xml:id="III09" n="9">
           <head>SCÈNE IX. Le Marquis, Anselme, Olimpe, Lucrèce, Clarice.</head>
           <sp xml:id="III09-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -3332,7 +3357,7 @@
             <l n="1108" xml:id="l1108">Qu'il aime à contester ! Les Belles, Dieu vous gard.</l>
           </sp>
         </div2>
-        <div2 xml:id="III10" type="scene" n="10">
+        <div2 type="scene" xml:id="III10" n="10">
           <head>SCÈNE X. Olimpe, Lucrèce, Virgine.</head>
           <sp xml:id="III10-1" who="OLIMPE">
             <speaker>OLIMPE.</speaker>
@@ -3447,9 +3472,9 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 xml:id="IV" n="4" type="act">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 type="scene" xml:id="IV01" n="1">
           <head>SCÈNE PREMIÈRE. Lucrèce, Le Chevalier, Lise.</head>
           <sp xml:id="IV01-1" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
@@ -3555,7 +3580,7 @@
             <l n="1190" xml:id="l1190" part="I">Virgine.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 type="scene" xml:id="IV02" n="2">
           <head>SCÈNE II. Lucrèce, Le Chevalier, Virgine.</head>
           <sp xml:id="IV02-1" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -3625,7 +3650,7 @@
             <l n="1213" xml:id="l1213" part="I">Voici Carlin.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 type="scene" xml:id="IV03" n="3">
           <head>SCÈNE III. Lucrèce, Le Chevalier, Virgine, Lise, Carlin.</head>
           <sp xml:id="IV03-1" who="LECHEVALIER">
             <speaker>LE CHEVALIER, à Carlin.</speaker>
@@ -3650,7 +3675,7 @@
             <speaker>VIRGINE.</speaker>
             <l part="F">Là-dedans j'attendrai le message.</l>
             <l n="1218" xml:id="l1218">À sortir gravement mon nouveau rang m'engage.</l>
-            <stage type="[N/A]">Virgine rentre. </stage>
+            <stage>Virgine rentre. </stage>
           </sp>
           <sp xml:id="IV03-6" who="CARLIN">
             <speaker>CARLIN.</speaker>
@@ -3670,7 +3695,7 @@
             <l n="1225" xml:id="l1225">Vois dans ses noeuds touffus quel amas de mérite.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 type="scene" xml:id="IV04" n="4">
           <head>SCÈNE IV. Le Marquis, Lise, Carlin.</head>
           <sp xml:id="IV04-1" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Lise.</speaker>
@@ -3700,7 +3725,7 @@
             <l part="F">Je le pense.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 type="scene" xml:id="IV05" n="5">
           <head>SCÈNE V. Le Marquis, Carlin.</head>
           <sp xml:id="IV05-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -3757,7 +3782,7 @@
             <l part="F">L'air m'en plaît.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 type="scene" xml:id="IV06" n="6">
           <head>SCÈNE VI. Le Marquis, Virgine, Lise, Carlin.</head>
           <sp xml:id="IV06-1" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -3973,7 +3998,7 @@
             <speaker>LE MARQUIS.</speaker>
             <l n="1320" xml:id="l1320">Les autres avec moi semblent goguenarder.</l>
             <l n="1321" xml:id="l1321">Celle-ci parle juste, est accorte, et sait vivre.</l>
-            <stage type="toward">À Virgine. </stage>
+            <stage>À Virgine. </stage>
             <l n="1322" xml:id="l1322">Se promettre n'est rien à moins qu'on ne se livre.</l>
             <l n="1323" xml:id="l1323">Je m'y résous, demain, tout comme il vous plaira.</l>
           </sp>
@@ -4224,7 +4249,7 @@
             <l part="F">Il n'est plus temps ; il m'a vu, le voici.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
+        <div2 type="scene" xml:id="IV07" n="7">
           <head>SCÈNE VII. Oronte, Le Marquis, Lise, Carlin.</head>
           <sp xml:id="IV07-1" who="ORONTE">
             <speaker>ORONTE.</speaker>
@@ -4371,7 +4396,7 @@
             <l part="F">Admirez donc, vous en verrez bien d'autres.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV08" type="scene" n="8">
+        <div2 type="scene" xml:id="IV08" n="8">
           <head>SCÈNE VIII. Anselme, Oronte, Le Marquis, Lise, Carlin.</head>
           <sp xml:id="IV08-1" who="ANSELME">
             <speaker>ANSELME.</speaker>
@@ -4435,7 +4460,7 @@
             <l n="1435" xml:id="l1435" part="I">Carlin, s'il va parler ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV09" type="scene" n="9">
+        <div2 type="scene" xml:id="IV09" n="9">
           <head>SCÈNE IX. Anselme, Le Marquis, Carlin.</head>
           <sp xml:id="IV09-1" who="ANSELME">
             <speaker>ANSELME.</speaker>
@@ -4553,7 +4578,7 @@
             <l part="F">La voici qui sort toute éplorée.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV10" type="scene" n="10">
+        <div2 type="scene" xml:id="IV10" n="10">
           <head>SCÈNE X. Le Marquis, Virgine, Lise, Carlin.</head>
           <sp xml:id="IV10-1" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -4696,7 +4721,7 @@
             <l part="F">J'aurai soin,</l>
             <l n="1496" xml:id="l1496">En pressant mon retour, qu'il n'en soit pas besoin.</l>
             <l n="1497" xml:id="l1497" part="I">Adieu, mon Astre, adieu.</l>
-            <stage type="[N/A]">Le Marquis sort. </stage>
+            <stage>Le Marquis sort. </stage>
           </sp>
           <sp xml:id="IV10-29" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -4713,9 +4738,9 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 xml:id="V" n="5" type="act">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 type="scene" xml:id="V01" n="1">
           <head>SCÈNE PREMIÈRE. Olimpe, Virgine.</head>
           <sp xml:id="V01-1" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -4784,7 +4809,7 @@
             <l n="1533" xml:id="l1533" part="I">Tu seras toujours folle.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 type="scene" xml:id="V02" n="2">
           <head>SCÈNE II. Olimpe, Virgine, Carlin.</head>
           <sp xml:id="V02-1" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -4863,7 +4888,7 @@
             <l n="1560" xml:id="l1560" part="I">Ah, ma chère Comtesse !</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 type="scene" xml:id="V03" n="3">
           <head>SCÈNE III. Olimpe, Lucrèce, Virgine, Carlin.</head>
           <sp xml:id="V03-1" who="LUCRECE">
             <speaker>LUCRÈCE, à Olimpe.</speaker>
@@ -4901,7 +4926,7 @@
             <l n="1573" xml:id="l1573">Allez, sur le grand oui faites bien la grimace.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 type="scene" xml:id="V04" n="4">
           <head>SCÈNE IV. Carlin, Virgine.</head>
           <sp xml:id="V04-1" who="CARLIN">
             <speaker>CARLIN.</speaker>
@@ -4962,7 +4987,7 @@
             <l n="1596" xml:id="l1596" part="I">Mais...</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 type="scene" xml:id="V05" n="5">
           <head>SCÈNE V. Le Marquis, Virgine, Carlin.</head>
           <sp xml:id="V05-1" who="LEMARQUIS">
             <speaker>LE MARQUIS, à un Domestique d'Anselme.</speaker>
@@ -5083,7 +5108,7 @@
             <l n="1637" xml:id="l1637" part="I">Je vous en tiendrai compte, et...</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 type="scene" xml:id="V06" n="6">
           <head>SCÈNE VI. Anselme, Le Marquis, Virgine, Carlin.</head>
           <sp xml:id="V06-1" who="ANSELME">
             <speaker>ANSELME.</speaker>
@@ -5220,7 +5245,7 @@
             <speaker>LE MARQUIS, à Virgine.</speaker>
             <l n="1673" xml:id="l1673">Non, ce vous semble, va, fais venir ta Maîtresse,</l>
             <l n="1674" xml:id="l1674" part="I">Dépêche.</l>
-            <stage type="mezzo voce">Bas.</stage>
+            <stage>Bas.</stage>
             <l part="F">Pardonnez, ma divine Comtesse,</l>
             <l n="1675" xml:id="l1675">Pour duper le barbon i faut vous tutoyer.</l>
           </sp>
@@ -5229,7 +5254,7 @@
             <l n="1676" xml:id="l1676">Vous attendrez fort peu, je vais vous l'envoyer.</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
+        <div2 type="scene" xml:id="V07" n="7">
           <head>SCÈNE VII. Le Marquis, Anselme, Carlin.</head>
           <sp xml:id="V07-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -5284,7 +5309,7 @@
             <l n="1693" xml:id="l1693" part="I">Voici sa géniture.</l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
+        <div2 type="scene" xml:id="V08" n="8">
           <head>SCÈNE VIII. Le Marquis, Anselme, Olimpe, Carlin, Virgine.</head>
           <sp xml:id="V08-1" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -5311,7 +5336,7 @@
             <l n="1706" xml:id="l1706">Sans esprit, sans talent que celui de grondeuse,</l>
             <l n="1707" xml:id="l1707">Et le Diable qui loge avecque les hiboux,</l>
             <l n="1708" xml:id="l1708">Voulant se marier, ne voudrait pas de vous.</l>
-            <stage type="toward">À Virgine bas. </stage>
+            <stage>À Virgine bas. </stage>
             <l n="1709" xml:id="l1709" part="I">Ma Comtesse ?</l>
           </sp>
           <sp xml:id="V08-4" who="VIRGINE">
@@ -5362,7 +5387,7 @@
             <speaker>LE MARQUIS.</speaker>
             <l n="1719" xml:id="l1719">La colère vous prend, ne vous contraignez pas ;</l>
             <l n="1720" xml:id="l1720">Enragez à votre aide, et faites du fracas.</l>
-            <stage type="toward">À Olimpe. </stage>
+            <stage>À Olimpe. </stage>
             <l n="1721" xml:id="l1721" part="I">Fort bien, il vous fallait des Marquis ?</l>
           </sp>
           <sp xml:id="V08-15" who="OLIMPE">
@@ -5447,7 +5472,7 @@
             <l n="1754" xml:id="l1754">Monsieur le Chevalier n'y mettra pas d'obstacle.</l>
           </sp>
         </div2>
-        <div2 xml:id="V09" type="scene" n="9">
+        <div2 type="scene" xml:id="V09" n="9">
           <head>SCÈNE IX. Anselme, Le Marquis, Le Chevalier, Olimpe, Lucrèce, Virgine, Carlin.</head>
           <sp xml:id="V09-1" who="ANSELME">
             <speaker>ANSELME, au Chevalier.</speaker>
@@ -5464,31 +5489,31 @@
             <speaker>LE MARQUIS.</speaker>
             <l part="F">C'est mon cadet. Bonjour, Monsieur le gendre.</l>
             <l n="1759" xml:id="l1759">Je suis ravi du choix ; quand je la régalais</l>
-            <l n="1750" xml:id="l1750">De l'offre d'un amant, c'est lui dont je parlais.</l>
+            <l n="1760" xml:id="l1760">De l'offre d'un amant, c'est lui dont je parlais.</l>
           </sp>
           <sp xml:id="V09-4" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
-            <l n="1751" xml:id="l1751">À l'obtenir pour moi vous avez eu grand zèle.</l>
+            <l n="1761" xml:id="l1761">À l'obtenir pour moi vous avez eu grand zèle.</l>
           </sp>
           <sp xml:id="V09-5" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1752" xml:id="l1752">Trop heureux de l'avoir quand je ne veux plus d'elle.</l>
-            <l n="1753" xml:id="l1753" part="I">Te voilà bien, Cadet, tiens-y-toi.</l>
+            <l n="1762" xml:id="l1762">Trop heureux de l'avoir quand je ne veux plus d'elle.</l>
+            <l n="1763" xml:id="l1763" part="I">Te voilà bien, Cadet, tiens-y-toi.</l>
           </sp>
           <sp xml:id="V09-6" who="ANSELME">
             <speaker>ANSELME.</speaker>
             <l part="F">Je prétends</l>
-            <l n="1754" xml:id="l1754">Que tous trois nous aurons sujet d'être contents,</l>
-            <l n="1755" xml:id="l1755">Et qu'entre nous jamais ni discorde ni guerre...</l>
+            <l n="1764" xml:id="l1764">Que tous trois nous aurons sujet d'être contents,</l>
+            <l n="1765" xml:id="l1765">Et qu'entre nous jamais ni discorde ni guerre...</l>
           </sp>
           <sp xml:id="V09-7" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Anselme.</speaker>
-            <l n="1756" xml:id="l1756">Et quand il la verra se débattre par terre,</l>
-            <l n="1757" xml:id="l1757">Faire des cris, hurler, rira-t-il bien ?</l>
+            <l n="1766" xml:id="l1766">Et quand il la verra se débattre par terre,</l>
+            <l n="1767" xml:id="l1767">Faire des cris, hurler, rira-t-il bien ?</l>
           </sp>
           <sp xml:id="V09-8" who="ANSELME">
             <speaker>ANSELME.</speaker>
-            <l n="1758" xml:id="l1758" part="I">De quoi ?</l>
+            <l n="1768" xml:id="l1768" part="I">De quoi ?</l>
           </sp>
           <sp xml:id="V09-9" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
@@ -5500,49 +5525,49 @@
           </sp>
           <sp xml:id="V09-11" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1759" xml:id="l1759">Ne craignez rien, je sais ce qu'il faut qu'on lui cache.</l>
-            <l n="1760" xml:id="l1760">Ils sont bien assortis, chacun d'eux a sa tache.</l>
-            <l n="1761" xml:id="l1761">Mon cadet est sans bien, je vous l'ai déjà dit,</l>
-            <l n="1762" xml:id="l1762" part="I">Mais...</l>
+            <l n="1769" xml:id="l1769">Ne craignez rien, je sais ce qu'il faut qu'on lui cache.</l>
+            <l n="1770" xml:id="l1770">Ils sont bien assortis, chacun d'eux a sa tache.</l>
+            <l n="1771" xml:id="l1771">Mon cadet est sans bien, je vous l'ai déjà dit,</l>
+            <l n="1772" xml:id="l1772" part="I">Mais...</l>
           </sp>
           <sp xml:id="V09-12" who="ANSELME">
             <speaker>ANSELME.</speaker>
             <l part="F">Il aime la gloire, et cela me suffit.</l>
-            <l n="1763" xml:id="l1763">Si quelque qualité peut en lui me déplaire,</l>
-            <l n="1764" xml:id="l1764">Puisqu'il faut parler franc, c'est qu'il est votre frère.</l>
+            <l n="1773" xml:id="l1773">Si quelque qualité peut en lui me déplaire,</l>
+            <l n="1774" xml:id="l1774">Puisqu'il faut parler franc, c'est qu'il est votre frère.</l>
           </sp>
           <sp xml:id="V09-13" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1765" xml:id="l1765">S'il ne tient qu'à cela, pour vous rendre content</l>
-            <l n="1766" xml:id="l1766">Je me défraternise, il en peut faire autant,</l>
-            <l n="1767" xml:id="l1767">Laisser du nom Lorgnac la noblesse en arrière,</l>
-            <l n="1768" xml:id="l1768">Et se faire appeler Monsieur de l'Anselmière.</l>
-            <l n="1769" xml:id="l1769">La Seigneurie est belle, et bien digne de vous,</l>
-            <l n="1770" xml:id="l1770" part="I">Père Anselme.</l>
-            <stage type="toward">À Lucrèce. </stage>
+            <l n="1775" xml:id="l1775">S'il ne tient qu'à cela, pour vous rendre content</l>
+            <l n="1776" xml:id="l1776">Je me défraternise, il en peut faire autant,</l>
+            <l n="1777" xml:id="l1777">Laisser du nom Lorgnac la noblesse en arrière,</l>
+            <l n="1778" xml:id="l1778">Et se faire appeler Monsieur de l'Anselmière.</l>
+            <l n="1779" xml:id="l1779">La Seigneurie est belle, et bien digne de vous,</l>
+            <l n="1780" xml:id="l1780" part="I">Père Anselme.</l>
+            <stage>À Lucrèce. </stage>
             <l part="F">Le Père et la fille sont fous.</l>
-            <l n="1771" xml:id="l1771">Qu'en dites-vous, ma Belle ? Il vous faut, que je pense</l>
-            <l n="1772" xml:id="l1772">Pour les pouvoir souffrir, grand fond de patience ?</l>
+            <l n="1781" xml:id="l1781">Qu'en dites-vous, ma Belle ? Il vous faut, que je pense</l>
+            <l n="1782" xml:id="l1782">Pour les pouvoir souffrir, grand fond de patience ?</l>
           </sp>
           <sp xml:id="V09-14" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
-            <l n="1773" xml:id="l1773">Vous me croyez peut-être encor plus folle qu'eux ?</l>
+            <l n="1783" xml:id="l1783">Vous me croyez peut-être encor plus folle qu'eux ?</l>
           </sp>
           <sp xml:id="V09-15" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1774" xml:id="l1774">Vous croire folle ? Ah non, c'est bien assez de deux ;</l>
-            <l n="1775" xml:id="l1775" part="I">Et d'ailleurs j'ai pour vous...</l>
+            <l n="1784" xml:id="l1784">Vous croire folle ? Ah non, c'est bien assez de deux ;</l>
+            <l n="1785" xml:id="l1785" part="I">Et d'ailleurs j'ai pour vous...</l>
           </sp>
           <sp xml:id="V09-16" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
             <l part="F">J'en devine la cause.</l>
-            <l n="1776" xml:id="l1776">On m'a dit que je dois vous être quelque chose,</l>
-            <l n="1777" xml:id="l1777" part="I">Que vous épouserez la Comtesse.</l>
+            <l n="1786" xml:id="l1786">On m'a dit que je dois vous être quelque chose,</l>
+            <l n="1787" xml:id="l1787" part="I">Que vous épouserez la Comtesse.</l>
           </sp>
           <sp xml:id="V09-17" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
             <l part="F">Comment ?</l>
-            <l n="1778" xml:id="l1778" part="I">Qui vous l'a dit ?</l>
+            <l n="1788" xml:id="l1788" part="I">Qui vous l'a dit ?</l>
           </sp>
           <sp xml:id="V09-18" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
@@ -5551,75 +5576,75 @@
           <sp xml:id="V09-19" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
             <l part="F">Vraiment ?</l>
-            <l n="1779" xml:id="l1779">La Comtesse ! C'est bien mon amour qu'elle brigue !</l>
+            <l n="1789" xml:id="l1789">La Comtesse ! C'est bien mon amour qu'elle brigue !</l>
           </sp>
           <sp xml:id="V09-20" who="LUCRECE">
             <speaker>LUCRÈCE.</speaker>
-            <l n="1780" xml:id="l1780" part="I">Pourquoi non ?</l>
+            <l n="1790" xml:id="l1790" part="I">Pourquoi non ?</l>
           </sp>
           <sp xml:id="V09-21" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
             <l part="F">Demandez à notre vieux Rodrigue,</l>
-            <l n="1781" xml:id="l1781">Si la plus misérable accepterait mon coeur.</l>
+            <l n="1791" xml:id="l1791">Si la plus misérable accepterait mon coeur.</l>
           </sp>
           <sp xml:id="V09-22" who="ANSELME">
             <speaker>ANSELME.</speaker>
-            <l n="1782" xml:id="l1782">Vous pensez-vous railler ? Je plaindrais son malheur,</l>
-            <l n="1783" xml:id="l1783">Et si j'en étais cru, quoique le bien nous tente,</l>
-            <l n="1784" xml:id="l1784">Virgine que voilà qui n'est qu'une Suivante,</l>
-            <l n="1785" xml:id="l1785" part="I">Quand vous la voudriez...</l>
+            <l n="1792" xml:id="l1792">Vous pensez-vous railler ? Je plaindrais son malheur,</l>
+            <l n="1793" xml:id="l1793">Et si j'en étais cru, quoique le bien nous tente,</l>
+            <l n="1794" xml:id="l1794">Virgine que voilà qui n'est qu'une Suivante,</l>
+            <l n="1795" xml:id="l1795" part="I">Quand vous la voudriez...</l>
           </sp>
           <sp xml:id="V09-23" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
             <l part="F">Il est bon sur ma foi,</l>
-            <l n="1786" xml:id="l1786">Virgine ! Le moyen qu'elle voulut de moi ?</l>
-            <l n="1787" xml:id="l1787">Mon bel Ange, parlez, que faut-il que j'en croie ?</l>
+            <l n="1796" xml:id="l1796">Virgine ! Le moyen qu'elle voulut de moi ?</l>
+            <l n="1797" xml:id="l1797">Mon bel Ange, parlez, que faut-il que j'en croie ?</l>
           </sp>
           <sp xml:id="V09-24" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
-            <l n="1788" xml:id="l1788" part="I">Jugez-en.</l>
+            <l n="1798" xml:id="l1798" part="I">Jugez-en.</l>
           </sp>
         </div2>
-        <div2 xml:id="V10" type="scene" n="10">
+        <div2 type="scene" xml:id="V10" n="10">
           <head>SCÈNE X. Anselme, Oronte, Le Marquis, Olimpe, Lucrèce, Le Chevalier, Virgine, Carlin.</head>
           <sp xml:id="V10-1" who="ORONTE">
             <speaker>ORONTE.</speaker>
             <l part="F">Je vous viens faire part de ma joie,</l>
-            <l n="1789" xml:id="l1789">Ma soeur est arrivée enfin selon mes voeux,</l>
-            <l n="1790" xml:id="l1790">Et demain je me vois en état d'être heureux.</l>
+            <l n="1799" xml:id="l1799">Ma soeur est arrivée enfin selon mes voeux,</l>
+            <l n="1800" xml:id="l1800">Et demain je me vois en état d'être heureux.</l>
           </sp>
           <sp xml:id="V10-2" who="VIRGINE">
             <speaker>VIRGINE, au Marquis .</speaker>
-            <l n="1791" xml:id="l1791">Je me cache un moment afin de le surprendre.</l>
+            <l n="1801" xml:id="l1801">Je me cache un moment afin de le surprendre.</l>
           </sp>
           <sp xml:id="V10-3" who="ANSELME">
             <speaker>ANSELME, à Oronte.</speaker>
-            <l n="1792" xml:id="l1792">C'est d'elle pour l'hymen que le jour se doit prendre.</l>
+            <l n="1802" xml:id="l1802">C'est d'elle pour l'hymen que le jour se doit prendre.</l>
           </sp>
           <sp xml:id="V10-4" who="ORONTE">
             <speaker>ORONTE, au Chevalier.</speaker>
-            <l n="1793" xml:id="l1793">Pour surcroît d'allégresse on m'a là-bas appris</l>
-            <l n="1794" xml:id="l1794">Ce que doit votre amour à Monsieur le Marquis.</l>
-            <l n="1795" xml:id="l1795">S'il daignait honorer ma soeur d'une visite,</l>
-            <l n="1796" xml:id="l1796">Elle est civile, douce et connaît son mérite.</l>
+            <l n="1803" xml:id="l1803">Pour surcroît d'allégresse on m'a là-bas appris</l>
+            <l n="1804" xml:id="l1804">Ce que doit votre amour à Monsieur le Marquis.</l>
+            <l n="1805" xml:id="l1805">S'il daignait honorer ma soeur d'une visite,</l>
+            <l n="1806" xml:id="l1806">Elle est civile, douce et connaît son mérite.</l>
           </sp>
           <sp xml:id="V10-5" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1797" xml:id="l1797">Vous ne m'apprenez rien, n'en soyez point jaloux ;</l>
-            <l n="1798" xml:id="l1798">Je l'ai vue, et savais son retour avant vous.</l>
+            <l n="1807" xml:id="l1807">Vous ne m'apprenez rien, n'en soyez point jaloux ;</l>
+            <l n="1808" xml:id="l1808">Je l'ai vue, et savais son retour avant vous.</l>
           </sp>
           <sp xml:id="V10-6" who="ORONTE">
             <speaker>ORONTE.</speaker>
-            <l n="1799" xml:id="l1799" part="I">Vous l'avez vue ?</l>
+            <l n="1809" xml:id="l1809" part="I">Vous l'avez vue ?</l>
           </sp>
           <sp xml:id="V10-7" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
             <l part="F">Holà, qu'on appelle Virgine.</l>
-            <l n="1800" xml:id="l1800">Que j'en vais voir ici qui feront grise mine !</l>
+            <l n="1810" xml:id="l1810">Que j'en vais voir ici qui feront grise mine !</l>
           </sp>
           <sp xml:id="V10-8" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
-            <l n="1801" xml:id="l1801" part="I">On a besoin de moi, Qu'est-ce ?</l>
+            <l n="1811" xml:id="l1811" part="I">On a besoin de moi, Qu'est-ce ?</l>
           </sp>
           <sp xml:id="V10-9" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Oronte.</speaker>
@@ -5627,12 +5652,12 @@
           </sp>
           <sp xml:id="V10-10" who="ORONTE">
             <speaker>ORONTE.</speaker>
-            <l n="1802" xml:id="l1802" part="I">D'où vient que...</l>
+            <l n="1812" xml:id="l1812" part="I">D'où vient que...</l>
           </sp>
           <sp xml:id="V10-11" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Oronte.</speaker>
             <l part="F">Nous verrons qui de nous est le sot.</l>
-            <l n="1803" xml:id="l1803" part="I">Motus.</l>
+            <l n="1813" xml:id="l1813" part="I">Motus.</l>
           </sp>
           <sp xml:id="V10-12" who="CARLIN">
             <speaker>CARLIN, au Chevalier.</speaker>
@@ -5640,12 +5665,12 @@
           </sp>
           <sp xml:id="V10-13" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
-            <l n="1804" xml:id="l1804" part="I">Va, ne crains rien.</l>
+            <l n="1814" xml:id="l1814" part="I">Va, ne crains rien.</l>
           </sp>
           <sp xml:id="V10-14" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
             <l part="F">Tandis que chacun se marie,</l>
-            <l n="1805" xml:id="l1805" part="I">Si j'en faisais autant ?</l>
+            <l n="1815" xml:id="l1815" part="I">Si j'en faisais autant ?</l>
           </sp>
           <sp xml:id="V10-15" who="ORONTE">
             <speaker>ORONTE.</speaker>
@@ -5653,20 +5678,20 @@
           </sp>
           <sp xml:id="V10-16" who="ANSELME">
             <speaker>ANSELME.</speaker>
-            <l n="1806" xml:id="l1806">L'exemple tout d'un coup la met en appétit.</l>
+            <l n="1816" xml:id="l1816">L'exemple tout d'un coup la met en appétit.</l>
           </sp>
           <sp xml:id="V10-17" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
-            <l n="1807" xml:id="l1807">J'ai promis le secret, puis-je tenir parole ?</l>
+            <l n="1817" xml:id="l1817">J'ai promis le secret, puis-je tenir parole ?</l>
           </sp>
           <sp xml:id="V10-18" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1808" xml:id="l1808" part="I">Vous allez voir à qui.</l>
+            <l n="1818" xml:id="l1818" part="I">Vous allez voir à qui.</l>
           </sp>
           <sp xml:id="V10-19" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
             <l part="F">C'est la fin de mon rôle,</l>
-            <l n="1809" xml:id="l1809" part="I">Touche, Carlin.</l>
+            <l n="1819" xml:id="l1819" part="I">Touche, Carlin.</l>
           </sp>
           <sp xml:id="V10-20" who="CARLIN">
             <speaker>CARLIN.</speaker>
@@ -5675,22 +5700,22 @@
           <sp xml:id="V10-21" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
             <l part="F">Maraud.</l>
-            <stage type="toward">À Oronte. </stage>
-            <l n="1810" xml:id="l1810" part="I">Elle se divertit.</l>
+            <stage>À Oronte. </stage>
+            <l n="1820" xml:id="l1820" part="I">Elle se divertit.</l>
           </sp>
           <sp xml:id="V10-22" who="VIRGINE">
             <speaker>VIRGINE, au Marquis.</speaker>
             <l part="F">Je n'ai pas le coeur haut.</l>
-            <l n="1811" xml:id="l1811">Si pourtant vous pouviez vouloir d'une suivante,</l>
-            <l n="1812" xml:id="l1812">Je suis votre très humble et très tendre servante.</l>
+            <l n="1821" xml:id="l1821">Si pourtant vous pouviez vouloir d'une suivante,</l>
+            <l n="1822" xml:id="l1822">Je suis votre très humble et très tendre servante.</l>
           </sp>
           <sp xml:id="V10-23" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1813" xml:id="l1813">La suivante m'a plu, me plaît, et me plaira.</l>
+            <l n="1823" xml:id="l1823">La suivante m'a plu, me plaît, et me plaira.</l>
           </sp>
           <sp xml:id="V10-24" who="ANSELME">
             <speaker>ANSELME. </speaker>
-            <l n="1814" xml:id="l1814" part="I">Quel est donc ce mystère ?</l>
+            <l n="1824" xml:id="l1824" part="I">Quel est donc ce mystère ?</l>
           </sp>
           <sp xml:id="V10-25" who="LEMARQUIS">
             <speaker>LE MARQUIS. </speaker>
@@ -5698,27 +5723,27 @@
           </sp>
           <sp xml:id="V10-26" who="ORONTE">
             <speaker>ORONTE, à Anselme. </speaker>
-            <l n="1815" xml:id="l1815" part="I">Je m'y perds comme vous.</l>
+            <l n="1825" xml:id="l1825" part="I">Je m'y perds comme vous.</l>
           </sp>
           <sp xml:id="V10-27" who="LEMARQUIS">
             <speaker>LE MARQUIS, à Anselme. </speaker>
             <l part="F">Il veut pousser la pièce.</l>
-            <l n="1816" xml:id="l1816">La Virgine est sa soeur, Madame la Comtesse.</l>
+            <l n="1826" xml:id="l1826">La Virgine est sa soeur, Madame la Comtesse.</l>
           </sp>
           <sp xml:id="V10-28" who="ORONTE">
             <speaker>ORONTE. </speaker>
-            <l n="1817" xml:id="l1817" part="I">Ma Soeur ?</l>
+            <l n="1827" xml:id="l1827" part="I">Ma Soeur ?</l>
           </sp>
           <sp xml:id="V10-29" who="ANSELME">
             <speaker>ANSELME.</speaker>
             <l part="F">Qui nous rendra raison de tout ceci ?</l>
-            <l n="1818" xml:id="l1818">Depuis un an et plus Virgine sert ici.</l>
-            <l n="1819" xml:id="l1819">Après l'avoir chassée on vient de la reprendre,</l>
-            <l n="1820" xml:id="l1820">Et c'est uns Comtesse ! Y peut-on rien comprendre ?</l>
+            <l n="1828" xml:id="l1828">Depuis un an et plus Virgine sert ici.</l>
+            <l n="1829" xml:id="l1829">Après l'avoir chassée on vient de la reprendre,</l>
+            <l n="1830" xml:id="l1830">Et c'est uns Comtesse ! Y peut-on rien comprendre ?</l>
           </sp>
           <sp xml:id="V10-30" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1821" xml:id="l1821" part="I">Carlin.</l>
+            <l n="1831" xml:id="l1831" part="I">Carlin.</l>
           </sp>
           <sp xml:id="V10-31" who="CARLIN">
             <speaker>CARLIN.</speaker>
@@ -5727,15 +5752,15 @@
           <sp xml:id="V10-32" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
             <l part="F">Je puis débrouiller ce cahot,</l>
-            <l n="1822" xml:id="l1822">Si l'on veut m'écouter j'aurai fait en deux mots.</l>
-            <l n="1823" xml:id="l1823">Le Marquis prétendant épouser ma Maîtresse,</l>
-            <l n="1824" xml:id="l1824">J'ai pour l'en dégoûter contrefait la Comtesse,</l>
-            <l n="1825" xml:id="l1825">Et par là lui faisant pour moi tout oublier,</l>
-            <l n="1826" xml:id="l1826">J'ai levé tout obstacle aux voeux du Chevalier.</l>
+            <l n="1832" xml:id="l1832">Si l'on veut m'écouter j'aurai fait en deux mots.</l>
+            <l n="1833" xml:id="l1833">Le Marquis prétendant épouser ma Maîtresse,</l>
+            <l n="1834" xml:id="l1834">J'ai pour l'en dégoûter contrefait la Comtesse,</l>
+            <l n="1835" xml:id="l1835">Et par là lui faisant pour moi tout oublier,</l>
+            <l n="1836" xml:id="l1836">J'ai levé tout obstacle aux voeux du Chevalier.</l>
           </sp>
           <sp xml:id="V10-33" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1827" xml:id="l1827" part="I">M'avoir fourbé ?</l>
+            <l n="1837" xml:id="l1837" part="I">M'avoir fourbé ?</l>
           </sp>
           <sp xml:id="V10-34" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
@@ -5743,7 +5768,7 @@
           </sp>
           <sp xml:id="V10-35" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1828" xml:id="l1828" part="I">Ah, coquin, tu mourras.</l>
+            <l n="1838" xml:id="l1838" part="I">Ah, coquin, tu mourras.</l>
           </sp>
           <sp xml:id="V10-36" who="CARLIN">
             <speaker>CARLIN.</speaker>
@@ -5751,46 +5776,46 @@
           </sp>
           <sp xml:id="V10-37" who="LECHEVALIER">
             <speaker>LE CHEVALIER.</speaker>
-            <l n="1829" xml:id="l1829">Ce valet est à moi ; point de bruit, s'il vous plaît.</l>
+            <l n="1839" xml:id="l1839">Ce valet est à moi ; point de bruit, s'il vous plaît.</l>
           </sp>
           <sp xml:id="V10-38" who="LEMARQUIS">
             <speaker>LE MARQUIS.</speaker>
-            <l n="1830" xml:id="l1830">D'un gibier de bourreau tu prends donc l'intérêt,</l>
-            <l n="1831" xml:id="l1831">Cadet maudit ? Et toi, rieuse ridicule,</l>
-            <l n="1832" xml:id="l1832">Épouse-le, j'en dois avaler la pilule ;</l>
-            <l n="1833" xml:id="l1833">C'en est fait, je vois bien qu'en pensant l'attraper</l>
-            <l n="1834" xml:id="l1834">Moi-même je me suis enfin laissé duper.</l>
+            <l n="1840" xml:id="l1840">D'un gibier de bourreau tu prends donc l'intérêt,</l>
+            <l n="1841" xml:id="l1841">Cadet maudit ? Et toi, rieuse ridicule,</l>
+            <l n="1842" xml:id="l1842">Épouse-le, j'en dois avaler la pilule ;</l>
+            <l n="1843" xml:id="l1843">C'en est fait, je vois bien qu'en pensant l'attraper</l>
+            <l n="1844" xml:id="l1844">Moi-même je me suis enfin laissé duper.</l>
             <note type="L">Maille : petite monnaie de cuivre valant la moitié d'un denier. (...) [F]</note>
-            <l n="1835" xml:id="l1835">Pour un fat comme lui qui n'avait pas la maille,</l>
-            <note tyep="L">Gogaille : grande chère avec bruit et réjouissance. (...) [F]</note>
-            <l n="1836" xml:id="l1836">Cent mille écus sont beaux, il en fera gogaille ;</l>
-            <l n="1837" xml:id="l1837">Mais puisse-t-il se voir plus marqué sur le front</l>
-            <l n="1838" xml:id="l1838">Que cent des mieux timbrés ensemble ne le sont ;</l>
-            <l n="1839" xml:id="l1839">Que le nombre d'enfants vous rendant misérables</l>
-            <l n="1840" xml:id="l1840">Vous fasse tous les jours donner à tous les diables.</l>
-            <l n="1841" xml:id="l1841">Puissiez-vous en seize ans en avoir trente-deux</l>
+            <l n="1845" xml:id="l1845">Pour un fat comme lui qui n'avait pas la maille,</l>
+            <note type="L">Gogaille : grande chère avec bruit et réjouissance. (...) [F]</note>
+            <l n="1846" xml:id="l1846">Cent mille écus sont beaux, il en fera gogaille ;</l>
+            <l n="1847" xml:id="l1847">Mais puisse-t-il se voir plus marqué sur le front</l>
+            <l n="1848" xml:id="l1848">Que cent des mieux timbrés ensemble ne le sont ;</l>
+            <l n="1849" xml:id="l1849">Que le nombre d'enfants vous rendant misérables</l>
+            <l n="1850" xml:id="l1850">Vous fasse tous les jours donner à tous les diables.</l>
+            <l n="1851" xml:id="l1851">Puissiez-vous en seize ans en avoir trente-deux</l>
             <note type="L">Tortu : Qui n'est pas en ligne droite. Les chemins de montagnes sont tortus. (...) [L]</note>
-            <l n="1842" xml:id="l1842">Tous borgnes, tous bouffis, tous tortus, tous boiteux.</l>
-            <l n="1843" xml:id="l1843">Sitôt qu'ils seront grands, que chacun d'eux vous crache,</l>
-            <l n="1844" xml:id="l1844">À toi sur la crinière, à toi sur la moustache,</l>
-            <l n="1845" xml:id="l1845">Et pour l'achèvement d'un malheur consommé,</l>
-            <l n="1846" xml:id="l1846">Qu'ils soient haïs partout comme je suis aimé.</l>
-            <stage type="exit">Il sort.</stage>
+            <l n="1852" xml:id="l1852">Tous borgnes, tous bouffis, tous tortus, tous boiteux.</l>
+            <l n="1853" xml:id="l1853">Sitôt qu'ils seront grands, que chacun d'eux vous crache,</l>
+            <l n="1854" xml:id="l1854">À toi sur la crinière, à toi sur la moustache,</l>
+            <l n="1855" xml:id="l1855">Et pour l'achèvement d'un malheur consommé,</l>
+            <l n="1856" xml:id="l1856">Qu'ils soient haïs partout comme je suis aimé.</l>
+            <stage>Il sort.</stage>
           </sp>
           <sp xml:id="V10-39" who="ORONTE">
             <speaker>ORONTE.</speaker>
-            <l n="1847" xml:id="l1847" part="I">Vous en voilà défaits.</l>
+            <l n="1857" xml:id="l1857" part="I">Vous en voilà défaits.</l>
           </sp>
           <sp xml:id="V10-40" who="VIRGINE">
             <speaker>VIRGINE.</speaker>
             <l part="F">Et tout par mon adresse.</l>
-            <l n="1848" xml:id="l1848">Quel présent fera-t-on à la fausse Comtesse ?</l>
-            <l n="1849" xml:id="l1849" part="I">Il m'en faut un de noce, et des plus beaux.</l>
+            <l n="1858" xml:id="l1858">Quel présent fera-t-on à la fausse Comtesse ?</l>
+            <l n="1859" xml:id="l1859" part="I">Il m'en faut un de noce, et des plus beaux.</l>
           </sp>
           <sp xml:id="V10-41" who="ANSELME">
             <speaker>ANSELME.</speaker>
             <l part="F">Suis-nous.</l>
-            <l n="1850" xml:id="l1850">C'est moi qui dois payer, et je répons pour tous.</l>
+            <l n="1860" xml:id="l1860">C'est moi qui dois payer, et je répons pour tous.</l>
           </sp>
         </div2>
       </div1>

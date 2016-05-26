@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>ESTHER, TRAGÉDIE tirée de l'écriture sainte.</title>
-        <author born="1639" born_location="La Ferté Millon" death="1699" death_location="Paris" academie="1673">RACINE, Jean</author>
+        <author academie="1673" born="1639" born_location="La Ferté Millon" death="1699" death_location="Paris" key="Racine, Jean (1639-1699)">RACINE, Jean</author>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE</p>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE</p>
         <p>Mai 2002</p>
-        <idno>RAICNE_ESTHER</idno>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -33,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -45,7 +46,7 @@
         <titlePart type="sub">TRAGÉDIE tirée de l'écriture sainte.</titlePart>
       </docTitle>
       <docDate value="1689">M. DC. LXXXIX. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor id="RACINE, Jean" bio="racine">[par Jean Racine]</docAuthor>
+      <docAuthor bio="racine" id="RACINE, Jean">[par Jean Racine]</docAuthor>
       <docImprint>
         <privilege id="1689-02-03">
           <head>Privilège du Roi.</head>
@@ -74,30 +75,30 @@
       </div>
       <castList>
         <head>Noms des personnages</head>
-        <castItem><role xml:id="ASSUERUS" id="ASSUERUS" sex="1" type="H" statut="" age="A" stat_amour="néant">ASSUERUS</role>, roi de Perse.</castItem>
-        <castItem><role xml:id="ESTHER" id="ESTHER" sex="2" type="H" statut="" age="A" stat_amour="néant">ESTHER</role>, reine de Perse.</castItem>
-        <castItem><role xml:id="MARDOCHEE" rend="veteran" id="MARDOCHÉE" sex="1" type="H" statut="" age="V" stat_amour="néant">MARDOCHÉE</role>, oncle d'Esther.</castItem>
-        <castItem><role xml:id="AMAN" id="AMAN" sex="1" type="H" statut="" age="A" stat_amour="néant">AMAN</role>, favori d'Assuérus.</castItem>
-        <castItem><role xml:id="ZARES" id="ZARÈS" sex="2" type="H" statut="" age="A" stat_amour="néant">ZARÈS</role>, femme d'Aman.</castItem>
-        <castItem><role xml:id="HYDASPE" id="HYDASPE" sex="1" type="H" statut="officier" age="A" stat_amour="néant">HYDASPE</role>, officier du palais intérieur d'Assuérus.</castItem>
-        <castItem><role xml:id="ASAPH" id="ASAPH" sex="1" type="H" statut="officier" age="A" stat_amour="néant">ASAPH</role>, autre officier d'Assuérus.</castItem>
-        <castItem><role xml:id="ELISE" id="ÉLISE" sex="2" type="H" statut="confidente" age="A" stat_amour="néant">ÉLISE</role>, confidente d'Esther.</castItem>
-        <castItem><role xml:id="THAMAR" id="THAMAR" sex="1" type="H" statut="suivante" age="A" stat_amour="néant">THAMAR</role>, israélite de la suite d'Esther.</castItem>
-        <castItem><role xml:id="GARDES" id="GARDES" sex="9" type="H" statut="garde" age="A" stat_amour="néant">GARDES</role>du roi Assuérus</castItem>
-        <castItem><role xml:id="CHOEUR" rend="junior" id="CHOEUR" sex="9" type="H" statut="choeur" age="J" stat_amour="néant">CHOEUR</role>de jeunes filles israélites</castItem>
+        <castItem><role civil="M" id="ASSUERUS" rend="male" xml:id="ASSUERUS">ASSUERUS</role>, roi de Perse.</castItem>
+        <castItem><role civil="F" id="ESTHER" rend="female" xml:id="ESTHER">ESTHER</role>, reine de Perse.</castItem>
+        <castItem><role civil="M" id="MARDOCHÉE" rend="male" xml:id="MARDOCHEE">MARDOCHÉE</role>, oncle d'Esther.</castItem>
+        <castItem><role civil="M" id="AMAN" rend="male" xml:id="AMAN">AMAN</role>, favori d'Assuérus.</castItem>
+        <castItem><role civil="F" id="ZARÈS" rend="female" xml:id="ZARES">ZARÈS</role>, femme d'Aman.</castItem>
+        <castItem><role civil="M" id="HYDASPE" rend="male" xml:id="HYDASPE">HYDASPE</role>, officier du palais intérieur d'Assuérus.</castItem>
+        <castItem><role civil="M" id="ASAPH" rend="male" xml:id="ASAPH">ASAPH</role>, autre officier d'Assuérus.</castItem>
+        <castItem><role civil="F" id="ÉLISE" rend="female" xml:id="ELISE">ÉLISE</role>, confidente d'Esther.</castItem>
+        <castItem><role civil="M" id="THAMAR" rend="male" xml:id="THAMAR">THAMAR</role>, israélite de la suite d'Esther.</castItem>
+        <castItem><role civil="G" id="GARDES" rend="group" xml:id="GARDES">GARDES</role>du roi Assuérus</castItem>
+        <castItem><role civil="G" id="CHOEUR" rend="group" xml:id="CHOEUR">CHOEUR</role>de jeunes filles israélites</castItem>
         <castItem>
-          <role xml:id="LAPITIE" id="LA PITIÉ" sex="1" type="H" statut="allégorie" age="A" stat_amour="néant">LA PITIÉ</role>
+          <role civil="M" id="LA PITIÉ" rend="male" xml:id="PIETE">LA PITIÉ</role>
         </castItem>
       </castList>
-      <set location="Suze" country="Iran" periode="Temps bibliques" link="">La scène est à Suse dans le palais d'Assuérus.</set>
+      <set country="Iran" link="" location="Suze" periode="Temps bibliques">La scène est à Suse dans le palais d'Assuérus.</set>
       <note>Le texte est celui de l'édition 1697. Aucune variante identifiée.</note>
     </front>
     <body>
-      <div1 xml:id="I" type="prologue" n="1">
+      <div1 n="1" type="prologue" xml:id="I">
         <head>PROLOGUE</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>LA PIÉTÉ. fait le Prologue.</head>
-          <sp xml:id="I01-1" who="PIETE">
+          <sp who="PIETE" xml:id="I01-1">
             <speaker>LA PIÉTÉ</speaker>
             <l n="1" xml:id="l1">Du séjour bienheureux de la Divinité,</l>
             <l n="2" xml:id="l2">Je descends dans ce lieu par la Grâce habité.</l>
@@ -173,12 +174,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE I</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Esther, Élise</head>
-          <stage type="decor">Le théâtre représente l'appartement d'Esther.</stage>
-          <sp xml:id="II01-1" who="ESTHER">
+          <stage>Le théâtre représente l'appartement d'Esther.</stage>
+          <sp who="ESTHER" xml:id="II01-1">
             <speaker>ESTHER</speaker>
             <l n="71" xml:id="l71">Est-ce toi, chère Élise ? Ô jour trois fois heureux !</l>
             <l n="72" xml:id="l72">Que béni soit le ciel qui te rend à mes voeux ;</l>
@@ -191,7 +192,7 @@
             <l n="79" xml:id="l79">Depuis plus de six mois que je te fais chercher,</l>
             <l n="80" xml:id="l80">Quel climat, quel désert a donc pu te cacher ?</l>
           </sp>
-          <sp xml:id="II01-2" who="ELISE">
+          <sp who="ELISE" xml:id="II01-2">
             <speaker>ÉLISE</speaker>
             <l n="81" xml:id="l81">Au bruit de votre mort justement éplorée</l>
             <l n="82" xml:id="l82">Du reste des humains je vivais séparée,</l>
@@ -215,7 +216,7 @@
             <l n="99" xml:id="l99">Par quels secrets ressorts, par quel enchaînement</l>
             <l n="100" xml:id="l100">Le ciel a-t-il conduit ce grand événement ?</l>
           </sp>
-          <sp xml:id="II01-3" who="ESTHER">
+          <sp who="ESTHER" xml:id="II01-3">
             <speaker>ESTHER</speaker>
             <l n="101" xml:id="l101">Peut-être on t'a conté la fameuse disgrâce</l>
             <l n="102" xml:id="l102">De l'altière Vasthi, dont j'occupe la place,</l>
@@ -276,21 +277,21 @@
             <l n="157" xml:id="l157">Voit de son temple saint les pierres dispersées,</l>
             <l n="158" xml:id="l158">Et du Dieu d'Israël les fêtes sont cessées ! "</l>
           </sp>
-          <sp xml:id="II01-4" who="ELISE">
+          <sp who="ELISE" xml:id="II01-4">
             <speaker>ÉLISE</speaker>
             <l n="159" xml:id="l159">N'avez-vous point au roi confié vos ennuis ?</l>
           </sp>
-          <sp xml:id="II01-5" who="ESTHER">
+          <sp who="ESTHER" xml:id="II01-5">
             <speaker>ESTHER</speaker>
             <l n="160" xml:id="l160">Le roi, jusqu'à ce jour, ignore qui je suis.</l>
             <l n="161" xml:id="l161">Celui par qui le ciel règle ma destinée,</l>
             <l n="162" xml:id="l162">Sur ce secret encor tient ma langue enchaînée.</l>
           </sp>
-          <sp xml:id="II01-6" who="ELISE">
+          <sp who="ELISE" xml:id="II01-6">
             <speaker>ÉLISE</speaker>
             <l n="163" xml:id="l163">Mardochée ? Hé peut-il approcher de ces lieux ?</l>
           </sp>
-          <sp xml:id="II01-7" who="ESTHER">
+          <sp who="ESTHER" xml:id="II01-7">
             <speaker>ESTHER</speaker>
             <l n="164" xml:id="l164">Son amitié pour moi le rend ingénieux.</l>
             <l n="165" xml:id="l165">Absent je le consulte. Et ses réponses sages</l>
@@ -315,29 +316,29 @@
             <l n="184" xml:id="l184">De l'antique Jacob jeune postérité.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Esther, Élise, Le Choeur.</head>
-          <sp xml:id="II02-1" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II02-1">
             <speaker>Une des israélites, chante derrière le théâtre.</speaker>
             <l n="185" xml:id="l185">Ma soeur, quelle voix nous appelle ?</l>
           </sp>
-          <sp xml:id="II02-2" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II02-2">
             <speaker>une autre</speaker>
             <l n="186" xml:id="l186">J'en reconnais les agréables sons.</l>
-            <l n="187" xml:id="l187" part="I">C'est la reine.</l>
+            <l n="187" part="I" xml:id="l187">C'est la reine.</l>
           </sp>
-          <sp xml:id="II02-3" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II02-3">
             <speaker>toutes deux</speaker>
             <l part="F">Courons, mes soeurs, obéissons.</l>
             <l n="188" xml:id="l188">La reine nous appelle,</l>
             <l n="189" xml:id="l189">Allons, rangeons-nous auprès d'elle.</l>
           </sp>
-          <sp xml:id="II02-4" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II02-4">
             <speaker>TOUT LE CHOEUR, entrant sur la scène par plusieurs endroits différents.</speaker>
             <l n="190" xml:id="l190">La reine nous appelle,</l>
             <l n="191" xml:id="l191">Allons, rangeons-nous auprès d'elle.</l>
           </sp>
-          <sp xml:id="II02-5" who="ELISE">
+          <sp who="ELISE" xml:id="II02-5">
             <speaker>ÉLISE</speaker>
             <l n="192" xml:id="l192">Ciel ! Quel nombreux essaim d'innocentes beautés</l>
             <l n="193" xml:id="l193">S'offre à mes yeux en foule, et sort de tous côtés !</l>
@@ -347,13 +348,13 @@
             <l n="197" xml:id="l197">Monter comme l'odeur d'un agréable encens.</l>
             <l n="198" xml:id="l198">Que Dieu jette sur vous des regards pacifiques.</l>
           </sp>
-          <sp xml:id="II02-6" who="ESTHER">
+          <sp who="ESTHER" xml:id="II02-6">
             <speaker>ESTHER</speaker>
             <l n="199" xml:id="l199">Mes filles, chantez-nous quelqu'un de ces cantiques,</l>
             <l n="200" xml:id="l200">Où vos voix si souvent se mêlant à mes pleurs,</l>
             <l n="201" xml:id="l201">De la triste Sion célèbrent les malheurs.</l>
           </sp>
-          <sp xml:id="II02-7" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II02-7">
             <speaker>UNE ISRAÉLITE seule, chante.</speaker>
             <l n="202" xml:id="l202">Déplorable Sion, qu'as-tu fait de ta gloire ?</l>
             <l n="203" xml:id="l203">Tout l'univers admirait ta splendeur.</l>
@@ -365,7 +366,7 @@
             <l n="209" xml:id="l209">Si dans mes chants ta douleur retracée,</l>
             <l n="210" xml:id="l210">Jusqu'au dernier soupir n'occupe ma pensée !</l>
           </sp>
-          <sp xml:id="II02-8" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II02-8">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="211" xml:id="l211">Ô rives du Jourdain ! ô champs aimés des cieux !</l>
             <l n="212" xml:id="l212">Sacrés monts, fertiles vallées</l>
@@ -373,9 +374,14 @@
             <l n="214" xml:id="l214">Du doux pays de nos aïeux</l>
             <l n="215" xml:id="l215">Serons-nous toujours exilées ?</l>
           </sp>
-          <sp xml:id="II02-9" who="CHOEUR"><speaker>UNE ISRAÉLITE</speaker>, seule.
-	<l n="216" xml:id="l216">Quand verrai-je, ô Sion ! relever tes remparts,</l><l n="217" xml:id="l217">Et de tes tours les magnifiques faîtes ?</l><l n="218" xml:id="l218">Quand verrai-je de toutes parts</l><l n="219" xml:id="l219">Tes peuples en chantant accourir à tes fêtes ?</l></sp>
-          <sp xml:id="II02-10" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II02-9">
+            <speaker>UNE ISRAÉLITE, seule.</speaker>
+            <l n="216" xml:id="l216">Quand verrai-je, ô Sion ! relever tes remparts,</l>
+            <l n="217" xml:id="l217">Et de tes tours les magnifiques faîtes ?</l>
+            <l n="218" xml:id="l218">Quand verrai-je de toutes parts</l>
+            <l n="219" xml:id="l219">Tes peuples en chantant accourir à tes fêtes ?</l>
+          </sp>
+          <sp who="CHOEUR" xml:id="II02-10">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="220" xml:id="l220">Ô rives du Jourdain ! Ô champs aimés des cieux !</l>
             <l n="221" xml:id="l221">Sacrés monts, fertiles vallées,</l>
@@ -384,9 +390,9 @@
             <l n="224" xml:id="l224">Serons-nous toujours exilées ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Esther, Mardochée, Élise, Le Choeur.</head>
-          <sp xml:id="II03-1" who="ESTHER">
+          <sp who="ESTHER" xml:id="II03-1">
             <speaker>ESTHER</speaker>
             <l n="225" xml:id="l225">Quel profane en ce lieu s'ose avancer vers nous ?</l>
             <l n="226" xml:id="l226">Que vois-je ? Mardochée ? Ô mon père, est-ce vous ?</l>
@@ -394,20 +400,20 @@
             <l n="228" xml:id="l228">A donc conduit vos pas, et caché votre entrée ?</l>
             <l n="229" xml:id="l229">Mais d'où vient cet air sombre, et ce cilice affreux,</l>
             <l n="230" xml:id="l230">Et cette cendre enfin qui couvre vos cheveux ?</l>
-            <l n="231" xml:id="l231" part="I">Que nous annoncez-vous ?</l>
+            <l n="231" part="I" xml:id="l231">Que nous annoncez-vous ?</l>
           </sp>
-          <sp xml:id="II03-2" who="MARD">
+          <sp who="MARDOCHEE" xml:id="II03-2">
             <speaker>MARDOCHEE</speaker>
             <l part="F">Ô Reine infortunée !</l>
             <l n="232" xml:id="l232">Ô d'un peuple innocent barbare destinée !</l>
             <l n="233" xml:id="l233">Lisez, lisez l'arrêt détestable, cruel.</l>
             <l n="234" xml:id="l234">Nous sommes tous perdus, et c'est fait d'Israël.</l>
           </sp>
-          <sp xml:id="II03-3" who="ESTHER">
+          <sp who="ESTHER" xml:id="II03-3">
             <speaker>ESTHER</speaker>
             <l n="235" xml:id="l235">Juste ciel ! Tout mon sang dans mes veines se glace.</l>
           </sp>
-          <sp xml:id="II03-4" who="MARD">
+          <sp who="MARDOCHEE" xml:id="II03-4">
             <speaker>MARDOCHEE</speaker>
             <l n="236" xml:id="l236">On doit de tous les Juifs exterminer la race.</l>
             <l n="237" xml:id="l237">Au sanguinaire Aman nous sommes tous livrés.</l>
@@ -425,16 +431,16 @@
             <l n="249" xml:id="l249">Tout doit servir de proie aux tigres, aux vautours,</l>
             <l n="250" xml:id="l250">Et ce jour effroyable arrive dans dix jours.</l>
           </sp>
-          <sp xml:id="II03-5" who="ESTHER">
+          <sp who="ESTHER" xml:id="II03-5">
             <speaker>ESTHER</speaker>
             <l n="251" xml:id="l251">Ô Dieu ! Qui vois former des desseins si funestes,</l>
             <l n="252" xml:id="l252">As-tu donc de Jacob abandonné les restes ?</l>
           </sp>
-          <sp xml:id="II03-6" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II03-6">
             <speaker>UNE DES PLUS JEUNES ISRAÉLITES</speaker>
             <l n="253" xml:id="l253">Ciel ! Qui nous défendra, si tu ne nous défends ?</l>
           </sp>
-          <sp xml:id="II03-7" who="MARD">
+          <sp who="MARDOCHEE" xml:id="II03-7">
             <speaker>MARDOCHEE</speaker>
             <l n="254" xml:id="l254">Laissez les pleurs, Esther, à ces jeunes enfants.</l>
             <l n="255" xml:id="l255">En vous est tout l'espoir de vos malheureux frères.</l>
@@ -444,7 +450,7 @@
             <l n="259" xml:id="l259">Toute pleine du feu de tant de saints prophètes,</l>
             <l n="260" xml:id="l260">Allez, osez au roi déclarer qui vous êtes.</l>
           </sp>
-          <sp xml:id="II03-8" who="ESTHER">
+          <sp who="ESTHER" xml:id="II03-8">
             <speaker>ESTHER</speaker>
             <l n="261" xml:id="l261">Hélas ! Ignorez-vous quelles sévères lois</l>
             <l n="262" xml:id="l262">Aux timides mortels cachent ici les rois ?</l>
@@ -461,7 +467,7 @@
             <l n="273" xml:id="l273">Et sans le prévenir, il faut pour lui parler,</l>
             <l n="274" xml:id="l274">Qu'il me cherche, ou du moins qu'il me fasse appeler.</l>
           </sp>
-          <sp xml:id="II03-9" who="MARD">
+          <sp who="MARDOCHEE" xml:id="II03-9">
             <speaker>MARDOCHEE</speaker>
             <l n="275" xml:id="l275">Quoi ! Lorsque vous voyez périr votre patrie,</l>
             <l n="276" xml:id="l276">Pour quelque chose, Esther, vous comptez votre vie !</l>
@@ -498,7 +504,7 @@
             <l n="307" xml:id="l307">Et vous, qui n'aurez point accepté cette grâce,</l>
             <l n="308" xml:id="l308">Vous périrez peut-être, et toute votre race.</l>
           </sp>
-          <sp xml:id="II03-10" who="ESTHER">
+          <sp who="ESTHER" xml:id="II03-10">
             <speaker>ESTHER</speaker>
             <l n="309" xml:id="l309">Allez. Que tous les Juifs dans Suse répandus,</l>
             <l n="310" xml:id="l310">À prier avec vous jour et nuit assidus,</l>
@@ -508,13 +514,13 @@
             <l n="314" xml:id="l314">Demain quand le soleil rallumera le jour,</l>
             <l n="315" xml:id="l315">Contente de périr, s'il faut que je périsse,</l>
             <l n="316" xml:id="l316">J'irai pour mon pays m'offrir en sacrifice.</l>
-            <l n="317" xml:id="l317" part="I">Qu'on s'éloigne un moment.</l>
+            <l n="317" part="I" xml:id="l317">Qu'on s'éloigne un moment.</l>
           </sp>
-          <stage type="action">Le choeur se retire vers le fond du théâtre.</stage>
+          <stage>Le choeur se retire vers le fond du théâtre.</stage>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Esther, Élise, Le Choeur</head>
-          <sp xml:id="II04-1" who="ESTHER">
+          <sp who="ESTHER" xml:id="II04-1">
             <speaker>ESTHER</speaker>
             <l part="F">Ô mon souverain Roi !</l>
             <l n="318" xml:id="l318">Me voici donc tremblante, et seule devant toi.</l>
@@ -564,10 +570,10 @@
             <l n="362" xml:id="l362">Tourne enfin sa fureur contre nos ennemis.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. Le Choeur.</head>
-          <stage type="sing">Toute cette scène est chantée.</stage>
-          <sp xml:id="II05-1" who="CHOEUR">
+          <stage>Toute cette scène est chantée.</stage>
+          <sp who="CHOEUR" xml:id="II05-1">
             <speaker>UNE ISRAÈLITE,seule.</speaker>
             <l n="363" xml:id="l363">Pleurons, et gémissons, mes fidèles compagnes.</l>
             <l n="364" xml:id="l364">À nos sanglots donnons un libre cours.</l>
@@ -578,46 +584,46 @@
             <l n="369" xml:id="l369">Il ne fut jamais sous les cieux</l>
             <l n="370" xml:id="l370">Un si juste sujet de larmes.</l>
           </sp>
-          <sp xml:id="II05-2" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-2">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="371" xml:id="l371">Ô mortelles alarmes !</l>
           </sp>
-          <sp xml:id="II05-3" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-3">
             <speaker>UNE AUTRE ISRAELITE</speaker>
             <l n="372" xml:id="l372">N'était-ce pas assez qu'un vainqueur odieux,</l>
             <l n="373" xml:id="l373">De l'auguste Sion eût détruit tous les charmes,</l>
             <l n="374" xml:id="l374">Et traîné ses enfants captifs en mille lieux ?</l>
           </sp>
-          <sp xml:id="II05-4" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-4">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="375" xml:id="l375">Ô mortelles alarmes !</l>
           </sp>
-          <sp xml:id="II05-5" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-5">
             <speaker>LA MÊME ISRAELITE</speaker>
             <l n="376" xml:id="l376">Faibles agneaux, livrés à des loups furieux,</l>
             <l n="377" xml:id="l377">Nos soupirs sont nos seules armes.</l>
           </sp>
-          <sp xml:id="II05-6" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-6">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="378" xml:id="l378">Ô mortelles alarmes !</l>
           </sp>
-          <sp xml:id="II05-7" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-7">
             <speaker>UNE DES ISRAELITES</speaker>
             <l n="379" xml:id="l379">Arrachons, déchirons tous ces vains ornements,</l>
             <l n="380" xml:id="l380">Qui parent notre tête.</l>
           </sp>
-          <sp xml:id="II05-8" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-8">
             <speaker>UNE AUTRE</speaker>
             <l n="381" xml:id="l381">Revêtons-nous d'habillements</l>
             <l n="382" xml:id="l382">Conformes à l'horrible fête,</l>
             <l n="383" xml:id="l383">Que l'impie Aman nous apprête.</l>
           </sp>
-          <sp xml:id="II05-9" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-9">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="384" xml:id="l384">Arrachons, déchirons tous ces vains ornements,</l>
             <l n="385" xml:id="l385">Qui parent notre tête.</l>
           </sp>
-          <sp xml:id="II05-10" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-10">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="386" xml:id="l386">Quel carnage de toutes parts !</l>
             <l n="387" xml:id="l387">On égorge à la fois les enfants, les vieillards ;</l>
@@ -629,7 +635,7 @@
             <l n="393" xml:id="l393">Grand Dieu ! tes saints sont la pâture</l>
             <l n="394" xml:id="l394">Des tigres et des léopards.</l>
           </sp>
-          <sp xml:id="II05-11" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-11">
             <speaker>UNE DES PLUS JEUNES ISRAELITES</speaker>
             <l n="395" xml:id="l395">Hélas ! si jeune encore,</l>
             <l n="396" xml:id="l396">Par quel crime ai-je pu mériter mon malheur ?</l>
@@ -639,26 +645,26 @@
             <l n="400" xml:id="l400">Hélas ! si jeune encore,</l>
             <l n="401" xml:id="l401">Par quel crime ai-je pu mériter mon malheur ?</l>
           </sp>
-          <sp xml:id="II05-12" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-12">
             <speaker>UNE AUTRE</speaker>
             <l n="402" xml:id="l402">Des offenses d'autrui malheureuses victimes,</l>
             <l n="403" xml:id="l403">Que nous servent, hélas ! ces regrets superflus ?</l>
             <l n="404" xml:id="l404">Nos pères ont péché, nos pères ne sont plus,</l>
             <l n="405" xml:id="l405">Et nous portons la peine de leurs crimes.</l>
           </sp>
-          <sp xml:id="II05-13" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-13">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="406" xml:id="l406">Le Dieu que nous servons est le Dieu des combats.</l>
             <l n="407" xml:id="l407">Non, non, il ne souffrira pas</l>
             <l n="408" xml:id="l408">Qu'on égorge ainsi l'innocence.</l>
           </sp>
-          <sp xml:id="II05-14" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-14">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="409" xml:id="l409">Hé quoi ! dirait l'impiété,</l>
             <l n="410" xml:id="l410">Où donc est-il ce Dieu si redouté,</l>
             <l n="411" xml:id="l411">Dont Israël nous vantait la puissance ?</l>
           </sp>
-          <sp xml:id="II05-15" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-15">
             <speaker>UNE AUTRE</speaker>
             <l n="412" xml:id="l412">Ce Dieu jaloux, ce Dieu victorieux ;</l>
             <l n="413" xml:id="l413">Frémissez, peuples de la terre ;</l>
@@ -667,40 +673,40 @@
             <l n="416" xml:id="l416">Ni les éclairs, ni le tonnerre</l>
             <l n="417" xml:id="l417">N'obéissent point à vos dieux.</l>
           </sp>
-          <sp xml:id="II05-16" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-16">
             <speaker>UNE AUTRE</speaker>
             <l n="418" xml:id="l418">Il renverse l'audacieux.</l>
           </sp>
-          <sp xml:id="II05-17" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-17">
             <speaker>UNE AUTRE</speaker>
             <l n="419" xml:id="l419">Il prend l'humble sous sa défense.</l>
           </sp>
-          <sp xml:id="II05-18" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-18">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="420" xml:id="l420">Le Dieu que nous servons est le Dieu des combats.</l>
             <l n="421" xml:id="l421">Non, non, il ne souffrira pas</l>
             <l n="422" xml:id="l422">Qu'on égorge ainsi l'innocence.</l>
           </sp>
-          <sp xml:id="II05-19" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-19">
             <speaker>DEUX ISRAELITES</speaker>
             <l n="423" xml:id="l423">Ô Dieu, que la gloire couronne !</l>
             <l n="424" xml:id="l424">Dieu, que la lumière environne !</l>
             <l n="425" xml:id="l425">Qui voles sur l'aile des vents,</l>
             <l n="426" xml:id="l426">Et dont le trône est porté par les anges !</l>
           </sp>
-          <sp xml:id="II05-20" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-20">
             <speaker>DEUX AUTRES DES PLUS JEUNES</speaker>
             <l n="427" xml:id="l427">Dieu ! qui veux bien que de simples enfants</l>
             <l n="428" xml:id="l428">Avec eux chantent tes louanges.</l>
           </sp>
-          <sp xml:id="II05-21" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-21">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="429" xml:id="l429">Tu vois nos pressants dangers.</l>
             <l n="430" xml:id="l430">Donne à ton nom la victoire.</l>
             <l n="431" xml:id="l431">Ne souffre point que ta gloire</l>
             <l n="432" xml:id="l432">Passe à des dieux étrangers.</l>
           </sp>
-          <sp xml:id="II05-22" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-22">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="433" xml:id="l433">Arme-toi, viens nous défendre.</l>
             <l n="434" xml:id="l434">Descends tel qu'autrefois la mer te vit descendre.</l>
@@ -709,7 +715,7 @@
             <l n="437" xml:id="l437">Qu'ils soient comme la poudre, et la paille légère</l>
             <l n="438" xml:id="l438">Que le vent chasse devant lui.</l>
           </sp>
-          <sp xml:id="II05-23" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="II05-23">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="439" xml:id="l439">Tu vois nos pressants dangers.</l>
             <l n="440" xml:id="l440">Donne à ton nom la victoire.</l>
@@ -718,27 +724,27 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE II</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Aman, Hydaspe.</head>
-          <stage type="decor">Le théâtre représente la chambre où est le trône d'Assuérus.</stage>
-          <sp xml:id="III01-1" who="AMAN">
+          <stage>Le théâtre représente la chambre où est le trône d'Assuérus.</stage>
+          <sp who="AMAN" xml:id="III01-1">
             <speaker>AMAN</speaker>
             <l n="443" xml:id="l443">Hé quoi ? Lorsque le jour ne commence qu'à luire,</l>
             <l n="444" xml:id="l444">Dans ce lieu redoutable oses-tu m'introduire ?</l>
           </sp>
-          <sp xml:id="III01-2" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-2">
             <speaker>HYDASPE</speaker>
             <l n="445" xml:id="l445">Vous savez qu'on s'en peut reposer sur ma foi,</l>
             <l n="446" xml:id="l446">Que ces portes, Seigneur, n'obéissent qu'à moi.</l>
             <l n="447" xml:id="l447">Venez. Partout ailleurs on pourrait nous entendre.</l>
           </sp>
-          <sp xml:id="III01-3" who="AMAN">
+          <sp who="AMAN" xml:id="III01-3">
             <speaker>AMAN</speaker>
             <l n="448" xml:id="l448">Quel est donc le secret que tu me veux apprendre ?</l>
           </sp>
-          <sp xml:id="III01-4" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-4">
             <speaker>HYDASPE</speaker>
             <l n="449" xml:id="l449">Seigneur, de vos bienfaits mille fois honoré,</l>
             <l n="450" xml:id="l450">Je me souviens toujours que je vous ai juré</l>
@@ -763,21 +769,21 @@
             <l n="469" xml:id="l469">Le roi que j'ai laissé plus calme dans son lit,</l>
             <l n="470" xml:id="l470">D'une oreille attentive écoute ce récit.</l>
           </sp>
-          <sp xml:id="III01-5" who="AMAN">
+          <sp who="AMAN" xml:id="III01-5">
             <speaker>AMAN</speaker>
             <l n="471" xml:id="l471">De quel temps de sa vie a-t-il choisi l'histoire ?</l>
           </sp>
-          <sp xml:id="III01-6" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-6">
             <speaker>HYDASPE</speaker>
             <l n="472" xml:id="l472">Il revoit tous ces temps si remplis de sa gloire,</l>
             <l n="473" xml:id="l473">Depuis le fameux jour qu'au trône de Cyrus,</l>
             <l n="474" xml:id="l474">Le choix du sort plaça l'heureux Assuérus.</l>
           </sp>
-          <sp xml:id="III01-7" who="AMAN">
+          <sp who="AMAN" xml:id="III01-7">
             <speaker>AMAN</speaker>
             <l n="475" xml:id="l475">Ce songe, Hydaspe, est donc sorti de son idée ?</l>
           </sp>
-          <sp xml:id="III01-8" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-8">
             <speaker>HYDASPE</speaker>
             <l n="476" xml:id="l476">Entre tous les devins fameux dans la Chaldée,</l>
             <l n="477" xml:id="l477">Il a fait assembler ceux qui savent le mieux</l>
@@ -786,44 +792,44 @@
             <l n="480" xml:id="l480">Votre âme en m'écoutant paraît tout interdite.</l>
             <l n="481" xml:id="l481">L'heureux Aman a-t-il quelques secrets ennuis ?</l>
           </sp>
-          <sp xml:id="III01-9" who="AMAN">
+          <sp who="AMAN" xml:id="III01-9">
             <speaker>AMAN</speaker>
             <l n="482" xml:id="l482">Peux-tu le demander dans la place où je suis,</l>
             <l n="483" xml:id="l483">Haï, craint, envié, souvent plus misérable</l>
             <l n="484" xml:id="l484">Que tous les malheureux que mon pouvoir accable ?</l>
           </sp>
-          <sp xml:id="III01-10" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-10">
             <speaker>HYDASPE</speaker>
             <l n="485" xml:id="l485">Hé ! qui jamais du ciel eut des regards plus doux ?</l>
             <l n="486" xml:id="l486">Vous voyez l'univers prosterné devant vous.</l>
           </sp>
-          <sp xml:id="III01-11" who="AMAN">
+          <sp who="AMAN" xml:id="III01-11">
             <speaker>AMAN</speaker>
             <l n="487" xml:id="l487">L'univers ? Tous les jours un homme... un vil esclave,</l>
             <l n="488" xml:id="l488">D'un front audacieux me dédaigne et me brave.</l>
           </sp>
-          <sp xml:id="III01-12" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-12">
             <speaker>HYDASPE</speaker>
             <l n="489" xml:id="l489">Quel est cet ennemi de l'État, et du roi ?</l>
           </sp>
-          <sp xml:id="III01-13" who="AMAN">
+          <sp who="AMAN" xml:id="III01-13">
             <speaker>AMAN</speaker>
             <l n="490" xml:id="l490">Le nom de Mardochée est-il connu de toi ?</l>
           </sp>
-          <sp xml:id="III01-14" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-14">
             <speaker>HYDASPE</speaker>
             <l n="491" xml:id="l491">Qui ? Ce chef d'une race abominable, impie ?</l>
           </sp>
-          <sp xml:id="III01-15" who="AMAN">
+          <sp who="AMAN" xml:id="III01-15">
             <speaker>AMAN</speaker>
-            <l n="492" xml:id="l492" part="I">Oui, lui-même.</l>
+            <l n="492" part="I" xml:id="l492">Oui, lui-même.</l>
           </sp>
-          <sp xml:id="III01-16" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-16">
             <speaker>HYDASPE</speaker>
             <l part="F">Hé, Seigneur ! d'une si belle vie</l>
             <l n="493" xml:id="l493">Un si faible ennemi peut-il troubler la paix ?</l>
           </sp>
-          <sp xml:id="III01-17" who="AMAN">
+          <sp who="AMAN" xml:id="III01-17">
             <speaker>AMAN</speaker>
             <l n="494" xml:id="l494">L'insolent devant moi ne se courba jamais.</l>
             <l n="495" xml:id="l495">En vain de la faveur du plus grand des monarques</l>
@@ -847,14 +853,14 @@
             <l n="513" xml:id="l513">Crois-tu que quelque voix ose parler pour lui ?</l>
             <l n="514" xml:id="l514">Sur quel roseau fragile a-t-il mis son appui ?</l>
           </sp>
-          <sp xml:id="III01-18" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-18">
             <speaker>HYDASPE</speaker>
             <l n="515" xml:id="l515">Seigneur, vous le savez, son avis salutaire</l>
             <l n="516" xml:id="l516">Découvrit de Tharès le complot sanguinaire.</l>
             <l n="517" xml:id="l517">Le roi promit alors de le récompenser.</l>
             <l n="518" xml:id="l518">Le roi depuis ce temps paraît n'y plus penser.</l>
           </sp>
-          <sp xml:id="III01-19" who="AMAN">
+          <sp who="AMAN" xml:id="III01-19">
             <speaker>AMAN</speaker>
             <l n="519" xml:id="l519">Non, il faut à tes yeux dépouiller l'artifice.</l>
             <l n="520" xml:id="l520">J'ai su de mon destin corriger l'injustice.</l>
@@ -871,12 +877,12 @@
             <l n="531" xml:id="l531">Et toute ma grandeur me devient insipide,</l>
             <l n="532" xml:id="l532">Tandis que le soleil éclaire ce perfide.</l>
           </sp>
-          <sp xml:id="III01-20" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-20">
             <speaker>HYDASPE</speaker>
             <l n="533" xml:id="l533">Vous serez de sa vue affranchi dans dix jours.</l>
             <l n="534" xml:id="l534">La nation entière est promise aux vautours.</l>
           </sp>
-          <sp xml:id="III01-21" who="AMAN">
+          <sp who="AMAN" xml:id="III01-21">
             <speaker>AMAN</speaker>
             <l n="535" xml:id="l535">Ah ! que ce temps est long à mon impatience !</l>
             <l n="536" xml:id="l536">C'est lui, je te veux bien confier ma vengeance,</l>
@@ -895,13 +901,13 @@
             <l n="549" xml:id="l549">Un seul osa d'Aman attirer le courroux,</l>
             <l n="550" xml:id="l550">Aussitôt de la terre ils disparurent tous.</l>
           </sp>
-          <sp xml:id="III01-22" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-22">
             <speaker>HYDASPE</speaker>
             <note type="L">Amalécite : Peuple ennemi des Hébreux.</note>
             <l n="551" xml:id="l551">Ce n'est donc pas, Seigneur, le sang amalécite,</l>
             <l n="552" xml:id="l552">Dont la voix à les perdre en secret vous excite ?</l>
           </sp>
-          <sp xml:id="III01-23" who="AMAN">
+          <sp who="AMAN" xml:id="III01-23">
             <speaker>AMAN</speaker>
             <l n="553" xml:id="l553">Je sais que descendu de ce sang malheureux,</l>
             <l n="554" xml:id="l554">Une éternelle haine a dû m'armer contre eux ;</l>
@@ -936,12 +942,12 @@
             <l n="583" xml:id="l583">Un je ne sais quel trouble empoisonne ma joie.</l>
             <l n="584" xml:id="l584">Pourquoi dix jours encor faut-il que je le voie ?</l>
           </sp>
-          <sp xml:id="III01-24" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-24">
             <speaker>HYDASPE</speaker>
             <l n="585" xml:id="l585">Et ne pouvez-vous pas d'un mot l'exterminer ?</l>
             <l n="586" xml:id="l586">Dites au roi, Seigneur, de vous l'abandonner.</l>
           </sp>
-          <sp xml:id="III01-25" who="AMAN">
+          <sp who="AMAN" xml:id="III01-25">
             <speaker>AMAN</speaker>
             <l n="587" xml:id="l587">Je viens pour épier le moment favorable.</l>
             <l n="588" xml:id="l588">Tu connais comme moi ce prince inexorable.</l>
@@ -950,32 +956,32 @@
             <l n="591" xml:id="l591">Mais à me tourmenter ma crainte est trop subtile.</l>
             <l n="592" xml:id="l592">Mardochée à ses yeux est une âme trop vile.</l>
           </sp>
-          <sp xml:id="III01-26" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-26">
             <speaker>HYDASPE</speaker>
             <l n="593" xml:id="l593">Que tardez-vous ? Allez, et faites promptement</l>
             <l n="594" xml:id="l594">Élever de sa mort le honteux instrument.</l>
           </sp>
-          <sp xml:id="III01-27" who="AMAN">
+          <sp who="AMAN" xml:id="III01-27">
             <speaker>AMAN</speaker>
             <l n="595" xml:id="l595">J'entends du bruit, je sors. Toi, si le roi m'appelle...</l>
           </sp>
-          <sp xml:id="III01-28" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III01-28">
             <speaker>HYDASPE</speaker>
-            <l n="596" xml:id="l596" part="I">Il suffit.</l>
+            <l n="596" part="I" xml:id="l596">Il suffit.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Assuerus, Hydaspe, Asaph, Suite d'Assuerus.</head>
-          <sp xml:id="III02-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III02-1">
             <speaker>ASSUERUS</speaker>
             <l part="F">Ainsi donc, sans cet avis fidèle,</l>
             <l n="597" xml:id="l597">Deux traîtres dans son lit assassinaient leur roi ?</l>
             <l n="598" xml:id="l598">Qu'on me laisse, et qu'Asaph seul demeure avec moi.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Assuerus, Asaph.</head>
-          <sp xml:id="III03-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III03-1">
             <speaker>ASSUERUS, assis sur son trône.</speaker>
             <l n="599" xml:id="l599">Je veux bien l'avouer. De ce couple perfide</l>
             <l n="600" xml:id="l600">J'avais presque oublié l'attentat parricide.</l>
@@ -989,11 +995,11 @@
             <l n="608" xml:id="l608">Enfin par qui la Perse avec moi fut sauvée,</l>
             <l n="609" xml:id="l609">Quel honneur pour sa foi, quel prix a-t-il reçu ?</l>
           </sp>
-          <sp xml:id="III03-2" who="ASAPH">
+          <sp who="ASAPH" xml:id="III03-2">
             <speaker>ASAPH</speaker>
             <l n="610" xml:id="l610">On lui promit beaucoup, c'est tout ce que j'ai su.</l>
           </sp>
-          <sp xml:id="III03-3" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III03-3">
             <speaker>ASSUERUS</speaker>
             <l n="611" xml:id="l611">Ô d'un si grand service oubli trop condamnable !</l>
             <l n="612" xml:id="l612">Des embarras du trône effet inévitable !</l>
@@ -1011,75 +1017,75 @@
             <l n="624" xml:id="l624">Qu'un si rare bienfait à ma reconnaissance.</l>
             <l n="625" xml:id="l625">Et qui voudrait jamais s'exposer pour son roi ?</l>
             <l n="626" xml:id="l626">Ce mortel, qui montra tant de zèle pour moi,</l>
-            <l n="627" xml:id="l627" part="I">Vit-il encore ?</l>
+            <l n="627" part="I" xml:id="l627">Vit-il encore ?</l>
           </sp>
-          <sp xml:id="III03-4" who="ASAPH">
+          <sp who="ASAPH" xml:id="III03-4">
             <speaker>ASAPH</speaker>
             <l part="F">Il voit l'astre qui vous éclaire.</l>
           </sp>
-          <sp xml:id="III03-5" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III03-5">
             <speaker>ASSUERUS</speaker>
             <l n="628" xml:id="l628">Et que n'a-t-il plutôt demandé son salaire ?</l>
             <l n="629" xml:id="l629">Quel pays reculé le cache à mes bienfaits ?</l>
           </sp>
-          <sp xml:id="III03-6" who="ASAPH">
+          <sp who="ASAPH" xml:id="III03-6">
             <speaker>ASAPH</speaker>
             <l n="630" xml:id="l630">Assis le plus souvent aux portes du palais,</l>
             <l n="631" xml:id="l631">Sans se plaindre de vous, ni de sa destinée,</l>
             <l n="632" xml:id="l632">Il y traîne, Seigneur, sa vie infortunée.</l>
           </sp>
-          <sp xml:id="III03-7" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III03-7">
             <speaker>ASSUERUS</speaker>
             <l n="633" xml:id="l633">Et je dois d'autant moins oublier la vertu,</l>
             <l n="634" xml:id="l634">Qu'elle-même s'oublie. Il se nomme, dis-tu ?</l>
           </sp>
-          <sp xml:id="III03-8" who="ASAPH">
+          <sp who="ASAPH" xml:id="III03-8">
             <speaker>ASAPH</speaker>
             <l n="635" xml:id="l635">Mardochée est le nom que je viens de vous lire.</l>
           </sp>
-          <sp xml:id="III03-9" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III03-9">
             <speaker>ASSUERUS</speaker>
-            <l n="636" xml:id="l636" part="I">Et son pays ?</l>
+            <l n="636" part="I" xml:id="l636">Et son pays ?</l>
           </sp>
-          <sp xml:id="III03-10" who="ASAPH">
+          <sp who="ASAPH" xml:id="III03-10">
             <speaker>ASAPH</speaker>
             <l part="F">Seigneur, puisqu'il faut vous le dire,</l>
             <l n="637" xml:id="l637">C'est un de ces captifs à périr destinés,</l>
             <l n="638" xml:id="l638">Des rives du Jourdain sur l'Euphrate amenés.</l>
           </sp>
-          <sp xml:id="III03-11" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III03-11">
             <speaker>ASSUERUS</speaker>
             <l n="639" xml:id="l639">Il est donc Juif ? Ô ciel ! sur le point que la vie</l>
             <l n="640" xml:id="l640">Par mes propres sujets m'allait être ravie,</l>
             <l n="641" xml:id="l641">Un Juif rend par ses soins leurs efforts impuissants ?</l>
             <l n="642" xml:id="l642">Un Juif m'a préservé du glaive des Persans ?</l>
             <l n="643" xml:id="l643">Mais, puisqu'il m'a sauvé, quel qu'il soit, il n'importe.</l>
-            <l n="644" xml:id="l644" part="I">Holà, quelqu'un !</l>
+            <l n="644" part="I" xml:id="l644">Holà, quelqu'un !</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Assuerus, Hydaspe, Asaph.</head>
-          <sp xml:id="III04-1" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III04-1">
             <speaker>HYDASPE</speaker>
             <l part="M">Seigneur.</l>
           </sp>
-          <sp xml:id="III04-2" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III04-2">
             <speaker>ASSUERUS</speaker>
             <l part="F">Regarde à cette porte,</l>
             <l n="645" xml:id="l645">Vois s'il s'offre à tes yeux quelque grand de ma cour.</l>
           </sp>
-          <sp xml:id="III04-3" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III04-3">
             <speaker>HYDASPE</speaker>
             <l n="646" xml:id="l646">Aman à votre porte a devancé le jour.</l>
           </sp>
-          <sp xml:id="III04-4" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III04-4">
             <speaker>ASSUERUS</speaker>
             <l n="647" xml:id="l647">Qu'il entre. Ses avis m'éclaireront, peut-être.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Assuerus, Aman, Hydaspe, Asaph.</head>
-          <sp xml:id="III05-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III05-1">
             <speaker>ASSUERUS</speaker>
             <l n="648" xml:id="l648">Approche, heureux appui du trône de ton maître,</l>
             <l n="649" xml:id="l649">Âme de mes conseils, et qui seul tant de fois</l>
@@ -1095,16 +1101,16 @@
             <l n="659" xml:id="l659">Ne donne point de borne à ma reconnaissance.</l>
             <l n="660" xml:id="l660">Mesure tes conseils sur ma vaste puissance.</l>
           </sp>
-          <sp xml:id="III05-2" who="AMAN">
+          <sp who="AMAN" xml:id="III05-2">
             <speaker>AMAN, tout bas.</speaker>
             <l n="661" xml:id="l661">C'est pour toi-même, Aman, que tu vas prononcer.</l>
             <l n="662" xml:id="l662">Et quel autre que toi peut-on récompenser ?</l>
           </sp>
-          <sp xml:id="III05-3" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III05-3">
             <speaker>ASSUERUS</speaker>
-            <l n="663" xml:id="l663" part="I">Que penses-tu ?</l>
+            <l n="663" part="I" xml:id="l663">Que penses-tu ?</l>
           </sp>
-          <sp xml:id="III05-4" who="AMAN">
+          <sp who="AMAN" xml:id="III05-4">
             <speaker>AMAN</speaker>
             <l part="F">Seigneur, je cherche, j'envisage</l>
             <l n="664" xml:id="l664">Des monarques persans la conduite, et l'usage.</l>
@@ -1127,7 +1133,7 @@
             <l n="681" xml:id="l681">Mortels, prosternez-vous. C'est ainsi que le roi</l>
             <l n="682" xml:id="l682">Honore le mérite, et couronne la foi.</l>
           </sp>
-          <sp xml:id="III05-5" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III05-5">
             <speaker>ASSUERUS</speaker>
             <l n="683" xml:id="l683">Je vois que la sagesse elle-même t'inspire.</l>
             <l n="684" xml:id="l684">Avec mes volontés ton sentiment conspire.</l>
@@ -1139,16 +1145,16 @@
             <l n="690" xml:id="l690">Ordonne son triomphe, et marche devant lui.</l>
             <l n="691" xml:id="l691">Que Suse par ta voix de son nom retentisse,</l>
             <l n="692" xml:id="l692">Et fais à son aspect que tout genou fléchisse.</l>
-            <l n="693" xml:id="l693" part="I">Sortez tous.</l>
+            <l n="693" part="I" xml:id="l693">Sortez tous.</l>
           </sp>
-          <sp xml:id="III05-6" who="AMAN">
+          <sp who="AMAN" xml:id="III05-6">
             <speaker>AMAN</speaker>
             <l part="M">Dieux !</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="III06-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III06-1">
             <speaker>ASSUERUS, seul.</speaker>
             <l part="F">Le prix est sans doute inouï.</l>
             <l n="694" xml:id="l694">Jamais d'un tel honneur un sujet n'a joui.</l>
@@ -1158,25 +1164,25 @@
             <l n="698" xml:id="l698">Combien Assuérus redoute d'être ingrat.</l>
             <l n="699" xml:id="l699">On verra l'innocent discerné du coupable.</l>
             <l n="700" xml:id="l700">Je n'en perdrai pas moins ce peuple abominable.</l>
-            <l n="701" xml:id="l701" part="I">Leurs crimes...</l>
+            <l n="701" part="I" xml:id="l701">Leurs crimes...</l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="III07">
           <head>SCÈNE VII. Assuerus, Esther, Élise, Thamar, Partie du Choeur.</head>
-          <stage type="entrance">Esther entre, s'appuyant sur Élise ; quatre Israélites soutiennent sa robe.</stage>
-          <sp xml:id="III07-1" who="ASSUERUS">
+          <stage>Esther entre, s'appuyant sur Élise ; quatre Israélites soutiennent sa robe.</stage>
+          <sp who="ASSUERUS" xml:id="III07-1">
             <speaker>ASSUERUS</speaker>
             <l part="F">Sans mon ordre on porte ici ses pas ?</l>
             <l n="702" xml:id="l702">Quel mortel insolent vient chercher le trépas ?</l>
             <l n="703" xml:id="l703">Gardes. C'est vous, Esther ? Quoi sans être attendue ?</l>
           </sp>
-          <sp xml:id="III07-2" who="ESTHER">
+          <sp who="ESTHER" xml:id="III07-2">
             <speaker>ESTHER</speaker>
             <l n="704" xml:id="l704">Mes filles, soutenez votre reine éperdue.</l>
-            <l n="705" xml:id="l705" part="I">Je me meurs.</l>
-            <stage type="action/fall">Elle tombe évanouie.</stage>
+            <l n="705" part="I" xml:id="l705">Je me meurs.</l>
+            <stage>Elle tombe évanouie.</stage>
           </sp>
-          <sp xml:id="III07-3" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III07-3">
             <speaker>ASSUERUS</speaker>
             <l part="F">Dieux puissants ! Quelle étrange pâleur</l>
             <l n="706" xml:id="l706">De son teint tout à coup efface la couleur !</l>
@@ -1185,17 +1191,17 @@
             <l n="709" xml:id="l709">Vivez. Le sceptre d'or, que vous tend cette main,</l>
             <l n="710" xml:id="l710">Pour vous de ma clémence est un gage certain.</l>
           </sp>
-          <sp xml:id="III07-4" who="ESTHER">
+          <sp who="ESTHER" xml:id="III07-4">
             <speaker>ESTHER</speaker>
             <l n="711" xml:id="l711">Quelle voix salutaire ordonne que je vive,</l>
             <l n="712" xml:id="l712">Et rappelle en mon sein mon âme fugitive ?</l>
           </sp>
-          <sp xml:id="III07-5" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III07-5">
             <speaker>ASSUERUS</speaker>
             <l n="713" xml:id="l713">Ne connaissez-vous pas la voix de votre époux ?</l>
             <l n="714" xml:id="l714">Encore un coup vivez, et revenez à vous.</l>
           </sp>
-          <sp xml:id="III07-6" who="ESTHER">
+          <sp who="ESTHER" xml:id="III07-6">
             <speaker>ESTHER</speaker>
             <l n="715" xml:id="l715">Seigneur, je n'ai jamais contemplé qu'avec crainte</l>
             <l n="716" xml:id="l716">L'auguste majesté sur votre front empreinte.</l>
@@ -1207,7 +1213,7 @@
             <l n="722" xml:id="l722">Soutiendrait les éclairs qui partaient de vos yeux ?</l>
             <l n="723" xml:id="l723">Ainsi du Dieu vivant la colère étincelle...</l>
           </sp>
-          <sp xml:id="III07-7" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III07-7">
             <speaker>ASSUERUS</speaker>
             <l n="724" xml:id="l724">Ô Soleil ! ô flambeaux de lumière immortelle !</l>
             <l n="725" xml:id="l725">Je me trouble moi-même, et sans frémissement</l>
@@ -1217,14 +1223,14 @@
             <l n="729" xml:id="l729">Éprouvez seulement son ardente amitié.</l>
             <l n="730" xml:id="l730">Faut-il de mes États vous donner la moitié ?</l>
           </sp>
-          <sp xml:id="III07-8" who="ESTHER">
+          <sp who="ESTHER" xml:id="III07-8">
             <speaker>ESTHER</speaker>
             <l n="731" xml:id="l731">Hé ! se peut-il qu'un roi craint de la terre entière,</l>
             <l n="732" xml:id="l732">Devant qui tout fléchit, et baise la poussière,</l>
             <l n="733" xml:id="l733">Jette sur son esclave un regard si serein,</l>
             <l n="734" xml:id="l734">Et m'offre sur son coeur un pouvoir souverain ?</l>
           </sp>
-          <sp xml:id="III07-9" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III07-9">
             <speaker>ASSUERUS</speaker>
             <l n="735" xml:id="l735">Croyez-moi, chère Esther, ce sceptre, cet empire,</l>
             <l n="736" xml:id="l736">Et ces profonds respects que la terreur inspire,</l>
@@ -1247,7 +1253,7 @@
             <l n="753" xml:id="l753">Parlez. De vos désirs le succès est certain,</l>
             <l n="754" xml:id="l754">Si ce succès dépend d'une mortelle main.</l>
           </sp>
-          <sp xml:id="III07-10" who="ESTHER">
+          <sp who="ESTHER" xml:id="III07-10">
             <speaker>ESTHER</speaker>
             <l n="755" xml:id="l755">Ô bonté, qui m'assure, autant qu'elle m'honore !</l>
             <l n="756" xml:id="l756">Un intérêt pressant veut que je vous implore.</l>
@@ -1256,11 +1262,11 @@
             <l n="759" xml:id="l759">Un mot de votre bouche, en terminant mes peines,</l>
             <l n="760" xml:id="l760">Peut rendre Esther heureuse entre toutes les reines.</l>
           </sp>
-          <sp xml:id="III07-11" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III07-11">
             <speaker>ASSUERUS</speaker>
             <l n="761" xml:id="l761">Ah ! que vous enflammez mon désir curieux !</l>
           </sp>
-          <sp xml:id="III07-12" who="ESTHER">
+          <sp who="ESTHER" xml:id="III07-12">
             <speaker>ESTHER</speaker>
             <l n="762" xml:id="l762">Seigneur, si j'ai trouvé grâce devant vos yeux,</l>
             <l n="763" xml:id="l763">Si jamais à mes voeux vous fûtes favorable,</l>
@@ -1270,20 +1276,20 @@
             <l n="767" xml:id="l767">J'oserai devant lui rompre ce grand silence,</l>
             <l n="768" xml:id="l768">Et j'ai, pour m'expliquer, besoin de sa présence.</l>
           </sp>
-          <sp xml:id="III07-13" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III07-13">
             <speaker>ASSUERUS</speaker>
             <l n="769" xml:id="l769">Dans quelle inquiétude, Esther, vous me jetez !</l>
             <l n="770" xml:id="l770">Toutefois qu'il soit fait comme vous souhaitez.</l>
-            <stage type="toward">À ceux de sa suite.</stage>
+            <stage>À ceux de sa suite.</stage>
             <l n="771" xml:id="l771">Vous, que l'on cherche Aman, et qu'on lui fasse entendre,</l>
             <l n="772" xml:id="l772">Qu'invité chez la reine il ait soin de s'y rendre.</l>
           </sp>
-          <sp xml:id="III07-14" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="III07-14">
             <speaker>HYDASPE</speaker>
             <l n="773" xml:id="l773">Les savants Chaldéens par votre ordre appelés,</l>
             <l n="774" xml:id="l774">Dans cet appartement, Seigneur, sont assemblés.</l>
           </sp>
-          <sp xml:id="III07-15" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="III07-15">
             <speaker>ASSUERUS</speaker>
             <l n="775" xml:id="l775">Princesse, un songe étrange occupe ma pensée.</l>
             <l n="776" xml:id="l776">Vous-même en leur réponse êtes intéressée.</l>
@@ -1291,17 +1297,17 @@
             <l n="778" xml:id="l778">De vos propres clartés me prêter le secours.</l>
             <l n="779" xml:id="l779">Je crains pour vous, pour moi quelque ennemi perfide.</l>
           </sp>
-          <sp xml:id="III07-16" who="ESTHER">
+          <sp who="ESTHER" xml:id="III07-16">
             <speaker>ESTHER</speaker>
             <l n="780" xml:id="l780">Suis-moi, Thamar. Et vous, troupe jeune et timide,</l>
             <l n="781" xml:id="l781">Sans craindre ici les yeux d'une profane cour,</l>
             <l n="782" xml:id="l782">À l'abri de ce trône attendez mon retour.</l>
           </sp>
         </div2>
-        <div2 xml:id="III08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="III08">
           <head>SCÈNE VIII. Élise, Partie du Choeur.</head>
-          <stage type="sing">Cette scène est partie déclamée sans chant, et partie chantée.</stage>
-          <sp xml:id="III08-1" who="ELISE">
+          <stage>Cette scène est partie déclamée sans chant, et partie chantée.</stage>
+          <sp who="ELISE" xml:id="III08-1">
             <speaker>ÉLISE</speaker>
             <l n="783" xml:id="l783">Que vous semble, mes soeurs, de l'état où nous sommes ?</l>
             <l n="784" xml:id="l784">D'Esther, d'Aman, qui le doit emporter ?</l>
@@ -1310,32 +1316,32 @@
             <l n="787" xml:id="l787">Vous avez vu quelle ardente colère</l>
             <l n="788" xml:id="l788">Allumait de ce roi le visage sévère.</l>
           </sp>
-          <sp xml:id="III08-2" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-2">
             <speaker>UNE DES ISRAELITES</speaker>
             <l n="789" xml:id="l789">Des éclairs de ses yeux l'oeil était ébloui.</l>
           </sp>
-          <sp xml:id="III08-3" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-3">
             <speaker>UNE AUTRE</speaker>
             <l n="790" xml:id="l790">Et sa voix m'a paru comme un tonnerre horrible.</l>
           </sp>
-          <sp xml:id="III08-4" who="ELISE">
+          <sp who="ELISE" xml:id="III08-4">
             <speaker>ÉLISE</speaker>
             <l n="791" xml:id="l791">Comment ce courroux si terrible</l>
             <l n="792" xml:id="l792">En un moment s'est-il évanoui ?</l>
           </sp>
-          <sp xml:id="III08-5" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-5">
             <speaker>UNE DES ISRAELITES, chante.</speaker>
             <l n="793" xml:id="l793">Un moment a changé ce courage inflexible.</l>
             <l n="794" xml:id="l794">Le lion rugissant est un agneau paisible.</l>
             <l n="795" xml:id="l795">Dieu, notre Dieu sans doute a versé dans son coeur</l>
             <l n="796" xml:id="l796">Cet esprit de douceur.</l>
           </sp>
-          <sp xml:id="III08-6" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-6">
             <speaker>LE CHOEUR, chante.</speaker>
             <l n="797" xml:id="l797">Dieu, notre Dieu sans doute a versé dans son coeur</l>
             <l n="798" xml:id="l798">Cet esprit de douceur.</l>
           </sp>
-          <sp xml:id="III08-7" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-7">
             <speaker>LA MÊME ISRAELITE, chante.</speaker>
             <l n="799" xml:id="l799">Tel qu'un ruisseau docile</l>
             <l n="800" xml:id="l800">Obéit à la main qui détourne son cours,</l>
@@ -1344,31 +1350,31 @@
             <l n="803" xml:id="l803">Dieu, de nos volontés arbitre souverain,</l>
             <l n="804" xml:id="l804">Le coeur des rois est ainsi dans ta main.</l>
           </sp>
-          <sp xml:id="III08-8" who="ELISE">
+          <sp who="ELISE" xml:id="III08-8">
             <speaker>ÉLISE</speaker>
             <l n="805" xml:id="l805">Ah ! Que je crains, mes soeurs, les funestes nuages</l>
             <l n="806" xml:id="l806">Qui de ce prince obscurcissent les yeux !</l>
             <l n="807" xml:id="l807">Comme il est aveuglé du culte de ses dieux !</l>
           </sp>
-          <sp xml:id="III08-9" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-9">
             <speaker>UNE DES ISRAELITES</speaker>
             <l n="808" xml:id="l808">Il n'atteste jamais que leurs noms odieux.</l>
           </sp>
-          <sp xml:id="III08-10" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-10">
             <speaker>UNE AUTRE</speaker>
             <l n="809" xml:id="l809">Aux feux inanimés dont se parent les cieux,</l>
             <l n="810" xml:id="l810">Il rend de profanes hommages.</l>
           </sp>
-          <sp xml:id="III08-11" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-11">
             <speaker>UNE AUTRE</speaker>
             <l n="811" xml:id="l811">Tout son palais est plein de leurs images.</l>
           </sp>
-          <sp xml:id="III08-12" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-12">
             <speaker>LE CHOEUR, chante.</speaker>
             <l n="812" xml:id="l812">Malheureux ! Vous quittez le maître des humains,</l>
             <l n="813" xml:id="l813">Pour adorer l'ouvrage de vos mains.</l>
           </sp>
-          <sp xml:id="III08-13" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-13">
             <speaker>UNE ISRAÈLITE, chante.</speaker>
             <l n="814" xml:id="l814">Dieu d'Israël, dissipe enfin cette ombre.</l>
             <l n="815" xml:id="l815">Des larmes de tes saints quand seras-tu touché ?</l>
@@ -1377,12 +1383,12 @@
             <l n="818" xml:id="l818">Dieu d'Israël, dissipe enfin cette ombre.</l>
             <l n="819" xml:id="l819">Jusqu'à quand seras-tu caché ?</l>
           </sp>
-          <sp xml:id="III08-14" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-14">
             <speaker>UNE DES PLUS JEUNES ISRAELITES</speaker>
             <l n="820" xml:id="l820">Parlons plus bas, mes soeurs. Ciel ! Si quelque infidèle</l>
             <l n="821" xml:id="l821">Écoutant nos discours nous allait déceler !</l>
           </sp>
-          <sp xml:id="III08-15" who="ELISE">
+          <sp who="ELISE" xml:id="III08-15">
             <speaker>ÉLISE</speaker>
             <l n="822" xml:id="l822">Quoi ! Fille d'Abraham, une crainte mortelle</l>
             <l n="823" xml:id="l823">Semble déjà vous faire chanceler ?</l>
@@ -1391,7 +1397,7 @@
             <l n="826" xml:id="l826">À blasphémer le nom du Tout-Puissant</l>
             <l n="827" xml:id="l827">Voulait forcer votre bouche timide ?</l>
           </sp>
-          <sp xml:id="III08-16" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-16">
             <speaker>UNE AUTRE ISRAELITE</speaker>
             <l n="828" xml:id="l828">Peut-être Assuérus frémissant de courroux,</l>
             <l n="829" xml:id="l829">Si nous ne courbons les genoux</l>
@@ -1399,21 +1405,21 @@
             <l n="831" xml:id="l831">Commandera qu'on nous immole.</l>
             <l n="832" xml:id="l832">Chère soeur, que choisirez-vous ?</l>
           </sp>
-          <sp xml:id="III08-17" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-17">
             <speaker>LA JEUNE ISRAÈLITE</speaker>
             <l n="833" xml:id="l833">Moi ! Je pourrais trahir le Dieu que j'aime ?</l>
             <l n="834" xml:id="l834">J'adorerais un dieu sans force, et sans vertu,</l>
             <l n="835" xml:id="l835">Reste d'un tronc par les vents abattu,</l>
             <l n="836" xml:id="l836">Qui ne peut se sauver lui-même ?</l>
           </sp>
-          <sp xml:id="III08-18" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-18">
             <speaker>LE CHOEUR, chante.</speaker>
             <l n="837" xml:id="l837">Dieux impuissants, dieux sourds, tous ceux qui vous implorent,</l>
             <l n="838" xml:id="l838">Ne seront jamais entendus.</l>
             <l n="839" xml:id="l839">Que les démons, et ceux qui les adorent,</l>
             <l n="840" xml:id="l840">Soient à jamais détruits et confondus.</l>
           </sp>
-          <sp xml:id="III08-19" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-19">
             <speaker>UNE ISRAÈLITE, chante.</speaker>
             <l n="841" xml:id="l841">Que ma bouche, et mon coeur, et tout ce que je suis</l>
             <l n="842" xml:id="l842">Rendent honneur au Dieu qui m'a donné la vie.</l>
@@ -1423,15 +1429,15 @@
             <l n="846" xml:id="l846">Que ma bouche et mon coeur, et tout ce que je suis,</l>
             <l n="847" xml:id="l847">Rendent honneur au Dieu qui m'a donné la vie.</l>
           </sp>
-          <sp xml:id="III08-20" who="ELISE">
+          <sp who="ELISE" xml:id="III08-20">
             <speaker>ÉLISE</speaker>
             <l n="848" xml:id="l848">Je n'admirai jamais la gloire de l'impie.</l>
           </sp>
-          <sp xml:id="III08-21" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-21">
             <speaker>UNE AUTRE ISRAELITE</speaker>
             <l n="849" xml:id="l849">Au bonheur du méchant qu'une autre porte envie.</l>
           </sp>
-          <sp xml:id="III08-22" who="ELISE">
+          <sp who="ELISE" xml:id="III08-22">
             <speaker>ÉLISE</speaker>
             <l n="850" xml:id="l850">Tous ses jours paraissent charmants.</l>
             <l n="851" xml:id="l851">L'or éclate en ses vêtements.</l>
@@ -1440,36 +1446,36 @@
             <l n="854" xml:id="l854">Il s'endort, il s'éveille au son des instruments.</l>
             <l n="855" xml:id="l855">Son coeur nage dans la mollesse.</l>
           </sp>
-          <sp xml:id="III08-23" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-23">
             <speaker>UNE AUTRE ISRAELITE</speaker>
             <l n="856" xml:id="l856">Pour comble de prospérité,</l>
             <l n="857" xml:id="l857">Il espère revivre en sa postérité :</l>
             <l n="858" xml:id="l858">Et d'enfants à sa table une riante troupe</l>
             <l n="859" xml:id="l859">Semble boire avec lui la joie à pleine coupe.</l>
-            <stage type="sing">Tout ce reste est chanté.</stage>
+            <stage>Tout ce reste est chanté.</stage>
           </sp>
-          <sp xml:id="III08-24" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-24">
             <speaker>LE CHOEUR</speaker>
             <l n="860" xml:id="l860">Heureux, dit-on, le peuple florissant,</l>
             <l n="861" xml:id="l861">Sur qui ces biens coulent en abondance !</l>
             <l n="862" xml:id="l862">Plus heureux le peuple innocent,</l>
             <l n="863" xml:id="l863">Qui dans le Dieu du ciel a mis sa confiance !</l>
           </sp>
-          <sp xml:id="III08-25" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-25">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="864" xml:id="l864">Pour contenter ses frivoles désirs,</l>
             <l n="865" xml:id="l865">L'homme insensé vainement se consume.</l>
             <l n="866" xml:id="l866">Il trouve l'amertume</l>
             <l n="867" xml:id="l867">Au milieu des plaisirs.</l>
           </sp>
-          <sp xml:id="III08-26" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-26">
             <speaker>UNE AUTRE, seule.</speaker>
             <l n="868" xml:id="l868">Le bonheur de l'impie est toujours agité.</l>
             <l n="869" xml:id="l869">Il erre à la merci de sa propre inconstance.</l>
             <l n="870" xml:id="l870">Ne cherchons la félicité,</l>
             <l n="871" xml:id="l871">Que dans la paix de l'innocence.</l>
           </sp>
-          <sp xml:id="III08-27" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-27">
             <speaker>LA MÊME, avec une autre.</speaker>
             <l n="872" xml:id="l872">Ô douce paix !</l>
             <l n="873" xml:id="l873">Ô lumière éternelle !</l>
@@ -1479,7 +1485,7 @@
             <l n="877" xml:id="l877">Ô lumière éternelle !</l>
             <l n="878" xml:id="l878">Heureux le coeur, qui ne te perd jamais !</l>
           </sp>
-          <sp xml:id="III08-28" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-28">
             <speaker>LE CHOEUR</speaker>
             <l n="879" xml:id="l879">Ô douce paix !</l>
             <l n="880" xml:id="l880">Ô lumière éternelle !</l>
@@ -1487,38 +1493,38 @@
             <l n="882" xml:id="l882">Ô douce paix !</l>
             <l n="883" xml:id="l883">Heureux le coeur qui ne te perd jamais !</l>
           </sp>
-          <sp xml:id="III08-29" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-29">
             <speaker>LA MÊME, seule.</speaker>
             <l n="884" xml:id="l884">Nulle paix pour l'impie. Il la cherche : elle fuit ;</l>
             <l n="885" xml:id="l885">Et le calme en son coeur ne trouve point de place.</l>
             <l n="886" xml:id="l886">Le glaive au-dehors le poursuit.</l>
             <l n="887" xml:id="l887">Le remords au dedans le glace.</l>
           </sp>
-          <sp xml:id="III08-30" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-30">
             <speaker>UNE AUTRE</speaker>
             <l n="888" xml:id="l888">La gloire des méchants en un moment s'éteint.</l>
             <l n="889" xml:id="l889">L'affreux tombeau pour jamais les dévore.</l>
             <l n="890" xml:id="l890">Il n'en est pas ainsi de celui qui te craint,</l>
             <l n="891" xml:id="l891">Il renaîtra, mon Dieu, plus brillant que l'aurore.</l>
           </sp>
-          <sp xml:id="III08-31" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-31">
             <speaker>LE CHOEUR</speaker>
             <l n="892" xml:id="l892">Ô douce paix !</l>
             <l n="893" xml:id="l893">Heureux le coeur qui ne te perd jamais !</l>
           </sp>
-          <sp xml:id="III08-32" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="III08-32">
             <speaker>ÉLISE, sans chanter.</speaker>
             <l n="894" xml:id="l894">Mes soeurs, j 'entends du bruit dans la chambre prochaine.</l>
             <l n="895" xml:id="l895">On nous appelle, allons rejoindre notre reine.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE III</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Aman, Zarès.</head>
-          <stage type="decor">Le théâtre représente les jardins d'Esther et un des côtés du salon où se fait le festin.</stage>
-          <sp xml:id="IV01-1" who="ZARES">
+          <stage>Le théâtre représente les jardins d'Esther et un des côtés du salon où se fait le festin.</stage>
+          <sp who="ZARES" xml:id="IV01-1">
             <speaker>ZARES</speaker>
             <l n="896" xml:id="l896">C'est donc ici d'Esther le superbe jardin,</l>
             <l n="897" xml:id="l897">Et ce salon pompeux est le lieu du festin.</l>
@@ -1539,7 +1545,7 @@
             <l n="912" xml:id="l912">Souvent avec prudence un outrage enduré</l>
             <l n="913" xml:id="l913">Aux honneurs les plus hauts a servi de degré.</l>
           </sp>
-          <sp xml:id="IV01-2" who="AMAN">
+          <sp who="AMAN" xml:id="IV01-2">
             <speaker>AMAN</speaker>
             <l n="914" xml:id="l914">Ô douleur ! ô supplice affreux à la pensée !</l>
             <l n="915" xml:id="l915">Ô honte, qui jamais ne peut être effacée !</l>
@@ -1556,7 +1562,7 @@
             <l n="926" xml:id="l926">Que pour me faire mieux sentir ta tyrannie,</l>
             <l n="927" xml:id="l927">Et m'accabler enfin de plus d'ignominie.</l>
           </sp>
-          <sp xml:id="IV01-3" who="ZARES">
+          <sp who="ZARES" xml:id="IV01-3">
             <speaker>ZARES</speaker>
             <l n="928" xml:id="l928">Pourquoi juger si mal de son intention ?</l>
             <l n="929" xml:id="l929">Il croit récompenser une bonne action.</l>
@@ -1567,7 +1573,7 @@
             <l n="934" xml:id="l934">Vous êtes après lui le premier de l'empire.</l>
             <l n="935" xml:id="l935">Sait-il toute l'horreur que ce Juif vous inspire ?</l>
           </sp>
-          <sp xml:id="IV01-4" who="AMAN">
+          <sp who="AMAN" xml:id="IV01-4">
             <speaker>AMAN</speaker>
             <l n="936" xml:id="l936">Il sait qu'il me doit tout, et que pour sa grandeur</l>
             <l n="937" xml:id="l937">J'ai foulé sous les pieds remords, crainte, pudeur ;</l>
@@ -1578,7 +1584,7 @@
             <l n="942" xml:id="l942">Et pour prix de ma vie à leur haine exposée,</l>
             <l n="943" xml:id="l943">Le barbare aujourd'hui m'expose à leur risée ?</l>
           </sp>
-          <sp xml:id="IV01-5" who="ZARES">
+          <sp who="ZARES" xml:id="IV01-5">
             <speaker>ZARES</speaker>
             <l n="944" xml:id="l944">Seigneur, nous sommes seuls. Que sert de se flatter ?</l>
             <l n="945" xml:id="l945">Ce zèle que pour lui vous fîtes éclater,</l>
@@ -1613,22 +1619,22 @@
             <l n="974" xml:id="l974">La mer la plus terrible et la plus orageuse</l>
             <l n="975" xml:id="l975">Est plus sûre pour nous que cette cour trompeuse.</l>
             <l n="976" xml:id="l976">Mais à grands pas vers vous je vois quelqu'un marcher.</l>
-            <l n="977" xml:id="l977" part="I">C'est Hydaspe.</l>
+            <l n="977" part="I" xml:id="l977">C'est Hydaspe.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Aman, Zarès, Hydaspe.</head>
-          <sp xml:id="IV02-1" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="IV02-1">
             <speaker>HYDASPE</speaker>
             <l part="F">Seigneur, je courais vous chercher.</l>
             <l n="978" xml:id="l978">Votre absence en ces lieux suspend toute la joie ;</l>
             <l n="979" xml:id="l979">Et pour vous y conduire Assuérus m'envoie.</l>
           </sp>
-          <sp xml:id="IV02-2" who="AMAN">
+          <sp who="AMAN" xml:id="IV02-2">
             <speaker>AMAN</speaker>
             <l n="980" xml:id="l980">Et Mardochée est-il aussi de ce festin ?</l>
           </sp>
-          <sp xml:id="IV02-3" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="IV02-3">
             <speaker>HYDASPE</speaker>
             <l n="981" xml:id="l981">À la table d'Esther portez-vous ce chagrin ?</l>
             <l n="982" xml:id="l982">Quoi, toujours de ce Juif l'image vous désole ?</l>
@@ -1640,11 +1646,11 @@
             <l n="988" xml:id="l988">Je me trompe, ou vos voeux par Esther secondés</l>
             <l n="989" xml:id="l989">Obtiendront plus encor que vous ne demandez.</l>
           </sp>
-          <sp xml:id="IV02-4" who="AMAN">
+          <sp who="AMAN" xml:id="IV02-4">
             <speaker>AMAN</speaker>
             <l n="990" xml:id="l990">Croirai-je le bonheur, que ta bouche m'annonce ?</l>
           </sp>
-          <sp xml:id="IV02-5" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="IV02-5">
             <speaker>HYDASPE</speaker>
             <l n="991" xml:id="l991">J'ai des savants devins entendu la réponse.</l>
             <l n="992" xml:id="l992">Ils disent que la main d'un perfide étranger</l>
@@ -1652,7 +1658,7 @@
             <l n="994" xml:id="l994">Et le roi, qui ne sait où trouver le coupable,</l>
             <l n="995" xml:id="l995">N'impute qu'aux seuls Juifs ce projet détestable.</l>
           </sp>
-          <sp xml:id="IV02-6" who="AMAN">
+          <sp who="AMAN" xml:id="IV02-6">
             <speaker>AMAN</speaker>
             <l n="996" xml:id="l996">Oui, ce sont, cher ami, des monstres furieux.</l>
             <l n="997" xml:id="l997">Il faut craindre surtout leur chef audacieux.</l>
@@ -1660,81 +1666,81 @@
             <l n="999" xml:id="l999">Et l'on n'en peut trop tôt délivrer la nature.</l>
             <l n="1000" xml:id="l1000">Ah ! je respire enfin. Chère Zarès, adieu.</l>
           </sp>
-          <sp xml:id="IV02-7" who="HYDASPE">
+          <sp who="HYDASPE" xml:id="IV02-7">
             <speaker>HYDASPE</speaker>
             <l n="1001" xml:id="l1001">Les compagnes d'Esther s'avancent vers ce lieu.</l>
             <l n="1002" xml:id="l1002">Sans doute leur concert va commencer la fête.</l>
             <l n="1003" xml:id="l1003">Entrez, et recevez l'honneur qu'on vous apprête.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Élise, Le Choeur.</head>
-          <stage type="action">Ceci se récite sans chant.</stage>
-          <sp xml:id="IV03-1" who="CHOEUR">
+          <stage>Ceci se récite sans chant.</stage>
+          <sp who="CHOEUR" xml:id="IV03-1">
             <speaker>UNE DES ISRAÉLITES</speaker>
-            <l n="1004" xml:id="l1004" part="I">C'est Aman.</l>
+            <l n="1004" part="I" xml:id="l1004">C'est Aman.</l>
           </sp>
-          <sp xml:id="IV03-2" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-2">
             <speaker>UNE AUTRE</speaker>
             <l part="F">C'est lui-même et j'en frémis, ma soeur.</l>
           </sp>
-          <sp xml:id="IV03-3" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-3">
             <speaker>LA PREMIÈRE</speaker>
             <l n="1005" xml:id="l1005">Mon coeur de crainte et d'horreur se resserre.</l>
           </sp>
-          <sp xml:id="IV03-4" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-4">
             <speaker>L'AUTRE</speaker>
             <l n="1006" xml:id="l1006">C'est d'Israël le superbe oppresseur.</l>
           </sp>
-          <sp xml:id="IV03-5" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-5">
             <speaker>LA PREMIÈRE</speaker>
             <l n="1007" xml:id="l1007">C'est celui qui trouble la terre.</l>
           </sp>
-          <sp xml:id="IV03-6" who="ELISE">
+          <sp who="ELISE" xml:id="IV03-6">
             <speaker>ÉLISE</speaker>
             <l n="1008" xml:id="l1008">Peut-on en le voyant ne le connaître pas ?</l>
             <l n="1009" xml:id="l1009">L'orgueil et le dédain sont peints sur son visage.</l>
           </sp>
-          <sp xml:id="IV03-7" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-7">
             <speaker>UNE ISRAÉLITE</speaker>
             <l n="1010" xml:id="l1010">On lit dans ses regards sa fureur et sa rage.</l>
           </sp>
-          <sp xml:id="IV03-8" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-8">
             <speaker>UNE AUTRE</speaker>
             <l n="1011" xml:id="l1011">Je croyais voir marcher la mort devant ses pas.</l>
           </sp>
-          <sp xml:id="IV03-9" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-9">
             <speaker>UNE DES PLUS JEUNES</speaker>
             <l n="1012" xml:id="l1012">Je ne sais si ce tigre a reconnu sa proie.</l>
             <l n="1013" xml:id="l1013">Mais en nous regardant, mes soeurs, il m'a semblé</l>
             <l n="1014" xml:id="l1014">Qu'il avait dans les yeux une barbare joie,</l>
             <l n="1015" xml:id="l1015">Dont tout mon sang est encore troublé.</l>
           </sp>
-          <sp xml:id="IV03-10" who="ELISE">
+          <sp who="ELISE" xml:id="IV03-10">
             <speaker>ÉLISE</speaker>
             <l n="1016" xml:id="l1016">Que ce nouvel honneur va croître son audace !</l>
             <l n="1017" xml:id="l1017">Je le vois, mes soeurs, je le vois.</l>
             <l n="1018" xml:id="l1018">À la table d'Esther l'insolent près du roi</l>
             <l n="1019" xml:id="l1019">A déjà pris sa place.</l>
           </sp>
-          <sp xml:id="IV03-11" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-11">
             <speaker>UNE DES ISRAÈLITES</speaker>
             <l n="1020" xml:id="l1020">Ministres du festin, de grâce dites-nous,</l>
             <l n="1021" xml:id="l1021">Quels mets à ce cruel, quel vin préparez-vous ?</l>
           </sp>
-          <sp xml:id="IV03-12" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-12">
             <speaker>UNE AUTRE</speaker>
-            <l n="1022" xml:id="l1022" part="I">Le sang de l'orphelin,</l>
+            <l n="1022" part="I" xml:id="l1022">Le sang de l'orphelin,</l>
           </sp>
-          <sp xml:id="IV03-13" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-13">
             <speaker>UNE TROISIÈME</speaker>
             <l part="F">Les pleurs des misérables,</l>
           </sp>
-          <sp xml:id="IV03-14" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-14">
             <speaker>LE SECONDE</speaker>
             <l n="1023" xml:id="l1023">Sont ses mets les plus agréables.</l>
           </sp>
-          <sp xml:id="IV03-15" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-15">
             <speaker>LA TROISIÈME</speaker>
             <l n="1024" xml:id="l1024">C'est son breuvage le plus doux.</l>
             <l n="1025" xml:id="l1025">Chères soeurs, suspendez la douleur qui vous presse,</l>
@@ -1743,24 +1749,24 @@
             <l n="1028" xml:id="l1028">Comme autrefois David par ses accords touchants</l>
             <l n="1029" xml:id="l1029">Calmait d'un roi jaloux la sauvage tristesse.</l>
           </sp>
-          <sp xml:id="IV03-16" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-16">
             <speaker>UNE ISRAÉLITE</speaker>
-            <stage type="sing">Tout le reste de cette scène est chanté.</stage>
+            <stage>Tout le reste de cette scène est chanté.</stage>
             <l n="1030" xml:id="l1030">Que le peuple est heureux,</l>
             <l n="1031" xml:id="l1031">Lorsqu'un roi généreux,</l>
             <l n="1032" xml:id="l1032">Craint dans tout l'univers, veut encore qu'on l'aime !</l>
             <l n="1033" xml:id="l1033">Heureux le peuple ! Heureux le roi lui-même !</l>
           </sp>
-          <sp xml:id="IV03-17" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-17">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="1034" xml:id="l1034">Ô repos ! Ô tranquillité !</l>
             <l n="1035" xml:id="l1035">Ô d'un parfait bonheur assurance éternelle,</l>
             <l n="1036" xml:id="l1036">Quand la suprême autorité</l>
             <l n="1037" xml:id="l1037">Dans ses conseils a toujours auprès d'elle,</l>
             <l n="1038" xml:id="l1038">La justice, et la vérité !</l>
-            <stage type="sing">Ces quatre stances sont chantées alternativement par une voix seule et par tout le choeur.</stage>
+            <stage>Ces quatre stances sont chantées alternativement par une voix seule et par tout le choeur.</stage>
           </sp>
-          <sp xml:id="IV03-18" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-18">
             <speaker>UNE ISRAÈLITE</speaker>
             <lg type="stances">
               <lg n="1">
@@ -1789,14 +1795,14 @@
               </lg>
             </lg>
           </sp>
-          <sp xml:id="IV03-19" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-19">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="1055" xml:id="l1055">D'un souffle l'aquilon écarte les nuages,</l>
             <l n="1056" xml:id="l1056">Et chasse au loin la foudre et les orages.</l>
             <l n="1057" xml:id="l1057">Un roi sage, ennemi du langage menteur,</l>
             <l n="1058" xml:id="l1058">Écarte d'un regard le perfide imposteur.</l>
           </sp>
-          <sp xml:id="IV03-20" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-20">
             <speaker>UNE AUTRE</speaker>
             <l n="1059" xml:id="l1059">J'admire un roi victorieux,</l>
             <l n="1060" xml:id="l1060">Que sa valeur conduit triomphant en tous lieux.</l>
@@ -1805,20 +1811,20 @@
             <l n="1063" xml:id="l1063">Ne souffre point que le pauvre gémisse,</l>
             <l n="1064" xml:id="l1064">Est le plus beau présent des cieux.</l>
           </sp>
-          <sp xml:id="IV03-21" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-21">
             <speaker>UNE AUTRE</speaker>
             <l n="1065" xml:id="l1065">La veuve en sa défense espère.</l>
           </sp>
-          <sp xml:id="IV03-22" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-22">
             <speaker>UNE AUTRE</speaker>
             <l n="1066" xml:id="l1066">De l'orphelin il est le père.</l>
           </sp>
-          <sp xml:id="IV03-23" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-23">
             <speaker>TOUTES ENSEMBLE</speaker>
             <l n="1067" xml:id="l1067">Et les larmes du juste implorant son appui</l>
             <l n="1068" xml:id="l1068">Sont précieuses devant lui.</l>
           </sp>
-          <sp xml:id="IV03-24" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-24">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="1069" xml:id="l1069">Détourne, Roi puissant, détourne tes oreilles</l>
             <l n="1070" xml:id="l1070">De tout conseil barbare et mensonger.</l>
@@ -1828,7 +1834,7 @@
             <l n="1074" xml:id="l1074">Détourne, Roi puissant, détourne tes oreilles</l>
             <l n="1075" xml:id="l1075">De tout conseil barbare et mensonger.</l>
           </sp>
-          <sp xml:id="IV03-25" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV03-25">
             <speaker>UNE AUTRE</speaker>
             <l n="1076" xml:id="l1076">Ainsi puisse sous toi trembler la terre entière.</l>
             <l n="1077" xml:id="l1077">Ainsi puisse à jamais contre tes ennemis</l>
@@ -1842,9 +1848,9 @@
             <l n="1085" xml:id="l1085">Qu'il en sorte par plus de mille.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Assuerus, Esther, Aman, Élise, Le Choeur.</head>
-          <sp xml:id="IV04-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV04-1">
             <speaker>ASSUERUS, à Esther.</speaker>
             <l n="1086" xml:id="l1086">Oui, vos moindres discours ont des grâces secrètes.</l>
             <l n="1087" xml:id="l1087">Une noble pudeur à tout ce que vous faites</l>
@@ -1857,54 +1863,54 @@
             <l n="1094" xml:id="l1094">Dussiez-vous, je l'ai dit, et veux bien le redire,</l>
             <l n="1095" xml:id="l1095">Demander la moitié de ce puissant empire.</l>
           </sp>
-          <sp xml:id="IV04-2" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV04-2">
             <speaker>ESTHER</speaker>
             <l n="1096" xml:id="l1096">Je ne m'égare point dans ces vastes désirs.</l>
             <l n="1097" xml:id="l1097">Mais puisqu'il faut enfin expliquer mes soupirs,</l>
             <l n="1098" xml:id="l1098">Puisque mon roi lui-même à parler me convie ;</l>
-            <stage type="action/fall">Elle se jette aux pieds du roi.</stage>
+            <stage>Elle se jette aux pieds du roi.</stage>
             <l n="1099" xml:id="l1099">J'ose vous implorer et pour ma propre vie,</l>
             <l n="1100" xml:id="l1100">Et pour les tristes jours d'un peuple infortuné,</l>
             <l n="1101" xml:id="l1101">Qu'à périr avec moi vous avez condamné.</l>
           </sp>
-          <sp xml:id="IV04-3" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV04-3">
             <speaker>ASSUERUS, la relevant.</speaker>
             <l n="1102" xml:id="l1102">À périr ? Vous ? Quel peuple ? Et quel est ce mystère ?</l>
           </sp>
-          <sp xml:id="IV04-4" who="AMAN">
+          <sp who="AMAN" xml:id="IV04-4">
             <speaker>AMAN, tout bas.</speaker>
-            <l n="1103" xml:id="l1103" part="I">Je tremble.</l>
+            <l n="1103" part="I" xml:id="l1103">Je tremble.</l>
           </sp>
-          <sp xml:id="IV04-5" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV04-5">
             <speaker>ESTHER</speaker>
             <l part="F">Esther, Seigneur, eut un Juif pour son père.</l>
             <l n="1104" xml:id="l1104">De vos ordres sanglants vous savez la rigueur.</l>
           </sp>
-          <sp xml:id="IV04-6" who="AMAN">
+          <sp who="AMAN" xml:id="IV04-6">
             <speaker>AMAN</speaker>
-            <l n="1105" xml:id="l1105" part="I">Ah, dieux !</l>
+            <l n="1105" part="I" xml:id="l1105">Ah, dieux !</l>
           </sp>
-          <sp xml:id="IV04-7" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV04-7">
             <speaker>ASSUERUS</speaker>
             <l part="F">Ah ! De quel coup me percez-vous le coeur ?</l>
             <l n="1106" xml:id="l1106">Vous la fille d'un Juif ? Hé quoi ? Tout ce que j'aime,</l>
             <l n="1107" xml:id="l1107">Cette Esther, l'innocence, et la sagesse même,</l>
             <l n="1108" xml:id="l1108">Que je croyais du ciel les plus chères amours,</l>
             <l n="1109" xml:id="l1109">Dans cette source impure aurait puisé ses jours ?</l>
-            <l n="1110" xml:id="l1110" part="I">Malheureux !</l>
+            <l n="1110" part="I" xml:id="l1110">Malheureux !</l>
           </sp>
-          <sp xml:id="IV04-8" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV04-8">
             <speaker>ESTHER</speaker>
             <l part="F">Vous pourrez rejeter ma prière.</l>
             <l n="1111" xml:id="l1111">Mais je demande au moins que pour grâce dernière,</l>
             <l n="1112" xml:id="l1112">Jusqu'à la fin, Seigneur, vous m'entendiez parler ;</l>
             <l n="1113" xml:id="l1113">Et que surtout Aman n'ose point me troubler.</l>
           </sp>
-          <sp xml:id="IV04-9" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV04-9">
             <speaker>ASSUERUS</speaker>
-            <l n="1114" xml:id="l1114" part="I">Parlez.</l>
+            <l n="1114" part="I" xml:id="l1114">Parlez.</l>
           </sp>
-          <sp xml:id="IV04-10" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV04-10">
             <speaker>ESTHER</speaker>
             <l part="F">Ô Dieu ! confonds l'audace et l'imposture.</l>
             <l n="1115" xml:id="l1115">Ces Juifs, dont vous voulez délivrer la nature,</l>
@@ -1952,17 +1958,17 @@
             <l n="1157" xml:id="l1157">Est venu dans ces lieux souffler la cruauté.</l>
             <l n="1158" xml:id="l1158">Un ministre ennemi de votre propre gloire...</l>
           </sp>
-          <sp xml:id="IV04-11" who="AMAN">
+          <sp who="AMAN" xml:id="IV04-11">
             <speaker>AMAN</speaker>
             <l n="1159" xml:id="l1159">De votre gloire ? Moi ? Ciel ! le pourriez-vous croire ?</l>
-            <l n="1160" xml:id="l1160" part="I">Moi, qui n'ai d'autre objet, ni d'autre dieu...</l>
+            <l n="1160" part="I" xml:id="l1160">Moi, qui n'ai d'autre objet, ni d'autre dieu...</l>
           </sp>
-          <sp xml:id="IV04-12" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV04-12">
             <speaker>ASSUERUS</speaker>
             <l part="F">Tais-toi.</l>
             <l n="1161" xml:id="l1161">Oses-tu donc parler sans l'ordre de ton roi ?</l>
           </sp>
-          <sp xml:id="IV04-13" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV04-13">
             <speaker>ESTHER</speaker>
             <l n="1162" xml:id="l1162">Notre ennemi cruel devant vous se déclare.</l>
             <l n="1163" xml:id="l1163">C'est lui. C'est ce ministre infidèle et barbare,</l>
@@ -1996,11 +2002,11 @@
             <l n="1189" xml:id="l1189">De deux traîtres tout prêts à vous percer le sein.</l>
             <l n="1190" xml:id="l1190">Hélas ! Ce Juif jadis m'adopta pour sa fille.</l>
           </sp>
-          <sp xml:id="IV04-14" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV04-14">
             <speaker>ASSUERUS</speaker>
-            <l n="1191" xml:id="l1191" part="I">Mardochée ?</l>
+            <l n="1191" part="I" xml:id="l1191">Mardochée ?</l>
           </sp>
-          <sp xml:id="IV04-15" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV04-15">
             <speaker>ESTHER</speaker>
             <l part="F">Il restait seul de notre famille.</l>
             <l n="1192" xml:id="l1192">Mon père était son frère. Il descend, comme moi,</l>
@@ -2018,23 +2024,23 @@
             <l n="1204" xml:id="l1204">Des portes du palais par son ordre arraché,</l>
             <l n="1205" xml:id="l1205">Couvert de votre pourpre y doit être attaché.</l>
           </sp>
-          <sp xml:id="IV04-16" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV04-16">
             <speaker>ASSUERUS</speaker>
             <l n="1206" xml:id="l1206">Quel jour mêlé d'horreur vient effrayer mon âme ?</l>
             <l n="1207" xml:id="l1207">Tout mon sang de colère et de honte s'enflamme.</l>
             <l n="1208" xml:id="l1208">J'étais donc le jouet... Ciel, daigne m'éclairer.</l>
             <l n="1209" xml:id="l1209">Un moment sans témoins cherchons à respirer.</l>
-            <stage type="exit">Le roi s'éloigne.</stage>
+            <stage>Le roi s'éloigne.</stage>
             <l n="1210" xml:id="l1210">Appelez Mardochée, il faut aussi l'entendre.</l>
           </sp>
-          <sp xml:id="IV04-17" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV04-17">
             <speaker>UNE ISRAÈLITE</speaker>
             <l n="1211" xml:id="l1211">Vérité, que j'implore, achève de descendre.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Esther, Aman, Le Choeur.</head>
-          <sp xml:id="IV05-1" who="AMAN">
+          <sp who="AMAN" xml:id="IV05-1">
             <speaker>AMAN, à Esther.</speaker>
             <l n="1212" xml:id="l1212">D'un juste étonnement je demeure frappé.</l>
             <l n="1213" xml:id="l1213">Les ennemis des Juifs m'ont trahi, m'ont trompé.</l>
@@ -2048,9 +2054,9 @@
             <l n="1221" xml:id="l1221">Parlez. Vos ennemis aussitôt massacrés,</l>
             <l n="1222" xml:id="l1222">Victimes de la foi que ma bouche vous jure,</l>
             <l n="1223" xml:id="l1223">De ma fatale erreur répareront l'injure.</l>
-            <l n="1224" xml:id="l1224" part="I">Quel sang demandez-vous ?</l>
+            <l n="1224" part="I" xml:id="l1224">Quel sang demandez-vous ?</l>
           </sp>
-          <sp xml:id="IV05-2" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV05-2">
             <speaker>ESTHER</speaker>
             <l part="F">Va, traître, laisse-moi.</l>
             <l n="1225" xml:id="l1225">Les Juifs n'attendent rien d'un méchant tel que toi.</l>
@@ -2059,22 +2065,22 @@
             <l n="1228" xml:id="l1228">Bientôt son juste arrêt te sera prononcé.</l>
             <l n="1229" xml:id="l1229">Tremble. Son jour approche, et ton règne est passé.</l>
           </sp>
-          <sp xml:id="IV05-3" who="AMAN">
+          <sp who="AMAN" xml:id="IV05-3">
             <speaker>AMAN</speaker>
             <l n="1230" xml:id="l1230">Oui, ce Dieu, je l'avoue, est un Dieu redoutable.</l>
             <l n="1231" xml:id="l1231">Mais veut-il que l'on garde une haine implacable ?</l>
             <l n="1232" xml:id="l1232">C'en est fait. Mon orgueil est forcé de plier.</l>
             <l n="1233" xml:id="l1233">L'inexorable Aman est réduit à prier.</l>
-            <stage type="action/fall">Il se jette à ses pieds.</stage>
+            <stage>Il se jette à ses pieds.</stage>
             <l n="1234" xml:id="l1234">Par le salut des Juifs, par ces pieds que j'embrasse,</l>
             <l n="1235" xml:id="l1235">Par ce sage vieillard, l'honneur de votre race,</l>
             <l n="1236" xml:id="l1236">Daignez d'un roi terrible apaiser le courroux.</l>
             <l n="1237" xml:id="l1237">Sauvez Aman, qui tremble à vos sacrés genoux.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="IV06">
           <head>SCÈNE VI. Assuerus, Esther, Aman, Élise, Gardes, Le Choeur.</head>
-          <sp xml:id="IV06-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV06-1">
             <speaker>ASSUERUS</speaker>
             <l n="1238" xml:id="l1238">Quoi ? Le traître sur vous porte ses mains hardies ?</l>
             <l n="1239" xml:id="l1239">Ah ! dans ses yeux confus je lis ses perfidies ;</l>
@@ -2084,12 +2090,12 @@
             <l n="1243" xml:id="l1243">Et que devant sa porte, au lieu de Mardochée,</l>
             <l n="1244" xml:id="l1244">Apaisant par sa mort et la terre et les cieux,</l>
             <l n="1245" xml:id="l1245">De mes peuples vengés il repaisse les yeux.</l>
-            <stage type="exit">Aman est emmené par les gardes.</stage>
+            <stage>Aman est emmené par les gardes.</stage>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="IV07">
           <head>SCÈNE VII. Assuerus, Esther, Mardochée, Élise, Le Choeur.</head>
-          <sp xml:id="IV07-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV07-1">
             <speaker>ASSUERUS, continue en s'adressant à Mardochée.</speaker>
             <l n="1246" xml:id="l1246">Mortel chéri du ciel, mon salut et ma joie,</l>
             <l n="1247" xml:id="l1247">Aux conseils des méchants ton roi n'est plus en proie.</l>
@@ -2107,43 +2113,43 @@
             <l n="1259" xml:id="l1259">Et qu'à jamais mon nom vive dans leur mémoire.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="IV08">
           <head>SCÈNE VIII. Assuerus, Esther, Mardochée, Asaph, Élise, Le Choeur.</head>
-          <sp xml:id="IV08-1" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV08-1">
             <speaker>ASSUERUS</speaker>
-            <l n="1260" xml:id="l1260" part="I">Que veut Asaph ?</l>
+            <l n="1260" part="I" xml:id="l1260">Que veut Asaph ?</l>
           </sp>
-          <sp xml:id="IV08-2" who="ASAPH">
+          <sp who="ASAPH" xml:id="IV08-2">
             <speaker>ASAPH</speaker>
             <l part="F">Seigneur, le traître est expiré,</l>
             <l n="1261" xml:id="l1261">Par le peuple en fureur à moitié déchiré.</l>
             <l n="1262" xml:id="l1262">On traîne, on va donner en spectacle funeste</l>
             <l n="1263" xml:id="l1263">De son corps tout sanglant le misérable reste.</l>
           </sp>
-          <sp xml:id="IV08-3" who="MARD">
+          <sp who="MARDOCHEE" xml:id="IV08-3">
             <speaker>MARDOCHEE</speaker>
             <l n="1264" xml:id="l1264">Roi, qu'à jamais le ciel prenne soin de vos jours.</l>
             <l n="1265" xml:id="l1265">Le péril des Juifs presse, et veut un prompt secours.</l>
           </sp>
-          <sp xml:id="IV08-4" who="ASSUERUS">
+          <sp who="ASSUERUS" xml:id="IV08-4">
             <speaker>ASSUERUS</speaker>
             <l n="1266" xml:id="l1266">Oui, je t'entends. Allons par des ordres contraires</l>
             <l n="1267" xml:id="l1267">Révoquer d'un méchant les ordres sanguinaires.</l>
           </sp>
-          <sp xml:id="IV08-5" who="ESTHER">
+          <sp who="ESTHER" xml:id="IV08-5">
             <speaker>ESTHER</speaker>
             <l n="1268" xml:id="l1268">Ô Dieu ! Par quelle route inconnue aux mortels,</l>
             <l n="1269" xml:id="l1269">Ta sagesse conduit ses desseins éternels !</l>
           </sp>
         </div2>
-        <div2 xml:id="IV09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="IV09">
           <head>SCÈNE DERNIÈRE. Le Choeur.</head>
-          <sp xml:id="IV09-1" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-1">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="1270" xml:id="l1270">Dieu fait triompher l'innocence,</l>
             <l n="1271" xml:id="l1271">Chantons, célébrons sa puissance.</l>
           </sp>
-          <sp xml:id="IV09-2" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-2">
             <speaker>UNE ISRAÈLITE</speaker>
             <l n="1272" xml:id="l1272">Il a vu contre nous les méchants s'assembler,</l>
             <l n="1273" xml:id="l1273">Et notre sang prêt à couler.</l>
@@ -2152,7 +2158,7 @@
             <l n="1276" xml:id="l1276">L'homme superbe est renversé.</l>
             <l n="1277" xml:id="l1277">Ses propres flèches l'ont percé.</l>
           </sp>
-          <sp xml:id="IV09-3" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-3">
             <speaker>UNE AUTRE</speaker>
             <l n="1278" xml:id="l1278">J'ai vu l'impie adoré sur la terre.</l>
             <l n="1279" xml:id="l1279">Pareil au cèdre, il cachait dans les cieux</l>
@@ -2161,7 +2167,7 @@
             <l n="1282" xml:id="l1282">Foulait aux pieds ses ennemis vaincus.</l>
             <l n="1283" xml:id="l1283">Je n'ai fait que passer, il n'était déjà plus.</l>
           </sp>
-          <sp xml:id="IV09-4" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-4">
             <speaker>UNE AUTRE</speaker>
             <l n="1284" xml:id="l1284">On peut des plus grands rois surprendre la justice.</l>
             <l n="1285" xml:id="l1285">Incapables de tromper,</l>
@@ -2171,46 +2177,46 @@
             <l n="1289" xml:id="l1289">La bassesse et la malice,</l>
             <l n="1290" xml:id="l1290">Qu'il ne sent point en lui.</l>
           </sp>
-          <sp xml:id="IV09-5" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-5">
             <speaker>UNE AUTRE</speaker>
             <l n="1291" xml:id="l1291">Comment s'est calmé l'orage ?</l>
           </sp>
-          <sp xml:id="IV09-6" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-6">
             <speaker>UNE AUTRE</speaker>
             <l n="1292" xml:id="l1292">Quelle main salutaire a chassé le nuage ?</l>
           </sp>
-          <sp xml:id="IV09-7" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-7">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="1293" xml:id="l1293">L'aimable Esther a fait ce grand ouvrage.</l>
           </sp>
-          <sp xml:id="IV09-8" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-8">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="1294" xml:id="l1294">De l'amour de son Dieu son coeur s'est embrasé.</l>
             <l n="1295" xml:id="l1295">Au péril d'une mort funeste</l>
             <l n="1296" xml:id="l1296">Son zèle ardent s'est exposé.</l>
             <l n="1297" xml:id="l1297">Elle a parlé, le ciel a fait le reste.</l>
           </sp>
-          <sp xml:id="IV09-9" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-9">
             <speaker>DEUX ISRAELITES</speaker>
             <l n="1298" xml:id="l1298">Esther a triomphé des filles des Persans.</l>
             <l n="1299" xml:id="l1299">La nature et le ciel à l'envi l'ont ornée.</l>
           </sp>
-          <sp xml:id="IV09-10" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-10">
             <speaker>L'UNE DES DEUX</speaker>
             <l n="1300" xml:id="l1300">Tout ressent de ses yeux les charmes innocents.</l>
             <l n="1301" xml:id="l1301">Jamais tant de beauté fut-elle couronnée ?</l>
           </sp>
-          <sp xml:id="IV09-11" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-11">
             <speaker>L'AUTRE</speaker>
             <l n="1302" xml:id="l1302">Les charmes de son coeur sont encor plus puissants.</l>
             <l n="1303" xml:id="l1303">Jamais tant de vertu fut-elle couronnée ?</l>
           </sp>
-          <sp xml:id="IV09-12" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-12">
             <speaker>TOUTES DEUX, ensemble.</speaker>
             <l n="1304" xml:id="l1304">Esther a triomphé des filles des Persans.</l>
             <l n="1305" xml:id="l1305">La nature et le ciel à l'envi l'ont ornée.</l>
           </sp>
-          <sp xml:id="IV09-13" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-13">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="1306" xml:id="l1306">Ton Dieu n'est plus irrité.</l>
             <l n="1307" xml:id="l1307">Réjouis-toi, Sion, et sors de la poussière.</l>
@@ -2223,7 +2229,7 @@
             <l n="1314" xml:id="l1314">Repassez les monts et les mers.</l>
             <l n="1315" xml:id="l1315">Rassemblez-vous des bouts de l'univers.</l>
           </sp>
-          <sp xml:id="IV09-14" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-14">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="1316" xml:id="l1316">Rompez vos fers,</l>
             <l n="1317" xml:id="l1317">Tribus captives.</l>
@@ -2231,20 +2237,20 @@
             <l n="1319" xml:id="l1319">Repassez les monts et les mers.</l>
             <l n="1320" xml:id="l1320">Rassemblez-vous des bouts de l'univers.</l>
           </sp>
-          <sp xml:id="IV09-15" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-15">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="1321" xml:id="l1321">Je reverrai ces campagnes si chères.</l>
           </sp>
-          <sp xml:id="IV09-16" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-16">
             <speaker>UNE AUTRE</speaker>
             <l n="1322" xml:id="l1322">J'irai pleurer au tombeau de mes pères.</l>
           </sp>
-          <sp xml:id="IV09-17" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-17">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="1323" xml:id="l1323">Repassez les monts et les mers.</l>
             <l n="1324" xml:id="l1324">Rassemblez-vous des bouts de l'univers.</l>
           </sp>
-          <sp xml:id="IV09-18" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-18">
             <speaker>UNE ISRAÈLITE, seule.</speaker>
             <l n="1325" xml:id="l1325">Relevez, relevez les superbes portiques</l>
             <l n="1326" xml:id="l1326">Du temple où notre Dieu se plaît d'être adoré.</l>
@@ -2253,14 +2259,14 @@
             <l n="1329" xml:id="l1329">Liban, dépouille-toi de tes cèdres antiques.</l>
             <l n="1330" xml:id="l1330">Prêtres sacrés, préparez vos cantiques.</l>
           </sp>
-          <sp xml:id="IV09-19" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-19">
             <speaker>UNE AUTRE</speaker>
             <l n="1331" xml:id="l1331">Dieu descend, et revient habiter parmi nous.</l>
             <l n="1332" xml:id="l1332">Terre, frémis d'allégresse et de crainte.</l>
             <l n="1333" xml:id="l1333">Et vous, sous sa majesté sainte,</l>
             <l n="1334" xml:id="l1334">Cieux, abaissez-vous.</l>
           </sp>
-          <sp xml:id="IV09-20" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-20">
             <speaker>UNE AUTRE</speaker>
             <l n="1335" xml:id="l1335">Que le Seigneur est bon ! que son joug est aimable !</l>
             <l n="1336" xml:id="l1336">Heureux, qui dès l'enfance en connaît la douceur !</l>
@@ -2270,7 +2276,7 @@
             <l n="1340" xml:id="l1340">Que le Seigneur est bon ! que son joug est aimable !</l>
             <l n="1341" xml:id="l1341">Heureux, qui dès l'enfance en connaît la douceur !</l>
           </sp>
-          <sp xml:id="IV09-21" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-21">
             <speaker>UNE AUTRE</speaker>
             <l n="1342" xml:id="l1342">Il s'apaise, il pardonne.</l>
             <l n="1343" xml:id="l1343">Du coeur ingrat qui l'abandonne</l>
@@ -2281,19 +2287,19 @@
             <l n="1348" xml:id="l1348">Une mère a moins de tendresse.</l>
             <l n="1349" xml:id="l1349">Ah ! qui peut avec lui partager notre amour ?</l>
           </sp>
-          <sp xml:id="IV09-22" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-22">
             <speaker>TROIS ISRAELITES</speaker>
             <l n="1350" xml:id="l1350">Il nous fait remporter une illustre victoire.</l>
           </sp>
-          <sp xml:id="IV09-23" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-23">
             <speaker>L'UNE DES TROIS</speaker>
             <l n="1351" xml:id="l1351">Il nous a révélé sa gloire.</l>
           </sp>
-          <sp xml:id="IV09-24" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-24">
             <speaker>TOUTES TROIS ENSEMBLE</speaker>
             <l n="1352" xml:id="l1352">Ah ! qui peut avec lui partager notre amour ?</l>
           </sp>
-          <sp xml:id="IV09-25" who="CHOEUR">
+          <sp who="CHOEUR" xml:id="IV09-25">
             <speaker>TOUT LE CHOEUR</speaker>
             <l n="1353" xml:id="l1353">Que son nom soit béni. Que son nom soit chanté.</l>
             <l n="1354" xml:id="l1354">Que l'on célèbre ses ouvrages,</l>
@@ -2303,26 +2309,26 @@
         </div2>
       </div1>
     </body>
+    <back>
+      <div1 n="1" type="annexe">
+        <head>ANNEXES</head>
+        <div2 n="2" type="oeuvres">
+          <head>Liste des oeuvres théâtrales de Jean Racine</head>
+          <p>Le corpus théâtral de Jean Racine se compose de douze pièces : onze tragédies et une comédie. Cette production se partage dans le temps en deux parties : la première et principale se situe entre les débuts avec "La Thébaïde" (1664) et le la polémique de "Phèdre" (1677), la seconde concerne les deux tragédies religieuses d'Esther (1689) et d'Athalie (1691) commandées par Mme de Maintenon. Les deux premières tragédies ont été représentées par le troupe de Molière au théâtre du Palais-Royal puis Racine confia ses pièces à la troupe de l'Hôtel de Bourgogne et se brouilla avec Molière. Son unique comédie fut représentée à l'Hôtel Guénégaud et ses dernières tragédies au Collège de Saint-Cyr jouées par les pensionnaires devant Louis XIV. Les sujets des tragédies sont tirés de la mythologie grecque (La Thébaïde, Andromaque, Iphigénie, Phèdre), de l'histoire antique grecque (Alexandre) ou romaine (Britannicus, Bérénice, Mithridate), ou de l'histoire récente proche-orientale (Bajazet). Esther et Athalie sont inspirées des livres éponymes de la Bible. La comédie des Plaideurs ironise sur la justice de son temps.</p>
+          <p>La Thébaïde ou les rère ennemis (1664), représentée pour le première fois le 20 juin 1664 au Théâtre du Palais-Royal</p>
+          <p>Alexandre le Grand (1665), représentée pour le première fois le 4 décembre 1665 au Théâtre du Palais Royal.</p>
+          <p>Andromaque (1667), représentée pour le première fois le 17 novembre 1667 à l'Hôtel de Bourgogne.</p>
+          <p>Les Plaideurs (1668), représentée pour le première fois le 28 mai à l'Hôtel Guénégaud.</p>
+          <p>Britannicus (1669), représentée pour le première fois le 13 décembre 1669 à l'Hôtel de Bourgogne.</p>
+          <p>Bérénice (1670), représentée pour le première fois le à l'Hôtel de Bourgogne.</p>
+          <p>Mithridate (1673), représentée pour le première fois le à l'Hôtel de Bourgogne.</p>
+          <p>Bajazet (1672), représentée pour le première fois le 1er janvier 1672 à l'Hôtel de Bourgogne.</p>
+          <p>Iphigénie, représentée pour le première fois le 18 août 1674 à l'Hôtel de Bourgogne.</p>
+          <p>Phèdre (1677), représentée pour le première fois le 1er janvier 1677 à l'Hôtel de Bourgogne.</p>
+          <p>Esther, représentée pour le première fois le 26 janvier 1689 au Collège de Saint-Cyr.</p>
+          <p>Athalie, représentée pour le première fois le 17 novembre 1691 au Collège de Saint-Cyr.</p>
+        </div2>
+      </div1>
+    </back>
   </text>
-  <back>
-    <div1 type="annexe" n="1">
-      <head>ANNEXES</head>
-      <div2 type="oeuvres" n="2">
-        <head>Liste des oeuvres théâtrales de Jean Racine</head>
-        <p>Le corpus théâtral de Jean Racine se compose de douze pièces : onze tragédies et une comédie. Cette production se partage dans le temps en deux parties : la première et principale se situe entre les débuts avec "La Thébaïde" (1664) et le la polémique de "Phèdre" (1677), la seconde concerne les deux tragédies religieuses d'Esther (1689) et d'Athalie (1691) commandées par Mme de Maintenon. Les deux premières tragédies ont été représentées par le troupe de Molière au théâtre du Palais-Royal puis Racine confia ses pièces à la troupe de l'Hôtel de Bourgogne et se brouilla avec Molière. Son unique comédie fut représentée à l'Hôtel Guénégaud et ses dernières tragédies au Collège de Saint-Cyr jouées par les pensionnaires devant Louis XIV. Les sujets des tragédies sont tirés de la mythologie  grecque (La Thébaïde, Andromaque, Iphigénie, Phèdre), de l'histoire antique grecque (Alexandre) ou romaine (Britannicus, Bérénice, Mithridate), ou de l'histoire récente proche-orientale (Bajazet). Esther et Athalie sont inspirées des livres éponymes de la Bible. La comédie des Plaideurs ironise sur la justice de son temps.</p>
-        <p>La Thébaïde ou les rère ennemis (1664), représentée pour le première fois le 20 juin 1664 au Théâtre du Palais-Royal</p>
-        <p>Alexandre le Grand (1665), représentée pour le première fois le 4 décembre 1665 au Théâtre du Palais Royal.</p>
-        <p>Andromaque (1667), représentée pour le première fois le 17 novembre 1667 à l'Hôtel de Bourgogne.</p>
-        <p>Les Plaideurs (1668), représentée pour le première fois le 28 mai à l'Hôtel Guénégaud.</p>
-        <p>Britannicus (1669), représentée pour le première fois le 13 décembre 1669 à l'Hôtel de Bourgogne.</p>
-        <p>Bérénice (1670), représentée pour le première fois le à l'Hôtel de Bourgogne.</p>
-        <p>Mithridate (1673), représentée pour le première fois le à l'Hôtel de Bourgogne.</p>
-        <p>Bajazet (1672), représentée pour le première fois le 1er janvier 1672 à l'Hôtel de Bourgogne.</p>
-        <p>Iphigénie, représentée pour le première fois le 18 août 1674 à l'Hôtel de Bourgogne.</p>
-        <p>Phèdre (1677), représentée pour le première fois le 1er janvier 1677 à l'Hôtel de Bourgogne.</p>
-        <p>Esther, représentée pour le première fois le 26 janvier 1689 au Collège de Saint-Cyr.</p>
-        <p>Athalie, représentée pour le première fois le 17 novembre 1691 au Collège de Saint-Cyr.</p>
-      </div2>
-    </div1>
-  </back>
 </TEI>

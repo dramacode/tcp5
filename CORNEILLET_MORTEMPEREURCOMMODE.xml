@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>LA MORT DE L'EMPEREUR COMMODE, TRAGÉDIE</title>
-        <author born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" academie="1685">CORNEILLE, Thomas</author>
+        <author academie="1685" born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" key="Corneille, Thomas (1625-1709)">CORNEILLE, Thomas</author>
         <date>1657</date>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <p>publié par Paul FIEVRE, Septembre 2009</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -39,7 +40,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -51,7 +52,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1657">1657</docDate>
-      <docAuthor id="CORNEILLE, Thomas" bio="corneillet">Thomas Corneille</docAuthor>
+      <docAuthor bio="corneillet" id="CORNEILLE, Thomas">Thomas Corneille</docAuthor>
       <docImprint>
         <privilege id="1666-11-25">25 novembre 1666</privilege>
         <acheveImprime id="1667-11-20">Achevé d'imprimer le 20 novembre 1667.</acheveImprime>
@@ -62,23 +63,23 @@
       </performance>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="COMMODE" id="COMMODE" sex="1" type="H" statut="empereur" age="A" stat_amour="néant">COMMODE</role>, empereur de Rome.</castItem>
-        <castItem><role xml:id="ELECTUS" id="ELECTUS" sex="1" type="H" statut="aristocrate" age="A" stat_amour="amoureux">ELECTUS</role>, amant de Marcia.</castItem>
-        <castItem><role xml:id="LAETUS" id="LAETUS" sex="1" type="H" statut="aristocrate" age="A" stat_amour="amoureux">LAETUS</role>, amant d'Helvie.</castItem>
-        <castItem><role xml:id="MARCIA" id="MARCIA" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">MARCIA</role>, fille de Pertinax qui succéda à Commode.</castItem>
-        <castItem><role xml:id="HELVIE" id="HELVIE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">HELVIE</role>, fille de Pertinax qui succéda à Commode.</castItem>
-        <castItem><role xml:id="FLAVIAN" id="FLAVIAN" sex="1" type="H" statut="capitaine" age="A" stat_amour="néant">FLAVIAN</role>, capitaine des gardes de l'Empereur.</castItem>
-        <castItem><role xml:id="LUCIE" id="LUCIE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">LUCIE</role>, confidente de Marcia.</castItem>
-        <castItem><role xml:id="JULIE" id="JULIE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">JULIE</role>, confidente d'Helvie.</castItem>
+        <castItem><role age="A" civil="M" id="COMMODE" rend="male" stat_amour="néant" statut="empereur" type="H" xml:id="COMMODE">COMMODE</role>, empereur de Rome.</castItem>
+        <castItem><role age="A" civil="M" id="ELECTUS" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="ELECTUS">ELECTUS</role>, amant de Marcia.</castItem>
+        <castItem><role age="A" civil="M" id="LAETUS" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="LAETUS">LAETUS</role>, amant d'Helvie.</castItem>
+        <castItem><role age="A" civil="F" id="MARCIA" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="MARCIA">MARCIA</role>, fille de Pertinax qui succéda à Commode.</castItem>
+        <castItem><role age="A" civil="F" id="HELVIE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="HELVIE">HELVIE</role>, fille de Pertinax qui succéda à Commode.</castItem>
+        <castItem><role age="A" civil="M" id="FLAVIAN" rend="male" stat_amour="néant" statut="capitaine" type="H" xml:id="FLAVIAN">FLAVIAN</role>, capitaine des gardes de l'Empereur.</castItem>
+        <castItem><role age="A" civil="F" id="LUCIE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="LUCIE">LUCIE</role>, confidente de Marcia.</castItem>
+        <castItem><role age="A" civil="F" id="JULIE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="JULIE">JULIE</role>, confidente d'Helvie.</castItem>
       </castList>
-      <set location="Rome" country="Italie" periode="IIème" link="">La scène est à Rome.</set>
+      <set country="Italie" link="" location="Rome" periode="IIème">La scène est à Rome.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Marcia, Helvie.</head>
-          <sp xml:id="I01-1" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-1">
             <speaker>HELVIE.</speaker>
             <l n="1" xml:id="l1">Je l'avouerai, ma soeur ; c'est vous faire justice </l>
             <l n="2" xml:id="l2">Que de vous élever au rang d'Impératrice, </l>
@@ -97,7 +98,7 @@
             <l n="15" xml:id="l15">Et dans les cruautés qu'il nous fait éprouver, </l>
             <l n="16" xml:id="l16">Qui peut souffrir son choix, semble les approuver. </l>
           </sp>
-          <sp xml:id="I01-2" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-2">
             <speaker>MARCIA.</speaker>
             <l n="17" xml:id="l17">C'en est trop, et j'ai lieu d'accuser votre zèle </l>
             <l n="18" xml:id="l18">S'il condamne la gloire où le Destin m'appelle, </l>
@@ -108,11 +109,11 @@
             <l n="23" xml:id="l23">Et peu dans les plus noirs verraient assez d'horreur </l>
             <l n="24" xml:id="l24">Pour y refuser place auprès d'un Empereur. </l>
           </sp>
-          <sp xml:id="I01-3" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-3">
             <speaker>HELVIE.</speaker>
             <l n="25" xml:id="l25">D'une main odieuse il pourrait me déplaire. </l>
           </sp>
-          <sp xml:id="I01-4" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-4">
             <speaker>MARCIA.</speaker>
             <l n="26" xml:id="l26">Vous faites vanité d'une vertu sévère ; </l>
             <l n="27" xml:id="l27">Mais pour vous jusqu'ici quelque appas qu'elle ait eu, </l>
@@ -122,14 +123,14 @@
             <l n="31" xml:id="l31">Quelque sentier qu'elle offre, on prend le moins douteux, </l>
             <l n="32" xml:id="l32">Et qui peut s'élever ne croit rien de honteux. </l>
           </sp>
-          <sp xml:id="I01-5" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-5">
             <speaker>HELVIE.</speaker>
             <l n="33" xml:id="l33">Je n'ai pas de la Cour assez d'expérience </l>
             <l n="34" xml:id="l34">Pour en avoir sitôt pénétré la science, </l>
             <l n="35" xml:id="l35">Et n'y songeant qu'à fuir de lâches intérêts, </l>
             <l n="36" xml:id="l36">J'en ignore aisément les plus nobles secrets. </l>
           </sp>
-          <sp xml:id="I01-6" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-6">
             <speaker>MARCIA.</speaker>
             <l n="37" xml:id="l37">Je sais que le défaut d'une haute naissance </l>
             <l n="38" xml:id="l38">Du rang que nous tenons nous ôtait l'espérance, </l>
@@ -148,14 +149,14 @@
             <l n="51" xml:id="l51">Et de ces vieux Amis resté seul aujourd'hui, </l>
             <l n="52" xml:id="l52">C'est le zèle de tous qu'il récompense en lui. </l>
           </sp>
-          <sp xml:id="I01-7" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-7">
             <speaker>HELVIE.</speaker>
             <l n="53" xml:id="l53">Soit qu'il ait craint le Peuple, ou respecté son âge, </l>
             <l n="54" xml:id="l54">Dites qu'il le seul qu'ait épargné sa rage, </l>
             <l n="55" xml:id="l55">Et qu'au premier avis contraire à ses souhaits, </l>
             <l n="56" xml:id="l56">Pour le perdre sans bruit il le tient au Palais. </l>
           </sp>
-          <sp xml:id="I01-8" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-8">
             <speaker>MARCIA.</speaker>
             <l n="57" xml:id="l57">Mais, ma soeur, si telle est sa lâche tyrannie, </l>
             <l n="58" xml:id="l58">Qu'à qui peut lui déplaire il en coûte la vie, </l>
@@ -164,11 +165,11 @@
             <l n="61" xml:id="l61">Et ne pas m'exposer par une vaine audace </l>
             <l n="62" xml:id="l62">À le voir sur un Père étendre sa disgrâce. </l>
           </sp>
-          <sp xml:id="I01-9" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-9">
             <speaker>HELVIE.</speaker>
             <l n="63" xml:id="l63">J'aurais tort de combattre un motif si pieux. </l>
           </sp>
-          <sp xml:id="I01-10" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-10">
             <speaker>MARCIA.</speaker>
             <l n="64" xml:id="l64">Et bien, si vous voulez, il n'est qu'ambitieux ; </l>
             <l n="65" xml:id="l65">Mais quoi qu'on en présume, au moins j'ai l'avantage, </l>
@@ -184,35 +185,35 @@
             <l n="75" xml:id="l75">Et peut-être à mon tour sur ce farouche esprit, </l>
             <l n="76" xml:id="l76">Si je tiens même rang, j'aurai même crédit. </l>
           </sp>
-          <sp xml:id="I01-11" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-11">
             <speaker>HELVIE.</speaker>
             <l n="77" xml:id="l77">En effet, sa fureur au meurtre toujours prête </l>
             <l n="78" xml:id="l78">Des meilleurs Citoyens n'a pas proscrit la tête, </l>
             <l n="79" xml:id="l79">Et nous n'avons pas vu ce cruel Empereur </l>
             <l n="80" xml:id="l80">Tremper dès lors ses mains dans le sang de sa soeur ? </l>
           </sp>
-          <sp xml:id="I01-12" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-12">
             <speaker>MARCIA.</speaker>
             <l n="81" xml:id="l81">De cette indigne soeur l'orgueilleuse manie </l>
             <l n="82" xml:id="l82">D'un injuste attentat fut justement punie. </l>
             <l n="83" xml:id="l83">Lucilla conspirant crût trop sa passion, </l>
             <l n="84" xml:id="l84">Et sa mort était due à son ambition. </l>
           </sp>
-          <sp xml:id="I01-13" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-13">
             <speaker>HELVIE.</speaker>
             <l n="85" xml:id="l85">Ce sont belles couleurs pour fuir un juste blâme ; </l>
             <l n="86" xml:id="l86">Mais qui perd une soeur peut bien perdre sa Femme, </l>
             <l n="87" xml:id="l87">Et sur quelques soupçons, si j'en crois un bruit sourd, </l>
             <l n="88" xml:id="l88">L'Impératrice même eut un destin bien court. </l>
           </sp>
-          <sp xml:id="I01-14" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-14">
             <speaker>MARCIA.</speaker>
             <l n="89" xml:id="l89">Sur ces soupçons, ma soeur, vous poussez loin le vôtre ; </l>
             <l n="90" xml:id="l90">Mais le destin d'autrui ne règle pas le nôtre, </l>
             <l n="91" xml:id="l91">Et fût, le précipice ouvert de toutes parts, </l>
             <l n="92" xml:id="l92">Il est beau de périr au Trône des Césars.</l>
           </sp>
-          <sp xml:id="I01-15" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-15">
             <speaker>HELVIE.</speaker>
             <l n="93" xml:id="l93">Ce grand titre pour lui n'est plus qu'une ombre vaine. </l>
             <l n="94" xml:id="l94">Tel un Gladiateur il descend dans l'Arène, </l>
@@ -220,13 +221,13 @@
             <l n="96" xml:id="l96">Dans ce vil équipage il veut sacrifier. </l>
             <l n="97" xml:id="l97">Avec sa lâche Troupe il doit aller au Temple ? </l>
           </sp>
-          <sp xml:id="I01-16" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-16">
             <speaker>MARCIA.</speaker>
             <l n="98" xml:id="l98">Je lui fis voir dès hier ce dessein sans exemple, </l>
             <l n="99" xml:id="l99">Mais comme en son pouvoir il en trouve l'aveu, </l>
             <l n="100" xml:id="l100">Qui veut le partager doit le combattre peu. </l>
           </sp>
-          <sp xml:id="I01-17" who="HELVIE">
+          <sp who="HELVIE" xml:id="I01-17">
             <speaker>HELVIE.</speaker>
             <l n="101" xml:id="l101">Au moins si je tenais cette gloire si chère, </l>
             <l n="102" xml:id="l102">Dans son retardement j'aurais peine à me taire, </l>
@@ -236,7 +237,7 @@
             <l n="106" xml:id="l106">Sur l'offre de ses voeux on vous tient trop crédule ; </l>
             <l n="107" xml:id="l107">Sa foi de sa constance est un faible garant. </l>
           </sp>
-          <sp xml:id="I01-18" who="MARCIA">
+          <sp who="MARCIA" xml:id="I01-18">
             <speaker>MARCIA.</speaker>
             <l n="108" xml:id="l108">Électus m'en répond par les soins qu'il me rend, </l>
             <l n="109" xml:id="l109">Et s'empresserait moins à les faire paraître, </l>
@@ -253,46 +254,46 @@
             <l n="120" xml:id="l120">Adieu, je vais savoir ce qu'il aura promis. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Helvie,  Julie. </head>
-          <sp xml:id="I02-1" who="JULIE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Helvie, Julie. </head>
+          <sp who="JULIE" xml:id="I02-1">
             <speaker>JULIE.</speaker>
             <l n="121" xml:id="l121">Madame, tout d'un coup quelle est cette tristesse ? </l>
           </sp>
-          <sp xml:id="I02-2" who="HELVIE">
+          <sp who="HELVIE" xml:id="I02-2">
             <speaker>HELVIE.</speaker>
-            <l n="122" xml:id="l122" part="I">Hélas ! </l>
+            <l n="122" part="I" xml:id="l122">Hélas ! </l>
           </sp>
-          <sp xml:id="I02-3" who="JULIE">
+          <sp who="JULIE" xml:id="I02-3">
             <speaker>JULIE.</speaker>
             <l part="M">Vous soupirez ? </l>
           </sp>
-          <sp xml:id="I02-4" who="HELVIE">
+          <sp who="HELVIE" xml:id="I02-4">
             <speaker>HELVIE.</speaker>
             <l part="F">Épargne ma faiblesse, </l>
             <l n="123" xml:id="l123">Et ne me force point à trahir un secret, </l>
             <l n="124" xml:id="l124">À qui je n'ai donné ce soupir qu'à regret. </l>
           </sp>
-          <sp xml:id="I02-5" who="JULIE">
+          <sp who="JULIE" xml:id="I02-5">
             <speaker>JULIE.</speaker>
             <l n="125" xml:id="l125">S'il faut pour l'Empereur en croire votre haine, </l>
             <l n="126" xml:id="l126">L'hymen de Marcia n'est pas ce qui vous gêne, </l>
             <l n="127" xml:id="l127">Et vous l'en plaignez trop, pour voir d'un oeil jaloux </l>
             <l n="128" xml:id="l128">Que l'éclat de son choix ne tombe pas sur vous ; </l>
             <l n="129" xml:id="l129">Mais dans un noir chagrin votre âme ensevelie </l>
-            <l n="130" xml:id="l130" part="I">Quand le nom de Laetus... </l>
+            <l n="130" part="I" xml:id="l130">Quand le nom de Laetus... </l>
           </sp>
-          <sp xml:id="I02-6" who="HELVIE">
+          <sp who="HELVIE" xml:id="I02-6">
             <speaker>HELVIE.</speaker>
             <l part="F">Ah, cruelle Julie! </l>
             <l n="131" xml:id="l131">Si tu vois que son nom étonne ma vertu, </l>
             <l n="132" xml:id="l132">Qu'il la fait chanceler, pourquoi le nommes-tu ? </l>
           </sp>
-          <sp xml:id="I02-7" who="JULIE">
+          <sp who="JULIE" xml:id="I02-7">
             <speaker>JULIE.</speaker>
             <l n="133" xml:id="l133">Si j'avais su prévoir qu'il eût dû vous déplaire... </l>
           </sp>
-          <sp xml:id="I02-8" who="HELVIE">
+          <sp who="HELVIE" xml:id="I02-8">
             <speaker>HELVIE.</speaker>
             <l n="134" xml:id="l134">Après ce que tu sais je n'ai plus rien à taire, </l>
             <l n="135" xml:id="l135">Et ton adresse en vain cherche à dissimuler </l>
@@ -302,11 +303,11 @@
             <l n="139" xml:id="l139">Hé, qui n'a pas encore appris jusqu'à ce jour </l>
             <l n="140" xml:id="l140">Qu'un soupir de tendresse est un soupir d'amour ? </l>
           </sp>
-          <sp xml:id="I02-9" who="JULIE">
+          <sp who="JULIE" xml:id="I02-9">
             <speaker>JULIE.</speaker>
-            <l n="141" xml:id="l141" part="I">Quoi, vous aimez Laetus? </l>
+            <l n="141" part="I" xml:id="l141">Quoi, vous aimez Laetus? </l>
           </sp>
-          <sp xml:id="I02-10" who="HELVIE">
+          <sp who="HELVIE" xml:id="I02-10">
             <speaker>HELVIE.</speaker>
             <l part="F">Oui, j'avoue à ma honte, </l>
             <l n="142" xml:id="l142">Que malgré moi je cède au feu qui me surmonte ; </l>
@@ -329,14 +330,14 @@
             <l n="159" xml:id="l159">Et son respect pour moi qu'il n'ose enfin trahir, </l>
             <l n="160" xml:id="l160">Aux ordres du Tyran le force d'obéir. </l>
           </sp>
-          <sp xml:id="I02-11" who="JULIE">
+          <sp who="JULIE" xml:id="I02-11">
             <speaker>JULIE.</speaker>
             <l n="161" xml:id="l161">Il est vrai que sa mort, et la vôtre peut-être, </l>
             <l n="162" xml:id="l162">Eût suivi le mépris qu'il en eût fait paraître ; </l>
             <l n="163" xml:id="l163">Mais l'amour qui sur vous prenait tant de pouvoir, </l>
             <l n="164" xml:id="l164">S'est du moins refroidi par le manque d'espoir ? </l>
           </sp>
-          <sp xml:id="I02-12" who="HELVIE">
+          <sp who="HELVIE" xml:id="I02-12">
             <speaker>HELVIE.</speaker>
             <l n="165" xml:id="l165">Ah, que tu conçois peu dans de si nobles flammes </l>
             <l n="166" xml:id="l166">Ce que c'est que d'aimer parmi les belles âmes ! </l>
@@ -351,19 +352,19 @@
             <l n="175" xml:id="l175">Et quand un fier obstacle en vient troubler le cours, </l>
             <l n="176" xml:id="l176">On soupire, on se plaint, mais on aime toujours. </l>
           </sp>
-          <sp xml:id="I02-13" who="JULIE">
+          <sp who="JULIE" xml:id="I02-13">
             <speaker>JULIE.</speaker>
             <l n="177" xml:id="l177">Et dans ces sentiments d'une entière constance, </l>
             <l n="178" xml:id="l178">Voyez-vous qu'en effet Laetus... Mais il s'avance. </l>
           </sp>
-          <sp xml:id="I02-14" who="HELVIE">
+          <sp who="HELVIE" xml:id="I02-14">
             <speaker>HELVIE.</speaker>
             <l n="179" xml:id="l179">C'est lui-même. Ah, Julie, éloignons-nous d'ici. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Laetus, Helvie, Julie.</head>
-          <sp xml:id="I03-1" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-1">
             <speaker>LAETUS.</speaker>
             <l n="180" xml:id="l180">Quoi, Madame, est-ce moi que vous fuyez ainsi, </l>
             <l n="181" xml:id="l181">Et tandis que mon coeur, ennemi de la feinte, </l>
@@ -371,7 +372,7 @@
             <l n="183" xml:id="l183">Le vôtre dans mes maux prend-il si peu de part, </l>
             <l n="184" xml:id="l184">Que vous me refusiez la douceur d'un regard ? </l>
           </sp>
-          <sp xml:id="I03-2" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-2">
             <speaker>HELVIE.</speaker>
             <l n="185" xml:id="l185">Ah, Laetus, dans l'état où je me vois réduite, </l>
             <l n="186" xml:id="l186">Qu'avec peu de raison vous blâmez ma conduite ! </l>
@@ -382,7 +383,7 @@
             <l n="191" xml:id="l191">Je dois à votre amour épargner en secret </l>
             <l n="192" xml:id="l192">Tout ce qui le peut faire obéir à regret. </l>
           </sp>
-          <sp xml:id="I03-3" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-3">
             <speaker>LAETUS.</speaker>
             <l n="193" xml:id="l193">C'est donc ce qui vous porte à m'ordonner de feindre ? </l>
             <l n="194" xml:id="l194">Cet amour vous déplaît, vous le croyez éteindre, </l>
@@ -393,15 +394,15 @@
             <l n="199" xml:id="l199">Et d'un fatal hymen le refus éclatant </l>
             <l n="200" xml:id="l200">Rendra ma mort certaine, et votre esprit content. </l>
           </sp>
-          <sp xml:id="I03-4" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-4">
             <speaker>HELVIE.</speaker>
-            <l n="201" xml:id="l201" part="I">Hélas ! </l>
+            <l n="201" part="I" xml:id="l201">Hélas ! </l>
           </sp>
-          <sp xml:id="I03-5" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-5">
             <speaker>LAETUS.</speaker>
             <l part="F">Parlez enfin, serez-vous inflexible ? </l>
           </sp>
-          <sp xml:id="I03-6" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-6">
             <speaker>HELVIE.</speaker>
             <l n="202" xml:id="l202">J'ai toujours été juste, et jamais insensible </l>
             <l n="203" xml:id="l203">Et je vous avouerai qu'il m'aurait été doux, </l>
@@ -410,9 +411,9 @@
             <l n="206" xml:id="l206">Pourquoi vous obstiner dans une flamme ingrate ? </l>
             <l n="207" xml:id="l207">L'hymen de la Princesse est trop à redouter. </l>
             <l n="208" xml:id="l208">Quand on vous pressera pourrez-vous l'éviter, </l>
-            <l n="209" xml:id="l209" part="I">Et ne voyez-vous pas... </l>
+            <l n="209" part="I" xml:id="l209">Et ne voyez-vous pas... </l>
           </sp>
-          <sp xml:id="I03-7" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-7">
             <speaker>LAETUS.</speaker>
             <l part="F">Dans mon amour extrême </l>
             <l n="210" xml:id="l210">Tout ce que je puis voir, c'est seulement que j'aime, </l>
@@ -423,7 +424,7 @@
             <l n="215" xml:id="l215">Le temps en peut produire, et sans trop s'alarmer, </l>
             <l n="216" xml:id="l216">On vit toujours heureux pourvu qu'on ose aimer. </l>
           </sp>
-          <sp xml:id="I03-8" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-8">
             <speaker>HELVIE.</speaker>
             <l n="217" xml:id="l217">Et bien, pour soutenir une si belle audace </l>
             <l n="218" xml:id="l218">Ne considérez point quel destin vous menace, </l>
@@ -434,9 +435,20 @@
             <l n="223" xml:id="l223">Et que de mon repos le sacrifice offert </l>
             <l n="224" xml:id="l224">Soit l'inutile prix d'un amour qui vous perd ? </l>
           </sp>
-          <sp xml:id="I03-9" who="LAETUS"><speaker>LAETUS.</speaker> . 
-	<l n="225" xml:id="l225">Non, Madame, et ce feu dont l'ardeur m'est si chère, </l><l n="226" xml:id="l226">Est trop respectueux pour être téméraire. </l><l n="227" xml:id="l227">Aussi ma passion, bien loin de m'aveugler, </l><l n="228" xml:id="l228">Par votre seul mérite aime à se voir régler, </l><l n="229" xml:id="l229">Et comme je connais bien mieux que vous ne faites, </l><l n="230" xml:id="l230">Et le peu que je suis, et tout ce que vous êtes, </l><l n="231" xml:id="l231">Je ne demande point qu'à mes brûlants désirs </l><l n="232" xml:id="l232">Vous donniez coeur pour coeur, ni soupirs pour soupirs ; </l><l n="233" xml:id="l233">Trop content si mes voeux obtiennent sur les vôtres, </l><l n="234" xml:id="l234">Qu'ayant accepté l'un, vous écoutiez les autres. </l></sp>
-          <sp xml:id="I03-10" who="HELVIE">
+          <sp who="LAETUS" xml:id="I03-9">
+            <speaker>LAETUS.</speaker>
+            <l n="225" xml:id="l225">Non, Madame, et ce feu dont l'ardeur m'est si chère, </l>
+            <l n="226" xml:id="l226">Est trop respectueux pour être téméraire. </l>
+            <l n="227" xml:id="l227">Aussi ma passion, bien loin de m'aveugler, </l>
+            <l n="228" xml:id="l228">Par votre seul mérite aime à se voir régler, </l>
+            <l n="229" xml:id="l229">Et comme je connais bien mieux que vous ne faites, </l>
+            <l n="230" xml:id="l230">Et le peu que je suis, et tout ce que vous êtes, </l>
+            <l n="231" xml:id="l231">Je ne demande point qu'à mes brûlants désirs </l>
+            <l n="232" xml:id="l232">Vous donniez coeur pour coeur, ni soupirs pour soupirs ; </l>
+            <l n="233" xml:id="l233">Trop content si mes voeux obtiennent sur les vôtres, </l>
+            <l n="234" xml:id="l234">Qu'ayant accepté l'un, vous écoutiez les autres. </l>
+          </sp>
+          <sp who="HELVIE" xml:id="I03-10">
             <speaker>HELVIE.</speaker>
             <l n="235" xml:id="l235">C'est trop, votre vertu m'accable, et je crains bien </l>
             <l n="236" xml:id="l236">Que vous n'obteniez tout en ne demandant rien. </l>
@@ -449,64 +461,69 @@
             <l n="243" xml:id="l243">Et ma vertu qu'alarme un tumulte secret, </l>
             <l n="244" xml:id="l244">Ne vainc qu'en soupirant, et triomphe à regret. </l>
           </sp>
-          <sp xml:id="I03-11" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-11">
             <speaker>LAETUS.</speaker>
             <l n="245" xml:id="l245">Ah ! Si ce seul hymen que l'on me veut prescrire </l>
             <l n="246" xml:id="l246">S'oppose aux sentiments que l'amour vous inspire, </l>
             <l n="247" xml:id="l247">N'en étant point complice, est-il juste qu'enfin </l>
             <l n="248" xml:id="l248">Je demeure puni d'un crime du Destin ? </l>
           </sp>
-          <sp xml:id="I03-12" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-12">
             <speaker>HELVIE.</speaker>
             <l n="249" xml:id="l249">Nommez crime ou malheur un ordre redoutable, </l>
             <l n="250" xml:id="l250">J'en regarde l'effet, et non pas le coupable. </l>
           </sp>
-          <sp xml:id="I03-13" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-13">
             <speaker>LAETUS.</speaker>
             <l n="251" xml:id="l251">De cette crainte en vain votre esprit est atteint, </l>
-            <l n="252" xml:id="l252" part="I">Il n'en aura jamais. </l>
+            <l n="252" part="I" xml:id="l252">Il n'en aura jamais. </l>
           </sp>
-          <sp xml:id="I03-14" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-14">
             <speaker>HELVIE.</speaker>
             <l part="F">Vous y serez contraint. </l>
           </sp>
-          <sp xml:id="I03-15" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-15">
             <speaker>LAETUS.</speaker>
             <l n="253" xml:id="l253">À cet ordre inhumain croyez-vous que je cède ? </l>
           </sp>
-          <sp xml:id="I03-16" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-16">
             <speaker>HELVIE.</speaker>
             <l n="254" xml:id="l254">Du mal qui vous poursuit c'est l'unique remède. </l>
           </sp>
-          <sp xml:id="I03-17" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-17">
             <speaker>LAETUS.</speaker>
             <l n="255" xml:id="l255">Quoi, mon amour vous touche, et je puis mériter </l>
             <l n="256" xml:id="l256">Qu'à l'infidélité vous osiez me porter ? </l>
           </sp>
-          <sp xml:id="I03-18" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-18">
             <speaker>HELVIE.</speaker>
             <l n="257" xml:id="l257">Cet effort à mon coeur coûte plus qu'on ne pense. </l>
             <l n="258" xml:id="l258">Mais enfin du Tyran je sais la violence, </l>
             <l n="259" xml:id="l259">Et j'aime encore mieux dans un si rude sort </l>
             <l n="260" xml:id="l260">Regretter votre amour, que pleurer votre mort. </l>
           </sp>
-          <sp xml:id="I03-19" who="LAETUS">
+          <sp who="LAETUS" xml:id="I03-19">
             <speaker>LAETUS.</speaker>
             <l n="261" xml:id="l261">Le regretter, Madame ! Ah, que quoi qu'on entreprenne, </l>
-            <l n="262" xml:id="l262" part="I">L'Empereur... </l>
+            <l n="262" part="I" xml:id="l262">L'Empereur... </l>
           </sp>
-          <sp xml:id="I03-20" who="HELVIE">
+          <sp who="HELVIE" xml:id="I03-20">
             <speaker>HELVIE.</speaker>
             <l part="F">Le voici. Quel malheur nous l'amène ? </l>
             <l n="263" xml:id="l263">Je vous quitte ; aussi bien le désordre où je suis </l>
             <l n="264" xml:id="l264">Forcerait mon visage à trahir mes ennuis. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Commode, Laetus, Électus, Flavian, Suite de l'Empereur. </head>
-          <sp xml:id="I04-1" who="COMMODE"><speaker>COMMODE.</speaker>à Électus. 
-	<l n="265" xml:id="l265">Quoi, Rome veut de moi cette indigne contrainte ? </l><l n="266" xml:id="l266">J'en dois fuir le murmure, et respecter la plainte, </l><l n="267" xml:id="l267">Et dans vos sentiments, c'est monter un coeur bas </l><l n="268" xml:id="l268">Que de suivre un projet qu'elle n'approuve pas ? </l></sp>
-          <sp xml:id="I04-2" who="ELECTUS">
+          <sp who="COMMODE" xml:id="I04-1">
+            <speaker>COMMODE, à Électus.</speaker>
+            <l n="265" xml:id="l265">Quoi, Rome veut de moi cette indigne contrainte ? </l>
+            <l n="266" xml:id="l266">J'en dois fuir le murmure, et respecter la plainte, </l>
+            <l n="267" xml:id="l267">Et dans vos sentiments, c'est monter un coeur bas </l>
+            <l n="268" xml:id="l268">Que de suivre un projet qu'elle n'approuve pas ? </l>
+          </sp>
+          <sp who="ELECTUS" xml:id="I04-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="269" xml:id="l269">Seigneur, mon zèle ici les a laissé paraître </l>
             <l n="270" xml:id="l270">Avec tout le respect que je dois à mon Maître, </l>
@@ -529,7 +546,7 @@
             <l n="287" xml:id="l287">C'est ce qui fait sa peine, et j'aurais cru manquer, </l>
             <l n="288" xml:id="l288">Si j'avais pu, Seigneur, ne vous pas l'expliquer. </l>
           </sp>
-          <sp xml:id="I04-3" who="COMMODE">
+          <sp who="COMMODE" xml:id="I04-3">
             <speaker>COMMODE.</speaker>
             <l n="289" xml:id="l289">Oui, sans doute, Électus, j'ai tout sujet de croire </l>
             <l n="290" xml:id="l290">Que votre zèle ici n'agit que pour ma gloire. </l>
@@ -540,7 +557,7 @@
             <l n="295" xml:id="l295">Son orgueil plus avant pourrait se hasarder, </l>
             <l n="296" xml:id="l296">Et qui doit obéir prétendrait commander. </l>
           </sp>
-          <sp xml:id="I04-4" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I04-4">
             <speaker>ÉLECTUS.</speaker>
             <l n="297" xml:id="l297">Non, Seigneur, son respect toujours ferme et sincère </l>
             <l n="298" xml:id="l298">Attache tous ses soins à celui de vous plaire ; </l>
@@ -559,17 +576,17 @@
             <l n="311" xml:id="l311">Et ne rejetez point un zèle officieux </l>
             <l n="312" xml:id="l312">Qui met en sûreté des jours si précieux. </l>
           </sp>
-          <sp xml:id="I04-5" who="COMMODE">
+          <sp who="COMMODE" xml:id="I04-5">
             <speaker>COMMODE.</speaker>
             <l n="313" xml:id="l313">Et bien, il faut céder aux avis qu'on m'en donne, </l>
             <l n="314" xml:id="l314">Électus le croit juste, et Rome nous l'ordonne. </l>
           </sp>
-          <sp xml:id="I04-6" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I04-6">
             <speaker>ÉLECTUS.</speaker>
             <l n="315" xml:id="l315">N'ayant plus rien pour vous, Seigneur, à redouter, </l>
             <l n="316" xml:id="l316">Sa joie au sacrifice aura lieu d'éclater. </l>
           </sp>
-          <sp xml:id="I04-7" who="COMMODE">
+          <sp who="COMMODE" xml:id="I04-7">
             <speaker>COMMODE.</speaker>
             <l n="317" xml:id="l317">Non, borner ma puissance est toute son envie, </l>
             <l n="318" xml:id="l318">Rome a trop de fierté pour se croire asservie, </l>
@@ -579,7 +596,7 @@
             <l n="322" xml:id="l322">Qu'elle ait pu pressentir ce qui ce qui pouvait me plaire, </l>
             <l n="323" xml:id="l323">Soudain dans mes projets tout lui paraît suspect. </l>
           </sp>
-          <sp xml:id="I04-8" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I04-8">
             <speaker>ÉLECTUS.</speaker>
             <l n="324" xml:id="l324">Ah! Seigneur, jugez mieux de son profond respect, </l>
             <l n="325" xml:id="l325">Ces applaudissements où votre amour l'engage </l>
@@ -591,21 +608,21 @@
             <l n="331" xml:id="l331">Et ce qu'en Marcia l'on admire aujourd'hui </l>
             <l n="332" xml:id="l332">N'en souffre point ailleurs de plus digne de lui. </l>
           </sp>
-          <sp xml:id="I04-9" who="COMMODE">
+          <sp who="COMMODE" xml:id="I04-9">
             <speaker>COMMODE.</speaker>
             <l n="333" xml:id="l333">J'aurais déjà du Trône approché ce grand Homme, </l>
             <l n="334" xml:id="l334">Mais j'ai dû redouter le murmure de Rome, </l>
             <l n="335" xml:id="l335">Et c'est ce qui m'a fait si longtemps balancer </l>
             <l n="336" xml:id="l336">Un projet que l'amour me force me force d'embrasser. </l>
           </sp>
-          <sp xml:id="I04-10" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I04-10">
             <speaker>ÉLECTUS.</speaker>
             <l n="337" xml:id="l337">Seigneur, s'il m'est permis de vous parler pour elle, </l>
             <l n="338" xml:id="l338">Jamais un beau dessein ne remplit mieux son zèle, </l>
             <l n="339" xml:id="l339">Et Pertinax blanchi dans les plus grands emplois </l>
             <l n="340" xml:id="l340">A mérité ses voeux, méritant votre choix. </l>
           </sp>
-          <sp xml:id="I04-11" who="COMMODE">
+          <sp who="COMMODE" xml:id="I04-11">
             <speaker>COMMODE.</speaker>
             <l n="341" xml:id="l341">Oui, Seigneur, sa vertu noblement confirmée </l>
             <l n="342" xml:id="l342">Du bonheur qui la suit trouve Rome charmée, </l>
@@ -616,58 +633,58 @@
             <l n="347" xml:id="l347">Et de ses voeux soumis l'impatiente ardeur </l>
             <l n="348" xml:id="l348">Pour le bien de l'Empire en presse la splendeur.</l>
           </sp>
-          <sp xml:id="I04-12" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I04-12">
             <speaker>ÉLECTUS.</speaker>
             <l n="349" xml:id="l349">Puisque Rome le veut, il faut qu'il s'accomplisse. </l>
             <l n="350" xml:id="l350">Au sang de Pertinax rendons enfin justice, </l>
             <l n="351" xml:id="l351">Et cessant de tenir mon choix irrésolu, </l>
             <l n="352" xml:id="l352">Faisons-lui partager le pouvoir le pouvoir absolu. </l>
-            <stage type="toward">À Électus. </stage>
-            <l n="353" xml:id="l353" part="I">Voyez-le de ma part. </l>
-            <stage type="toward">À Laetus. </stage>
+            <stage>À Électus. </stage>
+            <l n="353" part="I" xml:id="l353">Voyez-le de ma part. </l>
+            <stage>À Laetus. </stage>
             <l part="F">Vous, faites qu'on apprête </l>
             <l n="354" xml:id="l354">Tout ce qui de Janus peut ennoblir la Fête, </l>
             <l n="355" xml:id="l355">Ordonnez-en la pompe avec un plein éclat, </l>
             <l n="356" xml:id="l356">Et surtout, ayez soin d'assembler le Sénat. </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I05">
           <head>SCÈNE V. Laetus, Électus. </head>
-          <sp xml:id="I05-1" who="LAETUS">
+          <sp who="LAETUS" xml:id="I05-1">
             <speaker>LAETUS.</speaker>
             <l n="357" xml:id="l357">Le pouvoir d'Électus est grand, je le confesse. </l>
             <l n="358" xml:id="l358">Empêcher l'Empereur de faire une bassesse, </l>
             <l n="359" xml:id="l359">Et presser un hymen que par vous il résout ! </l>
             <l n="360" xml:id="l360">Ainsi que Rome enfin Marcia vous doit tout. </l>
           </sp>
-          <sp xml:id="I05-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I05-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="361" xml:id="l361">Attendez par la suite à juger de mon zèle. </l>
             <l n="362" xml:id="l362">Vous savez encor peu ce que j'ose pour elle, </l>
             <l n="363" xml:id="l363">Je le sais mal moi-même, et m'en sentant gêner, </l>
             <l n="364" xml:id="l364">Tout mon coeur malgré moi tremble à l'examiner. </l>
           </sp>
-          <sp xml:id="I05-3" who="LAETUS">
+          <sp who="LAETUS" xml:id="I05-3">
             <speaker>LAETUS.</speaker>
             <l n="365" xml:id="l365">Il est vrai que toujours l'Empereur fut à craindre </l>
             <l n="366" xml:id="l366">À qui ne sait point l'art de flatter et de feindre. </l>
             <l n="367" xml:id="l367">C'est assez pour l'aigrir que de lui résister. </l>
           </sp>
-          <sp xml:id="I05-4" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I05-4">
             <speaker>ÉLECTUS.</speaker>
             <l n="368" xml:id="l368">Qui souhaite la mort la peut-il redouter ? </l>
           </sp>
-          <sp xml:id="I05-5" who="LAETUS">
+          <sp who="LAETUS" xml:id="I05-5">
             <speaker>LAETUS.</speaker>
-            <l n="369" xml:id="l369" part="I">D'où naît ce sentiment ? </l>
+            <l n="369" part="I" xml:id="l369">D'où naît ce sentiment ? </l>
           </sp>
-          <sp xml:id="I05-6" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I05-6">
             <speaker>ÉLECTUS.</speaker>
             <l part="F">D'un destin déplorable, </l>
             <l n="370" xml:id="l370">Que je conçois à peine au moment qu'il m'accable. </l>
             <l n="371" xml:id="l371">Auprès de sa rigueur tous les maux ne sont rien. </l>
           </sp>
-          <sp xml:id="I05-7" who="LAETUS">
+          <sp who="LAETUS" xml:id="I05-7">
             <speaker>LAETUS.</speaker>
             <l n="372" xml:id="l372">Il vous paraîtrait doux si vous songez au mien. </l>
             <l n="373" xml:id="l373">J'aime, vous le savez, et la charmante Helvie.</l>
@@ -679,19 +696,19 @@
             <l n="379" xml:id="l379">Et que mon seul espoir est de finir mon sort </l>
             <l n="380" xml:id="l380">Sans oser découvrir la cause de ma mort. </l>
           </sp>
-          <sp xml:id="I05-8" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I05-8">
             <speaker>ÉLECTUS.</speaker>
             <l n="381" xml:id="l381">C'est beaucoup que du moins lorsque l'Empereur presse </l>
             <l n="382" xml:id="l382">Son choix par trop d'empire irrite la Princesse, </l>
             <l n="383" xml:id="l383">Et que pour vous servir je tâche à le porter </l>
             <l n="384" xml:id="l384">À ne s'obstiner pas à la violenter. </l>
-            <l n="385" xml:id="l385" part="I">Mais... </l>
+            <l n="385" part="I" xml:id="l385">Mais... </l>
           </sp>
-          <sp xml:id="I05-9" who="LAETUS">
+          <sp who="LAETUS" xml:id="I05-9">
             <speaker>LAETUS.</speaker>
             <l part="M">Vous n'achevez point ? </l>
           </sp>
-          <sp xml:id="I05-10" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="I05-10">
             <speaker>ÉLECTUS.</speaker>
             <l part="F">Ô penser trop funeste ! </l>
             <l n="386" xml:id="l386">Allons, dans peu ma mort vous apprendra le reste ; </l>
@@ -700,11 +717,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Marcia, Lucie. </head>
-          <sp xml:id="II01-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="II01-1">
             <speaker>MARCIA.</speaker>
             <l n="389" xml:id="l389">En vain de sa vertu la sévère maxime </l>
             <l n="390" xml:id="l390">Trouve de mon espoir l'appas illégitime, </l>
@@ -723,7 +740,7 @@
             <l n="403" xml:id="l403">J'aime d'un si beau feu les pressantes ardeurs, </l>
             <l n="404" xml:id="l404">Et c'est là proprement la marque des grands coeurs. </l>
           </sp>
-          <sp xml:id="II01-2" who="LUCIE">
+          <sp who="LUCIE" xml:id="II01-2">
             <speaker>LUCIE.</speaker>
             <l n="405" xml:id="l405">Elle est noble, elle est haute, et je doute qu'Helvie</l>
             <l n="406" xml:id="l406">Ne la condamne en vous par un motif d'envie. </l>
@@ -736,7 +753,7 @@
             <l n="413" xml:id="l413">Auprès de l'Empereur son crédit est extrême, </l>
             <l n="414" xml:id="l414">Et l'on blâme en autrui ce qui plaît en soi-même. </l>
           </sp>
-          <sp xml:id="II01-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="II01-3">
             <speaker>MARCIA.</speaker>
             <l n="415" xml:id="l415">Non, ma soeur n'eut jamais de si bas sentiments, </l>
             <l n="416" xml:id="l416">Elle a le coeur trop bon pour ces déguisements, </l>
@@ -745,7 +762,7 @@
             <l n="419" xml:id="l419">Ce faible et vain dehors t'a fait trop présumer, </l>
             <l n="420" xml:id="l420">Et ce n'est pas encor ce qui doit m'alarmer. </l>
           </sp>
-          <sp xml:id="II01-4" who="LUCIE">
+          <sp who="LUCIE" xml:id="II01-4">
             <speaker>LUCIE.</speaker>
             <l n="421" xml:id="l421">Il est vrai que d'un choix où les Dieux vous secondent, </l>
             <l n="422" xml:id="l422">Les devoirs d'Électus hautement vous répondent. </l>
@@ -755,23 +772,23 @@
             <l n="426" xml:id="l426">Il voit certain pour vous l'hymen qu'il lui conseille. </l>
             <l n="427" xml:id="l427">Ce zèle et vif et prompt, ces respects assidus... </l>
           </sp>
-          <sp xml:id="II01-5" who="MARCIA">
+          <sp who="MARCIA" xml:id="II01-5">
             <speaker>MARCIA.</speaker>
             <l n="428" xml:id="l428">Ô devoirs, ô respects peut-être trop rendus ! </l>
           </sp>
-          <sp xml:id="II01-6" who="LUCIE">
+          <sp who="LUCIE" xml:id="II01-6">
             <speaker>LUCIE.</speaker>
             <l n="429" xml:id="l429">Quoi donc, à l'Empereur auraient-ils pu déplaire ? </l>
           </sp>
-          <sp xml:id="II01-7" who="MARCIA">
+          <sp who="MARCIA" xml:id="II01-7">
             <speaker>MARCIA.</speaker>
-            <l n="430" xml:id="l430" part="I">Je ne sais, mais... </l>
+            <l n="430" part="I" xml:id="l430">Je ne sais, mais... </l>
           </sp>
-          <sp xml:id="II01-8" who="LUCIE">
+          <sp who="LUCIE" xml:id="II01-8">
             <speaker>LUCIE.</speaker>
             <l part="F">Parler, et tout à coup vous taire ? </l>
           </sp>
-          <sp xml:id="II01-9" who="MARCIA">
+          <sp who="MARCIA" xml:id="II01-9">
             <speaker>MARCIA.</speaker>
             <l n="431" xml:id="l431">Ah, Lucie, oserai-je exposer à tes yeux </l>
             <l n="432" xml:id="l432">Le désordre inquiet d'un coeur ambitieux, </l>
@@ -796,14 +813,14 @@
             <l n="451" xml:id="l451">Et l'on ne devrait pas avec plus de souci </l>
             <l n="452" xml:id="l452">Se défendre d'aimer, que d'estimer ainsi. </l>
           </sp>
-          <sp xml:id="II01-10" who="LUCIE">
+          <sp who="LUCIE" xml:id="II01-10">
             <speaker>LUCIE.</speaker>
             <l n="453" xml:id="l453">L'amour avec l'estime a tant de ressemblance, </l>
             <l n="454" xml:id="l454">Qu'il est bien malaisé d'en voir la différence ; </l>
             <l n="455" xml:id="l455">Non que sans que l'on aime on ne puisse estimer, </l>
             <l n="456" xml:id="l456">Mais sitôt qu'on y songe, on commence d'aimer. </l>
           </sp>
-          <sp xml:id="II01-11" who="MARCIA">
+          <sp who="MARCIA" xml:id="II01-11">
             <speaker>MARCIA.</speaker>
             <l n="457" xml:id="l457">Ah, malgré moi cent fois en consultant mon âme, </l>
             <l n="458" xml:id="l458">Sans prendre en cette estime aucun soupçon de flamme, </l>
@@ -824,21 +841,21 @@
             <l n="473" xml:id="l473">Et qui dans une gloire et sublime et profonde </l>
             <l n="474" xml:id="l474">Nous fait voir sous nos pieds tous les Trônes du Monde. </l>
             <l n="475" xml:id="l475">C'est là ce qui me charme, et quoi que jusqu'ici </l>
-            <l n="476" xml:id="l476" part="I">Je sente qu'Électus... </l>
+            <l n="476" part="I" xml:id="l476">Je sente qu'Électus... </l>
           </sp>
-          <sp xml:id="II01-12" who="LUCIE">
+          <sp who="LUCIE" xml:id="II01-12">
             <speaker>LUCIE.</speaker>
             <l part="F">Madame, le voici. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Marcia,  Électus, Lucie. </head>
-          <sp xml:id="II02-1" who="MARCIA">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Marcia, Électus, Lucie. </head>
+          <sp who="MARCIA" xml:id="II02-1">
             <speaker>MARCIA.</speaker>
             <l n="477" xml:id="l477">Et bien, qu'avez-vous fait ? Me venez-vous apprendre </l>
             <l n="478" xml:id="l478">Ce que de l'Empereur il m'est permis d'attendre ? </l>
           </sp>
-          <sp xml:id="II02-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="479" xml:id="l479">Madame, vous servir m'est un emploi trop doux </l>
             <l n="480" xml:id="l480">Pour avoir différé de lui parler pour vous ; </l>
@@ -849,31 +866,31 @@
             <l n="485" xml:id="l485">Et j'aurais mal rempli l'ardeur que j'ai pour elle, </l>
             <l n="486" xml:id="l486">Si la peur de l'aigrir eût arrêté mon zèle. </l>
           </sp>
-          <sp xml:id="II02-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-3">
             <speaker>MARCIA.</speaker>
             <l n="487" xml:id="l487">Ce zèle généreux m'était déjà connu. </l>
             <l n="488" xml:id="l488">Enfin en ma faveur qu'avez-vous obtenu ? </l>
           </sp>
-          <sp xml:id="II02-4" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-4">
             <speaker>ÉLECTUS.</speaker>
             <l n="489" xml:id="l489">Que dans peu les effets suivraient votre espérance. </l>
             <l n="490" xml:id="l490">Je viens à Pertinax d'en porter l'assurance, </l>
             <l n="491" xml:id="l491">J'en avais reçu l'ordre, et m'en suis acquitté. </l>
           </sp>
-          <sp xml:id="II02-5" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-5">
             <speaker>MARCIA.</speaker>
             <l n="492" xml:id="l492">Ce que nous vous devons n'a rien de limité. </l>
             <l n="493" xml:id="l493">Aussi n'ai-je aspiré jamais à la Couronne </l>
             <l n="494" xml:id="l494">Que pour vous faire part du pouvoir qu'elle donne. </l>
           </sp>
-          <sp xml:id="II02-6" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-6">
             <speaker>ÉLECTUS.</speaker>
             <l n="495" xml:id="l495">En vain ce faux espoir abuserait ma foi ; </l>
             <l n="496" xml:id="l496">Lorsque vous pourrez tout, vous pourrez peu pour moi ; </l>
             <l n="497" xml:id="l497">Encor peut-être alors voudrez-vous vous défendre </l>
             <l n="498" xml:id="l498">De m'accorder ce peu que j'oserais prétendre. </l>
           </sp>
-          <sp xml:id="II02-7" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-7">
             <speaker>MARCIA.</speaker>
             <l n="499" xml:id="l499">D'ingratitude à tort c'est vouloir m'accuser. </l>
             <l n="500" xml:id="l500">Qui peut promettre tout, ne veut rien refuser, </l>
@@ -881,7 +898,7 @@
             <l n="502" xml:id="l502">Vous fait prétendre peu quand je dois toute chose. </l>
             <l n="503" xml:id="l503">Un grand coeur est injuste à n'agir que pour soi. </l>
           </sp>
-          <sp xml:id="II02-8" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-8">
             <speaker>ÉLECTUS.</speaker>
             <l n="504" xml:id="l504">Hélas ! C'est peu pour vous, mais c'est beaucoup pour moi, </l>
             <l n="505" xml:id="l505">Et puisque enfin le mien succombe à ma faiblesse, </l>
@@ -893,11 +910,11 @@
             <l n="511" xml:id="l511">Et qu'enfin abandonne à tout votre courroux </l>
             <l n="512" xml:id="l512">L'indispensable loi de soupirer pour vous. </l>
           </sp>
-          <sp xml:id="II02-9" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-9">
             <speaker>MARCIA.</speaker>
-            <l n="513" xml:id="l513" part="I">Que m'osez-vous apprendre, Électus ? </l>
+            <l n="513" part="I" xml:id="l513">Que m'osez-vous apprendre, Électus ? </l>
           </sp>
-          <sp xml:id="II02-10" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-10">
             <speaker>ÉLECTUS.</speaker>
             <l part="F">Ah, Madame. </l>
             <l n="514" xml:id="l514">Déjà votre vertu s'indigne de ma flamme, </l>
@@ -914,7 +931,7 @@
             <l n="525" xml:id="l525">Et si ce feu qui règne en ce coeur qui vous aime </l>
             <l n="526" xml:id="l526">Porte un crime en son nom qu'il n'a pas en soi-même. </l>
           </sp>
-          <sp xml:id="II02-11" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-11">
             <speaker>MARCIA.</speaker>
             <l n="527" xml:id="l527">S'il est vrai que ce coeur, trop prompt à s'enflammer, </l>
             <l n="528" xml:id="l528">Au peu que j'ai d'appas se soit laissé charmer, </l>
@@ -923,7 +940,7 @@
             <l n="531" xml:id="l531">Et ne me forcer pas à dégager le mien </l>
             <l n="532" xml:id="l532">D'une estime, où vos feux prendraient trop de soutien. </l>
           </sp>
-          <sp xml:id="II02-12" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-12">
             <speaker>ÉLECTUS.</speaker>
             <l n="533" xml:id="l533">Quoi, Madame, il se peut que vous nommiez injure </l>
             <l n="534" xml:id="l534">Une ardeur si parfaite, une flamme si pure, </l>
@@ -954,14 +971,14 @@
             <l n="559" xml:id="l559">Et si dans le respect qui l'ose mettre au jour, </l>
             <l n="560" xml:id="l560">Vous y pouvez blâmer que le seul nom d'amour. </l>
           </sp>
-          <sp xml:id="II02-13" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-13">
             <speaker>MARCIA.</speaker>
             <l n="561" xml:id="l561">Je ne sais s'il n'a rien qui soit plus condamnable, </l>
             <l n="562" xml:id="l562">Mais je sais que j'écoute, et qu'il en est coupable, </l>
             <l n="563" xml:id="l563">Puisqu'un charme secret que j'ai peine à bannir, </l>
             <l n="564" xml:id="l564">Me force à la pitié quand je devrais punir. </l>
           </sp>
-          <sp xml:id="II02-14" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-14">
             <speaker>ÉLECTUS.</speaker>
             <l n="565" xml:id="l565">Ah, Madame, il est vrai, je suis un téméraire </l>
             <l n="566" xml:id="l566">D'oser séduire ainsi votre juste colère, </l>
@@ -984,66 +1001,66 @@
             <l n="583" xml:id="l583">D'aucun propre intérêt il ne fut ébranlé, </l>
             <l n="584" xml:id="l584">Et fût mort innocent s'il n'eût point trop parlé.</l>
           </sp>
-          <sp xml:id="II02-15" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-15">
             <speaker>MARCIA.</speaker>
             <l n="585" xml:id="l585">Quoi que l'amour ait pris de pouvoir sur votre âme, </l>
-            <l n="586" xml:id="l586" part="I">Le temps vous fera voir... </l>
+            <l n="586" part="I" xml:id="l586">Le temps vous fera voir... </l>
           </sp>
-          <sp xml:id="II02-16" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-16">
             <speaker>ÉLECTUS.</speaker>
             <l part="F">Il ne peut rien, Madame, </l>
             <l n="587" xml:id="l587">Et ce ne fut jamais dans les maux importants </l>
             <l n="588" xml:id="l588">Qu'on eut droit d'espérer quelque chose du temps. </l>
           </sp>
-          <sp xml:id="II02-17" who="MARCIA">
+          <sp who="MARCIA" xml:id="II02-17">
             <speaker>MARCIA.</speaker>
             <l n="589" xml:id="l589">Au moins en vous fuyant j'empêcherai peut-être </l>
             <l n="590" xml:id="l590">Que du vôtre à me voir l'aigreur ne puisse croître. </l>
             <l n="591" xml:id="l591">Ce remède est pour vous le seul à souhaiter, </l>
             <l n="592" xml:id="l592">Et je m'éloigne exprès afin de le hâter. </l>
           </sp>
-          <sp xml:id="II02-18" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II02-18">
             <speaker>ÉLECTUS.</speaker>
             <l n="593" xml:id="l593">Ah, ne me quittez point, et que mon mal s'aigrisse : </l>
             <l n="594" xml:id="l594">Madame, au nom des Dieux... Hélas, quelle injustice ! </l>
             <l n="595" xml:id="l595">Rien ne l'arrête, ô Ciel, ô Destins conjurés ! </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Laetus, Électus. </head>
-          <sp xml:id="II03-1" who="LAETUS">
+          <sp who="LAETUS" xml:id="II03-1">
             <speaker>LAETUS.</speaker>
             <l n="596" xml:id="l596">Marcia se retire, et vous en soupirez ? </l>
             <l n="597" xml:id="l597">Je ne demande plus quelle est la rude atteinte </l>
             <l n="598" xml:id="l598">Qui tantôt devant moi vous forçait à la plainte. </l>
             <l n="599" xml:id="l599">L'amour de l'Empereur tient le vôtre gêné ? </l>
           </sp>
-          <sp xml:id="II03-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II03-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="600" xml:id="l600">Injurieux Ami, qu'avez-vous deviné ? </l>
           </sp>
-          <sp xml:id="II03-3" who="LAETUS">
+          <sp who="LAETUS" xml:id="II03-3">
             <speaker>LAETUS.</speaker>
             <l n="601" xml:id="l601">Un feu que la vertu soutient dans ce qu'il ose. </l>
             <l n="602" xml:id="l602">Si j'en plains les effets j'en admire la cause, </l>
             <l n="603" xml:id="l603">Et servir Marcia sans vous considérer, </l>
             <l n="604" xml:id="l604">Est le plus bel effort qu'elle puisse inspirer. </l>
           </sp>
-          <sp xml:id="II03-4" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="II03-4">
             <speaker>ÉLECTUS.</speaker>
             <l n="605" xml:id="l605">Aussi vous en voyez ma constance abattue. </l>
             <l n="606" xml:id="l606">De ce cruel effort la contrainte me tue, </l>
             <l n="607" xml:id="l607">Et si de quelque espoir il peut être adouci, </l>
-            <l n="608" xml:id="l608" part="I">C'est que... </l>
+            <l n="608" part="I" xml:id="l608">C'est que... </l>
           </sp>
-          <sp xml:id="II03-5" who="LAETUS">
+          <sp who="LAETUS" xml:id="II03-5">
             <speaker>LAETUS.</speaker>
             <l part="F">Ne dites rien, l'Empereur vient ici. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Commode, Laetus, Électus, Flavian, Suite de l'Empereur. </head>
-          <sp xml:id="II04-1" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-1">
             <speaker>COMMODE.</speaker>
             <l n="609" xml:id="l609">Électus, allez voir si le Sénat s'apprête. </l>
             <l n="610" xml:id="l610">Voici l'heure bientôt de commencer la Fête, </l>
@@ -1062,7 +1079,7 @@
             <l n="623" xml:id="l623">Et jusqu'au rang illustre où je veux t'élever, </l>
             <l n="624" xml:id="l624">Il trouve des raisons pour ne pas l'approuver. </l>
           </sp>
-          <sp xml:id="II04-2" who="LAETUS">
+          <sp who="LAETUS" xml:id="II04-2">
             <speaker>LAETUS.</speaker>
             <l n="625" xml:id="l625">Seigneur, c'est qu'il connaît que cette récompense </l>
             <l n="626" xml:id="l626">Des plus ambitieux passerait l'espérance, </l>
@@ -1072,7 +1089,7 @@
             <l n="630" xml:id="l630">De vous voir trop donner au peu que je mérite, </l>
             <l n="631" xml:id="l631">Souffrez que je renonce à l'honneur éclatant... </l>
           </sp>
-          <sp xml:id="II04-3" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-3">
             <speaker>COMMODE.</speaker>
             <l n="632" xml:id="l632">Non, ce choix pour ma gloire est sans doute important, </l>
             <l n="633" xml:id="l633">Ma soeur me connaît trop pour choquer mon envie, </l>
@@ -1100,23 +1117,23 @@
             <l n="655" xml:id="l655">Et que l'affront d'un Trône à ces voeux échappé </l>
             <l n="656" xml:id="l656">Me venge d'un pouvoir sur le mien usurpé. </l>
           </sp>
-          <sp xml:id="II04-4" who="LAETUS">
+          <sp who="LAETUS" xml:id="II04-4">
             <speaker>LAETUS.</speaker>
             <l n="657" xml:id="l657">Quoi qu'on ait fait, Seigneur, il est indubitable </l>
             <l n="658" xml:id="l658">Qu'ayant su vous déplaire on est toujours coupable ; </l>
             <l n="659" xml:id="l659">Mais Pertinax peut-être aurait dû mériter... </l>
           </sp>
-          <sp xml:id="II04-5" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-5">
             <speaker>COMMODE.</speaker>
             <l n="660" xml:id="l660">Non, Pertinax ici n'a rien à redouter. </l>
             <l n="661" xml:id="l661">En faveur de son sang j'ai toujours même envie, </l>
             <l n="662" xml:id="l662">Et lui fais part du Trône en couronnant Helvie.</l>
           </sp>
-          <sp xml:id="II04-6" who="LAETUS">
+          <sp who="LAETUS" xml:id="II04-6">
             <speaker>LAETUS.</speaker>
-            <l n="663" xml:id="l663" part="I">Helvie ? </l>
+            <l n="663" part="I" xml:id="l663">Helvie ? </l>
           </sp>
-          <sp xml:id="II04-7" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-7">
             <speaker>COMMODE.</speaker>
             <l part="F">Oui, d'un beau feu mon coeur pour elle atteint </l>
             <l n="664" xml:id="l664">Déjà depuis longtemps soupire et se contraint. </l>
@@ -1129,11 +1146,11 @@
             <l n="671" xml:id="l671">Et qui pour soutenir une aimable fierté </l>
             <l n="672" xml:id="l672">Mêle plus de douceur à plus de majesté ? </l>
           </sp>
-          <sp xml:id="II04-8" who="LAETUS">
+          <sp who="LAETUS" xml:id="II04-8">
             <speaker>LAETUS.</speaker>
-            <l n="673" xml:id="l673" part="I">Peu l'égalent sans doute. </l>
+            <l n="673" part="I" xml:id="l673">Peu l'égalent sans doute. </l>
           </sp>
-          <sp xml:id="II04-9" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-9">
             <speaker>COMMODE.</speaker>
             <l part="F">Ajoute, si je l'aime, </l>
             <l n="674" xml:id="l674">Qu'un mérite parfait veut un amour extrême. </l>
@@ -1144,14 +1161,14 @@
             <l n="679" xml:id="l679">Contre toute apparence on aime à s'élever. </l>
             <l n="680" xml:id="l680">Mais loin de m'applaudir qui t'oblige à rêver ? </l>
           </sp>
-          <sp xml:id="II04-10" who="LAETUS">
+          <sp who="LAETUS" xml:id="II04-10">
             <speaker>LAETUS.</speaker>
             <l n="681" xml:id="l681">Un scrupule, Seigneur, qui fait que j'appréhende </l>
             <l n="682" xml:id="l682">Que difficilement son esprit ne se rende, </l>
             <l n="683" xml:id="l683">Puisque, de quelque espoir que j'ose la flatter, </l>
             <l n="684" xml:id="l684">L'exemple de sa soeur la peut inquiéter. </l>
           </sp>
-          <sp xml:id="II04-11" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-11">
             <speaker>COMMODE.</speaker>
             <l n="685" xml:id="l685">Si par là de ma flamme elle craint l'inconstance, </l>
             <l n="686" xml:id="l686">Tu peux d'un prompt hymen lui laisser l'assurance, </l>
@@ -1164,29 +1181,29 @@
             <l n="693" xml:id="l693">Je l'avouerai moi-même, et veux qu'aucun ne doute </l>
             <l n="694" xml:id="l694">Que dans ce nouveau choix c'est toi seul que j'écoute. </l>
           </sp>
-          <sp xml:id="II04-12" who="LAETUS">
+          <sp who="LAETUS" xml:id="II04-12">
             <speaker>LAETUS.</speaker>
-            <l n="695" xml:id="l695" part="I">Mais, Seigneur... </l>
+            <l n="695" part="I" xml:id="l695">Mais, Seigneur... </l>
           </sp>
-          <sp xml:id="II04-13" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-13">
             <speaker>COMMODE.</speaker>
             <l part="F">Quoi, ton âme avec peine y consent ? </l>
             <l n="696" xml:id="l696">Crains-tu de Marcia le courroux impuissant, </l>
             <l n="697" xml:id="l697">Ou crois-tu son audace injustement punie. </l>
           </sp>
-          <sp xml:id="II04-14" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="II04-14">
             <speaker>FLAVIAN, rentrant.</speaker>
             <l n="698" xml:id="l698">Seigneur, on vous attend pour la Cérémonie. </l>
           </sp>
-          <sp xml:id="II04-15" who="COMMODE">
+          <sp who="COMMODE" xml:id="II04-15">
             <speaker>COMMODE.</speaker>
             <l n="699" xml:id="l699">Il faut aller au Temple, adieu, sers mon amour, </l>
             <l n="700" xml:id="l700">Vois Helvie et me rends sa réponse au retour. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. </head>
-          <sp xml:id="II05-1" who="LAETUS">
+          <sp who="LAETUS" xml:id="II05-1">
             <speaker>LAETUS.</speaker>
             <l n="701" xml:id="l701">Sous quels plus rudes coups ma constance étonnée </l>
             <l n="702" xml:id="l702">Peut-elle au désespoir se voir abandonnée ? </l>
@@ -1210,46 +1227,46 @@
             <l n="720" xml:id="l720">Pourrai-je la porter à résoudre ma mort ? </l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="II06">
           <head>SCÈNE VI. Helvie, Laetus, Julie. </head>
-          <sp xml:id="II06-1" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-1">
             <speaker>HELVIE.</speaker>
             <l n="721" xml:id="l721">Quoi, vous trouver ici lorsqu'au Temple on se presse ? </l>
             <l n="722" xml:id="l722">J'ai su me dispenser d'y suivre la Princesse, </l>
             <l n="723" xml:id="l723">Et des voeux criminels j'eus toujours trop horreur </l>
             <l n="724" xml:id="l724">Pour en faire jamais avecque l'Empereur. </l>
           </sp>
-          <sp xml:id="II06-2" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-2">
             <speaker>LAETUS.</speaker>
-            <l n="725" xml:id="l725" part="I">Ah, Madame ! </l>
+            <l n="725" part="I" xml:id="l725">Ah, Madame ! </l>
           </sp>
-          <sp xml:id="II06-3" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-3">
             <speaker>HELVIE.</speaker>
             <l part="F">D'où vient que votre coeur soupire ? </l>
           </sp>
-          <sp xml:id="II06-4" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-4">
             <speaker>LAETUS.</speaker>
             <l n="726" xml:id="l726">Hélas ! Sans expirer pourrai-je vous le dire ? </l>
-            <l n="727" xml:id="l727" part="I">L'Empereur... </l>
+            <l n="727" part="I" xml:id="l727">L'Empereur... </l>
           </sp>
-          <sp xml:id="II06-5" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-5">
             <speaker>HELVIE.</speaker>
             <l part="F">C'est assez, quoi que vous ayez fait, </l>
             <l n="728" xml:id="l728">D'un hymen qui vous gêne il presse enfin l'effet ? </l>
           </sp>
-          <sp xml:id="II06-6" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-6">
             <speaker>LAETUS.</speaker>
             <l n="729" xml:id="l729">Oui, Madame, il le presse, et j'en crains la menace. </l>
             <l n="730" xml:id="l730">Dans cette extrémité conseillez-moi, de grâce ; </l>
             <l n="731" xml:id="l731">Mon coeur à ma raison ne s'ose confier. </l>
-            <l n="732" xml:id="l732" part="I">Parlez, que dois-je ? </l>
+            <l n="732" part="I" xml:id="l732">Parlez, que dois-je ? </l>
           </sp>
-          <sp xml:id="II06-7" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-7">
             <speaker>HELVIE.</speaker>
             <l part="F">Obéir, m'oublier. </l>
             <l n="733" xml:id="l733">L'un et l'autre pour vous sans doute est nécessaire. </l>
           </sp>
-          <sp xml:id="II06-8" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-8">
             <speaker>LAETUS.</speaker>
             <l n="734" xml:id="l734">Suivez donc ce conseil, il est noble et sincère, </l>
             <l n="735" xml:id="l735">Et si j'ose douter, il vous doit être doux </l>
@@ -1259,11 +1276,11 @@
             <l n="739" xml:id="l739">Et pour plus de vertus peut-être que les Dieux </l>
             <l n="740" xml:id="l740">N'ordonnèrent jamais un prix si glorieux. </l>
           </sp>
-          <sp xml:id="II06-9" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-9">
             <speaker>HELVIE.</speaker>
-            <l n="741" xml:id="l741" part="I">Que dites-vous, Laetus ? </l>
+            <l n="741" part="I" xml:id="l741">Que dites-vous, Laetus ? </l>
           </sp>
-          <sp xml:id="II06-10" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-10">
             <speaker>LAETUS.</speaker>
             <l part="F">Que l'Empereur vous aime, </l>
             <l n="742" xml:id="l742">Qu'il vous offre par moi la puissance suprême, </l>
@@ -1274,41 +1291,41 @@
             <l n="747" xml:id="l747">Mais avouez aussi qu'en ce funeste jour </l>
             <l n="748" xml:id="l748">Si j'ai moins de vertu, je montre plus d'amour. </l>
           </sp>
-          <sp xml:id="II06-11" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-11">
             <speaker>HELVIE.</speaker>
             <l n="749" xml:id="l749">Dans le confus désordre où la mienne est réduite, </l>
             <l n="750" xml:id="l750">C'est en vain que mon coeur s'attache à sa conduite. </l>
             <l n="751" xml:id="l751">Elle est toute alarmée, il est tout interdit. </l>
             <l n="752" xml:id="l752">Ah, Laetus, que croirai-je, et que m'avez-vous dit ? </l>
           </sp>
-          <sp xml:id="II06-12" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-12">
             <speaker>LAETUS.</speaker>
             <l n="753" xml:id="l753">S'il vous faut de mon sort répéter l'injustice, </l>
             <l n="754" xml:id="l754">Souffrez à mes soupirs ce pitoyable office, </l>
             <l n="755" xml:id="l755">Si toutefois mon coeur, hors d'état d'espérer, </l>
             <l n="756" xml:id="l756">Quand vous montez au Trône, a droit de soupirer. </l>
           </sp>
-          <sp xml:id="II06-13" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-13">
             <speaker>HELVIE.</speaker>
             <l n="757" xml:id="l757">C'est à quoi je crains peu que le Ciel l'autorise, </l>
             <l n="758" xml:id="l758">S'il ne doit soupirer que de m'y voir assise</l>
           </sp>
-          <sp xml:id="II06-14" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-14">
             <speaker>LAETUS.</speaker>
             <l n="759" xml:id="l759">Doutez-vous d'un hymen qui vous y va placer ? </l>
           </sp>
-          <sp xml:id="II06-15" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-15">
             <speaker>HELVIE.</speaker>
             <l n="760" xml:id="l760">Doutez-vous d'un refus que rien ne peut forcer ? </l>
           </sp>
-          <sp xml:id="II06-16" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-16">
             <speaker>LAETUS.</speaker>
             <l n="761" xml:id="l761">Comment n'en douter pas sans m'en rendre coupable ? </l>
             <l n="762" xml:id="l762">D'un injuste conseil vous n'êtes point coupable, </l>
             <l n="763" xml:id="l763">Vos sentiments par là me sont trop déclarés</l>
             <l n="764" xml:id="l764">Vous parliez d'obéir, et vous obéirez. </l>
           </sp>
-          <sp xml:id="II06-17" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-17">
             <speaker>HELVIE.</speaker>
             <l n="765" xml:id="l765">C'est donner un peu trop peut-être à l'apparence, </l>
             <l n="766" xml:id="l766">Que de juger par là de mon obéissance. </l>
@@ -1331,38 +1348,38 @@
             <l n="783" xml:id="l783">Et ne pas m'exposer au coupable embarras </l>
             <l n="784" xml:id="l784">De lui devoir mon coeur, et ne le donner pas. </l>
           </sp>
-          <sp xml:id="II06-18" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-18">
             <speaker>LAETUS.</speaker>
             <l n="785" xml:id="l785">Puis-je dans cet aveu goûter assez ma joie </l>
             <l n="786" xml:id="l786">Lorsque je dois réponse au Tyran qui m'envoie ? </l>
-            <l n="787" xml:id="l787" part="I">Que lui dirai-je, enfin. </l>
+            <l n="787" part="I" xml:id="l787">Que lui dirai-je, enfin. </l>
           </sp>
-          <sp xml:id="II06-19" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-19">
             <speaker>HELVIE.</speaker>
             <l part="F">Que je ne puis souffrir </l>
             <l n="788" xml:id="l788">Qu'il ôte à Marcia ce qu'il me fait offrir. </l>
           </sp>
-          <sp xml:id="II06-20" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-20">
             <speaker>LAETUS.</speaker>
             <l n="789" xml:id="l789">Pour suivre la raison en connaît-il l'empire ? </l>
           </sp>
-          <sp xml:id="II06-21" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-21">
             <speaker>HELVIE.</speaker>
             <l n="790" xml:id="l790">En dois-je écouter moins ce que l'honneur m'inspire ? </l>
           </sp>
-          <sp xml:id="II06-22" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-22">
             <speaker>LAETUS.</speaker>
             <l n="791" xml:id="l791">Son seul emportement règle sa volonté. </l>
           </sp>
-          <sp xml:id="II06-23" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-23">
             <speaker>HELVIE.</speaker>
             <l n="792" xml:id="l792">Ma vertu contre lui fera ma sûreté. </l>
           </sp>
-          <sp xml:id="II06-24" who="LAETUS">
+          <sp who="LAETUS" xml:id="II06-24">
             <speaker>LAETUS.</speaker>
             <l n="793" xml:id="l793">D'un amour irrité la fureur est à craindre ? </l>
           </sp>
-          <sp xml:id="II06-25" who="HELVIE">
+          <sp who="HELVIE" xml:id="II06-25">
             <speaker>HELVIE.</speaker>
             <l n="794" xml:id="l794">Et bien, s'il est besoin, j'ai du sang pour l'éteindre, </l>
             <l n="795" xml:id="l795">Et faire voir à tous qu'aux malheurs les plus grands </l>
@@ -1370,25 +1387,25 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Helvie, Flavian, Julie. </head>
-          <sp xml:id="III01-1" who="HELVIE">
+          <sp who="HELVIE" xml:id="III01-1">
             <speaker>HELVIE.</speaker>
             <l n="797" xml:id="l797">Quoi vers moi, Flavian, l'Empereur vous envoie, </l>
             <l n="798" xml:id="l798">Il veut que de nouveau ma fierté se déploie, </l>
             <l n="799" xml:id="l799">Et qu'un second refus serve à mieux découvrir </l>
             <l n="800" xml:id="l800">Que je suis au-dessus de ce qu'on vient m'offrir ? </l>
           </sp>
-          <sp xml:id="III01-2" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III01-2">
             <speaker>FLAVIAN.</speaker>
             <l n="801" xml:id="l801">Je n'examine point par quelle grandeur d'âme </l>
             <l n="802" xml:id="l802">Vous mépriser le Trône en méprisant sa flamme, </l>
             <l n="803" xml:id="l803">Mais quelque noble orgueil qui nous puisse animer, </l>
             <l n="804" xml:id="l804">On doit feindre souvent si l'on ne peut aimer. </l>
           </sp>
-          <sp xml:id="III01-3" who="HELVIE">
+          <sp who="HELVIE" xml:id="III01-3">
             <speaker>HELVIE.</speaker>
             <l n="805" xml:id="l805">Moi, que par une basse et molle complaisance </l>
             <l n="806" xml:id="l806">Je consente à trahir les droits de ma naissance, </l>
@@ -1399,7 +1416,7 @@
             <l n="811" xml:id="l811">Et ne saurait souffrir que ce coeur combattu </l>
             <l n="812" xml:id="l812">Par sa légèreté démente ma vertu. </l>
           </sp>
-          <sp xml:id="III01-4" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III01-4">
             <speaker>FLAVIAN.</speaker>
             <l n="813" xml:id="l813">Le dessein serait beau, si votre résistance </l>
             <l n="814" xml:id="l814">Pouvait de l'Empereur vaincre la violence ; </l>
@@ -1414,14 +1431,14 @@
             <l n="823" xml:id="l823">Et je le peins Tyran, pour mieux faire éclater </l>
             <l n="824" xml:id="l824">Ce que de sa rigueur vous devez redouter. </l>
           </sp>
-          <sp xml:id="III01-5" who="HELVIE">
+          <sp who="HELVIE" xml:id="III01-5">
             <speaker>HELVIE.</speaker>
             <l n="825" xml:id="l825">Quoi qu'il souffre d'empire à ses injustes flammes, </l>
             <l n="826" xml:id="l826">Il ne l'est pas assez pour forcer jusqu'aux âmes, </l>
             <l n="827" xml:id="l827">Et si par mon refus il se tient outragé, </l>
             <l n="828" xml:id="l828">En me privant du Trône il s'en croira vengé. </l>
           </sp>
-          <sp xml:id="III01-6" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III01-6">
             <speaker>FLAVIAN.</speaker>
             <l n="829" xml:id="l829">Vous l'espérez en vain ; son feu semble s'accroître </l>
             <l n="830" xml:id="l830">Plus il se sent forcé de le faire paraître, </l>
@@ -1440,14 +1457,14 @@
             <l n="843" xml:id="l843">Mais enfin il commande, et c'est vous dire assez </l>
             <l n="844" xml:id="l844">Qu'il pourra tout oser si vous n'obéissez. </l>
           </sp>
-          <sp xml:id="III01-7" who="HELVIE">
+          <sp who="HELVIE" xml:id="III01-7">
             <speaker>HELVIE.</speaker>
             <l n="845" xml:id="l845">Je n'ai point attendu cette indigne menace, </l>
             <l n="846" xml:id="l846">Pour préparer mon coeur à toute ma disgrâce. </l>
             <l n="847" xml:id="l847">Je sais sous quelle atteinte elle peut redoubler, </l>
             <l n="848" xml:id="l848">Et la dédaigne trop pour en pouvoir trembler. </l>
           </sp>
-          <sp xml:id="III01-8" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III01-8">
             <speaker>FLAVIAN.</speaker>
             <l n="849" xml:id="l849">N'en faites point l'essai si vous m'en pouvez croire. </l>
             <l n="850" xml:id="l850">Jamais à prendre un Sceptre on ne ternit sa gloire. </l>
@@ -1459,9 +1476,9 @@
             <l n="856" xml:id="l856">Pour bien user du droit de régler votre sort. </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Commode, Helvie, Flavian, Julie, Suite de l'Empereur. </head>
-          <sp xml:id="III02-1" who="COMMODE">
+          <sp who="COMMODE" xml:id="III02-1">
             <speaker>COMMODE.</speaker>
             <l n="857" xml:id="l857">Madame, à vos refus je viens ici moi-même </l>
             <l n="858" xml:id="l858">Abandonner encor l'honneur du Diadème, </l>
@@ -1488,7 +1505,7 @@
             <l n="879" xml:id="l879">Et qu'à se trop permettre on peut tout hasarder, </l>
             <l n="880" xml:id="l880">Quand l'Esclave qui prie a droit de commander. </l>
           </sp>
-          <sp xml:id="III02-2" who="HELVIE">
+          <sp who="HELVIE" xml:id="III02-2">
             <speaker>HELVIE.</speaker>
             <l n="881" xml:id="l881">Seigneur, de quelque orgueil que je sois soupçonnée, </l>
             <l n="882" xml:id="l882">Je me souviens toujours de ce que je suis née, </l>
@@ -1507,7 +1524,7 @@
             <l n="895" xml:id="l895">Et si dans Marcia c'est peu pour votre foi, </l>
             <l n="896" xml:id="l896">Si vous l'y dédaignez, que feriez-vous en moi ? </l>
           </sp>
-          <sp xml:id="III02-3" who="COMMODE">
+          <sp who="COMMODE" xml:id="III02-3">
             <speaker>COMMODE.</speaker>
             <l n="897" xml:id="l897">Laetus auprès de vous a mal servi ma flamme </l>
             <l n="898" xml:id="l898">Si ce faible scrupule alarme encor votre âme, </l>
@@ -1526,7 +1543,7 @@
             <l n="911" xml:id="l911">Consentez-y, Madame, et dans des voeux si doux, </l>
             <l n="912" xml:id="l912">Faites un peu pour moi quand je fais tout pour vous. </l>
           </sp>
-          <sp xml:id="III02-4" who="HELVIE">
+          <sp who="HELVIE" xml:id="III02-4">
             <speaker>HELVIE.</speaker>
             <l n="913" xml:id="l913">Vous faites trop, Seigneur, et je serais injuste </l>
             <l n="914" xml:id="l914">Si j'osais abuser un Empereur auguste, </l>
@@ -1537,7 +1554,7 @@
             <l n="919" xml:id="l919">Et quelque vaste éclat qu'il fît sur moi tomber, </l>
             <l n="920" xml:id="l920">J'aime mieux n'être rien que de le dérober. </l>
           </sp>
-          <sp xml:id="III02-5" who="COMMODE">
+          <sp who="COMMODE" xml:id="III02-5">
             <speaker>COMMODE.</speaker>
             <l n="921" xml:id="l921">Quoi, quand l'amour du Trône a pouvoir sur tout autre, </l>
             <l n="922" xml:id="l922">C'est peu que vous l'offrir pour mériter le vôtre, </l>
@@ -1546,9 +1563,9 @@
             <l n="925" xml:id="l925">Ce que l'ambition a de plus puissants charmes, </l>
             <l n="926" xml:id="l926">Pour vaincre sa fierté, n'a que de faibles armes ? </l>
             <l n="927" xml:id="l927">Si du Maître du monde il dédaigne la loi, </l>
-            <l n="928" xml:id="l928" part="I">À qui donc se soumettre ? </l>
+            <l n="928" part="I" xml:id="l928">À qui donc se soumettre ? </l>
           </sp>
-          <sp xml:id="III02-6" who="HELVIE">
+          <sp who="HELVIE" xml:id="III02-6">
             <speaker>HELVIE.</speaker>
             <l part="F">À moi, Seigneur, à moi. </l>
             <l n="929" xml:id="l929">Les Dieux m'en ont donné l'Empire pour partage, </l>
@@ -1556,21 +1573,21 @@
             <l n="931" xml:id="l931">Et du plus fort pouvoir quel que soit l'ascendant, </l>
             <l n="932" xml:id="l932">Cet hommage rendu le laisse indépendant. </l>
           </sp>
-          <sp xml:id="III02-7" who="COMMODE">
+          <sp who="COMMODE" xml:id="III02-7">
             <speaker>COMMODE.</speaker>
             <l n="933" xml:id="l933">Enfin, Madame, enfin je commence à connaître </l>
             <l n="934" xml:id="l934">Que j'ai tort de prier, pouvant parler en maître ; </l>
             <l n="935" xml:id="l935">J'en ai le droit, Madame, et l'orgueil le plus fier </l>
             <l n="936" xml:id="l936">Devrait s'en souvenir quand je veux l'oublier. </l>
           </sp>
-          <sp xml:id="III02-8" who="HELVIE">
+          <sp who="HELVIE" xml:id="III02-8">
             <speaker>HELVIE.</speaker>
             <l n="937" xml:id="l937">Je m'en souviens, Seigneur, et vous montrer une âme, </l>
             <l n="938" xml:id="l938">Malgré l'espoir du Trône, incapable de flamme, </l>
             <l n="939" xml:id="l939">L'exposer toute nue et sans fard à vos yeux, </l>
             <l n="940" xml:id="l940">C'est vouloir vous traiter de même que les Dieux. </l>
           </sp>
-          <sp xml:id="III02-9" who="COMMODE">
+          <sp who="COMMODE" xml:id="III02-9">
             <speaker>COMMODE.</speaker>
             <l n="941" xml:id="l941">Et bien, puisque l'amour n'y saurait trouver place, </l>
             <l n="942" xml:id="l942">D'un indigne refus il faut souffrir l'audace, </l>
@@ -1581,14 +1598,14 @@
             <l n="947" xml:id="l947">Et puisque votre orgueil s'obstine à m'outrager, </l>
             <l n="948" xml:id="l948">S'il ne le peut abattre, il m'en saura venger. </l>
           </sp>
-          <sp xml:id="III02-10" who="HELVIE">
+          <sp who="HELVIE" xml:id="III02-10">
             <speaker>HELVIE.</speaker>
             <l n="949" xml:id="l949">Et moi, Seigneur, et moi, j'oserai vous apprendre, </l>
             <l n="950" xml:id="l950">Qu'abandonnant ma vie au soin de m'en défendre, </l>
             <l n="951" xml:id="l951">Je sais pour en sortir cent chemins différents, </l>
             <l n="952" xml:id="l952">Si je vous vois marcher sur les pas des Tyrans. </l>
           </sp>
-          <sp xml:id="III02-11" who="COMMODE">
+          <sp who="COMMODE" xml:id="III02-11">
             <speaker>COMMODE.</speaker>
             <l n="953" xml:id="l953">Oui, je serai Tyran, et puisqu'on se déclare, </l>
             <l n="954" xml:id="l954">Pour qui m'est trop cruel je veux être barbare, </l>
@@ -1604,36 +1621,36 @@
             <l n="964" xml:id="l964">Exécutez soudain l'ordre que j'ai donné. </l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Helvie, Flavian, Julie. </head>
-          <sp xml:id="III03-1" who="HELVIE">
+          <sp who="HELVIE" xml:id="III03-1">
             <speaker>HELVIE.</speaker>
             <l n="965" xml:id="l965">Ma mort est résolue, et bien, me voilà prête, </l>
             <l n="966" xml:id="l966">Où faut-il, Flavian, que je porte ma tête ? </l>
           </sp>
-          <sp xml:id="III03-2" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III03-2">
             <speaker>FLAVIAN.</speaker>
-            <l n="967" xml:id="l967" part="I">Ah, Madame, voyez... </l>
+            <l n="967" part="I" xml:id="l967">Ah, Madame, voyez... </l>
           </sp>
-          <sp xml:id="III03-3" who="HELVIE">
+          <sp who="HELVIE" xml:id="III03-3">
             <speaker>HELVIE.</speaker>
             <l part="F">Non, non, mon choix est fait, </l>
             <l n="968" xml:id="l968">Et quel que soit votre ordre, il en faut voir l'effet. </l>
           </sp>
-          <sp xml:id="III03-4" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III03-4">
             <speaker>FLAVIAN.</speaker>
             <l n="969" xml:id="l969">Quelle en est la rigueur et pour l'un et pour l'autre! </l>
             <l n="970" xml:id="l970">L'Empereur veut du sang, mais ce n'est pas le vôtre, </l>
             <l n="971" xml:id="l971">Et si vous n'en changez l'impitoyable arrêt, </l>
             <l n="972" xml:id="l972">Celui de Pertinax est le seul qui lui plaît. </l>
           </sp>
-          <sp xml:id="III03-5" who="HELVIE">
+          <sp who="HELVIE" xml:id="III03-5">
             <speaker>HELVIE.</speaker>
             <l n="973" xml:id="l973">De mon Père ! Ah, je tremble, et ma raison s'égare, </l>
             <l n="974" xml:id="l974">D'un barbare Tyran ordre vraiment barbare ! </l>
             <l n="975" xml:id="l975">Hélas ! Et Flavian s'en est voulu charger ? </l>
           </sp>
-          <sp xml:id="III03-6" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III03-6">
             <speaker>FLAVIAN.</speaker>
             <l n="976" xml:id="l976">D'assez fortes raisons m'y devaient obliger. </l>
             <l n="977" xml:id="l977">J'empêche au moins par là qu'une main plus hardie </l>
@@ -1646,20 +1663,20 @@
             <l n="984" xml:id="l984">Sans le pouvoir sauver c'est me perdre avec vous. </l>
             <l n="985" xml:id="l985">Un autre à mon refus, plein d'une lâche audace... </l>
           </sp>
-          <sp xml:id="III03-7" who="HELVIE">
+          <sp who="HELVIE" xml:id="III03-7">
             <speaker>HELVIE.</speaker>
             <l n="986" xml:id="l986">Ah, je puis, et j'en dois empêcher la menace. </l>
           </sp>
-          <sp xml:id="III03-8" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III03-8">
             <speaker>FLAVIAN.</speaker>
             <l n="987" xml:id="l987">Madame, je vais donc assurer l'Empereur... </l>
           </sp>
-          <sp xml:id="III03-9" who="HELVIE">
+          <sp who="HELVIE" xml:id="III03-9">
             <speaker>HELVIE.</speaker>
             <l n="988" xml:id="l988">Que tout mon sang est prêt d'assouvir sa fureur, </l>
             <l n="989" xml:id="l989">Que pour le satisfaire il n'est tourment ni peine... </l>
           </sp>
-          <sp xml:id="III03-10" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III03-10">
             <speaker>FLAVIAN.</speaker>
             <l n="990" xml:id="l990">Pour fléchir sa rigueur votre espérance est vaine. </l>
             <l n="991" xml:id="l991">Piqué que son amour n'ait pu rien obtenir, </l>
@@ -1667,44 +1684,44 @@
             <l n="993" xml:id="l993">Et si pour son hymen vous n'êtes toute prête, </l>
             <l n="994" xml:id="l994">Je ne puis le revoir qu'en lui portant sa tête. </l>
             <l n="995" xml:id="l995">Avec de tels transports il l'a su commander </l>
-            <l n="996" xml:id="l996" part="I">Qu'à moins qu'on ne lui cède... </l>
+            <l n="996" part="I" xml:id="l996">Qu'à moins qu'on ne lui cède... </l>
           </sp>
-          <sp xml:id="III03-11" who="HELVIE">
+          <sp who="HELVIE" xml:id="III03-11">
             <speaker>HELVIE.</speaker>
             <l part="F">Et bien, il faut céder. </l>
             <l n="997" xml:id="l997">Je dois à la Nature un effort si funeste ; </l>
             <l n="998" xml:id="l998">Promettez tout, les Dieux disposeront du reste. </l>
           </sp>
-          <sp xml:id="III03-12" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="III03-12">
             <speaker>FLAVIAN.</speaker>
-            <l n="999" xml:id="l999" part="I">Madame... </l>
+            <l n="999" part="I" xml:id="l999">Madame... </l>
           </sp>
-          <sp xml:id="III03-13" who="HELVIE">
+          <sp who="HELVIE" xml:id="III03-13">
             <speaker>HELVIE.</speaker>
             <l part="F">Allez, de grâce, et me laissez du moins </l>
             <l n="1000" xml:id="l1000">Dans un sort si cruel soupirer sans témoins. </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Helvie, Julie. </head>
-          <sp xml:id="III04-1" who="JULIE">
+          <sp who="JULIE" xml:id="III04-1">
             <speaker>JULIE.</speaker>
             <l n="1001" xml:id="l1001">Madame, ce triomphe obtenu sur vous-même </l>
             <l n="1002" xml:id="l1002">Sans doute auprès des Dieux sera d'un prix extrême, </l>
             <l n="1003" xml:id="l1003">Et contre votre espoir en obtiendra pour vous </l>
             <l n="1004" xml:id="l1004">Du plus heureux destin le revers le plus doux. </l>
           </sp>
-          <sp xml:id="III04-2" who="HELVIE">
+          <sp who="HELVIE" xml:id="III04-2">
             <speaker>HELVIE.</speaker>
             <l n="1005" xml:id="l1005">Que le mien s'adoucisse! Hélas ! Que veux-tu croire ? </l>
           </sp>
-          <sp xml:id="III04-3" who="JULIE">
+          <sp who="JULIE" xml:id="III04-3">
             <speaker>JULIE.</speaker>
             <l n="1006" xml:id="l1006">Qu'à se faire obéir l'Empereur met sa gloire, </l>
             <l n="1007" xml:id="l1007">Et que se contentant de vaincre vos refus, </l>
             <l n="1008" xml:id="l1008">S'il voit vos voeux soumis, il ne pressera plus. </l>
           </sp>
-          <sp xml:id="III04-4" who="HELVIE">
+          <sp who="HELVIE" xml:id="III04-4">
             <speaker>HELVIE.</speaker>
             <l n="1009" xml:id="l1009">Que tu le connais mal d'en juger de la sorte ! </l>
             <l n="1010" xml:id="l1010">Toujours dans un Tyran l'injustice l'emporte, </l>
@@ -1720,130 +1737,130 @@
             <l n="1020" xml:id="l1020">Ô nature, ô devoir, où me réduisez-vous ? </l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
-          <head>SCÈNE V. Marcia, Helvie,  Julie, Lucie. </head>
-          <sp xml:id="III05-1" who="MARCIA">
+        <div2 n="5" type="scene" xml:id="III05">
+          <head>SCÈNE V. Marcia, Helvie, Julie, Lucie. </head>
+          <sp who="MARCIA" xml:id="III05-1">
             <speaker>MARCIA.</speaker>
             <l n="1021" xml:id="l1021">Madame, car le Ciel à vos désirs propice </l>
             <l n="1022" xml:id="l1022">M'oblige à ce respect pour mon Impératrice, </l>
             <l n="1023" xml:id="l1023">Et je dois ajouter aux honneurs éclatants... </l>
           </sp>
-          <sp xml:id="III05-2" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-2">
             <speaker>HELVIE.</speaker>
             <l n="1024" xml:id="l1024">Ma soeur, n'affectons point d'importuns contretemps. </l>
             <l n="1025" xml:id="l1025">Quoi que vous présumiez de mes brigues secrètes, </l>
             <l n="1026" xml:id="l1026">Leur froideur vous sied mal en l'état où vous êtes. </l>
           </sp>
-          <sp xml:id="III05-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-3">
             <speaker>MARCIA.</speaker>
             <l n="1027" xml:id="l1027">Il offre à votre coeur un triomphe assez doux. </l>
           </sp>
-          <sp xml:id="III05-4" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-4">
             <speaker>HELVIE.</speaker>
             <l n="1028" xml:id="l1028">Au moins ce qui s'y passe est un secret pour vous. </l>
           </sp>
-          <sp xml:id="III05-5" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-5">
             <speaker>MARCIA.</speaker>
             <l n="1029" xml:id="l1029">Laetus à mon défaut en a la confidence. </l>
           </sp>
-          <sp xml:id="III05-6" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-6">
             <speaker>HELVIE.</speaker>
             <l n="1030" xml:id="l1030">Laetus y peut avoir plus de part qu'on ne pense. </l>
           </sp>
-          <sp xml:id="III05-7" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-7">
             <speaker>MARCIA.</speaker>
             <l n="1031" xml:id="l1031">Vous faites de son zèle un glorieux essai. </l>
           </sp>
-          <sp xml:id="III05-8" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-8">
             <speaker>HELVIE.</speaker>
             <l n="1032" xml:id="l1032">Si je lui dois beaucoup, je m'en acquitterai. </l>
           </sp>
-          <sp xml:id="III05-9" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-9">
             <speaker>MARCIA.</speaker>
             <l n="1033" xml:id="l1033">Ce sentiment est juste, il vous a bien servie. </l>
           </sp>
-          <sp xml:id="III05-10" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-10">
             <speaker>HELVIE.</speaker>
             <l n="1034" xml:id="l1034">Il l'a tâché peut-être aux dépens de sa vie. </l>
           </sp>
-          <sp xml:id="III05-11" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-11">
             <speaker>MARCIA.</speaker>
             <l n="1035" xml:id="l1035">Tant de charmants appas à nuls autres pareils </l>
             <l n="1036" xml:id="l1036">Auprès de l'Empereur appuyaient ses conseils ; </l>
             <l n="1037" xml:id="l1037">Avec de tels seconds il n'avait rien à craindre. </l>
           </sp>
-          <sp xml:id="III05-12" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-12">
             <speaker>HELVIE.</speaker>
             <l n="1038" xml:id="l1038">S'il a brigué pour moi, vous en êtes à plaindre. </l>
           </sp>
-          <sp xml:id="III05-13" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-13">
             <speaker>MARCIA.</speaker>
             <l n="1039" xml:id="l1039">Commode en sa faveur aime à le publier. </l>
           </sp>
-          <sp xml:id="III05-14" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-14">
             <speaker>HELVIE.</speaker>
             <l n="1040" xml:id="l1040">Je n'ai pas entrepris de le justifier. </l>
           </sp>
-          <sp xml:id="III05-15" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-15">
             <speaker>MARCIA.</speaker>
             <l n="1041" xml:id="l1041">Cependant votre orgueil relâchant son audace </l>
             <l n="1042" xml:id="l1042">Aux voeux de l'Empereur a daigné faire grâce, </l>
             <l n="1043" xml:id="l1043">Pressé par Flavian il s'est enfin rendu ? </l>
           </sp>
-          <sp xml:id="III05-16" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-16">
             <speaker>HELVIE.</speaker>
             <l n="1044" xml:id="l1044">J'ai suivi votre exemple, et fait ce que j'ai dû. </l>
           </sp>
-          <sp xml:id="III05-17" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-17">
             <speaker>MARCIA.</speaker>
             <l n="1045" xml:id="l1045">C'est contraindre bientôt cet orgueil à se taire. </l>
           </sp>
-          <sp xml:id="III05-18" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-18">
             <speaker>HELVIE.</speaker>
             <l n="1046" xml:id="l1046">J'apprends de vous, ma soeur, à craindre pour un Père. </l>
           </sp>
-          <sp xml:id="III05-19" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-19">
             <speaker>MARCIA.</speaker>
             <l n="1047" xml:id="l1047">Donc son seul intérêt arrache votre aveu ? </l>
           </sp>
-          <sp xml:id="III05-20" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-20">
             <speaker>HELVIE.</speaker>
             <l n="1048" xml:id="l1048">Je vous dirais en vain ce que vous croiriez peu. </l>
           </sp>
-          <sp xml:id="III05-21" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-21">
             <speaker>MARCIA.</speaker>
             <l n="1049" xml:id="l1049">Le prétexte est plausible, et d'une lâche injure </l>
             <l n="1050" xml:id="l1050">Empêche contre vous que Rome ne murmure. </l>
             <l n="1051" xml:id="l1051">Menaces et refus, tout est bien concerté. </l>
           </sp>
-          <sp xml:id="III05-22" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-22">
             <speaker>HELVIE.</speaker>
             <l n="1052" xml:id="l1052">Le temps me purgera de cette lâcheté. </l>
           </sp>
-          <sp xml:id="III05-23" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-23">
             <speaker>MARCIA.</speaker>
             <l n="1053" xml:id="l1053">De vos déguisements il publiera la honte. </l>
           </sp>
-          <sp xml:id="III05-24" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-24">
             <speaker>HELVIE.</speaker>
             <l n="1054" xml:id="l1054">À la gloire souvent c'est par eux que l'on monte, </l>
             <l n="1055" xml:id="l1055">Et la vôtre du Sort pourrait braver les traits </l>
             <l n="1056" xml:id="l1056">Si vous vous déguisiez aussi bien que je fais. </l>
           </sp>
-          <sp xml:id="III05-25" who="MARCIA">
+          <sp who="MARCIA" xml:id="III05-25">
             <speaker>MARCIA.</speaker>
             <l n="1057" xml:id="l1057">Moi, d'un vil procédé dissimuler l'outrage ? </l>
           </sp>
-          <sp xml:id="III05-26" who="HELVIE">
+          <sp who="HELVIE" xml:id="III05-26">
             <speaker>HELVIE.</speaker>
             <l n="1058" xml:id="l1058">Je souffre que par là votre ennui se soulage, </l>
             <l n="1059" xml:id="l1059">Et puisqu'en éclatant il se peut modérer, </l>
             <l n="1060" xml:id="l1060">Je vous laisse Électus à qui le déclarer. </l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI. Marcia, Électus, Lucie. </head>
-          <sp xml:id="III06-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-1">
             <speaker>MARCIA.</speaker>
             <l n="1061" xml:id="l1061">L'on me brave, Électus, et ma triste disgrâce </l>
             <l n="1062" xml:id="l1062">D'un orgueilleux mépris accroît l'indigne audace, </l>
@@ -1854,7 +1871,7 @@
             <l n="1067" xml:id="l1067">Et si toujours la gloire est dans ton souvenir, </l>
             <l n="1068" xml:id="l1068">Par ton seul intérêt tu me la dois tenir. </l>
           </sp>
-          <sp xml:id="III06-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="1069" xml:id="l1069">Madame, plût au Ciel que mon sang, que ma vie </l>
             <l n="1070" xml:id="l1070">Fût le prix des grandeurs que le Sort vous envie, </l>
@@ -1869,7 +1886,7 @@
             <l n="1079" xml:id="l1079">Et j'emploierais en vain tout ce que je vous dois </l>
             <l n="1080" xml:id="l1080">À forcer sa raison de vous rendre sa foi. </l>
           </sp>
-          <sp xml:id="III06-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-3">
             <speaker>MARCIA.</speaker>
             <l n="1081" xml:id="l1081">De ta parole en vain par là tu te crois quitte ; </l>
             <l n="1082" xml:id="l1082">Non que d'un plein effet mon coeur te sollicite, </l>
@@ -1892,13 +1909,13 @@
             <l n="1099" xml:id="l1099">Et que ton bras vengeur, prompt à me secourir, </l>
             <l n="1100" xml:id="l1100">M'aura mise en état de te l'oser offrir. </l>
           </sp>
-          <sp xml:id="III06-4" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-4">
             <speaker>ÉLECTUS.</speaker>
             <l n="1101" xml:id="l1101">Ah, quelque rude effort dont la rigueur l'opprime, </l>
             <l n="1102" xml:id="l1102">Ne mettez point si bas un coeur si magnanime. </l>
             <l n="1103" xml:id="l1103">Il est toujours d'un prix trop haut, trop relevé... </l>
           </sp>
-          <sp xml:id="III06-5" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-5">
             <speaker>MARCIA.</speaker>
             <l n="1104" xml:id="l1104">Non, non, ton intérêt doit être conservé, </l>
             <l n="1105" xml:id="l1105">En vain du tien séduit la flamme trop ardente </l>
@@ -1910,11 +1927,11 @@
             <l n="1111" xml:id="l1111">Et d'un indigne affront confondant l'attentat, </l>
             <l n="1112" xml:id="l1112">Joins un éclat plus vif à son premier éclat. </l>
           </sp>
-          <sp xml:id="III06-6" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-6">
             <speaker>ÉLECTUS.</speaker>
-            <l n="1113" xml:id="l1113" part="I">Hélas ! </l>
+            <l n="1113" part="I" xml:id="l1113">Hélas ! </l>
           </sp>
-          <sp xml:id="III06-7" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-7">
             <speaker>MARCIA.</speaker>
             <l part="F">Quoi, ton ardeur pour moi toujours si prompte, </l>
             <l n="1114" xml:id="l1114">Ne m'offre qu'un soupir à réparer ma honte, </l>
@@ -1925,20 +1942,20 @@
             <l n="1119" xml:id="l1119">Qu'as-tu fait d'Électus, et dans ce triste jour </l>
             <l n="1120" xml:id="l1120">Que devient sa vertu ? Que devient son amour ? </l>
           </sp>
-          <sp xml:id="III06-8" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-8">
             <speaker>ÉLECTUS.</speaker>
             <l n="1121" xml:id="l1121">L'une et l'autre a sur moi toujours le même empire, </l>
             <l n="1122" xml:id="l1122">Mais leurs droits sont divers, et c'est dont je soupire, </l>
             <l n="1123" xml:id="l1123">Puisque des deux côtés mon coeur trop combattu, </l>
             <l n="1124" xml:id="l1124">Voulant tout par amour, n'ose rien par vertu. </l>
           </sp>
-          <sp xml:id="III06-9" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-9">
             <speaker>MARCIA.</speaker>
             <l n="1125" xml:id="l1125">Quoi, la tienne en ton coeur souffre tant de faiblesse </l>
             <l n="1126" xml:id="l1126">Que lui-même il te porte à trahir ta Maîtresse ? </l>
             <l n="1127" xml:id="l1127">Tu préfères par elle un Tyran à ta foi ? </l>
           </sp>
-          <sp xml:id="III06-10" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-10">
             <speaker>ÉLECTUS.</speaker>
             <l n="1128" xml:id="l1128">S'il l'est pour tout le monde, il ne l'est pas pour moi, </l>
             <l n="1129" xml:id="l1129">Et lorsqu'en ma faveur chaque jour il s'explique, </l>
@@ -1952,16 +1969,16 @@
             <l n="1137" xml:id="l1137">Et portant un poignard dans le sein de mon Maître </l>
             <l n="1138" xml:id="l1138">Joindre au titre d'ingrat l'infâme nom de traître. </l>
           </sp>
-          <sp xml:id="III06-11" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-11">
             <speaker>MARCIA.</speaker>
             <l n="1139" xml:id="l1139">Je sais qu'à ton destin il abaissa le sien, </l>
             <l n="1140" xml:id="l1140">Que tu lui dois beaucoup, mais ne me dois-tu rien ? </l>
           </sp>
-          <sp xml:id="III06-12" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-12">
             <speaker>ÉLECTUS.</speaker>
             <l n="1141" xml:id="l1141">Tout, où son intérêt ne combat pas le vôtre. </l>
           </sp>
-          <sp xml:id="III06-13" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-13">
             <speaker>MARCIA.</speaker>
             <l n="1142" xml:id="l1142">Et bien, il t'est aisé d'accorder l'un et l'autre, </l>
             <l n="1143" xml:id="l1143">Et le Ciel aujourd'hui te laisse le pouvoir </l>
@@ -1993,11 +2010,11 @@
             <l n="1169" xml:id="l1169">Et sûr de tes projets, tu cherchais à me vendre </l>
             <l n="1170" xml:id="l1170">La lâcheté d'un coeur dont j'osais tout attendre. </l>
           </sp>
-          <sp xml:id="III06-14" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-14">
             <speaker>ÉLECTUS.</speaker>
-            <l n="1171" xml:id="l1171" part="I">Quoi, Madame... </l>
+            <l n="1171" part="I" xml:id="l1171">Quoi, Madame... </l>
           </sp>
-          <sp xml:id="III06-15" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-15">
             <speaker>MARCIA.</speaker>
             <l part="F">Il suffit, je n'écoute plus rien. </l>
             <l n="1172" xml:id="l1172">Mon bras pourrait agir où j'employais le tien, </l>
@@ -2010,11 +2027,11 @@
             <l n="1179" xml:id="l1179">Et de voir par toi seul le pouvoir absolu </l>
             <l n="1180" xml:id="l1180">Être le prix d'un coeur que tu n'as pas voulu. </l>
           </sp>
-          <sp xml:id="III06-16" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="III06-16">
             <speaker>ÉLECTUS.</speaker>
             <l n="1181" xml:id="l1181">Ah, si jamais l'hymen où l'Empereur s'apprête... </l>
           </sp>
-          <sp xml:id="III06-17" who="MARCIA">
+          <sp who="MARCIA" xml:id="III06-17">
             <speaker>MARCIA.</speaker>
             <l n="1182" xml:id="l1182">Tu perds temps, il me faut ou son Trône ou sa tête. </l>
             <l n="1183" xml:id="l1183">Je vais songer à l'un ; si tu veux m'obtenir, </l>
@@ -2022,18 +2039,18 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Commode, Flavian, Suite de l'Empereur. </head>
-          <sp xml:id="IV01-1" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV01-1">
             <speaker>COMMODE.</speaker>
             <l n="1185" xml:id="l1185">Vient-elle cette aimable et fière criminelle, </l>
             <l n="1186" xml:id="l1186">Qui te promettait tout pour mieux tromper ton zèle, </l>
             <l n="1187" xml:id="l1187">Et n'a feint de céder à mon ardent amour, </l>
             <l n="1188" xml:id="l1188">Que pour prendre son temps à me priver du jour ? </l>
           </sp>
-          <sp xml:id="IV01-2" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="IV01-2">
             <speaker>FLAVIAN.</speaker>
             <l n="1189" xml:id="l1189">On va vous l'amener, Seigneur; mais j'appréhende </l>
             <l n="1190" xml:id="l1190">Que jusqu'à s'applaudir sa fureur ne s'étende, </l>
@@ -2048,7 +2065,7 @@
             <l n="1199" xml:id="l1199">Elle en ose porter l'audace au plus haut point, </l>
             <l n="1200" xml:id="l1200">Et si vous m'en croyez, vous ne la verrez point. </l>
           </sp>
-          <sp xml:id="IV01-3" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV01-3">
             <speaker>COMMODE.</speaker>
             <l n="1201" xml:id="l1201">D'abord surpris d'un coup si noir, si détestable, </l>
             <l n="1202" xml:id="l1202">Je n'ai pu la souffrir, cette ingrate coupable, </l>
@@ -2067,7 +2084,7 @@
             <l n="1215" xml:id="l1215">Il cède à des attraits qu'il ne peut soutenir, </l>
             <l n="1216" xml:id="l1216">Et punissant son crime il craint de se punir. </l>
           </sp>
-          <sp xml:id="IV01-4" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="IV01-4">
             <speaker>FLAVIAN.</speaker>
             <l n="1217" xml:id="l1217">Ce crime veut sans doute une pleine vengeance, </l>
             <l n="1218" xml:id="l1218">Mais on la peut, Seigneur, trouver dans la clémence, </l>
@@ -2080,21 +2097,35 @@
             <l n="1225" xml:id="l1225">Et sa faible prudence à ses conseils réduite </l>
             <l n="1226" xml:id="l1226">Perd ses plus grands projets, ou les laisse sans suite. </l>
           </sp>
-          <sp xml:id="IV01-5" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV01-5">
             <speaker>COMMODE.</speaker>
             <l n="1227" xml:id="l1227">Non, Flavian, un crime et si noir et si bas </l>
             <l n="1228" xml:id="l1228">Engage plus de coeurs qu'il n'a montré de bras. </l>
             <l n="1229" xml:id="l1229">Le coup qu'à d'autres mains ils auront cru remettre, </l>
           </sp>
-          <sp xml:id="IV01-6" who="HELVIE"><speaker>HELVIE.</speaker>aura sans doute osé se le permettre, 
-	<l n="1230" xml:id="l1230">Et selon son transport croyant l'exécuter, </l><l n="1231" xml:id="l1231">Fait avorter la trame à la précipiter. </l><l n="1232" xml:id="l1232">Peut-être que ma mort où l'inhumaine aspire </l><l n="1233" xml:id="l1233">Ouvrait à quelque Amant un chemin à l'Empire ; </l><l n="1234" xml:id="l1234">Et que d'un attentat pour le Trône entrepris </l><l n="1235" xml:id="l1235">Ce coeur qu'on me refuse était l'injuste prix. </l><l n="1236" xml:id="l1236">Ah, c'est mon désespoir, si méprisant ma peine </l><l n="1237" xml:id="l1237">Son amour pour un autre aigrit pour moi la haine. </l><l n="1238" xml:id="l1238">C'est là, c'est ce qu'en vain je voudrais pardonner. </l><l n="1239" xml:id="l1239">Je sais trop entre nous qui je dois soupçonner ; </l><l n="1240" xml:id="l1240" part="I">Laetus, l'ingrat Laetus...</l></sp>
-          <sp xml:id="IV01-7" who="FLAVIAN">
+          <sp who="HELVIE" xml:id="IV01-6">
+            <speaker>HELVIE.</speaker>
+            <!-- ??? -->
+            <l>aura sans doute osé se le permettre,</l>
+            <l n="1230" xml:id="l1230">Et selon son transport croyant l'exécuter, </l>
+            <l n="1231" xml:id="l1231">Fait avorter la trame à la précipiter. </l>
+            <l n="1232" xml:id="l1232">Peut-être que ma mort où l'inhumaine aspire </l>
+            <l n="1233" xml:id="l1233">Ouvrait à quelque Amant un chemin à l'Empire ; </l>
+            <l n="1234" xml:id="l1234">Et que d'un attentat pour le Trône entrepris </l>
+            <l n="1235" xml:id="l1235">Ce coeur qu'on me refuse était l'injuste prix. </l>
+            <l n="1236" xml:id="l1236">Ah, c'est mon désespoir, si méprisant ma peine </l>
+            <l n="1237" xml:id="l1237">Son amour pour un autre aigrit pour moi la haine. </l>
+            <l n="1238" xml:id="l1238">C'est là, c'est ce qu'en vain je voudrais pardonner. </l>
+            <l n="1239" xml:id="l1239">Je sais trop entre nous qui je dois soupçonner ; </l>
+            <l n="1240" part="I" xml:id="l1240">Laetus, l'ingrat Laetus...</l>
+          </sp>
+          <sp who="FLAVIAN" xml:id="IV01-7">
             <speaker>FLAVIAN.</speaker>
             <l part="F">Ah, Seigneur, c'est trop croire. </l>
             <l n="1241" xml:id="l1241">Laetus dans son devoir a toujours mis sa gloire, </l>
-            <l n="1242" xml:id="l1242" part="I">Et jamais... </l>
+            <l n="1242" part="I" xml:id="l1242">Et jamais... </l>
           </sp>
-          <sp xml:id="IV01-8" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV01-8">
             <speaker>COMMODE.</speaker>
             <l part="F">Cependant Laetus avec chaleur </l>
             <l n="1243" xml:id="l1243">A combattu ma flamme, en a blâmé l'ardeur. </l>
@@ -2105,12 +2136,12 @@
             <l n="1248" xml:id="l1248">Quoi qu'Helvie ait osé, l'un et l'autre est pour elle, </l>
             <l n="1249" xml:id="l1249">Et le seul Flavian me demeure fidèle. </l>
           </sp>
-          <sp xml:id="IV01-9" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="IV01-9">
             <speaker>FLAVIAN.</speaker>
             <l n="1250" xml:id="l1250">Seigneur, de tout mon sang je vous le signerai. </l>
             <l n="1251" xml:id="l1251">Commandez, ordonnez, et j'exécuterai. </l>
           </sp>
-          <sp xml:id="IV01-10" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV01-10">
             <speaker>COMMODE.</speaker>
             <l n="1252" xml:id="l1252">Contre mes Ennemis ton zèle inébranlable </l>
             <l n="1253" xml:id="l1253">Du plus secret emploi t'a fait trop voir capable, </l>
@@ -2118,9 +2149,9 @@
             <l n="1255" xml:id="l1255">Fais-moi chercher Laetus, et qu'on l'amène ici. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Commode, Helvie,  Flavian. </head>
-          <sp xml:id="IV02-1" who="COMMODE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Commode, Helvie, Flavian. </head>
+          <sp who="COMMODE" xml:id="IV02-1">
             <speaker>COMMODE.</speaker>
             <l n="1256" xml:id="l1256">Approche, ingrate, approche, et contrains ton audace </l>
             <l n="1257" xml:id="l1257">De soumettre ta haine à l'espoir de ma grâce ; </l>
@@ -2135,7 +2166,7 @@
             <l n="1266" xml:id="l1266">Ma passion m'en presse, et pour y consentir </l>
             <l n="1267" xml:id="l1267">Ce coeur, quoi qu'outragé, ne veut qu'un repentir. </l>
           </sp>
-          <sp xml:id="IV02-2" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV02-2">
             <speaker>HELVIE.</speaker>
             <l n="1268" xml:id="l1268">Tu triomphes, Commode, et ce que peu flexible </l>
             <l n="1269" xml:id="l1269">Ma haine auparavant n'aurait pas cru possible, </l>
@@ -2146,14 +2177,14 @@
             <l n="1274" xml:id="l1274">Emploie à m'en punir tout ce qu'ose le tien, </l>
             <l n="1275" xml:id="l1275">Ayant tout mérité je ne refuse rien. </l>
           </sp>
-          <sp xml:id="IV02-3" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV02-3">
             <speaker>COMMODE.</speaker>
             <l n="1276" xml:id="l1276">Ah, que je trouverais de quoi me satisfaire </l>
             <l n="1277" xml:id="l1277">Si j'osais m'assurer que tu fusses sincère, </l>
             <l n="1278" xml:id="l1278">Et que ta trahison te fît assez d'horreur </l>
             <l n="1279" xml:id="l1279">Pour te coûter ta haine, et m'acquérir ton coeur ! </l>
           </sp>
-          <sp xml:id="IV02-4" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV02-4">
             <speaker>HELVIE.</speaker>
             <l n="1280" xml:id="l1280">Va, pour ton intérêt ainsi que pour ma gloire </l>
             <l n="1281" xml:id="l1281">Je te veux bien ici donner lieu de me croire, </l>
@@ -2168,7 +2199,7 @@
             <l n="1290" xml:id="l1290">D'avoir vu sous le tien son effort avorter, </l>
             <l n="1291" xml:id="l1291">Et mérité la mort qu'il te voulait porter. </l>
           </sp>
-          <sp xml:id="IV02-5" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV02-5">
             <speaker>COMMODE.</speaker>
             <l n="1292" xml:id="l1292">Quoi, ta fierté s'élève à tel point d'insolence </l>
             <l n="1293" xml:id="l1293">Que tu fais gloire encor de braver ma clémence, </l>
@@ -2179,7 +2210,7 @@
             <l n="1298" xml:id="l1298">Et songe que l'orgueil qui les outrage en moi, </l>
             <l n="1299" xml:id="l1299">Intéresse leur foudre à descendre sur toi. </l>
           </sp>
-          <sp xml:id="IV02-6" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV02-6">
             <speaker>HELVIE.</speaker>
             <l n="1300" xml:id="l1300">Je sais qu'un vif rayon de leur toute-puissance </l>
             <l n="1301" xml:id="l1301">Doit briller sur le front de ceux de ta naissance, </l>
@@ -2202,13 +2233,13 @@
             <l n="1318" xml:id="l1318">Ces demi-Souverains par de lâches rigueurs, </l>
             <l n="1319" xml:id="l1319">S'en immolant les biens, t'en dérobent les coeurs. </l>
           </sp>
-          <sp xml:id="IV02-7" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV02-7">
             <speaker>COMMODE.</speaker>
             <l n="1320" xml:id="l1320">Ta haine à tort sur moi par là s'ose répandre. </l>
             <l n="1321" xml:id="l1321">Si le désordre est tel me le vient-on apprendre ? </l>
             <l n="1322" xml:id="l1322">Me vient-on expliquer ces secrets attentats ? </l>
           </sp>
-          <sp xml:id="IV02-8" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV02-8">
             <speaker>HELVIE.</speaker>
             <l n="1323" xml:id="l1323">Et qui les doit savoir si tu ne les sais pas ? </l>
             <l n="1324" xml:id="l1324">Le Ciel t'a-t-il commis la puissance suprême </l>
@@ -2232,7 +2263,7 @@
             <l n="1342" xml:id="l1342">Ne faisait qu'usurper, à punir tes forfaits, </l>
             <l n="1343" xml:id="l1343">L'office de ce foudre à qui tu me remets. </l>
           </sp>
-          <sp xml:id="IV02-9" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV02-9">
             <speaker>COMMODE.</speaker>
             <l n="1344" xml:id="l1344">Je t'ai laissé vomir ta rage la plus noire </l>
             <l n="1345" xml:id="l1345">Pour chasser de mon coeur l'opprobre de ma gloire, </l>
@@ -2249,7 +2280,7 @@
             <l n="1356" xml:id="l1356">Et sans rien hasarder, au gré de ton envie, </l>
             <l n="1357" xml:id="l1357">Choisi l'occasion de t'immoler ma vie. </l>
           </sp>
-          <sp xml:id="IV02-10" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV02-10">
             <speaker>HELVIE.</speaker>
             <l n="1358" xml:id="l1358">Tu m'offenses, Commode, à vouloir comme toi </l>
             <l n="1359" xml:id="l1359">Qu'Helvie en ses projets n'ait ni vertu ni foi. </l>
@@ -2262,7 +2293,7 @@
             <l n="1366" xml:id="l1366">Et c'est pour un Tyran un trop glorieux sort, </l>
             <l n="1367" xml:id="l1367">Lorsqu'il en coûte un crime à qui résout sa mort. </l>
           </sp>
-          <sp xml:id="IV02-11" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV02-11">
             <speaker>COMMODE.</speaker>
             <l n="1368" xml:id="l1368">Tu crois ne pouvoir mieux cacher ce qui t'engage, </l>
             <l n="1369" xml:id="l1369">Qu'en entassant toujours outrage sur outrage, </l>
@@ -2274,31 +2305,31 @@
             <l n="1375" xml:id="l1375">Voici de qui peut-être on le pourra savoir. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Commode, Helvie, Laetus, Flavian. </head>
-          <sp xml:id="IV03-1" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV03-1">
             <speaker>COMMODE.</speaker>
             <l n="1376" xml:id="l1376">Viens t'expliquer, Laetus, c'est en faveur d'Helvie.</l>
             <l n="1377" xml:id="l1377">Son intérêt t'en presse, et l'honneur t'y convie. </l>
-            <l n="1378" xml:id="l1378" part="I">Parle sans balancer, l'aimes-tu ? Dis. </l>
+            <l n="1378" part="I" xml:id="l1378">Parle sans balancer, l'aimes-tu ? Dis. </l>
           </sp>
-          <sp xml:id="IV03-2" who="LAETUS">
+          <sp who="LAETUS" xml:id="IV03-2">
             <speaker>LAETUS.</speaker>
             <l part="F">Seigneur... </l>
           </sp>
-          <sp xml:id="IV03-3" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV03-3">
             <speaker>HELVIE.</speaker>
             <l n="1379" xml:id="l1379">De quoi t'embarrasser? Laetus aime l'honneur, </l>
             <l n="1380" xml:id="l1380">Laetus aime la gloire, et tu n'en dois attendre </l>
             <l n="1381" xml:id="l1381">Que ce que sa vertu t'a pu cent fois apprendre. </l>
           </sp>
-          <sp xml:id="IV03-4" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV03-4">
             <speaker>COMMODE.</speaker>
             <l n="1382" xml:id="l1382">Quoi, tu souffres qu'Helvie ici parle pour toi ? </l>
             <l n="1383" xml:id="l1383">Son crime ou son péril étonnent-ils ta foi ? </l>
             <l n="1384" xml:id="l1384">Crains-tu d'en partager ou la honte ou la peine ? </l>
           </sp>
-          <sp xml:id="IV03-5" who="LAETUS">
+          <sp who="LAETUS" xml:id="IV03-5">
             <speaker>LAETUS.</speaker>
             <l n="1385" xml:id="l1385">La crainte ne peut rien sur une âme Romaine, </l>
             <l n="1386" xml:id="l1386">Et par ses ordres seuls peut-être trop gardés </l>
@@ -2316,7 +2347,7 @@
             <l n="1398" xml:id="l1398">Puisque me prévenant elle n'a que tenté </l>
             <l n="1399" xml:id="l1399">Ce qu'avec plein succès j'aurais exécuté. </l>
           </sp>
-          <sp xml:id="IV03-6" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV03-6">
             <speaker>HELVIE.</speaker>
             <l n="1400" xml:id="l1400">Quoi, Laetus, s'il est vrai qu'un pur amour t'inspire, </l>
             <l n="1401" xml:id="l1401">Est-ce là m'en prouver le vertueux empire, </l>
@@ -2331,7 +2362,7 @@
             <l n="1410" xml:id="l1410">Et qu'avec tout l'éclat qui suivra ce grand jour, </l>
             <l n="1411" xml:id="l1411">Je meure digne encor d'emporter ton amour. </l>
           </sp>
-          <sp xml:id="IV03-7" who="LAETUS">
+          <sp who="LAETUS" xml:id="IV03-7">
             <speaker>LAETUS.</speaker>
             <l n="1412" xml:id="l1412">En vain pour attirer tout le crime sur elle, </l>
             <l n="1413" xml:id="l1413">Elle offre mes conseils pour garants de mon zèle. </l>
@@ -2342,7 +2373,7 @@
             <l n="1418" xml:id="l1418">Et si son entreprise a pu le prévenir, </l>
             <l n="1419" xml:id="l1419">En étant seul la cause, on m'en doit seul punir. </l>
           </sp>
-          <sp xml:id="IV03-8" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV03-8">
             <speaker>COMMODE.</speaker>
             <l n="1420" xml:id="l1420">Ah, je l'avais bien vu qu'en cette âme inhumaine </l>
             <l n="1421" xml:id="l1421">Il fallait que l'amour appuyât tant de haine. </l>
@@ -2366,9 +2397,9 @@
             <l n="1439" xml:id="l1439">En l'état où je suis je t'avouerai de tout</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Commode, Marcia, Helvie, Laetus, Flavian, Lucie. </head>
-          <sp xml:id="IV04-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV04-1">
             <speaker>MARCIA.</speaker>
             <l n="1440" xml:id="l1440">Je ne viens point ici presser votre clémence </l>
             <l n="1441" xml:id="l1441">De combattre l'ardeur d'une juste vengeance, </l>
@@ -2387,7 +2418,7 @@
             <l n="1454" xml:id="l1454">Et je tiendrai mon sort et glorieux et doux </l>
             <l n="1455" xml:id="l1455">Si comme j'ai vécu je puis mourir pour vous. </l>
           </sp>
-          <sp xml:id="IV04-2" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV04-2">
             <speaker>COMMODE.</speaker>
             <l n="1456" xml:id="l1456">Qu'avec tant de fureur, qu'avec tant d'insolence </l>
             <l n="1457" xml:id="l1457">L'orgueil à me braver hautement se dispense, </l>
@@ -2397,19 +2428,19 @@
             <l n="1461" xml:id="l1461">Mais d'un transport aveugle où va la promptitude ? </l>
             <l n="1462" xml:id="l1462">Quoi que ce couple ingrat ait fait, ait projeté, </l>
             <l n="1463" xml:id="l1463">J'en suis le seul coupable, et j'ai tout mérité. </l>
-            <stage type="toward">À Marcia.</stage>
+            <stage>À Marcia.</stage>
             <l n="1464" xml:id="l1464">Oui, Madame, c'est moi dont l'ardeur infidèle </l>
             <l n="1465" xml:id="l1465">Pour venger votre injure a corrompu leur zèle, </l>
             <l n="1466" xml:id="l1466">Et je me plains à tort qu'animés contre moi </l>
             <l n="1467" xml:id="l1467">Ils suivent mon exemple à me manquer de foi.</l>
           </sp>
-          <sp xml:id="IV04-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV04-3">
             <speaker>MARCIA.</speaker>
             <l n="1468" xml:id="l1468">La foi des Souverains est d'une autre nature, </l>
             <l n="1469" xml:id="l1469">Ils la donnent par grâce, et l'ôtent sans injure, </l>
             <l n="1470" xml:id="l1470">Et malgré mon espoir vous avez pu, Seigneur... </l>
           </sp>
-          <sp xml:id="IV04-4" who="COMMODE">
+          <sp who="COMMODE" xml:id="IV04-4">
             <speaker>COMMODE.</speaker>
             <l n="1471" xml:id="l1471">Non, j'ai trop cru, Madame, un amour suborneur </l>
             <l n="1472" xml:id="l1472">Je rougis que son charme ait surpris mon courage ; </l>
@@ -2429,55 +2460,55 @@
             <l n="1486" xml:id="l1486">Et que l'effet demain justifiant ma foi, </l>
             <l n="1487" xml:id="l1487">Vous serez hors d'état de vous plaindre de moi. </l>
           </sp>
-          <sp xml:id="IV04-5" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV04-5">
             <speaker>MARCIA.</speaker>
-            <l n="1488" xml:id="l1488" part="I">Ah, souffrez qu'à vos pieds, Seigneur... </l>
+            <l n="1488" part="I" xml:id="l1488">Ah, souffrez qu'à vos pieds, Seigneur... </l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Marcia, Helvie, Laetus, Lucie. </head>
-          <sp xml:id="IV05-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV05-1">
             <speaker>MARCIA.</speaker>
             <l part="F">Il se retire, </l>
             <l n="1489" xml:id="l1489">Mais mon coeur rentre enfin dans son premier empire. </l>
             <l n="1490" xml:id="l1490">Ma soeur, qu'avez-vous fait l'un et l'autre aujourd'hui ? </l>
             <l n="1491" xml:id="l1491">Qui l'aurait cru de vous ? Qui le croirait de lui ? </l>
           </sp>
-          <sp xml:id="IV05-2" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV05-2">
             <speaker>HELVIE.</speaker>
             <l n="1492" xml:id="l1492">Sur la foi d'un Tyran vous prenez assurance? </l>
           </sp>
-          <sp xml:id="IV05-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV05-3">
             <speaker>MARCIA.</speaker>
             <l n="1493" xml:id="l1493">Pour rien dissimuler il a trop d'imprudence, </l>
             <l n="1494" xml:id="l1494">Et s'il avait dans l'âme arrêté votre mort, </l>
             <l n="1495" xml:id="l1495">En vain à le cacher il aurait fait effort. </l>
           </sp>
-          <sp xml:id="IV05-4" who="LAETUS">
+          <sp who="LAETUS" xml:id="IV05-4">
             <speaker>LAETUS.</speaker>
             <l n="1496" xml:id="l1496">Ne nous alarmons point d'un malheur sans remède, </l>
             <l n="1497" xml:id="l1497">Le Ciel nous aidera si Rome ne nous aide. </l>
             <l n="1498" xml:id="l1498">Ah, si dans un péril qui veut un prompt secours, </l>
             <l n="1499" xml:id="l1499">Tout mon sang suffisait pour assurer vos jours... </l>
           </sp>
-          <sp xml:id="IV05-5" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV05-5">
             <speaker>HELVIE.</speaker>
             <l n="1500" xml:id="l1500">Tu n'as déjà que trop satisfait cette envie ; </l>
             <l n="1501" xml:id="l1501">À le hasarder moins tu m'aurais mieux servie, </l>
             <l n="1502" xml:id="l1502">En vain en te perdant tu crois me secourir. </l>
           </sp>
-          <sp xml:id="IV05-6" who="LAETUS">
+          <sp who="LAETUS" xml:id="IV05-6">
             <speaker>LAETUS.</speaker>
             <l n="1503" xml:id="l1503">Quoi, je vivrai, Madame, et vous voudrez mourir ? </l>
           </sp>
-          <sp xml:id="IV05-7" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV05-7">
             <speaker>MARCIA.</speaker>
             <l n="1504" xml:id="l1504">Le secret d'une flamme et si noble et si pure </l>
             <l n="1505" xml:id="l1505">Par un soupçon trop prompt m'a fait vous faire injure, </l>
             <l n="1506" xml:id="l1506">Mais j'ose croire aussi que des Dieux secondés </l>
             <l n="1507" xml:id="l1507">Mes soins lui rendront plus que vous n'en attendez. </l>
           </sp>
-          <sp xml:id="IV05-8" who="HELVIE">
+          <sp who="HELVIE" xml:id="IV05-8">
             <speaker>HELVIE.</speaker>
             <l n="1508" xml:id="l1508">Puisque je suis réduite à ne la pouvoir taire, </l>
             <l n="1509" xml:id="l1509">Pour la justifier je vais trouver mon Père, </l>
@@ -2489,13 +2520,13 @@
             <l n="1515" xml:id="l1515">Comme il connaît Commode, il en jugera mieux. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV06">
           <head>SCÈNE VI. Marcia, Électus, Lucie. </head>
-          <sp xml:id="IV06-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-1">
             <speaker>MARCIA.</speaker>
-            <l n="1516" xml:id="l1516" part="I">As-tu vu l'Empereur, Électus ? </l>
+            <l n="1516" part="I" xml:id="l1516">As-tu vu l'Empereur, Électus ? </l>
           </sp>
-          <sp xml:id="IV06-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-2">
             <speaker>ÉLECTUS.</speaker>
             <l part="F">Oui, Madame, </l>
             <l n="1517" xml:id="l1517">Il vient de me parler plein de trouble dans l'âme, </l>
@@ -2503,23 +2534,27 @@
             <l n="1519" xml:id="l1519">Tout ce que pour sa pompe on avait destiné ; </l>
             <l n="1520" xml:id="l1520">Mais dans cet ordre même un fier transport le guide, </l>
           </sp>
-          <sp xml:id="IV06-3" who="HELVIE"><speaker>HELVIE.</speaker>est une ingrate, et Laetus un perfide. 
-	<l n="1521" xml:id="l1521" part="I">C'est ce que j'en ai su. </l></sp>
-          <sp xml:id="IV06-4" who="MARCIA">
+          <sp who="HELVIE" xml:id="IV06-3">
+            <speaker>HELVIE.</speaker>
+            <!-- ??? -->
+            <l>[???] est une ingrate, et Laetus un perfide.</l>
+            <l n="1521" part="I" xml:id="l1521">C'est ce que j'en ai su. </l>
+          </sp>
+          <sp who="MARCIA" xml:id="IV06-4">
             <speaker>MARCIA.</speaker>
             <l part="F">Je te l'avais bien dit, </l>
             <l n="1522" xml:id="l1522">Que je pourrais enfin regagner son esprit. </l>
             <l n="1523" xml:id="l1523">Quoi, tu l'as su permettre, et ton coeur en soupire ? </l>
           </sp>
-          <sp xml:id="IV06-5" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-5">
             <speaker>ÉLECTUS.</speaker>
             <l n="1524" xml:id="l1524">Hélas ! M'en croirez-vous si j'ose vous le dire ! </l>
           </sp>
-          <sp xml:id="IV06-6" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-6">
             <speaker>MARCIA.</speaker>
             <l n="1525" xml:id="l1525">Parle, parle, de toi j'aime à tout écouter. </l>
           </sp>
-          <sp xml:id="IV06-7" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-7">
             <speaker>ÉLECTUS.</speaker>
             <l n="1526" xml:id="l1526">L'espoir sur sa parole a trop su vous flatter. </l>
             <l n="1527" xml:id="l1527">Quoi qu'il vous ait promis je lis dans sa pensée ; </l>
@@ -2527,17 +2562,17 @@
             <l n="1529" xml:id="l1529">Et que dans sa maxime on aide à se trahir </l>
             <l n="1530" xml:id="l1530">Lorsqu'on peut pardonner à qui nous doit haïr. </l>
           </sp>
-          <sp xml:id="IV06-8" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-8">
             <speaker>MARCIA.</speaker>
             <l n="1531" xml:id="l1531">Et que voudrais-tu faire en cette défiance ? </l>
           </sp>
-          <sp xml:id="IV06-9" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-9">
             <speaker>ÉLECTUS.</speaker>
             <l n="1532" xml:id="l1532">Céder, et par la suite éviter sa vengeance. </l>
             <l n="1533" xml:id="l1533">Puisqu'en secret sa haine y devant consentir, </l>
             <l n="1534" xml:id="l1534">Un prompt éloignement nous en peut garantir. </l>
           </sp>
-          <sp xml:id="IV06-10" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-10">
             <speaker>MARCIA.</speaker>
             <l n="1535" xml:id="l1535">Quoi, pour remède aux maux où tu me feins réduite, </l>
             <l n="1536" xml:id="l1536">Tu n'imagines rien de plus beau que la fuite, </l>
@@ -2552,7 +2587,7 @@
             <l n="1545" xml:id="l1545">Et tâche à mériter que pour venger ma foi, </l>
             <l n="1546" xml:id="l1546">Je me sois abaissée à jeter l'oeil sur toi. </l>
           </sp>
-          <sp xml:id="IV06-11" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-11">
             <speaker>ÉLECTUS.</speaker>
             <l n="1547" xml:id="l1547">Ah, Dieux ! Pour m'outrager avec plus d'injustice </l>
             <l n="1548" xml:id="l1548">Voulez-vous être aveugle au bord du précipice, </l>
@@ -2563,7 +2598,7 @@
             <l n="1553" xml:id="l1553">Et vous, et Pertinax du même coup frappés, </l>
             <l n="1554" xml:id="l1554">Dans sa punition serez enveloppés. </l>
           </sp>
-          <sp xml:id="IV06-12" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-12">
             <speaker>MARCIA.</speaker>
             <l n="1555" xml:id="l1555">Quoi qui doive arriver, je suis la destinée </l>
             <l n="1556" xml:id="l1556">Où par ta lâcheté je me vois condamnée, </l>
@@ -2574,14 +2609,14 @@
             <l n="1561" xml:id="l1561">Puisque exposée à tout par ton manque de foi, </l>
             <l n="1562" xml:id="l1562">Dans l'un et l'autre sort je suis morte pour toi. </l>
           </sp>
-          <sp xml:id="IV06-13" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-13">
             <speaker>ÉLECTUS.</speaker>
             <l n="1563" xml:id="l1563">Ah, si j'étais certain que la rage ou l'envie </l>
             <l n="1564" xml:id="l1564">Fît dessein d'attaquer une si belle vie, </l>
             <l n="1565" xml:id="l1565">Il n'est droit si sacré qu'en ce pressant besoin </l>
-            <l n="1566" xml:id="l1566" part="I">Rome... </l>
+            <l n="1566" part="I" xml:id="l1566">Rome... </l>
           </sp>
-          <sp xml:id="IV06-14" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-14">
             <speaker>MARCIA.</speaker>
             <l part="F">Arrête, Électus, tu vas un peu trop loin. </l>
             <l n="1567" xml:id="l1567">Quelque horreur que tantôt te fît le nom de traître, </l>
@@ -2593,11 +2628,11 @@
             <l n="1573" xml:id="l1573">Et content d'un seul crime, ose au moins aujourd'hui, </l>
             <l n="1574" xml:id="l1574">Étant vers moi coupable, être innocent vers lui. </l>
           </sp>
-          <sp xml:id="IV06-15" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-15">
             <speaker>ÉLECTUS.</speaker>
-            <l n="1575" xml:id="l1575" part="I">Ah, que me dites-vous ? </l>
+            <l n="1575" part="I" xml:id="l1575">Ah, que me dites-vous ? </l>
           </sp>
-          <sp xml:id="IV06-16" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-16">
             <speaker>MARCIA.</speaker>
             <l part="F">Qu'en ton zèle, en ta flamme </l>
             <l n="1576" xml:id="l1576">Toujours ton intérêt sait déguiser ton âme. </l>
@@ -2608,7 +2643,7 @@
             <l n="1581" xml:id="l1581">Et m'en convaincs si bien que par un beau retour </l>
             <l n="1582" xml:id="l1582">Je doive à ta vertu le prix de ton amour. </l>
           </sp>
-          <sp xml:id="IV06-17" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="IV06-17">
             <speaker>ÉLECTUS.</speaker>
             <l n="1583" xml:id="l1583">Et bien, Madame, et bien, obstinez vous à croire </l>
             <l n="1584" xml:id="l1584">Qu'un indigne intérêt me fait trahir ma gloire, </l>
@@ -2622,13 +2657,13 @@
             <l n="1592" xml:id="l1592">La résolution que vous me faites prendre, </l>
             <l n="1593" xml:id="l1593">Et ménager si bien le trépas où je cours, </l>
             <l n="1594" xml:id="l1594">Qu'il assure ma gloire en conservant vos jours. </l>
-            <stage type="exit">Il sort. </stage>
+            <stage>Il sort. </stage>
           </sp>
-          <sp xml:id="IV06-18" who="LUCIE">
+          <sp who="LUCIE" xml:id="IV06-18">
             <speaker>LUCIE.</speaker>
-            <l n="1595" xml:id="l1595" part="I">Vous l'avez maltraité. </l>
+            <l n="1595" part="I" xml:id="l1595">Vous l'avez maltraité. </l>
           </sp>
-          <sp xml:id="IV06-19" who="MARCIA">
+          <sp who="MARCIA" xml:id="IV06-19">
             <speaker>MARCIA.</speaker>
             <l part="F">De Commode offensée </l>
             <l n="1596" xml:id="l1596">Ma flamme à son hymen ne consent que forcée, </l>
@@ -2637,25 +2672,35 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Marcia, Laetus, Lucie. </head>
-          <sp xml:id="V01-1" who="MARCIA"><speaker>MARCIA.</speaker>tenant les tablettes de l'Empereur. 
-	<l n="1599" xml:id="l1599">Je ne le cèle point ; l'entreprise est si noire </l><l n="1600" xml:id="l1600">Qu'à bien l'examiner j'ose à peine la croire, </l><l n="1601" xml:id="l1601">Et douterais encor d'un si lâche dessein </l><l n="1602" xml:id="l1602">Si je n'en connaissais l'ordre écrit de sa main. </l><l n="1603" xml:id="l1603">Le barbare ! À sa haine abandonner ma vie ! </l><l n="1604" xml:id="l1604">S'immoler Électus, Vous, Pertinax, Helvie.</l><l n="1605" xml:id="l1605">Et pour porter sa rage au dernier attentat, </l><l n="1606" xml:id="l1606">Proscrire en même temps la moitié du Sénat ! </l><l n="1607" xml:id="l1607">Je ne puis sans horreur m'en souffrir la pensée. </l></sp>
-          <sp xml:id="V01-2" who="LAETUS">
+          <sp who="MARCIA" xml:id="V01-1">
+            <speaker>MARCIA, tenant les tablettes de l'Empereur.</speaker>
+            <l n="1599" xml:id="l1599">Je ne le cèle point ; l'entreprise est si noire </l>
+            <l n="1600" xml:id="l1600">Qu'à bien l'examiner j'ose à peine la croire, </l>
+            <l n="1601" xml:id="l1601">Et douterais encor d'un si lâche dessein </l>
+            <l n="1602" xml:id="l1602">Si je n'en connaissais l'ordre écrit de sa main. </l>
+            <l n="1603" xml:id="l1603">Le barbare ! À sa haine abandonner ma vie ! </l>
+            <l n="1604" xml:id="l1604">S'immoler Électus, Vous, Pertinax, Helvie.</l>
+            <l n="1605" xml:id="l1605">Et pour porter sa rage au dernier attentat, </l>
+            <l n="1606" xml:id="l1606">Proscrire en même temps la moitié du Sénat ! </l>
+            <l n="1607" xml:id="l1607">Je ne puis sans horreur m'en souffrir la pensée. </l>
+          </sp>
+          <sp who="LAETUS" xml:id="V01-2">
             <speaker>LAETUS.</speaker>
             <l n="1608" xml:id="l1608">Le Ciel soutient toujours l'innocence oppressée, </l>
             <l n="1609" xml:id="l1609">Et de cet attentat ne s'est montré d'accord, </l>
             <l n="1610" xml:id="l1610">Que pour nous donner droit de conspirer sa mort. </l>
           </sp>
-          <sp xml:id="V01-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="V01-3">
             <speaker>MARCIA.</speaker>
             <l n="1611" xml:id="l1611">Mais forçant son humeur, qui l'a rendu capable </l>
             <l n="1612" xml:id="l1612">De pouvoir déguiser un projet si coupable ? </l>
             <l n="1613" xml:id="l1613">D'oser jusqu'à la nuit en remettre l'effet ? </l>
           </sp>
-          <sp xml:id="V01-4" who="LAETUS">
+          <sp who="LAETUS" xml:id="V01-4">
             <speaker>LAETUS.</speaker>
             <l n="1614" xml:id="l1614">La crainte de laisser son ouvrage imparfait. </l>
             <l n="1615" xml:id="l1615">Eût-il pu sans surprise attaquer tant de têtes, </l>
@@ -2666,22 +2711,22 @@
             <l n="1620" xml:id="l1620">Pour en craindre un obstacle au courroux qui l'anime. </l>
             <l n="1621" xml:id="l1621">C'est l'unique raison de ces déguisements. </l>
           </sp>
-          <sp xml:id="V01-5" who="MARCIA">
+          <sp who="MARCIA" xml:id="V01-5">
             <speaker>MARCIA.</speaker>
             <l n="1622" xml:id="l1622">J'avais conçu de lui de meilleurs sentiments, </l>
             <l n="1623" xml:id="l1623">Et n'aurais jamais cru qu'une brutale envie </l>
-            <l n="1624" xml:id="l1624">Lui fît dans tout son sang vouloir punir  Helvie ; </l>
+            <l n="1624" xml:id="l1624">Lui fît dans tout son sang vouloir punir Helvie ; </l>
             <l n="1625" xml:id="l1625">Mais si cette union m'engage dans son sort, </l>
             <l n="1626" xml:id="l1626">Qu'a pu faire Électus pour mériter la mort ? </l>
           </sp>
-          <sp xml:id="V01-6" who="LAETUS">
+          <sp who="LAETUS" xml:id="V01-6">
             <speaker>LAETUS.</speaker>
             <l n="1627" xml:id="l1627">Donnez-vous la raison pour règle à sa colère ? </l>
             <l n="1628" xml:id="l1628">Pressant votre hyménée il a su lui déplaire, </l>
             <l n="1629" xml:id="l1629">Et sans qu'il ait besoin de prétextes plus grands, </l>
             <l n="1630" xml:id="l1630">C'est mériter la mort que déplaire aux Tyrans. </l>
           </sp>
-          <sp xml:id="V01-7" who="MARCIA">
+          <sp who="MARCIA" xml:id="V01-7">
             <speaker>MARCIA.</speaker>
             <l n="1631" xml:id="l1631">Il me disait bien que sa feinte clémence, </l>
             <l n="1632" xml:id="l1632">Nous déguisant son coeur, assurait sa vengeance ; </l>
@@ -2696,7 +2741,7 @@
             <l n="1641" xml:id="l1641">S'il n'en eût pas trahi les ordres inhumains, </l>
             <l n="1642" xml:id="l1642">Mon aveugle injustice achevait ses desseins. </l>
           </sp>
-          <sp xml:id="V01-8" who="LAETUS">
+          <sp who="LAETUS" xml:id="V01-8">
             <speaker>LAETUS.</speaker>
             <l n="1643" xml:id="l1643">Dans le juste soupçon que l'Empereur pût feindre, </l>
             <l n="1644" xml:id="l1644">C'était le seul pour nous que je voyais à craindre. </l>
@@ -2711,14 +2756,14 @@
             <l n="1653" xml:id="l1653">Et cru, quoi qu'il osât, que peu sans le trahir </l>
             <l n="1654" xml:id="l1654">Aux dépens de nos jours lui voudraient obéir. </l>
           </sp>
-          <sp xml:id="V01-9" who="MARCIA">
+          <sp who="MARCIA" xml:id="V01-9">
             <speaker>MARCIA.</speaker>
             <l n="1655" xml:id="l1655">C'est beaucoup que sa rage ait été découverte ; </l>
             <l n="1656" xml:id="l1656">Mais comme d'Électus il a juré la perte, </l>
             <l n="1657" xml:id="l1657">Si contre sa coutume un scrupule incertain </l>
             <l n="1658" xml:id="l1658">Lui faisait refuser la Coupe de sa main ? </l>
           </sp>
-          <sp xml:id="V01-10" who="LAETUS">
+          <sp who="LAETUS" xml:id="V01-10">
             <speaker>LAETUS.</speaker>
             <l n="1659" xml:id="l1659">Non, non ; ne doutez point que sa fausse prudence </l>
             <l n="1660" xml:id="l1660">N'affecte jusqu'au bout la même confiance. </l>
@@ -2731,15 +2776,15 @@
             <l n="1667" xml:id="l1667">Mais je vois Électus qui vous le vient apprendre. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Marcia, Électus, Laetus, Lucie. </head>
-          <sp xml:id="V02-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="V02-1">
             <speaker>MARCIA.</speaker>
             <l n="1668" xml:id="l1668">Et bien, contre un Tyran que devons-nous attendre ? </l>
             <l n="1669" xml:id="l1669">La conspiration nous promet-elle effet ? </l>
-            <l n="1670" xml:id="l1670" part="I">En viendrons-nous à bout ? </l>
+            <l n="1670" part="I" xml:id="l1670">En viendrons-nous à bout ? </l>
           </sp>
-          <sp xml:id="V02-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="V02-2">
             <speaker>ÉLECTUS.</speaker>
             <l part="F">Madame, c'en est fait. </l>
             <l n="1671" xml:id="l1671">Loin que par quelque horreur de sa lâche vengeance </l>
@@ -2755,21 +2800,21 @@
             <l n="1681" xml:id="l1681">Et que s'intéressant à tant de maux soufferts, </l>
             <l n="1682" xml:id="l1682">Son zèle n'aspirait qu'à venger l'Univers. </l>
           </sp>
-          <sp xml:id="V02-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="V02-3">
             <speaker>MARCIA.</speaker>
             <l n="1683" xml:id="l1683">Mais si de ce poison la vertu faible ou lente </l>
             <l n="1684" xml:id="l1684">À le perdre assez tôt se trouvait impuissante, </l>
             <l n="1685" xml:id="l1685">L'abandonner ainsi c'est servir son courroux, </l>
             <l n="1686" xml:id="l1686">Et lui donner moyen de s'armer contre nous. </l>
           </sp>
-          <sp xml:id="V02-4" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="V02-4">
             <speaker>ÉLECTUS.</speaker>
             <l n="1687" xml:id="l1687">Flavian qui l'observe assure l'entreprise, </l>
             <l n="1688" xml:id="l1688">Et de peur qu'à le voir vous ne fussiez surprise </l>
             <l n="1689" xml:id="l1689">Sachant qu'il a dessein de vous entretenir, </l>
             <l n="1690" xml:id="l1690">Pour vous y préparer j'ai dû le prévenir. </l>
           </sp>
-          <sp xml:id="V02-5" who="LAETUS">
+          <sp who="LAETUS" xml:id="V02-5">
             <speaker>LAETUS.</speaker>
             <l n="1691" xml:id="l1691">Je me retire donc pour éviter sa vue. </l>
             <l n="1692" xml:id="l1692">C'est contre moi surtout que sa rage est émue, </l>
@@ -2777,16 +2822,16 @@
             <l n="1694" xml:id="l1694">M'exposer à ses yeux ce serait le braver. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Marcia,  Électus, Lucie. </head>
-          <sp xml:id="V03-1" who="MARCIA">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Marcia, Électus, Lucie. </head>
+          <sp who="MARCIA" xml:id="V03-1">
             <speaker>MARCIA.</speaker>
             <l n="1695" xml:id="l1695">Quel chagrin dans ton coeur marque un secret supplice ? </l>
             <l n="1696" xml:id="l1696">Vient-il ou de sa perte ou de mon injustice ? </l>
             <l n="1697" xml:id="l1697">Son malheur ou le tien causent-ils ton ennui ? </l>
             <l n="1698" xml:id="l1698">Soupires-tu pour toi ? Soupires-tu pour lui ? </l>
           </sp>
-          <sp xml:id="V03-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="V03-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="1699" xml:id="l1699">Quoi que vous ordonniez du beau feu qui m'anime, </l>
             <l n="1700" xml:id="l1700">Déjà dans mon respect je crois tout légitime, </l>
@@ -2805,7 +2850,7 @@
             <l n="1713" xml:id="l1713">Et toutefois, hélas, toujours infortuné, </l>
             <l n="1714" xml:id="l1714">Peut-être cet amour est encor soupçonné. </l>
           </sp>
-          <sp xml:id="V03-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="V03-3">
             <speaker>MARCIA.</speaker>
             <l n="1715" xml:id="l1715">Juge mieux d'un transport que je crus légitime, </l>
             <l n="1716" xml:id="l1716">Je vois ton innocence en connaissant son crime, </l>
@@ -2817,9 +2862,9 @@
             <l n="1722" xml:id="l1722">Et si j'ai de Commode en vain... Mais je le vois</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Commode, Marcia,  Électus, Flavian, Lucie. </head>
-          <sp xml:id="V04-1" who="COMMODE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Commode, Marcia, Électus, Flavian, Lucie. </head>
+          <sp who="COMMODE" xml:id="V04-1">
             <speaker>COMMODE.</speaker>
             <l n="1723" xml:id="l1723">Madame, enfin les Dieux par un bonheur suprême, </l>
             <l n="1724" xml:id="l1724">Pour mieux songer à vous, me rendent à moi-même. </l>
@@ -2838,7 +2883,7 @@
             <l n="1737" xml:id="l1737">Et si de ce désordre entièrement remis, </l>
             <l n="1738" xml:id="l1738">J'aurai lieu de tenir ce que j'ai promis. </l>
           </sp>
-          <sp xml:id="V04-2" who="MARCIA">
+          <sp who="MARCIA" xml:id="V04-2">
             <speaker>MARCIA.</speaker>
             <l n="1739" xml:id="l1739">Seigneur, je me croirais aussi lâche qu'ingrate </l>
             <l n="1740" xml:id="l1740">Si j'osais résister à l'espoir qui me flatte, </l>
@@ -2849,7 +2894,7 @@
             <l n="1745" xml:id="l1745">Et m'a fait assez voir dans vos ordres donnés </l>
             <l n="1746" xml:id="l1746">La pompe des honneurs que vous me destinez. </l>
           </sp>
-          <sp xml:id="V04-3" who="COMMODE">
+          <sp who="COMMODE" xml:id="V04-3">
             <speaker>COMMODE.</speaker>
             <l n="1747" xml:id="l1747">Quoi que de mes desseins il ait pu vous apprendre, </l>
             <l n="1748" xml:id="l1748">L'ordre qu'il a reçu les laisse mal comprendre. </l>
@@ -2864,7 +2909,7 @@
             <l n="1757" xml:id="l1757">Que ce que de mon sort elle voudra marquer, </l>
             <l n="1758" xml:id="l1758">Sans nommer Marcia ne le puisse expliquer. </l>
           </sp>
-          <sp xml:id="V04-4" who="MARCIA">
+          <sp who="MARCIA" xml:id="V04-4">
             <speaker>MARCIA.</speaker>
             <l n="1759" xml:id="l1759">Vous m'accablez, Seigneur, et mon âme confuse </l>
             <l n="1760" xml:id="l1760">Croit qu'en tant de faveurs un vain songe l'abuse, </l>
@@ -2881,7 +2926,7 @@
             <l n="1771" xml:id="l1771">Mais d'un effet si noble elle sera suivie, </l>
             <l n="1772" xml:id="l1772">Qu'autant que Rome a droit de condamner Helvie.</l>
           </sp>
-          <sp xml:id="V04-5" who="COMMODE">
+          <sp who="COMMODE" xml:id="V04-5">
             <speaker>COMMODE.</speaker>
             <l n="1773" xml:id="l1773">Ah, Madame, de grâce, accordez-moi ce point, </l>
             <l n="1774" xml:id="l1774">Pensez, croyez tout d'elle, et ne la nommez point. </l>
@@ -2898,29 +2943,29 @@
             <l n="1785" xml:id="l1785">Elle saisit mon coeur, en vain il la combat, </l>
             <l n="1786" xml:id="l1786">Ma force m'abandonne, et ma vigueur s'abat. </l>
           </sp>
-          <sp xml:id="V04-6" who="MARCIA">
+          <sp who="MARCIA" xml:id="V04-6">
             <speaker>MARCIA.</speaker>
-            <l n="1787" xml:id="l1787" part="I">Ne craignez rien, Seigneur. </l>
+            <l n="1787" part="I" xml:id="l1787">Ne craignez rien, Seigneur. </l>
           </sp>
-          <sp xml:id="V04-7" who="COMMODE">
+          <sp who="COMMODE" xml:id="V04-7">
             <speaker>COMMODE.</speaker>
             <l part="F">Ma faiblesse redouble, </l>
             <l n="1788" xml:id="l1788">Je tremble, je chancelle, et tout mon sang se trouble. </l>
             <l n="1789" xml:id="l1789">Soutiens-moi, Flavian, ne m'abandonne pas. </l>
           </sp>
-          <sp xml:id="V04-8" who="MARCIA">
+          <sp who="MARCIA" xml:id="V04-8">
             <speaker>MARCIA.</speaker>
             <l n="1790" xml:id="l1790">À ce pieux office il prêtera son bras, </l>
             <l n="1791" xml:id="l1791">Et de vous obéir ne sait perdre l'envie, </l>
             <l n="1792" xml:id="l1792">Que quand vous le forcez de m'arracher la vie. </l>
             <l n="1793" xml:id="l1793">Vois ceci, vois, Commode ; en connais-tu la main. </l>
-            <stage type="[N/A]">Elle lui montre les Tablettes. </stage>
+            <stage>Elle lui montre les Tablettes. </stage>
           </sp>
-          <sp xml:id="V04-9" who="COMMODE">
+          <sp who="COMMODE" xml:id="V04-9">
             <speaker>COMMODE, à Flavian. </speaker>
-            <l n="1794" xml:id="l1794" part="I">Ah, traître, c'est ainsi... </l>
+            <l n="1794" part="I" xml:id="l1794">Ah, traître, c'est ainsi... </l>
           </sp>
-          <sp xml:id="V04-10" who="MARCIA">
+          <sp who="MARCIA" xml:id="V04-10">
             <speaker>MARCIA.</speaker>
             <l part="F">Tu t'emportes en vain, </l>
             <l n="1795" xml:id="l1795">Tu n'es plus en pouvoir d'ordonner son supplice. </l>
@@ -2932,7 +2977,7 @@
             <l n="1801" xml:id="l1801">Puisqu'on n'en vit jamais de plus beaux, de plus grands, </l>
             <l n="1802" xml:id="l1802">Que ceux qui sont fondés sur la mort des Tyrans. </l>
           </sp>
-          <sp xml:id="V04-11" who="COMMODE">
+          <sp who="COMMODE" xml:id="V04-11">
             <speaker>COMMODE.</speaker>
             <l n="1803" xml:id="l1803">Je sens qu'il faut mourir, que pour servir ta rage </l>
             <l n="1804" xml:id="l1804">Les Dieux injustement trahissent leur ouvrage, </l>
@@ -2942,9 +2987,9 @@
             <l n="1808" xml:id="l1808">Leur foudre suspendu d'impuissante faiblesse, </l>
             <l n="1809" xml:id="l1809">Et quoi que de la vie on fasse un si grand bien, </l>
             <l n="1810" xml:id="l1810">J'aime à l'abandonner pour ne leur devoir rien. </l>
-            <l n="1811" xml:id="l1811" part="I">Qu'on m'emporte d'ici. </l>
+            <l n="1811" part="I" xml:id="l1811">Qu'on m'emporte d'ici. </l>
           </sp>
-          <sp xml:id="V04-12" who="MARCIA">
+          <sp who="MARCIA" xml:id="V04-12">
             <speaker>MARCIA.</speaker>
             <l part="F">Rendez-lui ce service </l>
             <l n="1812" xml:id="l1812">Aussi bien je craindrais de me voir sa complice, </l>
@@ -2952,16 +2997,16 @@
             <l n="1814" xml:id="l1814">Ne redoublât sa rage à blasphémer les Dieux. </l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. Marcia, Électus, Lucie. </head>
-          <sp xml:id="V05-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="V05-1">
             <speaker>MARCIA.</speaker>
             <l n="1815" xml:id="l1815">Dans le bruit éclatant que cette mort va faire, </l>
             <l n="1816" xml:id="l1816">Allez, cher Électus, vous êtes nécessaire. </l>
             <l n="1817" xml:id="l1817">Je sais bien que de Rome elle fait les souhaits, </l>
             <l n="1818" xml:id="l1818">Mais il faut empêcher le désordre au Palais. </l>
           </sp>
-          <sp xml:id="V05-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="V05-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="1819" xml:id="l1819">Je cours joindre Laetus, et voir ce qui s'y passe; </l>
             <l n="1820" xml:id="l1820">Non que des plus mutins j'appréhende l'audace, </l>
@@ -2970,30 +3015,30 @@
             <l n="1823" xml:id="l1823">Je vous laisse un moment dans l'entretien d'Helvie.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI. Marcia, Helvie, Lucie. </head>
-          <sp xml:id="V06-1" who="HELVIE">
+          <sp who="HELVIE" xml:id="V06-1">
             <speaker>HELVIE.</speaker>
             <l n="1824" xml:id="l1824">Ma soeur, Commode enfin doit-il perdre la vie ? </l>
             <l n="1825" xml:id="l1825">Électus répond-il de ce qu'il entreprend ? </l>
           </sp>
-          <sp xml:id="V06-2" who="MARCIA">
+          <sp who="MARCIA" xml:id="V06-2">
             <speaker>MARCIA.</speaker>
             <l n="1826" xml:id="l1826">Ce que mes yeux ont vu m'en est un sûr garant. </l>
             <l n="1827" xml:id="l1827">Sous l'effort du poison cet empereur infâme </l>
             <l n="1828" xml:id="l1828">Déjà plein de faiblesse est prêt de rendre l'âme ; </l>
             <l n="1829" xml:id="l1829">Tout blasphémant de rage on le vient emporter. </l>
           </sp>
-          <sp xml:id="V06-3" who="HELVIE">
+          <sp who="HELVIE" xml:id="V06-3">
             <speaker>HELVIE.</speaker>
             <l n="1830" xml:id="l1830">Les Dieux pour Pertinax ont daigné m'écouter. </l>
             <l n="1831" xml:id="l1831">Par son seul intérêt je craignais la surprise. </l>
           </sp>
-          <sp xml:id="V06-4" who="MARCIA">
+          <sp who="MARCIA" xml:id="V06-4">
             <speaker>MARCIA.</speaker>
             <l n="1832" xml:id="l1832">Il ne sait rien encor de toute l'entreprise ? </l>
           </sp>
-          <sp xml:id="V06-5" who="HELVIE">
+          <sp who="HELVIE" xml:id="V06-5">
             <speaker>HELVIE.</speaker>
             <l n="1833" xml:id="l1833">Comme trop de vertu règle ce qu'il résout, </l>
             <l n="1834" xml:id="l1834">On attend le succès pour l'avertir de tout. </l>
@@ -3002,7 +3047,7 @@
             <l n="1837" xml:id="l1837">Et quoique de sa haine il se tienne assuré, </l>
             <l n="1838" xml:id="l1838">Il n'eût vu qu'à regret que l'on eût conspiré. </l>
           </sp>
-          <sp xml:id="V06-6" who="MARCIA">
+          <sp who="MARCIA" xml:id="V06-6">
             <speaker>MARCIA.</speaker>
             <l n="1839" xml:id="l1839">Cent bienfaits autrefois reçus de Marc Aurèle </l>
             <l n="1840" xml:id="l1840">Lui donnent pour ce Fils la ferveur de ce zèle ; </l>
@@ -3011,27 +3056,27 @@
             <l n="1843" xml:id="l1843">Et par cent lâchetés l'abus de sa puissance </l>
             <l n="1844" xml:id="l1844">Ne le convainc que trop d'une fausse naissance. </l>
           </sp>
-          <sp xml:id="V06-7" who="HELVIE">
+          <sp who="HELVIE" xml:id="V06-7">
             <speaker>HELVIE.</speaker>
             <l n="1845" xml:id="l1845">Cependant j'avais tort de croire qu'un Tyran... </l>
           </sp>
-          <sp xml:id="V06-8" who="MARCIA">
+          <sp who="MARCIA" xml:id="V06-8">
             <speaker>MARCIA.</speaker>
             <l n="1846" xml:id="l1846">Sachons ce qu'il s'est fait, j'aperçois Flavian. </l>
           </sp>
-          <sp xml:id="V06-9" who="HELVIE">
+          <sp who="HELVIE" xml:id="V06-9">
             <speaker>HELVIE.</speaker>
             <l n="1847" xml:id="l1847">On peut voir sans ses yeux ce qu'il faut qu'on en croie. </l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="V07">
           <head>SCÈNE VII. Marcia, Helvie, Flavian, Lucie. </head>
-          <sp xml:id="V07-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="V07-1">
             <speaker>MARCIA.</speaker>
             <l n="1848" xml:id="l1848">Venez-vous, Flavian, achever notre joie ? </l>
-            <l n="1849" xml:id="l1849" part="I">Le Tyran est-il mort ? </l>
+            <l n="1849" part="I" xml:id="l1849">Le Tyran est-il mort ? </l>
           </sp>
-          <sp xml:id="V07-2" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="V07-2">
             <speaker>FLAVIAN.</speaker>
             <l part="F">Oui, Madame, et sa main </l>
             <l n="1850" xml:id="l1850">A du salut de Rome avancé le dessein. </l>
@@ -3052,48 +3097,48 @@
             <l n="1865" xml:id="l1865">Et goûte au moins ce bien, s'il se perce le flanc, </l>
             <l n="1866" xml:id="l1866">Qu'au moment qu'il expire il voit couler du sang. </l>
           </sp>
-          <sp xml:id="V07-3" who="HELVIE">
+          <sp who="HELVIE" xml:id="V07-3">
             <speaker>HELVIE.</speaker>
             <l n="1867" xml:id="l1867">Ô nobles mouvements d'un coeur né pour l'Empire ? </l>
             <l n="1868" xml:id="l1868">Avec Commode enfin la tyrannie expire, </l>
             <l n="1869" xml:id="l1869">Et le coup glorieux qui nous tire des fers, </l>
             <l n="1870" xml:id="l1870">Finissant nos malheurs, affranchit l'Univers.</l>
           </sp>
-          <sp xml:id="V07-4" who="MARCIA">
+          <sp who="MARCIA" xml:id="V07-4">
             <speaker>MARCIA.</speaker>
             <l n="1871" xml:id="l1871">S'il voit l'heureuse fin de son triste esclavage, </l>
             <l n="1872" xml:id="l1872">C'est à Flavian seul qu'il doit cet avantage ; </l>
             <l n="1873" xml:id="l1873">Seul du salut public il s'est fait le soutien. </l>
           </sp>
-          <sp xml:id="V07-5" who="FLAVIAN">
+          <sp who="FLAVIAN" xml:id="V07-5">
             <speaker>FLAVIAN.</speaker>
             <l n="1874" xml:id="l1874">À faire ce qu'on doit on ne mérite rien, </l>
             <l n="1875" xml:id="l1875">Et la moindre vertu dans toutes ses maximes </l>
             <l n="1876" xml:id="l1876">Établit le refus de commettre des crimes. </l>
           </sp>
-          <sp xml:id="V07-6" who="MARCIA">
+          <sp who="MARCIA" xml:id="V07-6">
             <speaker>MARCIA.</speaker>
             <l n="1877" xml:id="l1877">Quand la faveur du Prince en doit être le prix...</l>
             <l n="1878" xml:id="l1878">Mais par tout le Palais d'où viennent ces longs cris ? </l>
           </sp>
-          <sp xml:id="V07-7" who="HELVIE">
+          <sp who="HELVIE" xml:id="V07-7">
             <speaker>HELVIE.</speaker>
             <l n="1879" xml:id="l1879">Doutez-vous que déjà cette mort ne soit sue. </l>
           </sp>
-          <sp xml:id="V07-8" who="MARCIA">
+          <sp who="MARCIA" xml:id="V07-8">
             <speaker>MARCIA.</speaker>
             <l n="1880" xml:id="l1880">Nous allons donc savoir comment elle est reçue, </l>
-            <l n="1881" xml:id="l1881" part="I">Je vois venir Julie. </l>
+            <l n="1881" part="I" xml:id="l1881">Je vois venir Julie. </l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="V08">
           <head>SCÈNE VIII. Marcia, Helvie, Flavian, Julie, Lucie.</head>
-          <sp xml:id="V08-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="V08-1">
             <speaker>MARCIA.</speaker>
             <l part="F">Et bien, Julie, enfin </l>
             <l n="1882" xml:id="l1882">Du barbare Commode on connaît le destin ? </l>
           </sp>
-          <sp xml:id="V08-2" who="JULIE">
+          <sp who="JULIE" xml:id="V08-2">
             <speaker>JULIE.</speaker>
             <l n="1883" xml:id="l1883">Madame, ces hauts cris qu'au Ciel chacun envoie </l>
             <l n="1884" xml:id="l1884">Du Peuple et des Soldats vous expliquent la joie. </l>
@@ -3107,29 +3152,29 @@
             <l n="1892" xml:id="l1892">N'est pas le seul sujet de ces cris d'allégresse. </l>
             <l n="1893" xml:id="l1893">Par un commun suffrage un Empereur élu... </l>
           </sp>
-          <sp xml:id="V08-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="V08-3">
             <speaker>MARCIA.</speaker>
             <l n="1894" xml:id="l1894">Que dites-vous ? Ce choix est déjà résolu ? </l>
             <l n="1895" xml:id="l1895">Rome à Laetus sans doute en accorde la gloire. </l>
           </sp>
-          <sp xml:id="V08-4" who="HELVIE">
+          <sp who="HELVIE" xml:id="V08-4">
             <speaker>HELVIE.</speaker>
             <l n="1896" xml:id="l1896">Votre crainte, ma soeur, vous fait un peu trop croire, </l>
             <l n="1897" xml:id="l1897">Laetus a des Amis, mais il est généreux, </l>
             <l n="1898" xml:id="l1898">Et vous craignez en vain qu'il n'ait brigué par eux. </l>
           </sp>
-          <sp xml:id="V08-5" who="JULIE">
+          <sp who="JULIE" xml:id="V08-5">
             <speaker>JULIE.</speaker>
             <l n="1899" xml:id="l1899">Il l'a fait toutefois, mais la brigue est si belle </l>
             <l n="1900" xml:id="l1900">Qu'à ses soins Électus ayant uni son zèle, </l>
             <l n="1901" xml:id="l1901">Pour voir régner la paix où régnait la fureur, </l>
             <l n="1902" xml:id="l1902">Tous deux ont proclamé Pertinax Empereur. </l>
           </sp>
-          <sp xml:id="V08-6" who="MARCIA">
+          <sp who="MARCIA" xml:id="V08-6">
             <speaker>MARCIA.</speaker>
-            <l n="1903" xml:id="l1903" part="I">Mon Père ! Ah, justes Dieux ! </l>
+            <l n="1903" part="I" xml:id="l1903">Mon Père ! Ah, justes Dieux ! </l>
           </sp>
-          <sp xml:id="V08-7" who="JULIE">
+          <sp who="JULIE" xml:id="V08-7">
             <speaker>JULIE.</speaker>
             <l part="F">Soudain sans plus attendre </l>
             <l n="1904" xml:id="l1904">Le nom de Pertinax s'est fait partout entendre, </l>
@@ -3139,17 +3184,17 @@
             <l n="1908" xml:id="l1908">Viennent de ce succès vous donner l'assurance. </l>
           </sp>
         </div2>
-        <div2 xml:id="V09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="V09">
           <head>SCÈNE IX. Marcia, Helvie, Laetus, Électus, Flavian, Julie, Lucie. </head>
-          <sp xml:id="V09-1" who="MARCIA">
+          <sp who="MARCIA" xml:id="V09-1">
             <speaker>MARCIA.</speaker>
             <l n="1909" xml:id="l1909">Enfin le Ciel pour nous s'est daigné déclarer. </l>
             <l n="1910" xml:id="l1910">L'Univers aujourd'hui commence à respirer, </l>
             <l n="1911" xml:id="l1911">Sa liberté renaît et par la mort d'un homme </l>
-            <note type="C">Dans le vers suivant,  'de' a été ajouté avant 'Rome' pour compléter le nombre de pieds. </note>
+            <note type="C">Dans le vers suivant, 'de' a été ajouté avant 'Rome' pour compléter le nombre de pieds. </note>
             <l n="1912" xml:id="l1912">Vous vous êtes montrés dignes enfants de Rome. </l>
           </sp>
-          <sp xml:id="V09-2" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="V09-2">
             <speaker>ÉLECTUS.</speaker>
             <l n="1913" xml:id="l1913">Si d'un titre si beau nous pouvons nous flatter, </l>
             <l n="1914" xml:id="l1914">Le choix d'un Empereur nous le fait mériter. </l>
@@ -3159,36 +3204,36 @@
             <l n="1918" xml:id="l1918">Aime à voir Pertinax à l'Empire élevé ; </l>
             <l n="1919" xml:id="l1919">Tous secondant un choix qu'il refusait de croire... </l>
           </sp>
-          <sp xml:id="V09-3" who="MARCIA">
+          <sp who="MARCIA" xml:id="V09-3">
             <speaker>MARCIA.</speaker>
             <l n="1920" xml:id="l1920">Nous savons qu'à vous seuls nous devons cette gloire, </l>
             <l n="1921" xml:id="l1921">Et ma soeur dans Laetus admire avec plaisir </l>
             <l n="1922" xml:id="l1922">La vertu d'un Amant qu'elle avait su choisir. </l>
           </sp>
-          <sp xml:id="V09-4" who="LAETUS">
+          <sp who="LAETUS" xml:id="V09-4">
             <speaker>LAETUS.</speaker>
             <l n="1923" xml:id="l1923">Si son coeur de mes voeux eut peine à se défendre, </l>
             <l n="1924" xml:id="l1924">Quand elle touche au Trône, oserais-je y prétendre ? </l>
           </sp>
-          <sp xml:id="V09-5" who="HELVIE">
+          <sp who="HELVIE" xml:id="V09-5">
             <speaker>HELVIE.</speaker>
             <l n="1925" xml:id="l1925">Ce coeur vous devant tout, c'est outrager ma foi </l>
             <l n="1926" xml:id="l1926">Que craindre une grandeur que vous quittiez pour moi. </l>
             <l n="1927" xml:id="l1927">Et votre amour du mien doit flatter sa constance, </l>
             <l n="1928" xml:id="l1928">S'il peut dans mon devoir en trouver l'assurance. </l>
           </sp>
-          <sp xml:id="V09-6" who="LAETUS">
+          <sp who="LAETUS" xml:id="V09-6">
             <speaker>LAETUS.</speaker>
             <l n="1929" xml:id="l1929">Ô glorieux arrêt qui remplit mon espoir ! </l>
           </sp>
-          <sp xml:id="V09-7" who="ELECTUS">
+          <sp who="ELECTUS" xml:id="V09-7">
             <speaker>ÉLECTUS, à Marcia. </speaker>
             <l n="1930" xml:id="l1930">Qu'ai-je à combattre en vous par de là ce devoir, </l>
             <l n="1931" xml:id="l1931">Madame ? Jusqu'ici ma flamme, quoi que pure, </l>
             <l n="1932" xml:id="l1932">D'un indigne soupçon n'a pu forcer l'injure. </l>
             <l n="1933" xml:id="l1933">Pour toucher votre coeur ai-je assez entrepris. </l>
           </sp>
-          <sp xml:id="V09-8" who="MARCIA">
+          <sp who="MARCIA" xml:id="V09-8">
             <speaker>MARCIA.</speaker>
             <l n="1934" xml:id="l1934">L'aveu de Pertinax vous doit gagner ce prix ; </l>
             <l n="1935" xml:id="l1935">Mais pour vous l'acquérir, sans tarder davantage, </l>

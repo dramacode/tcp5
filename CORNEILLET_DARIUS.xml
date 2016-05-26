@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>DARIUS, TRAGÉDIE</title>
-        <author born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" academie="1685">CORNEILLE, Thomas</author>
+        <author academie="1685" born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" key="Corneille, Thomas (1625-1709)">CORNEILLE, Thomas</author>
         <date>1659</date>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <p>publié par Ernest FIEVRE, Septembre 2009</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -39,7 +40,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -51,7 +52,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1659">M. DC. LIX. AVEC PRIVILEGE DU ROY.</docDate>
-      <docAuthor id="CORNEILLE, Thomas" bio="corneillet">Thomas Corneille</docAuthor>
+      <docAuthor bio="corneillet" id="CORNEILLE, Thomas">Thomas Corneille</docAuthor>
       <docImprint>
         <privilege id=""/>
         <acheveImprime id=""/>
@@ -62,23 +63,23 @@
       </performance>
       <castList>
         <head>ACTEURS.</head>
-        <castItem><role xml:id="OCHUS" id="OCHUS" sex="1" type="H" statut="roi" age="A" stat_amour="néant">OCHUS</role>, roi de Perse.</castItem>
-        <castItem><role xml:id="DARIUS" id="DARIUS" sex="1" type="H" statut="prince" age="A" stat_amour="néant">DARIUS</role>, déguisé sous le nom de Codoman, fils d'un Darius aîné d'Ochus.</castItem>
-        <castItem><role xml:id="STATIRA" id="STATIRA" sex="2" type="H" statut="prince" age="A" stat_amour="néant">STATIRA</role>, fille d'Ochus.</castItem>
-        <castItem><role xml:id="AMESTRIS" id="AMESTRIS" sex="2" type="H" statut="prince" age="A" stat_amour="néant">AMESTRIS</role>, soeur d'Ochus </castItem>
-        <castItem><role xml:id="MEGABISE" id="MÉGABISE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">MÉGABISE</role>, favori d'Ochus.</castItem>
-        <castItem><role xml:id="OROPASTE" id="OROPASTE" sex="1" type="H" statut="capitaine" age="A" stat_amour="néant">OROPASTE</role>, capitaine des Gardes d'Ochus.</castItem>
-        <castItem><role xml:id="BAGOAS" id="BAGOAS" sex="1" type="H" statut="confident" age="A" stat_amour="néant">BAGOAS</role>, confident de Mégabise.</castItem>
-        <castItem><role xml:id="BARSINE" id="BARSINE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">BARSINE</role>, confidente de Statira.</castItem>
+        <castItem><role age="A" civil="M" id="OCHUS" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="OCHUS">OCHUS</role>, roi de Perse.</castItem>
+        <castItem><role age="A" civil="M" id="DARIUS" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="DARIUS">DARIUS</role>, déguisé sous le nom de Codoman, fils d'un Darius aîné d'Ochus.</castItem>
+        <castItem><role age="A" civil="F" id="STATIRA" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="STATIRA">STATIRA</role>, fille d'Ochus.</castItem>
+        <castItem><role age="A" civil="F" id="AMESTRIS" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="AMESTRIS">AMESTRIS</role>, soeur d'Ochus </castItem>
+        <castItem><role age="A" civil="M" id="MÉGABISE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="MEGABISE">MÉGABISE</role>, favori d'Ochus.</castItem>
+        <castItem><role age="A" civil="M" id="OROPASTE" rend="male" stat_amour="néant" statut="capitaine" type="H" xml:id="OROPASTE">OROPASTE</role>, capitaine des Gardes d'Ochus.</castItem>
+        <castItem><role age="A" civil="M" id="BAGOAS" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="BAGOAS">BAGOAS</role>, confident de Mégabise.</castItem>
+        <castItem><role age="A" civil="F" id="BARSINE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="BARSINE">BARSINE</role>, confidente de Statira.</castItem>
       </castList>
-      <set location="Persépolis" country="Iran" periode="Vème avant JC" link="">La Scène est à Persépolis. </set>
+      <set country="Iran" link="" location="Persépolis" periode="Vème avant JC">La Scène est à Persépolis. </set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Amestris, Mégabise. </head>
-          <sp xml:id="I01-1" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="I01-1">
             <speaker>AMESTRIS.</speaker>
             <l n="1" xml:id="l1">Quelque pouvoir sur vous que vous m'ayez fait prendre, </l>
             <l n="2" xml:id="l2">Dans l'essai que j'en fais je n'ai rien à prétendre, </l>
@@ -93,7 +94,7 @@
             <l n="11" xml:id="l11">Et c'est pour l'éviter que mes sens divisés </l>
             <l n="12" xml:id="l12">Cherchent une clarté que vous me refusez.</l>
           </sp>
-          <sp xml:id="I01-2" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I01-2">
             <speaker>MÉGABISE.</speaker>
             <l n="13" xml:id="l13">Madame, ce soupçon dont je souffre l'outrage </l>
             <l n="14" xml:id="l14">Semble de mon amour désavouer l'hommage, </l>
@@ -108,7 +109,7 @@
             <l n="23" xml:id="l23">Et s'il refuserait d'exposer à vos yeux </l>
             <l n="24" xml:id="l24">Ce qui serait resté d'un sang si précieux. </l>
           </sp>
-          <sp xml:id="I01-3" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="I01-3">
             <speaker>AMESTRIS.</speaker>
             <l n="25" xml:id="l25">Comme l'on employa votre Père à l'épandre, </l>
             <l n="26" xml:id="l26">S'il l'avait conservé, vous auriez pu l'apprendre, </l>
@@ -132,13 +133,13 @@
             <l n="44" xml:id="l44">Remettre à Darius le bien de ses Aïeux.</l>
             <l n="45" xml:id="l45">Jugez si j'ai sujet de le vouloir connaître. </l>
           </sp>
-          <sp xml:id="I01-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I01-4">
             <speaker>MÉGABISE.</speaker>
             <l n="46" xml:id="l46">Mais ce n'est qu'un faux bruit qui le force à renaître, </l>
             <l n="47" xml:id="l47">Madame, et vous savez que ce Prince au berceau </l>
             <l n="48" xml:id="l48">Par un ordre secret rencontra son tombeau.</l>
           </sp>
-          <sp xml:id="I01-5" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="I01-5">
             <speaker>AMESTRIS.</speaker>
             <l n="49" xml:id="l49">Et bien, s'il a péri par cet ordre barbare, </l>
             <l n="50" xml:id="l50">Sachons de ce grand nom quel Imposteur s'empare, </l>
@@ -154,9 +155,9 @@
             <l n="60" xml:id="l60">Il est trop votre Ami pour vous rien déguiser. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Mégabise, Bagoas. </head>
-          <sp xml:id="I02-1" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I02-1">
             <speaker>MÉGABISE.</speaker>
             <l n="61" xml:id="l61">Oui, par de grands effets que tu ne peux attendre </l>
             <l n="62" xml:id="l62">Tu connaîtras bientôt ce que tu veux apprendre, </l>
@@ -166,10 +167,10 @@
             <l n="66" xml:id="l66">L'attentat n'offrant rien que leur fierté n'embrasse, </l>
             <l n="67" xml:id="l67">Les plus sanglants degrés, dans l'ardeur d'y monter, </l>
             <l n="68" xml:id="l68">N'ont rien d'assez affreux pour pouvoir m'arrêter. </l>
-            <stage type="toward">À Bagoas qui entre. </stage>
+            <stage>À Bagoas qui entre. </stage>
             <l n="69" xml:id="l69">As-tu vu nos Amis ? Sont-ils prêts à me suivre ? </l>
           </sp>
-          <sp xml:id="I02-2" who="BAGOAS">
+          <sp who="BAGOAS" xml:id="I02-2">
             <speaker>BAGOAS.</speaker>
             <l n="70" xml:id="l70">Ils vous mettront au Trône, ou cesseront de vivre, </l>
             <l n="71" xml:id="l71">Seigneur ; jamais Tyran avec plus de transport </l>
@@ -199,7 +200,7 @@
             <l n="95" xml:id="l95">Et quoiqu'il ait versé ce sang si plaint de tous, </l>
             <l n="96" xml:id="l96">Il pût, sauvant le Fils, le laisser vivre en vous. </l>
           </sp>
-          <sp xml:id="I02-3" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I02-3">
             <speaker>MÉGABISE.</speaker>
             <l n="97" xml:id="l97">Ah ! Je ne cherche pas, quoi que j'en doive attendre, </l>
             <l n="98" xml:id="l98">Par où justifier le nom que je vais prendre. </l>
@@ -214,7 +215,7 @@
             <l n="107" xml:id="l107">Si dans notre parti, pour le mieux assurer, </l>
             <l n="108" xml:id="l108">Mes soins auparavant n'avaient su l'attirer.</l>
           </sp>
-          <sp xml:id="I02-4" who="BAGOAS">
+          <sp who="BAGOAS" xml:id="I02-4">
             <speaker>BAGOAS.</speaker>
             <l n="109" xml:id="l109">Quoi que vous en promette un espoir trop crédule, </l>
             <l n="110" xml:id="l110">Je crains de sa vertu le sévère scrupule. </l>
@@ -225,7 +226,7 @@
             <l n="115" xml:id="l115">Et croira se noircir d'un reproche trop bas, </l>
             <l n="116" xml:id="l116">À le priver d'un Trône affermi par son bras.</l>
           </sp>
-          <sp xml:id="I02-5" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I02-5">
             <speaker>MÉGABISE.</speaker>
             <l n="117" xml:id="l117">L'amitié qui nous lie obtiendra toute chose, </l>
             <l n="118" xml:id="l118">Et quelque âpre vertu que son devoir m'oppose, </l>
@@ -236,14 +237,14 @@
             <l n="123" xml:id="l123">Et si pour l'épargner son zèle fait effort, </l>
             <l n="124" xml:id="l124">Nous promettrons sa vie en conspirant sa mort. </l>
           </sp>
-          <sp xml:id="I02-6" who="BAGOAS">
+          <sp who="BAGOAS" xml:id="I02-6">
             <speaker>BAGOAS.</speaker>
             <l n="125" xml:id="l125">C'est le plus sûr moyen ; mais cette violence </l>
             <l n="126" xml:id="l126">Du côté d'Amestris vous défend l'espérance, </l>
             <l n="127" xml:id="l127">Et vous croiriez en vain que son juste courroux </l>
             <l n="128" xml:id="l128">Dans l'assassin d'un frère acceptât un Époux. </l>
           </sp>
-          <sp xml:id="I02-7" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I02-7">
             <speaker>MÉGABISE.</speaker>
             <l n="129" xml:id="l129">Ah, que pour nos esprits l'Amour a peu de force </l>
             <l n="130" xml:id="l130">Quand de l'ambition ils ont goûté l'amorce ! </l>
@@ -263,20 +264,20 @@
             <l n="144" xml:id="l144">Et d'un nom glorieux... Mais le Roi vient à nous. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Ochus, Statira, Mégabise, Oropaste, Barsine, Bagoas. </head>
-          <sp xml:id="I03-1" who="OCHUS">
+          <sp who="OCHUS" xml:id="I03-1">
             <speaker>OCHUS, à Statira.</speaker>
             <l n="145" xml:id="l145">Va, d'un Peuple insolent laisse agir le murmure, </l>
             <l n="146" xml:id="l146">Laisse-le d'un Fantôme embrasser l'imposture, </l>
             <l n="147" xml:id="l147">Ma Fille, on trouvera moyen de l'arrêter. </l>
           </sp>
-          <sp xml:id="I03-2" who="STATIRA">
+          <sp who="STATIRA" xml:id="I03-2">
             <speaker>STATIRA.</speaker>
             <l n="148" xml:id="l148">Seigneur, j'ai lieu pour vous de m'en inquiéter, </l>
             <l n="149" xml:id="l149">Comme ce bruit lui plaît, la suite en est à craindre. </l>
           </sp>
-          <sp xml:id="I03-3" who="OCHUS">
+          <sp who="OCHUS" xml:id="I03-3">
             <speaker>OCHUS.</speaker>
             <l n="150" xml:id="l150">Le feu n'ira pas loin avant que de s'éteindre. </l>
             <l n="151" xml:id="l151">C'est de quelques Mutins l'imprudente chaleur </l>
@@ -287,7 +288,7 @@
             <l n="156" xml:id="l156">L'imposture est grossière, et ce Prince n'est plus. </l>
             <l n="157" xml:id="l157">Tiribase à son Roi fut toujours trop fidèle. </l>
           </sp>
-          <sp xml:id="I03-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I03-4">
             <speaker>MÉGABISE.</speaker>
             <l n="158" xml:id="l158">Recevez dans son Fils un garant de son zèle ; </l>
             <l n="159" xml:id="l159">Pour négliger votre ordre et trahir votre espoir </l>
@@ -297,7 +298,7 @@
             <l n="163" xml:id="l163">Qu'un premier mouvement altéra tout le sien, </l>
             <l n="164" xml:id="l164">Mais il servait son Prince, et n'examina rien. </l>
           </sp>
-          <sp xml:id="I03-5" who="OCHUS">
+          <sp who="OCHUS" xml:id="I03-5">
             <speaker>OCHUS.</speaker>
             <l n="165" xml:id="l165">Si mon scrupule alors en combattit le crime, </l>
             <l n="166" xml:id="l166">Du grand Art de régner j'ignorai la maxime, </l>
@@ -316,29 +317,29 @@
             <l n="179" xml:id="l179">Ce qu'ont de plus affreux les plus cruels trépas </l>
             <l n="180" xml:id="l180">Laissera peu d'ardeur pour de tels attentats. </l>
           </sp>
-          <sp xml:id="I03-6" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I03-6">
             <speaker>MÉGABISE.</speaker>
             <l n="181" xml:id="l181">Il est juste, Seigneur ; d'une si noire audace, </l>
             <l n="182" xml:id="l182">C'est par des flots de sang que le crime s'efface, </l>
             <l n="183" xml:id="l183">Et le Ciel trahira les soins que je vous dois, </l>
             <l n="184" xml:id="l184">Si vous le découvrez par d'autres que par moi. </l>
           </sp>
-          <sp xml:id="I03-7" who="OCHUS">
+          <sp who="OCHUS" xml:id="I03-7">
             <speaker>OCHUS.</speaker>
             <l n="185" xml:id="l185">Je sais quel est ton zèle ; agis, cher Mégabise, </l>
             <l n="186" xml:id="l186">Préviens de nos Mutins l'insolente entreprise, </l>
             <l n="187" xml:id="l187">Tâche d'en découvrir et l'ordre et le projet. </l>
           </sp>
-          <sp xml:id="I03-8" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I03-8">
             <speaker>MÉGABISE.</speaker>
             <l n="188" xml:id="l188">J'y veillerai, Seigneur, en fidèle Sujet. </l>
             <l n="189" xml:id="l189">Je vois des Mécontents dont mes sourdes intrigues </l>
             <l n="190" xml:id="l190">Jusqu'au fond de leur sein pénétreront les ligues, </l>
             <l n="191" xml:id="l191">Et j'agirai si bien, qu'avant qu'il soit deux jours </l>
             <l n="192" xml:id="l192">De ce faux bruit qui plaît j'arrêterai le cours. </l>
-            <l n="193" xml:id="l193" part="I">Ne vous alarmez point. </l>
+            <l n="193" part="I" xml:id="l193">Ne vous alarmez point. </l>
           </sp>
-          <sp xml:id="I03-9" who="OCHUS">
+          <sp who="OCHUS" xml:id="I03-9">
             <speaker>OCHUS.</speaker>
             <l part="F">Et quel sujet d'alarmes ? </l>
             <l n="194" xml:id="l194">Codoman est toujours le soutien de nos armes, </l>
@@ -353,29 +354,29 @@
             <l n="203" xml:id="l203">Qu'en ses plus doux souhaits son espoir prévenu </l>
             <l n="204" xml:id="l204">Fasse envier à tous le sort d'un Inconnu. </l>
           </sp>
-          <sp xml:id="I03-10" who="STATIRA">
+          <sp who="STATIRA" xml:id="I03-10">
             <speaker>STATIRA.</speaker>
             <l n="205" xml:id="l205">Ce doit être un haut prix qu'un grand Roi lui prépare </l>
             <l n="206" xml:id="l206">S'il reconnaît assez une vertu si rare ; </l>
             <l n="207" xml:id="l207">Elle ne peut briller dans un plus vif éclat. </l>
           </sp>
-          <sp xml:id="I03-11" who="OCHUS">
+          <sp who="OCHUS" xml:id="I03-11">
             <speaker>OCHUS.</speaker>
             <l n="208" xml:id="l208">Si je lui dois beaucoup, je cesse d'être ingrat, </l>
             <l n="209" xml:id="l209">Quand un illustre hymen que mon choix autorise </l>
             <l n="210" xml:id="l210">Doit unir à son sang le sang de Mégabise. </l>
-            <stage type="toward">À Mégabise. </stage>
+            <stage>À Mégabise. </stage>
             <l n="211" xml:id="l211">Oui, je veux que ta Soeur, en lui donnant la main, </l>
             <l n="212" xml:id="l212">Fixe enfin parmi nous son destin incertain. </l>
             <l n="213" xml:id="l213">Disposes-y son coeur, toi qui peux tout sur elle. </l>
           </sp>
-          <sp xml:id="I03-12" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="I03-12">
             <speaker>MÉGABISE.</speaker>
             <l n="214" xml:id="l214">Cléone pour son Roi ne manque point de zèle, </l>
             <l n="215" xml:id="l215">Et je lui ferais tort d'essayer mon pouvoir, </l>
             <l n="216" xml:id="l216">Où votre choix, Seigneur, lui marque son devoir. </l>
           </sp>
-          <sp xml:id="I03-13" who="OCHUS">
+          <sp who="OCHUS" xml:id="I03-13">
             <speaker>OCHUS.</speaker>
             <l n="217" xml:id="l217">L'intérêt de l'État presse cet hyménée ; </l>
             <l n="218" xml:id="l218">Mais pour en voir sans trouble éclater la journée, </l>
@@ -383,23 +384,23 @@
             <l n="220" xml:id="l220">J'examine avec toi ce qu'il faut opposer. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Statira, Barsine. </head>
-          <sp xml:id="I04-1" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-1">
             <speaker>BARSINE.</speaker>
             <l n="221" xml:id="l221">Madame, ou je me trompe, ou quoi que le Roi pense, </l>
             <l n="222" xml:id="l222">Son ordre n'aura rien dont Cléone s'offense, </l>
             <l n="223" xml:id="l223">Et ses désirs sans peine au devoir préparés... </l>
           </sp>
-          <sp xml:id="I04-2" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-2">
             <speaker>STATIRA.</speaker>
-            <l n="224" xml:id="l224" part="I">Le cruel ordre ! Ah, Dieux ! </l>
+            <l n="224" part="I" xml:id="l224">Le cruel ordre ! Ah, Dieux ! </l>
           </sp>
-          <sp xml:id="I04-3" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-3">
             <speaker>BARSINE.</speaker>
             <l part="F">Quoi, vous en soupirez ! </l>
           </sp>
-          <sp xml:id="I04-4" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-4">
             <speaker>STATIRA.</speaker>
             <l n="225" xml:id="l225">Oui, Barsine, et l'orgueil où le sang m'autorise </l>
             <l n="226" xml:id="l226">A beau de ce soupir condamner la surprise, </l>
@@ -408,20 +409,20 @@
             <l n="229" xml:id="l229">Et quelque âpre fierté qu'exige un Diadème, </l>
             <l n="230" xml:id="l230">J'en perds le souvenir quand je perds ce que j'aime. </l>
           </sp>
-          <sp xml:id="I04-5" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-5">
             <speaker>BARSINE.</speaker>
             <l n="231" xml:id="l231">Que me fait présumer ce sentiment jaloux ? </l>
-            <l n="232" xml:id="l232" part="I">Codoman... </l>
+            <l n="232" part="I" xml:id="l232">Codoman... </l>
           </sp>
-          <sp xml:id="I04-6" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-6">
             <speaker>STATIRA.</speaker>
             <l part="M">Ah, Barsine ! </l>
           </sp>
-          <sp xml:id="I04-7" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-7">
             <speaker>BARSINE.</speaker>
             <l part="F">Et quoi, l'aimeriez-vous ? </l>
           </sp>
-          <sp xml:id="I04-8" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-8">
             <speaker>STATIRA.</speaker>
             <l n="233" xml:id="l233">Hélas ! Demandes-tu quel sentiment me touche </l>
             <l n="234" xml:id="l234">Quand mes yeux font pour toi l'office de ma bouche, </l>
@@ -448,7 +449,7 @@
             <l n="255" xml:id="l255">Le coeur s'en est déjà si bien laissé charmer, </l>
             <l n="256" xml:id="l256">Qu'il n'est plus en état de refuser d'aimer. </l>
           </sp>
-          <sp xml:id="I04-9" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-9">
             <speaker>BARSINE.</speaker>
             <l n="257" xml:id="l257">Je vous plains du malheur où je vous vois réduite ; </l>
             <l n="258" xml:id="l258">Mais vous pouvez, Madame, en prévenir la suite, </l>
@@ -456,18 +457,18 @@
             <l n="260" xml:id="l260">Vous opposer par elle aux volontés du Roi. </l>
             <l n="261" xml:id="l261">Employez le pouvoir qu'elle a sur Mégabise. </l>
           </sp>
-          <sp xml:id="I04-10" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-10">
             <speaker>STATIRA.</speaker>
             <l n="262" xml:id="l262">De ce choix plus que moi tu la verras surprise, </l>
             <l n="263" xml:id="l263">Et le coup que ma flamme a lieu de redouter, </l>
             <l n="264" xml:id="l264">Par son propre intérêt la doit inquiéter. </l>
-            <l n="265" xml:id="l265" part="I">Elle aime Codoman. </l>
+            <l n="265" part="I" xml:id="l265">Elle aime Codoman. </l>
           </sp>
-          <sp xml:id="I04-11" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-11">
             <speaker>BARSINE.</speaker>
             <l part="F">Vous le croyez, Madame ? </l>
           </sp>
-          <sp xml:id="I04-12" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-12">
             <speaker>STATIRA.</speaker>
             <l n="266" xml:id="l266">Oui, Codoman sans doute a su charmer son âme. </l>
             <l n="267" xml:id="l267">Ne te souvient-il plus avec quelle chaleur </l>
@@ -489,14 +490,14 @@
             <l n="283" xml:id="l283">Et j'ai trop reconnu, m'en laissant enflammer, </l>
             <l n="284" xml:id="l284">Que qui veut être aimée a résolu d'aimer. </l>
           </sp>
-          <sp xml:id="I04-13" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-13">
             <speaker>BARSINE.</speaker>
             <l n="285" xml:id="l285">L'hommage d'un Héros dont la gloire est Maîtresse, </l>
             <l n="286" xml:id="l286">Est digne de l'orgueil d'une grande Princesse, </l>
             <l n="287" xml:id="l287">Mais quoi qu'à Codoman le vôtre ait déféré, </l>
             <l n="288" xml:id="l288">En recevant ses voeux, qu'avez-vous espéré ? </l>
           </sp>
-          <sp xml:id="I04-14" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-14">
             <speaker>STATIRA.</speaker>
             <l n="289" xml:id="l289">Ah, que de mon secret ton âme trop grossière </l>
             <l n="290" xml:id="l290">Pour juger d'un beau feu tire peu de lumière, </l>
@@ -511,19 +512,19 @@
             <l n="299" xml:id="l299">Sans cesse il l'examine, il l'observe, il le sert, </l>
             <l n="300" xml:id="l300">Et ne connaît l'espoir qu'au moment qu'il le perd. </l>
           </sp>
-          <sp xml:id="I04-15" who="BARSINE">
+          <sp who="BARSINE" xml:id="I04-15">
             <speaker>BARSINE.</speaker>
             <l n="301" xml:id="l301">D'une source bien pure un tel amour doit naître, </l>
             <l n="302" xml:id="l302">Et si pour Codoman... mais je le vois paraître. </l>
           </sp>
-          <sp xml:id="I04-16" who="STATIRA">
+          <sp who="STATIRA" xml:id="I04-16">
             <speaker>STATIRA.</speaker>
             <l n="303" xml:id="l303">Faut-il que je l'accable ? Ah rigoureux destin ! </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Statira, Darius, Barsine. </head>
-          <sp xml:id="I05-1" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-1">
             <speaker>DARIUS, sous le nom de Codoman.</speaker>
             <l n="304" xml:id="l304">De quel fâcheux présage est pour moi ce chagrin, </l>
             <l n="305" xml:id="l305">Madame ? Je ne sais ce que j'en dois attendre, </l>
@@ -531,14 +532,14 @@
             <l n="307" xml:id="l307">Et d'un mortel effroi tous mes sens prévenus </l>
             <l n="308" xml:id="l308">Succombent à des maux qui leur sont inconnus. </l>
           </sp>
-          <sp xml:id="I05-2" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-2">
             <speaker>STATIRA.</speaker>
             <l n="309" xml:id="l309">Ces maux ne sont pas tels qu'il vous les fait paraître ; </l>
             <l n="310" xml:id="l310">Si le Sort vous poursuit, vous en êtes le Maître, </l>
             <l n="311" xml:id="l311">Et quelque orage enfin qui semble se former, </l>
             <l n="312" xml:id="l312">Vous le dissiperez en cessant de m'aimer. </l>
           </sp>
-          <sp xml:id="I05-3" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-3">
             <speaker>DARIUS.</speaker>
             <l n="313" xml:id="l313">Cessant de vous aimer ? Moi, Madame ? Ah, je doute </l>
             <l n="314" xml:id="l314">Si c'est vous qui parlez, ou moi qui vous écoute, </l>
@@ -553,7 +554,7 @@
             <l n="323" xml:id="l323">Et par un beau triomphe à la fin obtenu, </l>
             <l n="324" xml:id="l324">Son coeur se veut soustraire aux voeux d'un Inconnu. </l>
           </sp>
-          <sp xml:id="I05-4" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-4">
             <speaker>STATIRA.</speaker>
             <l n="325" xml:id="l325">Si les ayant soufferts je m'en suis fait complice, </l>
             <l n="326" xml:id="l326">À la seule vertu j'ai cru rendre justice, </l>
@@ -561,45 +562,45 @@
             <l n="328" xml:id="l328">S'il en aimait l'éclat sur un front couronné. </l>
             <l n="329" xml:id="l329">Mais enfin aujourd'hui je ne puis plus sans crime </l>
             <l n="330" xml:id="l330">Lui rien souffrir pour vous au-delà de l'estime, </l>
-            <l n="331" xml:id="l331" part="I">C'est pour Cléone seule... </l>
+            <l n="331" part="I" xml:id="l331">C'est pour Cléone seule... </l>
           </sp>
-          <sp xml:id="I05-5" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-5">
             <speaker>DARIUS.</speaker>
             <l part="F">Ah ! Que me dites-vous ? </l>
           </sp>
-          <sp xml:id="I05-6" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-6">
             <speaker>STATIRA.</speaker>
             <l n="332" xml:id="l332">Que le Roi vous choisit pour être son Époux, </l>
             <l n="333" xml:id="l333">Et que se réservant lui-même à vous le dire, </l>
             <l n="334" xml:id="l334">Il la fait préparer à l'aveu qu'il désire. </l>
           </sp>
-          <sp xml:id="I05-7" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-7">
             <speaker>DARIUS.</speaker>
             <l n="335" xml:id="l335">Ce coup surprend ma flamme, il le faut confesser. </l>
           </sp>
-          <sp xml:id="I05-8" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-8">
             <speaker>STATIRA.</speaker>
             <l n="336" xml:id="l336">Ce choix en fait un crime, il n'y faut plus penser. </l>
           </sp>
-          <sp xml:id="I05-9" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-9">
             <speaker>DARIUS.</speaker>
             <l n="337" xml:id="l337">Quoi, vous croyez déjà que mon coeur y consente ? </l>
           </sp>
-          <sp xml:id="I05-10" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-10">
             <speaker>STATIRA.</speaker>
             <l n="338" xml:id="l338">Quoi, vous refuseriez cette gloire éclatante ? </l>
           </sp>
-          <sp xml:id="I05-11" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-11">
             <speaker>DARIUS.</speaker>
             <l n="339" xml:id="l339">Quelque bonheur par là dont me flatte le Roi, </l>
             <l n="340" xml:id="l340">Hors vous, hors votre amour, il n'en est point pour moi. </l>
           </sp>
-          <sp xml:id="I05-12" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-12">
             <speaker>STATIRA.</speaker>
             <l n="341" xml:id="l341">Si vous n'acceptiez pas l'honneur qu'il vous veut faire, </l>
             <l n="342" xml:id="l342">Pourriez-vous espérer de fléchir sa colère ? </l>
           </sp>
-          <sp xml:id="I05-13" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-13">
             <speaker>DARIUS.</speaker>
             <l n="343" xml:id="l343">Non, mais par votre aveu, si je puis l'obtenir, </l>
             <l n="344" xml:id="l344">Pour rompre son dessein je le veux prévenir. </l>
@@ -608,7 +609,7 @@
             <l n="347" xml:id="l347">Lui découvrir ma flamme, et presser sa bonté </l>
             <l n="348" xml:id="l348">D'en voir plutôt l'ardeur que la témérité. </l>
           </sp>
-          <sp xml:id="I05-14" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-14">
             <speaker>STATIRA.</speaker>
             <l n="349" xml:id="l349">À quels nouveaux périls ce dessein vous engage ! </l>
             <l n="350" xml:id="l350">Jaloux de ce qu'il est, il prend de tout ombrage, </l>
@@ -619,21 +620,21 @@
             <l n="355" xml:id="l355">Et que de ses refus l'invincible fierté </l>
             <l n="356" xml:id="l356">N'en porte la rigueur à trop d'indignité. </l>
           </sp>
-          <sp xml:id="I05-15" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-15">
             <speaker>DARIUS.</speaker>
             <l n="357" xml:id="l357">Que contre mon audace il s'emporte, il s'enflamme, </l>
             <l n="358" xml:id="l358">Ce que j'ai fait pour lui saura toucher son âme, </l>
             <l n="359" xml:id="l359">Et s'il peut l'oublier, le rang où je me vois </l>
             <l n="360" xml:id="l360">M'a donné des Amis qui parleront pour moi. </l>
           </sp>
-          <sp xml:id="I05-16" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-16">
             <speaker>STATIRA.</speaker>
             <l n="361" xml:id="l361">Connaissez mieux la Cour et tous ses artifices. </l>
             <l n="362" xml:id="l362">On vous flatte, on vous aime après vos grands services, </l>
             <l n="363" xml:id="l363">Mais au premier revers, quoi qu'on vous eût promis, </l>
             <l n="364" xml:id="l364">Si le Roi vous manquait, vous n'auriez plus d'Amis. </l>
           </sp>
-          <sp xml:id="I05-17" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-17">
             <speaker>DARIUS.</speaker>
             <l n="365" xml:id="l365">Qu'ils m'abandonnent tous au milieu de l'orage, </l>
             <l n="366" xml:id="l366">J'aurai pour moi du moins ma gloire et mon courage, </l>
@@ -643,7 +644,7 @@
             <l n="370" xml:id="l370">A peine à consentir où bonheur où j'aspire, </l>
             <l n="371" xml:id="l371">Et que de son éclat vos sentiments jaloux... </l>
           </sp>
-          <sp xml:id="I05-18" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-18">
             <speaker>STATIRA.</speaker>
             <l n="372" xml:id="l372">Ah ! C'est peu mériter ce que j'ai fait pour vous, </l>
             <l n="373" xml:id="l373">Et ce doute outrageant que vous faîtes paraître </l>
@@ -655,44 +656,44 @@
             <l n="379" xml:id="l379">Et m'expose à regret à l'horreur d'un devoir, </l>
             <l n="380" xml:id="l380">Qui me défend l'amour s'il vous défend l'espoir. </l>
           </sp>
-          <sp xml:id="I05-19" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-19">
             <speaker>DARIUS.</speaker>
             <l n="381" xml:id="l381">Quoi, le Roi s'obstinant à condamner ma flamme, </l>
             <l n="382" xml:id="l382">Princesse, vous voudrez me chasser de votre âme ? </l>
           </sp>
-          <sp xml:id="I05-20" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-20">
             <speaker>STATIRA.</speaker>
-            <l n="383" xml:id="l383" part="I">J'y ferai mes efforts. </l>
+            <l n="383" part="I" xml:id="l383">J'y ferai mes efforts. </l>
           </sp>
-          <sp xml:id="I05-21" who="DARIUS">
+          <sp who="DARIUS" xml:id="I05-21">
             <speaker>DARIUS.</speaker>
             <l part="F">Le pourrez-vous, hélas ! </l>
           </sp>
-          <sp xml:id="I05-22" who="STATIRA">
+          <sp who="STATIRA" xml:id="I05-22">
             <speaker>STATIRA.</speaker>
             <l n="384" xml:id="l384">Va, c'est te dire trop que ne répondre pas. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Statira, Amestris, Barsine. </head>
-          <sp xml:id="II01-1" who="STATIRA">
+          <sp who="STATIRA" xml:id="II01-1">
             <speaker>STATIRA.</speaker>
             <l n="385" xml:id="l385">C'est trop vous déguiser ; si cet hymen vous gêne, </l>
             <l n="386" xml:id="l386">Confessez qu'en secret l'amour fait votre peine, </l>
             <l n="387" xml:id="l387">Et que de ce qu'il perd le vif ressentiment </l>
             <l n="388" xml:id="l388">Vous fait blâmer un choix qui vous coûte un Amant. </l>
           </sp>
-          <sp xml:id="II01-2" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II01-2">
             <speaker>AMESTRIS.</speaker>
             <l n="389" xml:id="l389">Lui, mon Amant, Madame ! Ah, c'est un peu trop croire. </l>
             <l n="390" xml:id="l390">J'estime Codoman, et prends part à sa gloire, </l>
             <l n="391" xml:id="l391">Mais non pas jusqu'au point qu'on doive présumer </l>
             <l n="392" xml:id="l392">Que mon coeur soit jamais capable de l'aimer. </l>
           </sp>
-          <sp xml:id="II01-3" who="STATIRA">
+          <sp who="STATIRA" xml:id="II01-3">
             <speaker>STATIRA.</speaker>
             <l n="393" xml:id="l393">Quoi, Princesse, un Héros si grand, si magnanime, </l>
             <l n="394" xml:id="l394">Ne mérite de vous qu'un sentiment d'estime, </l>
@@ -703,19 +704,19 @@
             <l n="399" xml:id="l399">Et que quand la vertu justifiait nos voeux, </l>
             <l n="400" xml:id="l400">L'espoir qui les flattait n'avait rien de honteux. </l>
           </sp>
-          <sp xml:id="II01-4" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II01-4">
             <speaker>AMESTRIS.</speaker>
             <l n="401" xml:id="l401">Ce sont mes sentiments, et la mienne peut-être </l>
             <l n="402" xml:id="l402">Pour tout autre que lui les aurait fait paraître, </l>
             <l n="403" xml:id="l403">Mais quoi que sur mon coeur pût un charme si doux, </l>
             <l n="404" xml:id="l404">Je trouverais ma gloire à me vaincre pour vous. </l>
           </sp>
-          <sp xml:id="II01-5" who="STATIRA">
+          <sp who="STATIRA" xml:id="II01-5">
             <speaker>STATIRA.</speaker>
             <l n="405" xml:id="l405">La pensée est obscure, et j'ai peine à l'entendre, </l>
-            <l n="406" xml:id="l406" part="I">De grâce, expliquez-la. </l>
+            <l n="406" part="I" xml:id="l406">De grâce, expliquez-la. </l>
           </sp>
-          <sp xml:id="II01-6" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II01-6">
             <speaker>AMESTRIS.</speaker>
             <l part="F">Voudrais-je m'en défendre </l>
             <l n="407" xml:id="l407">Lorsque mille vertus qu'admire notre Cour </l>
@@ -737,7 +738,7 @@
             <l n="423" xml:id="l423">Et l'ayant pu soumettre à de si chères lois, </l>
             <l n="424" xml:id="l424">Quoi qu'ordonne le Roi, je sais ce que je dois. </l>
           </sp>
-          <sp xml:id="II01-7" who="STATIRA">
+          <sp who="STATIRA" xml:id="II01-7">
             <speaker>STATIRA.</speaker>
             <l n="425" xml:id="l425">Ah ! Si vous l'aviez su, m'auriez-vous exposée </l>
             <l n="426" xml:id="l426">À rougir de connaître une victoire aisée, </l>
@@ -752,7 +753,7 @@
             <l n="435" xml:id="l435">Et qu'où l'amour se plaît d'établir son pouvoir, </l>
             <l n="436" xml:id="l436">De peur de s'en défendre, on n'en veut rien savoir. </l>
           </sp>
-          <sp xml:id="II01-8" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II01-8">
             <speaker>AMESTRIS.</speaker>
             <l n="437" xml:id="l437">Laisser agir les Dieux dont l'ordre vous inspire ; </l>
             <l n="438" xml:id="l438">De nos coeurs à leur gré lui seul règle l'empire, </l>
@@ -763,14 +764,14 @@
             <l n="443" xml:id="l443">Et que de leur secours vos désirs secondés </l>
             <l n="444" xml:id="l444">Obtiendront le succès que vous en attendez. </l>
           </sp>
-          <sp xml:id="II01-9" who="STATIRA">
+          <sp who="STATIRA" xml:id="II01-9">
             <speaker>STATIRA.</speaker>
             <l n="445" xml:id="l445">Dans l'espoir que pour moi l'amitié vous ordonne, </l>
             <l n="446" xml:id="l446">Songez-vous que le Ciel me garde une Couronne, </l>
             <l n="447" xml:id="l447">Et qu'esclave d'un rang qui m'en acquiert les droits, </l>
             <l n="448" xml:id="l448">Je forme des désirs dont je n'ai point le choix ? </l>
           </sp>
-          <sp xml:id="II01-10" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II01-10">
             <speaker>AMESTRIS.</speaker>
             <l n="449" xml:id="l449">Pour peu que ces désirs avec mes soins s'entendent, </l>
             <l n="450" xml:id="l450">Mon zèle vous répond de tout ce qu'ils prétendent, </l>
@@ -778,7 +779,7 @@
             <l n="452" xml:id="l452">Couronnera le Roi que j'ose lui choisir. </l>
             <l n="453" xml:id="l453">Daignerez-vous, Madame, en accepter l'augure ? </l>
           </sp>
-          <sp xml:id="II01-11" who="STATIRA">
+          <sp who="STATIRA" xml:id="II01-11">
             <speaker>STATIRA.</speaker>
             <l n="454" xml:id="l454">S'il me trompe, du moins j'en aime l'imposture, </l>
             <l n="455" xml:id="l455">Et Codoman peut tant... mais adieu, je le vois, </l>
@@ -787,9 +788,9 @@
             <l n="458" xml:id="l458">Je fuis ce qui m'expose à montrer ma faiblesse. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Amestris, Darius. </head>
-          <sp xml:id="II02-1" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-1">
             <speaker>AMESTRIS.</speaker>
             <l n="459" xml:id="l459">Tu triomphes enfin, Codoman, et ton feu </l>
             <l n="460" xml:id="l460">D'une auguste Princesse a mérité l'aveu. </l>
@@ -802,7 +803,7 @@
             <l n="467" xml:id="l467">Et qu'un succès plus prompt qu'on n'eût osé penser </l>
             <l n="468" xml:id="l468">Justifiera l'espoir où j'ai dû te forcer. </l>
           </sp>
-          <sp xml:id="II02-2" who="DARIUS">
+          <sp who="DARIUS" xml:id="II02-2">
             <speaker>DARIUS.</speaker>
             <l n="469" xml:id="l469">Je l'ai pris en tremblant, mais soit heur, soit disgrâce, </l>
             <l n="470" xml:id="l470">Madame, il faut enfin en découvrir l'audace, </l>
@@ -813,7 +814,7 @@
             <l n="475" xml:id="l475">Mégabise en ses voeux éprouve un sort bien doux, </l>
             <l n="476" xml:id="l476">Et je dois du respect à qui brûle pour vous. </l>
           </sp>
-          <sp xml:id="II02-3" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-3">
             <speaker>AMESTRIS.</speaker>
             <l n="477" xml:id="l477">Si j'ai sur Mégabise accepté quelque empire, </l>
             <l n="478" xml:id="l478">J'ai cru ce qu'un beau zèle en ta faveur m'inspire, </l>
@@ -844,7 +845,7 @@
             <l n="503" xml:id="l503">Ou qu'un Fourbe prenant ce grand nom pour appui, </l>
             <l n="504" xml:id="l504">Te dispute le droit de régner après lui. </l>
           </sp>
-          <sp xml:id="II02-4" who="DARIUS">
+          <sp who="DARIUS" xml:id="II02-4">
             <speaker>DARIUS.</speaker>
             <l n="505" xml:id="l505">Ah ! Pour tant de bontés je n'ai qu'une âme ingrate, </l>
             <l n="506" xml:id="l506">Si je crains devant vous que mon secret n'éclate, </l>
@@ -855,11 +856,11 @@
             <l n="511" xml:id="l511">Vous la craindrez bien peu si vous tirant d'abus </l>
             <l n="512" xml:id="l512">J'ose dans Codoman vous montrer Darius. </l>
           </sp>
-          <sp xml:id="II02-5" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-5">
             <speaker>AMESTRIS.</speaker>
-            <l n="513" xml:id="l513" part="I">Ô Dieux ! </l>
+            <l n="513" part="I" xml:id="l513">Ô Dieux ! </l>
           </sp>
-          <sp xml:id="II02-6" who="DARIUS">
+          <sp who="DARIUS" xml:id="II02-6">
             <speaker>DARIUS.</speaker>
             <l part="F">Oui, vous voyez ce Prince déplorable </l>
             <l n="514" xml:id="l514">Qu'Ochus sur sa naissance au berceau tint coupable, </l>
@@ -872,7 +873,7 @@
             <l n="521" xml:id="l521">Et de ne souhaiter jamais le Diadème </l>
             <l n="522" xml:id="l522">Que par l'heureux accord que vous pressez vous-même. </l>
           </sp>
-          <sp xml:id="II02-7" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-7">
             <speaker>AMESTRIS.</speaker>
             <l n="523" xml:id="l523">Je ne m'étonne plus de ces transports secrets </l>
             <l n="524" xml:id="l524">Qui m'ont fait jusqu'ici prendre vos intérêts. </l>
@@ -881,7 +882,7 @@
             <l n="527" xml:id="l527">Et pour vous rétablir dans votre premier rang </l>
             <l n="528" xml:id="l528">Pressait sans le savoir le suffrage du sang. </l>
           </sp>
-          <sp xml:id="II02-8" who="DARIUS">
+          <sp who="DARIUS" xml:id="II02-8">
             <speaker>DARIUS.</speaker>
             <l n="529" xml:id="l529">Hélas ! Si sur Ochus il n'a le même empire, </l>
             <l n="530" xml:id="l530">Mon espoir le plus doux par son refus expire, </l>
@@ -892,12 +893,12 @@
             <l n="535" xml:id="l535">Et m'expose aujourd'hui, si je me montre en Roi, </l>
             <l n="536" xml:id="l536">À la nécessité d'être cru sur ma foi ? </l>
           </sp>
-          <sp xml:id="II02-9" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-9">
             <speaker>AMESTRIS.</speaker>
             <l n="537" xml:id="l537">Quoi ! Pour justifier l'heur de votre naissance </l>
             <l n="538" xml:id="l538">Un billet de sa main n'est pas votre assurance ? </l>
           </sp>
-          <sp xml:id="II02-10" who="DARIUS">
+          <sp who="DARIUS" xml:id="II02-10">
             <speaker>DARIUS.</speaker>
             <l n="539" xml:id="l539">En vain pour l'obtenir j'ai fait cent fois effort, </l>
             <l n="540" xml:id="l540">Il me le réservait à l'instant de sa mort, </l>
@@ -905,7 +906,7 @@
             <l n="542" xml:id="l542">M'y tenait arrêté quand il perdit la vie. </l>
             <l n="543" xml:id="l543">Jugez par cette absence où je me suis réduit. </l>
           </sp>
-          <sp xml:id="II02-11" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-11">
             <speaker>AMESTRIS.</speaker>
             <l n="544" xml:id="l544">C'est ce qui vous oblige à semer ce grand bruit, </l>
             <l n="545" xml:id="l545">Afin que si le Peuple aux nouveautés propice </l>
@@ -913,18 +914,18 @@
             <l n="547" xml:id="l547">Vous puissiez, sur l'appui qu'il voudra vous prêter, </l>
             <l n="548" xml:id="l548">Justifier un sort dont on pourrait douter ? </l>
           </sp>
-          <sp xml:id="II02-12" who="DARIUS">
+          <sp who="DARIUS" xml:id="II02-12">
             <speaker>DARIUS.</speaker>
             <l n="549" xml:id="l549">Ah, Madame, ce bruit où mon nom se hasarde </l>
             <l n="550" xml:id="l550">N'attend point de succès dont l'effet me regarde, </l>
             <l n="551" xml:id="l551">Et quoi qu'à le défendre il semble m'engager, </l>
             <l n="552" xml:id="l552">J'en blâme le projet, et n'en sais que juger. </l>
           </sp>
-          <sp xml:id="II02-13" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-13">
             <speaker>AMESTRIS.</speaker>
             <l n="553" xml:id="l553">S'il ne vient point de vous, qui l'aura donc fait naître ? </l>
           </sp>
-          <sp xml:id="II02-14" who="DARIUS">
+          <sp who="DARIUS" xml:id="II02-14">
             <speaker>DARIUS.</speaker>
             <l n="554" xml:id="l554">Tiribase, obligé de me faire connaître, </l>
             <l n="555" xml:id="l555">Peut avoir, en mourant, à quelque Ami discret, </l>
@@ -938,7 +939,7 @@
             <l n="563" xml:id="l563">Et que des Factieux désavouant l'effort, </l>
             <l n="564" xml:id="l564">Je le rendrai toujours arbitre de mon sort. </l>
           </sp>
-          <sp xml:id="II02-15" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="II02-15">
             <speaker>AMESTRIS.</speaker>
             <l n="565" xml:id="l565">Ces nobles sentiments me le font trop paraître ; </l>
             <l n="566" xml:id="l566">Ou Darius n'est plus, ou Codoman doit l'être. </l>
@@ -954,16 +955,16 @@
             <l n="576" xml:id="l576">Parlez, et du succès reposez-vous sur moi. </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Ochus, Darius, Oropaste. </head>
-          <sp xml:id="II03-1" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="II03-1">
             <speaker>OROPASTE.</speaker>
             <l n="577" xml:id="l577">Quoi, Seigneur, quand un Fourbe aspire à votre perte </l>
             <l n="578" xml:id="l578">Vous méprisez la paix par cet accord offerte, </l>
             <l n="579" xml:id="l579">Et croyez soutenir par d'assez grands efforts, </l>
             <l n="580" xml:id="l580">Le tumulte au-dedans, et la guerre au-dehors ? </l>
           </sp>
-          <sp xml:id="II03-2" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-2">
             <speaker>OCHUS.</speaker>
             <l n="581" xml:id="l581">Si j'estime la paix, elle est pour moi sans charmes, </l>
             <l n="582" xml:id="l582">Quand je ne la dois point à l'effroi de mes armes, </l>
@@ -978,7 +979,7 @@
             <l n="591" xml:id="l591">Si par mon alliance on offre à leurs souhaits </l>
             <l n="592" xml:id="l592">L'inviolable noeud d'une éternelle paix. </l>
           </sp>
-          <sp xml:id="II03-3" who="DARIUS">
+          <sp who="DARIUS" xml:id="II03-3">
             <speaker>DARIUS.</speaker>
             <l n="593" xml:id="l593">Quoi ? Vous pourriez, Seigneur, par un accord si lâche, </l>
             <l n="594" xml:id="l594">Souffrir à votre gloire une honteuse tache, </l>
@@ -989,21 +990,21 @@
             <l n="599" xml:id="l599">Autorisez mon bras à leur faire savoir </l>
             <l n="600" xml:id="l600">Que c'est à vous d'en faire, et non d'en recevoir. </l>
           </sp>
-          <sp xml:id="II03-4" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-4">
             <speaker>OCHUS.</speaker>
             <l n="601" xml:id="l601">J'aime en toi cette ardeur, mais ce qui m'embarrasse </l>
             <l n="602" xml:id="l602">C'est d'un trouble intestin la secrète menace, </l>
             <l n="603" xml:id="l603">Et que nous divisant, nous n'en soyons moins forts </l>
             <l n="604" xml:id="l604">À résister ensemble et dedans et dehors. </l>
           </sp>
-          <sp xml:id="II03-5" who="DARIUS">
+          <sp who="DARIUS" xml:id="II03-5">
             <speaker>DARIUS.</speaker>
             <l n="605" xml:id="l605">Que l'effort en soit joint, j'ai pour vous en défendre </l>
             <l n="606" xml:id="l606">Une vie à donner, et du sang à répandre, </l>
             <l n="607" xml:id="l607">Et peut-être, Seigneur, quoi qu'on ose tenter, </l>
             <l n="608" xml:id="l608">Pour jouir du triomphe, il faudra l'acheter. </l>
           </sp>
-          <sp xml:id="II03-6" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-6">
             <speaker>OCHUS.</speaker>
             <l n="609" xml:id="l609">Assez d'occasions ont signalé ton zèle, </l>
             <l n="610" xml:id="l610">Mais en puis-je accepter cette preuve nouvelle, </l>
@@ -1014,14 +1015,14 @@
             <l n="615" xml:id="l615">Tes désirs par les miens se verront seconder, </l>
             <l n="616" xml:id="l616">Et pour obtenir tout, tu n'as qu'à demander. </l>
           </sp>
-          <sp xml:id="II03-7" who="DARIUS">
+          <sp who="DARIUS" xml:id="II03-7">
             <speaker>DARIUS.</speaker>
             <l n="617" xml:id="l617">Si la vertu, Seigneur, à ce refus engage, </l>
             <l n="618" xml:id="l618">J'en connais encor mal le scrupuleux usage ; </l>
             <l n="619" xml:id="l619">Ce charme des grands coeurs agit peu sur le mien, </l>
             <l n="620" xml:id="l620">Et pour trop souhaiter je ne demande rien. </l>
           </sp>
-          <sp xml:id="II03-8" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-8">
             <speaker>OCHUS.</speaker>
             <l n="621" xml:id="l621">D'un pareil sentiment l'injustice m'offense ; </l>
             <l n="622" xml:id="l622">Croire trop souhaiter, c'est borner ma puissance, </l>
@@ -1029,9 +1030,9 @@
             <l n="624" xml:id="l624">M'acquitter en vrai Roi de ce que je te dois. </l>
             <l n="625" xml:id="l625">Parle, et puisqu'à ton choix ma faveur abandonne </l>
             <l n="626" xml:id="l626">Tout ce qu'à mon pouvoir a soumis la Couronne, </l>
-            <l n="627" xml:id="l627" part="I">S'il est rang, dignité, biens, trésors... </l>
+            <l n="627" part="I" xml:id="l627">S'il est rang, dignité, biens, trésors... </l>
           </sp>
-          <sp xml:id="II03-9" who="DARIUS">
+          <sp who="DARIUS" xml:id="II03-9">
             <speaker>DARIUS.</speaker>
             <l part="F">Oui, Seigneur, </l>
             <l n="628" xml:id="l628">Un précieux trésor ferait tout mon bonheur, </l>
@@ -1040,11 +1041,11 @@
             <l n="631" xml:id="l631">Le coeur de la Princesse est le prix glorieux </l>
             <l n="632" xml:id="l632">Où va de mes désirs le vol ambitieux. </l>
           </sp>
-          <sp xml:id="II03-10" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-10">
             <speaker>OCHUS.</speaker>
-            <l n="633" xml:id="l633" part="I">Quoi, ma Fille ? </l>
+            <l n="633" part="I" xml:id="l633">Quoi, ma Fille ? </l>
           </sp>
-          <sp xml:id="II03-11" who="DARIUS">
+          <sp who="DARIUS" xml:id="II03-11">
             <speaker>DARIUS.</speaker>
             <l part="F">Je sais qu'une pareille audace, </l>
             <l n="634" xml:id="l634">À voir ce que je suis, est indigne de grâce ; </l>
@@ -1055,28 +1056,28 @@
             <l n="639" xml:id="l639">Et crains moins de faillir à ne me point borner, </l>
             <l n="640" xml:id="l640">Qu'à lui demander moins qu'il ne me veut donner. </l>
           </sp>
-          <sp xml:id="II03-12" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-12">
             <speaker>OCHUS.</speaker>
             <l n="641" xml:id="l641">Quand j'ai pressé pour vous ma bonté de paraître, </l>
             <l n="642" xml:id="l642">J'ai cru qu'en vos désirs vous sauriez vous connaître, </l>
             <l n="643" xml:id="l643">Et n'y souffririez pas un outrage à mon rang </l>
             <l n="644" xml:id="l644">Que tout autre que vous expierait de son sang. </l>
           </sp>
-          <sp xml:id="II03-13" who="DARIUS">
+          <sp who="DARIUS" xml:id="II03-13">
             <speaker>DARIUS.</speaker>
             <l n="645" xml:id="l645">Seigneur, si la Princesse est un prix où sans crime </l>
             <l n="646" xml:id="l646">L'espoir ne peut porter un orgueil magnanime, </l>
             <l n="647" xml:id="l647">Vous n'avez rien d'ailleurs qui ne soit au-dessous </l>
             <l n="648" xml:id="l648">De ce qu'un zèle ardent m'a fait faire pour vous. </l>
           </sp>
-          <sp xml:id="II03-14" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-14">
             <speaker>OCHUS.</speaker>
             <l n="649" xml:id="l649">Un peu de nom acquis rend votre audace extrême ; </l>
             <l n="650" xml:id="l650">Mais en vous emportant au-delà de vous-même, </l>
             <l n="651" xml:id="l651">Gardez qu'il ne me force à vous faire rentrer </l>
             <l n="652" xml:id="l652">Dans ce honteux néant dont j'ai su vous tirer. </l>
           </sp>
-          <sp xml:id="II03-15" who="DARIUS">
+          <sp who="DARIUS" xml:id="II03-15">
             <speaker>DARIUS.</speaker>
             <l n="653" xml:id="l653">J'y rentrerai, Seigneur, c'est mon plus doux partage, </l>
             <l n="654" xml:id="l654">Et si de ce néant vous prenez avantage, </l>
@@ -1115,7 +1116,7 @@
             <l n="687" xml:id="l687">De mes nobles travaux ce sont les dignes fruits. </l>
             <l n="688" xml:id="l688">Voilà dans mon néant, Seigneur, ce que je suis. </l>
           </sp>
-          <sp xml:id="II03-16" who="OCHUS">
+          <sp who="OCHUS" xml:id="II03-16">
             <speaker>OCHUS.</speaker>
             <l n="689" xml:id="l689">Ma bonté jusqu'au bout t'a voulu faire grâce </l>
             <l n="690" xml:id="l690">Souffrant de ton orgueil la criminelle audace, </l>
@@ -1125,9 +1126,9 @@
             <l n="694" xml:id="l694">Insolent, souviens-toi que tu me dois la vie. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. </head>
-          <sp xml:id="II04-1" who="DARIUS">
+          <sp who="DARIUS" xml:id="II04-1">
             <speaker>DARIUS.</speaker>
             <l n="695" xml:id="l695">Ah ! Puisqu'elle m'attire un outrage si bas, </l>
             <l n="696" xml:id="l696">Ta pitié m'est cruelle à ne me l'ôter pas. </l>
@@ -1157,21 +1158,21 @@
             <l n="720" xml:id="l720">Les fidèles conseils d'un Ami généreux. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. Darius, Mégabise. </head>
-          <sp xml:id="II05-1" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-1">
             <speaker>DARIUS.</speaker>
             <l n="721" xml:id="l721">Ah, mon cher Mégabise, est-il quelque disgrâce </l>
             <l n="722" xml:id="l722">Que ma triste infortune aujourd'hui ne surpasse ? </l>
             <l n="723" xml:id="l723">Avez-vous vu le Roi ? Savez-vous mon ennui ? </l>
           </sp>
-          <sp xml:id="II05-2" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-2">
             <speaker>MÉGABISE.</speaker>
             <l n="724" xml:id="l724">J'ai tout su d'Oropaste, il sortait d'avec lui, </l>
             <l n="725" xml:id="l725">Et je ne puis assez condamner sa colère. </l>
             <l n="726" xml:id="l726">Mais aimer la Princesse, et ne l'avoir pu taire ? </l>
           </sp>
-          <sp xml:id="II05-3" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-3">
             <speaker>DARIUS.</speaker>
             <l n="727" xml:id="l727">J'ai failli, je l'avoue, et ce coeur outragé </l>
             <l n="728" xml:id="l728">Par ce qu'il souffre, hélas ! vous rend assez vengé, </l>
@@ -1180,7 +1181,7 @@
             <l n="731" xml:id="l731">Et n'ai rien d'important dont je ne sois tout prêt </l>
             <l n="732" xml:id="l732">À vous abandonner le plus cher intérêt. </l>
           </sp>
-          <sp xml:id="II05-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-4">
             <speaker>MÉGABISE.</speaker>
             <l n="733" xml:id="l733">Votre coeur peut en moi prendre toute assurance, </l>
             <l n="734" xml:id="l734">Et pour en mériter l'entière confiance, </l>
@@ -1191,33 +1192,33 @@
             <l n="739" xml:id="l739">Qu'a pour vous ce refus qui vous doive étonner, </l>
             <l n="740" xml:id="l740">Si Darius respire, et vous la peut donner ? </l>
           </sp>
-          <sp xml:id="II05-5" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-5">
             <speaker>DARIUS.</speaker>
             <l n="741" xml:id="l741">D'un semblable discours que faut-il que je pense ? </l>
           </sp>
-          <sp xml:id="II05-6" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-6">
             <speaker>MÉGABISE.</speaker>
             <l n="742" xml:id="l742">Qu'en vain pour Statira vous perdez l'espérance, </l>
             <l n="743" xml:id="l743">Et que pour vous promettre ou refuser sa foi, </l>
             <l n="744" xml:id="l744">Ochus n'est que son Père, et Darius son Roi. </l>
           </sp>
-          <sp xml:id="II05-7" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-7">
             <speaker>DARIUS.</speaker>
-            <l n="745" xml:id="l745" part="I">Quoi ? Vous connaissez donc... </l>
+            <l n="745" part="I" xml:id="l745">Quoi ? Vous connaissez donc... </l>
           </sp>
-          <sp xml:id="II05-8" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-8">
             <speaker>MÉGABISE.</speaker>
             <l part="F">Oui, je puis bien connaître </l>
             <l n="746" xml:id="l746">Sous quel Astre fatal son malheur le fit naître, </l>
-            <l n="747" xml:id="l747" part="I">Si Tiribase, hélas ! </l>
+            <l n="747" part="I" xml:id="l747">Si Tiribase, hélas ! </l>
           </sp>
-          <sp xml:id="II05-9" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-9">
             <speaker>DARIUS.</speaker>
             <l part="F">Vous m'en dites assez, </l>
             <l n="748" xml:id="l748">Je ne demande plus si vous le connaissez ; </l>
             <l n="749" xml:id="l749">Mais j'atteste les Dieux qu'à taire sa naissance... </l>
           </sp>
-          <sp xml:id="II05-10" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-10">
             <speaker>MÉGABISE.</speaker>
             <l n="750" xml:id="l750">Non, non, je n'ai de vous aucune défiance, </l>
             <l n="751" xml:id="l751">Et vos serments en vain cherchent à m'assurer </l>
@@ -1227,22 +1228,22 @@
             <l n="755" xml:id="l755">Et par ma fausse mort l'abuser à tel point, </l>
             <l n="756" xml:id="l756">Qu'il croit ma vie un songe, et ne s'en émeut point. </l>
           </sp>
-          <sp xml:id="II05-11" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-11">
             <speaker>DARIUS.</speaker>
-            <l n="757" xml:id="l757" part="I">Quoi, que me dites-vous ? </l>
+            <l n="757" part="I" xml:id="l757">Quoi, que me dites-vous ? </l>
           </sp>
-          <sp xml:id="II05-12" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-12">
             <speaker>MÉGABISE.</speaker>
             <l part="F">Ce que je dois vous dire, </l>
             <l n="758" xml:id="l758">Qu'Ochus jura ma mort pour s'assurer l'Empire, </l>
             <l n="759" xml:id="l759">Et qu'à me la donner Tiribase commis, </l>
             <l n="760" xml:id="l760">M'ayant sauvé le jour, me fit croire son Fils. </l>
           </sp>
-          <sp xml:id="II05-13" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-13">
             <speaker>DARIUS.</speaker>
-            <l n="761" xml:id="l761" part="I">Vous êtes Darius ? </l>
+            <l n="761" part="I" xml:id="l761">Vous êtes Darius ? </l>
           </sp>
-          <sp xml:id="II05-14" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-14">
             <speaker>MÉGABISE.</speaker>
             <l part="F">Oui, ce Darius même </l>
             <l n="762" xml:id="l762">Sur qui la tyrannie usurpe un Diadème. </l>
@@ -1260,14 +1261,14 @@
             <l n="774" xml:id="l774">C'est l'unique moyen d'acquérir la Princesse, </l>
             <l n="775" xml:id="l775">Sa foi de cet effort sera le digne prix. </l>
             <l n="776" xml:id="l776">Mais quel trouble subit agite vos esprits ? </l>
-            <l n="777" xml:id="l777" part="I">Vous ne répondez point ? </l>
+            <l n="777" part="I" xml:id="l777">Vous ne répondez point ? </l>
           </sp>
-          <sp xml:id="II05-15" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-15">
             <speaker>DARIUS.</speaker>
             <l part="F">Que puis-je vous répondre, </l>
             <l n="778" xml:id="l778">Si tout ce que j'entends ne sert qu'à me confondre ? </l>
           </sp>
-          <sp xml:id="II05-16" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-16">
             <speaker>MÉGABISE.</speaker>
             <l n="779" xml:id="l779">Il suffit, Codoman, j'en connais le sujet ; </l>
             <l n="780" xml:id="l780">Votre amour n'eût jamais qu'un Trône pour objet, </l>
@@ -1275,7 +1276,7 @@
             <l n="782" xml:id="l782">Le nom de Darius vous étonne, vous blesse. </l>
             <l n="783" xml:id="l783">À vos prétentions son espoir est fatal ? </l>
           </sp>
-          <sp xml:id="II05-17" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-17">
             <speaker>DARIUS.</speaker>
             <l n="784" xml:id="l784">Ah, qu'en juger ainsi c'est me connaître mal ! </l>
             <l n="785" xml:id="l785">D'un sentiment si lâche en vain on me soupçonne, </l>
@@ -1290,25 +1291,25 @@
             <l n="794" xml:id="l794">À me joindre au parti qui s'attaque à son Père ; </l>
             <l n="795" xml:id="l795">Jugez par là du trouble où vous m'avez surpris. </l>
           </sp>
-          <sp xml:id="II05-18" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-18">
             <speaker>MÉGABISE.</speaker>
             <l n="796" xml:id="l796">Et bien, déguisez-vous le dessein que j'ai pris, </l>
             <l n="797" xml:id="l797">Et sans qu'aucun des deux par vous se favorise, </l>
             <l n="798" xml:id="l798">Attendant le succès, ignorez l'entreprise. </l>
             <l n="799" xml:id="l799">C'est assez qu'un Ami ne soit pas contre moi. </l>
           </sp>
-          <sp xml:id="II05-19" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-19">
             <speaker>DARIUS.</speaker>
             <l n="800" xml:id="l800">Non, non, à Darius je sais ce que je dois ; </l>
             <l n="801" xml:id="l801">Mais que de la Princesse il s'immole le Père... </l>
           </sp>
-          <sp xml:id="II05-20" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-20">
             <speaker>MÉGABISE.</speaker>
             <l n="802" xml:id="l802">Je n'oublierai jamais que le mien fut son Frère, </l>
             <l n="803" xml:id="l803">Et le sang n'agit pas avec si peu d'effort, </l>
             <l n="804" xml:id="l804">Que reprenant mes droits je consente à sa mort. </l>
           </sp>
-          <sp xml:id="II05-21" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-21">
             <speaker>DARIUS.</speaker>
             <l n="805" xml:id="l805">En vain à l'épargner sa chaleur vous convie ; </l>
             <l n="806" xml:id="l806">Vous ne serez pas seul le maître de sa vie, </l>
@@ -1319,31 +1320,31 @@
             <l n="811" xml:id="l811">Au nom de Darius je la vois s'émouvoir, </l>
             <l n="812" xml:id="l812">Et sans vous découvrir j'en puis beaucoup savoir. </l>
           </sp>
-          <sp xml:id="II05-22" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="II05-22">
             <speaker>MÉGABISE.</speaker>
             <l n="813" xml:id="l813">Quel que soit pour mon nom le zèle qui l'enflamme, </l>
             <l n="814" xml:id="l814">Un secret est mal sûr dans les mains d'une Femme, </l>
-            <l n="815" xml:id="l815" part="I">Voyez-la, mais enfin songez... </l>
+            <l n="815" part="I" xml:id="l815">Voyez-la, mais enfin songez... </l>
           </sp>
-          <sp xml:id="II05-23" who="DARIUS">
+          <sp who="DARIUS" xml:id="II05-23">
             <speaker>DARIUS.</speaker>
             <l part="F">Je suis discret. </l>
             <l n="816" xml:id="l816">Et l'on aura ma vie avant votre secret. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Ochus, Oropaste. </head>
-          <sp xml:id="III01-1" who="OCHUS">
+          <sp who="OCHUS" xml:id="III01-1">
             <speaker>OCHUS.</speaker>
             <l n="817" xml:id="l817">Non, non, s'il m'a servi, si sa haute vaillance </l>
             <l n="818" xml:id="l818">A pu sur trois États étendre ma puissance, </l>
             <l n="819" xml:id="l819">L'ingrat s'abandonnant à l'espoir d'être Roi, </l>
             <l n="820" xml:id="l820">S'en destinait l'empire, et n'a fait que pour soi. </l>
           </sp>
-          <sp xml:id="III01-2" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="III01-2">
             <speaker>OROPASTE.</speaker>
             <l n="821" xml:id="l821">Seigneur, s'il m'est permis d'excuser son audace, </l>
             <l n="822" xml:id="l822">Elle n'a rien en soi qui ne mérite grâce, </l>
@@ -1354,7 +1355,7 @@
             <l n="827" xml:id="l827">Et ce feu qu'a fait naître un mérite infini, </l>
             <l n="828" xml:id="l828">Par un plus doux refus pouvait être puni. </l>
           </sp>
-          <sp xml:id="III01-3" who="OCHUS">
+          <sp who="OCHUS" xml:id="III01-3">
             <speaker>OCHUS.</speaker>
             <l n="829" xml:id="l829">Va, ne t'abuse point ; quoi qu'il montre de flamme, </l>
             <l n="830" xml:id="l830">N'en crois pas l'ardeur propre à bien remplir son âme, </l>
@@ -1381,25 +1382,25 @@
             <l n="851" xml:id="l851">Nous verrons, dans ce bruit qui menace mes jours </l>
             <l n="852" xml:id="l852">Si pour vaincre un Fantôme il nous faut son secours. </l>
           </sp>
-          <sp xml:id="III01-4" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="III01-4">
             <speaker>OROPASTE.</speaker>
             <l n="853" xml:id="l853">L'appui de Codoman le rendrait redoutable </l>
             <l n="854" xml:id="l854">Si d'une lâcheté son coeur était capable ; </l>
             <l n="855" xml:id="l855">Mais il a trop d'horreur pour de tels attentats, </l>
             <l n="856" xml:id="l856">Et sa haute vertu vous répond de son bras. </l>
           </sp>
-          <sp xml:id="III01-5" who="OCHUS">
+          <sp who="OCHUS" xml:id="III01-5">
             <speaker>OCHUS.</speaker>
             <l n="857" xml:id="l857">Comme il peut des Mutins seconder l'entreprise, </l>
             <l n="858" xml:id="l858">On l'observe en secret de peur d'une surprise ; </l>
             <l n="859" xml:id="l859">Mais dans tous ses desseins pour mieux le prévenir </l>
             <l n="860" xml:id="l860">J'ai mandé la Princesse, et je la vois venir ; </l>
-            <l n="861" xml:id="l861" part="I">Tu vas savoir le reste. </l>
+            <l n="861" part="I" xml:id="l861">Tu vas savoir le reste. </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Ochus, Statira, Barsine, Oropaste. </head>
-          <sp xml:id="III02-1" who="OCHUS">
+          <sp who="OCHUS" xml:id="III02-1">
             <speaker>OCHUS.</speaker>
             <l part="F">Approche, Fille ingrate, </l>
             <l n="862" xml:id="l862">Enfin de ton grand coeur l'illustre effort éclate ; </l>
@@ -1407,7 +1408,7 @@
             <l n="864" xml:id="l864">Va rehausser ta gloire aux yeux de l'Univers ? </l>
             <l n="865" xml:id="l865">Les tiens de Codoman ont mérité l'hommage ? </l>
           </sp>
-          <sp xml:id="III02-2" who="STATIRA">
+          <sp who="STATIRA" xml:id="III02-2">
             <speaker>STATIRA.</speaker>
             <l n="866" xml:id="l866">S'ils ont pu l'enhardir à vous faire un outrage, </l>
             <l n="867" xml:id="l867">J'en punirai, Seigneur, les criminels appas </l>
@@ -1417,7 +1418,7 @@
             <l n="871" xml:id="l871">Mais mon respect pour vous tient mes voeux trop bornés, </l>
             <l n="872" xml:id="l872">Pour approuver jamais ce que vous condamnez. </l>
           </sp>
-          <sp xml:id="III02-3" who="OCHUS">
+          <sp who="OCHUS" xml:id="III02-3">
             <speaker>OCHUS.</speaker>
             <l n="873" xml:id="l873">Si par une bassesse où l'amour te dispense </l>
             <l n="874" xml:id="l874">Tu n'eusses pas des siens avoué l'insolence, </l>
@@ -1429,7 +1430,7 @@
             <l n="880" xml:id="l880">Que dans le doux espoir d'en acquérir les droits ; </l>
             <l n="881" xml:id="l881">Mais je sais les moyens d'arrêter tant d'audace. </l>
           </sp>
-          <sp xml:id="III02-4" who="STATIRA">
+          <sp who="STATIRA" xml:id="III02-4">
             <speaker>STATIRA.</speaker>
             <l n="882" xml:id="l882">Seigneur, dans votre esprit ce soupçon trouve place ! </l>
             <l n="883" xml:id="l883">Quand sa haute valeur lui rendait tout aisé, </l>
@@ -1439,7 +1440,7 @@
             <l n="887" xml:id="l887">Et si du Diadème il eût été jaloux, </l>
             <l n="888" xml:id="l888">N'eût-il pas fait pour lui ce qu'il y fit pour vous ? </l>
           </sp>
-          <sp xml:id="III02-5" who="OCHUS">
+          <sp who="OCHUS" xml:id="III02-5">
             <speaker>OCHUS.</speaker>
             <l n="889" xml:id="l889">D'un Ennemi suspect cette indigne défense </l>
             <l n="890" xml:id="l890">De ma flamme avec lui marque l'intelligence. </l>
@@ -1458,11 +1459,11 @@
             <l n="903" xml:id="l903">Obéis sans réplique, et songe dès demain, </l>
             <l n="904" xml:id="l904">Pour m'ôter tout scrupule, à lui donner la main. </l>
           </sp>
-          <sp xml:id="III02-6" who="STATIRA">
+          <sp who="STATIRA" xml:id="III02-6">
             <speaker>STATIRA.</speaker>
-            <l n="905" xml:id="l905" part="I">Ah, Seigneur, s'il est vrai... </l>
+            <l n="905" part="I" xml:id="l905">Ah, Seigneur, s'il est vrai... </l>
           </sp>
-          <sp xml:id="III02-7" who="OCHUS">
+          <sp who="OCHUS" xml:id="III02-7">
             <speaker>OCHUS.</speaker>
             <l part="F">Redoute ma colère, </l>
             <l n="906" xml:id="l906">Je n'ai fait qu'abaisser l'orgueil d'un téméraire, </l>
@@ -1472,13 +1473,13 @@
             <l n="910" xml:id="l910">Souviens-toi de son crime, et tremble pour sa tête. </l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Statira, Barsine. </head>
-          <sp xml:id="III03-1" who="BARSINE">
+          <sp who="BARSINE" xml:id="III03-1">
             <speaker>BARSINE.</speaker>
             <l n="911" xml:id="l911">Madame, le malheur qui détruit votre espoir... </l>
           </sp>
-          <sp xml:id="III03-2" who="STATIRA">
+          <sp who="STATIRA" xml:id="III03-2">
             <speaker>STATIRA.</speaker>
             <l n="912" xml:id="l912">Hélas ! Barsine, hélas ! Peux-tu le concevoir, </l>
             <l n="913" xml:id="l913">Si mon coeur que confond ce revers effroyable, </l>
@@ -1495,9 +1496,9 @@
             <l n="924" xml:id="l924">Faut-il que n'aimer pas soit un crime pour moi ? </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Darius, Statira, Barsine. </head>
-          <sp xml:id="III04-1" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-1">
             <speaker>DARIUS.</speaker>
             <l n="925" xml:id="l925">Madame, à quelque excès d'injustice et d'outrage </l>
             <l n="926" xml:id="l926">Que de mon fier destin ait pu monter la rage, </l>
@@ -1508,7 +1509,7 @@
             <l n="931" xml:id="l931">Et je respecte trop toutes vos volontés, </l>
             <l n="932" xml:id="l932">Pour n'y consentir pas si vous y consentez. </l>
           </sp>
-          <sp xml:id="III04-2" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-2">
             <speaker>STATIRA.</speaker>
             <l n="933" xml:id="l933">Ce pouvoir que sur toi ton respect m'abandonne, </l>
             <l n="934" xml:id="l934">Ne saurait empêcher ce que le Sort ordonne. </l>
@@ -1519,7 +1520,7 @@
             <l n="939" xml:id="l939">Si toutefois pour toi ma perte est un malheur </l>
             <l n="940" xml:id="l940">Qui te puisse obliger à mourir de douleur. </l>
           </sp>
-          <sp xml:id="III04-3" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-3">
             <speaker>DARIUS.</speaker>
             <l n="941" xml:id="l941">Vous en doutez, Madame, et l'ardeur qui me presse </l>
             <l n="942" xml:id="l942">Vous a si mal encor expliqué sa tendresse ! </l>
@@ -1530,14 +1531,14 @@
             <l n="947" xml:id="l947">Et se faire raison, en renonçant au jour, </l>
             <l n="948" xml:id="l948">De ce qu'a fait le Sort d'outrage à son amour. </l>
           </sp>
-          <sp xml:id="III04-4" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-4">
             <speaker>STATIRA.</speaker>
             <l n="949" xml:id="l949">J'ai pour toi trop d'estime, et quand ton espoir cesse, </l>
             <l n="950" xml:id="l950">Ma vertu me répond en vain de ma faiblesse. </l>
             <l n="951" xml:id="l951">Prête-moi ton exemple à la fortifier ; </l>
             <l n="952" xml:id="l952">Pour en venir à bout tu n'as qu'à m'oublier. </l>
           </sp>
-          <sp xml:id="III04-5" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-5">
             <speaker>DARIUS.</speaker>
             <l n="953" xml:id="l953">Ah ! Cessez un discours dont la suite m'accable. </l>
             <l n="954" xml:id="l954">Qui conseille l'oubli s'en doit croire capable, </l>
@@ -1560,7 +1561,7 @@
             <l n="971" xml:id="l971">Sans qu'aucun engagement aide au sort qui me perd </l>
             <l n="972" xml:id="l972">À me chasser d'un coeur où l'amour m'a souffert. </l>
           </sp>
-          <sp xml:id="III04-6" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-6">
             <speaker>STATIRA.</speaker>
             <l n="973" xml:id="l973">Quoi ! Tu serais jaloux qu'une triste victoire </l>
             <l n="974" xml:id="l974">Me permît d'immoler cet amour à ma gloire, </l>
@@ -1571,43 +1572,43 @@
             <l n="979" xml:id="l979">Mais un plus rude encor vient de m'être prescrit, </l>
             <l n="980" xml:id="l980">Sous qui ma vertu tremble, et mon devoir frémit. </l>
           </sp>
-          <sp xml:id="III04-7" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-7">
             <speaker>DARIUS.</speaker>
-            <l n="981" xml:id="l981" part="I">Quoi, plus que m'oublier ? </l>
+            <l n="981" part="I" xml:id="l981">Quoi, plus que m'oublier ? </l>
           </sp>
-          <sp xml:id="III04-8" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-8">
             <speaker>STATIRA.</speaker>
             <l part="F">Plus que m'arracher l'âme, </l>
             <l n="982" xml:id="l982">Puisque de Mégabise il me doit rendre Femme. </l>
           </sp>
-          <sp xml:id="III04-9" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-9">
             <speaker>DARIUS.</speaker>
-            <l n="983" xml:id="l983" part="I">Vous ? Ma Princesse, vous ? </l>
+            <l n="983" part="I" xml:id="l983">Vous ? Ma Princesse, vous ? </l>
           </sp>
-          <sp xml:id="III04-10" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-10">
             <speaker>STATIRA.</speaker>
             <l part="F">Il n'est rien plus certain. </l>
           </sp>
-          <sp xml:id="III04-11" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-11">
             <speaker>DARIUS.</speaker>
-            <l n="984" xml:id="l984" part="I">Quoi, le Roi... </l>
+            <l n="984" part="I" xml:id="l984">Quoi, le Roi... </l>
           </sp>
-          <sp xml:id="III04-12" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-12">
             <speaker>STATIRA.</speaker>
             <l part="F">Me condamne à lui donner la main. </l>
           </sp>
-          <sp xml:id="III04-13" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-13">
             <speaker>DARIUS.</speaker>
-            <l n="985" xml:id="l985" part="I">Et vous obéirez ? </l>
+            <l n="985" part="I" xml:id="l985">Et vous obéirez ? </l>
           </sp>
-          <sp xml:id="III04-14" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-14">
             <speaker>STATIRA.</speaker>
             <l part="F">J'obéirai sans doute </l>
             <l n="986" xml:id="l986">Quelques rudes tourments que cet effort me coûte, </l>
             <l n="987" xml:id="l987">Puisqu'aux coeurs les mieux nés l'amour sert de bourreau, </l>
             <l n="988" xml:id="l988">Quand il faut l'étouffer pour aimer de nouveau. </l>
           </sp>
-          <sp xml:id="III04-15" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-15">
             <speaker>DARIUS.</speaker>
             <l n="989" xml:id="l989">Je le vois bien, Madame ; un peu de violence </l>
             <l n="990" xml:id="l990">Qu'il faut faire à vos voeux pour cette obéissance, </l>
@@ -1626,7 +1627,7 @@
             <l n="1003" xml:id="l1003">Et forçait ma Princesse en ce fatal moment </l>
             <l n="1004" xml:id="l1004">A moins aimer l'Époux, pour mieux plaindre l'Amant. </l>
           </sp>
-          <sp xml:id="III04-16" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-16">
             <speaker>STATIRA.</speaker>
             <l n="1005" xml:id="l1005">Cruel, pourquoi prêter un coeur qui se veut taire ? </l>
             <l n="1006" xml:id="l1006">J'ai dit ce que je dois, non ce que je puis faire. </l>
@@ -1650,7 +1651,7 @@
             <l n="1024" xml:id="l1024">Le crime de manquer à ce que je me dois. </l>
             <l n="1025" xml:id="l1025">Est-ce assez te venger de mon obéissance ? </l>
           </sp>
-          <sp xml:id="III04-17" who="DARIUS">
+          <sp who="DARIUS" xml:id="III04-17">
             <speaker>DARIUS.</speaker>
             <l n="1026" xml:id="l1026">Ah ! Puisqu'il est ainsi, je reprends l'espérance, </l>
             <l n="1027" xml:id="l1027">Et pour vous affranchir d'un hymen odieux </l>
@@ -1660,7 +1661,7 @@
             <l n="1031" xml:id="l1031">Non que de ses secrets on me voie abuser, </l>
             <l n="1032" xml:id="l1032">Mais j'ai les miens à part dont je puis disposer. </l>
           </sp>
-          <sp xml:id="III04-18" who="STATIRA">
+          <sp who="STATIRA" xml:id="III04-18">
             <speaker>STATIRA.</speaker>
             <l n="1033" xml:id="l1033">Le voici qui s'avance. Adieu, je me retire ; </l>
             <l n="1034" xml:id="l1034">Tu m'aimes, on le sait, je n'ai rien à te dire. </l>
@@ -1668,9 +1669,9 @@
             <l n="1036" xml:id="l1036">Qu'on demande mon coeur, et qu'il n'est plus à moi. </l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Darius, Mégabise, Bagoas. </head>
-          <sp xml:id="III05-1" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-1">
             <speaker>MÉGABISE.</speaker>
             <l n="1037" xml:id="l1037">La princesse me fuit, et mon abord la chasse. </l>
             <l n="1038" xml:id="l1038">Mais, mon cher Codoman, savez-vous ma disgrâce, </l>
@@ -1678,12 +1679,12 @@
             <l n="1040" xml:id="l1040">Son ordre dès demain m'en fait être l'Époux ? </l>
             <l n="1041" xml:id="l1041">Jugez ce que je souffre à trahir votre flamme. </l>
           </sp>
-          <sp xml:id="III05-2" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-2">
             <speaker>DARIUS.</speaker>
             <l n="1042" xml:id="l1042">L'intérêt d'un Ami partage trop votre âme. </l>
             <l n="1043" xml:id="l1043">Enfin de cet hymen votre coeur est d'accord ? </l>
           </sp>
-          <sp xml:id="III05-3" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-3">
             <speaker>MÉGABISE.</speaker>
             <l n="1044" xml:id="l1044">Le peut-il sans se faire un violent effort ? </l>
             <l n="1045" xml:id="l1045">Mais pour en détourner la fatale surprise, </l>
@@ -1711,7 +1712,7 @@
             <l n="1067" xml:id="l1067">Et rendez, à dompter des charmes si pressants, </l>
             <l n="1068" xml:id="l1068">Le Trône à Darius, et le calme aux Persans.</l>
           </sp>
-          <sp xml:id="III05-4" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-4">
             <speaker>DARIUS.</speaker>
             <l n="1069" xml:id="l1069">C'est trop, et mon amour avec vous s'intéresse </l>
             <l n="1070" xml:id="l1070">Quand Darius au Trône appelle la Princesse. </l>
@@ -1721,7 +1722,7 @@
             <l n="1074" xml:id="l1074">En vous le promettant à peine il en soupire, </l>
             <l n="1075" xml:id="l1075">Sa flamme à Darius fait gloire de céder. </l>
           </sp>
-          <sp xml:id="III05-5" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-5">
             <speaker>MÉGABISE.</speaker>
             <l n="1076" xml:id="l1076">Jamais à la vertu sut-on plus accorder ? </l>
             <l n="1077" xml:id="l1077">Certes pour cet effort, quoi que le Ciel ordonne, </l>
@@ -1730,7 +1731,7 @@
             <l n="1080" xml:id="l1080">Où m'élevait d'abord l'avantage du sang, </l>
             <l n="1081" xml:id="l1081">Si je vous en fais partager la puissance... </l>
           </sp>
-          <sp xml:id="III05-6" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-6">
             <speaker>DARIUS.</speaker>
             <l n="1082" xml:id="l1082">Non, non, j'ai su toujours servir sans récompense ; </l>
             <l n="1083" xml:id="l1083">Mais vous puis-je expliquer un scrupule jaloux </l>
@@ -1743,39 +1744,39 @@
             <l n="1090" xml:id="l1090">Il refuse en secret de voir dans Mégabise ; </l>
             <l n="1091" xml:id="l1091">Tirez-le d'une erreur dont il cherche l'appas. </l>
           </sp>
-          <sp xml:id="III05-7" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-7">
             <speaker>MÉGABISE.</speaker>
             <l n="1092" xml:id="l1092">Quoi, quand je vous le dis, vous ne m'en croyez pas ? </l>
           </sp>
-          <sp xml:id="III05-8" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-8">
             <speaker>DARIUS.</speaker>
             <l n="1093" xml:id="l1093">J'ai tort, je le confesse, et je m'en tiens coupable ; </l>
             <l n="1094" xml:id="l1094">Mais quand l'amour perd tout, il n'est pas raisonnable. </l>
           </sp>
-          <sp xml:id="III05-9" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-9">
             <speaker>MÉGABISE.</speaker>
             <l n="1095" xml:id="l1095">Vos sentiments pour moi sont assez inégaux. </l>
           </sp>
-          <sp xml:id="III05-10" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-10">
             <speaker>DARIUS.</speaker>
             <l n="1096" xml:id="l1096">Aucun autre jamais n'en montra de plus hauts. </l>
           </sp>
-          <sp xml:id="III05-11" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-11">
             <speaker>MÉGABISE.</speaker>
             <l n="1097" xml:id="l1097">Cent Amis qu'en mon sort un vrai zèle intéresse, </l>
             <l n="1098" xml:id="l1098">Ne m'ont point comme vous soupçonné de bassesse ; </l>
             <l n="1099" xml:id="l1099">Sans autre témoignage ils m'ont cru sur ma foi. </l>
           </sp>
-          <sp xml:id="III05-12" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-12">
             <speaker>DARIUS.</speaker>
             <l n="1100" xml:id="l1100">Ils seraient scrupuleux s'ils perdaient comme moi. </l>
           </sp>
-          <sp xml:id="III05-13" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-13">
             <speaker>MÉGABISE.</speaker>
             <l n="1101" xml:id="l1101">Mais tantôt votre amour s'est montré plus crédule. </l>
             <l n="1102" xml:id="l1102">Me croyant Darius, vous étiez sans scrupule ? </l>
           </sp>
-          <sp xml:id="III05-14" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-14">
             <speaker>DARIUS.</speaker>
             <l n="1103" xml:id="l1103">C'est que ce Darius n'aspirant qu'à régner, </l>
             <l n="1104" xml:id="l1104">Je ne voyais alors qu'un Trône à dédaigner. </l>
@@ -1784,31 +1785,31 @@
             <l n="1107" xml:id="l1107">Puisque de votre rang j'ose me défier, </l>
             <l n="1108" xml:id="l1108">Il n'y faut point prétendre, ou le justifier. </l>
           </sp>
-          <sp xml:id="III05-15" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-15">
             <speaker>MÉGABISE.</speaker>
             <l n="1109" xml:id="l1109">Je le pourrais sans peine, et suspect d'imposture </l>
             <l n="1110" xml:id="l1110">Il me serait aisé d'en convaincre l'injure ; </l>
             <l n="1111" xml:id="l1111">Mais après un soupçon que ma vertu confond, </l>
             <l n="1112" xml:id="l1112">Ne vous éclaircir pas, c'est en venger l'affront. </l>
           </sp>
-          <sp xml:id="III05-16" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-16">
             <speaker>DARIUS.</speaker>
             <l n="1113" xml:id="l1113">Un Trône ébranle bien la vertu la plus forte. </l>
           </sp>
-          <sp xml:id="III05-17" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-17">
             <speaker>MÉGABISE.</speaker>
             <l n="1114" xml:id="l1114">Vous pouvez me connaître, et parler de la sorte ? </l>
           </sp>
-          <sp xml:id="III05-18" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-18">
             <speaker>DARIUS.</speaker>
             <l n="1115" xml:id="l1115">Oui, mon coeur en effet croit vous connaître assez, </l>
             <l n="1116" xml:id="l1116">Mais j'ai lieu de douter si vous me connaissez. </l>
           </sp>
-          <sp xml:id="III05-19" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-19">
             <speaker>MÉGABISE.</speaker>
             <l n="1117" xml:id="l1117">Ah ! Ce peu de respect en qui sait ma naissance... </l>
           </sp>
-          <sp xml:id="III05-20" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-20">
             <speaker>DARIUS.</speaker>
             <l n="1118" xml:id="l1118">Ne vous emportez point à tant de violence, </l>
             <l n="1119" xml:id="l1119">Et pour la modérer, voyez, voyez en moi </l>
@@ -1818,7 +1819,7 @@
             <l n="1123" xml:id="l1123">Ou balancer du moins qui par plus de vertu </l>
             <l n="1124" xml:id="l1124">Pourrait mieux de nous deux mériter d'être cru. </l>
           </sp>
-          <sp xml:id="III05-21" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-21">
             <speaker>MÉGABISE.</speaker>
             <l n="1125" xml:id="l1125">Je ne m'étonne point que le Roi sans colère </l>
             <l n="1126" xml:id="l1126">N'ait pu souffrir en vous un orgueil téméraire. </l>
@@ -1833,15 +1834,15 @@
             <l n="1135" xml:id="l1135">Et nous verrons alors quel sort sera plus doux </l>
             <l n="1136" xml:id="l1136">Du Fils d'un grand Monarque, ou bien de son Époux</l>
           </sp>
-          <sp xml:id="III05-22" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-22">
             <speaker>DARIUS.</speaker>
             <l n="1137" xml:id="l1137">Vous vous flattez trop tôt d'une douceur semblable. </l>
           </sp>
-          <sp xml:id="III05-23" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III05-23">
             <speaker>MÉGABISE.</speaker>
             <l n="1138" xml:id="l1138">Déclarant mon secret vous me rendrez coupable ? </l>
           </sp>
-          <sp xml:id="III05-24" who="DARIUS">
+          <sp who="DARIUS" xml:id="III05-24">
             <speaker>DARIUS.</speaker>
             <l n="1139" xml:id="l1139">Non, non, votre secret est sûr entre mes mains, </l>
             <l n="1140" xml:id="l1140">Et j'ai dans mon malheur de plus nobles desseins. </l>
@@ -1849,18 +1850,18 @@
             <l n="1142" xml:id="l1142">Ne reconnaît en vous qu'un Fils de Tiribase, </l>
             <l n="1143" xml:id="l1143">Et que ce grand hymen qui vous doit élever </l>
             <l n="1144" xml:id="l1144">Sans tout mon sang versé ne se peut achever. </l>
-            <l n="1145" xml:id="l1145" part="I">Adieu. </l>
+            <l n="1145" part="I" xml:id="l1145">Adieu. </l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI. Mégabise, Bagoas. </head>
-          <sp xml:id="III06-1" who="BAGOAS">
+          <sp who="BAGOAS" xml:id="III06-1">
             <speaker>BAGOAS.</speaker>
             <l part="F">Vous le voyez, Seigneur, quelle imprudence </l>
             <l n="1146" xml:id="l1146">Vous a fait ouvrir l'âme à trop de confiance. </l>
             <l n="1147" xml:id="l1147">Maître de vos secrets, il va tout publier. </l>
           </sp>
-          <sp xml:id="III06-2" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III06-2">
             <speaker>MÉGABISE.</speaker>
             <l n="1148" xml:id="l1148">Tu croirais jusque-là qu'il se pût oublier ? </l>
             <l n="1149" xml:id="l1149">Malgré son désespoir il aime trop la gloire. </l>
@@ -1869,7 +1870,7 @@
             <l n="1152" xml:id="l1152">Ses projets contre moi seraient mal assurés, </l>
             <l n="1153" xml:id="l1153">Je puis tout démentir ; me pourra-t-il confondre ? </l>
           </sp>
-          <sp xml:id="III06-3" who="BAGOAS">
+          <sp who="BAGOAS" xml:id="III06-3">
             <speaker>BAGOAS.</speaker>
             <l n="1154" xml:id="l1154">Mais de ces Conjurés qui saura vous répondre ? </l>
             <l n="1155" xml:id="l1155">Surtout craignez Mitrane ; il voit qu'à regret </l>
@@ -1879,7 +1880,7 @@
             <l n="1159" xml:id="l1159">Et ne s'est déclaré pour vous si hautement </l>
             <l n="1160" xml:id="l1160">Que dans l'indigne espoir d'un plein renversement. </l>
           </sp>
-          <sp xml:id="III06-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III06-4">
             <speaker>MÉGABISE.</speaker>
             <l n="1161" xml:id="l1161">Si pour m'oser trahir il a l'âme assez basse, </l>
             <l n="1162" xml:id="l1162">Cent illustres Amis soutiendront mon audace, </l>
@@ -1892,14 +1893,14 @@
             <l n="1169" xml:id="l1169">Mais je vois Amestris. L'importune surprise ! </l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="III07">
           <head>SCÈNE VII. Amestris, Mégabise, Bagoas. </head>
-          <sp xml:id="III07-1" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-1">
             <speaker>AMESTRIS.</speaker>
             <l n="1170" xml:id="l1170">Et bien, le Ciel enfin couronne Mégabise ? </l>
             <l n="1171" xml:id="l1171">Il soumet à ses voeux le destin le plus doux ? </l>
           </sp>
-          <sp xml:id="III07-2" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-2">
             <speaker>MÉGABISE.</speaker>
             <l n="1172" xml:id="l1172">Il ferait trop pour moi, s'il faisait moins pour vous ; </l>
             <l n="1173" xml:id="l1173">Et puis-je à ses décrets montrer un coeur rebelle </l>
@@ -1907,27 +1908,27 @@
             <l n="1175" xml:id="l1175">Et que l'ordre absolu qu'il en a su donner </l>
             <l n="1176" xml:id="l1176">Ne me prive de vous que pour vous couronner ? </l>
           </sp>
-          <sp xml:id="III07-3" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-3">
             <speaker>AMESTRIS.</speaker>
             <l n="1177" xml:id="l1177">Ne prends point ce détour à cacher ta faiblesse, </l>
             <l n="1178" xml:id="l1178">Et si d'un feu tout pur la noble ardeur te presse, </l>
             <l n="1179" xml:id="l1179">Ne regarde que moi sans te considérer. </l>
             <l n="1180" xml:id="l1180">Je te préfère au Trône, ose m'y préférer. </l>
           </sp>
-          <sp xml:id="III07-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-4">
             <speaker>MÉGABISE.</speaker>
             <l n="1181" xml:id="l1181">Souffrir que mon amour vous coûte un Diadème ? </l>
           </sp>
-          <sp xml:id="III07-5" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-5">
             <speaker>AMESTRIS.</speaker>
             <l n="1182" xml:id="l1182">J'y renonce pour toi, renonces-y de même. </l>
           </sp>
-          <sp xml:id="III07-6" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-6">
             <speaker>MÉGABISE.</speaker>
             <l n="1183" xml:id="l1183">Mon coeur serait injuste, et de votre heur jaloux, </l>
             <l n="1184" xml:id="l1184">Sans se considérer, il ne doit voir que vous. </l>
           </sp>
-          <sp xml:id="III07-7" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-7">
             <speaker>AMESTRIS.</speaker>
             <l n="1185" xml:id="l1185">Dis que ta lâcheté par une feinte flamme </l>
             <l n="1186" xml:id="l1186">Cachait l'ambition qui dévore ton âme. </l>
@@ -1936,14 +1937,14 @@
             <l n="1189" xml:id="l1189">Je t'en voyais indigne, et n'ai feint de descendre, </l>
             <l n="1190" xml:id="l1190">Que pour d'autres desseins que tu pourras apprendre. </l>
           </sp>
-          <sp xml:id="III07-8" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-8">
             <speaker>MÉGABISE.</speaker>
             <l n="1191" xml:id="l1191">Puisqu'un motif secret vous fit trop abaisser, </l>
             <l n="1192" xml:id="l1192">Vous êtes en état de vous en dispenser ; </l>
             <l n="1193" xml:id="l1193">Mais au moins par l'hymen d'une grande Princesse, </l>
             <l n="1194" xml:id="l1194">Le Ciel prend quelque soin de purger ma bassesse. </l>
           </sp>
-          <sp xml:id="III07-9" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-9">
             <speaker>AMESTRIS.</speaker>
             <l n="1195" xml:id="l1195">Tu le tiens déjà sûr, et ton avidité </l>
             <l n="1196" xml:id="l1196">Te place dans ce Trône où tu te crois monté ? </l>
@@ -1952,41 +1953,41 @@
             <l n="1199" xml:id="l1199">Mais si des malheureux le Ciel est le soutien, </l>
             <l n="1200" xml:id="l1200">Ayant tout espéré, crains de n'obtenir rien. </l>
           </sp>
-          <sp xml:id="III07-10" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-10">
             <speaker>MÉGABISE.</speaker>
             <l n="1201" xml:id="l1201">La parole des Rois est trop inviolable. </l>
           </sp>
-          <sp xml:id="III07-11" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-11">
             <speaker>AMESTRIS.</speaker>
             <l n="1202" xml:id="l1202">Je le sais, mais enfin le Ciel est équitable. </l>
           </sp>
-          <sp xml:id="III07-12" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-12">
             <speaker>MÉGABISE.</speaker>
             <l n="1203" xml:id="l1203">Est-ce que cet hymen en combat l'équité ? </l>
           </sp>
-          <sp xml:id="III07-13" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-13">
             <speaker>AMESTRIS.</speaker>
             <l n="1204" xml:id="l1204">Le succès t'apprendra si tu t'es trop flatté ; </l>
             <l n="1205" xml:id="l1205">À ta confusion Darius peut paraître. </l>
             <l n="1206" xml:id="l1206">Sais-tu qu'il est vivant ? Sais-tu qu'il est ton Maître ? </l>
           </sp>
-          <sp xml:id="III07-14" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-14">
             <speaker>MÉGABISE.</speaker>
             <l n="1207" xml:id="l1207">Il doit l'être s'il vit, mais dans un bruit si doux </l>
             <l n="1208" xml:id="l1208">En êtes-vous certaine, et le connaissez-vous ? </l>
           </sp>
-          <sp xml:id="III07-15" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-15">
             <speaker>AMESTRIS.</speaker>
             <l n="1209" xml:id="l1209">Non, mais je vais agir avecque tant d'adresse, </l>
             <l n="1210" xml:id="l1210">Que pour rompre un hymen qui t'acquiert la Princesse, </l>
             <l n="1211" xml:id="l1211">L'ayant su découvrir, il faudra peu d'effort </l>
             <l n="1212" xml:id="l1212">À rejeter sur lui la gloire de ton sort. </l>
           </sp>
-          <sp xml:id="III07-16" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-16">
             <speaker>MÉGABISE.</speaker>
             <l n="1213" xml:id="l1213">Mais son dessein connu rend sa perte certaine. </l>
           </sp>
-          <sp xml:id="III07-17" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-17">
             <speaker>AMESTRIS.</speaker>
             <l n="1214" xml:id="l1214">Je puis tout sur le Roi, ne t'en mets point en peine. </l>
             <l n="1215" xml:id="l1215">Mais quand de mes conseils il ferait peu d'état, </l>
@@ -1994,31 +1995,31 @@
             <l n="1217" xml:id="l1217">Et ne souffrirait pas qu'un choix illégitime, </l>
             <l n="1218" xml:id="l1218">Pour plaire à ton orgueil, t'en fît une victime. </l>
           </sp>
-          <sp xml:id="III07-18" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-18">
             <speaker>MÉGABISE.</speaker>
             <l n="1219" xml:id="l1219">Gardez ces sentiments, j'en suis si peu jaloux, </l>
             <l n="1220" xml:id="l1220">Que mon coeur sur ce point fait mêmes voeux que vous. </l>
             <l n="1221" xml:id="l1221">Je n'ai rien à prétendre où Darius aspire. </l>
           </sp>
-          <sp xml:id="III07-19" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-19">
             <speaker>AMESTRIS.</speaker>
             <l n="1222" xml:id="l1222">Tu penses me braver, et doutes qu'il respire ? </l>
           </sp>
-          <sp xml:id="III07-20" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="III07-20">
             <speaker>MÉGABISE.</speaker>
             <l n="1223" xml:id="l1223">Ce zèle aura pour moi toujours mêmes appas. </l>
           </sp>
-          <sp xml:id="III07-21" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="III07-21">
             <speaker>AMESTRIS.</speaker>
             <l n="1224" xml:id="l1224">Nous te verrons agir quand tu le connaîtras. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Statira, Mégabise, Barsine. </head>
-          <sp xml:id="IV01-1" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-1">
             <speaker>STATIRA.</speaker>
             <l n="1225" xml:id="l1225">Que me dit ton silence après cette prière ? </l>
             <l n="1226" xml:id="l1226">Ta vertu tremble-t-elle à se montrer entière, </l>
@@ -2041,7 +2042,7 @@
             <l n="1243" xml:id="l1243">Songe que c'est beaucoup que par un tel secours </l>
             <l n="1244" xml:id="l1244">Je te veuille devoir le repos de mes jours. </l>
           </sp>
-          <sp xml:id="IV01-2" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV01-2">
             <speaker>MÉGABISE.</speaker>
             <l n="1245" xml:id="l1245">C'est beaucoup, je l'avoue, et la gloire est extrême </l>
             <l n="1246" xml:id="l1246">De consentir pour vous à s'immoler soi-même, </l>
@@ -2056,7 +2057,7 @@
             <l n="1255" xml:id="l1255">Et si pour la remplir ses mouvements jaloux </l>
             <l n="1256" xml:id="l1256">Se font sacrifier ce qu'il voit de plus doux ? </l>
           </sp>
-          <sp xml:id="IV01-3" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-3">
             <speaker>STATIRA.</speaker>
             <l n="1257" xml:id="l1257">Plût au Ciel que l'amour dont tu me peins la flamme, </l>
             <l n="1258" xml:id="l1258">Seul contre ta vertu fît révolter ton âme, </l>
@@ -2079,7 +2080,7 @@
             <l n="1275" xml:id="l1275">Tu te ressouviendrais qu'avant l'ordre du Roi </l>
             <l n="1276" xml:id="l1276">La beauté d'Amestris eut des charmes pour toi. </l>
           </sp>
-          <sp xml:id="IV01-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV01-4">
             <speaker>MÉGABISE.</speaker>
             <l n="1277" xml:id="l1277">Et bien, je suis haï, mais plût au Ciel, Madame, </l>
             <l n="1278" xml:id="l1278">Que votre seule haine inquiétât ma flamme, </l>
@@ -2098,17 +2099,17 @@
             <l n="1291" xml:id="l1291">Vous oublieriez du moins que par des voeux trop doux </l>
             <l n="1292" xml:id="l1292">L'orgueil de Codoman s'élève jusqu'à vous. </l>
           </sp>
-          <sp xml:id="IV01-5" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-5">
             <speaker>STATIRA.</speaker>
             <l n="1293" xml:id="l1293">Quoi, tu crains Codoman, et tu sais sa disgrâce ? </l>
           </sp>
-          <sp xml:id="IV01-6" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV01-6">
             <speaker>MÉGABISE.</speaker>
             <l n="1294" xml:id="l1294">Je crains dans votre coeur l'Ennemi qui m'en chasse, </l>
             <l n="1295" xml:id="l1295">Et vois trop qu'il n'exige un refus si fatal, </l>
             <l n="1296" xml:id="l1296">Que pour se conserver à cet heureux Rival. </l>
           </sp>
-          <sp xml:id="IV01-7" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-7">
             <speaker>STATIRA.</speaker>
             <l n="1297" xml:id="l1297">Je plains dans son malheur le revers qui l'opprime, </l>
             <l n="1298" xml:id="l1298">Et quand je te demande un effort magnanime, </l>
@@ -2127,7 +2128,7 @@
             <l n="1311" xml:id="l1311">Et fais que ma vertu qui cherche à t'estimer, </l>
             <l n="1312" xml:id="l1312">Me force à me haïr de ne pouvoir t'aimer. </l>
           </sp>
-          <sp xml:id="IV01-8" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV01-8">
             <speaker>MÉGABISE.</speaker>
             <l n="1313" xml:id="l1313">Et l'ardeur de mon zèle, et mon amour extrême </l>
             <l n="1314" xml:id="l1314">Peuvent seuls obtenir que ma Princesse m'aime, </l>
@@ -2138,20 +2139,20 @@
             <l n="1319" xml:id="l1319">Mais que jusqu'au refus je puisse me trahir, </l>
             <l n="1320" xml:id="l1320">Le Roi parle, Madame, et je dois obéir. </l>
           </sp>
-          <sp xml:id="IV01-9" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-9">
             <speaker>STATIRA.</speaker>
             <l n="1321" xml:id="l1321">Au moins obtiens un temps de cette amour extrême </l>
             <l n="1322" xml:id="l1322">Où j'apprenne à t'aimer puisqu'il faut que je t'aime, </l>
             <l n="1323" xml:id="l1323">Que mon coeur à l'hymen se puisse préparer ; </l>
             <l n="1324" xml:id="l1324">Si tu n'oses le rompre, ose le différer. </l>
           </sp>
-          <sp xml:id="IV01-10" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV01-10">
             <speaker>MÉGABISE.</speaker>
             <l n="1325" xml:id="l1325">Madame, vous savez que c'est cette journée </l>
             <l n="1326" xml:id="l1326">Dont hier le Roi fit choix pour ce grand hyménée. </l>
             <l n="1327" xml:id="l1327">Il va se rendre au Temple, et m'envoyait vers vous... </l>
           </sp>
-          <sp xml:id="IV01-11" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-11">
             <speaker>STATIRA.</speaker>
             <l n="1328" xml:id="l1328">Enfin ton intérêt est d'être mon Époux, </l>
             <l n="1329" xml:id="l1329">Et pourvu que ma main t'assure une Couronne, </l>
@@ -2164,81 +2165,81 @@
             <l n="1336" xml:id="l1336">Qu'à ma main dans ce doute un autre ose aspirer. </l>
             <l n="1337" xml:id="l1337">Crains d'exposer le Roi, s'il s'émeut, s'il s'emporte. </l>
           </sp>
-          <sp xml:id="IV01-12" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV01-12">
             <speaker>MÉGABISE.</speaker>
             <l n="1338" xml:id="l1338">J'aime en lui pour ce nom une chaleur si forte, </l>
             <l n="1339" xml:id="l1339">Mais n'appréhendez point, ayant reçu ma foi, </l>
             <l n="1340" xml:id="l1340">Qu'on voie un Darius se déclarer pour Roi. </l>
             <l n="1341" xml:id="l1341">Quoi qu'on fasse pour vous la Couronne est certaine. </l>
           </sp>
-          <sp xml:id="IV01-13" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-13">
             <speaker>STATIRA.</speaker>
             <l n="1342" xml:id="l1342">Et bien, barbare, achève au péril de ma haine, </l>
             <l n="1343" xml:id="l1343">Prends cette triste main, prends et jouis d'un sort </l>
             <l n="1344" xml:id="l1344">Dont la nécessité me condamne à la mort ; </l>
             <l n="1345" xml:id="l1345">Mais si le Ciel est juste, il nous doit un exemple </l>
-            <l n="1346" xml:id="l1346" part="I">Qui fasse voir... </l>
+            <l n="1346" part="I" xml:id="l1346">Qui fasse voir... </l>
           </sp>
-          <sp xml:id="IV01-14" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV01-14">
             <speaker>MÉGABISE.</speaker>
             <l part="F">Madame, on nous attend au Temple, </l>
-            <l n="1347" xml:id="l1347" part="I">Voici l'ordre du Roi. </l>
+            <l n="1347" part="I" xml:id="l1347">Voici l'ordre du Roi. </l>
           </sp>
-          <sp xml:id="IV01-15" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV01-15">
             <speaker>STATIRA.</speaker>
             <l part="F">Dieux, puis-je y consentir ? </l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Statira, Mégabise, Oropaste, Barsine, Suite d'Oropaste. </head>
-          <sp xml:id="IV02-1" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV02-1">
             <speaker>MÉGABISE.</speaker>
             <l n="1348" xml:id="l1348">Tout est-il prêt enfin ? Venez-vous m'avertir ? </l>
           </sp>
-          <sp xml:id="IV02-2" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="IV02-2">
             <speaker>OROPASTE.</speaker>
-            <l n="1349" xml:id="l1349" part="I">Seigneur, l'ordre est changé. </l>
+            <l n="1349" part="I" xml:id="l1349">Seigneur, l'ordre est changé. </l>
           </sp>
-          <sp xml:id="IV02-3" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV02-3">
             <speaker>MÉGABISE.</speaker>
             <l part="M">Changé ? </l>
           </sp>
-          <sp xml:id="IV02-4" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="IV02-4">
             <speaker>OROPASTE.</speaker>
             <l part="F">Je vous étonne, </l>
             <l n="1350" xml:id="l1350">Mais je dois obéir à celui qu'on me donne, </l>
             <l n="1351" xml:id="l1351">Et pour servir du Roi l'impatient courroux, </l>
             <l n="1352" xml:id="l1352">Demander votre épée et répondre de vous. </l>
           </sp>
-          <sp xml:id="IV02-5" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV02-5">
             <speaker>MÉGABISE.</speaker>
-            <l n="1353" xml:id="l1353" part="I">Mon épée ? </l>
+            <l n="1353" part="I" xml:id="l1353">Mon épée ? </l>
           </sp>
-          <sp xml:id="IV02-6" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="IV02-6">
             <speaker>OROPASTE.</speaker>
             <l part="M">Oui, Seigneur, rendez. </l>
           </sp>
-          <sp xml:id="IV02-7" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV02-7">
             <speaker>MÉGABISE.</speaker>
             <l part="F">Que je la rende ? </l>
           </sp>
-          <sp xml:id="IV02-8" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="IV02-8">
             <speaker>OROPASTE.</speaker>
             <l n="1354" xml:id="l1354">Enfin c'est de sa part que je vous la demande. </l>
           </sp>
-          <sp xml:id="IV02-9" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV02-9">
             <speaker>MÉGABISE.</speaker>
             <l n="1355" xml:id="l1355">Au moins auparavant que je sache sur quoi... </l>
           </sp>
-          <sp xml:id="IV02-10" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="IV02-10">
             <speaker>OROPASTE.</speaker>
             <l n="1356" xml:id="l1356">La résistance est vaine où j'ai l'ordre du Roi. </l>
           </sp>
-          <sp xml:id="IV02-11" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV02-11">
             <speaker>MÉGABISE.</speaker>
-            <l n="1357" xml:id="l1357" part="I">Prenez, il faut céder. </l>
+            <l n="1357" part="I" xml:id="l1357">Prenez, il faut céder. </l>
           </sp>
-          <sp xml:id="IV02-12" who="STATIRA">
+          <sp who="STATIRA" xml:id="IV02-12">
             <speaker>STATIRA.</speaker>
             <l part="F">Tu le vois, Mégabise, </l>
             <l n="1358" xml:id="l1358">Tu vois qu'à ton défaut le Ciel me favorise. </l>
@@ -2246,9 +2247,9 @@
             <l n="1360" xml:id="l1360">Ta vie est en péril, je ne m'en souviens plus</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Mégabise, Oropaste. </head>
-          <sp xml:id="IV03-1" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV03-1">
             <speaker>MÉGABISE.</speaker>
             <l n="1361" xml:id="l1361">Ô Rigueur d'un destin à nulle autre semblable ! </l>
             <l n="1362" xml:id="l1362">On m'élève si haut pour me rendre coupable. </l>
@@ -2256,16 +2257,16 @@
             <l n="1364" xml:id="l1364">De grâce, expliquez-moi quel crime j'ai commis. </l>
             <l n="1365" xml:id="l1365">Votre ordre porte-t-il de ne m'en rien apprendre ? </l>
           </sp>
-          <sp xml:id="IV03-2" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="IV03-2">
             <speaker>OROPASTE.</speaker>
             <l n="1366" xml:id="l1366">Seigneur, confusément si je l'ai su comprendre, </l>
             <l n="1367" xml:id="l1367">Le Roi de Darius vous croit être l'appui. </l>
           </sp>
-          <sp xml:id="IV03-3" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV03-3">
             <speaker>MÉGABISE.</speaker>
             <l n="1368" xml:id="l1368">Achevez, Codoman est sans doute avec lui ? </l>
           </sp>
-          <sp xml:id="IV03-4" who="OROPASTE">
+          <sp who="OROPASTE" xml:id="IV03-4">
             <speaker>OROPASTE.</speaker>
             <l n="1369" xml:id="l1369">Non, Seigneur, au contraire, il semble en être en peine ; </l>
             <l n="1370" xml:id="l1370">Mais avant qu'il songeât à l'ordre qui m'amène, </l>
@@ -2276,7 +2277,7 @@
             <l n="1375" xml:id="l1375">Et c'est par où je crois, Seigneur, que leur rapport </l>
             <l n="1376" xml:id="l1376">Vous a rendu suspect d'en appuyer le sort. </l>
           </sp>
-          <sp xml:id="IV03-5" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV03-5">
             <speaker>MÉGABISE.</speaker>
             <l n="1377" xml:id="l1377">Ce sort expose un sang dont la source est si pure </l>
             <l n="1378" xml:id="l1378">Que de la perfidie il bravera l'injure. </l>
@@ -2288,83 +2289,83 @@
             <l n="1384" xml:id="l1384">Pour m'en faire justice il est là-haut des Dieux... </l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Amestris, Mégabise, Oropaste. </head>
-          <sp xml:id="IV04-1" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-1">
             <speaker>AMESTRIS.</speaker>
             <l n="1385" xml:id="l1385">Le croirai-je, Oropaste, et dois-je enfin me rendre, </l>
             <l n="1386" xml:id="l1386">À ce qu'un bruit confus m'a voulu faire entendre, </l>
             <l n="1387" xml:id="l1387">Que Darius au Roi vient d'être découvert ? </l>
           </sp>
-          <sp xml:id="IV04-2" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV04-2">
             <speaker>MÉGABISE.</speaker>
             <l n="1388" xml:id="l1388">Vous le vouliez, Madame, et le Ciel l'a souffert. </l>
             <l n="1389" xml:id="l1389">On sait quel est ce Prince, êtes-vous satisfaite ? </l>
           </sp>
-          <sp xml:id="IV04-3" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-3">
             <speaker>AMESTRIS.</speaker>
             <l n="1390" xml:id="l1390">Je vous plains du malheur où ce revers vous jette, </l>
             <l n="1391" xml:id="l1391">Ce coup de Codoman fait le dernier espoir. </l>
           </sp>
-          <sp xml:id="IV04-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV04-4">
             <speaker>MÉGABISE.</speaker>
             <l n="1392" xml:id="l1392">Le sang peut tout, Madame, il fera son devoir. </l>
           </sp>
-          <sp xml:id="IV04-5" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-5">
             <speaker>AMESTRIS.</speaker>
             <l n="1393" xml:id="l1393">Si le Roi lui résiste, il y va de ma gloire </l>
             <l n="1394" xml:id="l1394">De l'adoucir au point qu'il se force à le croire. </l>
             <l n="1395" xml:id="l1395">Au sort de Darius c'est le moins que je dois. </l>
           </sp>
-          <sp xml:id="IV04-6" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV04-6">
             <speaker>MÉGABISE.</speaker>
             <l n="1396" xml:id="l1396">J'avais de moins d'ardeur soupçonné votre foi, </l>
             <l n="1397" xml:id="l1397">Et doutais que pour lui ce zèle osât paraître, </l>
             <l n="1398" xml:id="l1398">Quand son mauvais destin vous l'aurait fait connaître. </l>
             <l n="1399" xml:id="l1399">Il est coupable enfin ayant droit de régner. </l>
           </sp>
-          <sp xml:id="IV04-7" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-7">
             <speaker>AMESTRIS.</speaker>
             <l n="1400" xml:id="l1400">C'est le Fils de mon Frère, il le faut épargner. </l>
           </sp>
-          <sp xml:id="IV04-8" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV04-8">
             <speaker>MÉGABISE.</speaker>
             <l n="1401" xml:id="l1401">Comme l'esprit d'Ochus est plein de violence, </l>
             <l n="1402" xml:id="l1402">C'est hasarder beaucoup qu'en prendre la défense. </l>
           </sp>
-          <sp xml:id="IV04-9" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-9">
             <speaker>AMESTRIS.</speaker>
             <l n="1403" xml:id="l1403">Ce serait démentir la gloire de mon rang </l>
             <l n="1404" xml:id="l1404">Que montrer un coeur lâche à défendre mon sang. </l>
           </sp>
-          <sp xml:id="IV04-10" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV04-10">
             <speaker>MÉGABISE.</speaker>
             <l n="1405" xml:id="l1405">Vous êtes généreuse, et ma joie est extrême </l>
             <l n="1406" xml:id="l1406">Que son sort éclairci vous laisse encor la même, </l>
             <l n="1407" xml:id="l1407">Et que pour lui toujours daignant vous expliquer... </l>
           </sp>
-          <sp xml:id="IV04-11" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-11">
             <speaker>AMESTRIS.</speaker>
             <l n="1408" xml:id="l1408">Je vous l'avais promis, y pourrais-je manquer ? </l>
           </sp>
-          <sp xml:id="IV04-12" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV04-12">
             <speaker>MÉGABISE.</speaker>
             <l n="1409" xml:id="l1409">Et vous voyez aussi que j'eus droit de vous dire </l>
             <l n="1410" xml:id="l1410">Que cessant de prétendre où Darius aspire, </l>
             <l n="1411" xml:id="l1411">Mon coeur de son destin était si peu jaloux, </l>
             <l n="1412" xml:id="l1412">Qu'il y prenait du moins même intérêt que vous. </l>
           </sp>
-          <sp xml:id="IV04-13" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-13">
             <speaker>AMESTRIS.</speaker>
             <l n="1413" xml:id="l1413">Dans ces hauts sentiments dont vous suivez la gloire, </l>
             <l n="1414" xml:id="l1414">Vous l'aimiez en effet plus que je n'osais croire. </l>
           </sp>
-          <sp xml:id="IV04-14" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV04-14">
             <speaker>MÉGABISE.</speaker>
             <l n="1415" xml:id="l1415">Il serait malaisé que ce coeur aujourd'hui </l>
             <l n="1416" xml:id="l1416">Avec moins de chaleur se déclarât pour lui. </l>
           </sp>
-          <sp xml:id="IV04-15" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV04-15">
             <speaker>AMESTRIS.</speaker>
             <l n="1417" xml:id="l1417">Puisqu'à me seconder votre âme est disposée, </l>
             <l n="1418" xml:id="l1418">Je forme en sa faveur une entreprise aisée, </l>
@@ -2372,24 +2373,24 @@
             <l n="1420" xml:id="l1420">Codoman m'a montré... mais le Roi vient ici. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Ochus, Amestris, Mégabise, Oropaste. </head>
-          <sp xml:id="IV05-1" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-1">
             <speaker>OCHUS.</speaker>
             <l n="1421" xml:id="l1421">Avez-vous su, ma Soeur, l'attentat d'un rebelle ? </l>
           </sp>
-          <sp xml:id="IV05-2" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV05-2">
             <speaker>AMESTRIS.</speaker>
             <l n="1422" xml:id="l1422">Darius est connu, j'en apprends la nouvelle. </l>
             <l n="1423" xml:id="l1423">Mais si jamais, Seigneur, mon zèle a mérité... </l>
           </sp>
-          <sp xml:id="IV05-3" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-3">
             <speaker>OCHUS.</speaker>
             <l n="1424" xml:id="l1424">Gardez pour cet ingrat d'implorer ma bonté, </l>
             <l n="1425" xml:id="l1425">Engager mes Sujets à le vouloir pour Maître ! </l>
             <l n="1426" xml:id="l1426">Les liguer ! Les séduire ! Il en mourra, le traître. </l>
           </sp>
-          <sp xml:id="IV05-4" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV05-4">
             <speaker>AMESTRIS.</speaker>
             <l n="1427" xml:id="l1427">Seigneur, si l'apparence est seule à consulter, </l>
             <l n="1428" xml:id="l1428">Darius est coupable, on n'en saurait douter, </l>
@@ -2397,18 +2398,18 @@
             <l n="1430" xml:id="l1430">Mais avant que noircir un coeur si magnanime, </l>
             <l n="1431" xml:id="l1431">Songez pour vous cent fois de quelle ardeur pressé... </l>
           </sp>
-          <sp xml:id="IV05-5" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-5">
             <speaker>OCHUS.</speaker>
             <l n="1432" xml:id="l1432">Par son lâche projet il a tout effacé. </l>
             <l n="1433" xml:id="l1433">C'est votre sang, Seigneur, forcez-vous à l'entendre. </l>
           </sp>
-          <sp xml:id="IV05-6" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-6">
             <speaker>OCHUS.</speaker>
             <l n="1434" xml:id="l1434">Moi connaître mon sang en qui le veut répandre ? </l>
             <l n="1435" xml:id="l1435">Non, non, votre pitié ne peut rien obtenir ; </l>
             <l n="1436" xml:id="l1436">Qui conspirait ma perte, a dû me prévenir. </l>
           </sp>
-          <sp xml:id="IV05-7" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV05-7">
             <speaker>AMESTRIS.</speaker>
             <l n="1437" xml:id="l1437">Ah, Seigneur, pourriez-vous envier à la Perse </l>
             <l n="1438" xml:id="l1438">Les restes précieux du beau sang d'Artaxerse, </l>
@@ -2418,7 +2419,7 @@
             <l n="1442" xml:id="l1442">Viens appuyer l'effort où le sang m'autorise, </l>
             <l n="1443" xml:id="l1443">Viens aux pieds de ton Roi m'aider à le forcer...</l>
           </sp>
-          <sp xml:id="IV05-8" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-8">
             <speaker>OCHUS.</speaker>
             <l n="1444" xml:id="l1444">Vous croyez jusque-là qu'il se pût abaisser, </l>
             <l n="1445" xml:id="l1445">Et qu'après un dessein qui rend sa gloire entière, </l>
@@ -2442,14 +2443,14 @@
             <l n="1463" xml:id="l1463">Et n'ont pu m'avertir que ton lâche attentat </l>
             <l n="1464" xml:id="l1464">A ligué contre moi les plus grands de l'État. </l>
           </sp>
-          <sp xml:id="IV05-9" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV05-9">
             <speaker>AMESTRIS.</speaker>
             <l n="1465" xml:id="l1465">Puisque leur trahison à ma mort s'intéresse, </l>
             <l n="1466" xml:id="l1466">N'attends de Darius ni crainte ni faiblesse, </l>
             <l n="1467" xml:id="l1467">Sa vertu jusqu'au bout saura le soutenir, </l>
             <l n="1468" xml:id="l1468">Ils t'ont appris son crime, et tu peux l'en punir. </l>
           </sp>
-          <sp xml:id="IV05-10" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-10">
             <speaker>OCHUS.</speaker>
             <l n="1469" xml:id="l1469">Vous le voyez, ma Soeur, si pour sa noire audace </l>
             <l n="1470" xml:id="l1470">Vous pouviez justement solliciter ma grâce. </l>
@@ -2457,13 +2458,13 @@
             <l n="1472" xml:id="l1472">Dans l'horreur de son crime il cherche à triompher. </l>
             <l n="1473" xml:id="l1473">Vous ne dites plus rien, et demeurez surprise ? </l>
           </sp>
-          <sp xml:id="IV05-11" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV05-11">
             <speaker>AMESTRIS.</speaker>
             <l n="1474" xml:id="l1474">Seigneur, que vous dirai-je après son entreprise ? </l>
             <l n="1475" xml:id="l1475">Mon coeur est en désordre, et mes voeux incertains</l>
             <l n="1476" xml:id="l1476">Font qu'en un même instant je souhaite, et je crains. </l>
           </sp>
-          <sp xml:id="IV05-12" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV05-12">
             <speaker>MÉGABISE.</speaker>
             <l n="1477" xml:id="l1477">Aussi je l'avouerai ; je m'étonnais, Madame, </l>
             <l n="1478" xml:id="l1478">Que d'abord ma disgrâce eût pu toucher votre âme, </l>
@@ -2474,7 +2475,7 @@
             <l n="1483" xml:id="l1483">Darius n'en voit rien de plus rude à souffrir, </l>
             <l n="1484" xml:id="l1484">Et ne pouvant régner, il saura bien mourir. </l>
           </sp>
-          <sp xml:id="IV05-13" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-13">
             <speaker>OCHUS.</speaker>
             <l n="1485" xml:id="l1485">Oui, perfide, il mourra, sans que je veuille apprendre </l>
             <l n="1486" xml:id="l1486">Si c'est un Imposteur qui cherche à nous surprendre. </l>
@@ -2483,7 +2484,7 @@
             <l n="1489" xml:id="l1489">Et Darius pour moi dans sa lâche entreprise </l>
             <l n="1490" xml:id="l1490">N'est pas moins criminel que serait Mégabise. </l>
           </sp>
-          <sp xml:id="IV05-14" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV05-14">
             <speaker>MÉGABISE.</speaker>
             <l n="1491" xml:id="l1491">Si j'osais m'oublier jusqu'à forcer mon coeur </l>
             <l n="1492" xml:id="l1492">De prendre quelque soin de fléchir ta rigueur, </l>
@@ -2500,7 +2501,7 @@
             <l n="1503" xml:id="l1503">Mais m'excusez à toi qui te veux abuser, </l>
             <l n="1504" xml:id="l1504">C'est une lâcheté qui ne peut s'excuser. </l>
           </sp>
-          <sp xml:id="IV05-15" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-15">
             <speaker>OCHUS.</speaker>
             <l n="1505" xml:id="l1505">Va, n'y perds point d'adresse, elle te serait vaine </l>
             <l n="1506" xml:id="l1506">À déguiser ton crime et corrompre ma haine ; </l>
@@ -2510,7 +2511,7 @@
             <l n="1510" xml:id="l1510">Me venge en même temps de tes lâches Complices. </l>
             <l n="1511" xml:id="l1511">Avant que rien éclate ils seront arrêtés. </l>
           </sp>
-          <sp xml:id="IV05-16" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV05-16">
             <speaker>AMESTRIS.</speaker>
             <l n="1512" xml:id="l1512">Seigneur, refusez-vous de si douces clartés, </l>
             <l n="1513" xml:id="l1513">Et si de Darius une fausse apparence </l>
@@ -2518,7 +2519,7 @@
             <l n="1515" xml:id="l1515">Étant Prince, et d'un sang à vos peuples si cher, </l>
             <l n="1516" xml:id="l1516">Son malheur n'a-t-il rien qui vous puisse toucher ? </l>
           </sp>
-          <sp xml:id="IV05-17" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV05-17">
             <speaker>OCHUS.</speaker>
             <l n="1517" xml:id="l1517">Vous appelez malheur un complot détestable ? </l>
             <l n="1518" xml:id="l1518">Par le seul nom qu'il prend il est assez coupable, </l>
@@ -2526,9 +2527,9 @@
             <l n="1520" xml:id="l1520">Si j'osais épargner qui ne m'épargnait pas. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="IV06">
           <head>SCÈNE VI. Ochus, Darius, Amestris, Mégabise, Oropaste. </head>
-          <sp xml:id="IV06-1" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV06-1">
             <speaker>DARIUS.</speaker>
             <l n="1521" xml:id="l1521">Je ne viens point ici par un surcroît d'audace </l>
             <l n="1522" xml:id="l1522">Conjurer un grand Roi de borner ma disgrâce, </l>
@@ -2540,21 +2541,21 @@
             <l n="1528" xml:id="l1528">Il faut que je vous rende un service important. </l>
             <l n="1529" xml:id="l1529">Du nom de Darius vos troubles semblent naître, </l>
             <l n="1530" xml:id="l1530">Je viens, Seigneur, je viens vous le faire connaître, </l>
-            <l n="1531" xml:id="l1531" part="I">Et le livrant ici... </l>
+            <l n="1531" part="I" xml:id="l1531">Et le livrant ici... </l>
           </sp>
-          <sp xml:id="IV06-2" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV06-2">
             <speaker>AMESTRIS.</speaker>
             <l part="F">Va, l'on t'a prévenu, </l>
             <l n="1532" xml:id="l1532">Et Darius sans toi vient d'être reconnu. </l>
           </sp>
-          <sp xml:id="IV06-3" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV06-3">
             <speaker>MÉGABISE.</speaker>
             <l n="1533" xml:id="l1533">Oui, lâche, on me connaît, et tu n'as point la gloire </l>
             <l n="1534" xml:id="l1534">De trahir seul un Prince imprudent à te croire. </l>
             <l n="1535" xml:id="l1535">Parjure, c'est ainsi qu'à ton esprit discret </l>
             <l n="1536" xml:id="l1536">Je pouvais sans péril confier mon secret ? </l>
           </sp>
-          <sp xml:id="IV06-4" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV06-4">
             <speaker>OCHUS.</speaker>
             <l n="1537" xml:id="l1537">Jamais un grand courage en faveur d'un Monarque </l>
             <l n="1538" xml:id="l1538">N'a donné de son zèle une plus noble marque. </l>
@@ -2570,66 +2571,66 @@
             <l n="1548" xml:id="l1548">Je vois à ta vertu ce doute injurieux. </l>
             <l n="1549" xml:id="l1549">Plus j'en suis convaincu, plus j'en hais l'injustice. </l>
           </sp>
-          <sp xml:id="IV06-5" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV06-5">
             <speaker>DARIUS.</speaker>
             <l n="1550" xml:id="l1550">Seigneur, s'il est permis de vanter un service, </l>
             <l n="1551" xml:id="l1551">Pour vous montrer du mien toute la pureté, </l>
-            <l n="1552" xml:id="l1552" part="I">Je dirai... </l>
+            <l n="1552" part="I" xml:id="l1552">Je dirai... </l>
           </sp>
-          <sp xml:id="IV06-6" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV06-6">
             <speaker>MÉGABISE.</speaker>
             <l part="F">Tu le peux, vante ta lâcheté. </l>
             <l n="1553" xml:id="l1553">Dis que d'un Prince offert à sa vengeance, </l>
             <l n="1554" xml:id="l1554">À ton indigne orgueil doit rendre l'espérance. </l>
             <l n="1555" xml:id="l1555">Dis que pour ce grand coup par ton zèle entrepris... </l>
           </sp>
-          <sp xml:id="IV06-7" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV06-7">
             <speaker>OCHUS.</speaker>
             <l n="1556" xml:id="l1556">Va, va selon ta peine on réglera son prix. </l>
           </sp>
-          <sp xml:id="IV06-8" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV06-8">
             <speaker>DARIUS.</speaker>
             <l n="1557" xml:id="l1557">Nous nous entendons peu, mais quoi qu'il en puisse être. </l>
             <l n="1558" xml:id="l1558">Si tu me connais mal, apprends à me connaître. </l>
-            <l n="1559" xml:id="l1559" part="I">Je suis... </l>
+            <l n="1559" part="I" xml:id="l1559">Je suis... </l>
           </sp>
-          <sp xml:id="IV06-9" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV06-9">
             <speaker>AMESTRIS.</speaker>
             <l part="F">À ta vertu tu dois te confier, </l>
             <l n="1560" xml:id="l1560">Et c'est t'en repentir que la justifier. </l>
           </sp>
-          <sp xml:id="IV06-10" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="IV06-10">
             <speaker>MÉGABISE.</speaker>
             <l n="1561" xml:id="l1561">Vous vous déclarez donc, Madame, et quelque estime... </l>
           </sp>
-          <sp xml:id="IV06-11" who="OCHUS">
+          <sp who="OCHUS" xml:id="IV06-11">
             <speaker>OCHUS.</speaker>
             <l n="1562" xml:id="l1562">Le Ciel ne souffre point de Protecteurs au crime ; </l>
             <l n="1563" xml:id="l1563">Mais c'est trop t'écouter. Oropaste, songez, </l>
             <l n="1564" xml:id="l1564">Le mettant en lieu sûr, que vous vous en chargez</l>
-            <stage type="toward">À Darius. </stage>
+            <stage>À Darius. </stage>
             <l n="1565" xml:id="l1565">Toi, tandis que mon ordre arrête ses Complices, </l>
             <l n="1566" xml:id="l1566">Envers le Peuple ému préviens leurs artifices. </l>
             <l n="1567" xml:id="l1567">À quoi qu'en leur faveur il se pût disposer, </l>
             <l n="1568" xml:id="l1568">Comme il t'aime et te croit, tu peux tour apaiser. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="IV07">
           <head>SCÈNE VII. Darius, Amestris. </head>
-          <sp xml:id="IV07-1" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV07-1">
             <speaker>DARIUS.</speaker>
-            <l n="1569" xml:id="l1569" part="I">Qu'avez-vous fait, Madame ? </l>
+            <l n="1569" part="I" xml:id="l1569">Qu'avez-vous fait, Madame ? </l>
           </sp>
-          <sp xml:id="IV07-2" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV07-2">
             <speaker>AMESTRIS.</speaker>
             <l part="F">Et que vouliez-vous faire ? </l>
           </sp>
-          <sp xml:id="IV07-3" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV07-3">
             <speaker>DARIUS.</speaker>
             <l n="1570" xml:id="l1570">Mettre au jour un secret qui me perd à le taire, </l>
-            <l n="1571" xml:id="l1571" part="I">Découvrir Darius. </l>
+            <l n="1571" part="I" xml:id="l1571">Découvrir Darius. </l>
           </sp>
-          <sp xml:id="IV07-4" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV07-4">
             <speaker>AMESTRIS.</speaker>
             <l part="F">Et ne voyez-vous pas </l>
             <l n="1572" xml:id="l1572">Qu'en avouer le nom c'est courir au trépas ? </l>
@@ -2637,7 +2638,7 @@
             <l n="1574" xml:id="l1574">Usurper lâchement la gloire à Mégabise. </l>
             <l n="1575" xml:id="l1575">Laissons-le seul pour vous au péril exposé. </l>
           </sp>
-          <sp xml:id="IV07-5" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV07-5">
             <speaker>DARIUS.</speaker>
             <l n="1576" xml:id="l1576">Jamais l'esprit du Roi ne fut mieux disposé. </l>
             <l n="1577" xml:id="l1577">Trompé par l'apparence il a cru que mon zèle </l>
@@ -2649,7 +2650,7 @@
             <l n="1583" xml:id="l1583">Il veut me devoir tout, et perd le souvenir </l>
             <l n="1584" xml:id="l1584">De l'audace d'un feu qu'il a voulu punir. </l>
           </sp>
-          <sp xml:id="IV07-6" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV07-6">
             <speaker>AMESTRIS.</speaker>
             <l n="1585" xml:id="l1585">C'est son vrai sentiment peut-être qu'il exprime ; </l>
             <l n="1586" xml:id="l1586">Mais un retour si prompt peut avoir sa maxime, </l>
@@ -2661,17 +2662,17 @@
             <l n="1592" xml:id="l1592">Sans exposer l'État peut-il vous irriter ? </l>
             <l n="1593" xml:id="l1593">Contre nos Factieux qui prendrait sa défense ? </l>
           </sp>
-          <sp xml:id="IV07-7" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV07-7">
             <speaker>DARIUS.</speaker>
             <l n="1594" xml:id="l1594">Mais sur quoi puis-je encor fonder quelque espérance ? </l>
           </sp>
-          <sp xml:id="IV07-8" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV07-8">
             <speaker>AMESTRIS.</speaker>
             <l n="1595" xml:id="l1595">Sur ce grand Peuple ému, qui par un noble effort </l>
             <l n="1596" xml:id="l1596">Voudra de Darius qu'on respecte le sort. </l>
             <l n="1597" xml:id="l1597">Alors sans craindre rien vous vous ferez connaître. </l>
           </sp>
-          <sp xml:id="IV07-9" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV07-9">
             <speaker>DARIUS.</speaker>
             <l n="1598" xml:id="l1598">Quoi, si dans le péril j'évite de paraître, </l>
             <l n="1599" xml:id="l1599">Lorsque pour Mégabise il l'aura fait cesser </l>
@@ -2684,11 +2685,11 @@
             <l n="1606" xml:id="l1606">Quoi qu'il puisse arriver c'est à moi de me taire, </l>
             <l n="1607" xml:id="l1607">Son sort par mon aveu vient d'être confirmé. </l>
           </sp>
-          <sp xml:id="IV07-10" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV07-10">
             <speaker>AMESTRIS.</speaker>
             <l n="1608" xml:id="l1608">Un scrupule si vain vous tient trop alarmé. </l>
           </sp>
-          <sp xml:id="IV07-11" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV07-11">
             <speaker>DARIUS.</speaker>
             <l n="1609" xml:id="l1609">Si vous m'eussiez laissé découvrir ma naissance, </l>
             <l n="1610" xml:id="l1610">J'eusse pu mettre Ochus et la Perse en balance ; </l>
@@ -2696,16 +2697,16 @@
             <l n="1612" xml:id="l1612">Avoir à Mégabise abandonné mon rang ! </l>
             <l n="1613" xml:id="l1613">Vous l'avez bien voulu, je ne m'en puis dédire. </l>
           </sp>
-          <sp xml:id="IV07-12" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV07-12">
             <speaker>AMESTRIS.</speaker>
             <l n="1614" xml:id="l1614">Ne jugez point si mal du zèle qui m'inspire, </l>
             <l n="1615" xml:id="l1615">Les Dieux dans mes desseins sauront me seconder. </l>
           </sp>
-          <sp xml:id="IV07-13" who="DARIUS">
+          <sp who="DARIUS" xml:id="IV07-13">
             <speaker>DARIUS.</speaker>
             <l n="1616" xml:id="l1616">Mais reprendrai-je un nom que je viens de céder ? </l>
           </sp>
-          <sp xml:id="IV07-14" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="IV07-14">
             <speaker>AMESTRIS.</speaker>
             <l n="1617" xml:id="l1617">Laissons agir le Peuple avant que dans résoudre, </l>
             <l n="1618" xml:id="l1618">Vous verrez que de tout le temps saura m'absoudre, </l>
@@ -2714,11 +2715,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Statira, Darius, Barsine. </head>
-          <sp xml:id="V01-1" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-1">
             <speaker>STATIRA.</speaker>
             <l n="1621" xml:id="l1621">Demandez-vous encor d'où naissent mes alarmes </l>
             <l n="1622" xml:id="l1622">Quand le tumulte croît jusqu'à prendre les armes, </l>
@@ -2738,7 +2739,7 @@
             <l n="1636" xml:id="l1636">Il n'ait forcé le Roi de rendre Darius. </l>
             <l n="1637" xml:id="l1637">Jugez dans ce péril ce que j'ai lieu de craindre. </l>
           </sp>
-          <sp xml:id="V01-2" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-2">
             <speaker>DARIUS.</speaker>
             <l n="1638" xml:id="l1638">Quoi qu'ordonne le Ciel, que ce Prince est à plaindre, </l>
             <l n="1639" xml:id="l1639">Si la peur qu'il n'échappe à la fureur du Roi </l>
@@ -2749,7 +2750,7 @@
             <l n="1644" xml:id="l1644">Dérober à sa haine un Prince malheureux. </l>
             <l n="1645" xml:id="l1645">Si vous voulez sa mort il faudra qu'il périsse. </l>
           </sp>
-          <sp xml:id="V01-3" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-3">
             <speaker>STATIRA.</speaker>
             <l n="1646" xml:id="l1646">Que ce doute honteux a pour moi d'injustice ! </l>
             <l n="1647" xml:id="l1647">Mais vous n'en affectez la fatale rigueur </l>
@@ -2768,20 +2769,20 @@
             <l n="1660" xml:id="l1660">Rendre l'État garant de sa rébellion. </l>
             <l n="1661" xml:id="l1661">C'est jusqu'où le séduit la chaleur qui l'emporte. </l>
           </sp>
-          <sp xml:id="V01-4" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-4">
             <speaker>DARIUS.</speaker>
             <l n="1662" xml:id="l1662">Et pour ce Darius votre haine est si forte, </l>
             <l n="1663" xml:id="l1663">Qu'attachée à son nom, elle ne souffre en vous </l>
             <l n="1664" xml:id="l1664">Qu'un soin injurieux de le fuir pour Époux ! </l>
           </sp>
-          <sp xml:id="V01-5" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-5">
             <speaker>STATIRA.</speaker>
             <l n="1665" xml:id="l1665">Faut-il vous avouer pour surcroît de supplice, </l>
             <l n="1666" xml:id="l1666">Que peut-être par là je fais une injustice, </l>
             <l n="1667" xml:id="l1667">Et qu'un Prince, du Sort dès le berceau trahi, </l>
             <l n="1668" xml:id="l1668">Mériterait sans vous de n'être point haï ?</l>
           </sp>
-          <sp xml:id="V01-6" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-6">
             <speaker>DARIUS.</speaker>
             <l n="1669" xml:id="l1669">Ah, puisqu'en son malheur c'est trop peu que le plaindre, </l>
             <l n="1670" xml:id="l1670">Cessez enfin pour moi, cessez de vous contraindre. </l>
@@ -2789,16 +2790,16 @@
             <l n="1672" xml:id="l1672">Oubliez Codoman pour aimer Darius. </l>
             <l n="1673" xml:id="l1673">Son sort de votre amour attend toute sa gloire. </l>
           </sp>
-          <sp xml:id="V01-7" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-7">
             <speaker>STATIRA.</speaker>
             <l n="1674" xml:id="l1674">Et c'est de Codoman ce que j'avais dû croire ! </l>
             <l n="1675" xml:id="l1675">Son feu pour Darius se peut intéresser ? </l>
           </sp>
-          <sp xml:id="V01-8" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-8">
             <speaker>DARIUS.</speaker>
             <l n="1676" xml:id="l1676">Mon feu dans ce qu'il fait n'a point à balancer. </l>
           </sp>
-          <sp xml:id="V01-9" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-9">
             <speaker>STATIRA.</speaker>
             <l n="1677" xml:id="l1677">Qu'il prend pour sa conduite une injuste maxime ! </l>
             <l n="1678" xml:id="l1678">En vous il tient vertu ce qu'il m'impute à crime ; </l>
@@ -2809,7 +2810,7 @@
             <l n="1683" xml:id="l1683">Et mon devoir timide à se trop hasarder </l>
             <l n="1684" xml:id="l1684">N'engageait pas ailleurs ce qu'il n'osait garder. </l>
           </sp>
-          <sp xml:id="V01-10" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-10">
             <speaker>DARIUS.</speaker>
             <l n="1685" xml:id="l1685">Accusez Codoman de trahir ce qu'il aime, </l>
             <l n="1686" xml:id="l1686">Il trouve en ce reproche une douceur extrême, </l>
@@ -2820,15 +2821,15 @@
             <l n="1691" xml:id="l1691">Et j'espère être cru quand malgré cet abus</l>
             <l n="1692" xml:id="l1692">J'ose vous découvrir que je suis Darius. </l>
           </sp>
-          <sp xml:id="V01-11" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-11">
             <speaker>STATIRA.</speaker>
-            <l n="1693" xml:id="l1693" part="I">Vous, Darius ? </l>
+            <l n="1693" part="I" xml:id="l1693">Vous, Darius ? </l>
           </sp>
-          <sp xml:id="V01-12" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-12">
             <speaker>DARIUS.</speaker>
             <l part="M">Moi-même. Expliquez-vous. </l>
           </sp>
-          <sp xml:id="V01-13" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-13">
             <speaker>DARIUS.</speaker>
             <l part="F">Madame,</l>
             <l n="1694" xml:id="l1694">Doutant de mon destin vous doutez de ma flamme, </l>
@@ -2836,14 +2837,14 @@
             <l n="1696" xml:id="l1696">Mais pour vous le prouver je n'ai que mon amour, </l>
             <l n="1697" xml:id="l1697">Son orgueil vous le dit, l'en tiendrez-vous croyable ? </l>
           </sp>
-          <sp xml:id="V01-14" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-14">
             <speaker>STATIRA.</speaker>
             <l n="1698" xml:id="l1698">Le Ciel seul rend d'imposture un Héros incapable, </l>
             <l n="1699" xml:id="l1699">Et contre Mégabise et tous ses Conjurés </l>
             <l n="1700" xml:id="l1700">Je vous crois Darius puisque vous l'assurez. </l>
             <l n="1701" xml:id="l1701">Mais pourquoi si longtemps un secret qui me blesse ! </l>
           </sp>
-          <sp xml:id="V01-15" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-15">
             <speaker>DARIUS.</speaker>
             <l n="1702" xml:id="l1702">Pour me répondre mieux du coeur de ma Princesse, </l>
             <l n="1703" xml:id="l1703">Et voir ses voeux se rendre à mes profonds respects, </l>
@@ -2858,11 +2859,11 @@
             <l n="1712" xml:id="l1712">Eût gêné Codoman dans l'heur de Darius. </l>
             <l n="1713" xml:id="l1713">J'en ai fui le supplice à garder le silence. </l>
           </sp>
-          <sp xml:id="V01-16" who="STATIRA">
+          <sp who="STATIRA" xml:id="V01-16">
             <speaker>STATIRA.</speaker>
             <l n="1714" xml:id="l1714">Mais enfin aujourd'hui quelle est votre espérance ? </l>
           </sp>
-          <sp xml:id="V01-17" who="DARIUS">
+          <sp who="DARIUS" xml:id="V01-17">
             <speaker>DARIUS.</speaker>
             <l n="1715" xml:id="l1715">Que vous dirai-je, hélas ! Quand un lâche Imposteur </l>
             <l n="1716" xml:id="l1716">D'un bruit qui me flattait se découvre l'auteur ? </l>
@@ -2879,9 +2880,9 @@
             <l n="1727" xml:id="l1727">Et croyant que je cherche à lui voler son rang... </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Ochus, Darius, Statira, Amestris, Oropaste, Barsine. </head>
-          <sp xml:id="V02-1" who="OCHUS">
+          <sp who="OCHUS" xml:id="V02-1">
             <speaker>OCHUS, à Amestris.</speaker>
             <l n="1728" xml:id="l1728">C'est en vain qu'en ce lâche il reconnaît mon sang, </l>
             <l n="1729" xml:id="l1729">Sa révolte pour lui n'a rien qui m'épouvante ; </l>
@@ -2889,21 +2890,21 @@
             <l n="1731" xml:id="l1731">Et sa tête au besoin envoyée aux Mutins </l>
             <l n="1732" xml:id="l1732">Nous en saura bientôt soumettre les destins. </l>
           </sp>
-          <sp xml:id="V02-2" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="V02-2">
             <speaker>AMESTRIS.</speaker>
             <l n="1733" xml:id="l1733">Seigneur, craignez aussi que cette violence </l>
             <l n="1734" xml:id="l1734">D'un Peuple trop ému n'aigrisse l'insolence, </l>
-            <l n="1735" xml:id="l1735" part="I">Et qu'à venger son Prince... </l>
+            <l n="1735" part="I" xml:id="l1735">Et qu'à venger son Prince... </l>
           </sp>
-          <sp xml:id="V02-3" who="OCHUS">
+          <sp who="OCHUS" xml:id="V02-3">
             <speaker>OCHUS.</speaker>
             <l part="F">Ah, dis un Imposteur, </l>
             <l n="1736" xml:id="l1736">Dis des droits qu'il nous vante un lâche Usurpateur. </l>
             <l n="1737" xml:id="l1737">Ce n'est point Darius, vous l'allez trop connaître. </l>
-            <l n="1738" xml:id="l1738" part="I">Qu'on l'amène. </l>
-            <stage type="[N/A]">Oropaste sort. </stage>
+            <l n="1738" part="I" xml:id="l1738">Qu'on l'amène. </l>
+            <stage>Oropaste sort. </stage>
           </sp>
-          <sp xml:id="V02-4" who="STATIRA">
+          <sp who="STATIRA" xml:id="V02-4">
             <speaker>STATIRA.</speaker>
             <l part="F">Seigneur, il faut punir un Traître, </l>
             <l n="1739" xml:id="l1739">Mais ce Peuple est toujours à craindre en sa fureur </l>
@@ -2913,7 +2914,7 @@
             <l n="1743" xml:id="l1743">Et qu'en son zèle enfin par sa fourbe abusé </l>
             <l n="1744" xml:id="l1744">Il soutient contre vous un Prince supposé.</l>
           </sp>
-          <sp xml:id="V02-5" who="OCHUS">
+          <sp who="OCHUS" xml:id="V02-5">
             <speaker>OCHUS.</speaker>
             <l n="1745" xml:id="l1745">Et qui le convaincra d'une erreur volontaire </l>
             <l n="1746" xml:id="l1746">Que tant de Factieux lui font tenir si chère ? </l>
@@ -2921,14 +2922,14 @@
             <l n="1748" xml:id="l1748">Par la mort du coupable il le faut étonner. </l>
             <l n="1749" xml:id="l1749">Nous en verrons bientôt ralentir son audace. </l>
           </sp>
-          <sp xml:id="V02-6" who="DARIUS">
+          <sp who="DARIUS" xml:id="V02-6">
             <speaker>DARIUS.</speaker>
             <l n="1750" xml:id="l1750">De quoi que sa révolte aujourd'hui vous menace, </l>
             <l n="1751" xml:id="l1751">N'en craignez rien, Seigneur, nous saurons l'apaiser, </l>
             <l n="1752" xml:id="l1752">Et mon sang vous répond de ce qu'il peut oser. </l>
             <l n="1753" xml:id="l1753">Mais souvent la vengeance à qui la précipite... </l>
           </sp>
-          <sp xml:id="V02-7" who="OCHUS">
+          <sp who="OCHUS" xml:id="V02-7">
             <speaker>OCHUS.</speaker>
             <l n="1754" xml:id="l1754">Quoi, balancer encor la peine qu'il mérite ? </l>
             <l n="1755" xml:id="l1755">Craindre sous un faux nom un Fourbe déguisé ? </l>
@@ -2938,7 +2939,7 @@
             <l n="1759" xml:id="l1759">Et doutent qu'au besoin il pût justifier </l>
             <l n="1760" xml:id="l1760">Le secret qu'à leur zèle il sembla confier. </l>
           </sp>
-          <sp xml:id="V02-8" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="V02-8">
             <speaker>AMESTRIS.</speaker>
             <l n="1761" xml:id="l1761">Comme un Prince s'assure au brillant caractère </l>
             <l n="1762" xml:id="l1762">Qui parle bien souvent quand il cherche à se taire, </l>
@@ -2949,7 +2950,7 @@
             <l n="1767" xml:id="l1767">Mais si, quoi qu'à sa fourbe on ait droit d'imputer, </l>
             <l n="1768" xml:id="l1768">Darius paraissait sans qu'on en pût douter ? </l>
           </sp>
-          <sp xml:id="V02-9" who="OCHUS">
+          <sp who="OCHUS" xml:id="V02-9">
             <speaker>OCHUS.</speaker>
             <l n="1769" xml:id="l1769">Ah, ne m'en parlez point, l'un de l'autre est complice, </l>
             <l n="1770" xml:id="l1770">Darius, Mégabise, il faut que tout périsse ; </l>
@@ -2957,9 +2958,9 @@
             <l n="1772" xml:id="l1772">Ce n'est qu'une imposture, et vous l'allez savoir. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Ochus, Darius, Statira, Amestris, Mégabise, Oropaste, Barsine. </head>
-          <sp xml:id="V03-1" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-1">
             <speaker>OCHUS, à Mégabise.</speaker>
             <l n="1773" xml:id="l1773">Viens, ingrat aux bontés que je t'ai fait paraître, </l>
             <l n="1774" xml:id="l1774">Viens voir ton Roi contraint de t'accepter pour Maître. </l>
@@ -2974,7 +2975,7 @@
             <l n="1783" xml:id="l1783">Et que le sang d'un Frère assuré de régner </l>
             <l n="1784" xml:id="l1784">Est l'heureux sang qu'en toi je consens d'épargner. </l>
           </sp>
-          <sp xml:id="V03-2" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-2">
             <speaker>MÉGABISE.</speaker>
             <l n="1785" xml:id="l1785">Sur tous les mouvements que ta haine t'inspire, </l>
             <l n="1786" xml:id="l1786">On t'a dit qui je suis, l'aveu t'en doit suffire. </l>
@@ -2989,7 +2990,7 @@
             <l n="1795" xml:id="l1795">Quelle que soit ta rage, au moins ai-je ce bien </l>
             <l n="1796" xml:id="l1796">Qu'en répandant mon sang tu hasardes le tien. </l>
           </sp>
-          <sp xml:id="V03-3" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-3">
             <speaker>OCHUS.</speaker>
             <l n="1797" xml:id="l1797">C'est là ce qui te donne un coeur si magnanime ? </l>
             <l n="1798" xml:id="l1798">D'un Peuple révolté l'insolence t'anime, </l>
@@ -3000,7 +3001,7 @@
             <l n="1803" xml:id="l1803">Ou pour fourbe avoué, ton sang, ton lâche sang </l>
             <l n="1804" xml:id="l1804">Réparera l'affront que tu fais à mon rang. </l>
           </sp>
-          <sp xml:id="V03-4" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-4">
             <speaker>MÉGABISE.</speaker>
             <l n="1805" xml:id="l1805">Et bien, crois en effet sur tes soupçons frivoles </l>
             <l n="1806" xml:id="l1806">Que je veux te voler ce rang que tu me voles, </l>
@@ -3011,14 +3012,14 @@
             <l n="1811" xml:id="l1811">Puisque enfin ta vengeance arrêtée en ton coeur </l>
             <l n="1812" xml:id="l1812">Perdrait en moi le Prince ainsi que l'imposteur. </l>
           </sp>
-          <sp xml:id="V03-5" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-5">
             <speaker>OCHUS.</speaker>
             <l n="1813" xml:id="l1813">Oui, Traître, espère au Peuple, espère en tes Complices, </l>
             <l n="1814" xml:id="l1814">Nous verrons ta constance au milieu des supplices, </l>
             <l n="1815" xml:id="l1815">Et si, quand leur rigueur m'aura vengé de toi, </l>
             <l n="1816" xml:id="l1816">Ils oseront venger un Fourbe sur leur Roi. </l>
           </sp>
-          <sp xml:id="V03-6" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-6">
             <speaker>MÉGABISE.</speaker>
             <l n="1817" xml:id="l1817">Et c'est pour voir ta peine et ton péril s'accroître </l>
             <l n="1818" xml:id="l1818">Que je dédaigne ici de me faire connaître. </l>
@@ -3037,7 +3038,7 @@
             <l n="1831" xml:id="l1831">Je suis un Imposteur, ordonne mon trépas, </l>
             <l n="1832" xml:id="l1832">Mais enfin par ma mort Darius ne meurt pas. </l>
           </sp>
-          <sp xml:id="V03-7" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-7">
             <speaker>OCHUS.</speaker>
             <l n="1833" xml:id="l1833">Il ne m'importe, meurs, qui que tu veuilles être. </l>
             <l n="1834" xml:id="l1834">J'avoue en toi mon sang, j'aime à le reconnaître, </l>
@@ -3046,9 +3047,9 @@
             <l n="1837" xml:id="l1837">C'est lui qui doit périr, lui dont le nom rebelle </l>
             <l n="1838" xml:id="l1838">Rend à son Souverain tout un Peuple infidèle, </l>
             <l n="1839" xml:id="l1839">Et pour t'ôter l'espoir dont tes sens sont flattés, </l>
-            <l n="1840" xml:id="l1840" part="I">Gardes, sans plus attendre... </l>
+            <l n="1840" part="I" xml:id="l1840">Gardes, sans plus attendre... </l>
           </sp>
-          <sp xml:id="V03-8" who="DARIUS">
+          <sp who="DARIUS" xml:id="V03-8">
             <speaker>DARIUS.</speaker>
             <l part="F">Ah, Seigneur, arrêtez ; </l>
             <l n="1841" xml:id="l1841">Puisque c'est Darius qui doit cesser de vivre, </l>
@@ -3064,7 +3065,7 @@
             <l n="1851" xml:id="l1851">Changez donc cet arrêt que je tiens suspendu, </l>
             <l n="1852" xml:id="l1852">Puisqu'il perd Darius, c'est à moi qu'il est dû. </l>
           </sp>
-          <sp xml:id="V03-9" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-9">
             <speaker>MÉGABISE.</speaker>
             <l n="1853" xml:id="l1853">Va, quitte ce faux zèle ; offrir pour moi ta vie, </l>
             <l n="1854" xml:id="l1854">C'est joindre l'impudence à l'amitié trahie. </l>
@@ -3072,7 +3073,7 @@
             <l n="1856" xml:id="l1856">Mais elle vient trop tard après ta lâcheté. </l>
             <l n="1857" xml:id="l1857">Je ne veux rien devoir au vain remords d'un traître. </l>
           </sp>
-          <sp xml:id="V03-10" who="DARIUS">
+          <sp who="DARIUS" xml:id="V03-10">
             <speaker>DARIUS.</speaker>
             <l n="1858" xml:id="l1858">Sors d'erreur, Mégabise, et pense à me connaître. </l>
             <l n="1859" xml:id="l1859">Quand de ce que je suis j'ose avertir le Roi, </l>
@@ -3086,11 +3087,11 @@
             <l n="1867" xml:id="l1867">Et qu'à tout l'Univers son vrai sort découvert, </l>
             <l n="1868" xml:id="l1868">Montre que sa naissance est tout ce qui le perd. </l>
           </sp>
-          <sp xml:id="V03-11" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-11">
             <speaker>OCHUS.</speaker>
             <l n="1869" xml:id="l1869">Mes voeux sont exaucés enfin, et la Nature... </l>
           </sp>
-          <sp xml:id="V03-12" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-12">
             <speaker>MÉGABISE.</speaker>
             <l n="1870" xml:id="l1870">Quoi, tu refuserais de voir son imposture ? </l>
             <l n="1871" xml:id="l1871">Surpris de ton courroux, tantôt pour l'apaiser </l>
@@ -3101,7 +3102,7 @@
             <l n="1876" xml:id="l1876">Me voler ma naissance, et contester mes droits ? </l>
             <l n="1877" xml:id="l1877">Tout est bien concerté si sa fourbe est soufferte. </l>
           </sp>
-          <sp xml:id="V03-13" who="DARIUS">
+          <sp who="DARIUS" xml:id="V03-13">
             <speaker>DARIUS.</speaker>
             <l n="1878" xml:id="l1878">Respecte ma vertu si tu poursuis ma perte. </l>
             <l n="1879" xml:id="l1879">Ce que j'ai dit tantôt a trop su t'abuser, </l>
@@ -3111,18 +3112,18 @@
             <l n="1883" xml:id="l1883">Et mes superbes voeux vous font de sûrs garants </l>
             <l n="1884" xml:id="l1884">Du sang dont je me vante, et du nom que je prends. </l>
           </sp>
-          <sp xml:id="V03-14" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-14">
             <speaker>MÉGABISE.</speaker>
             <l n="1885" xml:id="l1885">Oui, sans doute, ce sont des garants légitimes. </l>
           </sp>
-          <sp xml:id="V03-15" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-15">
             <speaker>OCHUS.</speaker>
             <l n="1886" xml:id="l1886">Si je ne les crois pas, en croirai-je tes crimes. </l>
             <l n="1887" xml:id="l1887">Puisqu'à mon lâche Peuple il faut un Darius, </l>
             <l n="1888" xml:id="l1888">Le pouvant contenter, je ne le craindrai plus. </l>
             <l n="1889" xml:id="l1889">Espère, espère encor échapper à ma haine. </l>
           </sp>
-          <sp xml:id="V03-16" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-16">
             <speaker>MÉGABISE.</speaker>
             <l n="1890" xml:id="l1890">Et tu crois qu'à ce choix il souscrira sans peine, </l>
             <l n="1891" xml:id="l1891">Et que de mon destin s'étant fait protecteur, </l>
@@ -3132,18 +3133,18 @@
             <l n="1895" xml:id="l1895">Et certains du secret ils sauront malgré toi </l>
             <l n="1896" xml:id="l1896">Choisir entre nous deux leur véritable Roi. </l>
           </sp>
-          <sp xml:id="V03-17" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="V03-17">
             <speaker>AMESTRIS.</speaker>
             <l n="1897" xml:id="l1897">Et si je te disais, que n'osant plus le taire, </l>
             <l n="1898" xml:id="l1898">Tiribase m'en fit seule dépositaire, </l>
             <l n="1899" xml:id="l1899">Et qu'avec certitude, et sans aucun abus, </l>
             <l n="1900" xml:id="l1900">Je sais que Codoman est le vrai Darius ? </l>
           </sp>
-          <sp xml:id="V03-18" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-18">
             <speaker>MÉGABISE.</speaker>
             <l n="1901" xml:id="l1901">Parlez, feignez, Madame, aidez au stratagème. </l>
           </sp>
-          <sp xml:id="V03-19" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="V03-19">
             <speaker>AMESTRIS.</speaker>
             <l n="1902" xml:id="l1902">Seigneur, ce que j'ai dit est la vérité même. </l>
             <l n="1903" xml:id="l1903">Depuis deux ans entiers que Tiribase est mort, </l>
@@ -3165,22 +3166,22 @@
             <l n="1919" xml:id="l1919">Il ne m'aurait jamais entendu publier </l>
             <l n="1920" xml:id="l1920">Ce qu'un autre que moi ne peut justifier. </l>
           </sp>
-          <sp xml:id="V03-20" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-20">
             <speaker>OCHUS.</speaker>
             <l n="1921" xml:id="l1921">Et bien, traître, est-ce assez pour ordonner ta peine ? </l>
           </sp>
-          <sp xml:id="V03-21" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-21">
             <speaker>MÉGABISE.</speaker>
             <l n="1922" xml:id="l1922">Oui, si l'on en consulte et ta rage et ta haine ; </l>
             <l n="1923" xml:id="l1923">Mais Tiribase ailleurs fait un autre rapport. </l>
           </sp>
-          <sp xml:id="V03-22" who="AMESTRIS">
+          <sp who="AMESTRIS" xml:id="V03-22">
             <speaker>AMESTRIS.</speaker>
             <l n="1924" xml:id="l1924">Consens-tu que sa main en décide le sort ? </l>
             <l n="1925" xml:id="l1925">Tiens, vois, méchant ; approche, est-ce son caractère ? </l>
             <l n="1926" xml:id="l1926">Vous connaîtrez, Seigneur, ce billet de son Père. </l>
           </sp>
-          <sp xml:id="V03-23" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-23">
             <speaker>OCHUS, lit.</speaker>
             <l n="1927" xml:id="l1927">"J'ai sauvé Darius, mais sans aucun dessein </l>
             <l n="1928" xml:id="l1928">De le laisser maître de sa naissance. </l>
@@ -3190,9 +3191,9 @@
             <l n="1932" xml:id="l1932">Si jamais votre Roi consent à cet accord. </l>
             <l n="1933" xml:id="l1933">Le nom de Codoman qui déguise son sort </l>
             <l n="1934" xml:id="l1934">Vous le fera connaître."</l>
-            <stage type="[N/A]">Tiribase. </stage>
+            <stage>Tiribase. </stage>
           </sp>
-          <sp xml:id="V03-24" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-24">
             <speaker>MÉGABISE.</speaker>
             <l n="1935" xml:id="l1935">Par quel fatal revers vois-je tout découvert ? </l>
             <l n="1936" xml:id="l1936">J'espère en Tiribase, et c'est lui qui me perd. </l>
@@ -3209,16 +3210,16 @@
             <l n="1947" xml:id="l1947">Leur secours est certain à qui n'ose en trembler, </l>
             <l n="1948" xml:id="l1948">Et pour en être digne il faut te ressembler. </l>
           </sp>
-          <sp xml:id="V03-25" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-25">
             <speaker>OCHUS.</speaker>
             <l n="1949" xml:id="l1949">Qu'on l'ôte de mes yeux, attendant que ma haine </l>
             <l n="1950" xml:id="l1950">Par l'arrêt qu'il mérite ait résolu sa peine. </l>
           </sp>
-          <sp xml:id="V03-26" who="DARIUS">
+          <sp who="DARIUS" xml:id="V03-26">
             <speaker>DARIUS.</speaker>
-            <l n="1951" xml:id="l1951" part="I">Ah, Seigneur, si je puis... </l>
+            <l n="1951" part="I" xml:id="l1951">Ah, Seigneur, si je puis... </l>
           </sp>
-          <sp xml:id="V03-27" who="MEGABISE">
+          <sp who="MEGABISE" xml:id="V03-27">
             <speaker>MÉGABISE.</speaker>
             <l part="F">Ne lui demande rien, </l>
             <l n="1952" xml:id="l1952">Au défaut de son sang j'abandonne le mien. </l>
@@ -3227,43 +3228,43 @@
             <l n="1955" xml:id="l1955">L'avoir trop différé mérite le trépas, </l>
             <l n="1956" xml:id="l1956">Et je le punirais de ne me punir pas.</l>
           </sp>
-          <sp xml:id="V03-28" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-28">
             <speaker>OCHUS.</speaker>
             <l n="1957" xml:id="l1957">Gardes, qu'on le réserve aux plus cruels supplices. </l>
-            <stage type="[N/A]">Mégabise rentre, et Ochus continue à parler à Darius. </stage>
+            <stage>Mégabise rentre, et Ochus continue à parler à Darius. </stage>
             <l n="1958" xml:id="l1958">Vous, à qui jusqu'ici j'ai fait tant d'injustices,</l>
             <l n="1959" xml:id="l1959">Et comme Codoman, et comme Darius, </l>
             <l n="1960" xml:id="l1960">Voudrez-vous oublier un indigne refus ?</l>
             <l n="1961" xml:id="l1961">Quand je vous devrais tout, ma fausse défiance... </l>
           </sp>
-          <sp xml:id="V03-29" who="DARIUS">
+          <sp who="DARIUS" xml:id="V03-29">
             <speaker>DARIUS.</speaker>
             <l n="1962" xml:id="l1962">Ah, ne poursuivez point un discours qui m'offense. </l>
             <l n="1963" xml:id="l1963">Si du vrai Darius vous craignez les desseins, </l>
             <l n="1964" xml:id="l1964">Prévenez-en l'effet, sa vie est en vos mains. </l>
             <l n="1965" xml:id="l1965">Disposez-en, Seigneur, vous en êtes le maître. </l>
           </sp>
-          <sp xml:id="V03-30" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-30">
             <speaker>OCHUS.</speaker>
             <l n="1966" xml:id="l1966">Nous n'aurons rien à craindre après la mort d'un traître, </l>
             <l n="1967" xml:id="l1967">Mais à tant de vertu pour répondre à mon tour, </l>
             <l n="1968" xml:id="l1968">Est-ce assez de l'hymen que pressait votre amour ? </l>
             <l n="1969" xml:id="l1969">Est-ce assez que ma Fille en soit la récompense ? </l>
           </sp>
-          <sp xml:id="V03-31" who="DARIUS">
+          <sp who="DARIUS" xml:id="V03-31">
             <speaker>DARIUS.</speaker>
             <l n="1970" xml:id="l1970">C'est assez qu'un grand Roi me souffre l'espérance, </l>
             <l n="1971" xml:id="l1971">Pourvu que ma Princesse, exorable à mes voeux, </l>
             <l n="1972" xml:id="l1972">D'une heureuse union approuve les doux noeuds. </l>
             <l n="1973" xml:id="l1973">Ai-je montré, Madame, une flamme assez pure ? </l>
           </sp>
-          <sp xml:id="V03-32" who="STATIRA">
+          <sp who="STATIRA" xml:id="V03-32">
             <speaker>STATIRA.</speaker>
             <l n="1974" xml:id="l1974">Aussi vous me voyez obéir sans murmure. </l>
             <l n="1975" xml:id="l1975">Jugez si dans mon coeur l'aveu de votre espoir </l>
             <l n="1976" xml:id="l1976">Pouvait mieux prévenir les ordres du devoir. </l>
           </sp>
-          <sp xml:id="V03-33" who="OCHUS">
+          <sp who="OCHUS" xml:id="V03-33">
             <speaker>OCHUS.</speaker>
             <l n="1977" xml:id="l1977">Vous, ma Soeur, qu'aujourd'hui l'offre d'un Diadème </l>
             <l n="1978" xml:id="l1978">Chez les Cadusiens élève au rang suprême, </l>

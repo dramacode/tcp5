@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>ANTIGONE, TRAGÉDIE</title>
-        <author born="1609" born_location="Dreux" death="1650" death_location="Dreux" academie="">ROTROU, Jean</author>
+        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)">ROTROU, Jean</author>
         <date>1638</date>
       </titleStmt>
       <publicationStmt>
+        <publisher>Théâtre Classique</publisher>
         <authority>publié par Ernest FIEVRE, décembre 2007</authority>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragédie</genre>
@@ -33,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -45,7 +46,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1638">M. DC. XXXVIII</docDate>
-      <docAuthor id="ROTROU, Jean" bio="rotrou">PAR Mr DE ROTROU </docAuthor>
+      <docAuthor bio="rotrou" id="ROTROU, Jean">PAR Mr DE ROTROU </docAuthor>
       <docImprint>
         <privilege id=""/>
         <imprimeur id="SOMMAVILLE">Chez ANTOINE DE SOMMAVILLE, à l'Écu de France et AUGUSTIN COURBE, au Palais, dans la salle des Merciers, à la Palme.</imprimeur>
@@ -56,30 +57,30 @@
       </performance>
       <castList>
         <head>Personnages</head>
-        <castItem><role xml:id="JOCASTE" id="JOCASTE" sex="2" type="H" statut="roi" age="A" stat_amour="néant">JOCASTE</role>, mère d'Antigone.</castItem>
-        <castItem><role xml:id="ETEOCLE" id="ETEOCLE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">ÉTÉOCLE</role>, roi de Thèbes et frère d'Antigone.</castItem>
-        <castItem><role xml:id="POLYNICE" id="POLYNICE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">POLYNICE</role>, frère d'Antigone.</castItem>
-        <castItem><role xml:id="ANTIGONE" id="ANTIGONE" sex="2" type="H" statut="prince" age="A" stat_amour="néant">ANTIGONE</role>, fille de Jocaste.</castItem>
-        <castItem><role xml:id="ISMENE" id="ISMENE" sex="2" type="H" statut="prince" age="A" stat_amour="néant">ISMÈNE</role>, soeur d'Antigone.</castItem>
-        <castItem><role xml:id="ADRASTE" id="ADRASTE" sex="1" type="H" statut="prince" age="A" stat_amour="néant">ADRASTE</role>, beau-père de Polynice.</castItem>
-        <castItem><role xml:id="ARGIE" id="ARGIE" sex="2" type="H" statut="roi" age="A" stat_amour="néant">ARGIE</role>, femme de Polynice.</castItem>
-        <castItem><role xml:id="MENETTE" id="MENETTE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">MÉNETTE</role>, gentilhomme d'Argie.</castItem>
-        <castItem><role xml:id="CREON" id="CREON" sex="1" type="H" statut="prince" age="A" stat_amour="néant">CRÉON</role>, père d'Hémon et roi de Thèbes.</castItem>
-        <castItem><role xml:id="HEMON" id="HEMON" sex="1" type="H" statut="prince" age="A" stat_amour="néant">HÉMON</role>, amant d'Antigone.</castItem>
-        <castItem><role xml:id="EPHISE" id="EPHISE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">ÉPHISE</role>, seigneur de Thèbes.</castItem>
-        <castItem><role xml:id="CLEODAMAS" id="CLEODAMAS" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">CLÉODAMAS</role>, seigneur de Thèbes.</castItem>
-        <castItem><role xml:id="CAPITAINESGRECS." id="CAPITAINES" sex="9" type="H" statut="capitaine" age="A" stat_amour="néant">CAPITAINES GRECS.</role>.</castItem>
-        <castItem><role xml:id="UNPAGE." id="PAGE" sex="1" type="H" statut="page" age="A" stat_amour="néant">UN PAGE.</role>.</castItem>
-        <castItem><role xml:id="SUITEDECREON" id="SUITE" sex="9">SUITE DE CRÉON</role>.</castItem>
+        <castItem><role age="A" civil="F" id="JOCASTE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="JOCASTE">JOCASTE</role>, mère d'Antigone.</castItem>
+        <castItem><role age="A" civil="M" id="ETEOCLE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="ETEOCLE">ÉTÉOCLE</role>, roi de Thèbes et frère d'Antigone.</castItem>
+        <castItem><role age="A" civil="M" id="POLYNICE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="POLYNICE">POLYNICE</role>, frère d'Antigone.</castItem>
+        <castItem><role age="A" civil="F" id="ANTIGONE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="ANTIGONE">ANTIGONE</role>, fille de Jocaste.</castItem>
+        <castItem><role age="A" civil="F" id="ISMENE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="ISMENE">ISMÈNE</role>, soeur d'Antigone.</castItem>
+        <castItem><role age="A" civil="M" id="ADRASTE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="ADRASTE">ADRASTE</role>, beau-père de Polynice.</castItem>
+        <castItem><role age="A" civil="F" id="ARGIE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="ARGIE">ARGIE</role>, femme de Polynice.</castItem>
+        <castItem><role age="A" civil="M" id="MENETTE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="MENETTE">MÉNETTE</role>, gentilhomme d'Argie.</castItem>
+        <castItem><role age="A" civil="M" id="CREON" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="CREON">CRÉON</role>, père d'Hémon et roi de Thèbes.</castItem>
+        <castItem><role age="A" civil="M" id="HEMON" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="HEMON">HÉMON</role>, amant d'Antigone.</castItem>
+        <castItem><role age="A" civil="M" id="EPHISE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="EPHISE">ÉPHISE</role>, seigneur de Thèbes.</castItem>
+        <castItem><role age="A" civil="M" id="CLEODAMAS" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="CLEODAMAS">CLÉODAMAS</role>, seigneur de Thèbes.</castItem>
+        <castItem><role age="A" civil="G" id="CAPITAINES" rend="group" stat_amour="néant" statut="capitaine" type="H" xml:id="CAPITAINE">CAPITAINES GRECS</role>.</castItem>
+        <castItem><role age="A" civil="M" id="PAGE" rend="male" stat_amour="néant" statut="page" type="H" xml:id="PAGE">UN PAGE</role>.</castItem>
+        <castItem><role civil="G" id="SUITE" rend="group" xml:id="SUITEDECREON">SUITE DE CRÉON</role><role n="TYRÉSIE" xml:id="TYRESIE"/>.</castItem>
       </castList>
-      <set location="Thèbes" country="Grèce" periode="Temps mythologiques" link="">La scène est à Thèbes.</set>
+      <set country="Grèce" link="" location="Thèbes" periode="Temps mythologiques">La scène est à Thèbes.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE I. Jocaste, Ismène.</head>
-          <sp xml:id="I01-1" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="I01-1">
             <speaker>JOCASTE.</speaker>
             <l n="1" xml:id="l1">Qu'ils ont bien à propos usé de mon sommeil :</l>
             <l n="2" xml:id="l2">Ils n'ont pas appelé ma voix à leur conseil ;</l>
@@ -87,13 +88,13 @@
             <l n="4" xml:id="l4">On a bien su garder que j'en fusse avertie.</l>
             <l n="5" xml:id="l5">C'est bien, ô nuit, c'est de tes plus noirs pavots</l>
             <l n="6" xml:id="l6">Que tu m'as distillé ce funeste repos.</l>
-            <l n="7" xml:id="l7" part="I">Mais quel chef les conduit ?</l>
+            <l n="7" part="I" xml:id="l7">Mais quel chef les conduit ?</l>
           </sp>
-          <sp xml:id="I01-2" who="ISMENE">
+          <sp who="ISMENE" xml:id="I01-2">
             <speaker>ISMÈNE.</speaker>
             <l part="F">Étéocle lui-même.</l>
           </sp>
-          <sp xml:id="I01-3" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="I01-3">
             <speaker>JOCASTE.</speaker>
             <l n="8" xml:id="l8">Allons tôt ; c'est trop d'ordre en ce désordre extrême ;</l>
             <l n="9" xml:id="l9">Ce poil mal ordonné, cette confusion</l>
@@ -106,25 +107,25 @@
             <l n="16" xml:id="l16">Viens, s'ils ont du respect, faire voir ta puissance.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Jocaste, Ismène, Antigone.</head>
-          <sp xml:id="I02-1" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I02-1">
             <speaker>ANTIGONE.</speaker>
-            <l n="17" xml:id="l17" part="I">Madame, il n'est plus temps.</l>
+            <l n="17" part="I" xml:id="l17">Madame, il n'est plus temps.</l>
           </sp>
-          <sp xml:id="I02-2" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="I02-2">
             <speaker>JOCASTE.</speaker>
             <l part="F">Comment ! Ces enragés</l>
             <l n="18" xml:id="l18">Gisent-ils déjà morts l'un par l'autre égorgés,</l>
             <l n="19" xml:id="l19">Ou la troupe Thébaine a-t-elle été défaite ?</l>
           </sp>
-          <sp xml:id="I02-3" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I02-3">
             <speaker>ANTIGONE.</speaker>
             <l n="20" xml:id="l20">Non, mais le combat cesse, et le roi fait retraite :</l>
             <l n="21" xml:id="l21">C'est ce que de la tour j'ai clairement pu voir ;</l>
             <l n="22" xml:id="l22">Et son retour dans peu vous le fera savoir.</l>
           </sp>
-          <sp xml:id="I02-4" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="I02-4">
             <speaker>JOCASTE.</speaker>
             <l n="23" xml:id="l23">Ce coeur dénaturé, teint de sang de son frère,</l>
             <l n="24" xml:id="l24">Se vient-il rafraîchir dans les bras de sa mère ?</l>
@@ -133,12 +134,12 @@
             <l n="27" xml:id="l27">Oui, le coup en mérite, il part d'uns grand courage ;</l>
             <l n="28" xml:id="l28">Il s'est soustrait d'adresse, et pour un bel ouvrage.</l>
           </sp>
-          <sp xml:id="I02-5" who="ISMENE">
+          <sp who="ISMENE" xml:id="I02-5">
             <speaker>ISMÈNE.</speaker>
             <l n="29" xml:id="l29">Peut-être que le ciel, qui préside aux combats,</l>
             <l n="30" xml:id="l30">En disposera mieux que vous n'espérez pas.</l>
           </sp>
-          <sp xml:id="I02-6" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I02-6">
             <speaker>ANTIGONE.</speaker>
             <l n="31" xml:id="l31">Un instant a souvent changé l'ordre des choses ;</l>
             <l n="32" xml:id="l32">Beaucoup d'événements ont démenti leurs causes :</l>
@@ -186,21 +187,21 @@
             <l n="74" xml:id="l74">Mais vous allez savoir comme tout s'est passé.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Jocaste, Ismène, Antigone, Étéocle, Créon, Hémon ; deux capitaines.</head>
-          <sp xml:id="I03-1" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="I03-1">
             <speaker>ÉTÉOCLE.</speaker>
             <l n="75" xml:id="l75">Madame, tout va mal, et dans cette retraite</l>
             <l n="76" xml:id="l76">La victoire est commune, ou plutôt la défaite :</l>
             <l n="77" xml:id="l77">Le sort est bien égal, il se déclare tard,</l>
             <l n="78" xml:id="l78">Et beaucoup sont à dore et d'une et d'autre part.</l>
           </sp>
-          <sp xml:id="I03-2" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="I03-2">
             <speaker>JOCASTE.</speaker>
             <l n="79" xml:id="l79">Maudite ambition ! Abominable peste !</l>
             <l n="80" xml:id="l80">Monstre altéré de sans, que ton fruit est funeste !</l>
           </sp>
-          <sp xml:id="I03-3" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="I03-3">
             <speaker>ÉTÉOCLE.</speaker>
             <l n="81" xml:id="l81">Sur le désir des miens mon trône se soutient</l>
             <l n="82" xml:id="l82">Je lui cédais l'État, mais l'État ma retient ;</l>
@@ -214,13 +215,13 @@
             <note type="C">Il manque un vers pour rimer avec repos.</note>
             <l n="90" xml:id="l90">Quand les dents du Python la semence dernière</l>
             <l n="91" xml:id="l91">Satisfera pour tous et perdra la lumière.</l>
-            <l n="92" xml:id="l92" part="I">Telle est l'arrêt des dieux.</l>
+            <l n="92" part="I" xml:id="l92">Telle est l'arrêt des dieux.</l>
           </sp>
-          <sp xml:id="I03-4" who="CREON">
+          <sp who="CREON" xml:id="I03-4">
             <speaker>CRÉON.</speaker>
             <l part="F">Ô rigoureuse loi !</l>
           </sp>
-          <sp xml:id="I03-5" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="I03-5">
             <speaker>ÉTÉOCLE.</speaker>
             <l n="93" xml:id="l93">Le jeune Ménécée a pris ces mots sur soi :</l>
             <l n="94" xml:id="l94">Se voyant comme il est dernier de sa race,</l>
@@ -232,7 +233,7 @@
             <l n="100" xml:id="l100">Heureux certes cent fois qui meurt si glorieux,</l>
             <l n="101" xml:id="l101">Et qui se pourra seul dire victorieux !</l>
           </sp>
-          <sp xml:id="I03-6" who="CREON">
+          <sp who="CREON" xml:id="I03-6">
             <speaker>CRÉON.</speaker>
             <l n="102" xml:id="l102">Mais plus heureux encore à qui sa mort profite</l>
             <l n="103" xml:id="l103">Et qui se couvrira des lauriers qu'il mérite !</l>
@@ -249,12 +250,12 @@
             <l n="114" xml:id="l114">Nous, vous nous destinez, innocentes victimes,</l>
             <l n="115" xml:id="l115">À périr pour leur gloire et payer pour leur crimes !</l>
           </sp>
-          <sp xml:id="I03-7" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="I03-7">
             <speaker>JOCASTE.</speaker>
             <l n="116" xml:id="l116">Ô reproche honteux, que renouvelles-tu ?</l>
             <l n="117" xml:id="l117">Assez sans toi le sort exerce ma vertu.</l>
           </sp>
-          <sp xml:id="I03-8" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="I03-8">
             <speaker>ÉTÉOCLE.</speaker>
             <l n="118" xml:id="l118">Je pardonne, Créon, cette plainte insensée</l>
             <l n="119" xml:id="l119">Aux récentes douleurs du sort de Ménécée :</l>
@@ -264,12 +265,12 @@
             <l n="123" xml:id="l123">La guerre des États n'exclut pas la justice,</l>
             <l n="124" xml:id="l124">Et n'excuserait pas un outrage pareil.</l>
             <l n="125" xml:id="l125">Entrons, et m'assistez d'une heure de conseil.</l>
-            <stage type="exit">Ils sortent tous, excepté Hémon et Antigone.</stage>
+            <stage>Ils sortent tous, excepté Hémon et Antigone.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Antigone, Hémon.</head>
-          <sp xml:id="I04-1" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I04-1">
             <speaker>ANTIGONE.</speaker>
             <l n="126" xml:id="l126">Voyez, mon cher Hémon, comme sa violence</l>
             <l n="127" xml:id="l127">Va jusques à l'outrage et jusqu'à l'insolence.</l>
@@ -284,7 +285,7 @@
             <l n="136" xml:id="l136">Ne peuvent faire encore qu'un innocent péché</l>
             <l n="137" xml:id="l137">Moins de toi que du sort, ne te soit reproché ?</l>
           </sp>
-          <sp xml:id="I04-2" who="HEMON">
+          <sp who="HEMON" xml:id="I04-2">
             <speaker>HÉMON.</speaker>
             <l n="138" xml:id="l138">Ce malheur est commun avec notre misère,</l>
             <l n="139" xml:id="l139">De rougir comme vous des fautes de mon père,</l>
@@ -299,11 +300,11 @@
             <l n="148" xml:id="l148">Et je n'ose vous dire une secrète peur</l>
             <l n="149" xml:id="l149">Que m'imprime en l'esprit cette mauvaise humeur.</l>
           </sp>
-          <sp xml:id="I04-3" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I04-3">
             <speaker>ANTIGONE.</speaker>
-            <l n="150" xml:id="l150" part="I">Quoi ! Touchant notre hymen ?</l>
+            <l n="150" part="I" xml:id="l150">Quoi ! Touchant notre hymen ?</l>
           </sp>
-          <sp xml:id="I04-4" who="HEMON">
+          <sp who="HEMON" xml:id="I04-4">
             <speaker>HÉMON.</speaker>
             <l part="F">Ma passion, Madame,</l>
             <l n="151" xml:id="l151">M'a bien pu sans sujet mettre ces peurs en l'âme ;</l>
@@ -322,7 +323,7 @@
             <l n="164" xml:id="l164">À toute autorité je fermerais les yeux,</l>
             <l n="165" xml:id="l165">Et je ferais beaucoup de respecter les dieux.</l>
           </sp>
-          <sp xml:id="I04-5" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I04-5">
             <speaker>ANTIGONE.</speaker>
             <l n="166" xml:id="l166">Quoique la même foi que je vous ai donnée</l>
             <l n="167" xml:id="l167">Ma permit de parler touchant notre hyménée,</l>
@@ -337,7 +338,7 @@
             <l n="176" xml:id="l176">Ce combat, cher Hémon, au moins s'est-il passé</l>
             <l n="177" xml:id="l177">Sans la mort de mon frère, ou sans qu'il soit blessé ?</l>
           </sp>
-          <sp xml:id="I04-6" who="HEMON">
+          <sp who="HEMON" xml:id="I04-6">
             <speaker>HÉMON.</speaker>
             <l n="178" xml:id="l178">Madame, c'est ici que je vous ai servie :</l>
             <l n="179" xml:id="l179">Polynice est vivant, mais il vous dois la vie.</l>
@@ -366,7 +367,7 @@
             <l n="202" xml:id="l202">Vous étiez son bouclier au milieu des alarmes,</l>
             <l n="203" xml:id="l203">Et vous l'avez sauvé, seule, absente et sans armes.</l>
           </sp>
-          <sp xml:id="I04-7" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I04-7">
             <speaker>ANTIGONE.</speaker>
             <l n="204" xml:id="l204">Hélas ! Joindre sa mort à mon cruel ennui</l>
             <l n="205" xml:id="l205">Serait bien, cher Hémon, me tuer plus que lui :</l>
@@ -384,26 +385,26 @@
             <l n="217" xml:id="l217">Mais je suis toujours même, et lui s'est démenti.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Antigone, Hémon, un page.</head>
-          <sp xml:id="I05-1" who="PAGE">
+          <sp who="PAGE" xml:id="I05-1">
             <speaker>UN PAGE.</speaker>
             <l n="218" xml:id="l218">Monsieur, on tient conseil, et le roi vous demande.</l>
           </sp>
-          <sp xml:id="I05-2" who="HEMON">
+          <sp who="HEMON" xml:id="I05-2">
             <speaker>HÉMON.</speaker>
             <l n="219" xml:id="l219">Agréez ce devoir qu'il faut que je lui rende.</l>
           </sp>
-          <sp xml:id="I05-3" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="I05-3">
             <speaker>ANTIGONE.</speaker>
             <l n="220" xml:id="l220">Allez, mais sur tout autre opinez pour la paix ;</l>
             <l n="221" xml:id="l221">Et soient vos bons avis suivis de bons effets.</l>
-            <stage type="[N/A]">Ils sortent</stage>
+            <stage>Ils sortent</stage>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="I06">
           <head>SCÈNE VI. Polynice, sous une tente ; Adraste, Argie.</head>
-          <sp xml:id="I06-1" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="I06-1">
             <speaker>POLYNICE.</speaker>
             <l n="222" xml:id="l222">Reste lâche et honteux de tant de compagnies</l>
             <l n="223" xml:id="l223">Que cous vos étendards la Grèce m'a fournies,</l>
@@ -442,17 +443,17 @@
             <l n="256" xml:id="l256">Et qu'un duel enfin entre mon frère et moi...</l>
             <l n="257" xml:id="l257">Qu'avez-vous à pâlir, et d'où naît cet effroi ?</l>
           </sp>
-          <sp xml:id="I06-2" who="ADRASTE">
+          <sp who="ADRASTE" xml:id="I06-2">
             <speaker>ADRASTE.</speaker>
             <l n="258" xml:id="l258">Dieux ! Que proposez-vous ! Quelle horrible aventure !</l>
           </sp>
-          <sp xml:id="I06-3" who="ARGIE">
+          <sp who="ARGIE" xml:id="I06-3">
             <speaker>ARGIE.</speaker>
             <l n="259" xml:id="l259">Eh ! Monsieur, écoutez la voix de la nature ;</l>
             <l n="260" xml:id="l260">Songez quel est le sang que vous voulez verser ;</l>
             <l n="261" xml:id="l261">Sans honte et sans frayeur y pouvez-vous penser ?</l>
           </sp>
-          <sp xml:id="I06-4" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="I06-4">
             <speaker>POLYNICE.</speaker>
             <l n="262" xml:id="l262">La chose est résolue, et la nature même</l>
             <l n="263" xml:id="l263">Souscrit à cet arrêt de ma fureur extrême ;</l>
@@ -465,7 +466,7 @@
             <l n="270" xml:id="l270">Et pour vouloir que j'erre et que je me retire,</l>
             <l n="271" xml:id="l271">Quand mon année arrive et m'appelle à l'empire ?</l>
           </sp>
-          <sp xml:id="I06-5" who="ADRASTE">
+          <sp who="ADRASTE" xml:id="I06-5">
             <speaker>ADRASTE .</speaker>
             <l n="272" xml:id="l272">Quelle rage, bon dieu, vous occupe le sein ?</l>
             <l n="273" xml:id="l273">Ah ! Mon fils, étouffez ce damnable dessein :</l>
@@ -480,14 +481,14 @@
             <l n="282" xml:id="l282">Et votre autorité n'y sera divisée</l>
             <l n="283" xml:id="l283">Par aucune puissance à la vôtre opposée.</l>
           </sp>
-          <sp xml:id="I06-6" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="I06-6">
             <speaker>POLYNICE.</speaker>
             <l n="284" xml:id="l284">Non, non, ne point régner, les dieux m'en sont témoins,</l>
             <l n="285" xml:id="l285">Est le ressentiment qui le touche le moins,</l>
             <l n="286" xml:id="l286">Et jamais ma couronne, entre mes mains remise,</l>
             <l n="287" xml:id="l287">N'aurait d'autorité qui ne vous fut soumise.</l>
             <l n="288" xml:id="l288">Mais qu'un traître viole avec impunité</l>
-            <l n="289" xml:id="l289">Le respect de l'accord  entre nous arrêté,</l>
+            <l n="289" xml:id="l289">Le respect de l'accord entre nous arrêté,</l>
             <l n="290" xml:id="l290">Et que j'observe après celui de la naissance,</l>
             <l n="291" xml:id="l291">Une vertu si lâche excède ma puissance ;</l>
             <l n="292" xml:id="l292">Il faut trop de faiblesse à pouvoir l'exercer ;</l>
@@ -507,7 +508,7 @@
             <l n="306" xml:id="l306">Et sans confusion je verrais le veuvage !</l>
             <l n="307" xml:id="l307">Non, non, trop de justice à ce devoir m'engage,</l>
             <l n="308" xml:id="l308">Et trop de honte est joint à mon retardement.</l>
-            <stage type="[N/A]">Il embrasse Argie.</stage>
+            <stage>Il embrasse Argie.</stage>
             <l n="309" xml:id="l309">Adieu, vous que mon coeur aima si tendrement,</l>
             <l n="310" xml:id="l310">Et que le ciel doué d'une vertu si rare ;</l>
             <l n="311" xml:id="l311">Un éternel adieu peut-être nous sépare :</l>
@@ -521,9 +522,9 @@
             <l n="319" xml:id="l319">Trouvez-lui dans le Grèce une parti digne d'elle,</l>
             <l n="320" xml:id="l320">Et que cet autre hymen lui puisse être aussi doux </l>
             <l n="321" xml:id="l321">Que le premier fut triste et pour elle et pour vous.</l>
-            <stage type="exit">Il sort.</stage>
+            <stage>Il sort.</stage>
           </sp>
-          <sp xml:id="I06-7" who="ARGIE">
+          <sp who="ARGIE" xml:id="I06-7">
             <speaker>ARGIE.</speaker>
             <l n="322" xml:id="l322">Polynice ! Mon père, arrêtez ce barbare ;</l>
             <l n="323" xml:id="l323">Qu'il diffère un moment la mort qu'il me prépare,</l>
@@ -532,11 +533,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE I. Polynice, l'épée à la main, au pied des purs de Thèbes ; deux capitaines grecs.</head>
-          <sp xml:id="II01-1" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II01-1">
             <speaker>POLYNICE.</speaker>
             <l n="326" xml:id="l326">Là, si ton lâche coeur enfin se peut résoudre,</l>
             <l n="327" xml:id="l327">Tu laisseras la vie, ou j'y mordrai la poudre,</l>
@@ -551,20 +552,20 @@
             <l n="336" xml:id="l336">Quel emploi t'a déjà tant de fois retenu ?</l>
             <l n="337" xml:id="l337">Il ne faut point d'apprêt à paraître tout nu.</l>
           </sp>
-          <sp xml:id="II01-2" who="1ERCAPITAINE">
+          <sp who="CAPITAINE" xml:id="II01-2">
             <speaker>Premier CAPITAINE.</speaker>
             <l n="338" xml:id="l338">En ces effets bien moins de valeur que de rage.</l>
             <l n="339" xml:id="l339">La nature, Seigneur, dispense le courage ;</l>
             <l n="340" xml:id="l340">Vous auriez plus de coeur si vous en aviez moins.</l>
           </sp>
-          <sp xml:id="II01-3" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II01-3">
             <speaker>POLYNICE.</speaker>
             <l n="341" xml:id="l341">Laissez juger aux dieux, ne soyez que témoins.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Polynice, l'épée à la main, au pied des murs de Thèbes ; deux capitaines grecs; Antigone, en haut des murs.</head>
-          <sp xml:id="II02-1" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="II02-1">
             <speaker>ANTIGONE.</speaker>
             <l n="342" xml:id="l342">Polynice, avancez, portez ici la vue ;</l>
             <l n="343" xml:id="l343">Souffrez qu'après un an votre soeur vous salue.</l>
@@ -597,13 +598,13 @@
             <l n="370" xml:id="l370">Ô nature, toi-même à toi-même contraire,</l>
             <l n="371" xml:id="l371">Vois que le fer en main un frère attend son frère.</l>
             <l n="372" xml:id="l372">Cruel, eh ! Quel effet prétend votre courroux ?</l>
-            <l n="373" xml:id="l373">Du quel  que le sang coule il coulera de vous ;</l>
+            <l n="373" xml:id="l373">Du quel que le sang coule il coulera de vous ;</l>
             <l n="374" xml:id="l374">L'un ne le veut verser sans la perte de l'autre ;</l>
             <l n="375" xml:id="l375">En répandant le sien vous répandrez le vôtre ;</l>
             <l n="376" xml:id="l376">Il ne diffère point, ce n'est qu'un même sang</l>
             <l n="377" xml:id="l377">Que vous avez puisé dedans un même flanc.</l>
           </sp>
-          <sp xml:id="II02-2" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II02-2">
             <speaker>POLYNICE.</speaker>
             <l n="378" xml:id="l378">C'est d'où nous vient aussi même droit à l'empire</l>
             <l n="379" xml:id="l379">Que son ambition prétend de m'interdire,</l>
@@ -622,7 +623,7 @@
             <l n="392" xml:id="l392">J'arme pour le bon droit, lui pour la trahison ;</l>
             <l n="393" xml:id="l393">Il tient pour l'injustice, et moi pour la raison</l>
           </sp>
-          <sp xml:id="II02-3" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="II02-3">
             <speaker>ANTIGONE.</speaker>
             <l n="394" xml:id="l394">Voilà donc cette soeur qui vous était si chère,</l>
             <l n="395" xml:id="l395">Éconduite aujourd'hui d'une seule prière.</l>
@@ -647,9 +648,9 @@
             <l n="414" xml:id="l414">Moi qui, sans vous mentir, trouverais trop aisée</l>
             <l n="415" xml:id="l415">Quelque mort qui pour vous pût m'être proposée ;</l>
             <l n="416" xml:id="l416">Moi malheureuse, enfin, qui vous prie à genoux,</l>
-            <l n="417" xml:id="l417">Moins pour l'amour de moi que pour l'amour de  vous.</l>
+            <l n="417" xml:id="l417">Moins pour l'amour de moi que pour l'amour de vous.</l>
           </sp>
-          <sp xml:id="II02-4" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II02-4">
             <speaker>POLYNICE.</speaker>
             <l n="418" xml:id="l418">Si quelque sentiment demeure après la vie,</l>
             <l n="419" xml:id="l419">Que je vous saurais gré de me l'avoir ravie !</l>
@@ -661,9 +662,9 @@
             <l n="425" xml:id="l425">Mais je ne saurais vivre et ne me venger pas.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Polynice, deux capitaines grecs; Antigone, Étéocle, Créon.</head>
-          <sp xml:id="II03-1" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II03-1">
             <speaker>ÉTÉOCLE, sortant désarmé.</speaker>
             <l n="426" xml:id="l426">Je viens enfin, je viens, prêt à te satisfaire ;</l>
             <l n="427" xml:id="l427">Et crois que si plus tôt j'avais pu me soustraire,</l>
@@ -682,13 +683,13 @@
             <l n="440" xml:id="l440">Voyons s'il m'ôtera le nom que j'en ai pris ;</l>
             <l n="441" xml:id="l441">Que le champ du combat e soit aussi le prix.</l>
           </sp>
-          <sp xml:id="II03-2" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="II03-2">
             <speaker>ANTIGONE.</speaker>
             <l n="442" xml:id="l442">Ils s'approchent, ô dieux, et nul n'y met obstacle !</l>
             <l n="443" xml:id="l443">Fuyons, ne voyons pas cet horrible spectacle.</l>
-            <stage type="exit">Elle sort.</stage>
+            <stage>Elle sort.</stage>
           </sp>
-          <sp xml:id="II03-3" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II03-3">
             <speaker>POLYNICE.</speaker>
             <l n="444" xml:id="l444">Enfin quelque remords t'a donc fait souvenir</l>
             <l n="445" xml:id="l445">Que ta fois s'est donnée et qu'il la faut tenir ?</l>
@@ -698,21 +699,21 @@
             <l n="449" xml:id="l449">De notre propre sang et sur nos propres corps.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Jocaste, Créon, Hémon, Deux capitaines, Étéocle, Polynice.</head>
-          <sp xml:id="II04-1" who="CREON">
+          <sp who="CREON" xml:id="II04-1">
             <speaker>CRÉON.</speaker>
             <l n="450" xml:id="l450">Que veut hors de saison cette femme importune ?</l>
           </sp>
-          <sp xml:id="II04-2" who="HEMON">
+          <sp who="HEMON" xml:id="II04-2">
             <speaker>HÉMON.</speaker>
             <l n="451" xml:id="l451">Détourner s'il se peut une étrange infortune.</l>
           </sp>
-          <sp xml:id="II04-3" who="2NDCAPITAINE">
+          <sp who="CAPITAINE" xml:id="II04-3">
             <speaker>Second CAPITAINE.</speaker>
             <l n="452" xml:id="l452">C'est leur mère. Ô nature ! Assiste son dessein.</l>
           </sp>
-          <sp xml:id="II04-4" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-4">
             <speaker>JOCASTE.</speaker>
             <l n="453" xml:id="l453">Plongez, plongez, cruels, vos armes dans mon sein ;</l>
             <l n="454" xml:id="l454">Déployez contre moi votre aveugle colère,</l>
@@ -745,7 +746,7 @@
             <l n="481" xml:id="l481">Si vous ne vous fuyez, vous êtes ennemis :</l>
             <l n="482" xml:id="l482">Vous êtes divisés ou de coeur ou d'espace ;</l>
             <l n="483" xml:id="l483">La haine vous rapprochent et l'amitié vous chasse.</l>
-            <stage type="toward">À Polynice.</stage>
+            <stage>À Polynice.</stage>
             <l n="484" xml:id="l484">Ça, mes premiers baisers s'adresseront à vous</l>
             <l n="485" xml:id="l485">Qu'une si longue absence a séparé de nous : </l>
             <l n="486" xml:id="l486">Venez les recevoir d'une approche civile,</l>
@@ -757,7 +758,7 @@
             <l n="492" xml:id="l492">Chassez de votre esprit ce défiant souci;</l>
             <l n="493" xml:id="l493">Si ce n'est que ma foi soit suspecte aussi.</l>
           </sp>
-          <sp xml:id="II04-5" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-5">
             <speaker>POLYNICE.</speaker>
             <l n="494" xml:id="l494">Ne désirez-vous point que je vous dissimule ?</l>
             <l n="495" xml:id="l495">Ma sûreté dépend de n'être plus crédule ;</l>
@@ -768,38 +769,38 @@
             <l n="500" xml:id="l500">Votre parole enfin m'est suspecte aussi;</l>
             <l n="501" xml:id="l501">Ma mère pourrait bien ce que mon frère a fait.</l>
           </sp>
-          <sp xml:id="II04-6" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-6">
             <speaker>JOCASTE.</speaker>
             <l n="502" xml:id="l502">Soupçonnez votre mère ; oui, j'approuve qu'en elle</l>
             <l n="503" xml:id="l503">Vous redoutiez d'avoir une garde infidèle :</l>
             <l n="504" xml:id="l504">De cet indigne faix ne déchargez ce bras</l>
             <l n="505" xml:id="l505">Qu'après qu'en ma faveur le roi l'aura mis bas.</l>
           </sp>
-          <sp xml:id="II04-7" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-7">
             <speaker>POLYNICE.</speaker>
             <l n="506" xml:id="l506">Le roi ? Quoi ! Le perfide exige encore ce titre</l>
             <l n="507" xml:id="l507">Durant ce différend dont le sort est arbitre ?</l>
             <l n="508" xml:id="l508">Vous et sa trahison l'avez donc couronné ?</l>
           </sp>
-          <sp xml:id="II04-8" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II04-8">
             <speaker>ÉTÉOCLE.</speaker>
             <l n="509" xml:id="l509">Bientôt, bientôt les dieux en auront ordonné.</l>
           </sp>
-          <sp xml:id="II04-9" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-9">
             <speaker>JOCASTE.</speaker>
             <l n="510" xml:id="l510">Hélas ! Qu'en la fureur dont votre âme est pressée</l>
             <l n="511" xml:id="l511">Vous venez tout d'un sens contraire à ma pensée !</l>
             <l n="512" xml:id="l512">Je ne viens pas ici pour aigrir vos débats ;</l>
             <l n="513" xml:id="l513">Je lui donne ce titre et ne vous l'ôte pas.</l>
-            <stage type="toward">À Étéocle.</stage>
+            <stage>À Étéocle.</stage>
             <l n="514" xml:id="l514">Pour vous la pitié peut-être a plus de charmes :</l>
             <l n="515" xml:id="l515">Approchez, Étéocle, et mettez bas les armes ;</l>
             <l n="516" xml:id="l516">Cachez à mes regards leur flamboyant acier :</l>
             <l n="517" xml:id="l517">Vous les fîtes lever, posez-les le premier.</l>
-            <stage type="[N/A]">Il met son épée à terre.</stage>
+            <stage>Il met son épée à terre.</stage>
             <l n="518" xml:id="l518">Vous vous craignez l'un l'autre, et moi tous deux ensemble ;</l>
             <l n="519" xml:id="l519">Mais tous deux pour tous deux c'est pour vous que je tremble.</l>
-            <stage type="toward">À Polynice.</stage>
+            <stage>À Polynice.</stage>
             <l n="520" xml:id="l520">Mais votre défiance à la fin doit cesser.</l>
             <l n="521" xml:id="l521">Le voilà désarmé, puis-je vous embrasser ?</l>
             <l n="522" xml:id="l522">Faites ici, mes pleurs, l'office de ma langue.</l>
@@ -841,28 +842,28 @@
             <l n="558" xml:id="l558">Enfin sans vous, mon fils, je n'aurais pas la guerre ;</l>
             <l n="559" xml:id="l559">Mais sans la guerre aussi je ne vous aurais pas.</l>
           </sp>
-          <sp xml:id="II04-10" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-10">
             <speaker>POLYNICE.</speaker>
             <l n="560" xml:id="l560">Tout un peuple allié marche dessus mes pas</l>
             <l n="561" xml:id="l561">Pour me rendre mes droits et ma natale terre :</l>
             <l n="562" xml:id="l562">Il est vrai que sans moi vous n'auriez pas la guerre ;</l>
             <l n="563" xml:id="l563">Mais sans la guerre aussi je ne vous aurais pas.</l>
           </sp>
-          <sp xml:id="II04-11" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II04-11">
             <speaker>ÉTÉOCLE.</speaker>
             <l n="564" xml:id="l564">Tout un peuple ennemi marche dessus vos pas</l>
             <l n="565" xml:id="l565">Et ne vous rendra point votre natale terre :</l>
             <l n="566" xml:id="l566">Il est vrai que sans vous Thèbes serait sans guerre ;</l>
             <l n="567" xml:id="l567">Mais elle aura la guerre et vous ne l'aurez pas.</l>
           </sp>
-          <sp xml:id="II04-12" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-12">
             <speaker>JOCASTE.</speaker>
             <l n="568" xml:id="l568">Tout mon sang, de frayeur en mes veines se glace.</l>
             <l n="569" xml:id="l569">Ma prière, cruels, n'obtient donc point de grâce ?</l>
             <l n="570" xml:id="l570">Je n'ai pouvoir, crédit, autorité, ni rang,</l>
             <l n="571" xml:id="l571">Et ne puis accorder mon sang avec mon sang ?</l>
           </sp>
-          <sp xml:id="II04-13" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-13">
             <speaker>POLYNICE.</speaker>
             <l n="572" xml:id="l572">Ne vous semble-t-il point que la gloire d'un prince</l>
             <l n="573" xml:id="l573">Soit d'errer vagabond de province en province ?</l>
@@ -877,77 +878,93 @@
             <l n="582" xml:id="l582">Je dois souhaiter l'une, et l'autre l'étouffer ;</l>
             <l n="583" xml:id="l583">Et le droit que je veux est au bout de ce fer.</l>
           </sp>
-          <sp xml:id="II04-14" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II04-14">
             <speaker>ÉTÉOCLE.</speaker>
-            <l n="584" xml:id="l584" part="I">Qu'un brave parle haut !</l>
+            <l n="584" part="I" xml:id="l584">Qu'un brave parle haut !</l>
           </sp>
-          <sp xml:id="II04-15" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-15">
             <speaker>POLYNICE.</speaker>
             <l part="F">Qu'un traître tard se fâche !</l>
           </sp>
-          <sp xml:id="II04-16" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II04-16">
             <speaker>ÉTÉOCLE.</speaker>
-            <l n="585" xml:id="l585" part="I">Souvent tel brave tremble.</l>
+            <l n="585" part="I" xml:id="l585">Souvent tel brave tremble.</l>
           </sp>
-          <sp xml:id="II04-17" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-17">
             <speaker>POLYNICE.</speaker>
             <l part="F">Et plus souvent un lâche.</l>
           </sp>
-          <sp xml:id="II04-18" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II04-18">
             <speaker>ÉTÉOCLE.</speaker>
-            <l n="586" xml:id="l586" part="I">Ce coeur si haut m'étonne.</l>
+            <l n="586" part="I" xml:id="l586">Ce coeur si haut m'étonne.</l>
           </sp>
-          <sp xml:id="II04-19" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-19">
             <speaker>POLYNICE.</speaker>
             <l part="F">Et moi le tien si bas.</l>
           </sp>
-          <sp xml:id="II04-20" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II04-20">
             <speaker>ÉTÉOCLE.</speaker>
-            <l n="587" xml:id="l587" part="I">L'effet le montrera.</l>
+            <l n="587" part="I" xml:id="l587">L'effet le montrera.</l>
           </sp>
-          <sp xml:id="II04-21" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-21">
             <speaker>POLYNICE.</speaker>
             <l part="F">Tu ne te hâtes pas ?</l>
           </sp>
-          <sp xml:id="II04-22" who="JOCASTE"><speaker>JOCASTE.</speaker><l n="588" xml:id="l588">Quelle gloire, bons dieux, ou plutôt quelle rage</l><l n="589" xml:id="l589">À faillir le premier met le plus de courage ?</l><l n="590" xml:id="l590">La valeur est honteuse en pareil différend,</l><l n="591" xml:id="l591">Et la gloire appartient à celui qui se rend.</l><l n="592" xml:id="l592">Je sais qu'à votre tête il faut une couronne ;</l><l n="593" xml:id="l593">Mais que hors de chez vous votre main vous la donne.</l><l n="594" xml:id="l594">Faut-il que d'un seul lien vos desseins soient bornés ?</l><l n="595" xml:id="l595">Et ne saurais-je avoir deux enfants couronnés ?</l>
-*****************
-	<l n="596" xml:id="l596">Montez, le fer en main, les rochers de Tymole,</l><l n="597" xml:id="l597">Soumettez-vous les lieux que dore le Pactole ;</l><l n="598" xml:id="l598">Osez ce qu'ont osé tant d'autres conquérants ;</l><l n="599" xml:id="l599">Tenez tout de vous seul, et rien de vos parents :</l><l n="600" xml:id="l600">Encore en tiendrez-vous ce grand coeur en partage,</l><l n="601" xml:id="l601">Ce coeur qui vous peut faire un si bel héritage,</l><l n="602" xml:id="l602">Qui vous peut au besoin donner un si beau rang</l><l n="603" xml:id="l603">Sans que vous le cherchiez dans votre propre sang.</l></sp>
-          <sp xml:id="II04-23" who="POLYNICE">
+          <sp who="JOCASTE" xml:id="II04-22">
+            <speaker>JOCASTE.</speaker>
+            <l n="588" xml:id="l588">Quelle gloire, bons dieux, ou plutôt quelle rage</l>
+            <l n="589" xml:id="l589">À faillir le premier met le plus de courage ?</l>
+            <l n="590" xml:id="l590">La valeur est honteuse en pareil différend,</l>
+            <l n="591" xml:id="l591">Et la gloire appartient à celui qui se rend.</l>
+            <l n="592" xml:id="l592">Je sais qu'à votre tête il faut une couronne ;</l>
+            <l n="593" xml:id="l593">Mais que hors de chez vous votre main vous la donne.</l>
+            <l n="594" xml:id="l594">Faut-il que d'un seul lien vos desseins soient bornés ?</l>
+            <l n="595" xml:id="l595">Et ne saurais-je avoir deux enfants couronnés ?</l>
+            <l n="596" xml:id="l596">Montez, le fer en main, les rochers de Tymole,</l>
+            <l n="597" xml:id="l597">Soumettez-vous les lieux que dore le Pactole ;</l>
+            <l n="598" xml:id="l598">Osez ce qu'ont osé tant d'autres conquérants ;</l>
+            <l n="599" xml:id="l599">Tenez tout de vous seul, et rien de vos parents :</l>
+            <l n="600" xml:id="l600">Encore en tiendrez-vous ce grand coeur en partage,</l>
+            <l n="601" xml:id="l601">Ce coeur qui vous peut faire un si bel héritage,</l>
+            <l n="602" xml:id="l602">Qui vous peut au besoin donner un si beau rang</l>
+            <l n="603" xml:id="l603">Sans que vous le cherchiez dans votre propre sang.</l>
+          </sp>
+          <sp who="POLYNICE" xml:id="II04-23">
             <speaker>POLYNICE.</speaker>
             <l n="604" xml:id="l604">Que Thèbes lui demeure, et que je me retire !</l>
           </sp>
-          <sp xml:id="II04-24" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-24">
             <speaker>JOCASTE.</speaker>
             <l n="605" xml:id="l605">Thèbes, vous le savez, est un fatal empire,</l>
             <l n="606" xml:id="l606">Et son trône est un lieu funeste à son roi :</l>
             <l n="607" xml:id="l607">Les exemples de Laie et d'Oedipe en font foi.</l>
           </sp>
-          <sp xml:id="II04-25" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-25">
             <speaker>POLYNICE.</speaker>
             <l n="608" xml:id="l608">Un autre encore bientôt le fera mieux paraître.</l>
           </sp>
-          <sp xml:id="II04-26" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-26">
             <speaker>JOCASTE.</speaker>
-            <l n="609" xml:id="l609" part="I">Cruel !  De votre frère ?</l>
+            <l n="609" part="I" xml:id="l609">Cruel ! De votre frère ?</l>
           </sp>
-          <sp xml:id="II04-27" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-27">
             <speaker>POLYNICE.</speaker>
             <l part="F">Et de tous deux peut-être.</l>
           </sp>
-          <sp xml:id="II04-28" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-28">
             <speaker>JOCASTE.</speaker>
-            <l n="610" xml:id="l610" part="I">Quelle obstination. !</l>
+            <l n="610" part="I" xml:id="l610">Quelle obstination. !</l>
           </sp>
-          <sp xml:id="II04-29" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-29">
             <speaker>POLYNICE.</speaker>
             <l part="F">Quelle infidélité !</l>
           </sp>
-          <sp xml:id="II04-30" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-30">
             <speaker>JOCASTE.</speaker>
             <l n="611" xml:id="l611">Mais quoi ! Son règne plaît, le vôtre est redouté ;</l>
-            <l n="612" xml:id="l612" part="I">Il a gagné les coeurs....</l>
+            <l n="612" part="I" xml:id="l612">Il a gagné les coeurs....</l>
           </sp>
-          <sp xml:id="II04-31" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-31">
             <speaker>POLYNICE.</speaker>
             <l part="F">Et moi, moins populaire,</l>
             <l n="613" xml:id="l613">Je tiens indifférent d'être craint ou de plaire.</l>
@@ -958,11 +975,11 @@
             <l n="618" xml:id="l618">Le peuple, trop aisé, les lie en les aimant ;</l>
             <l n="619" xml:id="l619">Il faut pour être aimé régner trop mollement.</l>
           </sp>
-          <sp xml:id="II04-32" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-32">
             <speaker>JOCASTE.</speaker>
             <l n="620" xml:id="l620">L'amour de ses sujets est une sûre garde.</l>
           </sp>
-          <sp xml:id="II04-33" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-33">
             <speaker>POLYNICE.</speaker>
             <l n="621" xml:id="l621">Souvent qui trop se fie aussi trop se hasarde.</l>
             <l n="622" xml:id="l622">Mais ne m'opposez plus d'inutiles avis.</l>
@@ -972,7 +989,7 @@
             <l n="626" xml:id="l626">Je ne puis d'aucun prix, tant fût-il infini,</l>
             <l n="627" xml:id="l627">Voir l'une trop payée et l'autre trop puni.</l>
           </sp>
-          <sp xml:id="II04-34" who="JOCASTE">
+          <sp who="JOCASTE" xml:id="II04-34">
             <speaker>JOCASTE.</speaker>
             <l n="628" xml:id="l628">Bien, puisque ni sanglots, ni prières, ni larmes</l>
             <l n="629" xml:id="l629">Ne peuvent de vos mains faire tomber les armes,</l>
@@ -990,23 +1007,23 @@
             <l n="641" xml:id="l641">Et détestables fruits de meurtres et d'incestes :</l>
             <l n="642" xml:id="l642">Vous ne mourrez pas seuls, et je suivrai vos pas</l>
             <l n="643" xml:id="l643">Pour vous persécuter même jusqu'au trépas.</l>
-            <stage type="exit">Elle sort furieuse.</stage>
+            <stage>Elle sort furieuse.</stage>
           </sp>
-          <sp xml:id="II04-35" who="1ERCAPITAINE">
+          <sp who="CAPITAINE" xml:id="II04-35">
             <speaker>Premier CAPITAINE.</speaker>
-            <l n="644" xml:id="l644" part="I">Son entremise est vaine.</l>
+            <l n="644" part="I" xml:id="l644">Son entremise est vaine.</l>
           </sp>
-          <sp xml:id="II04-36" who="HEMON">
+          <sp who="HEMON" xml:id="II04-36">
             <speaker>HÉMON.</speaker>
             <l part="F">Ô constance barbare !</l>
           </sp>
-          <sp xml:id="II04-37" who="CREON">
+          <sp who="CREON" xml:id="II04-37">
             <speaker>CRÉON, à Étéocle.</speaker>
             <l n="645" xml:id="l645">Enfin le champ est libre, et rien ne vous sépare :</l>
             <l n="646" xml:id="l646">Qui ne presse faiblit l'effet de grands projets.</l>
             <l n="647" xml:id="l647">Vengez-vous, vengez-vous, et vengez vos sujets.</l>
           </sp>
-          <sp xml:id="II04-38" who="ETEOCLE">
+          <sp who="ETEOCLE" xml:id="II04-38">
             <speaker>ÉTÉOCLE.</speaker>
             <l n="648" xml:id="l648">Votre intérêt, Créon, vous meut plus que ma gloire ;</l>
             <l n="649" xml:id="l649">Vous pressez le combat et craignez la victoire.</l>
@@ -1018,21 +1035,21 @@
             <l n="655" xml:id="l655">D'où l'un et l'autre camp nous considère mieux,</l>
             <l n="656" xml:id="l656">Et que le sort après conduise l'aventure.</l>
           </sp>
-          <sp xml:id="II04-39" who="POLYNICE">
+          <sp who="POLYNICE" xml:id="II04-39">
             <speaker>POLYNICE.</speaker>
-            <l n="657" xml:id="l657" part="I">Faisons tôt.</l>
+            <l n="657" part="I" xml:id="l657">Faisons tôt.</l>
           </sp>
-          <sp xml:id="II04-40" who="HEMON">
+          <sp who="HEMON" xml:id="II04-40">
             <speaker>HÉMON.</speaker>
             <l part="F">Ô journée honteuse à la nature !</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE I.</head>
-          <sp xml:id="III01-1" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III01-1">
             <speaker>ANTIGONE, en deuil, dans sa chambre.</speaker>
             <l n="658" xml:id="l658">Inconstante reine du monde,</l>
             <l n="659" xml:id="l659">Qui fais tout par aveuglement,</l>
@@ -1060,32 +1077,32 @@
             <l n="681" xml:id="l681">A toujours guerre avec toi.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Hémon, Antigone.</head>
-          <sp xml:id="III02-1" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III02-1">
             <speaker>ANTIGONE.</speaker>
             <l n="682" xml:id="l682">Tu reviens seul, Hémon ? Ô sinistre présage !</l>
             <l n="683" xml:id="l683">Que je lis d'infortune aux traits de ton visage !</l>
           </sp>
-          <sp xml:id="III02-2" who="HEMON">
+          <sp who="HEMON" xml:id="III02-2">
             <speaker>HÉMON.</speaker>
             <l n="684" xml:id="l684">Il vous faut divertir par un autre entretien.</l>
           </sp>
-          <sp xml:id="III02-3" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III02-3">
             <speaker>ANTIGONE.</speaker>
             <l n="685" xml:id="l685">Hélas ! Tu me dis tout en ne me disant rien.</l>
           </sp>
-          <sp xml:id="III02-4" who="HEMON">
+          <sp who="HEMON" xml:id="III02-4">
             <speaker>HÉMON.</speaker>
             <l n="686" xml:id="l686">Madame, je croyais que la commune plainte</l>
             <l n="687" xml:id="l687">Vous eût déjà livré cette sensible atteinte,</l>
             <l n="688" xml:id="l688">Et fût cause du deuil que je rencontre ici.</l>
           </sp>
-          <sp xml:id="III02-5" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III02-5">
             <speaker>ANTIGONE.</speaker>
-            <l n="689" xml:id="l689" part="I">Étéocle est-il mort ?</l>
+            <l n="689" part="I" xml:id="l689">Étéocle est-il mort ?</l>
           </sp>
-          <sp xml:id="III02-6" who="HEMON">
+          <sp who="HEMON" xml:id="III02-6">
             <speaker>HÉMON.</speaker>
             <l part="F">Et Polynice aussi.</l>
             <l n="690" xml:id="l690">Faites à ce grand coeur faire un effort extrême ;</l>
@@ -1093,25 +1110,25 @@
             <l n="692" xml:id="l692">L'ennui d'un tel malheur ne peut être léger ;</l>
             <l n="693" xml:id="l693">Mais la part que j'y prends le doit bien alléger.</l>
           </sp>
-          <sp xml:id="III02-7" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III02-7">
             <speaker>ANTIGONE.</speaker>
             <l n="694" xml:id="l694">Ô prodige ! Ô combat digne de son issue,</l>
             <l n="695" xml:id="l695">Où plus que les vaincus la nature est vaincue,</l>
             <l n="696" xml:id="l696">Où le crime s'est vu par le crime étouffer,</l>
             <l n="697" xml:id="l697">Où l'impiété seule a droit de triompher !</l>
-            <l n="698" xml:id="l698" part="I">Faites m'en le récit.</l>
+            <l n="698" part="I" xml:id="l698">Faites m'en le récit.</l>
           </sp>
-          <sp xml:id="III02-8" who="HEMON">
+          <sp who="HEMON" xml:id="III02-8">
             <speaker>HÉMON.</speaker>
             <l part="F">Votre douleur peut-être...</l>
           </sp>
-          <sp xml:id="III02-9" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III02-9">
             <speaker>ANTIGONE.</speaker>
             <l n="699" xml:id="l699">Non, elle est en un point où rien ne peut l'accroître ;</l>
             <l n="700" xml:id="l700">Mes sens par son excès sont demeurés perclus ;</l>
             <l n="701" xml:id="l701">Pour la trop ressentir je ne la ressens plus.</l>
           </sp>
-          <sp xml:id="III02-10" who="HEMON">
+          <sp who="HEMON" xml:id="III02-10">
             <speaker>HÉMON.</speaker>
             <l n="702" xml:id="l702">Quand leur haine obstinée eut rendu de la reine</l>
             <l n="703" xml:id="l703">Le pouvoir sans effet et la prière vaine,</l>
@@ -1146,11 +1163,11 @@
             <l n="732" xml:id="l732">De Polynice enfin le sort guide le bras :</l>
             <l n="733" xml:id="l733">Il pousse un coup mortel qui porte l'autre à bas.</l>
           </sp>
-          <sp xml:id="III02-11" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III02-11">
             <speaker>ANTIGONE.</speaker>
             <l n="734" xml:id="l734">Et le ciel à ce crime a prêté sa lumière !</l>
           </sp>
-          <sp xml:id="III02-12" who="HEMON">
+          <sp who="HEMON" xml:id="III02-12">
             <speaker>HÉMON.</speaker>
             <l n="735" xml:id="l735">Le roi tombe, et son sang coule sur la poussière :</l>
             <l n="736" xml:id="l736">Mais en sa chute encore sa haine se soutient,</l>
@@ -1188,51 +1205,51 @@
             <l n="768" xml:id="l768">Et nous, le coeur transi de frayeur et d'ennui,</l>
             <l n="769" xml:id="l769">Demeurons sur-le-champ presque aussi morts que lui.</l>
           </sp>
-          <sp xml:id="III02-13" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III02-13">
             <speaker>ANTIGONE.</speaker>
             <l n="770" xml:id="l770">Que votre mort, ma mère, est un bien que j'envie,</l>
             <l n="771" xml:id="l771">Et qu'il me serait doux de vous avoir suivie !</l>
             <l n="772" xml:id="l772">Venez voir, cher Hémon, si le ciel en courroux</l>
             <l n="773" xml:id="l773">Peut lâcher quelque trait qu'il n'ait lâché sur nous...</l>
-            <l n="774" xml:id="l774" part="I">Entrez en cette chambre.</l>
-            <stage type="exit">Hémon sort.</stage>
+            <l n="774" part="I" xml:id="l774">Entrez en cette chambre.</l>
+            <stage>Hémon sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Ismène, Antigone.</head>
-          <sp xml:id="III03-1" who="ISMENE">
+          <sp who="ISMENE" xml:id="III03-1">
             <speaker>ISMÈNE.</speaker>
             <l part="F">Ô barbare sentence !</l>
           </sp>
-          <sp xml:id="III03-2" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III03-2">
             <speaker>ANTIGONE.</speaker>
             <l n="775" xml:id="l775">Quel ennui doit encore éprouver ma constance ?</l>
           </sp>
-          <sp xml:id="III03-3" who="ISMENE">
+          <sp who="ISMENE" xml:id="III03-3">
             <speaker>ISMÈNE.</speaker>
             <l n="776" xml:id="l776">Savez-vous du combat le succès malheureux ?</l>
           </sp>
-          <sp xml:id="III03-4" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III03-4">
             <speaker>ANTIGONE.</speaker>
             <l n="777" xml:id="l777">Oui, digne de leur rage et funeste à tous deux.</l>
           </sp>
-          <sp xml:id="III03-5" who="ISMENE">
+          <sp who="ISMENE" xml:id="III03-5">
             <speaker>ISMÈNE.</speaker>
             <l n="778" xml:id="l778">Savez-vous que Créon succède à la couronne ?</l>
           </sp>
-          <sp xml:id="III03-6" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III03-6">
             <speaker>ANTIGONE.</speaker>
             <l n="779" xml:id="l779">C'est un bien qu'on lui doit et que le sang lui donne.</l>
           </sp>
-          <sp xml:id="III03-7" who="ISMENE">
+          <sp who="ISMENE" xml:id="III03-7">
             <speaker>ISMÈNE.</speaker>
             <l n="780" xml:id="l780">Savez-vous la rigueur de son premier édit ?</l>
           </sp>
-          <sp xml:id="III03-8" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III03-8">
             <speaker>ANTIGONE.</speaker>
             <l n="781" xml:id="l781">Non, Hémon est ici qui ne m'en a rien dit.</l>
           </sp>
-          <sp xml:id="III03-9" who="ISMENE">
+          <sp who="ISMENE" xml:id="III03-9">
             <speaker>ISMÈNE.</speaker>
             <l n="782" xml:id="l782">Il fait d'un acte impie un acte de justice :</l>
             <l n="783" xml:id="l783">Il défend d'inhumer le corps de Polynice,</l>
@@ -1241,16 +1258,16 @@
             <l n="785" xml:id="l785">Condamne l'infracteur comme d'un attentat.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Les mêmes, Hémon.</head>
-          <sp xml:id="III04-1" who="HEMON">
+          <sp who="HEMON" xml:id="III04-1">
             <speaker>HÉMON.</speaker>
             <l n="786" xml:id="l786">Certes, jamais le sort n'a sur humaine race</l>
             <l n="787" xml:id="l787">Tant versé pour un jour de peine et de disgrâce.</l>
             <note type="C">Dans l'édition originale, le vers commence par "Iocaste", qui comporte avec une diérèse (Rem. D. Ducoffre). Nous conservons ici la version modernisée.</note>
             <l n="788" xml:id="l788">Jocaste défaite ! Ô destin inhumain !</l>
           </sp>
-          <sp xml:id="III04-2" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III04-2">
             <speaker>ANTIGONE.</speaker>
             <l n="789" xml:id="l789">Vous voyez en sa mort une oeuvre de sa main :</l>
             <l n="790" xml:id="l790">Heureuse et douce mort, puisqu'elle a su par elle</l>
@@ -1264,7 +1281,7 @@
             <l n="798" xml:id="l798">Et me prouvez la part que vous y daignez prendre,</l>
             <l n="799" xml:id="l799">En laissant à mes pleurs le temps de se répandre.</l>
           </sp>
-          <sp xml:id="III04-3" who="HEMON">
+          <sp who="HEMON" xml:id="III04-3">
             <speaker>HÉMON.</speaker>
             <l n="800" xml:id="l800">Je serais plus cruel que vos propres douleurs,</l>
             <l n="801" xml:id="l801">Si je vous déniais la liberté des pleurs.</l>
@@ -1272,12 +1289,12 @@
             <l n="803" xml:id="l803">Je vous laisse vous-même à garder à vous-même :</l>
             <l n="804" xml:id="l804">Domptez de votre sort l'implacable courroux,</l>
             <l n="805" xml:id="l805">Et que votre vertu me réponde de vous.</l>
-            <stage type="exit">Il sort</stage>
+            <stage>Il sort</stage>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Antigone, Ismène.</head>
-          <sp xml:id="III05-1" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-1">
             <speaker>ANTIGONE.</speaker>
             <l n="806" xml:id="l806">C'est bien visiblement, ma soeur, ma chère Ismène,</l>
             <l n="807" xml:id="l807">Que le ciel aujourd'hui nous déclare sa haine,</l>
@@ -1292,7 +1309,7 @@
             <l n="816" xml:id="l816">Qui veut priver les morts du repos des tombeaux</l>
             <l n="817" xml:id="l817">Et vouer notre sang à la soif des corbeaux.</l>
           </sp>
-          <sp xml:id="III05-2" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-2">
             <speaker>ISMÈNE.</speaker>
             <l n="818" xml:id="l818">On dresse par son ordre un appareil célèbre</l>
             <l n="819" xml:id="l819">Pour honorer le roi de la pompe funèbre,</l>
@@ -1307,7 +1324,7 @@
             <l n="828" xml:id="l828">Car entre elles il met ce funeste rapport</l>
             <l n="829" xml:id="l829">Qu'on enterrera vif qui l'enterrera mort.</l>
           </sp>
-          <sp xml:id="III05-3" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-3">
             <speaker>ANTIGONE.</speaker>
             <l n="830" xml:id="l830">L'ordonnance avec soi porte sa fin expresse ;</l>
             <l n="831" xml:id="l831">C'est à nous qu'elle parle, à nous qu'elle s'adresse :</l>
@@ -1326,80 +1343,80 @@
             <l n="844" xml:id="l844">Pour ne s'opposer pas à ce triste devoir,</l>
             <l n="845" xml:id="l845">Nous laissât le lieu libre et n'en pût rien savoir.</l>
           </sp>
-          <sp xml:id="III05-4" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-4">
             <speaker>ISMÈNE.</speaker>
             <l n="846" xml:id="l846">Dieux, que proposez-vous, et que pouvons-nous faire,</l>
             <l n="847" xml:id="l847">Que ne soit inutile au repos de mon frère ?</l>
           </sp>
-          <sp xml:id="III05-5" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-5">
             <speaker>ANTIGONE.</speaker>
             <l n="848" xml:id="l848">Acquittons au moins selon notre pouvoir;</l>
           </sp>
-          <sp xml:id="III05-6" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-6">
             <speaker>ISMÈNE.</speaker>
             <l n="849" xml:id="l849">Mais, ma soeur, l'impuissance excuse le devoir.</l>
           </sp>
-          <sp xml:id="III05-7" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-7">
             <speaker>ANTIGONE.</speaker>
             <l n="850" xml:id="l850">Quoi ! Vous défendez-vous d'un si pieux ouvrage ?</l>
           </sp>
-          <sp xml:id="III05-8" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-8">
             <speaker>ISMÈNE.</speaker>
             <l n="851" xml:id="l851">L'espérance me manque, et non pas le courage.</l>
           </sp>
-          <sp xml:id="III05-9" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-9">
             <speaker>ANTIGONE.</speaker>
             <l n="852" xml:id="l852">Quand l'une peut manquer, l'autre est bien imparfait.</l>
           </sp>
-          <sp xml:id="III05-10" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-10">
             <speaker>ISMÈNE.</speaker>
             <l n="853" xml:id="l853">Que profite un espoir qui n'obtient point d'effet ?</l>
           </sp>
-          <sp xml:id="III05-11" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-11">
             <speaker>ANTIGONE.</speaker>
             <l n="854" xml:id="l854">En ces précautions la faiblesse est visible.</l>
           </sp>
-          <sp xml:id="III05-12" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-12">
             <speaker>ISMÈNE.</speaker>
             <l n="855" xml:id="l855">La promptitude aussi bien souvent est nuisible.</l>
           </sp>
-          <sp xml:id="III05-13" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-13">
             <speaker>ANTIGONE.</speaker>
             <l n="856" xml:id="l856">Pour un acte si juste, il est vrai, mais Créon ne l'est pas.</l>
           </sp>
-          <sp xml:id="III05-14" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-14">
             <speaker>ANTIGONE.</speaker>
             <l n="857" xml:id="l857">Et s'il est inhumain serez-vous inhumaine ?</l>
           </sp>
-          <sp xml:id="III05-15" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-15">
             <speaker>ISMÈNE.</speaker>
             <l n="858" xml:id="l858">J'abhorre l'ordonnance et redoute la peine.</l>
             <note type="C">Il est signalé le manque de deux vers dans le tome 4 de l'édition de 1820 éditée chez Th. Desoer.</note>
           </sp>
-          <sp xml:id="III05-16" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-16">
             <speaker>ANTIGONE.</speaker>
             <l n="859" xml:id="l859">Le dessein sans effet est aussi sans mérite.</l>
           </sp>
-          <sp xml:id="III05-17" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-17">
             <speaker>ISMÈNE.</speaker>
             <l n="860" xml:id="l860">Mais le dessein suffit si l'effet ne profite.</l>
           </sp>
-          <sp xml:id="III05-18" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-18">
             <speaker>ANTIGONE.</speaker>
             <l n="861" xml:id="l861">N'est-ce pas profiter que d'inhumer les morts ?</l>
           </sp>
-          <sp xml:id="III05-19" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-19">
             <speaker>ISMÈNE.</speaker>
             <l n="862" xml:id="l862">Non, car Créon, enfin rendrait vains nos efforts.</l>
           </sp>
-          <sp xml:id="III05-20" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-20">
             <speaker>ANTIGONE.</speaker>
             <l n="863" xml:id="l863">Demeurez donc, Ismène, et sauvez-vous la vie,</l>
             <l n="864" xml:id="l864">Comme un trésor bien rare et bien digne d'envie :</l>
             <l n="865" xml:id="l865">Nos jours sont en effet si bien traités du sort</l>
             <l n="866" xml:id="l866">Que vous avez raison de redouter la mort.</l>
           </sp>
-          <sp xml:id="III05-21" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-21">
             <speaker>ISMÈNE.</speaker>
             <l n="867" xml:id="l867">Considérez, ma soeur, que, restant sans défense,</l>
             <l n="868" xml:id="l868">Le pur rebus du sort et la même impuissance,</l>
@@ -1410,7 +1427,7 @@
             <l n="873" xml:id="l873">Et déjà mon devoir s'en serait acquitté</l>
             <l n="874" xml:id="l874">S'il ne fallait céder à la nécessité.</l>
           </sp>
-          <sp xml:id="III05-22" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-22">
             <speaker>ANTIGONE.</speaker>
             <l n="875" xml:id="l875">Quelque consentement que vous puissiez produire,</l>
             <l n="876" xml:id="l876">Je vois qu'il pourrait moins me servir que me nuire :</l>
@@ -1421,56 +1438,56 @@
             <l n="881" xml:id="l881">Laissez-m'en donc le soin, et, sage à votre sens,</l>
             <l n="882" xml:id="l882">Rendez-vous à la force et prenez loi du temps.</l>
           </sp>
-          <sp xml:id="III05-23" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-23">
             <speaker>ISMÈNE.</speaker>
             <l n="883" xml:id="l883">J'envie à ce grand coeur cette grande assurance ;</l>
             <l n="884" xml:id="l884">Mais pour les lois enfin j'ai plus de révérence.</l>
           </sp>
-          <sp xml:id="III05-24" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-24">
             <speaker>ANTIGONE.</speaker>
             <l n="885" xml:id="l885">J'en aurais comme vous, mais j'en userais mieux,</l>
             <l n="886" xml:id="l886">Et voudrais que les lois en eussent pour les dieux.</l>
           </sp>
-          <sp xml:id="III05-25" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-25">
             <speaker>ISMÈNE.</speaker>
             <l n="887" xml:id="l887">Ah ! Que vous me causez une frayeur extrême !</l>
           </sp>
-          <sp xml:id="III05-26" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-26">
             <speaker>ANTIGONE.</speaker>
             <l n="888" xml:id="l888">Ne m'épouvantez point, et tremblez pour vous-même.</l>
           </sp>
-          <sp xml:id="III05-27" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-27">
             <speaker>ISMÈNE.</speaker>
             <l n="889" xml:id="l889">Soyez secrète au moins, comme je vous promets</l>
             <l n="890" xml:id="l890">Que par moi ce dessein ne se saura jamais.</l>
           </sp>
-          <sp xml:id="III05-28" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-28">
             <speaker>ANTIGONE.</speaker>
             <l n="891" xml:id="l891">Si rien est à cacher, cachez votre faiblesse ;</l>
             <l n="892" xml:id="l892">Je fais gloire pour moi que ma vertu paraisse.</l>
           </sp>
-          <sp xml:id="III05-29" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-29">
             <speaker>ISMÈNE.</speaker>
             <l n="893" xml:id="l893">Comme dans les dangers vous vous précipitez !</l>
           </sp>
-          <sp xml:id="III05-30" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-30">
             <speaker>ANTIGONE.</speaker>
             <l n="894" xml:id="l894">Avec autant d'ardeur que vous les évitez.</l>
           </sp>
-          <sp xml:id="III05-31" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-31">
             <speaker>ISMÈNE.</speaker>
             <l n="895" xml:id="l895">Je vous l'ai dit cent fois, cette oeuvre sera vaine.</l>
           </sp>
-          <sp xml:id="III05-32" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-32">
             <speaker>ANTIGONE.</speaker>
             <l n="896" xml:id="l896">Bien, mon pouvoir cessant fera cesser ma peine.</l>
           </sp>
-          <sp xml:id="III05-33" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-33">
             <speaker>ISMÈNE.</speaker>
             <l n="897" xml:id="l897">Mais ce n'est pas assez d'entreprendre ardemment ;</l>
             <l n="898" xml:id="l898">L'honneur de l'entreprise est en l'événement.</l>
           </sp>
-          <sp xml:id="III05-34" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III05-34">
             <speaker>ANTIGONE.</speaker>
             <l n="899" xml:id="l899">Vos raisons, comme vous, sont de si peu de force,</l>
             <l n="900" xml:id="l900">Que, loin de m'arrêter, cet obstacle m'amorce.</l>
@@ -1481,30 +1498,30 @@
             <l n="905" xml:id="l905">Et de mes ans enfin voir terminer le cours</l>
             <l n="906" xml:id="l906">Ne sera qu'arriver où je vais tous les jours.</l>
           </sp>
-          <sp xml:id="III05-35" who="ISMENE">
+          <sp who="ISMENE" xml:id="III05-35">
             <speaker>ISMÈNE.</speaker>
             <l n="907" xml:id="l907">Allez donc, et le ciel, pour vous et pour mon frère,</l>
             <l n="908" xml:id="l908">Conduise de dessein mieux que je ne l'espère.</l>
             <l n="909" xml:id="l909">Mais vos soins, si mon coeur ne m'abuse aujourd'hui,</l>
             <l n="910" xml:id="l910">Préparent un cercueil plus pour vous que pour lui.</l>
-            <stage type="exit">Elle sortent.</stage>
+            <stage>Elle sortent.</stage>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI. Argie, Ménette, une lanterne à la main sur les remparts où s'est donné le combat.</head>
-          <sp xml:id="III06-1" who="MENETTE">
+          <sp who="MENETTE" xml:id="III06-1">
             <speaker>MÉNETTE.</speaker>
             <l n="911" xml:id="l911">Madame, vous cherchez votre perte visible.</l>
           </sp>
-          <sp xml:id="III06-2" who="ARGIE">
+          <sp who="ARGIE" xml:id="III06-2">
             <speaker>ARGIE.</speaker>
             <l n="912" xml:id="l912">C'est bien ma perte, hélas ! Elle m'est bien sensible.</l>
           </sp>
-          <sp xml:id="III06-3" who="MENETTE">
+          <sp who="MENETTE" xml:id="III06-3">
             <speaker>MÉNETTE.</speaker>
-            <l n="913" xml:id="l913" part="I">Je dis de votre vie.</l>
+            <l n="913" part="I" xml:id="l913">Je dis de votre vie.</l>
           </sp>
-          <sp xml:id="III06-4" who="ARGIE">
+          <sp who="ARGIE" xml:id="III06-4">
             <speaker>ARGIE.</speaker>
             <l part="F">Ah ! Le même trépas</l>
             <l n="914" xml:id="l914">Qui l'ôte à mon époux ne m'en privera-t-il pas ?</l>
@@ -1521,7 +1538,7 @@
             <l n="925" xml:id="l925">Qui, le siège levé par un honteux départ,</l>
             <l n="926" xml:id="l926">Souffre cette injustice et n'y prend point de part.</l>
           </sp>
-          <sp xml:id="III06-5" who="MENETTE">
+          <sp who="MENETTE" xml:id="III06-5">
             <speaker>MÉNETTE.</speaker>
             <l n="927" xml:id="l927">Pour ne nous pas tromper ne prenons autre voie</l>
             <l n="928" xml:id="l928">Que celle des oiseaux qui vont à cette proie :</l>
@@ -1530,7 +1547,7 @@
             <l n="931" xml:id="l931">Voici le champ fertile en tant de funérailles :</l>
             <l n="932" xml:id="l932">Thèbes n'est pas fort loin, j'entrevois ses murailles.</l>
           </sp>
-          <sp xml:id="III06-6" who="ARGIE">
+          <sp who="ARGIE" xml:id="III06-6">
             <speaker>ARGIE.</speaker>
             <l n="933" xml:id="l933">Ô Thèbes ! Autrefois l'objet de mes désirs,</l>
             <l n="934" xml:id="l934">Maintenant le sujet de tous mes déplaisirs,</l>
@@ -1556,29 +1573,29 @@
             <l n="954" xml:id="l954">Daigne encore une fois te montrer à mes yeux.</l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="III07">
           <head>SCÈNE VII. Les mêmes, Antigone.</head>
-          <sp xml:id="III07-1" who="MENETTE">
+          <sp who="MENETTE" xml:id="III07-1">
             <speaker>MÉNETTE.</speaker>
             <l n="955" xml:id="l955">Madame, contenez la douleur qui vous presse ;</l>
             <l n="956" xml:id="l956">Nous sommes aperçus, quelqu'un vers nous s'adresse.</l>
           </sp>
-          <sp xml:id="III07-2" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III07-2">
             <speaker>ANTIGONE, à Argie.</speaker>
             <l n="957" xml:id="l957">Quel dessein téméraire adresse ici tes pas ?</l>
           </sp>
-          <sp xml:id="III07-3" who="MENETTE">
+          <sp who="MENETTE" xml:id="III07-3">
             <speaker>MÉNETTE.</speaker>
             <l n="958" xml:id="l958">Ce qui l'y fait venir ne vous regarde pas.</l>
           </sp>
-          <sp xml:id="III07-4" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III07-4">
             <speaker>ANTIGONE.</speaker>
             <l n="959" xml:id="l959">Vient-elle ôter aux morts les larmes que je verse,</l>
             <l n="960" xml:id="l960">Et mettre empêchement à ce triste commerce ?</l>
             <l n="961" xml:id="l961">Quel intérêt l'y pousse, et quel est son souci ?</l>
             <l n="962" xml:id="l962">Ce soir est tout à moi, seule j'ai droit ici.</l>
           </sp>
-          <sp xml:id="III07-5" who="ARGIE">
+          <sp who="ARGIE" xml:id="III07-5">
             <speaker>ARGIE.</speaker>
             <l n="963" xml:id="l963">Si quelqu'un de ces morts vous cause de la peine,</l>
             <l n="964" xml:id="l964">Et si, comme je crois, même dessein nous mène,</l>
@@ -1588,7 +1605,7 @@
             <l n="968" xml:id="l968">Je venais à son corps rendre un dernier office,</l>
             <l n="969" xml:id="l969">Croyant qu'à la faveur du voile de la nuit...</l>
           </sp>
-          <sp xml:id="III07-6" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III07-6">
             <speaker>ANTIGONE, l'embrassant.</speaker>
             <l n="970" xml:id="l970">Est-ce Argie ? Ô ma soeur ! Quel bonheur me conduit ?</l>
             <l n="971" xml:id="l971">Ou plutôt quel destin, à mon bonheur contraire,</l>
@@ -1600,7 +1617,7 @@
             <l n="977" xml:id="l977">Enfin un même soin nous fait trouver ici ;</l>
             <l n="978" xml:id="l978">Ce que mène Antigone amène Argie aussi.</l>
           </sp>
-          <sp xml:id="III07-7" who="ARGIE">
+          <sp who="ARGIE" xml:id="III07-7">
             <speaker>ARGIE.</speaker>
             <l n="979" xml:id="l979">Antigone, ma soeur, quelle première vue !</l>
             <l n="980" xml:id="l980">Qui l'eût imaginée, ou qui l'eût attendue ?</l>
@@ -1615,12 +1632,12 @@
             <l n="989" xml:id="l989">Vos corps furent formés dedans le même flanc ;</l>
             <l n="990" xml:id="l990">Vous ne fûtes qu'un coeur, et qu'une âme et qu'un sang.</l>
           </sp>
-          <sp xml:id="III07-8" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III07-8">
             <speaker>ANTIGONE.</speaker>
             <l n="991" xml:id="l991">Ce n'est pas sans raison que sa perte m'est dure ;</l>
             <l n="992" xml:id="l992">L'amitié nous joignit bien plus que la nature.</l>
           </sp>
-          <sp xml:id="III07-9" who="ARGIE">
+          <sp who="ARGIE" xml:id="III07-9">
             <speaker>ARGIE.</speaker>
             <l n="993" xml:id="l993">Aussi, ma chère soeur, les dieux m'en sont témoins,</l>
             <l n="994" xml:id="l994">Son trône était l'aimant qui l'attirait le moins :</l>
@@ -1638,43 +1655,43 @@
             <l n="1006" xml:id="l1006">Il a pu sans fléchir vous entendre et vous voir ;</l>
             <l n="1007" xml:id="l1007">Il s'est pu cette fois défendre de vos charmes.</l>
           </sp>
-          <sp xml:id="III07-10" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III07-10">
             <speaker>ANTIGONE.</speaker>
             <l n="1008" xml:id="l1008">Hélas ! Il consultait de mettre bas les armes,</l>
             <l n="1009" xml:id="l1009">Et déjà son courroux était presque amorti ;</l>
             <l n="1010" xml:id="l1010">Mais si mal à propos Étéocle est sorti,</l>
-            <l n="1011" xml:id="l1011" part="I">Qu'il m'a ravi le temps...</l>
+            <l n="1011" part="I" xml:id="l1011">Qu'il m'a ravi le temps...</l>
           </sp>
-          <sp xml:id="III07-11" who="MENETTE">
+          <sp who="MENETTE" xml:id="III07-11">
             <speaker>MÉNETTE.</speaker>
             <l part="F">Craignant quelque surprise,</l>
             <l n="1012" xml:id="l1012">Allons chercher le mort, achevons l'entreprise,</l>
             <l n="1013" xml:id="l1013">Et faites quelque trêve avec vos douleurs.</l>
           </sp>
-          <sp xml:id="III07-12" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III07-12">
             <speaker>ANTIGONE.</speaker>
             <l n="1014" xml:id="l1014">Allons, dessus son corps nous répandrons des pleurs :</l>
-            <l n="1015" xml:id="l1015" part="I">Son corps où fut mon sang...</l>
+            <l n="1015" part="I" xml:id="l1015">Son corps où fut mon sang...</l>
           </sp>
-          <sp xml:id="III07-13" who="ARGIE">
+          <sp who="ARGIE" xml:id="III07-13">
             <speaker>ARGIE.</speaker>
             <l part="F">Son corps où fut mon âme.</l>
           </sp>
-          <sp xml:id="III07-14" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="III07-14">
             <speaker>ANTIGONE.</speaker>
-            <l n="1016" xml:id="l1016" part="I">Quel emploi pour sa soeur !</l>
+            <l n="1016" part="I" xml:id="l1016">Quel emploi pour sa soeur !</l>
           </sp>
-          <sp xml:id="III07-15" who="ARGIE">
+          <sp who="ARGIE" xml:id="III07-15">
             <speaker>ARGIE.</speaker>
             <l part="F">Quelle nuit pour sa femme !</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE I. Créon, Cléodamas, Éphise.</head>
-          <sp xml:id="IV01-1" who="CREON">
+          <sp who="CREON" xml:id="IV01-1">
             <speaker>CRÉON.</speaker>
             <l n="1017" xml:id="l1017">Enfin l'État est clame, et le dieux ont permis</l>
             <l n="1018" xml:id="l1018">Que l'orage tombât dessus nos ennemis.</l>
@@ -1705,7 +1722,7 @@
             <l n="1043" xml:id="l1043">De sa rébellion reçoive le supplice,</l>
             <l n="1044" xml:id="l1044">Et demeure privé de ce funèbre office.</l>
           </sp>
-          <sp xml:id="IV01-2" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="IV01-2">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1045" xml:id="l1045">Un grand roi père tout d'un contrepoids égal,</l>
             <l n="1046" xml:id="l1046">Rend le bien pour le bien, et le mal pour le mal.</l>
@@ -1718,7 +1735,7 @@
             <l n="1053" xml:id="l1053">Qu'elle lui décernât les honneurs du tombeau !</l>
             <l n="1054" xml:id="l1054">Ce zèle est sans exemple et serait tout nouveau.</l>
           </sp>
-          <sp xml:id="IV01-3" who="EPHISE">
+          <sp who="EPHISE" xml:id="IV01-3">
             <speaker>ÉPHISE.</speaker>
             <l n="1055" xml:id="l1055">C'est trop, Cléodamas, exagérer son crime :</l>
             <l n="1056" xml:id="l1056">Que sa prétention fût ou non légitime,</l>
@@ -1741,7 +1758,7 @@
             <l n="1073" xml:id="l1073">Régnez sur les esprits premier que sur les corps,</l>
             <l n="1074" xml:id="l1074">Faites honneur aux dieux en faisant grâce aux morts.</l>
           </sp>
-          <sp xml:id="IV01-4" who="CREON">
+          <sp who="CREON" xml:id="IV01-4">
             <speaker>CRÉON.</speaker>
             <l n="1075" xml:id="l1075">Ô fou raisonnablement ! Spécieuse faiblesse !</l>
             <l n="1076" xml:id="l1076">Sur toute lâcheté ce faux zèle me blesse :</l>
@@ -1768,12 +1785,12 @@
             <l n="1097" xml:id="l1097">Et se tienne assuré d'un cruel châtiment</l>
             <l n="1098" xml:id="l1098">Quiconque lui destine un autre monument.</l>
           </sp>
-          <sp xml:id="IV01-5" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="IV01-5">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1099" xml:id="l1099">Sire, quel malheureux, après votre défense,</l>
             <l n="1100" xml:id="l1100">Pour l'intérêt d'un mort prendrait cette licence ?</l>
           </sp>
-          <sp xml:id="IV01-6" who="CREON">
+          <sp who="CREON" xml:id="IV01-6">
             <speaker>CRÉON.</speaker>
             <l n="1101" xml:id="l1101">Toujours, quelque rebelle, en un règne naissant,</l>
             <l n="1102" xml:id="l1102">Croit faire un coup d'état en désobéissant,</l>
@@ -1787,40 +1804,40 @@
             <l n="1110" xml:id="l1110">Qui feront leur devoir d'y veiller nuit et jour.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Les mêmes, Un Capitaine.</head>
-          <sp xml:id="IV02-1" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="IV02-1">
             <speaker>Le CAPITAINE.</speaker>
             <l n="1111" xml:id="l1111">Ô vertu criminelle ! Ô pitié funeste,</l>
             <l n="1112" xml:id="l1112">Du mépris de la mort preuve trop manifeste !</l>
           </sp>
-          <sp xml:id="IV02-2" who="CREON">
+          <sp who="CREON" xml:id="IV02-2">
             <speaker>CRÉON.</speaker>
-            <l n="1113" xml:id="l1113" part="I">Qu'est-ce ? Quelle nouvelle ?</l>
+            <l n="1113" part="I" xml:id="l1113">Qu'est-ce ? Quelle nouvelle ?</l>
           </sp>
-          <sp xml:id="IV02-3" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="IV02-3">
             <speaker>Le CAPITAINE.</speaker>
             <l part="F">Ah ! Quel est mon malheur,</l>
             <l n="1114" xml:id="l1114">D'avoir été commis pour instrument du leur !</l>
           </sp>
-          <sp xml:id="IV02-4" who="CREON">
+          <sp who="CREON" xml:id="IV02-4">
             <speaker>CRÉON.</speaker>
             <l n="1115" xml:id="l1115">Quoi ! Déjà mon édit a trouvé des rebelles ?</l>
           </sp>
-          <sp xml:id="IV02-5" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="IV02-5">
             <speaker>Le CAPITAINE.</speaker>
             <l n="1116" xml:id="l1116">Sire, pour faire ouïr de mauvaises nouvelles,</l>
             <l n="1117" xml:id="l1117">Qu'il faut faire sur soi de violents efforts,</l>
             <l n="1118" xml:id="l1118">Et qu'on a de contrainte à les mettre dehors !</l>
-            <l n="1119" xml:id="l1119" part="I">La princesse Antigone...</l>
+            <l n="1119" part="I" xml:id="l1119">La princesse Antigone...</l>
           </sp>
-          <sp xml:id="IV02-6" who="CREON">
+          <sp who="CREON" xml:id="IV02-6">
             <speaker>CRÉON.</speaker>
             <l part="F">Ô malheureuse fille</l>
             <l n="1120" xml:id="l1120">Sur qui j'établissais l'espoir de ma famille !</l>
             <l n="1121" xml:id="l1121">Ô race détestable et digne de son sort !</l>
           </sp>
-          <sp xml:id="IV02-7" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="IV02-7">
             <speaker>Le CAPITAINE.</speaker>
             <l n="1122" xml:id="l1122">Secondée à ce soin pas la veuve du mort,</l>
             <l n="1123" xml:id="l1123">Vient d'être auprès du corps dessus l'heure surprise,</l>
@@ -1828,13 +1845,13 @@
             <l n="1125" xml:id="l1125">Deux de mes compagnons qui l'amènent ici</l>
             <l n="1126" xml:id="l1126">Vous la vont présenter à l'étrangère aussi.</l>
           </sp>
-          <stage type="exit">Il sort.</stage>
-          <sp xml:id="IV02-8" who="EPHISE">
+          <stage>Il sort.</stage>
+          <sp who="EPHISE" xml:id="IV02-8">
             <speaker>ÉPHISE.</speaker>
             <l n="1127" xml:id="l1127">Le ciel a jusqu'au bout versé sur cette race</l>
             <l n="1128" xml:id="l1128">Disgrâce sur malheur et malheur sur disgrâce.</l>
           </sp>
-          <sp xml:id="IV02-9" who="CREON">
+          <sp who="CREON" xml:id="IV02-9">
             <speaker>CRÉON.</speaker>
             <l n="1129" xml:id="l1129">Ô masque de vertu ! Que ta fausse beauté</l>
             <l n="1130" xml:id="l1130">Couvre d'hypocrisie et de déloyauté !</l>
@@ -1846,14 +1863,14 @@
             <l n="1136" xml:id="l1136">Se dût montrer rebelle au vouloir de son prince,</l>
             <l n="1137" xml:id="l1137">Et secouer le joug de son commandement,</l>
             <l n="1138" xml:id="l1138">Que je n'eusse eu pour elle un soupçon seulement.</l>
-            <stage type="[N/A]">Voyant entrer les gardes.</stage>
+            <stage>Voyant entrer les gardes.</stage>
             <l n="1139" xml:id="l1139">Amenez cette peste, et qu'on cherche une peine</l>
             <l n="1140" xml:id="l1140">Égale à son forfait et digne de ma haine.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Les mêmes, Antigone, Argie, Ménette, Gardes.</head>
-          <sp xml:id="IV03-1" who="CREON">
+          <sp who="CREON" xml:id="IV03-1">
             <speaker>CRÉON.</speaker>
             <l n="1141" xml:id="l1141">Voyez quelle assurance en cet oeil effronté !</l>
             <l n="1142" xml:id="l1142">Quel superbe maintien et quelle égalité !</l>
@@ -1861,76 +1878,76 @@
             <l n="1144" xml:id="l1144">Qui de nous semble mieux le juge ou le coupable ?</l>
             <l n="1145" xml:id="l1145">Qui si visiblement contredit mon pouvoir ?</l>
           </sp>
-          <sp xml:id="IV03-2" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-2">
             <speaker>ANTIGONE.</speaker>
             <l n="1146" xml:id="l1146">Non ; l'on m'a prise, sire, on ne m'a pas surprise.</l>
             <l n="1147" xml:id="l1147">On ne saurait surprendre en si juste entreprise.</l>
           </sp>
-          <sp xml:id="IV03-3" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-3">
             <speaker>ARGIE.</speaker>
             <l n="1148" xml:id="l1148">J'ai seule transgressé cet arrêt inhumain :</l>
             <l n="1149" xml:id="l1149">Sire, elle n'a rien fait que me prêter la main.</l>
           </sp>
-          <sp xml:id="IV03-4" who="MENETTE">
+          <sp who="MENETTE" xml:id="IV03-4">
             <speaker>MÉNETTE.</speaker>
             <l n="1150" xml:id="l1150">C'est à moi, Sire, à moi qu'en est dû le supplice ;</l>
             <l n="1151" xml:id="l1151">Je suis auteur de tout, elle n'est que complice.</l>
           </sp>
-          <sp xml:id="IV03-5" who="CREON">
+          <sp who="CREON" xml:id="IV03-5">
             <speaker>CRÉON.</speaker>
             <l n="1152" xml:id="l1152">Et ne saviez-vous pas que cet acte, en effet,</l>
             <l n="1153" xml:id="l1153">Était contrevenant à l'arrêt que j'ai fait ?</l>
           </sp>
-          <sp xml:id="IV03-6" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-6">
             <speaker>ANTIGONE.</speaker>
             <l n="1154" xml:id="l1154">Je n'en pouvais douter, puisqu'aucun ne l'ignore.</l>
           </sp>
-          <sp xml:id="IV03-7" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-7">
             <speaker>ARGIE.</speaker>
-            <l n="1155" xml:id="l1155" part="I">Oui, je la savais bien.</l>
+            <l n="1155" part="I" xml:id="l1155">Oui, je la savais bien.</l>
           </sp>
-          <sp xml:id="IV03-8" who="MENETTE">
+          <sp who="MENETTE" xml:id="IV03-8">
             <speaker>MÉNETTE.</speaker>
             <l part="F">Et moi mieux qu'elle encore.</l>
           </sp>
-          <sp xml:id="IV03-9" who="CREON">
+          <sp who="CREON" xml:id="IV03-9">
             <speaker>CRÉON.</speaker>
             <l n="1156" xml:id="l1156">Vous faisiez donc vertu de transgresser mes lois ?</l>
           </sp>
-          <sp xml:id="IV03-10" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-10">
             <speaker>ANTIGONE.</speaker>
             <l n="1157" xml:id="l1157">Oui, pour servir les dieux qui sont plus que des rois.</l>
           </sp>
-          <sp xml:id="IV03-11" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-11">
             <speaker>ARGIE.</speaker>
             <l n="1158" xml:id="l1158">Pour faire honneur au ciel au mépris de la terre.</l>
           </sp>
-          <sp xml:id="IV03-12" who="MENETTE">
+          <sp who="MENETTE" xml:id="IV03-12">
             <speaker>MÉNETTE.</speaker>
             <l n="1159" xml:id="l1159">Et pour donner aux morts la pais près la guerre.</l>
           </sp>
-          <sp xml:id="IV03-13" who="CREON">
+          <sp who="CREON" xml:id="IV03-13">
             <speaker>CRÉON.</speaker>
             <l n="1160" xml:id="l1160">Et tous pour mériter un rigoureux trépas.</l>
           </sp>
-          <sp xml:id="IV03-14" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-14">
             <speaker>ANTIGONE.</speaker>
-            <l n="1161" xml:id="l1161" part="I">Qu'il vienne.</l>
+            <l n="1161" part="I" xml:id="l1161">Qu'il vienne.</l>
           </sp>
-          <sp xml:id="IV03-15" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-15">
             <speaker>ARGIE.</speaker>
             <l part="M">Il tarde trop.</l>
           </sp>
-          <sp xml:id="IV03-16" who="MENETTE">
+          <sp who="MENETTE" xml:id="IV03-16">
             <speaker>MÉNETTE.</speaker>
             <l part="F">Je n'y recule pas.</l>
           </sp>
-          <sp xml:id="IV03-17" who="CREON">
+          <sp who="CREON" xml:id="IV03-17">
             <speaker>CRÉON.</speaker>
             <l n="1162" xml:id="l1162">Ô folle piété ! Qui d'une même audace</l>
             <l n="1163" xml:id="l1163">Fit la rébellion et reçoit la menace.</l>
           </sp>
-          <sp xml:id="IV03-18" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-18">
             <speaker>ANTIGONE.</speaker>
             <l n="1164" xml:id="l1164">Je mets le plus haut trône au-dessous des autels,</l>
             <l n="1165" xml:id="l1165">Et révère les dieux sans égard des mortels :</l>
@@ -1955,17 +1972,17 @@
             <l n="1184" xml:id="l1184">Elle m'affranchira de votre autorité,</l>
             <l n="1185" xml:id="l1185">Et ma punition sera ma liberté.</l>
           </sp>
-          <sp xml:id="IV03-19" who="EPHISE">
+          <sp who="EPHISE" xml:id="IV03-19">
             <speaker>ÉPHISE.</speaker>
             <l n="1186" xml:id="l1186">Ô mâle coeur de fille ! Ô vertu non commune,</l>
             <l n="1187" xml:id="l1187">Qui pour rien ne se rend aux coups de la fortune !</l>
           </sp>
-          <sp xml:id="IV03-20" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="IV03-20">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1188" xml:id="l1188">Ô sexe dangereux ! Étrange dureté !</l>
             <l n="1189" xml:id="l1189">Du crime et du supplice elle fait vanité.</l>
           </sp>
-          <sp xml:id="IV03-21" who="CREON">
+          <sp who="CREON" xml:id="IV03-21">
             <speaker>CRÉON.</speaker>
             <l n="1190" xml:id="l1190">On abaisse aisément le coeur d'une sujette</l>
             <l n="1191" xml:id="l1191">Sous le propre fardeau du joug qu'elle rejette.</l>
@@ -1986,7 +2003,7 @@
             <l n="1206" xml:id="l1206">La justice aujourd'hui satisfera ma haine ;</l>
             <l n="1207" xml:id="l1207">Et qui l'a secondée aura part en sa peine;</l>
           </sp>
-          <sp xml:id="IV03-22" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-22">
             <speaker>ARGIE.</speaker>
             <l n="1208" xml:id="l1208">D'un frivole discours passez donc à l'effet ;</l>
             <l n="1209" xml:id="l1209">Je le ferais encore si je ne l'avais fait.</l>
@@ -2003,12 +2020,12 @@
             <l n="1220" xml:id="l1220">Et veut qu'en même jour le corps de mon époux</l>
             <l n="1221" xml:id="l1221">Passe d'entre mes bras dans le ventre des loups.</l>
           </sp>
-          <sp xml:id="IV03-23" who="CREON">
+          <sp who="CREON" xml:id="IV03-23">
             <speaker>CRÉON.</speaker>
             <l n="1222" xml:id="l1222">Ayant appris l'édit et le peine prévue,</l>
             <l n="1223" xml:id="l1223">Vous avez enfreint l'un, et l'autre vous est due.</l>
           </sp>
-          <sp xml:id="IV03-24" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-24">
             <speaker>ANTIGONE.</speaker>
             <l n="1224" xml:id="l1224">Faites donc, votre haine agit trop mollement;</l>
             <l n="1225" xml:id="l1225">La fureur s'alentit par le retardement :</l>
@@ -2021,49 +2038,49 @@
             <l n="1232" xml:id="l1232">Mais d'abord un tyran fait tout ce qu'il lui plaît ;</l>
             <l n="1233" xml:id="l1233">On souffre avec respect, on voit, mais on se tait.</l>
           </sp>
-          <sp xml:id="IV03-25" who="CREON">
+          <sp who="CREON" xml:id="IV03-25">
             <speaker>CRÉON.</speaker>
             <l n="1234" xml:id="l1234">Et toi seule entre tous n'as pu voir sans te plaindre ?</l>
           </sp>
-          <sp xml:id="IV03-26" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-26">
             <speaker>ANTIGONE.</speaker>
             <l n="1235" xml:id="l1235">Tous tremblent, tous ont peur ; moi, je n'ai rien à craindre.</l>
           </sp>
-          <sp xml:id="IV03-27" who="CREON">
+          <sp who="CREON" xml:id="IV03-27">
             <speaker>CRÉON.</speaker>
             <l n="1236" xml:id="l1236">Au moins dois-tu rougir d'avoir osé plus qu'eux.</l>
           </sp>
-          <sp xml:id="IV03-28" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-28">
             <speaker>ANTIGONE.</speaker>
             <l n="1237" xml:id="l1237">Qui fait honneur aux morts ne fait rien de honteux.</l>
           </sp>
-          <sp xml:id="IV03-29" who="CREON">
+          <sp who="CREON" xml:id="IV03-29">
             <speaker>CRÉON.</speaker>
             <l n="1238" xml:id="l1238">Un mort qui fut des siens le mortel adversaire !</l>
           </sp>
-          <sp xml:id="IV03-30" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-30">
             <speaker>ANTIGONE.</speaker>
             <l n="1239" xml:id="l1239">Il fut ce qui vous plaît, mais il était mon frère.</l>
           </sp>
-          <sp xml:id="IV03-31" who="CREON">
+          <sp who="CREON" xml:id="IV03-31">
             <speaker>CRÉON.</speaker>
             <l n="1240" xml:id="l1240">Qui les armes en main a son frère assailli !</l>
           </sp>
-          <sp xml:id="IV03-32" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-32">
             <speaker>ARGIE.</speaker>
             <l n="1241" xml:id="l1241">Il est vrai, mais son frère a le premier failli.</l>
           </sp>
-          <sp xml:id="IV03-33" who="CREON">
+          <sp who="CREON" xml:id="IV03-33">
             <speaker>CRÉON.</speaker>
             <l n="1242" xml:id="l1242">Il tint notre parti, l'autre tint le contraire.</l>
           </sp>
-          <sp xml:id="IV03-34" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-34">
             <speaker>ARGIE.</speaker>
             <l n="1243" xml:id="l1243">La couronne à tous deux était héréditaire :</l>
             <l n="1244" xml:id="l1244">L'un suivit sa fureur, mais l'autre l'embrasa ;</l>
             <l n="1245" xml:id="l1245">Si l'un vous assaillit, l'autre vous exposa.</l>
           </sp>
-          <sp xml:id="IV03-35" who="CREON">
+          <sp who="CREON" xml:id="IV03-35">
             <speaker>CRÉON.</speaker>
             <l n="1246" xml:id="l1246">La règne du premier, comme il fut d'un bon prince,</l>
             <l n="1247" xml:id="l1247">Se gagna la faveur de toute la province ;</l>
@@ -2074,173 +2091,173 @@
             <l n="1252" xml:id="l1252">Et son ambition, bien moins que sa bonté,</l>
             <l n="1253" xml:id="l1253">Sa put dire l'appui de son autorité.</l>
           </sp>
-          <sp xml:id="IV03-36" who="ARGIE">
+          <sp who="ARGIE" xml:id="IV03-36">
             <speaker>ARGIE.</speaker>
             <l n="1254" xml:id="l1254">Mais pour le retenir vous chassiez Polynice.</l>
           </sp>
-          <sp xml:id="IV03-37" who="CREON">
+          <sp who="CREON" xml:id="IV03-37">
             <speaker>CRÉON.</speaker>
             <l n="1255" xml:id="l1255">On fit faveur à l'un, mais à l'autre justice.</l>
           </sp>
-          <sp xml:id="IV03-38" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV03-38">
             <speaker>ANTIGONE.</speaker>
             <l n="1256" xml:id="l1256">Après tout je l'aimais, et mon affection</l>
             <l n="1257" xml:id="l1257">Entreprendrait encore cette sainte action.</l>
           </sp>
-          <sp xml:id="IV03-39" who="CREON">
+          <sp who="CREON" xml:id="IV03-39">
             <speaker>CRÉON.</speaker>
             <l n="1258" xml:id="l1258">Eh bien ! Suis les conseils que cet amour t'inspire :</l>
             <l n="1259" xml:id="l1259">Aime-le chez les morts, mais non sous mon empire.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Les mêmes, Ismène.</head>
-          <sp xml:id="IV04-1" who="EPHISE">
+          <sp who="EPHISE" xml:id="IV04-1">
             <speaker>ÉPHISE.</speaker>
             <l n="1260" xml:id="l1260">Ô dieux ! En quel état Ismène vient ici !</l>
           </sp>
-          <sp xml:id="IV04-2" who="CREON">
+          <sp who="CREON" xml:id="IV04-2">
             <speaker>CRÉON, à Ismène.</speaker>
             <l n="1261" xml:id="l1261">Et toi, n'eus-tu point part à l'entreprise aussi ?</l>
           </sp>
-          <sp xml:id="IV04-3" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-3">
             <speaker>ISMÈNE.</speaker>
             <l n="1262" xml:id="l1262">Oui, plus que toutes les deux : j'ai commencé l'ouvrage,</l>
             <l n="1263" xml:id="l1263">Et mon exemple, Sire, excita leur courage.</l>
           </sp>
-          <sp xml:id="IV04-4" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-4">
             <speaker>ANTIGONE.</speaker>
             <l n="1264" xml:id="l1264">Non, non, trop de frayeur s'empara de son sein ;</l>
             <l n="1265" xml:id="l1265">Elle a le coeur trop bas pour un si haut dessein.</l>
           </sp>
-          <sp xml:id="IV04-5" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-5">
             <speaker>ISMÈNE.</speaker>
             <l n="1266" xml:id="l1266">Je vous l'ai conseillé ; j'en pressai l'entreprise.</l>
           </sp>
-          <sp xml:id="IV04-6" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-6">
             <speaker>ANTIGONE.</speaker>
             <l n="1267" xml:id="l1267">Tout au contraire, Sire ; Elle m'en a reprise.</l>
           </sp>
-          <sp xml:id="IV04-7" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-7">
             <speaker>ISMÈNE.</speaker>
             <l n="1268" xml:id="l1268">Oui, pour vous éprouver ; mais je suivais vos pas.</l>
           </sp>
-          <sp xml:id="IV04-8" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-8">
             <speaker>ANTIGONE.</speaker>
             <l n="1269" xml:id="l1269">Elle était trop timide, elle ne sortit pas.</l>
           </sp>
-          <sp xml:id="IV04-9" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-9">
             <speaker>ISMÈNE.</speaker>
             <l n="1270" xml:id="l1270">Prisez-vous à tel point votre triste fortune,</l>
             <l n="1271" xml:id="l1271">Que vous ayez regret qu'elle me soit commune ?</l>
           </sp>
-          <sp xml:id="IV04-10" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-10">
             <speaker>ANTIGONE.</speaker>
             <l n="1272" xml:id="l1272">J'ai seule aimé mon frère ; il n'appelle que moi.</l>
           </sp>
-          <sp xml:id="IV04-11" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-11">
             <speaker>ISMÈNE.</speaker>
             <l n="1273" xml:id="l1273">J'eusse à votre défaut entrepris cet emploi.</l>
           </sp>
-          <sp xml:id="IV04-12" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-12">
             <speaker>ANTIGONE.</speaker>
             <l n="1274" xml:id="l1274">Je servirai de coeur et non pas de parole ;</l>
             <l n="1275" xml:id="l1275">L'un produit des effets, les autres sont frivoles.</l>
           </sp>
-          <sp xml:id="IV04-13" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-13">
             <speaker>ISMÈNE.</speaker>
             <l n="1276" xml:id="l1276">Ma soeur, au nom des dieux, ne me déniez pas</l>
             <l n="1277" xml:id="l1277">La gloire de vous suivre en un si beau trépas.</l>
           </sp>
-          <sp xml:id="IV04-14" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-14">
             <speaker>ANTIGONE.</speaker>
             <l n="1278" xml:id="l1278">Non, non, ne prenez part à rien qui m'appartienne :</l>
             <l n="1279" xml:id="l1279">L'ouvrage fut tout mien, la mort toute mienne.</l>
           </sp>
-          <sp xml:id="IV04-15" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-15">
             <speaker>ISMÈNE.</speaker>
             <l n="1280" xml:id="l1280">Ne vous possédant plus quel bien me sera doux ?</l>
           </sp>
-          <sp xml:id="IV04-16" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-16">
             <speaker>ANTIGONE.</speaker>
             <l n="1281" xml:id="l1281">Créon, votre seigneur, aura grand soin de vous.</l>
           </sp>
-          <sp xml:id="IV04-17" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-17">
             <speaker>ISMÈNE.</speaker>
             <l n="1282" xml:id="l1282">Ah ! Ce reproche est juste : il est vrai, je fus lâche.</l>
           </sp>
-          <sp xml:id="IV04-18" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-18">
             <speaker>ANTIGONE.</speaker>
             <l n="1283" xml:id="l1283">J'ai le regret de dire, et honte qu'on le sache.</l>
           </sp>
-          <sp xml:id="IV04-19" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-19">
             <speaker>ISMÈNE.</speaker>
             <l n="1284" xml:id="l1284">Mais que vous a produit ce généreux effort ?</l>
           </sp>
-          <sp xml:id="IV04-20" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-20">
             <speaker>ANTIGONE.</speaker>
             <l n="1285" xml:id="l1285">Tout ce que j'espérais : il m'a produit la mort.</l>
           </sp>
-          <sp xml:id="IV04-21" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-21">
             <speaker>ISMÈNE.</speaker>
             <l n="1286" xml:id="l1286">J'vais bien su prévoir le malheur qui vous presse.</l>
           </sp>
-          <sp xml:id="IV04-22" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-22">
             <speaker>ANTIGONE.</speaker>
             <l n="1287" xml:id="l1287">Eh bien, vivez heureuse avec votre sagesse.</l>
           </sp>
-          <sp xml:id="IV04-23" who="CREON">
+          <sp who="CREON" xml:id="IV04-23">
             <speaker>CRÉON, à part.</speaker>
             <l n="1288" xml:id="l1288">L'orgueil à toutes deux a troublé la raison,</l>
             <l n="1289" xml:id="l1289">Et leur extravagance est sans comparaison.</l>
           </sp>
-          <sp xml:id="IV04-24" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-24">
             <speaker>ISMÈNE.</speaker>
             <l n="1290" xml:id="l1290">Vous-même à votre fils vous l'avez destinée :</l>
             <l n="1291" xml:id="l1291">Voudriez-vous rompre, Sire, un si bel hyménée ?</l>
           </sp>
-          <sp xml:id="IV04-25" who="CREON">
+          <sp who="CREON" xml:id="IV04-25">
             <speaker>CRÉON.</speaker>
             <l n="1292" xml:id="l1292">Il peut pour un manqué, recouvré cent partis.</l>
           </sp>
-          <sp xml:id="IV04-26" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-26">
             <speaker>ISMÈNE.</speaker>
             <l n="1293" xml:id="l1293">Non pas qui vaillent tant, ni si bien assortis.</l>
           </sp>
-          <sp xml:id="IV04-27" who="CREON">
+          <sp who="CREON" xml:id="IV04-27">
             <speaker>CRÉON.</speaker>
             <l n="1294" xml:id="l1294">Cherchant cette alliance, il cherchait bien sa perte ;</l>
             <l n="1295" xml:id="l1295">Je le haïrais bien si je l'avais soufferte.</l>
           </sp>
-          <sp xml:id="IV04-28" who="ANTIGONE">
+          <sp who="ANTIGONE" xml:id="IV04-28">
             <speaker>ANTIGONE.</speaker>
             <l n="1296" xml:id="l1296">Viens ici, cher Hémon, et par cet entretien</l>
             <l n="1297" xml:id="l1297">Apprends le jugement que l'on y fait du tien.</l>
           </sp>
-          <sp xml:id="IV04-29" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-29">
             <speaker>ISMÈNE.</speaker>
             <l n="1298" xml:id="l1298">Voudriez-vous ruiner une amitié si forte ?</l>
           </sp>
-          <sp xml:id="IV04-30" who="CREON">
+          <sp who="CREON" xml:id="IV04-30">
             <speaker>CRÉON.</speaker>
             <l n="1299" xml:id="l1299">Forte ou non, s'il l'épouse il l'épousera morte.</l>
           </sp>
-          <sp xml:id="IV04-31" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-31">
             <speaker>ISMÈNE.</speaker>
             <l n="1300" xml:id="l1300">Si le ciel n'est injuste, il vengera sa mort.</l>
           </sp>
-          <sp xml:id="IV04-32" who="CREON">
+          <sp who="CREON" xml:id="IV04-32">
             <speaker>CRÉON.</speaker>
             <l n="1301" xml:id="l1301">Profite de sa perte, et crains un même sort.</l>
           </sp>
-          <sp xml:id="IV04-33" who="ISMENE">
+          <sp who="ISMENE" xml:id="IV04-33">
             <speaker>ISMÈNE.</speaker>
             <l n="1302" xml:id="l1302">Non, non, ne croyez pas que votre tyrannie</l>
             <l n="1303" xml:id="l1303">Ni m'empêche la voix, ni demeure impunie ;</l>
             <l n="1304" xml:id="l1304">Les dieux ne sont pas dieux si bientôt leur courroux</l>
             <l n="1305" xml:id="l1305">Ne prend notre intérêt et n'éclate sur vous.</l>
           </sp>
-          <sp xml:id="IV04-34" who="CREON">
+          <sp who="CREON" xml:id="IV04-34">
             <speaker>CRÉON.</speaker>
             <l n="1306" xml:id="l1306">Allez, ôtez d'ici ces objets de ma haine ;</l>
             <l n="1307" xml:id="l1307">Qu'en la tour du palais toutes deux on les mène :</l>
@@ -2250,12 +2267,12 @@
             <l n="1311" xml:id="l1311">Cependant qu'au conseil on ordonnera d'elle ;</l>
             <l n="1312" xml:id="l1312">Car, ne relevant pas de mon autorité,</l>
             <l n="1313" xml:id="l1313">Le crime qu'elle a fait est d'autre qualité.</l>
-            <stage type="[N/A]">On emmène Antigone, Ismène et Argie.</stage>
+            <stage>On emmène Antigone, Ismène et Argie.</stage>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Créon, Éphise, Cléodamas ; ensuite Hémon.</head>
-          <sp xml:id="IV05-1" who="EPHISE">
+          <sp who="EPHISE" xml:id="IV05-1">
             <speaker>ÉPHISE.</speaker>
             <l n="1314" xml:id="l1314">Sire, à peser bien tout d'une égale balance,</l>
             <l n="1315" xml:id="l1315">Ce procédé n'est pas sans quelque violence :</l>
@@ -2266,13 +2283,13 @@
             <l n="1320" xml:id="l1320">L'autre est veuve d'un mort. Que votre jugement</l>
             <l n="1321" xml:id="l1321">Sur toutes ces raisons passent un peu mûrement.</l>
           </sp>
-          <sp xml:id="IV05-2" who="CREON">
+          <sp who="CREON" xml:id="IV05-2">
             <speaker>CRÉON.</speaker>
             <l n="1322" xml:id="l1322">De toutes ces raisons pour une déloyale,</l>
             <l n="1323" xml:id="l1323">Pas une ne détruit la puissance royale ;</l>
             <l n="1324" xml:id="l1324">Être trop indulgent laisse aussi trop oser.</l>
             <l n="1325" xml:id="l1325">Des autres mon conseil m'en fera disposer.</l>
-            <stage type="toward">À Hémon qui entre.</stage>
+            <stage>À Hémon qui entre.</stage>
             <l n="1326" xml:id="l1326">Ne dissimulez point la douleur qui vous presse ;</l>
             <l n="1327" xml:id="l1327">Elle est juste en l'amant qui perd une maîtresse :</l>
             <l n="1328" xml:id="l1328">Mais d'autre part, Hémon, elle est injuste aussi</l>
@@ -2280,7 +2297,7 @@
             <l n="1330" xml:id="l1330">Et qui, sage, épousant son amour et sa haine,</l>
             <l n="1331" xml:id="l1331">Se fait de ses désirs une loi souveraine.</l>
           </sp>
-          <sp xml:id="IV05-3" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-3">
             <speaker>HÉMON.</speaker>
             <l n="1332" xml:id="l1332">Ayant l'honneur que j'ai d'être sorti de vous,</l>
             <l n="1333" xml:id="l1333">Votre intérêt, Monsieur, sur tout autre m'est doux.</l>
@@ -2289,7 +2306,7 @@
             <l n="1336" xml:id="l1336">Et, sans me départir de leur autorité,</l>
             <l n="1337" xml:id="l1337">Ne puis rien épouser que votre volonté.</l>
           </sp>
-          <sp xml:id="IV05-4" who="CREON">
+          <sp who="CREON" xml:id="IV05-4">
             <speaker>CRÉON.</speaker>
             <l n="1338" xml:id="l1338">Aussi par la raison de la seule naissance,</l>
             <l n="1339" xml:id="l1339">N'attendais-je pas moins de votre obéissance.</l>
@@ -2317,9 +2334,9 @@
             <l n="1361" xml:id="l1361">Et, soumettant leur sens au pourvoir des couronnes,</l>
             <l n="1362" xml:id="l1362">Quelles que soient les lois, croire qu'elles sont bonnes.</l>
           </sp>
-          <sp xml:id="IV05-5" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-5">
             <speaker>HÉMON.</speaker>
-            <l n="1363" xml:id="l1363">Les dieux ne  mettent pas en tous entendements </l>
+            <l n="1363" xml:id="l1363">Les dieux ne mettent pas en tous entendements </l>
             <l n="1364" xml:id="l1364">Ni pareilles clartés, ni même sentiments.</l>
             <l n="1365" xml:id="l1365">Je veux que cette offense attaque votre gloire ;</l>
             <l n="1366" xml:id="l1366">Mais qui l'osa commette a pu ne la pas croire :</l>
@@ -2354,149 +2371,149 @@
             <l n="1395" xml:id="l1395">Ne voir que pas son sens est le propre des dieux,</l>
             <l n="1396" xml:id="l1396">Comme il l'est des mortels de voir par beaucoup d'yeux.</l>
           </sp>
-          <sp xml:id="IV05-6" who="EPHISE">
+          <sp who="EPHISE" xml:id="IV05-6">
             <speaker>ÉPHISE.</speaker>
             <l n="1397" xml:id="l1397">La même vérité vous parle par sa bouche :</l>
             <l n="1398" xml:id="l1398">Sire, de cette part souffrez qu'elle vous touche,</l>
             <l n="1399" xml:id="l1399">D'autant plus qu'elle tend à votre commun bien,</l>
             <l n="1400" xml:id="l1400">Et que votre intérêt s'y trouve avec le sien.</l>
           </sp>
-          <sp xml:id="IV05-7" who="CREON">
+          <sp who="CREON" xml:id="IV05-7">
             <speaker>CRÉON.</speaker>
             <l n="1401" xml:id="l1401">Ô conseil, ô prière et ridicule et folle !</l>
             <l n="1402" xml:id="l1402">Que j'apprenne si vieux d'une si jeune école !</l>
           </sp>
-          <sp xml:id="IV05-8" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-8">
             <speaker>HÉMON.</speaker>
             <l n="1403" xml:id="l1403">Ne regardez pas l'âge, et pesez la raison.</l>
           </sp>
-          <sp xml:id="IV05-9" who="CREON">
+          <sp who="CREON" xml:id="IV05-9">
             <speaker>CRÉON.</speaker>
             <l n="1404" xml:id="l1404">La raison n'est pas mûre en si verte saison.</l>
             <l n="1405" xml:id="l1405">Appelles-tu raison de faire honneur au crime ?</l>
           </sp>
-          <sp xml:id="IV05-10" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-10">
             <speaker>HÉMON.</speaker>
             <l n="1406" xml:id="l1406">Non, s'il passe pour tel ailleurs qu'en votre estime.</l>
           </sp>
-          <sp xml:id="IV05-11" who="CREON">
+          <sp who="CREON" xml:id="IV05-11">
             <speaker>CRÉON.</speaker>
             <l n="1407" xml:id="l1407">Qui m'a désobéi mérite le trépas.</l>
           </sp>
-          <sp xml:id="IV05-12" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-12">
             <speaker>HÉMON.</speaker>
             <l n="1408" xml:id="l1408">Le peuple toutefois ne le confesse pas.</l>
           </sp>
-          <sp xml:id="IV05-13" who="CREON">
+          <sp who="CREON" xml:id="IV05-13">
             <speaker>CRÉON.</speaker>
             <l n="1409" xml:id="l1409">Lui-même est criminel s'il censure son prince.</l>
           </sp>
-          <sp xml:id="IV05-14" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-14">
             <speaker>HÉMON.</speaker>
             <l n="1410" xml:id="l1410">Faites donc le procès à toute le province.</l>
           </sp>
-          <sp xml:id="IV05-15" who="CREON">
+          <sp who="CREON" xml:id="IV05-15">
             <speaker>CRÉON.</speaker>
             <l n="1411" xml:id="l1411">Elle et ses habitants sont esclaves des rois.</l>
           </sp>
-          <sp xml:id="IV05-16" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-16">
             <speaker>HÉMON.</speaker>
             <l n="1412" xml:id="l1412">Oui, si les rois aussi sont esclaves des lois.</l>
           </sp>
-          <sp xml:id="IV05-17" who="CREON">
+          <sp who="CREON" xml:id="IV05-17">
             <speaker>CRÉON.</speaker>
             <l n="1413" xml:id="l1413">La folle passion qui possède ton âme </l>
             <l n="1414" xml:id="l1414">Te fait insolemment parler pour une femme,</l>
             <l n="1415" xml:id="l1415">Et de son intérêt te rend aussi jaloux.</l>
           </sp>
-          <sp xml:id="IV05-18" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-18">
             <speaker>HÉMON.</speaker>
             <l n="1416" xml:id="l1416">Vous seriez femme donc, car je parle de vous.</l>
           </sp>
-          <sp xml:id="IV05-19" who="CREON">
+          <sp who="CREON" xml:id="IV05-19">
             <speaker>CRÉON.</speaker>
             <l n="1417" xml:id="l1417">Tu contestes, mutin, contre ton propre père ?</l>
           </sp>
-          <sp xml:id="IV05-20" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-20">
             <speaker>HÉMON.</speaker>
             <l n="1418" xml:id="l1418">J'ai cru vous conseiller, et non pas vous déplaire.</l>
           </sp>
-          <sp xml:id="IV05-21" who="CREON">
+          <sp who="CREON" xml:id="IV05-21">
             <speaker>CRÉON.</speaker>
             <l n="1419" xml:id="l1419">Ne m'est-il pas permis de conserver mon droit ?</l>
           </sp>
-          <sp xml:id="IV05-22" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-22">
             <speaker>HÉMON.</speaker>
             <l n="1420" xml:id="l1420">Non, s'il prive les dieux de l'honneur qu'on leur doit.</l>
           </sp>
-          <sp xml:id="IV05-23" who="CREON">
+          <sp who="CREON" xml:id="IV05-23">
             <speaker>CRÉON.</speaker>
             <l n="1421" xml:id="l1421">Vil esclave de femme, esprit lâche et débile !</l>
           </sp>
-          <sp xml:id="IV05-24" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-24">
             <speaker>HÉMON.</speaker>
             <l n="1422" xml:id="l1422">Je n'ai fait action ni lâche ni servile.</l>
           </sp>
-          <sp xml:id="IV05-25" who="CREON">
+          <sp who="CREON" xml:id="IV05-25">
             <speaker>CRÉON.</speaker>
             <l n="1423" xml:id="l1423">Parler pour une fille est ton plus digne emploi.</l>
           </sp>
-          <sp xml:id="IV05-26" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-26">
             <speaker>HÉMON.</speaker>
             <l n="1424" xml:id="l1424">Je parle pour les dieux, et pour vous et pour moi.</l>
           </sp>
-          <sp xml:id="IV05-27" who="CREON">
+          <sp who="CREON" xml:id="IV05-27">
             <speaker>CRÉON.</speaker>
             <l n="1425" xml:id="l1425">N'espère pas enfin l'épouser jamais vive.</l>
           </sp>
-          <sp xml:id="IV05-28" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-28">
             <speaker>HÉMON.</speaker>
             <l n="1426" xml:id="l1426">Elle ne mourra pas qu'un autre ne la suive.</l>
           </sp>
-          <sp xml:id="IV05-29" who="CREON">
+          <sp who="CREON" xml:id="IV05-29">
             <speaker>CRÉON.</speaker>
-            <l n="1427" xml:id="l1427" part="I">M'oses-tu menacer ?</l>
+            <l n="1427" part="I" xml:id="l1427">M'oses-tu menacer ?</l>
           </sp>
-          <sp xml:id="IV05-30" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-30">
             <speaker>HÉMON.</speaker>
             <l part="F">Je n'avancerais rien.</l>
             <l n="1428" xml:id="l1428">Envers qui ne veut ni ne peut faire bien.</l>
           </sp>
-          <sp xml:id="IV05-31" who="CREON">
+          <sp who="CREON" xml:id="IV05-31">
             <speaker>CRÉON.</speaker>
             <l n="1429" xml:id="l1429">Ce fol à m'outrager encore persévère !</l>
           </sp>
-          <sp xml:id="IV05-32" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-32">
             <speaker>HÉMON.</speaker>
             <l n="1430" xml:id="l1430">Je vous dirais bien pis si vous n'étiez mon père.</l>
           </sp>
-          <sp xml:id="IV05-33" who="CREON">
+          <sp who="CREON" xml:id="IV05-33">
             <speaker>CRÉON.</speaker>
             <l n="1431" xml:id="l1431">Va, coeur efféminé ; va lâche, sors d'ici !</l>
           </sp>
-          <sp xml:id="IV05-34" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-34">
             <speaker>HÉMON.</speaker>
             <l n="1432" xml:id="l1432">Vous voulez donc parler sans que l'on parle aussi ?</l>
           </sp>
-          <sp xml:id="IV05-35" who="CREON">
+          <sp who="CREON" xml:id="IV05-35">
             <speaker>CRÉON.</speaker>
             <l n="1433" xml:id="l1433">Oui, traître, je le veux, et bientôt pour salaire</l>
             <l n="1434" xml:id="l1434">De ta présomption va t'apprendre à te taire</l>
             <l n="1435" xml:id="l1435">Et ne chérir pas tant ce qui m'est odieux.</l>
             <l n="1436" xml:id="l1436">Soldats, amenez-la, qu'on l'égorge à ses yeux.</l>
           </sp>
-          <sp xml:id="IV05-36" who="HEMON">
+          <sp who="HEMON" xml:id="IV05-36">
             <speaker>HÉMON.</speaker>
             <l n="1437" xml:id="l1437">Ce ne sera jamais au moins en ma présence</l>
             <l n="1438" xml:id="l1438">Que l'on accomplira cette injuste sentence.</l>
             <l n="1439" xml:id="l1439">Faites à vos flatteurs autoriser vos lois,</l>
             <l n="1440" xml:id="l1440">Et voyez votre fils pour la dernière fois.</l>
           </sp>
-          <sp xml:id="IV05-37" who="EPHISE">
+          <sp who="EPHISE" xml:id="IV05-37">
             <speaker>ÉPHISE, voulant le retenir.</speaker>
-            <l n="1441" xml:id="l1441" part="I">Seigneur !</l>
+            <l n="1441" part="I" xml:id="l1441">Seigneur !</l>
           </sp>
-          <sp xml:id="IV05-38" who="CREON">
+          <sp who="CREON" xml:id="IV05-38">
             <speaker>CRÉON.</speaker>
             <l part="F">Laissez, qu'il aille ; il saura, je le jure,</l>
             <l n="1442" xml:id="l1442">Combien sensiblement me touche cette injure,</l>
@@ -2505,11 +2522,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE I.</head>
-          <sp xml:id="V01-1" who="HEMON">
+          <sp who="HEMON" xml:id="V01-1">
             <speaker>HÉMON, seul.</speaker>
             <l n="1445" xml:id="l1445">Qu'on l'égorge à mes yeux ! Ô vertu sans défense !</l>
             <l n="1446" xml:id="l1446">Justice sans soutien, supplice sans offense !</l>
@@ -2520,7 +2537,7 @@
             <l n="1451" xml:id="l1451">Et toi, mon coeur, et toi qui m'en as averti,</l>
             <l n="1452" xml:id="l1452">Je te crus justement, tu ne m'as point menti.</l>
             <l n="1453" xml:id="l1453">Qu'on l'égorge à mes yeux ! Ô barbare sentence</l>
-            <l n="1454" xml:id="l1454">Contre la  vertu même et la même innocence !</l>
+            <l n="1454" xml:id="l1454">Contre la vertu même et la même innocence !</l>
             <l n="1455" xml:id="l1455">Souffriez-vous, mes yeux, ce spectacle exposé ?</l>
             <l n="1456" xml:id="l1456">Je vous arracherais si vous l'aviez osé :</l>
             <l n="1457" xml:id="l1457">Règne pernicieux ! Joug, certes, détestable,</l>
@@ -2535,14 +2552,14 @@
             <l n="1466" xml:id="l1466">Obtenu quelque effet meilleur que je n'espère,</l>
             <l n="1467" xml:id="l1467">Possible crains-je un mal qui n'arrivera pas.</l>
             <l n="1468" xml:id="l1468">Le voilà qui, pensif, adresse ici ses pas.</l>
-            <stage type="toward">À Éphise.</stage>
+            <stage>À Éphise.</stage>
             <l n="1469" xml:id="l1469">Eh bien, qu'as-tu gagné sur cette âme cruelle ?</l>
             <l n="1470" xml:id="l1470">Je lis en ta tristesse une triste nouvelle.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Éphise, Hémon.</head>
-          <sp xml:id="V02-1" who="EPHISE">
+          <sp who="EPHISE" xml:id="V02-1">
             <speaker>ÉPHISE.</speaker>
             <l n="1471" xml:id="l1471">D'autres, pour vous flatter d'une inutile espoir, </l>
             <l n="1472" xml:id="l1472">Vous diraient que le temps le pourrait émouvoir ;</l>
@@ -2551,7 +2568,7 @@
             <l n="1475" xml:id="l1475">Je ne vous puis farder ce funeste rapport :</l>
             <l n="1476" xml:id="l1476">C'est fait de la princesse ; il a signé sa mort.</l>
           </sp>
-          <sp xml:id="V02-2" who="HEMON">
+          <sp who="HEMON" xml:id="V02-2">
             <speaker>HÉMON.</speaker>
             <l n="1477" xml:id="l1477">C'est fait de la princesse ! Ah ! Force, ma colère,</l>
             <l n="1478" xml:id="l1478">Force ici tout respect et de fils et de père.</l>
@@ -2568,18 +2585,18 @@
             <l n="1489" xml:id="l1489">L'honneur qu'on porte aux siens devient illégitime ;</l>
             <l n="1490" xml:id="l1490">Et trop de naturel passe aujourd'hui pour crime.</l>
           </sp>
-          <sp xml:id="V02-3" who="EPHISE">
+          <sp who="EPHISE" xml:id="V02-3">
             <speaker>ÉPHISE.</speaker>
             <l n="1491" xml:id="l1491">J'attendais bien de vous ce premier mouvement ;</l>
             <l n="1492" xml:id="l1492">Je ne puis condamner votre ressentiment.</l>
             <l n="1493" xml:id="l1493">Mais, Seigneur, la princesse, encor pleine de vie,</l>
             <l n="1494" xml:id="l1494">N'a pas de ce cruel la fureur assouvie.</l>
           </sp>
-          <sp xml:id="V02-4" who="HEMON">
+          <sp who="HEMON" xml:id="V02-4">
             <speaker>HÉMON.</speaker>
-            <l n="1495" xml:id="l1495" part="I">Quel est donc cet arrêt ?</l>
+            <l n="1495" part="I" xml:id="l1495">Quel est donc cet arrêt ?</l>
           </sp>
-          <sp xml:id="V02-5" who="EPHISE">
+          <sp who="EPHISE" xml:id="V02-5">
             <speaker>ÉPHISE.</speaker>
             <note type="C">v. 1495, l'édition originale porte « Faim » au lien de « fin ».</note>
             <l part="F">Il commet à la fin,</l>
@@ -2587,7 +2604,7 @@
             <l n="1497" xml:id="l1497">Et dessous Cythéron l'a fait enfermer vive,</l>
             <l n="1498" xml:id="l1498">Attendant qu'une mort de tant de morts la prive.</l>
           </sp>
-          <sp xml:id="V02-6" who="HEMON">
+          <sp who="HEMON" xml:id="V02-6">
             <speaker>HÉMON.</speaker>
             <l n="1499" xml:id="l1499">Mais rien n'ébranle-t-il sa résolution ?</l>
             <l n="1500" xml:id="l1500">N'as-tu rien oublié de ta commission ?</l>
@@ -2606,14 +2623,14 @@
             <l n="1513" xml:id="l1513">Il m'accorde du moins cette dernière grâce,</l>
             <l n="1514" xml:id="l1514">Que je meure pour elle et seul lui satisfasse ?</l>
           </sp>
-          <sp xml:id="V02-7" who="EPHISE">
+          <sp who="EPHISE" xml:id="V02-7">
             <speaker>ÉPHISE.</speaker>
             <l n="1515" xml:id="l1515">J'ai peint votre respect, votre amour, votre ennui ;</l>
             <l n="1516" xml:id="l1516">Mais le plus dur rocher est moins rocher que lui,</l>
             <l n="1517" xml:id="l1517">Et je l'ai moins touché par ce que j'ai pu dire</l>
             <l n="1518" xml:id="l1518">Qu'un chêne n'est ému du souffle du zéphyr.</l>
           </sp>
-          <sp xml:id="V02-8" who="HEMON">
+          <sp who="HEMON" xml:id="V02-8">
             <speaker>HÉMON.</speaker>
             <l n="1519" xml:id="l1519">N'importe ; sonde encor ce courage inhumain,</l>
             <l n="1520" xml:id="l1520">Dût ce dernier effort encor nous être vain :</l>
@@ -2621,15 +2638,15 @@
             <l n="1522" xml:id="l1522">Et tente jusqu'au bout pour sauver Antigone :</l>
             <l n="1523" xml:id="l1523">Va, tâche de sauver un malheureux amant.</l>
           </sp>
-          <sp xml:id="V02-9" who="EPHISE">
+          <sp who="EPHISE" xml:id="V02-9">
             <speaker>ÉPHISE.</speaker>
             <l n="1524" xml:id="l1524">Je vais vous obéir, mais inutilement.</l>
-            <stage type="exit">Il sort.</stage>
+            <stage>Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III.</head>
-          <sp xml:id="V03-1" who="HEMON">
+          <sp who="HEMON" xml:id="V03-1">
             <speaker>HÉMON, seul.</speaker>
             <l n="1525" xml:id="l1525">Par cette invention défait de sa présence,</l>
             <l n="1526" xml:id="l1526">Autant que je le suis de la vaine espérance</l>
@@ -2655,12 +2672,12 @@
             <l n="1546" xml:id="l1546">Allons, et si quelqu'un à nos efforts s'oppose,</l>
             <l n="1547" xml:id="l1547">Également épris de colère et d'amour,</l>
             <l n="1548" xml:id="l1548">Ou faisons qu'il y laisse, ou laissons-y le jour.</l>
-            <stage type="exit">Il sort.</stage>
+            <stage>Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. Créon, Éphise.</head>
-          <sp xml:id="V04-1" who="CREON">
+          <sp who="CREON" xml:id="V04-1">
             <speaker>CRÉON.</speaker>
             <l n="1549" xml:id="l1549">Non, Éphise, il importe au soutien de ma gloire</l>
             <l n="1550" xml:id="l1550">Que de ce châtiment je laisse la mémoire :</l>
@@ -2671,113 +2688,113 @@
             <l n="1555" xml:id="l1555">Et si qui contrevient à ce que je défends</l>
             <l n="1556" xml:id="l1556">Trouve des partisans en mes propres enfants ?</l>
           </sp>
-          <sp xml:id="V04-2" who="EPHISE">
+          <sp who="EPHISE" xml:id="V04-2">
             <speaker>ÉPHISE.</speaker>
-            <l n="1557" xml:id="l1557" part="I">Sire, il est amoureux.</l>
+            <l n="1557" part="I" xml:id="l1557">Sire, il est amoureux.</l>
           </sp>
-          <sp xml:id="V04-3" who="CREON">
+          <sp who="CREON" xml:id="V04-3">
             <speaker>CRÉON.</speaker>
             <l part="F">Moi je serai sévère.</l>
           </sp>
-          <sp xml:id="V04-4" who="EPHISE">
+          <sp who="EPHISE" xml:id="V04-4">
             <speaker>ÉPHISE.</speaker>
-            <l n="1558" xml:id="l1558" part="I">Il servait sa maîtresse.</l>
+            <l n="1558" part="I" xml:id="l1558">Il servait sa maîtresse.</l>
           </sp>
-          <sp xml:id="V04-5" who="CREON">
+          <sp who="CREON" xml:id="V04-5">
             <speaker>CRÉON.</speaker>
             <l part="F">Il offensait son père.</l>
           </sp>
-          <sp xml:id="V04-6" who="EPHISE">
+          <sp who="EPHISE" xml:id="V04-6">
             <speaker>ÉPHISE.</speaker>
-            <l n="1559" xml:id="l1559" part="I">Il crut vous conseiller.</l>
+            <l n="1559" part="I" xml:id="l1559">Il crut vous conseiller.</l>
           </sp>
-          <sp xml:id="V04-7" who="CREON">
+          <sp who="CREON" xml:id="V04-7">
             <speaker>CRÉON.</speaker>
             <l part="F">Il prit trop de souci.</l>
           </sp>
-          <sp xml:id="V04-8" who="EPHISE">
+          <sp who="EPHISE" xml:id="V04-8">
             <speaker>ÉPHISE.</speaker>
-            <l n="1560" xml:id="l1560" part="I">Mais il la tient de vous.</l>
+            <l n="1560" part="I" xml:id="l1560">Mais il la tient de vous.</l>
           </sp>
-          <sp xml:id="V04-9" who="CREON">
+          <sp who="CREON" xml:id="V04-9">
             <speaker>CRÉON.</speaker>
             <l part="F">Il en tient l'être aussi.</l>
           </sp>
-          <sp xml:id="V04-10" who="EPHISE">
+          <sp who="EPHISE" xml:id="V04-10">
             <speaker>ÉPHISE.</speaker>
-            <l n="1561" xml:id="l1561" part="I">Il s'avoue un peu prompt.</l>
+            <l n="1561" part="I" xml:id="l1561">Il s'avoue un peu prompt.</l>
           </sp>
-          <sp xml:id="V04-11" who="CREON">
+          <sp who="CREON" xml:id="V04-11">
             <speaker>CRÉON.</speaker>
             <l part="F">Qu'il souffre donc sa peine.</l>
           </sp>
-          <sp xml:id="V04-12" who="EPHISE">
+          <sp who="EPHISE" xml:id="V04-12">
             <speaker>ÉPHISE.</speaker>
-            <l n="1562" xml:id="l1562" part="I">Mais, Sire, son amour ?</l>
+            <l n="1562" part="I" xml:id="l1562">Mais, Sire, son amour ?</l>
           </sp>
-          <sp xml:id="V04-13" who="CREON">
+          <sp who="CREON" xml:id="V04-13">
             <speaker>CRÉON.</speaker>
             <l part="F">Mais, Éphise, ma haine ?</l>
           </sp>
-          <sp xml:id="V04-14" who="EPHISE">
+          <sp who="EPHISE" xml:id="V04-14">
             <speaker>ÉPHISE.</speaker>
             <l n="1563" xml:id="l1563">Faites quelque indulgence à de jeunes esprits.</l>
           </sp>
-          <sp xml:id="V04-15" who="CREON">
+          <sp who="CREON" xml:id="V04-15">
             <speaker>CRÉON.</speaker>
             <l n="1564" xml:id="l1564">Je pardonnerai tout, excepté le épris.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. Les mêmes, Tyrésie, précédé par un guide ; Cléodamas.</head>
-          <sp xml:id="V05-1" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="V05-1">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1565" xml:id="l1565">Voici le vieux devin de qui tant de miracles</l>
             <l n="1566" xml:id="l1566">En ce fatal empire ont suivi les oracles.</l>
           </sp>
-          <sp xml:id="V05-2" who="EPHISE">
+          <sp who="EPHISE" xml:id="V05-2">
             <speaker>ÉPHISE.</speaker>
             <l n="1567" xml:id="l1567">C'est Tyrésie. Ô ciel ! Sois lassé de nos pleurs,</l>
             <l n="1568" xml:id="l1568">Et nous apprends par lui la fin de nos malheurs.</l>
           </sp>
-          <sp xml:id="V05-3" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-3">
             <speaker>TYRÉSIE.</speaker>
             <l n="1569" xml:id="l1569">La lumière d'un seul sert à eux que nous sommes :</l>
             <l n="1570" xml:id="l1570">C'est aux hommes aussi à conduire les hommes.</l>
           </sp>
-          <sp xml:id="V05-4" who="CREON">
+          <sp who="CREON" xml:id="V05-4">
             <speaker>CRÉON.</speaker>
             <l n="1571" xml:id="l1571">Que nous apprendrez-vous, bon vieillard qui sans yeux</l>
             <l n="1572" xml:id="l1572">Lisez si clairement dans le secret des dieux ?</l>
           </sp>
-          <sp xml:id="V05-5" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-5">
             <speaker>TYRÉSIE.</speaker>
             <l n="1573" xml:id="l1573">Un avis qui regarde et vous et votre empire.</l>
             <l n="1574" xml:id="l1574">Mais pesez mûrement ce que je viens de dire.</l>
           </sp>
-          <sp xml:id="V05-6" who="CREON">
+          <sp who="CREON" xml:id="V05-6">
             <speaker>CRÉON.</speaker>
             <l n="1575" xml:id="l1575">J'ai toujours obéi, vous toujours ordonné.</l>
           </sp>
-          <sp xml:id="V05-7" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-7">
             <speaker>TYRÉSIE.</speaker>
             <l n="1576" xml:id="l1576">C'est l'unique secret qui vous a couronné.</l>
           </sp>
-          <sp xml:id="V05-8" who="CREON">
+          <sp who="CREON" xml:id="V05-8">
             <speaker>CRÉON.</speaker>
             <l n="1577" xml:id="l1577">Aussi vous consulté-je en tout ce qui me touche,</l>
             <l n="1578" xml:id="l1578">Assuré que les dieux parlent par votre bouche.</l>
           </sp>
-          <sp xml:id="V05-9" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-9">
             <speaker>TYRÉSIE.</speaker>
             <l n="1579" xml:id="l1579">Surtout, pour votre bien, croyez-moi désormais,</l>
             <l n="1580" xml:id="l1580">Car le besoin en presse, ou n'en pressa jamais.</l>
           </sp>
-          <sp xml:id="V05-10" who="CREON">
+          <sp who="CREON" xml:id="V05-10">
             <speaker>CRÉON.</speaker>
             <l n="1581" xml:id="l1581">Ô dieux ! Quelle frayeur m'excite ce langage !</l>
           </sp>
-          <sp xml:id="V05-11" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-11">
             <speaker>TYRÉSIE.</speaker>
             <l n="1582" xml:id="l1582">Bien moindre que ne doit ce funeste présage.</l>
             <l n="1583" xml:id="l1583">Écoutez : ce matin, sur ces proches coteaux</l>
@@ -2811,7 +2828,7 @@
             <l n="1611" xml:id="l1611">Satisfaites les dieux par votre amendement,</l>
             <l n="1612" xml:id="l1612">Et sachez-moi bon gré ce cet enseignement.</l>
           </sp>
-          <sp xml:id="V05-12" who="CREON">
+          <sp who="CREON" xml:id="V05-12">
             <speaker>CRÉON.</speaker>
             <l n="1613" xml:id="l1613">Sur tout autre votre art me persécute ;</l>
             <l n="1614" xml:id="l1614">Vous m'entreprenez seul, seul je vous suis en butte.</l>
@@ -2826,56 +2843,56 @@
             <l n="1623" xml:id="l1623">Non pas en abusant du respect des autels,</l>
             <l n="1624" xml:id="l1624">Et faisant faussement parler les immortels.</l>
           </sp>
-          <sp xml:id="V05-13" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-13">
             <speaker>TYRÉSIE.</speaker>
             <l n="1625" xml:id="l1625">Qui m'as repris que vous d'en user de la sorte ?</l>
           </sp>
-          <sp xml:id="V05-14" who="CREON">
+          <sp who="CREON" xml:id="V05-14">
             <speaker>CRÉON.</speaker>
             <l n="1626" xml:id="l1626">Que l'on vous en reprenne ou se taire, qu'importe ?</l>
           </sp>
-          <sp xml:id="V05-15" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-15">
             <speaker>TYRÉSIE.</speaker>
             <l n="1627" xml:id="l1627">Usez-en comme moi ; le ciel sait qui vit mieux.</l>
           </sp>
-          <sp xml:id="V05-16" who="CREON">
+          <sp who="CREON" xml:id="V05-16">
             <speaker>CRÉON.</speaker>
             <l n="1628" xml:id="l1628">Je n'outragerai point un ministre des dieux.</l>
           </sp>
-          <sp xml:id="V05-17" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-17">
             <speaker>TYRÉSIE.</speaker>
             <l n="1629" xml:id="l1629">Vous m'outragez assez m'accusant d'avarice ?</l>
           </sp>
-          <sp xml:id="V05-18" who="CREON">
+          <sp who="CREON" xml:id="V05-18">
             <speaker>CRÉON.</speaker>
             <l n="1630" xml:id="l1630">Peu de gens de votre art sont exempts de vice.</l>
           </sp>
-          <sp xml:id="V05-19" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-19">
             <speaker>TYRÉSIE.</speaker>
             <l n="1631" xml:id="l1631">Et les tyrans encor bien moins qu'eux et que moi.</l>
           </sp>
-          <sp xml:id="V05-20" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="V05-20">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1632" xml:id="l1632">Aveugle, savez-vous que vous parlez au roi ?</l>
           </sp>
-          <sp xml:id="V05-21" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-21">
             <speaker>TYRÉSIE.</speaker>
             <l n="1633" xml:id="l1633">Puisque je l'ai fait tel, j'ai droit de la connaître :</l>
             <l n="1634" xml:id="l1634">Plus aveugle est que moi tel qui ne croit pas l'être.</l>
           </sp>
-          <sp xml:id="V05-22" who="CREON">
+          <sp who="CREON" xml:id="V05-22">
             <speaker>CRÉON.</speaker>
             <l n="1635" xml:id="l1635">C'est bien vous emporter pour un esprit si sain.</l>
           </sp>
-          <sp xml:id="V05-23" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-23">
             <speaker>TYRÉSIE.</speaker>
             <l n="1636" xml:id="l1636">Enfin je dirai plus que je n'avais dessein.</l>
           </sp>
-          <sp xml:id="V05-24" who="CREON">
+          <sp who="CREON" xml:id="V05-24">
             <speaker>CRÉON.</speaker>
             <l n="1637" xml:id="l1637">Parlez, car il importe au gain de votre vie.</l>
           </sp>
-          <sp xml:id="V05-25" who="TYRESIE">
+          <sp who="TYRESIE" xml:id="V05-25">
             <speaker>TYRÉSIE.</speaker>
             <l n="1638" xml:id="l1638">Bien plus votre intérêt que le mien m'y convie;</l>
             <l n="1639" xml:id="l1639">Et vous l'allez l'apprendre : avant que le soleil</l>
@@ -2898,19 +2915,19 @@
             <l n="1656" xml:id="l1656">Et croyez que le gain me fait parler ainsi.</l>
             <l n="1657" xml:id="l1657">Marche, enfant ; je lui lasse en ce triste présage</l>
             <l n="1658" xml:id="l1658">Assez d'instruction pour en devenir sage.</l>
-            <stage type="exit">Il sort avec son guide.</stage>
+            <stage>Il sort avec son guide.</stage>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI. Créon, Éphise, Cléodamas.</head>
-          <sp xml:id="V06-1" who="EPHISE">
+          <sp who="EPHISE" xml:id="V06-1">
             <speaker>ÉPHISE.</speaker>
             <l n="1659" xml:id="l1659">Sire, il peut s'abuser ; mais depuis qu'en ces lieux</l>
             <l n="1660" xml:id="l1660">Sa voix rend aux mortels les réponses des dieux,</l>
             <l n="1661" xml:id="l1661">Et qu'il envoie au ciel les encens de nos temples,</l>
             <l n="1662" xml:id="l1662">Les fautes de sons art n'ont pas encore d'exemples.</l>
           </sp>
-          <sp xml:id="V06-2" who="CREON">
+          <sp who="CREON" xml:id="V06-2">
             <speaker>CRÉON.</speaker>
             <l n="1663" xml:id="l1663">Je tremble, je frémis, je demeure interdit,</l>
             <l n="1664" xml:id="l1664">Et cet effet s'accorde avec ce qu'il a dit.</l>
@@ -2919,25 +2936,25 @@
             <l n="1667" xml:id="l1667">Me rendre lâchement au sentiment d'autrui,</l>
             <l n="1668" xml:id="l1668">Est trop honteux pour moi, trop glorieux pour lui.</l>
           </sp>
-          <sp xml:id="V06-3" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="V06-3">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1669" xml:id="l1669">C'est à vous d'en résoudre avec votre sagesse.</l>
           </sp>
-          <sp xml:id="V06-4" who="CREON">
+          <sp who="CREON" xml:id="V06-4">
             <speaker>CRÉON.</speaker>
             <l n="1670" xml:id="l1670">Je suivrai vos avis ; mais tôt, le besoin presse.</l>
           </sp>
-          <sp xml:id="V06-5" who="EPHISE">
+          <sp who="EPHISE" xml:id="V06-5">
             <speaker>ÉPHISE.</speaker>
             <l n="1671" xml:id="l1671">Traitez le sang d'Oedipe avec plus de douceur ;</l>
             <l n="1672" xml:id="l1672">Mettez le frère en terre, et tirez-en la soeur.</l>
           </sp>
-          <sp xml:id="V06-6" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="V06-6">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1673" xml:id="l1673">Sire, à trop consulter l'occasion passe :</l>
             <l n="1674" xml:id="l1674">Le ciel touche parfois aussitôt qu'il menace.</l>
           </sp>
-          <sp xml:id="V06-7" who="CREON">
+          <sp who="CREON" xml:id="V06-7">
             <speaker>CRÉON.</speaker>
             <l n="1675" xml:id="l1675">Que j'ai de répugnance à cette lâcheté !</l>
             <l n="1676" xml:id="l1676">Mais il faut obéir à la nécessité :</l>
@@ -2947,17 +2964,17 @@
             <l n="1680" xml:id="l1680">Soit le premier effet de cette impunité.</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="V07">
           <head>SCÈNE VII. Les même, un Capitaine.</head>
-          <sp xml:id="V07-1" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="V07-1">
             <speaker>Le CAPITAINE.</speaker>
-            <l n="1681" xml:id="l1681" part="I">Sire, sire, accourez.</l>
+            <l n="1681" part="I" xml:id="l1681">Sire, sire, accourez.</l>
           </sp>
-          <sp xml:id="V07-2" who="CREON">
+          <sp who="CREON" xml:id="V07-2">
             <speaker>CRÉON.</speaker>
             <l part="F">Quelle nouvelle ? Approche.</l>
           </sp>
-          <sp xml:id="V07-3" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="V07-3">
             <speaker>Le CAPITAINE.</speaker>
             <l n="1682" xml:id="l1682">Hémon s'est fait passage en la funeste roche</l>
             <l n="1683" xml:id="l1683">Où devait Antigone expier son forfait :</l>
@@ -2966,17 +2983,17 @@
             <l n="1686" xml:id="l1686">Et je crains, oui je crains quelque chose de pire...</l>
             <l n="1687" xml:id="l1687">J'en voulais approcher, mais s'élançant sur moi...</l>
           </sp>
-          <sp xml:id="V07-4" who="CREON">
+          <sp who="CREON" xml:id="V07-4">
             <speaker>CRÉON.</speaker>
             <l n="1688" xml:id="l1688">Ô trop certain augure ! Ô misérable roi !</l>
             <l n="1689" xml:id="l1689">De quel triste succès est ma rage suivie !</l>
             <l n="1690" xml:id="l1690">Courons, sauvons mon fils, ou c'est fait de ma vie.</l>
-            <stage type="[N/A]">Ils sortent</stage>
+            <stage>Ils sortent</stage>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="V08">
           <head>SCÈNE VIII. Hémon, près du corps d'Antigone, dans le tombeau de la roche ; Ismène.</head>
-          <sp xml:id="V08-1" who="HEMON">
+          <sp who="HEMON" xml:id="V08-1">
             <speaker>HÉMON.</speaker>
             <l n="1691" xml:id="l1691">Beau corps, sacrés débris du chef d'oeuvre des cieux,</l>
             <l n="1692" xml:id="l1692">Beaux restes d'Antigone, ouvre encor les yeux,</l>
@@ -2992,11 +3009,11 @@
             <l n="1702" xml:id="l1702">Tu puniras le fils des cruautés du père.</l>
             <l n="1703" xml:id="l1703">Je n'avance à mourir non plus qu'à différer,</l>
             <l n="1704" xml:id="l1704">Et, ni vivant ni mort, je n'ai plus qu'espérer.</l>
-            <stage type="toward">À Ismène.</stage>
+            <stage>À Ismène.</stage>
             <l n="1705" xml:id="l1705">Mais, Madame, arrêtez ces inutiles larmes,</l>
             <l n="1706" xml:id="l1706">Et contez moi sa mort. Où prit-elle des armes ?</l>
           </sp>
-          <sp xml:id="V08-2" who="ISMENE">
+          <sp who="ISMENE" xml:id="V08-2">
             <speaker>ISMÈNE.</speaker>
             <l n="1707" xml:id="l1707">Le soir qu'elle partit pour ce pieux dessein</l>
             <l n="1708" xml:id="l1708">Elle tenait caché ce poignard dans son sein,</l>
@@ -3013,7 +3030,7 @@
             <l n="1719" xml:id="l1719">C'est un nom qu'elle emporte au-delà du trépas,</l>
             <l n="1720" xml:id="l1720">Et que dans l'oubli elle n'oubliera pas.</l>
           </sp>
-          <sp xml:id="V08-3" who="HEMON">
+          <sp who="HEMON" xml:id="V08-3">
             <speaker>HÉMON.</speaker>
             <l n="1721" xml:id="l1721">Allons donc, mon amour, où la sienne m'invite ;</l>
             <l n="1722" xml:id="l1722">Payons-lui cet honneur qui passe pour mérite.</l>
@@ -3037,23 +3054,23 @@
             <l n="1740" xml:id="l1740">Le frère hait le frère, et le père le fils ;</l>
             <l n="1741" xml:id="l1741">L'oncle au sang de sa nièce avec plaisir se noie,</l>
             <l n="1742" xml:id="l1742">Et tous font ton office et te chargent de proie.</l>
-            <stage type="[N/A]">Il veut tirer son épée ; Ismène le retient.</stage>
+            <stage>Il veut tirer son épée ; Ismène le retient.</stage>
           </sp>
-          <sp xml:id="V08-4" who="ISMENE">
+          <sp who="ISMENE" xml:id="V08-4">
             <speaker>ISMÈNE.</speaker>
             <l n="1743" xml:id="l1743">Eh ! Que ferais-je, Hémon ? Ne m'abandonnez pas.</l>
           </sp>
         </div2>
-        <div2 xml:id="V09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="V09">
           <head>SCÈNE IX. Les mêmes, Créon, Éphise, Cléodamas.</head>
-          <sp xml:id="V09-1" who="CREON">
+          <sp who="CREON" xml:id="V09-1">
             <speaker>CRÉON.</speaker>
             <l n="1744" xml:id="l1744">Mon fils, quel désespoir trouble votre pensée,</l>
             <l n="1745" xml:id="l1745">Et de quel vain regret est votre âme pressée ?</l>
             <l n="1746" xml:id="l1746">À quel point vous emporte une funeste amour !</l>
             <l n="1747" xml:id="l1747">Faites grâce à celui dont vous tenez le jour.</l>
           </sp>
-          <sp xml:id="V09-2" who="HEMON">
+          <sp who="HEMON" xml:id="V09-2">
             <speaker>HÉMON, tirant son épée.</speaker>
             <l n="1748" xml:id="l1748">Retirez-vous, barbare ; évitez ma colère :</l>
             <l n="1749" xml:id="l1749">Je n'ai plus de respect, ni connais plus mon père.</l>
@@ -3066,13 +3083,13 @@
             <l n="1756" xml:id="l1756">Ce corps qui fut à vous reste en votre puissance,</l>
             <l n="1757" xml:id="l1757">Et vous va par sa mort payer ma naissance.</l>
           </sp>
-          <sp xml:id="V09-3" who="CREON">
+          <sp who="CREON" xml:id="V09-3">
             <speaker>CRÉON.</speaker>
             <l n="1758" xml:id="l1758">Barbare, achève donc, achève ton dessein ;</l>
             <l n="1759" xml:id="l1759">Le coup est imparfait s'il ne passe en mon sein,</l>
             <l n="1760" xml:id="l1760">Et tu ne meurs pas tout si le jour me demeure.</l>
           </sp>
-          <sp xml:id="V09-4" who="HEMON">
+          <sp who="HEMON" xml:id="V09-4">
             <speaker>HÉMON.</speaker>
             <l n="1761" xml:id="l1761">Bientôt, bientôt le ciel vous marquera votre heure :</l>
             <l n="1762" xml:id="l1762">Cruel, ne doutez pas que son bras tout-puissant </l>
@@ -3093,25 +3110,25 @@
             <l n="1777" xml:id="l1777">Vertueuse beauté, princesse infortunée,</l>
             <l n="1778" xml:id="l1778">Allons, unis d'esprit sans commerce de corps,</l>
             <l n="1779" xml:id="l1779">Achevez notre hymen en l'empire des morts.</l>
-            <stage type="die">Il meurt sur le corps d'Antigone.</stage>
+            <stage>Il meurt sur le corps d'Antigone.</stage>
           </sp>
-          <sp xml:id="V09-5" who="CREON">
+          <sp who="CREON" xml:id="V09-5">
             <speaker>CRÉON.</speaker>
             <l n="1780" xml:id="l1780">Ô mort ! Joins mon trépas aux effets de ma rage !</l>
             <l n="1781" xml:id="l1781">Sors, mon âme, et mets fin à ce tragique ouvrage.</l>
-            <stage type="[N/A]">Il s'évanouit.</stage>
+            <stage>Il s'évanouit.</stage>
           </sp>
-          <sp xml:id="V09-6" who="EPHISE">
+          <sp who="EPHISE" xml:id="V09-6">
             <speaker>ÉPHISE.</speaker>
             <l n="1782" xml:id="l1782">Il tombe évanoui, sans force et sans chaleur.</l>
             <l n="1783" xml:id="l1783">Tu devais, vain regret, précéder ce malheur !</l>
           </sp>
-          <sp xml:id="V09-7" who="CLEODAMAS">
+          <sp who="CLEODAMAS" xml:id="V09-7">
             <speaker>CLÉODAMAS.</speaker>
             <l n="1784" xml:id="l1784">Ô ciel ! Qu'aux châtiments ta justice est sévère,</l>
             <l n="1785" xml:id="l1785">Et qu'il est dangereux d'exciter ta colère.</l>
           </sp>
-          <sp xml:id="V09-8" who="ISMENE">
+          <sp who="ISMENE" xml:id="V09-8">
             <speaker>ISMÈNE, à part.</speaker>
             <l n="1786" xml:id="l1786">Lâche, ne puis-je donc faire un dernier effort ?</l>
             <l n="1787" xml:id="l1787">Mourrai-je mille fois pour la peur d'une mort ?</l>

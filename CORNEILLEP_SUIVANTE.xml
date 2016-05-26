@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>LA SUIVANTE, COMÉDIE</title>
-        <author born="1606" born_location="Rouen" death="1684" death_location="Paris" academie="1647">CORNEILLE, Pierre</author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">CORNEILLE, Pierre</author>
         <date>1634</date>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE</p>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE</p>
         <p>Mai 2006</p>
-        <idno/>
       </publicationStmt>
       <sourceDesc>
         <genre>Comédie</genre>
@@ -40,7 +41,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -52,7 +53,7 @@
         <titlePart type="sub">COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1634">1634</docDate>
-      <docAuthor id="CORNEILLE, Pierre" bio="corneillep">Pierre Corneille</docAuthor>
+      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
       <docImprint>
         <privilege id="163*-**-**"/>
         <acheveImprime id="163*-**-**"/>
@@ -62,25 +63,25 @@
       </performance>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="GERASTE" rend="veteran" id="GERASTE" sex="1" type="H" statut="aristocrate" age="V" stat_amour="néant">GÉRASTE</role>, père de Daphnis.</castItem>
-        <castItem><role xml:id="POLEMON" rend="veteran" id="POLEMON" sex="1" type="H" statut="aristocrate" age="V" stat_amour="n&quot;ant">POLÉMON</role>, oncle de Clarimond.</castItem>
-        <castItem><role xml:id="CLARIMOND" id="CLARIMOND" sex="1" type="H" statut="aristocrate" age="A" stat_amour="amoureux">CLARIMOND</role>, amoureux de Daphnis.</castItem>
-        <castItem><role xml:id="FLORAME" id="FLORAME" sex="1" type="H" statut="aristocrate" age="A" stat_amour="Daphnis">FLORAME</role>, amant de Daphnis.</castItem>
-        <castItem><role xml:id="THEANTE" id="THEANTE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="Daphnis">THÉANTE</role>, aussi amoureux de Daphnis.</castItem>
-        <castItem><role xml:id="DAMON" id="DAMON" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">DAMON</role>, ami de Florame et de Théanthe.</castItem>
-        <castItem><role xml:id="DAPHNIS" id="DAPHNIS" sex="2" type="H" statut="aristocrate" age="A" stat_amour="Florame">DAPHNIS</role>, maîtresse de Florame, aînée de Clarimond et de Théanthe.</castItem>
-        <castItem><role xml:id="AMARANTE" id="AMARANTE" sex="2" type="H" statut="suivante" age="A" stat_amour="néant">AMARANTE</role>, suivante de Daphnis.</castItem>
-        <castItem><role xml:id="CELIE" id="CELIE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">CÉLIE</role>, voisine de Géraste et sa confidente.</castItem>
-        <castItem><role xml:id="CLEON" id="CLEON" sex="1" type="H" statut="domestique" age="A" stat_amour="néant">CLÉON</role>, domestique de Damon.</castItem>
+        <castItem><role age="A" civil="M" id="GERASTE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="GERASTE">GÉRASTE</role>, père de Daphnis.</castItem>
+        <castItem><role age="A" civil="M" id="POLEMON" rend="male" stat_amour="n&quot;ant" statut="aristocrate" type="H" xml:id="POLEMON">POLÉMON</role>, oncle de Clarimond.</castItem>
+        <castItem><role age="A" civil="M" id="CLARIMOND" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="CLARIMOND">CLARIMOND</role>, amoureux de Daphnis.</castItem>
+        <castItem><role age="A" civil="M" id="FLORAME" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="FLORAME">FLORAME</role>, amant de Daphnis.</castItem>
+        <castItem><role age="A" civil="M" id="THEANTE" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="THEANTE">THÉANTE</role>, aussi amoureux de Daphnis.</castItem>
+        <castItem><role age="A" civil="M" id="DAMON" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="DAMON">DAMON</role>, ami de Florame et de Théanthe.</castItem>
+        <castItem><role age="A" civil="F" id="DAPHNIS" rend="female" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="DAPHNIS">DAPHNIS</role>, maîtresse de Florame, aînée de Clarimond et de Théanthe.</castItem>
+        <castItem><role age="A" civil="F" id="AMARANTE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="AMARANTE">AMARANTE</role>, suivante de Daphnis.</castItem>
+        <castItem><role age="A" civil="F" id="CELIE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="CELIE">CÉLIE</role>, voisine de Géraste et sa confidente.</castItem>
+        <castItem><role age="A" civil="M" id="CLEON" rend="male" stat_amour="néant" statut="domestique" type="H" xml:id="CLEON">CLÉON</role>, domestique de Damon.</castItem>
       </castList>
-      <set location="Paris" country="France" periode="XVIIème" link="">La scène est à Paris.</set>
+      <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE.</head>
-          <sp xml:id="I01-1" who="DAMON">
+          <sp who="DAMON" xml:id="I01-1">
             <speaker>DAMON.</speaker>
             <l n="1" xml:id="l1">Ami, j'ai beau rêver, toute ma rêverie</l>
             <note type="L">Galanterie : manière polie, enjouée, et agréable de faire, ou de dire les choses ; fleurettes, douceurs amoureuses. Sihnifie encore amour, amourette. [F]</note>
@@ -90,7 +91,7 @@
             <l n="5" xml:id="l5">Ton humeur qui s'en lasse au changement l'invite ;</l>
             <l n="6" xml:id="l6">Et n'osant la quitter, tu veux qu'elle te quitte.</l>
           </sp>
-          <sp xml:id="I01-2" who="THEANTE">
+          <sp who="THEANTE" xml:id="I01-2">
             <speaker>THÉANTE.</speaker>
             <l n="7" xml:id="l7">Ami, n'y rêve plus ; c'est en juger trop bien</l>
             <l n="8" xml:id="l8">Pour t'oser plaindre encor de n'y comprendre rien.</l>
@@ -117,12 +118,12 @@
             <l n="28" xml:id="l28">Disait-elle ; autrement, je les sais bien punir ;</l>
             <l n="29" xml:id="l29">Leurs devoirs près de moi n'ont rien qui les excuse. "</l>
           </sp>
-          <sp xml:id="I01-3" who="DAMON">
+          <sp who="DAMON" xml:id="I01-3">
             <speaker>DAMON.</speaker>
             <l n="30" xml:id="l30">Maintenant je devine à peu près une ruse</l>
             <l n="31" xml:id="l31">Que tout autre en ta place à peine entreprendrait.</l>
           </sp>
-          <sp xml:id="I01-4" who="THEANTE">
+          <sp who="THEANTE" xml:id="I01-4">
             <speaker>THÉANTE.</speaker>
             <l n="32" xml:id="l32">écoute, et tu verras si je suis maladroit.</l>
             <l n="33" xml:id="l33">Tu sais comme Florame à tous les beaux visages</l>
@@ -146,11 +147,11 @@
             <l n="51" xml:id="l51">Engageant Amarante et Florame au discours,</l>
             <l n="52" xml:id="l52">J'entretiens à loisir mes nouvelles amours.</l>
           </sp>
-          <sp xml:id="I01-5" who="DAMON">
+          <sp who="DAMON" xml:id="I01-5">
             <speaker>DAMON.</speaker>
             <l n="53" xml:id="l53">Fut-elle sur ce point ou fâcheuse ou facile ?</l>
           </sp>
-          <sp xml:id="I01-6" who="THEANTE">
+          <sp who="THEANTE" xml:id="I01-6">
             <speaker>THÉANTE.</speaker>
             <l n="54" xml:id="l54">Plus que je n'espérais je l'y trouvai docile.</l>
             <l n="55" xml:id="l55">Soit que je lui donnasse une fort douce loi,</l>
@@ -164,7 +165,7 @@
             <l n="63" xml:id="l63">Et ce qu'elle goûtait avec lui de plaisirs</l>
             <l n="64" xml:id="l64">Lui fit abandonner mon âme à mes désirs.</l>
           </sp>
-          <sp xml:id="I01-7" who="DAMON">
+          <sp who="DAMON" xml:id="I01-7">
             <speaker>DAMON.</speaker>
             <l n="65" xml:id="l65">On t'abuse, Théante ; il faut que je te dise</l>
             <l n="66" xml:id="l66">Que Florame est atteint de même maladie,</l>
@@ -183,29 +184,29 @@
             <l n="79" xml:id="l79">C'est ce que l'autre jour en secret il m'apprit ;</l>
             <l n="80" xml:id="l80">Tu peux, sur cet avis, lire dans son esprit.</l>
           </sp>
-          <sp xml:id="I01-8" who="THEANTE">
+          <sp who="THEANTE" xml:id="I01-8">
             <speaker>THÉANTE.</speaker>
             <l n="81" xml:id="l81">Parmi ses hauts projets il manque de prudence,</l>
             <l n="82" xml:id="l82">Puisqu'il traite avec toi de telle confidence.</l>
           </sp>
-          <sp xml:id="I01-9" who="DAMON">
+          <sp who="DAMON" xml:id="I01-9">
             <speaker>DAMON.</speaker>
             <l n="83" xml:id="l83">Crois qu'il m'éprouvera fidèle au dernier point,</l>
             <l n="84" xml:id="l84">Lorsque ton intérêt ne s'y mêlera point.</l>
           </sp>
-          <sp xml:id="I01-10" who="THEANTE">
+          <sp who="THEANTE" xml:id="I01-10">
             <speaker>THÉANTE.</speaker>
             <l n="85" xml:id="l85">Je dois l'attendre ici. Quitte-moi, je te prie,</l>
             <l n="86" xml:id="l86">De peur qu'il n'ait soupçon de ta supercherie.</l>
           </sp>
-          <sp xml:id="I01-11" who="DAMON">
+          <sp who="DAMON" xml:id="I01-11">
             <speaker>DAMON.</speaker>
-            <l n="87" xml:id="l87" part="I">Adieu. Je suis à toi.</l>
+            <l n="87" part="I" xml:id="l87">Adieu. Je suis à toi.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II.</head>
-          <sp xml:id="I02-1" who="THEANTE">
+          <sp who="THEANTE" xml:id="I02-1">
             <speaker>THÉANTE.</speaker>
             <l part="F">Par quel malheur fatal</l>
             <l n="88" xml:id="l88">Ai-je donné moi-même entrée à mon rival ?</l>
@@ -246,33 +247,33 @@
             <l n="122" xml:id="l122">Ou nous avons tous deux même droit de lui plaire.</l>
             <l n="123" xml:id="l123">Si l'espoir m'est permis, il y peut aspirer ;</l>
             <l n="124" xml:id="l124">Et s'il prétend trop haut, je dois désespérer.</l>
-            <l n="125" xml:id="l125" part="I">Mais le voici venir.</l>
+            <l n="125" part="I" xml:id="l125">Mais le voici venir.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III.</head>
-          <sp xml:id="I03-1" who="THEANTE">
+          <sp who="THEANTE" xml:id="I03-1">
             <speaker>THÉANTE.</speaker>
             <l part="F">Tu me fais bien attendre.</l>
           </sp>
-          <sp xml:id="I03-2" who="FLORAME">
+          <sp who="FLORAME" xml:id="I03-2">
             <speaker>FLORAME.</speaker>
             <l n="126" xml:id="l126">Encore est-ce à regret qu'ici je viens me rendre,</l>
             <l n="127" xml:id="l127">Et comme un criminel qu'on traîne à sa prison.</l>
           </sp>
-          <sp xml:id="I03-3" who="THEANTE">
+          <sp who="THEANTE" xml:id="I03-3">
             <speaker>THÉANTE.</speaker>
             <l n="128" xml:id="l128">Tu ne fais qu'en raillant cette comparaison.</l>
           </sp>
-          <sp xml:id="I03-4" who="FLORAME">
+          <sp who="FLORAME" xml:id="I03-4">
             <speaker>FLORAME.</speaker>
-            <l n="129" xml:id="l129" part="I">Elle n'est que trop vraie.</l>
+            <l n="129" part="I" xml:id="l129">Elle n'est que trop vraie.</l>
           </sp>
-          <sp xml:id="I03-5" who="THEANTE">
+          <sp who="THEANTE" xml:id="I03-5">
             <speaker>THÉANTE.</speaker>
             <l part="F">Et ton indifférence ?</l>
           </sp>
-          <sp xml:id="I03-6" who="FLORAME">
+          <sp who="FLORAME" xml:id="I03-6">
             <speaker>FLORAME.</speaker>
             <l n="130" xml:id="l130">La conserver encor ! Le moyen ? L'apparence ?</l>
             <l n="131" xml:id="l131">Je m'étais plu toujours d'aimer en mille lieux :</l>
@@ -295,7 +296,7 @@
             <l n="148" xml:id="l148">Ou songe que mon coeur n'est pas fait d'un rocher ;</l>
             <l n="149" xml:id="l149">Tant de charmes enfin me rendraient infidèle.</l>
           </sp>
-          <sp xml:id="I03-7" who="THEANTE">
+          <sp who="THEANTE" xml:id="I03-7">
             <speaker>THÉANTE.</speaker>
             <l n="150" xml:id="l150">Deviens-le si tu veux, je suis assuré d'elle ;</l>
             <l n="151" xml:id="l151">Et quand il te faudra tout de bon l'adorer,</l>
@@ -308,14 +309,14 @@
             <l n="158" xml:id="l158">Qu'il ne soit plus en toi de retrouver ta glace.</l>
             <l n="159" xml:id="l159">Tu te défends encore, et n'en tiens qu'à demi.</l>
           </sp>
-          <sp xml:id="I03-8" who="FLORAME">
+          <sp who="FLORAME" xml:id="I03-8">
             <speaker>FLORAME.</speaker>
             <l n="160" xml:id="l160">Cruel, est-ce là donc me traiter en ami ?</l>
             <l n="161" xml:id="l161">Garde, pour châtiment de cet injuste outrage,</l>
             <l n="162" xml:id="l162">Qu'Amarante pour toi ne change de courage,</l>
             <l n="163" xml:id="l163">Et se rendant sensible à l'ardeur de mes voeux...</l>
           </sp>
-          <sp xml:id="I03-9" who="THEANTE">
+          <sp who="THEANTE" xml:id="I03-9">
             <speaker>THÉANTE.</speaker>
             <l n="164" xml:id="l164">À cela près, poursuis ; gagne-la, si tu peux :</l>
             <l n="165" xml:id="l165">Je ne m'en prendrai lors qu'à ma seule imprudence ;</l>
@@ -323,7 +324,7 @@
             <l n="167" xml:id="l167">En dépit du malheur que j'aurai mérité,</l>
             <l n="168" xml:id="l168">J'aimerai le rival qui m'aura supplanté.</l>
           </sp>
-          <sp xml:id="I03-10" who="FLORAME">
+          <sp who="FLORAME" xml:id="I03-10">
             <speaker>FLORAME.</speaker>
             <l n="169" xml:id="l169">Ami, qu'il vaut bien mieux ne tomber point en peine</l>
             <l n="170" xml:id="l170">De faire à tes dépens cette épreuve incertaine !</l>
@@ -338,7 +339,7 @@
             <l n="179" xml:id="l179">Je saurai l'amuser, et vos feux redoublés</l>
             <l n="180" xml:id="l180">Par son fâcheux abord ne seront plus troublés.</l>
           </sp>
-          <sp xml:id="I03-11" who="THEANTE">
+          <sp who="THEANTE" xml:id="I03-11">
             <speaker>THÉANTE.</speaker>
             <l n="181" xml:id="l181">Ce seroit prendre un soin qui n'est pas nécessaire :</l>
             <l n="182" xml:id="l182">Daphnis sait d'elle-même assez bien se distraire,</l>
@@ -346,36 +347,36 @@
             <l n="184" xml:id="l184">Tant elle est complaisante à nos chastes désirs.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. </head>
-          <sp xml:id="I04-1" who="THEANTE">
+          <sp who="THEANTE" xml:id="I04-1">
             <speaker>THÉANTE.</speaker>
             <l n="185" xml:id="l185">Déploie, il en est temps, tes meilleurs artifices</l>
             <l n="186" xml:id="l186">(Sans mettre toutefois en oubli mes services) :</l>
             <l n="187" xml:id="l187">Je t'amène un captif qui te veut échapper.</l>
           </sp>
-          <sp xml:id="I04-2" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I04-2">
             <speaker>AMARANTE.</speaker>
             <l n="188" xml:id="l188">J'en ai vu d'échappés que j'ai su rattraper.</l>
           </sp>
-          <sp xml:id="I04-3" who="THEANTE">
+          <sp who="THEANTE" xml:id="I04-3">
             <speaker>THÉANTE.</speaker>
             <l n="189" xml:id="l189">Vois qu'en sa liberté ta gloire se hasarde.</l>
           </sp>
-          <sp xml:id="I04-4" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I04-4">
             <speaker>AMARANTE.</speaker>
             <l n="190" xml:id="l190">Allez, laissez-le-moi, j'en ferai bonne garde.</l>
-            <l n="191" xml:id="l191" part="I">Daphnis est au jardin.</l>
+            <l n="191" part="I" xml:id="l191">Daphnis est au jardin.</l>
           </sp>
-          <sp xml:id="I04-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="I04-5">
             <speaker>FLORAME.</speaker>
             <l part="F">Sans plus vous désunir,</l>
             <l n="192" xml:id="l192">Souffre qu'au lieu de toi je l'aille entretenir.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V.</head>
-          <sp xml:id="I05-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I05-1">
             <speaker>AMARANTE.</speaker>
             <l n="193" xml:id="l193">Laissez, mon cavalier, laissez aller Théante :</l>
             <l n="194" xml:id="l194">Il porte assez au coeur le portrait d'Amarante ;</l>
@@ -384,35 +385,35 @@
             <l n="197" xml:id="l197">Et la difficulté d'une telle victoire</l>
             <l n="198" xml:id="l198">M'en augmente l'ardeur comme elle en croît la gloire.</l>
           </sp>
-          <sp xml:id="I05-2" who="FLORAME">
+          <sp who="FLORAME" xml:id="I05-2">
             <speaker>FLORAME.</speaker>
             <l n="199" xml:id="l199">Aurez-vous quelque gloire à me faire souffrir ?</l>
           </sp>
-          <sp xml:id="I05-3" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I05-3">
             <speaker>AMARANTE.</speaker>
             <l n="200" xml:id="l200">Plus que de tous les voeux qu'on me pourrait offrir.</l>
           </sp>
-          <sp xml:id="I05-4" who="FLORAME">
+          <sp who="FLORAME" xml:id="I05-4">
             <speaker>FLORAME.</speaker>
             <l n="201" xml:id="l201">Vous plaisez-vous à ceux d'une âme si contrainte,</l>
             <l n="202" xml:id="l202">Qu'une vieille amitié retient toujours en crainte ?</l>
           </sp>
-          <sp xml:id="I05-5" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I05-5">
             <speaker>AMARANTE.</speaker>
             <l n="203" xml:id="l203">Vous n'êtes pas encore au point où je vous veux ;</l>
             <l n="204" xml:id="l204">Et toute amitié meurt où naissent de vrais feux.</l>
           </sp>
-          <sp xml:id="I05-6" who="FLORAME">
+          <sp who="FLORAME" xml:id="I05-6">
             <speaker>FLORAME.</speaker>
             <l n="205" xml:id="l205">De vrai, contre ses droits mon esprit se rebelle ;</l>
             <l n="206" xml:id="l206">Mais feriez-vous état d'un amant infidèle ?</l>
           </sp>
-          <sp xml:id="I05-7" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I05-7">
             <speaker>AMARANTE.</speaker>
             <l n="207" xml:id="l207">Je ne prendrai jamais pour un manque de foi</l>
             <l n="208" xml:id="l208">D'oublier un ami pour se donner à moi.</l>
           </sp>
-          <sp xml:id="I05-8" who="FLORAME">
+          <sp who="FLORAME" xml:id="I05-8">
             <speaker>FLORAME.</speaker>
             <l n="209" xml:id="l209">Encore si je pouvais former quelque espérance</l>
             <l n="210" xml:id="l210">De vous voir favorable à ma persévérance,</l>
@@ -426,7 +427,7 @@
             <l n="218" xml:id="l218">Que du manque d'espoir j'évite les supplices :</l>
             <l n="219" xml:id="l219">Qui ne peut rien prétendre a droit d'abandonner.</l>
           </sp>
-          <sp xml:id="I05-9" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I05-9">
             <speaker>AMARANTE.</speaker>
             <l n="220" xml:id="l220">S'il ne tient qu'à l'espoir, je vous en veux donner.</l>
             <l n="221" xml:id="l221">Apprenez que chez moi c'est un faible avantage</l>
@@ -436,29 +437,29 @@
             <l n="225" xml:id="l225">Lui seul de mes amants règle la différence,</l>
             <l n="226" xml:id="l226">Sans que le temps leur donne aucune préférence.</l>
           </sp>
-          <sp xml:id="I05-10" who="FLORAME">
+          <sp who="FLORAME" xml:id="I05-10">
             <speaker>FLORAME.</speaker>
             <l n="227" xml:id="l227">Vous ne flattez mes sens que pour m'embarrasser.</l>
           </sp>
-          <sp xml:id="I05-11" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I05-11">
             <speaker>AMARANTE.</speaker>
             <l n="228" xml:id="l228">Peut-être ; mais enfin il faut le confesser,</l>
             <l n="229" xml:id="l229">Vous vous trouveriez mieux auprès de ma maîtresse.</l>
           </sp>
-          <sp xml:id="I05-12" who="FLORAME">
+          <sp who="FLORAME" xml:id="I05-12">
             <speaker>FLORAME.</speaker>
-            <l n="230" xml:id="l230" part="I">Ne pensez pas...</l>
+            <l n="230" part="I" xml:id="l230">Ne pensez pas...</l>
           </sp>
-          <sp xml:id="I05-13" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I05-13">
             <speaker>AMARANTE.</speaker>
             <l part="F">Non, non, c'est là ce qui vous presse.</l>
             <l n="231" xml:id="l231">Allons dans le jardin ensemble la chercher.</l>
             <l n="232" xml:id="l232">Que j'ai su dextrement à ses yeux la cacher !</l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="I06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="I06-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I06-1">
             <speaker>DAPHNIS.</speaker>
             <l n="233" xml:id="l233">Voyez comme tous deux ont fui notre rencontre !</l>
             <l n="234" xml:id="l234">Je vous l'ai déjà dit, et l'effet vous le montre :</l>
@@ -467,14 +468,14 @@
             <l n="237" xml:id="l237">Vous devez vous lasser de tant de patience,</l>
             <l n="238" xml:id="l238">Et votre sûreté n'est qu'en la défiance.</l>
           </sp>
-          <sp xml:id="I06-2" who="THEANTE">
+          <sp who="THEANTE" xml:id="I06-2">
             <speaker>THÉANTE.</speaker>
             <l n="239" xml:id="l239">Je connais Amarante, et ma facilité</l>
             <l n="240" xml:id="l240">établit mon repos sur sa fidélité :</l>
             <l n="241" xml:id="l241">Elle rit de Florame et de ses flatteries,</l>
             <l n="242" xml:id="l242">Qui ne sont après tout que des galanteries.</l>
           </sp>
-          <sp xml:id="I06-3" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I06-3">
             <speaker>DAPHNIS.</speaker>
             <l n="243" xml:id="l243">Amarante, de vrai, n'aime pas à changer ;</l>
             <l n="244" xml:id="l244">Mais votre peu de soin l'y pourrait engager.</l>
@@ -491,7 +492,7 @@
             <l n="255" xml:id="l255">J'ai tant de passion pour tous vos intérêts,</l>
             <l n="256" xml:id="l256">Que j'en saurai bientôt pénétrer les secrets.</l>
           </sp>
-          <sp xml:id="I06-4" who="THEANTE">
+          <sp who="THEANTE" xml:id="I06-4">
             <speaker>THÉANTE.</speaker>
             <l n="257" xml:id="l257">C'est un trop bas emploi pour de si hauts mérites ;</l>
             <l n="258" xml:id="l258">Et quand elle aimerait à souffrir ses visites,</l>
@@ -502,62 +503,62 @@
             <l n="263" xml:id="l263">Nous nous ressemblons mal, et pour ce changement,</l>
             <l n="264" xml:id="l264">Elle a de trop bons yeux et trop de jugement.</l>
           </sp>
-          <sp xml:id="I06-5" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I06-5">
             <speaker>DAPHNIS.</speaker>
             <l n="265" xml:id="l265">Vous le méprisez trop : je trouve en lui des charmes</l>
             <l n="266" xml:id="l266">Qui vous devraient du moins donner quelques alarmes.</l>
             <l n="267" xml:id="l267">Clarimond n'a de moi que haine et que rigueur ;</l>
             <l n="268" xml:id="l268">Mais s'il lui ressemblait, il gagnerait mon coeur.</l>
           </sp>
-          <sp xml:id="I06-6" who="THEANTE">
+          <sp who="THEANTE" xml:id="I06-6">
             <speaker>THÉANTE.</speaker>
             <l n="269" xml:id="l269">Vous en parlez ainsi, faute de le connaître.</l>
           </sp>
-          <sp xml:id="I06-7" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I06-7">
             <speaker>DAPHNIS.</speaker>
             <l n="270" xml:id="l270">J'en parle et juge ainsi sur ce qu'on voit paraître.</l>
           </sp>
-          <sp xml:id="I06-8" who="THEANTE">
+          <sp who="THEANTE" xml:id="I06-8">
             <speaker>THÉANTE.</speaker>
             <l n="271" xml:id="l271">Quoi qu'il en soit, l'honneur de vous entretenir...</l>
           </sp>
-          <sp xml:id="I06-9" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I06-9">
             <speaker>DAPHNIS.</speaker>
             <l n="272" xml:id="l272">Brisons là ce discours : je l'aperçois venir.</l>
             <l n="273" xml:id="l273">Amarante, ce semble, en est fort satisfaite.</l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="I07">
           <head>SCÈNE VII. </head>
-          <sp xml:id="I07-1" who="THEANTE">
+          <sp who="THEANTE" xml:id="I07-1">
             <speaker>THÉANTE.</speaker>
             <l n="274" xml:id="l274">Je t'attendais, ami, pour faire la retraite :</l>
             <l n="275" xml:id="l275">L'heure du dîner presse, et nous incommodons</l>
             <l n="276" xml:id="l276">Celles qu'en nos discours ici nous retardons.</l>
           </sp>
-          <sp xml:id="I07-2" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I07-2">
             <speaker>DAPHNIS.</speaker>
-            <l n="277" xml:id="l277" part="I">Il n'est pas encor tard.</l>
+            <l n="277" part="I" xml:id="l277">Il n'est pas encor tard.</l>
           </sp>
-          <sp xml:id="I07-3" who="THEANTE">
+          <sp who="THEANTE" xml:id="I07-3">
             <speaker>THÉANTE.</speaker>
             <l part="F">Nous ferions conscience</l>
             <l n="278" xml:id="l278">D'abuser plus longtemps de votre patience.</l>
           </sp>
-          <sp xml:id="I07-4" who="FLORAME">
+          <sp who="FLORAME" xml:id="I07-4">
             <speaker>FLORAME.</speaker>
             <l n="279" xml:id="l279">Madame, excusez donc cette incivilité,</l>
             <l n="280" xml:id="l280">Dont l'heure nous impose une nécessité.</l>
           </sp>
-          <sp xml:id="I07-5" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I07-5">
             <speaker>DAPHNIS.</speaker>
             <l n="281" xml:id="l281">Sa force vous excuse, et je lis dans votre âme</l>
             <l n="282" xml:id="l282">Qu'à regret vous quittez l'objet de votre flamme.</l>
           </sp>
         </div2>
-        <div2 xml:id="I08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="I08">
           <head>SCÈNE VIII.</head>
-          <sp xml:id="I08-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I08-1">
             <speaker>DAPHNIS.</speaker>
             <l n="283" xml:id="l283">Cette assiduité de Florame avec vous</l>
             <l n="284" xml:id="l284">À la fin a rendu Théante un peu jaloux.</l>
@@ -571,7 +572,7 @@
             <l n="292" xml:id="l292">Ce sont pour l'apaiser les chemins les plus courts :</l>
             <l n="293" xml:id="l293">Sinon, faites état qu'il va courir au change.</l>
           </sp>
-          <sp xml:id="I08-2" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I08-2">
             <speaker>AMARANTE.</speaker>
             <l n="294" xml:id="l294">Il serait en ce cas d'une humeur bien étrange.</l>
             <l n="295" xml:id="l295">À sa prière seule, et pour le contenter,</l>
@@ -587,18 +588,18 @@
             <l n="305" xml:id="l305">Enfin (que serviroit aussi bien de le taire ? )</l>
             <l n="306" xml:id="l306">Sa vanité le porte au souci de vous plaire.</l>
           </sp>
-          <sp xml:id="I08-3" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I08-3">
             <speaker>DAPHNIS.</speaker>
             <l n="307" xml:id="l307">En ce cas, il verra que je sais comme il faut</l>
             <l n="308" xml:id="l308">Punir des insolents qui prétendent trop haut.</l>
           </sp>
-          <sp xml:id="I08-4" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I08-4">
             <speaker>AMARANTE.</speaker>
             <l n="309" xml:id="l309">Je lui veux quelque bien, puisque, changeant de flamme,</l>
             <l n="310" xml:id="l310">Vous voyez par pitié qu'il me laisse Florame,</l>
             <l n="311" xml:id="l311">Qui n'étant pas si vain, a plus de fermeté.</l>
           </sp>
-          <sp xml:id="I08-5" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="I08-5">
             <speaker>DAPHNIS.</speaker>
             <l n="312" xml:id="l312">Amarante, après tout disons la vérité :</l>
             <l n="313" xml:id="l313">Théante n'est si vain qu'en votre fantaisie,</l>
@@ -607,9 +608,9 @@
             <l n="316" xml:id="l316">Et ce que je vous dis n'est que pour votre bien.</l>
           </sp>
         </div2>
-        <div2 xml:id="I09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="I09">
           <head>SCÈNE IX.</head>
-          <sp xml:id="I09-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="I09-1">
             <speaker>AMARANTE.</speaker>
             <l n="317" xml:id="l317">Pour peu savant qu'on soit aux mouvements de l'âme,</l>
             <l n="318" xml:id="l318">On devine aisément qu'elle en veut à Florame.</l>
@@ -638,11 +639,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE.</head>
-          <sp xml:id="II01-1" who="CELIE">
+          <sp who="CELIE" xml:id="II01-1">
             <speaker>CÉLIE.</speaker>
             <l n="341" xml:id="l341">Eh bien ! J'en parlerai ; mais songez qu'à votre âge</l>
             <l n="342" xml:id="l342">Mille accidents fâcheux suivent le mariage :</l>
@@ -653,7 +654,7 @@
             <l n="347" xml:id="l347">Et cet heureux hymen, qui les charmait si fort,</l>
             <l n="348" xml:id="l348">Devient souvent pour eux un fourrier de la mort.</l>
           </sp>
-          <sp xml:id="II01-2" who="GERASTE">
+          <sp who="GERASTE" xml:id="II01-2">
             <speaker>GÉRASTE.</speaker>
             <l n="349" xml:id="l349">Excuse, ou pour le moins pardonne à ma folie ;</l>
             <l n="350" xml:id="l350">Le sort en est jeté : va, ma chère Célie,</l>
@@ -665,45 +666,45 @@
             <l n="356" xml:id="l356">Répare la vigueur qui manque à mes vieux ans ;</l>
             <l n="357" xml:id="l357">Qu'il ne lui peut échoir de meilleure aventure.</l>
           </sp>
-          <sp xml:id="II01-3" who="CELIE">
+          <sp who="CELIE" xml:id="II01-3">
             <speaker>CÉLIE.</speaker>
             <l n="358" xml:id="l358">Ne m'importunez point de votre tablature :</l>
             <l n="359" xml:id="l359">Sans vos instructions je sais bien mon métier,</l>
             <l n="360" xml:id="l360">Et je n'en laisserai pas un trait à quartier.</l>
           </sp>
-          <sp xml:id="II01-4" who="GERASTE">
+          <sp who="GERASTE" xml:id="II01-4">
             <speaker>GÉRASTE.</speaker>
             <l n="361" xml:id="l361">Je ne suis point ingrat quand on me rend office.</l>
             <l n="362" xml:id="l362">Peins-lui bien mon amour, offre bien mon service,</l>
             <l n="363" xml:id="l363">Dis bien que mes beaux jours ne sont pas si passés</l>
-            <l n="364" xml:id="l364" part="I">Qu'il ne me reste encore...</l>
+            <l n="364" part="I" xml:id="l364">Qu'il ne me reste encore...</l>
           </sp>
-          <sp xml:id="II01-5" who="CELIE">
+          <sp who="CELIE" xml:id="II01-5">
             <speaker>CÉLIE.</speaker>
             <l part="F">Que vous m'étourdissez !</l>
             <l n="365" xml:id="l365">N'est-ce point assez dit que votre âme est éprise ?</l>
             <l n="366" xml:id="l366">Que vous allez mourir si vous n'avez Florise ?</l>
-            <l n="367" xml:id="l367" part="I">Reposez-vous sur moi.</l>
+            <l n="367" part="I" xml:id="l367">Reposez-vous sur moi.</l>
           </sp>
-          <sp xml:id="II01-6" who="GERASTE">
+          <sp who="GERASTE" xml:id="II01-6">
             <speaker>GÉRASTE.</speaker>
             <l part="F">Que voilà froidement</l>
             <l n="368" xml:id="l368">Me promettre ton aide à finir mon tourment !</l>
           </sp>
-          <sp xml:id="II01-7" who="CELIE">
+          <sp who="CELIE" xml:id="II01-7">
             <speaker>CÉLIE.</speaker>
             <l n="369" xml:id="l369">S'il faut aller plus vite, allons, je vois son frère,</l>
             <l n="370" xml:id="l370">Et vais tout devant vous lui proposer l'affaire.</l>
           </sp>
-          <sp xml:id="II01-8" who="GERASTE">
+          <sp who="GERASTE" xml:id="II01-8">
             <speaker>GÉRASTE.</speaker>
             <l n="371" xml:id="l371">Ce serait tout gâter ; arrête, et par douceur</l>
             <l n="372" xml:id="l372">Essaie auparavant d'y résoudre la soeur.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II.</head>
-          <sp xml:id="II02-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="II02-1">
             <speaker>FLORAME.</speaker>
             <l n="373" xml:id="l373">Jamais ne verrai-je finie</l>
             <l n="374" xml:id="l374">Cette incommode affection,</l>
@@ -737,63 +738,63 @@
             <l n="402" xml:id="l402">Un peu de liberté pour lui donner la mienne !</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III.</head>
-          <sp xml:id="II03-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II03-1">
             <speaker>AMARANTE.</speaker>
             <l n="403" xml:id="l403">Que vous voilà soudain de retour en ces lieux !</l>
           </sp>
-          <sp xml:id="II03-2" who="FLORAME">
+          <sp who="FLORAME" xml:id="II03-2">
             <speaker>FLORAME.</speaker>
             <l n="404" xml:id="l404">Vous jugerez par là du pouvoir de vos yeux.</l>
           </sp>
-          <sp xml:id="II03-3" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II03-3">
             <speaker>AMARANTE.</speaker>
             <l n="405" xml:id="l405">Autre objet que mes yeux devers nous vous attire.</l>
           </sp>
-          <sp xml:id="II03-4" who="FLORAME">
+          <sp who="FLORAME" xml:id="II03-4">
             <speaker>FLORAME.</speaker>
             <l n="406" xml:id="l406">Autre objet que vos yeux ne cause mon martyre.</l>
           </sp>
-          <sp xml:id="II03-5" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II03-5">
             <speaker>AMARANTE.</speaker>
             <l n="407" xml:id="l407">Votre martyre donc est de perdre avec moi</l>
             <l n="408" xml:id="l408">Un temps dont vous voulez faire un meilleur emploi.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV.</head>
-          <sp xml:id="II04-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-1">
             <speaker>DAPHNIS.</speaker>
             <l n="409" xml:id="l409">Amarante, allez voir si dans la galerie</l>
             <l n="410" xml:id="l410">Ils ont bientôt tendu cette tapisserie :</l>
             <l n="411" xml:id="l411">Ces gens-là ne font rien, si l'on n'a l'oeil sur eux.</l>
             <l n="412" xml:id="l412">Je romps pour quelque temps le discours de vos feux.</l>
           </sp>
-          <sp xml:id="II04-2" who="FLORAME">
+          <sp who="FLORAME" xml:id="II04-2">
             <speaker>FLORAME.</speaker>
             <l n="413" xml:id="l413">N'appelez point des feux un peu de complaisance</l>
             <l n="414" xml:id="l414">Que détruit votre abord, qu'éteint votre présence.</l>
           </sp>
-          <sp xml:id="II04-3" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-3">
             <speaker>DAPHNIS.</speaker>
             <l n="415" xml:id="l415">Votre amour est trop forte, et vos coeurs trop unis,</l>
             <l n="416" xml:id="l416">Pour l'oublier soudain à l'abord de Daphnis ;</l>
             <l n="417" xml:id="l417">Et vos civilités étant dans l'impossible</l>
             <l n="418" xml:id="l418">Vous rendent bien flatteur, mais non pas insensible.</l>
           </sp>
-          <sp xml:id="II04-4" who="FLORAME">
+          <sp who="FLORAME" xml:id="II04-4">
             <speaker>FLORAME.</speaker>
             <l n="419" xml:id="l419">Quoi que vous estimiez de ma civilité,</l>
             <l n="420" xml:id="l420">Je ne me pique point d'insensibilité.</l>
             <l n="421" xml:id="l421">J'aime, il n'est que trop vrai, je brûle, je soupire ;</l>
             <l n="422" xml:id="l422">Mais un plus haut sujet me tient sous son empire.</l>
           </sp>
-          <sp xml:id="II04-5" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-5">
             <speaker>DAPHNIS.</speaker>
-            <l n="423" xml:id="l423" part="I">Le nom ne s'en dit point ?</l>
+            <l n="423" part="I" xml:id="l423">Le nom ne s'en dit point ?</l>
           </sp>
-          <sp xml:id="II04-6" who="FLORAME">
+          <sp who="FLORAME" xml:id="II04-6">
             <speaker>FLORAME.</speaker>
             <l part="F">Je ris de ces amants</l>
             <l n="424" xml:id="l424">Dont le trop de respect redouble les tourments,</l>
@@ -803,21 +804,21 @@
             <l n="428" xml:id="l428">N'avait point à rougir d'être présomptueux.</l>
             <l n="429" xml:id="l429">Je veux bien vous nommer le bel oeil qui me dompte</l>
             <l n="430" xml:id="l430">Et ma témérité ne me fait point de honte.</l>
-            <l n="431" xml:id="l431" part="I">Ce rare et haut sujet...</l>
+            <l n="431" part="I" xml:id="l431">Ce rare et haut sujet...</l>
           </sp>
-          <sp xml:id="II04-7" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II04-7">
             <speaker>AMARANTE.</speaker>
             <l part="F">Tout est presque tendu.</l>
           </sp>
-          <sp xml:id="II04-8" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-8">
             <speaker>DAPHNIS.</speaker>
             <l n="432" xml:id="l432">Vous n'avez auprès d'eux guère de temps perdu.</l>
           </sp>
-          <sp xml:id="II04-9" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II04-9">
             <speaker>AMARANTE.</speaker>
             <l n="433" xml:id="l433">J'ai vu qu'ils l'employoient, et je suis revenue.</l>
           </sp>
-          <sp xml:id="II04-10" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-10">
             <speaker>DAPHNIS.</speaker>
             <l n="434" xml:id="l434">J'ai peur de m'enrhumer au froid qui continue,</l>
             <l n="435" xml:id="l435">Allez au cabinet me quérir un mouchoir :</l>
@@ -827,16 +828,16 @@
             <l n="439" xml:id="l439">Qui recevant par là quelque espèce d'affront,</l>
             <l n="440" xml:id="l440">En aurait eu soudain la rougeur sur le front.</l>
           </sp>
-          <sp xml:id="II04-11" who="FLORAME">
+          <sp who="FLORAME" xml:id="II04-11">
             <speaker>FLORAME.</speaker>
             <l n="441" xml:id="l441">Sans affront je la quitte, et lui préfère une autre</l>
             <l n="442" xml:id="l442">Dont le mérite égal, le rang pareil au vôtre,</l>
             <l n="443" xml:id="l443">L'esprit et les attraits également puissants,</l>
             <l n="444" xml:id="l444">Ne devraient de ma part avoir que de l'encens.</l>
             <l n="445" xml:id="l445">Oui, sa perfection, comme la vôtre extrême,</l>
-            <l n="446" xml:id="l446" part="I">N'a que vous de pareille : en un mot, c'est...</l>
+            <l n="446" part="I" xml:id="l446">N'a que vous de pareille : en un mot, c'est...</l>
           </sp>
-          <sp xml:id="II04-12" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-12">
             <speaker>DAPHNIS.</speaker>
             <l part="F">Moi-même :</l>
             <l n="447" xml:id="l447">Je vois bien que c'est là que vous voulez venir,</l>
@@ -850,7 +851,7 @@
             <l n="455" xml:id="l455">Mettre en sa place un nom qui ne vous touche pas,</l>
             <l n="456" xml:id="l456">C'est un cruel reproche au peu que j'ai d'appas.</l>
           </sp>
-          <sp xml:id="II04-13" who="FLORAME">
+          <sp who="FLORAME" xml:id="II04-13">
             <speaker>FLORAME.</speaker>
             <l n="457" xml:id="l457">Vu le peu que je suis, vous dédaignez de croire</l>
             <l n="458" xml:id="l458">Une si malheureuse et si basse victoire.</l>
@@ -859,55 +860,55 @@
             <l n="461" xml:id="l461">Ou peut-être mon sort me rend si méprisable</l>
             <l n="462" xml:id="l462">Que ma témérité vous devient incroyable.</l>
             <l n="463" xml:id="l463">Mais quoi que désormais il m'en puisse arriver,</l>
-            <l n="464" xml:id="l464" part="I">Je fais serment...</l>
+            <l n="464" part="I" xml:id="l464">Je fais serment...</l>
           </sp>
-          <sp xml:id="II04-14" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II04-14">
             <speaker>AMARANTE.</speaker>
             <l part="F">Vos clefs ne sauraient se trouver.</l>
           </sp>
-          <sp xml:id="II04-15" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-15">
             <speaker>DAPHNIS.</speaker>
             <l n="465" xml:id="l465">Faute d'un plus exquis, et comme par bravade,</l>
             <l n="466" xml:id="l466">Ceci servira donc de mouchoir de parade.</l>
             <l n="467" xml:id="l467">Enfin, ce cavalier que nous vîmes au bal,</l>
             <l n="468" xml:id="l468">Vous trouvez comme moi qu'il ne danse pas mal ?</l>
           </sp>
-          <sp xml:id="II04-16" who="FLORAME">
+          <sp who="FLORAME" xml:id="II04-16">
             <speaker>FLORAME.</speaker>
             <l n="469" xml:id="l469">Je ne le vis jamais mieux sur sa bonne mine.</l>
           </sp>
-          <sp xml:id="II04-17" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-17">
             <speaker>DAPHNIS.</speaker>
             <l n="470" xml:id="l470">Il s'était si bien mis pour l'amour de Clarine.</l>
             <l n="471" xml:id="l471">À propos de Clarine, il m'était échappé</l>
             <l n="472" xml:id="l472">Qu'elle en a deux à moi d'un nouveau point coupé :</l>
             <l n="473" xml:id="l473">Allez, et dites-lui qu'elle me les renvoie.</l>
           </sp>
-          <sp xml:id="II04-18" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II04-18">
             <speaker>AMARANTE.</speaker>
             <l n="474" xml:id="l474">Il est hors d'apparence aujourd'hui qu'on la voie :</l>
             <l n="475" xml:id="l475">Dès une heure au plus tard elle devait sortir.</l>
           </sp>
-          <sp xml:id="II04-19" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II04-19">
             <speaker>DAPHNIS.</speaker>
             <l n="476" xml:id="l476">Son cocher n'est jamais sitôt prêt à partir ;</l>
             <l n="477" xml:id="l477">Et d'ailleurs son logis n'est pas au bout du monde ;</l>
             <l n="478" xml:id="l478">Vous perdrez peu de pas. Quoi qu'elle vous réponde,</l>
             <l n="479" xml:id="l479">Dites-lui nettement que je les veux avoir.</l>
           </sp>
-          <sp xml:id="II04-20" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II04-20">
             <speaker>AMARANTE.</speaker>
             <l n="480" xml:id="l480">À vous les rapporter je ferai mon pouvoir.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V.</head>
-          <sp xml:id="II05-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="II05-1">
             <speaker>FLORAME.</speaker>
             <l n="481" xml:id="l481">C'est à vous maintenant d'ordonner mon supplice,</l>
             <l n="482" xml:id="l482">Sûre que sa rigueur n'aura point d'injustice.</l>
           </sp>
-          <sp xml:id="II05-2" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II05-2">
             <speaker>DAPHNIS.</speaker>
             <l n="483" xml:id="l483">Vous voyez qu'Amarante a pour vous de l'amour,</l>
             <l n="484" xml:id="l484">Et ne manquera pas d'être tôt de retour.</l>
@@ -917,17 +918,17 @@
             <l n="488" xml:id="l488">Je crois que vous m'aimez ; n'attendez rien de plus :</l>
             <l n="489" xml:id="l489">Florame, je suis fille, et je dépends d'un père.</l>
           </sp>
-          <sp xml:id="II05-3" who="FLORAME">
+          <sp who="FLORAME" xml:id="II05-3">
             <speaker>FLORAME.</speaker>
             <l n="490" xml:id="l490">Mais de votre côté que faut-il que j'espère ?</l>
           </sp>
-          <sp xml:id="II05-4" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II05-4">
             <speaker>DAPHNIS.</speaker>
             <l n="491" xml:id="l491">Si ma jalouse encore vous rencontrait ici,</l>
             <l n="492" xml:id="l492">Ce qu'elle a de soupçons serait trop éclairci :</l>
-            <l n="493" xml:id="l493" part="I">Laissez-moi seule, allez.</l>
+            <l n="493" part="I" xml:id="l493">Laissez-moi seule, allez.</l>
           </sp>
-          <sp xml:id="II05-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="II05-5">
             <speaker>FLORAME.</speaker>
             <l part="F">Se peut-il que Florame</l>
             <l n="494" xml:id="l494">Souffre d'être sitôt séparé de son âme ?</l>
@@ -935,9 +936,9 @@
             <l n="496" xml:id="l496">Lui doit être plus cher que ses contentements.</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="II06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="II06-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II06-1">
             <speaker>DAPHNIS.</speaker>
             <l n="497" xml:id="l497">Mon amour, par ses yeux plus forte devenue,</l>
             <l n="498" xml:id="l498">L'eût bientôt emporté dessus ma retenue ;</l>
@@ -964,60 +965,60 @@
             <l n="519" xml:id="l519">Il voit par d'autres yeux, et veut d'autres appas.</l>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="II07">
           <head>SCÈNE VII.</head>
-          <sp xml:id="II07-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II07-1">
             <speaker>AMARANTE.</speaker>
             <l n="520" xml:id="l520">Je vous l'avais bien dit qu'elle n'y serait pas.</l>
           </sp>
-          <sp xml:id="II07-2" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II07-2">
             <speaker>DAPHNIS.</speaker>
             <l n="521" xml:id="l521">Que vous avez tardé pour ne trouver personne !</l>
           </sp>
-          <sp xml:id="II07-3" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II07-3">
             <speaker>AMARANTE.</speaker>
             <l n="522" xml:id="l522">Ce reproche vraiment ne peut qu'il ne m'étonne :</l>
             <l n="523" xml:id="l523">Pour revenir plus vite, il eût fallu voler.</l>
           </sp>
-          <sp xml:id="II07-4" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II07-4">
             <speaker>DAPHNIS.</speaker>
             <l n="524" xml:id="l524">Florame cependant, qui vient de s'en aller,</l>
             <l n="525" xml:id="l525">À la fin, malgré moi, s'est ennuyé d'attendre.</l>
           </sp>
-          <sp xml:id="II07-5" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II07-5">
             <speaker>AMARANTE.</speaker>
             <l n="526" xml:id="l526">C'est chose toutefois que je ne puis comprendre.</l>
             <l n="527" xml:id="l527">Des hommes de mérite et d'esprit comme lui</l>
             <l n="528" xml:id="l528">N'ont jamais avec vous aucun sujet d'ennui :</l>
             <l n="529" xml:id="l529">Votre âme généreuse a trop de courtoisie.</l>
           </sp>
-          <sp xml:id="II07-6" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II07-6">
             <speaker>DAPHNIS.</speaker>
             <l n="530" xml:id="l530">Et la vôtre amoureuse un peu de jalousie.</l>
           </sp>
-          <sp xml:id="II07-7" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II07-7">
             <speaker>AMARANTE.</speaker>
             <l n="531" xml:id="l531">De vrai, je goûtais mal de faire tant de tours,</l>
             <l n="532" xml:id="l532">Et perdais à regret ma part de ses discours.</l>
           </sp>
-          <sp xml:id="II07-8" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II07-8">
             <speaker>DAPHNIS.</speaker>
             <l n="533" xml:id="l533">Aussi je me trouvais si promptement servie,</l>
             <l n="534" xml:id="l534">Que je me doutais bien qu'on me portait envie.</l>
-            <l n="535" xml:id="l535" part="I">En un mot, l'aimez-vous ?</l>
+            <l n="535" part="I" xml:id="l535">En un mot, l'aimez-vous ?</l>
           </sp>
-          <sp xml:id="II07-9" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II07-9">
             <speaker>AMARANTE.</speaker>
             <l part="F">Je l'aime aucunement,</l>
             <l n="536" xml:id="l536">Non pas jusqu'à troubler votre contentement ;</l>
             <l n="537" xml:id="l537">Mais si son entretien n'a pas de quoi vous plaire,</l>
             <l n="538" xml:id="l538">Vous m'obligerez fort de ne m'en plus distraire.</l>
           </sp>
-          <sp xml:id="II07-10" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II07-10">
             <speaker>DAPHNIS.</speaker>
-            <l n="539" xml:id="l539" part="I">Mais au cas qu'il me plût ?</l>
+            <l n="539" part="I" xml:id="l539">Mais au cas qu'il me plût ?</l>
           </sp>
-          <sp xml:id="II07-11" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II07-11">
             <speaker>AMARANTE.</speaker>
             <l part="F">Il faudrait vous céder.</l>
             <l n="540" xml:id="l540">C'est ainsi qu'avec vous je ne puis rien garder.</l>
@@ -1030,7 +1031,7 @@
             <l n="547" xml:id="l547">Si vous continuez à rompre ainsi mes coups,</l>
             <l n="548" xml:id="l548">Je ne sais tantôt plus comment vivre avec vous.</l>
           </sp>
-          <sp xml:id="II07-12" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="II07-12">
             <speaker>DAPHNIS.</speaker>
             <l n="549" xml:id="l549">Sans colère, Amarante, il semble, à vous entendre,</l>
             <l n="550" xml:id="l550">Qu'en même lieu que vous je voulusse prétendre.</l>
@@ -1040,9 +1041,9 @@
             <l n="554" xml:id="l554">Voilà votre Théante, avec qui je vous laisse.</l>
           </sp>
         </div2>
-        <div2 xml:id="II08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="II08">
           <head>SCÈNE VIII.</head>
-          <sp xml:id="II08-1" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-1">
             <speaker>THÉANTE.</speaker>
             <l n="555" xml:id="l555">Tu me vois sans Florame : un amoureux ennui</l>
             <l n="556" xml:id="l556">Assez adroitement m'a dérobé de lui.</l>
@@ -1050,27 +1051,27 @@
             <l n="558" xml:id="l558">Et n'osant toutefois lui manquer de parole,</l>
             <l n="559" xml:id="l559">Je pratique un quart d'heure à mes affections.</l>
           </sp>
-          <sp xml:id="II08-2" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II08-2">
             <speaker>AMARANTE.</speaker>
             <l n="560" xml:id="l560">Ma maîtresse lisait dans tes intentions :</l>
             <l n="561" xml:id="l561">Tu vois à ton abord comme elle a fait retraite,</l>
             <l n="562" xml:id="l562">De peur d'incommoder une amour si parfaite.</l>
           </sp>
-          <sp xml:id="II08-3" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-3">
             <speaker>THÉANTE.</speaker>
             <l n="563" xml:id="l563">Je ne la saurais croire obligeante à ce point.</l>
             <l n="564" xml:id="l564">Ce qui la fait partir ne se dira-t-il point ?</l>
           </sp>
-          <sp xml:id="II08-4" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II08-4">
             <speaker>AMARANTE.</speaker>
             <l n="565" xml:id="l565">Veux-tu que je t'en parle avec toute franchise ?</l>
             <l n="566" xml:id="l566">C'est la mauvaise humeur où Florame l'a mise.</l>
           </sp>
-          <sp xml:id="II08-5" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-5">
             <speaker>THÉANTE.</speaker>
-            <l n="567" xml:id="l567" part="I">Florame ?</l>
+            <l n="567" part="I" xml:id="l567">Florame ?</l>
           </sp>
-          <sp xml:id="II08-6" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II08-6">
             <speaker>AMARANTE.</speaker>
             <l part="F">Oui : ce causeur voulait l'entretenir ;</l>
             <l n="568" xml:id="l568">Mais il aura perdu le goût d'y revenir :</l>
@@ -1083,26 +1084,26 @@
             <l n="575" xml:id="l575">Elle ne voudrait pas te voir mal satisfait,</l>
             <l n="576" xml:id="l576">Ni rompre sur-le-champ le dessein qu'elle a fait.</l>
           </sp>
-          <sp xml:id="II08-7" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-7">
             <speaker>THÉANTE.</speaker>
             <l n="577" xml:id="l577">J'ai regret que Florame ait reçu cette honte :</l>
             <l n="578" xml:id="l578">Mais enfin auprès d'elle il trouve mal son conte ?</l>
           </sp>
-          <sp xml:id="II08-8" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II08-8">
             <speaker>AMARANTE.</speaker>
             <l n="579" xml:id="l579">Aussi c'est un discours ennuyeux que le sien :</l>
             <l n="580" xml:id="l580">Il parle incessamment sans dire jamais rien ;</l>
             <l n="581" xml:id="l581">Et n'était que pour toi je me fais ces contraintes,</l>
             <l n="582" xml:id="l582">Je l'enverrais bientôt porter ailleurs ses feintes.</l>
           </sp>
-          <sp xml:id="II08-9" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-9">
             <speaker>THÉANTE.</speaker>
             <l n="583" xml:id="l583">Et je m'assure aussi tellement en ta foi,</l>
             <l n="584" xml:id="l584">Que bien que tout le jour il cajole avec toi,</l>
             <l n="585" xml:id="l585">Mon esprit te conserve une amitié si pure,</l>
             <l n="586" xml:id="l586">Que sans être jaloux je le vois et l'endure.</l>
           </sp>
-          <sp xml:id="II08-10" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II08-10">
             <speaker>AMARANTE.</speaker>
             <l n="587" xml:id="l587">Comment le serais-tu pour un si triste objet ?</l>
             <l n="588" xml:id="l588">Ses imperfections t'en ôtent tout sujet.</l>
@@ -1121,7 +1122,7 @@
             <l n="601" xml:id="l601">Voyant ainsi la porte à ta fortune ouverte,</l>
             <l n="602" xml:id="l602">Je pourrais librement consentir à ma perte.</l>
           </sp>
-          <sp xml:id="II08-11" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-11">
             <speaker>THÉANTE.</speaker>
             <l n="603" xml:id="l603">Je te souhaite un change autant avantageux.</l>
             <l n="604" xml:id="l604">Plût à Dieu que le sort te fût moins outrageux,</l>
@@ -1132,37 +1133,37 @@
             <l n="609" xml:id="l609">Et que de déplaisir il m'en coûtât la vie,</l>
             <l n="610" xml:id="l610">Je me la tiendrais lors heureusement ravie.</l>
           </sp>
-          <sp xml:id="II08-12" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II08-12">
             <speaker>AMARANTE.</speaker>
             <l n="611" xml:id="l611">Je ne voudrais point d'heur qui vînt avec ta mort,</l>
             <l n="612" xml:id="l612">Et Damon que voilà n'en serait pas d'accord.</l>
           </sp>
-          <sp xml:id="II08-13" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-13">
             <speaker>THÉANTE.</speaker>
             <l n="613" xml:id="l613">Il a mine d'avoir quelque chose à me dire.</l>
           </sp>
-          <sp xml:id="II08-14" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="II08-14">
             <speaker>AMARANTE.</speaker>
             <l n="614" xml:id="l614">Ma présence y nuirait : adieu, je me retire.</l>
           </sp>
-          <sp xml:id="II08-15" who="THEANTE">
+          <sp who="THEANTE" xml:id="II08-15">
             <speaker>THÉANTE.</speaker>
             <l n="615" xml:id="l615">Arrête : nous pourrons nous voir tout à loisir ;</l>
-            <l n="616" xml:id="l616" part="I">Rien ne le presse.</l>
+            <l n="616" part="I" xml:id="l616">Rien ne le presse.</l>
           </sp>
         </div2>
-        <div2 xml:id="II09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="II09">
           <head>SCÈNE IX.</head>
-          <sp xml:id="II09-1" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-1">
             <speaker>THÉANTE.</speaker>
             <l part="F">Ami, que tu m'as fait plaisir !</l>
             <l n="617" xml:id="l617">J'étais fort à la gêne avec cette suivante.</l>
           </sp>
-          <sp xml:id="II09-2" who="DAMON">
+          <sp who="DAMON" xml:id="II09-2">
             <speaker>DAMON.</speaker>
             <l n="618" xml:id="l618">Celle qui te charmait te devient bien pesante.</l>
           </sp>
-          <sp xml:id="II09-3" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-3">
             <speaker>THÉANTE.</speaker>
             <l n="619" xml:id="l619">Je l'aime encore pourtant ; mais mon ambition</l>
             <l n="620" xml:id="l620">Ne laisse point agir mon inclination.</l>
@@ -1170,43 +1171,43 @@
             <l n="622" xml:id="l622">Tous mes désirs ne vont qu'où mon dessein les porte.</l>
             <l n="623" xml:id="l623">Au reste j'ai sondé l'esprit de mon rival.</l>
           </sp>
-          <sp xml:id="II09-4" who="DAMON">
+          <sp who="DAMON" xml:id="II09-4">
             <speaker>DAMON.</speaker>
-            <l n="624" xml:id="l624" part="I">Et connu...</l>
+            <l n="624" part="I" xml:id="l624">Et connu...</l>
           </sp>
-          <sp xml:id="II09-5" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-5">
             <speaker>THÉANTE.</speaker>
             <l part="F">Qu'il n'est pas pour me faire grand mal.</l>
             <l n="625" xml:id="l625">Amarante m'en vient d'apprendre une nouvelle</l>
             <l n="626" xml:id="l626">Qui ne me permet plus que j'en sois en cervelle.</l>
-            <l n="627" xml:id="l627" part="I">Il a vu...</l>
+            <l n="627" part="I" xml:id="l627">Il a vu...</l>
           </sp>
-          <sp xml:id="II09-6" who="DAMON">
+          <sp who="DAMON" xml:id="II09-6">
             <speaker>DAMON.</speaker>
             <l part="M">Qui ?</l>
           </sp>
-          <sp xml:id="II09-7" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-7">
             <speaker>THÉANTE.</speaker>
             <l part="F">Daphnis, et n'en a remporté</l>
-            <l n="628" xml:id="l628" part="I">Que ce qu'elle devait à sa témérité.</l>
+            <l n="628" part="I" xml:id="l628">Que ce qu'elle devait à sa témérité.</l>
           </sp>
-          <sp xml:id="II09-8" who="DAMON">
+          <sp who="DAMON" xml:id="II09-8">
             <speaker>DAMON.</speaker>
             <l part="F">Comme quoi ?</l>
           </sp>
-          <sp xml:id="II09-9" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-9">
             <speaker>THÉANTE.</speaker>
             <l n="629" xml:id="l629">Des mépris, des rigueurs sans pareilles.</l>
           </sp>
-          <sp xml:id="II09-10" who="DAMON">
+          <sp who="DAMON" xml:id="II09-10">
             <speaker>DAMON.</speaker>
             <l n="630" xml:id="l630">As-tu beaucoup de foi pour de telles merveilles ?</l>
           </sp>
-          <sp xml:id="II09-11" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-11">
             <speaker>THÉANTE.</speaker>
             <l n="631" xml:id="l631">Celle dont je les tiens en parle assurément.</l>
           </sp>
-          <sp xml:id="II09-12" who="DAMON">
+          <sp who="DAMON" xml:id="II09-12">
             <speaker>DAMON.</speaker>
             <l n="632" xml:id="l632">Pour un homme si fin, on te dupe aisément.</l>
             <l n="633" xml:id="l633">Amarante elle-même en est mal satisfaite,</l>
@@ -1224,7 +1225,7 @@
             <l n="645" xml:id="l645">Tâchons d'y donner ordre ; et sans plus de langage,</l>
             <l n="646" xml:id="l646">Avise en quoi tu veux employer mon courage.</l>
           </sp>
-          <sp xml:id="II09-13" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-13">
             <speaker>THÉANTE.</speaker>
             <l n="647" xml:id="l647">Lui disputer un bien où j'ai si peu de part,</l>
             <l n="648" xml:id="l648">Ce serait m'exposer pour quelque autre au hasard.</l>
@@ -1235,36 +1236,36 @@
             <l n="653" xml:id="l653">À croire son courage, en amour on s'abuse :</l>
             <l n="654" xml:id="l654">La valeur d'ordinaire y sert moins que la ruse.</l>
           </sp>
-          <sp xml:id="II09-14" who="DAMON">
+          <sp who="DAMON" xml:id="II09-14">
             <speaker>DAMON.</speaker>
             <l n="655" xml:id="l655">Avant que passer outre, un peu d'attention.</l>
           </sp>
-          <sp xml:id="II09-15" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-15">
             <speaker>THÉANTE.</speaker>
             <l n="656" xml:id="l656">Te viens-tu d'aviser de quelque invention ?</l>
           </sp>
-          <sp xml:id="II09-16" who="DAMON">
+          <sp who="DAMON" xml:id="II09-16">
             <speaker>DAMON.</speaker>
             <l n="657" xml:id="l657">Oui, ta seule maxime en fonde l'entreprise.</l>
             <l n="658" xml:id="l658">Clarimond voit Daphnis, il l'aime, il la courtise ;</l>
             <l n="659" xml:id="l659">Et quoiqu'il n'en reçoive encore que des mépris,</l>
             <l n="660" xml:id="l660">Un moment de bonheur lui peut gagner ce prix</l>
           </sp>
-          <sp xml:id="II09-17" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-17">
             <speaker>THÉANTE.</speaker>
             <l n="661" xml:id="l661">Ce rival est bien moins à redouter qu'à plaindre.</l>
           </sp>
-          <sp xml:id="II09-18" who="DAMON">
+          <sp who="DAMON" xml:id="II09-18">
             <speaker>DAMON.</speaker>
             <l n="662" xml:id="l662">Je veux que de sa part tu ne doives rien craindre,</l>
             <l n="663" xml:id="l663">N'est-ce pas le plus sûr qu'un duel hasardeux</l>
             <l n="664" xml:id="l664">Entre Florame et lui les en prive tous deux ?</l>
           </sp>
-          <sp xml:id="II09-19" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-19">
             <speaker>THÉANTE.</speaker>
             <l n="665" xml:id="l665">Crois-tu qu'avec Florame aisément on l'engage ?</l>
           </sp>
-          <sp xml:id="II09-20" who="DAMON">
+          <sp who="DAMON" xml:id="II09-20">
             <speaker>DAMON.</speaker>
             <l n="666" xml:id="l666">Je l'y résoudrai trop avec un peu d'ombrage.</l>
             <l n="667" xml:id="l667">Un amant dédaigné ne voit pas de bon oeil</l>
@@ -1274,47 +1275,47 @@
             <l n="671" xml:id="l671">Nous les verrions par là, l'un et l'autre écartés,</l>
             <l n="672" xml:id="l672">Laisser la place libre à tes félicités.</l>
           </sp>
-          <sp xml:id="II09-21" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-21">
             <speaker>THÉANTE.</speaker>
             <l n="673" xml:id="l673">Oui, mais s'il t'obligeait d'en porter la parole ?</l>
           </sp>
-          <sp xml:id="II09-22" who="DAMON">
+          <sp who="DAMON" xml:id="II09-22">
             <speaker>DAMON.</speaker>
             <l n="674" xml:id="l674">Tu te mets en l'esprit une crainte frivole :</l>
             <l n="675" xml:id="l675">Mon péril de ces lieux ne te bannira pas ;</l>
             <l n="676" xml:id="l676">Et moi, pour te servir je courrais au trépas.</l>
           </sp>
-          <sp xml:id="II09-23" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-23">
             <speaker>THÉANTE.</speaker>
             <l n="677" xml:id="l677">En même occasion dispose de ma vie,</l>
             <l n="678" xml:id="l678">Et sois sûr que pour toi j'aurai la même envie.</l>
           </sp>
-          <sp xml:id="II09-24" who="DAMON">
+          <sp who="DAMON" xml:id="II09-24">
             <speaker>DAMON.</speaker>
             <l n="679" xml:id="l679">Allons, ces compliments en retardent l'effet.</l>
           </sp>
-          <sp xml:id="II09-25" who="THEANTE">
+          <sp who="THEANTE" xml:id="II09-25">
             <speaker>THÉANTE.</speaker>
             <l n="680" xml:id="l680">Le ciel ne vit jamais un ami si parfait.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE.</head>
-          <sp xml:id="III01-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="III01-1">
             <speaker>FLORAME.</speaker>
             <l n="681" xml:id="l681">Enfin, quelque froideur qui paroisse en Florise,</l>
             <l n="682" xml:id="l682">Aux volontés d'un frère elle s'en est remise.</l>
           </sp>
-          <sp xml:id="III01-2" who="CELIE">
+          <sp who="CELIE" xml:id="III01-2">
             <speaker>CÉLIE.</speaker>
             <l n="683" xml:id="l683">Quoiqu'elle s'en rapporte à vous entièrement,</l>
             <l n="684" xml:id="l684">Vous lui feriez plaisir d'en user autrement.</l>
             <l n="685" xml:id="l685">Les amours d'un vieillard sont d'une faible amorce.</l>
           </sp>
-          <sp xml:id="III01-3" who="FLORAME">
+          <sp who="FLORAME" xml:id="III01-3">
             <speaker>FLORAME.</speaker>
             <l n="686" xml:id="l686">Que veux-tu ? Son esprit se fait un peu de force :</l>
             <l n="687" xml:id="l687">Elle se sacrifie à mes contentements,</l>
@@ -1326,11 +1327,11 @@
             <l n="693" xml:id="l693">Mais aussi de Florise il ne doit rien prétendre,</l>
             <l n="694" xml:id="l694">À moins que se résoudre à m'accepter pour gendre.</l>
           </sp>
-          <sp xml:id="III01-4" who="CELIE">
+          <sp who="CELIE" xml:id="III01-4">
             <speaker>CÉLIE.</speaker>
             <l n="695" xml:id="l695">Plaisez-vous à Daphnis ? C'est là le principal.</l>
           </sp>
-          <sp xml:id="III01-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="III01-5">
             <speaker>FLORAME.</speaker>
             <l n="696" xml:id="l696">Elle a trop de bonté pour me vouloir du mal ;</l>
             <l n="697" xml:id="l697">D'ailleurs sa résistance obscurcirait sa gloire ;</l>
@@ -1341,172 +1342,172 @@
             <l n="702" xml:id="l702">Lui veut donner loisir d'être dédaigné d'elle.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II.</head>
-          <sp xml:id="III02-1" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-1">
             <speaker>CLARIMOND.</speaker>
             <l n="703" xml:id="l703">Ces dédains rigoureux dureront-ils toujours ?</l>
           </sp>
-          <sp xml:id="III02-2" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-2">
             <speaker>DAPHNIS.</speaker>
             <l n="704" xml:id="l704">Non, ils ne dureront qu'autant que vos amours.</l>
           </sp>
-          <sp xml:id="III02-3" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-3">
             <speaker>CLARIMOND.</speaker>
             <l n="705" xml:id="l705">C'est prescrire à mes feux des lois bien inhumaines.</l>
           </sp>
-          <sp xml:id="III02-4" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-4">
             <speaker>DAPHNIS.</speaker>
             <l n="706" xml:id="l706">Faites finir vos feux, je finirai leurs peines.</l>
           </sp>
-          <sp xml:id="III02-5" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-5">
             <speaker>CLARIMOND.</speaker>
             <l n="707" xml:id="l707">Le moyen de forcer mon inclination ?</l>
           </sp>
-          <sp xml:id="III02-6" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-6">
             <speaker>DAPHNIS.</speaker>
             <l n="708" xml:id="l708">Le moyen de souffrir votre obstination ?</l>
           </sp>
-          <sp xml:id="III02-7" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-7">
             <speaker>CLARIMOND.</speaker>
             <l n="709" xml:id="l709">Qui ne s'obstinerait en vous voyant si belle ?</l>
           </sp>
-          <sp xml:id="III02-8" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-8">
             <speaker>DAPHNIS.</speaker>
             <l n="710" xml:id="l710">Qui vous pourrait aimer, vous voyant si rebelle ?</l>
           </sp>
-          <sp xml:id="III02-9" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-9">
             <speaker>CLARIMOND.</speaker>
             <l n="711" xml:id="l711">Est-ce rébellion que d'avoir trop de feu ?</l>
           </sp>
-          <sp xml:id="III02-10" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-10">
             <speaker>DAPHNIS.</speaker>
             <l n="712" xml:id="l712">C'est avoir trop d'amour, et m'obéir trop peu.</l>
           </sp>
-          <sp xml:id="III02-11" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-11">
             <speaker>CLARIMOND.</speaker>
             <l n="713" xml:id="l713">La puissance sur moi que je vous ai donnée...</l>
           </sp>
-          <sp xml:id="III02-12" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-12">
             <speaker>DAPHNIS.</speaker>
             <l n="714" xml:id="l714">D'aucune exception ne doit être bornée.</l>
           </sp>
-          <sp xml:id="III02-13" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-13">
             <speaker>CLARIMOND.</speaker>
             <l n="715" xml:id="l715">Essayez autrement ce pouvoir souverain.</l>
           </sp>
-          <sp xml:id="III02-14" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-14">
             <speaker>DAPHNIS.</speaker>
             <l n="716" xml:id="l716">Cet essai me fait voir que je commande en vain.</l>
           </sp>
-          <sp xml:id="III02-15" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-15">
             <speaker>CLARIMOND.</speaker>
             <l n="717" xml:id="l717">C'est un injuste essai qui ferait ma ruine.</l>
           </sp>
-          <sp xml:id="III02-16" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-16">
             <speaker>DAPHNIS.</speaker>
             <l n="718" xml:id="l718">Ce n'est plus obéir depuis qu'on examine.</l>
           </sp>
-          <sp xml:id="III02-17" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-17">
             <speaker>CLARIMOND.</speaker>
             <l n="719" xml:id="l719">Mais l'amour vous défend un tel commandement.</l>
           </sp>
-          <sp xml:id="III02-18" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-18">
             <speaker>DAPHNIS.</speaker>
             <l n="720" xml:id="l720">Et moi, je me défends un plus doux traitement.</l>
           </sp>
-          <sp xml:id="III02-19" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-19">
             <speaker>CLARIMOND.</speaker>
             <l n="721" xml:id="l721">Avec ce beau visage avoir le coeur de roche !</l>
           </sp>
-          <sp xml:id="III02-20" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-20">
             <speaker>DAPHNIS.</speaker>
             <l n="722" xml:id="l722">Si le mien s'endurcit, ce n'est qu'à votre approche.</l>
           </sp>
-          <sp xml:id="III02-21" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-21">
             <speaker>CLARIMOND.</speaker>
             <l n="723" xml:id="l723">Que je sache du moins d'où naissent vos froideurs.</l>
           </sp>
-          <sp xml:id="III02-22" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-22">
             <speaker>DAPHNIS.</speaker>
             <l n="724" xml:id="l724">Peut-être du sujet qui produit vos ardeurs.</l>
           </sp>
-          <sp xml:id="III02-23" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-23">
             <speaker>CLARIMOND.</speaker>
             <l n="725" xml:id="l725">Si je brûle, Daphnis, c'est de nous voir ensemble.</l>
           </sp>
-          <sp xml:id="III02-24" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-24">
             <speaker>DAPHNIS.</speaker>
             <l n="726" xml:id="l726">Et c'est de nous y voir, Clarimond, que je tremble.</l>
           </sp>
-          <sp xml:id="III02-25" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-25">
             <speaker>CLARIMOND.</speaker>
             <l n="727" xml:id="l727">Votre contentement n'est qu'à me maltraiter.</l>
           </sp>
-          <sp xml:id="III02-26" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-26">
             <speaker>DAPHNIS.</speaker>
             <l n="728" xml:id="l728">Comme le vôtre n'est qu'à me persécuter.</l>
           </sp>
-          <sp xml:id="III02-27" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-27">
             <speaker>CLARIMOND.</speaker>
             <l n="729" xml:id="l729">Quoi ! L'on vous persécute à force de services ?</l>
           </sp>
-          <sp xml:id="III02-28" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-28">
             <speaker>DAPHNIS.</speaker>
             <l n="730" xml:id="l730">Non, mais de votre part ce me sont des supplices.</l>
           </sp>
-          <sp xml:id="III02-29" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-29">
             <speaker>CLARIMOND.</speaker>
             <l n="731" xml:id="l731">Hélas ! Et quand pourra venir ma guérison ?</l>
           </sp>
-          <sp xml:id="III02-30" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-30">
             <speaker>DAPHNIS.</speaker>
             <l n="732" xml:id="l732">Lorsque le temps chez vous remettra la raison.</l>
           </sp>
-          <sp xml:id="III02-31" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-31">
             <speaker>CLARIMOND.</speaker>
             <l n="733" xml:id="l733">Ce n'est pas sans raison que mon âme est éprise.</l>
           </sp>
-          <sp xml:id="III02-32" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-32">
             <speaker>DAPHNIS.</speaker>
             <l n="734" xml:id="l734">Ce n'est pas sans raison aussi qu'on vous méprise.</l>
           </sp>
-          <sp xml:id="III02-33" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-33">
             <speaker>CLARIMOND.</speaker>
             <l n="735" xml:id="l735">Juste ciel ! Et que dois-je espérer désormais ?</l>
           </sp>
-          <sp xml:id="III02-34" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-34">
             <speaker>DAPHNIS.</speaker>
             <l n="736" xml:id="l736">Que je ne suis pas fille à vous aimer jamais.</l>
           </sp>
-          <sp xml:id="III02-35" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-35">
             <speaker>CLARIMOND.</speaker>
             <l n="737" xml:id="l737">C'est donc perdre mon temps que de plus y prétendre ?</l>
           </sp>
-          <sp xml:id="III02-36" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-36">
             <speaker>DAPHNIS.</speaker>
             <l n="738" xml:id="l738">Comme je perds ici le mien à vous entendre.</l>
           </sp>
-          <sp xml:id="III02-37" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-37">
             <speaker>CLARIMOND.</speaker>
             <l n="739" xml:id="l739">Me quittez-vous sitôt sans me vouloir guérir ?</l>
           </sp>
-          <sp xml:id="III02-38" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-38">
             <speaker>DAPHNIS.</speaker>
             <l n="740" xml:id="l740">Clarimond sans Daphnis peut et vivre et mourir.</l>
           </sp>
-          <sp xml:id="III02-39" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III02-39">
             <speaker>CLARIMOND.</speaker>
             <l n="741" xml:id="l741">Je mourrai toutefois, si je ne vous possède.</l>
           </sp>
-          <sp xml:id="III02-40" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III02-40">
             <speaker>DAPHNIS.</speaker>
             <l n="742" xml:id="l742">Tenez-vous donc pour mort, s'il vous faut ce remède.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III.</head>
-          <sp xml:id="III03-1" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III03-1">
             <speaker>CLARIMOND.</speaker>
             <l n="743" xml:id="l743">Tout dédaigné, je l'aime, et malgré sa rigueur,</l>
             <l n="744" xml:id="l744">Ses charmes plus puissants lui conservent mon coeur.</l>
@@ -1528,32 +1529,32 @@
             <l n="760" xml:id="l760">Pour dérober mon âme au pouvoir de tes yeux.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV.</head>
-          <sp xml:id="III04-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-1">
             <speaker>AMARANTE.</speaker>
             <l n="761" xml:id="l761">Monsieur, monsieur, un mot. L'air de votre visage</l>
             <l n="762" xml:id="l762">Témoigne un déplaisir caché dans le courage.</l>
             <l n="763" xml:id="l763">Vous quittez ma maîtresse un peu mal satisfait.</l>
           </sp>
-          <sp xml:id="III04-2" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III04-2">
             <speaker>CLARIMOND.</speaker>
             <l n="764" xml:id="l764">Ce que voit Amarante en est le moindre effet :</l>
             <l n="765" xml:id="l765">Je porte, malheureux, après de tels outrages,</l>
             <l n="766" xml:id="l766">Des douleurs sur le front, et dans le coeur des rages.</l>
           </sp>
-          <sp xml:id="III04-3" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-3">
             <speaker>AMARANTE.</speaker>
             <l n="767" xml:id="l767">Pour un peu de froideur, c'est trop désespérer.</l>
           </sp>
-          <sp xml:id="III04-4" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III04-4">
             <speaker>CLARIMOND.</speaker>
             <l n="768" xml:id="l768">Que ne dis-tu plutôt que c'est trop endurer ?</l>
             <l n="769" xml:id="l769">Je devrais être las d'un si cruel martyre,</l>
             <l n="770" xml:id="l770">Briser les fers honteux où me tient son empire,</l>
             <l n="771" xml:id="l771">Sans irriter mes maux avec un vain regret.</l>
           </sp>
-          <sp xml:id="III04-5" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-5">
             <speaker>AMARANTE.</speaker>
             <l n="772" xml:id="l772">Si je vous croyais homme à garder un secret,</l>
             <l n="773" xml:id="l773">Vous pourriez sur ce point apprendre quelque chose</l>
@@ -1561,21 +1562,21 @@
             <l n="775" xml:id="l775">L'erreur où je vous vois me fait compassion ;</l>
             <l n="776" xml:id="l776">Mais pourriez-vous avoir de la discrétion ?</l>
           </sp>
-          <sp xml:id="III04-6" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III04-6">
             <speaker>CLARIMOND.</speaker>
             <l n="777" xml:id="l777">Prends-en ma foi de gage, avec... Laisse-moi faire.</l>
           </sp>
-          <sp xml:id="III04-7" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-7">
             <speaker>AMARANTE.</speaker>
             <l n="778" xml:id="l778">Vous voulez justement m'obliger à me taire ;</l>
             <l n="779" xml:id="l779">Aux filles de ma sorte il suffit de la foi :</l>
             <l n="780" xml:id="l780">Réservez vos présents pour quelque autre que moi.</l>
           </sp>
-          <sp xml:id="III04-8" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III04-8">
             <speaker>CLARIMOND.</speaker>
-            <l n="781" xml:id="l781" part="I">Souffre...</l>
+            <l n="781" part="I" xml:id="l781">Souffre...</l>
           </sp>
-          <sp xml:id="III04-9" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-9">
             <speaker>AMARANTE.</speaker>
             <l part="F">Gardez-les, dis-je, ou je vous abandonne.</l>
             <l n="782" xml:id="l782">Daphnis a des rigueurs dont l'excès vous étonne ;</l>
@@ -1596,11 +1597,11 @@
             <l n="797" xml:id="l797">Nommez cette maxime ou prudence ou sottise,</l>
             <l n="798" xml:id="l798">C'est la seule raison qui fait qu'on vous méprise.</l>
           </sp>
-          <sp xml:id="III04-10" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III04-10">
             <speaker>CLARIMOND.</speaker>
             <l n="799" xml:id="l799">Hélas ! Et le moyen de croire tes discours ?</l>
           </sp>
-          <sp xml:id="III04-11" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-11">
             <speaker>AMARANTE.</speaker>
             <l n="800" xml:id="l800">De grâce, n'usez point si mal de mon secours :</l>
             <l n="801" xml:id="l801">Croyez les bons avis d'une bouche fidèle,</l>
@@ -1608,28 +1609,28 @@
             <l n="803" xml:id="l803">Derechef épargnez tous ces pas superflus ;</l>
             <l n="804" xml:id="l804">Parlez-en au bonhomme, et ne la voyez plus.</l>
           </sp>
-          <sp xml:id="III04-12" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III04-12">
             <speaker>CLARIMOND.</speaker>
             <l n="805" xml:id="l805">Tu ne flattes mon coeur que d'un espoir frivole.</l>
           </sp>
-          <sp xml:id="III04-13" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-13">
             <speaker>AMARANTE.</speaker>
             <l n="806" xml:id="l806">Hasardez seulement deux mots sur ma parole,</l>
             <l n="807" xml:id="l807">Et n'appréhendez point la honte d'un refus.</l>
           </sp>
-          <sp xml:id="III04-14" who="CLARIMOND">
+          <sp who="CLARIMOND" xml:id="III04-14">
             <speaker>CLARIMOND.</speaker>
             <l n="808" xml:id="l808">Mais si j'en recevais, je serais bien confus.</l>
             <l n="809" xml:id="l809">Un oncle pourra mieux concerter cette affaire.</l>
           </sp>
-          <sp xml:id="III04-15" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III04-15">
             <speaker>AMARANTE.</speaker>
             <l n="810" xml:id="l810">Ou par vous, ou par lui, ménagez bien le père.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V.</head>
-          <sp xml:id="III05-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III05-1">
             <speaker>AMARANTE.</speaker>
             <l n="811" xml:id="l811">Qu'aisément un esprit qui se laisse flatter</l>
             <l n="812" xml:id="l812">S'imagine un bonheur qu'il pense mériter !</l>
@@ -1644,72 +1645,72 @@
             <l n="821" xml:id="l821">S'il rencontrait le père, et que mon entreprise...</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="III06-1" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-1">
             <speaker>GÉRASTE.</speaker>
-            <l n="822" xml:id="l822" part="I">Amarante !</l>
+            <l n="822" part="I" xml:id="l822">Amarante !</l>
           </sp>
-          <sp xml:id="III06-2" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-2">
             <speaker>AMARANTE.</speaker>
             <l part="M">Monsieur !</l>
           </sp>
-          <sp xml:id="III06-3" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-3">
             <speaker>GÉRASTE.</speaker>
             <l part="F">Vous faites la surprise,</l>
             <l n="823" xml:id="l823">Encore que de si loin vous m'ayez vu venir,</l>
             <l n="824" xml:id="l824">Que Clarimond n'est plus à vous entretenir !</l>
             <l n="825" xml:id="l825">Je donne ainsi la chasse à ceux qui vous en content !</l>
           </sp>
-          <sp xml:id="III06-4" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-4">
             <speaker>AMARANTE.</speaker>
             <l n="826" xml:id="l826">À moi ? Mes vanités jusque-là ne se montent.</l>
           </sp>
-          <sp xml:id="III06-5" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-5">
             <speaker>GÉRASTE.</speaker>
             <l n="827" xml:id="l827">Il semblait toutefois parler d'affection.</l>
           </sp>
-          <sp xml:id="III06-6" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-6">
             <speaker>AMARANTE.</speaker>
             <l n="828" xml:id="l828">Oui, mais qu'estimez-vous de son intention ?</l>
           </sp>
-          <sp xml:id="III06-7" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-7">
             <speaker>GÉRASTE.</speaker>
             <l n="829" xml:id="l829">Je crois que ses desseins tendent au mariage.</l>
           </sp>
-          <sp xml:id="III06-8" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-8">
             <speaker>AMARANTE.</speaker>
-            <l n="830" xml:id="l830" part="I">Il est vrai.</l>
+            <l n="830" part="I" xml:id="l830">Il est vrai.</l>
           </sp>
-          <sp xml:id="III06-9" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-9">
             <speaker>GÉRASTE.</speaker>
             <l part="F">Quelque foi qu'il vous donne pour gage,</l>
             <l n="831" xml:id="l831">Il cherche à vous surprendre, et sous ce faux appas</l>
             <l n="832" xml:id="l832">Il cache des projets que vous n'entendez pas.</l>
           </sp>
-          <sp xml:id="III06-10" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-10">
             <speaker>AMARANTE.</speaker>
             <l n="833" xml:id="l833">Votre âge soupçonneux a toujours des chimères</l>
             <l n="834" xml:id="l834">Qui le font mal juger des coeurs les plus sincères.</l>
           </sp>
-          <sp xml:id="III06-11" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-11">
             <speaker>GÉRASTE.</speaker>
             <l n="835" xml:id="l835">Où les conditions n'ont point d'égalité,</l>
             <l n="836" xml:id="l836">L'amour ne se fait guère avec sincérité.</l>
           </sp>
-          <sp xml:id="III06-12" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-12">
             <speaker>AMARANTE.</speaker>
             <l n="837" xml:id="l837">Posé que cela soit : Clarimond me caresse ;</l>
             <l n="838" xml:id="l838">Mais si je vous disais que c'est pour ma maîtresse,</l>
             <l n="839" xml:id="l839">Et que le seul besoin qu'il a de mon secours,</l>
             <l n="840" xml:id="l840">Sortant d'avec Daphnis, l'arrête en mes discours ?</l>
           </sp>
-          <sp xml:id="III06-13" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-13">
             <speaker>GÉRASTE.</speaker>
             <l n="841" xml:id="l841">S'il a besoin de toi pour avoir bonne issue,</l>
             <l n="842" xml:id="l842">C'est signe que sa flamme est assez mal reçue.</l>
           </sp>
-          <sp xml:id="III06-14" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-14">
             <speaker>AMARANTE.</speaker>
             <l n="843" xml:id="l843">Pas tant qu'elle paraît et que vous présumez.</l>
             <l n="844" xml:id="l844">D'un mutuel amour leurs coeurs sont enflammés ;</l>
@@ -1721,7 +1722,7 @@
             <l n="850" xml:id="l850">Tâche par tous moyens d'avoir mes bonnes grâces ;</l>
             <l n="851" xml:id="l851">Et moi je l'entretiens toujours d'un peu d'espoir.</l>
           </sp>
-          <sp xml:id="III06-15" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-15">
             <speaker>GÉRASTE.</speaker>
             <l n="852" xml:id="l852">À ce compte, Daphnis est fort dans le devoir :</l>
             <l n="853" xml:id="l853">Je n'en puis souhaiter un meilleur témoignage,</l>
@@ -1731,7 +1732,7 @@
             <l n="857" xml:id="l857">Bien qu'elle pût encore un peu plus haut atteindre,</l>
             <l n="858" xml:id="l858">Je la veux enhardir à ne se plus contraindre.</l>
           </sp>
-          <sp xml:id="III06-16" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III06-16">
             <speaker>AMARANTE.</speaker>
             <l n="859" xml:id="l859">Vous n'en pourrez jamais tirer la vérité :</l>
             <l n="860" xml:id="l860">Honteuse de l'aimer sans votre autorité,</l>
@@ -1742,7 +1743,7 @@
             <l n="865" xml:id="l865">Mais on ouvre la porte. Hélas ! Je suis perdue,</l>
             <l n="866" xml:id="l866">Si j'ai tant de malheur qu'elle m'ait entendue.</l>
           </sp>
-          <sp xml:id="III06-17" who="GERASTE">
+          <sp who="GERASTE" xml:id="III06-17">
             <speaker>GÉRASTE.</speaker>
             <l n="867" xml:id="l867">Lui procurant du bien, elle croit la fâcher,</l>
             <l n="868" xml:id="l868">Et cette vaine peur la fait ainsi cacher.</l>
@@ -1752,9 +1753,9 @@
             <l n="872" xml:id="l872">Qui la puisse guérir du mal qu'elle ressent.</l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="III07">
           <head>SCÈNE VII. </head>
-          <sp xml:id="III07-1" who="GERASTE">
+          <sp who="GERASTE" xml:id="III07-1">
             <speaker>GÉRASTE.</speaker>
             <l n="873" xml:id="l873">Ma fille, c'est en vain que tu fais la discrète ;</l>
             <l n="874" xml:id="l874">J'ai découvert enfin ta passion secrète :</l>
@@ -1770,9 +1771,9 @@
             <l n="884" xml:id="l884">Que sans beaucoup de peine on me pourra gagner.</l>
           </sp>
         </div2>
-        <div2 xml:id="III08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="III08">
           <head>SCÈNE VIII.</head>
-          <sp xml:id="III08-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III08-1">
             <speaker>DAPHNIS.</speaker>
             <l n="885" xml:id="l885">D'aise et d'étonnement je demeure immobile.</l>
             <l n="886" xml:id="l886">D'où lui vient cette humeur de m'être si facile ?</l>
@@ -1791,53 +1792,53 @@
             <l n="899" xml:id="l899">Florame, il est tout vrai, dès lors que je te vis,</l>
             <l n="900" xml:id="l900">Un battement de coeur me fit de cet avis ;</l>
             <l n="901" xml:id="l901">Et mon père aujourd'hui souffre que dans son âme</l>
-            <l n="902" xml:id="l902" part="I">Les mêmes sentiments...</l>
+            <l n="902" part="I" xml:id="l902">Les mêmes sentiments...</l>
           </sp>
         </div2>
-        <div2 xml:id="III09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="III09">
           <head>SCÈNE IX.</head>
-          <sp xml:id="III09-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-1">
             <speaker>DAPHNIS.</speaker>
             <l part="F">Quoi ! Vous voilà, Florame ?</l>
             <l n="903" xml:id="l903">Je vous avais prié tantôt de me quitter.</l>
           </sp>
-          <sp xml:id="III09-2" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-2">
             <speaker>FLORAME.</speaker>
             <l n="904" xml:id="l904">Et je vous ai quittée aussi sans contester.</l>
           </sp>
-          <sp xml:id="III09-3" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-3">
             <speaker>DAPHNIS.</speaker>
             <l n="905" xml:id="l905">Mais revenir sitôt, c'est me faire une offense.</l>
           </sp>
-          <sp xml:id="III09-4" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-4">
             <speaker>FLORAME.</speaker>
             <l n="906" xml:id="l906">Quand j'aurais sur ce point reçu quelque défense,</l>
             <l n="907" xml:id="l907">Si vous saviez quels feux ont pressé mon retour,</l>
             <l n="908" xml:id="l908">Vous en pardonneriez le crime à mon amour.</l>
           </sp>
-          <sp xml:id="III09-5" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-5">
             <speaker>DAPHNIS.</speaker>
             <l n="909" xml:id="l909">Ne vous préparez point à dire des merveilles,</l>
             <l n="910" xml:id="l910">Pour me persuader des flammes sans pareilles.</l>
             <l n="911" xml:id="l911">Je crois que vous m'aimez, et c'est en croire plus</l>
             <l n="912" xml:id="l912">Que n'en exprimeraient vos discours superflus.</l>
           </sp>
-          <sp xml:id="III09-6" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-6">
             <speaker>FLORAME.</speaker>
             <l n="913" xml:id="l913">Mes feux, qu'ont redoublés ces propos adorables,</l>
             <l n="914" xml:id="l914">À force d'être crus deviennent incroyables,</l>
             <l n="915" xml:id="l915">Et vous n'en croyez rien qui ne soit au-dessous ;</l>
             <l n="916" xml:id="l916">Que ne m'est-il permis d'en croire autant de vous ?</l>
           </sp>
-          <sp xml:id="III09-7" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-7">
             <speaker>DAPHNIS.</speaker>
-            <l n="917" xml:id="l917" part="I">Votre croyance est libre.</l>
+            <l n="917" part="I" xml:id="l917">Votre croyance est libre.</l>
           </sp>
-          <sp xml:id="III09-8" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-8">
             <speaker>FLORAME.</speaker>
             <l part="F">Il me la faudrait vraie.</l>
           </sp>
-          <sp xml:id="III09-9" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-9">
             <speaker>DAPHNIS.</speaker>
             <l n="918" xml:id="l918">Mon coeur par mes regards vous fait trop voir sa plaie.</l>
             <l n="919" xml:id="l919">Un homme si savant au langage des yeux</l>
@@ -1849,14 +1850,14 @@
             <l n="925" xml:id="l925">Aussi j'ai vu mon père, et s'il vous faut tout dire,</l>
             <l n="926" xml:id="l926">Avec tous nos désirs sa volonté conspire.</l>
           </sp>
-          <sp xml:id="III09-10" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-10">
             <speaker>FLORAME.</speaker>
             <l n="927" xml:id="l927">Surpris, ravi, confus, je n'ai que repartir.</l>
             <l n="928" xml:id="l928">être aimé de Daphnis ! Un père y consentir !</l>
             <l n="929" xml:id="l929">Dans mon affection ne trouver plus d'obstacles !</l>
             <l n="930" xml:id="l930">Mon espoir n'eût osé concevoir ces miracles.</l>
           </sp>
-          <sp xml:id="III09-11" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-11">
             <speaker>DAPHNIS.</speaker>
             <l n="931" xml:id="l931">Miracles toutefois qu'Amarante a produits :</l>
             <l n="932" xml:id="l932">De sa jalouse humeur nous tirons ces doux fruits.</l>
@@ -1865,76 +1866,76 @@
             <l n="935" xml:id="l935">Du moins je le présume, et ne puis soupçonner</l>
             <l n="936" xml:id="l936">Que mon père sans elle ait pu rien deviner.</l>
           </sp>
-          <sp xml:id="III09-12" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-12">
             <speaker>FLORAME.</speaker>
             <l n="937" xml:id="l937">Les avis d'Amarante, en trahissant ma flamme,</l>
             <l n="938" xml:id="l938">N'ont point gagné Géraste en faveur de Florame.</l>
             <l n="939" xml:id="l939">Les ressorts d'un miracle ont un plus haut moteur,</l>
             <l n="940" xml:id="l940">Et tout autre qu'un dieu n'en peut être l'auteur.</l>
           </sp>
-          <sp xml:id="III09-13" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-13">
             <speaker>DAPHNIS.</speaker>
-            <l n="941" xml:id="l941" part="I">C'en est un que l'amour.</l>
+            <l n="941" part="I" xml:id="l941">C'en est un que l'amour.</l>
           </sp>
-          <sp xml:id="III09-14" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-14">
             <speaker>FLORAME.</speaker>
             <l part="F">Et vous verrez peut-être</l>
             <l n="942" xml:id="l942">Que son pouvoir divin se fait ici paraître,</l>
             <l n="943" xml:id="l943">Dont quelques grands effets, avant qu'il soit longtemps,</l>
             <l n="944" xml:id="l944">Vous rendront étonnée, et nos désirs contents.</l>
           </sp>
-          <sp xml:id="III09-15" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-15">
             <speaker>DAPHNIS.</speaker>
             <l n="945" xml:id="l945">Florame, après vos feux et l'aveu de mon père,</l>
             <l n="946" xml:id="l946">L'amour n'a point d'effets capables de me plaire.</l>
           </sp>
-          <sp xml:id="III09-16" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-16">
             <speaker>FLORAME.</speaker>
             <l n="947" xml:id="l947">Aimez-en le premier, et recevez la foi</l>
             <l n="948" xml:id="l948">D'un bienheureux amant qu'il met sous votre loi.</l>
           </sp>
-          <sp xml:id="III09-17" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-17">
             <speaker>DAPHNIS.</speaker>
             <l n="949" xml:id="l949">Vous, prisez le dernier qui vous donne la mienne.</l>
           </sp>
-          <sp xml:id="III09-18" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-18">
             <speaker>FLORAME.</speaker>
             <l n="950" xml:id="l950">Quoique dorénavant Amarante survienne,</l>
             <l n="951" xml:id="l951">Je crois que nos discours iront d'un pas égal,</l>
             <l n="952" xml:id="l952">Sans donner sur le rhume ou gauchir sur le bal.</l>
           </sp>
-          <sp xml:id="III09-19" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-19">
             <speaker>DAPHNIS.</speaker>
             <l n="953" xml:id="l953">Si je puis tant soit peu dissimuler ma joie,</l>
             <l n="954" xml:id="l954">Et que dessus mon front son excès ne se voie,</l>
             <l n="955" xml:id="l955">Je me jouerai bien d'elle et des empêchements</l>
             <l n="956" xml:id="l956">Que son adresse apporte à nos contentements.</l>
           </sp>
-          <sp xml:id="III09-20" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-20">
             <speaker>FLORAME.</speaker>
             <l n="957" xml:id="l957">J'en apprendrai de vous l'agréable nouvelle.</l>
             <l n="958" xml:id="l958">Un ordre nécessaire au logis me rappelle,</l>
             <l n="959" xml:id="l959">Et doit fort avancer le succès de nos voeux.</l>
           </sp>
-          <sp xml:id="III09-21" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-21">
             <speaker>DAPHNIS.</speaker>
             <l n="960" xml:id="l960">Nous n'avons plus qu'une âme et qu'un vouloir nous deux.</l>
             <l n="961" xml:id="l961">Bien que vous éloigner ce me soit un martyre,</l>
             <l n="962" xml:id="l962">Puisque vous le voulez, je n'y puis contredire.</l>
             <l n="963" xml:id="l963">Mais quand dois-je espérer de vous revoir ici ?</l>
           </sp>
-          <sp xml:id="III09-22" who="FLORAME">
+          <sp who="FLORAME" xml:id="III09-22">
             <speaker>FLORAME.</speaker>
-            <l n="964" xml:id="l964" part="I">Dans une heure au plus tard.</l>
+            <l n="964" part="I" xml:id="l964">Dans une heure au plus tard.</l>
           </sp>
-          <sp xml:id="III09-23" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III09-23">
             <speaker>DAPHNIS.</speaker>
             <l part="F">Allez donc : la voici.</l>
           </sp>
         </div2>
-        <div2 xml:id="III10" type="scene" n="10">
+        <div2 n="10" type="scene" xml:id="III10">
           <head>SCÈNE X.</head>
-          <sp xml:id="III10-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III10-1">
             <speaker>DAPHNIS.</speaker>
             <l n="965" xml:id="l965">Amarante, vraiment vous êtes fort jolie ;</l>
             <l n="966" xml:id="l966">Vous n'égayez pas mal votre mélancolie ;</l>
@@ -1945,11 +1946,11 @@
             <l n="971" xml:id="l971">Et pour donner couleur à vos détractions,</l>
             <l n="972" xml:id="l972">Vous lisez fort avant dans mes intentions.</l>
           </sp>
-          <sp xml:id="III10-2" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III10-2">
             <speaker>AMARANTE.</speaker>
             <l n="973" xml:id="l973">Moi ! Que de vous j'osasse aucunement médire !</l>
           </sp>
-          <sp xml:id="III10-3" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III10-3">
             <speaker>DAPHNIS.</speaker>
             <l n="974" xml:id="l974">Voyez-vous, Amarante, il n'est plus temps de rire.</l>
             <l n="975" xml:id="l975">Vous avez vu mon père, avec qui vos discours</l>
@@ -1961,7 +1962,7 @@
             <l n="981" xml:id="l981">Mais passe pour le croire ; il fallait que mon père</l>
             <l n="982" xml:id="l982">De votre confidence apprît cette chimère ?</l>
           </sp>
-          <sp xml:id="III10-4" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III10-4">
             <speaker>AMARANTE.</speaker>
             <l n="983" xml:id="l983">S'il croit que vous l'aimez, c'est sur quelque soupçon</l>
             <l n="984" xml:id="l984">Où je ne contribue en aucune façon.</l>
@@ -1970,7 +1971,7 @@
             <l n="987" xml:id="l987">Et quand je vous croirais dans cet indigne choix,</l>
             <l n="988" xml:id="l988">Je sais ce que je suis et ce que je vous dois.</l>
           </sp>
-          <sp xml:id="III10-5" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III10-5">
             <speaker>DAPHNIS.</speaker>
             <l n="989" xml:id="l989">Ne tranchez point ainsi de la respectueuse :</l>
             <l n="990" xml:id="l990">Votre peine après tout vous est bien fructueuse ;</l>
@@ -1985,13 +1986,13 @@
             <l n="999" xml:id="l999">Pour fruit de vos labeurs si cela vous suffit,</l>
             <l n="1000" xml:id="l1000">C'est acquérir ma haine avec peu de profit.</l>
           </sp>
-          <sp xml:id="III10-6" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III10-6">
             <speaker>AMARANTE.</speaker>
             <l n="1001" xml:id="l1001">Si touchant vos amours on sait rien de ma bouche,</l>
             <l n="1002" xml:id="l1002">Que je puisse à vos yeux devenir une souche !</l>
-            <l n="1003" xml:id="l1003" part="I">Que le ciel...</l>
+            <l n="1003" part="I" xml:id="l1003">Que le ciel...</l>
           </sp>
-          <sp xml:id="III10-7" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="III10-7">
             <speaker>DAPHNIS.</speaker>
             <l part="F">Finissez vos imprécations.</l>
             <l n="1004" xml:id="l1004">J'aime votre malice et vos délations.</l>
@@ -2001,9 +2002,9 @@
             <l n="1008" xml:id="l1008">N'ont fait que me donner Florame pour époux.</l>
           </sp>
         </div2>
-        <div2 xml:id="III11" type="scene" n="11">
+        <div2 n="11" type="scene" xml:id="III11">
           <head>SCÈNE XI.</head>
-          <sp xml:id="III11-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="III11-1">
             <speaker>AMARANTE.</speaker>
             <l n="1009" xml:id="l1009">Ai-je bien entendu ? Sa belle humeur se joue,</l>
             <l n="1010" xml:id="l1010">Et par plaisir soi-même elle se désavoue.</l>
@@ -2020,11 +2021,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE.</head>
-          <sp xml:id="IV01-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV01-1">
             <speaker>DAPHNIS.</speaker>
             <l n="1021" xml:id="l1021">Qu'en l'attente de ce qu'on aime</l>
             <l n="1022" xml:id="l1022">Une heure est fâcheuse à passer !</l>
@@ -2045,44 +2046,44 @@
             <l n="1037" xml:id="l1037">Je dois rougir de ma faiblesse ;</l>
             <l n="1038" xml:id="l1038">C'est être trop bonne en effet.</l>
             <l n="1039" xml:id="l1039">Daphnis, fais un peu la maîtresse,</l>
-            <l n="1040" xml:id="l1040" part="I">Et souviens-toi du moins...</l>
+            <l n="1040" part="I" xml:id="l1040">Et souviens-toi du moins...</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II.</head>
-          <sp xml:id="IV02-1" who="GERASTE">
+          <sp who="GERASTE" xml:id="IV02-1">
             <speaker>GÉRASTE.</speaker>
             <l part="F">Adieu, cela vaut fait,</l>
             <l n="1041" xml:id="l1041">Tu l'en peux assurer. Ma fille, je présume,</l>
             <l n="1042" xml:id="l1042">Quelques feux dans ton coeur que ton amant allume,</l>
             <l n="1043" xml:id="l1043">Que tu ne voudrais pas sortir de ton devoir.</l>
           </sp>
-          <sp xml:id="IV02-2" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV02-2">
             <speaker>DAPHNIS.</speaker>
             <l n="1044" xml:id="l1044">C'est ce que le passé vous a pu faire voir.</l>
           </sp>
-          <sp xml:id="IV02-3" who="GERASTE">
+          <sp who="GERASTE" xml:id="IV02-3">
             <speaker>GÉRASTE.</speaker>
             <l n="1045" xml:id="l1045">Mais si pour en tirer une preuve plus claire,</l>
             <l n="1046" xml:id="l1046">Je disais qu'il faut prendre un sentiment contraire,</l>
             <l n="1047" xml:id="l1047">Qu'une autre occasion te donne un autre amant ?</l>
           </sp>
-          <sp xml:id="IV02-4" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV02-4">
             <speaker>DAPHNIS.</speaker>
             <l n="1048" xml:id="l1048">Il serait un peu tard pour un tel changement :</l>
             <l n="1049" xml:id="l1049">Sous votre autorité j'ai dévoilé mon âme,</l>
             <l n="1050" xml:id="l1050">J'ai découvert mon coeur à l'objet de ma flamme,</l>
             <l n="1051" xml:id="l1051">Et c'est sous votre aveu qu'il a reçu ma foi.</l>
           </sp>
-          <sp xml:id="IV02-5" who="GERASTE">
+          <sp who="GERASTE" xml:id="IV02-5">
             <speaker>GÉRASTE.</speaker>
             <l n="1052" xml:id="l1052">Oui, mais je viens de faire un autre choix pour toi.</l>
           </sp>
-          <sp xml:id="IV02-6" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV02-6">
             <speaker>DAPHNIS.</speaker>
             <l n="1053" xml:id="l1053">Ma foi ne permet plus une telle inconstance.</l>
           </sp>
-          <sp xml:id="IV02-7" who="GERASTE">
+          <sp who="GERASTE" xml:id="IV02-7">
             <speaker>GÉRASTE.</speaker>
             <l n="1054" xml:id="l1054">Et moi, je ne saurais souffrir de résistance.</l>
             <l n="1055" xml:id="l1055">Si ce gage est donné par mon consentement,</l>
@@ -2098,17 +2099,17 @@
             <l n="1065" xml:id="l1065">N'importe toutefois, la parole me lie,</l>
             <l n="1066" xml:id="l1066">Et mon amour ainsi l'a promis à Célie :</l>
             <l n="1067" xml:id="l1067">Florise ne se peut acquérir qu'à ce prix ;</l>
-            <l n="1068" xml:id="l1068" part="I">Si Florame...</l>
+            <l n="1068" part="I" xml:id="l1068">Si Florame...</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III.</head>
-          <sp xml:id="IV03-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="IV03-1">
             <speaker>AMARANTE.</speaker>
             <l part="F">Monsieur, vous vous êtes mépris :</l>
-            <l n="1069" xml:id="l1069" part="I">C'est Clarimond qu'elle aime.</l>
+            <l n="1069" part="I" xml:id="l1069">C'est Clarimond qu'elle aime.</l>
           </sp>
-          <sp xml:id="IV03-2" who="GERASTE">
+          <sp who="GERASTE" xml:id="IV03-2">
             <speaker>GÉRASTE.</speaker>
             <l part="F">Et ma plus grande peine</l>
             <l n="1070" xml:id="l1070">N'est que d'en avoir eu la preuve trop certaine.</l>
@@ -2119,12 +2120,12 @@
             <l n="1075" xml:id="l1075">Et prenant désormais un mouvement plus sain,</l>
             <l n="1076" xml:id="l1076">Ne s'obstinerait pas à rompre mon dessein.</l>
           </sp>
-          <sp xml:id="IV03-3" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="IV03-3">
             <speaker>AMARANTE.</speaker>
             <l n="1077" xml:id="l1077">C'est ce choix inégal qui vous la fait rebelle ;</l>
             <l n="1078" xml:id="l1078">Mais pour tout autre amant n'appréhendez rien d'elle.</l>
           </sp>
-          <sp xml:id="IV03-4" who="GERASTE">
+          <sp who="GERASTE" xml:id="IV03-4">
             <speaker>GÉRASTE.</speaker>
             <l n="1079" xml:id="l1079">Florame a peu de bien, mais pour quelque raison</l>
             <l n="1080" xml:id="l1080">C'est lui seul dont je fais l'appui de ma maison.</l>
@@ -2135,22 +2136,22 @@
             <l n="1085" xml:id="l1085">Résous-la, si tu peux, à contenter un père ;</l>
             <l n="1086" xml:id="l1086">Fais qu'elle aime Florame ou craigne ma colère.</l>
           </sp>
-          <sp xml:id="IV03-5" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="IV03-5">
             <speaker>AMARANTE.</speaker>
             <l n="1087" xml:id="l1087">Puisque vous le voulez, j'y ferai mon pouvoir :</l>
             <l n="1088" xml:id="l1088">C'est chose toutefois dont j'ai si peu d'espoir,</l>
             <l n="1089" xml:id="l1089">Que je craindrais plutôt de l'aigrir davantage.</l>
           </sp>
-          <sp xml:id="IV03-6" who="GERASTE">
+          <sp who="GERASTE" xml:id="IV03-6">
             <speaker>GÉRASTE.</speaker>
             <l n="1090" xml:id="l1090">Il est tant de moyens de fléchir un courage !</l>
             <l n="1091" xml:id="l1091">Trouve pour la gagner quelque subtil appas :</l>
             <l n="1092" xml:id="l1092">La récompense après ne te manquera pas.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV.</head>
-          <sp xml:id="IV04-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="IV04-1">
             <speaker>AMARANTE.</speaker>
             <l n="1093" xml:id="l1093">Accorde qui pourra le père avec la fille !</l>
             <l n="1094" xml:id="l1094">L'égarement d'esprit règne sur la famille.</l>
@@ -2166,42 +2167,42 @@
             <l n="1104" xml:id="l1104">Un peu plus en repos j'en attendrai la fin.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V.</head>
-          <sp xml:id="IV05-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-1">
             <speaker>FLORAME.</speaker>
             <l n="1105" xml:id="l1105">Sans me voir elle rentre, et quelque bon génie</l>
             <l n="1106" xml:id="l1106">Me sauve de ses yeux et de sa tyrannie.</l>
             <l n="1107" xml:id="l1107">Je ne me croyais pas quitte de ses discours,</l>
             <l n="1108" xml:id="l1108">À moins que sa maîtresse en vînt rompre le cours.</l>
           </sp>
-          <sp xml:id="IV05-2" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-2">
             <speaker>DAMON.</speaker>
             <l n="1109" xml:id="l1109">Je voudrais t'avoir vu dedans cette contrainte.</l>
           </sp>
-          <sp xml:id="IV05-3" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-3">
             <speaker>FLORAME.</speaker>
             <l n="1110" xml:id="l1110">Peut-être voudrais-tu qu'elle empêchât ma plainte ?</l>
           </sp>
-          <sp xml:id="IV05-4" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-4">
             <speaker>DAMON.</speaker>
             <l n="1111" xml:id="l1111">Si Théante sait tout, sans raison tu t'en plains :</l>
             <l n="1112" xml:id="l1112">Je t'ai dit ses secrets, comme à lui tes desseins ;</l>
             <l n="1113" xml:id="l1113">Il voit dedans ton coeur, tu lis dans son courage,</l>
             <l n="1114" xml:id="l1114">Et je vous fais combattre ainsi sans avantage.</l>
           </sp>
-          <sp xml:id="IV05-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-5">
             <speaker>FLORAME.</speaker>
             <l n="1115" xml:id="l1115">Toutefois au combat tu n'as pu l'engager.</l>
           </sp>
-          <sp xml:id="IV05-6" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-6">
             <speaker>DAMON.</speaker>
             <l n="1116" xml:id="l1116">Sa générosité n'en craint pas le danger ;</l>
             <l n="1117" xml:id="l1117">Mais cela choque un peu sa prudence amoureuse,</l>
             <l n="1118" xml:id="l1118">Vu que la fuite en est la fin la plus heureuse,</l>
             <l n="1119" xml:id="l1119">Et qu'il faut que, l'un mort, l'autre tire pays.</l>
           </sp>
-          <sp xml:id="IV05-7" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-7">
             <speaker>FLORAME.</speaker>
             <l n="1120" xml:id="l1120">Malgré le déplaisir de mes secrets trahis,</l>
             <l n="1121" xml:id="l1121">Je ne puis, cher ami, qu'avec toi je ne rie</l>
@@ -2210,7 +2211,7 @@
             <l n="1124" xml:id="l1124">C'est véritablement en savoir plus que nous,</l>
             <l n="1125" xml:id="l1125">Et te mettre en sa place avec assez d'adresse.</l>
           </sp>
-          <sp xml:id="IV05-8" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-8">
             <speaker>DAMON.</speaker>
             <l n="1126" xml:id="l1126">Qu'importe à quels périls il gagne une maîtresse ?</l>
             <l n="1127" xml:id="l1127">Que ses rivaux entre eux fassent mille combats,</l>
@@ -2218,24 +2219,24 @@
             <l n="1129" xml:id="l1129">Tout lui semblera bon, pourvu que sans en être</l>
             <l n="1130" xml:id="l1130">Il puisse de ces lieux les faire disparaître.</l>
           </sp>
-          <sp xml:id="IV05-9" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-9">
             <speaker>FLORAME.</speaker>
             <l n="1131" xml:id="l1131">Mais ton service offert hasardait bien ta foi,</l>
             <l n="1132" xml:id="l1132">Et s'il eût eu du coeur, t'engageait contre moi.</l>
           </sp>
-          <sp xml:id="IV05-10" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-10">
             <speaker>DAMON.</speaker>
             <l n="1133" xml:id="l1133">Je savais trop que l'offre en serait rejetée :</l>
             <l n="1134" xml:id="l1134">Depuis plus de dix ans je connais sa portée.</l>
             <l n="1135" xml:id="l1135">Il ne devient mutin que fort malaisément,</l>
             <l n="1136" xml:id="l1136">Et préfère la ruse à l'éclaircissement.</l>
           </sp>
-          <sp xml:id="IV05-11" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-11">
             <speaker>FLORAME.</speaker>
             <l n="1137" xml:id="l1137">Les maximes qu'il tient pour conserver sa vie</l>
             <l n="1138" xml:id="l1138">T'ont donné des plaisirs où je te porte envie.</l>
           </sp>
-          <sp xml:id="IV05-12" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-12">
             <speaker>DAMON.</speaker>
             <l n="1139" xml:id="l1139">Tu peux incontinent les goûter si tu veux.</l>
             <l n="1140" xml:id="l1140">Lui, qui doute fort peu du succès de ses voeux,</l>
@@ -2246,26 +2247,26 @@
             <l n="1145" xml:id="l1145">Et seul, à la faveur de quelque mot pour rire,</l>
             <l n="1146" xml:id="l1146">Prendre l'occasion de conter son martyre ?</l>
           </sp>
-          <sp xml:id="IV05-13" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-13">
             <speaker>FLORAME.</speaker>
             <l n="1147" xml:id="l1147">Mais s'il nous trouve ensemble, il pourra soupçonner</l>
             <l n="1148" xml:id="l1148">Que nous prenons plaisir tous deux à le berner.</l>
           </sp>
-          <sp xml:id="IV05-14" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-14">
             <speaker>DAMON.</speaker>
             <l n="1149" xml:id="l1149">De peur que nous voyant il conçût quelque ombrage,</l>
             <l n="1150" xml:id="l1150">J'avais mis tout exprès Cléon sur le passage.</l>
-            <l n="1151" xml:id="l1151" part="I">Théante approche-t-il ?</l>
+            <l n="1151" part="I" xml:id="l1151">Théante approche-t-il ?</l>
           </sp>
-          <sp xml:id="IV05-15" who="CLEON">
+          <sp who="CLEON" xml:id="IV05-15">
             <speaker>CLÉON.</speaker>
             <l part="F">Il est en ce carrefour.</l>
           </sp>
-          <sp xml:id="IV05-16" who="DAMON">
+          <sp who="DAMON" xml:id="IV05-16">
             <speaker>DAMON.</speaker>
             <l n="1152" xml:id="l1152">Adieu donc : nous pourrons le jouer tour à tour.</l>
           </sp>
-          <sp xml:id="IV05-17" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV05-17">
             <speaker>FLORAME.</speaker>
             <l n="1153" xml:id="l1153">Je m'étonne comment tant de belles parties</l>
             <l n="1154" xml:id="l1154">En cet illustre amant sont si mal assorties,</l>
@@ -2274,30 +2275,30 @@
             <l n="1157" xml:id="l1157">Pour tant d'ambition, c'est bien peu de courage.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="IV06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="IV06-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-1">
             <speaker>FLORAME.</speaker>
             <l n="1158" xml:id="l1158">Quelle surprise, ami, paraît sur ton visage ?</l>
           </sp>
-          <sp xml:id="IV06-2" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-2">
             <speaker>THÉANTE.</speaker>
             <l n="1159" xml:id="l1159">T'ayant cherché longtemps, je demeure confus</l>
             <l n="1160" xml:id="l1160">De t'avoir rencontré quand je n'y pensais plus.</l>
           </sp>
-          <sp xml:id="IV06-3" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-3">
             <speaker>FLORAME.</speaker>
             <l n="1161" xml:id="l1161">Parle plus franchement : fâché de ta promesse,</l>
             <l n="1162" xml:id="l1162">Tu veux et n'oserais reprendre ta maîtresse ?</l>
             <l n="1163" xml:id="l1163">Ta passion, qui souffre une trop dure loi,</l>
             <l n="1164" xml:id="l1164">Pour la gouverner seul te dérobait de moi ?</l>
           </sp>
-          <sp xml:id="IV06-4" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-4">
             <speaker>THÉANTE.</speaker>
             <l n="1165" xml:id="l1165">De peur que ton esprit formât cette croyance,</l>
             <l n="1166" xml:id="l1166">De l'aborder sans toi je faisais conscience.</l>
           </sp>
-          <sp xml:id="IV06-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-5">
             <speaker>FLORAME.</speaker>
             <l n="1167" xml:id="l1167">C'est ce qui t'obligeait sans doute à me chercher ?</l>
             <l n="1168" xml:id="l1168">Mais ne te prive plus d'un entretien si cher.</l>
@@ -2308,21 +2309,21 @@
             <l n="1173" xml:id="l1173">J'adore une beauté qui peut disposer d'elle,</l>
             <l n="1174" xml:id="l1174">Et seconder mes feux sans se rendre infidèle.</l>
           </sp>
-          <sp xml:id="IV06-6" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-6">
             <speaker>THÉANTE.</speaker>
-            <l n="1175" xml:id="l1175" part="I">Tu veux dire Daphnis ?</l>
+            <l n="1175" part="I" xml:id="l1175">Tu veux dire Daphnis ?</l>
           </sp>
-          <sp xml:id="IV06-7" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-7">
             <speaker>FLORAME.</speaker>
             <l part="F">Je ne puis te celer</l>
             <l n="1176" xml:id="l1176">Qu'elle est l'unique objet pour qui je veux brûler.</l>
           </sp>
-          <sp xml:id="IV06-8" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-8">
             <speaker>THÉANTE.</speaker>
             <l n="1177" xml:id="l1177">Le bruit vole déjà qu'elle est pour toi sans glace,</l>
             <l n="1178" xml:id="l1178">Et déjà d'un cartel Clarimond te menace.</l>
           </sp>
-          <sp xml:id="IV06-9" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-9">
             <speaker>FLORAME.</speaker>
             <l n="1179" xml:id="l1179">Qu'il vienne, ce rival, apprendre, à son malheur,</l>
             <l n="1180" xml:id="l1180">Que s'il me passe en biens, il me cède en valeur.</l>
@@ -2333,7 +2334,7 @@
             <l n="1185" xml:id="l1185">Et son père, amoureux du bruit de ma vaillance,</l>
             <l n="1186" xml:id="l1186">La fera sur ses biens emporter la balance.</l>
           </sp>
-          <sp xml:id="IV06-10" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-10">
             <speaker>THÉANTE.</speaker>
             <l n="1187" xml:id="l1187">Tu n'en peux espérer un moindre événement :</l>
             <l n="1188" xml:id="l1188">L'heur suit dans les duels le plus heureux amant ;</l>
@@ -2348,7 +2349,7 @@
             <l n="1197" xml:id="l1197">Adieu : puisse le ciel à ton amour parfaite</l>
             <l n="1198" xml:id="l1198">Accorder un succès tel que je le souhaite !</l>
           </sp>
-          <sp xml:id="IV06-11" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-11">
             <speaker>FLORAME.</speaker>
             <l n="1199" xml:id="l1199">Ce cartel, ce me semble, est trop long à venir :</l>
             <l n="1200" xml:id="l1200">Mon courage bouillant ne se peut contenir ;</l>
@@ -2358,7 +2359,7 @@
             <l n="1204" xml:id="l1204">Dis-lui que pour demain il choisisse un second,</l>
             <l n="1205" xml:id="l1205">Et que nous l'attendrons au château de Bissêtre.</l>
           </sp>
-          <sp xml:id="IV06-12" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-12">
             <speaker>THÉANTE.</speaker>
             <l n="1206" xml:id="l1206">J'adore ce grand coeur qu'ici tu fais paraître,</l>
             <l n="1207" xml:id="l1207">Et demeure ravi du trop d'affection</l>
@@ -2378,66 +2379,66 @@
             <l n="1221" xml:id="l1221">Avise encore un coup : ta valeur inquiète</l>
             <l n="1222" xml:id="l1222">En d'extrêmes périls un peu trop tôt te jette.</l>
           </sp>
-          <sp xml:id="IV06-13" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-13">
             <speaker>FLORAME.</speaker>
             <l n="1223" xml:id="l1223">Quels périls ? L'heur y suit le plus heureux amant.</l>
           </sp>
-          <sp xml:id="IV06-14" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-14">
             <speaker>THÉANTE.</speaker>
             <l n="1224" xml:id="l1224">Quelquefois le hasard en dispose autrement.</l>
           </sp>
-          <sp xml:id="IV06-15" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-15">
             <speaker>FLORAME.</speaker>
             <l n="1225" xml:id="l1225">Clarimond n'eut jamais qu'une valeur commune.</l>
           </sp>
-          <sp xml:id="IV06-16" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-16">
             <speaker>THÉANTE.</speaker>
             <l n="1226" xml:id="l1226">La valeur aux duels fait moins que la fortune.</l>
           </sp>
-          <sp xml:id="IV06-17" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-17">
             <speaker>FLORAME.</speaker>
             <l n="1227" xml:id="l1227">C'est par là seulement qu'on mérite Daphnis.</l>
           </sp>
-          <sp xml:id="IV06-18" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-18">
             <speaker>THÉANTE.</speaker>
             <l n="1228" xml:id="l1228">Mais plutôt de ses yeux par là tu te bannis.</l>
           </sp>
-          <sp xml:id="IV06-19" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-19">
             <speaker>FLORAME.</speaker>
             <l n="1229" xml:id="l1229">Cette belle action pourra gagner son père.</l>
           </sp>
-          <sp xml:id="IV06-20" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-20">
             <speaker>THÉANTE.</speaker>
             <l n="1230" xml:id="l1230">Je le souhaite ainsi plus que je ne l'espère.</l>
           </sp>
-          <sp xml:id="IV06-21" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-21">
             <speaker>FLORAME.</speaker>
             <l n="1231" xml:id="l1231">Acceptant un cartel, suis-je plus assuré ?</l>
           </sp>
-          <sp xml:id="IV06-22" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-22">
             <speaker>THÉANTE.</speaker>
             <l n="1232" xml:id="l1232">Où l'honneur souffrirait rien n'est considéré.</l>
           </sp>
-          <sp xml:id="IV06-23" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-23">
             <speaker>FLORAME.</speaker>
             <l n="1233" xml:id="l1233">Je ne puis résister à des raisons si fortes ;</l>
             <l n="1234" xml:id="l1234">Sur ma bouillante ardeur malgré moi tu l'emportes :</l>
-            <l n="1235" xml:id="l1235" part="I">J'attendrai qu'on m'attaque.</l>
+            <l n="1235" part="I" xml:id="l1235">J'attendrai qu'on m'attaque.</l>
           </sp>
-          <sp xml:id="IV06-24" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-24">
             <speaker>THÉANTE.</speaker>
             <l part="M">Adieu donc.</l>
           </sp>
-          <sp xml:id="IV06-25" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-25">
             <speaker>FLORAME.</speaker>
             <l part="F">En ce cas,</l>
             <l n="1236" xml:id="l1236">Souviens-t'en, cher ami, tu me promets ton bras ?</l>
           </sp>
-          <sp xml:id="IV06-26" who="THEANTE">
+          <sp who="THEANTE" xml:id="IV06-26">
             <speaker>THÉANTE.</speaker>
-            <l n="1237" xml:id="l1237" part="I">Dispose de ma vie.</l>
+            <l n="1237" part="I" xml:id="l1237">Dispose de ma vie.</l>
           </sp>
-          <sp xml:id="IV06-27" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV06-27">
             <speaker>FLORAME.</speaker>
             <l part="F">Elle est fort assurée,</l>
             <l n="1238" xml:id="l1238">Si rien que ce duel n'empêche sa durée.</l>
@@ -2447,20 +2448,20 @@
             <l n="1242" xml:id="l1242">À battre ses raisons par des raisons contraires.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="IV07">
           <head>SCÈNE VII.</head>
-          <sp xml:id="IV07-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV07-1">
             <speaker>DAPHNIS.</speaker>
             <l n="1243" xml:id="l1243">Je n'osais t'aborder les yeux baignés de pleurs,</l>
             <l n="1244" xml:id="l1244">Et devant ce rival t'apprendre nos malheurs.</l>
           </sp>
-          <sp xml:id="IV07-2" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV07-2">
             <speaker>FLORAME.</speaker>
             <l n="1245" xml:id="l1245">Vous me jetez, madame, en d'étranges alarmes.</l>
             <l n="1246" xml:id="l1246">Dieux ! Et d'où peut venir ce déluge de larmes ?</l>
-            <l n="1247" xml:id="l1247" part="I">Le bonhomme est-il mort ?</l>
+            <l n="1247" part="I" xml:id="l1247">Le bonhomme est-il mort ?</l>
           </sp>
-          <sp xml:id="IV07-3" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV07-3">
             <speaker>DAPHNIS.</speaker>
             <l part="F">Non, mais il se dédit ;</l>
             <l n="1248" xml:id="l1248">Tout amour désormais pour toi m'est interdit :</l>
@@ -2473,7 +2474,7 @@
             <l n="1255" xml:id="l1255">Je ne puis conserver mon devoir et ma foi,</l>
             <l n="1256" xml:id="l1256">Ni sans crime brûler pour d'autres ni pour toi.</l>
           </sp>
-          <sp xml:id="IV07-4" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV07-4">
             <speaker>FLORAME.</speaker>
             <l n="1257" xml:id="l1257">Le nom de cet amant, dont l'indiscrète envie</l>
             <l n="1258" xml:id="l1258">À mes ressentiments vient apporter sa vie !</l>
@@ -2482,7 +2483,7 @@
             <l n="1261" xml:id="l1261">Et qui, sur quelque orgueil que son amour se fonde,</l>
             <l n="1262" xml:id="l1262">N'a que jusqu'à ma vue à demeurer au monde !</l>
           </sp>
-          <sp xml:id="IV07-5" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV07-5">
             <speaker>DAPHNIS.</speaker>
             <l n="1263" xml:id="l1263">Je n'aime pas si mal que de m'en informer :</l>
             <l n="1264" xml:id="l1264">Je t'aurais fait trop voir que j'eusse pu l'aimer.</l>
@@ -2499,7 +2500,7 @@
             <l n="1275" xml:id="l1275">Tout ce que peut le monde offrir à mes ardeurs</l>
             <l n="1276" xml:id="l1276">De mérites, d'appas, de biens et de grandeurs.</l>
           </sp>
-          <sp xml:id="IV07-6" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV07-6">
             <speaker>FLORAME.</speaker>
             <l n="1277" xml:id="l1277">Qu'avec des mots si doux vous m'êtes inhumaine !</l>
             <l n="1278" xml:id="l1278">Vous me comblez de joie et redoublez ma peine.</l>
@@ -2514,7 +2515,7 @@
             <l n="1287" xml:id="l1287">Peut-il rendre sa vie à de plus heureux coups,</l>
             <l n="1288" xml:id="l1288">Ou mourir plus content que pour vous et par vous ?</l>
           </sp>
-          <sp xml:id="IV07-7" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="IV07-7">
             <speaker>DAPHNIS.</speaker>
             <l n="1289" xml:id="l1289">Puisque de nos destins la rigueur trop sévère</l>
             <l n="1290" xml:id="l1290">Oppose à nos désirs l'autorité d'un père,</l>
@@ -2528,9 +2529,9 @@
             <l n="1298" xml:id="l1298">Ou d'être à ta Daphnis ou de n'être à personne.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="IV08">
           <head>SCÈNE VIII.</head>
-          <sp xml:id="IV08-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV08-1">
             <speaker>FLORAME.</speaker>
             <l n="1299" xml:id="l1299">Dépourvu de conseil comme de sentiment,</l>
             <l n="1300" xml:id="l1300">L'excès de ma douleur m'ôte le jugement.</l>
@@ -2574,19 +2575,19 @@
             <l n="1338" xml:id="l1338">Ainsi rien ne me venge, et tout me désespère.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="IV09">
           <head>SCÈNE IX.</head>
-          <sp xml:id="IV09-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV09-1">
             <speaker>FLORAME.</speaker>
-            <l n="1339" xml:id="l1339" part="I">Célie...</l>
+            <l n="1339" part="I" xml:id="l1339">Célie...</l>
           </sp>
-          <sp xml:id="IV09-2" who="CELIE">
+          <sp who="CELIE" xml:id="IV09-2">
             <speaker>CÉLIE.</speaker>
             <l part="F">Eh bien, Célie ? Enfin elle a tant fait,</l>
             <l n="1340" xml:id="l1340">Qu'à vos désirs Géraste accorde leur effet.</l>
             <l n="1341" xml:id="l1341">Quel visage avez-vous ? Votre aise vous transporte.</l>
           </sp>
-          <sp xml:id="IV09-3" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV09-3">
             <speaker>FLORAME.</speaker>
             <l n="1342" xml:id="l1342">Cesse d'aigrir ma flamme en raillant de la sorte,</l>
             <l n="1343" xml:id="l1343">Organe d'un vieillard qui croit faire un bon tour</l>
@@ -2596,15 +2597,15 @@
             <l n="1347" xml:id="l1347">Et ce jour expiré, je vous ferai sentir</l>
             <l n="1348" xml:id="l1348">Que rien de ma fureur ne vous peut garantir.</l>
           </sp>
-          <sp xml:id="IV09-4" who="CELIE">
+          <sp who="CELIE" xml:id="IV09-4">
             <speaker>CÉLIE.</speaker>
-            <l n="1349" xml:id="l1349" part="I">Florame !</l>
+            <l n="1349" part="I" xml:id="l1349">Florame !</l>
           </sp>
-          <sp xml:id="IV09-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="IV09-5">
             <speaker>FLORAME.</speaker>
             <l part="F">Je ne puis parler à des perfides.</l>
           </sp>
-          <sp xml:id="IV09-6" who="CELIE">
+          <sp who="CELIE" xml:id="IV09-6">
             <speaker>CÉLIE.</speaker>
             <l n="1350" xml:id="l1350">Il veut donner l'alarme à mes esprits timides,</l>
             <l n="1351" xml:id="l1351">Et prend plaisir lui-même à se jouer de moi.</l>
@@ -2620,16 +2621,16 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE.</head>
-          <sp xml:id="V01-1" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-1">
             <speaker>THÉANTE.</speaker>
             <l n="1361" xml:id="l1361">Croirais-tu qu'un moment m'ait pu changer de sorte</l>
             <l n="1362" xml:id="l1362">Que je passe à regret par devant cette porte ?</l>
           </sp>
-          <sp xml:id="V01-2" who="DAMON">
+          <sp who="DAMON" xml:id="V01-2">
             <speaker>DAMON.</speaker>
             <l n="1363" xml:id="l1363">Que ton humeur n'a-t-elle un peu plus tôt changé ?</l>
             <l n="1364" xml:id="l1364">Nous aurions vu l'effet où tu m'as engagé.</l>
@@ -2640,7 +2641,7 @@
             <l n="1369" xml:id="l1369">Et comme si depuis il était invisible,</l>
             <l n="1370" xml:id="l1370">Sa rencontre pour moi s'est rendue impossible.</l>
           </sp>
-          <sp xml:id="V01-3" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-3">
             <speaker>THÉANTE.</speaker>
             <l n="1371" xml:id="l1371">Ne le cherche donc plus. à bien considérer,</l>
             <l n="1372" xml:id="l1372">Qu'ils se battent ou non, je n'en puis qu'espérer.</l>
@@ -2658,47 +2659,47 @@
             <l n="1384" xml:id="l1384">À tout autre qu'à moi me le fait préférer ;</l>
             <l n="1385" xml:id="l1385">Et j'aurais peine à voir un troisième en sa place.</l>
           </sp>
-          <sp xml:id="V01-4" who="DAMON">
+          <sp who="DAMON" xml:id="V01-4">
             <speaker>DAMON.</speaker>
             <l n="1386" xml:id="l1386">Tu t'avises trop tard : que veux-tu que je fasse ?</l>
             <l n="1387" xml:id="l1387">J'ai poussé Clarimond à lui faire un appel ;</l>
             <l n="1388" xml:id="l1388">J'ai charge de sa part de lui rendre un cartel :</l>
-            <l n="1389" xml:id="l1389" part="I">Le puis-je supprimer ?</l>
+            <l n="1389" part="I" xml:id="l1389">Le puis-je supprimer ?</l>
           </sp>
-          <sp xml:id="V01-5" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-5">
             <speaker>THÉANTE.</speaker>
             <l part="F">Non, mais tu pourrais faire...</l>
           </sp>
-          <sp xml:id="V01-6" who="DAMON">
+          <sp who="DAMON" xml:id="V01-6">
             <speaker>DAMON.</speaker>
-            <l n="1390" xml:id="l1390" part="I">Quoi ?</l>
+            <l n="1390" part="I" xml:id="l1390">Quoi ?</l>
           </sp>
-          <sp xml:id="V01-7" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-7">
             <speaker>THÉANTE.</speaker>
             <l part="F">Que Clarimond prît un sentiment contraire.</l>
           </sp>
-          <sp xml:id="V01-8" who="DAMON">
+          <sp who="DAMON" xml:id="V01-8">
             <speaker>DAMON.</speaker>
             <l n="1391" xml:id="l1391">Le détourner d'un coup où seul je l'ai porté !</l>
             <l n="1392" xml:id="l1392">Mon courage est mal propre à cette lâcheté.</l>
           </sp>
-          <sp xml:id="V01-9" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-9">
             <speaker>THÉANTE.</speaker>
             <l n="1393" xml:id="l1393">À de telles raisons je n'ai de repartie,</l>
             <l n="1394" xml:id="l1394">Sinon que c'est à moi de rompre la partie.</l>
-            <l n="1395" xml:id="l1395" part="I">J'en vais semer le bruit.</l>
+            <l n="1395" part="I" xml:id="l1395">J'en vais semer le bruit.</l>
           </sp>
-          <sp xml:id="V01-10" who="DAMON">
+          <sp who="DAMON" xml:id="V01-10">
             <speaker>DAMON.</speaker>
             <l part="F">Et sur ce bruit tu veux...</l>
           </sp>
-          <sp xml:id="V01-11" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-11">
             <speaker>THÉANTE.</speaker>
             <l n="1396" xml:id="l1396">Qu'on leur donne dans peu des gardes à tous deux,</l>
             <l n="1397" xml:id="l1397">Et qu'une main puissante arrête leur querelle.</l>
-            <l n="1398" xml:id="l1398" part="I">Qu'en dis-tu, cher ami ?</l>
+            <l n="1398" part="I" xml:id="l1398">Qu'en dis-tu, cher ami ?</l>
           </sp>
-          <sp xml:id="V01-12" who="DAMON">
+          <sp who="DAMON" xml:id="V01-12">
             <speaker>DAMON.</speaker>
             <l part="F">L'invention est belle,</l>
             <l n="1399" xml:id="l1399">Et le chemin bien court à les mettre d'accord ;</l>
@@ -2708,27 +2709,27 @@
             <l n="1403" xml:id="l1403">Ne donnons point sujet de tant parler de nous,</l>
             <l n="1404" xml:id="l1404">Et sachons seulement à quoi tu te résous.</l>
           </sp>
-          <sp xml:id="V01-13" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-13">
             <speaker>THÉANTE.</speaker>
             <l n="1405" xml:id="l1405">À les laisser en paix, et courir l'Italie</l>
             <l n="1406" xml:id="l1406">Pour divertir le cours de ma mélancolie,</l>
             <l n="1407" xml:id="l1407">Et ne voir point Florame emporter à mes yeux</l>
             <l n="1408" xml:id="l1408">Le prix où prétendait mon coeur ambitieux.</l>
           </sp>
-          <sp xml:id="V01-14" who="DAMON">
+          <sp who="DAMON" xml:id="V01-14">
             <speaker>DAMON.</speaker>
             <l n="1409" xml:id="l1409">Amarante, à ce compte, est hors de ta pensée ?</l>
           </sp>
-          <sp xml:id="V01-15" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-15">
             <speaker>THÉANTE.</speaker>
             <l n="1410" xml:id="l1410">Son image du tout n'en est pas effacée ;</l>
-            <l n="1411" xml:id="l1411" part="I">Mais...</l>
+            <l n="1411" part="I" xml:id="l1411">Mais...</l>
           </sp>
-          <sp xml:id="V01-16" who="DAMON">
+          <sp who="DAMON" xml:id="V01-16">
             <speaker>DAMON.</speaker>
             <l part="F">Tu crains que pour elle on te fasse un duel.</l>
           </sp>
-          <sp xml:id="V01-17" who="THEANTE">
+          <sp who="THEANTE" xml:id="V01-17">
             <speaker>THÉANTE.</speaker>
             <l n="1412" xml:id="l1412">Railler un malheureux, c'est être trop cruel.</l>
             <l n="1413" xml:id="l1413">Bien que ses yeux encore règnent sur mon courage,</l>
@@ -2744,15 +2745,15 @@
             <l n="1423" xml:id="l1423">Allons : je ne puis voir sans mille déplaisirs</l>
             <l n="1424" xml:id="l1424">Ce possesseur du bien où tendaient mes désirs.</l>
           </sp>
-          <sp xml:id="V01-18" who="DAMON">
+          <sp who="DAMON" xml:id="V01-18">
             <speaker>DAMON.</speaker>
             <l n="1425" xml:id="l1425">Arrête : cette fuite est hors de bienséance,</l>
             <l n="1426" xml:id="l1426">Et je n'ai point d'appel à faire en ta présence.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II.</head>
-          <sp xml:id="V02-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="V02-1">
             <speaker>FLORAME.</speaker>
             <l n="1427" xml:id="l1427">Jetterai-je toujours des menaces en l'air,</l>
             <l n="1428" xml:id="l1428">Sans que je sache enfin à qui je dois parler ?</l>
@@ -2788,9 +2789,9 @@
             <l n="1458" xml:id="l1458">Fais-toi, fais-toi connaître allant voir ta maîtresse.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III.</head>
-          <sp xml:id="V03-1" who="FLORAME">
+          <sp who="FLORAME" xml:id="V03-1">
             <speaker>FLORAME.</speaker>
             <l n="1459" xml:id="l1459">Amarante (aussi bien te faut-il confesser</l>
             <l n="1460" xml:id="l1460">Que la seule Daphnis avait su me blesser),</l>
@@ -2799,24 +2800,24 @@
             <l n="1463" xml:id="l1463">À quel heureux amant Géraste a destiné</l>
             <l n="1464" xml:id="l1464">Ce beau prix que l'amour m'avait si bien donné.</l>
           </sp>
-          <sp xml:id="V03-2" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="V03-2">
             <speaker>AMARANTE.</speaker>
             <l n="1465" xml:id="l1465">Ce dût vous être assez de m'avoir abusée,</l>
             <l n="1466" xml:id="l1466">Sans faire encore de moi vos sujets de risée.</l>
             <l n="1467" xml:id="l1467">Je sais que le vieillard favorise vos feux,</l>
             <l n="1468" xml:id="l1468">Et que rien que Daphnis n'est contraire à vos voeux.</l>
           </sp>
-          <sp xml:id="V03-3" who="FLORAME">
+          <sp who="FLORAME" xml:id="V03-3">
             <speaker>FLORAME.</speaker>
             <l n="1469" xml:id="l1469">Que me dis-tu, lui seul et sa rigueur nouvelle</l>
             <l n="1470" xml:id="l1470">Empêchant les effets d'une ardeur mutuelle ?</l>
           </sp>
-          <sp xml:id="V03-4" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="V03-4">
             <speaker>AMARANTE.</speaker>
             <l n="1471" xml:id="l1471">Pensez-vous me duper avec ce feint courroux ?</l>
             <l n="1472" xml:id="l1472">Lui-même il m'a prié de lui parler pour vous.</l>
           </sp>
-          <sp xml:id="V03-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="V03-5">
             <speaker>FLORAME.</speaker>
             <l n="1473" xml:id="l1473">Vois-tu, ne t'en ris plus ; ta seule jalousie</l>
             <l n="1474" xml:id="l1474">A mis à ce vieillard ce change en fantaisie.</l>
@@ -2828,9 +2829,9 @@
             <l n="1480" xml:id="l1480">Qu'on ne m'offense point sans un prompt repentir.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV.</head>
-          <sp xml:id="V04-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="V04-1">
             <speaker>AMARANTE.</speaker>
             <l n="1481" xml:id="l1481">Voilà de quoi tomber en un nouveau dédale.</l>
             <l n="1482" xml:id="l1482">Ô ciel ! Qui vit jamais confusion égale ?</l>
@@ -2854,68 +2855,68 @@
             <l n="1500" xml:id="l1500">Tant qu'avec lui je voie ou Florame ou Daphnis.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V.</head>
-          <sp xml:id="V05-1" who="POLEMON">
+          <sp who="POLEMON" xml:id="V05-1">
             <speaker>POLÉMON.</speaker>
             <l n="1501" xml:id="l1501">J'ai grand regret, monsieur, que la foi qui vous lie</l>
             <l n="1502" xml:id="l1502">Empêche que chez vous mon neveu ne s'allie,</l>
             <l n="1503" xml:id="l1503">Et que son feu m'emploie aux offres qu'il vous fait,</l>
             <l n="1504" xml:id="l1504">Lorsqu'il n'est plus en vous d'en accepter l'effet.</l>
           </sp>
-          <sp xml:id="V05-2" who="GERASTE">
+          <sp who="GERASTE" xml:id="V05-2">
             <speaker>GÉRASTE.</speaker>
             <l n="1505" xml:id="l1505">C'est un rare trésor que mon malheur me vole ;</l>
             <l n="1506" xml:id="l1506">Et si l'honneur souffrait un manque de parole,</l>
             <l n="1507" xml:id="l1507">L'avantageux parti que vous me présentez</l>
             <l n="1508" xml:id="l1508">Me verrait aussitôt prêt à ses volontés.</l>
           </sp>
-          <sp xml:id="V05-3" who="POLEMON">
+          <sp who="POLEMON" xml:id="V05-3">
             <speaker>POLÉMON.</speaker>
             <l n="1509" xml:id="l1509">Mais si quelque hasard rompait cette alliance ?</l>
           </sp>
-          <sp xml:id="V05-4" who="GERASTE">
+          <sp who="GERASTE" xml:id="V05-4">
             <speaker>GÉRASTE.</speaker>
             <l n="1510" xml:id="l1510">N'ayez lors, je vous prie, aucune défiance :</l>
             <l n="1511" xml:id="l1511">Je m'en tiendrais heureux, et ma foi vous répond</l>
             <l n="1512" xml:id="l1512">Que Daphnis sans tarder épouse Clarimond.</l>
           </sp>
-          <sp xml:id="V05-5" who="POLEMON">
+          <sp who="POLEMON" xml:id="V05-5">
             <speaker>POLÉMON.</speaker>
             <l n="1513" xml:id="l1513">Adieu : faites état de mon humble service.</l>
           </sp>
-          <sp xml:id="V05-6" who="GERASTE">
+          <sp who="GERASTE" xml:id="V05-6">
             <speaker>GÉRASTE.</speaker>
             <l n="1514" xml:id="l1514">Et vous pareillement d'un coeur sans artifice.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI.</head>
-          <sp xml:id="V06-1" who="CELIE">
+          <sp who="CELIE" xml:id="V06-1">
             <speaker>CÉLIE.</speaker>
             <l n="1515" xml:id="l1515">De sorte qu'à mes yeux votre foi lui répond</l>
             <l n="1516" xml:id="l1516">Que Daphnis sans tarder épouse Clarimond ?</l>
           </sp>
-          <sp xml:id="V06-2" who="GERASTE">
+          <sp who="GERASTE" xml:id="V06-2">
             <speaker>GÉRASTE.</speaker>
             <l n="1517" xml:id="l1517">Cette vaine promesse en un cas impossible</l>
             <l n="1518" xml:id="l1518">Adoucit un refus et le rend moins sensible :</l>
             <l n="1519" xml:id="l1519">C'est ainsi qu'on oblige un homme à peu de frais.</l>
           </sp>
-          <sp xml:id="V06-3" who="CELIE">
+          <sp who="CELIE" xml:id="V06-3">
             <speaker>CÉLIE.</speaker>
             <l n="1520" xml:id="l1520">Ajouter l'impudence à vos perfides traits !</l>
             <l n="1521" xml:id="l1521">Il vous faudrait du charme au lieu de cette ruse,</l>
             <l n="1522" xml:id="l1522">Pour me persuader que qui promet refuse.</l>
           </sp>
-          <sp xml:id="V06-4" who="GERASTE">
+          <sp who="GERASTE" xml:id="V06-4">
             <speaker>GÉRASTE.</speaker>
             <l n="1523" xml:id="l1523">J'ai promis, et tiendrais ce que j'ai protesté,</l>
             <l n="1524" xml:id="l1524">Si Florame rompait le concert arrêté.</l>
             <l n="1525" xml:id="l1525">Pour Daphnis, c'est en vain qu'elle fait la rebelle ;</l>
-            <l n="1526" xml:id="l1526" part="I">J'en viendrai trop à bout.</l>
+            <l n="1526" part="I" xml:id="l1526">J'en viendrai trop à bout.</l>
           </sp>
-          <sp xml:id="V06-5" who="CELIE">
+          <sp who="CELIE" xml:id="V06-5">
             <speaker>CÉLIE.</speaker>
             <l part="F">Impudence nouvelle !</l>
             <l n="1527" xml:id="l1527">Florame, que Daphnis fait maître de son coeur,</l>
@@ -2933,7 +2934,7 @@
             <l n="1539" xml:id="l1539">Ne vous estimez pas quitte pour la quitter,</l>
             <l n="1540" xml:id="l1540">Ni que de cette sorte on se laisse affronter.</l>
           </sp>
-          <sp xml:id="V06-6" who="GERASTE">
+          <sp who="GERASTE" xml:id="V06-6">
             <speaker>GÉRASTE.</speaker>
             <l n="1541" xml:id="l1541">Me prends-tu donc pour homme à manquer de parole</l>
             <l n="1542" xml:id="l1542">En faveur d'un caprice où s'obstine une folle ?</l>
@@ -2946,18 +2947,18 @@
             <l n="1549" xml:id="l1549">Et lors, soit que Daphnis y résiste ou consente,</l>
             <l n="1550" xml:id="l1550">Crois que ma volonté sera la plus puissante.</l>
           </sp>
-          <sp xml:id="V06-7" who="CELIE">
+          <sp who="CELIE" xml:id="V06-7">
             <speaker>CÉLIE.</speaker>
             <l n="1551" xml:id="l1551">Croyez que nous tromper ce n'est pas votre mieux.</l>
           </sp>
-          <sp xml:id="V06-8" who="GERASTE">
+          <sp who="GERASTE" xml:id="V06-8">
             <speaker>GÉRASTE.</speaker>
             <l n="1552" xml:id="l1552">Me foudroie en ce cas la colère des cieux !</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="V07">
           <head>SCÈNE VII.</head>
-          <sp xml:id="V07-1" who="GERASTE">
+          <sp who="GERASTE" xml:id="V07-1">
             <speaker>GÉRASTE.</speaker>
             <l n="1553" xml:id="l1553">Géraste, sur-le-champ il te fallait contraindre</l>
             <l n="1554" xml:id="l1554">Celle que ta pitié ne pouvait ouïr plaindre.</l>
@@ -2976,7 +2977,7 @@
             <l n="1567" xml:id="l1567">Mais sachez qu'il fallait, ingrate, en vos amours,</l>
             <l n="1568" xml:id="l1568">Ou ne m'obéir point, ou m'obéir toujours.</l>
           </sp>
-          <sp xml:id="V07-2" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V07-2">
             <speaker>DAPHNIS.</speaker>
             <l n="1569" xml:id="l1569">Si dans mes premiers feux je vous semble obstinée,</l>
             <l n="1570" xml:id="l1570">C'est l'effet de ma foi sous votre aveu donnée.</l>
@@ -2993,7 +2994,7 @@
             <l n="1581" xml:id="l1581">Que vous a fait Daphnis ? Que vous a fait Florame,</l>
             <l n="1582" xml:id="l1582">Que pour lui vous vouliez que j'éteigne ma flamme ?</l>
           </sp>
-          <sp xml:id="V07-3" who="GERASTE">
+          <sp who="GERASTE" xml:id="V07-3">
             <speaker>GÉRASTE.</speaker>
             <l n="1583" xml:id="l1583">Mais que vous a-t-il fait, que pour lui seulement</l>
             <l n="1584" xml:id="l1584">Vous vous rendiez rebelle à mon commandement ?</l>
@@ -3006,7 +3007,7 @@
             <l n="1591" xml:id="l1591">Il n'est point de raison valable entre nous deux,</l>
             <l n="1592" xml:id="l1592">Et pour toute raison il suffit que je veux.</l>
           </sp>
-          <sp xml:id="V07-4" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V07-4">
             <speaker>DAPHNIS.</speaker>
             <l n="1593" xml:id="l1593">Un parjure jamais ne devient légitime ;</l>
             <l n="1594" xml:id="l1594">Une excuse ne peut justifier un crime.</l>
@@ -3014,24 +3015,24 @@
             <l n="1596" xml:id="l1596">Croit suffire à mes feux que vous ayez voulu.</l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="V08">
           <head>SCÈNE VIII.</head>
-          <sp xml:id="V08-1" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V08-1">
             <speaker>DAPHNIS.</speaker>
             <l n="1597" xml:id="l1597">Voici ce cher amant qui me tient engagée,</l>
             <l n="1598" xml:id="l1598">À qui sous votre aveu ma foi s'est obligée :</l>
             <l n="1599" xml:id="l1599">Changez de volonté pour un objet nouveau ;</l>
             <l n="1600" xml:id="l1600">Daphnis épousera Florame, ou le tombeau.</l>
           </sp>
-          <sp xml:id="V08-2" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-2">
             <speaker>GÉRASTE.</speaker>
-            <l n="1601" xml:id="l1601" part="I">Que vois-je ici, bons dieux ?</l>
+            <l n="1601" part="I" xml:id="l1601">Que vois-je ici, bons dieux ?</l>
           </sp>
-          <sp xml:id="V08-3" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V08-3">
             <speaker>DAPHNIS.</speaker>
             <l part="F">Mon amour, ma constance.</l>
           </sp>
-          <sp xml:id="V08-4" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-4">
             <speaker>GÉRASTE.</speaker>
             <l n="1602" xml:id="l1602">Et sur quoi donc fonder ta désobéissance ?</l>
             <l n="1603" xml:id="l1603">Quel envieux démon, et quel charme assez fort</l>
@@ -3039,14 +3040,14 @@
             <l n="1605" xml:id="l1605">C'est lui que tu chéris et que je te destine ;</l>
             <l n="1606" xml:id="l1606">Et ta rébellion dans un refus s'obstine !</l>
           </sp>
-          <sp xml:id="V08-5" who="FLORAME">
+          <sp who="FLORAME" xml:id="V08-5">
             <speaker>FLORAME.</speaker>
             <l n="1607" xml:id="l1607">Appelez-vous refus de me donner sa foi</l>
             <l n="1608" xml:id="l1608">Quand votre volonté se déclara pour moi ?</l>
             <l n="1609" xml:id="l1609">Et cette volonté, pour un autre tournée,</l>
             <l n="1610" xml:id="l1610">Vous peut-elle obéir après la foi donnée ?</l>
           </sp>
-          <sp xml:id="V08-6" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-6">
             <speaker>GÉRASTE.</speaker>
             <l n="1611" xml:id="l1611">C'est pour vous que je change, et pour vous seulement</l>
             <l n="1612" xml:id="l1612">Je veux qu'elle renonce à son premier amant.</l>
@@ -3054,77 +3055,77 @@
             <l n="1614" xml:id="l1614">C'était pour Clarimond qui possédait son âme :</l>
             <l n="1615" xml:id="l1615">Amarante du moins me l'avait dit ainsi.</l>
           </sp>
-          <sp xml:id="V08-7" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V08-7">
             <speaker>DAPHNIS.</speaker>
             <l n="1616" xml:id="l1616">Amarante, approchez : que tout soit éclairci.</l>
             <l n="1617" xml:id="l1617">Une telle imposture est-elle pardonnable ?</l>
           </sp>
-          <sp xml:id="V08-8" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="V08-8">
             <speaker>AMARANTE.</speaker>
             <l n="1618" xml:id="l1618">Mon amour pour Florame en est le seul coupable :</l>
             <l n="1619" xml:id="l1619">Mon esprit l'adorait ; et vous étonnez-vous</l>
             <l n="1620" xml:id="l1620">S'il devint inventif, puisqu'il était jaloux ?</l>
           </sp>
-          <sp xml:id="V08-9" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-9">
             <speaker>GÉRASTE.</speaker>
-            <l n="1621" xml:id="l1621" part="I">Et par là tu voulais...</l>
+            <l n="1621" part="I" xml:id="l1621">Et par là tu voulais...</l>
           </sp>
-          <sp xml:id="V08-10" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="V08-10">
             <speaker>AMARANTE.</speaker>
             <l part="F">Que votre âme déçue</l>
             <l n="1622" xml:id="l1622">Donnât à Clarimond une si bonne issue,</l>
             <l n="1623" xml:id="l1623">Que Florame, frustré de l'objet de ses voeux,</l>
             <l n="1624" xml:id="l1624">Fût réduit désormais à seconder mes feux.</l>
           </sp>
-          <sp xml:id="V08-11" who="FLORAME">
+          <sp who="FLORAME" xml:id="V08-11">
             <speaker>FLORAME.</speaker>
             <l n="1625" xml:id="l1625">Pardonnez-lui, monsieur ; et vous, daignez, madame,</l>
             <l n="1626" xml:id="l1626">Justifier son feu par votre propre flamme :</l>
             <l n="1627" xml:id="l1627">Si vous m'aimez encore, vous devez estimer</l>
             <l n="1628" xml:id="l1628">Qu'on ne peut faire un crime à force de m'aimer.</l>
           </sp>
-          <sp xml:id="V08-12" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V08-12">
             <speaker>DAPHNIS.</speaker>
             <l n="1629" xml:id="l1629">Si je t'aime, Florame ? Ah ! Ce doute m'offense.</l>
             <l n="1630" xml:id="l1630">D'Amarante avec toi je prendrai la défense.</l>
           </sp>
-          <sp xml:id="V08-13" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-13">
             <speaker>GÉRASTE.</speaker>
             <l n="1631" xml:id="l1631">Et moi, dans ce pardon je vous veux prévenir ;</l>
             <l n="1632" xml:id="l1632">Votre hymen aussi bien saura trop la punir.</l>
           </sp>
-          <sp xml:id="V08-14" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V08-14">
             <speaker>DAPHNIS.</speaker>
             <l n="1633" xml:id="l1633">Qu'un nom tu par hasard nous a donné de peine !</l>
           </sp>
-          <sp xml:id="V08-15" who="CELIE">
+          <sp who="CELIE" xml:id="V08-15">
             <speaker>CÉLIE.</speaker>
             <l n="1634" xml:id="l1634">Mais que su maintenant il rend sa ruse vaine,</l>
             <l n="1635" xml:id="l1635">Et donne un prompt succès à vos contentements !</l>
           </sp>
-          <sp xml:id="V08-16" who="FLORAME">
+          <sp who="FLORAME" xml:id="V08-16">
             <speaker>FLORAME.</speaker>
-            <l n="1636" xml:id="l1636" part="I">Vous, de qui je les tiens...</l>
+            <l n="1636" part="I" xml:id="l1636">Vous, de qui je les tiens...</l>
           </sp>
-          <sp xml:id="V08-17" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-17">
             <speaker>GÉRASTE.</speaker>
             <l part="F">Trêve de compliments :</l>
             <l n="1637" xml:id="l1637">Ils nous empêcheraient de parler de Florise.</l>
           </sp>
-          <sp xml:id="V08-18" who="FLORAME">
+          <sp who="FLORAME" xml:id="V08-18">
             <speaker>FLORAME.</speaker>
             <l n="1638" xml:id="l1638">Il n'en faut point parler ; elle vous est acquise.</l>
           </sp>
-          <sp xml:id="V08-19" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-19">
             <speaker>GÉRASTE.</speaker>
             <l n="1639" xml:id="l1639">Allons donc la trouver : que cet échange heureux</l>
             <l n="1640" xml:id="l1640">Comble d'aise à son tour un vieillard amoureux !</l>
           </sp>
-          <sp xml:id="V08-20" who="DAPHNIS">
+          <sp who="DAPHNIS" xml:id="V08-20">
             <speaker>DAPHNIS.</speaker>
             <l n="1641" xml:id="l1641">Quoi ! Je ne savais rien d'une telle partie !</l>
           </sp>
-          <sp xml:id="V08-21" who="FLORAME">
+          <sp who="FLORAME" xml:id="V08-21">
             <speaker>FLORAME.</speaker>
             <l n="1642" xml:id="l1642">Je pense toutefois vous avoir avertie</l>
             <l n="1643" xml:id="l1643">Qu'un grand effet d'amour, avant qu'il fût longtemps,</l>
@@ -3134,43 +3135,43 @@
             <l n="1647" xml:id="l1647">Et d'ailleurs je sais trop que la loi du devoir</l>
             <l n="1648" xml:id="l1648">Veut que je sois chez nous pour vous y recevoir.</l>
           </sp>
-          <sp xml:id="V08-22" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-22">
             <speaker>GÉRASTE.</speaker>
             <l n="1649" xml:id="l1649">Va donc lui témoigner le désir qui me presse.</l>
           </sp>
-          <sp xml:id="V08-23" who="FLORAME">
+          <sp who="FLORAME" xml:id="V08-23">
             <speaker>FLORAME.</speaker>
             <l n="1650" xml:id="l1650">Plutôt fais-la venir saluer ma maîtresse :</l>
             <l n="1651" xml:id="l1651">Ainsi tout à la fois nous verrons satisfaits</l>
             <l n="1652" xml:id="l1652">Vos feux et mon devoir, ma flamme et vos souhaits.</l>
           </sp>
-          <sp xml:id="V08-24" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-24">
             <speaker>GÉRASTE.</speaker>
             <l n="1653" xml:id="l1653">Je dois être honteux d'attendre qu'elle vienne.</l>
           </sp>
-          <sp xml:id="V08-25" who="CELIE">
+          <sp who="CELIE" xml:id="V08-25">
             <speaker>CÉLIE.</speaker>
             <l n="1654" xml:id="l1654">Attendez-la, monsieur, et qu'à cela ne tienne :</l>
             <l n="1655" xml:id="l1655">Je cours exécuter cette commission.</l>
           </sp>
-          <sp xml:id="V08-26" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-26">
             <speaker>GÉRASTE.</speaker>
             <l n="1656" xml:id="l1656">Le temps en sera long à mon affection.</l>
           </sp>
-          <sp xml:id="V08-27" who="FLORAME">
+          <sp who="FLORAME" xml:id="V08-27">
             <speaker>FLORAME.</speaker>
             <l n="1657" xml:id="l1657">Toujours l'impatience à l'amour est mêlée</l>
           </sp>
-          <sp xml:id="V08-28" who="GERASTE">
+          <sp who="GERASTE" xml:id="V08-28">
             <speaker>GÉRASTE.</speaker>
             <l n="1658" xml:id="l1658">Allons dans le jardin faire deux tours d'allée,</l>
             <l n="1659" xml:id="l1659">Afin que cet ennui que j'en pourrai sentir</l>
             <l n="1660" xml:id="l1660">Parmi votre entretien trouve à se divertir.</l>
           </sp>
         </div2>
-        <div2 xml:id="V09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="V09">
           <head>SCÈNE IX.</head>
-          <sp xml:id="V09-1" who="AMARANTE">
+          <sp who="AMARANTE" xml:id="V09-1">
             <speaker>AMARANTE.</speaker>
             <l n="1661" xml:id="l1661">Je le perds donc, l'ingrat, sans que mon artifice</l>
             <l n="1662" xml:id="l1662">Ait tiré de ses maux aucun soulagement,</l>

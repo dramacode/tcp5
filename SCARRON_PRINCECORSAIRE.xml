@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>LE PRINCE CORSAIRE, TRAGI-COMÉDIE.</title>
-        <author born="1610" born_location="Paris" death="1660" death_location="Paris" academie="">SCARRON, Paul</author>
+        <author academie="" born="1610" born_location="Paris" death="1660" death_location="Paris" key="Scarron, Paul (1610-1660)">SCARRON, Paul</author>
       </titleStmt>
       <publicationStmt>
-        <p>publié par Paul FIEVRE mars 2011</p>
-        <idno/>
+<publisher>Théâtre Classique</publisher>
+<p>publié par Paul FIEVRE mars 2011</p>
       </publicationStmt>
       <sourceDesc>
         <genre>Comédie</genre>
@@ -33,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -45,7 +46,7 @@
         <titlePart type="sub">TRAGI-COMÉDIE.</titlePart>
       </docTitle>
       <docDate value="1650">M DC L. AVEC PRIVILÈGE DU ROI. </docDate>
-      <docAuthor id="SCARRON, Paul" bio="scarron">par Monsieur SCARRON</docAuthor>
+      <docAuthor bio="scarron" id="SCARRON, Paul">par Monsieur SCARRON</docAuthor>
       <docImprint>
         <approbation value=""/>
         <privilege value="1649-11-10">
@@ -60,27 +61,27 @@
       </performance>
       <castList>
         <head>ACTEURS.</head>
-        <castItem><role xml:id="OROSMANE" id="OROSMANE" sex="1" type="H" statut="prince" age="A" stat_amour="Élise">OROSMANE</role>, Prince Corsaire, amant de la Princesse Élise, et enfin reconnu, sous le nom d'Alcandre, pour fils de Nicanor.</castItem>
-        <castItem><role xml:id="ELISE" id="ÉLISE" sex="2" type="H" statut="prince" age="A" stat_amour="Orosmane">ÉLISE</role>, Princesse de Chypre, Maîtresse d'Orosmane.</castItem>
-        <castItem><role xml:id="ALCIONNE" id="ALCIONNE" sex="2" type="H" statut="prince" age="A" stat_amour="Amintas">ALCIONNE</role>, autre Princesse de Chypre, Soeur d'Élise, maîtresse d'Amintas.</castItem>
-        <castItem><role xml:id="AMINTAS" id="AMINTAS" sex="1" type="H" statut="prince" age="A" stat_amour="Alcionne">AMINTAS</role>, fils de Nicanor, frère d'Orosmane, amant de la Princesse Alcionne. </castItem>
-        <castItem><role xml:id="NICANOR" id="NICANOR" sex="1" type="H" statut="prince" age="A" stat_amour="néant">NICANOR</role>, père d'Orosmane, et d'Amintas, et Oncle des Princesses.</castItem>
-        <castItem><role xml:id="SEBASTE" id="SÉBASTE" sex="1" type="H" statut="confident" age="A" stat_amour="néant">SÉBASTE</role>, Confident d'Orosmane.</castItem>
-        <castItem><role xml:id="ARGANTE" id="ARGANTE" sex="1" type="H" statut="lieutenant" age="A" stat_amour="néant">ARGANTE</role>, lieutenant du même Orosmane.</castItem>
-        <castItem><role xml:id="CLARICE" id="CLARICE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">CLARICE</role>, confidente des Princesses.</castItem>
-        <castItem><role xml:id="CRITON" id="CRITON" sex="1" type="H" statut="confident" age="A" stat_amour="néant">CRITON</role>, confident d'Amintas.</castItem>
-        <castItem><role xml:id="LICAS" id="LICAS" sex="1" type="H" statut="capitaine" age="A" stat_amour="néant">LICAS</role>, capitaine des Gardes de Nicanor.</castItem>
-        <castItem><role xml:id="GARDESdeNicanor" id="GARDES" sex="9" type="H" statut="garde" age="A" stat_amour="néant">GARDES de Nicanor</role>.</castItem>
-        <castItem><role xml:id="CORSAIRESdelaflottedOrosmane" id="CORSAIRES" sex="9" type="H" statut="corsaire" age="A" stat_amour="néant">CORSAIRES de la flotte d'Orosmane</role>.</castItem>
+        <castItem><role age="A" civil="M" id="OROSMANE" rend="male" stat_amour="Élise" statut="prince" type="H" xml:id="OROSMANE">OROSMANE</role>, Prince Corsaire, amant de la Princesse Élise, et enfin reconnu, sous le nom d'Alcandre, pour fils de Nicanor.</castItem>
+        <castItem><role age="A" civil="F" id="ÉLISE" rend="female" stat_amour="Orosmane" statut="prince" type="H" xml:id="ELISE">ÉLISE</role>, Princesse de Chypre, Maîtresse d'Orosmane.</castItem>
+        <castItem><role age="A" civil="F" id="ALCIONNE" rend="female" stat_amour="Amintas" statut="prince" type="H" xml:id="ALCIONNE">ALCIONNE</role>, autre Princesse de Chypre, Soeur d'Élise, maîtresse d'Amintas.</castItem>
+        <castItem><role age="A" civil="M" id="AMINTAS" rend="male" stat_amour="Alcionne" statut="prince" type="H" xml:id="AMINTAS">AMINTAS</role>, fils de Nicanor, frère d'Orosmane, amant de la Princesse Alcionne. </castItem>
+        <castItem><role age="A" civil="M" id="NICANOR" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="NICANOR">NICANOR</role>, père d'Orosmane, et d'Amintas, et Oncle des Princesses.</castItem>
+        <castItem><role age="A" civil="M" id="SÉBASTE" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="SEBASTE">SÉBASTE</role>, Confident d'Orosmane.</castItem>
+        <castItem><role age="A" civil="M" id="ARGANTE" rend="male" stat_amour="néant" statut="lieutenant" type="H" xml:id="ARGANTE">ARGANTE</role>, lieutenant du même Orosmane.</castItem>
+        <castItem><role age="A" civil="F" id="CLARICE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="CLARICE">CLARICE</role>, confidente des Princesses.</castItem>
+        <castItem><role age="A" civil="M" id="CRITON" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="CRITON">CRITON</role>, confident d'Amintas.</castItem>
+        <castItem><role age="A" civil="M" id="LICAS" rend="male" stat_amour="néant" statut="capitaine" type="H" xml:id="LICAS">LICAS</role>, capitaine des Gardes de Nicanor.</castItem>
+        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="GARDES">GARDES de Nicanor</role>.</castItem>
+        <castItem><role age="A" civil="G" id="CORSAIRES" rend="group" stat_amour="néant" statut="corsaire" type="H" xml:id="CORSAIRES">CORSAIRES de la flotte d'Orosmane</role>.</castItem>
       </castList>
-      <set location="Paphos" country="Chypre" periode="XVIIème" link="">La Scène est à Paphos, Ville de l'Île de Chypre, dans le Palais.</set>
+      <set country="Chypre" link="" location="Paphos" periode="XVIIème">La Scène est à Paphos, Ville de l'Île de Chypre, dans le Palais.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Sébaste, Clarice. </head>
-          <sp xml:id="I01-1" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I01-1">
             <speaker>SÉBASTE.</speaker>
             <l n="1" xml:id="l1">Vous pleurez un Grand Roi dont les heureuses armes, </l>
             <l n="2" xml:id="l2">Tenaient la Chypre en paix, et l'Asie en alarmes. </l>
@@ -97,35 +98,35 @@
             <l n="13" xml:id="l13">Seriez-vous leurs Tyrans, leurs vassaux que vous êtes ? </l>
             <l n="14" xml:id="l14">Ou des Filles d'un Roi feriez-vous les sujettes ? </l>
           </sp>
-          <sp xml:id="I01-2" who="CLARICE">
+          <sp who="CLARICE" xml:id="I01-2">
             <speaker>CLARICE.</speaker>
             <l n="15" xml:id="l15">La Chypre a conservé constante dans la Foi, </l>
             <l n="16" xml:id="l16">Le respect qu'elle doit aux Filles de son Roi, </l>
             <l n="17" xml:id="l17">Et de l'une des deux se va faire une Reine. </l>
           </sp>
-          <sp xml:id="I01-3" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I01-3">
             <speaker>SÉBASTE.</speaker>
-            <l n="18" xml:id="l18" part="I">D'Élise... </l>
+            <l n="18" part="I" xml:id="l18">D'Élise... </l>
           </sp>
-          <sp xml:id="I01-4" who="CLARICE">
+          <sp who="CLARICE" xml:id="I01-4">
             <speaker>CLARICE.</speaker>
             <l part="F">Jusqu'ici, la chose est incertaine, </l>
             <l n="19" xml:id="l19">Elle aura la couronne épousant Amintas. </l>
           </sp>
-          <sp xml:id="I01-5" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I01-5">
             <speaker>SÉBASTE.</speaker>
-            <l n="20" xml:id="l20" part="I">Et ne l'épousant point ? </l>
+            <l n="20" part="I" xml:id="l20">Et ne l'épousant point ? </l>
           </sp>
-          <sp xml:id="I01-6" who="CLARICE">
+          <sp who="CLARICE" xml:id="I01-6">
             <speaker>CLARICE.</speaker>
             <l part="F">Elle ne l'aura pas. </l>
           </sp>
-          <sp xml:id="I01-7" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I01-7">
             <speaker>SÉBASTE.</speaker>
             <l n="21" xml:id="l21">Et qui lui peut ravir un droit en la couronne. </l>
             <l n="22" xml:id="l22">Que sa vertu mérite, et que le sang lui donne ? </l>
           </sp>
-          <sp xml:id="I01-8" who="CLARICE">
+          <sp who="CLARICE" xml:id="I01-8">
             <speaker>CLARICE.</speaker>
             <l n="23" xml:id="l23">Quand la mort qui confond les Rois, et leurs sujets, </l>
             <l n="24" xml:id="l24">De Pisandre eut fini la vie, et les projets, </l>
@@ -138,13 +139,13 @@
             <l n="31" xml:id="l31">Et cet ordre du Roi caché soigneusement, </l>
             <l n="32" xml:id="l32">Est manifeste à tous d'aujourd'hui seulement, </l>
             <l n="33" xml:id="l33">J'en garde une copie, et je puis vous la lire, </l>
-            <l n="34" xml:id="l34" part="I">Si vous le souhaitez. </l>
+            <l n="34" part="I" xml:id="l34">Si vous le souhaitez. </l>
           </sp>
-          <sp xml:id="I01-9" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I01-9">
             <speaker>SÉBASTE.</speaker>
             <l part="F">Je n'osais vous le dire. </l>
           </sp>
-          <sp xml:id="I01-10" who="CLARICE">
+          <sp who="CLARICE" xml:id="I01-10">
             <speaker>CLARICE.</speaker>
             <l n="35" xml:id="l35">J'ordonne que ma fille Élise, </l>
             <l n="36" xml:id="l36">Règne en Chypre après mon trépas, </l>
@@ -166,14 +167,14 @@
             <l n="52" xml:id="l52">Et s'il eût eu du Ciel une plus longue vie, </l>
             <l n="53" xml:id="l53">Il eût poussé plus loin sa conquête en Asie. </l>
           </sp>
-          <sp xml:id="I01-11" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I01-11">
             <speaker>SÉBASTE.</speaker>
             <l n="54" xml:id="l54">Des peuples asservis le zèle est toujours feint, </l>
             <l n="55" xml:id="l55">Et naturellement l'on hait ce que l'on craint, </l>
             <l n="56" xml:id="l56">Comme Cilicien je sais qu'en cette terre </l>
             <l n="57" xml:id="l57">Pisandre eût eu bientôt à soutenir la guerre. </l>
           </sp>
-          <sp xml:id="I01-12" who="CLARICE">
+          <sp who="CLARICE" xml:id="I01-12">
             <speaker>CLARICE.</speaker>
             <l n="58" xml:id="l58">Son frère Nicanor politique et prudent : </l>
             <l n="59" xml:id="l59">Ferme dans ses desseins ; ambitieux ; ardent, </l>
@@ -186,7 +187,7 @@
             <l n="66" xml:id="l66">Et pour la découvrir elle a choisi ce jour, </l>
             <l n="67" xml:id="l67">En peu de mots, voilà l'État de notre Cour. </l>
           </sp>
-          <sp xml:id="I01-13" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I01-13">
             <speaker>SÉBASTE.</speaker>
             <l n="68" xml:id="l68">Cet Hymen peut avoir sa raison politique ; </l>
             <l n="69" xml:id="l69">Élise peut aussi le trouver tyrannique, </l>
@@ -205,7 +206,7 @@
             <l n="82" xml:id="l82">On n'est pas moins captif pour l'être avec éclat, </l>
             <l n="83" xml:id="l83">Et les raisons d'amour ne le sont point d'État. </l>
           </sp>
-          <sp xml:id="I01-14" who="CLARICE">
+          <sp who="CLARICE" xml:id="I01-14">
             <speaker>CLARICE.</speaker>
             <l n="84" xml:id="l84">Amintas est bien fait, généreux ; plein de gloire, </l>
             <l n="85" xml:id="l85">Son bras s'est signalé par plus d'une victoire, </l>
@@ -215,26 +216,26 @@
             <l n="89" xml:id="l89">Vais-je la disposer à vous être visible. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Élise, Clarice. </head>
-          <sp xml:id="I02-1" who="ELISE">
+          <sp who="ELISE" xml:id="I02-1">
             <speaker>ÉLISE.</speaker>
-            <l n="90" xml:id="l90" part="I">Quel est cet étranger ? </l>
+            <l n="90" part="I" xml:id="l90">Quel est cet étranger ? </l>
           </sp>
-          <sp xml:id="I02-2" who="CLARICE">
+          <sp who="CLARICE" xml:id="I02-2">
             <speaker>CLARICE.</speaker>
             <l part="F">C'est un Cilicien, </l>
             <l n="91" xml:id="l91">Pour qui je vous demande un secret entretien. </l>
           </sp>
-          <sp xml:id="I02-3" who="ELISE">
+          <sp who="ELISE" xml:id="I02-3">
             <speaker>ÉLISE.</speaker>
             <l n="92" xml:id="l92">Et que peut me vouloir cet étranger, Clarice ? </l>
           </sp>
-          <sp xml:id="I02-4" who="CLARICE">
+          <sp who="CLARICE" xml:id="I02-4">
             <speaker>CLARICE.</speaker>
             <l n="93" xml:id="l93">Vous rendre à ce qu'il dit un important service. </l>
           </sp>
-          <sp xml:id="I02-5" who="ELISE">
+          <sp who="ELISE" xml:id="I02-5">
             <speaker>ÉLISE.</speaker>
             <l n="94" xml:id="l94">Qu'il vienne ; mais s'il veut quelque grâce de moi, </l>
             <l n="95" xml:id="l95">Je n'ai plus de pouvoir depuis la mort du Roi. </l>
@@ -242,9 +243,9 @@
             <l n="97" xml:id="l97">Sont aujourd'hui les Dieux que la Chypre révère. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I03">
           <head>SCÈNE I.I.</head>
-          <sp xml:id="I03-1" who="ELISE">
+          <sp who="ELISE" xml:id="I03-1">
             <speaker>ÉLISE.</speaker>
             <l n="98" xml:id="l98">Princesse malheureuse, et qu'un indigne sort, </l>
             <l n="99" xml:id="l99">Contraint dès sa jeunesse à souhaiter sa mort : </l>
@@ -268,17 +269,17 @@
             <l n="117" xml:id="l117">Prince le seul espoir d'Élise infortunée. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Clarice, Élise, Sébaste. </head>
-          <sp xml:id="I04-1" who="CLARICE">
+          <sp who="CLARICE" xml:id="I04-1">
             <speaker>CLARICE.</speaker>
-            <l n="118" xml:id="l118" part="I">Voici cet étranger. </l>
+            <l n="118" part="I" xml:id="l118">Voici cet étranger. </l>
           </sp>
-          <sp xml:id="I04-2" who="ELISE">
+          <sp who="ELISE" xml:id="I04-2">
             <speaker>ÉLISE.</speaker>
             <l part="F">Que voulez-vous de moi ? </l>
           </sp>
-          <sp xml:id="I04-3" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I04-3">
             <speaker>SÉBASTE.</speaker>
             <l n="119" xml:id="l119">Orosmane des mers le redoutable roi, </l>
             <l n="120" xml:id="l120">Qui sur mille vaisseaux portant partout la guerre, </l>
@@ -290,7 +291,7 @@
             <l n="126" xml:id="l126">Vous verrez les Tyrans qui vous donnent la loi, </l>
             <l n="127" xml:id="l127">La recevoir de vous, et trembler sous mon Roi. </l>
           </sp>
-          <sp xml:id="I04-4" who="ELISE">
+          <sp who="ELISE" xml:id="I04-4">
             <speaker>ÉLISE.</speaker>
             <l n="128" xml:id="l128">On a mal informé votre vaillant corsaire, </l>
             <l n="129" xml:id="l129">Et son secours ici ne m'est point nécessaire ; </l>
@@ -301,7 +302,7 @@
             <l n="134" xml:id="l134">Et qui laissant en paix le reste des humains, </l>
             <l n="135" xml:id="l135">Nous choisit pour l'objet de ses faits inhumains. </l>
           </sp>
-          <sp xml:id="I04-5" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I04-5">
             <speaker>SÉBASTE.</speaker>
             <l n="136" xml:id="l136">Orosmane n'est pas tout ce qu'il paraît être, </l>
             <l n="137" xml:id="l137">Et possible le temps le fera mieux connaître, </l>
@@ -341,30 +342,30 @@
             <l n="171" xml:id="l171">Mais faible par celui qu'il a déjà perdu, </l>
             <l n="172" xml:id="l172">Enfin il tombe aux pieds d'Orosmane invincible, </l>
             <l n="173" xml:id="l173">Et trouva son vainqueur à son malheur sensible, </l>
-            <l n="174" xml:id="l174" part="I">Il s'appelait Alcandre. </l>
+            <l n="174" part="I" xml:id="l174">Il s'appelait Alcandre. </l>
           </sp>
-          <sp xml:id="I04-6" who="ELISE">
+          <sp who="ELISE" xml:id="I04-6">
             <speaker>ÉLISE.</speaker>
             <l part="F">Hélas ! Il est donc mort, </l>
-            <l n="175" xml:id="l175" part="I">Alcandre ? Mon Alcandre. </l>
+            <l n="175" part="I" xml:id="l175">Alcandre ? Mon Alcandre. </l>
           </sp>
-          <sp xml:id="I04-7" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I04-7">
             <speaker>SÉBASTE.</speaker>
             <l part="F">Il a changé de sort. </l>
           </sp>
-          <sp xml:id="I04-8" who="ELISE">
+          <sp who="ELISE" xml:id="I04-8">
             <speaker>ÉLISE.</speaker>
             <l n="176" xml:id="l176">Et le fier Orosmane est meurtrier d'Alcandre ? </l>
           </sp>
-          <sp xml:id="I04-9" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I04-9">
             <speaker>SÉBASTE.</speaker>
             <l n="177" xml:id="l177">Il se croirait heureux, s'il pouvait vous le rendre. </l>
           </sp>
-          <sp xml:id="I04-10" who="ELISE">
+          <sp who="ELISE" xml:id="I04-10">
             <speaker>ÉLISE.</speaker>
-            <l n="178" xml:id="l178" part="I">Hélas ! </l>
+            <l n="178" part="I" xml:id="l178">Hélas ! </l>
           </sp>
-          <sp xml:id="I04-11" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I04-11">
             <speaker>SÉBASTE.</speaker>
             <l part="F">Alcandre donc ce Prince malheureux, </l>
             <l n="179" xml:id="l179">Expirant, conjura son vainqueur généreux, </l>
@@ -381,7 +382,7 @@
             <l n="190" xml:id="l190">Et de qui la valeur ne veut point d'autre prix, </l>
             <l n="191" xml:id="l191">Que la gloire d'avoir pour vous tout entrepris. </l>
           </sp>
-          <sp xml:id="I04-12" who="ELISE">
+          <sp who="ELISE" xml:id="I04-12">
             <speaker>ÉLISE.</speaker>
             <l n="192" xml:id="l192">Ha plutôt qu'un Barbare ait part en mon estime, </l>
             <l n="193" xml:id="l193">Un corsaire Insolent qui me propose un crime, </l>
@@ -396,7 +397,7 @@
             <l n="202" xml:id="l202">Hé que peut-il me rendre après m'avoir ôté, </l>
             <l n="203" xml:id="l203">Le seul bien qui manquait à ma félicité ? </l>
           </sp>
-          <sp xml:id="I04-13" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I04-13">
             <speaker>SÉBASTE.</speaker>
             <l n="204" xml:id="l204">Orosmane sait bien que vous êtes gênée, </l>
             <l n="205" xml:id="l205">Dans la libre action du choix d'un hyménée, </l>
@@ -405,18 +406,18 @@
             <l n="208" xml:id="l208">Que tout son sang versé, toute sa flotte offerte, </l>
             <l n="209" xml:id="l209">Peut réparer à peine une si grande perte. </l>
           </sp>
-          <sp xml:id="I04-14" who="ELISE">
+          <sp who="ELISE" xml:id="I04-14">
             <speaker>ÉLISE.</speaker>
             <l n="210" xml:id="l210">Et sait-il que mon coeur ne peut trop détester, </l>
             <l n="211" xml:id="l211">Celui qui m'ôte Alcandre, et s'en ose vanter ; </l>
             <l n="212" xml:id="l212">Veut-il du sang encore après celui d'Alcandre, </l>
             <l n="213" xml:id="l213">Et m'offre-t-il le fer qui vient de le répandre ? </l>
           </sp>
-          <sp xml:id="I04-15" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="I04-15">
             <speaker>SÉBASTE.</speaker>
-            <l n="214" xml:id="l214" part="I">Orosmane... </l>
+            <l n="214" part="I" xml:id="l214">Orosmane... </l>
           </sp>
-          <sp xml:id="I04-16" who="ELISE">
+          <sp who="ELISE" xml:id="I04-16">
             <speaker>ÉLISE.</speaker>
             <l part="F">Ôtez-vous étranger odieux, </l>
             <l n="215" xml:id="l215">Ce qui vient d'Orosmane est horrible à mes yeux. </l>
@@ -440,9 +441,9 @@
             <l n="233" xml:id="l233">Et seule eus le pouvoir d'asservir sa franchise. </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Élise, Alcionne. </head>
-          <sp xml:id="I05-1" who="ELISE">
+          <sp who="ELISE" xml:id="I05-1">
             <speaker>ÉLISE.</speaker>
             <l n="234" xml:id="l234">Ô ma soeur ! Vous voyez mes yeux mouillés de pleurs, </l>
             <l n="235" xml:id="l235">Ils ne sont point causés par nos communs malheurs. </l>
@@ -451,26 +452,26 @@
             <l n="238" xml:id="l238">À moi seule funeste, à moi seule à pleurer, </l>
             <l n="239" xml:id="l239">Et que tout son pouvoir ne saurait réparer. </l>
           </sp>
-          <sp xml:id="I05-2" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="I05-2">
             <speaker>ALCIONNE.</speaker>
             <l n="240" xml:id="l240">Le sujet de vos pleurs ne se peut-il apprendre ; </l>
             <l n="241" xml:id="l241">Et le temps, et la part qu'une soeur y peut prendre, </l>
             <l n="242" xml:id="l242">Une soeur qui voudrait tous nos maux partager. </l>
             <l n="243" xml:id="l243">Ne pourront-ils du moins votre esprit soulager. </l>
           </sp>
-          <sp xml:id="I05-3" who="ELISE">
+          <sp who="ELISE" xml:id="I05-3">
             <speaker>ÉLISE.</speaker>
             <l n="244" xml:id="l244">Le temps, et la raison quand on perd ce qu'on aime, </l>
             <l n="245" xml:id="l245">Servent de peu de chose en ce malheur extrême, </l>
             <l n="246" xml:id="l246">Et qui peut espérer de s'en voir soulagé, </l>
             <l n="247" xml:id="l247">A mérité le mal dont il est affligé. </l>
           </sp>
-          <sp xml:id="I05-4" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="I05-4">
             <speaker>ALCIONNE.</speaker>
             <l n="248" xml:id="l248">Hé quoi ma chère soeur avez-vous quelque affaire, </l>
             <l n="249" xml:id="l249">Ou quelque déplaisir que vous me deviez taire. </l>
           </sp>
-          <sp xml:id="I05-5" who="ELISE">
+          <sp who="ELISE" xml:id="I05-5">
             <speaker>ÉLISE.</speaker>
             <l n="250" xml:id="l250">Ce jeune cavalier, ce vaillant étranger, </l>
             <note type="C">v.250, l'original porte "secouant" au lieu de "secouru", nous corrigeons.</note>
@@ -482,11 +483,11 @@
             <l n="256" xml:id="l256">S'il vivait encore en l'amoureuse idée, </l>
             <l n="257" xml:id="l257">Que pour ce cher amant ma mémoire a gardée. </l>
           </sp>
-          <sp xml:id="I05-6" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="I05-6">
             <speaker>ALCIONNE.</speaker>
-            <l n="258" xml:id="l258" part="I">Et quoi le brave Alcandre ?... </l>
+            <l n="258" part="I" xml:id="l258">Et quoi le brave Alcandre ?... </l>
           </sp>
-          <sp xml:id="I05-7" who="ELISE">
+          <sp who="ELISE" xml:id="I05-7">
             <speaker>ÉLISE.</speaker>
             <l part="F">Est le Prince charmant, </l>
             <l n="259" xml:id="l259">Que même après sa mort j'aime si tendrement, </l>
@@ -495,7 +496,7 @@
             <l n="262" xml:id="l262">Si vous savez jamais ce que c'est que d'aimer, </l>
             <l n="263" xml:id="l263">Vous me plaindrez ma soeur, au lieu de me blâmer. </l>
           </sp>
-          <sp xml:id="I05-8" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="I05-8">
             <speaker>ALCIONNE.</speaker>
             <l n="264" xml:id="l264">Pour être sans amour, on n'est pas sans tendresse, </l>
             <l n="265" xml:id="l265">Et je n'ai jamais cru l'amour une faiblesse, </l>
@@ -504,9 +505,9 @@
             <l n="268" xml:id="l268">Et puisque vous l'aimiez d'une ardeur non commune, </l>
             <l n="269" xml:id="l269">Heureux dans son amour plus que dans sa fortune, </l>
             <l n="270" xml:id="l270">Pourquoi s'éloigna-t-il ? Et s'il vous fut si cher, </l>
-            <l n="271" xml:id="l271" part="I">L'avez-vous dû souffrir ? </l>
+            <l n="271" part="I" xml:id="l271">L'avez-vous dû souffrir ? </l>
           </sp>
-          <sp xml:id="I05-9" who="ELISE">
+          <sp who="ELISE" xml:id="I05-9">
             <speaker>ÉLISE.</speaker>
             <l part="F">J'eusse pu l'empêcher ; </l>
             <l n="272" xml:id="l272">Mais loin de m'opposer au voyage d'Alcandre, </l>
@@ -514,11 +515,11 @@
             <l n="274" xml:id="l274">Vous saurez les raisons de son éloignement, </l>
             <l n="275" xml:id="l275">Et de nos feux cachés le triste événement. </l>
           </sp>
-          <sp xml:id="I05-10" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="I05-10">
             <speaker>ALCIONNE.</speaker>
             <l n="276" xml:id="l276">Ne me différez pas cette faveur extrême. </l>
           </sp>
-          <sp xml:id="I05-11" who="ELISE">
+          <sp who="ELISE" xml:id="I05-11">
             <speaker>ÉLISE.</speaker>
             <l n="277" xml:id="l277">Je ne refuse rien aux personnes que j'aime. </l>
             <l n="278" xml:id="l278">Mon Alcandre était donc un Prince malheureux, </l>
@@ -563,14 +564,14 @@
             <l n="317" xml:id="l317">Le feu que dans son coeur ma beauté faisait naître, </l>
             <l n="318" xml:id="l318">Vous vouliez tout savoir, et je vous ai tout dit. </l>
           </sp>
-          <sp xml:id="I05-12" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="I05-12">
             <speaker>ALCIONNE.</speaker>
             <l n="319" xml:id="l319">Je ne vous quitte pas d'un plus ample récit, </l>
             <l n="320" xml:id="l320">Je veux savoir comment vous eûtes connaissance, </l>
             <l n="321" xml:id="l321">Du secret important de sa haute naissance, </l>
             <l n="322" xml:id="l322">Mais ne serait-ce point aigrir votre douleur ? </l>
           </sp>
-          <sp xml:id="I05-13" who="ELISE">
+          <sp who="ELISE" xml:id="I05-13">
             <speaker>ÉLISE.</speaker>
             <l n="323" xml:id="l323">Un malheureux se plaît à conter son malheur, </l>
             <l n="324" xml:id="l324">Il m'aimait donc ma soeur, et ne me l'osait dire ? </l>
@@ -619,7 +620,7 @@
             <l n="366" xml:id="l366">Sur mon simple portrait, sur le bruit de mon nom, </l>
             <l n="367" xml:id="l367">Que vous dirai-je encore ; il obtint son pardon. </l>
           </sp>
-          <sp xml:id="I05-14" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="I05-14">
             <speaker>ALCIONNE.</speaker>
             <l n="368" xml:id="l368">L'orgueil qu'un sang illustre à nos âmes inspire, </l>
             <l n="369" xml:id="l369">En vain malgré l'amour veut garder son Empire, </l>
@@ -628,7 +629,7 @@
             <l n="372" xml:id="l372">Et selon qu'un amant est capable de plaire, </l>
             <l n="373" xml:id="l373">Il se rend le destin favorable ou contraire. </l>
           </sp>
-          <sp xml:id="I05-15" who="ELISE">
+          <sp who="ELISE" xml:id="I05-15">
             <speaker>ÉLISE.</speaker>
             <l n="374" xml:id="l374">Ha ma soeur ! Ce n'est pas ce qui nous rend heureux, </l>
             <l n="375" xml:id="l375">La fortune peut tout dans l'Empire amoureux, </l>
@@ -665,11 +666,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Nicanor, Élise, Alcionne, Amintas. </head>
-          <sp xml:id="II01-1" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-1">
             <speaker>NICANOR.</speaker>
             <l n="406" xml:id="l406">Madame, je veux bien ici vous répéter, </l>
             <note type="L">Protester : signifie encore, Promettre, assurer fortement quelque chose. Il a protesté hautement qu'il se vengerait de cette injure. Il a protesté qu'il voulait vivre et mourir dans la Foi. Il a juré et protesté qu'il n'avait eu aucune part en cette action. [F]</note>
@@ -679,7 +680,7 @@
             <l n="410" xml:id="l410">Que de se prévaloir des volontés du Roi, </l>
             <l n="411" xml:id="l411">Pour un bien qu'il n'attend que de sa seule foi. </l>
           </sp>
-          <sp xml:id="II01-2" who="ELISE">
+          <sp who="ELISE" xml:id="II01-2">
             <speaker>ÉLISE.</speaker>
             <l n="412" xml:id="l412">Je vous l'ai déjà dit, et je vous le répète, </l>
             <l n="413" xml:id="l413">J'ai du ressentiment de sa flamme discrète, </l>
@@ -688,7 +689,7 @@
             <l n="416" xml:id="l416">Mais j'atteste les Dieux que je ne le puis faire, </l>
             <l n="417" xml:id="l417">Et s'il n'est point aimé, que c'est sans me déplaire. </l>
           </sp>
-          <sp xml:id="II01-3" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-3">
             <speaker>NICANOR.</speaker>
             <l n="418" xml:id="l418">Cependant Orosmane à la côte paraît, </l>
             <l n="419" xml:id="l419">Vous savez ce qu'il peut, hasardeux comme il est, </l>
@@ -696,34 +697,34 @@
             <l n="421" xml:id="l421">Que nous avons besoin d'un Roi qui la défende, </l>
             <l n="422" xml:id="l422">Et vous savez aussi que Pisandre en mourant... </l>
           </sp>
-          <sp xml:id="II01-4" who="ELISE">
+          <sp who="ELISE" xml:id="II01-4">
             <speaker>ÉLISE.</speaker>
             <l n="423" xml:id="l423">Je sais tout, et de plus, qu'il est indifférent, </l>
             <l n="424" xml:id="l424">De la querelle des soeurs, d'Élise, ou d'Alcionne, </l>
             <l n="425" xml:id="l425">Votre fils Amintas reçoive la couronne, </l>
             <l n="426" xml:id="l426">Ma soeur peut comme moi couronner Amintas. </l>
           </sp>
-          <sp xml:id="II01-5" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-5">
             <speaker>NICANOR.</speaker>
-            <l n="427" xml:id="l427" part="I">Mais il n'aime que vous. </l>
+            <l n="427" part="I" xml:id="l427">Mais il n'aime que vous. </l>
           </sp>
-          <sp xml:id="II01-6" who="ELISE">
+          <sp who="ELISE" xml:id="II01-6">
             <speaker>ÉLISE.</speaker>
             <l part="F">Mais je ne l'aime pas. </l>
           </sp>
-          <sp xml:id="II01-7" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-7">
             <speaker>NICANOR.</speaker>
             <l n="428" xml:id="l428">Amintas ne veut point de sceptre sans Élise. </l>
           </sp>
-          <sp xml:id="II01-8" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="II01-8">
             <speaker>ALCIONNE.</speaker>
             <l n="429" xml:id="l429">Je veux encore moins d'Amintas qu'on méprise. </l>
           </sp>
-          <sp xml:id="II01-9" who="ELISE">
+          <sp who="ELISE" xml:id="II01-9">
             <speaker>ÉLISE, se tournant vers Alcionne.</speaker>
             <l n="430" xml:id="l430">Ha je l'ai refusé ; mais sans le mépriser. </l>
           </sp>
-          <sp xml:id="II01-10" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="II01-10">
             <speaker>ALCIONNE.</speaker>
             <l n="431" xml:id="l431">Et sans mépris aussi je le puis refuser, </l>
             <l n="432" xml:id="l432">Je le sépare assez des hommes du vulgaire : </l>
@@ -733,12 +734,12 @@
             <l n="436" xml:id="l436">Et quoique son amour puisse être son excuse, </l>
             <l n="437" xml:id="l437">Je ne puis accepter ce qu'un autre refuse. </l>
           </sp>
-          <sp xml:id="II01-11" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-11">
             <speaker>NICANOR.</speaker>
             <l n="438" xml:id="l438">Vous pourrez entre vous terminer ces débats, </l>
-            <l n="439" xml:id="l439" part="I">Mais mon fils doit régner. </l>
+            <l n="439" part="I" xml:id="l439">Mais mon fils doit régner. </l>
           </sp>
-          <sp xml:id="II01-12" who="ELISE">
+          <sp who="ELISE" xml:id="II01-12">
             <speaker>ÉLISE.</speaker>
             <l part="F">Et ne règne-t-il pas, </l>
             <l n="440" xml:id="l440">Puisque vous dont il tient la vie, et la lumière, </l>
@@ -758,23 +759,23 @@
             <l n="454" xml:id="l454">Et pourra-t-il régner votre fils Amintas, </l>
             <l n="455" xml:id="l455">Puisque ma soeur ni moi ne l'épouserons pas ? </l>
           </sp>
-          <sp xml:id="II01-13" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-13">
             <speaker>NICANOR.</speaker>
             <l n="456" xml:id="l456">Mon fils peut succéder à Pisandre mon frère. </l>
           </sp>
-          <sp xml:id="II01-14" who="ELISE">
+          <sp who="ELISE" xml:id="II01-14">
             <speaker>ÉLISE.</speaker>
             <l n="457" xml:id="l457">Ce frère fut son Roi ; mais ce Roi fut mon père. </l>
           </sp>
-          <sp xml:id="II01-15" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II01-15">
             <speaker>AMINTAS.</speaker>
-            <l n="458" xml:id="l458" part="I">Puis-je parler Seigneur ? </l>
+            <l n="458" part="I" xml:id="l458">Puis-je parler Seigneur ? </l>
           </sp>
-          <sp xml:id="II01-16" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-16">
             <speaker>NICANOR.</speaker>
             <l part="F">Oui parle ; mais en Roi. </l>
           </sp>
-          <sp xml:id="II01-17" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II01-17">
             <speaker>AMINTAS.</speaker>
             <l n="459" xml:id="l459">À ces divines soeurs qui peuvent tout sur moi, </l>
             <l n="460" xml:id="l460">Comment puis-je parler qu'en esclave fidèle, </l>
@@ -795,42 +796,42 @@
             <l n="474" xml:id="l474">N'exigez rien d'un fils, qu'il doive refuser, </l>
             <l n="475" xml:id="l475">Et dont un père un jour le puisse mépriser. </l>
           </sp>
-          <sp xml:id="II01-18" who="NICANOR">
+          <sp who="NICANOR" xml:id="II01-18">
             <speaker>NICANOR.</speaker>
             <l n="476" xml:id="l476">Et de ton père aussi ne trompe pas l'attente, </l>
             <l n="477" xml:id="l477">Mais quel homme inconnu ordre se présente ? </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Sébaste, Élise, Nicanor, Alcionne, Amintas. </head>
-          <sp xml:id="II02-1" who="SEBASTE">
-            <speaker>SÉBASTE,  parlant à Amintas.</speaker>
+          <sp who="SEBASTE" xml:id="II02-1">
+            <speaker>SÉBASTE, parlant à Amintas.</speaker>
             <l n="478" xml:id="l478">Je vous cherchais Seigneur ; en ces mots vous verrez, </l>
             <l n="479" xml:id="l479">Ce que veut Orosmane, et vous lui répondrez. </l>
           </sp>
-          <sp xml:id="II02-2" who="NICANOR">
+          <sp who="NICANOR" xml:id="II02-2">
             <speaker>NICANOR.</speaker>
             <l n="480" xml:id="l480">Et que peuvent avoir mon fils, et ce corsaire, </l>
-            <l n="481" xml:id="l481" part="I">À démêler ensemble ? </l>
+            <l n="481" part="I" xml:id="l481">À démêler ensemble ? </l>
           </sp>
-          <sp xml:id="II02-3" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="II02-3">
             <speaker>SÉBASTE.</speaker>
             <l part="F">Une importante affaire. </l>
           </sp>
-          <sp xml:id="II02-4" who="ELISE">
+          <sp who="ELISE" xml:id="II02-4">
             <speaker>ÉLISE.</speaker>
             <l n="482" xml:id="l482">Amintas me regarde, et rougit, et pâlit. </l>
           </sp>
-          <sp xml:id="II02-5" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="II02-5">
             <speaker>ALCIONNE.</speaker>
             <l n="483" xml:id="l483">Quelque chose le trouble en ce billet qu'il lit. </l>
           </sp>
-          <sp xml:id="II02-6" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II02-6">
             <speaker>AMINTAS.</speaker>
             <l n="484" xml:id="l484">Ce billet est pour vous plus que pour moi, Madame, </l>
             <l n="485" xml:id="l485">Que de troubles divers s'élèvent dans mon âme ! </l>
           </sp>
-          <sp xml:id="II02-7" who="ELISE">
+          <sp who="ELISE" xml:id="II02-7">
             <speaker>ÉLISE, après avoir lu.</speaker>
             <l n="486" xml:id="l486">Vous me gardiez encore un si cruel malheur. </l>
             <l n="487" xml:id="l487">Grands Dieux ! Et vous souffrez qu'un pirate, un voleur, </l>
@@ -838,13 +839,13 @@
             <l n="489" xml:id="l489">Attaque mon honneur le seul bien qui me reste ; </l>
             <l n="490" xml:id="l490">Amintas, vous pourriez douter de ma vertu, </l>
             <l n="491" xml:id="l491">Si je ne publiais ce que vous avez tu. </l>
-            <stage type="[N/A]">Lettre. </stage>
+            <stage>Lettre. </stage>
             <l n="492" xml:id="l492">En vain Prince Amintas tu brûles pour Élise, </l>
             <l n="493" xml:id="l493">Et tu veux devenir son époux, et son Roi : </l>
             <l n="494" xml:id="l494">Elle a depuis longtemps disposé de sa foi ; </l>
             <l n="495" xml:id="l495">Depuis longtemps elle est éprise, </l>
             <l n="496" xml:id="l496">D'un Prince digne d'elle, et plus heureux que toi. </l>
-            <stage type="[N/A]">Fin de la lettre.</stage>
+            <stage>Fin de la lettre.</stage>
             <l n="497" xml:id="l497">Un Prince qui n'est plus, il est vrai, m'a servie, </l>
             <l n="498" xml:id="l498">Il m'aimait, je l'aimais, et s'il étai en vie, </l>
             <l n="499" xml:id="l499">Je l'aimerais encore ; il serait mon Époux, </l>
@@ -858,7 +859,7 @@
             <l n="507" xml:id="l507">Un tel présent vous fait son époux, et son Roi, </l>
             <l n="508" xml:id="l508">Songez-y Prince, ou bien ne songez plus à moi. </l>
           </sp>
-          <sp xml:id="II02-8" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II02-8">
             <speaker>AMINTAS.</speaker>
             <l n="509" xml:id="l509">Ne songer plus en vous ? Ha que plutôt ma vie,</l>
             <l n="510" xml:id="l510">Dans les fers du Pirate à jamais asservie, </l>
@@ -875,7 +876,7 @@
             <l n="521" xml:id="l521">Et quand vous fausseriez la parole promise, </l>
             <l n="522" xml:id="l522">Je me plaindrais du Ciel sans me plaindre d'Élise. </l>
           </sp>
-          <sp xml:id="II02-9" who="ELISE">
+          <sp who="ELISE" xml:id="II02-9">
             <speaker>ÉLISE.</speaker>
             <l n="523" xml:id="l523">Non, non Prince, espérez, puisque je le permets, </l>
             <l n="524" xml:id="l524">Vengez-moi, je tiendrai tout que je promets, </l>
@@ -894,14 +895,14 @@
             <l n="536" xml:id="l536">Allez donc, allez vaincre, et cependant mes larmes, </l>
             <l n="537" xml:id="l537">Vont demander aux dieux le bonheur de vos armes. </l>
           </sp>
-          <sp xml:id="II02-10" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II02-10">
             <speaker>AMINTAS.</speaker>
             <l n="538" xml:id="l538">Avec votre secours qui me peut résister ? </l>
             <l n="539" xml:id="l539">À quel hardi dessein ne me puis-je porter ? </l>
             <l n="540" xml:id="l540">Vous verrez abattu l'orgueil qui vous outrage, </l>
             <l n="541" xml:id="l541">Et vous me plaindrai mort ou louerai mon courage. </l>
           </sp>
-          <sp xml:id="II02-11" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="II02-11">
             <speaker>SÉBASTE.</speaker>
             <l n="542" xml:id="l542">Avant qu'avoir vaincu vous triomphez, Seigneur, </l>
             <l n="543" xml:id="l543">Je pardonne la fougue à votre jeune ardeur : </l>
@@ -919,7 +920,7 @@
             <l n="554" xml:id="l554">Donnez votre parole, et fiez-vous en moi, </l>
             <l n="555" xml:id="l555">Que vous pourrez bientôt vous battre avec mon Roi. </l>
           </sp>
-          <sp xml:id="II02-12" who="NICANOR">
+          <sp who="NICANOR" xml:id="II02-12">
             <speaker>NICANOR.</speaker>
             <l n="556" xml:id="l556">Quoi ! La Chypre verrait une telle aventure ? </l>
             <l n="557" xml:id="l557">J'offenserais ainsi l'honneur, et la nature, </l>
@@ -932,7 +933,7 @@
             <l n="564" xml:id="l564">Tu trouveras assez de quoi te satisfaire, </l>
             <l n="565" xml:id="l565">Sans aller te commettre avecque ce corsaire. </l>
           </sp>
-          <sp xml:id="II02-13" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II02-13">
             <speaker>AMINTAS.</speaker>
             <l n="566" xml:id="l566">Dira-t-on que vous seul ne m'ayez pas permis, </l>
             <l n="567" xml:id="l567">De vaincre le plus grand de tous vos ennemis, </l>
@@ -946,44 +947,44 @@
             <l n="575" xml:id="l575">Vous vous rendez, Seigneur, pour moi plus dangereux, </l>
             <l n="576" xml:id="l576">Que ne fera jamais la valeur du Pirate, </l>
           </sp>
-          <sp xml:id="II02-14" who="NICANOR">
+          <sp who="NICANOR" xml:id="II02-14">
             <speaker>NICANOR.</speaker>
-            <stage type="exit">Il sort.</stage>
+            <stage>Il sort.</stage>
             <l n="577" xml:id="l577">Va donc, suis ton destin, je ne te retiens plus. </l>
           </sp>
-          <sp xml:id="II02-15" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="II02-15">
             <speaker>SÉBASTE.</speaker>
             <l n="578" xml:id="l578">Vous perdez bien du temps en discours superflus. </l>
           </sp>
-          <sp xml:id="II02-16" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II02-16">
             <speaker>AMINTAS.</speaker>
             <l n="579" xml:id="l579">Allons donc au combat sans tarder davantage. </l>
           </sp>
-          <sp xml:id="II02-17" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="II02-17">
             <speaker>SÉBASTE.</speaker>
             <l n="580" xml:id="l580">Allons Prince, un vaisseau m'attend près du rivage </l>
             <l n="581" xml:id="l581">Orosmane à la rade en peu de temps saura, </l>
             <l n="582" xml:id="l582">Ce que vous lui voulez et vous satisfera. </l>
           </sp>
-          <sp xml:id="II02-18" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="II02-18">
             <speaker>ALCIONNE.</speaker>
             <l n="583" xml:id="l583">Amintas ! Ô mon coeur, que me faites-vous faire. </l>
             <l n="584" xml:id="l584">Vous vous exposez donc à la foi d'un Corsaire ! </l>
             <l n="585" xml:id="l585">Un Prince comme vous se devrait ménager. </l>
           </sp>
-          <sp xml:id="II02-19" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="II02-19">
             <speaker>AMINTAS.</speaker>
             <l n="586" xml:id="l586">Élise est offensée, et je la veux venger, </l>
             <l n="587" xml:id="l587">Qui n'en est pas aimé, n'est pas digne de vivre, </l>
             <l n="588" xml:id="l588">Il faut qu'un prompt trépas de mes soins la délivre, </l>
             <l n="589" xml:id="l589">Ou qu'un combat heureux change son coeur ingrat. </l>
             <l n="590" xml:id="l590">Et ce bonheur vaut bien qu'on hasarde un combat. </l>
-            <stage type="exit">Il sort. </stage>
+            <stage>Il sort. </stage>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Alcionne, Clarice. </head>
-          <sp xml:id="II03-1" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="II03-1">
             <speaker>ALCIONNE.</speaker>
             <l n="591" xml:id="l591">Hélas ! Ce n'est pas là ce que je voulais dire, </l>
             <l n="592" xml:id="l592">À l'innocent auteur de mon cruel martyre, </l>
@@ -1015,12 +1016,12 @@
             <l n="617" xml:id="l617">Où plutôt je crains tout, et je n'espère rien, </l>
             <l n="618" xml:id="l618">Est-il un désespoir plus juste que le mien ? </l>
           </sp>
-          <sp xml:id="II03-2" who="CLARICE">
+          <sp who="CLARICE" xml:id="II03-2">
             <speaker>CLARICE.</speaker>
             <l n="619" xml:id="l619">Mais Amintas lassé d'aimer qui le méprise, </l>
             <l n="620" xml:id="l620">Peut un jour vous offrir ce que refuse Élise. </l>
           </sp>
-          <sp xml:id="II03-3" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="II03-3">
             <speaker>ALCIONNE.</speaker>
             <l n="621" xml:id="l621">Après les sentiments d'une noble fierté, </l>
             <l n="622" xml:id="l622">Où mon coeur contre lui s'est tantôt emporté, </l>
@@ -1029,11 +1030,11 @@
             <l n="625" xml:id="l625">Lâche puis-je trahir la fierté de mon coeur, </l>
             <l n="626" xml:id="l626">Et plus lâche manquer de parole à ma soeur ? </l>
           </sp>
-          <sp xml:id="II03-4" who="CLARICE">
+          <sp who="CLARICE" xml:id="II03-4">
             <speaker>CLARICE.</speaker>
             <l n="627" xml:id="l627">Il saurait mon amour si j'étais Alcionne. </l>
           </sp>
-          <sp xml:id="II03-5" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="II03-5">
             <speaker>ALCIONNE.</speaker>
             <l n="628" xml:id="l628">Que pourrait-il penser d'une âme qui se donne ? </l>
             <l n="629" xml:id="l629">Ha ! Si de là dépend tout l'heure de mon Destin, </l>
@@ -1063,23 +1064,23 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Nicanor, Criton.</head>
-          <sp xml:id="III01-1" who="NICANOR">
+          <sp who="NICANOR" xml:id="III01-1">
             <speaker>NICANOR.</speaker>
             <l n="653" xml:id="l653">Le corsaire Orosmane a donc pris terre ainsi ? </l>
           </sp>
-          <sp xml:id="III01-2" who="CRITON">
+          <sp who="CRITON" xml:id="III01-2">
             <speaker>CRITON.</speaker>
             <l n="654" xml:id="l654">Et renvoyé sa barque et ses soldats aussi. </l>
           </sp>
-          <sp xml:id="III01-3" who="NICANOR">
+          <sp who="NICANOR" xml:id="III01-3">
             <speaker>NICANOR.</speaker>
-            <l n="655" xml:id="l655" part="I">Et mon fils ? </l>
+            <l n="655" part="I" xml:id="l655">Et mon fils ? </l>
           </sp>
-          <sp xml:id="III01-4" who="CRITON">
+          <sp who="CRITON" xml:id="III01-4">
             <speaker>CRITON.</speaker>
             <l part="F">Et le Prince a de la même sorte, </l>
             <l n="656" xml:id="l656">Renvoyé les Soldats qui lui servaient d'escorte. </l>
@@ -1087,7 +1088,7 @@
             <l n="658" xml:id="l658">Où sans se faire voir on ne peut approcher : </l>
             <l n="659" xml:id="l659">Mais Seigneur, consentir à ce combat funeste... </l>
           </sp>
-          <sp xml:id="III01-5" who="NICANOR">
+          <sp who="NICANOR" xml:id="III01-5">
             <speaker>NICANOR.</speaker>
             <l n="660" xml:id="l660">J'ai fait ce que j'ai dû, les Dieux feront le reste. </l>
             <l n="661" xml:id="l661">La victoire en dépend, et non pas notre coeur, </l>
@@ -1095,53 +1096,53 @@
             <l n="663" xml:id="l663">Mais la flotte corsaire à notre rade ancrée, </l>
             <l n="664" xml:id="l664">S'est à l'aube du jour en deux parts séparée. </l>
           </sp>
-          <sp xml:id="III01-6" who="CRITON">
+          <sp who="CRITON" xml:id="III01-6">
             <speaker>CRITON.</speaker>
             <l n="665" xml:id="l665">Dont l'une, vent en poupe a pris la haute mer, </l>
             <l n="666" xml:id="l666">Pendant qu'on a vu l'autre en bonne ordre ramer, </l>
             <l n="667" xml:id="l667">Vers l'Occident de l'Île où l'abord est facile, </l>
             <l n="668" xml:id="l668">Et qui n'est défendue ni de Fort ni de Ville. </l>
           </sp>
-          <sp xml:id="III01-7" who="NICANOR">
+          <sp who="NICANOR" xml:id="III01-7">
             <speaker>NICANOR.</speaker>
             <l n="669" xml:id="l669">Ils ont quelque dessein qui nous est inconnu, </l>
-            <l n="670" xml:id="l670" part="I">Mais que veut Licas ? </l>
+            <l n="670" part="I" xml:id="l670">Mais que veut Licas ? </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II. Licas, Nicanor.</head>
-          <sp xml:id="III02-1" who="LICAS">
+          <sp who="LICAS" xml:id="III02-1">
             <speaker>LICAS.</speaker>
             <l part="F">Le Prince est revenu </l>
-            <l n="671" xml:id="l671" part="I">Seigneur ! </l>
+            <l n="671" part="I" xml:id="l671">Seigneur ! </l>
           </sp>
-          <sp xml:id="III02-2" who="NICANOR">
+          <sp who="NICANOR" xml:id="III02-2">
             <speaker>NICANOR.</speaker>
             <l part="F">De son combat il revient plein de gloire </l>
-            <l n="672" xml:id="l672" part="I">Qu'en est-il ? </l>
+            <l n="672" part="I" xml:id="l672">Qu'en est-il ? </l>
           </sp>
-          <sp xml:id="III02-3" who="LICAS">
+          <sp who="LICAS" xml:id="III02-3">
             <speaker>LICAS.</speaker>
             <l part="F">Il n'a point parlé de sa victoire. </l>
-            <l n="673" xml:id="l673" part="I">Le Prince est modéré. </l>
+            <l n="673" part="I" xml:id="l673">Le Prince est modéré. </l>
           </sp>
-          <sp xml:id="III02-4" who="NICANOR">
+          <sp who="NICANOR" xml:id="III02-4">
             <speaker>NICANOR.</speaker>
             <l part="F">Le Prince est donc vaincu, </l>
             <l n="674" xml:id="l674">Et s'il l'est avec honte, il n'a que trop vécu. </l>
           </sp>
-          <sp xml:id="III02-5" who="LICAS">
+          <sp who="LICAS" xml:id="III02-5">
             <speaker>LICAS.</speaker>
             <l n="675" xml:id="l675">Le corsaire, Seigneur, a surpris Amatonte. </l>
           </sp>
-          <sp xml:id="III02-6" who="NICANOR">
+          <sp who="NICANOR" xml:id="III02-6">
             <speaker>NICANOR.</speaker>
             <l n="676" xml:id="l676">Ô Dieux ! Ajoutez-vous cette perte à ma honte ? </l>
             <l n="677" xml:id="l677">Et si votre secours me veut abandonner, </l>
             <l n="678" xml:id="l678">Quel remède assez prompt y pourrai-je donner ? </l>
             <l n="679" xml:id="l679">Mais sait-on le détail d'une telle aventure. </l>
           </sp>
-          <sp xml:id="III02-7" who="LICAS">
+          <sp who="LICAS" xml:id="III02-7">
             <speaker>LICAS.</speaker>
             <l n="680" xml:id="l680">Ce que j'ai pu tirer d'un Peuple qui murmure, </l>
             <l n="681" xml:id="l681">Et vous savez, Seigneur, ce qu'on en peut tirer, </l>
@@ -1151,14 +1152,14 @@
             <l n="685" xml:id="l685">L'on a pris Amatonte, et le plus fort de tous, </l>
             <l n="686" xml:id="l686">Que les autres suivront, marche, et vient droit à nous. </l>
           </sp>
-          <sp xml:id="III02-8" who="NICANOR">
+          <sp who="NICANOR" xml:id="III02-8">
             <speaker>NICANOR.</speaker>
-            <l n="687" xml:id="l687" part="I">C'est assez. </l>
+            <l n="687" part="I" xml:id="l687">C'est assez. </l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Nicanor, Élise, Licas.</head>
-          <sp xml:id="III03-1" who="NICANOR">
+          <sp who="NICANOR" xml:id="III03-1">
             <speaker>NICANOR.</speaker>
             <l part="F">Savez-vous qu'Amatonte est surprise, </l>
             <l n="688" xml:id="l688">Madame, et qu'on s'en prend à la Princesse Élise ; </l>
@@ -1169,11 +1170,11 @@
             <l n="693" xml:id="l693">Et qu'à nous qui pourrions les esprits rassurer, </l>
             <l n="694" xml:id="l694">Elle ne permet pas seulement d'espérer ? </l>
           </sp>
-          <sp xml:id="III03-2" who="ELISE">
+          <sp who="ELISE" xml:id="III03-2">
             <speaker>ÉLISE.</speaker>
             <l n="695" xml:id="l695">Je permets d'espérer au vainqueur du corsaire. </l>
           </sp>
-          <sp xml:id="III03-3" who="NICANOR">
+          <sp who="NICANOR" xml:id="III03-3">
             <speaker>NICANOR.</speaker>
             <l n="696" xml:id="l696">Mais Amintas vaincu, perd l'espoir de vous plaire, </l>
             <l n="697" xml:id="l697">Ce Prince qui vous aime, et que vous méprisez, </l>
@@ -1183,7 +1184,7 @@
             <l n="701" xml:id="l701">Ha ! Puisqu'à son amour l'espoir est défendu, </l>
             <l n="702" xml:id="l702">Que Chypre soit perdue autant qu'il est perdu. </l>
           </sp>
-          <sp xml:id="III03-4" who="ELISE">
+          <sp who="ELISE" xml:id="III03-4">
             <speaker>ÉLISE.</speaker>
             <l n="703" xml:id="l703">Ce n'est pas la saison de faire des reproches, </l>
             <l n="704" xml:id="l704">Quand de nos ennemis nous craignons les approches, </l>
@@ -1202,11 +1203,11 @@
             <l n="717" xml:id="l717">Mais le Prince Amintas, ne s'est-il pas battu ? </l>
             <l n="718" xml:id="l718">Tient-on secret s'il est, ou vainqueur ou vaincu ? </l>
           </sp>
-          <sp xml:id="III03-5" who="LICAS">
+          <sp who="LICAS" xml:id="III03-5">
             <speaker>LICAS.</speaker>
-            <l n="719" xml:id="l719" part="I">Il vous cherche, Madame. </l>
+            <l n="719" part="I" xml:id="l719">Il vous cherche, Madame. </l>
           </sp>
-          <sp xml:id="III03-6" who="ELISE">
+          <sp who="ELISE" xml:id="III03-6">
             <speaker>ÉLISE.</speaker>
             <l part="F">Ha ! Qu'il vienne m'apprendre </l>
             <l n="720" xml:id="l720">Le succès du combat que je brûle d'entendre. </l>
@@ -1216,9 +1217,9 @@
             <l n="724" xml:id="l724">Assez triste déjà, d'Amatonte surprise ? </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV. Amintas, Élise, Nicanor.</head>
-          <sp xml:id="III04-1" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III04-1">
             <speaker>AMINTAS.</speaker>
             <l n="725" xml:id="l725">Je suis vaincu, Princesse, et je cède à mon sort. </l>
             <l n="726" xml:id="l726">Mon bras blessé n'a fait qu'un inutile effort, </l>
@@ -1249,7 +1250,7 @@
             <l n="751" xml:id="l751">Qu'il n'est point de mortel plus digne de vous plaire, </l>
             <l n="752" xml:id="l752">Et que l'on connaît mal cet illustre corsaire. </l>
           </sp>
-          <sp xml:id="III04-2" who="ELISE">
+          <sp who="ELISE" xml:id="III04-2">
             <speaker>ÉLISE.</speaker>
             <l n="753" xml:id="l753">Ajoute, Amintas, que cet heureux vainqueur, </l>
             <l n="754" xml:id="l754">Vous ôte à même temps a victoire et le coeur. </l>
@@ -1258,7 +1259,7 @@
             <l n="757" xml:id="l757">Combattront Orosmane, et s'ils en sont vaincus, </l>
             <l n="758" xml:id="l758">Ne lui parleront point de ses rares vertus. </l>
           </sp>
-          <sp xml:id="III04-3" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III04-3">
             <speaker>AMINTAS.</speaker>
             <l n="759" xml:id="l759">Vous me blâmez, Madame, à cause que j'estime, </l>
             <l n="760" xml:id="l760">En mon ennemi même, un vainqueur magnanime </l>
@@ -1273,7 +1274,7 @@
             <l n="769" xml:id="l769">Privé même d'espoir de vous plus posséder, </l>
             <l n="770" xml:id="l770">Je veux pour vous encore aller tout hasarder. </l>
           </sp>
-          <sp xml:id="III04-4" who="ELISE">
+          <sp who="ELISE" xml:id="III04-4">
             <speaker>ÉLISE.</speaker>
             <l n="771" xml:id="l771">Un si beau désespoir, Prince, plus qu'autre chose, </l>
             <l n="772" xml:id="l772">Pourrait faire cesser le malheur qui le cause. </l>
@@ -1284,12 +1285,12 @@
             <l n="777" xml:id="l777">On s'expose pour vaincre, on vainc en combattant, </l>
             <l n="778" xml:id="l778">Et la guerre et l'amour, veulent qu'on soit constant. </l>
           </sp>
-          <sp xml:id="III04-5" who="NICANOR">
+          <sp who="NICANOR" xml:id="III04-5">
             <speaker>NICANOR.</speaker>
             <l n="779" xml:id="l779">Mais la guerre et l'amour couronnent la constance. </l>
             <l n="780" xml:id="l780">Et des plus malheureux font vivre l'espérance. </l>
           </sp>
-          <sp xml:id="III04-6" who="ELISE">
+          <sp who="ELISE" xml:id="III04-6">
             <speaker>ÉLISE.</speaker>
             <l n="781" xml:id="l781">Mais un coeur généreux, de malheurs combattu, </l>
             <l n="782" xml:id="l782">Pour perdre son espoir ne perd point sa vertu. </l>
@@ -1303,16 +1304,16 @@
             <l n="790" xml:id="l790">Et pour vous-même enfin, allez vaincre ou mourir. </l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Nicanor, Amintas.</head>
-          <sp xml:id="III05-1" who="NICANOR">
+          <sp who="NICANOR" xml:id="III05-1">
             <speaker>NICANOR.</speaker>
             <l n="791" xml:id="l791">Défions-nous, mon fils, de cette âme cachée : </l>
             <l n="792" xml:id="l792">Quand du commun danger elle paraît touchée, </l>
             <l n="793" xml:id="l793">Et nous porte au combat pour le salut de tous, </l>
             <l n="794" xml:id="l794">Elle veut seulement se défaire de nous. </l>
           </sp>
-          <sp xml:id="III05-2" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III05-2">
             <speaker>AMINTAS.</speaker>
             <l n="795" xml:id="l795">Quelque dessein qu'elle ait, cette belle Princesse, </l>
             <l n="796" xml:id="l796">Sa volonté toujours de la mienne Maîtresse, </l>
@@ -1323,27 +1324,27 @@
             <l n="801" xml:id="l801">Et qu'elle ne se sert de son divin pouvoir, </l>
             <l n="802" xml:id="l802">Qu'à porter mon courage à faire son devoir. </l>
           </sp>
-          <sp xml:id="III05-3" who="NICANOR">
+          <sp who="NICANOR" xml:id="III05-3">
             <speaker>NICANOR.</speaker>
             <l n="803" xml:id="l803">Qu'aveuglement tu suis une amour insensée ! </l>
           </sp>
-          <sp xml:id="III05-4" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III05-4">
             <speaker>AMINTAS.</speaker>
             <l n="804" xml:id="l804">Vous m'en avez Seigneur, inspiré la pensée. </l>
           </sp>
-          <sp xml:id="III05-5" who="NICANOR">
+          <sp who="NICANOR" xml:id="III05-5">
             <speaker>NICANOR.</speaker>
             <l n="805" xml:id="l805">On change de dessein selon l'utilité. </l>
           </sp>
-          <sp xml:id="III05-6" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III05-6">
             <speaker>AMINTAS.</speaker>
             <l n="806" xml:id="l806">On ne suit pas ainsi l'exacte probité. </l>
           </sp>
-          <sp xml:id="III05-7" who="NICANOR">
+          <sp who="NICANOR" xml:id="III05-7">
             <speaker>NICANOR.</speaker>
             <l n="807" xml:id="l807">Ha ! Ne te pique point de ces vertus frivoles. </l>
           </sp>
-          <sp xml:id="III05-8" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III05-8">
             <speaker>AMINTAS.</speaker>
             <l n="808" xml:id="l808">C'est perdre temps, Seigneur, en de vaines paroles, </l>
             <l n="809" xml:id="l809">Tandis que de Paphos tout le peuple étonné, </l>
@@ -1355,14 +1356,14 @@
             <l n="815" xml:id="l815">Rendez-moi digne enfin de ces hautes pensées, </l>
             <l n="816" xml:id="l816">Que vos conseils hardis dans mon âme ont laissées. </l>
           </sp>
-          <sp xml:id="III05-9" who="NICANOR">
+          <sp who="NICANOR" xml:id="III05-9">
             <speaker>NICANOR.</speaker>
             <l n="817" xml:id="l817">Allez donc faire encore des ingrats dans Paphos. </l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI. Amintas, Criton.</head>
-          <sp xml:id="III06-1" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III06-1">
             <speaker>AMINTAS.</speaker>
             <l n="818" xml:id="l818">Prends mes armes, Criton, et deux de mes chevaux, </l>
             <l n="819" xml:id="l819">Sur le bord de la mer je te joins dans une heure ; </l>
@@ -1374,34 +1375,34 @@
             <l n="825" xml:id="l825">Je veux aller combattre Orosmane en son Camp ; </l>
             <l n="826" xml:id="l826">Nous sommes peu, Criton, pour un dessein si grand. </l>
           </sp>
-          <sp xml:id="III06-2" who="CRITON">
+          <sp who="CRITON" xml:id="III06-2">
             <speaker>CRITON.</speaker>
             <l n="827" xml:id="l827">Un semblable dessein n'en veut pas davantage. </l>
           </sp>
-          <sp xml:id="III06-3" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III06-3">
             <speaker>AMINTAS.</speaker>
             <l n="828" xml:id="l828">Je voulais éprouver ton sens, et ton courage. </l>
           </sp>
-          <sp xml:id="III06-4" who="CRITON">
+          <sp who="CRITON" xml:id="III06-4">
             <speaker>CRITON.</speaker>
-            <l n="829" xml:id="l829" part="I">Mon zèle ? ... </l>
+            <l n="829" part="I" xml:id="l829">Mon zèle ? ... </l>
           </sp>
-          <sp xml:id="III06-5" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III06-5">
             <speaker>AMINTAS.</speaker>
             <l part="F">Il m'est connu va vite, et sois adroit. </l>
           </sp>
-          <sp xml:id="III06-6" who="CRITON">
+          <sp who="CRITON" xml:id="III06-6">
             <speaker>CRITON.</speaker>
-            <l n="830" xml:id="l830" part="I">Seigneur... </l>
+            <l n="830" part="I" xml:id="l830">Seigneur... </l>
           </sp>
-          <sp xml:id="III06-7" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III06-7">
             <speaker>AMINTAS.</speaker>
             <l part="F">Je la vois bien, va, dis-je, et soit secret. </l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="III07">
           <head>SCÈNE VII. Alcionne, Amintas.</head>
-          <sp xml:id="III07-1" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="III07-1">
             <speaker>ALCIONNE.</speaker>
             <l n="831" xml:id="l831">Ha Prince ! Il est donc vrai que ma soeur vous engage, </l>
             <l n="832" xml:id="l832">À verser votre sang pour venger un outrage, </l>
@@ -1410,7 +1411,7 @@
             <l n="835" xml:id="l835">Des charmes de ses yeux, ceux de son diadème, </l>
             <l n="836" xml:id="l836">Vous jettent donc encore en ce péril extrême ; </l>
           </sp>
-          <sp xml:id="III07-2" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III07-2">
             <speaker>AMINTAS.</speaker>
             <l n="837" xml:id="l837">Que pensez-vous de moi, Madame ? Ah ! Jugez mieux</l>
             <l n="838" xml:id="l838">D'un Prince descendu de vos nobles Aïeux. </l>
@@ -1423,21 +1424,21 @@
             <l n="845" xml:id="l845">Il prit dans ses beaux yeux l'éclat qu'il eut pour moi, </l>
             <l n="846" xml:id="l846">Et son mérite seul me rangea sous sa loi. </l>
           </sp>
-          <sp xml:id="III07-3" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="III07-3">
             <speaker>ALCIONNE.</speaker>
             <l n="847" xml:id="l847">Devez-vous hasarder des jours comme les vôtres, </l>
             <l n="848" xml:id="l848">Quand de votre salut dépend celui des autres, </l>
             <l n="849" xml:id="l849">Et quand par votre mort l'État aura perdu, </l>
             <l n="850" xml:id="l850">L'unique Protecteur qui l'aurait défendu. </l>
           </sp>
-          <sp xml:id="III07-4" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III07-4">
             <speaker>AMINTAS.</speaker>
             <l n="851" xml:id="l851">Je me connais, Madame, et lorsque je m'expose, </l>
             <l n="852" xml:id="l852">Je crois n'exposer rien, ou du moins peu de chose. </l>
             <l n="853" xml:id="l853">Élise m'apprend trop par d'éternels mépris, </l>
             <l n="854" xml:id="l854">Que mes jours malheureux ne sont pas de grands prix. </l>
           </sp>
-          <sp xml:id="III07-5" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="III07-5">
             <speaker>ALCIONNE.</speaker>
             <l n="855" xml:id="l855">Un injuste mépris n'ôte rien du mérite, </l>
             <l n="856" xml:id="l856">Or la fière beauté que votre amour irrite, </l>
@@ -1453,14 +1454,14 @@
             <l n="865" xml:id="l865">Vous méritez un coeur qui vous sut estimer, </l>
             <l n="866" xml:id="l866">Un coeur qui pour vous seul eût commencé d'aimer. </l>
           </sp>
-          <sp xml:id="III07-6" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III07-6">
             <speaker>AMINTAS.</speaker>
             <l n="867" xml:id="l867">Élise rigoureuse, Élise pitoyable, </l>
             <l n="868" xml:id="l868">Elle est toujours Élise, elle est toujours aimable, </l>
             <l n="869" xml:id="l869">Et toujours Amintas méprisé, malheureux, </l>
             <l n="870" xml:id="l870">Sera toujours fidèle et toujours amoureux. </l>
           </sp>
-          <sp xml:id="III07-7" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="III07-7">
             <speaker>ALCIONNE.</speaker>
             <l n="871" xml:id="l871">Un plus sage que vous en aimerait une autre, </l>
             <l n="872" xml:id="l872">Qui ferait son bonheur d'un coeur du prix du vôtre, </l>
@@ -1468,10 +1469,10 @@
             <l n="874" xml:id="l874">Le titre qui vous manque à vous voir couronner. </l>
             <l n="875" xml:id="l875">Car enfin vous seriez. Ô Dieux ! Que vais-je dire ? </l>
             <l n="876" xml:id="l876">Vous seriez plus heureux, si vous saviez dire. </l>
-            <l n="877" xml:id="l877" part="I">Adieu Prince. </l>
-            <stage type="exit">Elle sort.</stage>
+            <l n="877" part="I" xml:id="l877">Adieu Prince. </l>
+            <stage>Elle sort.</stage>
           </sp>
-          <sp xml:id="III07-8" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III07-8">
             <speaker>AMINTAS.</speaker>
             <l part="F">Ha ! J'entends, je serais plus heureux, </l>
             <l n="878" xml:id="l878">Si je pouvais forcer un destin malheureux, </l>
@@ -1489,41 +1490,41 @@
             <l n="890" xml:id="l890">Ce que je ne veux pas ni ne dois accorder. </l>
           </sp>
         </div2>
-        <div2 xml:id="III08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="III08">
           <head>SCÈNE VIII. Nicanor, Amintas.</head>
-          <sp xml:id="III08-1" who="NICANOR">
+          <sp who="NICANOR" xml:id="III08-1">
             <speaker>NICANOR.</speaker>
             <l n="891" xml:id="l891">La fortune est pour nous, cessons de nous en plaindre, </l>
             <l n="892" xml:id="l892">Ce fier corsaire est pris ; nous n'avons plus à craindre ; </l>
             <l n="893" xml:id="l893">La tempête a brisé son vaisseau contre un banc ; </l>
             <l n="894" xml:id="l894">Tu te vois son vainqueur, sans répandre de sang ; </l>
             <l n="895" xml:id="l895">Le Princesse est à toi ; la Chypre est secourue, </l>
-            <l n="896" xml:id="l896" part="I">Réjouis-toi mon fils. </l>
+            <l n="896" part="I" xml:id="l896">Réjouis-toi mon fils. </l>
           </sp>
-          <sp xml:id="III08-2" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III08-2">
             <speaker>AMINTAS.</speaker>
             <l part="F">Ô disgrâce imprévue ! </l>
           </sp>
-          <sp xml:id="III08-3" who="NICANOR">
+          <sp who="NICANOR" xml:id="III08-3">
             <speaker>NICANOR.</speaker>
-            <l n="897" xml:id="l897" part="I">Tu soupires. </l>
+            <l n="897" part="I" xml:id="l897">Tu soupires. </l>
           </sp>
-          <sp xml:id="III08-4" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III08-4">
             <speaker>AMINTAS.</speaker>
             <l part="F">La joie a ses excès, Seigneur, </l>
             <l n="898" xml:id="l898">Surprend, et nous trouble autant que la douleur. </l>
           </sp>
-          <sp xml:id="III08-5" who="NICANOR">
+          <sp who="NICANOR" xml:id="III08-5">
             <speaker>NICANOR.</speaker>
             <l n="899" xml:id="l899">Sa flotte ne sait point quelle perte elle a faite : </l>
             <l n="900" xml:id="l900">Si nous savons bien vaincre, elle est déjà défaite. </l>
           </sp>
-          <sp xml:id="III08-6" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III08-6">
             <speaker>AMINTAS.</speaker>
             <l n="901" xml:id="l901">Mais sur notre parole, Orosmane est venu, </l>
-            <l n="902" xml:id="l902" part="I">A-t-on pu l'arrêter ? </l>
+            <l n="902" part="I" xml:id="l902">A-t-on pu l'arrêter ? </l>
           </sp>
-          <sp xml:id="III08-7" who="NICANOR">
+          <sp who="NICANOR" xml:id="III08-7">
             <speaker>NICANOR.</speaker>
             <l part="F">Pourquoi ne l'a-t-on pu ? </l>
             <l n="903" xml:id="l903">Sa flotte nous surprend ; assiège ; attaque ; vole. </l>
@@ -1532,11 +1533,11 @@
             <l n="906" xml:id="l906">Le fer doit terminer les divers intérêts, </l>
             <l n="907" xml:id="l907">La moindre hostilité cesse de part et d'autre. </l>
           </sp>
-          <sp xml:id="III08-8" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III08-8">
             <speaker>AMINTAS.</speaker>
             <l n="908" xml:id="l908">Son manquement de foi n'excuse pas le nôtre. </l>
           </sp>
-          <sp xml:id="III08-9" who="NICANOR">
+          <sp who="NICANOR" xml:id="III08-9">
             <speaker>NICANOR.</speaker>
             <l n="909" xml:id="l909">Il a pris Amatonte, et cette hostilité, </l>
             <l n="910" xml:id="l910">Nous rend notre parole, et finit tout traité. </l>
@@ -1546,17 +1547,17 @@
             <l n="914" xml:id="l914">Ces ennemis communs, ces Tyrans de la mer, </l>
             <l n="915" xml:id="l915">Et toi, va donner ordre à garder le corsaire. </l>
           </sp>
-          <sp xml:id="III08-10" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="III08-10">
             <speaker>AMINTAS.</speaker>
             <l n="916" xml:id="l916">Pour son salut plutôt tout oser, et tout faire. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Orosmane.</head>
-          <sp xml:id="IV01-1" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV01-1">
             <speaker>OROSMANE.</speaker>
             <l n="917" xml:id="l917">Maître absolu de l'Empire de l'onde, </l>
             <l n="918" xml:id="l918">Par mille beaux exploits, </l>
@@ -1588,9 +1589,9 @@
             <l n="944" xml:id="l944">Que la guerre, et que le trépas ! </l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Élise, Clarice.</head>
-          <sp xml:id="IV02-1" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV02-1">
             <speaker>OROSMANE.</speaker>
             <l n="945" xml:id="l945">Approche mon vainqueur ; mais vainqueur sans combattre. </l>
             <l n="946" xml:id="l946">Viens voir si dans ses maux mon coeur se laisse abattre, </l>
@@ -1599,21 +1600,21 @@
             <l n="949" xml:id="l949">Viens pour ne me plus craindre, être mon homicide ; </l>
             <l n="950" xml:id="l950">Tu peux bien être lâche, ayant été perfide. </l>
           </sp>
-          <sp xml:id="IV02-2" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV02-2">
             <speaker>AMINTAS.</speaker>
             <l n="951" xml:id="l951">Je ne reconnais plus ce vainqueur modéré, </l>
             <l n="952" xml:id="l952">De qui j'avais tantôt le courage admiré. </l>
           </sp>
-          <sp xml:id="IV02-3" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV02-3">
             <speaker>OROSMANE.</speaker>
             <l n="953" xml:id="l953">Et je reconnais moins ce vaincu magnanime, </l>
             <l n="954" xml:id="l954">De qui le faux éclat a surpris mon estime. </l>
           </sp>
-          <sp xml:id="IV02-4" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV02-4">
             <speaker>AMINTAS.</speaker>
             <l n="955" xml:id="l955">Je suis tel que j'étais quand tu fus mon vainqueur. </l>
           </sp>
-          <sp xml:id="IV02-5" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV02-5">
             <speaker>OROSMANE.</speaker>
             <l n="956" xml:id="l956">Manquer à sa parole, est-ce avoir de l'honneur ; </l>
             <l n="957" xml:id="l957">Quand ton père insolent et fier de ma disgrâce, </l>
@@ -1631,7 +1632,7 @@
             <l n="969" xml:id="l969">Tu mérites par là, de posséder Élise, </l>
             <l n="970" xml:id="l970">Quand on ne l'aurait pas à ta valeur promise. </l>
           </sp>
-          <sp xml:id="IV02-6" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV02-6">
             <speaker>AMINTAS.</speaker>
             <l n="971" xml:id="l971">Tu m'insultes toi-même, et tu sais en ton coeur, </l>
             <l n="972" xml:id="l972">Que j'ai peu mérité ce reproche moqueur, </l>
@@ -1657,15 +1658,15 @@
             <l n="992" xml:id="l992">Je te conserverai ce que je veux t'ôter, </l>
             <l n="993" xml:id="l993">Mais pourtant sans cesser après de te poursuivre. </l>
           </sp>
-          <sp xml:id="IV02-7" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV02-7">
             <speaker>OROSMANE.</speaker>
             <l n="994" xml:id="l994">Va ! Ni moi de te vaincre, et de te laisser vivre. </l>
           </sp>
-          <sp xml:id="IV02-8" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV02-8">
             <speaker>AMINTAS.</speaker>
             <l n="995" xml:id="l995">Que veux-tu cependant que je fasse pour toi. </l>
           </sp>
-          <sp xml:id="IV02-9" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV02-9">
             <speaker>OROSMANE.</speaker>
             <l n="996" xml:id="l996">Me laisser, si tu veux, ici seul avec moi, </l>
             <l n="997" xml:id="l997">Le travail du combat, de la mer, du naufrage, </l>
@@ -1673,32 +1674,32 @@
             <l n="999" xml:id="l999">M'accablent de sommeil, et de soin combattu, </l>
             <l n="1000" xml:id="l1000">Mon esprit cède enfin à mon corps abattu. </l>
           </sp>
-          <sp xml:id="IV02-10" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV02-10">
             <speaker>AMINTAS.</speaker>
             <l n="1001" xml:id="l1001">À l'instant si tu veux... </l>
           </sp>
-          <sp xml:id="IV02-11" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV02-11">
             <speaker>OROSMANE.</speaker>
             <l part="F">Je ne veux autre chose ; </l>
             <l n="1002" xml:id="l1002">Adieu Prince, et du moins permets que je repose. </l>
-            <stage type="[N/A]">Amintas s'endort. </stage>
+            <stage>Amintas s'endort. </stage>
             <l n="1003" xml:id="l1003">Ô ! Qu'avec tous soins qui me vont combattant, </l>
             <l n="1004" xml:id="l1004">Je suis bien éloigné d'en pouvoir faire autant. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Licas, Amintas.</head>
-          <sp xml:id="IV03-1" who="LICAS">
+          <sp who="LICAS" xml:id="IV03-1">
             <speaker>LICAS.</speaker>
             <l n="1005" xml:id="l1005">Je vous vais révéler un secret d'importance ; </l>
             <l n="1006" xml:id="l1006">Mais promettez-moi donc de garder le silence, </l>
-            <l n="1007" xml:id="l1007" part="I">Seigneur. </l>
+            <l n="1007" part="I" xml:id="l1007">Seigneur. </l>
           </sp>
-          <sp xml:id="IV03-2" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV03-2">
             <speaker>AMINTAS.</speaker>
             <l part="M">Achève donc. </l>
           </sp>
-          <sp xml:id="IV03-3" who="LICAS">
+          <sp who="LICAS" xml:id="IV03-3">
             <speaker>LICAS.</speaker>
             <l part="F">La Princesse a voulu, </l>
             <l n="1008" xml:id="l1008">Et me l'a commandé d'un pouvoir absolu, </l>
@@ -1706,85 +1707,85 @@
             <l n="1010" xml:id="l1010">Et vous savez, Seigneur, si j'ose lui déplaire, </l>
             <l n="1011" xml:id="l1011">La nuit est avancée, elle s'en va venir. </l>
           </sp>
-          <sp xml:id="IV03-4" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV03-4">
             <speaker>AMINTAS.</speaker>
             <l n="1012" xml:id="l1012">Hé ! Voudrait-elle donc de sa main le punir ? </l>
             <l n="1013" xml:id="l1013">Je la veux observer, et quoiqu'elle s'en fâche, </l>
             <l n="1014" xml:id="l1014">Telle action pourrait lui laisser une tache, </l>
             <l n="1015" xml:id="l1015">Reprochable à moi seul, puisque je l'aurais su. </l>
           </sp>
-          <sp xml:id="IV03-5" who="LICAS">
+          <sp who="LICAS" xml:id="IV03-5">
             <speaker>LICAS.</speaker>
             <l n="1016" xml:id="l1016">De cet endroit, Seigneur, sans en être aperçu, </l>
             <l n="1017" xml:id="l1017">Vous verrez... Mais j'entends du bruit ; c'est elle-même ; </l>
-            <l n="1018" xml:id="l1018" part="I">Cachez-vous. </l>
+            <l n="1018" part="I" xml:id="l1018">Cachez-vous. </l>
           </sp>
-          <sp xml:id="IV03-6" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV03-6">
             <speaker>AMINTAS.</speaker>
             <l part="F">Ô que tout mon malheur est extrême ! </l>
             <l n="1019" xml:id="l1019">Ce n'est peut-être ici que l'effet d'un courroux, </l>
             <l n="1020" xml:id="l1020">Et j'en ai toutefois des sentiments jaloux. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Licas, Élise.</head>
-          <sp xml:id="IV04-1" who="LICAS">
+          <sp who="LICAS" xml:id="IV04-1">
             <speaker>LICAS.</speaker>
             <l n="1021" xml:id="l1021">Madame, vous voyez où pour vous je m'expose, </l>
             <l n="1022" xml:id="l1022">Le fier corsaire est seul, et je crois qu'il repose, </l>
             <l n="1023" xml:id="l1023">Vous avez souhaité de le trouver ainsi. </l>
           </sp>
-          <sp xml:id="IV04-2" who="ELISE">
+          <sp who="ELISE" xml:id="IV04-2">
             <speaker>ÉLISE.</speaker>
             <l n="1024" xml:id="l1024">Ô vengeance ! Ô fureur, que vais-je faire ici ? </l>
             <l n="1025" xml:id="l1025">Et toi d'entre les Dieux, dont je te crois du nôtre </l>
             <l n="1026" xml:id="l1026">Viens conduire mes coups dans l'obscurité sombre ; </l>
             <l n="1027" xml:id="l1027">Viens donner, cher Alcandre, à ma tremblante main. </l>
             <l n="1028" xml:id="l1028">La force de percer le coeur de l'inhumain. </l>
-            <l n="1029" xml:id="l1029" part="I">Viens donner à mon coeur... </l>
+            <l n="1029" part="I" xml:id="l1029">Viens donner à mon coeur... </l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Orosmane, Élise, Amintas.</head>
-          <sp xml:id="IV05-1" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV05-1">
             <speaker>OROSMANE, dormant.</speaker>
             <l part="F">À moi, cruelle Élise ; </l>
           </sp>
-          <sp xml:id="IV05-2" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-2">
             <speaker>ÉLISE.</speaker>
-            <l n="1030" xml:id="l1030" part="I">Ô Dieux ! Il m'a nommée ! </l>
+            <l n="1030" part="I" xml:id="l1030">Ô Dieux ! Il m'a nommée ! </l>
           </sp>
-          <sp xml:id="IV05-3" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV05-3">
             <speaker>OROSMANE.</speaker>
             <l part="F">Après la foi promise ? </l>
-            <l n="1031" xml:id="l1031" part="I">Hélas ! </l>
+            <l n="1031" part="I" xml:id="l1031">Hélas ! </l>
           </sp>
-          <sp xml:id="IV05-4" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-4">
             <speaker>ÉLISE.</speaker>
             <l part="F">N'écoutons point un songe suborneur </l>
             <l n="1032" xml:id="l1032">Qu'un Démon tutélaire oppose à ma fureur. </l>
-            <l n="1033" xml:id="l1033" part="I">Achevons... </l>
+            <l n="1033" part="I" xml:id="l1033">Achevons... </l>
           </sp>
-          <sp xml:id="IV05-5" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV05-5">
             <speaker>AMINTAS.</speaker>
             <l part="F">Ha ! Madame, et que voulez-vous faire ? </l>
           </sp>
-          <sp xml:id="IV05-6" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-6">
             <speaker>ÉLISE.</speaker>
             <l n="1034" xml:id="l1034">Amintas contre moi protéger le Corsaire ? </l>
-            <l n="1035" xml:id="l1035" part="I">Amintas m'épier ? </l>
+            <l n="1035" part="I" xml:id="l1035">Amintas m'épier ? </l>
           </sp>
-          <sp xml:id="IV05-7" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV05-7">
             <speaker>OROSMANE.</speaker>
             <l part="F">Ma Princesse, est-ce vous ? </l>
             <l n="1036" xml:id="l1036">Et puis-je donc encore embrasser vos genoux ? </l>
           </sp>
-          <sp xml:id="IV05-8" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-8">
             <speaker>ÉLISE.</speaker>
             <l n="1037" xml:id="l1037">Où suis-je ? Ô Dieux ! Que vous-je ? Et que viens-je d'entendre ? </l>
             <l n="1038" xml:id="l1038">Dois-je croire à mes yeux ? Est-ce une ombre ? Est-ce Alcandre ? </l>
           </sp>
-          <sp xml:id="IV05-9" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV05-9">
             <speaker>OROSMANE.</speaker>
             <l n="1039" xml:id="l1039">Oui, Princesse, je suis cet amant trop heureux, </l>
             <l n="1040" xml:id="l1040">Si dans les longs malheurs d'un exil rigoureux, </l>
@@ -1793,7 +1794,7 @@
             <l n="1043" xml:id="l1043">Mais je suis des Amants le plus infortuné, </l>
             <l n="1044" xml:id="l1044">Si je n'ai plus un coeur que vous m'avez donné. </l>
           </sp>
-          <sp xml:id="IV05-10" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-10">
             <speaker>ÉLISE.</speaker>
             <l n="1045" xml:id="l1045">Hélas ! Ce qu'à l'instant pour venger mon Alcandre, </l>
             <l n="1046" xml:id="l1046">Mon bras contre lui-même était prêt d'entre prendre, </l>
@@ -1808,7 +1809,7 @@
             <l n="1055" xml:id="l1055">Et quel crime une erreur maîtresse de nos sens, </l>
             <l n="1056" xml:id="l1056">Ne peut faire commettre aux feux plus innocents ? </l>
           </sp>
-          <sp xml:id="IV05-11" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV05-11">
             <speaker>OROSMANE.</speaker>
             <l n="1057" xml:id="l1057">Si vous m'aimez encore, ô divine Princesse ? </l>
             <l n="1058" xml:id="l1058">De tous ces longs malheurs qui me suivaient sans cesse, </l>
@@ -1817,7 +1818,7 @@
             <l n="1061" xml:id="l1061">Et puisque enfin le Ciel permet que je vous voie, </l>
             <l n="1062" xml:id="l1062">Je ne m'en plaindrai plus quelque mal qu'il m'envoie. </l>
           </sp>
-          <sp xml:id="IV05-12" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-12">
             <speaker>ÉLISE.</speaker>
             <l n="1063" xml:id="l1063">Ne craignons rien du Ciel après un bien si doux, </l>
             <l n="1064" xml:id="l1064">Ce ne peut-être en vain qu'il s'est changé pour nous </l>
@@ -1826,7 +1827,7 @@
             <l n="1067" xml:id="l1067">Témoignent que le Ciel en nous faisant souffrir, </l>
             <l n="1068" xml:id="l1068">N'a voulu qu'éprouver ce qu'il voulait chérir. </l>
           </sp>
-          <sp xml:id="IV05-13" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV05-13">
             <speaker>OROSMANE.</speaker>
             <l n="1069" xml:id="l1069">Un malheureux amant, trop heureuse Princesse, </l>
             <l n="1070" xml:id="l1070">Ne peut plus être ici qu'un objet de tristesse, </l>
@@ -1845,21 +1846,21 @@
             <l n="1083" xml:id="l1083">Et quoique sans espoir de jamais l'acquérir, </l>
             <l n="1084" xml:id="l1084">Que je l'afflige au moins ne pouvant l'attendrir. </l>
           </sp>
-          <sp xml:id="IV05-14" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-14">
             <speaker>ÉLISE.</speaker>
             <l n="1085" xml:id="l1085">Ha ! N'attends rien de moi par une telle voie, </l>
             <l n="1086" xml:id="l1086">Ni d'Alcandre ennemi que jamais je te voie. </l>
           </sp>
-          <sp xml:id="IV05-15" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV05-15">
             <speaker>AMINTAS.</speaker>
             <l n="1087" xml:id="l1087">N'espérez pas aussi qu'amant désespéré, </l>
             <l n="1088" xml:id="l1088">Je laisse mon Rival dans un calme assuré. </l>
           </sp>
-          <sp xml:id="IV05-16" who="ELISE">
+          <sp who="ELISE" xml:id="IV05-16">
             <speaker>ÉLISE.</speaker>
             <l n="1089" xml:id="l1089">Il t'offre une amitié qui n'est point méprisable. </l>
           </sp>
-          <sp xml:id="IV05-17" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV05-17">
             <speaker>AMINTAS.</speaker>
             <l n="1090" xml:id="l1090">C'est son défaut pour moi d'être trop estimable ; </l>
             <l n="1091" xml:id="l1091">C'est parce qu'elle a pu la vôtre mériter, </l>
@@ -1872,9 +1873,9 @@
             <l n="1098" xml:id="l1098">Se peut mieux employer à tenir ma parole. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="IV06">
           <head>SCÈNE VI. Élise, Orosmane.</head>
-          <sp xml:id="IV06-1" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-1">
             <speaker>ÉLISE.</speaker>
             <l n="1099" xml:id="l1099">Amintas, généreux même à ses ennemis, </l>
             <l n="1100" xml:id="l1100">Te tirera des fers comme il te l'a promis. </l>
@@ -1883,7 +1884,7 @@
             <l n="1103" xml:id="l1103">Et pourquoi si longtemps, et si proche de moi, </l>
             <l n="1104" xml:id="l1104">Le faux nom d'Orosmane abusa de ma foi. </l>
           </sp>
-          <sp xml:id="IV06-2" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV06-2">
             <speaker>OROSMANE.</speaker>
             <l n="1105" xml:id="l1105">Quand la parfaite Élise aussi juste que belle, </l>
             <l n="1106" xml:id="l1106">M'eut appris les desseins de son père infidèle, </l>
@@ -1904,14 +1905,14 @@
             <l n="1121" xml:id="l1121">Je fus battu des vents, et dans la Cilicie, </l>
             <l n="1122" xml:id="l1122">J'eus à tous mes desseins la fortune ennemie. </l>
           </sp>
-          <sp xml:id="IV06-3" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-3">
             <speaker>ÉLISE.</speaker>
             <l n="1123" xml:id="l1123">Je sais que la fortune accablant la valeur, </l>
             <l n="1124" xml:id="l1124">En un dernier combat vous eûtes du malheur, </l>
             <l n="1125" xml:id="l1125">Et qu'un jeune guerrier tué dans la bataille, </l>
-            <l n="1126" xml:id="l1126" part="I">Fut pris pour mon Alcandre. </l>
+            <l n="1126" part="I" xml:id="l1126">Fut pris pour mon Alcandre. </l>
           </sp>
-          <sp xml:id="IV06-4" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV06-4">
             <speaker>OROSMANE.</speaker>
             <l part="F">Il était de ma taille, </l>
             <l n="1127" xml:id="l1127">Et l'on ne connut point son visage blessé, </l>
@@ -1949,7 +1950,7 @@
             <l n="1159" xml:id="l1159">Lors je vous détrompai du faux bruit de ma mort ; </l>
             <l n="1160" xml:id="l1160">Mais sans vous révéler le secret de mon sort. </l>
           </sp>
-          <sp xml:id="IV06-5" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-5">
             <speaker>ÉLISE.</speaker>
             <l n="1161" xml:id="l1161">Pourquoi me cachais-tu que ta rare vaillance, </l>
             <l n="1162" xml:id="l1162">Faisait aux plus grands Rois redouter ta puissance ; </l>
@@ -1965,23 +1966,23 @@
             <l n="1172" xml:id="l1172">Et qui trompe en amour, ne peut-il pas trahir ; </l>
             <l n="1173" xml:id="l1173">Pourquoi de nos amours rompais-tu le silence ? </l>
           </sp>
-          <sp xml:id="IV06-6" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV06-6">
             <speaker>OROSMANE.</speaker>
             <l n="1174" xml:id="l1174">Je voulus d'un Rival éprouver la vaillance, </l>
             <l n="1175" xml:id="l1175">Et chercher dans sa mort le funeste plaisir, </l>
             <l n="1176" xml:id="l1176">D'accuser votre coeur, d'avoir su mal choisir, </l>
             <l n="1177" xml:id="l1177">La crainte d'un Rival, qu'un père favorable...</l>
           </sp>
-          <sp xml:id="IV06-7" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-7">
             <speaker>ÉLISE.</speaker>
             <l n="1178" xml:id="l1178">Prince n'achève pas un discours si coupable. </l>
             <l n="1179" xml:id="l1179">Alcandre a pu douter d'Élise, et de sa foi ; </l>
           </sp>
-          <sp xml:id="IV06-8" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV06-8">
             <speaker>OROSMANE.</speaker>
-            <l n="1180" xml:id="l1180" part="I">Hé ! Qui n'est pas jaloux quand il aime ? </l>
+            <l n="1180" part="I" xml:id="l1180">Hé ! Qui n'est pas jaloux quand il aime ? </l>
           </sp>
-          <sp xml:id="IV06-9" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-9">
             <speaker>ÉLISE.</speaker>
             <l part="F">Et c'est moi, </l>
             <l n="1181" xml:id="l1181">Qui n'ai jamais douté de ta persévérance, </l>
@@ -1999,40 +2000,40 @@
             <l n="1193" xml:id="l1193">Et qu'une telle excuse en la bouche d'Alcandre, </l>
             <l n="1194" xml:id="l1194">Multiplie une erreur au lieu de la défendre. </l>
           </sp>
-          <sp xml:id="IV06-10" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV06-10">
             <speaker>OROSMANE.</speaker>
             <l n="1195" xml:id="l1195">Percez donc, belle Élise, un coeur méconnaissant. </l>
           </sp>
-          <sp xml:id="IV06-11" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-11">
             <speaker>ÉLISE.</speaker>
             <l n="1196" xml:id="l1196">Un coupable qui plaît est bientôt innocent. </l>
           </sp>
-          <sp xml:id="IV06-12" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV06-12">
             <speaker>OROSMANE.</speaker>
             <l n="1197" xml:id="l1197">Je ne saurais souffrir de trépas assez rude, </l>
             <l n="1198" xml:id="l1198">Si j'ai pu vous donner la moindre inquiétude. </l>
           </sp>
-          <sp xml:id="IV06-13" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-13">
             <speaker>ÉLISE.</speaker>
             <l n="1199" xml:id="l1199">Et le moindre tourment que tu pourrais souffrir. </l>
           </sp>
-          <sp xml:id="IV06-14" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV06-14">
             <speaker>OROSMANE.</speaker>
-            <l n="1200" xml:id="l1200" part="I">Vengerais ma Princesse. </l>
+            <l n="1200" part="I" xml:id="l1200">Vengerais ma Princesse. </l>
           </sp>
-          <sp xml:id="IV06-15" who="ELISE">
+          <sp who="ELISE" xml:id="IV06-15">
             <speaker>ÉLISE.</speaker>
             <l part="F">Il la ferait mourir. </l>
             <l n="1201" xml:id="l1201">Songeons plutôt aux maux qui pressent davantage. </l>
             <l n="1202" xml:id="l1202">Ta vie est dans les mains d'un homme plein de rage, </l>
             <l n="1203" xml:id="l1203">Qui croit que pour venger, tous crimes sont permis : </l>
             <l n="1204" xml:id="l1204">Mais taisons-nous, sachons ce qu'aura fait son fils, </l>
-            <l n="1205" xml:id="l1205" part="I">Hé bien ! Prince. </l>
+            <l n="1205" part="I" xml:id="l1205">Hé bien ! Prince. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="IV07">
           <head>SCÈNE VII. Amintas, Élise, Orosmane.</head>
-          <sp xml:id="IV07-1" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV07-1">
             <speaker>AMINTAS.</speaker>
             <l part="F">J'ai fait tout ce que j'ai pu faire, </l>
             <l n="1206" xml:id="l1206">Mais les Gardes doublés par l'ordre ce mon père </l>
@@ -2045,19 +2046,19 @@
             <l n="1213" xml:id="l1213">Licas que j'ai gagné, mon dessein favorise : </l>
             <l n="1214" xml:id="l1214">À quoi donc se résout l'heureux amant d'Élise. </l>
           </sp>
-          <sp xml:id="IV07-2" who="ELISE">
+          <sp who="ELISE" xml:id="IV07-2">
             <speaker>ÉLISE.</speaker>
             <l n="1215" xml:id="l1215">Nous suivrons ton conseil, Ô Prince généreux ! </l>
             <l n="1216" xml:id="l1216">Prince que malgré moi j'ai rendu malheureux. </l>
           </sp>
-          <sp xml:id="IV07-3" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV07-3">
             <speaker>AMINTAS.</speaker>
             <l n="1217" xml:id="l1217">Ce Prince malheureux, et qui vous importune, </l>
             <l n="1218" xml:id="l1218">Ne se prend qu'à lui seul de sa longue infortune. </l>
             <l n="1219" xml:id="l1219">Allons changer d'habits où Licas nous attend, </l>
-            <l n="1220" xml:id="l1220" part="I">Viens-tu donc ? </l>
+            <l n="1220" part="I" xml:id="l1220">Viens-tu donc ? </l>
           </sp>
-          <sp xml:id="IV07-4" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="IV07-4">
             <speaker>OROSMANE.</speaker>
             <l part="F">Je te suis ; n'espère pas pourtant, </l>
             <l n="1221" xml:id="l1221">Qu'en me tirant des fers de ton injuste père, </l>
@@ -2070,7 +2071,7 @@
             <l n="1228" xml:id="l1228">Ou manque pour Élise à des formalités ; </l>
             <l n="1229" xml:id="l1229">Pour mériter Élise, on peut, on doit tout faire. </l>
           </sp>
-          <sp xml:id="IV07-5" who="AMINTAS">
+          <sp who="AMINTAS" xml:id="IV07-5">
             <speaker>AMINTAS.</speaker>
             <l n="1230" xml:id="l1230">C'est pour cette raison, vaillant Prince, ou corsaire, </l>
             <l n="1231" xml:id="l1231">Puisqu'on doit tout oser pour un bien d'un tel prix, </l>
@@ -2078,16 +2079,16 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Alcionne, Élise.</head>
-          <sp xml:id="V01-1" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="V01-1">
             <speaker>ALCIONNE.</speaker>
             <l n="1233" xml:id="l1233">Eh quoi ! D'une si juste et si longue tristesse, </l>
             <l n="1234" xml:id="l1234">Votre âme en un moment passe dans l'allégresse ! </l>
           </sp>
-          <sp xml:id="V01-2" who="ELISE">
+          <sp who="ELISE" xml:id="V01-2">
             <speaker>ÉLISE.</speaker>
             <l n="1235" xml:id="l1235">Mon Alcandre, ma soeur, est vivant, est trouvé, </l>
             <l n="1236" xml:id="l1236">Et le grand Orosmane, est fidèle, est sauvé, </l>
@@ -2099,9 +2100,9 @@
             <l n="1242" xml:id="l1242">Ce guerrier si vaillant, si grand, si redoutable... </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Clarice, Élise, Alcionne.</head>
-          <sp xml:id="V02-1" who="CLARICE">
+          <sp who="CLARICE" xml:id="V02-1">
             <speaker>CLARICE.</speaker>
             <l n="1243" xml:id="l1243">Ha Princesses ! Pleurez l'accident malheureux, </l>
             <l n="1244" xml:id="l1244">Qui ravit à la Chypre un Prince généreux. </l>
@@ -2124,48 +2125,48 @@
             <l n="1261" xml:id="l1261">Mais jusques à son trépas Amintas magnanime, </l>
             <l n="1262" xml:id="l1262">Retient son cruel père, et s'oppose à son crime. </l>
           </sp>
-          <sp xml:id="V02-2" who="ELISE">
+          <sp who="ELISE" xml:id="V02-2">
             <speaker>ÉLISE.</speaker>
-            <l n="1263" xml:id="l1263" part="I">Clarice, que dis-tu ? </l>
+            <l n="1263" part="I" xml:id="l1263">Clarice, que dis-tu ? </l>
           </sp>
-          <sp xml:id="V02-3" who="CLARICE">
+          <sp who="CLARICE" xml:id="V02-3">
             <speaker>CLARICE.</speaker>
             <l part="F">Je dis la vérité. </l>
           </sp>
-          <sp xml:id="V02-4" who="ELISE">
+          <sp who="ELISE" xml:id="V02-4">
             <speaker>ÉLISE.</speaker>
             <l n="1264" xml:id="l1264">Mon cher Alcandre, hélas ! M'est donc encore ôté ; </l>
-            <l n="1265" xml:id="l1265" part="I">Mais dis-tu qu'il est pris ? </l>
+            <l n="1265" part="I" xml:id="l1265">Mais dis-tu qu'il est pris ? </l>
           </sp>
-          <sp xml:id="V02-5" who="CLARICE">
+          <sp who="CLARICE" xml:id="V02-5">
             <speaker>CLARICE.</speaker>
             <l part="F">Sa prise est assurée. </l>
           </sp>
-          <sp xml:id="V02-6" who="ELISE">
+          <sp who="ELISE" xml:id="V02-6">
             <speaker>ÉLISE.</speaker>
             <l n="1266" xml:id="l1266">Ô Ciel ! Que tes faveurs sont de peu de durée, </l>
           </sp>
-          <sp xml:id="V02-7" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="V02-7">
             <speaker>ALCIONNE.</speaker>
-            <l n="1267" xml:id="l1267" part="I">Et le Prince, Clarice ? </l>
+            <l n="1267" part="I" xml:id="l1267">Et le Prince, Clarice ? </l>
           </sp>
-          <sp xml:id="V02-8" who="CLARICE">
+          <sp who="CLARICE" xml:id="V02-8">
             <speaker>CLARICE.</speaker>
             <l part="F">Il attend le trépas. </l>
           </sp>
-          <sp xml:id="V02-9" who="ELISE">
+          <sp who="ELISE" xml:id="V02-9">
             <speaker>ÉLISE.</speaker>
-            <l n="1268" xml:id="l1268" part="I">Ha ! Ma soeur mon Alcandre ! </l>
+            <l n="1268" part="I" xml:id="l1268">Ha ! Ma soeur mon Alcandre ! </l>
           </sp>
-          <sp xml:id="V02-10" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="V02-10">
             <speaker>ALCIONNE.</speaker>
-            <l n="1269" xml:id="l1269" part="I">Ha ! Ma soeur Amintas ? </l>
+            <l n="1269" part="I" xml:id="l1269">Ha ! Ma soeur Amintas ? </l>
           </sp>
-          <sp xml:id="V02-11" who="ELISE">
+          <sp who="ELISE" xml:id="V02-11">
             <speaker>ÉLISE.</speaker>
             <l part="F">Et l'aimiez-vous ? </l>
           </sp>
-          <sp xml:id="V02-12" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="V02-12">
             <speaker>ALCIONNE.</speaker>
             <l n="1270" xml:id="l1270">Hélas ! N'était-il pas aimable ? </l>
             <l n="1271" xml:id="l1271">Oui ma soeur, je l'aimais ce Prince misérable. </l>
@@ -2180,16 +2181,16 @@
             <l n="1280" xml:id="l1280">Conduis-moi donc Clarice, où je vais faire voir, </l>
             <l n="1281" xml:id="l1281">Ce que peut sur mon coeur un juste désespoir. </l>
           </sp>
-          <sp xml:id="V02-13" who="ALCIONNE">
+          <sp who="ALCIONNE" xml:id="V02-13">
             <speaker>ALCIONNE.</speaker>
             <l n="1282" xml:id="l1282">Allons, allons, ma soeur, par nos morts généreuses, </l>
             <l n="1283" xml:id="l1283">Rendre illustres les feux de deux soeurs malheureuses </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Nicanor, Élise, Gardes. </head>
-          <stage type="[N/A]">Alcionne sort. </stage>
-          <sp xml:id="V03-1" who="NICANOR">
+          <stage>Alcionne sort. </stage>
+          <sp who="NICANOR" xml:id="V03-1">
             <speaker>NICANOR.</speaker>
             <l n="1284" xml:id="l1284">Où courez-vous, Princesse ? Arrêtez un moment. </l>
             <l n="1285" xml:id="l1285">Le pirate est repris, et gardé sûrement, </l>
@@ -2217,9 +2218,9 @@
             <l n="1307" xml:id="l1307">Gardes, suivez mon ordre, et qu'on me soit fidèle. </l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV.</head>
-          <sp xml:id="V04-1" who="ELISE">
+          <sp who="ELISE" xml:id="V04-1">
             <speaker>ÉLISE.</speaker>
             <l n="1308" xml:id="l1308">Va Tyran ! N'attends pas d'Orosmane et de moi, </l>
             <l n="1309" xml:id="l1309">Que la crainte nous rende aussi lâches que toi, </l>
@@ -2237,9 +2238,9 @@
             <l n="1321" xml:id="l1321">Mon cher Alcandre enfin, qu'allons-nous devenir. </l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. Orosmane, Élise.</head>
-          <sp xml:id="V05-1" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V05-1">
             <speaker>OROSMANE.</speaker>
             <l n="1322" xml:id="l1322">Il veut unir, Madame, un amant téméraire, </l>
             <l n="1323" xml:id="l1323">Un insensé, qui crût mériter de vous plaire ; </l>
@@ -2248,7 +2249,7 @@
             <l n="1326" xml:id="l1326">Puisque nos ennemis souffrent que je vous voie ? </l>
             <l n="1327" xml:id="l1327">Tout rigoureux qu'ils sont ils me comblent de joie. </l>
           </sp>
-          <sp xml:id="V05-2" who="ELISE">
+          <sp who="ELISE" xml:id="V05-2">
             <speaker>ÉLISE.</speaker>
             <l n="1328" xml:id="l1328">Que tu les connais mal, ces communs ennemis, </l>
             <l n="1329" xml:id="l1329">Quand tu leur sais bon gré de ce qu'ils t'ont permis. </l>
@@ -2281,7 +2282,7 @@
             <l n="1356" xml:id="l1356">Fais, fais donc nos Destins, ils dépendent de toi, </l>
             <l n="1357" xml:id="l1357">Fais-nous mourir ensemble, ou vis heureux sans moi. </l>
           </sp>
-          <sp xml:id="V05-3" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V05-3">
             <speaker>OROSMANE.</speaker>
             <l n="1358" xml:id="l1358">C'est m'offenser, Madame, et c'est mal me connaître, </l>
             <l n="1359" xml:id="l1359">Mal juger d'un amour que vous avez fait naître, </l>
@@ -2302,12 +2303,12 @@
             <l n="1374" xml:id="l1374">Que ne ferait jamais en sa plus grande rage, </l>
             <l n="1375" xml:id="l1375">Du cruel Nicanor le barbare courage. </l>
           </sp>
-          <sp xml:id="V05-4" who="ELISE">
+          <sp who="ELISE" xml:id="V05-4">
             <speaker>ÉLISE.</speaker>
             <l n="1376" xml:id="l1376">Mourons donc, cher Alcandre, et ne résistons plus </l>
             <l n="1377" xml:id="l1377">À l'injuste pouvoir des Destins absolus. </l>
           </sp>
-          <sp xml:id="V05-5" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V05-5">
             <speaker>OROSMANE.</speaker>
             <l n="1378" xml:id="l1378">Un malheureux, qu'opprime une indigne fortune, </l>
             <l n="1379" xml:id="l1379">Vous aime, et souffrira qu'elle vous soit commune ; </l>
@@ -2336,7 +2337,7 @@
             <l n="1402" xml:id="l1402">Et qui ne peut avoir de fin plus glorieuse, </l>
             <l n="1403" xml:id="l1403">Que de perdre pour vous une vie ennuyeuse. </l>
           </sp>
-          <sp xml:id="V05-6" who="ELISE">
+          <sp who="ELISE" xml:id="V05-6">
             <speaker>ÉLISE.</speaker>
             <l n="1404" xml:id="l1404">Et moi pourrai-je avoir de plus honteuse fin, </l>
             <l n="1405" xml:id="l1405">Que de survivre en ingrate, à ton triste Destin ? </l>
@@ -2351,9 +2352,9 @@
             <l n="1414" xml:id="l1414">Mais où court, et que veut Clarice épouvantée. </l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="V06">
           <head>SCÈNE VI. Clarice, Élise, Orosmane.</head>
-          <sp xml:id="V06-1" who="CLARICE">
+          <sp who="CLARICE" xml:id="V06-1">
             <speaker>CLARICE.</speaker>
             <l n="1415" xml:id="l1415">Le Ciel nous abandonne, et la Ville emportée, </l>
             <l n="1416" xml:id="l1416">Est le triste butin de l'avare étranger, </l>
@@ -2361,34 +2362,34 @@
             <l n="1418" xml:id="l1418">Dans le Palais tout manque, et le Soldat barbare, </l>
             <l n="1419" xml:id="l1419">Déjà pour le forcer ses machines prépare. </l>
           </sp>
-          <sp xml:id="V06-2" who="ELISE">
+          <sp who="ELISE" xml:id="V06-2">
             <speaker>ÉLISE.</speaker>
             <l n="1420" xml:id="l1420">Hélas ! Au bruit confus que j'entends augmenter, </l>
             <l n="1421" xml:id="l1421">De ce premier malheur il ne faut plus douter. </l>
           </sp>
-          <sp xml:id="V06-3" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V06-3">
             <speaker>OROSMANE.</speaker>
             <l n="1422" xml:id="l1422">Vous n'avez rien à craindre où je serai, Madame. </l>
           </sp>
-          <sp xml:id="V06-4" who="ELISE">
+          <sp who="ELISE" xml:id="V06-4">
             <speaker>ÉLISE.</speaker>
             <l n="1423" xml:id="l1423">Que tu me connais mal, si tu crois que mon âme, </l>
             <l n="1424" xml:id="l1424">Dans le péril s'étonne, et même auprès de toi ; </l>
             <l n="1425" xml:id="l1425">Mais on peut pour autrui craindre plus que pour soi. </l>
             <l n="1426" xml:id="l1426">Si tu m'aimes cher Prince, Amintas, et son père, </l>
             <l n="1427" xml:id="l1427">Quoique indignes objets de ta juste colère, </l>
-            <l n="1428" xml:id="l1428" part="I">Connaîtront... </l>
+            <l n="1428" part="I" xml:id="l1428">Connaîtront... </l>
           </sp>
-          <sp xml:id="V06-5" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V06-5">
             <speaker>OROSMANE.</speaker>
             <l part="F">Jugez mieux d'un coeur où vous régnez, </l>
             <l n="1429" xml:id="l1429">Et qui n'a d'ennemis que ceux que vous craignez, </l>
-            <l n="1430" xml:id="l1430" part="I">Nicanor, et son fils vivront. </l>
+            <l n="1430" part="I" xml:id="l1430">Nicanor, et son fils vivront. </l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="V07">
           <head>SCÈNE VII. Argante, Orosmane, Élise, Clarice, Corsaires.</head>
-          <sp xml:id="V07-1" who="ARGANTE">
+          <sp who="ARGANTE" xml:id="V07-1">
             <speaker>ARGANTE.</speaker>
             <l part="F">Que la licence </l>
             <l n="1431" xml:id="l1431">Ne vous emporte pas à la moindre insolence. </l>
@@ -2396,20 +2397,20 @@
             <l n="1433" xml:id="l1433">Mais nos voeux sont ouïs, et c'est lui que je vois. </l>
             <l n="1434" xml:id="l1434">Cher Seigneur, que le Ciel à la fin nous renvoie. </l>
           </sp>
-          <sp xml:id="V07-2" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V07-2">
             <speaker>OROSMANE.</speaker>
             <l n="1435" xml:id="l1435">Suspendons mes amis notre commune joie. </l>
           </sp>
-          <sp xml:id="V07-3" who="ARGANTE">
+          <sp who="ARGANTE" xml:id="V07-3">
             <speaker>ARGANTE.</speaker>
-            <l n="1436" xml:id="l1436" part="I">Grand Prince ! </l>
+            <l n="1436" part="I" xml:id="l1436">Grand Prince ! </l>
           </sp>
-          <sp xml:id="V07-4" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V07-4">
             <speaker>OROSMANE.</speaker>
             <l part="F">Cher Argante, il faut sans différer, </l>
-            <l n="1437" xml:id="l1437" part="I">Empêcher le désordre. </l>
+            <l n="1437" part="I" xml:id="l1437">Empêcher le désordre. </l>
           </sp>
-          <sp xml:id="V07-5" who="ARGANTE">
+          <sp who="ARGANTE" xml:id="V07-5">
             <speaker>ARGANTE.</speaker>
             <l part="F">Il faut donc vous montrer </l>
             <l n="1438" xml:id="l1438">Sébaste en vain l'essaye, et tel excès de rage, </l>
@@ -2417,24 +2418,24 @@
             <l n="1440" xml:id="l1440">Qu'il est à redouter, que l'incendie enfin, </l>
             <l n="1441" xml:id="l1441">N'achève de Paphos le malheureux Destin. </l>
           </sp>
-          <sp xml:id="V07-6" who="ELISE">
+          <sp who="ELISE" xml:id="V07-6">
             <speaker>ÉLISE.</speaker>
-            <l n="1442" xml:id="l1442" part="I">Ô quel malheur. </l>
+            <l n="1442" part="I" xml:id="l1442">Ô quel malheur. </l>
           </sp>
-          <sp xml:id="V07-7" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V07-7">
             <speaker>OROSMANE.</speaker>
             <l part="F">Allons Argante, allons sans cesse, </l>
             <l n="1443" xml:id="l1443">Mourir, ou contenter ma divine Princesse. </l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="V08">
           <head>SCÈNE VIII. Clarice, Élise.</head>
-          <sp xml:id="V08-1" who="CLARICE">
+          <sp who="CLARICE" xml:id="V08-1">
             <speaker>CLARICE.</speaker>
             <l n="1444" xml:id="l1444">Le plus grand, le plus fier de tous vos ennemis, </l>
             <l n="1445" xml:id="l1445">Est donc ainsi Madame, à vos ordres soumis ? </l>
           </sp>
-          <sp xml:id="V08-2" who="ELISE">
+          <sp who="ELISE" xml:id="V08-2">
             <speaker>ÉLISE.</speaker>
             <l n="1446" xml:id="l1446">Prépare-toi, Clarice, à voir d'autres merveilles, </l>
             <l n="1447" xml:id="l1447">Qui surprendront bien plus les yeux et les oreilles. </l>
@@ -2442,12 +2443,12 @@
             <l n="1449" xml:id="l1449">Redouter des tyrans, et gémir sous leurs lois, </l>
             <l n="1450" xml:id="l1450">Ma puissance en ces lieux ne sera plus bornée, </l>
             <l n="1451" xml:id="l1451">Et j'y disposerai de mon libre Hyménée ; </l>
-            <l n="1452" xml:id="l1452" part="I">Mais que vois-je, Grands Dieux ? </l>
+            <l n="1452" part="I" xml:id="l1452">Mais que vois-je, Grands Dieux ? </l>
           </sp>
         </div2>
-        <div2 xml:id="V09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="V09">
           <head>SCÈNE IX. Nicanor, Élise.</head>
-          <sp xml:id="V09-1" who="NICANOR">
+          <sp who="NICANOR" xml:id="V09-1">
             <speaker>NICANOR.</speaker>
             <l part="F">Le Ciel me venge enfin, </l>
             <l n="1453" xml:id="l1453">Et met entre mes mains ta vie et ton Destin. </l>
@@ -2456,7 +2457,7 @@
             <l n="1456" xml:id="l1456">Ne s'opposera plus à ma juste fureur, </l>
             <l n="1457" xml:id="l1457">Et je te confondrai dans mon dernier malheur. </l>
           </sp>
-          <sp xml:id="V09-2" who="ELISE">
+          <sp who="ELISE" xml:id="V09-2">
             <speaker>ÉLISE.</speaker>
             <l n="1458" xml:id="l1458">Achève ! Est-ce à moi, lâche, à t'en donner l'audace, </l>
             <l n="1459" xml:id="l1459">Qu'attends-tu ? Que mon coeur s'effraye à ta menace ? </l>
@@ -2468,7 +2469,7 @@
             <l n="1465" xml:id="l1465">Sois Nicanor enfin ; mais méchant, hâte-toi ; </l>
             <l n="1466" xml:id="l1466">D'un vengeur offensé crains la juste colère. </l>
           </sp>
-          <sp xml:id="V09-3" who="NICANOR">
+          <sp who="NICANOR" xml:id="V09-3">
             <speaker>NICANOR.</speaker>
             <l n="1467" xml:id="l1467">Qu'il vienne à ton secours, qu'il vienne ton corsaire, </l>
             <l n="1468" xml:id="l1468">Il ne manque plus rien à mon ressentiment, </l>
@@ -2478,17 +2479,17 @@
             <l n="1472" xml:id="l1472">Et si j'ai différé de te faire mourir, </l>
             <l n="1473" xml:id="l1473">C'est pour plaire à ma haine, et te faire souffrir. </l>
           </sp>
-          <sp xml:id="V09-4" who="ELISE">
+          <sp who="ELISE" xml:id="V09-4">
             <speaker>ÉLISE.</speaker>
             <l n="1474" xml:id="l1474">Et moi pour te parler dans la même franchise, </l>
             <l n="1475" xml:id="l1475">Je te hais beaucoup moins que je ne te méprise. </l>
           </sp>
-          <sp xml:id="V09-5" who="NICANOR">
+          <sp who="NICANOR" xml:id="V09-5">
             <speaker>NICANOR.</speaker>
             <l n="1476" xml:id="l1476">Amante d'un Pirate, après ta lâcheté, </l>
             <l n="1477" xml:id="l1477">Peux-tu parler encore avec tant de fierté. </l>
           </sp>
-          <sp xml:id="V09-6" who="ELISE">
+          <sp who="ELISE" xml:id="V09-6">
             <speaker>ÉLISE.</speaker>
             <l n="1478" xml:id="l1478">Hé ! Qu'étais donc tantôt la tienne devenue, </l>
             <l n="1479" xml:id="l1479">Quand tu gardais Paphos, et que tu l'as perdue</l>
@@ -2496,32 +2497,32 @@
             <l n="1481" xml:id="l1481">Quand des Soldats sans Chef t'ont fait tourner le dos. </l>
           </sp>
         </div2>
-        <div2 xml:id="V10" type="scene" n="10">
+        <div2 n="10" type="scene" xml:id="V10">
           <head>SCÈNE X. Orosmane, Élise, Nicanor, Sébaste, Corsaires.</head>
-          <sp xml:id="V10-1" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-1">
             <speaker>OROSMANE.</speaker>
-            <l n="1482" xml:id="l1482" part="I">Il nous a prévenus, ô Dieux ! </l>
+            <l n="1482" part="I" xml:id="l1482">Il nous a prévenus, ô Dieux ! </l>
           </sp>
-          <sp xml:id="V10-2" who="ELISE">
+          <sp who="ELISE" xml:id="V10-2">
             <speaker>ÉLISE.</speaker>
             <l part="F">Hélas ! Alcandre, </l>
             <l n="1483" xml:id="l1483">Ta valeur désormais ne peut plus me défendre ; </l>
             <l n="1484" xml:id="l1484">Mais punis un tyran, quoi qu'il puisse arriver ; </l>
             <l n="1485" xml:id="l1485">Préfère ma vengeance au soin de me sauver. </l>
           </sp>
-          <sp xml:id="V10-3" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-3">
             <speaker>OROSMANE.</speaker>
             <l n="1486" xml:id="l1486">Tigre affamé de sang, que penses-tu donc faire ; </l>
           </sp>
-          <sp xml:id="V10-4" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-4">
             <speaker>NICANOR.</speaker>
             <l n="1487" xml:id="l1487">Me venger d'une ingrate, en dépit d'un corsaire. </l>
           </sp>
-          <sp xml:id="V10-5" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-5">
             <speaker>OROSMANE.</speaker>
-            <l n="1488" xml:id="l1488" part="I">Verser le sang d'Élise ? </l>
+            <l n="1488" part="I" xml:id="l1488">Verser le sang d'Élise ? </l>
           </sp>
-          <sp xml:id="V10-6" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-6">
             <speaker>NICANOR.</speaker>
             <l part="F">Arrête, où tu feras, </l>
             <l n="1489" xml:id="l1489">De cette chère Élise, avancer le trépas. </l>
@@ -2532,27 +2533,27 @@
             <l n="1494" xml:id="l1494">Il faut quitter la Chypre, et loin de cette terre, </l>
             <l n="1495" xml:id="l1495">Aller porter ailleurs tes crimes, et la guerre. </l>
           </sp>
-          <sp xml:id="V10-7" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-7">
             <speaker>OROSMANE.</speaker>
             <l n="1496" xml:id="l1496">Hé ! N'es-tu point touché de cet objet charmant ; </l>
-            <l n="1497" xml:id="l1497" part="I">Barbare ! </l>
+            <l n="1497" part="I" xml:id="l1497">Barbare ! </l>
           </sp>
-          <sp xml:id="V10-8" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-8">
             <speaker>NICANOR.</speaker>
             <l part="F">Ha ! Je suis sourd aux plaintes d'un amant. </l>
-            <l n="1498" xml:id="l1498" part="I">Prends parti si tu veux. </l>
+            <l n="1498" part="I" xml:id="l1498">Prends parti si tu veux. </l>
           </sp>
-          <sp xml:id="V10-9" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-9">
             <speaker>OROSMANE.</speaker>
             <l part="F">En puis-je prendre un autre, </l>
             <l n="1499" xml:id="l1499">Que de sauver sa vie, et de perdre la nôtre ? </l>
           </sp>
-          <sp xml:id="V10-10" who="ELISE">
+          <sp who="ELISE" xml:id="V10-10">
             <speaker>ÉLISE.</speaker>
             <l n="1500" xml:id="l1500">Garde-t'en bien, Alcandre, et que par mon danger, </l>
             <l n="1501" xml:id="l1501">Ton coeur plutôt s'irrite, et songe à me venger. </l>
           </sp>
-          <sp xml:id="V10-11" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-11">
             <speaker>OROSMANE.</speaker>
             <l n="1502" xml:id="l1502">Hélas ! Il est trop tard, ma divine Princesse. </l>
             <l n="1503" xml:id="l1503">En vain, mon triste coeur me conseillait sans cesse, </l>
@@ -2563,25 +2564,25 @@
             <l n="1508" xml:id="l1508">Prends ce fer, cruel Prince ! Et maître de mon sort, </l>
             <l n="1509" xml:id="l1509">Sauve ma chère Élise, et me donne la mort. </l>
           </sp>
-          <sp xml:id="V10-12" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="V10-12">
             <speaker>SÉBASTE, à l'oreille d'Orosmane.</speaker>
-            <l n="1510" xml:id="l1510" part="I">Seigneur ? ... </l>
+            <l n="1510" part="I" xml:id="l1510">Seigneur ? ... </l>
           </sp>
-          <sp xml:id="V10-13" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-13">
             <speaker>NICANOR.</speaker>
             <l part="F">Et d'où lui vient cette fatale épée ? </l>
           </sp>
-          <sp xml:id="V10-14" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="V10-14">
             <speaker>SÉBASTE.</speaker>
             <l n="1511" xml:id="l1511">Tant plus à l'observer ma vue est occupée, </l>
             <l n="1512" xml:id="l1512">Tant plus je m'y confirme, et je le reconnais. </l>
             <l n="1513" xml:id="l1513">Nicanor ! Connais-tu mon visage et ma voix ? </l>
           </sp>
-          <sp xml:id="V10-15" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-15">
             <speaker>NICANOR.</speaker>
-            <l n="1514" xml:id="l1514" part="I">Et serais-tu Sébaste ? </l>
+            <l n="1514" part="I" xml:id="l1514">Et serais-tu Sébaste ? </l>
           </sp>
-          <sp xml:id="V10-16" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="V10-16">
             <speaker>SÉBASTE.</speaker>
             <l part="F">Ô l'heureuse journée ! </l>
             <l n="1515" xml:id="l1515">Que je revois l'Époux d'Aminte infortunée. </l>
@@ -2592,7 +2593,7 @@
             <l n="1520" xml:id="l1520">Il est fils de la jeune, et charmante beauté, </l>
             <l n="1521" xml:id="l1521">Que quitta sans objet ton infidélité. </l>
           </sp>
-          <sp xml:id="V10-17" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-17">
             <speaker>NICANOR.</speaker>
             <l n="1522" xml:id="l1522">Hélas ! Je la quittai : mais sans être infidèle, </l>
             <l n="1523" xml:id="l1523">Et sans les longs malheurs d'une prison cruelle;</l>
@@ -2611,14 +2612,14 @@
             <l n="1536" xml:id="l1536">Noircit-elle mon nom par cette longue erreur, </l>
             <l n="1537" xml:id="l1537">Et doit-on croire ainsi son aveugle fureur ? </l>
           </sp>
-          <sp xml:id="V10-18" who="SEBASTE">
+          <sp who="SEBASTE" xml:id="V10-18">
             <speaker>SÉBASTE.</speaker>
             <l n="1538" xml:id="l1538">De quoi me servirait une pareille feinte ? </l>
             <l n="1539" xml:id="l1539">De quoi servirait-elle, au vaillant fils d'Aminte ? </l>
             <l n="1540" xml:id="l1540">En l'avouant pour fils qui gagne plus que toi. </l>
             <l n="1541" xml:id="l1541">Et n'as que trop douté, crois-moi Prince, crois-moi. </l>
           </sp>
-          <sp xml:id="V10-19" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-19">
             <speaker>NICANOR, à part.</speaker>
             <l n="1542" xml:id="l1542">Il est vrai que je trouve en ce noble visage, </l>
             <l n="1543" xml:id="l1543">De la Reine et de moi, la ressemblante image, </l>
@@ -2627,14 +2628,14 @@
             <l n="1546" xml:id="l1546">Qui t'a longtemps haï sous le nom d'un corsaire, </l>
             <l n="1547" xml:id="l1547">Et fait gloire aujourd'hui d'être connu ton père, </l>
             <l n="1548" xml:id="l1548">Approche-toi de moi sans haine, et sans courroux. </l>
-            <l n="1549" xml:id="l1549" part="I">Viens dans mes bras, mon fils. </l>
+            <l n="1549" part="I" xml:id="l1549">Viens dans mes bras, mon fils. </l>
           </sp>
-          <sp xml:id="V10-20" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-20">
             <speaker>OROSMANE.</speaker>
             <l part="F">Ou plutôt qu'à genoux, </l>
             <l n="1550" xml:id="l1550">J'obtienne le pardon d'une aveugle ignorance... </l>
           </sp>
-          <sp xml:id="V10-21" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-21">
             <speaker>NICANOR.</speaker>
             <l n="1551" xml:id="l1551">Il ne faut plus songer qu'à la réjouissance ; </l>
             <l n="1552" xml:id="l1552">Et vous, ô belle Élise, oubliez le passé ; </l>
@@ -2644,18 +2645,18 @@
             <l n="1556" xml:id="l1556">Mais, hélas ! Sa blessure au fort de mes plaisirs, </l>
             <l n="1557" xml:id="l1557">Fait sortir de mon coeur d'inutiles soupirs. </l>
           </sp>
-          <sp xml:id="V10-22" who="OROSMANE">
+          <sp who="OROSMANE" xml:id="V10-22">
             <speaker>OROSMANE.</speaker>
             <l n="1558" xml:id="l1558">Si je perdais ainsi ce frère incomparable, </l>
             <l n="1559" xml:id="l1559">Mon âme de sa mort serait inconsolable. </l>
           </sp>
-          <sp xml:id="V10-23" who="ELISE">
+          <sp who="ELISE" xml:id="V10-23">
             <speaker>ÉLISE.</speaker>
             <l n="1560" xml:id="l1560">Les Dieux nous traiteront plus favorablement ; </l>
             <l n="1561" xml:id="l1561">Mais il faut l'informer de l'heureux changement, </l>
             <l n="1562" xml:id="l1562">Qui donne à cet État une face nouvelle. </l>
           </sp>
-          <sp xml:id="V10-24" who="NICANOR">
+          <sp who="NICANOR" xml:id="V10-24">
             <speaker>NICANOR.</speaker>
             <l n="1563" xml:id="l1563">Allons tous lui porter cette grande nouvelle. </l>
             <l n="1564" xml:id="l1564">Différons le récit de ma funeste amour, </l>
