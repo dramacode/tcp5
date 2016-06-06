@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
 <?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>L'AMOUR MÉDECIN, COMÉDIE </title>
-        <author born="1622" born_location="Paris" death="1673" death_location="Paris" academie="">Molière</author>
+        <author academie="" born="1622" born_location="Paris" death="1673" death_location="Paris">Molière</author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE juillet 2009.</p>
@@ -37,7 +37,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -49,60 +49,1327 @@
         <titlePart type="sub">COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1665">M. DC. LXV.</docDate>
-      <docAuthor id="MOLIERE" bio="moliere">MOLIÈRE</docAuthor>
-      <docImprint>
-        <privilege id=""/>
-        <acheveImprime id=""/>
-        <editor id=""/>
-      </docImprint>
+      <docAuthor bio="moliere" id="MOLIERE">MOLIÈRE</docAuthor>
+      <docImprint> <privilege id=""/> <acheveImprime id=""/> <editor id=""/> </docImprint>
       <castList>
         <head>PERSONNAGES DU PROLOGUE</head>
-        <castItem><role xml:id="LACOMEDIE" id="LA COMÉDIE" sex="2" type="P" statut="art" age="A" stat_amour="néant">LA COMÉDIE</role>.</castItem>
-        <castItem><role xml:id="LAMUSIQUE" id="LA MUSIQUE" sex="2" type="P" statut="art" age="A" stat_amour="néant">LA MUSIQUE</role>.</castItem>
-        <castItem><role xml:id="LEBALLET" id="LE BALLET" sex="1" type="P" statut="art" age="A" stat_amour="néant">LE BALLET</role>.</castItem>
+        <castItem><role age="A" id="LA COMÉDIE" sex="2" stat_amour="néant" statut="art" type="P" xml:id="LACOMEDIE">LA COMÉDIE</role>.</castItem>
+        <castItem><role age="A" id="LA MUSIQUE" sex="2" stat_amour="néant" statut="art" type="P" xml:id="LAMUSIQUE">LA MUSIQUE</role>.</castItem>
+        <castItem><role age="A" id="LE BALLET" sex="1" stat_amour="néant" statut="art" type="P" xml:id="LEBALLET">LE BALLET</role>.</castItem>
       </castList>
       <castList>
         <head>PERSONNAGES de la COMÉDIE</head>
-        <castItem><role xml:id="SGANARELLE" id="SGANARELLE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">SGANARELLE</role>, père de Lucinde.</castItem>
-        <castItem><role xml:id="LUCINDE" rend="junior" id="LUCINDE" sex="2" type="H" statut="bourgeois" age="J" stat_amour="Clitandre">LUCINDE</role>, fille de Sganarelle.</castItem>
-        <castItem><role xml:id="CLITANDRE" rend="junior" id="CLITANDRE" sex="1" type="H" statut="bourgeois" age="J" stat_amour="Lucinde">CLITANDRE</role>, amant de Lucinde.</castItem>
-        <castItem><role xml:id="AMINTE" id="AMINTE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">AMINTE</role>, voisine de Sganarelle.</castItem>
-        <castItem><role xml:id="LUCRECE" rend="junior" id="LUCRECE" sex="2" type="H" statut="bourgeois" age="J" stat_amour="néant">LUCRÈCE</role>, nièce de Sganarelle.</castItem>
-        <castItem><role xml:id="LISETTE" id="LISETTE" sex="2" type="H" statut="suivante" age="A" stat_amour="néant">LISETTE</role>, suivante de Lucinde.</castItem>
-        <castItem><role xml:id="MONSIEURGUILLAUME" id="MONSIEUR GUILLAUME" sex="1" type="H" statut="ccommerçant" age="A" stat_amour="néant">MONSIEUR GUILLAUME</role>, vendeur de tapisseries.</castItem>
-        <castItem><role xml:id="MONSIEURJOSSE" id="MONSIEUR JOSSE" sex="1" type="H" statut="orfèvre" age="A" stat_amour="néant">MONSIEUR JOSSE</role>, orfèvre.</castItem>
-        <castItem><role xml:id="MONSIEURTOMES" id="MONSIEUR TOMÈS" sex="1" type="H" statut="médecin" age="A" stat_amour="néant">MONSIEUR TOMÈS</role>, médecin.</castItem>
-        <castItem><role xml:id="MONSIEURDEFONANDRES" id="MONSIEUR DE FONANDRÈS" sex="1" type="H" statut="médecin" age="A" stat_amour="néant">MONSIEUR DE FONANDRÈS</role>, médecin.</castItem>
-        <castItem><role xml:id="MONSIEURMACROTON" id="MONSIEUR MACROTON" sex="1" type="H" statut="médecin" age="A" stat_amour="néant">MONSIEUR MACROTON</role>, médecin.</castItem>
-        <castItem><role xml:id="MONSIEURBAHYS" id="MONSIEUR BAHYS" sex="1" type="H" statut="médecin" age="A" stat_amour="néant">MONSIEUR BAHYS</role>, médecin.</castItem>
-        <castItem><role xml:id="MONSIEURFILERIN" id="MONSIEUR FILERIN" sex="1" type="H" statut="médecin" age="A" stat_amour="néant">MONSIEUR FILERIN</role>, médecin.</castItem>
-        <castItem><role xml:id="UNNOTAIRE" id="UN NOTAIRE" sex="1" type="H" statut="notaire" age="A" stat_amour="néant">UN NOTAIRE</role>.</castItem>
-        <castItem><role xml:id="CHAMPAGNE" id="CHAMPAGNE" sex="1" type="H" statut="valet" age="A" stat_amour="néant">CHAMPAGNE</role>, valet de Sganarelle.</castItem>
+        <castItem><role age="A" id="SGANARELLE" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="SGANARELLE">SGANARELLE</role>, père de Lucinde.</castItem>
+        <castItem><role age="J" id="LUCINDE" rend="junior" sex="2" stat_amour="Clitandre" statut="bourgeois" type="H" xml:id="LUCINDE">LUCINDE</role>, fille de Sganarelle.</castItem>
+        <castItem><role age="J" id="CLITANDRE" rend="junior" sex="1" stat_amour="Lucinde" statut="bourgeois" type="H" xml:id="CLITANDRE">CLITANDRE</role>, amant de Lucinde.</castItem>
+        <castItem><role age="A" id="AMINTE" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="AMINTE">AMINTE</role>, voisine de Sganarelle.</castItem>
+        <castItem><role age="J" id="LUCRECE" rend="junior" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="LUCRECE">LUCRÈCE</role>, nièce de Sganarelle.</castItem>
+        <castItem><role age="A" id="LISETTE" sex="2" stat_amour="néant" statut="suivante" type="H" xml:id="LISETTE">LISETTE</role>, suivante de Lucinde.</castItem>
+        <castItem><role age="A" id="MONSIEUR GUILLAUME" sex="1" stat_amour="néant" statut="ccommerçant" type="H" xml:id="MONSIEURGUILLAUME">MONSIEUR GUILLAUME</role>, vendeur de tapisseries.</castItem>
+        <castItem><role age="A" id="MONSIEUR JOSSE" sex="1" stat_amour="néant" statut="orfèvre" type="H" xml:id="MONSIEURJOSSE">MONSIEUR JOSSE</role>, orfèvre.</castItem>
+        <castItem><role age="A" id="MONSIEUR TOMÈS" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="MONSIEURTOMES">MONSIEUR TOMÈS</role>, médecin.</castItem>
+        <castItem><role age="A" id="MONSIEUR DE FONANDRÈS" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="MONSIEURDEFONANDRES">MONSIEUR DE FONANDRÈS</role>, médecin.</castItem>
+        <castItem><role age="A" id="MONSIEUR MACROTON" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="MONSIEURMACROTON">MONSIEUR MACROTON</role>, médecin.</castItem>
+        <castItem><role age="A" id="MONSIEUR BAHYS" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="MONSIEURBAHYS">MONSIEUR BAHYS</role>, médecin.</castItem>
+        <castItem><role age="A" id="MONSIEUR FILERIN" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="MONSIEURFILERIN">MONSIEUR FILERIN</role>, médecin.</castItem>
+        <castItem><role age="A" id="UN NOTAIRE" sex="1" stat_amour="néant" statut="notaire" type="H" xml:id="UNNOTAIRE">UN NOTAIRE</role>.</castItem>
+        <castItem><role age="A" id="CHAMPAGNE" sex="1" stat_amour="néant" statut="valet" type="H" xml:id="CHAMPAGNE">CHAMPAGNE</role>, valet de Sganarelle.</castItem>
       </castList>
       <castList>
         <head>PERSONNAGES du BALLET, Première entrée.</head>
-        <castItem><role xml:id="CHAMPAGNE" rend="junior" id="CHAMPAGNE" sex="1" type="H" statut="valet" age="J" stat_amour="néant">CHAMPAGNE</role>.</castItem>
-        <castItem><role xml:id="QUATREMEDECINS" id="QUATRE-MEDECINS" sex="9" type="H" statut="médecin" age="A" stat_amour="néant">QUATRE MÉDECINS</role>.</castItem>
+        <castItem><role age="J" id="CHAMPAGNE" rend="junior" sex="1" stat_amour="néant" statut="valet" type="H" xml:id="CHAMPAGNE">CHAMPAGNE</role>.</castItem>
+        <castItem><role age="A" id="QUATRE-MEDECINS" sex="9" stat_amour="néant" statut="médecin" type="H" xml:id="QUATREMEDECINS">QUATRE MÉDECINS</role>.</castItem>
       </castList>
       <castList>
         <head>PERSONNAGES du BALLET, Deuxième entrée.</head>
-        <castItem><role xml:id="UNOPERATEUR" id="UN-OPERATEUR" sex="1" type="H" statut="opérateur" age="A" stat_amour="néant">UN OPÉRATEUR</role>.</castItem>
-        <castItem><role xml:id="TRIVELINS" id="TRIVELINS" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">TRIVELINS</role>.</castItem>
-        <castItem><role xml:id="SCARAMOUCHES" id="SCARAMOUCHES" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">SCARAMOUCHES</role>.</castItem>
+        <castItem><role age="A" id="UN-OPERATEUR" sex="1" stat_amour="néant" statut="opérateur" type="H" xml:id="UNOPERATEUR">UN OPÉRATEUR</role>.</castItem>
+        <castItem><role age="A" id="TRIVELINS" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="TRIVELINS">TRIVELINS</role>.</castItem>
+        <castItem><role age="A" id="SCARAMOUCHES" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="SCARAMOUCHES">SCARAMOUCHES</role>.</castItem>
       </castList>
       <castList>
         <head>PERSONNAGES du BALLET, Troisième entrée.</head>
-        <castItem><role xml:id="LACOMEDIE" id="LA-COMEDIE" sex="2" type="P" statut="art" age="A" stat_amour="néant">LA COMÉDIE</role>.</castItem>
-        <castItem><role xml:id="LAMUSIQUE" id="LA-MUSIQUE" sex="2" type="P" statut="art" age="A" stat_amour="néant">LA MUSIQUE</role>.</castItem>
-        <castItem><role xml:id="LEBALLET" id="LE-BALLET" sex="1" type="P" statut="art" age="A" stat_amour="néant">LE BALLET</role>.</castItem>
-        <castItem><role xml:id="JEUX" id="JEUX" sex="9" type="P" statut="jeux-ris-plaisir" age="A" stat_amour="néant">JEUX</role>.</castItem>
-        <castItem><role xml:id="RIS" id="RIS" sex="9" type="P" statut="jeux-ris-plaisir" age="A" stat_amour="néant">RIS</role>.</castItem>
-        <castItem><role xml:id="PLAISIRS" id="PLAISIRS" sex="9" type="P" statut="jeux-ris-plaisir" age="A" stat_amour="néant">PLAISIRS</role>.</castItem>
+        <castItem><role age="A" id="LA-COMEDIE" sex="2" stat_amour="néant" statut="art" type="P" xml:id="LACOMEDIE">LA COMÉDIE</role>.</castItem>
+        <castItem><role age="A" id="LA-MUSIQUE" sex="2" stat_amour="néant" statut="art" type="P" xml:id="LAMUSIQUE">LA MUSIQUE</role>.</castItem>
+        <castItem><role age="A" id="LE-BALLET" sex="1" stat_amour="néant" statut="art" type="P" xml:id="LEBALLET">LE BALLET</role>.</castItem>
+        <castItem><role age="A" id="JEUX" sex="9" stat_amour="néant" statut="jeux-ris-plaisir" type="P" xml:id="JEUX">JEUX</role>.</castItem>
+        <castItem><role age="A" id="RIS" sex="9" stat_amour="néant" statut="jeux-ris-plaisir" type="P" xml:id="RIS">RIS</role>.</castItem>
+        <castItem><role age="A" id="PLAISIRS" sex="9" stat_amour="néant" statut="jeux-ris-plaisir" type="P" xml:id="PLAISIRS">PLAISIRS</role>.</castItem>
       </castList>
-      <set location="Paris" country="France" periode="XVIIème" link="">La scène est à Paris dans une salle de la maison de Sganarelle.</set>
+      <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris dans une salle de la maison de Sganarelle.</set>
     </front>
-    <body><div1 xml:id="I" type="act" n="1"><head>PROLOGUE</head><div2 xml:id="I01" type="scene" n="1"><head> La Comédie, la Musique et le Ballet.</head><sp xml:id="I01-1" who="LACOMEDIE"><speaker>LA COMÉDIE.</speaker><l n="2" xml:id="l2">Quittons, quittons notre vaine querelle,</l><l n="3" xml:id="l3">Ne nous disputons point nos talents tour à tour,</l><l n="4" xml:id="l4">Et d'une gloire plus belle</l><l n="5" xml:id="l5">Piquons-nous en ce jour :</l><l n="6" xml:id="l6">Unissons-nous tous trois d'une ardeur sans seconde,</l><l n="7" xml:id="l7">Pour donner du plaisir au plus grand roi du monde.</l></sp><sp xml:id="I01-2" who="COMEDIE_MUSIQUE_BALLET"><speaker>Tous Trois</speaker><l n="8" xml:id="l8">Unissons-nous...</l></sp><sp xml:id="I01-3" who="LACOMEDIE"><speaker>LA COMÉDIE.</speaker><l n="9" xml:id="l9">De ses travaux, plus grands qu'on ne peut croire,</l><l n="10" xml:id="l10">Il se vient quelquefois délasser parmi nous :</l><l n="11" xml:id="l11">Est-il de plus grande gloire,</l><l n="12" xml:id="l12">Est-il bonheur plus doux ?</l><l n="13" xml:id="l13">Unissons-nous tous trois...</l></sp><sp xml:id="I01-4" who="COMEDIE_MUSIQUE_BALLET"><speaker>Tous Trois</speaker><l n="14" xml:id="l14">Unissons-nous...</l></sp></div2></div1> 
-<div1 xml:id="II" type="act" n="2"><head>ACTE I</head><div2 xml:id="II01" type="scene" n="1"><head>SCÈNE I. Sganarelle, Aminte, Lucrèce, M.Guillaume, M. Josse.</head><sp xml:id="II01-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ah !</s><s>l'étrange chose que la vie !</s><s>Et que je puis bien dire, avec ce grand philosophe de l'antiquité, que qui terre a, guerre a, et qu'un malheur ne vient jamais sans l'autre ! </s><s>Je n'avais qu'une seule femme, qui est morte. </s></p></sp><sp xml:id="II01-2" who="MONSIEURGUILLAUME"><speaker>MONSIEUR GUILLAUME.</speaker><p><s>Et combien donc en voulez-vous avoir ? </s></p></sp><sp xml:id="II01-3" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Elle est morte, Monsieur mon ami. </s><s>Cette perte m'est très sensible, et je ne puis m'en ressouvenir sans pleurer. </s><s>Je n'étais pas fort satisfait de sa conduite, et nous avions le plus souvent dispute ensemble ; mais enfin la mort rajuste toutes choses. </s><s>Elle est morte : je la pleure. </s><s>Si elle était en vie, nous nous querellerions. </s><s>De tous les enfants que le Ciel m'avait donnés, il ne m'a laissé qu'une fille, et cette fille est toute ma peine. </s><s>Car enfin je la vois dans une mélancolie la plus sombre du monde, dans une tristesse épouvantable, dont il n'y a pas moyen de la retirer, et dont je ne saurais même apprendre la cause. </s><s>Pour moi, j'en perds l'esprit, et j'aurais besoin d'un bon conseil sur cette matière. </s><s>Vous êtes ma nièce ; vous, ma voisine ; et vous, mes compères et mes amis : je vous prie de me conseiller tous ce que je dois faire. </s></p></sp><sp xml:id="II01-4" who="MONSIEURJOSSE"><speaker>MONSIEUR JOSSE.</speaker><p><s>Pour moi, je tiens que la braverie et l'ajustement est la chose qui réjouit le plus les filles ; et si j'étais que de vous, je lui achèterais, dès aujourd'hui, une belle garniture de diamants, ou de rubis, ou d'émeraudes. </s></p></sp><sp xml:id="II01-5" who="MONSIEURGUILLAUME"><speaker>MONSIEUR GUILLAUME.</speaker><p><s>Et moi, si j'étais en votre place, j'achèterais une belle tenture de tapisserie de verdure, ou à personnages, que je ferais mettre à sa chambre, pour lui réjouit l'esprit et la vue. </s></p></sp><sp xml:id="II01-6" who="AMINTE"><speaker>AMINTE.</speaker><p><s>Pour moi, je ne ferais point tant de façon ; et je la marierais fort bien, et le plus tôt que je pourrais, avec cette personne qui vous la fit, dit-on, demander il y a quelque temps. </s></p></sp><sp xml:id="II01-7" who="LUCRECE"><speaker>LUCRÈCE.</speaker><p><s>Et moi, je tiens que votre fille n'est point du tout propre pour le mariage. </s><s>Elle est d'une complexion trop délicate et trop peu saine, et c'est la vouloir envoyer bientôt en l'autre monde, que de l'exposer, comme elle est, à faire des enfants. </s><s>Le monde n'est point du tout son fait, et je vous conseille de la mettre dans un convent, où elle trouvera des divertissements qui seront mieux de son humeur. </s></p></sp><sp xml:id="II01-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><note type="L">Inclination : Se dit aussi de l'amour, du penchant, de l'attachement qu'on a pour quelqu'un. [F]</note><p><s>Tous ces conseils sont admirables assurément ; mais je les tiens un peu intéressés, et trouve que vous me conseillez fort bien pour vous. </s><s>Vous êtes orfèvre, Monsieur Josse, et votre conseil sent son homme qui a envie de se défaire de sa marchandise. </s><s>Vous vendez des tapisseries, Monsieur Guillaume, et vous avez la mine d'avoir quelque tenture qui vous incommode. </s><s>Celui que vous aimez, ma voisine, a, dit-on, quelque inclination pour ma fille, et vous ne seriez pas fâchée de la voir la femme d'un autre. </s><s>Et quant à vous, ma chère nièce, ce n'est pas mon dessein, comme on sait, de marier ma fille avec qui que ce soit, et j'ai mes raisons pour cela ; mais le conseil que vous me donnez de la faire religieuse est d'une femme qui pourrait bien souhaiter charitablement d'être mon héritière universelle. </s><s>Ainsi, Messieurs et Mesdames, quoique tous vos conseils soient les meilleurs du monde, vous trouverez bon, s'il vous plaît, que je n'en suive aucun. </s><s>Voilà de mes donneurs de conseils à la mode.</s></p></sp></div2><div2 xml:id="II02" type="scene" n="2"><head>SCÈNE II. Lucinde, Sganarelle.</head><sp xml:id="II02-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ah ! </s><s>Voilà ma fille qui prend l'air. </s><s>Elle ne me voit pas ; elle soupire ; elle lève les yeux au ciel. </s><s>Dieu vous garde  ! </s><s>Bonjour, ma mie. </s><s>Hé bien ! </s><s>Qu'est-ce ?  </s><s>Comme vous en va ?  </s><s>Hé ! </s><s>Quoi ?  </s><s>toujours triste et mélancolique comme cela, et tu ne veux pas me dire ce que tu as. </s><s>Allons donc, découvre-moi ton petit coeur. </s><s>Là, ma pauvre mie, dis ; dis ; dis tes petites pensées à ton petit papa mignon. </s><s>Courage ! </s><s>Veux-tu que je te baise ?  </s><s>Viens.</s><s>J'enrage de la voir de cette humeur-là. </s><s>Mais, dis-moi, me veux-tu faire mourir de déplaisir, et ne puis-je savoir d'où vient cette grande langueur ?  </s><s>Découvre-m'en la cause, et je te promets que je ferai toutes choses pour toi. </s><s>Oui, tu n'as qu'à me dire le sujet de ta tristesse ; je t'assure ici, et te fais serment qu'il n'y a rien que je ne fasse pour te satisfaire : c'est tout dire. </s><s>Est-ce que tu es jalouse de quelqu'une de tes compagnes que tu voies plus brave que toi ?  </s><s>Et serait-il quelque étoffe nouvelle dont tu voulusses avoir un habit ?  </s><s>Non. </s><s>Est-ce que ta chambre ne te semble pas assez parée, et que tu souhaiterais quelque cabinet de la foire Saint-Laurent ?  </s><s>Ce n'est pas cela. </s><s>Aurais-tu envie d'apprendre quelque chose ?  </s><s>Et veux-tu que je te donne un maître pour te montrer à jouer du clavecin ?  </s><s>Nenni. </s><s>Aimerais-tu quelqu'un, et souhaiterais-tu d'être mariée ?</s></p><stage type="[N/A]">Lucinde lui fait signe que c'est cela.</stage></sp></div2><div2 xml:id="II03" type="scene" n="3"><head>SCÈNE III. Lisette, Sganarelle, Lucinde.</head><sp xml:id="II03-1" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Hé bien ! </s><s>Monsieur, vous venez d'entretenir votre fille. </s><s>Avez-vous su la cause de sa mélancolie ? </s></p></sp><sp xml:id="II03-2" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Non. </s><s>C'est une coquine, qui me fait enrager. </s></p></sp><sp xml:id="II03-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Monsieur, laissez-moi faire, je m'en vais la sonder un peu. </s></p></sp><sp xml:id="II03-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Il n'est pas nécessaire ; et puisqu'elle veut être de cette humeur, je suis d'avis qu'on l'y laisse. </s></p></sp><sp xml:id="II03-5" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Laissez-moi faire, vous dis-je. </s><s>Peut-être qu'elle se découvrira plus librement à moi qu'à vous. </s><s>Quoi ?  </s><s>Madame, vous ne nous direz point ce que vous avez, et vous voulez affliger ainsi tout le monde ?  </s><s>Il me semble qu'on n'agit point comme vous faites, et que, si vous avez quelque répugnance à vous expliquer à un père, vous n'en devez avoir aucune à me découvrir votre coeur. </s><s>Dites-moi, souhaitez-vous quelque chose de lui ?  </s><s>Il nous a dit plus d'une fois qu'il n'épargnerait rien pour vous contenter. </s><s>Est-ce qu'il ne vous donne pas toute la liberté que vous souhaiteriez, et les promenades et les cadeaux ne tenteraient-ils point votre âme ?  </s><s>Heu. </s><s>Avez-vous reçu quelque déplaisir de quelqu'un ?  </s><s>Heu. </s><s>N'auriez-vous point quelque secrète inclination, avec qui vous souhaiteriez que votre père vous mariât ?  </s><s>Ah ! </s><s>Je vous entends. </s><s>Voilà l'affaire. </s><s>Que diable ?  </s><s>Pourquoi tant de façons ?  </s><s>Monsieur, le mystère est découvert ; et...</s></p></sp><sp xml:id="II03-6" who="SGANARELLE"><speaker>SGANARELLE, l'interrompant.</speaker><p><s>Va, fille ingrate, je ne te veux plus parler, et je te laisse dans ton obstination. </s></p></sp><sp xml:id="II03-7" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Mon père, puisque vous voulez que je vous dise la chose... </s></p></sp><sp xml:id="II03-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui, je perds toute l'amitié que j'avais pour toi. </s></p></sp><sp xml:id="II03-9" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Monsieur, sa tristesse... </s></p></sp><sp xml:id="II03-10" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>C'est une coquine qui me veut faire mourir. </s></p></sp><sp xml:id="II03-11" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Mon père, je veux bien... </s></p></sp><sp xml:id="II03-12" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ce n'est pas la récompense de t'avoir élevée comme j'ai fait. </s></p></sp><sp xml:id="II03-13" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Mais, monsieur...</s></p></sp><sp xml:id="II03-14" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Non, je suis contre elle dans une colère épouvantable. </s></p></sp><sp xml:id="II03-15" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Mais, mon père... </s></p></sp><sp xml:id="II03-16" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Je n'ai plus aucune tendresse pour toi. </s></p></sp><sp xml:id="II03-17" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Mais... </s></p></sp><sp xml:id="II03-18" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>C'est une friponne. </s></p></sp><sp xml:id="II03-19" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Mais... </s></p></sp><sp xml:id="II03-20" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Une ingrate. </s></p></sp><sp xml:id="II03-21" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Mais... </s></p></sp><sp xml:id="II03-22" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Une coquine, qui ne me veut pas dire ce qu'elle a.</s></p></sp><sp xml:id="II03-23" who="LISETTE"><speaker>LISETTE.</speaker><p><s>C'est un mari qu'elle veut.</s></p></sp><sp xml:id="II03-24" who="SGANARELLE"><speaker>SGANARELLE, faisant semblant de ne pas entendre.</speaker><p><s>Je l'abandonne. </s></p></sp><sp xml:id="II03-25" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Un mari. </s></p></sp><sp xml:id="II03-26" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Je la déteste. </s></p></sp><sp xml:id="II03-27" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Un mari. </s></p></sp><sp xml:id="II03-28" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Et la renonce pour ma fille. </s></p></sp><sp xml:id="II03-29" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Un mari. </s></p></sp><sp xml:id="II03-30" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Non, ne m'en parlez point. </s></p></sp><sp xml:id="II03-31" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Un mari. </s></p></sp><sp xml:id="II03-32" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ne m'en parlez point. </s></p></sp><sp xml:id="II03-33" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Un mari. </s></p></sp><sp xml:id="II03-34" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ne m'en parlez point. </s></p></sp><sp xml:id="II03-35" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Un mari, un mari, un mari.</s></p></sp></div2><div2 xml:id="II04" type="scene" n="4"><head>SCÈNE IV. Lisette, Lucinde.</head><sp xml:id="II04-1" who="LISETTE"><speaker>LISETTE.</speaker><p><s>On dit bien vrai : qu'il n'y a point de pires sourds que ceux qui ne veulent point entendre. </s></p></sp><sp xml:id="II04-2" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Hé bien ! </s><s>Lisette, j'avais tort de cacher mon déplaisir, et je n'avais qu'à parler pour avoir tout ce que je souhaitais de mon père ! </s><s>Tu le vois. </s></p></sp><sp xml:id="II04-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Par ma foi ! </s><s>Voilà un vilain homme ; et je vous avoue que j'aurais un plaisir extrême à lui jouer quelque tour. </s><s>Mais d'où vient donc, Madame, que jusqu'ici vous m'avez caché votre mal ? </s></p></sp><sp xml:id="II04-4" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Hélas ! </s><s>De quoi m'aurait servi de te le découvrir plus tôt ?  </s><s>Et n'aurais-je pas autant gagné à le tenir caché toute ma vie ?  </s><s>Crois-tu que je n'aie pas bien prévu tout ce que tu vois maintenant ; que je ne susse pas à fond tous les sentiments de mon père, et que le refus qu'il a fait porter à celui qui m'a demandée par un ami n'ait pas étouffé dans mon âme toute sorte d'espoir ? </s></p></sp><sp xml:id="II04-5" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Quoi ?  </s><s>C'est cet inconnu qui vous a fait demander, pour qui vous... </s></p></sp><sp xml:id="II04-6" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Peut-être n'est-il pas honnête à une fille de s'expliquer si librement ; mais enfin je t'avoue que, s'il m'étoit permis de vouloir quelque chose, ce serait lui que je voudrais. </s><s>Nous n'avons eu ensemble aucune conversation, et sa bouche ne m'a point déclaré la passion qu'il a pour moi ; mais, dans tous les lieux où il m'a pu voir, ses regards et ses actions m'ont toujours parlé si tendrement, et la demande qu'il a fait faire de moi m'a paru d'un si honnête homme, que mon coeur n'a pu s'empêcher d'être sensible à ses ardeurs ; et cependant tu vois où la dureté de mon père réduit toute cette tendresse. </s></p></sp><sp xml:id="II04-7" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Allez, laissez-moi faire. </s><s>Quelque sujet que j'aie de me plaindre de vous du secret que vous m'avez fait, je ne veux pas laisser de servir votre amour ; et pourvu que vous ayez assez de résolution... </s></p></sp><sp xml:id="II04-8" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Mais que veux-tu que je fasse contre l'autorité d'un père ?  </s><s>Et s'il est inexorable à mes voeux... </s></p></sp><sp xml:id="II04-9" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Allez, allez, il ne faut pas se laisser mener comme un oison ; et pourvu que l'honneur n'y soit pas offensé, on peut se libérer un peu de la tyrannie d'un père. </s><s>Que prétend-il que vous fassiez ?  </s><s>N'êtes-vous pas en âge d'être mariée ?  </s><s>Et croit-il que vous soyez de marbre ?  </s><s>Allez, encore un coup, je veux servir votre passion ; je prends, dès à présent, sur moi tout le soin de ses intérêts, et vous verrez que je sais des détours.... </s><s>Mais je vois votre père. </s><s>Rentrons, et me laissez agir.</s></p></sp></div2><div2 xml:id="II05" type="scene" n="5"><head>SCÈNE V. </head><sp xml:id="II05-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Il est bon quelquefois de ne point faire semblant d'entendre les choses qu'on n'entend que trop bien ; et j'ai fait sagement de parer la déclaration d'un désir que je ne suis pas résolu de contenter. </s><s>A-t-on jamais rien vu de plus tyrannique que cette coutume où l'on veut assujettir les pères ?  </s><s>Rien de plus impertinent et de plus ridicule que d'amasser du bien avec de grands travaux, et élever une fille avec beaucoup de soin et de tendresse, pour se dépouiller de l'un et de l'autre entre les mains d'un homme qui ne nous touche de rien ?  </s><s>Non, non : je me moque de cet usage, et je veux garder mon bien et ma fille pour moi. </s></p></sp></div2><div2 xml:id="II06" type="scene" n="6"><head>SCÈNE VI. Lisette, Sganarelle.</head><sp xml:id="II06-1" who="LISETTE"><speaker>LISETTE, faisant semblant de ne pas voir Sganarelle.</speaker><p><s>Ah ! </s><s>Malheur ! </s><s>Ah ! </s><s>Disgrâce ! </s><s>Ah ! </s><s>Pauvre seigneur Sganarelle ! </s><s>Où pourrai-je te rencontrer ? </s></p></sp><sp xml:id="II06-2" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Que dit-elle là ? </s></p></sp><sp xml:id="II06-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ah ! </s><s>Misérable père ! </s><s>Que feras-tu, quand tu sauras cette nouvelle ? </s></p></sp><sp xml:id="II06-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Que sera-ce ? </s></p></sp><sp xml:id="II06-5" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ma pauvre maîtresse ! </s></p></sp><sp xml:id="II06-6" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Je suis perdu. </s></p></sp><sp xml:id="II06-7" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ah ! </s></p></sp><sp xml:id="II06-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Lisette. </s></p></sp><sp xml:id="II06-9" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Quelle infortune ! </s></p></sp><sp xml:id="II06-10" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Lisette. </s></p></sp><sp xml:id="II06-11" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Quel accident ! </s></p></sp><sp xml:id="II06-12" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Lisette. </s></p></sp><sp xml:id="II06-13" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Quelle fatalité ! </s></p></sp><sp xml:id="II06-14" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Lisette. </s></p></sp><sp xml:id="II06-15" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ah ! </s><s>Monsieur ! </s></p></sp><sp xml:id="II06-16" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Qu'est-ce ? </s></p></sp><sp xml:id="II06-17" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Monsieur. </s></p></sp><sp xml:id="II06-18" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Qu'y a-t-il ? </s></p></sp><sp xml:id="II06-19" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Votre fille. </s></p></sp><sp xml:id="II06-20" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ah ! </s><s>Ah ! </s></p></sp><sp xml:id="II06-21" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Monsieur, ne pleurez donc point comme cela ; car vous me feriez rire. </s></p></sp><sp xml:id="II06-22" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Dis donc vite. </s></p></sp><sp xml:id="II06-23" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Votre fille, toute saisie des paroles que vous lui avez dites et de la colère effroyable où elle vous a vu contre elle, est montée vite dans sa chambre, et, pleine de désespoir, a ouvert la fenêtre qui regarde sur la rivière. </s></p></sp><sp xml:id="II06-24" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Hé bien ? </s></p></sp><sp xml:id="II06-25" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Alors, levant les yeux au ciel : "Non, a-t-elle dit, il m'est impossible de vivre avec le courroux de mon père, et puisqu'il me renonce pour sa fille, je veux mourir." </s></p></sp><sp xml:id="II06-26" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Elle s'est jetée. </s></p></sp><sp xml:id="II06-27" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Non, Monsieur : elle a fermé tout doucement la fenêtre, et s'est allée mettre sur son lit. </s><s>Là elle s'est prise à pleurer amèrement ; et tout d'un coup son visage a pâli, ses yeux se sont tournés, le coeur lui a manqué, et elle m'est demeurée entre les bras. </s></p></sp><sp xml:id="II06-28" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ah ! </s><s>Ma fille ! </s></p></sp><sp xml:id="II06-29" who="LISETTE"><speaker>LISETTE.</speaker><p><s>À force de la tourmenter, je l'ai fait revenir ; mais cela lui reprend de moment en moment, et je crois qu'elle ne passera pas la journée. </s></p></sp><sp xml:id="II06-30" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Champagne, Champagne, Champagne, vite, qu'on m'aille quérir des médecins, et en quantité : on n'en eut trop avoir dans une pareille aventure. </s><s>Ah ! </s><s>Ma fille ! </s><s>Ma pauvre fille ! </s></p><stage type="[N/A]">Premier Entracte.</stage><stage type="[N/A]">Champagne, en dansant, frappe aux portes de quatre médecins, qui dansent et entrent avec cérémonie chez le père de la malade.</stage></sp></div2></div1><div1 xml:id="III" type="act" n="3"><head>ACTE II</head><div2 xml:id="III01" type="scene" n="1"><head>SCÈNE I.Sganarelle, Lisette.</head><sp xml:id="III01-1" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Que voulez-vous donc faire, Monsieur, de quatre médecins ?  </s><s>N'est-ce pas assez d'un pour tuer une personne ? </s></p></sp><sp xml:id="III01-2" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Taisez-vous. </s><s>Quatre conseils valent mieux qu'un. </s></p></sp><sp xml:id="III01-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Est-ce que votre fille ne peut pas bien mourir sans le secours de ces Messieurs-là ? </s></p></sp><sp xml:id="III01-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Est-ce que les médecins font mourir ? </s></p></sp><sp xml:id="III01-5" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Sans doute ; et j'ai connu un homme qui prouvait, par bonnes raisons, qu'il ne faut jamais dire : "Une telle personne est morte d'une fièvre et d'une fluxion sur la poitrine" ; mais : "Elle est morte de quatre médecins et de deux apothicaires." </s></p></sp><sp xml:id="III01-6" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Chut. </s><s>N'offensez pas ces Messieurs-là. </s></p></sp><sp xml:id="III01-7" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ma foi ! </s><s>Monsieur, notre chat est réchappé depuis peu d'un saut qu'il fit du haut de la maison dans la rue ; et il fut trois jours sans manger, et sans pouvoir remuer ni pied ni patte ; mais il est bien heureux de ce qu'il n'y a point de chats médecins, car ses affaires étaient faites, et il n'auraient pas manqué de le purger et de le saigner. </s></p></sp><sp xml:id="III01-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voulez-vous vous taire ?  </s><s>vous dis-je. </s><s>Mais voyez quelle impertinence ! </s><s>Les voici. </s></p></sp><sp xml:id="III01-9" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Prenez garde, vous allez être bien édifié : ils vous diront en latin que votre fille est malade. </s></p></sp></div2><div2 xml:id="III02" type="scene" n="2"><head>SCÈNE II. Messieurs Tomes, des Fonandrès, Macroton et Bahys, Médecins, Sganarelle, Lisette.</head><sp xml:id="III02-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Hé bien ! </s><s>Messieurs. </s></p></sp><sp xml:id="III02-2" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Nous avons vu suffisamment la malade, et sans doute qu'il y a beaucoup d'impuretés en elle. </s></p></sp><sp xml:id="III02-3" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ma fille est impure ? </s></p></sp><sp xml:id="III02-4" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Je veux dire qu'il y a beaucoup d'impuretés dans son corps, quantité d'humeurs corrompues. </s></p></sp><sp xml:id="III02-5" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ah ! </s><s>Je vous entends. </s></p></sp><sp xml:id="III02-6" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Mais... </s><s>Nous allons consulter ensemble. </s></p></sp><sp xml:id="III02-7" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Allons, faites donner des siéges. </s></p></sp><sp xml:id="III02-8" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ah ! </s><s>Monsieur, vous en êtes ? </s></p></sp><sp xml:id="III02-9" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>De quoi donc connaissez-vous Monsieur ? </s></p></sp><sp xml:id="III02-10" who="LISETTE"><speaker>LISETTE.</speaker><p><s>De l'avoir vu l'autre jour chez la bonne amie de Madame votre nièce. </s></p></sp><sp xml:id="III02-11" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Comment se porte son cocher ? </s></p></sp><sp xml:id="III02-12" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Fort bien : il est mort. </s></p></sp><sp xml:id="III02-13" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Mort ! </s></p></sp><sp xml:id="III02-14" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Oui. </s></p></sp><sp xml:id="III02-15" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Cela ne se peut. </s></p></sp><sp xml:id="III02-16" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Je ne sais si cela se peut ; mais je sais bien que cela est. </s></p></sp><sp xml:id="III02-17" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Il ne peut pas être mort, vous dis-je. </s></p></sp><sp xml:id="III02-18" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Et moi je vous dis qu'il est mort et enterré. </s></p></sp><sp xml:id="III02-19" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Vous vous trompez. </s></p></sp><sp xml:id="III02-20" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Je l'ai vu. </s></p></sp><sp xml:id="III02-21" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><note type="L">Hippocrate : médecin de l'antiquité.</note><p><s>Cela est impossible. </s><s>Hippocrate dit que ces sortes de maladie ne se terminent qu'au quatorze, ou au vingt-un ; et il n'y a que six jours qu'il est tombé malade. </s></p></sp><sp xml:id="III02-22" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Hippocrate dira ce qu'il lui plaira ; mais le cocher est mort. </s></p></sp><sp xml:id="III02-23" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Paix ! </s><s>Discoureuse ; allons, sortons d'ici. </s><s>Messieurs, je vous supplie de consulter de la bonne manière. </s><s>Quoique ce ne soit pas la coutume de payer auparavant, toutefois, de peur que je l'oublie, et afin que ce soit une affaire faite, voici... </s></p><stage type="[N/A]">Il les paye, et chacun, en recevant l'argent, fait un geste différent.</stage></sp></div2><div2 xml:id="III03" type="scene" n="3"><head>SCÈNE III. Messieurs des Fonandrès, Tomès, Macroton et Bahys.</head><stage type="[N/A]">Ils s'asseyent et toussent.</stage><sp xml:id="III03-1" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><note type="C">Paris au XVIIème siècle est compris dans les sept premiers arrondissements actuels, cette ville paraîssait grande aux contemporains.</note><p><s>Paris est étrangement grand, et il faut faire de longs trajets quand la pratique donne un peu. </s></p></sp><sp xml:id="III03-2" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Il faut avouer que j'ai une mule admirable pour cela, et qu'on a peine à croire le chemin que je lui fais faire tous les jours. </s></p></sp><sp xml:id="III03-3" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>J'ai un cheval merveilleux, et c'est un animal infatigable. </s></p></sp><sp xml:id="III03-4" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Savez-vous le chemin que ma mule a fait aujourd'hui ?  </s><s>J'ai été premièrement tout contre l'Arsenal ; de l'Arsenal, au bout du faubourg Saint-Germain ; du faubourg Saint-Germain, au fond du Marais ; du fond du Marais, à la porte Saint-Honoré ; de la porte Saint-Honoré, au faubourg Saint-Jacques, du faubourg Saint Jacques, à la porte de Richelieu, de la porte de Richelieu, ici ; et d'ici, je dois aller encore à la place Royale. </s></p></sp><sp xml:id="III03-5" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Mon cheval a fait tout cela aujourd'hui ; et de plus, j'ai été à Ruel voir un malade. </s></p></sp><sp xml:id="III03-6" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Mais à repos, quel parti prenez-vous dans la querelle des deux médecins Théophraste et Artémius ?  </s><s>Car c'est une affaire qui partage tout notre corps. </s></p></sp><sp xml:id="III03-7" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Moi, je suis pour Artémius. </s></p></sp><sp xml:id="III03-8" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Et moi aussi. </s><s>Ce n'est pas que son avis, comme on a vu, n'ait tué le malade, et que celui de Théophraste ne fût beaucoup meilleur assurément ; mais enfin il a tort dans les circonstances, et il ne devait pas être d'un autre avis que son ancien. </s><s>Qu'en dites-vous ? </s></p></sp><sp xml:id="III03-9" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Sans doute. </s><s>Il faut toujours garder les formalités, quoi qu'il puisse arriver. </s></p></sp><sp xml:id="III03-10" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Pour moi, j'y suis sévère en diable, à moins que ce soit entre amis ; et l'on nous assembla un jour, trois de nous autres, avec un médecin de dehors, pour une consultation, où j'arrêtai toute l'affaire, et ne voulus point endurer qu'on opinât, si les choses n'allaient dans l'ordre. </s><s>Les gens de la maison faisaient ce qu'ils pouvaient et la maladie pressait ; mais je n'en voulus point démordre, et la malade mourut bravement pendant cette contestation. </s></p></sp><sp xml:id="III03-11" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>C'est fort bien fait d'apprendre aux gens à vivre, et de leur montrer leur bec jaune. </s></p></sp><sp xml:id="III03-12" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Un homme mort n'est qu'un homme mort, et ne fait point de conséquence ; mais une formalité négligée porte un notable préjudice à tout le corps des médecins. </s></p></sp></div2><div2 xml:id="III04" type="scene" n="4"><head>SCÈNE IV. Sganarelle, Messieurs Tomès, des Fonandrès, Macroton et Bahys.</head><sp xml:id="III04-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Messieurs, l'oppression de ma fille augmente : je vous prie de me dire vite ce que vous avez résolu. </s></p></sp><sp xml:id="III04-2" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Allons, Monsieur. </s></p></sp><sp xml:id="III04-3" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Non, Monsieur, parlez, s'il vous plaît. </s></p></sp><sp xml:id="III04-4" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Vous vous moquez. </s></p></sp><sp xml:id="III04-5" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Je ne parlerai pas le premier. </s></p></sp><sp xml:id="III04-6" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Monsieur. </s></p></sp><sp xml:id="III04-7" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Monsieur. </s></p></sp><sp xml:id="III04-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Hé ! </s><s>De grâce, Messieurs, laissez toutes ces cérémonies, et songez que les choses pressent. </s></p><stage type="[N/A]">Ils parlent tous quatre ensemble.</stage></sp><sp xml:id="III04-9" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>La maladie de votre fille... </s></p></sp><sp xml:id="III04-10" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>L'avis de tous ces Messieurs tous ensemble... </s></p></sp><sp xml:id="III04-11" who="MONSIEURMACROTON"><speaker>MONSIEUR MACROTON.</speaker><p><s>Après avoir bien consulté... </s></p></sp><sp xml:id="III04-12" who="MONSIEURBAHYS"><speaker>MONSIEUR BAHYS.</speaker><p><s>Pour raisonner... </s></p></sp><sp xml:id="III04-13" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Hé ! </s><s>Messieurs, parlez l'un après l'autre, de grâce. </s></p></sp><sp xml:id="III04-14" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><note type="L">Saignée : opération de chirurgie, qu'on fait avec une lancette pour tirer le sang corrompu ou superflu qui est dans les veines. [F]</note><p><s>Monsieur, nous avons raisonné sur la maladie de votre fille, et mon avis, à moi, est que cela procède d'une grande chaleur de sang : ainsi je conclus à la saigner le plus tôt que vous pourrez. </s></p></sp><sp xml:id="III04-15" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><note type="L">Emetique : est une remède qui purge avec violence par haut et par bas, fait de la pourdre et du beurre d'antimoire préparé, dont on a séparé les sels corrosifs par plusieurs lotions. [F]</note><p><s>Et moi, je dis que sa maladie est une pourriture d'humeurs, causée par une trop grande réplétion : ainsi je conclus à lui donner de l'émétique. </s></p></sp><sp xml:id="III04-16" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Je soutiens que l'émétique la tuera. </s></p></sp><sp xml:id="III04-17" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Et moi, que la saignée la fera mourir. </s></p></sp><sp xml:id="III04-18" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>C'est bien à vous de faire l'habile homme. </s></p></sp><sp xml:id="III04-19" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Oui, c'est à moi ; et je vous prêterai le collet en tout genre d'érudition. </s></p></sp><sp xml:id="III04-20" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Souvenez-vous de l'homme que vous fîtes crever ces jours passés. </s></p></sp><sp xml:id="III04-21" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Souvenez-vous de la dame que vous avez envoyée en l'autre monde, il y a trois jours. </s></p></sp><sp xml:id="III04-22" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Je vous ai dit mon avis. </s></p></sp><sp xml:id="III04-23" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Je vous ai dit ma pensée. </s></p></sp><sp xml:id="III04-24" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Si vous ne faites saigner tout à l'heure votre fille, c'est une personne morte. </s></p></sp><sp xml:id="III04-25" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Si vous la faites saigner, elle ne sera pas en vie dans un quart d'heure.</s></p></sp></div2><div2 xml:id="III05" type="scene" n="5"><head>SCÈNE V. Sganarelle, Messieurs Macroton et Bahys, médecins. </head><sp xml:id="III05-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>À qui croire des deux ?  </s><s>Et quelle résolution prendre, sur des avis si opposés ?  </s><s>Messieurs, je vous conjure de déterminer mon esprit, et de me dire, sans passion, ce que vous croyez le plus propre à soulager ma fille. </s></p></sp><sp xml:id="III05-2" who="MONSIEURMACROTON"><speaker>MONSIEUR MACROTON.</speaker><stage type="[N/A]">Il parle en allongeant ses mots.</stage><p><s>Mon-si-eur dans ces ma-ti-è-res-là il faut pro-cé-der a-vec-que cir-con-spec-tion et ne ri-en fai-re com-me on dit à la vo-lé-e d'au-tant que les fau-tes qu'on y peut fai-re sont se-lon no-tre maî-tre Hip-po-cra-te d'u-ne dan-ge-reu-se con-sé-quen-ce. </s></p></sp><sp xml:id="III05-3" who="MONSIEURBAHYS"><speaker>MONSIEUR BAHYS.</speaker><p><s>Celui-ci parle toujours en bredouillant.</s><s>Il est vrai, il faut bien prendre garde à ce qu'on fait ; car ce ne sont pas ici des jeux d'enfant, et quand on a failli, il n'est pas aisé de réparer le manquement et de rétablir ce qu'on a gâté : experimentum periculosum. </s><s>C'est pourquoi il s'agit de raisonner auparavant comme il faut, de peser mûrement les choses, de regarder le tempérament des gens, d'examiner les causes de la maladie, et de voir les remèdes qu'on y doit apporter. </s></p></sp><sp xml:id="III05-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>L'un va en tortue, et l'autre court la poste. </s></p></sp><sp xml:id="III05-5" who="MONSIEURMACROTON"><speaker>MONSIEUR MACROTON.</speaker><stage type="[N/A]">Il détache chaque syllabe.</stage><p><s>Or, Monsieur pour venir au fait je trouve que votre fille a une maladie chronique et qu'elle peut péricliter si on ne lui donne du secours d'autant que les symptômes qu'elle a sont indicatifs d'une vapeur fuligineuse et mordicante qui lui picote les membranes du cerveau. Or cette vapeur que nous nommons en grec atmos est causée par des humeurs putrides tenaces et conglutineuses qui sont contenues dans le bas ventre. </s></p></sp><sp xml:id="III05-6" who="MONSIEURBAHYS"><speaker>MONSIEUR BAHYS.</speaker><p><s>Et comme ces humeurs ont été là engendrées par une longue succession de temps, elles s'y sont recuites et ont acquis cette malignité qui fume vers la région du cerveau. </s></p></sp><sp xml:id="III05-7" who="MONSIEURMACROTON"><speaker>MONSIEUR MACROTON.</speaker><p><s>Si bi-en donc que pour ti-rer dé-ta-cher ar-ra-cher ex-pul-ser é-va-cu-er les-di-tes hu-meurs il fau-dra u-ne pur-ga-tion vi-gou-reu-se Mais au pré-a-la-ble je trou-ve à pro-pos et il n'y a pas d'in-con-vé-nient d'u-ser de pe-tits re-mè-des a-no-dins c'est.à.dire de pe-tits la-ve-ments ré-mol-li-ents et dé-ter-sifs de ju-leps et de si-rops ra-fraî-chis-sants qu'on mé-le-ra dans sa pti-san-ne. </s></p></sp><sp xml:id="III05-8" who="MONSIEURBAHYS"><speaker>MONSIEUR BAHYS.</speaker><p><s>Après, nous en viendrons à la purgation, et à la saignée que nous réitérerons, s'il en est besoin. </s></p></sp><sp xml:id="III05-9" who="MONSIEURMACROTON"><speaker>MONSIEUR MACROTON.</speaker><p><s>Ce n'est pas qu'a-vec tout ce-la vo-tre fil-le ne puis-se mou-rir mais au moins vous au-rez fait quel-que cho-se et vous au-rez la con-so-la-tion qu'el-le se-ra mor-te dans les for-mes. </s></p></sp><sp xml:id="III05-10" who="MONSIEURBAHYS"><speaker>MONSIEUR BAHYS.</speaker><p><s>Il vaut mieux mourir selon les règles, que de réchapper contre les règles. </s></p></sp><sp xml:id="III05-11" who="MONSIEURMACROTON"><speaker>MONSIEUR MACROTON.</speaker><p><s>Nous vous di-sons sin-cè-re-ment no-tre pen-sée. </s></p></sp><sp xml:id="III05-12" who="MONSIEURBAHYS"><speaker>MONSIEUR BAHYS.</speaker><p><s>Et vous avons parlé comme nous parlerions à notre propre frère. </s></p></sp><sp xml:id="III05-13" who="SGANARELLE"><speaker>SGANARELLE, à Macroton.</speaker><p><s>Je vous rends très humbles grâces. </s></p><stage type="toward">À M. Bahys.</stage><p><s>Et vous suis infiniment obligé de la peine que vous avez prise. </s></p></sp></div2><div2 xml:id="III06" type="scene" n="6"><head>SCÈNE VI.</head><sp xml:id="III06-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><note type="L">Orviétan : antidote ou contre-poison qui s'est rendu fameux à Paris, parce qu'il a été distribué par un opérateur venu d'Orviette, dont il a fait des expériences extraordinaires en sa personne sur un théâtre public. Dans la pharmacopée de Charras, il y a une manière de faire de l'orviétan, où l'on voit que la thierarque est une des principales drogues qui y entrent. [F]</note><p><s>Me voilà justement un peu plus incertain que je n'étais auparavant. </s><s>Morbleu ! </s><s>Il me vient une fantaisie. </s><s>Il faut que j'aille acheter de l'orviétan, et que je lui en fasse prendre ; l'orviétan est un remède dont beaucoup de gens se sont bien trouvés. </s></p></sp></div2><div2 xml:id="III07" type="scene" n="7"><head>SCÈNE VII. L'Opérateur, Sganarelle.</head><sp xml:id="III07-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Holà ! </s><s>Monsieur, je vous prie de me donner une boîte de votre orviétan, que je m'en vais vous payer.</s></p></sp><sp xml:id="III07-2" who="LOPERATEUR"><speaker>L'Opérateur, chantant.</speaker><l n="15" xml:id="l15">L'or de tous les climats qu'entoure l'Océan</l><l n="16" xml:id="l16">Peut-il jamais payer ce secret d'importance ?</l><l n="17" xml:id="l17">Mon remède guérit, par sa rare excellence,</l><l n="18" xml:id="l18">Plus de maux qu'on n'en peut nombrer dans tout un an :</l><l n="19" xml:id="l19">La gale,</l><l n="20" xml:id="l20">La rogne,</l><l n="21" xml:id="l21">La tigne</l><l n="22" xml:id="l22">La fièvre,</l><l n="23" xml:id="l23">La peste,</l><l n="24" xml:id="l24">La goutte,</l><l n="25" xml:id="l25">Vérole,</l><l n="26" xml:id="l26">Descente,</l><l n="27" xml:id="l27">Rougeole.</l><l n="28" xml:id="l28">Ô grande puissance de l'orviétan ! </l></sp><sp xml:id="III07-3" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Monsieur, je crois que tout l'or du monde n'est pas capable de payer votre remède ; mais pourtant voici une pièce de trente sols que vous prendrez, s'il vous plaît.</s></p></sp><sp xml:id="III07-4" who="LOPERATEUR"><speaker>L'Opérateur, chantant.</speaker><l n="29" xml:id="l29">Admirez mes bontés, et le peu qu'on vous vend</l><l n="30" xml:id="l30">Ce trésor merveilleux que ma main vous dispense.</l><l n="31" xml:id="l31">Vous pouvez avec lui braver en assurance</l><l n="32" xml:id="l32">Tous les maux que sur nous l'ire du Ciel répand :</l><l n="33" xml:id="l33">La gale,</l><l n="34" xml:id="l34">La rogne,</l><l n="35" xml:id="l35">La tigne,</l><l n="36" xml:id="l36">La fièvre,</l><l n="37" xml:id="l37">La peste,</l><l n="38" xml:id="l38">La goutte,</l><l n="39" xml:id="l39">Vérole.</l><l n="40" xml:id="l40">Descente,</l><l n="41" xml:id="l41">Rougeole.</l><l n="42" xml:id="l42">Ô grande puissance de l'orviétan !</l><stage type="[N/A]">Deuxième Entr'acte.</stage><stage type="[N/A]">Plusieurs Trivelins et Scaramouches, valets de l'opérateur, se réjouissent en dansant.</stage></sp></div2></div1><div1 xml:id="IV" type="act" n="4"><head>ACTE III</head><div2 xml:id="IV01" type="scene" n="1"><head>SCÈNE I. Messieurs Filerin, Tomès et des Fonandrès.</head><sp xml:id="IV01-1" who="MONSIEURFILERIN"><speaker>MONSIEUR FILERIN.</speaker><note type="L">Galimatias : discours obscur, et embrouillé, où on ne comprend rien, où les paroles sont mises confusément, et sans ordre ; et où il n'y a rien de naturel. [F]</note><p><s>N'avez-vous point de honte, Messieurs, de montrer si peu de prudence, pour des gens de votre âge, et de vous être querellés comme de jeunes étourdis ?  </s><s>Ne voyez-vous pas bien quel tort ces sortes de querelles nous font parmi le monde ?  </s><s>Et n'est-ce pas assez que les savants voient les contrariétés et les dissensions qui sont entre nos auteurs et nos anciens maîtres, sans découvrir encore au peuple, par nos débats et nos querelles, la forfanterie de notre art ?  </s><s>Pour moi, je ne comprends rien du tout à cette méchante politique de quelques-uns de nos gens ; et il faut confesser que toutes ces contestations nous ont décriés, depuis peu, d'une étrange manière, et que, si nous n'y prenons garde, nous allons nous ruiner nous-mêmes. </s><s>Je n'en parle pas pour mon intérêt ; car, Dieu merci, j'ai déjà établi mes petites affaires. </s><s>Qu'il vente, qu'il pleuve, qu'il grêle, ceux qui sont morts sont morts, et j'ai de quoi me passer des vivants ; mais enfin toutes ces disputes ne valent rien pour la médecine. </s><s>Puisque le Ciel nous fait la grâce que, depuis tant de siècles, on demeure infatué de nous, ne désabusons point les hommes avec nos cabales extravagantes, et profitons de leur sottise le plus doucement que nous pourrons. </s><s>Nous ne sommes pas les seuls, comme vous savez, qui tâchons à nous prévaloir de la foiblesse humaine. </s><s>C'est là que va l'étude de la plupart du monde, et chacun s'efforce de prendre les hommes par leur foible, pour en tirer quelque profit. </s><s>Les flatteurs, par exemple, cherchent à profiter de l'amour que les hommes ont pour les louanges, en leur donnant tout le vain encens qu'ils souhaitent ; et c'est un art où l'on fait, comme on voit, des fortunes considérables. </s><s>Les alchimistes tâchent à profiter de la passion qu'on a pour les richesses, en promettant des montagnes d'or à ceux qui les écoutent ; et les diseurs d'horoscope, par leurs prédictions trompeuses, profitent de la vanité et de l'ambition des crédules esprits. </s><s>Mais le plus grand faible des hommes, c'est l'amour qu'ils ont pour la vie ; et nous en profitons, nous autres, par notre pompeux galimatias, et savons prendre nos avantages de cette vénération que la peur de mourir leur donne pour notre métier. </s><s>Conservons-nous donc dans le degré d'estime où leur foiblesse nous a mis, et soyons de concert auprès des malades pour nous attribuer les heureux succès de la maladie, et rejeter sur la nature toutes les bévues de notre art. </s><s>N'allons point, dis-je, détruire sottement les heureuses préventions d'une erreur qui donne du pain à tant de personnes. </s></p></sp><sp xml:id="IV01-2" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Vous avez raison en tout ce que vous dites ; mais ce sont chaleurs de sang, dont parfois on n'est pas le maître. </s></p></sp><sp xml:id="IV01-3" who="MONSIEURFILERIN"><speaker>MONSIEUR FILERIN.</speaker><p><s>Allons donc, Messieurs, mettez bas toute rancune, et faisons ici votre accommodement. </s></p></sp><sp xml:id="IV01-4" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>J'y consens. </s><s>Qu'il me passe mon émétique pour la malade dont il s'agit, et je lui passerai tout ce qu'il voudra pour le premier malade dont il sera question. </s></p></sp><sp xml:id="IV01-5" who="MONSIEURFILERIN"><speaker>MONSIEUR FILERIN.</speaker><p><s>On ne peut pas mieux dire, et voilà se mettre à la raison. </s></p></sp><sp xml:id="IV01-6" who="MONSIEURDESFONANDRES"><speaker>MONSIEUR DES FONANDRÈS.</speaker><p><s>Cela est fait. </s></p></sp><sp xml:id="IV01-7" who="MONSIEURFILERIN"><speaker>MONSIEUR FILERIN.</speaker><p><s>Touchez donc là. </s><s>Adieu. </s><s>Une autre fois, montrez plus de prudence. </s></p></sp></div2><div2 xml:id="IV02" type="scene" n="2"><head>SCÈNE II. Messieurs Tomès, des Fonandrès, Lisette.</head><sp xml:id="IV02-1" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Quoi ?  </s><s>Messieurs, vous voilà, et vous ne songez pas à réparer le tort qu'on vient de faire à la médecine ? </s></p></sp><sp xml:id="IV02-2" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Comment ?  </s><s>Qu'est-ce ? </s></p></sp><sp xml:id="IV02-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Un insolent qui a eu l'effronterie d'entreprendre sur votre métier, et qui, sans votre ordonnance, vient de tuer un homme d'un grand coup d'épée au travers du corps. </s></p></sp><sp xml:id="IV02-4" who="MONSIEURTOMES"><speaker>MONSIEUR TOMÈS.</speaker><p><s>Écoutez, vous faites la railleuse ; mais vous passerez par nos mains quelque jour. </s></p></sp><sp xml:id="IV02-5" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Je vous permets de me tuer, lorsque j'aurai recours à vous. </s></p></sp></div2><div2 xml:id="IV03" type="scene" n="3"><head>SCÈNE III. Lisette, Clitandre.</head><sp xml:id="IV03-1" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Hé bien ! </s><s>Lisette, me trouves-tu bien ainsi ? </s></p></sp><sp xml:id="IV03-2" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Le mieux du monde ; et je vous attendois avec impatience. </s><s>Enfin le Ciel m'a faite d'un naturel le plus humain du monde, et je ne puis voir deux amants soupirer l'un pour l'autre, qu'il ne me prenne une tendresse charitable, et un désir ardent de soulager les maux qu'ils souffrent. </s><s>Je veux, à quelque prix que ce soit, tirer Lucinde de la tyrannie où elle est, et la mettre en votre pouvoir. </s><s>Vous m'avez plu d'abord ; je me connais en gens, et elle ne peut pas mieux choisir. </s><s>L'amour risque des choses extraordinaires ; et nous avons concerté ensemble une manière de stratagème, qui pourra peut-être nous réussir. </s><s>Toutes nos mesures sont déjà prises : l'homme à qui nous avons affaire n'est pas des plus fins de ce monde ; et si cette aventure nous manque, nous trouverons mille autres voies pour arriver à notre but. </s><s>Attendez-moi là seulement, je reviens vous quérir. </s></p></sp></div2><div2 xml:id="IV04" type="scene" n="4"><head>SCÈNE IV. Sganarelle, Lisette.</head><sp xml:id="IV04-1" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Monsieur, allégresse ! </s><s>Allégresse ! </s></p></sp><sp xml:id="IV04-2" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Qu'est-ce ? </s></p></sp><sp xml:id="IV04-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Réjouissez-vous. </s></p></sp><sp xml:id="IV04-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>De quoi ? </s></p></sp><sp xml:id="IV04-5" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Réjouissez-vous, vous dis-je. </s></p></sp><sp xml:id="IV04-6" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Dis-moi donc ce que c'est, et puis je me réjouirai peut-être. </s></p></sp><sp xml:id="IV04-7" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Non : je veux que vous vous réjouissiez auparavant, que vous chantiez, que vous dansiez. </s></p></sp><sp xml:id="IV04-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Sur quoi ? </s></p></sp><sp xml:id="IV04-9" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Sur ma parole. </s></p></sp><sp xml:id="IV04-10" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Allons donc, la lera la la, la lera la. </s><s>Que diable ! </s></p></sp><sp xml:id="IV04-11" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Monsieur, votre fille est guérie. </s></p></sp><sp xml:id="IV04-12" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Ma fille est guérie ! </s></p></sp><sp xml:id="IV04-13" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Oui, je vous amène un médecin, mais un médecin d'importance, qui fait des cures merveilleuses, et qui se moque des autres médecins... </s></p></sp><sp xml:id="IV04-14" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Où est-il ? </s></p></sp><sp xml:id="IV04-15" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Je vais le faire entrer. </s></p></sp><sp xml:id="IV04-16" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Il faut voir si celui-ci fera plus que les autres. </s></p></sp></div2><div2 xml:id="IV05" type="scene" n="5"><head>SCÈNE V. Clitandre, en habit de médecin, Sganarelle, Lisette.</head><sp xml:id="IV05-1" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Le voici. </s></p></sp><sp xml:id="IV05-2" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voilà un médecin qui a la barbe bien jeune. </s></p></sp><sp xml:id="IV05-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>La science ne se mesure pas à la barbe, et ce n'est pas par le menton qu'il est habile. </s></p></sp><sp xml:id="IV05-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><note type="L">Selle : se dit aussi d'un bassin de chambre, où on se décharge le ventre. Il est constipé, il ne peut aller à la selle. [F]</note><p><s>Monsieur, on m'a dit que vous aviez des remèdes admirables pour faire aller à la selle. </s></p></sp><sp xml:id="IV05-5" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Monsieur, mes remèdes sont différents de ceux des autres : ils ont l'émétique, les saignées, les médecines et les lavements ; mais moi, je guéris par des paroles, par des sons, par des lettres, par des talismans et par des anneaux constellés. </s></p></sp><sp xml:id="IV05-6" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Que vous ai-je dit ? </s></p></sp><sp xml:id="IV05-7" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voilà un grand homme. </s></p></sp><sp xml:id="IV05-8" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Monsieur, comme votre fille est là toute habillée dans une chaise, je vais la faire passer ici. </s></p></sp><sp xml:id="IV05-9" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui, fais. </s></p></sp><sp xml:id="IV05-10" who="CLITANDRE"><speaker>CLITANDRE, tâtant le pouls à Sganarelle.</speaker><p><s>Votre fille est bien malade. </s></p></sp><sp xml:id="IV05-11" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Vous connaissez cela ici ? </s></p></sp><sp xml:id="IV05-12" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Oui, par la sympathie qu'il y a entre le père et la fille. </s></p></sp></div2><div2 xml:id="IV06" type="scene" n="6"><head>SCÈNE VI. Lucinde, Lisette, Sganarelle, Clitandre. </head><sp xml:id="IV06-1" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Tenez, Monsieur, voilà une chaise auprès d'elle. </s><s>Allons laissez-les là tous deux. </s></p></sp><sp xml:id="IV06-2" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Pourquoi ?  </s><s>Je veux demeurer là. </s></p></sp><sp xml:id="IV06-3" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Vous moquez-vous ?  </s><s>Il faut s'éloigner : un médecin a cent choses à demander qu'il n'est pas honnête qu'un homme entende. </s></p></sp><sp xml:id="IV06-4" who="CLITANDRE"><speaker>CLITANDRE, parlant à Lucinde à part.</speaker><p><s>Ah ! </s><s>Madame, que le ravissement où je me trouve est grand ! </s><s>Et que je sais peu par où vous commencer mon discours ! </s><s>Tant que je ne vous ai parlé que des yeux, j'avais, ce me semblait, cent choses à vous dire ; et maintenant que j'ai la liberté de vous parler de la façon que je souhaitais je demeure interdit ; et la grande joie où je suis étouffe toutes mes paroles. </s></p></sp><sp xml:id="IV06-5" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Je puis vous dire la même chose, et je sens, comme vous, des mouvements de joie qui m'empêchent de pouvoir parler. </s></p></sp><sp xml:id="IV06-6" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Ah ! </s><s>Madame, que je serais heureux s'il était vrai que vous sentissiez tout ce que je sens, et qu'il me fût permis de juger de votre âme par la mienne ! </s><s>Mais, Madame, puis-je au moins croire que ce soit à vous à qui je doive la pensée de cet heureux stratagème qui me fait jouir de votre présence ? </s></p></sp><sp xml:id="IV06-7" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Si vous ne m'en devez pas la pensée, vous m'êtes redevable au moins d'en avoir approuvé la proposition avec beaucoup de joie. </s></p></sp><sp xml:id="IV06-8" who="SGANARELLE"><speaker>SGANARELLE, à Lisette.</speaker><p><s>Il me semble qu'il lui parle de bien près. </s></p></sp><sp xml:id="IV06-9" who="LISETTE"><speaker>LISETTE, à Sganarelle.</speaker><p><s>C'est qu'il observe sa physionomie et tous les traits de son visage. </s></p></sp><sp xml:id="IV06-10" who="CLITANDRE"><speaker>CLITANDRE, à Lucinde.</speaker><p><s>Serez-vous constante, Madame, dans ces bontés que vous me témoignez ? </s></p></sp><sp xml:id="IV06-11" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Mais vous, serez-vous ferme dans les résolutions que vous avez montrées ? </s></p></sp><sp xml:id="IV06-12" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Ah ! </s><s>Madame, jusqu'à la mort. </s><s>Je n'ai point de plus forte envie que d'être à vous, et je vais le faire paraître dans ce que vous m'allez voir faire. </s></p></sp><sp xml:id="IV06-13" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Hé bien ! </s><s>Notre malade, elle me semble un peu plus gaie. </s></p></sp><sp xml:id="IV06-14" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>C'est que j'ai déjà fait agir sur elle un de ces remèdes que mon art m'enseigne. </s><s>Comme l'esprit a grand empire sur le corps, et que c'est de lui bien souvent que procèdent les maladies, ma coutume est de courir à guérir les esprits, avant que de venir au corps. </s><s>J'ai donc observé ses regards, les traits de son visage, et les lignes de ses deux mains ; et par la science que le Ciel m'a donnée, j'ai reconnu que c'était de l'esprit qu'elle était malade, et que tout son mal ne venait que d'une imagination déréglée, d'un désir dépravé de vouloir être mariée. </s><s>Pour moi, je ne vois rien de plus extravagant et de plus ridicule que cette envie qu'on a du mariage. </s></p></sp><sp xml:id="IV06-15" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voilà un habile homme ! </s></p></sp><sp xml:id="IV06-16" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Et j'ai eu, et aurai pour lui, toute ma vie, une aversion effroyable. </s></p></sp><sp xml:id="IV06-17" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voilà un grand médecin ! </s></p></sp><sp xml:id="IV06-18" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Mais, comme il faut flatter l'imagination des malades, et que j'ai vu en elle de l'aliénation d'esprit, et même qu'il y avait du péril à ne lui pas donner un prompt secours, je l'ai prise par son faible, et lui ai dit que j'étais venu ici pour vous la demander en mariage. </s><s>Soudain son visage a changé, son teint s'est éclairci, ses yeux se sont animés ; et si vous voulez, pour quelques jours, l'entretenir dans cette erreur, vous verrez que nous la tirerons d'où elle est. </s></p></sp><sp xml:id="IV06-19" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui-da, je le veux bien. </s></p></sp><sp xml:id="IV06-20" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Après nous ferons agir d'autres remèdes pour la guérir entièrement de cette fantaisie. </s></p></sp><sp xml:id="IV06-21" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui, cela est le mieux du monde. </s><s>Hé bien ! </s><s>Ma fille, voilà Monsieur qui a envie de t'épouser, et je lui ai dit que je le voulais bien. </s></p></sp><sp xml:id="IV06-22" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Hélas ! </s><s>Est-il possible ? </s></p></sp><sp xml:id="IV06-23" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui. </s></p></sp><sp xml:id="IV06-24" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Mais tout de bon ? </s></p></sp><sp xml:id="IV06-25" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui, oui. </s></p></sp><sp xml:id="IV06-26" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Quoi ?  </s><s>Vous êtes dans les sentiments d'être mon mari ? </s></p></sp><sp xml:id="IV06-27" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Oui, Madame. </s></p></sp><sp xml:id="IV06-28" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Et mon père y consent ? </s></p></sp><sp xml:id="IV06-29" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui, ma fille. </s></p></sp><sp xml:id="IV06-30" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Ah ! </s><s>Que je suis heureuse, si cela est véritable ! </s></p></sp><sp xml:id="IV06-31" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>N'en doutez point, Madame. </s><s>Ce n'est pas d'aujourd'hui que je vous aime, et que je brûle de me voir votre mari. </s><s>Je ne suis venu ici que pour cela ; et si vous voulez que je vous dise nettement les choses comme elles sont, cet habit n'est qu'un pur prétexte inventé, et je n'ai fait le médecin que pour m'approcher de vous et obtenir ce que je souhaite. </s></p></sp><sp xml:id="IV06-32" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>C'est me donner des marques d'un amour bien tendre, et j'y suis sensible autant que je puis. </s></p></sp><sp xml:id="IV06-33" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oh ! </s><s>La folle ! </s><s>Oh ! </s><s>La folle ! </s><s>Oh ! </s><s>La folle ! </s></p></sp><sp xml:id="IV06-34" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Vous voulez donc bien, mon père, me donner Monsieur pour époux ? </s></p></sp><sp xml:id="IV06-35" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui. </s><s>Çà, donne-moi ta main. </s><s>Donnez-moi un peu aussi la vôtre, pour voir. </s></p></sp><sp xml:id="IV06-36" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Mais, Monsieur... </s></p></sp><sp xml:id="IV06-37" who="SGANARELLE"><speaker>SGANARELLE, s'étouffant de rire.</speaker><p><s>Non, non : c'est pour... </s><s>Pour lui contenter l'esprit. </s><s>Touchez là. </s><s>Voilà qui est fait. </s></p></sp><sp xml:id="IV06-38" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Acceptez, pour gage de ma foi, cet anneau que je vous donne. </s><s>C'est un anneau constellé, qui guérit les égarements d'esprit. </s></p></sp><sp xml:id="IV06-39" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Faisons donc le contrat, afin que rien n'y manque. </s></p></sp><sp xml:id="IV06-40" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Hélas ! </s><s>Je le veux bien, Madame. </s></p><stage type="toward">À Sganarelle.</stage><p><s>Je vais faire monter l'homme qui écrit mes remèdes, et lui faire croire que c'est un notaire. </s></p></sp><sp xml:id="IV06-41" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Fort bien. </s></p></sp><sp xml:id="IV06-42" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Holà ! </s><s>Faites monter le notaire que j'ai amené avec moi. </s></p></sp><sp xml:id="IV06-43" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Quoi ?  </s><s>vous aviez amené un notaire ? </s></p></sp><sp xml:id="IV06-44" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Oui, Madame. </s></p></sp><sp xml:id="IV06-45" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>J'en suis ravie. </s></p></sp><sp xml:id="IV06-46" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oh ! </s><s>La folle ! </s><s>Oh ! </s><s>La folle ! </s></p></sp></div2><div2 xml:id="IV07" type="scene" n="7"><head>SCÈNE VII. Le Notaire, Clitandre, Sganarelle, Lucinde, Lisette
-Clitandre parle au Notaire à l'oreille.</head><sp xml:id="IV07-1" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Oui, Monsieur, il faut faire un contrat pour ces deux personnes-là. </s><s>Écrivez. </s></p><stage type="[N/A]">Le Notaire écrit.</stage><p><s>Voilà le contrat qu'on fait : je lui donne vingt mille écus en mariage. </s><s>Écrivez. </s></p></sp><sp xml:id="IV07-2" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Je vous suis bien obligée, mon père.</s></p></sp><sp xml:id="IV07-3" who="LENOTAIRE"><speaker>LA NOTAIRE.</speaker><p><s>Voilà qui est fait : vous n'avez qu'à venir signer. </s></p></sp><sp xml:id="IV07-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voilà un contrat bientôt bâti. </s></p></sp><sp xml:id="IV07-5" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Au moins... </s></p></sp><sp xml:id="IV07-6" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Hé ! </s><s>Non, vous dis-je. </s><s>Sait-on pas bien ?  </s><s>Allons, donnez-lui la plume pour signer. </s><s>Allons, signé, signé, signé. </s><s>Va, va, je signerai tantôt, moi. </s></p></sp><sp xml:id="IV07-7" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Non, non : je veux avoir le contrat entre mes mains. </s></p></sp><sp xml:id="IV07-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Hé bien ! </s><s>Tiens. </s><s>Es-tu contente ? </s></p></sp><sp xml:id="IV07-9" who="LUCINDE"><speaker>LUCINDE.</speaker><p><s>Plus qu'on ne peut s'imaginer. </s></p></sp><sp xml:id="IV07-10" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voilà qui est bien, voilà qui est bien. </s></p></sp><sp xml:id="IV07-11" who="CLITANDRE"><speaker>CLITANDRE.</speaker><p><s>Au reste, je n'ai pas eu seulement la précaution d'amener un notaire ; j'ai eu celle encore de faire venir des voix et des instruments pour célébrer la fête et pour nous réjouir. </s><s>Qu'on les fasse venir. </s><s>Ce sont des gens que je mène avec moi, et dont je me sers tous les jours pour pacifier avec leur harmonie les troubles de l'esprit. </s></p></sp></div2><div2 xml:id="IV08" tpe="scene" n="8"><head>SCÈNE DERNIÈRE. La Comédie, le Ballet et la Musique.</head><sp xml:id="IV08-1" who="COMEDIE_MUSIQUE_BALLET"><head>TOUS TROIS ENSEMBLE.</head><l n="43" xml:id="l43">Sans nous tous les hommes</l><l n="44" xml:id="l44">Deviendraient mal sains,</l><l n="45" xml:id="l45">Et c'est nous qui sommes</l><l n="46" xml:id="l46">Leurs grands médecins.</l></sp><sp xml:id="IV08-2" who="LACOMEDIE"><speaker>LA COMÉDIE.</speaker><l n="47" xml:id="l47">Veut-on qu'on rabatte,</l><l n="48" xml:id="l48">Par des moyens doux,</l><l n="49" xml:id="l49">Les vapeurs de rate</l><l n="50" xml:id="l50">Qui vous minent tous ?</l><l n="51" xml:id="l51">Qu'on laisse Hippocrate,</l><l n="52" xml:id="l52">Et qu'on vienne à nous.</l></sp><sp xml:id="IV08-3" who="COMEDIE_MUSIQUE_BALLET"><speaker>Tous trois ensemble.</speaker><l n="53" xml:id="l53">Sans nous...</l><stage type="[N/A]">Durant qu'ils chantent, et que les Jeux, les Ris et les Plaisirs dansent, Clitandre emmène Lucinde.</stage></sp><sp xml:id="IV08-4" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Voilà une plaisante façon de guérir. </s><s>Où est donc ma fille et le Médecin ? </s></p></sp><sp xml:id="IV08-5" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ils sont allés achever le reste du mariage. </s></p></sp><sp xml:id="IV08-6" who="SGANARELLE"><speaker>SGANARELLE.</speaker><p><s>Comment, le mariage ? </s></p></sp><sp xml:id="IV08-7" who="LISETTE"><speaker>LISETTE.</speaker><p><s>Ma foi ! </s><s>Monsieur, la bécasse est bridée, et vous avez cru faire un jeu, qui demeure une vérité. </s></p></sp><sp xml:id="IV08-8" who="SGANARELLE"><speaker>SGANARELLE.</speaker><stage type="[N/A]">Les danseurs le retiennent et veulent le faire danser de force.</stage><p><s>Comment, diable ! </s><s>Laissez-moi aller, laissez-moi aller, vous dis-je. </s><s>Encore ?  </s><s>Peste des gens ! </s></p></sp></div2></div1></body>
+    <body>
+      <div1 n="1" type="prologue" xml:id="I">
+      <head>PROLOGUE</head>
+      <div2 n="1" type="scene" xml:id="I01">
+        <head> La Comédie, la Musique et le Ballet.</head>
+        <sp who="LACOMEDIE" xml:id="I01-1">
+          <speaker>LA COMÉDIE.</speaker>
+          <l n="2" xml:id="l2">Quittons, quittons notre vaine querelle,</l>
+          <l n="3" xml:id="l3">Ne nous disputons point nos talents tour à tour,</l>
+          <l n="4" xml:id="l4">Et d'une gloire plus belle</l>
+          <l n="5" xml:id="l5">Piquons-nous en ce jour :</l>
+          <l n="6" xml:id="l6">Unissons-nous tous trois d'une ardeur sans seconde,</l>
+          <l n="7" xml:id="l7">Pour donner du plaisir au plus grand roi du monde.</l>
+        </sp>
+        <sp who="COMEDIE_MUSIQUE_BALLET" xml:id="I01-2">
+          <speaker>Tous Trois</speaker>
+          <l n="8" xml:id="l8">Unissons-nous...</l>
+        </sp>
+        <sp who="LACOMEDIE" xml:id="I01-3">
+          <speaker>LA COMÉDIE.</speaker>
+          <l n="9" xml:id="l9">De ses travaux, plus grands qu'on ne peut croire,</l>
+          <l n="10" xml:id="l10">Il se vient quelquefois délasser parmi nous :</l>
+          <l n="11" xml:id="l11">Est-il de plus grande gloire,</l>
+          <l n="12" xml:id="l12">Est-il bonheur plus doux ?</l>
+          <l n="13" xml:id="l13">Unissons-nous tous trois...</l>
+        </sp>
+        <sp who="COMEDIE_MUSIQUE_BALLET" xml:id="I01-4">
+          <speaker>Tous Trois</speaker>
+          <l n="14" xml:id="l14">Unissons-nous...</l>
+        </sp>
+      </div2>
+      </div1>
+      <div1 n="1" type="act" xml:id="II">
+      <head>ACTE I</head>
+      <div2 n="1" type="scene" xml:id="II01">
+        <head>SCÈNE I. Sganarelle, Aminte, Lucrèce, M.Guillaume, M. Josse.</head>
+        <sp who="SGANARELLE" xml:id="II01-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ah !</s><s>l'étrange chose que la vie !</s><s>Et que je puis bien dire, avec ce grand philosophe de l'antiquité, que qui terre a, guerre a, et qu'un malheur ne vient jamais sans l'autre ! </s><s>Je n'avais qu'une seule femme, qui est morte. </s></p>
+        </sp>
+        <sp who="MONSIEURGUILLAUME" xml:id="II01-2">
+          <speaker>MONSIEUR GUILLAUME.</speaker>
+          <p><s>Et combien donc en voulez-vous avoir ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II01-3">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Elle est morte, Monsieur mon ami. </s><s>Cette perte m'est très sensible, et je ne puis m'en ressouvenir sans pleurer. </s><s>Je n'étais pas fort satisfait de sa conduite, et nous avions le plus souvent dispute ensemble ; mais enfin la mort rajuste toutes choses. </s><s>Elle est morte : je la pleure. </s><s>Si elle était en vie, nous nous querellerions. </s><s>De tous les enfants que le Ciel m'avait donnés, il ne m'a laissé qu'une fille, et cette fille est toute ma peine. </s><s>Car enfin je la vois dans une mélancolie la plus sombre du monde, dans une tristesse épouvantable, dont il n'y a pas moyen de la retirer, et dont je ne saurais même apprendre la cause. </s><s>Pour moi, j'en perds l'esprit, et j'aurais besoin d'un bon conseil sur cette matière. </s><s>Vous êtes ma nièce ; vous, ma voisine ; et vous, mes compères et mes amis : je vous prie de me conseiller tous ce que je dois faire. </s></p>
+        </sp>
+        <sp who="MONSIEURJOSSE" xml:id="II01-4">
+          <speaker>MONSIEUR JOSSE.</speaker>
+          <p><s>Pour moi, je tiens que la braverie et l'ajustement est la chose qui réjouit le plus les filles ; et si j'étais que de vous, je lui achèterais, dès aujourd'hui, une belle garniture de diamants, ou de rubis, ou d'émeraudes. </s></p>
+        </sp>
+        <sp who="MONSIEURGUILLAUME" xml:id="II01-5">
+          <speaker>MONSIEUR GUILLAUME.</speaker>
+          <p><s>Et moi, si j'étais en votre place, j'achèterais une belle tenture de tapisserie de verdure, ou à personnages, que je ferais mettre à sa chambre, pour lui réjouit l'esprit et la vue. </s></p>
+        </sp>
+        <sp who="AMINTE" xml:id="II01-6">
+          <speaker>AMINTE.</speaker>
+          <p><s>Pour moi, je ne ferais point tant de façon ; et je la marierais fort bien, et le plus tôt que je pourrais, avec cette personne qui vous la fit, dit-on, demander il y a quelque temps. </s></p>
+        </sp>
+        <sp who="LUCRECE" xml:id="II01-7">
+          <speaker>LUCRÈCE.</speaker>
+          <p><s>Et moi, je tiens que votre fille n'est point du tout propre pour le mariage. </s><s>Elle est d'une complexion trop délicate et trop peu saine, et c'est la vouloir envoyer bientôt en l'autre monde, que de l'exposer, comme elle est, à faire des enfants. </s><s>Le monde n'est point du tout son fait, et je vous conseille de la mettre dans un convent, où elle trouvera des divertissements qui seront mieux de son humeur. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II01-8">
+          <speaker>SGANARELLE.</speaker>
+          <note type="L">Inclination : Se dit aussi de l'amour, du penchant, de l'attachement qu'on a pour quelqu'un. [F]</note>
+          <p><s>Tous ces conseils sont admirables assurément ; mais je les tiens un peu intéressés, et trouve que vous me conseillez fort bien pour vous. </s><s>Vous êtes orfèvre, Monsieur Josse, et votre conseil sent son homme qui a envie de se défaire de sa marchandise. </s><s>Vous vendez des tapisseries, Monsieur Guillaume, et vous avez la mine d'avoir quelque tenture qui vous incommode. </s><s>Celui que vous aimez, ma voisine, a, dit-on, quelque inclination pour ma fille, et vous ne seriez pas fâchée de la voir la femme d'un autre. </s><s>Et quant à vous, ma chère nièce, ce n'est pas mon dessein, comme on sait, de marier ma fille avec qui que ce soit, et j'ai mes raisons pour cela ; mais le conseil que vous me donnez de la faire religieuse est d'une femme qui pourrait bien souhaiter charitablement d'être mon héritière universelle. </s><s>Ainsi, Messieurs et Mesdames, quoique tous vos conseils soient les meilleurs du monde, vous trouverez bon, s'il vous plaît, que je n'en suive aucun. </s><s>Voilà de mes donneurs de conseils à la mode.</s></p>
+        </sp>
+      </div2>
+      <div2 n="2" type="scene" xml:id="II02">
+        <head>SCÈNE II. Lucinde, Sganarelle.</head>
+        <sp who="SGANARELLE" xml:id="II02-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ah ! </s><s>Voilà ma fille qui prend l'air. </s><s>Elle ne me voit pas ; elle soupire ; elle lève les yeux au ciel. </s><s>Dieu vous garde ! </s><s>Bonjour, ma mie. </s><s>Hé bien ! </s><s>Qu'est-ce ? </s><s>Comme vous en va ? </s><s>Hé ! </s><s>Quoi ? </s><s>toujours triste et mélancolique comme cela, et tu ne veux pas me dire ce que tu as. </s><s>Allons donc, découvre-moi ton petit coeur. </s><s>Là, ma pauvre mie, dis ; dis ; dis tes petites pensées à ton petit papa mignon. </s><s>Courage ! </s><s>Veux-tu que je te baise ? </s><s>Viens.</s><s>J'enrage de la voir de cette humeur-là. </s><s>Mais, dis-moi, me veux-tu faire mourir de déplaisir, et ne puis-je savoir d'où vient cette grande langueur ? </s><s>Découvre-m'en la cause, et je te promets que je ferai toutes choses pour toi. </s><s>Oui, tu n'as qu'à me dire le sujet de ta tristesse ; je t'assure ici, et te fais serment qu'il n'y a rien que je ne fasse pour te satisfaire : c'est tout dire. </s><s>Est-ce que tu es jalouse de quelqu'une de tes compagnes que tu voies plus brave que toi ? </s><s>Et serait-il quelque étoffe nouvelle dont tu voulusses avoir un habit ? </s><s>Non. </s><s>Est-ce que ta chambre ne te semble pas assez parée, et que tu souhaiterais quelque cabinet de la foire Saint-Laurent ? </s><s>Ce n'est pas cela. </s><s>Aurais-tu envie d'apprendre quelque chose ? </s><s>Et veux-tu que je te donne un maître pour te montrer à jouer du clavecin ? </s><s>Nenni. </s><s>Aimerais-tu quelqu'un, et souhaiterais-tu d'être mariée ?</s></p>
+          <stage type="[N/A]">Lucinde lui fait signe que c'est cela.</stage>
+        </sp>
+      </div2>
+      <div2 n="3" type="scene" xml:id="II03">
+        <head>SCÈNE III. Lisette, Sganarelle, Lucinde.</head>
+        <sp who="LISETTE" xml:id="II03-1">
+          <speaker>LISETTE.</speaker>
+          <p><s>Hé bien ! </s><s>Monsieur, vous venez d'entretenir votre fille. </s><s>Avez-vous su la cause de sa mélancolie ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-2">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Non. </s><s>C'est une coquine, qui me fait enrager. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>Monsieur, laissez-moi faire, je m'en vais la sonder un peu. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-4">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Il n'est pas nécessaire ; et puisqu'elle veut être de cette humeur, je suis d'avis qu'on l'y laisse. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-5">
+          <speaker>LISETTE.</speaker>
+          <p><s>Laissez-moi faire, vous dis-je. </s><s>Peut-être qu'elle se découvrira plus librement à moi qu'à vous. </s><s>Quoi ? </s><s>Madame, vous ne nous direz point ce que vous avez, et vous voulez affliger ainsi tout le monde ? </s><s>Il me semble qu'on n'agit point comme vous faites, et que, si vous avez quelque répugnance à vous expliquer à un père, vous n'en devez avoir aucune à me découvrir votre coeur. </s><s>Dites-moi, souhaitez-vous quelque chose de lui ? </s><s>Il nous a dit plus d'une fois qu'il n'épargnerait rien pour vous contenter. </s><s>Est-ce qu'il ne vous donne pas toute la liberté que vous souhaiteriez, et les promenades et les cadeaux ne tenteraient-ils point votre âme ? </s><s>Heu. </s><s>Avez-vous reçu quelque déplaisir de quelqu'un ? </s><s>Heu. </s><s>N'auriez-vous point quelque secrète inclination, avec qui vous souhaiteriez que votre père vous mariât ? </s><s>Ah ! </s><s>Je vous entends. </s><s>Voilà l'affaire. </s><s>Que diable ? </s><s>Pourquoi tant de façons ? </s><s>Monsieur, le mystère est découvert ; et...</s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-6">
+          <speaker>SGANARELLE, l'interrompant.</speaker>
+          <p><s>Va, fille ingrate, je ne te veux plus parler, et je te laisse dans ton obstination. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II03-7">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Mon père, puisque vous voulez que je vous dise la chose... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-8">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui, je perds toute l'amitié que j'avais pour toi. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-9">
+          <speaker>LISETTE.</speaker>
+          <p><s>Monsieur, sa tristesse... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-10">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>C'est une coquine qui me veut faire mourir. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II03-11">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Mon père, je veux bien... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-12">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ce n'est pas la récompense de t'avoir élevée comme j'ai fait. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-13">
+          <speaker>LISETTE.</speaker>
+          <p><s>Mais, monsieur...</s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-14">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Non, je suis contre elle dans une colère épouvantable. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II03-15">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Mais, mon père... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-16">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Je n'ai plus aucune tendresse pour toi. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-17">
+          <speaker>LISETTE.</speaker>
+          <p><s>Mais... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-18">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>C'est une friponne. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II03-19">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Mais... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-20">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Une ingrate. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-21">
+          <speaker>LISETTE.</speaker>
+          <p><s>Mais... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-22">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Une coquine, qui ne me veut pas dire ce qu'elle a.</s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-23">
+          <speaker>LISETTE.</speaker>
+          <p><s>C'est un mari qu'elle veut.</s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-24">
+          <speaker>SGANARELLE, faisant semblant de ne pas entendre.</speaker>
+          <p><s>Je l'abandonne. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-25">
+          <speaker>LISETTE.</speaker>
+          <p><s>Un mari. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-26">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Je la déteste. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-27">
+          <speaker>LISETTE.</speaker>
+          <p><s>Un mari. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-28">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Et la renonce pour ma fille. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-29">
+          <speaker>LISETTE.</speaker>
+          <p><s>Un mari. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-30">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Non, ne m'en parlez point. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-31">
+          <speaker>LISETTE.</speaker>
+          <p><s>Un mari. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-32">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ne m'en parlez point. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-33">
+          <speaker>LISETTE.</speaker>
+          <p><s>Un mari. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II03-34">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ne m'en parlez point. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II03-35">
+          <speaker>LISETTE.</speaker>
+          <p><s>Un mari, un mari, un mari.</s></p>
+        </sp>
+      </div2>
+      <div2 n="4" type="scene" xml:id="II04">
+        <head>SCÈNE IV. Lisette, Lucinde.</head>
+        <sp who="LISETTE" xml:id="II04-1">
+          <speaker>LISETTE.</speaker>
+          <p><s>On dit bien vrai : qu'il n'y a point de pires sourds que ceux qui ne veulent point entendre. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II04-2">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Hé bien ! </s><s>Lisette, j'avais tort de cacher mon déplaisir, et je n'avais qu'à parler pour avoir tout ce que je souhaitais de mon père ! </s><s>Tu le vois. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II04-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>Par ma foi ! </s><s>Voilà un vilain homme ; et je vous avoue que j'aurais un plaisir extrême à lui jouer quelque tour. </s><s>Mais d'où vient donc, Madame, que jusqu'ici vous m'avez caché votre mal ? </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II04-4">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Hélas ! </s><s>De quoi m'aurait servi de te le découvrir plus tôt ? </s><s>Et n'aurais-je pas autant gagné à le tenir caché toute ma vie ? </s><s>Crois-tu que je n'aie pas bien prévu tout ce que tu vois maintenant ; que je ne susse pas à fond tous les sentiments de mon père, et que le refus qu'il a fait porter à celui qui m'a demandée par un ami n'ait pas étouffé dans mon âme toute sorte d'espoir ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II04-5">
+          <speaker>LISETTE.</speaker>
+          <p><s>Quoi ? </s><s>C'est cet inconnu qui vous a fait demander, pour qui vous... </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II04-6">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Peut-être n'est-il pas honnête à une fille de s'expliquer si librement ; mais enfin je t'avoue que, s'il m'étoit permis de vouloir quelque chose, ce serait lui que je voudrais. </s><s>Nous n'avons eu ensemble aucune conversation, et sa bouche ne m'a point déclaré la passion qu'il a pour moi ; mais, dans tous les lieux où il m'a pu voir, ses regards et ses actions m'ont toujours parlé si tendrement, et la demande qu'il a fait faire de moi m'a paru d'un si honnête homme, que mon coeur n'a pu s'empêcher d'être sensible à ses ardeurs ; et cependant tu vois où la dureté de mon père réduit toute cette tendresse. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II04-7">
+          <speaker>LISETTE.</speaker>
+          <p><s>Allez, laissez-moi faire. </s><s>Quelque sujet que j'aie de me plaindre de vous du secret que vous m'avez fait, je ne veux pas laisser de servir votre amour ; et pourvu que vous ayez assez de résolution... </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="II04-8">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Mais que veux-tu que je fasse contre l'autorité d'un père ? </s><s>Et s'il est inexorable à mes voeux... </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II04-9">
+          <speaker>LISETTE.</speaker>
+          <p><s>Allez, allez, il ne faut pas se laisser mener comme un oison ; et pourvu que l'honneur n'y soit pas offensé, on peut se libérer un peu de la tyrannie d'un père. </s><s>Que prétend-il que vous fassiez ? </s><s>N'êtes-vous pas en âge d'être mariée ? </s><s>Et croit-il que vous soyez de marbre ? </s><s>Allez, encore un coup, je veux servir votre passion ; je prends, dès à présent, sur moi tout le soin de ses intérêts, et vous verrez que je sais des détours.... </s><s>Mais je vois votre père. </s><s>Rentrons, et me laissez agir.</s></p>
+        </sp>
+      </div2>
+      <div2 n="5" type="scene" xml:id="II05">
+        <head>SCÈNE V. </head>
+        <sp who="SGANARELLE" xml:id="II05-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Il est bon quelquefois de ne point faire semblant d'entendre les choses qu'on n'entend que trop bien ; et j'ai fait sagement de parer la déclaration d'un désir que je ne suis pas résolu de contenter. </s><s>A-t-on jamais rien vu de plus tyrannique que cette coutume où l'on veut assujettir les pères ? </s><s>Rien de plus impertinent et de plus ridicule que d'amasser du bien avec de grands travaux, et élever une fille avec beaucoup de soin et de tendresse, pour se dépouiller de l'un et de l'autre entre les mains d'un homme qui ne nous touche de rien ? </s><s>Non, non : je me moque de cet usage, et je veux garder mon bien et ma fille pour moi. </s></p>
+        </sp>
+      </div2>
+      <div2 n="6" type="scene" xml:id="II06">
+        <head>SCÈNE VI. Lisette, Sganarelle.</head>
+        <sp who="LISETTE" xml:id="II06-1">
+          <speaker>LISETTE, faisant semblant de ne pas voir Sganarelle.</speaker>
+          <p><s>Ah ! </s><s>Malheur ! </s><s>Ah ! </s><s>Disgrâce ! </s><s>Ah ! </s><s>Pauvre seigneur Sganarelle ! </s><s>Où pourrai-je te rencontrer ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-2">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Que dit-elle là ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ah ! </s><s>Misérable père ! </s><s>Que feras-tu, quand tu sauras cette nouvelle ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-4">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Que sera-ce ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-5">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ma pauvre maîtresse ! </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-6">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Je suis perdu. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-7">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ah ! </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-8">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Lisette. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-9">
+          <speaker>LISETTE.</speaker>
+          <p><s>Quelle infortune ! </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-10">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Lisette. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-11">
+          <speaker>LISETTE.</speaker>
+          <p><s>Quel accident ! </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-12">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Lisette. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-13">
+          <speaker>LISETTE.</speaker>
+          <p><s>Quelle fatalité ! </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-14">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Lisette. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-15">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ah ! </s><s>Monsieur ! </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-16">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Qu'est-ce ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-17">
+          <speaker>LISETTE.</speaker>
+          <p><s>Monsieur. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-18">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Qu'y a-t-il ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-19">
+          <speaker>LISETTE.</speaker>
+          <p><s>Votre fille. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-20">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ah ! </s><s>Ah ! </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-21">
+          <speaker>LISETTE.</speaker>
+          <p><s>Monsieur, ne pleurez donc point comme cela ; car vous me feriez rire. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-22">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Dis donc vite. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-23">
+          <speaker>LISETTE.</speaker>
+          <p><s>Votre fille, toute saisie des paroles que vous lui avez dites et de la colère effroyable où elle vous a vu contre elle, est montée vite dans sa chambre, et, pleine de désespoir, a ouvert la fenêtre qui regarde sur la rivière. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-24">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Hé bien ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-25">
+          <speaker>LISETTE.</speaker>
+          <p><s>Alors, levant les yeux au ciel : "Non, a-t-elle dit, il m'est impossible de vivre avec le courroux de mon père, et puisqu'il me renonce pour sa fille, je veux mourir." </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-26">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Elle s'est jetée. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-27">
+          <speaker>LISETTE.</speaker>
+          <p><s>Non, Monsieur : elle a fermé tout doucement la fenêtre, et s'est allée mettre sur son lit. </s><s>Là elle s'est prise à pleurer amèrement ; et tout d'un coup son visage a pâli, ses yeux se sont tournés, le coeur lui a manqué, et elle m'est demeurée entre les bras. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-28">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ah ! </s><s>Ma fille ! </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="II06-29">
+          <speaker>LISETTE.</speaker>
+          <p><s>À force de la tourmenter, je l'ai fait revenir ; mais cela lui reprend de moment en moment, et je crois qu'elle ne passera pas la journée. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="II06-30">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Champagne, Champagne, Champagne, vite, qu'on m'aille quérir des médecins, et en quantité : on n'en eut trop avoir dans une pareille aventure. </s><s>Ah ! </s><s>Ma fille ! </s><s>Ma pauvre fille ! </s></p>
+          <stage type="[N/A]">Premier Entracte.</stage>
+          <stage type="[N/A]">Champagne, en dansant, frappe aux portes de quatre médecins, qui dansent et entrent avec cérémonie chez le père de la malade.</stage>
+        </sp>
+      </div2>
+      </div1><div1 n="2" type="act" xml:id="III">
+      <head>ACTE II</head>
+      <div2 n="1" type="scene" xml:id="III01">
+        <head>SCÈNE I.Sganarelle, Lisette.</head>
+        <sp who="LISETTE" xml:id="III01-1">
+          <speaker>LISETTE.</speaker>
+          <p><s>Que voulez-vous donc faire, Monsieur, de quatre médecins ? </s><s>N'est-ce pas assez d'un pour tuer une personne ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III01-2">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Taisez-vous. </s><s>Quatre conseils valent mieux qu'un. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III01-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>Est-ce que votre fille ne peut pas bien mourir sans le secours de ces Messieurs-là ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III01-4">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Est-ce que les médecins font mourir ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III01-5">
+          <speaker>LISETTE.</speaker>
+          <p><s>Sans doute ; et j'ai connu un homme qui prouvait, par bonnes raisons, qu'il ne faut jamais dire : "Une telle personne est morte d'une fièvre et d'une fluxion sur la poitrine" ; mais : "Elle est morte de quatre médecins et de deux apothicaires." </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III01-6">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Chut. </s><s>N'offensez pas ces Messieurs-là. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III01-7">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ma foi ! </s><s>Monsieur, notre chat est réchappé depuis peu d'un saut qu'il fit du haut de la maison dans la rue ; et il fut trois jours sans manger, et sans pouvoir remuer ni pied ni patte ; mais il est bien heureux de ce qu'il n'y a point de chats médecins, car ses affaires étaient faites, et il n'auraient pas manqué de le purger et de le saigner. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III01-8">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voulez-vous vous taire ? </s><s>vous dis-je. </s><s>Mais voyez quelle impertinence ! </s><s>Les voici. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III01-9">
+          <speaker>LISETTE.</speaker>
+          <p><s>Prenez garde, vous allez être bien édifié : ils vous diront en latin que votre fille est malade. </s></p>
+        </sp>
+      </div2>
+      <div2 n="2" type="scene" xml:id="III02">
+        <head>SCÈNE II. Messieurs Tomes, des Fonandrès, Macroton et Bahys, Médecins, Sganarelle, Lisette.</head>
+        <sp who="SGANARELLE" xml:id="III02-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Hé bien ! </s><s>Messieurs. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-2">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Nous avons vu suffisamment la malade, et sans doute qu'il y a beaucoup d'impuretés en elle. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III02-3">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ma fille est impure ? </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-4">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Je veux dire qu'il y a beaucoup d'impuretés dans son corps, quantité d'humeurs corrompues. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III02-5">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ah ! </s><s>Je vous entends. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-6">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Mais... </s><s>Nous allons consulter ensemble. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III02-7">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Allons, faites donner des siéges. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-8">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ah ! </s><s>Monsieur, vous en êtes ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III02-9">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>De quoi donc connaissez-vous Monsieur ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-10">
+          <speaker>LISETTE.</speaker>
+          <p><s>De l'avoir vu l'autre jour chez la bonne amie de Madame votre nièce. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-11">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Comment se porte son cocher ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-12">
+          <speaker>LISETTE.</speaker>
+          <p><s>Fort bien : il est mort. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-13">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Mort ! </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-14">
+          <speaker>LISETTE.</speaker>
+          <p><s>Oui. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-15">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Cela ne se peut. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-16">
+          <speaker>LISETTE.</speaker>
+          <p><s>Je ne sais si cela se peut ; mais je sais bien que cela est. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-17">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Il ne peut pas être mort, vous dis-je. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-18">
+          <speaker>LISETTE.</speaker>
+          <p><s>Et moi je vous dis qu'il est mort et enterré. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-19">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Vous vous trompez. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-20">
+          <speaker>LISETTE.</speaker>
+          <p><s>Je l'ai vu. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III02-21">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <note type="L">Hippocrate : médecin de l'antiquité.</note>
+          <p><s>Cela est impossible. </s><s>Hippocrate dit que ces sortes de maladie ne se terminent qu'au quatorze, ou au vingt-un ; et il n'y a que six jours qu'il est tombé malade. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="III02-22">
+          <speaker>LISETTE.</speaker>
+          <p><s>Hippocrate dira ce qu'il lui plaira ; mais le cocher est mort. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III02-23">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Paix ! </s><s>Discoureuse ; allons, sortons d'ici. </s><s>Messieurs, je vous supplie de consulter de la bonne manière. </s><s>Quoique ce ne soit pas la coutume de payer auparavant, toutefois, de peur que je l'oublie, et afin que ce soit une affaire faite, voici... </s></p>
+          <stage type="[N/A]">Il les paye, et chacun, en recevant l'argent, fait un geste différent.</stage>
+        </sp>
+      </div2>
+      <div2 n="3" type="scene" xml:id="III03">
+        <head>SCÈNE III. Messieurs des Fonandrès, Tomès, Macroton et Bahys.</head>
+        <stage type="[N/A]">Ils s'asseyent et toussent.</stage>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III03-1">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <note type="C">Paris au XVIIème siècle est compris dans les sept premiers arrondissements actuels, cette ville paraîssait grande aux contemporains.</note>
+          <p><s>Paris est étrangement grand, et il faut faire de longs trajets quand la pratique donne un peu. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III03-2">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Il faut avouer que j'ai une mule admirable pour cela, et qu'on a peine à croire le chemin que je lui fais faire tous les jours. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III03-3">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>J'ai un cheval merveilleux, et c'est un animal infatigable. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III03-4">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Savez-vous le chemin que ma mule a fait aujourd'hui ? </s><s>J'ai été premièrement tout contre l'Arsenal ; de l'Arsenal, au bout du faubourg Saint-Germain ; du faubourg Saint-Germain, au fond du Marais ; du fond du Marais, à la porte Saint-Honoré ; de la porte Saint-Honoré, au faubourg Saint-Jacques, du faubourg Saint Jacques, à la porte de Richelieu, de la porte de Richelieu, ici ; et d'ici, je dois aller encore à la place Royale. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III03-5">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Mon cheval a fait tout cela aujourd'hui ; et de plus, j'ai été à Ruel voir un malade. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III03-6">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Mais à repos, quel parti prenez-vous dans la querelle des deux médecins Théophraste et Artémius ? </s><s>Car c'est une affaire qui partage tout notre corps. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III03-7">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Moi, je suis pour Artémius. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III03-8">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Et moi aussi. </s><s>Ce n'est pas que son avis, comme on a vu, n'ait tué le malade, et que celui de Théophraste ne fût beaucoup meilleur assurément ; mais enfin il a tort dans les circonstances, et il ne devait pas être d'un autre avis que son ancien. </s><s>Qu'en dites-vous ? </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III03-9">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Sans doute. </s><s>Il faut toujours garder les formalités, quoi qu'il puisse arriver. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III03-10">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Pour moi, j'y suis sévère en diable, à moins que ce soit entre amis ; et l'on nous assembla un jour, trois de nous autres, avec un médecin de dehors, pour une consultation, où j'arrêtai toute l'affaire, et ne voulus point endurer qu'on opinât, si les choses n'allaient dans l'ordre. </s><s>Les gens de la maison faisaient ce qu'ils pouvaient et la maladie pressait ; mais je n'en voulus point démordre, et la malade mourut bravement pendant cette contestation. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III03-11">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>C'est fort bien fait d'apprendre aux gens à vivre, et de leur montrer leur bec jaune. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III03-12">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Un homme mort n'est qu'un homme mort, et ne fait point de conséquence ; mais une formalité négligée porte un notable préjudice à tout le corps des médecins. </s></p>
+        </sp>
+      </div2>
+      <div2 n="4" type="scene" xml:id="III04">
+        <head>SCÈNE IV. Sganarelle, Messieurs Tomès, des Fonandrès, Macroton et Bahys.</head>
+        <sp who="SGANARELLE" xml:id="III04-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Messieurs, l'oppression de ma fille augmente : je vous prie de me dire vite ce que vous avez résolu. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-2">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Allons, Monsieur. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-3">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Non, Monsieur, parlez, s'il vous plaît. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-4">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Vous vous moquez. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-5">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Je ne parlerai pas le premier. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-6">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Monsieur. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-7">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Monsieur. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III04-8">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Hé ! </s><s>De grâce, Messieurs, laissez toutes ces cérémonies, et songez que les choses pressent. </s></p>
+          <stage type="[N/A]">Ils parlent tous quatre ensemble.</stage>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-9">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>La maladie de votre fille... </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-10">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>L'avis de tous ces Messieurs tous ensemble... </s></p>
+        </sp>
+        <sp who="MONSIEURMACROTON" xml:id="III04-11">
+          <speaker>MONSIEUR MACROTON.</speaker>
+          <p><s>Après avoir bien consulté... </s></p>
+        </sp>
+        <sp who="MONSIEURBAHYS" xml:id="III04-12">
+          <speaker>MONSIEUR BAHYS.</speaker>
+          <p><s>Pour raisonner... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III04-13">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Hé ! </s><s>Messieurs, parlez l'un après l'autre, de grâce. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-14">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <note type="L">Saignée : opération de chirurgie, qu'on fait avec une lancette pour tirer le sang corrompu ou superflu qui est dans les veines. [F]</note>
+          <p><s>Monsieur, nous avons raisonné sur la maladie de votre fille, et mon avis, à moi, est que cela procède d'une grande chaleur de sang : ainsi je conclus à la saigner le plus tôt que vous pourrez. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-15">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <note type="L">Emetique : est une remède qui purge avec violence par haut et par bas, fait de la pourdre et du beurre d'antimoire préparé, dont on a séparé les sels corrosifs par plusieurs lotions. [F]</note>
+          <p><s>Et moi, je dis que sa maladie est une pourriture d'humeurs, causée par une trop grande réplétion : ainsi je conclus à lui donner de l'émétique. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-16">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Je soutiens que l'émétique la tuera. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-17">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Et moi, que la saignée la fera mourir. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-18">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>C'est bien à vous de faire l'habile homme. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-19">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Oui, c'est à moi ; et je vous prêterai le collet en tout genre d'érudition. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-20">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Souvenez-vous de l'homme que vous fîtes crever ces jours passés. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-21">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Souvenez-vous de la dame que vous avez envoyée en l'autre monde, il y a trois jours. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-22">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Je vous ai dit mon avis. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-23">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Je vous ai dit ma pensée. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="III04-24">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Si vous ne faites saigner tout à l'heure votre fille, c'est une personne morte. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="III04-25">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Si vous la faites saigner, elle ne sera pas en vie dans un quart d'heure.</s></p>
+        </sp>
+      </div2>
+      <div2 n="5" type="scene" xml:id="III05">
+        <head>SCÈNE V. Sganarelle, Messieurs Macroton et Bahys, médecins. </head>
+        <sp who="SGANARELLE" xml:id="III05-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>À qui croire des deux ? </s><s>Et quelle résolution prendre, sur des avis si opposés ? </s><s>Messieurs, je vous conjure de déterminer mon esprit, et de me dire, sans passion, ce que vous croyez le plus propre à soulager ma fille. </s></p>
+        </sp>
+        <sp who="MONSIEURMACROTON" xml:id="III05-2">
+          <speaker>MONSIEUR MACROTON.</speaker>
+          <stage type="[N/A]">Il parle en allongeant ses mots.</stage>
+          <p><s>Mon-si-eur dans ces ma-ti-è-res-là il faut pro-cé-der a-vec-que cir-con-spec-tion et ne ri-en fai-re com-me on dit à la vo-lé-e d'au-tant que les fau-tes qu'on y peut fai-re sont se-lon no-tre maî-tre Hip-po-cra-te d'u-ne dan-ge-reu-se con-sé-quen-ce. </s></p>
+        </sp>
+        <sp who="MONSIEURBAHYS" xml:id="III05-3">
+          <speaker>MONSIEUR BAHYS.</speaker>
+          <p><s>Celui-ci parle toujours en bredouillant.</s><s>Il est vrai, il faut bien prendre garde à ce qu'on fait ; car ce ne sont pas ici des jeux d'enfant, et quand on a failli, il n'est pas aisé de réparer le manquement et de rétablir ce qu'on a gâté : experimentum periculosum. </s><s>C'est pourquoi il s'agit de raisonner auparavant comme il faut, de peser mûrement les choses, de regarder le tempérament des gens, d'examiner les causes de la maladie, et de voir les remèdes qu'on y doit apporter. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III05-4">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>L'un va en tortue, et l'autre court la poste. </s></p>
+        </sp>
+        <sp who="MONSIEURMACROTON" xml:id="III05-5">
+          <speaker>MONSIEUR MACROTON.</speaker>
+          <stage type="[N/A]">Il détache chaque syllabe.</stage>
+          <p><s>Or, Monsieur pour venir au fait je trouve que votre fille a une maladie chronique et qu'elle peut péricliter si on ne lui donne du secours d'autant que les symptômes qu'elle a sont indicatifs d'une vapeur fuligineuse et mordicante qui lui picote les membranes du cerveau. Or cette vapeur que nous nommons en grec atmos est causée par des humeurs putrides tenaces et conglutineuses qui sont contenues dans le bas ventre. </s></p>
+        </sp>
+        <sp who="MONSIEURBAHYS" xml:id="III05-6">
+          <speaker>MONSIEUR BAHYS.</speaker>
+          <p><s>Et comme ces humeurs ont été là engendrées par une longue succession de temps, elles s'y sont recuites et ont acquis cette malignité qui fume vers la région du cerveau. </s></p>
+        </sp>
+        <sp who="MONSIEURMACROTON" xml:id="III05-7">
+          <speaker>MONSIEUR MACROTON.</speaker>
+          <p><s>Si bi-en donc que pour ti-rer dé-ta-cher ar-ra-cher ex-pul-ser é-va-cu-er les-di-tes hu-meurs il fau-dra u-ne pur-ga-tion vi-gou-reu-se Mais au pré-a-la-ble je trou-ve à pro-pos et il n'y a pas d'in-con-vé-nient d'u-ser de pe-tits re-mè-des a-no-dins c'est.à.dire de pe-tits la-ve-ments ré-mol-li-ents et dé-ter-sifs de ju-leps et de si-rops ra-fraî-chis-sants qu'on mé-le-ra dans sa pti-san-ne. </s></p>
+        </sp>
+        <sp who="MONSIEURBAHYS" xml:id="III05-8">
+          <speaker>MONSIEUR BAHYS.</speaker>
+          <p><s>Après, nous en viendrons à la purgation, et à la saignée que nous réitérerons, s'il en est besoin. </s></p>
+        </sp>
+        <sp who="MONSIEURMACROTON" xml:id="III05-9">
+          <speaker>MONSIEUR MACROTON.</speaker>
+          <p><s>Ce n'est pas qu'a-vec tout ce-la vo-tre fil-le ne puis-se mou-rir mais au moins vous au-rez fait quel-que cho-se et vous au-rez la con-so-la-tion qu'el-le se-ra mor-te dans les for-mes. </s></p>
+        </sp>
+        <sp who="MONSIEURBAHYS" xml:id="III05-10">
+          <speaker>MONSIEUR BAHYS.</speaker>
+          <p><s>Il vaut mieux mourir selon les règles, que de réchapper contre les règles. </s></p>
+        </sp>
+        <sp who="MONSIEURMACROTON" xml:id="III05-11">
+          <speaker>MONSIEUR MACROTON.</speaker>
+          <p><s>Nous vous di-sons sin-cè-re-ment no-tre pen-sée. </s></p>
+        </sp>
+        <sp who="MONSIEURBAHYS" xml:id="III05-12">
+          <speaker>MONSIEUR BAHYS.</speaker>
+          <p><s>Et vous avons parlé comme nous parlerions à notre propre frère. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III05-13">
+          <speaker>SGANARELLE, à Macroton.</speaker>
+          <p><s>Je vous rends très humbles grâces. </s></p>
+          <stage type="toward">À M. Bahys.</stage>
+          <p><s>Et vous suis infiniment obligé de la peine que vous avez prise. </s></p>
+        </sp>
+      </div2>
+      <div2 n="6" type="scene" xml:id="III06">
+        <head>SCÈNE VI.</head>
+        <sp who="SGANARELLE" xml:id="III06-1">
+          <speaker>SGANARELLE.</speaker>
+          <note type="L">Orviétan : antidote ou contre-poison qui s'est rendu fameux à Paris, parce qu'il a été distribué par un opérateur venu d'Orviette, dont il a fait des expériences extraordinaires en sa personne sur un théâtre public. Dans la pharmacopée de Charras, il y a une manière de faire de l'orviétan, où l'on voit que la thierarque est une des principales drogues qui y entrent. [F]</note>
+          <p><s>Me voilà justement un peu plus incertain que je n'étais auparavant. </s><s>Morbleu ! </s><s>Il me vient une fantaisie. </s><s>Il faut que j'aille acheter de l'orviétan, et que je lui en fasse prendre ; l'orviétan est un remède dont beaucoup de gens se sont bien trouvés. </s></p>
+        </sp>
+      </div2>
+      <div2 n="7" type="scene" xml:id="III07">
+        <head>SCÈNE VII. L'Opérateur, Sganarelle.</head>
+        <sp who="SGANARELLE" xml:id="III07-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Holà ! </s><s>Monsieur, je vous prie de me donner une boîte de votre orviétan, que je m'en vais vous payer.</s></p>
+        </sp>
+        <sp who="LOPERATEUR" xml:id="III07-2">
+          <speaker>L'Opérateur, chantant.</speaker>
+          <l n="15" xml:id="l15">L'or de tous les climats qu'entoure l'Océan</l>
+          <l n="16" xml:id="l16">Peut-il jamais payer ce secret d'importance ?</l>
+          <l n="17" xml:id="l17">Mon remède guérit, par sa rare excellence,</l>
+          <l n="18" xml:id="l18">Plus de maux qu'on n'en peut nombrer dans tout un an :</l>
+          <l n="19" xml:id="l19">La gale,</l>
+          <l n="20" xml:id="l20">La rogne,</l>
+          <l n="21" xml:id="l21">La tigne</l>
+          <l n="22" xml:id="l22">La fièvre,</l>
+          <l n="23" xml:id="l23">La peste,</l>
+          <l n="24" xml:id="l24">La goutte,</l>
+          <l n="25" xml:id="l25">Vérole,</l>
+          <l n="26" xml:id="l26">Descente,</l>
+          <l n="27" xml:id="l27">Rougeole.</l>
+          <l n="28" xml:id="l28">Ô grande puissance de l'orviétan ! </l>
+        </sp>
+        <sp who="SGANARELLE" xml:id="III07-3">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Monsieur, je crois que tout l'or du monde n'est pas capable de payer votre remède ; mais pourtant voici une pièce de trente sols que vous prendrez, s'il vous plaît.</s></p>
+        </sp>
+        <sp who="LOPERATEUR" xml:id="III07-4">
+          <speaker>L'Opérateur, chantant.</speaker>
+          <l n="29" xml:id="l29">Admirez mes bontés, et le peu qu'on vous vend</l>
+          <l n="30" xml:id="l30">Ce trésor merveilleux que ma main vous dispense.</l>
+          <l n="31" xml:id="l31">Vous pouvez avec lui braver en assurance</l>
+          <l n="32" xml:id="l32">Tous les maux que sur nous l'ire du Ciel répand :</l>
+          <l n="33" xml:id="l33">La gale,</l>
+          <l n="34" xml:id="l34">La rogne,</l>
+          <l n="35" xml:id="l35">La tigne,</l>
+          <l n="36" xml:id="l36">La fièvre,</l>
+          <l n="37" xml:id="l37">La peste,</l>
+          <l n="38" xml:id="l38">La goutte,</l>
+          <l n="39" xml:id="l39">Vérole.</l>
+          <l n="40" xml:id="l40">Descente,</l>
+          <l n="41" xml:id="l41">Rougeole.</l>
+          <l n="42" xml:id="l42">Ô grande puissance de l'orviétan !</l>
+          <stage type="[N/A]">Deuxième Entr'acte.</stage>
+          <stage type="[N/A]">Plusieurs Trivelins et Scaramouches, valets de l'opérateur, se réjouissent en dansant.</stage>
+        </sp>
+      </div2>
+      </div1><div1 n="3" type="act" xml:id="IV">
+      <head>ACTE III</head>
+      <div2 n="1" type="scene" xml:id="IV01">
+        <head>SCÈNE I. Messieurs Filerin, Tomès et des Fonandrès.</head>
+        <sp who="MONSIEURFILERIN" xml:id="IV01-1">
+          <speaker>MONSIEUR FILERIN.</speaker>
+          <note type="L">Galimatias : discours obscur, et embrouillé, où on ne comprend rien, où les paroles sont mises confusément, et sans ordre ; et où il n'y a rien de naturel. [F]</note>
+          <p><s>N'avez-vous point de honte, Messieurs, de montrer si peu de prudence, pour des gens de votre âge, et de vous être querellés comme de jeunes étourdis ? </s><s>Ne voyez-vous pas bien quel tort ces sortes de querelles nous font parmi le monde ? </s><s>Et n'est-ce pas assez que les savants voient les contrariétés et les dissensions qui sont entre nos auteurs et nos anciens maîtres, sans découvrir encore au peuple, par nos débats et nos querelles, la forfanterie de notre art ? </s><s>Pour moi, je ne comprends rien du tout à cette méchante politique de quelques-uns de nos gens ; et il faut confesser que toutes ces contestations nous ont décriés, depuis peu, d'une étrange manière, et que, si nous n'y prenons garde, nous allons nous ruiner nous-mêmes. </s><s>Je n'en parle pas pour mon intérêt ; car, Dieu merci, j'ai déjà établi mes petites affaires. </s><s>Qu'il vente, qu'il pleuve, qu'il grêle, ceux qui sont morts sont morts, et j'ai de quoi me passer des vivants ; mais enfin toutes ces disputes ne valent rien pour la médecine. </s><s>Puisque le Ciel nous fait la grâce que, depuis tant de siècles, on demeure infatué de nous, ne désabusons point les hommes avec nos cabales extravagantes, et profitons de leur sottise le plus doucement que nous pourrons. </s><s>Nous ne sommes pas les seuls, comme vous savez, qui tâchons à nous prévaloir de la foiblesse humaine. </s><s>C'est là que va l'étude de la plupart du monde, et chacun s'efforce de prendre les hommes par leur foible, pour en tirer quelque profit. </s><s>Les flatteurs, par exemple, cherchent à profiter de l'amour que les hommes ont pour les louanges, en leur donnant tout le vain encens qu'ils souhaitent ; et c'est un art où l'on fait, comme on voit, des fortunes considérables. </s><s>Les alchimistes tâchent à profiter de la passion qu'on a pour les richesses, en promettant des montagnes d'or à ceux qui les écoutent ; et les diseurs d'horoscope, par leurs prédictions trompeuses, profitent de la vanité et de l'ambition des crédules esprits. </s><s>Mais le plus grand faible des hommes, c'est l'amour qu'ils ont pour la vie ; et nous en profitons, nous autres, par notre pompeux galimatias, et savons prendre nos avantages de cette vénération que la peur de mourir leur donne pour notre métier. </s><s>Conservons-nous donc dans le degré d'estime où leur foiblesse nous a mis, et soyons de concert auprès des malades pour nous attribuer les heureux succès de la maladie, et rejeter sur la nature toutes les bévues de notre art. </s><s>N'allons point, dis-je, détruire sottement les heureuses préventions d'une erreur qui donne du pain à tant de personnes. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="IV01-2">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Vous avez raison en tout ce que vous dites ; mais ce sont chaleurs de sang, dont parfois on n'est pas le maître. </s></p>
+        </sp>
+        <sp who="MONSIEURFILERIN" xml:id="IV01-3">
+          <speaker>MONSIEUR FILERIN.</speaker>
+          <p><s>Allons donc, Messieurs, mettez bas toute rancune, et faisons ici votre accommodement. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="IV01-4">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>J'y consens. </s><s>Qu'il me passe mon émétique pour la malade dont il s'agit, et je lui passerai tout ce qu'il voudra pour le premier malade dont il sera question. </s></p>
+        </sp>
+        <sp who="MONSIEURFILERIN" xml:id="IV01-5">
+          <speaker>MONSIEUR FILERIN.</speaker>
+          <p><s>On ne peut pas mieux dire, et voilà se mettre à la raison. </s></p>
+        </sp>
+        <sp who="MONSIEURDESFONANDRES" xml:id="IV01-6">
+          <speaker>MONSIEUR DES FONANDRÈS.</speaker>
+          <p><s>Cela est fait. </s></p>
+        </sp>
+        <sp who="MONSIEURFILERIN" xml:id="IV01-7">
+          <speaker>MONSIEUR FILERIN.</speaker>
+          <p><s>Touchez donc là. </s><s>Adieu. </s><s>Une autre fois, montrez plus de prudence. </s></p>
+        </sp>
+      </div2>
+      <div2 n="2" type="scene" xml:id="IV02">
+        <head>SCÈNE II. Messieurs Tomès, des Fonandrès, Lisette.</head>
+        <sp who="LISETTE" xml:id="IV02-1">
+          <speaker>LISETTE.</speaker>
+          <p><s>Quoi ? </s><s>Messieurs, vous voilà, et vous ne songez pas à réparer le tort qu'on vient de faire à la médecine ? </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="IV02-2">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Comment ? </s><s>Qu'est-ce ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV02-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>Un insolent qui a eu l'effronterie d'entreprendre sur votre métier, et qui, sans votre ordonnance, vient de tuer un homme d'un grand coup d'épée au travers du corps. </s></p>
+        </sp>
+        <sp who="MONSIEURTOMES" xml:id="IV02-4">
+          <speaker>MONSIEUR TOMÈS.</speaker>
+          <p><s>Écoutez, vous faites la railleuse ; mais vous passerez par nos mains quelque jour. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV02-5">
+          <speaker>LISETTE.</speaker>
+          <p><s>Je vous permets de me tuer, lorsque j'aurai recours à vous. </s></p>
+        </sp>
+      </div2>
+      <div2 n="3" type="scene" xml:id="IV03">
+        <head>SCÈNE III. Lisette, Clitandre.</head>
+        <sp who="CLITANDRE" xml:id="IV03-1">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Hé bien ! </s><s>Lisette, me trouves-tu bien ainsi ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV03-2">
+          <speaker>LISETTE.</speaker>
+          <p><s>Le mieux du monde ; et je vous attendois avec impatience. </s><s>Enfin le Ciel m'a faite d'un naturel le plus humain du monde, et je ne puis voir deux amants soupirer l'un pour l'autre, qu'il ne me prenne une tendresse charitable, et un désir ardent de soulager les maux qu'ils souffrent. </s><s>Je veux, à quelque prix que ce soit, tirer Lucinde de la tyrannie où elle est, et la mettre en votre pouvoir. </s><s>Vous m'avez plu d'abord ; je me connais en gens, et elle ne peut pas mieux choisir. </s><s>L'amour risque des choses extraordinaires ; et nous avons concerté ensemble une manière de stratagème, qui pourra peut-être nous réussir. </s><s>Toutes nos mesures sont déjà prises : l'homme à qui nous avons affaire n'est pas des plus fins de ce monde ; et si cette aventure nous manque, nous trouverons mille autres voies pour arriver à notre but. </s><s>Attendez-moi là seulement, je reviens vous quérir. </s></p>
+        </sp>
+      </div2>
+      <div2 n="4" type="scene" xml:id="IV04">
+        <head>SCÈNE IV. Sganarelle, Lisette.</head>
+        <sp who="LISETTE" xml:id="IV04-1">
+          <speaker>LISETTE.</speaker>
+          <p><s>Monsieur, allégresse ! </s><s>Allégresse ! </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-2">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Qu'est-ce ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV04-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>Réjouissez-vous. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-4">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>De quoi ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV04-5">
+          <speaker>LISETTE.</speaker>
+          <p><s>Réjouissez-vous, vous dis-je. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-6">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Dis-moi donc ce que c'est, et puis je me réjouirai peut-être. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV04-7">
+          <speaker>LISETTE.</speaker>
+          <p><s>Non : je veux que vous vous réjouissiez auparavant, que vous chantiez, que vous dansiez. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-8">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Sur quoi ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV04-9">
+          <speaker>LISETTE.</speaker>
+          <p><s>Sur ma parole. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-10">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Allons donc, la lera la la, la lera la. </s><s>Que diable ! </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV04-11">
+          <speaker>LISETTE.</speaker>
+          <p><s>Monsieur, votre fille est guérie. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-12">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Ma fille est guérie ! </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV04-13">
+          <speaker>LISETTE.</speaker>
+          <p><s>Oui, je vous amène un médecin, mais un médecin d'importance, qui fait des cures merveilleuses, et qui se moque des autres médecins... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-14">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Où est-il ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV04-15">
+          <speaker>LISETTE.</speaker>
+          <p><s>Je vais le faire entrer. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV04-16">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Il faut voir si celui-ci fera plus que les autres. </s></p>
+        </sp>
+      </div2>
+      <div2 n="5" type="scene" xml:id="IV05">
+        <head>SCÈNE V. Clitandre, en habit de médecin, Sganarelle, Lisette.</head>
+        <sp who="LISETTE" xml:id="IV05-1">
+          <speaker>LISETTE.</speaker>
+          <p><s>Le voici. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV05-2">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voilà un médecin qui a la barbe bien jeune. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV05-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>La science ne se mesure pas à la barbe, et ce n'est pas par le menton qu'il est habile. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV05-4">
+          <speaker>SGANARELLE.</speaker>
+          <note type="L">Selle : se dit aussi d'un bassin de chambre, où on se décharge le ventre. Il est constipé, il ne peut aller à la selle. [F]</note>
+          <p><s>Monsieur, on m'a dit que vous aviez des remèdes admirables pour faire aller à la selle. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV05-5">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Monsieur, mes remèdes sont différents de ceux des autres : ils ont l'émétique, les saignées, les médecines et les lavements ; mais moi, je guéris par des paroles, par des sons, par des lettres, par des talismans et par des anneaux constellés. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV05-6">
+          <speaker>LISETTE.</speaker>
+          <p><s>Que vous ai-je dit ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV05-7">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voilà un grand homme. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV05-8">
+          <speaker>LISETTE.</speaker>
+          <p><s>Monsieur, comme votre fille est là toute habillée dans une chaise, je vais la faire passer ici. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV05-9">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui, fais. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV05-10">
+          <speaker>CLITANDRE, tâtant le pouls à Sganarelle.</speaker>
+          <p><s>Votre fille est bien malade. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV05-11">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Vous connaissez cela ici ? </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV05-12">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Oui, par la sympathie qu'il y a entre le père et la fille. </s></p>
+        </sp>
+      </div2>
+      <div2 n="6" type="scene" xml:id="IV06">
+        <head>SCÈNE VI. Lucinde, Lisette, Sganarelle, Clitandre. </head>
+        <sp who="LISETTE" xml:id="IV06-1">
+          <speaker>LISETTE.</speaker>
+          <p><s>Tenez, Monsieur, voilà une chaise auprès d'elle. </s><s>Allons laissez-les là tous deux. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-2">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Pourquoi ? </s><s>Je veux demeurer là. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV06-3">
+          <speaker>LISETTE.</speaker>
+          <p><s>Vous moquez-vous ? </s><s>Il faut s'éloigner : un médecin a cent choses à demander qu'il n'est pas honnête qu'un homme entende. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-4">
+          <speaker>CLITANDRE, parlant à Lucinde à part.</speaker>
+          <p><s>Ah ! </s><s>Madame, que le ravissement où je me trouve est grand ! </s><s>Et que je sais peu par où vous commencer mon discours ! </s><s>Tant que je ne vous ai parlé que des yeux, j'avais, ce me semblait, cent choses à vous dire ; et maintenant que j'ai la liberté de vous parler de la façon que je souhaitais je demeure interdit ; et la grande joie où je suis étouffe toutes mes paroles. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-5">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Je puis vous dire la même chose, et je sens, comme vous, des mouvements de joie qui m'empêchent de pouvoir parler. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-6">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Ah ! </s><s>Madame, que je serais heureux s'il était vrai que vous sentissiez tout ce que je sens, et qu'il me fût permis de juger de votre âme par la mienne ! </s><s>Mais, Madame, puis-je au moins croire que ce soit à vous à qui je doive la pensée de cet heureux stratagème qui me fait jouir de votre présence ? </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-7">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Si vous ne m'en devez pas la pensée, vous m'êtes redevable au moins d'en avoir approuvé la proposition avec beaucoup de joie. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-8">
+          <speaker>SGANARELLE, à Lisette.</speaker>
+          <p><s>Il me semble qu'il lui parle de bien près. </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV06-9">
+          <speaker>LISETTE, à Sganarelle.</speaker>
+          <p><s>C'est qu'il observe sa physionomie et tous les traits de son visage. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-10">
+          <speaker>CLITANDRE, à Lucinde.</speaker>
+          <p><s>Serez-vous constante, Madame, dans ces bontés que vous me témoignez ? </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-11">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Mais vous, serez-vous ferme dans les résolutions que vous avez montrées ? </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-12">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Ah ! </s><s>Madame, jusqu'à la mort. </s><s>Je n'ai point de plus forte envie que d'être à vous, et je vais le faire paraître dans ce que vous m'allez voir faire. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-13">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Hé bien ! </s><s>Notre malade, elle me semble un peu plus gaie. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-14">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>C'est que j'ai déjà fait agir sur elle un de ces remèdes que mon art m'enseigne. </s><s>Comme l'esprit a grand empire sur le corps, et que c'est de lui bien souvent que procèdent les maladies, ma coutume est de courir à guérir les esprits, avant que de venir au corps. </s><s>J'ai donc observé ses regards, les traits de son visage, et les lignes de ses deux mains ; et par la science que le Ciel m'a donnée, j'ai reconnu que c'était de l'esprit qu'elle était malade, et que tout son mal ne venait que d'une imagination déréglée, d'un désir dépravé de vouloir être mariée. </s><s>Pour moi, je ne vois rien de plus extravagant et de plus ridicule que cette envie qu'on a du mariage. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-15">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voilà un habile homme ! </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-16">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Et j'ai eu, et aurai pour lui, toute ma vie, une aversion effroyable. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-17">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voilà un grand médecin ! </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-18">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Mais, comme il faut flatter l'imagination des malades, et que j'ai vu en elle de l'aliénation d'esprit, et même qu'il y avait du péril à ne lui pas donner un prompt secours, je l'ai prise par son faible, et lui ai dit que j'étais venu ici pour vous la demander en mariage. </s><s>Soudain son visage a changé, son teint s'est éclairci, ses yeux se sont animés ; et si vous voulez, pour quelques jours, l'entretenir dans cette erreur, vous verrez que nous la tirerons d'où elle est. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-19">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui-da, je le veux bien. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-20">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Après nous ferons agir d'autres remèdes pour la guérir entièrement de cette fantaisie. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-21">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui, cela est le mieux du monde. </s><s>Hé bien ! </s><s>Ma fille, voilà Monsieur qui a envie de t'épouser, et je lui ai dit que je le voulais bien. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-22">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Hélas ! </s><s>Est-il possible ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-23">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-24">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Mais tout de bon ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-25">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui, oui. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-26">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Quoi ? </s><s>Vous êtes dans les sentiments d'être mon mari ? </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-27">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Oui, Madame. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-28">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Et mon père y consent ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-29">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui, ma fille. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-30">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Ah ! </s><s>Que je suis heureuse, si cela est véritable ! </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-31">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>N'en doutez point, Madame. </s><s>Ce n'est pas d'aujourd'hui que je vous aime, et que je brûle de me voir votre mari. </s><s>Je ne suis venu ici que pour cela ; et si vous voulez que je vous dise nettement les choses comme elles sont, cet habit n'est qu'un pur prétexte inventé, et je n'ai fait le médecin que pour m'approcher de vous et obtenir ce que je souhaite. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-32">
+          <speaker>LUCINDE.</speaker>
+          <p><s>C'est me donner des marques d'un amour bien tendre, et j'y suis sensible autant que je puis. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-33">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oh ! </s><s>La folle ! </s><s>Oh ! </s><s>La folle ! </s><s>Oh ! </s><s>La folle ! </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-34">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Vous voulez donc bien, mon père, me donner Monsieur pour époux ? </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-35">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui. </s><s>Çà, donne-moi ta main. </s><s>Donnez-moi un peu aussi la vôtre, pour voir. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-36">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Mais, Monsieur... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-37">
+          <speaker>SGANARELLE, s'étouffant de rire.</speaker>
+          <p><s>Non, non : c'est pour... </s><s>Pour lui contenter l'esprit. </s><s>Touchez là. </s><s>Voilà qui est fait. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-38">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Acceptez, pour gage de ma foi, cet anneau que je vous donne. </s><s>C'est un anneau constellé, qui guérit les égarements d'esprit. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-39">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Faisons donc le contrat, afin que rien n'y manque. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-40">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Hélas ! </s><s>Je le veux bien, Madame. </s></p>
+          <stage type="toward">À Sganarelle.</stage>
+          <p><s>Je vais faire monter l'homme qui écrit mes remèdes, et lui faire croire que c'est un notaire. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-41">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Fort bien. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-42">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Holà ! </s><s>Faites monter le notaire que j'ai amené avec moi. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-43">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Quoi ? </s><s>vous aviez amené un notaire ? </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV06-44">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Oui, Madame. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV06-45">
+          <speaker>LUCINDE.</speaker>
+          <p><s>J'en suis ravie. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV06-46">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oh ! </s><s>La folle ! </s><s>Oh ! </s><s>La folle ! </s></p>
+        </sp>
+      </div2>
+      <div2 n="7" type="scene" xml:id="IV07">
+        <head>SCÈNE VII. Le Notaire, Clitandre, Sganarelle, Lucinde, Lisette Clitandre parle au Notaire à l'oreille.</head>
+        <sp who="SGANARELLE" xml:id="IV07-1">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Oui, Monsieur, il faut faire un contrat pour ces deux personnes-là. </s><s>Écrivez. </s></p>
+          <stage type="[N/A]">Le Notaire écrit.</stage>
+          <p><s>Voilà le contrat qu'on fait : je lui donne vingt mille écus en mariage. </s><s>Écrivez. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV07-2">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Je vous suis bien obligée, mon père.</s></p>
+        </sp>
+        <sp who="LENOTAIRE" xml:id="IV07-3">
+          <speaker>LA NOTAIRE.</speaker>
+          <p><s>Voilà qui est fait : vous n'avez qu'à venir signer. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV07-4">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voilà un contrat bientôt bâti. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV07-5">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Au moins... </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV07-6">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Hé ! </s><s>Non, vous dis-je. </s><s>Sait-on pas bien ? </s><s>Allons, donnez-lui la plume pour signer. </s><s>Allons, signé, signé, signé. </s><s>Va, va, je signerai tantôt, moi. </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV07-7">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Non, non : je veux avoir le contrat entre mes mains. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV07-8">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Hé bien ! </s><s>Tiens. </s><s>Es-tu contente ? </s></p>
+        </sp>
+        <sp who="LUCINDE" xml:id="IV07-9">
+          <speaker>LUCINDE.</speaker>
+          <p><s>Plus qu'on ne peut s'imaginer. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV07-10">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voilà qui est bien, voilà qui est bien. </s></p>
+        </sp>
+        <sp who="CLITANDRE" xml:id="IV07-11">
+          <speaker>CLITANDRE.</speaker>
+          <p><s>Au reste, je n'ai pas eu seulement la précaution d'amener un notaire ; j'ai eu celle encore de faire venir des voix et des instruments pour célébrer la fête et pour nous réjouir. </s><s>Qu'on les fasse venir. </s><s>Ce sont des gens que je mène avec moi, et dont je me sers tous les jours pour pacifier avec leur harmonie les troubles de l'esprit. </s></p>
+        </sp>
+      </div2>
+      <div2 n="8" type="interlude" xml:id="IV08">
+        <head>SCÈNE DERNIÈRE. La Comédie, le Ballet et la Musique.</head>
+        <sp who="COMEDIE_MUSIQUE_BALLET" xml:id="IV08-1">
+          <head>TOUS TROIS ENSEMBLE.</head>
+          <l n="43" xml:id="l43">Sans nous tous les hommes</l>
+          <l n="44" xml:id="l44">Deviendraient mal sains,</l>
+          <l n="45" xml:id="l45">Et c'est nous qui sommes</l>
+          <l n="46" xml:id="l46">Leurs grands médecins.</l>
+        </sp>
+        <sp who="LACOMEDIE" xml:id="IV08-2">
+          <speaker>LA COMÉDIE.</speaker>
+          <l n="47" xml:id="l47">Veut-on qu'on rabatte,</l>
+          <l n="48" xml:id="l48">Par des moyens doux,</l>
+          <l n="49" xml:id="l49">Les vapeurs de rate</l>
+          <l n="50" xml:id="l50">Qui vous minent tous ?</l>
+          <l n="51" xml:id="l51">Qu'on laisse Hippocrate,</l>
+          <l n="52" xml:id="l52">Et qu'on vienne à nous.</l>
+        </sp>
+        <sp who="COMEDIE_MUSIQUE_BALLET" xml:id="IV08-3">
+          <speaker>Tous trois ensemble.</speaker>
+          <l n="53" xml:id="l53">Sans nous...</l>
+          <stage type="[N/A]">Durant qu'ils chantent, et que les Jeux, les Ris et les Plaisirs dansent, Clitandre emmène Lucinde.</stage>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV08-4">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Voilà une plaisante façon de guérir. </s><s>Où est donc ma fille et le Médecin ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV08-5">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ils sont allés achever le reste du mariage. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV08-6">
+          <speaker>SGANARELLE.</speaker>
+          <p><s>Comment, le mariage ? </s></p>
+        </sp>
+        <sp who="LISETTE" xml:id="IV08-7">
+          <speaker>LISETTE.</speaker>
+          <p><s>Ma foi ! </s><s>Monsieur, la bécasse est bridée, et vous avez cru faire un jeu, qui demeure une vérité. </s></p>
+        </sp>
+        <sp who="SGANARELLE" xml:id="IV08-8">
+          <speaker>SGANARELLE.</speaker>
+          <stage type="[N/A]">Les danseurs le retiennent et veulent le faire danser de force.</stage>
+          <p><s>Comment, diable ! </s><s>Laissez-moi aller, laissez-moi aller, vous dis-je. </s><s>Encore ? </s><s>Peste des gens ! </s></p>
+        </sp>
+      </div2>
+      </div1></body>
   </text>
 </TEI>
