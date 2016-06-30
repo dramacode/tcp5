@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -7,7 +7,7 @@
         <title>Le Festin de Pierre</title>
         <title type="sub">ou le Fils criminel</title>
         <title type="sub">tragi-comédie</title>
-        <author key="Dorimond (1626?-1664)">Dorimond</author>
+        <author key="Dorimond (1626?-1664)"><surname>Dorimond</surname></author>
       </titleStmt>
       <editionStmt>
         <edition>http://moliere.paris-sorbonne.fr/</edition>
@@ -61,12 +61,12 @@
         <castList>
           <castItem><role rend="male" xml:id="dom-pierre">Dom Pierre</role>, gouverneur de Séville, père d’Amarille.</castItem>
           <castItem><role rend="male" xml:id="dom-alvaros">Dom Alvaros</role>, père de Dom Jouan.</castItem>
-          <castItem><role rend="male" xml:id="dom-jouan">Dom Jouan</role>.</castItem>
+          <castItem><role rend="male" xml:id="donjuan">Dom Jouan</role>.</castItem>
           <castItem><role rend="male" xml:id="dom-philippe">Dom Philippe</role>, amant d’Amarille.</castItem>
           <castItem><role rend="female" xml:id="amarille">Amarille</role>, fille de Dom Pierre, et amante de Dom Philippe.</castItem>
           <castItem><role rend="female" xml:id="lucie">Lucie</role>, cousine d’Amarille.</castItem>
           <castItem><role rend="male" xml:id="pelerin">Un pèlerin</role>.</castItem>
-          <castItem><role rend="male" xml:id="prevot">Un prévôt</role> et deux archers.<role rend="male" xml:id="archer1"/><role rend="male" xml:id="archer2"/></castItem>
+          <castItem><role rend="male" xml:id="prevot">Un prévôt</role> et deux archers.<role n="Premier archer" rend="male" xml:id="archer1"/><role n="Second archer" rend="male" xml:id="archer2"/></castItem>
           <castItem><role rend="male" xml:id="briguelle">Briguelle</role>, valet de Dom Jouan.</castItem>
           <castItem><role rend="male" xml:id="ombre">L'ombre</role> de Dom Pierre.</castItem>
           <castItem><role xml:id="bergers">Bergers</role>.</castItem>
@@ -79,10 +79,13 @@
       </div>
     </front>
     <body>
-      <div1 type="act" xml:id="I">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 type="scene" xml:id="I0">
-          <head>SCENE PREMIÈRE</head>
+        <div2 n="1" type="scene" xml:id="I0">
+          <head>SCENE PREMIÈRE<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#amarille"/>
+            <person corresp="#dom-philippe"/>
+            </listPerson></head>
           <stage>AMARILLE, DOM PHIILIPPE.</stage>
           <sp who="amarille" xml:id="II01-1">
             <speaker>Amarille</speaker>
@@ -153,10 +156,14 @@
             <l>Ce soir vous me verrez dessous cette fenêtre.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="I1">
-          <head>SCENE 2</head>
+        <div2 n="2" type="scene" xml:id="I1">
+          <head>SCENE 2<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#donjuan"/>
+            <person corresp="#amarille"/>
+            <person corresp="#dom-philippe"/>
+            </listPerson></head>
           <stage>DOM JOUAN, AMARILLE, DOM PHILIPPE.</stage>
-          <sp who="dom-jouan" xml:id="II02-1">
+          <sp who="donjuan" xml:id="II02-1">
             <speaker>Dom Jouan, à part</speaker>
             <l>Je serai diligent et vous ferai connaître</l>
             <l>Qu'un amant méprisé sait prendre avec raison</l>
@@ -191,9 +198,11 @@
             <l>Est beaucoup plus heureux que ne sont tous les rois !</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="I2">
-          <head>SCENE 3</head>
-          <sp who="dom-jouan" xml:id="II03-1">
+        <div2 n="3" type="scene" xml:id="I2">
+          <head>SCENE 3<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#donjuan"/>
+            </listPerson></head>
+          <sp who="donjuan" xml:id="II03-1">
             <speaker>Dom Jouan, seul</speaker>
             <l>Va, fonde ton bonheur dessus cet hyménée ;</l>
             <l>Mon âme à ce tourment ne s’est point condamnée,</l>
@@ -225,8 +234,11 @@
             <l>Je puis voir Amarille à ma discrétion.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="I3">
-          <head>SCENE 4</head>
+        <div2 n="4" type="scene" xml:id="I3">
+          <head>SCENE 4<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#dom-alvaros"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>DOM ALVAROS, BRIGUELLE.</stage>
           <sp who="dom-alvaros" xml:id="II04-1">
             <speaker>Dom Alvaros</speaker>
@@ -311,15 +323,19 @@
             <l>Mais, Monsieur, le voici. Quelque bon vent l’amène.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="I4">
-          <head>SCENE 5</head>
+        <div2 n="5" type="scene" xml:id="I4">
+          <head>SCENE 5<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#dom-alvaros"/>
+            <person corresp="#donjuan"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>DOM ALVAROS, DOM JOUAN, BRIGUELLE.</stage>
           <sp who="dom-alvaros" xml:id="II05-1">
             <speaker>Dom Alvaros, voyant dom jouan</speaker>
             <l>Ciel, daignez assister un père malheureux,</l>
             <l>Touchez un peu son cœur, accomplissez mes vœux !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-2">
+          <sp who="donjuan" xml:id="II05-2">
             <speaker>Dom Jouan</speaker>
             <l>Mon père est en ce lieu. Que cet abord me blesse !</l>
             <l>La chose insupportable à voir, que la vieillesse.</l>
@@ -353,7 +369,7 @@
             <l>Qu'elle chasse aujourd’hui toutes ces passions</l>
             <l>Qui bannissent de vous les belles actions.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-4">
+          <sp who="donjuan" xml:id="II05-4">
             <speaker>Dom Jouan</speaker>
             <l>Toujours importuné des effets de l’envie,</l>
             <l>Je ne sais plus comment je dois régler ma vie,</l>
@@ -393,7 +409,7 @@
             <l>Et ne viens pas ici dans le sein de la paix</l>
             <l>Faire naître un malheur qu’on n’y trouva jamais.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-8">
+          <sp who="donjuan" xml:id="II05-8">
             <speaker>Dom Jouan</speaker>
             <l>Que j’ai peine à souffrir vos froides rêveries</l>
             <l>Et les lâches discours dont elles sont suivies !</l>
@@ -407,7 +423,7 @@
             <l>Quoi ! tu persisteras avec impunité</l>
             <l>Dans cette humeur altière ? Ah, l’esprit empesté !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-10">
+          <sp who="donjuan" xml:id="II05-10">
             <speaker>Dom Jouan</speaker>
             <l>Dans la belle saison de mes jeunes années,</l>
             <l>Vous ne rendrez jamais mes passions bornées,</l>
@@ -444,7 +460,7 @@
             <l>Si tu n’écoutes point ton père et la nature,</l>
             <l>Pense que c’est, mon fils, le Ciel qui t’en conjure.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-12">
+          <sp who="donjuan" xml:id="II05-12">
             <speaker>Dom Jouan</speaker>
             <l>Certes, je suis touché de l’état malheureux</l>
             <l>Où la fatalité d’un destin rigoureux</l>
@@ -470,7 +486,7 @@
             <l>Ce sont nos ennemis. Vos crimes exécrables</l>
             <l part="I">Nous vont faire périr.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-15">
+          <sp who="donjuan" xml:id="II05-15">
             <speaker>Dom Jouan il lui donne un coup de pied</speaker>
             <l part="M">Tais-toi !</l>
           </sp>
@@ -483,7 +499,7 @@
             <speaker>Dom Alvaros</speaker>
             <l>Traître ! au moins tu devrais respecter ma présence.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-18">
+          <sp who="donjuan" xml:id="II05-18">
             <speaker>Dom Jouan</speaker>
             <l>Je me venge partout, alors que l’on m’offense.</l>
             <l>Mais pour ne plus souffrir vos importunités,</l>
@@ -498,7 +514,7 @@
             <l>Suis tes dérèglements, contente ton envie,</l>
             <l>Mais au moins souviens-toi que tu me dois la vie.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-20">
+          <sp who="donjuan" xml:id="II05-20">
             <speaker>Dom Jouan</speaker>
             <l>Ah ! par cette raison je vous dois peu d’amour.</l>
             <l>C'est au gré du destin que nous venons au jour ;</l>
@@ -510,7 +526,7 @@
             <l>Eh bien ! je t’abandonne, infâme esprit abject,</l>
             <l>Qui ne suis de ton sens que le brutal objet.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-22">
+          <sp who="donjuan" xml:id="II05-22">
             <speaker>Dom Jouan</speaker>
             <l>Cet abandonnement est ce que je désire.</l>
           </sp>
@@ -518,7 +534,7 @@
             <speaker>Dom Alvaros</speaker>
             <l>Tu me rends malheureux, mais ton sort sera pire.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-24">
+          <sp who="donjuan" xml:id="II05-24">
             <speaker>Dom Jouan</speaker>
             <l>Que le destin se bande ou pour ou contre moi,</l>
             <l>Père, princes ni dieux ne me feront la loi.</l>
@@ -527,7 +543,7 @@
             <speaker>Dom Alvaros</speaker>
             <l>Le moindre des humains suffit pour te détruire.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-26">
+          <sp who="donjuan" xml:id="II05-26">
             <speaker>Dom Jouan</speaker>
             <l>Hors votre esprit blessé, rien me saurait nuire.</l>
           </sp>
@@ -536,7 +552,7 @@
             <l>Superbe, j’ai pour toi trop de discrétion,</l>
             <l>Mais crains dans ma fureur ma malédiction.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-28">
+          <sp who="donjuan" xml:id="II05-28">
             <speaker>Dom Jouan</speaker>
             <l>Vous recevez la mienne, et de votre insolence</l>
             <l part="I">Le juste payement.</l>
@@ -549,7 +565,7 @@
             <l>Traître, il faut que ces mains t’arrachent les entrailles,</l>
             <l>Que qui te mit au jour fasse tes funérailles.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-30">
+          <sp who="donjuan" xml:id="II05-30">
             <speaker>Dom Jouan</speaker>
             <l>Déplore ton malheur, peste contre le sort,</l>
             <l part="I">Mais ne m’approche pas.</l>
@@ -558,7 +574,7 @@
             <speaker>Dom Alvaros</speaker>
             <l part="F">Ah, que ne suis-je mort !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="II05-32">
+          <sp who="donjuan" xml:id="II05-32">
             <speaker>Dom Jouan</speaker>
             <l part="I">Toi, suis-moi.</l>
           </sp>
@@ -569,8 +585,10 @@
             <l>Mais courons, car il est fort libéral de coups.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="I5">
-          <head>SCENE 6</head>
+        <div2 n="6" type="scene" xml:id="I5">
+          <head>SCENE 6<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#dom-alvaros"/>
+            </listPerson></head>
           <sp who="dom-alvaros" xml:id="II06-1">
             <speaker>Dom Alvaros, seul</speaker>
             <l>Ciel, êtes-vous sans yeux, sans armes, sans courroux,</l>
@@ -603,10 +621,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 type="act" xml:id="II">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 type="scene" xml:id="II0">
-          <head>SCENE 1</head>
+        <div2 n="1" type="scene" xml:id="II0">
+          <head>SCENE 1<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <sp who="briguelle" xml:id="III01-1">
             <speaker>Briguelle, seul</speaker>
             <l>C'est tout de bon, Destin, tu me fais enrager.</l>
@@ -637,8 +657,13 @@
             <l>Viendront nous égorger ainsi que des poulets.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="II1">
-          <head>SCENE 2</head>
+        <div2 n="2" type="scene" xml:id="II1">
+          <head>SCENE 2<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#amarille"/>
+            <person corresp="#briguelle"/>
+            <person corresp="#dom-pierre"/>
+            <person corresp="#donjuan"/>
+            </listPerson></head>
           <stage>AMARILLE, BRIGUELLE, DOM PIERRE, DOM JOUAN.</stage>
           <sp who="amarille" xml:id="III02-1">
             <speaker>Amarille</speaker>
@@ -657,7 +682,7 @@
             <l>Pour me déshonorer et toute ma famille !</l>
             <l part="I">Il faut perdre la vie.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III02-4">
+          <sp who="donjuan" xml:id="III02-4">
             <speaker>Dom Jouan</speaker>
             <l part="F">Ah, c’est trop t’épargner !</l>
             <l>Voilà ce qu’après moi l’obstiné peut gagner.</l>
@@ -666,7 +691,7 @@
             <speaker>Amarille, sortant de la maison</speaker>
             <l part="I">Mon père est mort !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III02-6">
+          <sp who="donjuan" xml:id="III02-6">
             <speaker>Dom Jouan</speaker>
             <l part="F">Faquins, si vous osez me suivre. . .</l>
           </sp>
@@ -706,8 +731,11 @@
             <l>L'emportant, rendez-lui ce déplorable office.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="II2">
-          <head>SCENE 3</head>
+        <div2 n="3" type="scene" xml:id="II2">
+          <head>SCENE 3<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#dom-philippe"/>
+            <person corresp="#amarille"/>
+            </listPerson></head>
           <stage>DOM PHILIPPE, AMARILLE,</stage>
           <sp who="dom-philippe" xml:id="III03-1">
             <speaker>Dom Philippe</speaker>
@@ -861,8 +889,10 @@
             <l>Nous pourrons arrêter le torrent de nos pleurs.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="II3">
-          <head>SCENE 4</head>
+        <div2 n="4" type="scene" xml:id="II3">
+          <head>SCENE 4<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <l>Briguelle sortant du coin où il s’était caché.</l>
           <sp who="briguelle" xml:id="III04-1">
             <speaker>Briguelle</speaker>
@@ -888,23 +918,26 @@
             <l>Non, je n’ai pour tout mal que la peur d’en avoir.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="II4">
-          <head>SCENE 5</head>
+        <div2 n="5" type="scene" xml:id="II4">
+          <head>SCENE 5<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#briguelle"/>
+            <person corresp="#donjuan"/>
+            </listPerson></head>
           <stage>BRIGUELLE, DOM JOUAN.</stage>
           <sp who="briguelle" xml:id="III05-1">
             <speaker>Briguelle, continuant</speaker>
             <l>Mais que vois-je passer le long de cette rue ?</l>
             <l>Ah, crainte ! vous voilà de nouveau revenue.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-2">
+          <sp who="donjuan" xml:id="III05-2">
             <speaker>Dom Jouan</speaker>
-            <l  part="I">Qui es-tu ?</l>
+            <l part="I">Qui es-tu ?</l>
           </sp>
           <sp who="briguelle" xml:id="III05-3">
             <speaker>Briguelle</speaker>
             <l part="F">Un valet qui passe son chemin.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-4">
+          <sp who="donjuan" xml:id="III05-4">
             <speaker>Dom Jouan</speaker>
             <l part="I">Comment t’appelles-tu ?</l>
           </sp>
@@ -913,7 +946,7 @@
             <l part="F">Ah, je n’en ferai rien !</l>
             <l part="I">Pourquoi dire mon nom ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-6">
+          <sp who="donjuan" xml:id="III05-6">
             <speaker>Dom Jouan</speaker>
             <l part="F">Tu le diras, je meure !</l>
             <l>Ou bien tu recevras mille coups tout à l’heure.</l>
@@ -924,7 +957,7 @@
             <l>J'ai bien d’autres soucis. Ah ! je n’y pense pas ;</l>
             <l>Je fuis de cette rue où l’on a fait carnage.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-8">
+          <sp who="donjuan" xml:id="III05-8">
             <speaker>Dom Jouan</speaker>
             <l part="I">Briguelle, est-ce point toi ?</l>
           </sp>
@@ -935,7 +968,7 @@
             <l>Sauvez-vous, qu’on nous va tous deux rouer de coups,</l>
             <l part="I">Si nous ne nous sauvons !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-10">
+          <sp who="donjuan" xml:id="III05-10">
             <speaker>Dom Jouan</speaker>
             <l part="F">Que ta frayeur est vaine !</l>
             <l>Quiconque me vaincra n’aura pas forme humaine.</l>
@@ -945,7 +978,7 @@
             <l>Monsieur, de tout mon cœur, je m’en vais prier Dieu</l>
             <l part="I">Qu'il m’assiste.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-12">
+          <sp who="donjuan" xml:id="III05-12">
             <speaker>Dom Jouan</speaker>
             <l part="F">Poltron ! Ah, demeure en ce lieu,</l>
             <l>Ou bien tu sentiras l’effet de ma colère.</l>
@@ -954,7 +987,7 @@
             <speaker>Briguelle</speaker>
             <l>Que ne me ferait-il, s’il a battu son père ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-14">
+          <sp who="donjuan" xml:id="III05-14">
             <speaker>Dom Jouan</speaker>
             <l>Vois-tu bien, tu dois vivre et mourir avec moi.</l>
           </sp>
@@ -963,7 +996,7 @@
             <l>Ah ! je ne veux qu’y vivre. Ah, nuit ! assiste-moi,</l>
             <l>Couvre-moi de ton ombre, afin que je l’évite.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-16">
+          <sp who="donjuan" xml:id="III05-16">
             <speaker>Dom Jouan</speaker>
             <l>Écoute-moi parler, ton seul babil m’irrite !</l>
           </sp>
@@ -971,7 +1004,7 @@
             <speaker>Briguelle</speaker>
             <l>Parlez si vous voulez, Monsieur, jusqu’à demain.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-18">
+          <sp who="donjuan" xml:id="III05-18">
             <speaker>Dom Jouan</speaker>
             <l>Tu sais bien que Dom Pierre est mort, et par ma main.</l>
           </sp>
@@ -979,7 +1012,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Que trop !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-20">
+          <sp who="donjuan" xml:id="III05-20">
             <speaker>Dom Jouan</speaker>
             <l part="M">Qu'on me poursuit.</l>
           </sp>
@@ -990,7 +1023,7 @@
             <l>Car si nous étions pris, je serais tôt pendu ;</l>
             <l>Laissez-moi donc aller, Monsieur, je suis perdu.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-22">
+          <sp who="donjuan" xml:id="III05-22">
             <speaker>Dom Jouan</speaker>
             <l>Eh bien ! si tu crains tant, j’emprunterai ta forme,</l>
             <l part="I">Tes habits pour les miens.</l>
@@ -1002,7 +1035,7 @@
             <l>Je suis fort bien, Monsieur, dedans ce vêtement ;</l>
             <l>Gardez vos beaux habits avec votre malice.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-24">
+          <sp who="donjuan" xml:id="III05-24">
             <speaker>Dom Jouan</speaker>
             <l part="I">Sais-tu que je le veux ?</l>
           </sp>
@@ -1013,7 +1046,7 @@
             <l>Monsieur, de vos bienfaits, je suis reconnaissant,</l>
             <l>Mais non pas jusqu’à perdre et l’honneur et la vie.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-26">
+          <sp who="donjuan" xml:id="III05-26">
             <speaker>Dom Jouan</speaker>
             <l>Coquin ! mais de ton maître elle sera ravie :</l>
             <l>Les archers pour m’avoir visitent en tous lieux.</l>
@@ -1026,7 +1059,7 @@
             <l>Et leurs méchants desseins ne nous paraissent pas.</l>
             <l>Que ne nous laissent-ils ? Nous ne les cherchons pas.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-28">
+          <sp who="donjuan" xml:id="III05-28">
             <speaker>Dom Jouan</speaker>
             <l>C'est discourir en vain. Sans plus causer, Briguelle,</l>
             <l part="I">Donne-moi tes habits.</l>
@@ -1038,7 +1071,7 @@
             <l>Quand je verrais ici des diables déchaînés,</l>
             <l part="I">Je ne le ferais pas.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-30">
+          <sp who="donjuan" xml:id="III05-30">
             <speaker>Dom Jouan</speaker>
             <l part="F">Tu le feras, j’en jure,</l>
             <l part="I">Ou je vais t’égorger.</l>
@@ -1047,7 +1080,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">La maudite aventure !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-32">
+          <sp who="donjuan" xml:id="III05-32">
             <speaker>Dom Jouan</speaker>
             <l>Ôte donc tes habits, ou je t’assommerai,</l>
             <l>Et puis facilement je te les ôterai.</l>
@@ -1057,7 +1090,7 @@
             <l>À ce prix-là, jamais n’aurai valet de chambre.</l>
             <l>Donnez-moi vos habits pleins de civette et d’ambre.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="III05-34">
+          <sp who="donjuan" xml:id="III05-34">
             <speaker>Dom Jouan</speaker>
             <l>Viens dessous ce balcon, je te les donnerai.</l>
           </sp>
@@ -1066,8 +1099,12 @@
             <l>Si je ne suis perdu, je suis bien égaré.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="II5">
-          <head>SCENE 6</head>
+        <div2 n="6" type="scene" xml:id="II5">
+          <head>SCENE 6<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#prevot"/>
+            <person corresp="#archer1"/>
+            <person corresp="#archer2"/>
+            </listPerson></head>
           <stage>LE PRÉVÔT ET LES ARCHERS.</stage>
           <sp who="prevot" xml:id="III06-1">
             <speaker>Le prévôt</speaker>
@@ -1112,8 +1149,13 @@
             <l>Tenons-nous donc, Monsieur, dessus la défensive.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="II6">
-          <head>SCENE 7</head>
+        <div2 n="7" type="scene" xml:id="II6">
+          <head>SCENE 7<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#archer2"/>
+            <person corresp="#prevot"/>
+            <person corresp="#briguelle"/>
+            <person corresp="#archer1"/>
+            </listPerson></head>
           <stage>LE PRÉVÔT, BRIGUELLE, LES ARCHERS.</stage>
           <sp who="archer2" xml:id="III07-1">
             <speaker>Autre archer</speaker>
@@ -1182,8 +1224,10 @@
             <l part="I">Archers, retirons-nous.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="II7">
-          <head>SCENE 8</head>
+        <div2 n="8" type="scene" xml:id="II7">
+          <head>SCENE 8<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <sp who="briguelle" xml:id="III08-1">
             <speaker>Briguelle, seul</speaker>
             <l part="F">Allez, et promptement,</l>
@@ -1205,10 +1249,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 type="act" xml:id="III">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 type="scene" xml:id="III0">
-          <head>SCENE 1</head>
+        <div2 n="1" type="scene" xml:id="III0">
+          <head>SCENE 1<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#pelerin"/>
+            </listPerson></head>
           <sp who="pelerin" xml:id="IV01-1">
             <speaker>Un pèlerin, dans un bois</speaker>
             <l>Beau désir, qui te donne empire sur mes sens ?</l>
@@ -1255,8 +1301,12 @@
             <l>Allons donc y goûter un moment de repos.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="III1">
-          <head>SCENE 2</head>
+        <div2 n="2" type="scene" xml:id="III1">
+          <head>SCENE 2<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#briguelle"/>
+            <person corresp="#donjuan"/>
+            <person corresp="#pelerin"/>
+            </listPerson></head>
           <stage>DOM JOUAN, BRIGUELLE, LE PÈLERIN.</stage>
           <sp who="briguelle" xml:id="IV02-1">
             <speaker>Briguelle</speaker>
@@ -1266,7 +1316,7 @@
             <l>Et vous êtes un diable, ou l’allez devenir.</l>
             <l>Mais comment avez-vous pu sortir de la ville ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-2">
+          <sp who="donjuan" xml:id="IV02-2">
             <speaker>Dom Jouan</speaker>
             <l>Cette chose, Briguelle, était peu difficile :</l>
             <l>Ayant sous tes habits la façon d’un valet,</l>
@@ -1298,7 +1348,7 @@
             <l>Quelque autre avecque vous pourra faire voyage.</l>
             <l part="I">Vous avez vos habits ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-4">
+          <sp who="donjuan" xml:id="IV02-4">
             <speaker>Dom Jouan</speaker>
             <l part="F">Je te les donnerai</l>
             <l part="I">À la première ville.</l>
@@ -1309,7 +1359,7 @@
             <l>Je crois que l’on verra plutôt mes funérailles,</l>
             <l part="I">Car il dissipe tout !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-6">
+          <sp who="donjuan" xml:id="IV02-6">
             <speaker>Dom Jouan</speaker>
             <l part="F">Échappé des canailles</l>
             <l>Qui t’ont voulu saisir, comment te sauvas-tu ?</l>
@@ -1322,7 +1372,7 @@
             <l>Sans boire ni manger, car, Monsieur, en Espagne</l>
             <l>On rencontre plutôt un trou qu’un cabaret.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-8">
+          <sp who="donjuan" xml:id="IV02-8">
             <speaker>Dom Jouan</speaker>
             <l>Dedans l’occasion tu n’es pas maladroit.</l>
           </sp>
@@ -1333,7 +1383,7 @@
             <l>Voir des archers est plus que de monter sur l’ours,</l>
             <l>Et que dessus son dos faire cinq ou six tours.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-10">
+          <sp who="donjuan" xml:id="IV02-10">
             <speaker>Dom Jouan</speaker>
             <l>Devenu si brave homme et si plein de vaillance,</l>
             <l>Pour toi j’aurai respect et beaucoup d’indulgence ;</l>
@@ -1346,7 +1396,7 @@
             <speaker>Briguelle</speaker>
             <l>Bien, bien, je vous reprends ; je le veux bien aussi.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-12">
+          <sp who="donjuan" xml:id="IV02-12">
             <speaker>Dom Jouan</speaker>
             <l>Va-t’en donc promptement à deux milles d’ici</l>
             <l>T'informer s’il n’est point quelque vaisseau qui parte,</l>
@@ -1357,7 +1407,7 @@
             <speaker>Briguelle</speaker>
             <l>Donc, de longtemps, Monsieur, je ne verrai parents.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-14">
+          <sp who="donjuan" xml:id="IV02-14">
             <speaker>Dom Jouan</speaker>
             <l>Ah, grossier ! tes parents sont par toute la terre,</l>
             <l>En Allemagne, en Flandre, en France, en Angleterre,</l>
@@ -1369,7 +1419,7 @@
             <l>Maître Pierre connaît mon père et mes ancêtres !</l>
             <l>Moi, j’aurais des parents si chiens, si loups, si traîtres !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-16">
+          <sp who="donjuan" xml:id="IV02-16">
             <speaker>Dom Jouan</speaker>
             <l>Tu ne prends pas mon sens ; va donc où je t’ai dit.</l>
           </sp>
@@ -1379,7 +1429,7 @@
             <l>Avez-vous de l’argent pour faire ce voyage ?</l>
             <l>Vous savez bien qu’aux champs on mange davantage.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-18">
+          <sp who="donjuan" xml:id="IV02-18">
             <speaker>Dom Jouan</speaker>
             <l>Va, va, j’ai quelque argent, nous ne manquerons pas,</l>
             <l>Et le bonhomme enfin n’en enverrait-il pas</l>
@@ -1394,7 +1444,7 @@
             <l>Et pour qui va s’armer la colère céleste ;</l>
             <l part="I">Vous devez abîmer.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-20">
+          <sp who="donjuan" xml:id="IV02-20">
             <speaker>Dom Jouan</speaker>
             <l part="F">Et par quelle raison ?</l>
           </sp>
@@ -1402,7 +1452,7 @@
             <speaker>Briguelle</speaker>
             <l>Étourdi des archers, j’allai dans la maison.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-22">
+          <sp who="donjuan" xml:id="IV02-22">
             <speaker>Dom Jouan</speaker>
             <l part="I">Quoi ? dans la nôtre ?</l>
           </sp>
@@ -1410,7 +1460,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Oui, dedans la vôtre même.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-24">
+          <sp who="donjuan" xml:id="IV02-24">
             <speaker>Dom Jouan</speaker>
             <l part="I">Eh bien ?</l>
           </sp>
@@ -1421,7 +1471,7 @@
             <l>Son fils, son traître fils, par un étrange sort,</l>
             <l part="I">En est l’infâme auteur.»</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-26">
+          <sp who="donjuan" xml:id="IV02-26">
             <speaker>Dom Jouan</speaker>
             <l part="F">Cette chose est cruelle.</l>
           </sp>
@@ -1431,7 +1481,7 @@
             <l>Ce fut un des voisins ne me connaissant pas,</l>
             <l>Qui me dit qu’il venait de mourir en ses bras.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-28">
+          <sp who="donjuan" xml:id="IV02-28">
             <speaker>Dom Jouan</speaker>
             <l>Ah ! ce coup me surprend, Briguelle, je l’avoue.</l>
             <l>Mon père est mort. Ah, Dieux ! ah, le destin se joue</l>
@@ -1451,7 +1501,7 @@
             <l>Il a le deuil au cœur, il est hors de lui-même.</l>
             <l part="I">Monsieur.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-30">
+          <sp who="donjuan" xml:id="IV02-30">
             <speaker>Dom Jouan</speaker>
             <l part="F">Je suis, Briguelle, en un désordre extrême.</l>
           </sp>
@@ -1459,7 +1509,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Courage, il se repent.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-32">
+          <sp who="donjuan" xml:id="IV02-32">
             <speaker>Dom Jouan</speaker>
             <l part="F">Ah, funeste rapport !</l>
             <l>Dis-moi, n’as-tu point su comme arriva sa mort ?</l>
@@ -1472,7 +1522,7 @@
             <l>D'avoir vu votre orgueil jusqu’à ce point monter…</l>
             <l>Enfin, on me l’a dit et je n’en doute guère.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-34">
+          <sp who="donjuan" xml:id="IV02-34">
             <speaker>Dom Jouan</speaker>
             <l>Il m’irrita, Briguelle ; il m’était trop sévère.</l>
             <l>J’eus tort de le fâcher, mais que ne fait-on pas</l>
@@ -1483,7 +1533,7 @@
             <l>Il se faut modérer dans ses chaleurs bouillantes</l>
             <l>Et ne pas s’emporter aux choses violentes.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-36">
+          <sp who="donjuan" xml:id="IV02-36">
             <speaker>Dom Jouan</speaker>
             <l>Pourquoi croit-on qu’il soit ainsi mort de regret ?</l>
             <l>J'eus bruit avecque lui, mais ce fut en secret.</l>
@@ -1495,7 +1545,7 @@
             <l>Et que même en mourant il se plaignait de vous,</l>
             <l>Et qu’il est mort enfin d’un violent courroux.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-38">
+          <sp who="donjuan" xml:id="IV02-38">
             <speaker>Dom Jouan</speaker>
             <l>Il ne serait pas mort, s’il n’eût été bizarre.</l>
             <l>Mais, vois s’il n’était pas et cruel et barbare,</l>
@@ -1507,7 +1557,7 @@
             <l>Allez, parlant ainsi, vous êtes méchant homme,</l>
             <l>Et l’on ne pourra pas vous en absoudre à Rome.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-40">
+          <sp who="donjuan" xml:id="IV02-40">
             <speaker>Dom Jouan</speaker>
             <l part="I">Que veux-tu que je fasse ?</l>
           </sp>
@@ -1516,7 +1566,7 @@
             <l part="F">Il faut verser des pleurs,</l>
             <l>Et plaindre votre père, ainsi que vos malheurs.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-42">
+          <sp who="donjuan" xml:id="IV02-42">
             <speaker>Dom Jouan</speaker>
             <l>Il avait tant vécu ! Moi, j’aurais ces faiblesses !</l>
             <l>Mon cœur ne produit point de semblables bassesses.</l>
@@ -1528,7 +1578,7 @@
             <l>Votre cœur est de roche, et la roche est moins dure.</l>
             <l>En vous servant, je cherche une triste aventure.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-44">
+          <sp who="donjuan" xml:id="IV02-44">
             <speaker>Dom Jouan</speaker>
             <l>Écoute donc, j’aurai doublement irrité</l>
             <l>La justice, et je crains, si je suis arrêté,</l>
@@ -1539,7 +1589,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">L'on vous fera la guerre.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-46">
+          <sp who="donjuan" xml:id="IV02-46">
             <speaker>Dom Jouan</speaker>
             <l>Nous serons poursuivis ; changeons de vêtements.</l>
           </sp>
@@ -1550,7 +1600,7 @@
             <l>Ces choses à présent sont fort peu nécessaires.</l>
             <l part="I">Sauvons-nous seulement.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-48">
+          <sp who="donjuan" xml:id="IV02-48">
             <speaker>Dom Jouan</speaker>
             <l part="F">J'approuve ton dessein.</l>
             <l part="I">Viens là, qui vois-tu là ?</l>
@@ -1559,7 +1609,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Qui ? C'est un pèlerin.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-50">
+          <sp who="donjuan" xml:id="IV02-50">
             <speaker>Dom Jouan</speaker>
             <l part="I">Holà ! ho, mon ami !</l>
           </sp>
@@ -1571,7 +1621,7 @@
             <speaker>Briguelle</speaker>
             <l>Ce sont honnêtes gens ; ne crains rien, mon pauvre homme.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-53">
+          <sp who="donjuan" xml:id="IV02-53">
             <speaker>Dom Jouan</speaker>
             <l part="I">Que fais-tu dans ce lieu ?</l>
           </sp>
@@ -1580,7 +1630,7 @@
             <l part="F">Travaillé du chemin,</l>
             <l>J'y respire en repos un air doux et bénin.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-55">
+          <sp who="donjuan" xml:id="IV02-55">
             <speaker>Dom Jouan</speaker>
             <l part="I">De quel côté viens-tu ?</l>
           </sp>
@@ -1595,7 +1645,7 @@
             <l>Il est peu de saints lieux où ne m’ayent porté</l>
             <l>Les plus ardents désirs de curiosité.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-58">
+          <sp who="donjuan" xml:id="IV02-58">
             <speaker>Dom Jouan</speaker>
             <l>Briguelle, cet habit me serait fort commode</l>
             <l part="I">Pour n’être pas connu.</l>
@@ -1607,7 +1657,7 @@
             <l>Avecque cet habit, il ne faut point rêver</l>
             <l>Quels galants on mettra pour être à la moderne.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-60">
+          <sp who="donjuan" xml:id="IV02-60">
             <speaker>Dom Jouan</speaker>
             <l>Tu m’étourdis toujours de quelque baliverne.</l>
             <l>Mon ami, j’ai besoin de cet habillement :</l>
@@ -1626,7 +1676,7 @@
             <l>Il m’est cher, et pour vous il est trop peu de chose</l>
             <l>Puis, tout mon bien consiste en ce seul vêtement.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-64">
+          <sp who="donjuan" xml:id="IV02-64">
             <speaker>Dom Jouan</speaker>
             <l>Je te rendrai comptant, donne-le seulement.</l>
           </sp>
@@ -1634,7 +1684,7 @@
             <speaker>Le pèlerin</speaker>
             <l>Quoi ! Monsieur, voulez-vous user de tyrannie ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-66">
+          <sp who="donjuan" xml:id="IV02-66">
             <speaker>Dom Jouan</speaker>
             <l part="I">Ah ! donne-le, te dis-je.</l>
           </sp>
@@ -1642,7 +1692,7 @@
             <speaker>Le pèlerin</speaker>
             <l part="F">Ah, prenez donc ma vie !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-68">
+          <sp who="donjuan" xml:id="IV02-68">
             <speaker>Dom Jouan</speaker>
             <l>Dans ma bourse, tiens, prends tout ce que tu voudras.</l>
           </sp>
@@ -1657,7 +1707,7 @@
             <l>De vivre indifférent pour l’argent et pour l’or ;</l>
             <l>Et dedans cet habit je vois tout mon trésor.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-71">
+          <sp who="donjuan" xml:id="IV02-71">
             <speaker>Dom Jouan</speaker>
             <l>Sans plus me contester, pense à me satisfaire.</l>
             <l>Passe sous cet ormeau, évite ma colère.</l>
@@ -1666,7 +1716,7 @@
             <speaker>Le pèlerin</speaker>
             <l part="I">Monsieur, considérez…</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV02-73">
+          <sp who="donjuan" xml:id="IV02-73">
             <speaker>Dom Jouan</speaker>
             <l part="F">Tes cris sont superflus ;</l>
             <l>Si tu chéris ton bien, ne me résiste plus.</l>
@@ -1674,8 +1724,11 @@
             <l part="I">Va promptement au port.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="III2">
-          <head>SCENE 3</head>
+        <div2 n="3" type="scene" xml:id="III2">
+          <head>SCENE 3<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#briguelle"/>
+            <person corresp="#dom-philippe"/>
+            </listPerson></head>
           <stage>BRIGUELLE, DOM PHILIPPE.</stage>
           <sp who="briguelle" xml:id="IV03-1">
             <speaker>Briguelle</speaker>
@@ -1713,10 +1766,13 @@
             <l>Dans peu venger la mère, le père et la maîtresse.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="III3">
-          <head>SCENE 4</head>
+        <div2 n="4" type="scene" xml:id="III3">
+          <head>SCENE 4<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#donjuan"/>
+            <person corresp="#dom-philippe"/>
+            </listPerson></head>
           <stage>DOM JOUAN, DOM PHILIPPE.</stage>
-          <sp who="dom-jouan" xml:id="IV04-1">
+          <sp who="donjuan" xml:id="IV04-1">
             <speaker>Dom Jouan, en habit de pèlerin</speaker>
             <l>Dieux ! c’est mon ennemi ; ce traître m’aperçoit.</l>
             <l>Briguelle a mon épée, et que faire ? Il me voit.</l>
@@ -1730,7 +1786,7 @@
             <l>Si bien qu’il pourrait bien avoir vu cet infâme,</l>
             <l>De qui je dois dans peu couper l’injuste trame.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-3">
+          <sp who="donjuan" xml:id="IV04-3">
             <speaker>Dom Jouan</speaker>
             <l>Il vient ; changeons la voix, il ne nous connaît pas.</l>
           </sp>
@@ -1739,7 +1795,7 @@
             <l>Puis-je interrompre ici la course de tes pas</l>
             <l part="I">Sans te fâcher, ami ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-5">
+          <sp who="donjuan" xml:id="IV04-5">
             <speaker>Dom Jouan</speaker>
             <l part="F">Monsieur, sans raillerie,</l>
             <l>Vous pouvez librement contenter votre envie.</l>
@@ -1757,7 +1813,7 @@
             <l>Celui dont je te parle a ma taille et mon port,</l>
             <l>Mais le ciel lui prépare un plus funeste sort.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-7">
+          <sp who="donjuan" xml:id="IV04-7">
             <speaker>Dom Jouan</speaker>
             <l>Monsieur, si je l’ai vu, je n’en ai pas mémoire.</l>
             <l>Vous servant en ceci, j’aurais beaucoup de gloire ;</l>
@@ -1769,7 +1825,7 @@
             <l>Quoi ? Verrai-je toujours mon attente trompée ?</l>
             <l part="I">Ne point voir ce bourreau !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-9">
+          <sp who="donjuan" xml:id="IV04-9">
             <speaker>Dom Jouan, à part</speaker>
             <l part="F">Si j’avais mon épée,</l>
             <l>Tes insolents propos auraient leur châtiment,</l>
@@ -1781,7 +1837,7 @@
             <l>Ne pouvoir rencontrer un barbare, un perfide,</l>
             <l>Dont les moindres forfaits sont plus qu’un parricide.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-11">
+          <sp who="donjuan" xml:id="IV04-11">
             <speaker>Dom Jouan</speaker>
             <l>Celui que vous cherchez est donc bien odieux.</l>
           </sp>
@@ -1795,7 +1851,7 @@
             <l>Et par un sort nouveau, furieux et contraire,</l>
             <l>L'infâme a massacré jusqu’à son propre père.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-13">
+          <sp who="donjuan" xml:id="IV04-13">
             <speaker>Dom Jouan</speaker>
             <l>Après tant de forfaits, il doit être puni.</l>
           </sp>
@@ -1809,7 +1865,7 @@
             <l>Qui le fassent mourir d’une mort plus sévère,</l>
             <l>Et son enfer consiste aux feux de ma colère.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-15">
+          <sp who="donjuan" xml:id="IV04-15">
             <speaker>Dom Jouan</speaker>
             <l>Je viens de concevoir un assuré moyen.</l>
           </sp>
@@ -1817,7 +1873,7 @@
             <speaker>Dom Philippe</speaker>
             <l>Si tu peux m’assister, dispose de mon bien.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-17">
+          <sp who="donjuan" xml:id="IV04-17">
             <speaker>Dom Jouan</speaker>
             <l>Je me suis rencontré dans de semblables peines,</l>
             <l>Mais j’ai toujours trouvé mes espérances vaines,</l>
@@ -1833,7 +1889,7 @@
             <l>Ah ! sans tarder, ami, je suivrai ton exemple,</l>
             <l>Ne m’abandonne point, allons chercher un temple.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-19">
+          <sp who="donjuan" xml:id="IV04-19">
             <speaker>Dom Jouan</speaker>
             <l>Les temples sont partout où les cœurs sont dévots ;</l>
             <l>Faisons notre prière au Ciel en peu de mots.</l>
@@ -1846,7 +1902,7 @@
             <stage>À part.</stage>
             <l>Je crois que c’est un saint. Ah, l’homme merveilleux !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-21">
+          <sp who="donjuan" xml:id="IV04-21">
             <speaker>Dom Jouan</speaker>
             <l>Monsieur, que faites-vous ? Il faut quitter les armes,</l>
             <l>Et pour forcer le Ciel, il ne faut que des larmes,</l>
@@ -1859,7 +1915,7 @@
             <l>C'était innocemment que j’avais mon épée,</l>
             <l part="I">Mais je la vais quitter.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-23">
+          <sp who="donjuan" xml:id="IV04-23">
             <speaker>Dom Jouan prend l’épée de dom philippe</speaker>
             <l part="F">N'aye plus de souci,</l>
             <l>Ton ennemi mortel est maintenant ici.</l>
@@ -1872,7 +1928,7 @@
             <speaker>Dom Philippe</speaker>
             <l>Quoi, traître ! Ô Ciel, en qui j’ai mis ma confiance !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-25">
+          <sp who="donjuan" xml:id="IV04-25">
             <speaker>Dom Jouan</speaker>
             <l>Profite du moment que j’ai de patience.</l>
           </sp>
@@ -1880,7 +1936,7 @@
             <speaker>Dom Philippe</speaker>
             <l>Quoi, bourreau ! je te trouve, et tu m’échapperas ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-27">
+          <sp who="donjuan" xml:id="IV04-27">
             <speaker>Dom Jouan</speaker>
             <l>Que tu fais de pitié ! Qui ne te plaindrait pas ?</l>
           </sp>
@@ -1889,7 +1945,7 @@
             <l>Il faut que ces deux mains t’arrachent les entrailles,</l>
             <l>Et qu’en mourant je fasse aussi tes funérailles.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-29">
+          <sp who="donjuan" xml:id="IV04-29">
             <speaker>Dom Jouan</speaker>
             <l>Si tu m’irrites trop, tu mourras de ma main.</l>
           </sp>
@@ -1903,7 +1959,7 @@
             <l>Ta trahison me vient de ravir mon épée,</l>
             <l>Mais il faut qu’à ta perte, elle soit occupée.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="IV04-31">
+          <sp who="donjuan" xml:id="IV04-31">
             <speaker>Dom Jouan</speaker>
             <l>Il faut donc que ta mort, et sans retardement,</l>
             <l>En prévienne aujourd’hui le funeste moment.</l>
@@ -1920,32 +1976,36 @@
             <l>Afin d’avoir l’honneur de combattre avec toi.</l>
             <l>Mais ton bras est trop peu pour un si grand emploi.</l>
           </sp>
-          <div2 type="scene" xml:id="III05">
-            <head>SCENE 5</head>
-            <sp who="dom-philippe" xml:id="IV04-32">
-              <speaker>Dom Philippe, seul</speaker>
-              <l>Est-il rien sous le Ciel d’égal à ma misère ?</l>
-              <l>Quand je crois me venger, tout me devient contraire.</l>
-              <l>Lorsque mon ennemi se livre entre mes mains,</l>
-              <l>L'injustice du sort, les destins inhumains,</l>
-              <l>Comme si c’était peu de me voir misérable,</l>
-              <l>Joignent ce trait fatal au malheur qui m’accable.</l>
-              <l>Ah, Ciel ! si tu prétends que je souffre ces maux,</l>
-              <l>Fais au moins que j’expire au fort de mes travaux :</l>
-              <l>Car vivre et ne pouvoir assouvir sa vengeance,</l>
-              <l>Alors qu’on la désire c’est par trop de souffrance.</l>
-              <l>Mais puisque mon mal m’est une nécessité,</l>
-              <l>Portons-le jusqu’au bout de la fatalité.</l>
-              <l>Marchons donc sur ses pas, nous trouverons des armes</l>
-              <l>Dont nous dissiperons nos malheurs, et nos charmes.</l>
-            </sp>
-          </div2>
+        </div2>
+        <div2 n="5" type="scene" xml:id="III05">
+          <head>SCENE 5<listPerson type="configuration" xml:id="conf22a">
+            <person corresp="#dom-philippe"/>
+            </listPerson></head>
+          <sp who="dom-philippe" xml:id="IV04-32">
+            <speaker>Dom Philippe, seul</speaker>
+            <l>Est-il rien sous le Ciel d’égal à ma misère ?</l>
+            <l>Quand je crois me venger, tout me devient contraire.</l>
+            <l>Lorsque mon ennemi se livre entre mes mains,</l>
+            <l>L'injustice du sort, les destins inhumains,</l>
+            <l>Comme si c’était peu de me voir misérable,</l>
+            <l>Joignent ce trait fatal au malheur qui m’accable.</l>
+            <l>Ah, Ciel ! si tu prétends que je souffre ces maux,</l>
+            <l>Fais au moins que j’expire au fort de mes travaux :</l>
+            <l>Car vivre et ne pouvoir assouvir sa vengeance,</l>
+            <l>Alors qu’on la désire c’est par trop de souffrance.</l>
+            <l>Mais puisque mon mal m’est une nécessité,</l>
+            <l>Portons-le jusqu’au bout de la fatalité.</l>
+            <l>Marchons donc sur ses pas, nous trouverons des armes</l>
+            <l>Dont nous dissiperons nos malheurs, et nos charmes.</l>
+          </sp>
         </div2>
       </div1>
-      <div1 type="act" xml:id="IV">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 type="scene" xml:id="IV0">
-          <head>SCENE 1</head>
+        <div2 n="1" type="scene" xml:id="IV0">
+          <head>SCENE 1<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#amarante"/>
+            </listPerson></head>
           <sp who="amarante" xml:id="V01-1">
             <speaker>Amarante, seule</speaker>
             <l>Amour, pourquoi viens-tu passer dans nos forêts ?</l>
@@ -1998,8 +2058,11 @@
             <l>Pour me bien conseiller, je la trouve assez fine.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="IV1">
-          <head>SCENE 2</head>
+        <div2 n="2" type="scene" xml:id="IV1">
+          <head>SCENE 2<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#briguelle"/>
+            <person corresp="#donjuan"/>
+            </listPerson></head>
           <stage>DOM JOUAN, BRIGUELLE.</stage>
           <sp who="briguelle" xml:id="V02-1">
             <speaker>Briguelle, sur le port de la mer sortant de faire naufrage</speaker>
@@ -2017,7 +2080,7 @@
             <l>Son vilain nez camus m’était insupportable :</l>
             <l part="I">Je crois qu’elle est punaise.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V02-2">
+          <sp who="donjuan" xml:id="V02-2">
             <speaker>Dom Jouan</speaker>
             <l part="F">Avecque tes visions,</l>
             <l>Tes paniques terreurs et tes illusions,</l>
@@ -2034,7 +2097,7 @@
             <l>Mais ne parlons-nous point l’un et l’autre en dormant ?</l>
             <l>Car je suis si surpris d’un pareil changement !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V02-4">
+          <sp who="donjuan" xml:id="V02-4">
             <speaker>Dom Jouan</speaker>
             <l>Vois-tu bien, la jeunesse est bouillante et peu sage,</l>
             <l>J'ai profité, Briguelle, en la peur du naufrage !</l>
@@ -2058,7 +2121,7 @@
             <l>A tué, massacré, violé tant de filles,</l>
             <l>Et qui faisiez passer tout cela pour vétilles ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V02-6">
+          <sp who="donjuan" xml:id="V02-6">
             <speaker>Dom Jouan</speaker>
             <l>Non, non, ce n’est plus moi : j’ai d’autres sentiments,</l>
             <l part="I">Et je te jurerais…</l>
@@ -2069,7 +2132,7 @@
             <l>Je connais dès longtemps votre façon de vivre.</l>
             <l>Et puis, pourquoi jurer, alors que l’on est ivre ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V02-8">
+          <sp who="donjuan" xml:id="V02-8">
             <speaker>Dom Jouan</speaker>
             <l>Ivre ? Avons-nous rien pris ? As-tu l’esprit perdu ?</l>
           </sp>
@@ -2079,7 +2142,7 @@
             <l>Grâce aux vagues, Monsieur, qui nous versaient à boire.</l>
             <l>Je m’étonne comment vous êtes sans mémoire.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V02-10">
+          <sp who="donjuan" xml:id="V02-10">
             <speaker>Dom Jouan</speaker>
             <l>Je t’entends ; mais quittons ces discours superflus :</l>
             <l>Le danger a paru, mais il ne parait plus.</l>
@@ -2095,7 +2158,7 @@
             <l>Dites-moi, pensez-vous surmonter ce démon</l>
             <l part="I">Ou ce vice enragé ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V02-12">
+          <sp who="donjuan" xml:id="V02-12">
             <speaker>Dom Jouan</speaker>
             <l part="F">Briguelle, tout de bon,</l>
             <l>Tu me vas voir mener une si sainte vie</l>
@@ -2108,7 +2171,7 @@
             <l>Il faudra donc, Monsieur, que ceux-là vous imitent</l>
             <l>Qui pour gagner le Ciel incessamment méditent.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V02-14">
+          <sp who="donjuan" xml:id="V02-14">
             <speaker>Dom Jouan</speaker>
             <l>Sur ce frêle élément où je t’ai vu pâlir,</l>
             <l>J'ai vu la vague prête à nous ensevelir ;</l>
@@ -2130,8 +2193,13 @@
             <l>Allons nous rafraîchir dans quelque hostellerie.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="IV2">
-          <head>SCENE 3</head>
+        <div2 n="3" type="scene" xml:id="IV2">
+          <head>SCENE 3<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#amarante"/>
+            <person corresp="#marilinde"/>
+            <person corresp="#donjuan"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>AMARANTE, MARILINDE, DOM JOUAN, BRIGUELLE.</stage>
           <sp who="amarante" xml:id="V03-1">
             <speaker>Amarante</speaker>
@@ -2146,7 +2214,7 @@
             <l>Ma fille, on ne voit point de berger en ces lieux</l>
             <l>Qui ne soit outragé du mal que font vos yeux.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-3">
+          <sp who="donjuan" xml:id="V03-3">
             <speaker>Dom Jouan</speaker>
             <l>Briguelle, vois-tu bien la gentille bergère ?</l>
           </sp>
@@ -2155,7 +2223,7 @@
             <l>Eh bien ! que vous importe ? Et qu’en voulez-vous faire ?</l>
             <l part="I">Ne vous souvient-il plus ?…</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-5">
+          <sp who="donjuan" xml:id="V03-5">
             <speaker>Dom Jouan</speaker>
             <l part="F">Où s’adressent tes pas ?</l>
           </sp>
@@ -2163,7 +2231,7 @@
             <speaker>Amarante</speaker>
             <l part="I">Que vous importe-t-il ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-7">
+          <sp who="donjuan" xml:id="V03-7">
             <speaker>Dom Jouan</speaker>
             <l part="F">Ne t’effarouche pas.</l>
             <l>J'aimerais mieux mourir que te mettre en colère.</l>
@@ -2181,7 +2249,7 @@
             <l>Je vous croyais tantôt un béatifié ;</l>
             <l>Mais de ce changement je m’étais défié.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-10">
+          <sp who="donjuan" xml:id="V03-10">
             <speaker>Dom Jouan</speaker>
             <l>Laisse-moi maintenant. Que ta taille est mignonne !</l>
           </sp>
@@ -2189,7 +2257,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Mais vous avez fait vœux…</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-12">
+          <sp who="donjuan" xml:id="V03-12">
             <speaker>Dom Jouan</speaker>
             <l part="F">Ce coquin-là raisonne.</l>
           </sp>
@@ -2202,7 +2270,7 @@
             <speaker>Amarante</speaker>
             <l part="I">Ah ! Monsieur, laissez-moi.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-15">
+          <sp who="donjuan" xml:id="V03-15">
             <speaker>Dom Jouan</speaker>
             <l part="F">Seule dans la campagne ?</l>
             <l>Il faut que je te suive et que je t’accompagne.</l>
@@ -2211,7 +2279,7 @@
             <speaker>Amarante</speaker>
             <l>Je ne vais seulement qu’à ce prochain hameau.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-17">
+          <sp who="donjuan" xml:id="V03-17">
             <speaker>Dom Jouan</speaker>
             <l part="I">Il n’importe en t’aimant.</l>
           </sp>
@@ -2220,7 +2288,7 @@
             <l part="F">Holà, Monsieur, tout beau !</l>
             <l>Ne vous échauffez pas, de peur d’être malade.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-19">
+          <sp who="donjuan" xml:id="V03-19">
             <speaker>Dom Jouan</speaker>
             <l>Pour l’être, il me suffit de ta gentille œillade.</l>
             <l>Assiste-moi, bergère, et quitte ton courroux.</l>
@@ -2233,7 +2301,7 @@
             <l>Quoique pauvre, Monsieur, je suis fille d’honneur,</l>
             <l>Et je n’écoute point un discours suborneur.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-21">
+          <sp who="donjuan" xml:id="V03-21">
             <speaker>Dom Jouan</speaker>
             <l>Ah ! mon dessein est juste, et si tu veux m’entendre,</l>
             <l>Tu verras qu’avec moi tu pourras tout prétendre.</l>
@@ -2248,7 +2316,7 @@
             <l>Qui des dames de cour gagnez l’affection,</l>
             <l part="I">Voudriez-vous bien de moi ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-23">
+          <sp who="donjuan" xml:id="V03-23">
             <speaker>Dom Jouan</speaker>
             <l part="F">Oui, puisque je t’estime.</l>
           </sp>
@@ -2256,7 +2324,7 @@
             <speaker>Briguelle</speaker>
             <l>La pauvrette ! Il la tient ; il en aura la dîme.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-25">
+          <sp who="donjuan" xml:id="V03-25">
             <speaker>Dom Jouan</speaker>
             <l>Je n’aime point la cour : son faste et sa beauté</l>
             <l>N'ont rien qui plaise au prix de ta simplicité.</l>
@@ -2275,7 +2343,7 @@
             <l>Qu'il faut vous avouer que je vous rends les armes.</l>
             <l>Mais, ne m’abusez pas, étant sous votre loi.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-27">
+          <sp who="donjuan" xml:id="V03-27">
             <speaker>Dom Jouan</speaker>
             <l>Je te promets dès l’heure et te donne ma foi.</l>
           </sp>
@@ -2284,7 +2352,7 @@
             <l>Me voyant mariée avec tant d’avantage,</l>
             <l>Je vais bien étonner tous les gens du village.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V03-29">
+          <sp who="donjuan" xml:id="V03-29">
             <speaker>Dom Jouan</speaker>
             <l>Sans tarder en ces lieux, allons voir tes parents.</l>
           </sp>
@@ -2293,8 +2361,10 @@
             <l>Allons ; vous les allez charmer dans leurs vieux ans.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="IV3">
-          <head>SCENE 4</head>
+        <div2 n="4" type="scene" xml:id="IV3">
+          <head>SCENE 4<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <sp who="briguelle" xml:id="V04-1">
             <speaker>Briguelle, seul</speaker>
             <l>Est-il un plus grand fourbe ? Est-il un plus grand traître,</l>
@@ -2319,9 +2389,13 @@
             <l>J'ai fait ce que j’ai pu pour lui sauver l’honneur.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="IV4">
-          <head>SCENE 5</head>
-          <l>La danse des noces de village.</l>
+        <div2 n="5" type="scene" xml:id="IV4">
+          <head>SCENE 5<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#bon-temps"/>
+            <person corresp="#blaise"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
+          <stage>La danse des noces de village.</stage>
           <stage>BON-TEMPS, BLAISE, BERGERS ET BERGÈRES.</stage>
           <sp who="bon-temps" xml:id="V05-1">
             <speaker>Bon-temps, père de la bergère</speaker>
@@ -2402,8 +2476,11 @@
             <l part="I">Elle en tient. Elle vient.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="IV5">
-          <head>SCÈNE 6</head>
+        <div2 n="6" type="scene" xml:id="IV5">
+          <head>SCÈNE 6<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#amarante"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>AMARANTE, BRIGUELLE.</stage>
           <sp who="amarante" xml:id="V06-1">
             <speaker>Amarante</speaker>
@@ -2463,10 +2540,14 @@
             <l part="I">Mon maître.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="IV6">
-          <head>SCENE 7</head>
-          <stage>DOM JOUAN, BRIGUELLE., AMARANTE.</stage>
-          <sp who="dom-jouan" xml:id="V07-1">
+        <div2 n="7" type="scene" xml:id="IV6">
+          <head>SCENE 7<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#donjuan"/>
+            <person corresp="#briguelle"/>
+            <person corresp="#amarante"/>
+            </listPerson></head>
+          <stage>DOM JOUAN, BRIGUELLE, AMARANTE.</stage>
+          <sp who="donjuan" xml:id="V07-1">
             <speaker>Dom Jouan</speaker>
             <l part="F">Sans tarder partons d’ici, Briguelle.</l>
           </sp>
@@ -2474,7 +2555,7 @@
             <speaker>Briguelle, lui montrant la bergère</speaker>
             <l part="I">Je ne le veux que trop; mais, Monsieur…</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V07-3">
+          <sp who="donjuan" xml:id="V07-3">
             <speaker>Dom Jouan</speaker>
             <l part="F">Bagatelle !</l>
             <l>Il est un bon logis à trente pas d’ici,</l>
@@ -2492,7 +2573,7 @@
             <l>Hé, Monsieur, rendez-lui, ne soyez point voleur,</l>
             <l>Pourquoi l’emportez-vous à ceux qui n’en ont guère ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V07-6">
+          <sp who="donjuan" xml:id="V07-6">
             <speaker>Dom Jouan</speaker>
             <l>Que veut-elle de moi ? Que me veux-tu, bergère ?</l>
             <l>Quelle es-tu ? D'où viens-tu ? Qui te met tout en pleurs ?</l>
@@ -2503,7 +2584,7 @@
             <l>Quoi ! pour comble de maux, l’auteur de ma disgrâce</l>
             <l>Ne me veut plus connaître, ose avoir cette audace ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V07-8">
+          <sp who="donjuan" xml:id="V07-8">
             <speaker>Dom Jouan</speaker>
             <l>T'a-t-on fait quelque mal ? ne me le cèle pas.</l>
           </sp>
@@ -2511,7 +2592,7 @@
             <speaker>Amarante</speaker>
             <l part="I">Ah ! vous le savez trop.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V07-10">
+          <sp who="donjuan" xml:id="V07-10">
             <speaker>Dom Jouan</speaker>
             <l part="F">Je ne te connais pas.</l>
           </sp>
@@ -2520,7 +2601,7 @@
             <l>Ne vous souvient-il plus ? Hélas ! le puis-je dire ?</l>
             <l>Il faut que je me tue et que je me déchire.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V07-12">
+          <sp who="donjuan" xml:id="V07-12">
             <speaker>Dom Jouan</speaker>
             <l part="I">Quoi ! faire la Lucrèce ?</l>
           </sp>
@@ -2529,7 +2610,7 @@
             <l part="F">Ah ! sans me secourir,</l>
             <l>Donnez-moi par ce fer le moyen de mourir !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V07-14">
+          <sp who="donjuan" xml:id="V07-14">
             <speaker>Dom Jouan</speaker>
             <l>Laisse-la maintenant, et qu’elle se console.</l>
             <l>Adieu, retirez-vous, vous êtes une folle ;</l>
@@ -2540,7 +2621,7 @@
             <speaker>Amarante</speaker>
             <l>Le Ciel vous punira du tort que vous me faites.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V07-16">
+          <sp who="donjuan" xml:id="V07-16">
             <speaker>Dom Jouan</speaker>
             <l>Je ne vous vis jamais, je ne sais qui vous êtes.</l>
           </sp>
@@ -2552,8 +2633,11 @@
             <l>Y cachant pour jamais cette triste aventure.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="IV7">
-          <head>SCÈNE 8</head>
+        <div2 n="8" type="scene" xml:id="IV7">
+          <head>SCÈNE 8<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#briguelle"/>
+            <person corresp="#donjuan"/>
+            </listPerson></head>
           <stage>BRIGUELLE, DOM JOUAN.</stage>
           <sp who="briguelle" xml:id="V08-1">
             <speaker>Briguelle</speaker>
@@ -2564,7 +2648,7 @@
             <l>Quand je verrais des fers, des cordeaux, des prisons,</l>
             <l>Je ne me tairais pas, je dirais mes raisons.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-2">
+          <sp who="donjuan" xml:id="V08-2">
             <speaker>Dom Jouan</speaker>
             <l>Cela m’importe peu que mon valet raisonne.</l>
           </sp>
@@ -2575,7 +2659,7 @@
             <l>Vous aviez oublié qu’Amour était charmant,</l>
             <l>Ou bien vous ignoriez l’effet de sa puissance.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-4">
+          <sp who="donjuan" xml:id="V08-4">
             <speaker>Dom Jouan</speaker>
             <l>Le vice a sa saison comme la repentance,</l>
             <l>Et selon que l’esprit se trouve embarrassé,</l>
@@ -2600,7 +2684,7 @@
             <l>Tope à tout, mais un jour vous serez attrapé,</l>
             <l>Car le fourbe à la fin est lui-même dupé.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-6">
+          <sp who="donjuan" xml:id="V08-6">
             <speaker>Dom Jouan, voyant le tombeau de dom pierre dans le bois</speaker>
             <l>Laissons là ces discours ; vois-tu cette figure ?</l>
           </sp>
@@ -2608,7 +2692,7 @@
             <speaker>Briguelle</speaker>
             <l>Oui, Monsieur, et j’en crains quelque mauvais augure.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-8">
+          <sp who="donjuan" xml:id="V08-8">
             <speaker>Dom Jouan</speaker>
             <l>Ah ! grossier, approchons, et voyons ce que c’est.</l>
           </sp>
@@ -2616,13 +2700,13 @@
             <speaker>Briguelle</speaker>
             <l>Je n’en approcherai que de loin, s’il vous plaît.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-10">
+          <sp who="donjuan" xml:id="V08-10">
             <speaker>Dom Jouan</speaker>
             <l>Viens donc, c’est un tombeau, l’épitaphe est ici,</l>
             <l>Qui nous pourra tirer de peine et de souci.</l>
             <stage>EPITAPHE DE DOM PIERRE.</stage>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-11">
+          <sp who="donjuan" xml:id="V08-11">
             <speaker>Dom Jouan lit</speaker>
             <l>Ci gît la cendre vénérée</l>
             <l>D'un qui mérita des autels,</l>
@@ -2651,7 +2735,7 @@
             <l>Mais comment sommes-nous retournés dans leurs rets ?</l>
             <l>Il faut que nous soyons bien proches de Séville.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-13">
+          <sp who="donjuan" xml:id="V08-13">
             <speaker>Dom Jouan</speaker>
             <l>Il n’importe, en tous temps rien ne m’est difficile,</l>
             <l>Et si je vois le sort me remettre en ces lieux,</l>
@@ -2666,7 +2750,7 @@
             <l>Ma foi, je ne saurais vous déguiser ma crainte,</l>
             <l>Je trouve en l’épitaphe une sensible atteinte.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-15">
+          <sp who="donjuan" xml:id="V08-15">
             <speaker>Dom Jouan</speaker>
             <l>En tout cas, si je vois qu’il me faille périr,</l>
             <l>Ce bras, au moins, Briguelle, en fera bien mourir.</l>
@@ -2675,7 +2759,7 @@
             <speaker>Briguelle</speaker>
             <l>La figure, Monsieur, m’a frappé d’une œillade.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-17">
+          <sp who="donjuan" xml:id="V08-17">
             <speaker>Dom Jouan</speaker>
             <l>Et puisque la frayeur te rend l’esprit malade,</l>
             <l>Je vais te délivrer de cet objet fâcheux,</l>
@@ -2686,7 +2770,7 @@
             <l part="F">Vous êtes boutadeux :</l>
             <l>Pourquoi troubler les morts dedans leur sépulture ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-19">
+          <sp who="donjuan" xml:id="V08-19">
             <speaker>Dom Jouan</speaker>
             <l>Tout au moins je m’en vais rompre cette écriture.</l>
             <l>Fantôme dont les os sont dans ce monument,</l>
@@ -2699,7 +2783,7 @@
             <l>Je vous prie humblement, fantôme de vertu,</l>
             <l>Ne croyez pas mon maître, il a l’esprit perdu.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-21">
+          <sp who="donjuan" xml:id="V08-21">
             <speaker>Dom Jouan</speaker>
             <l>Tu crois m’épouvanter avecque ta menace.</l>
           </sp>
@@ -2709,7 +2793,7 @@
             <l>S'il voulait se lever hors de ce monument,</l>
             <l>Il vous ferait mourir de frayeur seulement.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-23">
+          <sp who="donjuan" xml:id="V08-23">
             <speaker>Dom Jouan</speaker>
             <l>Esprit faible et craintif, quand l’âme est retirée,</l>
             <l>Enfin, lorsque du corps elle s’est séparée,</l>
@@ -2720,7 +2804,7 @@
             <speaker>Briguelle</speaker>
             <l>Mais vous avez tué ce mort qui veut vengeance.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-25">
+          <sp who="donjuan" xml:id="V08-25">
             <speaker>Dom Jouan</speaker>
             <l>Et tu crois que ce mort doit prendre sa défense ?</l>
             <l>Ce mort est trop bien mort pour retourner jamais,</l>
@@ -2731,7 +2815,7 @@
             <l>Monsieur, je n’entends point votre philosophie,</l>
             <l>Mais je crains les esprits, et si je m’en méfie.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-27">
+          <sp who="donjuan" xml:id="V08-27">
             <speaker>Dom Jouan</speaker>
             <l>Eh bien ! s’il peut reprendre et sa forme et son corps,</l>
             <l>S'il peut voir les vivants étant du rang des morts,</l>
@@ -2744,7 +2828,7 @@
             <l>Moi ! Je n’en ferai rien, vous y pouvez aller.</l>
             <l>Ô Ciel ! en est-il un qui puisse l’égaler?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-29">
+          <sp who="donjuan" xml:id="V08-29">
             <speaker>Dom Jouan</speaker>
             <l part="I">Va donc le convier.</l>
           </sp>
@@ -2752,7 +2836,7 @@
             <speaker>Briguelle</speaker>
             <l part="M">Oui, zest !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-31">
+          <sp who="donjuan" xml:id="V08-31">
             <speaker>Dom Jouan</speaker>
             <l part="F">Suis mon envie.</l>
           </sp>
@@ -2760,7 +2844,7 @@
             <speaker>Briguelle</speaker>
             <l>Dussiez-vous m’assommer et m’arracher la vie…</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-33">
+          <sp who="donjuan" xml:id="V08-33">
             <speaker>Dom Jouan</speaker>
             <l>Va donc, ou je m’en vais t’enterrer avec lui.</l>
           </sp>
@@ -2768,7 +2852,7 @@
             <speaker>Briguelle</speaker>
             <l>Si vous parlez de bon, je suis mort aujourd’hui.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-35">
+          <sp who="donjuan" xml:id="V08-35">
             <speaker>Dom Jouan</speaker>
             <l>Sans plus me raisonner, pense à me satisfaire.</l>
           </sp>
@@ -2776,7 +2860,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Mais…</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-37">
+          <sp who="donjuan" xml:id="V08-37">
             <speaker>Dom Jouan</speaker>
             <l part="M">Mais, sans plus de mais.</l>
           </sp>
@@ -2798,7 +2882,7 @@
             <speaker>Briguelle continue la figure fait signe de la tête</speaker>
             <l part="I">Ah, Monsieur !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-40">
+          <sp who="donjuan" xml:id="V08-40">
             <speaker>Dom Jouan</speaker>
             <l part="M">Qu'est-ce donc ?</l>
           </sp>
@@ -2807,7 +2891,7 @@
             <l part="F">Ah ! je ne me sens pas,</l>
             <l part="I">La frayeur me possède.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-42">
+          <sp who="donjuan" xml:id="V08-42">
             <speaker>Dom Jouan</speaker>
             <l part="F">Eh bien ! d’où naît ta crainte ?</l>
           </sp>
@@ -2815,7 +2899,7 @@
             <speaker>Briguelle</speaker>
             <l>Ne l’avez-vous pas vu ? Ne faites point de feinte.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-44">
+          <sp who="donjuan" xml:id="V08-44">
             <speaker>Dom Jouan</speaker>
             <l part="I">Eh quoi ? Qu'aurais-je vu ?</l>
           </sp>
@@ -2823,7 +2907,7 @@
             <speaker>Briguelle</speaker>
             <l part="M">La Figure.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-46">
+          <sp who="donjuan" xml:id="V08-46">
             <speaker>Dom Jouan</speaker>
             <l part="F">Et comment ?</l>
           </sp>
@@ -2833,7 +2917,7 @@
             <l>Sa tête s’est baissée, et cela nous assure</l>
             <l part="I">Qu’elle viendra chez nous.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-48">
+          <sp who="donjuan" xml:id="V08-48">
             <speaker>Dom Jouan</speaker>
             <l part="F">Ah, le plaisant augure !</l>
             <l>C'est la peur qui t’abuse en cette vision.</l>
@@ -2842,7 +2926,7 @@
             <speaker>Briguelle</speaker>
             <l>Vous-même allez donc voir si c’est illusion.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-50">
+          <sp who="donjuan" xml:id="V08-50">
             <speaker>Dom Jouan</speaker>
             <l>Oui-da, j’irai moi-même, et sans donner créance</l>
             <l>Au ridicule effet de ton extravagance,</l>
@@ -2854,7 +2938,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Il paraît de nouveau.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="V08-52">
+          <sp who="donjuan" xml:id="V08-52">
             <speaker>Dom Jouan</speaker>
             <l>Oui, viens, je t’attendrai, cette chose est nouvelle,</l>
             <l>Allons, je suis content, suis-moi, suis-moi, Briguelle.</l>
@@ -2866,12 +2950,15 @@
           </sp>
         </div2>
       </div1>
-      <div1 type="act" xml:id="V">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 type="scene" xml:id="V0">
-          <head>SCENE 1</head>
+        <div2 n="1" type="scene" xml:id="V0">
+          <head>SCENE 1<listPerson type="configuration" xml:id="conf32">
+            <person corresp="#donjuan"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>DOM JOUAN, BRIGUELLE</stage>
-          <sp who="dom-jouan" xml:id="VI01-1">
+          <sp who="donjuan" xml:id="VI01-1">
             <speaker>Dom Jouan</speaker>
             <l part="I">Fais mettre le couvert.</l>
           </sp>
@@ -2884,7 +2971,7 @@
             <l>Que je m’en vais tantôt manger de bon courage,</l>
             <l>Il me semble déjà que je tiens le potage.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-3">
+          <sp who="donjuan" xml:id="VI01-3">
             <speaker>Dom Jouan</speaker>
             <l>Tu te devrais toujours tenir en cette humeur ;</l>
             <l>Car l’espoir est souvent plus doux que le bonheur.</l>
@@ -2898,7 +2985,7 @@
             <l>Les archers, Dom Philippe, étant près de la ville,</l>
             <l>Nous pourraient bien trouver ; car la pauvre Amarille…</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-5">
+          <sp who="donjuan" xml:id="VI01-5">
             <speaker>Dom Jouan</speaker>
             <l>Crois-tu que mon esprit puisse durer ici ?</l>
             <l>Non, non, je suis exempt de crainte et de souci.</l>
@@ -2912,7 +2999,7 @@
             <l>Je ne le verrai pas : dans le péril vous suivre ?</l>
             <l>Il faudrait que je fusse ignorant ou bien ivre.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-7">
+          <sp who="donjuan" xml:id="VI01-7">
             <speaker>Dom Jouan</speaker>
             <l>Que je suis malheureux d’avoir un tel poltron !</l>
           </sp>
@@ -2921,7 +3008,7 @@
             <l>Et si j’étais pendu, Monsieur ? Qu’en dirait-on ?</l>
             <l>Non, je demeurerai dans cette hôtellerie.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-9">
+          <sp who="donjuan" xml:id="VI01-9">
             <speaker>Dom Jouan</speaker>
             <l part="I">La cuisine te plaît ?</l>
           </sp>
@@ -2930,7 +3017,7 @@
             <l part="F">Elle donne la vie,</l>
             <l>Et Séville aujourd’hui nous donnerait la mort.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-11">
+          <sp who="donjuan" xml:id="VI01-11">
             <speaker>Dom Jouan</speaker>
             <l>C'est à toi de me suivre, et suivre aussi mon sort,</l>
             <l>Puis d’ailleurs, ma présence y sera nécessaire</l>
@@ -2963,7 +3050,7 @@
             <l>Qui vous eût pour un temps ravi la liberté ;</l>
             <l>Elle m’a demandé deux fois de vos nouvelles.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-13">
+          <sp who="donjuan" xml:id="VI01-13">
             <speaker>Dom Jouan</speaker>
             <l part="I">Où ? Dis donc promptement.</l>
           </sp>
@@ -2971,7 +3058,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Mais elle est des plus belles.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-15">
+          <sp who="donjuan" xml:id="VI01-15">
             <speaker>Dom Jouan</speaker>
             <l>Mais que t’a-t-elle dit, Briguelle ? conte-moi.</l>
           </sp>
@@ -2980,7 +3067,7 @@
             <l>Oui-da, j’ai trop de soif, et de faim, par ma foi ;</l>
             <l>Non, vous n’en saurez rien si je ne suis à table.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-17">
+          <sp who="donjuan" xml:id="VI01-17">
             <speaker>Dom Jouan</speaker>
             <l part="I">Prends un siège et te sieds.</l>
           </sp>
@@ -2989,7 +3076,7 @@
             <l part="F">Vous êtes sociable,</l>
             <l part="I">Cela me plaît.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-19">
+          <sp who="donjuan" xml:id="VI01-19">
             <speaker>Dom Jouan</speaker>
             <l part="M">Eh bien ?</l>
           </sp>
@@ -2997,7 +3084,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Ah ! laissez-moi manger.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-21">
+          <sp who="donjuan" xml:id="VI01-21">
             <speaker>Dom Jouan</speaker>
             <l>Apprends-moi son logis, si tu veux m’obliger.</l>
           </sp>
@@ -3005,7 +3092,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Tout doux, un peu de temps.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-23">
+          <sp who="donjuan" xml:id="VI01-23">
             <speaker>Dom Jouan</speaker>
             <l part="F">Comme a-t-elle la taille ?</l>
           </sp>
@@ -3013,7 +3100,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Grande.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-25">
+          <sp who="donjuan" xml:id="VI01-25">
             <speaker>Dom Jouan</speaker>
             <l part="M">Le teint ?</l>
           </sp>
@@ -3021,7 +3108,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Fort beau pour la douce bataille.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-27">
+          <sp who="donjuan" xml:id="VI01-27">
             <speaker>Dom Jouan</speaker>
             <l>Le port, la main, les dents, les cheveux, et les bras ?</l>
           </sp>
@@ -3029,7 +3116,7 @@
             <speaker>Briguelle</speaker>
             <l>Vous m’en demandez bien ! tout revêtus d’appas.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-29">
+          <sp who="donjuan" xml:id="VI01-29">
             <speaker>Dom Jouan</speaker>
             <l part="I">L’œil ?</l>
           </sp>
@@ -3037,7 +3124,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Tout à fait fripon, entre doux et sévère.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-31">
+          <sp who="donjuan" xml:id="VI01-31">
             <speaker>Dom Jouan</speaker>
             <l part="I">La bouche ?</l>
           </sp>
@@ -3047,20 +3134,25 @@
             <l>L'Ombre de Dom Pierre heurte à la porte.</l>
             <l>Ventrebleu, qui va là ? Je crains l’écornifleur.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI01-33">
+          <sp who="donjuan" xml:id="VI01-33">
             <speaker>Dom Jouan</speaker>
             <l>Briguelle, ouvre au plus tôt ; d’où provient ta frayeur ?</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V1">
-          <head>SCENE 2</head>
+        <div2 n="2" type="scene" xml:id="V1">
+          <head>SCENE 2<listPerson type="configuration" xml:id="conf33">
+            <person corresp="#ombre"/>
+            <person corresp="#donjuan"/>
+            <person corresp="#briguelle"/>
+            <person corresp="#dom-pierre"/>
+            </listPerson></head>
           <stage>L'OMBRE DE DOM PIERRE, DOM JOUAN, BRIGUELLE.</stage>
           <sp who="ombre" xml:id="VI02-1">
             <speaker>L'ombre, entrant dans la maison</speaker>
             <l>Dom Jouan, c’est ainsi que je te tiens parole,</l>
             <l>Et je ne fis jamais de promesse frivole.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-2">
+          <sp who="donjuan" xml:id="VI02-2">
             <speaker>Dom Jouan</speaker>
             <l part="I">Assieds-toi, je t’attendais.</l>
           </sp>
@@ -3069,7 +3161,7 @@
             <l part="F">Me voilà maintenant</l>
             <l>À la merci du Diable et de son lieutenant.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-4">
+          <sp who="donjuan" xml:id="VI02-4">
             <speaker>Dom Jouan</speaker>
             <l>Tiens, que j’aye l’honneur de te servir ces viandes.</l>
             <l>Je voudrais t’en pouvoir donner de plus friandes,</l>
@@ -3123,7 +3215,7 @@
             <l>Qu'il ne te fasse enfin l’horreur de l’univers,</l>
             <l>Indigne seulement d’être en pâture aux vers ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-6">
+          <sp who="donjuan" xml:id="VI02-6">
             <speaker>Dom Jouan</speaker>
             <l>C'est trop, laissons cela ; j’attends ma destinée</l>
             <l>D'une âme résolue et non pas étonnée.</l>
@@ -3137,7 +3229,7 @@
             <l>Ta perte est dans ma main, évite une colère</l>
             <l>Qui surpasse l’esprit et l’humain jugement.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-8">
+          <sp who="donjuan" xml:id="VI02-8">
             <speaker>Dom Jouan</speaker>
             <l>Que peux-tu, quand ta force est dans le monument ?</l>
             <l>Tu parais ridicule en faisant le sévère,</l>
@@ -3158,7 +3250,7 @@
             <l>Insolent, orgueilleux, baisse, baisse la vue,</l>
             <l>Et qu’à mon triste aspect, ta rage diminue.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-10">
+          <sp who="donjuan" xml:id="VI02-10">
             <speaker>Dom Jouan</speaker>
             <l>Je verrais maintenant cent fantômes hurlants,</l>
             <l>Dans ma chambre traîner mille drapeaux sanglants,</l>
@@ -3170,7 +3262,7 @@
             <speaker>L'ombre</speaker>
             <l part="I">Songe à toi, Dom Jouan.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-12">
+          <sp who="donjuan" xml:id="VI02-12">
             <speaker>Dom Jouan</speaker>
             <l part="I">Enfin, c’est trop parler</l>
             <l>De crime, de malheurs et de mauvais augure.</l>
@@ -3184,7 +3276,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Justes Dieux !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-15">
+          <sp who="donjuan" xml:id="VI02-15">
             <speaker>Dom Jouan</speaker>
             <l part="F">Viens, Briguelle, apporte-nous du vin.</l>
           </sp>
@@ -3192,7 +3284,7 @@
             <speaker>Briguelle</speaker>
             <l part="I">Il est proche de vous, Monsieur.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-17">
+          <sp who="donjuan" xml:id="VI02-17">
             <speaker>Dom Jouan, ayant du vin</speaker>
             <l part="F">Âme poltronne,</l>
             <l>Si tu me fais lever… ah, coquin ! tu t’étonnes.</l>
@@ -3202,7 +3294,7 @@
             <speaker>Briguelle</speaker>
             <l part="F">Je suis sans faim, puis je suis demi mort.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-19">
+          <sp who="donjuan" xml:id="VI02-19">
             <speaker>Dom Jouan</speaker>
             <l part="I">Chante donc.</l>
           </sp>
@@ -3211,7 +3303,7 @@
             <l part="F">Que je chante à la fin de mon sort ?</l>
             <l>Je ne suis pas un cygne, et je suis catholique.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-21">
+          <sp who="donjuan" xml:id="VI02-21">
             <speaker>Dom Jouan</speaker>
             <l>Impertinent poltron dans sa terreur panique.</l>
           </sp>
@@ -3223,7 +3315,7 @@
             <l>Mais te voyant rempli de tant de hardiesse,</l>
             <l>Ce soir, je te convie à manger avec moi.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-23">
+          <sp who="donjuan" xml:id="VI02-23">
             <speaker>Dom Jouan</speaker>
             <l>Eh bien ! je m’y rendrai, toujours exempt d’effroi.</l>
             <l part="I">Où veux-tu que ce soit ?</l>
@@ -3232,7 +3324,7 @@
             <speaker>L'ombre</speaker>
             <l part="F">Dessus ma sépulture.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-25">
+          <sp who="donjuan" xml:id="VI02-25">
             <speaker>Dom Jouan</speaker>
             <l part="I">Oui-da, tu m’y verras.</l>
           </sp>
@@ -3242,7 +3334,7 @@
             <l>Que vous devez périr dans ce lieu de malheur ;</l>
             <l part="I">Je n’irais pas.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-27">
+          <sp who="donjuan" xml:id="VI02-27">
             <speaker>Dom Jouan</speaker>
             <l part="M">Maraud !</l>
           </sp>
@@ -3259,16 +3351,19 @@
             <l>Adieu, tu sais le temps, ne me fais pas attendre,</l>
             <l part="I">Ou ne me promets pas.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI02-30">
+          <sp who="donjuan" xml:id="VI02-30">
             <speaker>Dom Jouan</speaker>
             <l part="F">Va, tu m’y verras rendre,</l>
             <l>Je tiendrai ma parole, étant homme d’honneur.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V2">
-          <head>SCENE 3</head>
+        <div2 n="3" type="scene" xml:id="V2">
+          <head>SCENE 3<listPerson type="configuration" xml:id="conf34">
+            <person corresp="#donjuan"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>DOM JOUAN, BRIGUELLE.</stage>
-          <sp who="dom-jouan" xml:id="VI03-1">
+          <sp who="donjuan" xml:id="VI03-1">
             <speaker>Dom Jouan</speaker>
             <l part="I">Briguelle, que fais-tu ?</l>
           </sp>
@@ -3278,7 +3373,7 @@
             <l>Et tâche à retenir mon âme qui s’envole.</l>
             <l>Ah, Dieux ! je suis sans pouls, sans force et sans parole.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI03-3">
+          <sp who="donjuan" xml:id="VI03-3">
             <speaker>Dom Jouan</speaker>
             <l part="I">Tu t’es épouvanté.</l>
           </sp>
@@ -3288,7 +3383,7 @@
             <l>Il faudrait qu’il fut diable, et diable du plus bas</l>
             <l>Des cachots de l’enfer, où tous maux l’on endure.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI03-5">
+          <sp who="donjuan" xml:id="VI03-5">
             <speaker>Dom Jouan</speaker>
             <l part="I">Mange, je veux sortir.</l>
           </sp>
@@ -3298,7 +3393,7 @@
             <l>Je ne veux pas manger, je deviendrais sorcier,</l>
             <l>Puis chez moi l’appétit a perdu son métier.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI03-7">
+          <sp who="donjuan" xml:id="VI03-7">
             <speaker>Dom Jouan</speaker>
             <l>Viens donc, car aussi bien un souper magnifique</l>
             <l part="I">Nous attendra ce soir.</l>
@@ -3312,8 +3407,11 @@
             <l>Mais je suis seul ici, fuyons : c’est mon supplice.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V3">
-          <head>SCENE 4</head>
+        <div2 n="4" type="scene" xml:id="V3">
+          <head>SCENE 4<listPerson type="configuration" xml:id="conf35">
+            <person corresp="#lucie"/>
+            <person corresp="#amarille"/>
+            </listPerson></head>
           <stage>LUCIE, AMARILLE.</stage>
           <sp who="lucie" xml:id="VI04-1">
             <speaker>Lucie</speaker>
@@ -3386,8 +3484,11 @@
             <l>Nous nous verrons tantôt ; adieu, je me retire.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V4">
-          <head>SCENE 5</head>
+        <div2 n="5" type="scene" xml:id="V4">
+          <head>SCENE 5<listPerson type="configuration" xml:id="conf36">
+            <person corresp="#dom-philippe"/>
+            <person corresp="#amarille"/>
+            </listPerson></head>
           <stage>DOM PHILIPPE, AMARILLE.</stage>
           <sp who="dom-philippe" xml:id="VI05-1">
             <speaker>Dom Philippe</speaker>
@@ -3460,8 +3561,12 @@
             <l>Mais c’est ma main qui doit le livrer à ces coups.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V5">
-          <head>SCENE 6</head>
+        <div2 n="6" type="scene" xml:id="V5">
+          <head>SCENE 6<listPerson type="configuration" xml:id="conf37">
+            <person corresp="#prevot"/>
+            <person corresp="#amarille"/>
+            <person corresp="#dom-philippe"/>
+            </listPerson></head>
           <stage>LE PRÉVÔT, AMARILLE, DOM PHILIPPE, ET DEUX ARCHERS.</stage>
           <sp who="prevot" xml:id="VI06-1">
             <speaker>Le prévôt, parlant à dom philippe</speaker>
@@ -3488,8 +3593,11 @@
             <l part="I">Allons.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V6">
-          <head>SCENE 7</head>
+        <div2 n="7" type="scene" xml:id="V6">
+          <head>SCENE 7<listPerson type="configuration" xml:id="conf38">
+            <person corresp="#briguelle"/>
+            <person corresp="#donjuan"/>
+            </listPerson></head>
           <stage>DOM JOUAN, BRIGUELLE.</stage>
           <sp who="briguelle" xml:id="VI07-1">
             <speaker>Briguelle</speaker>
@@ -3500,7 +3608,7 @@
             <l>Adieu donc pour jamais, je vais dans des manoirs</l>
             <l>Où nous ne verrons rien que des démons tout noirs.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI07-2">
+          <sp who="donjuan" xml:id="VI07-2">
             <speaker>Dom Jouan</speaker>
             <l>Qui t’intimide, sot, et que pouvons-nous craindre ?</l>
           </sp>
@@ -3510,7 +3618,7 @@
             <l>Mais encore une fois, Monsieur, pensez-y bien,</l>
             <l part="I">Nous n’en reviendrons pas.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI07-4">
+          <sp who="donjuan" xml:id="VI07-4">
             <speaker>Dom Jouan</speaker>
             <l part="F">Va, va, je ne crains rien ;</l>
             <l>J'ai vu ce qu’on peut voir, Briguelle, sur la terre :</l>
@@ -3530,7 +3638,7 @@
             <speaker>Briguelle</speaker>
             <l>Ah ! vivre pour mourir est une sotte vie.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI07-6">
+          <sp who="donjuan" xml:id="VI07-6">
             <speaker>Dom Jouan</speaker>
             <l part="I">Crois-tu vivre toujours ?</l>
           </sp>
@@ -3539,7 +3647,7 @@
             <l part="F">Ce serait mon envie,</l>
             <l>Mais vous m’en ôtez bien les moyens maintenant.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI07-8">
+          <sp who="donjuan" xml:id="VI07-8">
             <speaker>Dom Jouan</speaker>
             <l>Ah ! de tous les poltrons le plus impertinent !</l>
             <l part="I">Allons, allons, suis-moi.</l>
@@ -3556,8 +3664,12 @@
             <stage>La Grotte s’ouvre.</stage>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V7">
-          <head>SCENE 8</head>
+        <div2 n="8" type="scene" xml:id="V7">
+          <head>SCENE 8<listPerson type="configuration" xml:id="conf39">
+            <person corresp="#ombre"/>
+            <person corresp="#donjuan"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>L'OMBRE, DOM JOUAN, BRIGUELLE.</stage>
           <sp who="ombre" xml:id="VI08-1">
             <speaker>L'ombre</speaker>
@@ -3567,7 +3679,7 @@
             <stage>Étant à table.</stage>
             <l>Commence à profiter de ton dernier repas.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-2">
+          <sp who="donjuan" xml:id="VI08-2">
             <speaker>Dom Jouan</speaker>
             <l>Commence à voir aussi que rien ne m’intimide,</l>
             <l>Que je suis mon caprice et que j’en fais mon guide.</l>
@@ -3578,7 +3690,7 @@
             <l part="F">Fermez-vous bien, mes yeux,</l>
             <l>Soyons sourds, mon oreille, en ce lieu périlleux.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-4">
+          <sp who="donjuan" xml:id="VI08-4">
             <speaker>Dom Jouan</speaker>
             <l part="I">Quoi ! tu ne viendras pas ?</l>
           </sp>
@@ -3588,7 +3700,7 @@
             <l>Car cet esprit malin m’écraserait la tête.</l>
             <l>J'attends en priant Dieu le moment de ma mort.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-6">
+          <sp who="donjuan" xml:id="VI08-6">
             <speaker>Dom Jouan</speaker>
             <l part="I">Quoi ! tu penses mourir ?</l>
           </sp>
@@ -3603,7 +3715,7 @@
             <l part="F">Sais-tu bien quel génie</l>
             <l part="I">Te conduit en ce lieu ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-9">
+          <sp who="donjuan" xml:id="VI08-9">
             <speaker>Dom Jouan</speaker>
             <l part="F">Quel qu’il soit, tu m’y vois.</l>
           </sp>
@@ -3621,12 +3733,12 @@
             <l>Ne te rebute pas, s’ils ne sont délectables,</l>
             <l part="I">Je donne ce que j’ai.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-11">
+          <sp who="donjuan" xml:id="VI08-11">
             <speaker>Dom Jouan</speaker>
             <l part="F">Quand ce serait des diables,</l>
             <l part="I">Tu me verrais manger.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-12">
+          <sp who="donjuan" xml:id="VI08-12">
             <speaker>Dom Jouan, à son valet</speaker>
             <l part="F">Nous viendras-tu servir,</l>
             <l part="I">Briguelle ?</l>
@@ -3644,7 +3756,7 @@
             <l>Que tu n’as de pouvoir qu’autant qu’un Dieu t’en donne</l>
             <l>Et qu’on doit tout hommage à sa sainte personne ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-15">
+          <sp who="donjuan" xml:id="VI08-15">
             <speaker>Dom Jouan</speaker>
             <l>Que me viens-tu prôner ? Il n’est pas de saison</l>
             <l>De me catéchiser, j’aurais peu de raison,</l>
@@ -3656,7 +3768,7 @@
             <speaker>L'ombre</speaker>
             <l>Sais-tu bien qu’à présent ce Dieu veut ton trépas ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-17">
+          <sp who="donjuan" xml:id="VI08-17">
             <speaker>Dom Jouan</speaker>
             <l>Il m’a donné l’esprit, l’âme, la connaissance,</l>
             <l>La force, la raison, le cœur, l’intelligence,</l>
@@ -3686,7 +3798,7 @@
             <l>Si tu veux éviter des tourments éternels,</l>
             <l>Demande au Ciel pardon de tes faits criminels.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-19">
+          <sp who="donjuan" xml:id="VI08-19">
             <speaker>Dom Jouan</speaker>
             <l>Ne parle point du Ciel, qu’il punisse ou pardonne.</l>
             <l>Je ne me repens point, il n’est rien qui m’étonne,</l>
@@ -3709,7 +3821,7 @@
             <speaker>L'ombre</speaker>
             <l part="I">Impie ! Ah, malheureux !</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-21">
+          <sp who="donjuan" xml:id="VI08-21">
             <speaker>Dom Jouan</speaker>
             <l part="F">Ton importunité</l>
             <l part="I">M'échauffe trop le sang, tais-toi.</l>
@@ -3719,7 +3831,7 @@
             <l part="F">Quoi, téméraire !</l>
             <l>Tu n’appréhendes point un châtiment sévère ?</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-23">
+          <sp who="donjuan" xml:id="VI08-23">
             <speaker>Dom Jouan</speaker>
             <l>Ainsi donc, spectre affreux, tu traites un vivant</l>
             <l part="I">D'injures, de menaces ?</l>
@@ -3729,7 +3841,7 @@
             <l part="F">C'en est trop, insolent,</l>
             <l>Je t’ai traité cent fois mieux que tu ne mérites.</l>
           </sp>
-          <sp who="dom-jouan" xml:id="VI08-25">
+          <sp who="donjuan" xml:id="VI08-25">
             <speaker>Dom Jouan</speaker>
             <l>Ah ! c’est trop endurer, depuis que tu m’irrites !</l>
             <l>Aussi bien ce spectacle est trop injurieux,</l>
@@ -3750,8 +3862,11 @@
             <l>Dom Jouan abîmé, son valet demeure étourdi sur le théâtre, du bruit du tonnerre, la grotte disparaît, et Briguelle ne sait où il est.</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V8">
-          <head>SCENE 9</head>
+        <div2 n="9" type="scene" xml:id="V8">
+          <head>SCENE 9<listPerson type="configuration" xml:id="conf40">
+            <person corresp="#briguelle"/>
+            <person corresp="#dom-philippe"/>
+            </listPerson></head>
           <stage>LE PRÉVÔT, LES ARCHERS, DOM PHILIPPE, BRIGUELLE.</stage>
           <sp who="briguelle" xml:id="VI09-1">
             <speaker>Briguelle</speaker>
@@ -3799,8 +3914,14 @@
             <l>Conte-nous seulement cette triste aventure</l>
           </sp>
         </div2>
-        <div2 type="scene" xml:id="V9">
-          <head>SCENE 10</head>
+        <div2 n="10" type="scene" xml:id="V9">
+          <head>SCENE 10<listPerson type="configuration" xml:id="conf41">
+            <person corresp="#dom-philippe"/>
+            <person corresp="#amarille"/>
+            <person corresp="#lucie"/>
+            <person corresp="#prevot"/>
+            <person corresp="#briguelle"/>
+            </listPerson></head>
           <stage>AMARILLE, LUCIE, DOM PHILIPPE, BRIGUELLE, LE PRÉVÔT, LES ARCHERS.</stage>
           <sp who="dom-philippe" xml:id="VI10-1">
             <speaker>Dom Philippe</speaker>
