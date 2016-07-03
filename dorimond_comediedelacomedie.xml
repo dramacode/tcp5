@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>La comédie de la comédie</title><title type="sub">, comédie</title>
-        <author born="1628" born_location="" death="1673" death_location="" academie=""><surname>Dorimond</surname><forename> Nicolas Drouin dit</forename></author>
+        <title>La comédie de la comédie</title>
+        <title type="sub">, comédie</title>
+        <author academie="" born="1628" born_location="" death="1673" death_location=""><surname>Dorimond</surname><forename> Nicolas Drouin dit</forename></author>
       </titleStmt>
       <publicationStmt>
         <editor>Édition critique établie par Daphné Dinard dans le cadre d'un mémoire de master 2 sous la direction de Georges Forestier (2013-2014)</editor>
@@ -32,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -44,19 +46,8 @@
         <titlePart type="sub">COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1662">M. DC. LXII. AVEC PRIVILEGE DU ROI.</docDate>
-      <docAuthor id="DORIMOND, Nicolas Drouin dit" bio="dorimont"/>
-      <docImprint>
-        <privilege value="">
-          <head>EXTRAIT DU PRIVILÈGE DU ROI.</head>
-          <p>Par grâce et privilège du Roi, donné à Paris le vingt-sixième Mars 1661. Signé, Par le Roi en son Conseil, DE FAYES. Il est permis au Sieur DORIMOND, Comédien de Mademoiselle, de faire imprimer une pièce de théâtre intitulée La Comédie de la Comédie et les Amours de Trapolin, par lui composée et représentée par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu'il voudra choisir, pendant cinq années. Et défenses sont faites à tous autres de l'imprimer ni vendre d'autre édition que celle de l'exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d'amende, de tous dépens, dommages et intérêts, comme il est porté plus amplement par lesdites Lettres de Privilège.</p>
-          <p>Et ledit Sieur Dorimond a cédé et transporté son privilège à Jean Ribou, et Gabriel Quinet, marchands libraires à Paris, pour en jouir suivant l'accord fait entre eux.</p>
-          <p>Registré sur le Livre de la Communauté, suivant l'Arrest de la Cour.</p>
-          <p>Signé JOSSE, Syndic.</p>
-          <p>Les Exemplaires ont été fournis.</p>
-        </privilege>
-        <acheveImprime value="1662-01-22">Achevé d'imprimer pour la première fois, le 22. Janvier 1662.</acheveImprime>
-        <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, sur le Quai des Augustins, à L'Image Saint Louis.</printer>
-      </docImprint>
+      <docAuthor bio="dorimont" id="DORIMOND, Nicolas Drouin dit"/>
+      <docImprint> <privilege value=""> <head>EXTRAIT DU PRIVILÈGE DU ROI.</head> <p>Par grâce et privilège du Roi, donné à Paris le vingt-sixième Mars 1661. Signé, Par le Roi en son Conseil, DE FAYES. Il est permis au Sieur DORIMOND, Comédien de Mademoiselle, de faire imprimer une pièce de théâtre intitulée La Comédie de la Comédie et les Amours de Trapolin, par lui composée et représentée par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu'il voudra choisir, pendant cinq années. Et défenses sont faites à tous autres de l'imprimer ni vendre d'autre édition que celle de l'exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d'amende, de tous dépens, dommages et intérêts, comme il est porté plus amplement par lesdites Lettres de Privilège.</p> <p>Et ledit Sieur Dorimond a cédé et transporté son privilège à Jean Ribou, et Gabriel Quinet, marchands libraires à Paris, pour en jouir suivant l'accord fait entre eux.</p> <p>Registré sur le Livre de la Communauté, suivant l'Arrest de la Cour.</p> <p>Signé JOSSE, Syndic.</p> <p>Les Exemplaires ont été fournis.</p> </privilege> <acheveImprime value="1662-01-22">Achevé d'imprimer pour la première fois, le 22. Janvier 1662.</acheveImprime> <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, sur le Quai des Augustins, à L'Image Saint Louis.</printer> </docImprint>
       <performance>
         <premiere date="(inconnue)" location="(inconnue)"/>
       </performance>
@@ -69,29 +60,32 @@
       </div>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="DEUXBOURGEOIS" id="DEUX BOURGEOIS" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">DEUX BOURGEOIS</role>, Allant à la comedie.</castItem>
-        <castItem><role xml:id="DEUXDAMES" id="DEUX DAMES" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">DEUX DAMES</role>.</castItem>
-        <castItem><role xml:id="DEUXGALANTS" id="DEUX GALANTS" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">DEUX GALANTS</role>.</castItem>
-        <castItem><role xml:id="LEPORTIERDESCOMEDIENS" id="LE PORTIER DES COMÉDIENS" sex="1" type="H" statut="portier" age="A" stat_amour="néant">LE PORTIER DES COMÉDIENS</role>.</castItem>
-        <castItem><role xml:id="UNECOMEDIENNE" id="UNE COMÉDIENNE" sex="2" type="H" statut="comédien" age="A" stat_amour="néant">UNE COMÉDIENNE</role>.</castItem>
-        <castItem><role xml:id="TROUPEDEFILOUS" id="TROUPE DE FILOUS" sex="9" type="H" statut="voleur" age="A" stat_amour="néant">TROUPE DE FILOUS</role>.</castItem>
+        <castItem><role age="A" id="DEUX BOURGEOIS" sex="1" stat_amour="néant" statut="bourgeois" type="H">DEUX BOURGEOIS</role>, Allant à la comedie.<role n="LEANDRE" xml:id="LEANDRE" rend="male"/><role n="LUCIDOR" xml:id="LUCIDOR" rend="male"/></castItem>
+        <castItem><role age="A" id="DEUX DAMES" sex="2" stat_amour="néant" statut="bourgeois" type="H">DEUX DAMES</role>.<role xml:id="DAME1" n="UNE DAME" rend="female"/><role xml:id="DAME2" n="UNE AUTRE DAME" rend="female"/></castItem>
+        <castItem><role age="A" id="DEUX GALANTS" sex="1" stat_amour="néant" statut="bourgeois" type="H">DEUX GALANTS</role><role n="LE GALANT" xml:id="GALANT" rend="male"/><role n="L’ÉPINAI" xml:id="LEPINAI" rend="male"/>.</castItem>
+        <castItem><role age="A" id="LE PORTIER DES COMÉDIENS" sex="1" stat_amour="néant" statut="portier" type="H" xml:id="LEPORTIER" rend="male inferior">LE PORTIER DES COMÉDIENS</role>.</castItem>
+        <castItem><role age="A" id="UNE COMÉDIENNE" sex="2" stat_amour="néant" statut="comédien" type="H" xml:id="LACOMEDIENNE" rend="female">UNE COMÉDIENNE</role>.</castItem>
+        <castItem><role age="A" id="TROUPE DE FILOUS" sex="9" stat_amour="néant" statut="voleur" type="H" xml:id="FILOU" rend="male inferior">TROUPE DE FILOUS</role>.</castItem>
       </castList>
-      <set location="Paris" country="France" periode="XVIIème" link=""/>
+      <set country="France" link="" location="Paris" periode="XVIIème"/>
       <note>Ce texte est édité dans le même volume avec "Les amours de Trapolin" du même auteur. Il sert de prologue au spectacle qui suit.</note>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head/>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Léandre, Lucidor<listPerson type="configuration" xml:id="conf1"><person corresp="#LEANDRE"/><person corresp="#LUCIDOR"/></listPerson></head>
-          <sp xml:id="I01-1" who="LEANDRE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Léandre, Lucidor<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LEANDRE"/>
+            <person corresp="#LUCIDOR"/>
+            </listPerson></head>
+          <sp who="LEANDRE" xml:id="I01-1">
             <speaker>LÉANDRE.</speaker>
             <l n="1" xml:id="l1">Puisque je vous rencontre, il faut faire partie:</l>
             <l n="2" xml:id="l2">Allons nous divertir à voir la comédie ;</l>
             <l n="3" xml:id="l3">Ce passe-temps est propre à charmer les ennuis :</l>
             <l n="4" xml:id="l4">À peine il m'en souvient à l'instant que j'y suis.</l>
           </sp>
-          <sp xml:id="I01-2" who="LUCIDOR">
+          <sp who="LUCIDOR" xml:id="I01-2">
             <speaker>LUCIDOR.</speaker>
             <l n="5" xml:id="l5">Allons-y, je le veux ; au coin de cette rue,</l>
             <l n="6" xml:id="l6">Une affiche à propos se montre à notre vue.</l>
@@ -113,16 +107,16 @@
             <l n="19" xml:id="l19">Qu'ici les uns dressent leurs pas,</l>
             <l n="20" xml:id="l20">Que les autres n'y viennent pas.</l>
           </sp>
-          <sp xml:id="I01-3" who="LUCIDOR">
+          <sp who="LUCIDOR" xml:id="I01-3">
             <speaker>LUCIDOR, poursuit.</speaker>
             <l n="21" xml:id="l21">Ho ! ho ! L'affiche en vers ? Cette troupe est jolie :</l>
             <l n="22" xml:id="l22">Peut-être y verrons-nous quelque galant Génie.</l>
           </sp>
-          <sp xml:id="I01-4" who="LEANDRE">
+          <sp who="LEANDRE" xml:id="I01-4">
             <speaker>LÉANDRE.</speaker>
             <l n="23" xml:id="l23">J'aime la comédie, elle est mon élément.</l>
           </sp>
-          <sp xml:id="I01-5" who="LUCIDOR">
+          <sp who="LUCIDOR" xml:id="I01-5">
             <speaker>LUCIDOR.</speaker>
             <l n="24" xml:id="l24">Tous deux nous nous trouvons d'un même sentiment :</l>
             <l n="25" xml:id="l25">Il faut être privé de bon sens, de science,</l>
@@ -138,12 +132,12 @@
             <l n="35" xml:id="l35">Car on y voit toujours triompher les vertus :</l>
             <l n="36" xml:id="l36">Là le vice sur eux n'a jamais le dessus.</l>
           </sp>
-          <sp xml:id="I01-6" who="LEANDRE">
+          <sp who="LEANDRE" xml:id="I01-6">
             <speaker>LÉANDRE.</speaker>
             <l n="37" xml:id="l37">Mais les Italiens prennent plus de licence</l>
             <l n="38" xml:id="l38">Que ne font les Français, et quelqu'un s'en offense.</l>
           </sp>
-          <sp xml:id="I01-7" who="LUCIDOR">
+          <sp who="LUCIDOR" xml:id="I01-7">
             <speaker>LUCIDOR.</speaker>
             <l n="39" xml:id="l39">Le Théâtre Français est bien plus sérieux,</l>
             <l n="40" xml:id="l40">J'en fais bien plus d'état, et l'estime bien mieux ;</l>
@@ -153,9 +147,12 @@
             <l n="44" xml:id="l44">Et qui bien souvent ont l'esprit comme un boeuf.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCENE II. Les Dames.<listPerson type="configuration" xml:id="conf2"><person corresp="#UNEDAME"/><person corresp="#UNEAUTREDAME"/></listPerson></head>
-          <sp xml:id="I02-1" who="UNEDAME">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCENE II. Les Dames.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#DAME1"/>
+            <person corresp="#DAME2"/>
+            </listPerson></head>
+          <sp who="DAME1" xml:id="I02-1">
             <speaker>UNE DAME.</speaker>
             <l n="45" xml:id="l45">Pour moi, je vous le dis, jamais la comédie,</l>
             <l n="46" xml:id="l46">N'eut tant d'attraits charmants, et tant de modestie ;</l>
@@ -175,21 +172,23 @@
             <l n="59" xml:id="l59">Pour moi, j'eus toujours soin de garder mon honneur</l>
             <l n="60" xml:id="l60">Et je veux que ma fille ait la même pudeur.</l>
           </sp>
-          <sp xml:id="I02-2" who="UNEAUTREDAME">
+          <sp who="DAME2" xml:id="I02-2">
             <speaker>UNE AUTRE DAME.</speaker>
             <l n="61" xml:id="l61">Il le faut avouer, certainement, Madame :</l>
             <l n="62" xml:id="l62">La belle comédie est le charme de l'âme ;</l>
-            <l n="63" xml:id="l63" part="I">Allons-y je vous prie.</l>
+            <l n="63" part="I" xml:id="l63">Allons-y je vous prie.</l>
           </sp>
-          <sp xml:id="I02-3" who="UNEDAME">
+          <sp who="DAME1" xml:id="I02-3">
             <speaker>LA PREMIÈRE.</speaker>
             <l part="F">Allons ; je le veux bien.</l>
             <l n="64" xml:id="l64">Pour moi je la préfère au plus bel entretien.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf3"><person corresp="#LEPORTIER"/></listPerson></head>
-          <sp xml:id="I03-1" who="LEPORTIER">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#LEPORTIER"/>
+            </listPerson></head>
+          <sp who="LEPORTIER" xml:id="I03-1">
             <speaker>LE PORTIER.</speaker>
             <note type="L">Piastre : C'est un nom qu'on a donné à une monnaie d'argent, qui vaut un écu, comme les réaux, richedale, patagons, ducatons louis blancs, etc. [F]</note>
             <l n="65" xml:id="l65">Ce téton est-il bon ? Cette piastre est légère !</l>
@@ -225,9 +224,13 @@
             <l n="92" xml:id="l92">N'en laissons plus passer, c'est à faire mourir.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. La Comédienne, Le Galant, L'Épinay.<listPerson type="configuration" xml:id="conf4"><person corresp="#LACOMEDIENNE"/><person corresp="#LEGALANT"/><person corresp="#LEPINAI"/></listPerson></head>
-          <sp xml:id="I04-1" who="LACOMEDIENNE">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. La Comédienne, Le Galant, L'Épinay.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#LACOMEDIENNE"/>
+            <person corresp="#GALANT"/>
+            <person corresp="#LEPINAI"/>
+            </listPerson></head>
+          <sp who="LACOMEDIENNE" xml:id="I04-1">
             <speaker>LA COMÉDIENNE.</speaker>
             <l n="93" xml:id="l93">Ah Dieu ! Je vois passer un qui fait l'idolâtre</l>
             <l n="94" xml:id="l94">En venant m'aborder quand je suis au théâtre ;</l>
@@ -237,125 +240,125 @@
             <note type="L">Patineur : ou Patineux en jargon. Celui qui prend et manie les mains et les bras d'une femme. [Ac 1762]</note>
             <l n="98" xml:id="l98">Faire les patineurs, et les mourantes âmes.</l>
           </sp>
-          <sp xml:id="I04-2" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-2">
             <speaker>LE GALANT.</speaker>
             <l n="99" xml:id="l99">Isabelle, bonjour, votre humble serviteur !</l>
             <l n="100" xml:id="l100">Que votre habit est riche et de belle couleur !</l>
             <l n="101" xml:id="l101">Ah Dieux ! La belle étoffe, et la belle dentelle !</l>
-            <l n="102" xml:id="l102" part="I">Qui vous en a fait don ?</l>
+            <l n="102" part="I" xml:id="l102">Qui vous en a fait don ?</l>
           </sp>
-          <sp xml:id="I04-3" who="LACOMEDIENNE">
+          <sp who="LACOMEDIENNE" xml:id="I04-3">
             <speaker>LA COMÉDIENNE.</speaker>
             <l part="F">Qui ? C'est Mademoiselle :</l>
             <l n="103" xml:id="l103">Sa générosité m'en a fait un présent</l>
             <l n="104" xml:id="l104">Et je le faits briller sur la scène à présent.</l>
             <l n="105" xml:id="l105">Ma cravate est défaite, et mon beau collier d'ambre...</l>
           </sp>
-          <sp xml:id="I04-4" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-4">
             <speaker>LE GALANT.</speaker>
             <l n="106" xml:id="l106">Que je vous tienne ici lieu de valet de chambre :</l>
-            <l n="107" xml:id="l107" part="I">Votre cravate...</l>
+            <l n="107" part="I" xml:id="l107">Votre cravate...</l>
           </sp>
-          <sp xml:id="I04-5" who="LACOMEDIENNE">
+          <sp who="LACOMEDIENNE" xml:id="I04-5">
             <speaker>LA COMÉDIENNE.</speaker>
             <l part="F">Hé bien ! Je l'accommoderai.</l>
           </sp>
-          <sp xml:id="I04-6" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-6">
             <speaker>LE GALANT.</speaker>
             <l n="108" xml:id="l108">Vous allez au théâtre où je vous conduirai.</l>
             <note type="L">Point de Gênes : dentelle.</note>
             <l n="109" xml:id="l109">Ma soeur veut vous donner un fort beau point de Gênes,</l>
             <l n="110" xml:id="l110">Et moi des citrons doux, et de la porcelaine.</l>
           </sp>
-          <sp xml:id="I04-7" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-7">
             <speaker>L'ÉPINAI.</speaker>
-            <l n="111" xml:id="l111" part="I">Et moi des gants d'Espagne.</l>
+            <l n="111" part="I" xml:id="l111">Et moi des gants d'Espagne.</l>
           </sp>
-          <sp xml:id="I04-8" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-8">
             <speaker>LE GALANT.</speaker>
             <l part="F">Et moi de beaux rubans.</l>
           </sp>
-          <sp xml:id="I04-9" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-9">
             <speaker>L'ÉPINAI.</speaker>
-            <l n="112" xml:id="l112" part="I">Et moi de la pommade.</l>
+            <l n="112" part="I" xml:id="l112">Et moi de la pommade.</l>
           </sp>
-          <sp xml:id="I04-10" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-10">
             <speaker>LE GALANT.</speaker>
             <l part="F">Et moi de beaux pendants.</l>
           </sp>
-          <sp xml:id="I04-11" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-11">
             <speaker>L'ÉPINAI.</speaker>
             <l n="113" xml:id="l113">Et moi des épagneuls qui viennent de Boulogne.</l>
           </sp>
-          <sp xml:id="I04-12" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-12">
             <speaker>LE GALANT.</speaker>
             <l n="114" xml:id="l114">Et moi ce que j'ai de pris de rare en Catalogne.</l>
           </sp>
-          <sp xml:id="I04-13" who="LACOMEDIENNE">
+          <sp who="LACOMEDIENNE" xml:id="I04-13">
             <speaker>LA COMÉDIENNE.</speaker>
             <l n="115" xml:id="l115">Et de gâce, Messieurs, ne vous échauffez pas :</l>
             <l n="116" xml:id="l116">Pour prendre vos présents, j'ai trop peu de deux bras.</l>
           </sp>
-          <sp xml:id="I04-14" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-14">
             <speaker>L'ÉPINAI.</speaker>
-            <l n="117" xml:id="l117" part="I">Elle a le teint fort beau.</l>
+            <l n="117" part="I" xml:id="l117">Elle a le teint fort beau.</l>
           </sp>
-          <sp xml:id="I04-15" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-15">
             <speaker>LE GALANT.</speaker>
             <l part="F">Et la taille gentille.</l>
           </sp>
-          <sp xml:id="I04-16" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-16">
             <speaker>L'ÉPINAI.</speaker>
-            <l n="118" xml:id="l118" part="I">Son oeil me plaît assez.</l>
+            <l n="118" part="I" xml:id="l118">Son oeil me plaît assez.</l>
           </sp>
-          <sp xml:id="I04-17" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-17">
             <speaker>LE GALANT.</speaker>
             <l part="F">Êtes-vous femme ou fille ?</l>
             <l n="119" xml:id="l119">Aimez-moi je, vous prie, et m'appelez « mon coeur »,</l>
             <l n="120" xml:id="l120">Et je vous nommerai ma mignonne et ma soeur.</l>
           </sp>
-          <sp xml:id="I04-18" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-18">
             <speaker>L'ÉPINAI.</speaker>
             <l n="121" xml:id="l121">Vous faites, par ma foi, fort bien la comédie :</l>
             <l n="122" xml:id="l122">Quand vous parlez d'amour, que vous estes jolie !</l>
           </sp>
-          <sp xml:id="I04-19" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-19">
             <speaker>LE GALANT.</speaker>
             <l n="123" xml:id="l123">Qu'elle fait bien la fière, et la cruelle aussi !</l>
           </sp>
-          <sp xml:id="I04-20" who="LACOMEDIENNE">
+          <sp who="LACOMEDIENNE" xml:id="I04-20">
             <speaker>LA COMÉDIENNE.</speaker>
             <l n="124" xml:id="l124">Aussi mon métier est mon unique souci</l>
             <l n="125" xml:id="l125">Et de lui seul je suis ardemment amoureuse.</l>
           </sp>
-          <sp xml:id="I04-21" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-21">
             <speaker>LE GALANT.</speaker>
             <l n="126" xml:id="l126">Voulez-vous sans cesser faire la dédaigneuse ?</l>
           </sp>
-          <sp xml:id="I04-22" who="LACOMEDIENNE">
+          <sp who="LACOMEDIENNE" xml:id="I04-22">
             <speaker>LA COMÉDIENNE.</speaker>
             <l n="127" xml:id="l127">Je m'en vais au théâtre avec des sentiments</l>
             <l n="128" xml:id="l128">Qui sont trop relevés pour tous vos compliments.</l>
             <l n="129" xml:id="l129">Je sens que la fierté s'empare de mon âme :</l>
             <l n="130" xml:id="l130">Ce n'est que pour des rois que mon coeur est de flamme.</l>
           </sp>
-          <sp xml:id="I04-23" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-23">
             <speaker>L'ÉPINAI.</speaker>
             <l n="131" xml:id="l131">Vous allez bien jouer étant de cette humeur,</l>
             <l n="132" xml:id="l132">Votre rôle est-il plain d'amour, ou de rigueur ?</l>
           </sp>
-          <sp xml:id="I04-24" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-24">
             <speaker>LE GALANT.</speaker>
             <l n="133" xml:id="l133">Je vis hier jouer une pièce nouvelle,</l>
             <l n="134" xml:id="l134">Au Théâtre François dont la prose est fort belle :</l>
             <note type="L">Cinna : "Cinna ou la clémence d'Auguste" tragédie en vers de Pierre Corneille représentée pour la première fois en 1639. Cinna n'est pas une pièce nouvelle en 1662.</note>
             <l n="135" xml:id="l135">C'est le pompeux Cinna, les traits en sont nouveaux.</l>
           </sp>
-          <sp xml:id="I04-25" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-25">
             <speaker>L'ÉPINAI.</speaker>
             <l n="136" xml:id="l136">J'aime Thomas Morus, les vers en sont forts beaux.</l>
           </sp>
-          <sp xml:id="I04-26" who="LACOMEDIENNE">
+          <sp who="LACOMEDIENNE" xml:id="I04-26">
             <speaker>LA COMÉDIENNE.</speaker>
             <l n="137" xml:id="l137">Plutôt que de parler, tenez la bouche close :</l>
             <l n="138" xml:id="l138">Cinna c'est fait en vers, Thomas Morus en prose !</l>
@@ -364,20 +367,20 @@
             <l n="141" xml:id="l141">Vos discours à l'instant font de grandes merveilles</l>
             <l n="142" xml:id="l142">Et vous parlez des vers comme font les corneilles.</l>
           </sp>
-          <sp xml:id="I04-27" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-27">
             <speaker>LE GALANT.</speaker>
             <l n="143" xml:id="l143">On me vient de donner un sonnet merveilleux.</l>
           </sp>
-          <sp xml:id="I04-28" who="LEPINAI">
+          <sp who="LEPINAI" xml:id="I04-28">
             <speaker>L'ÉPINAI.</speaker>
-            <l n="144" xml:id="l144" part="I">Combien a-t-il de vers.</l>
+            <l n="144" part="I" xml:id="l144">Combien a-t-il de vers.</l>
           </sp>
-          <sp xml:id="I04-29" who="LEGALANT">
+          <sp who="GALANT" xml:id="I04-29">
             <speaker>LE GALANT.</speaker>
             <note type="C">Un sonnet a une forme fixe et n'a que quatorze vers.</note>
             <l part="M">Au moins trente.</l>
           </sp>
-          <sp xml:id="I04-30" who="LACOMEDIENNE">
+          <sp who="LACOMEDIENNE" xml:id="I04-30">
             <speaker>LA COMÉDIENNE.</speaker>
             <l part="F">Encor mieux !</l>
             <l n="145" xml:id="l145">De grâce, informez-vous des règles poétiques :</l>
@@ -440,71 +443,74 @@
             <l n="200" xml:id="l200">Et recevoir l'honneur d'attirer leurs regards.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Le Portier, Deux filous.<listPerson type="configuration" xml:id="conf5"><person corresp="#LEPORTIER"/><person corresp="#DEUXFILOUX"/><person corresp="#LEFILOU"/></listPerson></head>
-          <sp xml:id="I05-1" who="LEPORTIER">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Le Portier, Deux filous.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#LEPORTIER"/>
+            <person corresp="#FILOU"/>
+            </listPerson></head>
+          <sp who="LEPORTIER" xml:id="I05-1">
             <speaker>LE PORTIER.</speaker>
             <note type="L">Filou : se dit par extension d'un trompeur subtil, d'un escroc, et de tous ceux qui se servent de mauvaise voies pour s'emparer du bien d'autrui. Se dit aussi d'un coupeur de bourse ; de celui qui vole par adresse, ou par surprise. [F]</note>
             <l n="201" xml:id="l201">Voici deux grands filous de fort mauvais augure :</l>
             <note type="L">Mousqueton : petit mousquet aui est plus court ; mais plus gros de calibre que les mousquets ordinaires. Il se tire avec un fusil composé d'un chien et d'un batterie, au lieu que le mousquet s'exécute avec un mèche. [F]</note>
             <l n="202" xml:id="l202">Tiens mon mousqueton prêt, mettons-nous en posture !</l>
           </sp>
-          <sp xml:id="I05-2" who="DEUXFILOUX">
+          <sp who="FILOU" xml:id="I05-2">
             <speaker>DEUX FILOUX.</speaker>
-            <l n="203" xml:id="l203" part="I">Ouvre !</l>
+            <l n="203" part="I" xml:id="l203">Ouvre !</l>
           </sp>
-          <sp xml:id="I05-3" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-3">
             <speaker>LE PORTIER.</speaker>
             <l part="M">Il faut de l'argent !</l>
           </sp>
-          <sp xml:id="I05-4" who="LEFILOU">
+          <sp who="FILOU" xml:id="I05-4">
             <speaker>LE FILOU.</speaker>
             <l part="M">Ah ventre !</l>
           </sp>
-          <sp xml:id="I05-5" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-5">
             <speaker>LE PORTIER.</speaker>
             <l part="F">Par la mort !</l>
           </sp>
-          <sp xml:id="I05-6" who="LEFILOU">
+          <sp who="FILOU" xml:id="I05-6">
             <speaker>LE FILOU.</speaker>
-            <l n="204" xml:id="l204" part="I">Tu me refuse en vain !</l>
+            <l n="204" part="I" xml:id="l204">Tu me refuse en vain !</l>
           </sp>
-          <sp xml:id="I05-7" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-7">
             <speaker>LE PORTIER.</speaker>
             <l part="F">Tu fais un vain effort !</l>
           </sp>
-          <sp xml:id="I05-8" who="LEFILOU">
+          <sp who="FILOU" xml:id="I05-8">
             <speaker>LE FILOU.</speaker>
             <l n="205" xml:id="l205">Comment tu faits le brave, et la rude moustache ?</l>
           </sp>
-          <sp xml:id="I05-9" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-9">
             <speaker>LE PORTIER.</speaker>
             <l n="206" xml:id="l206">Je fais ce que je suis, quand je veux je me fâche.</l>
           </sp>
-          <sp xml:id="I05-10" who="LEFILOU">
+          <sp who="FILOU" xml:id="I05-10">
             <speaker>LE FILOU.</speaker>
             <l n="207" xml:id="l207">Je m'en vais te percer si j'entre en action,</l>
           </sp>
-          <sp xml:id="I05-11" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-11">
             <speaker>LE PORTIER.</speaker>
             <l n="208" xml:id="l208">On m'a déjà percé, j'ai vu l'occasion,</l>
             <l n="209" xml:id="l209">Les canons, les fusils, et le fer et la flamme</l>
             <l n="210" xml:id="l210">Ne me font point de peur, je me ris de ta lame.</l>
           </sp>
-          <sp xml:id="I05-12" who="LEFILOU">
+          <sp who="FILOU" xml:id="I05-12">
             <speaker>LE FILOU.</speaker>
             <l n="211" xml:id="l211">Par la tête, jarni, redoute mon courroux.</l>
           </sp>
-          <sp xml:id="I05-13" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-13">
             <speaker>LE PORTIER.</speaker>
             <l n="212" xml:id="l212">S'il ne tient qu'à jurer, ah ! La vache est à nous !</l>
             <l n="213" xml:id="l213">Il me faut de l'argent, quoique vous puissiez faire.</l>
           </sp>
-          <sp xml:id="I05-14" who="LEFILOU">
+          <sp who="FILOU" xml:id="I05-14">
             <speaker>LE FILOU.</speaker>
             <l n="214" xml:id="l214">Je n'en ai point, ami, redoute ma colère !</l>
           </sp>
-          <sp xml:id="I05-15" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-15">
             <speaker>LE PORTIER.</speaker>
             <l n="215" xml:id="l215">Allez n'en ayant point, fanfaron sans pareil,</l>
             <l n="216" xml:id="l216">Dormir le dos en terre, et le ventre au soleil.</l>
@@ -512,11 +518,11 @@
             <note type="L">Hallebarde : Arme d'hast offensive ; composée d'un long fût ou bâton d'environ cinq pieds, qui a un crochet ou un fer plat et échancré aboutissant en pointes, et au bout une grande lame de fort forte et aigüe. [F]</note>
             <l n="218" xml:id="l218">Sous le fais d'un mousquet, ou d'une hallebarde.</l>
           </sp>
-          <sp xml:id="I05-16" who="LEFILOU">
+          <sp who="FILOU" xml:id="I05-16">
             <speaker>LE FILOU.</speaker>
             <l n="219" xml:id="l219">Ah c'est trop endurer, Portier tu périras.</l>
           </sp>
-          <sp xml:id="I05-17" who="LEPORTIER">
+          <sp who="LEPORTIER" xml:id="I05-17">
             <speaker>LE PORTIER.</speaker>
             <l n="220" xml:id="l220">Je vais parler à vous, messieurs les fiers à bras ;</l>
             <l n="221" xml:id="l221">Et d'estoc, et de taille, et de quarte et de tierce</l>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Les amours de trapolin</title><title type="sub">, comédie</title>
-        <author born="1628" born_location="" death="1673" death_location="" academie=""><surname>Dorimond</surname><forename> Nicolas Drouin dit</forename></author>
+        <title>Les amours de trapolin</title>
+        <title type="sub">, comédie</title>
+        <author academie="" born="1628" born_location="" death="1673" death_location=""><surname>Dorimond</surname><forename> Nicolas Drouin dit</forename></author>
       </titleStmt>
       <publicationStmt>
         <editor>Édition critique établie par Daphné Dinard dans le cadre d'un mémoire de master 2 sous la direction de Georges Forestier (2013-2014)</editor>
@@ -32,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -44,19 +46,8 @@
         <titlePart type="sub">COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1662">M. DC. LXII. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor id="DORIMOND, Nicolas Drouin dit" bio="DORIMONT"/>
-      <docImprint>
-        <privilege value="">
-          <head>EXTRAIT DU PRIVILÈGE DU ROI.</head>
-          <p>Par grâce et privilège du Roi, donné à Paris le vingt-sixième Mars 1661. Signé, Par le Roi en son Conseil, DE FAYES. Il est permis au Sieur DORIMOND, Comédien de Mademoiselle, de faire imprimer une pièce de théâtre intitulée La Comédie de la Comédie et les Amours de Trapolin, par lui composée et représentée par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu'il voudra choisir, pendant cinq années. Et défenses sont faites à tous autres de l'imprimer ni vendre d'autre édition que celle de l'exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d'amende, de tous dépens, dommages et intérêts, comme il est porté plus amplement par lesdites Lettres de Privilège.</p>
-          <p>Et ledit Sieur Dorimond a cédé et transporté son privilège à Jean Ribou, et Gabriel Quinet, marchands libraires à Paris, pour en jouir suivant l'accord fait entre eux.</p>
-          <p>Registré sur le Livre de la Communauté, suivant l'Arrest de la Cour.</p>
-          <p>Signé JOSSE, Syndic.</p>
-          <p>Les Exemplaires ont été fournis.</p>
-        </privilege>
-        <acheveImprime value="1662-01-22">Achevé d'imprimer pour la première fois, le 22. Janvier 1662.</acheveImprime>
-        <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, sur le Quai des Augustins, à L'Image Saint Louis.</printer>
-      </docImprint>
+      <docAuthor bio="DORIMONT" id="DORIMOND, Nicolas Drouin dit"/>
+      <docImprint> <privilege value=""> <head>EXTRAIT DU PRIVILÈGE DU ROI.</head> <p>Par grâce et privilège du Roi, donné à Paris le vingt-sixième Mars 1661. Signé, Par le Roi en son Conseil, DE FAYES. Il est permis au Sieur DORIMOND, Comédien de Mademoiselle, de faire imprimer une pièce de théâtre intitulée La Comédie de la Comédie et les Amours de Trapolin, par lui composée et représentée par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu'il voudra choisir, pendant cinq années. Et défenses sont faites à tous autres de l'imprimer ni vendre d'autre édition que celle de l'exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d'amende, de tous dépens, dommages et intérêts, comme il est porté plus amplement par lesdites Lettres de Privilège.</p> <p>Et ledit Sieur Dorimond a cédé et transporté son privilège à Jean Ribou, et Gabriel Quinet, marchands libraires à Paris, pour en jouir suivant l'accord fait entre eux.</p> <p>Registré sur le Livre de la Communauté, suivant l'Arrest de la Cour.</p> <p>Signé JOSSE, Syndic.</p> <p>Les Exemplaires ont été fournis.</p> </privilege> <acheveImprime value="1662-01-22">Achevé d'imprimer pour la première fois, le 22. Janvier 1662.</acheveImprime> <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, sur le Quai des Augustins, à L'Image Saint Louis.</printer> </docImprint>
       <performance>
         <premiere date="(non indiqué)" location="(non indiqué)"/>
       </performance>
@@ -69,22 +60,25 @@
       </div>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="LIGNORANCE" id="L'IGNORANCE" sex="2" type="P" statut="allégorie" age="A" stat_amour="néant">L'IGNORANCE</role>.</castItem>
-        <castItem><role xml:id="TRAPOLIN" id="TRAPOLIN" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">TRAPOLIN</role>.</castItem>
-        <castItem><role xml:id="LEDOCTEUR" id="LE DOCTEUR" sex="1" type="H" statut="docteur" age="A" stat_amour="néant">LE DOCTEUR</role>.</castItem>
-        <castItem><role xml:id="PHILOSOPHIE" id="PHILOSOPHIE" sex="2" type="H" statut="allégorie" age="A" stat_amour="néant">PHILOSOPHIE</role>, fille du Docteur.</castItem>
-        <castItem><role xml:id="POESIE" id="POÉSIE" sex="2" type="H" statut="allégorie" age="A" stat_amour="néant">POÉSIE</role>.</castItem>
-        <castItem><role xml:id="GALANTERIE" id="GALANTERIE" sex="2" type="H" statut="allégorie" age="A" stat_amour="néant">GALANTERIE</role>, Cousine.</castItem>
+        <castItem><role age="A" id="L'IGNORANCE" sex="2" stat_amour="néant" statut="allégorie" type="P" xml:id="IGNORANCE">L'IGNORANCE</role>.</castItem>
+        <castItem><role age="A" id="TRAPOLIN" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="TRAPOLIN">TRAPOLIN</role>.</castItem>
+        <castItem><role age="A" id="LE DOCTEUR" sex="1" stat_amour="néant" statut="docteur" type="H" xml:id="LEDOCTEUR">LE DOCTEUR</role>.</castItem>
+        <castItem><role age="A" id="PHILOSOPHIE" sex="2" stat_amour="néant" statut="allégorie" type="H" xml:id="PHILOSOPHIE">PHILOSOPHIE</role>, fille du Docteur.</castItem>
+        <castItem><role age="A" id="POÉSIE" sex="2" stat_amour="néant" statut="allégorie" type="H" xml:id="POESIE">POÉSIE</role>.</castItem>
+        <castItem><role age="A" id="GALANTERIE" sex="2" stat_amour="néant" statut="allégorie" type="H" xml:id="GALANTERIE">GALANTERIE</role>, Cousine.</castItem>
       </castList>
-      <set location="(non indiqué)" country="(non indiqué)" periode="(inconnu)" link=""/>
+      <set country="(non indiqué)" link="" location="(non indiqué)" periode="(inconnu)"/>
       <note>Ce texte est édité dans le même volume avec "La Comédie de la Comédie" du même auteur.</note>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head/>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Trapolin, Ignorance.<listPerson type="configuration" xml:id="conf1"><person corresp="#IGNORANCE"/><person corresp="#TRAPOLIN"/></listPerson></head>
-          <sp xml:id="I01-1" who="IGNORANCE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Trapolin, Ignorance.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#IGNORANCE"/>
+            <person corresp="#TRAPOLIN"/>
+            </listPerson></head>
+          <sp who="IGNORANCE" xml:id="I01-1">
             <speaker>IGNORANCE.</speaker>
             <l n="1" xml:id="l1">Et bien mon cher, mon beau, mon tout, mon agréable,</l>
             <l n="2" xml:id="l2">L'essence des amants, coquet le plus aimable,</l>
@@ -97,38 +91,38 @@
             <l n="9" xml:id="l9">Rien n'est égal à moi sur la terre et sur l'onde</l>
             <l n="10" xml:id="l10">Et mes beaux yeux mourants, font mourir tout le monde.</l>
           </sp>
-          <sp xml:id="I01-2" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-2">
             <speaker>TRAPOLIN.</speaker>
             <l n="11" xml:id="l11">Beauté, beaux yeux, mon coeur, belle bouche, beau teint.</l>
           </sp>
-          <sp xml:id="I01-3" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I01-3">
             <speaker>IGNORANCE.</speaker>
             <l n="12" xml:id="l12">Aujourd'hui j'en ai peu, mais j'en aurai demain</l>
             <l n="13" xml:id="l13">Si je n'ai pas le teint, j'aurai la marjolaine.</l>
           </sp>
-          <sp xml:id="I01-4" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-4">
             <speaker>TRAPOLIN.</speaker>
             <l n="14" xml:id="l14">Que vous êtes railleuse, adorable inhumaine.</l>
           </sp>
-          <sp xml:id="I01-5" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I01-5">
             <speaker>IGNORANCE.</speaker>
             <l n="15" xml:id="l15">Que vous êtes cruel, de me percer le coeur !</l>
           </sp>
-          <sp xml:id="I01-6" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-6">
             <speaker>TRAPOLIN.</speaker>
             <l n="16" xml:id="l16">Ah ! Que vous me grillez, oeil mon petit vainqueur !</l>
           </sp>
-          <sp xml:id="I01-7" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I01-7">
             <speaker>IGNORANCE.</speaker>
             <l n="17" xml:id="l17">Petit fripon, voleur, et filou de mon âme.</l>
           </sp>
-          <sp xml:id="I01-8" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-8">
             <speaker>TRAPOLIN.</speaker>
             <l n="18" xml:id="l18">Ignorance, mon coeur, beau sujet de ma flamme,</l>
             <l n="19" xml:id="l19">Pour te suivre toujours, je veux m'efféminer,</l>
             <l n="20" xml:id="l20">Lire peu, manger bien, ne jamais raisonner.</l>
           </sp>
-          <sp xml:id="I01-9" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I01-9">
             <speaker>IGNORANCE.</speaker>
             <l n="21" xml:id="l21">Voila le vrai moyen d'être aimé de sa belle</l>
             <l n="22" xml:id="l22">Et de me voir pour toi, plus douce que cruelle ;</l>
@@ -152,40 +146,42 @@
             <l n="39" xml:id="l39">Mais adieu, je m'en vais, maman me fouetterait</l>
             <l n="40" xml:id="l40">Si je demeurais plus avec toi, mon coquet.</l>
           </sp>
-          <sp xml:id="I01-10" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-10">
             <speaker>TRAPOLIN.</speaker>
-            <l n="41" xml:id="l41" part="I">Adieu, lampe d'amour.</l>
+            <l n="41" part="I" xml:id="l41">Adieu, lampe d'amour.</l>
           </sp>
-          <sp xml:id="I01-11" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I01-11">
             <speaker>IGNORANCE.</speaker>
             <note type="L">Falot : grosse lumière qu'on porte au bout d'un bâton, enfermée dans quelque vessie ou lanterne. [F]</note>
             <l part="F">Adieu falot de flamme.</l>
           </sp>
-          <sp xml:id="I01-12" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-12">
             <speaker>TRAPOLIN.</speaker>
-            <l n="42" xml:id="l42" part="I">Je soupire.</l>
+            <l n="42" part="I" xml:id="l42">Je soupire.</l>
           </sp>
-          <sp xml:id="I01-13" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I01-13">
             <speaker>IGNORANCE.</speaker>
             <l part="M">Je meurs.</l>
           </sp>
-          <sp xml:id="I01-14" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-14">
             <speaker>TRAPOLIN.</speaker>
             <l part="M">Je succombe.</l>
           </sp>
-          <sp xml:id="I01-15" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I01-15">
             <speaker>IGNORANCE.</speaker>
             <l part="F">Ah ! Je pâme !</l>
             <l n="43" xml:id="l43">Se quitter quand on s'aime, quelle cruauté !</l>
           </sp>
-          <sp xml:id="I01-16" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I01-16">
             <speaker>TRAPOLIN.</speaker>
             <l n="44" xml:id="l44">Je soupire à tout coup, et de tous les côtés.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf2"><person corresp="#LEDOCTEUR"/></listPerson></head>
-          <sp xml:id="I02-1" who="LEDOCTEUR">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#LEDOCTEUR"/>
+            </listPerson></head>
+          <sp who="LEDOCTEUR" xml:id="I02-1">
             <speaker>LE DOCTEUR.</speaker>
             <l n="45" xml:id="l45">J'ai des filles chez moy, doctes, spirituelles;</l>
             <l n="46" xml:id="l46">La matière, et l'esprit sont excellents en elles,</l>
@@ -208,28 +204,31 @@
             <l n="62" xml:id="l62">De peur de déroger et souiller ma science. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Le Docteur, Trapolin.<listPerson type="configuration" xml:id="conf3"><person corresp="#TRAPOLIN"/><person corresp="#LEDOCTEUR"/></listPerson></head>
-          <sp xml:id="I03-1" who="TRAPOLIN">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Le Docteur, Trapolin.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#TRAPOLIN"/>
+            <person corresp="#LEDOCTEUR"/>
+            </listPerson></head>
+          <sp who="TRAPOLIN" xml:id="I03-1">
             <speaker>TRAPOLIN.</speaker>
             <l n="63" xml:id="l63">Docteurs, musiciens, poètes ; à mon lever,</l>
             <l n="64" xml:id="l64">Je suis riche et coquet, le sort veut m'élever.</l>
           </sp>
-          <sp xml:id="I03-2" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-2">
             <speaker>LE DOCTEUR.</speaker>
             <l n="65" xml:id="l65">Je ne m'étonne point de ce que la fortune</l>
             <l n="66" xml:id="l66">A chargé de ses biens ta figure commune ;</l>
             <l n="67" xml:id="l67">Pour les pouvoir porter, il fallait un cheval :</l>
             <l n="68" xml:id="l68">L'homme est pour ce sujet un trop faible animal.</l>
           </sp>
-          <sp xml:id="I03-3" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-3">
             <speaker>TRAPOLIN.</speaker>
             <l n="69" xml:id="l69">Les peintres, les docteurs, avec tous les poètes</l>
             <l n="70" xml:id="l70">Sont dessus ce sujet aussi fols que vous êtes :</l>
             <l n="71" xml:id="l71">La fortune est aveugle à leur gré, mais ma foi,</l>
             <l n="72" xml:id="l72">Je tiens qu'elle voit clair, puisqu'elle vient à moi.</l>
           </sp>
-          <sp xml:id="I03-4" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-4">
             <speaker>LE DOCTEUR.</speaker>
             <l n="73" xml:id="l73">Eh bien, mettez le pied hors du commun vulgaire,</l>
             <l n="74" xml:id="l74">Développez-un peu l'esprit de la matière ;</l>
@@ -239,42 +238,42 @@
             <l n="78" xml:id="l78">Et qu'un oiseau huppé qui n'a point de ramage.</l>
             <l n="79" xml:id="l79">Avecque vos trésors achetez de l'esprit ! </l>
           </sp>
-          <sp xml:id="I03-5" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-5">
             <speaker>TRAPOLIN.</speaker>
             <l n="80" xml:id="l80">De l'esprit, en quel lieu ? Qui m'en fera débit ?</l>
           </sp>
-          <sp xml:id="I03-6" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-6">
             <speaker>LE DOCTEUR.</speaker>
             <l n="81" xml:id="l81">Les Muses, Apollon, un docte Philosophe,</l>
             <l n="82" xml:id="l82">Des auteurs en un mot, des gens de mon étoffe.</l>
           </sp>
-          <sp xml:id="I03-7" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-7">
             <speaker>TRAPOLIN.</speaker>
             <l n="83" xml:id="l83">Pour vous rendre agréable à la Cour, au public</l>
             <l n="84" xml:id="l84">J'en veux faire passer douze par l'alambic</l>
             <l n="85" xml:id="l85">Pour en tirer l'esprit, et puis par fantaisie</l>
             <l n="86" xml:id="l86">J'en prendrai les matins comme de l'eau de vie.</l>
           </sp>
-          <sp xml:id="I03-8" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-8">
             <speaker>LE DOCTEUR.</speaker>
             <l n="87" xml:id="l87">Le beau fils de Latonne à lui-même épuré</l>
             <l n="88" xml:id="l88">Les esprits merveilleux au sublime degré :</l>
             <l n="89" xml:id="l89">Ce sont individus tout remplis de science</l>
             <l n="90" xml:id="l90">Qui ne sont point impurs, et qui ne sont qu'essence.</l>
           </sp>
-          <sp xml:id="I03-9" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-9">
             <speaker>TRAPOLIN.</speaker>
             <l n="91" xml:id="l91">Qu'essence ? Il en est donc chez notre parfumeur :</l>
             <l n="92" xml:id="l92">Je n'ai qu'à demander de l'essence d'auteur;</l>
             <l n="93" xml:id="l93">S'il en est, j'en aurai, de la plus excellente.</l>
           </sp>
-          <sp xml:id="I03-10" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-10">
             <speaker>LE DOCTEUR.</speaker>
             <l n="94" xml:id="l94">Que j'ai peine à souffrir ta langue impertinente !</l>
             <l n="95" xml:id="l95">Le centre de l'esprit est au sacré ruisseau :</l>
-            <l n="96" xml:id="l96" part="I">Vas-y voir ignorant !</l>
+            <l n="96" part="I" xml:id="l96">Vas-y voir ignorant !</l>
           </sp>
-          <sp xml:id="I03-11" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-11">
             <speaker>TRAPOLIN.</speaker>
             <l part="F">Qui moi ? Boire de l'eau ?</l>
             <l n="97" xml:id="l97">Je ne bois que du vin ! Quand j'ai bu je fais rage,</l>
@@ -290,7 +289,7 @@
             <l n="105" xml:id="l105">Je montre à ma Philis ma flamme toute nue</l>
             <l n="106" xml:id="l106">Et vais au rendez-vous, dès la première vue.</l>
           </sp>
-          <sp xml:id="I03-12" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-12">
             <speaker>LE DOCTEUR.</speaker>
             <l n="107" xml:id="l107">Des sottises du temps la multiplicité</l>
             <l n="108" xml:id="l108">Cause beaucoup de peine et d'importunité;</l>
@@ -316,13 +315,13 @@
             <l n="127" xml:id="l127">Enfin, pour faire un nombre entre les vrais galants,</l>
             <l n="128" xml:id="l128">Il faut avoir du coeur, de l'esprit, et du sens.</l>
           </sp>
-          <sp xml:id="I03-13" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-13">
             <speaker>TRAPOLIN.</speaker>
             <l n="129" xml:id="l129">Les femmes ne sont pas difficiles à prendre :</l>
             <l n="130" xml:id="l130">Un coquet comme moi met tôt leurs coeurs en cendre,</l>
-            <l n="131" xml:id="l131" part="I">Les femmes à mon gré...</l>
+            <l n="131" part="I" xml:id="l131">Les femmes à mon gré...</l>
           </sp>
-          <sp xml:id="I03-14" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-14">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Les femmes... taisez-vous</l>
             <l n="132" xml:id="l132">Parlez avec respect de ces objets si doux !</l>
@@ -336,11 +335,11 @@
             <l n="139" xml:id="l139">L'imaginaire amant ne trouve en vérité</l>
             <l n="140" xml:id="l140">Pour maîtresse la nuit rien que sa vanité.</l>
           </sp>
-          <sp xml:id="I03-15" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-15">
             <speaker>TRAPOLIN.</speaker>
-            <l n="141" xml:id="l141" part="I">Les femmes...</l>
+            <l n="141" part="I" xml:id="l141">Les femmes...</l>
           </sp>
-          <sp xml:id="I03-16" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-16">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Taisez-vous ! Cent bourrus, dans leurs âmes,</l>
             <l n="142" xml:id="l142">Fourbez sans y penser par quelqu'unes des femmes,</l>
@@ -351,11 +350,11 @@
             <l n="147" xml:id="l147">Elle verse en son corps ce qu'elle a d'excellent</l>
             <l n="148" xml:id="l148">Et dedans son esprit ce qu'elle a de brillant.</l>
           </sp>
-          <sp xml:id="I03-17" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-17">
             <speaker>TRAPOLIN.</speaker>
-            <l n="149" xml:id="l149" part="I">Les femmes...</l>
+            <l n="149" part="I" xml:id="l149">Les femmes...</l>
           </sp>
-          <sp xml:id="I03-18" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-18">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Taisez-vous, s'il est vrai que des femmes</l>
             <l n="150" xml:id="l150">Ayant des actions diaboliques et infâmes,</l>
@@ -372,72 +371,72 @@
             <l n="161" xml:id="l161">Et je vais hardiment sous l'étendard des femmes </l>
             <l n="162" xml:id="l162">Combattre et vaincre ceux qui sont contre les dames.</l>
           </sp>
-          <sp xml:id="I03-19" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-19">
             <speaker>TRAPOLIN.</speaker>
-            <l n="163" xml:id="l163" part="I">Les femmes...</l>
+            <l n="163" part="I" xml:id="l163">Les femmes...</l>
           </sp>
-          <sp xml:id="I03-20" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-20">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Taisez-vous mille fois, taisez-vous !</l>
             <l n="164" xml:id="l164">Les femmes l'ont toujours emporté dessus nous.</l>
           </sp>
-          <sp xml:id="I03-21" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-21">
             <speaker>TRAPOLIN.</speaker>
-            <l n="165" xml:id="l165" part="I">Les femmes...</l>
+            <l n="165" part="I" xml:id="l165">Les femmes...</l>
           </sp>
-          <sp xml:id="I03-22" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-22">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Taisez-vous, ne parlons plus des femmes,</l>
             <l n="166" xml:id="l166">Ou si nous en parlons, mettons les dans nos âmes,</l>
             <l n="167" xml:id="l167">Et supplions qu'amour sans peine et sans ennui,</l>
             <l n="168" xml:id="l168">Nous en veuille donner quelque belle aujourd'hui.</l>
           </sp>
-          <sp xml:id="I03-23" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-23">
             <speaker>TRAPOLIN.</speaker>
-            <l n="169" xml:id="l169" part="I">Les femmes...</l>
+            <l n="169" part="I" xml:id="l169">Les femmes...</l>
           </sp>
-          <sp xml:id="I03-24" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-24">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">À genoux quand tu parle des femmes !</l>
           </sp>
-          <sp xml:id="I03-25" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-25">
             <speaker>TRAPOLIN.</speaker>
-            <l n="170" xml:id="l170" part="I">Les dames...</l>
+            <l n="170" part="I" xml:id="l170">Les dames...</l>
           </sp>
-          <sp xml:id="I03-26" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-26">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Tremble donc quand tu parles des Dames.</l>
           </sp>
-          <sp xml:id="I03-27" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-27">
             <speaker>TRAPOLIN.</speaker>
-            <l n="171" xml:id="l171" part="I">Leurs beautés...</l>
+            <l n="171" part="I" xml:id="l171">Leurs beautés...</l>
           </sp>
-          <sp xml:id="I03-28" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-28">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Meurs d'amour parlant de leurs beautés !</l>
           </sp>
-          <sp xml:id="I03-29" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-29">
             <speaker>TRAPOLIN.</speaker>
-            <l n="172" xml:id="l172" part="I">Leurs beaux yeux...</l>
+            <l n="172" part="I" xml:id="l172">Leurs beaux yeux...</l>
           </sp>
-          <sp xml:id="I03-30" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-30">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Du respect, pour les divinités !</l>
           </sp>
-          <sp xml:id="I03-31" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-31">
             <speaker>TRAPOLIN.</speaker>
-            <l n="173" xml:id="l173" part="I">Leur esprit...</l>
+            <l n="173" part="I" xml:id="l173">Leur esprit...</l>
           </sp>
-          <sp xml:id="I03-32" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-32">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Malheureux, tu vas ouvrir ta tombe !</l>
             <l n="174" xml:id="l174">Laisse là leur esprit, que le tien y succombe.</l>
           </sp>
-          <sp xml:id="I03-33" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-33">
             <speaker>TRAPOLIN.</speaker>
-            <l n="175" xml:id="l175" part="I">Leur amour.</l>
+            <l n="175" part="I" xml:id="l175">Leur amour.</l>
           </sp>
-          <sp xml:id="I03-34" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-34">
             <speaker>TRAPOLIN.</speaker>
             <l part="F">Leur amour et leur fidélité</l>
             <l n="176" xml:id="l176">Va jusques à l'excès, ainsi que leur beauté.</l>
@@ -461,11 +460,11 @@
             <l n="193" xml:id="l193">Dont la force et la violence</l>
             <l n="194" xml:id="l194">Leur fait conserver leur confiance.</l>
           </sp>
-          <sp xml:id="I03-35" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-35">
             <speaker>TRAPOLIN.</speaker>
-            <l n="195" xml:id="l195" part="I">L'amour...</l>
+            <l n="195" part="I" xml:id="l195">L'amour...</l>
           </sp>
-          <sp xml:id="I03-36" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-36">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">L'amour, l'amour perd un sot comme toi !</l>
             <l n="196" xml:id="l196">Des femmes sans cesser nous recevrons la loi :</l>
@@ -476,20 +475,20 @@
             <l n="201" xml:id="l201">Un honnête homme enfin, serait-il honnête homme</l>
             <l n="202" xml:id="l202">S'il n'avait pas aimé ? Mais pour te montrer comme...</l>
           </sp>
-          <sp xml:id="I03-37" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-37">
             <speaker>TRAPOLIN.</speaker>
             <l n="203" xml:id="l203">Hélas ! Ne contes plus, veux-tu parler toujours ?</l>
             <l n="204" xml:id="l204">Veux-tu parler un an ? Trêve à tant de discours !</l>
             <l n="205" xml:id="l205">Ne parlez plus Docteur, quittez cette coutume !</l>
           </sp>
-          <sp xml:id="I03-38" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I03-38">
             <speaker>LE DOCTEUR.</speaker>
             <l n="206" xml:id="l206">Je me sens en humeur de te dire un volume,</l>
             <l n="207" xml:id="l207">Mais j'aime mieux aller retrouver mes auteur.</l>
             <l n="208" xml:id="l208">De parler aux pourceaux, c'est exposer des fleurs.</l>
-            <l n="209" xml:id="l209" part="I">Le docteur sort.</l>
+            <l n="209" part="I" xml:id="l209">Le docteur sort.</l>
           </sp>
-          <sp xml:id="I03-39" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I03-39">
             <speaker>TRAPOLIN, seul.</speaker>
             <l part="F">Ah ! le Docteur m'entend, il me donne silence ;</l>
             <l n="210" xml:id="l210">Je m'en vais à mon tour montrer mon éloquence.</l>
@@ -506,19 +505,22 @@
             <l n="221" xml:id="l221">Docteur, Docteur ! Il est méchant comme un guenuche.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCENE IV. Le Docteur, Trapolin.<listPerson type="configuration" xml:id="conf4"><person corresp="#LEDOCTEUR"/><person corresp="#TRAPOLIN"/></listPerson></head>
-          <sp xml:id="I04-1" who="LEDOCTEUR">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCENE IV. Le Docteur, Trapolin.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#LEDOCTEUR"/>
+            <person corresp="#TRAPOLIN"/>
+            </listPerson></head>
+          <sp who="LEDOCTEUR" xml:id="I04-1">
             <speaker>LE DOCTEUR revient.</speaker>
             <l n="222" xml:id="l222">Que veux-tu, veau doré, franc badin, esprit cruche ?</l>
           </sp>
-          <sp xml:id="I04-2" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I04-2">
             <speaker>TRAPOLIN.</speaker>
             <l n="223" xml:id="l223">Peut-on passer une heure en conversation,</l>
             <l n="224" xml:id="l224">Mais il faut pour cela votre permission,</l>
             <l n="225" xml:id="l225">Avec vos beautés, avec vos belles filles ?</l>
           </sp>
-          <sp xml:id="I04-3" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I04-3">
             <speaker>LE DOCTEUR.</speaker>
             <l n="226" xml:id="l226">Mes filles ne sont pas pour ouïr des vétilles ;</l>
             <l n="227" xml:id="l227">Et cent petits mortels qui s'en disent amants</l>
@@ -542,41 +544,46 @@
             <l n="245" xml:id="l245">À deux portes d'ici loge Dame Ignorance :</l>
             <l n="246" xml:id="l246">Tout y va, tout y court avec grande abondance.</l>
           </sp>
-          <sp xml:id="I04-4" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I04-4">
             <speaker>TRAPOLIN.</speaker>
             <l n="247" xml:id="l247">Pour moi je suis toujours la mode et son torrent :</l>
             <l n="248" xml:id="l248">Et j'aime des longtemps, et son mérite est grand ;</l>
             <l n="249" xml:id="l249">J'y pourrais bien aller avec tous les autres.</l>
           </sp>
-          <sp xml:id="I04-5" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I04-5">
             <speaker>LE DOCTEUR.</speaker>
             <l n="250" xml:id="l250">Elle vous plaira fort, mais daignez voir les nôtres.</l>
           </sp>
-          <sp xml:id="I04-6" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I04-6">
             <speaker>TRAPOLIN.</speaker>
-            <l n="251" xml:id="l251" part="I">Soit fait.</l>
+            <l n="251" part="I" xml:id="l251">Soit fait.</l>
           </sp>
-          <sp xml:id="I04-7" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I04-7">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">Poetica et Philosophica.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Philosophie, Poésie, Trapolin, Le Docteur.<listPerson type="configuration" xml:id="conf5"><person corresp="#POESIE"/><person corresp="#PHILOSOPHIE"/><person corresp="#LEDOCTEUR"/><person corresp="#TRAPOLIN"/></listPerson></head>
-          <sp xml:id="I05-1" who="POESIE">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Philosophie, Poésie, Trapolin, Le Docteur.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#POESIE"/>
+            <person corresp="#PHILOSOPHIE"/>
+            <person corresp="#LEDOCTEUR"/>
+            <person corresp="#TRAPOLIN"/>
+            </listPerson></head>
+          <sp who="POESIE" xml:id="I05-1">
             <speaker>POÉSIE.</speaker>
             <l n="252" xml:id="l252">Qvid vis Papa ego sum paratissima.</l>
           </sp>
-          <sp xml:id="I05-2" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I05-2">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="253" xml:id="l253">Idsum tibi Papa, quid de me cupis ?</l>
             <l n="254" xml:id="l254">..........................</l>
           </sp>
-          <sp xml:id="I05-3" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I05-3">
             <speaker>LE DOCTEUR.</speaker>
-            <l n="255" xml:id="l255" part="I">Accedite.</l>
+            <l n="255" part="I" xml:id="l255">Accedite.</l>
           </sp>
-          <sp xml:id="I05-4" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-4">
             <speaker>TRAPOLIN.</speaker>
             <l part="F">Cupis veut dire Cupidon,</l>
             <l n="256" xml:id="l256">Moi Cupidon, j'ai l'oeoeil assez fripon.</l>
@@ -589,7 +596,7 @@
             <l n="263" xml:id="l263">De là je lancerai la foudre chaque jour,</l>
             <l n="264" xml:id="l264">Et l'on m'appellera le beau petit amour.</l>
           </sp>
-          <sp xml:id="I05-5" who="POESIE">
+          <sp who="POESIE" xml:id="I05-5">
             <speaker>POÉSIE.</speaker>
             <note type="L">Hyperbole : figure de rhétorique qui augmente ou qui diminue excessivement la vérité des choses dont on parle. [F] </note>
             <l n="265" xml:id="l265">Mon oncle le Parnasse, et ma tante Hyperbole,</l>
@@ -604,18 +611,18 @@
             <l n="273" xml:id="l273">Passe pour mon enfant, et j'en suis en colère,</l>
             <l n="274" xml:id="l274">N'ayant rien dissipé des esprits de son père.</l>
           </sp>
-          <sp xml:id="I05-6" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I05-6">
             <speaker>LE DOCTEUR.</speaker>
             <l n="275" xml:id="l275">Ce galant pour produire est-il à votre gré.</l>
           </sp>
-          <sp xml:id="I05-7" who="POESIE">
+          <sp who="POESIE" xml:id="I05-7">
             <speaker>POÉSIE.</speaker>
             <l n="276" xml:id="l276">Avec un peu de temps je le poétiserai,</l>
             <note type="L">Carme : Est aussi un vieux mot qui signifiait vers. Il vient du latin carmen ; et en ce sens il est tout à fait hors d'usage. [F]</note>
             <l n="277" xml:id="l277">Ensemble nous ferons un Carme magnifique :</l>
             <l n="278" xml:id="l278">Il fera le sonnet, et je ferai l'épique.</l>
           </sp>
-          <sp xml:id="I05-8" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-8">
             <speaker>TRAPOLIN.</speaker>
             <l n="279" xml:id="l279">Moi Poète ! ah bon Dieu, quel discours de travers !</l>
             <l n="280" xml:id="l280">Avant que de mourir, me voir manger au vers !</l>
@@ -632,7 +639,7 @@
             <l n="291" xml:id="l291">Et puis avec vous à le trancher tout net,</l>
             <l n="292" xml:id="l292">Je ne pourrai jamais faire qu'un beau sonnet.</l>
           </sp>
-          <sp xml:id="I05-9" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I05-9">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="293" xml:id="l293">Et moi Monsieur, qui met les beaux esprits en flamme,</l>
             <l n="294" xml:id="l294">Qui tiens dans mes liens et la raison et l'âme,</l>
@@ -647,22 +654,22 @@
             <l n="302" xml:id="l302">Jugez si pour le mien mes leçons seront vaines.</l>
             <l n="303" xml:id="l303">Et si quand par malheur je vous ferais cocu,</l>
             <l n="304" xml:id="l304">Je ne vous rendrais pas pacifique cornu.</l>
-            <l n="305" xml:id="l305" part="I">Enfin je suis....</l>
+            <l n="305" part="I" xml:id="l305">Enfin je suis....</l>
           </sp>
-          <sp xml:id="I05-10" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-10">
             <speaker>TRAPOLIN.</speaker>
             <l part="F">Ho, ho, Madame Philosophie,</l>
             <l n="306" xml:id="l306">Vous en savez beaucoup pour mon petit génie</l>
             <l n="307" xml:id="l307">Vous l'avez trop grand, l'esprit,</l>
             <l n="308" xml:id="l308">Et moi je l'ai trop petit.</l>
           </sp>
-          <sp xml:id="I05-11" who="POESIE">
+          <sp who="POESIE" xml:id="I05-11">
             <speaker>POÉSIE.</speaker>
             <l n="309" xml:id="l309">Ma soeur Philosophie, à de trop grands secrets ;</l>
             <l n="310" xml:id="l310">Je suis bien plus connue, et j'ai bien plus d'attraits :</l>
             <l n="311" xml:id="l311">On me pénètre mieux, et je suis plus galante.</l>
           </sp>
-          <sp xml:id="I05-12" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-12">
             <speaker>TRAPOLIN.</speaker>
             <l n="312" xml:id="l312">Oui vous êtes de vrai connue et consonante ;</l>
             <l n="313" xml:id="l313">Votre esprit Poésie était doux et bénin,</l>
@@ -676,7 +683,7 @@
             <l n="321" xml:id="l321">Ayez du féminin autant qu'il vous plaira,</l>
             <l n="322" xml:id="l322">Si je suis votre époux, nul ne me rimera.</l>
           </sp>
-          <sp xml:id="I05-13" who="POESIE">
+          <sp who="POESIE" xml:id="I05-13">
             <speaker>POÉSIE.</speaker>
             <l n="323" xml:id="l323">Pour moi ; je n'ai plaisir de me voir poésie</l>
             <l n="324" xml:id="l324">Que parce qu'il me faut cette rime jolie ;</l>
@@ -685,12 +692,12 @@
             <l n="327" xml:id="l327">Les masculins seraient bien rares dans le monde,</l>
             <l n="328" xml:id="l328">Si je ne rimais pas cette rime féconde.</l>
           </sp>
-          <sp xml:id="I05-14" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-14">
             <speaker>TRAPOLIN.</speaker>
             <l n="329" xml:id="l329">Ah ! que l'on rime en nu, sans moi dans l'univers :</l>
             <l n="330" xml:id="l330">Sur ce point je renonce à la règle des vers.</l>
           </sp>
-          <sp xml:id="I05-15" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I05-15">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="331" xml:id="l331">Vous avez bien raison, vous êtes un brave homme !</l>
             <note type="L">Axiome : Principe qu'on a établi dans un art, ou science, qui est indubitable, ou tenu pour tel. [F]</note>
@@ -709,7 +716,7 @@
             <l n="344" xml:id="l344">Il n'appartient qu'à moi de bien exercer l'homme.</l>
             <l n="345" xml:id="l345">Philosophie est belle, et je vous en réponds.</l>
           </sp>
-          <sp xml:id="I05-16" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-16">
             <speaker>TRAPOLIN.</speaker>
             <l n="346" xml:id="l346">Oui, mais Philosophie a pour moi trop de fonds;</l>
             <l n="347" xml:id="l347">Un téton ce me semble a beaucoup d'éloquence,</l>
@@ -719,7 +726,7 @@
             <l n="351" xml:id="l351">On m'a toujours fait craindre une femme savante,</l>
             <l n="352" xml:id="l352">J'aimerais quasi mieux une douce ignorante.</l>
           </sp>
-          <sp xml:id="I05-17" who="POESIE">
+          <sp who="POESIE" xml:id="I05-17">
             <speaker>POÉSIE.</speaker>
             <l n="353" xml:id="l353">Il faut mieux tout risquer pour aimer en bons lieux.</l>
             <l n="354" xml:id="l354">Ma bouche parle enfin le langage des dieux,</l>
@@ -732,17 +739,17 @@
             <l n="361" xml:id="l361">Mes neuf Muses y vont travailler nuit et jour ;</l>
             <l n="362" xml:id="l362">On y veut que du tendre et du galant amour,</l>
             <l n="363" xml:id="l363">Mais on aime surtout assez la bagatelle :</l>
-            <note type="L">Ruelle : se dit aussi de l'espace qu'on laisse  entre le lit et la muraille. Se dit aussi des alcôves, et en général les lieux parés où les dames reçoivent leurs visites, soit dans leurs lits, soit sur des sièges. [F]</note>
+            <note type="L">Ruelle : se dit aussi de l'espace qu'on laisse entre le lit et la muraille. Se dit aussi des alcôves, et en général les lieux parés où les dames reçoivent leurs visites, soit dans leurs lits, soit sur des sièges. [F]</note>
             <l n="364" xml:id="l364">C'est ce qui fait causer dans la belle ruelle ;</l>
             <l n="365" xml:id="l365">Et puisque me voila sur le tendre et le doux,</l>
             <l n="366" xml:id="l366">Profitez de ce temps, faites-vous mon époux.</l>
           </sp>
-          <sp xml:id="I05-18" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-18">
             <speaker>TRAPOLIN.</speaker>
             <l n="367" xml:id="l367">Vous allez Poésie admirablement vite,</l>
             <l n="368" xml:id="l368">Mais vos pieds en sont cause ; halte, ou bien je vous quitte.</l>
           </sp>
-          <sp xml:id="I05-19" who="POESIE">
+          <sp who="POESIE" xml:id="I05-19">
             <speaker>POÉSIE.</speaker>
             <l n="369" xml:id="l369">Tant mieux, je ne veux point de froid tempérament :</l>
             <l n="370" xml:id="l370">Il me faut plus de feux que de raisonnement,</l>
@@ -756,30 +763,35 @@
             <l n="377" xml:id="l377">Et s'ils avaient dîné, vous auriez en tout cas</l>
             <l n="378" xml:id="l378">Votre gloire à manger qui ne manquerait pas.</l>
           </sp>
-          <sp xml:id="I05-20" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I05-20">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="379" xml:id="l379">Pour moi j'aime une humeur pensive et solitaire,</l>
             <l n="380" xml:id="l380">Un grand contemplateur et sobre d'ordinaire,</l>
             <l n="381" xml:id="l381">Qui quitte le manger pour me faire l'amour</l>
             <l n="382" xml:id="l382">Et qui soit dans mes bras et la nuit et le jour.</l>
           </sp>
-          <sp xml:id="I05-21" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I05-21">
             <speaker>TRAPOLIN.</speaker>
             <l n="383" xml:id="l383">Chère Philosophie, aimable Poésie,</l>
             <l n="384" xml:id="l384">Io bazio la mane à vostra Seignorie.</l>
             <l n="385" xml:id="l385">L'Amour est mon ami, mais cet efféminé</l>
             <l n="386" xml:id="l386">Ne me charme jamais qu'après avoir dîné;</l>
             <l n="387" xml:id="l387">La table a des appas quand elle est bien garnie.</l>
-            <l n="388" xml:id="l388" part="I">Quelle est cette beauté ?</l>
+            <l n="388" part="I" xml:id="l388">Quelle est cette beauté ?</l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>SCÈNE VI. Poésie, Trapolin, Galanterie.<listPerson type="configuration" xml:id="conf6"><person corresp="#POESIE"/><person corresp="#TRAPOLIN"/><person corresp="#GALANTERIE"/><person corresp="#PHILOSOPHIE"/></listPerson></head>
-          <sp xml:id="I06-1" who="POESIE">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>SCÈNE VI. Poésie, Trapolin, Galanterie.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#POESIE"/>
+            <person corresp="#TRAPOLIN"/>
+            <person corresp="#GALANTERIE"/>
+            <person corresp="#PHILOSOPHIE"/>
+            </listPerson></head>
+          <sp who="POESIE" xml:id="I06-1">
             <speaker>POÉSIE.</speaker>
             <l part="F">Là ? C'est Galanterie.</l>
           </sp>
-          <sp xml:id="I06-2" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I06-2">
             <speaker>TRAPOLIN.</speaker>
             <l n="389" xml:id="l389">Ce sera bien mon fait, car je suis fort galant ;</l>
             <l n="390" xml:id="l390">Approchons et faisons l'agréable en parlant.</l>
@@ -794,14 +806,14 @@
             <l n="399" xml:id="l399">Vous ne trouverez point mon pareil sur la terre,</l>
             <l n="400" xml:id="l400">Quant aux Dames mon oeil veut déclarer la guerre;</l>
             <l n="401" xml:id="l401">Par où Trapolin passe on entend que rumeurs,</l>
-            <l n="402" xml:id="l402">On ouït dire par tout  gare, gare les coeurs.</l>
+            <l n="402" xml:id="l402">On ouït dire par tout gare, gare les coeurs.</l>
           </sp>
-          <sp xml:id="I06-3" who="GALANTERIE">
+          <sp who="GALANTERIE" xml:id="I06-3">
             <speaker>GALANTERIE.</speaker>
             <l n="403" xml:id="l403">Avec moi vous aurez liberté toute entière :</l>
             <l n="404" xml:id="l404">Oui, chacun avec moI peut vivre à sa manière.</l>
           </sp>
-          <sp xml:id="I06-4" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I06-4">
             <speaker>TRAPOLIN.</speaker>
             <l n="405" xml:id="l405">Ah ! Cette fille est brave fille,</l>
             <l n="406" xml:id="l406">Elle m'a fort bien répondu,</l>
@@ -818,7 +830,7 @@
             <l n="417" xml:id="l417">Bref cette fille est brave fille,</l>
             <l n="418" xml:id="l418">Car elle m'a bien répondu.</l>
           </sp>
-          <sp xml:id="I06-5" who="GALANTERIE">
+          <sp who="GALANTERIE" xml:id="I06-5">
             <speaker>GALANTERIE.</speaker>
             <l n="419" xml:id="l419">Je réponds assez juste, et je suis assez prompte;</l>
             <l n="420" xml:id="l420">Qui ne la voudrait pas en aurait de la honte.</l>
@@ -833,7 +845,7 @@
             <l n="429" xml:id="l429">Je suis dedans mon Ciel, et les petits mortels,</l>
             <l n="430" xml:id="l430">Doivent s'humilier aux pieds de mes autels.</l>
           </sp>
-          <sp xml:id="I06-6" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I06-6">
             <speaker>TRAPOLIN.</speaker>
             <l n="431" xml:id="l431">Vous êtes fort gentille, et je vous trouve aimable ;</l>
             <l n="432" xml:id="l432">Mais ne me parlez point de retrancher ma table;</l>
@@ -842,19 +854,19 @@
             <l n="435" xml:id="l435">Je vous baise les mains, belle Galanterie ;</l>
             <l n="436" xml:id="l436">Je suis incompatible avec vos humeurs.</l>
           </sp>
-          <sp xml:id="I06-7" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I06-7">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="437" xml:id="l437">Devenez mon amant, contez-moi des douceurs.</l>
           </sp>
-          <sp xml:id="I06-8" who="POESIE">
+          <sp who="POESIE" xml:id="I06-8">
             <speaker>POÉSIE.</speaker>
             <l n="438" xml:id="l438">Illustre Trapolin, héros incomparable.</l>
           </sp>
-          <sp xml:id="I06-9" who="GALANTERIE">
+          <sp who="GALANTERIE" xml:id="I06-9">
             <speaker>GALANTERIE.</speaker>
             <l n="439" xml:id="l439">Mon beau petit mignon, galant le plus aimable.</l>
           </sp>
-          <sp xml:id="I06-10" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I06-10">
             <speaker>TRAPOLIN.</speaker>
             <l n="440" xml:id="l440">De vos doctes appas me voila dégoûté :</l>
             <l n="441" xml:id="l441">Par vous mon appétit serait inquiété;</l>
@@ -865,41 +877,41 @@
             <l n="446" xml:id="l446">Et ne voyez-vous pas que les Muses sont filles,</l>
             <l n="447" xml:id="l447">Quoi qu'elles aient esprit, et qu'elles soient gentilles;</l>
             <l n="448" xml:id="l448">Si je vous épousais, abordant vos appas,</l>
-            <note type="L">Pégase :  C'est un cheval que les poètes ont feint avoir des aIles, et avoir fait sortir la fontaine d'Hipocrene du Mont Helicon en frappant du pied. C'est le cheval sur lequel était monté Bellerophon, quand il combattit la Chimère. On dit qu'il s'envola au ciel, et qu'il fut placé entre les astres. On dit qu'un homme monte sur le cheval Pégase, quand il fait des vers. [F]</note>
+            <note type="L">Pégase : C'est un cheval que les poètes ont feint avoir des aIles, et avoir fait sortir la fontaine d'Hipocrene du Mont Helicon en frappant du pied. C'est le cheval sur lequel était monté Bellerophon, quand il combattit la Chimère. On dit qu'il s'envola au ciel, et qu'il fut placé entre les astres. On dit qu'un homme monte sur le cheval Pégase, quand il fait des vers. [F]</note>
             <l n="449" xml:id="l449">Votre Pégase et vous me jetteriez à bas.</l>
           </sp>
-          <sp xml:id="I06-11" who="POESIE">
+          <sp who="POESIE" xml:id="I06-11">
             <speaker>POÉSIE.</speaker>
             <l n="450" xml:id="l450">Les Muses de Paris ne sont pas toutes filles,</l>
             <l n="451" xml:id="l451">Et leurs vers toutefois se trouvent sans chevilles ;</l>
             <l n="452" xml:id="l452">Et si lorsqu'elles vont voir le sacré vallon,</l>
             <l n="453" xml:id="l453">Chacune sait fort bien trouver son Apollon.</l>
           </sp>
-          <sp xml:id="I06-12" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I06-12">
             <speaker>TRAPOLIN.</speaker>
             <l n="454" xml:id="l454">Et l'Apollon avec emphase</l>
             <l n="455" xml:id="l455">Monte la Muse sur Pégase</l>
             <l n="456" xml:id="l456">Ma foi fille qui fait des vers</l>
             <l n="457" xml:id="l457">Est sujette à choir à l'envers.</l>
           </sp>
-          <sp xml:id="I06-13" who="POESIE">
+          <sp who="POESIE" xml:id="I06-13">
             <speaker>POÉSIE.</speaker>
             <l n="458" xml:id="l458">Ma foi garçon qui n'en fait pas,</l>
             <l n="459" xml:id="l459">Est sujet à porter le bas.</l>
           </sp>
-          <sp xml:id="I06-14" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I06-14">
             <speaker>PHILOSOPHIE.</speaker>
-            <l n="460" xml:id="l460" part="I">Aimez nous.</l>
+            <l n="460" part="I" xml:id="l460">Aimez nous.</l>
           </sp>
-          <sp xml:id="I06-15" who="POESIE">
+          <sp who="POESIE" xml:id="I06-15">
             <speaker>POÉSIE.</speaker>
             <l part="M">Suivez-nous.</l>
           </sp>
-          <sp xml:id="I06-16" who="GALANTERIE">
+          <sp who="GALANTERIE" xml:id="I06-16">
             <speaker>GALANTERIE.</speaker>
             <l part="F">Quittez l'indifférence.</l>
           </sp>
-          <sp xml:id="I06-17" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I06-17">
             <speaker>TRAPOLIN.</speaker>
             <l n="461" xml:id="l461">Mais serais-je infidèle à ma chère Ignorance ?</l>
             <l n="462" xml:id="l462">Dés le berceau je suis charmé de sa beauté,</l>
@@ -907,9 +919,14 @@
             <l n="464" xml:id="l464">Mais la voici qui vient, que je la trouve aimable !</l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
-          <head>SCÈNE VII. Ignorance, Trapolin, Philosophie, Poésie.<listPerson type="configuration" xml:id="conf7"><person corresp="#IGNORANCE"/><person corresp="#PHILOSOPHIE"/><person corresp="#TRAPOLIN"/><person corresp="#POESIE"/></listPerson></head>
-          <sp xml:id="I07-1" who="IGNORANCE">
+        <div2 n="7" type="scene" xml:id="I07">
+          <head>SCÈNE VII. Ignorance, Trapolin, Philosophie, Poésie.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#IGNORANCE"/>
+            <person corresp="#PHILOSOPHIE"/>
+            <person corresp="#TRAPOLIN"/>
+            <person corresp="#POESIE"/>
+            </listPerson></head>
+          <sp who="IGNORANCE" xml:id="I07-1">
             <speaker>IGNORANCE.</speaker>
             <l n="465" xml:id="l465">Quoi ? Traître déloyal, perfide, ingrat, coupable,</l>
             <l n="466" xml:id="l466">Les sciences t'ont pris lors que je n'y suis pas,</l>
@@ -926,42 +943,49 @@
             <l n="476" xml:id="l476">Jour de Dieu, je le sais, vous m'êtes ennemie,</l>
             <l n="477" xml:id="l477">Mais perdant Trapolin, je veux perdre la vie.</l>
           </sp>
-          <sp xml:id="I07-2" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I07-2">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="478" xml:id="l478">Vous l'avez fort longtemps emporté dessus nous,</l>
             <l n="479" xml:id="l479">Mais ce siècle est illustre, et nous sera plus doux.</l>
           </sp>
-          <sp xml:id="I07-3" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I07-3">
             <speaker>TRAPOLIN.</speaker>
-            <l n="480" xml:id="l480" part="I">Ah ! Ma chère Ignorance.</l>
+            <l n="480" part="I" xml:id="l480">Ah ! Ma chère Ignorance.</l>
           </sp>
-          <sp xml:id="I07-4" who="POESIE">
+          <sp who="POESIE" xml:id="I07-4">
             <speaker>POÉSIE.</speaker>
             <l part="F">Ah ! douceur sans seconde !</l>
             <l n="481" xml:id="l481">Si tu peux la prenant en purger tout le monde,</l>
             <l n="482" xml:id="l482">Je serais opulente, et dans fort peu de temps.</l>
           </sp>
         </div2>
-        <div2 xml:id="I08" type="scene" n="8">
-          <head>SCÈNE VIII. Lz Docteur, Philosophie, Ignorance, Poésie, Galanterie, Trapolin.<listPerson type="configuration" xml:id="conf8"><person corresp="#LEDOCTEUR"/><person corresp="#PHILOSOPHIE"/><person corresp="#POESIE"/><person corresp="#GALANTERIE"/><person corresp="#IGNORANCE"/><person corresp="#TRAPOLIN"/></listPerson></head>
-          <sp xml:id="I08-1" who="LEDOCTEUR">
+        <div2 n="8" type="scene" xml:id="I08">
+          <head>SCÈNE VIII. Lz Docteur, Philosophie, Ignorance, Poésie, Galanterie, Trapolin.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#LEDOCTEUR"/>
+            <person corresp="#PHILOSOPHIE"/>
+            <person corresp="#POESIE"/>
+            <person corresp="#GALANTERIE"/>
+            <person corresp="#IGNORANCE"/>
+            <person corresp="#TRAPOLIN"/>
+            </listPerson></head>
+          <sp who="LEDOCTEUR" xml:id="I08-1">
             <speaker>LE DOCTEUR.</speaker>
             <l n="483" xml:id="l483">Et bien captivez-vous ce Phoenix des amants ?</l>
-            <l n="484" xml:id="l484" part="I">Et le marierons-nous ?</l>
+            <l n="484" part="I" xml:id="l484">Et le marierons-nous ?</l>
           </sp>
-          <sp xml:id="I08-2" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I08-2">
             <speaker>PHILOSOPHIE.</speaker>
             <l part="M">Oui.</l>
           </sp>
-          <sp xml:id="I08-3" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I08-3">
             <speaker>LE DOCTEUR.</speaker>
             <l part="F">De plaisir j'en danse.</l>
           </sp>
-          <sp xml:id="I08-4" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I08-4">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="485" xml:id="l485">Oui, mais il nous méprise, et choisit l'Ignorance.</l>
           </sp>
-          <sp xml:id="I08-5" who="LEDOCTEUR">
+          <sp who="LEDOCTEUR" xml:id="I08-5">
             <speaker>LE DOCTEUR.</speaker>
             <l n="486" xml:id="l486">Il choisit l'Ignorance ! Et comment gros vilain,</l>
             <l n="487" xml:id="l487">Tu choisis le terrestre, et quitte le divin ?</l>
@@ -988,17 +1012,17 @@
             <l n="508" xml:id="l508">Sans que tu fasses des enfants,</l>
             <l n="509" xml:id="l509">Que la terre a trop d'ignorants.</l>
           </sp>
-          <sp xml:id="I08-6" who="POESIE">
+          <sp who="POESIE" xml:id="I08-6">
             <speaker>POÉSIE.</speaker>
             <l n="510" xml:id="l510">Je te vais faire faire, au lieu d'épithalame,</l>
             <l n="511" xml:id="l511">De satyriques vers, et quelque écrit infâme.</l>
           </sp>
-          <sp xml:id="I08-7" who="PHILOSOPHIE">
+          <sp who="PHILOSOPHIE" xml:id="I08-7">
             <speaker>PHILOSOPHIE.</speaker>
             <l n="512" xml:id="l512">Et moi je vais monter dessus mes grands chevaux</l>
             <l n="513" xml:id="l513">Et te mettre vilain, dans le rang des brutaux.</l>
           </sp>
-          <sp xml:id="I08-8" who="GALANTERIE">
+          <sp who="GALANTERIE" xml:id="I08-8">
             <speaker>GALANTERIE.</speaker>
             <l n="514" xml:id="l514">Et moi qui sais punir tous les sots de ta sorte,</l>
             <l n="515" xml:id="l515">Aux Bals je te ferai toujours fermer la porte;</l>
@@ -1008,7 +1032,7 @@
             <l n="518" xml:id="l518">Et voyons sans regret mépriser la science :</l>
             <l n="519" xml:id="l519">Un ignorant ne peut aimer que l'Ignorance.</l>
           </sp>
-          <sp xml:id="I08-9" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I08-9">
             <speaker>IGNORANCE.</speaker>
             <l n="520" xml:id="l520">Avec vos beaux discours et votRe esprit divin,</l>
             <l n="521" xml:id="l521">Allez vous faire faire un autre Trapolin !</l>
@@ -1019,16 +1043,16 @@
             <l n="526" xml:id="l526">Et leur fait bien souvent leur sottise connaître,</l>
             <l n="527" xml:id="l527">Qu'il vaudrait mieux pour eux ne voir jamais paraître.</l>
           </sp>
-          <sp xml:id="I08-10" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I08-10">
             <speaker>TRAPOLIN.</speaker>
             <l n="528" xml:id="l528">Tu seras donc mon fait, puisqu'il faut ignorer.</l>
           </sp>
-          <sp xml:id="I08-11" who="IGNORANCE">
+          <sp who="IGNORANCE" xml:id="I08-11">
             <speaker>IGNORANCE.</speaker>
             <l n="529" xml:id="l529">Par moi de mille maux tu te pourras parer ;</l>
-            <l n="530" xml:id="l530" part="I">Allons mon gros poupon !</l>
+            <l n="530" part="I" xml:id="l530">Allons mon gros poupon !</l>
           </sp>
-          <sp xml:id="I08-12" who="TRAPOLIN">
+          <sp who="TRAPOLIN" xml:id="I08-12">
             <speaker>TRAPOLIN.</speaker>
             <l part="F">Allons mon Ignorance !</l>
             <l n="531" xml:id="l531">Buvons, jouons, dansons, et laissons la science !</l>
