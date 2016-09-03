@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Pan et doris</title><title type="sub">, pastorale</title>
-        <author born="1692" born_location="" death="1655" death_location="" academie=""><surname>Aigueberre</surname><forename> Jean Dumas d'</forename></author>
+        <title>Pan et doris</title>
+        <title type="sub">, pastorale</title>
+        <author academie="" born="1692" born_location="" death="1655" death_location="">
+          <surname>Aigueberre</surname>
+          <forename> Jean Dumas d'</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE juillet 2014</p>
@@ -43,7 +48,7 @@
         <titlePart type="main">PASTORALE</titlePart>
       </docTitle>
       <docDate value="1729">M. DCC. XXIX. AVEC PERMISSION.</docDate>
-      <docAuthor id="AIGUEBERRE, Jean Dumas d'" bio="aigueberre"/>
+      <docAuthor bio="aigueberre" id="AIGUEBERRE, Jean Dumas d'"/>
       <docImprint>
         <approbation>
           <head>APPROBATION.</head>
@@ -66,22 +71,22 @@
       </performance>
       <castList>
         <head>ACTEURS du PROLOGUE.</head>
-        <castItem><role xml:id="PAN" id="PAN" sex="1" type="H" statut="chevalier" age="A" stat_amour="néant">PAN</role>.</castItem>
-        <castItem><role xml:id="DORIS" id="DORIS" sex="1" type="H" statut="commandeur" age="A" stat_amour="néant">DORIS</role>.</castItem>
-        <castItem><role xml:id="PALEMON" id="PALEMON" sex="1" type="H" statut="vicomte" age="A" stat_amour="néant">PALEMON</role>.</castItem>
-        <castItem><role xml:id="JULIE" id="JULIE" sex="2" type="H" statut="servante" age="A" stat_amour="néant">JULIE</role>.</castItem>
-        <castItem><role xml:id="LAMARQUISE" id="LA MARQUISE" sex="2" type="H" statut="marquis" age="A" stat_amour="néant">LA MARQUISE</role>.</castItem>
-        <castItem><role xml:id="HORTENSE" id="HORTENSE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">HORTENSE</role>.</castItem>
-        <castItem><role xml:id="CELIMENE" id="CÉLIMÈNE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">CÉLIMÈNE</role>.</castItem>
+        <castItem><role age="A" id="PAN" sex="1" stat_amour="néant" statut="chevalier" type="H" xml:id="PAN">PAN</role>.</castItem>
+        <castItem><role age="A" id="DORIS" sex="1" stat_amour="néant" statut="commandeur" type="H" xml:id="DORIS">DORIS</role>.</castItem>
+        <castItem><role age="A" id="PALEMON" sex="1" stat_amour="néant" statut="vicomte" type="H" xml:id="PALEMON">PALEMON</role>.</castItem>
+        <castItem><role age="A" id="JULIE" sex="2" stat_amour="néant" statut="servante" type="H" xml:id="JULIE">JULIE</role>.</castItem>
+        <castItem><role age="A" id="LA MARQUISE" sex="2" stat_amour="néant" statut="marquis" type="H" xml:id="LAMARQUISE">LA MARQUISE</role>.</castItem>
+        <castItem><role age="A" id="HORTENSE" sex="2" stat_amour="néant" statut="aristocrate" type="H" xml:id="HORTENSE">HORTENSE</role>.</castItem>
+        <castItem><role age="A" id="CÉLIMÈNE" sex="2" stat_amour="néant" statut="aristocrate" type="H" xml:id="CELIMENE">CÉLIMÈNE</role>.<role xml:id="ARCAS"/><role xml:id="CHOEUR"/></castItem>
       </castList>
-      <set location="Campagne" country="France" periode="XVIIIème" link="">La Scène est à la Maison de Campagne de...</set>
+      <set country="France" link="" location="Campagne" periode="XVIIIème">La Scène est à la Maison de Campagne de...</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>PAN ET DORIS.</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf1"><person corresp="#PAN"/></listPerson></head>
-          <sp xml:id="I01-1" who="PAN">
+          <sp who="PAN" xml:id="I01-1">
             <speaker>PAN sous la figure de Valémon.</speaker>
             <l n="1" xml:id="l1">Amour, le Dieu des Bois Implore ta toute puissance :</l>
             <l n="2" xml:id="l2">Sauve-moi la douleur de revoir en ces lieux,</l>
@@ -94,23 +99,23 @@
             <l n="9" xml:id="l9">Un Berger trop fatal au bonheur de mes feux.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Pan, Doris.<listPerson type="configuration" xml:id="conf2"><person corresp="#DORIS"/><person corresp="#PAN"/></listPerson></head>
-          <sp xml:id="I02-1" who="DORIS">
+          <sp who="DORIS" xml:id="I02-1">
             <speaker>DORIS.</speaker>
             <l n="10" xml:id="l10">Quoi, toujours agité d'une douleur mortelle !</l>
           </sp>
-          <sp xml:id="I02-2" who="PAN">
+          <sp who="PAN" xml:id="I02-2">
             <speaker>PAN.</speaker>
             <l n="11" xml:id="l11">Peut-on aimer hélas ! Et ne pas ressentir</l>
             <l n="12" xml:id="l12">Une crainte toujours nouvelle ?•</l>
           </sp>
-          <sp xml:id="I02-3" who="DORIS">
+          <sp who="DORIS" xml:id="I02-3">
             <speaker>DORIS.</speaker>
             <l n="13" xml:id="l13">L'aveu de mon ardeur fidèle</l>
             <l n="14" xml:id="l14">D'une injuste frayeur aurait dû vous guérir.</l>
           </sp>
-          <sp xml:id="I02-4" who="PAN">
+          <sp who="PAN" xml:id="I02-4">
             <speaker>PAN.</speaker>
             <l n="15" xml:id="l15">J'éprouve une peine cruelle,</l>
             <l n="16" xml:id="l16">Tout semble m'annoncer que le Ciel en courroux</l>
@@ -118,56 +123,56 @@
             <l n="18" xml:id="l18">Et je sens que mon coeur ne peut être sensible</l>
             <l n="19" xml:id="l19">Qu'au malheur de me voir abandonné de vous.</l>
           </sp>
-          <sp xml:id="I02-5" who="DORIS">
+          <sp who="DORIS" xml:id="I02-5">
             <speaker>DORIS.</speaker>
             <l n="20" xml:id="l20">Si le bonheur de votre vie</l>
             <l n="21" xml:id="l21">Dépend de ma fidèle ardeur,</l>
             <l n="22" xml:id="l22">Croyez que Doris en son coeur</l>
             <l n="23" xml:id="l23">Vous garde un sort digne d'envie.</l>
           </sp>
-          <sp xml:id="I02-6" who="PAN">
+          <sp who="PAN" xml:id="I02-6">
             <speaker>PAN.</speaker>
             <l n="24" xml:id="l24">Non, vous ne m'aimez pas, et j'en crois la douleur</l>
             <l n="25" xml:id="l25">Qu'éprouve en ce jour ma tendresse.</l>
           </sp>
-          <sp xml:id="I02-7" who="DORIS">
+          <sp who="DORIS" xml:id="I02-7">
             <speaker>DORIS.</speaker>
             <l n="26" xml:id="l26">Pour dissiper un soupçon qui me blesse</l>
             <l n="27" xml:id="l27">À de nouveaux serments faut-il avoir recours.</l>
           </sp>
-          <sp xml:id="I02-8" who="PAN">
+          <sp who="PAN" xml:id="I02-8">
             <speaker>PAN.</speaker>
             <l n="28" xml:id="l28">Jurez-moi par le Dieu qu'en ces Bois on révère</l>
             <l n="29" xml:id="l29">Que le Berger qui vous sut plaire</l>
             <l n="30" xml:id="l30">Sera toujours l'objet de vos tendres amours.</l>
           </sp>
-          <sp xml:id="I02-9" who="DORIS">
+          <sp who="DORIS" xml:id="I02-9">
             <speaker>DORIS.</speaker>
             <l n="31" xml:id="l31">Je jure par le Dieu qu'en ces Bois on révère</l>
             <l n="32" xml:id="l32">Que le Berger qui m'a su plaire</l>
             <l n="33" xml:id="l33">Sera toujours l'objet de mes tendres amours.</l>
           </sp>
-          <sp xml:id="I02-10" who="DORIS">
+          <sp who="DORIS" xml:id="I02-10">
             <speaker>DORIS.</speaker>
             <l n="34" xml:id="l34">Mais on vient. Terminons un discours trop sincère.</l>
             <stage type="exit">Elle sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Pan, Arcas.<listPerson type="configuration" xml:id="conf3"><person corresp="#ARCAS"/><person corresp="#PAN"/></listPerson></head>
-          <sp xml:id="I03-1" who="ARCAS">
+          <sp who="ARCAS" xml:id="I03-1">
             <speaker>ARCAS.</speaker>
             <l n="35" xml:id="l35">Palémon sur ces bords, vient de frapper mes yeux.</l>
           </sp>
-          <sp xml:id="I03-2" who="PAN">
+          <sp who="PAN" xml:id="I03-2">
             <speaker>PAN.</speaker>
             <l n="36" xml:id="l36">Que son retour me cause une mortelle peine!</l>
           </sp>
-          <sp xml:id="I03-3" who="ARCAS">
+          <sp who="ARCAS" xml:id="I03-3">
             <speaker>ARCAS.</speaker>
             <l n="37" xml:id="l37">Et pourquoi craignez-vous un Rival malheureux ?</l>
           </sp>
-          <sp xml:id="I03-4" who="PAN">
+          <sp who="PAN" xml:id="I03-4">
             <speaker>PAN.</speaker>
             <l n="38" xml:id="l38">Quand Palémon lassé d'une constance vaine</l>
             <l n="39" xml:id="l39">Jura de ne plus voir ces lieux</l>
@@ -176,29 +181,29 @@
             <l n="42" xml:id="l42">Que sa rigueur invincible</l>
             <l n="43" xml:id="l43">Avait caché jusqu'à ce jour.</l>
           </sp>
-          <sp xml:id="I03-5" who="ARCAS">
+          <sp who="ARCAS" xml:id="I03-5">
             <speaker>ARCAS.</speaker>
             <l n="44" xml:id="l44">Du Berger prenant l'apparence,</l>
             <l n="45" xml:id="l45">Vous avez triomphé de l'objet de vos feux.</l>
           </sp>
-          <sp xml:id="I03-6" who="PAN">
+          <sp who="PAN" xml:id="I03-6">
             <speaker>PAN.</speaker>
             <l n="46" xml:id="l46">Et ne prévois-tu pas que cette ressemblance</l>
             <l n="47" xml:id="l47">Du Berger à son tour va seconder les voeux ?</l>
           </sp>
-          <sp xml:id="I03-7" who="ARCAS">
+          <sp who="ARCAS" xml:id="I03-7">
             <speaker>ARCAS.</speaker>
             <l n="48" xml:id="l48">Tout respecte vos lois en ce séjour champêtre.</l>
             <l n="49" xml:id="l49">Il ne vous reste plus qu'à vous faire connaître.</l>
           </sp>
-          <sp xml:id="I03-8" who="PAN">
+          <sp who="PAN" xml:id="I03-8">
             <speaker>PAN.</speaker>
             <l n="50" xml:id="l50">L'amant le plus glorieux</l>
             <l n="51" xml:id="l51">N'est pas toujours le plus aimable ;</l>
             <l n="52" xml:id="l52">S'il était moins redoutable</l>
             <l n="53" xml:id="l53">Souvent il n'en plairait que mieux.</l>
           </sp>
-          <sp xml:id="I03-9" who="ARCAS">
+          <sp who="ARCAS" xml:id="I03-9">
             <speaker>ARCAS.</speaker>
             <l n="54" xml:id="l54">Celui qui plaît d'avantage</l>
             <l n="55" xml:id="l55">N'est pas toujours le mieux traité.</l>
@@ -207,30 +212,30 @@
             <l n="58" xml:id="l58">Heureux l'Amant dont l'hommage</l>
             <l n="59" xml:id="l59">Fait triompher la vanité.</l>
           </sp>
-          <sp xml:id="I03-10" who="PAN">
+          <sp who="PAN" xml:id="I03-10">
             <speaker>PAN.</speaker>
             <l n="60" xml:id="l60">J'aperçois Palémon. Tâche, ami, de t'instruire</l>
             <l n="61" xml:id="l61">Du soin qui dans ces lieux l'attire.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Palémon, Arcas.<listPerson type="configuration" xml:id="conf4"><person corresp="#ARCAS"/><person corresp="#PALEMON"/></listPerson></head>
-          <sp xml:id="I04-1" who="ARCAS">
+          <sp who="ARCAS" xml:id="I04-1">
             <speaker>ARCAS.</speaker>
             <l n="62" xml:id="l62">Palémon, est-ce vous qu'en ces lieux je revois ?</l>
             <l n="63" xml:id="l63">Vous qui d'une éternelle absence</l>
             <l n="64" xml:id="l64">Vous étiez imposé la loi.</l>
           </sp>
-          <sp xml:id="I04-2" who="PALEMON">
+          <sp who="PALEMON" xml:id="I04-2">
             <speaker>PALÉMON.</speaker>
             <l n="65" xml:id="l65">Je viens revoir les lieux où j'ai pris la naissance.</l>
           </sp>
-          <sp xml:id="I04-3" who="ARCAS">
+          <sp who="ARCAS" xml:id="I04-3">
             <speaker>ARCAS.</speaker>
             <l n="66" xml:id="l66">Vous y verrez toujours la charmante Doris.</l>
           </sp>
-          <sp xml:id="I04-4" who="PALEMON">
+          <sp who="PALEMON" xml:id="I04-4">
             <speaker>PALÉMON.</speaker>
             <l n="67" xml:id="l67">L'absence a triomphé du pouvoir de ses charmes :</l>
             <l n="68" xml:id="l68">Et l'on ne verra plus mes larmes</l>
@@ -240,47 +245,47 @@
             <l n="72" xml:id="l72">Plus j'ai souffert dans l'esclavage ;</l>
             <l n="73" xml:id="l73">Plus je chéris ma liberté.</l>
           </sp>
-          <sp xml:id="I04-5" who="ARCAS">
+          <sp who="ARCAS" xml:id="I04-5">
             <speaker>ARCAS.</speaker>
             <l n="74" xml:id="l74">Des plaisirs de l'indifférence</l>
             <l n="75" xml:id="l75">Goûtez la charmante douceur :</l>
             <l n="76" xml:id="l76">Ceux que promet l'Âmour n'ont qu'un charme trompeur.</l>
           </sp>
-          <sp xml:id="I04-6" who="PALEMON">
+          <sp who="PALEMON" xml:id="I04-6">
             <speaker>PALÉMON, ARCAS ensemble.</speaker>
             <l n="77" xml:id="l77">Des plaisirs de l'ïndifférence</l>
             <l n="78" xml:id="l78">Goûtons la charmante douceur :</l>
             <l n="79" xml:id="l79">Ceux que l'Amour promet pour récompense</l>
             <l n="80" xml:id="l80">N'ont qu'un charme trompeur.</l>
           </sp>
-          <sp xml:id="I04-7" who="ARCAS">
+          <sp who="ARCAS" xml:id="I04-7">
             <speaker>ARCAS.</speaker>
             <l n="81" xml:id="l81">Doris vers nous s'avance ;</l>
             <l n="82" xml:id="l82">Fuyons un objet trop charmant.</l>
           </sp>
-          <sp xml:id="I04-8" who="PALEMON">
+          <sp who="PALEMON" xml:id="I04-8">
             <speaker>PALÉMON.</speaker>
             <l n="83" xml:id="l83">Sa présence à mon coeur ne cause point d'alarmes</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="I05">
           <head>SCÈNE V. Doris, Palémon, Arcas.<listPerson type="configuration" xml:id="conf5"><person corresp="#DORIS"/><person corresp="#PALEMON"/></listPerson></head>
-          <sp xml:id="I05-1" who="DORIS">
+          <sp who="DORIS" xml:id="I05-1">
             <speaker>DORIS.</speaker>
             <l n="84" xml:id="l84">Bergers, m'est-il permis d'oser pour un moment</l>
             <l n="85" xml:id="l85">D'un entretien secret troubler ici les charmes ?</l>
           </sp>
-          <sp xml:id="I05-2" who="PALEMON">
+          <sp who="PALEMON" xml:id="I05-2">
             <speaker>PALÉMON.</speaker>
             <l n="86" xml:id="l86">J'entretenais Arcas des biens pleins de douceur,</l>
             <l n="87" xml:id="l87">Qu'un coeur indifférent trouve dans cet asile.</l>
           </sp>
-          <sp xml:id="I05-3" who="DORIS">
+          <sp who="DORIS" xml:id="I05-3">
             <speaker>DORIS.</speaker>
             <l n="88" xml:id="l88">Depuis quand Palémon vante-t-il le bonheur</l>
             <l n="89" xml:id="l89">Qu'éprouve un coeur tranquille ?</l>
           </sp>
-          <sp xml:id="I05-4" who="PALEMON">
+          <sp who="PALEMON" xml:id="I05-4">
             <speaker>PALÉMON.</speaker>
             <l n="90" xml:id="l90">Depuis que j'ai perdu jusques au souvenir</l>
             <l n="91" xml:id="l91">Des maux qu'Amour me fit souffrir.</l>
@@ -289,11 +294,11 @@
             <l n="94" xml:id="l94">Mais enfin l'orgueil qui la flatte,</l>
             <l n="95" xml:id="l95">Écarte à jamais les amours.</l>
           </sp>
-          <sp xml:id="I05-5" who="DORIS">
+          <sp who="DORIS" xml:id="I05-5">
             <speaker>DORIS.</speaker>
             <l n="96" xml:id="l96">Ciel ! Quel est ce discours ? Et que voulez-vous dire ?</l>
           </sp>
-          <sp xml:id="I05-6" who="PALEMON">
+          <sp who="PALEMON" xml:id="I05-6">
             <speaker>PALÉMON.</speaker>
             <l n="97" xml:id="l97">Je dis que sous son Empire</l>
             <l n="98" xml:id="l98">Doris n'aura plus le plaisir</l>
@@ -302,34 +307,34 @@
             <l n="101" xml:id="l101">Avez-vous dû prétendre</l>
             <l n="102" xml:id="l102">Que mon coeur dans vos fers fût toujours arrêté ?</l>
           </sp>
-          <sp xml:id="I05-7" who="DORIS">
+          <sp who="DORIS" xml:id="I05-7">
             <speaker>DORIS.</speaker>
             <l n="103" xml:id="l103">Non, non. J'ai du prévoir que ta légèreté</l>
             <l n="104" xml:id="l104">Serait le prix de ma faiblesse :</l>
             <l n="105" xml:id="l105">Et que je perdrais ta tendresse</l>
             <l n="106" xml:id="l106">Sitôt que mon amour aurait trop éclaté.</l>
           </sp>
-          <sp xml:id="I05-8" who="PALEMON">
+          <sp who="PALEMON" xml:id="I05-8">
             <speaker>PALÉMON.</speaker>
             <l n="107" xml:id="l107">Si les rigueurs des Belles</l>
             <l n="108" xml:id="l108">De leur amour sont des preuves fidèles,</l>
             <l n="109" xml:id="l109">Jamais amant ne fut plus fortuné que moi.</l>
           </sp>
-          <sp xml:id="I05-9" who="DORIS">
+          <sp who="DORIS" xml:id="I05-9">
             <speaker>DORIS.</speaker>
             <l n="110" xml:id="l110">Il te sied bien de te plaindre</l>
             <l n="111" xml:id="l111">Des rigueurs que j'eus pour toi.</l>
             <l n="112" xml:id="l112">Ah ! Plutôt à mes yeux, ingrat, cesse de feindre ;</l>
             <l n="113" xml:id="l113">Et nomme-moi l'objet qui m'a ravi ta foi.</l>
           </sp>
-          <sp xml:id="I05-10" who="PALEMON">
+          <sp who="PALEMON" xml:id="I05-10">
             <speaker>PALÉMON.</speaker>
             <l n="114" xml:id="l114">L'objet qui m'enchante,</l>
             <l n="115" xml:id="l115">Régnera toujours dans mon coeur.</l>
             <l n="116" xml:id="l116">Liberté charmante !</l>
             <l n="117" xml:id="l117">Vous ferez toujours mon bonheur.</l>
           </sp>
-          <sp xml:id="I05-11" who="DORIS">
+          <sp who="DORIS" xml:id="I05-11">
             <speaker>DORIS.</speaker>
             <l n="118" xml:id="l118">L'Infidèle m'outrage après m'avoir trahie.</l>
             <l n="119" xml:id="l119">Ô Ciel ! Punis sa perfidie.</l>
@@ -339,9 +344,9 @@
             <l n="123" xml:id="l123">D'avoir aimé l'ingrat qui méprise mes pleurs.</l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="I06">
           <head>SCÈNE VI. Pan, Doris, Palémon, Arcas.<listPerson type="configuration" xml:id="conf6"><person corresp="#PAN"/><person corresp="#DORIS"/><person corresp="#PALEMON"/></listPerson></head>
-          <sp xml:id="I06-1" who="PAN">
+          <sp who="PAN" xml:id="I06-1">
             <speaker>PAN sous la figure de Palémon.</speaker>
             <l n="124" xml:id="l124">Bergère suspendez vos regrets et vos larmes,</l>
             <l n="125" xml:id="l125">Celui qui reçut votre coeur,</l>
@@ -351,21 +356,21 @@
             <l n="129" xml:id="l129">Ce n'est point avec tant de charmes,</l>
             <l n="130" xml:id="l130">Que l'on voit mépriser ses feux.</l>
           </sp>
-          <sp xml:id="I06-2" who="DORIS">
+          <sp who="DORIS" xml:id="I06-2">
             <speaker>DORIS.</speaker>
             <l n="131" xml:id="l131">Ciel ! Quel est ce prodige ? Et par quelle puissance,</l>
             <l n="132" xml:id="l132">Vois-je ici deux bergers m'offrir les mêmes traits ?</l>
           </sp>
-          <sp xml:id="I06-3" who="PAN">
+          <sp who="PAN" xml:id="I06-3">
             <speaker>PAN.</speaker>
             <l n="133" xml:id="l133">Plus amoureux qu'on ne le fut jamais,</l>
             <l n="134" xml:id="l134">De Palémon j'ai pris la ressemblance.</l>
           </sp>
-          <sp xml:id="I06-4" who="DORIS">
+          <sp who="DORIS" xml:id="I06-4">
             <speaker>DORIS.</speaker>
             <l n="135" xml:id="l135">Ce n'est point Palémon qui frappe ici mes yeux !</l>
           </sp>
-          <sp xml:id="I06-5" who="PAN">
+          <sp who="PAN" xml:id="I06-5">
             <speaker>PAN.</speaker>
             <l n="136" xml:id="l136">Je suis le Dieu des Bois qu'on révère en ces lieux,</l>
             <l n="137" xml:id="l137">Soumis à mon pouvoir suprême,</l>
@@ -374,30 +379,30 @@
             <l n="140" xml:id="l140">Venez reconnaître les loíis</l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
-          <head>SCÈNE DERNIÈRE. Troupes de Dryades de Satyres et de Bergers.<listPerson type="configuration" xml:id="conf7"><person corresp="#LECHOEUR"/><person corresp="#PAN"/><person corresp="#DORIS"/><person corresp="#PALEMON"/><person corresp="#UNEDRIADE"/><person corresp="#DEUXBERGERES"/><person corresp="#UNSATYRE"/><person corresp="#UNEBERGERE"/></listPerson></head>
-          <sp xml:id="I07-1" who="LECHOEUR">
+        <div2 n="7" type="scene" xml:id="I07">
+          <head>SCÈNE DERNIÈRE. Troupes de Dryades de Satyres et de Bergers.<listPerson type="configuration" xml:id="conf7"> <person corresp="#CHOEUR"/> <person corresp="#PAN"/><person corresp="#DORIS"/><person corresp="#PALEMON"/> <person corresp="#DRIADE" n="DRIADE" xml:id="DRIADE"/> <person corresp="#BERGERE" n="BERGÈRE" xml:id="BERGERE"/> <person corresp="#SATYRE" n="SATYRE" xml:id="SATYRE"/> </listPerson></head>
+          <sp who="CHOEUR" xml:id="I07-1">
             <speaker>LE CHOEUR.</speaker>
             <l n="141" xml:id="l141">Sous votre empire,</l>
             <l n="142" xml:id="l142">Nous nous rangeons tous,</l>
             <l n="143" xml:id="l143">Le Dieu qui pour vous soupire,</l>
             <l n="144" xml:id="l144">Règne sur nous.</l>
           </sp>
-          <sp xml:id="I07-2" who="PAN">
+          <sp who="PAN" xml:id="I07-2">
             <speaker>PAN.</speaker>
             <l n="145" xml:id="l145">Pardonnez au stratagème,</l>
             <l n="146" xml:id="l146">Que vient d'employer mon ardeur,</l>
             <l n="147" xml:id="l147">C'est le Dieu d'amour lui-même.</l>
             <l n="148" xml:id="l148">Qui sut l'inspirer à mon coeur.</l>
           </sp>
-          <sp xml:id="I07-3" who="DORIS">
+          <sp who="DORIS" xml:id="I07-3">
             <speaker>DORIS.</speaker>
             <l n="149" xml:id="l149">Je pardonne au stratagème,</l>
             <l n="150" xml:id="l150">Que vient d'employer votre ardeur ;</l>
             <l n="151" xml:id="l151">C'est le Dieu d'Amour lui-même,</l>
             <l n="152" xml:id="l152">Qui me fait chérir mon erreur.</l>
           </sp>
-          <sp xml:id="I07-4" who="DORIS">
+          <sp who="DORIS" xml:id="I07-4">
             <speaker>DORIS, à Palémon.</speaker>
             <l n="153" xml:id="l153">D'une constance trop pénible</l>
             <l n="154" xml:id="l154">Berger, vous n'avez pu supporter la rigueur,</l>
@@ -407,7 +412,7 @@
             <l n="158" xml:id="l158">D'un bien qu'il doit moins à son artifice,</l>
             <l n="159" xml:id="l159">Qu'à l'excès de son ardeur.</l>
           </sp>
-          <sp xml:id="I07-5" who="PALEMON">
+          <sp who="PALEMON" xml:id="I07-5">
             <speaker>PALÉMON.</speaker>
             <l n="160" xml:id="l160">Bergère, partagez la suprême puissance :</l>
             <l n="161" xml:id="l161">D'un Amant glorieux ;</l>
@@ -417,21 +422,21 @@
             <l n="165" xml:id="l165">Je vais pleurer un bien qui n'était dû qu'à moi.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
-          <sp xml:id="I07-6" who="PAN">
+          <sp who="PAN" xml:id="I07-6">
             <speaker>PAN.</speaker>
             <l n="166" xml:id="l166">Redoublons l'ardeur extrême,</l>
             <l n="167" xml:id="l167">Qui vient d'assurer mon bonheur,</l>
             <l n="168" xml:id="l168">C'est le Dieu d'amour lui-même</l>
             <l n="169" xml:id="l169">Qui sut tromper votre rigueur.</l>
           </sp>
-          <sp xml:id="I07-7" who="DORIS">
+          <sp who="DORIS" xml:id="I07-7">
             <speaker>DORIS.</speaker>
             <l n="170" xml:id="l170">Redoublons l'ardeur extrême,</l>
             <l n="171" xml:id="l171">Qui vient d'assurer mon bonheur ;</l>
             <l n="172" xml:id="l172">C'est le Dieu d'amour lui-même.</l>
             <l n="173" xml:id="l173">Qui me fait chérir mon erreur.</l>
           </sp>
-          <sp xml:id="I07-8" who="PAN">
+          <sp who="PAN" xml:id="I07-8">
             <speaker>PAN.</speaker>
             <l n="174" xml:id="l174">Qu'on applaudisse à ma victoire,</l>
             <l n="175" xml:id="l175">Venez, Bergers, accourez tous :</l>
@@ -439,7 +444,7 @@
             <l n="177" xml:id="l177">Vous partagez la gloire.</l>
             <stage type="danse">On danse.</stage>
           </sp>
-          <sp xml:id="I07-9" who="UNEDRIADE">
+          <sp who="DRIADE" xml:id="I07-9">
             <speaker>UNE DRIADE.</speaker>
             <l n="178" xml:id="l178">Fuyez loin de nous,</l>
             <l n="179" xml:id="l179">Coeurs insensibles,</l>
@@ -458,7 +463,7 @@
             <l n="192" xml:id="l192">On trouve en ses faveurs</l>
             <l n="193" xml:id="l193">Mille douceurs.</l>
           </sp>
-          <sp xml:id="I07-10" who="DEUXBERGERES">
+          <sp who="BERGERE" xml:id="I07-10">
             <speaker>DEUX BERGÈRES.</speaker>
             <l n="194" xml:id="l194">Que les Dieux, que les Rois</l>
             <l n="195" xml:id="l195">Viennent dans nos Bois,</l>
@@ -467,7 +472,7 @@
             <l n="198" xml:id="l198">Qu'un coeur bien enflammé,</l>
             <l n="199" xml:id="l199">Peut se flatter d'être aimé.</l>
           </sp>
-          <sp xml:id="I07-11" who="LECHOEUR">
+          <sp who="CHOEUR" xml:id="I07-11">
             <speaker>LE CHOEUR.</speaker>
             <l n="200" xml:id="l200">Viens, Amour, dans cette retraite ;</l>
             <note type="C">Les attributs du Dieu Amour sont un arc, des flèches et un carquois pour les y ranger.</note>
@@ -477,7 +482,7 @@
             <l n="203" xml:id="l203">Pour ranger nos coeurs sous tes lois.</l>
             <stage type="danse">On danse.</stage>
           </sp>
-          <sp xml:id="I07-12" who="UNSATYRE">
+          <sp who="SATYRE" xml:id="I07-12">
             <speaker>UN SATYRE.</speaker>
             <l n="204" xml:id="l204">Vous qui d'une beauté cruelle,</l>
             <l n="205" xml:id="l205">Éprouvez l'injuste rigueur,</l>
@@ -488,7 +493,7 @@
             <l n="210" xml:id="l210">Pourvu que notre amour obtienne</l>
             <l n="211" xml:id="l211">Le prix de sa fidélité ?</l>
           </sp>
-          <sp xml:id="I07-13" who="UNEDRIADE">
+          <sp who="DRIADE" xml:id="I07-13">
             <speaker>UNE DRIADE.</speaker>
             <l n="212" xml:id="l212">Il n'est point de cruelle ,</l>
             <l n="213" xml:id="l213">Il n'est point de rebelle,</l>
@@ -500,7 +505,7 @@
             <l n="219" xml:id="l219">Payer la flamme sincère,</l>
             <l n="220" xml:id="l220">D'un heureux destin.</l>
           </sp>
-          <sp xml:id="I07-14" who="UNEBERGERE">
+          <sp who="BERGERE" xml:id="I07-14">
             <speaker>UNE BERGÈRE.</speaker>
             <l n="221" xml:id="l221">Telle fait l'insensible,</l>
             <l n="222" xml:id="l222">Qui gémir en son coeur</l>
@@ -512,7 +517,7 @@
             <l n="228" xml:id="l228">Mais son trouble et ses soupirs</l>
             <l n="229" xml:id="l229">Trahissent ses désirs.</l>
           </sp>
-          <sp xml:id="I07-15" who="LECHOEUR">
+          <sp who="CHOEUR" xml:id="I07-15">
             <speaker>CHOEURS de BERGERS ET DE BERGÈRES.</speaker>
             <l n="230" xml:id="l230">Viens Amour dans cette retraite,</l>
             <l n="231" xml:id="l231">Quitte ton arc et ton carquois.</l>
