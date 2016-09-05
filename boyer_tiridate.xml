@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Tyridate</title><title type="sub">, tragédie</title>
-        <author born="1618" born_location="Albi" death="1698" death_location="Paris" academie="1666"><surname>Boyer</surname><forename> Claude</forename></author>
+        <title>Tyridate</title>
+        <title type="sub">, tragédie</title>
+        <author academie="1666" born="1618" born_location="Albi" death="1698" death_location="Paris"><surname>Boyer</surname>, <forename> Claude</forename></author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE, Mai 2006, révu déc. 2009</p>
@@ -33,7 +36,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -46,7 +49,7 @@
         <titlePart type="sub">dédié À MONSEIGNEUR LE PRINCE</titlePart>
       </docTitle>
       <docDate value="1649">M. DC. XLIX</docDate>
-      <docAuthor id="BOYER, Claude" bio="boyer">BOYER</docAuthor>
+      <docAuthor bio="boyer" id="BOYER, Claude">BOYER</docAuthor>
       <docImprint>
         <privilege id="1648-06-19">
           <head>Extrait du Privilège du Roi.</head>
@@ -72,24 +75,24 @@
       </div>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="ARIARATHE" id="ARIARATHE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">ARIARATHE</role>, roi de Cappadoce.</castItem>
-        <castItem><role xml:id="ARIARATHE" rend="junior" id="ARIARATHE" sex="1" type="H" statut="prince" age="J" stat_amour="néant">ARIARATHE</role>, fils supposé du roi, et véritable fils d'Oronte.</castItem>
-        <castItem><role xml:id="ANTHIOCHIDE" id="ANTHIOCHIDE" sex="2" type="H" statut="roi" age="A" stat_amour="néant">ANTHIOCHIDE</role>, reine de Cappadoce.</castItem>
-        <castItem><role xml:id="TYRIDATE" rend="junior" id="TYRIDATE" sex="1" type="H" statut="prince" age="J" stat_amour="néant">TYRIDATE</role>, fils unique du roi.</castItem>
-        <castItem><role xml:id="BERENICE" id="BERENICE" sex="2" type="H" statut="prince" age="A" stat_amour="néant">BÉRÉNICE</role>, princesse de Bythinie promise à Ariarathe.</castItem>
-        <castItem><role xml:id="EURIDICE" rend="junior" id="EURIDICE" sex="2" type="H" statut="aristocrate" age="J" stat_amour="néant">EURIDICE</role>, fille d'Oronte.</castItem>
-        <castItem><role xml:id="ORONTE" id="ORONTE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">ORONTE</role>, seigneur de Cappadoce.</castItem>
-        <castItem><role xml:id="ARSINOE" id="ARSINOE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">ARSINOÉ</role>, confidente de la Reine.</castItem>
-        <castItem><role xml:id="TROUPEDESOLDATS" id="SOLDATS" sex="9" type="H" statut="soldat" age="A" stat_amour="néant">TROUPE DE SOLDATS</role>.</castItem>
+        <castItem><role age="A" id="ARIARATHE" sex="1" stat_amour="néant" statut="roi" type="H" xml:id="LEROI">ARIARATHE</role>, roi de Cappadoce.</castItem>
+        <castItem><role age="J" id="ARIARATHE" rend="junior" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="ARIARATHE">ARIARATHE</role>, fils supposé du roi, et véritable fils d'Oronte.</castItem>
+        <castItem><role age="A" id="ANTHIOCHIDE" sex="2" stat_amour="néant" statut="roi" type="H" xml:id="ANTHIOCHIDE">ANTHIOCHIDE</role>, reine de Cappadoce.</castItem>
+        <castItem><role age="J" id="TYRIDATE" rend="junior" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="TYRIDATE">TYRIDATE</role>, fils unique du roi.</castItem>
+        <castItem><role age="A" id="BERENICE" sex="2" stat_amour="néant" statut="prince" type="H" xml:id="BERENICE">BÉRÉNICE</role>, princesse de Bythinie promise à Ariarathe.</castItem>
+        <castItem><role age="J" id="EURIDICE" rend="junior" sex="2" stat_amour="néant" statut="aristocrate" type="H" xml:id="EURIDICE">EURIDICE</role>, fille d'Oronte.</castItem>
+        <castItem><role age="A" id="ORONTE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="ORONTE">ORONTE</role>, seigneur de Cappadoce.</castItem>
+        <castItem><role age="A" id="ARSINOE" sex="2" stat_amour="néant" statut="confident" type="H" xml:id="ARSINOE">ARSINOÉ</role>, confidente de la Reine.</castItem>
+        <castItem><role age="A" id="SOLDATS" sex="9" stat_amour="néant" statut="soldat" type="H" xml:id="TROUPEDESOLDATS">TROUPE DE SOLDATS</role>.</castItem>
       </castList>
-      <set location="Césarée" country="Israël" periode="IIIème avant JC" link="">La Scène est à Césarée dans le Palais Royal.</set>
+      <set country="Israël" link="" location="Césarée" periode="IIIème avant JC">La Scène est à Césarée dans le Palais Royal.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Tiridate, Anthiochide, Arsinoé. <listPerson type="configuration" xml:id="conf1"><person corresp="#TYRIDATE"/><person corresp="#ANTHIOCHIDE"/><person corresp="#ARSINOE"/></listPerson></head>
-          <sp xml:id="I01-1" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-1">
             <speaker>TYRIDATE.</speaker>
             <l n="1" xml:id="l1">Qu'attendez-vous, Madame, à quelle extrémité</l>
             <l n="2" xml:id="l2">Voulez-vous réserver ce secours tant vanté ?</l>
@@ -110,18 +113,18 @@
             <l n="17" xml:id="l17">Ariarathe heureux, et moi prêt de mourir</l>
             <l n="18" xml:id="l18">Vous imputer le coup qui me fera périr.</l>
           </sp>
-          <sp xml:id="I01-2" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-2">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="19" xml:id="l19">Ah ! Mon fils que ce coup serait insupportable.</l>
             <l n="20" xml:id="l20">Mais n'appréhendons point un sort si déplorable,</l>
             <l n="21" xml:id="l21">Le mal est encor loin, et pour un changement</l>
-            <l n="22" xml:id="l22" part="I">Le temps...</l>
+            <l n="22" part="I" xml:id="l22">Le temps...</l>
           </sp>
-          <sp xml:id="I01-3" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-3">
             <speaker>TYRIDATE.</speaker>
             <l part="M">Quel temps ? Demain :</l>
           </sp>
-          <sp xml:id="I01-4" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-4">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Il suffit d'un moment.</l>
             <l n="23" xml:id="l23">Oui, malgré les efforts de la puissance unie</l>
@@ -129,7 +132,7 @@
             <l n="25" xml:id="l25">De votre oncle son père et du roi mon époux,</l>
             <l n="26" xml:id="l26">Avant la fin du jour Bérénice est à vous.</l>
           </sp>
-          <sp xml:id="I01-5" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-5">
             <speaker>TYRIDATE.</speaker>
             <l n="27" xml:id="l27">Hélas ! Combien de fois avecque la princesse</l>
             <l n="28" xml:id="l28">Nous avez-vous flattés de la même promesse,</l>
@@ -142,7 +145,7 @@
             <l n="35" xml:id="l35">Mais en vain, puisque enfin malgré son artifice</l>
             <l n="36" xml:id="l36">On la presse, et demain il faut qu'elle obéisse.</l>
           </sp>
-          <sp xml:id="I01-6" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-6">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="37" xml:id="l37">Puis donc qu'on ne saurait plus longtemps reculer</l>
             <l n="38" xml:id="l38">Tyridate, il est temps d'agir, et de parler.</l>
@@ -171,12 +174,12 @@
             <l n="61" xml:id="l61">Vous donne par l'effort d'une juste pitié</l>
             <l n="62" xml:id="l62">Comme au plus malheureux toute mon amitié.</l>
           </sp>
-          <sp xml:id="I01-7" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-7">
             <speaker>TYRIDATE.</speaker>
             <l n="63" xml:id="l63">Puisqu'à mon mauvais sort je dois cet avantage,</l>
             <l n="64" xml:id="l64">J'aimerai désormais le malheur qui m'outrage.</l>
           </sp>
-          <sp xml:id="I01-8" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-8">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="65" xml:id="l65">Cette amitié, mon fils, vous ayant destiné</l>
             <l n="66" xml:id="l66">À l'hymen dès longtemps promis à votre aîné,</l>
@@ -188,7 +191,7 @@
             <l n="72" xml:id="l72">De vos jeunes esprits chasserait la prudence,</l>
             <l n="73" xml:id="l73">Et qu'ainsi je pourrais sourdement achever</l>
             <l n="74" xml:id="l74">L'hymen, qu'après, le temps eut contraint d'approuver ;</l>
-            <l n="75" xml:id="l75">Mais la princesse  fut à mes voeux trop contraire :</l>
+            <l n="75" xml:id="l75">Mais la princesse fut à mes voeux trop contraire :</l>
             <l n="76" xml:id="l76">On la presse dès lors d'épouser votre frère,</l>
             <l n="77" xml:id="l77">Son père à ce dessein l'envoie en cette Cour</l>
             <l n="78" xml:id="l78">Où pendant les délais qu'a trouvés son amour,</l>
@@ -202,14 +205,14 @@
             <l n="86" xml:id="l86">Contre ceux qu'elle abhorre et qui le font mourir.</l>
             <l n="87" xml:id="l87">Mais en vain, et si vous n'y travaillez vous-même</l>
             <l n="88" xml:id="l88">Nous ne saurions sortir de ce péril extrême ;</l>
-            <l n="89" xml:id="l89" part="I">Sans vous je n'y puis rien.</l>
+            <l n="89" part="I" xml:id="l89">Sans vous je n'y puis rien.</l>
           </sp>
-          <sp xml:id="I01-9" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-9">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Sans moi, Madame, ô dieux!</l>
-            <l n="90" xml:id="l90" part="I">Qu'y puis-je ?</l>
+            <l n="90" part="I" xml:id="l90">Qu'y puis-je ?</l>
           </sp>
-          <sp xml:id="I01-10" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-10">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Ce que peut un amant furieux,</l>
             <l n="91" xml:id="l91">Ce que peut un amant quand il voit qu'on s'apprête</l>
@@ -225,20 +228,20 @@
             <l n="101" xml:id="l101">Vous auriez dans l'ardeur de prévenir ce mal</l>
             <l n="102" xml:id="l102">Enfoncé mille coups au sein de ce rival.</l>
           </sp>
-          <sp xml:id="I01-11" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-11">
             <speaker>TYRIDATE.</speaker>
-            <l n="103" xml:id="l103" part="I">Hélas !</l>
+            <l n="103" part="I" xml:id="l103">Hélas !</l>
           </sp>
-          <sp xml:id="I01-12" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-12">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Est-ce l'amour qui l'emporte, ou qui cède?</l>
             <l n="104" xml:id="l104">Mourra-t-il ce rival ? C'est l'unique remède.</l>
           </sp>
-          <sp xml:id="I01-13" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-13">
             <speaker>TYRIDATE.</speaker>
-            <l n="105" xml:id="l105" part="I">C'est l'unique remède?</l>
+            <l n="105" part="I" xml:id="l105">C'est l'unique remède?</l>
           </sp>
-          <sp xml:id="I01-14" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-14">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Y devant recourir,</l>
             <l n="106" xml:id="l106">Je l'ai souvent tenté sans vous le découvrir,</l>
@@ -259,7 +262,7 @@
             <l n="121" xml:id="l121">Après ce grand succès ne crains rien, j'ai de quoi</l>
             <l n="122" xml:id="l122">Calmer en un moment la colère du roi.</l>
           </sp>
-          <sp xml:id="I01-15" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-15">
             <speaker>TYRIDATE.</speaker>
             <l n="123" xml:id="l123">Mais avez-vous de quoi calmer par vos adresses</l>
             <l n="124" xml:id="l124">De ce noir attentat les fureurs vengeresses.</l>
@@ -277,52 +280,52 @@
             <l n="136" xml:id="l136">Ayez soin de ma gloire et non pas de ma vie.</l>
             <l n="137" xml:id="l137">Hélas ! Quels sentiments avez-vous pour vos fils ?</l>
             <l n="138" xml:id="l138">C'est donc là cet hymen que vous m'aviez promis ?</l>
-            <l n="139" xml:id="l139">Mais qu'au-delà  des miens tes malheurs je déplore</l>
-            <l n="140" xml:id="l140" part="I">Princesse...</l>
+            <l n="139" xml:id="l139">Mais qu'au-delà des miens tes malheurs je déplore</l>
+            <l n="140" part="I" xml:id="l140">Princesse...</l>
           </sp>
-          <sp xml:id="I01-16" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-16">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="M">L'aimez-vous ?</l>
           </sp>
-          <sp xml:id="I01-17" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-17">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Me pressez-vous encore?</l>
-            <l n="141" xml:id="l141" part="I">Ô dieux !</l>
+            <l n="141" part="I" xml:id="l141">Ô dieux !</l>
           </sp>
-          <sp xml:id="I01-18" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-18">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="M">Si vous saviez.</l>
           </sp>
-          <sp xml:id="I01-19" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-19">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Je ne veux rien savoir.</l>
           </sp>
-          <sp xml:id="I01-20" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I01-20">
             <speaker>ANTHIOCHIDE.</speaker>
-            <l n="142" xml:id="l142" part="I">Ariarathe.</l>
+            <l n="142" part="I" xml:id="l142">Ariarathe.</l>
           </sp>
-          <sp xml:id="I01-21" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="I01-21">
             <speaker>TYRIDATE, l'interrompant.</speaker>
             <l part="F">Est frère, et je sais mon devoir.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Anthiochide, Arsinoé.<listPerson type="configuration" xml:id="conf2"><person corresp="#ANTHIOCHIDE"/><person corresp="#ARSINOE"/></listPerson></head>
-          <sp xml:id="I02-1" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-1">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="143" xml:id="l143">Tu dois, Arsinoé, comme je suis traitée.</l>
           </sp>
-          <sp xml:id="I02-2" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-2">
             <speaker>ARSINOÉ.</speaker>
             <l n="144" xml:id="l144">Madame, à quel excès vous êtes-vous portée ?</l>
-            <l n="145" xml:id="l145" part="I">L'armer contre son frère, ô dieux !</l>
+            <l n="145" part="I" xml:id="l145">L'armer contre son frère, ô dieux !</l>
           </sp>
-          <sp xml:id="I02-3" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-3">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Je ferais pis</l>
-            <l n="146" xml:id="l146" part="I">Pour perdre son rival.</l>
+            <l n="146" part="I" xml:id="l146">Pour perdre son rival.</l>
           </sp>
-          <sp xml:id="I02-4" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-4">
             <speaker>ARSINOÉ.</speaker>
             <l part="F">Pour perdre votre fils</l>
             <l n="147" xml:id="l147">Considérez l'objet de cette étrange haine.</l>
@@ -334,9 +337,9 @@
             <l n="153" xml:id="l153">Femme d'un puissant roi, fille d'Antiochus,</l>
             <l n="154" xml:id="l154">Plus riche encor des noms qu'on donne à ses vertus,</l>
             <l n="155" xml:id="l155">Peut tomber aujourd'hui dans ce désordre extrême :</l>
-            <l n="156" xml:id="l156" part="I">Arme un fils contre un fils.</l>
+            <l n="156" part="I" xml:id="l156">Arme un fils contre un fils.</l>
           </sp>
-          <sp xml:id="I02-5" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-5">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Je suis toujours la même ;</l>
             <l n="157" xml:id="l157">Ces grands noms dont on a flatté mes vanités</l>
@@ -377,33 +380,33 @@
             <l n="192" xml:id="l192">De cet heureux enfant honorait la naissance ;</l>
             <l n="193" xml:id="l193">Chacun montrait sa joie, et le roi de retour</l>
             <l n="194" xml:id="l194">Ne me pouvait assez expliquer son amour.</l>
-            <l n="195" xml:id="l195" part="I">Hélas !</l>
+            <l n="195" part="I" xml:id="l195">Hélas !</l>
           </sp>
-          <sp xml:id="I02-6" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-6">
             <speaker>ARSINOÉ.</speaker>
             <l part="F">Vous soupirez, quelle douleur vous presse ?</l>
           </sp>
-          <sp xml:id="I02-7" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-7">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="196" xml:id="l196">Hélas ! Que j'avais mal mérité sa tendresse,</l>
             <l n="197" xml:id="l197">Je le trompais ce roi le meilleur des humains,</l>
             <l n="198" xml:id="l198">Cet enfant qu'il avait toujours entre ses mains</l>
             <l n="199" xml:id="l199">Qu'il nomma de son nom, (j'en dois mourir de honte)</l>
-            <l n="200" xml:id="l200" part="I">N'était pas notre fils.</l>
+            <l n="200" part="I" xml:id="l200">N'était pas notre fils.</l>
           </sp>
-          <sp xml:id="I02-8" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-8">
             <speaker>ARSINOÉ.</speaker>
             <l part="M">Et de qui donc ?</l>
           </sp>
-          <sp xml:id="I02-9" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-9">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">D'Oronte.</l>
           </sp>
-          <sp xml:id="I02-10" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-10">
             <speaker>ARSINOÉ.</speaker>
-            <l n="201" xml:id="l201" part="I">Quoi ? Madame, le prince...</l>
+            <l n="201" part="I" xml:id="l201">Quoi ? Madame, le prince...</l>
           </sp>
-          <sp xml:id="I02-11" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-11">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Est né de ces malheurs</l>
             <l n="202" xml:id="l202">Qui mirent avec moi tout ce royaume en pleurs</l>
@@ -414,28 +417,28 @@
             <l n="207" xml:id="l207">Nous donnant tout moyen d'achever cette trame,</l>
             <l n="208" xml:id="l208">Je fus mère d'un fils dont accoucha sa femme.</l>
           </sp>
-          <sp xml:id="I02-12" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-12">
             <speaker>ARSINOÉ.</speaker>
-            <l n="209" xml:id="l209" part="I">Donc Ariarathe...</l>
+            <l n="209" part="I" xml:id="l209">Donc Ariarathe...</l>
           </sp>
-          <sp xml:id="I02-13" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-13">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Est comme je te l'ai dit</l>
             <l n="210" xml:id="l210">Fils de mon artifice, et non pas de mon lit.</l>
           </sp>
-          <sp xml:id="I02-14" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-14">
             <speaker>ARSINOÉ.</speaker>
-            <l n="211" xml:id="l211" part="I">Et Tyridate ?</l>
+            <l n="211" part="I" xml:id="l211">Et Tyridate ?</l>
           </sp>
-          <sp xml:id="I02-15" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-15">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="M">Hé ! Quoi ?</l>
           </sp>
-          <sp xml:id="I02-16" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-16">
             <speaker>ARSINOÉ.</speaker>
             <l part="F">Tyridate est-il vôtre ?</l>
           </sp>
-          <sp xml:id="I02-17" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-17">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="212" xml:id="l212">La naissance de l'un fait donc douter de l'autre,</l>
             <l n="213" xml:id="l213">Si je suppose un fils, serons-nous accusés</l>
@@ -447,19 +450,19 @@
             <l n="219" xml:id="l219">Il fallait, justes dieux, par grâce ou par vengeance</l>
             <l n="220" xml:id="l220">Me priver de ce fils ou hâter sa naissance.</l>
           </sp>
-          <sp xml:id="I02-18" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-18">
             <speaker>ARSINOÉ.</speaker>
             <l n="221" xml:id="l221">Pardonnez une erreur dont mes sens abusés</l>
             <l n="222" xml:id="l222">Croyaient au lieu d'un seul deux enfants supposés.</l>
           </sp>
-          <sp xml:id="I02-19" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-19">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="223" xml:id="l223">Dois-tu pas les connaître à cette différence</l>
             <l n="224" xml:id="l224">Qu'on ne peut imputer qu'à leur seule naissance :</l>
             <l n="225" xml:id="l225">J'aime l'un, je hais l'autre, et bientôt de son sang</l>
             <l n="226" xml:id="l226">Je signerai qu'elle est sa fortune et son rang.</l>
           </sp>
-          <sp xml:id="I02-20" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-20">
             <speaker>ARSINOÉ.</speaker>
             <l n="227" xml:id="l227">Vous voulez donc sa mort, est-ce la récompense</l>
             <l n="228" xml:id="l228">Des biens que vous devez à sa fausse naissance ?</l>
@@ -467,7 +470,7 @@
             <l n="230" xml:id="l230">Et pour tant de bienfaits vous le privez du jour.</l>
             <l n="231" xml:id="l231">Madame.</l>
           </sp>
-          <sp xml:id="I02-21" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-21">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Pour payer ce que tu viens de dire</l>
             <l n="232" xml:id="l232">Il peut tout espérer s'il renonce à l'Empire.</l>
@@ -476,21 +479,21 @@
             <l n="235" xml:id="l235">Et je dois aujourd'hui creuser son précipice,</l>
             <l n="236" xml:id="l236">Ou le voir dès demain épouser Bérénice.</l>
           </sp>
-          <sp xml:id="I02-22" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-22">
             <speaker>ARSINOÉ.</speaker>
             <l n="237" xml:id="l237">Vous pouvez l'éviter sans le faire mourir.</l>
           </sp>
-          <sp xml:id="I02-23" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-23">
             <speaker>ANTHIOCHIDE.</speaker>
-            <l n="238" xml:id="l238" part="I">Apprends-moi ce secret.</l>
+            <l n="238" part="I" xml:id="l238">Apprends-moi ce secret.</l>
           </sp>
-          <sp xml:id="I02-24" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-24">
             <speaker>ARSINOÉ.</speaker>
             <l part="F">Allez tout découvrir,</l>
             <l n="239" xml:id="l239">Faites connaître au roi le faux Ariarathe,</l>
             <l n="240" xml:id="l240">C'est le meilleur pour lui, pour vous, pour Tyridate.</l>
           </sp>
-          <sp xml:id="I02-25" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-25">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="241" xml:id="l241">Ah ! que tu connais mal l'excès de mon malheur,</l>
             <l n="242" xml:id="l242">Dis que c'est l'impossible, et non pas le meilleur,</l>
@@ -519,14 +522,14 @@
             <l n="265" xml:id="l265">M'observe de si près que j'y travaille en vain,</l>
             <l n="266" xml:id="l266">Si mon fils pour ce coup ne me prête sa main.</l>
           </sp>
-          <sp xml:id="I02-26" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-26">
             <speaker>ARSINOÉ.</speaker>
             <l n="267" xml:id="l267">N'attendez point d'un fils où la gloire préside</l>
             <l n="268" xml:id="l268">Ce noir assassinat, ce lâche parricide,</l>
             <l n="269" xml:id="l269">Si du moins il ne perd la moitié de l'horreur</l>
             <l n="270" xml:id="l270">Par l'éclaircissement d'une fatale erreur.</l>
           </sp>
-          <sp xml:id="I02-27" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-27">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="271" xml:id="l271">Un coeur ne hait pas moins quand la vertu le guide,</l>
             <l n="272" xml:id="l272">Les seuls noms d'assassin, que ceux de parricide.</l>
@@ -535,21 +538,21 @@
             <l n="275" xml:id="l275">Et voulant malgré moi le perdre à force ouverte,</l>
             <l n="276" xml:id="l276">C'est trahir mon secret et hâter notre perte.</l>
           </sp>
-          <sp xml:id="I02-28" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-28">
             <speaker>ARSINOÉ.</speaker>
-            <l n="277" xml:id="l277" part="I">Donc qu'espérer ?</l>
+            <l n="277" part="I" xml:id="l277">Donc qu'espérer ?</l>
           </sp>
-          <sp xml:id="I02-29" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-29">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">J'espère et malgré son devoir</l>
             <l n="278" xml:id="l278">Beaucoup de son amour tout de son désespoir.</l>
           </sp>
-          <sp xml:id="I02-30" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="I02-30">
             <speaker>ARSINOÉ.</speaker>
             <l n="279" xml:id="l279">Mais quand bien à ce point il porterait sa rage,</l>
-            <l n="280" xml:id="l280" part="I">Mithridate toujours...</l>
+            <l n="280" part="I" xml:id="l280">Mithridate toujours...</l>
           </sp>
-          <sp xml:id="I02-31" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I02-31">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">N'en dis pas davantage,</l>
             <l n="281" xml:id="l281">Sans ce nouvel obstacle où je n'ose penser</l>
@@ -560,9 +563,9 @@
             <l n="285" xml:id="l285">Mais dois-je voir encor ces objets odieux?</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III. Anthiochide, Ariarathe, Oronte.<listPerson type="configuration" xml:id="conf3"><person corresp="#ANTHIOCHIDE"/><person corresp="#ARIARATHE"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="I03-1" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I03-1">
             <speaker>ANTHIOCHIDE, continue parlant à Ariarathe.</speaker>
             <l n="286" xml:id="l286">Bérénice toujours vous amène en ces lieux,</l>
             <l n="287" xml:id="l287">C'est elle à qui l'on doit vos fréquentes visites ;</l>
@@ -571,7 +574,7 @@
             <l n="290" xml:id="l290">À contenter le roi son esprit est porté,</l>
             <l n="291" xml:id="l291">Et demain vous aurez ce qu'on exige d'elle.</l>
           </sp>
-          <sp xml:id="I03-2" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I03-2">
             <speaker>ARIARATHE.</speaker>
             <l n="292" xml:id="l292">Aussitôt que du roi j'en ai su la nouvelle</l>
             <l n="293" xml:id="l293">Voulant devoir ce bien à vos soins seulement,</l>
@@ -581,7 +584,7 @@
             <l n="297" xml:id="l297">Vous devez imputer ces visites, ces soins,</l>
             <l n="298" xml:id="l298">Qui moins fréquents peut-être importuneraient moins.</l>
           </sp>
-          <sp xml:id="I03-3" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I03-3">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="299" xml:id="l299">Vous me devez bien moins pour vous avoir fait naître</l>
             <l n="300" xml:id="l300">Que pour d'autres faveurs que vous pouvez connaître</l>
@@ -589,44 +592,44 @@
             <l n="302" xml:id="l302">Selon votre devoir et selon mes souhaits :</l>
             <l n="303" xml:id="l303">Oronte qui les sait a dû vous les apprendre.</l>
           </sp>
-          <sp xml:id="I03-4" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I03-4">
             <speaker>ARIARATHE.</speaker>
             <l n="304" xml:id="l304">De ceux que je connais vous pouvez tout attendre ;</l>
             <l n="305" xml:id="l305">Et s'il en est quelque autre il me sera plus doux,</l>
             <l n="306" xml:id="l306">Bien plutôt que de lui de l'apprendre de vous.</l>
           </sp>
-          <sp xml:id="I03-5" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I03-5">
             <speaker>ANTHIOCHIDE.</speaker>
-            <l n="307" xml:id="l307" part="I">Il n'est pas encore temps.</l>
+            <l n="307" part="I" xml:id="l307">Il n'est pas encore temps.</l>
           </sp>
-          <sp xml:id="I03-6" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I03-6">
             <speaker>ARIARATHE.</speaker>
             <l part="M">Madame...</l>
           </sp>
-          <sp xml:id="I03-7" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="I03-7">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Je vous laisse,</l>
             <l n="308" xml:id="l308">Adieu, l'on ne voit point aujourd'hui la princesse.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="I04">
           <head>SCÈNE IV. Ariarathe, Oronte.<listPerson type="configuration" xml:id="conf4"><person corresp="#ARIARATHE"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="I04-1" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-1">
             <speaker>ARIARATHE.</speaker>
             <l n="309" xml:id="l309">En vain, Oronte, en vain je tâche à la flatter,</l>
             <l n="310" xml:id="l310">Mes respects et mes soins ne font que l'irriter.</l>
           </sp>
-          <sp xml:id="I04-2" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-2">
             <speaker>ORONTE.</speaker>
             <l n="311" xml:id="l311">N'attendez point, Seigneur, d'autre accueil de la reine.</l>
           </sp>
-          <sp xml:id="I04-3" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-3">
             <speaker>ARIARATHE.</speaker>
             <l n="312" xml:id="l312">Que puis-je avoir commis qui mérite sa haine,</l>
             <l n="313" xml:id="l313">Mon respect qui m'impute un désordre si grand</l>
-            <l n="314" xml:id="l314" part="I">Ne sait où s'appuyer.</l>
+            <l n="314" part="I" xml:id="l314">Ne sait où s'appuyer.</l>
           </sp>
-          <sp xml:id="I04-4" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-4">
             <speaker>ORONTE.</speaker>
             <l part="F">C'est ce qui me surprend,</l>
             <l n="315" xml:id="l315">Puisqu'il faut toutefois en deviner la cause ;</l>
@@ -645,40 +648,40 @@
             <l n="328" xml:id="l328">Je ne me promets plus d'empêcher votre perte,</l>
             <l n="329" xml:id="l329">D'elle et de votre frère en ce dessein unis...</l>
           </sp>
-          <sp xml:id="I04-5" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-5">
             <speaker>ARIARATHE.</speaker>
             <l n="330" xml:id="l330">Que dois-je redouter de pareils ennemis ?</l>
           </sp>
-          <sp xml:id="I04-6" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-6">
             <speaker>ORONTE.</speaker>
             <l n="331" xml:id="l331">Ce qu'on craint d'un rival, ce qu'on craint d'une reine</l>
-            <l n="332" xml:id="l332" part="I">Qu'on choque.</l>
+            <l n="332" part="I" xml:id="l332">Qu'on choque.</l>
           </sp>
-          <sp xml:id="I04-7" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-7">
             <speaker>ARIARATHE.</speaker>
             <l part="M">Sans dessein.</l>
           </sp>
-          <sp xml:id="I04-8" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-8">
             <speaker>ORONTE.</speaker>
             <l part="F">Si pour avoir sa haine</l>
             <l n="333" xml:id="l333">Il suffit qu'on la choque, il n'importe comment</l>
             <l n="334" xml:id="l334">Le dessein, le hasard, choquent également,</l>
-            <l n="335" xml:id="l335" part="I">Elle est femme Seigneur.</l>
+            <l n="335" part="I" xml:id="l335">Elle est femme Seigneur.</l>
           </sp>
-          <sp xml:id="I04-9" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-9">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Mais elle est mère, Oronte.</l>
           </sp>
-          <sp xml:id="I04-10" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-10">
             <speaker>ORONTE.</speaker>
             <l n="336" xml:id="l336">Et ce nom profané la doit couvrir de honte.</l>
           </sp>
-          <sp xml:id="I04-11" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-11">
             <speaker>ARIARATHE.</speaker>
             <l n="337" xml:id="l337">Et ce nom de regret me doit faire mourir,</l>
             <l n="338" xml:id="l338">Quand je vois que je crains ce que je dois chérir.</l>
           </sp>
-          <sp xml:id="I04-12" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-12">
             <speaker>ORONTE.</speaker>
             <l n="339" xml:id="l339">Pour ne la craindre plus, mais la chérir en mère,</l>
             <l n="340" xml:id="l340">Ne pouvant la fléchir désarmez sa colère,</l>
@@ -688,27 +691,27 @@
             <l n="344" xml:id="l344">Je lui conseillerais d'agir et de se taire,</l>
             <l n="345" xml:id="l345">De perdre sans tarder qui menace vos jours,</l>
             <l n="346" xml:id="l346">Et sans aller du roi mendier du secours</l>
-            <l n="347" xml:id="l347" part="I">Malgré tous les respects...</l>
+            <l n="347" part="I" xml:id="l347">Malgré tous les respects...</l>
           </sp>
-          <sp xml:id="I04-13" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-13">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Arrête et considère</l>
             <l n="348" xml:id="l348">Que tu presses un fils qui se plaint de sa mère,</l>
             <l n="349" xml:id="l349">Qui cherche à l'adoucir, et non à l'irriter,</l>
             <l n="350" xml:id="l350">À calmer ses rigueurs, non à les mériter.</l>
             <l n="351" xml:id="l351">Mais quels sont ces bienfaits dont me parlait la reine?</l>
-            <l n="352" xml:id="l352" part="I">Tu dois m'en avertir.</l>
+            <l n="352" part="I" xml:id="l352">Tu dois m'en avertir.</l>
           </sp>
-          <sp xml:id="I04-14" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-14">
             <speaker>ORONTE.</speaker>
             <l part="M">Dieux !</l>
           </sp>
-          <sp xml:id="I04-15" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-15">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Tire-moi de peine.</l>
-            <l n="353" xml:id="l353" part="I">Parle.</l>
+            <l n="353" part="I" xml:id="l353">Parle.</l>
           </sp>
-          <sp xml:id="I04-16" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-16">
             <speaker>ORONTE.</speaker>
             <l part="F">C'est perdre temps, Seigneur, à m'en presser,</l>
             <l n="354" xml:id="l354">Ou la reine par là veut vous embarrasser,</l>
@@ -716,7 +719,7 @@
             <l n="356" xml:id="l356">Me perdre auprès de vous, je nuis à sa vengeance,</l>
             <l n="357" xml:id="l357">Il faut qu'elle m'éloigne ou me rende suspect.</l>
           </sp>
-          <sp xml:id="I04-17" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="I04-17">
             <speaker>ARIARATHE.</speaker>
             <l n="358" xml:id="l358">Je suis peu curieux et connais ton respect,</l>
             <l n="359" xml:id="l359">Ainsi malaisément peut espérer la reine,</l>
@@ -726,18 +729,18 @@
             <l n="363" xml:id="l363">Et qu'un amour plus fort que ma reconnaissance</l>
             <l n="364" xml:id="l364">M'attache à ton destin plus qu'Oronte ne pense.</l>
           </sp>
-          <sp xml:id="I04-18" who="ORONTE">
+          <sp who="ORONTE" xml:id="I04-18">
             <speaker>ORONTE.</speaker>
             <l n="365" xml:id="l365">Votre sort est le mien, et les destins d'un fils</l>
             <l n="366" xml:id="l366">À ceux d'un père aimé ne sont pas mieux unis.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Bérénice, Euridice.<listPerson type="configuration" xml:id="conf6"><person corresp="#BERENICE"/><person corresp="#EURIDICE"/></listPerson></head>
-          <sp xml:id="II01-1" who="BERENICE">
+          <sp who="BERENICE" xml:id="II01-1">
             <speaker>BÉRÉNICE.</speaker>
             <l n="367" xml:id="l367">Oui je t'aime, malgré la juste défiance</l>
             <l n="368" xml:id="l368">Qui devait t'éloigner de notre confidence ;</l>
@@ -776,23 +779,23 @@
             <l n="401" xml:id="l401">Qu'elle romprait l'hymen de son frère et de moi.</l>
             <l n="402" xml:id="l402">Je le crus, de nouveau je lui donnai ma foi ;</l>
             <l n="403" xml:id="l403">Mais de la lui tenir est hors de ma puissance,</l>
-            <l n="404" xml:id="l404" part="I">Demain...</l>
+            <l n="404" part="I" xml:id="l404">Demain...</l>
           </sp>
-          <sp xml:id="II01-2" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="II01-2">
             <speaker>EURIDICE, voyant entrer Tyridate.</speaker>
             <l part="F">Je vois encor luire quelque espérance ;</l>
             <l n="405" xml:id="l405">Il aura vu la reine, et sans doute... mais las</l>
             <l n="406" xml:id="l406">Avec quel nouveau trouble il dresse ici ses pas !</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Bérénice, Tyridate, Euridice.<listPerson type="configuration" xml:id="conf7"><person corresp="#BERENICE"/><person corresp="#TYRIDATE"/><person corresp="#EURIDICE"/></listPerson></head>
-          <sp xml:id="II02-1" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-1">
             <speaker>BÉRÉNICE.</speaker>
             <l n="407" xml:id="l407">Que me dit cet abord si rempli de tristesse !</l>
-            <l n="408" xml:id="l408" part="I">Que m'annoncent ces pleurs, Tyridate ?</l>
+            <l n="408" part="I" xml:id="l408">Que m'annoncent ces pleurs, Tyridate ?</l>
           </sp>
-          <sp xml:id="II02-2" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-2">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Princesse</l>
             <l n="409" xml:id="l409">Tremblez à cet abord, je porte des malheurs</l>
@@ -810,25 +813,25 @@
             <l n="421" xml:id="l421">Vous rendre à ce devoir, qui donne à mon aîné</l>
             <l n="422" xml:id="l422">L'amour, le cher amour que vous m'aviez donné.</l>
           </sp>
-          <sp xml:id="II02-3" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-3">
             <speaker>BÉRÉNICE.</speaker>
-            <l n="423" xml:id="l423" part="I">Quoi Prince ?</l>
+            <l n="423" part="I" xml:id="l423">Quoi Prince ?</l>
           </sp>
-          <sp xml:id="II02-4" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-4">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Aimez en lui son rang et son mérite,</l>
             <l n="424" xml:id="l424">Et tout ce dont pour lui le ciel vous sollicite,</l>
             <l n="425" xml:id="l425">Que ce noeud glorieux vous comble de plaisirs,</l>
-            <l n="426" xml:id="l426">Et vous fasse oublier  ma perte et mes soupirs :</l>
+            <l n="426" xml:id="l426">Et vous fasse oublier ma perte et mes soupirs :</l>
             <l n="427" xml:id="l427">Trop heureux si pour moi le ciel inexorable,</l>
             <l n="428" xml:id="l428">Cède pour votre bien aux voeux d'un misérable,</l>
-            <l n="429" xml:id="l429" part="I">Trop heureux...</l>
+            <l n="429" part="I" xml:id="l429">Trop heureux...</l>
           </sp>
-          <sp xml:id="II02-5" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-5">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">Tu veux donc, perfide, me quitter ?</l>
           </sp>
-          <sp xml:id="II02-6" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-6">
             <speaker>TYRIDATE.</speaker>
             <l n="430" xml:id="l430">Si vous m'aimez encor, tâchez de m'imiter.</l>
             <l n="431" xml:id="l431">Tâchez de me haïr ; vous le ferez sans doute,</l>
@@ -842,13 +845,13 @@
             <l n="439" xml:id="l439">Pour un lâche trompeur, pour ce fourbe exécrable,</l>
             <l n="440" xml:id="l440">Soyez cruelle autant que vous fûtes aimable.</l>
             <l n="441" xml:id="l441">Par haine, par justice, ou du moins par pitié</l>
-            <l n="442" xml:id="l442" part="I">Reprenez...</l>
+            <l n="442" part="I" xml:id="l442">Reprenez...</l>
           </sp>
-          <sp xml:id="II02-7" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-7">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">Qu'attendez-vous de mon inimitié ?</l>
           </sp>
-          <sp xml:id="II02-8" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-8">
             <speaker>TYRIDATE.</speaker>
             <l n="443" xml:id="l443">La mort : vivre sans vous n'est pas en ma puissance ;</l>
             <l n="444" xml:id="l444">Mourir aimé de vous, mon trépas vous offense :</l>
@@ -865,7 +868,7 @@
             <l n="455" xml:id="l455">Hélas ! Quel est mon sort, si parmi tant d'alarmes</l>
             <l n="456" xml:id="l456">Dans votre seule haine il peut trouver des charmes.</l>
           </sp>
-          <sp xml:id="II02-9" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-9">
             <speaker>BÉRÉNICE.</speaker>
             <l n="457" xml:id="l457">Que ne puis-je à ton gré t'aimer et te haïr ?</l>
             <l n="458" xml:id="l458">Tu veux doncques deux fois, parjure, me trahir,</l>
@@ -873,19 +876,19 @@
             <l n="460" xml:id="l460">Toi qui me l'as volé quand j'ai pu le défendre,</l>
             <l n="461" xml:id="l461">Sont-ce là les serments, ingrat, que tu m'as faits ?</l>
           </sp>
-          <sp xml:id="II02-10" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-10">
             <speaker>TYRIDATE.</speaker>
-            <l n="462" xml:id="l462" part="I">Que puis-je ?</l>
+            <l n="462" part="I" xml:id="l462">Que puis-je ?</l>
           </sp>
-          <sp xml:id="II02-11" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-11">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">Va, cruel, tu ne m'aimas jamais.</l>
           </sp>
-          <sp xml:id="II02-12" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-12">
             <speaker>TYRIDATE.</speaker>
-            <l n="463" xml:id="l463" part="I">Hélas !</l>
+            <l n="463" part="I" xml:id="l463">Hélas !</l>
           </sp>
-          <sp xml:id="II02-13" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-13">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">J'en crois tes pleurs, tu m'aimes, mais confesse</l>
             <l n="464" xml:id="l464">Qu'il faut que cette amour ait beaucoup de faiblesse,</l>
@@ -893,7 +896,7 @@
             <l n="466" xml:id="l466">Qui te fait préférer l'affront de me trahir</l>
             <l n="467" xml:id="l467">À l'utile secours qu'on offre à notre flamme.</l>
           </sp>
-          <sp xml:id="II02-14" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-14">
             <speaker>TYRIDATE.</speaker>
             <l n="468" xml:id="l468">Hélas ! Si ce secours dont je frémis dans l'âme</l>
             <l n="469" xml:id="l469">Se pouvait justement expliquer à vos yeux,</l>
@@ -907,19 +910,19 @@
             <l n="477" xml:id="l477">Mais afin de laisser toute votre amitié</l>
             <l n="478" xml:id="l478">À ceux que nos malheurs ont trouvés sans pitié.</l>
           </sp>
-          <sp xml:id="II02-15" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-15">
             <speaker>BÉRÉNICE.</speaker>
             <l n="479" xml:id="l479">Hélas ! Quelle amitié voulez-vous que je donne</l>
             <l n="480" xml:id="l480">À qui fit nos malheurs et qui nous abandonne ?</l>
-            <l n="481" xml:id="l481" part="I">Car enfin c'est la reine...</l>
+            <l n="481" part="I" xml:id="l481">Car enfin c'est la reine...</l>
           </sp>
-          <sp xml:id="II02-16" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-16">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Épargnez-lui l'horreur</l>
             <l n="482" xml:id="l482">D'un coup qui met l'amour et le sang en fureur.</l>
-            <l n="483" xml:id="l483" part="I">Et puisqu'il faut mourir, souffrez...</l>
+            <l n="483" part="I" xml:id="l483">Et puisqu'il faut mourir, souffrez...</l>
           </sp>
-          <sp xml:id="II02-17" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-17">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">À votre honte,</l>
             <l n="484" xml:id="l484">Confessez pour le moins que mon feu vous surmonte</l>
@@ -934,18 +937,18 @@
             <l n="493" xml:id="l493">Je pouvais renouer des noeuds presque brisés,</l>
             <l n="494" xml:id="l494">Vous avez le remède, et vous le refusez ?</l>
           </sp>
-          <sp xml:id="II02-18" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-18">
             <speaker>TYRIDATE.</speaker>
             <l n="495" xml:id="l495">Oui, j'ose y renoncer, et n'ai pas la puissance</l>
             <l n="496" xml:id="l496">D'écouter mes transports contre mon innocence.</l>
             <l n="497" xml:id="l497">Jugez quel est ce coup qui combat mon devoir,</l>
             <l n="498" xml:id="l498">S'il devient même horrible à tout mon désespoir.</l>
           </sp>
-          <sp xml:id="II02-19" who="BERENICE">
+          <sp who="BERENICE" xml:id="II02-19">
             <speaker>BÉRÉNICE.</speaker>
             <l n="499" xml:id="l499">Donc je n'obtiendrai rien. Ces pleurs, cette tendresse...</l>
           </sp>
-          <sp xml:id="II02-20" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II02-20">
             <speaker>TYRIDATE.</speaker>
             <l n="500" xml:id="l500">Laissez à ma vertu généreuse Princesse</l>
             <l n="501" xml:id="l501">Ce reste de vigueur où mon coeur s'affermit ;</l>
@@ -955,32 +958,32 @@
             <l n="505" xml:id="l505">Retenez mon esprit sur un pas si glissant ;</l>
             <l n="506" xml:id="l506">Si vous m'aimez, souffrez Tyridate innocent ;</l>
             <l n="507" xml:id="l507">Et puisque mon trépas est un coup nécessaire...</l>
-            <l n="508" xml:id="l508" part="I">Adieu mon frère vient.</l>
+            <l n="508" part="I" xml:id="l508">Adieu mon frère vient.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Ariarathe, Bérénice, Euridice.<listPerson type="configuration" xml:id="conf8"><person corresp="#ARIARATHE"/><person corresp="#TYRIDATE"/><person corresp="#BERENICE"/><person corresp="#EURIDICE"/></listPerson></head>
-          <sp xml:id="II03-1" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II03-1">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Me fuyez-vous mon frère ?</l>
           </sp>
-          <sp xml:id="II03-2" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II03-2">
             <speaker>TYRIDATE.</speaker>
             <l n="509" xml:id="l509">J'avais pris congé d'elle, et dois à vos bontés</l>
-            <l n="510" xml:id="l510" part="I">Ce respect...</l>
+            <l n="510" part="I" xml:id="l510">Ce respect...</l>
           </sp>
-          <sp xml:id="II03-3" who="BERENICE">
+          <sp who="BERENICE" xml:id="II03-3">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">Il le veut, Tyridate, arrêtez.</l>
             <l n="511" xml:id="l511">Il importe à tous trois que je rompe un silence</l>
             <l n="512" xml:id="l512">Qui cache à notre amour sa dernière espérance.</l>
             <l n="513" xml:id="l513">Puisqu'il faut m'expliquer que ce soit devant vous.</l>
           </sp>
-          <sp xml:id="II03-4" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II03-4">
             <speaker>TYRIDATE.</speaker>
-            <l n="514" xml:id="l514" part="I">Madame...</l>
+            <l n="514" part="I" xml:id="l514">Madame...</l>
           </sp>
-          <sp xml:id="II03-5" who="BERENICE">
+          <sp who="BERENICE" xml:id="II03-5">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">Contre un coup qui doit tomber sur nous,</l>
             <l n="515" xml:id="l515">Je tente tous moyens, et n'aurai pas le blâme</l>
@@ -1004,16 +1007,16 @@
             <l n="532" xml:id="l532">Souillé du sang d'un frère, et trempé de mes larmes,</l>
             <l n="533" xml:id="l533">S'il est digne de vous, je l'accepte et demain</l>
             <l n="534" xml:id="l534">J'obéis aux traités, et vous donne la main.</l>
-            <l n="535" xml:id="l535" part="I">Parlez, Prince.</l>
+            <l n="535" part="I" xml:id="l535">Parlez, Prince.</l>
           </sp>
-          <sp xml:id="II03-6" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II03-6">
             <speaker>TYRIDATE, à Ariarathe.</speaker>
             <l part="F">Il est temps que ce trouble finisse,</l>
             <l n="536" xml:id="l536">Que votre amour trahi s'apprête à mon supplice :</l>
             <l n="537" xml:id="l537">Vengez-vous d'un rival qui vous vole son coeur,</l>
             <l n="538" xml:id="l538">Et gagnez par ma mort ce que j'ai par l'erreur.</l>
           </sp>
-          <sp xml:id="II03-7" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II03-7">
             <speaker>ARIARATHE.</speaker>
             <l n="539" xml:id="l539">Enfin je reconnais qu'un soupçon légitime</l>
             <l n="540" xml:id="l540">M'avait fait pressentir la moitié de ce crime :</l>
@@ -1023,50 +1026,50 @@
             <l n="544" xml:id="l544">Le roi vient à propos pour hâter ma vengeance :</l>
             <l n="545" xml:id="l545">J'en conçois un moyen qui vous fera rougir.</l>
           </sp>
-          <sp xml:id="II03-8" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II03-8">
             <speaker>TYRIDATE.</speaker>
-            <l n="546" xml:id="l546" part="I">Quoi mon frère ?</l>
+            <l n="546" part="I" xml:id="l546">Quoi mon frère ?</l>
           </sp>
-          <sp xml:id="II03-9" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II03-9">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Je sais comme je dois agir ;</l>
             <l n="547" xml:id="l547">Je n'écoute personne, et moins vous que tout autre.</l>
           </sp>
-          <sp xml:id="II03-10" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="II03-10">
             <speaker>EURIDICE, bas.</speaker>
-            <l n="548" xml:id="l548" part="I">Ah ! L'infidèle.</l>
+            <l n="548" part="I" xml:id="l548">Ah ! L'infidèle.</l>
           </sp>
-          <sp xml:id="II03-11" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II03-11">
             <speaker>TYRIDATE, à Bérénice.</speaker>
             <l part="F">Hélas ! Quel malheur est le vôtre ?</l>
-            <l n="549" xml:id="l549" part="I">Qu'avez-vous fait ?</l>
+            <l n="549" part="I" xml:id="l549">Qu'avez-vous fait ?</l>
           </sp>
-          <sp xml:id="II03-12" who="BERENICE">
+          <sp who="BERENICE" xml:id="II03-12">
             <speaker>BÉRÉNICE.</speaker>
             <l part="F">Voyant qu'il nous traite si mal,</l>
             <l n="550" xml:id="l550">Que je chéris l'erreur qui m'ôte à ce rival !</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Le Roi, Ariarathe, Tyridate, Bérénice, Oronte, Euridice.<listPerson type="configuration" xml:id="conf9"><person corresp="#LEROI"/><person corresp="#ARIARATHE"/><person corresp="#TYRIDATE"/><person corresp="#BERENICE"/><person corresp="#EURIDICE"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="II04-1" who="LEROI">
+          <sp who="LEROI" xml:id="II04-1">
             <speaker>LE ROI, à Bérénice.</speaker>
             <l n="551" xml:id="l551">Enfin le jour s'approche ; où votre hymen Princesse</l>
             <l n="552" xml:id="l552">Achevant dès demain la commune allégresse</l>
             <l n="553" xml:id="l553">Par la foi des traités nous assure la paix.</l>
           </sp>
-          <sp xml:id="II04-2" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II04-2">
             <speaker>ARIARATHE.</speaker>
             <l n="554" xml:id="l554">Que tout s'accorde mal à vos justes souhaits !</l>
             <l n="555" xml:id="l555">Seigneur, mais je connais vos bontés, et j'espère</l>
             <l n="556" xml:id="l556">Ce qu'un fils trop aimé peut attendre d'un père.</l>
             <l n="557" xml:id="l557">C'est sur ce grand amour que je fonde mes voeux.</l>
           </sp>
-          <sp xml:id="II04-3" who="LEROI">
+          <sp who="LEROI" xml:id="II04-3">
             <speaker>LE ROI.</speaker>
             <l n="558" xml:id="l558">Parle, et sois assuré de tout ce que tu veux.</l>
           </sp>
-          <sp xml:id="II04-4" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II04-4">
             <speaker>ARIARATHE.</speaker>
             <l n="559" xml:id="l559">Seigneur, on m'a trahi, je demande justice ;</l>
             <l n="560" xml:id="l560">Par la faveur du rang j'attendais Bérénice ;</l>
@@ -1078,40 +1081,40 @@
             <l n="566" xml:id="l566">Qu'il m'arrache ce coeur qui m'était destiné ;</l>
             <l n="567" xml:id="l567">Ainsi ce grand espoir ne sert qu'à me confondre.</l>
           </sp>
-          <sp xml:id="II04-5" who="LEROI">
+          <sp who="LEROI" xml:id="II04-5">
             <speaker>LE ROI, à Tyridate.</speaker>
-            <l n="568" xml:id="l568" part="I">Quoi perfide !</l>
+            <l n="568" part="I" xml:id="l568">Quoi perfide !</l>
           </sp>
-          <sp xml:id="II04-6" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="II04-6">
             <speaker>TYRIDATE.</speaker>
             <l part="M">Seigneur...</l>
           </sp>
-          <sp xml:id="II04-7" who="LEROI">
+          <sp who="LEROI" xml:id="II04-7">
             <speaker>LE ROI.</speaker>
             <l part="F">Que pourrais-tu répondre ?</l>
             <l n="569" xml:id="l569">Fuis traître, et me cachant un crime plein d'horreur,</l>
             <l n="570" xml:id="l570">Épargne un parricide à ma juste fureur.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="II05">
           <head>SCÈNE V. Le Roi, Ariarathe, Oronte, Bérénice, Euridice.<listPerson type="configuration" xml:id="conf10"><person corresp="#LEROI"/><person corresp="#ARIARATHE"/><person corresp="#ORONTE"/><person corresp="#BERENICE"/><person corresp="#EURIDICE"/></listPerson></head>
-          <sp xml:id="II05-1" who="LEROI">
+          <sp who="LEROI" xml:id="II05-1">
             <speaker>LE ROI continue.</speaker>
             <l n="571" xml:id="l571">Tu me l'avais bien dit, cher Oronte, l'infâme !</l>
             <l n="572" xml:id="l572">Où nous réduit encor sa téméraire flamme ?</l>
             <l n="573" xml:id="l573">Mais j'y saurai pourvoir, et la mère et le fils</l>
             <l n="574" xml:id="l574">Ne se vanteront pas de nous avoir trahis.</l>
           </sp>
-          <sp xml:id="II05-2" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II05-2">
             <speaker>ARIARATHE.</speaker>
             <l n="575" xml:id="l575">Quoi ? Seigneur, j'attendais l'effet de ma prière ;</l>
-            <l n="576" xml:id="l576" part="I">Je veux que ma vengeance...</l>
+            <l n="576" part="I" xml:id="l576">Je veux que ma vengeance...</l>
           </sp>
-          <sp xml:id="II05-3" who="LEROI">
+          <sp who="LEROI" xml:id="II05-3">
             <speaker>LE ROI.</speaker>
             <l part="F">Oui tu l'auras entière.</l>
           </sp>
-          <sp xml:id="II05-4" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II05-4">
             <speaker>ARIARATHE.</speaker>
             <l n="577" xml:id="l577">Rappelez donc mon frère, et qu'aux yeux de tous deux</l>
             <l n="578" xml:id="l578">Je me venge en amant trahi, mais généreux.</l>
@@ -1121,27 +1124,29 @@
             <l n="582" xml:id="l582">Qui sur deux coeurs unis font d'injustes efforts.</l>
             <l n="583" xml:id="l583">Qu'il vienne de mes mains recevoir la princesse.</l>
           </sp>
-          <sp xml:id="II05-5" who="ORONTE"><speaker>ORONTE.</speaker>bas. 
-	<l n="584" xml:id="l584" part="I">Qu'entends-je ?</l></sp>
-          <sp xml:id="II05-6" who="ARIARATHE">
+          <sp who="ORONTE" xml:id="II05-5">
+            <speaker>ORONTE. <hi rend="i">bas</hi></speaker>
+            <l n="584" part="I" xml:id="l584">Qu'entends-je ?</l>
+          </sp>
+          <sp who="ARIARATHE" xml:id="II05-6">
             <speaker>ARIARATHE, à Bérénice.</speaker>
             <l part="F">Désormais que votre crainte cesse,</l>
             <l n="585" xml:id="l585">Madame, et pardonnez un feint ressentiment,</l>
             <l n="586" xml:id="l586">Par qui j'ai dû punir votre déguisement.</l>
           </sp>
-          <sp xml:id="II05-7" who="BERENICE">
+          <sp who="BERENICE" xml:id="II05-7">
             <speaker>BÉRÉNICE, à Ariarathe.</speaker>
-            <l n="587" xml:id="l587" part="I">Ah ! Prince.</l>
+            <l n="587" part="I" xml:id="l587">Ah ! Prince.</l>
           </sp>
-          <sp xml:id="II05-8" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="II05-8">
             <speaker>EURIDICE.</speaker>
             <l part="F">Meurs soupçon que mon coeur désavoue.</l>
           </sp>
-          <sp xml:id="II05-9" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II05-9">
             <speaker>ARIARATHE, au roi.</speaker>
-            <l n="588" xml:id="l588" part="I">Souffrez.</l>
+            <l n="588" part="I" xml:id="l588">Souffrez.</l>
           </sp>
-          <sp xml:id="II05-10" who="LEROI">
+          <sp who="LEROI" xml:id="II05-10">
             <speaker>LE ROI.</speaker>
             <l part="F">Ariarathe, est-ce ainsi qu'on me joue ?</l>
             <l n="589" xml:id="l589">Est-ce à vous maintenant à disposer d'un bien</l>
@@ -1153,11 +1158,11 @@
             <l n="595" xml:id="l595">Et soyez à jamais par un respect fidèle</l>
             <l n="596" xml:id="l596">Le lieu glorieux d'une paix immortelle.</l>
           </sp>
-          <sp xml:id="II05-11" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="II05-11">
             <speaker>ARIARATHE.</speaker>
-            <l n="597" xml:id="l597" part="I">Seigneur...</l>
+            <l n="597" part="I" xml:id="l597">Seigneur...</l>
           </sp>
-          <sp xml:id="II05-12" who="LEROI">
+          <sp who="LEROI" xml:id="II05-12">
             <speaker>LE ROI.</speaker>
             <l part="F">Vous connaissez ce que j'attends de vous :</l>
             <l n="598" xml:id="l598">Obéissez mon fils, ou craignez mon courroux.</l>
@@ -1171,9 +1176,9 @@
             <l n="605" xml:id="l605">Adieu, comptez la reine entre vos ennemis.</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="II06">
           <head>SCÈNE VI. Le Roi, Oronte.<listPerson type="configuration" xml:id="conf11"><person corresp="#LEROI"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="II06-1" who="LEROI">
+          <sp who="LEROI" xml:id="II06-1">
             <speaker>LE ROI continue.</speaker>
             <l n="606" xml:id="l606">Mère, dont le conseil trop barbare à tes fils</l>
             <l n="607" xml:id="l607">Perd l'un par trop d'amour, l'autre par trop de zèle,</l>
@@ -1185,13 +1190,13 @@
             <l n="613" xml:id="l613">Vient des transports qu'en lui le mien aura produit.</l>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
-          <head>SCÈNE VII. La Reine, le Roi.<listPerson type="configuration" xml:id="conf12"><person corresp="#LAREINE"/><person corresp="#LEROI"/></listPerson></head>
-          <sp xml:id="II07-1" who="LAREINE">
+        <div2 n="7" type="scene" xml:id="II07">
+          <head>SCÈNE VII. La Reine, le Roi.<listPerson type="configuration" xml:id="conf12"><person corresp="#ANTHIOCHIDE"/><person corresp="#LEROI"/></listPerson></head>
+          <sp who="ANTHIOCHIDE" xml:id="II07-1">
             <speaker>LA REINE.</speaker>
             <l n="614" xml:id="l614">Venez voir à quel point Tyridate est réduit.</l>
           </sp>
-          <sp xml:id="II07-2" who="LEROI">
+          <sp who="LEROI" xml:id="II07-2">
             <speaker>LE ROI.</speaker>
             <l n="615" xml:id="l615">Madame il vous sied bien de venir vous en plaindre ;</l>
             <l n="616" xml:id="l616">Il n'a pas la moitié des peines qu'il doit craindre ;</l>
@@ -1203,7 +1208,7 @@
             <l n="622" xml:id="l622">Le mari de la femme, et le père de fils.</l>
             <l n="623" xml:id="l623">Le semez-vous ici par zèle ou par colère ?</l>
           </sp>
-          <sp xml:id="II07-3" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="II07-3">
             <speaker>LA REINE.</speaker>
             <l n="624" xml:id="l624">Que vous connaissez mal les bontés d'une mère !</l>
             <l n="625" xml:id="l625">Loin d'exciter ici quelque division,</l>
@@ -1221,7 +1226,7 @@
             <l n="637" xml:id="l637">Que l'on admire en vous dans un si juste choix</l>
             <l n="638" xml:id="l638">Un père qui fut sans fils père de deux grands rois.</l>
           </sp>
-          <sp xml:id="II07-4" who="LEROI">
+          <sp who="LEROI" xml:id="II07-4">
             <speaker>LE ROI.</speaker>
             <l n="639" xml:id="l639">Vous ne manquez jamais, à qui veut vous entendre,</l>
             <l n="640" xml:id="l640">De mauvaises raisons à vous pouvoir défendre ;</l>
@@ -1244,17 +1249,17 @@
             <l n="656" xml:id="l656">Demain que tout soit prêt pour la cérémonie.</l>
           </sp>
         </div2>
-        <div2 xml:id="II08" type="scene" n="8">
-          <head>SCÈNE VIII. La Reine, Oronte.<listPerson type="configuration" xml:id="conf13"><person corresp="#LAREINE"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="II08-1" who="LAREINE">
+        <div2 n="8" type="scene" xml:id="II08">
+          <head>SCÈNE VIII. La Reine, Oronte.<listPerson type="configuration" xml:id="conf13"><person corresp="#ANTHIOCHIDE"/><person corresp="#ORONTE"/></listPerson></head>
+          <sp who="ANTHIOCHIDE" xml:id="II08-1">
             <speaker>LA REINE.</speaker>
             <l n="657" xml:id="l657">Ô dieux ! Quel coup de foudre ? Oronte écoutez moi.</l>
           </sp>
-          <sp xml:id="II08-2" who="ORONTE">
+          <sp who="ORONTE" xml:id="II08-2">
             <speaker>ORONTE.</speaker>
             <l n="658" xml:id="l658">Je cours exécuter les volontés du roi.</l>
           </sp>
-          <sp xml:id="II08-3" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="II08-3">
             <speaker>LA REINE.</speaker>
             <l n="659" xml:id="l659">Pensez-vous que je souffre une telle injustice ?</l>
             <l n="660" xml:id="l660">Quoi votre fils aura le sceptre et Bérénice ?</l>
@@ -1268,39 +1273,39 @@
             <l n="668" xml:id="l668">Arrachez-lui l'espoir qu'il ôte à Tyridate,</l>
             <l n="669" xml:id="l669">Ou sans plus différer, un trait de ma fureur</l>
             <l n="670" xml:id="l670">Va prévenir l'effet d'une fatale erreur.</l>
-            <l n="671" xml:id="l671" part="I">Aussi bien c'en est trop.</l>
+            <l n="671" part="I" xml:id="l671">Aussi bien c'en est trop.</l>
           </sp>
-          <sp xml:id="II08-4" who="ORONTE">
+          <sp who="ORONTE" xml:id="II08-4">
             <speaker>ORONTE.</speaker>
             <l part="F">Oui, c'en est trop, madame.</l>
             <l n="672" xml:id="l672">Mais le roi vous connaît, il a lu dans votre âme,</l>
             <l n="673" xml:id="l673">Et sachant pour son fils quels sont vos mouvements</l>
             <l n="674" xml:id="l674">Il préviendra l'effet de vos ressentiments.</l>
           </sp>
-          <sp xml:id="II08-5" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="II08-5">
             <speaker>LA REINE.</speaker>
-            <l n="675" xml:id="l675" part="I">Pour son fils ! Dis le tien.</l>
+            <l n="675" part="I" xml:id="l675">Pour son fils ! Dis le tien.</l>
           </sp>
-          <sp xml:id="II08-6" who="ORONTE">
+          <sp who="ORONTE" xml:id="II08-6">
             <speaker>ORONTE.</speaker>
             <l part="M">Le mien ?</l>
           </sp>
-          <sp xml:id="II08-7" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="II08-7">
             <speaker>LA REINE.</speaker>
             <l part="F">Oui le tien, traître.</l>
             <l n="676" xml:id="l676">L'impudent de quel front l'ose-t-il méconnaître ?</l>
-            <l n="677" xml:id="l677" part="I">Quoi lâche ?</l>
+            <l n="677" part="I" xml:id="l677">Quoi lâche ?</l>
           </sp>
-          <sp xml:id="II08-8" who="ORONTE">
+          <sp who="ORONTE" xml:id="II08-8">
             <speaker>ORONTE.</speaker>
             <l part="F">Vos transports redoublent devant moi.</l>
             <l n="678" xml:id="l678">Adieu ; je vais pourvoir à ce que veut le roi.</l>
             <l n="679" xml:id="l679">Demain nous nous verrons à la cérémonie.</l>
           </sp>
         </div2>
-        <div2 xml:id="II09" type="scene" n="9">
-          <head>SCÈNE IX.<listPerson type="configuration" xml:id="conf14"><person corresp="#LAREINE"/></listPerson></head>
-          <sp xml:id="II09-1" who="LAREINE">
+        <div2 n="9" type="scene" xml:id="II09">
+          <head>SCÈNE IX.<listPerson type="configuration" xml:id="conf14"><person corresp="#ANTHIOCHIDE"/></listPerson></head>
+          <sp who="ANTHIOCHIDE" xml:id="II09-1">
             <speaker>LA REINE, seule.</speaker>
             <l n="680" xml:id="l680">Oui, oui tu m'y verras, toute feinte bannie,</l>
             <l n="681" xml:id="l681">Te le faire avouer, perfide, par sa mort,</l>
@@ -1330,11 +1335,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Tyridate, Ariarathe.<listPerson type="configuration" xml:id="conf16"><person corresp="#TYRIDATE"/><person corresp="#ARIARATHE"/></listPerson></head>
-          <sp xml:id="III01-1" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III01-1">
             <speaker>TYRIDATE.</speaker>
             <l n="705" xml:id="l705">Vous que le droit d'aînesse et vos propres grandeurs</l>
             <l n="706" xml:id="l706">Rendent trop justement contraire à mes ardeurs.</l>
@@ -1343,7 +1348,7 @@
             <l n="709" xml:id="l709">Bien qu'encor vos bontés me laissent malheureux,</l>
             <l n="710" xml:id="l710">Que je ne puis payer cet effort généreux.</l>
           </sp>
-          <sp xml:id="III01-2" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="III01-2">
             <speaker>ARIARATHE.</speaker>
             <l n="711" xml:id="l711">Vous ne me devez rien, et ce sont-là, mon frère,</l>
             <l n="712" xml:id="l712">Des générosités qui ne me coûtent guère.</l>
@@ -1370,7 +1375,7 @@
             <l n="733" xml:id="l733">L'aveu de mon amour, les pleurs de l'amitié</l>
             <l n="734" xml:id="l734">Sont pour lui des objets à toucher sa pitié.</l>
           </sp>
-          <sp xml:id="III01-3" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III01-3">
             <speaker>TYRIDATE.</speaker>
             <l n="735" xml:id="l735">Vous le connaissez mal si vous osez le croire,</l>
             <l n="736" xml:id="l736">Il aime trop l'État, il aime trop sa gloire ;</l>
@@ -1381,7 +1386,7 @@
             <l n="741" xml:id="l741">Jaloux de vos grandeurs, et plus soumis au roi,</l>
             <l n="742" xml:id="l742">Perdez le souvenir d'Euridice et de moi.</l>
           </sp>
-          <sp xml:id="III01-4" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="III01-4">
             <speaker>ARIARATHE.</speaker>
             <l n="743" xml:id="l743">J'ai l'oeil assez ouvert pour voir sans injustice</l>
             <l n="744" xml:id="l744">Ce que vaut un Royaume avecque Bérénice :</l>
@@ -1389,9 +1394,9 @@
             <l n="746" xml:id="l746">J'estime trop un frère, Euridice et ma foi.</l>
             <l n="747" xml:id="l747">Allons sans plus tarder partager sa colère,</l>
             <l n="748" xml:id="l748">Mais aussi partageons les bontés de ma mère,</l>
-            <l n="749" xml:id="l749" part="I">Vous me l'avez promis.</l>
+            <l n="749" part="I" xml:id="l749">Vous me l'avez promis.</l>
           </sp>
-          <sp xml:id="III01-5" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III01-5">
             <speaker>TYRIDATE.</speaker>
             <l part="F">J'y ferai mon pouvoir,</l>
             <l n="750" xml:id="l750">Et dût-elle fermer son coeur à ce devoir,</l>
@@ -1405,38 +1410,38 @@
             <l n="758" xml:id="l758">Vous ne vous plaindrez plus que j'abhorre mon fils.</l>
             <l n="759" xml:id="l759">M'a-t-elle dit, allant employer chez mon père</l>
             <l n="760" xml:id="l760">Le secours dont toujours elle a fait son mystère.</l>
-            <l n="761" xml:id="l761" part="I">Je la vois.</l>
+            <l n="761" part="I" xml:id="l761">Je la vois.</l>
           </sp>
-          <sp xml:id="III01-6" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="III01-6">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Ma présence offense encore ses yeux,</l>
             <l n="762" xml:id="l762">Je vous laisse, sans moi vous la fléchirez mieux.</l>
           </sp>
-          <sp xml:id="III01-7" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III01-7">
             <speaker>TYRIDATE.</speaker>
             <l n="763" xml:id="l763">Puissé-je réparer par ce petit service</l>
             <l n="764" xml:id="l764">Ce qu'a fait contre vous l'amant de Bérénice.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Antiochide, Tyridate.<listPerson type="configuration" xml:id="conf17"><person corresp="#ANTHIOCHIDE"/><person corresp="#TYRIDATE"/><person corresp="#LAREINE"/></listPerson></head>
-          <sp xml:id="III02-1" who="ANTHIOCHIDE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Antiochide, Tyridate.<listPerson type="configuration" xml:id="conf17"><person corresp="#ANTHIOCHIDE"/><person corresp="#TYRIDATE"/><person corresp="#ANTHIOCHIDE"/></listPerson></head>
+          <sp who="ANTHIOCHIDE" xml:id="III02-1">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="765" xml:id="l765">Éviter mon abord, me fuir, me rejeter,</l>
             <l n="766" xml:id="l766">S'obstiner si longtemps à ne pas m'écouter,</l>
             <l n="767" xml:id="l767">Ah ! De mon mauvais sort rigueur insupportable,</l>
             <l n="768" xml:id="l768">Ô reine infortunée et mère misérable.</l>
           </sp>
-          <sp xml:id="III02-2" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III02-2">
             <speaker>TYRIDATE.</speaker>
-            <l n="769" xml:id="l769" part="I">Madame, qu'avez-vous ?</l>
+            <l n="769" part="I" xml:id="l769">Madame, qu'avez-vous ?</l>
           </sp>
-          <sp xml:id="III02-3" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III02-3">
             <speaker>LA REINE.</speaker>
             <l part="F">Le roi me fuit, mon fils,</l>
             <l n="770" xml:id="l770">Et les dieux contre nous ne sauraient faire pis.</l>
           </sp>
-          <sp xml:id="III02-4" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III02-4">
             <speaker>TYRIDATE.</speaker>
             <l n="771" xml:id="l771">Ce sont traits d'un malheur, qui, si je l'ose dire,</l>
             <l n="772" xml:id="l772">Jette tout son venin au moment qu'il expire.</l>
@@ -1444,14 +1449,14 @@
             <l n="774" xml:id="l774">A perdu tous les traits qu'il n'a pas épargnés.</l>
             <l n="775" xml:id="l775">Maintenant aux abois mon amour triomphante</l>
             <l n="776" xml:id="l776">Rit des derniers efforts de sa rage mourante,</l>
-            <l n="777" xml:id="l777" part="I">Je n'ai plus de rival.</l>
+            <l n="777" part="I" xml:id="l777">Je n'ai plus de rival.</l>
           </sp>
-          <sp xml:id="III02-5" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III02-5">
             <speaker>LA REINE.</speaker>
             <l part="F">Quoi ? Mon fils il est mort.</l>
             <l n="778" xml:id="l778">Qu'en effet justement tu peux braver le sort.</l>
           </sp>
-          <sp xml:id="III02-6" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III02-6">
             <speaker>TYRIDATE.</speaker>
             <l n="779" xml:id="l779">Ah ! Prenez des pensers plus dignes de ma mère,</l>
             <l n="780" xml:id="l780">Sachez que si la mort m'avait ôté mon frère,</l>
@@ -1463,12 +1468,12 @@
             <l n="786" xml:id="l786">Les secrètes amours d'Euridice et de lui.</l>
             <l n="787" xml:id="l787">Cet objet à tout autre a soustrait sa franchise.</l>
           </sp>
-          <sp xml:id="III02-7" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III02-7">
             <speaker>LA REINE.</speaker>
             <l n="788" xml:id="l788">Pour la fille d'Oronte ? Ô dieux quelle surprise !</l>
-            <l n="789" xml:id="l789" part="I">Et son père le souffre.</l>
+            <l n="789" part="I" xml:id="l789">Et son père le souffre.</l>
           </sp>
-          <sp xml:id="III02-8" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III02-8">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Il ignore leurs feux,</l>
             <l n="790" xml:id="l790">Mais ces feux sont trop beaux pour être malheureux.</l>
@@ -1492,9 +1497,9 @@
             <l n="808" xml:id="l808">Achevez son hymen, et rendez à ses larmes</l>
             <l n="809" xml:id="l809">L'amitié que sans crime on ne lui peut ôter,</l>
             <l n="810" xml:id="l810">Et que de tour son sang il voudrait acheter,</l>
-            <l n="811" xml:id="l811" part="I">Vous me l'avez promis.</l>
+            <l n="811" part="I" xml:id="l811">Vous me l'avez promis.</l>
           </sp>
-          <sp xml:id="III02-9" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III02-9">
             <speaker>LA REINE.</speaker>
             <l part="F">Et je fais mon possible</l>
             <l n="812" xml:id="l812">Pour vous paraître mère, et mère plus sensible,</l>
@@ -1507,7 +1512,7 @@
             <l n="819" xml:id="l819">Et qui réduit mon coeur à ce désordre extrême</l>
             <l n="820" xml:id="l820">De le perdre pour vous, ou vous perdre s'il aime.</l>
           </sp>
-          <sp xml:id="III02-10" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="III02-10">
             <speaker>TYRIDATE.</speaker>
             <l n="821" xml:id="l821">Ne m'aimez donc jamais s'il faut que votre amour</l>
             <l n="822" xml:id="l822">L'expose à tant de haine et lui coûte le jour.</l>
@@ -1519,9 +1524,9 @@
             <l n="828" xml:id="l828">S'il n'est plus votre fils, vous n'êtes plus ma mère.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf18"><person corresp="#LAREINE"/></listPerson></head>
-          <sp xml:id="III03-1" who="LAREINE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf18"><person corresp="#ANTHIOCHIDE"/></listPerson></head>
+          <sp who="ANTHIOCHIDE" xml:id="III03-1">
             <speaker>LA REINE seule.</speaker>
             <l n="829" xml:id="l829">Tu trembles à ces mots, Princesse, tu frémis,</l>
             <l n="830" xml:id="l830">Ton malheur cependant s'apprête à faire pis.</l>
@@ -1541,18 +1546,18 @@
             <l n="844" xml:id="l844">Dieux favorables dieux m'auriez-vous écoutée ?</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Le Roi, La Reine, Arsinoé.<listPerson type="configuration" xml:id="conf19"><person corresp="#LEROI"/><person corresp="#LAREINE"/><person corresp="#ARSINOE"/></listPerson></head>
-          <sp xml:id="III04-1" who="LEROI">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Le Roi, La Reine, Arsinoé.<listPerson type="configuration" xml:id="conf19"><person corresp="#LEROI"/><person corresp="#ANTHIOCHIDE"/><person corresp="#ARSINOE"/></listPerson></head>
+          <sp who="LEROI" xml:id="III04-1">
             <speaker>LE ROI, à Arsinoé.</speaker>
             <l n="845" xml:id="l845">De quel étonnement ton discours m'a frappé.</l>
             <stage type="toward">À la reine.</stage>
             <l n="846" xml:id="l846">La croirai-je, Madame, et m'avez-vous trompé ?</l>
             <l n="847" xml:id="l847">Ce cher fils qui naissant désarma Mithridate,</l>
             <l n="848" xml:id="l848">Par qui je vis, je règne : enfin Ariarathe</l>
-            <l n="849" xml:id="l849" part="I">Est-il mon fils ?</l>
+            <l n="849" part="I" xml:id="l849">Est-il mon fils ?</l>
           </sp>
-          <sp xml:id="III04-2" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-2">
             <speaker>LA REINE.</speaker>
             <l part="F">Seigneur, de quel oeil verrez-vous</l>
             <l n="850" xml:id="l850">Votre femme coupable embrasser vos genoux ?</l>
@@ -1563,7 +1568,7 @@
             <l n="855" xml:id="l855">Mais mon crime est d'avoir trop gardé le silence,</l>
             <l n="856" xml:id="l856">Et caché trop longtemps cette fausse naissance.</l>
           </sp>
-          <sp xml:id="III04-3" who="LEROI">
+          <sp who="LEROI" xml:id="III04-3">
             <speaker>LE ROI.</speaker>
             <l n="857" xml:id="l857">Au point où me réduit ce secret révélé</l>
             <l n="858" xml:id="l858">Votre crime envers moi n'est que d'avoir parlé.</l>
@@ -1580,11 +1585,11 @@
             <l n="869" xml:id="l869">Mais las ! Où me réduit ce secret révélé ?</l>
             <l n="870" xml:id="l870">Rendez-moi le bonheur que vous m'avez volé.</l>
           </sp>
-          <sp xml:id="III04-4" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-4">
             <speaker>LA REINE.</speaker>
             <l n="871" xml:id="l871">Ce secret révélé vous sauve Tyridate.</l>
           </sp>
-          <sp xml:id="III04-5" who="LEROI">
+          <sp who="LEROI" xml:id="III04-5">
             <speaker>LE ROI.</speaker>
             <l n="872" xml:id="l872">Ce secret révélé m'arrache Ariarathe ;</l>
             <l n="873" xml:id="l873">Ah ! Si notre repos vous eût été plus cher,</l>
@@ -1594,34 +1599,34 @@
             <l n="877" xml:id="l877">Et qui m'assurera dans ce grand embarras</l>
             <l n="878" xml:id="l878">Si l'un est supposé que l'autre ne l'est pas ?</l>
           </sp>
-          <sp xml:id="III04-6" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-6">
             <speaker>LA REINE.</speaker>
-            <l n="879" xml:id="l879" part="I">Moi ?</l>
+            <l n="879" part="I" xml:id="l879">Moi ?</l>
           </sp>
-          <sp xml:id="III04-7" who="LEROI">
+          <sp who="LEROI" xml:id="III04-7">
             <speaker>LE ROI.</speaker>
             <l part="F">Vous croirai-je vous sa mortelle ennemie ?</l>
             <l n="880" xml:id="l880">Qui veut tantôt sa mort, tantôt son infamie.</l>
           </sp>
-          <sp xml:id="III04-8" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-8">
             <speaker>LA REINE.</speaker>
             <l n="881" xml:id="l881">Ma haine vous suffit pour démêler leur sort,</l>
             <l n="882" xml:id="l882">Pourrais-je le haïr jusqu'à vouloir sa mort</l>
             <l n="883" xml:id="l883">S'il était votre fils et si j'étais sa mère ?</l>
           </sp>
-          <sp xml:id="III04-9" who="LEROI">
+          <sp who="LEROI" xml:id="III04-9">
             <speaker>LE ROI.</speaker>
             <l n="884" xml:id="l884">Pourrais-je tant l'aimer si je n'étais son père ?</l>
           </sp>
-          <sp xml:id="III04-10" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-10">
             <speaker>LA REINE.</speaker>
             <l n="885" xml:id="l885">C'est en moi connaissance, et c'est en vous erreur.</l>
           </sp>
-          <sp xml:id="III04-11" who="LEROI">
+          <sp who="LEROI" xml:id="III04-11">
             <speaker>LE ROI.</speaker>
             <l n="886" xml:id="l886">C'est en moi sans nature, et c'est en vous fureur.</l>
           </sp>
-          <sp xml:id="III04-12" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-12">
             <speaker>LA REINE.</speaker>
             <l n="887" xml:id="l887">Ce serait en effet une fureur damnable ;</l>
             <l n="888" xml:id="l888">Mais de ce procédé me jugez-vous capable ?</l>
@@ -1629,15 +1634,15 @@
             <l n="890" xml:id="l890">Le cruel traitement que je reçois de vous ?</l>
             <l n="891" xml:id="l891">Hélas ! Que la mémoire en est bien effacée.</l>
           </sp>
-          <sp xml:id="III04-13" who="LEROI">
+          <sp who="LEROI" xml:id="III04-13">
             <speaker>LE ROI.</speaker>
             <l n="892" xml:id="l892">Non, mais vous démentez votre gloire passée.</l>
           </sp>
-          <sp xml:id="III04-14" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-14">
             <speaker>LA REINE.</speaker>
             <l n="893" xml:id="l893">Est-ce la démentir que vous désabuser ?</l>
           </sp>
-          <sp xml:id="III04-15" who="LEROI">
+          <sp who="LEROI" xml:id="III04-15">
             <speaker>LE ROI.</speaker>
             <l n="894" xml:id="l894">Vouloir m'offrir un fils, ou me le supposer,</l>
             <l n="895" xml:id="l895">N'est-ce pas vouloir faire ou s'accuser d'un crime ?</l>
@@ -1648,15 +1653,15 @@
             <l n="900" xml:id="l900">Pourquoi nous la cacher sous un si long silence ?</l>
             <l n="901" xml:id="l901">Ou pourquoi d'aujourd'hui seulement l'éventer.</l>
           </sp>
-          <sp xml:id="III04-16" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-16">
             <speaker>LA REINE.</speaker>
             <l n="902" xml:id="l902">J'ai mes raisons, Seigneur, daignez les écouter.</l>
           </sp>
-          <sp xml:id="III04-17" who="LEROI">
+          <sp who="LEROI" xml:id="III04-17">
             <speaker>LE ROI, à Arsinoé.</speaker>
             <l n="903" xml:id="l903">Parle, va-t-en au temple, et fait venir Oronte.</l>
           </sp>
-          <sp xml:id="III04-18" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-18">
             <speaker>LA REINE.</speaker>
             <l n="904" xml:id="l904">Pour trancher un récit qui me couvre de honte,</l>
             <l n="905" xml:id="l905">Je vous trompai, Seigneur, je supposai ce fils :</l>
@@ -1693,9 +1698,9 @@
             <l n="936" xml:id="l936">On veut qu'Ariarathe épouse la princesse,</l>
             <l n="937" xml:id="l937">Et s'acquière en perdant votre fils à vos yeux</l>
             <l n="938" xml:id="l938">Un titre pour régner malgré vous en ces lieux.</l>
-            <l n="939" xml:id="l939" part="I">Je parle...</l>
+            <l n="939" part="I" xml:id="l939">Je parle...</l>
           </sp>
-          <sp xml:id="III04-19" who="LEROI">
+          <sp who="LEROI" xml:id="III04-19">
             <speaker>LE ROI.</speaker>
             <l part="F">C'était peu du premier artifice</l>
             <l n="940" xml:id="l940">Pour rompre, malgré moi, l'hymen de Bérénice,</l>
@@ -1704,55 +1709,55 @@
             <l n="943" xml:id="l943">Vous souffriez qu'il régnât et vantiez ma tendresse</l>
             <l n="944" xml:id="l944">Pourvu qu'à Tyridate il cédât la princesse.</l>
           </sp>
-          <sp xml:id="III04-20" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-20">
             <speaker>LA REINE.</speaker>
-            <l n="945" xml:id="l945" part="I">Il la cède.</l>
+            <l n="945" part="I" xml:id="l945">Il la cède.</l>
           </sp>
-          <sp xml:id="III04-21" who="LEROI">
+          <sp who="LEROI" xml:id="III04-21">
             <speaker>LE ROI.</speaker>
             <l part="F">Et ce coup de sa tendre amitié</l>
             <l n="946" xml:id="l946">Aurait touché des coeurs capables de pitié.</l>
           </sp>
-          <sp xml:id="III04-22" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-22">
             <speaker>LA REINE.</speaker>
             <l n="947" xml:id="l947">C'est un coup de l'amour qu'il a pour Euridice,</l>
             <l n="948" xml:id="l948">Qui romprait cet hymen mieux que mon artifice.</l>
           </sp>
-          <sp xml:id="III04-23" who="LEROI">
+          <sp who="LEROI" xml:id="III04-23">
             <speaker>LE ROI.</speaker>
             <l n="949" xml:id="l949">Quoi ? La fille d'Oronte a captivé son coeur ?</l>
             <l n="950" xml:id="l950">Il est donc mon fils, il n'aime pas sa soeur.</l>
           </sp>
-          <sp xml:id="III04-24" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-24">
             <speaker>LA REINE.</speaker>
             <l n="951" xml:id="l951">Il ne la connaît pas, et leur père lui-même</l>
             <l n="952" xml:id="l952">N'apprendra pas leurs feux sans un désordre extrême</l>
-            <l n="953" xml:id="l953" part="I">Pour vous tirer d'erreur...</l>
+            <l n="953" part="I" xml:id="l953">Pour vous tirer d'erreur...</l>
           </sp>
-          <sp xml:id="III04-25" who="LEROI">
+          <sp who="LEROI" xml:id="III04-25">
             <speaker>LE ROI.</speaker>
             <l part="F">C'est peu de vos avis,</l>
             <l n="954" xml:id="l954">Et si vous prétendez de me ravir mon fils,</l>
             <l n="955" xml:id="l955">Encor que comme époux je vous aime et respecte,</l>
             <l n="956" xml:id="l956">Il me faut des témoins d'une foi moins suspecte,</l>
-            <l n="957" xml:id="l957" part="I">Où sont-ils ?</l>
+            <l n="957" part="I" xml:id="l957">Où sont-ils ?</l>
           </sp>
-          <sp xml:id="III04-26" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-26">
             <speaker>LA REINE.</speaker>
             <l part="F">Ce secret qu'on ne peut trop couvrir,</l>
             <l n="958" xml:id="l958">Fut connu de fort peu, qu'Oronte a fait périr.</l>
           </sp>
-          <sp xml:id="III04-27" who="LEROI">
+          <sp who="LEROI" xml:id="III04-27">
             <speaker>LE ROI.</speaker>
             <l n="959" xml:id="l959">Doncques en ce secret si fatal à ma gloire</l>
             <l n="960" xml:id="l960">Oronte est avec vous le seul que je dois croire,</l>
             <l n="961" xml:id="l961">Il faut le voir, je sais quel zèle il a pour moi.</l>
           </sp>
-          <sp xml:id="III04-28" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-28">
             <speaker>LA REINE.</speaker>
             <l n="962" xml:id="l962">Où me réduisez-vous s'il faut croire à sa foi ?</l>
           </sp>
-          <sp xml:id="III04-29" who="LEROI">
+          <sp who="LEROI" xml:id="III04-29">
             <speaker>LE ROI.</speaker>
             <l n="963" xml:id="l963">Où me réduisez-vous s'il faut croire à la vôtre ?</l>
             <l n="964" xml:id="l964">De deux fils je perds l'un, et je doute de l'autre ;</l>
@@ -1763,11 +1768,11 @@
             <l n="969" xml:id="l969">Mithridate plus fort qu'il ne le fut jamais,</l>
             <l n="970" xml:id="l970">Me perdra, si je manque au traité de la paix.</l>
           </sp>
-          <sp xml:id="III04-30" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-30">
             <speaker>LA REINE.</speaker>
             <l n="971" xml:id="l971">Il suffit que la fille épouse Tyridate.</l>
           </sp>
-          <sp xml:id="III04-31" who="LEROI">
+          <sp who="LEROI" xml:id="III04-31">
             <speaker>LE ROI.</speaker>
             <l n="972" xml:id="l972">Il connaît, il estime, il aime Ariarathe ;</l>
             <l n="973" xml:id="l973">Il le veut pour son gendre, et pour dire encor mieux</l>
@@ -1785,22 +1790,22 @@
             <l n="985" xml:id="l985">Adieu, si vous m'aimez, si vous aimez la paix</l>
             <l n="986" xml:id="l986">Gardez votre secret et n'en parlez jamais.</l>
           </sp>
-          <sp xml:id="III04-32" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-32">
             <speaker>LA REINE.</speaker>
-            <l n="987" xml:id="l987" part="I">Quoi ? Seigneur.</l>
+            <l n="987" part="I" xml:id="l987">Quoi ? Seigneur.</l>
           </sp>
-          <sp xml:id="III04-33" who="LEROI">
+          <sp who="LEROI" xml:id="III04-33">
             <speaker>LE ROI.</speaker>
             <l part="F">Laissez-moi si vous voulez me plaire.</l>
           </sp>
-          <sp xml:id="III04-34" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="III04-34">
             <speaker>LA REINE, s'en allant.</speaker>
             <l n="988" xml:id="l988">Ménageons-nous encor, et craignons sa colère.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V.<listPerson type="configuration" xml:id="conf20"><person corresp="#LEROI"/></listPerson></head>
-          <sp xml:id="III05-1" who="LEROI">
+          <sp who="LEROI" xml:id="III05-1">
             <speaker>LE ROI, seul.</speaker>
             <l n="989" xml:id="l989">Qu'un front se pare en vain d'une vaine fierté</l>
             <l n="990" xml:id="l990">Quand le trouble d'un coeur dément sa fermeté !</l>
@@ -1829,22 +1834,22 @@
             <l n="1012" xml:id="l1012">D'un fils, qui, s'il ne l'est, est si digne de l'être.</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI. Oronte, Le Roi.<listPerson type="configuration" xml:id="conf21"><person corresp="#ORONTE"/><person corresp="#LEROI"/></listPerson></head>
-          <sp xml:id="III06-1" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-1">
             <speaker>ORONTE.</speaker>
             <l n="1013" xml:id="l1013">Que peut avoir le roi qui paraît si troublé ?</l>
           </sp>
-          <sp xml:id="III06-2" who="LEROI">
+          <sp who="LEROI" xml:id="III06-2">
             <speaker>LE ROI.</speaker>
-            <l n="1014" xml:id="l1014" part="I">Tout est-il prêt ?</l>
+            <l n="1014" part="I" xml:id="l1014">Tout est-il prêt ?</l>
           </sp>
-          <sp xml:id="III06-3" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-3">
             <speaker>ORONTE.</speaker>
             <l part="F">Seigneur, le peuple est assemblé ;</l>
             <l n="1015" xml:id="l1015">L'on attend plus que vous, le prince et la princesse</l>
           </sp>
-          <sp xml:id="III06-4" who="LEROI">
+          <sp who="LEROI" xml:id="III06-4">
             <speaker>LE ROI.</speaker>
             <l n="1016" xml:id="l1016">Je veux qu'un double hymen redouble l'allégresse,</l>
             <l n="1017" xml:id="l1017">J'aime trop mes enfants pour gêner leur amour ;</l>
@@ -1854,52 +1859,52 @@
             <l n="1021" xml:id="l1021">Et m'acquittant vers toi récompense des soins</l>
             <l n="1022" xml:id="l1022">Que je ne puis payer, si je te donne moins.</l>
           </sp>
-          <sp xml:id="III06-5" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-5">
             <speaker>ORONTE.</speaker>
-            <l n="1023" xml:id="l1023" part="I">Quoi ? Ma fille Seigneur.</l>
+            <l n="1023" part="I" xml:id="l1023">Quoi ? Ma fille Seigneur.</l>
           </sp>
-          <sp xml:id="III06-6" who="LEROI">
+          <sp who="LEROI" xml:id="III06-6">
             <speaker>LE ROI.</speaker>
             <l part="F">Il l'adore, elle l'aime.</l>
           </sp>
-          <sp xml:id="III06-7" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-7">
             <speaker>ORONTE, bas.</speaker>
             <l n="1024" xml:id="l1024">Dieux ! Me réserviez-vous à ce désordre extrême ? </l>
           </sp>
-          <sp xml:id="III06-8" who="LEROI">
+          <sp who="LEROI" xml:id="III06-8">
             <speaker>LE ROI.</speaker>
             <l n="1025" xml:id="l1025">Je croyais te surprendre et non pas t'affliger,</l>
             <l n="1026" xml:id="l1026">Mais à voir ta douleur, je ne sais que juger,</l>
             <l n="1027" xml:id="l1027">Que cache cet hymen qui soit si redoutable ?</l>
           </sp>
-          <sp xml:id="III06-9" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-9">
             <speaker>ORONTE.</speaker>
             <l n="1028" xml:id="l1028">Ce n'est pas un hymen, c'est un crime effroyable.</l>
           </sp>
-          <sp xml:id="III06-10" who="LEROI">
+          <sp who="LEROI" xml:id="III06-10">
             <speaker>LE ROI, bas.</speaker>
-            <l n="1029" xml:id="l1029" part="I">Las ! Il n'est que trop vrai.</l>
+            <l n="1029" part="I" xml:id="l1029">Las ! Il n'est que trop vrai.</l>
           </sp>
-          <sp xml:id="III06-11" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-11">
             <speaker>ORONTE, bas.</speaker>
             <l part="F">Qu'ai-je dit ? Oui Seigneur</l>
             <l n="1030" xml:id="l1030">C'est un crime envers vous qui me comble d'horreur.</l>
             <l n="1031" xml:id="l1031">En rompant les traités ces amours vous hasardent,</l>
-            <l n="1032" xml:id="l1032" part="I">Je prévois des malheurs...</l>
+            <l n="1032" part="I" xml:id="l1032">Je prévois des malheurs...</l>
           </sp>
-          <sp xml:id="III06-12" who="LEROI">
+          <sp who="LEROI" xml:id="III06-12">
             <speaker>LE ROI.</speaker>
             <l part="F">Ces raisons me regardent.</l>
             <l n="1033" xml:id="l1033">Dis les tiennes, ou bien sans plus dissimuler,</l>
             <l n="1034" xml:id="l1034">Confesse, il est ton fils, il est temps de parler.</l>
-            <l n="1035" xml:id="l1035" part="I">La reine m'a tout dit.</l>
+            <l n="1035" part="I" xml:id="l1035">La reine m'a tout dit.</l>
           </sp>
-          <sp xml:id="III06-13" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-13">
             <speaker>ORONTE.</speaker>
             <l part="F">Que vous a dit la reine ?</l>
             <l n="1036" xml:id="l1036">Dans quels nouveaux périls nous engage sa haine ?</l>
           </sp>
-          <sp xml:id="III06-14" who="LEROI">
+          <sp who="LEROI" xml:id="III06-14">
             <speaker>LE ROI.</speaker>
             <l n="1037" xml:id="l1037">Ne crains pas d'avouer, officieux trompeur,</l>
             <l n="1038" xml:id="l1038">Un crime, à qui je dois ma vie et ma grandeur :</l>
@@ -1908,11 +1913,11 @@
             <l n="1041" xml:id="l1041">Confesse, il est ton fils, et l'hymen de sa soeur</l>
             <l n="1042" xml:id="l1042">Est-ce crime odieux qui te fait tant d'horreur.</l>
           </sp>
-          <sp xml:id="III06-15" who="ORONTE">
+          <sp who="ORONTE" xml:id="III06-15">
             <speaker>ORONTE.</speaker>
             <l n="1043" xml:id="l1043">Seigneur à ce discours je ne puis rien comprendre.</l>
           </sp>
-          <sp xml:id="III06-16" who="LEROI">
+          <sp who="LEROI" xml:id="III06-16">
             <speaker>LE ROI.</speaker>
             <l n="1044" xml:id="l1044">Hé bien s'il n'est ton fils accepte-le pour gendre,</l>
             <l n="1045" xml:id="l1045">Sûr du consentement d'Euridice et de lui,</l>
@@ -1920,9 +1925,9 @@
             <l n="1047" xml:id="l1047">Va-t-en à ces amants en porter la nouvelle.</l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="III07">
           <head>SCÈNE VII. <listPerson type="configuration" xml:id="conf22"><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="III07-1" who="ORONTE">
+          <sp who="ORONTE" xml:id="III07-1">
             <speaker>ORONTE, seul.</speaker>
             <l n="1048" xml:id="l1048">Ah ! Que tu connais mal le coeur d'un infidèle,</l>
             <l n="1049" xml:id="l1049">S'il faut donner ce nom, à qui se voit permis</l>
@@ -1954,11 +1959,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE. Ariarathe, Euridice.<listPerson type="configuration" xml:id="conf24"><person corresp="#ARIARATHE"/><person corresp="#EURIDICE"/></listPerson></head>
-          <sp xml:id="IV01-1" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV01-1">
             <speaker>ARIARATHE.</speaker>
             <l n="1075" xml:id="l1075">Ainsi chère Euridice au fort de nos alarmes</l>
             <l n="1076" xml:id="l1076">Naît cet heureux moment, ce moment plein de charmes ;</l>
@@ -1972,7 +1977,7 @@
             <l n="1084" xml:id="l1084">Devient l'heureux secours d'une longue espérance ;</l>
             <l n="1085" xml:id="l1085">Le roi, la reine, Oronte en pressent le succès.</l>
           </sp>
-          <sp xml:id="IV01-2" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="IV01-2">
             <speaker>EURIDICE.</speaker>
             <l n="1086" xml:id="l1086">Que le bien m'est suspect qui flatte avec excès !</l>
             <l n="1087" xml:id="l1087">Et que je plains un coeur toujours prêt à se rendre</l>
@@ -1988,7 +1993,7 @@
             <l n="1097" xml:id="l1097">S'il osait consentir à te donner la main,</l>
             <l n="1098" xml:id="l1098">Ton père avec justice en romprait le dessein.</l>
           </sp>
-          <sp xml:id="IV01-3" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV01-3">
             <speaker>ARIARATHE.</speaker>
             <l n="1099" xml:id="l1099">Vous voyez toutefois qu'avec transport lui-même</l>
             <l n="1100" xml:id="l1100">Vient de nous préparer à ce bonheur suprême,</l>
@@ -1996,7 +2001,7 @@
             <l n="1102" xml:id="l1102">Si vous m'aimiez, si près de régner avec moi ;</l>
             <l n="1103" xml:id="l1103">D'un autre mouvement vous paraîtriez atteinte.</l>
           </sp>
-          <sp xml:id="IV01-4" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="IV01-4">
             <speaker>EURIDICE.</speaker>
             <l n="1104" xml:id="l1104">Puisqu'à défaut d'amour vous imputez ma crainte,</l>
             <l n="1105" xml:id="l1105">Je veux la surmonter, et croire comme vous</l>
@@ -2010,13 +2015,13 @@
             <l n="1113" xml:id="l1113">Il conserve un billet où ton sort est écrit,</l>
             <l n="1114" xml:id="l1114">Votre amour... à ce mot la parque la surprit ;</l>
             <l n="1115" xml:id="l1115">Je vis mourir ses yeux, aussitôt que sa bouche.</l>
-            <l n="1116" xml:id="l1116" part="I">Son corps...</l>
+            <l n="1116" part="I" xml:id="l1116">Son corps...</l>
           </sp>
-          <sp xml:id="IV01-5" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV01-5">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Trop fortement ce souvenir vous touche.</l>
           </sp>
-          <sp xml:id="IV01-6" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="IV01-6">
             <speaker>EURIDICE.</speaker>
             <l n="1117" xml:id="l1117">Pardonnez des soupirs qui sortent malgré moi.</l>
             <l n="1118" xml:id="l1118">Nicandre m'opposant ses serments et sa foi</l>
@@ -2029,85 +2034,85 @@
             <l n="1125" xml:id="l1125">Et pour ne perdre pas un trop superbe espoir</l>
             <l n="1126" xml:id="l1126">Je dérobe à mes yeux ce qu'ils craignent de voir :</l>
           </sp>
-          <sp xml:id="IV01-7" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV01-7">
             <speaker>ARIARATHE.</speaker>
             <l n="1127" xml:id="l1127">Ne cesserez-vous point de vous être contraire ?</l>
             <l n="1128" xml:id="l1128">Craindre tantôt le roi, puis Oronte, ou sa mère,</l>
             <l n="1129" xml:id="l1129">Redouter un billet, trembler incessamment,</l>
-            <l n="1130" xml:id="l1130" part="I">Est-ce vivre ? Est-ce aimer ?</l>
+            <l n="1130" part="I" xml:id="l1130">Est-ce vivre ? Est-ce aimer ?</l>
           </sp>
-          <sp xml:id="IV01-8" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="IV01-8">
             <speaker>EURIDICE.</speaker>
             <l part="F">C'est aimer tendrement.</l>
           </sp>
-          <sp xml:id="IV01-9" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV01-9">
             <speaker>ARIARATHE.</speaker>
             <l n="1131" xml:id="l1131">Que sur la mienne enfin votre amour s'affermisse,</l>
             <stage type="[N/A]">En prenant le billet.</stage>
-            <l n="1132" xml:id="l1132" part="I">Donnez.</l>
+            <l n="1132" part="I" xml:id="l1132">Donnez.</l>
           </sp>
-          <sp xml:id="IV01-10" who="EURIDICE">
+          <sp who="EURIDICE" xml:id="IV01-10">
             <speaker>EURIDICE, le retirant.</speaker>
             <l part="M">Mon père vient.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Oronte, Ariarathe.<listPerson type="configuration" xml:id="conf25"><person corresp="#ORONTE"/><person corresp="#ARIARATHE"/></listPerson></head>
-          <sp xml:id="IV02-1" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-1">
             <speaker>ORONTE.</speaker>
             <l part="F">Laissez-nous Euridice.</l>
           </sp>
-          <sp xml:id="IV02-2" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-2">
             <speaker>ARIARATHE.</speaker>
-            <l n="1133" xml:id="l1133" part="I">Hé bien mon père !</l>
+            <l n="1133" part="I" xml:id="l1133">Hé bien mon père !</l>
           </sp>
-          <sp xml:id="IV02-3" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-3">
             <speaker>ORONTE.</speaker>
             <l part="F">Ô dieux ! D'où me vient cet honneur ?</l>
-            <l n="1134" xml:id="l1134" part="I">Mon Prince ?</l>
+            <l n="1134" part="I" xml:id="l1134">Mon Prince ?</l>
           </sp>
-          <sp xml:id="IV02-4" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-4">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Pour moi seul c'est un rare bonheur,</l>
             <l n="1135" xml:id="l1135">Que serais-je sans vous ? C'est de vous seul mon père</l>
             <l n="1136" xml:id="l1136">Que j'attends aujourd'hui tout le bien que j'espère.</l>
           </sp>
-          <sp xml:id="IV02-5" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-5">
             <speaker>ORONTE.</speaker>
             <l n="1137" xml:id="l1137">Il le sait, il s'en loue, ô transports ! Ah ! mon fils</l>
-            <l n="1138" xml:id="l1138" part="I">Qui vous a dit ?</l>
+            <l n="1138" part="I" xml:id="l1138">Qui vous a dit ?</l>
           </sp>
-          <sp xml:id="IV02-6" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-6">
             <speaker>ARIARATHE.</speaker>
             <l part="M">Vous.</l>
           </sp>
-          <sp xml:id="IV02-7" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-7">
             <speaker>ORONTE.</speaker>
             <l part="M">Moi ?</l>
           </sp>
-          <sp xml:id="IV02-8" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-8">
             <speaker>ARIARATHE.</speaker>
             <l part="F">Vous me l'avez promis,</l>
             <l n="1139" xml:id="l1139">Si près de notre hymen ; je crois qu'avec justice</l>
             <l n="1140" xml:id="l1140">Je puis nommer le mien le père d'Euridice.</l>
           </sp>
-          <sp xml:id="IV02-9" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-9">
             <speaker>ORONTE.</speaker>
             <l n="1141" xml:id="l1141">Justes dieux ! De quel coup m'avez-vous accablé ?</l>
           </sp>
-          <sp xml:id="IV02-10" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-10">
             <speaker>ARIARATHE.</speaker>
-            <l n="1142" xml:id="l1142" part="I">D'où vient ce changement ?</l>
+            <l n="1142" part="I" xml:id="l1142">D'où vient ce changement ?</l>
           </sp>
-          <sp xml:id="IV02-11" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-11">
             <speaker>ORONTE.</speaker>
             <l part="F">Dieux que je suis troublé !</l>
           </sp>
-          <sp xml:id="IV02-12" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-12">
             <speaker>ARIARATHE.</speaker>
-            <l n="1143" xml:id="l1143" part="I">Qu'est-ce Oronte ? Parlez.</l>
+            <l n="1143" part="I" xml:id="l1143">Qu'est-ce Oronte ? Parlez.</l>
           </sp>
-          <sp xml:id="IV02-13" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-13">
             <speaker>ORONTE.</speaker>
             <l part="F">Au point que je vous aime,</l>
             <l n="1144" xml:id="l1144">L'excès de mon amour rend mon désordre extrême,</l>
@@ -2117,7 +2122,7 @@
             <l n="1148" xml:id="l1148">Et les désirs du fils et le zèle du père,</l>
             <l n="1149" xml:id="l1149">Son effort ne produit que trouble et que soupirs.</l>
           </sp>
-          <sp xml:id="IV02-14" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-14">
             <speaker>ARIARATHE.</speaker>
             <l n="1150" xml:id="l1150">Vous pouvez toutefois répondre à mes désirs,</l>
             <l n="1151" xml:id="l1151">Si vous m'aimez en fils faites-le moi paraître.</l>
@@ -2125,13 +2130,13 @@
             <l n="1153" xml:id="l1153">Hâtez notre hyménée, et pressez ce moment</l>
             <l n="1154" xml:id="l1154">Qui donne à ces deux noms un meilleur fondement.</l>
           </sp>
-          <sp xml:id="IV02-15" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-15">
             <speaker>ORONTE.</speaker>
             <l n="1155" xml:id="l1155">Ils en ont un bien fort : mais je tremble sans cesse,</l>
             <l n="1156" xml:id="l1156">Qu'il vous soit odieux, parce qu'il vous abaisse,</l>
             <l n="1157" xml:id="l1157">Peut-être seriez-vous fâché d'être mon fils.</l>
           </sp>
-          <sp xml:id="IV02-16" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-16">
             <speaker>ARIARATHE.</speaker>
             <l n="1158" xml:id="l1158">L'honneur de ma naissance est pour moi d'un tel prix,</l>
             <l n="1159" xml:id="l1159">Que je mourrais cent fois, plutôt que d'en descendre ;</l>
@@ -2139,31 +2144,34 @@
             <l n="1161" xml:id="l1161">Cet hymen où mon coeur rencontre tant d'appas,</l>
             <l n="1162" xml:id="l1162">Élève votre fille et ne m'abaisse pas.</l>
           </sp>
-          <sp xml:id="IV02-17" who="ORONTE"><speaker>ORONTE.</speaker>bas. 
-	<l n="1163" xml:id="l1163">Que dois-je devenir ? Quelle est mon espérance ?</l><l n="1164" xml:id="l1164">S'il ne peut, sans mourir, apprendre sa naissance.</l></sp>
-          <sp xml:id="IV02-18" who="ARIARATHE">
-            <speaker>ARIARATHE.</speaker>
-            <l n="1165" xml:id="l1165" part="I">Qui vous rend interdit Oronte ?</l>
+          <sp who="ORONTE" xml:id="IV02-17">
+            <speaker>ORONTE. <hi rend="i">bas</hi></speaker>
+            <l n="1163" xml:id="l1163">Que dois-je devenir ? Quelle est mon espérance ?</l>
+            <l n="1164" xml:id="l1164">S'il ne peut, sans mourir, apprendre sa naissance.</l>
           </sp>
-          <sp xml:id="IV02-19" who="ORONTE">
+          <sp who="ARIARATHE" xml:id="IV02-18">
+            <speaker>ARIARATHE.</speaker>
+            <l n="1165" part="I" xml:id="l1165">Qui vous rend interdit Oronte ?</l>
+          </sp>
+          <sp who="ORONTE" xml:id="IV02-19">
             <speaker>ORONTE.</speaker>
             <l part="F">Je vous plains,</l>
             <l n="1166" xml:id="l1166">Puisque l'ordre du roi renverse vos desseins.</l>
           </sp>
-          <sp xml:id="IV02-20" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-20">
             <speaker>ARIARATHE.</speaker>
-            <l n="1167" xml:id="l1167" part="I">Comment ?</l>
+            <l n="1167" part="I" xml:id="l1167">Comment ?</l>
           </sp>
-          <sp xml:id="IV02-21" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-21">
             <speaker>ORONTE.</speaker>
             <l part="F">Il faut aller épouser la princesse.</l>
           </sp>
-          <sp xml:id="IV02-22" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-22">
             <speaker>ARIARATHE.</speaker>
             <l n="1168" xml:id="l1168">Quoi perfide ? Est-ce là l'effet de ta promesse ?</l>
             <l n="1169" xml:id="l1169">Et d'où vient dans le roi ce soudain changement ?</l>
           </sp>
-          <sp xml:id="IV02-23" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-23">
             <speaker>ORONTE.</speaker>
             <l n="1170" xml:id="l1170">L'amour qu'il a pour vous en est le fondement.</l>
             <l n="1171" xml:id="l1171">Seigneur, en refusant d'épouser la princesse,</l>
@@ -2173,19 +2181,19 @@
             <l n="1175" xml:id="l1175">Et riche des grandeurs que son frère abandonne,</l>
             <l n="1176" xml:id="l1176">Il met dessus sa tête une double couronne.</l>
           </sp>
-          <sp xml:id="IV02-24" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-24">
             <speaker>ARIARATHE.</speaker>
             <l n="1177" xml:id="l1177">Qui lui cachait tantôt cet obstacle odieux ?</l>
           </sp>
-          <sp xml:id="IV02-25" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-25">
             <speaker>ORONTE.</speaker>
             <l n="1178" xml:id="l1178">L'amour qui l'aveuglait lui dessille les yeux.</l>
           </sp>
-          <sp xml:id="IV02-26" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-26">
             <speaker>ARIARATHE.</speaker>
             <l n="1179" xml:id="l1179">Vous deviez détourner cette atteinte mortelle.</l>
           </sp>
-          <sp xml:id="IV02-27" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-27">
             <speaker>ORONTE.</speaker>
             <l n="1180" xml:id="l1180">Je dois plutôt rougir d'avoir trahi mon zèle ;</l>
             <l n="1181" xml:id="l1181">J'ai servi votre amour tout injuste qu'elle est ;</l>
@@ -2195,45 +2203,45 @@
             <l n="1185" xml:id="l1185">Mais de votre grandeur un père plus jaloux</l>
             <l n="1186" xml:id="l1186">Rallume dans mon coeur l'amour qu'il a pour vous.</l>
           </sp>
-          <sp xml:id="IV02-28" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-28">
             <speaker>ARIARATHE.</speaker>
             <l n="1187" xml:id="l1187">Quel zèle ? Quel amour qui m'enlève Euridice ?</l>
           </sp>
-          <sp xml:id="IV02-29" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-29">
             <speaker>ORONTE.</speaker>
             <l n="1188" xml:id="l1188">Il ne vous ôte rien vous rendant Bérénice.</l>
           </sp>
-          <sp xml:id="IV02-30" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-30">
             <speaker>ARIARATHE.</speaker>
             <l n="1189" xml:id="l1189">Prenez-vous intérêt à trahir votre sang ?</l>
           </sp>
-          <sp xml:id="IV02-31" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-31">
             <speaker>ORONTE.</speaker>
             <l n="1190" xml:id="l1190">J'en prends à le défendre, et servir votre rang,</l>
             <l n="1191" xml:id="l1191">J'en prends à triompher des fureurs d'une mère ;</l>
             <l n="1192" xml:id="l1192">J'en prends à détourner les menaces d'un père.</l>
           </sp>
-          <sp xml:id="IV02-32" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-32">
             <speaker>ARIARATHE.</speaker>
             <l n="1193" xml:id="l1193">Sachant votre pouvoir je crains peu son courroux.</l>
           </sp>
-          <sp xml:id="IV02-33" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-33">
             <speaker>ORONTE.</speaker>
             <l n="1194" xml:id="l1194">Mais je ne m'en sers point pour agir contre vous.</l>
           </sp>
-          <sp xml:id="IV02-34" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-34">
             <speaker>ARIARATHE.</speaker>
             <l n="1195" xml:id="l1195">N'écouterez-vous point une juste prière ?</l>
           </sp>
-          <sp xml:id="IV02-35" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-35">
             <speaker>ORONTE.</speaker>
             <l n="1196" xml:id="l1196">Non, je n'écoute point ce qui vous est contraire.</l>
           </sp>
-          <sp xml:id="IV02-36" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-36">
             <speaker>ARIARATHE.</speaker>
             <l n="1197" xml:id="l1197">Hé bien ! Allez sans vous je fléchirai le roi.</l>
           </sp>
-          <sp xml:id="IV02-37" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-37">
             <speaker>ORONTE.</speaker>
             <l n="1198" xml:id="l1198">Quand vous l'aurez fléchi que pouvez-vous sans moi ?</l>
             <l n="1199" xml:id="l1199">Car ne présumez de changer mon courage.</l>
@@ -2247,12 +2255,12 @@
             <l n="1207" xml:id="l1207">Et ne m'obligez pas par un coup déplorable</l>
             <l n="1208" xml:id="l1208">À rendre de mon zèle une preuve effroyable.</l>
           </sp>
-          <sp xml:id="IV02-38" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-38">
             <speaker>ARIARATHE.</speaker>
             <l n="1209" xml:id="l1209">Ôte-toi de mes yeux, fuis barbare, ou ma main</l>
             <l n="1210" xml:id="l1210">Préviendra par ta mort l'horreur de ton dessein.</l>
           </sp>
-          <sp xml:id="IV02-39" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV02-39">
             <speaker>ORONTE.</speaker>
             <l n="1211" xml:id="l1211">Ces menaces, Seigneur, n'ont rien qui m'intimide,</l>
             <l n="1212" xml:id="l1212">Si mon zèle pour vous commet ce parricide.</l>
@@ -2263,7 +2271,7 @@
             <l n="1217" xml:id="l1217">Jugez si ce refus est justice ou faveur,</l>
             <l n="1218" xml:id="l1218">Jugez si tous mes soins sont amour ou fureur.</l>
           </sp>
-          <sp xml:id="IV02-40" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="IV02-40">
             <speaker>ARIARATHE.</speaker>
             <l n="1219" xml:id="l1219">Soit amour, soit fureur qui pour moi s'intéresse,</l>
             <l n="1220" xml:id="l1220">Mon coeur tout en courroux succombe à sa tendresse,</l>
@@ -2277,18 +2285,18 @@
             <l n="1228" xml:id="l1228">Que mon amour saura t'en punir sur moi-même.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. <listPerson type="configuration" xml:id="conf26"><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="IV03-1" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV03-1">
             <speaker>ORONTE, seul.</speaker>
             <l n="1229" xml:id="l1229">Je crains peu ses transports, il suffit que le roi</l>
             <l n="1230" xml:id="l1230">Las de nous soupçonner s'accorde avecque moi</l>
             <l n="1231" xml:id="l1231">Il lui rend Bérénice, et j'évite l'inceste.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="IV04">
           <head>SCÈNE IV. Le Roi, Oronte.<listPerson type="configuration" xml:id="conf27"><person corresp="#LEROI"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="IV04-1" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-1">
             <speaker>LE ROI.</speaker>
             <l n="1232" xml:id="l1232">Dans quel état encor déplorable et funeste</l>
             <l n="1233" xml:id="l1233">Me laisse le combat d'une fatale erreur,</l>
@@ -2310,7 +2318,7 @@
             <l n="1249" xml:id="l1249">Et ne m'oblige pas d'arracher malgré moi</l>
             <l n="1250" xml:id="l1250">Ce que tu dois donner aux prières d'un roi.</l>
           </sp>
-          <sp xml:id="IV04-2" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV04-2">
             <speaker>ORONTE.</speaker>
             <l n="1251" xml:id="l1251">Seigneur, tous ses appas pourraient tenter quelque autre,</l>
             <l n="1252" xml:id="l1252">Qui se donnant un fils, que le ciel a fait vôtre,</l>
@@ -2345,7 +2353,7 @@
             <l n="1281" xml:id="l1281">Et d'être malgré moi le vrai maître d'un bien,</l>
             <l n="1282" xml:id="l1282">Qui fait votre bonheur, et qui ferait le mien.</l>
           </sp>
-          <sp xml:id="IV04-3" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-3">
             <speaker>LE ROI.</speaker>
             <l n="1283" xml:id="l1283">Tu triomphes Oronte, et mon coeur se doit rendre</l>
             <l n="1284" xml:id="l1284">Aux clartés dont encor il voulait se défendre,</l>
@@ -2360,13 +2368,13 @@
             <l n="1293" xml:id="l1293">Mais je la vois venir, évitons son abord.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V. La Reine, Le Roi, Oronte.<listPerson type="configuration" xml:id="conf28"><person corresp="#LAREINE"/><person corresp="#LEROI"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="IV05-1" who="LAREINE">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V. La Reine, Le Roi, Oronte.<listPerson type="configuration" xml:id="conf28"><person corresp="#ANTHIOCHIDE"/><person corresp="#LEROI"/><person corresp="#ORONTE"/></listPerson></head>
+          <sp who="ANTHIOCHIDE" xml:id="IV05-1">
             <speaker>LA REINE.</speaker>
             <l n="1294" xml:id="l1294">Ah ! De grâce arrêtez, faites-vous cet effort.</l>
           </sp>
-          <sp xml:id="IV05-2" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-2">
             <speaker>LE ROI.</speaker>
             <l n="1295" xml:id="l1295">Mon coeur a triomphé de son inquiétude :</l>
             <l n="1296" xml:id="l1296">Ne le rejetez plus dans cette incertitude.</l>
@@ -2374,7 +2382,7 @@
             <l n="1298" xml:id="l1298">S'il consent un hymen qu'il devrait refuser,</l>
             <l n="1299" xml:id="l1299">Croirai-je que ce fils est frère d'Euridice ?</l>
           </sp>
-          <sp xml:id="IV05-3" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="IV05-3">
             <speaker>LA REINE.</speaker>
             <l n="1300" xml:id="l1300">Quiconque comme lui fait monter sa malice</l>
             <l n="1301" xml:id="l1301">Jusqu'à vous déguiser une fatale erreur,</l>
@@ -2386,31 +2394,31 @@
             <l n="1307" xml:id="l1307">Si ce fils supposé par sa fausse naissance</l>
             <l n="1308" xml:id="l1308">Ne t'eût fait mériter cette reconnaissance ?</l>
           </sp>
-          <sp xml:id="IV05-4" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV05-4">
             <speaker>ORONTE.</speaker>
             <l n="1309" xml:id="l1309">Les soins de l'élever et ceux que je lui rends,</l>
             <l n="1310" xml:id="l1310">Pour qui ce fils me doit autant qu'à ses parents,</l>
             <l n="1311" xml:id="l1311">M'ont acquis justement cette haute fortune,</l>
             <l n="1312" xml:id="l1312">Dont l'éclat vous irrite autant qu'il m'importune.</l>
           </sp>
-          <sp xml:id="IV05-5" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="IV05-5">
             <speaker>LA REINE.</speaker>
             <l n="1313" xml:id="l1313">Mais dis-moi quel motif te fit son gouverneur ;</l>
             <l n="1314" xml:id="l1314">Quels exploits, quels travaux précédaient cet honneur ?</l>
           </sp>
-          <sp xml:id="IV05-6" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV05-6">
             <speaker>ORONTE.</speaker>
             <l n="1315" xml:id="l1315">De vous seule je tiens cette faveur insigne,</l>
             <l n="1316" xml:id="l1316">Et quand vous me montrez que j'en étais indigne,</l>
             <l n="1317" xml:id="l1317">Un reproche si vain et si hors de saison</l>
             <l n="1318" xml:id="l1318">Étale vos bienfaits, et non ma trahison.</l>
           </sp>
-          <sp xml:id="IV05-7" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="IV05-7">
             <speaker>LA REINE.</speaker>
             <l n="1319" xml:id="l1319">Tu me flattes, perfide, et me braves dans l'âme.</l>
             <l n="1320" xml:id="l1320">Mais qu'as-tu fait du fils dont accoucha ta femme ?</l>
           </sp>
-          <sp xml:id="IV05-8" who="ORONTE">
+          <sp who="ORONTE" xml:id="IV05-8">
             <speaker>ORONTE.</speaker>
             <l n="1321" xml:id="l1321">Pourquoi faut-il encor revoir son triste sort ?</l>
             <l n="1322" xml:id="l1322">Vous savez qu'en naissant il rencontra la mort,</l>
@@ -2425,27 +2433,27 @@
             <l n="1331" xml:id="l1331">Laissez-le moi,Seigneur, ne soyez plus sa mère ;</l>
             <l n="1332" xml:id="l1332">Au défaut de tous deux je veux être son père.</l>
           </sp>
-          <sp xml:id="IV05-9" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-9">
             <speaker>LE ROI.</speaker>
             <l n="1333" xml:id="l1333">Ah ! Ce nom et ce fils n'appartiennent qu'à moi.</l>
           </sp>
-          <sp xml:id="IV05-10" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="IV05-10">
             <speaker>LA REINE.</speaker>
-            <l n="1334" xml:id="l1334" part="I">C'est le sien.</l>
+            <l n="1334" part="I" xml:id="l1334">C'est le sien.</l>
           </sp>
-          <sp xml:id="IV05-11" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-11">
             <speaker>LE ROI.</speaker>
             <l part="F">C'est le vôtre, et sera votre roi.</l>
           </sp>
-          <sp xml:id="IV05-12" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="IV05-12">
             <speaker>LA REINE.</speaker>
-            <l n="1335" xml:id="l1335" part="I">Ah ! Périsse plutôt...</l>
+            <l n="1335" part="I" xml:id="l1335">Ah ! Périsse plutôt...</l>
           </sp>
-          <sp xml:id="IV05-13" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-13">
             <speaker>LE ROI.</speaker>
             <l part="F">Vous menacez, Madame.</l>
           </sp>
-          <sp xml:id="IV05-14" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="IV05-14">
             <speaker>LA REINE.</speaker>
             <l n="1336" xml:id="l1336">Je menace, et veux bien vous découvrir mon âme,</l>
             <l n="1337" xml:id="l1337">Tant que j'ai cru de vaincre une mortelle erreur,</l>
@@ -2455,7 +2463,7 @@
             <l n="1341" xml:id="l1341">Au défaut du poison, de la flamme et du fer</l>
             <l n="1342" xml:id="l1342">J'irai dedans vos bras moi-même l'étouffer.</l>
           </sp>
-          <sp xml:id="IV05-15" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-15">
             <speaker>LE ROI.</speaker>
             <l n="1343" xml:id="l1343">Et moi puisqu'on s'emporte avec tant d'insolence,</l>
             <l n="1344" xml:id="l1344">Me réglant désormais sur cette violence,</l>
@@ -2472,15 +2480,15 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Oronte, Ariarathe.<listPerson type="configuration" xml:id="conf30"><person corresp="#ORONTE"/><person corresp="#ARIARATHE"/></listPerson></head>
-          <sp xml:id="V01-1" who="ORONTE">
+          <sp who="ORONTE" xml:id="V01-1">
             <speaker>ORONTE.</speaker>
             <l n="1355" xml:id="l1355">Perdez, Prince, cette indigne croyance.</l>
           </sp>
-          <sp xml:id="V01-2" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="V01-2">
             <speaker>ARIARATHE.</speaker>
             <l n="1356" xml:id="l1356">En vain vous me voulez déguiser ma naissance :</l>
             <l n="1357" xml:id="l1357">Ce langage muet de mots entrecoupés,</l>
@@ -2490,7 +2498,7 @@
             <l n="1361" xml:id="l1361">Ne refusez donc plus de commettre à ma foi</l>
             <l n="1362" xml:id="l1362">La garde d'un secret qui n'importe qu'à moi.</l>
           </sp>
-          <sp xml:id="V01-3" who="ORONTE">
+          <sp who="ORONTE" xml:id="V01-3">
             <speaker>ORONTE.</speaker>
             <l n="1363" xml:id="l1363">S'il n'importe qu'à vous pourquoi donc vous le taire ?</l>
             <l n="1364" xml:id="l1364">Ah ! Cessez de vouloir que je sois votre père ;</l>
@@ -2505,7 +2513,7 @@
             <l n="1373" xml:id="l1373">Tout y répond en vous, hormis la lâcheté</l>
             <l n="1374" xml:id="l1374">D'avoir osé douter de cette vérité.</l>
           </sp>
-          <sp xml:id="V01-4" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="V01-4">
             <speaker>ARIARATHE.</speaker>
             <l n="1375" xml:id="l1375">Hé bien ! Contre un soupçon dont ma gloire s'offense</l>
             <l n="1376" xml:id="l1376">Je vais rendre combat hors de votre présence ;</l>
@@ -2518,7 +2526,7 @@
             <l n="1383" xml:id="l1383">Et dans le voeu constant de l'aimer et lui plaire</l>
             <l n="1384" xml:id="l1384">Je serai par son choix son amant ou son frère.</l>
           </sp>
-          <sp xml:id="V01-5" who="ORONTE">
+          <sp who="ORONTE" xml:id="V01-5">
             <speaker>ORONTE.</speaker>
             <l n="1385" xml:id="l1385">Vous n'êtes pas son frère ; et la reine vous perd</l>
             <l n="1386" xml:id="l1386">Si vous l'aimez après ce secret découvert.</l>
@@ -2527,7 +2535,7 @@
             <l n="1389" xml:id="l1389">Au point où près de lui la reine vous a mis</l>
             <l n="1390" xml:id="l1390">Il vous faut obéir pour paraître son fils.</l>
           </sp>
-          <sp xml:id="V01-6" who="ARIARATHE">
+          <sp who="ARIARATHE" xml:id="V01-6">
             <speaker>ARIARATHE.</speaker>
             <l n="1391" xml:id="l1391">Il le faut, mais tandis qu'auprès de la princesse</l>
             <l n="1392" xml:id="l1392">Le roi pour la convaincre épuise son adresse,</l>
@@ -2539,26 +2547,26 @@
             <l n="1398" xml:id="l1398">Elle aura la bonté de n'y pas résister.</l>
             <l n="1399" xml:id="l1399">Souffre donc un adieu qui m'acquitte envers elle ;</l>
             <l n="1400" xml:id="l1400">Après je ne prends plus conseil de ton zèle,</l>
-            <l n="1401" xml:id="l1401" part="I">Mais ne refuse pas...</l>
+            <l n="1401" part="I" xml:id="l1401">Mais ne refuse pas...</l>
           </sp>
-          <sp xml:id="V01-7" who="ORONTE">
+          <sp who="ORONTE" xml:id="V01-7">
             <speaker>ORONTE.</speaker>
             <l part="F">Je vous rendrai content.</l>
             <stage type="[N/A]">Parlant à son capitaine des Gardes.</stage>
             <l n="1402" xml:id="l1402">Vous, conduisez le prince, où ma fille l'attend.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. <listPerson type="configuration" xml:id="conf31"><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="V02-1" who="ORONTE">
+          <sp who="ORONTE" xml:id="V02-1">
             <speaker>ORONTE, seul.</speaker>
             <l n="1403" xml:id="l1403">Tout fléchit, tout fait joug à ma bonne fortune,</l>
             <l n="1404" xml:id="l1404">Ce jour, ce jour heureux... ô présence importune !</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Anthiochide, Oronte.<listPerson type="configuration" xml:id="conf32"><person corresp="#ANTHIOCHIDE"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="V03-1" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-1">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="1405" xml:id="l1405">Arrête, pour ouïr non les justes douleurs</l>
             <l n="1406" xml:id="l1406">D'une reine en courroux, mais d'une mère en pleurs</l>
@@ -2581,7 +2589,7 @@
             <l n="1423" xml:id="l1423">N'ayant plus de ma part aucun sujet de crainte</l>
             <l n="1424" xml:id="l1424">Tu dois être au-dessus d'une si basse feinte.</l>
           </sp>
-          <sp xml:id="V03-2" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-2">
             <speaker>ORONTE.</speaker>
             <l n="1425" xml:id="l1425">Hé bien nous sommes seuls ; fondez-vous quelque espoir</l>
             <l n="1426" xml:id="l1426">Sur un aveu qui vient échauffer mon devoir ?</l>
@@ -2589,7 +2597,7 @@
             <l n="1428" xml:id="l1428">Jusques où doit aller le zèle de son père ;</l>
             <l n="1429" xml:id="l1429">Pour le faire régner je n'épargnerai rien.</l>
           </sp>
-          <sp xml:id="V03-3" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-3">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="1430" xml:id="l1430">Qu'il règne, j'y consens, mais ne perds pas le mien :</l>
             <l n="1431" xml:id="l1431">Laissez-lui la princesse avec la Bithynie ;</l>
@@ -2597,7 +2605,7 @@
             <l n="1433" xml:id="l1433">Près d'un roi désormais par moi-même abusé.</l>
             <l n="1434" xml:id="l1434">Ce sort est assez doux pour un fils supposé.</l>
           </sp>
-          <sp xml:id="V03-4" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-4">
             <speaker>ORONTE.</speaker>
             <l n="1435" xml:id="l1435">C'est beaucoup obtenir de qui veut sa ruine :</l>
             <l n="1436" xml:id="l1436">Mais je soupçonne fort la main qui l'assassine.</l>
@@ -2615,19 +2623,19 @@
             <l n="1448" xml:id="l1448">À celle que l'hymen de sa fille nous donne ;</l>
             <l n="1449" xml:id="l1449">On ne peut séparer ces deux trônes unis.</l>
           </sp>
-          <sp xml:id="V03-5" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-5">
             <speaker>ANTHIOCHIDE.</speaker>
-            <l n="1450" xml:id="l1450" part="I">Qu'attends-tu ?</l>
+            <l n="1450" part="I" xml:id="l1450">Qu'attends-tu ?</l>
           </sp>
-          <sp xml:id="V03-6" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-6">
             <speaker>ORONTE.</speaker>
             <l part="F">La douceur de voir régner mon fils.</l>
           </sp>
-          <sp xml:id="V03-7" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-7">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="1451" xml:id="l1451">Mais ce fils régnera sans connaître son père.</l>
           </sp>
-          <sp xml:id="V03-8" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-8">
             <speaker>ORONTE.</speaker>
             <l n="1452" xml:id="l1452">Qu'il règne il me suffit, c'est tout ce que j'espère.</l>
             <l n="1453" xml:id="l1453">Sera-t-il moins mon fils s'il ne me connaît pas ?</l>
@@ -2637,24 +2645,24 @@
             <l n="1457" xml:id="l1457">Se vante tous les soins qui lui servent d'appui,</l>
             <l n="1458" xml:id="l1458">Voit son sang sur le trône, et croit régner en lui.</l>
           </sp>
-          <sp xml:id="V03-9" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-9">
             <speaker>ANTHIOCHIDE.</speaker>
-            <l n="1459" xml:id="l1459" part="I">Mais tu seras toujours son sujet.</l>
+            <l n="1459" part="I" xml:id="l1459">Mais tu seras toujours son sujet.</l>
           </sp>
-          <sp xml:id="V03-10" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-10">
             <speaker>ORONTE.</speaker>
             <l part="F">Je veux l'être,</l>
             <l n="1460" xml:id="l1460">Pour voir en même temps sa reine et son maître.</l>
           </sp>
-          <sp xml:id="V03-11" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-11">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="1461" xml:id="l1461">Va, monstre d'impudence et d'infidélité.</l>
           </sp>
-          <sp xml:id="V03-12" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-12">
             <speaker>ORONTE.</speaker>
             <l n="1462" xml:id="l1462">Ma présence déplaît à votre majesté.</l>
           </sp>
-          <sp xml:id="V03-13" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-13">
             <speaker>ANTHIOCHIDE.</speaker>
             <l n="1463" xml:id="l1463">Arrête ; encor un coup en toi-même repasse</l>
             <l n="1464" xml:id="l1464">La honte et les périls qui suivent ton audace,</l>
@@ -2667,7 +2675,7 @@
             <l n="1471" xml:id="l1471">Pour de pareils forfaits au défaut de la terre</l>
             <l n="1472" xml:id="l1472">Leur redoutable main n'est jamais sans tonnerre.</l>
           </sp>
-          <sp xml:id="V03-14" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-14">
             <speaker>ORONTE.</speaker>
             <l n="1473" xml:id="l1473">Quelle honte pour moi de couronner mon fils ?</l>
             <l n="1474" xml:id="l1474">Appelez-vous trahir sa reine et son pays,</l>
@@ -2690,34 +2698,34 @@
             <l n="1491" xml:id="l1491">Et sans rien redouter du côté de la terre</l>
             <l n="1492" xml:id="l1492">Oser d'un front égal attendre le tonnerre.</l>
           </sp>
-          <sp xml:id="V03-15" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-15">
             <speaker>ANTHIOCHIDE.</speaker>
-            <l n="1493" xml:id="l1493" part="I">Crains encor pour ton fils, plus que les dieux.</l>
+            <l n="1493" part="I" xml:id="l1493">Crains encor pour ton fils, plus que les dieux.</l>
           </sp>
-          <sp xml:id="V03-16" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-16">
             <speaker>ORONTE.</speaker>
             <l part="M">Qui ?</l>
           </sp>
-          <sp xml:id="V03-17" who="ANTHIOCHIDE">
+          <sp who="ANTHIOCHIDE" xml:id="V03-17">
             <speaker>ANTHIOCHIDE.</speaker>
             <l part="F">Moi.</l>
           </sp>
-          <sp xml:id="V03-18" who="ORONTE">
+          <sp who="ORONTE" xml:id="V03-18">
             <speaker>ORONTE.</speaker>
             <l n="1494" xml:id="l1494">Avant la fin du jour il sera votre roi.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Tyridate, La Reine, Bérénice, Oronte.<listPerson type="configuration" xml:id="conf33"><person corresp="#TYRIDATE"/><person corresp="#LAREINE"/><person corresp="#BERENICE"/><person corresp="#ORONTE"/></listPerson></head>
-          <sp xml:id="V04-1" who="TYRIDATE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Tyridate, La Reine, Bérénice, Oronte.<listPerson type="configuration" xml:id="conf33"><person corresp="#TYRIDATE"/><person corresp="#ANTHIOCHIDE"/><person corresp="#BERENICE"/><person corresp="#ORONTE"/></listPerson></head>
+          <sp who="TYRIDATE" xml:id="V04-1">
             <speaker>TYRIDATE, à Oronte.</speaker>
             <l n="1495" xml:id="l1495">Sois témoin d'un destin que l'amitié suggère.</l>
           </sp>
-          <sp xml:id="V04-2" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="V04-2">
             <speaker>LA REINE.</speaker>
-            <l n="1496" xml:id="l1496" part="I">Hé bien mon fils...</l>
+            <l n="1496" part="I" xml:id="l1496">Hé bien mon fils...</l>
           </sp>
-          <sp xml:id="V04-3" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="V04-3">
             <speaker>TYRIDATE.</speaker>
             <l part="F">Quittez ce vain titre de mère.</l>
             <l n="1497" xml:id="l1497">Vos deux fils sont unis par de si fermes noeuds,</l>
@@ -2729,18 +2737,18 @@
             <l n="1503" xml:id="l1503">Sans attendre du roi le courroux légitime,</l>
             <l n="1504" xml:id="l1504">Si vous m'aimez, ma mort punira votre crime.</l>
           </sp>
-          <sp xml:id="V04-4" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="V04-4">
             <speaker>LA REINE.</speaker>
             <l n="1505" xml:id="l1505">Hé bien, meurs, fils ingrat, fils indigne du jour,</l>
             <l n="1506" xml:id="l1506">Qui reconnais si mal l'excès de mon amour ;</l>
             <l n="1507" xml:id="l1507">Pour ta punition désavoue une mère,</l>
             <l n="1508" xml:id="l1508">Et prends un étranger pour ton prince et ton frère ;</l>
-            <l n="1509" xml:id="l1509" part="I">J'y consens, mais...</l>
+            <l n="1509" part="I" xml:id="l1509">J'y consens, mais...</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE V. Le Roi, La Reine, Bérénice, Tyridate, Oronte.<listPerson type="configuration" xml:id="conf34"><person corresp="#LEROI"/><person corresp="#BERENICE"/><person corresp="#ORONTE"/><person corresp="#TYRIDATE"/></listPerson></head>
-          <sp xml:id="V05-1" who="LEROI">
+          <sp who="LEROI" xml:id="V05-1">
             <speaker>LE ROI, à la reine.</speaker>
             <l part="F">Perfide, enfin ta trahison</l>
             <l n="1510" xml:id="l1510">A versé son venin sur toute la maison ;</l>
@@ -2749,7 +2757,7 @@
             <l n="1513" xml:id="l1513">Mais frémis à l'objet de mon juste courroux.</l>
             <l n="1514" xml:id="l1514">Princesse, sa fureur a passé jusqu'à vous.</l>
           </sp>
-          <sp xml:id="V05-2" who="BERENICE">
+          <sp who="BERENICE" xml:id="V05-2">
             <speaker>BÉRÉNICE.</speaker>
             <l n="1515" xml:id="l1515">Dites que ses clartés ont passé dans mon âme :</l>
             <l n="1516" xml:id="l1516">Aussi plutôt la mort que cet hymen infâme,</l>
@@ -2760,17 +2768,17 @@
             <l n="1521" xml:id="l1521">Mais ce secret fatal si près de me trahir,</l>
             <l n="1522" xml:id="l1522">M'affranchit du devoir qui m'eût fait obéir.</l>
           </sp>
-          <sp xml:id="V05-3" who="LEROI">
+          <sp who="LEROI" xml:id="V05-3">
             <speaker>LE ROI.</speaker>
             <l n="1523" xml:id="l1523">Donc sur l'illusion des faveurs d'une mère</l>
             <l n="1524" xml:id="l1524">Vous rompez les traités faits avec votre père ;</l>
             <l n="1525" xml:id="l1525">Mon fils Ariarathe est indigne de vous.</l>
           </sp>
-          <sp xml:id="V05-4" who="BERENICE">
+          <sp who="BERENICE" xml:id="V05-4">
             <speaker>BÉRÉNICE.</speaker>
             <l n="1526" xml:id="l1526">S'il était votre fils il serait mon époux.</l>
           </sp>
-          <sp xml:id="V05-5" who="LEROI">
+          <sp who="LEROI" xml:id="V05-5">
             <speaker>LE ROI.</speaker>
             <l n="1527" xml:id="l1527">Qu'il soit donc votre époux, que rien ne vous retienne :</l>
             <l n="1528" xml:id="l1528">Je le tiens pour mon fils, ma foi vaut bien la sienne,</l>
@@ -2778,7 +2786,7 @@
             <l n="1530" xml:id="l1530">La nature est en moi suspecte et sans crédit.</l>
             <l n="1531" xml:id="l1531">Faut-il que mon rapport vous semble moins fidèle ?</l>
           </sp>
-          <sp xml:id="V05-6" who="BERENICE">
+          <sp who="BERENICE" xml:id="V05-6">
             <speaker>BÉRÉNICE.</speaker>
             <l n="1532" xml:id="l1532">Ne pouvant m'assurer ni sur vous ni sur elle,</l>
             <l n="1533" xml:id="l1533">Je doute, et dans ce doute, il suffit que mon coeur</l>
@@ -2787,7 +2795,7 @@
             <l n="1536" xml:id="l1536">Quand il faut déposer grandeur, repos, naissance,</l>
             <l n="1537" xml:id="l1537">Je frémis à l'objet d'un choix si hasardeux.</l>
           </sp>
-          <sp xml:id="V05-7" who="LEROI">
+          <sp who="LEROI" xml:id="V05-7">
             <speaker>LE ROI.</speaker>
             <l n="1538" xml:id="l1538">Dites plutôt d'un choix qui s'oppose à vos voeux.</l>
             <l n="1539" xml:id="l1539">Vous aimez Tyridate, et votre amour rebelle</l>
@@ -2796,91 +2804,91 @@
             <l n="1542" xml:id="l1542">Qui vous fait révolter contre votre devoir :</l>
             <l n="1543" xml:id="l1543">Vous l'aimez toutes deux ; il suffit : et ma haine</l>
             <l n="1544" xml:id="l1544">Trouve dans votre amour ma vengeance et sa peine.</l>
-            <l n="1545" xml:id="l1545" part="I">Qu'on l'ôte de leurs yeux.</l>
+            <l n="1545" part="I" xml:id="l1545">Qu'on l'ôte de leurs yeux.</l>
           </sp>
-          <sp xml:id="V05-8" who="ORONTE">
+          <sp who="ORONTE" xml:id="V05-8">
             <speaker>ORONTE.</speaker>
             <l part="F">Seigneur, c'est votre sang.</l>
           </sp>
-          <sp xml:id="V05-9" who="LEROI">
+          <sp who="LEROI" xml:id="V05-9">
             <speaker>LE ROI.</speaker>
             <l n="1546" xml:id="l1546">Le seul Ariarathe est digne de ce rang.</l>
           </sp>
-          <sp xml:id="V05-10" who="ORONTE">
+          <sp who="ORONTE" xml:id="V05-10">
             <speaker>ORONTE.</speaker>
-            <l n="1547" xml:id="l1547" part="I">Mais...</l>
+            <l n="1547" part="I" xml:id="l1547">Mais...</l>
           </sp>
-          <sp xml:id="V05-11" who="LEROI">
+          <sp who="LEROI" xml:id="V05-11">
             <speaker>LE ROI.</speaker>
             <l part="F">Mais Oronte, enfin je veux me satisfaire,</l>
-            <l n="1548" xml:id="l1548" part="I">Faites venir le prince.</l>
+            <l n="1548" part="I" xml:id="l1548">Faites venir le prince.</l>
           </sp>
-          <sp xml:id="V05-12" who="ORONTE">
+          <sp who="ORONTE" xml:id="V05-12">
             <speaker>ORONTE.</speaker>
             <l part="F">Agréable colère !</l>
-            <l n="1549" xml:id="l1549" part="I">Heureux, heureux, Oronte.</l>
+            <l n="1549" part="I" xml:id="l1549">Heureux, heureux, Oronte.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE VI. Arsinoé, La Roi, La Reine, Tyridate, Bérénice.<listPerson type="configuration" xml:id="conf35"><person corresp="#ARSINOE"/><person corresp="#LEROI"/><person corresp="#LAREINE"/><person corresp="#ORONTE"/><person corresp="#TYRIDATE"/><person corresp="#BERENICE"/></listPerson></head>
-          <sp xml:id="V06-1" who="ARSINOE">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE VI. Arsinoé, La Roi, La Reine, Tyridate, Bérénice.<listPerson type="configuration" xml:id="conf35"><person corresp="#ARSINOE"/><person corresp="#LEROI"/><person corresp="#ANTHIOCHIDE"/><person corresp="#ORONTE"/><person corresp="#TYRIDATE"/><person corresp="#BERENICE"/></listPerson></head>
+          <sp who="ARSINOE" xml:id="V06-1">
             <speaker>ARSINOÉ.</speaker>
             <l part="F">Ah ! Madame, ah ! Seigneur.</l>
           </sp>
-          <sp xml:id="V06-2" who="LEROI">
+          <sp who="LEROI" xml:id="V06-2">
             <speaker>LE ROI.</speaker>
             <l n="1550" xml:id="l1550">Quel étrange accident m'annonce ta douleur ?</l>
           </sp>
-          <sp xml:id="V06-3" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="V06-3">
             <speaker>ARSINOÉ.</speaker>
-            <l n="1551" xml:id="l1551" part="I">Ariarathe...</l>
+            <l n="1551" part="I" xml:id="l1551">Ariarathe...</l>
           </sp>
-          <sp xml:id="V06-4" who="LEROI">
+          <sp who="LEROI" xml:id="V06-4">
             <speaker>LE ROI.</speaker>
             <l part="M">Achève.</l>
           </sp>
-          <sp xml:id="V06-5" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="V06-5">
             <speaker>ARSINOÉ.</speaker>
             <l part="M">Est mort.</l>
           </sp>
-          <sp xml:id="V06-6" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="V06-6">
             <speaker>LA REINE.</speaker>
             <l part="F">Ô ! Ciel propice.</l>
           </sp>
-          <sp xml:id="V06-7" who="LEROI">
+          <sp who="LEROI" xml:id="V06-7">
             <speaker>LE ROI.</speaker>
-            <l n="1552" xml:id="l1552" part="I">Ah ! Cruelle.</l>
+            <l n="1552" part="I" xml:id="l1552">Ah ! Cruelle.</l>
           </sp>
-          <sp xml:id="V06-8" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="V06-8">
             <speaker>LA REINE.</speaker>
             <l part="F">Seigneur, les dieux me font justice.</l>
           </sp>
-          <sp xml:id="V06-9" who="LEROI">
+          <sp who="LEROI" xml:id="V06-9">
             <speaker>LE ROI.</speaker>
             <l n="1553" xml:id="l1553">C'est un coup de ta haine, et non de leur pouvoir,</l>
             <l n="1554" xml:id="l1554">Qui contre ta fureur arme mon désespoir.</l>
             <l n="1555" xml:id="l1555">Tu m'as ravi un fils, parricide exécrable ;</l>
             <l n="1556" xml:id="l1556">Choisis à ton forfait un supplice semblable.</l>
           </sp>
-          <sp xml:id="V06-10" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="V06-10">
             <speaker>ARSINOÉ.</speaker>
             <l n="1557" xml:id="l1557">N'accusez point, Seigneur, la reine de sa mort ;</l>
             <l n="1558" xml:id="l1558">Le ciel à d'autres mains réservait cet effort ;</l>
-            <l n="1559" xml:id="l1559" part="I">Euridice le perd.</l>
+            <l n="1559" part="I" xml:id="l1559">Euridice le perd.</l>
           </sp>
-          <sp xml:id="V06-11" who="LEROI">
+          <sp who="LEROI" xml:id="V06-11">
             <speaker>LE ROI.</speaker>
             <l part="M">Euridice !</l>
           </sp>
-          <sp xml:id="V06-12" who="ORONTE">
+          <sp who="ORONTE" xml:id="V06-12">
             <speaker>ORONTE.</speaker>
             <l part="F">Euridice !</l>
           </sp>
-          <sp xml:id="V06-13" who="TYRIDATE">
+          <sp who="TYRIDATE" xml:id="V06-13">
             <speaker>TYRIDATE.</speaker>
-            <l n="1560" xml:id="l1560" part="I">Dieux !</l>
+            <l n="1560" part="I" xml:id="l1560">Dieux !</l>
           </sp>
-          <sp xml:id="V06-14" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="V06-14">
             <speaker>ARSINOÉ.</speaker>
             <l part="F">Elle est de sa mort l'innocente complice ;</l>
             <l n="1561" xml:id="l1561">Mais las ! En quel état l'a réduit ce malheur ?</l>
@@ -2888,13 +2896,13 @@
             <l n="1563" xml:id="l1563">Plus morte mille fois que le mort qu'elle embrasse,</l>
             <l n="1564" xml:id="l1564">Elle semble accuser le ciel de sa disgrâce ;</l>
             <l n="1565" xml:id="l1565">Puis tout à coup criant, cher frère, cher amant ;</l>
-            <l n="1566" xml:id="l1566" part="I">Furieuse elle court...</l>
+            <l n="1566" part="I" xml:id="l1566">Furieuse elle court...</l>
           </sp>
-          <sp xml:id="V06-15" who="LEROI">
+          <sp who="LEROI" xml:id="V06-15">
             <speaker>LE ROI.</speaker>
             <l part="F">Parle plus clairement.</l>
           </sp>
-          <sp xml:id="V06-16" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="V06-16">
             <speaker>ARSINOÉ.</speaker>
             <l n="1567" xml:id="l1567">Le prince allait rêvant au bruit de sa naissance</l>
             <l n="1568" xml:id="l1568">Avec son Euridice en faire confidence,</l>
@@ -2913,14 +2921,14 @@
             <l n="1581" xml:id="l1581">L'enfonce dans son sein, tombe, et d'un ton changé,</l>
             <l n="1582" xml:id="l1582">Euridice (dit-il) votre amant est vengé.</l>
             <l n="1583" xml:id="l1583">À ces mots revenant de sa douleur extrême</l>
-            <l n="1584" xml:id="l1584">Avec un  grand hélas elle tombe de même.</l>
-            <l n="1585" xml:id="l1585" part="I">On accourt à ce bruit, nous entrons.</l>
+            <l n="1584" xml:id="l1584">Avec un grand hélas elle tombe de même.</l>
+            <l n="1585" part="I" xml:id="l1585">On accourt à ce bruit, nous entrons.</l>
           </sp>
-          <sp xml:id="V06-17" who="ORONTE">
+          <sp who="ORONTE" xml:id="V06-17">
             <speaker>ORONTE.</speaker>
             <l part="F">Justes dieux !</l>
           </sp>
-          <sp xml:id="V06-18" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="V06-18">
             <speaker>ARSINOÉ.</speaker>
             <l n="1586" xml:id="l1586">Fut-il jamais objet plus touchant sous les cieux ?</l>
             <l n="1587" xml:id="l1587">Le prince tout mourant secourait Euridice,</l>
@@ -2940,9 +2948,9 @@
             <l n="1601" xml:id="l1601">Vivre avec vous sans vous, aimer et n'aimer pas ;</l>
             <l n="1602" xml:id="l1602">Mon coeur à ses rigueurs préfère le trépas.</l>
             <l n="1603" xml:id="l1603">Euridice... Ce mot lui coupe la parole ;</l>
-            <l n="1604" xml:id="l1604" part="I">Il meurt.</l>
+            <l n="1604" part="I" xml:id="l1604">Il meurt.</l>
           </sp>
-          <sp xml:id="V06-19" who="LEROI">
+          <sp who="LEROI" xml:id="V06-19">
             <speaker>LE ROI.</speaker>
             <l part="F">Et dans sa mort ce qui plus me désole,</l>
             <stage type="[N/A]">S'adressant à la reine. </stage>
@@ -2953,15 +2961,15 @@
             <l n="1609" xml:id="l1609">Reine as-tu fait périr ou son fils, ou le mien ?</l>
             <l n="1610" xml:id="l1610">Pleures-tu pour mon fils, Oronte, ou pour le tien ?</l>
           </sp>
-          <sp xml:id="V06-20" who="ORONTE">
+          <sp who="ORONTE" xml:id="V06-20">
             <speaker>ORONTE.</speaker>
-            <l n="1611" xml:id="l1611" part="I">Seigneur.</l>
+            <l n="1611" part="I" xml:id="l1611">Seigneur.</l>
           </sp>
-          <sp xml:id="V06-21" who="LEROI">
+          <sp who="LEROI" xml:id="V06-21">
             <speaker>LE ROI.</speaker>
             <l part="M">Parle.</l>
           </sp>
-          <sp xml:id="V06-22" who="ORONTE">
+          <sp who="ORONTE" xml:id="V06-22">
             <speaker>ORONTE.</speaker>
             <l part="F">Seigneur, ces soupirs et ces larmes</l>
             <l n="1612" xml:id="l1612">D'une forte douleur vaines et faibles armes</l>
@@ -2969,9 +2977,9 @@
             <l n="1614" xml:id="l1614">Vous qui savez par qui ses jours vous sont ravis,</l>
             <stage type="[N/A]">Montrant la reine.</stage>
             <l n="1615" xml:id="l1615">Vous qui pouvez punir ; qui voyez la coupable,</l>
-            <l n="1616" xml:id="l1616" part="I">Pour venger votre fils commandez...</l>
+            <l n="1616" part="I" xml:id="l1616">Pour venger votre fils commandez...</l>
           </sp>
-          <sp xml:id="V06-23" who="ARSINOE">
+          <sp who="ARSINOE" xml:id="V06-23">
             <speaker>ARSINOÉ.</speaker>
             <l part="F">Exécrable...</l>
             <l n="1617" xml:id="l1617">Seigneur écoutez tout. Malgré tous ses efforts</l>
@@ -2981,15 +2989,15 @@
             <l n="1621" xml:id="l1621">C'est lui qui d'Euridice a dissipé l'erreur,</l>
             <l n="1622" xml:id="l1622">Et qui d'Ariarathe a causé le malheur.</l>
           </sp>
-          <sp xml:id="V06-24" who="LEROI">
+          <sp who="LEROI" xml:id="V06-24">
             <speaker>LE ROI lit.</speaker>
             <l n="1623" xml:id="l1623">Euridice, ma main te l'apprend à regret,</l>
             <l n="1624" xml:id="l1624">Le prince Ariarathe est mon fils et ton frère,</l>
             <l n="1625" xml:id="l1625">Évite son hymen, mais ménage un secret</l>
             <l n="1626" xml:id="l1626">Qui coûte le jour à ta mère.</l>
-            <l n="1627" xml:id="l1627" part="I">Barsine.</l>
+            <l n="1627" part="I" xml:id="l1627">Barsine.</l>
           </sp>
-          <sp xml:id="V06-25" who="ORONTE">
+          <sp who="ORONTE" xml:id="V06-25">
             <speaker>ORONTE.</speaker>
             <l part="F">Ô ! Désespoir, Barsine c'est donc toi</l>
             <l n="1628" xml:id="l1628">Qui m'enlèves mon fils sur le point d'être roi,</l>
@@ -3003,30 +3011,30 @@
             <l n="1636" xml:id="l1636">J'ai voulu pour mon fils détruire ta maison.</l>
             <l n="1637" xml:id="l1637">Apprête des tourments à ce malheureux père,</l>
             <l n="1638" xml:id="l1638">Sa mort m'a mis au point de braver ta colère.</l>
-            <l n="1639" xml:id="l1639" part="I">Cher fils.</l>
+            <l n="1639" part="I" xml:id="l1639">Cher fils.</l>
           </sp>
-          <sp xml:id="V06-26" who="LEROI">
+          <sp who="LEROI" xml:id="V06-26">
             <speaker>LE ROI.</speaker>
             <l part="F">Qui ne serait touché de son malheur ?</l>
-            <l n="1640" xml:id="l1640" part="I">Où t'en vas-tu ?</l>
+            <l n="1640" part="I" xml:id="l1640">Où t'en vas-tu ?</l>
           </sp>
-          <sp xml:id="V06-27" who="ORONTE">
+          <sp who="ORONTE" xml:id="V06-27">
             <speaker>ORONTE.</speaker>
             <l part="M">Mourir.</l>
           </sp>
-          <sp xml:id="V06-28" who="LEROI">
+          <sp who="LEROI" xml:id="V06-28">
             <speaker>LE ROI.</speaker>
             <l part="F">Madame en ma faveur.</l>
           </sp>
-          <sp xml:id="V06-29" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="V06-29">
             <speaker>LA REINE.</speaker>
             <l n="1641" xml:id="l1641">Je pardonne aisément ce qu'a fait la nature.</l>
           </sp>
-          <sp xml:id="V06-30" who="LEROI">
+          <sp who="LEROI" xml:id="V06-30">
             <speaker>LE ROI.</speaker>
             <l n="1642" xml:id="l1642">Vis Oronte avec moi, la reine t'en conjure.</l>
           </sp>
-          <sp xml:id="V06-31" who="ORONTE">
+          <sp who="ORONTE" xml:id="V06-31">
             <speaker>ORONTE.</speaker>
             <l n="1643" xml:id="l1643">Moi qui n'avais vécu que pour le voir régner,</l>
             <l n="1644" xml:id="l1644">Lorsque mon fils est mort je pourrais m'épargner ;</l>
@@ -3036,24 +3044,24 @@
             <l n="1648" xml:id="l1648">Cet espoir m'a fait vivre, et je tombe avec lui :</l>
             <l n="1649" xml:id="l1649">Je le suis pour ma gloire et pour votre vengeance.</l>
           </sp>
-          <sp xml:id="V06-32" who="LEROI">
+          <sp who="LEROI" xml:id="V06-32">
             <speaker>LE ROI aux Gardes.</speaker>
-            <l n="1650" xml:id="l1650" part="I">Sauvez-le.</l>
+            <l n="1650" part="I" xml:id="l1650">Sauvez-le.</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
-          <head>SCÈNE DERNIÈRE. Arsinoé, Le Roi, La Reine, Tyridate, Bérénice.<listPerson type="configuration" xml:id="conf36"><person corresp="#LEROI"/><person corresp="#LAREINE"/><person corresp="#BERENICE"/><person corresp="#TYRIDATE"/><person corresp="#ARSINOE"/></listPerson></head>
-          <sp xml:id="V07-1" who="LEROI">
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE DERNIÈRE. Arsinoé, Le Roi, La Reine, Tyridate, Bérénice.<listPerson type="configuration" xml:id="conf36"><person corresp="#LEROI"/><person corresp="#ANTHIOCHIDE"/><person corresp="#BERENICE"/><person corresp="#TYRIDATE"/><person corresp="#ARSINOE"/></listPerson></head>
+          <sp who="LEROI" xml:id="V07-1">
             <speaker>LE ROI, continue.</speaker>
             <l part="F">Pourrez-vous oubliant mon offense</l>
             <l n="1651" xml:id="l1651">Donner ce que j'ai fait contre vous aujourd'hui</l>
             <l n="1652" xml:id="l1652">À l'amour des vertus qu'on admirait en lui.</l>
           </sp>
-          <sp xml:id="V07-2" who="LAREINE">
+          <sp who="ANTHIOCHIDE" xml:id="V07-2">
             <speaker>LA REINE.</speaker>
             <l n="1653" xml:id="l1653">Oublions le passé ; songez à Tyridate.</l>
           </sp>
-          <sp xml:id="V07-3" who="LEROI">
+          <sp who="LEROI" xml:id="V07-3">
             <speaker>LE ROI, à Bérénice.</speaker>
             <l n="1654" xml:id="l1654">Princesse, en attendant l'aveu de Mithridate,</l>
             <l n="1655" xml:id="l1655">Pour un hymen qui doit borner notre douleur,</l>
@@ -3061,7 +3069,7 @@
             <l n="1657" xml:id="l1657">Bien que ce fils vivant ait causé vos alarmes ;</l>
             <l n="1658" xml:id="l1658">Sa mort me semble encor trop digne de vos larmes.</l>
           </sp>
-          <sp xml:id="V07-4" who="BERENICE">
+          <sp who="BERENICE" xml:id="V07-4">
             <speaker>BÉRÉNICE.</speaker>
             <l n="1659" xml:id="l1659">Il avait des vertus dignes d'un autre sort ;</l>
             <l n="1660" xml:id="l1660">Et je crois mon bonheur trop payé par sa mort.</l>

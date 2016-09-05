@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Don Quichotte de la Manche</title><title type="sub">, comédie.</title>
-        <author born="161 ?" born_location="" death="1675" death_location="" academie=""><surname>Guérin de Bouscal</surname><forename> Daniel</forename></author>
+        <author born="161 ?" born_location="" death="1675" death_location="" academie=""><surname>Guérin de Bouscal</surname>, <forename> Daniel</forename></author>
       </titleStmt>
       <publicationStmt>
         <editor>Texte établi par Kevin Annelot (Mémoire de master I sous la direction de M. Georges Forestier U.F.R de Littérature française et comparée, 2011-2012.)</editor>
@@ -64,21 +66,21 @@
       <castList>
         <head>LES ACTEURS</head>
         <castItem><role xml:id="DONQUICHOTTE" id="DON QUICHOTTE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">DON QUICHOTTE</role>, Chevalier errant.</castItem>
-        <castItem><role xml:id="SANCHOPANCE" id="SANCHO-PANCE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">SANCHO PANCE</role>, son Écuyer.</castItem>
-        <castItem><role xml:id="CARDENIE" id="CARDENIE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">CARDENIE</role>.</castItem>
+        <castItem><role xml:id="SANCHO" id="SANCHO-PANCE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">SANCHO PANCE</role>, son Écuyer.</castItem>
+        <castItem><role xml:id="CARDENIE" id="CARDENIE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">CARDENIE</role> [<role xml:id="LECUYER">l’écuyer de la reine Miconmicon</role>].</castItem>
         <castItem><role xml:id="LUCINDE" id="LUCINDE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">LUCINDE</role>.</castItem>
         <castItem><role xml:id="DONFERNANDE" id="DON FERNANDE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">DON FERNANDE</role>.</castItem>
-        <castItem><role xml:id="DOROTEE" id="DOROTEE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">DOROTEE</role>.</castItem>
+        <castItem><role xml:id="DOROTEE" id="DOROTEE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">DOROTEE</role> [<role xml:id="LAREINE">la Reine de Miconmicon</role>].</castItem>
         <castItem><role xml:id="DONLOPE" id="DON LOPE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">DON LOPE</role>, ami de Don Quichotte.</castItem>
         <castItem><role xml:id="BARBERO" id="BARBERO" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">BARBERO</role>, compagnon de Don Lope.</castItem>
         <castItem><role xml:id="LACOMTESSETRIFALDE" id="LA COMTESSE TRIFALDE" sex="1" type="H" statut="comte" age="A" stat_amour="néant">LA COMTESSE TRIFALDE</role>, et deux de ses compagnes.</castItem>
         <castItem><role xml:id="DEUXTAMBOURS" id="DEUX TAMBOURS" sex="9" type="H" statut="tambour" age="A" stat_amour="néant">DEUX TAMBOURS</role>.</castItem>
         <castItem><role xml:id="QUATREDEMONS" id="QUATRE DÉMONS" sex="9" type="H" statut="démon" age="A" stat_amour="néant">QUATRE DÉMONS</role>.</castItem>
-        <castItem><role xml:id="UNBARBIER" id="UN BARBIER" sex="1" type="H" statut="barbier" age="A" stat_amour="néant">UN BARBIER</role>.</castItem>
+        <castItem><role xml:id="LEBARBIER" id="UN BARBIER" sex="1" type="H" statut="barbier" age="A" stat_amour="néant">UN BARBIER</role>.</castItem>
         <castItem>
-          <role xml:id="DEUXSUIVANTSDEDONFERNANDE." id="DEUX SUIVANTS" sex="1" type="H" statut="suivant" age="A" stat_amour="néant">DEUX SUIVANTS DE DON FERNANDE.</role>
+          <role xml:id="FERNANDEVALET" id="DEUX SUIVANTS" sex="1" type="H" statut="suivant" age="A" stat_amour="néant">DEUX SUIVANTS DE DON FERNANDE.</role>
         </castItem>
-        <castItem><role xml:id="DEUXARCHERS" id="DEUX ARCHERS" sex="1" type="H" statut="archer" age="A" stat_amour="néant">DEUX ARCHERS</role>.</castItem>
+        <castItem><role xml:id="ARCHER1" id="DEUX ARCHERS" sex="1" type="H" statut="archer" age="A" stat_amour="néant" n="archer 1">DEUX ARCHERS</role>.<role xml:id="ARCHER2" n="archer 2"/></castItem>
       </castList>
       <set location="Sierre Morena" country="Espagne" periode="XVIème" link="">La scène est dans une Taverne près de la Sierra Morena en Espagne.</set>
     </front>
@@ -1013,12 +1015,12 @@
           </sp>
         </div2>
         <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Don Lope, Dorotée, Reine de DE MiconMicon, son Écuyer, Cardénie.<listPerson type="configuration" xml:id="conf7"><person corresp="#DONLOPE"/><person corresp="#REINEDEMICONMICON"/><person corresp="#DONQUICHOTTE"/><person corresp="#CARDENIE"/><person corresp="#SANCHO"/><person corresp="#DOROTEE"/></listPerson></head>
+          <head>SCÈNE II. Don Lope, Dorotée, Reine de DE MiconMicon, son Écuyer, Cardénie.<listPerson type="configuration" xml:id="conf7"><person corresp="#DONLOPE"/><person corresp="#LAREINE"/><person corresp="#DONQUICHOTTE"/><person corresp="#CARDENIE"/><person corresp="#SANCHO"/></listPerson></head>
           <sp xml:id="II02-1" who="DONLOPE">
             <speaker>DON LOPE.</speaker>
             <l n="482" xml:id="l482" part="I">Jetez-vous à ses pieds.</l>
           </sp>
-          <sp xml:id="II02-2" who="REINEDEMICONMICON">
+          <sp xml:id="II02-2" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">Oui c'est bien la raison.</l>
             <l n="483" xml:id="l483">Fameux restaurateur de la chevalerie</l>
@@ -1028,7 +1030,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l part="F">Levez-vous je vous prie.</l>
           </sp>
-          <sp xml:id="II02-4" who="REINEDEMICONMICON">
+          <sp xml:id="II02-4" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="485" xml:id="l485">Je ne me lève point.</l>
           </sp>
@@ -1036,7 +1038,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l part="M">Je fuis.</l>
           </sp>
-          <sp xml:id="II02-6" who="REINEDEMICONMICON">
+          <sp xml:id="II02-6" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">Écoutez-moi.</l>
           </sp>
@@ -1044,7 +1046,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l n="486" xml:id="l486" part="I">C'est trop, vous vous moquez.</l>
           </sp>
-          <sp xml:id="II02-8" who="REINEDEMICONMICON">
+          <sp xml:id="II02-8" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">Je fais ce que je dois.</l>
           </sp>
@@ -1052,7 +1054,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l n="487" xml:id="l487" part="I">Vous choquez votre rang.</l>
           </sp>
-          <sp xml:id="II02-10" who="REINEDEMICONMICON">
+          <sp xml:id="II02-10" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">Je demande une grâce.</l>
           </sp>
@@ -1060,7 +1062,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l n="488" xml:id="l488" part="I">Madame levez-vous.</l>
           </sp>
-          <sp xml:id="II02-12" who="REINEDEMICONMICON">
+          <sp xml:id="II02-12" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">Je sais que je vous lasse ;</l>
             <l n="489" xml:id="l489">Mais je ne puis m'ôter de ces sacrés genoux,</l>
@@ -1072,7 +1074,7 @@
             <l n="492" xml:id="l492">Contre qui que ce soit, excepté ma maîtresse,</l>
             <l n="493" xml:id="l493">Vous pouvez librement disposer de mon bras.</l>
           </sp>
-          <sp xml:id="II02-14" who="REINEDEMICONMICON">
+          <sp xml:id="II02-14" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="494" xml:id="l494">Sans ces conditions je ne le voudrais pas.</l>
           </sp>
@@ -1106,7 +1108,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l part="M">Tais-toi.</l>
           </sp>
-          <sp xml:id="II02-22" who="REINEDEMICONMICON">
+          <sp xml:id="II02-22" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">La faveur que j'espère</l>
             <l n="500" xml:id="l500">Est de me voir remise au trône de mon père,</l>
@@ -1124,7 +1126,7 @@
             <l n="508" xml:id="l508">Vous a fait rencontrer ce désert effroyable,</l>
             <l n="509" xml:id="l509">Où j'imite Amadis depuis deux ou trois jours.</l>
           </sp>
-          <sp xml:id="II02-24" who="REINEDEMICONMICON">
+          <sp xml:id="II02-24" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="510" xml:id="l510" part="I">Je suis fille du Roi de....</l>
           </sp>
@@ -1137,7 +1139,7 @@
             <l n="514" xml:id="l514">Et que vous descendez du grand Miconmicon ;</l>
             <l n="515" xml:id="l515">Les extrêmes malheurs renversent la mémoire.</l>
           </sp>
-          <sp xml:id="II02-26" who="REINEDEMICONMICON">
+          <sp xml:id="II02-26" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="516" xml:id="l516">Il est vrai ; mais pourtant poursuivons notre histoire,</l>
             <l n="517" xml:id="l517">Le grand Miconmicon fut donc mon père et Roi,</l>
@@ -1176,7 +1178,7 @@
             <speaker>SANCHO.</speaker>
             <l n="548" xml:id="l548">Vous vous trompez, Madame, il vous dit Don Quichotte.</l>
           </sp>
-          <sp xml:id="II02-28" who="REINEDEMICONMICON">
+          <sp xml:id="II02-28" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="549" xml:id="l549" part="I">Il est vrai.</l>
           </sp>
@@ -1188,7 +1190,7 @@
             <speaker>DON LOPE.</speaker>
             <l part="F">Et quel couple de fous.</l>
           </sp>
-          <sp xml:id="II02-31" who="REINEDEMICONMICON">
+          <sp xml:id="II02-31" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="550" xml:id="l550">Il me le dépeignit du tout semblable à vous,</l>
             <l n="551" xml:id="l551">Haut, maigre, droit, bien fait du corps et du visage,</l>
@@ -1205,7 +1207,7 @@
             <speaker>SANCHO.</speaker>
             <l n="557" xml:id="l557">Pour la marque et le poil j'en réponds.</l>
           </sp>
-          <sp xml:id="II02-34" who="REINEDEMICONMICON">
+          <sp xml:id="II02-34" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="558" xml:id="l558" part="I">On vous croit.</l>
           </sp>
@@ -1213,7 +1215,7 @@
             <speaker>SANCHO.</speaker>
             <l part="M">Mais elle est à côté.</l>
           </sp>
-          <sp xml:id="II02-36" who="REINEDEMICONMICON">
+          <sp xml:id="II02-36" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">N'importe où qu'elle soit,</l>
             <l n="559" xml:id="l559">C'est toujours une marque, entre amis peu de chose</l>
@@ -1227,7 +1229,7 @@
             <speaker>CARDENIE.</speaker>
             <l part="F">Ah le plaisant discours.</l>
           </sp>
-          <sp xml:id="II02-39" who="REINEDEMICONMICON">
+          <sp xml:id="II02-39" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="562" xml:id="l562">Mon père dit encore que si par ce secours</l>
             <l n="563" xml:id="l563">J'étais, comme il croyait, remise dans ma terre,</l>
@@ -1246,7 +1248,7 @@
             <l n="570" xml:id="l570">Sur mon Dieu tout va bien ; mais je veux vous prier</l>
             <l n="571" xml:id="l571">De conclure l'affaire, et de me donner l'île.</l>
           </sp>
-          <sp xml:id="II02-42" who="REINEDEMICONMICON">
+          <sp xml:id="II02-42" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="572" xml:id="l572">Mon père mourut donc, je quittai notre ville</l>
             <l n="573" xml:id="l573">Avec plusieurs des miens, dont la fidélité</l>
@@ -1280,7 +1282,7 @@
             <speaker>DON LOPE.</speaker>
             <l n="599" xml:id="l599">D'où peut-elle tirer les discours qu'elle enfile ?</l>
           </sp>
-          <sp xml:id="II02-44" who="REINEDEMICONMICON">
+          <sp xml:id="II02-44" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="600" xml:id="l600">Étant sortis de l'eau nous entrons dans la ville,</l>
             <l n="601" xml:id="l601">Je m'informai de vous, un chacun vous connaît,</l>
@@ -1335,7 +1337,7 @@
             <l n="633" xml:id="l633">Et ne désirez pas qu'une infidélité</l>
             <l n="634" xml:id="l634">Témoigne ma faiblesse à la postérité.</l>
           </sp>
-          <sp xml:id="II02-50" who="REINEDEMICONMICON">
+          <sp xml:id="II02-50" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="635" xml:id="l635">Ne vous contraignez point mon désir est le vôtre.</l>
           </sp>
@@ -1363,7 +1365,7 @@
             <l n="652" xml:id="l652">Misérable damné, voilà bien du haut style,</l>
             <l n="653" xml:id="l653" part="I">Ah n'était le respect de Madame.</l>
           </sp>
-          <sp xml:id="II02-53" who="REINEDEMICONMICON">
+          <sp xml:id="II02-53" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l part="F">Arrêtez.</l>
           </sp>
@@ -1427,7 +1429,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l part="F">Ils seraient superflus.</l>
           </sp>
-          <sp xml:id="II02-63" who="REINEDEMICONMICON">
+          <sp xml:id="II02-63" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="683" xml:id="l683">Sanche ne presse plus ce miroir de constance,</l>
             <l n="684" xml:id="l684">J'approuve son refus et sa persévérance,</l>
@@ -1450,7 +1452,7 @@
             <l n="694" xml:id="l694">Vous nous obligez trop, aussi je vous promets</l>
             <l n="695" xml:id="l695">De n'épargner pour vous ni mon sang, ni ma vie.</l>
           </sp>
-          <sp xml:id="II02-66" who="REINEDEMICONMICON">
+          <sp xml:id="II02-66" who="LAREINE">
             <speaker>REINE DE MICONMICON.</speaker>
             <l n="696" xml:id="l696">Pour accomplir l'effet d'une si noble envie,</l>
             <l n="697" xml:id="l697" part="I">Il faut bientôt partir.</l>
@@ -1745,8 +1747,8 @@
           </sp>
         </div2>
         <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Premier valet de Fernande, Fernande, Lucinde.<listPerson type="configuration" xml:id="conf10"><person corresp="#LEVALET"/><person corresp="#DONFERNANDE"/><person corresp="#LUCINDE"/></listPerson></head>
-          <sp xml:id="III02-1" who="LEVALET">
+          <head>SCÈNE II. Premier valet de Fernande, Fernande, Lucinde.<listPerson type="configuration" xml:id="conf10"><person corresp="#FERNANDEVALET"/><person corresp="#DONFERNANDE"/><person corresp="#LUCINDE"/></listPerson></head>
+          <sp xml:id="III02-1" who="FERNANDEVALET">
             <speaker>LE VALET.</speaker>
             <l n="801" xml:id="l801" part="I">Monsieur on vous attend.</l>
           </sp>
@@ -1754,7 +1756,7 @@
             <speaker>DON FERNANDE.</speaker>
             <l part="F">Aurons-nous compagnie ?</l>
           </sp>
-          <sp xml:id="III02-3" who="LEVALET">
+          <sp xml:id="III02-3" who="FERNANDEVALET">
             <speaker>LE VALET.</speaker>
             <l n="802" xml:id="l802">Un jeune Chevalier qu'on nomme Cardenie.</l>
           </sp>
@@ -1762,7 +1764,7 @@
             <speaker>LUCINDE.</speaker>
             <l n="803" xml:id="l803" part="I">Qu'on nomme.</l>
           </sp>
-          <sp xml:id="III02-5" who="LEVALET">
+          <sp xml:id="III02-5" who="FERNANDEVALET">
             <speaker>LE VALET.</speaker>
             <l part="F">Cardenie, arrivait comme nous.</l>
           </sp>
@@ -1774,7 +1776,7 @@
             <speaker>LUCINDE.</speaker>
             <l part="F">Il est vrai qu'il m'est doux.</l>
           </sp>
-          <sp xml:id="III02-8" who="LEVALET">
+          <sp xml:id="III02-8" who="FERNANDEVALET">
             <speaker>LE VALET.</speaker>
             <l n="805" xml:id="l805">Il conduit une Dame assez bien ajustée ;</l>
             <l n="806" xml:id="l806" part="I">Mais belle au dernier point.</l>
@@ -1783,7 +1785,7 @@
             <speaker>DON FERNANDE.</speaker>
             <l part="M">Son nom ?</l>
           </sp>
-          <sp xml:id="III02-10" who="LEVALET">
+          <sp xml:id="III02-10" who="FERNANDEVALET">
             <speaker>LE VALET.</speaker>
             <l part="F">C'est Dorotée.</l>
           </sp>
@@ -1791,7 +1793,7 @@
             <speaker>DON FERNANDE.</speaker>
             <l n="807" xml:id="l807" part="I">C'est.</l>
           </sp>
-          <sp xml:id="III02-12" who="LEVALET">
+          <sp xml:id="III02-12" who="FERNANDEVALET">
             <speaker>LE VALET.</speaker>
             <l part="M">Dorotée.</l>
           </sp>
@@ -2216,7 +2218,7 @@
         <head>ACTE IV</head>
         <stage type="[N/A]">FERNANDE, LUCINDE, CARDENIE, DOROTEE, DON QUICHOTTE, SANCHO, DON LOPE, et c.</stage>
         <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf15"><person corresp="#DONFERNANDE"/><person corresp="#CARDENIE"/><person corresp="#LUCINDE"/><person corresp="#FERNANDE"/><person corresp="#DOROTEE"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf15"><person corresp="#DONFERNANDE"/><person corresp="#CARDENIE"/><person corresp="#LUCINDE"/><person corresp="#DOROTEE"/></listPerson></head>
           <sp xml:id="IV01-1" who="DONFERNANDE">
             <speaker>DON FERNANDE.</speaker>
             <l n="977" xml:id="l977">Je vous l'ai déjà dit à ma confusion,</l>
@@ -2276,7 +2278,7 @@
             <speaker>LUCINDE.</speaker>
             <l n="998" xml:id="l998">Je vous cède, Seigneur, et ne réplique point.</l>
           </sp>
-          <sp xml:id="IV01-12" who="FERNANDE">
+          <sp xml:id="IV01-12" who="DONFERNANDE">
             <speaker>FERNANDE, se tournant vers Dorotée.</speaker>
             <l n="999" xml:id="l999">Et vous dont la confiance aggrave ma faiblesse,</l>
             <l n="1000" xml:id="l1000">Parfaite Dorotée, adorable maîtresse,</l>
@@ -2557,7 +2559,7 @@
           </sp>
         </div2>
         <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Deux archers, Le Barbier.<listPerson type="configuration" xml:id="conf18"><person corresp="#LEBARBIER"/><person corresp="#SANCHO"/><person corresp="#UNARCHER"/><person corresp="#DONQUICHOTTE"/><person corresp="#DONFERNANDE"/><person corresp="#CARDENIE"/><person corresp="#DONLOPE"/><person corresp="#LUCINDE"/><person corresp="#LAREINE"/><person corresp="#AUTREARCHER"/><person corresp="#PREMIERARCHER"/><person corresp="#lesARCHERS"/><person corresp="#DEUXARCHERS"/></listPerson></head>
+          <head>SCÈNE IV. Deux archers, Le Barbier.<listPerson type="configuration" xml:id="conf18"><person corresp="#LEBARBIER"/><person corresp="#SANCHO"/><person corresp="#DONQUICHOTTE"/><person corresp="#DONFERNANDE"/><person corresp="#CARDENIE"/><person corresp="#DONLOPE"/><person corresp="#LUCINDE"/><person corresp="#LAREINE"/><person corresp="#ARCHER1"/><person corresp="#ARCHER2"/></listPerson></head>
           <sp xml:id="IV04-1" who="LEBARBIER">
             <speaker>LE BARBIER, poursuivant, et dit aux Archers.</speaker>
             <l n="1119" xml:id="l1119">Messieurs soyez témoins de cette violence,</l>
@@ -2568,7 +2570,7 @@
             <speaker>SANCHO.</speaker>
             <l n="1122" xml:id="l1122" part="I">Vous vous trompez Barbier.</l>
           </sp>
-          <sp xml:id="IV04-3" who="UNARCHER">
+          <sp xml:id="IV04-3" who="ARCHER1">
             <speaker>UN DES ARCHERS.</speaker>
             <l part="F">Il faut voir ce que c'est.</l>
           </sp>
@@ -2606,7 +2608,7 @@
             <speaker>SANCHO.</speaker>
             <l n="1134" xml:id="l1134">En fin c'est un armet, cela se touche au doigt.</l>
           </sp>
-          <sp xml:id="IV04-11" who="UNARCHER">
+          <sp xml:id="IV04-11" who="ARCHER1">
             <speaker>UN DES ARCHERS.</speaker>
             <l n="1135" xml:id="l1135" part="I">C'est sans doute une fourbe.</l>
           </sp>
@@ -2626,7 +2628,7 @@
             <speaker>SANCHO.</speaker>
             <l part="F">Ce pauvre Barbier tremble.</l>
           </sp>
-          <sp xml:id="IV04-16" who="UNARCHER">
+          <sp xml:id="IV04-16" who="ARCHER1">
             <speaker>UN DES ARCHERS.</speaker>
             <l n="1137" xml:id="l1137">Si nous étions en nombre un peu moins inégal,</l>
             <l n="1138" xml:id="l1138">Nous vous ferions bien voir que vous parlez fort mal ;</l>
@@ -2652,15 +2654,15 @@
             <speaker>DON FERNANDE.</speaker>
             <l n="1146" xml:id="l1146">Songez que vous parlez au vaillant Don Quichotte.</l>
           </sp>
-          <sp xml:id="IV04-21" who="UNARCHER">
+          <sp xml:id="IV04-21" who="ARCHER1">
             <speaker>UN DES ARCHERS.</speaker>
             <l n="1147" xml:id="l1147" part="I">C'est lui que nous cherchons.</l>
           </sp>
-          <sp xml:id="IV04-22" who="AUTREARCHER">
+          <sp xml:id="IV04-22" who="ARCHER2">
             <speaker>L'AUTRE ARCHER.</speaker>
             <l part="F">J'ai pouvoir de le prendre.</l>
           </sp>
-          <sp xml:id="IV04-23" who="PREMIERARCHER">
+          <sp xml:id="IV04-23" who="ARCHER1">
             <speaker>LE I. ARCHER.</speaker>
             <l n="1148" xml:id="l1148" part="I">Secours à la Justice.</l>
           </sp>
@@ -2668,7 +2670,7 @@
             <speaker>DON QUICHOTTE.</speaker>
             <l part="F">Osez-vous l'entreprendre ?</l>
           </sp>
-          <sp xml:id="IV04-25" who="UNARCHER">
+          <sp xml:id="IV04-25" who="ARCHER1">
             <speaker>UN DES ARCHERS.</speaker>
             <l n="1149" xml:id="l1149">J'ai mon décret en main qui contient mon pouvoir.</l>
           </sp>
@@ -2683,7 +2685,7 @@
             <l n="1156" xml:id="l1156">Ait signé des décrets pour prison, ou supplice,</l>
             <l n="1157" xml:id="l1157">Contre des Chevaliers de ma condition.</l>
           </sp>
-          <sp xml:id="IV04-27" who="UNARCHER">
+          <sp xml:id="IV04-27" who="ARCHER1">
             <speaker>UN DES ARCHERS.</speaker>
             <l n="1158" xml:id="l1158">Vous n'échapperez pas par cette invention,</l>
             <l n="1159" xml:id="l1159">Messieurs, de par le Roi, permettez qu'on l'emmène,</l>
@@ -2707,7 +2709,7 @@
             <speaker>CARDENIE.</speaker>
             <l n="1165" xml:id="l1165">Si vous ne décampez, on vous traitera mal.</l>
           </sp>
-          <sp xml:id="IV04-32" who="lesARCHERS">
+          <sp xml:id="IV04-32" who="ARCHER1 ARCHER2">
             <speaker>LES ARCHERS, en s'en allant.</speaker>
             <l n="1166" xml:id="l1166">De votre empêchement je ferai mon verbal.</l>
           </sp>
@@ -3361,7 +3363,7 @@
             <speaker>SANCHO.</speaker>
             <l part="F">Ah que j'ai de tourment.</l>
           </sp>
-          <sp xml:id="V04-13" who="UNDESDEMONS">
+          <sp xml:id="V04-13" who="LEDIABLE">
             <speaker>UN DES DÉMONS.</speaker>
             <l n="1469" xml:id="l1469">Monte sur ce cheval celui dont le courage</l>
             <l n="1470" xml:id="l1470" part="I">Ne craint point le péril.</l>
@@ -3371,7 +3373,7 @@
             <l part="F">A ce conte je gage.</l>
             <l n="1471" xml:id="l1471" part="I">Que ce ne soit pas moi, je crains trop.</l>
           </sp>
-          <sp xml:id="V04-15" who="UNDESDEMONS">
+          <sp xml:id="V04-15" who="LEDIABLE">
             <speaker>UN DES DÉMONS.</speaker>
             <l part="F">L'écuyer.</l>
             <l n="1472" xml:id="l1472" part="I">Doit monter sur la croupe.</l>
@@ -3383,7 +3385,7 @@
             <l n="1474" xml:id="l1474">En ce voyage ici voir Monsieur Sancho Pance,</l>
             <l n="1475" xml:id="l1475">Je ne suis pas si fou comme ce démon croit.</l>
           </sp>
-          <sp xml:id="V04-17" who="LEDEMON">
+          <sp xml:id="V04-17" who="LEDIABLE">
             <speaker>LE DÉMON.</speaker>
             <l n="1476" xml:id="l1476">Qu'on laisse la cheville en l'état qu'on la voit,</l>
             <l n="1477" xml:id="l1477">Car elle est comme il faut pour aller près des nues ;</l>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Dynamis</title><title type="sub">, reine de carie. tragi-comédie</title>
-        <author born="1605" born_location="Paris" death="1658" death_location="Paris" academie=""><surname>Du Ryer</surname><forename> Pierre</forename></author>
+        <title>Dynamis</title>
+        <title type="sub">, reine de carie. tragi-comédie</title>
+        <author academie="" born="1605" born_location="Paris" death="1658" death_location="Paris">
+          <surname>Du Ryer</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1653</date>
       </titleStmt>
       <publicationStmt>
@@ -45,13 +50,13 @@
         <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1653">M. DC. LIII. AVEC PRIVILÈGE DU ROI. </docDate>
-      <docAuthor id="DU RYER, Pierre" bio="duryer">Par P. DU RYER </docAuthor>
+      <docAuthor bio="duryer" id="DU RYER, Pierre">Par P. DU RYER </docAuthor>
       <docImprint>
         <privilege id="1650-08-26">
           <head>Extrait du Privilège du Roi.</head>
           <p>Par grâce et privilège du Roi donné à Paris, le 26ème jour d'Août 1650. Signé, par le Roi en son Conseil, Le Brun. Il est permis à Antoine de Sommaville, Marchand Libraire à Paris, d'imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitulée, Dynamis, Tragicomédie de P. Du Ryer, pendant le temps et espace de sept ans entiers et accomplis. Et défenses sont faites à tous Imprimeurs, Libraires et autres, de contrefaire ledit Livre, ni le vendre ou exposer en vente d'autre impression que de celle qu'il a fait faire, à peine de trois mil livres d'amende, et de tous dépends, dommages et intérêts, ainsi qu'il est plus amplement porté par les dites Lettres, qui sont en vertu du présent extrait tenues pour bien et dûment signifiées, à ce qu'aucun n'en prétende cause d'ignorance. </p>
         </privilege>
-        <imprimeur id="Antoine Sommaville">À PARIS, Chez Antoine de Sommaville, Au Palais, dans la Salle aux Merciers,  à l'Écu de France. </imprimeur>
+        <imprimeur id="Antoine Sommaville">À PARIS, Chez Antoine de Sommaville, Au Palais, dans la Salle aux Merciers, à l'Écu de France. </imprimeur>
         <acheveImprime value="1652-12-28">Achevé d'imprimer pour la première fois, le 28. Décembre 1652. Les Exemplaires ont été fournis.</acheveImprime>
       </docImprint>
       <performance>
@@ -59,23 +64,23 @@
       </performance>
       <castList>
         <head>LES ACTEURS.</head>
-        <castItem><role xml:id="PROXENE" id="PROXENE" sex="2" type="H" statut="prince" age="A" stat_amour="amoureux">PROXÈNE</role>, princesse amoureuse de Trasile. </castItem>
-        <castItem><role xml:id="TRASILE" id="TRASILE" sex="1" type="H" statut="prince" age="A" stat_amour="amoureux">TRASILE</role>, frère naturel de la reine.</castItem>
-        <castItem><role xml:id="DYNAMIS" id="DYNAMIS" sex="2" type="H" statut="reine" age="A" stat_amour="amoureux">DYNAMIS</role>, reine de Carie.</castItem>
-        <castItem><role xml:id="POLIANTE" id="POLIANTE" sex="1" type="H" statut="roi" age="A" stat_amour="amoureux">POLIANTE</role>, roi de Lycie, amoureux de la Reine. </castItem>
-        <castItem><role xml:id="PROCLEE" id="PROCLEE" sex="2" type="H" statut="confident" age="A" stat_amour="néant">PROCLÉE</role>, confidente de la Reine. </castItem>
-        <castItem><role xml:id="EURISTENE" id="EURISTENE" sex="1" type="H" statut="fermier" age="A" stat_amour="néant">EURISTÈNE</role>, vieux fermier du Roi de Carie.</castItem>
-        <castItem><role xml:id="DesDéputés" id="DEPUTES" sex="9" type="H" statut="député" age="A" stat_amour="néant">Des Députés</role>, des grands de l'État de Carie. </castItem>
-        <castItem><role xml:id="ARCAS" id="ARCAS" sex="1" type="H" statut="prince" age="A" stat_amour="néant">ARCAS</role>, prince de Carie, amoureux de la Reine. </castItem>
+        <castItem><role age="A" id="PROXENE" sex="2" stat_amour="amoureux" statut="prince" type="H" xml:id="PROXENE">PROXÈNE</role>, princesse amoureuse de Trasile. </castItem>
+        <castItem><role age="A" id="TRASILE" sex="1" stat_amour="amoureux" statut="prince" type="H" xml:id="TRASILE">TRASILE</role>, frère naturel de la reine.</castItem>
+        <castItem><role age="A" id="DYNAMIS" sex="2" stat_amour="amoureux" statut="reine" type="H" xml:id="DYNAMIS">DYNAMIS</role>, reine de Carie.</castItem>
+        <castItem><role age="A" id="POLIANTE" sex="1" stat_amour="amoureux" statut="roi" type="H" xml:id="POLIANTE">POLIANTE</role>, roi de Lycie, amoureux de la Reine. </castItem>
+        <castItem><role age="A" id="PROCLEE" sex="2" stat_amour="néant" statut="confident" type="H" xml:id="PROCLEE">PROCLÉE</role>, confidente de la Reine. </castItem>
+        <castItem><role age="A" id="EURISTENE" sex="1" stat_amour="néant" statut="fermier" type="H" xml:id="EURISTENE">EURISTÈNE</role>, vieux fermier du Roi de Carie.</castItem>
+        <castItem><role age="A" id="DEPUTES" sex="9" stat_amour="néant" statut="député" type="H" xml:id="DEPUTES">Des Députés</role>, des grands de l'État de Carie. </castItem>
+        <castItem><role age="A" id="ARCAS" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="ARCAS">ARCAS</role>, prince de Carie, amoureux de la Reine. </castItem>
       </castList>
-      <set location="Halicarnasse" country="Turquie" periode="IIème avant JC" link="">La Scène est dans Halicarnasse capitale de la Carie.</set>
+      <set country="Turquie" link="" location="Halicarnasse" periode="IIème avant JC">La Scène est dans Halicarnasse capitale de la Carie.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head>SCÈNE PREMIÈRE. Proxène, Trasile.<listPerson type="configuration" xml:id="conf1"><person corresp="#PROXENE"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="I01-1" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-1">
             <speaker>PROXÈNE.</speaker>
             <l n="1" xml:id="l1">Que te sert de montrer par tant d'illustres marques</l>
             <l n="2" xml:id="l2">Que le Ciel t'a donné les vertus des Monarques ?</l>
@@ -110,7 +115,7 @@
             <l n="31" xml:id="l31">Non, non, passe plus loin, j'aime un grand Prince en toi,</l>
             <l n="32" xml:id="l32">Mais ce n'est pas assez, j'y veux aimer un Roi.</l>
           </sp>
-          <sp xml:id="I01-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-2">
             <speaker>TRASILE.</speaker>
             <l n="33" xml:id="l33">Que je prends de plaisir au vol où je m'engage,</l>
             <l n="34" xml:id="l34">À te voir aujourd'hui douter de mon courage,</l>
@@ -133,7 +138,7 @@
             <l n="51" xml:id="l51">Et s'il ne te couronne, et s'il n'est couronné,</l>
             <l n="52" xml:id="l52">Il mérite ta haine où je l'ai condamné.</l>
           </sp>
-          <sp xml:id="I01-3" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-3">
             <speaker>PROXÈNE.</speaker>
             <l n="53" xml:id="l53">Tu veux donc, me dis-tu, la Grandeur Souveraine,</l>
             <l n="54" xml:id="l54">Comme le plus grand bien où le destin nous mène ?</l>
@@ -155,14 +160,14 @@
             <l n="70" xml:id="l70">Et lui faire épouser la Reine qui la donne,</l>
             <l n="71" xml:id="l71">C'est sans doute un chemin mal propre à la gagner,</l>
             <l n="72" xml:id="l72">Et qu'on tient rarement lorsque l'on veut régner.</l>
-            <l n="73" xml:id="l73" part="I">Tu ne me réponds rien.</l>
+            <l n="73" part="I" xml:id="l73">Tu ne me réponds rien.</l>
           </sp>
-          <sp xml:id="I01-4" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-4">
             <speaker>TRASILE.</speaker>
             <l part="F">Contente-toi d'apprendre</l>
             <l n="74" xml:id="l74">Que c'est là le chemin que Trasile doit prendre.</l>
           </sp>
-          <sp xml:id="I01-5" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-5">
             <speaker>PROXÈNE.</speaker>
             <l n="75" xml:id="l75">Crois-tu donc que mon coeur qui répond à tes voeux,</l>
             <l n="76" xml:id="l76">Étant plein d'un secret, n'en puisse tenir deux ?</l>
@@ -179,7 +184,7 @@
             <l n="87" xml:id="l87">Fais-moi voir des cercueils et des gouffres partout,</l>
             <l n="88" xml:id="l88">Tous ces chemins sont beaux quand le Trône est au bout.</l>
           </sp>
-          <sp xml:id="I01-6" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-6">
             <speaker>TRASILE.</speaker>
             <l n="89" xml:id="l89">Conserve donc toujours ce courage indomptable,</l>
             <l n="90" xml:id="l90">Si j'expose à tes yeux un chemin effroyable.</l>
@@ -196,12 +201,12 @@
             <l n="101" xml:id="l101">Tout s'étouffe et se perd dans la haine secrète</l>
             <l n="102" xml:id="l102">Qui naquit de la mort du Roi que l'on regrette.</l>
           </sp>
-          <sp xml:id="I01-7" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-7">
             <speaker>PROXÈNE.</speaker>
             <l n="103" xml:id="l103">Je ne vois pas encor où tendent tes desseins,</l>
             <l n="104" xml:id="l104">Ni comment le pouvoir tombera dans tes mains.</l>
           </sp>
-          <sp xml:id="I01-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-8">
             <speaker>TRASILE.</speaker>
             <l n="105" xml:id="l105">Comme Arcas est partout un grand objet de haine,</l>
             <l n="106" xml:id="l106">L'aversion publique ira jusqu'à la Reine,</l>
@@ -222,13 +227,13 @@
             <l n="121" xml:id="l121">Mais au moins mes exploits ont bien eu la puissance</l>
             <l n="122" xml:id="l122">D'effacer le défaut qu'on vit à ma naissance.</l>
           </sp>
-          <sp xml:id="I01-9" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-9">
             <speaker>PROXÈNE.</speaker>
             <l n="123" xml:id="l123">Mais si la Reine juste en cette occasion,</l>
             <l n="124" xml:id="l124">Ne montre pour Arcas que de l'aversion,</l>
-            <l n="125" xml:id="l125" part="I">Que ferez-vous alors ?</l>
+            <l n="125" part="I" xml:id="l125">Que ferez-vous alors ?</l>
           </sp>
-          <sp xml:id="I01-10" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-10">
             <speaker>TRASILE.</speaker>
             <l part="F">J'ai déjà fait en sorte</l>
             <l n="126" xml:id="l126">Qu'à ce honteux hymen sa volonté se porte.</l>
@@ -239,7 +244,7 @@
             <l n="131" xml:id="l131">Et sans que je lui parle, on inspire en son coeur</l>
             <l n="132" xml:id="l132">Tout ce qui peut la perdre et me rendre vainqueur.</l>
           </sp>
-          <sp xml:id="I01-11" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-11">
             <speaker>PROXÈNE.</speaker>
             <l n="133" xml:id="l133">Gardez-vous de vous tromper par une vaine attente,</l>
             <l n="134" xml:id="l134">Je crains avec raison qu'elle aime Poliante.</l>
@@ -261,9 +266,9 @@
             <l n="150" xml:id="l150">Lorsque de part et d'autre on se rencontre aimable,</l>
             <l n="151" xml:id="l151">Lorsque de part et d'autre on se voit couronné,</l>
             <l n="152" xml:id="l152">L'amour naîtra bientôt s'il n'est pas déjà né.</l>
-            <l n="153" xml:id="l153" part="I">Pensez-y.</l>
+            <l n="153" part="I" xml:id="l153">Pensez-y.</l>
           </sp>
-          <sp xml:id="I01-12" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-12">
             <speaker>TRASILE.</speaker>
             <l part="F">C'en est fait, et quoi qu'il en succède,</l>
             <l n="154" xml:id="l154">Tout le mal que tu crains a déjà son remède.</l>
@@ -280,31 +285,31 @@
             <l n="164" xml:id="l164">Il y sera contraint par la nécessité.</l>
             <l n="165" xml:id="l165">Pourrait-on mieux conduire une grande entreprise ?</l>
           </sp>
-          <sp xml:id="I01-13" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-13">
             <speaker>PROXÈNE.</speaker>
             <l n="166" xml:id="l166">Si le sort est pour toi, l'espérance est permise.</l>
           </sp>
-          <sp xml:id="I01-14" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-14">
             <speaker>TRASILE.</speaker>
             <l n="167" xml:id="l167">Le sort sera pour nous, mais cache ce dessein.</l>
           </sp>
-          <sp xml:id="I01-15" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-15">
             <speaker>PROXÈNE.</speaker>
             <l n="168" xml:id="l168">Il est mieux dans mon coeur qu'il n'est pas dans ton sein,</l>
             <l n="169" xml:id="l169">Tu me l'as découvert, et je saurai le taire.</l>
           </sp>
-          <sp xml:id="I01-16" who="TRASILE">
+          <sp who="TRASILE" xml:id="I01-16">
             <speaker>TRASILE.</speaker>
-            <l n="170" xml:id="l170" part="I">Mais on ouvre.</l>
+            <l n="170" part="I" xml:id="l170">Mais on ouvre.</l>
           </sp>
-          <sp xml:id="I01-17" who="PROXENE">
+          <sp who="PROXENE" xml:id="I01-17">
             <speaker>PROXÈNE.</speaker>
             <l part="M">Je sors.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="I02">
           <head>SCÈNE II. Dynamis, Trasile.<listPerson type="configuration" xml:id="conf2"><person corresp="#DYNAMIS"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="I02-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-1">
             <speaker>DYNAMIS parlant à quelques-uns.</speaker>
             <l part="F">Oui ma gloire m'est chère.</l>
             <l n="171" xml:id="l171">C'est trop vous écouter, conseillers odieux,</l>
@@ -331,35 +336,35 @@
             <l n="191" xml:id="l191">C'est ici qu'il sied bien à leurs Royales mains</l>
             <l n="192" xml:id="l192">D'aller percer les coeurs d'où viennent ces desseins.</l>
           </sp>
-          <sp xml:id="I02-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-2">
             <speaker>TRASILE.</speaker>
             <l n="193" xml:id="l193">Ce discours me surprend, ce conseil est étrange.</l>
           </sp>
-          <sp xml:id="I02-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-3">
             <speaker>DYNAMIS.</speaker>
             <l n="194" xml:id="l194">Aussi sur ses auteurs il faut que je me venge.</l>
             <l n="195" xml:id="l195">Mais hélas, par un sort horrible et sans pareil,</l>
             <l n="196" xml:id="l196">Il en faudrait punir tous ceux de mon Conseil.</l>
           </sp>
-          <sp xml:id="I02-4" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-4">
             <speaker>TRASILE.</speaker>
             <l n="197" xml:id="l197">Jusqu'ici toutefois il fut toujours fidèle.</l>
           </sp>
-          <sp xml:id="I02-5" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-5">
             <speaker>DYNAMIS.</speaker>
             <l n="198" xml:id="l198">J'ai sujet aujourd'hui de douter de son zèle.</l>
           </sp>
-          <sp xml:id="I02-6" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-6">
             <speaker>TRASILE.</speaker>
             <l n="199" xml:id="l199">Ceux qui vous défendaient dans votre adversité,</l>
             <l n="200" xml:id="l200">Voudraient-ils vous trahir dans la prospérité ?</l>
           </sp>
-          <sp xml:id="I02-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-7">
             <speaker>DYNAMIS.</speaker>
             <l n="201" xml:id="l201">Quand d'un nouvel espoir une âme s'est repue,</l>
             <l n="202" xml:id="l202">Quelle fidélité n'a-t-on pas corrompue ?</l>
           </sp>
-          <sp xml:id="I02-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-8">
             <speaker>TRASILE.</speaker>
             <l n="203" xml:id="l203">Mais quels biens, quels honneurs, et quels destins si doux,</l>
             <l n="204" xml:id="l204">Espèrent-ils d'Arcas qu'ils n'aient reçu de vous ?</l>
@@ -382,7 +387,7 @@
             <l n="221" xml:id="l221">Lui de vous conseiller ce honteux hyménée,</l>
             <l n="222" xml:id="l222">Vous d'en avoir longtemps l'espérance donnée.</l>
           </sp>
-          <sp xml:id="I02-9" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-9">
             <speaker>DYNAMIS.</speaker>
             <l n="223" xml:id="l223">Si j'ai failli, mon frère, il devait résister,</l>
             <l n="224" xml:id="l224">Me remontrer ma faute, et non pas la flatter.</l>
@@ -397,12 +402,12 @@
             <l n="233" xml:id="l233">Que le premier bourreau de son coeur sanguinaire,</l>
             <l n="234" xml:id="l234">Soit de désespérer du Trône qu'il espère.</l>
           </sp>
-          <sp xml:id="I02-10" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-10">
             <speaker>TRASILE.</speaker>
             <l n="235" xml:id="l235">Mais enfin quels témoins avez-vous aujourd'hui</l>
             <l n="236" xml:id="l236">Qui vous montrent son crime et parlent contre lui ?</l>
           </sp>
-          <sp xml:id="I02-11" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-11">
             <speaker>DYNAMIS.</speaker>
             <l n="237" xml:id="l237">L'ambitieux désir qu'il a de la Couronne,</l>
             <l n="238" xml:id="l238">L'horreur que j'ai pour lui, la haine qu'il me donne,</l>
@@ -423,7 +428,7 @@
             <l n="253" xml:id="l253">Cette main insensible à toute autre victoire,</l>
             <l n="254" xml:id="l254">Fera de mon sépulcre un rempart à ma gloire.</l>
           </sp>
-          <sp xml:id="I02-12" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-12">
             <speaker>TRASILE.</speaker>
             <l n="255" xml:id="l255">Quoi donc, si cet hymen qui vous fait tant de peur,</l>
             <l n="256" xml:id="l256">Était de cet État la force et le bonheur,</l>
@@ -436,7 +441,7 @@
             <l n="263" xml:id="l263">La Reine, dira-t-on, dont l'esprit fut surpris,</l>
             <l n="264" xml:id="l264">A vu son innocence, et lui donne son prix.</l>
           </sp>
-          <sp xml:id="I02-13" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-13">
             <speaker>DYNAMIS.</speaker>
             <l n="265" xml:id="l265">Ou plutôt, dira-t-on pour mon propre supplice,</l>
             <l n="266" xml:id="l266">L'Amour peut tout corrompre et même la Justice.</l>
@@ -447,21 +452,21 @@
             <l n="271" xml:id="l271">Et croirais que mon coeur par elle combattu</l>
             <l n="272" xml:id="l272">Aurait juste raison de haïr la vertu.</l>
           </sp>
-          <sp xml:id="I02-14" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-14">
             <speaker>TRASILE.</speaker>
             <l n="273" xml:id="l273">Mais Arcas est puissant, et je crains son absence.</l>
           </sp>
-          <sp xml:id="I02-15" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-15">
             <speaker>DYNAMIS.</speaker>
             <l n="274" xml:id="l274">Mais au moins il est homme avecque sa puissance,</l>
             <l n="275" xml:id="l275">Et quoi qu'il usurpât un Trône et des Autels,</l>
             <l n="276" xml:id="l276">Au moins mes Ennemis ne sont pas immortels.</l>
           </sp>
-          <sp xml:id="I02-16" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-16">
             <speaker>TRASILE.</speaker>
-            <l n="277" xml:id="l277" part="I">Quoi voulez-vous sa mort ?</l>
+            <l n="277" part="I" xml:id="l277">Quoi voulez-vous sa mort ?</l>
           </sp>
-          <sp xml:id="I02-17" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-17">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Quoi voulez-vous sa vie ?</l>
             <l n="278" xml:id="l278">Voulez-vous que mon coeur réponde à son envie ?</l>
@@ -480,7 +485,7 @@
             <l n="291" xml:id="l291">Et vous mériteriez qu'un autre vous l'ôtât</l>
             <l n="292" xml:id="l292">Si vous ne vengiez pas la honte de l'État.</l>
           </sp>
-          <sp xml:id="I02-18" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-18">
             <speaker>TRASILE.</speaker>
             <l n="293" xml:id="l293">Ô nobles sentiments ! Ha pardonnez, Madame,</l>
             <l n="294" xml:id="l294">À l'injuste soupçon qui glissa dans mon âme.</l>
@@ -495,11 +500,11 @@
             <l n="303" xml:id="l303">Mais pour le réparer, me voilà sans effroi</l>
             <l n="304" xml:id="l304">Tout prêt à vous venger sur Arcas et sur moi.</l>
           </sp>
-          <sp xml:id="I02-19" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-19">
             <speaker>DYNAMIS.</speaker>
             <l n="305" xml:id="l305">C'est par ce sentiment que je connais mon frère.</l>
           </sp>
-          <sp xml:id="I02-20" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-20">
             <speaker>TRASILE.</speaker>
             <l n="306" xml:id="l306">Cependant vous savez ce qu'on ne peut plus taire,</l>
             <l n="307" xml:id="l307">Que Poliante seul, l'appui de vos États,</l>
@@ -509,19 +514,19 @@
             <l n="311" xml:id="l311">Et qu'en un même temps et l'hymen et l'amour</l>
             <l n="312" xml:id="l312">Chez ce Prince étranger ne transporte la Cour.</l>
           </sp>
-          <sp xml:id="I02-21" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-21">
             <speaker>DYNAMIS.</speaker>
             <l n="313" xml:id="l313">Nous y saurons donner les ordres nécessaires.</l>
           </sp>
-          <sp xml:id="I02-22" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-22">
             <speaker>TRASILE.</speaker>
             <l n="314" xml:id="l314">Ô coeurs intéressés ! Ô sujets téméraires !</l>
             <l n="315" xml:id="l315">Qui vous permettez tout, qui n'avez point de lois,</l>
             <l n="316" xml:id="l316">Voulez-vous donc en faire aux désirs de vos Rois.</l>
             <l n="317" xml:id="l317">Ha si vous n'aimiez pas le Prince Poliante,</l>
-            <l n="318" xml:id="l318" part="I">Je croirais...</l>
+            <l n="318" part="I" xml:id="l318">Je croirais...</l>
           </sp>
-          <sp xml:id="I02-23" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-23">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Ne crois rien, je l'aime, et je m'en vante.</l>
             <l n="319" xml:id="l319">Après son grand secours si je ne l'aime pas,</l>
@@ -539,25 +544,25 @@
             <l n="331" xml:id="l331">Et nous pouvons aimer un Roi si plein d'attraits</l>
             <l n="332" xml:id="l332">Comme on aime les Dieux que l'on ne voit jamais.</l>
           </sp>
-          <sp xml:id="I02-24" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-24">
             <speaker>TRASILE.</speaker>
             <l n="333" xml:id="l333">Ainsi vous contentez et l'État et vous-mêmes.</l>
           </sp>
-          <sp xml:id="I02-25" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="I02-25">
             <speaker>DYNAMIS.</speaker>
             <l n="334" xml:id="l334">Ainsi toujours constant montre moi que tu m'aimes,</l>
             <l n="335" xml:id="l335">Et crois que je m'estime aussi forte par toi,</l>
             <l n="336" xml:id="l336">Que par ce grand pouvoir qui fait régner un Roi.</l>
           </sp>
-          <sp xml:id="I02-26" who="TRASILE">
+          <sp who="TRASILE" xml:id="I02-26">
             <speaker>TRASILE.</speaker>
             <l n="337" xml:id="l337">Si le zèle et la foi d'une âme obéissante</l>
             <l n="338" xml:id="l338">Rendent les Rois puissants, que vous êtes puissante !</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="I03">
           <head>SCÈNE III.<listPerson type="configuration" xml:id="conf3"><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="I03-1" who="TRASILE">
+          <sp who="TRASILE" xml:id="I03-1">
             <speaker>TRASILE, seul.</speaker>
             <l n="339" xml:id="l339">Vois donc, n'ai-je pas formé qu'un fantôme trompeur,</l>
             <l n="340" xml:id="l340">Lorsque ce grand dessein se formait dans mon coeur ?</l>
@@ -576,11 +581,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="II01">
           <head>SCÈNE PREMIÈRE. Dynamis, Poliante.<listPerson type="configuration" xml:id="conf5"><person corresp="#DYNAMIS"/><person corresp="#POLIANTE"/></listPerson></head>
-          <sp xml:id="II01-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-1">
             <speaker>DYNAMIS.</speaker>
             <l n="353" xml:id="l353">J'ai vu d'un oeil constant et d'un coeur invincible,</l>
             <l n="354" xml:id="l354">Tout ce que la fortune avait de plus horrible,</l>
@@ -603,7 +608,7 @@
             <l n="371" xml:id="l371">Et parmi cet effroi mon esprit abattu</l>
             <l n="372" xml:id="l372">Cherche et ne trouve pas sa première vertu.</l>
           </sp>
-          <sp xml:id="II01-2" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-2">
             <speaker>POLIANTE.</speaker>
             <l n="373" xml:id="l373">Si mon bras combattant pour votre seule gloire,</l>
             <l n="374" xml:id="l374">A pour vous remporté victoire sur victoire,</l>
@@ -618,14 +623,14 @@
             <l n="383" xml:id="l383">Que n'obtiendrez-vous pas contre un plus grand tourment</l>
             <l n="384" xml:id="l384">Et du bras d'un Monarque, et du coeur d'un Amant ?</l>
           </sp>
-          <sp xml:id="II01-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-3">
             <speaker>DYNAMIS.</speaker>
             <l n="385" xml:id="l385">Tout ; et ce que je crains, c'est que ton grand courage</l>
             <l n="386" xml:id="l386">Ne soit pas assez fort contre un dernier orage ;</l>
             <l n="387" xml:id="l387">Et que ton coeur surpris par de nouveaux combats</l>
             <l n="388" xml:id="l388">Ne puisse supporter un coup qu'il n'attend pas.</l>
           </sp>
-          <sp xml:id="II01-4" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-4">
             <speaker>POLIANTE.</speaker>
             <l n="389" xml:id="l389">Je mourrais mille fois avec un oeil tranquille,</l>
             <l n="390" xml:id="l390">Si mille fois ma mort pouvait vous être utile.</l>
@@ -637,47 +642,47 @@
             <l n="396" xml:id="l396">Estime les malheurs qui le font éclater ;</l>
             <l n="397" xml:id="l397">Et comme la Vertu l'Amour est incertaine,</l>
             <l n="398" xml:id="l398">Sans l'épreuve qu'en fait le péril et la peine.</l>
-            <l n="399" xml:id="l399" part="I">Donnez, donnez ce coup.</l>
+            <l n="399" part="I" xml:id="l399">Donnez, donnez ce coup.</l>
           </sp>
-          <sp xml:id="II01-5" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-5">
             <speaker>DYNAMIS.</speaker>
             <l part="F">C'est, c'est, sans te flatter,</l>
-            <l n="400" xml:id="l400" part="I">Le dirai-je ?</l>
+            <l n="400" part="I" xml:id="l400">Le dirai-je ?</l>
           </sp>
-          <sp xml:id="II01-6" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-6">
             <speaker>POLIANTE.</speaker>
             <l part="M">Achevez.</l>
           </sp>
-          <sp xml:id="II01-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-7">
             <speaker>DYNAMIS.</speaker>
             <l part="F">C'est qu'il faut me quitter.</l>
           </sp>
-          <sp xml:id="II01-8" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-8">
             <speaker>POLIANTE.</speaker>
-            <l n="401" xml:id="l401" part="I">Ô Dieux !</l>
+            <l n="401" part="I" xml:id="l401">Ô Dieux !</l>
           </sp>
-          <sp xml:id="II01-9" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-9">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Ne te plains pas, et si je t'abandonne</l>
             <l n="402" xml:id="l402">Je ressens mieux que toi le coup que je te donne.</l>
           </sp>
-          <sp xml:id="II01-10" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-10">
             <speaker>POLIANTE.</speaker>
-            <l n="403" xml:id="l403" part="I">Vous quitter !</l>
+            <l n="403" part="I" xml:id="l403">Vous quitter !</l>
           </sp>
-          <sp xml:id="II01-11" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-11">
             <speaker>DYNAMIS.</speaker>
             <l part="M">Il le faut.</l>
           </sp>
-          <sp xml:id="II01-12" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-12">
             <speaker>POLIANTE.</speaker>
             <l part="F">Et vous m'avez aimé !</l>
           </sp>
-          <sp xml:id="II01-13" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-13">
             <speaker>DYNAMIS.</speaker>
-            <l n="404" xml:id="l404" part="I">Il le faut, et je t'aime.</l>
+            <l n="404" part="I" xml:id="l404">Il le faut, et je t'aime.</l>
           </sp>
-          <sp xml:id="II01-14" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-14">
             <speaker>POLIANTE.</speaker>
             <l part="F">Ô mot qui m'as charmé !</l>
             <l n="405" xml:id="l405">Ô mot que j'aurais seul acheté d'un Empire !</l>
@@ -688,13 +693,13 @@
             <l n="410" xml:id="l410">Et si ce n'est assez je fuirai de la vie.</l>
             <l n="411" xml:id="l411">Heureux de faire voir qu'un Monarque amoureux</l>
             <l n="412" xml:id="l412">Sait pour vous obéir se rendre malheureux.</l>
-            <l n="413" xml:id="l413" part="I">Madame, dès demain.</l>
+            <l n="413" part="I" xml:id="l413">Madame, dès demain.</l>
           </sp>
-          <sp xml:id="II01-15" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-15">
             <speaker>DYNAMIS.</speaker>
             <l part="F">C'est bientôt se résoudre.</l>
           </sp>
-          <sp xml:id="II01-16" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-16">
             <speaker>POLIANTE.</speaker>
             <l n="414" xml:id="l414">Si je devais périr par les flammes du foudre,</l>
             <l n="415" xml:id="l415">J'irais d'un pas superbe au-devant de ses feux,</l>
@@ -702,7 +707,7 @@
             <l n="417" xml:id="l417">Et si je ne pouvais éviter mon naufrage,</l>
             <l n="418" xml:id="l418">Mon naufrage du moins ferait voir mon courage.</l>
           </sp>
-          <sp xml:id="II01-17" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-17">
             <speaker>DYNAMIS.</speaker>
             <l n="419" xml:id="l419">C'est bientôt se résoudre à cette dure loi ;</l>
             <l n="420" xml:id="l420">Un coeur n'est pas si fort, quand l'Amour est son Roi ;</l>
@@ -731,7 +736,7 @@
             <l n="443" xml:id="l443">Enfin j'adoucirai des maux si rigoureux,</l>
             <l n="444" xml:id="l444">En me disant au moins ce que j'aime est heureux.</l>
           </sp>
-          <sp xml:id="II01-18" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-18">
             <speaker>POLIANTE.</speaker>
             <l n="445" xml:id="l445">Ha ne me faites point par cet oeil en colère</l>
             <l n="446" xml:id="l446">Le reproche cruel que je pourrais vous faire.</l>
@@ -770,7 +775,7 @@
             <l n="479" xml:id="l479">Est-ce que vous croyez contenter vos États,</l>
             <l n="480" xml:id="l480">En nous abandonnant aux passions d'Arcas ?</l>
           </sp>
-          <sp xml:id="II01-19" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-19">
             <speaker>DYNAMIS.</speaker>
             <l n="481" xml:id="l481">Est-ce que vous voulez vous acquérir ma haine</l>
             <l n="482" xml:id="l482">Par une opinion si honteuse et si vaine ?</l>
@@ -779,7 +784,7 @@
             <l n="485" xml:id="l485">C'est le plus grand effort du feu qui me dévore,</l>
             <l n="486" xml:id="l486">D'entendre ce reproche et de brûler encore.</l>
           </sp>
-          <sp xml:id="II01-20" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II01-20">
             <speaker>POLIANTE.</speaker>
             <l n="487" xml:id="l487">Hélas dans ce transport trop indigne du jour,</l>
             <l n="488" xml:id="l488">La fureur a parlé, mais non pas mon Amour ;</l>
@@ -796,7 +801,7 @@
             <l n="499" xml:id="l499">Et quand par cet exil on voudrait m'outrager,</l>
             <l n="500" xml:id="l500">J'ai même assez d'Amour pour ne me pas venger.</l>
           </sp>
-          <sp xml:id="II01-21" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II01-21">
             <speaker>DYNAMIS.</speaker>
             <l n="501" xml:id="l501">Sache que tes vertus à mon âme si chères,</l>
             <l n="502" xml:id="l502">T'ont fait dans cet État de secrets adversaires,</l>
@@ -810,35 +815,35 @@
             <l n="510" xml:id="l510">Mais que voudrait Proclée, et que veut-elle dire ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="II02">
           <head>SCÈNE II. Proclée, Dynamis, Poliante.<listPerson type="configuration" xml:id="conf6"><person corresp="#PROCLEE"/><person corresp="#DYNAMIS"/><person corresp="#POLIANTE"/></listPerson></head>
-          <sp xml:id="II02-1" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="II02-1">
             <speaker>PROCLÉE.</speaker>
             <l n="511" xml:id="l511">Ha, Madame, il est temps de redouter Arcas ;</l>
             <l n="512" xml:id="l512">Pour venir jusqu'à vous il n'a qu'à faire un pas.</l>
           </sp>
-          <sp xml:id="II02-2" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II02-2">
             <speaker>DYNAMIS.</speaker>
-            <l n="513" xml:id="l513" part="I">Comment ! Que dites-vous ?</l>
+            <l n="513" part="I" xml:id="l513">Comment ! Que dites-vous ?</l>
           </sp>
-          <sp xml:id="II02-3" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="II02-3">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Tout est rempli d'alarmes,</l>
             <l n="514" xml:id="l514">Il approche d'ici, mais il approche en armes.</l>
           </sp>
-          <sp xml:id="II02-4" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II02-4">
             <speaker>DYNAMIS.</speaker>
             <l n="515" xml:id="l515">Un bruit faux et trompeur fait ton étonnement,</l>
             <l n="516" xml:id="l516">Il est sans apparence, il est sans fondement.</l>
             <l n="517" xml:id="l517">Verrait-on approcher des troupes de rebelles,</l>
             <l n="518" xml:id="l518">Sans que la renommée en eût dit des nouvelles ?</l>
           </sp>
-          <sp xml:id="II02-5" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II02-5">
             <speaker>POLIANTE.</speaker>
             <l n="519" xml:id="l519">On peut secrètement par quelques conjurés</l>
             <l n="520" xml:id="l520">À quelque rendez-vous les avoir attirés.</l>
           </sp>
-          <sp xml:id="II02-6" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="II02-6">
             <speaker>PROCLÉE.</speaker>
             <l n="521" xml:id="l521">C'est ce qu'on dit, madame, et l'on dit davantage,</l>
             <l n="522" xml:id="l522">Mais le dirai-je ici sans vous faire un outrage ;</l>
@@ -849,20 +854,20 @@
             <l n="527" xml:id="l527">Afin que les efforts de ce Prince insensé</l>
             <l n="528" xml:id="l528">Excusent votre hymen qui paraîtra forcé.</l>
           </sp>
-          <sp xml:id="II02-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II02-7">
             <speaker>DYNAMIS.</speaker>
             <l n="529" xml:id="l529">Ô de tous mes malheurs le plus épouvantable !</l>
             <l n="530" xml:id="l530">Que peut-on ajouter à ce coup effroyable ?</l>
           </sp>
-          <sp xml:id="II02-8" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="II02-8">
             <speaker>PROCLÉE.</speaker>
-            <l n="531" xml:id="l531" part="I">On dit...</l>
+            <l n="531" part="I" xml:id="l531">On dit...</l>
           </sp>
-          <sp xml:id="II02-9" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II02-9">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Que dirait-on de plus grand ou d'égal ?</l>
           </sp>
-          <sp xml:id="II02-10" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="II02-10">
             <speaker>PROCLÉE.</speaker>
             <l n="532" xml:id="l532">On achève l'injure, on confirme le mal.</l>
             <l n="533" xml:id="l533">On dit que sous couleur que la paix renaissante</l>
@@ -874,17 +879,17 @@
             <l n="539" xml:id="l539">Pour rendre Arcas plus fort et plus autorisé,</l>
             <l n="540" xml:id="l540">Et lui tracer au Trône un chemin plus aisé.</l>
           </sp>
-          <sp xml:id="II02-11" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II02-11">
             <speaker>DYNAMIS.</speaker>
             <l n="541" xml:id="l541">Qu'ai-je fait, justes Dieux, et par quelle apparence</l>
             <l n="542" xml:id="l542">Ai-je mis dans les coeurs cette indigne croyance ?</l>
           </sp>
-          <sp xml:id="II02-12" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II02-12">
             <speaker>POLIANTE.</speaker>
             <l n="543" xml:id="l543">Ne vous affligez point de ces bruits différents,</l>
             <l n="544" xml:id="l544">Vous avez surmontés des ennemis plus grands.</l>
           </sp>
-          <sp xml:id="II02-13" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II02-13">
             <speaker>DYNAMIS.</speaker>
             <l n="545" xml:id="l545">Non, non, je ne vois rien qui soit plus redoutable,</l>
             <l n="546" xml:id="l546">L'opinion publique est un monstre indomptable ;</l>
@@ -893,12 +898,12 @@
             <l n="549" xml:id="l549">Et ne triomphent point de ces monstres infâmes</l>
             <l n="550" xml:id="l550">Que les bruits faux ou vrais font naître dans les âmes.</l>
           </sp>
-          <sp xml:id="II02-14" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II02-14">
             <speaker>POLIANTE.</speaker>
             <l n="551" xml:id="l551">Vos vertus les vaincront ces bruits injurieux,</l>
             <l n="552" xml:id="l552">Et j'ai pour vous encor un bras victorieux.</l>
           </sp>
-          <sp xml:id="II02-15" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II02-15">
             <speaker>DYNAMIS.</speaker>
             <l n="553" xml:id="l553">Seigneur, reposez-vous, et laissez-moi la gloire</l>
             <l n="554" xml:id="l554">De remporter au moins cette seule victoire.</l>
@@ -908,35 +913,35 @@
             <l n="558" xml:id="l558">Démentir hautement l'opinion publique.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="II03">
           <head>SCÈNE III. Proxène, Dynamis, Trasile.<listPerson type="configuration" xml:id="conf7"><person corresp="#PROXENE"/><person corresp="#DYNAMIS"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="II03-1" who="PROXENE">
+          <sp who="PROXENE" xml:id="II03-1">
             <speaker>PROXÈNE.</speaker>
             <l n="559" xml:id="l559">Qu'a la Reine, Proclée, elle est triste à la voir.</l>
           </sp>
-          <sp xml:id="II03-2" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II03-2">
             <speaker>DYNAMIS.</speaker>
             <l n="560" xml:id="l560">Oui, le traître apprendra ce que peut mon pouvoir ;</l>
             <l n="561" xml:id="l561">Et qu'une femme seule est toujours assez forte,</l>
             <l n="562" xml:id="l562">Quand l'amour de l'honneur l'anime et la transporte.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="II04">
           <head>SCÈNE IV. Dynamis, Trasile, Poliante, Proxène. <listPerson type="configuration" xml:id="conf8"><person corresp="#DYNAMIS"/><person corresp="#TRASILE"/><person corresp="#POLIANTE"/><person corresp="#PROXENE"/></listPerson></head>
-          <sp xml:id="II04-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-1">
             <speaker>DYNAMIS.</speaker>
-            <l n="563" xml:id="l563" part="I">Mon Frère.</l>
+            <l n="563" part="I" xml:id="l563">Mon Frère.</l>
           </sp>
-          <sp xml:id="II04-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-2">
             <speaker>TRASILE.</speaker>
             <l part="M">Quoi ? Madame.</l>
           </sp>
-          <sp xml:id="II04-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-3">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Avance-t-il Arcas ?</l>
             <l n="564" xml:id="l564">Et pour nous enlever marche-t-il sur vos pas ?</l>
           </sp>
-          <sp xml:id="II04-4" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-4">
             <speaker>TRASILE.</speaker>
             <l n="565" xml:id="l565">Il faut auparavant que ses mains inhumaines</l>
             <l n="566" xml:id="l566">Aient versé tout le sang que vous gardent mes veines.</l>
@@ -947,15 +952,15 @@
             <l n="571" xml:id="l571">Et qu'il n'espère rien qu'un peu d'affection</l>
             <l n="572" xml:id="l572">N'ait permis d'espérer à son ambition.</l>
           </sp>
-          <sp xml:id="II04-5" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-5">
             <speaker>DYNAMIS.</speaker>
-            <l n="573" xml:id="l573" part="I">Qu'un peu d'affection...</l>
+            <l n="573" part="I" xml:id="l573">Qu'un peu d'affection...</l>
           </sp>
-          <sp xml:id="II04-6" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-6">
             <speaker>TRASILE.</speaker>
             <l part="F">C'est ce qu'il faut entendre.</l>
           </sp>
-          <sp xml:id="II04-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-7">
             <speaker>DYNAMIS.</speaker>
             <l n="574" xml:id="l574">Qu'un peu d'affection ne lui fasse prétendre.</l>
             <l n="575" xml:id="l575">Le traître éprouvera par sa punition</l>
@@ -963,37 +968,37 @@
             <l n="577" xml:id="l577">Le traître éprouvera que l'Amour ne l'amène</l>
             <l n="578" xml:id="l578">Que pour le voir bientôt immoler à ma haine.</l>
           </sp>
-          <sp xml:id="II04-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-8">
             <speaker>TRASILE.</speaker>
             <l n="579" xml:id="l579">Arcas n'est pas si fort qu'il puisse faire peur ;</l>
             <l n="580" xml:id="l580">Mais il faut s'opposer contre un autre malheur.</l>
             <l n="581" xml:id="l581">Seigneur, il vous regarde. Il est venu nouvelle</l>
             <l n="582" xml:id="l582">Que votre État en feu se trouble et se rebelle.</l>
           </sp>
-          <sp xml:id="II04-9" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-9">
             <speaker>POLIANTE.</speaker>
-            <l n="583" xml:id="l583" part="I">Ô Dieux ! Que dites-vous ?</l>
+            <l n="583" part="I" xml:id="l583">Ô Dieux ! Que dites-vous ?</l>
           </sp>
-          <sp xml:id="II04-10" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-10">
             <speaker>DYNAMIS.</speaker>
             <l part="F">J'annonce malgré moi</l>
             <l n="584" xml:id="l584">Le plus grand des malheurs que doive craindre un Roi.</l>
           </sp>
-          <sp xml:id="II04-11" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-11">
             <speaker>POLIANTE.</speaker>
             <l n="585" xml:id="l585">Ce mal n'est pas si grand qu'un faux bruit le veut rendre,</l>
             <l n="586" xml:id="l586">J'en sais déjà la source et le cours qu'il doit prendre.</l>
           </sp>
-          <sp xml:id="II04-12" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-12">
             <speaker>DYNAMIS.</speaker>
-            <l n="587" xml:id="l587" part="I">Quoi, Seigneur ?</l>
+            <l n="587" part="I" xml:id="l587">Quoi, Seigneur ?</l>
           </sp>
-          <sp xml:id="II04-13" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-13">
             <speaker>POLIANTE.</speaker>
             <l part="F">Oui, je sais par des avis certains</l>
             <l n="588" xml:id="l588">Qu'un tas de mécontents ont fait quelques desseins.</l>
           </sp>
-          <sp xml:id="II04-14" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-14">
             <speaker>DYNAMIS.</speaker>
             <l n="589" xml:id="l589">Allez sans différer avec votre présence</l>
             <l n="590" xml:id="l590">À la rébellion imposer le silence.</l>
@@ -1004,12 +1009,12 @@
             <l n="595" xml:id="l595">Vous savez ce que peut votre bras glorieux,</l>
             <l n="596" xml:id="l596">Allez donc éprouver ce que peuvent vos yeux.</l>
           </sp>
-          <sp xml:id="II04-15" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-15">
             <speaker>POLIANTE.</speaker>
             <l n="597" xml:id="l597">J'ai prévu dès longtemps ce désordre funeste,</l>
             <l n="598" xml:id="l598">Et le remède est prêt qui vaincra cette peste.</l>
           </sp>
-          <sp xml:id="II04-16" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-16">
             <speaker>TRASILE.</speaker>
             <l n="599" xml:id="l599">Seigneur, votre présence est le meilleur secours</l>
             <l n="600" xml:id="l600">Qui d'un mal si soudain puisse arrêter le cours.</l>
@@ -1030,7 +1035,7 @@
             <l n="615" xml:id="l615">Qu'elle voulût pour soi retenir votre bras</l>
             <l n="616" xml:id="l616">Lorsque vous le devez au bien de vos États ?</l>
           </sp>
-          <sp xml:id="II04-17" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-17">
             <speaker>DYNAMIS.</speaker>
             <l n="617" xml:id="l617">Non, non, à votre bien ma fortune sensible</l>
             <l n="618" xml:id="l618">Ne veut point d'un secours qui vous serait nuisible,</l>
@@ -1041,7 +1046,7 @@
             <l n="623" xml:id="l623">Et le plus beau travail des Monarques parfaits</l>
             <l n="624" xml:id="l624">C'est d'établir chez eux le repos et la paix.</l>
           </sp>
-          <sp xml:id="II04-18" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-18">
             <speaker>POLIANTE.</speaker>
             <l n="625" xml:id="l625">Quand j'aurai fait pour vous, ô Princesse adorable,</l>
             <l n="626" xml:id="l626">Tout ce que je dois faire en amant véritable,</l>
@@ -1070,7 +1075,7 @@
             <l n="649" xml:id="l649">Et cette juste crainte et leur propre impuissance</l>
             <l n="650" xml:id="l650">Remettront le devoir où régnait l'insolence.</l>
           </sp>
-          <sp xml:id="II04-19" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-19">
             <speaker>DYNAMIS.</speaker>
             <l n="651" xml:id="l651">Ce remède est douteux, suivez le plus certain,</l>
             <l n="652" xml:id="l652">Allez, et paraissez les armes à la main.</l>
@@ -1083,14 +1088,14 @@
             <l n="659" xml:id="l659">Si l'Amour vous abaisse au rang de mes sujets,</l>
             <l n="660" xml:id="l660">Rendez obéissance aux ordres que je fais.</l>
           </sp>
-          <sp xml:id="II04-20" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-20">
             <speaker>POLIANTE.</speaker>
             <l n="661" xml:id="l661">Oui, j'ai toujours fait gloire, ô Reine incomparable,</l>
             <l n="662" xml:id="l662">D'être de vos sujets le plus inébranlable ;</l>
             <l n="663" xml:id="l663">Mais je fais gloire aussi dans un mal si pressant</l>
             <l n="664" xml:id="l664">D'être pour vous servir le moins obéissant.</l>
           </sp>
-          <sp xml:id="II04-21" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-21">
             <speaker>DYNAMIS.</speaker>
             <l n="665" xml:id="l665">Est-ce paraître Roi, qui veut se faire craindre,</l>
             <l n="666" xml:id="l666">De voir son Trône en flamme et de ne pas l'éteindre !</l>
@@ -1099,12 +1104,12 @@
             <l n="669" xml:id="l669">Ainsi puisque l'Amour nous met tous deux en peine</l>
             <l n="670" xml:id="l670">Je le chasse avec vous, et je veux votre haine.</l>
           </sp>
-          <sp xml:id="II04-22" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-22">
             <speaker>POLIANTE.</speaker>
             <l n="671" xml:id="l671">Ainsi je ferai voir un Amour plus parfait,</l>
             <l n="672" xml:id="l672">Lorsque je combattrai pour un coeur qui me hait.</l>
           </sp>
-          <sp xml:id="II04-23" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-23">
             <speaker>DYNAMIS.</speaker>
             <l n="673" xml:id="l673">Songez, songez au moins qu'il n'est rien sur la terre</l>
             <l n="674" xml:id="l674">Qui soit plus incertain que le sort de la guerre.</l>
@@ -1115,14 +1120,14 @@
             <l n="679" xml:id="l679">Voulez-vous que mon sang que mes mains verseront</l>
             <l n="680" xml:id="l680">Vous accuse du coup que vos yeux pleureront.</l>
           </sp>
-          <sp xml:id="II04-24" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-24">
             <speaker>POLIANTE.</speaker>
             <l n="681" xml:id="l681">C'est faire au bon parti de trop grandes injures,</l>
             <l n="682" xml:id="l682">Que de vous figurer ces tristes aventures.</l>
             <l n="683" xml:id="l683">On ne perd point sa cause et ses noms glorieux,</l>
             <l n="684" xml:id="l684">Quand on a le bon droit, et pour Juges les Dieux.</l>
           </sp>
-          <sp xml:id="II04-25" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-25">
             <speaker>DYNAMIS.</speaker>
             <l n="685" xml:id="l685">Enfin vous me forcez d'achever un ouvrage</l>
             <l n="686" xml:id="l686">Qu'un glorieux mépris inspire à mon courage,</l>
@@ -1153,11 +1158,11 @@
             <l n="711" xml:id="l711">Alors à mon repos j'ajouterai ce bien,</l>
             <l n="712" xml:id="l712">De sauver votre Sceptre en méprisant le mien.</l>
           </sp>
-          <sp xml:id="II04-26" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-26">
             <speaker>POLIANTE.</speaker>
-            <l n="713" xml:id="l713" part="I">C'est donc pour me chasser que vous...</l>
+            <l n="713" part="I" xml:id="l713">C'est donc pour me chasser que vous...</l>
           </sp>
-          <sp xml:id="II04-27" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-27">
             <speaker>DYNAMIS.</speaker>
             <l part="F">C'est pour contraindre</l>
             <l n="714" xml:id="l714">La fortune à gémir, elle qui me fit plaindre.</l>
@@ -1166,21 +1171,21 @@
             <l n="717" xml:id="l717">Enfin de la Grandeur je veux quitter les marques,</l>
             <l n="718" xml:id="l718">Et vous mettre, mon frère, au nombre des Monarques.</l>
           </sp>
-          <sp xml:id="II04-28" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-28">
             <speaker>TRASILE.</speaker>
             <l n="719" xml:id="l719">Moi ! Madame, non, non, je suis trop satisfait</l>
             <l n="720" xml:id="l720">Du titre glorieux de fidèle sujet.</l>
           </sp>
-          <sp xml:id="II04-29" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-29">
             <speaker>DYNAMIS.</speaker>
             <l n="721" xml:id="l721">Un Prince bon sujet donne une belle marque</l>
             <l n="722" xml:id="l722">Que s'il avait un Trône il serait bon Monarque.</l>
           </sp>
-          <sp xml:id="II04-30" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-30">
             <speaker>TRASILE.</speaker>
             <l n="723" xml:id="l723">Ha ! Madame, le Sceptre est bien entre vos mains.</l>
           </sp>
-          <sp xml:id="II04-31" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-31">
             <speaker>DYNAMIS.</speaker>
             <l n="724" xml:id="l724">Craignez-vous de paraître au rang des Souverains ?</l>
             <l n="725" xml:id="l725">Craignez-vous les soucis que la Couronne excite ?</l>
@@ -1190,7 +1195,7 @@
             <l n="729" xml:id="l729">Que ce commandement que je te fais sans peine,</l>
             <l n="730" xml:id="l730">Soit enfin le dernier que nous ferons en Reine.</l>
           </sp>
-          <sp xml:id="II04-32" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-32">
             <speaker>TRASILE.</speaker>
             <l n="731" xml:id="l731">Puisque vous le voulez je prendrai ce fardeau,</l>
             <l n="732" xml:id="l732">Que je trouve déjà plus pesant qu'il n'est beau.</l>
@@ -1201,7 +1206,7 @@
             <l n="737" xml:id="l737">Qu'afin de vous le rendre en frère incomparable,</l>
             <l n="738" xml:id="l738">Par la perte d'Arcas plus puissant et plus stable.</l>
           </sp>
-          <sp xml:id="II04-33" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-33">
             <speaker>POLIANTE.</speaker>
             <l n="739" xml:id="l739">Ô frère généreux et digne de sa soeur !</l>
             <l n="740" xml:id="l740">Lequel, ô justes Dieux, fait voir un plus grand coeur,</l>
@@ -1228,11 +1233,11 @@
             <l n="761" xml:id="l761">Et pour une alliance et plus noble et plus chère</l>
             <l n="762" xml:id="l762">Que j'offre ici ma soeur à votre illustre frère.</l>
           </sp>
-          <sp xml:id="II04-34" who="PROXENE">
+          <sp who="PROXENE" xml:id="II04-34">
             <speaker>PROXÈNE.</speaker>
-            <l n="763" xml:id="l763" part="I">Sa soeur ! Qu'entends-je ?</l>
+            <l n="763" part="I" xml:id="l763">Sa soeur ! Qu'entends-je ?</l>
           </sp>
-          <sp xml:id="II04-35" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="II04-35">
             <speaker>DYNAMIS.</speaker>
             <l part="F">J'accepte et je reçois</l>
             <l n="764" xml:id="l764">Ce glorieux présent que me fait un grand Roi.</l>
@@ -1243,19 +1248,19 @@
             <l n="769" xml:id="l769">Je n'ai plus rien ici qu'Arcas puisse prétendre,</l>
             <l n="770" xml:id="l770">Votre Trône est mon Trône, allez donc le défendre.</l>
           </sp>
-          <sp xml:id="II04-36" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="II04-36">
             <speaker>POLIANTE.</speaker>
-            <l n="771" xml:id="l771" part="I">Où me réduisez-vous ?</l>
+            <l n="771" part="I" xml:id="l771">Où me réduisez-vous ?</l>
           </sp>
-          <sp xml:id="II04-37" who="PROXENE">
+          <sp who="PROXENE" xml:id="II04-37">
             <speaker>PROXÈNE.</speaker>
             <l part="F">Elle sort, il la suit.</l>
           </sp>
-          <sp xml:id="II04-38" who="TRASILE">
+          <sp who="TRASILE" xml:id="II04-38">
             <speaker>TRASILE.</speaker>
             <l n="772" xml:id="l772">Puis-je de mes desseins espérer plus de fruit ?</l>
           </sp>
-          <sp xml:id="II04-39" who="PROXENE">
+          <sp who="PROXENE" xml:id="II04-39">
             <speaker>PROXÈNE.</speaker>
             <l n="773" xml:id="l773">Il passe sans me voir, et son âme inconstante</l>
             <l n="774" xml:id="l774">Semble déjà goûter l'offre de Poliante.</l>
@@ -1264,11 +1269,11 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="III01">
           <head>SCÈNE PREMIÈRE. Proxène, Poliante. <listPerson type="configuration" xml:id="conf10"><person corresp="#PROXENE"/><person corresp="#POLIANTE"/></listPerson></head>
-          <sp xml:id="III01-1" who="PROXENE">
+          <sp who="PROXENE" xml:id="III01-1">
             <speaker>PROXÈNE.</speaker>
             <l n="777" xml:id="l777">Trasile me fuirait ! Moi qui connais son crime,</l>
             <l n="778" xml:id="l778">Et qui puis aisément en faire ma victime ?</l>
@@ -1291,7 +1296,7 @@
             <l n="795" xml:id="l795">Et qu'un prompt châtiment montre à vos factieux</l>
             <l n="796" xml:id="l796">Que le parti des Rois est le parti des Dieux ?</l>
           </sp>
-          <sp xml:id="III01-2" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="III01-2">
             <speaker>POLIANTE.</speaker>
             <l n="797" xml:id="l797">Oui, le Ciel a pour moi combattu mes rebelles,</l>
             <l n="798" xml:id="l798">Je viens d'en recevoir les heureuses nouvelles :</l>
@@ -1302,7 +1307,7 @@
             <l n="803" xml:id="l803">En ce même moment, qui nous a satisfaits,</l>
             <l n="804" xml:id="l804">On voyait arriver le Courrier de la Paix.</l>
           </sp>
-          <sp xml:id="III01-3" who="PROXENE">
+          <sp who="PROXENE" xml:id="III01-3">
             <speaker>PROXÈNE.</speaker>
             <l n="805" xml:id="l805">Que mon coeur, qui respecte et chérit votre gloire !</l>
             <l n="806" xml:id="l806">Prend de part aux douceurs d'une telle victoire.</l>
@@ -1314,17 +1319,17 @@
             <l n="812" xml:id="l812">Pourrait-il mériter le Trône qui l'attend ?</l>
             <l n="813" xml:id="l813">Non, non, ce que l'on dit se dit sans apparence.</l>
           </sp>
-          <sp xml:id="III01-4" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="III01-4">
             <speaker>POLIANTE.</speaker>
-            <l n="814" xml:id="l814" part="I">Que dit-on ?</l>
+            <l n="814" part="I" xml:id="l814">Que dit-on ?</l>
           </sp>
-          <sp xml:id="III01-5" who="PROXENE">
+          <sp who="PROXENE" xml:id="III01-5">
             <speaker>PROXÈNE.</speaker>
             <l part="F">Qu'il se paît d'une vaine constance,</l>
             <l n="815" xml:id="l815">Et qu'enfin ses esprits autre part arrêtés,</l>
             <l n="816" xml:id="l816">Refusent le grand bien que vous lui présentez.</l>
           </sp>
-          <sp xml:id="III01-6" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="III01-6">
             <speaker>POLIANTE.</speaker>
             <l n="817" xml:id="l817">Que Trasile à ma soeur refuse sa conquête !</l>
             <l n="818" xml:id="l818">Que dans d'autres liens une autre Amour l'arrête !</l>
@@ -1337,7 +1342,7 @@
             <l n="825" xml:id="l825">Si vous la connaissez, cachez-lui ce mystère,</l>
             <l n="826" xml:id="l826">De peur qu'en aimant trop elle n'en désespère.</l>
           </sp>
-          <sp xml:id="III01-7" who="PROXENE">
+          <sp who="PROXENE" xml:id="III01-7">
             <speaker>PROXÈNE.</speaker>
             <l n="827" xml:id="l827">Je m'en consolerais, Seigneur, si c'était moi.</l>
             <l n="828" xml:id="l828">C'est gloire de céder à la soeur d'un grand Roi.</l>
@@ -1346,29 +1351,29 @@
             <l n="831" xml:id="l831">La constance n'est pas en cette occasion</l>
             <l n="832" xml:id="l832">La vertu des Amants de sa condition.</l>
           </sp>
-          <sp xml:id="III01-8" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="III01-8">
             <speaker>POLIANTE.</speaker>
-            <l n="833" xml:id="l833" part="I">Quoi vous prenez parti ?</l>
+            <l n="833" part="I" xml:id="l833">Quoi vous prenez parti ?</l>
           </sp>
-          <sp xml:id="III01-9" who="PROXENE">
+          <sp who="PROXENE" xml:id="III01-9">
             <speaker>PROXÈNE.</speaker>
             <l part="F">Non, non, ou l'on doit croire</l>
             <l n="834" xml:id="l834">Que je prends le parti de votre seule gloire</l>
           </sp>
-          <sp xml:id="III01-10" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="III01-10">
             <speaker>POLIANTE.</speaker>
             <l n="835" xml:id="l835">Ainsi vous ajoutez d'autres biens à mes biens.</l>
-            <l n="836" xml:id="l836" part="I">Vous allez chez la Reine ?</l>
+            <l n="836" part="I" xml:id="l836">Vous allez chez la Reine ?</l>
           </sp>
-          <sp xml:id="III01-11" who="PROXENE">
+          <sp who="PROXENE" xml:id="III01-11">
             <speaker>PROXÈNE.</speaker>
             <l part="M">Oui, Seigneur.</l>
           </sp>
-          <sp xml:id="III01-12" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="III01-12">
             <speaker>POLIANTE.</speaker>
             <l part="F">J'en reviens.</l>
           </sp>
-          <sp xml:id="III01-13" who="PROXENE">
+          <sp who="PROXENE" xml:id="III01-13">
             <speaker>PROXÈNE seule.</speaker>
             <l n="837" xml:id="l837">Céderai-je au transport qu'excite la colère ?</l>
             <l n="838" xml:id="l838">Mais j'aperçois la soeur, il faut revoir le frère ;</l>
@@ -1376,9 +1381,9 @@
             <l n="840" xml:id="l840">Alors pour me venger je reverrai la soeur.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="III02">
           <head>SCÈNE II.<listPerson type="configuration" xml:id="conf11"><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="III02-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III02-1">
             <speaker>DYNAMIS seule.</speaker>
             <l n="841" xml:id="l841">À quelle extrémité me suis-je destinée ?</l>
             <l n="842" xml:id="l842">Vouloir abandonner un Trône où je suis née ;</l>
@@ -1438,16 +1443,16 @@
             <l n="896" xml:id="l896">Sont indignes de moi, s'ils ne sont orgueilleux.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="III03">
           <head>SCÈNE III. Dynamis, Trasile. <listPerson type="configuration" xml:id="conf12"><person corresp="#DYNAMIS"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="III03-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III03-1">
             <speaker>DYNAMIS.</speaker>
             <l n="897" xml:id="l897">Mon frère, j'ai d'un oeil qu'éclaire la prudence</l>
             <l n="898" xml:id="l898">Du dessein que j'ai fait regardé l'importance.</l>
             <l n="899" xml:id="l899">Je vois bien qu'il est grand, illustre et généreux,</l>
             <l n="900" xml:id="l900">Et qu'en nous dépouillant il nous rend bien heureux.</l>
           </sp>
-          <sp xml:id="III03-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="III03-2">
             <speaker>TRASILE.</speaker>
             <l n="901" xml:id="l901">Ainsi votre repos, comme celui des Sages,</l>
             <l n="902" xml:id="l902">Ne sera point troublé ni sujet aux orages,</l>
@@ -1456,7 +1461,7 @@
             <l n="905" xml:id="l905">Puisque je n'emploierai la force qu'il me donne</l>
             <l n="906" xml:id="l906">Que pour vous élever plus haut que la Couronne.</l>
           </sp>
-          <sp xml:id="III03-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III03-3">
             <speaker>DYNAMIS.</speaker>
             <l n="907" xml:id="l907">Enfin de quelque espoir qu'on se puisse flatter,</l>
             <l n="908" xml:id="l908">La Couronne a des maux qu'on ne peut éviter ;</l>
@@ -1485,7 +1490,7 @@
             <l n="931" xml:id="l931">Car enfin si le Trône est quelquefois un bien,</l>
             <l n="932" xml:id="l932">C'est quand il est tranquille, et qu'il ne craint plus rien.</l>
           </sp>
-          <sp xml:id="III03-4" who="TRASILE">
+          <sp who="TRASILE" xml:id="III03-4">
             <speaker>TRASILE.</speaker>
             <l n="933" xml:id="l933">Vous me donner bien plus en gardant la Couronne.</l>
             <l n="934" xml:id="l934">Que quand votre faveur me l'offre et me la donne.</l>
@@ -1494,7 +1499,7 @@
             <l n="937" xml:id="l937">Et je venais ici poussé d'un zèle extrême,</l>
             <l n="938" xml:id="l938">Vous donner le conseil qui vous vient de vous-même.</l>
           </sp>
-          <sp xml:id="III03-5" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III03-5">
             <speaker>DYNAMIS.</speaker>
             <l n="939" xml:id="l939">Ainsi puisque les Rois, seuls Juges souverains,</l>
             <l n="940" xml:id="l940">Tiennent comme les Dieux la Justice en leurs mains,</l>
@@ -1507,21 +1512,21 @@
             <l n="947" xml:id="l947">Le sang d'un Ennemi de l'État et des Lois,</l>
             <l n="948" xml:id="l948">Est le plus beau présent qu'on puisse faire aux Rois.</l>
           </sp>
-          <sp xml:id="III03-6" who="TRASILE">
+          <sp who="TRASILE" xml:id="III03-6">
             <speaker>TRASILE.</speaker>
             <l n="949" xml:id="l949">Mais il fait demander, et je viens de l'apprendre,</l>
             <l n="950" xml:id="l950">Si par ses Députés vous le voulez entendre.</l>
-            <l n="951" xml:id="l951" part="I">Il faudrait l'écouter.</l>
+            <l n="951" part="I" xml:id="l951">Il faudrait l'écouter.</l>
           </sp>
-          <sp xml:id="III03-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III03-7">
             <speaker>DYNAMIS.</speaker>
             <l part="M">L'écouter ?</l>
           </sp>
-          <sp xml:id="III03-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="III03-8">
             <speaker>TRASILE.</speaker>
             <l part="F">Je le crois.</l>
           </sp>
-          <sp xml:id="III03-9" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III03-9">
             <speaker>DYNAMIS.</speaker>
             <l n="952" xml:id="l952">Il faudrait l'écouter ! Vous fait-il de l'effroi ?</l>
             <l n="953" xml:id="l953">Qu'il vienne en criminel qui demande sa grâce,</l>
@@ -1548,9 +1553,9 @@
             <l n="974" xml:id="l974">L'amitié vous apprend ce que vous devez faire.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="III04">
           <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf13"><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="III04-1" who="TRASILE">
+          <sp who="TRASILE" xml:id="III04-1">
             <speaker>TRASILE seul.</speaker>
             <l n="975" xml:id="l975">Mais, ô trop inhumaine et trop cruelle soeur,</l>
             <l n="976" xml:id="l976">L'amitié t'apprend-t-elle à me percer le coeur ?</l>
@@ -1588,9 +1593,9 @@
             <l n="1008" xml:id="l1008">Que peut-être quelqu'un aura quelque succès.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="III05">
           <head>SCÈNE V. Proxène, Trasile. <listPerson type="configuration" xml:id="conf14"><person corresp="#PROXENE"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="III05-1" who="PROXENE">
+          <sp who="PROXENE" xml:id="III05-1">
             <speaker>PROXÈNE.</speaker>
             <l n="1009" xml:id="l1009">Enfin sans de grands maux vous obtenez la gloire</l>
             <l n="1010" xml:id="l1010">Que donne rarement la force et la victoire ;</l>
@@ -1601,11 +1606,11 @@
             <l n="1015" xml:id="l1015">Mais comme d'un objet qui serait odieux,</l>
             <l n="1016" xml:id="l1016">Il détourne de nous et l'oreille et les yeux.</l>
           </sp>
-          <sp xml:id="III05-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="III05-2">
             <speaker>TRASILE.</speaker>
             <l n="1017" xml:id="l1017">Non, je n'épargnerai ni le sang ni la peine.</l>
           </sp>
-          <sp xml:id="III05-3" who="PROXENE">
+          <sp who="PROXENE" xml:id="III05-3">
             <speaker>PROXÈNE.</speaker>
             <l n="1018" xml:id="l1018">Il ne faut plus douter d'une chose certaine.</l>
             <l n="1019" xml:id="l1019">Je n'ai donc plus d'appas, ni Trasile de foi ;</l>
@@ -1617,12 +1622,12 @@
             <l n="1025" xml:id="l1025">Et de quelque mépris que vous donniez des marques,</l>
             <l n="1026" xml:id="l1026">J'excuse cet orgueil en de nouveaux Monarques.</l>
           </sp>
-          <sp xml:id="III05-4" who="TRASILE">
+          <sp who="TRASILE" xml:id="III05-4">
             <speaker>TRASILE.</speaker>
             <l n="1027" xml:id="l1027">Venez-vous donc, cruelle, au lieu de m'assister,</l>
             <l n="1028" xml:id="l1028">Aider à la fortune à me persécuter ?</l>
           </sp>
-          <sp xml:id="III05-5" who="PROXENE">
+          <sp who="PROXENE" xml:id="III05-5">
             <speaker>PROXÈNE.</speaker>
             <l n="1029" xml:id="l1029">Vous plaignez-vous déjà que la Couronne pèse ?</l>
             <l n="1030" xml:id="l1030">Que l'on n'est pas assis sur un Trône à son aise ?</l>
@@ -1633,20 +1638,20 @@
             <l n="1035" xml:id="l1035">Ce n'est pas mériter pour prix de ses travaux,</l>
             <l n="1036" xml:id="l1036">La gloire d'être Roi, que d'en craindre les maux.</l>
           </sp>
-          <sp xml:id="III05-6" who="TRASILE">
+          <sp who="TRASILE" xml:id="III05-6">
             <speaker>TRASILE.</speaker>
             <l n="1037" xml:id="l1037">Est-ce haine, risée, ou plutôt jalousie ?</l>
           </sp>
-          <sp xml:id="III05-7" who="PROXENE">
+          <sp who="PROXENE" xml:id="III05-7">
             <speaker>PROXÈNE.</speaker>
             <l n="1038" xml:id="l1038">C'est, si vous le voulez, c'est une frénésie,</l>
-            <l n="1039" xml:id="l1039" part="I">Mais...</l>
+            <l n="1039" part="I" xml:id="l1039">Mais...</l>
           </sp>
-          <sp xml:id="III05-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="III05-8">
             <speaker>TRASILE.</speaker>
             <l part="M">Mais écoutez-moi...</l>
           </sp>
-          <sp xml:id="III05-9" who="PROXENE">
+          <sp who="PROXENE" xml:id="III05-9">
             <speaker>PROXÈNE.</speaker>
             <l part="F">Plus vous me parlerez,</l>
             <l n="1040" xml:id="l1040">Esprit ambitieux, plus vous me tromperez,</l>
@@ -1660,9 +1665,9 @@
             <l n="1048" xml:id="l1048">Quiconque sait son crime, et qui peut se venger.</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="III06">
           <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf15"><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="III06-1" who="TRASILE">
+          <sp who="TRASILE" xml:id="III06-1">
             <speaker>TRASILE seul.</speaker>
             <l n="1049" xml:id="l1049">Quoi, tu m'as menacé ? Mais parmi ces disgrâces,</l>
             <l n="1050" xml:id="l1050">Tu m'apprends à te perdre alors que tu menaces.</l>
@@ -1704,80 +1709,80 @@
             <l n="1086" xml:id="l1086">Et sauvons-nous enfin d'un crime par un crime.</l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="III07">
           <head>SCÈNE VII. Proclée, Trasile. <listPerson type="configuration" xml:id="conf16"><person corresp="#PROCLEE"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="III07-1" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="III07-1">
             <speaker>PROCLÉE.</speaker>
-            <l n="1087" xml:id="l1087" part="I">Seigneur, où courez-vous ?</l>
+            <l n="1087" part="I" xml:id="l1087">Seigneur, où courez-vous ?</l>
           </sp>
-          <sp xml:id="III07-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="III07-2">
             <speaker>TRASILE.</speaker>
             <l part="M">Chez la Reine.</l>
           </sp>
-          <sp xml:id="III07-3" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="III07-3">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Je crois</l>
-            <l n="1088" xml:id="l1088" part="I">Que vous devez attendre.</l>
+            <l n="1088" part="I" xml:id="l1088">Que vous devez attendre.</l>
           </sp>
-          <sp xml:id="III07-4" who="TRASILE">
+          <sp who="TRASILE" xml:id="III07-4">
             <speaker>TRASILE.</speaker>
             <l part="F">Attendre, attendre, moi !</l>
-            <l n="1089" xml:id="l1089" part="I">En sais-tu le sujet ?</l>
+            <l n="1089" part="I" xml:id="l1089">En sais-tu le sujet ?</l>
           </sp>
-          <sp xml:id="III07-5" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="III07-5">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Quelqu'un en diligence</l>
             <l n="1090" xml:id="l1090">Est venu pour lui dire un secret d'importance.</l>
           </sp>
-          <sp xml:id="III07-6" who="TRASILE">
+          <sp who="TRASILE" xml:id="III07-6">
             <speaker>TRASILE.</speaker>
-            <l n="1091" xml:id="l1091" part="I">Qui donc ? Est-ce Proxène ? Ô dieux !</l>
+            <l n="1091" part="I" xml:id="l1091">Qui donc ? Est-ce Proxène ? Ô dieux !</l>
           </sp>
-          <sp xml:id="III07-7" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="III07-7">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Je n'en sais rien.</l>
           </sp>
-          <sp xml:id="III07-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="III07-8">
             <speaker>TRASILE.</speaker>
             <l n="1092" xml:id="l1092">Que ferai-je ?</l>
           </sp>
-          <sp xml:id="III07-9" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="III07-9">
             <speaker>PROCLÉE.</speaker>
             <l part="M">Qu'a-t-il ?</l>
           </sp>
-          <sp xml:id="III07-10" who="TRASILE">
+          <sp who="TRASILE" xml:id="III07-10">
             <speaker>TRASILE.</speaker>
             <l part="F">Rompons leur entretien.</l>
           </sp>
-          <sp xml:id="III07-11" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="III07-11">
             <speaker>PROCLÉE.</speaker>
             <l n="1093" xml:id="l1093">Seigneur, pour mieux savoir ce qu'on est venu dire,</l>
             <l n="1094" xml:id="l1094">La Reine a commandé que chacun se retire.</l>
           </sp>
-          <sp xml:id="III07-12" who="TRASILE">
+          <sp who="TRASILE" xml:id="III07-12">
             <speaker>TRASILE.</speaker>
             <l n="1095" xml:id="l1095">Et que je n'entre point ? Non, non, mais avançons.</l>
           </sp>
-          <sp xml:id="III07-13" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="III07-13">
             <speaker>PROCLÉE.</speaker>
-            <l n="1096" xml:id="l1096" part="I">Ô Dieux, qu'il est troublé !</l>
+            <l n="1096" part="I" xml:id="l1096">Ô Dieux, qu'il est troublé !</l>
           </sp>
-          <sp xml:id="III07-14" who="TRASILE">
+          <sp who="TRASILE" xml:id="III07-14">
             <speaker>TRASILE.</speaker>
             <l part="F">Vainquons, ou périssons.</l>
           </sp>
         </div2>
-        <div2 xml:id="III08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="III08">
           <head>SCÈNE VIII. Dynamis, Trasile, Proclée. <listPerson type="configuration" xml:id="conf17"><person corresp="#DYNAMIS"/><person corresp="#TRASILE"/><person corresp="#PROCLEE"/></listPerson></head>
-          <sp xml:id="III08-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III08-1">
             <speaker>DYNAMIS.</speaker>
             <l n="1097" xml:id="l1097">Ha mon frère ! Ha Proclée ! Ha que viens-je d'apprendre ?</l>
           </sp>
-          <sp xml:id="III08-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="III08-2">
             <speaker>TRASILE.</speaker>
-            <l n="1098" xml:id="l1098" part="I">Quoi donc ?</l>
+            <l n="1098" part="I" xml:id="l1098">Quoi donc ?</l>
           </sp>
-          <sp xml:id="III08-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III08-3">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Un si grand mal, qu'on ne peut le comprendre ;</l>
             <l n="1099" xml:id="l1099">Un attentat si lâche, et si prodigieux,</l>
@@ -1787,24 +1792,24 @@
             <l n="1103" xml:id="l1103">Poliante, dit-on, hélas le croirez-vous ?</l>
             <l n="1104" xml:id="l1104">Est le lâche assassin du feu Roi mon époux.</l>
           </sp>
-          <sp xml:id="III08-4" who="TRASILE">
+          <sp who="TRASILE" xml:id="III08-4">
             <speaker>TRASILE.</speaker>
-            <l n="1105" xml:id="l1105" part="I">Poliante !</l>
+            <l n="1105" part="I" xml:id="l1105">Poliante !</l>
           </sp>
-          <sp xml:id="III08-5" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III08-5">
             <speaker>DYNAMIS.</speaker>
             <l part="F">C'est là ce qu'on vient de me dire.</l>
           </sp>
-          <sp xml:id="III08-6" who="TRASILE">
+          <sp who="TRASILE" xml:id="III08-6">
             <speaker>TRASILE.</speaker>
-            <l n="1106" xml:id="l1106" part="I">Ô Dieux, qui le croirait !</l>
+            <l n="1106" part="I" xml:id="l1106">Ô Dieux, qui le croirait !</l>
           </sp>
-          <sp xml:id="III08-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III08-7">
             <speaker>DYNAMIS.</speaker>
             <l part="F">À la fin je respire.</l>
             <l n="1107" xml:id="l1107">Mais de qui tenez-vous ce rapport odieux ?</l>
           </sp>
-          <sp xml:id="III08-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="III08-8">
             <speaker>TRASILE.</speaker>
             <l n="1108" xml:id="l1108">D'un homme en qui l'on voit la Justice des Dieux,</l>
             <l n="1109" xml:id="l1109">D'un fidèle sujet, bref du vieux Euristène,</l>
@@ -1813,14 +1818,14 @@
             <l n="1112" xml:id="l1112">Qu'il me refuse ici la parole et la voix.</l>
           </sp>
         </div2>
-        <div2 xml:id="III09" type="scene" n="9">
+        <div2 n="9" type="scene" xml:id="III09">
           <head>SCÈNE IX. Dynamis, Eursitène, Trasile. <listPerson type="configuration" xml:id="conf18"><person corresp="#DYNAMIS"/><person corresp="#EURISTENE"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="III09-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III09-1">
             <speaker>DYNAMIS.</speaker>
             <l n="1113" xml:id="l1113">Faites, faites encor ce rapport effroyable,</l>
             <l n="1114" xml:id="l1114">Qui semble trop affreux, pour être véritable.</l>
           </sp>
-          <sp xml:id="III09-2" who="EURISTENE">
+          <sp who="EURISTENE" xml:id="III09-2">
             <speaker>EURISTÈNE.</speaker>
             <l n="1115" xml:id="l1115">C'est exciter la haine et l'attirer sur moi,</l>
             <l n="1116" xml:id="l1116">De parler sans témoins contre un si puissant Roi ;</l>
@@ -1853,12 +1858,12 @@
             <l n="1143" xml:id="l1143">Qui retirait du corps du Roi mourant ou mort</l>
             <l n="1144" xml:id="l1144">Un poignard effroyable avec un grand effort.</l>
           </sp>
-          <sp xml:id="III09-3" who="TRASILE">
+          <sp who="TRASILE" xml:id="III09-3">
             <speaker>TRASILE.</speaker>
             <l n="1145" xml:id="l1145">Il est vrai, qu'on trouva sur son corps déplorable</l>
             <l n="1146" xml:id="l1146">L'instrument de sa mort, ce poignard effroyable.</l>
           </sp>
-          <sp xml:id="III09-4" who="EURISTENE">
+          <sp who="EURISTENE" xml:id="III09-4">
             <speaker>EURISTÈNE.</speaker>
             <l n="1147" xml:id="l1147">À ce spectacle affreux et si plein de fureur,</l>
             <l n="1148" xml:id="l1148">Je tombe en même temps de faiblesse et d'horreur ;</l>
@@ -1867,12 +1872,12 @@
             <l n="1151" xml:id="l1151">De peur que l'assassin, venant à m'aviser,</l>
             <l n="1152" xml:id="l1152">Ne perdit le témoin qui pouvait l'accuser.</l>
           </sp>
-          <sp xml:id="III09-5" who="TRASILE">
+          <sp who="TRASILE" xml:id="III09-5">
             <speaker>TRASILE.</speaker>
             <l n="1153" xml:id="l1153">Mais pourquoi sachant bien le poids de cette affaire,</l>
             <l n="1154" xml:id="l1154">Avez-vous fait si tard ce rapport nécessaire ?</l>
           </sp>
-          <sp xml:id="III09-6" who="EURISTENE">
+          <sp who="EURISTENE" xml:id="III09-6">
             <speaker>EURISTÈNE.</speaker>
             <l n="1155" xml:id="l1155">C'est que jusqu'ici le destin a permis</l>
             <l n="1156" xml:id="l1156">Que je sois demeuré parmi les Ennemis :</l>
@@ -1883,45 +1888,45 @@
             <l n="1161" xml:id="l1161">Esclave malheureux, que la fortune adverse</l>
             <l n="1162" xml:id="l1162">Loin du monde habité priva de tout commerce.</l>
           </sp>
-          <sp xml:id="III09-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III09-7">
             <speaker>DYNAMIS.</speaker>
             <l n="1163" xml:id="l1163">Ô Dieux, qui le peut croire, et ne s'emporter pas !</l>
           </sp>
-          <sp xml:id="III09-8" who="TRASILE">
+          <sp who="TRASILE" xml:id="III09-8">
             <speaker>TRASILE.</speaker>
             <l n="1164" xml:id="l1164">Enfin vous connaissez l'innocence d'Arcas.</l>
           </sp>
-          <sp xml:id="III09-9" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III09-9">
             <speaker>DYNAMIS.</speaker>
             <l n="1165" xml:id="l1165">Qu'on tienne tout secret, et qu'on garde Euristène,</l>
             <l n="1166" xml:id="l1166">Ici tout m'épouvante, et tout me met en peine.</l>
             <l n="1167" xml:id="l1167">Mais le temps n'est pas loin qu'il faut entendre ceux</l>
             <l n="1168" xml:id="l1168">Que les Grands de l'État m'ont députés pour eux.</l>
-            <l n="1169" xml:id="l1169" part="I">Je dois m'y disposer.</l>
+            <l n="1169" part="I" xml:id="l1169">Je dois m'y disposer.</l>
           </sp>
-          <sp xml:id="III09-10" who="TRASILE">
+          <sp who="TRASILE" xml:id="III09-10">
             <speaker>TRASILE.</speaker>
             <l part="F">Voulez-vous les entendre.</l>
           </sp>
-          <sp xml:id="III09-11" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III09-11">
             <speaker>DYNAMIS.</speaker>
             <l n="1170" xml:id="l1170">S'ils ont de bons conseils je suis prête à les prendre.</l>
           </sp>
-          <sp xml:id="III09-12" who="TRASILE">
+          <sp who="TRASILE" xml:id="III09-12">
             <speaker>TRASILE.</speaker>
             <l n="1171" xml:id="l1171">Vous avez refusé d'entendre ceux d'Arcas.</l>
           </sp>
-          <sp xml:id="III09-13" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="III09-13">
             <speaker>DYNAMIS.</speaker>
             <l n="1172" xml:id="l1172">J'écoute qui me plaît, et ne m'en parlez pas.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="IV01">
           <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf20"><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="IV01-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV01-1">
             <speaker>DYNAMIS.</speaker>
             <l n="1173" xml:id="l1173">Un frère me trahir ! Relevez-vous, Proxène,</l>
             <l n="1174" xml:id="l1174">Passez, et demeurez dans la chambre prochaine.</l>
@@ -1960,37 +1965,37 @@
             <l n="1207" xml:id="l1207">Cachons ce nouveau mal. Hé bien, ces députés.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="IV02">
           <head>SCÈNE II. Proclée, Dynamis. <listPerson type="configuration" xml:id="conf21"><person corresp="#PROCLEE"/><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="IV02-1" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="IV02-1">
             <speaker>PROCLÉE.</speaker>
             <l n="1208" xml:id="l1208">Ils n'attendent la loi que de vos volontés.</l>
           </sp>
-          <sp xml:id="IV02-2" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV02-2">
             <speaker>DYNAMIS.</speaker>
             <l n="1209" xml:id="l1209">Qu'ils attendent mon frère, ô Dieux quelle surprise !</l>
           </sp>
-          <sp xml:id="IV02-3" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="IV02-3">
             <speaker>PROCLÉE.</speaker>
             <l n="1210" xml:id="l1210">À des maux incertains vous donnez trop de prise,</l>
             <l n="1211" xml:id="l1211">Vous avez trop tôt cru ce rapport odieux,</l>
             <l n="1212" xml:id="l1212">Qu'a peut-être inventé le crime ingénieux.</l>
           </sp>
-          <sp xml:id="IV02-4" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV02-4">
             <speaker>DYNAMIS.</speaker>
-            <l n="1213" xml:id="l1213" part="I">Mais Euristène a vu.</l>
+            <l n="1213" part="I" xml:id="l1213">Mais Euristène a vu.</l>
           </sp>
-          <sp xml:id="IV02-5" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="IV02-5">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Mais ce même Euristène,</l>
             <l n="1214" xml:id="l1214">Aux passions d'Arcas peut bien prêter sa haine.</l>
           </sp>
-          <sp xml:id="IV02-6" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV02-6">
             <speaker>DYNAMIS.</speaker>
             <l n="1215" xml:id="l1215">Euristène si sage, et dont la probité</l>
             <l n="1216" xml:id="l1216">Passe facilement jusqu'à la sainteté.</l>
           </sp>
-          <sp xml:id="IV02-7" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="IV02-7">
             <speaker>PROCLÉE.</speaker>
             <l n="1217" xml:id="l1217">Ce n'est pas le premier dont la sainte apparence,</l>
             <l n="1218" xml:id="l1218">A caché l'attentat sous un front d'innocence.</l>
@@ -1999,17 +2004,17 @@
             <l n="1221" xml:id="l1221">Et je crois que celui qui me fait bonne mine,</l>
             <l n="1222" xml:id="l1222">De l'esprit et du coeur me perd et m'assassine.</l>
           </sp>
-          <sp xml:id="IV02-8" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV02-8">
             <speaker>DYNAMIS.</speaker>
             <l n="1223" xml:id="l1223">Quoi ! Tu croirais qu'Arcas déjà presque abattu,</l>
             <l n="1224" xml:id="l1224">Aurait osé tenter une telle vertu ?</l>
           </sp>
-          <sp xml:id="IV02-9" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="IV02-9">
             <speaker>PROCLÉE.</speaker>
             <l n="1225" xml:id="l1225">Aurait-il employé pour cette perfidie,</l>
             <l n="1226" xml:id="l1226">Un méchant qu'on connaît, et dont on se défie ?</l>
           </sp>
-          <sp xml:id="IV02-10" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV02-10">
             <speaker>DYNAMIS.</speaker>
             <l n="1227" xml:id="l1227">Déjà cette pensée a flatté mon Amour.</l>
             <l n="1228" xml:id="l1228">Mais hélas ! D'autres maux veulent paraître au jour ;</l>
@@ -2019,33 +2024,33 @@
             <l n="1232" xml:id="l1232">Je vais de gouffre en gouffre, et d'écueils en écueils ;</l>
             <l n="1233" xml:id="l1233">Et quand j'ai traversé mille et mille supplices,</l>
             <l n="1234" xml:id="l1234">Ce n'est que pour tomber dans d'autres précipices.</l>
-            <l n="1235" xml:id="l1235" part="I">Mais le voici le traître.</l>
+            <l n="1235" part="I" xml:id="l1235">Mais le voici le traître.</l>
           </sp>
-          <sp xml:id="IV02-11" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="IV02-11">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Ô Dieux, qu'ai-je entendu ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="IV03">
           <head>SCÈNE III. Dynamis, Trasile. <listPerson type="configuration" xml:id="conf22"><person corresp="#DYNAMIS"/><person corresp="#TRASILE"/></listPerson></head>
-          <sp xml:id="IV03-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV03-1">
             <speaker>DYNAMIS.</speaker>
             <l n="1236" xml:id="l1236">Enfin les Députés ont assez attendu.</l>
           </sp>
-          <sp xml:id="IV03-2" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV03-2">
             <speaker>TRASILE.</speaker>
             <l n="1237" xml:id="l1237">Ici votre conseil est je crois nécessaire.</l>
           </sp>
-          <sp xml:id="IV03-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV03-3">
             <speaker>DYNAMIS.</speaker>
             <l n="1238" xml:id="l1238">Mon Conseil songe ailleurs aux choses qu'il doit faire.</l>
             <l n="1239" xml:id="l1239">Qu'ils entrent. Prenez place. Il faut les écouter,</l>
             <l n="1240" xml:id="l1240">Et suivre leurs conseils, s'ils peuvent profiter.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Les Députés, Dynamis. <listPerson type="configuration" xml:id="conf23"><person corresp="#deputes"/><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="IV04-1" who="deputes">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Les Députés, Dynamis. <listPerson type="configuration" xml:id="conf23"><person corresp="#DEPUTES"/><person corresp="#DYNAMIS"/></listPerson></head>
+          <sp who="DEPUTES" xml:id="IV04-1">
             <speaker>LES DÉPUTÉS, dont il n'y en a qu'un qui parle.</speaker>
             <l n="1241" xml:id="l1241">Ce n'est point l'intérêt, ce Tyran indomptable,</l>
             <l n="1242" xml:id="l1242">Qui nous a fait paraître en ce lieu vénérable,</l>
@@ -2094,7 +2099,7 @@
             <l n="1285" xml:id="l1285">Nous parlons librement, votre bien nous y porte ;</l>
             <l n="1286" xml:id="l1286">Et quand le zèle est grand, il parle de la sorte.</l>
           </sp>
-          <sp xml:id="IV04-2" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV04-2">
             <speaker>DYNAMIS.</speaker>
             <l n="1287" xml:id="l1287">J'aime la liberté d'un zèle généreux,</l>
             <l n="1288" xml:id="l1288">Et les sages conseils rendent les Rois heureux.</l>
@@ -2104,10 +2109,10 @@
             <l n="1292" xml:id="l1292">J'aurai toujours pour but le bien de mes sujets.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="IV05">
           <head>SCÈNE V. Trasile, Dynamis, Proclée. <listPerson type="configuration" xml:id="conf24"><person corresp="#TRASILE"/><person corresp="#DYNAMIS"/></listPerson></head>
           <stage type="[N/A]">La Reine refuse quelque temps sur ce qu'on lui a dit. </stage>
-          <sp xml:id="IV05-1" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-1">
             <speaker>TRASILE.</speaker>
             <l n="1293" xml:id="l1293">Madame excusez-moi si je romps le silence :</l>
             <l n="1294" xml:id="l1294">Peut-on s'imaginer une telle insolence ?</l>
@@ -2134,7 +2139,7 @@
             <l n="1315" xml:id="l1315">Si c'est avec orgueil qu'ils viennent l'apporter,</l>
             <l n="1316" xml:id="l1316">Un Roi pour son honneur ne doit pas l'écouter.</l>
           </sp>
-          <sp xml:id="IV05-2" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-2">
             <speaker>DYNAMIS.</speaker>
             <l n="1317" xml:id="l1317">Vous me feriez régner par d'étranges maximes.</l>
             <l n="1318" xml:id="l1318">Nous laissons aux Tyrans les fureurs et les crimes.</l>
@@ -2149,7 +2154,7 @@
             <l n="1327" xml:id="l1327">Il faut vous avouer ce que je reconnais,</l>
             <l n="1328" xml:id="l1328">Qu'en vous nommant pour Roi je fis un mauvais choix.</l>
           </sp>
-          <sp xml:id="IV05-3" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-3">
             <speaker>TRASILE.</speaker>
             <l n="1329" xml:id="l1329">Je reçois toutefois, et j'estime et j'approuve</l>
             <l n="1330" xml:id="l1330">Un salutaire avis partout où je le trouve,</l>
@@ -2162,43 +2167,43 @@
             <l n="1337" xml:id="l1337">Ainsi j'approuverais qu'une Amour éclatante</l>
             <l n="1338" xml:id="l1338">Joignit vos grands États à ceux de Poliante</l>
           </sp>
-          <sp xml:id="IV05-4" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-4">
             <speaker>DYNAMIS.</speaker>
             <l n="1339" xml:id="l1339">Ce Prince parricide ! À qui votre courroux</l>
             <l n="1340" xml:id="l1340">Peut enfin demander le sang de mon époux ?</l>
           </sp>
-          <sp xml:id="IV05-5" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-5">
             <speaker>TRASILE.</speaker>
             <l n="1341" xml:id="l1341">Qui l'accuse, Madame ? Un seul homme, peut-être</l>
             <l n="1342" xml:id="l1342">Gagné par un peu d'or, qui s'est rendu son maître.</l>
             <l n="1343" xml:id="l1343">Un seul homme l'accuse ; et de ce grand trépas</l>
             <l n="1344" xml:id="l1344">L'univers tout entier vient accuser Arcas.</l>
           </sp>
-          <sp xml:id="IV05-6" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-6">
             <speaker>DYNAMIS.</speaker>
             <l n="1345" xml:id="l1345">Mais ce seul homme a vu cette action si noire,</l>
             <l n="1346" xml:id="l1346">Que l'Univers entier se contente de croire.</l>
           </sp>
-          <sp xml:id="IV05-7" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-7">
             <speaker>TRASILE.</speaker>
             <l n="1347" xml:id="l1347">Bientôt si vous voulez, sans bruit, sans passion,</l>
             <l n="1348" xml:id="l1348">Personne n'aura vu cette noire action.</l>
           </sp>
-          <sp xml:id="IV05-8" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-8">
             <speaker>DYNAMIS.</speaker>
             <l n="1349" xml:id="l1349">Je sais punir le crime, et l'on n'est pas coupable</l>
             <l n="1350" xml:id="l1350">Pour avoir vu commettre un crime détestable.</l>
           </sp>
-          <sp xml:id="IV05-9" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-9">
             <speaker>TRASILE.</speaker>
             <l n="1351" xml:id="l1351">Il l'est, il l'est assez, de blesser votre espoir,</l>
             <l n="1352" xml:id="l1352">Et d'avoir vu le mal qu'il ne devait pas voir.</l>
           </sp>
-          <sp xml:id="IV05-10" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-10">
             <speaker>DYNAMIS.</speaker>
             <l n="1353" xml:id="l1353">Quoi vous me conseillez l'hymen de Poliante ?</l>
           </sp>
-          <sp xml:id="IV05-11" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-11">
             <speaker>TRASILE.</speaker>
             <l n="1354" xml:id="l1354">Régnez, régnez, Madame, et vous rendez contente.</l>
             <l n="1355" xml:id="l1355">Oui, je vous le conseille, et que sert de régner,</l>
@@ -2206,7 +2211,7 @@
             <l n="1357" xml:id="l1357">Suivez enfin les lois que l'Amour vous peut faire.</l>
             <l n="1358" xml:id="l1358">Le plus beau fruit du Sceptre est de se satisfaire.</l>
           </sp>
-          <sp xml:id="IV05-12" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-12">
             <speaker>DYNAMIS.</speaker>
             <l n="1359" xml:id="l1359">Ha cruel ! Ha méchant ! Indigne d'une soeur</l>
             <l n="1360" xml:id="l1360">Qui vous a jusqu'ici montré trop de douceur.</l>
@@ -2223,64 +2228,64 @@
             <l n="1371" xml:id="l1371">C'est qu'il faut que mon crime abattant mes appuis</l>
             <l n="1372" xml:id="l1372">Serve aux tiens de degré pour monter où je suis.</l>
           </sp>
-          <sp xml:id="IV05-13" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-13">
             <speaker>TRASILE.</speaker>
             <l n="1373" xml:id="l1373">Moi, j'aurais ces desseins ? Le sang et la Nature</l>
             <l n="1374" xml:id="l1374">Me défendent assez contre cette imposture.</l>
           </sp>
-          <sp xml:id="IV05-14" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-14">
             <speaker>DYNAMIS.</speaker>
             <l n="1375" xml:id="l1375">La Nature et le sang par vos crimes confus,</l>
             <l n="1376" xml:id="l1376">S'étonnent de se voir jusques-là corrompus.</l>
-            <l n="1377" xml:id="l1377" part="I">Oui, méchant, je sais tout.</l>
+            <l n="1377" part="I" xml:id="l1377">Oui, méchant, je sais tout.</l>
           </sp>
-          <sp xml:id="IV05-15" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-15">
             <speaker>TRASILE.</speaker>
             <l part="F">Que savez-vous, Madame.</l>
           </sp>
-          <sp xml:id="IV05-16" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-16">
             <speaker>DYNAMIS.</speaker>
             <l n="1378" xml:id="l1378">Le voulez-vous savoir, regardez dans votre âme.</l>
           </sp>
-          <sp xml:id="IV05-17" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-17">
             <speaker>TRASILE.</speaker>
             <l n="1379" xml:id="l1379">Elle est pleine pour vous et de zèle et de foi.</l>
           </sp>
-          <sp xml:id="IV05-18" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-18">
             <speaker>DYNAMIS.</speaker>
             <l n="1380" xml:id="l1380">Il faut s'en éclaircir, et pour vous et pour moi.</l>
           </sp>
-          <sp xml:id="IV05-19" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-19">
             <speaker>TRASILE.</speaker>
             <l n="1381" xml:id="l1381">Je ne crains rien, Madame, à quoi que l'on m'expose.</l>
           </sp>
-          <sp xml:id="IV05-20" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-20">
             <speaker>DYNAMIS.</speaker>
             <l n="1382" xml:id="l1382">Et moi j'apprends de vous à craindre toute chose.</l>
           </sp>
-          <sp xml:id="IV05-21" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-21">
             <speaker>TRASILE.</speaker>
             <l n="1383" xml:id="l1383">Vous reprendrez bientôt un meilleur sentiment.</l>
           </sp>
-          <sp xml:id="IV05-22" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-22">
             <speaker>DYNAMIS.</speaker>
             <l n="1384" xml:id="l1384">Cependant demeurez dans cet appartement,</l>
             <l n="1385" xml:id="l1385">Et pour vous témoignez à quel point je vous aime,</l>
             <l n="1386" xml:id="l1386">Ici vous répondrez vous-même de vous-même.</l>
           </sp>
-          <sp xml:id="IV05-23" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-23">
             <speaker>TRASILE.</speaker>
             <l n="1387" xml:id="l1387">Il vous faut obéir, mais c'est me traiter mal.</l>
           </sp>
-          <sp xml:id="IV05-24" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-24">
             <speaker>DYNAMIS.</speaker>
             <l n="1388" xml:id="l1388">Un autre ferait pis en un péril égal.</l>
           </sp>
-          <sp xml:id="IV05-25" who="TRASILE">
+          <sp who="TRASILE" xml:id="IV05-25">
             <speaker>TRASILE.</speaker>
-            <l n="1389" xml:id="l1389" part="I">Est-il en sûreté ?</l>
+            <l n="1389" part="I" xml:id="l1389">Est-il en sûreté ?</l>
           </sp>
-          <sp xml:id="IV05-26" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV05-26">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Ne crains pas le contraire,</l>
             <l n="1390" xml:id="l1390">L'ordre est déjà donné de ce que l'on doit faire.</l>
@@ -2288,9 +2293,9 @@
             <l n="1392" xml:id="l1392">Donne Proxène en garde à la sage Argénis.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
+        <div2 n="6" type="scene" xml:id="IV06">
           <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf25"><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="IV06-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV06-1">
             <speaker>DYNAMIS seule.</speaker>
             <l n="1393" xml:id="l1393">Hélas jusqu'à quel point mon malheur est extrême,</l>
             <l n="1394" xml:id="l1394">Que s'il faut me venger, c'est sur tout ce que j'aime ;</l>
@@ -2338,12 +2343,12 @@
             <l n="1436" xml:id="l1436">Prononcer contre nous un jugement de mort ?</l>
             <l n="1437" xml:id="l1437">Mais devons-nous croire tout, et nous tromper nous-même ?</l>
             <l n="1438" xml:id="l1438">Mais que ne croit-on pas, quand on craint et qu'on aime ?</l>
-            <l n="1439" xml:id="l1439" part="I">Hélas ! Mais je le vois.</l>
+            <l n="1439" part="I" xml:id="l1439">Hélas ! Mais je le vois.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
+        <div2 n="7" type="scene" xml:id="IV07">
           <head>SCÈNE VII. Poliante, Dynamis.<listPerson type="configuration" xml:id="conf26"><person corresp="#POLIANTE"/><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="IV07-1" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-1">
             <speaker>POLIANTE.</speaker>
             <l part="F">Enfin je crois qu'Arcas</l>
             <l n="1440" xml:id="l1440">Punis de ses desseins ne triomphera pas.</l>
@@ -2360,35 +2365,35 @@
             <l n="1451" xml:id="l1451">Craignez-vous le moment heureux et fortuné</l>
             <l n="1452" xml:id="l1452">Qui fait voir l'ennemi défait et ruiné ?</l>
           </sp>
-          <sp xml:id="IV07-2" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-2">
             <speaker>DYNAMIS.</speaker>
             <l n="1453" xml:id="l1453">Ô prince ! Ô Dieux témoins d'un acte si perfide,</l>
             <l n="1454" xml:id="l1454">Oui je crains de punir un Prince parricide.</l>
           </sp>
-          <sp xml:id="IV07-3" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-3">
             <speaker>POLIANTE.</speaker>
             <l n="1455" xml:id="l1455">Par quels charmes puissants un Prince furieux</l>
             <l n="1456" xml:id="l1456">S'est-il rendu si tôt agréable à vos yeux ?</l>
           </sp>
-          <sp xml:id="IV07-4" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-4">
             <speaker>DYNAMIS.</speaker>
             <l n="1457" xml:id="l1457">Par les charmes puissants de cette vertu même,</l>
             <l n="1458" xml:id="l1458">Par qui vous me gagnez, et par qui je vous aime.</l>
             <l n="1459" xml:id="l1459">Mais pour ne rien cacher parmi de si grands coups,</l>
             <l n="1460" xml:id="l1460">Si ce qu'on dit est vrai, ce coupable c'est vous.</l>
           </sp>
-          <sp xml:id="IV07-5" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-5">
             <speaker>POLIANTE.</speaker>
-            <l n="1461" xml:id="l1461" part="I">Moi !</l>
+            <l n="1461" part="I" xml:id="l1461">Moi !</l>
           </sp>
-          <sp xml:id="IV07-6" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-6">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Le crime étant fait, étant irrévocable,</l>
             <l n="1462" xml:id="l1462">Je voudrais pour le moins qu'un autre en fût coupable.</l>
             <l n="1463" xml:id="l1463">Enfin l'on vous a vu le poignard à la main,</l>
             <l n="1464" xml:id="l1464">D'un Roi votre allié tirer l'âme du sein.</l>
           </sp>
-          <sp xml:id="IV07-7" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-7">
             <speaker>POLIANTE.</speaker>
             <l n="1465" xml:id="l1465">Non, je ne nierai point d'une bouche tremblante</l>
             <l n="1466" xml:id="l1466">Qu'on n'ait vu le poignard dans cette main sanglante.</l>
@@ -2411,12 +2416,12 @@
             <l n="1483" xml:id="l1483">Les Dieux qui voient tout avec les mêmes soins,</l>
             <l n="1484" xml:id="l1484">Parleraient de la sorte, eux qui sont mes témoins.</l>
           </sp>
-          <sp xml:id="IV07-8" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-8">
             <speaker>DYNAMIS.</speaker>
             <l n="1485" xml:id="l1485">Pourquoi donc jusqu'ici, comme l'on cache un crime,</l>
             <l n="1486" xml:id="l1486">Nous avez-vous caché cet acte légitime.</l>
           </sp>
-          <sp xml:id="IV07-9" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-9">
             <speaker>POLIANTE.</speaker>
             <l n="1487" xml:id="l1487">De crainte d'obliger de secrets ennemis</l>
             <l n="1488" xml:id="l1488">À m'accuser d'un mal que je n'ai pas commis.</l>
@@ -2424,17 +2429,17 @@
             <l n="1490" xml:id="l1490">Qu'à vous faire plutôt soupçonner l'innocence ?</l>
             <l n="1491" xml:id="l1491">Vous en a-t-on plus dit pour me rendre confus ?</l>
           </sp>
-          <sp xml:id="IV07-10" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-10">
             <speaker>DYNAMIS.</speaker>
             <l n="1492" xml:id="l1492">L'on n'en a pas plus dit, mais on en croira plus.</l>
             <l n="1493" xml:id="l1493">Et je crois cependant que pour sauver ma gloire</l>
             <l n="1494" xml:id="l1494">Je dois sur mon amour obtenir la victoire.</l>
           </sp>
-          <sp xml:id="IV07-11" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-11">
             <speaker>POLIANTE.</speaker>
-            <l n="1495" xml:id="l1495" part="I">Me croyez-vous coupable.</l>
+            <l n="1495" part="I" xml:id="l1495">Me croyez-vous coupable.</l>
           </sp>
-          <sp xml:id="IV07-12" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-12">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Hélas pour notre bien</l>
             <l n="1496" xml:id="l1496">De peur de me tromper je ne veux croire rien.</l>
@@ -2447,7 +2452,7 @@
             <l n="1503" xml:id="l1503">Il aime, et vous aimez, et l'Amour en tous deux</l>
             <l n="1504" xml:id="l1504">Pourrait être suspect d'un crime si honteux.</l>
           </sp>
-          <sp xml:id="IV07-13" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-13">
             <speaker>POLIANTE.</speaker>
             <l n="1505" xml:id="l1505">Moi soupçonné d'un crime ! Et me voir sans défense !</l>
             <l n="1506" xml:id="l1506">Ô Dieux, montrez-vous Dieux en montrant l'innocence.</l>
@@ -2494,7 +2499,7 @@
             <l n="1547" xml:id="l1547">Est-ce là la fortune et le prix éclatant</l>
             <l n="1548" xml:id="l1548">Que le crime recherche, et dont il est content ?</l>
           </sp>
-          <sp xml:id="IV07-14" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-14">
             <speaker>DYNAMIS.</speaker>
             <l n="1549" xml:id="l1549">Ha Prince, si ma bouche était jamais contrainte</l>
             <l n="1550" xml:id="l1550">De donner à ton coeur cette mortelle atteinte,</l>
@@ -2509,7 +2514,7 @@
             <l n="1559" xml:id="l1559">Car qui veut être aimé quand l'honneur le défend,</l>
             <l n="1560" xml:id="l1560">Ferait pour être aimé ce que le crime apprend.</l>
           </sp>
-          <sp xml:id="IV07-15" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-15">
             <speaker>POLIANTE.</speaker>
             <l n="1561" xml:id="l1561">Non, non, j'ai mérité votre haine indomptable,</l>
             <l n="1562" xml:id="l1562">Si d'un amour honteux je vous juge coupable ;</l>
@@ -2522,7 +2527,7 @@
             <l n="1569" xml:id="l1569">J'aime mieux, en l'état où le Ciel m'abandonne,</l>
             <l n="1570" xml:id="l1570">La haine qui me perd, que l'Amour qui soupçonne.</l>
           </sp>
-          <sp xml:id="IV07-16" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-16">
             <speaker>DYNAMIS.</speaker>
             <l n="1571" xml:id="l1571">Tu demandes ma haine, et parmi nos combats</l>
             <l n="1572" xml:id="l1572">S'il fallait la donner, je ne le pourrais pas.</l>
@@ -2531,7 +2536,7 @@
             <l n="1575" xml:id="l1575">Et je me vengerais d'un Prince souverain,</l>
             <l n="1576" xml:id="l1576">L'Amour dedans le coeur, et la haine en la main.</l>
           </sp>
-          <sp xml:id="IV07-17" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-17">
             <speaker>POLIANTE.</speaker>
             <l n="1577" xml:id="l1577">Au moins vous permettrez à ma faible puissance</l>
             <l n="1578" xml:id="l1578">De faire quelque effort pour sauver l'innocence.</l>
@@ -2540,22 +2545,22 @@
             <l n="1581" xml:id="l1581">Et par même victoire il faut sous la ruine</l>
             <l n="1582" xml:id="l1582">Étouffer de vos maux la fatale origine.</l>
           </sp>
-          <sp xml:id="IV07-18" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-18">
             <speaker>DYNAMIS.</speaker>
             <l n="1583" xml:id="l1583">Ne fais rien pour un coeur peut être envenimé</l>
             <l n="1584" xml:id="l1584">Qui ne sait plus s'il t'aime, et s'il t'a bien aimé.</l>
             <l n="1585" xml:id="l1585">S'il faut haïr un jour ton bras et ton courage,</l>
             <l n="1586" xml:id="l1586">Ne fais rien qui m'oblige à t'aimer davantage.</l>
           </sp>
-          <sp xml:id="IV07-19" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-19">
             <speaker>POLIANTE.</speaker>
             <l n="1587" xml:id="l1587">Je cherche un parricide afin de me sauver.</l>
           </sp>
-          <sp xml:id="IV07-20" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV07-20">
             <speaker>DYNAMIS.</speaker>
             <l n="1588" xml:id="l1588">Et moi qu'il fait souffrir, je crains de le trouver.</l>
           </sp>
-          <sp xml:id="IV07-21" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="IV07-21">
             <speaker>POLIANTE.</speaker>
             <l n="1589" xml:id="l1589">Ou la force et l'éclat d'une juste victoire</l>
             <l n="1590" xml:id="l1590">D'un Prince malheureux relèvera la gloire,</l>
@@ -2567,9 +2572,9 @@
             <l n="1596" xml:id="l1596">Si je suis parricide, au moins vous vengera.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV08" type="scene" n="8">
+        <div2 n="8" type="scene" xml:id="IV08">
           <head>SCÈNE VIII.<listPerson type="configuration" xml:id="conf27"><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="IV08-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="IV08-1">
             <speaker>DYNAMIS seule.</speaker>
             <l n="1597" xml:id="l1597">Il me quitte, il s'enfuit, ô Dieux que va-t-il faire ?</l>
             <l n="1598" xml:id="l1598">Va-t-il à son supplice, ou bien à son salaire ?</l>
@@ -2602,29 +2607,29 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="V01">
           <head>SCÈNE PREMIÈRE. Proclée, Proxène. <listPerson type="configuration" xml:id="conf29"><person corresp="#PROCLEE"/><person corresp="#PROXENE"/></listPerson></head>
-          <sp xml:id="V01-1" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V01-1">
             <speaker>PROCLÉE.</speaker>
-            <l n="1625" xml:id="l1625" part="I">La Reine veut vous voir.</l>
+            <l n="1625" part="I" xml:id="l1625">La Reine veut vous voir.</l>
           </sp>
-          <sp xml:id="V01-2" who="PROXENE">
+          <sp who="PROXENE" xml:id="V01-2">
             <speaker>PROXÈNE.</speaker>
             <l part="F">La reine doute-t-elle</l>
             <l n="1626" xml:id="l1626">D'un rapport aussi vrai que je lui suis fidèle ?</l>
           </sp>
-          <sp xml:id="V01-3" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V01-3">
             <speaker>PROCLÉE.</speaker>
             <l n="1627" xml:id="l1627">Je ne le pense pas, mais elle veut vous voir,</l>
             <l n="1628" xml:id="l1628">Et croit qu'il reste encor quelque chose à savoir.</l>
-            <l n="1629" xml:id="l1629" part="I">Entrez donc, elle attend.</l>
+            <l n="1629" part="I" xml:id="l1629">Entrez donc, elle attend.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
+        <div2 n="2" type="scene" xml:id="V02">
           <head>SCÈNE II. Proclée, Dynamis, Poliante. <listPerson type="configuration" xml:id="conf30"><person corresp="#DYNAMIS"/><person corresp="#PROXENE"/><person corresp="#POLIANTE"/><person corresp="#PROCLEE"/></listPerson></head>
-          <sp xml:id="V02-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V02-1">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Je veux me satisfaire.</l>
             <l n="1630" xml:id="l1630">Allez dire à Phorbas qu'il amène mon frère,</l>
@@ -2637,16 +2642,16 @@
             <l n="1637" xml:id="l1637">Et la Nature même, ou trompeuse ou fidèle,</l>
             <l n="1638" xml:id="l1638">Me parle pour un frère, et m'attire avec elle.</l>
           </sp>
-          <sp xml:id="V02-2" who="PROXENE">
+          <sp who="PROXENE" xml:id="V02-2">
             <speaker>PROXÈNE.</speaker>
             <l n="1639" xml:id="l1639">La Nature souvent comme une illusion,</l>
             <l n="1640" xml:id="l1640">Trompe qui veut la croire en cette occasion.</l>
           </sp>
-          <sp xml:id="V02-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V02-3">
             <speaker>DYNAMIS.</speaker>
             <l n="1641" xml:id="l1641">Mais lui soutiendrez-vous ce forfait incroyable ?</l>
           </sp>
-          <sp xml:id="V02-4" who="PROXENE">
+          <sp who="PROXENE" xml:id="V02-4">
             <speaker>PROXÈNE.</speaker>
             <l n="1642" xml:id="l1642">Oui, je lui soutiendrai ce crime épouvantable.</l>
             <l n="1643" xml:id="l1643">Bien que le malheureux ait dit pour se purger,</l>
@@ -2678,14 +2683,14 @@
             <l n="1669" xml:id="l1669">Et l'on peut en verser par un coup nécessaire,</l>
             <l n="1670" xml:id="l1670">La moindre portion pour sauver la plus chère.</l>
           </sp>
-          <sp xml:id="V02-5" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V02-5">
             <speaker>DYNAMIS.</speaker>
             <l n="1671" xml:id="l1671">Enfin vous m'avez dit que ce frère inhumain</l>
             <l n="1672" xml:id="l1672">A fait venir Arcas les armes à la main.</l>
             <l n="1673" xml:id="l1673">Cependant à l'abord de ce Prince rebelle,</l>
             <l n="1674" xml:id="l1674">Trasile n'a rien fait que de montrer son zèle.</l>
           </sp>
-          <sp xml:id="V02-6" who="PROXENE">
+          <sp who="PROXENE" xml:id="V02-6">
             <speaker>PROXÈNE.</speaker>
             <l n="1675" xml:id="l1675">C'est qu'à son attentat le secours a manqué ;</l>
             <l n="1676" xml:id="l1676">C'est que le peuple ému fut en vain provoqué,</l>
@@ -2702,7 +2707,7 @@
             <l n="1687" xml:id="l1687">Ainsi son seul aspect a rompu leurs desseins,</l>
             <l n="1688" xml:id="l1688">Et ses yeux sont pour vous aussi forts que ses mains.</l>
           </sp>
-          <sp xml:id="V02-7" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V02-7">
             <speaker>DYNAMIS.</speaker>
             <l n="1689" xml:id="l1689">Que parmi tant de maux si pleins de violence,</l>
             <l n="1690" xml:id="l1690">Je trouve peu d'appui dans toute ma constance :</l>
@@ -2712,23 +2717,23 @@
             <l n="1694" xml:id="l1694">Puisqu'elle ne sert plus qu'à déguiser le crime ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
+        <div2 n="3" type="scene" xml:id="V03">
           <head>SCÈNE III. Dynamis, Proclée, Proxène. <listPerson type="configuration" xml:id="conf31"><person corresp="#DYNAMIS"/><person corresp="#PROCLEE"/><person corresp="#PROXENE"/></listPerson></head>
-          <sp xml:id="V03-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-1">
             <speaker>DYNAMIS.</speaker>
-            <l n="1695" xml:id="l1695" part="I">Hé bien l'amène-t-on ?</l>
+            <l n="1695" part="I" xml:id="l1695">Hé bien l'amène-t-on ?</l>
           </sp>
-          <sp xml:id="V03-2" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V03-2">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Madame il s'est sauvé,</l>
             <l n="1696" xml:id="l1696">Et ceux qui le gardaient vous l'ont seuls enlevé.</l>
           </sp>
-          <sp xml:id="V03-3" who="PROXENE">
+          <sp who="PROXENE" xml:id="V03-3">
             <speaker>PROXÈNE.</speaker>
             <l n="1697" xml:id="l1697">Au moins vous connaissez par des preuves nouvelles</l>
             <l n="1698" xml:id="l1698">Qu'il a gagné les coeurs que vous croyez fidèles.</l>
           </sp>
-          <sp xml:id="V03-4" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-4">
             <speaker>DYNAMIS.</speaker>
             <l n="1699" xml:id="l1699">Et même je connais, moi qui dois le haïr,</l>
             <l n="1700" xml:id="l1700">Qu'il me gagna moi-même afin de me trahir ;</l>
@@ -2743,7 +2748,7 @@
             <l n="1709" xml:id="l1709">Mais connaître le traître et sa pratique noire,</l>
             <l n="1710" xml:id="l1710">Est un commencement de force et de victoire.</l>
           </sp>
-          <sp xml:id="V03-5" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V03-5">
             <speaker>PROCLÉE.</speaker>
             <l n="1711" xml:id="l1711">Mais ce mal est suivi d'un mal qu'on n'attend pas,</l>
             <l n="1712" xml:id="l1712">Et Trasile en fuyant l'a semé sur ces pas.</l>
@@ -2754,15 +2759,15 @@
             <l n="1717" xml:id="l1717">Et qu'enfin le remords, le bourreau de sa faute,</l>
             <l n="1718" xml:id="l1718">Pour le gêner ailleurs vous l'enlève, et vous l'ôte.</l>
           </sp>
-          <sp xml:id="V03-6" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-6">
             <speaker>DYNAMIS.</speaker>
-            <l n="1719" xml:id="l1719" part="I">Poliante fuirait !</l>
+            <l n="1719" part="I" xml:id="l1719">Poliante fuirait !</l>
           </sp>
-          <sp xml:id="V03-7" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V03-7">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Pour le moins on le dit.</l>
           </sp>
-          <sp xml:id="V03-8" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-8">
             <speaker>DYNAMIS.</speaker>
             <l n="1720" xml:id="l1720">Mon esprit est confus et demeure interdit.</l>
             <l n="1721" xml:id="l1721">Si Trasile en fuyant d'une prison funeste,</l>
@@ -2770,14 +2775,14 @@
             <l n="1723" xml:id="l1723">Ô cruel Poliante, ô Prince infortuné,</l>
             <l n="1724" xml:id="l1724">Que fait un Roi qui fuit quand il est soupçonné ?</l>
           </sp>
-          <sp xml:id="V03-9" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V03-9">
             <speaker>PROCLÉE.</speaker>
             <l n="1725" xml:id="l1725">Mais pour le moins encore attendez à vous plaindre,</l>
             <l n="1726" xml:id="l1726">Qu'un peu de vérité vous y puisse contraindre.</l>
             <l n="1727" xml:id="l1727">Bien souvent tout le mal qui vient d'un bruit si haut</l>
             <l n="1728" xml:id="l1728">C'est celui qu'on se fait en le croyant trop tôt.</l>
           </sp>
-          <sp xml:id="V03-10" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-10">
             <speaker>DYNAMIS.</speaker>
             <l n="1729" xml:id="l1729">Mais lorsqu'à son honneur sa présence est utile,</l>
             <l n="1730" xml:id="l1730">Pourquoi si promptement abandonner la ville ?</l>
@@ -2816,22 +2821,22 @@
             <l n="1763" xml:id="l1763">Et qu'un sombre cercueil en l'état où je suis,</l>
             <l n="1764" xml:id="l1764">Est préférable au Trône où montent tant d'ennuis !</l>
           </sp>
-          <sp xml:id="V03-11" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V03-11">
             <speaker>PROCLÉE.</speaker>
             <l n="1765" xml:id="l1765">Pardonnez-moi, Madame, et souffrez que je die</l>
             <l n="1766" xml:id="l1766">Qu'à se persécuter votre âme s'étudie.</l>
           </sp>
-          <sp xml:id="V03-12" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-12">
             <speaker>DYNAMIS.</speaker>
             <l n="1767" xml:id="l1767">Il est vrai, mais au moins c'est pour se préparer</l>
             <l n="1768" xml:id="l1768">D'endurer d'autres maux s'il les faut endurer.</l>
           </sp>
-          <sp xml:id="V03-13" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V03-13">
             <speaker>PROCLÉE.</speaker>
             <l n="1769" xml:id="l1769">Est-ce aimer noblement et d'un Amour extrême,</l>
             <l n="1770" xml:id="l1770">De soupçonner si tôt la personne qu'on aime ?</l>
           </sp>
-          <sp xml:id="V03-14" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-14">
             <speaker>DYNAMIS.</speaker>
             <l n="1771" xml:id="l1771">Mais aussi réponds-moi, lorsque l'on aime bien</l>
             <l n="1772" xml:id="l1772">N'est-ce pas s'aveugler que de ne croire rien ?</l>
@@ -2840,7 +2845,7 @@
             <l n="1775" xml:id="l1775">Et ce que nous aimons d'un transport si puissant,</l>
             <l n="1776" xml:id="l1776">Parce que nous l'aimons, doit-il être innocent ?</l>
           </sp>
-          <sp xml:id="V03-15" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V03-15">
             <speaker>PROCLÉE</speaker>
             <l n="1777" xml:id="l1777">Mais si ce Prince fuit, il est de la prudence</l>
             <l n="1778" xml:id="l1778">Qu'un Monarque en péril cherche son assurance,</l>
@@ -2855,23 +2860,23 @@
             <l n="1787" xml:id="l1787">Mais c'est aveuglément, fureur et désespoir,</l>
             <l n="1788" xml:id="l1788">Que de vouloir combattre où l'on est sans pouvoir.</l>
           </sp>
-          <sp xml:id="V03-16" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-16">
             <speaker>DYNAMIS.</speaker>
             <l n="1789" xml:id="l1789">Qu'est ce que le discours ne rend pas excusable ?</l>
           </sp>
-          <sp xml:id="V03-17" who="PROXENE">
+          <sp who="PROXENE" xml:id="V03-17">
             <speaker>PROXÈNE.</speaker>
             <l n="1790" xml:id="l1790">Mais il entre, et ses yeux ne sont pas d'un coupable.</l>
           </sp>
-          <sp xml:id="V03-18" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V03-18">
             <speaker>DYNAMIS.</speaker>
             <l n="1791" xml:id="l1791">Ô l'heureuse surprise ! Ô destin florissant,</l>
             <l n="1792" xml:id="l1792">Si plutôt que vainqueur il revient innocent !</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
+        <div2 n="4" type="scene" xml:id="V04">
           <head>SCÈNE IV. Poliante, Dynamis. <listPerson type="configuration" xml:id="conf32"><person corresp="#POLIANTE"/><person corresp="#DYNAMIS"/></listPerson></head>
-          <sp xml:id="V04-1" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V04-1">
             <speaker>POLIANTE.</speaker>
             <l n="1793" xml:id="l1793">Je ne sais si mon bras a relevé ma gloire,</l>
             <l n="1794" xml:id="l1794">Mais au moins il revient avecque la victoire.</l>
@@ -2882,21 +2887,21 @@
             <l n="1799" xml:id="l1799">Enfin vos ennemis tous vaincus à la fois,</l>
             <l n="1800" xml:id="l1800">Éprouvent que le Ciel est toujours pour les Rois.</l>
           </sp>
-          <sp xml:id="V04-2" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V04-2">
             <speaker>DYNAMIS.</speaker>
-            <l n="1801" xml:id="l1801" part="I">Arcas est-il donc mort ?</l>
+            <l n="1801" part="I" xml:id="l1801">Arcas est-il donc mort ?</l>
           </sp>
-          <sp xml:id="V04-3" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V04-3">
             <speaker>POLIANTE.</speaker>
             <l part="F">Au moins on vous l'amène,</l>
             <l n="1802" xml:id="l1802">Pour rendre en expirant ses respects à se Reine.</l>
           </sp>
-          <sp xml:id="V04-4" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V04-4">
             <speaker>DYNAMIS.</speaker>
             <l n="1803" xml:id="l1803">Dites-moi ce succès, s'il vous est glorieux</l>
             <l n="1804" xml:id="l1804">Alors j'estimerai mon sort victorieux.</l>
           </sp>
-          <sp xml:id="V04-5" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V04-5">
             <speaker>POLIANTE.</speaker>
             <l n="1805" xml:id="l1805">À peine avec les miens j'étais hors de la ville,</l>
             <l n="1806" xml:id="l1806">Quand d'un autre côté j'ai vu sortir Trasile</l>
@@ -2911,11 +2916,11 @@
             <l n="1815" xml:id="l1815">Que chacun prend parti, que l'on est divisé,</l>
             <l n="1816" xml:id="l1816">Et qu'enfin le triomphe en paraît plus aisé.</l>
           </sp>
-          <sp xml:id="V04-6" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V04-6">
             <speaker>DYNAMIS.</speaker>
-            <l n="1817" xml:id="l1817" part="I">D'où vient cette querelle ?</l>
+            <l n="1817" part="I" xml:id="l1817">D'où vient cette querelle ?</l>
           </sp>
-          <sp xml:id="V04-7" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V04-7">
             <speaker>POLIANTE.</speaker>
             <l part="F">On m'a dit que Trasile</l>
             <l n="1818" xml:id="l1818">Croyait trouver Arcas favorable et facile,</l>
@@ -2930,7 +2935,7 @@
             <l n="1827" xml:id="l1827">Au reste l'on m'a dit qu'un soupçon seulement</l>
             <l n="1828" xml:id="l1828">A produit aujourd'hui ce grand événement.</l>
           </sp>
-          <sp xml:id="V04-8" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V04-8">
             <speaker>DYNAMIS.</speaker>
             <l n="1829" xml:id="l1829">Non, non, le juste Ciel a conduit une trame</l>
             <l n="1830" xml:id="l1830">Qu'il a voulu lui-même inspirer à mon âme</l>
@@ -2941,17 +2946,17 @@
             <l n="1835" xml:id="l1835">Car quand des ennemis ont un corps si puissant,</l>
             <l n="1836" xml:id="l1836">On commence à les vaincre en les désunissant.</l>
           </sp>
-          <sp xml:id="V04-9" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V04-9">
             <speaker>POLIANTE.</speaker>
             <l n="1837" xml:id="l1837">Ainsi sans y penser je vous dois la victoire.</l>
           </sp>
-          <sp xml:id="V04-10" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V04-10">
             <speaker>DYNAMIS.</speaker>
             <l n="1838" xml:id="l1838">Donnez-m'en le repos, et prenez-en la gloire.</l>
             <l n="1839" xml:id="l1839">Mais enfin achevez. L'ennemi, disiez-vous,</l>
-            <l n="1840" xml:id="l1840" part="I">Paraissait divisé.</l>
+            <l n="1840" part="I" xml:id="l1840">Paraissait divisé.</l>
           </sp>
-          <sp xml:id="V04-11" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V04-11">
             <speaker>POLIANTE.</speaker>
             <l part="F">Je le charge à grands coups,</l>
             <l n="1841" xml:id="l1841">Je prends l'occasion, je renverse, je tue</l>
@@ -2978,11 +2983,11 @@
             <l n="1862" xml:id="l1862">Je le fus par l'Amour, mais il l'est par la haine.</l>
             <l n="1863" xml:id="l1863">Sache donc, me dit-il... Mais on l'amène ici.</l>
           </sp>
-          <sp xml:id="V04-12" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V04-12">
             <speaker>DYNAMIS.</speaker>
-            <l n="1864" xml:id="l1864" part="I">Et Trasile est-il mort ?</l>
+            <l n="1864" part="I" xml:id="l1864">Et Trasile est-il mort ?</l>
           </sp>
-          <sp xml:id="V04-13" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V04-13">
             <speaker>POLIANTE.</speaker>
             <l part="F">On vous l'amène aussi :</l>
             <l n="1865" xml:id="l1865">Et ce qu'a dit Arcas devant ces Capitaines,</l>
@@ -2992,9 +2997,9 @@
             <l n="1869" xml:id="l1869">Peut-être que jamais aventure pareille</l>
             <l n="1870" xml:id="l1870">Ne tomba dans l'esprit et ne toucha l'oreille.</l>
             <l n="1871" xml:id="l1871">Mais ils ne sont pas loin, cet homme les menait.</l>
-            <l n="1872" xml:id="l1872" part="I">Doit-il les faire entrer ?</l>
+            <l n="1872" part="I" xml:id="l1872">Doit-il les faire entrer ?</l>
           </sp>
-          <sp xml:id="V04-14" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V04-14">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Oui, Prince, l'on le doit.</l>
             <l n="1873" xml:id="l1873">Il faut que mes regards pour eux impitoyables,</l>
@@ -3003,16 +3008,16 @@
             <l n="1876" xml:id="l1876">Ne saurait-on régner sans avoir d'ennemis ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
+        <div2 n="5" type="scene" xml:id="V05">
           <head>SCÈNE DERNIÈRE. Dynamis, Arcas, Trasile, Proclée, Les Députés, Proxène, Poliante. <listPerson type="configuration" xml:id="conf33"><person corresp="#DYNAMIS"/><person corresp="#ARCAS"/><person corresp="#POLIANTE"/><person corresp="#TRASILE"/><person corresp="#PROCLEE"/><person corresp="#DEPUTES"/><person corresp="#PROXENE"/></listPerson></head>
-          <sp xml:id="V05-1" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-1">
             <speaker>DYNAMIS.</speaker>
             <l n="1877" xml:id="l1877">Enfin vous connaissez par de sanglantes marques</l>
             <l n="1878" xml:id="l1878">S'il est avantageux d'attaquer les Monarques,</l>
             <l n="1879" xml:id="l1879">Et que pour les méchants et les ambitieux</l>
             <l n="1880" xml:id="l1880">Le Trône a son tonnerre aussi bien que les Cieux.</l>
           </sp>
-          <sp xml:id="V05-2" who="ARCAS">
+          <sp who="ARCAS" xml:id="V05-2">
             <speaker>ARCAS.</speaker>
             <l n="1881" xml:id="l1881">Ô reine, dont j'aimais et dont je crains la vue,</l>
             <l n="1882" xml:id="l1882">Retenez un moment ce regard qui me tue,</l>
@@ -3023,15 +3028,15 @@
             <l n="1887" xml:id="l1887">Oui, ce bras que la rage avait fait soulever,</l>
             <l n="1888" xml:id="l1888">Versa le sang du Roi qu'il devait conserver.</l>
           </sp>
-          <sp xml:id="V05-3" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-3">
             <speaker>DYNAMIS.</speaker>
             <l n="1889" xml:id="l1889">Ô digne objet des coups de la fureur céleste !</l>
           </sp>
-          <sp xml:id="V05-4" who="ARCAS">
+          <sp who="ARCAS" xml:id="V05-4">
             <speaker>ARCAS.</speaker>
             <l n="1890" xml:id="l1890">Seigneur, la voix me manque, et j'ai dit tout le reste.</l>
           </sp>
-          <sp xml:id="V05-5" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V05-5">
             <speaker>POLIANTE.</speaker>
             <l n="1891" xml:id="l1891">Oui, Madame, il a dit qu'à la fin du combat</l>
             <l n="1892" xml:id="l1892">Qui fit tomber et vous et votre État,</l>
@@ -3046,32 +3051,32 @@
             <l n="1901" xml:id="l1901">Et que la peur qu'il eut d'être surpris en traître,</l>
             <l n="1902" xml:id="l1902">Lui fit laisser le fer dans le coeur de son Maître.</l>
           </sp>
-          <sp xml:id="V05-6" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-6">
             <speaker>DYNAMIS.</speaker>
-            <l n="1903" xml:id="l1903" part="I">Quel était ton dessein, méchant ?</l>
+            <l n="1903" part="I" xml:id="l1903">Quel était ton dessein, méchant ?</l>
           </sp>
-          <sp xml:id="V05-7" who="ARCAS">
+          <sp who="ARCAS" xml:id="V05-7">
             <speaker>ARCAS.</speaker>
             <l part="F">Je vous aimais,</l>
             <l n="1904" xml:id="l1904">Et ce crime m'offrait le bien que j'espérais.</l>
           </sp>
-          <sp xml:id="V05-8" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-8">
             <speaker>DYNAMIS.</speaker>
             <l n="1905" xml:id="l1905">Est-ce assez d'une mort pour être son supplice ?</l>
           </sp>
-          <sp xml:id="V05-9" who="ARCAS">
+          <sp who="ARCAS" xml:id="V05-9">
             <speaker>ARCAS.</speaker>
             <l n="1906" xml:id="l1906">Mais si ce crime est grand, Trasile est mon complice.</l>
           </sp>
-          <sp xml:id="V05-10" who="TRASILE">
+          <sp who="TRASILE" xml:id="V05-10">
             <speaker>TRASILE.</speaker>
-            <l n="1907" xml:id="l1907" part="I">Moi, méchant !</l>
+            <l n="1907" part="I" xml:id="l1907">Moi, méchant !</l>
           </sp>
-          <sp xml:id="V05-11" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-11">
             <speaker>DYNAMIS.</speaker>
             <l part="M">Que dit-il ?</l>
           </sp>
-          <sp xml:id="V05-12" who="ARCAS">
+          <sp who="ARCAS" xml:id="V05-12">
             <speaker>ARCAS.</speaker>
             <l part="F">Oui, vous l'avez voulu,</l>
             <l n="1908" xml:id="l1908">Et ce grand parricide entre nous fut conclu.</l>
@@ -3084,7 +3089,7 @@
             <l n="1915" xml:id="l1915">Ainsi je contentai nos lâches passions,</l>
             <l n="1916" xml:id="l1916">Et devins criminel à ces conditions.</l>
           </sp>
-          <sp xml:id="V05-13" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-13">
             <speaker>DYNAMIS parlant à Trasile.</speaker>
             <l n="1917" xml:id="l1917">Quoi méchant ta fureur fit périr un Monarque,</l>
             <l n="1918" xml:id="l1918">Dont l'amour t'honora d'une si belle marque,</l>
@@ -3101,7 +3106,7 @@
             <l n="1929" xml:id="l1929">Mais que n'as-tu cruel assez de sang de reste</l>
             <l n="1930" xml:id="l1930">Pour assouvir ma haine et la haine céleste ?</l>
           </sp>
-          <sp xml:id="V05-14" who="TRASILE">
+          <sp who="TRASILE" xml:id="V05-14">
             <speaker>TRASILE.</speaker>
             <l n="1931" xml:id="l1931">Ô détestable Arcas ! Ô coeur peu généreux !</l>
             <l n="1932" xml:id="l1932">Indigne de cueillir les fruits d'un crime heureux !</l>
@@ -3118,28 +3123,28 @@
             <l n="1943" xml:id="l1943">C'est là ton plus grand mal, venge, venge-toi d'eux,</l>
             <l n="1944" xml:id="l1944">En laissant leur croyance et ton crime douteux.</l>
           </sp>
-          <sp xml:id="V05-15" who="ARCAS">
+          <sp who="ARCAS" xml:id="V05-15">
             <speaker>ARCAS.</speaker>
             <l n="1945" xml:id="l1945">Exécrable en ta mort, de même qu'en ta vie,</l>
             <l n="1946" xml:id="l1946">Si j'outrageai la Reine au moins je l'ai servie,</l>
             <l n="1947" xml:id="l1947">En la vengeant sur toi d'un frère forcené,</l>
             <l n="1948" xml:id="l1948">À qui trop bonne soeur elle aurait pardonné.</l>
           </sp>
-          <sp xml:id="V05-16" who="TRASILE">
+          <sp who="TRASILE" xml:id="V05-16">
             <speaker>TRASILE.</speaker>
             <l n="1949" xml:id="l1949">Parles-tu de pardon, ô lâche, ô détestable !</l>
             <l n="1950" xml:id="l1950">Que la Reine le garde, il est pour le coupable.</l>
             <l n="1951" xml:id="l1951">Et pour me venger d'elle et de ce brave Roi ;</l>
             <l n="1952" xml:id="l1952">Je souhaite à tous deux des sujets comme toi.</l>
           </sp>
-          <sp xml:id="V05-17" who="ARCAS">
+          <sp who="ARCAS" xml:id="V05-17">
             <speaker>ARCAS.</speaker>
             <l n="1953" xml:id="l1953">Et moi qui leur souhaite un règne favorable,</l>
             <l n="1954" xml:id="l1954">Que la paix rende heureux et toujours indomptable,</l>
             <l n="1955" xml:id="l1955">Je leur souhaite aussi des sujets et des coeurs,</l>
             <l n="1956" xml:id="l1956">Non comme j'ai vécu, mais ainsi que je meurs.</l>
           </sp>
-          <sp xml:id="V05-18" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-18">
             <speaker>DYNAMIS.</speaker>
             <l n="1957" xml:id="l1957">Qu'on les ôte, j'aimais à moi-même contraire</l>
             <l n="1958" xml:id="l1958">Un frère naturel de même qu'un vrai frère,</l>
@@ -3150,26 +3155,26 @@
             <l n="1963" xml:id="l1963">Et je déplore enfin ces géants abattus</l>
             <l n="1964" xml:id="l1964">D'avoir mal employé de si grandes vertus.</l>
             <stage type="[N/A]">Proclée qui avait suivi Arcas et Trasile revient. </stage>
-            <l n="1965" xml:id="l1965" part="I">Hé bien, hé bien Proclée !</l>
+            <l n="1965" part="I" xml:id="l1965">Hé bien, hé bien Proclée !</l>
           </sp>
-          <sp xml:id="V05-19" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V05-19">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Ils ne sont plus Madame.</l>
           </sp>
-          <sp xml:id="V05-20" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-20">
             <speaker>DYNAMIS.</speaker>
-            <l n="1966" xml:id="l1966" part="I">N'ont-ils rien dit ?</l>
+            <l n="1966" part="I" xml:id="l1966">N'ont-ils rien dit ?</l>
           </sp>
-          <sp xml:id="V05-21" who="PROCLEE">
+          <sp who="PROCLEE" xml:id="V05-21">
             <speaker>PROCLÉE.</speaker>
             <l part="F">Arcas n'a fait que rendre l'âme.</l>
             <l n="1967" xml:id="l1967">Mais Trasile pressé d'un remords dévorant,</l>
             <l n="1968" xml:id="l1968">Je meurs avec justice, a-t-il dit en mourant.</l>
             <l n="1969" xml:id="l1969">Ô Dieux ! Dont le pouvoir est plus fort que le nôtre</l>
             <l n="1970" xml:id="l1970">Ainsi deux criminels sont bourreaux l'un de l'autre.</l>
-            <l n="1971" xml:id="l1971" part="I">C'est tout ce qu'il a dit.</l>
+            <l n="1971" part="I" xml:id="l1971">C'est tout ce qu'il a dit.</l>
           </sp>
-          <sp xml:id="V05-22" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-22">
             <speaker>DYNAMIS.</speaker>
             <l part="F">Je profite en sa mort.</l>
             <l n="1972" xml:id="l1972">Au moins si ces pareils appréhendent son sort.</l>
@@ -3180,39 +3185,39 @@
             <l n="1977" xml:id="l1977">Proxène c'est à toi que j'en dois l'avantage,</l>
             <l n="1978" xml:id="l1978">Et toujours mon amour en sera ton partage.</l>
           </sp>
-          <sp xml:id="V05-23" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V05-23">
             <speaker>POLIANTE.</speaker>
             <l n="1979" xml:id="l1979">Enfin ce témoignage et visible et pressant</l>
             <l n="1980" xml:id="l1980">Fait voir que dans mon coeur l'amour est innocent.</l>
           </sp>
-          <sp xml:id="V05-24" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-24">
             <speaker>DYNAMIS.</speaker>
             <l n="1981" xml:id="l1981">Mon erreur me fait honte, et me fait pour ma peine,</l>
             <l n="1982" xml:id="l1982">Au lieu de votre amour mériter votre haine.</l>
           </sp>
-          <sp xml:id="V05-25" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V05-25">
             <speaker>POLIANTE.</speaker>
             <l n="1983" xml:id="l1983">Vous ne deviez pas moins à la mort d'un époux,</l>
             <l n="1984" xml:id="l1984">Et je vous croyais juste en me plaignant de vous.</l>
           </sp>
-          <sp xml:id="V05-26" who="DEPUTES">
+          <sp who="DEPUTES" xml:id="V05-26">
             <speaker>LES DÉPUTÉS.</speaker>
             <l n="1985" xml:id="l1985">Mais enfin consentez qu'une juste alliance</l>
             <l n="1986" xml:id="l1986">De deux fameux États contente l'espérance.</l>
             <l n="1987" xml:id="l1987">Si la paix qui revient n'y pouvait séjourner</l>
             <l n="1988" xml:id="l1988">Les liens de l'hymen l'y sauraient enchaîner.</l>
           </sp>
-          <sp xml:id="V05-27" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V05-27">
             <speaker>POLIANTE.</speaker>
             <l n="1989" xml:id="l1989">C'est par un si grand prix, c'est par cette victoire,</l>
             <l n="1990" xml:id="l1990">Que mes heureux destins peuvent combler ma gloire.</l>
           </sp>
-          <sp xml:id="V05-28" who="DYNAMIS">
+          <sp who="DYNAMIS" xml:id="V05-28">
             <speaker>DYNAMIS.</speaker>
             <l n="1991" xml:id="l1991">Que ne puis-je honorer un Roi victorieux,</l>
             <l n="1992" xml:id="l1992">Un Roi mon défenseur, d'un prix plus glorieux ?</l>
           </sp>
-          <sp xml:id="V05-29" who="POLIANTE">
+          <sp who="POLIANTE" xml:id="V05-29">
             <speaker>POLIANTE.</speaker>
             <l n="1993" xml:id="l1993">Si j'ai vaincu pour vous le crime et l'injustice,</l>
             <l n="1994" xml:id="l1994">Ô que ce prix illustre excède le service !</l>
