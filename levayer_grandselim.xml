@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Le Grand Sélim</title><title type="sub"> ou le couronnement tragique, tragédie</title>
-        <author born="1627" born_location="Paris" death="1685" death_location="Paris" academie=""><surname>Le Vayer de Boutigny</surname><forename> Roland</forename></author>
+        <title>Le Grand Sélim</title>
+        <title type="sub"> ou le couronnement tragique, tragédie</title>
+        <author academie="" born="1627" born_location="Paris" death="1685" death_location="Paris">
+          <surname>Le Vayer de Boutigny</surname>
+          <forename> Roland</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE, Mai 2006, revu septembre 1015.</p>
@@ -34,7 +39,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -47,7 +52,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1645">M. DC. XXXXV. Avec Privilège du Roi. </docDate>
-      <docAuthor id="LE VAYER de BOUTIGNY, Roland" bio="levayer"/>
+      <docAuthor bio="levayer" id="LE VAYER de BOUTIGNY, Roland"/>
       <docImprint>
         <privilege id="">
           <head/>
@@ -79,54 +84,55 @@
       <div type="preface">
         <head>À MONSIEUR LE *****.</head>
         <p>Rondeau Burlesque. </p>
-        <sonnet>
-          <stanza>
+        <lg>
+          <lg type="stanza">
             <l>Pour te louer moi fais vers drôlement, </l>
             <l>(Moi qui n'en fais, sinon par fondement :) </l>
             <l>Car autrement moi ne puis reconnaître </l>
             <l>Tant d'amitié qu'à moi, toi fais paraître : </l>
             <l>Écoutes donc toi louer grandement. </l>
-          </stanza>
-          <stanza>
+          </lg>
+          <lg type="stanza">
             <l>Toi fais bien vers, toi moult as jugement, </l>
             <l>Toi ne fuis fille, et bois aucunement ; </l>
             <l>Toi bon ami voudrais moi grand Poète être </l>
             <l>Pour te louer. </l>
-          </stanza>
-          <stanza>
+          </lg>
+          <lg type="stanza">
             <l>Mais moi grand est, point ne fais compliment : </l>
             <l>Car moi ne peux ; ains dirai seulement, </l>
             <l>Qu'il n'est plus vrai qu'Apprenti n'est pas Maître, </l>
-          </stanza>
-          <stanza>
+          </lg>
+          <lg type="stanza">
             <l>Puisque ton coup d'essai me fait connaître, </l>
             <l>Que moi n'ai pas assez d'entendement </l>
             <l>Pour te louer.</l>
-          </stanza>
-        </sonnet>
+          </lg>
+        </lg>
       </div>
       <castList>
         <head>LES PERSONNAGES.</head>
-        <castItem><role xml:id="BAJAZET" id="BAJAZET" sex="1" type="H" statut="empereur" age="A" stat_amour="néant">BAJAZET</role>, Empereur Turc, père de Sélim, de Corchut, et d'Achmet.</castItem>
-        <castItem><role xml:id="LASULTANE" id="LA-SULTANE" sex="2" type="H" statut="empereur" age="A" stat_amour="néant">LA SULTANE</role>, Fille d'Achomat, femme de Bajazet.</castItem>
-        <castItem><role xml:id="SELIM" id="SÉLIM" sex="1" type="H" statut="prince" age="A" stat_amour="néant">SÉLIM</role>, fils de Bajazet.</castItem>
-        <castItem><role xml:id="CORCHUT" id="CORCHUT" sex="1" type="H" statut="prince" age="A" stat_amour="néant">CORCHUT</role>, fils de Bajazet.</castItem>
-        <castItem><role xml:id="ACHMET" id="ACHMET" sex="1" type="H" statut="prince" age="A" stat_amour="néant">ACHMET</role>, fils de Bajazet.</castItem>
-        <castItem><role xml:id="IZAIDE" id="IZAÏDE" sex="2" type="H" statut="aristocrate" age="A" stat_amour="néant">IZAÏDE</role>, maîtresse de Sélim.</castItem>
-        <castItem><role xml:id="LAGADESJANISSAIRES" id="L'AGA" sex="1" type="H" statut="officier" age="A" stat_amour="néant">L'AGA DES JANISSAIRES</role>, ami d'Achomat.</castItem>
-        <castItem><role xml:id="HALY" id="HALY" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">HALY</role>, Bassa, grand ami de l'Aga des Janissaires. </castItem>
-        <castItem><role xml:id="HEZEGOGLIS" id="HEZEGOGLIS" sex="1" type="H" statut="confident" age="A" stat_amour="néant">HEZEGOGLIS</role>, Bassa, confident de Bajazet.</castItem>
-        <castItem><role xml:id="ESCLAVEDESELIM" id="ESCLAVE DE SELIM" sex="1" type="H" statut="esclave" age="A" stat_amour="néant">ESCLAVE DE SELIM</role>.</castItem>
-        <castItem><role xml:id="ESCLAVEDEHALYBASSA" id="ESCLAVE DE BASSA" sex="1" type="H" statut="esclave" age="A" stat_amour="néant">ESCLAVE DE HALY BASSA</role>.</castItem>
+        <castItem><role age="A" id="BAJAZET" sex="1" stat_amour="néant" statut="empereur" type="H" xml:id="BAJAZET">BAJAZET</role>, Empereur Turc, père de Sélim, de Corchut, et d'Achmet.</castItem>
+        <castItem><role age="A" id="LA-SULTANE" sex="2" stat_amour="néant" statut="empereur" type="H" xml:id="LASULTANE">LA SULTANE</role>, Fille d'Achomat, femme de Bajazet.</castItem>
+        <castItem><role age="A" id="SÉLIM" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="SELIM">SÉLIM</role>, fils de Bajazet.</castItem>
+        <castItem><role age="A" id="CORCHUT" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="CORCHUT">CORCHUT</role>, fils de Bajazet.</castItem>
+        <castItem><role age="A" id="ACHMET" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="ACHMET">ACHMET</role>, fils de Bajazet.</castItem>
+        <castItem><role age="A" id="IZAÏDE" sex="2" stat_amour="néant" statut="aristocrate" type="H" xml:id="IZAIDE">IZAÏDE</role>, maîtresse de Sélim.</castItem>
+        <castItem><role age="A" id="L'AGA" sex="1" stat_amour="néant" statut="officier" type="H" xml:id="AGA">L'AGA DES JANISSAIRES</role>, ami d'Achomat.</castItem>
+        <castItem><role age="A" id="HALY" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="HALY">HALY</role>, Bassa, grand ami de l'Aga des Janissaires. </castItem>
+        <castItem><role age="A" id="HEZEGOGLIS" sex="1" stat_amour="néant" statut="confident" type="H" xml:id="HERZEGOGLIS">HEZEGOGLIS</role>, Bassa, confident de Bajazet.</castItem>
+        <castItem><role age="A" id="ESCLAVE DE SELIM" sex="1" stat_amour="néant" statut="esclave" type="H" xml:id="ESCLAVESELIM">ESCLAVE DE SELIM</role>.</castItem>
+        <castItem><role age="A" id="ESCLAVE DE BASSA" sex="1" stat_amour="néant" statut="esclave" type="H" xml:id="ESCLAVEHALY">ESCLAVE DE HALY BASSA</role>.</castItem>
       </castList>
-      <set location="Constantinople" country="Turquie" periode="Ier avant JC">La Scène est au Sérail,dans Constantinople. </set>
+      <set country="Turquie" location="Constantinople" periode="Ier avant JC">La Scène est au Sérail,dans Constantinople. </set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf1"><person corresp="#LASULTANE"/></listPerson></head>
-          <sp xml:id="I01-1" who="LASULTANE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LASULTANE"/></listPerson></head>
+          <sp who="LASULTANE" xml:id="I01-1">
             <speaker>LA SULTANE seule.</speaker>
             <l n="1" xml:id="l1">Sage dispensateur du bon et mauvais sort, </l>
             <l n="2" xml:id="l2">Qui tiens entre tes mains et ma vie et ma mort ; </l>
@@ -238,18 +244,21 @@
             <l n="106" xml:id="l106">Il faudra néanmoins que l'un soit malheureux. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. La Sultane, L'Aga des Janissaires. <listPerson type="configuration" xml:id="conf2"><person corresp="#UNESCLAVE"/><person corresp="#LASULTANE"/><person corresp="#LAGA"/><person corresp="#LAGADESJANISSAIRES"/></listPerson></head>
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. La Sultane, L'Aga des Janissaires. <listPerson type="configuration" xml:id="conf2">
+            <person corresp="#ESCLAVE" n="un esclave" xml:id="ESCLAVE"/>
+            <person corresp="#LASULTANE"/>
+            <person corresp="#AGA"/></listPerson></head>
           <note type="L">L'original porte La Sultane comme locuteur, préférons Un esclave.</note>
-          <sp xml:id="I02-1" who="UNESCLAVE">
+          <sp who="ESCLAVE" xml:id="I02-1">
             <speaker>UN ESCLAVE.</speaker>
-            <l n="107" xml:id="l107" part="I">Madame, l'Aga vient. </l>
+            <l n="107" part="I" xml:id="l107">Madame, l'Aga vient.</l>
           </sp>
-          <sp xml:id="I02-2" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-2">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Sachons ce qu'il désire. </l>
           </sp>
-          <sp xml:id="I02-3" who="LAGA">
+          <sp who="AGA" xml:id="I02-3">
             <speaker>L'AGA.</speaker>
             <l n="108" xml:id="l108">Je viens plaindre une perte importante à l'Empire ; </l>
             <l n="109" xml:id="l109">Madame, et dans le deuil dont je suis abattu, </l>
@@ -259,7 +268,7 @@
             <l n="113" xml:id="l113">J'aimais trop Achomat, pour être à son tourment, </l>
             <l n="114" xml:id="l114">Sans beaucoup de douleur, et sans ressentiment. </l>
           </sp>
-          <sp xml:id="I02-4" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-4">
             <speaker>LA SULTANE.</speaker>
             <l n="115" xml:id="l115">Trop généreux ami, ta tristesse m'oblige, </l>
             <l n="116" xml:id="l116">Et puisque tu prends part au malheur qui m'afflige, </l>
@@ -275,11 +284,11 @@
             <l n="126" xml:id="l126">A fait aveuglément son roi de ton bourreau </l>
             <l n="127" xml:id="l127">Cette divinité si lâche et si traîtresse </l>
             <l n="128" xml:id="l128">A fait son bienfaiteur du tyran qui t'oppresse, </l>
-            <note type="C">Au XVIIe siècle il était loisible d'ajouter une s à même adverbe. [L]  Nous corrigeons.</note>
+            <note type="C">Au XVIIe siècle il était loisible d'ajouter une s à même adverbe. [L] Nous corrigeons.</note>
             <l n="129" xml:id="l129">Et pour comble de maux n'a pas même permis </l>
             <l n="130" xml:id="l130">Que tu fusses du moins vengé par tes amis. </l>
           </sp>
-          <sp xml:id="I02-5" who="LAGA">
+          <sp who="AGA" xml:id="I02-5">
             <speaker>L'AGA.</speaker>
             <l n="131" xml:id="l131">Madame, si ce bras peut vous rendre service, </l>
             <l n="132" xml:id="l132">Si vous avez dessein que Bajazet périsse, </l>
@@ -316,7 +325,7 @@
             <l n="163" xml:id="l163">Votre vengeance doit égaler sa malice, </l>
             <l n="164" xml:id="l164">Dans son crime il fut prompt, soyons prompt au supplice. </l>
           </sp>
-          <sp xml:id="I02-6" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-6">
             <speaker>LA SULTANE.</speaker>
             <l n="165" xml:id="l165">Ne viens point remuer d'un soin industrieux, </l>
             <l n="166" xml:id="l166">La cendre d'Achomat pour aveugler mes yeux, </l>
@@ -327,7 +336,7 @@
             <l n="171" xml:id="l171">Et lors plus que jamais nous devenons coupables, </l>
             <l n="172" xml:id="l172">Quand nous les estimons nous être aussi semblables. </l>
           </sp>
-          <sp xml:id="I02-7" who="LAGA">
+          <sp who="AGA" xml:id="I02-7">
             <speaker>L'AGA.</speaker>
             <l n="173" xml:id="l173">Voulez-vous donc traiter comme Divinité </l>
             <l n="174" xml:id="l174">Celui qui pour l'horreur quitte l'humanité ? </l>
@@ -340,7 +349,7 @@
             <l n="181" xml:id="l181">Et quand leur rage fait des crimes infinis, </l>
             <l n="182" xml:id="l182">C'est par nous seulement qu'il les veut voir punis. </l>
           </sp>
-          <sp xml:id="I02-8" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-8">
             <speaker>LA SULTANE.</speaker>
             <l n="183" xml:id="l183">Mais généreux Aga, que veux-tu que je fasse, </l>
             <l n="184" xml:id="l184">Quoique pour s'assurer il ait détruit ma race, </l>
@@ -350,7 +359,7 @@
             <note type="L">Diadème : C'était autrefois un bandeau royal de tissu de fil, de laine, ou de soie, qui était la marque de la royauté, parce que les rois s'en ceignaient le front pour laisser le Couronne aux Dieux. [L]</note>
             <l n="188" xml:id="l188">Puisque de son amour je tiens le Diadème. </l>
           </sp>
-          <sp xml:id="I02-9" who="LAGA">
+          <sp who="AGA" xml:id="I02-9">
             <speaker>L'AGA.</speaker>
             <l n="189" xml:id="l189">Mais aussi cet honneur, il le tient d'Achomat, </l>
             <l n="190" xml:id="l190">C'est lui seul qui toujours conserva son État, </l>
@@ -361,7 +370,7 @@
             <l n="195" xml:id="l195">Et malgré nos efforts des infâmes supplices </l>
             <l n="196" xml:id="l196">Firent sa récompense, après tous ses services. </l>
           </sp>
-          <sp xml:id="I02-10" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-10">
             <speaker>LA SULTANE.</speaker>
             <l n="197" xml:id="l197">Il m'en souvient aussi, mais mon juste courroux </l>
             <l n="198" xml:id="l198">Ne peut avoir d'effet contraire à mon époux. </l>
@@ -374,7 +383,7 @@
             <l n="205" xml:id="l205">Et qui mit deux esprits dedans un même coeur, </l>
             <l n="206" xml:id="l206">Il faut que malgré moi je quitte ma rigueur. </l>
           </sp>
-          <sp xml:id="I02-11" who="LAGA">
+          <sp who="AGA" xml:id="I02-11">
             <speaker>L'AGA.</speaker>
             <l n="207" xml:id="l207">Ce noeud est-il plus fort que celui de nature, </l>
             <l n="208" xml:id="l208">Pour vous faire sitôt oublier une injure ? </l>
@@ -395,62 +404,62 @@
             <l n="223" xml:id="l223">Mais pour suivre un tyran vous dédaignez un père, </l>
             <l n="224" xml:id="l224">Songez que tôt ou tard, il lui faut satisfaire. </l>
           </sp>
-          <sp xml:id="I02-12" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-12">
             <speaker>LA SULTANE.</speaker>
             <note type="L">Aga : Les Turcs se servent de ce mot pour signifier absolument un commandant. [F]</note>
-            <l n="225" xml:id="l225" part="I">Comment donc cher Aga ? </l>
+            <l n="225" part="I" xml:id="l225">Comment donc cher Aga ? </l>
           </sp>
-          <sp xml:id="I02-13" who="LAGA">
+          <sp who="AGA" xml:id="I02-13">
             <speaker>L'AGA.</speaker>
             <l part="F">Je vous l'ai déjà dit, </l>
             <l n="226" xml:id="l226">Perdez avec honneur celui qui le perdit : </l>
             <l n="227" xml:id="l227">Ainsi vous punirez celui qui vous offense, </l>
             <l n="228" xml:id="l228">Et d'un affront sanglant vous perdrez la vengeance. </l>
           </sp>
-          <sp xml:id="I02-14" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-14">
             <speaker>LA SULTANE.</speaker>
             <l n="229" xml:id="l229">Quel conseil est le tien pour un coeur amoureux ? </l>
           </sp>
-          <sp xml:id="I02-15" who="LAGA">
+          <sp who="AGA" xml:id="I02-15">
             <speaker>L'AGA.</speaker>
             <l n="230" xml:id="l230">Un conseil qui doit rendre un père plus heureux. </l>
           </sp>
-          <sp xml:id="I02-16" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-16">
             <speaker>LA SULTANE.</speaker>
             <l n="231" xml:id="l231">Un conseil qui m'instruit à perdre ce que j'aime. </l>
           </sp>
-          <sp xml:id="I02-17" who="LAGA">
+          <sp who="AGA" xml:id="I02-17">
             <speaker>L'AGA.</speaker>
-            <l n="232" xml:id="l232" part="I">À perdre qui vous nuit. </l>
+            <l n="232" part="I" xml:id="l232">À perdre qui vous nuit. </l>
           </sp>
-          <sp xml:id="I02-18" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-18">
             <speaker>LA SULTANE.</speaker>
             <l part="F">À me nuire moi-même</l>
             <l n="233" xml:id="l233">Non, Bajazet mourant ne peut le soulager ; </l>
             <l n="234" xml:id="l234">Achomat n'aime point ce qui peut m'affliger. </l>
           </sp>
-          <sp xml:id="I02-19" who="LAGA">
+          <sp who="AGA" xml:id="I02-19">
             <speaker>L'AGA.</speaker>
             <l n="235" xml:id="l235">Mais devez-vous aimer un qui vous déshonore, </l>
             <l n="236" xml:id="l236">Un tyran qui vous perd ? </l>
           </sp>
-          <sp xml:id="I02-20" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-20">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Lui-même je l'adore. </l>
           </sp>
-          <sp xml:id="I02-21" who="LAGA">
+          <sp who="AGA" xml:id="I02-21">
             <speaker>L'AGA.</speaker>
-            <l n="237" xml:id="l237" part="I">Il vous ravit un père. </l>
+            <l n="237" part="I" xml:id="l237">Il vous ravit un père. </l>
           </sp>
-          <sp xml:id="I02-22" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-22">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Il le mit au tombeau. </l>
           </sp>
-          <sp xml:id="I02-23" who="LAGA">
+          <sp who="AGA" xml:id="I02-23">
             <speaker>L'AGA.</speaker>
-            <l n="238" xml:id="l238" part="I">Il fut son ennemi. </l>
+            <l n="238" part="I" xml:id="l238">Il fut son ennemi. </l>
           </sp>
-          <sp xml:id="I02-24" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-24">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Dis qu'il fut son bourreau </l>
             <l n="239" xml:id="l239">Mais cependant je l'aime, et ce nom d'Hyménée </l>
@@ -458,30 +467,30 @@
             <l n="241" xml:id="l241">Je ne puis m'en dédire, et mon affection </l>
             <l n="242" xml:id="l242">Fait comme mon plaisir ; toute ma passion. </l>
           </sp>
-          <sp xml:id="I02-25" who="LAGA">
+          <sp who="AGA" xml:id="I02-25">
             <speaker>L'AGA.</speaker>
             <l n="243" xml:id="l243">Ah ! Madame, écoutez la voix de la nature. </l>
           </sp>
-          <sp xml:id="I02-26" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-26">
             <speaker>LA SULTANE.</speaker>
             <l n="244" xml:id="l244">Elle-même me guide en cette procédure. </l>
           </sp>
-          <sp xml:id="I02-27" who="LAGA">
+          <sp who="AGA" xml:id="I02-27">
             <speaker>L'AGA.</speaker>
             <l n="245" xml:id="l245">Suivez donc son conseil, punissez un ingrat, </l>
             <l n="246" xml:id="l246">Perdez un infidèle, et vengez Achomat. </l>
           </sp>
-          <sp xml:id="I02-28" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-28">
             <speaker>LA SULTANE.</speaker>
             <l n="247" xml:id="l247">Mais le puis-je venger en commettant un crime ? </l>
           </sp>
-          <sp xml:id="I02-29" who="LAGA">
+          <sp who="AGA" xml:id="I02-29">
             <speaker>L'AGA.</speaker>
             <l n="248" xml:id="l248">La vengeance d'un père est toujours légitime ; </l>
             <l n="249" xml:id="l249">Si ce juste conseil offense votre amour, </l>
             <l n="250" xml:id="l250">Songez que l'on doit tout, à qui l'on doit le jour. </l>
           </sp>
-          <sp xml:id="I02-30" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I02-30">
             <speaker>LA SULTANE.</speaker>
             <l n="251" xml:id="l251">Il est vrai l'on doit tout à qui l'on doit la vie, </l>
             <l n="252" xml:id="l252">Aussi je cède enfin à son illustre envie, </l>
@@ -496,7 +505,7 @@
             <l n="261" xml:id="l261">Qu'il vienne, et que bientôt par un ordre nouveau </l>
             <l n="262" xml:id="l262">Il sera dans le trône, et son père au tombeau. </l>
           </sp>
-          <sp xml:id="I02-31" who="LAGA">
+          <sp who="AGA" xml:id="I02-31">
             <speaker>L'AGA.</speaker>
             <l n="263" xml:id="l263">Mais de peur qu'un soupçon dans son âme incertaine, </l>
             <l n="264" xml:id="l264">Ne trompât notre attente et ne la rendit vaine, </l>
@@ -508,9 +517,10 @@
             <l n="270" xml:id="l270">Ayant pour Bajazet beaucoup d'aversion. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. <listPerson type="configuration" xml:id="conf3"><person corresp="#LASULTANE"/></listPerson></head>
-          <sp xml:id="I03-1" who="LASULTANE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. <listPerson type="configuration" xml:id="conf3">
+            <person corresp="#LASULTANE"/></listPerson></head>
+          <sp who="LASULTANE" xml:id="I03-1">
             <speaker>LA SULTANE, seule.</speaker>
             <l n="271" xml:id="l271">Méprisons ces honneurs, et ce beau nom de femme, </l>
             <l n="272" xml:id="l272">Le feu de ma colère est plus fort que sa flamme : </l>
@@ -547,13 +557,15 @@
             <l n="302" xml:id="l302">Venir trouver la mort en mes embrassements. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Corchut, La Sultane.<listPerson type="configuration" xml:id="conf4"><person corresp="#CORCHUT"/><person corresp="#LASULTANE"/></listPerson></head>
-          <sp xml:id="I04-1" who="CORCHUT">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Corchut, La Sultane.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#CORCHUT"/>
+            <person corresp="#LASULTANE"/></listPerson></head>
+          <sp who="CORCHUT" xml:id="I04-1">
             <speaker>CORCHUT.</speaker>
             <l n="303" xml:id="l303">Quel est donc l'accident qui vous met en colère ? </l>
           </sp>
-          <sp xml:id="I04-2" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I04-2">
             <speaker>LA SULTANE.</speaker>
             <l n="304" xml:id="l304">J'en ai trop de sujet ; après la mort d'un père </l>
             <l n="305" xml:id="l305">Peut-on avoir l'esprit justement en repos ? </l>
@@ -561,47 +573,47 @@
             <l n="307" xml:id="l307">Sans cesse il m'en revient une idée importune, </l>
             <l n="308" xml:id="l308">Qui trouble mes plaisirs et ma bonne fortune. </l>
           </sp>
-          <sp xml:id="I04-3" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="I04-3">
             <speaker>CORCHUT.</speaker>
             <l n="309" xml:id="l309">Mais vous trouvez aussi dans l'amour d'un époux, </l>
             <l n="310" xml:id="l310">Pour vous en consoler des moyens assez doux. </l>
           </sp>
-          <sp xml:id="I04-4" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I04-4">
             <speaker>LA SULTANE.</speaker>
             <l n="311" xml:id="l311">Des moyens assez doux, ah ! Corchut au contraire, </l>
             <l n="312" xml:id="l312">Peut-il me consoler ayant tué mon père ? </l>
           </sp>
-          <sp xml:id="I04-5" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="I04-5">
             <speaker>CORCHUT.</speaker>
             <l n="313" xml:id="l313">Qui vous a fait du mal vous en pourra guérir. </l>
           </sp>
-          <sp xml:id="I04-6" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I04-6">
             <speaker>LA SULTANE.</speaker>
             <l n="314" xml:id="l314">Ce sera donc Corchut en me faisant mourir, </l>
             <l n="315" xml:id="l315">La perte que j'ai faite étant irréparable, </l>
             <l n="316" xml:id="l316">La mort seule à mes maux peut être secourable. </l>
           </sp>
-          <sp xml:id="I04-7" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="I04-7">
             <speaker>CORCHUT.</speaker>
             <l n="317" xml:id="l317">Peu de monde en la mort a rencontré son bien. </l>
           </sp>
-          <sp xml:id="I04-8" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I04-8">
             <speaker>LA SULTANE.</speaker>
             <l n="318" xml:id="l318">Peu de monde a senti du mal comme le mien. </l>
             <l n="319" xml:id="l319">La mort aux plus heureux est un pas difficile, </l>
             <l n="320" xml:id="l320">Mais c'est des malheureux le véritable asile, </l>
             <l n="321" xml:id="l321">C'est par son seul moyen qu'ils sont en sûreté. </l>
           </sp>
-          <sp xml:id="I04-9" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="I04-9">
             <speaker>CORCHUT.</speaker>
             <l n="322" xml:id="l322">Oui lorsque le malheur est à l'extrémité ; </l>
-            <l n="323" xml:id="l323" part="I">Mais... </l>
+            <l n="323" part="I" xml:id="l323">Mais... </l>
           </sp>
-          <sp xml:id="I04-10" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I04-10">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Mais le mien est tel étant irréparable. </l>
           </sp>
-          <sp xml:id="I04-11" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="I04-11">
             <speaker>CORCHUT.</speaker>
             <l n="324" xml:id="l324">Mais il ne tient qu'à vous d'être moins misérable, </l>
             <l n="325" xml:id="l325">Oubliez Achomat, et quittez votre ennui, </l>
@@ -614,29 +626,30 @@
             <l n="332" xml:id="l332">Voulant vous consulter avant sur cette affaire. </l>
             <l n="333" xml:id="l333">C'est dont il m'a prié de vous venir parler. </l>
           </sp>
-          <sp xml:id="I04-12" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I04-12">
             <speaker>LA SULTANE.</speaker>
             <l n="334" xml:id="l334">Sur ce point important je veux le conseiller, </l>
-            <l n="335" xml:id="l335" part="I">Où pourrai-je le voir ? </l>
+            <l n="335" part="I" xml:id="l335">Où pourrai-je le voir ? </l>
           </sp>
-          <sp xml:id="I04-13" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="I04-13">
             <speaker>CORCHUT.</speaker>
             <l part="F">Dedans le Sérail même. </l>
           </sp>
-          <sp xml:id="I04-14" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="I04-14">
             <speaker>LA SULTANE.</speaker>
             <l n="336" xml:id="l336">Je lui veux aujourd'hui montrer combien je l'aime. </l>
             <l n="337" xml:id="l337">Je l'y verrai tantôt, allez l'en avertir. </l>
-            <l n="338" xml:id="l338" part="I">Mais vite, s'il vous plaît. </l>
+            <l n="338" part="I" xml:id="l338">Mais vite, s'il vous plaît. </l>
           </sp>
-          <sp xml:id="I04-15" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="I04-15">
             <speaker>CORCHUT.</speaker>
             <l part="F">Madame, il va venir. </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. <listPerson type="configuration" xml:id="conf5"><person corresp="#LASULTANE"/></listPerson></head>
-          <sp xml:id="I05-1" who="LASULTANE">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. <listPerson type="configuration" xml:id="conf5">
+            <person corresp="#LASULTANE"/></listPerson></head>
+          <sp who="LASULTANE" xml:id="I05-1">
             <speaker>LA SULTANE seule.</speaker>
             <l n="339" xml:id="l339">Quand nous savons choisir des projets légitimes, </l>
             <l n="340" xml:id="l340">Le Ciel discerne bien la justice des crimes. </l>
@@ -661,11 +674,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE I. Corchut, Sélim.<listPerson type="configuration" xml:id="conf7"><person corresp="#CORCHUT"/><person corresp="#SELIM"/></listPerson></head>
-          <sp xml:id="II01-1" who="CORCHUT">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE I. Corchut, Sélim.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#CORCHUT"/>
+            <person corresp="#SELIM"/></listPerson></head>
+          <sp who="CORCHUT" xml:id="II01-1">
             <speaker>CORCHUT.</speaker>
             <note type="L">Penser : nom masculin au XVIIème pour « pensée ».</note>
             <l n="359" xml:id="l359">Deux pensers différents dont mon coeur est la proie. </l>
@@ -689,7 +704,7 @@
             <l n="377" xml:id="l377">Jamais il ne hait, ou bien n'aime à demi : </l>
             <l n="378" xml:id="l378">Et quand il n'aime pas, il est grand ennemi. </l>
           </sp>
-          <sp xml:id="II01-2" who="SELIM">
+          <sp who="SELIM" xml:id="II01-2">
             <speaker>SÉLIM.</speaker>
             <l n="379" xml:id="l379">Dans l'état où je suis j'aurais droit de me plaindre, </l>
             <l n="380" xml:id="l380">Si tout ce que je vois ne m'empêchait de craindre : </l>
@@ -737,7 +752,7 @@
             <l n="421" xml:id="l421">Il ne punira pas comme un usurpateur, </l>
             <l n="422" xml:id="l422">Celui qui ne voulut qu'être son successeur. </l>
           </sp>
-          <sp xml:id="II01-3" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="II01-3">
             <speaker>CORCHUT.</speaker>
             <l n="423" xml:id="l423">Qui demande pardon, selon cette maxime, </l>
             <l n="424" xml:id="l424">Fait voir qu'il a lui-même horreur pour un tel crime ; </l>
@@ -785,9 +800,10 @@
             <l n="466" xml:id="l466">Ne s'en éloigner pas c'est bien la mériter. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf8"><person corresp="#SELIM"/></listPerson></head>
-          <sp xml:id="II02-1" who="SELIM">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf8">
+            <person corresp="#SELIM"/></listPerson></head>
+          <sp who="SELIM" xml:id="II02-1">
             <speaker>SÉLIM, seul.</speaker>
             <lg type="stances">
               <lg n="1">
@@ -833,7 +849,6 @@
               <lg n="6">
                 <l n="497" xml:id="l497">Ô funeste désir ! Auteur de ma misère, </l>
                 <l n="498" xml:id="l498">Qui fait armer le fils contre l'honneur du père : </l>
-                <note type="L">Infracteur : Celui qui enfraint, qui rompt un traité, une loi. [F]</note>
                 <l n="499" xml:id="l499">Infracteur de la paix, et des plus saintes lois, </l>
                 <l n="500" xml:id="l500">Qui règnes en l'esprit des sujets et des Rois. </l>
                 <l n="501" xml:id="l501">Ennemi du repos et de l'obéissance, </l>
@@ -844,60 +859,64 @@
             </lg>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Sélim, L'Esclave de Sélim.<listPerson type="configuration" xml:id="conf9"><person corresp="#LESCLAVE"/><person corresp="#SELIM"/><person corresp="#ESCLAVEDESELIM"/></listPerson></head>
-          <sp xml:id="II03-1" who="LESCLAVE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Sélim, L'Esclave de Sélim.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#ESCLAVESELIM"/>
+            <person corresp="#SELIM"/> </listPerson></head>
+          <sp who="ESCLAVESELIM" xml:id="II03-1">
             <speaker>L'ESCLAVE.</speaker>
             <l n="505" xml:id="l505">Je venais t'avertir que la Sultane Reine </l>
-            <l n="506" xml:id="l506" part="I">Te demande, Seigneur. </l>
+            <l n="506" part="I" xml:id="l506">Te demande, Seigneur. </l>
           </sp>
-          <sp xml:id="II03-2" who="SELIM">
+          <sp who="SELIM" xml:id="II03-2">
             <speaker>SÉLIM.</speaker>
             <l part="F">Elle prend trop de peine : </l>
-            <l n="507" xml:id="l507" part="I">Je vais la recevoir. </l>
+            <l n="507" part="I" xml:id="l507">Je vais la recevoir. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Sélim, La Sultane.<listPerson type="configuration" xml:id="conf10"><person corresp="#SELIM"/><person corresp="#LASULTANE"/></listPerson></head>
-          <sp xml:id="II04-1" who="SELIM">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Sélim, La Sultane.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#SELIM"/>
+            <person corresp="#LASULTANE"/></listPerson></head>
+          <sp who="SELIM" xml:id="II04-1">
             <speaker>SÉLIM.</speaker>
             <l part="F">Mais ô Dieu la voici. </l>
           </sp>
-          <sp xml:id="II04-2" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-2">
             <speaker>LA SULTANE.</speaker>
             <l n="508" xml:id="l508">Enfin j'ai le bonheur de te revoir ici. </l>
           </sp>
-          <sp xml:id="II04-3" who="SELIM">
+          <sp who="SELIM" xml:id="II04-3">
             <speaker>SÉLIM.</speaker>
             <l n="509" xml:id="l509">Madame vous voyez ce Prince misérable, </l>
             <l n="510" xml:id="l510">Que trop de libertés, ont rendu détestable, </l>
             <l n="511" xml:id="l511">Et qui prêt aujourd'hui de terminer ses jours, </l>
             <l n="512" xml:id="l512">Viens chercher son salut dedans votre secours. </l>
           </sp>
-          <sp xml:id="II04-4" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-4">
             <speaker>LA SULTANE.</speaker>
             <l n="513" xml:id="l513">Il le peut mieux trouver en son propre courage ; </l>
             <l n="514" xml:id="l514">Et de m'offrir à lui, c'est lui faire un outrage. </l>
           </sp>
-          <sp xml:id="II04-5" who="SELIM">
+          <sp who="SELIM" xml:id="II04-5">
             <speaker>SÉLIM.</speaker>
             <l n="515" xml:id="l515">Mon courage pourrait me mettre en sûreté ; </l>
             <l n="516" xml:id="l516">Lui qui dans mes malheurs m'a seul précipité, </l>
             <l n="517" xml:id="l517">Qui m'a fait l'ennemi de toute ma Patrie. </l>
           </sp>
-          <sp xml:id="II04-6" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-6">
             <speaker>LA SULTANE.</speaker>
             <l n="518" xml:id="l518">Mais dites bien plutôt qu'il vous sauve la vie ; </l>
             <l n="519" xml:id="l519">Qu'il vous fait respirer, que vous êtes sans fers, </l>
             <l n="520" xml:id="l520">Et seul exempt des maux que nous avons soufferts. </l>
           </sp>
-          <sp xml:id="II04-7" who="SELIM">
+          <sp who="SELIM" xml:id="II04-7">
             <speaker>SÉLIM.</speaker>
             <l n="521" xml:id="l521">Moi seul exempt de fers, moi seul exempt de peine, </l>
             <l n="522" xml:id="l522">Qui d'un Roi, qui d'un père ai méritai la haine : </l>
-            <l n="523" xml:id="l523" part="I">Ah ! Madame... </l>
+            <l n="523" part="I" xml:id="l523">Ah ! Madame... </l>
           </sp>
-          <sp xml:id="II04-8" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-8">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Oui vous seul, puisque son amitié </l>
             <l n="524" xml:id="l524">Vous nuirait au-delà de son inimitié. </l>
@@ -912,11 +931,11 @@
             <l n="533" xml:id="l533">Qu'attendrez-vous Sélim de cette âme barbare, </l>
             <l n="534" xml:id="l534">Où le vice est commun, et la vertu si rare ? </l>
           </sp>
-          <sp xml:id="II04-9" who="SELIM">
+          <sp who="SELIM" xml:id="II04-9">
             <speaker>SÉLIM.</speaker>
             <l n="535" xml:id="l535">J'attendrai mon pardon, ou bien mon châtiment. </l>
           </sp>
-          <sp xml:id="II04-10" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-10">
             <speaker>LA SULTANE.</speaker>
             <l n="536" xml:id="l536">Attendre son supplice ? Indigne sentiment ! </l>
             <l n="537" xml:id="l537">Convertissez plutôt cette amour en furie, </l>
@@ -925,7 +944,7 @@
             <l n="540" xml:id="l540">Assouvissons sur lui notre juste courroux, </l>
             <l n="541" xml:id="l541">Vengeons notre pays, vengeons notre misère. </l>
           </sp>
-          <sp xml:id="II04-11" who="SELIM">
+          <sp who="SELIM" xml:id="II04-11">
             <speaker>SÉLIM.</speaker>
             <l n="542" xml:id="l542">Voulez-vous éprouver si j'aime encor mon père ? </l>
             <l n="543" xml:id="l543">Madame, ces discours sont ici superflus, </l>
@@ -935,16 +954,16 @@
             <l n="547" xml:id="l547">C'est là le seul sujet qui m'amène vers lui, </l>
             <l n="548" xml:id="l548">Et non pas le dessein de croître son ennui. </l>
           </sp>
-          <sp xml:id="II04-12" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-12">
             <speaker>LA SULTANE.</speaker>
             <l n="549" xml:id="l549">Donc à ce que je vois vous me croyez trompeuse ? </l>
           </sp>
-          <sp xml:id="II04-13" who="SELIM">
+          <sp who="SELIM" xml:id="II04-13">
             <speaker>SÉLIM.</speaker>
             <l n="550" xml:id="l550">Non, mais je connais trop votre âme vertueuse, </l>
             <l n="551" xml:id="l551">Et combien chèrement vous aimez votre époux. </l>
           </sp>
-          <sp xml:id="II04-14" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-14">
             <speaker>LA SULTANE.</speaker>
             <l n="552" xml:id="l552">Je jure par le Dieu que nous adorons tous, </l>
             <l n="553" xml:id="l553">Par l'amour d'Achomat, que je parle sans feinte ; </l>
@@ -952,13 +971,13 @@
             <l n="555" xml:id="l555">Je n'ai point ce dessein, et j'aime trop l'honneur </l>
             <l n="556" xml:id="l556">Pour tenir un discours mensonger et trompeur : </l>
             <l n="557" xml:id="l557">Il faut venger Sélim, le pays et vous-même, </l>
-            <l n="558" xml:id="l558" part="I">Il faut nous venger tous. </l>
+            <l n="558" part="I" xml:id="l558">Il faut nous venger tous. </l>
           </sp>
-          <sp xml:id="II04-15" who="SELIM">
+          <sp who="SELIM" xml:id="II04-15">
             <speaker>SÉLIM.</speaker>
             <l part="F">Ô perfidie extrême ! </l>
           </sp>
-          <sp xml:id="II04-16" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-16">
             <speaker>LA SULTANE.</speaker>
             <l n="559" xml:id="l559">Quoi vous refusez donc ainsi d'y consentir ? </l>
             <l n="560" xml:id="l560">Vous aimez mieux user d'un lâche repentir, </l>
@@ -972,31 +991,31 @@
             <l n="568" xml:id="l568">Le Tyran veut vous perdre, et vous faire mourir : </l>
             <l n="569" xml:id="l569">Il veut par un poison abréger votre vie. </l>
           </sp>
-          <sp xml:id="II04-17" who="SELIM">
+          <sp who="SELIM" xml:id="II04-17">
             <speaker>SÉLIM.</speaker>
             <l n="570" xml:id="l570">Il le peut justement s'il en a quelque envie, </l>
-            <l n="571" xml:id="l571" part="I">Je l'ai trop mérité. </l>
+            <l n="571" part="I" xml:id="l571">Je l'ai trop mérité. </l>
           </sp>
-          <sp xml:id="II04-18" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-18">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Quel lâche sentiment ? </l>
           </sp>
-          <sp xml:id="II04-19" who="SELIM">
+          <sp who="SELIM" xml:id="II04-19">
             <speaker>SÉLIM.</speaker>
             <l n="572" xml:id="l572">Je vous le dis encore, il le peut justement, </l>
-            <l n="573" xml:id="l573" part="I">Je l'ai trop mérité. </l>
+            <l n="573" part="I" xml:id="l573">Je l'ai trop mérité. </l>
           </sp>
-          <sp xml:id="II04-20" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-20">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Respects illégitimes ! </l>
-            <l n="574" xml:id="l574" part="I">Quoi s'il vous veut punir... </l>
+            <l n="574" part="I" xml:id="l574">Quoi s'il vous veut punir... </l>
           </sp>
-          <sp xml:id="II04-21" who="SELIM">
+          <sp who="SELIM" xml:id="II04-21">
             <speaker>SÉLIM.</speaker>
             <l part="F">Il le peut pour mes crimes ; </l>
-            <l n="575" xml:id="l575" part="I">Que dis-je, il le doit même. </l>
+            <l n="575" part="I" xml:id="l575">Que dis-je, il le doit même. </l>
           </sp>
-          <sp xml:id="II04-22" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-22">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Ah trop lâche dessein ! </l>
             <l n="576" xml:id="l576">Je porterai plutôt un poignard dans son sein, </l>
@@ -1009,7 +1028,7 @@
             <l n="583" xml:id="l583">Vous aimez mieux la mort, mais je la préviendrai ; </l>
             <l n="584" xml:id="l584">Et dussé-je avec lui périr, je le perdrai. </l>
           </sp>
-          <sp xml:id="II04-23" who="SELIM">
+          <sp who="SELIM" xml:id="II04-23">
             <speaker>SÉLIM.</speaker>
             <l n="585" xml:id="l585">Madame, permettez que je vous fasse entendre, </l>
             <l n="586" xml:id="l586">Quelle juste raison m'oblige à le défendre ; </l>
@@ -1036,7 +1055,7 @@
             <l n="607" xml:id="l607">C'est aux Rois de vouloir, c'est à nous d'obéir, </l>
             <l n="608" xml:id="l608">Et quiconque est sujet ne les doit point trahir. </l>
           </sp>
-          <sp xml:id="II04-24" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-24">
             <speaker>LA SULTANE.</speaker>
             <l n="609" xml:id="l609">Ce n'est pas les trahir, Sélim, c'est nous défendre, </l>
             <l n="610" xml:id="l610">Pour sauver son pays on peut tout entreprendre, </l>
@@ -1051,7 +1070,7 @@
             <l n="619" xml:id="l619">Si vous voulez mourir, que ce soit pour l'État, </l>
             <l n="620" xml:id="l620">Et perdez-vous du moins par un noble attentat. </l>
           </sp>
-          <sp xml:id="II04-25" who="SELIM">
+          <sp who="SELIM" xml:id="II04-25">
             <speaker>SÉLIM.</speaker>
             <l n="621" xml:id="l621">Sauvons-le, sauvons-nous, Madame, je vous cède, </l>
             <l n="622" xml:id="l622">Je veux à vos malheurs apporter du remède, </l>
@@ -1066,7 +1085,7 @@
             <l n="631" xml:id="l631">Et le soin que tantôt il témoignait de moi, </l>
             <l n="632" xml:id="l632">Me montre qu'il n'est pas trop porté pour le Roi. </l>
           </sp>
-          <sp xml:id="II04-26" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="II04-26">
             <speaker>LA SULTANE.</speaker>
             <l n="633" xml:id="l633">En effet, je m'en vais lui proposer l'affaire ; </l>
             <note type="L">Janissaire : Garde du grand seigneur, ou soldat de l'infanterie turquesque. [F]</note>
@@ -1075,9 +1094,10 @@
             <l n="636" xml:id="l636">Quelque bras étranger qui nous serve d'appui. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V.<listPerson type="configuration" xml:id="conf11"><person corresp="#SELIM"/></listPerson></head>
-          <sp xml:id="II05-1" who="SELIM">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#SELIM"/></listPerson></head>
+          <sp who="SELIM" xml:id="II05-1">
             <speaker>SÉLIM, seul.</speaker>
             <l n="637" xml:id="l637">Je ne t'écoute plus, ô voix de la nature. </l>
             <l n="638" xml:id="l638">T'écouter en ce point c'est te faire une injure : </l>
@@ -1097,64 +1117,69 @@
             <l n="652" xml:id="l652">De briser ton portrait qui n'a pas ta bonté. </l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="2">
-          <head>SCÈNE VI. L'Aga des Janissaires, Haly, L'Esclave de Haly.<listPerson type="configuration" xml:id="conf12"><person corresp="#LAGA"/><person corresp="#HALY"/><person corresp="#LESCLAVE"/><person corresp="#LAGADESJANISSAIRES"/></listPerson></head>
-          <sp xml:id="II06-1" who="LAGA">
+        <div2 n="2" type="scene" xml:id="II06">
+          <head>SCÈNE VI. L'Aga des Janissaires, Haly, L'Esclave de Haly.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#AGA"/>
+            <person corresp="#HALY"/>
+            <person corresp="#ESCLAVEHALY"/> </listPerson></head>
+          <sp who="AGA" xml:id="II06-1">
             <speaker>L'AGA.</speaker>
-            <l n="653" xml:id="l653" part="I">Mais sais-tu que c'est lui ? </l>
+            <l n="653" part="I" xml:id="l653">Mais sais-tu que c'est lui ? </l>
           </sp>
-          <sp xml:id="II06-2" who="HALY">
+          <sp who="HALY" xml:id="II06-2">
             <speaker>HALY.</speaker>
             <l part="F">Ne t'en mets plus en peine. </l>
           </sp>
-          <sp xml:id="II06-3" who="LAGA">
+          <sp who="AGA" xml:id="II06-3">
             <speaker>L'AGA.</speaker>
             <l n="654" xml:id="l654">Quoi tu l'as vu parler à la Sultane Reine ? </l>
           </sp>
-          <sp xml:id="II06-4" who="HALY">
+          <sp who="HALY" xml:id="II06-4">
             <speaker>HALY.</speaker>
-            <l n="655" xml:id="l655" part="I">Chez le Prince Corchut. </l>
+            <l n="655" part="I" xml:id="l655">Chez le Prince Corchut. </l>
           </sp>
-          <sp xml:id="II06-5" who="LAGA">
+          <sp who="AGA" xml:id="II06-5">
             <speaker>L'AGA.</speaker>
             <l part="F">Ne te trompes-tu point ? </l>
           </sp>
-          <sp xml:id="II06-6" who="HALY">
+          <sp who="HALY" xml:id="II06-6">
             <speaker>HALY.</speaker>
             <l n="656" xml:id="l656">L'esclave que voici t'en sera le témoin. </l>
           </sp>
-          <sp xml:id="II06-7" who="LESCLAVE">
+          <sp who="ESCLAVEHALY" xml:id="II06-7">
             <speaker>L'ESCLAVE.</speaker>
             <l n="657" xml:id="l657">Oui Seigneur, c'est Sélim, je sais que c'est lui-même. </l>
           </sp>
-          <sp xml:id="II06-8" who="LAGA">
+          <sp who="AGA" xml:id="II06-8">
             <speaker>L'AGA.</speaker>
             <l n="658" xml:id="l658">Ô bonheur sans pareil ! Félicité suprême, </l>
             <l n="659" xml:id="l659">Il est de mon devoir de l'aller visiter : </l>
             <l n="660" xml:id="l660">Pardonne cher ami si j'ose te quitter. </l>
             <stage type="exit">Il sort. </stage>
           </sp>
-          <sp xml:id="II06-9" who="HALY">
+          <sp who="HALY" xml:id="II06-9">
             <speaker>HALY.</speaker>
             <l n="661" xml:id="l661">Pourquoi si promptement lui veut-il quelque chose. </l>
-            <l n="662" xml:id="l662" part="I">Ne sais-tu... </l>
+            <l n="662" part="I" xml:id="l662">Ne sais-tu... </l>
           </sp>
-          <sp xml:id="II06-10" who="LESCLAVE">
+          <sp who="ESCLAVEHALY" xml:id="II06-10">
             <speaker>L'ESCLAVE.</speaker>
             <l part="F">Je ne puis en deviner la cause, </l>
             <l n="663" xml:id="l663">J'ai vu dans un instant dissiper son ennui. </l>
           </sp>
-          <sp xml:id="II06-11" who="HALY">
+          <sp who="HALY" xml:id="II06-11">
             <speaker>HALY.</speaker>
             <l n="664" xml:id="l664">J'essaierai tantôt à savoir tout de lui. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I. Haly, L'Aga.<listPerson type="configuration" xml:id="conf14"><person corresp="#HALY"/><person corresp="#LAGA"/></listPerson></head>
-          <sp xml:id="III01-1" who="HALY">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I. Haly, L'Aga.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#HALY"/>
+            <person corresp="#AGA"/></listPerson></head>
+          <sp who="HALY" xml:id="III01-1">
             <speaker>HALY.</speaker>
             <l n="665" xml:id="l665">J'approuve ce parti, mais touchant l'entreprise, </l>
             <l n="666" xml:id="l666">Comme un de tes amis, j'ai peur d'une surprise, </l>
@@ -1163,9 +1188,9 @@
             <l n="669" xml:id="l669">Sur le moindre soupçon il y va de la tête ; </l>
             <l n="670" xml:id="l670">Évite sagement cette grande tempête, </l>
             <l n="671" xml:id="l671">Et ne t'embarque point inconsidérément. </l>
-            <l n="672" xml:id="l672" part="I">Dans un si grand danger. </l>
+            <l n="672" part="I" xml:id="l672">Dans un si grand danger. </l>
           </sp>
-          <sp xml:id="III01-2" who="LAGA">
+          <sp who="AGA" xml:id="III01-2">
             <speaker>L'AGA.</speaker>
             <l part="F">Je songe incessamment </l>
             <l n="673" xml:id="l673">À tes fortes raisons : mais lorsque j'y médite, </l>
@@ -1189,14 +1214,14 @@
             <l n="691" xml:id="l691">Bon Dieu qu'elle a d'appas pour un coeur généreux, </l>
             <l n="692" xml:id="l692">Puisque c'est le moyen qui le peut rendre heureux ! </l>
           </sp>
-          <sp xml:id="III01-3" who="HALY">
+          <sp who="HALY" xml:id="III01-3">
             <speaker>HALY.</speaker>
             <l n="693" xml:id="l693">Quel bonheur est celui dont tu fais tant d'estime ? </l>
             <l n="694" xml:id="l694">Appelles-tu bonheur le châtiment d'un crime ? </l>
             <l n="695" xml:id="l695">Et si l'on veut punir ton infidélité, </l>
             <l n="696" xml:id="l696">Béniras-tu ce fruit de ta témérité[.]</l>
           </sp>
-          <sp xml:id="III01-4" who="LAGA">
+          <sp who="AGA" xml:id="III01-4">
             <speaker>L'AGA.</speaker>
             <l n="697" xml:id="l697">Lorsque je m'engageai si fort dans cette affaire, </l>
             <l n="698" xml:id="l698">Je pensai mûrement à ce que j'allais faire ; </l>
@@ -1206,12 +1231,12 @@
             <l n="701" xml:id="l701">Que tout mal en ce cas m'étais bien supportable ; </l>
             <l n="702" xml:id="l702">Et qu'une telle mort m'était trop honorable. </l>
           </sp>
-          <sp xml:id="III01-5" who="HALY">
+          <sp who="HALY" xml:id="III01-5">
             <speaker>HALY.</speaker>
             <l n="703" xml:id="l703">Parfois nous estimons facile à supporter </l>
             <l n="704" xml:id="l704">Un mal dont le penser ne peut nous rebuter. </l>
           </sp>
-          <sp xml:id="III01-6" who="LAGA">
+          <sp who="AGA" xml:id="III01-6">
             <speaker>L'AGA.</speaker>
             <l n="705" xml:id="l705">Mais ami, cette mort ayant une autre cause </l>
             <l n="706" xml:id="l706">Que l'infidélité que ton esprit suppose, </l>
@@ -1219,7 +1244,7 @@
             <l n="708" xml:id="l708">Vint troubler mon repos d'un nouveau déplaisir, </l>
             <l n="709" xml:id="l709">Et cette cause enfin est autre que tu penses. </l>
           </sp>
-          <sp xml:id="III01-7" who="HALY">
+          <sp who="HALY" xml:id="III01-7">
             <speaker>HALY.</speaker>
             <l n="710" xml:id="l710">Non elle ne l'est pas du moins aux apparences : </l>
             <l n="711" xml:id="l711">Et c'est aussi pourquoi je plaindrais ton trépas </l>
@@ -1229,7 +1254,7 @@
             <l n="715" xml:id="l715">Que le peuple dirait pour tout remerciement, </l>
             <l n="716" xml:id="l716">Il méritait assez un pareil traitement. </l>
           </sp>
-          <sp xml:id="III01-8" who="LAGA">
+          <sp who="AGA" xml:id="III01-8">
             <speaker>L'AGA.</speaker>
             <l n="717" xml:id="l717">Tu crois donc que la mort qui ne me peut déplaire, </l>
             <l n="718" xml:id="l718">Trouve sa récompense en l'esprit du vulgaire. </l>
@@ -1252,65 +1277,68 @@
             <l n="735" xml:id="l735">Je vais revoir Selim : dis-moi donc promptement </l>
             <l n="736" xml:id="l736">Quel est sur ce sujet ton dernier sentiment. </l>
           </sp>
-          <sp xml:id="III01-9" who="HALY">
+          <sp who="HALY" xml:id="III01-9">
             <speaker>HALY.</speaker>
             <l n="737" xml:id="l737">Je te suivrai partout, si tu veux le permettre ; </l>
             <l n="738" xml:id="l738">Mais l'exécution, à quel temps la remettre. </l>
           </sp>
-          <sp xml:id="III01-10" who="LAGA">
+          <sp who="AGA" xml:id="III01-10">
             <speaker>L'AGA.</speaker>
             <l n="739" xml:id="l739">Je n'en sais rien, Sélim... mais le voici : </l>
             <l n="740" xml:id="l740">De grâce, cher ami, retire-toi d'ici, </l>
             <l n="741" xml:id="l741">Je veux l'entretenir un peu sur cette affaire. </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Sélim, L'Aga.<listPerson type="configuration" xml:id="conf15"><person corresp="#SELIM"/><person corresp="#LAGA"/></listPerson></head>
-          <sp xml:id="III02-1" who="SELIM">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Sélim, L'Aga.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#SELIM"/>
+            <person corresp="#AGA"/></listPerson></head>
+          <sp who="SELIM" xml:id="III02-1">
             <speaker>SÉLIM.</speaker>
-            <l n="742" xml:id="l742" part="I">Ô Dieu ! </l>
+            <l n="742" part="I" xml:id="l742">Ô Dieu ! </l>
           </sp>
-          <sp xml:id="III02-2" who="LAGA">
+          <sp who="AGA" xml:id="III02-2">
             <speaker>L'AGA.</speaker>
             <l part="M">Seigneur, un mot. </l>
           </sp>
-          <sp xml:id="III02-3" who="SELIM">
+          <sp who="SELIM" xml:id="III02-3">
             <speaker>SÉLIM.</speaker>
             <l part="F">Va si tu me veux plaire : </l>
             <l n="743" xml:id="l743">De grâce laisse-moi m'entretenir tout seul. </l>
           </sp>
-          <sp xml:id="III02-4" who="LAGA">
+          <sp who="AGA" xml:id="III02-4">
             <speaker>L'AGA.</speaker>
             <note type="L">L'original porte "tant deuil", il manque de, pour la métrique.</note>
             <l n="744" xml:id="l744">Quel fâcheux accident lui donne tant [de] deuil. </l>
           </sp>
-          <sp xml:id="III02-5" who="SELIM">
+          <sp who="SELIM" xml:id="III02-5">
             <speaker>SÉLIM.</speaker>
             <l n="745" xml:id="l745">Mais parle promptement, que me voulais-tu dire ? </l>
           </sp>
-          <sp xml:id="III02-6" who="LAGA">
+          <sp who="AGA" xml:id="III02-6">
             <speaker>L'AGA.</speaker>
             <l n="746" xml:id="l746">Ce que j'ai fait Seigneur, en faveur de l'Empire, </l>
-            <l n="747" xml:id="l747" part="I">J'ai... </l>
+            <l n="747" part="I" xml:id="l747">J'ai... </l>
           </sp>
-          <sp xml:id="III02-7" who="SELIM">
+          <sp who="SELIM" xml:id="III02-7">
             <speaker>SÉLIM.</speaker>
             <l part="F">Mais ne pourrais-tu différer un moment ? </l>
             <l n="748" xml:id="l748">Viens tantôt me trouver à mon appartement. </l>
           </sp>
-          <sp xml:id="III02-8" who="LAGA">
+          <sp who="AGA" xml:id="III02-8">
             <speaker>L'AGA.</speaker>
             <l n="749" xml:id="l749">Oui, j'irai vous y voir, Seigneur, si bon vous semble. </l>
           </sp>
-          <sp xml:id="III02-9" who="SELIM">
+          <sp who="SELIM" xml:id="III02-9">
             <speaker>SÉLIM.</speaker>
             <l n="750" xml:id="l750">Viens avecques loisir nous parlerons ensemble, </l>
             <l n="751" xml:id="l751">Aussi bien sur un point veux-je t'entretenir. </l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf16"><person corresp="#SELIM"/></listPerson></head>
-          <sp xml:id="III03-1" who="SELIM">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#SELIM"/></listPerson></head>
+          <sp who="SELIM" xml:id="III03-1">
             <speaker>SÉLIM, seul.</speaker>
             <l n="752" xml:id="l752">Mais de quoi lui parler ? Ah triste souvenir ? </l>
             <l n="753" xml:id="l753">Dure nécessité qui me rends misérable, </l>
@@ -1341,13 +1369,15 @@
             <l n="778" xml:id="l778">Dieu faites que son coeur me soit plus secourable. </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Izaïde, Sélim.<listPerson type="configuration" xml:id="conf17"><person corresp="#IZAIDE"/><person corresp="#SELIM"/></listPerson></head>
-          <sp xml:id="III04-1" who="IZAIDE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Izaïde, Sélim.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#IZAIDE"/>
+            <person corresp="#SELIM"/></listPerson></head>
+          <sp who="IZAIDE" xml:id="III04-1">
             <speaker>IZAÏDE.</speaker>
-            <l n="779" xml:id="l779" part="I">Qu'a résolu Selim ? </l>
+            <l n="779" part="I" xml:id="l779">Qu'a résolu Selim ? </l>
           </sp>
-          <sp xml:id="III04-2" who="SELIM">
+          <sp who="SELIM" xml:id="III04-2">
             <speaker>SÉLIM.</speaker>
             <l part="F">De faire son devoir, </l>
             <l n="780" xml:id="l780">Ne pouvant justement suivre votre vouloir, </l>
@@ -1360,7 +1390,7 @@
             <l n="787" xml:id="l787">Moi-même apporterai ma tête à vos genoux, </l>
             <l n="788" xml:id="l788">Et bénirai mon mal, le recevant de vous. </l>
           </sp>
-          <sp xml:id="III04-3" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-3">
             <speaker>IZAÏDE.</speaker>
             <l n="789" xml:id="l789">Donc tu m'aimes Seigneur, à l'égal de toi-même ? </l>
             <l n="790" xml:id="l790">Sont-ce là des effets de ton amour extrême ? </l>
@@ -1371,83 +1401,83 @@
             <l n="795" xml:id="l795">Si tu m'aimes encor suis mon commandement, </l>
             <l n="796" xml:id="l796">Ou je ne croirai pas que tu sois mon amant. </l>
           </sp>
-          <sp xml:id="III04-4" who="SELIM">
+          <sp who="SELIM" xml:id="III04-4">
             <speaker>SÉLIM.</speaker>
             <l n="797" xml:id="l797">Madame, plût à Dieu que vous vissiez mon âme </l>
             <l n="798" xml:id="l798">Dans l'état où l'ont mis mon honneur et ma flamme </l>
             <l n="799" xml:id="l799">Vous connaîtriez alors si mon amour est feint. </l>
           </sp>
-          <sp xml:id="III04-5" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-5">
             <speaker>IZAÏDE.</speaker>
             <l n="800" xml:id="l800">Hé bien s-il n'est pas vrai que tu ne m'aimes point ; </l>
             <l n="801" xml:id="l801">Si ton coeur a pour moi de l'amour véritable, </l>
-            <l n="802" xml:id="l802" part="I">Qu'il quitte son dessein. </l>
+            <l n="802" part="I" xml:id="l802">Qu'il quitte son dessein. </l>
           </sp>
-          <sp xml:id="III04-6" who="SELIM">
+          <sp who="SELIM" xml:id="III04-6">
             <speaker>SÉLIM.</speaker>
             <l part="F">Il est trop raisonnable. </l>
           </sp>
-          <sp xml:id="III04-7" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-7">
             <speaker>IZAÏDE.</speaker>
-            <l n="803" xml:id="l803" part="I">Quoi, de trahir son Roi ? </l>
+            <l n="803" part="I" xml:id="l803">Quoi, de trahir son Roi ? </l>
           </sp>
-          <sp xml:id="III04-8" who="SELIM">
+          <sp who="SELIM" xml:id="III04-8">
             <speaker>SÉLIM.</speaker>
             <l part="F">De chasser votre ennui. </l>
           </sp>
-          <sp xml:id="III04-9" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-9">
             <speaker>IZAÏDE.</speaker>
-            <l n="804" xml:id="l804" part="I">De détruire l'État ? </l>
+            <l n="804" part="I" xml:id="l804">De détruire l'État ? </l>
           </sp>
-          <sp xml:id="III04-10" who="SELIM">
+          <sp who="SELIM" xml:id="III04-10">
             <speaker>SÉLIM.</speaker>
             <l part="F">De lui servir d'appui. </l>
           </sp>
-          <sp xml:id="III04-11" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-11">
             <speaker>IZAÏDE.</speaker>
-            <l n="805" xml:id="l805" part="I">Trahir son souverain ? </l>
+            <l n="805" part="I" xml:id="l805">Trahir son souverain ? </l>
           </sp>
-          <sp xml:id="III04-12" who="SELIM">
+          <sp who="SELIM" xml:id="III04-12">
             <speaker>SÉLIM.</speaker>
             <l part="F">Se défaire d'un traître. </l>
           </sp>
-          <sp xml:id="III04-13" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-13">
             <speaker>IZAÏDE.</speaker>
-            <l n="806" xml:id="l806" part="I">Mais d'un grand potentat ? </l>
+            <l n="806" part="I" xml:id="l806">Mais d'un grand potentat ? </l>
           </sp>
-          <sp xml:id="III04-14" who="SELIM">
+          <sp who="SELIM" xml:id="III04-14">
             <speaker>SÉLIM.</speaker>
             <l part="F">Mais indigne de l'être. </l>
           </sp>
-          <sp xml:id="III04-15" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-15">
             <speaker>IZAÏDE.</speaker>
             <l n="807" xml:id="l807">Affliger son pays, le privant d'Empereur ? </l>
           </sp>
-          <sp xml:id="III04-16" who="SELIM">
+          <sp who="SELIM" xml:id="III04-16">
             <speaker>SÉLIM.</speaker>
             <l n="808" xml:id="l808">Le délivrer plutôt des mains d'un suborneur. </l>
           </sp>
-          <sp xml:id="III04-17" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-17">
             <speaker>IZAÏDE.</speaker>
-            <l n="809" xml:id="l809" part="I">Mais le priver d'un chef ? </l>
+            <l n="809" part="I" xml:id="l809">Mais le priver d'un chef ? </l>
           </sp>
-          <sp xml:id="III04-18" who="SELIM">
+          <sp who="SELIM" xml:id="III04-18">
             <speaker>SÉLIM.</speaker>
             <l part="F">L'honorer d'un plus digne. </l>
           </sp>
-          <sp xml:id="III04-19" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-19">
             <speaker>IZAÏDE.</speaker>
-            <l n="810" xml:id="l810" part="I">S'opposer à son bien ? </l>
+            <l n="810" part="I" xml:id="l810">S'opposer à son bien ? </l>
           </sp>
-          <sp xml:id="III04-20" who="SELIM">
+          <sp who="SELIM" xml:id="III04-20">
             <speaker>SÉLIM.</speaker>
             <l part="F">Empêcher sa ruine. </l>
           </sp>
-          <sp xml:id="III04-21" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-21">
             <speaker>IZAÏDE.</speaker>
             <l n="811" xml:id="l811">Détruire son pays ; ah quel crime Seigneur ! </l>
           </sp>
-          <sp xml:id="III04-22" who="SELIM">
+          <sp who="SELIM" xml:id="III04-22">
             <speaker>SÉLIM.</speaker>
             <l n="812" xml:id="l812">Mais faire le devoir de son libérateur, </l>
             <l n="813" xml:id="l813">Est-ce là l'affliger ? Est-ce là le détruire, </l>
@@ -1464,7 +1494,7 @@
             <l n="824" xml:id="l824">Puisque tout son bonheur dépend de son amour. </l>
             <l n="825" xml:id="l825">Ce sont là les devoirs qu'il désire vous rendre. </l>
           </sp>
-          <sp xml:id="III04-23" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-23">
             <speaker>IZAÏDE.</speaker>
             <l n="826" xml:id="l826">Tu forges des malheurs que je ne puis comprendre ; </l>
             <l n="827" xml:id="l827">Ton bel esprit Seigneur, à te nuire obstiné, </l>
@@ -1490,7 +1520,7 @@
             <l n="847" xml:id="l847">Notre vie est par eux, et notre liberté </l>
             <l n="848" xml:id="l848">Doit se déterminer suivant leur volonté. </l>
           </sp>
-          <sp xml:id="III04-24" who="SELIM">
+          <sp who="SELIM" xml:id="III04-24">
             <speaker>SÉLIM.</speaker>
             <l n="849" xml:id="l849">Oui, nous devons céder à leurs desseins Augustes </l>
             <l n="850" xml:id="l850">Mais lorsque leur esprit a des désirs injustes </l>
@@ -1513,7 +1543,7 @@
             <l n="867" xml:id="l867">Prêtez, prêtez l'oreille à des conseils plus saints, </l>
             <l n="868" xml:id="l868">Et prenez aujourd'hui de plus justes desseins. </l>
           </sp>
-          <sp xml:id="III04-25" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-25">
             <speaker>IZAÏDE.</speaker>
             <l n="869" xml:id="l869">Je n'ai point de désirs qui ne soient raisonnables ; </l>
             <l n="870" xml:id="l870">Quitte les tiens Seigneur, qui sont plus détestables : </l>
@@ -1528,7 +1558,7 @@
             <l n="879" xml:id="l879">Quel progrès as-tu fait par ce grand attentat, </l>
             <l n="880" xml:id="l880">Qu'en cette qualité ennemi de l'État ? </l>
           </sp>
-          <sp xml:id="III04-26" who="SELIM">
+          <sp who="SELIM" xml:id="III04-26">
             <speaker>SÉLIM.</speaker>
             <l n="881" xml:id="l881">Madame, l'attentat que mon coeur se propose, </l>
             <l n="882" xml:id="l882">A bien une plus belle et bien plus noble cause ; </l>
@@ -1543,12 +1573,12 @@
             <l n="891" xml:id="l891">Et toujours l'équité de ses grands jugements, </l>
             <l n="892" xml:id="l892">Ordonne à l'un le prix, à l'autre les tourments. </l>
           </sp>
-          <sp xml:id="III04-27" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-27">
             <speaker>IZAÏDE.</speaker>
             <l n="893" xml:id="l893">Mais ce Dieu souverain, puisqu'il est équitable, </l>
             <l n="894" xml:id="l894">Punirait Bajazet s'il le trouvait coupable. </l>
           </sp>
-          <sp xml:id="III04-28" who="SELIM">
+          <sp who="SELIM" xml:id="III04-28">
             <speaker>SÉLIM.</speaker>
             <l n="895" xml:id="l895">Il le punit assez, inspirant en nos coeurs </l>
             <l n="896" xml:id="l896">Le dessein de venger sur lui tant de rigueurs. </l>
@@ -1557,23 +1587,23 @@
             <l n="899" xml:id="l899">Il remet en ses mains son bon et mauvais sort, </l>
             <l n="900" xml:id="l900">Et lui donne à choisir ou sa vie, ou sa mort. </l>
           </sp>
-          <sp xml:id="III04-29" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-29">
             <speaker>IZAÏDE.</speaker>
             <l n="901" xml:id="l901">Puisque tous mes conseils n'ont rien pu sur ton âme, </l>
             <l n="902" xml:id="l902">Au nom de notre hymen, au nom de notre flamme, </l>
-            <l n="903" xml:id="l903" part="I">Rejette ce dessein. </l>
+            <l n="903" part="I" xml:id="l903">Rejette ce dessein. </l>
           </sp>
-          <sp xml:id="III04-30" who="SELIM">
+          <sp who="SELIM" xml:id="III04-30">
             <speaker>SÉLIM.</speaker>
             <l part="F">Le conseil en est pris, </l>
             <l n="904" xml:id="l904">L'Empire veut un bien dont sa tête est le prix. </l>
           </sp>
-          <sp xml:id="III04-31" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-31">
             <speaker>IZAÏDE.</speaker>
             <l n="905" xml:id="l905">Songe qu'il est ton père, et que son mal te touche, </l>
             <l n="906" xml:id="l906">Que tu es une branche, et qu'il en est la souche. </l>
           </sp>
-          <sp xml:id="III04-32" who="SELIM">
+          <sp who="SELIM" xml:id="III04-32">
             <speaker>SÉLIM.</speaker>
             <l n="907" xml:id="l907">Je ne l'ignore pas, et ce dur souvenir </l>
             <l n="908" xml:id="l908">M'oblige davantage à le devoir punir. </l>
@@ -1587,12 +1617,12 @@
             <l n="916" xml:id="l916">Voyez si c'est justice, ou si c'est trahison. </l>
             <l n="917" xml:id="l917">Corchut à ce projet a donné son suffrage. </l>
           </sp>
-          <sp xml:id="III04-33" who="IZAIDE">
+          <sp who="IZAIDE" xml:id="III04-33">
             <speaker>IZAÏDE.</speaker>
             <l n="918" xml:id="l918">Suis donc tes sentiments je suivrai mon courage, </l>
             <l n="919" xml:id="l919">Meurs et je vais mourir ; à Dieu cruel, à Dieu. </l>
           </sp>
-          <sp xml:id="III04-34" who="SELIM">
+          <sp who="SELIM" xml:id="III04-34">
             <speaker>SÉLIM.</speaker>
             <l n="920" xml:id="l920">Ah ! Souffre que plutôt j'expire sur le lieu, </l>
             <stage type="[N/A]">Elle rentre. </stage>
@@ -1600,9 +1630,12 @@
             <l n="922" xml:id="l922">Je m'en vais de ce pas voir la Sultane Reine. </l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
-          <head>SCÈNE V. Bajazet, Haly, Herzegoglis.<listPerson type="configuration" xml:id="conf18"><person corresp="#BAJAZET"/><person corresp="#HERZEGOGLIS"/><person corresp="#HALY"/></listPerson></head>
-          <sp xml:id="III05-1" who="BAJAZET">
+        <div2 n="5" type="scene" xml:id="III05">
+          <head>SCÈNE V. Bajazet, Haly, Herzegoglis.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#BAJAZET"/>
+            <person corresp="#HERZEGOGLIS"/>
+            <person corresp="#HALY"/></listPerson></head>
+          <sp who="BAJAZET" xml:id="III05-1">
             <speaker>BAJAZET.</speaker>
             <l n="923" xml:id="l923">Ciel peux-tu conspirer pour l'intérêt d'un traître ? </l>
             <l n="924" xml:id="l924">Donc dedans mes États je ne suis plus le maître, </l>
@@ -1621,7 +1654,7 @@
             <l n="937" xml:id="l937">Et sans considérer ni ton rang, ni ta foi, </l>
             <l n="938" xml:id="l938">Massacre indignement, et ton père, et ton Roi. </l>
           </sp>
-          <sp xml:id="III05-2" who="HERZEGOGLIS">
+          <sp who="HERZEGOGLIS" xml:id="III05-2">
             <speaker>HERZEGOGLIS.</speaker>
             <l n="939" xml:id="l939">Accuse-toi toi seul de l'horrible tempête, </l>
             <l n="940" xml:id="l940">Que depuis quelques jours a menacé ta tête. </l>
@@ -1636,7 +1669,7 @@
             <l n="947" xml:id="l947">Et ta puissance enfin se voyant couronnée, </l>
             <l n="948" xml:id="l948">Devait aimer celui qui te l'avait donnée. </l>
           </sp>
-          <sp xml:id="III05-3" who="BAJAZET">
+          <sp who="BAJAZET" xml:id="III05-3">
             <speaker>BAJAZET.</speaker>
             <l n="949" xml:id="l949">Qui nous élève au Trône y doit nous maintenir, </l>
             <l n="950" xml:id="l950">S'il se révolte après, on doit plus l'en punir : </l>
@@ -1645,7 +1678,7 @@
             <l n="953" xml:id="l953">Puisqu'il fait voir après par ce lâche projet </l>
             <l n="954" xml:id="l954">Qu'il agissait en maître, et non pas en sujet. </l>
           </sp>
-          <sp xml:id="III05-4" who="HALY">
+          <sp who="HALY" xml:id="III05-4">
             <speaker>HALY.</speaker>
             <l n="955" xml:id="l955">Je l'avoue, il est vrai, dans des hommes semblables </l>
             <l n="956" xml:id="l956">Les crimes sont plus grands, quand ils sont véritables : </l>
@@ -1668,7 +1701,7 @@
             <l n="973" xml:id="l973">Si les heureux succès qu'ils donnent aux États, </l>
             <l n="974" xml:id="l974">Font naître les soupçons des plus noirs attentats. </l>
           </sp>
-          <sp xml:id="III05-5" who="BAJAZET">
+          <sp who="BAJAZET" xml:id="III05-5">
             <speaker>BAJAZET.</speaker>
             <l n="975" xml:id="l975">Achomat eut fini ses jours sans violence, </l>
             <l n="976" xml:id="l976">S'il eut pu se sentir heureux sans insolence, </l>
@@ -1697,11 +1730,14 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE I. Bajazet, L'Aga, Haly, Herzegoglis.<listPerson type="configuration" xml:id="conf20"><person corresp="#BAJAZET"/><person corresp="#LAGA"/><person corresp="#HALY"/></listPerson></head>
-          <sp xml:id="IV01-1" who="BAJAZET">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE I. Bajazet, L'Aga, Haly, Herzegoglis.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#BAJAZET"/>
+            <person corresp="#AGA"/>
+            <person corresp="#HALY"/></listPerson></head>
+          <sp who="BAJAZET" xml:id="IV01-1">
             <speaker>BAJAZET.</speaker>
             <l n="999" xml:id="l999">Puisque tu veux enfin que je sorte du trône, </l>
             <l n="1000" xml:id="l1000">Souffre que je dispose au moins de la Couronne, </l>
@@ -1736,7 +1772,7 @@
             <l n="1029" xml:id="l1029">C'est, Achmet, chers amis, je crois que c'est assez, </l>
             <l n="1030" xml:id="l1030">Espérez tout de lui si vous le connaissez. </l>
           </sp>
-          <sp xml:id="IV01-2" who="LAGA">
+          <sp who="AGA" xml:id="IV01-2">
             <speaker>L'AGA.</speaker>
             <l n="1031" xml:id="l1031">Si ton choix dépendait de ma seule puissance, </l>
             <l n="1032" xml:id="l1032">Tu serais satisfait par mon obéissance, </l>
@@ -1760,16 +1796,19 @@
             <l n="1049" xml:id="l1049">Mais aussi souviens-toi qu'un acte de vertu </l>
             <l n="1050" xml:id="l1050">Est de céder parfois lorsqu'on a combattu. </l>
           </sp>
-          <sp xml:id="IV01-3" who="BAJAZET">
+          <sp who="BAJAZET" xml:id="IV01-3">
             <speaker>BAJAZET.</speaker>
             <l n="1051" xml:id="l1051">Ils sauront mon vouloir au plus tard dans une heure, </l>
-            <l n="1052" xml:id="l1052" part="I">Adieu. </l>
+            <l n="1052" part="I" xml:id="l1052">Adieu. </l>
             <stage type="[N/A]">L'Aga rentre. </stage>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Bajazet, Haly, Herzegoglis.<listPerson type="configuration" xml:id="conf21"><person corresp="#BAJAZET"/><person corresp="#HALY"/><person corresp="#HERZEGOGLIS"/></listPerson></head>
-          <sp xml:id="IV02-1" who="BAJAZET">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Bajazet, Haly, Herzegoglis.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#BAJAZET"/>
+            <person corresp="#HALY"/>
+            <person corresp="#HERZEGOGLIS"/></listPerson></head>
+          <sp who="BAJAZET" xml:id="IV02-1">
             <speaker>BAJAZET.</speaker>
             <l part="F">Qu'Herzegoglis avecques toi demeure. </l>
             <l n="1053" xml:id="l1053">Au pitoyable état où le destin m'a mis, </l>
@@ -1821,19 +1860,19 @@
             <l n="1097" xml:id="l1097">Veillez par vos conseils ma vieillesse assister, </l>
             <l n="1098" xml:id="l1098">Et dites si je dois céder ou résister. </l>
           </sp>
-          <sp xml:id="IV02-2" who="HALY">
+          <sp who="HALY" xml:id="IV02-2">
             <speaker>HALY.</speaker>
             <l n="1099" xml:id="l1099">Grand Roi dans ce malheur, combien qu'il soit extrême, </l>
             <l n="1100" xml:id="l1100">Tu pourrais mieux que nous te conseiller toi-même : </l>
             <l n="1101" xml:id="l1101">Mais afin d'obéir à ton commandement, </l>
             <l n="1102" xml:id="l1102">Je dirai sur ce point quel est mon sentiment. </l>
           </sp>
-          <sp xml:id="IV02-3" who="BAJAZET">
+          <sp who="BAJAZET" xml:id="IV02-3">
             <speaker>BAJAZET.</speaker>
             <l n="1103" xml:id="l1103">Parle et qu'Herzegoglis réponde à tes maximes, </l>
             <l n="1104" xml:id="l1104">S'il ne les trouve pas être assez légitimes. </l>
           </sp>
-          <sp xml:id="IV02-4" who="HALY">
+          <sp who="HALY" xml:id="IV02-4">
             <speaker>HALY.</speaker>
             <l n="1105" xml:id="l1105">Ces soldats qui pour mieux monter en un haut rang, </l>
             <l n="1106" xml:id="l1106">Nourris d'un lait Chrétien en répandent le sang, </l>
@@ -1908,7 +1947,7 @@
             <l n="1171" xml:id="l1171">Et ton grand jugement nous fera reconnaître, </l>
             <l n="1172" xml:id="l1172">Qu'en cessant d'être Roi, tu mérites de l'être. </l>
           </sp>
-          <sp xml:id="IV02-5" who="HERZEGOGLIS">
+          <sp who="HERZEGOGLIS" xml:id="IV02-5">
             <speaker>HERZEGOGLIS.</speaker>
             <l n="1173" xml:id="l1173">Depuis le temps qu'on voit régner les Ottomans, </l>
             <l n="1174" xml:id="l1174">L'on n'a point vu Seigneur de pareils sentiments. </l>
@@ -1990,7 +2029,7 @@
             <l n="1249" xml:id="l1249">Et dedans cet éclat les Trônes sont des Cieux, </l>
             <l n="1250" xml:id="l1250">Où ce n'est qu'en tremblant qu'on peut porter les yeux. </l>
           </sp>
-          <sp xml:id="IV02-6" who="HALY">
+          <sp who="HALY" xml:id="IV02-6">
             <speaker>HALY.</speaker>
             <l n="1251" xml:id="l1251">Mais comme un Médecin cherchant un bon remède, </l>
             <l n="1252" xml:id="l1252">Pour chasser loin d'un corps le mal qui le possède, </l>
@@ -2049,7 +2088,7 @@
             <l n="1305" xml:id="l1305">Et tu n'ignores pas que l'on dit en tout lieu, </l>
             <l n="1306" xml:id="l1306">Que quand le peuple parle, il est la voix de Dieu.</l>
           </sp>
-          <sp xml:id="IV02-7" who="HERZEGOGLIS">
+          <sp who="HERZEGOGLIS" xml:id="IV02-7">
             <speaker>HERZEGOGLIS.</speaker>
             <l n="1307" xml:id="l1307">Il est dans les États de certaines maximes, </l>
             <l n="1308" xml:id="l1308">Qu'on ne saurait choquer sans commettre des crimes. </l>
@@ -2065,8 +2104,7 @@
             <l n="1318" xml:id="l1318">De leur savoir donner de rudes châtiments. </l>
             <l n="1319" xml:id="l1319">Tu dois pour te venger d'une telle insolence, </l>
             <l n="1320" xml:id="l1320">Employer les efforts de toute ta puissance ; </l>
-            <note type="L">Potentat : Tout prince souverain, dont la puissance est redoutable par la grandeur de ses forces et par le poids de son autorité. 
-[L]</note>
+            <note type="L">Potentat : Tout prince souverain, dont la puissance est redoutable par la grandeur de ses forces et par le poids de son autorité. [L]</note>
             <l n="1321" xml:id="l1321">Lorsqu'un peuple est rebelle, un puissant potentat </l>
             <l n="1322" xml:id="l1322">Perd avec plus d'honneur ses jours que son État. </l>
             <l n="1323" xml:id="l1323">Ce qu'ils nous ont gagné les oblige à mieux faire, </l>
@@ -2111,13 +2149,13 @@
             <l n="1362" xml:id="l1362">Un sentiment commun est trouvé le meilleur. </l>
             <l n="1363" xml:id="l1363">Mais alors qu'il s'agit de donner des Couronnes, </l>
             <l n="1364" xml:id="l1364">L'Esprit de Dieu descend dedans d'autres personnes ; </l>
-            <note type="L">Oeuvre : Substantif plutôt masculin, tantôt féminin. L'académie le fait toujours féminin ; mai quelque déférence qu'on doit avoir pour ses décisions, il est bien difficile de ne pas convenir qu'il est quelques fois aussi masculin.  [F]</note>
+            <note type="L">Oeuvre : Substantif plutôt masculin, tantôt féminin. L'académie le fait toujours féminin ; mai quelque déférence qu'on doit avoir pour ses décisions, il est bien difficile de ne pas convenir qu'il est quelques fois aussi masculin. [F]</note>
             <l n="1365" xml:id="l1365">Afin de mieux former cet oeuvre précieux, </l>
             <l n="1366" xml:id="l1366">Dieu prend aussi des Rois qui sont comme des Dieux ; </l>
             <l n="1367" xml:id="l1367">Il se sert de leur voix pour faire un tel ouvrage, </l>
             <l n="1368" xml:id="l1368">Et leur image sert à faire leur image. </l>
           </sp>
-          <sp xml:id="IV02-8" who="BAJAZET">
+          <sp who="BAJAZET" xml:id="IV02-8">
             <speaker>BAJAZET.</speaker>
             <l n="1369" xml:id="l1369">Je connais en tous deux et le zèle et l'ardeur, </l>
             <l n="1370" xml:id="l1370">Qui vous fait disputer pour ma seule grandeur ; </l>
@@ -2130,11 +2168,11 @@
             <l n="1377" xml:id="l1377">Je veux laisser l'État comme je l'ai reçu, </l>
             <l n="1378" xml:id="l1378">À celui que pour Roi j'aurai moi-même élu. </l>
           </sp>
-          <sp xml:id="IV02-9" who="HALY">
+          <sp who="HALY" xml:id="IV02-9">
             <speaker>HALY.</speaker>
-            <l n="1379" xml:id="l1379" part="I">Seigneur ils sont puissants. </l>
+            <l n="1379" part="I" xml:id="l1379">Seigneur ils sont puissants. </l>
           </sp>
-          <sp xml:id="IV02-10" who="BAJAZET">
+          <sp who="BAJAZET" xml:id="IV02-10">
             <speaker>BAJAZET.</speaker>
             <l part="F">N'importe mon courage </l>
             <l n="1380" xml:id="l1380">Sait comment amortir les effets de leur rage ; </l>
@@ -2157,11 +2195,11 @@
             <l n="1397" xml:id="l1397">Un Roi ne peut des siens recevoir un bienfait, </l>
             <l n="1398" xml:id="l1398">Et pour peu qu'il fléchit il tombe tout à fait. </l>
           </sp>
-          <sp xml:id="IV02-11" who="HALY">
+          <sp who="HALY" xml:id="IV02-11">
             <speaker>HALY.</speaker>
-            <l n="1399" xml:id="l1399" part="I">Seigneur. </l>
+            <l n="1399" part="I" xml:id="l1399">Seigneur. </l>
           </sp>
-          <sp xml:id="IV02-12" who="BAJAZET">
+          <sp who="BAJAZET" xml:id="IV02-12">
             <speaker>BAJAZET.</speaker>
             <l part="F">Je n'entends plus tes étranges maximes, </l>
             <l n="1400" xml:id="l1400">Qui font ici passer pour remède des crimes. </l>
@@ -2169,143 +2207,152 @@
             <l n="1402" xml:id="l1402">Je me perdrai plutôt avec eux et l'État. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. L'Aga, La Sultane, Sélim, Achmet.<listPerson type="configuration" xml:id="conf22"><person corresp="#SELIM"/><person corresp="#LASULTANE"/><person corresp="#LAGA"/><person corresp="#CORCHUT"/><person corresp="#ACHMET"/></listPerson></head>
-          <sp xml:id="IV03-1" who="SELIM">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. L'Aga, La Sultane, Sélim, Achmet.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#SELIM"/>
+            <person corresp="#LASULTANE"/>
+            <person corresp="#AGA"/>
+            <person corresp="#CORCHUT"/>
+            <person corresp="#ACHMET"/></listPerson></head>
+          <sp who="SELIM" xml:id="IV03-1">
             <speaker>SÉLIM.</speaker>
             <l n="1403" xml:id="l1403">Mais s'il me cède enfin le Sceptre et la Couronne. </l>
           </sp>
-          <sp xml:id="IV03-2" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="IV03-2">
             <speaker>LA SULTANE.</speaker>
             <l n="1404" xml:id="l1404">Non, ce n'est pas assez j'en veux à sa personne : </l>
-            <l n="1405" xml:id="l1405" part="I">Il faut, il faut qu'il meure. </l>
+            <l n="1405" part="I" xml:id="l1405">Il faut, il faut qu'il meure. </l>
           </sp>
-          <sp xml:id="IV03-3" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-3">
             <speaker>SÉLIM.</speaker>
             <l part="F">Ah ! C'est trop attenter. </l>
           </sp>
-          <sp xml:id="IV03-4" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="IV03-4">
             <speaker>LA SULTANE.</speaker>
             <l n="1406" xml:id="l1406">Sélim le Sceptre seul peut bien vous contenter. </l>
             <l n="1407" xml:id="l1407">Mais songez qu'après vous il en faut satisfaire.</l>
             <l n="1408" xml:id="l1408">Vengez-vous de vos maux, je vengerai mon père. </l>
             <l n="1409" xml:id="l1409">Il le priva de vie, et je veux l'en priver. </l>
           </sp>
-          <sp xml:id="IV03-5" who="LAGA">
+          <sp who="AGA" xml:id="IV03-5">
             <speaker>L'AGA.</speaker>
             <l n="1410" xml:id="l1410">Seigneur, songez aussi qu'il peut se relever. </l>
             <l n="1411" xml:id="l1411">Peut-être attendra-t-il l'occasion naissante, </l>
             <l n="1412" xml:id="l1412">Pour se venger sur toi de sa bonté présente. </l>
             <l n="1413" xml:id="l1413">Enfin quoi qu'il en soit tu dois le redouter. </l>
           </sp>
-          <sp xml:id="IV03-6" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="IV03-6">
             <speaker>CORCHUT.</speaker>
             <l n="1414" xml:id="l1414">Et ce sont des conseils que tu dois écouter. </l>
           </sp>
-          <sp xml:id="IV03-7" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-7">
             <speaker>SÉLIM.</speaker>
             <l n="1415" xml:id="l1415">Tombant d'un lieu si haut, on ne doit point le craindre. </l>
           </sp>
-          <sp xml:id="IV03-8" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="IV03-8">
             <speaker>CORCHUT.</speaker>
             <l n="1416" xml:id="l1416">Quelque élevé qu'il soit, il y pourrait r'atteindre. </l>
           </sp>
-          <sp xml:id="IV03-9" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-9">
             <speaker>SÉLIM.</speaker>
             <l n="1417" xml:id="l1417">Je me défendrai bien, quoi qu'il ait entrepris. </l>
           </sp>
-          <sp xml:id="IV03-10" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="IV03-10">
             <speaker>CORCHUT.</speaker>
             <l n="1418" xml:id="l1418">Il te surprendra lors, comme tu l'as surpris. </l>
           </sp>
-          <sp xml:id="IV03-11" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-11">
             <speaker>SÉLIM.</speaker>
             <l n="1419" xml:id="l1419">Tous pour surprendre ainsi n'ont pas même fortune. </l>
           </sp>
-          <sp xml:id="IV03-12" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="IV03-12">
             <speaker>LA SULTANE.</speaker>
             <l n="1420" xml:id="l1420">Mais enfin celle-là lui peut être commune. </l>
           </sp>
-          <sp xml:id="IV03-13" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-13">
             <speaker>SÉLIM.</speaker>
             <l n="1421" xml:id="l1421">Un si rare bonheur n'arrive pas toujours. </l>
           </sp>
-          <sp xml:id="IV03-14" who="LAGA">
+          <sp who="AGA" xml:id="IV03-14">
             <speaker>L'AGA.</speaker>
             <l n="1422" xml:id="l1422">Peut-être son destin prendra le même cours. </l>
           </sp>
-          <sp xml:id="IV03-15" who="ACHMET">
+          <sp who="ACHMET" xml:id="IV03-15">
             <speaker>ACHMET, apercevant Sélim s'arrête.</speaker>
-            <l n="1423" xml:id="l1423" part="I">Mes yeux, me trompez-vous ? </l>
+            <l n="1423" part="I" xml:id="l1423">Mes yeux, me trompez-vous ? </l>
           </sp>
-          <sp xml:id="IV03-16" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="IV03-16">
             <speaker>CORCHUT, parlant à Sélim.</speaker>
             <l part="F">Mon frère que t'en semble ? </l>
           </sp>
-          <sp xml:id="IV03-17" who="ACHMET">
+          <sp who="ACHMET" xml:id="IV03-17">
             <speaker>ACHMET, bas.</speaker>
-            <l n="1424" xml:id="l1424" part="I">Écoutons. </l>
+            <l n="1424" part="I" xml:id="l1424">Écoutons. </l>
           </sp>
-          <sp xml:id="IV03-18" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-18">
             <speaker>SÉLIM.</speaker>
             <l part="F">Je ne puis vous celer que j'en tremble, </l>
             <l n="1425" xml:id="l1425">J'ai toujours du respect pour tous ceux de son rang. </l>
             <l n="1426" xml:id="l1426">Et j'ai peine à tremper mes mains dedans mon sang. </l>
             <l n="1427" xml:id="l1427">Que dirait-on de moi, si je perdais mon père ? </l>
           </sp>
-          <sp xml:id="IV03-19" who="ACHMET">
+          <sp who="ACHMET" xml:id="IV03-19">
             <speaker>ACHMET, bas.</speaker>
-            <l n="1428" xml:id="l1428" part="I">Ô Ciel ! </l>
+            <l n="1428" part="I" xml:id="l1428">Ô Ciel ! </l>
           </sp>
-          <sp xml:id="IV03-20" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="IV03-20">
             <speaker>CORCHUT.</speaker>
             <l part="F">Que tu ferais ce qu'un homme doit faire. </l>
           </sp>
-          <sp xml:id="IV03-21" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-21">
             <speaker>SÉLIM.</speaker>
-            <l n="1429" xml:id="l1429" part="I">Que plutôt sur ma tête... </l>
+            <l n="1429" part="I" xml:id="l1429">Que plutôt sur ma tête... </l>
           </sp>
-          <sp xml:id="IV03-22" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="IV03-22">
             <speaker>CORCHUT.</speaker>
             <l part="F">Ah ! Nous sommes perdus </l>
-            <l n="1430" xml:id="l1430" part="I">Je vois Achmet. </l>
+            <l n="1430" part="I" xml:id="l1430">Je vois Achmet. </l>
           </sp>
-          <sp xml:id="IV03-23" who="ACHMET">
+          <sp who="ACHMET" xml:id="IV03-23">
             <speaker>ACHMET.</speaker>
             <l part="M">Fuyons. </l>
           </sp>
-          <sp xml:id="IV03-24" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-24">
             <speaker>SÉLIM; tirant son épée.</speaker>
             <l part="F">Nous sommes entendus. </l>
-            <l n="1431" xml:id="l1431" part="I">Traître tu le payeras. </l>
+            <l n="1431" part="I" xml:id="l1431">Traître tu le payeras. </l>
           </sp>
-          <sp xml:id="IV03-25" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="IV03-25">
             <speaker>LA SULTANE.</speaker>
             <l part="F">Quel excès de misère ! </l>
           </sp>
-          <sp xml:id="IV03-26" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-26">
             <speaker>SÉLIM, revenant.</speaker>
             <l n="1432" xml:id="l1432">Madame, il s'est soustrait à ma juste colère. </l>
           </sp>
-          <sp xml:id="IV03-27" who="LASULTANE">
+          <sp who="LASULTANE" xml:id="IV03-27">
             <speaker>LA SULTANE.</speaker>
             <l n="1433" xml:id="l1433">En cas que par adresse on n'en vint pas à bout. </l>
           </sp>
-          <sp xml:id="IV03-28" who="LAGA">
+          <sp who="AGA" xml:id="IV03-28">
             <speaker>L'AGA.</speaker>
-            <l n="1434" xml:id="l1434" part="I">Il faut user de force. </l>
+            <l n="1434" part="I" xml:id="l1434">Il faut user de force. </l>
           </sp>
-          <sp xml:id="IV03-29" who="SELIM">
+          <sp who="SELIM" xml:id="IV03-29">
             <speaker>SÉLIM.</speaker>
             <l part="F">Il faut user de tout. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE I. Sélim, Corchut, Haly, L'Aga.<listPerson type="configuration" xml:id="conf24"><person corresp="#SELIM"/><person corresp="#HALY"/><person corresp="#CORCHUT"/><person corresp="#LAGA"/></listPerson></head>
-          <sp xml:id="V01-1" who="SELIM">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE I. Sélim, Corchut, Haly, L'Aga.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#SELIM"/>
+            <person corresp="#HALY"/>
+            <person corresp="#CORCHUT"/>
+            <person corresp="#AGA"/></listPerson></head>
+          <sp who="SELIM" xml:id="V01-1">
             <speaker>SÉLIM.</speaker>
             <l n="1435" xml:id="l1435">Toujours ce Dieu vivant, qui de nos coeurs dispose, </l>
             <l n="1436" xml:id="l1436">Fait répondre l'effet aux bontés de la cause. </l>
@@ -2323,7 +2370,7 @@
             <l n="1448" xml:id="l1448">Par l'effet de nos soins se trouva terminée, </l>
             <l n="1449" xml:id="l1449">Fais-nous savoir avant, comment c'est qu'il est mort. </l>
           </sp>
-          <sp xml:id="V01-2" who="HALY">
+          <sp who="HALY" xml:id="V01-2">
             <speaker>HALY.</speaker>
             <l n="1450" xml:id="l1450">C'est par ses propres mains qu'il a fini son sort ; </l>
             <l n="1451" xml:id="l1451">Mais je vais plus au long te dire cette histoire, </l>
@@ -2404,7 +2451,7 @@
             <l n="1525" xml:id="l1525">Qui désirant mourir pour vaincre nos malheurs, </l>
             <l n="1526" xml:id="l1526">Doit après son trépas revivre dans nos coeurs. </l>
           </sp>
-          <sp xml:id="V01-3" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="V01-3">
             <speaker>CORCHUT.</speaker>
             <l n="1527" xml:id="l1527">Que tes desseins, grand Dieu, sont différents des autres, </l>
             <l n="1528" xml:id="l1528">Et que tes jugements sont éloignés des nôtres : </l>
@@ -2415,7 +2462,7 @@
             <l n="1533" xml:id="l1533">Et souvent où l'on croit la fin de ses malheurs, </l>
             <l n="1534" xml:id="l1534">On rencontre un excès de maux et de douleurs. </l>
           </sp>
-          <sp xml:id="V01-4" who="SELIM">
+          <sp who="SELIM" xml:id="V01-4">
             <speaker>SÉLIM.</speaker>
             <l n="1535" xml:id="l1535">Loin de plaindre une fin si belle et glorieuse, </l>
             <l n="1536" xml:id="l1536">Je l'estime honorable, et la crois trop heureuse. </l>
@@ -2427,37 +2474,37 @@
             <l n="1542" xml:id="l1542">Jetons des cris de joie, et non pas de pitié, </l>
             <l n="1543" xml:id="l1543">Mais Achmet, que dit-il d'une telle aventure ? </l>
           </sp>
-          <sp xml:id="V01-5" who="HALY">
+          <sp who="HALY" xml:id="V01-5">
             <speaker>HALY.</speaker>
             <note type="L">L'original porte Le Bassa, comme interlocuteur, il s'agit de Haly qui est bien le Bassa, mais pour les statistiques il convient de n'avoir qu'un seul nom pour un même locuteur.</note>
             <l n="1544" xml:id="l1544">Il croit en ce trépas recevoir une injure : </l>
             <l n="1545" xml:id="l1545">Il déteste, il enrage, et ses moindres desseins </l>
             <l n="1546" xml:id="l1546">Sont de s'ôter le coeur avec ses propres mains. </l>
           </sp>
-          <sp xml:id="V01-6" who="SELIM">
+          <sp who="SELIM" xml:id="V01-6">
             <speaker>SÉLIM.</speaker>
             <l n="1547" xml:id="l1547">J'y donnerai bon ordre, Aga, qu'on s'en saisisse, </l>
             <l n="1548" xml:id="l1548">Et qu'à ses lâchetés on égale un supplice. </l>
           </sp>
-          <sp xml:id="V01-7" who="LAGA">
+          <sp who="AGA" xml:id="V01-7">
             <speaker>L'AGA.</speaker>
-            <l n="1549" xml:id="l1549" part="I">Tu seras obéi. </l>
+            <l n="1549" part="I" xml:id="l1549">Tu seras obéi. </l>
           </sp>
-          <sp xml:id="V01-8" who="SELIM">
+          <sp who="SELIM" xml:id="V01-8">
             <speaker>SÉLIM.</speaker>
             <l part="F">Dépêche promptement. </l>
           </sp>
-          <sp xml:id="V01-9" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="V01-9">
             <speaker>CORCHUT.</speaker>
             <l n="1550" xml:id="l1550">Suspends, suspends Seigneur, un peu ton jugement, </l>
             <l n="1551" xml:id="l1551">Conserve-toi le fils ayant perdu le père, </l>
             <l n="1552" xml:id="l1552">Et ralentis le feu de ta juste colère. </l>
           </sp>
-          <sp xml:id="V01-10" who="SELIM">
+          <sp who="SELIM" xml:id="V01-10">
             <speaker>SÉLIM? parlant à l'Aga.</speaker>
-            <l n="1553" xml:id="l1553" part="I">Fais ce que je commande, autrement.</l>
+            <l n="1553" part="I" xml:id="l1553">Fais ce que je commande, autrement.</l>
           </sp>
-          <sp xml:id="V01-11" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="V01-11">
             <speaker>CORCHUT.</speaker>
             <l part="F">Ah ! Seigneur, </l>
             <l n="1554" xml:id="l1554">Suis de tels sentiments avec moins de fureur. </l>
@@ -2466,7 +2513,7 @@
             <l n="1557" xml:id="l1557">Que de choisir ainsi la mort d'un innocent, </l>
             <l n="1558" xml:id="l1558">Pour être le soutien d'un trône florissant. </l>
           </sp>
-          <sp xml:id="V01-12" who="SELIM">
+          <sp who="SELIM" xml:id="V01-12">
             <speaker>SÉLIM.</speaker>
             <l n="1559" xml:id="l1559">Peux-tu dire innocent un si lâche courage, </l>
             <l n="1560" xml:id="l1560">Qui jamais pour nous deux n'a témoigné que rage ? </l>
@@ -2477,7 +2524,7 @@
             <l n="1565" xml:id="l1565">La perte est résolue, il en mourra l'ingrat, </l>
             <l n="1566" xml:id="l1566">Je préviendrai ma mort, et son assassinat. </l>
           </sp>
-          <sp xml:id="V01-13" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="V01-13">
             <speaker>CORCHUT.</speaker>
             <l n="1567" xml:id="l1567">Les premiers mouvements que lui donne la rage, </l>
             <l n="1568" xml:id="l1568">Ne doivent pas Seigneur, te faire de l'ombrage : </l>
@@ -2485,25 +2532,25 @@
             <l n="1570" xml:id="l1570">Sont de peu de durée, ainsi que les torrents. </l>
             <l n="1571" xml:id="l1571">Mais il semble à te voir qu'en parlant pour ton frère, </l>
             <l n="1572" xml:id="l1572">Au lieu de t'adoucir, j'irrite ta colère, </l>
-            <l n="1573" xml:id="l1573" part="I">Je te quitte Seigneur, mais craint... </l>
+            <l n="1573" part="I" xml:id="l1573">Je te quitte Seigneur, mais craint... </l>
           </sp>
-          <sp xml:id="V01-14" who="SELIM">
+          <sp who="SELIM" xml:id="V01-14">
             <speaker>SÉLIM.</speaker>
             <l part="F">Bien, bien Corchut, </l>
             <l n="1574" xml:id="l1574">Je craindrai, c'est assez : crains toi, pour ton salut. </l>
           </sp>
-          <sp xml:id="V01-15" who="HALY">
+          <sp who="HALY" xml:id="V01-15">
             <speaker>HALY.</speaker>
             <l n="1575" xml:id="l1575">Peux-tu souffrir, Seigneur, que même en ta présence </l>
             <l n="1576" xml:id="l1576">Il parle pour un traître avec tant de licence ? </l>
             <l n="1577" xml:id="l1577">Crois-moi, tous ces desseins ne sont pas sans sujet. </l>
           </sp>
-          <sp xml:id="V01-16" who="SELIM">
+          <sp who="SELIM" xml:id="V01-16">
             <speaker>SÉLIM.</speaker>
             <l n="1578" xml:id="l1578">J'appréhende aussi d'eux quelque lâche projet : </l>
-            <l n="1579" xml:id="l1579" part="I">C'est à quoi je rêvais. </l>
+            <l n="1579" part="I" xml:id="l1579">C'est à quoi je rêvais. </l>
           </sp>
-          <sp xml:id="V01-17" who="HALY">
+          <sp who="HALY" xml:id="V01-17">
             <speaker>HALY.</speaker>
             <l part="F">Tu dois y prendre garde ; </l>
             <l n="1580" xml:id="l1580">Songes-y bien Seigneur, ce dessein te regarde, </l>
@@ -2514,7 +2561,7 @@
             <l n="1585" xml:id="l1585">On peut tout pour régner avecque sûreté, </l>
             <l n="1586" xml:id="l1586">Et tout pour ce dessein doit être exécuté. </l>
           </sp>
-          <sp xml:id="V01-18" who="SELIM">
+          <sp who="SELIM" xml:id="V01-18">
             <speaker>SÉLIM.</speaker>
             <l n="1587" xml:id="l1587">Je me défendrai bien de leurs lâches pratiques, </l>
             <note type="L">Au déçu : loc. adv. En décevant. [L] L'expression signifie donc à l'insu de ses domestiques.</note>
@@ -2556,9 +2603,10 @@
             <l n="1622" xml:id="l1622">Veut sans me partager, que je sois tout à lui. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="1">
-          <head>SCÈNE I..<listPerson type="configuration" xml:id="conf25"><person corresp="#CORCHUT"/></listPerson></head>
-          <sp xml:id="V02-1" who="CORCHUT">
+        <div2 n="1" type="scene" xml:id="V02">
+          <head>SCÈNE I..<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#CORCHUT"/></listPerson></head>
+          <sp who="CORCHUT" xml:id="V02-1">
             <speaker>CORCHUT, paraît environné de gardes.</speaker>
             <lg type="stances">
               <lg n="1">
@@ -2599,7 +2647,6 @@
                 <l n="1649" xml:id="l1649">N'ont rien éprouvé que des maux, </l>
                 <l n="1650" xml:id="l1650">N'estiment pas la vie, </l>
                 <l n="1651" xml:id="l1651">Mais brûlent de l'avoir ravie, </l>
-                <note type="L">En après : voir supra. </note>
                 <l n="1652" xml:id="l1652">Pour jouir en après du fruit de leurs travaux. </l>
               </lg>
               <lg n="6">
@@ -2635,19 +2682,21 @@
             <l n="1678" xml:id="l1678">M'apprend entièrement quel sera son message. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Haly, Corchut.<listPerson type="configuration" xml:id="conf26"><person corresp="#HALY"/><person corresp="#CORCHUT"/></listPerson></head>
-          <sp xml:id="V03-1" who="HALY">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Haly, Corchut.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#HALY"/>
+            <person corresp="#CORCHUT"/></listPerson></head>
+          <sp who="HALY" xml:id="V03-1">
             <speaker>HALY.</speaker>
             <l n="1679" xml:id="l1679">Si l'on me voit ici, Seigneur, c'est malgré moi ; </l>
             <l n="1680" xml:id="l1680">Mais je suis obligé d'obéir à mon Roi. </l>
-            <l n="1681" xml:id="l1681" part="I">Sélim, Seigneur. </l>
+            <l n="1681" part="I" xml:id="l1681">Sélim, Seigneur. </l>
           </sp>
-          <sp xml:id="V03-2" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="V03-2">
             <speaker>CORCHUT.</speaker>
             <l part="M">Hé bien. </l>
           </sp>
-          <sp xml:id="V03-3" who="HALY">
+          <sp who="HALY" xml:id="V03-3">
             <speaker>HALY.</speaker>
             <l part="F">Sélim veut votre tête. </l>
             <l n="1682" xml:id="l1682">Et si ma mort pouvait détourner la tempête, </l>
@@ -2657,7 +2706,7 @@
             <l n="1686" xml:id="l1686">Et contre sa rigueur je ne vois point d'asile. </l>
             <l n="1687" xml:id="l1687">Seigneur vous succombez à ce triste récit. </l>
           </sp>
-          <sp xml:id="V03-4" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="V03-4">
             <speaker>CORCHUT.</speaker>
             <l n="1688" xml:id="l1688">J'ai pâli, je l'avoue, à ce que tu m'as dit, </l>
             <l n="1689" xml:id="l1689">Quelque bien qu'en mourant espère un misérable, </l>
@@ -2678,12 +2727,12 @@
             <l n="1704" xml:id="l1704">Que du moins par écrit je salue le Roi, </l>
             <l n="1705" xml:id="l1705">Sans faillir contre lui, tu me le peux permettre. </l>
           </sp>
-          <sp xml:id="V03-5" who="HALY">
+          <sp who="HALY" xml:id="V03-5">
             <speaker>HALY.</speaker>
-            <l n="1706" xml:id="l1706" part="I">Seigneur, vous le pouvez. </l>
+            <l n="1706" part="I" xml:id="l1706">Seigneur, vous le pouvez. </l>
             <note type="L">L'original donne Sélim comme locuteur qui suit, on suppose que c'est Corchut.</note>
           </sp>
-          <sp xml:id="V03-6" who="CORCHUT">
+          <sp who="CORCHUT" xml:id="V03-6">
             <speaker>CORCHUT, ayant écrit la lettre.</speaker>
             <l part="F">Porte-lui cette lettre, </l>
             <l n="1707" xml:id="l1707">Dis-lui puisqu'il le veut, que je meurs trop content, </l>
@@ -2720,15 +2769,17 @@
             <l n="1738" xml:id="l1738">Ce long retardement a mis ton Prince en peine ; </l>
             <l n="1739" xml:id="l1739">Achève et rend bientôt ton ordre exécuté. </l>
           </sp>
-          <sp xml:id="V03-7" who="HALY">
-            <speaker>HALY,  parlant aux quatre Muets.</speaker>
+          <sp who="HALY" xml:id="V03-7">
+            <speaker>HALY, parlant aux quatre Muets.</speaker>
             <l n="1740" xml:id="l1740">Qu'on fasse son devoir avec fidélité. </l>
             <stage type="[N/A]">On baisse la toile. </stage>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Sélim, L'Aga.<listPerson type="configuration" xml:id="conf27"><person corresp="#LAGA"/><person corresp="#SELIM"/></listPerson></head>
-          <sp xml:id="V04-1" who="LAGA">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Sélim, L'Aga.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#AGA"/>
+            <person corresp="#SELIM"/></listPerson></head>
+          <sp who="AGA" xml:id="V04-1">
             <speaker>L'AGA.</speaker>
             <l n="1741" xml:id="l1741">Seigneur, Achmet est mort, et ce lâche courage </l>
             <l n="1742" xml:id="l1742">N'a jusques au tombeau fait paraître que rage ; </l>
@@ -2743,7 +2794,7 @@
             <l n="1751" xml:id="l1751">Ce sont là des desseins qui n'auront point d'effet : </l>
             <l n="1752" xml:id="l1752">Il ne fera jamais plus qu'il a déjà fait. </l>
           </sp>
-          <sp xml:id="V04-2" who="SELIM">
+          <sp who="SELIM" xml:id="V04-2">
             <speaker>SÉLIM.</speaker>
             <l n="1753" xml:id="l1753">Qu'il fasse plus ou moins, j'ai de quoi me défendre, </l>
             <l n="1754" xml:id="l1754">Je peux plus surmonter, qu'il ne peut entreprendre. </l>
@@ -2751,37 +2802,37 @@
             <l n="1756" xml:id="l1756">Et de mes ennemis je ferai des sujets. </l>
             <l n="1757" xml:id="l1757">Je tiens indifférents son amour, et sa haine, </l>
             <l n="1758" xml:id="l1758">Aussi n'est-ce pas là ce qui me met en peine ; </l>
-            <l n="1759" xml:id="l1759" part="I">C'est.[..] </l>
+            <l n="1759" part="I" xml:id="l1759">C'est.[..] </l>
           </sp>
-          <sp xml:id="V04-3" who="LAGA">
+          <sp who="AGA" xml:id="V04-3">
             <speaker>L'AGA.</speaker>
             <l part="F">Qui peut donc Seigneur te causer de l'ennui ? </l>
           </sp>
-          <sp xml:id="V04-4" who="SELIM">
+          <sp who="SELIM" xml:id="V04-4">
             <speaker>SÉLIM.</speaker>
             <l n="1760" xml:id="l1760">Corchut, j'ai commandé qu'on se défit de lui. </l>
           </sp>
-          <sp xml:id="V04-5" who="LAGA">
+          <sp who="AGA" xml:id="V04-5">
             <speaker>L'AGA.</speaker>
             <l n="1761" xml:id="l1761">S'il l'avait mérité tu ne dois point le plaindre. </l>
           </sp>
-          <sp xml:id="V04-6" who="SELIM">
+          <sp who="SELIM" xml:id="V04-6">
             <speaker>SÉLIM.</speaker>
             <l n="1762" xml:id="l1762">Le sujet n'est pas grand, c'est ce qui me fait craindre. </l>
           </sp>
-          <sp xml:id="V04-7" who="LAGA">
+          <sp who="AGA" xml:id="V04-7">
             <speaker>L'AGA.</speaker>
-            <l n="1763" xml:id="l1763" part="I">Ne le puis-je savoir ? </l>
+            <l n="1763" part="I" xml:id="l1763">Ne le puis-je savoir ? </l>
           </sp>
-          <sp xml:id="V04-8" who="SELIM">
+          <sp who="SELIM" xml:id="V04-8">
             <speaker>SÉLIM.</speaker>
             <l part="F">Écoute ; il s'est porté </l>
             <l n="1764" xml:id="l1764">Pour l'intérêt d'Achmet, et son trop de bonté </l>
             <l n="1765" xml:id="l1765">Qu'il témoignait avoir pour cet indigne frère, </l>
             <l n="1766" xml:id="l1766">Me l'a fait regarder comme mon adversaire. </l>
-            <l n="1767" xml:id="l1767" part="I">J'ai souscrit à sa mort. </l>
+            <l n="1767" part="I" xml:id="l1767">J'ai souscrit à sa mort. </l>
           </sp>
-          <sp xml:id="V04-9" who="LAGA">
+          <sp who="AGA" xml:id="V04-9">
             <speaker>L'AGA.</speaker>
             <l part="F">C'est par un juste arrêt : </l>
             <l n="1768" xml:id="l1768">Osant pour un ingrat quitter ton intérêt. </l>
@@ -2794,7 +2845,7 @@
             <l n="1775" xml:id="l1775">Et Corchut a fait voir, l'excusant en son sang, </l>
             <l n="1776" xml:id="l1776">Que du crime d'Achmet il était partisan. </l>
           </sp>
-          <sp xml:id="V04-10" who="SELIM">
+          <sp who="SELIM" xml:id="V04-10">
             <speaker>SÉLIM.</speaker>
             <l n="1777" xml:id="l1777">On peut aimer quelqu'un sans en aimer le vice, </l>
             <l n="1778" xml:id="l1778">Et ne le punir pas sans être son complice : </l>
@@ -2805,31 +2856,34 @@
             <l n="1783" xml:id="l1783">Il l'aimait comme frère, et non en criminel, </l>
             <l n="1784" xml:id="l1784">Et ne pouvant quitter cet amour fraternel. </l>
           </sp>
-          <sp xml:id="V04-11" who="LAGA">
+          <sp who="AGA" xml:id="V04-11">
             <speaker>L'AGA.</speaker>
             <l n="1785" xml:id="l1785">Corchut pouvait-il bien excuser en son frère </l>
             <l n="1786" xml:id="l1786">Ce que par ses conseils on punit en son père ? </l>
             <l n="1787" xml:id="l1787">Lui était-il astreint par de plus forts liens ? </l>
             <l n="1788" xml:id="l1788">Que l'auteur de sa vie, et l'auteur de ses biens. </l>
           </sp>
-          <sp xml:id="V04-12" who="SELIM">
+          <sp who="SELIM" xml:id="V04-12">
             <speaker>SÉLIM.</speaker>
             <l n="1789" xml:id="l1789">Non, mais on punit l'un pour sauver cet Empire, </l>
             <l n="1790" xml:id="l1790">L'autre inutilement à son avis expire</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Sélim, Haly, L'Aga.<listPerson type="configuration" xml:id="conf28"><person corresp="#SELIM"/><person corresp="#HALY"/><person corresp="#LAGA"/></listPerson></head>
-          <sp xml:id="V05-1" who="SELIM">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Sélim, Haly, L'Aga.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#SELIM"/>
+            <person corresp="#HALY"/>
+            <person corresp="#AGA"/></listPerson></head>
+          <sp who="SELIM" xml:id="V05-1">
             <speaker>SÉLIM.</speaker>
             <l n="1791" xml:id="l1791">Mais le Bassa revient : hé bien en est-ce fait ?</l>
           </sp>
-          <sp xml:id="V05-2" who="HALY">
+          <sp who="HALY" xml:id="V05-2">
             <speaker>HALY.</speaker>
             <l n="1792" xml:id="l1792">Oui Seigneur, et Corchut a payé son forfait : </l>
             <l n="1793" xml:id="l1793">Il m'a donné ceci, qu'il faut que je vous rende. </l>
           </sp>
-          <sp xml:id="V05-3" who="SELIM">
+          <sp who="SELIM" xml:id="V05-3">
             <speaker>SÉLIM.</speaker>
             <l n="1794" xml:id="l1794">C'est une lettre, ô Dieu ! Voyons ce qu'il nous mande ! </l>
             <stage type="[N/A]">Lisant le dessus. </stage>
@@ -2840,31 +2894,31 @@
             <l n="1798" xml:id="l1798">À ce tigre affamé de sa propre misère ; </l>
             <l n="1799" xml:id="l1799">Qui pour se maintenir dans un illustre rang, </l>
             <l n="1800" xml:id="l1800">N'eut pas mêmes horreur de répandre son sang ? </l>
-            <l n="1801" xml:id="l1801" part="I">Voyons. </l>
+            <l n="1801" part="I" xml:id="l1801">Voyons. </l>
           </sp>
-          <sp xml:id="V05-4" who="LAGA">
+          <sp who="AGA" xml:id="V05-4">
             <speaker>L'AGA, le repoussant.</speaker>
             <l part="F">Si tu fais bien tu ne le dois point lire. </l>
-            <l n="1802" xml:id="l1802" part="I">Seigneur. </l>
+            <l n="1802" part="I" xml:id="l1802">Seigneur. </l>
           </sp>
-          <sp xml:id="V05-5" who="SELIM">
+          <sp who="SELIM" xml:id="V05-5">
             <speaker>SÉLIM.</speaker>
             <l part="M">Donne. </l>
           </sp>
-          <sp xml:id="V05-6" who="LAGA">
+          <sp who="AGA" xml:id="V05-6">
             <speaker>L'AGA.</speaker>
             <l part="M">Seigneur. </l>
           </sp>
-          <sp xml:id="V05-7" who="SELIM">
+          <sp who="SELIM" xml:id="V05-7">
             <speaker>SÉLIM.</speaker>
             <l part="F">Donne je le désire. </l>
           </sp>
-          <sp xml:id="V05-8" who="LAGA">
+          <sp who="AGA" xml:id="V05-8">
             <speaker>L'AGA.</speaker>
             <l n="1803" xml:id="l1803">Peut-être cet écrit croîtra ton désespoir. </l>
-            <l n="1804" xml:id="l1804" part="I">Seigneur ne le lis point. </l>
+            <l n="1804" part="I" xml:id="l1804">Seigneur ne le lis point. </l>
           </sp>
-          <sp xml:id="V05-9" who="SELIM">
+          <sp who="SELIM" xml:id="V05-9">
             <speaker>SÉLIM, le prenant.</speaker>
             <l part="F">Donne je le veux voir. </l>
             <stage type="read">Il lit. </stage>
@@ -2923,11 +2977,11 @@
             <l n="1856" xml:id="l1856">Ce fer va te venger du mal que je t'ai fait. </l>
             <stage type="[N/A]">Il tire son épée, puis il sort. </stage>
           </sp>
-          <sp xml:id="V05-10" who="LAGA">
+          <sp who="AGA" xml:id="V05-10">
             <speaker>L'AGA.</speaker>
             <l n="1857" xml:id="l1857">Quels violents transports que la douleur lui donne ! </l>
           </sp>
-          <sp xml:id="V05-11" who="HALY">
+          <sp who="HALY" xml:id="V05-11">
             <speaker>HALY.</speaker>
             <l n="1858" xml:id="l1858">Le remords le possède, et l'esprit l'abandonne ; </l>
             <l n="1859" xml:id="l1859">Suivons-le cher ami de peur que quelque effort, </l>

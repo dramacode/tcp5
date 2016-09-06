@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Le Clarionte</title><title type="sub"> ou le sacrifice sanglant, tragi-comédie. </title>
-        <author born="1609" born_location="château de Toulgou à Salignac" death="1663" death_location="Les Andelys" academie="1673"><surname>La Calprenède</surname><forename> Gautier Costes de</forename></author>
+        <title>Le Clarionte</title>
+        <title type="sub"> ou le sacrifice sanglant, tragi-comédie. </title>
+        <author academie="1673" born="1609" born_location="château de Toulgou à Salignac" death="1663" death_location="Les Andelys">
+          <surname>La Calprenède</surname>
+          <forename> Gautier Costes de</forename>
+        </author>
         <date>1732</date>
       </titleStmt>
       <publicationStmt>
@@ -50,7 +55,7 @@
         <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1637">M. DC. XXXVII AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor id="LA CALPRENEDE, Gautier Costes de" bio="lacalprenede">De Mr de la CALPRENÈDE.</docAuthor>
+      <docAuthor bio="lacalprenede" id="LA CALPRENEDE, Gautier Costes de">De Mr de la CALPRENÈDE.</docAuthor>
       <docImprint>
         <privilege id="1637-02-07">
           <head>EXTRAIT DU Privilège du Roi.</head>
@@ -64,28 +69,29 @@
       </performance>
       <castList>
         <head>ACTEURS.</head>
-        <castItem><role xml:id="CLARIONTE" id="CLARIONTE" sex="1" type="H" statut="prince" age="A" stat_amour="néant">CLARIONTE</role>, Prince de Corse.</castItem>
-        <castItem><role xml:id="FIDAMANT" id="FIDAMANT" sex="1" type="H" statut="prince" age="A" stat_amour="néant">FIDAMANT</role>, fils du Roi de Majorque.</castItem>
-        <castItem><role xml:id="LEROI" id="LE-ROI" sex="1" type="H" statut="roi" age="A" stat_amour="néant">LE ROI</role>, de Majorque.</castItem>
-        <castItem><role xml:id="ROSIMENE" id="ROSIMÈNE" sex="2" type="H" statut="prince" age="A" stat_amour="néant">ROSIMÈNE</role>, fille du Roi de Sardaigne.</castItem>
-        <castItem><role xml:id="MELIE" id="MÉLIE" sex="2" type="H" statut="prince" age="A" stat_amour="néant">MÉLIE</role>, fille du Roi de Majorque.</castItem>
-        <castItem><role xml:id="CALLIANTE" id="CALLIANTE" sex="2" type="H" statut="prince" age="A" stat_amour="néant">CALLIANTE</role>, soeur du Roi de Majorque.</castItem>
-        <castItem><role xml:id="FLADIMORE" id="FLADIMORE" sex="1" type="H" statut="prince" age="A" stat_amour="néant">FLADIMORE</role>, frère de Clarionte.</castItem>
-        <castItem><role xml:id="ARISTON" id="ARISTON" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">ARISTON</role>, habitant de l'Île de Majorque.</castItem>
-        <castItem><role xml:id="LESACRIFICATEUR" id="LE-SACRIFICATEUR" sex="1" type="H" statut="sacrificateur" age="A" stat_amour="néant">LE SACRIFICATEUR</role>.</castItem>
-        <castItem><role xml:id="UNSOLDAT" id="UN-SOLDAT" sex="1" type="H" statut="soldat" age="A" stat_amour="néant">UN SOLDAT</role>.</castItem>
-        <castItem><role xml:id="UNGEOLIER" id="UN-GEÔLIER" sex="1" type="H" statut="geôlier" age="A" stat_amour="néant">UN GEÔLIER</role>.</castItem>
-        <castItem><role xml:id="UNPAGE" id="UN-PAGE" sex="1" type="H" statut="page" age="A" stat_amour="néant">UN PAGE</role>.</castItem>
-        <castItem><role xml:id="GERONTE" id="GÉRONTE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">GÉRONTE</role>.</castItem>
+        <castItem><role age="A" id="CLARIONTE" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="CLARIONTE">CLARIONTE</role>, Prince de Corse.</castItem>
+        <castItem><role age="A" id="FIDAMANT" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="FIDAMANT">FIDAMANT</role>, fils du Roi de Majorque.</castItem>
+        <castItem><role age="A" id="LE-ROI" sex="1" stat_amour="néant" statut="roi" type="H" xml:id="LEROI">LE ROI</role>, de Majorque.</castItem>
+        <castItem><role age="A" id="ROSIMÈNE" sex="2" stat_amour="néant" statut="prince" type="H" xml:id="ROSIMENE">ROSIMÈNE</role>, fille du Roi de Sardaigne.</castItem>
+        <castItem><role age="A" id="MÉLIE" sex="2" stat_amour="néant" statut="prince" type="H" xml:id="MELIE">MÉLIE</role>, fille du Roi de Majorque.</castItem>
+        <castItem><role age="A" id="CALLIANTE" sex="2" stat_amour="néant" statut="prince" type="H" xml:id="CALLIANTE">CALLIANTE</role>, soeur du Roi de Majorque.</castItem>
+        <castItem><role age="A" id="FLADIMORE" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="FLAMIDORE">FLADIMORE</role>, frère de Clarionte.</castItem>
+        <castItem><role age="A" id="ARISTON" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="ARISTON">ARISTON</role>, habitant de l'Île de Majorque.</castItem>
+        <castItem><role age="A" id="LE-SACRIFICATEUR" sex="1" stat_amour="néant" statut="sacrificateur" type="H" xml:id="LESACRIFICATEUR">LE SACRIFICATEUR</role>.</castItem>
+        <castItem><role age="A" id="UN-SOLDAT" sex="1" stat_amour="néant" statut="soldat" type="H" xml:id="SOLDAT">UN SOLDAT</role>.</castItem>
+        <castItem><role age="A" id="UN-GEÔLIER" sex="1" stat_amour="néant" statut="geôlier" type="H" xml:id="GEOLIER">UN GEÔLIER</role>.</castItem>
+        <castItem><role age="A" id="UN-PAGE" sex="1" stat_amour="néant" statut="page" type="H" xml:id="UNPAGE">UN PAGE</role>.</castItem>
+        <castItem><role age="A" id="GÉRONTE" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="GERONTE">GÉRONTE</role>.</castItem>
       </castList>
-      <set location="Corse" country="France" periode="XVIIème" link="">.</set>
+      <set country="France" link="" location="Corse" periode="XVIIème">.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I. </head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf1"><person corresp="#FIDAMANT"/></listPerson></head>
-          <sp xml:id="I01-1" who="FIDAMANT">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#FIDAMANT"/></listPerson></head>
+          <sp who="FIDAMANT" xml:id="I01-1">
             <speaker>FIDAMANT.</speaker>
             <l n="1" xml:id="l1">Le Cerf trouve en ce fort son asile assuré : </l>
             <l n="2" xml:id="l2">Mais en le poursuivant, je me suis égaré. </l>
@@ -166,9 +172,11 @@
             <l n="76" xml:id="l76">Je pourrai remarquer toutes ses actions. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Rosimène, Fidamant.<listPerson type="configuration" xml:id="conf2"><person corresp="#ROSIMENE"/><person corresp="#FIDAMANT"/></listPerson></head>
-          <sp xml:id="I02-1" who="ROSIMENE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Rosimène, Fidamant.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#ROSIMENE"/>
+            <person corresp="#FIDAMANT"/></listPerson></head>
+          <sp who="ROSIMENE" xml:id="I02-1">
             <speaker>ROSIMÈNE, seule.</speaker>
             <l n="77" xml:id="l77">Ne me reproche point chère âme de mon âme, </l>
             <l n="78" xml:id="l78">Qu'un déluge de pleurs a démenti ma flamme, </l>
@@ -227,21 +235,21 @@
             <l n="131" xml:id="l131">Soulageant mon esprit qui se sent convaincu </l>
             <l n="132" xml:id="l132">Du crime seulement de t'avoir survécu. </l>
           </sp>
-          <sp xml:id="I02-2" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-2">
             <speaker>FIDAMANT.</speaker>
             <l n="133" xml:id="l133">Certes étant témoin d'un sort si déplorable, </l>
             <l n="134" xml:id="l134">Et n'étant point touché d'un regret véritable </l>
             <l n="135" xml:id="l135">Je serais moins sensible et plus dur qu'un rocher : </l>
             <l n="136" xml:id="l136">Mais sortons le devoir m'ordonne d'approcher. </l>
           </sp>
-          <sp xml:id="I02-3" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-3">
             <speaker>ROSIMÈNE.</speaker>
             <l n="137" xml:id="l137">Ô Ciel ! Dans les malheurs où vous m'avez réduite, </l>
             <l n="138" xml:id="l138">M'ôtez-vous le seul bien qui restait à ma fuite, </l>
             <l n="139" xml:id="l139">Où sera mon salut, si parmi des tombeaux, </l>
             <l n="140" xml:id="l140">Vous m'affligez encor par des objets nouveaux. </l>
           </sp>
-          <sp xml:id="I02-4" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-4">
             <speaker>FIDAMANT.</speaker>
             <l n="141" xml:id="l141">Que rien ne vous oblige à craindre ma venue, </l>
             <l n="142" xml:id="l142">Ne me dérobez point une si chère vue, </l>
@@ -252,7 +260,7 @@
             <l n="147" xml:id="l147">Avec tous les regrets qui peuvent affliger, </l>
             <l n="148" xml:id="l148">Et qui ne s'offre à vous que pour vous soulager.</l>
           </sp>
-          <sp xml:id="I02-5" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-5">
             <speaker>ROSIMÈNE.</speaker>
             <l n="149" xml:id="l149">Pardonnez au malheur qui fait que je m'absente, </l>
             <l n="150" xml:id="l150">Ce n'est pas votre abord qui donne l'épouvante, </l>
@@ -263,7 +271,7 @@
             <l n="155" xml:id="l155">Et pour vous délivrer d'un abord dangereux, </l>
             <l n="156" xml:id="l156">Qui par contagion vous rendrait malheureux. </l>
           </sp>
-          <sp xml:id="I02-6" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-6">
             <speaker>FIDAMANT.</speaker>
             <l n="157" xml:id="l157">Plût aux Dieux qu'à ce prix vous fussiez soulagée, </l>
             <l n="158" xml:id="l158">Et que votre douleur sur moi seul déchargée, </l>
@@ -276,7 +284,7 @@
             <l n="165" xml:id="l165">Et que pour vous tirer d'une telle disgrâce </l>
             <l n="166" xml:id="l166">Il n'est rien que je n'ose et rien que je ne fasse. </l>
           </sp>
-          <sp xml:id="I02-7" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-7">
             <speaker>ROSIMÈNE.</speaker>
             <l n="167" xml:id="l167">Justes Cieux se peut-il qu'en ces barbares lieux </l>
             <l n="168" xml:id="l168">Où l'on fait les forfaits à l'exemple des Dieux </l>
@@ -291,7 +299,7 @@
             <l n="177" xml:id="l177">Où vous démentiriez votre terre natale </l>
             <l n="178" xml:id="l178">Si vous n'en reteniez une âme plus brutale. </l>
           </sp>
-          <sp xml:id="I02-8" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-8">
             <speaker>FIDAMANT.</speaker>
             <l n="179" xml:id="l179">Ma naissance n'a rien qui la puisse excuser, </l>
             <l n="180" xml:id="l180">Et rien ne vous oblige à vous désabuser </l>
@@ -311,7 +319,7 @@
             <l n="194" xml:id="l194">Pour apprendre de vous votre triste fortune, </l>
             <l n="195" xml:id="l195">L'intérêt que je prends excuse mon désir. </l>
           </sp>
-          <sp xml:id="I02-9" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-9">
             <speaker>ROSIMÈNE.</speaker>
             <l n="196" xml:id="l196">C'est rafraîchir mes maux d'un nouveau déplaisir. </l>
             <l n="197" xml:id="l197">Hélas quelques efforts que ma constance essaye </l>
@@ -327,7 +335,7 @@
             <l n="207" xml:id="l207">Que vous me laisserez dans cette liberté, </l>
             <l n="208" xml:id="l208">Et n'entreprendrez rien contre ma volonté. </l>
           </sp>
-          <sp xml:id="I02-10" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-10">
             <speaker>FIDAMANT.</speaker>
             <l n="209" xml:id="l209">Par le Ciel, dont je tiens la qualité de Prince, </l>
             <l n="210" xml:id="l210">Par les Dieux révérés dedans cette Province, </l>
@@ -338,7 +346,7 @@
             <l n="215" xml:id="l215">Et que jamais mortel n'apprendra par ma voix </l>
             <l n="216" xml:id="l216">Un secret que j'oublie en sortant de ce bois. </l>
           </sp>
-          <sp xml:id="I02-11" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-11">
             <speaker>ROSIMÈNE.</speaker>
             <l n="217" xml:id="l217">Quoi que votre serment envers moi vous engage </l>
             <l n="218" xml:id="l218">Votre condition m'assure davantage, </l>
@@ -402,12 +410,12 @@
             <l n="275" xml:id="l275">Clarionte voulut que ce fût dans sa Cour, </l>
             <l n="276" xml:id="l276">Et différa son bien jusques à son retour. </l>
           </sp>
-          <sp xml:id="I02-12" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-12">
             <speaker>FIDAMANT.</speaker>
             <l n="277" xml:id="l277">Ces maximes d'État sont peu considérables </l>
             <l n="278" xml:id="l278">Et celles de l'amour leur étaient préférables. </l>
           </sp>
-          <sp xml:id="I02-13" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-13">
             <speaker>ROSIMÈNE.</speaker>
             <l n="279" xml:id="l279">Mon père me mettant en de si chères mains : </l>
             <l n="280" xml:id="l280">Expose mon salut sur les flots inhumains </l>
@@ -471,12 +479,12 @@
             <l n="335" xml:id="l335">Et fait un tel effort que dans leur pâle teint </l>
             <l n="336" xml:id="l336">On connaît le trépas sur leur visage peint. </l>
           </sp>
-          <sp xml:id="I02-14" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-14">
             <speaker>FIDAMANT.</speaker>
             <l n="337" xml:id="l337">Le Ciel n'exempta point d'un naufrage funeste </l>
-            <l n="338" xml:id="l338" part="I">Le pauvre Clarionte. </l>
+            <l n="338" part="I" xml:id="l338">Le pauvre Clarionte. </l>
           </sp>
-          <sp xml:id="I02-15" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-15">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Écoutez ce qui reste </l>
             <l n="339" xml:id="l339">Le Soleil disparaît, et le jour qui s'enfuit </l>
@@ -547,12 +555,12 @@
             <l n="403" xml:id="l403">Le firent trébucher à leurs pieds abattu, </l>
             <l n="404" xml:id="l404">Et le nombre à la fin surmonte la vertu. </l>
           </sp>
-          <sp xml:id="I02-16" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-16">
             <speaker>FIDAMANT.</speaker>
             <l n="405" xml:id="l405">Horreur de mon pays, où ma naissance infâme : </l>
             <l n="406" xml:id="l406">Mais je vous interromps, il mourut donc Madame. </l>
           </sp>
-          <sp xml:id="I02-17" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-17">
             <speaker>ROSIMÈNE.</speaker>
             <l n="407" xml:id="l407">Ainsi que le succès nous l'a bien témoigné, </l>
             <l n="408" xml:id="l408">Je crois qu'en ce combat ils l'avaient épargné, </l>
@@ -629,7 +637,7 @@
             <l n="479" xml:id="l479">Voilà dans peu de mots le sujet de mes pleurs. </l>
             <l n="480" xml:id="l480">Maintenant par mes maux jugez de mes douleurs. </l>
           </sp>
-          <sp xml:id="I02-18" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-18">
             <speaker>FIDAMANT.</speaker>
             <l n="481" xml:id="l481">Comme j'en puis juger par ce récit funeste, </l>
             <l n="482" xml:id="l482">Votre ressentiment est assez manifeste, </l>
@@ -666,7 +674,7 @@
             <l n="513" xml:id="l513">Vous y seriez reçue avec une puissance </l>
             <l n="514" xml:id="l514">Digne de vos vertus et de votre naissance. </l>
           </sp>
-          <sp xml:id="I02-19" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="I02-19">
             <speaker>ROSIMÈNE.</speaker>
             <l n="515" xml:id="l515">Quoique je semble ingrate à ces bons mouvements </l>
             <l n="516" xml:id="l516">Souvenez-vous Seigneur de ces premiers serments, </l>
@@ -682,9 +690,9 @@
             <l n="526" xml:id="l526">À ce mot ma douleur s'augmente et me surmonte. </l>
             <l n="527" xml:id="l527">Hélas ! Je n'en puis plus en cette extrémité, </l>
             <l n="528" xml:id="l528">Pardonnez à mon deuil mon incivilité, </l>
-            <l n="529" xml:id="l529" part="I">Souffrez que je vous quitte. </l>
+            <l n="529" part="I" xml:id="l529">Souffrez que je vous quitte. </l>
           </sp>
-          <sp xml:id="I02-20" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="I02-20">
             <speaker>FIDAMANT.</speaker>
             <l part="F">Adieu belle Princesse ? </l>
             <l n="530" xml:id="l530">Ah que ce prompt départ me comble de tristesse ! </l>
@@ -697,11 +705,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II.</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE I. Clarionte, Mélie.<listPerson type="configuration" xml:id="conf4"><person corresp="#CLARIONTE"/><person corresp="#MELIE"/></listPerson></head>
-          <sp xml:id="II01-1" who="CLARIONTE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE I. Clarionte, Mélie.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#CLARIONTE"/>
+            <person corresp="#MELIE"/></listPerson></head>
+          <sp who="CLARIONTE" xml:id="II01-1">
             <speaker>CLARIONTE.</speaker>
             <l n="537" xml:id="l537">Que j'attire des Dieux la colère équitable, </l>
             <l n="538" xml:id="l538">Et que leur main punisse une tête coupable, </l>
@@ -715,9 +725,9 @@
             <l n="546" xml:id="l546">Et ce ressouvenir me rend plus misérable ; </l>
             <l n="547" xml:id="l547">Puisqu'il ne permet pas que je vive innocent, </l>
             <l n="548" xml:id="l548">Et qu'à tant de bienfaits je suis méconnaissant : </l>
-            <l n="549" xml:id="l549" part="I">Mais (Madame) excusez. </l>
+            <l n="549" part="I" xml:id="l549">Mais (Madame) excusez. </l>
           </sp>
-          <sp xml:id="II01-2" who="MELIE">
+          <sp who="MELIE" xml:id="II01-2">
             <speaker>MÉLIE.</speaker>
             <l part="F">Que faut-il que j'excuse, </l>
             <l n="550" xml:id="l550">Ou que dois-je espérer d'un ingrat qui m'abuse, </l>
@@ -752,7 +762,7 @@
             <l n="579" xml:id="l579">Mais je blâme ce coeur qui depuis si longtemps </l>
             <l n="580" xml:id="l580">Méprise tant de flamme et des voeux si constants. </l>
           </sp>
-          <sp xml:id="II01-3" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II01-3">
             <speaker>CLARIONTE.</speaker>
             <l n="581" xml:id="l581">Je le blâme avec vous, et confesse moi-même </l>
             <l n="582" xml:id="l582">Que son ingratitude envers vous est extrême, </l>
@@ -776,13 +786,13 @@
             <l n="600" xml:id="l600">Que je mourrais plutôt que d'en avoir douté, </l>
             <l n="601" xml:id="l601">Ne condamnez donc plus l'amour que je lui porte. </l>
           </sp>
-          <sp xml:id="II01-4" who="MELIE">
+          <sp who="MELIE" xml:id="II01-4">
             <speaker>MÉLIE.</speaker>
             <l n="602" xml:id="l602">Mais enfin vous aimez une personne morte, </l>
             <l n="603" xml:id="l603">Et vous nous opposez des devoirs superflus, </l>
             <l n="604" xml:id="l604">Et de vaines raisons, puisqu'elle ne vit plus. </l>
           </sp>
-          <sp xml:id="II01-5" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II01-5">
             <speaker>CLARIONTE.</speaker>
             <l n="605" xml:id="l605">Je l'ignore (Madame) et ma perte funeste </l>
             <l n="606" xml:id="l606">N'étouffe pas encor quelque espoir qui me reste. </l>
@@ -828,7 +838,7 @@
             <l n="646" xml:id="l646">Et descendre aux enfers comblé de cette gloire, </l>
             <l n="647" xml:id="l647">Ôtez-moi ces faveurs à la fin de mes jours. </l>
           </sp>
-          <sp xml:id="II01-6" who="MELIE">
+          <sp who="MELIE" xml:id="II01-6">
             <speaker>MÉLIE.</speaker>
             <l n="648" xml:id="l648">Plût aux Dieux que ma vie en prolongeât le cours, </l>
             <l n="649" xml:id="l649">Et que vous pussiez voir dans ce coeur plein de flamme </l>
@@ -846,9 +856,10 @@
             <l n="661" xml:id="l661">Pour songez au moyen de vous sauver la vie. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf5"><person corresp="#CLARIONTE"/></listPerson></head>
-          <sp xml:id="II02-1" who="CLARIONTE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#CLARIONTE"/></listPerson></head>
+          <sp who="CLARIONTE" xml:id="II02-1">
             <speaker>CLARIONTE.</speaker>
             <l n="662" xml:id="l662">De grâce consentez qu'elle me soit ravie, </l>
             <l n="663" xml:id="l663">Et ne retardez point le service des Dieux ; </l>
@@ -863,14 +874,16 @@
             <l n="672" xml:id="l672">Ces résolutions seraient de peu de fruit. </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Fidamant, Clarionte.<listPerson type="configuration" xml:id="conf6"><person corresp="#FIDAMANT"/><person corresp="#CLARIONTE"/></listPerson></head>
-          <sp xml:id="II03-1" who="FIDAMANT">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Fidamant, Clarionte.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#FIDAMANT"/>
+            <person corresp="#CLARIONTE"/></listPerson></head>
+          <sp who="FIDAMANT" xml:id="II03-1">
             <speaker>FIDAMANT, caché.</speaker>
             <l n="673" xml:id="l673">Je puis par son discours m'éclaircir de ce doute </l>
             <l n="674" xml:id="l674">Et puisqu'il se croit seul, il faut que je l'écoute. </l>
           </sp>
-          <sp xml:id="II03-2" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-2">
             <speaker>CLARIONTE.</speaker>
             <l n="675" xml:id="l675">Oui Maîtres de mon sort vous l'avez résolu : </l>
             <l n="676" xml:id="l676">Mais puisqu'il faut céder au pouvoir absolu, </l>
@@ -894,11 +907,11 @@
             <l n="694" xml:id="l694">Autant que pour Daphné moins aimable, et moins belle </l>
             <l n="695" xml:id="l695">Je t'en supplie aussi pour la dernière fois. </l>
           </sp>
-          <sp xml:id="II03-3" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-3">
             <speaker>FIDAMANT.</speaker>
             <l n="696" xml:id="l696">Ha ! Je n'en sais que trop, écoutons toutefois. </l>
           </sp>
-          <sp xml:id="II03-4" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-4">
             <speaker>CLARIONTE.</speaker>
             <l n="697" xml:id="l697">Mais Dieux que ma douleur m'aveugle et me transporte, </l>
             <l n="698" xml:id="l698">Pourquoi vous invoquer si Rosimène est morte ; </l>
@@ -915,42 +928,42 @@
             <l n="709" xml:id="l709">Et ta belle Princesse aux enfers descendue </l>
             <l n="710" xml:id="l710">Te laisse encor au monde après l'avoir perdue : </l>
             <l n="711" xml:id="l711">Toutefois pour la voir le chemin t'est ouvert </l>
-            <l n="712" xml:id="l712" part="I">Dieux ! </l>
+            <l n="712" part="I" xml:id="l712">Dieux ! </l>
           </sp>
-          <sp xml:id="II03-5" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-5">
             <speaker>FIDAMANT.</speaker>
             <l part="F">Ne vous cachez plus vous êtres découvert. </l>
           </sp>
-          <sp xml:id="II03-6" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-6">
             <speaker>CLARIONTE.</speaker>
             <l n="713" xml:id="l713">Pardonnez au regret dont mon âme est atteinte. </l>
           </sp>
-          <sp xml:id="II03-7" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-7">
             <speaker>FIDAMANT.</speaker>
             <l n="714" xml:id="l714">Je lui dois pardonner plutôt qu'à votre feinte, </l>
             <l n="715" xml:id="l715">Et je ne saurais croire après ce que je vois </l>
             <l n="716" xml:id="l716">Que mon cher Doriman se soit caché de moi, </l>
             <l n="717" xml:id="l717">Et qu'un feint Doriman soit un vrai Clarionte. </l>
           </sp>
-          <sp xml:id="II03-8" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-8">
             <speaker>CLARIONTE.</speaker>
-            <l n="718" xml:id="l718" part="I">Ô Dieux ! </l>
+            <l n="718" part="I" xml:id="l718">Ô Dieux ! </l>
           </sp>
-          <sp xml:id="II03-9" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-9">
             <speaker>FIDAMANT.</speaker>
             <l part="F">Vous rougissez, oui rougissez de honte </l>
             <l n="719" xml:id="l719">De m'avoir déguisé votre condition. </l>
           </sp>
-          <sp xml:id="II03-10" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-10">
             <speaker>CLARIONTE.</speaker>
             <l n="720" xml:id="l720">Ah ! Ne soupçonnez rien de mon affection </l>
             <l n="721" xml:id="l721">Ainsi que mon respect elle fut toujours forte. </l>
           </sp>
-          <sp xml:id="II03-11" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-11">
             <speaker>FIDAMANT.</speaker>
             <l n="722" xml:id="l722">Pourquoi si vous m'aimiez feignez-vous de la sorte. </l>
           </sp>
-          <sp xml:id="II03-12" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-12">
             <speaker>CLARIONTE.</speaker>
             <l n="723" xml:id="l723">Outre que mon malheur vous pouvait affliger </l>
             <l n="724" xml:id="l724">Assez d'autres raisons m'y devaient obliger : </l>
@@ -965,15 +978,15 @@
             <l n="733" xml:id="l733">Oui contre mon dessein votre amitié me force </l>
             <l n="734" xml:id="l734">De m'avouer ici le fils du Roi de Corse ! </l>
           </sp>
-          <sp xml:id="II03-13" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-13">
             <speaker>FIDAMANT.</speaker>
-            <l n="735" xml:id="l735" part="I">Le fils du Roi de Corse. </l>
+            <l n="735" part="I" xml:id="l735">Le fils du Roi de Corse. </l>
           </sp>
-          <sp xml:id="II03-14" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-14">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Oui brave Fidamant. </l>
           </sp>
-          <sp xml:id="II03-15" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-15">
             <speaker>FIDAMANT.</speaker>
             <l n="736" xml:id="l736">Grand Prince pardonnez à mon aveuglement, </l>
             <l n="737" xml:id="l737">Si vos rares vertus, et votre bonne mine </l>
@@ -983,20 +996,20 @@
             <l n="741" xml:id="l741">Mais pardonnerez-vous à ma méconnaissance, </l>
             <l n="742" xml:id="l742">Qui m'a fait tant faillir contre votre naissance. </l>
           </sp>
-          <sp xml:id="II03-16" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-16">
             <speaker>CLARIONTE.</speaker>
             <l n="743" xml:id="l743">Si je puis mériter quelque chose de vous </l>
             <l n="744" xml:id="l744">Prince que ce secret se perde parmi nous</l>
             <l n="745" xml:id="l745">Pour ne me point trahir il vous le faudra taire. </l>
           </sp>
-          <sp xml:id="II03-17" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-17">
             <speaker>FIDAMANT.</speaker>
             <l n="746" xml:id="l746">Mais quelle est la raison qui m'oblige à le faire, </l>
             <l n="747" xml:id="l747">Et que ne souffrez-vous que faisant mon devoir </l>
             <l n="748" xml:id="l748">Je dispose mon père à vous mieux recevoir. </l>
             <l n="749" xml:id="l749">Ah ! Ne m'imposez point une loi si cruelle. </l>
           </sp>
-          <sp xml:id="II03-18" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-18">
             <speaker>CLARIONTE.</speaker>
             <l n="750" xml:id="l750">Si vous persévérez vous êtes infidèle. </l>
             <l n="751" xml:id="l751">Suffit que je le veux avec trop de raison, </l>
@@ -1006,13 +1019,13 @@
             <l n="755" xml:id="l755">Et si vous désirez que mon trépas soit doux </l>
             <l n="756" xml:id="l756">Faites que seulement je sois connu de vous. </l>
           </sp>
-          <sp xml:id="II03-19" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-19">
             <speaker>FIDAMANT.</speaker>
             <l n="757" xml:id="l757">Mais pour retirer d'une mort si prochaine, </l>
             <l n="758" xml:id="l758">Dois-je considérer une défense vaine, </l>
             <l n="759" xml:id="l759">Et si vous découvrant je vous pouvais sauver. </l>
           </sp>
-          <sp xml:id="II03-20" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II03-20">
             <speaker>CLARIONTE.</speaker>
             <l n="760" xml:id="l760">Si par ce seul moyen on me peur conserver, </l>
             <l n="761" xml:id="l761">Croyez que je l'abhorre, et déteste une vie </l>
@@ -1025,7 +1038,7 @@
             <note>Se travailler : Faire des efforts, se tourmenter. [F]</note>
             <l n="768" xml:id="l768">Qu'on se travaille en vain pour un désespéré. </l>
           </sp>
-          <sp xml:id="II03-21" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="II03-21">
             <speaker>FIDAMANT.</speaker>
             <l n="769" xml:id="l769">C'est me solliciter d'une injuste prière, </l>
             <l n="770" xml:id="l770">De vos deux volontés je suivrai la première. </l>
@@ -1041,9 +1054,10 @@
             <l n="780" xml:id="l780">Si ne pouvant plus rien je me perds avec vous. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. <listPerson type="configuration" xml:id="conf7"><person corresp="#CLARIONTE"/></listPerson></head>
-          <sp xml:id="II04-1" who="CLARIONTE">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. <listPerson type="configuration" xml:id="conf7">
+            <person corresp="#CLARIONTE"/></listPerson></head>
+          <sp who="CLARIONTE" xml:id="II04-1">
             <speaker>CLARIONTE seul. </speaker>
             <l n="781" xml:id="l781">Homicides devoirs, charité criminelle, </l>
             <l n="782" xml:id="l782">Qui pour entretenir une peine éternelle, </l>
@@ -1058,9 +1072,11 @@
             <l n="791" xml:id="l791">Ne craignons point de faire une incivilité. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Calliante, Clarionte.<listPerson type="configuration" xml:id="conf8"><person corresp="#CALLIANTE"/><person corresp="#CLARIONTE"/></listPerson></head>
-          <sp xml:id="II05-1" who="CALLIANTE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Calliante, Clarionte.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#CALLIANTE"/>
+            <person corresp="#CLARIONTE"/></listPerson></head>
+          <sp who="CALLIANTE" xml:id="II05-1">
             <speaker>CALLIANTE.</speaker>
             <l n="792" xml:id="l792">Où courez-vous ainsi d'un pas précipité, </l>
             <l n="793" xml:id="l793">Toujours à mon abord quelque affaire vous presse, </l>
@@ -1068,13 +1084,13 @@
             <l n="795" xml:id="l795">Et quoiqu'elle ait pour vous de si vives ardeurs, </l>
             <l n="796" xml:id="l796">Vous conservez toujours vos premières froideurs. </l>
           </sp>
-          <sp xml:id="II05-2" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II05-2">
             <speaker>CLARIONTE.</speaker>
             <l n="797" xml:id="l797">En vous reconnaissant je me connais moi-même, </l>
             <l n="798" xml:id="l798">Et je vibrai toujours dans un respect extrême, </l>
             <l n="799" xml:id="l799">Je n'oublierai jamais l'honneur que je vous dois. </l>
           </sp>
-          <sp xml:id="II05-3" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="II05-3">
             <speaker>CALLIANTE.</speaker>
             <l n="800" xml:id="l800">Ce discours était bon pour la première fois, </l>
             <l n="801" xml:id="l801">Et j'ai cru d'autrefois ces termes pardonnables, </l>
@@ -1090,7 +1106,7 @@
             <l n="811" xml:id="l811">Ces termes durent trop s'ils durent plus d'un jour, </l>
             <l n="812" xml:id="l812">Et mon amour ne peut se payer que d'amour. </l>
           </sp>
-          <sp xml:id="II05-4" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II05-4">
             <speaker>CLARIONTE.</speaker>
             <l n="813" xml:id="l813">Ah (Madame) étouffez cette flamme importune </l>
             <l n="814" xml:id="l814">Je n'ai pas mérité cette bonne fortune, </l>
@@ -1101,7 +1117,7 @@
             <l n="819" xml:id="l819">Je serais vôtre un jour et le sanglant trépas </l>
             <l n="820" xml:id="l820">Viendrait le lendemain m'arracher de vos bras. </l>
           </sp>
-          <sp xml:id="II05-5" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="II05-5">
             <speaker>CALLIANTE.</speaker>
             <l n="821" xml:id="l821">Si vous vouliez porter votre esprit à me plaire </l>
             <l n="822" xml:id="l822">Je gagnerais beaucoup sur celui de mon frère, </l>
@@ -1118,7 +1134,7 @@
             <note>Affété : Plein ou pleine d'affectation. Il ne se dit que d'une femme ou fille coquette. [FC]</note>
             <l n="833" xml:id="l833">Elle vous a gagné cette jeune affétée. </l>
           </sp>
-          <sp xml:id="II05-6" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II05-6">
             <speaker>CLARIONTE.</speaker>
             <l n="834" xml:id="l834">Ô Dieux ! Que ce discours vient d'une âme effrontée </l>
             <l n="835" xml:id="l835">Je m'en veux délivrer pour la dernière fois. </l>
@@ -1134,7 +1150,7 @@
             <l n="845" xml:id="l845">Et dont l'ingratitude est d'autant plus blâmable </l>
             <l n="846" xml:id="l846">Qu'il ne voit rien en vous qui lui paraisse aimable. </l>
           </sp>
-          <sp xml:id="II05-7" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="II05-7">
             <speaker>CALLIANTE.</speaker>
             <l n="847" xml:id="l847">Je trouve mon censeur équitable en ce point </l>
             <l n="848" xml:id="l848">Qu'il condamne une amour qu'il ne mérite point, </l>
@@ -1149,17 +1165,18 @@
             <l n="856" xml:id="l856">Le désir de te perdre et de me ressentir. </l>
             <l n="857" xml:id="l857">Oui traître mon amour lâchement méprisée </l>
             <l n="858" xml:id="l858">Prendra de tes mépris une vengeance aisée, </l>
-            <l n="859" xml:id="l859" part="I">Et tu reconnaîtras. </l>
+            <l n="859" part="I" xml:id="l859">Et tu reconnaîtras. </l>
           </sp>
-          <sp xml:id="II05-8" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="II05-8">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Je plaindrai peu le jour </l>
             <l n="860" xml:id="l860">Si je suis aux enfers libre de votre amour. </l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
-          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf9"><person corresp="#CALLIANTE"/></listPerson></head>
-          <sp xml:id="II06-1" who="CALLIANTE">
+        <div2 n="6" type="scene" xml:id="II06">
+          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#CALLIANTE"/></listPerson></head>
+          <sp who="CALLIANTE" xml:id="II06-1">
             <speaker>CALLIANTE, seule.</speaker>
             <l n="861" xml:id="l861">Va-t'en loin de mes yeux monstre d'ingratitude </l>
             <l n="862" xml:id="l862">Embrasser un trépas qui n'est pas assez rude, </l>
@@ -1192,18 +1209,21 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I. Rosimène, Ariston.<listPerson type="configuration" xml:id="conf11"><person corresp="#ROSIMENE"/><person corresp="#ARISTON"/><person corresp="#ORACLE"/></listPerson></head>
-          <sp xml:id="III01-1" who="ROSIMENE">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I. Rosimène, Ariston.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#ROSIMENE"/>
+            <person corresp="#ARISTON"/>
+            <person corresp="#ORACLE" n="oracle" xml:id="ORACLE"/></listPerson></head>
+          <sp who="ROSIMENE" xml:id="III01-1">
             <speaker>ROSIMÈNE.</speaker>
             <l n="889" xml:id="l889">Ma curiosité sera plus pardonnable, </l>
             <l n="890" xml:id="l890">Puisque c'est le sujet qui me rend misérable, </l>
             <l n="891" xml:id="l891">Et que depuis le temps que je demeure ici </l>
             <l n="892" xml:id="l892">Encore mon esprit n'en est pas éclairci. </l>
           </sp>
-          <sp xml:id="III01-2" who="ARISTON">
+          <sp who="ARISTON" xml:id="III01-2">
             <speaker>ARISTON.</speaker>
             <l n="893" xml:id="l893">Puisque vous désirez en apprendre l'histoire, </l>
             <l n="894" xml:id="l894">Je vais des maux passés affliger ma mémoire, </l>
@@ -1260,7 +1280,7 @@
             <l n="945" xml:id="l945">Et le peuple à genoux confessant ce miracle </l>
             <l n="946" xml:id="l946">Le Prêtre du Soleil lui rendit cet Oracle. </l>
           </sp>
-          <sp xml:id="III01-3" who="ORACLE">
+          <sp who="ORACLE" xml:id="III01-3">
             <speaker>ORACLE.</speaker>
             <l n="947" xml:id="l947">Vous serez délivrés de ces maux violents </l>
             <l n="948" xml:id="l948">Par le sang des deux insolents</l>
@@ -1302,28 +1322,30 @@
             <l n="984" xml:id="l984">Ici je connais le brave Fidamant, </l>
             <l n="985" xml:id="l985">Ce Prince est vertueux vous n'avez rien à craindre. </l>
           </sp>
-          <sp xml:id="III01-4" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III01-4">
             <speaker>ROSIMÈNE.</speaker>
             <l n="986" xml:id="l986">Mais cette qualité m'oblige à me contraindre. </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Fidamant, Rosimène.<listPerson type="configuration" xml:id="conf12"><person corresp="#FIDAMANT"/><person corresp="#ROSIMENE"/></listPerson></head>
-          <sp xml:id="III02-1" who="FIDAMANT">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Fidamant, Rosimène.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#FIDAMANT"/>
+            <person corresp="#ROSIMENE"/></listPerson></head>
+          <sp who="FIDAMANT" xml:id="III02-1">
             <speaker>FIDAMANT.</speaker>
             <l n="987" xml:id="l987">Madame pardonnez à ce Prince importun, </l>
             <l n="988" xml:id="l988">Je viens plaindre avec vous un mal qui m'est commun. </l>
             <l n="989" xml:id="l989">Et dans cet intérêt je suis plus excusable </l>
             <l n="990" xml:id="l990">D'une importunité qui me rendrait coupable. </l>
           </sp>
-          <sp xml:id="III02-2" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-2">
             <speaker>ROSIMÈNE.</speaker>
             <l n="991" xml:id="l991">J'honore vos vertus, et votre qualité, </l>
             <l n="992" xml:id="l992">Et je croirais commettre une incivilité, </l>
             <l n="993" xml:id="l993">Si je ne recevais l'honneur de vos visites </l>
             <l n="994" xml:id="l994">Selon votre naissance et selon vos mérites. </l>
           </sp>
-          <sp xml:id="III02-3" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-3">
             <speaker>FIDAMANT.</speaker>
             <l n="995" xml:id="l995">Dieux, je suis interdis, si jamais je le fus, </l>
             <l n="996" xml:id="l996">Ne vous étonnez pas de me voir si confus : </l>
@@ -1352,7 +1374,7 @@
             <l n="1019" xml:id="l1019">J'ai failli, je l'avoue, aussi je suis tout prêt </l>
             <l n="1020" xml:id="l1020">À recevoir ma peine, et subir mon arrêt. </l>
           </sp>
-          <sp xml:id="III02-4" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-4">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1021" xml:id="l1021">Je ne croirai jamais qu'en l'état déplorable, </l>
             <l n="1022" xml:id="l1022">Où mes yeux ont perdu ce qu'ils avaient d'aimable, </l>
@@ -1377,7 +1399,7 @@
             <l n="1041" xml:id="l1041">Je l'aime après sa mort, et ma flamme est si pure </l>
             <l n="1042" xml:id="l1042">Qu'en souffrant ce discours je lui fais une injure. </l>
           </sp>
-          <sp xml:id="III02-5" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-5">
             <speaker>FIDAMANT.</speaker>
             <l n="1043" xml:id="l1043">Quelque puissante amour qui m'échauffe le sein </l>
             <l n="1044" xml:id="l1044">Vous me verriez louer ce généreux dessein, </l>
@@ -1397,7 +1419,7 @@
             <l n="1058" xml:id="l1058">Pour ternir vos beaux jours d'une peine éternelle, </l>
             <l n="1059" xml:id="l1059">Pour donner de l'amour aux rochers seulement. </l>
           </sp>
-          <sp xml:id="III02-6" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-6">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1060" xml:id="l1060">Grand Prince ce discours m'offense infiniment. </l>
             <l n="1061" xml:id="l1061">Vous savez mon dessein, et quoi qu'on me propose, </l>
@@ -1409,23 +1431,23 @@
             <l n="1067" xml:id="l1067">Que dans un tel dessein rien ne m'ébranlera, </l>
             <l n="1068" xml:id="l1068">Et que jamais mon coeur ne se consolera. </l>
           </sp>
-          <sp xml:id="III02-7" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-7">
             <speaker>FIDAMANT.</speaker>
             <l n="1069" xml:id="l1069">Vous en prononcez dons l'arrêt irrévocable. </l>
           </sp>
-          <sp xml:id="III02-8" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-8">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1070" xml:id="l1070">Croyez qu'en ce dessein je suis inébranlable. </l>
           </sp>
-          <sp xml:id="III02-9" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-9">
             <speaker>FIDAMANT.</speaker>
             <l n="1071" xml:id="l1071">Rien n'est-il assez fort pour vous faire changer. </l>
           </sp>
-          <sp xml:id="III02-10" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-10">
             <speaker>ROSIMÈNE.</speaker>
-            <l n="1072" xml:id="l1072" part="I">Le trépas est trop faible. </l>
+            <l n="1072" part="I" xml:id="l1072">Le trépas est trop faible. </l>
           </sp>
-          <sp xml:id="III02-11" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-11">
             <speaker>FIDAMANT.</speaker>
             <l part="F">Il n'y faut plus songer ; </l>
             <l n="1073" xml:id="l1073">Puisque pour sa beauté c'est en vain que tu brûles, </l>
@@ -1434,51 +1456,51 @@
             <l n="1076" xml:id="l1076">Pardonnez-moi (Madame) et ne m'accusez point </l>
             <l n="1077" xml:id="l1077">Si parmi les transports d'une ardeur violente, </l>
             <l n="1078" xml:id="l1078">J'ai pour ce peu de temps abusé votre attente. </l>
-            <l n="1079" xml:id="l1079" part="I">Votre amant n'est pas mort. </l>
+            <l n="1079" part="I" xml:id="l1079">Votre amant n'est pas mort. </l>
           </sp>
-          <sp xml:id="III02-12" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-12">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Clarionte est vivant. </l>
           </sp>
-          <sp xml:id="III02-13" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-13">
             <speaker>FIDAMANT.</speaker>
             <l n="1080" xml:id="l1080">Je ne vous flatte point d'un espoir décevant, </l>
-            <l n="1081" xml:id="l1081" part="I">Il est vivant (Madame.) </l>
+            <l n="1081" part="I" xml:id="l1081">Il est vivant (Madame.) </l>
           </sp>
-          <sp xml:id="III02-14" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-14">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Ah ! Cessez je vous prie </l>
             <l n="1082" xml:id="l1082">De redoubler mes maux par cette raillerie, </l>
             <l n="1083" xml:id="l1083">Sa perte est trop certaine ayant vu son trépas </l>
             <l n="1084" xml:id="l1084">Je croirai à mes yeux qui ne m'abusent pas</l>
           </sp>
-          <sp xml:id="III02-15" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-15">
             <speaker>FIDAMANT.</speaker>
             <l n="1085" xml:id="l1085">À peine croirez-vous une telle merveille </l>
             <l n="1086" xml:id="l1086">Si pour un seul moment vous me prêtez l'oreille, </l>
             <l n="1087" xml:id="l1087">Je vous éclaircirai d'un mystère inconnu. </l>
           </sp>
-          <sp xml:id="III02-16" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-16">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1088" xml:id="l1088">Mais (Seigneur) qui vous a si longtemps retenu, </l>
-            <l n="1089" xml:id="l1089" part="I">Et qui vous l'a fait cacher. </l>
+            <l n="1089" part="I" xml:id="l1089">Et qui vous l'a fait cacher. </l>
           </sp>
-          <sp xml:id="III02-17" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-17">
             <speaker>FIDAMANT.</speaker>
             <l part="F">Le Ciel qui vous envoie </l>
             <l n="1090" xml:id="l1090">Une douleur égale à cette extrême joie, </l>
             <l n="1091" xml:id="l1091">Ne vous consoler point d'un bien si passager </l>
             <l n="1092" xml:id="l1092">Que comme d'un bonheur inconstant et léger </l>
             <l n="1093" xml:id="l1093">Il vit, mais son destin n'en est pas moins funeste. </l>
-            <l n="1094" xml:id="l1094" part="I">(Madame.) </l>
+            <l n="1094" part="I" xml:id="l1094">(Madame.) </l>
           </sp>
-          <sp xml:id="III02-18" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-18">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Que vous sert de me cacher le reste </l>
             <l n="1095" xml:id="l1095">Ce coeur est endurci contre tous les malheurs </l>
             <l n="1096" xml:id="l1096">Et vous ne sauriez plus augmenter mes douleurs. </l>
           </sp>
-          <sp xml:id="III02-19" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-19">
             <speaker>FIDAMANT.</speaker>
             <l n="1097" xml:id="l1097">En deux mots je vous fais ce récit véritable, </l>
             <l n="1098" xml:id="l1098">Le pauvre Clarionte en l'état déplorable, </l>
@@ -1513,11 +1535,11 @@
             <l n="1127" xml:id="l1127">Le visage tourné du côté de l'autel, </l>
             <l n="1128" xml:id="l1128">Ce pauvre infortuné reçut le coup mortel. </l>
           </sp>
-          <sp xml:id="III02-20" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-20">
             <speaker>ROSIMÈNE.</speaker>
-            <l n="1129" xml:id="l1129" part="I">Ô merveilleux succès. </l>
+            <l n="1129" part="I" xml:id="l1129">Ô merveilleux succès. </l>
           </sp>
-          <sp xml:id="III02-21" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-21">
             <speaker>FIDAMANT.</speaker>
             <l part="F">Toutefois inutile </l>
             <l n="1130" xml:id="l1130">Dû depuis Clarionte a vécu dans la ville, </l>
@@ -1548,7 +1570,7 @@
             <l n="1155" xml:id="l1155">Et dès que le Soleil paraîtra de retour </l>
             <l n="1156" xml:id="l1156">Ce Prince généreux sera privé du jour. </l>
           </sp>
-          <sp xml:id="III02-22" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-22">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1157" xml:id="l1157">Dieux ! Vous le souffrirez et tiendrez un tonnerre </l>
             <l n="1158" xml:id="l1158">Sans abîmer cette Île au centre de la terre : </l>
@@ -1557,19 +1579,19 @@
             <l n="1161" xml:id="l1161">Vous voulez que son sang lave les plus grands crimes, </l>
             <l n="1162" xml:id="l1162">Et voir sur vos autels de Royales victimes. </l>
           </sp>
-          <sp xml:id="III02-23" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-23">
             <speaker>FIDAMANT.</speaker>
-            <l n="1163" xml:id="l1163" part="I">Madame retenez. </l>
+            <l n="1163" part="I" xml:id="l1163">Madame retenez. </l>
           </sp>
-          <sp xml:id="III02-24" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-24">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Seigneur en ce seul point </l>
             <l n="1164" xml:id="l1164">Vos bonnes volontés ne m'offenseront point. </l>
             <l n="1165" xml:id="l1165">Si vous m'en voulez rendre une preuve certaine : </l>
             <l n="1166" xml:id="l1166">Persistez au dessein de sauver Rosimène, </l>
-            <l n="1167" xml:id="l1167" part="I">En sauvant Clarionte. </l>
+            <l n="1167" part="I" xml:id="l1167">En sauvant Clarionte. </l>
           </sp>
-          <sp xml:id="III02-25" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-25">
             <speaker>FIDAMANT.</speaker>
             <l part="F">En cette extrémité, </l>
             <l n="1168" xml:id="l1168">(Madame) assurez-vous de ma fidélité, </l>
@@ -1578,24 +1600,28 @@
             <l n="1171" xml:id="l1171">Adieu, les immortels et les hommes témoins </l>
             <l n="1172" xml:id="l1172">Ne vous permettront pas de douter de mes soins. </l>
           </sp>
-          <sp xml:id="III02-26" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="III02-26">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1173" xml:id="l1173">Entrons, j'ai dans un cas d'une telle importance </l>
             <l n="1174" xml:id="l1174">Besoin de vos conseils et de votre assistance. </l>
           </sp>
-          <sp xml:id="III02-27" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="III02-27">
             <speaker>FIDAMANT.</speaker>
             <l n="1175" xml:id="l1175">Ne me dérobez point l'honneur de vous servir, </l>
             <l n="1176" xml:id="l1176">Puisque c'est le plus grand qu'on me saurait ravir. </l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Le Roi, Calliante, Mélie.<listPerson type="configuration" xml:id="conf13"><person corresp="#MELIE"/><person corresp="#LEROI"/><person corresp="#LESACRIFICATEUR"/><person corresp="#CALLIANTE"/></listPerson></head>
-          <sp xml:id="III03-1" who="MELIE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Le Roi, Calliante, Mélie.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#MELIE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#LESACRIFICATEUR"/>
+            <person corresp="#CALLIANTE"/></listPerson></head>
+          <sp who="MELIE" xml:id="III03-1">
             <speaker>MÉLIE.</speaker>
             <l n="1177" xml:id="l1177">Ah ! Seigneur accordez quelque chose à mes larmes. </l>
           </sp>
-          <sp xml:id="III03-2" who="LEROI">
+          <sp who="LEROI" xml:id="III03-2">
             <speaker>LE ROI.</speaker>
             <l n="1178" xml:id="l1178">Ces pleurs sur mon esprit n'ont plus assez de charmes. </l>
             <l n="1179" xml:id="l1179">Enfin un tel discours ne se peut pardonner, </l>
@@ -1606,18 +1632,18 @@
             <l n="1184" xml:id="l1184">Chassez ce malheureux de votre souvenir, </l>
             <l n="1185" xml:id="l1185">Sur peine d'encourir ma disgrâce éternelle. </l>
           </sp>
-          <sp xml:id="III03-3" who="MELIE">
+          <sp who="MELIE" xml:id="III03-3">
             <speaker>MÉLIE.</speaker>
             <l n="1186" xml:id="l1186">En ce point j'aime mieux paraître criminelle, </l>
             <l n="1187" xml:id="l1187">Et les soins de vous plaire et de vous obéir </l>
             <l n="1188" xml:id="l1188">Ne forceront jamais mon âme à le haïr.</l>
           </sp>
-          <sp xml:id="III03-4" who="LEROI">
+          <sp who="LEROI" xml:id="III03-4">
             <speaker>LE ROI.</speaker>
             <l n="1189" xml:id="l1189">Et vous à qui les Dieux en ont commis l'office, </l>
             <l n="1190" xml:id="l1190">Préparez ce qu'il faut pour notre Sacrifice. </l>
           </sp>
-          <sp xml:id="III03-5" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="III03-5">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1191" xml:id="l1191">Vous y serez, servi comme vous souhaitez, </l>
             <l n="1192" xml:id="l1192">Et le Ciel qui connaît vos bonnes volontés, </l>
@@ -1625,9 +1651,11 @@
             <l n="1194" xml:id="l1194">Et des crimes passés éteindra la mémoire. </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Calliante, Mélie.<listPerson type="configuration" xml:id="conf14"><person corresp="#CALLIANTE"/><person corresp="#MELIE"/></listPerson></head>
-          <sp xml:id="III04-1" who="CALLIANTE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Calliante, Mélie.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#CALLIANTE"/>
+            <person corresp="#MELIE"/></listPerson></head>
+          <sp who="CALLIANTE" xml:id="III04-1">
             <speaker>CALLIANTE.</speaker>
             <l n="1195" xml:id="l1195">Que votre coeur est grand et qu'un si beau dessein </l>
             <l n="1196" xml:id="l1196">D'un amour glorieux vous échauffe le sein : </l>
@@ -1635,7 +1663,7 @@
             <l n="1198" xml:id="l1198">Témoigne sa bonté dans ce choix légitime, </l>
             <l n="1199" xml:id="l1199">Et vous ne pouviez pas aimer plus noblement. </l>
           </sp>
-          <sp xml:id="III04-2" who="MELIE">
+          <sp who="MELIE" xml:id="III04-2">
             <speaker>MÉLIE.</speaker>
             <l n="1200" xml:id="l1200">Te dois-tu retenir dans ce ressentiment. </l>
             <l n="1201" xml:id="l1201">Il est vrai que ce coeur est bas et méprisable, </l>
@@ -1651,7 +1679,7 @@
             <l n="1211" xml:id="l1211">Lavez-vous de son sang, arrachez-lui le coeur, </l>
             <l n="1212" xml:id="l1212">Et vous vous vengerez avec trop de douceur. </l>
           </sp>
-          <sp xml:id="III04-3" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="III04-3">
             <speaker>CALLIANTE.</speaker>
             <l n="1213" xml:id="l1213">Puisque j'ai conservé des sentiments plus fermes, </l>
             <l n="1214" xml:id="l1214">Je ne vous réponds point par de semblables termes, </l>
@@ -1660,7 +1688,7 @@
             <l n="1217" xml:id="l1217">Mais après vos discours je n'aurai point le blâme </l>
             <l n="1218" xml:id="l1218">D'avoir pour un captif une honteuse flamme. </l>
           </sp>
-          <sp xml:id="III04-4" who="MELIE">
+          <sp who="MELIE" xml:id="III04-4">
             <speaker>MÉLIE.</speaker>
             <l n="1219" xml:id="l1219">Vous avez jusqu'ici trop mal dissimulé </l>
             <l n="1220" xml:id="l1220">Ce que vos actions ont assez révélé, </l>
@@ -1681,7 +1709,7 @@
             <l n="1235" xml:id="l1235">La vôtre paraîtrait sans crime et sans soupçon, </l>
             <l n="1236" xml:id="l1236">Si vous l'aviez chéri de la même façon. </l>
           </sp>
-          <sp xml:id="III04-5" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="III04-5">
             <speaker>CALLIANTE.</speaker>
             <l n="1237" xml:id="l1237">Vous pouvez justement me faire ce reproche, </l>
             <l n="1238" xml:id="l1238">Il est vrai je ne puis émouvoir cette roche, </l>
@@ -1692,7 +1720,7 @@
             <l n="1243" xml:id="l1243">C'est cette passion qui durant mes douleurs </l>
             <l n="1244" xml:id="l1244">Devant les pieds du Roi m'arrache tant de pleurs. </l>
           </sp>
-          <sp xml:id="III04-6" who="MELIE">
+          <sp who="MELIE" xml:id="III04-6">
             <speaker>MÉLIE.</speaker>
             <l n="1245" xml:id="l1245">Vous vous devez vanter de tous vos bons offices, </l>
             <l n="1246" xml:id="l1246">C'est le respect des Dieux et de leurs sacrifices </l>
@@ -1700,25 +1728,31 @@
             <l n="1248" xml:id="l1248">Mais si pour le venger le Ciel est impuissant, </l>
             <l n="1249" xml:id="l1249">Craignez un désespoir, et soyez assurée. </l>
           </sp>
-          <sp xml:id="III04-7" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="III04-7">
             <speaker>CALLIANTE.</speaker>
             <l n="1250" xml:id="l1250">Que vous le vengerez, que ma perte est jurée. </l>
           </sp>
-          <sp xml:id="III04-8" who="MELIE">
+          <sp who="MELIE" xml:id="III04-8">
             <speaker>MÉLIE.</speaker>
             <l n="1251" xml:id="l1251">Que je me souviendrai des offices qu'on rend. </l>
           </sp>
-          <sp xml:id="III04-9" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="III04-9">
             <speaker>CALLIANTE.</speaker>
             <l n="1252" xml:id="l1252">Perdant un ennemi tout m'est indifférent. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE I. Fidamant, Le Roi, Clarionte, Mélie, Le Sacrificateur.<listPerson type="configuration" xml:id="conf16"><person corresp="#FIDAMANT"/><person corresp="#LEROI"/><person corresp="#CLARIONTE"/><person corresp="#MELIE"/><person corresp="#LESACRIFICATEUR"/><person corresp="#CALLIANTE"/></listPerson></head>
-          <sp xml:id="IV01-1" who="FIDAMANT">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE I. Fidamant, Le Roi, Clarionte, Mélie, Le Sacrificateur.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#FIDAMANT"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#CLARIONTE"/>
+            <person corresp="#MELIE"/>
+            <person corresp="#LESACRIFICATEUR"/>
+            <person corresp="#CALLIANTE"/></listPerson></head>
+          <sp who="FIDAMANT" xml:id="IV01-1">
             <speaker>FIDAMANT.</speaker>
             <l n="1253" xml:id="l1253">Puisqu'on ne peut fléchir vos rigueurs inhumaines, </l>
             <l n="1254" xml:id="l1254">Que pour vous émouvoir les prières sont vaines, </l>
@@ -1740,13 +1774,13 @@
             <l n="1269" xml:id="l1269">Mais plus tigres encor ceux de qui la puissance </l>
             <l n="1270" xml:id="l1270">Consent à cette infâme et lâche obéissance.</l>
           </sp>
-          <sp xml:id="IV01-2" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-2">
             <speaker>LE ROI.</speaker>
             <l n="1271" xml:id="l1271">Enfin votre insolence arrive au dernier point, </l>
             <l n="1272" xml:id="l1272">Ce que vous me devez ne vous retiendra point, </l>
             <l n="1273" xml:id="l1273">Connaissez qui je suis, et craignez ma colère. </l>
           </sp>
-          <sp xml:id="IV01-3" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="IV01-3">
             <speaker>FIDAMANT.</speaker>
             <l n="1274" xml:id="l1274">Mon devoir seulement me porte à vous plaire, </l>
             <l n="1275" xml:id="l1275">Je ne méconnais point mon père ni mon Roi : </l>
@@ -1755,7 +1789,7 @@
             <l n="1278" xml:id="l1278">De détourner de vous un mal inévitable, </l>
             <l n="1279" xml:id="l1279">Vous vous repentirez de perdre un inconnu. </l>
           </sp>
-          <sp xml:id="IV01-4" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-4">
             <speaker>LE ROI.</speaker>
             <l n="1280" xml:id="l1280">Puisque d'aucun respect vous n'êtes retenu, </l>
             <l n="1281" xml:id="l1281">Que vous perdez le sens avec la connaissance, </l>
@@ -1764,15 +1798,15 @@
             <l n="1284" xml:id="l1284">Ôtez-vous de ma vue, et ne nous troublez plus, </l>
             <l n="1285" xml:id="l1285">Vous n'obéissez pas, gardes que l'on l'amène. </l>
           </sp>
-          <sp xml:id="IV01-5" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="IV01-5">
             <speaker>FIDAMANT.</speaker>
             <l n="1286" xml:id="l1286">Seigneur votre puissance est sur moi souveraine, </l>
             <l n="1287" xml:id="l1287">Oui je veux obéir : mais avant mon départ </l>
             <l n="1288" xml:id="l1288">Considérez qu'on peut se repentir trop tard, </l>
             <l n="1289" xml:id="l1289">Vous en aurez peut-être un sujet assez ample </l>
-            <l n="1290" xml:id="l1290" part="I">Et Doriman est tel.</l>
+            <l n="1290" part="I" xml:id="l1290">Et Doriman est tel.</l>
           </sp>
-          <sp xml:id="IV01-6" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-6">
             <speaker>LE ROI.</speaker>
             <l part="F">Qu'on l'arrache du Temple </l>
             <l n="1291" xml:id="l1291">Et que pas un de vous ne le quitte aujourd'hui, </l>
@@ -1783,9 +1817,9 @@
             <l n="1296" xml:id="l1296">Croyez qu'en vous perdant je vous perds malgré moi, </l>
             <l n="1297" xml:id="l1297">Et que si je pouvais sans me rendre coupable </l>
             <l n="1298" xml:id="l1298">Révoquer des grands Dieux l'arrêt irrévocable, </l>
-            <l n="1299" xml:id="l1299" part="I">C'est en votre faveur. </l>
+            <l n="1299" part="I" xml:id="l1299">C'est en votre faveur. </l>
           </sp>
-          <sp xml:id="IV01-7" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV01-7">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Ces mots sont superflus, </l>
             <l n="1300" xml:id="l1300">Et de grâce (Seigneur) ne me consolez plus, </l>
@@ -1818,22 +1852,22 @@
             <l n="1327" xml:id="l1327">Ne vous excusez point, mais vantez désormais </l>
             <l n="1328" xml:id="l1328">La plus belle action que vous fîtes jamais. </l>
           </sp>
-          <sp xml:id="IV01-8" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-8">
             <speaker>LE ROI.</speaker>
             <l n="1329" xml:id="l1329">Ton désespoir t'aveugle, et te rend excusable </l>
-            <l n="1330" xml:id="l1330" part="I">Mais que cherche Mélie. </l>
+            <l n="1330" part="I" xml:id="l1330">Mais que cherche Mélie. </l>
           </sp>
-          <sp xml:id="IV01-9" who="MELIE">
+          <sp who="MELIE" xml:id="IV01-9">
             <speaker>MÉLIE.</speaker>
             <l part="F">Un arrêt équitable, </l>
             <l n="1331" xml:id="l1331">Et je viens faire voir à votre Majesté </l>
             <l n="1332" xml:id="l1332">Que le vouloir des Dieux doit être exécuté. </l>
           </sp>
-          <sp xml:id="IV01-10" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-10">
             <speaker>LE ROI.</speaker>
             <l n="1333" xml:id="l1333">Ce dessein seulement dans le Temple m'arrête. </l>
           </sp>
-          <sp xml:id="IV01-11" who="MELIE">
+          <sp who="MELIE" xml:id="IV01-11">
             <speaker>MÉLIE.</speaker>
             <l n="1334" xml:id="l1334">Ne différez dons pas d'accorder ma requête, </l>
             <l n="1335" xml:id="l1335">Et si cette raison vous retient en ce lieu, </l>
@@ -1848,7 +1882,7 @@
             <l n="1344" xml:id="l1344">De l'honneur immortel qui suivra mon trépas, </l>
             <l n="1345" xml:id="l1345">Je demande la mort et croit qu'elle m'est due. </l>
           </sp>
-          <sp xml:id="IV01-12" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-12">
             <speaker>LE ROI.</speaker>
             <l n="1346" xml:id="l1346">Ô Ciel ! Par quel malheur sa raison s'est perdue, </l>
             <l n="1347" xml:id="l1347">Misérable est-il vrai que cette folle amour </l>
@@ -1862,7 +1896,7 @@
             <l n="1355" xml:id="l1355">Et que si le trépas te pouvait affliger, </l>
             <l n="1356" xml:id="l1356">C'est par ton seul trépas que je me puis venger. </l>
           </sp>
-          <sp xml:id="IV01-13" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV01-13">
             <speaker>CLARIONTE.</speaker>
             <l n="1357" xml:id="l1357">Ah ! (Madame) souffrez que je meure sans crime, </l>
             <l n="1358" xml:id="l1358">Quittez une bonté qui n'est plus légitime, </l>
@@ -1871,7 +1905,7 @@
             <l n="1361" xml:id="l1361">Ne m'enviez donc plus le seul bien qui me reste </l>
             <l n="1362" xml:id="l1362">Ou vous rendrez ma mort mille fois plus funeste. </l>
           </sp>
-          <sp xml:id="IV01-14" who="MELIE">
+          <sp who="MELIE" xml:id="IV01-14">
             <speaker>MÉLIE.</speaker>
             <l n="1363" xml:id="l1363">Cessez d'être cruel à la fin de mes jours, </l>
             <l n="1364" xml:id="l1364">Et ne m'affligez point de semblables discours </l>
@@ -1888,12 +1922,12 @@
             <l n="1375" xml:id="l1375">Et sans avoir égard à la force du sang, </l>
             <l n="1376" xml:id="l1376">Que le zèle plus fort vous surmonte à son rang</l>
           </sp>
-          <sp xml:id="IV01-15" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-15">
             <speaker>LE ROI.</speaker>
             <l n="1377" xml:id="l1377">Impudente, insensée, une juste colère </l>
             <l n="1378" xml:id="l1378">Me pourrait à la fin porter à te complaire. </l>
           </sp>
-          <sp xml:id="IV01-16" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="IV01-16">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1379" xml:id="l1379">Sire sans vous porter à quelque extrémité, </l>
             <l n="1380" xml:id="l1380">Faites plus par raison que par autorité, </l>
@@ -1905,7 +1939,7 @@
             <l n="1386" xml:id="l1386">Enfin souvenez-vous des termes de l'oracle, </l>
             <l n="1387" xml:id="l1387">Qui ne permettent pas d'enfreindre notre Loi. </l>
           </sp>
-          <sp xml:id="IV01-17" who="MELIE">
+          <sp who="MELIE" xml:id="IV01-17">
             <speaker>MÉLIE.</speaker>
             <l n="1388" xml:id="l1388">L'oracle n'a rien dit qui fasse contre moi, </l>
             <l n="1389" xml:id="l1389">Et si vous n'entendez des paroles si claires, </l>
@@ -1917,14 +1951,14 @@
             <l n="1395" xml:id="l1395">Puisqu'il nous est commun également à tous, </l>
             <l n="1396" xml:id="l1396">Avons-nous moins de droit d'y prétendre que vous. </l>
           </sp>
-          <sp xml:id="IV01-18" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="IV01-18">
             <speaker>CALLIANTE.</speaker>
             <l n="1397" xml:id="l1397">Ah ! Mélie à quel point vous vous rendez coupable, </l>
             <l n="1398" xml:id="l1398">Que cette passion vous rendra méprisable </l>
             <l n="1399" xml:id="l1399">Et que vous offensez celles de votre rang, </l>
             <l n="1400" xml:id="l1400">Moi-même je rougis d'être de même sang. </l>
           </sp>
-          <sp xml:id="IV01-19" who="MELIE">
+          <sp who="MELIE" xml:id="IV01-19">
             <speaker>MÉLIE.</speaker>
             <l n="1401" xml:id="l1401">Cette haute vertu n'en a point qui l'égale, </l>
             <l n="1402" xml:id="l1402">Oui (Madame) il est vrai que votre âme est Royale : </l>
@@ -1935,18 +1969,18 @@
             <l n="1407" xml:id="l1407">Mais jamais ce grand coeur ne se vit combattu </l>
             <l n="1408" xml:id="l1408">Par un moindre désir qui choque ma vertu. </l>
           </sp>
-          <sp xml:id="IV01-20" who="LEROI">
+          <sp who="LEROI" xml:id="IV01-20">
             <speaker>LE ROI.</speaker>
             <l n="1409" xml:id="l1409">Quand ton affection serait encor plus belle </l>
             <l n="1410" xml:id="l1410">Sa mémoire à jamais te rendra criminelle, </l>
             <l n="1411" xml:id="l1411">Tous tes raisonnements sont ici superflus, </l>
             <l n="1412" xml:id="l1412">Suffit que je commande, et qu'on n'en parle plus. </l>
           </sp>
-          <sp xml:id="IV01-21" who="MELIE">
+          <sp who="MELIE" xml:id="IV01-21">
             <speaker>MÉLIE.</speaker>
             <l n="1413" xml:id="l1413">Ô Ciel ! Quelle injustice, ou quelle tyrannie. </l>
           </sp>
-          <sp xml:id="IV01-22" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV01-22">
             <speaker>CLARIONTE.</speaker>
             <l n="1414" xml:id="l1414">Hélas ne rendez point ma douleur infinie </l>
             <l n="1415" xml:id="l1415">(Madame) retenez ces charitables soins, </l>
@@ -1960,50 +1994,57 @@
             <l n="1423" xml:id="l1423">Et ne me troublez pas dans mon dernier moment. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Rosimène, Clarionte, Le Roi, Mélie, Le Sacrificateur, Calliante.<listPerson type="configuration" xml:id="conf17"><person corresp="#ROSIMENE"/><person corresp="#LESACRIFICATEUR"/><person corresp="#LEROI"/><person corresp="#CLARIONTE"/><person corresp="#MELIE"/><person corresp="#CALLIANTE"/><person corresp="#UNSOLDAT"/></listPerson></head>
-          <sp xml:id="IV02-1" who="ROSIMENE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Rosimène, Clarionte, Le Roi, Mélie, Le Sacrificateur, Calliante.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#ROSIMENE"/>
+            <person corresp="#LESACRIFICATEUR"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#CLARIONTE"/>
+            <person corresp="#MELIE"/>
+            <person corresp="#CALLIANTE"/>
+            <person corresp="#SOLDAT"/></listPerson></head>
+          <sp who="ROSIMENE" xml:id="IV02-1">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1424" xml:id="l1424">J'y suis encor à temps, hâtons-nous promptement, </l>
             <note>Fendre la presse signifie fendre la foule qui se presse.</note>
             <l n="1425" xml:id="l1425">Pour approcher l'autel il faut fendre la presse. </l>
           </sp>
-          <sp xml:id="IV02-2" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="IV02-2">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1426" xml:id="l1426">Père de la lumière, et vous grande Déesse. </l>
           </sp>
-          <sp xml:id="IV02-3" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-3">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1427" xml:id="l1427">Grand Prêtre permettez que je sois entendu, </l>
             <l n="1428" xml:id="l1428">Et ne me frustrez point d'un honneur qui m'est dû. </l>
           </sp>
-          <sp xml:id="IV02-4" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-4">
             <speaker>LE ROI.</speaker>
             <l n="1429" xml:id="l1429">Encore un importun trouble le Sacrifice ? </l>
-            <l n="1430" xml:id="l1430" part="I">Que veut cet étranger ? </l>
+            <l n="1430" part="I" xml:id="l1430">Que veut cet étranger ? </l>
           </sp>
-          <sp xml:id="IV02-5" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-5">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Vous rendre un bon office, </l>
             <l n="1431" xml:id="l1431">Et vous faire tenir par ma mort seulement </l>
             <l n="1432" xml:id="l1432">La parole donnée au Prince Fidamant</l>
           </sp>
-          <sp xml:id="IV02-6" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-6">
             <speaker>LE ROI.</speaker>
             <l n="1433" xml:id="l1433">Quelle parole enfin apprends-la-moi de grâce. </l>
           </sp>
-          <sp xml:id="IV02-7" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-7">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1434" xml:id="l1434">Que le premier venu devait quitter la place, </l>
             <l n="1435" xml:id="l1435">Et que s'il se trouvait un plus beau prisonnier, </l>
             <l n="1436" xml:id="l1436">Sa beauté le perdrait en sauvant le premier. </l>
           </sp>
-          <sp xml:id="IV02-8" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-8">
             <speaker>LE ROI.</speaker>
             <l n="1437" xml:id="l1437">Il est vrai qu'à ce point ma parole m'engage : </l>
             <l n="1438" xml:id="l1438">Mais dis-nous ton dessein sans tarder davantage. </l>
           </sp>
-          <sp xml:id="IV02-9" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-9">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1439" xml:id="l1439">Je demande justice, et n'attends plus de toi, </l>
             <l n="1440" xml:id="l1440">Que l'accomplissement des paroles d'un Roi, </l>
@@ -2012,7 +2053,7 @@
             <l n="1443" xml:id="l1443">Aussi si son visage est plus beau que le mien, </l>
             <l n="1444" xml:id="l1444">Je lui cède mes droits et je n'y prétends rien. </l>
           </sp>
-          <sp xml:id="IV02-10" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-10">
             <speaker>CLARIONTE.</speaker>
             <l n="1445" xml:id="l1445">Malheureux, quel démon de fureur, et de rage, </l>
             <l n="1446" xml:id="l1446">Contre ta propre vie anime ton courage, </l>
@@ -2032,11 +2073,11 @@
             <l n="1459" xml:id="l1459">Tout autre désespoir doit offenser les Dieux, </l>
             <l n="1460" xml:id="l1460">Prolonge donc tes jours ou les conserve mieux. </l>
           </sp>
-          <sp xml:id="IV02-11" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="IV02-11">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1461" xml:id="l1461">Ô Dieux ! Vit-on jamais une beauté si rare. </l>
           </sp>
-          <sp xml:id="IV02-12" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-12">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1462" xml:id="l1462">Ne considérez point ce sentiment barbare, </l>
             <l n="1463" xml:id="l1463">Que la rage ou l'honneur le poussent au trépas </l>
@@ -2045,46 +2086,46 @@
             <l n="1466" xml:id="l1466">Mais vos yeux y pourront mettre la différence, </l>
             <l n="1467" xml:id="l1467">Et de notre débat la mort sera le prix. </l>
           </sp>
-          <sp xml:id="IV02-13" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-13">
             <speaker>LE ROI.</speaker>
             <l n="1468" xml:id="l1468">Par un si grand éclat je me trouve surpris, </l>
             <l n="1469" xml:id="l1469">Grand Prêtre approchez-vous, cette affaire vous touche, </l>
             <l n="1470" xml:id="l1470">Et j'en attends l'arrêt de votre seule bouche. </l>
           </sp>
-          <sp xml:id="IV02-14" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="IV02-14">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1471" xml:id="l1471">Certes je paraîtrais dépourvu de raison, </l>
             <l n="1472" xml:id="l1472">Si je mettais entre eux quelque comparaison, </l>
             <l n="1473" xml:id="l1473">Il est trop assuré que le dernier l'emporte. </l>
           </sp>
-          <sp xml:id="IV02-15" who="MELIE">
+          <sp who="MELIE" xml:id="IV02-15">
             <speaker>MÉLIE.</speaker>
             <l n="1474" xml:id="l1474">Pourrais-je relever mon espérance morte.</l>
           </sp>
-          <sp xml:id="IV02-16" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-16">
             <speaker>LE ROI.</speaker>
             <l n="1475" xml:id="l1475">J'en juge comme vous, et puisque j'ai promis </l>
             <l n="1476" xml:id="l1476">Qu'on verrait Doriman en liberté remis, </l>
             <l n="1477" xml:id="l1477">Je le déclare libre, et veux qu'on le délie. </l>
           </sp>
-          <sp xml:id="IV02-17" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-17">
             <speaker>ROSIMÈNE.</speaker>
-            <l n="1478" xml:id="l1478" part="I">Ô favorable arrêt ! </l>
+            <l n="1478" part="I" xml:id="l1478">Ô favorable arrêt ! </l>
           </sp>
-          <sp xml:id="IV02-18" who="MELIE">
+          <sp who="MELIE" xml:id="IV02-18">
             <speaker>MÉLIE.</speaker>
             <l part="F">Bienheureuse Mélie. </l>
             <l n="1479" xml:id="l1479">D'où te peut arriver ce secours inconnu. </l>
           </sp>
-          <sp xml:id="IV02-19" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-19">
             <speaker>LE ROI.</speaker>
             <l n="1480" xml:id="l1480">Et qu'on donne la place à ce dernier venu. </l>
           </sp>
-          <sp xml:id="IV02-20" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-20">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1481" xml:id="l1481">Ah ! Que vous prononcez une juste sentence. </l>
           </sp>
-          <sp xml:id="IV02-21" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-21">
             <speaker>CLARIONTE.</speaker>
             <l n="1482" xml:id="l1482">Et j'en appelle aux Dieux que ce dessein offense, </l>
             <l n="1483" xml:id="l1483">Vous tâchez vainement de prolonger mes jours, </l>
@@ -2107,29 +2148,29 @@
             <l n="1500" xml:id="l1500">Après l'avoir trouvé je ne redoute rien, </l>
             <l n="1501" xml:id="l1501">Mort, ta plus effroyable et plus sanglante image </l>
             <l n="1502" xml:id="l1502">Ne saurait désormais abattre mon courage, </l>
-            <l n="1503" xml:id="l1503" part="I">Rosimène est au monde. </l>
+            <l n="1503" part="I" xml:id="l1503">Rosimène est au monde. </l>
           </sp>
-          <sp xml:id="IV02-22" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="IV02-22">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l part="F">Enfin tous ces transports. </l>
           </sp>
-          <sp xml:id="IV02-23" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-23">
             <speaker>CLARIONTE.</speaker>
             <l n="1504" xml:id="l1504">On ne peur sans mourir toucher à ce beau corps, </l>
             <l n="1505" xml:id="l1505">Quoique de mon trépas ta mort sera suivie, </l>
             <l n="1506" xml:id="l1506">Crois si tu l'entreprends qu'il y va de ta vie. </l>
           </sp>
-          <sp xml:id="IV02-24" who="MELIE">
+          <sp who="MELIE" xml:id="IV02-24">
             <speaker>MÉLIE.</speaker>
             <l n="1507" xml:id="l1507">Dieux où son désespoir le va précipiter. </l>
           </sp>
-          <sp xml:id="IV02-25" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-25">
             <speaker>LE ROI.</speaker>
             <l n="1508" xml:id="l1508">Faites-vous l'insolent afin de m'irriter, </l>
             <l n="1509" xml:id="l1509">Et n'étant pas content d'avoir eu ma grâce, </l>
             <l n="1510" xml:id="l1510">Voulez-vous derechef vous remettre en la place. </l>
           </sp>
-          <sp xml:id="IV02-26" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-26">
             <speaker>CLARIONTE.</speaker>
             <l n="1511" xml:id="l1511">Ouvrez, ouvrez les yeux et voyez des appas, </l>
             <l n="1512" xml:id="l1512">Ou de divins attraits que les hommes n'ont pas </l>
@@ -2150,7 +2191,7 @@
             <l n="1527" xml:id="l1527">Son sexe a détourné cet horrible attentat </l>
             <l n="1528" xml:id="l1528">Et remis Doriman en son premier état. </l>
           </sp>
-          <sp xml:id="IV02-27" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-27">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1529" xml:id="l1529">Cruel me devais-tu rejeter de la sorte. </l>
             <l n="1530" xml:id="l1530">Ah ! Ne l'écoutez pas, son désespoir l'emporte, </l>
@@ -2159,17 +2200,17 @@
             <l n="1533" xml:id="l1533">C'est là que je m'assure, et que je me repose </l>
             <l n="1534" xml:id="l1534">Sur son autorité qui soutiendra ma cause. </l>
           </sp>
-          <sp xml:id="IV02-28" who="CALLIANTE">
+          <sp who="CALLIANTE" xml:id="IV02-28">
             <speaker>CALLIANTE.</speaker>
             <note>Rencontre : Vaugelas remarque qu'en quelque sens qu'on emploie rencontre, il est toujours féminin, et que les bons Auteurs n'en usent jamais aûtrement, que néanmoins en matière de querelle, plusieurs le font masculin, et disent : ce n'est pas un duel, mais un rencontre ; que cependant le meilleur est de le faire féminin. Bouhours dit sur cette remarque, que tous les gens qui parlent bien disent une rencontre, et que le féminin a prévalu. [FC]</note>
             <l n="1535" xml:id="l1535">Ô Ciel vit-on jamais un rencontre pareil. </l>
           </sp>
-          <sp xml:id="IV02-29" who="MELIE">
+          <sp who="MELIE" xml:id="IV02-29">
             <speaker>MÉLIE.</speaker>
             <l n="1536" xml:id="l1536">Dieux, amour, désespoir, donnez-moi du conseil </l>
             <l n="1537" xml:id="l1537">En un tel accident qui me rend si confuse. </l>
           </sp>
-          <sp xml:id="IV02-30" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-30">
             <speaker>CLARIONTE.</speaker>
             <l n="1538" xml:id="l1538">(Madame) maintenant recevez mon excuse, </l>
             <l n="1539" xml:id="l1539">Jugez sans passion de ce divin éclat, </l>
@@ -2179,7 +2220,7 @@
             <l n="1543" xml:id="l1543">Après de si beaux noeuds dont nos coeurs sont liés, </l>
             <l n="1544" xml:id="l1544">Voyez si ses appas peuvent être oubliés. </l>
           </sp>
-          <sp xml:id="IV02-31" who="MELIE">
+          <sp who="MELIE" xml:id="IV02-31">
             <speaker>MÉLIE.</speaker>
             <l n="1545" xml:id="l1545">Non, non, votre constance était trop équitable, </l>
             <l n="1546" xml:id="l1546">Et si vous la quittiez je vous croirais coupable, </l>
@@ -2188,11 +2229,11 @@
             <l n="1549" xml:id="l1549">J'adore comme vous cette rare merveille, </l>
             <l n="1550" xml:id="l1550">Et je la veux chérir d'une amitié pareille.</l>
           </sp>
-          <sp xml:id="IV02-32" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-32">
             <speaker>LE ROI.</speaker>
             <l n="1551" xml:id="l1551">Cet accident retient mes esprits enchantés. </l>
           </sp>
-          <sp xml:id="IV02-33" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-33">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1552" xml:id="l1552">(Madame) retenez ces bonnes volontés, </l>
             <l n="1553" xml:id="l1553">Je dois mourir ingrate à des bontés si rares : </l>
@@ -2202,7 +2243,7 @@
             <l n="1557" xml:id="l1557">Déjà votre intérêt m'est plus cher que le nôtre ; </l>
             <l n="1558" xml:id="l1558">Pourvu qu'il soit vivant je consens qu'il soit vôtre. </l>
           </sp>
-          <sp xml:id="IV02-34" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-34">
             <speaker>CLARIONTE.</speaker>
             <l n="1559" xml:id="l1559">Inhumaine veux-tu redoubler mon tourment, </l>
             <l n="1560" xml:id="l1560">Et que par tes discours je meure doublement, </l>
@@ -2217,30 +2258,30 @@
             <l n="1569" xml:id="l1569">Par la sincérité de nos chastes pensées, </l>
             <l n="1570" xml:id="l1570">Par ma fidélité, par nos peines passées. </l>
           </sp>
-          <sp xml:id="IV02-35" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-35">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1571" xml:id="l1571">Je te conjure aussi par ce que tu me dois, </l>
             <l n="1572" xml:id="l1572">Et si j'ai conservé l'Empire que j'avais </l>
             <l n="1573" xml:id="l1573">Par ce premier pouvoir, par cette obéissance </l>
             <l n="1574" xml:id="l1574">Je te conjure enfin de toute ma puissance. </l>
           </sp>
-          <sp xml:id="IV02-36" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-36">
             <speaker>CLARIONTE.</speaker>
-            <l n="1575" xml:id="l1575" part="I">Ma Reine. </l>
+            <l n="1575" part="I" xml:id="l1575">Ma Reine. </l>
           </sp>
-          <sp xml:id="IV02-37" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-37">
             <speaker>ROSIMÈNE.</speaker>
             <l part="M">Ma chère âme. </l>
           </sp>
-          <sp xml:id="IV02-38" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-38">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Eh de grâce permets. </l>
           </sp>
-          <sp xml:id="IV02-39" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-39">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1576" xml:id="l1576">Ne crois pas que mon coeur y consente jamais. </l>
           </sp>
-          <sp xml:id="IV02-40" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-40">
             <speaker>LE ROI.</speaker>
             <l n="1577" xml:id="l1577">Vous deviez respirer sous une autre fortune : </l>
             <l n="1578" xml:id="l1578">Mais un si long discours déjà nous importune </l>
@@ -2250,7 +2291,7 @@
             <l n="1581" xml:id="l1581">En cet affaire-ici mon esprit s'embarrasse, </l>
             <l n="1582" xml:id="l1582">Enfin conseille-moi que faut-il que je fasse ? </l>
           </sp>
-          <sp xml:id="IV02-41" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="IV02-41">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1583" xml:id="l1583">Les Dieux assurément m'ont coulé dans le sein </l>
             <l n="1584" xml:id="l1584">Pour le bien de cette Île un étrange dessein, </l>
@@ -2262,14 +2303,14 @@
             <l n="1590" xml:id="l1590">Troublent insolemment nos coutumes sacrées </l>
             <l n="1591" xml:id="l1591">Doit avoir le loyer de sa témérité, </l>
             <l n="1592" xml:id="l1592">Sire, c'est le vouloir de la divinité, </l>
-            <l n="1593" xml:id="l1593" part="I">Et la loi la condamne. </l>
+            <l n="1593" part="I" xml:id="l1593">Et la loi la condamne. </l>
           </sp>
-          <sp xml:id="IV02-42" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-42">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Ô ministre infidèle. </l>
-            <l n="1594" xml:id="l1594" part="I">Interprète inhumain. </l>
+            <l n="1594" part="I" xml:id="l1594">Interprète inhumain. </l>
           </sp>
-          <sp xml:id="IV02-43" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-43">
             <speaker>LE ROI.</speaker>
             <l part="F">J'approuve votre zèle </l>
             <l n="1595" xml:id="l1595">Quoique je les jugeais dignes d'un autre sort, </l>
@@ -2277,31 +2318,31 @@
             <l n="1597" xml:id="l1597">Rien ne séparera le noeud qui les assemble </l>
             <l n="1598" xml:id="l1598">Que l'on s'apprête donc et qu'ils meurent ensemble. </l>
           </sp>
-          <sp xml:id="IV02-44" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="IV02-44">
             <speaker>LE SACRIFICATEUR.</speaker>
-            <l n="1599" xml:id="l1599" part="I">Puisqu'il faut obéir. </l>
+            <l n="1599" part="I" xml:id="l1599">Puisqu'il faut obéir. </l>
           </sp>
-          <sp xml:id="IV02-45" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-45">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Oui je vous tends les bras. </l>
             <l n="1600" xml:id="l1600">Mais soyez satisfaits par un simple trépas </l>
-            <l n="1601" xml:id="l1601" part="I">Seule je dois mourir. </l>
+            <l n="1601" part="I" xml:id="l1601">Seule je dois mourir. </l>
           </sp>
-          <sp xml:id="IV02-46" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-46">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Tu l'oses entreprendre. </l>
             <l n="1602" xml:id="l1602">Ah ! Barbare il n'est rien qui te puisse défendre, </l>
             <l n="1603" xml:id="l1603">Ma main vous punira ministres inhumains, </l>
             <l n="1604" xml:id="l1604">Présenter des liens à de si belles mains. </l>
-            <l n="1605" xml:id="l1605" part="I">Ah ! Ciel tu le permets. </l>
+            <l n="1605" part="I" xml:id="l1605">Ah ! Ciel tu le permets. </l>
           </sp>
-          <sp xml:id="IV02-47" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-47">
             <speaker>LE ROI.</speaker>
             <l part="F">Craignez-vous sa folie, </l>
             <l n="1606" xml:id="l1606">Pour s'en assurer mieux il faudra qu'on le lie. </l>
             <l n="1607" xml:id="l1607">Tant d'hommes contre un seul vous en viendrez à bout. </l>
           </sp>
-          <sp xml:id="IV02-48" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-48">
             <speaker>CLARIONTE.</speaker>
             <l n="1608" xml:id="l1608">Ce généreux courage à la fin se résout, </l>
             <l n="1609" xml:id="l1609">Oui valeureux guerriers, votre rare vaillance </l>
@@ -2323,7 +2364,7 @@
             <l n="1625" xml:id="l1625">Et s'il te reste encor des sentiments de gloire, </l>
             <l n="1626" xml:id="l1626">Éloigne de tes jours une tache si noire. </l>
           </sp>
-          <sp xml:id="IV02-49" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-49">
             <speaker>LE ROI.</speaker>
             <l n="1627" xml:id="l1627">Enfin tous ces discours ne me toucheront pas, </l>
             <l n="1628" xml:id="l1628">Le Ciel pour s'apaiser veut un double trépas, </l>
@@ -2336,7 +2377,7 @@
             <l n="1635" xml:id="l1635">Ne me condamnez point de cette cruauté, </l>
             <l n="1636" xml:id="l1636">Puisque je la commets contre ma volonté. </l>
           </sp>
-          <sp xml:id="IV02-50" who="MELIE">
+          <sp who="MELIE" xml:id="IV02-50">
             <speaker>MÉLIE.</speaker>
             <l n="1637" xml:id="l1637">Votre sévérité se verra sans excuse, </l>
             <l n="1638" xml:id="l1638">Ne pouvant plus trouver de loi qui me refuse </l>
@@ -2350,19 +2391,19 @@
             <l n="1646" xml:id="l1646">J'ai péché la première, et je suis plus coupable, </l>
             <l n="1647" xml:id="l1647">Puisqu'elle doit mourir je dois mourir aussi. </l>
           </sp>
-          <sp xml:id="IV02-51" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-51">
             <speaker>LE ROI.</speaker>
             <l n="1648" xml:id="l1648">Suffit que je le veux, et que je règne ici, </l>
-            <l n="1649" xml:id="l1649" part="I">Ne m'importunez plus autrement. </l>
+            <l n="1649" part="I" xml:id="l1649">Ne m'importunez plus autrement. </l>
           </sp>
-          <sp xml:id="IV02-52" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-52">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Hé ! (Madame) </l>
             <l n="1650" xml:id="l1650">De grâce prolongez une si belle trame, </l>
             <l n="1651" xml:id="l1651">Songez qu'en ce dessein vous offensez les Dieux, </l>
             <l n="1652" xml:id="l1652">Et que votre amitié ne paraîtra pas mieux. </l>
           </sp>
-          <sp xml:id="IV02-53" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-53">
             <speaker>CLARIONTE.</speaker>
             <l n="1653" xml:id="l1653">Puisque pour son salut il n'est rien qui vous touche </l>
             <l n="1654" xml:id="l1654">Dans cette extrémité je veux ouvrir la bouche, </l>
@@ -2380,19 +2421,19 @@
             <l n="1666" xml:id="l1666">Le roi de la Sardaigne est père de ma Reine, </l>
             <l n="1667" xml:id="l1667">La Corse est mon pays, et mon père en est Roi. </l>
           </sp>
-          <sp xml:id="IV02-54" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-54">
             <speaker>LE ROI.</speaker>
             <note>Piper : signifie au propre, Attraper des oiseaux à la pipée, quand on les attire en contrefaisant leur cri, ou par celui du hibou ; auquel sens il est peu en usage : mais au figuré il s'employe communément pour dire, Tromper, et particulierement au jeu. [F]</note>
             <l n="1668" xml:id="l1668">Ce discours piperait de plus simples que moi, </l>
             <l n="1669" xml:id="l1669">Et ta ruse en ceci n'a rien qui l'autorise : </l>
             <l n="1670" xml:id="l1670">Mais dans l'extrémité cette feinte est permise. </l>
           </sp>
-          <sp xml:id="IV02-55" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-55">
             <speaker>CLARIONTE.</speaker>
             <l n="1671" xml:id="l1671">Sache que notre coeur n'est pas lâche à ce point, </l>
             <l n="1672" xml:id="l1672">Et que pour nous sauver je ne mentirais point </l>
           </sp>
-          <sp xml:id="IV02-56" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-56">
             <speaker>LE ROI.</speaker>
             <l n="1673" xml:id="l1673">Enfin que ce discours soit feint ou véritable, </l>
             <l n="1674" xml:id="l1674">La volonté des Dieux est plus considérable, </l>
@@ -2408,7 +2449,7 @@
             <l n="1684" xml:id="l1684">Et peut-être le sort pourra tomber sur eux : </l>
             <l n="1685" xml:id="l1685">Mais où court ce Soldat si pâle et hors d'haleine. </l>
           </sp>
-          <sp xml:id="IV02-57" who="UNSOLDAT">
+          <sp who="SOLDAT" xml:id="IV02-57">
             <speaker>SOLDAT.</speaker>
             <l n="1686" xml:id="l1686">Si le Ciel n'y pourvoit notre perte est prochaine, </l>
             <l n="1687" xml:id="l1687">Seigneur à la faveur d'une si sombre nuit, </l>
@@ -2426,7 +2467,7 @@
             <l n="1699" xml:id="l1699">Et si l'on n'y pourvoit leur courage est si haut </l>
             <l n="1700" xml:id="l1700">Qu'ils pourront l'emporter de surprise ou d'assaut. </l>
           </sp>
-          <sp xml:id="IV02-58" who="LEROI">
+          <sp who="LEROI" xml:id="IV02-58">
             <speaker>LE ROI.</speaker>
             <l n="1701" xml:id="l1701">Ô Dieux vous connaissez un véritable zèle, </l>
             <l n="1702" xml:id="l1702">Et vous n'embrassez pas une juste querelle, </l>
@@ -2439,22 +2480,24 @@
             <l n="1709" xml:id="l1709">Je mets en votre garde et l'une et l'autre hostie, </l>
             <l n="1710" xml:id="l1710">Vous me répondez d'eux sur peine de la vie. </l>
           </sp>
-          <sp xml:id="IV02-59" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="IV02-59">
             <speaker>CLARIONTE.</speaker>
             <l n="1711" xml:id="l1711">Ô Ciel si ta bonté nous laisse encor un jour </l>
-            <l n="1712" xml:id="l1712" part="I">Qu'il soit à Rosimène. </l>
+            <l n="1712" part="I" xml:id="l1712">Qu'il soit à Rosimène. </l>
           </sp>
-          <sp xml:id="IV02-60" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="IV02-60">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Elle mourrait d'amour. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE I. Le Roi, Fidamant.<listPerson type="configuration" xml:id="conf19"><person corresp="#LEROI"/><person corresp="#FIDAMANT"/></listPerson></head>
-          <sp xml:id="V01-1" who="LEROI">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE I. Le Roi, Fidamant.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#LEROI"/>
+            <person corresp="#FIDAMANT"/></listPerson></head>
+          <sp who="LEROI" xml:id="V01-1">
             <speaker>LE ROI.</speaker>
             <l n="1713" xml:id="l1713">Dans cette déplorable et sanglante sortie, </l>
             <l n="1714" xml:id="l1714">Perdre de mes soldats la plus grande partie, </l>
@@ -2496,25 +2539,28 @@
             <l n="1750" xml:id="l1750">Vous avez maintenant un sujet assez ample </l>
             <l n="1751" xml:id="l1751">Pour signaler ici cette rare valeur. </l>
           </sp>
-          <sp xml:id="V01-2" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="V01-2">
             <speaker>FIDAMANT.</speaker>
             <l n="1752" xml:id="l1752">Ah ! Seigneur vous voyez quel étrange malheur. </l>
           </sp>
-          <sp xml:id="V01-3" who="LEROI">
+          <sp who="LEROI" xml:id="V01-3">
             <speaker>LE ROI.</speaker>
             <l n="1753" xml:id="l1753">Ne recommencez point un discours qui m'outrage : </l>
             <l n="1754" xml:id="l1754">Mais obéissez-moi sans tarder davantage. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Mélie, Le Geôlier.<listPerson type="configuration" xml:id="conf20"><person corresp="#MELIE"/><person corresp="#LEGEOLIER"/><person corresp="#UNPAGE"/></listPerson></head>
-          <sp xml:id="V02-1" who="MELIE">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Mélie, Le Geôlier.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#MELIE"/>
+            <person corresp="#GEOLIER"/>
+            <person corresp="#UNPAGE"/></listPerson></head>
+          <sp who="MELIE" xml:id="V02-1">
             <speaker>MÉLIE.</speaker>
             <l n="1755" xml:id="l1755">Donc je ne puis fléchir cette âme de rocher </l>
             <l n="1756" xml:id="l1756">Et ma condition ne le peut pas toucher. </l>
-            <l n="1757" xml:id="l1757" part="I">Ah ! Barbare. </l>
+            <l n="1757" part="I" xml:id="l1757">Ah ! Barbare. </l>
           </sp>
-          <sp xml:id="V02-2" who="LEGEOLIER">
+          <sp who="GEOLIER" xml:id="V02-2">
             <speaker>LE GEÔLIER.</speaker>
             <l part="F">Madame il y va de ma vie, </l>
             <l n="1758" xml:id="l1758">Voudriez-vous à ce prix contenter votre envie, </l>
@@ -2525,7 +2571,7 @@
             <l n="1763" xml:id="l1763">Ne me contraignez pas de vous désobéir, </l>
             <l n="1764" xml:id="l1764">Puisque c'est en un mot me perdre et le trahir. </l>
           </sp>
-          <sp xml:id="V02-3" who="MELIE">
+          <sp who="MELIE" xml:id="V02-3">
             <speaker>MÉLIE.</speaker>
             <l n="1765" xml:id="l1765">Étrange cruauté jusqu'à nous inconnue </l>
             <l n="1766" xml:id="l1766">Au dernier de ses jours me défendre sa vue, </l>
@@ -2535,7 +2581,7 @@
             <l n="1770" xml:id="l1770">Que tu dois à celui dont je tiens la naissance, </l>
             <l n="1771" xml:id="l1771">Dites-moi pour le moins en quel état ils sont. </l>
           </sp>
-          <sp xml:id="V02-4" who="LEGEOLIER">
+          <sp who="GEOLIER" xml:id="V02-4">
             <speaker>LE GEÔLIER.</speaker>
             <l n="1772" xml:id="l1772">Je ne vous dirai point tous les regrets qu'ils font </l>
             <l n="1773" xml:id="l1773">Outre que mon esprit n'en fut jamais capable, </l>
@@ -2557,22 +2603,23 @@
             <l n="1789" xml:id="l1789">Paraît plus résolue et vainement essaie </l>
             <l n="1790" xml:id="l1790">D'apaiser la douleur d'une mortelle plaie, </l>
             <l n="1791" xml:id="l1791">Si vous les aviez vus, mais qui me vient troubler, </l>
-            <l n="1792" xml:id="l1792" part="I">Que veut-on. </l>
+            <l n="1792" part="I" xml:id="l1792">Que veut-on. </l>
           </sp>
-          <sp xml:id="V02-5" who="UNPAGE">
+          <sp who="UNPAGE" xml:id="V02-5">
             <speaker>UN PAGE.</speaker>
             <l part="F">C'est le Roi qui vous fait appeler, </l>
             <l n="1793" xml:id="l1793">On va tout de ce pas faire le sacrifice, </l>
-            <l n="1794" xml:id="l1794" part="I">Menez les prisonniers. </l>
+            <l n="1794" part="I" xml:id="l1794">Menez les prisonniers. </l>
           </sp>
-          <sp xml:id="V02-6" who="LEGEOLIER">
+          <sp who="GEOLIER" xml:id="V02-6">
             <speaker>LE GEÔLIER.</speaker>
             <l part="F">Il faut que j'obéisse. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf21"><person corresp="#MELIE"/></listPerson></head>
-          <sp xml:id="V03-1" who="MELIE">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#MELIE"/></listPerson></head>
+          <sp who="MELIE" xml:id="V03-1">
             <speaker>MÉLIE, seule.</speaker>
             <l n="1795" xml:id="l1795">Puisque les Dieux jaloux ne me permettent pas, </l>
             <l n="1796" xml:id="l1796">En me perdant pour toi d'empêcher ion trépas, </l>
@@ -2593,31 +2640,38 @@
             <l n="1811" xml:id="l1811">Mais mon page à propos revenu promptement. </l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Un Page, Mélie.<listPerson type="configuration" xml:id="conf22"><person corresp="#UNPAGE"/><person corresp="#MELIE"/></listPerson></head>
-          <sp xml:id="V04-1" who="UNPAGE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Un Page, Mélie.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#UNPAGE"/>
+            <person corresp="#MELIE"/></listPerson></head>
+          <sp who="UNPAGE" xml:id="V04-1">
             <speaker>UN PAGE.</speaker>
             <l n="1812" xml:id="l1812">Je viens d'exécuter votre commandement, </l>
             <l n="1813" xml:id="l1813">La garde en est fort belle et la lame en est bonne, </l>
             <l n="1814" xml:id="l1814">C'est un digne présent de celle qui le donne. </l>
           </sp>
-          <sp xml:id="V04-2" who="MELIE">
+          <sp who="MELIE" xml:id="V04-2">
             <speaker>MÉLIE.</speaker>
             <l n="1815" xml:id="l1815">Mais en me l'apportant t'es-tu caché de tous. </l>
           </sp>
-          <sp xml:id="V04-3" who="UNPAGE">
+          <sp who="UNPAGE" xml:id="V04-3">
             <speaker>UN PAGE.</speaker>
             <l n="1816" xml:id="l1816">(Madame) ce secret n'est connu que de vous. </l>
           </sp>
-          <sp xml:id="V04-4" who="MELIE">
+          <sp who="MELIE" xml:id="V04-4">
             <speaker>MÉLIE.</speaker>
             <l n="1817" xml:id="l1817">J'en suis fort satisfaite et ton obéissance </l>
             <l n="1818" xml:id="l1818">Par un présent semblable aura sa récompense. </l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Clarionte, Rosimène, Mélie, Le Roi, Le Sacrificateur.<listPerson type="configuration" xml:id="conf23"><person corresp="#CLARIONTE"/><person corresp="#ROSIMENE"/><person corresp="#LEROI"/><person corresp="#MELIE"/><person corresp="#LESACRIFICATEUR"/></listPerson></head>
-          <sp xml:id="V05-1" who="CLARIONTE">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Clarionte, Rosimène, Mélie, Le Roi, Le Sacrificateur.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#CLARIONTE"/>
+            <person corresp="#ROSIMENE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#MELIE"/>
+            <person corresp="#LESACRIFICATEUR"/></listPerson></head>
+          <sp who="CLARIONTE" xml:id="V05-1">
             <speaker>CLARIONTE.</speaker>
             <l n="1819" xml:id="l1819">Quoique je fasse tort à ma condition </l>
             <l n="1820" xml:id="l1820">D'émouvoir votre esprit à la compassion, </l>
@@ -2664,7 +2718,7 @@
             <l n="1861" xml:id="l1861">Bref à tant de mérite, à des vertus si rares </l>
             <l n="1862" xml:id="l1862">Qu'elles amolliraient les coeurs les plus barbares. </l>
           </sp>
-          <sp xml:id="V05-2" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V05-2">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1863" xml:id="l1863">Seigneur, considérez cette rare amitié, </l>
             <l n="1864" xml:id="l1864">Et si dans un climat dépourvu de pitié, </l>
@@ -2687,11 +2741,11 @@
             <l n="1881" xml:id="l1881">Et le plus grand appui que vous puissiez prétendre </l>
             <l n="1882" xml:id="l1882">C'est de le conserver et de l'avoir pour gendre. </l>
           </sp>
-          <sp xml:id="V05-3" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V05-3">
             <speaker>CLARIONTE.</speaker>
-            <l n="1883" xml:id="l1883" part="I">Hé ! Sauvez Rosimène. </l>
+            <l n="1883" part="I" xml:id="l1883">Hé ! Sauvez Rosimène. </l>
           </sp>
-          <sp xml:id="V05-4" who="LEROI">
+          <sp who="LEROI" xml:id="V05-4">
             <speaker>LE ROI.</speaker>
             <l part="F">Après tous ces discours : </l>
             <l n="1884" xml:id="l1884">Dont la nécessité me fait rompre le cours, </l>
@@ -2709,7 +2763,7 @@
             <l n="1896" xml:id="l1896">Il faudrait obéir à la rigueur du sort. </l>
             <l n="1897" xml:id="l1897">Pour les miens et pour moi je me rendrais barbare. </l>
           </sp>
-          <sp xml:id="V05-5" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V05-5">
             <speaker>CLARIONTE.</speaker>
             <l n="1898" xml:id="l1898">Si pour les Immortels votre zèle est si rare, </l>
             <l n="1899" xml:id="l1899">Que vous formez pour eux ces généreux projets </l>
@@ -2717,12 +2771,12 @@
             <l n="1901" xml:id="l1901">La Province a failli punissez la Province : </l>
             <l n="1902" xml:id="l1902">Mais qui vous a donné ce pouvoir sur un Prince. </l>
           </sp>
-          <sp xml:id="V05-6" who="LEROI">
+          <sp who="LEROI" xml:id="V05-6">
             <speaker>LE ROI.</speaker>
             <l n="1903" xml:id="l1903">C'est d'eux que je le tiens et sans plus discourir, </l>
             <l n="1904" xml:id="l1904">Vous devez malgré moi vous résoudre à mourir. </l>
           </sp>
-          <sp xml:id="V05-7" who="MELIE">
+          <sp who="MELIE" xml:id="V05-7">
             <speaker>MÉLIE.</speaker>
             <l n="1905" xml:id="l1905">J'appelle devant eux d'une telle injustice </l>
             <l n="1906" xml:id="l1906">Que vous les servez mal dans votre sacrifice </l>
@@ -2730,50 +2784,50 @@
             <l n="1908" xml:id="l1908">Et vous fait lâchement épargner votre sang. </l>
             <l n="1909" xml:id="l1909">Deux ont commis la faute et l'on n'en punit qu'une. </l>
           </sp>
-          <sp xml:id="V05-8" who="LEROI">
+          <sp who="LEROI" xml:id="V05-8">
             <speaker>LE ROI.</speaker>
             <l n="1910" xml:id="l1910">Dieux ! Qui m'éloignera cette fille importune : </l>
             <l n="1911" xml:id="l1911">Enfin déportez-vous de tous ces vains efforts, </l>
             <l n="1912" xml:id="l1912">Ou je commanderai qu'on vous mette dehors. </l>
           </sp>
-          <sp xml:id="V05-9" who="MELIE">
+          <sp who="MELIE" xml:id="V05-9">
             <speaker>MÉLIE.</speaker>
             <l n="1913" xml:id="l1913">J'obéirai Seigneur, mais d'une telle sorte </l>
             <l n="1914" xml:id="l1914">Que vous perdrez ce droit quand vous me verrez morte. </l>
           </sp>
-          <sp xml:id="V05-10" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="V05-10">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1915" xml:id="l1915">Si l'on vous voit tous deux prendre la mort en gré </l>
             <l n="1916" xml:id="l1916">Votre vertu se montre en un très haut degré, </l>
             <l n="1917" xml:id="l1917">Et vous ne le sauriez témoignez davantage </l>
             <l n="1918" xml:id="l1918">Que vous offrant aux Dieux sans perdre le courage. </l>
           </sp>
-          <sp xml:id="V05-11" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V05-11">
             <speaker>CLARIONTE.</speaker>
             <l n="1919" xml:id="l1919">Combien que mon trépas n'en soit pas différé, </l>
             <l n="1920" xml:id="l1920">Si Rosimène meurt, je meurs désespéré : </l>
             <l n="1921" xml:id="l1921">À ce nom seulement la rage me surmonte, </l>
           </sp>
-          <sp xml:id="V05-12" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V05-12">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1922" xml:id="l1922">Je mourrai sans regret et sauvez Clarionte. </l>
           </sp>
-          <sp xml:id="V05-13" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V05-13">
             <speaker>CLARIONTE.</speaker>
             <l n="1923" xml:id="l1923">Mais puisque par mes cris je ne profite rien, </l>
             <l n="1924" xml:id="l1924">Je ne me plaindrai plus si l'on m'accorde un bien, </l>
             <l n="1925" xml:id="l1925">Souffrez que le premier je perde la lumière. </l>
           </sp>
-          <sp xml:id="V05-14" who="LEROI">
+          <sp who="LEROI" xml:id="V05-14">
             <speaker>LE ROI.</speaker>
             <l n="1926" xml:id="l1926">Oui, je veux t'accorder cette grâce dernière. </l>
           </sp>
-          <sp xml:id="V05-15" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V05-15">
             <speaker>ROSIMÈNE.</speaker>
             <l n="1927" xml:id="l1927">Ah ! Juge trop cruel, cet arrêt me fait tort ; </l>
             <l n="1928" xml:id="l1928">Puisqu'il me fait mourir par une double mort. </l>
           </sp>
-          <sp xml:id="V05-16" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="V05-16">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1929" xml:id="l1929">Flambeau de l'Univers, et vous chaste Diane, </l>
             <l n="1930" xml:id="l1930">Permettez qu'un peuple profane </l>
@@ -2807,7 +2861,7 @@
             <l n="1958" xml:id="l1958">Vous renouvellera ses dévotes offrandes </l>
             <l n="1959" xml:id="l1959">Pour vous mettre en état recevez ces Couronnes. </l>
           </sp>
-          <sp xml:id="V05-17" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V05-17">
             <speaker>CLARIONTE.</speaker>
             <l n="1960" xml:id="l1960">J'attends sans m'effrayer la mort que tu me donnes : </l>
             <l n="1961" xml:id="l1961">Mais avant le moment qui nous ferme les yeux </l>
@@ -2820,61 +2874,63 @@
             <l n="1968" xml:id="l1968">Ô Dieux ! Entre mes bras elle est évanouie </l>
             <l n="1969" xml:id="l1969">Elle a perdu le jour ministres inhumains </l>
             <l n="1970" xml:id="l1970">Voyez que son amour a prévenu vos mains </l>
-            <l n="1971" xml:id="l1971" part="I">Rosimène n'est plus. </l>
+            <l n="1971" part="I" xml:id="l1971">Rosimène n'est plus. </l>
           </sp>
-          <sp xml:id="V05-18" who="MELIE">
+          <sp who="MELIE" xml:id="V05-18">
             <speaker>MÉLIE.</speaker>
             <l part="F">La pitié me surmonte. </l>
           </sp>
-          <sp xml:id="V05-19" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V05-19">
             <speaker>CLARIONTE.</speaker>
-            <l n="1972" xml:id="l1972" part="I">Mais elle ouvre les yeux. </l>
+            <l n="1972" part="I" xml:id="l1972">Mais elle ouvre les yeux. </l>
           </sp>
-          <sp xml:id="V05-20" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V05-20">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Adieu cher Clarionte.</l>
             <l n="1973" xml:id="l1973">Je vis pour t'assurer encore de ma foi, </l>
             <l n="1974" xml:id="l1974">Et que même aux enfers mon coeur doit être à toi, </l>
             <l n="1975" xml:id="l1975">Donc puisqu'il faut mourir, chasse cette tristesse. </l>
-            <l n="1976" xml:id="l1976" part="I">Adieu. </l>
+            <l n="1976" part="I" xml:id="l1976">Adieu. </l>
           </sp>
-          <sp xml:id="V05-21" who="LEROI">
+          <sp who="LEROI" xml:id="V05-21">
             <speaker>LE ROI.</speaker>
             <l part="F">C'est trop tarder, puisque le temps nous presse, </l>
-            <l n="1977" xml:id="l1977" part="I">Grand Prêtre dépêchez.</l>
+            <l n="1977" part="I" xml:id="l1977">Grand Prêtre dépêchez.</l>
           </sp>
-          <sp xml:id="V05-22" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V05-22">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Il ne tient plus à nous. </l>
           </sp>
-          <sp xml:id="V05-23" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="V05-23">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="1978" xml:id="l1978">Tournez-vous vers l'Autel et ployez les genoux. </l>
           </sp>
-          <sp xml:id="V05-24" who="MELIE">
+          <sp who="MELIE" xml:id="V05-24">
             <speaker>MÉLIE.</speaker>
             <l n="1979" xml:id="l1979">Ah ! Mélie à ce coup songe à ton entreprise. </l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE VI. Un Soldat, Le Roi.<listPerson type="configuration" xml:id="conf24"><person corresp="#LESOLDAT"/><person corresp="#LEROI"/><person corresp="#UNSOLDAT"/></listPerson></head>
-          <sp xml:id="V06-1" who="LESOLDAT">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE VI. Un Soldat, Le Roi.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#SOLDAT"/>
+            <person corresp="#LEROI"/></listPerson></head>
+          <sp who="SOLDAT" xml:id="V06-1">
             <speaker>LE SOLDAT.</speaker>
-            <l n="1980" xml:id="l1980" part="I">Ah ! Seigneur sauvez-vous. </l>
+            <l n="1980" part="I" xml:id="l1980">Ah ! Seigneur sauvez-vous. </l>
           </sp>
-          <sp xml:id="V06-2" who="LEROI">
+          <sp who="LEROI" xml:id="V06-2">
             <speaker>LE ROI.</speaker>
             <l part="M">À Dieux. </l>
           </sp>
-          <sp xml:id="V06-3" who="LESOLDAT">
+          <sp who="SOLDAT" xml:id="V06-3">
             <speaker>LE SOLDAT.</speaker>
             <l part="F">La ville est prise. </l>
           </sp>
-          <sp xml:id="V06-4" who="LEROI">
+          <sp who="LEROI" xml:id="V06-4">
             <speaker>LE ROI.</speaker>
-            <l n="1981" xml:id="l1981" part="I">La ville. </l>
+            <l n="1981" part="I" xml:id="l1981">La ville. </l>
           </sp>
-          <sp xml:id="V06-5" who="LESOLDAT">
+          <sp who="SOLDAT" xml:id="V06-5">
             <speaker>LE SOLDAT.</speaker>
             <l part="F">L'ennemi la tient en son pouvoir. </l>
             <l n="1982" xml:id="l1982">Et la prise d'assaut malgré notre devoir, </l>
@@ -2890,7 +2946,7 @@
             <l n="1992" xml:id="l1992">Au pied de ces Autels attend qu'on lui pardonne </l>
             <l n="1993" xml:id="l1993">Elle l'espère en vain de leur brutalité. </l>
           </sp>
-          <sp xml:id="V06-6" who="LEROI">
+          <sp who="LEROI" xml:id="V06-6">
             <speaker>LE ROI.</speaker>
             <l n="1994" xml:id="l1994">Que dois-je faire ô Dieux ! En cette extrémité, </l>
             <l n="1995" xml:id="l1995">Je me jette à vos pieds, j'implore votre grâce. </l>
@@ -2902,9 +2958,17 @@
             <l n="2001" xml:id="l2001">Où sera mon asile ; ô Dieux ! Je suis perdu.</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
-          <head>SCÈNE VII. Flamidore, Clarionte, Mélie, Rosimène.<listPerson type="configuration" xml:id="conf25"><person corresp="#FLAMIDORE"/><person corresp="#CLARIONTE"/><person corresp="#MELIE"/><person corresp="#ROSIMENE"/><person corresp="#GERONTE"/><person corresp="#LEROI"/><person corresp="#LESACRIFICATEUR"/><person corresp="#ORACLE"/></listPerson></head>
-          <sp xml:id="V07-1" who="FLAMIDORE">
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE VII. Flamidore, Clarionte, Mélie, Rosimène.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#FLAMIDORE"/>
+            <person corresp="#CLARIONTE"/>
+            <person corresp="#MELIE"/>
+            <person corresp="#ROSIMENE"/>
+            <person corresp="#GERONTE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#LESACRIFICATEUR"/>
+            <person corresp="#ORACLE"/></listPerson></head>
+          <sp who="FLAMIDORE" xml:id="V07-1">
             <speaker>FLAMIDORE.</speaker>
             <l n="2002" xml:id="l2002">Vois que ce peuple vil ne s'est pas défendu, </l>
             <l n="2003" xml:id="l2003">Ses crimes font horreur, il faut que tout périsse, </l>
@@ -2915,32 +2979,32 @@
             <l n="2008" xml:id="l2008">Doncques la vérité ne m'est que trop connue, </l>
             <l n="2009" xml:id="l2009">Et ce que mon esprit ne pouvait concevoir </l>
             <l n="2010" xml:id="l2010">Le Ciel juste vengeur me permet de le voir. </l>
-            <l n="2011" xml:id="l2011" part="I">Ah ! Mon frère c'est vous. </l>
+            <l n="2011" part="I" xml:id="l2011">Ah ! Mon frère c'est vous. </l>
           </sp>
-          <sp xml:id="V07-2" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-2">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Mon frère Flamidore. </l>
             <l n="2012" xml:id="l2012">Donc le Ciel nous permet de nous revoir encore ! </l>
           </sp>
-          <sp xml:id="V07-3" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-3">
             <speaker>FLAMIDORE.</speaker>
             <l n="2013" xml:id="l2013">Ah ! Laisse cet office il n'appartient qu'à moi, </l>
             <l n="2014" xml:id="l2014">Cependant prends le soin de retenir le Roi. </l>
           </sp>
-          <sp xml:id="V07-4" who="MELIE">
+          <sp who="MELIE" xml:id="V07-4">
             <speaker>MÉLIE.</speaker>
             <l n="2015" xml:id="l2015">La frayeur et l'espoir me tiennent en balance. </l>
           </sp>
-          <sp xml:id="V07-5" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V07-5">
             <speaker>ROSIMÈNE.</speaker>
             <l n="2016" xml:id="l2016">Cet étrange succès remet mon espérance. </l>
           </sp>
-          <sp xml:id="V07-6" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-6">
             <speaker>FLAMIDORE.</speaker>
             <l n="2017" xml:id="l2017">Puisque vous le pouvez libre de ces liens </l>
             <l n="2018" xml:id="l2018">Par vos embrassements récompensez les miens. </l>
           </sp>
-          <sp xml:id="V07-7" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-7">
             <speaker>CLARIONTE.</speaker>
             <l n="2019" xml:id="l2019">Dites que par ma mort il faut que je m'acquitte : </l>
             <l n="2020" xml:id="l2020">Mais mon frère à ce coup souffrez que je vous quitte </l>
@@ -2949,69 +3013,69 @@
             <l n="2023" xml:id="l2023">Ne vous découvrent point que vous voyez ma Reine, </l>
             <l n="2024" xml:id="l2024">Oui mon frère en un mot voilà ma Rosimène. </l>
           </sp>
-          <sp xml:id="V07-8" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-8">
             <speaker>FLAMIDORE.</speaker>
             <l n="2025" xml:id="l2025">Celui de qui j'appris votre captivité </l>
-            <l n="2026" xml:id="l2026" part="I">Nous assura sa mort. </l>
+            <l n="2026" part="I" xml:id="l2026">Nous assura sa mort. </l>
           </sp>
-          <sp xml:id="V07-9" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-9">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Il en avait douté : </l>
             <l n="2027" xml:id="l2027">Mais enfin vous voyez sa véritable image. </l>
           </sp>
-          <sp xml:id="V07-10" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-10">
             <speaker>FLAMIDORE.</speaker>
             <l n="2028" xml:id="l2028">Ah ! (Madame) à genoux je vous dois rendre hommage. </l>
           </sp>
-          <sp xml:id="V07-11" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V07-11">
             <speaker>ROSIMÈNE.</speaker>
             <l n="2029" xml:id="l2029">Et je dois beaucoup plus à mon libérateur, </l>
             <l n="2030" xml:id="l2030">Je vous dois un salut dont vous êtes l'auteur, </l>
             <l n="2031" xml:id="l2031">Vous nous rendez le jour par un si bon office. </l>
           </sp>
-          <sp xml:id="V07-12" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-12">
             <speaker>FLAMIDORE.</speaker>
             <l n="2032" xml:id="l2032">Ne faites point de cas de si peu de service. </l>
           </sp>
-          <sp xml:id="V07-13" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-13">
             <speaker>CLARIONTE.</speaker>
             <l n="2033" xml:id="l2033">Enfin le Ciel plus doux accorde à mon amour, </l>
             <l n="2034" xml:id="l2034">Que pour moi seulement tu conserves le jour. </l>
           </sp>
-          <sp xml:id="V07-14" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V07-14">
             <speaker>ROSIMÈNE.</speaker>
             <l n="2035" xml:id="l2035">C'est de notre amitié la juste récompense, </l>
             <note>Il semble manquer un pied au vers suivant, car une syllabe muette ne peut se trouver à la césure à moins d'être élidée, on pourrait mettre un ô et avoir ainsi : Et je t'embrasse encore ô mon contre espérance. D'autre part Rosimène traiterait Clarionte de contre espérance, de quelqu'un qui est opposé à son espérance, car il s'est toujours opposé à son espérance de mourir. C'est un peu difficile.</note>
             <l n="2036" xml:id="l2036">Et je t'embrasse encore mon contre espérance. </l>
           </sp>
-          <sp xml:id="V07-15" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-15">
             <speaker>CLARIONTE.</speaker>
             <l n="2037" xml:id="l2037">Mais mon frère quel heur vous a conduit ici, </l>
             <l n="2038" xml:id="l2038">Éclaircissez ce doute, il me tient en souci. </l>
           </sp>
-          <sp xml:id="V07-16" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-16">
             <speaker>FLAMIDORE.</speaker>
             <l n="2039" xml:id="l2039">Votre bon Écuyer présent à votre prise </l>
             <l n="2040" xml:id="l2040">A conduit à bon port toute cette entreprise, </l>
             <note>Inutil : Quelques Auteurs, et le P. Sicard entre autres, ont écrit inutil au masc. "Ces moyens ont tous été inutils". C'est contre l'usage, au moins actuel. [FC] </note>
             <l n="2041" xml:id="l2041">Ayant été six mois inutil avec vous, </l>
             <l n="2042" xml:id="l2042">Il rompit ses prisons, il se rendit à nous </l>
-            <l n="2043" xml:id="l2043" part="I">Nous sûmes tout de lui. </l>
+            <l n="2043" part="I" xml:id="l2043">Nous sûmes tout de lui. </l>
           </sp>
-          <sp xml:id="V07-17" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-17">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Dieux ! Je le vois paraître. </l>
           </sp>
-          <sp xml:id="V07-18" who="GERONTE">
+          <sp who="GERONTE" xml:id="V07-18">
             <speaker>GÉRONTE.</speaker>
             <l n="2044" xml:id="l2044">Mon Prince et mon Seigneur me peut-il méconnaître, </l>
             <l n="2045" xml:id="l2045">Ou s'il s'est dépouillé de sa rare bonté. </l>
           </sp>
-          <sp xml:id="V07-19" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-19">
             <speaker>CLARIONTE.</speaker>
             <l n="2046" xml:id="l2046">Non je me souviens trop de ta fidélité. </l>
           </sp>
-          <sp xml:id="V07-20" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-20">
             <speaker>FLAMIDORE.</speaker>
             <l n="2047" xml:id="l2047">Maintenant que le Ciel d'une main favorable </l>
             <l n="2048" xml:id="l2048">A mené nos vaisseaux dans cette Île exécrable, </l>
@@ -3032,40 +3096,40 @@
             <l n="2063" xml:id="l2063">Aussi n'attends de moi de plus digne salaire, </l>
             <l n="2064" xml:id="l2064">Que celui que ta rage apprêtait à mon frère ? </l>
           </sp>
-          <sp xml:id="V07-21" who="LEROI">
+          <sp who="LEROI" xml:id="V07-21">
             <speaker>LE ROI.</speaker>
             <l n="2065" xml:id="l2065">Quoique votre pouvoir soit absolu sur moi, </l>
             <l n="2066" xml:id="l2066">Parmi tous ses malheurs considérez un Roi. </l>
           </sp>
-          <sp xml:id="V07-22" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-22">
             <speaker>FLAMIDORE.</speaker>
             <l n="2067" xml:id="l2067">Cet égard eut sur vous une extrême puissance, </l>
             <l n="2068" xml:id="l2068">Et mon frère éprouva cette rare clémence : </l>
             <l n="2069" xml:id="l2069">Mais ne vous plaignez point quand vous serez traité </l>
             <l n="2070" xml:id="l2070">De la même façon que mon frère eut été. </l>
           </sp>
-          <sp xml:id="V07-23" who="MELIE">
+          <sp who="MELIE" xml:id="V07-23">
             <speaker>MÉLIE.</speaker>
             <l n="2071" xml:id="l2071">Si le ressentiment n'a chassé de votre âme </l>
-            <l n="2072" xml:id="l2072" part="I">Le premier souvenir. </l>
+            <l n="2072" part="I" xml:id="l2072">Le premier souvenir. </l>
           </sp>
-          <sp xml:id="V07-24" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-24">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Que dites-vous (Madame.) </l>
           </sp>
-          <sp xml:id="V07-25" who="MELIE">
+          <sp who="MELIE" xml:id="V07-25">
             <speaker>MÉLIE.</speaker>
             <l n="2073" xml:id="l2073">Le sort qui maintenant nous a soumis à vous, </l>
             <l n="2074" xml:id="l2074">Veut que pour vous prier je me mette à genoux, </l>
             <l n="2075" xml:id="l2075">Puisque je ne suis plus ce que je voulais être. </l>
           </sp>
-          <sp xml:id="V07-26" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-26">
             <speaker>CLARIONTE.</speaker>
             <l n="2076" xml:id="l2076">Non, non, votre obligé ne vous peut méconnaître </l>
             <l n="2077" xml:id="l2077">Je suis toujours le même, et lors que j'oublierai : </l>
-            <l n="2078" xml:id="l2078" part="I">Mais plutôt levez-vous. </l>
+            <l n="2078" part="I" xml:id="l2078">Mais plutôt levez-vous. </l>
           </sp>
-          <sp xml:id="V07-27" who="MELIE">
+          <sp who="MELIE" xml:id="V07-27">
             <speaker>MÉLIE.</speaker>
             <l part="F">Je vous obéirai. </l>
             <l n="2079" xml:id="l2079">Si vous ne saviez trop que je vois sans envie, </l>
@@ -3090,9 +3154,9 @@
             <l n="2098" xml:id="l2098">Et rendez-moi le bien que je vous ai prêté. </l>
             <l n="2099" xml:id="l2099">Je ne demande point ses biens et sa Couronne, </l>
             <l n="2100" xml:id="l2100">Oui gardez un pays que la guerre vous donne : </l>
-            <l n="2101" xml:id="l2101" part="I">Mais donnez-moi sa vie. </l>
+            <l n="2101" part="I" xml:id="l2101">Mais donnez-moi sa vie. </l>
           </sp>
-          <sp xml:id="V07-28" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-28">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Ah (Madame) cessez </l>
             <l n="2102" xml:id="l2102">Tant d'obligations m'y contraignent assez, </l>
@@ -3105,28 +3169,28 @@
             <l n="2109" xml:id="l2109">Je lui rends tous ses droits, et je n'y prétends rien, </l>
             <l n="2110" xml:id="l2110">Et je crois que mon frère y consentira bien. </l>
           </sp>
-          <sp xml:id="V07-29" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-29">
             <speaker>FLAMIDORE.</speaker>
             <l n="2111" xml:id="l2111">Dessus mes volontés la vôtre est la maîtresse : </l>
             <l n="2112" xml:id="l2112">Allez mettre la paix et que le meurtre cesse. </l>
           </sp>
-          <sp xml:id="V07-30" who="LEROI">
+          <sp who="LEROI" xml:id="V07-30">
             <speaker>LE ROI.</speaker>
             <l n="2113" xml:id="l2113">Ô Dieux ! Pouvais-je attendre un traitement si doux, </l>
             <l n="2114" xml:id="l2114">Je tiendrai donc la vie et le Sceptre de vous. </l>
-            <l n="2115" xml:id="l2115" part="I">De vous que j'ai voulu. </l>
+            <l n="2115" part="I" xml:id="l2115">De vous que j'ai voulu. </l>
           </sp>
-          <sp xml:id="V07-31" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-31">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Que le passé s'oublie. </l>
             <l n="2116" xml:id="l2116">Et que dorénavant une amitié nous lie : </l>
-            <l n="2117" xml:id="l2117" part="I">Mais (Madame.) </l>
+            <l n="2117" part="I" xml:id="l2117">Mais (Madame.) </l>
           </sp>
-          <sp xml:id="V07-32" who="MELIE">
+          <sp who="MELIE" xml:id="V07-32">
             <speaker>MÉLIE.</speaker>
             <l part="F">Ordonnez je vous obéirai. </l>
           </sp>
-          <sp xml:id="V07-33" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V07-33">
             <speaker>CLARIONTE.</speaker>
             <l n="2118" xml:id="l2118">Puisque vous le voulez (Madame) j'oserai </l>
             <l n="2119" xml:id="l2119">Vous voyez que le Ciel m'engage pour un autre ; </l>
@@ -3139,33 +3203,33 @@
             <l n="2126" xml:id="l2126">Souffrez que de ma main je vous donne un époux, </l>
             <l n="2127" xml:id="l2127">Et que pour cet ingrat je vous offre son frère. </l>
           </sp>
-          <sp xml:id="V07-34" who="MELIE">
+          <sp who="MELIE" xml:id="V07-34">
             <speaker>MÉLIE.</speaker>
             <l n="2128" xml:id="l2128">Ma volonté dépend de celle de mon père, </l>
             <l n="2129" xml:id="l2129">Et pour moi je l'accepte avec autant d'honneur </l>
             <l n="2130" xml:id="l2130">Que son affection me comble de bonheur. </l>
           </sp>
-          <sp xml:id="V07-35" who="LEROI">
+          <sp who="LEROI" xml:id="V07-35">
             <speaker>LE ROI.</speaker>
             <l n="2131" xml:id="l2131">Je consens à ce bien que le destin m'envoie. </l>
           </sp>
-          <sp xml:id="V07-36" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V07-36">
             <speaker>FLAMIDORE.</speaker>
             <l n="2132" xml:id="l2132">Et moi le recevant je dois mourir de joie. </l>
           </sp>
-          <sp xml:id="V07-37" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V07-37">
             <speaker>ROSIMÈNE.</speaker>
             <l n="2133" xml:id="l2133">Ah (Madame) agréez que mes embrassements </l>
             <l n="2134" xml:id="l2134">Vous témoignent l'excès de mes contentements. </l>
           </sp>
-          <sp xml:id="V07-38" who="LESACRIFICATEUR">
+          <sp who="LESACRIFICATEUR" xml:id="V07-38">
             <speaker>LE SACRIFICATEUR.</speaker>
             <l n="2135" xml:id="l2135">Désormais vos bonheurs n'auront aucun obstacle, </l>
             <l n="2136" xml:id="l2136">Et l'accomplissement de ce dernier oracle </l>
             <l n="2137" xml:id="l2137">Promet à ce pays un éternel repos : </l>
             <l n="2138" xml:id="l2138">Voyez-en le succès, ce sont ses propres mots. </l>
           </sp>
-          <sp xml:id="V07-39" who="ORACLE">
+          <sp who="ORACLE" xml:id="V07-39">
             <speaker>ORACLE.</speaker>
             <l n="2139" xml:id="l2139">Lorsque pour expier vos crimes </l>
             <l n="2140" xml:id="l2140">On verra trois belles victimes </l>
@@ -3180,59 +3244,64 @@
             <l n="2149" xml:id="l2149">Et le Ciel qui consent à vos prospérités </l>
             <l n="2150" xml:id="l2150">Vous fera plus de biens que vous n'en souhaitez. </l>
           </sp>
-          <sp xml:id="V07-40" who="LEROI">
+          <sp who="LEROI" xml:id="V07-40">
             <speaker>LE ROI.</speaker>
             <l n="2151" xml:id="l2151">En effet si l'on peut sonder dans leurs mystères, </l>
             <l n="2152" xml:id="l2152">On ne saurait douter de paroles si claires. </l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
-          <head>SCÈNE VIII. Le Roi, Soldat, Clarionte, Fidamant.<listPerson type="configuration" xml:id="conf26"><person corresp="#LEROI"/><person corresp="#CLARIONTE"/><person corresp="#FIDAMANT"/><person corresp="#ROSIMENE"/><person corresp="#FLAMIDORE"/></listPerson></head>
-          <sp xml:id="V08-1" who="LEROI">
+        <div2 n="8" type="scene" xml:id="V08">
+          <head>SCÈNE VIII. Le Roi, Soldat, Clarionte, Fidamant.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#LEROI"/>
+            <person corresp="#CLARIONTE"/>
+            <person corresp="#FIDAMANT"/>
+            <person corresp="#ROSIMENE"/>
+            <person corresp="#FLAMIDORE"/></listPerson></head>
+          <sp who="LEROI" xml:id="V08-1">
             <speaker>LE ROI.</speaker>
-            <l n="2153" xml:id="l2153" part="I">Voilà ce prisonnier. </l>
+            <l n="2153" part="I" xml:id="l2153">Voilà ce prisonnier. </l>
           </sp>
-          <sp xml:id="V08-2" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V08-2">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Ah Soldats inhumains. </l>
             <l n="2154" xml:id="l2154">Quoi ! Vous donnez des fers à ces Royales mains, </l>
             <l n="2155" xml:id="l2155">Est-ce de la vertu la juste récompense : </l>
             <l n="2156" xml:id="l2156">Mais nous pourrez-vous bien pardonner cette offense. </l>
           </sp>
-          <sp xml:id="V08-3" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="V08-3">
             <speaker>FIDAMANT.</speaker>
             <l n="2157" xml:id="l2157">Pour ne le ressentir je reçois trop de bien : </l>
             <l n="2158" xml:id="l2158">Mais quel étonnement peut égaler le mien. </l>
-            <l n="2159" xml:id="l2159" part="I">Dieu ! Le grand changement. </l>
+            <l n="2159" part="I" xml:id="l2159">Dieu ! Le grand changement. </l>
           </sp>
-          <sp xml:id="V08-4" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V08-4">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Voyez encor ma Reine. </l>
           </sp>
-          <sp xml:id="V08-5" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="V08-5">
             <speaker>FIDAMANT.</speaker>
-            <l n="2160" xml:id="l2160" part="I">Ah ! (Madame ) est-ce vous. </l>
+            <l n="2160" part="I" xml:id="l2160">Ah ! (Madame ) est-ce vous. </l>
           </sp>
-          <sp xml:id="V08-6" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V08-6">
             <speaker>CLARIONTE.</speaker>
             <l part="F">Oui c'est ma Rosimène. </l>
-            <l n="2161" xml:id="l2161" part="I">Quoi ! Vous la connaissez ? </l>
+            <l n="2161" part="I" xml:id="l2161">Quoi ! Vous la connaissez ? </l>
           </sp>
-          <sp xml:id="V08-7" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V08-7">
             <speaker>ROSIMÈNE.</speaker>
             <l part="F">Vous saurez tout un jour. </l>
             <l n="2162" xml:id="l2162">Enfin vous pouvez voir l'effet de mon amour, </l>
-            <l n="2163" xml:id="l2163" part="I">Et de votre rapport. </l>
+            <l n="2163" part="I" xml:id="l2163">Et de votre rapport. </l>
           </sp>
-          <sp xml:id="V08-8" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V08-8">
             <speaker>CLARIONTE.</speaker>
             <l part="F">En vain je vous écoute. </l>
           </sp>
-          <sp xml:id="V08-9" who="ROSIMENE">
+          <sp who="ROSIMENE" xml:id="V08-9">
             <speaker>ROSIMÈNE.</speaker>
             <l n="2164" xml:id="l2164">Je vous retirerai l'un et l'autre de doute. </l>
           </sp>
-          <sp xml:id="V08-10" who="LEROI">
+          <sp who="LEROI" xml:id="V08-10">
             <speaker>LE ROI.</speaker>
             <l n="2165" xml:id="l2165">Vous serez à loisir éclaircis sur ce point : </l>
             <l n="2166" xml:id="l2166">Mais que l'étonnement ne nous empêche point, </l>
@@ -3241,51 +3310,51 @@
             <l n="2169" xml:id="l2169">Ils me rendent mes biens, voyez quelle douceur, </l>
             <l n="2170" xml:id="l2170">Et mêmes ce grand Prince accepte votre soeur</l>
           </sp>
-          <sp xml:id="V08-11" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="V08-11">
             <speaker>FIDAMANT.</speaker>
             <l n="2171" xml:id="l2171">Son mérite m'oblige à la reconnaissance </l>
             <l n="2172" xml:id="l2172">De l'honneur qu'il nous fait d'une telle alliance, </l>
             <l n="2173" xml:id="l2173">Et leurs rares bontés qui nous laissent un bien, </l>
             <l n="2174" xml:id="l2174">Que par nos cruautés ils méritaient si bien. </l>
           </sp>
-          <sp xml:id="V08-12" who="FLAMIDORE">
+          <sp who="FLAMIDORE" xml:id="V08-12">
             <speaker>FLAMIDORE.</speaker>
             <l n="2175" xml:id="l2175">N'en parlons plus de grâce et recevez un frère, </l>
             <l n="2176" xml:id="l2176">Qui vient jusqu'à la mort vous servit et vous plaire. </l>
           </sp>
-          <sp xml:id="V08-13" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V08-13">
             <speaker>CLARIONTE.</speaker>
             <l n="2177" xml:id="l2177">De si puissants bienfaits dont je me sens lié, </l>
             <l n="2178" xml:id="l2178">Me feraient désirer d'être son allié, </l>
             <l n="2179" xml:id="l2179">Plût aux Dieux qu'il se peut, et que ma soeur Mélite, </l>
             <l n="2180" xml:id="l2180">Pour m'obtenir ce bien eut assez de mérite. </l>
           </sp>
-          <sp xml:id="V08-14" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="V08-14">
             <speaker>FIDAMANT.</speaker>
             <l n="2181" xml:id="l2181">Si vous m'en jugez digne après un si grand bien, </l>
             <l n="2182" xml:id="l2182">Pour être trop heureux je n'espère plus rien. </l>
           </sp>
-          <sp xml:id="V08-15" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V08-15">
             <speaker>CLARIONTE.</speaker>
             <l n="2183" xml:id="l2183">Mon frère elle est à vous recevez ma promesse. </l>
           </sp>
-          <sp xml:id="V08-16" who="LEROI">
+          <sp who="LEROI" xml:id="V08-16">
             <speaker>LE ROI.</speaker>
             <l n="2184" xml:id="l2184">J'accepte pour mon fils une belle Princesse. </l>
           </sp>
-          <sp xml:id="V08-17" who="FIDAMANT">
+          <sp who="FIDAMANT" xml:id="V08-17">
             <speaker>FIDAMANT.</speaker>
             <l n="2185" xml:id="l2185">J'en suis si glorieux que je me méconnais, </l>
             <l n="2186" xml:id="l2186">Déjà puisqu'il vous plaît je lui donne ma foi. </l>
           </sp>
-          <sp xml:id="V08-18" who="CLARIONTE">
+          <sp who="CLARIONTE" xml:id="V08-18">
             <speaker>CLARIONTE.</speaker>
             <l n="2187" xml:id="l2187">Mais allons apaiser les troubles de la ville, </l>
             <l n="2188" xml:id="l2188">Et redonner la paix au reste de cette Île, </l>
             <l n="2189" xml:id="l2189">Puis nous nous remettrons à la merci des eaux, </l>
             <l n="2190" xml:id="l2190">Et vous et votre soeur viendrez dans nos vaisseaux. </l>
           </sp>
-          <sp xml:id="V08-19" who="LEROI">
+          <sp who="LEROI" xml:id="V08-19">
             <speaker>LE ROI.</speaker>
             <l n="2191" xml:id="l2191">Que la cruelle loi pour jamais s'abolisse, </l>
             <l n="2192" xml:id="l2192">Et que l'on fasse aux Dieux un autre Sacrifice. </l>

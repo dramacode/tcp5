@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Sophonisbe</title><title type="sub">, tragédie</title>
-        <author born="1604" born_location="Besançon" death="1686" death_location="Besançon" academie=""><surname>Mairet</surname><forename> Jean</forename></author>
+        <title>Sophonisbe</title>
+        <title type="sub">, tragédie</title>
+        <author academie="" born="1604" born_location="Besançon" death="1686" death_location="Besançon">
+          <surname>Mairet</surname>
+          <forename> Jean</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE</p>
@@ -31,7 +36,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -43,7 +48,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1635">M. DCC. XXXV. Avec privilège du Roi.</docDate>
-      <docAuthor id="MAIRET, Jean" bio="mairet">Jean Mairet</docAuthor>
+      <docAuthor bio="mairet" id="MAIRET, Jean">Jean Mairet</docAuthor>
       <docImprint>
         <privilege id="164*-**-**"/>
         <acheveImprime id="164*-**-**"/>
@@ -54,27 +59,29 @@
       </performance>
       <castList>
         <head>ACTEURS</head>
-        <castItem><role xml:id="SYPHAX" id="SYPHAX" sex="1" type="H" statut="roi" age="A" stat_amour="néant">SYPHAX</role>, roi de Numidie.</castItem>
-        <castItem><role xml:id="PHILON" id="PHILON" sex="1" type="H" statut="général" age="A" stat_amour="néant">PHILON</role>, général de Syphax.</castItem>
-        <castItem><role xml:id="MASSINISSE" id="MASSINISSE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="amoureux">MASSINISSE</role>, ennemi de Syphax.</castItem>
-        <castItem><role xml:id="SCIPION" id="SCIPION" sex="1" type="H" statut="consul" age="A" stat_amour="néant">SCIPION</role>, consul romain.</castItem>
-        <castItem><role xml:id="LELIE" id="LÉLIE" sex="1" type="H" statut="lieutenant" age="A" stat_amour="néant">LÉLIE</role>, lieutenant de Scipion.</castItem>
-        <castItem><role xml:id="CALIODORE" id="CALIODORE" sex="1" type="H" statut="domestique" age="A" stat_amour="néant">CALIODORE</role>, domestique de Sophonisbe.</castItem>
-        <castItem><role xml:id="ARISTON" id="ARISTON" sex="1" type="H" statut="soldat" age="A" stat_amour="néant">ARISTON</role>, soldat romain.</castItem>
-        <castItem><role xml:id="SOPHONISBE" id="SOPHONISBE" sex="1" type="H" statut="roi" age="A" stat_amour="amoureux">SOPHONISBE</role>, femme de Syphax, et amoureuse de Massinisse.</castItem>
-        <castItem><role xml:id="CORISBE" id="CORISBÉ" sex="1" type="H" statut="confident" age="A" stat_amour="néant">CORISBÉ</role>, confidente de Sophonisbe.</castItem>
-        <castItem><role xml:id="PHENICE" id="PHÉNICE" sex="1" type="H" statut="confident" age="A" stat_amour="néant">PHÉNICE</role>, confidente de Sophonisbe.</castItem>
-        <castItem><role xml:id="PHILIPPE" id="PHILIPPE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">PHILIPPE</role>.</castItem>
-        <castItem><role xml:id="SOLDATS" id="SOLDATS" sex="1" type="H" statut="soldat" age="A" stat_amour="néant">SOLDATS</role>.</castItem>
+        <castItem><role age="A" id="SYPHAX" sex="1" stat_amour="néant" statut="roi" type="H" xml:id="SYPHAX">SYPHAX</role>, roi de Numidie.</castItem>
+        <castItem><role age="A" id="PHILON" sex="1" stat_amour="néant" statut="général" type="H" xml:id="PHILON">PHILON</role>, général de Syphax.</castItem>
+        <castItem><role age="A" id="MASSINISSE" sex="1" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="MASSINISSE">MASSINISSE</role>, ennemi de Syphax.</castItem>
+        <castItem><role age="A" id="SCIPION" sex="1" stat_amour="néant" statut="consul" type="H" xml:id="SCIPION">SCIPION</role>, consul romain.</castItem>
+        <castItem><role age="A" id="LÉLIE" sex="1" stat_amour="néant" statut="lieutenant" type="H" xml:id="LELIE">LÉLIE</role>, lieutenant de Scipion.</castItem>
+        <castItem><role age="A" id="CALIODORE" sex="1" stat_amour="néant" statut="domestique" type="H" xml:id="CALIODORE">CALIODORE</role>, domestique de Sophonisbe.</castItem>
+        <castItem><role age="A" id="ARISTON" sex="1" stat_amour="néant" statut="soldat" type="H" xml:id="ARISTON">ARISTON</role>, soldat romain.</castItem>
+        <castItem><role age="A" id="SOPHONISBE" sex="1" stat_amour="amoureux" statut="roi" type="H" xml:id="SOPHONISBE">SOPHONISBE</role>, femme de Syphax, et amoureuse de Massinisse.</castItem>
+        <castItem><role age="A" id="CORISBÉ" sex="1" stat_amour="néant" statut="confident" type="H" xml:id="CORISBE">CORISBÉ</role>, confidente de Sophonisbe.</castItem>
+        <castItem><role age="A" id="PHÉNICE" sex="1" stat_amour="néant" statut="confident" type="H" xml:id="PHENICE">PHÉNICE</role>, confidente de Sophonisbe.</castItem>
+        <castItem><role age="A" id="PHILIPPE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="PHILIPPE">PHILIPPE</role>.</castItem>
+        <castItem><role age="A" id="SOLDATS" sex="1" stat_amour="néant" statut="soldat" type="H" xml:id="SOLDATS">SOLDATS</role>.</castItem>
       </castList>
-      <set location="Cirta" country="Algérie" periode="IIIème avant JC" link="">Le Scène est dans Cyrte, ville de Numidie.</set>
+      <set country="Algérie" link="" location="Cirta" periode="IIIème avant JC">Le Scène est dans Cyrte, ville de Numidie.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE I. Syphax, Sophonisbe.<listPerson type="configuration" xml:id="conf1"><person corresp="#SYPHAX"/><person corresp="#SOPHONISBE"/></listPerson></head>
-          <sp xml:id="I01-1" who="SYPHAX">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE I. Syphax, Sophonisbe.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#SYPHAX"/>
+            <person corresp="#SOPHONISBE"/></listPerson></head>
+          <sp who="SYPHAX" xml:id="I01-1">
             <speaker>SYPHAX</speaker>
             <l n="1" xml:id="l1">Quoi, perfide ! s'entendre avec mes ennemis ?</l>
             <l n="2" xml:id="l2">Est-ce là cet amour que tu m'avais promis ?</l>
@@ -123,19 +130,19 @@
             <l n="45" xml:id="l45">heureux dans ce malheur, si le même flambeau</l>
             <l n="46" xml:id="l46">Qui nous mit dans le lit nous eût mis au tombeau !</l>
           </sp>
-          <sp xml:id="I01-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I01-2">
             <speaker>SOPHONISBE</speaker>
             <l n="47" xml:id="l47">Ha ! Sire, plût aux Dieux m'eussiez-vous écoutée !</l>
           </sp>
-          <sp xml:id="I01-3" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I01-3">
             <speaker>SYPHAX</speaker>
             <l n="48" xml:id="l48">Que me pourrais-tu dire, impudente, effrontée ?</l>
           </sp>
-          <sp xml:id="I01-4" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I01-4">
             <speaker>SOPHONISBE</speaker>
             <l n="49" xml:id="l49">Ce qui m'exempterait de ces noms odieux.</l>
           </sp>
-          <sp xml:id="I01-5" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I01-5">
             <speaker>SYPHAX</speaker>
             <l n="50" xml:id="l50">Oui, si j'étais perclus de l'esprit et des yeux ;</l>
             <l n="51" xml:id="l51">Oui, si je ne savais quelle est ton écriture ;</l>
@@ -146,7 +153,7 @@
             <l n="55" xml:id="l55">Désavoueras-tu point ces honteux caractères,</l>
             <l n="56" xml:id="l56">Complices et témoins de tes feux adultères ?</l>
           </sp>
-          <sp xml:id="I01-6" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I01-6">
             <speaker>SOPHONISBE</speaker>
             <l n="57" xml:id="l57">Non, Sire, ils sont de moi, je ne puis le nier,</l>
             <l n="58" xml:id="l58">Et n'ai pas entrepris de me justifier</l>
@@ -156,7 +163,7 @@
             <l n="62" xml:id="l62">Un généreux dessein que mon coeur avait eu,</l>
             <l n="63" xml:id="l63">Dont ma bouche en effet vous devait rendre compte.</l>
           </sp>
-          <sp xml:id="I01-7" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I01-7">
             <speaker>SYPHAX</speaker>
             <l n="64" xml:id="l64">Ô Dieux ! as-tu perdu le sens avec la honte ?</l>
             <l n="65" xml:id="l65">Ta faute, ce dis-tu, vient de m'avoir caché</l>
@@ -169,7 +176,7 @@
             <l n="72" xml:id="l72">N'ouït extravagance à la tienne pareille ;</l>
             <l n="73" xml:id="l73">Remets donc ton esprit de sa chute étourdi.</l>
           </sp>
-          <sp xml:id="I01-8" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I01-8">
             <speaker>SOPHONISBE</speaker>
             <l n="74" xml:id="l74">Vous prenez mal le sens des choses que je dis ;</l>
             <l n="75" xml:id="l75">Je veux dire, Seigneur, afin que je m'explique,</l>
@@ -179,14 +186,14 @@
             <l n="79" xml:id="l79">C'est par où je prétends prouver mon innocence,</l>
             <l n="80" xml:id="l80">Si votre Majesté m'en donne la licence.</l>
           </sp>
-          <sp xml:id="I01-9" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I01-9">
             <speaker>SYPHAX</speaker>
             <l n="81" xml:id="l81">Parlez, parlez, Madame, et si vous le pouvez,</l>
             <l n="82" xml:id="l82">Mettez votre innocence au point que vous devez.</l>
             <l n="83" xml:id="l83">C'est le plus grand plaisir que vous me sauriez faire ;</l>
             <l n="84" xml:id="l84">Mais qu'avecque raison j'ai crainte du contraire !</l>
           </sp>
-          <sp xml:id="I01-10" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I01-10">
             <speaker>SOPHONISBE</speaker>
             <l n="85" xml:id="l85">Sire, vous voyez trop à quelle extrémité</l>
             <l n="86" xml:id="l86">Les armes des Romains vous ont précipité :</l>
@@ -215,7 +222,7 @@
             <l n="109" xml:id="l109">Mais les Dieux après tout que je prends à témoins</l>
             <l n="110" xml:id="l110">Savent bien, en effet, que je ne suis rien moins.</l>
           </sp>
-          <sp xml:id="I01-11" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I01-11">
             <speaker>SYPHAX</speaker>
             <l n="111" xml:id="l111">Crois plutôt que ces Dieux ennemis des parjures</l>
             <l n="112" xml:id="l112">Vengeront en ceci nos communes injures,</l>
@@ -230,12 +237,12 @@
             <l n="121" xml:id="l121">Aimant mieux que le Ciel m'en fasse la raison,</l>
             <l n="122" xml:id="l122">Que si je la tirais du fer ou du poison.</l>
           </sp>
-          <sp xml:id="I01-12" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I01-12">
             <speaker>SOPHONISBE</speaker>
             <l n="123" xml:id="l123">Quoi donc, votre soupçon rejette mes excuses ?</l>
-            <l n="124" xml:id="l124" part="I">Ô Dieux !</l>
+            <l n="124" part="I" xml:id="l124">Ô Dieux !</l>
           </sp>
-          <sp xml:id="I01-13" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I01-13">
             <speaker>SYPHAX</speaker>
             <l part="F">Déguise mieux tes inutiles ruses</l>
             <l n="125" xml:id="l125">De qui le faux éclat ne saurait m'éblouir ;</l>
@@ -270,9 +277,11 @@
             <l n="152" xml:id="l152">Qui rend de mes vieux ans la course infortunée !</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Philon, Syphax.<listPerson type="configuration" xml:id="conf2"><person corresp="#PHILON"/><person corresp="#SYPHAX"/></listPerson></head>
-          <sp xml:id="I02-1" who="PHILON">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Philon, Syphax.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#PHILON"/>
+            <person corresp="#SYPHAX"/></listPerson></head>
+          <sp who="PHILON" xml:id="I02-1">
             <speaker>PHILON, général de Syphax</speaker>
             <l n="153" xml:id="l153">Sire, l'on n'attend plus que votre Majesté,</l>
             <l n="154" xml:id="l154">Pour charger Massinisse au combat apprêté.</l>
@@ -285,12 +294,12 @@
             <l n="161" xml:id="l161">De peur qu'à différer ils ne perdent sans fruit</l>
             <l n="162" xml:id="l162">Cette bouillante ardeur que la victoire suit.</l>
           </sp>
-          <sp xml:id="I02-2" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I02-2">
             <speaker>SYPHAX</speaker>
             <l n="163" xml:id="l163">Allons, et plaise aux Dieux qu'un trépas honorable</l>
             <l n="164" xml:id="l164">Me délivre bientôt d'un sort si déplorable.</l>
           </sp>
-          <sp xml:id="I02-3" who="PHILON">
+          <sp who="PHILON" xml:id="I02-3">
             <speaker>PHILON</speaker>
             <l n="165" xml:id="l165">Quoi, Sire, et depuis quand votre coeur abattu</l>
             <l n="166" xml:id="l166">Laisse-t-il au malheur accabler sa vertu ?</l>
@@ -303,7 +312,7 @@
             <l n="173" xml:id="l173">Si faut-il espérer que sa légèreté</l>
             <l n="174" xml:id="l174">La fera revenir à votre Majesté.</l>
           </sp>
-          <sp xml:id="I02-4" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I02-4">
             <speaker>SYPHAX</speaker>
             <l n="175" xml:id="l175">Ha ! Philon, souviens-toi que la Fortune est femme,</l>
             <l n="176" xml:id="l176">Et que de quelque ardeur que Syphax la réclame,</l>
@@ -314,17 +323,17 @@
             <l n="181" xml:id="l181">Ma vie est bien soumise à de pires dangers,</l>
             <l n="182" xml:id="l182">Et tous mes ennemis ne sont pas étrangers.</l>
           </sp>
-          <sp xml:id="I02-5" who="PHILON">
+          <sp who="PHILON" xml:id="I02-5">
             <speaker>PHILON</speaker>
             <l n="183" xml:id="l183">Comment, Sire, quelqu'un entre vos domestiques</l>
             <l n="184" xml:id="l184">A-t-il fait contre vous d'infidèles pratiques ?</l>
           </sp>
-          <sp xml:id="I02-6" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I02-6">
             <speaker>SYPHAX</speaker>
             <l n="185" xml:id="l185">Oui, je suis odieux à ceux de ma maison</l>
             <l n="186" xml:id="l186">Qui me devraient chérir avec plus de raison.</l>
           </sp>
-          <sp xml:id="I02-7" who="PHILON">
+          <sp who="PHILON" xml:id="I02-7">
             <speaker>PHILON</speaker>
             <l n="187" xml:id="l187">Il faut donc dans leur sang, avec promptitude,</l>
             <l n="188" xml:id="l188">Noyer leur perfidie et leur ingratitude ;</l>
@@ -335,7 +344,7 @@
             <l n="193" xml:id="l193">Pour le plus digne roi qui soit en l'Univers,</l>
             <l n="194" xml:id="l194">Et que ne les perd-on, puisqu'ils sont découverts ?</l>
           </sp>
-          <sp xml:id="I02-8" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I02-8">
             <speaker>SYPHAX</speaker>
             <l n="195" xml:id="l195">Pour ce qu'en les perdant, je me perdrais moi-même,</l>
             <l n="196" xml:id="l196">Qui tout traîtres qu'ils sont les excuse et les aime.</l>
@@ -343,11 +352,11 @@
             <l n="198" xml:id="l198">D'avoir encore pour elle un reste d'amitié,</l>
             <l n="199" xml:id="l199">Au lieu de la punir de mépris et de haine.</l>
           </sp>
-          <sp xml:id="I02-9" who="PHILON">
+          <sp who="PHILON" xml:id="I02-9">
             <speaker>PHILON</speaker>
-            <l n="200" xml:id="l200" part="I">Pour elle ?</l>
+            <l n="200" part="I" xml:id="l200">Pour elle ?</l>
           </sp>
-          <sp xml:id="I02-10" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I02-10">
             <speaker>SYPHAX</speaker>
             <l part="F">Oui, cher Philon, je parle de la Reine,</l>
             <l n="201" xml:id="l201">Et je veux bien confier à ton esprit discret</l>
@@ -367,7 +376,7 @@
             <l n="213" xml:id="l213">Eh bien, aurais-tu cru que sous tant de beauté</l>
             <l n="214" xml:id="l214">Logeât tant de malice et de déloyauté ?</l>
           </sp>
-          <sp xml:id="I02-11" who="PHILON">
+          <sp who="PHILON" xml:id="I02-11">
             <speaker>PHILON</speaker>
             <l n="215" xml:id="l215">Certes, les Dieux encore n'ont point fait de courage</l>
             <l n="216" xml:id="l216">Qui soit inébranlable aux coups de cet orage,</l>
@@ -382,32 +391,35 @@
             <l n="225" xml:id="l225">Qu'il est bon cependant d'observer de plus près,</l>
             <l n="226" xml:id="l226">Par des yeux vigilants qu'on y peut mettre exprès.</l>
           </sp>
-          <sp xml:id="I02-12" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I02-12">
             <speaker>SYPHAX</speaker>
             <l n="227" xml:id="l227">Allons, Philon, allons où le Destin m'appelle,</l>
             <l n="228" xml:id="l228">Et que ma mort contente une épouse infidèle.</l>
-            <l n="229" xml:id="l229" part="I">Cependant Massinisse...</l>
+            <l n="229" part="I" xml:id="l229">Cependant Massinisse...</l>
           </sp>
-          <sp xml:id="I02-13" who="PHILON">
+          <sp who="PHILON" xml:id="I02-13">
             <speaker>PHILON</speaker>
             <l part="F">Ô Dieux, il a blêmi.</l>
           </sp>
-          <sp xml:id="I02-14" who="SYPHAX">
+          <sp who="SYPHAX" xml:id="I02-14">
             <speaker>SYPHAX</speaker>
             <l n="230" xml:id="l230">Pour te faire un présent digne d'un ennemi,</l>
             <l n="231" xml:id="l231">Et te souhaiter pis que le fer ni la flamme,</l>
             <l n="232" xml:id="l232">Je te souhaite encor Sophonisbe pour femme.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf3"><person corresp="#SOPHONISBE"/><person corresp="#PHENICE"/><person corresp="#CORISBE"/></listPerson></head>
-          <sp xml:id="I03-1" who="SOPHONISBE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#PHENICE"/>
+            <person corresp="#CORISBE"/></listPerson></head>
+          <sp who="SOPHONISBE" xml:id="I03-1">
             <speaker>SOPHONISBE</speaker>
             <l n="233" xml:id="l233">Ah ! Phénice, il est vrai qu'il a manqué de foi,</l>
             <l n="234" xml:id="l234">Qu'il a remis ma lettre entre les mains du Roi,</l>
-            <l n="235" xml:id="l235" part="I">Et que son imprudence...</l>
+            <l n="235" part="I" xml:id="l235">Et que son imprudence...</l>
           </sp>
-          <sp xml:id="I03-2" who="PHENICE">
+          <sp who="PHENICE" xml:id="I03-2">
             <speaker>PHÉNICE</speaker>
             <l part="F">Assurez-vous, Madame,</l>
             <l n="236" xml:id="l236">Que l'eunuque en ceci n'est point digne de blâme,</l>
@@ -431,7 +443,7 @@
             <l n="254" xml:id="l254">Mérite d'être plaint, et non d'être accusé ;</l>
             <l n="255" xml:id="l255">Voilà comme en effet la chose s'est passée.</l>
           </sp>
-          <sp xml:id="I03-3" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I03-3">
             <speaker>SOPHONISBE</speaker>
             <l n="256" xml:id="l256">Cependant, Massinisse ignore ma pensée ;</l>
             <l n="257" xml:id="l257">Ce glorieux vainqueur est encore à savoir</l>
@@ -447,7 +459,7 @@
             <l n="267" xml:id="l267">Mes yeux à votre avis ont-ils assez de charmes</l>
             <l n="268" xml:id="l268">Pour cet esprit nourri dans la fureur des armes ?</l>
           </sp>
-          <sp xml:id="I03-4" who="PHENICE">
+          <sp who="PHENICE" xml:id="I03-4">
             <speaker>PHÉNICE</speaker>
             <l n="269" xml:id="l269">Que trop, que trop, Madame, et je ne doute pas</l>
             <l n="270" xml:id="l270">Que ce jeune vainqueur ne cède à vos appas,</l>
@@ -465,7 +477,7 @@
             <l n="282" xml:id="l282">Qu'il ait pu conserver un coeur indifférent,</l>
             <l n="283" xml:id="l283">Parmi tant de beautés dont l'Espagne se vante.</l>
           </sp>
-          <sp xml:id="I03-5" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I03-5">
             <speaker>SOPHONISBE</speaker>
             <l n="284" xml:id="l284">Ô Dieux ! que ce soupçon me trouble et m'épouvante !</l>
             <l n="285" xml:id="l285">Et que je souffrirais, si mon amour trompé,</l>
@@ -475,7 +487,7 @@
             <l n="289" xml:id="l289">Nourrice, autant de fois j'ai changé de couleur,</l>
             <l n="290" xml:id="l290">Et mes sens interdits ont montré ma douleur.</l>
           </sp>
-          <sp xml:id="I03-6" who="PHENICE">
+          <sp who="PHENICE" xml:id="I03-6">
             <speaker>PHÉNICE</speaker>
             <l n="291" xml:id="l291">Mais, Madame, après tout cette amour découverte</l>
             <l n="292" xml:id="l292">Cause visiblement votre honte et ma perte.</l>
@@ -484,7 +496,7 @@
             <l n="295" xml:id="l295">Et je crains qu'au retour du combat qui l'arrête</l>
             <l n="296" xml:id="l296">Il ne fasse éclater la dernière tempête.</l>
           </sp>
-          <sp xml:id="I03-7" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I03-7">
             <speaker>SOPHONISBE</speaker>
             <l n="297" xml:id="l297">Rien moins, je connais trop la puissance d'Amour</l>
             <l n="298" xml:id="l298">Pour craindre que le Roi me fasse un mauvais tour ;</l>
@@ -513,12 +525,12 @@
             <l n="321" xml:id="l321">C'est bien un accident aussi prodigieux</l>
             <l n="322" xml:id="l322">Que d'un sort non commun il est présagieux.</l>
           </sp>
-          <sp xml:id="I03-8" who="CORISBE">
+          <sp who="CORISBE" xml:id="I03-8">
             <speaker>CORISBÉ</speaker>
             <l n="323" xml:id="l323">Madame, tout est prêt, et pour le sacrifice,</l>
-            <l n="324" xml:id="l324" part="I">Et pour le voeu public.</l>
+            <l n="324" part="I" xml:id="l324">Et pour le voeu public.</l>
           </sp>
-          <sp xml:id="I03-9" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="I03-9">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Allons-y donc, Phénice,</l>
             <l n="325" xml:id="l325">Et de peur de prier contre mon propre bien,</l>
@@ -526,18 +538,21 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE I. Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf5"><person corresp="#PHENICE"/><person corresp="#SOPHONISBE"/><person corresp="#CORISBE"/></listPerson></head>
-          <sp xml:id="II01-1" who="PHENICE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE I. Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#PHENICE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#CORISBE"/></listPerson></head>
+          <sp who="PHENICE" xml:id="II01-1">
             <speaker>PHÉNICE</speaker>
             <l n="327" xml:id="l327">Enfin toute la ville est dessus la muraille,</l>
             <l n="328" xml:id="l328">D'où comme d'un théâtre, elle voit la bataille,</l>
             <l n="329" xml:id="l329">Et Votre Majesté, sans aller loin d'ici,</l>
             <l n="330" xml:id="l330">Si c'était son plaisir la pourrait voir aussi.</l>
           </sp>
-          <sp xml:id="II01-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II01-2">
             <speaker>SOPHONISBE</speaker>
             <l n="331" xml:id="l331">Non, j'ai trop de frayeur, et suis trop désolée</l>
             <l n="332" xml:id="l332">Pour voir cette mortelle et douteuse mêlée,</l>
@@ -553,13 +568,13 @@
             <l n="342" xml:id="l342">J'en espère si peu que je le tiens perdu,</l>
             <l n="343" xml:id="l343">Tant nos communs desseins ont un malheur étrange.</l>
           </sp>
-          <sp xml:id="II01-3" who="CORISBE">
+          <sp who="CORISBE" xml:id="II01-3">
             <speaker>CORISBÉ</speaker>
             <l n="344" xml:id="l344">Madame, en un moment la fortune se change,</l>
             <l n="345" xml:id="l345">Fait rire bien souvent ceux qu'elle a fait pleurer,</l>
             <l n="346" xml:id="l346">Et soumet sa malice à qui peut l'endurer.</l>
           </sp>
-          <sp xml:id="II01-4" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II01-4">
             <speaker>Sophonisbe, seule.</speaker>
             <l n="347" xml:id="l347">Ô sagesse ! ô raison ! adorables lumières,</l>
             <l n="348" xml:id="l348">Rendez à mon esprit vos clartés coutumières,</l>
@@ -627,19 +642,19 @@
             <l n="410" xml:id="l410">Mes filles sans couleur, qui viennent de la tour ;</l>
             <l n="411" xml:id="l411">Leur crainte me fait peur ; n'importe, allons entendre</l>
             <l n="412" xml:id="l412">Ce qu'il faut que je sache, et que je n'ose apprendre.</l>
-            <l n="413" xml:id="l413" part="I">Eh bien qu'avez-vous vu ?</l>
+            <l n="413" part="I" xml:id="l413">Eh bien qu'avez-vous vu ?</l>
           </sp>
-          <sp xml:id="II01-5" who="CORISBE">
+          <sp who="CORISBE" xml:id="II01-5">
             <speaker>CORISBÉ</speaker>
             <l part="F">Le plus rude combat</l>
-            <l n="414" xml:id="l414" part="I">Qui se verra jamais.</l>
+            <l n="414" part="I" xml:id="l414">Qui se verra jamais.</l>
           </sp>
-          <sp xml:id="II01-6" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II01-6">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Ô Dieux ! le coeur me bat,</l>
             <l n="415" xml:id="l415">Et m'annonce déjà que nous avons du pire.</l>
           </sp>
-          <sp xml:id="II01-7" who="PHENICE">
+          <sp who="PHENICE" xml:id="II01-7">
             <speaker>PHÉNICE</speaker>
             <l n="416" xml:id="l416">C'est ce qu'assurément nous ne saurions vous dire,</l>
             <l n="417" xml:id="l417">Car outre que de soi la distance des lieux</l>
@@ -655,18 +670,18 @@
             <l n="427" xml:id="l427">De qui le bruit terrible, en frappant nos oreilles,</l>
             <l n="428" xml:id="l428">Nous portait dans l'esprit des frayeurs nonpareilles.</l>
           </sp>
-          <sp xml:id="II01-8" who="CORISBE">
+          <sp who="CORISBE" xml:id="II01-8">
             <speaker>CORISBÉ</speaker>
             <l n="429" xml:id="l429">Aussi, n'avons-nous pu, ma compagne ni moi,</l>
             <l n="430" xml:id="l430">Soutenir plus longtemps ces matières d'effroi ;</l>
             <l n="431" xml:id="l431">C'est la raison pourquoi nous sommes descendues,</l>
             <l n="432" xml:id="l432">Et tremblantes d'horreur, et de craintes éperdues.</l>
           </sp>
-          <sp xml:id="II01-9" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II01-9">
             <speaker>SOPHONISBE</speaker>
-            <l n="433" xml:id="l433" part="I">Et le peuple ?</l>
+            <l n="433" part="I" xml:id="l433">Et le peuple ?</l>
           </sp>
-          <sp xml:id="II01-10" who="CORISBE">
+          <sp who="CORISBE" xml:id="II01-10">
             <speaker>CORISBÉ</speaker>
             <l part="F">Le peuple ! Il est sur les remparts,</l>
             <l n="434" xml:id="l434">Qui pousse vers le ciel ses cris et ses regards,</l>
@@ -679,7 +694,7 @@
             <l n="441" xml:id="l441">Mais après tant de maux, possible que les Dieux</l>
             <l n="442" xml:id="l442">Changeront aujourd'hui nos fortunes en mieux.</l>
           </sp>
-          <sp xml:id="II01-11" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II01-11">
             <speaker>SOPHONISBE</speaker>
             <l n="443" xml:id="l443">Ha ! Corisbé, le Sort a juré ma ruine,</l>
             <l n="444" xml:id="l444">Et la puissance humaine a choqué la divine ;</l>
@@ -696,7 +711,7 @@
             <l n="455" xml:id="l455">Je ne puis m'empêcher, si bien que je résiste,</l>
             <l n="456" xml:id="l456">De croire à ces derniers, qui n'ont rien que de triste.</l>
           </sp>
-          <sp xml:id="II01-12" who="PHENICE">
+          <sp who="PHENICE" xml:id="II01-12">
             <speaker>PHÉNICE</speaker>
             <l n="457" xml:id="l457">Madame, volontiers nos seules passions</l>
             <l n="458" xml:id="l458">Sans suite et sans dessein font ces impressions ;</l>
@@ -713,33 +728,37 @@
             <l n="469" xml:id="l469">Dans ces miroirs obscurs, qui donnent, quoique faux,</l>
             <l n="470" xml:id="l470">Aux crédules esprits de véritables maux.</l>
             <l n="471" xml:id="l471">Mais quelqu'un ce me semble a fait bruit à la porte,</l>
-            <l n="472" xml:id="l472" part="I">Irai-je ouvrir ?</l>
+            <l n="472" part="I" xml:id="l472">Irai-je ouvrir ?</l>
           </sp>
-          <sp xml:id="II01-13" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II01-13">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Allez, c'est quelqu'un qui m'apporte</l>
             <l n="473" xml:id="l473">La nouvelle du bien ou du mal que j'attends.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Caliodore, Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf6"><person corresp="#CALIODORE"/><person corresp="#PHENICE"/><person corresp="#SOPHONISBE"/><person corresp="#CORISBE"/></listPerson></head>
-          <sp xml:id="II02-1" who="CALIODORE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Caliodore, Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#CALIODORE"/>
+            <person corresp="#PHENICE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#CORISBE"/></listPerson></head>
+          <sp who="CALIODORE" xml:id="II02-1">
             <speaker>CALIODORE</speaker>
-            <l n="474" xml:id="l474" part="I">Ha ! Phénice, le Roi !</l>
+            <l n="474" part="I" xml:id="l474">Ha ! Phénice, le Roi !</l>
           </sp>
-          <sp xml:id="II02-2" who="PHENICE">
+          <sp who="PHENICE" xml:id="II02-2">
             <speaker>PHÉNICE</speaker>
             <l part="F">Dieux ! qu'est-ce que j'entends ?</l>
             <l n="475" xml:id="l475">Mais de grâce, de peur de surprendre la Reine,</l>
             <l n="476" xml:id="l476">Déguise-lui d'abord le sujet qui t'amène.</l>
           </sp>
-          <sp xml:id="II02-3" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="II02-3">
             <speaker>CALIODORE</speaker>
             <l n="477" xml:id="l477">Si ferai, si je puis ; mais j'appréhende bien</l>
             <l n="478" xml:id="l478">Qu'un esprit pénétrant et clair comme est le sien</l>
-            <l n="479" xml:id="l479" part="I">Ne le découvre trop.</l>
+            <l n="479" part="I" xml:id="l479">Ne le découvre trop.</l>
           </sp>
-          <sp xml:id="II02-4" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II02-4">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Eh bien, Caliodore,</l>
             <l n="480" xml:id="l480">Le destin de jadis nous poursuit-il encore ?</l>
@@ -748,7 +767,7 @@
             <l n="483" xml:id="l483">Parlez ; si peu d'espoir de mon bonheur me reste</l>
             <l n="484" xml:id="l484">Que je n'attends de vous qu'un message funeste.</l>
           </sp>
-          <sp xml:id="II02-5" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="II02-5">
             <speaker>CALIODORE</speaker>
             <l n="485" xml:id="l485">Madame, il est bien vrai que le Ciel en courroux</l>
             <l n="486" xml:id="l486">Frappe encore aujourd'hui visiblement sur nous,</l>
@@ -785,12 +804,12 @@
             <l n="517" xml:id="l517">Sans nous donner loisir de reprendre nos rangs,</l>
             <l n="518" xml:id="l518">Viennent fondre sur nous, comme deux fiers torrents.</l>
           </sp>
-          <sp xml:id="II02-6" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II02-6">
             <speaker>SOPHONISBE</speaker>
             <l n="519" xml:id="l519">Que sert de me cacher le poignard qui me tue ?</l>
             <l n="520" xml:id="l520">Non, non, il faut mourir, la bataille est perdue.</l>
           </sp>
-          <sp xml:id="II02-7" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="II02-7">
             <speaker>CALIODORE</speaker>
             <l n="521" xml:id="l521">Vous l'avez dit, Madame, et c'est la vérité ;</l>
             <l n="522" xml:id="l522">Même s'il faut tout dire à Votre Majesté,</l>
@@ -801,24 +820,24 @@
             <l n="527" xml:id="l527">Le peuple épouvanté leur ouvrira les portes,</l>
             <l n="528" xml:id="l528">Dès qu'il verra venir leurs premières cohortes.</l>
           </sp>
-          <sp xml:id="II02-8" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II02-8">
             <speaker>SOPHONISBE</speaker>
             <l n="529" xml:id="l529">Le Roi par conséquent est mort, ou prisonnier ?</l>
           </sp>
-          <sp xml:id="II02-9" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="II02-9">
             <speaker>CALIODORE</speaker>
             <l n="530" xml:id="l530">De tous nos maux publics c'est ici le dernier ;</l>
             <l n="531" xml:id="l531">Il est vrai qu'en montrant sa valeur infinie,</l>
             <l n="532" xml:id="l532">Ce prince malheureux a sa trame finie.</l>
           </sp>
-          <sp xml:id="II02-10" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II02-10">
             <speaker>SOPHONISBE</speaker>
             <l n="533" xml:id="l533">Plutôt qu'il est heureux de n'avoir pas vécu,</l>
             <l n="534" xml:id="l534">Pour être à la merci de ceux qui l'ont vaincu.</l>
             <l n="535" xml:id="l535">"Et qu'il est importun de conserver sa vie,</l>
             <l n="536" xml:id="l536">"En un temps où la mort est si digne d'envie !</l>
           </sp>
-          <sp xml:id="II02-11" who="PHENICE">
+          <sp who="PHENICE" xml:id="II02-11">
             <speaker>PHÉNICE</speaker>
             <l n="537" xml:id="l537">Madame, en un malheur si grand, et si pressant,</l>
             <l n="538" xml:id="l538">Il faut faire paraître un esprit agissant,</l>
@@ -827,20 +846,24 @@
             <l n="541" xml:id="l541">En pareil accident les pleurs sont superflus,</l>
             <l n="542" xml:id="l542">Et la perte du temps ne se répare plus.</l>
           </sp>
-          <sp xml:id="II02-12" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II02-12">
             <speaker>SOPHONISBE</speaker>
             <l n="543" xml:id="l543">Bons Dieux ! quel bruit de peuple entremêlé de plaintes</l>
             <l n="544" xml:id="l544">Replonge mon esprit en de nouvelles craintes ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Caliodore, Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf7"><person corresp="#CALIODORE"/><person corresp="#SOPHONISBE"/><person corresp="#CORISBE"/><person corresp="#PHENICE"/></listPerson></head>
-          <sp xml:id="II03-1" who="CALIODORE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Caliodore, Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#CALIODORE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#CORISBE"/>
+            <person corresp="#PHENICE"/></listPerson></head>
+          <sp who="CALIODORE" xml:id="II03-1">
             <speaker>CALIODORE</speaker>
             <l n="545" xml:id="l545">Madame, attendez-moi, j'irai voir s'il vous plaît</l>
-            <l n="546" xml:id="l546" part="I">D'où provient ce tumulte.</l>
+            <l n="546" part="I" xml:id="l546">D'où provient ce tumulte.</l>
           </sp>
-          <sp xml:id="II03-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II03-2">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Oui, sachez ce que c'est.</l>
             <stage type="[N/A]">Elle demeure seule, parlant à ses filles.</stage>
@@ -849,7 +872,7 @@
             <l n="549" xml:id="l549">Et que l'affection que vous avez pour moi</l>
             <l n="550" xml:id="l550">Mette votre disgrâce au point où je la vois ?</l>
           </sp>
-          <sp xml:id="II03-3" who="CORISBE">
+          <sp who="CORISBE" xml:id="II03-3">
             <speaker>CORISBÉ</speaker>
             <l n="551" xml:id="l551">Hé ! Madame, plaignez votre seule infortune,</l>
             <l n="552" xml:id="l552">Et souffrez qu'avec vous elle nous soit commune ;</l>
@@ -860,7 +883,7 @@
             <l n="557" xml:id="l557">Comme nous eûmes part à vos prospérités,</l>
             <l n="558" xml:id="l558">Il faut bien nous sentir de vos adversités.</l>
           </sp>
-          <sp xml:id="II03-4" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II03-4">
             <speaker>SOPHONISBE</speaker>
             <l n="559" xml:id="l559">Il faut donc à mon aide appelant mon courage,</l>
             <l n="560" xml:id="l560">Éviter par la mort la honte du servage.</l>
@@ -873,17 +896,17 @@
             <l n="567" xml:id="l567">Dépêche, et n'attends pas que Rome ait l'avantage</l>
             <l n="568" xml:id="l568">De triompher en moi de l'honneur de Carthage.</l>
           </sp>
-          <sp xml:id="II03-5" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="II03-5">
             <speaker>CALIODORE</speaker>
             <l n="569" xml:id="l569">Pour de tels commandements mon coeur a protesté</l>
             <l n="570" xml:id="l570">De n'obéir jamais à Votre Majesté.</l>
           </sp>
-          <sp xml:id="II03-6" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II03-6">
             <speaker>SOPHONISBE</speaker>
             <l n="571" xml:id="l571">Hélas ! de quel endroit espérer du remède,</l>
             <l n="572" xml:id="l572">Si les miens aujourd'hui me refusent leur aide ?</l>
           </sp>
-          <sp xml:id="II03-7" who="PHENICE">
+          <sp who="PHENICE" xml:id="II03-7">
             <speaker>PHÉNICE</speaker>
             <l n="573" xml:id="l573">Comme on ne doute point qu'un mal désespéré</l>
             <l n="574" xml:id="l574">N'ait toujours en la mort un remède assuré,</l>
@@ -895,11 +918,11 @@
             <l n="580" xml:id="l580">Pour vous rendre agréable aux yeux de Massinisse,</l>
             <l n="581" xml:id="l581">Essayez de gagner son inclination.</l>
           </sp>
-          <sp xml:id="II03-8" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II03-8">
             <speaker>SOPHONISBE</speaker>
-            <l n="582" xml:id="l582" part="I">Plût aux Dieux !</l>
+            <l n="582" part="I" xml:id="l582">Plût aux Dieux !</l>
           </sp>
-          <sp xml:id="II03-9" who="PHENICE">
+          <sp who="PHENICE" xml:id="II03-9">
             <speaker>PHÉNICE</speaker>
             <l part="F">Il est jeune, et d'une nation</l>
             <l n="583" xml:id="l583">Qui par toute l'Afrique est la plus renommée</l>
@@ -908,7 +931,7 @@
             <l n="586" xml:id="l586">Que sur un coeur numide un bel oeil doit avoir,</l>
             <l n="587" xml:id="l587">Et donnez cette épreuve à nos communes larmes.</l>
           </sp>
-          <sp xml:id="II03-10" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="II03-10">
             <speaker>SOPHONISBE</speaker>
             <l n="588" xml:id="l588">Je n'attends rien du tout du côté de mes charmes.</l>
             <l n="589" xml:id="l589">Ce remède, Phénice, est ridicule et vain ;</l>
@@ -920,11 +943,14 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I. Massinisse, Philippe, Soldats romains.<listPerson type="configuration" xml:id="conf9"><person corresp="#MASSINISSE"/><person corresp="#PHILIPPE"/><person corresp="#SOLDATS"/></listPerson></head>
-          <sp xml:id="III01-1" who="MASSINISSE">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I. Massinisse, Philippe, Soldats romains.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#MASSINISSE"/>
+            <person corresp="#PHILIPPE"/>
+            <person corresp="#SOLDATS"/></listPerson></head>
+          <sp who="MASSINISSE" xml:id="III01-1">
             <speaker>MASSINISSE</speaker>
             <l n="595" xml:id="l595">Grâce aux Dieux, cette insigne et dernière victoire</l>
             <l n="596" xml:id="l596">Me rend tous les rayons de ma première gloire.</l>
@@ -943,7 +969,7 @@
             <l n="609" xml:id="l609">Mais il nous reste encore à faire une action</l>
             <l n="610" xml:id="l610">Qui conduise ma gloire à sa perfection.</l>
           </sp>
-          <sp xml:id="III01-2" who="PHILIPPE">
+          <sp who="PHILIPPE" xml:id="III01-2">
             <speaker>Philippe.</speaker>
             <l n="611" xml:id="l611">Magnanime Empereur, disposez de nos vies ;</l>
             <l n="612" xml:id="l612">Et si vous concevez de plus hautes envies,</l>
@@ -956,7 +982,7 @@
             <l n="619" xml:id="l619">Et qui ne cèdent pas à ces vieilles phalanges,</l>
             <l n="620" xml:id="l620">Qui virent tant de mers et de terres étranges.</l>
           </sp>
-          <sp xml:id="III01-3" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III01-3">
             <speaker>MASSINISSE</speaker>
             <l n="621" xml:id="l621">Je ne refuse pas, invincibles Romains,</l>
             <l n="622" xml:id="l622">Ni ces coeurs généreux, ni ces puissantes mains,</l>
@@ -971,11 +997,11 @@
             <l n="631" xml:id="l631">Et pour l'achèvement d'une plus grande chose,</l>
             <l n="632" xml:id="l632">Que celle que je veux, et que je vous propose.</l>
           </sp>
-          <sp xml:id="III01-4" who="PHILIPPE">
+          <sp who="PHILIPPE" xml:id="III01-4">
             <speaker>Philippe.</speaker>
             <l n="633" xml:id="l633">Commandez seulement, et dites ce qu'il faut.</l>
           </sp>
-          <sp xml:id="III01-5" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III01-5">
             <speaker>MASSINISSE</speaker>
             <l n="634" xml:id="l634">Allez droit au palais, et l'emportez d'assaut,</l>
             <l n="635" xml:id="l635">S'il est vrai, comme on dit, qu'il fasse résistance ;</l>
@@ -1004,9 +1030,12 @@
             <l n="658" xml:id="l658">On ne fasse à pas une aucune indignité.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf10"><person corresp="#SOPHONISBE"/><person corresp="#PHENICE"/><person corresp="#CORISBE"/></listPerson></head>
-          <sp xml:id="III02-1" who="SOPHONISBE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#PHENICE"/>
+            <person corresp="#CORISBE"/></listPerson></head>
+          <sp who="SOPHONISBE" xml:id="III02-1">
             <speaker>SOPHONISBE</speaker>
             <l n="659" xml:id="l659">Phénice, encore un coup, tandis qu'il m'est loisible,</l>
             <l n="660" xml:id="l660">Que j'applique à mes maux un remède infaillible,</l>
@@ -1021,19 +1050,19 @@
             <l n="669" xml:id="l669">Ha ! que déjà sans vous j'aurais bien évité</l>
             <l n="670" xml:id="l670">La honte et le malheur de la captivité !</l>
           </sp>
-          <sp xml:id="III02-2" who="PHENICE">
+          <sp who="PHENICE" xml:id="III02-2">
             <speaker>PHÉNICE</speaker>
             <l n="671" xml:id="l671">Donnez-vous, s'il vous plaît, un peu de patience,</l>
             <l n="672" xml:id="l672">Et de votre beauté faites expérience ;</l>
             <l n="673" xml:id="l673">Sachez ce qu'elle vaut, et ce que vous pouvez.</l>
             <l n="674" xml:id="l674">Mais comment le savoir, si vous ne l'éprouvez ?</l>
           </sp>
-          <sp xml:id="III02-3" who="CORISBE">
+          <sp who="CORISBE" xml:id="III02-3">
             <speaker>CORISBÉ</speaker>
             <l n="675" xml:id="l675">De fait la défiance où la reine se treuve,</l>
             <l n="676" xml:id="l676">Ne peut venir d'ailleurs que d'un manque d'épreuve.</l>
           </sp>
-          <sp xml:id="III02-4" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III02-4">
             <speaker>SOPHONISBE</speaker>
             <l n="677" xml:id="l677">Corisbé, prenez garde à l'état où je suis,</l>
             <l n="678" xml:id="l678">Et par là, comme moi, voyez ce que je puis.</l>
@@ -1046,18 +1075,18 @@
             <l n="685" xml:id="l685">De sorte qu'après tout je conclus qu'il vaut mieux</l>
             <l n="686" xml:id="l686">Essayer le secours de la main que des yeux.</l>
           </sp>
-          <sp xml:id="III02-5" who="CORISBE">
+          <sp who="CORISBE" xml:id="III02-5">
             <speaker>CORISBÉ</speaker>
             <l n="687" xml:id="l687">Madame, si vos yeux n'ont pas assez d'amorce,</l>
             <l n="688" xml:id="l688">Vos mains au pis aller auront assez de force</l>
             <l n="689" xml:id="l689">Pour vous faire sentir la pointe d'un poignard.</l>
           </sp>
-          <sp xml:id="III02-6" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III02-6">
             <speaker>SOPHONISBE</speaker>
             <l n="690" xml:id="l690">Mais peut-être qu'alors je le voudrai trop tard,</l>
             <l n="691" xml:id="l691">Et que je n'aurai pas un glaive qui me tue.</l>
           </sp>
-          <sp xml:id="III02-7" who="PHENICE">
+          <sp who="PHENICE" xml:id="III02-7">
             <speaker>PHÉNICE</speaker>
             <l n="692" xml:id="l692">Ce que le fer ne peut la douleur l'effectue.</l>
             <l n="693" xml:id="l693">Tant de chemins divers conduisent au trépas</l>
@@ -1082,9 +1111,13 @@
             <l n="712" xml:id="l712">S'il exerce envers vous la moindre tyrannie.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Caliodore, Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf11"><person corresp="#CALIODORE"/><person corresp="#SOPHONISBE"/><person corresp="#PHENICE"/><person corresp="#CORISBE"/></listPerson></head>
-          <sp xml:id="III03-1" who="CALIODORE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Caliodore, Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#CALIODORE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#PHENICE"/>
+            <person corresp="#CORISBE"/></listPerson></head>
+          <sp who="CALIODORE" xml:id="III03-1">
             <speaker>Caliodore, survenant.</speaker>
             <l n="713" xml:id="l713">Madame, Massinisse est dans la grande cour,</l>
             <l n="714" xml:id="l714">Qu'on prendrait pour un temple où tout le monde accourt,</l>
@@ -1093,13 +1126,13 @@
             <l n="717" xml:id="l717">Au reste si bénin que Votre Majesté</l>
             <l n="718" xml:id="l718">Doit beaucoup espérer de son humanité.</l>
             <l n="719" xml:id="l719">Mais le degré royal retentit, ce me semble,</l>
-            <l n="720" xml:id="l720" part="I">D'un grand bruit de boucliers.</l>
+            <l n="720" part="I" xml:id="l720">D'un grand bruit de boucliers.</l>
           </sp>
-          <sp xml:id="III03-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III03-2">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Ah ! Phénice, je tremble.</l>
           </sp>
-          <sp xml:id="III03-3" who="PHENICE">
+          <sp who="PHENICE" xml:id="III03-3">
             <speaker>PHÉNICE</speaker>
             <l n="721" xml:id="l721">C'est pourtant maintenant qu'il se faut assurer,</l>
             <l n="722" xml:id="l722">Et lui tirer des traits qu'il ne puisse parer.</l>
@@ -1120,9 +1153,13 @@
             <l n="736" xml:id="l736">Comme au restaurateur des affaires d'Afrique.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Massinisse, Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf12"><person corresp="#MASSINISSE"/><person corresp="#SOPHONISBE"/><person corresp="#PHENICE"/><person corresp="#CORISBE"/></listPerson></head>
-          <sp xml:id="III04-1" who="MASSINISSE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Massinisse, Sophonisbe, Phénice, Corisbé.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#MASSINISSE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#PHENICE"/>
+            <person corresp="#CORISBE"/></listPerson></head>
+          <sp who="MASSINISSE" xml:id="III04-1">
             <speaker>Massinisse, entrant avec ses soldats.</speaker>
             <l n="737" xml:id="l737">Soldats, attendez-moi, n'entrez pas plus avant ;</l>
             <l n="738" xml:id="l738">La majesté du lieu ne veut point de suivant.</l>
@@ -1152,7 +1189,7 @@
             <l n="761" xml:id="l761">Et que votre douleur se dispose à songer</l>
             <l n="762" xml:id="l762">En quoi les miens ou moi la pouvons soulager.</l>
           </sp>
-          <sp xml:id="III04-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-2">
             <speaker>Réponse DE SOPHONISBE</speaker>
             <l n="763" xml:id="l763">C'est bien très justement, ô vainqueur magnanime,</l>
             <l n="764" xml:id="l764">Que le monde est rempli du bruit de votre estime ;</l>
@@ -1195,11 +1232,11 @@
             <l n="801" xml:id="l801">Et je me haïrais, si j'avais racheté</l>
             <l n="802" xml:id="l802">L'Empire de Syphax par une lâcheté.</l>
           </sp>
-          <sp xml:id="III04-3" who="PHENICE">
+          <sp who="PHENICE" xml:id="III04-3">
             <speaker>PHÉNICE</speaker>
-            <l n="803" xml:id="l803" part="I">Ma compagne, il se prend.</l>
+            <l n="803" part="I" xml:id="l803">Ma compagne, il se prend.</l>
           </sp>
-          <sp xml:id="III04-4" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-4">
             <speaker>MASSINISSE</speaker>
             <l part="F">Ô Dieux ! que de merveilles</l>
             <l n="804" xml:id="l804">Enchantent à la fois mes yeux et mes oreilles !</l>
@@ -1216,18 +1253,18 @@
             <l n="815" xml:id="l815">Et tout malheur le suive, au cas qu'il ne vous serve</l>
             <l n="816" xml:id="l816">Aux choses qu'il pourra, sans feinte et sans réserve.</l>
           </sp>
-          <sp xml:id="III04-5" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-5">
             <speaker>SOPHONISBE</speaker>
             <l n="817" xml:id="l817">Grand Roi, puisqu'il vous faut un sujet malheureux</l>
             <l n="818" xml:id="l818">Où pouvoir exercer vos actes généreux,</l>
             <l n="819" xml:id="l819">Pour ne me rendre pas votre grâce inutile,</l>
             <l n="820" xml:id="l820">Je ne vous ferai point de requête incivile.</l>
           </sp>
-          <sp xml:id="III04-6" who="PHENICE">
+          <sp who="PHENICE" xml:id="III04-6">
             <speaker>PHÉNICE</speaker>
             <l n="821" xml:id="l821">La victoire est à nous, ou je n'y connais rien.</l>
           </sp>
-          <sp xml:id="III04-7" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-7">
             <speaker>SOPHONISBE</speaker>
             <l n="822" xml:id="l822">Non, je ne veux de vous ni puissance ni bien ;</l>
             <l n="823" xml:id="l823">Je ne demande pas à vos mains libérales</l>
@@ -1249,29 +1286,29 @@
             <l n="839" xml:id="l839">Par ces vaillantes mains toujours victorieuses,</l>
             <l n="840" xml:id="l840">Bref par vos actions en tout si glorieuses.</l>
           </sp>
-          <sp xml:id="III04-8" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-8">
             <speaker>MASSINISSE</speaker>
             <l n="841" xml:id="l841">Dieux ! faut-il qu'un vainqueur expire sous les coups</l>
             <l n="842" xml:id="l842">De ceux qu'il a vaincus ? Madame, levez-vous.</l>
           </sp>
-          <sp xml:id="III04-9" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-9">
             <speaker>SOPHONISBE</speaker>
             <l n="843" xml:id="l843">Non, Seigneur, que mes pleurs n'obtiennent ma demande.</l>
           </sp>
-          <sp xml:id="III04-10" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-10">
             <speaker>MASSINISSE</speaker>
             <l n="844" xml:id="l844">Vous obtenez encore une chose plus grande</l>
             <l n="845" xml:id="l845">C'est un coeur que beauté n'a jamais asservi,</l>
             <l n="846" xml:id="l846">Et que présentement la vôtre m'a ravi.</l>
           </sp>
-          <sp xml:id="III04-11" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-11">
             <speaker>SOPHONISBE</speaker>
             <l n="847" xml:id="l847">En l'état où je suis, il faut bien que j'endure</l>
             <l n="848" xml:id="l848">L'outrageuse rigueur de votre procédure :</l>
             <l n="849" xml:id="l849">Mais sachez que jamais un généreux vainqueur</l>
             <l n="850" xml:id="l850">N'affligea son vaincu d'un langage moqueur.</l>
           </sp>
-          <sp xml:id="III04-12" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-12">
             <speaker>MASSINISSE</speaker>
             <l n="851" xml:id="l851">Ah ! Madame, perdez cette injuste créance</l>
             <l n="852" xml:id="l852">Qui dans sa fausseté me nuit et vous offense ;</l>
@@ -1286,7 +1323,7 @@
             <l n="861" xml:id="l861">Mes transports violents, et mes soupirs non feints,</l>
             <l n="862" xml:id="l862">Vous découvrent assez le mal dont je me plains.</l>
           </sp>
-          <sp xml:id="III04-13" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-13">
             <speaker>SOPHONISBE</speaker>
             <l n="863" xml:id="l863">Certes ma vanité serait trop ridicule,</l>
             <l n="864" xml:id="l864">Ou j'aurais un esprit extrêmement crédule,</l>
@@ -1296,7 +1333,7 @@
             <l n="868" xml:id="l868">Je conservasse encore des beautés et des charmes</l>
             <l n="869" xml:id="l869">Capables d'exciter une ardente amitié.</l>
           </sp>
-          <sp xml:id="III04-14" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-14">
             <speaker>MASSINISSE</speaker>
             <l n="870" xml:id="l870">Il est vrai que d'abord j'ai senti la pitié ;</l>
             <l n="871" xml:id="l871">Mais comme le Soleil suit les pas de l'Aurore,</l>
@@ -1304,21 +1341,21 @@
             <l n="873" xml:id="l873">A fait en un instant dans mon coeur embrasé</l>
             <l n="874" xml:id="l874">Le plus grand changement qu'il ait jamais causé.</l>
           </sp>
-          <sp xml:id="III04-15" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-15">
             <speaker>SOPHONISBE</speaker>
             <l n="875" xml:id="l875">Il est trop violent pour être de durée.</l>
           </sp>
-          <sp xml:id="III04-16" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-16">
             <speaker>MASSINISSE</speaker>
             <l n="876" xml:id="l876">Oui, car en peu de temps la mort m'est assurée</l>
             <l n="877" xml:id="l877">Si vous ne consolez d'un traitement plus doux</l>
             <l n="878" xml:id="l878">Celui qui désormais ne peut vivre sans vous.</l>
           </sp>
-          <sp xml:id="III04-17" who="CORISBE">
+          <sp who="CORISBE" xml:id="III04-17">
             <speaker>CORISBÉ</speaker>
             <l n="879" xml:id="l879">Comme de plus en plus cet esprit s'embarrasse !</l>
           </sp>
-          <sp xml:id="III04-18" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-18">
             <speaker>MASSINISSE</speaker>
             <l n="880" xml:id="l880">Donnez-moi l'un des deux, la mort, ou votre grâce.</l>
             <l n="881" xml:id="l881">Nous vous en conjurons mes passions et moi,</l>
@@ -1337,7 +1374,7 @@
             <l n="894" xml:id="l894">Que ce fer par vos mains l'immole à vos genoux,</l>
             <l n="895" xml:id="l895">Victime infortunée et d'amour et de haine.</l>
           </sp>
-          <sp xml:id="III04-19" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-19">
             <speaker>SOPHONISBE</speaker>
             <l n="896" xml:id="l896">Votre mort au contraire augmenterait ma peine ;</l>
             <l n="897" xml:id="l897">Mais plaignez, ô grand roi, votre sort et le mien,</l>
@@ -1345,19 +1382,19 @@
             <l n="899" xml:id="l899">Je vous plains de souffrir, et moi je suis à plaindre</l>
             <l n="900" xml:id="l900">D'allumer un brasier que je ne puis éteindre.</l>
           </sp>
-          <sp xml:id="III04-20" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-20">
             <speaker>MASSINISSE</speaker>
             <l n="901" xml:id="l901">Quand on n'a point de coeur, ou qu'il est endurci...</l>
           </sp>
-          <sp xml:id="III04-21" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-21">
             <speaker>SOPHONISBE</speaker>
             <l n="902" xml:id="l902">C'est pour en avoir trop que je vous parle ainsi.</l>
           </sp>
-          <sp xml:id="III04-22" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-22">
             <speaker>MASSINISSE</speaker>
             <l n="903" xml:id="l903">Ce discours cache un sens que je ne puis entendre.</l>
           </sp>
-          <sp xml:id="III04-23" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-23">
             <speaker>SOPHONISBE</speaker>
             <l n="904" xml:id="l904">Ce discours toutefois est facile à comprendre</l>
             <l n="905" xml:id="l905">Le déplorable état de ma condition</l>
@@ -1373,7 +1410,7 @@
             <l n="915" xml:id="l915">Mais j'ai cru jusqu'ici que votre âme est trop haute</l>
             <l n="916" xml:id="l916">Pour le simple penser d'une si lâche faute.</l>
           </sp>
-          <sp xml:id="III04-24" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-24">
             <speaker>MASSINISSE</speaker>
             <l n="917" xml:id="l917">Croyez-le encore, Madame, et sachez qu'en ce point</l>
             <l n="918" xml:id="l918">Votre créance et moi ne vous tromperons point.</l>
@@ -1382,14 +1419,14 @@
             <l n="921" xml:id="l921">Puisque Syphax n'est plus, il ne tiendra qu'à vous</l>
             <l n="922" xml:id="l922">D'avoir en Massinisse un légitime époux.</l>
           </sp>
-          <sp xml:id="III04-25" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-25">
             <speaker>SOPHONISBE</speaker>
             <l n="923" xml:id="l923">Quelles reines au monde en beautés si parfaites</l>
             <l n="924" xml:id="l924">Ont jamais mérité l'honneur que vous me faites ?</l>
             <l n="925" xml:id="l925">Ô merveilleux excès de grâce et de bonheur</l>
             <l n="926" xml:id="l926">Qui met une captive au lit de son seigneur !</l>
           </sp>
-          <sp xml:id="III04-26" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="III04-26">
             <speaker>MASSINISSE</speaker>
             <l n="927" xml:id="l927">Puisque vous me rendez le plus heureux des hommes</l>
             <l n="928" xml:id="l928">Ma violente ardeur, et le temps où nous sommes,</l>
@@ -1412,21 +1449,21 @@
             <l n="944" xml:id="l944">Que m'arracher de vous, c'est m'ôter à moi-même.</l>
             <stage type="exit">Il s'en va.</stage>
           </sp>
-          <sp xml:id="III04-27" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-27">
             <speaker>SOPHONISBE</speaker>
             <l n="945" xml:id="l945">Ô miracle d'amour à nul autre pareil !</l>
           </sp>
-          <sp xml:id="III04-28" who="PHENICE">
+          <sp who="PHENICE" xml:id="III04-28">
             <speaker>PHÉNICE</speaker>
             <l n="946" xml:id="l946">Peut-être une autre fois vous suivrez mon conseil ?</l>
           </sp>
-          <sp xml:id="III04-29" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-29">
             <speaker>SOPHONISBE</speaker>
             <l n="947" xml:id="l947">Ha ! Phénice, il est vrai qu'une telle merveille</l>
             <l n="948" xml:id="l948">Fait que très justement je doute que je veille,</l>
             <l n="949" xml:id="l949">Et qu'un songe trompeur n'abuse mes esprits.</l>
           </sp>
-          <sp xml:id="III04-30" who="PHENICE">
+          <sp who="PHENICE" xml:id="III04-30">
             <speaker>PHÉNICE</speaker>
             <l n="950" xml:id="l950">Madame, le Numide est tellement épris,</l>
             <l n="951" xml:id="l951">Son brasier est si grand, qu'il ne vous faut pas craindre</l>
@@ -1449,7 +1486,7 @@
             <l n="968" xml:id="l968">Au rétablissement du bien de vos affaires.</l>
             <l n="969" xml:id="l969">Mais quel sujet, Madame, avez-vous de rêver ?</l>
           </sp>
-          <sp xml:id="III04-31" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-31">
             <speaker>SOPHONISBE</speaker>
             <l n="970" xml:id="l970">Phénice, je ne sais ce qui doit m'arriver,</l>
             <l n="971" xml:id="l971">Mais quelque doux présent que le bonheur m'envoie,</l>
@@ -1459,7 +1496,7 @@
             <l n="975" xml:id="l975">Certes son amitié jointe à la bienséance</l>
             <l n="976" xml:id="l976">Me donne du remords et de la répugnance.</l>
           </sp>
-          <sp xml:id="III04-32" who="CORISBE">
+          <sp who="CORISBE" xml:id="III04-32">
             <speaker>CORISBÉ</speaker>
             <l n="977" xml:id="l977">Madame, il est bien vrai qu'en une autre saison</l>
             <l n="978" xml:id="l978">Vous auriez ces pensers avec juste raison ;</l>
@@ -1470,18 +1507,21 @@
             <l n="983" xml:id="l983">Celles de votre rang sont toujours dispensées</l>
             <l n="984" xml:id="l984">D'attacher leur conduite à toutes ces pensées.</l>
           </sp>
-          <sp xml:id="III04-33" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="III04-33">
             <speaker>SOPHONISBE</speaker>
             <l n="985" xml:id="l985">Allons donc travailler à notre liberté,</l>
             <l n="986" xml:id="l986">Et cédons aux rigueurs de la nécessité.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE I. Massinisse, Sophonisbe, puis Ariston.<listPerson type="configuration" xml:id="conf14"><person corresp="#MASSINISSE"/><person corresp="#SOPHONISBE"/><person corresp="#ARISTON"/></listPerson></head>
-          <sp xml:id="IV01-1" who="MASSINISSE">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE I. Massinisse, Sophonisbe, puis Ariston.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#MASSINISSE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#ARISTON"/></listPerson></head>
+          <sp who="MASSINISSE" xml:id="IV01-1">
             <speaker>MASSINISSE</speaker>
             <l n="987" xml:id="l987">Quelque insigne bonheur dont je sois redevable</l>
             <l n="988" xml:id="l988">Aux caresses du Sort qui m'est si favorable,</l>
@@ -1508,7 +1548,7 @@
             <l n="1009" xml:id="l1009">Mes désirs toutefois ont accru de moitié</l>
             <l n="1010" xml:id="l1010">Depuis que j'ai connu votre ardente amitié.</l>
           </sp>
-          <sp xml:id="IV01-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-2">
             <speaker>SOPHONISBE</speaker>
             <l n="1011" xml:id="l1011">Il me faudrait la voix de l'Éloquence même</l>
             <l n="1012" xml:id="l1012">Pour vous représenter à quel point je vous aime.</l>
@@ -1523,23 +1563,23 @@
             <l n="1021" xml:id="l1021">Et qu'en pareil degré de fortune et d'ennui,</l>
             <l n="1022" xml:id="l1022">Ce qu'il a fait pour moi, je l'aurais fait pour lui.</l>
           </sp>
-          <sp xml:id="IV01-3" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-3">
             <speaker>MASSINISSE</speaker>
             <l n="1023" xml:id="l1023">Je ne veux pour témoin des choses que vous dites</l>
-            <l n="1024" xml:id="l1024" part="I">Que mon propre bonheur.</l>
+            <l n="1024" part="I" xml:id="l1024">Que mon propre bonheur.</l>
           </sp>
-          <sp xml:id="IV01-4" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-4">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Mais vos propres mérites.</l>
           </sp>
-          <sp xml:id="IV01-5" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-5">
             <speaker>MASSINISSE</speaker>
             <l n="1025" xml:id="l1025">À propos où naquit, en quel temps et pourquoi,</l>
             <l n="1026" xml:id="l1026">La bonne volonté que vous avez pour moi ?</l>
             <l n="1027" xml:id="l1027">De grâce accordez-moi le plaisir de l'entendre,</l>
-            <l n="1028" xml:id="l1028" part="I">Vous plaît-il ?</l>
+            <l n="1028" part="I" xml:id="l1028">Vous plaît-il ?</l>
           </sp>
-          <sp xml:id="IV01-6" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-6">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Volontiers, je m'en vais vous l'apprendre.</l>
             <l n="1029" xml:id="l1029">Vous savez qu'autrefois nous fûmes sur le point</l>
@@ -1579,7 +1619,7 @@
             <l n="1063" xml:id="l1063">Et que la guérison qui s'en est ensuivie</l>
             <l n="1064" xml:id="l1064">Me le fera bénir tout le temps de ma vie.</l>
           </sp>
-          <sp xml:id="IV01-7" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-7">
             <speaker>MASSINISSE</speaker>
             <l n="1065" xml:id="l1065">Certes je suis heureux d'une telle façon</l>
             <l n="1066" xml:id="l1066">Que ma prospérité me donne du soupçon :</l>
@@ -1593,53 +1633,53 @@
             <l n="1074" xml:id="l1074">Que répandrait sur nous la colère du Ciel !</l>
             <l n="1075" xml:id="l1075">Mais que veut ce soldat couvert à la romaine ?</l>
             <l n="1076" xml:id="l1076">Ha ! mon cher Ariston, quel sujet vous amène ?</l>
-            <l n="1077" xml:id="l1077" part="I">Et que fait Scipion ?</l>
+            <l n="1077" part="I" xml:id="l1077">Et que fait Scipion ?</l>
           </sp>
-          <sp xml:id="IV01-8" who="ARISTON">
+          <sp who="ARISTON" xml:id="IV01-8">
             <speaker>Ariston.</speaker>
             <l part="F">Sire, il vient d'arriver,</l>
             <l n="1078" xml:id="l1078">Qui vous mande par moi de le venir trouver.</l>
           </sp>
-          <sp xml:id="IV01-9" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-9">
             <speaker>MASSINISSE</speaker>
-            <l n="1079" xml:id="l1079" part="I">Où l'avez-vous laissé ?</l>
+            <l n="1079" part="I" xml:id="l1079">Où l'avez-vous laissé ?</l>
           </sp>
-          <sp xml:id="IV01-10" who="ARISTON">
+          <sp who="ARISTON" xml:id="IV01-10">
             <speaker>Ariston.</speaker>
             <l part="F">Dans la salle prochaine,</l>
             <l n="1080" xml:id="l1080">Où seulement Lélie avec lui se promène.</l>
           </sp>
-          <sp xml:id="IV01-11" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-11">
             <speaker>MASSINISSE</speaker>
             <l n="1081" xml:id="l1081">Oui, j'irai le treuver dans un moment d'ici.</l>
             <stage type="exit">Ariston sort.</stage>
           </sp>
-          <sp xml:id="IV01-12" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-12">
             <speaker>SOPHONISBE</speaker>
             <l n="1082" xml:id="l1082">Je n'attends rien de bon de ce message-ci ;</l>
             <l n="1083" xml:id="l1083">Ce nom de Scipion m'est de mauvais présage.</l>
           </sp>
-          <sp xml:id="IV01-13" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-13">
             <speaker>MASSINISSE</speaker>
-            <l n="1084" xml:id="l1084" part="I">Ô Dieux !</l>
+            <l n="1084" part="I" xml:id="l1084">Ô Dieux !</l>
           </sp>
-          <sp xml:id="IV01-14" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-14">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Eh quoi, Seigneur, vous changez de visage ?</l>
             <l n="1085" xml:id="l1085">Quel sujet avez-vous de vous inquiéter ?</l>
           </sp>
-          <sp xml:id="IV01-15" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-15">
             <speaker>MASSINISSE</speaker>
             <l n="1086" xml:id="l1086">Nul, que le déplaisir que j'ai de vous quitter.</l>
           </sp>
-          <sp xml:id="IV01-16" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-16">
             <speaker>SOPHONISBE</speaker>
             <l n="1087" xml:id="l1087">Un si prompt changement marque encore autre chose,</l>
             <l n="1088" xml:id="l1088">Et votre inquiétude a tout une autre cause ;</l>
             <l n="1089" xml:id="l1089">Dites la vérité, vous craignez le pouvoir</l>
             <l n="1090" xml:id="l1090">De celui qui vous mande, et que vous allez voir ?</l>
           </sp>
-          <sp xml:id="IV01-17" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-17">
             <speaker>MASSINISSE</speaker>
             <l n="1091" xml:id="l1091">Il est vrai que je crains que ce courage austère</l>
             <l n="1092" xml:id="l1092">N'empêche nos plaisirs, ou qu'il ne les altère ;</l>
@@ -1654,7 +1694,7 @@
             <l n="1101" xml:id="l1101">Mais que vif aux Enfers je sois précipité,</l>
             <l n="1102" xml:id="l1102">Si jamais je consens à cette lâcheté !</l>
           </sp>
-          <sp xml:id="IV01-18" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-18">
             <speaker>SOPHONISBE</speaker>
             <l n="1103" xml:id="l1103">Que je perde plutôt la lumière céleste</l>
             <l n="1104" xml:id="l1104">Que de voir mon amour vous devenir funeste !</l>
@@ -1677,37 +1717,39 @@
             <l n="1121" xml:id="l1121">Que vous devez souffrir des maux qu'on me fera,</l>
             <l n="1122" xml:id="l1122">Et que c'est de tous deux que l'on triomphera.</l>
           </sp>
-          <sp xml:id="IV01-19" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-19">
             <speaker>MASSINISSE</speaker>
             <l n="1123" xml:id="l1123">J'ai pour vous trop d'amour, pour moi trop de courage,</l>
             <l n="1124" xml:id="l1124">Pour souffrir, sans me perdre, un si sensible outrage ;</l>
             <l n="1125" xml:id="l1125">Mais on n'en viendra pas à cette extrémité.</l>
           </sp>
-          <sp xml:id="IV01-20" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-20">
             <speaker>SOPHONISBE</speaker>
             <l n="1126" xml:id="l1126">Je connais Scipion et sa sévérité.</l>
           </sp>
-          <sp xml:id="IV01-21" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-21">
             <speaker>MASSINISSE</speaker>
             <l n="1127" xml:id="l1127">Je vous donne ma foi que, quoi qu'il en arrive,</l>
             <l n="1128" xml:id="l1128">Rome ne verra point Sophonisbe captive.</l>
           </sp>
-          <sp xml:id="IV01-22" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-22">
             <speaker>SOPHONISBE</speaker>
-            <l n="1129" xml:id="l1129" part="I">Me le promettez-vous ?</l>
+            <l n="1129" part="I" xml:id="l1129">Me le promettez-vous ?</l>
           </sp>
-          <sp xml:id="IV01-23" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV01-23">
             <speaker>MASSINISSE</speaker>
             <l part="F">Oui, je vous le promets.</l>
           </sp>
-          <sp xml:id="IV01-24" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="IV01-24">
             <speaker>SOPHONISBE</speaker>
             <l n="1130" xml:id="l1130">Allons donc, mon esprit est content désormais.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Scipion, Lélie.<listPerson type="configuration" xml:id="conf15"><person corresp="#SCIPION"/><person corresp="#LELIE"/></listPerson></head>
-          <sp xml:id="IV02-1" who="SCIPION">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Scipion, Lélie.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#SCIPION"/>
+            <person corresp="#LELIE"/></listPerson></head>
+          <sp who="SCIPION" xml:id="IV02-1">
             <speaker>SCIPION</speaker>
             <l n="1131" xml:id="l1131">Mais vous qui par un long et familier usage</l>
             <l n="1132" xml:id="l1132">Vous devez mieux connaître en cet esprit volage,</l>
@@ -1715,21 +1757,21 @@
             <l n="1134" xml:id="l1134">Est-ce la violence, ou si c'est la douceur ?</l>
             <l n="1135" xml:id="l1135">Et duquel maintenant faut-il que je me serve ?</l>
           </sp>
-          <sp xml:id="IV02-2" who="LELIE">
+          <sp who="LELIE" xml:id="IV02-2">
             <speaker>LÉLIE</speaker>
             <l n="1136" xml:id="l1136">L'un perd souvente fois ce que l'autre conserve ;</l>
             <l n="1137" xml:id="l1137">Je crois que le dernier y fera plus que tout.</l>
           </sp>
-          <sp xml:id="IV02-3" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV02-3">
             <speaker>SCIPION</speaker>
             <l n="1138" xml:id="l1138">Et moi, que le premier en viendra mieux à bout.</l>
           </sp>
-          <sp xml:id="IV02-4" who="LELIE">
+          <sp who="LELIE" xml:id="IV02-4">
             <speaker>LÉLIE</speaker>
             <l n="1139" xml:id="l1139">La douceur néanmoins est le meilleur dictame</l>
             <l n="1140" xml:id="l1140">Que l'on puisse appliquer aux maux d'une belle âme.</l>
           </sp>
-          <sp xml:id="IV02-5" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV02-5">
             <speaker>SCIPION</speaker>
             <l n="1141" xml:id="l1141">Mais, quand une belle âme a perdu la raison,</l>
             <l n="1142" xml:id="l1142">Ce remède est sans force, ou n'est plus de saison ;</l>
@@ -1753,9 +1795,11 @@
             <l n="1160" xml:id="l1160">Que nos gardes sans bruit s'assurent de la reine.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Massinisse, Scipion.<listPerson type="configuration" xml:id="conf16"><person corresp="#SCIPION"/><person corresp="#MASSINISSE"/></listPerson></head>
-          <sp xml:id="IV03-1" who="SCIPION">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Massinisse, Scipion.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#SCIPION"/>
+            <person corresp="#MASSINISSE"/></listPerson></head>
+          <sp who="SCIPION" xml:id="IV03-1">
             <speaker>SCIPION</speaker>
             <l n="1161" xml:id="l1161">Eh bien, cher Massinisse, est-il sous le soleil</l>
             <l n="1162" xml:id="l1162">Un roi dont le bonheur soit au vôtre pareil ?</l>
@@ -1780,7 +1824,7 @@
             <l n="1181" xml:id="l1181">Ôtez-nous donc de doute, et faites, s'il vous plaît,</l>
             <l n="1182" xml:id="l1182">Que nous sachions de vous la chose comme elle est.</l>
           </sp>
-          <sp xml:id="IV03-2" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV03-2">
             <speaker>MASSINISSE</speaker>
             <l n="1183" xml:id="l1183">Ici le sens commun ne veut pas que je cache</l>
             <l n="1184" xml:id="l1184">Ce qu'il faut aussi bien que tout le monde sache ;</l>
@@ -1807,7 +1851,7 @@
             <l n="1205" xml:id="l1205">Et quelle grâce enfin puis-je attendre de lui,</l>
             <l n="1206" xml:id="l1206">Si par ses sentiments il juge ceux d'autrui ?</l>
           </sp>
-          <sp xml:id="IV03-3" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV03-3">
             <speaker>SCIPION</speaker>
             <l n="1207" xml:id="l1207">Il est vrai que toujours j'ai gardé ma franchise</l>
             <l n="1208" xml:id="l1208">De se prendre aux filets où la vôtre s'est prise,</l>
@@ -1854,29 +1898,29 @@
             <l n="1249" xml:id="l1249">C'est par là seulement que vous seront rendus</l>
             <l n="1250" xml:id="l1250">Le repos et l'honneur, que vous avez perdus.</l>
           </sp>
-          <sp xml:id="IV03-4" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV03-4">
             <speaker>MASSINISSE</speaker>
             <l n="1251" xml:id="l1251">Quel honneur, ô grands Dieux ! et quel repos en l'âme</l>
             <l n="1252" xml:id="l1252">Peut avoir un mari d'abandonner sa femme ?</l>
           </sp>
-          <sp xml:id="IV03-5" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV03-5">
             <speaker>SCIPION</speaker>
             <l n="1253" xml:id="l1253">N'ayant pu l'épouser, puisqu'elle était à nous,</l>
             <l n="1254" xml:id="l1254">Ce mariage est nul au jugement de tous.</l>
           </sp>
-          <sp xml:id="IV03-6" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV03-6">
             <speaker>MASSINISSE</speaker>
             <l n="1255" xml:id="l1255">Et la force et le droit veulent que je la rende ;</l>
             <l n="1256" xml:id="l1256">Elle est vôtre, il est vrai, mais je vous la demande.</l>
           </sp>
-          <sp xml:id="IV03-7" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV03-7">
             <speaker>SCIPION</speaker>
             <l n="1257" xml:id="l1257">Je ferais une faute indigne de pardon,</l>
             <l n="1258" xml:id="l1258">Si je vous octroyais un si funeste don.</l>
             <l n="1259" xml:id="l1259">Accorder ce présent à l'ardeur qui vous brûle,</l>
             <l n="1260" xml:id="l1260">Ce serait vous donner la chemise d'Hercule.</l>
           </sp>
-          <sp xml:id="IV03-8" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV03-8">
             <speaker>MASSINISSE</speaker>
             <l n="1261" xml:id="l1261">S'il m'est permis ici de vous rendre présents</l>
             <l n="1262" xml:id="l1262">Les services rendus dès mes plus jeunes ans,</l>
@@ -1895,7 +1939,7 @@
             <l n="1275" xml:id="l1275">Faites-moi donc encor cette dernière grâce,</l>
             <l n="1276" xml:id="l1276">Par ces mains que je baise, et ces pieds que j'embrasse.</l>
           </sp>
-          <sp xml:id="IV03-9" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV03-9">
             <speaker>SCIPION</speaker>
             <l n="1277" xml:id="l1277">Levez-vous, Massinisse, et vous ressouvenez</l>
             <l n="1278" xml:id="l1278">De conserver l'honneur du rang que vous tenez.</l>
@@ -1909,7 +1953,7 @@
             <l n="1286" xml:id="l1286">Que rien ne peut changer cet immuable arrêt</l>
             <l n="1287" xml:id="l1287">Nécessaire au salut de la chose publique.</l>
           </sp>
-          <sp xml:id="IV03-10" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV03-10">
             <speaker>MASSINISSE</speaker>
             <l n="1288" xml:id="l1288">Ô mortelle sentence ! ô décret tyrannique !</l>
             <l n="1289" xml:id="l1289">Quoi donc ? de tant de coups mon estomac ouvert,</l>
@@ -1932,20 +1976,23 @@
             <l n="1306" xml:id="l1306">Et sourd à la prière, et sourd à la pitié !</l>
             <stage type="[N/A]">Ici il se pourmène sans rien dire.</stage>
           </sp>
-          <sp xml:id="IV03-11" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV03-11">
             <speaker>SCIPION</speaker>
             <l n="1307" xml:id="l1307">Laissons-le un peu nager dans la mélancolie</l>
             <l n="1308" xml:id="l1308">Et nous servons après de l'esprit de Lélie.</l>
-            <l n="1309" xml:id="l1309" part="I">Bon, il vient à propos.</l>
+            <l n="1309" part="I" xml:id="l1309">Bon, il vient à propos.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Lélie, Scipion, Massinisse.<listPerson type="configuration" xml:id="conf17"><person corresp="#LELIE"/><person corresp="#SCIPION"/><person corresp="#MASSINISSE"/></listPerson></head>
-          <sp xml:id="IV04-1" who="LELIE">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Lélie, Scipion, Massinisse.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#LELIE"/>
+            <person corresp="#SCIPION"/>
+            <person corresp="#MASSINISSE"/></listPerson></head>
+          <sp who="LELIE" xml:id="IV04-1">
             <speaker>LÉLIE</speaker>
             <l part="F">Eh bien, se rend-il pas ?</l>
           </sp>
-          <sp xml:id="IV04-2" who="SCIPION">
+          <sp who="SCIPION" xml:id="IV04-2">
             <speaker>SCIPION</speaker>
             <l n="1310" xml:id="l1310">Vous voyez comme il rêve et chemine à grands pas ;</l>
             <l n="1311" xml:id="l1311">Adieu, je vous laisse, essayez, je vous prie,</l>
@@ -1954,46 +2001,46 @@
             <l n="1314" xml:id="l1314">Et moi, je ferai mieux de ne pas l'écouter.</l>
             <stage type="[N/A]">Il rentre.</stage>
           </sp>
-          <sp xml:id="IV04-3" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV04-3">
             <speaker>MASSINISSE</speaker>
             <l n="1315" xml:id="l1315">Non, je n'en ferai rien, la chose est résolue,</l>
             <l n="1316" xml:id="l1316">Ou l'on m'y contraindra de puissance absolue.</l>
           </sp>
-          <sp xml:id="IV04-4" who="LELIE">
+          <sp who="LELIE" xml:id="IV04-4">
             <speaker>LÉLIE</speaker>
             <l n="1317" xml:id="l1317">Ces mots interrompus de soupirs redoublés</l>
             <l n="1318" xml:id="l1318">Montrent qu'il a les sens extrêmement troublés ;</l>
             <l n="1319" xml:id="l1319">Les tragiques pensers où je vois qu'il se plonge</l>
             <l n="1320" xml:id="l1320">Irritent sa fureur, et l'ennui qui le ronge ;</l>
             <l n="1321" xml:id="l1321">C'est pourquoi de bonne heure il faut l'en divertir ;</l>
-            <l n="1322" xml:id="l1322" part="I">Eh quoi ?</l>
+            <l n="1322" part="I" xml:id="l1322">Eh quoi ?</l>
           </sp>
-          <sp xml:id="IV04-5" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV04-5">
             <speaker>MASSINISSE</speaker>
             <l part="F">Non, Scipion, je n'y puis consentir...</l>
           </sp>
-          <sp xml:id="IV04-6" who="LELIE">
+          <sp who="LELIE" xml:id="IV04-6">
             <speaker>LÉLIE</speaker>
             <l n="1323" xml:id="l1323">L'excès de sa douleur l'aveugle et le transporte.</l>
             <l n="1324" xml:id="l1324">Quoi, vous méconnaissez vos amis de la sorte ?</l>
           </sp>
-          <sp xml:id="IV04-7" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV04-7">
             <speaker>MASSINISSE</speaker>
             <l n="1325" xml:id="l1325">Ha ! Lélie, il est vrai que je croyais parler</l>
-            <l n="1326" xml:id="l1326" part="I">À cet inexorable.</l>
+            <l n="1326" part="I" xml:id="l1326">À cet inexorable.</l>
           </sp>
-          <sp xml:id="IV04-8" who="LELIE">
+          <sp who="LELIE" xml:id="IV04-8">
             <speaker>LÉLIE</speaker>
             <l part="F">Il vient de s'en aller,</l>
-            <l n="1327" xml:id="l1327" part="I">Qui plaint votre aventure.</l>
+            <l n="1327" part="I" xml:id="l1327">Qui plaint votre aventure.</l>
           </sp>
-          <sp xml:id="IV04-9" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV04-9">
             <speaker>MASSINISSE</speaker>
             <l part="F">Ô ridicule chose !</l>
             <l n="1328" xml:id="l1328">Il plaint mon aventure, et c'est lui qui la cause.</l>
             <l n="1329" xml:id="l1329">Ha ! qu'un parfait ami se trouve rarement !</l>
           </sp>
-          <sp xml:id="IV04-10" who="LELIE">
+          <sp who="LELIE" xml:id="IV04-10">
             <speaker>LÉLIE</speaker>
             <l n="1330" xml:id="l1330">Croyez que Scipion vous aime assurément ;</l>
             <l n="1331" xml:id="l1331">Il vous aime, et surtout, c'est en cette rencontre</l>
@@ -2021,7 +2068,7 @@
             <l n="1353" xml:id="l1353">Voyez si sans sujet nous craignons aujourd'hui</l>
             <l n="1354" xml:id="l1354">Que le même rocher ne vous perde avec lui.</l>
           </sp>
-          <sp xml:id="IV04-11" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="IV04-11">
             <speaker>MASSINISSE</speaker>
             <l n="1355" xml:id="l1355">Croyez, mon cher Lélie, avec certitude,</l>
             <l n="1356" xml:id="l1356">Que sur tous actes noirs je hais l'ingratitude,</l>
@@ -2036,9 +2083,9 @@
             <l n="1365" xml:id="l1365">Qu'on ôtera plutôt les feux du firmament ;</l>
             <l n="1366" xml:id="l1366">Enfin qu'il ait pitié d'un misérable amant.</l>
             <l n="1367" xml:id="l1367">Tâchez de m'adoucir ce courage insensible,</l>
-            <l n="1368" xml:id="l1368" part="I">Je n'espère qu'en vous.</l>
+            <l n="1368" part="I" xml:id="l1368">Je n'espère qu'en vous.</l>
           </sp>
-          <sp xml:id="IV04-12" who="LELIE">
+          <sp who="LELIE" xml:id="IV04-12">
             <speaker>LÉLIE</speaker>
             <l part="F">J'y ferai mon possible.</l>
             <l n="1369" xml:id="l1369">Pauvre esprit aveuglé, qui ne reconnais pas</l>
@@ -2048,11 +2095,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf19"><person corresp="#MASSINISSE"/></listPerson></head>
-          <sp xml:id="V01-1" who="MASSINISSE">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#MASSINISSE"/></listPerson></head>
+          <sp who="MASSINISSE" xml:id="V01-1">
             <speaker>MASSINISSE, seul.</speaker>
             <l n="1373" xml:id="l1373">Que les Dieux, tout parfaits de nature qu'ils sont,</l>
             <l n="1374" xml:id="l1374">Témoignent d'inconstance aux présents qu'ils nous font !</l>
@@ -2104,14 +2152,16 @@
             <l n="1420" xml:id="l1420">Sus, mon coeur, à ce coup arme-toi de constance.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Lélie, Massinisse.<listPerson type="configuration" xml:id="conf20"><person corresp="#MASSINISSE"/><person corresp="#LELIE"/></listPerson></head>
-          <sp xml:id="V02-1" who="MASSINISSE">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Lélie, Massinisse.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#MASSINISSE"/>
+            <person corresp="#LELIE"/></listPerson></head>
+          <sp who="MASSINISSE" xml:id="V02-1">
             <speaker>MASSINISSE</speaker>
             <l n="1421" xml:id="l1421">Eh bien, mon cher Lélie, irons-nous à la mort ?</l>
             <l n="1422" xml:id="l1422">Venez-vous m'annoncer le naufrage ou le port ?</l>
           </sp>
-          <sp xml:id="V02-2" who="LELIE">
+          <sp who="LELIE" xml:id="V02-2">
             <speaker>LÉLIE</speaker>
             <l n="1423" xml:id="l1423">Sire, c'est à regret que je suis le ministre</l>
             <l n="1424" xml:id="l1424">Et le triste porteur d'un mandement sinistre ;</l>
@@ -2120,7 +2170,7 @@
             <l n="1427" xml:id="l1427">Comme chose au public utile et nécessaire.</l>
             <l n="1428" xml:id="l1428">Avisez maintenant de ce que vous voulez faire.</l>
           </sp>
-          <sp xml:id="V02-3" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-3">
             <speaker>MASSINISSE</speaker>
             <l n="1429" xml:id="l1429">Me perdre, et par ma mort apprendre à tous les rois</l>
             <l n="1430" xml:id="l1430">À ne suivre jamais ni vos moeurs ni vos lois,</l>
@@ -2129,13 +2179,13 @@
             <l n="1433" xml:id="l1433">Et qui pour témoigner que tout vous est permis,</l>
             <l n="1434" xml:id="l1434">Traitez vos alliés comme vos ennemis.</l>
           </sp>
-          <sp xml:id="V02-4" who="LELIE">
+          <sp who="LELIE" xml:id="V02-4">
             <speaker>LÉLIE</speaker>
             <l n="1435" xml:id="l1435">Ne lui répliquons rien, que toutes ces fumées</l>
             <l n="1436" xml:id="l1436">En semblables transports ne se soient consumées ;</l>
             <l n="1437" xml:id="l1437">La fureur diminue à force de parler.</l>
           </sp>
-          <sp xml:id="V02-5" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-5">
             <speaker>MASSINISSE</speaker>
             <l n="1438" xml:id="l1438">Ha ! que si le passé se pouvait rappeler,</l>
             <l n="1439" xml:id="l1439">Je m'empêcherais bien de servir de matière</l>
@@ -2161,7 +2211,7 @@
             <l n="1459" xml:id="l1459">Suffit, si je ne puis y faire plus d'obstacle,</l>
             <l n="1460" xml:id="l1460">Que ma mort préviendra cet indigne spectacle.</l>
           </sp>
-          <sp xml:id="V02-6" who="LELIE">
+          <sp who="LELIE" xml:id="V02-6">
             <speaker>LÉLIE</speaker>
             <l n="1461" xml:id="l1461">Il lui faut pardonner ces violents transports.</l>
             <l n="1462" xml:id="l1462">Mais parlons maintenant qu'il a tout mis dehors.</l>
@@ -2188,11 +2238,11 @@
             <l n="1483" xml:id="l1483">Et pour l'amour de vous et de votre hyménée,</l>
             <l n="1484" xml:id="l1484">Elle ne sera point en triomphe menée.</l>
           </sp>
-          <sp xml:id="V02-7" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-7">
             <speaker>MASSINISSE</speaker>
             <l n="1485" xml:id="l1485">À quoi donc Scipion la veut-il destiner ?</l>
           </sp>
-          <sp xml:id="V02-8" who="LELIE">
+          <sp who="LELIE" xml:id="V02-8">
             <speaker>LÉLIE</speaker>
             <l n="1486" xml:id="l1486">C'est à vous maintenant à vous l'imaginer.</l>
             <l n="1487" xml:id="l1487">Vous savez du sénat l'ordonnance dernière</l>
@@ -2204,18 +2254,18 @@
             <l n="1493" xml:id="l1493">Et ne vous plaignez plus, puisque à bien discourir,</l>
             <l n="1494" xml:id="l1494">Votre ami lui fait grâce en la laissant mourir.</l>
           </sp>
-          <sp xml:id="V02-9" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-9">
             <speaker>MASSINISSE</speaker>
-            <l n="1495" xml:id="l1495" part="I">Quelle grâce, ô bons Dieux !</l>
+            <l n="1495" part="I" xml:id="l1495">Quelle grâce, ô bons Dieux !</l>
           </sp>
-          <sp xml:id="V02-10" who="LELIE">
+          <sp who="LELIE" xml:id="V02-10">
             <speaker>LÉLIE</speaker>
             <l part="F">C'est pourtant la plus grande</l>
             <l n="1496" xml:id="l1496">Qui se puisse accorder, et que le temps demande ;</l>
             <l n="1497" xml:id="l1497">Sire, relevant donc votre esprit abattu,</l>
             <l n="1498" xml:id="l1498">D'une nécessité faites une vertu.</l>
           </sp>
-          <sp xml:id="V02-11" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-11">
             <speaker>MASSINISSE</speaker>
             <l n="1499" xml:id="l1499">Hélas ! quelle vertu voulez-vous que je fasse,</l>
             <l n="1500" xml:id="l1500">Qui ne soit ridicule, et de mauvaise grâce ?</l>
@@ -2224,16 +2274,16 @@
             <l n="1503" xml:id="l1503">De qui l'arrêt sanglant a conclu ma ruine,</l>
             <l n="1504" xml:id="l1504">Ou si je baiserai le bras qui m'assassine ?</l>
           </sp>
-          <sp xml:id="V02-12" who="LELIE">
+          <sp who="LELIE" xml:id="V02-12">
             <speaker>LÉLIE</speaker>
             <l n="1505" xml:id="l1505">La plus haute vertu qu'on exige de vous</l>
             <l n="1506" xml:id="l1506">C'est de souffrir un mal qui nous afflige tous.</l>
           </sp>
-          <sp xml:id="V02-13" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-13">
             <speaker>MASSINISSE</speaker>
             <l n="1507" xml:id="l1507">Il faut bien souffrir, puisque mon impuissance...</l>
           </sp>
-          <sp xml:id="V02-14" who="LELIE">
+          <sp who="LELIE" xml:id="V02-14">
             <speaker>LÉLIE</speaker>
             <l n="1508" xml:id="l1508">Je veux dire souffrir avec patience,</l>
             <l n="1509" xml:id="l1509">En vous représentant que par cette action</l>
@@ -2255,9 +2305,9 @@
             <l n="1525" xml:id="l1525">Quoi, pour un déplaisir qu'il vous fait aujourd'hui,</l>
             <l n="1526" xml:id="l1526">Perdra-t-il cent bienfaits que vous tenez de lui ?</l>
             <l n="1527" xml:id="l1527">Ne condamnez donc point avec vos murmures</l>
-            <l n="1528" xml:id="l1528" part="I">Ni nos moeurs, ni nos lois.</l>
+            <l n="1528" part="I" xml:id="l1528">Ni nos moeurs, ni nos lois.</l>
           </sp>
-          <sp xml:id="V02-15" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-15">
             <speaker>MASSINISSE</speaker>
             <l part="F">Ô Dieux qu'elles sont dures !</l>
             <l n="1529" xml:id="l1529">En effet il est vrai, je serais plus qu'ingrat,</l>
@@ -2268,26 +2318,29 @@
             <l n="1534" xml:id="l1534">Il faut bien le vouloir, quand Rome l'a voulu.</l>
             <l n="1535" xml:id="l1535">Ô mari déplorable ! Ô malheureuse femme !</l>
           </sp>
-          <sp xml:id="V02-16" who="LELIE">
+          <sp who="LELIE" xml:id="V02-16">
             <speaker>LÉLIE</speaker>
-            <l n="1536" xml:id="l1536" part="I">Sire, n'y songez plus.</l>
+            <l n="1536" part="I" xml:id="l1536">Sire, n'y songez plus.</l>
           </sp>
-          <sp xml:id="V02-17" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V02-17">
             <speaker>MASSINISSE</speaker>
             <l part="F">Arrachez-moi donc l'âme,</l>
             <l n="1537" xml:id="l1537">Quoique en vain, car encore on m'y verra songer</l>
-            <l n="1538" xml:id="l1538" part="I">Au milieu des Enfers.</l>
+            <l n="1538" part="I" xml:id="l1538">Au milieu des Enfers.</l>
           </sp>
-          <sp xml:id="V02-18" who="LELIE">
+          <sp who="LELIE" xml:id="V02-18">
             <speaker>LÉLIE</speaker>
             <l part="F">Que veut ce messager ?</l>
             <l n="1539" xml:id="l1539">C'est infailliblement la Reine qui l'envoie ;</l>
             <l n="1540" xml:id="l1540">Il faut bien empêcher qu'elle ne le revoie.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Caliodore, Lélie, Massinisse.<listPerson type="configuration" xml:id="conf21"><person corresp="#CALIODORE"/><person corresp="#LELIE"/><person corresp="#MASSINISSE"/></listPerson></head>
-          <sp xml:id="V03-1" who="CALIODORE">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Caliodore, Lélie, Massinisse.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#CALIODORE"/>
+            <person corresp="#LELIE"/>
+            <person corresp="#MASSINISSE"/></listPerson></head>
+          <sp who="CALIODORE" xml:id="V03-1">
             <speaker>CALIODORE</speaker>
             <l n="1541" xml:id="l1541">Sire, quand vous lirez le papier que voici,</l>
             <l n="1542" xml:id="l1542">Vous saurez le sujet pourquoi je suis ici.</l>
@@ -2297,37 +2350,37 @@
             <l n="1545" xml:id="l1545">Plutôt qu'être captive en triomphe menée,</l>
             <l n="1546" xml:id="l1546">Donnez-moi le présent que vous m'avez promis. "</l>
           </sp>
-          <sp xml:id="V03-2" who="LELIE">
+          <sp who="LELIE" xml:id="V03-2">
             <speaker>LÉLIE</speaker>
             <l n="1547" xml:id="l1547">Sire, ne le donnez que par la main d'autrui !</l>
-            <l n="1548" xml:id="l1548" part="I">Vos maux en la voyant s'augmenteront.</l>
+            <l n="1548" part="I" xml:id="l1548">Vos maux en la voyant s'augmenteront.</l>
           </sp>
-          <sp xml:id="V03-3" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V03-3">
             <speaker>MASSINISSE</speaker>
             <l part="F">N'importe.</l>
           </sp>
-          <sp xml:id="V03-4" who="LELIE">
+          <sp who="LELIE" xml:id="V03-4">
             <speaker>LÉLIE</speaker>
-            <l n="1549" xml:id="l1549" part="I">Croyez-moi.</l>
+            <l n="1549" part="I" xml:id="l1549">Croyez-moi.</l>
           </sp>
-          <sp xml:id="V03-5" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V03-5">
             <speaker>MASSINISSE</speaker>
             <l part="F">Non, Lélie, il faut que je le porte.</l>
           </sp>
-          <sp xml:id="V03-6" who="LELIE">
+          <sp who="LELIE" xml:id="V03-6">
             <speaker>LÉLIE</speaker>
             <l n="1550" xml:id="l1550">Vous ne le ferez pas, ce n'est que temps perdu.</l>
           </sp>
-          <sp xml:id="V03-7" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V03-7">
             <speaker>MASSINISSE</speaker>
-            <l n="1551" xml:id="l1551" part="I">Et pourquoi ?</l>
+            <l n="1551" part="I" xml:id="l1551">Et pourquoi ?</l>
           </sp>
-          <sp xml:id="V03-8" who="LELIE">
+          <sp who="LELIE" xml:id="V03-8">
             <speaker>LÉLIE</speaker>
             <l part="F">C'est un point qu'on vous a défendu,</l>
             <l n="1552" xml:id="l1552">De peur que cette vue accrût votre supplice.</l>
           </sp>
-          <sp xml:id="V03-9" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V03-9">
             <speaker>MASSINISSE</speaker>
             <l n="1553" xml:id="l1553">Bien donc, que de tout point mon destin s'accomplisse !</l>
             <l n="1554" xml:id="l1554">Tu le vois, mon ami, qu'avec tout mon pouvoir</l>
@@ -2335,30 +2388,33 @@
             <l n="1556" xml:id="l1556">Ô Dieux ! souffrirez-vous qu'une injuste puissance</l>
             <l n="1557" xml:id="l1557">Règne sur vos enfants avec tant de licence ?</l>
           </sp>
-          <sp xml:id="V03-10" who="LELIE">
+          <sp who="LELIE" xml:id="V03-10">
             <speaker>LÉLIE</speaker>
             <l n="1558" xml:id="l1558">Ce violent esprit s'échappe à tout moment ;</l>
             <l n="1559" xml:id="l1559">Certes il est à plaindre en son aveuglement.</l>
             <l n="1560" xml:id="l1560">Je crains quelque révolte en son âme agitée,</l>
-            <l n="1561" xml:id="l1561" part="I">Le voilà qui rumine.</l>
+            <l n="1561" part="I" xml:id="l1561">Le voilà qui rumine.</l>
           </sp>
-          <sp xml:id="V03-11" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V03-11">
             <speaker>MASSINISSE</speaker>
             <l part="F">La pierre en est jetée,</l>
             <l n="1562" xml:id="l1562">Mon ami, viens querir ce funeste présent ;</l>
             <l n="1563" xml:id="l1563">Allons, Lélie, allons, vous y serez présent.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf22"><person corresp="#PHENICE"/><person corresp="#SOPHONISBE"/><person corresp="#CORISBE"/></listPerson></head>
-          <sp xml:id="V04-1" who="PHENICE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#PHENICE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#CORISBE"/></listPerson></head>
+          <sp who="PHENICE" xml:id="V04-1">
             <speaker>PHÉNICE</speaker>
             <l n="1564" xml:id="l1564">Madame, votre humeur craintive et soucieuse,</l>
             <l n="1565" xml:id="l1565">À vous inquiéter est trop ingénieuse.</l>
             <l n="1566" xml:id="l1566">Le moindre objet vous trouble, un songe, une vapeur,</l>
             <l n="1567" xml:id="l1567">Un corbeau qui croasse, enfin tout vous fait peur.</l>
           </sp>
-          <sp xml:id="V04-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="V04-2">
             <speaker>SOPHONISBE</speaker>
             <l n="1568" xml:id="l1568">Phénice, croyez-moi, je suis venue aux termes</l>
             <l n="1569" xml:id="l1569">Où doivent s'ébranler les esprits les plus fermes ;</l>
@@ -2389,14 +2445,14 @@
             <l n="1594" xml:id="l1594">Puis embrassant le Roi, par un contraire effet,</l>
             <l n="1595" xml:id="l1595">La peur a fait en moi ce que l'Amour eût fait.</l>
           </sp>
-          <sp xml:id="V04-3" who="CORISBE">
+          <sp who="CORISBE" xml:id="V04-3">
             <speaker>CORISBÉ</speaker>
             <l n="1596" xml:id="l1596">Il est vrai qu'après tout voilà des pronostiques,</l>
             <l n="1597" xml:id="l1597">Qui sont avant-coureurs d'aventures tragiques ;</l>
             <l n="1598" xml:id="l1598">Mais le Père des Dieux, à qui tout est permis,</l>
             <l n="1599" xml:id="l1599">En détourne l'effet dessus nos ennemis !</l>
           </sp>
-          <sp xml:id="V04-4" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="V04-4">
             <speaker>SOPHONISBE</speaker>
             <l n="1600" xml:id="l1600">Ce qui me met en peine avec plus d'apparence,</l>
             <l n="1601" xml:id="l1601">C'est l'extrême longueur de cette conférence ;</l>
@@ -2406,14 +2462,18 @@
             <l n="1605" xml:id="l1605">Me sera conservée, ou me sera ravie.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Caliodore, Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf23"><person corresp="#CALIODORE"/><person corresp="#SOPHONISBE"/><person corresp="#CORISBE"/><person corresp="#PHENICE"/></listPerson></head>
-          <sp xml:id="V05-1" who="CALIODORE">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Caliodore, Sophonisbe, Corisbé, Phénice.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#CALIODORE"/>
+            <person corresp="#SOPHONISBE"/>
+            <person corresp="#CORISBE"/>
+            <person corresp="#PHENICE"/></listPerson></head>
+          <sp who="CALIODORE" xml:id="V05-1">
             <speaker>CALIODORE</speaker>
             <l n="1606" xml:id="l1606">Que je suis malheureux de servir d'instrument</l>
-            <l n="1607" xml:id="l1607" part="I">À la fureur du Sort !</l>
+            <l n="1607" part="I" xml:id="l1607">À la fureur du Sort !</l>
           </sp>
-          <sp xml:id="V05-2" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="V05-2">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Avancez hardiment ;</l>
             <l n="1608" xml:id="l1608">Montrez-moi ce papier, donnez-moi ce breuvage</l>
@@ -2428,7 +2488,7 @@
             <l n="1616" xml:id="l1616">Dites, Caliodore, et ne me trompez point,</l>
             <l n="1617" xml:id="l1617">Avez-vous observé ce qui vous fut enjoint ?</l>
           </sp>
-          <sp xml:id="V05-3" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="V05-3">
             <speaker>CALIODORE</speaker>
             <l n="1618" xml:id="l1618">Madame, en le voyant vous avoueriez vous-même</l>
             <l n="1619" xml:id="l1619">Qu'ainsi que son amour sa douleur est extrême ;</l>
@@ -2450,15 +2510,15 @@
             <l n="1635" xml:id="l1635">Lui prouvera dans peu que je lui suis fidèle.</l>
             <l n="1636" xml:id="l1636">Avec ces derniers mots il s'est évanoui.</l>
           </sp>
-          <sp xml:id="V05-4" who="CORISBE">
+          <sp who="CORISBE" xml:id="V05-4">
             <speaker>CORISBÉ</speaker>
             <l n="1637" xml:id="l1637">Ô de parfaite amour témoignage inouï !</l>
           </sp>
-          <sp xml:id="V05-5" who="PHENICE">
+          <sp who="PHENICE" xml:id="V05-5">
             <speaker>PHÉNICE</speaker>
             <l n="1638" xml:id="l1638">Ô barbares Romains ! ô Ciel impitoyable !</l>
           </sp>
-          <sp xml:id="V05-6" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="V05-6">
             <speaker>SOPHONISBE</speaker>
             <l n="1639" xml:id="l1639">Enfin voici l'effet de mon songe effroyable ;</l>
             <l n="1640" xml:id="l1640">Vous voyez maintenant que ce n'est pas à tort</l>
@@ -2473,14 +2533,14 @@
             <l n="1649" xml:id="l1649">Ne prenne auprès de toi la place que j'y tiens.</l>
             <l n="1650" xml:id="l1650">Corisbé, je vous prie, et vous aussi Phénice,</l>
             <l n="1651" xml:id="l1651">De me faire plaisir avant que je finisse ;</l>
-            <l n="1652" xml:id="l1652" part="I">Me l'accorderez-vous ?</l>
+            <l n="1652" part="I" xml:id="l1652">Me l'accorderez-vous ?</l>
           </sp>
-          <sp xml:id="V05-7" who="CORISBE">
+          <sp who="CORISBE" xml:id="V05-7">
             <speaker>CORISBÉ</speaker>
             <l part="F">Hé ! Madame, parlez,</l>
-            <l n="1653" xml:id="l1653" part="I">Commandez seulement.</l>
+            <l n="1653" part="I" xml:id="l1653">Commandez seulement.</l>
           </sp>
-          <sp xml:id="V05-8" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="V05-8">
             <speaker>SOPHONISBE</speaker>
             <l part="F">Puisque vous le voulez,</l>
             <l n="1654" xml:id="l1654">Je vous commande donc, comme votre maîtresse,</l>
@@ -2497,11 +2557,11 @@
             <l n="1665" xml:id="l1665">Que leur pourrait causer la fille d'Asdrubal.</l>
             <stage type="[N/A]">Elle avale le poison.</stage>
           </sp>
-          <sp xml:id="V05-9" who="PHENICE">
+          <sp who="PHENICE" xml:id="V05-9">
             <speaker>PHÉNICE</speaker>
             <l n="1666" xml:id="l1666">Ô Dieux ! c'est maintenant que nous sommes perdues !</l>
           </sp>
-          <sp xml:id="V05-10" who="SOPHONISBE">
+          <sp who="SOPHONISBE" xml:id="V05-10">
             <speaker>SOPHONISBE</speaker>
             <l n="1667" xml:id="l1667">Certes si les Romains vous avaient entendues,</l>
             <l n="1668" xml:id="l1668">Ils auraient bien raison de penser à ce coup</l>
@@ -2516,9 +2576,12 @@
             <l n="1677" xml:id="l1677">Où mon funeste hymen hier soir s'accomplit.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE VI. Scipion, Massinisse, Lélie.<listPerson type="configuration" xml:id="conf24"><person corresp="#SCIPION"/><person corresp="#MASSINISSE"/><person corresp="#LELIE"/></listPerson></head>
-          <sp xml:id="V06-1" who="SCIPION">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE VI. Scipion, Massinisse, Lélie.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#SCIPION"/>
+            <person corresp="#MASSINISSE"/>
+            <person corresp="#LELIE"/></listPerson></head>
+          <sp who="SCIPION" xml:id="V06-1">
             <speaker>SCIPION</speaker>
             <l n="1678" xml:id="l1678">Il est vrai qu'en ceci votre constance est telle</l>
             <l n="1679" xml:id="l1679">Qu'on la doit couronner d'une gloire immortelle ;</l>
@@ -2531,11 +2594,11 @@
             <l n="1686" xml:id="l1686">Si l'on peut dire mal un fortuné veuvage</l>
             <l n="1687" xml:id="l1687">Que je n'ai souhaité que pour votre avantage.</l>
           </sp>
-          <sp xml:id="V06-2" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V06-2">
             <speaker>MASSINISSE</speaker>
-            <l n="1688" xml:id="l1688" part="I">Ô Dieux, quel avantage !</l>
+            <l n="1688" part="I" xml:id="l1688">Ô Dieux, quel avantage !</l>
           </sp>
-          <sp xml:id="V06-3" who="SCIPION">
+          <sp who="SCIPION" xml:id="V06-3">
             <speaker>SCIPION</speaker>
             <l part="F">En une autre saison</l>
             <l n="1689" xml:id="l1689">Vous en connaîtrez mieux la suite et la raison ;</l>
@@ -2544,7 +2607,7 @@
             <l n="1692" xml:id="l1692">Au moins si vos transports ne me font point douter</l>
             <l n="1693" xml:id="l1693">Qu'il ait pu vous les dire, et vous les écouter.</l>
           </sp>
-          <sp xml:id="V06-4" who="LELIE">
+          <sp who="LELIE" xml:id="V06-4">
             <speaker>LÉLIE</speaker>
             <l n="1694" xml:id="l1694">Seigneur, par sa froideur et par sa retenue,</l>
             <l n="1695" xml:id="l1695">On voit que sa raison est un peu revenue ;</l>
@@ -2555,7 +2618,7 @@
             <l n="1700" xml:id="l1700">Bannir ces noirs soucis, vous divertir ailleurs,</l>
             <l n="1701" xml:id="l1701">Et donner vos pensers à des objets meilleurs.</l>
           </sp>
-          <sp xml:id="V06-5" who="SCIPION">
+          <sp who="SCIPION" xml:id="V06-5">
             <speaker>SCIPION</speaker>
             <l n="1702" xml:id="l1702">La chute de Syphax vous laisse une matière</l>
             <l n="1703" xml:id="l1703">Capable d'exercer une âme tout entière.</l>
@@ -2566,45 +2629,49 @@
             <l n="1708" xml:id="l1708">Et que Lélie et moi vous verrons censurer</l>
             <l n="1709" xml:id="l1709">L'aveugle passion qui vous fait murmurer.</l>
           </sp>
-          <sp xml:id="V06-6" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V06-6">
             <speaker>MASSINISSE</speaker>
             <l n="1710" xml:id="l1710">Je vous tromperai bien avant que le jour passe.</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
-          <head>SCÈNE VII. Caliodore, Massinisse, Scipion, Lélie.<listPerson type="configuration" xml:id="conf25"><person corresp="#CALIODORE"/><person corresp="#MASSINISSE"/><person corresp="#SCIPION"/><person corresp="#LELIE"/></listPerson></head>
-          <sp xml:id="V07-1" who="CALIODORE">
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE VII. Caliodore, Massinisse, Scipion, Lélie.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#CALIODORE"/>
+            <person corresp="#MASSINISSE"/>
+            <person corresp="#SCIPION"/>
+            <person corresp="#LELIE"/></listPerson></head>
+          <sp who="CALIODORE" xml:id="V07-1">
             <speaker>CALIODORE</speaker>
             <l n="1711" xml:id="l1711">Ô constance incroyable ! ô mortelle disgrâce !</l>
           </sp>
-          <sp xml:id="V07-2" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V07-2">
             <speaker>MASSINISSE</speaker>
-            <l n="1712" xml:id="l1712" part="I">Ha Dieux ! la Reine est morte !</l>
+            <l n="1712" part="I" xml:id="l1712">Ha Dieux ! la Reine est morte !</l>
           </sp>
-          <sp xml:id="V07-3" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="V07-3">
             <speaker>CALIODORE</speaker>
             <l part="F">Oui, Sire, c'en est fait :</l>
             <l n="1713" xml:id="l1713">Hélas ! jamais poison n'eut un si prompt effet.</l>
           </sp>
-          <sp xml:id="V07-4" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V07-4">
             <speaker>MASSINISSE</speaker>
             <l n="1714" xml:id="l1714">Eh bien, mes souverains, aurez-vous agréable</l>
             <l n="1715" xml:id="l1715">Que n'ayant pu la voir en sa fin lamentable,</l>
             <l n="1716" xml:id="l1716">Nous la fassions au moins apporter devant nous ?</l>
             <l n="1717" xml:id="l1717">Oui, vous en trouverez le spectacle si doux ;</l>
             <l n="1718" xml:id="l1718">Il est si nécessaire au bien de votre Empire</l>
-            <l n="1719" xml:id="l1719" part="I">Que j'obtiens ma demande.</l>
+            <l n="1719" part="I" xml:id="l1719">Que j'obtiens ma demande.</l>
           </sp>
-          <sp xml:id="V07-5" who="SCIPION">
+          <sp who="SCIPION" xml:id="V07-5">
             <speaker>SCIPION</speaker>
             <l part="F">Il faut le laisser dire.</l>
           </sp>
-          <sp xml:id="V07-6" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V07-6">
             <speaker>MASSINISSE</speaker>
             <l n="1720" xml:id="l1720">Voyons donc ce trésor de grâce et de beauté ;</l>
             <l n="1721" xml:id="l1721">Mon ami, que sur l'heure il nous soit apporté.</l>
           </sp>
-          <sp xml:id="V07-7" who="CALIODORE">
+          <sp who="CALIODORE" xml:id="V07-7">
             <speaker>CALIODORE</speaker>
             <l n="1722" xml:id="l1722">Si votre majesté désire qu'on lui montre</l>
             <l n="1723" xml:id="l1723">Ce pitoyable objet, il est ici tout contre ;</l>
@@ -2612,12 +2679,12 @@
             <l n="1725" xml:id="l1725">Et vous le pourrez voir de l'endroit que voici,</l>
             <l n="1726" xml:id="l1726">En levant seulement cette tapisserie.</l>
           </sp>
-          <sp xml:id="V07-8" who="SCIPION">
+          <sp who="SCIPION" xml:id="V07-8">
             <speaker>SCIPION</speaker>
             <l n="1727" xml:id="l1727">Je crains que cette vue éveille sa furie.</l>
             <stage type="[N/A]">La chambre paraît. Ici Caliodore rentre.</stage>
           </sp>
-          <sp xml:id="V07-9" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V07-9">
             <speaker>MASSINISSE</speaker>
             <l n="1728" xml:id="l1728">Ô vue ! ô désespoir ! regardez maintenant,</l>
             <l n="1729" xml:id="l1729">Ô vous consul romain, et vous son lieutenant,</l>
@@ -2657,9 +2724,9 @@
             <l n="1763" xml:id="l1763">Par Hymen, par l'Amour, et par la Destinée :</l>
             <l n="1764" xml:id="l1764">En un mot, donnez-moi ce que vous craignez tous,</l>
             <l n="1765" xml:id="l1765">Et je serai plus riche et plus content que vous.</l>
-            <l n="1766" xml:id="l1766" part="I">Rendez-moi Sophonisbe.</l>
+            <l n="1766" part="I" xml:id="l1766">Rendez-moi Sophonisbe.</l>
           </sp>
-          <sp xml:id="V07-10" who="SCIPION">
+          <sp who="SCIPION" xml:id="V07-10">
             <speaker>SCIPION</speaker>
             <l part="F">Allons-nous-en, Lélie ;</l>
             <l n="1767" xml:id="l1767">Puisque notre présence irrite sa folie,</l>
@@ -2668,10 +2735,12 @@
             <stage type="[N/A]">Ils rentrent.</stage>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
-          <head>SCÈNE VIII.<listPerson type="configuration" xml:id="conf26"><person corresp="#MASSINISSE"/><person corresp="#SOPHONISBE"/></listPerson></head>
+        <div2 n="8" type="scene" xml:id="V08">
+          <head>SCÈNE VIII.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#MASSINISSE"/>
+            <person corresp="#SOPHONISBE"/></listPerson></head>
           <stage type="[N/A]">Plainte de Massinisse sur le corps de Sophonisbe.</stage>
-          <sp xml:id="V08-1" who="MASSINISSE">
+          <sp who="MASSINISSE" xml:id="V08-1">
             <speaker>MASSINISSE, seul.</speaker>
             <l n="1770" xml:id="l1770">Miracle de beauté, Sophonisbe mon âme,</l>
             <l n="1771" xml:id="l1771">Que je n'ose appeler de ce doux nom de femme,</l>

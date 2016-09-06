@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Le sot vengé</title><title type="sub">, comédie en un acte</title>
-        <author born="1655" born_location="Paris" death="1709" death_location="château de grillon, Dourdan" academie=""><surname>Poisson</surname><forename> Jean-François</forename></author>
+        <title>Le sot vengé</title>
+        <title type="sub">, comédie en un acte</title>
+        <author academie="" born="1655" born_location="Paris" death="1709" death_location="château de grillon, Dourdan">
+          <surname>Poisson</surname>
+          <forename> Jean-François</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE juillet 2011</p>
@@ -36,7 +41,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -48,7 +53,7 @@
         <titlePart part="sub">COMÉDIE en UN ACTE</titlePart>
       </docTitle>
       <docDate value="1679">M. DC. LXXIX. Avec Privilège du Roi.</docDate>
-      <docAuthor id="POISSON, Raymond" bio="poisson">DE MONSIEUR POISSON</docAuthor>
+      <docAuthor bio="poisson" id="POISSON, Raymond">DE MONSIEUR POISSON</docAuthor>
       <docImprint>
         <privilege id="16**-**-**"/>
         <acheveImprime id="16**-**-**"/>
@@ -59,20 +64,23 @@
       </performance>
       <castList>
         <head>PERSONNAGES</head>
-        <castItem><role xml:id="LUBIN" id="LUBIN" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">LUBIN</role>, ou le sot vengé.</castItem>
-        <castItem><role xml:id="LUBINE" id="LUBINE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">LUBINE</role>, femme de Lubin.</castItem>
-        <castItem><role xml:id="LECOMPERE" id="LE-COMPÈRE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="Lubine">LE COMPÈRE</role>, amoureux de Lubine.</castItem>
-        <castItem><role xml:id="MONSIEURRAGOT" id="MONSIEUR-RAGOT" sex="1" type="H" statut="bourgeois" age="A" stat_amour="Lubine">MONSIEUR RAGOT</role>, amoureux de Lubine.</castItem>
-        <castItem><role xml:id="CROQUILLON" id="CROQUILLON" sex="1" type="H" statut="valet" age="A" stat_amour="néant">CROQUILLON</role>, valet du Compère.</castItem>
+        <castItem><role age="A" id="LUBIN" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="LUBIN">LUBIN</role>, ou le sot vengé.</castItem>
+        <castItem><role age="A" id="LUBINE" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="LUBINE">LUBINE</role>, femme de Lubin.</castItem>
+        <castItem><role age="A" id="LE-COMPÈRE" sex="1" stat_amour="Lubine" statut="bourgeois" type="H" xml:id="LECOMPERE">LE COMPÈRE</role>, amoureux de Lubine.</castItem>
+        <castItem><role age="A" id="MONSIEUR-RAGOT" sex="1" stat_amour="Lubine" statut="bourgeois" type="H" xml:id="MONSIEURRAGOT">MONSIEUR RAGOT</role>, amoureux de Lubine.</castItem>
+        <castItem><role age="A" id="CROQUILLON" sex="1" stat_amour="néant" statut="valet" type="H" xml:id="CROQUILLON">CROQUILLON</role>, valet du Compère.</castItem>
       </castList>
-      <set location="Paris" country="France" periode="XVIIème" link="">La scène est a Paris.</set>
+      <set country="France" link="" location="Paris" periode="XVIIème">La scène est a Paris.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head/>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Monsieur Ragot, Lubine.<listPerson type="configuration" xml:id="conf1"><person corresp="#LUBINE"/><person corresp="#MONSIEURRAGOT"/><person corresp="#LUBIN"/></listPerson></head>
-          <sp xml:id="I01-1" who="LUBINE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Monsieur Ragot, Lubine.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LUBINE"/>
+            <person corresp="#MONSIEURRAGOT"/>
+            <person corresp="#LUBIN"/></listPerson></head>
+          <sp who="LUBINE" xml:id="I01-1">
             <speaker>LUBINE.</speaker>
             <l n="1" xml:id="l1">Quoi ! Vous osez Maître Ragot,</l>
             <l n="2" xml:id="l2">Maître importun, et maître sot,</l>
@@ -80,7 +88,7 @@
             <l n="4" xml:id="l4">Moi qui vous hais et vous évite, </l>
             <l n="5" xml:id="l5">Comme l'on évite la mort.</l>
           </sp>
-          <sp xml:id="I01-2" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I01-2">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="6" xml:id="l6">Ne vous emportez pas si fort,</l>
             <l n="7" xml:id="l7">Lubine , voici la dernière :</l>
@@ -88,11 +96,11 @@
             <l n="9" xml:id="l9">Mais le Compère a tant d'appas</l>
             <l n="10" xml:id="l10">Que pour lui vous ne l'êtes pas.</l>
           </sp>
-          <sp xml:id="I01-3" who="LUBINE">
+          <sp who="LUBINE" xml:id="I01-3">
             <speaker>LUBINE.</speaker>
             <l n="11" xml:id="l11">Vous l'avez dit, qu'en peut-il être ?</l>
           </sp>
-          <sp xml:id="I01-4" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I01-4">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="12" xml:id="l12">Rien, car vous n'avez point de Maître :</l>
             <l n="13" xml:id="l13">À dire vrai que craindriez vous ?</l>
@@ -103,14 +111,14 @@
             <l n="18" xml:id="l18">J'en aurais fort peu de souci,</l>
             <l n="19" xml:id="l19">Mais vous me traitez d'une sorte...</l>
           </sp>
-          <sp xml:id="I01-5" who="LUBINE">
+          <sp who="LUBINE" xml:id="I01-5">
             <speaker>LUBINE.</speaker>
             <l n="20" xml:id="l20">Faites vos plaintes à la porte,</l>
             <l n="21" xml:id="l21">Je suis lasse de l'entretien</l>
             <l n="22" xml:id="l22">D'un homme plus sot que le mien. </l>
             <stage type="[N/A]">Elle rentre.</stage>
           </sp>
-          <sp xml:id="I01-6" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I01-6">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="23" xml:id="l23">Ah ! C'est trop mépriser ma flamme ;</l>
             <l n="24" xml:id="l24">Je m'en saurai venger, infâme,</l>
@@ -125,40 +133,42 @@
             <l n="32" xml:id="l32">Allons empaumer le Compère.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Le Compère, Croquillon.<listPerson type="configuration" xml:id="conf2"><person corresp="#CROQUILLON"/><person corresp="#LECOMPERE"/></listPerson></head>
-          <sp xml:id="I02-1" who="CROQUILLON">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Le Compère, Croquillon.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#CROQUILLON"/>
+            <person corresp="#LECOMPERE"/></listPerson></head>
+          <sp who="CROQUILLON" xml:id="I02-1">
             <speaker>CROQUILLON.</speaker>
             <l n="33" xml:id="l33">D'où vient ce grand empressement ?</l>
           </sp>
-          <sp xml:id="I02-2" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-2">
             <speaker>LE COMPÈRE.</speaker>
             <stage type="[N/A]">Il regarde sa montre avec empressement.</stage>
             <l n="34" xml:id="l34">Il est huit heures justement,</l>
             <l n="35" xml:id="l35">C'est l'heure qu'elle m'a donnée.</l>
           </sp>
-          <sp xml:id="I02-3" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-3">
             <speaker>CROQUILLON.</speaker>
             <note type="L">Haquenée : cheval qui va l'amble. Si dit aussi en termes comiques du bâton que que portent ceux qui font des voyages à pied pour se soulager en marchant. [F]</note>
             <l n="36" xml:id="l36">Je ne sais point de haquenée,</l>
             <note type="L">Amble : train ou certaine allure du cheval, lorsque les deux jambes du même côté se meuvent ensemble, et que les deux autres se meuvent après. [F]</note>
-            <l n="37" xml:id="l37" part="I">Dont l'amble...</l>
+            <l n="37" part="I" xml:id="l37">Dont l'amble...</l>
           </sp>
-          <sp xml:id="I02-4" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-4">
             <speaker>LE COMPÈRE.</speaker>
             <l part="F">Veux-tu m'obliger ?</l>
             <l n="38" xml:id="l38">C'est ici l'heure du Berger ;</l>
-            <l n="39" xml:id="l39" part="I">La manquer !</l>
+            <l n="39" part="I" xml:id="l39">La manquer !</l>
           </sp>
-          <sp xml:id="I02-5" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-5">
             <speaker>CROQUILLON.</speaker>
             <l part="F">Mon maître extravague.</l>
           </sp>
-          <sp xml:id="I02-6" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-6">
             <speaker>LE COMPÈRE.</speaker>
             <l n="40" xml:id="l40">À propos donne-moi ma bague.</l>
           </sp>
-          <sp xml:id="I02-7" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-7">
             <speaker>CROQUILLON.</speaker>
             <note type="L">Job : diminutif de Job, personnage de l'ancien testament exemple de fermeté et de patience mais réputé pauvre : on dit pauvre comme Job.</note>
             <l n="41" xml:id="l41">Mais Lubin ce pauvre Jobet,</l>
@@ -173,11 +183,11 @@
             <l n="49" xml:id="l49">N'est-il pas sur votre journal</l>
             <l n="50" xml:id="l50">Marqué pour un original ?</l>
           </sp>
-          <sp xml:id="I02-8" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-8">
             <speaker>LE COMPÈRE.</speaker>
             <l n="51" xml:id="l51">Donne donc, il est fort commode.</l>
           </sp>
-          <sp xml:id="I02-9" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-9">
             <speaker>CROQUILLON.</speaker>
             <l n="52" xml:id="l52">Il n'en amène pas la mode,</l>
             <l n="53" xml:id="l53">On le pratique en toutes parts :</l>
@@ -188,95 +198,98 @@
             <l n="57" xml:id="l57">Les autres durent quinze jours,</l>
             <l n="58" xml:id="l58">Mais celle-là dure toujours.</l>
           </sp>
-          <sp xml:id="I02-10" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-10">
             <speaker>LE COMPÈRE.</speaker>
             <l n="59" xml:id="l59">C'est l'objet de ta raillerie.</l>
           </sp>
-          <sp xml:id="I02-11" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-11">
             <speaker>CROQUILLON. </speaker>
             <l n="60" xml:id="l60">Il revient de la boucherie</l>
             <l n="61" xml:id="l61">Quérir une tête de veau,</l>
-            <l n="62" xml:id="l62" part="I">Il vient de rentrer.</l>
+            <l n="62" part="I" xml:id="l62">Il vient de rentrer.</l>
           </sp>
-          <sp xml:id="I02-12" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-12">
             <speaker>LE COMPÈRE.</speaker>
             <l part="F">Mon anneau :</l>
             <l n="63" xml:id="l63">Que ta longueur me désespère !</l>
           </sp>
-          <sp xml:id="I02-13" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-13">
             <speaker>CROQUILLON.</speaker>
             <l n="64" xml:id="l64">Vous allez donc voir la Commère ?</l>
           </sp>
-          <sp xml:id="I02-14" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-14">
             <speaker>LE COMPÈRE.</speaker>
             <l n="65" xml:id="l65">Oui, maudit traître, en cet instant</l>
             <l n="66" xml:id="l66">Que tu jases, elle m'attend,</l>
             <l n="67" xml:id="l67">Et c'est pour finir mon martyre...</l>
           </sp>
-          <sp xml:id="I02-15" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-15">
             <speaker>CROQUILLON.</speaker>
             <stage type="[N/A]">Il donne la bague.</stage>
             <l n="68" xml:id="l68">Courez, je n'ai plus rien à dire,</l>
             <l n="69" xml:id="l69">Mais je crains pour le diamant.</l>
           </sp>
-          <sp xml:id="I02-16" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-16">
             <speaker>LE COMPÈRE.</speaker>
             <stage type="[N/A]">Il se donne en hâte un coup de peigne.</stage>
             <l n="70" xml:id="l70">C'est peu pour cet heureux moment.</l>
           </sp>
-          <sp xml:id="I02-17" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-17">
             <speaker>CROQUILLON.</speaker>
             <l n="71" xml:id="l71">Monsieur, Ragot est à la porte.</l>
           </sp>
-          <sp xml:id="I02-18" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-18">
             <speaker>LE COMPÈRE bas en colère.</speaker>
             <l n="72" xml:id="l72">Que veut-il ? Le diable l'emporte :</l>
             <l n="73" xml:id="l73">Cours lui dire que d'aujourd'hui</l>
             <l n="74" xml:id="l74">Je ne puis pas parler à lui,</l>
             <l n="75" xml:id="l75">Et qu'une affaire d'importance...</l>
           </sp>
-          <sp xml:id="I02-19" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-19">
             <speaker>CROQUILLON.</speaker>
             <l n="76" xml:id="l76">Il n'est plus temps, car il avance.</l>
           </sp>
-          <sp xml:id="I02-20" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-20">
             <speaker>LE COMPÈRE bas en colère.</speaker>
             <l n="77" xml:id="l77">Le diable le puisse emporter ?</l>
             <l n="78" xml:id="l78">Coquin, veux-tu pas l'arrêter ?</l>
           </sp>
-          <sp xml:id="I02-21" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I02-21">
             <speaker>CROQUILLON.</speaker>
             <l n="79" xml:id="l79">Il vient, songez à lui répondre.</l>
           </sp>
-          <sp xml:id="I02-22" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I02-22">
             <speaker>LE COMPÈRE bas en colère.</speaker>
             <l n="80" xml:id="l80">Que l'enfer le puisse confondre !</l>
             <l n="81" xml:id="l81">Un vautour lui mange le coeur !</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. La Compère, Monsieur Raogot, Croquillon.<listPerson type="configuration" xml:id="conf3"><person corresp="#LECOMPERE"/><person corresp="#MONSIEURRAGOT"/><person corresp="#CROQUILLON"/></listPerson></head>
-          <sp xml:id="I03-1" who="LECOMPERE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. La Compère, Monsieur Raogot, Croquillon.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#LECOMPERE"/>
+            <person corresp="#MONSIEURRAGOT"/>
+            <person corresp="#CROQUILLON"/></listPerson></head>
+          <sp who="LECOMPERE" xml:id="I03-1">
             <speaker>LE COMPÈRE haut.</speaker>
             <l n="82" xml:id="l82">Ah ! Monsieur, votre serviteur.</l>
           </sp>
-          <sp xml:id="I03-2" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I03-2">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="83" xml:id="l83">Je vous ai détourné peut-être.</l>
           </sp>
-          <sp xml:id="I03-3" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I03-3">
             <speaker>LE COMPÈRE.</speaker>
-            <l n="84" xml:id="l84" part="I">Vous vous moquez,</l>
+            <l n="84" part="I" xml:id="l84">Vous vous moquez,</l>
           </sp>
-          <sp xml:id="I03-4" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I03-4">
             <speaker>CROQUILLON.</speaker>
             <l part="F">Ah qu'il est traître ?</l>
           </sp>
-          <sp xml:id="I03-5" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I03-5">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="85" xml:id="l85">Sans vous, ami, je suis perdu.</l>
           </sp>
-          <sp xml:id="I03-6" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I03-6">
             <speaker>LE COMPÈRE, bas.</speaker>
             <l n="86" xml:id="l86">Fusse-tu mille fois pendu.</l>
             <l n="87" xml:id="l87">Monsieur, allât-il de ma vie.</l>
@@ -284,60 +297,61 @@
             <l n="88" xml:id="l88">Je ne perdrai jamais l'envie</l>
             <l n="89" xml:id="l89">De vous prouver ma passion.</l>
           </sp>
-          <sp xml:id="I03-7" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I03-7">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="90" xml:id="l90">Je suis dans la confusion.</l>
           </sp>
-          <sp xml:id="I03-8" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I03-8">
             <speaker>LE COMPÈRE, bas.</speaker>
             <l n="91" xml:id="l91">Et moi, je suis dedans la rage.</l>
           </sp>
-          <sp xml:id="I03-9" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I03-9">
             <speaker>CROQUILLON.</speaker>
             <l n="92" xml:id="l92">Cela ne va pas mal, courage.</l>
           </sp>
-          <sp xml:id="I03-10" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I03-10">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="93" xml:id="l93">Portez vous à deux pas d'ici,</l>
             <l n="94" xml:id="l94">Vous m'allez ôter de souci.</l>
           </sp>
-          <sp xml:id="I03-11" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I03-11">
             <speaker>LE COMPÈRE.</speaker>
             <l n="95" xml:id="l95">J'irais pour vous jusques à Rome</l>
-            <l n="96" xml:id="l96" part="I">Les pieds nus.</l>
+            <l n="96" part="I" xml:id="l96">Les pieds nus.</l>
           </sp>
-          <sp xml:id="I03-12" who="CROQUILLON">
+          <sp who="CROQUILLON" xml:id="I03-12">
             <speaker>CROQUILLON.</speaker>
             <l part="F">Ah, le méchant homme ?</l>
           </sp>
-          <sp xml:id="I03-13" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I03-13">
             <speaker>LE COMPÈRE.</speaker>
             <l n="97" xml:id="l97">Et je vous donnerais mon coeur.</l>
           </sp>
-          <sp xml:id="I03-14" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I03-14">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="98" xml:id="l98">Votre franchise et votre ardeur,</l>
             <l n="99" xml:id="l99">Se trouve pour moi sans seconde.</l>
           </sp>
-          <sp xml:id="I03-15" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I03-15">
             <speaker>LE COMPÈRE, bas.</speaker>
             <l n="100" xml:id="l100">Derechef l'enfer te confonde ;</l>
             <stage type="forte">Haut.</stage>
             <l n="101" xml:id="l101">Je crains qu'on ne m'aille ravir</l>
             <l n="102" xml:id="l102">L'avantage de vous servir.</l>
           </sp>
-          <sp xml:id="I03-16" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I03-16">
             <speaker>MONSIEUR RAGOT.</speaker>
-            <l n="103" xml:id="l103" part="I">Partons.</l>
+            <l n="103" part="I" xml:id="l103">Partons.</l>
           </sp>
-          <sp xml:id="I03-17" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I03-17">
             <speaker>LE COMPÈRE, à son valet.</speaker>
             <l part="F">Tu le paieras, traître.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf4"><person corresp="#CROQUILLON"/></listPerson></head>
-          <sp xml:id="I04-1" who="CROQUILLON">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#CROQUILLON"/></listPerson></head>
+          <sp who="CROQUILLON" xml:id="I04-1">
             <speaker>CROQUILLON, seul.</speaker>
             <l n="104" xml:id="l104">Eh bien, vit-on jamais paraître</l>
             <l n="105" xml:id="l105">Une plus grande trahison ?</l>
@@ -350,45 +364,47 @@
             <l n="110" xml:id="l110">Un plus méchant maître que toi.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Lubin, Lubine.<listPerson type="configuration" xml:id="conf5"><person corresp="#LUBIN"/><person corresp="#LUBINE"/></listPerson></head>
-          <sp xml:id="I05-1" who="LUBIN">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Lubin, Lubine.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#LUBIN"/>
+            <person corresp="#LUBINE"/></listPerson></head>
+          <sp who="LUBIN" xml:id="I05-1">
             <speaker>LUBIN.</speaker>
             <l n="111" xml:id="l111">Diable soit ta chienne de vie !</l>
             <note type="L">Carogne : terme injurieux, qui se dit entre les femmes de basses condition, pour se reprocher leur mauvaise vie, leurs ordures, leur puanteur. C'est la même chose que charogne quand on lui donne une prononciation picarde. [F]</note>
             <l n="112" xml:id="l112">Dis, Carogne, as-tu point envie</l>
             <l n="113" xml:id="l113">De me traiter plus doucement?</l>
           </sp>
-          <sp xml:id="I05-2" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-2">
             <speaker>LUBINE.</speaker>
             <l n="114" xml:id="l114">Va : reporte la seulement</l>
             <l n="115" xml:id="l115">Au boucher, et sans plus attendre.</l>
           </sp>
-          <sp xml:id="I05-3" who="LUBIN">
+          <sp who="LUBIN" xml:id="I05-3">
             <speaker>LUBIN.</speaker>
             <l n="116" xml:id="l116">Il ne la voudra pas reprendre.</l>
           </sp>
-          <sp xml:id="I05-4" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-4">
             <speaker>LUBINE.</speaker>
             <l n="117" xml:id="l117">Mais me veux-tu faire enrager ?</l>
             <l n="118" xml:id="l118">Crois-tu que je puisse manger</l>
             <l n="119" xml:id="l119">De cette tête ? Va la rendre.</l>
           </sp>
-          <sp xml:id="I05-5" who="LUBIN">
+          <sp who="LUBIN" xml:id="I05-5">
             <speaker>LUBIN.</speaker>
             <l n="120" xml:id="l120">Il ne la voudra pas reprendre.</l>
           </sp>
-          <sp xml:id="I05-6" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-6">
             <speaker>LUBINE.</speaker>
             <l n="121" xml:id="l121">Elle pue, ne la sens-tu pas,</l>
             <l n="122" xml:id="l122">Dis-lui qu'on la sent de dix pas,</l>
             <l n="123" xml:id="l123">Et qu'il joue à se faire pendre.</l>
           </sp>
-          <sp xml:id="I05-7" who="LUBIN">
+          <sp who="LUBIN" xml:id="I05-7">
             <speaker>LUBIN.</speaker>
             <l n="124" xml:id="l124">Il ne la voudra pas reprendre.</l>
           </sp>
-          <sp xml:id="I05-8" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-8">
             <speaker>LUBINE.</speaker>
             <l n="125" xml:id="l125">Si tu me fais prendre un bâton.</l>
             <l n="126" xml:id="l126">Mais voyez son diable de ton.</l>
@@ -396,9 +412,9 @@
             <l n="128" xml:id="l128">Ma foi ! Si tu me fais te prendre !</l>
             <l n="129" xml:id="l129">Je te donnerai du gros bout,</l>
             <l n="130" xml:id="l130">Et dessus le ventre et partout</l>
-            <l n="131" xml:id="l131" part="I">Chien de cornard.</l>
+            <l n="131" part="I" xml:id="l131">Chien de cornard.</l>
           </sp>
-          <sp xml:id="I05-9" who="LUBIN">
+          <sp who="LUBIN" xml:id="I05-9">
             <speaker>LUBIN.</speaker>
             <l part="F">Je le confesse,</l>
             <l n="132" xml:id="l132">Quand tu n'étais que ma maîtresse &gt;</l>
@@ -409,42 +425,42 @@
             <l n="137" xml:id="l137">Il n'a pas trop mal réussi,</l>
             <l n="138" xml:id="l138">Car il le voulait bien aussi.</l>
           </sp>
-          <sp xml:id="I05-10" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-10">
             <speaker>LUBINE.</speaker>
             <l n="139" xml:id="l139">Ah ! Que de t'avoir je suis lasse !</l>
             <l n="140" xml:id="l140">L'on me montre au doigt quand je passe,</l>
             <note type="L">Gueux : indigent, nécessiteux, qui est réduit à mendier, à demander l'aumône. [F]</note>
             <l n="141" xml:id="l141">Voilà la femme de ce gueux,</l>
-            <l n="142" xml:id="l142" part="I">Dit-on.</l>
+            <l n="142" part="I" xml:id="l142">Dit-on.</l>
           </sp>
-          <sp xml:id="I05-11" who="LUBIN">
+          <sp who="LUBIN" xml:id="I05-11">
             <speaker>LUBIN.</speaker>
             <l part="F">Moi l'on me montre à deux.</l>
           </sp>
-          <sp xml:id="I05-12" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-12">
             <speaker>LUBINE.</speaker>
             <l n="143" xml:id="l143">Moi, t'avoir pris ! Moi qui suis fille</l>
             <l n="144" xml:id="l144">D'un bon tapissier de la ville.</l>
           </sp>
-          <sp xml:id="I05-13" who="LUBIN">
+          <sp who="LUBIN" xml:id="I05-13">
             <speaker>LUBIN.</speaker>
             <l n="145" xml:id="l145">C'est pourquoi, l'on me l'a bien dit,</l>
             <l n="146" xml:id="l146">Tu fais de si bons tours de lit.</l>
           </sp>
-          <sp xml:id="I05-14" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-14">
             <speaker>LUBINE.</speaker>
             <note type="L">Jaser : parler beaucoup et sans nécessité de choses frivoles. Signifie aussi, parler indiscrètement, révéler un secret, une chose cachée. [F]</note>
             <l n="147" xml:id="l147">Quoi tu veux jaser, chien d'ivrogne ?</l>
             <l n="148" xml:id="l148">Reporte donc cette charogne,</l>
             <l n="149" xml:id="l149">Ou je te vais rompre les bras.</l>
           </sp>
-          <sp xml:id="I05-15" who="LUBIN">
+          <sp who="LUBIN" xml:id="I05-15">
             <speaker>LUBIN.</speaker>
             <l n="150" xml:id="l150">J'y vais, ne me frappe donc pas :</l>
             <l n="151" xml:id="l151">Mais comme il ne la pourra vendre :</l>
             <l n="152" xml:id="l152">Il ne la voudra pas reprendre.</l>
           </sp>
-          <sp xml:id="I05-16" who="LUBINE">
+          <sp who="LUBINE" xml:id="I05-16">
             <speaker>LUBINE.</speaker>
             <l n="153" xml:id="l153">Encore : tu le payeras</l>
             <l n="154" xml:id="l154">Aussitôt que tu reviendras :</l>
@@ -466,9 +482,10 @@
             <l n="170" xml:id="l170">Le sot, je l'ai fait ce qu'il est.</l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf6"><person corresp="#LUBIN"/></listPerson></head>
-          <sp xml:id="I06-1" who="LUBIN">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#LUBIN"/></listPerson></head>
+          <sp who="LUBIN" xml:id="I06-1">
             <speaker>LUBIN, l'ayant écoutée.</speaker>
             <l n="171" xml:id="l171">Est-ce une si belle besogne</l>
             <l n="172" xml:id="l172">Pour t'en oser vanter, carogne </l>
@@ -531,13 +548,15 @@
             <l n="222" xml:id="l222">Sont jusques à minuit sonné...</l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
-          <head>SCÈNE VII. Le Compère, Lubin.<listPerson type="configuration" xml:id="conf7"><person corresp="#LECOMPERE"/><person corresp="#LUBIN"/></listPerson></head>
-          <sp xml:id="I07-1" who="LECOMPERE">
+        <div2 n="7" type="scene" xml:id="I07">
+          <head>SCÈNE VII. Le Compère, Lubin.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#LECOMPERE"/>
+            <person corresp="#LUBIN"/></listPerson></head>
+          <sp who="LECOMPERE" xml:id="I07-1">
             <speaker>LE COMPÈRE.</speaker>
             <l n="223" xml:id="l223">Est-elle au logis, ma Commère ?</l>
           </sp>
-          <sp xml:id="I07-2" who="LUBIN">
+          <sp who="LUBIN" xml:id="I07-2">
             <speaker>LUBIN.</speaker>
             <l n="224" xml:id="l224">Oui, Monsieur : voila le Compère.</l>
             <l n="225" xml:id="l225">Voyez s'il heurte ? Point du tout,</l>
@@ -549,29 +568,31 @@
             <l n="231" xml:id="l231">Voici ma besogne ordinaire.</l>
           </sp>
         </div2>
-        <div2 xml:id="I08" type="scene" n="8">
-          <head>SCÈNE VIII. Lubine, Lubin.<listPerson type="configuration" xml:id="conf8"><person corresp="#LUBINE"/><person corresp="#LUBIN"/></listPerson></head>
-          <sp xml:id="I08-1" who="LUBINE">
+        <div2 n="8" type="scene" xml:id="I08">
+          <head>SCÈNE VIII. Lubine, Lubin.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#LUBINE"/>
+            <person corresp="#LUBIN"/></listPerson></head>
+          <sp who="LUBINE" xml:id="I08-1">
             <speaker>LUBINE.</speaker>
             <l n="232" xml:id="l232">Frotte les souliers du Compère:</l>
             <l n="233" xml:id="l233">Hé bien, chien ? Ta tête de veau !</l>
           </sp>
-          <sp xml:id="I08-2" who="LUBIN">
+          <sp who="LUBIN" xml:id="I08-2">
             <speaker>LUBIN.</speaker>
             <l n="234" xml:id="l234">Il m'a redonné d'un morceau</l>
             <l n="235" xml:id="l235">Qui sera fort bon et fort tendre.</l>
           </sp>
-          <sp xml:id="I08-3" who="LUBINE">
+          <sp who="LUBINE" xml:id="I08-3">
             <speaker>LUBINE.</speaker>
             <l n="236" xml:id="l236">Il ne la voudra pas reprendre ?</l>
             <note type="L">Faquin : Se dit aussi en quelque sorte au figuré, pour un homme sans mérite, sans honneur, sans coeur, digne de toutes sortes de mépris. [F]</note>
             <l n="237" xml:id="l237">L'a-t-il pas reprise, faquin ?</l>
           </sp>
-          <sp xml:id="I08-4" who="LUBIN">
+          <sp who="LUBIN" xml:id="I08-4">
             <speaker>LUBIN.</speaker>
-            <l n="238" xml:id="l238" part="I">Vraiment oui.</l>
+            <l n="238" part="I" xml:id="l238">Vraiment oui.</l>
           </sp>
-          <sp xml:id="I08-5" who="LUBINE">
+          <sp who="LUBINE" xml:id="I08-5">
             <speaker>LUBINE.</speaker>
             <l part="F">Va quérir du vin,</l>
             <l n="239" xml:id="l239">Et que le rôtisseur nous barde</l>
@@ -579,12 +600,13 @@
             <l n="241" xml:id="l241">Pour dîner mon Compère et moi.</l>
             <l n="242" xml:id="l242">Tu prendras, si tu veux pour toi,</l>
             <l n="243" xml:id="l243">Ou des noix, ou bien du fromage :</l>
-            <l n="244" xml:id="l244" part="I">Redonne ces souliers.</l>
+            <l n="244" part="I" xml:id="l244">Redonne ces souliers.</l>
           </sp>
         </div2>
-        <div2 xml:id="I09" type="scene" n="9">
-          <head>SCÈNE IX.<listPerson type="configuration" xml:id="conf9"><person corresp="#LUBIN"/></listPerson></head>
-          <sp xml:id="I09-1" who="LUBIN">
+        <div2 n="9" type="scene" xml:id="I09">
+          <head>SCÈNE IX.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#LUBIN"/></listPerson></head>
+          <sp who="LUBIN" xml:id="I09-1">
             <speaker>LUBIN, seul.</speaker>
             <l part="F">J'enrage,</l>
             <l n="245" xml:id="l245">Et si Job en ma place était</l>
@@ -594,9 +616,11 @@
             <l n="249" xml:id="l249">Le diable lui casse les os.</l>
           </sp>
         </div2>
-        <div2 xml:id="I10" type="scene" n="10">
-          <head>SCÈNE X. Monsieur Ragot, Lubin.<listPerson type="configuration" xml:id="conf10"><person corresp="#MONSIEURRAGOT"/><person corresp="#LUBIN"/></listPerson></head>
-          <sp xml:id="I10-1" who="MONSIEURRAGOT">
+        <div2 n="10" type="scene" xml:id="I10">
+          <head>SCÈNE X. Monsieur Ragot, Lubin.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#MONSIEURRAGOT"/>
+            <person corresp="#LUBIN"/></listPerson></head>
+          <sp who="MONSIEURRAGOT" xml:id="I10-1">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="250" xml:id="l250">L'occasion s'offre à propos ;</l>
             <l n="251" xml:id="l251">Allons donc jeter par avance</l>
@@ -608,22 +632,22 @@
             <l n="257" xml:id="l257">Que les voisins entendent tous</l>
             <l n="258" xml:id="l258">Ta femme te rouer de coups ?</l>
           </sp>
-          <sp xml:id="I10-2" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-2">
             <speaker>LUBIN.</speaker>
             <l n="259" xml:id="l259">Il est vrai, voisin, mais qu'y faire ?</l>
             <l n="260" xml:id="l260">Faut-il que je m'en désespère ?</l>
             <l n="261" xml:id="l261">Le maudit compère qu'elle a</l>
             <l n="262" xml:id="l262">Me hait, et l'oblige à cela.</l>
           </sp>
-          <sp xml:id="I10-3" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-3">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="263" xml:id="l263">Que fait-il chez toi ce compère?</l>
           </sp>
-          <sp xml:id="I10-4" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-4">
             <speaker>LUBIN.</speaker>
             <l n="264" xml:id="l264">Il fait ce que j'y devrais faire.</l>
           </sp>
-          <sp xml:id="I10-5" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-5">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="265" xml:id="l265">J'ai feint d'avoir adroitement</l>
             <l n="266" xml:id="l266">Besoin de lui pour un moment ;</l>
@@ -635,12 +659,12 @@
             <note type="L">Panache : on dit proverbialement, qu'une femme a mis un beau panache sur la tête de son mari, quand elle lui a été infidèle. [F]</note>
             <l n="272" xml:id="l272">Te monter un vilain panache.</l>
           </sp>
-          <sp xml:id="I10-6" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-6">
             <speaker>LUBIN.</speaker>
             <l n="273" xml:id="l273">Vous m'eussiez obligé beaucoup</l>
             <l n="274" xml:id="l274">Voisin, de détourner ce coup.</l>
           </sp>
-          <sp xml:id="I10-7" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-7">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="275" xml:id="l275">Encor passe pour ce Compère,</l>
             <l n="276" xml:id="l276">Car nos femmes ont d'ordinaire</l>
@@ -649,7 +673,7 @@
             <l n="279" xml:id="l279">Mais on te croit sans raillerie</l>
             <l n="280" xml:id="l280">Chef de la grande Confrérie.</l>
           </sp>
-          <sp xml:id="I10-8" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-8">
             <speaker>LUBIN.</speaker>
             <l n="281" xml:id="l281">Voisin, je suis ce que je suis,</l>
             <l n="282" xml:id="l282">Et d'être autrement je ne puis;</l>
@@ -662,45 +686,45 @@
             <l n="289" xml:id="l289">Car ses coups me rendent la peau</l>
             <l n="290" xml:id="l290">Plus noire que votre chapeau.</l>
           </sp>
-          <sp xml:id="I10-9" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-9">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="291" xml:id="l291">Vois-tu Voisin ? Je suis un homme...</l>
           </sp>
-          <sp xml:id="I10-10" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-10">
             <speaker>LUBIN.</speaker>
             <l n="292" xml:id="l292">Je le sais, qui revient de Rome.</l>
           </sp>
-          <sp xml:id="I10-11" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-11">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="293" xml:id="l293">J'ai bien été dans d'autres lieux,</l>
             <l n="294" xml:id="l294">Et si je ne suis pas trop vieux.</l>
           </sp>
-          <sp xml:id="I10-12" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-12">
             <speaker>LUBIN.</speaker>
             <l n="295" xml:id="l295">Peut-on aller plus loin que Rome ?</l>
           </sp>
-          <sp xml:id="I10-13" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-13">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="296" xml:id="l296">Tu n'en as guère vu, pauvre homme !</l>
           </sp>
-          <sp xml:id="I10-14" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-14">
             <speaker>LUBIN.</speaker>
             <l n="297" xml:id="l297">Guère ? J'ai pourtant vu Paris,</l>
             <note type="C">La basilique de Saint-Denis renfermait les tombes des rois de France.</note>
             <l n="298" xml:id="l298">Et le trésor de Saint-Denis.</l>
           </sp>
-          <sp xml:id="I10-15" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-15">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="299" xml:id="l299">C'est voir, sans voir toute la France</l>
             <l n="300" xml:id="l300">Ce qui s'y voit de conséquence.</l>
           </sp>
-          <sp xml:id="I10-16" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-16">
             <speaker>LUBIN.</speaker>
             <l n="301" xml:id="l301">Mais peste. Je m'amuse bien</l>
             <l n="302" xml:id="l302">J'aurai tantôt du rot de chien,</l>
-            <l n="303" xml:id="l303" part="I">Je vais revenir.</l>
+            <l n="303" part="I" xml:id="l303">Je vais revenir.</l>
           </sp>
-          <sp xml:id="I10-17" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-17">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l part="F">Non demeure,</l>
             <l n="304" xml:id="l304">Je m'en vais te ravir sur l'heure : </l>
@@ -715,33 +739,33 @@
             <l n="313" xml:id="l313">D'une femme fut-ce un Démon,</l>
             <l n="314" xml:id="l314">La rend plus douce qu'un mouton.</l>
           </sp>
-          <sp xml:id="I10-18" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-18">
             <speaker>LUBIN.</speaker>
             <l n="315" xml:id="l315">Peste ! L'admirable racine !</l>
             <l n="316" xml:id="l316">D'où peut venir son origine ?</l>
           </sp>
-          <sp xml:id="I10-19" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-19">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="317" xml:id="l317">Du pied d'un arbre que j'ai vu</l>
             <l n="318" xml:id="l318">Qu'avait planté Lusse-tu-cru,</l>
             <note type="L">Faire Gilles : pour dire s'enfuir ou pour dire qu'il a fait banqueroute. [F]</note>
             <l n="319" xml:id="l319">À ce qu'on dit, et puis fit Gilles.</l>
           </sp>
-          <sp xml:id="I10-20" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-20">
             <speaker>LUBIN.</speaker>
             <l n="320" xml:id="l320">Peste ? Il était des plus habilles :</l>
             <l n="321" xml:id="l321">Ce bois a cette faculté ?</l>
           </sp>
-          <sp xml:id="I10-21" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-21">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="322" xml:id="l322">Si ta femme en avait tâté.</l>
           </sp>
-          <sp xml:id="I10-22" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-22">
             <speaker>LUBIN.</speaker>
             <l n="323" xml:id="l323">Vraiment je veux bien qu'elle en tâte ;</l>
             <l n="324" xml:id="l324">Mais une autre fois, car j'ai hâte.</l>
           </sp>
-          <sp xml:id="I10-23" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-23">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="325" xml:id="l325">Attend, dans un quart d'heure, ou deux.</l>
             <l n="326" xml:id="l326">Elle en tâtera si tu veux ;</l>
@@ -749,32 +773,32 @@
             <l n="328" xml:id="l328">Sa douceur deviendrait extrême</l>
             <l n="329" xml:id="l329">Par la faculté de ce bois.</l>
           </sp>
-          <sp xml:id="I10-24" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-24">
             <speaker>LUBIN.</speaker>
             <l n="330" xml:id="l330">La baiserais-je quelquefois ?</l>
             <l n="331" xml:id="l331">Pourrais-je coucher avec elle.</l>
           </sp>
-          <sp xml:id="I10-25" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-25">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="332" xml:id="l332">Hé quoi donc ? La grande nouvelle !</l>
             <l n="333" xml:id="l333">N'y couches-tu pas quand tu veux ?</l>
           </sp>
-          <sp xml:id="I10-26" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-26">
             <speaker>LUBIN.</speaker>
             <l n="334" xml:id="l334">Morbleu ! Que je serais heureux !</l>
             <l n="335" xml:id="l335">Ce serait une bonne affaire !</l>
             <l n="336" xml:id="l336">Mais où coucherait le Compère ?</l>
           </sp>
-          <sp xml:id="I10-27" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-27">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="337" xml:id="l337">Qu'il couche au diable désormais.</l>
           </sp>
-          <sp xml:id="I10-28" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-28">
             <speaker>LUBIN.</speaker>
             <l n="338" xml:id="l338">Elle ne le voudra jamais,</l>
             <l n="339" xml:id="l339">C'est un homme qu'elle idolâtre.</l>
           </sp>
-          <sp xml:id="I10-29" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-29">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="340" xml:id="l340">Mais tu la battras comme plâtre</l>
             <l n="341" xml:id="l341">Si tu veux, et tu lui feras</l>
@@ -793,23 +817,23 @@
             <l n="354" xml:id="l354">De n'aimer que toi désormais,</l>
             <l n="355" xml:id="l355">De ne plus souffrir le Compère.</l>
           </sp>
-          <sp xml:id="I10-30" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-30">
             <speaker>LUBIN.</speaker>
             <l n="356" xml:id="l356">Ce serait bien là mon affaire :</l>
             <l n="357" xml:id="l357">Mais l'homme qui l'avait trouvé</l>
-            <l n="358" xml:id="l358" part="I">Ce bâton...</l>
+            <l n="358" part="I" xml:id="l358">Ce bâton...</l>
           </sp>
-          <sp xml:id="I10-31" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-31">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l part="F">L'avait éprouvé :</l>
             <l n="359" xml:id="l359">Mais connaissais-tu pas ma femme ?</l>
           </sp>
-          <sp xml:id="I10-32" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-32">
             <speaker>LUBIN.</speaker>
             <note type="L">Lame : on dit proverbialement et bassement, "une bonne lame", une "fine lame", une personne fine, et adroite ; et ne se dit qu'en mauvais part, principalement quand on dit d'un ton admiratif : La bonne lame ! [F]</note>
             <l n="360" xml:id="l360">Qui, c'était une bonne lame.</l>
           </sp>
-          <sp xml:id="I10-33" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-33">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="361" xml:id="l361">Trois coups la rendirent d'abord </l>
             <l n="362" xml:id="l362">Plus douce qu'un enfant qui dort :</l>
@@ -819,17 +843,17 @@
             <l n="365" xml:id="l365">Et les dire, autrement, ma foi,</l>
             <l n="366" xml:id="l366">Les coups retourneraient sur toi.</l>
           </sp>
-          <sp xml:id="I10-34" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-34">
             <speaker>LUBIN.</speaker>
             <l n="367" xml:id="l367">Ah ! Je veux donc bien les apprendre.</l>
             <l n="368" xml:id="l368">Avant que de rien entreprendre.</l>
           </sp>
-          <sp xml:id="I10-35" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-35">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="369" xml:id="l369">Oui, car il les faut prononcer.</l>
             <l n="370" xml:id="l370">Auparavant que commencer.</l>
           </sp>
-          <sp xml:id="I10-36" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-36">
             <speaker>LUBIN.</speaker>
             <l n="371" xml:id="l371">Elle va revenir, je meure :</l>
             <l n="372" xml:id="l372">Apprenez-les moi tout à l'heure</l>
@@ -842,20 +866,20 @@
             <l n="379" xml:id="l379">J'ai fort peu de l'un et de l'autre,</l>
             <l n="380" xml:id="l380">Mais disposez comme de vôtre.</l>
           </sp>
-          <sp xml:id="I10-37" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-37">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="381" xml:id="l381">Va je ne te demande rien,</l>
             <l n="382" xml:id="l382">Voici les mots retiens les bien.</l>
           </sp>
-          <sp xml:id="I10-38" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-38">
             <speaker>LUBIN.</speaker>
             <l n="383" xml:id="l383">Vraiment pour cesser d'être esclave...</l>
           </sp>
-          <sp xml:id="I10-39" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-39">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="384" xml:id="l384">Tasse vouzi driou titave.</l>
           </sp>
-          <sp xml:id="I10-40" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-40">
             <speaker>LUBIN.</speaker>
             <l n="385" xml:id="l385">La peste ! Quels diables de mots !</l>
             <l n="386" xml:id="l386">Je ne trouve plus à propos</l>
@@ -864,7 +888,7 @@
             <l n="389" xml:id="l389">Avant que de les bien savoir</l>
             <l n="390" xml:id="l390">Adieu, voisin, jusqu'au revoir.</l>
           </sp>
-          <sp xml:id="I10-41" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-41">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="391" xml:id="l391">Demeure, il n'est rien plus facile :</l>
             <l n="392" xml:id="l392">Quand tu serais plus imbécile</l>
@@ -872,144 +896,146 @@
             <l n="394" xml:id="l394">Je donne la facilité</l>
             <l n="395" xml:id="l395">D'apprendre en un jour une histoire..</l>
           </sp>
-          <sp xml:id="I10-42" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-42">
             <speaker>LUBIN.</speaker>
             <l n="396" xml:id="l396">Mais donnez-vous de la mémoire ?</l>
             <l n="397" xml:id="l397">Il faudrait vite m'en fournir</l>
             <l n="398" xml:id="l398">Car ma femme va revenir.</l>
           </sp>
-          <sp xml:id="I10-43" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-43">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="399" xml:id="l399">Dis donc, tu n'as que de la bave :</l>
             <l n="400" xml:id="l400">Tasse vouzi driou titave.</l>
           </sp>
-          <sp xml:id="I10-44" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-44">
             <speaker>LUBIN.</speaker>
-            <l n="401" xml:id="l401" part="I">Tasse, roti....</l>
+            <l n="401" part="I" xml:id="l401">Tasse, roti....</l>
           </sp>
-          <sp xml:id="I10-45" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-45">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l part="F">Quoi ! Quatre mots...</l>
           </sp>
-          <sp xml:id="I10-46" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-46">
             <speaker>LUBIN.</speaker>
             <l n="402" xml:id="l402">Patience, un peu de repos.</l>
           </sp>
-          <sp xml:id="I10-47" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-47">
             <speaker>MONSIEUR RAGOT.</speaker>
-            <l n="403" xml:id="l403" part="I">Tasse...</l>
+            <l n="403" part="I" xml:id="l403">Tasse...</l>
           </sp>
-          <sp xml:id="I10-48" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-48">
             <speaker>LUBIN.</speaker>
             <l part="F">Je sais bien une tasse</l>
-            <l n="404" xml:id="l404" part="I">Dans laquelle on boit.</l>
+            <l n="404" part="I" xml:id="l404">Dans laquelle on boit.</l>
           </sp>
-          <sp xml:id="I10-49" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-49">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l part="F">Je me lasse.</l>
           </sp>
-          <sp xml:id="I10-50" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-50">
             <speaker>LUBIN.</speaker>
             <l n="405" xml:id="l405">Dites-les moi plus posément.</l>
           </sp>
-          <sp xml:id="I10-51" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-51">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="406" xml:id="l406">Je parle assez distinctement</l>
             <l n="407" xml:id="l407">Tasse rouzi....</l>
           </sp>
-          <sp xml:id="I10-52" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-52">
             <speaker>LUBIN.</speaker>
             <l part="F">Disons ensemble.</l>
           </sp>
-          <sp xml:id="I10-53" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-53">
             <speaker>MONSIEUR RAGOT.</speaker>
-            <l n="408" xml:id="l408" part="I">Pourquoi m'interrompre ?</l>
+            <l n="408" part="I" xml:id="l408">Pourquoi m'interrompre ?</l>
           </sp>
-          <sp xml:id="I10-54" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-54">
             <speaker>LUBIN.</speaker>
             <l part="F">Il me semble</l>
             <l n="409" xml:id="l409">Que quand nous parlerons toux deux</l>
             <l n="410" xml:id="l410">Je les dirai peut-être mieux.</l>
           </sp>
-          <sp xml:id="I10-55" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-55">
             <speaker>MONSIEUR RAGOT.</speaker>
-            <l n="411" xml:id="l411" part="I">Tasse.</l>
+            <l n="411" part="I" xml:id="l411">Tasse.</l>
           </sp>
-          <sp xml:id="I10-56" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-56">
             <speaker>LUBIN.</speaker>
             <l part="F">Tasse. Dis-je pas bien ?</l>
           </sp>
-          <sp xml:id="I10-57" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-57">
             <speaker>MONSIEUR RAGOT.</speaker>
-            <l n="412" xml:id="l412" part="I">Achève.</l>
+            <l n="412" part="I" xml:id="l412">Achève.</l>
           </sp>
-          <sp xml:id="I10-58" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-58">
             <speaker>LUBIN.</speaker>
             <l part="F">Je ne sais plus rien.</l>
           </sp>
-          <sp xml:id="I10-59" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-59">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="413" xml:id="l413">Et comment donc prétends-tu faire ?</l>
           </sp>
-          <sp xml:id="I10-60" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-60">
             <speaker>LUBIN.</speaker>
             <l n="414" xml:id="l414">Il faut achever notre affaire.</l>
           </sp>
-          <sp xml:id="I10-61" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-61">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="415" xml:id="l415">Mais quoi ! Si tu ne retiens pas.</l>
           </sp>
-          <sp xml:id="I10-62" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-62">
             <speaker>LUBIN.</speaker>
             <l n="416" xml:id="l416">Mais que l'on parle mal là-bas !</l>
             <l n="417" xml:id="l417">Le langage est bien incommode</l>
             <l n="418" xml:id="l418">Dedans la ville d'Antipode !</l>
             <l n="419" xml:id="l419">Cela me ferait détester.</l>
           </sp>
-          <sp xml:id="I10-63" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-63">
             <speaker>MONSIEUR RAGOT, à part.</speaker>
             <l n="420" xml:id="l420">Je ne me veux point rebuter,</l>
             <l n="421" xml:id="l421">Il faut s'armer de patience</l>
             <l n="422" xml:id="l422">Pour bien assurer sa vengeance,</l>
             <l n="423" xml:id="l423">Elle est tantôt en mon pouvoir.</l>
           </sp>
-          <sp xml:id="I10-64" who="LUBIN">
+          <sp who="LUBIN" xml:id="I10-64">
             <speaker>LUBIN.</speaker>
             <l n="424" xml:id="l424">Écoutez, je crois les savoir :</l>
             <l n="425" xml:id="l425">Tasse vouzi friou titave.</l>
           </sp>
-          <sp xml:id="I10-65" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I10-65">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="426" xml:id="l426">Les voilà, tu n'es plus esclave,</l>
             <l n="427" xml:id="l427">Ils te rendront maître chez toi.</l>
-            <l n="428" xml:id="l428" part="I">Adieu.</l>
+            <l n="428" part="I" xml:id="l428">Adieu.</l>
           </sp>
         </div2>
-        <div2 xml:id="I11" type="scene" n="11">
-          <head>SCÈNE XI. Lubin, Lubine.<listPerson type="configuration" xml:id="conf11"><person corresp="#LUBINE"/><person corresp="#LUBIN"/></listPerson></head>
-          <sp xml:id="I11-1" who="LUBINE">
+        <div2 n="11" type="scene" xml:id="I11">
+          <head>SCÈNE XI. Lubin, Lubine.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#LUBINE"/>
+            <person corresp="#LUBIN"/></listPerson></head>
+          <sp who="LUBINE" xml:id="I11-1">
             <speaker>LUBINE.</speaker>
             <l part="F">Te moques-tu de moi ?</l>
           </sp>
-          <sp xml:id="I11-2" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-2">
             <speaker>LUBIN.</speaker>
             <l n="429" xml:id="l429">Ne voilà-t-il pas la carogne ?</l>
           </sp>
-          <sp xml:id="I11-3" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-3">
             <speaker>LUBINE.</speaker>
             <l n="430" xml:id="l430">Que fais-tu donc là, chien d'ivrogne ?</l>
           </sp>
-          <sp xml:id="I11-4" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-4">
             <speaker>LUBIN.</speaker>
             <l n="431" xml:id="l431">Tasse rouzi friou... J'y fais...</l>
             <l n="432" xml:id="l432">Il ne m'en souviendra jamais,</l>
-            <l n="433" xml:id="l433" part="I">Voisin.</l>
+            <l n="433" part="I" xml:id="l433">Voisin.</l>
           </sp>
-          <sp xml:id="I11-5" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-5">
             <speaker>LUBINE.</speaker>
             <l part="F">Dis sot, est-ce pour rire ?</l>
           </sp>
-          <sp xml:id="I11-6" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-6">
             <speaker>LUBIN.</speaker>
             <l n="434" xml:id="l434">Il s'en est allé sans rien dire,</l>
             <l n="435" xml:id="l435">Elle a raison, faute d'un mot </l>
@@ -1018,51 +1044,51 @@
             <l n="438" xml:id="l438">Tasse rouzi friou titave.</l>
             <l n="439" xml:id="l439">Bon je l'ai retrouvé sans vous.</l>
           </sp>
-          <sp xml:id="I11-7" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-7">
             <speaker>LUBINE.</speaker>
             <l n="440" xml:id="l440">Il faut le mettre au rang des fous.</l>
           </sp>
-          <sp xml:id="I11-8" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-8">
             <speaker>LUBIN.</speaker>
             <l n="441" xml:id="l441">Des fous ! Pas tant fou que l'on pense :</l>
             <l n="442" xml:id="l442">Allons, fais-moi la révérence.</l>
             <l n="443" xml:id="l443">Et quelque joli compliment.</l>
           </sp>
-          <sp xml:id="I11-9" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-9">
             <speaker>LUBINE.</speaker>
             <l n="444" xml:id="l444">Il a perdu le jugement.</l>
             <l n="445" xml:id="l445">Comme ce coquin, fait le grave !</l>
           </sp>
-          <sp xml:id="I11-10" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-10">
             <speaker>LUBIN.</speaker>
             <stage type="[N/A]">Il la frappe</stage>
             <l n="446" xml:id="l446">Tasse rouzi friou titave.</l>
           </sp>
-          <sp xml:id="I11-11" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-11">
             <speaker>LUBINE.</speaker>
             <l n="447" xml:id="l447">J'y vais, ne me frappe donc pas.</l>
           </sp>
-          <sp xml:id="I11-12" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-12">
             <speaker>LUBIN.</speaker>
             <l n="448" xml:id="l448">La révérence, bas, plus bas,</l>
             <l n="449" xml:id="l449">Ma foi, cette racine est drôle !</l>
             <l n="450" xml:id="l450">Allons, qu'on joue un autre rôle.</l>
           </sp>
-          <sp xml:id="I11-13" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-13">
             <speaker>LUBINE.</speaker>
             <l n="451" xml:id="l451">D'où peut venir cet enragé ?</l>
             <l n="452" xml:id="l452">Dis donc, que diable as-tu mangé !</l>
           </sp>
-          <sp xml:id="I11-14" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-14">
             <speaker>LUBIN.</speaker>
             <stage type="[N/A]">Il la frappe.</stage>
             <l n="453" xml:id="l453">Ah coquine tu m'injuries.</l>
           </sp>
-          <sp xml:id="I11-15" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-15">
             <speaker>LUBINE.</speaker>
             <l n="454" xml:id="l454">Mon mignon, quitte ces furies.</l>
           </sp>
-          <sp xml:id="I11-16" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-16">
             <speaker>LUBIN.</speaker>
             <l n="455" xml:id="l455">Mon mignon ! Hé mon chien de coeur : </l>
             <l n="456" xml:id="l456">D'où diable me vient cet honneur ?</l>
@@ -1071,12 +1097,12 @@
             <stage type="[N/A]">Il la frappe.</stage>
             <l n="459" xml:id="l459">Te reconnaître quelque jour.</l>
           </sp>
-          <sp xml:id="I11-17" who="LUBINE">
+          <sp who="LUBINE" xml:id="I11-17">
             <speaker>LUBINE.</speaker>
             <l n="460" xml:id="l460">Hélas ! Pardon mon cher amour,</l>
             <l n="461" xml:id="l461">Que veux-tu ? D'où vient ta colère ?</l>
           </sp>
-          <sp xml:id="I11-18" who="LUBIN">
+          <sp who="LUBIN" xml:id="I11-18">
             <speaker>LUBIN.</speaker>
             <l n="462" xml:id="l462">Va mettre dehors ce compère,</l>
             <l n="463" xml:id="l463">Et ne le regarde jamais,</l>
@@ -1085,50 +1111,54 @@
             <l n="466" xml:id="l466">Tasse rouzi friou, mon âme.</l>
           </sp>
         </div2>
-        <div2 xml:id="I12" type="scene" n="12">
-          <head>SCÈNE XII. Le Compère, Lubine, Lubin.<listPerson type="configuration" xml:id="conf12"><person corresp="#LECOMPERE"/><person corresp="#LUBINE"/><person corresp="#LUBIN"/><person corresp="#LUBIN_LUBINE"/></listPerson></head>
-          <sp xml:id="I12-1" who="LECOMPERE">
+        <div2 n="12" type="scene" xml:id="I12">
+          <head>SCÈNE XII. Le Compère, Lubine, Lubin.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#LECOMPERE"/>
+            <person corresp="#LUBINE"/>
+            <person corresp="#LUBIN"/>
+          </listPerson></head>
+          <sp who="LECOMPERE" xml:id="I12-1">
             <speaker>LE COMPÈRE.</speaker>
             <l n="467" xml:id="l467">Sortir si brusquement ! Pourquoi</l>
-            <l n="468" xml:id="l468" part="I">Dites donc.</l>
+            <l n="468" part="I" xml:id="l468">Dites donc.</l>
           </sp>
-          <sp xml:id="I12-2" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-2">
             <speaker>LUBINE.</speaker>
             <l part="F">Pour l'amour de moi.</l>
           </sp>
-          <sp xml:id="I12-3" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I12-3">
             <speaker>LE COMPÈRE.</speaker>
             <l n="469" xml:id="l469">Ah ! C'est en peu de mots tout dire,</l>
             <l n="470" xml:id="l470">J'obéis, et je me retire.</l>
           </sp>
-          <sp xml:id="I12-4" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-4">
             <speaker>LUBIN.</speaker>
             <l n="471" xml:id="l471">Voilà le Compère sorti,</l>
-            <l n="472" xml:id="l472" part="I">Bon.</l>
+            <l n="472" part="I" xml:id="l472">Bon.</l>
           </sp>
-          <sp xml:id="I12-5" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-5">
             <speaker>LUBINE.</speaker>
             <l part="F">Mon amour, il est parti.</l>
           </sp>
-          <sp xml:id="I12-6" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-6">
             <speaker>LUBIN.</speaker>
             <l n="473" xml:id="l473">Il est parti ! Ton coeur soupire !</l>
             <l n="474" xml:id="l474">Allons, tout à l'heure il faut rire.</l>
           </sp>
-          <sp xml:id="I12-7" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-7">
             <speaker>LUBINE.</speaker>
             <l n="475" xml:id="l475">Rire et pleurer, je ne puis pas.</l>
           </sp>
-          <sp xml:id="I12-8" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-8">
             <speaker>LUBIN.</speaker>
             <l n="476" xml:id="l476">Ris ,ou je te romprai les bras,</l>
             <l n="477" xml:id="l477">Ma racine est mal employée.</l>
           </sp>
-          <sp xml:id="I12-9" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-9">
             <speaker>LUBINE.</speaker>
             <l n="478" xml:id="l478">Rirai-je à gorge déployée ?</l>
           </sp>
-          <sp xml:id="I12-10" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-10">
             <speaker>LUBIN.</speaker>
             <l n="479" xml:id="l479">Oui-dà, bien fort ; bon, ne ris plus,</l>
             <l n="480" xml:id="l480">Je trouve tes ris superflus ;</l>
@@ -1136,49 +1166,49 @@
             <l n="482" xml:id="l482">On dit que ta voix a des charmes ,</l>
             <l n="483" xml:id="l483">Chante, éternue, auparavant.</l>
           </sp>
-          <sp xml:id="I12-11" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-11">
             <speaker>LUBINE.</speaker>
             <l n="484" xml:id="l484">Moi que j'éternue, et comment ?</l>
           </sp>
-          <sp xml:id="I12-12" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-12">
             <speaker>LUBIN.</speaker>
             <l n="485" xml:id="l485">Comme tu voudras, éternue,</l>
             <l n="486" xml:id="l486">Éternue, ou bien je te tue.</l>
           </sp>
-          <sp xml:id="I12-13" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-13">
             <speaker>LUBINE.</speaker>
             <l n="487" xml:id="l487">Mais je ne le puis pas, ma foi.</l>
           </sp>
-          <sp xml:id="I12-14" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-14">
             <speaker>LUBIN.</speaker>
             <l n="488" xml:id="l488">Tasse friou titave, à moi.</l>
           </sp>
-          <sp xml:id="I12-15" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-15">
             <speaker>LUBINE.</speaker>
             <l n="489" xml:id="l489">Mais cela n'est pas volontaire.</l>
           </sp>
-          <sp xml:id="I12-16" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-16">
             <speaker>LUBIN.</speaker>
             <l n="490" xml:id="l490">Ah ! J'ai tort s'il ne se peut faire.</l>
             <l n="491" xml:id="l491">Fais donc un feint éternuement ;</l>
             <l n="492" xml:id="l492">Dieu t'assiste, je suis content.</l>
           </sp>
-          <sp xml:id="I12-17" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-17">
             <speaker>LUBINE.</speaker>
             <l n="493" xml:id="l493">Je le crois tu le dois bien être,</l>
             <l n="494" xml:id="l494">Tu voulais tant faire le maître,</l>
             <l n="495" xml:id="l495">Tu l'es de la bonne façon.</l>
           </sp>
-          <sp xml:id="I12-18" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-18">
             <speaker>LUBIN.</speaker>
             <l n="496" xml:id="l496">À propos, chante la chanson....</l>
             <l n="497" xml:id="l497">Et là, cette chanson qu'on chante.</l>
           </sp>
-          <sp xml:id="I12-19" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-19">
             <speaker>LUBINE.</speaker>
             <l n="498" xml:id="l498">Qui moi ? J'ai la voix trop méchante.</l>
           </sp>
-          <sp xml:id="I12-20" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-20">
             <speaker>LUBIN.</speaker>
             <l n="499" xml:id="l499">Et la voix, l'esprit, et le corps,</l>
             <l n="500" xml:id="l500">Tu n'es bonne que quand tu dors,</l>
@@ -1186,30 +1216,30 @@
             <l n="502" xml:id="l502">Et c'est enfin mon tour de l'être :</l>
             <l n="503" xml:id="l503">Chante pour charmer mes ennuis.</l>
           </sp>
-          <sp xml:id="I12-21" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-21">
             <speaker>LUBINE.</speaker>
             <l n="504" xml:id="l504">Je suis malade et je ne puis.</l>
           </sp>
-          <sp xml:id="I12-22" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-22">
             <speaker>LUBIN.</speaker>
             <l n="505" xml:id="l505">Il faut donc prendre médecine.</l>
             <l n="506" xml:id="l506">Quatre prises de ma racine</l>
             <l n="507" xml:id="l507">Purgent les mauvaises humeurs.</l>
           </sp>
-          <sp xml:id="I12-23" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-23">
             <speaker>LUBINE.</speaker>
             <l n="508" xml:id="l508">Ah ! Je n'en puis plus, je me meurs.</l>
           </sp>
-          <sp xml:id="I12-24" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-24">
             <speaker>LUBIN.</speaker>
             <l n="509" xml:id="l509">Que tu fais mal la décédé !</l>
             <l n="510" xml:id="l510">Tu ferais mieux la possédée.</l>
           </sp>
-          <sp xml:id="I12-25" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-25">
             <speaker>LUBINE.</speaker>
             <l n="511" xml:id="l511">Cesse tes coups, je n'en puis plus.</l>
           </sp>
-          <sp xml:id="I12-26" who="LUBIN">
+          <sp who="LUBIN" xml:id="I12-26">
             <speaker>LUBIN.</speaker>
             <l n="512" xml:id="l512">Chante, tes pleurs font superflus ;</l>
             <l n="513" xml:id="l513">Je suis fort content que tu meures,</l>
@@ -1222,7 +1252,7 @@
             <l n="520" xml:id="l520">Mais jamais, jamais,</l>
             <l n="521" xml:id="l521">Tu ne m'endormiras.</l>
           </sp>
-          <sp xml:id="I12-27" who="LUBIN_LUBINE">
+          <sp who="LUBIN LUBINE" xml:id="I12-27">
             <speaker>LUBIN et LUBINE chantent.</speaker>
             <l n="522" xml:id="l522">Ah, le bon vin ! </l>
             <l n="523" xml:id="l523">Tu as endormi ma mère,</l>
@@ -1231,44 +1261,48 @@
             <l n="526" xml:id="l526">Mais jamais, jamais,</l>
             <l n="527" xml:id="l527">Tu ne m'endormiras.</l>
           </sp>
-          <sp xml:id="I12-28" who="LUBINE">
+          <sp who="LUBINE" xml:id="I12-28">
             <speaker>LUBINE.</speaker>
             <note type="C">Dans l'édition de 1679, on lit "LUBIN" comme locuteur, il s'agit très probablement de LUBINE.</note>
             <l n="528" xml:id="l528">Mon mignon, mon friou titave,</l>
             <l n="529" xml:id="l529">Commande, je suis ton esclave.</l>
           </sp>
         </div2>
-        <div2 xml:id="I13" type="scene" n="13">
-          <head>SCÈNE DERNIÈRE. Monsieur Ragot, Le Compère sortants chacun d'un côté, Lubin, Lubine.<listPerson type="configuration" xml:id="conf13"><person corresp="#LUBIN"/><person corresp="#MONSIEURRAGOT"/><person corresp="#LECOMPERE"/><person corresp="#LUBINE"/></listPerson></head>
-          <sp xml:id="I13-1" who="LUBIN">
+        <div2 n="13" type="scene" xml:id="I13">
+          <head>SCÈNE DERNIÈRE. Monsieur Ragot, Le Compère sortants chacun d'un côté, Lubin, Lubine.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#LUBIN"/>
+            <person corresp="#MONSIEURRAGOT"/>
+            <person corresp="#LECOMPERE"/>
+            <person corresp="#LUBINE"/></listPerson></head>
+          <sp who="LUBIN" xml:id="I13-1">
             <speaker>LUBIN.</speaker>
-            <l n="530" xml:id="l530" part="I">Ah, voisin !</l>
+            <l n="530" part="I" xml:id="l530">Ah, voisin !</l>
           </sp>
-          <sp xml:id="I13-2" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I13-2">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l part="F">As-tu réussi ?</l>
           </sp>
-          <sp xml:id="I13-3" who="LUBIN">
+          <sp who="LUBIN" xml:id="I13-3">
             <speaker>LUBIN, au Compère.</speaker>
             <l n="531" xml:id="l531">Que venez-vous chercher ici ?</l>
           </sp>
-          <sp xml:id="I13-4" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I13-4">
             <speaker>LE COMPÈRE.</speaker>
-            <l n="532" xml:id="l532" part="I">Hen.</l>
+            <l n="532" part="I" xml:id="l532">Hen.</l>
           </sp>
-          <sp xml:id="I13-5" who="LUBIN">
+          <sp who="LUBIN" xml:id="I13-5">
             <speaker>LUBIN.</speaker>
             <l part="F">Ne faites point tant le brave ;</l>
             <l n="533" xml:id="l533">Tasse rouzi friou titave,</l>
             <l n="534" xml:id="l534">Vous pourrait maltraiter, ma foi,</l>
             <l n="535" xml:id="l535">Votre gîte n'est plus chez moi,</l>
-            <l n="536" xml:id="l536" part="I">Le temps est passé.</l>
+            <l n="536" part="I" xml:id="l536">Le temps est passé.</l>
           </sp>
-          <sp xml:id="I13-6" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I13-6">
             <speaker>LE COMPÈRE.</speaker>
             <l part="F">Hé compère !</l>
           </sp>
-          <sp xml:id="I13-7" who="LUBIN">
+          <sp who="LUBIN" xml:id="I13-7">
             <speaker>LUBIN.</speaker>
             <l n="537" xml:id="l537">Il n'est compère ni commère,</l>
             <l n="538" xml:id="l538">Vous devez être satisfait</l>
@@ -1277,11 +1311,11 @@
             <l n="541" xml:id="l541">Vous n'en ferez pas davantage.</l>
             <l n="542" xml:id="l542">Car j'userai de mon pouvoir.</l>
           </sp>
-          <sp xml:id="I13-8" who="LECOMPERE">
+          <sp who="LECOMPERE" xml:id="I13-8">
             <speaker>LE COMPÈRE.</speaker>
             <l n="543" xml:id="l543">Et moi je vous ferai savoir...</l>
           </sp>
-          <sp xml:id="I13-9" who="LUBIN">
+          <sp who="LUBIN" xml:id="I13-9">
             <speaker>LUBIN.</speaker>
             <l n="544" xml:id="l544">Ah ! Vous voulez faire le brave.</l>
             <l n="545" xml:id="l545">Tasse rouzi friou titave.</l>
@@ -1291,7 +1325,7 @@
             <l n="549" xml:id="l549">Ce que tu fais sur la Commère,</l>
             <l n="550" xml:id="l550">Comme diable il gagne le haut.</l>
           </sp>
-          <sp xml:id="I13-10" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I13-10">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="551" xml:id="l551">Mais suis-je vengé comme il faut ?</l>
             <l n="552" xml:id="l552">Si vous menez Jean, Jacques ou Blaise,</l>
@@ -1301,11 +1335,11 @@
             <l n="556" xml:id="l556">Et qu'elle vous fasse la mine,</l>
             <l n="557" xml:id="l557">Venez emprunter ma racine.</l>
           </sp>
-          <sp xml:id="I13-11" who="LUBIN">
+          <sp who="LUBIN" xml:id="I13-11">
             <speaker>LUBIN.</speaker>
             <l n="558" xml:id="l558">Par elle mon sort a changé.</l>
           </sp>
-          <sp xml:id="I13-12" who="MONSIEURRAGOT">
+          <sp who="MONSIEURRAGOT" xml:id="I13-12">
             <speaker>MONSIEUR RAGOT.</speaker>
             <l n="559" xml:id="l559">Voilà, Messieurs, le sot vengé.</l>
           </sp>

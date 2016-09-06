@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>La Bradamante</title><title type="sub">, tragi-comédie.</title>
-        <author born="1609" born_location="château de Toulgou à Salignac" death="1663" death_location="Les Andelys" academie="1673"><surname>La Calprenède</surname><forename> Gautier Costes de</forename></author>
+        <title>La Bradamante</title>
+        <title type="sub">, tragi-comédie.</title>
+        <author academie="1673" born="1609" born_location="château de Toulgou à Salignac" death="1663" death_location="Les Andelys">
+          <surname>La Calprenède</surname>
+          <forename> Gautier Costes de</forename>
+        </author>
         <date>1732</date>
       </titleStmt>
       <publicationStmt>
@@ -49,7 +54,7 @@
         <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1637">M. DC. XXXVII AVEC PRIVILÈGE DU ROI. </docDate>
-      <docAuthor id="LA CALPRENEDE, Gautier Costes de" bio="lacalprenede">Par de la CALPRENÈDE.</docAuthor>
+      <docAuthor bio="lacalprenede" id="LA CALPRENEDE, Gautier Costes de">Par de la CALPRENÈDE.</docAuthor>
       <docImprint>
         <privilege id="1637-02-07">
           <head>Extrait du Privilège du Roi.</head>
@@ -63,34 +68,36 @@
       </performance>
       <castList>
         <head>LES ACTEURS</head>
-        <castItem><role xml:id="CHARLES" id="CHARLES" sex="1">CHARLES</role>, Roi de France.</castItem>
-        <castItem><role xml:id="LEON" id="LÉON" sex="1">LÉON</role>, Prince de Grèce.</castItem>
-        <castItem><role xml:id="ROGER" id="ROGER" sex="1">ROGER</role>, Serviteur de Bradamante.</castItem>
-        <castItem><role xml:id="AYMON" id="AYMON" sex="1">AYMON</role>, Père de Bradamante.</castItem>
-        <castItem><role xml:id="RENAUD" id="RENAUD" sex="1">RENAUD</role>, Frère de Bradamante.</castItem>
-        <castItem><role xml:id="BRADAMANTE" id="BRADAMANTE" sex="2">BRADAMANTE</role>.</castItem>
-        <castItem><role xml:id="HIPALQUE" id="HIPALQUE" sex="2">HIPALQUE</role>, Suivante de Bradamante.</castItem>
-        <castItem><role xml:id="MARPHISE" id="MARPHISE" sex="2">MARPHISE</role>, Soeur de Roger.</castItem>
-        <castItem><role xml:id="NAYMES" id="NAYMES" sex="1">NAYMES</role>, Seigneur Français.</castItem>
-        <castItem><role xml:id="ZENON" id="ZÉNON" sex="1">ZÉNON</role>, Ami de Léon.</castItem>
-        <castItem><role xml:id="AMBASSADEURS" id="AMBASSADEURS" sex="9">AMBASSADEURS</role> de Bulgarie. </castItem>
+        <castItem><role id="CHARLES" sex="1" xml:id="CHARLES">CHARLES</role>, Roi de France.</castItem>
+        <castItem><role id="LÉON" sex="1" xml:id="LEON">LÉON</role>, Prince de Grèce.</castItem>
+        <castItem><role id="ROGER" sex="1" xml:id="ROGER">ROGER</role>, Serviteur de Bradamante.</castItem>
+        <castItem><role id="AYMON" sex="1" xml:id="AYMON">AYMON</role>, Père de Bradamante.</castItem>
+        <castItem><role id="RENAUD" sex="1" xml:id="RENAUD">RENAUD</role>, Frère de Bradamante.</castItem>
+        <castItem><role id="BRADAMANTE" sex="2" xml:id="BRADAMANTE">BRADAMANTE</role>.</castItem>
+        <castItem><role id="HIPALQUE" sex="2" xml:id="HIPALQUE">HIPALQUE</role>, Suivante de Bradamante.</castItem>
+        <castItem><role id="MARPHISE" sex="2" xml:id="MARPHISE">MARPHISE</role>, Soeur de Roger.</castItem>
+        <castItem><role id="NAYMES" sex="1" xml:id="NAYMES">NAYMES</role>, Seigneur Français.</castItem>
+        <castItem><role id="ZÉNON" sex="1" xml:id="ZENON">ZÉNON</role>, Ami de Léon.</castItem>
+        <castItem><role id="AMBASSADEURS" sex="9" xml:id="AMBASSADEURS">AMBASSADEURS</role> de Bulgarie. </castItem>
       </castList>
-      <set location="France" country="France" periode="IXème" link=""/>
+      <set country="France" link="" location="France" periode="IXème"/>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Léon, Roger.<listPerson type="configuration" xml:id="conf1"><person corresp="#LEON"/><person corresp="#ROGER"/></listPerson></head>
-          <sp xml:id="I01-1" who="LEON">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Léon, Roger.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LEON"/>
+            <person corresp="#ROGER"/></listPerson></head>
+          <sp who="LEON" xml:id="I01-1">
             <speaker>LÉON.</speaker>
             <l n="1" xml:id="l1">Que vous me haïrez pour cette lâcheté. </l>
           </sp>
-          <sp xml:id="I01-2" who="ROGER">
+          <sp who="ROGER" xml:id="I01-2">
             <speaker>ROGER.</speaker>
             <l n="2" xml:id="l2">Ne jugez point si mal de ma fidélité. </l>
           </sp>
-          <sp xml:id="I01-3" who="LEON">
+          <sp who="LEON" xml:id="I01-3">
             <speaker>LÉON.</speaker>
             <l n="3" xml:id="l3">Je veux à vos dépens acheter ma fortune, </l>
             <l n="4" xml:id="l4">Ha ne trouvez-vous point ma requête importune ? </l>
@@ -98,15 +105,15 @@
             <l n="6" xml:id="l6">Vous mêlâtes jamais les myrtes aux lauriers : </l>
             <l n="7" xml:id="l7">Et si vous connaissez ce que peut sur une âme </l>
             <l n="8" xml:id="l8">Le transport violent d'une amoureuse flamme, </l>
-            <l n="9" xml:id="l9" part="I">Vous excuserez tout. </l>
+            <l n="9" part="I" xml:id="l9">Vous excuserez tout. </l>
           </sp>
-          <sp xml:id="I01-4" who="ROGER">
+          <sp who="ROGER" xml:id="I01-4">
             <speaker>ROGER.</speaker>
             <l part="F">Hormis ce compliment, </l>
             <l n="10" xml:id="l10">Traitez-moi je vous prie un peu plus franchement, </l>
             <l n="11" xml:id="l11">Pourrais-je être qu'à vous après ce bon office. </l>
           </sp>
-          <sp xml:id="I01-5" who="LEON">
+          <sp who="LEON" xml:id="I01-5">
             <speaker>LÉON.</speaker>
             <l n="12" xml:id="l12">C'est trop se souvenir de si peu de service : </l>
             <l n="13" xml:id="l13">Vous êtes redevable à ma seule amitié. </l>
@@ -128,36 +135,36 @@
             <l n="29" xml:id="l29">J'ai trop peu de valeur pour hasarder ce bien, </l>
             <l n="30" xml:id="l30">Et si je suis vaincu, je ne possède rien. </l>
           </sp>
-          <sp xml:id="I01-6" who="ROGER">
+          <sp who="ROGER" xml:id="I01-6">
             <speaker>ROGER, à part soi.</speaker>
             <l n="31" xml:id="l31">Fut-il jamais malheur à mon malheur semblable ? </l>
           </sp>
-          <sp xml:id="I01-7" who="LEON">
+          <sp who="LEON" xml:id="I01-7">
             <speaker>LÉON.</speaker>
-            <l n="32" xml:id="l32" part="I">De quoi pâlissez-vous ? </l>
+            <l n="32" part="I" xml:id="l32">De quoi pâlissez-vous ? </l>
           </sp>
-          <sp xml:id="I01-8" who="ROGER">
+          <sp who="ROGER" xml:id="I01-8">
             <speaker>ROGER.</speaker>
             <l part="F">Ma crainte est pardonnable, </l>
             <l n="33" xml:id="l33">Et ce commandement me serait bien plus doux, </l>
             <l n="34" xml:id="l34">Si j'étais plus vaillant, ou plus heureux que vous. </l>
           </sp>
-          <sp xml:id="I01-9" who="LEON">
+          <sp who="LEON" xml:id="I01-9">
             <speaker>LÉON.</speaker>
             <l n="35" xml:id="l35">Ah ne me parlez plus contre votre pensée. </l>
           </sp>
-          <sp xml:id="I01-10" who="ROGER">
+          <sp who="ROGER" xml:id="I01-10">
             <speaker>ROGER.</speaker>
             <l n="36" xml:id="l36">Dans votre passion mon âme intéressée, </l>
             <l n="37" xml:id="l37">N'a rien appréhendé que pour vous seulement, </l>
             <l n="38" xml:id="l38">Et vous hasardez trop en cet événement, </l>
             <l n="39" xml:id="l39">Puisque votre repos sur ma valeur se fonde. </l>
           </sp>
-          <sp xml:id="I01-11" who="LEON">
+          <sp who="LEON" xml:id="I01-11">
             <speaker>LÉON.</speaker>
             <l n="40" xml:id="l40">Je m'assure sur vous mieux que sur tout le monde. </l>
           </sp>
-          <sp xml:id="I01-12" who="ROGER">
+          <sp who="ROGER" xml:id="I01-12">
             <speaker>ROGER.</speaker>
             <l n="41" xml:id="l41">Aussi pour vous servir je voudrais tout oser, </l>
             <l n="42" xml:id="l42">Et ce que j'en ai dit, n'est pas pour m'excuser. </l>
@@ -167,15 +174,15 @@
             <l n="46" xml:id="l46">Je me dépouillerais de tout mon intérêt, </l>
             <l n="47" xml:id="l47">Et je voudrais pour vous me combattre moi-même. </l>
           </sp>
-          <sp xml:id="I01-13" who="LEON">
+          <sp who="LEON" xml:id="I01-13">
             <speaker>LÉON.</speaker>
             <l n="48" xml:id="l48">Mais comment m'acquitter de ce bienfait extrême ? </l>
           </sp>
-          <sp xml:id="I01-14" who="ROGER">
+          <sp who="ROGER" xml:id="I01-14">
             <speaker>ROGER.</speaker>
             <l n="49" xml:id="l49">Je sais ce que je dois à qui je dois le jour. </l>
           </sp>
-          <sp xml:id="I01-15" who="LEON">
+          <sp who="LEON" xml:id="I01-15">
             <speaker>LÉON.</speaker>
             <l n="50" xml:id="l50">Cet acte officieux me le rend à son tour, </l>
             <l n="51" xml:id="l51">Et je reconnais bien que je suis exécrable, </l>
@@ -186,9 +193,10 @@
             <l n="56" xml:id="l56">Si je puis être ingrat après un tel service. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf2"><person corresp="#ROGER"/></listPerson></head>
-          <sp xml:id="I02-1" who="ROGER">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf2">
+            <person corresp="#ROGER"/></listPerson></head>
+          <sp who="ROGER" xml:id="I02-1">
             <speaker>ROGER seul.</speaker>
             <l n="57" xml:id="l57">Doncques cette valeur que j'ai reçu des Cieux, </l>
             <l n="58" xml:id="l58">M'est un présent fatal, un don pernicieux, </l>
@@ -206,9 +214,10 @@
             <l n="70" xml:id="l70">Je te puis satisfaire en me privant du jour. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf3"><person corresp="#BRADAMANTE"/></listPerson></head>
-          <sp xml:id="I03-1" who="BRADAMANTE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#BRADAMANTE"/></listPerson></head>
+          <sp who="BRADAMANTE" xml:id="I03-1">
             <speaker>BRADAMANTE, seule dans sa chambre.</speaker>
             <l n="71" xml:id="l71">Mon coeur ne retient plus la douleur qui te presse, </l>
             <l n="72" xml:id="l72">Il est vrai ce perfide a faussé sa promesse, </l>
@@ -261,30 +270,35 @@
             <l n="118" xml:id="l118">Pour rompre le noeud qui nous lie. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Hipalque, Bradamante.<listPerson type="configuration" xml:id="conf4"><person corresp="#HIPALQUE"/><person corresp="#BRADAMANTE"/></listPerson></head>
-          <sp xml:id="I04-1" who="HIPALQUE">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Hipalque, Bradamante.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#HIPALQUE"/>
+            <person corresp="#BRADAMANTE"/></listPerson></head>
+          <sp who="HIPALQUE" xml:id="I04-1">
             <speaker>HIPALQUE.</speaker>
             <l n="119" xml:id="l119">Marfise vous attend pour aller chez le Roi. </l>
           </sp>
-          <sp xml:id="I04-2" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="I04-2">
             <speaker>BRADAMANTE.</speaker>
             <l n="120" xml:id="l120">Elle est de mon repos plus soigneuse que moi. </l>
             <l n="121" xml:id="l121">C'est pour voir ce Léon : je la suivrai, n'importe, </l>
-            <l n="122" xml:id="l122" part="I">Où l'avez-vous laissée ? </l>
+            <l n="122" part="I" xml:id="l122">Où l'avez-vous laissée ? </l>
           </sp>
-          <sp xml:id="I04-3" who="HIPALQUE">
+          <sp who="HIPALQUE" xml:id="I04-3">
             <speaker>HIPALQUE.</speaker>
             <l part="F">Auprès de votre porte. </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Charles, Aymon, Renaud.<listPerson type="configuration" xml:id="conf5"><person corresp="#CHARLES"/><person corresp="#AYMON"/><person corresp="#RENAUD"/></listPerson></head>
-          <sp xml:id="I05-1" who="CHARLES">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Charles, Aymon, Renaud.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#CHARLES"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#RENAUD"/></listPerson></head>
+          <sp who="CHARLES" xml:id="I05-1">
             <speaker>CHARLES.</speaker>
             <l n="123" xml:id="l123">Ma parole est donnée, il n'en faut plus parler. </l>
           </sp>
-          <sp xml:id="I05-2" who="AYMON">
+          <sp who="AYMON" xml:id="I05-2">
             <speaker>AYMON.</speaker>
             <l n="124" xml:id="l124">Si votre Majesté la voulait rappeler, </l>
             <l n="125" xml:id="l125">Je me pourrais servir des droits de la naissance, </l>
@@ -304,14 +318,14 @@
             <l n="139" xml:id="l139">Sa désobéissance avance mon trépas, </l>
             <l n="140" xml:id="l140">Et je cherche son bien, qu'elle ne connaît pas. </l>
           </sp>
-          <sp xml:id="I05-3" who="RENAUD">
+          <sp who="RENAUD" xml:id="I05-3">
             <speaker>RENAUD.</speaker>
             <l n="141" xml:id="l141">Former sans apparence un bien imaginaire, </l>
             <l n="142" xml:id="l142">C'est se paître de vent et d'une ombre légère, </l>
             <l n="143" xml:id="l143">Des Sceptres, des grandeurs, ne sont pas un vrai bien, </l>
             <l n="144" xml:id="l144">Et qui ne vit content, il ne possède rien. </l>
           </sp>
-          <sp xml:id="I05-4" who="AYMON">
+          <sp who="AYMON" xml:id="I05-4">
             <speaker>AYMON.</speaker>
             <l n="145" xml:id="l145">Vous de qui le conseil trompa son innocence, </l>
             <l n="146" xml:id="l146">Et qui favorisez sa désobéissance, </l>
@@ -324,7 +338,7 @@
             <l n="153" xml:id="l153">L'autre n'a que la cape et l'épée en partage, </l>
             <l n="154" xml:id="l154">Et s'il se peut vanter c'est d'un peu de courage. </l>
           </sp>
-          <sp xml:id="I05-5" who="RENAUD">
+          <sp who="RENAUD" xml:id="I05-5">
             <speaker>RENAUD.</speaker>
             <l n="155" xml:id="l155">Oui, sa seule vertu doit le recommander, </l>
             <l n="156" xml:id="l156">Comme le plus grand bien qui se peut posséder. </l>
@@ -346,7 +360,7 @@
             <l n="172" xml:id="l172">Et l'ont privé de tout, hormis de la vertu, </l>
             <l n="173" xml:id="l173">Quoiqu'il ne soit pas Roi, sa naissance est Royale. </l>
           </sp>
-          <sp xml:id="I05-6" who="AYMON">
+          <sp who="AYMON" xml:id="I05-6">
             <speaker>AYMON.</speaker>
             <l n="174" xml:id="l174">Mais celle de Léon n'en a qu'une d'égale, </l>
             <l n="175" xml:id="l175">Et vous témoignerez, puisque vous l'avez déjà vu, </l>
@@ -356,11 +370,11 @@
             <l n="179" xml:id="l179">Et cette fille ingrate, à moins que se haïr, </l>
             <l n="180" xml:id="l180">Ne devrait-elle pas l'aimer et m'obéir ? </l>
           </sp>
-          <sp xml:id="I05-7" who="RENAUD">
+          <sp who="RENAUD" xml:id="I05-7">
             <speaker>RENAUD.</speaker>
             <l n="181" xml:id="l181">Une inclination ne peut être forcée. </l>
           </sp>
-          <sp xml:id="I05-8" who="AYMON">
+          <sp who="AYMON" xml:id="I05-8">
             <speaker>AYMON.</speaker>
             <l n="182" xml:id="l182">C'est que pour son Roger Bradamante est blessée. </l>
             <l n="183" xml:id="l183">C'est qu'elle est sans esprit et, vous sans amitié. </l>
@@ -378,40 +392,40 @@
             <l n="195" xml:id="l195">Vous acquérir Roger avec un tel présent. </l>
             <l n="196" xml:id="l196">Ô le bon naturel, ô le fils complaisant ! </l>
           </sp>
-          <sp xml:id="I05-9" who="RENAUD">
+          <sp who="RENAUD" xml:id="I05-9">
             <speaker>RENAUD.</speaker>
             <l n="197" xml:id="l197">Mais si ma soeur le veut, malgré votre promesse, </l>
             <l n="198" xml:id="l198">La voulez-vous forcer pour le Prince de Grèce ? </l>
           </sp>
-          <sp xml:id="I05-10" who="AYMON">
+          <sp who="AYMON" xml:id="I05-10">
             <speaker>AYMON.</speaker>
             <l n="199" xml:id="l199">Oui, je lui ferais voir sans le respect du Roi. </l>
           </sp>
-          <sp xml:id="I05-11" who="RENAUD">
+          <sp who="RENAUD" xml:id="I05-11">
             <speaker>RENAUD.</speaker>
             <l n="200" xml:id="l200">Sa justice à propos vous impose la loi. </l>
             <l n="201" xml:id="l201">S'il est assez vaillant pour vaincre Bradamante, </l>
             <l n="202" xml:id="l202">Il faudra bien alors que ma soeur y consente. </l>
-            <l n="203" xml:id="l203" part="I">Si ce malheur arrive. </l>
+            <l n="203" part="I" xml:id="l203">Si ce malheur arrive. </l>
           </sp>
-          <sp xml:id="I05-12" who="AYMON">
+          <sp who="AYMON" xml:id="I05-12">
             <speaker>AYMON.</speaker>
             <l part="F">Il vous trompera tous. </l>
             <l n="204" xml:id="l204">Il est plus courageux et plus vaillant que vous. </l>
-            <l n="205" xml:id="l205" part="I">Ingrat. </l>
+            <l n="205" part="I" xml:id="l205">Ingrat. </l>
           </sp>
-          <sp xml:id="I05-13" who="CHARLES">
+          <sp who="CHARLES" xml:id="I05-13">
             <speaker>CHARLES.</speaker>
             <l part="F">L'événement éclaircira l'affaire. </l>
             <note>Piquer : Se vanter de, avoir des prétentions à. [L]</note>
-            <l n="206" xml:id="l206" part="I">Vous vous piquez Aymon. </l>
+            <l n="206" part="I" xml:id="l206">Vous vous piquez Aymon. </l>
           </sp>
-          <sp xml:id="I05-14" who="AYMON">
+          <sp who="AYMON" xml:id="I05-14">
             <speaker>AYMON.</speaker>
             <l part="F">J'ai raison de le faire, </l>
             <l n="207" xml:id="l207">Et votre Majesté me peut bien excuser. </l>
           </sp>
-          <sp xml:id="I05-15" who="CHARLES">
+          <sp who="CHARLES" xml:id="I05-15">
             <speaker>CHARLES.</speaker>
             <l n="208" xml:id="l208">Mais le meilleur pour vous est de vous apaiser, </l>
             <l n="209" xml:id="l209">Et d'espérer du Ciel une si bonne issue, </l>
@@ -419,29 +433,31 @@
             <l n="211" xml:id="l211">Mais recevons ce Prince, il s'approche de nous. </l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>SCÈNE VI. Charles, Léon.<listPerson type="configuration" xml:id="conf6"><person corresp="#CHARLES"/><person corresp="#LEON"/></listPerson></head>
-          <sp xml:id="I06-1" who="CHARLES">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>SCÈNE VI. Charles, Léon.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#CHARLES"/>
+            <person corresp="#LEON"/></listPerson></head>
+          <sp who="CHARLES" xml:id="I06-1">
             <speaker>CHARLES.</speaker>
             <l n="212" xml:id="l212">Vous venez sur le point, que nous parlions de vous. </l>
           </sp>
-          <sp xml:id="I06-2" who="LEON">
+          <sp who="LEON" xml:id="I06-2">
             <speaker>LÉON.</speaker>
             <l n="213" xml:id="l213">N'ayant point mérité d'être en votre mémoire, </l>
             <l n="214" xml:id="l214">Par un tel souvenir vous me comblez de gloire. </l>
           </sp>
-          <sp xml:id="I06-3" who="CHARLES">
+          <sp who="CHARLES" xml:id="I06-3">
             <speaker>CHARLES.</speaker>
             <l n="215" xml:id="l215">Et bien depuis le temps que vous êtes venu, </l>
             <l n="216" xml:id="l216">Quels divertissements vous ont entretenu ? </l>
             <l n="217" xml:id="l217">Est-il rien dans ma Cour capable de vous plaire ? </l>
           </sp>
-          <sp xml:id="I06-4" who="LEON">
+          <sp who="LEON" xml:id="I06-4">
             <speaker>LÉON.</speaker>
             <l n="218" xml:id="l218">L'esprit le plus chagrin s'y pourrait satisfaire : </l>
             <l n="219" xml:id="l219">Je n'ai vu rien encor que rare et que charmant. </l>
           </sp>
-          <sp xml:id="I06-5" who="CHARLES">
+          <sp who="CHARLES" xml:id="I06-5">
             <speaker>CHARLES.</speaker>
             <l n="220" xml:id="l220">Et je vois dans ces mots l'intérêt d'un amant. </l>
             <l n="221" xml:id="l221">Confessez que ce bien se doit à Bradamante, </l>
@@ -449,7 +465,7 @@
             <l n="223" xml:id="l223">Et que notre climat a pour vous des appas, </l>
             <l n="224" xml:id="l224">Qui sans cette beauté ne nous toucheraient pas. </l>
           </sp>
-          <sp xml:id="I06-6" who="LEON">
+          <sp who="LEON" xml:id="I06-6">
             <speaker>LÉON.</speaker>
             <l n="225" xml:id="l225">Il est vrai q'un amant dont l'ardeur est extrême, </l>
             <l n="226" xml:id="l226">Ne peut aimer un lieu privé de ce qu'il aime : </l>
@@ -462,11 +478,11 @@
             <l n="233" xml:id="l233">Relèvent bien l'éclat de votre diadème, </l>
             <l n="234" xml:id="l234">Mais il reçoit surtout le lustre de vous-même. </l>
           </sp>
-          <sp xml:id="I06-7" who="CHARLES">
+          <sp who="CHARLES" xml:id="I06-7">
             <speaker>CHARLES.</speaker>
             <l n="235" xml:id="l235">De grâce, désormais, dites-en un peu moins. </l>
           </sp>
-          <sp xml:id="I06-8" who="LEON">
+          <sp who="LEON" xml:id="I06-8">
             <speaker>LÉON.</speaker>
             <l n="236" xml:id="l236">J'ai de ce que je dis tous les hommes témoins. </l>
             <l n="237" xml:id="l237">Mais quoique tout le monde avecque moi l'avoue, </l>
@@ -484,7 +500,7 @@
             <l n="249" xml:id="l249">Voilà, Sire, en deux mots le sujet qui m'arrête, </l>
             <l n="250" xml:id="l250">Si vous me refuser d'accorder ma requête. </l>
           </sp>
-          <sp xml:id="I06-9" who="CHARLES">
+          <sp who="CHARLES" xml:id="I06-9">
             <speaker>CHARLES.</speaker>
             <l n="251" xml:id="l251">Ce n'est pas d'aujourd'hui que nous avons connu </l>
             <l n="252" xml:id="l252">Le généreux dessein qui vous a retenu. </l>
@@ -496,9 +512,15 @@
             <l n="258" xml:id="l258">Mais comment à propos le bonheur nous l'envoie ! </l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
-          <head>SCÈNE VII. Charles, Bradamante, Léon, Aymon, Marfise, Renaud.<listPerson type="configuration" xml:id="conf7"><person corresp="#CHARLES"/><person corresp="#BRADAMANTE"/><person corresp="#LEON"/><person corresp="#MARPHISE"/><person corresp="#AYMON"/><person corresp="#RENAUD"/></listPerson></head>
-          <sp xml:id="I07-1" who="CHARLES">
+        <div2 n="7" type="scene" xml:id="I07">
+          <head>SCÈNE VII. Charles, Bradamante, Léon, Aymon, Marfise, Renaud.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#CHARLES"/>
+            <person corresp="#BRADAMANTE"/>
+            <person corresp="#LEON"/>
+            <person corresp="#MARPHISE"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#RENAUD"/></listPerson></head>
+          <sp who="CHARLES" xml:id="I07-1">
             <speaker>CHARLES.</speaker>
             <l n="259" xml:id="l259">Si pour l'amour de vous être félicité, </l>
             <l n="260" xml:id="l260">Se pouvait appeler un e importunité, </l>
@@ -507,7 +529,7 @@
             <l n="263" xml:id="l263">Je lui suis obligé de donner tant d'amour, </l>
             <l n="264" xml:id="l264">Puisqu'un nombre d'amants embellit notre cour. </l>
           </sp>
-          <sp xml:id="I07-2" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="I07-2">
             <speaker>BRADAMANTE.</speaker>
             <l n="265" xml:id="l265">Si votre Majesté se donne cette peine </l>
             <l n="266" xml:id="l266">Pour ceux-là seulement que ce sujet y mène, </l>
@@ -518,7 +540,7 @@
             <l n="271" xml:id="l271">Bradamante leur plaît ; mais elle coûte cher, </l>
             <l n="272" xml:id="l272">Et personne à ce prix ne la veut rechercher. </l>
           </sp>
-          <sp xml:id="I07-3" who="LEON">
+          <sp who="LEON" xml:id="I07-3">
             <speaker>LÉON.</speaker>
             <l n="273" xml:id="l273">Certes ma passion serait trop offensée, </l>
             <l n="274" xml:id="l274">Si vous n'aviez parlé contre votre pensée. </l>
@@ -527,11 +549,11 @@
             <l n="276" xml:id="l276">De la fidélité que mon coeur vous jura, </l>
             <l n="277" xml:id="l277">Pour vous la conserver toujours inviolable. </l>
           </sp>
-          <sp xml:id="I07-4" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="I07-4">
             <speaker>BRADAMANTE.</speaker>
             <l n="278" xml:id="l278">À trop de passion je suis trop redevable. </l>
           </sp>
-          <sp xml:id="I07-5" who="CHARLES">
+          <sp who="CHARLES" xml:id="I07-5">
             <speaker>CHARLES.</speaker>
             <l n="279" xml:id="l279">Et pour vous assurer de son affection, </l>
             <l n="280" xml:id="l280">Je vous veux avertir de son intention. </l>
@@ -542,7 +564,7 @@
             <l n="284" xml:id="l284">Pour combattre celui que vous avez vaincu. </l>
             <l n="285" xml:id="l285">Le voilà résolu de tenter la fortune. </l>
           </sp>
-          <sp xml:id="I07-6" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="I07-6">
             <speaker>BRADAMANTE.</speaker>
             <l n="286" xml:id="l286">Il est donc de deux-là que le jour importune : </l>
             <l n="287" xml:id="l287">Mais si peu de sujet ne l'obligera pas, </l>
@@ -550,7 +572,7 @@
             <l n="289" xml:id="l289">Sa main sera bien mieux pour un autre occupée, </l>
             <l n="290" xml:id="l290">Je ne mérite pas qu'il donne un coup d'épée. </l>
           </sp>
-          <sp xml:id="I07-7" who="LEON">
+          <sp who="LEON" xml:id="I07-7">
             <speaker>LÉON.</speaker>
             <l n="291" xml:id="l291">Si quelque autre moyen vous pouvait acquérir, </l>
             <l n="292" xml:id="l292">J'y courrais à clos yeux sans crainte de périr, </l>
@@ -563,7 +585,7 @@
             <l n="299" xml:id="l299">Que vous devez punir de sa témérité, </l>
             <l n="300" xml:id="l300">Ou me récompenser de ma fidélité. </l>
           </sp>
-          <sp xml:id="I07-8" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="I07-8">
             <speaker>BRADAMANTE.</speaker>
             <l n="301" xml:id="l301">Ce courage à la fin mérite Bradamante. </l>
             <l n="302" xml:id="l302">Oui, Léon, il est juste il faut qu'on vous contente. </l>
@@ -576,7 +598,7 @@
             <l n="308" xml:id="l308">Ou bien soyez muni d'une rare valeur, </l>
             <l n="309" xml:id="l309">Vous courez un danger plus grand que l'on ne pense. </l>
           </sp>
-          <sp xml:id="I07-9" who="LEON">
+          <sp who="LEON" xml:id="I07-9">
             <speaker>LÉON.</speaker>
             <l n="310" xml:id="l310">Amour contre vos coups est toute ma défense, </l>
             <l n="311" xml:id="l311">Il les détournera sans bouger de ce coeur, </l>
@@ -588,12 +610,12 @@
             <l n="317" xml:id="l317">Voir bâtir mon tombeau par une main si belle, </l>
             <l n="318" xml:id="l318">N'est-ce pas me combler d'une gloire éternelle ? </l>
           </sp>
-          <sp xml:id="I07-10" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="I07-10">
             <speaker>MARPHISE.</speaker>
             <l n="319" xml:id="l319">Je n'envierai jamais un semblable bonheur, </l>
             <l n="320" xml:id="l320">J'aime mieux de mon gré lui quitter cet honneur. </l>
           </sp>
-          <sp xml:id="I07-11" who="AYMON">
+          <sp who="AYMON" xml:id="I07-11">
             <speaker>AYMON.</speaker>
             <l n="321" xml:id="l321">Pour le repos commun il serait nécessaire, </l>
             <note>Affaire : affaire était autrefois masculin, et Regnard a encore dit dans la Sérénade ; ce n'est pas un petit affaire. [FC]</note>
@@ -603,13 +625,13 @@
             <l n="325" xml:id="l325">Madame croyez-moi qu'en ce qui ne nous touche, </l>
             <l n="326" xml:id="l326">Nous ferions beaucoup mieux de n'ouvrir point la bouche. </l>
           </sp>
-          <sp xml:id="I07-12" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="I07-12">
             <speaker>MARPHISE.</speaker>
             <l n="327" xml:id="l327">Quoi Monsieur, est-ce à moi que vous parlez ? </l>
             <l n="328" xml:id="l328">Certes c'est sans sujet que vous me querellez. </l>
             <l n="329" xml:id="l329">Mes soins sont bien ailleurs que dans votre famille. </l>
           </sp>
-          <sp xml:id="I07-13" who="AYMON">
+          <sp who="AYMON" xml:id="I07-13">
             <speaker>AYMON.</speaker>
             <l n="330" xml:id="l330">Pourtant vous vous mêlez de gouverner ma fille, </l>
             <l n="331" xml:id="l331">Lui donner des conseils qui troublent sa raison, </l>
@@ -620,7 +642,7 @@
             <l n="336" xml:id="l336">Vous ne la conseillez que pour vos intérêts, </l>
             <l n="337" xml:id="l337">Ou les vôtres à part, pour ceux de votre frère. </l>
           </sp>
-          <sp xml:id="I07-14" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="I07-14">
             <speaker>MARPHISE.</speaker>
             <l n="338" xml:id="l338">Elle pourrait ici témoigner le contraire, </l>
             <l n="339" xml:id="l339">Et que j'aime son bien que vous n'avancez pas. </l>
@@ -636,7 +658,7 @@
             <l n="349" xml:id="l349">Et les fortes raisons qui combattent pour elle, </l>
             <l n="350" xml:id="l350">Me feront à jamais embrasser sa querelle. </l>
           </sp>
-          <sp xml:id="I07-15" who="AYMON">
+          <sp who="AYMON" xml:id="I07-15">
             <speaker>AYMON.</speaker>
             <l n="351" xml:id="l351">Je soutiendrai la mienne, et je lui ferai voir, </l>
             <l n="352" xml:id="l352">Que si je la puis ranger aux termes du devoir. </l>
@@ -644,61 +666,63 @@
             <l n="354" xml:id="l354">Que de vos actions vous soyez la maîtresse, </l>
             <l n="355" xml:id="l355">Sans plus vous informer comment on vit chez moi. </l>
           </sp>
-          <sp xml:id="I07-16" who="RENAUD">
+          <sp who="RENAUD" xml:id="I07-16">
             <speaker>RENAUD.</speaker>
             <l n="356" xml:id="l356">Vous quereller ainsi, même devant le Roi, </l>
             <l n="357" xml:id="l357">C'est abuser vraiment d'une douceur extrême. </l>
           </sp>
-          <sp xml:id="I07-17" who="AYMON">
+          <sp who="AYMON" xml:id="I07-17">
             <speaker>AYMON.</speaker>
             <l n="358" xml:id="l358">Vous avez tout ouï, je en dis de même. </l>
           </sp>
-          <sp xml:id="I07-18" who="RENAUD">
+          <sp who="RENAUD" xml:id="I07-18">
             <speaker>RENAUD.</speaker>
             <l n="359" xml:id="l359">Et les mêmes raisons qu'elle a dites ici, </l>
             <l n="360" xml:id="l360">Sauf ce que je vous dois, je vous les dis aussi. </l>
           </sp>
-          <sp xml:id="I07-19" who="CHARLES">
+          <sp who="CHARLES" xml:id="I07-19">
             <speaker>CHARLES.</speaker>
             <l n="361" xml:id="l361">C'est perdre trop de temps en des discours frivoles, </l>
             <l n="362" xml:id="l362">Je n'entends tous les jours que les mêmes paroles, </l>
             <l n="363" xml:id="l363">Aymon votre courroux va toujours trop avant. </l>
           </sp>
-          <sp xml:id="I07-20" who="LEON">
+          <sp who="LEON" xml:id="I07-20">
             <speaker>LÉON.</speaker>
             <l n="364" xml:id="l364">Je dois pour m'acquitter mourir en le servant, </l>
             <l n="365" xml:id="l365">Et si j'ai dans mes voeux la fortune prospère, </l>
             <l n="366" xml:id="l366">Je le veux honorer comme mon propre père. </l>
           </sp>
-          <sp xml:id="I07-21" who="AYMON">
+          <sp who="AYMON" xml:id="I07-21">
             <speaker>AYMON.</speaker>
             <l n="367" xml:id="l367">Je soutiens votre droit avec trop de raison, </l>
             <l n="368" xml:id="l368">Et vous comblez d'honneur toute notre maison. </l>
           </sp>
-          <sp xml:id="I07-22" who="LEON">
+          <sp who="LEON" xml:id="I07-22">
             <speaker>LÉON.</speaker>
             <l n="369" xml:id="l369">Doncques sur le pouvoir que l'Empereur nous donne, </l>
             <l n="370" xml:id="l370">Vous devez dans le champ comparaître en personne, </l>
             <l n="371" xml:id="l371">Je m'y rendrai demain au lever du soleil. </l>
           </sp>
-          <sp xml:id="I07-23" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="I07-23">
             <speaker>BRADAMANTE.</speaker>
             <l n="372" xml:id="l372">Et je veux, s'il se peut, prévenir son réveil, </l>
             <l n="373" xml:id="l373">Vous m'y verrez paraître, et si mal disposée, </l>
             <l n="374" xml:id="l374">Que vous en obtiendrez une victoire aisée. </l>
             <l n="375" xml:id="l375">Ayez soin toutefois d'être assez bien armé. </l>
           </sp>
-          <sp xml:id="I07-24" who="LEON">
+          <sp who="LEON" xml:id="I07-24">
             <speaker>LÉON.</speaker>
             <l n="376" xml:id="l376">Je crains plus que vos mains ces yeux qui m'ont charmé. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Léon, Roger, couvert des armes de Léon.<listPerson type="configuration" xml:id="conf9"><person corresp="#LEON"/><person corresp="#ROGER"/></listPerson></head>
-          <sp xml:id="II01-1" who="LEON">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE PREMIÈRE. Léon, Roger, couvert des armes de Léon.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#LEON"/>
+            <person corresp="#ROGER"/></listPerson></head>
+          <sp who="LEON" xml:id="II01-1">
             <speaker>LÉON.</speaker>
             <l n="377" xml:id="l377">Ce harnais vous sied bien, et le Dieu de la Thrace, </l>
             <l n="378" xml:id="l378">N'eût jamais sous l'armet une si bonne grâce ; </l>
@@ -724,12 +748,12 @@
             <l n="398" xml:id="l398">Si sans verser du sang vous avez la victoire. </l>
             <l n="399" xml:id="l399">Épargnez la beauté, le sexe et votre ami. </l>
           </sp>
-          <sp xml:id="II01-2" who="ROGER">
+          <sp who="ROGER" xml:id="II01-2">
             <speaker>ROGER.</speaker>
             <l n="400" xml:id="l400">Se reposer sur moi seulement à demi, </l>
             <l n="401" xml:id="l401">C'est me désobliger pour une méfiance. </l>
           </sp>
-          <sp xml:id="II01-3" who="LEON">
+          <sp who="LEON" xml:id="II01-3">
             <speaker>LÉON.</speaker>
             <l n="402" xml:id="l402">Et ce serait parler contre ma conscience, </l>
             <l n="403" xml:id="l403">Si je dissimulais que j'en ai du souci, </l>
@@ -737,9 +761,9 @@
             <l n="405" xml:id="l405">Non que votre valeur se puisse mettre en doute : </l>
             <l n="406" xml:id="l406">Mais acheter mon bien par le prix qu'il me coûte. </l>
             <l n="407" xml:id="l407">Mon frère confessez que pour me secourir, </l>
-            <l n="408" xml:id="l408" part="I">Je cherche des moyens. </l>
+            <l n="408" part="I" xml:id="l408">Je cherche des moyens. </l>
           </sp>
-          <sp xml:id="II01-4" who="ROGER">
+          <sp who="ROGER" xml:id="II01-4">
             <speaker>ROGER.</speaker>
             <l part="F">Qui me feront mourir. </l>
             <l n="409" xml:id="l409">Si vous persévérez à vivre de la sorte, </l>
@@ -747,7 +771,7 @@
             <l n="411" xml:id="l411">Et ces discours moqueurs, comme ils sont superflus, </l>
             <l n="412" xml:id="l412">Me feront croire enfin que vous ne m'aimez plus. </l>
           </sp>
-          <sp xml:id="II01-5" who="LEON">
+          <sp who="LEON" xml:id="II01-5">
             <speaker>LÉON.</speaker>
             <l n="413" xml:id="l413">Oui, mais par ce soupçon vous vous rendez coupable, </l>
             <l n="414" xml:id="l414">Je veux qu'en un moment la fortune m'accable, </l>
@@ -773,9 +797,10 @@
             <l n="434" xml:id="l434">Adieu, pour me cacher je rentre dans mes tentes. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf10"><person corresp="#ROGER"/></listPerson></head>
-          <sp xml:id="II02-1" who="ROGER">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf10">
+            <person corresp="#ROGER"/></listPerson></head>
+          <sp who="ROGER" xml:id="II02-1">
             <speaker>ROGER, seul.</speaker>
             <l n="435" xml:id="l435">Des bords plus éloignés où le flambeau du jour, </l>
             <l n="436" xml:id="l436">Sorti de l'Océan recommence son tour, </l>
@@ -834,9 +859,12 @@
             <l n="488" xml:id="l488">Que ma tragique fin m'acquitte à tous les deux. </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Aymon, Renaud, Bradamante.<listPerson type="configuration" xml:id="conf11"><person corresp="#AYMON"/><person corresp="#RENAUD"/><person corresp="#BRADAMANTE"/></listPerson></head>
-          <sp xml:id="II03-1" who="AYMON">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Aymon, Renaud, Bradamante.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#AYMON"/>
+            <person corresp="#RENAUD"/>
+            <person corresp="#BRADAMANTE"/></listPerson></head>
+          <sp who="AYMON" xml:id="II03-1">
             <speaker>AYMON.</speaker>
             <l n="489" xml:id="l489">Puisque dans ce dessein vous êtes résolue, </l>
             <l n="490" xml:id="l490">Que vous prenez sur vous la puissance absolue, </l>
@@ -868,14 +896,14 @@
             <l n="516" xml:id="l516">Te perdre en ce combat, puisque tu l'as voulu. </l>
             <stage type="exit">Il s'en va.</stage>
           </sp>
-          <sp xml:id="II03-2" who="RENAUD">
+          <sp who="RENAUD" xml:id="II03-2">
             <speaker>RENAUD.</speaker>
             <l n="517" xml:id="l517">Il faut laisser passer sa fougue accoutumée, </l>
             <l n="518" xml:id="l518">Enfin tout son courroux se résout en fumée. </l>
             <l n="519" xml:id="l519">Dans ses premiers transports il a beaucoup de feu : </l>
             <l n="520" xml:id="l520">Mais après tout, ma soeur, il vous nuira fort peu. </l>
           </sp>
-          <sp xml:id="II03-3" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II03-3">
             <speaker>BRADAMANTE.</speaker>
             <l n="521" xml:id="l521">Avec votre support dont je suis consolée, </l>
             <l n="522" xml:id="l522">Ma résolution ne peut être ébranlée. </l>
@@ -883,7 +911,7 @@
             <l n="524" xml:id="l524">Pourvu que votre humeur ne vienne à se changer, </l>
             <l n="525" xml:id="l525">Que vous n'embrasiez point le parti d'un avare. </l>
           </sp>
-          <sp xml:id="II03-4" who="RENAUD">
+          <sp who="RENAUD" xml:id="II03-4">
             <speaker>RENAUD.</speaker>
             <l n="526" xml:id="l526">Vous devez avouer que votre humeur est rare, </l>
             <l n="527" xml:id="l527">Et qu'un aveuglement contre toute raison, </l>
@@ -914,20 +942,20 @@
             <l n="552" xml:id="l552">En tous cas de ces soins reposez-vous sur moi, </l>
             <l n="553" xml:id="l553">Et soyez de ces soins un peu moins affligée. </l>
           </sp>
-          <sp xml:id="II03-5" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II03-5">
             <speaker>BRADAMANTE.</speaker>
             <l n="554" xml:id="l554">Ah mon frère à quel point je vous suis obligée ! </l>
-            <l n="555" xml:id="l555" part="I">Si le Ciel me permet. </l>
+            <l n="555" part="I" xml:id="l555">Si le Ciel me permet. </l>
           </sp>
-          <sp xml:id="II03-6" who="RENAUD">
+          <sp who="RENAUD" xml:id="II03-6">
             <speaker>RENAUD.</speaker>
             <l part="F">N'allons pas plus avant. </l>
           </sp>
-          <sp xml:id="II03-7" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II03-7">
             <speaker>BRADAMANTE.</speaker>
             <l n="556" xml:id="l556">Mon frère je voudrais mourir en vous servant. </l>
           </sp>
-          <sp xml:id="II03-8" who="RENAUD">
+          <sp who="RENAUD" xml:id="II03-8">
             <speaker>RENAUD.</speaker>
             <l n="557" xml:id="l557">Je m'en vais vous quitter pour aller dans la place, </l>
             <l n="558" xml:id="l558">Où déjà pour vous voir tout le peuple s'amasse, </l>
@@ -935,9 +963,11 @@
             <l n="560" xml:id="l560">Quand il faudra venir on vous avertira. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Bradamante, Hipalque.<listPerson type="configuration" xml:id="conf12"><person corresp="#BRADAMANTE"/><person corresp="#HIPALQUE"/></listPerson></head>
-          <sp xml:id="II04-1" who="BRADAMANTE">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Bradamante, Hipalque.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#BRADAMANTE"/>
+            <person corresp="#HIPALQUE"/></listPerson></head>
+          <sp who="BRADAMANTE" xml:id="II04-1">
             <speaker>BRADAMANTE.</speaker>
             <l n="561" xml:id="l561">Maintenant que je puis soupirer et me plaindre, </l>
             <l n="562" xml:id="l562">Et qu'aucune raison ne m'oblige de feindre, </l>
@@ -963,9 +993,9 @@
             <l n="582" xml:id="l582">Pour le justifier invente quelque chose, </l>
             <l n="583" xml:id="l583">Et tu m'obligeras si mon esprit consent, </l>
             <l n="584" xml:id="l584">Après t'avoir ouïe, à le croire innocent : </l>
-            <l n="585" xml:id="l585" part="I">Plût aux dieux qu'il le fût ! </l>
+            <l n="585" part="I" xml:id="l585">Plût aux dieux qu'il le fût ! </l>
           </sp>
-          <sp xml:id="II04-2" who="HIPALQUE">
+          <sp who="HIPALQUE" xml:id="II04-2">
             <speaker>HIPALQUE.</speaker>
             <l part="F">S'il ne l'était, Madame, </l>
             <l n="586" xml:id="l586">Je serais la première à lui donner du blâme, </l>
@@ -976,7 +1006,7 @@
             <l n="591" xml:id="l591">Je sais bien que son coeur n'eut jamais tant d'amour, </l>
             <l n="592" xml:id="l592">Et que privé de vous il est privé du jour. </l>
           </sp>
-          <sp xml:id="II04-3" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II04-3">
             <speaker>BRADAMANTE.</speaker>
             <l n="593" xml:id="l593">Si j'occupais encor un lieu dans sa pensée, </l>
             <l n="594" xml:id="l594">Sans en avoir sujet m'aurait-il délaissée ? </l>
@@ -987,7 +1017,7 @@
             <l n="599" xml:id="l599">Que pour lui je rejette un Prince suppliant, </l>
             <l n="600" xml:id="l600">Et refuse pour lui l'Empire d'Orient. </l>
           </sp>
-          <sp xml:id="II04-4" who="HIPALQUE">
+          <sp who="HIPALQUE" xml:id="II04-4">
             <speaker>HIPALQUE.</speaker>
             <l n="601" xml:id="l601">Si sa profession n'obligeait son courage </l>
             <l n="602" xml:id="l602">Dans les occasions où son honneur l'engage, </l>
@@ -997,12 +1027,12 @@
             <l n="606" xml:id="l606">Mais c'est quelque aventure, où son devoir le mène, </l>
             <l n="607" xml:id="l607">Ou quelque déplaisir, qui l'ont fait éloigner. </l>
           </sp>
-          <sp xml:id="II04-5" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II04-5">
             <speaker>BRADAMANTE.</speaker>
             <l n="608" xml:id="l608">Mais pourquoi ce départ sans me le témoigner, </l>
             <l n="609" xml:id="l609">Sans me dire un adieu, qu'est-ce qui l'en dispense ? </l>
           </sp>
-          <sp xml:id="II04-6" who="HIPALQUE">
+          <sp who="HIPALQUE" xml:id="II04-6">
             <speaker>HIPALQUE.</speaker>
             <l n="610" xml:id="l610">On s'éloigne souvent beaucoup plus qu'on ne pense, </l>
             <l n="611" xml:id="l611">Et parfois on médite en voyage d'un jour, </l>
@@ -1020,7 +1050,7 @@
             <l n="623" xml:id="l623">Votre coeur sans raison se voulut ressentir, </l>
             <l n="624" xml:id="l624">Mais Roger innocent vous en fit repentir. </l>
           </sp>
-          <sp xml:id="II04-7" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II04-7">
             <speaker>BRADAMANTE.</speaker>
             <l n="625" xml:id="l625">Bien donc veuille le Ciel que tu sois véritable, </l>
             <l n="626" xml:id="l626">Je croirai pour te plaire une chose incroyable. </l>
@@ -1051,12 +1081,14 @@
             <l n="649" xml:id="l649">Ma main, si ce Grégeois peut retarder ta gloire, </l>
             <l n="650" xml:id="l650">Et si du premier coup tu n'obtiens la victoire, </l>
             <l n="651" xml:id="l651">Je te désavouerai : mais qui me vient troubler ? </l>
-            <l n="652" xml:id="l652" part="I">Ah ! C'est vous ma compagne. </l>
+            <l n="652" part="I" xml:id="l652">Ah ! C'est vous ma compagne. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Marfise, Bradamante.<listPerson type="configuration" xml:id="conf13"><person corresp="#MARPHISE"/><person corresp="#BRADAMANTE"/></listPerson></head>
-          <sp xml:id="II05-1" who="MARPHISE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Marfise, Bradamante.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#MARPHISE"/>
+            <person corresp="#BRADAMANTE"/></listPerson></head>
+          <sp who="MARPHISE" xml:id="II05-1">
             <speaker>MARPHISE.</speaker>
             <l part="F">Il n'en faut plus parler, </l>
             <l n="653" xml:id="l653">N'y songez plus ma soeur, sa perte est assurée, </l>
@@ -1070,14 +1102,14 @@
             <l n="661" xml:id="l661">Et moi comme sa soeur, que faut-il que je fasse, </l>
             <l n="662" xml:id="l662">Ne m'étant pas permis de tenir votre place ? </l>
           </sp>
-          <sp xml:id="II05-2" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II05-2">
             <speaker>BRADAMANTE.</speaker>
             <l n="663" xml:id="l663">Ce que pour n'être ingrate il faut que vous fassiez, </l>
             <l n="664" xml:id="l664">C'est de m'aimer ma soeur, et que vous confessiez, </l>
             <l n="665" xml:id="l665">Que nous ayant quittés en l'état où nous sommes, </l>
             <l n="666" xml:id="l666">Roger est aujourd'hui le plus ingrat des hommes. </l>
           </sp>
-          <sp xml:id="II05-3" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="II05-3">
             <speaker>MARPHISE.</speaker>
             <l n="667" xml:id="l667">Si la nécessité ne l'a point diverti, </l>
             <l n="668" xml:id="l668">Vous ne me verrez point embrasser son parti, </l>
@@ -1085,29 +1117,33 @@
             <l n="670" xml:id="l670">Et de votre intérêt je ferai mon injure. </l>
             <l n="671" xml:id="l671">Mais quittons ce discours, Bradamante il est temps, </l>
             <l n="672" xml:id="l672">L'Empereur dans la place attend les combattants, </l>
-            <l n="673" xml:id="l673" part="I">Le peuple est assemblé. </l>
+            <l n="673" part="I" xml:id="l673">Le peuple est assemblé. </l>
           </sp>
-          <sp xml:id="II05-4" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II05-4">
             <speaker>BRADAMANTE.</speaker>
             <l part="F">Roger l'heure est venu, </l>
             <l n="674" xml:id="l674">Que mon affection doit être reconnue, </l>
-            <l n="675" xml:id="l675" part="I">Allons ma soeur, allons, et Léon. </l>
+            <l n="675" part="I" xml:id="l675">Allons ma soeur, allons, et Léon. </l>
           </sp>
-          <sp xml:id="II05-5" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="II05-5">
             <speaker>MARPHISE.</speaker>
             <l part="F">Il est prêt. </l>
           </sp>
-          <sp xml:id="II05-6" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II05-6">
             <speaker>BRADAMANTE.</speaker>
             <l n="676" xml:id="l676">J'ai donné de sa mort l'irrévocable Arrêt, </l>
             <l n="677" xml:id="l677">Et sa présomption sera si bien punie, </l>
             <l n="678" xml:id="l678">Qu'on verra mes parents pleurer leur tyrannie. </l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
-          <head>SCÈNE VI. Charles, Aymon, Renaud, Naymes.<listPerson type="configuration" xml:id="conf14"><person corresp="#CHARLES"/><person corresp="#AYMON"/><person corresp="#RENAUD"/><person corresp="#NAYMES"/></listPerson></head>
+        <div2 n="6" type="scene" xml:id="II06">
+          <head>SCÈNE VI. Charles, Aymon, Renaud, Naymes.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#CHARLES"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#RENAUD"/>
+            <person corresp="#NAYMES"/></listPerson></head>
           <stage type="[N/A]">Le champ de bataille doit paraître, et l'Empereur avec les assistants aux barrières.</stage>
-          <sp xml:id="II06-1" who="CHARLES">
+          <sp who="CHARLES" xml:id="II06-1">
             <speaker>CHARLES.</speaker>
             <l n="679" xml:id="l679">Certes un coeur blessé de cette passion, </l>
             <l n="680" xml:id="l680">Est un très digne objet de la compassion, </l>
@@ -1122,7 +1158,7 @@
             <l n="689" xml:id="l689">J'ai connu que le Ciel rendait un bon office </l>
             <l n="690" xml:id="l690">À ceux qu'il a laissés libres de ce supplice. </l>
           </sp>
-          <sp xml:id="II06-2" who="AYMON">
+          <sp who="AYMON" xml:id="II06-2">
             <speaker>AYMON.</speaker>
             <l n="691" xml:id="l691">On ne saurait blâmer un feu respectueux, </l>
             <l n="692" xml:id="l692">Un amour qui n'a rien qui ne soit vertueux, </l>
@@ -1132,9 +1168,9 @@
             <l n="696" xml:id="l696">S'engagent follement dans une affection, </l>
             <l n="697" xml:id="l697">Qui ne relèvent point des volontés d'un père, </l>
             <l n="698" xml:id="l698">Et méprisent le bien qui leur est nécessaire, </l>
-            <l n="699" xml:id="l699" part="I">Devraient être punis. </l>
+            <l n="699" part="I" xml:id="l699">Devraient être punis. </l>
           </sp>
-          <sp xml:id="II06-3" who="RENAUD">
+          <sp who="RENAUD" xml:id="II06-3">
             <speaker>RENAUD.</speaker>
             <l part="F">Tout intérêt à part, </l>
             <l n="700" xml:id="l700">On excuse un péché qui se fait par hasard, </l>
@@ -1145,16 +1181,16 @@
             <l n="705" xml:id="l705">Puisse considérer ce que le temps exige, </l>
             <l n="706" xml:id="l706">Même à quoi le devoir et le sang nous oblige. </l>
           </sp>
-          <sp xml:id="II06-4" who="AYMON">
+          <sp who="AYMON" xml:id="II06-4">
             <speaker>AYMON.</speaker>
-            <l n="707" xml:id="l707" part="I">Je vous tiens pour suspect. </l>
+            <l n="707" part="I" xml:id="l707">Je vous tiens pour suspect. </l>
           </sp>
-          <sp xml:id="II06-5" who="CHARLES">
+          <sp who="CHARLES" xml:id="II06-5">
             <speaker>CHARLES.</speaker>
             <l part="F">Et vous l'êtes aussi, </l>
             <l n="708" xml:id="l708">Mais trêve de discours, Bradamante est ici. </l>
           </sp>
-          <sp xml:id="II06-6" who="NAYMES">
+          <sp who="NAYMES" xml:id="II06-6">
             <speaker>NAYMES.</speaker>
             <l n="709" xml:id="l709">Cette férocité pleine de tant d'audace, </l>
             <note>Armet : Casque, ou habillement de tête. Ce mot vient par diminution de helmette par corruption , pour elmet ; ou de elmetto, comme qui diroit, petit heaume. Pasquier dit que ce mot n'est venu en usage que sous François I. [F]</note>
@@ -1162,31 +1198,39 @@
             <l n="711" xml:id="l711">Ce port majestueux et doux également, </l>
             <l n="712" xml:id="l712">Paraît en même temps redoutable et charmant. </l>
           </sp>
-          <sp xml:id="II06-7" who="CHARLES">
+          <sp who="CHARLES" xml:id="II06-7">
             <speaker>CHARLES.</speaker>
             <l n="713" xml:id="l713">Ah, que si vous pouviez recouvrer la jeunesse ! </l>
             <l n="714" xml:id="l714">Mais la foule se fend pour le Prince de Grèce, </l>
             <l n="715" xml:id="l715">Le voilà dans le champ superbement armé. </l>
           </sp>
-          <sp xml:id="II06-8" who="AYMON">
+          <sp who="AYMON" xml:id="II06-8">
             <speaker>AYMON.</speaker>
             <l n="716" xml:id="l716">Confessez que ce port n'est pas moins animé, </l>
             <l n="717" xml:id="l717">Que sa démarche est grave, et sa taille divine, </l>
             <l n="718" xml:id="l718">Et que nos paladins n'ont pas meilleure mine. </l>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
-          <head>SCÈNE VII. Marfise, Zénon, Charles, Bradamante, Roger, Aymon, Renaud, Naymes.<listPerson type="configuration" xml:id="conf15"><person corresp="#MARPHISE"/><person corresp="#ZENON"/><person corresp="#CHARLES"/><person corresp="#NAYMES"/><person corresp="#ROGER"/><person corresp="#AYMON"/><person corresp="#RENAUD"/><person corresp="#BRADAMANTE"/></listPerson></head>
-          <sp xml:id="II07-1" who="MARPHISE">
+        <div2 n="7" type="scene" xml:id="II07">
+          <head>SCÈNE VII. Marfise, Zénon, Charles, Bradamante, Roger, Aymon, Renaud, Naymes.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#MARPHISE"/>
+            <person corresp="#ZENON"/>
+            <person corresp="#CHARLES"/>
+            <person corresp="#NAYMES"/>
+            <person corresp="#ROGER"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#RENAUD"/>
+            <person corresp="#BRADAMANTE"/></listPerson></head>
+          <sp who="MARPHISE" xml:id="II07-1">
             <speaker>MARPHISE.</speaker>
             <l n="719" xml:id="l719">Sire, mon champion demande le pouvoir </l>
             <l n="720" xml:id="l720">À votre Majesté de faire son devoir. </l>
           </sp>
-          <sp xml:id="II07-2" who="ZENON">
+          <sp who="ZENON" xml:id="II07-2">
             <speaker>ZÉNON.</speaker>
             <l n="721" xml:id="l721">Je vous fais pour le mien une même prière. </l>
           </sp>
-          <sp xml:id="II07-3" who="CHARLES">
+          <sp who="CHARLES" xml:id="II07-3">
             <speaker>CHARLES.</speaker>
             <l n="722" xml:id="l722">Et j'en donne à tous deux une puissance entière. </l>
             <l n="723" xml:id="l723">Naymes ayez le soin, comme expérimenté, </l>
@@ -1194,7 +1238,7 @@
             <l n="725" xml:id="l725">Entre les combattants le soleil se partage, </l>
             <l n="726" xml:id="l726">Et qu'ils soient en tous points sans aucun avantage. </l>
           </sp>
-          <sp xml:id="II07-4" who="NAYMES">
+          <sp who="NAYMES" xml:id="II07-4">
             <speaker>NAYMES.</speaker>
             <stage type="[N/A]">Il les met en termes de combattre.</stage>
             <l n="727" xml:id="l727">Pour en venir aux mains, je crois que c'est assez, </l>
@@ -1204,11 +1248,11 @@
             <l n="731" xml:id="l731">Bradamante, mettant la main à l'épée. </l>
             <l n="732" xml:id="l732">C'est le fer à la main qu'il me faut conquérir. </l>
           </sp>
-          <sp xml:id="II07-5" who="ROGER">
+          <sp who="ROGER" xml:id="II07-5">
             <speaker>ROGER, sous les armes de Léon, tout bas.</speaker>
             <l n="733" xml:id="l733">Puisque vous l'ordonnez, je vous rendrai contente. </l>
           </sp>
-          <sp xml:id="II07-6" who="CHARLES">
+          <sp who="CHARLES" xml:id="II07-6">
             <speaker>CHARLES.</speaker>
             <stage type="[N/A]">Ils se battent, et Roger ne fait que parer les coups.</stage>
             <l n="734" xml:id="l734">Considérez un peu la main de Bradamante, </l>
@@ -1216,7 +1260,7 @@
             <l n="736" xml:id="l736">Une foudre, un éclair, un tourbillon de vent, </l>
             <l n="737" xml:id="l737">Et je crois que Léon aura bien de la peine. </l>
           </sp>
-          <sp xml:id="II07-7" who="AYMON">
+          <sp who="AYMON" xml:id="II07-7">
             <speaker>AYMON.</speaker>
             <l n="738" xml:id="l738">Considérez aussi comme sa fougue est vaine, </l>
             <l n="739" xml:id="l739">Comme il fait ce duel sans animosité, </l>
@@ -1225,101 +1269,101 @@
             <l n="742" xml:id="l742">Et tient sans la frapper le combat en balance. </l>
             <stage type="[N/A]">Bradamante se retire pour reprendre haleine, et Roger en fait de même.</stage>
           </sp>
-          <sp xml:id="II07-8" who="NAYMES">
+          <sp who="NAYMES" xml:id="II07-8">
             <speaker>NAYMES.</speaker>
             <l n="743" xml:id="l743">Par un si grand travail ils sont tous deux lassés. </l>
           </sp>
-          <sp xml:id="II07-9" who="AYMON">
+          <sp who="AYMON" xml:id="II07-9">
             <speaker>AYMON.</speaker>
             <l n="744" xml:id="l744">Je connais qu'à la fin mes voeux sont exaucés, </l>
             <l n="745" xml:id="l745">Et que ce grand guerrier trompera tout le monde. </l>
           </sp>
-          <sp xml:id="II07-10" who="CHARLES">
+          <sp who="CHARLES" xml:id="II07-10">
             <speaker>CHARLES.</speaker>
             <l n="746" xml:id="l746">Certes, sa valeur n'en a point de seconde. </l>
           </sp>
-          <sp xml:id="II07-11" who="AYMON">
+          <sp who="AYMON" xml:id="II07-11">
             <speaker>AYMON.</speaker>
             <l n="747" xml:id="l747">Et bien quand ce Roger combattrait à vos yeux, </l>
             <l n="748" xml:id="l748">Croyez-vous pas Renaud, qu'il ferait beaucoup mieux ? </l>
           </sp>
-          <sp xml:id="II07-12" who="RENAUD">
+          <sp who="RENAUD" xml:id="II07-12">
             <speaker>RENAUD.</speaker>
             <l n="749" xml:id="l749">Je le veux avouer, sa valeur est extrême, </l>
             <l n="750" xml:id="l750">Ou je crois que ma soeur ne soit plus elle-même, </l>
             <l n="751" xml:id="l751">Ah, quelle soutient mal le droit de son Amant ! </l>
           </sp>
-          <sp xml:id="II07-13" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="II07-13">
             <speaker>MARPHISE.</speaker>
             <l n="752" xml:id="l752">Elle ne le saurait plus courageusement. </l>
           </sp>
-          <sp xml:id="II07-14" who="ROGER">
+          <sp who="ROGER" xml:id="II07-14">
             <speaker>ROGER, bas.</speaker>
             <l n="753" xml:id="l753">Malheureux vois-tu pas que ce repos te tue, </l>
             <l n="754" xml:id="l754">Reprends Roger, reprends ta vigueur abattue, </l>
             <l n="755" xml:id="l755">Songe qu'il faut mourir, obéis toutefois, </l>
             <l n="756" xml:id="l756">Et ne l'offense pas pour la dernière fois. </l>
           </sp>
-          <sp xml:id="II07-15" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II07-15">
             <speaker>BRADAMANTE.</speaker>
             <stage type="[N/A]">Elle recommence le combat.</stage>
             <l n="757" xml:id="l757">Après un tel repos, tu ne meurs pas de honte, </l>
             <l n="758" xml:id="l758">Tente un dernier effort, ou péris, ou surmonte. </l>
           </sp>
-          <sp xml:id="II07-16" who="NAYMES">
+          <sp who="NAYMES" xml:id="II07-16">
             <speaker>NAYMES.</speaker>
             <l n="759" xml:id="l759">Ils ont recommencé plus fort qu'auparavant. </l>
           </sp>
-          <sp xml:id="II07-17" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="II07-17">
             <speaker>MARPHISE.</speaker>
             <stage type="[N/A]">Bradamante recule et Roger la poursuit.</stage>
             <l n="760" xml:id="l760">Ô malheur ! Ô destin variable et mouvant ! </l>
             <l n="761" xml:id="l761">Ah ! Ma soeur n'en peut plus, ô regret qui me tue ! </l>
           </sp>
-          <sp xml:id="II07-18" who="ROGER">
+          <sp who="ROGER" xml:id="II07-18">
             <speaker>ROGER, déguisant sa voix. </speaker>
             <stage type="[N/A]">Il passe sur elle, et lui ôtes on épée : mais Bradamante ne laisse pas de se jeter sur lui plus furieuse que auparavant.</stage>
             <l n="762" xml:id="l762">Madame, confessez que vous êtes vaincue, </l>
             <l n="763" xml:id="l763">Que vos plus grands efforts sont enfin superflus. </l>
           </sp>
-          <sp xml:id="II07-19" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II07-19">
             <speaker>BRADAMANTE.</speaker>
             <l n="764" xml:id="l764">Je le confesserais si je ne vivais plus ; </l>
             <l n="765" xml:id="l765">Mais crois qu'avec le jour je perdrai la victoire, </l>
             <l n="766" xml:id="l766">Et que ma seule mort t'en donnera la gloire. </l>
           </sp>
-          <sp xml:id="II07-20" who="AYMON">
+          <sp who="AYMON" xml:id="II07-20">
             <speaker>AYMON.</speaker>
             <l n="767" xml:id="l767">Sire, vous voyez bien la chose comme elle est, </l>
             <l n="768" xml:id="l768">Ne le permettez pas, empêchez s'il vous plaît. </l>
             <stage type="[N/A]">Il les sépare.</stage>
           </sp>
-          <sp xml:id="II07-21" who="CHARLES">
+          <sp who="CHARLES" xml:id="II07-21">
             <speaker>CHARLES.</speaker>
             <l n="769" xml:id="l769">Apaisez les bouillons de ce mâle courage, </l>
             <l n="770" xml:id="l770">Ne le contestez plus, Léon a l'avantage. </l>
           </sp>
-          <sp xml:id="II07-22" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="II07-22">
             <speaker>BRADAMANTE.</speaker>
-            <l n="771" xml:id="l771" part="I">Il est vrai, mais ma mort. </l>
+            <l n="771" part="I" xml:id="l771">Il est vrai, mais ma mort. </l>
           </sp>
           <note>v. 771, rien ne rime avec "pas".</note>
-          <sp xml:id="II07-23" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="II07-23">
             <speaker>MARPHISE.</speaker>
             <stage type="[N/A]">Elles se retirent. </stage>
             <l part="F">Ne désespérez pas. </l>
             <stage type="[N/A]">Et Roger aussi.</stage>
           </sp>
-          <sp xml:id="II07-24" who="ROGER">
+          <sp who="ROGER" xml:id="II07-24">
             <speaker>ROGER.</speaker>
             <l n="772" xml:id="l772">Et toi, puisque ses mains ne te l'ont point ravie, </l>
             <l n="773" xml:id="l773">Va finir dans l'horreur ta misérable vie. </l>
           </sp>
-          <sp xml:id="II07-25" who="CHARLES">
+          <sp who="CHARLES" xml:id="II07-25">
             <speaker>CHARLES.</speaker>
             <l n="774" xml:id="l774">Il se veut désarmer, retirons-nous aussi. </l>
           </sp>
-          <sp xml:id="II07-26" who="AYMON">
+          <sp who="AYMON" xml:id="II07-26">
             <speaker>AYMON.</speaker>
             <l n="775" xml:id="l775">Ô Ciel ! Que ta justice éclate bien ici, </l>
             <l n="776" xml:id="l776">Me pouvais-tu combler d'une parfaite joie, </l>
@@ -1327,11 +1371,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Bradamante, Marfise.<listPerson type="configuration" xml:id="conf17"><person corresp="#BRADAMANTE"/><person corresp="#MARPHISE"/></listPerson></head>
-          <sp xml:id="III01-1" who="BRADAMANTE">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE PREMIÈRE. Bradamante, Marfise.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#BRADAMANTE"/>
+            <person corresp="#MARPHISE"/></listPerson></head>
+          <sp who="BRADAMANTE" xml:id="III01-1">
             <speaker>BRADAMANTE.</speaker>
             <l n="778" xml:id="l778">En vain votre pitié s'offre à me secourir, </l>
             <l n="779" xml:id="l779">Ne me consolez plus ma soeur, je dois mourir, </l>
@@ -1352,7 +1398,7 @@
             <l n="794" xml:id="l794">Ce tyran de nos coeurs, qui me force d'aimer, </l>
             <l n="795" xml:id="l795">Vous me plaindrez, Madame, au lieu de me blâmer. </l>
           </sp>
-          <sp xml:id="III01-2" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III01-2">
             <speaker>MARPHISE.</speaker>
             <l n="796" xml:id="l796">Jamais vos actions n'ont mérité de blâme, </l>
             <l n="797" xml:id="l797">Je ne condamne pas une pudique flamme ; </l>
@@ -1369,7 +1415,7 @@
             <l n="808" xml:id="l808">Qui par mille combats s »'est rendu redoutable, </l>
             <l n="809" xml:id="l809">Gagner sur votre esprit la victoire semblable. </l>
           </sp>
-          <sp xml:id="III01-3" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="III01-3">
             <speaker>BRADAMANTE.</speaker>
             <l n="810" xml:id="l810">Oui, mais ce même coeur que vous avez vanté, </l>
             <l n="811" xml:id="l811">S'est noirci maintenant par une lâcheté, </l>
@@ -1406,7 +1452,7 @@
             <l n="842" xml:id="l842">Et ne permettez pas qu'un rival odieux, </l>
             <l n="843" xml:id="l843">Le pouvant empêcher, en triomphe à vos yeux. </l>
           </sp>
-          <sp xml:id="III01-4" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III01-4">
             <speaker>MARPHISE.</speaker>
             <l n="844" xml:id="l844">Je ne permettrai pas qu'un autre vous possède, </l>
             <l n="845" xml:id="l845">Mais nous y pourvoirons par un autre remède, </l>
@@ -1434,19 +1480,22 @@
             <l n="867" xml:id="l867">Et le laisser agir plus sagement que vous. </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Renaud, Marfise, Bradamante.<listPerson type="configuration" xml:id="conf18"><person corresp="#RENAUD"/><person corresp="#MARPHISE"/><person corresp="#BRADAMANTE"/></listPerson></head>
-          <sp xml:id="III02-1" who="RENAUD">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Renaud, Marfise, Bradamante.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#RENAUD"/>
+            <person corresp="#MARPHISE"/>
+            <person corresp="#BRADAMANTE"/></listPerson></head>
+          <sp who="RENAUD" xml:id="III02-1">
             <speaker>RENAUD.</speaker>
             <l n="868" xml:id="l868">Comment gouvernez-vous cette désespérée ? </l>
           </sp>
-          <sp xml:id="III02-2" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III02-2">
             <speaker>MARPHISE.</speaker>
             <l n="869" xml:id="l869">Certes, votre présence était bien désirée, </l>
             <l n="870" xml:id="l870">Et vous me surprenez au milieu d'un discours, </l>
             <l n="871" xml:id="l871">Où je n'avais besoin que de votre secours. </l>
           </sp>
-          <sp xml:id="III02-3" who="RENAUD">
+          <sp who="RENAUD" xml:id="III02-3">
             <speaker>RENAUD.</speaker>
             <l n="872" xml:id="l872">Vous n'en eûtes jamais dans aucune conquête, </l>
             <l n="873" xml:id="l873">Et tous ces beaux lauriers qui couvrent votre tête, </l>
@@ -1458,7 +1507,7 @@
             <l n="879" xml:id="l879">À de puissants liens, dont vous nous étreignez. </l>
             <l n="880" xml:id="l880">Oui, de cette bonté j'ai l'âme si ravie. </l>
           </sp>
-          <sp xml:id="III02-4" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III02-4">
             <speaker>MARPHISE.</speaker>
             <l n="881" xml:id="l881">Quand même son repos dépendrait de ma vie, </l>
             <l n="882" xml:id="l882">Je vous jure le Ciel que je la donnerais, </l>
@@ -1471,17 +1520,17 @@
             <l n="889" xml:id="l889">Nous fait avoir besoin de votre confidence, </l>
             <l n="890" xml:id="l890">Et qu'avec vos conseils il réussira bien. </l>
           </sp>
-          <sp xml:id="III02-5" who="RENAUD">
+          <sp who="RENAUD" xml:id="III02-5">
             <speaker>RENAUD.</speaker>
-            <l n="891" xml:id="l891" part="I">Vous me comblez d'honneur. </l>
+            <l n="891" part="I" xml:id="l891">Vous me comblez d'honneur. </l>
           </sp>
-          <sp xml:id="III02-6" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III02-6">
             <speaker>MARPHISE.</speaker>
             <l part="F">Votre soeur n'en sait rien. </l>
             <l n="892" xml:id="l892">Quoique aucune raison ne veut que je le cache, </l>
             <l n="893" xml:id="l893">Je vous en veux parler avant qu'elle le sache. </l>
           </sp>
-          <sp xml:id="III02-7" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="III02-7">
             <speaker>BRADAMANTE.</speaker>
             <l n="894" xml:id="l894">Ouvre la source de tes pleurs, </l>
             <l n="895" xml:id="l895">Fais couler un ruisseau de larmes, </l>
@@ -1504,7 +1553,7 @@
             <l n="912" xml:id="l912">Et sa valeur est endormie, </l>
             <l n="913" xml:id="l913">Sinon que ses effets te puissent affliger. </l>
           </sp>
-          <sp xml:id="III02-8" who="RENAUD">
+          <sp who="RENAUD" xml:id="III02-8">
             <speaker>RENAUD.</speaker>
             <l n="914" xml:id="l914">Oui, la même prudence ordonne qu'on le suive, </l>
             <l n="915" xml:id="l915">Il faut encor un coup que Bradamante vive. </l>
@@ -1514,25 +1563,26 @@
             <l n="919" xml:id="l919">Il demande déjà le prix de sa victoire, </l>
             <l n="920" xml:id="l920">Et le vieillard Aymon, las de le caresser, </l>
             <l n="921" xml:id="l921">N'attend plus que ma soeur pour le récompenser, </l>
-            <l n="922" xml:id="l922" part="I">Mais vous le troublerez. </l>
+            <l n="922" part="I" xml:id="l922">Mais vous le troublerez. </l>
           </sp>
-          <sp xml:id="III02-9" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="III02-9">
             <speaker>BRADAMANTE.</speaker>
             <l part="F">Hé, dites-moi mon frère. </l>
           </sp>
-          <sp xml:id="III02-10" who="RENAUD">
+          <sp who="RENAUD" xml:id="III02-10">
             <speaker>RENAUD.</speaker>
             <l n="923" xml:id="l923">Vous saurez en chemin ce que vous devez faire, </l>
             <l n="924" xml:id="l924">Disposez-vous déjà pour agir avec nous. </l>
           </sp>
-          <sp xml:id="III02-11" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III02-11">
             <speaker>MARPHISE.</speaker>
             <l n="925" xml:id="l925">Je serai chez le Roi presque aussitôt que vous. </l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. <listPerson type="configuration" xml:id="conf19"><person corresp="#ROGER"/></listPerson></head>
-          <sp xml:id="III03-1" who="ROGER">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. <listPerson type="configuration" xml:id="conf19">
+            <person corresp="#ROGER"/></listPerson></head>
+          <sp who="ROGER" xml:id="III03-1">
             <speaker>ROGER, en son premier habit.</speaker>
             <l n="926" xml:id="l926">Je puis, développé d'une suite importune, </l>
             <l n="927" xml:id="l927">Me plaindre en liberté des traits de la fortune, </l>
@@ -1608,9 +1658,15 @@
             <l n="997" xml:id="l997">De te voir triompher du mal que j'ai commis. </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Charles, Léon, Aymon, Marfise, Bradamante, Renaud. <listPerson type="configuration" xml:id="conf20"><person corresp="#CHARLES"/><person corresp="#LEON"/><person corresp="#AYMON"/><person corresp="#MARPHISE"/><person corresp="#BRADAMANTE"/><person corresp="#RENAUD"/></listPerson></head>
-          <sp xml:id="III04-1" who="CHARLES">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Charles, Léon, Aymon, Marfise, Bradamante, Renaud. <listPerson type="configuration" xml:id="conf20">
+            <person corresp="#CHARLES"/>
+            <person corresp="#LEON"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#MARPHISE"/>
+            <person corresp="#BRADAMANTE"/>
+            <person corresp="#RENAUD"/></listPerson></head>
+          <sp who="CHARLES" xml:id="III04-1">
             <speaker>CHARLES.</speaker>
             <l n="998" xml:id="l998">Prince chéri du Ciel, votre valeur est telle, </l>
             <l n="999" xml:id="l999">Qu'au jugement de tous elle est plus que mortelle, </l>
@@ -1625,11 +1681,11 @@
             <l n="1008" xml:id="l1008">Les rares qualités d'un si parfait amant, </l>
             <l n="1009" xml:id="l1009">Amolliraient sans doute un coeur de diamant. </l>
           </sp>
-          <sp xml:id="III04-2" who="LEON">
+          <sp who="LEON" xml:id="III04-2">
             <speaker>LÉON.</speaker>
             <l n="1010" xml:id="l1010">Invincible Empereur, je vis dans l'espérance, </l>
             <l n="1011" xml:id="l1011">Puisque votre grandeur entreprend ma défense. </l>
-            <l n="1012" xml:id="l1012">J'attends de ma valeur et de ma qualité. 	</l>
+            <l n="1012" xml:id="l1012">J'attends de ma valeur et de ma qualité. </l>
             <l n="1013" xml:id="l1013">Moins que de mon amour et de votre bonté. </l>
             <l n="1014" xml:id="l1014">L'un et l'autre me donne un esprit légitime, </l>
             <l n="1015" xml:id="l1015">Et mon ambition passerait pour un crime, </l>
@@ -1649,27 +1705,27 @@
             <l n="1029" xml:id="l1029">Ne vous opposez pas au bonheur qui m'attend, </l>
             <l n="1030" xml:id="l1030">Et souffrez sans regret, que le Ciel nous assemble, </l>
             <l n="1031" xml:id="l1031">Et joigne, pour jamais, nos deux âmes ensemble. </l>
-            <l n="1032" xml:id="l1032" part="I">Vous ne répondez rien. </l>
+            <l n="1032" part="I" xml:id="l1032">Vous ne répondez rien. </l>
           </sp>
-          <sp xml:id="III04-3" who="AYMON">
+          <sp who="AYMON" xml:id="III04-3">
             <speaker>AYMON.</speaker>
             <l part="F">Bradamante parlez, </l>
             <l n="1033" xml:id="l1033">Ce silence indiscret nous a déjà troublés. </l>
           </sp>
-          <sp xml:id="III04-4" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III04-4">
             <speaker>MARPHISE.</speaker>
             <l n="1034" xml:id="l1034">Ceux qui sont travaillés d'un ver de conscience, </l>
             <l n="1035" xml:id="l1035">Couvrent leur repentir d'un semblable silence. </l>
             <l n="1036" xml:id="l1036">Le souvenir d'un crime imprime des remords, </l>
             <l n="1037" xml:id="l1037">Qui gênent nos esprits de plus de mille morts. </l>
           </sp>
-          <sp xml:id="III04-5" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="III04-5">
             <speaker>BRADAMANTE.</speaker>
             <l n="1038" xml:id="l1038">Grâce aux Dieux, les remords n'affilent point mon âme, </l>
             <l n="1039" xml:id="l1039">J'ai vécu sans reproche, expliquez-vous Madame, </l>
             <l n="1040" xml:id="l1040">Et ne m'offensez point en présence du Roi. </l>
           </sp>
-          <sp xml:id="III04-6" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III04-6">
             <speaker>MARPHISE.</speaker>
             <l n="1041" xml:id="l1041">Si trahir un amant, si violer sa foi, </l>
             <l n="1042" xml:id="l1042">Si fausser lâchement la parole donnée, </l>
@@ -1700,13 +1756,13 @@
             <l n="1067" xml:id="l1067">Je veux encor Renaud vous combattre avec elle, </l>
             <l n="1068" xml:id="l1068">Si vous ne confessez tout ce qui s'est passé. </l>
           </sp>
-          <sp xml:id="III04-7" who="AYMON">
+          <sp who="AYMON" xml:id="III04-7">
             <speaker>AYMON.</speaker>
             <l n="1069" xml:id="l1069">D'où vient qu'à ce défi vous êtes si glacé ? </l>
             <l n="1070" xml:id="l1070">Quoi, l'honneur de Clairmont a-t-il pris l'épouvante ? </l>
             <l n="1071" xml:id="l1071">Marfise fait trembler Renaud et Bradamante. </l>
           </sp>
-          <sp xml:id="III04-8" who="RENAUD">
+          <sp who="RENAUD" xml:id="III04-8">
             <speaker>RENAUD.</speaker>
             <l n="1072" xml:id="l1072">Les plus sanglants duels ne sont plus étrangers </l>
             <l n="1073" xml:id="l1073">À qui ne s'est nourri que parmi les dangers. </l>
@@ -1719,7 +1775,7 @@
             <l n="1080" xml:id="l1080">Il est vrai que ma soeur est promise à Roger, </l>
             <l n="1081" xml:id="l1081">Avec tant de serments, qu'elle ne peut changer. </l>
           </sp>
-          <sp xml:id="III04-9" who="AYMON">
+          <sp who="AYMON" xml:id="III04-9">
             <speaker>AYMON.</speaker>
             <l n="1082" xml:id="l1082">Justes Dieux ! Pouvez-vous souffrir cette imposture ? </l>
             <l n="1083" xml:id="l1083">Mais je serai pour eux sensible à leur injure. </l>
@@ -1730,7 +1786,7 @@
             <l n="1087" xml:id="l1087">Mais il soupirera, sa ruse découverte, </l>
             <l n="1088" xml:id="l1088">Il se repentira de m'avoir offensé. </l>
           </sp>
-          <sp xml:id="III04-10" who="LEON">
+          <sp who="LEON" xml:id="III04-10">
             <speaker>LÉON.</speaker>
             <l n="1089" xml:id="l1089">De quels empêchements me vous-je traversé ? </l>
             <l n="1090" xml:id="l1090">Ha, Madame, à ce coup ouvrez un peu la bouche, </l>
@@ -1738,13 +1794,13 @@
             <l n="1092" xml:id="l1092">Et ne conspirez pas avec mes ennemis, </l>
             <l n="1093" xml:id="l1093">Pour me voler un bien que le Ciel m'a promis.</l>
           </sp>
-          <sp xml:id="III04-11" who="CHARLES">
+          <sp who="CHARLES" xml:id="III04-11">
             <speaker>CHARLES.</speaker>
             <l n="1094" xml:id="l1094">L'esprit le plus subtil ici ne verrait goutte, </l>
             <l n="1095" xml:id="l1095">Bradamante, il est temps de nous tirer d'un doute : </l>
             <l n="1096" xml:id="l1096">Enfin par vos discours sachons la vérité. </l>
           </sp>
-          <sp xml:id="III04-12" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="III04-12">
             <speaker>BRADAMANTE.</speaker>
             <l n="1097" xml:id="l1097">Puisqu'il faut obéir à votre Majesté, </l>
             <l n="1098" xml:id="l1098">Je la veux supplier de voir sur mon visage, </l>
@@ -1752,11 +1808,11 @@
             <l n="1100" xml:id="l1100">De remarquer ce front, qui parle assez pour moi. </l>
             <l n="1101" xml:id="l1101">Oui, Sire, il est certain que j'ai donné ma foi. </l>
           </sp>
-          <sp xml:id="III04-13" who="LEON">
+          <sp who="LEON" xml:id="III04-13">
             <speaker>LÉON.</speaker>
-            <l n="1102" xml:id="l1102" part="I">Ô mortelle sentence ! </l>
+            <l n="1102" part="I" xml:id="l1102">Ô mortelle sentence ! </l>
           </sp>
-          <sp xml:id="III04-14" who="AYMON">
+          <sp who="AYMON" xml:id="III04-14">
             <speaker>AYMON.</speaker>
             <l part="F">Ô mensonge exécrable ! </l>
             <note>Fourbe : tromperie, déguisement de la verité fait avec adresse. Les honnêtes gens sont ennemis de la fourbe. [F]</note>
@@ -1767,12 +1823,12 @@
             <l n="1107" xml:id="l1107">Souffrir impunément l'imposture sacrée ? </l>
             <l n="1108" xml:id="l1108">Ils ont également brassé la trahison. </l>
           </sp>
-          <sp xml:id="III04-15" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III04-15">
             <speaker>MARPHISE.</speaker>
             <l n="1109" xml:id="l1109">Vous avez presque atteint la dernière saison, </l>
             <l n="1110" xml:id="l1110">L'esprit, comme le corps, s'affaiblit avec l'âge. </l>
           </sp>
-          <sp xml:id="III04-16" who="AYMON">
+          <sp who="AYMON" xml:id="III04-16">
             <speaker>AYMON.</speaker>
             <l n="1111" xml:id="l1111">Il m'a ravi la force, et non pas le courage : </l>
             <l n="1112" xml:id="l1112">Ce corps est affaibli, mais il me reste un coeur, </l>
@@ -1793,9 +1849,9 @@
             <l n="1127" xml:id="l1127">Que Renaud n'eut jamais de pouvoir sur ma fille. </l>
             <l n="1128" xml:id="l1128">Et que quand l'imprudente aurait donné sa foi, </l>
             <l n="1129" xml:id="l1129">Elle n'a pas le droit d'en disposer sans moi : </l>
-            <l n="1130" xml:id="l1130" part="I">C'est ce que je soutiens. </l>
+            <l n="1130" part="I" xml:id="l1130">C'est ce que je soutiens. </l>
           </sp>
-          <sp xml:id="III04-17" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III04-17">
             <speaker>MARPHISE.</speaker>
             <l part="F">Le péril est extrême. </l>
             <l n="1131" xml:id="l1131">Mais quoiqu'en ce combat la gloire fût de même, </l>
@@ -1805,14 +1861,14 @@
             <l n="1135" xml:id="l1135">Que de son propre gré mon frère n'y consente. </l>
             <l n="1136" xml:id="l1136">Et puisqu'il est absent, je combattrai pour lui. </l>
           </sp>
-          <sp xml:id="III04-18" who="AYMON">
+          <sp who="AYMON" xml:id="III04-18">
             <speaker>AYMON.</speaker>
             <l n="1137" xml:id="l1137">Donc que ce différent se termine aujourd'hui, </l>
             <l n="1138" xml:id="l1138">Oui, Madame, je veux moi-même vous combattre, </l>
             <l n="1139" xml:id="l1139">Et de ma propre main cette insolence abattre, </l>
-            <l n="1140" xml:id="l1140" part="I">Magnanime Empereur. </l>
+            <l n="1140" part="I" xml:id="l1140">Magnanime Empereur. </l>
           </sp>
-          <sp xml:id="III04-19" who="LEON">
+          <sp who="LEON" xml:id="III04-19">
             <speaker>LÉON.</speaker>
             <l part="F">Monsieur retirez-vous, </l>
             <l n="1141" xml:id="l1141">L'exercice de Mars est désormais pour nous, </l>
@@ -1825,31 +1881,31 @@
             <l n="1148" xml:id="l1148">Je verrais un guerrier plus volontiers que vous, </l>
             <l n="1149" xml:id="l1149">Qui semblez destinée à des combats plus doux. </l>
           </sp>
-          <sp xml:id="III04-20" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III04-20">
             <speaker>MARPHISE.</speaker>
             <l n="1150" xml:id="l1150">Jamais les plus sanglants n'ont changé ce visage, </l>
             <l n="1151" xml:id="l1151">J'ai dans mille périls signalé mon courage, </l>
             <l n="1152" xml:id="l1152">Et mille cavaliers, à mes pieds renversés, </l>
             <l n="1153" xml:id="l1153">Craignent encor la main qui les a terrassés. </l>
           </sp>
-          <sp xml:id="III04-21" who="CHARLES">
+          <sp who="CHARLES" xml:id="III04-21">
             <speaker>CHARLES.</speaker>
             <l n="1154" xml:id="l1154">La valeur de tous deux est assez reconnue : </l>
             <l n="1155" xml:id="l1155">Mais puisque notre loi doit être maintenue, </l>
             <l n="1156" xml:id="l1156">Et que cette Amazone en doit être le prix, </l>
             <l n="1157" xml:id="l1157">Je consens à regret au combat entrepris : </l>
             <l n="1158" xml:id="l1158">Demain, dès que Phébus nous rendra sa lumière, </l>
-            <l n="1159" xml:id="l1159" part="I">Je vous donne le camp. </l>
+            <l n="1159" part="I" xml:id="l1159">Je vous donne le camp. </l>
           </sp>
-          <sp xml:id="III04-22" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="III04-22">
             <speaker>MARPHISE.</speaker>
             <l part="F">J'y serai la première. </l>
           </sp>
-          <sp xml:id="III04-23" who="LEON">
+          <sp who="LEON" xml:id="III04-23">
             <speaker>LÉON.</speaker>
             <l n="1160" xml:id="l1160">Je n'aurai d'autre soin que de vous prévenir.</l>
           </sp>
-          <sp xml:id="III04-24" who="AYMON">
+          <sp who="AYMON" xml:id="III04-24">
             <speaker>AYMON.</speaker>
             <l n="1161" xml:id="l1161">Et moi, que de prier le Ciel de les punir. </l>
             <l n="1162" xml:id="l1162">Va-t'en couple maudit, s'il doit faire justice, </l>
@@ -1857,11 +1913,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Léon, Zénon.<listPerson type="configuration" xml:id="conf22"><person corresp="#LEON"/><person corresp="#ZENON"/></listPerson></head>
-          <sp xml:id="IV01-1" who="LEON">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE PREMIÈRE. Léon, Zénon.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#LEON"/>
+            <person corresp="#ZENON"/></listPerson></head>
+          <sp who="LEON" xml:id="IV01-1">
             <speaker>LÉON.</speaker>
             <l n="1164" xml:id="l1164">Donc vous avez perdu votre temps et vos pas, </l>
             <l n="1165" xml:id="l1165">N'importe, cher ami, ne désespérons pas. </l>
@@ -1869,12 +1927,12 @@
             <l n="1167" xml:id="l1167">Changeant aussi pour nous, nous sera favorable. </l>
             <l n="1168" xml:id="l1168">Adieu, je me fais tort, vous retenant ici. </l>
           </sp>
-          <sp xml:id="IV01-2" who="ZENON">
+          <sp who="ZENON" xml:id="IV01-2">
             <speaker>ZÉNON.</speaker>
             <stage type="[N/A]">Il rentre.</stage>
-            <l n="1169" xml:id="l1169" part="I">Nous nous acheminons. </l>
+            <l n="1169" part="I" xml:id="l1169">Nous nous acheminons. </l>
           </sp>
-          <sp xml:id="IV01-3" who="LEON">
+          <sp who="LEON" xml:id="IV01-3">
             <speaker>LÉON.</speaker>
             <l part="F">Je vais courir aussi. </l>
             <l n="1170" xml:id="l1170">Ô Ciel ! Combien est vain un espoir qui se fonde </l>
@@ -1919,9 +1977,10 @@
             <l n="1209" xml:id="l1209">Guide-moi sur les siens, ou me guide au trépas</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf23"><person corresp="#ROGER"/></listPerson></head>
-          <sp xml:id="IV02-1" who="ROGER">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. <listPerson type="configuration" xml:id="conf23">
+            <person corresp="#ROGER"/></listPerson></head>
+          <sp who="ROGER" xml:id="IV02-1">
             <speaker>ROGER.</speaker>
             <l n="1210" xml:id="l1210">Odieuse clarté, je te soutiens encore, </l>
             <l n="1211" xml:id="l1211">Soucis qui me tuez, ennui qui me dévore, </l>
@@ -1986,9 +2045,11 @@
             <l n="1269" xml:id="l1269">Qu'aux objets seulement qui peuvent affliger. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Léon, Roger. <listPerson type="configuration" xml:id="conf24"><person corresp="#LEON"/><person corresp="#ROGER"/></listPerson></head>
-          <sp xml:id="IV03-1" who="LEON">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Léon, Roger. <listPerson type="configuration" xml:id="conf24">
+            <person corresp="#LEON"/>
+            <person corresp="#ROGER"/></listPerson></head>
+          <sp who="LEON" xml:id="IV03-1">
             <speaker>LÉON.</speaker>
             <l n="1270" xml:id="l1270">Hélas, qui finira mes courses incertaines ? </l>
             <l n="1271" xml:id="l1271">Qui me retirera de mes recherches vaines ? </l>
@@ -2001,7 +2062,7 @@
             <l n="1278" xml:id="l1278">Écoutons si la voix jusqu'à nous parvenue, </l>
             <l n="1279" xml:id="l1279">Approchant de plus près, pourrait être connue. </l>
           </sp>
-          <sp xml:id="IV03-2" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-2">
             <speaker>ROGER.</speaker>
             <l n="1280" xml:id="l1280">Non, ne t'afflige plus mon âme, </l>
             <l n="1281" xml:id="l1281">Nous voici déjà dans le port, </l>
@@ -2010,13 +2071,13 @@
             <l n="1284" xml:id="l1284">Et que dans les enfers tu portes le flambeau, </l>
             <l n="1285" xml:id="l1285">Qui te doit brûler au tombeau.</l>
           </sp>
-          <sp xml:id="IV03-3" who="LEON">
+          <sp who="LEON" xml:id="IV03-3">
             <speaker>LÉON.</speaker>
             <stage type="[N/A]">Il entre dans le bois.</stage>
             <l n="1286" xml:id="l1286">Qu'à travers ces buissons je me fasse une voie, </l>
             <l n="1287" xml:id="l1287">J'entends déjà la voix, il faut que je le voie. </l>
           </sp>
-          <sp xml:id="IV03-4" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-4">
             <speaker>ROGER.</speaker>
             <l n="1288" xml:id="l1288">Ici ton malheur est extrême, </l>
             <l n="1289" xml:id="l1289">Que rien ne te peut secourir, </l>
@@ -2025,12 +2086,12 @@
             <l n="1292" xml:id="l1292">Pouvoir être un moment, et ne l'adorer pas, </l>
             <l n="1293" xml:id="l1293">N'est-ce point pis que le trépas</l>
           </sp>
-          <sp xml:id="IV03-5" who="LEON">
+          <sp who="LEON" xml:id="IV03-5">
             <speaker>LÉON.</speaker>
             <l n="1294" xml:id="l1294">J'entrevois maintenant au pied de cette roche </l>
             <l n="1295" xml:id="l1295">Un cavalier sur l'herbe, il faut que je m'approche. </l>
           </sp>
-          <sp xml:id="IV03-6" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-6">
             <speaker>ROGER.</speaker>
             <l n="1296" xml:id="l1296">Vous que j'ai toujours adorée, </l>
             <l n="1297" xml:id="l1297">Divine et charmante beauté, </l>
@@ -2039,13 +2100,13 @@
             <l n="1300" xml:id="l1300">Et quoique le devoir ait exigé de moi, </l>
             <l n="1301" xml:id="l1301">Je vous ai conservé ma foi. </l>
             <l n="1302" xml:id="l1302">Elle ne fut jamais plus forte, </l>
-            <l n="1303" xml:id="l1303">Mais le Ciel me fit obéir, 	</l>
+            <l n="1303" xml:id="l1303">Mais le Ciel me fit obéir, </l>
             <l n="1304" xml:id="l1304">Et me força de vous trahir, </l>
             <l n="1305" xml:id="l1305">Pour suivre un devoir qui m'emporte. </l>
             <l n="1306" xml:id="l1306">Le devoir et l'amour firent également </l>
             <l n="1307" xml:id="l1307">Vos déplaisirs et mon tourment. </l>
           </sp>
-          <sp xml:id="IV03-7" who="LEON">
+          <sp who="LEON" xml:id="IV03-7">
             <speaker>LÉON.</speaker>
             <l n="1308" xml:id="l1308">Ah, mon âme, à ce coup chasse toute ta crainte, </l>
             <l n="1309" xml:id="l1309">Cette blanche licorne, en cet écu dépeinte, </l>
@@ -2056,7 +2117,7 @@
             <l n="1314" xml:id="l1314">Et que pour me cacher, il prenait tant de soin, </l>
             <l n="1315" xml:id="l1315">Il mettra tout dehors, se croyant sans témoin. </l>
           </sp>
-          <sp xml:id="IV03-8" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-8">
             <speaker>ROGER.</speaker>
             <l n="1316" xml:id="l1316">Je vous aime sans espérance, </l>
             <l n="1317" xml:id="l1317">Ma flamme ne voit point de jour, </l>
@@ -2071,7 +2132,7 @@
             <l n="1326" xml:id="l1326">Vous êtes satisfaite, et je le suis aussi, </l>
             <l n="1327" xml:id="l1327">Puisque Amour me l'ordonne ainsi. </l>
           </sp>
-          <sp xml:id="IV03-9" who="LEON">
+          <sp who="LEON" xml:id="IV03-9">
             <speaker>LÉON.</speaker>
             <l n="1328" xml:id="l1328">Non, non, je ne saurais supporter davantage, </l>
             <l n="1329" xml:id="l1329">Ces discours inconnus où son amour l'engage. </l>
@@ -2079,34 +2140,34 @@
             <l n="1331" xml:id="l1331">Et déjà sa douleur me transit de pitié. </l>
             <l n="1332" xml:id="l1332">Ha, mon frère, avouez que vous êtes coupable. </l>
           </sp>
-          <sp xml:id="IV03-10" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-10">
             <speaker>ROGER.</speaker>
             <l n="1333" xml:id="l1333">Hélas ! Quel importun trouble ce misérable ! </l>
             <l n="1334" xml:id="l1334">Que dans ces lieux d'horreur tu viens mal à propos, </l>
             <l n="1335" xml:id="l1335">Ne me refuse point ce reste de repos. </l>
             <l n="1336" xml:id="l1336">Adieu, poursuis tes pas, le Ciel te soit propice. </l>
           </sp>
-          <sp xml:id="IV03-11" who="LEON">
+          <sp who="LEON" xml:id="IV03-11">
             <speaker>LÉON.</speaker>
             <l n="1337" xml:id="l1337">Est-il dans ces déserts tigre qui ne fléchisse ? </l>
             <l n="1338" xml:id="l1338">Retirons-le d'erreur, quoi ! M'éloignez de vous, </l>
             <l n="1339" xml:id="l1339">N'en dois-je point attendre un traitement plus doux ? </l>
             <l n="1340" xml:id="l1340">Sont-ce là les accueils où l'amitié convie ? </l>
           </sp>
-          <sp xml:id="IV03-12" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-12">
             <speaker>ROGER.</speaker>
             <l n="1341" xml:id="l1341">Ha, Léon, quel démon ennemi de ma vie, </l>
             <l n="1342" xml:id="l1342">Vous conduit en ces lieux, plein d'horreur et d'effroi, </l>
             <l n="1343" xml:id="l1343">Où même il ne voit rien d'effroyable que moi. </l>
           </sp>
-          <sp xml:id="IV03-13" who="LEON">
+          <sp who="LEON" xml:id="IV03-13">
             <speaker>LÉON.</speaker>
             <l n="1344" xml:id="l1344">Le désir de trouver, non pas cet effroyable, </l>
             <l n="1345" xml:id="l1345">Mais mon fidel ami, ce cavalier aimable, </l>
             <l n="1346" xml:id="l1346">La moitié de ma vie, et l'auteur de mon bien, </l>
             <l n="1347" xml:id="l1347">Et sans qui désormais je n'espère plus rien. </l>
           </sp>
-          <sp xml:id="IV03-14" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-14">
             <speaker>ROGER.</speaker>
             <l n="1348" xml:id="l1348">Maintenant votre envie est à plein satisfaite, </l>
             <l n="1349" xml:id="l1349">Vous m'avez rencontré, vous voyez ma retraite. </l>
@@ -2117,7 +2178,7 @@
             <l n="1354" xml:id="l1354">Me laisser en repos, et ne me troubler pas </l>
             <l n="1355" xml:id="l1355">Dans le bien que le Ciel m'accorde à mon trépas. </l>
           </sp>
-          <sp xml:id="IV03-15" who="LEON">
+          <sp who="LEON" xml:id="IV03-15">
             <speaker>LÉON.</speaker>
             <l n="1356" xml:id="l1356">Justes dieux, qui croirait que l'amitié permette </l>
             <l n="1357" xml:id="l1357">Une tant inhumaine et barbare requête ! </l>
@@ -2133,7 +2194,7 @@
             <l n="1367" xml:id="l1367">Et comme chevalier, et comme fils de Roi, </l>
             <l n="1368" xml:id="l1368">Que j'y perdrai mes biens, mes amis, et ma vie. </l>
           </sp>
-          <sp xml:id="IV03-16" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-16">
             <speaker>ROGER.</speaker>
             <l n="1369" xml:id="l1369">Que ma condition serait digne d'envie, </l>
             <l n="1370" xml:id="l1370">Et que cette amitié dans une autre saison, </l>
@@ -2147,7 +2208,7 @@
             <l n="1377" xml:id="l1377">Qu'un extrême malheur veut un remède extrême, </l>
             <l n="1378" xml:id="l1378">Mon devoir me l'ordonne, et le Ciel l'a voulu. </l>
           </sp>
-          <sp xml:id="IV03-17" who="LEON">
+          <sp who="LEON" xml:id="IV03-17">
             <speaker>LÉON.</speaker>
             <l n="1379" xml:id="l1379">Puisque dans ce dessein je vous vois résolu, </l>
             <l n="1380" xml:id="l1380">Et que c'est vainement que je vous en conjure, </l>
@@ -2155,7 +2216,7 @@
             <l n="1382" xml:id="l1382">Je meurs avec vous, et le même destin, </l>
             <l n="1383" xml:id="l1383">Qui joignit nos deux coeurs, confondra notre fin. </l>
           </sp>
-          <sp xml:id="IV03-18" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-18">
             <speaker>ROGER.</speaker>
             <l n="1384" xml:id="l1384">C'est à ce coup, Léon, que vous perdrez l'envie, </l>
             <l n="1385" xml:id="l1385">Qui vous rend si soigneux de conserver ma vie. </l>
@@ -2246,7 +2307,7 @@
             <l n="1470" xml:id="l1470">Allez jouir des biens que le Ciel vous promet, </l>
             <l n="1471" xml:id="l1471">Et goûter des douceurs tandis qu'il le permet. </l>
           </sp>
-          <sp xml:id="IV03-19" who="LEON">
+          <sp who="LEON" xml:id="IV03-19">
             <speaker>LÉON.</speaker>
             <l n="1472" xml:id="l1472">Ne trouvez pas mauvais de voir sur mon visage, </l>
             <l n="1473" xml:id="l1473">De mon étonnement un si grand témoignage. </l>
@@ -2285,7 +2346,7 @@
             <l n="1505" xml:id="l1505">Pour saouler l'appétit d'une âme ambitieuse, </l>
             <l n="1506" xml:id="l1506">L'Empire d'Orient nous laisse assez pour tous. </l>
           </sp>
-          <sp xml:id="IV03-20" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-20">
             <speaker>ROGER.</speaker>
             <l n="1507" xml:id="l1507">Ces excès de bonté n'appartiennent qu'à vous, </l>
             <l n="1508" xml:id="l1508">Il n'est qu'un seul Léon qui se vainque soi-même. </l>
@@ -2297,7 +2358,7 @@
             <l n="1514" xml:id="l1514">Et goûte désormais des douceurs avec lui, </l>
             <l n="1515" xml:id="l1515">Que la faveur des dieux leur promet aujourd'hui. </l>
           </sp>
-          <sp xml:id="IV03-21" who="LEON">
+          <sp who="LEON" xml:id="IV03-21">
             <speaker>LÉON.</speaker>
             <l n="1516" xml:id="l1516">Quoi donc, vos premiers voeux sont encore si fermes ! </l>
             <l n="1517" xml:id="l1517">De grâce, cher ami, changeons, changeons de termes, </l>
@@ -2309,7 +2370,7 @@
             <l n="1523" xml:id="l1523">Que cette passion vous en retire aussi. </l>
             <l n="1524" xml:id="l1524">Ne me refusez pas cette dernière grâce. </l>
           </sp>
-          <sp xml:id="IV03-22" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-22">
             <speaker>ROGER.</speaker>
             <l n="1525" xml:id="l1525">Il n'est rien que pour vous mon amitié ne fasse, </l>
             <l n="1526" xml:id="l1526">Mais vous ravir un bien par une lâcheté, </l>
@@ -2323,7 +2384,7 @@
             <l n="1534" xml:id="l1534">Bradamante est à vous, le Ciel le veut aussi. </l>
             <l n="1535" xml:id="l1535">Et le Ciel m'est témoin que je le veux aussi. </l>
           </sp>
-          <sp xml:id="IV03-23" who="LEON">
+          <sp who="LEON" xml:id="IV03-23">
             <speaker>LÉON.</speaker>
             <l n="1536" xml:id="l1536">Si ce point seulement vous défend de me suivre, </l>
             <l n="1537" xml:id="l1537">Rien plus ne vous défend d'espérer et de vivre. </l>
@@ -2339,7 +2400,7 @@
             <l n="1547" xml:id="l1547">Et par tous vos serments de la venir revoir. </l>
             <l n="1548" xml:id="l1548">Elle vous le commande, et je vous en conjure. </l>
           </sp>
-          <sp xml:id="IV03-24" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-24">
             <speaker>ROGER.</speaker>
             <l n="1549" xml:id="l1549">Que deviendra mon âme au combat qu'elle endure ? </l>
             <l n="1550" xml:id="l1550">Les larmes d'un ami, l'amour et le devoir, </l>
@@ -2350,7 +2411,7 @@
             <l n="1555" xml:id="l1555">Que vous me contraignez à cette lâcheté, </l>
             <l n="1556" xml:id="l1556">Et que je tiens de vous une seconde vie. </l>
           </sp>
-          <sp xml:id="IV03-25" who="LEON">
+          <sp who="LEON" xml:id="IV03-25">
             <speaker>LÉON.</speaker>
             <l n="1557" xml:id="l1557">C'était moi seulement qui vous l'avais ravie. </l>
             <l n="1558" xml:id="l1558">Mais puisque je me vois au comble de mes voeux, </l>
@@ -2359,17 +2420,20 @@
             <l n="1561" xml:id="l1561">Qui, comme je l'ai vécu, se meurt dans cette attente. </l>
             <l n="1562" xml:id="l1562">Ôtons-lui le sujet qu'elle a de me haïr. </l>
           </sp>
-          <sp xml:id="IV03-26" who="ROGER">
+          <sp who="ROGER" xml:id="IV03-26">
             <speaker>ROGER.</speaker>
             <l n="1563" xml:id="l1563">Allons, je ne vivrai que pour vous obéir. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Charles, Aymon, Marfise.<listPerson type="configuration" xml:id="conf26"><person corresp="#CHARLES"/><person corresp="#AYMON"/><person corresp="#MARPHISE"/></listPerson></head>
-          <sp xml:id="V01-1" who="CHARLES">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE PREMIÈRE. Charles, Aymon, Marfise.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#CHARLES"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#MARPHISE"/></listPerson></head>
+          <sp who="CHARLES" xml:id="V01-1">
             <speaker>CHARLES.</speaker>
             <l n="1564" xml:id="l1564">Pour moi, de quelque sens que son départ s'explique, </l>
             <l n="1565" xml:id="l1565">Je ne saurais avoir la croyance publique. </l>
@@ -2386,7 +2450,7 @@
             <l n="1576" xml:id="l1576">Tout le monde le blâme, et malgré moi j'écoute </l>
             <l n="1577" xml:id="l1577">Les sentiments divers qui me tiennent en doute. </l>
           </sp>
-          <sp xml:id="V01-2" who="AYMON">
+          <sp who="AYMON" xml:id="V01-2">
             <speaker>AYMON.</speaker>
             <l n="1578" xml:id="l1578">Ah, Sire, n'espérez d'un Prince si bien fait, </l>
             <l n="1579" xml:id="l1579">Que les déportements d'un cavalier parfait. </l>
@@ -2401,7 +2465,7 @@
             <l n="1588" xml:id="l1588">Quelque présomption, quelque orgueil qui l'emporte, </l>
             <l n="1589" xml:id="l1589">Marfise, on le sait bien, n'est pas guères plus forte. </l>
           </sp>
-          <sp xml:id="V01-3" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="V01-3">
             <speaker>MARPHISE.</speaker>
             <l n="1590" xml:id="l1590">Que ne paraît-il donc ce gendre prétendu ? </l>
             <l n="1591" xml:id="l1591">Et pourquoi dans le camp ne s'est-il point rendu ? </l>
@@ -2418,7 +2482,7 @@
             <l n="1602" xml:id="l1602">Vous avez beaucoup moins le visage riant, </l>
             <l n="1603" xml:id="l1603">Que quand vous gouverniez l'Empire d'Orient. </l>
           </sp>
-          <sp xml:id="V01-4" who="AYMON">
+          <sp who="AYMON" xml:id="V01-4">
             <speaker>AYMON.</speaker>
             <l n="1604" xml:id="l1604">Possible croyez-vous que mon âge dispense, </l>
             <l n="1605" xml:id="l1605">Me croyant affaibli, de me faire une offense. </l>
@@ -2428,9 +2492,9 @@
             <l n="1609" xml:id="l1609">Que vous devriez blâmer seulement en présence. </l>
             <l n="1610" xml:id="l1610">C'est une lâcheté que je ne puis souffrir, </l>
             <l n="1611" xml:id="l1611">Et ce n'est que pour lui que je me viens offrir. </l>
-            <l n="1612" xml:id="l1612" part="I">Je combats pour Léon. </l>
+            <l n="1612" part="I" xml:id="l1612">Je combats pour Léon. </l>
           </sp>
-          <sp xml:id="V01-5" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="V01-5">
             <speaker>MARPHISE.</speaker>
             <l part="F">Je suis déjà rendue, </l>
             <l n="1613" xml:id="l1613">Je vois que sa querelle est trop bien défendue. </l>
@@ -2442,45 +2506,51 @@
             <l n="1619" xml:id="l1619">Vous le verrez venir tout embrasé d'amour, </l>
             <l n="1620" xml:id="l1620">Porter sur votre tête une riche couronne. </l>
           </sp>
-          <sp xml:id="V01-6" who="AYMON">
+          <sp who="AYMON" xml:id="V01-6">
             <speaker>AYMON.</speaker>
             <l n="1621" xml:id="l1621">Madame, c'est assez, ne querellez personne, </l>
             <l n="1622" xml:id="l1622">Sans le respect du Roi, on vous témoignerait. </l>
           </sp>
-          <sp xml:id="V01-7" who="CHARLES">
+          <sp who="CHARLES" xml:id="V01-7">
             <speaker>CHARLES.</speaker>
             <l n="1623" xml:id="l1623">N'allez pas plus avant, ce courroux vous nuirait. </l>
             <l n="1624" xml:id="l1624">Vous êtes violent, et l'ardeur vous emporte. </l>
           </sp>
-          <sp xml:id="V01-8" who="AYMON">
+          <sp who="AYMON" xml:id="V01-8">
             <speaker>AYMON.</speaker>
             <l n="1625" xml:id="l1625">Croyez que ma vigueur n'est pas encore morte. </l>
           </sp>
-          <sp xml:id="V01-9" who="CHARLES">
+          <sp who="CHARLES" xml:id="V01-9">
             <speaker>CHARLES.</speaker>
             <l n="1626" xml:id="l1626">Il est vrai que de soi son naturel est doux, </l>
             <l n="1627" xml:id="l1627">Mais il est dangereux quand il entre en courroux. </l>
           </sp>
-          <sp xml:id="V01-10" who="AYMON">
+          <sp who="AYMON" xml:id="V01-10">
             <speaker>AYMON.</speaker>
             <l n="1628" xml:id="l1628">Vous vous tenez toujours dans votre complaisance, </l>
-            <l n="1629" xml:id="l1629" part="I">Vous êtes un bon fils.</l>
+            <l n="1629" part="I" xml:id="l1629">Vous êtes un bon fils.</l>
           </sp>
-          <sp xml:id="V01-11" who="CHARLES">
+          <sp who="CHARLES" xml:id="V01-11">
             <speaker>CHARLES.</speaker>
             <l part="F">Quel chevalier s'avance ? </l>
             <l n="1630" xml:id="l1630">Léon qui le conduit nous en éclaircira. </l>
           </sp>
-          <sp xml:id="V01-12" who="AYMON">
+          <sp who="AYMON" xml:id="V01-12">
             <speaker>AYMON.</speaker>
             <note>Repartir : répliquer, répondre promptement. [L]</note>
             <l n="1631" xml:id="l1631">Bien Marfise, voici qui vous repartira. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Léon, Charles, Aymon, Marfise, Roger, Renaud. <listPerson type="configuration" xml:id="conf27"><person corresp="#LEON"/><person corresp="#CHARLES"/><person corresp="#AYMON"/><person corresp="#MARPHISE"/><person corresp="#ROGER"/><person corresp="#RENAUD"/></listPerson></head>
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Léon, Charles, Aymon, Marfise, Roger, Renaud. <listPerson type="configuration" xml:id="conf27">
+            <person corresp="#LEON"/>
+            <person corresp="#CHARLES"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#MARPHISE"/>
+            <person corresp="#ROGER"/>
+            <person corresp="#RENAUD"/></listPerson></head>
           <stage type="[N/A]">Roger doit avoir les armes de Léon, sous lesquelles il avait combattu.</stage>
-          <sp xml:id="V02-1" who="LEON">
+          <sp who="LEON" xml:id="V02-1">
             <speaker>LÉON.</speaker>
             <l n="1632" xml:id="l1632">Ce n'est pas sans sujet que votre renommée, </l>
             <l n="1633" xml:id="l1633">Est jusqu'au bout du monde heureusement fermée. </l>
@@ -2506,7 +2576,7 @@
             <l n="1653" xml:id="l1653">Et lui pour demander le fruit de sa victoire, </l>
             <l n="1654" xml:id="l1654">Que votre Majesté ne lui peut refuser. </l>
           </sp>
-          <sp xml:id="V02-2" who="CHARLES">
+          <sp who="CHARLES" xml:id="V02-2">
             <speaker>CHARLES.</speaker>
             <l n="1655" xml:id="l1655">Léon, tout ce discours est pour nous abuser. </l>
             <l n="1656" xml:id="l1656">Je n'ai jamais douté que ce ne soit vous-même. </l>
@@ -2514,22 +2584,22 @@
             <l n="1658" xml:id="l1658">J'ai moi-même admiré vos redoutables coups, </l>
             <l n="1659" xml:id="l1659">Et vous nous assurez que ce ne fut pas vous. </l>
           </sp>
-          <sp xml:id="V02-3" who="LEON">
+          <sp who="LEON" xml:id="V02-3">
             <speaker>LÉON.</speaker>
             <l n="1660" xml:id="l1660">Non, Sire, ou qu'à présent devant vous je périsse, </l>
             <l n="1661" xml:id="l1661">Ce fut ce chevalier, faites-lui donc justice. </l>
           </sp>
-          <sp xml:id="V02-4" who="AYMON">
+          <sp who="AYMON" xml:id="V02-4">
             <speaker>AYMON.</speaker>
             <l n="1662" xml:id="l1662">Jamais étonnement ne fut semblable au mien, </l>
             <l n="1663" xml:id="l1663">Que vous sert-il de feindre ? Aussi n'en croit-on rien. </l>
           </sp>
-          <sp xml:id="V02-5" who="LEON">
+          <sp who="LEON" xml:id="V02-5">
             <speaker>LÉON.</speaker>
             <l n="1664" xml:id="l1664">Il le faut croire ainsi, puisque je le dépose, </l>
             <l n="1665" xml:id="l1665">Et que ce cavalier soutiendra bien sa cause. </l>
           </sp>
-          <sp xml:id="V02-6" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="V02-6">
             <speaker>MARPHISE.</speaker>
             <l n="1666" xml:id="l1666">Quand il serait le Dieu qui préside aux combats, </l>
             <l n="1667" xml:id="l1667">Il prétend vainement ce qu'il n'obtiendra pas. </l>
@@ -2541,43 +2611,43 @@
             <l n="1672" xml:id="l1672">Et s'il a ce dessein j'obtiendrai la licence, </l>
             <l n="1673" xml:id="l1673">Qu'il vienne dans le camp faire voir sa vaillance. </l>
           </sp>
-          <sp xml:id="V02-7" who="LEON">
+          <sp who="LEON" xml:id="V02-7">
             <speaker>LÉON.</speaker>
             <l n="1674" xml:id="l1674">On n'épouvante point cet esprit de léger, </l>
             <l n="1675" xml:id="l1675">Non, Madame, il n'est pas moins vaillant que Roger. </l>
           </sp>
-          <sp xml:id="V02-8" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="V02-8">
             <speaker>MARPHISE.</speaker>
             <l n="1676" xml:id="l1676">Qu'il le témoigne donc sans tarder davantage. </l>
           </sp>
-          <sp xml:id="V02-9" who="LEON">
+          <sp who="LEON" xml:id="V02-9">
             <speaker>LÉON.</speaker>
             <l n="1677" xml:id="l1677">Mais avant le combat regardez son visage, </l>
             <l n="1678" xml:id="l1678">Madame, le voilà prêt à vous contenter. </l>
             <stage type="[N/A]">Il lui lève sa visière.</stage>
           </sp>
-          <sp xml:id="V02-10" who="MARPHISE">
+          <sp who="MARPHISE" xml:id="V02-10">
             <speaker>MARPHISE.</speaker>
             <l n="1679" xml:id="l1679">M'abusez-vous, mes yeux, il n'en faut plus douter. </l>
-            <l n="1680" xml:id="l1680" part="I">Ah, mon frère, c'est vous. </l>
+            <l n="1680" part="I" xml:id="l1680">Ah, mon frère, c'est vous. </l>
           </sp>
-          <sp xml:id="V02-11" who="ROGER">
+          <sp who="ROGER" xml:id="V02-11">
             <speaker>ROGER.</speaker>
             <l part="F">Oui, c'est moi qui vous blâme </l>
             <l n="1681" xml:id="l1681">D'avoir trop bien servi mon repos et ma flamme, </l>
             <l n="1682" xml:id="l1682">Et de trop d'amitié pour un frère perdu. </l>
           </sp>
-          <sp xml:id="V02-12" who="RENAUD">
+          <sp who="RENAUD" xml:id="V02-12">
             <speaker>RENAUD.</speaker>
             <l n="1683" xml:id="l1683">Donc après tant de voeux le Ciel nous l'a rendu. </l>
-            <l n="1684" xml:id="l1684" part="I">Ô mon frère, ô Roger. </l>
+            <l n="1684" part="I" xml:id="l1684">Ô mon frère, ô Roger. </l>
           </sp>
-          <sp xml:id="V02-13" who="ROGER">
+          <sp who="ROGER" xml:id="V02-13">
             <speaker>ROGER.</speaker>
             <l part="F">Souffrez que je vous quitte. </l>
             <l n="1685" xml:id="l1685">Et qu'envers l'Empereur d'un devoir je m'acquitte. </l>
           </sp>
-          <sp xml:id="V02-14" who="CHARLES">
+          <sp who="CHARLES" xml:id="V02-14">
             <speaker>CHARLES.</speaker>
             <l n="1686" xml:id="l1686">Quoi, suis-je le dernier qui vous dois caresser ? </l>
             <l n="1687" xml:id="l1687">Non, mon fils, approchez, je vous veux embrasser. </l>
@@ -2585,11 +2655,11 @@
             <l n="1689" xml:id="l1689">Et que je suis ravi du bonheur qu'il m'envoie ? </l>
             <l n="1690" xml:id="l1690">Qu'on vous a désiré dans toute cette Cour. </l>
           </sp>
-          <sp xml:id="V02-15" who="AYMON">
+          <sp who="AYMON" xml:id="V02-15">
             <speaker>AYMON.</speaker>
             <l n="1691" xml:id="l1691">Les dieux en soient loués, vous voilà de retour. </l>
           </sp>
-          <sp xml:id="V02-16" who="ROGER">
+          <sp who="ROGER" xml:id="V02-16">
             <speaker>ROGER.</speaker>
             <l n="1692" xml:id="l1692">Si votre Majesté comble de tant de grâce, </l>
             <l n="1693" xml:id="l1693">Un pauvre chevalier que faudra-t-il qu'il fasse, </l>
@@ -2600,7 +2670,7 @@
             <l n="1698" xml:id="l1698">D'employer tous mes jours dans la fidélité, </l>
             <l n="1699" xml:id="l1699">Qui m'attache à jamais à votre Majesté. </l>
           </sp>
-          <sp xml:id="V02-17" who="CHARLES">
+          <sp who="CHARLES" xml:id="V02-17">
             <speaker>CHARLES.</speaker>
             <l n="1700" xml:id="l1700">Ces bonnes volontés me rendent redevable, </l>
             <l n="1701" xml:id="l1701">Aussi vivez certain d'une amitié semblable, </l>
@@ -2609,7 +2679,7 @@
             <l n="1704" xml:id="l1704">Que devant ce harnois, et contre notre attente, </l>
             <l n="1705" xml:id="l1705">Vous ayez en effet combattu Bradamante ? </l>
           </sp>
-          <sp xml:id="V02-18" who="LEON">
+          <sp who="LEON" xml:id="V02-18">
             <speaker>LÉON.</speaker>
             <l n="1706" xml:id="l1706">Que votre Majesté m'écoute s'il lui plaît, </l>
             <l n="1707" xml:id="l1707">Elle apprendra de moi l'affaire comme elle est, </l>
@@ -2620,7 +2690,7 @@
             <l n="1712" xml:id="l1712">Sur les inimitiés d'une vieille querelle, </l>
             <l n="1713" xml:id="l1713">Se faisaient dès longtemps une guerre mortelle. </l>
             <l n="1714" xml:id="l1714">Conducteur de l'armée, après plusieurs combats, </l>
-            <l n="1715" xml:id="l1715">J'avais presque réduis nos ennemis à bas. 	</l>
+            <l n="1715" xml:id="l1715">J'avais presque réduis nos ennemis à bas. </l>
             <l n="1716" xml:id="l1716">J'entrai dans leur pays quand le Roi se dispose </l>
             <l n="1717" xml:id="l1717">De finir les malheurs que la guerre lui cause, </l>
             <l n="1718" xml:id="l1718">Nous présente bataille, et le jour ordonné, </l>
@@ -2707,7 +2777,7 @@
             <l n="1798" xml:id="l1798">Comme il m'a découvert son nom et ses amours, </l>
             <l n="1799" xml:id="l1799">Que nous vous apprendrons par un plus long discours. </l>
           </sp>
-          <sp xml:id="V02-19" who="CHARLES">
+          <sp who="CHARLES" xml:id="V02-19">
             <speaker>CHARLES.</speaker>
             <l n="1800" xml:id="l1800">Certes, jamais récit ne vint à mes oreilles, </l>
             <l n="1801" xml:id="l1801">Qui toucha mon esprit de si grandes merveilles. </l>
@@ -2717,18 +2787,18 @@
             <l n="1805" xml:id="l1805">D'être participant d'une amitié si rare, </l>
             <l n="1806" xml:id="l1806">Si vous souffrez un tiers dans votre affection. </l>
           </sp>
-          <sp xml:id="V02-20" who="ROGER">
+          <sp who="ROGER" xml:id="V02-20">
             <speaker>ROGER.</speaker>
             <l n="1807" xml:id="l1807">Si vous nous élevez à tant d'ambition, </l>
             <l n="1808" xml:id="l1808">Vous enorgueillirez deux âmes insolentes, </l>
             <l n="1809" xml:id="l1809">Et que trop de faveur rendra méconnaissantes. </l>
           </sp>
-          <sp xml:id="V02-21" who="RENAUD">
+          <sp who="RENAUD" xml:id="V02-21">
             <speaker>RENAUD.</speaker>
             <l n="1810" xml:id="l1810">Je perdrais à regret l'espoir que j'ai conçu, </l>
             <l n="1811" xml:id="l1811">Si dans cette union je n'étais pas reçu. </l>
           </sp>
-          <sp xml:id="V02-22" who="ROGER">
+          <sp who="ROGER" xml:id="V02-22">
             <speaker>ROGER.</speaker>
             <l n="1812" xml:id="l1812">Je me console aussi d'une telle espérance, </l>
             <l n="1813" xml:id="l1813">Je sais ce que je dois à l'honneur de la France, </l>
@@ -2737,7 +2807,7 @@
             <l n="1816" xml:id="l1816">Que je reconnaîtrai par cette même vie, </l>
             <l n="1817" xml:id="l1817">Qu'il a par son support à jamais affermie. </l>
           </sp>
-          <sp xml:id="V02-23" who="RENAUD">
+          <sp who="RENAUD" xml:id="V02-23">
             <speaker>RENAUD.</speaker>
             <l n="1818" xml:id="l1818">Ces compliments sans fin témoignent des froideurs, </l>
             <l n="1819" xml:id="l1819">Mais d'où viennent ces gens ? Ils sont Ambassadeurs. </l>
@@ -2745,9 +2815,15 @@
             <l n="1821" xml:id="l1821">Le discours qu'ils feront, nous tirera de doute. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Ambassadeurs de Bulgarie, Charles, Roger, Renaud, Aymon, Léon.<listPerson type="configuration" xml:id="conf28"><person corresp="#AMBASSADEURS"/><person corresp="#CHARLES"/><person corresp="#ROGER"/><person corresp="#RENAUD"/><person corresp="#AYMON"/><person corresp="#LEON"/></listPerson></head>
-          <sp xml:id="V03-1" who="AMBASSADEURS">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Ambassadeurs de Bulgarie, Charles, Roger, Renaud, Aymon, Léon.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#AMBASSADEURS"/>
+            <person corresp="#CHARLES"/>
+            <person corresp="#ROGER"/>
+            <person corresp="#RENAUD"/>
+            <person corresp="#AYMON"/>
+            <person corresp="#LEON"/></listPerson></head>
+          <sp who="AMBASSADEURS" xml:id="V03-1">
             <speaker>AMBASSADEURS.</speaker>
             <l n="1822" xml:id="l1822">Sire, nous espérons de votre Majesté, </l>
             <l n="1823" xml:id="l1823">D'obtenir le pardon de notre liberté. </l>
@@ -2759,26 +2835,26 @@
             <l n="1829" xml:id="l1829">Qu'après tant de travaux nous le verrons en France, </l>
             <l n="1830" xml:id="l1830">Et que notre malheur viendrait à se changer. </l>
           </sp>
-          <sp xml:id="V03-2" who="CHARLES">
+          <sp who="CHARLES" xml:id="V03-2">
             <speaker>CHARLES.</speaker>
-            <l n="1831" xml:id="l1831" part="I">Nous direz-vous son nom ? </l>
+            <l n="1831" part="I" xml:id="l1831">Nous direz-vous son nom ? </l>
           </sp>
-          <sp xml:id="V03-3" who="AMBASSADEURS">
+          <sp who="AMBASSADEURS" xml:id="V03-3">
             <speaker>AMBASSADEURS.</speaker>
             <l part="F">Oui, Sire, c'est Roger. </l>
           </sp>
-          <sp xml:id="V03-4" who="CHARLES">
+          <sp who="CHARLES" xml:id="V03-4">
             <speaker>CHARLES.</speaker>
             <l n="1832" xml:id="l1832">Si pour lui seulement vous l'aviez entreprise, </l>
             <l n="1833" xml:id="l1833">Votre quête finit, voilà Roger de Ryse. </l>
           </sp>
-          <sp xml:id="V03-5" who="ROGER">
+          <sp who="ROGER" xml:id="V03-5">
             <speaker>ROGER.</speaker>
             <l n="1834" xml:id="l1834">Oui, si vous attendez du service de moi, </l>
             <l n="1835" xml:id="l1835">Exposez vos desseins, parlez devant le Roi, </l>
             <l n="1836" xml:id="l1836">Me voici désormais disposé de vous plaire. </l>
           </sp>
-          <sp xml:id="V03-6" who="AMBASSADEURS">
+          <sp who="AMBASSADEURS" xml:id="V03-6">
             <speaker>AMBASSADEURS.</speaker>
             <l n="1837" xml:id="l1837">Ô Ciel ! Que nos travaux ont un ample salaire, </l>
             <l n="1838" xml:id="l1838">Que tous nos déplaisirs et nos malheurs passés, </l>
@@ -2812,7 +2888,7 @@
             <l n="1866" xml:id="l1866">Et connaissant son zèle et sa dévotion, </l>
             <l n="1867" xml:id="l1867">Ne lui refusez pas votre protection. </l>
           </sp>
-          <sp xml:id="V03-7" who="ROGER">
+          <sp who="ROGER" xml:id="V03-7">
             <speaker>ROGER.</speaker>
             <l n="1868" xml:id="l1868">Ceux de qui vous tenez cette entière puissance, </l>
             <l n="1869" xml:id="l1869">Témoignent leur vertu par leur reconnaissance, </l>
@@ -2831,21 +2907,21 @@
             <l n="1882" xml:id="l1882">Je porte cette épée, et m'en sers quelquefois, </l>
             <l n="1883" xml:id="l1883">Mais soutenir un sceptre, c'est bien un autre poids </l>
           </sp>
-          <sp xml:id="V03-8" who="AMBASSADEURS">
+          <sp who="AMBASSADEURS" xml:id="V03-8">
             <speaker>AMBASSADEURS.</speaker>
             <l n="1884" xml:id="l1884">Quoi, vous rejetez donc un peuple qui n'espère, </l>
             <l n="1885" xml:id="l1885">Qu'en son Conservateur, en son Dieu tutélaire, </l>
             <l n="1886" xml:id="l1886">Et qui vous a voué tant de fidélité, </l>
             <l n="1887" xml:id="l1887">Pour périr de regret se voyant rebuté ? </l>
           </sp>
-          <sp xml:id="V03-9" who="CHARLES">
+          <sp who="CHARLES" xml:id="V03-9">
             <speaker>CHARLES.</speaker>
             <l n="1888" xml:id="l1888">Si le vouloir du Ciel au trône vous destine, </l>
             <l n="1889" xml:id="l1889">Ne méprisez jamais la volonté divine. </l>
             <l n="1890" xml:id="l1890">Outre qu'un tel présent n'est pas à mépriser, </l>
             <l n="1891" xml:id="l1891">Un Royaume vaut peu, s'il se peut refuser. </l>
           </sp>
-          <sp xml:id="V03-10" who="RENAUD">
+          <sp who="RENAUD" xml:id="V03-10">
             <speaker>RENAUD.</speaker>
             <note>Assez : Beaucoup, à suffisance. [F]</note>
             <note>v. 1892 : L'original porte "Assez l'achèterais au péril de leur vie", le sens serait il y a beaucoup de gens qui l'achèteraient au péril de leur vie.</note>
@@ -2855,33 +2931,33 @@
             <l n="1895" xml:id="l1895">Puisqu'un sceptre en dormant vous tombe entre les mains, </l>
             <l n="1896" xml:id="l1896">Aymon dorénavant se verra sans excuse. </l>
           </sp>
-          <sp xml:id="V03-11" who="AYMON">
+          <sp who="AYMON" xml:id="V03-11">
             <speaker>AYMON.</speaker>
             <l n="1897" xml:id="l1897">Si ce bonheur m'advient, et que je le refuse, </l>
             <l n="1898" xml:id="l1898">Dites que j'ai perdu le sens et la raison. </l>
           </sp>
-          <sp xml:id="V03-12" who="LEON">
+          <sp who="LEON" xml:id="V03-12">
             <speaker>LÉON.</speaker>
             <l n="1899" xml:id="l1899">Non Roger, ces refus ne sont pas de saison, </l>
             <l n="1900" xml:id="l1900">Acceptez leur présent sans tarder davantage. </l>
           </sp>
-          <sp xml:id="V03-13" who="CHARLES">
+          <sp who="CHARLES" xml:id="V03-13">
             <speaker>CHARLES.</speaker>
             <l n="1901" xml:id="l1901">Outre votre intérêt, leur offre vous engage, </l>
             <l n="1902" xml:id="l1902">Ne rejetez donc plus un bonheur apparent, </l>
             <l n="1903" xml:id="l1903">Il vaut mieux être Roi, que chevalier errant. </l>
           </sp>
-          <sp xml:id="V03-14" who="ROGER">
+          <sp who="ROGER" xml:id="V03-14">
             <speaker>ROGER.</speaker>
             <l n="1904" xml:id="l1904">Puisque vous le voulez, et que le Roi l'ordonne, </l>
             <l n="1905" xml:id="l1905">Indigne que j'en suis, j'accepte la Couronne. </l>
             <l n="1906" xml:id="l1906">En moi vous recevrez un frère au lieu d'un Roi. </l>
           </sp>
-          <sp xml:id="V03-15" who="AMBASSADEURS">
+          <sp who="AMBASSADEURS" xml:id="V03-15">
             <speaker>AMBASSADEURS.</speaker>
             <l n="1907" xml:id="l1907">Doncque tout le premier je vous donne ma foi. </l>
           </sp>
-          <sp xml:id="V03-16" who="CHARLES">
+          <sp who="CHARLES" xml:id="V03-16">
             <speaker>CHARLES.</speaker>
             <l n="1908" xml:id="l1908">Ayez dans cette Cour un peu de patience, </l>
             <l n="1909" xml:id="l1909">Demain plus à loisir vous aurez audience, </l>
@@ -2893,9 +2969,16 @@
             <l n="1915" xml:id="l1915">Ayant été trompé, il faut tromper aussi. </l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>DERNIÈRE SCÈNE. Marfise, Bradamante, Roger, Charles, Léon, Renaud, Aymon. <listPerson type="configuration" xml:id="conf29"><person corresp="#MARPHISE"/><person corresp="#BRADAMANTE"/><person corresp="#LEON"/><person corresp="#CHARLES"/><person corresp="#ROGER"/><person corresp="#RENAUD"/><person corresp="#AYMON"/></listPerson></head>
-          <sp xml:id="V04-1" who="MARPHISE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>DERNIÈRE SCÈNE. Marfise, Bradamante, Roger, Charles, Léon, Renaud, Aymon. <listPerson type="configuration" xml:id="conf29">
+            <person corresp="#MARPHISE"/>
+            <person corresp="#BRADAMANTE"/>
+            <person corresp="#LEON"/>
+            <person corresp="#CHARLES"/>
+            <person corresp="#ROGER"/>
+            <person corresp="#RENAUD"/>
+            <person corresp="#AYMON"/></listPerson></head>
+          <sp who="MARPHISE" xml:id="V04-1">
             <speaker>MARPHISE.</speaker>
             <l n="1916" xml:id="l1916">Vous venez à propos pour savoir des nouvelles, </l>
             <l n="1917" xml:id="l1917">À votre occasion j'ai toujours des querelles, </l>
@@ -2904,7 +2987,7 @@
             <l n="1920" xml:id="l1920">Il ose effrontément se donner cette gloire, </l>
             <l n="1921" xml:id="l1921">Qu'il a devant vous remporté la victoire. </l>
           </sp>
-          <sp xml:id="V04-2" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="V04-2">
             <speaker>BRADAMANTE.</speaker>
             <l n="1922" xml:id="l1922">Ces armes, il est vrai, témoignent mon malheur, </l>
             <l n="1923" xml:id="l1923">J'ai manqué de fortune, et non pas de valeur. </l>
@@ -2915,29 +2998,29 @@
             <l n="1928" xml:id="l1928">Je combattis un seul, s'il prétend quelque chose, </l>
             <l n="1929" xml:id="l1929">Je suis prête au combat, pour lui qu'il s'y dispose. </l>
           </sp>
-          <sp xml:id="V04-3" who="LEON">
+          <sp who="LEON" xml:id="V04-3">
             <speaker>LÉON.</speaker>
             <l n="1930" xml:id="l1930">Pour moi, malgré l'ardeur de mes affections, </l>
             <l n="1931" xml:id="l1931">Je me démets du tout de mes prétentions, </l>
             <l n="1932" xml:id="l1932">Lui seul vous a vaincu, et lui seul vous demande. </l>
           </sp>
-          <sp xml:id="V04-4" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="V04-4">
             <speaker>BRADAMANTE.</speaker>
             <l n="1933" xml:id="l1933">S'il y prétend des droits, il faut qu'il les défende, </l>
             <l n="1934" xml:id="l1934">Je l'appelle au combat dangereux et sanglant. </l>
           </sp>
-          <sp xml:id="V04-5" who="CHARLES">
+          <sp who="CHARLES" xml:id="V04-5">
             <speaker>CHARLES.</speaker>
             <l n="1935" xml:id="l1935">Certes, votre courroux est un peu violent. </l>
             <l n="1936" xml:id="l1936">Lui donneriez-vous point un moment de relâche, </l>
             <l n="1937" xml:id="l1937">Pour connaître son nom et ce front qu'il vous cache ? </l>
             <stage type="[N/A]">Il lui lève la visière.</stage>
           </sp>
-          <sp xml:id="V04-6" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="V04-6">
             <speaker>BRADAMANTE.</speaker>
-            <l n="1938" xml:id="l1938" part="I">Ô bons dieux ! C'est Roger. </l>
+            <l n="1938" part="I" xml:id="l1938">Ô bons dieux ! C'est Roger. </l>
           </sp>
-          <sp xml:id="V04-7" who="ROGER">
+          <sp who="ROGER" xml:id="V04-7">
             <speaker>ROGER.</speaker>
             <l part="F">Oui, Madame, c'est moi, </l>
             <stage type="[N/A]">Il se met à genoux.</stage>
@@ -2958,7 +3041,7 @@
             <l n="1953" xml:id="l1953">Pourvu qu'à mon rappel ma Déesse consente</l>
             <l n="1954" xml:id="l1954">Et que ma repentance efface mon forfait. </l>
           </sp>
-          <sp xml:id="V04-8" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="V04-8">
             <speaker>BRADAMANTE.</speaker>
             <l n="1955" xml:id="l1955">Je donne au repentir l'offense qu'on me fait. </l>
             <l n="1956" xml:id="l1956">Oui, malgré la douleur que vous m'avez causée, </l>
@@ -2966,17 +3049,17 @@
             <l n="1958" xml:id="l1958">Pourvu que sur l'espoir d'en être ainsi traité, </l>
             <l n="1959" xml:id="l1959">Vous n'abusiez jamais de ma facilité. </l>
           </sp>
-          <sp xml:id="V04-9" who="ROGER">
+          <sp who="ROGER" xml:id="V04-9">
             <speaker>ROGER.</speaker>
             <l n="1960" xml:id="l1960">Si je vous fâche encor, je n'attends plus de grâce. </l>
           </sp>
-          <sp xml:id="V04-10" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="V04-10">
             <speaker>BRADAMANTE.</speaker>
             <l n="1961" xml:id="l1961">Bien donc, que du passé le souvenir s'efface, </l>
             <l n="1962" xml:id="l1962">Et qu'il me soit permis avec toute la Cour, </l>
             <l n="1963" xml:id="l1963">De ressentir le bien de votre heureux retour. </l>
           </sp>
-          <sp xml:id="V04-11" who="CHARLES">
+          <sp who="CHARLES" xml:id="V04-11">
             <speaker>CHARLES.</speaker>
             <l n="1964" xml:id="l1964">Il faut sans retarder que leur peine finisse, </l>
             <l n="1965" xml:id="l1965">Il est temps désormais que ce coeur s'amollisse. </l>
@@ -2990,19 +3073,19 @@
             <l n="1973" xml:id="l1973">Fut-il à votre choix, pouviez-vous mieux prétendre ? </l>
             <l n="1974" xml:id="l1974">Outre tant de vertus qui le font admirer. </l>
           </sp>
-          <sp xml:id="V04-12" who="RENAUD">
+          <sp who="RENAUD" xml:id="V04-12">
             <speaker>RENAUD.</speaker>
             <l n="1975" xml:id="l1975">C'est le plus grand bonheur qui se puisse espérer, </l>
             <l n="1976" xml:id="l1976">Et si vous remarquez un si grand avantage, </l>
             <l n="1977" xml:id="l1977">Vous serez obligé de changer de courage, </l>
             <l n="1978" xml:id="l1978">Outre que Bradamante a de l'amour pour lui. </l>
           </sp>
-          <sp xml:id="V04-13" who="LEON">
+          <sp who="LEON" xml:id="V04-13">
             <speaker>LÉON.</speaker>
             <l n="1979" xml:id="l1979">Il faut que leur bonheur s'accomplisse aujourd'hui. </l>
             <l n="1980" xml:id="l1980">Approuvez sans regret ce que le Ciel ordonne. </l>
           </sp>
-          <sp xml:id="V04-14" who="AYMON">
+          <sp who="AYMON" xml:id="V04-14">
             <speaker>AYMON.</speaker>
             <l n="1981" xml:id="l1981">Je n'ai besoin ici du conseil de personne, </l>
             <l n="1982" xml:id="l1982">Vous prêchez vainement un homme résolu. </l>
@@ -3012,14 +3095,14 @@
             <l n="1986" xml:id="l1986">Sa nouvelle grandeur me le fasse estimer, </l>
             <l n="1987" xml:id="l1987">Mais c'est pour sa vertu qui m'oblige à l'aimer. </l>
           </sp>
-          <sp xml:id="V04-15" who="ROGER">
+          <sp who="ROGER" xml:id="V04-15">
             <speaker>ROGER.</speaker>
             <l n="1988" xml:id="l1988">Ô favorable arrêt ! Dont mon âme est ravie, </l>
             <l n="1989" xml:id="l1989">Mais je n'attends de vous que celui de ma vie, </l>
             <l n="1990" xml:id="l1990">Prononcez-le, Madame, et ne permettez pas, </l>
             <l n="1991" xml:id="l1991">Que deux mots seulement me donnent le trépas. </l>
           </sp>
-          <sp xml:id="V04-16" who="BRADAMANTE">
+          <sp who="BRADAMANTE" xml:id="V04-16">
             <speaker>BRADAMANTE.</speaker>
             <l n="1992" xml:id="l1992">Je crois que mon devoir m'oblige à reconnaître </l>
             <l n="1993" xml:id="l1993">Les bonnes volontés, que vous faites paraître. </l>
@@ -3027,7 +3110,7 @@
             <l n="1995" xml:id="l1995">Je ne m'oppose point à ce qu'ils ont voulu, </l>
             <l n="1996" xml:id="l1996">Leurs volontés me sont des lois inviolables. </l>
           </sp>
-          <sp xml:id="V04-17" who="CHARLES">
+          <sp who="CHARLES" xml:id="V04-17">
             <speaker>CHARLES.</speaker>
             <l n="1997" xml:id="l1997">Ô que cette franchise a des traits aimables ! </l>
             <l n="1998" xml:id="l1998">Que ce discours me plaît, allons donc de ce pas, </l>
@@ -3035,7 +3118,7 @@
             <l n="2000" xml:id="l2000">Que le Ciel vous unisse avec autant de joie, </l>
             <l n="2001" xml:id="l2001">Que je ressens ma part du bien qu'il vous envoie. </l>
           </sp>
-          <sp xml:id="V04-18" who="LEON">
+          <sp who="LEON" xml:id="V04-18">
             <speaker>LÉON.</speaker>
             <l n="2002" xml:id="l2002">Je vais parmi leurs biens me repaître d'espoir. </l>
             <l n="2003" xml:id="l2003">Mais je suis trop heureux ayant fait mon devoir. </l>
