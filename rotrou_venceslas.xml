@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Venceslas</title>
-        <author born="1609" born_location="Dreux" death="1650" death_location="Dreux" academie="" key="Rotrou, Jean (1609-1650)"><surname>Rotrou</surname><forename> Jean</forename></author>
+        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)">
+          <surname>Rotrou</surname>
+          <forename> Jean</forename>
+        </author>
         <date>1648</date>
       </titleStmt>
       <publicationStmt>
@@ -31,7 +35,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre">Tragi-comédie</term>
+          <term type="genre" subtype="tragedy">Tragi-comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -43,14 +47,13 @@
         <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1648">M DC CL VIIII</docDate>
-      <docAuthor id="ROTROU, Jean" bio="rotrou">PAR Mr DE ROTROU </docAuthor>
+      <docAuthor bio="rotrou" id="ROTROU, Jean">PAR Mr DE ROTROU </docAuthor>
       <docImprint>
         <privilege id="1648-03-28">
           <head>Extrait du privilège du roi,</head>
           <p>Par grâce et privilège du roi, donné à Paris le 28 mars 1648 signé par le Roi en son conseil Le Brun, il est permis à Antoine de Sommaville, marchand libraire à Paris, d'imprimer ou faire imprimer une pièce de théâtre intitulé Vanceslas Tragi-comédie de Rotrou, pendant le temps et espace de cinq ans entiers et accomplis à compter du jour que la date de la pièce sera imprimée, et défenses font faites à tous autres d'en vendre ni distribuer aucune, sinon de l'impression qu'aura fait ou fait faire le dit Sommaville, ou ceux qui auront droit de lui sous les peines portées par lesdites lettres, qui sont en vertu du présent extrait tenues pour bien et dûment signifiées.</p>
         </privilege>
-        <printer id="SOMMAVILLE">À PARIS, chez ANTOINE DE de SOMMAVILLE, au palais de la petite salle des Merciers, à l'écu de France.
-	</printer>
+        <printer id="SOMMAVILLE">À PARIS, chez ANTOINE DE de SOMMAVILLE, au palais de la petite salle des Merciers, à l'écu de France. </printer>
         <acheveImprime id="1648-05-12">Achevé d'imprimer le douzième mai 1648.</acheveImprime>
       </docImprint>
       <performance>
@@ -64,50 +67,54 @@
       </epitre>
       <castList>
         <head>ACTEURS </head>
-        <castItem><role xml:id="LEROI" rend="male" id="VENCESLAS" civil="M" type="H" statut="roi" age="A" stat_amour="néant">VENCESLAS</role>, roi de Pologne.</castItem>
-        <castItem><role xml:id="LEPRINCE" rend="male" id="LADISLAS" civil="M" type="H" statut="prince" age="A" stat_amour="néant">LADISLAS</role>, son fils, prince.</castItem>
-        <castItem><role xml:id="ALEXANDRE" rend="male" id="ALEXANDRE" civil="M" type="H" statut="prince" age="A" stat_amour="néant">ALEXANDRE</role>, infant.</castItem>
-        <castItem><role xml:id="LEDUC" rend="male" id="FEDERIC" civil="M" type="H" statut="duc" age="A" stat_amour="néant">FEDERIC</role>, duc de Curlande et favori.</castItem>
-        <castItem><role xml:id="OCTAVE" rend="male" id="OCTAVE" civil="M" type="H" statut="gouverneur" age="A" stat_amour="néant">OCTAVE</role>, gouverneur de Varsovie.</castItem>
-        <castItem><role xml:id="Gardes" rend="group" id="GARDES" civil="G" type="H" statut="garde" age="A" stat_amour="néant">Gardes</role>.</castItem>
-        <castItem><role xml:id="CASSANDRE" rend="male" id="CASSANDRE" civil="M" type="H" statut="duc" age="A" stat_amour="néant">CASSANDRE</role>, duchesse de Cunisberg.</castItem>
-        <castItem><role xml:id="THEODORE" rend="male" id="THÉODORE" civil="M" type="H" statut="duc" age="A" stat_amour="néant">THÉODORE</role>, infante.</castItem>
-        <castItem><role xml:id="LEONOR" rend="female" id="LÉONOR" civil="F" type="H" statut="suivante" age="A" stat_amour="néant">LÉONOR</role>, suivante.</castItem>
+        <castItem><role age="A" civil="M" id="VENCESLAS" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="LEROI">VENCESLAS</role>, roi de Pologne.</castItem>
+        <castItem><role age="A" civil="M" id="LADISLAS" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="LEPRINCE">LADISLAS</role>, son fils, prince.</castItem>
+        <castItem><role age="A" civil="M" id="ALEXANDRE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="ALEXANDRE">ALEXANDRE</role>, infant.</castItem>
+        <castItem><role age="A" civil="M" id="FEDERIC" rend="male" stat_amour="néant" statut="duc" type="H" xml:id="LEDUC">FEDERIC</role>, duc de Curlande et favori.</castItem>
+        <castItem><role age="A" civil="M" id="OCTAVE" rend="male" stat_amour="néant" statut="gouverneur" type="H" xml:id="OCTAVE">OCTAVE</role>, gouverneur de Varsovie.</castItem>
+        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="Gardes">Gardes</role>.</castItem>
+        <castItem><role age="A" civil="M" id="CASSANDRE" rend="male" stat_amour="néant" statut="duc" type="H" xml:id="CASSANDRE">CASSANDRE</role>, duchesse de Cunisberg.</castItem>
+        <castItem><role age="A" civil="M" id="THÉODORE" rend="male" stat_amour="néant" statut="duc" type="H" xml:id="THEODORE">THÉODORE</role>, infante.</castItem>
+        <castItem><role age="A" civil="F" id="LÉONOR" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="LEONOR">LÉONOR</role>, suivante.</castItem>
       </castList>
-      <set location="Pologne" country="Pologne" periode="XIVème" link=""/>
+      <set country="Pologne" link="" location="Pologne" periode="XIVème"/>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Venceslas, Ladislas, Alexandre, Gardes.<listPerson type="configuration" xml:id="conf1"><person corresp="#LEROI"/><person corresp="#ALEXANDRE"/><person corresp="#LEPRINCE"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="I01-1" who="LEROI">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Venceslas, Ladislas, Alexandre, Gardes.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LEROI"/>
+            <person corresp="#ALEXANDRE"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEROI" xml:id="I01-1">
             <speaker>VENCECLAS</speaker>
             <l n="1" xml:id="l1">Prenez un siège, Prince, et vous infant, sortez.</l>
           </sp>
-          <sp xml:id="I01-2" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="I01-2">
             <speaker>ALEXANDRE</speaker>
             <l n="2" xml:id="l2">J'aurai le tort, Seigneur, si vous ne m'écoutez.</l>
           </sp>
-          <sp xml:id="I01-3" who="LEROI">
+          <sp who="LEROI" xml:id="I01-3">
             <speaker>VENCESLAS</speaker>
             <l n="3" xml:id="l3">Sortez, vous dis-je. Et vous, Gardes, qu'on se retire.</l>
           </sp>
-          <sp xml:id="I01-4" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-4">
             <speaker>LADISLAS</speaker>
-            <l n="4" xml:id="l4" part="I">Que me désirez-vous ?</l>
+            <l n="4" part="I" xml:id="l4">Que me désirez-vous ?</l>
           </sp>
-          <sp xml:id="I01-5" who="LEROI">
+          <sp who="LEROI" xml:id="I01-5">
             <speaker>VENCESLAS</speaker>
             <l part="F">J'ai beaucoup à vous dire.</l>
             <l n="5" xml:id="l5">Ciel prépare son sein, et le touche aujourd'hui.</l>
           </sp>
-          <sp xml:id="I01-6" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-6">
             <speaker>LADISLAS, bas.</speaker>
             <l n="6" xml:id="l6">Que la vieillesse souffre, et fait souffrir autrui :</l>
             <l n="7" xml:id="l7">Oyons les bon avis, qu'un flatteur lui conseille.</l>
           </sp>
-          <sp xml:id="I01-7" who="LEROI">
+          <sp who="LEROI" xml:id="I01-7">
             <speaker>VENCESLAS</speaker>
             <l n="8" xml:id="l8">Prêtez-moi, Ladislas, le cour, avec l'oreille,</l>
             <l n="9" xml:id="l9">J'attends toujours du temps, qu'il mûrisse le fruit</l>
@@ -185,11 +192,11 @@
             <l n="80" xml:id="l80">Et c'est de vos leçons, qu'il faut que je l'apprenne ;</l>
             <l n="81" xml:id="l81">J'aurais mal profité, de l'usage, et du temps !</l>
           </sp>
-          <sp xml:id="I01-8" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-8">
             <speaker>LE PRINCE</speaker>
-            <l n="82" xml:id="l82" part="I">Souffrez...</l>
+            <l n="82" part="I" xml:id="l82">Souffrez...</l>
           </sp>
-          <sp xml:id="I01-9" who="LEROI">
+          <sp who="LEROI" xml:id="I01-9">
             <speaker>LE ROI</speaker>
             <l part="F">Encore un mot, et puis, je vous entends ;</l>
             <l n="83" xml:id="l83">S'il faut qu'à cent rapports ma créance réponde,</l>
@@ -241,7 +248,7 @@
             <l n="129" xml:id="l129">Et vous abandonnant à la rigueur des lois,</l>
             <l n="130" xml:id="l130">Au mépris de mon sang, je maintiendrai mes droits.</l>
           </sp>
-          <sp xml:id="I01-10" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-10">
             <speaker>LADISLAS</speaker>
             <l n="131" xml:id="l131">Encore que de ma part, tout vous choque et vous blesse,</l>
             <l n="132" xml:id="l132">En quelque étonnement, que ce discours me laisse,</l>
@@ -251,13 +258,13 @@
             <l n="136" xml:id="l136">J'ai de quoi me défendre, et de quoi vous répondre,</l>
             <l n="137" xml:id="l137">Si j'obtiens à mon tour, et l'oreille et le cour.</l>
           </sp>
-          <sp xml:id="I01-11" who="LEROI">
+          <sp who="LEROI" xml:id="I01-11">
             <speaker>LE ROI</speaker>
             <l n="138" xml:id="l138">Parlez, je gagnerai, vaincu plus que vainqueur ;</l>
             <l n="139" xml:id="l139">Je garde pour vous, les sentiments d'un père,</l>
             <l n="140" xml:id="l140">Convainquez-moi d'erreur, elle me sera chère.</l>
           </sp>
-          <sp xml:id="I01-12" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-12">
             <speaker>LADISLAS</speaker>
             <l n="141" xml:id="l141">Au retour de la chasse, assisté des miens,</l>
             <l n="142" xml:id="l142">Le carnage du cerf, se préparant aux chiens,</l>
@@ -314,15 +321,15 @@
             <l n="193" xml:id="l193">Voilà la vérité, touchant le premier point,</l>
             <l n="194" xml:id="l194">J'apprends, qu'on vous l'a dite, et ne m'en défends point,</l>
           </sp>
-          <sp xml:id="I01-13" who="LEROI">
+          <sp who="LEROI" xml:id="I01-13">
             <speaker>LE ROI</speaker>
-            <l n="195" xml:id="l195" part="I">Poursuivez.</l>
+            <l n="195" part="I" xml:id="l195">Poursuivez.</l>
           </sp>
-          <sp xml:id="I01-14" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-14">
             <speaker>LADISLAS</speaker>
             <l part="F">À l'égard de l'ardente colère,</l>
             <l n="196" xml:id="l196">Où vous meut, le parti du Duc, et de mon frère ;</l>
-            <l n="197" xml:id="l197">Dont l'un est votre cour,  si l'autre est votre bras,</l>
+            <l n="197" xml:id="l197">Dont l'un est votre cour, si l'autre est votre bras,</l>
             <l n="198" xml:id="l198">Dont l'un règne, en votre âme, et l'autre en vos états </l>
             <l n="199" xml:id="l199">J'ai haï l'un, il est vrai, cet insolent ministre,</l>
             <l n="200" xml:id="l200">Qui vous est précieux, autant, qu'il m'est sinistre ;</l>
@@ -353,11 +360,11 @@
             <l n="225" xml:id="l225">Quelques bruits, m'ont appris, jusqu'où vont vos desseins ;</l>
             <l n="226" xml:id="l226">Et c'est un des sujets, Seigneur, dont je me plains.</l>
           </sp>
-          <sp xml:id="I01-15" who="LEROI">
+          <sp who="LEROI" xml:id="I01-15">
             <speaker>LE ROI</speaker>
-            <l n="227" xml:id="l227" part="I">Achevez.</l>
+            <l n="227" part="I" xml:id="l227">Achevez.</l>
           </sp>
-          <sp xml:id="I01-16" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-16">
             <speaker>LE PRINCE</speaker>
             <l part="F">Pour mon frère, après son insolence, </l>
             <l n="228" xml:id="l228">Je ne puis m'emporter, à trop de violence ;</l>
@@ -380,7 +387,7 @@
             <l n="245" xml:id="l245">Et de vos châtiments, menacé tant de fois,</l>
             <l n="246" xml:id="l246">Me rendre un digne objet de la rigueur des lois.</l>
           </sp>
-          <sp xml:id="I01-17" who="LEROI">
+          <sp who="LEROI" xml:id="I01-17">
             <speaker>LE ROI, bas.</speaker>
             <l n="247" xml:id="l247">Que puis-je plus tenter, sur cette âme hautaine ?</l>
             <l n="248" xml:id="l248">Essayons l'artifice, ou la rigueur est vaine ;</l>
@@ -402,7 +409,7 @@
             <l n="261" xml:id="l261">Et par vous, à couvert, des outrages du temps,</l>
             <l n="262" xml:id="l262">Commencer à mon âge, un règne de cent ans.</l>
           </sp>
-          <sp xml:id="I01-18" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I01-18">
             <speaker>LE PRINCE</speaker>
             <l n="263" xml:id="l263">De votre seul repos dépend toute ma joie ;</l>
             <l n="264" xml:id="l264">Et si votre faveur, jusques-là je déploie ;</l>
@@ -410,36 +417,39 @@
             <l n="266" xml:id="l266">Qui parmi vos sujets, fera conter, un roi.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Alexandre, Le Roi, Le Prince.<listPerson type="configuration" xml:id="conf2"><person corresp="#ALEXANDRE"/><person corresp="#LEROI"/><person corresp="#LEPRINCE"/></listPerson></head>
-          <sp xml:id="I02-1" who="ALEXANDRE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Alexandre, Le Roi, Le Prince.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#ALEXANDRE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#LEPRINCE"/></listPerson></head>
+          <sp who="ALEXANDRE" xml:id="I02-1">
             <speaker>ALEXANDRE.</speaker>
-            <l n="267" xml:id="l267" part="I">Seigneur...</l>
+            <l n="267" part="I" xml:id="l267">Seigneur...</l>
           </sp>
-          <sp xml:id="I02-2" who="LEROI">
+          <sp who="LEROI" xml:id="I02-2">
             <speaker>LE ROI</speaker>
             <l part="M">Que voulez-vous ? Sortez.</l>
           </sp>
-          <sp xml:id="I02-3" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="I02-3">
             <speaker>ALEXANDRE</speaker>
             <l part="F">Je me retire,</l>
-            <l n="268" xml:id="l268" part="I">Mais si vous...</l>
+            <l n="268" part="I" xml:id="l268">Mais si vous...</l>
           </sp>
-          <sp xml:id="I02-4" who="LEROI">
+          <sp who="LEROI" xml:id="I02-4">
             <speaker>LE ROI</speaker>
             <l part="F">Qu'est-ce encore ? Que me vouliez-vous dire ?</l>
             <l n="269" xml:id="l269">À quel étrange office, Amour, me réduits-tu !</l>
             <l n="270" xml:id="l270">De faire accueil au vice, et chasser la vertu !</l>
           </sp>
-          <sp xml:id="I02-5" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="I02-5">
             <speaker>ALEXANDRE</speaker>
             <l n="271" xml:id="l271">Que si vous ne daignez m'admettre en ma défense,</l>
             <l n="272" xml:id="l272">Vous donnerez le tort, à qui reçoit l'offense ;</l>
             <l n="273" xml:id="l273">Le Prince, est mon aîné je respecte son rang,</l>
             <l n="274" xml:id="l274">Mais, nous ne différons, ni de cour, ni de sang,</l>
-            <l n="275" xml:id="l275" part="I">Et pour un démentir, j'ai trop...</l>
+            <l n="275" part="I" xml:id="l275">Et pour un démentir, j'ai trop...</l>
           </sp>
-          <sp xml:id="I02-6" who="LEROI">
+          <sp who="LEROI" xml:id="I02-6">
             <speaker>LE ROI</speaker>
             <l part="F">Vous téméraire.</l>
             <l n="276" xml:id="l276">Vous la main, sur l'épée ! Et contre votre frère !</l>
@@ -449,15 +459,15 @@
             <l n="280" xml:id="l280">Méritez le pardon, que je veux qu'il vous fasse ;</l>
             <l n="281" xml:id="l281">Allez, demandez-lui ; Vous, tendez-lui les bras.</l>
           </sp>
-          <sp xml:id="I02-7" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="I02-7">
             <speaker>ALEXANDRE</speaker>
-            <l n="282" xml:id="l282" part="I">Considérez, Seigneur !</l>
+            <l n="282" part="I" xml:id="l282">Considérez, Seigneur !</l>
           </sp>
-          <sp xml:id="I02-8" who="LEROI">
+          <sp who="LEROI" xml:id="I02-8">
             <speaker>LE ROI</speaker>
             <l part="F">Ne me répliquez pas.</l>
           </sp>
-          <sp xml:id="I02-9" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="I02-9">
             <speaker>ALEXANDRE, bas.</speaker>
             <l n="283" xml:id="l283">Fléchirons-nous, mon cour, sous cette humeur hautaine !</l>
             <l n="284" xml:id="l284">Oui, du degré de l'âge, il faut porter la peine,</l>
@@ -468,45 +478,47 @@
             <l n="288" xml:id="l288">J'obéis à son ordre, et vous demande grâce ;</l>
             <l n="289" xml:id="l289">Mais par cet ordre, il faut me tendre aussi les bras.</l>
           </sp>
-          <sp xml:id="I02-10" who="LEROI">
+          <sp who="LEROI" xml:id="I02-10">
             <speaker>LE ROI</speaker>
             <l n="290" xml:id="l290">Dieux ! Le cruel, encore, ne le regarde pas !</l>
           </sp>
-          <sp xml:id="I02-11" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I02-11">
             <speaker>LE PRINCE</speaker>
             <l n="291" xml:id="l291">Sans eux, suffit-il pas, que le Roi, vous pardonne.</l>
           </sp>
-          <sp xml:id="I02-12" who="LEROI">
+          <sp who="LEROI" xml:id="I02-12">
             <speaker>LE ROI</speaker>
             <l n="292" xml:id="l292">Prince, encore une fois, donnez-les, je l'ordonne,</l>
             <l n="293" xml:id="l293">Laissez, à mon respect, vaincre votre courroux.</l>
           </sp>
-          <sp xml:id="I02-13" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I02-13">
             <speaker>LE PRINCE, embrassant son frère.</speaker>
             <l n="294" xml:id="l294">À quelle lâcheté, Seigneur, m'obligez-vous !</l>
             <l n="295" xml:id="l295">Allez, et n'imputez, cet excès d'indulgence,</l>
             <l n="296" xml:id="l296">Qu'au pouvoir absolu, qui retient ma vengeance ;</l>
           </sp>
-          <sp xml:id="I02-14" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="I02-14">
             <speaker>ALEXANDRE, bas.</speaker>
             <l n="297" xml:id="l297">Ô nature, ô respect, que vous m'êtes cruels !</l>
           </sp>
-          <sp xml:id="I02-15" who="LEROI">
+          <sp who="LEROI" xml:id="I02-15">
             <speaker>LE ROI</speaker>
             <l n="298" xml:id="l298">Changez ces différents, en des voux mutuels ;</l>
             <l n="299" xml:id="l299">Et quand je suis en paix, avec toute la terre,</l>
             <l n="300" xml:id="l300">Dans ma maison, mes fils ne mettez point le guerre</l>
-            <l n="301" xml:id="l301" part="I">Faites venir le Duc, Infant.</l>
+            <l n="301" part="I" xml:id="l301">Faites venir le Duc, Infant.</l>
             <stage>L'infant sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Le Roi, Le Prince.<listPerson type="configuration" xml:id="conf3"><person corresp="#LEROI"/><person corresp="#LEPRINCE"/></listPerson></head>
-          <sp xml:id="I03-1" who="LEROI">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Le Roi, Le Prince.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEPRINCE"/></listPerson></head>
+          <sp who="LEROI" xml:id="I03-1">
             <speaker>LE ROI</speaker>
             <l part="F">Prince, arrêtez.</l>
           </sp>
-          <sp xml:id="I03-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I03-2">
             <speaker>LE PRINCE</speaker>
             <l n="302" xml:id="l302">Vous voulez m'ordonner, encore de la lâcheté !</l>
             <l n="303" xml:id="l303">Et pour ce traître, encore, solliciter ma grâce !</l>
@@ -520,7 +532,7 @@
             <l n="311" xml:id="l311">Souffrez ma dureté, gardant votre tendresse,</l>
             <l n="312" xml:id="l312">Et ne m'ordonnez point, un acte de faiblesse.</l>
           </sp>
-          <sp xml:id="I03-3" who="LEROI">
+          <sp who="LEROI" xml:id="I03-3">
             <speaker>LE ROI</speaker>
             <l n="313" xml:id="l313">Mon fils, si prêt du trône, où vous allez monter,</l>
             <l n="314" xml:id="l314">Prêt d'y remplir ma place, et m'y représenter ;</l>
@@ -531,35 +543,40 @@
             <l n="319" xml:id="l319">Que vous fera priser, de toute la province ;</l>
             <l n="320" xml:id="l320">Et Monarque, oubliez, les différents du Prince.</l>
           </sp>
-          <sp xml:id="I03-4" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I03-4">
             <speaker>LE PRINCE</speaker>
             <l n="321" xml:id="l321">Je préfère ma haine, à cette qualité,</l>
             <l n="322" xml:id="l322">Dispensez-moi, Seigneur, de cette indignité.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Le duc de Curlande, La Roi, Alexandre, Le Prince, Octave.<listPerson type="configuration" xml:id="conf4"><person corresp="#LEROI"/><person corresp="#LEPRINCE"/><person corresp="#LEDUC"/><person corresp="#ALEXANDRE"/><person corresp="#OCTAVE"/></listPerson></head>
-          <sp xml:id="I04-1" who="LEROI">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Le duc de Curlande, La Roi, Alexandre, Le Prince, Octave.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#LEDUC"/>
+            <person corresp="#ALEXANDRE"/>
+            <person corresp="#OCTAVE"/></listPerson></head>
+          <sp who="LEROI" xml:id="I04-1">
             <speaker>LE ROI</speaker>
             <l n="323" xml:id="l323">Étouffez cette haine, ou je prends la querelle ;</l>
-            <l n="324" xml:id="l324" part="I">Duc, saluez le Prince.</l>
+            <l n="324" part="I" xml:id="l324">Duc, saluez le Prince.</l>
           </sp>
-          <sp xml:id="I04-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I04-2">
             <speaker>LE PRINCE, l'embrassant avec peine.</speaker>
             <l part="F">Ô contrainte cruelle.</l>
             <stage>Ils s'embrassent.</stage>
           </sp>
-          <sp xml:id="I04-3" who="LEROI">
+          <sp who="LEROI" xml:id="I04-3">
             <speaker>LE ROI</speaker>
             <l n="325" xml:id="l325">Et d'une étroite ardeur, unis à l'avenir,</l>
             <l n="326" xml:id="l326">De vos discords passés, perdez le souvenir.</l>
           </sp>
-          <sp xml:id="I04-4" who="LEDUC">
+          <sp who="LEDUC" xml:id="I04-4">
             <speaker>LE DUC</speaker>
             <l n="327" xml:id="l327">Pour lui prouver, à quoi, mon zèle me convie,</l>
             <l n="328" xml:id="l328">Je voudrais perdre encore, et le sang, et la vie.</l>
           </sp>
-          <sp xml:id="I04-5" who="LEROI">
+          <sp who="LEROI" xml:id="I04-5">
             <speaker>LE ROI</speaker>
             <l n="329" xml:id="l329">Assez, d'occasions, de sang, de combats,</l>
             <l n="330" xml:id="l330">Ont signalé pour nous, et ce cour, et ce bras ;</l>
@@ -578,11 +595,11 @@
             <l n="342" xml:id="l342">Demandez ; j'en ai mis le prix, à votre choix ;</l>
             <l n="343" xml:id="l343">Envers votre valeur, acquittez ma parole.</l>
           </sp>
-          <sp xml:id="I04-6" who="LEDUC">
+          <sp who="LEDUC" xml:id="I04-6">
             <speaker>LE DUC</speaker>
-            <l n="344" xml:id="l344" part="I">Je vous dois tout, grand Roi.</l>
+            <l n="344" part="I" xml:id="l344">Je vous dois tout, grand Roi.</l>
           </sp>
-          <sp xml:id="I04-7" who="LEROI">
+          <sp who="LEROI" xml:id="I04-7">
             <speaker>LE ROI</speaker>
             <l part="F">Ce respect est frivole ;</l>
             <l n="345" xml:id="l345">La parole des rois, est un gage important,</l>
@@ -590,16 +607,16 @@
             <l n="347" xml:id="l347">Il est d'un prix trop cher, pour en laisser la garde,</l>
             <l n="348" xml:id="l348">Par le dépôt, la perte, où l'oubli s'en hasarde.</l>
           </sp>
-          <sp xml:id="I04-8" who="LEDUC">
+          <sp who="LEDUC" xml:id="I04-8">
             <speaker>LE DUC</speaker>
             <l n="349" xml:id="l349">Puisque vote bonté, me force à recevoir,</l>
             <l n="350" xml:id="l350">Le loyer d'un tribut, et le prix d'un devoir.</l>
             <l n="351" xml:id="l351">Un servage, Seigneur, plus doux, que votre Empire,</l>
             <l n="352" xml:id="l352">Des flammes, et des fers, sont le prix, où j'aspire ;</l>
             <l n="353" xml:id="l353">Si d'un cour consommé, d'un amour violent,</l>
-            <l n="354" xml:id="l354" part="I">La bouche ose exprimer...</l>
+            <l n="354" part="I" xml:id="l354">La bouche ose exprimer...</l>
           </sp>
-          <sp xml:id="I04-9" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I04-9">
             <speaker>LE PRINCE</speaker>
             <l part="F">Arrêtez, insolent ;</l>
             <l n="355" xml:id="l355">Au vol de vos désirs, imposez des limites,</l>
@@ -608,43 +625,48 @@
             <l n="358" xml:id="l358">Dan votre infâme sang, j'éteindrai votre amour</l>
             <l n="359" xml:id="l359">Où mon respect s'oppose, apprenez, téméraire,</l>
             <l n="360" xml:id="l360">À servir sans espoir, et souffrir, et vous taire ;</l>
-            <l n="361" xml:id="l361" part="I">Ou...</l>
+            <l n="361" part="I" xml:id="l361">Ou...</l>
           </sp>
-          <sp xml:id="I04-10" who="LEDUC">
+          <sp who="LEDUC" xml:id="I04-10">
             <speaker>LE DUC sortant.</speaker>
             <l part="F">Je me tais, Seigneur, et puisque mon espoir,</l>
             <l n="362" xml:id="l362">Blesse votre respect, il offense mon devoir.</l>
             <stage>Il s'en va avec l'infant.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Le Roi, Le Prince, Octave.<listPerson type="configuration" xml:id="conf5"><person corresp="#LEROI"/><person corresp="#LEPRINCE"/><person corresp="#OCTAVE"/></listPerson></head>
-          <sp xml:id="I05-1" who="LEROI">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Le Roi, Le Prince, Octave.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#OCTAVE"/></listPerson></head>
+          <sp who="LEROI" xml:id="I05-1">
             <speaker>LE ROI</speaker>
             <l n="363" xml:id="l363">Prince, vous emportant, à ce caprice extrême,</l>
             <l n="364" xml:id="l364">Vous ménagez fort mal, l'espoir d'un diadème ;</l>
             <l n="365" xml:id="l365">Et votre tête, encore, qui le prétend porter.</l>
           </sp>
-          <sp xml:id="I05-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I05-2">
             <speaker>LE PRINCE</speaker>
             <l n="366" xml:id="l366">Vous êtes Roi, Seigneur, vous pouvez me l'ôtez ;</l>
             <l n="367" xml:id="l367">Mais, j'ai lieu de ma plaindre, et ma juste colère,</l>
             <l n="368" xml:id="l368">Ne peut prendre des lois, ni d'un roi, ni d'un père.</l>
           </sp>
-          <sp xml:id="I05-3" who="LEROI">
+          <sp who="LEROI" xml:id="I05-3">
             <speaker>LE ROI</speaker>
             <l n="369" xml:id="l369">Je dois bien en moins en prendre, et d'un fol, et d'un fils ;</l>
             <l n="370" xml:id="l370">Pensez, à votre tête, et prenez un avis.</l>
             <stage>Il s'en va en colère.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>SCÈNE VI. Le Prince, Octave.<listPerson type="configuration" xml:id="conf6"><person corresp="#OCTAVE"/><person corresp="#LEPRINCE"/></listPerson></head>
-          <sp xml:id="I06-1" who="OCTAVE">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>SCÈNE VI. Le Prince, Octave.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#OCTAVE"/>
+            <person corresp="#LEPRINCE"/></listPerson></head>
+          <sp who="OCTAVE" xml:id="I06-1">
             <speaker>OCTAVE</speaker>
             <l n="371" xml:id="l371">Ô Dieux ! Ne sauriez-vous, cacher mieux votre haine.</l>
           </sp>
-          <sp xml:id="I06-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I06-2">
             <speaker>LE PRINCE</speaker>
             <l n="372" xml:id="l372">Veux-tu, que la cachant, mon attente soit vaine !</l>
             <l n="373" xml:id="l373">Qu'il vole à mon espoir, ce trésor amoureux,</l>
@@ -660,7 +682,7 @@
             <l n="383" xml:id="l383">N'est-ce pas de tes soins, et de ta diligence,</l>
             <l n="384" xml:id="l384">Que je tiens le secret, de leur intelligence ?</l>
           </sp>
-          <sp xml:id="I06-3" who="OCTAVE">
+          <sp who="OCTAVE" xml:id="I06-3">
             <speaker>OCTAVE</speaker>
             <l n="385" xml:id="l385">Oui, Seigneur, mais l'hymen, qu'on lui va proposer,</l>
             <l n="386" xml:id="l386">Aux succès de vos voux, le pourra disposer ;</l>
@@ -670,7 +692,7 @@
             <l n="390" xml:id="l390">Et d'un roi méprise, craignez l'autorité ;</l>
             <l n="391" xml:id="l391">Reposez sur nos soins, l'ardeur, qui vous transporte.</l>
           </sp>
-          <sp xml:id="I06-4" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="I06-4">
             <speaker>LE PRINCE</speaker>
             <l n="392" xml:id="l392">C'est mon roi, c'est mon père, il est vrai, je m'emporte,</l>
             <l n="393" xml:id="l393">Mais je trouve, en deux yeux, deux rois plus absolus,</l>
@@ -678,11 +700,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Théodore, infante, Casssandre.<listPerson type="configuration" xml:id="conf8"><person corresp="#THEODORE"/><person corresp="#CASSANDRE"/></listPerson></head>
-          <sp xml:id="II01-1" who="THEODORE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE PREMIÈRE. Théodore, infante, Casssandre.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#THEODORE"/>
+            <person corresp="#CASSANDRE"/></listPerson></head>
+          <sp who="THEODORE" xml:id="II01-1">
             <speaker>THÉODORE</speaker>
             <l n="395" xml:id="l395">Enfin, si son respect, ni le mien, ne vous touche,</l>
             <l n="396" xml:id="l396">Cassandre, tout l'État, vous parle par ma bouche :</l>
@@ -693,7 +717,7 @@
             <l n="401" xml:id="l401">Et de plus, ne l'attend, qu'afin de vous l'offrir ;</l>
             <l n="402" xml:id="l402">Et votre cruauté, ne le saurait souffrir ?</l>
           </sp>
-          <sp xml:id="II01-2" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II01-2">
             <speaker>CASSANDRE</speaker>
             <l n="403" xml:id="l403">Non, je ne puis souffrir, en quelque rang qu'il monte,</l>
             <l n="404" xml:id="l404">L'ennemi de ma gloire, et l'amant de ma honte ;</l>
@@ -724,19 +748,19 @@
             <l n="429" xml:id="l429">Son infidélité suivrait de près sa foi ;</l>
             <l n="430" xml:id="l430">Seul, il se considère ; il s'aime, et non pas moi.</l>
           </sp>
-          <sp xml:id="II01-3" who="THEODORE">
+          <sp who="THEODORE" xml:id="II01-3">
             <speaker>THÉODORE</speaker>
             <l n="431" xml:id="l431">Ses voux, un peu bouillants, vous font beaucoup d'ombrage ;</l>
           </sp>
-          <sp xml:id="II01-4" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II01-4">
             <speaker>CASSANDRE</speaker>
             <l n="432" xml:id="l432">Il vaut mieux, faillir mieux, et craindre davantage.</l>
           </sp>
-          <sp xml:id="II01-5" who="THEODORE">
+          <sp who="THEODORE" xml:id="II01-5">
             <speaker>THÉODORE</speaker>
             <l n="433" xml:id="l433">La fortune vous rit, et ne rit pas toujours ;</l>
           </sp>
-          <sp xml:id="II01-6" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II01-6">
             <speaker>CASSANDRE</speaker>
             <l n="434" xml:id="l434">Je crains son inconstance, et ses courtes amours ;</l>
             <l n="435" xml:id="l435">Et puis, qu'est un palais, qu'une maison pompeuse,</l>
@@ -744,27 +768,27 @@
             <l n="437" xml:id="l437">Où l'âme dans ses fers, gémit à tout propos,</l>
             <l n="438" xml:id="l438">Et ne rencontre pas, le solide repos.</l>
           </sp>
-          <sp xml:id="II01-7" who="THEODORE">
+          <sp who="THEODORE" xml:id="II01-7">
             <speaker>THÉODORE</speaker>
             <l n="439" xml:id="l439">Je ne vous puis qu'offrir, après un diadème.</l>
           </sp>
-          <sp xml:id="II01-8" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II01-8">
             <speaker>CASSANDRE</speaker>
             <l n="440" xml:id="l440">Vous me donnerez plus, me laissant à moi-même.</l>
           </sp>
-          <sp xml:id="II01-9" who="THEODORE">
+          <sp who="THEODORE" xml:id="II01-9">
             <speaker>THÉODORE</speaker>
             <l n="441" xml:id="l441">Seriez-vous moins à vous, ayant moins de rigueur ?</l>
           </sp>
-          <sp xml:id="II01-10" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II01-10">
             <speaker>CASSANDRE</speaker>
             <l n="442" xml:id="l442">N'appelleriez-vous rien la perte, de mon cour ?</l>
           </sp>
-          <sp xml:id="II01-11" who="THEODORE">
+          <sp who="THEODORE" xml:id="II01-11">
             <speaker>THÉODORE</speaker>
             <l n="443" xml:id="l443">Vous feriez un échange, et non pas une perte ;</l>
           </sp>
-          <sp xml:id="II01-12" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II01-12">
             <speaker>CASSANDRE</speaker>
             <l n="444" xml:id="l444">Et j'aurais cette injure, impunément soufferte !</l>
             <l n="445" xml:id="l445">Et ce que vous nommez des voux un peu bouillants,</l>
@@ -774,11 +798,11 @@
             <l n="449" xml:id="l449">Et tant d'offres, enfin, dont il crut me toucher ;</l>
             <l n="450" xml:id="l450">Au sang de Cunisberg, se pourrait reprocher ?</l>
           </sp>
-          <sp xml:id="II01-13" who="THEODORE">
+          <sp who="THEODORE" xml:id="II01-13">
             <speaker>THÉODORE</speaker>
             <l n="451" xml:id="l451">Il ont, votre vertu, vainement combattue.</l>
           </sp>
-          <sp xml:id="II01-14" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II01-14">
             <speaker>CASSANDRE</speaker>
             <l n="452" xml:id="l452">On en pourrait douter, si je m'en étais tûe ;</l>
             <l n="453" xml:id="l453">Et si; sous cet hymen, me laissant asservir,</l>
@@ -789,9 +813,12 @@
             <l n="458" xml:id="l458">Si j'en crois mon honneur, je lui dois plus qu'à vous.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Le Prince, Théodore, Cassandre.<listPerson type="configuration" xml:id="conf9"><person corresp="#LEPRINCE"/><person corresp="#CASSANDRE"/><person corresp="#THEODORE"/></listPerson></head>
-          <sp xml:id="II02-1" who="LEPRINCE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Le Prince, Théodore, Cassandre.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#THEODORE"/></listPerson></head>
+          <sp who="LEPRINCE" xml:id="II02-1">
             <speaker>LE PRINCE entrant à grands pas.</speaker>
             <l n="459" xml:id="l459">Cède, cruel tyran, d'une amitié si forte,</l>
             <l n="460" xml:id="l460">Respect, qui me retient, à l'ardeur qui m'emporte, </l>
@@ -806,7 +833,7 @@
             <l n="469" xml:id="l469">L'hymen à vos beaux jours, joindra-t-il mon destin,</l>
             <l n="470" xml:id="l470">Ou si votre refus, sera mon assassin.</l>
           </sp>
-          <sp xml:id="II02-2" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-2">
             <speaker>CASSANDRE</speaker>
             <l n="471" xml:id="l471">Me parlez-vous d'hymen ? Et voudriez-vous pour femme,</l>
             <l n="472" xml:id="l472">L'indigne et vil objet, d'une impudique flamme ;</l>
@@ -817,7 +844,7 @@
             <l n="477" xml:id="l477">En un objet infâme, et si peu respecté,</l>
             <l n="478" xml:id="l478">Que vos sales désirs, ont tant sollicité !</l>
           </sp>
-          <sp xml:id="II02-3" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II02-3">
             <speaker>LE PRINCE</speaker>
             <l n="479" xml:id="l479">Il y respectera, la vertu la plus digne ;</l>
             <l n="480" xml:id="l480">Dont l'épreuve, ait jamais, fait une femme insigne ;</l>
@@ -854,7 +881,7 @@
             <l n="511" xml:id="l511">Cette offense est un mal, que je veux toujours faire,</l>
             <l n="512" xml:id="l512">Et je consens plutôt, à mourir qu'à vous plaire.</l>
           </sp>
-          <sp xml:id="II02-4" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-4">
             <speaker>CASSANDRE</speaker>
             <l n="513" xml:id="l513">Et mon mérite, Prince, et ma condition,</l>
             <l n="514" xml:id="l514">Sont d'indignes objets de votre passion ;</l>
@@ -877,7 +904,7 @@
             <l n="531" xml:id="l531">Cette offense est un mal, que je veux toujours faire,</l>
             <l n="532" xml:id="l532">Et je consens plutôt, à mourir, qu'à vous plaire.</l>
           </sp>
-          <sp xml:id="II02-5" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II02-5">
             <speaker>LE PRINCE </speaker>
             <l n="533" xml:id="l533">Et bien, contre un objet, qui vous fait tant d'horreur,</l>
             <l n="534" xml:id="l534">Inhumaine, exercez toute votre fureur,</l>
@@ -894,68 +921,68 @@
             <l n="545" xml:id="l545">Et pour vous conserver, ma flamme, et mon amour,</l>
             <l n="546" xml:id="l546">Malgré mon désespoir, conserverai le jour.</l>
           </sp>
-          <sp xml:id="II02-6" who="THEODORE">
+          <sp who="THEODORE" xml:id="II02-6">
             <speaker>THÉODORE</speaker>
             <l n="547" xml:id="l547">Quoi, nous n'obtiendrons rien de cette humeur altière !</l>
           </sp>
-          <sp xml:id="II02-7" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-7">
             <speaker>CASSANDRE</speaker>
             <l n="548" xml:id="l548">Il m'a du, m'attaquant, connaître toute entière ;</l>
             <l n="549" xml:id="l549">Et savoir que l'honneur, m'était sensible au point,</l>
             <l n="550" xml:id="l550">D'en conserver l'injure, et ne pardonner point.</l>
           </sp>
-          <sp xml:id="II02-8" who="THEODORE">
+          <sp who="THEODORE" xml:id="II02-8">
             <speaker>THÉODORE</speaker>
             <l n="551" xml:id="l551">Mais vous venger, ainsi, c'est vous punir vous-même ;</l>
             <l n="552" xml:id="l552">Vous perdez avec lui, l'espoir d'un diadème.</l>
           </sp>
-          <sp xml:id="II02-9" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-9">
             <speaker>CASSANDRE</speaker>
             <l n="553" xml:id="l553">Pour moi, le diadème, aurait de vains appas,</l>
             <l n="554" xml:id="l554">Sur un front que j'ai craint, et que je n'aime pas.</l>
           </sp>
-          <sp xml:id="II02-10" who="THEODORE">
+          <sp who="THEODORE" xml:id="II02-10">
             <speaker>THÉODORE</speaker>
             <l n="555" xml:id="l555">Régner, ne peut déplaire, aux âmes généreuses.</l>
           </sp>
-          <sp xml:id="II02-11" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-11">
             <speaker>CASSANDRE</speaker>
             <l n="556" xml:id="l556">Les trônes bien souvent, portent des malheureuses, ;</l>
             <l n="557" xml:id="l557">Qui sous le joug brillant de leur autorité,</l>
             <l n="558" xml:id="l558">Ont beaucoup de sujets, et peu de liberté.</l>
           </sp>
-          <sp xml:id="II02-12" who="THEODORE">
+          <sp who="THEODORE" xml:id="II02-12">
             <speaker>THÉODORE</speaker>
             <l n="559" xml:id="l559">Redoutez-vous un joug, qui vous fait souveraine ?</l>
           </sp>
-          <sp xml:id="II02-13" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-13">
             <speaker>CASSANDRE</speaker>
             <l n="560" xml:id="l560">Je ne veux point dépendre, et veux être reine ;</l>
             <l n="561" xml:id="l561">Où ma franchise, enfin, si jamais je la perds,</l>
             <l n="562" xml:id="l562">Veut choisir son vainqueur, et connaître ses fers.</l>
           </sp>
-          <sp xml:id="II02-14" who="THEODORE">
+          <sp who="THEODORE" xml:id="II02-14">
             <speaker>THÉODORE</speaker>
             <l n="563" xml:id="l563">Servir un sceptre en main, vaut bien votre franchise.</l>
           </sp>
-          <sp xml:id="II02-15" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-15">
             <speaker>CASSANDRE</speaker>
             <l n="564" xml:id="l564">Savez-vous, si déjà, je ne l'ai point soumise !</l>
           </sp>
-          <sp xml:id="II02-16" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II02-16">
             <speaker>LE PRINCE</speaker>
             <l n="565" xml:id="l565">Oui, le le sais, cruelle, et connais mon rival,</l>
             <l n="566" xml:id="l566">Si j'ai cru que son sort m'était trop inégal,</l>
             <l n="567" xml:id="l567">Pour me persuader, qu'on dût mette en balance,</l>
             <l n="568" xml:id="l568">Le choix de mon amour, ou de son insolence.</l>
           </sp>
-          <sp xml:id="II02-17" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-17">
             <speaker>CASSANDRE</speaker>
             <l n="569" xml:id="l569">Votre rang, n'entre pas dedans ses qualités,</l>
             <l n="570" xml:id="l570">Mais son sang, ne doit rien, au sang dont vous sortez,</l>
             <l n="571" xml:id="l571">Ni lui, n'a pas grand lieu de vous porter envie.</l>
           </sp>
-          <sp xml:id="II02-18" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II02-18">
             <speaker>LE PRINCE</speaker>
             <l n="572" xml:id="l572">Insolente, ce mot, lui coûtera la vie ;</l>
             <l n="573" xml:id="l573">Et ce fer en son sang, si noble, et si vanté,</l>
@@ -979,7 +1006,7 @@
             <l n="591" xml:id="l591">Que la honte, et l'horreur, de vous avoir aimée ;</l>
             <l n="592" xml:id="l592">Laisseront à jamais, sur ce front imprimée ;</l>
             <l n="593" xml:id="l593">Oui, j'en rougis, ingrate, et mon propre courroux,</l>
-            <l n="594" xml:id="l594">Ne me peut pardonner ce que j'ai fait  pour vous ;</l>
+            <l n="594" xml:id="l594">Ne me peut pardonner ce que j'ai fait pour vous ;</l>
             <l n="595" xml:id="l595">Je veux que la mémoire efface de ma vie,</l>
             <l n="596" xml:id="l596">Le souvenir du temps que je vous ai servie ;</l>
             <l n="597" xml:id="l597">J'étais mort, pour ma gloire, et je n'ai pas vécu,</l>
@@ -989,19 +1016,21 @@
             <l n="601" xml:id="l601">Et qu'avec raison, mes yeux et lui d'accord,</l>
             <l n="602" xml:id="l602">Détestent votre vue, à l'égard de la mort.</l>
           </sp>
-          <sp xml:id="II02-19" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="II02-19">
             <speaker>CASSANDRE</speaker>
             <l n="603" xml:id="l603">Pour vous en guérir, Prince, et ne leur plus déplaire,</l>
             <l n="604" xml:id="l604">Je m'impose, moi-même, un exil volontaire,</l>
             <l n="605" xml:id="l605">Et je mettrai grand soin, sachant ces vérités,</l>
             <l n="606" xml:id="l606">À ne vous plus montrer, ce que vous détestez.</l>
-            <l n="607" xml:id="l607" part="I">Adieu.</l>
+            <l n="607" part="I" xml:id="l607">Adieu.</l>
             <stage>Elle s'en va.</stage>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Le Prince, Théodore.<listPerson type="configuration" xml:id="conf10"><person corresp="#LEPRINCE"/><person corresp="#THEODORE"/></listPerson></head>
-          <sp xml:id="II03-1" who="LEPRINCE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Le Prince, Théodore.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#THEODORE"/></listPerson></head>
+          <sp who="LEPRINCE" xml:id="II03-1">
             <speaker>LE PRINCE, interdit la regardant sortir.</speaker>
             <l part="F">Que faites-vous, ô mes lâches pensées,</l>
             <l n="608" xml:id="l608">Suivez-vous cette ingrate, êtes-vous insensée ?</l>
@@ -1012,11 +1041,11 @@
             <l n="613" xml:id="l613">Si vous voulez d'un frère empêcher le trépas</l>
             <l n="614" xml:id="l614">Suivez cette insensible et retenez ses pas.</l>
           </sp>
-          <sp xml:id="II03-2" who="THEODORE">
+          <sp who="THEODORE" xml:id="II03-2">
             <speaker>THÉODORE</speaker>
             <l n="615" xml:id="l615">La retenir, mon frère, après l'avoir bannie.</l>
           </sp>
-          <sp xml:id="II03-3" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II03-3">
             <speaker>LE PRINCE</speaker>
             <l n="616" xml:id="l616">Ha contre ma raison servez sa tyrannie,</l>
             <l n="617" xml:id="l617">Je veux désavouer ce cour séditieux,</l>
@@ -1037,11 +1066,11 @@
             <l n="631" xml:id="l631">Rentre, Prince sans cour, un moment en toi-même,</l>
             <l n="632" xml:id="l632">Me laissez-vous, ma soeur, en ce désordre extrême ?</l>
           </sp>
-          <sp xml:id="II03-4" who="THEODORE">
+          <sp who="THEODORE" xml:id="II03-4">
             <speaker>THÉODORE</speaker>
-            <l n="633" xml:id="l633" part="I">J'allais la retenir.</l>
+            <l n="633" part="I" xml:id="l633">J'allais la retenir.</l>
           </sp>
-          <sp xml:id="II03-5" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II03-5">
             <speaker>LE PRINCE</speaker>
             <l part="F">Hé ! Ne voyez-vous pas</l>
             <l n="634" xml:id="l634">Quel arrogant mépris précipite ses pas ?</l>
@@ -1054,7 +1083,7 @@
             <l n="641" xml:id="l641">Peignez-moi sa conquête, indigne de mon rang,</l>
             <l n="642" xml:id="l642">Et soutenez en moi l'honneur de votre sang.</l>
           </sp>
-          <sp xml:id="II03-6" who="THEODORE">
+          <sp who="THEODORE" xml:id="II03-6">
             <speaker>THÉODORE</speaker>
             <l n="643" xml:id="l643">Je ne vous puis celer que le trait qui vous blesse</l>
             <l n="644" xml:id="l644">Dedans un sang royal trouve trop de faiblesse,</l>
@@ -1065,7 +1094,7 @@
             <l n="649" xml:id="l649">Se faisant violence, on s'est bientôt dompté,</l>
             <l n="650" xml:id="l650">Et rien n'est tant à nous que notre volonté.</l>
           </sp>
-          <sp xml:id="II03-7" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II03-7">
             <speaker>LE PRINCE</speaker>
             <l n="651" xml:id="l651">Hélas ! Il est aisé de juger de ma peine,</l>
             <l n="652" xml:id="l652">Par l'effort qui d'un temps m'emporte et me ramène ;</l>
@@ -1084,21 +1113,21 @@
             <l n="665" xml:id="l665">Sa victoire m'honore, et m'ôte seulement</l>
             <l n="666" xml:id="l666">Un caprice obstiné, d'aimer trop bassement.</l>
           </sp>
-          <sp xml:id="II03-8" who="THEODORE">
+          <sp who="THEODORE" xml:id="II03-8">
             <speaker>THÉODORE</speaker>
             <l n="667" xml:id="l667">Quoi, mon frère, le Duc aurait dessein pour elle ?</l>
           </sp>
-          <sp xml:id="II03-9" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II03-9">
             <speaker>LE PRINCE</speaker>
             <l n="668" xml:id="l668">Ce mystère, ma soeur, n'est plus une nouvelle,</l>
             <l n="669" xml:id="l669">Et mille observateurs que j'ai commis exprès</l>
             <l n="670" xml:id="l670">Ont si bien vu leurs feux qu'ils ne sont plus secrets.</l>
           </sp>
-          <sp xml:id="II03-10" who="THEODORE">
+          <sp who="THEODORE" xml:id="II03-10">
             <speaker>THÉODORE</speaker>
-            <l n="671" xml:id="l671" part="I">Ha ! </l>
+            <l n="671" part="I" xml:id="l671">Ha ! </l>
           </sp>
-          <sp xml:id="II03-11" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="II03-11">
             <speaker>LE PRINCE</speaker>
             <l part="F">C'est de cette amour que procède ma haine ;</l>
             <l n="672" xml:id="l672">Et non de sa faveur (quoique si souveraine)</l>
@@ -1115,9 +1144,10 @@
             <stage>Il s'en va.</stage>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf11"><person corresp="#THEODORE"/></listPerson></head>
-          <sp xml:id="II04-1" who="THEODORE">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#THEODORE"/></listPerson></head>
+          <sp who="THEODORE" xml:id="II04-1">
             <speaker>THÉODORE, seule</speaker>
             <l n="683" xml:id="l683">Ô raison égarée ! Ô raison suspendue,</l>
             <l n="684" xml:id="l684">Jamais trouble pareil t'avait il confondue ?</l>
@@ -1154,16 +1184,18 @@
             <l n="715" xml:id="l715">Si le Duc n'a le front chargé d'une couronne,</l>
             <l n="716" xml:id="l716">C'est lui qui les protège, et c'est lui qui les donne ;</l>
             <l n="717" xml:id="l717">Par quelles actions se peut-on signaler,</l>
-            <l n="718" xml:id="l718" part="I">Que ...</l>
+            <l n="718" part="I" xml:id="l718">Que ...</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Léonor, suivante, Théodore.<listPerson type="configuration" xml:id="conf12"><person corresp="#LEONOR"/><person corresp="#THEODORE"/></listPerson></head>
-          <sp xml:id="II05-1" who="LEONOR">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Léonor, suivante, Théodore.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#LEONOR"/>
+            <person corresp="#THEODORE"/></listPerson></head>
+          <sp who="LEONOR" xml:id="II05-1">
             <speaker>LÉONOR</speaker>
             <l part="F">Madame, le Duc demande à vous parler.</l>
           </sp>
-          <sp xml:id="II05-2" who="THEODORE">
+          <sp who="THEODORE" xml:id="II05-2">
             <speaker>THÉODORE</speaker>
             <l n="719" xml:id="l719">Qu'il entre. Mais après ce que je viens d'entendre,</l>
             <l n="720" xml:id="l720">Souffrir un libre accès à l'amant de Cassandre,</l>
@@ -1180,34 +1212,37 @@
             <l n="730" xml:id="l730">Je ne puis consentir ses desseins pour autrui.</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
-          <head>SCÈNE VI. Alexandre, Théodore, Léonor.<listPerson type="configuration" xml:id="conf13"><person corresp="#ALEXANDRE"/><person corresp="#THEODORE"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="II06-1" who="ALEXANDRE">
+        <div2 n="6" type="scene" xml:id="II06">
+          <head>SCÈNE VI. Alexandre, Théodore, Léonor.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#ALEXANDRE"/>
+            <person corresp="#THEODORE"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="ALEXANDRE" xml:id="II06-1">
             <speaker>ALEXANDRE</speaker>
             <l n="731" xml:id="l731">Comment ? Du Duc ma soeur refuser la visite ?</l>
             <l n="732" xml:id="l732">D'où vous vient ce chagrin et quel mal vous l'excite ?</l>
           </sp>
-          <sp xml:id="II06-2" who="THEODORE">
+          <sp who="THEODORE" xml:id="II06-2">
             <speaker>THÉODORE</speaker>
             <l n="733" xml:id="l733">Un léger mal de cour qui ne durera pas.</l>
           </sp>
-          <sp xml:id="II06-3" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="II06-3">
             <speaker>ALEXANDRE</speaker>
             <l n="734" xml:id="l734">Un avis de ma part portait ici ses pas.</l>
           </sp>
-          <sp xml:id="II06-4" who="THEODORE">
+          <sp who="THEODORE" xml:id="II06-4">
             <speaker>THÉODORE</speaker>
-            <l n="735" xml:id="l735" part="I">Quel ?</l>
+            <l n="735" part="I" xml:id="l735">Quel ?</l>
           </sp>
-          <sp xml:id="II06-5" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="II06-5">
             <speaker>ALEXANDRE</speaker>
             <l part="F">Croyant que Cassandre était de la partie.</l>
           </sp>
-          <sp xml:id="II06-6" who="THEODORE">
+          <sp who="THEODORE" xml:id="II06-6">
             <speaker>THÉODORE</speaker>
             <l n="736" xml:id="l736">À peine deux moments ont suivi sa sortie.</l>
           </sp>
-          <sp xml:id="II06-7" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="II06-7">
             <speaker>ALEXANDRE</speaker>
             <l n="737" xml:id="l737">Et sachant à quel point les charmes lui sont doux,</l>
             <l n="738" xml:id="l738">Je l'avais averti de se rendre chez vous</l>
@@ -1229,12 +1264,12 @@
             <l n="754" xml:id="l754">Dans le temple d'hymen ait encensé l'autel ;</l>
             <l n="755" xml:id="l755">Servez, contre une impure, une ardeur si parfaite.</l>
           </sp>
-          <sp xml:id="II06-8" who="THEODORE">
+          <sp who="THEODORE" xml:id="II06-8">
             <speaker>THÉODORE se retirant, appuyée sur Léonor.</speaker>
             <l n="756" xml:id="l756">Mon mal s'accroît, mon frère, agréez ma retraite.</l>
           </sp>
           <stage>Elle s'en vont.</stage>
-          <sp xml:id="II06-9" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="II06-9">
             <speaker>ALEXANDRE, seul.</speaker>
             <l n="757" xml:id="l757">Ô sensible contrainte ! Ô rigoureux ennui !</l>
             <l n="758" xml:id="l758">D'être obligé d'aimer dessous le nom d'autrui.</l>
@@ -1249,11 +1284,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I. Le Duc de Cueilland, favori.<listPerson type="configuration" xml:id="conf15"><person corresp="#LEDUC"/></listPerson></head>
-          <sp xml:id="III01-1" who="LEDUC">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I. Le Duc de Cueilland, favori.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#LEDUC"/></listPerson></head>
+          <sp who="LEDUC" xml:id="III01-1">
             <speaker>LE DUC</speaker>
             <l n="767" xml:id="l767">Que m'avez-vous produit indiscrètes pensées,</l>
             <l n="768" xml:id="l768">Téméraires désirs, passions insensées ?</l>
@@ -1281,9 +1317,11 @@
             <l n="790" xml:id="l790">Que peuvent exercer de superbes vainqueurs.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Alexandre, Le Duc, Alexandre.<listPerson type="configuration" xml:id="conf16"><person corresp="#ALEXANDRE"/><person corresp="#LEDUC"/></listPerson></head>
-          <sp xml:id="III02-1" who="ALEXANDRE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Alexandre, Le Duc, Alexandre.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#ALEXANDRE"/>
+            <person corresp="#LEDUC"/></listPerson></head>
+          <sp who="ALEXANDRE" xml:id="III02-1">
             <speaker>ALEXANDRE</speaker>
             <l n="791" xml:id="l791">Duc, un trop long respect me tait votre pensée,</l>
             <l n="792" xml:id="l792">Notre amitié s'en plaint et s'en trouve offensée,</l>
@@ -1302,7 +1340,7 @@
             <l n="805" xml:id="l805">Et d'un oil qui vous plaint, et toutefois jaloux,</l>
             <l n="806" xml:id="l806">Vois que vous réservez un secret avec vous.</l>
           </sp>
-          <sp xml:id="III02-2" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-2">
             <speaker>LE DUC</speaker>
             <l n="807" xml:id="l807">Quand j'ai cru mes ennuis capables de remède,</l>
             <l n="808" xml:id="l808">Je vous en ai fait part, j'ai réclamé votre aide.</l>
@@ -1313,7 +1351,7 @@
             <l n="813" xml:id="l813">Et c'est assez et trop qu'il fasse un malheureux,</l>
             <l n="814" xml:id="l814">Sans passer jusqu'à vous, et sans en faire deux.</l>
           </sp>
-          <sp xml:id="III02-3" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-3">
             <speaker>ALEXANDRE</speaker>
             <l n="815" xml:id="l815">L'ami qui souffre seul fait une injure à l'autre,</l>
             <l n="816" xml:id="l816">Ma part de votre ennui diminuera la vôtre ;</l>
@@ -1332,7 +1370,7 @@
             <l n="829" xml:id="l829">Je me trouve à servir le ardeurs qui vous pressent</l>
             <l n="830" xml:id="l830">Que j'apprenne du moins à qui vos voux s'adressent.</l>
           </sp>
-          <sp xml:id="III02-4" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-4">
             <speaker>LE DUC</speaker>
             <l n="831" xml:id="l831">J'ai vu de vos bontés des effets assez grands </l>
             <l n="832" xml:id="l832">Sans vous faire avec lui de nouveaux différends,</l>
@@ -1347,7 +1385,7 @@
             <l n="841" xml:id="l841">Laissez-moi retirer d'un champ d'où ma retraite</l>
             <l n="842" xml:id="l842">Peut seule à l'ennemi dérober ma défaite.</l>
           </sp>
-          <sp xml:id="III02-5" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-5">
             <speaker>ALEXANDRE</speaker>
             <l n="843" xml:id="l843">Ce silence obstiné m'apprend votre secret,</l>
             <l n="844" xml:id="l844">Mais il tombe en un sein, généreux et discret,</l>
@@ -1363,7 +1401,7 @@
             <l n="854" xml:id="l854">D'un crime, dont Cassandre est la cause et l'excuse ;</l>
             <l n="855" xml:id="l855">Quelque auguste ascendant qu'ai eut sur moi ses appas.</l>
           </sp>
-          <sp xml:id="III02-6" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-6">
             <speaker>LE DUC</speaker>
             <l n="856" xml:id="l856">Ne vous étonnée pour si je ne réponds pas ;</l>
             <l n="857" xml:id="l857">Ce discours me surprend, et cette indigne plainte</l>
@@ -1375,38 +1413,38 @@
             <l n="863" xml:id="l863">Sur un amour si stable, et si bien affermi ;</l>
             <l n="864" xml:id="l864">Vous me croyez bien lâche, ou bien peu votre ami.</l>
           </sp>
-          <sp xml:id="III02-7" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-7">
             <speaker>ALEXANDRE</speaker>
             <l n="865" xml:id="l865">Croiriez-vous l'adorant m'altérer votre estime.</l>
           </sp>
-          <sp xml:id="III02-8" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-8">
             <speaker>LE DUC</speaker>
             <l n="866" xml:id="l866">Me pourriez-vous aimer, coupable de crime !</l>
           </sp>
-          <sp xml:id="III02-9" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-9">
             <speaker>ALEXANDRE</speaker>
             <l n="867" xml:id="l867">Confident, ou rival, je ne vous puis haïr.</l>
           </sp>
-          <sp xml:id="III02-10" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-10">
             <speaker>LE DUC</speaker>
             <l n="868" xml:id="l868">Sincère et généreux je ne vous puis trahir.</l>
           </sp>
-          <sp xml:id="III02-11" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-11">
             <speaker>ALEXANDRE</speaker>
             <l n="869" xml:id="l869">L'amour surprend les cours, et s'en rend bientôt maître.</l>
           </sp>
-          <sp xml:id="III02-12" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-12">
             <speaker>LE DUC</speaker>
             <l n="870" xml:id="l870">La surprise ne peut instituer un traître ;</l>
             <l n="871" xml:id="l871">Et tout homme de cour pouvant perdre le jour,</l>
             <l n="872" xml:id="l872">A le remède en main des surprises d'amour.</l>
           </sp>
-          <sp xml:id="III02-13" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-13">
             <speaker>ALEXANDRE</speaker>
             <l n="873" xml:id="l873">Pardonnez un soupçon, non pas une créance</l>
             <l n="874" xml:id="l874">Qui naissait du défaut de votre confiance.</l>
           </sp>
-          <sp xml:id="III02-14" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-14">
             <speaker>LE DUC</speaker>
             <l n="875" xml:id="l875">Je veux bien l'oublier, mais à condition</l>
             <l n="876" xml:id="l876">Que ce même défaut soit sa punition ;</l>
@@ -1440,12 +1478,12 @@
             <l n="904" xml:id="l904">L'espérance d'un sceptre est brillante à ses yeux.</l>
             <l n="905" xml:id="l905">Et de ce soin enfin un hymen vous libère.</l>
           </sp>
-          <sp xml:id="III02-15" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-15">
             <speaker>ALEXANDRE</speaker>
             <l n="906" xml:id="l906">Mais me libère-t-il du pouvoir d'un père,</l>
-            <l n="907" xml:id="l907" part="I">Qui peut...</l>
+            <l n="907" part="I" xml:id="l907">Qui peut...</l>
           </sp>
-          <sp xml:id="III02-16" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-16">
             <speaker>LE DUC</speaker>
             <l part="F">Si votre amour défère à son pouvoir,</l>
             <l n="908" xml:id="l908">Et si vous vous réglez par la loi du devoir ;</l>
@@ -1454,7 +1492,7 @@
             <l n="911" xml:id="l911">Et l'ardent procédé, d'un frère impétueux</l>
             <l n="912" xml:id="l912">Marque bien plus d'amour qu'un si respectueux.</l>
           </sp>
-          <sp xml:id="III02-17" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III02-17">
             <speaker>ALEXANDRE</speaker>
             <l n="913" xml:id="l913">Non, non, je laisse à part les droits de la nature,</l>
             <l n="914" xml:id="l914">Et commets à l'amour toute mon aventure,</l>
@@ -1469,18 +1507,21 @@
             <l n="923" xml:id="l923">Il n'excitera plus qu'un impuissant courroux,</l>
             <l n="924" xml:id="l924">Ou d'un père surpris, ou d'un frère jaloux.</l>
           </sp>
-          <sp xml:id="III02-18" who="LEDUC">
+          <sp who="LEDUC" xml:id="III02-18">
             <speaker>LE DUC</speaker>
             <l n="925" xml:id="l925">Quoique visiblement mon crédit se hasarde</l>
             <l n="926" xml:id="l926">Je veux bien l'exposer, pour ce qui vous regarde,</l>
             <l n="927" xml:id="l927">Et plus votre que mien, ne puis avec raison,</l>
             <l n="928" xml:id="l928">Avoir donné mon cour, et refuser mon nom ;</l>
-            <l n="929" xml:id="l929" part="I">Le vôtre....</l>
+            <l n="929" part="I" xml:id="l929">Le vôtre....</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Cassandre, Alexandre, Le Duc.<listPerson type="configuration" xml:id="conf17"><person corresp="#CASSANDRE"/><person corresp="#ALEXANDRE"/><person corresp="#LEDUC"/></listPerson></head>
-          <sp xml:id="III03-1" who="CASSANDRE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Cassandre, Alexandre, Le Duc.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#ALEXANDRE"/>
+            <person corresp="#LEDUC"/></listPerson></head>
+          <sp who="CASSANDRE" xml:id="III03-1">
             <speaker>CASSANDRE en colère de chez l'infante.</speaker>
             <l part="F">Et bien, Madame, il faudra se résoudre</l>
             <l n="930" xml:id="l930">À voir sur notre sort tomber ce coup de foudre ;</l>
@@ -1492,11 +1533,11 @@
             <l n="935" xml:id="l935">Souffrirais-je longtemps un si cruel tourment ?</l>
             <l n="936" xml:id="l936">Et ne vous puis-je, enfin, aimer impunément ?</l>
           </sp>
-          <sp xml:id="III03-2" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III03-2">
             <speaker>ALEXANDRE</speaker>
             <l n="937" xml:id="l937">Quel outrage, Madame, émeut votre colère ?</l>
           </sp>
-          <sp xml:id="III03-3" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="III03-3">
             <speaker>CASSANDRE</speaker>
             <l n="938" xml:id="l938">La fureur d'une soeur, pour l'intérêt d'un frère ;</l>
             <l n="939" xml:id="l939">Son tyrannique effort veut éblouir mes voux,</l>
@@ -1512,7 +1553,7 @@
             <l n="949" xml:id="l949">Voilà les compliments que l'amour leur suscite,</l>
             <l n="950" xml:id="l950">Et les tendes motifs dont on me sollicite.</l>
           </sp>
-          <sp xml:id="III03-4" who="ALEXANDRE">
+          <sp who="ALEXANDRE" xml:id="III03-4">
             <speaker>ALEXANDRE</speaker>
             <l n="951" xml:id="l951">Rendez, rendez le calme à vos charmants appas ;</l>
             <l n="952" xml:id="l952">Laissez gronder la foudre, il ne tombera pas ;</l>
@@ -1525,21 +1566,24 @@
             <l n="959" xml:id="l959">Et quand ouvertement, en qualité d'époux,</l>
             <l n="960" xml:id="l960">Mon devoir m'enjoindra de répondre de vous.</l>
           </sp>
-          <sp xml:id="III03-5" who="LEDUC">
+          <sp who="LEDUC" xml:id="III03-5">
             <speaker>LE DUC</speaker>
             <l n="961" xml:id="l961">Prévenez dès ce soir l'ardeur qui le transporte.</l>
             <l n="962" xml:id="l962">Aux desseins importants la diligence importe.</l>
             <l n="963" xml:id="l963">L'ordre seul de l'affaire est à considérer :</l>
             <l n="964" xml:id="l964">Mais tirons-nous d'ici pour en délibérer.</l>
           </sp>
-          <sp xml:id="III03-6" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="III03-6">
             <speaker>CASSANDRE</speaker>
             <l n="965" xml:id="l965">Quel trouble ? Quelle alarme ? Quels soins me possèdent ?</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Le Prince, Alexandre, Cassandre, Le Duc.<listPerson type="configuration" xml:id="conf18"><person corresp="#LEPRINCE"/><person corresp="#CASSANDRE"/><person corresp="#ALEXANDRE"/></listPerson></head>
-          <sp xml:id="III04-1" who="LEPRINCE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Le Prince, Alexandre, Cassandre, Le Duc.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#ALEXANDRE"/></listPerson></head>
+          <sp who="LEPRINCE" xml:id="III04-1">
             <speaker>LE PRINCE</speaker>
             <l n="966" xml:id="l966">Madame, il ne se peut que mes voux ne succèdent,</l>
             <l n="967" xml:id="l967">J'aurais tort d'en douter, et de redouter rien</l>
@@ -1547,7 +1591,7 @@
             <l n="969" xml:id="l969">Et dont l'affection part du profond de l'âme,</l>
             <l n="970" xml:id="l970">Il vous parlaient (sans doute) en faveur de ma flamme.</l>
           </sp>
-          <sp xml:id="III04-2" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="III04-2">
             <speaker>CASSANDRE</speaker>
             <l n="971" xml:id="l971">Vous les désavoueriez de m'en entretenir,</l>
             <l n="972" xml:id="l972">Puisque je suis si mal en votre souvenir,</l>
@@ -1556,7 +1600,7 @@
             <l n="975" xml:id="l975">Et qu'avec lui vos yeux et votre cour d'accord</l>
             <l n="976" xml:id="l976">Détestent ma présence, à l'égard de la mort.</l>
           </sp>
-          <sp xml:id="III04-3" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III04-3">
             <speaker>LE PRINCE</speaker>
             <l n="977" xml:id="l977">Vous en faites la vaine, et tenez ces paroles</l>
             <l n="978" xml:id="l978">Pour des propos en l'air, et des contes frivoles,</l>
@@ -1599,29 +1643,31 @@
             <l n="1015" xml:id="l1015">J'abandonne un plaisir que j'ai tant poursuivi,</l>
             <l n="1016" xml:id="l1016">Je veux rendre un service à qui m'a desservi.</l>
             <l n="1017" xml:id="l1017">Je ne vous retiens plus, conduisez-là mon frère.</l>
-            <l n="1018" xml:id="l1018" part="I">Et vous Duc, demeurez.</l>
+            <l n="1018" part="I" xml:id="l1018">Et vous Duc, demeurez.</l>
           </sp>
-          <sp xml:id="III04-4" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="III04-4">
             <speaker>CASSANDRE donnant la main à Alexandre.</speaker>
             <l part="F">Ô la noble colère !</l>
             <l n="1019" xml:id="l1019">Conservez-moi longtemps ce généreux mépris,</l>
             <l n="1020" xml:id="l1020">Et que bientôt, Seigneur, un trône en soit le prix !</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
-          <head>SCÈNE V. Le Prince, Le Duc.<listPerson type="configuration" xml:id="conf19"><person corresp="#LEPRINCE"/><person corresp="#LEDUC"/></listPerson></head>
-          <sp xml:id="III05-1" who="LEPRINCE">
+        <div2 n="5" type="scene" xml:id="III05">
+          <head>SCÈNE V. Le Prince, Le Duc.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#LEDUC"/></listPerson></head>
+          <sp who="LEPRINCE" xml:id="III05-1">
             <speaker>LE PRINCE bas.</speaker>
             <l n="1021" xml:id="l1021">Dieux ! Avec quel effort et quelle peine extrême</l>
             <l n="1022" xml:id="l1022">Je consens ce départ qui m'arrache à moi-même,</l>
             <l n="1023" xml:id="l1023">Et qu'un rude combat m'affranchit de sa loi.</l>
             <l n="1024" xml:id="l1024">Duc, j'allais pour vous voir, et de la part du roi.</l>
           </sp>
-          <sp xml:id="III05-2" who="LEDUC">
+          <sp who="LEDUC" xml:id="III05-2">
             <speaker>LE DUC</speaker>
             <l n="1025" xml:id="l1025">Quelque loi qu'il m'impose elle me sera chère.</l>
           </sp>
-          <sp xml:id="III05-3" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III05-3">
             <speaker>LE PRINCE</speaker>
             <l n="1026" xml:id="l1026">Vous savez s'il vous aime, et s'il vous considère :</l>
             <l n="1027" xml:id="l1027">Il vous fait droit aussi, quand il vous agrandit,</l>
@@ -1637,7 +1683,7 @@
             <l n="1037" xml:id="l1037">Et de votre valeur, verrai la récompense :</l>
             <l n="1038" xml:id="l1038">Comme sans intérêt, aussi sans répugnance.</l>
           </sp>
-          <sp xml:id="III05-4" who="LEDUC">
+          <sp who="LEDUC" xml:id="III05-4">
             <speaker>LE DUC</speaker>
             <l n="1039" xml:id="l1039">Mon espoir avoué par ma témérité,</l>
             <l n="1040" xml:id="l1040">Du succès de mes voux autrefois m'a flatté :</l>
@@ -1646,39 +1692,39 @@
             <l n="1043" xml:id="l1043">Et qui se voit des yeux, le commerce interdit,</l>
             <l n="1044" xml:id="l1044">Est bien vain, s'il espère et vante son crédit.</l>
           </sp>
-          <sp xml:id="III05-5" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III05-5">
             <speaker>LE PRINCE</speaker>
             <l n="1045" xml:id="l1045">Loin de vous desservir et vous être contraire,</l>
             <l n="1046" xml:id="l1046">Je vais de votre hymen solliciter mon père ;</l>
             <l n="1047" xml:id="l1047">J'ai déjà sa parole, s'il en est besoin</l>
             <l n="1048" xml:id="l1048">Près de cette beauté , vous offre encore mon soin.</l>
           </sp>
-          <sp xml:id="III05-6" who="LEDUC">
+          <sp who="LEDUC" xml:id="III05-6">
             <speaker>LE DUC</speaker>
             <l n="1049" xml:id="l1049">En vain je l'obtiendrai de son pouvoir suprême</l>
             <l n="1050" xml:id="l1050">Si je ne puis encore l'obtenir d'elle-même.</l>
           </sp>
-          <sp xml:id="III05-7" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III05-7">
             <speaker>LE PRINCE</speaker>
             <l n="1051" xml:id="l1051">Je crois que les moyens vous en seront aisés.</l>
           </sp>
-          <sp xml:id="III05-8" who="LEDUC">
+          <sp who="LEDUC" xml:id="III05-8">
             <speaker>LE DUC</speaker>
             <l n="1052" xml:id="l1052">Vos soins en ma faveur les ont mal disposés.</l>
           </sp>
-          <sp xml:id="III05-9" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III05-9">
             <speaker>LE PRINCE</speaker>
             <l n="1053" xml:id="l1053">Avec votre vertu ma faveur était vaine.</l>
           </sp>
-          <sp xml:id="III05-10" who="LEDUC">
+          <sp who="LEDUC" xml:id="III05-10">
             <speaker>LE DUC</speaker>
             <l n="1054" xml:id="l1054">Mes efforts étaient vains, avecque votre haine.</l>
           </sp>
-          <sp xml:id="III05-11" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III05-11">
             <speaker>LE PRINCE</speaker>
             <l n="1055" xml:id="l1055">Mes intérêts cessés relèvent votre espoir.</l>
           </sp>
-          <sp xml:id="III05-12" who="LEDUC">
+          <sp who="LEDUC" xml:id="III05-12">
             <speaker>LE DUC</speaker>
             <l n="1056" xml:id="l1056">Mes voux humiliés révèrent mon devoir.</l>
             <l n="1057" xml:id="l1057">Et l'âme qu'une fois on a persuadé</l>
@@ -1687,9 +1733,13 @@
             <l n="1060" xml:id="l1060">Et guérir aisément d'un dégoût qu'elle a pris.</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
-          <head>SCÈNE VI. Le Roi, Le Prince, Le Duc Gardes.<listPerson type="configuration" xml:id="conf20"><person corresp="#LEROI"/><person corresp="#LEPRINCE"/><person corresp="#LEDUC"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="III06-1" who="LEROI">
+        <div2 n="6" type="scene" xml:id="III06">
+          <head>SCÈNE VI. Le Roi, Le Prince, Le Duc Gardes.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#LEDUC"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEROI" xml:id="III06-1">
             <speaker>LE ROI au Duc.</speaker>
             <l n="1061" xml:id="l1061">Venez heureux appui que le ciel me suscite,</l>
             <l n="1062" xml:id="l1062">Dégager ma promesse envers votre mérite ;</l>
@@ -1704,12 +1754,12 @@
             <l n="1071" xml:id="l1071">Il prend vos intérêts, votre heur lui sera doux,</l>
             <l n="1072" xml:id="l1072">Et qui vous desservait, parle à présent pour vous.</l>
           </sp>
-          <sp xml:id="III06-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III06-2">
             <speaker>LE PRINCE bas</speaker>
             <l n="1073" xml:id="l1073">Contre moi mon rival obtient mon assistance !</l>
             <l n="1074" xml:id="l1074">À quelle épreuve, ô ciel ! Réduis-tu ma constance ?</l>
           </sp>
-          <sp xml:id="III06-3" who="LEDUC">
+          <sp who="LEDUC" xml:id="III06-3">
             <speaker>LE DUC</speaker>
             <l n="1075" xml:id="l1075">Le prix est si conjoint à l'heur de vous servir,</l>
             <l n="1076" xml:id="l1076">Que c'est une faveur qu'on ne me peut ravir ;</l>
@@ -1718,7 +1768,7 @@
             <l n="1079" xml:id="l1079">Pouvoir dire, ce bras a servi Venceclas,</l>
             <l n="1080" xml:id="l1080">N'est-ce pas un loyer digne de cent combats ?</l>
           </sp>
-          <sp xml:id="III06-4" who="LEROI">
+          <sp who="LEROI" xml:id="III06-4">
             <speaker>LE ROI</speaker>
             <l n="1081" xml:id="l1081">Non, non, quoique je doive à ce bras indomptable,</l>
             <l n="1082" xml:id="l1082">C'est trop que votre Roi soit votre redevable ;</l>
@@ -1733,27 +1783,27 @@
             <l n="1091" xml:id="l1091"> Je m'en connais indigne, et l'objet que je sers</l>
             <l n="1092" xml:id="l1092">Dédaignant son tribut, désavouerait mes fers.</l>
           </sp>
-          <sp xml:id="III06-5" who="LEROI">
+          <sp who="LEROI" xml:id="III06-5">
             <speaker>LE ROI</speaker>
             <l n="1093" xml:id="l1093">Les plus puissants États n'ont point de souveraines,</l>
             <l n="1094" xml:id="l1094">Dont ce bras ne mérite, et n'honorât les chaînes,</l>
             <l n="1095" xml:id="l1095">Et mon pouvoir enfin, ou sera sans effet,</l>
             <l n="1096" xml:id="l1096">Ou vous répond du don que je vous aurai fait.</l>
           </sp>
-          <sp xml:id="III06-6" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III06-6">
             <speaker>LE PRINCE bas.</speaker>
             <l n="1097" xml:id="l1097">Quoi ? L'hymen qu'on dénie à l'ardeur qui me presse</l>
             <l n="1098" xml:id="l1098">Au lit de mon rival va mettre ma maîtresse ?</l>
           </sp>
-          <sp xml:id="III06-7" who="LEDUC">
+          <sp who="LEDUC" xml:id="III06-7">
             <speaker>LE DUC</speaker>
             <l n="1099" xml:id="l1099">Ma défense à vos lois n'ose plus répartir.</l>
           </sp>
-          <sp xml:id="III06-8" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III06-8">
             <speaker>LE PRINCE</speaker>
             <l n="1100" xml:id="l1100">Non, non, lâche rival, je n'y puis consentir.</l>
           </sp>
-          <sp xml:id="III06-9" who="LEDUC">
+          <sp who="LEDUC" xml:id="III06-9">
             <speaker>LE DUC</speaker>
             <l n="1101" xml:id="l1101">Et forcé par votre ordre à rompre mon silence,</l>
             <l n="1102" xml:id="l1102">Je vous obéirai, mais avec violence.</l>
@@ -1761,16 +1811,16 @@
             <l n="1104" xml:id="l1104">Plus, que n'observant point, un ordre si pressant ;</l>
             <l n="1105" xml:id="l1105">J'avouerai donc, grand Roi, que l'objet qui me touche.</l>
           </sp>
-          <sp xml:id="III06-10" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III06-10">
             <speaker>LE PRINCE</speaker>
             <l n="1106" xml:id="l1106">Duc, encore une fois je vous ferme la bouche,</l>
             <l n="1107" xml:id="l1107">Et ne vous puis souffrir votre présomption.</l>
           </sp>
-          <sp xml:id="III06-11" who="LEROI">
+          <sp who="LEROI" xml:id="III06-11">
             <speaker>LE ROI</speaker>
-            <l n="1108" xml:id="l1108" part="I">Insolent !</l>
+            <l n="1108" part="I" xml:id="l1108">Insolent !</l>
           </sp>
-          <sp xml:id="III06-12" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="III06-12">
             <speaker>LE PRINCE</speaker>
             <l part="F">J'ai sans fruit vaincu ma passion</l>
             <l n="1109" xml:id="l1109">Pour souffrir son orgueil, Seigneur, et vous complaire,</l>
@@ -1788,20 +1838,23 @@
             <l n="1120" xml:id="l1120">Ou sa mort à l'instant en suivra le succès.</l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
-          <head>SCÈNE VII. Le roi, Le Duc, Gardes.<listPerson type="configuration" xml:id="conf21"><person corresp="#LEROI"/><person corresp="#LEDUC"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="III07-1" who="LEROI">
+        <div2 n="7" type="scene" xml:id="III07">
+          <head>SCÈNE VII. Le roi, Le Duc, Gardes.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEDUC"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEROI" xml:id="III07-1">
             <speaker>LE ROI</speaker>
-            <l n="1121" xml:id="l1121" part="I">Gardes, qu'on le saisisse.</l>
+            <l n="1121" part="I" xml:id="l1121">Gardes, qu'on le saisisse.</l>
           </sp>
-          <sp xml:id="III07-2" who="LEDUC">
+          <sp who="LEDUC" xml:id="III07-2">
             <speaker>LE DUC les arrêtant.</speaker>
             <l part="F">Ha ! Seigneur, quel asile</l>
             <l n="1122" xml:id="l1122">À conservé mes jours, ne serait inutile ?</l>
             <l n="1123" xml:id="l1123">Et me garantirait contre un soulèvement.</l>
             <l n="1124" xml:id="l1124">Accordez-moi sa grâce, ou mon éloignement.</l>
           </sp>
-          <sp xml:id="III07-3" who="LEROI">
+          <sp who="LEROI" xml:id="III07-3">
             <speaker>LE ROI</speaker>
             <l n="1125" xml:id="l1125">Qu'aucun soin ne vous trouble, et ne vous importune.</l>
             <l n="1126" xml:id="l1126">Duc, je ferai si haut monter votre fortune,</l>
@@ -1816,18 +1869,20 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE I. Théodore, Léonor.<listPerson type="configuration" xml:id="conf23"><person corresp="#THEODORE"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="IV01-1" who="THEODORE">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE I. Théodore, Léonor.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#THEODORE"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="THEODORE" xml:id="IV01-1">
             <speaker>THÉODORE</speaker>
             <l n="1135" xml:id="l1135">Ha dieu ! Que cet effroi me trouble et me confond ;</l>
             <l n="1136" xml:id="l1136">Tu vois que ton rapport à mon gré répond, </l>
             <l n="1137" xml:id="l1137">Et sur cette frayeur tu condamnes mes larmes !</l>
             <l n="1138" xml:id="l1138">Je me mets trop en peine, et je prends trop d'alarmes !</l>
           </sp>
-          <sp xml:id="IV01-2" who="LEONOR">
+          <sp who="LEONOR" xml:id="IV01-2">
             <speaker>LÉONOR</speaker>
             <l n="1139" xml:id="l1139">Vous en prenez sans doute un peu légèrement</l>
             <l n="1140" xml:id="l1140">Pour n'avoir pas couché dans son appartement.</l>
@@ -1846,7 +1901,7 @@
             <l n="1153" xml:id="l1153">Pour n'en point être peiné, il n'en faut rien apprendre,</l>
             <l n="1154" xml:id="l1154">Et ne connaître point ce qu'il faudrait reprendre.</l>
           </sp>
-          <sp xml:id="IV01-3" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV01-3">
             <speaker>THÉODORE</speaker>
             <l n="1155" xml:id="l1155">Un songe interrompu, sans suite, obscur, confus,</l>
             <l n="1156" xml:id="l1156">Qui passe en un instant, et puis ne revient plus,</l>
@@ -1866,59 +1921,63 @@
             <l n="1170" xml:id="l1170">Et, comme tu m'as vue, interdite égarée, </l>
             <l n="1171" xml:id="l1171">Sans toi je me rendais en son appartement,</l>
             <l n="1172" xml:id="l1172">D'où j'apprends que ma peur n'est pas sans fondement,</l>
-            <l n="1173" xml:id="l1173" part="I">Puisque ses gens t'ont dit... Mais que vois-je ?</l>
+            <l n="1173" part="I" xml:id="l1173">Puisque ses gens t'ont dit... Mais que vois-je ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Octave, le Prince, Théodore, Léonor.<listPerson type="configuration" xml:id="conf24"><person corresp="#OCTAVE"/><person corresp="#THEODORE"/><person corresp="#LEPRINCE"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="IV02-1" who="OCTAVE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Octave, le Prince, Théodore, Léonor.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#OCTAVE"/>
+            <person corresp="#THEODORE"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="OCTAVE" xml:id="IV02-1">
             <speaker>OCTAVE</speaker>
             <l part="F">Ha Madame !</l>
           </sp>
-          <sp xml:id="IV02-2" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-2">
             <speaker>THÉODORE</speaker>
-            <l n="1174" xml:id="l1174" part="I">Et bien ?</l>
+            <l n="1174" part="I" xml:id="l1174">Et bien ?</l>
           </sp>
-          <sp xml:id="IV02-3" who="OCTAVE">
+          <sp who="OCTAVE" xml:id="IV02-3">
             <speaker>OCTAVE</speaker>
             <l part="F">Sans mon secours le Prince rendait l'âme.</l>
           </sp>
-          <sp xml:id="IV02-4" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-4">
             <speaker>THÉODORE</speaker>
             <l n="1175" xml:id="l1175">Prenais-je, Léonor, l'alarme hors de propos.</l>
           </sp>
-          <sp xml:id="IV02-5" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV02-5">
             <speaker>LE PRINCE</speaker>
             <l n="1176" xml:id="l1176">Souffrez-moi sur ce siège un moment de repos.</l>
             <l n="1177" xml:id="l1177">Débile, et mal remis encore de la faiblesse</l>
             <l n="1178" xml:id="l1178">Où ma perte de sang, et ma chute me laisse ;</l>
             <l n="1179" xml:id="l1179">Je me traîne avec peine, et j'ignore où je suis.</l>
           </sp>
-          <sp xml:id="IV02-6" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-6">
             <speaker>THÉODORE</speaker>
-            <l n="1180" xml:id="l1180" part="I">Ha mon frère !</l>
+            <l n="1180" part="I" xml:id="l1180">Ha mon frère !</l>
           </sp>
-          <sp xml:id="IV02-7" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV02-7">
             <speaker>LE PRINCE</speaker>
             <l part="F">Ha ma soeur ! Savez-vous mes ennuis ?</l>
           </sp>
-          <sp xml:id="IV02-8" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-8">
             <speaker>THÉODORE</speaker>
             <l n="1181" xml:id="l1181">Ô songe ! Avant coureur d'aventure tragique,</l>
             <l n="1182" xml:id="l1182">Combien sensiblement cet accident t'explique ;</l>
             <l n="1183" xml:id="l1183">Par quel malheur, mon frère, ou par quel attentat</l>
             <l n="1184" xml:id="l1184">Vous vois-je en ce sanglant et déplorable état ?</l>
           </sp>
-          <sp xml:id="IV02-9" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV02-9">
             <speaker>LE PRINCE</speaker>
             <l n="1185" xml:id="l1185">Vous voyez ce qu'amour et Cassandre me coûte,</l>
             <l n="1186" xml:id="l1186">Mais faites observer qu'aucun de nous écoute.</l>
           </sp>
-          <sp xml:id="IV02-10" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-10">
             <speaker>THÉODORE faisant signe à Léonor qui va voir si personne n'écoute.</speaker>
-            <l n="1187" xml:id="l1187" part="I">Soignez-y, Léonor.</l>
+            <l n="1187" part="I" xml:id="l1187">Soignez-y, Léonor.</l>
           </sp>
-          <sp xml:id="IV02-11" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV02-11">
             <speaker>LE PRINCE</speaker>
             <l part="F">Vous avez vu, ma soeur</l>
             <l n="1188" xml:id="l1188">Mes plus secret pensers jusqu'au fond de mon cour,</l>
@@ -1946,11 +2005,11 @@
             <l n="1210" xml:id="l1210">L'hymen qui se traitait, du Duc, et de Cassandre ;</l>
             <l n="1211" xml:id="l1211">Et que ce couple heureux consommait cette nuit.</l>
           </sp>
-          <sp xml:id="IV02-12" who="OCTAVE">
+          <sp who="OCTAVE" xml:id="IV02-12">
             <speaker>OCTAVE</speaker>
             <l n="1212" xml:id="l1212">Pernicieux avis, hélas ! Qu'as-tu produit ?</l>
           </sp>
-          <sp xml:id="IV02-13" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV02-13">
             <speaker>LE PRINCE</speaker>
             <l n="1213" xml:id="l1213">Succombant tout entier à ce coup qui m'accable,</l>
             <l n="1214" xml:id="l1214">De tout raisonnement, je deviens incapable.</l>
@@ -1969,24 +2028,24 @@
             <l n="1227" xml:id="l1227">Cours, éteins la lumière, et d'un aveugle effort</l>
             <l n="1228" xml:id="l1228">De trois coups de poignard blesse le Duc à mort.</l>
           </sp>
-          <sp xml:id="IV02-14" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-14">
             <speaker>THÉODORE effrayée s'appuyant sur Léonor.</speaker>
-            <l n="1229" xml:id="l1229" part="I">Le Duc ? Qu'entends-je ? Hélas !</l>
+            <l n="1229" part="I" xml:id="l1229">Le Duc ? Qu'entends-je ? Hélas !</l>
           </sp>
-          <sp xml:id="IV02-15" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV02-15">
             <speaker>LE PRINCE</speaker>
             <l part="F">À cette rude atteinte</l>
             <l n="1230" xml:id="l1230">Pendant qu'en l'escalier tout le monde est en plainte,</l>
             <l n="1231" xml:id="l1231">Lui, m'entendant tomber le poignard, sous ses pas, </l>
             <l n="1232" xml:id="l1232">S'en saisit, me poursuit, et m'en atteint au bras.</l>
             <l n="1233" xml:id="l1233">Son âme à cet effort de son corps de sépare,</l>
-            <l n="1234" xml:id="l1234" part="I">Il tombe mort.</l>
+            <l n="1234" part="I" xml:id="l1234">Il tombe mort.</l>
           </sp>
-          <sp xml:id="IV02-16" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-16">
             <speaker>THÉODORE</speaker>
             <l part="F">Ô rage inhumaine et barbare !</l>
           </sp>
-          <sp xml:id="IV02-17" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV02-17">
             <speaker>LE PRINCE</speaker>
             <l n="1235" xml:id="l1235">Et moi, par cent détours, que je ne connais pas,</l>
             <l n="1236" xml:id="l1236">Dans l'horreur de la nuit ayant traîné mes pas ;</l>
@@ -1996,12 +2055,12 @@
             <l n="1240" xml:id="l1240">De bander ma blessure, et de me rendre ici.</l>
             <l n="1241" xml:id="l1241">Où (non sans peine encore) je reviens en moi-même.</l>
           </sp>
-          <sp xml:id="IV02-18" who="THEODORE">
+          <sp who="THEODORE" xml:id="IV02-18">
             <speaker>THÉODORE appuyé sur Léonor.</speaker>
             <l n="1242" xml:id="l1242">Je succombe, mon frère, à ma douleur extrême.</l>
             <l n="1243" xml:id="l1243">Ma faiblesse me chasse, et peut rendre évident</l>
             <l n="1244" xml:id="l1244">L'intérêt que je prends dedans votre accident.</l>
-            <l n="1245" xml:id="l1245" part="I">Soutiens-moi, Léonor ;</l>
+            <l n="1245" part="I" xml:id="l1245">Soutiens-moi, Léonor ;</l>
             <stage>Bas</stage>
             <l part="F">Mon cour es-tu si tendre</l>
             <stage>S'en allant.</stage>
@@ -2010,47 +2069,53 @@
             <l n="1248" xml:id="l1248">Cet hymen t'offensait, et sa mort t'a vengé.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Le Prince, Octave.<listPerson type="configuration" xml:id="conf25"><person corresp="#OCTAVE"/><person corresp="#LEPRINCE"/></listPerson></head>
-          <sp xml:id="IV03-1" who="OCTAVE">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Le Prince, Octave.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#OCTAVE"/>
+            <person corresp="#LEPRINCE"/></listPerson></head>
+          <sp who="OCTAVE" xml:id="IV03-1">
             <speaker>OCTAVE</speaker>
             <l n="1249" xml:id="l1249">Déjà du jour, Seigneur, la lumière naissante</l>
             <l n="1250" xml:id="l1250">Fait voir par son retour la lune pâlissante.</l>
           </sp>
-          <sp xml:id="IV03-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV03-2">
             <speaker>LE PRINCE</speaker>
             <l n="1251" xml:id="l1251">Et va produire aux yeux les crimes de la nuit.</l>
           </sp>
-          <sp xml:id="IV03-3" who="OCTAVE">
+          <sp who="OCTAVE" xml:id="IV03-3">
             <speaker>OCTAVE</speaker>
             <l n="1252" xml:id="l1252">Même au quartier du Roi j'entends déjà du bruit.</l>
             <l n="1253" xml:id="l1253">Allons-nous rendre au lit, que quelqu'un ne survienne.</l>
           </sp>
-          <sp xml:id="IV03-4" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV03-4">
             <speaker>LE PRINCE</speaker>
             <l n="1254" xml:id="l1254">Qui souhaite la mort, craint peu quoiqu'il advienne,</l>
-            <l n="1255" xml:id="l1255" part="I">Mais allons, conduis-moi.</l>
+            <l n="1255" part="I" xml:id="l1255">Mais allons, conduis-moi.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Le Roi, Gardes, Le Prince, Octave.<listPerson type="configuration" xml:id="conf26"><person corresp="#LEROI"/><person corresp="#LEPRINCE"/><person corresp="#OCTAVE"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="IV04-1" who="LEROI">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Le Roi, Gardes, Le Prince, Octave.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#OCTAVE"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEROI" xml:id="IV04-1">
             <speaker>LE ROI</speaker>
             <l part="M">Mon fils ?</l>
           </sp>
-          <sp xml:id="IV04-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV04-2">
             <speaker>LE PRINCE</speaker>
             <l part="M">Seigneur ?</l>
           </sp>
-          <sp xml:id="IV04-3" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-3">
             <speaker>LE ROI </speaker>
             <l part="F">Hélas !</l>
           </sp>
-          <sp xml:id="IV04-4" who="OCTAVE">
+          <sp who="OCTAVE" xml:id="IV04-4">
             <speaker>OCTAVE</speaker>
-            <l n="1256" xml:id="l1256" part="I">Ô fatale rencontre !</l>
+            <l n="1256" part="I" xml:id="l1256">Ô fatale rencontre !</l>
           </sp>
-          <sp xml:id="IV04-5" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-5">
             <speaker>LE ROI</speaker>
             <l part="F">Est-ce vous, Ladislas ?</l>
             <l n="1257" xml:id="l1257">Dont la douleur éteinte et la voix égarée</l>
@@ -2060,22 +2125,22 @@
             <l n="1261" xml:id="l1261">Qui vous a si matin tiré de votre couche ?</l>
             <l n="1262" xml:id="l1262">Quel trouble vous possède et vous ferme le bouche ?</l>
           </sp>
-          <sp xml:id="IV04-6" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV04-6">
             <speaker>LE PRINCE se remettant sur sa chaise.</speaker>
-            <l n="1263" xml:id="l1263" part="I">Que lui dirai-je ? Hélas !</l>
+            <l n="1263" part="I" xml:id="l1263">Que lui dirai-je ? Hélas !</l>
           </sp>
-          <sp xml:id="IV04-7" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-7">
             <speaker>LE ROI</speaker>
             <l part="F">Répondez-moi, mon fils.</l>
-            <l n="1264" xml:id="l1264" part="I">Quel fatal accident...</l>
+            <l n="1264" part="I" xml:id="l1264">Quel fatal accident...</l>
           </sp>
-          <sp xml:id="IV04-8" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV04-8">
             <speaker>LE PRINCE</speaker>
             <l part="F">Seigneur, je vous le dis ;</l>
             <l n="1265" xml:id="l1265">J'allais, j'étais, l'amour a sur moi tant d'empire...</l>
             <l n="1266" xml:id="l1266">Je me confonds, Seigneur, et ne vous puis rien dire.</l>
           </sp>
-          <sp xml:id="IV04-9" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-9">
             <speaker>LE ROI</speaker>
             <l n="1267" xml:id="l1267">D'un trouble si confus un esprit assailli</l>
             <l n="1268" xml:id="l1268">Se confesse coupable, et qui craint a failli ;</l>
@@ -2083,20 +2148,20 @@
             <l n="1270" xml:id="l1270">Votre mauvaise humeur lui fut toujours contraire,</l>
             <l n="1271" xml:id="l1271">Et si pour l'en garder mes soins n'avaient pourvu...</l>
           </sp>
-          <sp xml:id="IV04-10" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV04-10">
             <speaker>LE PRINCE</speaker>
             <l n="1272" xml:id="l1272">M'a-t-il pas satisfait ? Non, je ne l'ai point vu.</l>
           </sp>
-          <sp xml:id="IV04-11" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-11">
             <speaker>LE ROI</speaker>
             <l n="1273" xml:id="l1273">Qui vous réveille donc avant que la lumière</l>
             <l n="1274" xml:id="l1274">Ait du soleil naissant commencé la carrière ?</l>
           </sp>
-          <sp xml:id="IV04-12" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV04-12">
             <speaker>LE PRINCE</speaker>
             <l n="1275" xml:id="l1275">N'avez-vous pas aussi précédé son réveil ?</l>
           </sp>
-          <sp xml:id="IV04-13" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-13">
             <speaker>LE ROI</speaker>
             <l n="1276" xml:id="l1276">Oui, mais j'ai mes raisons qui bornent mon sommeil,</l>
             <l n="1277" xml:id="l1277">Je me vois, Ladislas, au déclin de ma vie,</l>
@@ -2112,64 +2177,69 @@
             <l n="1287" xml:id="l1287">Mais quel soin peut du lit vous chasser si matin,</l>
             <l n="1288" xml:id="l1288">Vous à qui l'âge, encor, garde un si long destin ?</l>
           </sp>
-          <sp xml:id="IV04-14" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV04-14">
             <speaker>LE PRINCE</speaker>
             <l n="1289" xml:id="l1289">Si vous en ordonnez avec votre justice</l>
             <l n="1290" xml:id="l1290">Mon destin de bien près touche son précipice ;</l>
             <l n="1291" xml:id="l1291">Ce bras (puisqu'il est vain de vous déguiser rien)</l>
             <l n="1292" xml:id="l1292">A de votre couronne abattu le soutien ;</l>
             <l n="1293" xml:id="l1293">Le Duc est mort, Seigneur, et j'en suis l'homicide.</l>
-            <l n="1294" xml:id="l1294" part="I">Mais j'ai dû l'être.</l>
+            <l n="1294" part="I" xml:id="l1294">Mais j'ai dû l'être.</l>
           </sp>
-          <sp xml:id="IV04-15" who="LEROI">
+          <sp who="LEROI" xml:id="IV04-15">
             <speaker>LE ROI</speaker>
             <l part="F">Ô Dieu ! Le Duc est mort, perfide !</l>
             <l n="1295" xml:id="l1295">Le Duc est mort, barbare ! Et pour excuse enfin </l>
-            <l n="1296" xml:id="l1296">Vous avez eu raison d'être son assassin  !</l>
+            <l n="1296" xml:id="l1296">Vous avez eu raison d'être son assassin !</l>
             <l n="1297" xml:id="l1297">À cette épreuve, ô ciel, mets-tu ma patience ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V. Le Duc, Le Roi, Le Prince, Octave, Gardes.<listPerson type="configuration" xml:id="conf27"><person corresp="#LEDUC"/><person corresp="#LEPRINCE"/><person corresp="#LEROI"/><person corresp="#OCTAVE"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="IV05-1" who="LEDUC">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V. Le Duc, Le Roi, Le Prince, Octave, Gardes.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#LEDUC"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#OCTAVE"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEDUC" xml:id="IV05-1">
             <speaker>LE DUC</speaker>
             <l n="1298" xml:id="l1298">La Duchesse, Seigneur, vous demande audience.</l>
           </sp>
-          <sp xml:id="IV05-2" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV05-2">
             <speaker>LE PRINCE</speaker>
             <l n="1299" xml:id="l1299">Que vois-je ? Quel fantôme ? Et quelle illusion</l>
             <l n="1300" xml:id="l1300">De mes sens égarés croît la confusion ?</l>
           </sp>
-          <sp xml:id="IV05-3" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-3">
             <speaker>LE ROI</speaker>
             <l n="1301" xml:id="l1301">Que m'avez-vous dit, Prince ? Et par quelle merveille</l>
             <l n="1302" xml:id="l1302">Mon oil peut-il si tôt démentir mon oreille ?</l>
           </sp>
-          <sp xml:id="IV05-4" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV05-4">
             <speaker>LE PRINCE</speaker>
             <l n="1303" xml:id="l1303">Ne vous ai-je pas dit, qu'interdit et confus</l>
             <l n="1304" xml:id="l1304">Je ne pouvais rien dire, et ne reconnais plus.</l>
           </sp>
-          <sp xml:id="IV05-5" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-5">
             <speaker>LE ROI</speaker>
             <l n="1305" xml:id="l1305">Ha Duc ! Il était temps de tirer ma pensée</l>
             <l n="1306" xml:id="l1306">D'une erreur qui l'avait mortellement blessée,</l>
             <l n="1307" xml:id="l1307">Différant d'un instant le soin de l'en guérir</l>
             <l n="1308" xml:id="l1308">Le bruit de votre mort m'allait faire mourir.</l>
             <l n="1309" xml:id="l1309">Jamais cour ne conçut une douleur si forte. </l>
-            <l n="1310" xml:id="l1310" part="I">Mais que me dites-vous ?</l>
+            <l n="1310" part="I" xml:id="l1310">Mais que me dites-vous ?</l>
           </sp>
-          <sp xml:id="IV05-6" who="LEDUC">
+          <sp who="LEDUC" xml:id="IV05-6">
             <speaker>LE DUC</speaker>
             <l part="F">Que Cassandre à la porte</l>
-            <l n="1311" xml:id="l1311" part="I">Demandait à vous voir.</l>
+            <l n="1311" part="I" xml:id="l1311">Demandait à vous voir.</l>
           </sp>
-          <sp xml:id="IV05-7" who="LEROI">
+          <sp who="LEROI" xml:id="IV05-7">
             <speaker>LE ROI</speaker>
             <l part="M">Qu'elle entre.</l>
           </sp>
           <stage>Il sort.</stage>
-          <sp xml:id="IV05-8" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV05-8">
             <speaker>LE PRINCE bas.</speaker>
             <l part="F">Ô justes cieux !</l>
             <l n="1312" xml:id="l1312">M'as-tu trompé ma main ? Me trompez-vous mes yeux ?</l>
@@ -2177,12 +2247,18 @@
             <l n="1314" xml:id="l1314">Et de quel bras, le mien, a-t-il reçu l'atteinte ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
-          <head>SCÈNE VI. Cassandre, Le Roi, Le Prince, Le Duc, Octave, Gardes.<listPerson type="configuration" xml:id="conf28"><person corresp="#CASSANDRE"/><person corresp="#LEROI"/><person corresp="#LEPRINCE"/><person corresp="#OCTAVE"/><person corresp="#LEDUC"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="IV06-1" who="CASSANDRE">
+        <div2 n="6" type="scene" xml:id="IV06">
+          <head>SCÈNE VI. Cassandre, Le Roi, Le Prince, Le Duc, Octave, Gardes.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#OCTAVE"/>
+            <person corresp="#LEDUC"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="CASSANDRE" xml:id="IV06-1">
             <speaker>CASSANDRE aux pieds du roi pleurant.</speaker>
             <l n="1315" xml:id="l1315">Grand roi de l'innocence auguste protecteur,</l>
-            <l n="1316" xml:id="l1316">Des peines et des prix  juste dispensateur</l>
+            <l n="1316" xml:id="l1316">Des peines et des prix juste dispensateur</l>
             <l n="1317" xml:id="l1317">Exemple de justice inviolable et pure,</l>
             <l n="1318" xml:id="l1318">Admirable à la race, et présente et future ;</l>
             <l n="1319" xml:id="l1319">Prince et père à la fois, vengez-moi, vengez-vous,</l>
@@ -2190,31 +2266,31 @@
             <l n="1321" xml:id="l1321">Et rendez aujourd'hui d'un juge inexorable,</l>
             <l n="1322" xml:id="l1322">Une marque, aux neveux, à jamais mémorable.</l>
           </sp>
-          <sp xml:id="IV06-2" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-2">
             <speaker>LE ROI la faisant lever.</speaker>
             <l n="1323" xml:id="l1323">Faites trêve, Madame avecque les douleurs,</l>
             <l n="1324" xml:id="l1324">Que vous coupent le voix, et font parler vos pleurs !</l>
           </sp>
-          <sp xml:id="IV06-3" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="IV06-3">
             <speaker>CASSANDRE</speaker>
             <l n="1325" xml:id="l1325">Votre majesté, Sire, a connue ma famille !</l>
           </sp>
-          <sp xml:id="IV06-4" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-4">
             <speaker>LE ROI</speaker>
             <l n="1326" xml:id="l1326">Ursin de Cunisberg, de qui vous êtes la fille</l>
             <l n="1327" xml:id="l1327">Est descendu d'aïeux, issus de sang royal,</l>
             <l n="1328" xml:id="l1328">Et me fut un voisin, généreux, et loyal.</l>
           </sp>
-          <sp xml:id="IV06-5" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="IV06-5">
             <speaker>CASSANDRE</speaker>
             <l n="1329" xml:id="l1329">Vous savez, si prétendre, un de vos fils pour gendre,</l>
             <l n="1330" xml:id="l1330">Eut au rang qu'il tenait, été trop entreprendre !</l>
           </sp>
-          <sp xml:id="IV06-6" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-6">
             <speaker>LE ROI</speaker>
             <l n="1331" xml:id="l1331">L'amour n'offense point, dedans l'égalité.</l>
           </sp>
-          <sp xml:id="IV06-7" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="IV06-7">
             <speaker>CASSANDRE</speaker>
             <l n="1332" xml:id="l1332">Tous deux, ont eu dessein, dessus ma liberté.</l>
             <l n="1333" xml:id="l1333">Mais avec différence, et d'objet, et d'estime,</l>
@@ -2255,17 +2331,17 @@
             <l n="1367" xml:id="l1367">Qu'il sent, pour tout accueil, une barbare main,</l>
             <l n="1368" xml:id="l1368">De trois coups de poignard, lui traverser le sein.</l>
           </sp>
-          <sp xml:id="IV06-8" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-8">
             <speaker>LE ROI</speaker>
-            <l n="1369" xml:id="l1369" part="I">Ô Dieu ? L'infant est mort !</l>
+            <l n="1369" part="I" xml:id="l1369">Ô Dieu ? L'infant est mort !</l>
           </sp>
-          <sp xml:id="IV06-9" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV06-9">
             <speaker>LE PRINCE bas.</speaker>
             <l part="F">Ô mon aveugle rage,</l>
             <l n="1370" xml:id="l1370">Tu t'es bien satisfaite, et voilà ton ouvrage.</l>
             <stage>Le roi sied, et met son mouchoir sur son visage.</stage>
           </sp>
-          <sp xml:id="IV06-10" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="IV06-10">
             <speaker>CASSANDRE</speaker>
             <l n="1371" xml:id="l1371">Oui, Seigneur, il est mort, et je suivrai ses pas,</l>
             <l n="1372" xml:id="l1372">À l'instant que j'aurai, vu venger son trépas ;</l>
@@ -2328,11 +2404,11 @@
             <l n="1428" xml:id="l1428">Le sien saura s'étendre, et n'est pas raccourci ;</l>
             <l n="1429" xml:id="l1429">Si vous lui remettez à venger nos offenses.</l>
           </sp>
-          <sp xml:id="IV06-11" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-11">
             <speaker>LE ROI</speaker>
             <l n="1430" xml:id="l1430">Contre ces charges, Prince, avez-vous des défenses ?</l>
           </sp>
-          <sp xml:id="IV06-12" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV06-12">
             <speaker>LE PRINCE</speaker>
             <l n="1431" xml:id="l1431">Non, je suis criminel, abandonnez grand Roi</l>
             <l n="1432" xml:id="l1432">Cette mourante vie aux rigueurs de la loi ;</l>
@@ -2358,12 +2434,12 @@
             <l n="1452" xml:id="l1452">Qu'importe qui me tue, ou sa bouche ou ses yeux !</l>
             <l n="1453" xml:id="l1453">Souscrivez à l'arrêt, dont elle me menace,</l>
             <l n="1454" xml:id="l1454">Privé de sa faveur, je ne veux point de grâce :</l>
-            <l n="1455" xml:id="l1455">Mettez à bout l'effet, qu'amour  a commencé,</l>
+            <l n="1455" xml:id="l1455">Mettez à bout l'effet, qu'amour a commencé,</l>
             <l n="1456" xml:id="l1456">Achevez un trépas, déjà bien avancé ;</l>
             <l n="1457" xml:id="l1457">Et si d'autre intérêt, n'émeut votre colère,</l>
             <l n="1458" xml:id="l1458">Craignez tout, d'une main, qui pût tuer un frère.</l>
           </sp>
-          <sp xml:id="IV06-13" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-13">
             <speaker>LE ROI</speaker>
             <l n="1459" xml:id="l1459">Madame, modérez, vos sensibles regrets,</l>
             <l n="1460" xml:id="l1460">Et laissez à mes soins, nos communs intérêts :</l>
@@ -2372,55 +2448,55 @@
             <l n="1463" xml:id="l1463">Je me dépouillerai de toute passion,</l>
             <l n="1464" xml:id="l1464">Et je lui ferai droit, par sa confession !</l>
           </sp>
-          <sp xml:id="IV06-14" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="IV06-14">
             <speaker>CASSANDRE</speaker>
             <l n="1465" xml:id="l1465">Mon attente, Grand Roi, n'a point été trompée,</l>
-            <l n="1466" xml:id="l1466" part="I">Et...</l>
+            <l n="1466" part="I" xml:id="l1466">Et...</l>
           </sp>
-          <sp xml:id="IV06-15" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-15">
             <speaker>LE ROI</speaker>
             <l part="F">Prince, levez vous, donnez-moi votre épée.</l>
           </sp>
-          <sp xml:id="IV06-16" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV06-16">
             <speaker>LE PRINCE, se levant.</speaker>
             <l n="1467" xml:id="l1467">Mon épée ! Ha ! Mon crime est-il énorme au point ?</l>
-            <l n="1468" xml:id="l1468" part="I">De me...</l>
+            <l n="1468" part="I" xml:id="l1468">De me...</l>
           </sp>
-          <sp xml:id="IV06-17" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-17">
             <speaker>LE ROI</speaker>
             <l part="F">Donnez, vous dis-je, et ne répliquez point.</l>
           </sp>
-          <sp xml:id="IV06-18" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV06-18">
             <speaker>LE PRINCE</speaker>
-            <l n="1469" xml:id="l1469" part="I">La voilà !</l>
+            <l n="1469" part="I" xml:id="l1469">La voilà !</l>
           </sp>
-          <sp xml:id="IV06-19" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-19">
             <speaker>LE ROI, la baillant au Duc.</speaker>
             <l part="M">Tenez, Duc !</l>
           </sp>
-          <sp xml:id="IV06-20" who="OCTAVE">
+          <sp who="OCTAVE" xml:id="IV06-20">
             <speaker>OCTAVE</speaker>
             <l part="F">Ô disgrâce inhumaine !</l>
           </sp>
-          <sp xml:id="IV06-21" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-21">
             <speaker>LE ROI</speaker>
             <l n="1470" xml:id="l1470">Et faites-le garder, en la chambre prochaine.</l>
-            <l n="1471" xml:id="l1471" part="I">Allez !</l>
+            <l n="1471" part="I" xml:id="l1471">Allez !</l>
           </sp>
-          <sp xml:id="IV06-22" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="IV06-22">
             <speaker>LE PRINCE, ayant fait la révérence au Roi, et à Cassandre.</speaker>
             <l part="F">Presse la fin où tu m'a destiné,</l>
             <l n="1472" xml:id="l1472">Sort ! Voilà de tes jeux, et ta roue a tourné ?</l>
           </sp>
-          <sp xml:id="IV06-23" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-23">
             <speaker>LE ROI</speaker>
-            <l n="1473" xml:id="l1473" part="I">Duc !</l>
+            <l n="1473" part="I" xml:id="l1473">Duc !</l>
           </sp>
-          <sp xml:id="IV06-24" who="LEDUC">
+          <sp who="LEDUC" xml:id="IV06-24">
             <speaker>LE DUC</speaker>
             <l part="M">Seigneur !</l>
           </sp>
-          <sp xml:id="IV06-25" who="LEROI">
+          <sp who="LEROI" xml:id="IV06-25">
             <speaker>LE ROI</speaker>
             <l part="F">De ma part, donnez avis au prince,</l>
             <l n="1474" xml:id="l1474">Que sa tête, autrefois si chère à la province ;</l>
@@ -2428,13 +2504,17 @@
             <l n="1476" xml:id="l1476">Qui fera détester, son crime à nos neveux.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
-          <head>SCÈNE VII. Le Roi, Cassandre, Octave, Gardes.<listPerson type="configuration" xml:id="conf29"><person corresp="#LEROI"/><person corresp="#CASSANDRE"/><person corresp="#OCTAVE"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="IV07-1" who="LEROI">
+        <div2 n="7" type="scene" xml:id="IV07">
+          <head>SCÈNE VII. Le Roi, Cassandre, Octave, Gardes.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#LEROI"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#OCTAVE"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEROI" xml:id="IV07-1">
             <speaker>LE ROI, à Octave.</speaker>
             <l n="1477" xml:id="l1477">Vous, conduisez Madame, et la rendez chez elle.</l>
           </sp>
-          <sp xml:id="IV07-2" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="IV07-2">
             <speaker>CASSANDRE, à genoux.</speaker>
             <l n="1478" xml:id="l1478">Grand Roi, des plus grands rois, le plus parfait modèle ;</l>
             <l n="1479" xml:id="l1479">Conservez invaincu, cet invincible sein,</l>
@@ -2442,7 +2522,7 @@
             <l n="1481" xml:id="l1481">Et constant, écoutez, contre votre indulgence,</l>
             <l n="1482" xml:id="l1482">Le sang d'un fils, qui crie, et demande vengeance.</l>
           </sp>
-          <sp xml:id="IV07-3" who="LEROI">
+          <sp who="LEROI" xml:id="IV07-3">
             <speaker>LE ROI</speaker>
             <l n="1483" xml:id="l1483">Ce coup, n'est pas, Madame, un crime à protéger,</l>
             <l n="1484" xml:id="l1484">J'aurai soin de punir, et non pas de venger.</l>
@@ -2454,15 +2534,17 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE I. Théodore, Léonor.<listPerson type="configuration" xml:id="conf31"><person corresp="#THEODORE"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="V01-1" who="THEODORE">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE I. Théodore, Léonor.<listPerson type="configuration" xml:id="conf31">
+            <person corresp="#THEODORE"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="THEODORE" xml:id="V01-1">
             <speaker>THÉODORE,</speaker>
             <l n="1489" xml:id="l1489">De quel air, Léonor, a-t-il reçu ma lettre ?</l>
           </sp>
-          <sp xml:id="V01-2" who="LEONOR">
+          <sp who="LEONOR" xml:id="V01-2">
             <speaker>LÉONOR</speaker>
             <l n="1490" xml:id="l1490">D'un air et d'un visage, à vous tout promettre.</l>
             <l n="1491" xml:id="l1491">En vain, sa modestie, a voulu déguiser,</l>
@@ -2470,7 +2552,7 @@
             <l n="1493" xml:id="l1493">Comme à force, imprimant, sur ce cher caractère,</l>
             <l n="1494" xml:id="l1494">Une marque d'un feu, qu'il sent, mais qu'il veut taire.</l>
           </sp>
-          <sp xml:id="V01-3" who="THEODORE">
+          <sp who="THEODORE" xml:id="V01-3">
             <speaker>THÉODORE</speaker>
             <l n="1495" xml:id="l1495">Que tu prends mal ton temps, pour éprouver un cour,</l>
             <l n="1496" xml:id="l1496">Que la douleur éprouve, avec tant de rigueur :</l>
@@ -2488,33 +2570,36 @@
             <l n="1508" xml:id="l1508">Celui... Mais le Duc vient. Léonor, laissez-nous.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Le Duc, Léonor. <listPerson type="configuration" xml:id="conf32"><person corresp="#LEDUC"/><person corresp="#THEODORE"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="V02-1" who="LEDUC">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Le Duc, Léonor. <listPerson type="configuration" xml:id="conf32">
+            <person corresp="#LEDUC"/>
+            <person corresp="#THEODORE"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="LEDUC" xml:id="V02-1">
             <speaker>LE DUC</speaker>
-            <l n="1509" xml:id="l1509">Brûlant de vous servir,  adorable Princesse,</l>
+            <l n="1509" xml:id="l1509">Brûlant de vous servir, adorable Princesse,</l>
             <l n="1510" xml:id="l1510">Je me rends par votre ordre, aux pieds de votre altesse.</l>
           </sp>
-          <sp xml:id="V02-2" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-2">
             <speaker>THÉODORE</speaker>
             <l n="1511" xml:id="l1511">Ne me flattez point ! Et m'en puis-je vanter ?</l>
           </sp>
-          <sp xml:id="V02-3" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-3">
             <speaker>LE DUC</speaker>
             <l n="1512" xml:id="l1512">Cette épreuve, Madame, est facile à tenter ;</l>
             <l n="1513" xml:id="l1513">J'ai du sang à répandre, et je porte une épée,</l>
             <l n="1514" xml:id="l1514">Et ma main, pour vos lois, brûle d'être occupée.</l>
           </sp>
-          <sp xml:id="V02-4" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-4">
             <speaker>THÉODORE</speaker>
             <l n="1515" xml:id="l1515">Je n'exige pas tant de votre affection</l>
             <l n="1516" xml:id="l1516">Et je ne veux de vous, qu'une confession.</l>
           </sp>
-          <sp xml:id="V02-5" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-5">
             <speaker>LE DUC</speaker>
-            <l n="1517" xml:id="l1517" part="I">Quelle ! Ordonnez-la moi.</l>
+            <l n="1517" part="I" xml:id="l1517">Quelle ! Ordonnez-la moi.</l>
           </sp>
-          <sp xml:id="V02-6" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-6">
             <speaker>THÉODORE</speaker>
             <l part="F">Savoir de votre bouche,</l>
             <l n="1518" xml:id="l1518">De quel généreux objet, le mérite vous touche,</l>
@@ -2523,17 +2608,17 @@
             <l n="1521" xml:id="l1521">J'imputais votre prise, aux charmes de Cassandre,</l>
             <l n="1522" xml:id="l1522">Mais l'infant l'adorant, vous n'y pouviez prétendre.</l>
           </sp>
-          <sp xml:id="V02-7" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-7">
             <speaker>LE DUC</speaker>
             <l n="1523" xml:id="l1523">Mes voux ont pris, Madame, un vol plus élevé ;</l>
             <l n="1524" xml:id="l1524">Aussi, par ma raison, n'est-il pas approuvé !</l>
           </sp>
-          <sp xml:id="V02-8" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-8">
             <speaker>THÉODORE</speaker>
             <l n="1525" xml:id="l1525">Ne cherchez point d'excuse, en votre modestie,</l>
-            <l n="1526" xml:id="l1526" part="I">Nommez-la, je le veux.</l>
+            <l n="1526" part="I" xml:id="l1526">Nommez-la, je le veux.</l>
           </sp>
-          <sp xml:id="V02-9" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-9">
             <speaker>LE DUC</speaker>
             <l part="F">Je suis sans répartie ;</l>
             <l n="1527" xml:id="l1527">Mais ma voix cédera, cet office à vos yeux,</l>
@@ -2541,12 +2626,12 @@
             <stage>Lui bayant la lettre ouverte.</stage>
             <l n="1529" xml:id="l1529">Vos doigts ont mis son nom, au bas de cette lettre.</l>
           </sp>
-          <sp xml:id="V02-10" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-10">
             <speaker>THÉODORE ayant lu son nom.</speaker>
             <l n="1530" xml:id="l1530">Votre mérite, Duc, vous peut beaucoup permettre, </l>
-            <l n="1531" xml:id="l1531" part="I">Mais....</l>
+            <l n="1531" part="I" xml:id="l1531">Mais....</l>
           </sp>
-          <sp xml:id="V02-11" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-11">
             <speaker>LE DUC</speaker>
             <l part="F">Sans vous aimer, j'ai condamné mes voux,</l>
             <l n="1532" xml:id="l1532">Je me suis voulu mal du bien que je vous veux,</l>
@@ -2555,25 +2640,25 @@
             <l n="1535" xml:id="l1535">De faire à vos sujets, encenser vos autels,</l>
             <l n="1536" xml:id="l1536">Et de vous procurer, des hommages mortels.</l>
           </sp>
-          <sp xml:id="V02-12" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-12">
             <speaker>THÉODORE</speaker>
             <l n="1537" xml:id="l1537">Si j'ai pouvoir sur vous, puis-je de votre zèle,</l>
             <l n="1538" xml:id="l1538">Me promettre à l'instant, une preuve fidèle ?</l>
           </sp>
-          <sp xml:id="V02-13" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-13">
             <speaker>LE DUC</speaker>
             <l n="1539" xml:id="l1539">Le beau feu, dont pour vous, ce cour est embrasé,</l>
             <l n="1540" xml:id="l1540">Trouvera tout possible, et l'impossible aisé.</l>
           </sp>
-          <sp xml:id="V02-14" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-14">
             <speaker>THÉODORE</speaker>
             <l n="1541" xml:id="l1541">L'effort, vous en sera pénible, mais illustre.</l>
           </sp>
-          <sp xml:id="V02-15" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-15">
             <speaker>LE DUC</speaker>
             <l n="1542" xml:id="l1542">D'une si noble ardeur, il accroîtra le lustre.</l>
           </sp>
-          <sp xml:id="V02-16" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-16">
             <speaker>THÉODORE</speaker>
             <l n="1543" xml:id="l1543">Tant s'en faut, cette épreuve est de tenir caché,</l>
             <l n="1544" xml:id="l1544">Un espoir, dont l'orgueil, vous serait reproché :</l>
@@ -2587,20 +2672,20 @@
             <l n="1552" xml:id="l1552">Faire tomber l'acier, prêt, à trancher ses jours ;</l>
             <l n="1553" xml:id="l1553">De cette épreuve, Duc, vos voux sont-ils capables ?</l>
           </sp>
-          <sp xml:id="V02-17" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-17">
             <speaker>LE DUC</speaker>
             <l n="1554" xml:id="l1554">Oui, Madame, et de plus, puisqu'ils sont si coupables,</l>
             <l n="1555" xml:id="l1555">Il vous sauront, encore, venger de leur orgueil,</l>
             <l n="1556" xml:id="l1556">Et tomber, avec moi, dans la nuit du cercueil.</l>
           </sp>
-          <sp xml:id="V02-18" who="THEODORE">
+          <sp who="THEODORE" xml:id="V02-18">
             <speaker>THÉODORE</speaker>
             <l n="1557" xml:id="l1557">Non, je vous le défends, laissez-moi mes vengeances,</l>
             <l n="1558" xml:id="l1558">Et si j'ai droit sur vous, observez mes défenses.</l>
             <stage>Elle s'en va.</stage>
-            <l n="1559" xml:id="l1559" part="I">Adieu, Duc.</l>
+            <l n="1559" part="I" xml:id="l1559">Adieu, Duc.</l>
           </sp>
-          <sp xml:id="V02-19" who="LEDUC">
+          <sp who="LEDUC" xml:id="V02-19">
             <speaker>LE DUC, seul.</speaker>
             <l part="F">Quel orage agite mon espoir !</l>
             <l n="1560" xml:id="l1560">Et quelle loi mon cour, viens-tu de recevoir !</l>
@@ -2608,30 +2693,33 @@
             <l n="1562" xml:id="l1562">Si je m'en veux punir, j'en reçois la défense ;</l>
             <l n="1563" xml:id="l1563">Me défendre la mort, sans me vouloir guérir,</l>
             <l n="1564" xml:id="l1564">N'est-ce pas m'ordonner de vivre, et de mourir !</l>
-            <l n="1565" xml:id="l1565" part="I">Mais...</l>
+            <l n="1565" part="I" xml:id="l1565">Mais...</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Le Roi, Le Duc, Gardes.<listPerson type="configuration" xml:id="conf33"><person corresp="#LEROI"/><person corresp="#LEDUC"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="V03-1" who="LEROI">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Le Roi, Le Duc, Gardes.<listPerson type="configuration" xml:id="conf33">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEDUC"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEROI" xml:id="V03-1">
             <speaker>LE ROI</speaker>
             <l part="F">Ô jour à jamais funèbre à la province !</l>
-            <l n="1566" xml:id="l1566" part="I">Federic ?</l>
+            <l n="1566" part="I" xml:id="l1566">Federic ?</l>
           </sp>
-          <sp xml:id="V03-2" who="LEDUC">
+          <sp who="LEDUC" xml:id="V03-2">
             <speaker>LE DUC</speaker>
             <l part="M">Quoi Seigneur.</l>
           </sp>
-          <sp xml:id="V03-3" who="LEROI">
+          <sp who="LEROI" xml:id="V03-3">
             <speaker>LE ROI</speaker>
             <l part="F">Faites venir le Prince.</l>
           </sp>
-          <sp xml:id="V03-4" who="LEDUC">
+          <sp who="LEDUC" xml:id="V03-4">
             <speaker>LE DUC, sortant avec les gardes.</speaker>
             <l n="1567" xml:id="l1567">Il sera superflu, de tenter mon crédit,</l>
             <l n="1568" xml:id="l1568">Le sang fait son office, et le roi s'attendrit.</l>
           </sp>
-          <sp xml:id="V03-5" who="LEROI">
+          <sp who="LEROI" xml:id="V03-5">
             <speaker>LE ROI, seul, rêvant, et se promenant.</speaker>
             <l n="1569" xml:id="l1569">Trêve, trêve, nature, aux sanglantes batailles,</l>
             <l n="1570" xml:id="l1570">Qui si cruellement, déchirant mes entrailles ;</l>
@@ -2648,60 +2736,62 @@
             <stage>Ils sortent.</stage>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Le Roi, Le Prince.<listPerson type="configuration" xml:id="conf34"><person corresp="#LEPRINCE"/><person corresp="#LEROI"/></listPerson></head>
-          <sp xml:id="V04-1" who="LEPRINCE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Le Roi, Le Prince.<listPerson type="configuration" xml:id="conf34">
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#LEROI"/></listPerson></head>
+          <sp who="LEPRINCE" xml:id="V04-1">
             <speaker>LE PRINCE</speaker>
             <l n="1581" xml:id="l1581">Venez-vous conserver, ou venger votre race ;</l>
             <l n="1582" xml:id="l1582">M'annoncez-vous, mon père, ou ma rage ou ma grâce.</l>
           </sp>
-          <sp xml:id="V04-2" who="LEROI">
+          <sp who="LEROI" xml:id="V04-2">
             <speaker>LE ROI pleurant.</speaker>
-            <l n="1583" xml:id="l1583" part="I">Embrassez-moi, mon fils.</l>
+            <l n="1583" part="I" xml:id="l1583">Embrassez-moi, mon fils.</l>
           </sp>
-          <sp xml:id="V04-3" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V04-3">
             <speaker>LE PRINCE</speaker>
             <l part="F">Seigneur ? Quelle bonté !</l>
             <l n="1584" xml:id="l1584">Quelle effort de tendresse, et quelle nouveauté !</l>
             <l n="1585" xml:id="l1585">Voulez-vous, ou marquer, ou remettre mes peines ?</l>
             <l n="1586" xml:id="l1586">Et vos bras me sont-ils des faveurs ou des chaînes ?</l>
           </sp>
-          <sp xml:id="V04-4" who="LEROI">
+          <sp who="LEROI" xml:id="V04-4">
             <speaker>LE ROI pleurant.</speaker>
             <l n="1587" xml:id="l1587">Avec le dernier, de leurs embrassements,</l>
             <l n="1588" xml:id="l1588">Recevez de mon cour, les derniers sentiments :</l>
             <l n="1589" xml:id="l1589">Savez-vous de quel sang, vous avez pris naissance ?</l>
           </sp>
-          <sp xml:id="V04-5" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V04-5">
             <speaker>LE PRINCE</speaker>
             <l n="1590" xml:id="l1590">Je l'ai mal témoigné, mais j'en ai connaissance.</l>
           </sp>
-          <sp xml:id="V04-6" who="LEROI">
+          <sp who="LEROI" xml:id="V04-6">
             <speaker>LE ROI</speaker>
             <l n="1591" xml:id="l1591">Sentez-vous de ce sang, les nobles mouvements ?</l>
           </sp>
-          <sp xml:id="V04-7" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V04-7">
             <speaker>LE PRINCE</speaker>
             <l n="1592" xml:id="l1592">Si je ne les produits, j'en ai les sentiments.</l>
           </sp>
-          <sp xml:id="V04-8" who="LEROI">
+          <sp who="LEROI" xml:id="V04-8">
             <speaker>LE ROI</speaker>
             <l n="1593" xml:id="l1593">Enfin, d'un grand effort, vous trouvez-vous capable ?</l>
           </sp>
-          <sp xml:id="V04-9" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V04-9">
             <speaker>LE PRINCE</speaker>
             <l n="1594" xml:id="l1594">Oui, puisque je résiste à l'ennui qui m'accable,</l>
             <l n="1595" xml:id="l1595">Et qu'un effort mortel, ne peut aller loin.</l>
           </sp>
-          <sp xml:id="V04-10" who="LEROI">
+          <sp who="LEROI" xml:id="V04-10">
             <speaker>LE ROI</speaker>
             <l n="1596" xml:id="l1596">Armez-vous de vertus, vous en avez besoin.</l>
           </sp>
-          <sp xml:id="V04-11" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V04-11">
             <speaker>LE PRINCE</speaker>
             <l n="1597" xml:id="l1597">S'il est temps de partir, mon âme est toute prête.</l>
           </sp>
-          <sp xml:id="V04-12" who="LEROI">
+          <sp who="LEROI" xml:id="V04-12">
             <speaker>LE ROI</speaker>
             <l n="1598" xml:id="l1598">L'échafaud l'est aussi, portez-y votre tête ;</l>
             <l n="1599" xml:id="l1599">Plus condamné que vous, mon cour vous y suivra,</l>
@@ -2717,7 +2807,7 @@
             <l n="1609" xml:id="l1609">Et c'est une chimère aux rois que la justice ;</l>
             <l n="1610" xml:id="l1610">Ou régnant à l'État, je dois ce sacrifice.</l>
           </sp>
-          <sp xml:id="V04-13" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V04-13">
             <speaker>LE PRINCE</speaker>
             <l n="1611" xml:id="l1611">Et bien, achevez-le, voilà ce col tout prêt,</l>
             <l n="1612" xml:id="l1612">Le coupable, grand Roi, souscrit à votre arrêt ;</l>
@@ -2744,7 +2834,7 @@
             <l n="1633" xml:id="l1633">Suis ravi de savoir, que ma mort y réponde,</l>
             <l n="1634" xml:id="l1634">Et que mourant, je plaise, aux plus yeux du monde.</l>
           </sp>
-          <sp xml:id="V04-14" who="LEROI">
+          <sp who="LEROI" xml:id="V04-14">
             <speaker>LE ROI</speaker>
             <l n="1635" xml:id="l1635">À quoi que votre cour, destine votre mort,</l>
             <l n="1636" xml:id="l1636">Allez vous préparer, à cet illustre effort ;</l>
@@ -2758,17 +2848,19 @@
             <l n="1643" xml:id="l1643">Si né, pour commander, et destiné si haut,</l>
             <l n="1644" xml:id="l1644">Vous mourez sur un trône, ou sur un échafaud.</l>
             <stage>Le roi tape du pied pour faire venir le Duc. Le duc entre avec des gardes.</stage>
-            <l n="1645" xml:id="l1645" part="I">Duc, remenez le prince.</l>
+            <l n="1645" part="I" xml:id="l1645">Duc, remenez le prince.</l>
           </sp>
-          <sp xml:id="V04-15" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V04-15">
             <speaker>LE PRINCE, s'en allant.</speaker>
             <l part="F">Ô vertu trop sévère !</l>
             <l n="1646" xml:id="l1646">Venceslas, vit encore, et je n'ai plus de père !</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Le Roi, Gardes.<listPerson type="configuration" xml:id="conf35"><person corresp="#LEROI"/><person corresp="#Gardes"/></listPerson></head>
-          <sp xml:id="V05-1" who="LEROI">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Le Roi, Gardes.<listPerson type="configuration" xml:id="conf35">
+            <person corresp="#LEROI"/>
+            <person corresp="#Gardes"/></listPerson></head>
+          <sp who="LEROI" xml:id="V05-1">
             <speaker>LE ROI</speaker>
             <l n="1647" xml:id="l1647">Ô justice inhumaine, et devoirs ennemis,</l>
             <l n="1648" xml:id="l1648">Pour conserver mon sceptre, il faut perdre mon fils !</l>
@@ -2782,9 +2874,14 @@
             <l n="1656" xml:id="l1656">Plus que mon propre fils, et que mon propre sang !</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE VI. Théodore, Cassandre, Léonor, Le Roi, Gardes.<listPerson type="configuration" xml:id="conf36"><person corresp="#THEODORE"/><person corresp="#CASSANDRE"/><person corresp="#LEROI"/><person corresp="#Gardes"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="V06-1" who="THEODORE">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE VI. Théodore, Cassandre, Léonor, Le Roi, Gardes.<listPerson type="configuration" xml:id="conf36">
+            <person corresp="#THEODORE"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#Gardes"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="THEODORE" xml:id="V06-1">
             <speaker>THÉODORE</speaker>
             <l n="1657" xml:id="l1657">Par quelle loi, Seigneur, si barbare et si dure,</l>
             <l n="1658" xml:id="l1658">Pouviez-vous renverser, celle de la nature ?</l>
@@ -2811,7 +2908,7 @@
             <l n="1679" xml:id="l1679">Son ennui si profond, n'a su nous résister,</l>
             <l n="1680" xml:id="l1680">Un fils, enfin, n'a plus, qu'un père à surmonter.</l>
           </sp>
-          <sp xml:id="V06-2" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="V06-2">
             <speaker>CASSANDRE</speaker>
             <l n="1681" xml:id="l1681">Je revenais, Seigneur, demander son supplice,</l>
             <l n="1682" xml:id="l1682">Et de ce noble effort, presser votre justice ;</l>
@@ -2834,7 +2931,7 @@
             <l n="1699" xml:id="l1699">Au défaut de celui, qu'on te refusera,</l>
             <l n="1700" xml:id="l1700">J'ai du sang cher amant, qui te satisfera.</l>
           </sp>
-          <sp xml:id="V06-3" who="LEROI">
+          <sp who="LEROI" xml:id="V06-3">
             <speaker>LE ROI</speaker>
             <l n="1701" xml:id="l1701">Vous ne pouvez douter, Duchesse, et vous Infante,</l>
             <l n="1702" xml:id="l1702">Que père, je voudrais répondre à votre attente ;</l>
@@ -2858,13 +2955,19 @@
             <l n="1720" xml:id="l1720">Sont d'illustres effets, d'une même vertu.</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
-          <head>SCÈNE VII. Le Duc, Le Roi, Théodore, Cassandre, Léonor, Gardes.<listPerson type="configuration" xml:id="conf37"><person corresp="#LEROI"/><person corresp="#LEDUC"/><person corresp="#Gardes"/><person corresp="#CASSANDRE"/><person corresp="#THEODORE"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="V07-1" who="LEROI">
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE VII. Le Duc, Le Roi, Théodore, Cassandre, Léonor, Gardes.<listPerson type="configuration" xml:id="conf37">
+            <person corresp="#LEROI"/>
+            <person corresp="#LEDUC"/>
+            <person corresp="#Gardes"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#THEODORE"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="LEROI" xml:id="V07-1">
             <speaker>LE ROI</speaker>
-            <l n="1721" xml:id="l1721" part="I">Que fait le prince, Duc ?</l>
+            <l n="1721" part="I" xml:id="l1721">Que fait le prince, Duc ?</l>
           </sp>
-          <sp xml:id="V07-2" who="LEDUC">
+          <sp who="LEDUC" xml:id="V07-2">
             <speaker>LE DUC</speaker>
             <l part="F">C'est en ce moment, Sire,</l>
             <l n="1722" xml:id="l1722">Qu'il est prince, en effet, et qu'il peut se le dire !</l>
@@ -2875,31 +2978,31 @@
             <l n="1727" xml:id="l1727">Et m'envier, un bien, que ce bras m'a produit,</l>
             <l n="1728" xml:id="l1728">De mes travaux, grand Roi, je demande le fruit.</l>
           </sp>
-          <sp xml:id="V07-3" who="LEROI">
+          <sp who="LEROI" xml:id="V07-3">
             <speaker>LE ROI</speaker>
             <l n="1729" xml:id="l1729">Il est juste, et fut il, de toute ma province.</l>
           </sp>
-          <sp xml:id="V07-4" who="LEDUC">
+          <sp who="LEDUC" xml:id="V07-4">
             <speaker>LE DUC</speaker>
             <l n="1730" xml:id="l1730">Je le restreins, Seigneur, à la grâce du prince.</l>
           </sp>
-          <sp xml:id="V07-5" who="LEROI">
+          <sp who="LEROI" xml:id="V07-5">
             <speaker>LE ROI</speaker>
-            <l n="1731" xml:id="l1731" part="I">Quoi !</l>
+            <l n="1731" part="I" xml:id="l1731">Quoi !</l>
           </sp>
-          <sp xml:id="V07-6" who="LEDUC">
+          <sp who="LEDUC" xml:id="V07-6">
             <speaker>LE DUC</speaker>
             <l part="F">J'ai votre parole, et ce dépôt sacré,</l>
             <l n="1732" xml:id="l1732">Contre votre refus, m'est un gage assuré ;</l>
             <l n="1733" xml:id="l1733">J'ai payé de mon sang, l'heur que j'ose prétendre.</l>
           </sp>
-          <sp xml:id="V07-7" who="LEROI">
+          <sp who="LEROI" xml:id="V07-7">
             <speaker>LE ROI</speaker>
             <l n="1734" xml:id="l1734">Quoi ? Federic, aussi, conspire, à me surprendre !</l>
             <l n="1735" xml:id="l1735">Quel charme, contre un père, en faveur de son fils,</l>
             <l n="1736" xml:id="l1736">Suscite, et fait parler, ses propres ennemis ?</l>
           </sp>
-          <sp xml:id="V07-8" who="LEDUC">
+          <sp who="LEDUC" xml:id="V07-8">
             <speaker>LE DUC</speaker>
             <l n="1737" xml:id="l1737">C'est peu, que pour un prince, une faute s'efface !</l>
             <l n="1738" xml:id="l1738">L'État qu'il doit régir, lui doit bien une grâce ;</l>
@@ -2911,9 +3014,15 @@
             <l n="1744" xml:id="l1744">Et père, devez-vous, vous rendre le dernier ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
-          <head>SCÈNE VIII. Octave, Le Roi, Le Duc, Théodore, Cassandre, Léonor, Gardes.<listPerson type="configuration" xml:id="conf38"><person corresp="#OCTAVE"/><person corresp="#LEROI"/><person corresp="#LEONOR"/><person corresp="#THEODORE"/><person corresp="#Gardes"/><person corresp="#CASSANDRE"/></listPerson></head>
-          <sp xml:id="V08-1" who="OCTAVE">
+        <div2 n="8" type="scene" xml:id="V08">
+          <head>SCÈNE VIII. Octave, Le Roi, Le Duc, Théodore, Cassandre, Léonor, Gardes.<listPerson type="configuration" xml:id="conf38">
+            <person corresp="#OCTAVE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#LEONOR"/>
+            <person corresp="#THEODORE"/>
+            <person corresp="#Gardes"/>
+            <person corresp="#CASSANDRE"/></listPerson></head>
+          <sp who="OCTAVE" xml:id="V08-1">
             <speaker>OCTAVE hors d'haleine.</speaker>
             <l n="1745" xml:id="l1745">Seigneur, d'un cri commun, toute le populace,</l>
             <l n="1746" xml:id="l1746">Parle en faveur du Prince, et demande sa grâce ;</l>
@@ -2926,36 +3035,43 @@
             <l n="1753" xml:id="l1753">Et si cette chaleur, n'est bientôt apaisée,</l>
             <l n="1754" xml:id="l1754">Jamais sédition, ne fut plus disposée ;</l>
             <l n="1755" xml:id="l1755">En vain pour y mettre ordre, et pour les contenir,</l>
-            <l n="1756" xml:id="l1756" part="I">J'ai voulu...</l>
+            <l n="1756" part="I" xml:id="l1756">J'ai voulu...</l>
           </sp>
-          <sp xml:id="V08-2" who="LEROI">
+          <sp who="LEROI" xml:id="V08-2">
             <speaker>LE ROI à Octave.</speaker>
             <l part="F">C'est assez, faites-le moi venir.</l>
             <stage>Octave va quérir le Prince.</stage>
           </sp>
-          <sp xml:id="V08-3" who="LEONOR">
+          <sp who="LEONOR" xml:id="V08-3">
             <speaker>LÉONOR</speaker>
-            <l n="1757" xml:id="l1757" part="I">Ciel seconde nos voux.</l>
+            <l n="1757" part="I" xml:id="l1757">Ciel seconde nos voux.</l>
           </sp>
-          <sp xml:id="V08-4" who="THEODORE">
+          <sp who="THEODORE" xml:id="V08-4">
             <speaker>THÉODORE</speaker>
             <l part="F">Voyons, cette aventure.</l>
           </sp>
-          <sp xml:id="V08-5" who="LEROI">
+          <sp who="LEROI" xml:id="V08-5">
             <speaker>LE ROI, rêvant et se promenant à grands pas.</speaker>
             <l n="1758" xml:id="l1758">Oui, ma fille, oui Cassandre, oui, parole, oui, nature !</l>
             <l n="1759" xml:id="l1759">Oui peuples, il faut vouloir, ce que vous souhaitez ;</l>
             <l n="1760" xml:id="l1760">Et par vos sentiments, réglez mes volontés.</l>
           </sp>
         </div2>
-        <div2 xml:id="V09" type="scene" n="9">
-          <head>SCÈNE DERNIÈRE. Le Prince, Le Roi, Le Duc, Théodore, Cassandre, Léonor, Gardes.<listPerson type="configuration" xml:id="conf39"><person corresp="#LEPRINCE"/><person corresp="#LEROI"/><person corresp="#LEDUC"/><person corresp="#THEODORE"/><person corresp="#CASSANDRE"/><person corresp="#Gardes"/><person corresp="#LEONOR"/></listPerson></head>
-          <sp xml:id="V09-1" who="LEPRINCE">
+        <div2 n="9" type="scene" xml:id="V09">
+          <head>SCÈNE DERNIÈRE. Le Prince, Le Roi, Le Duc, Théodore, Cassandre, Léonor, Gardes.<listPerson type="configuration" xml:id="conf39">
+            <person corresp="#LEPRINCE"/>
+            <person corresp="#LEROI"/>
+            <person corresp="#LEDUC"/>
+            <person corresp="#THEODORE"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#Gardes"/>
+            <person corresp="#LEONOR"/></listPerson></head>
+          <sp who="LEPRINCE" xml:id="V09-1">
             <speaker>LE PRINCE au pied du Roi,</speaker>
             <stage>Le prince et Octave entrent.</stage>
-            <l n="1761" xml:id="l1761" part="I">Par quel heur.</l>
+            <l n="1761" part="I" xml:id="l1761">Par quel heur.</l>
           </sp>
-          <sp xml:id="V09-2" who="LEROI">
+          <sp who="LEROI" xml:id="V09-2">
             <speaker>LE ROI, le relevant.</speaker>
             <l part="F">Levez-vous ! Une couronne, Prince,</l>
             <l n="1762" xml:id="l1762">Sous qui j'ai quarante ans, régi cette province ;</l>
@@ -2977,11 +3093,11 @@
             <l n="1778" xml:id="l1778">Et donner en mon fils, un père à mon Empire.</l>
             <stage>Lui baillant le couronne.</stage>
           </sp>
-          <sp xml:id="V09-3" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V09-3">
             <speaker>LE PRINCE</speaker>
-            <l n="1779" xml:id="l1779" part="I">Que faites-vous grand Roi ?</l>
+            <l n="1779" part="I" xml:id="l1779">Que faites-vous grand Roi ?</l>
           </sp>
-          <sp xml:id="V09-4" who="LEROI">
+          <sp who="LEROI" xml:id="V09-4">
             <speaker>LE ROI</speaker>
             <l part="F">M'appeler de ce nom,</l>
             <l n="1780" xml:id="l1780">C'est hors, de mon pouvoir, mettre votre pardon :</l>
@@ -3000,20 +3116,20 @@
             <l n="1793" xml:id="l1793">Sans peine, je descends de ce degré suprême,</l>
             <l n="1794" xml:id="l1794">J'aime mieux conserver un fils, qu'un diadème.</l>
           </sp>
-          <sp xml:id="V09-5" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V09-5">
             <speaker>LE PRINCE</speaker>
             <l n="1795" xml:id="l1795">Si vous ne pouvez être, et mon père, et mon roi,</l>
             <l n="1796" xml:id="l1796">Puis-je être votre fils, et vous donner la loi ?</l>
             <l n="1797" xml:id="l1797">Sans peine, je renonce, à ce degré suprême ;</l>
             <l n="1798" xml:id="l1798">Abandonnez plutôt, un fils qu'un diadème.</l>
           </sp>
-          <sp xml:id="V09-6" who="LEROI">
+          <sp who="LEROI" xml:id="V09-6">
             <speaker>LE ROI</speaker>
             <l n="1799" xml:id="l1799">Je n'y prétends plus rien, ne me le rendez pas,</l>
             <l n="1800" xml:id="l1800">Qui pardonne à son roi, punirait Ladislas ;</l>
             <l n="1801" xml:id="l1801">Et sans cet ornement, ferait tomber sa tête.</l>
           </sp>
-          <sp xml:id="V09-7" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V09-7">
             <speaker>LE PRINCE</speaker>
             <l n="1802" xml:id="l1802">À vos ordres, Seigneur, la voilà toute prête ;</l>
             <l n="1803" xml:id="l1803">Je la conserverai, puisque je vous la dois,</l>
@@ -3025,24 +3141,24 @@
             <l n="1808" xml:id="l1808">Et de votre courage, et de votre bonté ;</l>
             <l n="1809" xml:id="l1809">Le soin si généreux, qu'ils ont eu pour ma vie.</l>
           </sp>
-          <sp xml:id="V09-8" who="LEDUC">
+          <sp who="LEDUC" xml:id="V09-8">
             <speaker>LE DUC</speaker>
             <l n="1810" xml:id="l1810">Il ont servi l'État, alors qu'il l'ont servie ;</l>
             <l n="1811" xml:id="l1811">Mais, et vers la couronne, et vers vous acquitté,</l>
             <l n="1812" xml:id="l1812">J'implore une faveur de votre majesté.</l>
           </sp>
-          <sp xml:id="V09-9" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V09-9">
             <speaker>LE PRINCE</speaker>
-            <l n="1813" xml:id="l1813" part="I">Quelle ?</l>
+            <l n="1813" part="I" xml:id="l1813">Quelle ?</l>
           </sp>
-          <sp xml:id="V09-10" who="LEDUC">
+          <sp who="LEDUC" xml:id="V09-10">
             <speaker>LE DUC</speaker>
             <l part="F">Votre congé, Seigneur, et ma retraite,</l>
             <l n="1814" xml:id="l1814">Pour ne vous plus nourrir, cette haine secrète,</l>
             <l n="1815" xml:id="l1815">Qui m'expliquant si mal, vous rend toujours suspects,</l>
             <l n="1816" xml:id="l1816">Mes plus ardents devoirs, et mes plus grands respects ;</l>
           </sp>
-          <sp xml:id="V09-11" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V09-11">
             <speaker>LE PRINCE</speaker>
             <l n="1817" xml:id="l1817">Non, non, vous devez, Duc, vos soins, à ma province ;</l>
             <l n="1818" xml:id="l1818">Roi, je n'hérite point, des différents du prince ;</l>
@@ -3066,25 +3182,25 @@
             <stage>Montrant Théodore.</stage>
             <l n="1836" xml:id="l1836">Ma soeur sera le noud de votre affection.</l>
           </sp>
-          <sp xml:id="V09-12" who="LEDUC">
+          <sp who="LEDUC" xml:id="V09-12">
             <speaker>LE DUC</speaker>
             <l n="1837" xml:id="l1837">J'y prétendrais en vain, après que sa défense,</l>
             <l n="1838" xml:id="l1838">M'a de sa servitude, interdit la licence.</l>
           </sp>
-          <sp xml:id="V09-13" who="THEODORE">
+          <sp who="THEODORE" xml:id="V09-13">
             <speaker>THÉODORE</speaker>
             <l n="1839" xml:id="l1839">Je vous avais prescrit, de cacher vos liens,</l>
             <l n="1840" xml:id="l1840">Mais les ordres du Roi, sont au dessus des miens ;</l>
             <l n="1841" xml:id="l1841">Et me donnant à vous, font cesser ma défense.</l>
           </sp>
-          <sp xml:id="V09-14" who="LEDUC">
+          <sp who="LEDUC" xml:id="V09-14">
             <speaker>LE DUC</speaker>
             <l n="1842" xml:id="l1842">Ô de tous mes travaux, trop digne récompense !</l>
             <l n="1843" xml:id="l1843">C'est à ce prix, Seigneur, qu'aspirait mon crédit !</l>
             <stage>Au prince.</stage>
             <l n="1844" xml:id="l1844">Et vous me le rendez, me l'ayant interdit.</l>
           </sp>
-          <sp xml:id="V09-15" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V09-15">
             <speaker>LE PRINCE</speaker>
             <l n="1845" xml:id="l1845">J'ai, pour vous, accepté la vie, et la couronne,</l>
             <l n="1846" xml:id="l1846">Madame, ordonnez-en, je vous les abandonne ;</l>
@@ -3092,38 +3208,38 @@
             <l n="1848" xml:id="l1848">Je les rends, j'y renonce, et n'en veux point sans vous ;</l>
             <l n="1849" xml:id="l1849">De vous seule dépend, et mon sort, et me vie.</l>
           </sp>
-          <sp xml:id="V09-16" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="V09-16">
             <speaker>CASSANDRE</speaker>
             <l n="1850" xml:id="l1850">Après, qu'à mon amant, votre main l'a ravit ?</l>
           </sp>
-          <sp xml:id="V09-17" who="LEROI">
+          <sp who="LEROI" xml:id="V09-17">
             <speaker>LE ROI</speaker>
             <l n="1851" xml:id="l1851">Le sceptre que j'y mets à son crime effacé,</l>
             <l n="1852" xml:id="l1852">Dessous un nouveau règne, oublions le passé ;</l>
             <l n="1853" xml:id="l1853">Qu'avec le nom de prince, il perde votre haine,</l>
             <l n="1854" xml:id="l1854">Quand je vous donne un roi, donnez-nous une reine.</l>
           </sp>
-          <sp xml:id="V09-18" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="V09-18">
             <speaker>CASSANDRE</speaker>
             <l n="1855" xml:id="l1855">Puis-je sans un trop lâche, et trop sensible effort,</l>
             <l n="1856" xml:id="l1856">Épouser le meurtrier, étant veuve du mort.</l>
-            <l n="1857" xml:id="l1857" part="I">Puis-je ?</l>
+            <l n="1857" part="I" xml:id="l1857">Puis-je ?</l>
           </sp>
-          <sp xml:id="V09-19" who="LEROI">
+          <sp who="LEROI" xml:id="V09-19">
             <speaker>LE ROI</speaker>
             <l part="M">Le temps ma fille.</l>
           </sp>
-          <sp xml:id="V09-20" who="CASSANDRE">
+          <sp who="CASSANDRE" xml:id="V09-20">
             <speaker>CASSANDRE</speaker>
             <l part="F">Ha quel temps le peut faire ?</l>
           </sp>
-          <sp xml:id="V09-21" who="LEPRINCE">
+          <sp who="LEPRINCE" xml:id="V09-21">
             <speaker>LE PRINCE</speaker>
             <l n="1858" xml:id="l1858">Si je n'obtient au moins, permettez que j'espère,</l>
             <l n="1859" xml:id="l1859">Tant de soumissions, lasseront vos mépris,</l>
             <l n="1860" xml:id="l1860">Qu'enfin de mon amour, vos voux seront le prix.</l>
           </sp>
-          <sp xml:id="V09-22" who="LEROI">
+          <sp who="LEROI" xml:id="V09-22">
             <speaker>LE ROI</speaker>
             <l n="1861" xml:id="l1861">Allons rendre à l'Infant, nos dernières tendresses,</l>
             <l n="1862" xml:id="l1862">Et dans sa sépulture, enfermer nos tristesses ;</l>

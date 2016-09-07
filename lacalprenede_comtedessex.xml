@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Le Comte d'Essex</title><title type="sub">, tragédie.</title>
-        <author born="1609" born_location="château de Toulgou à Salignac" death="1663" death_location="Les Andelys" academie="1673"><surname>La Calprenède</surname><forename> Gautier Costes de</forename></author>
+        <title>Le Comte d'Essex</title>
+        <title type="sub">, tragédie.</title>
+        <author academie="1673" born="1609" born_location="château de Toulgou à Salignac" death="1663" death_location="Les Andelys">
+          <surname>La Calprenède</surname>
+          <forename> Gautier Costes de</forename>
+        </author>
         <date>1732</date>
       </titleStmt>
       <publicationStmt>
@@ -37,7 +42,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -49,7 +54,7 @@
         <titlePart type="sub">TRAGÉDIE</titlePart>
       </docTitle>
       <docDate value="1654">M. DC. LIV. AVEC PERMISSION.</docDate>
-      <docAuthor id="LA CALPRENEDE, Gautier Costes de" bio="lacalprenede">Par de la CALPRENÈDE.</docAuthor>
+      <docAuthor bio="lacalprenede" id="LA CALPRENEDE, Gautier Costes de">Par de la CALPRENÈDE.</docAuthor>
       <docImprint>
         <privilege id="1653-11-19">
           <head>Extrait du Privilège du Roi.</head>
@@ -78,27 +83,29 @@
       </div>
       <castList>
         <head>LES ACTEURS</head>
-        <castItem><role xml:id="ELISABETH" id="ÉLISABETH" sex="2" type="H" statut="roi" age="A" stat_amour="néant">ÉLISABETH</role>.</castItem>
-        <castItem><role xml:id="ESSEX" id="LE COMTE D'ESSEX" sex="1" type="H" statut="comte" age="A" stat_amour="Élisabeth">LE COMTE D'ESSEX</role>.</castItem>
-        <castItem><role xml:id="SOUBTANTONNE" id="LE COMTE DE SOUBTANTONNE" sex="1" type="H" statut="comte" age="A" stat_amour="néant">LE COMTE DE SOUBTANTONNE</role>.</castItem>
-        <castItem><role xml:id="SALSBURY" id="LE COMTE DE SALSBURY" sex="1" type="H" statut="comte" age="A" stat_amour="néant">LE COMTE DE SALSBURY</role>.</castItem>
-        <castItem><role xml:id="CECILE" id="CÉCILE" sex="1" type="H" statut="secrétaire d'Etat" age="A" stat_amour="néant">CÉCILE</role>, Secrétaire d'État.</castItem>
-        <castItem><role xml:id="RALEIG" id="RALEIG" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">RALEIG</role>, Seigneur Anglais.</castItem>
-        <castItem><role xml:id="POPHAM" id="POPHAM" sex="1" type="H" statut="chancellier" age="A" stat_amour="néant">POPHAM</role>, Chancelier d'Angleterre.</castItem>
-        <castItem><role xml:id="MADAMECECILE" id="MADAME CÉCILE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">Madame CÉCILE</role>, Femme de Cécile.</castItem>
-        <castItem><role xml:id="ALIX" id="ALIX" sex="2" type="H" statut="suivante" age="A" stat_amour="néant">ALIX</role>, Damoiselle d'Élisabeth.</castItem>
-        <castItem><role xml:id="LEONORE" id="LÉONORE" sex="2" type="H" statut="suivante" age="A" stat_amour="néant">LÉONORE</role>, Damoiselle d'Élisabeth. </castItem>
-        <castItem><role xml:id="CAPITAINE" id="CAPITAINE" sex="1" type="H" statut="capitaine" age="A" stat_amour="néant">Un Capitaine des Gardes</role>.</castItem>
-        <castItem><role xml:id="HUISSIER" id="UN HUISSIER" sex="1" type="H" statut="huissier" age="A" stat_amour="néant">Un HUISSIER du Cabinet</role>.</castItem>
+        <castItem><role age="A" id="ÉLISABETH" sex="2" stat_amour="néant" statut="roi" type="H" xml:id="ELISABETH">ÉLISABETH</role>.</castItem>
+        <castItem><role age="A" id="LE COMTE D'ESSEX" sex="1" stat_amour="Élisabeth" statut="comte" type="H" xml:id="ESSEX">LE COMTE D'ESSEX</role>.</castItem>
+        <castItem><role age="A" id="LE COMTE DE SOUBTANTONNE" sex="1" stat_amour="néant" statut="comte" type="H" xml:id="SOUBTANTONNE">LE COMTE DE SOUBTANTONNE</role>.</castItem>
+        <castItem><role age="A" id="LE COMTE DE SALSBURY" sex="1" stat_amour="néant" statut="comte" type="H" xml:id="SALSBURY">LE COMTE DE SALSBURY</role>.</castItem>
+        <castItem><role age="A" id="CÉCILE" sex="1" stat_amour="néant" statut="secrétaire d'Etat" type="H" xml:id="CECILE">CÉCILE</role>, Secrétaire d'État.</castItem>
+        <castItem><role age="A" id="RALEIG" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="RALEIG">RALEIG</role>, Seigneur Anglais.</castItem>
+        <castItem><role age="A" id="POPHAM" sex="1" stat_amour="néant" statut="chancellier" type="H" xml:id="POPHAM">POPHAM</role>, Chancelier d'Angleterre.</castItem>
+        <castItem><role age="A" id="MADAME CÉCILE" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="MADAMECECILE">Madame CÉCILE</role>, Femme de Cécile.</castItem>
+        <castItem><role age="A" id="ALIX" sex="2" stat_amour="néant" statut="suivante" type="H" xml:id="ALIX">ALIX</role>, Damoiselle d'Élisabeth.</castItem>
+        <castItem><role age="A" id="LÉONORE" sex="2" stat_amour="néant" statut="suivante" type="H" xml:id="LEONORE">LÉONORE</role>, Damoiselle d'Élisabeth. </castItem>
+        <castItem><role age="A" id="CAPITAINE" sex="1" stat_amour="néant" statut="capitaine" type="H" xml:id="CAPITAINE">Un Capitaine des Gardes</role>.</castItem>
+        <castItem><role age="A" id="UN HUISSIER" sex="1" stat_amour="néant" statut="huissier" type="H" xml:id="HUISSIER">Un HUISSIER du Cabinet</role>.</castItem>
       </castList>
-      <set location="Londres" country="Angleterre" periode="XVIème" link="">La Scène est à Londres.</set>
+      <set country="Angleterre" link="" location="Londres" periode="XVIème">La Scène est à Londres.</set>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Élisabeth, Le Comte d'Essex.<listPerson type="configuration" xml:id="conf1"><person corresp="#ELISABETH"/><person corresp="#ESSEX"/></listPerson></head>
-          <sp xml:id="I01-1" who="ELISABETH">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Élisabeth, Le Comte d'Essex.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#ELISABETH"/>
+            <person corresp="#ESSEX"/></listPerson></head>
+          <sp who="ELISABETH" xml:id="I01-1">
             <speaker>ÉLISABETH, dans son cabinet.</speaker>
             <l n="1" xml:id="l1">Donc après tant de biens ton âme déloyale </l>
             <l n="2" xml:id="l2">Abuse lâchement d'une bonté Royale, </l>
@@ -154,7 +161,7 @@
             <l n="51" xml:id="l51">Et qu'il me reste plus ni penser ni discours </l>
             <l n="52" xml:id="l52">Pour te le reprocher du reste de mes jours. </l>
           </sp>
-          <sp xml:id="I01-2" who="ESSEX">
+          <sp who="ESSEX" xml:id="I01-2">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="53" xml:id="l53">Quelque confusion où ce discours plonge </l>
             <l n="54" xml:id="l54">N'en donnez point la cause au remords qui me ronge </l>
@@ -193,7 +200,7 @@
             <l n="87" xml:id="l87">Que la fortune aveugle a relevés de rien, </l>
             <l n="88" xml:id="l88">Bref qui vous servent mal comme je vous sers bien. </l>
           </sp>
-          <sp xml:id="I01-3" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="I01-3">
             <speaker>ÉLISABETH.</speaker>
             <l n="89" xml:id="l89">Dieu, puis-je retenir un courroux légitime </l>
             <l n="90" xml:id="l90">Et puisque cet ingrat persiste dans son crime, </l>
@@ -212,19 +219,19 @@
             <l n="103" xml:id="l103">Que tu la veux cacher par d'inutiles soins, </l>
             <l n="104" xml:id="l104">Et que tu ne saurais confondre mes témoins. </l>
           </sp>
-          <sp xml:id="I01-4" who="ESSEX">
+          <sp who="ESSEX" xml:id="I01-4">
             <speaker>LE COMTE D'ESSEX.</speaker>
-            <l n="105" xml:id="l105" part="I">Vos témoins. </l>
+            <l n="105" part="I" xml:id="l105">Vos témoins. </l>
           </sp>
-          <sp xml:id="I01-5" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="I01-5">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Oui perfide, et tu dois les connaître. </l>
           </sp>
-          <sp xml:id="I01-6" who="ESSEX">
+          <sp who="ESSEX" xml:id="I01-6">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="106" xml:id="l106">Que votre Majesté les fasses donc paraître.</l>
           </sp>
-          <sp xml:id="I01-7" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="I01-7">
             <speaker>ÉLISABETH.</speaker>
             <l n="107" xml:id="l107">Vois cette lettre écrite au Comte de Tiron </l>
             <l n="108" xml:id="l108">Désavoueras-tu point ces armes, ou ce nom ? </l>
@@ -237,7 +244,7 @@
             <l n="115" xml:id="l115">Crois-tu que tes desseins soient assez découverts </l>
             <l n="116" xml:id="l116">Juge à qui je me fie, et de qui je me sers. </l>
           </sp>
-          <sp xml:id="I01-8" who="ESSEX">
+          <sp who="ESSEX" xml:id="I01-8">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="117" xml:id="l117">Juste Dieu se peut-il qu'une Princesse endure </l>
             <l n="118" xml:id="l118">Une si détestable, et si lâche imposture, </l>
@@ -260,10 +267,10 @@
             <l n="135" xml:id="l135">Que si pour m'enlever je voyais mille morts </l>
             <l n="136" xml:id="l136">Mais je suis grâce à Dieu libre de tout remords, </l>
             <l n="137" xml:id="l137">J'ai bien vécu Madame, et si j'ai quelque honte </l>
-            <l n="138" xml:id="l138" part="I">C'est d'avoir trop servi. </l>
+            <l n="138" part="I" xml:id="l138">C'est d'avoir trop servi. </l>
             <stage type="[N/A]">Il déchire la lettre.</stage>
           </sp>
-          <sp xml:id="I01-9" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="I01-9">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Bien, bien Monsieur le Comte</l>
             <l n="139" xml:id="l139">J'ai failli contre l'ordre, et les formalités. </l>
@@ -276,42 +283,47 @@
             <l n="146" xml:id="l146">Mais n'attendez de moi ni grâce, ni supplice ; </l>
             <l n="147" xml:id="l147">Je serai juste, et neutre et les Barons Anglais </l>
             <l n="148" xml:id="l148">Traiterons votre affaire à la rigueur des lois. </l>
-            <l n="149" xml:id="l149" part="I">Adieu retirez-vous. </l>
+            <l n="149" part="I" xml:id="l149">Adieu retirez-vous. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Élisabeth, Alix.<listPerson type="configuration" xml:id="conf2"><person corresp="#ELISABETH"/><person corresp="#ALIX"/></listPerson></head>
-          <sp xml:id="I02-1" who="ELISABETH">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Élisabeth, Alix.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#ELISABETH"/>
+            <person corresp="#ALIX"/></listPerson></head>
+          <sp who="ELISABETH" xml:id="I02-1">
             <speaker>ÉLISABETH.</speaker>
             <l part="M">Ah ma fille. </l>
           </sp>
-          <sp xml:id="I02-2" who="ALIX">
+          <sp who="ALIX" xml:id="I02-2">
             <speaker>ALIX.</speaker>
             <l part="F">Ah Madame. </l>
           </sp>
-          <sp xml:id="I02-3" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="I02-3">
             <speaker>ÉLISABETH.</speaker>
             <l n="150" xml:id="l150">Soutenez ce corps faible et prêt à rendre l'âme </l>
             <l n="151" xml:id="l151">Mon coeur est si pressé de rage et de douleur, </l>
             <l n="152" xml:id="l152">Qu'il succombe sans doute à ce dernier malheur, </l>
             <l n="153" xml:id="l153">Mais il faut qu'il périsse et que tu te hasardes. </l>
             <l n="154" xml:id="l154">Le traître a disparu, Capitaine des Gardes. </l>
-            <l n="155" xml:id="l155" part="I">Holà. </l>
+            <l n="155" part="I" xml:id="l155">Holà. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Le Capitaine des Gardes, Élisabeth, Alix.<listPerson type="configuration" xml:id="conf3"><person corresp="#CAPITAINE"/><person corresp="#ELISABETH"/><person corresp="#ALIX"/></listPerson></head>
-          <sp xml:id="I03-1" who="CAPITAINE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Le Capitaine des Gardes, Élisabeth, Alix.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#CAPITAINE"/>
+            <person corresp="#ELISABETH"/>
+            <person corresp="#ALIX"/></listPerson></head>
+          <sp who="CAPITAINE" xml:id="I03-1">
             <speaker>LE CAPITAINE DES GARDES.</speaker>
             <l part="M">Que vous plaît-il Madame ? </l>
           </sp>
-          <sp xml:id="I03-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="I03-2">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Il faut tout de ce pas. </l>
             <l n="156" xml:id="l156">Mais écoutez bien l'ordre, et ne le changez pas </l>
-            <l n="157" xml:id="l157" part="I">Autrement. </l>
+            <l n="157" part="I" xml:id="l157">Autrement. </l>
           </sp>
-          <sp xml:id="I03-3" who="ALIX">
+          <sp who="ALIX" xml:id="I03-3">
             <speaker>ALIX.</speaker>
             <stage type="[N/A]">Elle lui parle à l'oreille.</stage>
             <l part="F">Juste Ciel Quel changement étrange, </l>
@@ -319,7 +331,7 @@
             <l n="159" xml:id="l159">Et l'on reconnaît bien à voir ses actions </l>
             <l n="160" xml:id="l160">Que son est pressé d'étranges passions. </l>
           </sp>
-          <sp xml:id="I03-4" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="I03-4">
             <speaker>ÉLISABETH.</speaker>
             <l n="161" xml:id="l161">Après sans découvrir vos desseins à personne </l>
             <l n="162" xml:id="l162">Qu'on aille tout d'un temps arrêter Soubtantonne, </l>
@@ -331,9 +343,10 @@
             <l n="168" xml:id="l168">Et votre tête enfin me répond de la leur. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf4"><person corresp="#ELISABETH"/></listPerson></head>
-          <sp xml:id="I04-1" who="ELISABETH">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#ELISABETH"/></listPerson></head>
+          <sp who="ELISABETH" xml:id="I04-1">
             <speaker>ÉLISABETH.</speaker>
             <l n="169" xml:id="l169">Reine au courroux du Ciel en naissant destinée ! </l>
             <l n="170" xml:id="l170">Donne fin à tes maux Princesse infortunée ! </l>
@@ -406,21 +419,23 @@
             <l n="236" xml:id="l236">Tu sauras le pouvoir qui me reste sur toi. </l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Le Comte de Soubtantonne, Le Comte d'Essex.<listPerson type="configuration" xml:id="conf5"><person corresp="#SOUBTANTONNE"/><person corresp="#ESSEX"/></listPerson></head>
-          <sp xml:id="I05-1" who="SOUBTANTONNE">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Le Comte de Soubtantonne, Le Comte d'Essex.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#SOUBTANTONNE"/>
+            <person corresp="#ESSEX"/></listPerson></head>
+          <sp who="SOUBTANTONNE" xml:id="I05-1">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="237" xml:id="l237">Je ne vous flatte point, sa menace m'étonne. </l>
           </sp>
-          <sp xml:id="I05-2" who="ESSEX">
+          <sp who="ESSEX" xml:id="I05-2">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="238" xml:id="l238">Vous ne vîtes jamais une fière Lionne </l>
             <note>Fan : Le petit d'une biche. On écrivait autrefois faon. On appelle aussi fan, le petit d'un élephant. Ce mot vient du Latin infans. Voyez Ménage. [F] ici petit du lion.</note>
             <l n="239" xml:id="l239">Rugir après ses fans avec tant de fureur, </l>
             <l n="240" xml:id="l240">Elle m'a dans l'abord donné quelque terreur </l>
-            <l n="241" xml:id="l241" part="I">Mais après. </l>
+            <l n="241" part="I" xml:id="l241">Mais après. </l>
           </sp>
-          <sp xml:id="I05-3" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="I05-3">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l part="F">Croyez-moi, la Reine est toujours la Reine, </l>
             <l n="242" xml:id="l242">Et vous vous abusez d'une créance vaine, </l>
@@ -443,7 +458,7 @@
             <l n="258" xml:id="l258">De quitter ce pays pour sauver votre tête. </l>
             <l n="259" xml:id="l259">Je ne vois point ici de sûreté pour nous. </l>
           </sp>
-          <sp xml:id="I05-4" who="ESSEX">
+          <sp who="ESSEX" xml:id="I05-4">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="260" xml:id="l260">J'y pourrais bien trouver des remèdes plus doux ; </l>
             <l n="261" xml:id="l261">Et j'ai trop de pouvoir sur l'esprit de la Reine </l>
@@ -459,7 +474,7 @@
             <l n="271" xml:id="l271">Je connais mon pouvoir je la saurai punir </l>
             <l n="272" xml:id="l272">Et quand il me plaira le faire revenir. </l>
           </sp>
-          <sp xml:id="I05-5" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="I05-5">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="273" xml:id="l273">De quelque vanité que votre esprit se flatte </l>
             <l n="274" xml:id="l274">Je crains fort qu'à la fin sa colère n'éclate. </l>
@@ -483,66 +498,69 @@
             <l n="292" xml:id="l292">Et qui sont immolés à ses raisons d'État. </l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>SCÈNE VI. Le Comte de Soubtantonne, Le Comte d'Essex, Le Capitaine des Gardes.<listPerson type="configuration" xml:id="conf6"><person corresp="#SOUBTANTONNE"/><person corresp="#ESSEX"/><person corresp="#CAPITAINE"/></listPerson></head>
-          <sp xml:id="I06-1" who="SOUBTANTONNE">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>SCÈNE VI. Le Comte de Soubtantonne, Le Comte d'Essex, Le Capitaine des Gardes.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#SOUBTANTONNE"/>
+            <person corresp="#ESSEX"/>
+            <person corresp="#CAPITAINE"/></listPerson></head>
+          <sp who="SOUBTANTONNE" xml:id="I06-1">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
-            <l n="293" xml:id="l293" part="I">Mais que veulent ses gens. </l>
+            <l n="293" part="I" xml:id="l293">Mais que veulent ses gens. </l>
           </sp>
-          <sp xml:id="I06-2" who="ESSEX">
+          <sp who="ESSEX" xml:id="I06-2">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Quel dessein vous amène ? </l>
           </sp>
-          <sp xml:id="I06-3" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="I06-3">
             <speaker>LE CAPITAINE.</speaker>
             <l n="294" xml:id="l294">Je vous faits prisonniers de la part de la Reine, </l>
-            <l n="295" xml:id="l295" part="I">Suivez-moi s'il vous plaît. </l>
+            <l n="295" part="I" xml:id="l295">Suivez-moi s'il vous plaît. </l>
           </sp>
-          <sp xml:id="I06-4" who="ESSEX">
+          <sp who="ESSEX" xml:id="I06-4">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Vous vous moquez de nous. </l>
           </sp>
-          <sp xml:id="I06-5" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="I06-5">
             <speaker>LE CAPITAINE.</speaker>
             <l n="296" xml:id="l296">La Reine a commandé qu'on se saisît de vous. </l>
-            <l n="297" xml:id="l297" part="I">Je ne fais que ma charge. </l>
+            <l n="297" part="I" xml:id="l297">Je ne fais que ma charge. </l>
           </sp>
-          <sp xml:id="I06-6" who="ESSEX">
+          <sp who="ESSEX" xml:id="I06-6">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Ah ! Tu te dois méprendre. </l>
           </sp>
-          <sp xml:id="I06-7" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="I06-7">
             <speaker>LE CAPITAINE.</speaker>
-            <l n="298" xml:id="l298" part="I">Je vous connais fort bien. </l>
+            <l n="298" part="I" xml:id="l298">Je vous connais fort bien. </l>
           </sp>
-          <sp xml:id="I06-8" who="ESSEX">
+          <sp who="ESSEX" xml:id="I06-8">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Oses-tu l'entreprendre ? </l>
             <l n="299" xml:id="l299">Insolent, et sais-tu que tu te prends à moi ? </l>
             <l n="300" xml:id="l300">Ah ! Ne m'irrite plus, ami retire-toi, </l>
             <l n="301" xml:id="l301">C'est me presser par trop, si tu n'es las de vivre </l>
-            <l n="302" xml:id="l302" part="I">Ne m'importune plus. </l>
+            <l n="302" part="I" xml:id="l302">Ne m'importune plus. </l>
           </sp>
-          <sp xml:id="I06-9" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="I06-9">
             <speaker>LE CAPITAINE.</speaker>
             <l part="F">Messieurs, il nous faut suivre. </l>
             <l n="303" xml:id="l303">J'obéis à la Reine, et je fais mon devoir. </l>
           </sp>
-          <sp xml:id="I06-10" who="ESSEX">
+          <sp who="ESSEX" xml:id="I06-10">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="304" xml:id="l304">Ah ! Ne me presse plus, ou je te ferai voir. </l>
           </sp>
-          <sp xml:id="I06-11" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="I06-11">
             <speaker>LE CAPITAINE.</speaker>
             <l n="305" xml:id="l305">Monsieur, vous vous nuisez par cette résistance, </l>
             <l n="306" xml:id="l306">Et vous me porterez à quelque violence </l>
             <l n="307" xml:id="l307">Dont je serai marri, mais vous m'y contraignez. </l>
           </sp>
-          <sp xml:id="I06-12" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="I06-12">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
-            <l n="308" xml:id="l308" part="I">Il nous faut obéir. </l>
+            <l n="308" part="I" xml:id="l308">Il nous faut obéir. </l>
           </sp>
-          <sp xml:id="I06-13" who="ESSEX">
+          <sp who="ESSEX" xml:id="I06-13">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Vous régnez, vous régnez, </l>
             <l n="309" xml:id="l309">Superbe Élisabeth ; mais vous serez trompée, </l>
@@ -552,11 +570,14 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Cécile,  Le Comte de Salsbury, Élisabeth.<listPerson type="configuration" xml:id="conf8"><person corresp="#CECILE"/><person corresp="#ELISABETH"/><person corresp="#SALSBURY"/></listPerson></head>
-          <sp xml:id="II01-1" who="CECILE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE PREMIÈRE. Cécile, Le Comte de Salsbury, Élisabeth.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#CECILE"/>
+            <person corresp="#ELISABETH"/>
+            <person corresp="#SALSBURY"/></listPerson></head>
+          <sp who="CECILE" xml:id="II01-1">
             <speaker>CÉCILE.</speaker>
             <l n="313" xml:id="l313">Dans un crime si grand, et de telle importance </l>
             <l n="314" xml:id="l314">Il faut que la justice emporte la clémence, </l>
@@ -586,7 +607,7 @@
             <l n="338" xml:id="l338">De la plus grande Reine et la plus politique </l>
             <l n="339" xml:id="l339">Qui jamais ait porté le diadème au front ? </l>
           </sp>
-          <sp xml:id="II01-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="II01-2">
             <speaker>ÉLISABETH.</speaker>
             <l n="340" xml:id="l340">Dans le milieu du coeur j'ai reçu cet affront, </l>
             <l n="341" xml:id="l341">Et cette trahison trop vivement me blesse, </l>
@@ -604,7 +625,7 @@
             <l n="353" xml:id="l353">Ses belles actions s'effacent dans son crime </l>
             <l n="354" xml:id="l354">Et ma juste colère efface mon estime. </l>
           </sp>
-          <sp xml:id="II01-3" who="SALSBURY">
+          <sp who="SALSBURY" xml:id="II01-3">
             <speaker>LE COMTE DE SALISBURY.</speaker>
             <l n="355" xml:id="l355">Si le Comte d'Essex a failli, comme on dit, </l>
             <l n="356" xml:id="l356">Votre courroux est juste, et je suis interdit. </l>
@@ -631,7 +652,7 @@
             <l n="377" xml:id="l377">Ait pu déshonorer d'une action si lâche </l>
             <l n="378" xml:id="l378">Ce renom éclatant qui n'avait point de tache. </l>
           </sp>
-          <sp xml:id="II01-4" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="II01-4">
             <speaker>ÉLISABETH.</speaker>
             <l n="379" xml:id="l379">Ah ! Je ne sais que trop son perfide dessein, </l>
             <l n="380" xml:id="l380">Il ne peut démentir ses lettres ni son seing, </l>
@@ -648,21 +669,25 @@
             <l n="391" xml:id="l391">Obligez, s'il se peut, ce malheureux ami </l>
             <l n="392" xml:id="l392">À découvrir un mal qu'on ne sait qu'à demi. </l>
           </sp>
-          <sp xml:id="II01-5" who="CECILE">
+          <sp who="CECILE" xml:id="II01-5">
             <speaker>CÉCILE.</speaker>
             <l n="393" xml:id="l393">Quelque rusé qu'il soit, ma ruse est toute prête. </l>
           </sp>
-          <sp xml:id="II01-6" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="II01-6">
             <speaker>ÉLISABETH.</speaker>
             <l n="394" xml:id="l394">Adieu, ce nouveau soin me donne un mal de tête </l>
             <l n="395" xml:id="l395">Dont l'importunité me trouble à tout propos, </l>
             <l n="396" xml:id="l396">Et me force de prendre un moment de repos. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Élisabeth, Madame Cécile.<listPerson type="configuration" xml:id="conf9"><person corresp="#ELISABETH"/><person corresp="#MADAMECECILE"/><person corresp="#CECILE"/><person corresp="#MADAMECECILE"/></listPerson></head>
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Élisabeth, Madame Cécile.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#ELISABETH"/>
+            <person corresp="#MADAMECECILE"/>
+            <person corresp="#CECILE"/>
+            <person corresp="#MADAMECECILE"/></listPerson></head>
           <note>L'original désigne Cécile et non Madame Cécile, ce qui semble une erreur.</note>
-          <sp xml:id="II02-1" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="II02-1">
             <speaker>ÉLISABETH.</speaker>
             <l n="397" xml:id="l397">Tu mourras, tu mourras, monstre d'ingratitude, </l>
             <l n="398" xml:id="l398">Et s'il se peut trouver une peine assez rude </l>
@@ -736,11 +761,11 @@
             <l n="465" xml:id="l465">Dis toujours que la Reine ignore ta visite, </l>
             <l n="466" xml:id="l466">Et que c'est un devoir qu'on rend à son mérite. </l>
           </sp>
-          <sp xml:id="II02-2" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II02-2">
             <speaker>MADAME CÉCILE.</speaker>
-            <l n="467" xml:id="l467" part="I">Madame, se peut-il. </l>
+            <l n="467" part="I" xml:id="l467">Madame, se peut-il. </l>
           </sp>
-          <sp xml:id="II02-3" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="II02-3">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Ne me réplique rien </l>
             <l n="468" xml:id="l468">Je commets une faute et je la connais bien. </l>
@@ -752,20 +777,21 @@
             <l n="474" xml:id="l474">Puisque tu l'as voulu mon mal est sans remède, </l>
             <l n="475" xml:id="l475">Tu l'ordonnes tyran, il te faut obéir, </l>
             <l n="476" xml:id="l476">Me perdre en le sauvant, l'aimer, et me haïr, </l>
-            <l n="477" xml:id="l477" part="I">Va ma fille, et surtout. </l>
+            <l n="477" part="I" xml:id="l477">Va ma fille, et surtout. </l>
           </sp>
-          <sp xml:id="II02-4" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II02-4">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="F">Considérez de grâce. </l>
           </sp>
-          <sp xml:id="II02-5" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="II02-5">
             <speaker>ÉLISABETH.</speaker>
-            <l n="478" xml:id="l478" part="I">Tu me tues. Adieu. </l>
+            <l n="478" part="I" xml:id="l478">Tu me tues. Adieu. </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf10"><person corresp="#MADAMECECILE"/></listPerson></head>
-          <sp xml:id="II03-1" who="MADAMECECILE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#MADAMECECILE"/></listPerson></head>
+          <sp who="MADAMECECILE" xml:id="II03-1">
             <speaker>MADAME CÉCILE, seule.</speaker>
             <l part="F">Que faut-il que je fasse ? </l>
             <l n="479" xml:id="l479">Et pour ne point manquer à ma fidélité </l>
@@ -805,9 +831,11 @@
             <l n="512" xml:id="l512">Il en eut pour ma honte et moi pour son trépas. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Le Comte d'Essex dans sa prison, Raleig.<listPerson type="configuration" xml:id="conf11"><person corresp="#ESSEX"/><person corresp="#RALEIG"/></listPerson></head>
-          <sp xml:id="II04-1" who="ESSEX">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Le Comte d'Essex dans sa prison, Raleig.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#ESSEX"/>
+            <person corresp="#RALEIG"/></listPerson></head>
+          <sp who="ESSEX" xml:id="II04-1">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="513" xml:id="l513">Je vous ai déjà dit que ce discours m'offense : </l>
             <l n="514" xml:id="l514">Que le Royaume entier plaide pour ma défense ; </l>
@@ -833,24 +861,24 @@
             <l n="533" xml:id="l533">Que sa rare vertu rend ennemi d'un Traître, </l>
             <l n="534" xml:id="l534">Et qui n'est mon ami ni n'est digne de l être. </l>
           </sp>
-          <sp xml:id="II04-2" who="RALEIG">
+          <sp who="RALEIG" xml:id="II04-2">
             <speaker>RALEIG.</speaker>
-            <l n="535" xml:id="l535" part="I">Je suis homme d'honneur. </l>
+            <l n="535" part="I" xml:id="l535">Je suis homme d'honneur. </l>
           </sp>
-          <sp xml:id="II04-3" who="ESSEX">
+          <sp who="ESSEX" xml:id="II04-3">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Vous parlez à propos, </l>
             <l n="536" xml:id="l536">Mais vous m'obligerez me laissant en repos, </l>
-            <l n="537" xml:id="l537" part="I">Adieu. </l>
+            <l n="537" part="I" xml:id="l537">Adieu. </l>
           </sp>
-          <sp xml:id="II04-4" who="RALEIG">
+          <sp who="RALEIG" xml:id="II04-4">
             <speaker>RALEIG.</speaker>
             <l part="F">C'est mal traiter un homme de ma sorte, </l>
             <l n="538" xml:id="l538">Mais il faut excuser le courroux qui l'emporte, </l>
             <l n="539" xml:id="l539">Pardonnez un discours qui vous fait quelque tort, </l>
-            <l n="540" xml:id="l540" part="I">Je vous quitte, Monsieur. </l>
+            <l n="540" part="I" xml:id="l540">Je vous quitte, Monsieur. </l>
           </sp>
-          <sp xml:id="II04-5" who="ESSEX">
+          <sp who="ESSEX" xml:id="II04-5">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Vous m'obligerez fort. </l>
             <l n="541" xml:id="l541">Les premiers mouvements dont on n'est pas le maître, </l>
@@ -862,13 +890,17 @@
             <l n="547" xml:id="l547">Mais bon Dieu qui me vient encor importuner. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Madame Cécile, Le Comte d'Essex.<listPerson type="configuration" xml:id="conf12"><person corresp="#MADAMECECILE"/><person corresp="#ESSEX"/><person corresp="#CECILE"/><person corresp="#MADAMECECILE"/></listPerson></head>
-          <sp xml:id="II05-1" who="MADAMECECILE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Madame Cécile, Le Comte d'Essex.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#MADAMECECILE"/>
+            <person corresp="#ESSEX"/>
+            <person corresp="#CECILE"/>
+            <person corresp="#MADAMECECILE"/></listPerson></head>
+          <sp who="MADAMECECILE" xml:id="II05-1">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="548" xml:id="l548">Recevez le bonjour que je vous viens donner. </l>
           </sp>
-          <sp xml:id="II05-2" who="ESSEX">
+          <sp who="ESSEX" xml:id="II05-2">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="549" xml:id="l549">Ah ! Madame, c'est vous, Ciel avec quelle joie </l>
             <l n="550" xml:id="l550">Recevrai-je ce bien que ta bonté m'envoie ?</l>
@@ -890,7 +922,7 @@
             <l n="565" xml:id="l565">Que ma punition établit mes délices, </l>
             <l n="566" xml:id="l566">Et qu'on me paye assez de tant de bons services. </l>
           </sp>
-          <sp xml:id="II05-3" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II05-3">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="567" xml:id="l567">Ces discours obligeants récompensent assez </l>
             <l n="568" xml:id="l568">Et ma peine présente, et mes bienfaits passés. </l>
@@ -902,7 +934,7 @@
             <l n="574" xml:id="l574">À dissiper l'orage, et sauver votre tête. </l>
             <l n="575" xml:id="l575">Je vous en viens offrir les moyens assurés. </l>
           </sp>
-          <sp xml:id="II05-4" who="ESSEX">
+          <sp who="ESSEX" xml:id="II05-4">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="576" xml:id="l576">Je vois bien, je vois bien que vous persévérez, </l>
             <l n="577" xml:id="l577">Et que cette amitié que vous m'avez promise </l>
@@ -914,9 +946,9 @@
             <l n="583" xml:id="l583">Qui depuis si longtemps vous engage ma foi : </l>
             <l n="584" xml:id="l584">Mais pour vous obéir dites ce que je dois, </l>
             <l n="585" xml:id="l585">Vous avez intérêt à conserver ma vie ; </l>
-            <l n="586" xml:id="l586" part="I">Puisque enfin elle est vôtre. </l>
+            <l n="586" part="I" xml:id="l586">Puisque enfin elle est vôtre. </l>
           </sp>
-          <sp xml:id="II05-5" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II05-5">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="F">Et j'en brûle d'envie, </l>
             <l n="587" xml:id="l587">Mais vous en trouverez des moyens assez doux, </l>
@@ -933,7 +965,7 @@
             <l n="597" xml:id="l597">D'en effacer l'amour pour y placer la haine, </l>
             <l n="598" xml:id="l598">Et de désespérer une Amante, une Reine. </l>
           </sp>
-          <sp xml:id="II05-6" who="ESSEX">
+          <sp who="ESSEX" xml:id="II05-6">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="599" xml:id="l599">Fut-il jamais esprit surpris comme le mien ? </l>
             <l n="600" xml:id="l600">Certes, c'est un discours où je ne comprends rien ; </l>
@@ -947,11 +979,11 @@
             <l n="608" xml:id="l608">Attire une âme basse, et partage mon coeur. </l>
             <l n="609" xml:id="l609">Ah ! Mon ressentiment ne peut plus se contraindre. </l>
           </sp>
-          <sp xml:id="II05-7" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II05-7">
             <speaker>MADAME CÉCILE, tout bas.</speaker>
             <l n="610" xml:id="l610">Tu feins, mais déloyal, crois que je sais bien feindre. </l>
           </sp>
-          <sp xml:id="II05-8" who="ESSEX">
+          <sp who="ESSEX" xml:id="II05-8">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="611" xml:id="l611">Tu veux que je te quitte, et que ce doux lien </l>
             <l n="612" xml:id="l612">Qui toujours enchaîna ton esprit et le mien, </l>
@@ -972,7 +1004,7 @@
             <l n="627" xml:id="l627">Donne-lui ce conseil, et plus juste reçois </l>
             <l n="628" xml:id="l628">Pour la dernière fois, et mon coeur et ma foi. </l>
           </sp>
-          <sp xml:id="II05-9" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II05-9">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="629" xml:id="l629">Retiens-toi mon courage, ne fais point paraître </l>
             <l n="630" xml:id="l630">Ce que tu reconnais aux feintes de ce traître ; </l>
@@ -990,9 +1022,9 @@
             <l n="642" xml:id="l642">Demandez-lui pardon, confessez votre offense ; </l>
             <l n="643" xml:id="l643">Par là votre salut vous est tout assuré, </l>
             <l n="644" xml:id="l644">C'est aussi seulement ce qu'elle a désiré : </l>
-            <l n="645" xml:id="l645" part="I">Jetez-vous à ses pieds. </l>
+            <l n="645" part="I" xml:id="l645">Jetez-vous à ses pieds. </l>
           </sp>
-          <sp xml:id="II05-10" who="ESSEX">
+          <sp who="ESSEX" xml:id="II05-10">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Oui je suis prêt, Madame, </l>
             <l n="646" xml:id="l646">Devant sa Majesté je veux ouvrir mon âme, </l>
@@ -1019,20 +1051,20 @@
             <l n="667" xml:id="l667">Au reste ne perds point des discours superflus ; </l>
             <l n="668" xml:id="l668">C'est mon dernier dessein, et ne m'en parle plus. </l>
           </sp>
-          <sp xml:id="II05-11" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II05-11">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="669" xml:id="l669">Votre obstination visiblement vous traîne </l>
             <l n="670" xml:id="l670">Dans le chemin certain d'une perte certaine, </l>
             <l n="671" xml:id="l671">Vous deviez accorder ma requête à mes pleurs, </l>
             <l n="672" xml:id="l672">Adieu cruel, je vais regretter nos malheurs </l>
-            <l n="673" xml:id="l673" part="I">Puisque le Ciel, Adieu. </l>
+            <l n="673" part="I" xml:id="l673">Puisque le Ciel, Adieu. </l>
           </sp>
-          <sp xml:id="II05-12" who="ESSEX">
+          <sp who="ESSEX" xml:id="II05-12">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Tu t'en vas inhumaine, </l>
-            <l n="674" xml:id="l674" part="I">De grâce arrête un peu. </l>
+            <l n="674" part="I" xml:id="l674">De grâce arrête un peu. </l>
           </sp>
-          <sp xml:id="II05-13" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="II05-13">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="F">Je m'en vais chez la Reine, </l>
             <l n="675" xml:id="l675">Elle ignore où je suis, je lui rends ce devoir </l>
@@ -1040,11 +1072,16 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Le Comte d'Essex, Popham, Le Comte de Soubtantonne, Cécile, Raleig.<listPerson type="configuration" xml:id="conf14"><person corresp="#ESSEX"/><person corresp="#CECILE"/><person corresp="#POPHAM"/><person corresp="#SOUBTANTONNE"/><person corresp="#RALEIG"/></listPerson></head>
-          <sp xml:id="III01-1" who="ESSEX">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE PREMIÈRE. Le Comte d'Essex, Popham, Le Comte de Soubtantonne, Cécile, Raleig.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#ESSEX"/>
+            <person corresp="#CECILE"/>
+            <person corresp="#POPHAM"/>
+            <person corresp="#SOUBTANTONNE"/>
+            <person corresp="#RALEIG"/></listPerson></head>
+          <sp who="ESSEX" xml:id="III01-1">
             <speaker>LE COMTE D'ESSEX, devant ses Juges.</speaker>
             <l n="677" xml:id="l677">Bien que l'autorité cruelle et souveraine, </l>
             <l n="678" xml:id="l678">Et d'un ingrat pays et d'une Auguste Reine </l>
@@ -1103,7 +1140,7 @@
             <l n="731" xml:id="l731">De voir humilier par une indigne loi, </l>
             <l n="732" xml:id="l732">À des hommes comme eux, un homme comme moi. </l>
           </sp>
-          <sp xml:id="III01-2" who="CECILE">
+          <sp who="CECILE" xml:id="III01-2">
             <speaker>CÉCILE.</speaker>
             <l n="733" xml:id="l733">Cet invincible orgueil que vous faites paraître, </l>
             <l n="734" xml:id="l734">Est celui qui toujours vous a fait méconnaître. </l>
@@ -1157,9 +1194,9 @@
             <l n="778" xml:id="l778">Eût payé de son sang cette faveur Royale. </l>
             <l n="779" xml:id="l779">Pardonnez un discours que votre vanité, </l>
             <l n="780" xml:id="l780">Arrache d'un esprit justement irrité. </l>
-            <l n="781" xml:id="l781" part="I">Et trouvez bon aussi. </l>
+            <l n="781" part="I" xml:id="l781">Et trouvez bon aussi. </l>
           </sp>
-          <sp xml:id="III01-3" who="ESSEX">
+          <sp who="ESSEX" xml:id="III01-3">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Dans l'état où nous sommes </l>
             <l n="782" xml:id="l782">Il nous faut tout souffrir de toute sorte d'hommes ; </l>
@@ -1179,7 +1216,7 @@
             <l n="796" xml:id="l796">Tout ce que vous pouvez contre un coeur endurci. </l>
             <l n="797" xml:id="l797">Oui, oui, je recevrai ces atteintes mortelles. </l>
           </sp>
-          <sp xml:id="III01-4" who="POPHAM">
+          <sp who="POPHAM" xml:id="III01-4">
             <speaker>POPHAM.</speaker>
             <l n="798" xml:id="l798">Ce n'est pas dans ce lieu, qu'on vide des querelles. </l>
             <l n="799" xml:id="l799">Contre vos délateurs vous disputez en vain, </l>
@@ -1223,7 +1260,7 @@
             <l n="837" xml:id="l837">Regardez maintenant si vous voulez répondre, </l>
             <l n="838" xml:id="l838">Vos témoins sont connus, tâchez de les confondre. </l>
           </sp>
-          <sp xml:id="III01-5" who="ESSEX">
+          <sp who="ESSEX" xml:id="III01-5">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="839" xml:id="l839">Pour me justifier je sais ce que je dois. </l>
             <l n="840" xml:id="l840">Cher ami répondez et pour vous et pour moi. </l>
@@ -1233,7 +1270,7 @@
             <l n="843" xml:id="l843">Je l'avouerai de tout, mes juges souverains, </l>
             <l n="844" xml:id="l844">Il lit dans mon esprit et sait tous mes desseins. </l>
           </sp>
-          <sp xml:id="III01-6" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="III01-6">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="845" xml:id="l845">Puisqu'un même destin confond notre fortune, </l>
             <l n="846" xml:id="l846">Que nous devons tomber d'une chute commune, </l>
@@ -1295,7 +1332,7 @@
             <l n="899" xml:id="l899">Nous sommes innocents mon front le dit assez, </l>
             <l n="900" xml:id="l900">Vous êtes gens de bien et vous bous connaissez. </l>
           </sp>
-          <sp xml:id="III01-7" who="RALEIG">
+          <sp who="RALEIG" xml:id="III01-7">
             <speaker>RALEIG.</speaker>
             <l n="901" xml:id="l901">Ne nous accusez point avec tant de malice, </l>
             <l n="902" xml:id="l902">Nous ne fûmes jamais ennemis que du vice : </l>
@@ -1309,12 +1346,12 @@
             <l n="910" xml:id="l910">Contre ceux qui jamais ne vous ont fait d'offense </l>
             <l n="911" xml:id="l911">Pour un autre dessein vous vous étiez armés. </l>
           </sp>
-          <sp xml:id="III01-8" who="CECILE">
+          <sp who="CECILE" xml:id="III01-8">
             <speaker>CÉCILE.</speaker>
             <l n="912" xml:id="l912">Contre les gens de bien ils sont envenimés, </l>
             <l n="913" xml:id="l913">Et sont nos ennemis parce que nous le sommes. </l>
           </sp>
-          <sp xml:id="III01-9" who="ESSEX">
+          <sp who="ESSEX" xml:id="III01-9">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="914" xml:id="l914">Tu ne le fus jamais, peste de tous les hommes ; </l>
             <l n="915" xml:id="l915">Et si cette raison me devait animer, </l>
@@ -1339,7 +1376,7 @@
             <l n="933" xml:id="l933">Toi que la gloire fuit, que la honte accompagne, </l>
             <l n="934" xml:id="l934">Ennemi du pays, et partisan d'Espagne. </l>
           </sp>
-          <sp xml:id="III01-10" who="CECILE">
+          <sp who="CECILE" xml:id="III01-10">
             <speaker>CÉCILE.</speaker>
             <l n="935" xml:id="l935">Ces mots injurieux dont votre passion </l>
             <l n="936" xml:id="l936">S'efforce de blesser ma réputation, </l>
@@ -1360,12 +1397,12 @@
             <l n="951" xml:id="l951">Si l'on nous voit paraître en ce lieu solennel ; </l>
             <l n="952" xml:id="l952">Moi comme un innocent : vous comme un criminel. </l>
           </sp>
-          <sp xml:id="III01-11" who="POPHAM">
+          <sp who="POPHAM" xml:id="III01-11">
             <speaker>POPHAM.</speaker>
             <l n="953" xml:id="l953">Trêve à tous ces discours, n'avez-vous autre chose </l>
             <l n="954" xml:id="l954">Pour vous justifier contre ce qu'on dépose ? </l>
           </sp>
-          <sp xml:id="III01-12" who="ESSEX">
+          <sp who="ESSEX" xml:id="III01-12">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="955" xml:id="l955">Non, non, je n'ai plus rien, prononcez seulement, </l>
             <l n="956" xml:id="l956">Mais gardez l'équité dans votre jugement, </l>
@@ -1380,7 +1417,7 @@
             <l n="965" xml:id="l965">Et ne permettez point, qu'un jugement injuste </l>
             <l n="966" xml:id="l966">Déshonore à jamais cette assemblée auguste. </l>
           </sp>
-          <sp xml:id="III01-13" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="III01-13">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="967" xml:id="l967">S'il tâche d'émouvoir vos esprits à pitié </l>
             <l n="968" xml:id="l968">Par les derniers effets d'une étroite amitié, </l>
@@ -1397,7 +1434,7 @@
             <l n="979" xml:id="l979">Enfin même destin nous a conduit ici, </l>
             <l n="980" xml:id="l980">Et s'il est criminel je le dois être aussi. </l>
           </sp>
-          <sp xml:id="III01-14" who="POPHAM">
+          <sp who="POPHAM" xml:id="III01-14">
             <speaker>POPHAM.</speaker>
             <l n="981" xml:id="l981">Suivant l'autorité que ma charge me donne, </l>
             <l n="982" xml:id="l982">Robert Comte d'Essex, avec Soubtantonne, </l>
@@ -1408,9 +1445,9 @@
             <l n="987" xml:id="l987">Et pour punition de ce noir attentat, </l>
             <l n="988" xml:id="l988">Et contre notre Reine et contre notre État. </l>
             <l n="989" xml:id="l989">Leur faisant grâce, et droit nous condamnons leurs têtes, </l>
-            <l n="990" xml:id="l990" part="I">À réparer leur faute. </l>
+            <l n="990" part="I" xml:id="l990">À réparer leur faute. </l>
           </sp>
-          <sp xml:id="III01-15" who="ESSEX">
+          <sp who="ESSEX" xml:id="III01-15">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l part="F">Elles sont toutes prêtes. </l>
             <l n="991" xml:id="l991">Et ce sanglant Arrêt n'épouvantera pas </l>
@@ -1422,18 +1459,20 @@
             <l n="997" xml:id="l997">Pour moi de quelque horreur que la mort me menace </l>
             <l n="998" xml:id="l998">Je l'attendrai plutôt que d'implorer sa grâce. </l>
           </sp>
-          <sp xml:id="III01-16" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="III01-16">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="999" xml:id="l999">Et moi dont l'amitié ne peut jamais périr, </l>
             <l n="1000" xml:id="l1000">Je veux mourir aussi, si vous devez mourir. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Élisabeth, Alix.<listPerson type="configuration" xml:id="conf16"><person corresp="#ELISABETH"/><person corresp="#ALIX"/></listPerson></head>
-          <sp xml:id="IV01-1" who="ELISABETH">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE PREMIÈRE. Élisabeth, Alix.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#ELISABETH"/>
+            <person corresp="#ALIX"/></listPerson></head>
+          <sp who="ELISABETH" xml:id="IV01-1">
             <speaker>ÉLISABETH, parlant au Capitaine des gardes.</speaker>
             <l n="1001" xml:id="l1001">Si l'arrêt est donné va dire qu'on diffère, </l>
             <l n="1002" xml:id="l1002">Que l'on attende encore ma volonté dernière, </l>
@@ -1461,7 +1500,7 @@
             <l n="1023" xml:id="l1023">Mon règne, grâce au Ciel, est assez renommé, </l>
             <l n="1024" xml:id="l1024">Et je le finis mal pour avoir trop aimé. </l>
           </sp>
-          <sp xml:id="IV01-2" who="ALIX">
+          <sp who="ALIX" xml:id="IV01-2">
             <speaker>ALIX.</speaker>
             <l n="1025" xml:id="l1025">Quand vous avez donné la grâce à Soubtantonne </l>
             <l n="1026" xml:id="l1026">Vous avez témoigné combien vous êtes bonne. </l>
@@ -1486,9 +1525,9 @@
             <l n="1044" xml:id="l1044">Et qu'aimant la vertu vous aimiez assez haut. </l>
             <l n="1045" xml:id="l1045">Mais après des desseins d'une telle importance, </l>
             <l n="1046" xml:id="l1046">Que de la trahison il passe à l'insolence, </l>
-            <l n="1047" xml:id="l1047" part="I">Et qu'il parle de vous. </l>
+            <l n="1047" part="I" xml:id="l1047">Et qu'il parle de vous. </l>
           </sp>
-          <sp xml:id="IV01-3" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="IV01-3">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Chère Alix, c'est assez, </l>
             <l n="1048" xml:id="l1048">Ne renouvelle point mes déplaisirs passés. </l>
@@ -1515,23 +1554,25 @@
             <l n="1069" xml:id="l1069">Et n'eût point obscurci l'éclat d'une Couronne. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. L'Huissier du Cabinet, Élisabeth.<listPerson type="configuration" xml:id="conf17"><person corresp="#HUISSIER"/><person corresp="#ELISABETH"/></listPerson></head>
-          <sp xml:id="IV02-1" who="HUISSIER">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. L'Huissier du Cabinet, Élisabeth.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#HUISSIER"/>
+            <person corresp="#ELISABETH"/></listPerson></head>
+          <sp who="HUISSIER" xml:id="IV02-1">
             <speaker>L'HUISSIER.</speaker>
-            <l n="1070" xml:id="l1070" part="I">Le Comte. </l>
+            <l n="1070" part="I" xml:id="l1070">Le Comte. </l>
           </sp>
-          <sp xml:id="IV02-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="IV02-2">
             <speaker>ÉLISABETH.</speaker>
             <l part="M">Que dis-tu ? </l>
           </sp>
-          <sp xml:id="IV02-3" who="HUISSIER">
+          <sp who="HUISSIER" xml:id="IV02-3">
             <speaker>L'HUISSIER.</speaker>
             <l part="F">Le Comte Soubtantonne, </l>
             <l n="1071" xml:id="l1071">Demande le pouvoir avec l'humilité, </l>
             <l n="1072" xml:id="l1072">De rendre ses devoirs à votre Majesté. </l>
           </sp>
-          <sp xml:id="IV02-4" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="IV02-4">
             <speaker>ÉLISABETH.</speaker>
             <l n="1073" xml:id="l1073">De sa grâce obtenue il me vient rendre grâces. </l>
             <l n="1074" xml:id="l1074">Oui qu'on le fasse entrer, que faut-il que tu fasses ? </l>
@@ -1540,19 +1581,22 @@
             <l n="1077" xml:id="l1077">Et cache si tu peux ton étrange faiblesse.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Le Comte de Soubtantonne, Élisabeth, Raleig.<listPerson type="configuration" xml:id="conf18"><person corresp="#SOUBTANTONNE"/><person corresp="#ELISABETH"/><person corresp="#RALEIG"/></listPerson></head>
-          <sp xml:id="IV03-1" who="SOUBTANTONNE">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Le Comte de Soubtantonne, Élisabeth, Raleig.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#SOUBTANTONNE"/>
+            <person corresp="#ELISABETH"/>
+            <person corresp="#RALEIG"/></listPerson></head>
+          <sp who="SOUBTANTONNE" xml:id="IV03-1">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="1078" xml:id="l1078">Je me viens prosterner, grande et juste Princesse, </l>
             <l n="1079" xml:id="l1079">Et publier aux pieds de votre Majesté </l>
             <l n="1080" xml:id="l1080">Et sa rare justice, et sa grande bonté. </l>
           </sp>
-          <sp xml:id="IV03-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="IV03-2">
             <speaker>ÉLISABETH.</speaker>
-            <l n="1081" xml:id="l1081" part="I">Levez-vous. </l>
+            <l n="1081" part="I" xml:id="l1081">Levez-vous. </l>
           </sp>
-          <sp xml:id="IV03-3" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="IV03-3">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l part="F">Vous sauvez une inutile vie </l>
             <l n="1082" xml:id="l1082">À celui qui jamais ne vous avait servie, </l>
@@ -1565,7 +1609,7 @@
             <l n="1089" xml:id="l1089">Et votre Majesté veut conserver la mienne </l>
             <l n="1090" xml:id="l1090">Qui ne répare point la perte de la sienne. </l>
           </sp>
-          <sp xml:id="IV03-4" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="IV03-4">
             <speaker>ÉLISABETH.</speaker>
             <l n="1091" xml:id="l1091">S'il ne se fut trouvé plus criminel que vous, </l>
             <l n="1092" xml:id="l1092">Il eût reçu sans doute un traitement plus doux : </l>
@@ -1574,7 +1618,7 @@
             <l n="1095" xml:id="l1095">Et toute ma bonté ne lui peut pardonner, </l>
             <l n="1096" xml:id="l1096">À moins que de me perdre et de le couronner. </l>
           </sp>
-          <sp xml:id="IV03-5" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="IV03-5">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="1097" xml:id="l1097">Ah ! Madame faut-il qu'une si grande Reine, </l>
             <l n="1098" xml:id="l1098">Suive les mouvements d'une troupe inhumaine ? </l>
@@ -1612,15 +1656,15 @@
             <l n="1129" xml:id="l1129">Par son sang, par son zèle, et par tous ses services, </l>
             <l n="1130" xml:id="l1130">Ne les destinez point à d'infâmes supplices. </l>
             <l n="1131" xml:id="l1131">Pour lui plus que pour moi j'embrasse vos genoux,</l>
-            <l n="1132" xml:id="l1132" part="I">Sauvez un si grand homme. </l>
+            <l n="1132" part="I" xml:id="l1132">Sauvez un si grand homme. </l>
           </sp>
-          <sp xml:id="IV03-6" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="IV03-6">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Ah ! Comte levez-vous. </l>
             <l n="1133" xml:id="l1133">Je le voudrais sauver, mais il m'est impossible, </l>
-            <l n="1134" xml:id="l1134" part="I">Il n'est point innocent. </l>
+            <l n="1134" part="I" xml:id="l1134">Il n'est point innocent. </l>
           </sp>
-          <sp xml:id="IV03-7" who="RALEIG">
+          <sp who="RALEIG" xml:id="IV03-7">
             <speaker>RALEIG.</speaker>
             <l part="F">Son crime est trop visible, </l>
             <l n="1135" xml:id="l1135">On vient de le convaincre et le vérifier. </l>
@@ -1632,7 +1676,7 @@
             <l n="1141" xml:id="l1141">Parlant de notre Reine avec beaucoup d'audace </l>
             <l n="1142" xml:id="l1142">Qu'il aimait mieux mourir que d'implorer sa grâce. </l>
           </sp>
-          <sp xml:id="IV03-8" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="IV03-8">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="1143" xml:id="l1143">Le Comte est en prison, et c'est en sûreté, </l>
             <l n="1144" xml:id="l1144">Que tu fais éclater ton animosité ; </l>
@@ -1645,7 +1689,7 @@
             <l n="1151" xml:id="l1151">Je ne puis retenir un si juste courroux, </l>
             <l n="1152" xml:id="l1152">Ni souffrir ce discours d'un autre que de vous. </l>
           </sp>
-          <sp xml:id="IV03-9" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="IV03-9">
             <speaker>ÉLISABETH.</speaker>
             <l n="1153" xml:id="l1153">Ah ! Comte, c'est assez, ne faites plus paraître </l>
             <l n="1154" xml:id="l1154">Ce zèle criminel pour le salut d'un traître, </l>
@@ -1667,12 +1711,14 @@
             <l n="1170" xml:id="l1170">Pour demander pardon à cette pauvre Reine ; </l>
             <l n="1171" xml:id="l1171">J'approuve son courage, et déjà lui promets, </l>
             <l n="1172" xml:id="l1172">Que bien qu'il le demande il ne l'aura jamais. </l>
-            <l n="1173" xml:id="l1173" part="I">Adieu. </l>
+            <l n="1173" part="I" xml:id="l1173">Adieu. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-           <head>SCÈNE IV. Le Comte de Soubtantonne, Raleig.<listPerson type="configuration" xml:id="conf19"><person corresp="#SOUBTANTONNE"/><person corresp="#RALEIG"/></listPerson></head>
-          <sp xml:id="IV04-1" who="SOUBTANTONNE">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Le Comte de Soubtantonne, Raleig.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#SOUBTANTONNE"/>
+            <person corresp="#RALEIG"/></listPerson></head>
+          <sp who="SOUBTANTONNE" xml:id="IV04-1">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l part="F">C'en est donc fait, ta perte est assurée, </l>
             <l n="1174" xml:id="l1174">Tout butte à ta ruine, et ta mort est jurée, </l>
@@ -1692,16 +1738,16 @@
             <l n="1188" xml:id="l1188">Oui, Monsieur, vous avez vaillamment combattu, </l>
             <l n="1189" xml:id="l1189">Et votre calomnie, et vos noires malices </l>
             <l n="1190" xml:id="l1190">L'ont enfin emporté sur beaucoup de services </l>
-            <l n="1191" xml:id="l1191" part="I">Mais pourtant. </l>
+            <l n="1191" part="I" xml:id="l1191">Mais pourtant. </l>
           </sp>
-          <sp xml:id="IV04-2" who="RALEIG">
+          <sp who="RALEIG" xml:id="IV04-2">
             <speaker>RALEIG.</speaker>
             <l part="F">Grâce à Dieu nous ne redoutons rien, </l>
             <l n="1192" xml:id="l1192">Et sa peine importait à tous les gens de bien, </l>
             <l n="1193" xml:id="l1193">La Reine a reconnu nos desseins et nos zèles, </l>
             <l n="1194" xml:id="l1194">Et cet État sait bien que nous sommes fidèles. </l>
           </sp>
-          <sp xml:id="IV04-3" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="IV04-3">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l n="1195" xml:id="l1195">Oui cet État vous doit sa conservation, </l>
             <l n="1196" xml:id="l1196">Vous lui devez aussi votre protection. </l>
@@ -1709,18 +1755,22 @@
             <l n="1198" xml:id="l1198">Vous avez assuré toute votre cabale, </l>
             <l n="1199" xml:id="l1199">Mais si le Comte meurt soyez tous assurés. </l>
           </sp>
-          <sp xml:id="IV04-4" who="RALEIG">
+          <sp who="RALEIG" xml:id="IV04-4">
             <speaker>RALEIG.</speaker>
-            <l n="1200" xml:id="l1200" part="I">Nous ne vous craignons point. </l>
+            <l n="1200" part="I" xml:id="l1200">Nous ne vous craignons point. </l>
           </sp>
-          <sp xml:id="IV04-5" who="SOUBTANTONNE">
+          <sp who="SOUBTANTONNE" xml:id="IV04-5">
             <speaker>LE COMTE DE SOUBTANTONNE.</speaker>
             <l part="F">Bien, bien, vous le saurez. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V. Le Comte d'Essex, Madame Cécile.<listPerson type="configuration" xml:id="conf20"><person corresp="#ESSEX"/><person corresp="#MADAMECECILE"/><person corresp="#CECILE"/><person corresp="#MADAMECECILE"/></listPerson></head>
-          <sp xml:id="IV05-1" who="ESSEX">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V. Le Comte d'Essex, Madame Cécile.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#ESSEX"/>
+            <person corresp="#MADAMECECILE"/>
+            <person corresp="#CECILE"/>
+            <person corresp="#MADAMECECILE"/></listPerson></head>
+          <sp who="ESSEX" xml:id="IV05-1">
             <speaker>LE COMTE D'ESSEX, dans sa prison.</speaker>
             <l n="1201" xml:id="l1201">Oui pour te faire voir que je brûle d'envie </l>
             <l n="1202" xml:id="l1202">De ne donner qu'à toi le reste de ma vie, </l>
@@ -1743,7 +1793,7 @@
             <l n="1219" xml:id="l1219">Et te mieux témoigner mes fidèles desseins </l>
             <l n="1220" xml:id="l1220">Que mettant mon honneur, et ma vie en tes mains. </l>
           </sp>
-          <sp xml:id="IV05-2" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="IV05-2">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="1221" xml:id="l1221">Si je pouvais douter de cette amour extrême, </l>
             <l n="1222" xml:id="l1222">Je me rendrais ingrate, et cruelle à moi-même. </l>
@@ -1758,7 +1808,7 @@
             <l n="1231" xml:id="l1231">Et soyez assuré que ce coeur est tout prêt, </l>
             <l n="1232" xml:id="l1232">S'il vous sauve en mourant, de subir votre Arrêt. </l>
           </sp>
-          <sp xml:id="IV05-3" who="ESSEX">
+          <sp who="ESSEX" xml:id="IV05-3">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="1233" xml:id="l1233">Ah ! La vie à ce prix ne me fut jamais chère, </l>
             <l n="1234" xml:id="l1234">Et j'élirais plutôt une mort volontaire </l>
@@ -1801,7 +1851,7 @@
             <l n="1271" xml:id="l1271">Tu pourras à ton gré disposer de mon sort, </l>
             <l n="1272" xml:id="l1272">Et donner à l'ingrat ou la vie ou la mort. </l>
           </sp>
-          <sp xml:id="IV05-4" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="IV05-4">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="1273" xml:id="l1273">Bien que je vous accuse et que dans votre feinte, </l>
             <l n="1274" xml:id="l1274">Je trouve contre vous de grands sujets de plainte, </l>
@@ -1813,20 +1863,21 @@
             <l n="1280" xml:id="l1280">Ne perdons point de temps, puisqu'il nous est si cher, </l>
             <l n="1281" xml:id="l1281">Adieu je vais courir, ou voler chez la Reine. </l>
           </sp>
-          <sp xml:id="IV05-5" who="ESSEX">
+          <sp who="ESSEX" xml:id="IV05-5">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="1282" xml:id="l1282">Mon incivilité te donne trop de peine, </l>
             <l n="1283" xml:id="l1283">Mais tu vas conserver un pauvre criminel, </l>
             <l n="1284" xml:id="l1284">Pour l'attacher à toi d'un lien éternel. </l>
           </sp>
-          <sp xml:id="IV05-6" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="IV05-6">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="1285" xml:id="l1285">Le succès en sera tel que je le souhaite. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
-          <head>SCÈNE VI. <listPerson type="configuration" xml:id="conf21"><person corresp="#ESSEX"/></listPerson></head>
-          <sp xml:id="IV06-1" who="ESSEX">
+        <div2 n="6" type="scene" xml:id="IV06">
+          <head>SCÈNE VI. <listPerson type="configuration" xml:id="conf21">
+            <person corresp="#ESSEX"/></listPerson></head>
+          <sp who="ESSEX" xml:id="IV06-1">
             <speaker>LE COMTE D'ESSEX, seul.</speaker>
             <l n="1286" xml:id="l1286">Superbe Élisabeth vous voilà satisfaite, </l>
             <l n="1287" xml:id="l1287">Et vous voyez enfin ce courage endurci </l>
@@ -1837,9 +1888,10 @@
             <l n="1292" xml:id="l1292">Si je fuis maintenant la honte ou le trépas. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
-          <head>SCÈNE VII. <listPerson type="configuration" xml:id="conf22"><person corresp="#MADAMECECILE"/></listPerson></head>
-          <sp xml:id="IV07-1" who="MADAMECECILE">
+        <div2 n="7" type="scene" xml:id="IV07">
+          <head>SCÈNE VII. <listPerson type="configuration" xml:id="conf22">
+            <person corresp="#MADAMECECILE"/></listPerson></head>
+          <sp who="MADAMECECILE" xml:id="IV07-1">
             <speaker>MADAME CÉCILE, seule hors de la prison.</speaker>
             <l n="1293" xml:id="l1293">Tu vaincras à la fin et la perte du Comte </l>
             <l n="1294" xml:id="l1294">Te pourra satisfaire et réparer ta honte. </l>
@@ -1868,26 +1920,29 @@
             <l n="1317" xml:id="l1317">Qu'il ressente à loisir la peine de son crime, </l>
             <l n="1318" xml:id="l1318">Et loue une bonté qui n'est plus légitime : </l>
             <l n="1319" xml:id="l1319">Cédez, ressentiments, à ces restes d'amour, </l>
-            <l n="1320" xml:id="l1320" part="I">Mais je vois mon Mari. </l>
+            <l n="1320" part="I" xml:id="l1320">Mais je vois mon Mari. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV08" type="scene" n="8">
-          <head>SCÈNE VIII. Cécile, Madame Cécile. <listPerson type="configuration" xml:id="conf23"><person corresp="#CECILE"/><person corresp="#MADAMECECILE"/><person corresp="#MADAMECECILE"/></listPerson></head>
-          <sp xml:id="IV08-1" who="CECILE">
+        <div2 n="8" type="scene" xml:id="IV08">
+          <head>SCÈNE VIII. Cécile, Madame Cécile. <listPerson type="configuration" xml:id="conf23">
+            <person corresp="#CECILE"/>
+            <person corresp="#MADAMECECILE"/>
+            <person corresp="#MADAMECECILE"/></listPerson></head>
+          <sp who="CECILE" xml:id="IV08-1">
             <speaker>CÉCILE.</speaker>
             <l part="F">Vous venez de la Tour ? </l>
           </sp>
-          <sp xml:id="IV08-2" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="IV08-2">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="1321" xml:id="l1321">Je viens d'ici tout proche ; et m'en vais chez la Reine. </l>
           </sp>
-          <sp xml:id="IV08-3" who="CECILE">
+          <sp who="CECILE" xml:id="IV08-3">
             <speaker>CÉCILE.</speaker>
             <l n="1322" xml:id="l1322">Je vous ai vu sortir, et votre feinte est vaine, </l>
             <l n="1323" xml:id="l1323">Pourquoi le cachez-vous, je connais vos desseins, </l>
-            <l n="1324" xml:id="l1324" part="I">La Reine vous envoie. </l>
+            <l n="1324" part="I" xml:id="l1324">La Reine vous envoie. </l>
           </sp>
-          <sp xml:id="IV08-4" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="IV08-4">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="F">Il est vrai que je feins ; </l>
             <l n="1325" xml:id="l1325">Et que j'ai mon esprit embrouillé d'une affaire ; </l>
@@ -1897,11 +1952,14 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Le Comte d'Essex, Le Capitaine des Gardes, Raleig.<listPerson type="configuration" xml:id="conf25"><person corresp="#ESSEX"/><person corresp="#RALEIG"/><person corresp="#CAPITAINE"/></listPerson></head>
-          <sp xml:id="V01-1" who="ESSEX">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE PREMIÈRE. Le Comte d'Essex, Le Capitaine des Gardes, Raleig.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#ESSEX"/>
+            <person corresp="#RALEIG"/>
+            <person corresp="#CAPITAINE"/></listPerson></head>
+          <sp who="ESSEX" xml:id="V01-1">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <stage type="[N/A]">Il paraît environné des Gardes qui le doivent mener au supplice. </stage>
             <l n="1329" xml:id="l1329">La Reine par ma mort n'est donc pas satisfaite, </l>
@@ -1938,14 +1996,14 @@
             <l n="1360" xml:id="l1360">Jusqu'à ce qu'un de vous ait occupé mon rang. </l>
             <l n="1361" xml:id="l1361">Elle peut bien choisir parmi de si grands hommes. </l>
           </sp>
-          <sp xml:id="V01-2" who="RALEIG">
+          <sp who="RALEIG" xml:id="V01-2">
             <speaker>RALEIG.</speaker>
             <l n="1362" xml:id="l1362">Le pays nous connaît, chacun sait qui nous sommes. </l>
             <l n="1363" xml:id="l1363">Et certes je pourrais répondre à vos discours. </l>
             <l n="1364" xml:id="l1364">Mais de vous affliger à la fin de vos jours, </l>
             <l n="1365" xml:id="l1365">Semblerait inhumain et de mauvaise grâce. </l>
           </sp>
-          <sp xml:id="V01-3" who="ESSEX">
+          <sp who="ESSEX" xml:id="V01-3">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="1366" xml:id="l1366">Tu feras beaucoup mieux de me quitter la place.</l>
             <l n="1367" xml:id="l1367">D'éviter mon courroux, et ne répliquer point, </l>
@@ -1986,26 +2044,28 @@
             <l n="1401" xml:id="l1401">Mais au dernier moment de mon heure dernière, </l>
             <l n="1402" xml:id="l1402">Pourrai-je bien, Monsieur, vous faire une prière ? </l>
           </sp>
-          <sp xml:id="V01-4" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="V01-4">
             <speaker>LE CAPITAINE.</speaker>
             <l n="1403" xml:id="l1403">Monsieur, assurez-vous que je vous servirai, </l>
             <l n="1404" xml:id="l1404">Et qu'avec tout respect je vous obéirai. </l>
           </sp>
-          <sp xml:id="V01-5" who="ESSEX">
+          <sp who="ESSEX" xml:id="V01-5">
             <speaker>LE COMTE D'ESSEX.</speaker>
             <l n="1405" xml:id="l1405">Vous direz s'il vous plaît à Madame Cécile </l>
             <l n="1406" xml:id="l1406">Que je suis bien mari de sa peine inutile. </l>
             <l n="1407" xml:id="l1407">Et que jusqu'au tombeau je suis son serviteur, </l>
-            <l n="1408" xml:id="l1408" part="I">Prendrez-vous cette peine ? </l>
+            <l n="1408" part="I" xml:id="l1408">Prendrez-vous cette peine ? </l>
           </sp>
-          <sp xml:id="V01-6" who="CAPITAINE">
+          <sp who="CAPITAINE" xml:id="V01-6">
             <speaker>LE CAPITAINE.</speaker>
             <l part="F">Oui, Monsieur, de bon coeur. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Alix, Élisabeth.<listPerson type="configuration" xml:id="conf26"><person corresp="#ALIX"/><person corresp="#ELISABETH"/></listPerson></head>
-          <sp xml:id="V02-1" who="ALIX">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Alix, Élisabeth.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#ALIX"/>
+            <person corresp="#ELISABETH"/></listPerson></head>
+          <sp who="ALIX" xml:id="V02-1">
             <speaker>ALIX.</speaker>
             <l n="1409" xml:id="l1409">Remettez-vous Madame, et que votre visage </l>
             <l n="1410" xml:id="l1410">Ne fasse point ce tort à votre grand courage, </l>
@@ -2032,7 +2092,7 @@
             <l n="1431" xml:id="l1431">Et dans tous ses discours vous avez bien appris, </l>
             <l n="1432" xml:id="l1432">Que de l'ingratitude il passait au mépris. </l>
           </sp>
-          <sp xml:id="V02-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V02-2">
             <speaker>ÉLISABETH.</speaker>
             <l n="1433" xml:id="l1433">Oui je l'ai trop appris et de quelque faiblesse, </l>
             <l n="1434" xml:id="l1434">Que ton affection condamne ma tristesse. </l>
@@ -2056,49 +2116,52 @@
             <l n="1452" xml:id="l1452">Engage à cet ingrat ma parole et ma foi. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Léonore, Élisabeth, Alix.<listPerson type="configuration" xml:id="conf27"><person corresp="#LEONORE"/><person corresp="#ELISABETH"/><person corresp="#ALIX"/></listPerson></head>
-          <sp xml:id="V03-1" who="LEONORE">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Léonore, Élisabeth, Alix.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#LEONORE"/>
+            <person corresp="#ELISABETH"/>
+            <person corresp="#ALIX"/></listPerson></head>
+          <sp who="LEONORE" xml:id="V03-1">
             <speaker>LÉONORE.</speaker>
-            <l n="1453" xml:id="l1453" part="I">Le Comte est mort, Madame. </l>
+            <l n="1453" part="I" xml:id="l1453">Le Comte est mort, Madame. </l>
           </sp>
-          <sp xml:id="V03-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V03-2">
             <speaker>ÉLISABETH.</speaker>
             <l part="M">Ô Ciel ! </l>
           </sp>
-          <sp xml:id="V03-3" who="ALIX">
+          <sp who="ALIX" xml:id="V03-3">
             <speaker>ALIX.</speaker>
             <l part="F">Est-il possible ? </l>
           </sp>
-          <sp xml:id="V03-4" who="LEONORE">
+          <sp who="LEONORE" xml:id="V03-4">
             <speaker>LÉONORE.</speaker>
             <l n="1454" xml:id="l1454">Oui, toujours plein d'orgueil, et toujours invincible, </l>
             <l n="1455" xml:id="l1455">Il a du coup mortel en se plaignant de vous </l>
             <l n="1456" xml:id="l1456">Vomi sur l'échafaud son sang et son courroux. </l>
           </sp>
-          <sp xml:id="V03-5" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V03-5">
             <speaker>ÉLISABETH.</speaker>
             <l n="1457" xml:id="l1457">Il en a du sujet. Rappelle ton courage, </l>
             <l n="1458" xml:id="l1458">Vois tout d'un front égal et d'un même visage, </l>
             <l n="1459" xml:id="l1459">Et ne te trouble point. Qui y'a fait ce rapport ? </l>
           </sp>
-          <sp xml:id="V03-6" who="LEONORE">
+          <sp who="LEONORE" xml:id="V03-6">
             <speaker>LÉONORE.</speaker>
             <l n="1460" xml:id="l1460">Par vos ordres Raleig fut présent à sa mort, </l>
             <l n="1461" xml:id="l1461">Je l'ai laissé, Madame, à la Chambre prochaine. </l>
           </sp>
-          <sp xml:id="V03-7" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V03-7">
             <speaker>ÉLISABETH.</speaker>
             <l n="1462" xml:id="l1462">Dis-lui que d'aujourd'hui l'on ne voit point la Reine, </l>
             <l n="1463" xml:id="l1463">Qu'elle est indisposée. Il est mort ! Il est mort ! </l>
           </sp>
-          <sp xml:id="V03-8" who="ALIX">
+          <sp who="ALIX" xml:id="V03-8">
             <speaker>ALIX.</speaker>
             <l n="1464" xml:id="l1464">Ce coup sur son esprit fait un étrange effort, </l>
             <l n="1465" xml:id="l1465">Et de quelque façon que sa douleur se flatte, </l>
             <l n="1466" xml:id="l1466">Son mortel déplaisir visiblement éclate. </l>
           </sp>
-          <sp xml:id="V03-9" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V03-9">
             <speaker>ÉLISABETH.</speaker>
             <l n="1467" xml:id="l1467">Ah ! Le Comte n'est plus, ton coeur est satisfait, </l>
             <l n="1468" xml:id="l1468">Il vient de réparer le tort qu'il t'avait fait. </l>
@@ -2113,14 +2176,14 @@
             <l n="1477" xml:id="l1477">Celui que ton coeur hait, celui que ton coeur aime, </l>
             <l n="1478" xml:id="l1478">Cet ennemi mortel, et cet autre toi-même. </l>
           </sp>
-          <sp xml:id="V03-10" who="ALIX">
+          <sp who="ALIX" xml:id="V03-10">
             <speaker>ALIX.</speaker>
             <l n="1479" xml:id="l1479">De contraires pensers son esprit combattu, </l>
             <l n="1480" xml:id="l1480">Laisse à sa passion accabler sa vertu. </l>
             <l n="1481" xml:id="l1481">L'amour, à la douleur fait céder son courage, </l>
             <l n="1482" xml:id="l1482">Et son ressentiment se lit sur son visage. </l>
           </sp>
-          <sp xml:id="V03-11" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V03-11">
             <speaker>ÉLISABETH.</speaker>
             <l n="1483" xml:id="l1483">Mais pourquoi le plaindrai-je, et de quelle raison ? </l>
             <l n="1484" xml:id="l1484">Puis-je excuser ma plainte après sa trahison ? </l>
@@ -2146,9 +2209,11 @@
             <l n="1504" xml:id="l1504">À ton règne, à ton coeur, le repos et la paix. </l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Léonore, Élisabeth.<listPerson type="configuration" xml:id="conf28"><person corresp="#LEONORE"/><person corresp="#ELISABETH"/></listPerson></head>
-          <sp xml:id="V04-1" who="LEONORE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Léonore, Élisabeth.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#LEONORE"/>
+            <person corresp="#ELISABETH"/></listPerson></head>
+          <sp who="LEONORE" xml:id="V04-1">
             <speaker>LÉONORE.</speaker>
             <l n="1505" xml:id="l1505">Si vous avez pitié de Madame Cécile, </l>
             <l n="1506" xml:id="l1506">Madame pardonnez sa prière incivile, </l>
@@ -2159,11 +2224,11 @@
             <l n="1511" xml:id="l1511">C'est de votre bonté qu'elle attend son repos, </l>
             <l n="1512" xml:id="l1512">Et l'honneur seulement de vous dire deux mots. </l>
           </sp>
-          <sp xml:id="V04-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V04-2">
             <speaker>ÉLISABETH.</speaker>
             <l n="1513" xml:id="l1513">Quel est donc le malheur de Madame Cécile ? </l>
           </sp>
-          <sp xml:id="V04-3" who="LEONORE">
+          <sp who="LEONORE" xml:id="V04-3">
             <speaker>LÉONORE.</speaker>
             <l n="1514" xml:id="l1514">Aussitôt que le bruit a couru par la ville, </l>
             <l n="1515" xml:id="l1515">Et que Raleig a dit que le Comte était mort, </l>
@@ -2177,15 +2242,18 @@
             <l n="1523" xml:id="l1523">Elle m'a témoigné que son dernier désir, </l>
             <l n="1524" xml:id="l1524">N'était que de vous voir, faites-lui ce plaisir. </l>
           </sp>
-          <sp xml:id="V04-4" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V04-4">
             <speaker>ÉLISABETH.</speaker>
             <l n="1525" xml:id="l1525">Oui, j'y vais de ce pas, cette triste nouvelle </l>
             <l n="1526" xml:id="l1526">Afflige mon esprit d'une douleur mortelle. </l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Cécile, Madame Cécile.<listPerson type="configuration" xml:id="conf29"><person corresp="#MADAMECECILE"/><person corresp="#CECILE"/><person corresp="#MADAMECECILE"/></listPerson></head>
-          <sp xml:id="V05-1" who="MADAMECECILE">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Cécile, Madame Cécile.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#MADAMECECILE"/>
+            <person corresp="#CECILE"/>
+            <person corresp="#MADAMECECILE"/></listPerson></head>
+          <sp who="MADAMECECILE" xml:id="V05-1">
             <speaker>MADAME CÉCILE, sur un lit.</speaker>
             <l n="1527" xml:id="l1527">Ah ! Ne m'afflige plus par tes lâches propos, </l>
             <l n="1528" xml:id="l1528">Éloigne-toi cruel et me laisse en repos, </l>
@@ -2211,38 +2279,43 @@
             <l n="1548" xml:id="l1548">Sur notre repentir jeter un peu les yeux ; </l>
             <l n="1549" xml:id="l1549">Et si notre remords peut adoucir ta haine. </l>
           </sp>
-          <sp xml:id="V05-2" who="CECILE">
+          <sp who="CECILE" xml:id="V05-2">
             <speaker>CÉCILE.</speaker>
             <l n="1550" xml:id="l1550">Consolez-vous, Madame, et recevez la Reine, </l>
             <l n="1551" xml:id="l1551">Elle entre dans la Chambre et vous vient visiter. </l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE VI. Madame Cécile, Élisabeth, Alix.<listPerson type="configuration" xml:id="conf30"><person corresp="#MADAMECECILE"/><person corresp="#ELISABETH"/><person corresp="#ALIX"/><person corresp="#CECILE"/><person corresp="#MADAMECECILE"/></listPerson></head>
-          <sp xml:id="V06-1" who="MADAMECECILE">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE VI. Madame Cécile, Élisabeth, Alix.<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#MADAMECECILE"/>
+            <person corresp="#ELISABETH"/>
+            <person corresp="#ALIX"/>
+            <person corresp="#CECILE"/>
+            <person corresp="#MADAMECECILE"/></listPerson></head>
+          <sp who="MADAMECECILE" xml:id="V06-1">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="1552" xml:id="l1552">Ô Ciel ! Avec quel front pourras-tu supporter </l>
             <l n="1553" xml:id="l1553">La dernière visite, et la dernière vue </l>
             <l n="1554" xml:id="l1554">De celle que ton crime a sans doute perdue ? </l>
-            <l n="1555" xml:id="l1555" part="I">Ah ! Madame. </l>
+            <l n="1555" part="I" xml:id="l1555">Ah ! Madame. </l>
           </sp>
-          <sp xml:id="V06-2" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V06-2">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Remets ton courage abattu, </l>
-            <l n="1556" xml:id="l1556" part="I">Je te viens consoler. </l>
+            <l n="1556" part="I" xml:id="l1556">Je te viens consoler. </l>
           </sp>
-          <sp xml:id="V06-3" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="V06-3">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="M">Madame. </l>
           </sp>
-          <sp xml:id="V06-4" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V06-4">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Que veux-tu ? </l>
             <l n="1557" xml:id="l1557">Tu connais bien assez le regret qui me trouble, </l>
             <l n="1558" xml:id="l1558">Sans que par ton malheur ma tristesse redouble. </l>
             <l n="1559" xml:id="l1559">Console-toi, ma fille, et ne m'afflige pas. </l>
           </sp>
-          <sp xml:id="V06-5" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="V06-5">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="1560" xml:id="l1560">Ah ! Madame, plutôt avancez mon trépas, </l>
             <l n="1561" xml:id="l1561">Et ne conservez plus cette bonté Royale </l>
@@ -2259,23 +2332,23 @@
             <l n="1571" xml:id="l1571">Que cette repentante embrasse vos genoux, </l>
             <l n="1572" xml:id="l1572">Pour le dernier bienfait que j'espère de vous. </l>
             <stage type="[N/A]">Elle parle aux filles.</stage>
-            <l n="1573" xml:id="l1573" part="I">Secondez ma faiblesse. </l>
+            <l n="1573" part="I" xml:id="l1573">Secondez ma faiblesse. </l>
           </sp>
-          <sp xml:id="V06-6" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V06-6">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Ah ! Levez-vous, Madame</l>
           </sp>
-          <sp xml:id="V06-7" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="V06-7">
             <speaker>MADAME CÉCILE.</speaker>
             <l n="1574" xml:id="l1574">Plutôt à vos genoux je laisserai mon âme. </l>
             <l n="1575" xml:id="l1575">Si l'état où je suis ne m'obtient le pardon </l>
             <l n="1576" xml:id="l1576">De mon ingratitude et de ma trahison. </l>
           </sp>
-          <sp xml:id="V06-8" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V06-8">
             <speaker>ÉLISABETH.</speaker>
-            <l n="1577" xml:id="l1577" part="I">Vous ne m'avez rien fait ? </l>
+            <l n="1577" part="I" xml:id="l1577">Vous ne m'avez rien fait ? </l>
           </sp>
-          <sp xml:id="V06-9" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="V06-9">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="F">Ah ! Je suis si coupable </l>
             <l n="1578" xml:id="l1578">Que mon crime jamais n'eut de crime semblable. </l>
@@ -2286,15 +2359,15 @@
             <l n="1583" xml:id="l1583">Et je meurs sans regret, si j'ai dans mon trépas, </l>
             <l n="1584" xml:id="l1584">Le pardon d'un forfait qui n'en mérite pas. </l>
           </sp>
-          <sp xml:id="V06-10" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V06-10">
             <speaker>ÉLISABETH.</speaker>
             <l n="1585" xml:id="l1585">Quoi que vous m'eussiez fait en l'état où vous êtes, </l>
             <l n="1586" xml:id="l1586">Je vous accorderais vos dernières requêtes, </l>
             <l n="1587" xml:id="l1587">Mais puisque votre esprit en sera satisfait, </l>
             <l n="1588" xml:id="l1588">Je vous pardonne tout, quoi que vous m'ayez fait. </l>
-            <l n="1589" xml:id="l1589" part="I">Mais levez-vous. </l>
+            <l n="1589" part="I" xml:id="l1589">Mais levez-vous. </l>
           </sp>
-          <sp xml:id="V06-11" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="V06-11">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="F">Bon Dieu que je suis inhumaine, </l>
             <l n="1590" xml:id="l1590">De trahir lâchement une si bonne Reine. </l>
@@ -2323,20 +2396,20 @@
             <l n="1612" xml:id="l1612">Mais Dieu je n'en puis plus voyez ce diamant, </l>
             <l n="1613" xml:id="l1613">Il achève pour moi cette triste harangue, </l>
             <l n="1614" xml:id="l1614">Et ce gage de vous parle mieux que ma langue, </l>
-            <l n="1615" xml:id="l1615" part="I">Je l'ai reçu de lui, je vous le rends. </l>
+            <l n="1615" part="I" xml:id="l1615">Je l'ai reçu de lui, je vous le rends. </l>
           </sp>
-          <sp xml:id="V06-12" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V06-12">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Ô Dieux ! </l>
           </sp>
-          <sp xml:id="V06-13" who="ALIX">
+          <sp who="ALIX" xml:id="V06-13">
             <speaker>ALIX.</speaker>
             <l n="1616" xml:id="l1616">La Reine devint pâle elle ferme les yeux, </l>
             <l n="1617" xml:id="l1617">Et s'est évanouie à cet objet funeste. </l>
-            <l n="1618" xml:id="l1618" part="I">Au secours. </l>
+            <l n="1618" part="I" xml:id="l1618">Au secours. </l>
             <stage type="[N/A]">Ils reviennent.</stage>
           </sp>
-          <sp xml:id="V06-14" who="MADAMECECILE">
+          <sp who="MADAMECECILE" xml:id="V06-14">
             <speaker>MADAME CÉCILE.</speaker>
             <l part="F">Si pour moi quelque pitié vous reste, </l>
             <l n="1619" xml:id="l1619">Hélas ! Délivrez-moi des maux que je prenais, </l>
@@ -2346,9 +2419,11 @@
             <stage type="[N/A]">Et emportent Madame Cécile.</stage>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
-          <head>SCÈNE VII. Élisabeth, Alix.<listPerson type="configuration" xml:id="conf31"><person corresp="#ELISABETH"/><person corresp="#ALIX"/></listPerson></head>
-          <sp xml:id="V07-1" who="ELISABETH">
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE VII. Élisabeth, Alix.<listPerson type="configuration" xml:id="conf31">
+            <person corresp="#ELISABETH"/>
+            <person corresp="#ALIX"/></listPerson></head>
+          <sp who="ELISABETH" xml:id="V07-1">
             <speaker>ÉLISABETH.</speaker>
             <l n="1623" xml:id="l1623">Quel secours importun a troublé mon sommeil ? </l>
             <l n="1624" xml:id="l1624">Et me redonne encor la clarté d'un Soleil ; </l>
@@ -2395,20 +2470,20 @@
             <l n="1665" xml:id="l1665">Viens ôter de mon coeur cette image funeste, </l>
             <l n="1666" xml:id="l1666">Et ce beau souvenir dont le portrait me reste. </l>
           </sp>
-          <sp xml:id="V07-2" who="ALIX">
+          <sp who="ALIX" xml:id="V07-2">
             <speaker>ALIX.</speaker>
             <l n="1667" xml:id="l1667">Juste Ciel ! Apaisez ces mortelles douleurs. </l>
           </sp>
-          <sp xml:id="V07-3" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V07-3">
             <speaker>ÉLISABETH.</speaker>
             <l n="1668" xml:id="l1668">Ah ! C'est ainsi que j'aime, et ce sont mes faveurs, </l>
             <l n="1669" xml:id="l1669">Telles sont mes amours, telles mes récompenses. </l>
           </sp>
-          <sp xml:id="V07-4" who="ALIX">
+          <sp who="ALIX" xml:id="V07-4">
             <speaker>ALIX.</speaker>
-            <l n="1670" xml:id="l1670" part="I">Souvenez-vous Madame. </l>
+            <l n="1670" part="I" xml:id="l1670">Souvenez-vous Madame. </l>
           </sp>
-          <sp xml:id="V07-5" who="ELISABETH">
+          <sp who="ELISABETH" xml:id="V07-5">
             <speaker>ÉLISABETH.</speaker>
             <l part="F">Ah ! Cesse tu m'offenses. </l>
             <l n="1671" xml:id="l1671">Comte tu n'es donc plus, et celle qui t'aima, </l>

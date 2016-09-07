@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>L'Escolier de Salamanque</title>
         <title type="sub"> ou les généreux ennemis, tragi-comédie</title>
-        <author academie="" born="1610" born_location="Paris" death="1660" death_location="Paris" key="Scarron, Paul (1610-1660)"><surname>Scarron</surname><forename> Paul</forename></author>
+        <author academie="" born="1610" born_location="Paris" death="1660" death_location="Paris" key="Scarron, Paul (1610-1660)">
+          <surname>Scarron</surname>
+          <forename> Paul</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
-<publisher>Théâtre Classique</publisher>
-<p>publié par Paul FIEVRE août 2010, revu janvier 2015</p>
+        <publisher>Théâtre Classique</publisher>
+        <p>publié par Paul FIEVRE août 2010, revu janvier 2015</p>
       </publicationStmt>
       <sourceDesc>
         <genre>Tragi-comédie</genre>
@@ -32,7 +36,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre">Tragi-comédie</term>
+          <term subtype="tragedy" type="genre">Tragi-comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -79,7 +83,7 @@
         <castItem><role age="A" civil="F" id="LISETTE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="LISETTE">LISETTE</role>, suivante de Cassandre.</castItem>
         <castItem><role age="A" civil="M" id="ZAMORIN" rend="male" stat_amour="néant" statut="suivante" type="H" xml:id="ZAMORIN">ZAMORIN</role>, Brave.</castItem>
         <castItem><role age="A" civil="M" id="LA TAILLADE" rend="male" stat_amour="néant" statut="soldat" type="H" xml:id="LATAILLADE">LA TAILLADE</role>, Brave.</castItem>
-        <castItem><role age="A" civil="G" id="QUATRE BRAVES" rend="group" stat_amour="néant" statut="soldat" type="H" xml:id="BRAVES">QUATRE BRAVES.</role>.<role xml:id="DONLOUIS" n="DON LOUIS"/></castItem>
+        <castItem><role age="A" civil="G" id="QUATRE BRAVES" rend="group" stat_amour="néant" statut="soldat" type="H" xml:id="BRAVES">QUATRE BRAVES.</role>.<role n="DON LOUIS" xml:id="DONLOUIS"/></castItem>
         <castItem><role age="A" civil="M" id="PRÉVÔT" rend="male" stat_amour="néant" statut="prévôt" type="H" xml:id="PREVOT">UN PRÉVÔT</role>.</castItem>
         <castItem><role age="A" civil="G" id="ARCHERS" rend="group" stat_amour="néant" statut="archer" type="H" xml:id="ARCHERS">ARCHERS</role>.</castItem>
       </castList>
@@ -89,7 +93,12 @@
       <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
         <div2 n="1" type="scene" xml:id="I01">
-          <head>SCÈNE I. Le Comte, Léonore, Béatris.<listPerson type="configuration" xml:id="conf1"><person corresp="#LECOMTE"/><person corresp="#LEONORE"/><person corresp="#BEATRIX"/><person corresp="#DONFELIX"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE I. Le Comte, Léonore, Béatris.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LECOMTE"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#DONFELIX"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LECOMTE" xml:id="I01-1">
             <speaker>LE COMTE.</speaker>
             <l n="1" xml:id="l1">Vous ne voulez donc pas, Madame, que je sorte ?</l>
@@ -365,7 +374,12 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="I02">
-          <head>SCÈNE II. Don Félix, Béatris, Léonore, Le Comte.<listPerson type="configuration" xml:id="conf2"><person corresp="#DONFELIX"/><person corresp="#BEATRIX"/><person corresp="#LEONORE"/><person corresp="#LECOMTE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE II. Don Félix, Béatris, Léonore, Le Comte.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#DONFELIX"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="DONFELIX" xml:id="I02-1">
             <speaker>DON FÉLIX, en entrant.</speaker>
             <l part="F">La belle diligence </l>
@@ -488,7 +502,12 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="I03">
-          <head>SCÈNE III. Crispin, Don Félix, Léonore, Béatris.<listPerson type="configuration" xml:id="conf3"><person corresp="#CRISPIN"/><person corresp="#DONFELIX"/><person corresp="#LEONORE"/><person corresp="#BEATRIX"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE III. Crispin, Don Félix, Léonore, Béatris.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#CRISPIN"/>
+            <person corresp="#DONFELIX"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CRISPIN" xml:id="I03-1">
             <speaker>CRISPIN.</speaker>
             <l part="M">Adsum. </l>
@@ -682,7 +701,12 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="I04">
-          <head>SCÈNE IV. Le Comte, Don Félix, Léonore, Béatris. <listPerson type="configuration" xml:id="conf4"><person corresp="#LECOMTE"/><person corresp="#DONFELIX"/><person corresp="#LEONORE"/><person corresp="#BEATRIX"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE IV. Le Comte, Don Félix, Léonore, Béatris. <listPerson type="configuration" xml:id="conf4">
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONFELIX"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LECOMTE" xml:id="I04-1">
             <speaker>LE COMTE.</speaker>
             <l part="F">C'est un homme enfermé, </l>
@@ -842,7 +866,9 @@
       <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
         <div2 n="1" type="scene" xml:id="II01">
-          <head>SCÈNE I. Don Louis, Zamorin brave, 4 Braves. <listPerson type="configuration" xml:id="conf6"><person corresp="#DONLOUIS"/><person corresp="#ZAMORIN"/></listPerson></head>
+          <head>SCÈNE I. Don Louis, Zamorin brave, 4 Braves. <listPerson type="configuration" xml:id="conf6">
+            <person corresp="#DONLOUIS"/>
+            <person corresp="#ZAMORIN"/></listPerson></head>
           <sp who="DONLOUIS" xml:id="II01-1">
             <speaker>DON LOUIS.</speaker>
             <l n="319" part="I" xml:id="l319">Vous savez mon dessein. </l>
@@ -890,7 +916,10 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="II02">
-          <head>SCÈNE II. Don Pedre, Crispin.<listPerson type="configuration" xml:id="conf7"><person corresp="#DONPEDRE"/><person corresp="#CRISPIN"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE II. Don Pedre, Crispin.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#CRISPIN"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="DONPEDRE" xml:id="II02-1">
             <speaker>DON PEDRE.</speaker>
             <l part="F">Et tu dis que mon père </l>
@@ -1066,7 +1095,12 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="II03">
-          <head>SCÈNE III. Don Louis, Don Pedre, Zamorin brave, Quatre Braves, Crispin, Le Comte.<listPerson type="configuration" xml:id="conf8"><person corresp="#DONLOUIS"/><person corresp="#DONPEDRE"/><person corresp="#CRISPIN"/><person corresp="#ZAMORIN"/><person corresp="#LECOMTE"/></listPerson></head>
+          <head>SCÈNE III. Don Louis, Don Pedre, Zamorin brave, Quatre Braves, Crispin, Le Comte.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#DONLOUIS"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#CRISPIN"/>
+            <person corresp="#ZAMORIN"/>
+            <person corresp="#LECOMTE"/></listPerson></head>
           <sp who="DONLOUIS" xml:id="II03-1">
             <speaker>DON LOUIS.</speaker>
             <l n="380" xml:id="l380">Cavalier, cédez-moi la rue, et promptement, </l>
@@ -1168,7 +1202,11 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="II04">
-          <head>SCÈNE IV. Cassandre, Lisette, Crispin. <listPerson type="configuration" xml:id="conf9"><person corresp="#CASSANDRE"/><person corresp="#LISETTE"/><person corresp="#CRISPIN"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE IV. Cassandre, Lisette, Crispin. <listPerson type="configuration" xml:id="conf9">
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#LISETTE"/>
+            <person corresp="#CRISPIN"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CASSANDRE" xml:id="II04-1">
             <speaker>CASSANDRE.</speaker>
             <l n="405" xml:id="l405">Si tu m'aimes, Lisette, avance dans la nuit, </l>
@@ -1235,7 +1273,11 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="II05">
-          <head>SCÈNE V. Le Comte, Don Pedre, Cassandre. <listPerson type="configuration" xml:id="conf10"><person corresp="#LECOMTE"/><person corresp="#DONPEDRE"/><person corresp="#CASSANDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE V. Le Comte, Don Pedre, Cassandre. <listPerson type="configuration" xml:id="conf10">
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LECOMTE" xml:id="II05-1">
             <speaker>LE COMTE.</speaker>
             <l n="438" xml:id="l438">Retirez-vous, ma Soeur, et que seul on me laisse, </l>
@@ -1267,7 +1309,12 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="II06">
-          <head>SCÈNE VI. Le Prévôt, Le Comte, Des Archers, Don Pedre.<listPerson type="configuration" xml:id="conf11"><person corresp="#PREVOT"/><person corresp="#LECOMTE"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/><person corresp="#ARCHERS"/></listPerson></head>
+          <head>SCÈNE VI. Le Prévôt, Le Comte, Des Archers, Don Pedre.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#PREVOT"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/>
+            <person corresp="#ARCHERS"/></listPerson></head>
           <sp who="PREVOT" xml:id="II06-1">
             <speaker>LE PRÉVÔT.</speaker>
             <l n="450" xml:id="l450">Monsieur, vous trouverez ma visite incivile : </l>
@@ -1458,7 +1505,10 @@
           </sp>
         </div2>
         <div2 n="7" type="scene" xml:id="II07">
-          <head>SCÈNE VII. Le Comte, Béatris.<listPerson type="configuration" xml:id="conf12"><person corresp="#BEATRIX"/><person corresp="#LECOMTE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE VII. Le Comte, Béatris.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#BEATRIX"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="BEATRIX" xml:id="II07-1">
             <speaker>BÉATRIX.</speaker>
             <l part="F">De la part de l'amour, </l>
@@ -1494,7 +1544,10 @@
           </sp>
         </div2>
         <div2 n="8" type="scene" xml:id="II08">
-          <head>SCÈNE VIII. Le Comte, Cassandre. <listPerson type="configuration" xml:id="conf13"><person corresp="#CASSANDRE"/><person corresp="#LECOMTE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE VIII. Le Comte, Cassandre. <listPerson type="configuration" xml:id="conf13">
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CASSANDRE" xml:id="II08-1">
             <speaker>CASSANDRE.</speaker>
             <l n="540" xml:id="l540">Le moyen de dormir après un tel malheur. </l>
@@ -1545,7 +1598,10 @@
           </sp>
         </div2>
         <div2 n="9" type="scene" xml:id="II09">
-          <head>SCÈNE IX. Don Pedre, Le Comte.<listPerson type="configuration" xml:id="conf14"><person corresp="#DONPEDRE"/><person corresp="#LECOMTE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE IX. Don Pedre, Le Comte.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="DONPEDRE" xml:id="II09-1">
             <speaker>DON PEDRE.</speaker>
             <l part="F">Et moi vous endormi. </l>
@@ -1720,7 +1776,10 @@
       <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
         <div2 n="1" type="scene" xml:id="III01">
-          <head>SCÈNE I. Béatris, Léonore.<listPerson type="configuration" xml:id="conf16"><person corresp="#BEATRIX"/><person corresp="#LEONORE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE I. Béatris, Léonore.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#BEATRIX"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="BEATRIX" xml:id="III01-1">
             <speaker>BÉATRIX.</speaker>
             <l n="655" xml:id="l655">Votre âme vainement se vantait d'être forte. </l>
@@ -1874,7 +1933,10 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="III02">
-          <head>SCÈNE II. Crispin, Béatris.<listPerson type="configuration" xml:id="conf17"><person corresp="#CRISPIN"/><person corresp="#BEATRIX"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE II. Crispin, Béatris.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#CRISPIN"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CRISPIN" xml:id="III02-1">
             <speaker>CRISPIN, en chantant.</speaker>
             <l n="723" xml:id="l723">Aimez autant que vous êtes aimable, </l>
@@ -2009,7 +2071,11 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="III03">
-          <head>SCÈNE III. Le Comte, Don Pedre, Béatris.<listPerson type="configuration" xml:id="conf18"><person corresp="#LECOMTE"/><person corresp="#BEATRIX"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE III. Le Comte, Don Pedre, Béatris.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#LECOMTE"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LECOMTE" xml:id="III03-1">
             <speaker>LE COMTE.</speaker>
             <l part="F">Éteignez le flambeau : </l>
@@ -2073,7 +2139,10 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="III04">
-          <head>SCÈNE IV. Don Félix, Don Pedre.<listPerson type="configuration" xml:id="conf19"><person corresp="#DONFELIX"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE IV. Don Félix, Don Pedre.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#DONFELIX"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="DONFELIX" xml:id="III04-1">
             <speaker>DON FÉLIX, entre sans lumière. </speaker>
             <l part="F">Je ne me trompe pas : </l>
@@ -2224,7 +2293,12 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="III05">
-          <head>SCÈNE V. Léonore, Le Comte, Don Pedre, Don Félix.<listPerson type="configuration" xml:id="conf20"><person corresp="#LEONORE"/><person corresp="#LECOMTE"/><person corresp="#DONFELIX"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE V. Léonore, Le Comte, Don Pedre, Don Félix.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#LEONORE"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONFELIX"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LEONORE" xml:id="III05-1">
             <speaker>LÉONORE, derrière le théâtre.</speaker>
             <l part="F">C'est en vain tu ne sortiras pas. </l>
@@ -2473,7 +2547,10 @@
       <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
         <div2 n="1" type="scene" xml:id="IV01">
-          <head>SCÈNE I. Crispin, Béatris.<listPerson type="configuration" xml:id="conf22"><person corresp="#CRISPIN"/><person corresp="#BEATRIX"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE I. Crispin, Béatris.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#CRISPIN"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CRISPIN" xml:id="IV01-1">
             <speaker>CRISPIN.</speaker>
             <l n="971" xml:id="l971">Pour te dire le vrai ; j'adoptais la visite ; </l>
@@ -2602,7 +2679,10 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="IV02">
-          <head>SCÈNE II. Zamorin, Crispin. <listPerson type="configuration" xml:id="conf23"><person corresp="#ZAMORIN"/><person corresp="#CRISPIN"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE II. Zamorin, Crispin. <listPerson type="configuration" xml:id="conf23">
+            <person corresp="#ZAMORIN"/>
+            <person corresp="#CRISPIN"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="ZAMORIN" xml:id="IV02-1">
             <speaker>ZAMORIN.</speaker>
             <l n="1019" xml:id="l1019">Elle a parbleu bon air ! Quelle est cette Princesse ? </l>
@@ -2772,7 +2852,10 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="IV03">
-          <head>SCÈNE III. La Taillade, Zamorin.<listPerson type="configuration" xml:id="conf24"><person corresp="#LATAILLADE"/><person corresp="#ZAMORIN"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE III. La Taillade, Zamorin.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#LATAILLADE"/>
+            <person corresp="#ZAMORIN"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LATAILLADE" xml:id="IV03-1">
             <speaker>LA TAILLADE.</speaker>
             <l part="F">Le dessein de te voir. </l>
@@ -2925,7 +3008,11 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="IV04">
-          <head>SCÈNE IV. Le Prévôt, Don Pedre, Zamorin.<listPerson type="configuration" xml:id="conf25"><person corresp="#PREVOT"/><person corresp="#DONPEDRE"/><person corresp="#ZAMORIN"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE IV. Le Prévôt, Don Pedre, Zamorin.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#PREVOT"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#ZAMORIN"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="PREVOT" xml:id="IV04-1">
             <speaker>LE PRÉVÔT.</speaker>
             <l part="F">Que l'on sorte, </l>
@@ -3032,7 +3119,10 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="IV05">
-          <head>SCÈNE V. Crispin, Don Pedre.<listPerson type="configuration" xml:id="conf26"><person corresp="#CRISPIN"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE V. Crispin, Don Pedre.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#CRISPIN"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CRISPIN" xml:id="IV05-1">
             <speaker>CRISPIN.</speaker>
             <l n="1193" xml:id="l1193">Le soleil éclipsé sous un sombre brouillard, </l>
@@ -3076,7 +3166,12 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="IV06">
-          <head>SCÈNE VI. Cassandre, Don Pedre, Crispin, Lisette.<listPerson type="configuration" xml:id="conf27"><person corresp="#CASSANDRE"/><person corresp="#DONPEDRE"/><person corresp="#LISETTE"/><person corresp="#CRISPIN"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE VI. Cassandre, Don Pedre, Crispin, Lisette.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#LISETTE"/>
+            <person corresp="#CRISPIN"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CASSANDRE" xml:id="IV06-1">
             <speaker>CASSANDRE.</speaker>
             <l n="1206" xml:id="l1206">Oui brave Cavalier, sachant qui vous étiez, </l>
@@ -3183,7 +3278,10 @@
           </sp>
         </div2>
         <div2 n="7" type="scene" xml:id="IV07">
-          <head>SCÈNE VII. Le Comte, Don Pedre.<listPerson type="configuration" xml:id="conf28"><person corresp="#LECOMTE"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE VII. Le Comte, Don Pedre.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LECOMTE" xml:id="IV07-1">
             <speaker>LE COMTE.</speaker>
             <l part="F">Ma visite imprévue </l>
@@ -3273,7 +3371,11 @@
           </sp>
         </div2>
         <div2 n="8" type="scene" xml:id="IV08">
-          <head>SCÈNE VIII., Don Félix, Don Pedre, Le Comte. <listPerson type="configuration" xml:id="conf29"><person corresp="#DONFELIX"/><person corresp="#LECOMTE"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE VIII., Don Félix, Don Pedre, Le Comte. <listPerson type="configuration" xml:id="conf29">
+            <person corresp="#DONFELIX"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="DONFELIX" xml:id="IV08-1">
             <speaker>DON FÉLIX.</speaker>
             <l part="F">Oui mon fils, c'est fort bien m'obéir, </l>
@@ -3339,7 +3441,11 @@
           </sp>
         </div2>
         <div2 n="9" type="scene" xml:id="IV09">
-          <head>SCÈNE IX. Le Prévôt, Le Comte, Don Pedre.<listPerson type="configuration" xml:id="conf30"><person corresp="#PREVOT"/><person corresp="#LECOMTE"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE IX. Le Prévôt, Le Comte, Don Pedre.<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#PREVOT"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="PREVOT" xml:id="IV09-1">
             <speaker>LE PRÉVÔT.</speaker>
             <l part="F">Monsieur, à la Requête </l>
@@ -3444,7 +3550,10 @@
       <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
         <div2 n="1" type="scene" xml:id="V01">
-          <head>SCÈNE I. Crispin, Don Pedre.<listPerson type="configuration" xml:id="conf32"><person corresp="#CRISPIN"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE I. Crispin, Don Pedre.<listPerson type="configuration" xml:id="conf32">
+            <person corresp="#CRISPIN"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CRISPIN" xml:id="V01-1">
             <speaker>CRISPIN.</speaker>
             <l n="1363" xml:id="l1363">La peste, mon Patron, et que vous en savez. </l>
@@ -3589,7 +3698,9 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="V02">
-          <head>SCÈNE II. La Taillade, 4 Braves. <listPerson type="configuration" xml:id="conf33"><person corresp="#LATAILLADE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE II. La Taillade, 4 Braves. <listPerson type="configuration" xml:id="conf33">
+            <person corresp="#LATAILLADE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LATAILLADE" xml:id="V02-1">
             <speaker>LA TAILLADE.</speaker>
             <l part="F">Grâce à Dieu, peu de visages blêmes </l>
@@ -3614,7 +3725,11 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="V03">
-          <head>SCÈNE III. Le Comte, Don Pedre, La Taillade, 3 Braves. <listPerson type="configuration" xml:id="conf34"><person corresp="#LECOMTE"/><person corresp="#LATAILLADE"/><person corresp="#DONPEDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE III. Le Comte, Don Pedre, La Taillade, 3 Braves. <listPerson type="configuration" xml:id="conf34">
+            <person corresp="#LECOMTE"/>
+            <person corresp="#LATAILLADE"/>
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LECOMTE" xml:id="V03-1">
             <speaker>LE COMTE.</speaker>
             <l n="1452" xml:id="l1452">Cavalier, je n'ai pu venir plus promptement : </l>
@@ -3777,7 +3892,12 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="V04">
-          <head>SCÈNE IV. Crispin, Béatris, Léonore, Cassandre. <listPerson type="configuration" xml:id="conf35"><person corresp="#CRISPIN"/><person corresp="#BEATRIX"/><person corresp="#LEONORE"/><person corresp="#CASSANDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE IV. Crispin, Béatris, Léonore, Cassandre. <listPerson type="configuration" xml:id="conf35">
+            <person corresp="#CRISPIN"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="CRISPIN" xml:id="V04-1">
             <speaker>CRISPIN.</speaker>
             <l n="1500" part="I" xml:id="l1500">Les porteurs sont fourbus. </l>
@@ -3828,7 +3948,11 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="V05">
-          <head>SCÈNE V. Le Comte, Léonore, Cassandre, Crispin, Béatris.<listPerson type="configuration" xml:id="conf36"><person corresp="#LECOMTE"/><person corresp="#LEONORE"/><person corresp="#CASSANDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE V. Le Comte, Léonore, Cassandre, Crispin, Béatris.<listPerson type="configuration" xml:id="conf36">
+            <person corresp="#LECOMTE"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="LECOMTE" xml:id="V05-1">
             <speaker>LE COMTE, sortant du bord de l'eau. </speaker>
             <l part="F">Avais-je à le garder. </l>
@@ -3895,7 +4019,13 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="V06">
-          <head>SCÈNE VI. Don Félix, Le Prévôt et sa suite, Léonore, etc. <listPerson type="configuration" xml:id="conf37"><person corresp="#DONFELIX"/><person corresp="#LECOMTE"/><person corresp="#PREVOT"/><person corresp="#CRISPIN"/><person corresp="#LEONORE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE VI. Don Félix, Le Prévôt et sa suite, Léonore, etc. <listPerson type="configuration" xml:id="conf37">
+            <person corresp="#DONFELIX"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#PREVOT"/>
+            <person corresp="#CRISPIN"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="DONFELIX" xml:id="V06-1">
             <speaker>DON FÉLIX.</speaker>
             <l n="1557" xml:id="l1557">Ne l'aperçois-je pas ma déloyale fille ? </l>
@@ -4011,7 +4141,15 @@
           </sp>
         </div2>
         <div2 n="7" type="scene" xml:id="V07">
-          <head>SCÈNE VII. Don Pedre, Le Comte, Don Félix, Léonore, Cassandre, Béatris, Crispin, etc. <listPerson type="configuration" xml:id="conf38"><person corresp="#DONPEDRE"/><person corresp="#LECOMTE"/><person corresp="#DONFELIX"/><person corresp="#CRISPIN"/><person corresp="#LEONORE"/><person corresp="#BEATRIX"/><person corresp="#CASSANDRE"/><person corresp="#DONLOUIS"/></listPerson></head>
+          <head>SCÈNE VII. Don Pedre, Le Comte, Don Félix, Léonore, Cassandre, Béatris, Crispin, etc. <listPerson type="configuration" xml:id="conf38">
+            <person corresp="#DONPEDRE"/>
+            <person corresp="#LECOMTE"/>
+            <person corresp="#DONFELIX"/>
+            <person corresp="#CRISPIN"/>
+            <person corresp="#LEONORE"/>
+            <person corresp="#BEATRIX"/>
+            <person corresp="#CASSANDRE"/>
+            <person corresp="#DONLOUIS"/></listPerson></head>
           <sp who="DONPEDRE" xml:id="V07-1">
             <speaker>DON PEDRE.</speaker>
             <l n="1591" part="I" xml:id="l1591">Mon père et des archers. </l>

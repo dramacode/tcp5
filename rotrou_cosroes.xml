@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Cosroès</title><title type="sub">, tragédie.</title>
-        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)"><surname>Rotrou</surname><forename> Jean</forename></author>
+        <title>Cosroès</title>
+        <title type="sub">, tragédie.</title>
+        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)">
+          <surname>Rotrou</surname>
+          <forename> Jean</forename>
+        </author>
         <date>1649</date>
       </titleStmt>
       <publicationStmt>
@@ -58,8 +63,8 @@
       <castList>
         <head>ACTEURS</head>
         <castItem><role civil="M" id="COSROES" rend="male" xml:id="COSROES">COSROËS</role>, roi de Perse.</castItem>
-        <castItem><role civil="F" id="SYRA" rend="female" xml:id="SYRA">SYRA</role>, reine de Perse.<role xml:id="HORMISDATE" n="HORMISDATE"/></castItem>
-        <castItem><role civil="M" id="SYROES" rend="male" xml:id="SYROES">SYROËS</role>, fils du Roi de Perse.<role xml:id="ARTANASDE" n="ARTANASDE"/></castItem>
+        <castItem><role civil="F" id="SYRA" rend="female" xml:id="SYRA">SYRA</role>, reine de Perse.<role n="HORMISDATE" xml:id="HORMISDATE"/></castItem>
+        <castItem><role civil="M" id="SYROES" rend="male" xml:id="SYROES">SYROËS</role>, fils du Roi de Perse.<role n="ARTANASDE" xml:id="ARTANASDE"/></castItem>
         <castItem><role civil="F" id="NARSEE" rend="female" xml:id="NARSEE">NARSÉE</role>, femme de Syroës.</castItem>
         <castItem><role civil="M" id="MARDESANE" rend="male" xml:id="MARDESANE">MARDESANE</role>, fils de Cosroës et de Syra.</castItem>
         <castItem><role civil="M" id="SARDARIGUE" rend="male" xml:id="SARDARIGUE">SARDARIGUE</role>, père de Narsée.</castItem>
@@ -74,7 +79,11 @@
       <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
         <div2 n="1" type="scene" xml:id="I01">
-          <head>SCÈNE PREMIÈRE. Syra, Syroës. <listPerson type="configuration" xml:id="conf1"><person corresp="#SYRA"/><person corresp="#SYROES"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Syra, Syroës. <listPerson type="configuration" xml:id="conf1">
+            <person corresp="#SYRA"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="SYRA" xml:id="I01-1">
             <speaker>SYRA</speaker>
             <l n="1" xml:id="l1">Quoi ! vous, contre mon fils ! vous, son indigne frère !</l>
@@ -215,7 +224,12 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="I02">
-          <head>SCÈNE II. Mardesane, Syroës, Syra.<listPerson type="configuration" xml:id="conf2"><person corresp="#MARDESANE"/><person corresp="#SYROES"/><person corresp="#SYRA"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE II. Mardesane, Syroës, Syra.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#MARDESANE"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#SYRA"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="MARDESANE" xml:id="I02-1">
             <speaker>MARDESANE avec le bâton de Général d'armée.</speaker>
             <l n="75" xml:id="l75">Quel trouble, Syroës, émeut votre courroux !</l>
@@ -357,7 +371,11 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="I03">
-          <head>SCÈNE III. Palmyras, Satrape, Syroës.<listPerson type="configuration" xml:id="conf3"><person corresp="#PALMYRAS"/><person corresp="#SYROES"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE III. Palmyras, Satrape, Syroës.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="PALMYRAS" xml:id="I03-1">
             <speaker>PALMYRAS</speaker>
             <l part="F">C'est mal me la céder,</l>
@@ -531,7 +549,12 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="I04">
-          <head>SCÈNE IV. Pahrnace, Syroës, Palmyras.<listPerson type="configuration" xml:id="conf4"><person corresp="#PHARNACE"/><person corresp="#SYROES"/><person corresp="#PALMYRAS"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE IV. Pahrnace, Syroës, Palmyras.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#PHARNACE"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="PHARNACE" xml:id="I04-1">
             <speaker>PHARNACE, étonné.</speaker>
             <l n="290" xml:id="l290">Ô Dieux ! Du Camp, Seigneur, savez-vous la nouvelle !</l>
@@ -626,7 +649,13 @@
       <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
         <div2 n="1" type="scene" xml:id="II01">
-          <head>SCÈNE PREMIÈRE. Cosroës, Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf6"><person corresp="#COSROES"/><person corresp="#SYRA"/><person corresp="#SARDARIGUE"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Cosroës, Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#COSROES"/>
+            <person corresp="#SYRA"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="COSROES" xml:id="II01-1">
             <speaker>COSROËS furieux, suivi des autres.</speaker>
             <l n="349" xml:id="l349">Noires divinités, filles impitoyables,</l>
@@ -889,7 +918,13 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="II02">
-          <head>SCÈNE II. Mardesane, Cosroës, Syra, Hormisdate, Gardes.<listPerson type="configuration" xml:id="conf7"><person corresp="#COSROES"/><person corresp="#MARDESANE"/><person corresp="#SYRA"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE II. Mardesane, Cosroës, Syra, Hormisdate, Gardes.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#COSROES"/>
+            <person corresp="#MARDESANE"/>
+            <person corresp="#SYRA"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="COSROES" xml:id="II02-1">
             <speaker>COSROËS à Mardesane.</speaker>
             <l n="535" xml:id="l535">Venez, l'État lassé, de ployer sous ma loi,</l>
@@ -1029,7 +1064,14 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="II03">
-          <head>SCÈNE III. Syroës, Cosroës, Mardesane, Syra, Hormisdate, Gardes.<listPerson type="configuration" xml:id="conf8"><person corresp="#SYROES"/><person corresp="#MARDESANE"/><person corresp="#SYRA"/><person corresp="#COSROES"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE III. Syroës, Cosroës, Mardesane, Syra, Hormisdate, Gardes.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#SYROES"/>
+            <person corresp="#MARDESANE"/>
+            <person corresp="#SYRA"/>
+            <person corresp="#COSROES"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SYROES" xml:id="II03-1">
             <speaker>SYROËS</speaker>
             <l n="644" xml:id="l644">Quel bruit s'émeut, Seigneur, et s'épand à la Cour ?</l>
@@ -1099,7 +1141,11 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="II04">
-          <head>SCÈNE IV. Sardarigue, Syroës.<listPerson type="configuration" xml:id="conf9"><person corresp="#SYROES"/><person corresp="#SARDARIGUE"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE IV. Sardarigue, Syroës.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#SYROES"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="SYROES" xml:id="II04-1">
             <speaker>SYROËS</speaker>
             <l n="677" xml:id="l677">Quel ordre, Sardarigue, avez-vous de la Reine,</l>
@@ -1153,7 +1199,10 @@
       <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
         <div2 n="1" type="scene" xml:id="III01">
-          <head>SCÈNE PREMIÈRE. Syra, Hormisdate.<listPerson type="configuration" xml:id="conf11"><person corresp="#SYRA"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Syra, Hormisdate.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#SYRA"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="SYRA" xml:id="III01-1">
             <speaker>SYRA</speaker>
             <l n="709" xml:id="l709">Enfin, selon mes voeux, malgré la Loi Persane,</l>
@@ -1284,7 +1333,12 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="III02">
-          <head>SCÈNE II. Sardarigue, Gardes, Syra.<listPerson type="configuration" xml:id="conf12"><person corresp="#SARDARIGUE"/><person corresp="#SYRA"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE II. Sardarigue, Gardes, Syra.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#SYRA"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SARDARIGUE" xml:id="III02-1">
             <speaker>SARDARIGUE</speaker>
             <l n="789" xml:id="l789">Non, Madame, à regret, j'en exécute un autre.</l>
@@ -1450,7 +1504,14 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="III03">
-          <head>SCÈNE III. Syroës, Gardes, Parmyras, Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf13"><person corresp="#SYROES"/><person corresp="#SYRA"/><person corresp="#PALMYRAS"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#SARDARIGUE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE III. Syroës, Gardes, Parmyras, Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#SYROES"/>
+            <person corresp="#SYRA"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SYROES" xml:id="III03-1">
             <speaker>SYROËS</speaker>
             <l n="860" xml:id="l860">Trêve d'orgueil, Princesse, il n'est plus de saison ;</l>
@@ -1621,7 +1682,12 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="III04">
-          <head>SCÈNE IV. Narsée, Syroës, Gardes.<listPerson type="configuration" xml:id="conf14"><person corresp="#NARSEE"/><person corresp="#SYROES"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE IV. Narsée, Syroës, Gardes.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#NARSEE"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="NARSEE" xml:id="III04-1">
             <speaker>NARSÉE</speaker>
             <l n="943" xml:id="l943">Apprenez-moi, Seigneur, le nom que je vous dois !</l>
@@ -1813,7 +1879,10 @@
       <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
         <div2 n="1" type="scene" xml:id="IV01">
-          <head>SCÈNE PREMIÈRE. Syroës, Artanasde.<listPerson type="configuration" xml:id="conf16"><person corresp="#SYROES"/><person corresp="#ARTANASDE"/><person corresp="#HORMISDATE"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Syroës, Artanasde.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#SYROES"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#HORMISDATE"/></listPerson></head>
           <sp who="SYROES" xml:id="IV01-1">
             <speaker>SYROËS lisant un billet.</speaker>
             <l n="1073" xml:id="l1073">Ce billet est un gage, à votre Majesté,</l>
@@ -1990,7 +2059,12 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="IV02">
-          <head>SCÈNE II. Sardarigue, Syroës, Gardes, Artanasde.<listPerson type="configuration" xml:id="conf17"><person corresp="#SARDARIGUE"/><person corresp="#SYROES"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE II. Sardarigue, Syroës, Gardes, Artanasde.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SARDARIGUE" xml:id="IV02-1">
             <speaker>SARDARIGUE</speaker>
             <l n="1193" xml:id="l1193">Sire, votre grandeur, ne trouve plus d'obstacles ;</l>
@@ -2098,7 +2172,12 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="IV03">
-          <head>SCÈNE III. Narsée, Gardes, Sardarigue.<listPerson type="configuration" xml:id="conf18"><person corresp="#NARSEE"/><person corresp="#SARDARIGUE"/><person corresp="#GARDES"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE III. Narsée, Gardes, Sardarigue.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#NARSEE"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#GARDES"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="NARSEE" xml:id="IV03-1">
             <speaker>NARSÉE</speaker>
             <l n="1263" xml:id="l1263">Suivez-moi, Sardarigue, et délivrez la Reine.</l>
@@ -2117,7 +2196,13 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="IV04">
-          <head>SCÈNE IV. Palmyras, Narsée, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf19"><person corresp="#PALMYRAS"/><person corresp="#NARSEE"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#SARDARIGUE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE IV. Palmyras, Narsée, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#NARSEE"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="PALMYRAS" xml:id="IV04-1">
             <speaker>PALMYRAS</speaker>
             <l n="1268" xml:id="l1268">J'en apporte un contraire, et viens vous le défendre ;</l>
@@ -2245,7 +2330,11 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="IV05">
-          <head>SCÈNE V. Artanasde, Palmyras, Narsée.<listPerson type="configuration" xml:id="conf20"><person corresp="#ARTANASDE"/><person corresp="#PALMYRAS"/><person corresp="#NARSEE"/><person corresp="#HORMISDATE"/></listPerson></head>
+          <head>SCÈNE V. Artanasde, Palmyras, Narsée.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#NARSEE"/>
+            <person corresp="#HORMISDATE"/></listPerson></head>
           <sp who="ARTANASDE" xml:id="IV05-1">
             <speaker>ARTANASDE</speaker>
             <l n="1316" xml:id="l1316">Seigneur, on vous souhaite, avec impatience,</l>
@@ -2282,7 +2371,12 @@
       <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
         <div2 n="1" type="scene" xml:id="V01">
-          <head>SCÈNE PREMIÈRE. Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf22"><person corresp="#SYRA"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#SARDARIGUE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#SYRA"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SYRA" xml:id="V01-1">
             <speaker>SYRA</speaker>
             <l n="1335" xml:id="l1335">Moi, lâche ? Moi, le craindre, au point de le prier,</l>
@@ -2312,7 +2406,15 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="V02">
-          <head>SCÈNE II. Syroës, Palmyras, Pharnace, Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf23"><person corresp="#SYROES"/><person corresp="#SYRA"/><person corresp="#PALMYRAS"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#SARDARIGUE"/><person corresp="#PHARNACE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE II. Syroës, Palmyras, Pharnace, Syra, Sardarigue, Gardes.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#SYROES"/>
+            <person corresp="#SYRA"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#PHARNACE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SYROES" xml:id="V02-1">
             <speaker>SYROËS assis.</speaker>
             <l part="F">Nous venons pourvoir, contre la violence,</l>
@@ -2486,7 +2588,15 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="V03">
-          <head>SCÈNE III. Syroës, Mardesane, Sardarigue, Gardes, Palmyras, Pharnace.<listPerson type="configuration" xml:id="conf24"><person corresp="#SYROES"/><person corresp="#MARDESANE"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#SARDARIGUE"/><person corresp="#PALMYRAS"/><person corresp="#PHARNACE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE III. Syroës, Mardesane, Sardarigue, Gardes, Palmyras, Pharnace.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#SYROES"/>
+            <person corresp="#MARDESANE"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#PHARNACE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SYROES" xml:id="V03-1">
             <speaker>SYROËS continue.</speaker>
             <l n="1463" xml:id="l1463">Enfin, vous avez mal, observé mes avis,</l>
@@ -2654,7 +2764,13 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="V04">
-          <head>SCÈNE IV. Syroës, Palmyras, Pharnaces, Gardes.<listPerson type="configuration" xml:id="conf25"><person corresp="#PALMYRAS"/><person corresp="#SYROES"/><person corresp="#PHARNACE"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE IV. Syroës, Palmyras, Pharnaces, Gardes.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#PHARNACE"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="PALMYRAS" xml:id="V04-1">
             <speaker>PALMYRAS</speaker>
             <l n="1553" xml:id="l1553">J'admire la vertu, qu'un sceptre vous apporte,</l>
@@ -2736,7 +2852,15 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="V05">
-          <head>SCÈNE V . Cosroës, Sardarigue, Gardes, Syroës, Palmyras, Pharnace.<listPerson type="configuration" xml:id="conf26"><person corresp="#COSROES"/><person corresp="#SYROES"/><person corresp="#SARDARIGUE"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#PALMYRAS"/><person corresp="#PHARNACE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE V . Cosroës, Sardarigue, Gardes, Syroës, Palmyras, Pharnace.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#COSROES"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#PHARNACE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="COSROES" xml:id="V05-1">
             <speaker>COSROËS</speaker>
             <l part="F">Ô Nature ! et vous Dieux ses auteurs ?</l>
@@ -2808,7 +2932,12 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="V06">
-          <head>SCÈNE VI. Palmyras, Pharnace, Syroës.<listPerson type="configuration" xml:id="conf27"><person corresp="#PALMYRAS"/><person corresp="#SYROES"/><person corresp="#PHARNACE"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/></listPerson></head>
+          <head>SCÈNE VI. Palmyras, Pharnace, Syroës.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#PHARNACE"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/></listPerson></head>
           <sp who="PALMYRAS" xml:id="V06-1">
             <speaker>PALMYRAS</speaker>
             <l part="F">Vous oubliez, que Palmyras, Pharnace,</l>
@@ -2845,7 +2974,13 @@
           </sp>
         </div2>
         <div2 n="7" type="scene" xml:id="V07">
-          <head>SCÈNE VII. Narsées, Syroës, Palmyras, Pharnace.<listPerson type="configuration" xml:id="conf28"><person corresp="#NARSEE"/><person corresp="#SYROES"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#PALMYRAS"/><person corresp="#PHARNACE"/></listPerson></head>
+          <head>SCÈNE VII. Narsées, Syroës, Palmyras, Pharnace.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#NARSEE"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#PHARNACE"/></listPerson></head>
           <sp who="NARSEE" xml:id="V07-1">
             <speaker>NARSÉE</speaker>
             <l part="F">Ô destin déplorable !</l>
@@ -2892,7 +3027,14 @@
           </sp>
         </div2>
         <div2 n="8" type="scene" xml:id="V08">
-          <head>SCÈNE DERNIÈRE. Sardarigue, Syroës, Palmyras, Pharnace, Gardes.<listPerson type="configuration" xml:id="conf29"><person corresp="#SARDARIGUE"/><person corresp="#SYROES"/><person corresp="#PALMYRAS"/><person corresp="#HORMISDATE"/><person corresp="#ARTANASDE"/><person corresp="#PHARNACE"/><person corresp="#GARDES"/></listPerson></head>
+          <head>SCÈNE DERNIÈRE. Sardarigue, Syroës, Palmyras, Pharnace, Gardes.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#SARDARIGUE"/>
+            <person corresp="#SYROES"/>
+            <person corresp="#PALMYRAS"/>
+            <person corresp="#HORMISDATE"/>
+            <person corresp="#ARTANASDE"/>
+            <person corresp="#PHARNACE"/>
+            <person corresp="#GARDES"/></listPerson></head>
           <sp who="SARDARIGUE" xml:id="V08-1">
             <speaker>SARDARIGUE</speaker>
             <l n="1697" xml:id="l1697">Ha Sire ! Malgré vous, le destin de la Perse,</l>

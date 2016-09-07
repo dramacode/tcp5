@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Amélie</title><title type="sub">, tragi-comédie</title>
-        <author born="1609" born_location="Dreux" death="1650" death_location="Dreux" academie="" key="Rotrou, Jean (1609-1650)"><surname>Rotrou</surname><forename> Jean</forename></author>
+        <title>Amélie</title>
+        <title type="sub">, tragi-comédie</title>
+        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)">
+          <surname>Rotrou</surname>
+          <forename> Jean</forename>
+        </author>
         <date>1648</date>
       </titleStmt>
       <publicationStmt>
@@ -31,7 +36,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre">Tragi-comédie</term>
+          <term subtype="tragedy" type="genre">Tragi-comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -43,7 +48,7 @@
         <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
       </docTitle>
       <docDate value="1637">M. DC. XXXVII</docDate>
-      <docAuthor id="ROTROU, Jean" bio="rotrou">PAR Mr DE ROTROU </docAuthor>
+      <docAuthor bio="rotrou" id="ROTROU, Jean">PAR Mr DE ROTROU </docAuthor>
       <docImprint>
         <privilege id="">
           <head>Extrait du Privilège du Roi.</head>
@@ -63,25 +68,28 @@
       </div>
       <castList>
         <head>ACTEURS </head>
-        <castItem><role xml:id="AMELIE" rend="female" id="AMELIE" civil="F" type="H" statut="bourgeois" age="A" stat_amour="amoureux">AMÉLIE</role>, maîtresse de Dionys. </castItem>
-        <castItem><role xml:id="DIONYS" rend="male" id="DIONYS" civil="M" type="H" statut="serviteur" age="A" stat_amour="amoureux">DIONYS</role>, serviteur d'Amélie. </castItem>
-        <castItem><role xml:id="ERANTE" rend="female" id="ERANTE" civil="F" type="H" statut="bourgeois" age="A" stat_amour="néant">ÉRANTE</role>, soeur d'Amélie. </castItem>
-        <castItem><role xml:id="LISIDAN" rend="male" id="LISIDAN" civil="M" type="H" statut="bourgeois" age="A" stat_amour="néant">LISIDAN</role>, serviteur d'Éraste. </castItem>
-        <castItem><role xml:id="ERASTE" rend="male" id="ERASTE" civil="M" type="H" statut="bourgeois" age="A" stat_amour="amoureux">ÉRASTE</role>, Corrival de Dionys et serviteur de Cloris. </castItem>
-        <castItem><role xml:id="CLORIS" rend="female" id="CLORIS" civil="F" type="H" statut="bourgeois" age="A" stat_amour="amoureux">CLORIS</role>, maîtresse d'Éraste. </castItem>
-        <castItem><role xml:id="LEPERE" rend="male veteran" id="LE PÈRE" civil="M" type="H" statut="bourgeois" age="V" stat_amour="néant">LE PÈRE</role>. </castItem>
-        <castItem><role xml:id="DORISE" rend="female" id="DORISE" civil="F" type="H" statut="suivante" age="A" stat_amour="néant">DORISE</role>, suivante d'Amélie. </castItem>
-        <castItem><role xml:id="EMILE" rend="female" id="EMILE" civil="F" type="H" statut="capitaine" age="A" stat_amour="néant">ÉMILE</role>, Capitan.</castItem>
-        <castItem><role xml:id="VALET" rend="male" id="LE-VALET" civil="M" type="H" statut="valet" age="A" stat_amour="néant">LE VALET</role>. <role xml:id="NOURRICE" n="LA NOURRICE"/></castItem>
+        <castItem><role age="A" civil="F" id="AMELIE" rend="female" stat_amour="amoureux" statut="bourgeois" type="H" xml:id="AMELIE">AMÉLIE</role>, maîtresse de Dionys. </castItem>
+        <castItem><role age="A" civil="M" id="DIONYS" rend="male" stat_amour="amoureux" statut="serviteur" type="H" xml:id="DIONYS">DIONYS</role>, serviteur d'Amélie. </castItem>
+        <castItem><role age="A" civil="F" id="ERANTE" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="ERANTE">ÉRANTE</role>, soeur d'Amélie. </castItem>
+        <castItem><role age="A" civil="M" id="LISIDAN" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="LISIDAN">LISIDAN</role>, serviteur d'Éraste. </castItem>
+        <castItem><role age="A" civil="M" id="ERASTE" rend="male" stat_amour="amoureux" statut="bourgeois" type="H" xml:id="ERASTE">ÉRASTE</role>, Corrival de Dionys et serviteur de Cloris. </castItem>
+        <castItem><role age="A" civil="F" id="CLORIS" rend="female" stat_amour="amoureux" statut="bourgeois" type="H" xml:id="CLORIS">CLORIS</role>, maîtresse d'Éraste. </castItem>
+        <castItem><role age="V" civil="M" id="LE PÈRE" rend="male veteran" stat_amour="néant" statut="bourgeois" type="H" xml:id="LEPERE">LE PÈRE</role>. </castItem>
+        <castItem><role age="A" civil="F" id="DORISE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="DORISE">DORISE</role>, suivante d'Amélie. </castItem>
+        <castItem><role age="A" civil="F" id="EMILE" rend="female" stat_amour="néant" statut="capitaine" type="H" xml:id="EMILE">ÉMILE</role>, Capitan.</castItem>
+        <castItem><role age="A" civil="M" id="LE-VALET" rend="male" stat_amour="néant" statut="valet" type="H" xml:id="VALET">LE VALET</role>. <role n="LA NOURRICE" xml:id="NOURRICE"/></castItem>
       </castList>
-      <set location="(non indiqué)" country="(non indiqué)" periode="(non indiqué)" link=""/>
+      <set country="(non indiqué)" link="" location="(non indiqué)" periode="(non indiqué)"/>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. AMÉLIE. damoiselle, Dorise confidente.<listPerson type="configuration" xml:id="conf1"><person corresp="#AMELIE"/><person corresp="#DORISE"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="I01-1" who="AMELIE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. AMÉLIE. damoiselle, Dorise confidente.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#AMELIE"/>
+            <person corresp="#DORISE"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="AMELIE" xml:id="I01-1">
             <speaker>AMÉLIE.</speaker>
             <l n="1" xml:id="l1">Et bien veux-tu savoir l'état de ma fortune ? </l>
             <l n="2" xml:id="l2">J'accorde ce discours à ta plainte importune, </l>
@@ -94,11 +102,11 @@
             <l n="9" xml:id="l9">Sais-tu de Dionys le mérite et la grâce, </l>
             <l n="10" xml:id="l10">Crois-tu qu'en l'univers un autre le surpasse. </l>
           </sp>
-          <sp xml:id="I01-2" who="DORISE">
+          <sp who="DORISE" xml:id="I01-2">
             <speaker>DORISE.</speaker>
-            <l n="11" xml:id="l11" part="I">C'est lui que vous aimez. </l>
+            <l n="11" part="I" xml:id="l11">C'est lui que vous aimez. </l>
           </sp>
-          <sp xml:id="I01-3" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-3">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Je meurs sous ses attraits </l>
             <l n="12" xml:id="l12">L'amour m'a décoché le plus beau de ses traits </l>
@@ -107,46 +115,46 @@
             <l n="15" xml:id="l15">Et jamais un tel coup n'est parti de ses mains </l>
             <l n="16" xml:id="l16">Depuis qu'il a du droit sur le coeur des humains. </l>
           </sp>
-          <sp xml:id="I01-4" who="DORISE">
+          <sp who="DORISE" xml:id="I01-4">
             <speaker>DORISE.</speaker>
-            <l n="17" xml:id="l17" part="I">C'est un aimable objet. </l>
+            <l n="17" part="I" xml:id="l17">C'est un aimable objet. </l>
           </sp>
-          <sp xml:id="I01-5" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-5">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Que ce mot me contente ! </l>
           </sp>
-          <sp xml:id="I01-6" who="DORISE">
+          <sp who="DORISE" xml:id="I01-6">
             <speaker>DORISE.</speaker>
-            <l n="18" xml:id="l18" part="I">Mais Éraste ? </l>
+            <l n="18" part="I" xml:id="l18">Mais Éraste ? </l>
           </sp>
-          <sp xml:id="I01-7" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-7">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Il nourrit une inutile attente </l>
             <l n="19" xml:id="l19">Et je hais sa mémoire, alors que Dionys, </l>
             <l n="20" xml:id="l20">Présente à mes regards ses charmes infinis. </l>
           </sp>
-          <sp xml:id="I01-8" who="DORISE">
+          <sp who="DORISE" xml:id="I01-8">
             <speaker>DORISE.</speaker>
-            <l n="21" xml:id="l21" part="I">Il plaît à votre père. </l>
+            <l n="21" part="I" xml:id="l21">Il plaît à votre père. </l>
           </sp>
-          <sp xml:id="I01-9" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-9">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Oui, mais son avarice, </l>
             <l n="22" xml:id="l22">Me doit-elle ranger, au gré de son caprice : </l>
           </sp>
-          <sp xml:id="I01-10" who="DORISE">
+          <sp who="DORISE" xml:id="I01-10">
             <speaker>DORISE.</speaker>
             <l n="23" xml:id="l23">Il considérera sa fortune, et son bien. </l>
           </sp>
-          <sp xml:id="I01-11" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-11">
             <speaker>AMÉLIE.</speaker>
             <l n="24" xml:id="l24">A-t-il droit sur mon coeur, si je n'y peux plus rien ? </l>
           </sp>
-          <sp xml:id="I01-12" who="DORISE">
+          <sp who="DORISE" xml:id="I01-12">
             <speaker>DORISE.</speaker>
-            <l n="25" xml:id="l25" part="I">Vous savez son humeur. </l>
+            <l n="25" part="I" xml:id="l25">Vous savez son humeur. </l>
           </sp>
-          <sp xml:id="I01-13" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-13">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Dieux qu'elle est importune, </l>
             <l n="26" xml:id="l26">Qu'elle m'a fait de fois détester ma fortune ; </l>
@@ -167,11 +175,11 @@
             <l n="41" xml:id="l41">Un vainqueur si puissant à mon âme asservie, </l>
             <l n="42" xml:id="l42">Qu'il faut qu'on me le donne, ou qu'on m'ôte la vie. </l>
           </sp>
-          <sp xml:id="I01-14" who="DORISE">
+          <sp who="DORISE" xml:id="I01-14">
             <speaker>DORISE.</speaker>
-            <l n="43" xml:id="l43" part="I">Donc il vous aime aussi ? </l>
+            <l n="43" part="I" xml:id="l43">Donc il vous aime aussi ? </l>
           </sp>
-          <sp xml:id="I01-15" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-15">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Si ses voeux ne sont faux, </l>
             <l n="44" xml:id="l44">Et si comme son corps son âme est sans défauts</l>
@@ -184,43 +192,43 @@
             <l n="51" xml:id="l51">Puis, tel nous tient, enfin, que nous ne tenons plus, </l>
             <l n="52" xml:id="l52">Et l'ayant accepté nous souffrons ses refus. </l>
           </sp>
-          <sp xml:id="I01-16" who="DORISE">
+          <sp who="DORISE" xml:id="I01-16">
             <speaker>DORISE.</speaker>
             <l n="53" xml:id="l53">Croyez-vous Dionys capable de ce vice. </l>
           </sp>
-          <sp xml:id="I01-17" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-17">
             <speaker>AMÉLIE.</speaker>
             <l n="54" xml:id="l54">Peu d'entre les amants sont exempts d'artifice. </l>
           </sp>
-          <sp xml:id="I01-18" who="DORISE">
+          <sp who="DORISE" xml:id="I01-18">
             <speaker>DORISE.</speaker>
             <l n="55" xml:id="l55">Madame un bon esprit n'a point ces qualités </l>
             <l n="56" xml:id="l56">Ne fondez point de peur sur ces difficultés : </l>
             <l n="57" xml:id="l57">Prévoyons seulement à forcer leurs obstacles. </l>
           </sp>
-          <sp xml:id="I01-19" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-19">
             <speaker>AMÉLIE.</speaker>
-            <l n="58" xml:id="l58" part="I">Ne peux-tu rien pour moi. </l>
+            <l n="58" part="I" xml:id="l58">Ne peux-tu rien pour moi. </l>
           </sp>
-          <sp xml:id="I01-20" who="DORISE">
+          <sp who="DORISE" xml:id="I01-20">
             <speaker>DORISE.</speaker>
             <l part="F">Je ferai des miracles </l>
             <l n="59" xml:id="l59">Et je rendrai vos voeux, moindres que vos plaisirs </l>
             <l n="60" xml:id="l60">Si mes inventions égalent mes désirs. </l>
           </sp>
-          <sp xml:id="I01-21" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-21">
             <speaker>AMÉLIE.</speaker>
-            <l n="61" xml:id="l61" part="I">Tu me promets beaucoup ? </l>
+            <l n="61" part="I" xml:id="l61">Tu me promets beaucoup ? </l>
           </sp>
-          <sp xml:id="I01-22" who="DORISE">
+          <sp who="DORISE" xml:id="I01-22">
             <speaker>DORISE.</speaker>
             <l part="F">Rien, que je ne vous tienne. </l>
           </sp>
-          <sp xml:id="I01-23" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-23">
             <speaker>AMÉLIE.</speaker>
             <l n="62" xml:id="l62">Quelle bonté, Dorise, est pareille à la tienne ? </l>
           </sp>
-          <sp xml:id="I01-24" who="DORISE">
+          <sp who="DORISE" xml:id="I01-24">
             <speaker>DORISE.</speaker>
             <l n="63" xml:id="l63">Je vous dois tous mes soins : il faut premièrement </l>
             <l n="64" xml:id="l64">Vous déclarer de sorte à cet aimable amant, </l>
@@ -231,13 +239,13 @@
             <l n="69" xml:id="l69">J'en sais l'invention, quand selon sa coutume </l>
             <l n="70" xml:id="l70">Il viendra vous parler du feu qui le consume. </l>
           </sp>
-          <sp xml:id="I01-25" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-25">
             <speaker>AMÉLIE.</speaker>
             <l n="71" xml:id="l71">Je l'attends en ce lieu, si cet objet charmant </l>
             <l n="72" xml:id="l72">Y peut par ton moyen entrer secrètement, </l>
-            <l n="73" xml:id="l73" part="I">Car mon père croirait. </l>
+            <l n="73" part="I" xml:id="l73">Car mon père croirait. </l>
           </sp>
-          <sp xml:id="I01-26" who="DORISE">
+          <sp who="DORISE" xml:id="I01-26">
             <speaker>DORISE.</speaker>
             <l part="F">C'est assez, et j'espère </l>
             <l n="74" xml:id="l74">De lui faire éviter les yeux de votre père, </l>
@@ -256,16 +264,16 @@
             <l n="87" xml:id="l87">Alors, vous le verrez en d'étranges accès, </l>
             <l n="88" xml:id="l88">Et là sa passion prouvera son excès. </l>
           </sp>
-          <sp xml:id="I01-27" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-27">
             <speaker>AMÉLIE seule.</speaker>
             <l n="89" xml:id="l89">Que ton expérience en ce point m'est utile, </l>
-            <l n="90" xml:id="l90" part="I">Va l'attendre à la porte. </l>
+            <l n="90" part="I" xml:id="l90">Va l'attendre à la porte. </l>
           </sp>
-          <sp xml:id="I01-28" who="DORISE">
+          <sp who="DORISE" xml:id="I01-28">
             <speaker>DORISE.</speaker>
             <l part="M">Adieu.</l>
           </sp>
-          <sp xml:id="I01-29" who="AMELIE">
+          <sp who="AMELIE" xml:id="I01-29">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Qu'elle est subtile, </l>
             <l n="91" xml:id="l91">Que son coeur s'est souvent exercé là-dessus ; </l>
@@ -286,13 +294,17 @@
             <l n="106" xml:id="l106">Feignons de reposer ; amour, conduit la feinte. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Dionys, Dorise, Amélie. <listPerson type="configuration" xml:id="conf2"><person corresp="#DIONYS"/><person corresp="#DORISE"/><person corresp="#AMELIE"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="I02-1" who="DIONYS">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Dionys, Dorise, Amélie. <listPerson type="configuration" xml:id="conf2">
+            <person corresp="#DIONYS"/>
+            <person corresp="#DORISE"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="DIONYS" xml:id="I02-1">
             <speaker>DIONYS.</speaker>
-            <l n="107" xml:id="l107" part="I">Mais, si je l'importune ? </l>
+            <l n="107" part="I" xml:id="l107">Mais, si je l'importune ? </l>
           </sp>
-          <sp xml:id="I02-2" who="DORISE">
+          <sp who="DORISE" xml:id="I02-2">
             <speaker>DORISE.</speaker>
             <l part="F">Elle me l'a permis.</l>
             <l n="108" xml:id="l108">Voyez, si je sais bien obliger mes amis ? </l>
@@ -312,23 +324,23 @@
             <l n="122" xml:id="l122">Elle me l'a promis avec beaucoup de peine, </l>
             <l n="123" xml:id="l123">Qu'il entre (a-t-elle dit) car tu peux tout sur moi. </l>
           </sp>
-          <sp xml:id="I02-3" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-3">
             <speaker>DIONYS.</speaker>
-            <l n="124" xml:id="l124" part="I">Que je te suis tenu. </l>
+            <l n="124" part="I" xml:id="l124">Que je te suis tenu. </l>
           </sp>
-          <sp xml:id="I02-4" who="DORISE">
+          <sp who="DORISE" xml:id="I02-4">
             <speaker>DORISE.</speaker>
             <l part="F">Venez, je l'aperçois.</l>
           </sp>
-          <sp xml:id="I02-5" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-5">
             <speaker>DIONYS.</speaker>
-            <l n="125" xml:id="l125" part="I">Ne faisons point de bruit. </l>
+            <l n="125" part="I" xml:id="l125">Ne faisons point de bruit. </l>
           </sp>
-          <sp xml:id="I02-6" who="DORISE">
+          <sp who="DORISE" xml:id="I02-6">
             <speaker>DORISE.</speaker>
             <l part="M">Comment ?</l>
           </sp>
-          <sp xml:id="I02-7" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-7">
             <speaker>DIONYS.</speaker>
             <l part="F">Elle repose. </l>
             <l n="126" xml:id="l126">Un sommeil gracieux tient sa paupière close, </l>
@@ -340,35 +352,35 @@
             <l n="132" xml:id="l132">Pour ce que leurs soleils, ne les regardent pas. </l>
             <l n="133" xml:id="l133">Vois l'herbe sans vigueur : mais que j'ai d'imprudence </l>
             <l n="134" xml:id="l134">Je sais mal au besoin, observer le silence, </l>
-            <l n="135" xml:id="l135" part="I">Retirons-nous sans bruit. </l>
+            <l n="135" part="I" xml:id="l135">Retirons-nous sans bruit. </l>
           </sp>
-          <sp xml:id="I02-8" who="DORISE">
+          <sp who="DORISE" xml:id="I02-8">
             <speaker>DORISE.</speaker>
             <l part="M">Retirons. </l>
           </sp>
-          <sp xml:id="I02-9" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-9">
             <speaker>AMÉLIE, feignant de dormir. </speaker>
             <l part="F">Dionys. </l>
           </sp>
-          <sp xml:id="I02-10" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-10">
             <speaker>DIONYS.</speaker>
-            <l n="136" xml:id="l136" part="I">Ô Dieux ! J'ai trop parlé ! </l>
+            <l n="136" part="I" xml:id="l136">Ô Dieux ! J'ai trop parlé ! </l>
           </sp>
-          <sp xml:id="I02-11" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-11">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Quand serons-nous unis. </l>
             <l n="137" xml:id="l137">J'ai perdu mon souci, toute ma défiance, </l>
             <l n="138" xml:id="l138">Et je ne doute plus de ton impatience. </l>
           </sp>
-          <sp xml:id="I02-12" who="DORISE">
+          <sp who="DORISE" xml:id="I02-12">
             <speaker>DORISE.</speaker>
-            <l n="139" xml:id="l139" part="I">Elle repose encor. </l>
+            <l n="139" part="I" xml:id="l139">Elle repose encor. </l>
           </sp>
-          <sp xml:id="I02-13" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-13">
             <speaker>DIONYS.</speaker>
             <l part="F">Ô Dieux ! Qu'ai-je entendu ? </l>
           </sp>
-          <sp xml:id="I02-14" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-14">
             <speaker>AMÉLIE.</speaker>
             <l n="140" xml:id="l140">Le Ciel t'accordera le bonheur qui t'est dû, </l>
             <l n="141" xml:id="l141">Les astres à l'envi nous combleront de joie, </l>
@@ -376,26 +388,26 @@
             <l n="143" xml:id="l143">Nos voeux s'accompliront, et jamais deux amants </l>
             <l n="144" xml:id="l144">Ne furent plus heureux après moins de tourments. </l>
           </sp>
-          <sp xml:id="I02-15" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-15">
             <speaker>DIONYS.</speaker>
-            <l n="145" xml:id="l145" part="I">Ô discours favorable ! </l>
+            <l n="145" part="I" xml:id="l145">Ô discours favorable ! </l>
           </sp>
-          <sp xml:id="I02-16" who="DORISE">
+          <sp who="DORISE" xml:id="I02-16">
             <speaker>DORISE.</speaker>
             <l part="M">Écoutons. </l>
           </sp>
-          <sp xml:id="I02-17" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-17">
             <speaker>DIONYS.</speaker>
             <l part="F">Ô Dorise, </l>
             <l n="146" xml:id="l146">Qu'en cet heureux moment le Ciel me favorise. </l>
             <l n="147" xml:id="l147">Si ce divin sommeil n'est une illusion, </l>
             <l n="148" xml:id="l148">S'il lui dicte ces mots à mon occasion. </l>
           </sp>
-          <sp xml:id="I02-18" who="DORISE">
+          <sp who="DORISE" xml:id="I02-18">
             <speaker>DORISE.</speaker>
-            <l n="149" xml:id="l149" part="I">J'en conjure le Ciel. </l>
+            <l n="149" part="I" xml:id="l149">J'en conjure le Ciel. </l>
           </sp>
-          <sp xml:id="I02-19" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-19">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Donne un mot de réponse </l>
             <l n="150" xml:id="l150">Au favorable arrêt, que ma voix te prononce, </l>
@@ -406,18 +418,18 @@
             <l n="155" xml:id="l155">Tu ne réputes pas ton destin bienheureux, </l>
             <l n="156" xml:id="l156">Lève les yeux au moins, et réponds-moi par eux. </l>
           </sp>
-          <sp xml:id="I02-20" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-20">
             <speaker>DIONYS.</speaker>
-            <l n="157" xml:id="l157" part="I">Ô favorable songe ! </l>
+            <l n="157" part="I" xml:id="l157">Ô favorable songe ! </l>
           </sp>
-          <sp xml:id="I02-21" who="DORISE">
+          <sp who="DORISE" xml:id="I02-21">
             <speaker>DORISE.</speaker>
             <l part="F">Il est à votre gloire, </l>
             <l n="158" xml:id="l158">Vous devez puissamment occuper sa mémoire, </l>
             <l n="159" xml:id="l159">Autrement le sommeil ne lui fournirait pas, </l>
             <l n="160" xml:id="l160">Un portrait si puissant de vos rares appas. </l>
           </sp>
-          <sp xml:id="I02-22" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-22">
             <speaker>AMÉLIE.</speaker>
             <l n="161" xml:id="l161">Ô Dieux ! Quel changement arrive à ma fortune, </l>
             <l n="162" xml:id="l162">Dionys est le sourd et je suis l'importune, </l>
@@ -436,18 +448,18 @@
             <l n="175" xml:id="l175">Et je ne défends point, tout ce qui t'est permis, </l>
             <l n="176" xml:id="l176">Par ce Dieu, si propice, et doux à ses amis. </l>
           </sp>
-          <sp xml:id="I02-23" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-23">
             <speaker>DIONYS.</speaker>
             <l n="177" xml:id="l177">Que ne puis-je après ces mots entendre qui me plaise ; </l>
             <l n="178" xml:id="l178">Tous mes sens sont ravis d'étonnement, et d'aise ; </l>
-            <l n="179" xml:id="l179" part="I">Mais las ! Dois-je espérer ? </l>
+            <l n="179" part="I" xml:id="l179">Mais las ! Dois-je espérer ? </l>
           </sp>
-          <sp xml:id="I02-24" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-24">
             <speaker>AMÉLIE feignant de s'éveiller.</speaker>
             <l part="F">Ô Dieux ! Qui parle ici ? </l>
             <l n="180" xml:id="l180">Quoi ? C'est vous Dionys ? On me respecte ainsi. </l>
           </sp>
-          <sp xml:id="I02-25" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-25">
             <speaker>DIONYS.</speaker>
             <l n="181" xml:id="l181">Ne me souffrez jamais, si vous croyez (Madame) </l>
             <l n="182" xml:id="l182">Que ma discrétion soit moindre que ma flamme, </l>
@@ -455,40 +467,40 @@
             <l n="184" xml:id="l184">Et je perdrai le jour, plutôt que le respect ; </l>
             <l n="185" xml:id="l185">J'allais parmi ces fleurs égarer mes pensées, </l>
             <l n="186" xml:id="l186">Voyant sur vos beaux yeux leurs paupières baissées : </l>
-            <l n="187" xml:id="l187" part="I">Mais. </l>
+            <l n="187" part="I" xml:id="l187">Mais. </l>
           </sp>
-          <sp xml:id="I02-26" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-26">
             <speaker>AMÉLIE.</speaker>
             <l part="M">Quoi mais. </l>
           </sp>
-          <sp xml:id="I02-27" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-27">
             <speaker>DIONYS.</speaker>
             <l part="F">Je me tais, car je n'ose espérer, </l>
             <l n="188" xml:id="l188">Que le bien de vous voir, et de vous adorer ; </l>
           </sp>
-          <sp xml:id="I02-28" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-28">
             <speaker>AMÉLIE.</speaker>
-            <l n="189" xml:id="l189" part="I">Achevez, je le veux. </l>
+            <l n="189" part="I" xml:id="l189">Achevez, je le veux. </l>
           </sp>
-          <sp xml:id="I02-29" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-29">
             <speaker>DIONYS.</speaker>
             <l part="M">Dorise. </l>
           </sp>
-          <sp xml:id="I02-30" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-30">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Non vous-même. </l>
           </sp>
-          <sp xml:id="I02-31" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-31">
             <speaker>DIONYS.</speaker>
             <l n="190" xml:id="l190">Mais vous m'accuserez d'une impudence extrême ; </l>
             <l n="191" xml:id="l191">Vous parliez en rêvant, vous flattiez mon souci, </l>
             <l n="192" xml:id="l192">Et je n'espère plus, que vous parliez ainsi. </l>
           </sp>
-          <sp xml:id="I02-32" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-32">
             <speaker>AMÉLIE.</speaker>
-            <l n="193" xml:id="l193" part="I">Qu'ai-je dit ? Achevez. </l>
+            <l n="193" part="I" xml:id="l193">Qu'ai-je dit ? Achevez. </l>
           </sp>
-          <sp xml:id="I02-33" who="DIONYS">
+          <sp who="DIONYS" xml:id="I02-33">
             <speaker>DIONYS.</speaker>
             <l part="F">Ce mot est sans défense. </l>
             <l n="194" xml:id="l194">Mais vous me blâmerez, de mon obéissance : </l>
@@ -508,56 +520,65 @@
             <l n="208" xml:id="l208">Que je ne peux défendre à tes chastes désirs ; </l>
             <l n="209" xml:id="l209">Mais qu'étaient ces propos, que d'aimables mensonges ? </l>
           </sp>
-          <sp xml:id="I02-34" who="AMELIE">
+          <sp who="AMELIE" xml:id="I02-34">
             <speaker>AMÉLIE s'en allant. </speaker>
             <l n="210" xml:id="l210">Je rêvais Dionys, et tous songes sont songes. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Éraste, Amélie, Dionys, Dorise.<listPerson type="configuration" xml:id="conf3"><person corresp="#ERASTE"/><person corresp="#AMELIE"/><person corresp="#DIONYS"/><person corresp="#DORISE"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="I03-1" who="ERASTE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Éraste, Amélie, Dionys, Dorise.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#ERASTE"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#DORISE"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERASTE" xml:id="I03-1">
             <speaker>ÉRASTE.</speaker>
-            <l n="211" xml:id="l211" part="I">Je vous nuis en ce lieu ? </l>
+            <l n="211" part="I" xml:id="l211">Je vous nuis en ce lieu ? </l>
           </sp>
-          <sp xml:id="I03-2" who="AMELIE">
+          <sp who="AMELIE" xml:id="I03-2">
             <speaker>AMÉLIE.</speaker>
             <l part="M">Non pas fort. </l>
           </sp>
-          <sp xml:id="I03-3" who="ERASTE">
+          <sp who="ERASTE" xml:id="I03-3">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Toutefois </l>
             <l n="212" xml:id="l212">Mon abord vous sépare, et vous ôte la voix. </l>
           </sp>
-          <sp xml:id="I03-4" who="AMELIE">
+          <sp who="AMELIE" xml:id="I03-4">
             <speaker>AMÉLIE.</speaker>
-            <l n="213" xml:id="l213" part="I">C'est que nous vous craignons. </l>
+            <l n="213" part="I" xml:id="l213">C'est que nous vous craignons. </l>
           </sp>
-          <sp xml:id="I03-5" who="ERASTE">
+          <sp who="ERASTE" xml:id="I03-5">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Oui, comme un misérable, </l>
             <l n="214" xml:id="l214">À qui vous déniez un regard favorable, </l>
             <l n="215" xml:id="l215">Qui blesse à son abord, qu'on ne veut point guérir, </l>
             <l n="216" xml:id="l216">Qui naquit pour déplaire, et qui vit pour mourir. </l>
           </sp>
-          <sp xml:id="I03-6" who="AMELIE">
+          <sp who="AMELIE" xml:id="I03-6">
             <speaker>AMÉLIE.</speaker>
-            <l n="217" xml:id="l217" part="I">L'agréable entretien. </l>
+            <l n="217" part="I" xml:id="l217">L'agréable entretien. </l>
           </sp>
-          <sp xml:id="I03-7" who="ERASTE">
+          <sp who="ERASTE" xml:id="I03-7">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Pareil à ma fortune, </l>
             <l n="218" xml:id="l218">Il ne part rien de moi, qui ne vous importune, </l>
             <l n="219" xml:id="l219">Vous fuyez tous les lieux où je dresse mes pas, </l>
             <l n="220" xml:id="l220">Et si je charmais tout je ne vous plairais pas. </l>
           </sp>
-          <sp xml:id="I03-8" who="AMELIE">
+          <sp who="AMELIE" xml:id="I03-8">
             <speaker>AMÉLIE s'en allant. </speaker>
-            <l n="221" xml:id="l221" part="I">On m'attend au logis. </l>
+            <l n="221" part="I" xml:id="l221">On m'attend au logis. </l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Éraste, Dionys, Dorise.<listPerson type="configuration" xml:id="conf4"><person corresp="#ERASTE"/><person corresp="#DIONYS"/><person corresp="#DORISE"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="I04-1" who="ERASTE">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Éraste, Dionys, Dorise.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#ERASTE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#DORISE"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERASTE" xml:id="I04-1">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Il faut qu'on vous admire, </l>
             <l n="222" xml:id="l222">Si quelqu'un est puissant en l'amoureux empire ; </l>
@@ -568,58 +589,58 @@
             <l n="227" xml:id="l227">Et vous blessez des coeurs si doux et si divers </l>
             <l n="228" xml:id="l228">Que vous aurez bientôt dépeuplé l'univers. </l>
           </sp>
-          <sp xml:id="I04-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="I04-2">
             <speaker>DIONYS.</speaker>
-            <l n="229" xml:id="l229" part="I">Ce n'est pas mon dessein. </l>
+            <l n="229" part="I" xml:id="l229">Ce n'est pas mon dessein. </l>
           </sp>
-          <sp xml:id="I04-3" who="ERASTE">
+          <sp who="ERASTE" xml:id="I04-3">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Non, mais de la nature </l>
             <l n="230" xml:id="l230">Qui vous fit préférable à toute créature </l>
             <l n="231" xml:id="l231">Elle a mis dans vos yeux de superbes vainqueurs, </l>
             <l n="232" xml:id="l232">Qui sans intention traversent tous les coeurs. </l>
           </sp>
-          <sp xml:id="I04-4" who="DIONYS">
+          <sp who="DIONYS" xml:id="I04-4">
             <speaker>DIONYS.</speaker>
-            <l n="233" xml:id="l233" part="I">Je lui suis obligé. </l>
+            <l n="233" part="I" xml:id="l233">Je lui suis obligé. </l>
           </sp>
-          <sp xml:id="I04-5" who="ERASTE">
+          <sp who="ERASTE" xml:id="I04-5">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Vous aimez Amélie ? </l>
           </sp>
-          <sp xml:id="I04-6" who="DIONYS">
+          <sp who="DIONYS" xml:id="I04-6">
             <speaker>DIONYS.</speaker>
-            <l n="234" xml:id="l234" part="I">Je l'avoue. </l>
+            <l n="234" part="I" xml:id="l234">Je l'avoue. </l>
           </sp>
-          <sp xml:id="I04-7" who="ERASTE">
+          <sp who="ERASTE" xml:id="I04-7">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Et l'amour l'un à l'autre vous lie, </l>
           </sp>
-          <sp xml:id="I04-8" who="DIONYS">
+          <sp who="DIONYS" xml:id="I04-8">
             <speaker>DIONYS.</speaker>
-            <l n="235" xml:id="l235" part="I">Je ne l'estime pas. </l>
+            <l n="235" part="I" xml:id="l235">Je ne l'estime pas. </l>
           </sp>
-          <sp xml:id="I04-9" who="ERASTE">
+          <sp who="ERASTE" xml:id="I04-9">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Se peut-elle exempter, </l>
             <l n="236" xml:id="l236">D'aimer ce qui plaît tant ? Et qui peut tout dompter ? </l>
           </sp>
-          <sp xml:id="I04-10" who="DIONYS">
+          <sp who="DIONYS" xml:id="I04-10">
             <speaker>DIONYS.</speaker>
-            <l n="237" xml:id="l237" part="I">Est-ce tout ? </l>
+            <l n="237" part="I" xml:id="l237">Est-ce tout ? </l>
           </sp>
-          <sp xml:id="I04-11" who="ERASTE">
+          <sp who="ERASTE" xml:id="I04-11">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Je dis peu, la voix même des anges </l>
             <l n="238" xml:id="l238">Ne pourrait dignement célébrer vos louanges. </l>
           </sp>
-          <sp xml:id="I04-12" who="DIONYS">
+          <sp who="DIONYS" xml:id="I04-12">
             <speaker>DIONYS s'en allant.</speaker>
             <l n="239" xml:id="l239">Je ne m'informe point de vos intentions, </l>
             <l n="240" xml:id="l240">Et le temps résoudra toutes ces questions. </l>
             <stage>Il s'en va. </stage>
           </sp>
-          <sp xml:id="I04-13" who="ERASTE">
+          <sp who="ERASTE" xml:id="I04-13">
             <speaker>ÉRASTE seul. </speaker>
             <l n="241" xml:id="l241">Traître c'est à ce bras qu'appartient cet office, </l>
             <l n="242" xml:id="l242">Je les résoudrai seul, si le ciel m'est propice, </l>
@@ -628,15 +649,18 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Émile soldat, Le Valet.<listPerson type="configuration" xml:id="conf6"><person corresp="#EMILE"/><person corresp="#VALET"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II01-1" who="EMILE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE PREMIÈRE. Émile soldat, Le Valet.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#EMILE"/>
+            <person corresp="#VALET"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="EMILE" xml:id="II01-1">
             <speaker>ÉMILE.</speaker>
             <l n="245" xml:id="l245">Et très cher confident que t'a dit mon Aurore ? </l>
           </sp>
-          <sp xml:id="II01-2" who="VALET">
+          <sp who="VALET" xml:id="II01-2">
             <speaker>LE VALET.</speaker>
             <l n="246" xml:id="l246">Ô qu'elle vous chérit et qu'elle vous honore </l>
             <l n="247" xml:id="l247">Comment, a-t-elle dit ; l'honneur de l'univers </l>
@@ -646,14 +670,14 @@
             <l n="251" xml:id="l251">Ô dieux le dois-je croire et sans présomption, </l>
             <l n="252" xml:id="l252">Puis-je avouer l'honneur de son affection ? </l>
           </sp>
-          <sp xml:id="II01-3" who="EMILE">
+          <sp who="EMILE" xml:id="II01-3">
             <speaker>ÉMILE.</speaker>
             <l n="253" xml:id="l253">Mais surtout, as-tu bien figuré mon courage ? </l>
             <l n="254" xml:id="l254">Comme il sait réprimer l'injustice, et l'outrage, </l>
             <l n="255" xml:id="l255">Et t'est-il souvenu du nombre des guerriers, </l>
             <l n="256" xml:id="l256">Dont le sang tous les jours arrose mes lauriers ? </l>
           </sp>
-          <sp xml:id="II01-4" who="VALET">
+          <sp who="VALET" xml:id="II01-4">
             <speaker>LE VALET.</speaker>
             <l n="257" xml:id="l257">Votre épée à m'ouïr n'avait point de pareilles, </l>
             <l n="258" xml:id="l258">Je n'ai craché que sang, j'ai raconté merveilles. </l>
@@ -664,7 +688,7 @@
             <l n="263" xml:id="l263">J'immolais tout le monde à l'honneur de vos faits, </l>
             <l n="264" xml:id="l264">Enfin, j'en ai plus dit, que je n'en crus jamais. </l>
           </sp>
-          <sp xml:id="II01-5" who="EMILE">
+          <sp who="EMILE" xml:id="II01-5">
             <speaker>ÉMILE.</speaker>
             <l n="265" xml:id="l265">Ignorant, dois-tu vivre, après cette insolence, </l>
             <l n="266" xml:id="l266">Est-il quelque dessein plus grand que ma vaillance ? </l>
@@ -685,7 +709,7 @@
             <l n="281" xml:id="l281">Mais je discours en l'air, et jamais l'ignorance </l>
             <l n="282" xml:id="l282">N'a traité la vertu, qu'avec irrévérence. </l>
           </sp>
-          <sp xml:id="II01-6" who="VALET">
+          <sp who="VALET" xml:id="II01-6">
             <speaker>LE VALET.</speaker>
             <l n="283" xml:id="l283">Ne m'entretenez point de tant d'exploits passés, </l>
             <l n="284" xml:id="l284">Dites que je vous sers, et vous direz assez </l>
@@ -694,11 +718,11 @@
             <l n="287" xml:id="l287">Mais parlons de l'objet de votre affection, </l>
             <l n="288" xml:id="l288">Il reste encor un point de ma commission. </l>
           </sp>
-          <sp xml:id="II01-7" who="EMILE">
+          <sp who="EMILE" xml:id="II01-7">
             <speaker>ÉMILE.</speaker>
-            <l n="289" xml:id="l289" part="I">Quel ? </l>
+            <l n="289" part="I" xml:id="l289">Quel ? </l>
           </sp>
-          <sp xml:id="II01-8" who="VALET">
+          <sp who="VALET" xml:id="II01-8">
             <speaker>LE VALET.</speaker>
             <l part="F">La rare beauté dont votre âme est charmée </l>
             <l n="290" xml:id="l290">Veut voir en vos écrits votre amour exprimée, </l>
@@ -707,7 +731,7 @@
             <l n="293" xml:id="l293">Par le même moyen, vous verrez figurée </l>
             <l n="294" xml:id="l294">L'extrême affection qu'elle vous a jurée. </l>
           </sp>
-          <sp xml:id="II01-9" who="EMILE">
+          <sp who="EMILE" xml:id="II01-9">
             <speaker>ÉMILE.</speaker>
             <l n="295" xml:id="l295">Ai-je appris l'art d'écrire et né pour les combats, </l>
             <l n="296" xml:id="l296">Commettrais-je à ma main un office si bas ? </l>
@@ -716,23 +740,23 @@
             <l n="299" xml:id="l299">Mon épée est ma plume, et je signe de sang </l>
             <l n="300" xml:id="l300">La mort de qui s'attaque aux hommes de mon rang. </l>
           </sp>
-          <sp xml:id="II01-10" who="VALET">
+          <sp who="VALET" xml:id="II01-10">
             <speaker>LE VALET.</speaker>
             <l n="301" xml:id="l301">Vous devez toutefois, si votre amour est telle, </l>
             <l n="302" xml:id="l302">Accorder toute chose aux voeux de cette belle, </l>
             <l n="303" xml:id="l303">Il faut faire un miracle ; et que ne peut l'amour, </l>
             <l n="304" xml:id="l304">S'il veut favoriser les premiers de sa cour ? </l>
           </sp>
-          <sp xml:id="II01-11" who="EMILE">
+          <sp who="EMILE" xml:id="II01-11">
             <speaker>ÉMILE.</speaker>
             <l n="305" xml:id="l305">Va choisir une plume en l'une de ses ailes, </l>
             <l n="306" xml:id="l306">Et j'en exprimerai mes passions nouvelles ; </l>
           </sp>
-          <sp xml:id="II01-12" who="VALET">
+          <sp who="VALET" xml:id="II01-12">
             <speaker>LE VALET.</speaker>
-            <l n="307" xml:id="l307" part="I">Où le rencontrerai-je ? </l>
+            <l n="307" part="I" xml:id="l307">Où le rencontrerai-je ? </l>
           </sp>
-          <sp xml:id="II01-13" who="EMILE">
+          <sp who="EMILE" xml:id="II01-13">
             <speaker>ÉMILE.</speaker>
             <l part="F">En mille et mille coeurs, </l>
             <l n="308" xml:id="l308">Qu'il rend passionnés de mes charmes vainqueurs ; </l>
@@ -741,22 +765,22 @@
             <l n="311" xml:id="l311">Quoi depuis que sous moi tu respires le jour </l>
             <l n="312" xml:id="l312">Tu ne sais pas encor où j'ai logé l'amour ? </l>
           </sp>
-          <sp xml:id="II01-14" who="VALET">
+          <sp who="VALET" xml:id="II01-14">
             <speaker>LE VALET.</speaker>
-            <l n="313" xml:id="l313" part="I">Et ce Dieu se voit-il ? </l>
+            <l n="313" part="I" xml:id="l313">Et ce Dieu se voit-il ? </l>
           </sp>
-          <sp xml:id="II01-15" who="EMILE">
+          <sp who="EMILE" xml:id="II01-15">
             <speaker>ÉMILE.</speaker>
             <l part="F">Ô l'ignorance extrême ! </l>
             <l n="314" xml:id="l314">Des plaintes, des soupirs, un oeil mort, un teint blême </l>
             <l n="315" xml:id="l315">Des flammes, des respects, un sensible tourment, </l>
             <l n="316" xml:id="l316">Sont l'amour ce me semble, assez visiblement. </l>
           </sp>
-          <sp xml:id="II01-16" who="VALET">
+          <sp who="VALET" xml:id="II01-16">
             <speaker>LE VALET.</speaker>
             <l n="317" xml:id="l317">Dieux ! Le plaisant visage, et comment sont ses ailes ? </l>
           </sp>
-          <sp xml:id="II01-17" who="EMILE">
+          <sp who="EMILE" xml:id="II01-17">
             <speaker>ÉMILE.</speaker>
             <l n="318" xml:id="l318">Ses ailes, ignorant, sont les soupirs des belles ; </l>
             <l n="319" xml:id="l319">Mais ne m'enquête plus, j'aperçois Dionys, </l>
@@ -765,21 +789,24 @@
             <l n="322" xml:id="l322">Et tracer en mon nom, tout ce que je désire. </l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Lisidan, Dionys.<listPerson type="configuration" xml:id="conf7"><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II02-1" who="DIONYS">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Lisidan, Dionys.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="DIONYS" xml:id="II02-1">
             <speaker>DIONYS.</speaker>
             <l n="323" xml:id="l323">Que dis-tu cher ami de cette invention ? </l>
           </sp>
-          <sp xml:id="II02-2" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II02-2">
             <speaker>LISIDAN.</speaker>
             <l n="324" xml:id="l324">Que tu peux espérer, et sans présomption. </l>
           </sp>
-          <sp xml:id="II02-3" who="DIONYS">
+          <sp who="DIONYS" xml:id="II02-3">
             <speaker>DIONYS.</speaker>
-            <l n="325" xml:id="l325" part="I">Encor qu'en juges-tu ? </l>
+            <l n="325" part="I" xml:id="l325">Encor qu'en juges-tu ? </l>
           </sp>
-          <sp xml:id="II02-4" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II02-4">
             <speaker>LISIDAN.</speaker>
             <l part="F">Que par là cette belle,</l>
             <l n="326" xml:id="l326">Nous apprend en amour une ruse nouvelle. </l>
@@ -807,19 +834,24 @@
             <l n="348" xml:id="l348">On ne dépense rien, et l'on n'en rougit pas. </l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Émile, Le Valet, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf8"><person corresp="#EMILE"/><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#VALET"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II03-1" who="EMILE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Émile, Le Valet, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#EMILE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#VALET"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="EMILE" xml:id="II03-1">
             <speaker>ÉMILE, les abordant.</speaker>
             <l n="349" xml:id="l349">Il faut les aborder. J'interromps vos pensées. </l>
           </sp>
-          <sp xml:id="II03-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="II03-2">
             <speaker>DIONYS.</speaker>
             <l n="350" xml:id="l350">Votre unique sujet les avait commencées, </l>
             <l n="351" xml:id="l351">Nous parlions de vos faits, nous contions vos combats, </l>
             <l n="352" xml:id="l352">Et combien d'ennemis vous avez mis à bas. </l>
           </sp>
-          <sp xml:id="II03-3" who="EMILE">
+          <sp who="EMILE" xml:id="II03-3">
             <speaker>ÉMILE.</speaker>
             <l n="353" xml:id="l353">Il serait plus aisé de conter les étoiles, </l>
             <l n="354" xml:id="l354">Dont la nuit a brodé ses ombrageuses toiles, </l>
@@ -830,31 +862,31 @@
             <l n="359" xml:id="l359">La valeur est défaite, et deux astres d'amour </l>
             <l n="360" xml:id="l360">Obligent mon courage à leur faire la cour. </l>
           </sp>
-          <sp xml:id="II03-4" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II03-4">
             <speaker>LISIDAN.</speaker>
-            <l n="361" xml:id="l361" part="I">Quelle est cette beauté ? </l>
+            <l n="361" part="I" xml:id="l361">Quelle est cette beauté ? </l>
           </sp>
-          <sp xml:id="II03-5" who="EMILE">
+          <sp who="EMILE" xml:id="II03-5">
             <speaker>ÉMILE.</speaker>
             <l part="F">Dieux l'objet adorable ! </l>
             <note type="C">v. 362, le texte porte "m'a défaite", nous corrigeons en "ma défaite"</note>
             <l n="362" xml:id="l362">Que vous allez juger ma défaite honorable ! </l>
-            <l n="363" xml:id="l363" part="I">Amélie. </l>
+            <l n="363" part="I" xml:id="l363">Amélie. </l>
           </sp>
-          <sp xml:id="II03-6" who="DIONYS">
+          <sp who="DIONYS" xml:id="II03-6">
             <speaker>DIONYS.</speaker>
             <l part="M">Amélie. </l>
           </sp>
-          <sp xml:id="II03-7" who="EMILE">
+          <sp who="EMILE" xml:id="II03-7">
             <speaker>ÉMILE.</speaker>
             <l part="F">A causé mon souci ; </l>
-            <l n="364" xml:id="l364" part="I">Je meurs pour ses beaux yeux. </l>
+            <l n="364" part="I" xml:id="l364">Je meurs pour ses beaux yeux. </l>
           </sp>
-          <sp xml:id="II03-8" who="DIONYS">
+          <sp who="DIONYS" xml:id="II03-8">
             <speaker>DIONYS.</speaker>
             <l part="F">Elle vous aime aussi. </l>
           </sp>
-          <sp xml:id="II03-9" who="EMILE">
+          <sp who="EMILE" xml:id="II03-9">
             <speaker>ÉMILE.</speaker>
             <l n="365" xml:id="l365">S'en peut-elle défendre, et serais-je moi-même, </l>
             <l n="366" xml:id="l366">Si je n'étais aimé par un objet que j'aime ? </l>
@@ -867,11 +899,11 @@
             <l n="373" xml:id="l373">Et qui veux l'élever à la gloire suprême, </l>
             <l n="374" xml:id="l374">Dont on doit honorer les personnes que j'aime. </l>
           </sp>
-          <sp xml:id="II03-10" who="DIONYS">
+          <sp who="DIONYS" xml:id="II03-10">
             <speaker>DIONYS.</speaker>
-            <l n="375" xml:id="l375" part="I">Elle vous doit beaucoup. </l>
+            <l n="375" part="I" xml:id="l375">Elle vous doit beaucoup. </l>
           </sp>
-          <sp xml:id="II03-11" who="EMILE">
+          <sp who="EMILE" xml:id="II03-11">
             <speaker>ÉMILE.</speaker>
             <l part="F">Mon sentiment est tel ; </l>
             <l n="376" xml:id="l376">Mais que puis-je adorer que cet ange mortel, </l>
@@ -880,11 +912,11 @@
             <l n="379" xml:id="l379">Et la nécessité d'aimer plus bas que moi, </l>
             <l n="380" xml:id="l380">N'excuse-t-elle pas, si je vis sous sa loi. </l>
           </sp>
-          <sp xml:id="II03-12" who="DIONYS">
+          <sp who="DIONYS" xml:id="II03-12">
             <speaker>DIONYS.</speaker>
-            <l n="381" xml:id="l381" part="I">Elle a bien des appas. </l>
+            <l n="381" part="I" xml:id="l381">Elle a bien des appas. </l>
           </sp>
-          <sp xml:id="II03-13" who="EMILE">
+          <sp who="EMILE" xml:id="II03-13">
             <speaker>ÉMILE.</speaker>
             <l part="F">Cette belle m'oblige, </l>
             <l n="382" xml:id="l382">À me mêler d'un art, qu'en effet je néglige, </l>
@@ -899,28 +931,31 @@
             <l n="391" xml:id="l391">Si quelque occasion s'offre de vous servir, </l>
             <l n="392" xml:id="l392">J'en ai fait un dessein qu'on ne me peut ravir. </l>
           </sp>
-          <sp xml:id="II03-14" who="DIONYS">
+          <sp who="DIONYS" xml:id="II03-14">
             <speaker>DIONYS.</speaker>
             <l n="393" xml:id="l393">Que puis-je dénier à la gloire du monde </l>
             <l n="394" xml:id="l394">Ce m'est une faveur, qui n'a point de seconde, </l>
             <l n="395" xml:id="l395">Ce poulet achevé, je l'apporte en ce lieu. </l>
           </sp>
-          <sp xml:id="II03-15" who="EMILE">
+          <sp who="EMILE" xml:id="II03-15">
             <speaker>ÉMILE.</speaker>
-            <l n="396" xml:id="l396" part="I">Et quand sera-t-il prêt ? </l>
+            <l n="396" part="I" xml:id="l396">Et quand sera-t-il prêt ? </l>
           </sp>
-          <sp xml:id="II03-16" who="DIONYS">
+          <sp who="DIONYS" xml:id="II03-16">
             <speaker>DIONYS.</speaker>
             <l part="M">Dans un moment. </l>
           </sp>
-          <sp xml:id="II03-17" who="EMILE">
+          <sp who="EMILE" xml:id="II03-17">
             <speaker>ÉMILE.</speaker>
             <l part="F">Adieu. </l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Dionys et Lisidan seuls.<listPerson type="configuration" xml:id="conf9"><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II04-1" who="DIONYS">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Dionys et Lisidan seuls.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="DIONYS" xml:id="II04-1">
             <speaker>DIONYS.</speaker>
             <l n="397" xml:id="l397">Peut-on priser assez une humeur de la sorte ? </l>
             <l n="398" xml:id="l398">Jamais une manie a-t-elle été si forte, </l>
@@ -931,9 +966,15 @@
             <l n="403" xml:id="l403">Son père le conduit, écoutons leur discours. </l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Le Père, Amélie, Éraste, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf10"><person corresp="#ERASTE"/><person corresp="#LEPERE"/><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#AMELIE"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II05-1" who="ERASTE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Le Père, Amélie, Éraste, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#ERASTE"/>
+            <person corresp="#LEPERE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERASTE" xml:id="II05-1">
             <speaker>ÉRASTE.</speaker>
             <l n="404" xml:id="l404">Puisque vous m'ordonnez d'espérer du secours. </l>
             <l n="405" xml:id="l405">Je souffrirai, Monsieur, et ma persévérance, </l>
@@ -941,7 +982,7 @@
             <l n="407" xml:id="l407">Cet agréable objet, à moins de cruauté, </l>
             <l n="408" xml:id="l408">Que de n'accorder rien à ma fidélité. </l>
           </sp>
-          <sp xml:id="II05-2" who="LEPERE">
+          <sp who="LEPERE" xml:id="II05-2">
             <speaker>LE PÈRE.</speaker>
             <l n="409" xml:id="l409">Le temps peut tout changer, son enfance indiscrète, </l>
             <l n="410" xml:id="l410">Ne sait ce qu'elle craint, ni ce qu'elle souhaite, </l>
@@ -950,7 +991,7 @@
             <l n="413" xml:id="l413">Adieu, ne craignez rien, et dessus ma promesse, </l>
             <l n="414" xml:id="l414">Espérez du remède à l'ardeur, qui vous presse. </l>
           </sp>
-          <sp xml:id="II05-3" who="DIONYS">
+          <sp who="DIONYS" xml:id="II05-3">
             <speaker>DIONYS.</speaker>
             <l n="415" xml:id="l415">Ô rigoureux arrêt : qui me comble d'ennuis, </l>
             <l n="416" xml:id="l416">Que faut-il que j'espère, en l'état où je suis, </l>
@@ -959,7 +1000,7 @@
             <l n="419" xml:id="l419">Le vain éclat de l'or à ses yeux éblouis, </l>
             <l n="420" xml:id="l420">Et lui dictait les mots que nous avons ouïs. </l>
           </sp>
-          <sp xml:id="II05-4" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II05-4">
             <speaker>LISIDAN.</speaker>
             <l n="421" xml:id="l421">Éprouvez la fortune, ou propice, ou cruelle, </l>
             <l n="422" xml:id="l422">C'est tout, si vous plaisez aux yeux de cette belle, </l>
@@ -974,16 +1015,20 @@
             <l n="431" xml:id="l431">J'étouffe mes soupirs, j'ai toujours espéré, </l>
             <l n="432" xml:id="l432">Et sa possession, m'est un bien assuré. </l>
           </sp>
-          <sp xml:id="II05-5" who="DIONYS">
+          <sp who="DIONYS" xml:id="II05-5">
             <speaker>DIONYS.</speaker>
             <l n="433" xml:id="l433">Que ne m'est-il permis de parler de la sorte ! </l>
             <l n="434" xml:id="l434">Que je sois content ! Mais on ouvre sa porte </l>
-            <l n="435" xml:id="l435" part="I">C'est elle, abordons-la. </l>
+            <l n="435" part="I" xml:id="l435">C'est elle, abordons-la. </l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
-          <head>SCÈNE VI. Dionys, Lisidan, Amélie.<listPerson type="configuration" xml:id="conf11"><person corresp="#DIONYS"/><person corresp="#AMELIE"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II06-1" who="DIONYS">
+        <div2 n="6" type="scene" xml:id="II06">
+          <head>SCÈNE VI. Dionys, Lisidan, Amélie.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#DIONYS"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="DIONYS" xml:id="II06-1">
             <speaker>DIONYS continue.</speaker>
             <l part="F">Si proche du trépas, </l>
             <l n="436" xml:id="l436">Qu'il ne me reste plus qu'un moment, et qu'un pas, </l>
@@ -1004,14 +1049,14 @@
             <l n="451" xml:id="l451">Je ne déteste point mon malheur apparent, </l>
             <l n="452" xml:id="l452">Et je ne pousse point de soupirs en mourant. </l>
           </sp>
-          <sp xml:id="II06-2" who="AMELIE">
+          <sp who="AMELIE" xml:id="II06-2">
             <speaker>AMÉLIE.</speaker>
             <l n="453" xml:id="l453">D'où viendra Dionys une mort si soudaine, </l>
             <l n="454" xml:id="l454">Votre teint est si bon, et votre voix si saine ; </l>
             <l n="455" xml:id="l455">J'ignore de vos maux la naissance, et le cours, </l>
             <l n="456" xml:id="l456">Et je peux toutefois répondre de vos jours. </l>
           </sp>
-          <sp xml:id="II06-3" who="DIONYS">
+          <sp who="DIONYS" xml:id="II06-3">
             <speaker>DIONYS.</speaker>
             <l n="457" xml:id="l457">Il est aisé de conserver ma vie, </l>
             <l n="458" xml:id="l458">Le bien de ma santé dépend de votre envie, </l>
@@ -1022,32 +1067,37 @@
             <l n="463" xml:id="l463">Quoi que vous promissiez à mon affection, </l>
             <l n="464" xml:id="l464">Un père forcera votre inclination. </l>
           </sp>
-          <sp xml:id="II06-4" who="AMELIE">
+          <sp who="AMELIE" xml:id="II06-4">
             <speaker>AMÉLIE.</speaker>
-            <l n="465" xml:id="l465" part="I">On ne me force point. </l>
+            <l n="465" part="I" xml:id="l465">On ne me force point. </l>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
-          <head>SCÈNE VII. Érante, Amélie, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf12"><person corresp="#ERANTE"/><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#AMELIE"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II07-1" who="ERANTE">
+        <div2 n="7" type="scene" xml:id="II07">
+          <head>SCÈNE VII. Érante, Amélie, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#ERANTE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERANTE" xml:id="II07-1">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Courrez vite à mon père. </l>
           </sp>
-          <sp xml:id="II07-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="II07-2">
             <speaker>DIONYS.</speaker>
             <l n="466" xml:id="l466">Ainsi j'aurai toujours, la fortune contraire, </l>
             <l n="467" xml:id="l467">Elle n'accorde pas à mon cruel tourment, </l>
             <l n="468" xml:id="l468">La satisfaction de parler seulement. </l>
           </sp>
-          <sp xml:id="II07-3" who="ERANTE">
+          <sp who="ERANTE" xml:id="II07-3">
             <speaker>ÉRANTE donnant un mot de lettre à Dionys. </speaker>
             <l n="469" xml:id="l469">Lis, soit secret adieu ; j'ai deux mots à vous dire. </l>
           </sp>
-          <sp xml:id="II07-4" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II07-4">
             <speaker>LISIDAN la suivant. </speaker>
-            <l n="470" xml:id="l470" part="I">Je viens de ce pas. </l>
+            <l n="470" part="I" xml:id="l470">Je viens de ce pas. </l>
           </sp>
-          <sp xml:id="II07-5" who="DIONYS">
+          <sp who="DIONYS" xml:id="II07-5">
             <speaker>DIONYS seul. </speaker>
             <l part="F">Que me peut-elle écrire ? </l>
             <l n="471" xml:id="l471">Elle aime Lisidan, et je n'estime pas, </l>
@@ -1066,7 +1116,7 @@
             <l n="483" xml:id="l483">Et te vante que rien n'égale </l>
             <l n="484" xml:id="l484">Tes mérites, et mon amour. </l>
           </sp>
-          <sp xml:id="II07-6" who="DIONYS">
+          <sp who="DIONYS" xml:id="II07-6">
             <speaker>DIONYS continue.</speaker>
             <l n="485" xml:id="l485">Surpris, saisis, confus après cette merveille, </l>
             <l n="486" xml:id="l486">Que j'ai d'occasion de douter si je veille, </l>
@@ -1086,57 +1136,60 @@
             <l n="500" xml:id="l500">La qualité de traître, et celle d'inconstant. </l>
           </sp>
         </div2>
-        <div2 xml:id="II08" type="scene" n="8">
-          <head>SCÈNE VIII. Amélie, Dionys.<listPerson type="configuration" xml:id="conf13"><person corresp="#AMELIE"/><person corresp="#DIONYS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II08-1" who="AMELIE">
+        <div2 n="8" type="scene" xml:id="II08">
+          <head>SCÈNE VIII. Amélie, Dionys.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#AMELIE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="AMELIE" xml:id="II08-1">
             <speaker>AMÉLIE.</speaker>
-            <l n="501" xml:id="l501" part="I">Quoi vous vivez encore. </l>
+            <l n="501" part="I" xml:id="l501">Quoi vous vivez encore. </l>
           </sp>
-          <sp xml:id="II08-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="II08-2">
             <speaker>DIONYS.</speaker>
             <l part="F">Il est vrai que la vie, </l>
             <l n="502" xml:id="l502">Quand vous m'avez quitté, devait m'être ravie. </l>
             <l n="503" xml:id="l503">Mais j'ai l'âme arrêtée en des liens si forts, </l>
             <l n="504" xml:id="l504">Que malgré mon dessein elle anime ce corps. </l>
           </sp>
-          <sp xml:id="II08-3" who="AMELIE">
+          <sp who="AMELIE" xml:id="II08-3">
             <speaker>AMÉLIE.</speaker>
             <l n="505" xml:id="l505">Dieux ! Que j'avais de crainte, et que ma soeur m'en donne ! </l>
             <l n="506" xml:id="l506">Mon père est au jardin, qui n'a mandé personne ; </l>
-            <l n="507" xml:id="l507" part="I">Que vous a-t-elle dit. </l>
+            <l n="507" part="I" xml:id="l507">Que vous a-t-elle dit. </l>
           </sp>
-          <sp xml:id="II08-4" who="DIONYS">
+          <sp who="DIONYS" xml:id="II08-4">
             <speaker>DIONYS.</speaker>
             <l part="M">Rien. </l>
           </sp>
-          <sp xml:id="II08-5" who="AMELIE">
+          <sp who="AMELIE" xml:id="II08-5">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Je veux tout savoir, </l>
             <l n="508" xml:id="l508">Si mon respect sur vous obtient quelque pouvoir. </l>
           </sp>
-          <sp xml:id="II08-6" who="DIONYS">
+          <sp who="DIONYS" xml:id="II08-6">
             <speaker>DIONYS.</speaker>
-            <l n="509" xml:id="l509" part="I">Je n'ai rien entendu. </l>
+            <l n="509" part="I" xml:id="l509">Je n'ai rien entendu. </l>
           </sp>
-          <sp xml:id="II08-7" who="AMELIE">
+          <sp who="AMELIE" xml:id="II08-7">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Me taisant quelque chose </l>
             <l n="510" xml:id="l510">Vous ruinez un bien, où mon coeur se dispose, </l>
-            <l n="511" xml:id="l511" part="I">J'ai déjà trop prié. </l>
+            <l n="511" part="I" xml:id="l511">J'ai déjà trop prié. </l>
           </sp>
-          <sp xml:id="II08-8" who="DIONYS">
+          <sp who="DIONYS" xml:id="II08-8">
             <speaker>DIONYS.</speaker>
             <l part="F">J'en reçois cet écrit ; </l>
             <l n="512" xml:id="l512">Voyez combien vos voeux peuvent sur mon esprit. </l>
           </sp>
-          <sp xml:id="II08-9" who="AMELIE">
+          <sp who="AMELIE" xml:id="II08-9">
             <speaker>AMÉLIE, lit tout bas, puis dit.</speaker>
             <l n="513" xml:id="l513">C'est là bien clairement vous ouvrir sa pensée, </l>
             <l n="514" xml:id="l514">Vous la devez guérir, si vous l'avez blessée, </l>
             <l n="515" xml:id="l515">Elle a des qualités dignes de vos désirs, </l>
             <l n="516" xml:id="l516">Et je n'ai point dessein d'empêcher ses plaisirs. </l>
           </sp>
-          <sp xml:id="II08-10" who="DIONYS">
+          <sp who="DIONYS" xml:id="II08-10">
             <speaker>DIONYS.</speaker>
             <l n="517" xml:id="l517">Il vous est bien aisé de parler de la sorte, </l>
             <note type="C">v. 518, le texte porte "un amitié", nous corrigeons en "une amitié".</note>
@@ -1168,7 +1221,7 @@
             <l n="543" xml:id="l543">Rien ne peut m'empêcher d'aimer votre beauté, </l>
             <l n="544" xml:id="l544">Et je ne puis forcer cette nécessité. </l>
           </sp>
-          <sp xml:id="II08-11" who="AMELIE">
+          <sp who="AMELIE" xml:id="II08-11">
             <speaker>AMÉLIE.</speaker>
             <l n="545" xml:id="l545">Enfin, c'est trop cacher une ardeur si pressante, </l>
             <l n="546" xml:id="l546">Et je dois de l'espoir à sa flamme innocente. </l>
@@ -1179,7 +1232,7 @@
             <l n="551" xml:id="l551">Je te préfère à tout, viens demain en ce lieu, </l>
             <l n="552" xml:id="l552">En savoir davantage, et sois discret, adieu. </l>
           </sp>
-          <sp xml:id="II08-12" who="DIONYS">
+          <sp who="DIONYS" xml:id="II08-12">
             <speaker>DIONYS seul.</speaker>
             <l n="553" xml:id="l553">Honorez-moi d'un mot, et d'un moment encore, </l>
             <l n="554" xml:id="l554">Que je baise vos pas, et que je vous adore. </l>
@@ -1187,31 +1240,34 @@
             <l n="556" xml:id="l556">Est-il rien de pareil à ton contentement. </l>
           </sp>
         </div2>
-        <div2 xml:id="II09" type="scene" n="9">
-          <head>SCÈNE IX. Lisidan, Dionys.<listPerson type="configuration" xml:id="conf14"><person corresp="#LISIDAN"/><person corresp="#DIONYS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="II09-1" who="LISIDAN">
+        <div2 n="9" type="scene" xml:id="II09">
+          <head>SCÈNE IX. Lisidan, Dionys.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#LISIDAN"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="LISIDAN" xml:id="II09-1">
             <speaker>LISIDAN prenant congé d'Érante. </speaker>
-            <l n="557" xml:id="l557" part="I">Adieu, demain sans faute. </l>
+            <l n="557" part="I" xml:id="l557">Adieu, demain sans faute. </l>
             <stage>Il parle à Dionys.</stage>
             <l part="F">Ô Dieux que ta maîtresse, </l>
             <l n="558" xml:id="l558">N'a-t-elle autant de part en l'ardeur qui te presse, </l>
             <l n="559" xml:id="l559">Qu'on porterait d'envie à ta prospérité ; </l>
             <l n="560" xml:id="l560">Et qu'Érante a pour moi d'amour et de bonté ; </l>
           </sp>
-          <sp xml:id="II09-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="II09-2">
             <speaker>DIONYS.</speaker>
-            <l n="561" xml:id="l561" part="I">Parlez-vous de bon sens ? </l>
+            <l n="561" part="I" xml:id="l561">Parlez-vous de bon sens ? </l>
           </sp>
-          <sp xml:id="II09-3" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II09-3">
             <speaker>LISIDAN.</speaker>
             <l part="F">Oui si j'en suis capable, </l>
             <l n="562" xml:id="l562">Et si l'on peut trouver un amant raisonnable. </l>
           </sp>
-          <sp xml:id="II09-4" who="DIONYS">
+          <sp who="DIONYS" xml:id="II09-4">
             <speaker>DIONYS.</speaker>
-            <l n="563" xml:id="l563" part="I">Elle vous aime encor ? </l>
+            <l n="563" part="I" xml:id="l563">Elle vous aime encor ? </l>
           </sp>
-          <sp xml:id="II09-5" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II09-5">
             <speaker>LISIDAN.</speaker>
             <l part="F">Je n'en saurais douter, </l>
             <l n="564" xml:id="l564">Elle m'en assurait au point de la quitter : </l>
@@ -1220,11 +1276,11 @@
             <l n="567" xml:id="l567">Mais quel sujet vous porte à m'enquêter ainsi ? </l>
             <l n="568" xml:id="l568">Et tenir pour suspect son amoureux souci ? </l>
           </sp>
-          <sp xml:id="II09-6" who="DIONYS">
+          <sp who="DIONYS" xml:id="II09-6">
             <speaker>DIONYS.</speaker>
-            <l n="569" xml:id="l569" part="I">Voyez bien le sujet. </l>
+            <l n="569" part="I" xml:id="l569">Voyez bien le sujet. </l>
           </sp>
-          <sp xml:id="II09-7" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II09-7">
             <speaker>LISIDAN ayant lu la lettre.</speaker>
             <l part="F">Ai-je des yeux fidèles, </l>
             <l n="570" xml:id="l570">Et dois-je soupçonner ce miracle des belles ; </l>
@@ -1239,7 +1295,7 @@
             <l n="579" xml:id="l579">Et le ciel m'eût pourvu de belles qualités </l>
             <l n="580" xml:id="l580">S'il eût formé pour moi, de si rares beautés. </l>
           </sp>
-          <sp xml:id="II09-8" who="DIONYS">
+          <sp who="DIONYS" xml:id="II09-8">
             <speaker>DIONYS.</speaker>
             <l n="581" xml:id="l581">Ne cherche point d'excuse à cet esprit volage, </l>
             <l n="582" xml:id="l582">Blâmez de votre mal, son humeur, et son âge, </l>
@@ -1252,18 +1308,20 @@
             <l n="589" xml:id="l589">Aimez-la constamment, n'imitez point son change, </l>
             <l n="590" xml:id="l590">Et la mettez au point qu'elle-même vous venge. </l>
           </sp>
-          <sp xml:id="II09-9" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="II09-9">
             <speaker>LISIDAN.</speaker>
             <l n="591" xml:id="l591">Ô dieux ! Quelle infortune égale mes ennuis ? </l>
             <l n="592" xml:id="l592">Je demeure muet, en l'état où je suis. </l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf16"><person corresp="#VALET"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III01-1" who="VALET">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#VALET"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="VALET" xml:id="III01-1">
             <speaker>LE VALET seul tenant la lettre. </speaker>
             <l n="593" xml:id="l593">Effets prodigieux d'un généreux courage, </l>
             <l n="594" xml:id="l594">Tout respecte mon maître, et tout lui rend hommage, </l>
@@ -1276,9 +1334,12 @@
             <l n="600" xml:id="l600">Va faire à sa maîtresse admirer son esprit. </l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE DEUXIÈME. Amélie, Le Valet.<listPerson type="configuration" xml:id="conf17"><person corresp="#VALET"/><person corresp="#AMELIE"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III02-1" who="VALET">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE DEUXIÈME. Amélie, Le Valet.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#VALET"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="VALET" xml:id="III02-1">
             <speaker>LE VALET.</speaker>
             <l n="601" xml:id="l601">Qu'elle sort à propos ! Belle Reine des âmes, </l>
             <l n="602" xml:id="l602">Amour de l'univers, cher sujet de nos flammes ; </l>
@@ -1289,20 +1350,20 @@
             <l n="607" xml:id="l607">Si vous ne dédaignez ce glorieux amant </l>
             <l n="608" xml:id="l608">Répondez à ses voeux par un mot seulement. </l>
           </sp>
-          <sp xml:id="III02-2" who="AMELIE">
+          <sp who="AMELIE" xml:id="III02-2">
             <speaker>AMÉLIE.</speaker>
             <l n="609" xml:id="l609">Si je ne le dédaigne ; ô dieux ! Quelle déesse, </l>
             <l n="610" xml:id="l610">Ne tiendrait à faveur le nom de sa maîtresse ; </l>
             <l n="611" xml:id="l611">Se peut-on dégager de ses charmants appas : </l>
             <l n="612" xml:id="l612">Quelqu'un l'a-t-il connu, qui ne l'adore pas ? </l>
           </sp>
-          <sp xml:id="III02-3" who="VALET">
+          <sp who="VALET" xml:id="III02-3">
             <speaker>LE VALET.</speaker>
             <l n="613" xml:id="l613">Il est vrai que tout cède à son mérite extrême, </l>
             <l n="614" xml:id="l614">Il est fort valeureux, il me l'a dit lui-même, </l>
             <l n="615" xml:id="l615">Et surtout son esprit a des charmes puissants. </l>
           </sp>
-          <sp xml:id="III02-4" who="AMELIE">
+          <sp who="AMELIE" xml:id="III02-4">
             <speaker>AMÉLIE lit le dessus.</speaker>
             <l n="616" xml:id="l616">À l'aimable beauté qui captive mes sens. </l>
             <l n="617" xml:id="l617">Le contenu. </l>
@@ -1329,62 +1390,62 @@
             <stage>Dionys. </stage>
             <stage>Le Valet. </stage>
           </sp>
-          <sp xml:id="III02-5" who="VALET">
+          <sp who="VALET" xml:id="III02-5">
             <speaker>LE VALET.</speaker>
-            <l n="638" xml:id="l638" part="I">Lisez-vous tout de bon. </l>
+            <l n="638" part="I" xml:id="l638">Lisez-vous tout de bon. </l>
           </sp>
-          <sp xml:id="III02-6" who="AMELIE">
+          <sp who="AMELIE" xml:id="III02-6">
             <speaker>AMÉLIE.</speaker>
             <l part="M">Lis toi-même. </l>
           </sp>
-          <sp xml:id="III02-7" who="VALET">
+          <sp who="VALET" xml:id="III02-7">
             <speaker>LE VALET.</speaker>
             <l part="F">Ha le traître, </l>
             <l n="639" xml:id="l639">Il nous a fait ce tour, il a trahi mon maître, </l>
             <l n="640" xml:id="l640">Il m'a commis moi-même à porter ses poulets ; </l>
             <l n="641" xml:id="l641">On lui fera, Madame, employer ses valets. </l>
           </sp>
-          <sp xml:id="III02-8" who="AMELIE">
+          <sp who="AMELIE" xml:id="III02-8">
             <speaker>AMÉLIE.</speaker>
-            <l n="642" xml:id="l642" part="I">Qu'est-ce, conte moi tout. </l>
+            <l n="642" part="I" xml:id="l642">Qu'est-ce, conte moi tout. </l>
           </sp>
-          <sp xml:id="III02-9" who="VALET">
+          <sp who="VALET" xml:id="III02-9">
             <speaker>LE VALET.</speaker>
             <l part="F">Je vengerai l'injure </l>
             <l n="643" xml:id="l643">De cette propre main, si mon maître l'endure, </l>
             <l n="644" xml:id="l644">Jamais traître que lui n'a fait rougir ce front </l>
             <l n="645" xml:id="l645">Il tache mon honneur, et j'ai part en l'affront. </l>
           </sp>
-          <sp xml:id="III02-10" who="AMELIE">
+          <sp who="AMELIE" xml:id="III02-10">
             <speaker>AMÉLIE.</speaker>
-            <l n="646" xml:id="l646" part="I">Ô dieux ! Qu'il est plaisant ? </l>
+            <l n="646" part="I" xml:id="l646">Ô dieux ! Qu'il est plaisant ? </l>
           </sp>
-          <sp xml:id="III02-11" who="VALET">
+          <sp who="VALET" xml:id="III02-11">
             <speaker>LE VALET.</speaker>
             <l part="F">Et vous riez, Madame, </l>
             <l n="647" xml:id="l647">Si mon maître me croit, il éteindra sa flamme. </l>
             <l n="648" xml:id="l648">Vous mourrez de dépit, et la fin de ce jour </l>
             <l n="649" xml:id="l649">Sera, s'il est prudent, la fin de son amour. </l>
           </sp>
-          <sp xml:id="III02-12" who="AMELIE">
+          <sp who="AMELIE" xml:id="III02-12">
             <speaker>AMÉLIE.</speaker>
             <l n="650" xml:id="l650">Conseiller inhumain, ennemi de mon aise, </l>
             <l n="651" xml:id="l651">Qu'il cesse de m'aimer, et que je lui déplaise ? </l>
             <l n="652" xml:id="l652">Que je sois odieuse à la même valeur, </l>
             <l n="653" xml:id="l653">Procure-moi plutôt la mort que ce malheur. </l>
           </sp>
-          <sp xml:id="III02-13" who="VALET">
+          <sp who="VALET" xml:id="III02-13">
             <speaker>LE VALET.</speaker>
-            <l n="654" xml:id="l654" part="I">Vous riez toutefois. </l>
+            <l n="654" part="I" xml:id="l654">Vous riez toutefois. </l>
           </sp>
-          <sp xml:id="III02-14" who="AMELIE">
+          <sp who="AMELIE" xml:id="III02-14">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Oui, d'aise, et d'espérance </l>
             <l n="655" xml:id="l655">Que le ciel bénira notre persévérance ; </l>
             <l n="656" xml:id="l656">Hélas conserve-moi ce bonheur infini, </l>
             <l n="657" xml:id="l657">Ou que d'un seul trépas mon crime soit puni. </l>
           </sp>
-          <sp xml:id="III02-15" who="VALET">
+          <sp who="VALET" xml:id="III02-15">
             <speaker>LE VALET.</speaker>
             <l n="658" xml:id="l658">Ce repentir m'oblige à forcer ma colère, </l>
             <l n="659" xml:id="l659">Conservez seulement le souci de lui plaire ; </l>
@@ -1393,40 +1454,43 @@
             <stage>Elle rentre. </stage>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Lisidan, Le Valet.<listPerson type="configuration" xml:id="conf18"><person corresp="#LISIDAN"/><person corresp="#VALET"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III03-1" who="LISIDAN">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Lisidan, Le Valet.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#LISIDAN"/>
+            <person corresp="#VALET"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="LISIDAN" xml:id="III03-1">
             <speaker>LISIDAN.</speaker>
             <l n="662" xml:id="l662">Avant que de finir, et ma vie et ma peine, </l>
             <l n="663" xml:id="l663">Voyons encor un coup cette belle inhumaine </l>
             <l n="664" xml:id="l664">À ses yeux inconstants faisons voir mon trépas, </l>
             <l n="665" xml:id="l665">Ce dessein leur plaira, si je ne leur plais pas. </l>
           </sp>
-          <sp xml:id="III03-2" who="VALET">
+          <sp who="VALET" xml:id="III03-2">
             <speaker>LE VALET.</speaker>
             <l n="666" xml:id="l666">On va de ton ami payer la courtoisie. </l>
           </sp>
-          <sp xml:id="III03-3" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III03-3">
             <speaker>LISIDAN.</speaker>
             <l n="667" xml:id="l667">Adieu, d'autres pensers troublent ma fantaisie. </l>
           </sp>
-          <sp xml:id="III03-4" who="VALET">
+          <sp who="VALET" xml:id="III03-4">
             <speaker>LE VALET.</speaker>
             <l n="668" xml:id="l668">Voyez que d'arrogance est jointe à ses discours, </l>
             <l n="669" xml:id="l669">Tu dois bien, insolent, lui prêter du secours, </l>
             <l n="670" xml:id="l670">Je seconde mon maître, et jamais mon courage </l>
             <l n="671" xml:id="l671">Ne s'est mieux employé qu'à punir cet outrage. </l>
           </sp>
-          <sp xml:id="III03-5" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III03-5">
             <speaker>LISIDAN.</speaker>
             <l n="672" xml:id="l672">Cherche d'autres objets à tes sots entretiens. </l>
           </sp>
-          <sp xml:id="III03-6" who="VALET">
+          <sp who="VALET" xml:id="III03-6">
             <speaker>LE VALET.</speaker>
             <l n="673" xml:id="l673">Et toi, compte ce jour pour le dernier des tiens. </l>
             <stage>Il s'en va. </stage>
           </sp>
-          <sp xml:id="III03-7" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III03-7">
             <speaker>LISIDAN seul.</speaker>
             <l n="674" xml:id="l674">Hélas dans la rigueur de mon cruel martyre, </l>
             <l n="675" xml:id="l675">Je crains moins ce malheur, que je ne le désire, </l>
@@ -1436,77 +1500,81 @@
             <l n="679" xml:id="l679">Et tire vanité d'imiter ma maîtresse. </l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Lisidan, Érante à la porte Dionys.<listPerson type="configuration" xml:id="conf19"><person corresp="#ERANTE"/><person corresp="#LISIDAN"/><person corresp="#DIONYS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III04-1" who="ERANTE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Lisidan, Érante à la porte Dionys.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#ERANTE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERANTE" xml:id="III04-1">
             <speaker>ÉRANTE.</speaker>
             <l n="680" xml:id="l680">Combien je veux de mal à cet amant transi ; </l>
             <l n="681" xml:id="l681">Dissimulons pourtant. Je t'attendais ici. </l>
           </sp>
-          <sp xml:id="III04-2" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-2">
             <speaker>LISIDAN.</speaker>
-            <l n="682" xml:id="l682" part="I">Que je vous suis tenu. </l>
+            <l n="682" part="I" xml:id="l682">Que je vous suis tenu. </l>
           </sp>
-          <sp xml:id="III04-3" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-3">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Loin de toi, tout m'offense, </l>
             <l n="683" xml:id="l683">Et rien ne m'est sensible au prix de ton absence. </l>
           </sp>
-          <sp xml:id="III04-4" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-4">
             <speaker>LISIDAN.</speaker>
             <l n="684" xml:id="l684">Cette peine est conjointe aux fidèles amours. </l>
           </sp>
-          <sp xml:id="III04-5" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-5">
             <speaker>ÉRANTE.</speaker>
             <l n="685" xml:id="l685">Je sens ma passion s'accroître tous les jours. </l>
           </sp>
-          <sp xml:id="III04-6" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-6">
             <speaker>LISIDAN.</speaker>
-            <l n="686" xml:id="l686" part="I">Que je suis glorieux ! </l>
+            <l n="686" part="I" xml:id="l686">Que je suis glorieux ! </l>
           </sp>
-          <sp xml:id="III04-7" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-7">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Oui, si tu tiens à gloire </l>
             <l n="687" xml:id="l687">D'être le seul objet, qui plaise à ma mémoire. </l>
           </sp>
-          <sp xml:id="III04-8" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-8">
             <speaker>LISIDAN.</speaker>
-            <l n="688" xml:id="l688" part="I">Car de changer jamais. </l>
+            <l n="688" part="I" xml:id="l688">Car de changer jamais. </l>
           </sp>
-          <sp xml:id="III04-9" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-9">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Ô Dieux, que me dis-tu ? </l>
           </sp>
-          <sp xml:id="III04-10" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-10">
             <speaker>LISIDAN.</speaker>
-            <l n="689" xml:id="l689" part="I">Vous avez trop d'amour. </l>
+            <l n="689" part="I" xml:id="l689">Vous avez trop d'amour. </l>
           </sp>
-          <sp xml:id="III04-11" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-11">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Et toi trop de vertu. </l>
           </sp>
-          <sp xml:id="III04-12" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-12">
             <speaker>LISIDAN.</speaker>
-            <l n="690" xml:id="l690" part="I">D'écrire à Dionys ? </l>
+            <l n="690" part="I" xml:id="l690">D'écrire à Dionys ? </l>
           </sp>
-          <sp xml:id="III04-13" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-13">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Ô Dieux, je suis perdue. </l>
           </sp>
-          <sp xml:id="III04-14" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-14">
             <speaker>LISIDAN.</speaker>
             <l n="691" xml:id="l691">Et d'offrir à ses voeux l'amitié qui m'est due, </l>
             <l n="692" xml:id="l692">Vous savez (pour le faire,) aimer trop constamment </l>
             <l n="693" xml:id="l693">Et c'est vous offenser qu'y songer seulement. </l>
           </sp>
-          <sp xml:id="III04-15" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-15">
             <speaker>ÉRANTE.</speaker>
             <l n="694" xml:id="l694">C'est beaucoup de tourment, qu'un peu de jalousie, </l>
             <l n="695" xml:id="l695">Ne donne point d'entrée à cette frénésie : </l>
             <l n="696" xml:id="l696">Car de la perdre après, il est bien malaisé, </l>
-            <l n="697" xml:id="l697" part="I">Je plains déjà ton mal. </l>
+            <l n="697" part="I" xml:id="l697">Je plains déjà ton mal. </l>
           </sp>
-          <sp xml:id="III04-16" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-16">
             <speaker>LISIDAN.</speaker>
             <l part="F">Et vous l'avez causé ; </l>
             <l n="698" xml:id="l698">Confessez tout, Madame, et sans tant d'artifice, </l>
@@ -1526,7 +1594,7 @@
             <l n="712" xml:id="l712">Et celui de vous plaire et de vous obéir, </l>
             <l n="713" xml:id="l713">Me fera détester moi-même, et me haïr. </l>
           </sp>
-          <sp xml:id="III04-17" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-17">
             <speaker>ÉRANTE.</speaker>
             <l n="714" xml:id="l714">Vous imitez, Monsieur, ces âmes insensées, </l>
             <l n="715" xml:id="l715">Qu'on ne trouve jamais en d'égales pensées, </l>
@@ -1537,7 +1605,7 @@
             <l n="720" xml:id="l720">Je médite longtemps, sur le choix que je fais, </l>
             <l n="721" xml:id="l721">Mais depuis qu'il est fait, je ne change jamais. </l>
           </sp>
-          <sp xml:id="III04-18" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-18">
             <speaker>LISIDAN.</speaker>
             <l n="722" xml:id="l722">J'ai donc été l'objet d'une éternelle haine ; </l>
             <l n="723" xml:id="l723">Une amour de deux ans, m'est donc ingrate, et vaine, </l>
@@ -1545,16 +1613,16 @@
             <l n="724" xml:id="l724">Et Dionys plaît seul à vos chastes beautés, </l>
             <l n="725" xml:id="l725">Depuis que je vous sers, et que vous m'écoutez. </l>
           </sp>
-          <sp xml:id="III04-19" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-19">
             <speaker>ÉRANTE.</speaker>
             <stage>Érante voyant sa lettre. </stage>
             <l n="726" xml:id="l726">Et c'est là Lisidan le sujet de vos plaintes. </l>
           </sp>
-          <sp xml:id="III04-20" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-20">
             <speaker>LISIDAN.</speaker>
-            <l n="727" xml:id="l727" part="I">Il est assez puissant. </l>
+            <l n="727" part="I" xml:id="l727">Il est assez puissant. </l>
           </sp>
-          <sp xml:id="III04-21" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-21">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Ô Dieux ! Les vaines craintes ; </l>
             <l n="728" xml:id="l728">Vivez, vivez heureux, et ne m'accusez plus, </l>
@@ -1588,7 +1656,7 @@
             <l n="756" xml:id="l756">Si mon amour est tel qu'on la puisse amortir, </l>
             <l n="757" xml:id="l757">Et si tout l'univers m'en saurait divertir. </l>
           </sp>
-          <sp xml:id="III04-22" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III04-22">
             <speaker>LISIDAN.</speaker>
             <l n="758" xml:id="l758">Dieux ! Que cette nouvelle allège mon martyre </l>
             <l n="759" xml:id="l759">Vous arrêtez mon âme à l'heure que j'expire : </l>
@@ -1597,22 +1665,26 @@
             <l n="762" xml:id="l762">Songez que tous les coeurs cèdent à la surprise, </l>
             <l n="763" xml:id="l763">Et qu'insensiblement nous prisons qui nous prise. </l>
           </sp>
-          <sp xml:id="III04-23" who="ERANTE">
+          <sp who="ERANTE" xml:id="III04-23">
             <speaker>ÉRANTE.</speaker>
             <l n="764" xml:id="l764">N'en soyez point en peine, aimez-moi seulement </l>
             <l n="765" xml:id="l765">Mais il vient, voyez-moi feindre subtilement. </l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
-          <head>SCÈNE V. Dionys, Érante, Lisidan.<listPerson type="configuration" xml:id="conf20"><person corresp="#ERANTE"/><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III05-1" who="ERANTE">
+        <div2 n="5" type="scene" xml:id="III05">
+          <head>SCÈNE V. Dionys, Érante, Lisidan.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#ERANTE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERANTE" xml:id="III05-1">
             <speaker>ÉRANTE.</speaker>
             <l n="766" xml:id="l766">Que vous traitez l'amour d'une façon discrète ! </l>
             <l n="767" xml:id="l767">(Monsieur) et qu'au besoin votre langue est muette, </l>
             <l n="768" xml:id="l768">Vous conservez si bien un secret défendu, </l>
             <l n="769" xml:id="l769">Que les sourds jusqu'ici, n'en ont rien entendu. </l>
           </sp>
-          <sp xml:id="III05-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="III05-2">
             <speaker>DIONYS.</speaker>
             <l n="770" xml:id="l770">Je suis fort imparfait, mais pour peu, qu'on me loue, </l>
             <l n="771" xml:id="l771">On sait que je crois l'être, et vois quand on me joue. </l>
@@ -1623,7 +1695,7 @@
             <l n="776" xml:id="l776">Sans mérite, sans bruit, sans estime et sans bien, </l>
             <l n="777" xml:id="l777">Qui n'a qu'un point de bon, c'est qu'il sait, qu'il n'a rien. </l>
           </sp>
-          <sp xml:id="III05-3" who="ERANTE">
+          <sp who="ERANTE" xml:id="III05-3">
             <speaker>ÉRANTE.</speaker>
             <l n="778" xml:id="l778">La belle couverture a son ingratitude. </l>
             <note type="C">v. 779, le mot "étude" est au masculin, ce qui était le cas au XVIIème selon Ménage.</note>
@@ -1643,12 +1715,12 @@
             <l n="792" xml:id="l792">Révère ingratement sa tyrannique loi, </l>
             <l n="793" xml:id="l793">Pour ton propre malheur, toi-même venge-moi. </l>
           </sp>
-          <sp xml:id="III05-4" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III05-4">
             <speaker>LISIDAN.</speaker>
             <l n="794" xml:id="l794">Enfin je suis saisi de ma première crainte </l>
             <l n="795" xml:id="l795">Ces discours ont passé les bornes de la feinte. </l>
           </sp>
-          <sp xml:id="III05-5" who="DIONYS">
+          <sp who="DIONYS" xml:id="III05-5">
             <speaker>DIONYS.</speaker>
             <l n="796" xml:id="l796">Je ne cause à vos coeurs, ni soupirs, ni douleurs, </l>
             <l n="797" xml:id="l797">Le feu que j'y fais naître a bien peu de chaleur. </l>
@@ -1661,7 +1733,7 @@
             <l n="804" xml:id="l804">Et devrais-je espérer un meilleur traitement, </l>
             <l n="805" xml:id="l805">Sachant son infortune, et votre changement ? </l>
           </sp>
-          <sp xml:id="III05-6" who="ERANTE">
+          <sp who="ERANTE" xml:id="III05-6">
             <speaker>ÉRANTE.</speaker>
             <l n="806" xml:id="l806">Il s'est entretenu d'un espoir inutile, </l>
             <l n="807" xml:id="l807">Je n'eus jamais pour lui qu'une amitié civile, </l>
@@ -1672,7 +1744,7 @@
             <l n="812" xml:id="l812">Mais d'avoir rien promis à sa fidélité, </l>
             <l n="813" xml:id="l813">J'ai plus d'ambition, et moins de charité. </l>
           </sp>
-          <sp xml:id="III05-7" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III05-7">
             <speaker>LISIDAN.</speaker>
             <l n="814" xml:id="l814">Cette orgueilleuse enfin force ma patience, </l>
             <l n="815" xml:id="l815">Et je ne puis sans honte observer le silence, </l>
@@ -1681,27 +1753,27 @@
             <l n="818" xml:id="l818">Que de subtilités, que sa bouche a d'adresse, </l>
             <l n="819" xml:id="l819">Parlant elle m'offense, et riant me caresse. </l>
           </sp>
-          <sp xml:id="III05-8" who="ERANTE">
+          <sp who="ERANTE" xml:id="III05-8">
             <speaker>ÉRANTE.</speaker>
-            <l n="820" xml:id="l820" part="I">Est-ce assez consulter ? </l>
+            <l n="820" part="I" xml:id="l820">Est-ce assez consulter ? </l>
           </sp>
-          <sp xml:id="III05-9" who="DIONYS">
+          <sp who="DIONYS" xml:id="III05-9">
             <speaker>DIONYS.</speaker>
             <l part="F">Je suis tout résolu. </l>
           </sp>
-          <sp xml:id="III05-10" who="ERANTE">
+          <sp who="ERANTE" xml:id="III05-10">
             <speaker>ÉRANTE.</speaker>
             <l n="821" xml:id="l821">D'accepter sur mes jours un pouvoir absolu ? </l>
-            <l n="822" xml:id="l822" part="I">D'oublier Amélie ? </l>
+            <l n="822" part="I" xml:id="l822">D'oublier Amélie ? </l>
           </sp>
-          <sp xml:id="III05-11" who="DIONYS">
+          <sp who="DIONYS" xml:id="III05-11">
             <speaker>DIONYS.</speaker>
             <l part="F">Oui, quand les destinées, </l>
             <l n="823" xml:id="l823">Ne voudront plus ourdir le fil de mes années. </l>
             <l n="824" xml:id="l824">Mais possédant encore le bien de la clarté, </l>
             <l n="825" xml:id="l825">Je promettrais en vain d'oublier sa beauté. </l>
           </sp>
-          <sp xml:id="III05-12" who="ERANTE">
+          <sp who="ERANTE" xml:id="III05-12">
             <speaker>ÉRANTE.</speaker>
             <l n="826" xml:id="l826">Va, tyran des esprits, barbare, âme de souche </l>
             <l n="827" xml:id="l827">Que mes soupirs soient vains, et que rien ne te touche : </l>
@@ -1718,50 +1790,55 @@
             <l n="837" xml:id="l837">Et saches en moi seule avoir mille ennemis. </l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
-          <head>SCÈNE VI. Amélie, Érante, Lisidan, Dionys.<listPerson type="configuration" xml:id="conf21"><person corresp="#AMELIE"/><person corresp="#ERANTE"/><person corresp="#LISIDAN"/><person corresp="#DIONYS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III06-1" who="AMELIE">
+        <div2 n="6" type="scene" xml:id="III06">
+          <head>SCÈNE VI. Amélie, Érante, Lisidan, Dionys.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#AMELIE"/>
+            <person corresp="#ERANTE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="AMELIE" xml:id="III06-1">
             <speaker>AMÉLIE retenant sa soeur.</speaker>
             <l n="838" xml:id="l838">Quel trouble si soudain, rend ce visage blême. </l>
           </sp>
-          <sp xml:id="III06-2" who="ERANTE">
+          <sp who="ERANTE" xml:id="III06-2">
             <speaker>ÉRANTE.</speaker>
             <l n="839" xml:id="l839">Ne me retenez point, ayez soin de vous-même. </l>
             <stage>Elle rentre. </stage>
           </sp>
-          <sp xml:id="III06-3" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III06-3">
             <speaker>LISIDAN.</speaker>
-            <l n="840" xml:id="l840" part="I">Cette humeur lui provient. </l>
+            <l n="840" part="I" xml:id="l840">Cette humeur lui provient. </l>
           </sp>
-          <sp xml:id="III06-4" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-4">
             <speaker>AMÉLIE.</speaker>
             <l part="M">D'où ? </l>
           </sp>
-          <sp xml:id="III06-5" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III06-5">
             <speaker>LISIDAN.</speaker>
             <l part="F">D'un juste mépris. </l>
           </sp>
-          <sp xml:id="III06-6" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-6">
             <speaker>AMÉLIE.</speaker>
             <l n="841" xml:id="l841">Quoi ? De plus doux appas ont touché vos esprits ? </l>
             <l n="842" xml:id="l842">De nouvelles ardeurs ont votre âme embrasée ? </l>
             <l n="843" xml:id="l843">Et vous n'estimez pas une conquête aisée. </l>
           </sp>
-          <sp xml:id="III06-7" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III06-7">
             <speaker>LISIDAN.</speaker>
             <l n="844" xml:id="l844">Qu'une autre soit jamais l'objet de mon souci : </l>
             <l n="845" xml:id="l845">Me pouvez-vous connaître, et me parler ainsi ? </l>
-            <l n="846" xml:id="l846" part="I">Perdez ce sentiment. </l>
+            <l n="846" part="I" xml:id="l846">Perdez ce sentiment. </l>
           </sp>
-          <sp xml:id="III06-8" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-8">
             <speaker>AMÉLIE.</speaker>
             <l part="F">De qui donc se plaint-elle ? </l>
           </sp>
-          <sp xml:id="III06-9" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III06-9">
             <speaker>LISIDAN.</speaker>
             <l n="847" xml:id="l847">De ce parfait ami, qui plaît à cette belle. </l>
           </sp>
-          <sp xml:id="III06-10" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-10">
             <speaker>AMÉLIE.</speaker>
             <l n="848" xml:id="l848">Je sais tout, c'est assez ; hé quoi tant d'amitié </l>
             <l n="849" xml:id="l849">Ne peut, cher Dionys, attirer ta pitié ? </l>
@@ -1771,30 +1848,30 @@
             <l n="853" xml:id="l853">Et jadis mes dédains ne t'ont point rebuté ; </l>
             <l n="854" xml:id="l854">Ne dois-tu rien cruel à la mélancolie. </l>
           </sp>
-          <sp xml:id="III06-11" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-11">
             <speaker>DIONYS.</speaker>
             <l n="855" xml:id="l855">Non puisque je dois tout aux beautés d'Amélie ; </l>
           </sp>
-          <sp xml:id="III06-12" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-12">
             <speaker>AMÉLIE.</speaker>
             <l n="856" xml:id="l856">Si tu dois aux attraits, tu lui dois plus qu'à moi, </l>
-            <l n="857" xml:id="l857" part="I">Crois-tu qu'elle en ait moins ? </l>
+            <l n="857" part="I" xml:id="l857">Crois-tu qu'elle en ait moins ? </l>
           </sp>
-          <sp xml:id="III06-13" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-13">
             <speaker>DIONYS.</speaker>
             <l part="F">Oui, si je m'y connais. </l>
           </sp>
-          <sp xml:id="III06-14" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III06-14">
             <speaker>LISIDAN.</speaker>
-            <l n="858" xml:id="l858" part="I">Jugez-nous Lisidan. </l>
+            <l n="858" part="I" xml:id="l858">Jugez-nous Lisidan. </l>
           </sp>
-          <sp xml:id="III06-15" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-15">
             <speaker>DIONYS.</speaker>
             <l part="F">Que l'amant soit l'arbitre, </l>
             <l n="859" xml:id="l859">Désirer accorder, et l'un et l'autre titre. </l>
-            <l n="860" xml:id="l860" part="I">C'est vouloir l'impossible. </l>
+            <l n="860" part="I" xml:id="l860">C'est vouloir l'impossible. </l>
           </sp>
-          <sp xml:id="III06-16" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III06-16">
             <speaker>LISIDAN.</speaker>
             <l part="F">En l'état où je suis, </l>
             <l n="861" xml:id="l861">Faites-moi seulement juge de mes ennuis, </l>
@@ -1808,7 +1885,7 @@
             <l n="869" xml:id="l869">Si leurs coups sont égaux à ceux de ses rigueurs, </l>
             <l n="870" xml:id="l870">Quelle borne, destins à mes maux est prescrite. </l>
           </sp>
-          <sp xml:id="III06-17" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-17">
             <speaker>DIONYS.</speaker>
             <l n="871" xml:id="l871">Espérez-la du temps, et de votre mérite, </l>
             <note type="C">v. 871, une virgule est ajoutée après "même" pour éviter la faute de genre avec "adorable beauté".</note>
@@ -1817,7 +1894,7 @@
             <l n="874" xml:id="l874">Et quand, vous dégageant des contraintes d'un père, </l>
             <l n="875" xml:id="l875">Voulez-vous accomplir le bonheur que j'espère. </l>
           </sp>
-          <sp xml:id="III06-18" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-18">
             <speaker>AMÉLIE.</speaker>
             <l n="876" xml:id="l876">Hélas ! Que j'ai de peine, à t'ouvrir mon secret ? </l>
             <l n="877" xml:id="l877">Que ce coeur est atteint d'un sensible regret ? </l>
@@ -1826,13 +1903,13 @@
             <l n="879" xml:id="l879">Si nous n'imaginons un moyen favorable, </l>
             <l n="880" xml:id="l880">Qui conserve à tes voeux mon amour et ma foi, </l>
             <l n="881" xml:id="l881">Qui m'ôte à ton rival, et qui me rende à toi. </l>
-            <l n="882" xml:id="l882" part="I">Demain. </l>
+            <l n="882" part="I" xml:id="l882">Demain. </l>
           </sp>
-          <sp xml:id="III06-19" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-19">
             <speaker>DIONYS.</speaker>
             <l part="F">Quoi ce rival trahit mon espérance ? </l>
           </sp>
-          <sp xml:id="III06-20" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-20">
             <speaker>AMÉLIE.</speaker>
             <l n="883" xml:id="l883">Mon père m'abandonne à sa persévérance, </l>
             <l n="884" xml:id="l884">Il considère peu si ce dessein me plaît, </l>
@@ -1840,7 +1917,7 @@
             <l n="886" xml:id="l886">Et depuis un moment, sa rigueur indiscrète, </l>
             <l n="887" xml:id="l887">A tiré de ma voix l'oui que je regrette. </l>
           </sp>
-          <sp xml:id="III06-21" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-21">
             <speaker>DIONYS.</speaker>
             <l n="888" xml:id="l888">Donc, votre volonté (beau soleil de mes jours), </l>
             <l n="889" xml:id="l889">Relève d'un pouvoir plus fort que nos amours ? </l>
@@ -1853,29 +1930,29 @@
             <l n="896" xml:id="l896">Car, après tant d'espoir, ne vous posséder pas, </l>
             <l n="897" xml:id="l897">C'est souffrir sans mourir, pire, que le trépas. </l>
           </sp>
-          <sp xml:id="III06-22" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-22">
             <speaker>AMÉLIE.</speaker>
             <l n="898" xml:id="l898">Tu condamnes bientôt l'amitié la plus rare, </l>
             <l n="899" xml:id="l899">Qui doive être prisée en ce siècle barbare ; </l>
             <l n="900" xml:id="l900">Combattons, enflammés de désirs si parfaits, </l>
             <l n="901" xml:id="l901">À qui les prouvera par de plus beaux effets : </l>
-            <l n="902" xml:id="l902" part="I">Que ferais-tu pour moi ? </l>
+            <l n="902" part="I" xml:id="l902">Que ferais-tu pour moi ? </l>
           </sp>
-          <sp xml:id="III06-23" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-23">
             <speaker>DIONYS.</speaker>
             <l part="F">Je prendrais plus de peine, </l>
             <l n="903" xml:id="l903">Que deux Rois ennemis n'en ont pris pour Hélène, </l>
             <l n="904" xml:id="l904">J'effacerais le nom des plus parfaits amants, </l>
             <l n="905" xml:id="l905">Et je m'immolerais à vos commandements. </l>
           </sp>
-          <sp xml:id="III06-24" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-24">
             <speaker>AMÉLIE.</speaker>
             <l n="906" xml:id="l906">Moi, je ferais pour toi, plus que le penser même, </l>
             <l n="907" xml:id="l907">Ne peut imaginer, et d'étrange, et d'extrême. </l>
             <l n="908" xml:id="l908">J'effacerais l'éclat de ton affection, </l>
             <l n="909" xml:id="l909">Et sois vain si tu veux de ma confession. </l>
           </sp>
-          <sp xml:id="III06-25" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-25">
             <speaker>DIONYS.</speaker>
             <l n="910" xml:id="l910">Forcez donc avec moi, ma lumière et ma vie, </l>
             <l n="911" xml:id="l911">Tout ce qui fait languir notre amoureuse envie, </l>
@@ -1888,7 +1965,7 @@
             <l n="918" xml:id="l918">En l'état d'obéir, où vous êtes réduite, </l>
             <l n="919" xml:id="l919">La gloire du combat, dépend de notre fuite. </l>
           </sp>
-          <sp xml:id="III06-26" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-26">
             <speaker>AMÉLIE.</speaker>
             <l n="920" xml:id="l920">Oui mon affection consent à ce départ, </l>
             <l n="921" xml:id="l921">J'attendais, cher amant ce conseil de ta part ; </l>
@@ -1904,9 +1981,9 @@
             <l n="931" xml:id="l931">Est offerte à propos à notre doux caprice, </l>
             <l n="932" xml:id="l932">Nous y vivrons sans crainte, attendant l'heureux jour, </l>
             <l n="933" xml:id="l933">Qu'un avis de sa part nous parle du retour. </l>
-            <l n="934" xml:id="l934" part="I">N'es-tu pas résolu. </l>
+            <l n="934" part="I" xml:id="l934">N'es-tu pas résolu. </l>
           </sp>
-          <sp xml:id="III06-27" who="DIONYS">
+          <sp who="DIONYS" xml:id="III06-27">
             <speaker>DIONYS.</speaker>
             <l part="F">Plus, que n'est à sa grâce, </l>
             <l n="935" xml:id="l935">L'esprit d'un criminel, dont on bande la face, </l>
@@ -1914,7 +1991,7 @@
             <l n="937" xml:id="l937">Et qui voyait déjà la porte du trépas. </l>
             <stage>Érante descend de la fenêtre. </stage>
           </sp>
-          <sp xml:id="III06-28" who="AMELIE">
+          <sp who="AMELIE" xml:id="III06-28">
             <speaker>AMÉLIE.</speaker>
             <l n="938" xml:id="l938">L'effet de ce dessein me plaira davantage, </l>
             <l n="939" xml:id="l939">Allons nous disposer à cet heureux voyage, </l>
@@ -1922,19 +1999,24 @@
             <l n="941" xml:id="l941">Et surtout, que ma soeur n'en puisse rien juger. </l>
           </sp>
         </div2>
-        <div2 xml:id="III07" type="scene" n="7">
-          <head>SCÈNE VII. Érante, Amélie, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf22"><person corresp="#ERANTE"/><person corresp="#AMELIE"/><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III07-1" who="ERANTE">
+        <div2 n="7" type="scene" xml:id="III07">
+          <head>SCÈNE VII. Érante, Amélie, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#ERANTE"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERANTE" xml:id="III07-1">
             <speaker>ÉRANTE les surprenant.</speaker>
             <l n="942" xml:id="l942">Non, je n'en saurai rien, et ce dessein le touche </l>
             <l n="943" xml:id="l943">Trop favorablement, pour en ouvrir la bouche ; </l>
-            <l n="944" xml:id="l944" part="I">Vous ne m'attendiez pas. </l>
+            <l n="944" part="I" xml:id="l944">Vous ne m'attendiez pas. </l>
           </sp>
-          <sp xml:id="III07-2" who="AMELIE">
+          <sp who="AMELIE" xml:id="III07-2">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Ô malheur sans pareil. </l>
           </sp>
-          <sp xml:id="III07-3" who="ERANTE">
+          <sp who="ERANTE" xml:id="III07-3">
             <speaker>ÉRANTE.</speaker>
             <l n="945" xml:id="l945">Et n'aviez pas dessein d'implorer mon conseil ; </l>
             <l n="946" xml:id="l946">Enfin je puis venger une amour méprisée, </l>
@@ -1944,7 +2026,7 @@
             <l n="950" xml:id="l950">Méditez là-dessus, et consultez mon père, </l>
             <l n="951" xml:id="l951">Je lui vais de ce pas découvrir votre affaire. </l>
           </sp>
-          <sp xml:id="III07-4" who="AMELIE">
+          <sp who="AMELIE" xml:id="III07-4">
             <speaker>AMÉLIE la retenant.</speaker>
             <l n="952" xml:id="l952">Cruelle, ton bonheur dépend-il de ma mort, </l>
             <l n="953" xml:id="l953">Parle un mot seulement, et s'achève mon sort ; </l>
@@ -1957,11 +2039,11 @@
             <l n="960" xml:id="l960">M'as-tu vue autrefois révéler tes secrets, </l>
             <l n="961" xml:id="l961">Et n'ai-je pas eu part, en tous tes intérêts. </l>
           </sp>
-          <sp xml:id="III07-5" who="ERANTE">
+          <sp who="ERANTE" xml:id="III07-5">
             <speaker>ÉRANTE.</speaker>
-            <l n="962" xml:id="l962" part="I">Laissez-moi, l'on m'appelle, </l>
+            <l n="962" part="I" xml:id="l962">Laissez-moi, l'on m'appelle, </l>
           </sp>
-          <sp xml:id="III07-6" who="AMELIE">
+          <sp who="AMELIE" xml:id="III07-6">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Ingrate inexorable, </l>
             <l n="963" xml:id="l963">Que profiteras-tu, si je suis misérable ; </l>
@@ -1976,18 +2058,18 @@
             <l n="972" xml:id="l972">Ressentant seulement l'ombre de mes douleurs, </l>
             <l n="973" xml:id="l973">Que la compassion, t'arracherait de pleurs. </l>
           </sp>
-          <sp xml:id="III07-7" who="ERANTE">
+          <sp who="ERANTE" xml:id="III07-7">
             <speaker>ÉRANTE.</speaker>
             <l n="974" xml:id="l974">Je m'emploierais pour vous, avec un soin extrême, </l>
             <l n="975" xml:id="l975">Et je voudrais cacher vos secrets à moi-même, </l>
             <l n="976" xml:id="l976">Mais ce présomptueux a ce coeur irrité, </l>
             <l n="977" xml:id="l977">Et je dois, le pouvant punir sa vanité ; </l>
           </sp>
-          <sp xml:id="III07-8" who="DIONYS">
+          <sp who="DIONYS" xml:id="III07-8">
             <speaker>DIONYS.</speaker>
-            <l n="978" xml:id="l978" part="I">Divine, et sage Érante. </l>
+            <l n="978" part="I" xml:id="l978">Divine, et sage Érante. </l>
           </sp>
-          <sp xml:id="III07-9" who="ERANTE">
+          <sp who="ERANTE" xml:id="III07-9">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Avecques la menace, </l>
             <l n="979" xml:id="l979">On abat ton orgueil, on a part à ta grâce, </l>
@@ -2014,7 +2096,7 @@
             <l n="1000" xml:id="l1000">Je voulais que mes jours touchassent tes esprits, </l>
             <l n="1001" xml:id="l1001">Et tu ne devais pas les payer de mépris. </l>
           </sp>
-          <sp xml:id="III07-10" who="DIONYS">
+          <sp who="DIONYS" xml:id="III07-10">
             <speaker>DIONYS.</speaker>
             <l n="1002" xml:id="l1002">Je n'ai rien mérité ; mais souffrez que je die, </l>
             <l n="1003" xml:id="l1003">Que vous deviez ailleurs chercher la perfidie, </l>
@@ -2033,12 +2115,12 @@
             <l n="1016" xml:id="l1016">Charmante, et chère soeur, obligez deux amants, </l>
             <l n="1017" xml:id="l1017">Dont vous tenez en main l'espoir, et les tourments. </l>
           </sp>
-          <sp xml:id="III07-11" who="AMELIE">
+          <sp who="AMELIE" xml:id="III07-11">
             <speaker>AMÉLIE.</speaker>
             <l n="1018" xml:id="l1018">Ainsi jamais amour ne te soit importune, </l>
             <l n="1019" xml:id="l1019">Et le ciel à tes voeux, égale ta fortune. </l>
           </sp>
-          <sp xml:id="III07-12" who="ERANTE">
+          <sp who="ERANTE" xml:id="III07-12">
             <speaker>ÉRANTE.</speaker>
             <l n="1020" xml:id="l1020">Dieux ! Que je suis sensible aux traits de la pitié ! </l>
             <l n="1021" xml:id="l1021">Et que je vous chéris d'une aveugle amitié ! </l>
@@ -2049,63 +2131,70 @@
             <l n="1026" xml:id="l1026">Lisidan m'a vu feindre avec fort peu de crainte, </l>
             <l n="1027" xml:id="l1027">Il sait quelle raison m'ordonnait cette feinte. </l>
           </sp>
-          <sp xml:id="III07-13" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III07-13">
             <speaker>LISIDAN.</speaker>
             <l n="1028" xml:id="l1028">Je n'en suis pas trop sûr, et vous feignez si bien </l>
             <l n="1029" xml:id="l1029">Qu'il m'était mal aisé de n'appréhender rien, </l>
             <l n="1030" xml:id="l1030">Je crois qu'à mon sujet vous souffrez peu de chose, </l>
             <l n="1031" xml:id="l1031">Vous ne mourez jamais du mal, que je vous cause. </l>
           </sp>
-          <sp xml:id="III07-14" who="ERANTE">
+          <sp who="ERANTE" xml:id="III07-14">
             <speaker>ÉRANTE.</speaker>
             <l n="1032" xml:id="l1032">Tu te pourrais passer d'irriter mon amour, </l>
             <l n="1033" xml:id="l1033">Tu sais que ton objet m'est plus cher que le jour ; </l>
             <l n="1034" xml:id="l1034">Mais pour t'en faire voir un dernier témoignage, </l>
             <l n="1035" xml:id="l1035">Je veux suivre tes pas, j'entreprends le voyage ; </l>
-            <l n="1036" xml:id="l1036" part="I">M'y souffrirez-vous pas ? </l>
+            <l n="1036" part="I" xml:id="l1036">M'y souffrirez-vous pas ? </l>
           </sp>
-          <sp xml:id="III07-15" who="AMELIE">
+          <sp who="AMELIE" xml:id="III07-15">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Avec plus de plaisir, </l>
             <l n="1037" xml:id="l1037">Que l'amour n'en prépare à ton chaste désir. </l>
           </sp>
-          <sp xml:id="III07-16" who="DIONYS">
+          <sp who="DIONYS" xml:id="III07-16">
             <speaker>DIONYS.</speaker>
-            <l n="1038" xml:id="l1038" part="I">Dieux l'heureux changement ! </l>
+            <l n="1038" part="I" xml:id="l1038">Dieux l'heureux changement ! </l>
           </sp>
         </div2>
-        <div2 xml:id="III08" type="scene" n="8">
-          <head>SCÈNE VIII. Émile, Le Valet, Dionys, Lisidan, Amélie, Érante. <listPerson type="configuration" xml:id="conf23"><person corresp="#EMILE"/><person corresp="#VALET"/><person corresp="#DIONYS"/><person corresp="#ERANTE"/><person corresp="#AMELIE"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="III08-1" who="EMILE">
+        <div2 n="8" type="scene" xml:id="III08">
+          <head>SCÈNE VIII. Émile, Le Valet, Dionys, Lisidan, Amélie, Érante. <listPerson type="configuration" xml:id="conf23">
+            <person corresp="#EMILE"/>
+            <person corresp="#VALET"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#ERANTE"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="EMILE" xml:id="III08-1">
             <speaker>ÉMILE.</speaker>
             <l part="F">Il suffit de mon ombre, </l>
             <l n="1039" xml:id="l1039">Pour lui faire des morts, souffrir le triple nombre, </l>
             <l n="1040" xml:id="l1040">Quand il signait son nom, il signait son trépas ; </l>
-            <l n="1041" xml:id="l1041" part="I">Il est mort. </l>
+            <l n="1041" part="I" xml:id="l1041">Il est mort. </l>
           </sp>
-          <sp xml:id="III08-2" who="VALET">
+          <sp who="VALET" xml:id="III08-2">
             <speaker>LE VALET.</speaker>
             <l part="M">Le voilà. </l>
           </sp>
-          <sp xml:id="III08-3" who="EMILE">
+          <sp who="EMILE" xml:id="III08-3">
             <speaker>ÉMILE.</speaker>
             <l part="F">Ne m'abandonne pas. </l>
           </sp>
-          <sp xml:id="III08-4" who="VALET">
+          <sp who="VALET" xml:id="III08-4">
             <speaker>LE VALET.</speaker>
-            <l n="1042" xml:id="l1042" part="I">Ce n'est pas ma coutume. </l>
+            <l n="1042" part="I" xml:id="l1042">Ce n'est pas ma coutume. </l>
           </sp>
-          <sp xml:id="III08-5" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-5">
             <speaker>DIONYS.</speaker>
             <l part="F">Oyons ce que veut dire, </l>
             <l n="1043" xml:id="l1043">Ce pauvre extravagant, si vous aimez à rire. </l>
           </sp>
-          <sp xml:id="III08-6" who="EMILE">
+          <sp who="EMILE" xml:id="III08-6">
             <speaker>ÉMILE.</speaker>
             <l n="1044" xml:id="l1044">Tu sais bien m'obliger, et servir mon amour, </l>
             <l n="1045" xml:id="l1045">Perfide, prends congé de Madame, et du jour. </l>
           </sp>
-          <sp xml:id="III08-7" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-7">
             <speaker>DIONYS.</speaker>
             <l n="1046" xml:id="l1046">N'accordez-vous point mon pardon à mes larmes ; </l>
             <l n="1047" xml:id="l1047">Je sais que j'ai failli, puisant démon des armes, </l>
@@ -2114,28 +2203,28 @@
             <l n="1050" xml:id="l1050">J'avais ce seul moyen d'expliquer ma pensée, </l>
             <l n="1051" xml:id="l1051">À cet aimable objet, dont mon âme est blessée. </l>
           </sp>
-          <sp xml:id="III08-8" who="VALET">
+          <sp who="VALET" xml:id="III08-8">
             <speaker>LE VALET.</speaker>
-            <l n="1052" xml:id="l1052" part="I">Non, ne pardonnez point. </l>
+            <l n="1052" part="I" xml:id="l1052">Non, ne pardonnez point. </l>
           </sp>
-          <sp xml:id="III08-9" who="EMILE">
+          <sp who="EMILE" xml:id="III08-9">
             <speaker>ÉMILE.</speaker>
             <l part="F">Dieux ! Que de lâcheté, </l>
             <l n="1053" xml:id="l1053">Tu consultes perfide, en cette extrémité ? </l>
             <l n="1054" xml:id="l1054">Tu n'es pas un objet digne de mon courage. </l>
             <l n="1055" xml:id="l1055">Et mon valet suffit pour punir cet outrage, </l>
-            <l n="1056" xml:id="l1056" part="I">Fais périr ce voleur. </l>
+            <l n="1056" part="I" xml:id="l1056">Fais périr ce voleur. </l>
           </sp>
-          <sp xml:id="III08-10" who="VALET">
+          <sp who="VALET" xml:id="III08-10">
             <speaker>LE VALET.</speaker>
             <l part="F">Qu'il meurt de vos coups, </l>
             <l n="1057" xml:id="l1057">Je ne me trouve pas maintenant en courroux. </l>
           </sp>
-          <sp xml:id="III08-11" who="ERANTE">
+          <sp who="ERANTE" xml:id="III08-11">
             <speaker>ÉRANTE.</speaker>
-            <l n="1058" xml:id="l1058" part="I">L'agréable combat ! </l>
+            <l n="1058" part="I" xml:id="l1058">L'agréable combat ! </l>
           </sp>
-          <sp xml:id="III08-12" who="EMILE">
+          <sp who="EMILE" xml:id="III08-12">
             <speaker>ÉMILE.</speaker>
             <l part="F">Quoi tu souffres ce traître, </l>
             <l n="1059" xml:id="l1059">Et ne prends point de part aux affronts de ton maître ; </l>
@@ -2144,94 +2233,94 @@
             <l n="1062" xml:id="l1062">Il faut priver du jour cet objet de ma haine, </l>
             <l n="1063" xml:id="l1063">Et moi-même, je dois, me donner cette peine. </l>
           </sp>
-          <sp xml:id="III08-13" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-13">
             <speaker>DIONYS.</speaker>
             <l n="1064" xml:id="l1064">Comment point de pardon ? Et la vaillance même, </l>
             <l n="1065" xml:id="l1065">Ne considère pas un repentir extrême ; </l>
             <l n="1066" xml:id="l1066">Ajoutez cette gloire à vos rares vertus. </l>
           </sp>
-          <sp xml:id="III08-14" who="EMILE">
+          <sp who="EMILE" xml:id="III08-14">
             <speaker>ÉMILE.</speaker>
             <l n="1067" xml:id="l1067">Je n'ai point de pitié pour des coeurs abattus, </l>
             <l n="1068" xml:id="l1068">Je pardonne ton crime, et je punis la crainte </l>
             <l n="1069" xml:id="l1069">Dont si honteusement je vois ton âme atteinte, </l>
-            <l n="1070" xml:id="l1070" part="I">Tu ne te défends pas ? </l>
+            <l n="1070" part="I" xml:id="l1070">Tu ne te défends pas ? </l>
           </sp>
-          <sp xml:id="III08-15" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-15">
             <speaker>DIONYS mettant l'épée à la main. </speaker>
             <l part="F">En cette extrémité </l>
             <l n="1071" xml:id="l1071">Il faut donc obéir à la nécessité ? </l>
           </sp>
-          <sp xml:id="III08-16" who="EMILE">
+          <sp who="EMILE" xml:id="III08-16">
             <speaker>ÉMILE.</speaker>
             <l n="1072" xml:id="l1072">Admire maintenant mon humeur débonnaire, </l>
             <l n="1073" xml:id="l1073">Cet effet de courroux alentit ma colère ; </l>
             <l n="1074" xml:id="l1074">J'ai pitié des vaillants, et ta résolution </l>
             <l n="1075" xml:id="l1075">Dispose ma justice, à ta rémission. </l>
           </sp>
-          <sp xml:id="III08-17" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-17">
             <speaker>DIONYS.</speaker>
             <l n="1076" xml:id="l1076">Non, non, brave guerrier, cet effet de clémence, </l>
             <l n="1077" xml:id="l1077">À ta rare valeur fait trop de violence, </l>
             <l n="1078" xml:id="l1078">Tu dois à mon offense un juste châtiment ; </l>
             <l n="1079" xml:id="l1079">Pour moi, jamais ce fer n'est tiré vainement. </l>
           </sp>
-          <sp xml:id="III08-18" who="EMILE">
+          <sp who="EMILE" xml:id="III08-18">
             <speaker>ÉMILE.</speaker>
             <l n="1080" xml:id="l1080">Révérons, indiscret, cette rare merveille, </l>
           </sp>
-          <sp xml:id="III08-19" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-19">
             <speaker>DIONYS.</speaker>
             <l n="1081" xml:id="l1081">Plutôt prouve à ses yeux ta valeur sans pareille, </l>
             <l n="1082" xml:id="l1082">Donnons, c'est trop longtemps différer mon trépas. </l>
           </sp>
-          <sp xml:id="III08-20" who="EMILE">
+          <sp who="EMILE" xml:id="III08-20">
             <speaker>ÉMILE.</speaker>
-            <l n="1083" xml:id="l1083" part="I">Non je suis satisfait. </l>
+            <l n="1083" part="I" xml:id="l1083">Non je suis satisfait. </l>
           </sp>
-          <sp xml:id="III08-21" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-21">
             <speaker>DIONYS.</speaker>
             <l part="F">Et je ne le suis pas, </l>
-            <l n="1084" xml:id="l1084" part="I">C'est trop délibérer. </l>
+            <l n="1084" part="I" xml:id="l1084">C'est trop délibérer. </l>
           </sp>
-          <sp xml:id="III08-22" who="EMILE">
+          <sp who="EMILE" xml:id="III08-22">
             <speaker>ÉMILE.</speaker>
             <l part="F">Ma haine est apaisée, </l>
             <l n="1085" xml:id="l1085">Je dédaigne à présent une vengeance aisée, </l>
             <l n="1086" xml:id="l1086">J'ai perdu le courroux dont j'étais enflammé ; </l>
             <l n="1087" xml:id="l1087">Et je ne me bats point, n'étant point animé. </l>
           </sp>
-          <sp xml:id="III08-23" who="AMELIE">
+          <sp who="AMELIE" xml:id="III08-23">
             <speaker>AMÉLIE.</speaker>
-            <l n="1088" xml:id="l1088" part="I">L'aimable passe-temps. </l>
+            <l n="1088" part="I" xml:id="l1088">L'aimable passe-temps. </l>
           </sp>
-          <sp xml:id="III08-24" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-24">
             <speaker>DIONYS.</speaker>
             <l part="F">Évite, lâche, évite, </l>
             <l n="1089" xml:id="l1089">La force de ce bras, par une prompte fuite, </l>
-            <l n="1090" xml:id="l1090" part="I">Autrement. </l>
+            <l n="1090" part="I" xml:id="l1090">Autrement. </l>
           </sp>
-          <sp xml:id="III08-25" who="VALET">
+          <sp who="VALET" xml:id="III08-25">
             <speaker>LE VALET.</speaker>
             <l part="M">Répondez. </l>
           </sp>
-          <sp xml:id="III08-26" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-26">
             <speaker>DIONYS.</speaker>
             <l part="F">Est-ce assez consulter ? </l>
           </sp>
-          <sp xml:id="III08-27" who="EMILE">
+          <sp who="EMILE" xml:id="III08-27">
             <speaker>ÉMILE.</speaker>
             <l n="1091" xml:id="l1091">En l'humeur que je suis, rien ne peut m'irriter ; </l>
             <l n="1092" xml:id="l1092">Ô Dieux ! Que promptement, ma fureur est calmée, </l>
             <l n="1093" xml:id="l1093">Et qu'une bonté grande a ma main désarmée. </l>
           </sp>
-          <sp xml:id="III08-28" who="VALET">
+          <sp who="VALET" xml:id="III08-28">
             <speaker>LE VALET.</speaker>
             <l n="1094" xml:id="l1094">Qu'on va donner de gloire à nos gestes guerriers, </l>
             <l n="1095" xml:id="l1095">Nous allons succomber, sous le faix des lauriers. </l>
             <stage>Ils s'en vont. </stage>
           </sp>
-          <sp xml:id="III08-29" who="DIONYS">
+          <sp who="DIONYS" xml:id="III08-29">
             <speaker>DIONYS en riant.</speaker>
             <l n="1096" xml:id="l1096">Peut-on priser assez ma valeur sans seconde, </l>
             <l n="1097" xml:id="l1097">J'ai fait trembler la gloire, et la terreur du monde. </l>
@@ -2244,18 +2333,18 @@
             <l n="1104" xml:id="l1104">Il va nommer partout sa force incomparable, </l>
             <l n="1105" xml:id="l1105">Et se glorifier d'un exploit mémorable. </l>
           </sp>
-          <sp xml:id="III08-30" who="AMELIE">
+          <sp who="AMELIE" xml:id="III08-30">
             <speaker>AMÉLIE.</speaker>
             <l n="1106" xml:id="l1106">Ce passe-temps est doux : mais il est tard, adieu, </l>
             <l n="1107" xml:id="l1107">Et demain, du matin soyons tous en ce lieu </l>
             <l n="1108" xml:id="l1108">Nous exécuterons l'entre prise amoureuse, </l>
             <l n="1109" xml:id="l1109">Qui finit vos tourments, et qui me rends heureuse. </l>
           </sp>
-          <sp xml:id="III08-31" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="III08-31">
             <speaker>LISIDAN.</speaker>
-            <l n="1110" xml:id="l1110" part="I">Un mot, divine Érante. </l>
+            <l n="1110" part="I" xml:id="l1110">Un mot, divine Érante. </l>
           </sp>
-          <sp xml:id="III08-32" who="ERANTE">
+          <sp who="ERANTE" xml:id="III08-32">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Adieu, je suis à toi </l>
             <l n="1111" xml:id="l1111">Et la mort seulement, peut violer ma foi ; </l>
@@ -2267,11 +2356,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf25"><person corresp="#CLORIS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="IV01-1" who="CLORIS">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#CLORIS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="CLORIS" xml:id="IV01-1">
             <speaker>CLORIS, en habit d'homme, assise dans un bois, touche une guitare et chante.</speaker>
             <l n="1116" xml:id="l1116">Vous dois-je révéler mon amoureux souci ? </l>
             <l n="1117" xml:id="l1117">M'est-il permis de soupirer ici ? </l>
@@ -2302,18 +2393,24 @@
             <l n="1142" xml:id="l1142">Que j'ai senti de morts, pour la peur d'une mort. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Dionys, Amélie, Lisidan, Érante, Cloris.<listPerson type="configuration" xml:id="conf26"><person corresp="#AMELIE"/><person corresp="#DIONYS"/><person corresp="#CLORIS"/><person corresp="#ERANTE"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="IV02-1" who="AMELIE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Dionys, Amélie, Lisidan, Érante, Cloris.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#AMELIE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#CLORIS"/>
+            <person corresp="#ERANTE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="AMELIE" xml:id="IV02-1">
             <speaker>AMÉLIE.</speaker>
-            <l n="1143" xml:id="l1143" part="I">J'ois quelqu'un qui se plaint. </l>
+            <l n="1143" part="I" xml:id="l1143">J'ois quelqu'un qui se plaint. </l>
           </sp>
-          <sp xml:id="IV02-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="IV02-2">
             <speaker>DIONYS.</speaker>
             <l part="F">C'est sous ce beau feuillage </l>
-            <l n="1144" xml:id="l1144" part="I">Approchons-nous sans bruit. </l>
+            <l n="1144" part="I" xml:id="l1144">Approchons-nous sans bruit. </l>
           </sp>
-          <sp xml:id="IV02-3" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV02-3">
             <speaker>CLORIS.</speaker>
             <l part="F">Le calme suit l'orage. </l>
             <l n="1145" xml:id="l1145">Il n'est si malheureux sous l'empire d'amour, </l>
@@ -2331,18 +2428,18 @@
             <note type="C">v. 1156, le texte porte "une exemple" non fautif à l'époque, nous corrigeons en "un exemple".</note>
             <l n="1156" xml:id="l1156">Et dans la fable même, on n'en voit qu'un exemple. </l>
           </sp>
-          <sp xml:id="IV02-4" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV02-4">
             <speaker>AMÉLIE.</speaker>
-            <l n="1157" xml:id="l1157" part="I">Il le faut aborder. </l>
+            <l n="1157" part="I" xml:id="l1157">Il le faut aborder. </l>
           </sp>
-          <sp xml:id="IV02-5" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV02-5">
             <speaker>CLORIS.</speaker>
             <l part="F">Passez heureux amants, </l>
             <l n="1158" xml:id="l1158">Souffrez qu'un malheureux plaigne ici ces tourments, </l>
             <l n="1159" xml:id="l1159">Ou faites les cesser, si la pitié vous touche, </l>
             <l n="1160" xml:id="l1160">Et répandez mon sang, sur cette humide couche. </l>
           </sp>
-          <sp xml:id="IV02-6" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV02-6">
             <speaker>AMÉLIE.</speaker>
             <l n="1161" xml:id="l1161">Nous vous refuserons un semblable secours, </l>
             <l n="1162" xml:id="l1162">Et tâcherons plutôt de conserver vos jours ; </l>
@@ -2351,22 +2448,25 @@
             <l n="1165" xml:id="l1165">Vous devez excuser ma curiosité, </l>
             <l n="1166" xml:id="l1166">La pitié me dispense à cette liberté. </l>
           </sp>
-          <sp xml:id="IV02-7" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV02-7">
             <speaker>CLORIS, se levant et pleurant.</speaker>
             <l n="1167" xml:id="l1167">Ô Ciel ! Est-ce trop peu, de ma dure infortune, </l>
             <l n="1168" xml:id="l1168">Sans qu'on l'accroisse encore, et sans qu'on m'importune : </l>
             <l n="1169" xml:id="l1169">Adieu, je m'aime seul, et mon affliction, </l>
             <l n="1170" xml:id="l1170">Ne reçoit ni secours, ni consolation.</l>
           </sp>
-          <sp xml:id="IV02-8" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV02-8">
             <speaker>AMÉLIE.</speaker>
             <l n="1171" xml:id="l1171">Ô Dieux ! Qu'il est saisi d'une douleur amère, </l>
             <l n="1172" xml:id="l1172">Courons, suivons ses pas, et sachons sa misère. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Le Père d'Amélie, La Nourrice.<listPerson type="configuration" xml:id="conf27"><person corresp="#LEPERE"/><person corresp="#NOURRICE"/><person corresp="#AMELIE"/></listPerson></head>
-          <sp xml:id="IV03-1" who="LEPERE">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Le Père d'Amélie, La Nourrice.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#LEPERE"/>
+            <person corresp="#NOURRICE"/>
+            <person corresp="#AMELIE"/></listPerson></head>
+          <sp who="LEPERE" xml:id="IV03-1">
             <speaker>LE PÈRE.</speaker>
             <l n="1173" xml:id="l1173">Ô sort injurieux ! Des ennuis si cuisants, </l>
             <l n="1174" xml:id="l1174">M'étaient donc réservés pour la fin de mes ans. </l>
@@ -2387,7 +2487,7 @@
             <l n="1189" xml:id="l1189">Tu voyais les ardeurs qu'elle a pour Dionys, </l>
             <l n="1190" xml:id="l1190">Et tu pouvais prévoir mes tourments infinis. </l>
           </sp>
-          <sp xml:id="IV03-2" who="NOURRICE">
+          <sp who="NOURRICE" xml:id="IV03-2">
             <speaker>LA NOURRICE.</speaker>
             <l n="1191" xml:id="l1191">J'expliquais ses regards, je lisais dans son âme, </l>
             <l n="1192" xml:id="l1192">Je croyais découvrir sa plus secrète flamme, </l>
@@ -2406,7 +2506,7 @@
             <l n="1205" xml:id="l1205">Qui bonne, comme elle est, n'ayant pu l'arrêter, </l>
             <l n="1206" xml:id="l1206">Suit ses pas, sans dessein, que de la contenter. </l>
           </sp>
-          <sp xml:id="IV03-3" who="LEPERE">
+          <sp who="LEPERE" xml:id="IV03-3">
             <speaker>LE PÈRE.</speaker>
             <l n="1207" xml:id="l1207">Qu'un simple citoyen, sans honneur, sans fortune, </l>
             <l n="1208" xml:id="l1208">D'un sort si différent, d'une race commune, </l>
@@ -2418,7 +2518,7 @@
             <l n="1214" xml:id="l1214">Et comme on le dépeint, leur amour sera nu. </l>
             <stage>Il s'en va. </stage>
           </sp>
-          <sp xml:id="IV03-4" who="NOURRICE">
+          <sp who="NOURRICE" xml:id="IV03-4">
             <speaker>LA NOURRICE.</speaker>
             <l n="1215" xml:id="l1215">C'est là les menacer de beaucoup de misère, </l>
             <l n="1216" xml:id="l1216">Mais il est bien aisé d'apaiser sa colère, </l>
@@ -2426,9 +2526,12 @@
             <l n="1218" xml:id="l1218">Et s'il ne perd ce nom, il ne les perdra pas. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Cloris, Amélie.<listPerson type="configuration" xml:id="conf28"><person corresp="#AMELIE"/><person corresp="#CLORIS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="IV04-1" who="AMELIE">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Cloris, Amélie.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#AMELIE"/>
+            <person corresp="#CLORIS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="AMELIE" xml:id="IV04-1">
             <speaker>AMÉLIE.</speaker>
             <l n="1219" xml:id="l1219">Ce bon Paysan, Monsieur, mettra toutes ses peines, </l>
             <l n="1220" xml:id="l1220">À terminer chez soi vos erreurs incertaines, </l>
@@ -2437,40 +2540,40 @@
             <l n="1223" xml:id="l1223">Nous y veillerons tous au soin de vous distraire, </l>
             <l n="1224" xml:id="l1224">Et nos plus doux plaisirs, seront de vous en faire ; </l>
             <l n="1225" xml:id="l1225">Que je sache le cours de votre affection, </l>
-            <l n="1226" xml:id="l1226" part="I">Fiez-en le récit à ma discrétion. </l>
+            <l n="1226" part="I" xml:id="l1226">Fiez-en le récit à ma discrétion. </l>
           </sp>
-          <sp xml:id="IV04-2" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV04-2">
             <speaker>CLORIS.</speaker>
             <l part="F">Que vous renouvelez de sensibles atteintes ! </l>
             <l n="1227" xml:id="l1227">Et que la courtoisie ordonne de contraintes ! </l>
             <l n="1228" xml:id="l1228">Quelque fois, ces beaux yeux ont-ils versé des pleurs ? </l>
           </sp>
-          <sp xml:id="IV04-3" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV04-3">
             <speaker>AMÉLIE.</speaker>
-            <l n="1229" xml:id="l1229" part="I">Hélas ! Combien de fois. </l>
+            <l n="1229" part="I" xml:id="l1229">Hélas ! Combien de fois. </l>
           </sp>
-          <sp xml:id="IV04-4" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV04-4">
             <speaker>CLORIS.</speaker>
             <l part="F">Mouillez-en donc ces fleurs ; </l>
             <l n="1230" xml:id="l1230">L'âme la plus barbare, et la plus inhumaine </l>
             <l n="1231" xml:id="l1231">Est sensible, Madame, au récit de ma peine ; </l>
             <l n="1232" xml:id="l1232">Mon sexe est déguisé, par ce faux vêtement. </l>
           </sp>
-          <sp xml:id="IV04-5" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV04-5">
             <speaker>AMÉLIE.</speaker>
-            <l n="1233" xml:id="l1233" part="I">Comme vous êtes. </l>
+            <l n="1233" part="I" xml:id="l1233">Comme vous êtes. </l>
           </sp>
-          <sp xml:id="IV04-6" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV04-6">
             <speaker>CLORIS.</speaker>
             <l part="M">Fille. </l>
           </sp>
-          <sp xml:id="IV04-7" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV04-7">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Ô doux contentement ! </l>
             <l n="1234" xml:id="l1234">J'en suis plus obligée à chérir vos mérites, </l>
             <l n="1235" xml:id="l1235">Et ce titre rendra nos libertés licites. </l>
           </sp>
-          <sp xml:id="IV04-8" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV04-8">
             <speaker>CLORIS.</speaker>
             <l n="1236" xml:id="l1236">J'ai pris le jour à Douvre, et là chez mes parents, </l>
             <l n="1237" xml:id="l1237">Je passais en repos des jours indifférents, </l>
@@ -2538,7 +2641,7 @@
             <l n="1298" xml:id="l1298">Depuis, sous cet habit, sans suite, et vagabonde, </l>
             <l n="1299" xml:id="l1299">Je pleure, et pleurerai ce miracle du monde. </l>
           </sp>
-          <sp xml:id="IV04-9" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV04-9">
             <speaker>AMÉLIE.</speaker>
             <l n="1300" xml:id="l1300">Après tous ses regrets, la résolution </l>
             <l n="1301" xml:id="l1301">Doit servir de remède à votre affliction. </l>
@@ -2550,51 +2653,55 @@
             <l n="1306" xml:id="l1306">Nos soupirs superflus, et nos pertes certaines.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V. Éraste avec deux laquais, Amélie, Cloris.<listPerson type="configuration" xml:id="conf29"><person corresp="#ERASTE"/><person corresp="#AMELIE"/><person corresp="#CLORIS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="IV05-1" who="ERASTE">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V. Éraste avec deux laquais, Amélie, Cloris.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#ERASTE"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#CLORIS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERASTE" xml:id="IV05-1">
             <speaker>ÉRASTE voyant Amélie.</speaker>
-            <l n="1307" xml:id="l1307" part="I">Enfin la proie est nôtre. </l>
+            <l n="1307" part="I" xml:id="l1307">Enfin la proie est nôtre. </l>
           </sp>
-          <sp xml:id="IV05-2" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-2">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Ô malheur de mes jours ! </l>
             <l n="1308" xml:id="l1308">Dionys, on m'enlève, aux voleurs ! Ô secours ! </l>
           </sp>
-          <sp xml:id="IV05-3" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV05-3">
             <speaker>CLORIS tirant son épée. </speaker>
             <l n="1309" xml:id="l1309">Ce bras divertira leur criminelle envie, </l>
             <l n="1310" xml:id="l1310">Votre perte dépend de celle de ma vie, </l>
             <l n="1311" xml:id="l1311">Traîtres, adressez-moi vos injustes efforts, </l>
             <l n="1312" xml:id="l1312">Ou ce fer se fait voie au travers de vos corps. </l>
           </sp>
-          <sp xml:id="IV05-4" who="ERASTE">
+          <sp who="ERASTE" xml:id="IV05-4">
             <speaker>ÉRASTE, mettant Amélie entre les mains de ses laquais. </speaker>
             <l n="1313" xml:id="l1313">Il te faut contenter, ô Dieux ! En ce visage, </l>
             <l n="1314" xml:id="l1314">Je vois de ma Cloris une vivante image. </l>
           </sp>
-          <sp xml:id="IV05-5" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV05-5">
             <speaker>CLORIS.</speaker>
-            <l n="1315" xml:id="l1315" part="I">Hélas ! Qu'ai-je aperçu ? </l>
+            <l n="1315" part="I" xml:id="l1315">Hélas ! Qu'ai-je aperçu ? </l>
           </sp>
-          <sp xml:id="IV05-6" who="ERASTE">
+          <sp who="ERASTE" xml:id="IV05-6">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Je meurs d'étonnement. </l>
             <stage>Il s'évanouit. </stage>
           </sp>
-          <sp xml:id="IV05-7" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV05-7">
             <speaker>CLORIS.</speaker>
             <l n="1316" xml:id="l1316">Je perds la voix, et l'âme, en ce ravissement. </l>
             <stage>Elle s'évanouit aussi. </stage>
           </sp>
-          <sp xml:id="IV05-8" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-8">
             <speaker>AMÉLIE au milieu d'eux.</speaker>
             <l n="1317" xml:id="l1317">Dieux ! Qu'est-ce que je vois ! Cet amant infidèle, </l>
             <l n="1318" xml:id="l1318">Sans doute est le sujet des pleurs de cette belle ; </l>
             <l n="1319" xml:id="l1319">Rendez l'éclat madame à ces charmants appas, </l>
             <l n="1320" xml:id="l1320">Qu'Éraste vous entende, et qu'il ne meure pas. </l>
           </sp>
-          <sp xml:id="IV05-9" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV05-9">
             <speaker>CLORIS.</speaker>
             <l n="1321" xml:id="l1321">Hélas ! Éraste est mort, et cette image vaine, </l>
             <l n="1322" xml:id="l1322">S'offre à moi seulement pour accroître ma peine, </l>
@@ -2606,9 +2713,9 @@
             <l n="1328" xml:id="l1328">Et quand il a parlé j'ai reconnu sa voix. </l>
             <l n="1329" xml:id="l1329">Ô divine douceur, dont mon âme est ravie ! </l>
             <l n="1330" xml:id="l1330">Ai-je songé sa mort, ou louerai-je sa vie ; </l>
-            <l n="1331" xml:id="l1331" part="I">Réponds un mot Éraste. </l>
+            <l n="1331" part="I" xml:id="l1331">Réponds un mot Éraste. </l>
           </sp>
-          <sp xml:id="IV05-10" who="ERASTE">
+          <sp who="ERASTE" xml:id="IV05-10">
             <speaker>ÉRASTE.</speaker>
             <l part="F">Ha ! Madame est-ce vous ? </l>
             <l n="1332" xml:id="l1332">Que je bénis le ciel, et que mon sort est doux, </l>
@@ -2616,7 +2723,7 @@
             <l n="1334" xml:id="l1334">Quoi, ce corps est pourvu, de sa grâce première ? </l>
             <l n="1335" xml:id="l1335">Quel sort en ma faveur, l'a fait ressusciter. </l>
           </sp>
-          <sp xml:id="IV05-11" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-11">
             <speaker>AMÉLIE.</speaker>
             <l n="1336" xml:id="l1336">Éraste vit encor, il n'en faut plus douter ; </l>
             <l n="1337" xml:id="l1337">Cet objet de mes voeux charme encore le monde, </l>
@@ -2625,7 +2732,7 @@
             <l n="1340" xml:id="l1340">Parlons par des baisers qui durent tout le jour. </l>
             <stage>Ils se tiennent embrassés. </stage>
           </sp>
-          <sp xml:id="IV05-12" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-12">
             <speaker>AMÉLIE.</speaker>
             <l n="1341" xml:id="l1341">Dieux ! Son affection l'obligeait à me suivre, </l>
             <l n="1342" xml:id="l1342">Et ce soin qu'il a pris est ce qui m'en délivre, </l>
@@ -2637,7 +2744,7 @@
             <l n="1347" xml:id="l1347">N'avez-vous feint Madame un si cruel tourment, </l>
             <l n="1348" xml:id="l1348">Que pour me disposer à perdre mon amant. </l>
           </sp>
-          <sp xml:id="IV05-13" who="ERASTE">
+          <sp who="ERASTE" xml:id="IV05-13">
             <speaker>ÉRASTE.</speaker>
             <l n="1349" xml:id="l1349">Vous voyez d'un bon oeil, notre chaste licence, </l>
             <l n="1350" xml:id="l1350">Et vous chérissez fort une si douce offense, </l>
@@ -2654,7 +2761,7 @@
             <l n="1360" xml:id="l1360">Et quel heureux Démon te retira de l'onde, </l>
             <l n="1361" xml:id="l1361">Où le vent renversa notre nef vagabonde</l>
           </sp>
-          <sp xml:id="IV05-14" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV05-14">
             <speaker>CLORIS.</speaker>
             <l n="1362" xml:id="l1362">La rencontre des flots la repoussa sur l'eau, </l>
             <l n="1363" xml:id="l1363">Que je croyais depuis te servir de tombeau, </l>
@@ -2667,7 +2774,7 @@
             <l n="1370" xml:id="l1370">Mais ne m'oblige point à de plus longs discours, </l>
             <l n="1371" xml:id="l1371">Quel insigne bonheur, a conservé tes jours. </l>
           </sp>
-          <sp xml:id="IV05-15" who="ERASTE">
+          <sp who="ERASTE" xml:id="IV05-15">
             <speaker>ÉRASTE.</speaker>
             <l n="1372" xml:id="l1372">Un navire espagnol, sur cette humide plaine, </l>
             <l n="1373" xml:id="l1373">Tenait, comme le nôtre une route incertaine, </l>
@@ -2704,30 +2811,30 @@
             <l n="1404" xml:id="l1404">Et puisque vous vivez, les baisers de l'aurore, </l>
             <l n="1405" xml:id="l1405">Ne me seraient pas doux, si je vous plais encore. </l>
           </sp>
-          <sp xml:id="IV05-16" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-16">
             <speaker>AMÉLIE en riant. </speaker>
             <note type="C">v. 1406, le vers commence par "Dont", nous corrigeons avec "Donc".</note>
             <l n="1406" xml:id="l1406">Donc ce coeur inconstant a rompu ses liens. </l>
           </sp>
-          <sp xml:id="IV05-17" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV05-17">
             <speaker>CLORIS.</speaker>
             <l n="1407" xml:id="l1407">Madame vos dédains, autorisent les siens.</l>
           </sp>
-          <sp xml:id="IV05-18" who="ERASTE">
+          <sp who="ERASTE" xml:id="IV05-18">
             <speaker>ÉRASTE.</speaker>
             <l n="1408" xml:id="l1408">Cessez de me gausser, et pardonnez, Madame, </l>
             <l n="1409" xml:id="l1409">Les effets criminels d'une importante flamme ; </l>
             <l n="1410" xml:id="l1410">Je connais que le Ciel vous doit à votre amant, </l>
             <l n="1411" xml:id="l1411">Et j'ai trop traversé votre contentement. </l>
           </sp>
-          <sp xml:id="IV05-19" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-19">
             <speaker>AMÉLIE.</speaker>
             <l n="1412" xml:id="l1412">Mais pardonnez plutôt à l'humeur indiscrète </l>
             <l n="1413" xml:id="l1413">Dont le traitais, Monsieur, une amour si parfaite, </l>
             <l n="1414" xml:id="l1414">Vous devez excuser un coeur préoccupé </l>
             <l n="1415" xml:id="l1415">Et sur qui Dionys a beaucoup usurpé. </l>
           </sp>
-          <sp xml:id="IV05-20" who="ERASTE">
+          <sp who="ERASTE" xml:id="IV05-20">
             <speaker>ÉRASTE.</speaker>
             <l n="1416" xml:id="l1416">Nous vivrons tous contents, nos peines sont finies </l>
             <l n="1417" xml:id="l1417">Nos soupirs étouffés et nos craintes bannies </l>
@@ -2739,7 +2846,7 @@
             <l n="1423" xml:id="l1423">Et je m'ose vanter de leur consentement ; </l>
             <l n="1424" xml:id="l1424">Je viens ce soir sans faute, adieu vivez contente. </l>
           </sp>
-          <sp xml:id="IV05-21" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-21">
             <speaker>AMÉLIE.</speaker>
             <l n="1425" xml:id="l1425">Mais je cause à madame une fâcheuse attente, </l>
             <l n="1426" xml:id="l1426">Mon bonheur, toutefois l'y fera consentir, </l>
@@ -2750,21 +2857,23 @@
             <l n="1431" xml:id="l1431">Vous entendrez souvent invoquez le trépas. </l>
             <l n="1432" xml:id="l1432">Nous ferons un jaloux, et son cruel martyre, </l>
             <l n="1433" xml:id="l1433">Nous fournira ce soir un beau sujet de rire. </l>
-            <l n="1434" xml:id="l1434" part="I">Ce dessein vous plaît-il. </l>
+            <l n="1434" part="I" xml:id="l1434">Ce dessein vous plaît-il. </l>
           </sp>
-          <sp xml:id="IV05-22" who="CLORIS">
+          <sp who="CLORIS" xml:id="IV05-22">
             <speaker>CLORIS.</speaker>
             <l part="F">Ô dieux ! Qu'il est charmant ! </l>
-            <l n="1435" xml:id="l1435" part="I">Et que nous en rirons. </l>
+            <l n="1435" part="I" xml:id="l1435">Et que nous en rirons. </l>
           </sp>
-          <sp xml:id="IV05-23" who="AMELIE">
+          <sp who="AMELIE" xml:id="IV05-23">
             <speaker>AMÉLIE s'en allant.</speaker>
             <l part="F">Feignez bien seulement. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
-          <head>SCÈNE VI. <listPerson type="configuration" xml:id="conf30"><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="IV06-1" who="LISIDAN">
+        <div2 n="6" type="scene" xml:id="IV06">
+          <head>SCÈNE VI. <listPerson type="configuration" xml:id="conf30">
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="LISIDAN" xml:id="IV06-1">
             <speaker>LISIDAN seul. </speaker>
             <l n="1436" xml:id="l1436">Je puis rendre aisément leur entreprise vaine, </l>
             <l n="1437" xml:id="l1437">Il est en mon pouvoir de divertir sa peine, </l>
@@ -2773,11 +2882,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. <listPerson type="configuration" xml:id="conf32"><person corresp="#DIONYS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="V01-1" who="DIONYS">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE PREMIÈRE. <listPerson type="configuration" xml:id="conf32">
+            <person corresp="#DIONYS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="DIONYS" xml:id="V01-1">
             <speaker>DIONYS seul. </speaker>
             <l n="1440" xml:id="l1440">Pardonne ; aveugle enfant, à l'aveuglé caprice, </l>
             <l n="1441" xml:id="l1441">Qui m'a fait si souvent t'accuser d'injustice ; </l>
@@ -2791,25 +2902,29 @@
             <l n="1449" xml:id="l1449">Qu'on y murmure à tort, alors qu'on y soupire, </l>
             <l n="1450" xml:id="l1450">Le plaisir est plus doux, après un long tourment, </l>
             <l n="1451" xml:id="l1451">Et qui n'a point pleuré, ne rit que froidement. </l>
-            <l n="1452" xml:id="l1452" part="I">Mais je vois ma déesse. </l>
+            <l n="1452" part="I" xml:id="l1452">Mais je vois ma déesse. </l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Amélie, Cloris, Dionys.<listPerson type="configuration" xml:id="conf33"><person corresp="#AMELIE"/><person corresp="#DIONYS"/><person corresp="#CLORIS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="V02-1" who="AMELIE">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Amélie, Cloris, Dionys.<listPerson type="configuration" xml:id="conf33">
+            <person corresp="#AMELIE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#CLORIS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="AMELIE" xml:id="V02-1">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Il faut que cette feinte, </l>
             <l n="1453" xml:id="l1453">Vous fasse mesurer son désir, par la crainte, </l>
             <l n="1454" xml:id="l1454">Elle vous prouvera l'ardeur de nos amours. </l>
-            <l n="1455" xml:id="l1455" part="I">Commençons il nous voit. </l>
+            <l n="1455" part="I" xml:id="l1455">Commençons il nous voit. </l>
           </sp>
-          <sp xml:id="V02-2" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-2">
             <speaker>DIONYS.</speaker>
             <l part="F">J'entendrai leurs discours. </l>
             <l n="1456" xml:id="l1456">Ils ne m'avisent pas en un endroit si sombre, </l>
             <l n="1457" xml:id="l1457">Et je puis tout ouïr, en faveur de cette ombre. </l>
           </sp>
-          <sp xml:id="V02-3" who="CLORIS">
+          <sp who="CLORIS" xml:id="V02-3">
             <speaker>CLORIS dit à Amélie, étant assise auprès d'elle.</speaker>
             <l n="1458" xml:id="l1458">Puisque l'occasion m'offre ici les cheveux, </l>
             <l n="1459" xml:id="l1459">Je ne me tairai plus cher espoir de mes voeux : </l>
@@ -2838,14 +2953,14 @@
             <l n="1482" xml:id="l1482">Je plaignais mes défauts, et ma condition, </l>
             <l n="1483" xml:id="l1483">Qui défend, que j'aspire à votre affection. </l>
           </sp>
-          <sp xml:id="V02-4" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-4">
             <speaker>DIONYS.</speaker>
             <l n="1484" xml:id="l1484">Ô Dieux ! Qu'ai-je entendu, tu me dois ôter l'âme, </l>
             <l n="1485" xml:id="l1485">Traître, avant le bonheur de me ravir Madame </l>
             <l n="1486" xml:id="l1486">Mais ce pauvre abusé ne heurte qu'un rocher, </l>
             <l n="1487" xml:id="l1487">Que mon sujet unique à l'honneur de toucher, </l>
           </sp>
-          <sp xml:id="V02-5" who="AMELIE">
+          <sp who="AMELIE" xml:id="V02-5">
             <speaker>AMÉLIE.</speaker>
             <l n="1488" xml:id="l1488">Je demeure confuse, en cet honneur extrême, </l>
             <l n="1489" xml:id="l1489">Car un sujet puissant défend que je vous aime, </l>
@@ -2858,7 +2973,7 @@
             <l n="1496" xml:id="l1496">Dieux, quel malheur m'engage à l'amitié d'un autre ? </l>
             <l n="1497" xml:id="l1497">Que ne puis-je, Monsieur, être constante et vôtre ? </l>
           </sp>
-          <sp xml:id="V02-6" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-6">
             <speaker>DIONYS.</speaker>
             <l n="1498" xml:id="l1498">Que je trouble point votre ardente amitié, </l>
             <l n="1499" xml:id="l1499">Je ne demande pas, un seul trait de pitié, </l>
@@ -2871,7 +2986,7 @@
             <l n="1506" xml:id="l1506">J'ai pris trop de licence, et des Rois seulement </l>
             <l n="1507" xml:id="l1507">Sont dignes de mourir d'un si noble tourment. </l>
           </sp>
-          <sp xml:id="V02-7" who="AMELIE">
+          <sp who="AMELIE" xml:id="V02-7">
             <speaker>AMÉLIE.</speaker>
             <l n="1508" xml:id="l1508">Je me rends, je suis prise, et tant de modestie </l>
             <l n="1509" xml:id="l1509">Vous donne de mon coeur la meilleure partie, </l>
@@ -2881,57 +2996,57 @@
             <l n="1513" xml:id="l1513">Et que ces doux baisers vous signent ma promesse. </l>
             <stage>Elles se baisent.</stage>
           </sp>
-          <sp xml:id="V02-8" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-8">
             <speaker>DIONYS.</speaker>
             <l n="1514" xml:id="l1514">Ô Dieux ! Que résoudrai-je en cette extrémité ? </l>
             <l n="1515" xml:id="l1515">N'avez-vous point de traits pour l'infidélité ? </l>
             <l n="1516" xml:id="l1516">Il possède mon bien, il l'embrasse, il la baise, </l>
             <l n="1517" xml:id="l1517">Et je ne punis pas ce tyran de mon aise ? </l>
-            <l n="1518" xml:id="l1518" part="I">C'est trop délibérer. </l>
+            <l n="1518" part="I" xml:id="l1518">C'est trop délibérer. </l>
           </sp>
-          <sp xml:id="V02-9" who="AMELIE">
+          <sp who="AMELIE" xml:id="V02-9">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Dieux ! Quelqu'un vient ici ? </l>
           </sp>
-          <sp xml:id="V02-10" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-10">
             <speaker>DIONYS.</speaker>
-            <l n="1519" xml:id="l1519" part="I">Ne vous contraignez point. </l>
+            <l n="1519" part="I" xml:id="l1519">Ne vous contraignez point. </l>
           </sp>
-          <sp xml:id="V02-11" who="AMELIE">
+          <sp who="AMELIE" xml:id="V02-11">
             <speaker>AMÉLIE.</speaker>
             <l part="F">Est-ce toi, mon souci ? </l>
           </sp>
-          <sp xml:id="V02-12" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-12">
             <speaker>DIONYS.</speaker>
             <l n="1520" xml:id="l1520">Que les baisers sont doux, sous ce divin feuillage ! </l>
             <l n="1521" xml:id="l1521">Que vous y recevez un agréable hommage ! </l>
             <l n="1522" xml:id="l1522">Que la fraîcheur de l'ombre accroît vos voluptés, </l>
             <l n="1523" xml:id="l1523">Et dans un bon plaisir tient vos sens enchantés ! </l>
           </sp>
-          <sp xml:id="V02-13" who="AMELIE">
+          <sp who="AMELIE" xml:id="V02-13">
             <speaker>AMÉLIE.</speaker>
-            <l n="1524" xml:id="l1524" part="I">Qu'est-ce que tu me dis ? </l>
+            <l n="1524" part="I" xml:id="l1524">Qu'est-ce que tu me dis ? </l>
           </sp>
-          <sp xml:id="V02-14" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-14">
             <speaker>DIONYS.</speaker>
             <l part="F">Continuez, Madame, </l>
             <l n="1525" xml:id="l1525">Ces douces privautés à l'ardeur qui l'enflamme, </l>
             <l n="1526" xml:id="l1526">Je ne publierai point vos amoureux soupirs, </l>
             <l n="1527" xml:id="l1527">Et rien n'en parlera, que la voix des Zéphyrs. </l>
           </sp>
-          <sp xml:id="V02-15" who="AMELIE">
+          <sp who="AMELIE" xml:id="V02-15">
             <speaker>AMÉLIE.</speaker>
             <l n="1528" xml:id="l1528">En ce lieu frais, et doux, mon importune envie </l>
             <l n="1529" xml:id="l1529">Obligeait cet amant au récit de sa vie. </l>
           </sp>
-          <sp xml:id="V02-16" who="CLORIS">
+          <sp who="CLORIS" xml:id="V02-16">
             <speaker>CLORIS.</speaker>
             <l n="1530" xml:id="l1530">J'entretenais, Madame, et ses chastes beautés, </l>
             <l n="1531" xml:id="l1531">Ne se disposaient point à d'autres privautés. </l>
             <l n="1532" xml:id="l1532">Nous n'avons, ni prévu, ni craint cette venue </l>
             <l n="1533" xml:id="l1533">Et ce bras répondra de notre retenue. </l>
           </sp>
-          <sp xml:id="V02-17" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-17">
             <speaker>DIONYS.</speaker>
             <l n="1534" xml:id="l1534">Je ne crois que mes yeux : mais qu'elle ouvre les siens, </l>
             <l n="1535" xml:id="l1535">Sur celui qui lui plaît, et m'ôte mes liens, </l>
@@ -2942,7 +3057,7 @@
             <l n="1540" xml:id="l1540">Sa beauté m'honorait de trop de récompense, </l>
             <l n="1541" xml:id="l1541">Et l'on peut révoquer une injuste sentence. </l>
           </sp>
-          <sp xml:id="V02-18" who="AMELIE">
+          <sp who="AMELIE" xml:id="V02-18">
             <speaker>AMÉLIE.</speaker>
             <l n="1542" xml:id="l1542">Et bien, je l'avouerai ; cet infidèle coeur </l>
             <l n="1543" xml:id="l1543">S'est affranchi des lois de son premier vainqueur ; </l>
@@ -2956,7 +3071,7 @@
             <note type="C">v. 1551, un tiret a été ajouté entre "laissons" et "le", pour éviter l'équivoque avec "seul".</note>
             <l n="1551" xml:id="l1551">Allons, laissons-le seul se plaindre librement. </l>
           </sp>
-          <sp xml:id="V02-19" who="DIONYS">
+          <sp who="DIONYS" xml:id="V02-19">
             <speaker>DIONYS seul.</speaker>
             <l n="1552" xml:id="l1552">Je ne me plaindrai point, ouvrons ce coeur infâme, </l>
             <l n="1553" xml:id="l1553">Qui n'a su demeurer dans le sein de Madame, </l>
@@ -2973,28 +3088,32 @@
             <l n="1563" xml:id="l1563">Contre ce lâche auteur de mon affliction. </l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Lisidan, Dionys, Érante.<listPerson type="configuration" xml:id="conf34"><person corresp="#ERANTE"/><person corresp="#LISIDAN"/><person corresp="#DIONYS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="V03-1" who="ERANTE">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Lisidan, Dionys, Érante.<listPerson type="configuration" xml:id="conf34">
+            <person corresp="#ERANTE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERANTE" xml:id="V03-1">
             <speaker>ÉRANTE.</speaker>
             <l n="1564" xml:id="l1564">Ô Dieux ! Que me dis-tu ? Rompons leur entreprise, </l>
-            <l n="1565" xml:id="l1565" part="I">Allons l'en avertir. </l>
+            <l n="1565" part="I" xml:id="l1565">Allons l'en avertir. </l>
           </sp>
-          <sp xml:id="V03-2" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V03-2">
             <speaker>LISIDAN.</speaker>
             <l part="F">Ne dis mot, je l'avise ; </l>
             <l n="1566" xml:id="l1566">Depuis quand Dionys se plait-il dans les bois ? </l>
           </sp>
-          <sp xml:id="V03-3" who="DIONYS">
+          <sp who="DIONYS" xml:id="V03-3">
             <speaker>DIONYS, le tire à part, et lui dit à l'oreille. </speaker>
             <l n="1567" xml:id="l1567">Ha sers moi, cher ami, pour la dernière fois ; </l>
-            <l n="1568" xml:id="l1568" part="I">On a trahi mes voeux. </l>
+            <l n="1568" part="I" xml:id="l1568">On a trahi mes voeux. </l>
           </sp>
-          <sp xml:id="V03-4" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V03-4">
             <speaker>LISIDAN.</speaker>
             <l part="M">Ô Dieux ! </l>
           </sp>
-          <sp xml:id="V03-5" who="DIONYS">
+          <sp who="DIONYS" xml:id="V03-5">
             <speaker>DIONYS.</speaker>
             <l part="F">Et ma maîtresse </l>
             <l n="1569" xml:id="l1569">Détourne sa pitié de l'ardeur qui me presse ; </l>
@@ -3003,11 +3122,11 @@
             <l n="1572" xml:id="l1572">Mais j'ai moins de respect, que de laisser la vie, </l>
             <l n="1573" xml:id="l1573">Au rival, qui l'adore, et qui me l'a ravie. </l>
           </sp>
-          <sp xml:id="V03-6" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V03-6">
             <speaker>LISIDAN.</speaker>
-            <l n="1574" xml:id="l1574" part="I">Et quel est ce rival ? </l>
+            <l n="1574" part="I" xml:id="l1574">Et quel est ce rival ? </l>
           </sp>
-          <sp xml:id="V03-7" who="DIONYS">
+          <sp who="DIONYS" xml:id="V03-7">
             <speaker>DIONYS.</speaker>
             <l part="F">Celui, qui suit ses pas, </l>
             <l n="1575" xml:id="l1575">Qui l'éloigne de nous, et ne la quitte pas. </l>
@@ -3019,13 +3138,13 @@
             <l n="1581" xml:id="l1581">M'oblige à lui tenir ces deux mots à l'oreille, </l>
             <l n="1582" xml:id="l1582">Et doit faire excuser mon incivilité. </l>
           </sp>
-          <sp xml:id="V03-8" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V03-8">
             <speaker>LISIDAN en riant.</speaker>
             <l n="1583" xml:id="l1583">Imitez ses mépris, et la légèreté, </l>
             <l n="1584" xml:id="l1584">Elle vous a flatté d'une trop longue attente, </l>
             <l n="1585" xml:id="l1585">Et rien n'excuse plus cette belle inconstante. </l>
           </sp>
-          <sp xml:id="V03-9" who="DIONYS">
+          <sp who="DIONYS" xml:id="V03-9">
             <speaker>DIONYS.</speaker>
             <l n="1586" xml:id="l1586">N'offense point cruel ce miracle d'amour, </l>
             <l n="1587" xml:id="l1587">Afflige-moi plutôt de la perte du jour, </l>
@@ -3040,7 +3159,7 @@
             <l n="1596" xml:id="l1596">Je ne l'appelle point ingrate, ni parjure, </l>
             <l n="1597" xml:id="l1597">Je l'acquis sans mérite, et la perds sans injure. </l>
           </sp>
-          <sp xml:id="V03-10" who="ERANTE">
+          <sp who="ERANTE" xml:id="V03-10">
             <speaker>ÉRANTE.</speaker>
             <l n="1598" xml:id="l1598">Dieux ! Qui ne priserait ces reflets infinis </l>
             <l n="1599" xml:id="l1599">Que loin de vous, Monsieur, tous soupçons soient bannis, </l>
@@ -3053,7 +3172,7 @@
             <l n="1606" xml:id="l1606">Elles ont proposé ce divertissement, </l>
             <l n="1607" xml:id="l1607">Pour éprouver l'ardeur d'un si fidèle amant. </l>
           </sp>
-          <sp xml:id="V03-11" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V03-11">
             <speaker>LISIDAN.</speaker>
             <l n="1608" xml:id="l1608">Ranime cher ami, ta première espérance, </l>
             <l n="1609" xml:id="l1609">Et te repose en moi d'une ferme assurance, </l>
@@ -3080,21 +3199,21 @@
             <l n="1630" xml:id="l1630">Ayant su leur dessein je les laisse partir, </l>
             <l n="1631" xml:id="l1631">Et je ne te cherchais que pour t'en avertir. </l>
           </sp>
-          <sp xml:id="V03-12" who="DIONYS">
+          <sp who="DIONYS" xml:id="V03-12">
             <speaker>DIONYS.</speaker>
-            <l n="1632" xml:id="l1632" part="I">Ô Dieux ! Te dois-je croire ? </l>
+            <l n="1632" part="I" xml:id="l1632">Ô Dieux ! Te dois-je croire ? </l>
           </sp>
-          <sp xml:id="V03-13" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V03-13">
             <speaker>LISIDAN.</speaker>
             <l part="F">Ha ! Ce soupçon m'irrite. </l>
           </sp>
-          <sp xml:id="V03-14" who="DIONYS">
+          <sp who="DIONYS" xml:id="V03-14">
             <speaker>DIONYS.</speaker>
             <l n="1633" xml:id="l1633">Ô discours qui me charme, et qui me ressuscite ! </l>
             <l n="1634" xml:id="l1634">Qu'à propos cher ami, tu me viens obliger ; </l>
             <l n="1635" xml:id="l1635">Et que tu m'as tiré d'un extrême danger. </l>
           </sp>
-          <sp xml:id="V03-15" who="ERANTE">
+          <sp who="ERANTE" xml:id="V03-15">
             <speaker>ÉRANTE.</speaker>
             <l n="1636" xml:id="l1636">Monsieur, que d'une feinte, une feinte vous venge </l>
             <note type="C">v. 1637, le texte original porte "Témoignes", nous corrigeons le "s" final en "z".</note>
@@ -3102,48 +3221,54 @@
             <l n="1638" xml:id="l1638">Lors son ressentiment prouvera son amour, </l>
             <l n="1639" xml:id="l1639">Et nous aurons sujet de rire à notre tour. </l>
           </sp>
-          <sp xml:id="V03-16" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V03-16">
             <speaker>LISIDAN.</speaker>
-            <l n="1640" xml:id="l1640" part="I">Ce dessein est plaisant. </l>
+            <l n="1640" part="I" xml:id="l1640">Ce dessein est plaisant. </l>
           </sp>
-          <sp xml:id="V03-17" who="DIONYS">
+          <sp who="DIONYS" xml:id="V03-17">
             <speaker>DIONYS.</speaker>
             <l part="F">Oui, mais la mettre en peine, </l>
             <l n="1641" xml:id="l1641">C'est être criminel, et mériter sa haine. </l>
           </sp>
-          <sp xml:id="V03-18" who="ERANTE">
+          <sp who="ERANTE" xml:id="V03-18">
             <speaker>ÉRANTE.</speaker>
             <l n="1642" xml:id="l1642">Ne me refusez point ce divertissement, </l>
             <l n="1643" xml:id="l1643">Je me charge de tout, feignez bien seulement. </l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Amélie, Cloris, Dionys, Lisidan, Érante.<listPerson type="configuration" xml:id="conf35"><person corresp="#AMELIE"/><person corresp="#CLORIS"/><person corresp="#ERANTE"/><person corresp="#DIONYS"/><person corresp="#LISIDAN"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="V04-1" who="AMELIE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Amélie, Cloris, Dionys, Lisidan, Érante.<listPerson type="configuration" xml:id="conf35">
+            <person corresp="#AMELIE"/>
+            <person corresp="#CLORIS"/>
+            <person corresp="#ERANTE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="AMELIE" xml:id="V04-1">
             <speaker>AMÉLIE.</speaker>
             <l n="1644" xml:id="l1644">Tu veux de mon amour une preuve inutile, </l>
             <l n="1645" xml:id="l1645">Un favorable hymen peut t'en procurer mille, </l>
             <l n="1646" xml:id="l1646">Nous devons avancer cette heureuse union, </l>
             <l n="1647" xml:id="l1647">Si tu joins ton avis à mon opinion. </l>
           </sp>
-          <sp xml:id="V04-2" who="CLORIS">
+          <sp who="CLORIS" xml:id="V04-2">
             <speaker>CLORIS.</speaker>
             <l n="1648" xml:id="l1648">Ce suprême bonheur, est le seul où j'aspire, </l>
             <l n="1649" xml:id="l1649">L'affaire est d'importance, et différée, empire. </l>
           </sp>
-          <sp xml:id="V04-3" who="AMELIE">
+          <sp who="AMELIE" xml:id="V04-3">
             <speaker>AMÉLIE.</speaker>
             <l n="1650" xml:id="l1650">Tous respects à mes yeux se sont évanouis ; </l>
           </sp>
-          <sp xml:id="V04-4" who="ERANTE">
+          <sp who="ERANTE" xml:id="V04-4">
             <speaker>ÉRANTE.</speaker>
-            <l n="1651" xml:id="l1651" part="I">Si bien. </l>
+            <l n="1651" part="I" xml:id="l1651">Si bien. </l>
           </sp>
-          <sp xml:id="V04-5" who="AMELIE">
+          <sp who="AMELIE" xml:id="V04-5">
             <speaker>AMÉLIE.</speaker>
             <l part="M">Dieux parlons bas. </l>
           </sp>
-          <sp xml:id="V04-6" who="ERANTE">
+          <sp who="ERANTE" xml:id="V04-6">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Je vous ai bien ouïs ; </l>
             <l n="1652" xml:id="l1652">Mais ne contraignez point votre ardeur amoureuse, </l>
@@ -3151,7 +3276,7 @@
             <l n="1654" xml:id="l1654">Un plus beau noeud succède, à son premier lien, </l>
             <l n="1655" xml:id="l1655">Et votre changement autorise le sien. </l>
           </sp>
-          <sp xml:id="V04-7" who="DIONYS">
+          <sp who="DIONYS" xml:id="V04-7">
             <speaker>DIONYS.</speaker>
             <l n="1656" xml:id="l1656">Madame, que le Ciel s'oppose à mon envie, </l>
             <l n="1657" xml:id="l1657">Si j'avais proposé de changer de ma vie ; </l>
@@ -3172,25 +3297,25 @@
             <l n="1672" xml:id="l1672">À mes chastes desseins, Lisidan cède Érante, </l>
             <l n="1673" xml:id="l1673">De qui l'affection m'est assez apparente. </l>
           </sp>
-          <sp xml:id="V04-8" who="AMELIE">
+          <sp who="AMELIE" xml:id="V04-8">
             <speaker>AMÉLIE.</speaker>
-            <l n="1674" xml:id="l1674" part="I">Et bien vivez content. </l>
+            <l n="1674" part="I" xml:id="l1674">Et bien vivez content. </l>
           </sp>
-          <sp xml:id="V04-9" who="ERANTE">
+          <sp who="ERANTE" xml:id="V04-9">
             <speaker>ÉRANTE.</speaker>
             <l part="F">Enfin j'ai le secours </l>
             <l n="1675" xml:id="l1675">Que je n'espérais pas à mes chastes amours ; </l>
             <l n="1676" xml:id="l1676">Dieux la rare faveur, et l'extrême assistance, </l>
             <l n="1677" xml:id="l1677">Que ma fidélité doit à votre inconstance. </l>
           </sp>
-          <sp xml:id="V04-10" who="AMELIE">
+          <sp who="AMELIE" xml:id="V04-10">
             <speaker>AMÉLIE.</speaker>
             <l n="1678" xml:id="l1678">Dionys vaut beaucoup, mais un plus beau vainqueur, </l>
             <l n="1679" xml:id="l1679">A la gloire, ma soeur, de lui ravir mon coeur : </l>
             <l n="1680" xml:id="l1680">J'obéis au destin qui change mon martyre, </l>
             <l n="1681" xml:id="l1681">Et sans élection, je suis, ce qui m'attire. </l>
           </sp>
-          <sp xml:id="V04-11" who="DIONYS">
+          <sp who="DIONYS" xml:id="V04-11">
             <speaker>DIONYS.</speaker>
             <l n="1682" xml:id="l1682">Donc il faut à l'envi bénir ce changement, </l>
             <l n="1683" xml:id="l1683">Il ne me reste pas un regret seulement ; </l>
@@ -3201,7 +3326,7 @@
             <l n="1688" xml:id="l1688">Vous ne vous plaindrai point, de mon humeur jalouse, </l>
             <l n="1689" xml:id="l1689">Et vous me plairez soeur, autant, et plus qu'épouse, </l>
           </sp>
-          <sp xml:id="V04-12" who="AMELIE">
+          <sp who="AMELIE" xml:id="V04-12">
             <speaker>AMÉLIE.</speaker>
             <l n="1690" xml:id="l1690">Va traître, indigne objet, d'une amitié si rare, </l>
             <l n="1691" xml:id="l1691">Le Tyran de mes maux, insensible barbare, </l>
@@ -3223,7 +3348,7 @@
             <l n="1707" xml:id="l1707">Mais ne me vois jamais, horreur de ma pensée. </l>
             <stage>Elle s'en veut aller. </stage>
           </sp>
-          <sp xml:id="V04-13" who="DIONYS">
+          <sp who="DIONYS" xml:id="V04-13">
             <speaker>DIONYS à Érante.</speaker>
             <l n="1708" xml:id="l1708">Je n'en espérais pas un traitement plus doux, </l>
             <l n="1709" xml:id="l1709">Conseillère imprudente, à quoi m'obligez-vous, </l>
@@ -3237,29 +3362,29 @@
             <l n="1716" xml:id="l1716">On verra des appas égaux à vos attraits, </l>
             <l n="1717" xml:id="l1717">Et cette égalité ne se verra jamais. </l>
           </sp>
-          <sp xml:id="V04-14" who="AMELIE">
+          <sp who="AMELIE" xml:id="V04-14">
             <speaker>AMÉLIE.</speaker>
-            <l n="1718" xml:id="l1718" part="I">Ô Dieux ! </l>
+            <l n="1718" part="I" xml:id="l1718">Ô Dieux ! </l>
           </sp>
-          <sp xml:id="V04-15" who="ERANTE">
+          <sp who="ERANTE" xml:id="V04-15">
             <speaker>ÉRANTE.</speaker>
             <l part="M">Le doux plaisir ? </l>
           </sp>
-          <sp xml:id="V04-16" who="DIONYS">
+          <sp who="DIONYS" xml:id="V04-16">
             <speaker>DIONYS.</speaker>
             <l part="F">Belle âme de ma vie, </l>
             <l n="1719" xml:id="l1719">Hélas ! La croyez-vous ? Sous une autre asservie, </l>
-            <l n="1720" xml:id="l1720" part="I">Divin charme des coeurs. </l>
+            <l n="1720" part="I" xml:id="l1720">Divin charme des coeurs. </l>
           </sp>
-          <sp xml:id="V04-17" who="AMELIE">
+          <sp who="AMELIE" xml:id="V04-17">
             <speaker>AMÉLIE le baisant.</speaker>
             <l part="F">Ah pardon mon souci. </l>
           </sp>
-          <sp xml:id="V04-18" who="DIONYS">
+          <sp who="DIONYS" xml:id="V04-18">
             <speaker>DIONYS.</speaker>
             <l n="1721" xml:id="l1721">Offensez-moi souvent, et m'apaisez ainsi. </l>
           </sp>
-          <sp xml:id="V04-19" who="ERANTE">
+          <sp who="ERANTE" xml:id="V04-19">
             <speaker>ÉRANTE.</speaker>
             <l n="1722" xml:id="l1722">J'ai pris à vos dépens, cette joie infinie : </l>
             <l n="1723" xml:id="l1723">Les trompeurs sont trompés, et la feinte punie, </l>
@@ -3267,17 +3392,24 @@
             <l n="1725" xml:id="l1725">Caressant un objet, qui ne peut rien pour vous. </l>
             <l n="1726" xml:id="l1726">Ne vous consommez point d'une inutile flamme, </l>
             <l n="1727" xml:id="l1727">Consentez au repos d'Éraste, et de Madame. </l>
-            <l n="1728" xml:id="l1728" part="I">Le voici qui revient. </l>
+            <l n="1728" part="I" xml:id="l1728">Le voici qui revient. </l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Éraste, Amélie, Érante, Cloris, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf36"><person corresp="#ERASTE"/><person corresp="#AMELIE"/><person corresp="#DIONYS"/><person corresp="#ERANTE"/><person corresp="#LISIDAN"/><person corresp="#CLORIS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="V05-1" who="ERASTE">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Éraste, Amélie, Érante, Cloris, Dionys, Lisidan.<listPerson type="configuration" xml:id="conf36">
+            <person corresp="#ERASTE"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#ERANTE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#CLORIS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERASTE" xml:id="V05-1">
             <speaker>ÉRASTE.</speaker>
             <l part="F">J'ai gagné son esprit, </l>
             <l n="1729" xml:id="l1729">Il s'accorde à vos voeux, consulter cet écrit. </l>
           </sp>
-          <sp xml:id="V05-2" who="AMELIE">
+          <sp who="AMELIE" xml:id="V05-2">
             <speaker>AMÉLIE.</speaker>
             <l n="1730" xml:id="l1730">Dieux ! L'effet nonpareil d'un généreux courage ! </l>
             <l n="1731" xml:id="l1731">Que ce rival, Monsieur, vous doit rendre d'hommage ! </l>
@@ -3293,19 +3425,19 @@
             <l n="1739" xml:id="l1739">N'ayant pu vous avoir, vous donne. </l>
             <stage>Cléante. </stage>
           </sp>
-          <sp xml:id="V05-3" who="AMELIE">
+          <sp who="AMELIE" xml:id="V05-3">
             <speaker>AMÉLIE continue.</speaker>
             <l n="1740" xml:id="l1740">Il faut rester ingrate à ces rares bontés </l>
             <l n="1741" xml:id="l1741">Rien ne peut égaler, ce que vous méritez. </l>
           </sp>
-          <sp xml:id="V05-4" who="DIONYS">
+          <sp who="DIONYS" xml:id="V05-4">
             <speaker>DIONYS.</speaker>
             <l n="1742" xml:id="l1742">Adorable rival, de quel humble service </l>
             <l n="1743" xml:id="l1743">Puis-je récompenser, ce favorable office, </l>
             <l n="1744" xml:id="l1744">Que ce jour pour jamais, borne nos différents, </l>
             <l n="1745" xml:id="l1745">Accorde cette grâce aux voeux que je te rends. </l>
           </sp>
-          <sp xml:id="V05-5" who="ERASTE">
+          <sp who="ERASTE" xml:id="V05-5">
             <speaker>ÉRASTE.</speaker>
             <l n="1746" xml:id="l1746">Mais oubliez plutôt les ardeurs importunes, </l>
             <l n="1747" xml:id="l1747">Qui m'ont fait si longtemps, traverser vos fortunes. </l>
@@ -3314,41 +3446,50 @@
             <l n="1750" xml:id="l1750">Érante à Lisidan, un triple noeud nous lie. </l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE DERNIÈRE. Émile, Le Valet, Dionys, Amélie, Lisidan, Érante, Éraste, Cloris.<listPerson type="configuration" xml:id="conf37"><person corresp="#ERASTE"/><person corresp="#EMILE"/><person corresp="#VALET"/><person corresp="#DIONYS"/><person corresp="#AMELIE"/><person corresp="#LISIDAN"/><person corresp="#ERANTE"/><person corresp="#CLORIS"/><person corresp="#NOURRICE"/></listPerson></head>
-          <sp xml:id="V06-1" who="ERASTE">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE DERNIÈRE. Émile, Le Valet, Dionys, Amélie, Lisidan, Érante, Éraste, Cloris.<listPerson type="configuration" xml:id="conf37">
+            <person corresp="#ERASTE"/>
+            <person corresp="#EMILE"/>
+            <person corresp="#VALET"/>
+            <person corresp="#DIONYS"/>
+            <person corresp="#AMELIE"/>
+            <person corresp="#LISIDAN"/>
+            <person corresp="#ERANTE"/>
+            <person corresp="#CLORIS"/>
+            <person corresp="#NOURRICE"/></listPerson></head>
+          <sp who="ERASTE" xml:id="V06-1">
             <speaker>ÉRASTE continue. </speaker>
             <l n="1751" xml:id="l1751">Mais Émile vous cherche, admirons sa folie </l>
             <l n="1752" xml:id="l1752">Il repaît son esprit de mille vains combats, </l>
             <l n="1753" xml:id="l1753">Et pour moins que son ombre, il met les armes bas. </l>
           </sp>
-          <sp xml:id="V06-2" who="EMILE">
+          <sp who="EMILE" xml:id="V06-2">
             <speaker>ÉMILE.</speaker>
             <l n="1754" xml:id="l1754">Son trépas, va prouver ma valeur sans seconde, </l>
             <l n="1755" xml:id="l1755">Il doit plus de respect à la terreur du monde, </l>
             <l n="1756" xml:id="l1756">Que de considérer un objet qui lui plaît. </l>
           </sp>
-          <sp xml:id="V06-3" who="VALET">
+          <sp who="VALET" xml:id="V06-3">
             <speaker>LE VALET.</speaker>
             <l n="1757" xml:id="l1757">Prononcez de sa mort l'irrévocable arrêt, </l>
           </sp>
-          <sp xml:id="V06-4" who="EMILE">
+          <sp who="EMILE" xml:id="V06-4">
             <speaker>ÉMILE.</speaker>
-            <l n="1758" xml:id="l1758" part="I">Il mourra, je le jure. </l>
+            <l n="1758" part="I" xml:id="l1758">Il mourra, je le jure. </l>
           </sp>
-          <sp xml:id="V06-5" who="VALET">
+          <sp who="VALET" xml:id="V06-5">
             <speaker>LE VALET.</speaker>
             <l part="F">Oui, mais de quelle sorte ; </l>
           </sp>
-          <sp xml:id="V06-6" who="EMILE">
+          <sp who="EMILE" xml:id="V06-6">
             <speaker>ÉMILE.</speaker>
-            <l n="1759" xml:id="l1759" part="I">Par ce bras indompté. </l>
+            <l n="1759" part="I" xml:id="l1759">Par ce bras indompté. </l>
           </sp>
-          <sp xml:id="V06-7" who="VALET">
+          <sp who="VALET" xml:id="V06-7">
             <speaker>LE VALET.</speaker>
             <l part="F">Si ce dessein n'avorte. </l>
           </sp>
-          <sp xml:id="V06-8" who="EMILE">
+          <sp who="EMILE" xml:id="V06-8">
             <speaker>ÉMILE.</speaker>
             <l n="1760" xml:id="l1760">Et qui peut divertir mes résolutions, </l>
             <l n="1761" xml:id="l1761">Puis-je souffrir remise, ou compositions </l>
@@ -3357,12 +3498,12 @@
             <l n="1764" xml:id="l1764">La mort me plairait plus qu'une honteuse paix, </l>
             <l n="1765" xml:id="l1765">Ce coeur est un rocher qu'on n'ébranle jamais. </l>
           </sp>
-          <sp xml:id="V06-9" who="VALET">
+          <sp who="VALET" xml:id="V06-9">
             <speaker>LE VALET.</speaker>
             <l n="1766" xml:id="l1766">Des lions quelquefois, ont forcé leur courage </l>
             <l n="1767" xml:id="l1767">Et des soumissions ont apaisé leur rage. </l>
           </sp>
-          <sp xml:id="V06-10" who="EMILE">
+          <sp who="EMILE" xml:id="V06-10">
             <speaker>ÉMILE.</speaker>
             <l n="1768" xml:id="l1768">Je fais grâce à beaucoup, j'y trouve des appas, </l>
             <l n="1769" xml:id="l1769">Mais je la sais donner, et ne la perdre pas, </l>
@@ -3370,23 +3511,23 @@
             <l n="1771" xml:id="l1771">Et l'on voit quelquefois des pitiés criminelles : </l>
             <l n="1772" xml:id="l1772">Nous cherchons un rival indigne de pardon, </l>
             <l n="1773" xml:id="l1773">Et la même pitié lui dénierait ce don. </l>
-            <l n="1774" xml:id="l1774" part="I">Avançons je le vois. </l>
+            <l n="1774" part="I" xml:id="l1774">Avançons je le vois. </l>
           </sp>
-          <sp xml:id="V06-11" who="VALET">
+          <sp who="VALET" xml:id="V06-11">
             <speaker>LE VALET.</speaker>
             <l part="F">La partie inégale, </l>
             <l n="1775" xml:id="l1775">Fait qu'un soudain glaçon dans le coeur me dévale, </l>
-            <l n="1776" xml:id="l1776" part="I">Ils sont trois contre deux. </l>
+            <l n="1776" part="I" xml:id="l1776">Ils sont trois contre deux. </l>
           </sp>
-          <sp xml:id="V06-12" who="EMILE">
+          <sp who="EMILE" xml:id="V06-12">
             <speaker>ÉMILE.</speaker>
             <l part="F">Ha lâche, suis mes pas. </l>
           </sp>
-          <sp xml:id="V06-13" who="DIONYS">
+          <sp who="DIONYS" xml:id="V06-13">
             <speaker>DIONYS.</speaker>
-            <l n="1777" xml:id="l1777" part="I">Où va votre grandeur ? </l>
+            <l n="1777" part="I" xml:id="l1777">Où va votre grandeur ? </l>
           </sp>
-          <sp xml:id="V06-14" who="EMILE">
+          <sp who="EMILE" xml:id="V06-14">
             <speaker>ÉMILE.</speaker>
             <l part="F">T'annoncer le trépas ! </l>
             <l n="1778" xml:id="l1778">Tu n'as pas dû, perfide, après tant d'insolence, </l>
@@ -3394,44 +3535,44 @@
             <l n="1780" xml:id="l1780">Je dois mon assistance, à cet objet d'amour, </l>
             <l n="1781" xml:id="l1781">Et son enlèvement te coûtera le jour. </l>
           </sp>
-          <sp xml:id="V06-15" who="DIONYS">
+          <sp who="DIONYS" xml:id="V06-15">
             <speaker>DIONYS.</speaker>
-            <l n="1782" xml:id="l1782" part="I">Ne diffère donc point. </l>
+            <l n="1782" part="I" xml:id="l1782">Ne diffère donc point. </l>
           </sp>
-          <sp xml:id="V06-16" who="EMILE">
+          <sp who="EMILE" xml:id="V06-16">
             <speaker>ÉMILE.</speaker>
             <l part="M">Attends </l>
           </sp>
-          <sp xml:id="V06-17" who="DIONYS">
+          <sp who="DIONYS" xml:id="V06-17">
             <speaker>DIONYS.</speaker>
             <l part="F">Tu délibères. </l>
           </sp>
-          <sp xml:id="V06-18" who="EMILE">
+          <sp who="EMILE" xml:id="V06-18">
             <speaker>ÉMILE.</speaker>
             <l n="1783" xml:id="l1783">Je songe, que la mort finirait tes misères, </l>
             <l n="1784" xml:id="l1784">Que mon aversion me nuit, et me vengeant, </l>
             <l n="1785" xml:id="l1785">Que je t'obligerais en te désobligeant, </l>
             <l n="1786" xml:id="l1786">Et que je te punis, en te laissant la vie </l>
             <l n="1787" xml:id="l1787">Mieux, que si par ce bras, elle t'était ravie ; </l>
-            <l n="1788" xml:id="l1788" part="I">Va, je suis satisfait. </l>
+            <l n="1788" part="I" xml:id="l1788">Va, je suis satisfait. </l>
           </sp>
-          <sp xml:id="V06-19" who="DIONYS">
+          <sp who="DIONYS" xml:id="V06-19">
             <speaker>DIONYS.</speaker>
             <l part="F">Que de présomption ? </l>
           </sp>
-          <sp xml:id="V06-20" who="EMILE">
+          <sp who="EMILE" xml:id="V06-20">
             <speaker>ÉMILE.</speaker>
             <l n="1789" xml:id="l1789">Et vous divin objet de mon affection </l>
-            <l n="1790" xml:id="l1790" part="I">Quand prononcerez-vous. </l>
+            <l n="1790" part="I" xml:id="l1790">Quand prononcerez-vous. </l>
           </sp>
-          <sp xml:id="V06-21" who="DIONYS">
+          <sp who="DIONYS" xml:id="V06-21">
             <speaker>DIONYS le tirant d'auprès Amélie. </speaker>
             <l part="F">Sors d'ici, lâche, infâme, </l>
             <l n="1791" xml:id="l1791">Es-tu si vain encor, que d'aborder Madame ? </l>
             <l n="1792" xml:id="l1792">Indigne seulement d'entendre ses refus, </l>
             <l n="1793" xml:id="l1793">Ne me réplique pas, sors, ou tu ne vis plus. </l>
           </sp>
-          <sp xml:id="V06-22" who="EMILE">
+          <sp who="EMILE" xml:id="V06-22">
             <speaker>ÉMILE.</speaker>
             <l n="1794" xml:id="l1794">Dieux ! Le plaisant courroux, dont son âme est atteinte, </l>
             <l n="1795" xml:id="l1795">Il ne peut discerner le vrai, d'avec la feinte ; </l>
@@ -3450,7 +3591,7 @@
             <l n="1808" xml:id="l1808">Je romprais des prisons, je l'ôterais des fers, </l>
             <l n="1809" xml:id="l1809">Et je la tirerais du profond des enfers. </l>
           </sp>
-          <sp xml:id="V06-23" who="DIONYS">
+          <sp who="DIONYS" xml:id="V06-23">
             <speaker>DIONYS.</speaker>
             <l n="1810" xml:id="l1810">Comme un faible moyen, rabat son arrogance, </l>
             <l n="1811" xml:id="l1811">Adieu, fais rire ailleurs, de ton extravagance. </l>
@@ -3459,31 +3600,31 @@
             <l n="1814" xml:id="l1814">Allons y célébrer ces heureux hyménées, </l>
             <l n="1815" xml:id="l1815">Qui de biens infinis vont combler nos années. </l>
           </sp>
-          <sp xml:id="V06-24" who="AMELIE">
+          <sp who="AMELIE" xml:id="V06-24">
             <speaker>AMÉLIE à Émile. </speaker>
-            <l n="1816" xml:id="l1816" part="I">Adieu terreur du monde. </l>
+            <l n="1816" part="I" xml:id="l1816">Adieu terreur du monde. </l>
           </sp>
-          <sp xml:id="V06-25" who="LISIDAN">
+          <sp who="LISIDAN" xml:id="V06-25">
             <speaker>LISIDAN.</speaker>
             <l part="F">Adieu race des Dieux ! </l>
           </sp>
-          <sp xml:id="V06-26" who="ERANTE">
+          <sp who="ERANTE" xml:id="V06-26">
             <speaker>ÉRANTE.</speaker>
             <l n="1817" xml:id="l1817">Adieu divin charmeur des âmes et des yeux. </l>
           </sp>
-          <sp xml:id="V06-27" who="ERASTE">
+          <sp who="ERASTE" xml:id="V06-27">
             <speaker>ÉRASTE.</speaker>
             <l n="1818" xml:id="l1818">Adieu le plus vaillant de la terre et de l'onde. </l>
           </sp>
-          <sp xml:id="V06-28" who="CLORIS">
+          <sp who="CLORIS" xml:id="V06-28">
             <speaker>CLORIS.</speaker>
             <l n="1819" xml:id="l1819">Adieu le plus grand fou qui soit en tout le monde. </l>
           </sp>
-          <sp xml:id="V06-29" who="VALET">
+          <sp who="VALET" xml:id="V06-29">
             <speaker>LE VALET.</speaker>
-            <l n="1820" xml:id="l1820" part="I">Nous voilà grands seigneurs. </l>
+            <l n="1820" part="I" xml:id="l1820">Nous voilà grands seigneurs. </l>
           </sp>
-          <sp xml:id="V06-30" who="EMILE">
+          <sp who="EMILE" xml:id="V06-30">
             <speaker>ÉMILE.</speaker>
             <l part="F">Suis-les, atteins ses gens </l>
             <l n="1821" xml:id="l1821">Ma vengeance dépend de tes pas diligents : </l>
@@ -3497,7 +3638,7 @@
             <l n="1828" xml:id="l1828">Quelque dessein qu'ils aient d'exercer mon courroux, </l>
             <l n="1829" xml:id="l1829">Ils n'auront pas l'honneur de mourir de mes coups. </l>
           </sp>
-          <sp xml:id="V06-31" who="VALET">
+          <sp who="VALET" xml:id="V06-31">
             <speaker>LE VALET.</speaker>
             <l n="1830" xml:id="l1830">Que vos bras sont puissants et nos exploits superbes, </l>
             <l n="1831" xml:id="l1831">Que de vaincus à bas, que de corps sur les herbes : </l>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Amarillis</title><title type="sub">, pastorale.</title>
-        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)"><surname>Tristan L’Hermite</surname><forename> François</forename></author>
+        <title>Amarillis</title>
+        <title type="sub">, pastorale.</title>
+        <author academie="" born="1609" born_location="Dreux" death="1650" death_location="Dreux" key="Rotrou, Jean (1609-1650)">
+          <surname>Tristan L’Hermite</surname>
+          <forename> François</forename>
+        </author>
         <date>1637</date>
       </titleStmt>
       <publicationStmt>
@@ -31,7 +36,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre">Pastorale</term>
+          <term subtype="show" type="genre">Pastorale</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -69,7 +74,7 @@
         <castItem><role age="A" civil="M" id="PHILIDAS" rend="male" stat_amour="amoureux" statut="berger" type="H" xml:id="PHILIDAS">PHILIDAS</role>, amoureux d'Amarillis.</castItem>
         <castItem><role age="A" civil="F" id="DAPHNÉ" rend="female" stat_amour="néant" statut="berger" type="H" xml:id="DAPHNE">DAPHNÉ</role>, soeur d'Amarillis.</castItem>
         <castItem><role age="A" civil="M" id="CELIDAN" rend="male" stat_amour="amoureux" statut="berger" type="H" xml:id="CELIDAN">CELIDAN</role>, amoureux de Daphné.</castItem>
-        <castItem><role xml:id="SATYRES" age="A" civil="M" id="SATYRES" rend="male" stat_amour="néant" statut="satyre" type="G">Trois SATYRES</role>, fille de Florisel et de Sydonie.<role n="PREMIER SATYRE" xml:id="SATYRE1"/><role n="SECOND SATYRE" xml:id="SATYRE2"/><role n="TROISIÈME SATYRE" xml:id="SATYRE3"/></castItem>
+        <castItem><role age="A" civil="M" id="SATYRES" rend="male" stat_amour="néant" statut="satyre" type="G" xml:id="SATYRES">Trois SATYRES</role>, fille de Florisel et de Sydonie.<role n="PREMIER SATYRE" xml:id="SATYRE1"/><role n="SECOND SATYRE" xml:id="SATYRE2"/><role n="TROISIÈME SATYRE" xml:id="SATYRE3"/></castItem>
         <castItem><role age="A" civil="M" id="CLIMANTE" rend="male" stat_amour="néant" statut="domestique" type="H" xml:id="CLIMANTE">CLIMANTE</role>, domestique de Daphné.</castItem>
       </castList>
       <set country="France" link="" location="Forez" periode="(inconnue)">La scène est au bord du Lignon.</set>
@@ -78,7 +83,13 @@
       <div1 n="1" type="act" xml:id="I">
         <head>ACTE I </head>
         <div2 n="1" type="scene" xml:id="I01">
-          <head>SCÈNE PREMIÈRE. Lisimène, Bélise. <listPerson type="configuration" xml:id="conf1"><person corresp="#LISIMENE"/><person corresp="#BELISE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Lisimène, Bélise. <listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LISIMENE"/>
+            <person corresp="#BELISE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="LISIMENE" xml:id="I01-1">
             <speaker>LISIMÈNE.</speaker>
             <l n="1" xml:id="l1">Je commence à vous voir, et vous n'avez qu'à peine</l>
@@ -350,7 +361,14 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="I02">
-          <head>SCÈNE II. Tyrène, Lisimène, Bélise.<listPerson type="configuration" xml:id="conf2"><person corresp="#TYRENE"/><person corresp="#LISIMENE"/><person corresp="#BELISE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE II. Tyrène, Lisimène, Bélise.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#TYRENE"/>
+            <person corresp="#LISIMENE"/>
+            <person corresp="#BELISE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="TYRENE" xml:id="I02-1">
             <speaker>TYRÈNE.</speaker>
             <stage>Stances.</stage>
@@ -451,7 +469,14 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="I03">
-          <head>SCÈNE III. Bélise, Tyrène, Lisimène.<listPerson type="configuration" xml:id="conf3"><person corresp="#BELISE"/><person corresp="#TYRENE"/><person corresp="#LISIMENE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE III. Bélise, Tyrène, Lisimène.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#BELISE"/>
+            <person corresp="#TYRENE"/>
+            <person corresp="#LISIMENE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="BELISE" xml:id="I03-1">
             <speaker>BÉLISE.</speaker>
             <l n="196" xml:id="l196">Traître, que tu sais mal cacher ta perfidie !</l>
@@ -579,7 +604,13 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="I04">
-          <head>SCÈNE IV. Tyrène, Amarillis.<listPerson type="configuration" xml:id="conf4"><person corresp="#TYRENE"/><person corresp="#AMARILLIS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE IV. Tyrène, Amarillis.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#TYRENE"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="TYRENE" xml:id="I04-1">
             <speaker>TYRÈNE.</speaker>
             <l part="F">Adorable merveille,</l>
@@ -673,7 +704,13 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="I05">
-          <head>SCÈNE V. Bélise, Tyrène.<listPerson type="configuration" xml:id="conf5"><person corresp="#BELISE"/><person corresp="#TYRENE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE V. Bélise, Tyrène.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#BELISE"/>
+            <person corresp="#TYRENE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="BELISE" xml:id="I05-1">
             <speaker>BÉLISE.</speaker>
             <l n="311" xml:id="l311">Ô qu'il est satisfait et qu'il profite au change,</l>
@@ -782,7 +819,12 @@
       <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
         <div2 n="1" type="scene" xml:id="II01">
-          <head>SCÈNE PREMIÈRE. Trois Satyres.<listPerson type="configuration" xml:id="conf7"><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/><person corresp="#CLEONTE"/><person corresp="#SATYRES"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Trois Satyres.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRES"/></listPerson></head>
           <sp who="SATYRE1" xml:id="II01-1">
             <speaker>PREMIER SATYRE.</speaker>
             <l n="371" xml:id="l371">As-tu vu dans ce fond ces deux belles bergères ?</l>
@@ -957,7 +999,14 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="II02">
-          <head>SCÈNE II. Amarillis, Daphné.<listPerson type="configuration" xml:id="conf8"><person corresp="#AMARILLIS"/><person corresp="#DAPHNE"/><person corresp="#PHILIDAS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE II. Amarillis, Daphné.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#DAPHNE"/>
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="AMARILLIS" xml:id="II02-1">
             <speaker>AMARILLIS.</speaker>
             <l n="459" xml:id="l459">Pourquoi m'accusez-vous de trop de retenue ?</l>
@@ -1060,7 +1109,13 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="II03">
-          <head>SCÈNE III. Philidas, Célidan.<listPerson type="configuration" xml:id="conf9"><person corresp="#PHILIDAS"/><person corresp="#CELIDAN"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE III. Philidas, Célidan.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#CELIDAN"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="PHILIDAS" xml:id="II03-1">
             <speaker>PHILIDAS.</speaker>
             <l n="509" xml:id="l509">Hélas cruel ami que ma douleur te plaît !</l>
@@ -1247,7 +1302,14 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="II04">
-          <head>SCÈNE IV. Amarillis, Daphné, Philidas.<listPerson type="configuration" xml:id="conf10"><person corresp="#AMARILLIS"/><person corresp="#DAPHNE"/><person corresp="#PHILIDAS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE IV. Amarillis, Daphné, Philidas.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#DAPHNE"/>
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="AMARILLIS" xml:id="II04-1">
             <speaker>AMARILLIS.</speaker>
             <l n="631" xml:id="l631">Dieux que ces importuns ont peu de complaisance,</l>
@@ -1502,7 +1564,15 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="II05">
-          <head>SCÈNE V. Tyrène, Bélise sous le nom de Cléonte, Amarillis, Daphné.<listPerson type="configuration" xml:id="conf11"><person corresp="#TYRENE"/><person corresp="#AMARILLIS"/><person corresp="#DAPHNE"/><person corresp="#CLEONTE"/><person corresp="#BELISE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE V. Tyrène, Bélise sous le nom de Cléonte, Amarillis, Daphné.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#TYRENE"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#DAPHNE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#BELISE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="TYRENE" xml:id="II05-1">
             <speaker>TYRÈNE.</speaker>
             <l n="723" xml:id="l723">Je l'avise à propos, et le Ciel nous conduit.</l>
@@ -1598,7 +1668,12 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="II06">
-          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf12"><person corresp="#PHILIDAS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="PHILIDAS" xml:id="II06-1">
             <speaker>PHILIDAS, éveillé.</speaker>
             <l n="758" xml:id="l758">Sommeil, heureux charmeur des ennuis que je sens,</l>
@@ -1638,7 +1713,13 @@
       <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
         <div2 n="1" type="scene" xml:id="III01">
-          <head>SCÈNE PREMIÈRE. Philidas, Amarillis.<listPerson type="configuration" xml:id="conf14"><person corresp="#AMARILLIS"/><person corresp="#PHILIDAS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Philidas, Amarillis.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="AMARILLIS" xml:id="III01-1">
             <speaker>AMARILLIS chante.</speaker>
             <stage>CHANSON.</stage>
@@ -1778,7 +1859,13 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="III02">
-          <head>SCÈNE II. Tyrène, Amarillis.<listPerson type="configuration" xml:id="conf15"><person corresp="#TYRENE"/><person corresp="#AMARILLIS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE II. Tyrène, Amarillis.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#TYRENE"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="TYRENE" xml:id="III02-1">
             <speaker>TYRÈNE.</speaker>
             <l n="850" part="I" xml:id="l850">Qui vous rend si pensive ?</l>
@@ -1887,7 +1974,12 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="III03">
-          <head>SCÈNE III. Amarillis, Cléonte.<listPerson type="configuration" xml:id="conf16"><person corresp="#AMARILLIS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE III. Amarillis, Cléonte.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="AMARILLIS" xml:id="III03-1">
             <speaker>AMARILLIS.</speaker>
             <l n="874" part="I" xml:id="l874">Que Cléonte est chagrin !</l>
@@ -2004,7 +2096,12 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="III04">
-          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf17"><person corresp="#TYRENE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#TYRENE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="TYRENE" xml:id="III04-1">
             <speaker>TYRÈNE seul les ayant écoutés.</speaker>
             <l n="938" xml:id="l938">Dieux avec quelle grâce elle fait le transi,</l>
@@ -2019,7 +2116,13 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="III05">
-          <head>SCÈNE V. Daphné, Tyrène.<listPerson type="configuration" xml:id="conf18"><person corresp="#DAPHNE"/><person corresp="#TYRENE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE V. Daphné, Tyrène.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#DAPHNE"/>
+            <person corresp="#TYRENE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="DAPHNE" xml:id="III05-1">
             <speaker>DAPHNÉ.</speaker>
             <l part="F">Elle n'est pas ici.</l>
@@ -2096,7 +2199,13 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="III06">
-          <head>SCÈNE VI. Célidan, Daphné.<listPerson type="configuration" xml:id="conf19"><person corresp="#CELIDAN"/><person corresp="#DAPHNE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE VI. Célidan, Daphné.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#CELIDAN"/>
+            <person corresp="#DAPHNE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CELIDAN" xml:id="III06-1">
             <speaker>CÉLIDAN, la surprenant.</speaker>
             <l n="968" part="I" xml:id="l968">À quoi pense Daphné ?</l>
@@ -2190,7 +2299,14 @@
       <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
         <div2 n="1" type="scene" xml:id="IV01">
-          <head>SCÈNE PREMIÈRE. Daphné, Cléonte.<listPerson type="configuration" xml:id="conf21"><person corresp="#DAPHNE"/><person corresp="#CLEONTE"/><person corresp="#CELIDAN"/><person corresp="#PHILIDAS"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE. Daphné, Cléonte.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#DAPHNE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#CELIDAN"/>
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="DAPHNE" xml:id="IV01-1">
             <speaker>DAPHNÉ.</speaker>
             <l n="998" xml:id="l998">Cléonte a beau se plaindre, il a beau soupirer,</l>
@@ -2281,7 +2397,13 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="IV02">
-          <head>SCÈNE II. Célidan, Cléonte, Philidas.<listPerson type="configuration" xml:id="conf22"><person corresp="#CELIDAN"/><person corresp="#CLEONTE"/><person corresp="#PHILIDAS"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE II. Célidan, Cléonte, Philidas.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#CELIDAN"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CELIDAN" xml:id="IV02-1">
             <speaker>CÉLIDAN.</speaker>
             <l n="1034" xml:id="l1034">Fais-en voir une preuve en montrant ton courage.</l>
@@ -2457,7 +2579,12 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="IV03">
-          <head>SCÈNE III. Cléonte, Tyrène.<listPerson type="configuration" xml:id="conf23"><person corresp="#CLEONTE"/><person corresp="#TYRENE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE III. Cléonte, Tyrène.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#CLEONTE"/>
+            <person corresp="#TYRENE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CLEONTE" xml:id="IV03-1">
             <speaker>CLÉONTE.</speaker>
             <l n="1104" xml:id="l1104">Ah ! Comme tout succède à mon ardent désir,</l>
@@ -2505,7 +2632,13 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="IV04">
-          <head>SCÈNE IV. Daphné, Amarillis.<listPerson type="configuration" xml:id="conf24"><person corresp="#DAPHNE"/><person corresp="#AMARILLIS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE IV. Daphné, Amarillis.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#DAPHNE"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="DAPHNE" xml:id="IV04-1">
             <speaker>DAPHNÉ.</speaker>
             <l n="1126" xml:id="l1126">Vous ne méprisez plus l'amour ni son enfance,</l>
@@ -2629,7 +2762,12 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="IV05">
-          <head>SCÈNE V. Cléonte, Amarillis.<listPerson type="configuration" xml:id="conf25"><person corresp="#CLEONTE"/><person corresp="#AMARILLIS"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE V. Cléonte, Amarillis.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#CLEONTE"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CLEONTE" xml:id="IV05-1">
             <speaker>CLÉONTE.</speaker>
             <l n="1178" xml:id="l1178">Que ce teint est changé ! Quelle douleur vous presse ?</l>
@@ -2718,7 +2856,12 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="IV06">
-          <head>SCÈNE VI. Climante, Cléonte.<listPerson type="configuration" xml:id="conf26"><person corresp="#CLIMANTE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE VI. Climante, Cléonte.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#CLIMANTE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CLIMANTE" xml:id="IV06-1">
             <speaker>CLIMANTE.</speaker>
             <l n="1219" part="I" xml:id="l1219">Je vous cherchais partout.</l>
@@ -2778,7 +2921,12 @@
           </sp>
         </div2>
         <div2 n="7" type="scene" xml:id="IV07">
-          <head>SCÈNE VII. Les trois Satyres.<listPerson type="configuration" xml:id="conf27"><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/><person corresp="#SATYRE1"/><person corresp="#CLEONTE"/><person corresp="#SATYRES"/></listPerson></head>
+          <head>SCÈNE VII. Les trois Satyres.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRES"/></listPerson></head>
           <sp who="SATYRE2" xml:id="IV07-1">
             <speaker>DEUXIÈME SATYRE.</speaker>
             <l n="1247" xml:id="l1247">Je pense qu'un Démon les cache à notre vue,</l>
@@ -2880,7 +3028,12 @@
       <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
         <div2 n="1" type="scene" xml:id="V01">
-          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf29"><person corresp="#CELIDAN"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#CELIDAN"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CELIDAN" xml:id="V01-1">
             <speaker>CÉLIDAN, seul.</speaker>
             <l n="1281" xml:id="l1281">C'est bien manquer, et mériter son mal.</l>
@@ -2898,7 +3051,12 @@
           </sp>
         </div2>
         <div2 n="2" type="scene" xml:id="V02">
-          <head>SCÈNE II. Cléonte, Célidan.<listPerson type="configuration" xml:id="conf30"><person corresp="#CLEONTE"/><person corresp="#CELIDAN"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE II. Cléonte, Célidan.<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#CLEONTE"/>
+            <person corresp="#CELIDAN"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CLEONTE" xml:id="V02-1">
             <speaker>CLÉONTE.</speaker>
             <l n="1293" xml:id="l1293">Je fais tous mes efforts, mais je travaille en vain,</l>
@@ -2957,7 +3115,12 @@
           </sp>
         </div2>
         <div2 n="3" type="scene" xml:id="V03">
-          <head>SCÈNE III. Philidas, Cléonte.<listPerson type="configuration" xml:id="conf31"><person corresp="#PHILIDAS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE III. Philidas, Cléonte.<listPerson type="configuration" xml:id="conf31">
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="PHILIDAS" xml:id="V03-1">
             <speaker>PHILIDAS.</speaker>
             <l n="1331" xml:id="l1331">Enfin sans m'abuser d'inutiles paroles,</l>
@@ -3039,7 +3202,12 @@
           </sp>
         </div2>
         <div2 n="4" type="scene" xml:id="V04">
-          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf32"><person corresp="#AMARILLIS"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf32">
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="AMARILLIS" xml:id="V04-1">
             <speaker>AMARILLIS, seule.</speaker>
             <l n="1367" xml:id="l1367">Le Ciel laisse à nos yeux paraître ses étoiles,</l>
@@ -3057,7 +3225,13 @@
           </sp>
         </div2>
         <div2 n="5" type="scene" xml:id="V05">
-          <head>SCÈNE V. Les trois Satyres, Amarillis.<listPerson type="configuration" xml:id="conf33"><person corresp="#SATYRE1"/><person corresp="#AMARILLIS"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/><person corresp="#CLEONTE"/><person corresp="#SATYRES"/></listPerson></head>
+          <head>SCÈNE V. Les trois Satyres, Amarillis.<listPerson type="configuration" xml:id="conf33">
+            <person corresp="#SATYRE1"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRES"/></listPerson></head>
           <sp who="SATYRE1" xml:id="V05-1">
             <speaker>PREMIER SATYRE.</speaker>
             <l n="1379" xml:id="l1379">Après tant de travaux il faut faire curée ;</l>
@@ -3093,7 +3267,13 @@
           </sp>
         </div2>
         <div2 n="6" type="scene" xml:id="V06">
-          <head>SCÈNE VI. Philidas, Les Satyres, Amarillis.<listPerson type="configuration" xml:id="conf34"><person corresp="#PHILIDAS"/><person corresp="#SATYRE2"/><person corresp="#SATYRE1"/><person corresp="#SATYRE3"/><person corresp="#AMARILLIS"/><person corresp="#CLEONTE"/></listPerson></head>
+          <head>SCÈNE VI. Philidas, Les Satyres, Amarillis.<listPerson type="configuration" xml:id="conf34">
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE3"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#CLEONTE"/></listPerson></head>
           <sp who="PHILIDAS" xml:id="V06-1">
             <speaker>PHILIDAS.</speaker>
             <note type="L">Bouquin : Vieux bouc. On appelle figurément un vieux bouquin, un homme puant et lascif, qui a passe sa vie dans la débauche. En terme de poésie, on appelle les satyres, les dieux chevrepieds, de bouquins, à cause qu'on les peint avec des pieds de bouc. [F]</note>
@@ -3235,7 +3415,14 @@
           </sp>
         </div2>
         <div2 n="7" type="scene" xml:id="V07">
-          <head>SCÈNE VII. Cléonte, Tyrène, Amarillis. Philidas.<listPerson type="configuration" xml:id="conf35"><person corresp="#CLEONTE"/><person corresp="#AMARILLIS"/><person corresp="#PHILIDAS"/><person corresp="#TYRENE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE VII. Cléonte, Tyrène, Amarillis. Philidas.<listPerson type="configuration" xml:id="conf35">
+            <person corresp="#CLEONTE"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#TYRENE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CLEONTE" xml:id="V07-1">
             <speaker>CLÉONTE.</speaker>
             <l n="1431" xml:id="l1431">Tu n'en peux plus douter, entends d'ici sa plainte,</l>
@@ -3329,7 +3516,12 @@
           </sp>
         </div2>
         <div2 n="8" type="scene" xml:id="V08">
-          <head>SCÈNE VIII.<listPerson type="configuration" xml:id="conf36"><person corresp="#DAPHNE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE VIII.<listPerson type="configuration" xml:id="conf36">
+            <person corresp="#DAPHNE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="DAPHNE" xml:id="V08-1">
             <speaker>DAPHNÉ seule.</speaker>
             <l part="F">Ma soeur est endormie,</l>
@@ -3340,7 +3532,13 @@
           </sp>
         </div2>
         <div2 n="9" type="scene" xml:id="V09">
-          <head>SCÈNE IX. Célidan, Daphné.<listPerson type="configuration" xml:id="conf37"><person corresp="#CELIDAN"/><person corresp="#DAPHNE"/><person corresp="#CLEONTE"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/></listPerson></head>
+          <head>SCÈNE IX. Célidan, Daphné.<listPerson type="configuration" xml:id="conf37">
+            <person corresp="#CELIDAN"/>
+            <person corresp="#DAPHNE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/></listPerson></head>
           <sp who="CELIDAN" xml:id="V09-1">
             <speaker>CÉLIDAN.</speaker>
             <l part="F">J'aperçois cette belle.</l>
@@ -3409,7 +3607,18 @@
           </sp>
         </div2>
         <div2 n="10" type="scene" xml:id="V10">
-          <head>SCÈNE DERNIÈRE. Daphné, Cléonte, Célidan, Tyrène, Philidas, Amarillis, Lisimène, Climante.<listPerson type="configuration" xml:id="conf38"><person corresp="#DAPHNE"/><person corresp="#CLEONTE"/><person corresp="#TYRENE"/><person corresp="#AMARILLIS"/><person corresp="#LISIMENE"/><person corresp="#CELIDAN"/><person corresp="#PHILIDAS"/><person corresp="#SATYRE1"/><person corresp="#SATYRE2"/><person corresp="#SATYRE3"/><person corresp="#CLIMANTE"/></listPerson></head>
+          <head>SCÈNE DERNIÈRE. Daphné, Cléonte, Célidan, Tyrène, Philidas, Amarillis, Lisimène, Climante.<listPerson type="configuration" xml:id="conf38">
+            <person corresp="#DAPHNE"/>
+            <person corresp="#CLEONTE"/>
+            <person corresp="#TYRENE"/>
+            <person corresp="#AMARILLIS"/>
+            <person corresp="#LISIMENE"/>
+            <person corresp="#CELIDAN"/>
+            <person corresp="#PHILIDAS"/>
+            <person corresp="#SATYRE1"/>
+            <person corresp="#SATYRE2"/>
+            <person corresp="#SATYRE3"/>
+            <person corresp="#CLIMANTE"/></listPerson></head>
           <sp who="DAPHNE" xml:id="V10-1">
             <speaker>DAPHNÉ.</speaker>
             <l part="F">Que j'arrache son coeur,</l>
