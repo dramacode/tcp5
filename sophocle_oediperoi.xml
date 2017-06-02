@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,14 +49,15 @@
       </docImprint>
       <castList>
         <head>LES ACTEURS</head>
-        <castItem><role xml:id="OEDIPE" id="OEDIPE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">OEDIPE</role>.</castItem>
-        <castItem><role xml:id="LESACRIFICATEUR" id="LE SACRIFICATEUR" sex="1" type="H" statut="sacrificateur" age="A" stat_amour="néant">LE SACRIFICATEUR</role>.</castItem>
-        <castItem><role xml:id="JOCASTE" id="JOCASTE" sex="2" type="H" statut="roi" age="A" stat_amour="Oedipe">JOCASTE</role>, mère et femme d’Oedipe.</castItem>
-        <castItem><role xml:id="CREON" id="CRÉON" sex="2" type="H" statut="prince" age="A" stat_amour="néant">CRÉON</role>, oncle d’Oedipe, frère de Jocaste.</castItem>
-        <castItem><role xml:id="OEDIPE" id="LE CHOEUR" sex="2" type="H" statut="prince" age="A" stat_amour="néant">OEDIPE</role>.</castItem>
-        <castItem><role xml:id="TIRESIAS" id="TIRÉSIAS" sex="2" type="H" statut="roi" age="A" stat_amour="néant">TIRÉSIAS</role>.</castItem>
-        <castItem><role xml:id="LEMESSAGER" id="LE MESSAGER" sex="1" type="H" statut="messager" age="A" stat_amour="néant">LE MESSAGER</role>.</castItem>
-        <castItem><role xml:id="LESERVITEUR" rend="veteran" id="LE SERVITEUR" sex="1" type="H" statut="serviteur" age="V" stat_amour="néant">LE SERVITEUR</role>.<role xml:id="LECHOEUR" n="CHOEUR"></role></castItem>
+        <castItem><role xml:id="OEDIPE" rend="male" id="OEDIPE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">Œdipe</role>.</castItem>
+        <castItem><role rend="male inferior" xml:id="LESACRIFICATEUR" id="LE SACRIFICATEUR" sex="1" type="H" statut="sacrificateur" age="A" stat_amour="néant">le sacrificateur</role>.</castItem>
+        <castItem><role xml:id="JOCASTE" rend="female senior" id="JOCASTE" sex="2" type="H" statut="roi" age="A" stat_amour="Oedipe">Jocaste</role>, mère et femme d’Oedipe.</castItem>
+        <castItem><role xml:id="CREON" rend="male senior" id="CRÉON" sex="2" type="H" statut="prince" age="A" stat_amour="néant">Créon</role>, oncle d’Oedipe, frère de Jocaste.</castItem>
+        <castItem><role xml:id="LECHOEUR" id="LE CHOEUR" sex="2" type="H" statut="prince" age="A" stat_amour="néant">le choeur</role>.</castItem>
+        <castItem><role xml:id="TIRESIAS" rend="inferior" id="TIRÉSIAS" sex="2" type="H" statut="roi" age="A" stat_amour="néant">Tirésias</role>.</castItem>
+        <castItem><role xml:id="LEMESSAGER" rend="inferior" id="LE MESSAGER" sex="1" type="H" statut="messager" age="A" stat_amour="néant">le messager</role>.</castItem>
+        <castItem><role xml:id="LESERVITEUR" rend="male veteran inferior" id="LE SERVITEUR" sex="1" type="H" statut="serviteur" age="V" stat_amour="néant">le serviteur</role>.
+        </castItem>
       </castList>
     </front>
     <body>

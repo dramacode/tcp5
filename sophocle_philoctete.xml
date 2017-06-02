@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,12 +49,12 @@
       </docImprint>
       <castList>
         <head>LES ACTEURS</head>
-        <castItem><role xml:id="ULYSSE" id="ULYSSE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">ULYSSE</role>.</castItem>
-        <castItem><role xml:id="NEOPTOLEME" id="NÉOPTOLÈME" sex="1" type="H" statut="prince" age="A" stat_amour="néant">NÉOPTOLÈME</role>.</castItem>
-        <castItem><role xml:id="PHILOCTETE" id="PHILOCTÈTE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">PHILOCTÈTE</role>.</castItem>
-        <castItem><role xml:id="UNMARCHAND." id="UN MARCHAND" sex="2" type="H" statut="roi" age="A" stat_amour="néant">UN MARCHAND.</role>.</castItem>
-        <castItem><role xml:id="HERACLES" id="HÉRACLÈS" sex="1" type="H" statut="roi" age="A" stat_amour="néant">HÉRACLÈS</role>.</castItem>
-        <castItem><role xml:id="LECHOEUR" id="LE CHOEUR" sex="9" type="H" statut="choeur" age="A" stat_amour="néant">LE CHOEUR</role>.</castItem>
+        <castItem><role xml:id="ULYSSE" rend="male">Ulysse</role>.</castItem>
+        <castItem><role xml:id="NEOPTOLEME" rend="male">Néoptolème</role>.</castItem>
+        <castItem><role xml:id="PHILOCTETE" rend="male">Philoctète</role>.</castItem>
+        <castItem><role xml:id="UNMARCHAND" rend="male inferior">un marchand</role>.</castItem>
+        <castItem><role xml:id="HERACLES" rend="male">Héraclès</role>.</castItem>
+        <castItem><role xml:id="LECHOEUR">le choeur</role>.</castItem>
       </castList>
     </front>
     <body>
@@ -2661,7 +2662,7 @@
           </sp>
         </div2>
         <div2 xml:id="I08" type="scene" n="8">
-          <head>Philoctète, Néoptolème.<listPerson type="configuration" xml:id="conf8"><person corresp="#PHILOCTETE"/><person corresp="#NEOPTOLEME"/><person corresp="#ULYSSE"/><person corresp="#HERAKLES"/><person corresp="#LECHOEUR"/></listPerson></head>
+          <head>Philoctète, Néoptolème.<listPerson type="configuration" xml:id="conf8"><person corresp="#PHILOCTETE"/><person corresp="#NEOPTOLEME"/><person corresp="#ULYSSE"/><person corresp="#HERACLES"/><person corresp="#LECHOEUR"/></listPerson></head>
           <sp xml:id="I08-1" who="PHILOCTETE">
             <speaker>PHILOCTÈTE.</speaker>
             <p>
@@ -3076,7 +3077,7 @@
               <s>Marche donc, après avoir baisé cette terre.</s>
             </p>
           </sp>
-          <sp xml:id="I08-62" who="HERAKLES">
+          <sp xml:id="I08-62" who="HERACLES">
             <speaker>HERAKLES.</speaker>
             <p>
               <s>Non pas du moins avant d’avoir écouté mes paroles, fils de Poias. </s>
@@ -3104,7 +3105,7 @@
               <s>Et moi aussi j’ai cette résolution.</s>
             </p>
           </sp>
-          <sp xml:id="I08-65" who="HERAKLES">
+          <sp xml:id="I08-65" who="HERACLES">
             <speaker>HERAKLES.</speaker>
             <p>
               <s>N’apportez donc point de plus longs retards. </s>
@@ -3130,10 +3131,6 @@
           </sp>
         </div2>
       </div1>
-      <note type="L" target="#">Porte-feu : Canal par lequel on allume un four à chaux.</note>
-      <note type="L" target="#s9p66">Notos : Personnification du vent du Sud.</note>
-      <note type="L" target="#">Scyros : Ile de la mer Égée à l’Est de l’île d’Eubée.</note>
-      <note type="L" target="#">Péparèthos : île grecque qui produit du vin. son nom actuel est Skopélos.</note>
     </body>
   </text>
 </TEI>

@@ -48,14 +48,14 @@
       </docImprint>
       <castList>
         <head>LES ACTEURS</head>
-        <castItem><role xml:id="ATHENA" id="ATHÉNA" sex="2" type="D" statut="dieu" age="A" stat_amour="néant">ATHÉNA</role>.</castItem>
-        <castItem><role xml:id="ULYSSE" id="ULYSSE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">ULYSSE</role>.</castItem>
-        <castItem><role xml:id="AJAX" id="AJAX" sex="1" type="H" statut="roi" age="A" stat_amour="Tecmesse">AJAX</role>.</castItem>
-        <castItem><role xml:id="TECMESSE." id="TECMESSE" sex="2" type="H" statut="roi" age="A" stat_amour="Ajax">TECMESSE.</role>, femme d’Ajax.</castItem>
-        <castItem><role xml:id="OEDIPE" id="LE CHOEUR" sex="2" type="H" statut="prince" age="A" stat_amour="néant">OEDIPE</role>.</castItem>
-        <castItem><role xml:id="TEUCROS" id="TEUCROS" sex="1" type="H" statut="roi" age="A" stat_amour="néant">TEUCROS</role>, demi-frère d’Ajax.</castItem>
-        <castItem><role xml:id="MENELAS" id="MÉNÉLAS" sex="1" type="H" statut="roi" age="A" stat_amour="néant">MÉNÉLAS</role>, roi de Sparte, frère d’Agamemnon.</castItem>
-        <castItem><role xml:id="AGAMEMNON" rend="veteran" id="AGAMEMNON" sex="1" type="H" statut="roi" age="V" stat_amour="néant">AGAMEMNON</role>, Roi d’Argos, frère de Ménélas.</castItem>
+        <castItem><role xml:id="ATHENA" rend="superior female">Athéna</role>.</castItem>
+        <castItem><role xml:id="ULYSSE" rend="male">Ulysse</role>.</castItem>
+        <castItem><role xml:id="AJAX" rend="male">Ajax</role>.</castItem>
+        <castItem><role xml:id="TECMESSE" rend="female">Tecmesse</role>, femme d’Ajax.</castItem>
+        <castItem><role xml:id="LECHOEUR">le choeur</role>.<role xml:id="CHOEUR1" n="demi chœur 1"/><role xml:id="CHOEUR2" n="demi chœur 2"/><role xml:id="UNMESSAGER" n="un messager"/></castItem>
+        <castItem><role xml:id="TEUCROS" rend="male">Teucros</role>, demi-frère d’Ajax.</castItem>
+        <castItem><role xml:id="MENELAS" rend="male superior">Ménélas</role>, roi de Sparte, frère d’Agamemnon.</castItem>
+        <castItem><role xml:id="AGAMEMNON" rend="veteran superior">Agamemnon</role>, Roi d’Argos, frère de Ménélas.</castItem>
       </castList>
     </front>
     <body>
@@ -623,7 +623,7 @@
           </sp>
         </div2>
         <div2 xml:id="I03" type="scene" n="3">
-          <head>Ajax, Le Choeur, Tecmesse.<listPerson type="configuration" xml:id="conf3"><person corresp="#AJAX"/><person corresp="#TECMESSE"/><person corresp="#LECHOEUR"/><person corresp="#TECMESSE."/></listPerson></head>
+          <head>Ajax, Le Choeur, Tecmesse.<listPerson type="configuration" xml:id="conf3"><person corresp="#AJAX"/><person corresp="#TECMESSE"/><person corresp="#LECHOEUR"/></listPerson></head>
           <sp xml:id="I03-1" who="AJAX">
             <speaker>AJAX.</speaker>
             <p>
@@ -1346,7 +1346,7 @@
           </sp>
         </div2>
         <div2 xml:id="I05" type="scene" n="5">
-          <head>Ajax, Le Choeur, Tecmesse, Teucros.<listPerson type="configuration" xml:id="conf5"><person corresp="#AJAX"/><person corresp="#PREMIERDEMICHOEUR"/><person corresp="#DEUXIEMEDEMICHOEUR"/><person corresp="#LECHOEUR"/><person corresp="#TECMESSE"/><person corresp="#TEUCROS"/></listPerson></head>
+          <head>Ajax, Le Choeur, Tecmesse, Teucros.<listPerson type="configuration" xml:id="conf5"><person corresp="#AJAX"/><person corresp="#CHOEUR1"/><person corresp="#CHOEUR2"/><person corresp="#LECHOEUR"/><person corresp="#TECMESSE"/><person corresp="#TEUCROS"/></listPerson></head>
           <sp xml:id="I05-1" who="AJAX">
             <speaker>AJAX.</speaker>
             <p>
@@ -1377,7 +1377,7 @@
               <s>Je raconterai le reste aux ombres dans le Hadès.</s>
             </p>
           </sp>
-          <sp xml:id="I05-2" who="PREMIERDEMICHOEUR">
+          <sp xml:id="I05-2" who="CHOEUR1">
             <speaker>PREMIER DEMI-CHOEUR.</speaker>
             <p>
               <s>Le travail ajouté au travaille porte au comble. </s>
@@ -1386,37 +1386,37 @@
               <s>Mais voici, voici que j’entends quelque bruit.</s>
             </p>
           </sp>
-          <sp xml:id="I05-3" who="DEUXIEMEDEMICHOEUR">
+          <sp xml:id="I05-3" who="CHOEUR2">
             <speaker>DEUXIÈME DEMI-CHOEUR.</speaker>
             <p>
               <s>C’est nous, vos compagnons de nefs.</s>
             </p>
           </sp>
-          <sp xml:id="I05-4" who="PREMIERDEMICHOEUR">
+          <sp xml:id="I05-4" who="CHOEUR1">
             <speaker>PREMIER DEMI-CHOEUR.</speaker>
             <p>
               <s>Qu’y a-t-il donc ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-5" who="DEUXIEMEDEMICHOEUR">
+          <sp xml:id="I05-5" who="CHOEUR2">
             <speaker>DEUXIÈME DEMI-CHOEUR.</speaker>
             <p>
               <s>J’ai parcouru tout le côté occidental du camp naval.</s>
             </p>
           </sp>
-          <sp xml:id="I05-6" who="PREMIERDEMICHOEUR">
+          <sp xml:id="I05-6" who="CHOEUR1">
             <speaker>PREMIER DEMI-CHOEUR.</speaker>
             <p>
               <s>Qu’as-tu trouvé ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-7" who="DEUXIEMEDEMICHOEUR">
+          <sp xml:id="I05-7" who="CHOEUR2">
             <speaker>DEUXIÈME DEMI-CHOEUR.</speaker>
             <p>
               <s>Abondance de peine, et je n’ai vu rien de plus.</s>
             </p>
           </sp>
-          <sp xml:id="I05-8" who="PREMIERDEMICHOEUR">
+          <sp xml:id="I05-8" who="CHOEUR1">
             <speaker>PREMIER DEMI-CHOEUR.</speaker>
             <p>
               <s>Moi, j’ai parcouru le côté oriental, et l’homme ne s’est laissé voir nulle part.</s>

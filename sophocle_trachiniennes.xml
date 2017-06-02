@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Les trachiniennes</title><title type="sub">, tragédie.</title>
-        <author born="-496" born_location="" death="-406" death_location="" academie=""><surname>Sophocle</surname></author>
+        <title>Les trachiniennes</title>
+        <title type="sub">, tragédie.</title>
+        <author academie="" born="-496" born_location="" death="-406" death_location="">
+          <surname>Sophocle</surname>
+        </author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE mars 2016</p>
@@ -29,7 +33,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -42,27 +46,29 @@
         <titlePart type="main">Traduction nouvelle de Leconte de Lisle</titlePart>
       </docTitle>
       <docDate value="1877">1877</docDate>
-      <docAuthor id="SOPHOCLE" bio="">SOPHOCLE.</docAuthor>
+      <docAuthor bio="" id="SOPHOCLE">SOPHOCLE.</docAuthor>
       <docImprint>
         <printer id="LEMERRE">Paris : impr. A. Lemerre</printer>
       </docImprint>
       <castList>
         <head>LES ACTEURS</head>
-        <castItem><role xml:id="DEJANIRE" id="DÉJANIRE" sex="2" type="D" statut="prince" age="A" stat_amour="hérasclès">DÉJANIRE</role>, femme d’Héraclès.</castItem>
-        <castItem><role xml:id="LASERVANTE" id="LA SERVANTE" sex="2" type="H" statut="servante" age="A" stat_amour="néant">LA SERVANTE</role>.</castItem>
-        <castItem><role xml:id="HYLLOS" id="HYLLOS" sex="1" type="H" statut="prince" age="A" stat_amour="néant">HYLLOS</role>, fils d’Héraclès et de Déjanire.</castItem>
-        <castItem><role xml:id="HERACLES." id="HÉRACLÈS" sex="2" type="H" statut="héros" age="A" stat_amour="Déjanire">HÉRACLÈS.</role>.</castItem>
-        <castItem><role xml:id="LECHOEUR" id="LE CHOEUR" sex="2" type="H" statut="choeur" age="A" stat_amour="néant">LE CHOEUR</role>.</castItem>
-        <castItem><role xml:id="LEMESSAGER" rend="veteran" id="LE MESSAGER" sex="1" type="H" statut="messager" age="V" stat_amour="néant">LE MESSAGER</role>.</castItem>
-        <castItem><role xml:id="LICHAS" id="LICHAS" sex="1" type="H" statut="serviteur" age="A" stat_amour="néant">LICHAS</role>.</castItem>
+        <castItem><role xml:id="DEJANIRE" rend="female">Déjanire</role>, femme d’Héraclès.</castItem>
+        <castItem><role xml:id="LASERVANTE" rend="female inferior">la servante</role>.</castItem>
+        <castItem><role xml:id="HYLLOS" rend="male junior">HYLLOS</role>, fils d’Héraclès et de Déjanire.</castItem>
+        <castItem><role xml:id="HERACLES" rend="male">Héraclès</role>.</castItem>
+        <castItem><role xml:id="LECHOEUR">le chœur</role>.<role xml:id="CHOEUR1" n="premier demi-chœur"/><role xml:id="CHOEUR2" n="deuxième demi-chœur"/></castItem>
+        <castItem><role xml:id="LEMESSAGER" rend="male inferior">le messager</role>.<role xml:id="UNVIEILLARD" n="un vieillard" rend="male veteran inferior"/><role xml:id="LANOURRICE" n="la nourrice" rend="female veteran inferior"/></castItem>
+        <castItem><role xml:id="LICHAS" rend="male inferior">LICHAS</role>.</castItem>
       </castList>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>LES TRACHINIENNES</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>Déjanire, La Servante.<listPerson type="configuration" xml:id="conf1"><person corresp="#DEJANIRE"/><person corresp="#LASERVANTE"/></listPerson></head>
-          <sp xml:id="I01-1" who="DEJANIRE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>Déjanire, La Servante.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#DEJANIRE"/>
+            <person corresp="#LASERVANTE"/></listPerson></head>
+          <sp who="DEJANIRE" xml:id="I01-1">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>C’est une parole antique et bien connue dans la bouche des hommes, qu’on ne saurait dire, avant qu’il soit mort, si la vie de chacun a été bonne ou mauvaise. </s>
@@ -82,7 +88,7 @@
               <s>Il est arrivé sans doute quelque grand malheur, si j’en juge par ces tablettes qu’il m’a laissées en partant, et je prie les dieux qu’elles ne me soient pas une cause de misère.</s>
             </p>
           </sp>
-          <sp xml:id="I01-2" who="LASERVANTE">
+          <sp who="LASERVANTE" xml:id="I01-2">
             <speaker>LA SERVANTE.</speaker>
             <p>
               <s>Maîtresse Déjanire, je t’ai vue déjà, par des lamentations et d’abondantes larmes, déplorer le départ de Héraclès ; mais, s’il est permis aux esclaves de conseiller les personnes libres, je puis te dire quelques paroles. </s>
@@ -92,84 +98,86 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>Déjanire, Hyllos.<listPerson type="configuration" xml:id="conf2"><person corresp="#DEJANIRE"/><person corresp="#HYLLOS"/></listPerson></head>
-          <sp xml:id="I02-1" who="DEJANIRE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>Déjanire, Hyllos.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#DEJANIRE"/>
+            <person corresp="#HYLLOS"/></listPerson></head>
+          <sp who="DEJANIRE" xml:id="I02-1">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Ô fils, ô enfant, ceux de vile naissance peuvent dire de sages paroles. </s>
               <s>Cette femme, en effet, bien qu’elle soit esclave, a parlé comme une personne libre.</s>
             </p>
           </sp>
-          <sp xml:id="I02-2" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I02-2">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Qu’est-ce ? </s>
               <s>Fais que je le sache, mère, s’il m’est permis de le savoir.</s>
             </p>
           </sp>
-          <sp xml:id="I02-3" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I02-3">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Elle dit qu’il est honteux de ne pas t’informer où est ton père absent depuis un si long temps.</s>
             </p>
           </sp>
-          <sp xml:id="I02-4" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I02-4">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Mais je le sais, si on peut en croire la rumeur de tous.</s>
             </p>
           </sp>
-          <sp xml:id="I02-5" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I02-5">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Et en quel lieu de la terre, fils, as-tu appris qu’il s’était arrêté ?</s>
             </p>
           </sp>
-          <sp xml:id="I02-6" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I02-6">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>On dit qu’en ces derniers temps, durant toute une année, il a servi une femme Lydienne.</s>
             </p>
           </sp>
-          <sp xml:id="I02-7" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I02-7">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>S’il a souffert cela, que ne peut-il pas avoir souffert !</s>
             </p>
           </sp>
-          <sp xml:id="I02-8" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I02-8">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Mais j’ai su qu’il était sorti de cet esclavage.</s>
             </p>
           </sp>
-          <sp xml:id="I02-9" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I02-9">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Où dit-on qu’il est maintenant vivant ou mort ?</s>
             </p>
           </sp>
-          <sp xml:id="I02-10" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I02-10">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>On dit qu’il marche ou qu’il va marcher vers la terre Euboïde, contre la ville d’Eurytos.</s>
             </p>
           </sp>
-          <sp xml:id="I02-11" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I02-11">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Sais-tu, ô fils, qu’il m’a laissé des oracles certains sur ce pays ?</s>
             </p>
           </sp>
-          <sp xml:id="I02-12" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I02-12">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Lesquels, mère ? </s>
               <s>Je les ignore.</s>
             </p>
           </sp>
-          <sp xml:id="I02-13" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I02-13">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Il y rencontrera son jour suprême, ou bien, ce dernier combat terminé, il devra passer le reste de sa vie paisiblement et heureusement. </s>
@@ -177,7 +185,7 @@
               <s>Aussi bien, s’il a la vie sauve, nous serons sauvés, ou nous périrons d’une même mort.</s>
             </p>
           </sp>
-          <sp xml:id="I02-14" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I02-14">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>J’irai, mère. </s>
@@ -185,16 +193,18 @@
               <s>Maintenant la destinée connue de mon père ne me permet pas de craindre ou d’hésiter davantage.</s>
             </p>
           </sp>
-          <sp xml:id="I02-15" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I02-15">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Va donc, ô enfant, car, même à qui vient trop tard, une heureuse nouvelle apporte un gain assuré.</s>
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>Le Choeur, Déjanire.<listPerson type="configuration" xml:id="conf3"><person corresp="#LECHOEUR"/><person corresp="#DEJANIRE"/></listPerson></head>
-          <sp xml:id="I03-1" who="LECHOEUR">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>Le Choeur, Déjanire.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#LECHOEUR"/>
+            <person corresp="#DEJANIRE"/></listPerson></head>
+          <sp who="LECHOEUR" xml:id="I03-1">
             <speaker>LE CHOEUR.</speaker>
             <stage type="[N/A]">Strophe I.</stage>
             <p>
@@ -224,7 +234,7 @@
               <s>C’est pourquoi, reine, je veux que tu gardes l’espérance, car qui a jamais vu Zeus ne point s’inquiéter de ses enfants ?</s>
             </p>
           </sp>
-          <sp xml:id="I03-2" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I03-2">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Tu viens à moi, je pense, au bruit de mon malheur. </s>
@@ -241,7 +251,7 @@
               <s>C’est pourquoi, ô chères, tandis que je repose en un doux sommeil, je bondis, épouvantée, redoutant de survivre au plus grand des hommes.</s>
             </p>
           </sp>
-          <sp xml:id="I03-3" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I03-3">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Espère mieux maintenant. </s>
@@ -249,48 +259,52 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>Le Messager, Déjanire.<listPerson type="configuration" xml:id="conf4"><person corresp="#LEMESSAGER"/><person corresp="#DEJANIRE"/><person corresp="#LECHOEUR"/><person corresp="#LICHAS"/></listPerson></head>
-          <sp xml:id="I04-1" who="LEMESSAGER">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>Le Messager, Déjanire.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#LEMESSAGER"/>
+            <person corresp="#DEJANIRE"/>
+            <person corresp="#LECHOEUR"/>
+            <person corresp="#LICHAS"/></listPerson></head>
+          <sp who="LEMESSAGER" xml:id="I04-1">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Maîtresse Déjanire, le premier de tous les messagers, je te tirerai d’inquiétude. </s>
               <s>Sache que le fils d’Alcmène, vivant et victorieux, rapporte du combat les prémices de la victoire pour les dieux de cette terre.</s>
             </p>
           </sp>
-          <sp xml:id="I04-2" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-2">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Qu’est-ce ? </s>
               <s>Que me dis-tu, vieillard ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-3" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-3">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Que cet époux appelé par tant de voeux va rentrer dans la demeure, portant les marques de la victoire.</s>
             </p>
           </sp>
-          <sp xml:id="I04-4" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-4">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>As-tu appris ce que tu annonces d’un citoyen ou d’un étranger ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-5" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-5">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Dans un pâturage de boeufs, le héraut Lichas le racontait à la foule. </s>
               <s>Dès que je l’eus entendu, je volai afin de te l’annoncer le premier et de mériter une récompense.</s>
             </p>
           </sp>
-          <sp xml:id="I04-6" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-6">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Et pourquoi Lichas lui-même n’est-il pas ici, puisque tout est pour le mieux ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-7" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-7">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>C’est qu’on lui barre la route, femme. </s>
@@ -299,14 +313,14 @@
               <s>Ainsi il cède à leurs désirs malgré sa volonté ; mais tu le verras bientôt lui-même.</s>
             </p>
           </sp>
-          <sp xml:id="I04-8" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-8">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Ô Zeus, qui habites la prairie non fauchée de l’Oïta, tu nous as donné cette joie, bien que tardivement. </s>
               <s>Élevez la voix, ô femmes, les unes dans la demeure et les autres au dehors, car voici que nous nous réjouissons de cette nouvelle dont la lumière inespérée se lève pour moi.</s>
             </p>
           </sp>
-          <sp xml:id="I04-9" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I04-9">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Poussez des cris joyeux autour des autels, demeures qui reverrez l’époux ! </s>
@@ -326,7 +340,7 @@
               <s>Vois, ô la plus chère des femmes, ce qui s’offre à toi.</s>
             </p>
           </sp>
-          <sp xml:id="I04-10" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-10">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Je vois, chères femmes. </s>
@@ -334,26 +348,26 @@
               <s>Je souhaite qu’il prospère ce héraut attendu si longtemps, s’il m’apporte quelque chose d’heureux.</s>
             </p>
           </sp>
-          <sp xml:id="I04-11" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-11">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Certes, nous revenons heureusement, et nous sommes bien accueillis, femme, pour les choses que nous avons faites. </s>
               <s>Il est juste de récompenser par de bonnes paroles l’homme qui a victorieusement combattu.</s>
             </p>
           </sp>
-          <sp xml:id="I04-12" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-12">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Ô le plus cher des hommes, avant tout dis-moi ce que je désire savoir : reverrai-je Héraclès vivant ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-13" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-13">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Assurément je l’ai laissé plein de force, vivant, florissant et non atteint de maladie.</s>
             </p>
           </sp>
-          <sp xml:id="I04-14" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-14">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Où ? </s>
@@ -361,25 +375,25 @@
               <s>Dis.</s>
             </p>
           </sp>
-          <sp xml:id="I04-15" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-15">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Sur le rivage Euboïque où il consacre des autels et des grappes de fruits à Zeus Kènaien.</s>
             </p>
           </sp>
-          <sp xml:id="I04-16" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-16">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Accomplit-il des voeux promis ou obéit-il à un oracle ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-17" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-17">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Il accomplit les voeux faits tandis qu’il assiégeait et dévastait par la lance la ville de ces femmes que tu vois devant toi.</s>
             </p>
           </sp>
-          <sp xml:id="I04-18" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-18">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Et celles-ci ? </s>
@@ -388,19 +402,19 @@
               <s>Elles sont dignes de compassion, si leurs misères ne m’abusent pas.</s>
             </p>
           </sp>
-          <sp xml:id="I04-19" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-19">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Héraclès, ayant détruit la ville d’Eurytos, les a faites ses esclaves et offertes aux dieux.</s>
             </p>
           </sp>
-          <sp xml:id="I04-20" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-20">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Est-ce devant cette ville qu’il a consumé ce nombre incroyable de jours ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-21" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-21">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Non, car il a été retenu le plus longtemps chez les Lydiens, et, comme il le dit lui-même, non libre, mais vendu. </s>
@@ -420,13 +434,13 @@
               <s>Et ceci est le plus agréable à entendre de tout ce que je t’ai dit déjà.</s>
             </p>
           </sp>
-          <sp xml:id="I04-22" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I04-22">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Reine, ce que tu vois et ce que tu entends te permettent maintenant de montrer toute ta joie.</s>
             </p>
           </sp>
-          <sp xml:id="I04-23" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-23">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Pourquoi ne me réjouirais-je pas en effet, et à bon droit, ayant appris l’heureuse destinée de mon époux ? </s>
@@ -445,7 +459,7 @@
               <s>Plus que toutes les autres je l’ai prise en pitié, quand j’ai vu que, seule, elle montrait une plus grande sagesse.</s>
             </p>
           </sp>
-          <sp xml:id="I04-24" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-24">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Que sais-je ! </s>
@@ -453,41 +467,41 @@
               <s>Peut-être n’est-elle pas née d’une race vile parmi les habitants de ce pays.</s>
             </p>
           </sp>
-          <sp xml:id="I04-25" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-25">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Sort-elle des tyrans ? </s>
               <s>Eurytos avait-il une fille ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-26" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-26">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Je ne sais. </s>
               <s>Je ne m’en suis pas plus inquiété.</s>
             </p>
           </sp>
-          <sp xml:id="I04-27" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-27">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>As-tu entendu son nom de quelque compagnon de route ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-28" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-28">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Non. </s>
               <s>J’ai accompli mon message en silence.</s>
             </p>
           </sp>
-          <sp xml:id="I04-29" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-29">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Parle de ton propre mouvement, ô malheureuse ! </s>
               <s>Car ceci est triste qu’on ne sache qui tu es.</s>
             </p>
           </sp>
-          <sp xml:id="I04-30" who="LICHAS">
+          <sp who="LICHAS" xml:id="I04-30">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Elle ne le fera pas plus maintenant qu’auparavant, n’ayant encore prononcé aucune parole, ni grande, ni petite. </s>
@@ -495,7 +509,7 @@
               <s>Certes, elle subit une destinée mauvaise, mais il faut lui pardonner.</s>
             </p>
           </sp>
-          <sp xml:id="I04-31" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-31">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Laissons-la donc, et qu’elle entre dans la demeure, si cela lui plaît mieux. </s>
@@ -505,60 +519,60 @@
               <s>Toi, va où tu veux aller ; moi, je vais faire les apprêts intérieurs.</s>
             </p>
           </sp>
-          <sp xml:id="I04-32" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-32">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Attends au moins quelques instants, afin de savoir, tous ceux-ci étant éloignés, quelles sont celles que tu fais entrer dans la demeure. </s>
               <s>Il est nécessaire que tu saches ce qu’on ne t’a pas dit, car j’ai la pleine connaissance de ces choses.</s>
             </p>
           </sp>
-          <sp xml:id="I04-33" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-33">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Pourquoi m’empêches-tu d’avancer ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-34" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-34">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Arrête et écoute. </s>
               <s>Puisque tu as entendu sans regret ce que je t’ai dit déjà, je pense que tu m’écouteras de même maintenant.</s>
             </p>
           </sp>
-          <sp xml:id="I04-35" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-35">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Les ferons-nous revenir, ou veux-tu parler seulement pour moi et celles-ci ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-36" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-36">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Rien n’empêche que je parle pour toi et celles-ci, mais laisse sortir les autres.</s>
             </p>
           </sp>
-          <sp xml:id="I04-37" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-37">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Elles sont parties. </s>
               <s>Maintenant, parle.</s>
             </p>
           </sp>
-          <sp xml:id="I04-38" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-38">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>De tout ce que l’homme a dit, rien n’est franc, ni vrai. </s>
               <s>Ou il ment maintenant, ou il mentait auparavant.</s>
             </p>
           </sp>
-          <sp xml:id="I04-39" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-39">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Que dis-tu ? </s>
               <s>Dis clairement ce que tu penses, car je ne sais ce que tu dis.</s>
             </p>
           </sp>
-          <sp xml:id="I04-40" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-40">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>J’ai entendu cet homme déclarer devant beaucoup de témoins qu’Eurytos avait été tué et que Oikhalia hérissée de tours avait été prise par Héraclès à cause de cette vierge ; que, seul de tous les dieux, Éros l’avait excité à cette guerre, et non son séjour chez les Lydiens, ni ses travaux serviles infligés par Omphale, ni le meurtre d’Iphitos précipité d’en haut. </s>
@@ -572,7 +586,7 @@
               <s>Si je dis des choses déplaisantes, je ne m’en réjouis pas, mais, cependant, j’ai dit la vérité.</s>
             </p>
           </sp>
-          <sp xml:id="I04-41" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-41">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Hélas ! </s>
@@ -583,7 +597,7 @@
               <s>Celle-ci n’est donc pas sans nom, comme le jurait celui qui l’a amenée ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-42" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I04-42">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Elle resplendit par sa beauté et par sa race. </s>
@@ -591,40 +605,40 @@
               <s>Si Lichas n’a point dit ses parents, c’est qu’il ne s’en était point informé.</s>
             </p>
           </sp>
-          <sp xml:id="I04-43" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I04-43">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Je ne demande pas que tous les mauvais périssent, mais au moins ceux qui ourdissent des ruses pour le mal.</s>
             </p>
           </sp>
-          <sp xml:id="I04-44" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-44">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Que faut-il que je fasse, femme ? </s>
               <s>Je suis anéantie de ce que j’ai entendu.</s>
             </p>
           </sp>
-          <sp xml:id="I04-45" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I04-45">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Va, et interroge Lichas lui-même. </s>
               <s>Il dira la vérité, si tu sembles vouloir l’y contraindre par la force.</s>
             </p>
           </sp>
-          <sp xml:id="I04-46" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-46">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>J’irai, car ce que tu dis est sage.</s>
             </p>
           </sp>
-          <sp xml:id="I04-47" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I04-47">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Resterons-nous ici ? </s>
               <s>Que faire ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-48" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I04-48">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Restez. </s>
@@ -632,53 +646,57 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>Lichas, Déjanire.<listPerson type="configuration" xml:id="conf5"><person corresp="#LICHAS"/><person corresp="#DEJANIRE"/><person corresp="#LEMESSAGER"/><person corresp="#LECHOEUR"/></listPerson></head>
-          <sp xml:id="I05-1" who="LICHAS">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>Lichas, Déjanire.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#LICHAS"/>
+            <person corresp="#DEJANIRE"/>
+            <person corresp="#LEMESSAGER"/>
+            <person corresp="#LECHOEUR"/></listPerson></head>
+          <sp who="LICHAS" xml:id="I05-1">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Que faut-il annoncer à Héraclès, femme ? </s>
               <s>Dis-le-moi, car tu vois que je pars.</s>
             </p>
           </sp>
-          <sp xml:id="I05-2" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I05-2">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Tu pars bien promptement, ayant longtemps tardé à venir, et avant que nous ayons repris l’entretien.</s>
             </p>
           </sp>
-          <sp xml:id="I05-3" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-3">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Si tu veux apprendre quelque chose, me voici.</s>
             </p>
           </sp>
-          <sp xml:id="I05-4" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I05-4">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Diras-tu sincèrement la vérité ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-5" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-5">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Le grand Zeus m’en est témoin ! </s>
               <s>du moins ce qui m’est connu.</s>
             </p>
           </sp>
-          <sp xml:id="I05-6" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I05-6">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Quelle est cette femme que tu as amenée ici ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-7" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-7">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Elle vient d’Euboiè ; mais je ne puis dire de quels parents elle est née.</s>
             </p>
           </sp>
-          <sp xml:id="I05-8" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-8">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Holà ! </s>
@@ -687,124 +705,124 @@
               <s>À qui crois-tu parler ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-9" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-9">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Et toi, pourquoi m’interroges-tu ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-10" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-10">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Ose répondre, si tu as l’esprit sain, à ce que je te demande.</s>
             </p>
           </sp>
-          <sp xml:id="I05-11" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-11">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Je parle à la reine Déjanire, fille d’Oenée, épouse de Héraclès, et, à moins que mes yeux ne me trompent, à ma maîtresse.</s>
             </p>
           </sp>
-          <sp xml:id="I05-12" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-12">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Voilà ce que je voulais entendre de toi. </s>
               <s>Tu dis qu’elle est ta maîtresse ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-13" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-13">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Certes, avec justice.</s>
             </p>
           </sp>
-          <sp xml:id="I05-14" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-14">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Quel supplice ne mérites-tu pas, s’il en est ainsi, et si tu avoues ton iniquité envers elle ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-15" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-15">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Comment inique ? </s>
               <s>Pourquoi me parler avec ruse ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-16" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-16">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Il n’en est rien. </s>
               <s>C’est toi qui agis ainsi.</s>
             </p>
           </sp>
-          <sp xml:id="I05-17" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-17">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Je pars. </s>
               <s>Vraiment, j’ai été insensé de t’écouter si longtemps.</s>
             </p>
           </sp>
-          <sp xml:id="I05-18" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-18">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Ne pars pas avant de répondre brièvement à une question.</s>
             </p>
           </sp>
-          <sp xml:id="I05-19" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-19">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Parle, si tu veux. </s>
               <s>En effet, tu n’es pas muet d’habitude.</s>
             </p>
           </sp>
-          <sp xml:id="I05-20" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-20">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Connais-tu cette captive, que tu as amenée dans la demeure ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-21" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-21">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Non. </s>
               <s>Pourquoi t’en informes-tu ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-22" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-22">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>N’as-tu pas dit que cette femme, que tu feins de ne pas connaître, était Iole, fille d’Eurytos ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-23" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-23">
             <speaker>LICHAS.</speaker>
             <p>
               <s>À qui parmi les hommes ? </s>
               <s>Qui viendra t’affirmer que j’ai parlé ainsi devant lui ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-24" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-24">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Un grand nombre de citoyens. </s>
               <s>La foule des Trachimens, au milieu de l’Agora, t’a entendu dire cela.</s>
             </p>
           </sp>
-          <sp xml:id="I05-25" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-25">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Certes, j’ai répété ce que j’ai entendu ; mais il est différent de rapporter une opinion ou d’affirmer qu’une chose est certaine.</s>
             </p>
           </sp>
-          <sp xml:id="I05-26" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-26">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Que me parles-tu d’opinion ! </s>
               <s>N’as-tu pas affirmé par serment que tu amenais cette épouse de Héraclès ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-27" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-27">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Son épouse ? </s>
@@ -812,20 +830,20 @@
               <s>Je t’adjure par les dieux, chère maîtresse, dis-moi qui est cet étranger.</s>
             </p>
           </sp>
-          <sp xml:id="I05-28" who="LEMESSAGER">
+          <sp who="LEMESSAGER" xml:id="I05-28">
             <speaker>LE MESSAGER.</speaker>
             <p>
               <s>Un homme qui, présent, t’a entendu dire que c’était à cause de ce désir de Héraclès que toute une ville avait été détruite, que ce n’était pas une Lydienne mais l’amour seul qui avait amené cette ruine.</s>
             </p>
           </sp>
-          <sp xml:id="I05-29" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-29">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Que cet homme sorte, ô maîtresse, je t’en prie ! </s>
               <s>Il n’est pas d’un homme sage de se quereller avec un insensé.</s>
             </p>
           </sp>
-          <sp xml:id="I05-30" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I05-30">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Je t’adjure par Zeus qui lance la foudre sur la haute forêt de l’Oita, ne me cache point la vérité. </s>
@@ -846,13 +864,13 @@
               <s>Pour toi, je te le dis, quoi que tu fasses avec tout autre, avec moi il faut que tu dises toujours la vérité.</s>
             </p>
           </sp>
-          <sp xml:id="I05-31" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I05-31">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Obéis aux bonnes paroles de cette femme ; tu ne te le reprocheras pas plus tard, et tu auras ma gratitude.</s>
             </p>
           </sp>
-          <sp xml:id="I05-32" who="LICHAS">
+          <sp who="LICHAS" xml:id="I05-32">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Ô chère maîtresse, puisque je te vois, mortelle parmi les mortels, sage et pleine d’indulgence, je te dirai toute la vérité et ne te cacherai rien. </s>
@@ -865,9 +883,11 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>Déjanire, Le Choeur.<listPerson type="configuration" xml:id="conf6"><person corresp="#DEJANIRE"/><person corresp="#LECHOEUR"/></listPerson></head>
-          <sp xml:id="I06-1" who="DEJANIRE">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>Déjanire, Le Choeur.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#DEJANIRE"/>
+            <person corresp="#LECHOEUR"/></listPerson></head>
+          <sp who="DEJANIRE" xml:id="I06-1">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Certes, ma pensée est d’agir ainsi. </s>
@@ -876,7 +896,7 @@
               <s>Il n’est pas convenable que tu partes sans rien, étant venu avec ce nombreux cortége.</s>
             </p>
           </sp>
-          <sp xml:id="I06-2" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I06-2">
             <speaker>LE CHOEUR.</speaker>
             <stage type="[N/A]">Strophe.</stage>
             <p>
@@ -899,7 +919,7 @@
               <s>Puis elle s’éloigna de sa mère comme une génisse abandonnée.</s>
             </p>
           </sp>
-          <sp xml:id="I06-3" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I06-3">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Ô chères, pendant que l’hôte parle, dans la demeure, aux jeunes captives et s’apprête à partir, j’ai passé secrètement le seuil, et je suis venue à vous afin de vous raconter la ruse que j’ai préparée et de gémir ensemble sur les maux que je subis. </s>
@@ -925,25 +945,25 @@
               <s>L’emporter par ce philtre sur cette jeune fille et ramener ainsi Héraclès, c’est ce que je veux accomplir, à moins qu’il ne vous semble que je tente de vains efforts, car, alors, j’y renoncerai.</s>
             </p>
           </sp>
-          <sp xml:id="I06-4" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I06-4">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Certes, si tu as foi en ceci, il nous semble que ton dessein n’est point blâmable.</s>
             </p>
           </sp>
-          <sp xml:id="I06-5" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I06-5">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>J’ai foi sans doute, mais j’espère seulement, n’en ayant point encore usé.</s>
             </p>
           </sp>
-          <sp xml:id="I06-6" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I06-6">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Il faut tenter, car, quoi qu’il te semble, tu n’auras aucune certitude de la chose, que tu ne l’aies éprouvée.</s>
             </p>
           </sp>
-          <sp xml:id="I06-7" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I06-7">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Nous le saurons bientôt, car je vois l’homme sortir de la demeure, et il arrivera promptement. </s>
@@ -951,16 +971,19 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
-          <head>Déjanire, Le Choeur, Lichas.<listPerson type="configuration" xml:id="conf7"><person corresp="#LICHAS"/><person corresp="#DEJANIRE"/><person corresp="#LECHOEUR"/></listPerson></head>
-          <sp xml:id="I07-1" who="LICHAS">
+        <div2 n="7" type="scene" xml:id="I07">
+          <head>Déjanire, Le Choeur, Lichas.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#LICHAS"/>
+            <person corresp="#DEJANIRE"/>
+            <person corresp="#LECHOEUR"/></listPerson></head>
+          <sp who="LICHAS" xml:id="I07-1">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Que veux-tu que je fasse ? </s>
               <s>Ordonne, fille d’Oenée, car je me suis attardé ici trop longtemps.</s>
             </p>
           </sp>
-          <sp xml:id="I07-2" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-2">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Je songeais à cela, Lichas, pendant que tu parlais dans la demeure à ces femmes étrangères. </s>
@@ -972,45 +995,45 @@
               <s>Aie enfin le souci que sa gratitude et la mienne te soient dues.</s>
             </p>
           </sp>
-          <sp xml:id="I07-3" who="LICHAS">
+          <sp who="LICHAS" xml:id="I07-3">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Ayant toujours usé honnêtement de la science de Hermès, je ne faillirai jamais envers toi. </s>
               <s>Je porterai ce vase et je répéterai fidèlement les paroles que tu as dites.</s>
             </p>
           </sp>
-          <sp xml:id="I07-4" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-4">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Pars donc, car tu sais où en sont les choses dans cette demeure.</s>
             </p>
           </sp>
-          <sp xml:id="I07-5" who="LICHAS">
+          <sp who="LICHAS" xml:id="I07-5">
             <speaker>LICHAS.</speaker>
             <p>
               <s>Je le sais et je dirai qu’elles sont au mieux.</s>
             </p>
           </sp>
-          <sp xml:id="I07-6" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-6">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Tu sais aussi qu’ayant bien accueilli l’étrangère, je l’ai reçue avec beaucoup de bienveillance dans la demeure.</s>
             </p>
           </sp>
-          <sp xml:id="I07-7" who="LICHAS">
+          <sp who="LICHAS" xml:id="I07-7">
             <speaker>LICHAS.</speaker>
             <p>
               <s>De telle façon que mon coeur en a été stupéfait de joie.</s>
             </p>
           </sp>
-          <sp xml:id="I07-8" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-8">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Que pourrais-tu dire de plus ? </s>
               <s>Je crains, en effet, que tu parles du désir que j’ai de lui avant que tu saches s’il a le même désir de moi</s>
             </p>
           </sp>
-          <sp xml:id="I07-9" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I07-9">
             <speaker>LE CHOEUR.</speaker>
             <stage type="[N/A]">Strophe I.</stage>
             <p>
@@ -1034,43 +1057,43 @@
               <s>Qu’il arrive, désirable, et pénétré du philtre persuasif révélé par le centaure !</s>
             </p>
           </sp>
-          <sp xml:id="I07-10" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-10">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Femmes, combien je redoute d’avoir fait au delà de ce que je devais faire !</s>
             </p>
           </sp>
-          <sp xml:id="I07-11" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I07-11">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Qu’est-ce donc, Déjanire, fille d’Oenée ?</s>
             </p>
           </sp>
-          <sp xml:id="I07-12" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-12">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Je ne sais, mais je suis anxieuse, craignant qu’on m’accuse d’avoir causé un grand mal, malgré mon espérance contraire.</s>
             </p>
           </sp>
-          <sp xml:id="I07-13" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I07-13">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Est-ce au sujet des présents que tu as envoyés à Héraclès ?</s>
             </p>
           </sp>
-          <sp xml:id="I07-14" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-14">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Certes, et je voudrais que personne ne pût se hâter d’agir, si ce n’est avec certitude.</s>
             </p>
           </sp>
-          <sp xml:id="I07-15" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I07-15">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Dis-nous, si cela est permis, la cause de ta crainte.</s>
             </p>
           </sp>
-          <sp xml:id="I07-16" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-16">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Il est arrivé une chose telle, femmes, que, si je la dis, vous entendrez raconter une merveille inattendue. </s>
@@ -1097,31 +1120,31 @@
               <s>Mais je suis résolue, s’il meurt, à mourir en même temps que lui ; car vivre encore, non honorée, est une chose insupportable pour une femme bien née.</s>
             </p>
           </sp>
-          <sp xml:id="I07-17" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I07-17">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Il faut, à la vérité, redouter de terribles calamités, mais non désespérer avant la fin.</s>
             </p>
           </sp>
-          <sp xml:id="I07-18" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-18">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>L’espoir d’où naît la confiance ne réside pas dans de mauvais desseins.</s>
             </p>
           </sp>
-          <sp xml:id="I07-19" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I07-19">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Mais ceux qui n’ont point failli volontairement doivent être pardonnés, et tu mérites d’en faire l’expérience.</s>
             </p>
           </sp>
-          <sp xml:id="I07-20" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I07-20">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>De telles paroles conviennent, non à qui a fait le mal, mais à qui n’a à se repentir d’aucune action mauvaise.</s>
             </p>
           </sp>
-          <sp xml:id="I07-21" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I07-21">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Il est temps que tu te taises, à moins que tu veuilles tout dire à ton fils. </s>
@@ -1129,28 +1152,33 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I08" type="scene" n="8">
-          <head>Hyllos, Déjanire, Le Choeur.<listPerson type="configuration" xml:id="conf8"><person corresp="#HYLLOS"/><person corresp="#DEJANIRE"/><person corresp="#LECHOEUR"/><person corresp="#PREMIERDEMICHOEUR"/><person corresp="#DEUXIEMEDEMICHOEUR"/></listPerson></head>
-          <sp xml:id="I08-1" who="HYLLOS">
+        <div2 n="8" type="scene" xml:id="I08">
+          <head>Hyllos, Déjanire, Le Choeur.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#HYLLOS"/>
+            <person corresp="#DEJANIRE"/>
+            <person corresp="#LECHOEUR"/>
+            <person corresp="#CHOEUR1"/>
+            <person corresp="#CHOEUR2"/></listPerson></head>
+          <sp who="HYLLOS" xml:id="I08-1">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Ô mère ! </s>
               <s>Que je voudrais qu’une de ces trois choses s’accomplit : ou que tu ne fusses plus vivante, ou que, vivante, un autre te nommât sa mère, ou que tu eusses formé dans ton esprit de meilleurs desseins !</s>
             </p>
           </sp>
-          <sp xml:id="I08-2" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I08-2">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Qu’ai-je fait, ô enfant, pour mériter tant de haine ? </s>
             </p>
           </sp>
-          <sp xml:id="I08-3" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I08-3">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Sache qu’en ce jour, ton époux, mon père, a péri par toi.</s>
             </p>
           </sp>
-          <sp xml:id="I08-4" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I08-4">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Hélas ! </s>
@@ -1158,33 +1186,33 @@
               <s>Quelle nouvelle apportes-tu ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-5" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I08-5">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>La nouvelle de ce qui ne peut plus ne pas être arrivé ; car rien ne peut faire qu’une chose accomplie ne soit pas.</s>
             </p>
           </sp>
-          <sp xml:id="I08-6" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I08-6">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Que dis-tu, ô enfant ? </s>
               <s>D’où vient que tu sois certain que j’ai commis cette action détestable ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-7" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I08-7">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Moi-même, de mes yeux, j’ai vu le mal cruel de mon père. </s>
               <s>Je ne l’ai appris de la bouche d’aucun autre.</s>
             </p>
           </sp>
-          <sp xml:id="I08-8" who="DEJANIRE">
+          <sp who="DEJANIRE" xml:id="I08-8">
             <speaker>DÉJANIRE.</speaker>
             <p>
               <s>Parle, où as-tu rencontré l’homme et t’es-tu approché de lui ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-9" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I08-9">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>S’il faut que tu saches, il est nécessaire que je dise tout. </s>
@@ -1212,14 +1240,14 @@
               <s>Mais toi-même m’en as donné le droit en tuant le plus grand des hommes qui sont sur la terre, et tel que tu n’en verras jamais de semblable.</s>
             </p>
           </sp>
-          <sp xml:id="I08-10" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I08-10">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Pourquoi sors-tu en silence ? </s>
               <s>Ne t’aperçois-tu pas qu’en te taisant tu donnes raison à l’accusateur ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-11" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I08-11">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Laissez-la sortir. </s>
@@ -1229,7 +1257,7 @@
               <s>Qu’elle éprouve elle-même la joie qu’elle a donnée à mon père.</s>
             </p>
           </sp>
-          <sp xml:id="I08-12" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I08-12">
             <speaker>LE CHOEUR.</speaker>
             <stage type="[N/A]">Strophe I.</stage>
             <p>
@@ -1255,7 +1283,7 @@
               <s>C’est la clandestine Kypris qui a certainement causé tous ces maux.</s>
             </p>
           </sp>
-          <sp xml:id="I08-13" who="PREMIERDEMICHOEUR">
+          <sp who="CHOEUR1" xml:id="I08-13">
             <speaker>PREMIER DEMI-CHOEUR.</speaker>
             <p>
               <s>Me trompé-je ? </s>
@@ -1263,14 +1291,14 @@
               <s>Dirais-je vrai ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-14" who="DEUXIEMEDEMICHOEUR">
+          <sp who="CHOEUR2" xml:id="I08-14">
             <speaker>DEUXIÈME DEMI-CHOEUR.</speaker>
             <p>
               <s>Ce n’est pas une lamentation sourde qui s’élève dans la demeure, mais un douloureux gémissement. </s>
               <s>Il y a quelque chose de nouveau sous le toit.</s>
             </p>
           </sp>
-          <sp xml:id="I08-15" who="PREMIERDEMICHOEUR">
+          <sp who="CHOEUR1" xml:id="I08-15">
             <speaker>PREMIER DEMI-CHOEUR.</speaker>
             <p>
               <s>Vois ! </s>
@@ -1279,103 +1307,105 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I09" type="scene" n="9">
-          <head>La Nourrice, Le Choeur.<listPerson type="configuration" xml:id="conf9"><person corresp="#LANOURRICE"/><person corresp="#LECHOEUR"/></listPerson></head>
-          <sp xml:id="I09-1" who="LANOURRICE">
+        <div2 n="9" type="scene" xml:id="I09">
+          <head>La Nourrice, Le Choeur.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#LANOURRICE"/>
+            <person corresp="#LECHOEUR"/></listPerson></head>
+          <sp who="LANOURRICE" xml:id="I09-1">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Ô enfants, que de malheurs terribles nous a causés le don envoyé à Héraclès !</s>
             </p>
           </sp>
-          <sp xml:id="I09-2" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-2">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Quelle nouvelle, ô vieille femme, viens-tu nous annoncer ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-3" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-3">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Déjanire a fait son dernier chemin sans marcher.</s>
             </p>
           </sp>
-          <sp xml:id="I09-4" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-4">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Serait-ce donc qu’elle est morte ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-5" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-5">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Tu as tout entendu.</s>
             </p>
           </sp>
-          <sp xml:id="I09-6" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-6">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>La malheureuse est morte ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-7" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-7">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Tu l’apprends de nouveau.</s>
             </p>
           </sp>
-          <sp xml:id="I09-8" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-8">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Ô malheureuse ! </s>
               <s>comment dis-tu qu’elle a péri ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-9" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-9">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Très tristement, d’après le fait.</s>
             </p>
           </sp>
-          <sp xml:id="I09-10" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-10">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Dis, femme ! </s>
               <s>Quel destin l’a saisie ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-11" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-11">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Elle s’est tuée.</s>
             </p>
           </sp>
-          <sp xml:id="I09-12" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-12">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Quelle colère, quelle démence l’a poussée à se donner le coup mortel ? </s>
               <s>Comment a-t-elle pu, seule, ajouter sa mort à une autre mort ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-13" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-13">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Avec le tranchant du fer lamentable.</s>
             </p>
           </sp>
-          <sp xml:id="I09-14" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-14">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Ô malheureuse, as-tu vu cette action horrible ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-15" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-15">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>J’ai vu. </s>
               <s>J’étais auprès d’elle.</s>
             </p>
           </sp>
-          <sp xml:id="I09-16" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-16">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Quoi ! </s>
@@ -1383,44 +1413,44 @@
               <s>Allons, parle.</s>
             </p>
           </sp>
-          <sp xml:id="I09-17" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-17">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Elle a agi de sa propre main.</s>
             </p>
           </sp>
-          <sp xml:id="I09-18" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-18">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Que dis-tu ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-19" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-19">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Ce qui est certain.</s>
             </p>
           </sp>
-          <sp xml:id="I09-20" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-20">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Elle a fait naître, la nouvelle épouse, elle a fait naître une terrible Érinnys dans ces demeures !</s>
             </p>
           </sp>
-          <sp xml:id="I09-21" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-21">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>Certes ! </s>
               <s>Mais si tu avais vu de près ce qu’elle a fait, tu aurais ressenti une plus grande compassion.</s>
             </p>
           </sp>
-          <sp xml:id="I09-22" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-22">
             <speaker>LE CHOEUR.</speaker>
             <p>
               <s>Et la main d’une femme a pu faire cela ?</s>
             </p>
           </sp>
-          <sp xml:id="I09-23" who="LANOURRICE">
+          <sp who="LANOURRICE" xml:id="I09-23">
             <speaker>LA NOURRICE.</speaker>
             <p>
               <s>D’une horrible façon. </s>
@@ -1440,7 +1470,7 @@
               <s>Il est insensé celui qui compte sur deux ou plusieurs jours, car il n’y a de lendemain que si le jour présent s’est bien passé.</s>
             </p>
           </sp>
-          <sp xml:id="I09-24" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="I09-24">
             <speaker>LE CHOEUR.</speaker>
             <stage type="[N/A]">Strophe I.</stage>
             <p>
@@ -1470,9 +1500,13 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I10" type="scene" n="10">
-          <head>Hyllos, Le Vieillard, Héraclès.<listPerson type="configuration" xml:id="conf10"><person corresp="#HYLLOS"/><person corresp="#UNVIEILLARD"/><person corresp="#HERACLES"/><person corresp="#HERACLES."/></listPerson></head>
-          <sp xml:id="I10-1" who="HYLLOS">
+        <div2 n="10" type="scene" xml:id="I10">
+          <head>Hyllos, Le Vieillard, Héraclès.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#HYLLOS"/>
+            <person corresp="#UNVIEILLARD"/>
+            <person corresp="#HERACLES"/>
+          </listPerson></head>
+          <sp who="HYLLOS" xml:id="I10-1">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Ô père, que tu me rends malheureux ! </s>
@@ -1481,7 +1515,7 @@
               <s>Hélas !</s>
             </p>
           </sp>
-          <sp xml:id="I10-2" who="UNVIEILLARD">
+          <sp who="UNVIEILLARD" xml:id="I10-2">
             <speaker>LE VIEILLARD.</speaker>
             <p>
               <s>Tais-toi, fils, n’éveille pas la cruelle douleur de ton père. </s>
@@ -1489,26 +1523,26 @@
               <s>Ferme et mords tes lèvres.</s>
             </p>
           </sp>
-          <sp xml:id="I10-3" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I10-3">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Qu’as-tu dit, vieillard ? </s>
               <s>il vit !</s>
             </p>
           </sp>
-          <sp xml:id="I10-4" who="UNVIEILLARD">
+          <sp who="UNVIEILLARD" xml:id="I10-4">
             <speaker>LE VIEILLARD.</speaker>
             <p>
               <s>Prends garde de l’arracher au sommeil qui le tient et de renouveler ainsi, ô fils, son mal horrible.</s>
             </p>
           </sp>
-          <sp xml:id="I10-5" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I10-5">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Mon coeur ne peut supporter le poids de ma douleur, malheureux que je suis !</s>
             </p>
           </sp>
-          <sp xml:id="I10-6" who="HERACLES">
+          <sp who="HERACLES" xml:id="I10-6">
             <speaker>HÉRACLÈS.</speaker>
             <p>
               <s>Ô Zeus ! </s>
@@ -1520,19 +1554,19 @@
               <s>Hélas !</s>
             </p>
           </sp>
-          <sp xml:id="I10-7" who="UNVIEILLARD">
+          <sp who="UNVIEILLARD" xml:id="I10-7">
             <speaker>LE VIEILLARD.</speaker>
             <p>
               <s>Ne savais-tu pas combien il fallait rester dans le silence et ne point chasser le sommeil de ses paupières ?</s>
             </p>
           </sp>
-          <sp xml:id="I10-8" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I10-8">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Comment supporter avec patience la vue de ce mal ?</s>
             </p>
           </sp>
-          <sp xml:id="I10-9" who="HERACLES">
+          <sp who="HERACLES" xml:id="I10-9">
             <speaker>HÉRACLÈS.</speaker>
             <p>
               <s>Ô promontoire des sacrés autels Kènaiens, quelle récompense pour tant de victimes offertes ! </s>
@@ -1561,7 +1595,7 @@
               <s>Hélas !</s>
             </p>
           </sp>
-          <sp xml:id="I10-10" who="UNVIEILLARD">
+          <sp who="UNVIEILLARD" xml:id="I10-10">
             <speaker>LE VIEILLARD.</speaker>
             <p>
               <s>Ô enfant de cet homme, ce travail est trop lourd et surpasse mes forces. </s>
@@ -1569,7 +1603,7 @@
               <s>Tu verras beaucoup mieux que nous comment il peut être sauvé.</s>
             </p>
           </sp>
-          <sp xml:id="I10-11" who="HYLLOS">
+          <sp who="HYLLOS" xml:id="I10-11">
             <speaker>HYLLOS.</speaker>
             <p>
               <s>Je le touche et je ne puis, ni par moi, ni par ceux qui sont ici, lui donner l’oubli de ses douleurs. </s>
@@ -1577,8 +1611,549 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I11" type="scene" n="11"><head>Héraclès, Hyllos, Le Choeur.<listPerson type="configuration" xml:id="conf11"><person corresp="#HERACLES"/><person corresp="#LECHOEUR"/><person corresp="#HYLLOS"/></listPerson></head><sp xml:id="I11-1" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Ô enfant, enfant, où es-tu ? </s><s>Par ici, prends par ici, soulève-moi. </s><s>Ah ! </s><s>Ah ! </s><s>Ô démon ! </s><s>Il revient de nouveau, il revient, le mal misérable, inexorable, horrible, qui me tue ! </s><s>Ô Pallas, Pallas ! </s><s>Il me ronge encore ! </s><s>ô enfant, aie pitié de ton père, tire l’épée et frappe-moi sous la clavicule. </s><s>Personne ne t’en fera un crime. </s><s>Guéris les douleurs que m’a faites ta mère impie, elle que je voudrais voir saisie du mal qui me tue. </s><s>Ô doux Hadès, ô frère de Zeus, endors-moi, endors mes tourments dans une rapide mort !</s></p></sp><sp xml:id="I11-2" who="LECHOEUR"><speaker>LE CHOEUR.</speaker><p><s>Amies, j’ai horreur d’entendre les lamentations du roi, et de voir les maux dont un tel homme est tourmenté.</s></p></sp><sp xml:id="I11-3" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Oh ! </s><s>Que de maux terribles à dire j’ai supportés à l’aide de mes mains et de mes épaules ! </s><s>Mais jamais, ni l’épouse de Zeus, ni l’odieux Eurystheus ne m’ont fait tant de mal que la fille rusée d’Oenée, elle qui a enveloppé mes épaules de cette tunique tissue par les Erinnyes, et par laquelle je péris. </s><s>En effet, attachée à mes reins, elle a rongé toutes mes chairs, et, pénétrant jusqu’aux artères du poumon, elle a déjà bu la substance de mon sang, et tout mon corps se pourrit dans cette aveugle étreinte. </s><s>Et cela n’avait pu être fait ni par le fer de la lance dans la plaine, ni par l’armée des géants nés de Gaia, ni par la fureur des bêtes sauvages, ni par Hellas, ni par le barbare, ni par ceux dont j’ai purgé la terre mais une femme femelle, non virile, seule, m’a dompté sans l’aide de l’épée ! </s><s>Ô mon enfant, montre-toi mon seul fils, et ne mets pas le nom de ta mère au-dessus du mien. </s><s>Arrache-la des demeures, livre-la à ma main, afin que je sache clairement qui de nous deux tu plaindras le plus, en voyant son corps déchiré par un châtiment mérité. </s><s>Va, ô fils ! </s><s>Ose ! </s><s>Aie pitié de moi qui suis si misérable et qui gémis comme une vierge. </s><s>Nul ne dirait jamais qu’il m’a déjà vu tel auparavant, car j’ai toujours enduré mes maux sans gémir ; mais maintenant, je suis misérablement dompté comme une femme. </s><s>Viens auprès de ton père et vois ce qui m’accable de tels maux, car je te le montrerai sans aucun voile. </s><s>Voyez, regardez tous mon corps déchiré ; contemplez ma misère, voyez le misérable état où je suis ! </s><s>Ah ! </s><s>Ah ! </s><s>Malheureux ! </s><s>Hélas ! </s><s>Hélas ! </s><s>L’ardeur de ce mal lamentable me brûle de nouveau, et il pénètre encore ma poitrine, et ce venin vorace ne semble pas devoir se relâcher. </s><s>Ô roi Hadès, prends-moi ! </s><s>Frappe, éclair de Zeus ! </s><s>Ô roi, ô père, frappe, perce-moi du trait de la foudre ! </s><s>Le mal revient, il brûle, il s’accroît avec violence. </s><s>Ô mains ! </s><s>mains, dos, poitrine ! </s><s>Ô chers bras ! </s><s>Êtes-vous tels, vous qui avez dompté autrefois l’habitant de Némée, le Lion funeste aux bouviers, horrible et monstrueux, et l’Hydre Lernaienne, et les centaures sauvages à la double forme, aux jambes de cheval, race impudente, sans lois, orgueilleuse de ses forces, et la bête Érymanthienne, et le chien souterrain d’Aides, à triple tête, ce monstre invaincu né de la terrible Echidna, et le dragon gardien des pommes d’or, aux dernières limites du monde. </s><s>Et j’ai supporté d’innombrables travaux, et nul n’a jamais érigé de trophée pour ma défaite. </s><s>Et, maintenant, les bras rompus, les chairs déchirées, je suis misérablement rongé d’un aveugle mal, moi, conçu par une noble mère, et qu’on nomme fils de Zeus qui commande aux astres ! </s><s>Mais, certes, sachez-le : bien que sans force et ne pouvant marcher, je me vengerai, tel que je suis, de celle qui a commis ce crime. </s><s>Qu’elle vienne seulement, et son châtiment prouvera à tous que, vivant ou mort, j’ai toujours puni les pervers.</s></p></sp><sp xml:id="I11-4" who="LECHOEUR"><speaker>LE CHOEUR.</speaker><p><s>Ô misérable Hellas, de quel deuil je te vois menacée, si tu es privée de cet homme !</s></p></sp><sp xml:id="I11-5" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Puisque tu me permets de parler, ô père, écoute en silence, bien que tu sois en proie au mal. </s><s>Je te demanderai en effet ce que tu dois m’accorder. </s><s>Consens à calmer la fureur qui mord ton âme, car sans cela, tu ne saurais reconnaître que l’action que tu te réjouirais d’accomplir serait aussi injuste que ta colère est vaine.</s></p></sp><sp xml:id="I11-6" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Dis brièvement ce que tu veux dire. </s><s>Rongé par mon mal, je ne comprends pas tes paroles embarrassées.</s></p></sp><sp xml:id="I11-7" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Je veux parler de ma mère, dire ce qu’elle est devenue et qu’elle n’a point failli de son plein gré.</s></p></sp><sp xml:id="I11-8" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Ô très scélérat ! </s><s>Ainsi tu oses me rappeler le souvenir d’une mère qui a tué ton père !</s></p></sp><sp xml:id="I11-9" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Les choses sont telles qu’il ne convient pas que je les taise.</s></p></sp><sp xml:id="I11-10" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Il faut d’autant plus te taire après ce qu’elle a fait contre moi.</s></p></sp><sp xml:id="I11-11" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Mais non après ce qu’elle a fait aujourd’hui.</s></p></sp><sp xml:id="I11-12" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Parle donc, mais crains d’être indigne de ta race.</s></p></sp><sp xml:id="I11-13" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Je parle. </s><s>Ma mère est morte, tuée.</s></p></sp><sp xml:id="I11-14" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Par qui ? </s><s>tu m’annonces un prodige sinistre.</s></p></sp><sp xml:id="I11-15" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>De sa propre main, non par une autre.</s></p></sp><sp xml:id="I11-16" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Ô dieux ! </s><s>Avant, comme il le fallait, qu’elle périt par ma main !</s></p></sp><sp xml:id="I11-17" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Tu ne penserais pas ainsi, si tu savais tout.</s></p></sp><sp xml:id="I11-18" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Tu commences par d’étranges paroles. </s><s>Que veux-tu dire ?</s></p></sp><sp xml:id="I11-19" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Voici. </s><s>Elle a failli, voulant bien faire.</s></p></sp><sp xml:id="I11-20" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Malheureux ! </s><s>Elle a bien fait, celle qui a tué ton père !</s></p></sp><sp xml:id="I11-21" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Ayant vu ta nouvelle épouse dans la demeure et voulant s’assurer ton amour par un philtre, elle s’est trompée.</s></p></sp><sp xml:id="I11-22" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Et, parmi les Trachiniens, quel est ce grand charmeur ?</s></p></sp><sp xml:id="I11-23" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Le centaure Nessus lui conseilla autrefois de réveiller ton amour à l’aide de ce philtre.</s></p></sp><sp xml:id="I11-24" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Hélas ! </s><s>Hélas ! </s><s>Malheureux ! </s><s>Misérable que je suis, je meurs ! </s><s>Je suis tué ! </s><s>La lumière n’est plus pour moi désormais ! </s><s>Ô dieux ! </s><s>Je comprends enfin à quelle misère je suis réduit. </s><s>Va, ô fils ! </s><s>Car ton père ne vit plus. </s><s>Appelle tous tes frères ; appelle la malheureuse Alcmène vainement nommée l’épouse de Zeus, afin que vous appreniez ce que je sais de mes oracles suprêmes.</s></p></sp><sp xml:id="I11-25" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Mais ta mère n’est point ici. </s><s>Elle réside maintenant sur le rivage Tirynthien où elle élève une partie de tes enfants qu’elle a emmenés, et les autres habitent la ville de Thébes. </s><s>Nous, présents ici, nous t’écouterons et ferons ce qu’il faudra faire.</s></p></sp><sp xml:id="I11-26" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Écoute donc. </s><s>C’est le moment, en effet, de te montrer digne d’être nommé mon fils. </s><s>Il m’a été prédit autrefois par mon père que nul vivant ne me tuerait jamais, mais que la vie me serait enlevée par un habitant du Hadès. </s><s>Ainsi, selon la parole fatidique, bien que mort, le sauvage centaure m’a tué. </s><s>Je te révélerai encore des oracles récents et semblables aux anciens et qui s’accomplissent pour moi. </s><s>Étant entré dans le bois sacré des Selles qui couchent sur la terre et habitent les montagnes, j’inscrivis sur des tablettes les paroles du prophétique chêne paternel. </s><s>Mon père m’annonçait que ce temps présent lui-même verrait le terme de mes travaux. </s><s>J’espérais donc vivre désormais heureusement ; mais cela ne disait rien autre chose, sinon que je vais mourir, car il n’y a plus de travaux pour un mort. </s><s>Puisque la vérité de ces paroles éclate par l’événement, il faut, enfant, que tu me donnes ton aide, et que tu n’attendes pas que ma bouche soit furieuse. </s><s>Aide-moi de bon gré et docilement, soumis à cette très belle loi qui veut que tu obéisses à ton père.</s></p></sp><sp xml:id="I11-27" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Ô père, je suis frappé de terreur en écoutant de telles paroles ; cependant, quoi que tu ordonnes, j’obéirai.</s></p></sp><sp xml:id="I11-28" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Donne-moi d’abord ta main droite.</s></p></sp><sp xml:id="I11-29" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Pourquoi demandes-tu ce gage de foi ?</s></p></sp><sp xml:id="I11-30" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Ne me la donneras-tu pas et me résisteras-tu ?</s></p></sp><sp xml:id="I11-31" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Je te la tends, ne te refusant rien.</s></p></sp><sp xml:id="I11-32" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Jure maintenant par la tête de Zeus qui m’a engendré.</s></p></sp><sp xml:id="I11-33" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Pourquoi ? </s><s>Que jurerai-je ?</s></p></sp><sp xml:id="I11-34" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>D’accomplir ce que j’ordonnerai.</s></p></sp><sp xml:id="I11-35" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Je le jure et j’en atteste Zeus.</s></p></sp><sp xml:id="I11-36" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Si tu y manques, voue-toi aux imprécations.</s></p></sp><sp xml:id="I11-37" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Il n’en est pas besoin. </s><s>J’obéirai. </s><s>Cependant je fais cette imprécation.</s></p></sp><sp xml:id="I11-38" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Connais-tu le faîte de l’Oita consacré à Zeus ?</s></p></sp><sp xml:id="I11-39" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Je le connais. </s><s>J’ai souvent accompli des sacrifices sur ce faîte.</s></p></sp><sp xml:id="I11-40" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>C’est là qu’il te faut porter mon corps, de tes mains et à l’aide de ceux de tes amis que tu voudras. </s><s>Ayant coupé un grand nombre de chênes robustes et de mâles oliviers, tu y déposeras mon corps, et tu mettras le feu avec une ardente torche de pin. </s><s>Point de larmes, ni de gémissements, si vraiment tu es né de moi. </s><s>Ne gémis, ni ne pleure. </s><s>Sinon, bien que chez les morts, je t’enverrai mes imprécations.</s></p></sp><sp xml:id="I11-41" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Hélas ! </s><s>Père, qu’as-tu dit ? </s><s>Qu’attends-tu de moi ?</s></p></sp><sp xml:id="I11-42" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Ce que tu dois faire. </s><s>Sinon, sois le fils de je ne sais quel autre père, mais non plus le mien.</s></p></sp><sp xml:id="I11-43" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Hélas ! </s><s>Père, encore une fois, quelle action me demandes-tu ? </s><s>D’être parricide, d’être ton meurtrier ?</s></p></sp><sp xml:id="I11-44" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Non pas cela, mais d’être guérisseur, de me sauver des maux qui m’accablent.</s></p></sp><sp xml:id="I11-45" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Quoi ! </s><s>Si je brûle ton corps, je le guérirai ?</s></p></sp><sp xml:id="I11-46" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Si tu as ceci en horreur, au moins fais le reste.</s></p></sp><sp xml:id="I11-47" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Je ne me refuse point, certes, à te porter.</s></p></sp><sp xml:id="I11-48" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Construiras-tu le bûcher, ainsi que je l’ai dit ?</s></p></sp><sp xml:id="I11-49" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Pourvu qu’il ne soit point touché de mes mains. </s><s>Mais je ferai le reste et mes soins ne te manqueront pas.</s></p></sp><sp xml:id="I11-50" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Cela suffira. </s><s>Ajoute un moindre service à ceux-ci.</s></p></sp><sp xml:id="I11-51" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Même s’il était plus grand, je te le rendrais.</s></p></sp><sp xml:id="I11-52" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Connais-tu la fille d’Eurytos ?</s></p></sp><sp xml:id="I11-53" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Tu veux dire Iole, je pense.</s></p></sp><sp xml:id="I11-54" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Tu l’as dit. </s><s>Donc, fils, je te commande ceci. </s><s>Après que je serai mort, si tu veux agir pieusement et te souvenir du serment fait à ton père, tu la prendras pour épouse et tu ne me désobéiras point. </s><s>Qu’aucun autre homme ne s’unisse à celle qui a couché à mon côté ! </s><s>Mais toi, épouse-la. </s><s>Puisque tu m’as obéi pour les grandes choses, ne désobéis pas pour les moindres, renonçant ainsi à ma gratitude.</s></p></sp><sp xml:id="I11-55" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Ô dieux ! </s><s>Il est mal de s’irriter contre un mourant, mais qui pourrait supporter ceci avec calme ?</s></p></sp><sp xml:id="I11-56" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>À t’entendre, tu ne veux rien faire de ce que je dis ?</s></p></sp><sp xml:id="I11-57" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Qui, en effet, prendrait pour épouse, je t’en conjure, celle qui a été seule cause de la mort de ma mère et t’a mis en cet état ? </s><s>Qui le ferai, à moins d’être rendu insensé par le châtiment vengeur du crime ? </s><s>Ô père, j’aime mieux mourir que de vivre avec ceux que je hais le plus.</s></p></sp><sp xml:id="I11-58" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Cet homme semble se refuser à remplir son devoir auprès d’un mourant comme moi ! </s><s>Mais l’exécration des dieux sera sur toi si tu ne m’obéis pas.</s></p></sp><sp xml:id="I11-59" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Hélas ! </s><s>tu reconnaîtras bientôt que tu parles en proie au mal qui te tient. </s></p></sp><sp xml:id="I11-60" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>C’est toi qui réveilles mon mal endormi.</s></p></sp><sp xml:id="I11-61" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Ô malheureux que je suis ! </s><s>Je ne sais que résoudre au milieu de tant de craintes.</s></p></sp><sp xml:id="I11-62" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>C’est que tu ne daignes pas écouter celui qui t’a engendré.</s></p></sp><sp xml:id="I11-63" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Ô père, je t’en conjure, faut-il donc que j’agisse comme un impie ?</s></p></sp><sp xml:id="I11-64" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Nulle impiété à faire ce qui plaît à mon coeur.</s></p></sp><sp xml:id="I11-65" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Donc, ce que tu m’ordonnes de faire est juste ?</s></p></sp><sp xml:id="I11-66" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Très juste. </s><s>J’en atteste les dieux.</s></p></sp><sp xml:id="I11-67" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Je le ferai donc et ne m’y refuse plus, mais j’atteste les dieux que ceci est ton ouvrage. </s><s>Je ne puis être coupable en t’obéissant, ô père !</s></p></sp><sp xml:id="I11-68" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Tu finis bien. </s><s>Ajoute la promptitude au bienfait, ô mon enfant, et porte-moi au bûcher avant que la convulsion de mon mal me ressaisisse. </s><s>Hâtez-vous ! </s><s>Portez-moi ! </s><s>La fin de mes maux sera ma propre fin !</s></p></sp><sp xml:id="I11-69" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Tout va être accompli sans retard, puisque tu l’ordonnes et que tu nous y contrains, père.</s></p></sp><sp xml:id="I11-70" who="HERACLES"><speaker>HÉRACLÈS.</speaker><p><s>Allons, ô âme rude ! </s><s>Avant que je souffre de nouveau, étouffe mes cris avec un frein d’acier dans cette épreuve que tu acceptes avec joie, bien que malgré moi !</s></p></sp><sp xml:id="I11-71" who="HYLLOS"><speaker>HYLLOS.</speaker><p><s>Enlevez, compagnons ! </s><s>Pardonnez-moi cette action et n’accusez que l’iniquité des dieux qui font ceci et regardent sans pitié les terribles douleurs de ceux qu’ils ont engendrés et dont ils se disent les pères. </s><s>Nul ne prévoit les choses futures ; et les choses présentes, amères pour nous, sont honteuses pour les dieux. </s><s>Mais elles sont très cruelles entre toutes pour celui qui subit de tels maux. </s><s>Et toi, ne reste pas dans la demeure, ô vierge ! </s><s>Tu as vu de grandes funérailles, des calamités inouïes et sans nombre ; mais rien n’est arrivé sans la volonté de Zeus !</s></p></sp>µ
-</div2>
+        <div2 n="11" type="scene" xml:id="I11">
+          <head>Héraclès, Hyllos, Le Choeur.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#HERACLES"/>
+            <person corresp="#LECHOEUR"/>
+            <person corresp="#HYLLOS"/></listPerson></head>
+          <sp who="HERACLES" xml:id="I11-1">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Ô enfant, enfant, où es-tu ? </s>
+              <s>Par ici, prends par ici, soulève-moi. </s>
+              <s>Ah ! </s>
+              <s>Ah ! </s>
+              <s>Ô démon ! </s>
+              <s>Il revient de nouveau, il revient, le mal misérable, inexorable, horrible, qui me tue ! </s>
+              <s>Ô Pallas, Pallas ! </s>
+              <s>Il me ronge encore ! </s>
+              <s>ô enfant, aie pitié de ton père, tire l’épée et frappe-moi sous la clavicule. </s>
+              <s>Personne ne t’en fera un crime. </s>
+              <s>Guéris les douleurs que m’a faites ta mère impie, elle que je voudrais voir saisie du mal qui me tue. </s>
+              <s>Ô doux Hadès, ô frère de Zeus, endors-moi, endors mes tourments dans une rapide mort !</s>
+            </p>
+          </sp>
+          <sp who="LECHOEUR" xml:id="I11-2">
+            <speaker>LE CHOEUR.</speaker>
+            <p>
+              <s>Amies, j’ai horreur d’entendre les lamentations du roi, et de voir les maux dont un tel homme est tourmenté.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-3">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Oh ! </s>
+              <s>Que de maux terribles à dire j’ai supportés à l’aide de mes mains et de mes épaules ! </s>
+              <s>Mais jamais, ni l’épouse de Zeus, ni l’odieux Eurystheus ne m’ont fait tant de mal que la fille rusée d’Oenée, elle qui a enveloppé mes épaules de cette tunique tissue par les Erinnyes, et par laquelle je péris. </s>
+              <s>En effet, attachée à mes reins, elle a rongé toutes mes chairs, et, pénétrant jusqu’aux artères du poumon, elle a déjà bu la substance de mon sang, et tout mon corps se pourrit dans cette aveugle étreinte. </s>
+              <s>Et cela n’avait pu être fait ni par le fer de la lance dans la plaine, ni par l’armée des géants nés de Gaia, ni par la fureur des bêtes sauvages, ni par Hellas, ni par le barbare, ni par ceux dont j’ai purgé la terre mais une femme femelle, non virile, seule, m’a dompté sans l’aide de l’épée ! </s>
+              <s>Ô mon enfant, montre-toi mon seul fils, et ne mets pas le nom de ta mère au-dessus du mien. </s>
+              <s>Arrache-la des demeures, livre-la à ma main, afin que je sache clairement qui de nous deux tu plaindras le plus, en voyant son corps déchiré par un châtiment mérité. </s>
+              <s>Va, ô fils ! </s>
+              <s>Ose ! </s>
+              <s>Aie pitié de moi qui suis si misérable et qui gémis comme une vierge. </s>
+              <s>Nul ne dirait jamais qu’il m’a déjà vu tel auparavant, car j’ai toujours enduré mes maux sans gémir ; mais maintenant, je suis misérablement dompté comme une femme. </s>
+              <s>Viens auprès de ton père et vois ce qui m’accable de tels maux, car je te le montrerai sans aucun voile. </s>
+              <s>Voyez, regardez tous mon corps déchiré ; contemplez ma misère, voyez le misérable état où je suis ! </s>
+              <s>Ah ! </s>
+              <s>Ah ! </s>
+              <s>Malheureux ! </s>
+              <s>Hélas ! </s>
+              <s>Hélas ! </s>
+              <s>L’ardeur de ce mal lamentable me brûle de nouveau, et il pénètre encore ma poitrine, et ce venin vorace ne semble pas devoir se relâcher. </s>
+              <s>Ô roi Hadès, prends-moi ! </s>
+              <s>Frappe, éclair de Zeus ! </s>
+              <s>Ô roi, ô père, frappe, perce-moi du trait de la foudre ! </s>
+              <s>Le mal revient, il brûle, il s’accroît avec violence. </s>
+              <s>Ô mains ! </s>
+              <s>mains, dos, poitrine ! </s>
+              <s>Ô chers bras ! </s>
+              <s>Êtes-vous tels, vous qui avez dompté autrefois l’habitant de Némée, le Lion funeste aux bouviers, horrible et monstrueux, et l’Hydre Lernaienne, et les centaures sauvages à la double forme, aux jambes de cheval, race impudente, sans lois, orgueilleuse de ses forces, et la bête Érymanthienne, et le chien souterrain d’Aides, à triple tête, ce monstre invaincu né de la terrible Echidna, et le dragon gardien des pommes d’or, aux dernières limites du monde. </s>
+              <s>Et j’ai supporté d’innombrables travaux, et nul n’a jamais érigé de trophée pour ma défaite. </s>
+              <s>Et, maintenant, les bras rompus, les chairs déchirées, je suis misérablement rongé d’un aveugle mal, moi, conçu par une noble mère, et qu’on nomme fils de Zeus qui commande aux astres ! </s>
+              <s>Mais, certes, sachez-le : bien que sans force et ne pouvant marcher, je me vengerai, tel que je suis, de celle qui a commis ce crime. </s>
+              <s>Qu’elle vienne seulement, et son châtiment prouvera à tous que, vivant ou mort, j’ai toujours puni les pervers.</s>
+            </p>
+          </sp>
+          <sp who="LECHOEUR" xml:id="I11-4">
+            <speaker>LE CHOEUR.</speaker>
+            <p>
+              <s>Ô misérable Hellas, de quel deuil je te vois menacée, si tu es privée de cet homme !</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-5">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Puisque tu me permets de parler, ô père, écoute en silence, bien que tu sois en proie au mal. </s>
+              <s>Je te demanderai en effet ce que tu dois m’accorder. </s>
+              <s>Consens à calmer la fureur qui mord ton âme, car sans cela, tu ne saurais reconnaître que l’action que tu te réjouirais d’accomplir serait aussi injuste que ta colère est vaine.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-6">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Dis brièvement ce que tu veux dire. </s>
+              <s>Rongé par mon mal, je ne comprends pas tes paroles embarrassées.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-7">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Je veux parler de ma mère, dire ce qu’elle est devenue et qu’elle n’a point failli de son plein gré.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-8">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Ô très scélérat ! </s>
+              <s>Ainsi tu oses me rappeler le souvenir d’une mère qui a tué ton père !</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-9">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Les choses sont telles qu’il ne convient pas que je les taise.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-10">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Il faut d’autant plus te taire après ce qu’elle a fait contre moi.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-11">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Mais non après ce qu’elle a fait aujourd’hui.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-12">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Parle donc, mais crains d’être indigne de ta race.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-13">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Je parle. </s>
+              <s>Ma mère est morte, tuée.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-14">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Par qui ? </s>
+              <s>tu m’annonces un prodige sinistre.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-15">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>De sa propre main, non par une autre.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-16">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Ô dieux ! </s>
+              <s>Avant, comme il le fallait, qu’elle périt par ma main !</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-17">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Tu ne penserais pas ainsi, si tu savais tout.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-18">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Tu commences par d’étranges paroles. </s>
+              <s>Que veux-tu dire ?</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-19">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Voici. </s>
+              <s>Elle a failli, voulant bien faire.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-20">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Malheureux ! </s>
+              <s>Elle a bien fait, celle qui a tué ton père !</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-21">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Ayant vu ta nouvelle épouse dans la demeure et voulant s’assurer ton amour par un philtre, elle s’est trompée.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-22">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Et, parmi les Trachiniens, quel est ce grand charmeur ?</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-23">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Le centaure Nessus lui conseilla autrefois de réveiller ton amour à l’aide de ce philtre.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-24">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Hélas ! </s>
+              <s>Hélas ! </s>
+              <s>Malheureux ! </s>
+              <s>Misérable que je suis, je meurs ! </s>
+              <s>Je suis tué ! </s>
+              <s>La lumière n’est plus pour moi désormais ! </s>
+              <s>Ô dieux ! </s>
+              <s>Je comprends enfin à quelle misère je suis réduit. </s>
+              <s>Va, ô fils ! </s>
+              <s>Car ton père ne vit plus. </s>
+              <s>Appelle tous tes frères ; appelle la malheureuse Alcmène vainement nommée l’épouse de Zeus, afin que vous appreniez ce que je sais de mes oracles suprêmes.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-25">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Mais ta mère n’est point ici. </s>
+              <s>Elle réside maintenant sur le rivage Tirynthien où elle élève une partie de tes enfants qu’elle a emmenés, et les autres habitent la ville de Thébes. </s>
+              <s>Nous, présents ici, nous t’écouterons et ferons ce qu’il faudra faire.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-26">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Écoute donc. </s>
+              <s>C’est le moment, en effet, de te montrer digne d’être nommé mon fils. </s>
+              <s>Il m’a été prédit autrefois par mon père que nul vivant ne me tuerait jamais, mais que la vie me serait enlevée par un habitant du Hadès. </s>
+              <s>Ainsi, selon la parole fatidique, bien que mort, le sauvage centaure m’a tué. </s>
+              <s>Je te révélerai encore des oracles récents et semblables aux anciens et qui s’accomplissent pour moi. </s>
+              <s>Étant entré dans le bois sacré des Selles qui couchent sur la terre et habitent les montagnes, j’inscrivis sur des tablettes les paroles du prophétique chêne paternel. </s>
+              <s>Mon père m’annonçait que ce temps présent lui-même verrait le terme de mes travaux. </s>
+              <s>J’espérais donc vivre désormais heureusement ; mais cela ne disait rien autre chose, sinon que je vais mourir, car il n’y a plus de travaux pour un mort. </s>
+              <s>Puisque la vérité de ces paroles éclate par l’événement, il faut, enfant, que tu me donnes ton aide, et que tu n’attendes pas que ma bouche soit furieuse. </s>
+              <s>Aide-moi de bon gré et docilement, soumis à cette très belle loi qui veut que tu obéisses à ton père.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-27">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Ô père, je suis frappé de terreur en écoutant de telles paroles ; cependant, quoi que tu ordonnes, j’obéirai.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-28">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Donne-moi d’abord ta main droite.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-29">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Pourquoi demandes-tu ce gage de foi ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-30">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Ne me la donneras-tu pas et me résisteras-tu ?</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-31">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Je te la tends, ne te refusant rien.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-32">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Jure maintenant par la tête de Zeus qui m’a engendré.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-33">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Pourquoi ? </s>
+              <s>Que jurerai-je ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-34">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>D’accomplir ce que j’ordonnerai.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-35">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Je le jure et j’en atteste Zeus.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-36">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Si tu y manques, voue-toi aux imprécations.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-37">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Il n’en est pas besoin. </s>
+              <s>J’obéirai. </s>
+              <s>Cependant je fais cette imprécation.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-38">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Connais-tu le faîte de l’Oita consacré à Zeus ?</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-39">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Je le connais. </s>
+              <s>J’ai souvent accompli des sacrifices sur ce faîte.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-40">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>C’est là qu’il te faut porter mon corps, de tes mains et à l’aide de ceux de tes amis que tu voudras. </s>
+              <s>Ayant coupé un grand nombre de chênes robustes et de mâles oliviers, tu y déposeras mon corps, et tu mettras le feu avec une ardente torche de pin. </s>
+              <s>Point de larmes, ni de gémissements, si vraiment tu es né de moi. </s>
+              <s>Ne gémis, ni ne pleure. </s>
+              <s>Sinon, bien que chez les morts, je t’enverrai mes imprécations.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-41">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Hélas ! </s>
+              <s>Père, qu’as-tu dit ? </s>
+              <s>Qu’attends-tu de moi ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-42">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Ce que tu dois faire. </s>
+              <s>Sinon, sois le fils de je ne sais quel autre père, mais non plus le mien.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-43">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Hélas ! </s>
+              <s>Père, encore une fois, quelle action me demandes-tu ? </s>
+              <s>D’être parricide, d’être ton meurtrier ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-44">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Non pas cela, mais d’être guérisseur, de me sauver des maux qui m’accablent.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-45">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Quoi ! </s>
+              <s>Si je brûle ton corps, je le guérirai ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-46">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Si tu as ceci en horreur, au moins fais le reste.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-47">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Je ne me refuse point, certes, à te porter.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-48">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Construiras-tu le bûcher, ainsi que je l’ai dit ?</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-49">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Pourvu qu’il ne soit point touché de mes mains. </s>
+              <s>Mais je ferai le reste et mes soins ne te manqueront pas.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-50">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Cela suffira. </s>
+              <s>Ajoute un moindre service à ceux-ci.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-51">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Même s’il était plus grand, je te le rendrais.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-52">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Connais-tu la fille d’Eurytos ?</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-53">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Tu veux dire Iole, je pense.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-54">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Tu l’as dit. </s>
+              <s>Donc, fils, je te commande ceci. </s>
+              <s>Après que je serai mort, si tu veux agir pieusement et te souvenir du serment fait à ton père, tu la prendras pour épouse et tu ne me désobéiras point. </s>
+              <s>Qu’aucun autre homme ne s’unisse à celle qui a couché à mon côté ! </s>
+              <s>Mais toi, épouse-la. </s>
+              <s>Puisque tu m’as obéi pour les grandes choses, ne désobéis pas pour les moindres, renonçant ainsi à ma gratitude.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-55">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Ô dieux ! </s>
+              <s>Il est mal de s’irriter contre un mourant, mais qui pourrait supporter ceci avec calme ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-56">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>À t’entendre, tu ne veux rien faire de ce que je dis ?</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-57">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Qui, en effet, prendrait pour épouse, je t’en conjure, celle qui a été seule cause de la mort de ma mère et t’a mis en cet état ? </s>
+              <s>Qui le ferai, à moins d’être rendu insensé par le châtiment vengeur du crime ? </s>
+              <s>Ô père, j’aime mieux mourir que de vivre avec ceux que je hais le plus.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-58">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Cet homme semble se refuser à remplir son devoir auprès d’un mourant comme moi ! </s>
+              <s>Mais l’exécration des dieux sera sur toi si tu ne m’obéis pas.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-59">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Hélas ! </s>
+              <s>tu reconnaîtras bientôt que tu parles en proie au mal qui te tient. </s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-60">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>C’est toi qui réveilles mon mal endormi.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-61">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Ô malheureux que je suis ! </s>
+              <s>Je ne sais que résoudre au milieu de tant de craintes.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-62">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>C’est que tu ne daignes pas écouter celui qui t’a engendré.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-63">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Ô père, je t’en conjure, faut-il donc que j’agisse comme un impie ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-64">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Nulle impiété à faire ce qui plaît à mon coeur.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-65">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Donc, ce que tu m’ordonnes de faire est juste ?</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-66">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Très juste. </s>
+              <s>J’en atteste les dieux.</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-67">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Je le ferai donc et ne m’y refuse plus, mais j’atteste les dieux que ceci est ton ouvrage. </s>
+              <s>Je ne puis être coupable en t’obéissant, ô père !</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-68">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Tu finis bien. </s>
+              <s>Ajoute la promptitude au bienfait, ô mon enfant, et porte-moi au bûcher avant que la convulsion de mon mal me ressaisisse. </s>
+              <s>Hâtez-vous ! </s>
+              <s>Portez-moi ! </s>
+              <s>La fin de mes maux sera ma propre fin !</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-69">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Tout va être accompli sans retard, puisque tu l’ordonnes et que tu nous y contrains, père.</s>
+            </p>
+          </sp>
+          <sp who="HERACLES" xml:id="I11-70">
+            <speaker>HÉRACLÈS.</speaker>
+            <p>
+              <s>Allons, ô âme rude ! </s>
+              <s>Avant que je souffre de nouveau, étouffe mes cris avec un frein d’acier dans cette épreuve que tu acceptes avec joie, bien que malgré moi !</s>
+            </p>
+          </sp>
+          <sp who="HYLLOS" xml:id="I11-71">
+            <speaker>HYLLOS.</speaker>
+            <p>
+              <s>Enlevez, compagnons ! </s>
+              <s>Pardonnez-moi cette action et n’accusez que l’iniquité des dieux qui font ceci et regardent sans pitié les terribles douleurs de ceux qu’ils ont engendrés et dont ils se disent les pères. </s>
+              <s>Nul ne prévoit les choses futures ; et les choses présentes, amères pour nous, sont honteuses pour les dieux. </s>
+              <s>Mais elles sont très cruelles entre toutes pour celui qui subit de tels maux. </s>
+              <s>Et toi, ne reste pas dans la demeure, ô vierge ! </s>
+              <s>Tu as vu de grandes funérailles, des calamités inouïes et sans nombre ; mais rien n’est arrivé sans la volonté de Zeus !</s>
+            </p>
+          </sp>
+        </div2>
       </div1>
     </body>
   </text>
