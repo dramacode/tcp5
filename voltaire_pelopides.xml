@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Les pélopides ou atree et thyeste</title>
         <title type="sub">, tragédie</title>
-        <author born="1694" born_location="Paris" death="1778" death_location="Paris" academie="1746">
+        <author academie="1746" born="1694" born_location="Paris" death="1778" death_location="Paris">
           <surname>Voltaire</surname>
         </author>
         <date>1743</date>
@@ -34,7 +35,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -48,15 +49,15 @@
           <titlePart type="sub">TRAGÉDIE EN CINQ ACTES</titlePart>
         </docTitle>
         <docDate value="1772">M. DCC. LXXII</docDate>
-        <docAuthor id="VOLTAIRE" bio="voltaire"> Par M. DE VOLTAIRE.</docAuthor>
+        <docAuthor bio="voltaire" id="VOLTAIRE"> Par M. DE VOLTAIRE.</docAuthor>
         <docImprint>
           <privilege id="17**-**-**"/>
           <printer id="***">À GENÈVE, et se trouve à TOULON, chez J. L. R. MALLARD, Imprimeur-Libraire, Place Saint-Pierre.</printer>
           <acheveImprime id="17**-**-**"/>
         </docImprint>
         <performance>
-        <premiere date="(non représentée)" location="(non représentée)"/>
-      </performance>
+          <premiere date="(non représentée)" location="(non représentée)"/>
+        </performance>
       </titlePage>
       <div type="preface">
         <head>FRAGMENT D’UNE LETTRE</head>
@@ -72,23 +73,25 @@
       <div xml:id="castList">
         <castList>
           <head>PERSONNAGES</head>
-          <castItem><role xml:id="ATREE" rend="male">ATRÉE</role>.</castItem>
-          <castItem><role xml:id="THYESTE" rend="male">THYESTE</role>.</castItem>
-          <castItem><role xml:id="EROPE" rend="male">ÉROPE</role>, fille d’Eurysthée, femme d’Atrée.</castItem>
-          <castItem><role xml:id="HIPPODAMIE" rend="male">HIPPODAMIE</role>, veuve de Pélops.</castItem>
-          <castItem><role xml:id="POLEMON" rend="male">POLÉMON</role>, archonte d’Argos, ancien gouverneur d’Atrée et de Thyeste.</castItem>
-          <castItem><role xml:id="MEGARE" rend="male">MÉGARE</role>, nourrice d’Érope.</castItem>
-          <castItem><role xml:id="IDAS" rend="male">IDAS</role>, officier d’Atrée.</castItem>
+          <castItem><role rend="male" xml:id="ATREE">ATRÉE</role>.</castItem>
+          <castItem><role rend="male" xml:id="THYESTE">THYESTE</role>.</castItem>
+          <castItem><role rend="male" xml:id="EROPE">ÉROPE</role>, fille d’Eurysthée, femme d’Atrée.</castItem>
+          <castItem><role rend="male" xml:id="HIPPODAMIE">HIPPODAMIE</role>, veuve de Pélops.</castItem>
+          <castItem><role rend="male" xml:id="POLEMON">POLÉMON</role>, archonte d’Argos, ancien gouverneur d’Atrée et de Thyeste.</castItem>
+          <castItem><role rend="male" xml:id="MEGARE">MÉGARE</role>, nourrice d’Érope.</castItem>
+          <castItem><role rend="male" xml:id="IDAS">IDAS</role>, officier d’Atrée.</castItem>
         </castList>
-        <set location="Lieu mythologique" country="Pays mythologique" periode="Temps mythologiques" link="">La scène est dans le parvis du temple.</set>
+        <set country="Pays mythologique" link="" location="Lieu mythologique" periode="Temps mythologiques">La scène est dans le parvis du temple.</set>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Hippodamie, Polémon.<listPerson type="configuration" xml:id="conf1"><person corresp="#HIPPODAMIE"/><person corresp="#POLEMON"/></listPerson></head>
-          <sp xml:id="I01-1" who="HIPPODAMIE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Hippodamie, Polémon.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#POLEMON"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="I01-1">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1" xml:id="l1">Voilà donc tout le fruit de tes soins vigilants !</l>
             <l n="2" xml:id="l2">Tu vois si le sang parle au cœur de mes enfants.</l>
@@ -98,9 +101,9 @@
             <l n="6" xml:id="l6">Leur haine invétérée et leurs cruels amours</l>
             <l n="7" xml:id="l7">Ont produit tous les maux où mon esprit succombe.</l>
             <l n="8" xml:id="l8">Ma carrière est finie ; ils ont creusé ma tombe :</l>
-            <l n="9" xml:id="l9" part="I">Je me meurs !</l>
+            <l n="9" part="I" xml:id="l9">Je me meurs !</l>
           </sp>
-          <sp xml:id="I01-2" who="POLEMON">
+          <sp who="POLEMON" xml:id="I01-2">
             <speaker>POLÉMON.</speaker>
             <l part="F">Espérez un plus doux avenir.</l>
             <l n="10" xml:id="l10">Deux frères divisés pourraient se réunir.</l>
@@ -109,7 +112,7 @@
             <l n="13" xml:id="l13">On veut éteindre un feu prêt à tout embraser,</l>
             <l n="14" xml:id="l14">Et forcer, s’il se peut, vos fils à s’embrasser.</l>
           </sp>
-          <sp xml:id="I01-3" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I01-3">
             <speaker>HIPPODAMIE.</speaker>
             <l n="15" xml:id="l15">Ils se baissent trop : Thyeste est trop coupable ;</l>
             <l n="16" xml:id="l16">Le sombre et dur Atrée est trop inexorable.</l>
@@ -128,7 +131,7 @@
             <l n="29" xml:id="l29">Tremblante pour eux tous, je tends ces faibles bras</l>
             <l n="30" xml:id="l30">À des dieux irrités qui ne m’écoutent pas.</l>
           </sp>
-          <sp xml:id="I01-4" who="POLEMON">
+          <sp who="POLEMON" xml:id="I01-4">
             <speaker>POLÉMON.</speaker>
             <l n="31" xml:id="l31">Malgré l’acharnement de la guerre civile,</l>
             <l n="32" xml:id="l32">Les deux partis du moins respectent votre asile ;</l>
@@ -151,7 +154,7 @@
             <l n="49" xml:id="l49">Ce sont là nos desseins. Puissent les dieux plus doux</l>
             <l n="50" xml:id="l50">Favoriser mon zèle et s’apaiser pour vous !</l>
           </sp>
-          <sp xml:id="I01-5" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I01-5">
             <speaker>HIPPODAMIE.</speaker>
             <l n="51" xml:id="l51">Espérons : mais enfin la mère des Atrides</l>
             <l n="52" xml:id="l52">Voit l’inceste autour d’elle avec les parricides.</l>
@@ -169,7 +172,7 @@
             <l n="63" xml:id="l63">Mes souvenirs affreux, mes alarmes timides,</l>
             <l n="64" xml:id="l64">Tout me fait frissonner au nom des Pélopides.</l>
           </sp>
-          <sp xml:id="I01-6" who="POLEMON">
+          <sp who="POLEMON" xml:id="I01-6">
             <speaker>POLÉMON.</speaker>
             <l n="65" xml:id="l65">Quelquefois la sagesse a maîtrisé le sort ;</l>
             <l n="66" xml:id="l66">C’est le tyran du faible et l’esclave du fort.</l>
@@ -182,22 +185,22 @@
             <l n="73" xml:id="l73">Parlez en reine, en mère; et ce double pouvoir</l>
             <l n="74" xml:id="l74">Rappellera Thyeste à la voix du devoir.</l>
           </sp>
-          <sp xml:id="I01-7" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I01-7">
             <speaker>HIPPODAMIE.</speaker>
             <l n="75" xml:id="l75">En vain je l’ai tenté ; c’est là ce qui m’accable.</l>
           </sp>
-          <sp xml:id="I01-8" who="POLEMON">
+          <sp who="POLEMON" xml:id="I01-8">
             <speaker>POLÉMON.</speaker>
             <l n="76" xml:id="l76">Plus criminel qu’Atrée il est moins intraitable ;</l>
-            <l n="77" xml:id="l77" part="I">Il connaît son erreur.</l>
+            <l n="77" part="I" xml:id="l77">Il connaît son erreur.</l>
           </sp>
-          <sp xml:id="I01-9" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I01-9">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Oui, mais il la chérit.</l>
             <l n="78" xml:id="l78">Je hais son attentat ; sa douleur m’attendrit :</l>
-            <l n="79" xml:id="l79" part="I">Je le blâme et le plains.</l>
+            <l n="79" part="I" xml:id="l79">Je le blâme et le plains.</l>
           </sp>
-          <sp xml:id="I01-10" who="POLEMON">
+          <sp who="POLEMON" xml:id="I01-10">
             <speaker>POLÉMON.</speaker>
             <l part="F">Mais la cause fatale</l>
             <l n="80" xml:id="l80">Du malheur qui poursuit la race de Tantale,</l>
@@ -205,14 +208,14 @@
             <l n="82" xml:id="l82">Qui devrait s’arracher aux mains d’un ravisseur,</l>
             <l n="83" xml:id="l83">Qui met la Grèce en feu par ses funestes charmes ?</l>
           </sp>
-          <sp xml:id="I01-11" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I01-11">
             <speaker>HIPPODAMIE.</speaker>
             <l n="84" xml:id="l84">Je n’ai pu d’elle encore obtenir que des larmes :</l>
             <l n="85" xml:id="l85">Je m’en suis séparée; et, fuyant les mortels,</l>
             <l n="86" xml:id="l86">J’ai cherché la retraite aux pieds de ces autels.</l>
             <l n="87" xml:id="l87">J’y finirai des jours que mes fils empoisonnent.</l>
           </sp>
-          <sp xml:id="I01-12" who="POLEMON">
+          <sp who="POLEMON" xml:id="I01-12">
             <speaker>POLÉMON.</speaker>
             <l n="88" xml:id="l88">Quand nous n’agissons point, les dieux nous abandonnent.</l>
             <l n="89" xml:id="l89">Ranimez un courage éteint par le malheur.</l>
@@ -230,15 +233,16 @@
             <l n="101" xml:id="l101">Je les ferai rougir d’abandonner l’état ;</l>
             <l n="102" xml:id="l102">Et, pour servir les rois, je revole au sénat.[2]</l>
           </sp>
-          <sp xml:id="I01-13" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I01-13">
             <speaker>HIPPODAMIE.</speaker>
             <l n="103" xml:id="l103">Tu serviras leur mère. Ah ! Cours, et que ton zèle</l>
             <l n="104" xml:id="l104">Lui rende ses enfants qui sont perdus pour elle. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf2"><person corresp="#HIPPODAMIE"/></listPerson></head>
-          <sp xml:id="I02-1" who="HIPPODAMIE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#HIPPODAMIE"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="I02-1">
             <speaker>HIPPODAMIE, seule.</speaker>
             <l n="105" xml:id="l105">Mes fils, mon seul espoir, et mon cruel fléau,</l>
             <l n="106" xml:id="l106">Si vos sanglantes mains m’ont ouvert un tombeau,</l>
@@ -250,36 +254,39 @@
             <l n="112" xml:id="l112">Vous avez trop aigri leur mortelle amertume.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Hippodamie, Érope, Mégare.<listPerson type="configuration" xml:id="conf3"><person corresp="#EROPE"/><person corresp="#HIPPODAMIE"/><person corresp="#MEGARE"/></listPerson></head>
-          <sp xml:id="I03-1" who="EROPE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Hippodamie, Érope, Mégare.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#EROPE"/>
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#MEGARE"/></listPerson></head>
+          <sp who="EROPE" xml:id="I03-1">
             <speaker>ÉROPE, en entrant, pleurant et embrassant Mégare.</speaker>
             <l n="113" xml:id="l113">Va, te dis-je, Mégare, et cache à tous les yeux</l>
             <l n="114" xml:id="l114">Dans ces antres secrets ce dépôt précieux.</l>
           </sp>
-          <sp xml:id="I03-2" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I03-2">
             <speaker>HIPPODAMIE.</speaker>
             <l n="115" xml:id="l115">Ciel ! Érope, est-ce vous ? Qui ? Vous dans ces asiles !</l>
           </sp>
-          <sp xml:id="I03-3" who="EROPE">
+          <sp who="EROPE" xml:id="I03-3">
             <speaker>ÉROPE.</speaker>
             <l n="116" xml:id="l116">Cet objet odieux des discordes civiles,</l>
             <l n="117" xml:id="l117">Celle à qui tant de maux doivent se reprocher,</l>
             <l n="118" xml:id="l118">Sans doute à vos regards aurait dû se cacher.</l>
           </sp>
-          <sp xml:id="I03-4" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I03-4">
             <speaker>HIPPODAMIE.</speaker>
             <l n="119" xml:id="l119">Qui vous ramène, hélas ! dans ce temple funeste,</l>
             <l n="120" xml:id="l120">Menacé par Atrée et souillé par Thyeste ?</l>
             <l n="121" xml:id="l121">L’aspect de ce lieu saint doit vous épouvanter.</l>
           </sp>
-          <sp xml:id="I03-5" who="EROPE">
+          <sp who="EROPE" xml:id="I03-5">
             <speaker>ÉROPE.</speaker>
             <l n="122" xml:id="l122">À vos enfants, du moins, il se fait respecter.</l>
             <l n="123" xml:id="l123">Laissez-moi ce refuge ; il est inviolable ;</l>
             <l n="124" xml:id="l124">N’enviez pas, ma mère, un asile au coupable.</l>
           </sp>
-          <sp xml:id="I03-6" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I03-6">
             <speaker>HIPPODAMIE.</speaker>
             <l n="125" xml:id="l125">Vous ne l’êtes que trop ; vos dangereux appas</l>
             <l n="126" xml:id="l126">Ont produit des forfaits que vous n’expierez pas.</l>
@@ -289,7 +296,7 @@
             <l n="130" xml:id="l130">Du théâtre de sang où l’on combat pour vous.</l>
             <l n="131" xml:id="l131">De quelque ombre de paix avez-vous l’espérance ?</l>
           </sp>
-          <sp xml:id="I03-7" who="EROPE">
+          <sp who="EROPE" xml:id="I03-7">
             <speaker>ÉROPE.</speaker>
             <l n="132" xml:id="l132">Je n’ai que mes terreurs. En vain par sa prudence</l>
             <l n="133" xml:id="l133">Polémon, qui se jette entre ces inhumains,</l>
@@ -298,9 +305,9 @@
             <l n="136" xml:id="l136">Je cherche, ainsi que vous, des dieux moins implacables.</l>
             <l n="137" xml:id="l137">Souffrez, en m’accusant de toutes vos douleurs,</l>
             <l n="138" xml:id="l138">Qu’à vos gémissements j’ose mêler mes pleurs.</l>
-            <l n="139" xml:id="l139" part="I">Que n’en puis-je être digne !</l>
+            <l n="139" part="I" xml:id="l139">Que n’en puis-je être digne !</l>
           </sp>
-          <sp xml:id="I03-8" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I03-8">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Ah ! trop chère ennemie,</l>
             <l n="140" xml:id="l140">Est-ce à vous de vous joindre aux pleurs d’Hippodamie ?</l>
@@ -315,7 +322,7 @@
             <l n="149" xml:id="l149">Mais voulez-vous me croire et vous joindre à ma voix ;</l>
             <l n="150" xml:id="l150">Ou vous ai-je parlé pour la dernière fois ?</l>
           </sp>
-          <sp xml:id="I03-9" who="EROPE">
+          <sp who="EROPE" xml:id="I03-9">
             <speaker>ÉROPE.</speaker>
             <l n="151" xml:id="l151">Je voudrais que le jour où votre fils Thyeste</l>
             <l n="152" xml:id="l152">Outragea sous vos yeux la justice céleste,</l>
@@ -330,29 +337,29 @@
             <l n="161" xml:id="l161">Mais plus il est aigri contre mon ravisseur,[3]</l>
             <l n="162" xml:id="l162">Plus à ses yeux sans doute Érope est en horreur.</l>
           </sp>
-          <sp xml:id="I03-10" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I03-10">
             <speaker>HIPPODAMIE.</speaker>
             <l n="163" xml:id="l163">Je sais qu’avec fureur il poursuit sa vengeance.[4]</l>
           </sp>
-          <sp xml:id="I03-11" who="EROPE">
+          <sp who="EROPE" xml:id="I03-11">
             <speaker>ÉROPE.</speaker>
             <l n="164" xml:id="l164">Vous avez sur un fils encor quelque puissance.</l>
           </sp>
-          <sp xml:id="I03-12" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I03-12">
             <speaker>HIPPODAMIE.</speaker>
             <l n="165" xml:id="l165">Sur les degrés du trône elle s’évanouit ;</l>
             <l n="166" xml:id="l166">L’enfance nous la donne, et l’âge la ravit.</l>
             <l n="167" xml:id="l167">Le cœur de mes deux fils est sourd à ma prière.</l>
             <l n="168" xml:id="l168">Hélas ! c’est quelquefois un malheur d’être mère.</l>
           </sp>
-          <sp xml:id="I03-13" who="EROPE">
+          <sp who="EROPE" xml:id="I03-13">
             <speaker>ÉROPE.</speaker>
             <l n="169" xml:id="l169">Madame... Il est trop vrai... Mais dans ce lieu sacré</l>
             <l n="170" xml:id="l170">Le sage Polémon tout à l’heure est entré.</l>
             <l n="171" xml:id="l171">N’a-t-il point consolé vos alarmes cruelles ?</l>
             <l n="172" xml:id="l172">N’aurait-il apporté que de tristes nouvelles ?</l>
           </sp>
-          <sp xml:id="I03-14" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I03-14">
             <speaker>HIPPODAMIE.</speaker>
             <l n="173" xml:id="l173">J’attends beaucoup de lui ; mais, malgré tous ses soins,</l>
             <l n="174" xml:id="l174">Mes transports douloureux ne me troublent pas moins.</l>
@@ -380,7 +387,7 @@
             <l n="194" xml:id="l194">Ils maudiraient leur haine et leur férocité :</l>
             <l n="195" xml:id="l195">Ils tomberaient en pleurs aux pieds d’Hippodamie.</l>
           </sp>
-          <sp xml:id="I03-15" who="EROPE">
+          <sp who="EROPE" xml:id="I03-15">
             <speaker>ÉROPE.</speaker>
             <l n="196" xml:id="l196">Madame, un sort plus triste empoisonne ma vie.[6]</l>
             <l n="197" xml:id="l197">Les monstres déchaînés de l’empire des morts</l>
@@ -396,33 +403,36 @@
             <l n="207" xml:id="l207">C’était à vos vertus de m’obtenir ma grâce.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Hippodamie, Érope, Mégare.<listPerson type="configuration" xml:id="conf4"><person corresp="#MEGARE"/><person corresp="#HIPPODAMIE"/><person corresp="#EROPE"/></listPerson></head>
-          <sp xml:id="I04-1" who="MEGARE">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Hippodamie, Érope, Mégare.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#MEGARE"/>
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#EROPE"/></listPerson></head>
+          <sp who="MEGARE" xml:id="I04-1">
             <speaker>MÉGARE.</speaker>
-            <l n="208" xml:id="l208" part="I">Princesse... les deux rois...</l>
+            <l n="208" part="I" xml:id="l208">Princesse... les deux rois...</l>
           </sp>
-          <sp xml:id="I04-2" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I04-2">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Qu’est-ce donc qui se passe ?</l>
           </sp>
-          <sp xml:id="I04-3" who="EROPE">
+          <sp who="EROPE" xml:id="I04-3">
             <speaker>ÉROPE.</speaker>
             <l n="209" xml:id="l209">Quoi !... Thyeste !... Ce temple !... Ah ! Qu’est-ce que j’entends ?</l>
           </sp>
-          <sp xml:id="I04-4" who="MEGARE">
+          <sp who="MEGARE" xml:id="I04-4">
             <speaker>MÉGARE.</speaker>
             <l n="210" xml:id="l210">Les cris de la patrie et ceux des combattants.</l>
             <l n="211" xml:id="l211">La mort suit en ces lieux les deux malheureux frères.</l>
           </sp>
-          <sp xml:id="I04-5" who="EROPE">
+          <sp who="EROPE" xml:id="I04-5">
             <speaker>ÉROPE.</speaker>
             <l n="212" xml:id="l212">Allons, je l’obtiendrai de leurs mains sanguinaires...</l>
             <l n="213" xml:id="l213">Ma mère, montrons-nous à ces désespérés,</l>
             <l n="214" xml:id="l214">Ils me sacrifieront ; mais vous les calmerez.</l>
-            <l n="215" xml:id="l215" part="I">Allons, je suis vos pas.</l>
+            <l n="215" part="I" xml:id="l215">Allons, je suis vos pas.</l>
           </sp>
-          <sp xml:id="I04-6" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="I04-6">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Ah ! vous êtes ma fille ;</l>
             <l n="216" xml:id="l216">Sauvons de ses fureurs une triste famille,</l>
@@ -431,29 +441,32 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Hippodamie, Érope, Polémon.<listPerson type="configuration" xml:id="conf6"><person corresp="#POLEMON"/><person corresp="#EROPE"/><person corresp="#HIPPODAMIE"/></listPerson></head>
-          <sp xml:id="II01-1" who="POLEMON">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE PREMIÈRE. Hippodamie, Érope, Polémon.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#POLEMON"/>
+            <person corresp="#EROPE"/>
+            <person corresp="#HIPPODAMIE"/></listPerson></head>
+          <sp who="POLEMON" xml:id="II01-1">
             <speaker>POLÉMON.</speaker>
             <l n="219" xml:id="l219">Où courez-vous ?... Rentrez... que vos larmes tarissent,</l>
             <l n="220" xml:id="l220">Que de vos cœurs glacés les terreurs se bannissent :</l>
             <l n="221" xml:id="l221">Je me trompe, ou je vois ce grand jour arrivé</l>
             <l n="222" xml:id="l222">Qu’à finir tant de maux le ciel a réservé.</l>
             <l n="223" xml:id="l223">Les forfaits ont leur terme, et votre destin change :</l>
-            <l n="224" xml:id="l224" part="I">La paix revient.</l>
+            <l n="224" part="I" xml:id="l224">La paix revient.</l>
           </sp>
-          <sp xml:id="II01-2" who="EROPE">
+          <sp who="EROPE" xml:id="II01-2">
             <speaker>ÉROPE.</speaker>
             <l part="M">Comment !</l>
           </sp>
-          <sp xml:id="II01-3" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="II01-3">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Quel dieu, quel sort étrange,</l>
             <l n="225" xml:id="l225">Quel miracle a fléchi le cœur de mes enfants ?</l>
           </sp>
-          <sp xml:id="II01-4" who="POLEMON">
+          <sp who="POLEMON" xml:id="II01-4">
             <speaker>POLÉMON.</speaker>
             <l n="226" xml:id="l226">L’équité, dont la voix triomphe avec le temps.</l>
             <l n="227" xml:id="l227">Aveugle en son courroux, le violent Atrée</l>
@@ -480,11 +493,11 @@
             <l n="247" xml:id="l247">Il conjure à grands cris la discorde farouche ;</l>
             <l n="248" xml:id="l248">Et le saint nom de paix vole de bouche en bouche.</l>
           </sp>
-          <sp xml:id="II01-5" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="II01-5">
             <speaker>HIPPODAMIE.</speaker>
-            <l n="249" xml:id="l249" part="I">Tu nous as tous sauvés.</l>
+            <l n="249" part="I" xml:id="l249">Tu nous as tous sauvés.</l>
           </sp>
-          <sp xml:id="II01-6" who="POLEMON">
+          <sp who="POLEMON" xml:id="II01-6">
             <speaker>POLÉMON.</speaker>
             <l part="F">Il faut bien qu’une fois</l>
             <l n="250" xml:id="l250">Le peuple en nos climats soit l’exemple des rois.</l>
@@ -505,7 +518,7 @@
             <l n="265" xml:id="l265">N’aura plus qu’à bénir, au comble du bonheur,</l>
             <l n="266" xml:id="l266">Le dieu qui de son sang est le premier auteur.</l>
           </sp>
-          <sp xml:id="II01-7" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="II01-7">
             <speaker>HIPPODAMIE.</speaker>
             <l n="267" xml:id="l267">Je lui rends déjà grâce, et non moins à vous-même.</l>
             <l n="268" xml:id="l268">Et vous, ma fille, et vous que j’ai plainte et que j’aime,</l>
@@ -513,14 +526,14 @@
             <l n="270" xml:id="l270">Aux dieux dont nous sortons offrez un pur encens.</l>
             <l n="271" xml:id="l271">Qu’Hippodamie enfin, tranquille et rassurée,</l>
             <l n="272" xml:id="l272">Remette Érope heureuse entre les mains d’Atrée ;</l>
-            <l n="273" xml:id="l273" part="I">Qu’il pardonne à son frère.</l>
+            <l n="273" part="I" xml:id="l273">Qu’il pardonne à son frère.</l>
           </sp>
-          <sp xml:id="II01-8" who="EROPE">
+          <sp who="EROPE" xml:id="II01-8">
             <speaker>ÉROPE.</speaker>
             <l part="F">Ah dieux !... Et croyez-vous</l>
-            <l n="274" xml:id="l274" part="I">Qu’il sache pardonner ?</l>
+            <l n="274" part="I" xml:id="l274">Qu’il sache pardonner ?</l>
           </sp>
-          <sp xml:id="II01-9" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="II01-9">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Dans ses transports jaloux,</l>
             <l n="275" xml:id="l275">Il sait que par Thyeste en tout temps respectée,</l>
@@ -530,41 +543,44 @@
             <l n="279" xml:id="l279">Qu’enfin par les dieux même à leurs autels conduite,</l>
             <l n="280" xml:id="l280">Elle a, dans la retraite, évité sa poursuite.</l>
           </sp>
-          <sp xml:id="II01-10" who="EROPE">
+          <sp who="EROPE" xml:id="II01-10">
             <speaker>ÉROPE.</speaker>
             <l n="281" xml:id="l281">Voilà cette retraite où je prétends cacher</l>
             <l n="282" xml:id="l282">Ce qu’un remords affreux me pourrait reprocher.[2]</l>
             <l n="283" xml:id="l283">C’est là qu’aux pieds des dieux on nourrit mon enfance ;</l>
             <l n="284" xml:id="l284">C’est là que je reviens implorer leur clémence.[3]</l>
-            <l n="285" xml:id="l285" part="I">J’y veux vivre et mourir.</l>
+            <l n="285" part="I" xml:id="l285">J’y veux vivre et mourir.</l>
           </sp>
-          <sp xml:id="II01-11" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="II01-11">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Vivez pour un époux ;</l>
             <l n="286" xml:id="l286">Cachez-vous pour Thyeste ; il est perdu pour vous.</l>
           </sp>
-          <sp xml:id="II01-12" who="EROPE">
+          <sp who="EROPE" xml:id="II01-12">
             <speaker>ÉROPE.</speaker>
             <l n="287" xml:id="l287">Dieux qui me confondez, vous amenez Thyeste !</l>
           </sp>
-          <sp xml:id="II01-13" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="II01-13">
             <speaker>HIPPODAMIE.</speaker>
-            <l n="288" xml:id="l288" part="I">Fuyez-le.</l>
+            <l n="288" part="I" xml:id="l288">Fuyez-le.</l>
           </sp>
-          <sp xml:id="II01-14" who="EROPE">
+          <sp who="EROPE" xml:id="II01-14">
             <speaker>ÉROPE.</speaker>
             <l part="F">En est-il temps ?... Mon sort est trop funeste.</l>
             <stage type="exit">Elle sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Hippodamie, Polémon, Thyeste.<listPerson type="configuration" xml:id="conf7"><person corresp="#HIPPODAMIE"/><person corresp="#THYESTE"/><person corresp="#POLEMON"/></listPerson></head>
-          <sp xml:id="II02-1" who="HIPPODAMIE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Hippodamie, Polémon, Thyeste.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#THYESTE"/>
+            <person corresp="#POLEMON"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="II02-1">
             <speaker>HIPPODAMIE.</speaker>
             <l n="289" xml:id="l289">Mon fils, qui vous ramène en mes bras maternels ?</l>
             <l n="290" xml:id="l290">Osez-vous reparaître aux pieds de ces autels ?</l>
           </sp>
-          <sp xml:id="II02-2" who="THYESTE">
+          <sp who="THYESTE" xml:id="II02-2">
             <speaker>THYESTE.</speaker>
             <l n="291" xml:id="l291">J’y viens... Chercher la paix, s’il en est pour Atrée,</l>
             <l n="292" xml:id="l292">S’il en est pour mon âme au désespoir livrée ;</l>
@@ -573,7 +589,7 @@
             <l n="295" xml:id="l295">Expier envers vous ma criminelle offense,</l>
             <l n="296" xml:id="l296">Si de la réparer il est en ma puissance.</l>
           </sp>
-          <sp xml:id="II02-3" who="POLEMON">
+          <sp who="POLEMON" xml:id="II02-3">
             <speaker>POLÉMON.</speaker>
             <l n="297" xml:id="l297">Vous le pouvez, sans doute, en sachant vous dompter.</l>
             <l n="298" xml:id="l298">Lorsqu’à de tels excès se laissant emporter,</l>
@@ -600,7 +616,7 @@
             <l n="319" xml:id="l319">Vous pourriez pour tout prix d’une imprudence vaine,</l>
             <l n="320" xml:id="l320">Abandonné d’Argos, être exclus de Mycène.</l>
           </sp>
-          <sp xml:id="II02-4" who="THYESTE">
+          <sp who="THYESTE" xml:id="II02-4">
             <speaker>THYESTE.</speaker>
             <l n="321" xml:id="l321">J’ai senti mes malheurs plus que vous ne pensez.</l>
             <l n="322" xml:id="l322">N’irritez point ma plaie ; elle est cruelle assez.</l>
@@ -618,7 +634,7 @@
             <l n="334" xml:id="l334">Qu’enfin ce fut à moi qu’on osa la ravir ;</l>
             <l n="335" xml:id="l335">Que si le désespoir fut jamais excusable...</l>
           </sp>
-          <sp xml:id="II02-5" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="II02-5">
             <speaker>HIPPODAMIE.</speaker>
             <l n="336" xml:id="l336">Ne vous aveuglez point ; rien n’excuse un coupable.</l>
             <l n="337" xml:id="l337">Oubliez avec moi de malheureux amours,</l>
@@ -633,9 +649,10 @@
             <l n="346" xml:id="l346">Réparer vos erreurs et vaincre son courroux.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf8"><person corresp="#THYESTE"/></listPerson></head>
-          <sp xml:id="II03-1" who="THYESTE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#THYESTE"/></listPerson></head>
+          <sp who="THYESTE" xml:id="II03-1">
             <speaker>THYESTE.</speaker>
             <l n="347" xml:id="l347">Que deviens-tu, Thyeste ! Eh quoi ! cette paix même,</l>
             <l n="348" xml:id="l348">Cette paix qui d’Argos est le bonheur suprême,</l>
@@ -652,23 +669,25 @@
             <l n="359" xml:id="l359">Et pour quelques moments ce temple est un asile.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Thyeste, Mégare.<listPerson type="configuration" xml:id="conf9"><person corresp="#THYESTE"/><person corresp="#MEGARE"/></listPerson></head>
-          <sp xml:id="II04-1" who="THYESTE">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Thyeste, Mégare.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#THYESTE"/>
+            <person corresp="#MEGARE"/></listPerson></head>
+          <sp who="THYESTE" xml:id="II04-1">
             <speaker>THYESTE.</speaker>
             <l n="360" xml:id="l360">Mégare, qu’a-t-on fait ? Ce temple est-il tranquille ?</l>
             <l n="361" xml:id="l361">Le descendant des dieux est-il eu sûreté ?</l>
           </sp>
-          <sp xml:id="II04-2" who="MEGARE">
+          <sp who="MEGARE" xml:id="II04-2">
             <speaker>MÉGARE.</speaker>
             <l n="362" xml:id="l362">Sous cette voûte antique un séjour écarté,</l>
             <l n="363" xml:id="l363">Au milieu des tombeaux, recèle son enfance.</l>
           </sp>
-          <sp xml:id="II04-3" who="THYESTE">
+          <sp who="THYESTE" xml:id="II04-3">
             <speaker>THYESTE.</speaker>
             <l n="364" xml:id="l364">L’asile de la mort est sa seule assurance !</l>
           </sp>
-          <sp xml:id="II04-4" who="MEGARE">
+          <sp who="MEGARE" xml:id="II04-4">
             <speaker>MÉGARE.</speaker>
             <l n="365" xml:id="l365">Celle qui dans le fond de ces antres affreux</l>
             <l n="366" xml:id="l366">Veille aux premiers moments de ses jours malheureux,</l>
@@ -681,25 +700,28 @@
             <l n="373" xml:id="l373">Et je tremble de voir ses jours ensevelis</l>
             <l n="374" xml:id="l374">Dans le sein des tombeaux qui renferment son fils.</l>
           </sp>
-          <sp xml:id="II04-5" who="THYESTE">
+          <sp who="THYESTE" xml:id="II04-5">
             <speaker>THYESTE.</speaker>
             <l n="375" xml:id="l375">Épouse infortunée, et malheureuse mère !</l>
             <l n="376" xml:id="l376">Mais nul ne peut forcer sa prison volontaire ;</l>
             <l n="377" xml:id="l377">De cet asile saint rien ne peut la tirer.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Thyeste, Érope, Mégare.<listPerson type="configuration" xml:id="conf10"><person corresp="#EROPE"/><person corresp="#THYESTE"/><person corresp="#MEGARE"/></listPerson></head>
-          <sp xml:id="II05-1" who="EROPE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Thyeste, Érope, Mégare.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#EROPE"/>
+            <person corresp="#THYESTE"/>
+            <person corresp="#MEGARE"/></listPerson></head>
+          <sp who="EROPE" xml:id="II05-1">
             <speaker>ÉROPE.</speaker>
             <l n="378" xml:id="l378">Seigneur, aux mains d’Atrée on va donc me livrer !</l>
             <l n="379" xml:id="l379">Votre mère l’ordonne... et je n’ai pour excuse</l>
             <l n="380" xml:id="l380">Que mon crime ignoré, ma rougeur qui m’accuse,</l>
             <l n="381" xml:id="l381">Un enfant malheureux qui sera découvert.</l>
             <l n="382" xml:id="l382">Que je résiste ou non, c’en est fait, tout me perd.</l>
-            <l n="383" xml:id="l383">Auteur de	tant de maux, pourquoi m’as-tu séduite ?</l>
+            <l n="383" xml:id="l383">Auteur de tant de maux, pourquoi m’as-tu séduite ?</l>
           </sp>
-          <sp xml:id="II05-2" who="THYESTE">
+          <sp who="THYESTE" xml:id="II05-2">
             <speaker>THYESTE.</speaker>
             <l n="384" xml:id="l384">Oubliez es forfaits, n’en craignez point le suite,</l>
             <l n="385" xml:id="l385">Cette fatale paix ne s’accoplira pas.</l>
@@ -723,7 +745,7 @@
             <l n="403" xml:id="l403">Et Mycène bientôt, à son prince fidèle,</l>
             <l n="404" xml:id="l404">En pourra célébrer la fête solennelle.</l>
           </sp>
-          <sp xml:id="II05-3" who="EROPE">
+          <sp who="EROPE" xml:id="II05-3">
             <speaker>ÉROPE.</speaker>
             <l n="405" xml:id="l405">Va, ne réclame point ces nœuds infortunés,</l>
             <l n="406" xml:id="l406">Et ces dieux, et l’hymen... Ils nous ont condamnés.</l>
@@ -742,25 +764,28 @@
             <l n="419" xml:id="l419">Qu’il rend indissoluble un nœud que je déteste...</l>
             <l n="420" xml:id="l420">Et qu’il n’est plus pour moi d’autre époux que Thyeste.</l>
           </sp>
-          <sp xml:id="II05-4" who="THYESTE">
+          <sp who="THYESTE" xml:id="II05-4">
             <speaker>THYESTE.</speaker>
             <l n="421" xml:id="l421">C’est un nom qu’un tyran ne peut plus m’enlever :</l>
             <l n="422" xml:id="l422">La mort et les enfers pourront seuls m’en priver.</l>
             <l n="423" xml:id="l423">Le sceptre de Mycène a pour moi moins de charmes.</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
-          <head>SCÈNE VI. Érope, Thyeste, Polemon.<listPerson type="configuration" xml:id="conf11"><person corresp="#POLEMON"/><person corresp="#THYESTE"/><person corresp="#EROPE"/></listPerson></head>
-          <sp xml:id="II06-1" who="POLEMON">
+        <div2 n="6" type="scene" xml:id="II06">
+          <head>SCÈNE VI. Érope, Thyeste, Polemon.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#POLEMON"/>
+            <person corresp="#THYESTE"/>
+            <person corresp="#EROPE"/></listPerson></head>
+          <sp who="POLEMON" xml:id="II06-1">
             <speaker>POLÉMON.</speaker>
             <l n="424" xml:id="l424">Seigneur, Atrée arrive ; il a quitté ses armes ;</l>
             <l n="425" xml:id="l425">Dans ce temple avec vous il vient jurer la paix.</l>
           </sp>
-          <sp xml:id="II06-2" who="THYESTE">
+          <sp who="THYESTE" xml:id="II06-2">
             <speaker>THYESTE.</speaker>
             <l n="426" xml:id="l426">Grands dieux ! Vous me forcez de haïr vos bienfaits.</l>
           </sp>
-          <sp xml:id="II06-3" who="POLEMON">
+          <sp who="POLEMON" xml:id="II06-3">
             <speaker>POLÉMON.</speaker>
             <l n="427" xml:id="l427">Vous allez à l’autel confirmer vos promesses.</l>
             <l n="428" xml:id="l428">L’encens s’élève aux cieux des mains de nos prêtresses.</l>
@@ -774,52 +799,52 @@
             <l n="436" xml:id="l436">De vous remettre aux mains d’un époux qui vous aime,</l>
             <l n="437" xml:id="l437">Et d’essuyer les pleurs qui coulent de vos yeux.</l>
           </sp>
-          <sp xml:id="II06-4" who="EROPE">
+          <sp who="EROPE" xml:id="II06-4">
             <speaker>ÉROPE.</speaker>
             <l n="438" xml:id="l438">Mon sang devait couler... vous le savez, grands dieux !</l>
           </sp>
-          <sp xml:id="II06-5" who="THYESTE">
+          <sp who="THYESTE" xml:id="II06-5">
             <speaker>THYESTE, à Polémon.</speaker>
-            <l n="439" xml:id="l439" part="I">Il me faut rendre Érope ?</l>
+            <l n="439" part="I" xml:id="l439">Il me faut rendre Érope ?</l>
           </sp>
-          <sp xml:id="II06-6" who="POLEMON">
+          <sp who="POLEMON" xml:id="II06-6">
             <speaker>POLÉMON.</speaker>
             <l part="F">Oui, Thyeste, et sur l’heure :</l>
-            <l n="440" xml:id="l440" part="I">C’est la loi du traité.</l>
+            <l n="440" part="I" xml:id="l440">C’est la loi du traité.</l>
           </sp>
-          <sp xml:id="II06-7" who="THYESTE">
+          <sp who="THYESTE" xml:id="II06-7">
             <speaker>THYESTE.</speaker>
             <l part="F">Va, que plutôt je meure,</l>
             <l n="441" xml:id="l441">Qu’aux monstres des enfers mes mânes soient livrés !...</l>
           </sp>
-          <sp xml:id="II06-8" who="POLEMON">
+          <sp who="POLEMON" xml:id="II06-8">
             <speaker>POLÉMON.</speaker>
             <l n="442" xml:id="l442">Quoi ! Vous avez promis, et vous vous parjurez !</l>
           </sp>
-          <sp xml:id="II06-9" who="THYESTE">
+          <sp who="THYESTE" xml:id="II06-9">
             <speaker>THYESTE.</speaker>
-            <l n="443" xml:id="l443" part="I">Qui ? moi ! qu’ai-je promis ?</l>
+            <l n="443" part="I" xml:id="l443">Qui ? moi ! qu’ai-je promis ?</l>
           </sp>
-          <sp xml:id="II06-10" who="POLEMON">
+          <sp who="POLEMON" xml:id="II06-10">
             <speaker>POLÉMON.</speaker>
             <l part="F">Votre fougue inutile</l>
             <l n="444" xml:id="l444">Veut-elle rallumer la discorde civile ?</l>
           </sp>
-          <sp xml:id="II06-11" who="THYESTE">
+          <sp who="THYESTE" xml:id="II06-11">
             <speaker>THYESTE.</speaker>
             <l n="445" xml:id="l445">La discorde vaut mieux qu’un si fatal accord.</l>
             <l n="446" xml:id="l446">Il redemande Érope ; il l’aura par ma mort.</l>
           </sp>
-          <sp xml:id="II06-12" who="POLEMON">
+          <sp who="POLEMON" xml:id="II06-12">
             <speaker>POLÉMON.</speaker>
             <l n="447" xml:id="l447">Vous écoutiez tantôt la voix de la justice.</l>
           </sp>
-          <sp xml:id="II06-13" who="THYESTE">
+          <sp who="THYESTE" xml:id="II06-13">
             <speaker>THYESTE.</speaker>
             <l n="448" xml:id="l448">Je voyais de moins près l’horreur de mon supplice.</l>
-            <l n="449" xml:id="l449" part="I">Je ne le puis souffrir.</l>
+            <l n="449" part="I" xml:id="l449">Je ne le puis souffrir.</l>
           </sp>
-          <sp xml:id="II06-14" who="POLEMON">
+          <sp who="POLEMON" xml:id="II06-14">
             <speaker>POLÉMON.</speaker>
             <l part="F">Ah ! C’est trop de fureurs,</l>
             <l n="450" xml:id="l450">C’est trop d’égarements et de folles erreurs ;</l>
@@ -836,18 +861,20 @@
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
-          <head>SCÈNE VII. Érope, Thyeste.<listPerson type="configuration" xml:id="conf12"><person corresp="#EROPE"/><person corresp="#THYESTE"/></listPerson></head>
-          <sp xml:id="II07-1" who="EROPE">
+        <div2 n="7" type="scene" xml:id="II07">
+          <head>SCÈNE VII. Érope, Thyeste.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#EROPE"/>
+            <person corresp="#THYESTE"/></listPerson></head>
+          <sp who="EROPE" xml:id="II07-1">
             <speaker>ÉROPE.</speaker>
             <l n="461" xml:id="l461">C’en est donc fait, Thyeste, il faut nous séparer.</l>
           </sp>
-          <sp xml:id="II07-2" who="THYESTE">
+          <sp who="THYESTE" xml:id="II07-2">
             <speaker>THYESTE.</speaker>
             <l n="462" xml:id="l462">Moi ! Vous, mon fils !... Quel trouble a pu vous égarer ?</l>
-            <l n="463" xml:id="l463" part="I">Quel est votre dessein ?</l>
+            <l n="463" part="I" xml:id="l463">Quel est votre dessein ?</l>
           </sp>
-          <sp xml:id="II07-3" who="EROPE">
+          <sp who="EROPE" xml:id="II07-3">
             <speaker>ÉROPE.</speaker>
             <l part="F">C’est dans cette demeure,</l>
             <l n="464" xml:id="l464">C’est dans cette prison qu’il est temps que je meure,</l>
@@ -856,24 +883,28 @@
             <l n="467" xml:id="l467">À tous ces vains honneurs de la grandeur suprême ;</l>
             <l n="468" xml:id="l468">Au redoutable Atrée, et surtout à vous-même.</l>
           </sp>
-          <sp xml:id="II07-4" who="THYESTE">
+          <sp who="THYESTE" xml:id="II07-4">
             <speaker>THYESTE.</speaker>
             <l n="469" xml:id="l469">Vous n’accomplirez point ce projet odieux !</l>
             <l n="470" xml:id="l470">Je vous disputerai à mon frère, à nos dieux.</l>
-            <l n="471" xml:id="l471" part="I">Suivez-moi.</l>
+            <l n="471" part="I" xml:id="l471">Suivez-moi.</l>
           </sp>
-          <sp xml:id="II07-5" who="EROPE">
+          <sp who="EROPE" xml:id="II07-5">
             <speaker>ÉROPE.</speaker>
             <l part="F">Nous marchons d’abîmes en abîmes ;</l>
             <l n="472" xml:id="l472">C’est là votre partage, amours illégitimes.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Hippodamie, Atrée, Polémon, Idas, Gardes, Peuple, Prêtres.<listPerson type="configuration" xml:id="conf14"><person corresp="#HIPPODAMIE"/><person corresp="#ATREE"/><person corresp="#POLEMON"/><person corresp="#IDAS"/></listPerson></head>
-          <sp xml:id="III01-1" who="HIPPODAMIE">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE PREMIÈRE. Hippodamie, Atrée, Polémon, Idas, Gardes, Peuple, Prêtres.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#ATREE"/>
+            <person corresp="#POLEMON"/>
+            <person corresp="#IDAS"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="III01-1">
             <speaker>HIPPODAMIE.</speaker>
             <l n="473" xml:id="l473">Généreux Polémon, la paix est votre ouvrage.</l>
             <l n="474" xml:id="l474">Régnez heureux, Atrée, et goûtez l’avantage</l>
@@ -892,7 +923,7 @@
             <l n="487" xml:id="l487">J’attendrai dans la paix un fortuné trépas.</l>
             <l n="488" xml:id="l488">Mes derniers jours sont beaux... je ne l’espérais pas.</l>
           </sp>
-          <sp xml:id="III01-2" who="ATREE">
+          <sp who="ATREE" xml:id="III01-2">
             <speaker>ATRÉE.</speaker>
             <l n="489" xml:id="l489">Idas, autour du temple étendez vos cohortes ;</l>
             <l n="490" xml:id="l490">Vous, gardez ce parvis ; vous, veillez à ces portes.</l>
@@ -907,7 +938,7 @@
             <l n="498" xml:id="l498">Sur vos pas en ces lieux ne s’est point présentée ?</l>
             <l n="499" xml:id="l499">Vous deviez l’amener dans ce sacré parvis.</l>
           </sp>
-          <sp xml:id="III01-3" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III01-3">
             <speaker>HIPPODAMIE.</speaker>
             <l n="500" xml:id="l500">Nos mystères divins, dans la Grèce établis,</l>
             <l n="501" xml:id="l501">La retiennent encore au milieu des prêtresses,</l>
@@ -915,12 +946,12 @@
             <l n="503" xml:id="l503">Le ciel est à nos vœux favorable aujourd’hui,</l>
             <l n="504" xml:id="l504">Et vous serez sans doute apaisé comme lui.</l>
           </sp>
-          <sp xml:id="III01-4" who="ATREE">
+          <sp who="ATREE" xml:id="III01-4">
             <speaker>ATRÉE.</speaker>
             <l n="505" xml:id="l505">Rendez-nous, s’il se peut, les immortels propices,</l>
             <l n="506" xml:id="l506">Je ne dois point troubler vos secrets sacrifices.</l>
           </sp>
-          <sp xml:id="III01-5" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III01-5">
             <speaker>HIPPODAMIE.</speaker>
             <l n="507" xml:id="l507">Ce froid et sombre accueil était inattendu.</l>
             <l n="508" xml:id="l508">Je pensais qu’à mes soins vous auriez répondu.</l>
@@ -928,11 +959,11 @@
             <l n="510" xml:id="l510">Je vois trop que ma joie était prématurée,</l>
             <l n="511" xml:id="l511">Que j’ai dû peu compter sur le cœur de mon fils.</l>
           </sp>
-          <sp xml:id="III01-6" who="ATREE">
+          <sp who="ATREE" xml:id="III01-6">
             <speaker>ATRÉE.</speaker>
             <l n="512" xml:id="l512">Atrée est mécontent ; mais il vous est soumis.</l>
           </sp>
-          <sp xml:id="III01-7" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III01-7">
             <speaker>HIPPODAMIE.</speaker>
             <l n="513" xml:id="l513">Ah ! Je voulais de vous, après tant de souffrance,</l>
             <note type="C">Voir Racine, dans Britannicus, Acte I, sc. 1, vers 88 : Un peu moins de respect, et plus de confiance.</note>
@@ -941,11 +972,11 @@
             <l n="516" xml:id="l516">Je ne vous parle point des droits de l’amitié,</l>
             <l n="517" xml:id="l517">Je sais que la nature en a peu sur votre âme.</l>
           </sp>
-          <sp xml:id="III01-8" who="ATREE">
+          <sp who="ATREE" xml:id="III01-8">
             <speaker>ATRÉE.</speaker>
             <l n="518" xml:id="l518">Thyeste vous est cher ; il vous suffit, madame.</l>
           </sp>
-          <sp xml:id="III01-9" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III01-9">
             <speaker>HIPPODAMIE.</speaker>
             <l n="519" xml:id="l519">Vous déchirez mon cœur après l’avoir percé.</l>
             <l n="520" xml:id="l520">Il fut par mes enfants assez longtemps blessé...</l>
@@ -959,16 +990,19 @@
             <l n="528" xml:id="l528">Connaissez votre mère, ingrat, et rougissez.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Atrée, Polémon, Idas, Peuple.<listPerson type="configuration" xml:id="conf15"><person corresp="#ATREE"/><person corresp="#POLEMON"/><person corresp="#IDAS"/></listPerson></head>
-          <sp xml:id="III02-1" who="ATREE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Atrée, Polémon, Idas, Peuple.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#ATREE"/>
+            <person corresp="#POLEMON"/>
+            <person corresp="#IDAS"/></listPerson></head>
+          <sp who="ATREE" xml:id="III02-1">
             <speaker>ATRÉE, au peuple, à Polémon, et à Idas.</speaker>
             <l n="529" xml:id="l529">Qu’on se retire... Et vous, au fond de ma pensée,</l>
             <l n="530" xml:id="l530">Voyez tous les tourments de mon âme offensée,</l>
             <l n="531" xml:id="l531">Et ceux dont je me plains, et ceux qu’il faut celer ;</l>
             <l n="532" xml:id="l532">Et jugez si ce trône a pu me consoler.</l>
           </sp>
-          <sp xml:id="III02-2" who="POLEMON">
+          <sp who="POLEMON" xml:id="III02-2">
             <speaker>POLÉMON.</speaker>
             <l n="533" xml:id="l533">Quels qu’ils soient, vous savez si mon zèle est sincère.</l>
             <l n="534" xml:id="l534">Il peut vous irriter; mais, seigneur, une mère,</l>
@@ -981,7 +1015,7 @@
             <l n="541" xml:id="l541">C’était de vous surtout qu’elle devait attendre</l>
             <l n="542" xml:id="l542">Et la reconnaissance et l’amour le plus tendre.</l>
           </sp>
-          <sp xml:id="III02-3" who="ATREE">
+          <sp who="ATREE" xml:id="III02-3">
             <speaker>ATRÉE.</speaker>
             <l n="543" xml:id="l543">Que Thyeste en conserve : elle l’a préféré ;</l>
             <l n="544" xml:id="l544">Elle accorde à Thyeste un appui déclaré ;</l>
@@ -990,7 +1024,7 @@
             <l n="547" xml:id="l547">Que Mycène est le prix de ses emportements,</l>
             <l n="548" xml:id="l548">Lui seul à ses bontés doit des remerciements.</l>
           </sp>
-          <sp xml:id="III02-4" who="POLEMON">
+          <sp who="POLEMON" xml:id="III02-4">
             <speaker>POLÉMON.</speaker>
             <l n="549" xml:id="l549">Vous en devez tous deux ; et la reine et moi-même,</l>
             <l n="550" xml:id="l550">Nous avons de Pélops suivi l’ordre suprême.</l>
@@ -999,20 +1033,20 @@
             <l n="553" xml:id="l553">Et vous en possédez la plus riche contrée,</l>
             <l n="554" xml:id="l554">Par votre droit d’aînesse à vous seul assurée.</l>
           </sp>
-          <sp xml:id="III02-5" who="ATREE">
+          <sp who="ATREE" xml:id="III02-5">
             <speaker>ATRÉE.</speaker>
             <l n="555" xml:id="l555">De mon frère en tout temps vous fûtes le soutien.</l>
           </sp>
-          <sp xml:id="III02-6" who="POLEMON">
+          <sp who="POLEMON" xml:id="III02-6">
             <speaker>POLÉMON.</speaker>
             <l n="556" xml:id="l556">J’ai pris votre intérêt sans négliger le sien.</l>
             <l n="557" xml:id="l557">La loi seule a parlé, seule elle a mon suffrage.</l>
           </sp>
-          <sp xml:id="III02-7" who="ATREE">
+          <sp who="ATREE" xml:id="III02-7">
             <speaker>ATRÉE.</speaker>
             <l n="558" xml:id="l558">On récompense en lui le crime qui m’outrage.</l>
           </sp>
-          <sp xml:id="III02-8" who="POLEMON">
+          <sp who="POLEMON" xml:id="III02-8">
             <speaker>POLÉMON.</speaker>
             <l n="559" xml:id="l559">On condamne son crime : il le doit expier. [1]</l>
             <l n="560" xml:id="l560">Et vous, s’il se repent, vous devez l’oublier,</l>
@@ -1027,7 +1061,7 @@
             <l n="569" xml:id="l569">Craignez qu’en s’éclairant Argos ne vous haïsse...</l>
             <l n="570" xml:id="l570">Petit-fils de Tantale, écoutez la justice...</l>
           </sp>
-          <sp xml:id="III02-9" who="ATREE">
+          <sp who="ATREE" xml:id="III02-9">
             <speaker>ATRÉE.</speaker>
             <l n="571" xml:id="l571">Polémon, c’est assez, je conçois vos raisons ;</l>
             <l n="572" xml:id="l572">Je n’avais pas besoin de ces nobles leçons ;</l>
@@ -1038,15 +1072,17 @@
             <l n="577" xml:id="l577">Je vous ai dû beaucoup, je le sais ; mais peut-être</l>
             <l n="578" xml:id="l578">Oubliez-vous trop tôt que je suis votre maître.</l>
           </sp>
-          <sp xml:id="III02-10" who="POLEMON">
+          <sp who="POLEMON" xml:id="III02-10">
             <speaker>POLÉMON.</speaker>
             <l n="579" xml:id="l579">Puisse ce titre heureux longtemps vous demeurer !</l>
             <l n="580" xml:id="l580">Et puissent dans Argos vos vertus l’honorer !</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Atrée, Idas.<listPerson type="configuration" xml:id="conf16"><person corresp="#ATREE"/><person corresp="#IDAS"/></listPerson></head>
-          <sp xml:id="III03-1" who="ATREE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Atrée, Idas.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#ATREE"/>
+            <person corresp="#IDAS"/></listPerson></head>
+          <sp who="ATREE" xml:id="III03-1">
             <speaker>ATRÉE.</speaker>
             <l n="581" xml:id="l581">C’est à toi seul, Idas, que ma douleur confie</l>
             <l n="582" xml:id="l582">Les soupçons malheureux qui l’ont encore aigrie,</l>
@@ -1057,7 +1093,7 @@
             <l n="587" xml:id="l587">Polémon n’est qu’un traître, et son ambition</l>
             <l n="588" xml:id="l588">Peut-être de Thyeste armait la faction.</l>
           </sp>
-          <sp xml:id="III03-2" who="IDAS">
+          <sp who="IDAS" xml:id="III03-2">
             <speaker>IDAS.</speaker>
             <l n="589" xml:id="l589">Tel est souvent des cours le manège perfide ;</l>
             <l n="590" xml:id="l590">La vérité les fuit, l’imposture y réside :</l>
@@ -1066,9 +1102,9 @@
             <l n="593" xml:id="l593">Mais que craindriez-vous d’un parti sans puissance ?</l>
             <l n="594" xml:id="l594">Tout n’est-il pas soumis à votre obéissance ?</l>
             <l n="595" xml:id="l595">Ce peuple sous vos lois ne s’est-il pas rangé ?</l>
-            <l n="596" xml:id="l596" part="I">Vous êtes maître ici.</l>
+            <l n="596" part="I" xml:id="l596">Vous êtes maître ici.</l>
           </sp>
-          <sp xml:id="III03-3" who="ATREE">
+          <sp who="ATREE" xml:id="III03-3">
             <speaker>ATRÉE.</speaker>
             <l part="F">Je n’y suis pas vengé,</l>
             <l n="597" xml:id="l597">J’y suis en proie, Idas, à d’étranges supplices.</l>
@@ -1090,7 +1126,7 @@
             <l n="613" xml:id="l613">Si dans ce cœur farouche, en proie aux barbaries,</l>
             <l n="614" xml:id="l614">L’amour habite encore au milieu des furies.</l>
           </sp>
-          <sp xml:id="III03-4" who="IDAS">
+          <sp who="IDAS" xml:id="III03-4">
             <speaker>IDAS.</speaker>
             <l n="615" xml:id="l615">Vous pouvez saris rougir la revoir et l’aimer.</l>
             <l n="616" xml:id="l616">Contre vos sentiments pourquoi vous animer ?</l>
@@ -1103,17 +1139,17 @@
             <l n="623" xml:id="l623">Son âme est noble et juste ; et jusques à ce jour</l>
             <l n="624" xml:id="l624">Nulle mère à son sang n’a marqué tant d’amour.</l>
           </sp>
-          <sp xml:id="III03-5" who="ATREE">
+          <sp who="ATREE" xml:id="III03-5">
             <speaker>ATRÉE.</speaker>
             <l n="625" xml:id="l625">Non, ma fatale épouse, entre mes bras ravie,</l>
             <l n="626" xml:id="l626">De sa place en mon cœur sera du moins bannie.</l>
           </sp>
-          <sp xml:id="III03-6" who="IDAS">
+          <sp who="IDAS" xml:id="III03-6">
             <speaker>IDAS.</speaker>
             <l n="627" xml:id="l627">À vos pieds, dans ce temple, elle doit se jeter ;</l>
             <l n="628" xml:id="l628">Hippodamie enfin doit vous la présenter.</l>
           </sp>
-          <sp xml:id="III03-7" who="ATREE">
+          <sp who="ATREE" xml:id="III03-7">
             <speaker>ATRÉE.</speaker>
             <l n="629" xml:id="l629">Pour Érope, il est vrai, j’aurais pu sans faiblesse</l>
             <l n="630" xml:id="l630">Garder le souvenir d’un reste de tendresse ;</l>
@@ -1133,9 +1169,12 @@
             <l n="644" xml:id="l644">Et redoutant surtout d’avoir à la punir.[4]</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Hippodamie, Atrée, Idas.<listPerson type="configuration" xml:id="conf17"><person corresp="#HIPPODAMIE"/><person corresp="#ATREE"/><person corresp="#IDAS"/></listPerson></head>
-          <sp xml:id="III04-1" who="HIPPODAMIE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Hippodamie, Atrée, Idas.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#ATREE"/>
+            <person corresp="#IDAS"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="III04-1">
             <speaker>HIPPODAMIE.</speaker>
             <l n="645" xml:id="l645">Vous revoyez, mon fils, une mère affligée,</l>
             <l n="646" xml:id="l646">Qui, toujours trop sensible et toujours outragée,</l>
@@ -1164,7 +1203,7 @@
             <l n="669" xml:id="l669">Séparons-nous tous trois, sans que d’un seul murmure</l>
             <l n="670" xml:id="l670">Nous fassions un moment soupirer la nature.</l>
           </sp>
-          <sp xml:id="III04-2" who="ATREE">
+          <sp who="ATREE" xml:id="III04-2">
             <speaker>ATRÉE.</speaker>
             <l n="671" xml:id="l671">À cet affront nouveau je ne m’attendais pas.</l>
             <l n="672" xml:id="l672">Ma femme ose en ces lieux s’arracher à mes bras !</l>
@@ -1191,7 +1230,7 @@
             <l n="693" xml:id="l693">Qu’on rende mon épouse au maître qu’elle offense ;</l>
             <l n="694" xml:id="l694">Et si l’on me trahit, qu’on craigne ma vengeance.</l>
           </sp>
-          <sp xml:id="III04-3" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III04-3">
             <speaker>HIPPODAMIE.</speaker>
             <l n="695" xml:id="l695">Vous interprétez mal une juste pitié</l>
             <l n="696" xml:id="l696">Que donnait à ses maux ma stérile amitié.</l>
@@ -1214,7 +1253,7 @@
             <l n="713" xml:id="l713">Quels amis trouvera ce cœur dur et sévère,</l>
             <l n="714" xml:id="l714">Si vous vous défiez de l’amour d’une mère ?</l>
           </sp>
-          <sp xml:id="III04-4" who="ATREE">
+          <sp who="ATREE" xml:id="III04-4">
             <speaker>ATRÉE.</speaker>
             <l n="715" xml:id="l715">Vous rendez quelque calme à mes esprits troublés ;</l>
             <l n="716" xml:id="l716">Vous m’ôtez un fardeau dont mes sens accablés</l>
@@ -1229,15 +1268,16 @@
             <l n="725" xml:id="l725">Je vais presser la fête, et je la crois heureuse :</l>
             <l n="726" xml:id="l726">Si l’on m’avait trompé... je la rendrais affreuse.</l>
           </sp>
-          <sp xml:id="III04-5" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III04-5">
             <speaker>HIPPODAMIE, à Idas.</speaker>
             <l n="727" xml:id="l727">Idas, il vous consulte ; allez et confirmez</l>
             <l n="728" xml:id="l728">Ces justes sentiments dans ses esprits calmés.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
-          <head>SCÈNE V.<listPerson type="configuration" xml:id="conf18"><person corresp="#HIPPODAMIE"/></listPerson></head>
-          <sp xml:id="III05-1" who="HIPPODAMIE">
+        <div2 n="5" type="scene" xml:id="III05">
+          <head>SCÈNE V.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#HIPPODAMIE"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="III05-1">
             <speaker>HIPPODAMIE.</speaker>
             <l n="729" xml:id="l729">Disparaissez enfin, redoutables présages,</l>
             <l n="730" xml:id="l730">Pressentiments d’horreurs, effrayantes images,</l>
@@ -1246,9 +1286,11 @@
             <l n="733" xml:id="l733">Elle en a détourné la terrible influence.</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
-          <head>SCÈNE VI. Hipodamie, Érope.<listPerson type="configuration" xml:id="conf19"><person corresp="#HIPPODAMIE"/><person corresp="#EROPE"/></listPerson></head>
-          <sp xml:id="III06-1" who="HIPPODAMIE">
+        <div2 n="6" type="scene" xml:id="III06">
+          <head>SCÈNE VI. Hipodamie, Érope.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#EROPE"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="III06-1">
             <speaker>HIPPODAMIE.</speaker>
             <l n="734" xml:id="l734">Enfin votre bonheur passe votre espérance.</l>
             <l n="735" xml:id="l735">Ne pensez plus, ma fille, aux funèbres apprêts</l>
@@ -1263,19 +1305,19 @@
             <l n="744" xml:id="l744">D’un pas plus assuré marchez vers le palais ;</l>
             <l n="745" xml:id="l745">Sur un front plus serein posez le diadème :</l>
             <l n="746" xml:id="l746">Atrée est rigoureux, violent, mais il aime.</l>
-            <l n="747" xml:id="l747" part="I">Ma fille, il faut régner...</l>
+            <l n="747" part="I" xml:id="l747">Ma fille, il faut régner...</l>
           </sp>
-          <sp xml:id="III06-2" who="EROPE">
+          <sp who="EROPE" xml:id="III06-2">
             <speaker>ÉROPE.</speaker>
             <l part="F">Je suis perdue... Ah, dieux !</l>
           </sp>
-          <sp xml:id="III06-3" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III06-3">
             <speaker>HIPPODAMIE.</speaker>
             <l n="748" xml:id="l748">Qu’entends-je ? et quel nuage a couvert vos beaux yeux !</l>
             <l n="749" xml:id="l749">N’éprouverai-je ici qu’un éternel passage</l>
             <l n="750" xml:id="l750">De l’espoir à la crainte, et du calme à l’orage ?</l>
           </sp>
-          <sp xml:id="III06-4" who="EROPE">
+          <sp who="EROPE" xml:id="III06-4">
             <speaker>ÉROPE.</speaker>
             <l n="751" xml:id="l751">Ma mère !... J’ose encore ainsi vous appeler,</l>
             <l n="752" xml:id="l752">Et de trône et d’hymen cessez de me parler ;</l>
@@ -1287,67 +1329,69 @@
             <l n="758" xml:id="l758">Vous, vos enfants, et moi, pour nous frapper ensemble.</l>
             <l n="759" xml:id="l759">Ne me consolez plus ; craignez de partager</l>
             <l n="760" xml:id="l760">Le sort qui me menace, en voulant le changer...</l>
-            <l n="761" xml:id="l761" part="I">C’en est fait.</l>
+            <l n="761" part="I" xml:id="l761">C’en est fait.</l>
           </sp>
-          <sp xml:id="III06-5" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III06-5">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Je me perds dans votre destinée ;</l>
             <l n="762" xml:id="l762">Mais on ne verra point Érope abandonnée</l>
             <l n="763" xml:id="l763">D’une mère en tout temps prête à vous consoler.</l>
           </sp>
-          <sp xml:id="III06-6" who="EROPE">
+          <sp who="EROPE" xml:id="III06-6">
             <speaker>ÉROPE.</speaker>
-            <l n="764" xml:id="l764" part="I">Ah ! Qui protégez-vous ?</l>
+            <l n="764" part="I" xml:id="l764">Ah ! Qui protégez-vous ?</l>
           </sp>
-          <sp xml:id="III06-7" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III06-7">
             <speaker>HIPPODAMIE.</speaker>
             <l part="F">Où voulez-vous aller ?</l>
-            <l n="765" xml:id="l765" part="I">Je vous suis.</l>
+            <l n="765" part="I" xml:id="l765">Je vous suis.</l>
           </sp>
-          <sp xml:id="III06-8" who="EROPE">
+          <sp who="EROPE" xml:id="III06-8">
             <speaker>ÉROPE.</speaker>
             <l part="F">Que de soins pour une criminelle !</l>
           </sp>
-          <sp xml:id="III06-9" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="III06-9">
             <speaker>HIPPODAMIE.</speaker>
             <l n="766" xml:id="l766">Le fût-elle en effet, je ferai tout pour elle.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Érope, Thyeste.<listPerson type="configuration" xml:id="conf21"><person corresp="#EROPE"/><person corresp="#THYESTE"/></listPerson></head>
-          <sp xml:id="IV01-1" who="EROPE">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE PREMIÈRE. Érope, Thyeste.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#EROPE"/>
+            <person corresp="#THYESTE"/></listPerson></head>
+          <sp who="EROPE" xml:id="IV01-1">
             <speaker>ÉROPE.</speaker>
             <l n="767" xml:id="l767">Dans des asiles saints j’étais ensevelie,</l>
             <l n="768" xml:id="l768">J’y cachais mes tourments, j’y terminais ma vie.</l>
             <l n="769" xml:id="l769">C’est donc toi qui me rends à ce jour que je hais !</l>
             <l n="770" xml:id="l770">Thyeste, en tous les temps tu m’as ravi la paix.</l>
           </sp>
-          <sp xml:id="IV01-2" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-2">
             <speaker>THYESTE.</speaker>
             <l n="771" xml:id="l771">Ce funeste dessein nous faisait trop d’outrage.</l>
           </sp>
-          <sp xml:id="IV01-3" who="EROPE">
+          <sp who="EROPE" xml:id="IV01-3">
             <speaker>ÉROPE.</speaker>
             <l n="772" xml:id="l772">Ma faute et ton amour nous en font davantage.</l>
           </sp>
-          <sp xml:id="IV01-4" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-4">
             <speaker>THYESTE.</speaker>
             <l n="773" xml:id="l773">Quoi ! verrai-je en tout temps vos remords douloureux</l>
             <l n="774" xml:id="l774">Empoisonner des jours que vous rendiez heureux !</l>
           </sp>
-          <sp xml:id="IV01-5" who="EROPE">
+          <sp who="EROPE" xml:id="IV01-5">
             <speaker>ÉROPE.</speaker>
             <l n="775" xml:id="l775">Nous heureux ! Nous, cruel ! Ah ! Dans mon sort funeste,</l>
             <l n="776" xml:id="l776">Le bonheur est-il fait pour Érope et Thyeste ?</l>
           </sp>
-          <sp xml:id="IV01-6" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-6">
             <speaker>THYESTE.</speaker>
-            <l n="777" xml:id="l777" part="I">Vivez pour votre fils.</l>
+            <l n="777" part="I" xml:id="l777">Vivez pour votre fils.</l>
           </sp>
-          <sp xml:id="IV01-7" who="EROPE">
+          <sp who="EROPE" xml:id="IV01-7">
             <speaker>ÉROPE.</speaker>
             <l part="F">Ravisseur de ma foi,</l>
             <l n="778" xml:id="l778">Tu vois trop que je vis pour mon fils et pour toi.</l>
@@ -1357,52 +1401,52 @@
             <l n="782" xml:id="l782">Sans horreur avec toi je ne saurais rester ;</l>
             <l n="783" xml:id="l783">Je ne puis soutenir la présence d’Atrée.</l>
           </sp>
-          <sp xml:id="IV01-8" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-8">
             <speaker>THYESTE.</speaker>
             <l n="784" xml:id="l784">La fatale entrevue est encor différée.</l>
           </sp>
-          <sp xml:id="IV01-9" who="EROPE">
+          <sp who="EROPE" xml:id="IV01-9">
             <speaker>ÉROPE.</speaker>
             <l n="785" xml:id="l785">Sous des prétextes vains, la reine avec bonté</l>
             <l n="786" xml:id="l786">Écarte encor de moi ce moment redouté.</l>
             <l n="787" xml:id="l787">Mais la paix dans vos cœurs est-elle résolue ?</l>
           </sp>
-          <sp xml:id="IV01-10" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-10">
             <speaker>THYESTE.</speaker>
             <l n="788" xml:id="l788">Cette paix est promise, elle n’est point conclue.</l>
             <l n="789" xml:id="l789">Mais j’aurai dans Argos encor des défenseurs ;</l>
             <l n="790" xml:id="l790">Et Mycène déjà m’a promis des vengeurs.</l>
           </sp>
-          <sp xml:id="IV01-11" who="EROPE">
+          <sp who="EROPE" xml:id="IV01-11">
             <speaker>ÉROPE.</speaker>
             <l n="791" xml:id="l791">Me préservent les cieux d’une nouvelle guerre !</l>
             <l n="792" xml:id="l792">Le sang pour nos amours a trop rougi la terre.</l>
           </sp>
-          <sp xml:id="IV01-12" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-12">
             <speaker>THYESTE.</speaker>
             <l n="793" xml:id="l793">Ce n’est que par le sang qu’en cette extrémité</l>
             <l n="794" xml:id="l794">Je puis soustraire Érope à son autorité.</l>
             <l n="795" xml:id="l795">Il faut tout dire enfin ; c’est parmi le carnage</l>
             <l n="796" xml:id="l796">Que dans une heure au moins je vous ouvre un passage.</l>
           </sp>
-          <sp xml:id="IV01-13" who="EROPE">
+          <sp who="EROPE" xml:id="IV01-13">
             <speaker>ÉROPE.</speaker>
             <l n="797" xml:id="l797">Tu redoubles mes maux, ma honte, mon effroi,</l>
             <l n="798" xml:id="l798">Et l’éternelle horreur que je ressens pour moi.</l>
             <l n="799" xml:id="l799">Thyeste, garde-toi d’oser rien entreprendre</l>
             <l n="800" xml:id="l800">Avant qu’il ait daigné me parler et m’entendre.</l>
           </sp>
-          <sp xml:id="IV01-14" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-14">
             <speaker>THYESTE.</speaker>
             <l n="801" xml:id="l801">Lui, vous parler !... Mais vous, dans ce mortel ennui,</l>
-            <l n="802" xml:id="l802" part="I">Qu’avez-vous résolu ?</l>
+            <l n="802" part="I" xml:id="l802">Qu’avez-vous résolu ?</l>
           </sp>
-          <sp xml:id="IV01-15" who="EROPE">
+          <sp who="EROPE" xml:id="IV01-15">
             <speaker>ÉROPE.</speaker>
             <l part="F">De n’être point à lui...</l>
             <l n="803" xml:id="l803">Va, cruel, à t’aimer le ciel m’a condamnée.</l>
           </sp>
-          <sp xml:id="IV01-16" who="THYESTE">
+          <sp who="THYESTE" xml:id="IV01-16">
             <speaker>THYESTE.</speaker>
             <l n="804" xml:id="l804">Je vois donc luire enfin ma plus belle journée.</l>
             <l n="805" xml:id="l805">Ce mot à tous mes vœux en tout temps refusé,</l>
@@ -1413,24 +1457,26 @@
             <l n="810" xml:id="l810">Est d’arracher Érope aux mains de nos tyrans.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Érope, Mégare.<listPerson type="configuration" xml:id="conf22"><person corresp="#MEGARE"/><person corresp="#EROPE"/></listPerson></head>
-          <sp xml:id="IV02-1" who="MEGARE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Érope, Mégare.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#MEGARE"/>
+            <person corresp="#EROPE"/></listPerson></head>
+          <sp who="MEGARE" xml:id="IV02-1">
             <speaker>MÉGARE.</speaker>
             <l n="811" xml:id="l811">Ah ! Madame, le sang va-t-il couler encore ?</l>
           </sp>
-          <sp xml:id="IV02-2" who="EROPE">
+          <sp who="EROPE" xml:id="IV02-2">
             <speaker>ÉROPE.</speaker>
             <l n="812" xml:id="l812">J’attends mon sort ici, Mégare, et je l’ignore.</l>
           </sp>
-          <sp xml:id="IV02-3" who="MEGARE">
+          <sp who="MEGARE" xml:id="IV02-3">
             <speaker>MÉGARE.</speaker>
             <l n="813" xml:id="l813">Quel appareil terrible, et quelle triste paix !</l>
             <l n="814" xml:id="l814">On borde de soldats le temple et le palais :</l>
             <l n="815" xml:id="l815">J’ai vu le fier Atrée ; il semble qu’il médite</l>
             <l n="816" xml:id="l816">Quelque profond dessein qui le trouble et l’agite.</l>
           </sp>
-          <sp xml:id="IV02-4" who="EROPE">
+          <sp who="EROPE" xml:id="IV02-4">
             <speaker>ÉROPE.</speaker>
             <l n="817" xml:id="l817">Je dois m’attendre à tout sans me plaindre de lui.</l>
             <l n="818" xml:id="l818">Mégare, contre moi tout conspire aujourd’hui !</l>
@@ -1451,13 +1497,13 @@
             <l n="833" xml:id="l833">Quand il peut tous les deux nous punir sans retour,</l>
             <l n="834" xml:id="l834">Moi d’être une infidèle, et mon fils d’être au jour !</l>
           </sp>
-          <sp xml:id="IV02-5" who="MEGARE">
+          <sp who="MEGARE" xml:id="IV02-5">
             <speaker>MÉGARE.</speaker>
             <l n="835" xml:id="l835">Puisqu’il veut vous parler, croyez que sa colère</l>
             <l n="836" xml:id="l836">S’apaise enfin pour vous, et n’en veut qu’à son frère.</l>
             <l n="837" xml:id="l837">Vous êtes sa conquête... il a su l’obtenir.</l>
           </sp>
-          <sp xml:id="IV02-6" who="EROPE">
+          <sp who="EROPE" xml:id="IV02-6">
             <speaker>ÉROPE.</speaker>
             <l n="838" xml:id="l838">C’en est fait, sous ses lois je ne puis revenir.</l>
             <l n="839" xml:id="l839">La gloire de tous trois doit encor m’être chère ;</l>
@@ -1477,9 +1523,12 @@
             <l n="853" xml:id="l853">Dont l’autre est mon tyran, mais un tyran sacré. </l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Érope, Polémon, Mégare.<listPerson type="configuration" xml:id="conf23"><person corresp="#POLEMON"/><person corresp="#EROPE"/><person corresp="#MEGARE"/></listPerson></head>
-          <sp xml:id="IV03-1" who="POLEMON">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Érope, Polémon, Mégare.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#POLEMON"/>
+            <person corresp="#EROPE"/>
+            <person corresp="#MEGARE"/></listPerson></head>
+          <sp who="POLEMON" xml:id="IV03-1">
             <speaker>POLÉMON.</speaker>
             <l n="854" xml:id="l854">Princesse, en ce parvis votre époux, est entré ;</l>
             <l n="855" xml:id="l855">Il s’apaise, il s’occupe avec Hippodamie</l>
@@ -1501,7 +1550,7 @@
             <l n="871" xml:id="l871">Vous devez sur ce prince avoir quelque puissance :</l>
             <l n="872" xml:id="l872">Le salut de vos jours dépend de son absence.</l>
           </sp>
-          <sp xml:id="IV03-2" who="EROPE">
+          <sp who="EROPE" xml:id="IV03-2">
             <speaker>ÉROPE.</speaker>
             <l n="873" xml:id="l873">L’intérêt de ma vie est peu cher à mes yeux.</l>
             <l n="874" xml:id="l874">Peut-être il en est un plus grand, plus précieux !</l>
@@ -1514,58 +1563,63 @@
             <l n="881" xml:id="l881">La reine a jusqu’ici consolé mon malheur...</l>
             <l n="882" xml:id="l882">Elle n’en connaît pas l’horrible profondeur.</l>
           </sp>
-          <sp xml:id="IV03-3" who="POLEMON">
+          <sp who="POLEMON" xml:id="IV03-3">
             <speaker>POLÉMON.</speaker>
             <l n="883" xml:id="l883">Je retourne auprès d’elle ; et pour grâce dernière</l>
             <l n="884" xml:id="l884">Je vous conjure encor d’écouter sa prière.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Érope, Mégare.<listPerson type="configuration" xml:id="conf24"><person corresp="#MEGARE"/><person corresp="#EROPE"/></listPerson></head>
-          <sp xml:id="IV04-1" who="MEGARE">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Érope, Mégare.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#MEGARE"/>
+            <person corresp="#EROPE"/></listPerson></head>
+          <sp who="MEGARE" xml:id="IV04-1">
             <speaker>MÉGARE.</speaker>
             <l n="885" xml:id="l885">Vous le voyez, Atrée est terrible et jaloux ;</l>
             <l n="886" xml:id="l886">Ne vous exposez point à son juste courroux.</l>
           </sp>
-          <sp xml:id="IV04-2" who="EROPE">
+          <sp who="EROPE" xml:id="IV04-2">
             <speaker>ÉROPE.</speaker>
             <l n="887" xml:id="l887">Que prétends-tu de moi ? Tu connais son injure ;</l>
             <l n="888" xml:id="l888">Je ne puis à ma faute ajouter le parjure.</l>
             <l n="889" xml:id="l889">Tout le courroux d’Atrée, armé de son pouvoir,</l>
             <l n="890" xml:id="l890">L’amour même en un mot (s’il pouvait en avoir)</l>
             <l n="891" xml:id="l891">N’obtiendront pas de moi que je trompe mon maître :</l>
-            <l n="892" xml:id="l892" part="I">Le sort en est jeté.</l>
+            <l n="892" part="I" xml:id="l892">Le sort en est jeté.</l>
           </sp>
-          <sp xml:id="IV04-3" who="MEGARE">
+          <sp who="MEGARE" xml:id="IV04-3">
             <speaker>MÉGARE.</speaker>
             <l part="F">Princesse, il va paraître ;</l>
-            <l n="893" xml:id="l893" part="I">Vous n’avez qu’un moment.</l>
+            <l n="893" part="I" xml:id="l893">Vous n’avez qu’un moment.</l>
           </sp>
-          <sp xml:id="IV04-4" who="EROPE">
+          <sp who="EROPE" xml:id="IV04-4">
             <speaker>ÉROPE.</speaker>
             <l part="F">Ce mot me fait trembler.</l>
           </sp>
-          <sp xml:id="IV04-5" who="MEGARE">
+          <sp who="MEGARE" xml:id="IV04-5">
             <speaker>MÉGARE.</speaker>
-            <l n="894" xml:id="l894" part="I">L’abîme est sous vos pas.</l>
+            <l n="894" part="I" xml:id="l894">L’abîme est sous vos pas.</l>
           </sp>
-          <sp xml:id="IV04-6" who="EROPE">
+          <sp who="EROPE" xml:id="IV04-6">
             <speaker>ÉROPE.</speaker>
             <l part="F">N’importe, il faut parler.</l>
           </sp>
-          <sp xml:id="IV04-7" who="MEGARE">
+          <sp who="MEGARE" xml:id="IV04-7">
             <speaker>MÉGARE.</speaker>
-            <l n="895" xml:id="l895" part="I">Le voici.</l>
+            <l n="895" part="I" xml:id="l895">Le voici.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V. Érope, Mégare, Atrée, Gardes.<listPerson type="configuration" xml:id="conf25"><person corresp="#ATREE"/><person corresp="#EROPE"/><person corresp="#MEGARE"/></listPerson></head>
-          <sp xml:id="IV05-1" who="ATREE">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V. Érope, Mégare, Atrée, Gardes.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#ATREE"/>
+            <person corresp="#EROPE"/>
+            <person corresp="#MEGARE"/></listPerson></head>
+          <sp who="ATREE" xml:id="IV05-1">
             <speaker>ATRÉE, après avoir fait signe à ses gardes et à Mégare de se retirer.</speaker>
             <l part="F">Je la vois interdite, éperdue,</l>
             <l n="896" xml:id="l896">D’un époux qu’elle craint, elle éloigne sa vue.</l>
           </sp>
-          <sp xml:id="IV05-2" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-2">
             <speaker>ÉROPE.</speaker>
             <l n="897" xml:id="l897">La lumière à mes yeux semble se dérober...</l>
             <l n="898" xml:id="l898">Seigneur, votre victime à vos pieds vient tomber.</l>
@@ -1582,18 +1636,18 @@
             <l n="909" xml:id="l909">Et puissent sur ma cendre, après tant de fureurs,</l>
             <l n="910" xml:id="l910">Deux frères réunis oublier leurs malheurs !</l>
           </sp>
-          <sp xml:id="IV05-3" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-3">
             <speaker>ATRÉE.</speaker>
             <l n="911" xml:id="l911">Levez-vous : je rougis de vous revoir encore,</l>
             <l n="912" xml:id="l912">Je frémis de parler à qui me déshonore.</l>
             <l n="913" xml:id="l913">Entre mon frère et moi vous n’avez point d’époux ;</l>
             <l n="914" xml:id="l914">Qu’attendez-vous d’Atrée, et que méritez-vous ?</l>
           </sp>
-          <sp xml:id="IV05-4" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-4">
             <speaker>ÉROPE.</speaker>
-            <l n="915" xml:id="l915" part="I">Je ne veux rien pour moi.</l>
+            <l n="915" part="I" xml:id="l915">Je ne veux rien pour moi.</l>
           </sp>
-          <sp xml:id="IV05-5" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-5">
             <speaker>ATRÉE.</speaker>
             <l part="F">Si ma juste vengeance</l>
             <l n="916" xml:id="l916">De Thyeste et de vous eût égalé l’offense,</l>
@@ -1617,9 +1671,9 @@
             <l n="934" xml:id="l934">Et de haïr Thyeste autant que je le hais.</l>
             <l n="935" xml:id="l935">Si vous me refusez, vous êtes sa complice ;</l>
             <l n="936" xml:id="l936">À tous deux, en un mot, venez rendre justice.</l>
-            <l n="937" xml:id="l937" part="I">Je pardonne à ce prix : répondez-moi.</l>
+            <l n="937" part="I" xml:id="l937">Je pardonne à ce prix : répondez-moi.</l>
           </sp>
-          <sp xml:id="IV05-6" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-6">
             <speaker>ÉROPE.</speaker>
             <l part="F">Seigneur,</l>
             <l n="938" xml:id="l938">C’est vous qui me forcez à vous ouvrir mon cœur.</l>
@@ -1640,24 +1694,24 @@
             <l n="953" xml:id="l953">Que disputant un trône, et prompt à vous armer,</l>
             <l n="954" xml:id="l954">Vous haïssiez un frère, et ne pouviez m’aimer...</l>
           </sp>
-          <sp xml:id="IV05-7" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-7">
             <speaker>ATRÉE.</speaker>
             <l n="955" xml:id="l955">Je ne le devais pas... je vous aimai peut-être.</l>
             <l n="956" xml:id="l956">Mais... Achevez, Érope ; abjurez-vous un traître ?</l>
             <l n="957" xml:id="l957">Aux pieds des immortels remise entre mes bras,</l>
             <l n="958" xml:id="l958">M’apportez-vous un cœur qu’il ne mérite pas ?</l>
           </sp>
-          <sp xml:id="IV05-8" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-8">
             <speaker>ÉROPE.</speaker>
             <l n="959" xml:id="l959">Je ne saurais tromper ; je ne dois plus me taire.</l>
             <l n="960" xml:id="l960">Mon destin pour jamais me livre h votre frère ;</l>
-            <l n="961" xml:id="l961" part="I">Thyeste est mon époux.</l>
+            <l n="961" part="I" xml:id="l961">Thyeste est mon époux.</l>
           </sp>
-          <sp xml:id="IV05-9" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-9">
             <speaker>ATRÉE.</speaker>
             <l part="M">Lui !</l>
           </sp>
-          <sp xml:id="IV05-10" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-10">
             <speaker>ÉROPE.</speaker>
             <l part="F">Les dieux ennemis</l>
             <l n="962" xml:id="l962">Éternisent ma faute en me donnant un fils.</l>
@@ -1674,7 +1728,7 @@
             <l n="973" xml:id="l973">Il suffit de la mère à votre inimitié.</l>
             <l n="974" xml:id="l974">J’ai demandé la mort, et non votre pitié.</l>
           </sp>
-          <sp xml:id="IV05-11" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-11">
             <speaker>ATRÉE.</speaker>
             <l n="975" xml:id="l975">Rassurez-vous... le doute était mon seul supplice...</l>
             <l n="976" xml:id="l976">Je crains peu qu’on m’éclaire... et je me rends justice...</l>
@@ -1693,15 +1747,15 @@
             <l n="989" xml:id="l989">Je reconnais son fils pour son seul héritier...</l>
             <l n="990" xml:id="l990">Satisfait de vous perdre et de vous oublier,</l>
             <l n="991" xml:id="l991">Je veux à mon rival vous rendre ici moi-même...</l>
-            <l n="992" xml:id="l992" part="I">Vous tremblez.</l>
+            <l n="992" part="I" xml:id="l992">Vous tremblez.</l>
           </sp>
-          <sp xml:id="IV05-12" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-12">
             <speaker>ÉROPE.</speaker>
             <l part="F">Ah ! Seigneur, ce changement extrême,</l>
             <l n="993" xml:id="l993">Ce passage inouï du courroux aux bontés,</l>
             <l n="994" xml:id="l994">Ont saisi mes esprits que vous épouvantez.</l>
           </sp>
-          <sp xml:id="IV05-13" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-13">
             <speaker>ATRÉE.</speaker>
             <l n="995" xml:id="l995">Ne vous alarmez point ; le ciel parle, et je cède.</l>
             <l n="996" xml:id="l996">Que pourrais-je opposer à des maux sans remède ?</l>
@@ -1711,33 +1765,34 @@
             <l n="1000" xml:id="l1000">Et de vous pardonner me préparer la gloire...</l>
             <l n="1001" xml:id="l1001">Cet enfant de Thyeste est sans doute en ces lieux ?</l>
           </sp>
-          <sp xml:id="IV05-14" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-14">
             <speaker>ÉROPE.</speaker>
             <l n="1002" xml:id="l1002">Mon fils... est loin de moi... sous la garde des dieux.</l>
           </sp>
-          <sp xml:id="IV05-15" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-15">
             <speaker>ATRÉE.</speaker>
             <l n="1003" xml:id="l1003">Quelque lieu qui l’enferme, il sera sous la mienne.</l>
           </sp>
-          <sp xml:id="IV05-16" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-16">
             <speaker>ÉROPE.</speaker>
             <l n="1004" xml:id="l1004">Sa mère doit, seigneur, le conduire à Mycène.</l>
           </sp>
-          <sp xml:id="IV05-17" who="ATREE">
+          <sp who="ATREE" xml:id="IV05-17">
             <speaker>ATRÉE.</speaker>
             <l n="1005" xml:id="l1005">À ses parents, à vous, les chemins sont ouverts ;</l>
             <l n="1006" xml:id="l1006">Je ne regrette rien de tout ce que je perds ;</l>
             <l n="1007" xml:id="l1007">La paix avec mon frère en est plus assurée.</l>
-            <l n="1008" xml:id="l1008" part="I">Allez...</l>
+            <l n="1008" part="I" xml:id="l1008">Allez...</l>
           </sp>
-          <sp xml:id="IV05-18" who="EROPE">
+          <sp who="EROPE" xml:id="IV05-18">
             <speaker>ÉROPE, en partant.</speaker>
             <l part="F">Dieux ! s’il est vrai... mais dois-je croire Atrée ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
-          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf26"><person corresp="#ATREE"/></listPerson></head>
-          <sp xml:id="IV06-1" who="ATREE">
+        <div2 n="6" type="scene" xml:id="IV06">
+          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#ATREE"/></listPerson></head>
+          <sp who="ATREE" xml:id="IV06-1">
             <speaker>ATRÉE, seul.</speaker>
             <l n="1009" xml:id="l1009">Enfin, de leurs complots j’ai connu la noirceur,</l>
             <l n="1010" xml:id="l1010">La perfide ! Elle aimait son lâche ravisseur.</l>
@@ -1767,9 +1822,12 @@
             <l n="1034" xml:id="l1034">Paraissez, dieux vengeurs, je vais vous étonner.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
-          <head>SCÈNE VII. Atrée, Polémon, Idas.<listPerson type="configuration" xml:id="conf27"><person corresp="#ATREE"/><person corresp="#POLEMON"/><person corresp="#IDAS"/></listPerson></head>
-          <sp xml:id="IV07-1" who="ATREE">
+        <div2 n="7" type="scene" xml:id="IV07">
+          <head>SCÈNE VII. Atrée, Polémon, Idas.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#ATREE"/>
+            <person corresp="#POLEMON"/>
+            <person corresp="#IDAS"/></listPerson></head>
+          <sp who="ATREE" xml:id="IV07-1">
             <speaker>ATRÉE.</speaker>
             <l n="1035" xml:id="l1035">Idas, exécutez ce que je vais prescrire.</l>
             <l n="1036" xml:id="l1036">Polémon, c’en est fait, tout ce que je puis dire,</l>
@@ -1780,16 +1838,16 @@
             <l n="1041" xml:id="l1041">Vous pouvez à mon frère annoncer mes bienfaits...</l>
             <l n="1042" xml:id="l1042">Si vous les approuvez, mes vœux, sont satisfaits.</l>
           </sp>
-          <sp xml:id="IV07-2" who="POLEMON">
+          <sp who="POLEMON" xml:id="IV07-2">
             <speaker>POLÉMON.</speaker>
             <l n="1043" xml:id="l1043">Puisse un pareil dessein, que je conçois à peine,</l>
             <l n="1044" xml:id="l1044">N’être point en effet inspiré par la haine !</l>
           </sp>
-          <sp xml:id="IV07-3" who="ATREE">
+          <sp who="ATREE" xml:id="IV07-3">
             <speaker>ATRÉE, en sortant.</speaker>
-            <l n="1045" xml:id="l1045" part="I">Craignez-vous pour mon frère ?</l>
+            <l n="1045" part="I" xml:id="l1045">Craignez-vous pour mon frère ?</l>
           </sp>
-          <sp xml:id="IV07-4" who="POLEMON">
+          <sp who="POLEMON" xml:id="IV07-4">
             <speaker>POLÉMON.</speaker>
             <l part="F">Oui, je crains pour tous deux.</l>
             <l n="1046" xml:id="l1046">Seconde-moi, nature, éveille-toi dans eux.</l>
@@ -1800,30 +1858,33 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE I. Érope, Thyeste, Mégare.<listPerson type="configuration" xml:id="conf29"><person corresp="#THYESTE"/><person corresp="#EROPE"/><person corresp="#MEGARE"/></listPerson></head>
-          <sp xml:id="V01-1" who="THYESTE">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE I. Érope, Thyeste, Mégare.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#THYESTE"/>
+            <person corresp="#EROPE"/>
+            <person corresp="#MEGARE"/></listPerson></head>
+          <sp who="THYESTE" xml:id="V01-1">
             <speaker>THYESTE, à Érope.</speaker>
             <l n="1051" xml:id="l1051">Je ne puis vous blâmer de cet aveu sincère,</l>
             <l n="1052" xml:id="l1052">Injurieux, terrible, et pourtant nécessaire.</l>
             <l n="1053" xml:id="l1053">Il a réduit Atrée à ne plus réclamer</l>
             <l n="1054" xml:id="l1054">Un hymen que le ciel ne saurait confirmer.</l>
           </sp>
-          <sp xml:id="V01-2" who="EROPE">
+          <sp who="EROPE" xml:id="V01-2">
             <speaker>ÉROPE.</speaker>
             <l n="1055" xml:id="l1055">Ah ! j’aurais dû plutôt expirer et me taire.</l>
           </sp>
-          <sp xml:id="V01-3" who="THYESTE">
+          <sp who="THYESTE" xml:id="V01-3">
             <speaker>THYESTE.</speaker>
             <l n="1056" xml:id="l1056">Quoi ! je vous vois sans cesse à vous-même contraire !</l>
           </sp>
-          <sp xml:id="V01-4" who="EROPE">
+          <sp who="EROPE" xml:id="V01-4">
             <speaker>ÉROPE.</speaker>
             <l n="1057" xml:id="l1057">Je frémis d’avoir dit la dure vérité.</l>
           </sp>
-          <sp xml:id="V01-5" who="THYESTE">
+          <sp who="THYESTE" xml:id="V01-5">
             <speaker>THYESTE.</speaker>
             <l n="1058" xml:id="l1058">Il doit sentir au moins quelle fatalité</l>
             <l n="1059" xml:id="l1059">Dispose en tous les temps du sang des Pélopides.</l>
@@ -1835,7 +1896,7 @@
             <l n="1065" xml:id="l1065">Que notre hymen élève entre nous deux et lui,</l>
             <l n="1066" xml:id="l1066">Mes destins ont vaincu ; je triomphe aujourd’hui.</l>
           </sp>
-          <sp xml:id="V01-6" who="EROPE">
+          <sp who="EROPE" xml:id="V01-6">
             <speaker>ÉROPE.</speaker>
             <l n="1067" xml:id="l1067">Quel triomphe ! Êtes-vous hors de sa dépendance ?</l>
             <l n="1068" xml:id="l1068">Votre frère avec vous est-il d’intelligence ?</l>
@@ -1845,26 +1906,26 @@
             <l n="1072" xml:id="l1072">Polémon de son aine a longtemps fait l’étude ;</l>
             <l n="1073" xml:id="l1073">Il semble être peu sûr de sa sincérité.</l>
           </sp>
-          <sp xml:id="V01-7" who="THYESTE">
+          <sp who="THYESTE" xml:id="V01-7">
             <speaker>THYESTE.</speaker>
             <l n="1074" xml:id="l1074">N’importe, il faut qu’il cède à la nécessité.</l>
             <l n="1075" xml:id="l1075">C’était le seul moyen (du moins j’ose le croire)</l>
             <l n="1076" xml:id="l1076">Qui de nous trois enfin pût réparer la gloire.</l>
           </sp>
-          <sp xml:id="V01-8" who="EROPE">
+          <sp who="EROPE" xml:id="V01-8">
             <speaker>ÉROPE.</speaker>
             <l n="1077" xml:id="l1077">Il est maître en ces lieux, nous sommes dans ses mains.</l>
           </sp>
-          <sp xml:id="V01-9" who="THYESTE">
+          <sp who="THYESTE" xml:id="V01-9">
             <speaker>THYESTE.</speaker>
             <l n="1078" xml:id="l1078">Les dieux nos protecteurs y sont seuls souverains.</l>
           </sp>
-          <sp xml:id="V01-10" who="EROPE">
+          <sp who="EROPE" xml:id="V01-10">
             <speaker>ÉROPE.</speaker>
             <l n="1079" xml:id="l1079">Eh ! qui nous répondra que ces dieux nous protègent ?</l>
             <l n="1080" xml:id="l1080">Peut-être en ce moment les périls nous assiègent.</l>
           </sp>
-          <sp xml:id="V01-11" who="THYESTE">
+          <sp who="THYESTE" xml:id="V01-11">
             <speaker>THYESTE.</speaker>
             <l n="1081" xml:id="l1081">Quels périls ? entre nous le peuple est partagé,</l>
             <l n="1082" xml:id="l1082">Et même autour du temple il est déjà rangé.</l>
@@ -1875,19 +1936,24 @@
             <l n="1087" xml:id="l1087">La reine et Polémon, dans ce temple tranquille,</l>
             <l n="1088" xml:id="l1088">Imposent le respect qu’on doit à cet asile.</l>
           </sp>
-          <sp xml:id="V01-12" who="EROPE">
+          <sp who="EROPE" xml:id="V01-12">
             <speaker>ÉROPE.</speaker>
             <l n="1089" xml:id="l1089">Vous-même, en m’enlevant, l’avez-vous respecté ?</l>
           </sp>
-          <sp xml:id="V01-13" who="THYESTE">
+          <sp who="THYESTE" xml:id="V01-13">
             <speaker>THYESTE.</speaker>
             <l n="1090" xml:id="l1090">Ah ! ne corrompez point tant de félicité.</l>
             <l n="1091" xml:id="l1091">Pour la première fois la douceur en est pure.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Hippodamie, Érope, Thyeste, Polémon, Mégare.<listPerson type="configuration" xml:id="conf30"><person corresp="#HIPPODAMIE"/><person corresp="#POLEMON"/><person corresp="#THYESTE"/><person corresp="#EROPE"/><person corresp="#MEGARE"/></listPerson></head>
-          <sp xml:id="V02-1" who="HIPPODAMIE">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Hippodamie, Érope, Thyeste, Polémon, Mégare.<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#POLEMON"/>
+            <person corresp="#THYESTE"/>
+            <person corresp="#EROPE"/>
+            <person corresp="#MEGARE"/></listPerson></head>
+          <sp who="HIPPODAMIE" xml:id="V02-1">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1092" xml:id="l1092">Enfin donc désormais tout cède à la nature.</l>
             <l n="1093" xml:id="l1093">Bannissez, Polémon, ces soupçons recherchés,</l>
@@ -1907,14 +1973,14 @@
             <l n="1107" xml:id="l1107">Lié par ses serments, oubliant son injure,</l>
             <l n="1108" xml:id="l1108">Docile à vos leçons, mon fils n’est point parjure.</l>
           </sp>
-          <sp xml:id="V02-2" who="POLEMON">
+          <sp who="POLEMON" xml:id="V02-2">
             <speaker>POLÉMON.</speaker>
             <l n="1109" xml:id="l1109">Reine, je ne veux point, dans mes soins défiants,</l>
             <l n="1110" xml:id="l1110">Jeter sur ses desseins des yeux trop prévoyants.</l>
             <l n="1111" xml:id="l1111">Mon cœur vous est connu ; vous savez s’il souhaite</l>
             <l n="1112" xml:id="l1112">Que cette heureuse paix ne soit point imparfaite.</l>
           </sp>
-          <sp xml:id="V02-3" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="V02-3">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1113" xml:id="l1113">La coupe de Tantale en est l’heureux garant.</l>
             <l n="1114" xml:id="l1114">Nous l’attendons ici ; c’est de moi qu’il la prend ;</l>
@@ -1932,69 +1998,74 @@
             <l n="1125" xml:id="l1125">Si vos terreurs encor vous laissent des soupçons,</l>
             <l n="1126" xml:id="l1126">Confiez-moi ce fils, Érope, et j’en réponds.</l>
           </sp>
-          <sp xml:id="V02-4" who="THYESTE">
+          <sp who="THYESTE" xml:id="V02-4">
             <speaker>THYESTE.</speaker>
             <l n="1127" xml:id="l1127">Eh bien ! s’il est ainsi, Thyeste et votre fille</l>
             <l n="1128" xml:id="l1128">Vont remettre en vos mains l’espoir de leur famille.</l>
             <l n="1129" xml:id="l1129">Vous, ma mère, et les dieux, vous serez son appui,</l>
             <l n="1130" xml:id="l1130">Jusqu’à l’heureux moment où je pars avec lui.</l>
           </sp>
-          <sp xml:id="V02-5" who="EROPE">
+          <sp who="EROPE" xml:id="V02-5">
             <speaker>ÉROPE.</speaker>
             <l n="1131" xml:id="l1131">De mes tristes frayeurs à la fin délivrée,</l>
             <l n="1132" xml:id="l1132">Je me confie eu tout à la mère d’Atrée.</l>
-            <l n="1133" xml:id="l1133" part="I">Cours, Mégare.</l>
+            <l n="1133" part="I" xml:id="l1133">Cours, Mégare.</l>
           </sp>
-          <sp xml:id="V02-6" who="MEGARE">
+          <sp who="MEGARE" xml:id="V02-6">
             <speaker>MÉGARE.</speaker>
             <l part="F">Ah ! princesse, à quoi m’obligez-vous !</l>
           </sp>
-          <sp xml:id="V02-7" who="EROPE">
+          <sp who="EROPE" xml:id="V02-7">
             <speaker>ÉROPE.</speaker>
             <l n="1134" xml:id="l1134">Va, dis-je, ne crains rien... Sur vos sacrés genoux,</l>
             <l n="1135" xml:id="l1135">En présence des dieux, je mettrai sans alarmes</l>
             <l n="1136" xml:id="l1136">Ce dépôt précieux arrosé de mes larmes.</l>
           </sp>
-          <sp xml:id="V02-8" who="THYESTE">
+          <sp who="THYESTE" xml:id="V02-8">
             <speaker>THYESTE.</speaker>
             <l n="1137" xml:id="l1137">C’est vous qui l’adoptez et qui m’en répondez.</l>
           </sp>
-          <sp xml:id="V02-9" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="V02-9">
             <speaker>HIPPODAMIE.</speaker>
-            <l n="1138" xml:id="l1138" part="I">Oui, j’en réponds.</l>
+            <l n="1138" part="I" xml:id="l1138">Oui, j’en réponds.</l>
           </sp>
-          <sp xml:id="V02-10" who="THYESTE">
+          <sp who="THYESTE" xml:id="V02-10">
             <speaker>THYESTE.</speaker>
             <l part="F">Voyez ce que vous hasardez.</l>
           </sp>
-          <sp xml:id="V02-11" who="POLEMON">
+          <sp who="POLEMON" xml:id="V02-11">
             <speaker>POLÉMON.</speaker>
-            <l n="1139" xml:id="l1139" part="I">Je veillerai sur lui.</l>
+            <l n="1139" part="I" xml:id="l1139">Je veillerai sur lui.</l>
           </sp>
-          <sp xml:id="V02-12" who="EROPE">
+          <sp who="EROPE" xml:id="V02-12">
             <speaker>ÉROPE.</speaker>
             <l part="F">Soyez sa protectrice :</l>
             <l n="1140" xml:id="l1140">Ma mère, s’il est né sous un cruel auspice,</l>
             <l n="1141" xml:id="l1141">Corrigez de son sort le sinistre ascendant.</l>
           </sp>
-          <sp xml:id="V02-13" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="V02-13">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1142" xml:id="l1142">On m’ôtera le jour avant que cet enfant...</l>
             <l n="1143" xml:id="l1143">Vous savez, belle Érope, en tous les temps trop chère,</l>
             <l n="1144" xml:id="l1144">Si le ciel m’a donné des entrailles de mère.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Hippodamie, Érope, Thyeste, Idas, Polémon.<listPerson type="configuration" xml:id="conf31"><person corresp="#IDAS"/><person corresp="#EROPE"/><person corresp="#THYESTE"/><person corresp="#HIPPODAMIE"/><person corresp="#POLEMON"/></listPerson></head>
-          <sp xml:id="V03-1" who="IDAS">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Hippodamie, Érope, Thyeste, Idas, Polémon.<listPerson type="configuration" xml:id="conf31">
+            <person corresp="#IDAS"/>
+            <person corresp="#EROPE"/>
+            <person corresp="#THYESTE"/>
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#POLEMON"/></listPerson></head>
+          <sp who="IDAS" xml:id="V03-1">
             <speaker>IDAS.</speaker>
             <l n="1145" xml:id="l1145">Reines, on vous attend. Atrée est à l’autel.</l>
           </sp>
-          <sp xml:id="V03-2" who="EROPE">
+          <sp who="EROPE" xml:id="V03-2">
             <speaker>ÉROPE.</speaker>
-            <l n="1146" xml:id="l1146" part="I">Atrée ?</l>
+            <l n="1146" part="I" xml:id="l1146">Atrée ?</l>
           </sp>
-          <sp xml:id="V03-3" who="IDAS">
+          <sp who="IDAS" xml:id="V03-3">
             <speaker>IDAS.</speaker>
             <l part="F">Il doit lui-même, en ce jour solennel,</l>
             <l n="1147" xml:id="l1147">Commencer sous vos yeux ces heureux sacrifices,</l>
@@ -2007,13 +2078,13 @@
             <l n="1153" xml:id="l1153">C’est à Thyeste, à vous, de venir commencer</l>
             <l n="1154" xml:id="l1154">La fête qu’il ordonne et qu’il fait annoncer.</l>
           </sp>
-          <sp xml:id="V03-4" who="THYESTE">
+          <sp who="THYESTE" xml:id="V03-4">
             <speaker>THYESTE.</speaker>
             <l n="1155" xml:id="l1155">Mais il pouvait lui-même ici nous en instruire,</l>
             <l n="1156" xml:id="l1156">Venir prendre sa mère, à l’autel nous conduire.</l>
-            <l n="1157" xml:id="l1157" part="I">Il le devait.</l>
+            <l n="1157" part="I" xml:id="l1157">Il le devait.</l>
           </sp>
-          <sp xml:id="V03-5" who="IDAS">
+          <sp who="IDAS" xml:id="V03-5">
             <speaker>IDAS.</speaker>
             <l part="F">Au temple, un devoir plus pressé,</l>
             <l n="1158" xml:id="l1158">De ces devoirs communs, seigneur, l’a dispensé.</l>
@@ -2021,30 +2092,32 @@
             <l n="1160" xml:id="l1160">Quand de leurs propres mains ils font les sacrifices.</l>
             <l n="1161" xml:id="l1161">Les rois des Argiens de ce droit sont jaloux.</l>
           </sp>
-          <sp xml:id="V03-6" who="THYESTE">
+          <sp who="THYESTE" xml:id="V03-6">
             <speaker>THYESTE.</speaker>
             <l n="1162" xml:id="l1162">Allons donc, chère Érope... À coté d’un époux</l>
             <l n="1163" xml:id="l1163">Suivez, sans vous troubler, une mère adorée.</l>
             <l n="1164" xml:id="l1164">Je ne puis craindre ici l’inimitié d’Atrée ;</l>
             <l n="1165" xml:id="l1165">Engagé trop avant, il ne peut reculer.</l>
           </sp>
-          <sp xml:id="V03-7" who="EROPE">
+          <sp who="EROPE" xml:id="V03-7">
             <speaker>ÉROPE.</speaker>
             <l n="1166" xml:id="l1166">Pardonne, cher époux, si tu me vois trembler.</l>
           </sp>
-          <sp xml:id="V03-8" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="V03-8">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1167" xml:id="l1167">Venez, ne tardons plus... Le sang des Pélopides</l>
             <l n="1168" xml:id="l1168">Dans ce jour fortuné n’aura point de perfides.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Polémon, Idas.<listPerson type="configuration" xml:id="conf32"><person corresp="#IDAS"/><person corresp="#POLEMON"/></listPerson></head>
-          <sp xml:id="V04-1" who="IDAS">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Polémon, Idas.<listPerson type="configuration" xml:id="conf32">
+            <person corresp="#IDAS"/>
+            <person corresp="#POLEMON"/></listPerson></head>
+          <sp who="IDAS" xml:id="V04-1">
             <speaker>IDAS.</speaker>
-            <l n="1169" xml:id="l1169" part="I">Vous ne les suivez pas ?</l>
+            <l n="1169" part="I" xml:id="l1169">Vous ne les suivez pas ?</l>
           </sp>
-          <sp xml:id="V04-2" who="POLEMON">
+          <sp who="POLEMON" xml:id="V04-2">
             <speaker>POLÉMON.</speaker>
             <l part="F">Non, je reste en ces lieux ;</l>
             <l n="1170" xml:id="l1170">Et ces libations qu’on y va faire aux dieux,</l>
@@ -2059,23 +2132,23 @@
             <l n="1179" xml:id="l1179">Vous ne voudriez pas de la moindre injustice,</l>
             <l n="1180" xml:id="l1180">Fût-ce pour le servir, vous rendre le complice ?</l>
           </sp>
-          <sp xml:id="V04-3" who="IDAS">
+          <sp who="IDAS" xml:id="V04-3">
             <speaker>IDAS.</speaker>
             <l n="1181" xml:id="l1181">C’est m’outrager, seigneur, que me le demander.</l>
           </sp>
-          <sp xml:id="V04-4" who="POLEMON">
+          <sp who="POLEMON" xml:id="V04-4">
             <speaker>POLÉMON.</speaker>
             <l n="1182" xml:id="l1182">Mais il règne ; on l’outrage ; il peut vous commander</l>
             <l n="1183" xml:id="l1183">Ces actes de rigueur, ces effets de vengeance,</l>
             <l n="1184" xml:id="l1184">Qui ne trouvent souvent que trop d’obéissance.</l>
           </sp>
-          <sp xml:id="V04-5" who="IDAS">
+          <sp who="IDAS" xml:id="V04-5">
             <speaker>IDAS.</speaker>
             <l n="1185" xml:id="l1185">Il n’oserait : sachez, s’il a de tels desseins,</l>
             <l n="1186" xml:id="l1186">Qu’il ne les confiera qu’aux plus vils des humains.</l>
             <l n="1187" xml:id="l1187">Osez-vous accuser le roi d’être parjure ?</l>
           </sp>
-          <sp xml:id="V04-6" who="POLEMON">
+          <sp who="POLEMON" xml:id="V04-6">
             <speaker>POLÉMON.</speaker>
             <l n="1188" xml:id="l1188">Il a dissimulé l’excès de son injure ;</l>
             <l n="1189" xml:id="l1189">Il garde un froid silence; et depuis qu’il est roi,</l>
@@ -2085,7 +2158,7 @@
             <l n="1193" xml:id="l1193">Jamais prince en effet ne fut plus outragé.</l>
             <l n="1194" xml:id="l1194">Ne vous a-t-il pas dit qu’on le verrait vengé ?*</l>
           </sp>
-          <sp xml:id="V04-7" who="IDAS">
+          <sp who="IDAS" xml:id="V04-7">
             <speaker>IDAS.</speaker>
             <l n="1195" xml:id="l1195">Oui ; mais depuis, seigneur, dans son âme ulcérée,</l>
             <l n="1196" xml:id="l1196">Ainsi que parmi nous, j’ai vu la paix rentrée.</l>
@@ -2096,7 +2169,7 @@
             <l n="1201" xml:id="l1201">Sur la coupe sacrée on va jurer la paix</l>
             <l n="1202" xml:id="l1202">Que vos soins ont donnée à nos ardents souhaits;</l>
           </sp>
-          <sp xml:id="V04-8" who="POLEMON">
+          <sp who="POLEMON" xml:id="V04-8">
             <speaker>POLÉMON.</speaker>
             <l n="1203" xml:id="l1203">Achevons notre ouvrage ; entrons, la porte s’ouvre ;</l>
             <l n="1204" xml:id="l1204">De ce saint appareil la pompe se découvre.</l>
@@ -2107,15 +2180,22 @@
             <l n="1208" xml:id="l1208">Puisse-t-elle à ses fils n’être jamais fatale.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Polémon, Idas, Atrée, dans le fond.<listPerson type="configuration" xml:id="conf33"><person corresp="#POLEMON"/><person corresp="#HIPPODAMIE"/><person corresp="#ATREE"/><person corresp="#THYESTE"/><person corresp="#MEGARE"/><person corresp="#EROPE"/><person corresp="#IDAS"/></listPerson></head>
-          <sp xml:id="V05-1" who="POLEMON">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Polémon, Idas, Atrée, dans le fond.<listPerson type="configuration" xml:id="conf33">
+            <person corresp="#POLEMON"/>
+            <person corresp="#HIPPODAMIE"/>
+            <person corresp="#ATREE"/>
+            <person corresp="#THYESTE"/>
+            <person corresp="#MEGARE"/>
+            <person corresp="#EROPE"/>
+            <person corresp="#IDAS"/></listPerson></head>
+          <sp who="POLEMON" xml:id="V05-1">
             <speaker>POLÉMON.</speaker>
             <l n="1209" xml:id="l1209">Je vois venir Atrée, et voici les moments</l>
             <l n="1210" xml:id="l1210">Où vous allez tous trois prononcer les serments.</l>
             <stage type="[N/A]">Atrée se place derrière l’autel.</stage>
           </sp>
-          <sp xml:id="V05-2" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="V05-2">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1211" xml:id="l1211">Vous les écouterez, dieux souverains du monde ;</l>
             <l n="1212" xml:id="l1212">Dieux ! auteurs de ma race en malheurs si féconde,</l>
@@ -2133,19 +2213,19 @@
             <l n="1223" xml:id="l1223">Approchez-vous, mon fils. D’où naît cette contrainte ?</l>
             <l n="1224" xml:id="l1224">Et quelle horreur nouvelle en vos regards est peinte ?</l>
           </sp>
-          <sp xml:id="V05-3" who="ATREE">
+          <sp who="ATREE" xml:id="V05-3">
             <speaker>ATRÉE.</speaker>
             <l n="1225" xml:id="l1225">Peut-être un peu de trouble a pu renaître en moi,</l>
             <l n="1226" xml:id="l1226">En voyant que mon frère a soupçonné ma foi.</l>
             <l n="1227" xml:id="l1227">Des soldats de Mycène il a mandé l’élite.</l>
           </sp>
-          <sp xml:id="V05-4" who="THYESTE">
+          <sp who="THYESTE" xml:id="V05-4">
             <speaker>THYESTE.</speaker>
             <l n="1228" xml:id="l1228">Je veux que mes sujets se rangent à ma suite ;</l>
             <l n="1229" xml:id="l1229">Je les veux pour témoins de mes serments sacrés.</l>
             <l n="1230" xml:id="l1230">Je les veux pour vengeurs, si vous vous parjurez.</l>
           </sp>
-          <sp xml:id="V05-5" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="V05-5">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1231" xml:id="l1231">Ah ! bannissez, mes fils, ces soupçons téméraires,</l>
             <l n="1232" xml:id="l1232">Honteux entre des rois, cruels entre des frères.</l>
@@ -2153,84 +2233,84 @@
             <l n="1234" xml:id="l1234">Rien ne doit de ce jour altérer les douceurs :</l>
             <l n="1235" xml:id="l1235">Dans nos embrassements qu’enfin tout se répare.</l>
             <stage type="toward">À Polémon.</stage>
-            <l n="1236" xml:id="l1236" part="I">Donnez-moi cette coupe.</l>
+            <l n="1236" part="I" xml:id="l1236">Donnez-moi cette coupe.</l>
           </sp>
-          <sp xml:id="V05-6" who="MEGARE">
+          <sp who="MEGARE" xml:id="V05-6">
             <speaker>MÉGARE, accourant.</speaker>
             <l part="M">Arrêtez !</l>
           </sp>
-          <sp xml:id="V05-7" who="EROPE">
+          <sp who="EROPE" xml:id="V05-7">
             <speaker>ÉROPE.</speaker>
             <l part="F">Ah ! Mégare,</l>
-            <l n="1237" xml:id="l1237" part="I">Tu reviens sans mon fils !</l>
+            <l n="1237" part="I" xml:id="l1237">Tu reviens sans mon fils !</l>
           </sp>
-          <sp xml:id="V05-8" who="MEGARE">
+          <sp who="MEGARE" xml:id="V05-8">
             <speaker>MÉGARE, se plaçant près d’Érope.</speaker>
             <l part="F">De farouches soldats</l>
             <l n="1238" xml:id="l1238">Ont saisi cet enfant dans mes débiles bras.</l>
           </sp>
-          <sp xml:id="V05-9" who="EROPE">
+          <sp who="EROPE" xml:id="V05-9">
             <speaker>ÉROPE.</speaker>
-            <l n="1239" xml:id="l1239" part="I">Quoi ! Mon fils malheureux !</l>
+            <l n="1239" part="I" xml:id="l1239">Quoi ! Mon fils malheureux !</l>
           </sp>
-          <sp xml:id="V05-10" who="MEGARE">
+          <sp who="MEGARE" xml:id="V05-10">
             <speaker>MÉGARE.</speaker>
             <l part="F">Interdite et tremblante,</l>
             <l n="1240" xml:id="l1240">Les dieux que j’attestais m’ont laissée expirante.</l>
-            <l n="1241" xml:id="l1241" part="I">Craignez tout.</l>
+            <l n="1241" part="I" xml:id="l1241">Craignez tout.</l>
           </sp>
-          <sp xml:id="V05-11" who="THYESTE">
+          <sp who="THYESTE" xml:id="V05-11">
             <speaker>THYESTE.</speaker>
             <l part="F">Ah ! mon frère, est-ce ainsi que ta foi</l>
             <l n="1242" xml:id="l1242">Se conserve à nos dieux, à tes serments, à moi ?...</l>
             <l n="1243" xml:id="l1243">Ta main tremble en touchant à la coupe sacrée !...</l>
           </sp>
-          <sp xml:id="V05-12" who="ATREE">
+          <sp who="ATREE" xml:id="V05-12">
             <speaker>ATRÉE.</speaker>
             <l n="1244" xml:id="l1244">Tremble encor plus, perfide, et reconnais Atrée.</l>
           </sp>
-          <sp xml:id="V05-13" who="EROPE">
+          <sp who="EROPE" xml:id="V05-13">
             <speaker>ÉROPE.</speaker>
             <l n="1245" xml:id="l1245">Dieux ! quels maux je ressens ! Ô ma mère ! Ô mon fils !...</l>
-            <l n="1246" xml:id="l1246" part="I">Je meurs !</l>
+            <l n="1246" part="I" xml:id="l1246">Je meurs !</l>
             <stage type="action/fall">Elle tombe dans les bras d’Hippodamie et de Thyeste.</stage>
           </sp>
-          <sp xml:id="V05-14" who="POLEMON">
+          <sp who="POLEMON" xml:id="V05-14">
             <speaker>POLÉMON.</speaker>
             <l part="F">Affreux soupçons, vous êtes éclaircis.</l>
           </sp>
-          <sp xml:id="V05-15" who="ATREE">
+          <sp who="ATREE" xml:id="V05-15">
             <speaker>ATRÉE.</speaker>
             <l n="1247" xml:id="l1247">Tu meurs, indigne Érope, et tu mourras, Thyeste.</l>
             <l n="1248" xml:id="l1248">Ton détestable fils est celui de l’inceste ;</l>
             <l n="1249" xml:id="l1249">Et ce vase contient le sang du malheureux :</l>
             <l n="1250" xml:id="l1250">J’ai voulu de ce sang vous abreuver tous deux.</l>
             <stage type="decor/action">La nuit se répand sur la scène, et on entend le tonnerre ; Atrée tire son épée.</stage>
-            <l n="1251" xml:id="l1251" part="I">Ce poison m’a vengé ; glaive, achève...</l>
+            <l n="1251" part="I" xml:id="l1251">Ce poison m’a vengé ; glaive, achève...</l>
           </sp>
-          <sp xml:id="V05-16" who="THYESTE">
+          <sp who="THYESTE" xml:id="V05-16">
             <speaker>THYESTE.</speaker>
             <l part="F">Ah, barbare !</l>
             <l n="1252" xml:id="l1252">Tu mourras avant moi... la foudre nous sépare...</l>
             <stage type="[N/A]">Les deux frères veulent courir l’un sur l’autre, le poignard à la main ; Polémon et Idas les désarment.</stage>
           </sp>
-          <sp xml:id="V05-17" who="ATREE">
+          <sp who="ATREE" xml:id="V05-17">
             <speaker>ATRÉE.</speaker>
             <l n="1253" xml:id="l1253">Crains la foudre et mon bras ; tombe, perfide, et meurs !</l>
           </sp>
-          <sp xml:id="V05-18" who="HIPPODAMIE">
+          <sp who="HIPPODAMIE" xml:id="V05-18">
             <speaker>HIPPODAMIE.</speaker>
             <l n="1254" xml:id="l1254">Monstres, sur votre mère épuisez vos fureurs :</l>
             <l n="1255" xml:id="l1255">Mon sein vous a portés, je suis la plus coupable.</l>
             <stage type="[N/A]">Elle embrasse Érope, et se laisse tomber auprès d’elle sur une banquette : les éclairs et le tonnerre redoublent.</stage>
           </sp>
-          <sp xml:id="V05-19" who="THYESTE">
+          <sp who="THYESTE" xml:id="V05-19">
             <speaker>THYESTE.</speaker>
             <l n="1256" xml:id="l1256">Je ne puis t’arracher ta vie abominable.</l>
-            <l n="1257" xml:id="l1257" part="I">Va, je finis la mienne.</l>
+            <l n="1257" part="I" xml:id="l1257">Va, je finis la mienne.</l>
             <stage type="die">Il se tue.</stage>
           </sp>
-          <sp xml:id="V05-20" who="ATREE">
+          <sp who="ATREE" xml:id="V05-20">
             <speaker>ATRÉE.</speaker>
             <l part="F">Attends, rival cruel...</l>
             <l n="1258" xml:id="l1258">Le jour fuit, l’enfer m’ouvre un sépulcre éternel ;</l>

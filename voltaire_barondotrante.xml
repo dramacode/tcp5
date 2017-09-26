@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Le baron d’otrante</title>
         <title type="sub">, opéra bouffe</title>
-        <author born="1694" born_location="Paris" death="1778" death_location="Paris" academie="1746">
+        <author academie="1746" born="1694" born_location="Paris" death="1778" death_location="Paris">
           <surname>Voltaire</surname>
         </author>
       </titleStmt>
@@ -46,38 +47,37 @@
           <titlePart type="sub">OPÉRA BOUFFE</titlePart>
         </docTitle>
         <docDate value="1784">1784</docDate>
-        <docAuthor id="VOLTAIRE" bio="voltaire">Voltaire</docAuthor>
+        <docAuthor bio="voltaire" id="VOLTAIRE">Voltaire</docAuthor>
         <docImprint>
           <privilege id="17**-**-**"/>
           <imprimeur id="***"/>
           <acheveImprime id="17**-**-**"/>
         </docImprint>
         <performance>
-        <premiere date="1784" location="(inconnue)">Représentée, pour la première fois, en 1784.</premiere>
-      </performance>
+          <premiere date="1784" location="(inconnue)">Représentée, pour la première fois, en 1784.</premiere>
+        </performance>
       </titlePage>
       <div xml:id="castList">
         <castList>
           <head>PERSONNAGES</head>
-          <castItem><role xml:id="IRENE" rend="male">IRÈNE</role>.</castItem>
-          <castItem>
-          <role xml:id="UNEGOUVERNANTE" rend="male">UNE GOUVERNANTE</role>
-        </castItem>
-          <castItem><role xml:id="ABDALLA" rend="male">ABDALLA</role>, corsaire turc.</castItem>
-          <castItem><role xml:id="CONSEILLERSPRIVESDUBARON" rend="male">CONSEILLERS PRIVÉS DU BARON</role>.</castItem>
-          <castItem><role xml:id="HOBEREAUXETFILLESDOTRANTE" rend="male">HOBEREAUX ET FILLES D’OTRANTE</role>.</castItem>
-          <castItem><role xml:id="TROUPEDETURCS" rend="male">TROUPE DE TURCS</role>.</castItem>
+          <castItem><role rend="male" xml:id="IRENE">IRÈNE</role>.</castItem>
+          <castItem><role rend="male" xml:id="UNEGOUVERNANTE">UNE GOUVERNANTE</role>.</castItem>
+          <castItem><role rend="male" xml:id="ABDALLA">ABDALLA</role>, corsaire turc.</castItem>
+          <castItem><role rend="male" xml:id="CONSEILLERSPRIVESDUBARON">CONSEILLERS PRIVÉS DU BARON</role>.</castItem>
+          <castItem><role rend="male" xml:id="HOBEREAUXETFILLESDOTRANTE">HOBEREAUX ET FILLES D’OTRANTE</role>.</castItem>
+          <castItem><role rend="male" xml:id="TROUPEDETURCS">TROUPE DE TURCS</role>.</castItem>
         </castList>
-        <set location="Otrante" country="Italie" periode="XVIIIème" link="">La scène est dans le château du baron.</set>
+        <set country="Italie" link="" location="Otrante" periode="XVIIIème">La scène est dans le château du baron.</set>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
         <stage type="decor">Le théâtre représente un salon magnifique.</stage>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf1"><person corresp="#LEBARON"/></listPerson></head>
-          <sp xml:id="I01-1" who="LEBARON">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#LEBARON"/></listPerson></head>
+          <sp who="LEBARON" xml:id="I01-1">
             <speaker>LE BARON, seul, en robe de chambre, couché sur un lit de repos.</speaker>
             <stage type="sing">Il chante.</stage>
             <note type="C">Le début de cette pièce commnce de la même manière que "La Nuit des Rois" de Shakespeare.</note>
@@ -92,39 +92,41 @@
             <l n="8" xml:id="l8">Si je puis avoir du plaisir.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="1">
-          <head>SCÈNE I.. Le Baron, Un Conseiller privé, en grande perruque, en habit feuille-morte et en manteau noir il entre une foule de hobereaux et de filles d’Otrante.<listPerson type="configuration" xml:id="conf2"><person corresp="#LECONSEILLER"/><person corresp="#LEBARON"/></listPerson></head>
-          <sp xml:id="I02-1" who="LECONSEILLER">
+        <div2 n="1" type="scene" xml:id="I02">
+          <head>SCÈNE I.. Le Baron, Un Conseiller privé, en grande perruque, en habit feuille-morte et en manteau noir il entre une foule de hobereaux et de filles d’Otrante.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#LECONSEILLER"/>
+            <person corresp="#LEBARON"/></listPerson></head>
+          <sp who="LECONSEILLER" xml:id="I02-1">
             <speaker>LE CONSEILLER.</speaker>
             <l n="9" xml:id="l9">Monseigneur, notre unique envie</l>
             <l n="10" xml:id="l10">Est de vous voir heureux dans votre baronnie</l>
             <l n="11" xml:id="l11">D’un seigneur tel que vous c’est l’unique destin.</l>
           </sp>
-          <sp xml:id="I02-2" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-2">
             <speaker>LE BARON.</speaker>
             <l n="12" xml:id="l12">Ah que je m’ennuie !</l>
             <l n="13" xml:id="l13">Je n’ai point encore eu de plaisir ce matin.</l>
             <stage type="action">On habille monseigneur.</stage>
           </sp>
-          <sp xml:id="I02-3" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-3">
             <speaker>LE CONSEILLER.</speaker>
             <l n="14" xml:id="l14">C’est aujourd’hui le jour où le ciel a fait naître</l>
             <l n="15" xml:id="l15">Dans ce fameux château notre adorable maître.</l>
             <l n="16" xml:id="l16">Nous célébrons ce jour par des jeux bien brillants...</l>
           </sp>
-          <sp xml:id="I02-4" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-4">
             <speaker>LE BARON.</speaker>
-            <l n="17" xml:id="l17" part="I">Et quel âge ai-je donc ?</l>
+            <l n="17" part="I" xml:id="l17">Et quel âge ai-je donc ?</l>
           </sp>
-          <sp xml:id="I02-5" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-5">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Vous avez dix-huit ans.</l>
           </sp>
-          <sp xml:id="I02-6" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-6">
             <speaker>LE BARON.</speaker>
-            <l n="18" xml:id="l18" part="I">Ah ! Me voilà majeur !</l>
+            <l n="18" part="I" xml:id="l18">Ah ! Me voilà majeur !</l>
           </sp>
-          <sp xml:id="I02-7" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-7">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Les barons à cet âge</l>
             <l n="19" xml:id="l19">De leur majorité font le plus noble usage</l>
@@ -136,53 +138,53 @@
             <l n="25" xml:id="l25">Ils font tout d’un seul mot, bien souvent rien du tout</l>
             <l n="26" xml:id="l26">Et quand ils sont oisifs ils font toujours merveilles.</l>
           </sp>
-          <sp xml:id="I02-8" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-8">
             <speaker>LE BARON.</speaker>
             <l n="27" xml:id="l27">On me l’a toujours dit : je fus bien élevé.</l>
             <l n="28" xml:id="l28">Or çà, répondez-moi, mon conseiller privé</l>
-            <l n="29" xml:id="l29" part="I">Ai-je beaucoup d’argent ?</l>
+            <l n="29" part="I" xml:id="l29">Ai-je beaucoup d’argent ?</l>
           </sp>
-          <sp xml:id="I02-9" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-9">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Fort peu mais on peut prendre</l>
             <l n="30" xml:id="l30">Celui de vos fermiers, et même sans le rendre.</l>
           </sp>
-          <sp xml:id="I02-10" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-10">
             <speaker>LE BARON.</speaker>
-            <l n="31" xml:id="l31" part="I">Et des soldats ?</l>
+            <l n="31" part="I" xml:id="l31">Et des soldats ?</l>
           </sp>
-          <sp xml:id="I02-11" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-11">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Pas un mais en disant deux mots</l>
             <l n="32" xml:id="l32">Tous les manants d’ici deviendront des héros.</l>
           </sp>
-          <sp xml:id="I02-12" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-12">
             <speaker>LE BARON.</speaker>
-            <l n="33" xml:id="l33" part="I">Ai-je quelque galère ?</l>
+            <l n="33" part="I" xml:id="l33">Ai-je quelque galère ?</l>
           </sp>
-          <sp xml:id="I02-13" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-13">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Oui, seigneur Votre Altesse</l>
             <l n="34" xml:id="l34">A des bois, une rade, et quand elle voudra</l>
-            <note type="L">Hellespont : Détroit [de 2 Km de large] qui unit le mer Egée à la Propontide et sépare l’Europe  de l’Asie, doit son nom à la mort tragique d’Hellé. [B]</note>
+            <note type="L">Hellespont : Détroit [de 2 Km de large] qui unit le mer Egée à la Propontide et sépare l’Europe de l’Asie, doit son nom à la mort tragique d’Hellé. [B]</note>
             <l n="35" xml:id="l35">On fera des vaisseaux l’Hellespont tremblera</l>
             <l n="36" xml:id="l36">Elle sera des mers souveraine maîtresse.</l>
           </sp>
-          <sp xml:id="I02-14" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-14">
             <speaker>LE BARON.</speaker>
-            <l n="37" xml:id="l37" part="I">Je me vois bien puissant.</l>
+            <l n="37" part="I" xml:id="l37">Je me vois bien puissant.</l>
           </sp>
-          <sp xml:id="I02-15" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-15">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Nul ne l’est plus que vous.</l>
             <l n="38" xml:id="l38">Seigneur, goûtez en paix ce destin noble et doux</l>
             <l n="39" xml:id="l39">Ne vous mêlez de rien, chacun pour vous travaille.</l>
           </sp>
-          <sp xml:id="I02-16" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-16">
             <speaker>LE BARON.</speaker>
             <l n="40" xml:id="l40">Étant si fortuné, d’où vient donc que je bâille ?</l>
           </sp>
-          <sp xml:id="I02-17" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I02-17">
             <speaker>LE CONSEILLER.</speaker>
             <l n="41" xml:id="l41">Seigneur, ces bâillements sont l’effet d’un grand coeur</l>
             <l n="42" xml:id="l42">Qui se sent au-dessus de toute sa grandeur.</l>
@@ -193,7 +195,7 @@
             <l n="47" xml:id="l47">Vous serez harangué c’est le premier devoir</l>
             <l n="48" xml:id="l48">Les spectacles suivront c’est notre antique usage.</l>
           </sp>
-          <sp xml:id="I02-18" who="LEBARON">
+          <sp who="LEBARON" xml:id="I02-18">
             <speaker>LE BARON.</speaker>
             <l n="49" xml:id="l49">Tout cela bien souvent fait bâiller davantage</l>
             <l n="50" xml:id="l50">Les harangues surtout ont ce don merveilleux.</l>
@@ -204,9 +206,12 @@
             <l n="55" xml:id="l55">Ma cousine parait je ne bâillerai plus.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III.La Baron, Irène.<listPerson type="configuration" xml:id="conf3"><person corresp="#LEBARON"/><person corresp="#IRENE"/><person corresp="#IRENE,LEBARON"/></listPerson></head>
-          <sp xml:id="I03-1" who="LEBARON">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III.La Baron, Irène.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#LEBARON"/>
+            <person corresp="#IRENE"/>
+            <person corresp="#IRENE,LEBARON"/></listPerson></head>
+          <sp who="LEBARON" xml:id="I03-1">
             <speaker>LE BARON, chante.</speaker>
             <l n="56" xml:id="l56">Belle Irène, belle cousine,</l>
             <l n="57" xml:id="l57">Ma langueur chagrine</l>
@@ -222,7 +227,7 @@
             <l n="67" xml:id="l67">Si l’on y parle un peu, ce n’est que pour chanter.</l>
             <l n="68" xml:id="l68">Vous avez une voix si tendre et si touchante !</l>
           </sp>
-          <sp xml:id="I03-2" who="IRENE">
+          <sp who="IRENE" xml:id="I03-2">
             <speaker>IRÈNE.</speaker>
             <l n="69" xml:id="l69">Il n’est point à propos, mon cousin, que je chante ;</l>
             <note type="L">Otrante : Ville de l’Italie méridionale sur l’Adriatique, à 38 Km du S.E. de Lecce. Prise en 1480 par Mahomet II, qui massacra 12 000 de ses habitants.</note>
@@ -231,11 +236,11 @@
             <l n="72" xml:id="l72">Vous ne songez à rien, et l’on vous fait accroire</l>
             <l n="73" xml:id="l73">Que tout le monde est fort content.</l>
           </sp>
-          <sp xml:id="I03-3" who="LEBARON">
+          <sp who="LEBARON" xml:id="I03-3">
             <speaker>LE BARON.</speaker>
             <l n="74" xml:id="l74">Je le suis avec vous, j’y mets toute ma gloire.</l>
           </sp>
-          <sp xml:id="I03-4" who="IRENE">
+          <sp who="IRENE" xml:id="I03-4">
             <speaker>IRÈNE.</speaker>
             <l n="75" xml:id="l75">Sachez que pour me plaire il vous faudra changer :</l>
             <l n="76" xml:id="l76">D’une mollesse indigne il faut vous corriger ;</l>
@@ -246,18 +251,18 @@
             <l n="81" xml:id="l81">On s’est moqué de vous, et votre oisiveté</l>
             <l n="82" xml:id="l82">Rendra vos vertus inutiles.</l>
           </sp>
-          <sp xml:id="I03-5" who="LEBARON">
+          <sp who="LEBARON" xml:id="I03-5">
             <speaker>LE BARON.</speaker>
-            <l n="83" xml:id="l83" part="I">Mes conseillers privés...</l>
+            <l n="83" part="I" xml:id="l83">Mes conseillers privés...</l>
           </sp>
-          <sp xml:id="I03-6" who="IRENE">
+          <sp who="IRENE" xml:id="I03-6">
             <speaker>IRÈNE.</speaker>
             <l part="F">Seigneur, sont des fripons</l>
             <l n="84" xml:id="l84">Qui vous avaient donné de méchantes leçons,</l>
             <l n="85" xml:id="l85">Et qui vous nourrissaient d’orgueil et de fadaise,</l>
             <l n="86" xml:id="l86">Pour mieux pouvoir piller la baronnie à l’aise.</l>
           </sp>
-          <sp xml:id="I03-7" who="LEBARON">
+          <sp who="LEBARON" xml:id="I03-7">
             <speaker>LE BARON.</speaker>
             <l n="87" xml:id="l87">Oui, l’on m’élevait mal ; oui, je m’en aperçois,</l>
             <l n="88" xml:id="l88">Et je me sens tout autre alors que je vous vois.</l>
@@ -266,7 +271,7 @@
             <l n="91" xml:id="l91">Me rendra digne enfin de plaire à vos beaux yeux ;</l>
             <l n="92" xml:id="l92">Étant aimé de vous, j’en vaudrai beaucoup mieux.</l>
           </sp>
-          <sp xml:id="I03-8" who="IRENE">
+          <sp who="IRENE" xml:id="I03-8">
             <speaker>IRÈNE.</speaker>
             <l n="93" xml:id="l93">Alors, seigneur, alors, à vos vertus rendue,</l>
             <l n="94" xml:id="l94">Je reprendrai pour vous la voix que j’ai perdue.</l>
@@ -278,7 +283,7 @@
             <l n="99" xml:id="l99">Que le temps affermisse un si tendre lien,</l>
             <l n="100" xml:id="l100">Que le temps redouble ma chaîne !</l>
           </sp>
-          <sp xml:id="I03-9" who="IRENE,LEBARON">
+          <sp who="IRENE,LEBARON" xml:id="I03-9">
             <speaker>Tous deux ensemble.</speaker>
             <l n="101" xml:id="l101">Non, je ne m’ennuierai jamais</l>
             <l n="102" xml:id="l102">J’aimerai toute ma vie.</l>
@@ -289,70 +294,76 @@
             <l n="107" xml:id="l107">J’aimerai toute ma vie.</l>
             <stage type="noise">On entend une grande rumeur et des cris.</stage>
           </sp>
-          <sp xml:id="I03-10" who="IRENE">
+          <sp who="IRENE" xml:id="I03-10">
             <speaker>IRÈNE.</speaker>
-            <l n="108" xml:id="l108" part="I">Ô ciel quels cris affreux !</l>
+            <l n="108" part="I" xml:id="l108">Ô ciel quels cris affreux !</l>
           </sp>
-          <sp xml:id="I03-11" who="LEBARON">
+          <sp who="LEBARON" xml:id="I03-11">
             <speaker>LE BARON.</speaker>
             <l part="F">Quel tumulte ! Quel bruit !</l>
             <l n="109" xml:id="l109">Quel étrange gala ! Chacun court, chacun fuit.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Le Baron, Irène, Un Conseiller privé.<listPerson type="configuration" xml:id="conf4"><person corresp="#LECONSEILLER"/><person corresp="#IRENE"/><person corresp="#LEBARON"/></listPerson></head>
-          <sp xml:id="I04-1" who="LECONSEILLER">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Le Baron, Irène, Un Conseiller privé.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#LECONSEILLER"/>
+            <person corresp="#IRENE"/>
+            <person corresp="#LEBARON"/></listPerson></head>
+          <sp who="LECONSEILLER" xml:id="I04-1">
             <speaker>LE CONSEILLER.</speaker>
             <l n="110" xml:id="l110">Ah seigneur, c’en est fait les Turcs sont dans la ville.</l>
           </sp>
-          <sp xml:id="I04-2" who="IRENE">
+          <sp who="IRENE" xml:id="I04-2">
             <speaker>IRÈNE.</speaker>
-            <l n="111" xml:id="l111" part="I">Les Turcs</l>
+            <l n="111" part="I" xml:id="l111">Les Turcs</l>
           </sp>
-          <sp xml:id="I04-3" who="LEBARON">
+          <sp who="LEBARON" xml:id="I04-3">
             <speaker>LE BARON.</speaker>
             <l part="M">Est-il bien vrai ?</l>
           </sp>
-          <sp xml:id="I04-4" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I04-4">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Vous n’avez plus d’asile.</l>
           </sp>
-          <sp xml:id="I04-5" who="LEBARON">
+          <sp who="LEBARON" xml:id="I04-5">
             <speaker>LE BARON.</speaker>
             <l n="112" xml:id="l112">Comment cela ? Par où sont-ils donc arrivés ?</l>
           </sp>
-          <sp xml:id="I04-6" who="IRENE">
+          <sp who="IRENE" xml:id="I04-6">
             <speaker>IRÈNE.</speaker>
             <l n="113" xml:id="l113">Voilà ce qu’ont produit vos conseillers privés.</l>
           </sp>
-          <sp xml:id="I04-7" who="LEBARON">
+          <sp who="LEBARON" xml:id="I04-7">
             <speaker>LE BARON.</speaker>
             <l n="114" xml:id="l114">Allez dire à mes gens qu’on fasse résistance</l>
-            <l n="115" xml:id="l115" part="I">Je cours les seconder.</l>
+            <l n="115" part="I" xml:id="l115">Je cours les seconder.</l>
           </sp>
-          <sp xml:id="I04-8" who="LECONSEILLER">
+          <sp who="LECONSEILLER" xml:id="I04-8">
             <speaker>LE CONSEILLER.</speaker>
             <l part="F">Seigneur, votre grandeur</l>
             <l n="116" xml:id="l116">De son rang glorieux doit garder la décence.</l>
           </sp>
-          <sp xml:id="I04-9" who="IRENE">
+          <sp who="IRENE" xml:id="I04-9">
             <speaker>IRÈNE.</speaker>
             <l n="117" xml:id="l117">Hélas ma gouvernante et mes filles d’honneur</l>
             <l n="118" xml:id="l118">Viennent de tous côtés, et sont toutes tremblantes.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Les précédents, La Gouvernante, et les filles d’honneur.<listPerson type="configuration" xml:id="conf5"><person corresp="#LAGOUVERNANTE"/><person corresp="#IRENE"/><person corresp="#LESTURCS"/></listPerson></head>
-          <sp xml:id="I05-1" who="LAGOUVERNANTE">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Les précédents, La Gouvernante, et les filles d’honneur.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#LAGOUVERNANTE"/>
+            <person corresp="#IRENE"/>
+            <person corresp="#LESTURCS"/></listPerson></head>
+          <sp who="LAGOUVERNANTE" xml:id="I05-1">
             <speaker>LA GOUVERNANTE.</speaker>
-            <l n="119" xml:id="l119" part="I">Ah ! Madame ! les Turcs...</l>
+            <l n="119" part="I" xml:id="l119">Ah ! Madame ! les Turcs...</l>
           </sp>
-          <sp xml:id="I05-2" who="IRENE">
+          <sp who="IRENE" xml:id="I05-2">
             <speaker>IRÈNE.</speaker>
             <l part="F">Ah pauvres innocentes !</l>
             <l n="120" xml:id="l120">Qu’ont fait ces Turcs maudits ?...</l>
           </sp>
-          <sp xml:id="I05-3" who="LAGOUVERNANTE">
+          <sp who="LAGOUVERNANTE" xml:id="I05-3">
             <speaker>LA GOUVERNANTE.</speaker>
             <l part="F">Les Turcs... je n’en puis plus...</l>
             <l n="121" xml:id="l121">Dans votre appartement... Ils sont tous répandus.</l>
@@ -360,18 +371,22 @@
             <l n="123" xml:id="l123">On enchaîne à la fois père, enfant, femme, fille.</l>
             <l n="124" xml:id="l124">Madame !... Entendez-vous les tambours... Les clameurs ?...</l>
           </sp>
-          <sp xml:id="I05-4" who="LESTURCS">
+          <sp who="LESTURCS" xml:id="I05-4">
             <speaker>LES TURCS, derrière le théâtre.</speaker>
-            <l n="125" xml:id="l125" part="I">Alla ! alla ! guerra !</l>
+            <l n="125" part="I" xml:id="l125">Alla ! alla ! guerra !</l>
           </sp>
-          <sp xml:id="I05-5" who="LAGOUVERNANTE">
+          <sp who="LAGOUVERNANTE" xml:id="I05-5">
             <speaker>LA GOUVERNANTE.</speaker>
             <l part="F">Madame.... je me meurs!</l>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>SCÈNE VI. Les Précédents, Abdalla, suivi de ses Turcs. <listPerson type="configuration" xml:id="conf6"><person corresp="#QUATUORDETURCS"/><person corresp="#ABDALLA"/><person corresp="#LEBARON"/><person corresp="#IRENE"/></listPerson></head>
-          <sp xml:id="I06-1" who="QUATUORDETURCS">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>SCÈNE VI. Les Précédents, Abdalla, suivi de ses Turcs. <listPerson type="configuration" xml:id="conf6">
+            <person corresp="#QUATUORDETURCS"/>
+            <person corresp="#ABDALLA"/>
+            <person corresp="#LEBARON"/>
+            <person corresp="#IRENE"/></listPerson></head>
+          <sp who="QUATUORDETURCS" xml:id="I06-1">
             <speaker>QUATUOR DE TURCS.</speaker>
             <l n="126" xml:id="l126">Pillar, pillar, grand Abdalla</l>
             <l n="127" xml:id="l127">Alla, ylla, alla!</l>
@@ -380,7 +395,7 @@
             <l n="130" xml:id="l130">Tout ravir</l>
             <l n="131" xml:id="l131">Alla, ylla, alla!</l>
           </sp>
-          <sp xml:id="I06-2" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="I06-2">
             <speaker>ABDALLA.</speaker>
             <l n="132" xml:id="l132">Non amazzar,</l>
             <l n="133" xml:id="l133">No, no, non amazzar.</l>
@@ -391,25 +406,25 @@
             <l n="137" xml:id="l137">Bever, violar,</l>
             <l n="138" xml:id="l138">Non amazzar.</l>
           </sp>
-          <sp xml:id="I06-3" who="LEBARON">
+          <sp who="LEBARON" xml:id="I06-3">
             <speaker>LE BARON, enchaîné avec deux conseillers en grande perruque.</speaker>
             <l n="139" xml:id="l139">Irène, vous voyez si dans cette posture</l>
             <l n="140" xml:id="l140">Je fais pour un baron une noble figure.</l>
           </sp>
-          <sp xml:id="I06-4" who="QUATUORDETURCS">
+          <sp who="QUATUORDETURCS" xml:id="I06-4">
             <speaker>QUATUOR DE TURCS.</speaker>
             <l n="141" xml:id="l141">Pillar, pillar, grand Abdalla</l>
             <l n="142" xml:id="l142">Tout saccagear</l>
             <l n="143" xml:id="l143">Pillar, bever, violar.</l>
             <l n="144" xml:id="l144">Alla, ylla, alla</l>
           </sp>
-          <sp xml:id="I06-5" who="IRENE">
+          <sp who="IRENE" xml:id="I06-5">
             <speaker>IRÈNE.</speaker>
             <l n="145" xml:id="l145">Quoi ces Turcs si méchants n’enchaînent point les dames</l>
             <note type="C">le Vers 146 est une parodie des vers de Virgile (Enéide, I, 15) Tant mne animis coelestibus irae ? (B.)</note>
             <l n="146" xml:id="l146">Tant d’honneur entre-t-il dans ces vilaines âmes ?</l>
           </sp>
-          <sp xml:id="I06-6" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="I06-6">
             <speaker>ABDALLA, chante.</speaker>
             <l n="147" xml:id="l147">O bravi corsari,</l>
             <l n="148" xml:id="l148">Spavento de’ mari,</l>
@@ -424,7 +439,7 @@
             <l n="157" xml:id="l157">Pillar, pillar, grand Abdalla</l>
             <l n="158" xml:id="l158">Alla, ylla, alla!</l>
           </sp>
-          <sp xml:id="I06-7" who="IRENE">
+          <sp who="IRENE" xml:id="I06-7">
             <speaker>IRÈNE, au baron qu’on emmène.</speaker>
             <l n="159" xml:id="l159">Allez, mon cher cousin, je me flatte, j’espère,</l>
             <l n="160" xml:id="l160">Si ce Turc est galant, de vous tirer d’affaire.</l>
@@ -433,21 +448,23 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="1">
+      <div1 n="1" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE I. Irène, La Gouvernant.<listPerson type="configuration" xml:id="conf8"><person corresp="#IRENE"/><person corresp="#LAGOUVERNANTE"/></listPerson></head>
-          <sp xml:id="II01-1" who="IRENE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE I. Irène, La Gouvernant.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#IRENE"/>
+            <person corresp="#LAGOUVERNANTE"/></listPerson></head>
+          <sp who="IRENE" xml:id="II01-1">
             <speaker>IRÈNE.</speaker>
             <l n="163" xml:id="l163">Consolons-nous, ma bonne il faut avec adresse</l>
             <l n="164" xml:id="l164">Corriger, si l’on peut, la fortune traîtresse.</l>
             <l n="165" xml:id="l165">Vous savez du baron le bizarre destin ?</l>
           </sp>
-          <sp xml:id="II01-2" who="LAGOUVERNANTE">
+          <sp who="LAGOUVERNANTE" xml:id="II01-2">
             <speaker>LA GOUVERNANTE.</speaker>
-            <l n="166" xml:id="l166" part="I">Point du tout.</l>
+            <l n="166" part="I" xml:id="l166">Point du tout.</l>
           </sp>
-          <sp xml:id="II01-3" who="IRENE">
+          <sp who="IRENE" xml:id="II01-3">
             <speaker>IRÈNE.</speaker>
             <l part="F">Le corsaire, échauffé par le vin,</l>
             <l n="167" xml:id="l167">Dans les transports de joie où son coeur s’abandonne,</l>
@@ -460,12 +477,12 @@
             <l n="174" xml:id="l174">Ce sont là, nous dit-on, les jeux de la fortune /</l>
             <l n="175" xml:id="l175">Cette bizarrerie en Turquie est commune.</l>
           </sp>
-          <sp xml:id="II01-4" who="LAGOUVERNANTE">
+          <sp who="LAGOUVERNANTE" xml:id="II01-4">
             <speaker>LA GOUVERNANTE.</speaker>
             <l n="176" xml:id="l176">Se peut-il qu’un baron, hélas ! soit réduit là ?</l>
             <l n="177" xml:id="l177">Et quelle est votre place à la cour d’Abdalla ?</l>
           </sp>
-          <sp xml:id="II01-5" who="IRENE">
+          <sp who="IRENE" xml:id="II01-5">
             <speaker>IRÈNE.</speaker>
             <l n="178" xml:id="l178">Je n’en ai point encor ; mais, si je dois en croire</l>
             <l n="179" xml:id="l179">Certains regards hardis que, du haut de sa gloire,</l>
@@ -473,13 +490,13 @@
             <l n="181" xml:id="l181">J’aurai bientôt, je pense, un assez bel emploi.</l>
             <l n="182" xml:id="l182">Et j’en ferai, ma bonne, un très-honnête usage.</l>
           </sp>
-          <sp xml:id="II01-6" who="LAGOUVERNANTE">
+          <sp who="LAGOUVERNANTE" xml:id="II01-6">
             <speaker>LA GOUVERNANTE.</speaker>
             <l n="183" xml:id="l183">Ah ! Je n’en doute pas je sais qu’Irène est sage.</l>
             <l n="184" xml:id="l184">Mais, madame, un corsaire est un peu dangereux</l>
             <l n="185" xml:id="l185">Il paraît volontaire et le pas est scabreux.</l>
           </sp>
-          <sp xml:id="II01-7" who="IRENE">
+          <sp who="IRENE" xml:id="II01-7">
             <speaker>IRÈNE.</speaker>
             <l n="186" xml:id="l186">Il a pris sans façon l’appartement du maître :</l>
             <l n="187" xml:id="l187">« Je le suis, a-t-il dit, et j’ai seul droit de l’être.</l>
@@ -501,10 +518,12 @@
             <l n="203" xml:id="l203">Voilà nos ennemis, et voici mes rivales.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="1">
-          <head>SCÈNE I.. Irène, La Gouvernante, Abdalla arrive au son d’une musique turque, un mouchoir à la main ; les demoiselles u château d’Otrante forment un cercle autour de lui.<listPerson type="configuration" xml:id="conf9"><person corresp="#ABDALLA"/><person corresp="#IRENE"/></listPerson></head>
+        <div2 n="1" type="scene" xml:id="II02">
+          <head>SCÈNE I.. Irène, La Gouvernante, Abdalla arrive au son d’une musique turque, un mouchoir à la main ; les demoiselles u château d’Otrante forment un cercle autour de lui.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#ABDALLA"/>
+            <person corresp="#IRENE"/></listPerson></head>
           <stage type="entrance">Les Levantis arrivent, donnant chacun la main à une personne.</stage>
-          <sp xml:id="II02-1" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="II02-1">
             <speaker>ABDALLA, chante.</speaker>
             <l n="204" xml:id="l204">Su, su, Zitelle tenere</l>
             <l n="205" xml:id="l205">La mia spada fa tremar.</l>
@@ -516,7 +535,7 @@
             <l n="211" xml:id="l211">Col terrore della guerra.</l>
             <l n="212" xml:id="l212">Su, su, Zitelle tenere, etc.</l>
           </sp>
-          <sp xml:id="II02-2" who="IRENE">
+          <sp who="IRENE" xml:id="II02-2">
             <speaker>IRÈNE, chante cet air tendre et mesuré.</speaker>
             <l n="213" xml:id="l213">C’est pour servir notre adorable maître,</l>
             <l n="214" xml:id="l214">C’est pour l’aimer que le ciel nous fit naître.</l>
@@ -533,7 +552,7 @@
             <l n="224" xml:id="l224">On peut vous plaire, et non vous mériter.</l>
             <stage type="action">Abdalla fume sur un canapé les dames passent en revue devant lui. Il fait des mines à chacune, et donne enfin le mouchoir à Irène.</stage>
           </sp>
-          <sp xml:id="II02-3" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="II02-3">
             <speaker>ABDALLA.</speaker>
             <l n="225" xml:id="l225">Pigliate voi il fazzoletto,</l>
             <l n="226" xml:id="l226">L’avete ben guadagnato</l>
@@ -549,9 +568,11 @@
             <l n="234" xml:id="l234">Un’ altra volta.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Irène, Abdalla.<listPerson type="configuration" xml:id="conf10"><person corresp="#ABDALLA"/><person corresp="#IRENE"/></listPerson></head>
-          <sp xml:id="II03-1" who="ABDALLA">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Irène, Abdalla.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#ABDALLA"/>
+            <person corresp="#IRENE"/></listPerson></head>
+          <sp who="ABDALLA" xml:id="II03-1">
             <speaker>ABDALLA.</speaker>
             <l n="235" xml:id="l235">Cara Irena, adesso,</l>
             <l n="236" xml:id="l236">Sedete appresso di me.</l>
@@ -559,7 +580,7 @@
             <stage type="action/sit">Il la fait asseoir plus près.</stage>
             <l n="238" xml:id="l238">Più appresso, più appresso.</l>
           </sp>
-          <sp xml:id="II03-2" who="IRENE">
+          <sp who="IRENE" xml:id="II03-2">
             <speaker>IRÈNE, à côté d’Abdalla, sur le canapé.</speaker>
             <l n="239" xml:id="l239">Seigneur, de vos bontés mon âme est pénétrée ;</l>
             <l n="240" xml:id="l240">Je n’ai jamais passé de plus belle soirée.</l>
@@ -570,23 +591,23 @@
             <l n="245" xml:id="l245">Et, pour mettre le comble à des plaisirs si doux,</l>
             <l n="246" xml:id="l246">Je compte avoir l’honneur de souper avec vous.</l>
           </sp>
-          <sp xml:id="II03-3" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="II03-3">
             <speaker>ABDALLA.</speaker>
             <p>
               <s>Si, si, cara : ceneremo insieme, tête à tête, l’uno dirimpetto a l’altra ; senza schiavi ; solo con sola ; beveremo del vino greco e canteremo, e ci trastulleremo, dirimpetto l’uno a l’altra : si, si, cara, per dio Maccone.</s>
             </p>
           </sp>
-          <sp xml:id="II03-4" who="IRENE">
+          <sp who="IRENE" xml:id="II03-4">
             <speaker>IRÈNE.</speaker>
             <l n="247" xml:id="l247">Après tant de bontés aurai-je encor l’audace</l>
             <l n="248" xml:id="l248">D’implorer de mon Turc une nouvelle grâce ?</l>
           </sp>
-          <sp xml:id="II03-5" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="II03-5">
             <speaker>ABDALLA.</speaker>
             <l n="249" xml:id="l249">Parli, parli faro tutto</l>
             <l n="250" xml:id="l250">Che vorrete, presto, presto.</l>
           </sp>
-          <sp xml:id="II03-6" who="IRENE">
+          <sp who="IRENE" xml:id="II03-6">
             <speaker>IRÈNE.</speaker>
             <l n="251" xml:id="l251">Seigneur, je suis baronne et mon père autrefois</l>
             <l n="252" xml:id="l252">Dans Otrante a donné des lois.</l>
@@ -597,18 +618,18 @@
             <l n="257" xml:id="l257">Commander un quart d’heure où commandait mon père,</l>
             <l n="258" xml:id="l258">C’est le plus grand plaisir que vous me puissiez faire.</l>
           </sp>
-          <sp xml:id="II03-7" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="II03-7">
             <speaker>ABDALLA.</speaker>
-            <l n="259" xml:id="l259" part="I">Come ! nella stalla ?</l>
+            <l n="259" part="I" xml:id="l259">Come ! nella stalla ?</l>
           </sp>
-          <sp xml:id="II03-8" who="IRENE">
+          <sp who="IRENE" xml:id="II03-8">
             <speaker>IRÈNE.</speaker>
             <l part="F">Nella stalla, signor.</l>
             <l n="260" xml:id="l260">Au nom du tendre amour je vous en prie encor.</l>
             <l n="261" xml:id="l261">Un héros tel que vous, formé pour la tendresse,</l>
             <l n="262" xml:id="l262">Pourrait-il durement refuser sa maîtresse ?</l>
           </sp>
-          <sp xml:id="II03-9" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="II03-9">
             <speaker>ABDALLA.</speaker>
             <p>
               <s>La signora è matta. </s>
@@ -618,9 +639,10 @@
             <stage type="exit">Irène sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="5">
-          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf11"><person corresp="#ABDALLA"/></listPerson></head>
-          <sp xml:id="II04-1" who="ABDALLA">
+        <div2 n="5" type="scene" xml:id="II04">
+          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#ABDALLA"/></listPerson></head>
+          <sp who="ABDALLA" xml:id="II04-1">
             <speaker>ABDALLA, chante.</speaker>
             <stage type="hit">En se frappant le front.</stage>
             <l n="263" xml:id="l263">Ogni fanciulla tien là</l>
@@ -635,12 +657,14 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I. Irène, La Baron, en souquenille, une étrille à la main.<listPerson type="configuration" xml:id="conf13"><person corresp="#IRENE"/><person corresp="#LEBARON"/></listPerson></head>
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I. Irène, La Baron, en souquenille, une étrille à la main.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#IRENE"/>
+            <person corresp="#LEBARON"/></listPerson></head>
           <stage type="decor">Le théâtre représente un coin d’écurie.</stage>
-          <sp xml:id="III01-1" who="IRENE">
+          <sp who="IRENE" xml:id="III01-1">
             <speaker>IRÈNE, chante.</speaker>
             <l n="272" xml:id="l272">Oui, oui, je dois tout espérer ;</l>
             <l n="273" xml:id="l273">Tout est prêt pour vous délivrer.</l>
@@ -650,7 +674,7 @@
             <l n="277" xml:id="l277">Mais en trompant ce Turc que je fais soupirer,</l>
             <l n="278" xml:id="l278">Je suis prête à mourir de rire.</l>
           </sp>
-          <sp xml:id="III01-2" who="LEBARON">
+          <sp who="LEBARON" xml:id="III01-2">
             <speaker>LE BARON.</speaker>
             <l n="279" xml:id="l279">Lorsque vous me voyez une étrille à la main,</l>
             <l n="280" xml:id="l280">Si vous riez, c’est de moi-même.</l>
@@ -658,7 +682,7 @@
             <l n="282" xml:id="l282">J’étais indigne, hélas ! Du pouvoir souverain,</l>
             <l n="283" xml:id="l283">Et du charmant objet que j’aime.</l>
           </sp>
-          <sp xml:id="III01-3" who="IRENE">
+          <sp who="IRENE" xml:id="III01-3">
             <speaker>IRÈNE.</speaker>
             <l n="284" xml:id="l284">Non, le destin volage</l>
             <l n="285" xml:id="l285">Ne peut rien sur mon coeur.</l>
@@ -671,7 +695,7 @@
             <l n="291" xml:id="l291">Et quand mon tendre amant devient un muletier,</l>
             <l n="292" xml:id="l292">Je l’en aime encor davantage.</l>
           </sp>
-          <sp xml:id="III01-4" who="LEBARON">
+          <sp who="LEBARON" xml:id="III01-4">
             <speaker>LE BARON.</speaker>
             <l n="293" xml:id="l293">Il faut donc mériter un si parfait amour :</l>
             <l n="294" xml:id="l294">Ainsi que mon destin je change en un seul jour ;</l>
@@ -698,7 +722,7 @@
             <l n="313" xml:id="l313">Et j’espère ce soir, plus heureux qu’au matin,</l>
             <l n="314" xml:id="l314">De manger le rôti qu’on cuit pour le vilain.</l>
           </sp>
-          <sp xml:id="III01-5" who="IRENE">
+          <sp who="IRENE" xml:id="III01-5">
             <speaker>IRÈNE.</speaker>
             <l n="315" xml:id="l315">J’y cours ; vous m’y verrez : mais que votre tendresse</l>
             <l n="316" xml:id="l316">Ne s’effarouche pas si de quelque caresse</l>
@@ -711,9 +735,10 @@
             <stage type="exit">Elle sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf14"><person corresp="#LEBARON"/></listPerson></head>
-          <sp xml:id="III02-1" who="LEBARON">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#LEBARON"/></listPerson></head>
+          <sp who="LEBARON" xml:id="III02-1">
             <speaker>LE BARON, à ses vassaux.</speaker>
             <l n="323" xml:id="l323">Allons donc, mes amis, hâtons-nous de nous rendre</l>
             <l n="324" xml:id="l324">Au souper où l’Amour avec Mars doit m’attendre.</l>
@@ -725,10 +750,13 @@
             <l n="330" xml:id="l330">De la gloire bientôt ils seront les chemins.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Abdalla, Irène, seuls à table, sans domestiques.<listPerson type="configuration" xml:id="conf15"><person corresp="#IRENE"/><person corresp="#ABDALLA"/><person corresp="#IRENE,ABDALLA"/></listPerson></head>
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Abdalla, Irène, seuls à table, sans domestiques.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#IRENE"/>
+            <person corresp="#ABDALLA"/>
+            <person corresp="#IRENE,ABDALLA"/></listPerson></head>
           <stage type="decor">Le théâtre représente une jolie salle à manger.</stage>
-          <sp xml:id="III03-1" who="IRENE">
+          <sp who="IRENE" xml:id="III03-1">
             <speaker>IRÈNE, un verre en main, chante.</speaker>
             <l n="331" xml:id="l331">Ah quel plaisir</l>
             <l n="332" xml:id="l332">De boire avec son corsaire !</l>
@@ -738,7 +766,7 @@
             <l n="336" xml:id="l336">Ah ! Que tu verses tendrement</l>
             <l n="337" xml:id="l337">Tous les feux d’amour dans mon verre !</l>
           </sp>
-          <sp xml:id="III03-2" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="III03-2">
             <speaker>ABDALLA.</speaker>
             <l n="338" xml:id="l338">Si, si, brindisi a te,</l>
             <l n="339" xml:id="l339">Amate, bevete, ridete.</l>
@@ -752,7 +780,7 @@
             <l n="347" xml:id="l347">Al par del vino spumante.</l>
             <l n="348" xml:id="l348">Si, si, brindisi a te,</l>
           </sp>
-          <sp xml:id="III03-3" who="IRENE,ABDALLA">
+          <sp who="IRENE,ABDALLA" xml:id="III03-3">
             <speaker>Tous deux ensemble.</speaker>
             <l n="349" xml:id="l349">Si, si, brindisi a te,</l>
             <l n="350" xml:id="l350">Amate, bevete, ridete.</l>
@@ -761,27 +789,30 @@
             <l n="352" xml:id="l352">Si, si, brindisi a te, etc.</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="1">
-          <head>SCÈNE I.. Les Précédents ; Le Baron, armé, et ses Suivants, entrent de tous côtés dans la chambre.<listPerson type="configuration" xml:id="conf16"><person corresp="#LEBARON"/><person corresp="#ABDALLA"/><person corresp="#LECHOEUR"/></listPerson></head>
-          <sp xml:id="III04-1" who="LEBARON">
+        <div2 n="1" type="scene" xml:id="III04">
+          <head>SCÈNE I.. Les Précédents ; Le Baron, armé, et ses Suivants, entrent de tous côtés dans la chambre.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#LEBARON"/>
+            <person corresp="#ABDALLA"/>
+            <person corresp="#LECHOEUR"/></listPerson></head>
+          <sp who="LEBARON" xml:id="III04-1">
             <speaker>LE BARON.</speaker>
             <l n="353" xml:id="l353">Corsaire, il faut ici danser une autre danse.</l>
           </sp>
-          <sp xml:id="III04-2" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="III04-2">
             <speaker>ABDALLA, cherchant son sabre.</speaker>
-            <l n="354" xml:id="l354" part="I">Che veggo ! Che veggo !</l>
+            <l n="354" part="I" xml:id="l354">Che veggo ! Che veggo !</l>
           </sp>
-          <sp xml:id="III04-3" who="LEBARON">
+          <sp who="LEBARON" xml:id="III04-3">
             <speaker>LE BARON.</speaker>
             <l part="F">Ton maître, et la vengeance.</l>
             <l n="355" xml:id="l355">Il est juste, soldats, qu’on l’enchaîne à son tour : </l>
             <l n="356" xml:id="l356">Ainsi tout à son terme, et tout passe en un jour.</l>
           </sp>
-          <sp xml:id="III04-4" who="ABDALLA">
+          <sp who="ABDALLA" xml:id="III04-4">
             <speaker>ABDALLA.</speaker>
-            <l n="357" xml:id="l357" part="I">Levanti, venite !</l>
+            <l n="357" part="I" xml:id="l357">Levanti, venite !</l>
           </sp>
-          <sp xml:id="III04-5" who="LEBARON">
+          <sp who="LEBARON" xml:id="III04-5">
             <speaker>LE BARON.</speaker>
             <l part="F">Tes Levantis, corsaire,</l>
             <l n="358" xml:id="l358">Sont tous mis à la chaîne, et s’en vont en galère.</l>
@@ -797,7 +828,7 @@
             <l n="367" xml:id="l367">Peuples heureux, dont elle est souveraine,</l>
             <l n="368" xml:id="l368">Répétez avec moi, contents de la servir :</l>
           </sp>
-          <sp xml:id="III04-6" who="LECHOEUR">
+          <sp who="LECHOEUR" xml:id="III04-6">
             <speaker>LE CHOEUR.</speaker>
             <l n="369" xml:id="l369">Je jure. je jure d’obéir</l>
             <l n="370" xml:id="l370">Pour jamais à la belle Irène.</l>

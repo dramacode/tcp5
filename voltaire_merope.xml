@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Mérope</title>
         <title type="sub">, tragédie</title>
-        <author born="1694" born_location="Paris" death="1778" death_location="Paris" academie="1746">
+        <author academie="1746" born="1694" born_location="Paris" death="1778" death_location="Paris">
           <surname>Voltaire</surname>
         </author>
       </titleStmt>
@@ -33,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -46,36 +47,38 @@
           <titlePart type="sub">TRAGÉDIE</titlePart>
         </docTitle>
         <docDate value="1744">M. DC. XLIV. Avec Approbation et Privilège</docDate>
-        <docAuthor id="VOLTAIRE" bio="voltaire"/>
+        <docAuthor bio="voltaire" id="VOLTAIRE"/>
         <docImprint>
           <privilege id="17**-**-**">***</privilege>
           <imprimeur id="PRAULT">À PARIS, Chez PRAULT Fils, libraire, Quai de Conti, vis à vis de la descente du Pont-Neuf, à la Charité.</imprimeur>
           <acheveImprime id="17**-**-**"/>
         </docImprint>
         <performance>
-        <premiere date="1743-02-20" location="Théâtre de la rue des Fossés Saint-Germain">Représentée pour la première fois le 20 février 1743 au Théâtre de la rue des Fossés Saint-Germain par la Comédie française.</premiere>
-      </performance>
+          <premiere date="1743-02-20" location="Théâtre de la rue des Fossés Saint-Germain">Représentée pour la première fois le 20 février 1743 au Théâtre de la rue des Fossés Saint-Germain par la Comédie française.</premiere>
+        </performance>
       </titlePage>
       <div xml:id="castList">
         <castList>
           <head>ACTEURS</head>
-          <castItem><role xml:id="MEROPE" rend="female">MÉROPE</role>, veuve de Cresphonte, roi de Messène.</castItem>
-          <castItem><role xml:id="EGISTHE" rend="male">ÉGISTHE</role>, fils de Mérope.</castItem>
-          <castItem><role xml:id="POLYPHONTE" rend="male">POLYPHONTE</role>, tyran de Messène.</castItem>
-          <castItem><role xml:id="NARBAS" rend="veteran">NARBAS</role>, vieillard.</castItem>
-          <castItem><role xml:id="EURYCLES" rend="male">EURYCLES</role>, favori de Mérope.</castItem>
-          <castItem><role xml:id="EROX" rend="male">ÉROX</role>, favori de Polyphonte.</castItem>
-          <castItem><role xml:id="ISMENIE" rend="female">ISMÉNIE</role>, confidente de Mérope.</castItem>
+          <castItem><role rend="female" xml:id="MEROPE">MÉROPE</role>, veuve de Cresphonte, roi de Messène.</castItem>
+          <castItem><role rend="male" xml:id="EGISTHE">ÉGISTHE</role>, fils de Mérope.</castItem>
+          <castItem><role rend="male" xml:id="POLYPHONTE">POLYPHONTE</role>, tyran de Messène.</castItem>
+          <castItem><role rend="veteran" xml:id="NARBAS">NARBAS</role>, vieillard.</castItem>
+          <castItem><role rend="male" xml:id="EURYCLES">EURYCLES</role>, favori de Mérope.</castItem>
+          <castItem><role rend="male" xml:id="EROX">ÉROX</role>, favori de Polyphonte.</castItem>
+          <castItem><role rend="female" xml:id="ISMENIE">ISMÉNIE</role>, confidente de Mérope.</castItem>
         </castList>
-        <set location="Messène" country="Grèce" periode="Temps mythologiques" link="">La scène est à Messène, dans le palais de Mérope.</set>
+        <set country="Grèce" link="" location="Messène" periode="Temps mythologiques">La scène est à Messène, dans le palais de Mérope.</set>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE I. Mérope, Isménie.<listPerson type="configuration" xml:id="conf1"><person corresp="#ISMENIE"/><person corresp="#MEROPE"/></listPerson></head>
-          <sp xml:id="I01-1" who="ISMENIE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE I. Mérope, Isménie.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#ISMENIE"/>
+            <person corresp="#MEROPE"/></listPerson></head>
+          <sp who="ISMENIE" xml:id="I01-1">
             <speaker>ISMÉNIE</speaker>
             <l n="1" xml:id="l1">Grande reine, écartez ces horribles images ;</l>
             <l n="2" xml:id="l2">Goûtez des jours sereins, nés du sein des orages.</l>
@@ -97,11 +100,11 @@
             <l n="18" xml:id="l18">Font encor plus auguste et nous rendent plus chère ;</l>
             <l n="19" xml:id="l19">Vous, pour qui tous les coeurs en secret réunis...</l>
           </sp>
-          <sp xml:id="I01-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="I01-2">
             <speaker>MÉROPE</speaker>
             <l n="20" xml:id="l20">Quoi ! Narbas ne vient point ! Reverrai-je mon fils ?</l>
           </sp>
-          <sp xml:id="I01-3" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="I01-3">
             <speaker>ISMÉNIE</speaker>
             <l n="21" xml:id="l21">Vous pouvez l’espérer : déjà d’un pas rapide</l>
             <l n="22" xml:id="l22">Vos esclaves en foule ont couru dans l’Élide ;</l>
@@ -109,7 +112,7 @@
             <l n="24" xml:id="l24">Vous avez mis sans doute en de fidèles mains</l>
             <l n="25" xml:id="l25">Ce dépôt si sacré, l’objet de tant d’alarmes.</l>
           </sp>
-          <sp xml:id="I01-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="I01-4">
             <speaker>MÉROPE</speaker>
             <l n="26" xml:id="l26">Me rendrez-vous mon fils, dieux témoins de mes larmes ?</l>
             <l n="27" xml:id="l27">Égisthe est-il vivant ? Avez-vous conservé</l>
@@ -120,23 +123,23 @@
             <l n="32" xml:id="l32">Du plus juste des rois, et du plus grand des dieux,</l>
             <l n="33" xml:id="l33">L’image de l’époux dont j’adore la cendre ?</l>
           </sp>
-          <sp xml:id="I01-5" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="I01-5">
             <speaker>ISMÉNIE</speaker>
             <l n="34" xml:id="l34">Mais quoi ! Cet intérêt et si juste et si tendre</l>
             <l n="35" xml:id="l35">De tout autre intérêt peut-il vous détourner ?</l>
           </sp>
-          <sp xml:id="I01-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="I01-6">
             <speaker>MÉROPE</speaker>
             <l n="36" xml:id="l36">Je suis mère, et tu peux encor t’en étonner ?</l>
           </sp>
-          <sp xml:id="I01-7" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="I01-7">
             <speaker>ISMÉNIE</speaker>
             <l n="37" xml:id="l37">Du sang dont vous sortez l’auguste caractère</l>
             <l n="38" xml:id="l38">Sera-t-il effacé par cet amour de mère ?</l>
             <l n="39" xml:id="l39">Son enfance était chère à vos yeux éplorés ;</l>
             <l n="40" xml:id="l40">Mais vous avez peu vu ce fils que vous pleurez.</l>
           </sp>
-          <sp xml:id="I01-8" who="MEROPE">
+          <sp who="MEROPE" xml:id="I01-8">
             <speaker>MÉROPE</speaker>
             <l n="41" xml:id="l41">Mon coeur a vu toujours ce fils que je regrette ;</l>
             <l n="42" xml:id="l42">Ses périls nourrissaient ma tendresse inquiète ;</l>
@@ -149,12 +152,12 @@
             <l n="49" xml:id="l49">En butte à tous les maux, sa vertu les surmonte :</l>
             <l n="50" xml:id="l50">Espérez tout de lui, mais craignez Polyphonte.</l>
           </sp>
-          <sp xml:id="I01-9" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="I01-9">
             <speaker>ISMÉNIE</speaker>
             <l n="51" xml:id="l51">De Polyphonte au moins prévenez les desseins ;</l>
             <l n="52" xml:id="l52">Laissez passer l’empire en vos augustes mains.</l>
           </sp>
-          <sp xml:id="I01-10" who="MEROPE">
+          <sp who="MEROPE" xml:id="I01-10">
             <speaker>MÉROPE</speaker>
             <l n="53" xml:id="l53">L’empire est à mon fils. Périsse la marâtre,</l>
             <l n="54" xml:id="l54">Périsse le coeur dur, de soi-même idolâtre,</l>
@@ -188,13 +191,16 @@
             <l n="82" xml:id="l82">Qu’il règne au lieu de moi : voilà ma récompense.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Mérope, Isménie, Euryclès.<listPerson type="configuration" xml:id="conf2"><person corresp="#MEROPE"/><person corresp="#EURYCLES"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="I02-1" who="MEROPE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Mérope, Isménie, Euryclès.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#MEROPE"/>
+            <person corresp="#EURYCLES"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="MEROPE" xml:id="I02-1">
             <speaker>MÉROPE</speaker>
-            <l n="83" xml:id="l83" part="I">Eh bien ! Narbas : mon fils ?</l>
+            <l n="83" part="I" xml:id="l83">Eh bien ! Narbas : mon fils ?</l>
           </sp>
-          <sp xml:id="I02-2" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="I02-2">
             <speaker>EURYCLÈS</speaker>
             <l part="F">Vous me voyez confus ;</l>
             <l n="84" xml:id="l84">Tant de pas, tant de soins, ont été superflus.</l>
@@ -203,17 +209,17 @@
             <l n="87" xml:id="l87">Narbas est inconnu ; le sort dans ces climats</l>
             <l n="88" xml:id="l88">Dérobe à tous les yeux la trace de ses pas.</l>
           </sp>
-          <sp xml:id="I02-3" who="MEROPE">
+          <sp who="MEROPE" xml:id="I02-3">
             <speaker>MÉROPE</speaker>
             <l n="89" xml:id="l89">Hélas ! Narbas n’est plus ; j’ai tout perdu sans doute.</l>
           </sp>
-          <sp xml:id="I02-4" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="I02-4">
             <speaker>ISMÉNIE</speaker>
             <l n="90" xml:id="l90">Vous croyez tous les maux que votre âme redoute ;</l>
             <l n="91" xml:id="l91">Peut-être, sur les bruits de cette heureuse paix,</l>
             <l n="92" xml:id="l92">Narbas ramène un fils si cher à nos souhaits.</l>
           </sp>
-          <sp xml:id="I02-5" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="I02-5">
             <speaker>EURYCLÈS</speaker>
             <l n="93" xml:id="l93">Peut-être sa tendresse, éclairée et discrète,</l>
             <l n="94" xml:id="l94">A caché son voyage ainsi que sa retraite :</l>
@@ -224,11 +230,11 @@
             <l n="99" xml:id="l99">Et j’ai sur ces chemins de carnage abreuvés</l>
             <l n="100" xml:id="l100">Des yeux toujours ouverts, et des bras éprouvés.</l>
           </sp>
-          <sp xml:id="I02-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="I02-6">
             <speaker>MÉROPE</speaker>
             <l n="101" xml:id="l101">Dans ta fidélité j’ai mis ma confiance.</l>
           </sp>
-          <sp xml:id="I02-7" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="I02-7">
             <speaker>EURYCLÈS</speaker>
             <l n="102" xml:id="l102">Hélas ! Que peut pour vous ma triste vigilance ?</l>
             <l n="103" xml:id="l103">On va donner son trône : en vain ma faible voix</l>
@@ -236,7 +242,7 @@
             <l n="105" xml:id="l105">L’injustice triomphe, et ce peuple, à sa honte,</l>
             <l n="106" xml:id="l106">Au mépris de nos lois, penche vers Polyphonte.</l>
           </sp>
-          <sp xml:id="I02-8" who="MEROPE">
+          <sp who="MEROPE" xml:id="I02-8">
             <speaker>MÉROPE</speaker>
             <l n="107" xml:id="l107">Et le sort jusque-là pourrait nous avilir !</l>
             <l n="108" xml:id="l108">Mon fils dans ses états reviendrait pour servir !</l>
@@ -246,13 +252,13 @@
             <l n="112" xml:id="l112">Insensibles sujets, a donc péri pour vous ?</l>
             <l n="113" xml:id="l113">Vous avez oublié ses bienfaits et sa gloire !</l>
           </sp>
-          <sp xml:id="I02-9" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="I02-9">
             <speaker>EURYCLÈS</speaker>
             <l n="114" xml:id="l114">Le nom de votre époux est cher à leur mémoire :</l>
             <l n="115" xml:id="l115">On regrette Cresphonte, on le pleure, on vous plaint ;</l>
             <l n="116" xml:id="l116">Mais la force l’emporte, et Polyphonte est craint.</l>
           </sp>
-          <sp xml:id="I02-10" who="MEROPE">
+          <sp who="MEROPE" xml:id="I02-10">
             <speaker>MÉROPE</speaker>
             <l n="117" xml:id="l117">Ainsi donc par mon peuple en tout temps accablée,</l>
             <l n="118" xml:id="l118">Je verrai la justice à la brigue immolée ;</l>
@@ -263,7 +269,7 @@
             <l n="123" xml:id="l123">Flattons leur espérance, excitons leur amour.</l>
             <l n="124" xml:id="l124">Parlez, et de leur maître annoncez le retour.</l>
           </sp>
-          <sp xml:id="I02-11" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="I02-11">
             <speaker>EURYCLÈS</speaker>
             <l n="125" xml:id="l125">Je n’ai que trop parlé : Polyphonte en alarmes</l>
             <l n="126" xml:id="l126">Craint déjà votre fils, et redoute vos larmes ;</l>
@@ -278,20 +284,23 @@
             <l n="135" xml:id="l135">Ceux dont la main cruelle égorgea votre époux</l>
             <l n="136" xml:id="l136">Peut-être ne sont pas plus à craindre pour vous.</l>
           </sp>
-          <sp xml:id="I02-12" who="MEROPE">
+          <sp who="MEROPE" xml:id="I02-12">
             <speaker>MÉROPE</speaker>
             <l n="137" xml:id="l137">Quoi ! Partout sous mes pas le sort creuse un abîme ?</l>
             <l n="138" xml:id="l138">Je vois autour de moi le danger et le crime !</l>
             <l n="139" xml:id="l139">Polyphonte, un sujet de qui les attentats...</l>
           </sp>
-          <sp xml:id="I02-13" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="I02-13">
             <speaker>EURYCLÈS</speaker>
             <l n="140" xml:id="l140">Dissimulez, madame, il porte ici ses pas.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Mérope, Polyphonte, Érox.<listPerson type="configuration" xml:id="conf3"><person corresp="#POLYPHONTE"/><person corresp="#MEROPE"/><person corresp="#EROX"/></listPerson></head>
-          <sp xml:id="I03-1" who="POLYPHONTE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Mérope, Polyphonte, Érox.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#POLYPHONTE"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#EROX"/></listPerson></head>
+          <sp who="POLYPHONTE" xml:id="I03-1">
             <speaker>POLYPHONTE</speaker>
             <l n="141" xml:id="l141">Madame, il faut enfin que mon coeur se déploie.</l>
             <l n="142" xml:id="l142">Ce bras qui vous servit m’ouvre au trône une voie ;</l>
@@ -318,7 +327,7 @@
             <l n="163" xml:id="l163">Mais l’état veut un maître, et vous devez songer</l>
             <l n="164" xml:id="l164">Que pour garder vos droits il les faut partager.</l>
           </sp>
-          <sp xml:id="I03-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="I03-2">
             <speaker>MÉROPE</speaker>
             <l n="165" xml:id="l165">Le ciel, qui m’accabla du poids de sa disgrâce,</l>
             <l n="166" xml:id="l166">Ne m’a point préparée à ce comble d’audace.</l>
@@ -329,7 +338,7 @@
             <l n="171" xml:id="l171">Je mettrais en vos mains sa mère et son état,</l>
             <l n="172" xml:id="l172">Et le bandeau des rois sur le front d’un soldat ?</l>
           </sp>
-          <sp xml:id="I03-3" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="I03-3">
             <speaker>POLYPHONTE</speaker>
             <l n="173" xml:id="l173">Un soldat tel que moi peut justement prétendre</l>
             <l n="174" xml:id="l174">À gouverner l’état quand il l’a su défendre.</l>
@@ -342,7 +351,7 @@
             <l n="181" xml:id="l181">Et je n’offre en un mot à votre âme rebelle</l>
             <l n="182" xml:id="l182">Que la moitié d’un trône où mon parti m’appelle.</l>
           </sp>
-          <sp xml:id="I03-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="I03-4">
             <speaker>MÉROPE</speaker>
             <l n="183" xml:id="l183">Un parti ! Vous, barbare, au mépris de nos lois !</l>
             <l n="184" xml:id="l184">Est-il d’autre parti que celui de vos rois ?</l>
@@ -352,7 +361,7 @@
             <l n="188" xml:id="l188">À sa veuve éperdue, à son malheureux fils,</l>
             <l n="189" xml:id="l189">À ces dieux dont il sort, et dont il tient l’empire ?</l>
           </sp>
-          <sp xml:id="I03-5" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="I03-5">
             <speaker>POLYPHONTE</speaker>
             <l n="190" xml:id="l190">Il est encor douteux si votre fils respire.</l>
             <l n="191" xml:id="l191">Mais quand du sein des morts il viendrait en ces lieux</l>
@@ -388,7 +397,7 @@
             <l n="221" xml:id="l221">En un mot, c’est à moi de défendre la mère,</l>
             <l n="222" xml:id="l222">Et de servir au fils et d’exemple et de père.</l>
           </sp>
-          <sp xml:id="I03-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="I03-6">
             <speaker>MÉROPE</speaker>
             <l n="223" xml:id="l223">N’affectez point ici des soins si généreux,</l>
             <l n="224" xml:id="l224">Et cessez d’insulter à mon fils malheureux.</l>
@@ -406,16 +415,18 @@
             <l n="236" xml:id="l236">Devenir la complice et le prix des forfaits.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Polyphonte, Érox.<listPerson type="configuration" xml:id="conf4"><person corresp="#EROX"/><person corresp="#POLYPHONTE"/></listPerson></head>
-          <sp xml:id="I04-1" who="EROX">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Polyphonte, Érox.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#EROX"/>
+            <person corresp="#POLYPHONTE"/></listPerson></head>
+          <sp who="EROX" xml:id="I04-1">
             <speaker>ÉROX</speaker>
             <l n="237" xml:id="l237">Seigneur, attendez-vous que son âme fléchisse ?</l>
             <l n="238" xml:id="l238">Ne pouvez-vous régner qu’au gré de son caprice ?</l>
             <l n="239" xml:id="l239">Vous avez su du trône aplanir le chemin,</l>
             <l n="240" xml:id="l240">Et pour vous y placer vous attendez sa main !</l>
           </sp>
-          <sp xml:id="I04-2" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="I04-2">
             <speaker>POLYPHONTE</speaker>
             <l n="241" xml:id="l241">Entre ce trône et moi je vois un précipice ;</l>
             <l n="242" xml:id="l242">Il faut que ma fortune y tombe ou le franchisse.</l>
@@ -452,7 +463,7 @@
             <l n="273" xml:id="l273">Et des dieux quelquefois la longue patience</l>
             <l n="274" xml:id="l274">Fait sur nous à pas lents descendre la vengeance.</l>
           </sp>
-          <sp xml:id="I04-3" who="EROX">
+          <sp who="EROX" xml:id="I04-3">
             <speaker>ÉROX</speaker>
             <l n="275" xml:id="l275">Ah ! Livrez-vous sans crainte à vos heureux destins.</l>
             <l n="276" xml:id="l276">La prudence est le dieu qui veille à vos desseins.</l>
@@ -461,11 +472,11 @@
             <l n="279" xml:id="l279">Si Narbas reparaît, si jamais à leurs yeux</l>
             <l n="280" xml:id="l280">Narbas ramène Égisthe, ils périssent tous deux.</l>
           </sp>
-          <sp xml:id="I04-4" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="I04-4">
             <speaker>POLYPHONTE</speaker>
             <l n="281" xml:id="l281">Mais me réponds-tu bien de leur aveugle zèle ?</l>
           </sp>
-          <sp xml:id="I04-5" who="EROX">
+          <sp who="EROX" xml:id="I04-5">
             <speaker>ÉROX</speaker>
             <l n="282" xml:id="l282">Vous les avez guidés par une main fidèle :</l>
             <l n="283" xml:id="l283">Aucun d’eux ne connaît ce sang qui doit couler,</l>
@@ -475,7 +486,7 @@
             <l n="287" xml:id="l287">L’autre, comme un esclave, et comme un meurtrier</l>
             <l n="288" xml:id="l288">Qu’à la rigueur des lois il faut sacrifier.</l>
           </sp>
-          <sp xml:id="I04-6" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="I04-6">
             <speaker>POLYPHONTE</speaker>
             <l n="289" xml:id="l289">Eh bien ! Encor ce crime ! Il m’est trop nécessaire.</l>
             <l n="290" xml:id="l290">Mais en perdant le fils, j’ai besoin de la mère ;</l>
@@ -500,29 +511,32 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE I. Mérope, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf6"><person corresp="#MEROPE"/><person corresp="#EURYCLES"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="II01-1" who="MEROPE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE I. Mérope, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#MEROPE"/>
+            <person corresp="#EURYCLES"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="MEROPE" xml:id="II01-1">
             <speaker>MÉROPE</speaker>
             <l n="309" xml:id="l309">Quoi ! L’univers se tait sur le destin d’Égisthe !</l>
             <l n="310" xml:id="l310">Je n’entends que trop bien ce silence si triste.</l>
             <l n="311" xml:id="l311">Aux frontières d’Élide enfin n’a-t-on rien su ?</l>
           </sp>
-          <sp xml:id="II01-2" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-2">
             <speaker>EURYCLÈS</speaker>
             <l n="312" xml:id="l312">On n’a rien découvert ; et tout ce qu’on a vu,</l>
             <l n="313" xml:id="l313">C’est un jeune étranger de qui la main sanglante</l>
             <l n="314" xml:id="l314">D’un meurtre encor récent paraissait dégoûtante ;</l>
             <l n="315" xml:id="l315">Enchaîné par mon ordre, on l’amène au palais.</l>
           </sp>
-          <sp xml:id="II01-3" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-3">
             <speaker>MÉROPE</speaker>
             <l n="316" xml:id="l316">Un meurtre ! Un inconnu ! Qu’a-t-il fait, Euryclès ?</l>
             <l n="317" xml:id="l317">Quel sang a-t-il versé ? Vous me glacez de crainte.</l>
           </sp>
-          <sp xml:id="II01-4" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-4">
             <speaker>EURYCLÈS</speaker>
             <l n="318" xml:id="l318">Triste effet de l’amour dont votre âme est atteinte !</l>
             <l n="319" xml:id="l319">Le moindre événement vous porte un coup mortel ;</l>
@@ -537,17 +551,17 @@
             <l n="328" xml:id="l328">Le sang des citoyens l’un par l’autre égorgés.</l>
             <l n="329" xml:id="l329">Écartez des terreurs dont le poids vous afflige.</l>
           </sp>
-          <sp xml:id="II01-5" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-5">
             <speaker>MÉROPE</speaker>
             <l n="330" xml:id="l330">Quel est cet inconnu ? Répondez-moi, vous dis-je.</l>
           </sp>
-          <sp xml:id="II01-6" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-6">
             <speaker>EURYCLÈS</speaker>
             <l n="331" xml:id="l331">C’est un de ces mortels du sort abandonnés,</l>
             <l n="332" xml:id="l332">Nourris dans la bassesse, aux travaux condamnés ;</l>
             <l n="333" xml:id="l333">Un malheureux sans nom, si l’on croit l’apparence.</l>
           </sp>
-          <sp xml:id="II01-7" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-7">
             <speaker>MÉROPE</speaker>
             <l n="334" xml:id="l334">N’importe, quel qu’il soit, qu’il vienne en ma présence ;</l>
             <l n="335" xml:id="l335">Le témoin le plus vil et les moindres clartés</l>
@@ -557,13 +571,13 @@
             <l n="339" xml:id="l339">Mon coeur a tout à craindre, et rien à négliger.</l>
             <l n="340" xml:id="l340">Qu’il vienne, je le veux, je veux l’interroger.</l>
           </sp>
-          <sp xml:id="II01-8" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-8">
             <speaker>EURYCLÈS</speaker>
             <stage type="toward">À Isménie.</stage>
             <l n="341" xml:id="l341">Vous serez obéie. Allez, et qu’on l’amène ;</l>
             <l n="342" xml:id="l342">Qu’il paraisse à l’instant aux regards de la reine.</l>
           </sp>
-          <sp xml:id="II01-9" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-9">
             <speaker>MÉROPE</speaker>
             <l n="343" xml:id="l343">Je sens que je vais prendre un inutile soin.</l>
             <l n="344" xml:id="l344">Mon désespoir m’aveugle ; il m’emporte trop loin :</l>
@@ -572,7 +586,7 @@
             <l n="347" xml:id="l347">Polyphonte, abusant de mon triste destin,</l>
             <l n="348" xml:id="l348">Ose enfin s’oublier jusqu’à m’offrir sa main.</l>
           </sp>
-          <sp xml:id="II01-10" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-10">
             <speaker>EURYCLÈS</speaker>
             <l n="349" xml:id="l349">Vos malheurs sont plus grands que vous ne pouvez croire.</l>
             <l n="350" xml:id="l350">Je sais que cet hymen offense votre gloire ;</l>
@@ -581,15 +595,15 @@
             <l n="353" xml:id="l353">C’est un cruel parti ; mais c’est le seul peut-être</l>
             <l n="354" xml:id="l354">Qui pourrait conserver le trône à son vrai maître.</l>
             <l n="355" xml:id="l355">Tel est le sentiment des chefs et des soldats ;</l>
-            <l n="356" xml:id="l356" part="I">Et l’on croit...</l>
+            <l n="356" part="I" xml:id="l356">Et l’on croit...</l>
           </sp>
-          <sp xml:id="II01-11" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-11">
             <speaker>MÉROPE</speaker>
             <l part="F">Non ; mon fils ne le souffrirait pas ;</l>
             <l n="357" xml:id="l357">L’exil, où son enfance a langui condamnée,</l>
             <l n="358" xml:id="l358">Lui serait moins affreux que ce lâche hyménée.</l>
           </sp>
-          <sp xml:id="II01-12" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-12">
             <speaker>EURYCLÈS</speaker>
             <l n="359" xml:id="l359">Il le condamnerait, si, paisible en son rang,</l>
             <l n="360" xml:id="l360">Il n’en croyait ici que les droits de son sang ;</l>
@@ -600,99 +614,103 @@
             <l n="365" xml:id="l365">Il verrait que jamais sa malheureuse mère</l>
             <l n="366" xml:id="l366">Ne lui donna d’amour une marque plus chère.</l>
           </sp>
-          <sp xml:id="II01-13" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-13">
             <speaker>MÉROPE</speaker>
-            <l n="367" xml:id="l367" part="I">Ah ! Que me dites-vous ?</l>
+            <l n="367" part="I" xml:id="l367">Ah ! Que me dites-vous ?</l>
           </sp>
-          <sp xml:id="II01-14" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-14">
             <speaker>EURYCLÈS</speaker>
             <l part="F">De dures vérités,</l>
             <l n="368" xml:id="l368">Que m’arrachent mon zèle et vos calamités.</l>
           </sp>
-          <sp xml:id="II01-15" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-15">
             <speaker>MÉROPE</speaker>
             <l n="369" xml:id="l369">Quoi ! Vous me demandez que l’intérêt surmonte</l>
             <l n="370" xml:id="l370">Cette invincible horreur que j’ai pour Polyphonte,</l>
             <l n="371" xml:id="l371">Vous, qui me l’avez peint de si noires couleurs !</l>
           </sp>
-          <sp xml:id="II01-16" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-16">
             <speaker>EURYCLÈS</speaker>
             <l n="372" xml:id="l372">Je l’ai peint dangereux, je connais ses fureurs ;</l>
             <l n="373" xml:id="l373">Mais il est tout-puissant ; mais rien ne lui résiste :</l>
             <l n="374" xml:id="l374">Il est sans héritier, et vous aimez Égisthe.</l>
           </sp>
-          <sp xml:id="II01-17" who="MEROPE">
+          <sp who="MEROPE" xml:id="II01-17">
             <speaker>MÉROPE</speaker>
             <l n="375" xml:id="l375">Ah ! C’est ce même amour, à mon coeur précieux,</l>
             <l n="376" xml:id="l376">Qui me rend Polyphonte encor plus odieux.</l>
             <l n="377" xml:id="l377">Que parlez-vous toujours et d’hymen et d’empire ?</l>
             <l n="378" xml:id="l378">Parlez-moi de mon fils, dites-moi s’il respire.</l>
-            <l n="379" xml:id="l379" part="I">Cruel ! Apprenez-moi...</l>
+            <l n="379" part="I" xml:id="l379">Cruel ! Apprenez-moi...</l>
           </sp>
-          <sp xml:id="II01-18" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II01-18">
             <speaker>EURYCLÈS</speaker>
             <l part="F">Voici cet étranger</l>
             <l n="380" xml:id="l380">Que vos tristes soupçons brûlaient d’interroger.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Mérope, Euryclès, Égisthe, enchaîné , Isménie, gardes.<listPerson type="configuration" xml:id="conf7"><person corresp="#EGISTHE"/><person corresp="#ISMENIE"/><person corresp="#MEROPE"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="II02-1" who="EGISTHE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Mérope, Euryclès, Égisthe, enchaîné , Isménie, gardes.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#EGISTHE"/>
+            <person corresp="#ISMENIE"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="EGISTHE" xml:id="II02-1">
             <speaker>ÉGISTHE, dans le fond du théâtre, à Isménie.</speaker>
             <l n="381" xml:id="l381">Est-ce là cette reine auguste et malheureuse,</l>
             <l n="382" xml:id="l382">Celle de qui la gloire, et l’infortune affreuse</l>
             <l n="383" xml:id="l383">Retentit jusqu’à moi dans le fond des déserts ?</l>
           </sp>
-          <sp xml:id="II02-2" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="II02-2">
             <speaker>ISMÉNIE</speaker>
-            <l n="384" xml:id="l384" part="I">Rassurez-vous, c’est elle.</l>
+            <l n="384" part="I" xml:id="l384">Rassurez-vous, c’est elle.</l>
             <stage type="exit">Elle sort.</stage>
           </sp>
-          <sp xml:id="II02-3" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-3">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Ô dieu de l’univers !</l>
             <l n="385" xml:id="l385">Dieu, qui formas ses traits, veille sur ton image !</l>
             <l n="386" xml:id="l386">La vertu sur le trône est ton plus digne ouvrage.</l>
           </sp>
-          <sp xml:id="II02-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-4">
             <speaker>MÉROPE</speaker>
             <l n="387" xml:id="l387">C’est là ce meurtrier ! Se peut-il qu’un mortel</l>
             <l n="388" xml:id="l388">Sous des dehors si doux ait un coeur si cruel ?</l>
             <l n="389" xml:id="l389">Approche, malheureux, et dissipe tes craintes.</l>
             <l n="390" xml:id="l390">Réponds-moi : de quel sang tes mains sont-elles teintes ?</l>
           </sp>
-          <sp xml:id="II02-5" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-5">
             <speaker>ÉGISTHE</speaker>
             <l n="391" xml:id="l391">Ô reine, pardonnez : le trouble, le respect,</l>
             <l n="392" xml:id="l392">Glacent ma triste voix tremblante à votre aspect.</l>
             <stage type="toward">À Euryclès.</stage>
             <l n="393" xml:id="l393">Mon âme, en sa présence, étonnée, attendrie...</l>
           </sp>
-          <sp xml:id="II02-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-6">
             <speaker>MÉROPE</speaker>
             <l n="394" xml:id="l394">Parle. De qui ton bras a-t-il tranché la vie ?</l>
           </sp>
-          <sp xml:id="II02-7" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-7">
             <speaker>ÉGISTHE</speaker>
             <l n="395" xml:id="l395">D’un jeune audacieux, que les arrêts du sort</l>
             <l n="396" xml:id="l396">Et ses propres fureurs ont conduit à la mort.</l>
           </sp>
-          <sp xml:id="II02-8" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-8">
             <speaker>MÉROPE</speaker>
             <l n="397" xml:id="l397">D’un jeune homme ! Mon sang s’est glacé dans mes veines.</l>
-            <l n="398" xml:id="l398" part="I">Ah ! ... t’était-il connu ?</l>
+            <l n="398" part="I" xml:id="l398">Ah ! ... t’était-il connu ?</l>
           </sp>
-          <sp xml:id="II02-9" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-9">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Non : les champs de Messènes,</l>
             <l n="399" xml:id="l399">Ses murs, leurs citoyens, tout est nouveau pour moi.</l>
           </sp>
-          <sp xml:id="II02-10" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-10">
             <speaker>MÉROPE</speaker>
             <l n="400" xml:id="l400">Quoi ! Ce jeune inconnu s’est armé contre toi ?</l>
             <l n="401" xml:id="l401">Tu n’aurais employé qu’une juste défense ?</l>
           </sp>
-          <sp xml:id="II02-11" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-11">
             <speaker>ÉGISTHE</speaker>
             <l n="402" xml:id="l402">J’en atteste le ciel ; il sait mon innocence.</l>
             <l n="403" xml:id="l403">Aux bords de la Pamise, en un temple sacré,</l>
@@ -719,11 +737,11 @@
             <l n="424" xml:id="l424">Je fuyais ; vos soldats m’ont bientôt arrêté :</l>
             <l n="425" xml:id="l425">Ils ont nommé Mérope, et j’ai rendu les armes.</l>
           </sp>
-          <sp xml:id="II02-12" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II02-12">
             <speaker>EURYCLÈS</speaker>
             <l n="426" xml:id="l426">Eh ! Madame, d’où vient que vous versez des larmes ?</l>
           </sp>
-          <sp xml:id="II02-13" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-13">
             <speaker>MÉROPE</speaker>
             <l n="427" xml:id="l427">Te le dirai-je ? Hélas ! Tandis qu’il m’a parlé,</l>
             <l n="428" xml:id="l428">Sa voix m’attendrissait, tout mon coeur s’est troublé.</l>
@@ -733,34 +751,34 @@
             <l n="432" xml:id="l432">Une si fausse image et des rapports si doux ?</l>
             <l n="433" xml:id="l433">Affreux ressouvenir, quel vain songe m’abuse !</l>
           </sp>
-          <sp xml:id="II02-14" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II02-14">
             <speaker>EURYCLÈS</speaker>
             <l n="434" xml:id="l434">Rejetez donc, madame, un soupçon qui l’accuse ;</l>
             <l n="435" xml:id="l435">Il n’a rien d’un barbare, et rien d’un imposteur.</l>
           </sp>
-          <sp xml:id="II02-15" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-15">
             <speaker>MÉROPE</speaker>
             <l n="436" xml:id="l436">Les dieux ont sur son front imprimé la candeur.</l>
             <l n="437" xml:id="l437">Demeurez ; en quel lieu le ciel vous fit-il naître ?</l>
           </sp>
-          <sp xml:id="II02-16" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-16">
             <speaker>ÉGISTHE</speaker>
-            <l n="438" xml:id="l438" part="I">En Élide.</l>
+            <l n="438" part="I" xml:id="l438">En Élide.</l>
           </sp>
-          <sp xml:id="II02-17" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-17">
             <speaker>MÉROPE</speaker>
             <l part="F">Qu’entends-je ? En Élide ! Ah ! Peut-être...</l>
             <l n="439" xml:id="l439">L’Élide... répondez... Narbas vous est connu ?</l>
             <l n="440" xml:id="l440">Le nom d’Égisthe au moins jusqu’à vous est venu ?</l>
             <l n="441" xml:id="l441">Quel était votre état, votre rang, votre père ?</l>
           </sp>
-          <sp xml:id="II02-18" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-18">
             <speaker>ÉGISTHE</speaker>
             <l n="442" xml:id="l442">Mon père est un vieillard accablé de misère ;</l>
             <l n="443" xml:id="l443">Polycléte est son nom ; mais Égisthe, Narbas,</l>
             <l n="444" xml:id="l444">Ceux dont vous me parlez, je ne les connais pas.</l>
           </sp>
-          <sp xml:id="II02-19" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-19">
             <speaker>MÉROPE</speaker>
             <l n="445" xml:id="l445">Ô dieux ! Vous vous jouez d’une triste mortelle !</l>
             <l n="446" xml:id="l446">J’avais de quelque espoir une faible étincelle ;</l>
@@ -768,7 +786,7 @@
             <l n="448" xml:id="l448">Dans la profonde nuit sont déjà replongés.</l>
             <l n="449" xml:id="l449">Et quel rang vos parents tiennent-ils dans la Grèce ?</l>
           </sp>
-          <sp xml:id="II02-20" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-20">
             <speaker>ÉGISTHE</speaker>
             <l n="450" xml:id="l450">Si la vertu suffit pour faire la noblesse,</l>
             <l n="451" xml:id="l451">Ceux dont je tiens le jour, Polyclète, Sirris,</l>
@@ -778,13 +796,13 @@
             <l n="455" xml:id="l455">Sous ses rustiques toits mon père vertueux</l>
             <l n="456" xml:id="l456">Fait le bien, suit les lois, et ne craint que les dieux.</l>
           </sp>
-          <sp xml:id="II02-21" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-21">
             <speaker>MÉROPE</speaker>
             <l n="457" xml:id="l457">Chaque mot qu’il me dit est plein de nouveaux charmes.</l>
             <l n="458" xml:id="l458">Pourquoi donc le quitter ? Pourquoi causer ses larmes ?</l>
             <l n="459" xml:id="l459">Sans doute il est affreux d’être privé d’un fils.</l>
           </sp>
-          <sp xml:id="II02-22" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II02-22">
             <speaker>ÉGISTHE</speaker>
             <l n="460" xml:id="l460">Un vain désir de gloire a séduit mes esprits.</l>
             <l n="461" xml:id="l461">On me parlait souvent des troubles de Messène,</l>
@@ -802,7 +820,7 @@
             <l n="473" xml:id="l473">Le ciel m’en a puni, le ciel inexorable</l>
             <l n="474" xml:id="l474">M’a conduit dans le piège, et m’a rendu coupable.</l>
           </sp>
-          <sp xml:id="II02-23" who="MEROPE">
+          <sp who="MEROPE" xml:id="II02-23">
             <speaker>MÉROPE</speaker>
             <l n="475" xml:id="l475">Il ne l’est point ; j’en crois son ingénuité :</l>
             <l n="476" xml:id="l476">Le mensonge n’a point cette simplicité.</l>
@@ -816,47 +834,51 @@
             <l n="484" xml:id="l484">Il souffre le mépris qui suit la pauvreté.</l>
             <l n="485" xml:id="l485">L’opprobre avilit l’âme et flétrit le courage.</l>
             <l n="486" xml:id="l486">Pour le sang de nos dieux quel horrible partage !</l>
-            <l n="487" xml:id="l487" part="I">Si du moins...</l>
+            <l n="487" part="I" xml:id="l487">Si du moins...</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Mérope, Égisthe, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf8"><person corresp="#ISMENIE"/><person corresp="#MEROPE"/><person corresp="#EGISTHE"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="II03-1" who="ISMENIE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Mérope, Égisthe, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#ISMENIE"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#EGISTHE"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="ISMENIE" xml:id="II03-1">
             <speaker>ISMÉNIE</speaker>
             <l part="F">Ah ! Madame, entendez-vous ces cris ?</l>
-            <l n="488" xml:id="l488" part="I">Savez-vous bien...</l>
+            <l n="488" part="I" xml:id="l488">Savez-vous bien...</l>
           </sp>
-          <sp xml:id="II03-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="II03-2">
             <speaker>MÉROPE</speaker>
             <l part="F">Quel trouble alarme tes esprits !</l>
           </sp>
-          <sp xml:id="II03-3" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="II03-3">
             <speaker>ISMÉNIE</speaker>
             <l n="489" xml:id="l489">Polyphonte l’emporte, et nos peuples volages</l>
             <l n="490" xml:id="l490">À son ambition prodiguent leurs suffrages.</l>
-            <l n="491" xml:id="l491" part="I">Il est roi, c’en est fait.</l>
+            <l n="491" part="I" xml:id="l491">Il est roi, c’en est fait.</l>
           </sp>
-          <sp xml:id="II03-4" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="II03-4">
             <speaker>ÉGISTHE</speaker>
             <l part="F">J’avais cru que les dieux</l>
             <l n="492" xml:id="l492">Auraient placé Mérope au rang de ses aïeux.</l>
             <l n="493" xml:id="l493">Dieux ! Que plus on est grand, plus vos coups sont à craindre !</l>
             <l n="494" xml:id="l494">Errant, abandonné, je suis le moins à plaindre.</l>
-            <l n="495" xml:id="l495" part="I">Tout homme a ses malheurs.</l>
+            <l n="495" part="I" xml:id="l495">Tout homme a ses malheurs.</l>
             <stage type="[N/A]">On emmène Égisthe.</stage>
           </sp>
-          <sp xml:id="II03-5" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II03-5">
             <speaker>EURYCLÈS, à Mérope.</speaker>
             <l part="F">Je vous l’avais prédit :</l>
             <l n="496" xml:id="l496">Vous avez trop bravé son offre et son crédit.</l>
           </sp>
-          <sp xml:id="II03-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="II03-6">
             <speaker>MÉROPE</speaker>
             <l n="497" xml:id="l497">Je vois toute l’horreur de l’abîme où nous sommes.</l>
             <l n="498" xml:id="l498">J’ai mal connu les dieux, j’ai mal connu les hommes :</l>
             <l n="499" xml:id="l499">J’en attendais justice ; ils la refusent tous.</l>
           </sp>
-          <sp xml:id="II03-7" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II03-7">
             <speaker>EURYCLÈS</speaker>
             <l n="500" xml:id="l500">Permettez que du moins j’assemble autour de vous</l>
             <l n="501" xml:id="l501">Ce peu de nos amis qui, dans un tel orage,</l>
@@ -865,92 +887,97 @@
             <l n="504" xml:id="l504">D’un maître dangereux et d’un peuple d’ingrats.</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Mérope, Isménie.<listPerson type="configuration" xml:id="conf9"><person corresp="#ISMENIE"/><person corresp="#MEROPE"/></listPerson></head>
-          <sp xml:id="II04-1" who="ISMENIE">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Mérope, Isménie.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#ISMENIE"/>
+            <person corresp="#MEROPE"/></listPerson></head>
+          <sp who="ISMENIE" xml:id="II04-1">
             <speaker>ISMÉNIE</speaker>
             <l n="505" xml:id="l505">L’état n’est point ingrat ; non, madame : on vous aime ;</l>
             <l n="506" xml:id="l506">On vous conserve encor l’honneur du diadème :</l>
             <l n="507" xml:id="l507">On veut que Polyphonte, en vous donnant la main,</l>
             <l n="508" xml:id="l508">Semble tenir de vous le pouvoir souverain.</l>
           </sp>
-          <sp xml:id="II04-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="II04-2">
             <speaker>MÉROPE</speaker>
             <l n="509" xml:id="l509">On ose me donner au tyran qui me brave ;</l>
             <l n="510" xml:id="l510">On a trahi le fils, on fait la mère esclave !</l>
           </sp>
-          <sp xml:id="II04-3" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="II04-3">
             <speaker>ISMÉNIE</speaker>
             <l n="511" xml:id="l511">Le peuple vous rappelle au rang de vos aïeux ;</l>
             <l n="512" xml:id="l512">Suivez sa voix, madame ; elle est la voix des dieux.</l>
           </sp>
-          <sp xml:id="II04-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="II04-4">
             <speaker>MÉROPE</speaker>
             <l n="513" xml:id="l513">Inhumaine, tu veux que Mérope avilie</l>
             <l n="514" xml:id="l514">Rachète un vain honneur à force d’infamie ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Mérope, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf10"><person corresp="#EURYCLES"/><person corresp="#MEROPE"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="II05-1" who="EURYCLES">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Mérope, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#EURYCLES"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="EURYCLES" xml:id="II05-1">
             <speaker>EURYCLÈS</speaker>
             <l n="515" xml:id="l515">Madame, je reviens en tremblant devant vous :</l>
             <l n="516" xml:id="l516">Préparez ce grand coeur aux plus terribles coups ;</l>
             <l n="517" xml:id="l517">Rappelez votre force à ce dernier outrage.</l>
           </sp>
-          <sp xml:id="II05-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-2">
             <speaker>MÉROPE</speaker>
             <l n="518" xml:id="l518">Je n’en ai plus ; les maux ont lassé mon courage :</l>
-            <l n="519" xml:id="l519" part="I">Mais n’importe ; parlez.</l>
+            <l n="519" part="I" xml:id="l519">Mais n’importe ; parlez.</l>
           </sp>
-          <sp xml:id="II05-3" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-3">
             <speaker>EURYCLÈS</speaker>
             <l part="F">C’en est fait ; et le sort...</l>
-            <l n="520" xml:id="l520" part="I">Je ne puis achever.</l>
+            <l n="520" part="I" xml:id="l520">Je ne puis achever.</l>
           </sp>
-          <sp xml:id="II05-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-4">
             <speaker>MÉROPE</speaker>
             <l part="M">Quoi ! Mon fils ? ...</l>
           </sp>
-          <sp xml:id="II05-5" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-5">
             <speaker>EURYCLÈS</speaker>
             <l part="F">Il est mort.</l>
             <l n="521" xml:id="l521">Il est trop vrai : déjà cette horrible nouvelle</l>
             <l n="522" xml:id="l522">Consterne vos amis, et glace tout leur zèle.</l>
           </sp>
-          <sp xml:id="II05-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-6">
             <speaker>MÉROPE</speaker>
-            <l n="523" xml:id="l523" part="I">Mon fils est mort !</l>
+            <l n="523" part="I" xml:id="l523">Mon fils est mort !</l>
           </sp>
-          <sp xml:id="II05-7" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="II05-7">
             <speaker>ISMÉNIE</speaker>
             <l part="M">Ô dieux !</l>
           </sp>
-          <sp xml:id="II05-8" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-8">
             <speaker>EURYCLÈS</speaker>
             <l part="F">D’indignes assassins</l>
             <l n="524" xml:id="l524">Des pièges de la mort ont semé les chemins.</l>
-            <l n="525" xml:id="l525" part="I">Le crime est consommé.</l>
+            <l n="525" part="I" xml:id="l525">Le crime est consommé.</l>
           </sp>
-          <sp xml:id="II05-9" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-9">
             <speaker>MÉROPE</speaker>
             <l part="F">Quoi ! Ce jour, que j’abhorre,</l>
             <l n="526" xml:id="l526">Ce soleil luit pour moi ! Mérope vit encore !</l>
             <l n="527" xml:id="l527">Il n’est plus ! Quelles mains ont déchiré son flanc ?</l>
             <l n="528" xml:id="l528">Quel monstre a répandu les restes de mon sang ?</l>
           </sp>
-          <sp xml:id="II05-10" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-10">
             <speaker>EURYCLÈS</speaker>
             <l n="529" xml:id="l529">Hélas ! Cet étranger, ce séducteur impie,</l>
             <l n="530" xml:id="l530">Dont vous-même admiriez la vertu poursuivie,</l>
             <l n="531" xml:id="l531">Pour qui tant de pitié naissait dans votre sein,</l>
-            <l n="532" xml:id="l532" part="I">Lui que vous protégiez ! ...</l>
+            <l n="532" part="I" xml:id="l532">Lui que vous protégiez ! ...</l>
           </sp>
-          <sp xml:id="II05-11" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-11">
             <speaker>MÉROPE</speaker>
             <l part="F">Ce monstre est l’assassin ?</l>
           </sp>
-          <sp xml:id="II05-12" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-12">
             <speaker>EURYCLÈS</speaker>
             <l n="533" xml:id="l533">Oui, madame : on en a des preuves trop certaines ;</l>
             <l n="534" xml:id="l534">On vient de découvrir, de mettre dans les chaînes,</l>
@@ -963,7 +990,7 @@
             <l n="540" xml:id="l540">Le traître avait jeté ces gages précieux,</l>
             <l n="541" xml:id="l541">Pour n’être point connu par ces marques sanglantes.</l>
           </sp>
-          <sp xml:id="II05-13" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-13">
             <speaker>MÉROPE</speaker>
             <l n="542" xml:id="l542">Ah ! Que me dites-vous ? Mes mains, ces mains tremblantes</l>
             <l n="543" xml:id="l543">En armèrent Cresphonte, alors que de mes bras</l>
@@ -971,21 +998,21 @@
             <l n="545" xml:id="l545">Ô dépouille trop chère, en quelles mains livrée !</l>
             <l n="546" xml:id="l546">Quoi ! Ce monstre avait pris cette armure sacrée ?</l>
           </sp>
-          <sp xml:id="II05-14" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-14">
             <speaker>EURYCLÈS</speaker>
             <l n="547" xml:id="l547">Celle qu’Égisthe même apportait en ces lieux.</l>
           </sp>
-          <sp xml:id="II05-15" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-15">
             <speaker>MÉROPE</speaker>
             <l n="548" xml:id="l548">Et teinte de son sang on la montre à mes yeux !</l>
             <l n="549" xml:id="l549">Ce vieillard qu’on a vu dans le temple d’Alcide...</l>
           </sp>
-          <sp xml:id="II05-16" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-16">
             <speaker>EURYCLÈS</speaker>
             <l n="550" xml:id="l550">C’était Narbas ; c’était son déplorable guide ;</l>
-            <l n="551" xml:id="l551" part="I">Polyphonte l’avoue.</l>
+            <l n="551" part="I" xml:id="l551">Polyphonte l’avoue.</l>
           </sp>
-          <sp xml:id="II05-17" who="MEROPE">
+          <sp who="MEROPE" xml:id="II05-17">
             <speaker>MÉROPE</speaker>
             <l part="F">Affreuse vérité !</l>
             <l n="552" xml:id="l552">Hélas ! De l’assassin le bras ensanglanté,</l>
@@ -993,14 +1020,19 @@
             <l n="554" xml:id="l554">Donne à mon fils sanglant les flots pour sépulture !</l>
             <l n="555" xml:id="l555">Je vois tout. ô mon fils ! Quel horrible destin !</l>
           </sp>
-          <sp xml:id="II05-18" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II05-18">
             <speaker>EURYCLÈS</speaker>
             <l n="556" xml:id="l556">Voulez-vous tout savoir de ce lâche assassin ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II06" type="scene" n="6">
-          <head>SCÈNE VI. Mérope, Euryclès, Isménie, Érox , gardes de Polyphonte.<listPerson type="configuration" xml:id="conf11"><person corresp="#EROX"/><person corresp="#MEROPE"/><person corresp="#POLYPHONTE"/><person corresp="#EURYCLES"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="II06-1" who="EROX">
+        <div2 n="6" type="scene" xml:id="II06">
+          <head>SCÈNE VI. Mérope, Euryclès, Isménie, Érox , gardes de Polyphonte.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#EROX"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#POLYPHONTE"/>
+            <person corresp="#EURYCLES"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="EROX" xml:id="II06-1">
             <speaker>ÉROX</speaker>
             <l n="557" xml:id="l557">Madame, par ma voix, permettez que mon maître,</l>
             <l n="558" xml:id="l558">Trop dédaigné de vous, trop méconnu peut-être,</l>
@@ -1008,13 +1040,13 @@
             <l n="560" xml:id="l560">Il a su que d’Égisthe on a tranché les jours ;</l>
             <l n="561" xml:id="l561">Et cette part qu’il prend aux malheurs de la reine...</l>
           </sp>
-          <sp xml:id="II06-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="II06-2">
             <speaker>MÉROPE</speaker>
             <l n="562" xml:id="l562">Il y prend part, Érox, et je le crois sans peine ;</l>
             <l n="563" xml:id="l563">Il en jouit du moins, et les destins l’ont mis</l>
             <l n="564" xml:id="l564">Au trône de Cresphonte, au trône de mon fils.</l>
           </sp>
-          <sp xml:id="II06-3" who="EROX">
+          <sp who="EROX" xml:id="II06-3">
             <speaker>ÉROX</speaker>
             <l n="565" xml:id="l565">Il vous offre ce trône ; agréez qu’il partage</l>
             <l n="566" xml:id="l566">De ce fils, qui n’est plus, le sanglant héritage,</l>
@@ -1028,7 +1060,7 @@
             <l n="574" xml:id="l574">Le sang des assassins est le vrai sacrifice</l>
             <l n="575" xml:id="l575">Qui doit de votre hymen ensanglanter l’autel.</l>
           </sp>
-          <sp xml:id="II06-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="II06-4">
             <speaker>MÉROPE</speaker>
             <l n="576" xml:id="l576">Non ; je veux que ma main porte le coup mortel.</l>
             <l n="577" xml:id="l577">Si Polyphonte est roi, je veux que sa puissance</l>
@@ -1039,26 +1071,29 @@
             <l n="582" xml:id="l582">Je la retirerai du sein de ce barbare</l>
             <l n="583" xml:id="l583">Pour la porter fumante aux autels de nos dieux.</l>
           </sp>
-          <sp xml:id="II06-5" who="EROX">
+          <sp who="EROX" xml:id="II06-5">
             <speaker>ÉROX</speaker>
             <l n="584" xml:id="l584">Le roi, n’en doutez point, va remplir tous vos voeux.</l>
             <l n="585" xml:id="l585">Croyez qu’à vos regrets son coeur sera sensible.</l>
           </sp>
         </div2>
-        <div2 xml:id="II07" type="scene" n="7">
-          <head>SCÈNE VII. Mérope, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf12"><person corresp="#MEROPE"/><person corresp="#EURYCLES"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="II07-1" who="MEROPE">
+        <div2 n="7" type="scene" xml:id="II07">
+          <head>SCÈNE VII. Mérope, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#MEROPE"/>
+            <person corresp="#EURYCLES"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="MEROPE" xml:id="II07-1">
             <speaker>MÉROPE</speaker>
             <l n="586" xml:id="l586">Non, ne m’en croyez point ; non, cet hymen horrible,</l>
             <l n="587" xml:id="l587">Cet hymen que je crains ne s’accomplira pas.</l>
             <l n="588" xml:id="l588">Au sein du meurtrier j’enfoncerai mon bras ;</l>
             <l n="589" xml:id="l589">Mais ce bras à l’instant m’arrachera la vie.</l>
           </sp>
-          <sp xml:id="II07-2" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="II07-2">
             <speaker>EURYCLÈS</speaker>
-            <l n="590" xml:id="l590" part="I">Madame, au nom des dieux...</l>
+            <l n="590" part="I" xml:id="l590">Madame, au nom des dieux...</l>
           </sp>
-          <sp xml:id="II07-3" who="MEROPE">
+          <sp who="MEROPE" xml:id="II07-3">
             <speaker>MÉROPE</speaker>
             <l part="F">Ils m’ont trop poursuivie.</l>
             <l n="591" xml:id="l591">Irai-je à leurs autels, objet de leur courroux,</l>
@@ -1074,11 +1109,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf14"><person corresp="#NARBAS"/></listPerson></head>
-          <sp xml:id="III01-1" who="NARBAS">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#NARBAS"/></listPerson></head>
+          <sp who="NARBAS" xml:id="III01-1">
             <speaker>NARBAS</speaker>
             <l n="601" xml:id="l601">Ô douleur ! ô regrets ! ô vieillesse pesante !</l>
             <l n="602" xml:id="l602">Je n’ai pu retenir cette fougue imprudente,</l>
@@ -1110,29 +1146,31 @@
             <l n="628" xml:id="l628">Un dieu persécuteur habite pour jamais.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Narbas, Isménie, dans le fond du théâtre où l’on découvre le tombeau de Cresphonte.<listPerson type="configuration" xml:id="conf15"><person corresp="#ISMENIE"/><person corresp="#NARBAS"/></listPerson></head>
-          <sp xml:id="III02-1" who="ISMENIE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Narbas, Isménie, dans le fond du théâtre où l’on découvre le tombeau de Cresphonte.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#ISMENIE"/>
+            <person corresp="#NARBAS"/></listPerson></head>
+          <sp who="ISMENIE" xml:id="III02-1">
             <speaker>ISMÉNIE</speaker>
             <l n="629" xml:id="l629">Quel est cet inconnu dont la vue indiscrète</l>
             <l n="630" xml:id="l630">Ose troubler la reine, et percer sa retraite ?</l>
             <l n="631" xml:id="l631">Est-ce de nos tyrans quelque ministre affreux</l>
             <l n="632" xml:id="l632">Dont l’oeil vient épier les pleurs des malheureux ?</l>
           </sp>
-          <sp xml:id="III02-2" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-2">
             <speaker>NARBAS</speaker>
             <l n="633" xml:id="l633">Oh ! Qui que vous soyez, excusez mon audace :</l>
             <l n="634" xml:id="l634">C’est un infortuné qui demande une grâce.</l>
             <l n="635" xml:id="l635">Il peut servir Mérope ; il voudrait lui parler.</l>
           </sp>
-          <sp xml:id="III02-3" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III02-3">
             <speaker>ISMÉNIE</speaker>
             <l n="636" xml:id="l636">Ah ! Quel temps prenez-vous pour oser la troubler ?</l>
             <l n="637" xml:id="l637">Respectez la douleur d’une mère éperdue ;</l>
             <l n="638" xml:id="l638">Malheureux étranger, n’offensez point sa vue ;</l>
-            <l n="639" xml:id="l639" part="I">Éloignez-vous.</l>
+            <l n="639" part="I" xml:id="l639">Éloignez-vous.</l>
           </sp>
-          <sp xml:id="III02-4" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-4">
             <speaker>NARBAS</speaker>
             <l part="F">Hélas ! Au nom des dieux vengeurs,</l>
             <l n="640" xml:id="l640">Accordez cette grâce à mon âge, à mes pleurs.</l>
@@ -1143,59 +1181,59 @@
             <l n="645" xml:id="l645">Quelle est donc cette tombe en ces lieux élevée</l>
             <l n="646" xml:id="l646">Que j’ai vu de vos pleurs en ce moment lavée ?</l>
           </sp>
-          <sp xml:id="III02-5" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III02-5">
             <speaker>ISMÉNIE</speaker>
             <l n="647" xml:id="l647">C’est la tombe d’un roi des dieux abandonné,</l>
             <l n="648" xml:id="l648">D’un héros, d’un époux, d’un père infortuné,</l>
-            <l n="649" xml:id="l649" part="I">De Cresphonte.</l>
+            <l n="649" part="I" xml:id="l649">De Cresphonte.</l>
           </sp>
-          <sp xml:id="III02-6" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-6">
             <speaker>NARBAS, allant vers le tombeau.</speaker>
             <l part="F">Ô mon maître ! ô cendres que j’adore !</l>
           </sp>
-          <sp xml:id="III02-7" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III02-7">
             <speaker>ISMÉNIE</speaker>
             <l n="650" xml:id="l650">L’épouse de Cresphonte est plus à plaindre encore.</l>
           </sp>
-          <sp xml:id="III02-8" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-8">
             <speaker>NARBAS</speaker>
             <l n="651" xml:id="l651">Quels coups auraient comblé ses malheurs inouïs ?</l>
           </sp>
-          <sp xml:id="III02-9" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III02-9">
             <speaker>ISMÉNIE</speaker>
             <l n="652" xml:id="l652">Le coup le plus terrible : on a tué son fils.</l>
           </sp>
-          <sp xml:id="III02-10" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-10">
             <speaker>NARBAS</speaker>
             <l n="653" xml:id="l653">Son fils Égisthe, ô dieux ! Le malheureux Égisthe !</l>
             <l n="654" xml:id="l654">Nul mortel en ces lieux n’ignore un sort si triste.</l>
           </sp>
-          <sp xml:id="III02-11" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-11">
             <speaker>NARBAS</speaker>
-            <l n="655" xml:id="l655" part="I">Son fils ne serait plus ?</l>
+            <l n="655" part="I" xml:id="l655">Son fils ne serait plus ?</l>
           </sp>
-          <sp xml:id="III02-12" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III02-12">
             <speaker>ISMÉNIE</speaker>
             <l part="F">Un barbare assassin</l>
             <l n="656" xml:id="l656">Aux portes de Messène a déchiré son sein.</l>
           </sp>
-          <sp xml:id="III02-13" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-13">
             <speaker>NARBAS</speaker>
             <l n="657" xml:id="l657">Ô désespoir ! ô mort que ma crainte a prédite !</l>
             <l n="658" xml:id="l658">Il est assassiné ? Mérope en est instruite ?</l>
-            <l n="659" xml:id="l659" part="I">Ne vous trompez-vous pas ?</l>
+            <l n="659" part="I" xml:id="l659">Ne vous trompez-vous pas ?</l>
           </sp>
-          <sp xml:id="III02-14" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III02-14">
             <speaker>ISMÉNIE</speaker>
             <l part="F">Des signes trop certains</l>
             <l n="660" xml:id="l660">Ont éclairé nos yeux sur ses affreux destins.</l>
             <l n="661" xml:id="l661">C’est vous en dire assez ; sa perte est assurée.</l>
           </sp>
-          <sp xml:id="III02-15" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-15">
             <speaker>NARBAS</speaker>
-            <l n="662" xml:id="l662" part="I">Quel fruit de tant de soins !</l>
+            <l n="662" part="I" xml:id="l662">Quel fruit de tant de soins !</l>
           </sp>
-          <sp xml:id="III02-16" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III02-16">
             <speaker>ISMÉNIE</speaker>
             <l part="F">Au désespoir livrée,</l>
             <l n="663" xml:id="l663">Mérope va mourir ; son courage est vaincu :</l>
@@ -1211,15 +1249,16 @@
             <l n="673" xml:id="l673">Mérope cependant, dans sa douleur profonde,</l>
             <l n="674" xml:id="l674">Veut de ce lieu funeste écarter tout le monde.</l>
           </sp>
-          <sp xml:id="III02-17" who="NARBAS">
+          <sp who="NARBAS" xml:id="III02-17">
             <speaker>NARBAS, s’en allant.</speaker>
             <l n="675" xml:id="l675">Hélas ! S’il est ainsi, pourquoi me découvrir ?</l>
             <l n="676" xml:id="l676">Aux pieds de ce tombeau je n’ai plus qu’à mourir.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf16"><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="III03-1" who="ISMENIE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="ISMENIE" xml:id="III03-1">
             <speaker>ISMÉNIE</speaker>
             <l n="677" xml:id="l677">Ce vieillard est, sans doute, un citoyen fidèle ;</l>
             <l n="678" xml:id="l678">Il pleure ; il ne craint point de marquer un vrai zèle :</l>
@@ -1231,30 +1270,35 @@
             <l n="684" xml:id="l684">Hélas ! Courons à lui... mais quel objet cruel !</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Mérope, Isménie, Euryclès, Égisthe, enchaîné, gardes, sacrificateurs.<listPerson type="configuration" xml:id="conf17"><person corresp="#MEROPE"/><person corresp="#EGISTHE"/><person corresp="#EURYCLES"/><person corresp="#NARBAS"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="III04-1" who="MEROPE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Mérope, Isménie, Euryclès, Égisthe, enchaîné, gardes, sacrificateurs.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#MEROPE"/>
+            <person corresp="#EGISTHE"/>
+            <person corresp="#EURYCLES"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="MEROPE" xml:id="III04-1">
             <speaker>MÉROPE</speaker>
             <l n="685" xml:id="l685">Qu’on amène à mes yeux cette horrible victime.</l>
             <l n="686" xml:id="l686">Inventons des tourments qui soient égaux au crime ;</l>
             <l n="687" xml:id="l687">Ils ne pourront jamais égaler ma douleur.</l>
           </sp>
-          <sp xml:id="III04-2" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-2">
             <speaker>ÉGISTHE</speaker>
             <l n="688" xml:id="l688">On m’a vendu bien cher un instant de faveur.</l>
             <l n="689" xml:id="l689">Secourez-moi, grands dieux, à l’innocent propices !</l>
           </sp>
-          <sp xml:id="III04-3" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III04-3">
             <speaker>EURYCLÈS</speaker>
             <l n="690" xml:id="l690">Avant que d’expirer, qu’il nomme ses complices.</l>
           </sp>
-          <sp xml:id="III04-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-4">
             <speaker>MÉROPE, avançant.</speaker>
             <l n="691" xml:id="l691">Oui ; sans doute, il le faut. Monstre ! Qui t’a porté</l>
             <l n="692" xml:id="l692">À ce comble du crime, à tant de cruauté ?</l>
-            <l n="693" xml:id="l693" part="I">Que t’ai-je fait ?</l>
+            <l n="693" part="I" xml:id="l693">Que t’ai-je fait ?</l>
           </sp>
-          <sp xml:id="III04-5" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-5">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Les dieux, qui vengent le parjure,</l>
             <l n="694" xml:id="l694">Sont témoins si ma bouche a connu l’imposture.</l>
@@ -1265,44 +1309,44 @@
             <l n="699" xml:id="l699">Et quel est donc ce sang qu’a versé mon erreur ?</l>
             <l n="700" xml:id="l700">Quel nouvel intérêt vous parle en sa faveur ?</l>
           </sp>
-          <sp xml:id="III04-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-6">
             <speaker>MÉROPE</speaker>
-            <l n="701" xml:id="l701" part="I">Quel intérêt ? Barbare !</l>
+            <l n="701" part="I" xml:id="l701">Quel intérêt ? Barbare !</l>
           </sp>
-          <sp xml:id="III04-7" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-7">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Hélas ! Sur son visage</l>
             <l n="702" xml:id="l702">J’entrevois de la mort la douloureuse image :</l>
             <l n="703" xml:id="l703">Que j’en suis attendri ! J’aurais voulu cent fois</l>
             <l n="704" xml:id="l704">Racheter de mon sang l’état où je la vois.</l>
           </sp>
-          <sp xml:id="III04-8" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-8">
             <speaker>MÉROPE</speaker>
             <l n="705" xml:id="l705">Le cruel ! à quel point on l’instruisit à feindre !</l>
             <l n="706" xml:id="l706">Il m’arrache la vie, et semble encor me plaindre !</l>
             <stage type="[N/A]">Elle se jette dans les bras d’Isménie.</stage>
           </sp>
-          <sp xml:id="III04-9" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III04-9">
             <speaker>EURYCLÈS</speaker>
             <l n="707" xml:id="l707">Madame, vengez-vous, et vengez à la fois</l>
             <l n="708" xml:id="l708">Les lois, et la nature, et le sang de nos rois.</l>
           </sp>
-          <sp xml:id="III04-10" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-10">
             <speaker>ÉGISTHE</speaker>
             <l n="709" xml:id="l709">À la cour de ces rois telle est donc la justice !</l>
             <l n="710" xml:id="l710">On m’accueille, on me flatte ; on résout mon supplice !</l>
             <l n="711" xml:id="l711">Quel destin m’arrachait à mes tristes forêts ?</l>
             <l n="712" xml:id="l712">Vieillard infortuné, quels seront vos regrets ?</l>
             <l n="713" xml:id="l713">Mère trop malheureuse, et dont la voix si chère</l>
-            <l n="714" xml:id="l714" part="I">M’avait prédit...</l>
+            <l n="714" part="I" xml:id="l714">M’avait prédit...</l>
           </sp>
-          <sp xml:id="III04-11" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-11">
             <speaker>MÉROPE</speaker>
             <l part="F">Barbare ! Il te reste une mère !</l>
             <l n="715" xml:id="l715">Je serais mère encor sans toi, sans ta fureur.</l>
-            <l n="716" xml:id="l716" part="I">Tu m’as ravi mon fils.</l>
+            <l n="716" part="I" xml:id="l716">Tu m’as ravi mon fils.</l>
           </sp>
-          <sp xml:id="III04-12" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-12">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Si tel est mon malheur,</l>
             <l n="717" xml:id="l717">S’il était votre fils, je suis trop condamnable.</l>
@@ -1310,35 +1354,35 @@
             <l n="719" xml:id="l719">Que je suis malheureux ! Le ciel sait qu’aujourd’hui</l>
             <l n="720" xml:id="l720">J’aurais donné ma vie et pour vous et pour lui.</l>
           </sp>
-          <sp xml:id="III04-13" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-13">
             <speaker>MÉROPE</speaker>
             <l n="721" xml:id="l721">Quoi, traître ! Quand ta main lui ravit cette armure...</l>
           </sp>
-          <sp xml:id="III04-14" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-14">
             <speaker>ÉGISTHE</speaker>
-            <l n="722" xml:id="l722" part="I">Elle est à moi.</l>
+            <l n="722" part="I" xml:id="l722">Elle est à moi.</l>
           </sp>
-          <sp xml:id="III04-15" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-15">
             <speaker>MÉROPE</speaker>
             <l part="M">Comment ? Que dis-tu ?</l>
           </sp>
-          <sp xml:id="III04-16" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-16">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Je vous jure</l>
             <l n="723" xml:id="l723">Par vous, par ce cher fils, par vos divins aïeux,</l>
             <l n="724" xml:id="l724">Que mon père en mes mains mit ce don précieux.</l>
           </sp>
-          <sp xml:id="III04-17" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-17">
             <speaker>MÉROPE</speaker>
             <l n="725" xml:id="l725">Qui, ton père ! En Élide ? En quel trouble il me jette !</l>
-            <l n="726" xml:id="l726" part="I">Son nom ? Parle, réponds.</l>
+            <l n="726" part="I" xml:id="l726">Son nom ? Parle, réponds.</l>
           </sp>
-          <sp xml:id="III04-18" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-18">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Son nom est Polyclète :</l>
-            <l n="727" xml:id="l727" part="I">Je vous l’ai déjà dit.</l>
+            <l n="727" part="I" xml:id="l727">Je vous l’ai déjà dit.</l>
           </sp>
-          <sp xml:id="III04-19" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-19">
             <speaker>MÉROPE</speaker>
             <l part="F">Tu m’arraches le coeur.</l>
             <l n="728" xml:id="l728">Quelle indigne pitié suspendait ma fureur !</l>
@@ -1347,111 +1391,111 @@
             <stage type="[N/A]">Levant le poignard.</stage>
             <l n="731" xml:id="l731">Mânes de mon cher fils ! Mes bras ensanglantés...</l>
           </sp>
-          <sp xml:id="III04-20" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-20">
             <speaker>NARBAS, paraissant avec précipitation.</speaker>
-            <l n="732" xml:id="l732" part="I">Qu’allez-vous faire, ô dieux !</l>
+            <l n="732" part="I" xml:id="l732">Qu’allez-vous faire, ô dieux !</l>
           </sp>
-          <sp xml:id="III04-21" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-21">
             <speaker>MÉROPE</speaker>
             <l part="M">Qui m’appelle ?</l>
           </sp>
-          <sp xml:id="III04-22" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-22">
             <speaker>NARBAS</speaker>
             <l part="F">Arrêtez !</l>
             <l n="733" xml:id="l733">Hélas ! Il est perdu, si je nomme sa mère,</l>
-            <l n="734" xml:id="l734" part="I">S’il est connu.</l>
+            <l n="734" part="I" xml:id="l734">S’il est connu.</l>
           </sp>
-          <sp xml:id="III04-23" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-23">
             <speaker>MÉROPE</speaker>
             <l part="M">Meurs, traître !</l>
           </sp>
-          <sp xml:id="III04-24" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-24">
             <speaker>NARBAS</speaker>
             <l part="M">Arrêtez !</l>
           </sp>
-          <sp xml:id="III04-25" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-25">
             <speaker>ÉGISTHE, tournant les yeux vers Narbas.</speaker>
             <l part="M">Ô mon père !</l>
           </sp>
-          <sp xml:id="III04-26" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-26">
             <speaker>MÉROPE</speaker>
-            <l n="735" xml:id="l735" part="I">Son père !</l>
+            <l n="735" part="I" xml:id="l735">Son père !</l>
           </sp>
-          <sp xml:id="III04-27" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="III04-27">
             <speaker>ÉGISTHE, à Narbas.</speaker>
             <l part="F">Hélas ! Que vois-je ? Où portez-vous vos pas ?</l>
             <l n="736" xml:id="l736">Venez-vous être ici témoin de mon trépas ?</l>
           </sp>
-          <sp xml:id="III04-28" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-28">
             <speaker>NARBAS</speaker>
             <l n="737" xml:id="l737">Ah ! Madame, empêchez qu’on achève le crime.</l>
             <l n="738" xml:id="l738">Euryclès, écoutez ; écartez la victime :</l>
-            <l n="739" xml:id="l739" part="I">Que je vous parle.</l>
+            <l n="739" part="I" xml:id="l739">Que je vous parle.</l>
             <stage type="[N/A]">Euryclès emmène Égisthe, et ferme le fond du théâtre.</stage>
             <l part="M">Ô ciel !</l>
           </sp>
-          <sp xml:id="III04-29" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-29">
             <speaker>MÉROPE, s’avançant.</speaker>
             <l part="F">Vous me faites trembler :</l>
-            <l n="740" xml:id="l740" part="I">J’allais venger mon fils.</l>
+            <l n="740" part="I" xml:id="l740">J’allais venger mon fils.</l>
           </sp>
-          <sp xml:id="III04-30" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-30">
             <speaker>NARBAS, se jetant à genoux.</speaker>
             <l part="F">Vous alliez l’immoler.</l>
-            <l n="741" xml:id="l741" part="I">Égisthe...</l>
+            <l n="741" part="I" xml:id="l741">Égisthe...</l>
           </sp>
-          <sp xml:id="III04-31" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-31">
             <speaker>MÉROPE, laissant tomber le poignard.</speaker>
             <l part="M">Eh bien, Égisthe ?</l>
           </sp>
-          <sp xml:id="III04-32" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-32">
             <speaker>NARBAS</speaker>
             <l part="F">Ô reine infortunée !</l>
             <l n="742" xml:id="l742">Celui dont votre main tranchait la destinée,</l>
-            <l n="743" xml:id="l743" part="I">C’est Égisthe...</l>
+            <l n="743" part="I" xml:id="l743">C’est Égisthe...</l>
           </sp>
-          <sp xml:id="III04-33" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-33">
             <speaker>MÉROPE</speaker>
             <l part="M">Il vivrait !</l>
           </sp>
-          <sp xml:id="III04-34" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-34">
             <speaker>NARBAS</speaker>
             <l part="F">C’est lui, c’est votre fils.</l>
           </sp>
-          <sp xml:id="III04-35" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-35">
             <speaker>MÉROPE, tombant dans les bras d’Isménie.</speaker>
-            <l n="744" xml:id="l744" part="I">Je me meurs !</l>
+            <l n="744" part="I" xml:id="l744">Je me meurs !</l>
           </sp>
-          <sp xml:id="III04-36" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III04-36">
             <speaker>ISMÉNIE</speaker>
             <l part="M">Dieux puissants !</l>
           </sp>
-          <sp xml:id="III04-37" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-37">
             <speaker>NARBAS, à Isménie.</speaker>
             <l part="F">Rappelez ses esprits.</l>
             <l n="745" xml:id="l745">Hélas ! Ce juste excès de joie et de tendresse,</l>
             <l n="746" xml:id="l746">Ce trouble si soudain, ce remords qui la presse,</l>
             <l n="747" xml:id="l747">Vont consumer ses jours usés par la douleur.</l>
           </sp>
-          <sp xml:id="III04-38" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-38">
             <speaker>MÉROPE, revenant à elle.</speaker>
             <l n="748" xml:id="l748">Ah ! Narbas, est-ce vous ? Est-ce un songe trompeur ?</l>
             <l n="749" xml:id="l749">Quoi ! C’est vous ! C’est mon fils ! Qu’il vienne, qu’il paraisse.</l>
           </sp>
-          <sp xml:id="III04-39" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-39">
             <speaker>NARBAS</speaker>
             <l n="750" xml:id="l750">Redoutez, renfermez cette juste tendresse.</l>
             <stage type="toward">À Isménie.</stage>
             <l n="751" xml:id="l751">Vous, cachez à jamais ce secret important ;</l>
             <l n="752" xml:id="l752">Le salut de la reine et d’Égisthe en dépend.</l>
           </sp>
-          <sp xml:id="III04-40" who="MEROPE">
+          <sp who="MEROPE" xml:id="III04-40">
             <speaker>MÉROPE</speaker>
             <l n="753" xml:id="l753">Ah ! Quel nouveau danger empoisonne ma joie !</l>
             <l n="754" xml:id="l754">Cher Égisthe ! Quel dieu défend que je te voie ?</l>
             <l n="755" xml:id="l755">Ne m’est-il donc rendu que pour mieux m’affliger ?</l>
           </sp>
-          <sp xml:id="III04-41" who="NARBAS">
+          <sp who="NARBAS" xml:id="III04-41">
             <speaker>NARBAS</speaker>
             <l n="756" xml:id="l756">Ne le connaissant pas vous alliez l’égorger ;</l>
             <l n="757" xml:id="l757">Et, si son arrivée est ici découverte,</l>
@@ -1460,58 +1504,62 @@
             <l n="760" xml:id="l760">Le crime est sur le trône ; on vous poursuit : tremblez.</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
-          <head>SCÈNE V. Mérope, Euryclès, Narbas, Isménie.<listPerson type="configuration" xml:id="conf18"><person corresp="#EURYCLES"/><person corresp="#MEROPE"/><person corresp="#NARBAS"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="III05-1" who="EURYCLES">
+        <div2 n="5" type="scene" xml:id="III05">
+          <head>SCÈNE V. Mérope, Euryclès, Narbas, Isménie.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#EURYCLES"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="EURYCLES" xml:id="III05-1">
             <speaker>EURYCLÈS</speaker>
             <l n="761" xml:id="l761">Ah ! Madame, le roi commande qu’on saisisse...</l>
           </sp>
-          <sp xml:id="III05-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-2">
             <speaker>MÉROPE</speaker>
-            <l n="762" xml:id="l762" part="I">Qui ?</l>
+            <l n="762" part="I" xml:id="l762">Qui ?</l>
           </sp>
-          <sp xml:id="III05-3" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-3">
             <speaker>EURYCLÈS</speaker>
             <l part="F">Ce jeune étranger qu’on destine au supplice.</l>
           </sp>
-          <sp xml:id="III05-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-4">
             <speaker>MÉROPE, avec transport.</speaker>
             <l n="763" xml:id="l763">Eh bien ! Cet étranger, c’est mon fils, c’est mon sang.</l>
             <l n="764" xml:id="l764">Narbas, on va plonger le couteau dans son flanc !</l>
-            <l n="765" xml:id="l765" part="I">Courons tous.</l>
+            <l n="765" part="I" xml:id="l765">Courons tous.</l>
           </sp>
-          <sp xml:id="III05-5" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-5">
             <speaker>NARBAS</speaker>
             <l part="M">Demeurez.</l>
           </sp>
-          <sp xml:id="III05-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-6">
             <speaker>MÉROPE</speaker>
             <l part="F">C’est mon fils qu’on entraîne !</l>
             <l n="766" xml:id="l766">Pourquoi ? Quelle entreprise exécrable et soudaine !</l>
-            <l n="767" xml:id="l767" part="I">Pourquoi m’ôter Égisthe ?</l>
+            <l n="767" part="I" xml:id="l767">Pourquoi m’ôter Égisthe ?</l>
           </sp>
-          <sp xml:id="III05-7" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-7">
             <speaker>EURYCLÈS</speaker>
             <l part="F">Avant de vous venger,</l>
             <l n="768" xml:id="l768">Polyphonte, dit-il, prétend l’interroger.</l>
           </sp>
-          <sp xml:id="III05-8" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-8">
             <speaker>MÉROPE</speaker>
             <l n="769" xml:id="l769">L’interroger ? Qui ? Lui ? Sait-il quelle est sa mère ?</l>
           </sp>
-          <sp xml:id="III05-9" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-9">
             <speaker>EURYCLÈS</speaker>
             <l n="770" xml:id="l770">Nul ne soupçonne encor ce terrible mystère.</l>
           </sp>
-          <sp xml:id="III05-10" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-10">
             <speaker>MÉROPE</speaker>
             <l n="771" xml:id="l771">Courons à Polyphonte ; implorons son appui.</l>
           </sp>
-          <sp xml:id="III05-11" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-11">
             <speaker>NARBAS</speaker>
             <l n="772" xml:id="l772">N’implorez que les dieux, et ne craignez que lui.</l>
           </sp>
-          <sp xml:id="III05-12" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-12">
             <speaker>EURYCLÈS</speaker>
             <l n="773" xml:id="l773">Si les droits de ce fils au roi font quelque ombrage,</l>
             <l n="774" xml:id="l774">De son salut au moins votre hymen est le gage.</l>
@@ -1520,45 +1568,45 @@
             <l n="777" xml:id="l777">Et dût sa politique en être encor jalouse,</l>
             <l n="778" xml:id="l778">Il faut qu’il serve Égisthe alors qu’il vous épouse.</l>
           </sp>
-          <sp xml:id="III05-13" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-13">
             <speaker>NARBAS</speaker>
             <l n="779" xml:id="l779">Il vous épouse ! Lui ! Quel coup de foudre ! ô ciel !</l>
           </sp>
-          <sp xml:id="III05-14" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-14">
             <speaker>MÉROPE</speaker>
             <l n="780" xml:id="l780">C’est mourir trop longtemps dans ce trouble cruel.</l>
-            <l n="781" xml:id="l781" part="I">Je vais...</l>
+            <l n="781" part="I" xml:id="l781">Je vais...</l>
           </sp>
-          <sp xml:id="III05-15" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-15">
             <speaker>NARBAS</speaker>
             <l part="F">Vous n’irez point, ô mère déplorable !</l>
             <l n="782" xml:id="l782">Vous n’accomplirez point cet hymen exécrable.</l>
           </sp>
-          <sp xml:id="III05-16" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-16">
             <speaker>EURYCLÈS</speaker>
             <l n="783" xml:id="l783">Narbas, elle est forcée à lui donner la main.</l>
-            <l n="784" xml:id="l784" part="I">Il peut venger Cresphonte.</l>
+            <l n="784" part="I" xml:id="l784">Il peut venger Cresphonte.</l>
           </sp>
-          <sp xml:id="III05-17" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-17">
             <speaker>NARBAS</speaker>
             <l part="F">Il en est l’assassin.</l>
           </sp>
-          <sp xml:id="III05-18" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-18">
             <speaker>MÉROPE</speaker>
-            <l n="785" xml:id="l785" part="I">Lui ? Ce traître ?</l>
+            <l n="785" part="I" xml:id="l785">Lui ? Ce traître ?</l>
           </sp>
-          <sp xml:id="III05-19" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-19">
             <speaker>NARBAS</speaker>
             <l part="F">Oui, lui-même ; oui, ses mains sanguinaires</l>
             <l n="786" xml:id="l786">Ont égorgé d’Égisthe et le père et les frères :</l>
             <l n="787" xml:id="l787">Je l’ai vu sur mon roi, j’ai vu porter les coups ;</l>
             <l n="788" xml:id="l788">Je l’ai vu tout couvert du sang de votre époux.</l>
           </sp>
-          <sp xml:id="III05-20" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-20">
             <speaker>MÉROPE</speaker>
-            <l n="789" xml:id="l789" part="I">Ah, dieux !</l>
+            <l n="789" part="I" xml:id="l789">Ah, dieux !</l>
           </sp>
-          <sp xml:id="III05-21" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-21">
             <speaker>NARBAS</speaker>
             <l part="F">J’ai vu ce monstre entouré de victimes ;</l>
             <l n="790" xml:id="l790">Je l’ai vu contre vous accumuler les crimes :</l>
@@ -1577,48 +1625,52 @@
             <l n="803" xml:id="l803">Et lorsqu’en arrivant je l’arrache à vos coups,</l>
             <l n="804" xml:id="l804">Polyphonte est son maître et devient votre époux !</l>
           </sp>
-          <sp xml:id="III05-22" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-22">
             <speaker>MÉROPE</speaker>
             <l n="805" xml:id="l805">Ah ! Tout mon sang se glace à ce récit horrible.</l>
           </sp>
-          <sp xml:id="III05-23" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-23">
             <speaker>EURYCLÈS</speaker>
-            <l n="806" xml:id="l806" part="I">On vient : c’est Polyphonte.</l>
+            <l n="806" part="I" xml:id="l806">On vient : c’est Polyphonte.</l>
           </sp>
-          <sp xml:id="III05-24" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-24">
             <speaker>MÉROPE</speaker>
             <l part="F">Ô dieux ! Est-il possible ?</l>
             <stage type="toward">À Narbas.</stage>
             <l n="807" xml:id="l807">Va, dérobe surtout ta vue à sa fureur.</l>
           </sp>
-          <sp xml:id="III05-25" who="NARBAS">
+          <sp who="NARBAS" xml:id="III05-25">
             <speaker>NARBAS</speaker>
             <l n="808" xml:id="l808">Hélas ! Si votre fils est cher à votre coeur,</l>
             <l n="809" xml:id="l809">Avec son assassin dissimulez, madame.</l>
           </sp>
-          <sp xml:id="III05-26" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-26">
             <speaker>EURYCLÈS</speaker>
             <l n="810" xml:id="l810">Renfermons ce secret dans le fond de notre âme.</l>
-            <l n="811" xml:id="l811" part="I">Un seul mot peut le perdre.</l>
+            <l n="811" part="I" xml:id="l811">Un seul mot peut le perdre.</l>
           </sp>
-          <sp xml:id="III05-27" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-27">
             <speaker>MÉROPE, à Euryclès</speaker>
             <l part="F">Ah ! Cours ; et que tes yeux</l>
             <l n="812" xml:id="l812">Veillent sur ce dépôt si cher, si précieux.</l>
           </sp>
-          <sp xml:id="III05-28" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="III05-28">
             <speaker>EURYCLÈS</speaker>
-            <l n="813" xml:id="l813" part="I">N’en doutez point.</l>
+            <l n="813" part="I" xml:id="l813">N’en doutez point.</l>
           </sp>
-          <sp xml:id="III05-29" who="MEROPE">
+          <sp who="MEROPE" xml:id="III05-29">
             <speaker>MÉROPE</speaker>
             <l part="F">Hélas ! J’espère en ta prudence :</l>
             <l n="814" xml:id="l814">C’est mon fils, c’est ton roi. Dieux ! Ce monstre s’avance.</l>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
-          <head>SCÈNE VI. Mérope, Polyphonte, Érox, Isménie, suite.<listPerson type="configuration" xml:id="conf19"><person corresp="#POLYPHONTE"/><person corresp="#MEROPE"/><person corresp="#ISMENIE"/><person corresp="#EROX"/></listPerson></head>
-          <sp xml:id="III06-1" who="POLYPHONTE">
+        <div2 n="6" type="scene" xml:id="III06">
+          <head>SCÈNE VI. Mérope, Polyphonte, Érox, Isménie, suite.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#POLYPHONTE"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#ISMENIE"/>
+            <person corresp="#EROX"/></listPerson></head>
+          <sp who="POLYPHONTE" xml:id="III06-1">
             <speaker>POLYPHONTE</speaker>
             <l n="815" xml:id="l815">Le trône vous attend, et les autels sont prêts ;</l>
             <l n="816" xml:id="l816">L’hymen qui va nous joindre unit nos intérêts.</l>
@@ -1631,24 +1683,24 @@
             <l n="823" xml:id="l823">J’avais à votre bras remis cet assassin ;</l>
             <l n="824" xml:id="l824">Vous-même, disiez-vous, deviez percer son sein.</l>
           </sp>
-          <sp xml:id="III06-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-2">
             <speaker>MÉROPE</speaker>
             <l n="825" xml:id="l825">Plût aux dieux que mon bras fût le vengeur du crime !</l>
           </sp>
-          <sp xml:id="III06-3" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-3">
             <speaker>POLYPHONTE</speaker>
             <l n="826" xml:id="l826">C’est le devoir des rois, c’est le soin qui m’anime.</l>
           </sp>
-          <sp xml:id="III06-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-4">
             <speaker>MÉROPE</speaker>
-            <l n="827" xml:id="l827" part="I">Vous ?</l>
+            <l n="827" part="I" xml:id="l827">Vous ?</l>
           </sp>
-          <sp xml:id="III06-5" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-5">
             <speaker>POLYPHONTE</speaker>
             <l part="F">Pourquoi donc, madame, avez-vous différé ?</l>
             <l n="828" xml:id="l828">Votre amour pour un fils serait-il altéré ?</l>
           </sp>
-          <sp xml:id="III06-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-6">
             <speaker>MÉROPE</speaker>
             <l n="829" xml:id="l829">Puissent ses ennemis périr dans les supplices !</l>
             <l n="830" xml:id="l830">Mais si ce meurtrier, seigneur, a des complices ;</l>
@@ -1656,49 +1708,49 @@
             <l n="832" xml:id="l832">Le bras dont mon époux a reçu le trépas...</l>
             <l n="833" xml:id="l833">Ceux dont la race impie a massacré le père</l>
             <l n="834" xml:id="l834">Poursuivront à jamais et le fils et la mère.</l>
-            <l n="835" xml:id="l835" part="I">Si l’on pouvait...</l>
+            <l n="835" part="I" xml:id="l835">Si l’on pouvait...</l>
           </sp>
-          <sp xml:id="III06-7" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-7">
             <speaker>POLYPHONTE</speaker>
             <l part="F">C’est là ce que je veux savoir ;</l>
             <l n="836" xml:id="l836">Et déjà le coupable est mis en mon pouvoir.</l>
           </sp>
-          <sp xml:id="III06-8" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-8">
             <speaker>MÉROPE</speaker>
-            <l n="837" xml:id="l837" part="I">Il est entre vos mains ?</l>
+            <l n="837" part="I" xml:id="l837">Il est entre vos mains ?</l>
           </sp>
-          <sp xml:id="III06-9" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-9">
             <speaker>POLYPHONTE</speaker>
             <l part="F">Oui, madame, et j’espère</l>
             <l n="838" xml:id="l838">Percer en lui parlant ce ténébreux mystère.</l>
           </sp>
-          <sp xml:id="III06-10" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-10">
             <speaker>MÉROPE</speaker>
             <l n="839" xml:id="l839">Ah ! Barbare ! ... à moi seule il faut qu’il soit remis.</l>
             <l n="840" xml:id="l840">Rendez-moi... vous savez que vous l’avez promis.</l>
             <stage type="aparte">À part.</stage>
             <l n="841" xml:id="l841">Ô mon sang ! ô mon fils ! Quel sort on vous prépare !</l>
             <stage type="toward">À Polyphonte.</stage>
-            <l n="842" xml:id="l842" part="I">Seigneur, ayez pitié...</l>
+            <l n="842" part="I" xml:id="l842">Seigneur, ayez pitié...</l>
           </sp>
-          <sp xml:id="III06-11" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-11">
             <speaker>POLYPHONTE</speaker>
             <l part="F">Quel transport vous égare !</l>
-            <l n="843" xml:id="l843" part="I">Il mourra.</l>
+            <l n="843" part="I" xml:id="l843">Il mourra.</l>
           </sp>
-          <sp xml:id="III06-12" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-12">
             <speaker>MÉROPE</speaker>
             <l part="M">Lui ?</l>
           </sp>
-          <sp xml:id="III06-13" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-13">
             <speaker>POLYPHONTE</speaker>
             <l part="F">Sa mort pourra vous consoler.</l>
           </sp>
-          <sp xml:id="III06-14" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-14">
             <speaker>MÉROPE</speaker>
             <l n="844" xml:id="l844">Ah ! Je veux à l’instant le voir et lui parler.</l>
           </sp>
-          <sp xml:id="III06-15" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-15">
             <speaker>POLYPHONTE</speaker>
             <l n="845" xml:id="l845">Ce mélange inouï d’horreur et de tendresse,</l>
             <l n="846" xml:id="l846">Ces transports dont votre âme à peine est la maîtresse,</l>
@@ -1708,53 +1760,55 @@
             <l n="850" xml:id="l850">D’un déplaisir nouveau votre âme semble atteinte.</l>
             <l n="851" xml:id="l851">Qu’a donc dit ce vieillard que l’on vient d’amener ?</l>
             <l n="852" xml:id="l852">Pourquoi fuit-il mes yeux ? Que dois-je en soupçonner ?</l>
-            <l n="853" xml:id="l853" part="I">Quel est-il ?</l>
+            <l n="853" part="I" xml:id="l853">Quel est-il ?</l>
           </sp>
-          <sp xml:id="III06-16" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-16">
             <speaker>MÉROPE</speaker>
             <l part="F">Eh ! Seigneur, à peine sur le trône,</l>
             <l n="854" xml:id="l854">La crainte, le soupçon, déjà vous environne !</l>
           </sp>
-          <sp xml:id="III06-17" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-17">
             <speaker>POLYPHONTE</speaker>
             <l n="855" xml:id="l855">Partagez donc ce trône : et sûr de mon bonheur,</l>
             <l n="856" xml:id="l856">Je verrai les soupçons exilés de mon coeur.</l>
             <l n="857" xml:id="l857">L’autel attend déjà Mérope et Polyphonte.</l>
           </sp>
-          <sp xml:id="III06-18" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-18">
             <speaker>MÉROPE, en pleurant.</speaker>
             <l n="858" xml:id="l858">Les dieux vous ont donné le trône de Cresphonte ;</l>
             <l n="859" xml:id="l859">Il y manquait sa femme, et ce comble d’horreur,</l>
-            <l n="860" xml:id="l860" part="I">Ce crime épouvantable...</l>
+            <l n="860" part="I" xml:id="l860">Ce crime épouvantable...</l>
           </sp>
-          <sp xml:id="III06-19" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="III06-19">
             <speaker>ISMÉNIE</speaker>
             <l part="M">Eh ! Madame !</l>
           </sp>
-          <sp xml:id="III06-20" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-20">
             <speaker>MÉROPE</speaker>
             <l part="F">Ah ! Seigneur,</l>
             <l n="861" xml:id="l861">Pardonnez... vous voyez une mère éperdue.</l>
             <l n="862" xml:id="l862">Les dieux m’ont tout ravi ; les dieux m’ont confondue.</l>
             <l n="863" xml:id="l863">Pardonnez... de mon fils rendez-moi l’assassin.</l>
           </sp>
-          <sp xml:id="III06-21" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="III06-21">
             <speaker>POLYPHONTE</speaker>
             <l n="864" xml:id="l864">Tout son sang, s’il le faut, va couler sous ma main.</l>
-            <l n="865" xml:id="l865" part="I">Venez, madame.</l>
+            <l n="865" part="I" xml:id="l865">Venez, madame.</l>
           </sp>
-          <sp xml:id="III06-22" who="MEROPE">
+          <sp who="MEROPE" xml:id="III06-22">
             <speaker>MÉROPE</speaker>
             <l part="F">Ô dieux ! Dans l’horreur qui me presse,</l>
             <l n="866" xml:id="l866">Secourez une mère, et cachez sa faiblesse.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE I. Polyphonte, Érox.<listPerson type="configuration" xml:id="conf21"><person corresp="#POLYPHONTE"/><person corresp="#EROX"/></listPerson></head>
-          <sp xml:id="IV01-1" who="POLYPHONTE">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE I. Polyphonte, Érox.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#POLYPHONTE"/>
+            <person corresp="#EROX"/></listPerson></head>
+          <sp who="POLYPHONTE" xml:id="IV01-1">
             <speaker>POLYPHONTE</speaker>
             <l n="867" xml:id="l867">À ses emportements, je croirais qu’à la fin</l>
             <l n="868" xml:id="l868">Elle a de son époux reconnu l’assassin ;</l>
@@ -1769,9 +1823,9 @@
             <l n="877" xml:id="l877">Qu’elle écoute à son gré son impuissante haine ;</l>
             <l n="878" xml:id="l878">Au char de ma fortune il est temps qu’on l’enchaîne.</l>
             <l n="879" xml:id="l879">Mais vous, au meurtrier vous venez de parler ;</l>
-            <l n="880" xml:id="l880" part="I">Que pensez-vous de lui ?</l>
+            <l n="880" part="I" xml:id="l880">Que pensez-vous de lui ?</l>
           </sp>
-          <sp xml:id="IV01-2" who="EROX">
+          <sp who="EROX" xml:id="IV01-2">
             <speaker>ÉROX</speaker>
             <l part="F">Rien ne peut le troubler ;</l>
             <l n="881" xml:id="l881">Simple dans ses discours, mais ferme, invariable,</l>
@@ -1780,17 +1834,17 @@
             <l n="884" xml:id="l884">Un courage aussi grand dans un rang aussi bas.</l>
             <l n="885" xml:id="l885">J’avouerai qu’en secret moi-même je l’admire.</l>
           </sp>
-          <sp xml:id="IV01-3" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV01-3">
             <speaker>POLYPHONTE</speaker>
-            <l n="886" xml:id="l886" part="I">Quel est-il, en un mot ?</l>
+            <l n="886" part="I" xml:id="l886">Quel est-il, en un mot ?</l>
           </sp>
-          <sp xml:id="IV01-4" who="EROX">
+          <sp who="EROX" xml:id="IV01-4">
             <speaker>ÉROX</speaker>
             <l part="F">Ce que j’ose vous dire,</l>
             <l n="887" xml:id="l887">C’est qu’il n’est point, sans doute, un de ces assassins</l>
             <l n="888" xml:id="l888">Disposés en secret pour servir vos desseins.</l>
           </sp>
-          <sp xml:id="IV01-5" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV01-5">
             <speaker>POLYPHONTE</speaker>
             <l n="889" xml:id="l889">Pouvez-vous en parler avec tant d’assurance ?</l>
             <l n="890" xml:id="l890">Leur conducteur n’est plus. Ma juste défiance</l>
@@ -1801,14 +1855,14 @@
             <l n="895" xml:id="l895">Croirai-je que, toujours soigneux de m’obéir,</l>
             <l n="896" xml:id="l896">Le sort jusqu’à ce point m’ait voulu prévenir ?</l>
           </sp>
-          <sp xml:id="IV01-6" who="EROX">
+          <sp who="EROX" xml:id="IV01-6">
             <speaker>ÉROX</speaker>
             <l n="897" xml:id="l897">Mérope, dans les pleurs mourant désespérée,</l>
             <l n="898" xml:id="l898">Est de votre bonheur une preuve assurée ;</l>
             <l n="899" xml:id="l899">Et tout ce que je vois le confirme en effet.</l>
             <l n="900" xml:id="l900">Plus fort que tous nos soins, le hasard a tout fait.</l>
           </sp>
-          <sp xml:id="IV01-7" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV01-7">
             <speaker>POLYPHONTE</speaker>
             <l n="901" xml:id="l901">Le hasard va souvent plus loin que la prudence ;</l>
             <l n="902" xml:id="l902">Mais j’ai trop d’ennemis, et trop d’expérience,</l>
@@ -1822,15 +1876,15 @@
             <l n="910" xml:id="l910">Qu’on dérobe à ma vue avec tant de mystère ?</l>
             <l n="911" xml:id="l911">Mérope allait verser le sang de l’assassin :</l>
             <l n="912" xml:id="l912">Ce vieillard, dites-vous, a retenu sa main ;</l>
-            <l n="913" xml:id="l913" part="I">Que voulait-il ?</l>
+            <l n="913" part="I" xml:id="l913">Que voulait-il ?</l>
           </sp>
-          <sp xml:id="IV01-8" who="EROX">
+          <sp who="EROX" xml:id="IV01-8">
             <speaker>ÉROX</speaker>
             <l part="F">Seigneur, chargé de sa misère,</l>
             <l n="914" xml:id="l914">De ce jeune étranger ce vieillard est le père :</l>
             <l n="915" xml:id="l915">Il venait implorer la grâce de son fils.</l>
           </sp>
-          <sp xml:id="IV01-9" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV01-9">
             <speaker>POLYPHONTE</speaker>
             <l n="916" xml:id="l916">Sa grâce ? Devant moi je veux qu’il soit admis.</l>
             <l n="917" xml:id="l917">Ce vieillard me trahit, crois-moi, puisqu’il se cache.</l>
@@ -1842,34 +1896,40 @@
             <l n="923" xml:id="l923">La pitié paraissait adoucir ses fureurs ;</l>
             <l n="924" xml:id="l924">Sa joie éclatait même à travers ses douleurs.</l>
           </sp>
-          <sp xml:id="IV01-10" who="EROX">
+          <sp who="EROX" xml:id="IV01-10">
             <speaker>ÉROX</speaker>
             <l n="925" xml:id="l925">Qu’importent sa pitié, sa joie et sa vengeance ?</l>
           </sp>
-          <sp xml:id="IV01-11" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV01-11">
             <speaker>POLYPHONTE</speaker>
             <l n="926" xml:id="l926">Tout m’importe, et de tout je suis en défiance.</l>
             <l n="927" xml:id="l927">Elle vient : qu’on m’amène ici cet étranger.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Polyphonte, Érox, Égisthe, Euryclès, Mérope, Isménie, gardes.<listPerson type="configuration" xml:id="conf22"><person corresp="#MEROPE"/><person corresp="#POLYPHONTE"/><person corresp="#EGISTHE"/><person corresp="#ISMENIE"/><person corresp="#EURYCLES"/><person corresp="#EROX"/></listPerson></head>
-          <sp xml:id="IV02-1" who="MEROPE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Polyphonte, Érox, Égisthe, Euryclès, Mérope, Isménie, gardes.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#MEROPE"/>
+            <person corresp="#POLYPHONTE"/>
+            <person corresp="#EGISTHE"/>
+            <person corresp="#ISMENIE"/>
+            <person corresp="#EURYCLES"/>
+            <person corresp="#EROX"/></listPerson></head>
+          <sp who="MEROPE" xml:id="IV02-1">
             <speaker>MÉROPE</speaker>
             <l n="928" xml:id="l928">Remplissez vos serments ; songez à me venger :</l>
             <l n="929" xml:id="l929">Qu’à mes mains, à moi seule, on laisse la victime.</l>
           </sp>
-          <sp xml:id="IV02-2" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-2">
             <speaker>POLYPHONTE</speaker>
             <l n="930" xml:id="l930">La voici devant vous. Votre intérêt m’anime.</l>
             <l n="931" xml:id="l931">Vengez-vous, baignez-vous au sang du criminel ;</l>
             <l n="932" xml:id="l932">Et sur son corps sanglant je vous mène à l’autel.</l>
           </sp>
-          <sp xml:id="IV02-3" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-3">
             <speaker>MÉROPE</speaker>
-            <l n="933" xml:id="l933" part="I">Ah, dieux !</l>
+            <l n="933" part="I" xml:id="l933">Ah, dieux !</l>
           </sp>
-          <sp xml:id="IV02-4" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-4">
             <speaker>ÉGISTHE, à Polyphonte</speaker>
             <l part="F">Tu vends mon sang à l’hymen de la reine ;</l>
             <l n="934" xml:id="l934">Ma vie est peu de chose, et je mourrai sans peine :</l>
@@ -1880,107 +1940,107 @@
             <l n="939" xml:id="l939">Je bénirai ses coups prêts à tomber sur moi :</l>
             <l n="940" xml:id="l940">Et je n’accuse ici qu’un tyran tel que toi.</l>
           </sp>
-          <sp xml:id="IV02-5" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-5">
             <speaker>POLYPHONTE</speaker>
             <l n="941" xml:id="l941">Malheureux ! Oses-tu, dans ta rage insolente...</l>
           </sp>
-          <sp xml:id="IV02-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-6">
             <speaker>MÉROPE</speaker>
             <l n="942" xml:id="l942">Eh ! Seigneur, excusez sa jeunesse imprudente :</l>
             <l n="943" xml:id="l943">Élevé loin des cours, et nourri dans les bois,</l>
             <l n="944" xml:id="l944">Il ne sait pas encor ce qu’on doit à des rois.</l>
           </sp>
-          <sp xml:id="IV02-7" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-7">
             <speaker>POLYPHONTE</speaker>
             <l n="945" xml:id="l945">Qu’entends-je ? Quel discours ! Quelle surprise extrême !</l>
-            <l n="946" xml:id="l946" part="I">Vous, le justifier !</l>
+            <l n="946" part="I" xml:id="l946">Vous, le justifier !</l>
           </sp>
-          <sp xml:id="IV02-8" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-8">
             <speaker>MÉROPE</speaker>
             <l part="M">Qui ? Moi, seigneur ?</l>
           </sp>
-          <sp xml:id="IV02-9" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-9">
             <speaker>POLYPHONTE</speaker>
             <l part="F">Vous-même.</l>
             <l n="947" xml:id="l947">De cet égarement sortirez-vous enfin ?</l>
             <l n="948" xml:id="l948">De votre fils, madame, est-ce ici l’assassin ?</l>
           </sp>
-          <sp xml:id="IV02-10" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-10">
             <speaker>MÉROPE</speaker>
             <l n="949" xml:id="l949">Mon fils, de tant de rois le déplorable reste,</l>
             <l n="950" xml:id="l950">Mon fils, enveloppé dans un piège funeste,</l>
-            <l n="951" xml:id="l951" part="I">Sous les coups d’un barbare...</l>
+            <l n="951" part="I" xml:id="l951">Sous les coups d’un barbare...</l>
           </sp>
-          <sp xml:id="IV02-11" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="IV02-11">
             <speaker>ISMÉNIE</speaker>
             <l part="F">Ô ciel ! Que faites-vous ?</l>
           </sp>
-          <sp xml:id="IV02-12" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-12">
             <speaker>POLYPHONTE</speaker>
             <l n="952" xml:id="l952">Quoi ! Vos regards sur lui se tournent sans courroux ?</l>
             <l n="953" xml:id="l953">Vous tremblez à sa vue, et vos yeux s’attendrissent ?</l>
             <l n="954" xml:id="l954">Vous voulez me cacher les pleurs qui les</l>
-            <l n="955" xml:id="l955" part="I">Remplissent ?</l>
+            <l n="955" part="I" xml:id="l955">Remplissent ?</l>
           </sp>
-          <sp xml:id="IV02-13" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-13">
             <speaker>MÉROPE</speaker>
             <l part="F">Je ne les cache point ; ils paraissent assez ;</l>
             <l n="956" xml:id="l956">La cause en est trop juste, et vous la connaissez.</l>
           </sp>
-          <sp xml:id="IV02-14" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-14">
             <speaker>POLYPHONTE</speaker>
             <l n="957" xml:id="l957">Pour en tarir la source il est temps qu’il expire.</l>
-            <l n="958" xml:id="l958" part="I">Qu’on l’immole, soldats !</l>
+            <l n="958" part="I" xml:id="l958">Qu’on l’immole, soldats !</l>
           </sp>
-          <sp xml:id="IV02-15" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-15">
             <speaker>MÉROPE, s’avançant</speaker>
             <l part="F">Cruel ! Qu’osez-vous dire ?</l>
           </sp>
-          <sp xml:id="IV02-16" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-16">
             <speaker>ÉGISTHE</speaker>
             <l n="959" xml:id="l959">Quoi ! De pitié pour moi tous vos sens sont saisis !</l>
           </sp>
-          <sp xml:id="IV02-17" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-17">
             <speaker>POLYPHONTE</speaker>
-            <l n="960" xml:id="l960" part="I">Qu’il meure !</l>
+            <l n="960" part="I" xml:id="l960">Qu’il meure !</l>
           </sp>
-          <sp xml:id="IV02-18" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-18">
             <speaker>MÉROPE</speaker>
             <l part="M">Il est...</l>
           </sp>
-          <sp xml:id="IV02-19" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-19">
             <speaker>POLYPHONTE</speaker>
             <l part="M">Frappez.</l>
           </sp>
-          <sp xml:id="IV02-20" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-20">
             <speaker>MÉROPE, se jetant entre Égisthe et les soldats.</speaker>
             <l part="F">Barbare ! Il est mon fils.</l>
           </sp>
-          <sp xml:id="IV02-21" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-21">
             <speaker>ÉGISTHE</speaker>
-            <l n="961" xml:id="l961" part="I">Moi ! Votre fils ?</l>
+            <l n="961" part="I" xml:id="l961">Moi ! Votre fils ?</l>
           </sp>
-          <sp xml:id="IV02-22" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-22">
             <speaker>MÉROPE, en l’embrassant.</speaker>
             <l part="F">Tu l’es : et ce ciel que j’atteste,</l>
             <l n="962" xml:id="l962">Ce ciel qui t’a formé dans un sein si funeste,</l>
             <l n="963" xml:id="l963">Et qui trop tard, hélas ! A dessillé mes yeux,</l>
             <l n="964" xml:id="l964">Te remet dans mes bras pour nous perdre tous deux.</l>
           </sp>
-          <sp xml:id="IV02-23" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-23">
             <speaker>ÉGISTHE</speaker>
             <l n="965" xml:id="l965">Quel miracle, grands dieux, que je ne puis comprendre !</l>
           </sp>
-          <sp xml:id="IV02-24" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-24">
             <speaker>POLYPHONTE</speaker>
             <l n="966" xml:id="l966">Une telle imposture a de quoi me surprendre.</l>
             <l n="967" xml:id="l967">Vous, sa mère ? Qui ? Vous, qui demandiez sa mort ?</l>
           </sp>
-          <sp xml:id="IV02-25" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-25">
             <speaker>ÉGISTHE</speaker>
             <l n="968" xml:id="l968">Ah ! Si je meurs son fils, je rends grâce à mon sort.</l>
           </sp>
-          <sp xml:id="IV02-26" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-26">
             <speaker>MÉROPE</speaker>
             <l n="969" xml:id="l969">Je suis sa mère. Hélas ! Mon amour m’a trahie.</l>
             <l n="970" xml:id="l970">Oui, tu tiens dans tes mains le secret de ma vie ;</l>
@@ -1991,22 +2051,22 @@
             <l n="975" xml:id="l975">Ton coeur, nourri de sang, n’en peut être frappé.</l>
             <l n="976" xml:id="l976">Oui, c’est mon fils, te dis-je, au carnage échappé.</l>
           </sp>
-          <sp xml:id="IV02-27" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-27">
             <speaker>POLYPHONTE</speaker>
             <l n="977" xml:id="l977">Que prétendez-vous dire ? Et sur quelles alarmes ? ...</l>
           </sp>
-          <sp xml:id="IV02-28" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-28">
             <speaker>ÉGISTHE</speaker>
             <l n="978" xml:id="l978">Va, je me crois son fils : mes preuves sont ses larmes,</l>
             <l n="979" xml:id="l979">Mes sentiments, mon coeur par la gloire animé,</l>
             <l n="980" xml:id="l980">Mon bras qui t’eût puni s’il n’était désarmé.</l>
           </sp>
-          <sp xml:id="IV02-29" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-29">
             <speaker>POLYPHONTE</speaker>
             <l n="981" xml:id="l981">Ta rage auparavant sera seule punie.</l>
-            <l n="982" xml:id="l982" part="I">C’est trop.</l>
+            <l n="982" part="I" xml:id="l982">C’est trop.</l>
           </sp>
-          <sp xml:id="IV02-30" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-30">
             <speaker>MÉROPE, se jetant à ses genoux.</speaker>
             <l part="F">Commencez donc par m’arracher la vie ;</l>
             <l n="983" xml:id="l983">Ayez pitié des pleurs dont mes yeux sont noyés.</l>
@@ -2026,9 +2086,9 @@
             <l n="997" xml:id="l997">Qu’il vive, et c’est assez. Heureuse en mes misères,</l>
             <l n="998" xml:id="l998">Lui seul il me rendra mon époux et ses frères.</l>
             <l n="999" xml:id="l999">Vous voyez avec moi ses aïeux à genoux,</l>
-            <l n="1000" xml:id="l1000" part="I">Votre roi dans les fers.</l>
+            <l n="1000" part="I" xml:id="l1000">Votre roi dans les fers.</l>
           </sp>
-          <sp xml:id="IV02-31" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-31">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Ô reine ! Levez-vous,</l>
             <l n="1001" xml:id="l1001">Et daignez me prouver que Cresphonte est mon père</l>
@@ -2048,7 +2108,7 @@
             <l n="1015" xml:id="l1015">Cessez de le prier, cessez de démentir</l>
             <l n="1016" xml:id="l1016">Le sang des demi-dieux dont on me fait sortir.</l>
           </sp>
-          <sp xml:id="IV02-32" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-32">
             <speaker>POLYPHONTE, à Mérope.</speaker>
             <l n="1017" xml:id="l1017">Eh bien ! Il faut ici nous expliquer sans feinte.</l>
             <l n="1018" xml:id="l1018">Je prends part aux douleurs dont vous êtes atteinte ;</l>
@@ -2059,38 +2119,38 @@
             <l n="1023" xml:id="l1023">Je le prends sous ma garde, il m’est déjà remis ;</l>
             <l n="1024" xml:id="l1024">Et, s’il est né de vous, je l’adopte pour fils.</l>
           </sp>
-          <sp xml:id="IV02-33" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-33">
             <speaker>ÉGISTHE</speaker>
-            <l n="1025" xml:id="l1025" part="I">Vous ? M’adopter ?</l>
+            <l n="1025" part="I" xml:id="l1025">Vous ? M’adopter ?</l>
           </sp>
-          <sp xml:id="IV02-34" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-34">
             <speaker>MÉROPE</speaker>
             <l part="M">Hélas !</l>
           </sp>
-          <sp xml:id="IV02-35" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-35">
             <speaker>POLYPHONTE</speaker>
             <l part="F">Réglez sa destinée.</l>
             <l n="1026" xml:id="l1026">Vous achetiez sa mort avec mon hyménée.</l>
             <l n="1027" xml:id="l1027">La vengeance à ce point a pu vous captiver ;</l>
             <l n="1028" xml:id="l1028">L’amour fera-t-il moins quand il faut le sauver.</l>
           </sp>
-          <sp xml:id="IV02-36" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-36">
             <speaker>MÉROPE</speaker>
-            <l n="1029" xml:id="l1029" part="I">Quoi, barbare !</l>
+            <l n="1029" part="I" xml:id="l1029">Quoi, barbare !</l>
           </sp>
-          <sp xml:id="IV02-37" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-37">
             <speaker>POLYPHONTE</speaker>
             <l part="F">Madame, il y va de sa vie.</l>
             <l n="1030" xml:id="l1030">Votre âme en sa faveur paraît trop attendrie</l>
             <l n="1031" xml:id="l1031">Pour vouloir exposer à mes justes rigueurs,</l>
             <l n="1032" xml:id="l1032">Par d’imprudents refus, l’objet de tant de pleurs.</l>
           </sp>
-          <sp xml:id="IV02-38" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-38">
             <speaker>MÉROPE</speaker>
             <l n="1033" xml:id="l1033">Seigneur, que de son sort il soit du moins le maître.</l>
-            <l n="1034" xml:id="l1034" part="I">Daignez...</l>
+            <l n="1034" part="I" xml:id="l1034">Daignez...</l>
           </sp>
-          <sp xml:id="IV02-39" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-39">
             <speaker>POLYPHONTE</speaker>
             <l part="F">C’est votre fils, madame, ou c’est un traître.</l>
             <l n="1035" xml:id="l1035">Je dois m’unir à vous pour lui servir d’appui ;</l>
@@ -2106,18 +2166,18 @@
             <l n="1044" xml:id="l1044">Confirmez sa naissance en me donnant la main.</l>
             <l n="1045" xml:id="l1045">Votre seule réponse ou le sauve ou l’opprime.</l>
             <l n="1046" xml:id="l1046">Voilà mon fils, madame, ou voilà ma victime.</l>
-            <l n="1047" xml:id="l1047" part="I">Adieu.</l>
+            <l n="1047" part="I" xml:id="l1047">Adieu.</l>
           </sp>
-          <sp xml:id="IV02-40" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV02-40">
             <speaker>MÉROPE</speaker>
             <l part="F">Ne m’ôtez pas la douceur de le voir ;</l>
             <l n="1048" xml:id="l1048">Rendez-le à mon amour, à mon vain désespoir.</l>
           </sp>
-          <sp xml:id="IV02-41" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="IV02-41">
             <speaker>POLYPHONTE</speaker>
-            <l n="1049" xml:id="l1049" part="I">Vous le verrez au temple.</l>
+            <l n="1049" part="I" xml:id="l1049">Vous le verrez au temple.</l>
           </sp>
-          <sp xml:id="IV02-42" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="IV02-42">
             <speaker>ÉGISTHE, que les soldats emmènent.</speaker>
             <l part="F">Ô reine auguste et chère !</l>
             <l n="1050" xml:id="l1050">Ô vous que j’ose à peine encor nommer ma mère !</l>
@@ -2125,9 +2185,10 @@
             <l n="1052" xml:id="l1052">Si je suis votre fils, je sais mourir en roi.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf23"><person corresp="#MEROPE"/></listPerson></head>
-          <sp xml:id="IV03-1" who="MEROPE">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#MEROPE"/></listPerson></head>
+          <sp who="MEROPE" xml:id="IV03-1">
             <speaker>MÉROPE</speaker>
             <l n="1053" xml:id="l1053">Cruels, vous l’enlevez ; en vain je vous implore :</l>
             <l n="1054" xml:id="l1054">Je ne l’ai donc revu que pour le perdre encore ?</l>
@@ -2139,41 +2200,48 @@
             <l n="1060" xml:id="l1060">Dans le fond des déserts, à l’abri des tyrans.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Mérope, Narbas, Euryclès.<listPerson type="configuration" xml:id="conf24"><person corresp="#MEROPE"/><person corresp="#NARBAS"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="IV04-1" who="MEROPE">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Mérope, Narbas, Euryclès.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#MEROPE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="MEROPE" xml:id="IV04-1">
             <speaker>MÉROPE</speaker>
             <l n="1061" xml:id="l1061">Sais-tu l’excès d’horreur où je me vois livrée ?</l>
           </sp>
-          <sp xml:id="IV04-2" who="NARBAS">
+          <sp who="NARBAS" xml:id="IV04-2">
             <speaker>NARBAS</speaker>
             <l n="1062" xml:id="l1062">Je sais que de mon roi la perte est assurée,</l>
             <l n="1063" xml:id="l1063">Que déjà dans les fers Égisthe est retenu,</l>
-            <l n="1064" xml:id="l1064" part="I">Qu’on observe mes pas.</l>
+            <l n="1064" part="I" xml:id="l1064">Qu’on observe mes pas.</l>
           </sp>
-          <sp xml:id="IV04-3" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV04-3">
             <speaker>MÉROPE</speaker>
             <l part="F">C’est moi qui l’ai perdu.</l>
           </sp>
-          <sp xml:id="IV04-4" who="NARBAS">
+          <sp who="NARBAS" xml:id="IV04-4">
             <speaker>NARBAS</speaker>
-            <l n="1065" xml:id="l1065" part="I">Vous !</l>
+            <l n="1065" part="I" xml:id="l1065">Vous !</l>
           </sp>
-          <sp xml:id="IV04-5" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV04-5">
             <speaker>MÉROPE</speaker>
             <l part="F">J’ai tout révélé. Mais, Narbas, quelle mère</l>
             <l n="1066" xml:id="l1066">Prête à perdre son fils peut le voir et se taire ?</l>
             <l n="1067" xml:id="l1067">J’ai parlé, c’en est fait, et je dois désormais</l>
             <l n="1068" xml:id="l1068">Réparer ma faiblesse à force de forfaits.</l>
           </sp>
-          <sp xml:id="IV04-6" who="NARBAS">
+          <sp who="NARBAS" xml:id="IV04-6">
             <speaker>NARBAS</speaker>
-            <l n="1069" xml:id="l1069" part="I">Quels forfaits dites-vous ?</l>
+            <l n="1069" part="I" xml:id="l1069">Quels forfaits dites-vous ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V. Mérope, Narbas, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf25"><person corresp="#ISMENIE"/><person corresp="#MEROPE"/><person corresp="#NARBAS"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="IV05-1" who="ISMENIE">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V. Mérope, Narbas, Euryclès, Isménie.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#ISMENIE"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="ISMENIE" xml:id="IV05-1">
             <speaker>ISMÉNIE</speaker>
             <l part="F">Voici l’heure, madame,</l>
             <l n="1070" xml:id="l1070">Qu’il vous faut rassembler les forces de votre âme.</l>
@@ -2192,23 +2260,23 @@
             <l n="1083" xml:id="l1083">Il célèbre à genoux cet hymen plein d’horreur :</l>
             <l n="1084" xml:id="l1084">Il bénit le tyran qui vous perce le coeur.</l>
           </sp>
-          <sp xml:id="IV05-2" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV05-2">
             <speaker>MÉROPE</speaker>
             <l n="1085" xml:id="l1085">Et mes malheurs encor font la publique joie !</l>
           </sp>
-          <sp xml:id="IV05-3" who="NARBAS">
+          <sp who="NARBAS" xml:id="IV05-3">
             <speaker>NARBAS</speaker>
             <l n="1086" xml:id="l1086">Pour sauver votre fils quelle funeste voie !</l>
           </sp>
-          <sp xml:id="IV05-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV05-4">
             <speaker>MÉROPE</speaker>
             <l n="1087" xml:id="l1087">C’est un crime effroyable, et déjà tu frémis.</l>
           </sp>
-          <sp xml:id="IV05-5" who="NARBAS">
+          <sp who="NARBAS" xml:id="IV05-5">
             <speaker>NARBAS</speaker>
             <l n="1088" xml:id="l1088">Mais c’en est un plus grand de perdre votre fils.</l>
           </sp>
-          <sp xml:id="IV05-6" who="MEROPE">
+          <sp who="MEROPE" xml:id="IV05-6">
             <speaker>MÉROPE</speaker>
             <l n="1089" xml:id="l1089">Eh bien ! Le désespoir m’a rendu mon courage.</l>
             <l n="1090" xml:id="l1090">Courons tous vers le temple où m’attend mon outrage.</l>
@@ -2230,11 +2298,14 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCENE I. Égisthe, Narbas, Euryclès.<listPerson type="configuration" xml:id="conf27"><person corresp="#NARBAS"/><person corresp="#EURYCLES"/><person corresp="#EGISTHE"/></listPerson></head>
-          <sp xml:id="V01-1" who="NARBAS">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCENE I. Égisthe, Narbas, Euryclès.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#NARBAS"/>
+            <person corresp="#EURYCLES"/>
+            <person corresp="#EGISTHE"/></listPerson></head>
+          <sp who="NARBAS" xml:id="V01-1">
             <speaker>NARBAS</speaker>
             <l n="1105" xml:id="l1105">Le tyran nous retient au palais de la reine,</l>
             <l n="1106" xml:id="l1106">Et notre destinée est encore incertaine.</l>
@@ -2244,13 +2315,13 @@
             <l n="1110" xml:id="l1110">Conservez une tête, hélas ! Si nécessaire,</l>
             <l n="1111" xml:id="l1111">Si longtemps menacée, et qui m’a tant coûté.</l>
           </sp>
-          <sp xml:id="V01-2" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V01-2">
             <speaker>EURYCLÈS</speaker>
             <l n="1112" xml:id="l1112">Songez que, pour vous seul abaissant sa fierté,</l>
             <l n="1113" xml:id="l1113">Mérope de ses pleurs daigne arroser encore</l>
             <l n="1114" xml:id="l1114">Les parricides mains d’un tyran qu’elle abhorre.</l>
           </sp>
-          <sp xml:id="V01-3" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V01-3">
             <speaker>ÉGISTHE</speaker>
             <l n="1115" xml:id="l1115">D’un long étonnement à peine revenu,</l>
             <l n="1116" xml:id="l1116">Je crois renaître ici dans un monde inconnu.</l>
@@ -2259,12 +2330,12 @@
             <l n="1119" xml:id="l1119">Son assassin triomphe ; il commande, et je sers !</l>
             <l n="1120" xml:id="l1120">Je suis le sang d’Hercule, et je suis dans les fers !</l>
           </sp>
-          <sp xml:id="V01-4" who="NARBAS">
+          <sp who="NARBAS" xml:id="V01-4">
             <speaker>NARBAS</speaker>
             <l n="1121" xml:id="l1121">Plût aux dieux qu’avec moi le petit-fils d’Alcide</l>
             <l n="1122" xml:id="l1122">Fût encore inconnu dans les champs de l’Élide !</l>
           </sp>
-          <sp xml:id="V01-5" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V01-5">
             <speaker>ÉGISTHE</speaker>
             <l n="1123" xml:id="l1123">Eh quoi ! Tous les malheurs aux humains réservés,</l>
             <l n="1124" xml:id="l1124">Faut-il, si jeune encor, les avoir éprouvés ?</l>
@@ -2288,14 +2359,18 @@
             <l n="1142" xml:id="l1142">Reteniez-vous tantôt la main désespérée ?</l>
             <l n="1143" xml:id="l1143">Mes malheurs finissaient ; mon sort était rempli.</l>
           </sp>
-          <sp xml:id="V01-6" who="NARBAS">
+          <sp who="NARBAS" xml:id="V01-6">
             <speaker>NARBAS</speaker>
             <l n="1144" xml:id="l1144">Ah ! Vous êtes perdu : le tyran vient ici.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Polyphonte, Égisthe, Narbas, Euryclès, gardes.<listPerson type="configuration" xml:id="conf28"><person corresp="#POLYPHONTE"/><person corresp="#EGISTHE"/><person corresp="#NARBAS"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="V02-1" who="POLYPHONTE">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Polyphonte, Égisthe, Narbas, Euryclès, gardes.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#POLYPHONTE"/>
+            <person corresp="#EGISTHE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="POLYPHONTE" xml:id="V02-1">
             <speaker>POLYPHONTE</speaker>
             <stage type="[N/A]">Narbas et Euryclès s’éloignent un peu.</stage>
             <l n="1145" xml:id="l1145">Retirez-vous ; et toi, dont l’aveugle jeunesse</l>
@@ -2323,7 +2398,7 @@
             <l n="1167" xml:id="l1167">La porte des grandeurs est ouverte pour toi.</l>
             <l n="1168" xml:id="l1168">Un refus de perdra ; choisis, et réponds-moi.</l>
           </sp>
-          <sp xml:id="V02-2" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V02-2">
             <speaker>ÉGISTHE</speaker>
             <l n="1169" xml:id="l1169">Tu me vois désarmé, comment puis-je répondre ?</l>
             <l n="1170" xml:id="l1170">Tes discours, je l’avoue, ont de quoi me confondre ;</l>
@@ -2334,7 +2409,7 @@
             <l n="1175" xml:id="l1175">Si c’est à Polyphonte à régler nos destins,</l>
             <l n="1176" xml:id="l1176">Et si le fils des rois punit les assassins.</l>
           </sp>
-          <sp xml:id="V02-3" who="POLYPHONTE">
+          <sp who="POLYPHONTE" xml:id="V02-3">
             <speaker>POLYPHONTE</speaker>
             <l n="1177" xml:id="l1177">Faible et fier ennemi, ma bonté t’encourage :</l>
             <l n="1178" xml:id="l1178">Tu me crois assez grand pour oublier l’outrage,</l>
@@ -2354,28 +2429,31 @@
             <l n="1192" xml:id="l1192">D’un conseil imprudent sa mort sera le prix.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Égisthe, Narbas, Euryclès.<listPerson type="configuration" xml:id="conf29"><person corresp="#EGISTHE"/><person corresp="#NARBAS"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="V03-1" who="EGISTHE">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Égisthe, Narbas, Euryclès.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#EGISTHE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="EGISTHE" xml:id="V03-1">
             <speaker>ÉGISTHE</speaker>
             <l n="1193" xml:id="l1193">Ah ! Je n’en recevrai que du sang qui m’anime.</l>
             <l n="1194" xml:id="l1194">Hercule ! Instruis mon bras à me venger du crime ;</l>
             <l n="1195" xml:id="l1195">Éclaire mon esprit, du sein des immortels !</l>
             <l n="1196" xml:id="l1196">Polyphonte m’appelle au pied de tes autels ;</l>
-            <l n="1197" xml:id="l1197" part="I">Et j’y cours.</l>
+            <l n="1197" part="I" xml:id="l1197">Et j’y cours.</l>
           </sp>
-          <sp xml:id="V03-2" who="NARBAS">
+          <sp who="NARBAS" xml:id="V03-2">
             <speaker>NARBAS</speaker>
             <l part="F">Ah ! Mon prince, êtes-vous las de vivre ?</l>
           </sp>
-          <sp xml:id="V03-3" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V03-3">
             <speaker>EURYCLÈS</speaker>
             <l n="1198" xml:id="l1198">Dans ce péril du moins si nous pouvions vous suivre !</l>
             <l n="1199" xml:id="l1199">Mais laissez-nous le temps d’éveiller un parti,</l>
             <l n="1200" xml:id="l1200">Qui, tout faible qu’il est, n’est point anéanti.</l>
-            <l n="1201" xml:id="l1201" part="I">Souffrez...</l>
+            <l n="1201" part="I" xml:id="l1201">Souffrez...</l>
           </sp>
-          <sp xml:id="V03-4" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V03-4">
             <speaker>ÉGISTHE</speaker>
             <l part="F">En d’autres temps mon courage tranquille</l>
             <l n="1202" xml:id="l1202">Au frein de vos leçons serait souple et docile ;</l>
@@ -2384,12 +2462,16 @@
             <l n="1205" xml:id="l1205">Qui ne peut se résoudre, aux conseils s’abandonne ;</l>
             <l n="1206" xml:id="l1206">Mais le sang des héros ne croit ici personne.</l>
             <l n="1207" xml:id="l1207">Le sort en est jeté... ciel, qu’est-ce que je vois !</l>
-            <l n="1208" xml:id="l1208" part="I">Mérope !</l>
+            <l n="1208" part="I" xml:id="l1208">Mérope !</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Mérope, Égisthe, Narbas, Euryclès, suite.<listPerson type="configuration" xml:id="conf30"><person corresp="#MEROPE"/><person corresp="#EGISTHE"/><person corresp="#NARBAS"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="V04-1" who="MEROPE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Mérope, Égisthe, Narbas, Euryclès, suite.<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#MEROPE"/>
+            <person corresp="#EGISTHE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="MEROPE" xml:id="V04-1">
             <speaker>MÉROPE</speaker>
             <l part="F">Le tyran m’ose envoyer vers toi :</l>
             <l n="1209" xml:id="l1209">Ne crois pas que je vive après cet hyménée ;</l>
@@ -2402,24 +2484,24 @@
             <l n="1216" xml:id="l1216">Pour savoir se venger, il faut savoir souffrir.</l>
             <l n="1217" xml:id="l1217">Je sens que ma faiblesse et t’indigne et t’outrage ;</l>
             <l n="1218" xml:id="l1218">Je t’en aime encor plus, et je crains davantage.</l>
-            <l n="1219" xml:id="l1219" part="I">Mon fils...</l>
+            <l n="1219" part="I" xml:id="l1219">Mon fils...</l>
           </sp>
-          <sp xml:id="V04-2" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-2">
             <speaker>ÉGISTHE</speaker>
             <l part="M">Osez me suivre.</l>
           </sp>
-          <sp xml:id="V04-3" who="MEROPE">
+          <sp who="MEROPE" xml:id="V04-3">
             <speaker>MÉROPE</speaker>
             <l part="F">Arrête. Que fais-tu ?</l>
             <l n="1220" xml:id="l1220">Dieux ! Je me plains à vous de son trop de vertu.</l>
           </sp>
-          <sp xml:id="V04-4" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-4">
             <speaker>ÉGISTHE</speaker>
             <l n="1221" xml:id="l1221">Voyez-vous en ces lieux le tombeau de mon père ?</l>
             <l n="1222" xml:id="l1222">Entendez-vous sa voix ? êtes-vous reine et mère ?</l>
-            <l n="1223" xml:id="l1223" part="I">Si vous l’êtes, venez.</l>
+            <l n="1223" part="I" xml:id="l1223">Si vous l’êtes, venez.</l>
           </sp>
-          <sp xml:id="V04-5" who="MEROPE">
+          <sp who="MEROPE" xml:id="V04-5">
             <speaker>MÉROPE</speaker>
             <l part="F">Il semble que le ciel</l>
             <l n="1224" xml:id="l1224">T’élève en ce moment au-dessus d’un mortel.</l>
@@ -2428,33 +2510,33 @@
             <l n="1227" xml:id="l1227">Il te presse, il t’inspire. ô mon fils ! Mon cher fils !</l>
             <l n="1228" xml:id="l1228">Achève, et rends la force à mes faibles esprits.</l>
           </sp>
-          <sp xml:id="V04-6" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-6">
             <speaker>ÉGISTHE</speaker>
             <l n="1229" xml:id="l1229">Auriez-vous des amis dans ce temple funeste ?</l>
           </sp>
-          <sp xml:id="V04-7" who="MEROPE">
+          <sp who="MEROPE" xml:id="V04-7">
             <speaker>MÉROPE</speaker>
             <l n="1230" xml:id="l1230">J’en eus quand j’étais reine, et le peu qui m’en reste</l>
             <l n="1231" xml:id="l1231">Sous un joug étranger baisse un front abattu ;</l>
             <l n="1232" xml:id="l1232">Le poids de mes malheurs accable leur vertu :</l>
             <l n="1233" xml:id="l1233">Polyphonte est haï ; mais c’est lui qu’on couronne :</l>
-            <l n="1234" xml:id="l1234" part="I">On m’aime, et l’on me fuit.</l>
+            <l n="1234" part="I" xml:id="l1234">On m’aime, et l’on me fuit.</l>
           </sp>
-          <sp xml:id="V04-8" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-8">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Quoi ! Tout vous abandonne !</l>
-            <l n="1235" xml:id="l1235" part="I">Ce monstre est à l’autel ?</l>
+            <l n="1235" part="I" xml:id="l1235">Ce monstre est à l’autel ?</l>
           </sp>
-          <sp xml:id="V04-9" who="MEROPE">
+          <sp who="MEROPE" xml:id="V04-9">
             <speaker>MÉROPE</speaker>
             <l part="M">Il m’attend.</l>
           </sp>
-          <sp xml:id="V04-10" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-10">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Ses soldats</l>
             <l n="1236" xml:id="l1236">À cet autel horrible accompagnent ses pas ?</l>
           </sp>
-          <sp xml:id="V04-11" who="MEROPE">
+          <sp who="MEROPE" xml:id="V04-11">
             <speaker>MÉROPE</speaker>
             <l n="1237" xml:id="l1237">Non : la porte est livrée à leur troupe cruelle ;</l>
             <l n="1238" xml:id="l1238">Il est environné de la foule infidèle</l>
@@ -2463,24 +2545,24 @@
             <l n="1241" xml:id="l1241">Et moi, de tous les siens à l’autel entourée,</l>
             <l n="1242" xml:id="l1242">De ces lieux à toi seul je puis ouvrir l’entrée.</l>
           </sp>
-          <sp xml:id="V04-12" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-12">
             <speaker>ÉGISTHE</speaker>
             <l n="1243" xml:id="l1243">Seul, je vous y suivrai ; j’y trouverai des dieux</l>
             <l n="1244" xml:id="l1244">Qui punissent le meurtre, et qui sont mes aïeux.</l>
           </sp>
-          <sp xml:id="V04-13" who="MEROPE">
+          <sp who="MEROPE" xml:id="V04-13">
             <speaker>MÉROPE</speaker>
-            <l n="1245" xml:id="l1245" part="I">Ils t’ont trahi quinze ans.</l>
+            <l n="1245" part="I" xml:id="l1245">Ils t’ont trahi quinze ans.</l>
           </sp>
-          <sp xml:id="V04-14" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-14">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Ils m’éprouvaient, sans doute.</l>
           </sp>
-          <sp xml:id="V04-15" who="MEROPE">
+          <sp who="MEROPE" xml:id="V04-15">
             <speaker>MÉROPE</speaker>
-            <l n="1246" xml:id="l1246" part="I">Eh ! Quel est ton dessein ?</l>
+            <l n="1246" part="I" xml:id="l1246">Eh ! Quel est ton dessein ?</l>
           </sp>
-          <sp xml:id="V04-16" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V04-16">
             <speaker>ÉGISTHE</speaker>
             <l part="F">Marchons, quoi qu’il en coûte.</l>
             <l n="1247" xml:id="l1247">Adieu, tristes amis ; vous connaîtrez du moins</l>
@@ -2490,9 +2572,11 @@
             <l n="1250" xml:id="l1250">Au sang qui m’a formé tu rendras témoignage.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Narbas, Euryclès.<listPerson type="configuration" xml:id="conf31"><person corresp="#NARBAS"/><person corresp="#EURYCLES"/></listPerson></head>
-          <sp xml:id="V05-1" who="NARBAS">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Narbas, Euryclès.<listPerson type="configuration" xml:id="conf31">
+            <person corresp="#NARBAS"/>
+            <person corresp="#EURYCLES"/></listPerson></head>
+          <sp who="NARBAS" xml:id="V05-1">
             <speaker>NARBAS</speaker>
             <l n="1251" xml:id="l1251">Que va-t-il faire ? Hélas ! Tous mes soins sont trahis ;</l>
             <l n="1252" xml:id="l1252">Les habiles tyrans ne sont jamais punis.</l>
@@ -2503,113 +2587,115 @@
             <l n="1257" xml:id="l1257">Égisthe va se perdre à force de courage :</l>
             <l n="1258" xml:id="l1258">Il désobéira ; la mort est son partage.</l>
           </sp>
-          <sp xml:id="V05-2" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V05-2">
             <speaker>EURYCLÈS</speaker>
             <l n="1259" xml:id="l1259">Entendez-vous ces cris dans les airs élancés ?</l>
           </sp>
-          <sp xml:id="V05-3" who="NARBAS">
+          <sp who="NARBAS" xml:id="V05-3">
             <speaker>NARBAS</speaker>
-            <l n="1260" xml:id="l1260" part="I">C’est le signal du crime.</l>
+            <l n="1260" part="I" xml:id="l1260">C’est le signal du crime.</l>
           </sp>
-          <sp xml:id="V05-4" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V05-4">
             <speaker>EURYCLÈS</speaker>
             <l part="M">Écoutons.</l>
           </sp>
-          <sp xml:id="V05-5" who="NARBAS">
+          <sp who="NARBAS" xml:id="V05-5">
             <speaker>NARBAS</speaker>
             <l part="F">Frémissez.</l>
           </sp>
-          <sp xml:id="V05-6" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V05-6">
             <speaker>EURYCLÈS</speaker>
             <l n="1261" xml:id="l1261">Sans doute qu’au moment d’épouser Polyphonte</l>
             <l n="1262" xml:id="l1262">La reine en expirant a prévenu sa honte ;</l>
             <l n="1263" xml:id="l1263">Tel était son dessein dans son mortel ennui.</l>
           </sp>
-          <sp xml:id="V05-7" who="NARBAS">
+          <sp who="NARBAS" xml:id="V05-7">
             <speaker>NARBAS</speaker>
             <l n="1264" xml:id="l1264">Ah ! Son fils n’est donc plus ! Elle eût vécu pour lui.</l>
           </sp>
-          <sp xml:id="V05-8" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V05-8">
             <speaker>EURYCLÈS</speaker>
             <l n="1265" xml:id="l1265">Le bruit croît, il redouble, il vient comme un tonnerre</l>
             <l n="1266" xml:id="l1266">Qui s’approche en grondant, et qui fond sur la terre.</l>
           </sp>
-          <sp xml:id="V05-9" who="NARBAS">
+          <sp who="NARBAS" xml:id="V05-9">
             <speaker>NARBAS</speaker>
             <l n="1267" xml:id="l1267">J’entends de tous côtés les cris des combattants,</l>
             <l n="1268" xml:id="l1268">Les sons de la trompette, et les voix des mourants ;</l>
             <l n="1269" xml:id="l1269">Du palais de Mérope on enfonce la porte.</l>
           </sp>
-          <sp xml:id="V05-10" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V05-10">
             <speaker>EURYCLÈS</speaker>
             <l n="1270" xml:id="l1270">Ah ! Ne voyez-vous pas cette cruelle escorte,</l>
             <l n="1271" xml:id="l1271">Qui court, qui se dissipe, et qui va loin de nous ?</l>
           </sp>
-          <sp xml:id="V05-11" who="NARBAS">
+          <sp who="NARBAS" xml:id="V05-11">
             <speaker>NARBAS</speaker>
             <l n="1272" xml:id="l1272">Va-t-elle du tyran servir l’affreux courroux ?</l>
           </sp>
-          <sp xml:id="V05-12" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V05-12">
             <speaker>EURYCLÈS</speaker>
             <l n="1273" xml:id="l1273">Autant que mes regards au loin peuvent s’étendre,</l>
-            <l n="1274" xml:id="l1274" part="I">On se mêle, on combat.</l>
+            <l n="1274" part="I" xml:id="l1274">On se mêle, on combat.</l>
           </sp>
-          <sp xml:id="V05-13" who="NARBAS">
+          <sp who="NARBAS" xml:id="V05-13">
             <speaker>NARBAS</speaker>
             <l part="F">Quel sang va-t-on répandre ?</l>
             <l n="1275" xml:id="l1275">De Mérope et du roi le nom remplit les airs.</l>
           </sp>
-          <sp xml:id="V05-14" who="EURYCLES">
+          <sp who="EURYCLES" xml:id="V05-14">
             <speaker>EURYCLÈS</speaker>
             <l n="1276" xml:id="l1276">Grâces aux immortels ! Les chemins sont ouverts.</l>
             <l n="1277" xml:id="l1277">Allons voir à l’instant s’il faut mourir ou vivre.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
-          <sp xml:id="V05-15" who="NARBAS">
+          <sp who="NARBAS" xml:id="V05-15">
             <speaker>NARBAS</speaker>
             <l n="1278" xml:id="l1278">Allons. D’un pas égal que ne puis-je vous suivre !</l>
             <l n="1279" xml:id="l1279">Ô dieux ! Rendez la force à ces bras énervés,</l>
             <l n="1280" xml:id="l1280">Pour le sang de mes rois autrefois éprouvés ;</l>
             <l n="1281" xml:id="l1281">Que je donne du moins les restes de ma vie.</l>
-            <l n="1282" xml:id="l1282" part="I">Hâtons-nous.</l>
+            <l n="1282" part="I" xml:id="l1282">Hâtons-nous.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE VI. Narbas, Isménie, peuple.<listPerson type="configuration" xml:id="conf32"><person corresp="#NARBAS"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="V06-1" who="NARBAS">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE VI. Narbas, Isménie, peuple.<listPerson type="configuration" xml:id="conf32">
+            <person corresp="#NARBAS"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="NARBAS" xml:id="V06-1">
             <speaker>NARBAS</speaker>
             <l part="F">Quel spectacle ! Est-ce vous, Isménie ?</l>
             <l n="1283" xml:id="l1283">Sanglante, inanimée, est-ce vous que je vois ?</l>
           </sp>
-          <sp xml:id="V06-2" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="V06-2">
             <speaker>ISMÉNIE</speaker>
             <l n="1284" xml:id="l1284">Ah ! Laissez-moi reprendre et la vie et la voix.</l>
           </sp>
-          <sp xml:id="V06-3" who="NARBAS">
+          <sp who="NARBAS" xml:id="V06-3">
             <speaker>NARBAS</speaker>
             <l n="1285" xml:id="l1285">Mon fils est-il vivant ? Que devient notre reine ?</l>
           </sp>
-          <sp xml:id="V06-4" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="V06-4">
             <speaker>ISMÉNIE</speaker>
             <l n="1286" xml:id="l1286">De mon saisissement je reviens avec peine ;</l>
             <l n="1287" xml:id="l1287">Par les flots de ce peuple entraînée en ces lieux...</l>
           </sp>
-          <sp xml:id="V06-5" who="NARBAS">
+          <sp who="NARBAS" xml:id="V06-5">
             <speaker>NARBAS</speaker>
-            <l n="1288" xml:id="l1288" part="I">Que fait Égisthe ?</l>
+            <l n="1288" part="I" xml:id="l1288">Que fait Égisthe ?</l>
           </sp>
-          <sp xml:id="V06-6" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="V06-6">
             <speaker>ISMÉNIE</speaker>
             <l part="F">Il est... le digne fils des dieux ;</l>
             <l n="1289" xml:id="l1289">Égisthe ! Il a frappé le coup le plus terrible.</l>
             <l n="1290" xml:id="l1290">Non, d’Alcide jamais la valeur invincible</l>
             <l n="1291" xml:id="l1291">N’a d’un exploit si rare étonné les humains.</l>
           </sp>
-          <sp xml:id="V06-7" who="NARBAS">
+          <sp who="NARBAS" xml:id="V06-7">
             <speaker>NARBAS</speaker>
             <l n="1292" xml:id="l1292">Ô mon fils ! ô mon roi, qu’ont élevé mes mains !</l>
           </sp>
-          <sp xml:id="V06-8" who="ISMENIE">
+          <sp who="ISMENIE" xml:id="V06-8">
             <speaker>ISMÉNIE</speaker>
             <l n="1293" xml:id="l1293">La victime était prête, et de fleurs couronnée ;</l>
             <l n="1294" xml:id="l1294">L’autel étincelait des flambeaux d’hyménée ;</l>
@@ -2668,7 +2754,7 @@
             <l n="1347" xml:id="l1347">Si le tyran n’est plus. Le trouble, la terreur,</l>
             <l n="1348" xml:id="l1348">Tout ce désordre horrible est encor dans mon coeur.</l>
           </sp>
-          <sp xml:id="V06-9" who="NARBAS">
+          <sp who="NARBAS" xml:id="V06-9">
             <speaker>NARBAS</speaker>
             <l n="1349" xml:id="l1349">Arbitre des humains, divine providence,</l>
             <l n="1350" xml:id="l1350">Achève ton ouvrage, et soutiens l’innocence :</l>
@@ -2677,10 +2763,14 @@
             <l n="1353" xml:id="l1353">Ah ! Parmi ces soldats ne vois-je point la reine ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
-          <head>SCÈNE VII. Mérope, Isménie, Narbas, peuple, soldats.<listPerson type="configuration" xml:id="conf33"><person corresp="#MEROPE"/><person corresp="#NARBAS"/><person corresp="#EGISTHE"/><person corresp="#POLYPHONTE"/></listPerson></head>
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE VII. Mérope, Isménie, Narbas, peuple, soldats.<listPerson type="configuration" xml:id="conf33">
+            <person corresp="#MEROPE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#EGISTHE"/>
+            <person corresp="#POLYPHONTE"/></listPerson></head>
           <stage type="[N/A]">On voit dans le fond du théâtre le corps de Polyphonte couvert d’une robe sanglante.</stage>
-          <sp xml:id="V07-1" who="MEROPE">
+          <sp who="MEROPE" xml:id="V07-1">
             <speaker>MÉROPE</speaker>
             <l n="1354" xml:id="l1354">Guerriers, prêtres, amis, citoyens de Messène,</l>
             <l n="1355" xml:id="l1355">Au nom des dieux vengeurs, peuples, écoutez-moi.</l>
@@ -2700,20 +2790,20 @@
             <l n="1368" xml:id="l1368">Quels témoins voulez-vous plus certains que mon coeur ?</l>
             <l n="1369" xml:id="l1369">Regardez ce vieillard ; c’est lui dont la prudence</l>
             <l n="1370" xml:id="l1370">Aux mains de Polyphonte arracha son enfance.</l>
-            <l n="1371" xml:id="l1371" part="I">Les dieux ont fait le reste.</l>
+            <l n="1371" part="I" xml:id="l1371">Les dieux ont fait le reste.</l>
           </sp>
-          <sp xml:id="V07-2" who="NARBAS">
+          <sp who="NARBAS" xml:id="V07-2">
             <speaker>NARBAS</speaker>
             <l part="F">Oui, j’atteste ces dieux</l>
             <l n="1372" xml:id="l1372">Que c’est là votre roi qui combattait pour eux.</l>
           </sp>
-          <sp xml:id="V07-3" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V07-3">
             <speaker>ÉGISTHE</speaker>
             <l n="1373" xml:id="l1373">Amis, pouvez-vous bien méconnaître une mère ?</l>
             <l n="1374" xml:id="l1374">Un fils qu’elle défend ? Un fils qui venge un père ?</l>
-            <l n="1375" xml:id="l1375" part="I">Un roi vengeur du crime ?</l>
+            <l n="1375" part="I" xml:id="l1375">Un roi vengeur du crime ?</l>
           </sp>
-          <sp xml:id="V07-4" who="MEROPE">
+          <sp who="MEROPE" xml:id="V07-4">
             <speaker>MÉROPE</speaker>
             <l part="F">Et si vous en doutez,</l>
             <l n="1376" xml:id="l1376">Reconnaissez mon fils aux coups qu’il a portés,</l>
@@ -2727,9 +2817,14 @@
             <l n="1384" xml:id="l1384">Sa voix rend témoignage, et dit qu’il est mon fils.</l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
-          <head>SCENE VIII. Mérope, Égisthe, Isménie, Narbas, Euryclès, peuple.<listPerson type="configuration" xml:id="conf34"><person corresp="#EURYCLES"/><person corresp="#EGISTHE"/><person corresp="#MEROPE"/><person corresp="#NARBAS"/><person corresp="#ISMENIE"/></listPerson></head>
-          <sp xml:id="V08-1" who="EURYCLES">
+        <div2 n="8" type="scene" xml:id="V08">
+          <head>SCENE VIII. Mérope, Égisthe, Isménie, Narbas, Euryclès, peuple.<listPerson type="configuration" xml:id="conf34">
+            <person corresp="#EURYCLES"/>
+            <person corresp="#EGISTHE"/>
+            <person corresp="#MEROPE"/>
+            <person corresp="#NARBAS"/>
+            <person corresp="#ISMENIE"/></listPerson></head>
+          <sp who="EURYCLES" xml:id="V08-1">
             <speaker>EURYCLÈS</speaker>
             <l n="1385" xml:id="l1385">Ah ! Montrez-vous, madame, à la ville calmée :</l>
             <l n="1386" xml:id="l1386">Du retour de son roi la nouvelle semée,</l>
@@ -2746,7 +2841,7 @@
             <l n="1397" xml:id="l1397">Ô roi ! Venez jouir du prix de la victoire ;</l>
             <l n="1398" xml:id="l1398">Ce prix est notre amour ; il vaut mieux que la gloire.</l>
           </sp>
-          <sp xml:id="V08-2" who="EGISTHE">
+          <sp who="EGISTHE" xml:id="V08-2">
             <speaker>ÉGISTHE</speaker>
             <l n="1399" xml:id="l1399">Elle n’est point à moi ; cette gloire est aux dieux :</l>
             <l n="1400" xml:id="l1400">Ainsi que le bonheur, la vertu nous vient d’eux.</l>

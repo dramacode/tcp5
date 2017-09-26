@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Les scythes</title>
         <title type="sub">, tragédie</title>
-        <author born="1694" born_location="Paris" death="1778" death_location="Paris" academie="1746">
+        <author academie="1746" born="1694" born_location="Paris" death="1778" death_location="Paris">
           <surname>Voltaire</surname>
         </author>
       </titleStmt>
@@ -33,7 +34,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -47,20 +48,20 @@
           <titlePart type="sub">NOUVELLE EDITION, Corrigée et augmentée sur celle de Genève.</titlePart>
         </docTitle>
         <docDate value="1757">M. DCC. LXVII. AVEC APPROBATION ET PERMISSION.</docDate>
-        <docAuthor id="VOLTAIRE" bio="voltaire">Par M. DE VOLTAIRE</docAuthor>
+        <docAuthor bio="voltaire" id="VOLTAIRE">Par M. DE VOLTAIRE</docAuthor>
         <docImprint>
           <privilege id="17**-**-**"/>
           <printer id="***">À PARIS, Chez LACOMBE, Libraire, quai de Conti.</printer>
           <approbation>
-          <head>APPROBATION</head>
-          <p>J’ai lu, par ordre de Monseigneur le ViceChancelier, Les Scythes, Tragédie, par M. de Voltaire, et je crois qu’on peut en permettre l’impression. À Paris, ce 21 mars 1767, MARIN.</p>
-        </approbation>
+            <head>APPROBATION</head>
+            <p>J’ai lu, par ordre de Monseigneur le ViceChancelier, Les Scythes, Tragédie, par M. de Voltaire, et je crois qu’on peut en permettre l’impression. À Paris, ce 21 mars 1767, MARIN.</p>
+          </approbation>
           <acheveImprime id="17**-**-**"/>
         </docImprint>
         <performance>
-        <premiere date="1767-03-26" location="Théâtre de la rue des Fossés Saint-Germain">Représentée, pour la première fois, sur le Théâtre Français, le 26 mars 1767.</premiere>
-        <nombre value=""> </nombre>
-      </performance>
+          <premiere date="1767-03-26" location="Théâtre de la rue des Fossés Saint-Germain">Représentée, pour la première fois, sur le Théâtre Français, le 26 mars 1767.</premiere>
+          <nombre value=""> </nombre>
+        </performance>
         <note>Texte établi à partir du document numérisé de la BnF cote YF-6693.</note>
       </titlePage>
       <div type="dedication">
@@ -144,34 +145,37 @@
       <div xml:id="castList">
         <castList>
           <head>PERSONNAGES</head>
-          <castItem><role xml:id="HERMODAN" rend="veteran">HERMODAN</role>, père d’Indatire, habitant d’un canton scythe.</castItem>
-          <castItem><role xml:id="INDATIRE" rend="male">INDATIRE</role>.</castItem>
-          <castItem><role xml:id="ATHAMARE" rend="male">ATHAMARE</role>, prince d’Ecbatane.</castItem>
-          <castItem><role xml:id="SOZAME" rend="veteran">SOZAME</role>, ancien général persan, retiré en Scythie.</castItem>
-          <castItem><role xml:id="OBEIDE" rend="female">OBÉIDE</role>, fille de Sozame.</castItem>
-          <castItem><role xml:id="SULMA" rend="female">SULMA</role>, compagne d’Obéide.</castItem>
-          <castItem><role xml:id="HIRCAN" rend="male">HIRCAN</role>, officier d’Athamare.</castItem>
-          <castItem><role xml:id="SCYTHES" rend="">SCYTHES</role>.</castItem>
-          <castItem><role xml:id="PERSANS" rend="">PERSANS</role>.</castItem>
+          <castItem><role rend="veteran" xml:id="HERMODAN">HERMODAN</role>, père d’Indatire, habitant d’un canton scythe.</castItem>
+          <castItem><role rend="male" xml:id="INDATIRE">INDATIRE</role>.</castItem>
+          <castItem><role rend="male" xml:id="ATHAMARE">ATHAMARE</role>, prince d’Ecbatane.</castItem>
+          <castItem><role rend="veteran" xml:id="SOZAME">SOZAME</role>, ancien général persan, retiré en Scythie.</castItem>
+          <castItem><role rend="female" xml:id="OBEIDE">OBÉIDE</role>, fille de Sozame.</castItem>
+          <castItem><role rend="female" xml:id="SULMA">SULMA</role>, compagne d’Obéide.</castItem>
+          <castItem><role rend="male" xml:id="HIRCAN">HIRCAN</role>, officier d’Athamare.</castItem>
+          <castItem><role xml:id="SCYTHES">SCYTHES</role>.</castItem>
+          <castItem><role xml:id="PERSANS">PERSANS</role>.</castItem>
         </castList>
-        <set location="Scythie" country="Turquie" periode="Ier avant JC" link="">.</set>
+        <set country="Turquie" link="" location="Scythie" periode="Ier avant JC">.</set>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
         <stage type="decor">Le théâtre représente un bocage et un berceau, avec un banc de gazon : on voit, dans le lointain, des campagnes et des cabanes.</stage>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Hermodan, Indatire, et Deux Scythes, couverts de peaux de tigres ou de lions.<listPerson type="configuration" xml:id="conf1"><person corresp="#HERMODAN"/><person corresp="#INDATIRE"/><person corresp="#SCYTHES"/></listPerson></head>
-          <sp xml:id="I01-1" who="HERMODAN">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE. Hermodan, Indatire, et Deux Scythes, couverts de peaux de tigres ou de lions.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#HERMODAN"/>
+            <person corresp="#INDATIRE"/>
+            <person corresp="#SCYTHES"/></listPerson></head>
+          <sp who="HERMODAN" xml:id="I01-1">
             <speaker>HERMODAN.</speaker>
             <l n="1" xml:id="l1">Indatire, mon fils, quelle est donc cette audace ?</l>
-            <l n="3" xml:id="l3">Qui sont ces étrangers ? Quelle insolente race</l>
+            <l n="2" xml:id="l2">Qui sont ces étrangers ? Quelle insolente race</l>
             <l n="3" xml:id="l3">A franchi les sommets des rochers d’Immaüs ?</l>
             <l n="4" xml:id="l4">Apportent-ils la guerre aux rives de l’Oxus ?</l>
             <l n="5" xml:id="l5">Que viennent-ils chercher dans nos forêts tranquilles ?</l>
           </sp>
-          <sp xml:id="I01-2" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I01-2">
             <speaker>INDATIRE.</speaker>
             <l n="6" xml:id="l6">Mes braves compagnons, sortis de leurs asiles,</l>
             <l n="7" xml:id="l7">Avec rapidité se sont rejoints à moi,</l>
@@ -226,18 +230,18 @@
             <l n="55" xml:id="l55">Ils pourront voir nos jeux et nos solennités,</l>
             <l n="56" xml:id="l56">Les charmes d’Obéide, et mes félicités.</l>
           </sp>
-          <sp xml:id="I01-3" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I01-3">
             <speaker>HERMODAN.</speaker>
             <l n="57" xml:id="l57">Ainsi donc, mon cher fils, jusqu’en notre contrée,</l>
             <l n="58" xml:id="l58">La Perse est triomphante ; Obéide adorée,</l>
             <l n="59" xml:id="l59">Par un charme invincible a subjugué tes sens !</l>
             <l n="60" xml:id="l60">Cet objet, tu le sais, naquit chez les Persans.</l>
           </sp>
-          <sp xml:id="I01-4" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I01-4">
             <speaker>INDATIRE.</speaker>
             <l n="61" xml:id="l61">On le dit ; mais qu’importe où le ciel la fit naître !</l>
           </sp>
-          <sp xml:id="I01-5" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I01-5">
             <speaker>HERMODAN.</speaker>
             <l n="62" xml:id="l62">Son père jusqu’ici ne s’est point fait connaître ;</l>
             <l n="63" xml:id="l63">Depuis quatre ans entiers qu’il goûte dans ces lieux</l>
@@ -253,7 +257,7 @@
             <l n="73" xml:id="l73">Quoiqu’il soit dans un âge où l’âme la plus pure</l>
             <l n="74" xml:id="l74">Peut rarement changer le pli de la nature.</l>
           </sp>
-          <sp xml:id="I01-6" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I01-6">
             <speaker>INDATIRE.</speaker>
             <l n="75" xml:id="l75">Son adorable fille est encore au-dessus.</l>
             <l n="76" xml:id="l76">De son sexe et du nôtre elle unit les vertus.</l>
@@ -272,7 +276,7 @@
             <l n="89" xml:id="l89">Elle est de nos beautés l’amour et le modèle ;</l>
             <l n="90" xml:id="l90">Le ciel la récompense en la rendant plus belle.</l>
           </sp>
-          <sp xml:id="I01-7" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I01-7">
             <speaker>HERMODAN.</speaker>
             <l n="91" xml:id="l91">Oui, je la crois, mon fils, digne de tant d’amour.</l>
             <l n="92" xml:id="l92">Mais d’où vient que son père admis dans ce séjour,</l>
@@ -285,19 +289,22 @@
             <l n="99" xml:id="l99">Et puis-je abandonner ton coeur trop prévenu</l>
             <l n="100" xml:id="l100">Au sang d’un étranger qui craint d’être connu ?</l>
           </sp>
-          <sp xml:id="I01-8" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I01-8">
             <speaker>INDATIRE.</speaker>
             <l n="101" xml:id="l101">Quel qu’il soit, il est libre, il est juste, intrépide,</l>
             <l n="102" xml:id="l102">Il m’aime, il est enfin le père d’Obéide.</l>
           </sp>
-          <sp xml:id="I01-9" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I01-9">
             <speaker>HERMODAN.</speaker>
-            <l n="103" xml:id="l103" part="I">Que je lui parle au moins. </l>
+            <l n="103" part="I" xml:id="l103">Que je lui parle au moins. </l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Hermodain, Indatire, Sozame.<listPerson type="configuration" xml:id="conf2"><person corresp="#INDATIRE"/><person corresp="#SOZAME"/><person corresp="#HERMODAN"/></listPerson></head>
-          <sp xml:id="I02-1" who="INDATIRE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Hermodain, Indatire, Sozame.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#INDATIRE"/>
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/></listPerson></head>
+          <sp who="INDATIRE" xml:id="I02-1">
             <speaker>INDATIRE.</speaker>
             <l part="F">Ô vieillard généreux !</l>
             <l n="104" xml:id="l104">Ô cher concitoyen de nos pâtres heureux !</l>
@@ -309,7 +316,7 @@
             <l n="110" xml:id="l110">Mon coeur se donne à toi, comme il est à mon père ;</l>
             <l n="111" xml:id="l111">Je te sers comme lui. Quoi, tu verses des pleurs !</l>
           </sp>
-          <sp xml:id="I02-2" who="SOZAME">
+          <sp who="SOZAME" xml:id="I02-2">
             <speaker>SOZAME.</speaker>
             <l n="112" xml:id="l112">J’en verse de tendresse ; et si dans mes malheurs</l>
             <l n="113" xml:id="l113">Cette heureuse alliance, où mon bonheur se fonde,</l>
@@ -317,18 +324,18 @@
             <l n="115" xml:id="l115">La cicatrice en reste ; et les biens les plus chers</l>
             <l n="116" xml:id="l116">Rappellent quelquefois les maux qu’on a soufferts.</l>
           </sp>
-          <sp xml:id="I02-3" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I02-3">
             <speaker>INDATIRE.</speaker>
             <l n="117" xml:id="l117">J’ignore tes chagrins, ta vertu m’est connue ;</l>
             <l n="118" xml:id="l118">Qui peut donc t’affliger ? Ma candeur ingénue</l>
             <l n="119" xml:id="l119">Mérite que ton coeur au mien daigne s’ouvrir.</l>
           </sp>
-          <sp xml:id="I02-4" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I02-4">
             <speaker>HERMODAN.</speaker>
             <l n="120" xml:id="l120">À la tendre amitié tu peux tout découvrir,</l>
-            <l n="121" xml:id="l121" part="I">Tu le dois.</l>
+            <l n="121" part="I" xml:id="l121">Tu le dois.</l>
           </sp>
-          <sp xml:id="I02-5" who="SOZAME">
+          <sp who="SOZAME" xml:id="I02-5">
             <speaker>SOZAME.</speaker>
             <l part="F">Ô mon fils ! Ô mon cher Indatire !</l>
             <l n="122" xml:id="l122">Ma fille est, je le sais, soumise à mon empire ;</l>
@@ -346,30 +353,32 @@
             <l n="134" xml:id="l134">Va, cher et noble espoir de ma triste famille ;</l>
             <l n="135" xml:id="l135">Mon fils, obtiens ses voeux ; je te réponds des miens.</l>
           </sp>
-          <sp xml:id="I02-6" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I02-6">
             <speaker>INDATIRE.</speaker>
             <l n="136" xml:id="l136">J’embrasse tes genoux, et je revole aux siens. </l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Hermodan, Sozame.<listPerson type="configuration" xml:id="conf3"><person corresp="#SOZAME"/><person corresp="#HERMODAN"/></listPerson></head>
-          <sp xml:id="I03-1" who="SOZAME">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Hermodan, Sozame.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/></listPerson></head>
+          <sp who="SOZAME" xml:id="I03-1">
             <speaker>SOZAME.</speaker>
             <l n="137" xml:id="l137">Ami, reposons-nous sur ce siège sauvage,</l>
-            <note type="L">Dais :  Ouvrage dans la forme des anciens ciels de lit et qui sert de couronnement à un autel, à un trône, etc. Poétiquement, sous le dais, sur le trône, au sein des grandeurs. [L]</note>
+            <note type="L">Dais : Ouvrage dans la forme des anciens ciels de lit et qui sert de couronnement à un autel, à un trône, etc. Poétiquement, sous le dais, sur le trône, au sein des grandeurs. [L]</note>
             <l n="138" xml:id="l138">Sous ce dais qu’ont formé la mousse et le feuillage,</l>
             <l n="139" xml:id="l139">La nature nous l’offre ; et je hais dès longtemps</l>
             <l n="140" xml:id="l140">Ceux que l’art a tissus dans les palais des grands.</l>
           </sp>
-          <sp xml:id="I03-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-2">
             <speaker>HERMODAN.</speaker>
-            <l n="141" xml:id="l141" part="I">Tu fus donc grand en Perse ?</l>
+            <l n="141" part="I" xml:id="l141">Tu fus donc grand en Perse ?</l>
           </sp>
-          <sp xml:id="I03-3" who="SOZAME">
+          <sp who="SOZAME" xml:id="I03-3">
             <speaker>SOZAME.</speaker>
             <l part="M">Il est vrai.</l>
           </sp>
-          <sp xml:id="I03-4" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-4">
             <speaker>HERMODAN.</speaker>
             <l part="F">Ton silence</l>
             <l n="142" xml:id="l142">M’a privé trop longtemps de cette confidence.</l>
@@ -382,9 +391,9 @@
             <l n="149" xml:id="l149">Et la simplicité de notre République</l>
             <l n="150" xml:id="l150">N’est point une leçon pour l’État monarchique.</l>
             <l n="151" xml:id="l151">Craignais-tu qu’un ami te fût moins attaché ?</l>
-            <l n="152" xml:id="l152" part="I">Crois-moi, tu t’abusais.</l>
+            <l n="152" part="I" xml:id="l152">Crois-moi, tu t’abusais.</l>
           </sp>
-          <sp xml:id="I03-5" who="SOZAME">
+          <sp who="SOZAME" xml:id="I03-5">
             <speaker>SOZAME.</speaker>
             <l part="F"> Si je t’ai tant caché</l>
             <l n="153" xml:id="l153">Mes honneurs, mes chagrins, ma chute, ma misère,</l>
@@ -394,20 +403,26 @@
             <l n="157" xml:id="l157">Ne rejaillît sur elle et ne flétrît sa gloire.</l>
             <l n="158" xml:id="l158">Apprends d’elle et de moi la malheureuse histoire.</l>
           </sp>
-          <sp xml:id="I03-6" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-6">
             <speaker>HERMODAN.</speaker>
             <stage type="[N/A]">Ils s’asseyent tous deux.</stage>
-            <l n="159" xml:id="l159" part="I">Sèche tes pleurs, et parle.</l>
+            <l n="159" part="I" xml:id="l159">Sèche tes pleurs, et parle.</l>
           </sp>
-          <sp xml:id="I03-7" who="SOZAME"><speaker>SOZAME.</speaker><l part="F">Apprends que sous Cyrus</l><l n="160" xml:id="l160">Je portais la terreur aux peuples éperdus.</l><l n="161" xml:id="l161">Ivre de cette gloire à qui l’on sacrifie,</l>
-*****
-	<l n="162" xml:id="l162">Ce fut moi dont la main subjugua l’Hircanie,</l><l n="163" xml:id="l163" part="I">Pays libre autrefois.</l></sp>
-          <sp xml:id="I03-8" who="HERMODAN">
+          <sp who="SOZAME" xml:id="I03-7">
+            <speaker>SOZAME.</speaker>
+            <l part="F">Apprends que sous Cyrus</l>
+            <l n="160" xml:id="l160">Je portais la terreur aux peuples éperdus.</l>
+            <l n="161" xml:id="l161">Ivre de cette gloire à qui l’on sacrifie,</l>
+            <ab type="ornament"> ***** </ab>
+            <l n="162" xml:id="l162">Ce fut moi dont la main subjugua l’Hircanie,</l>
+            <l n="163" part="I" xml:id="l163">Pays libre autrefois.</l>
+          </sp>
+          <sp who="HERMODAN" xml:id="I03-8">
             <speaker>HERMODAN.</speaker>
             <l part="F">Il est bien malheureux ;</l>
-            <l n="164" xml:id="l164" part="I">Il fut libre.</l>
+            <l n="164" part="I" xml:id="l164">Il fut libre.</l>
           </sp>
-          <sp xml:id="I03-9" who="SOZAME">
+          <sp who="SOZAME" xml:id="I03-9">
             <speaker>SOZAME.</speaker>
             <l part="F">Ah ! Crois-moi ; tous ces lauriers affreux,</l>
             <l n="165" xml:id="l165">Les exploits des tyrans, des peuples les misères,</l>
@@ -435,11 +450,11 @@
             <l n="187" xml:id="l187">Athamare est son nom ; sa criminelle ardeur</l>
             <l n="188" xml:id="l188">M’entraînait au tombeau couvert de déshonneur.</l>
           </sp>
-          <sp xml:id="I03-10" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-10">
             <speaker>HERMODAN.</speaker>
             <l n="189" xml:id="l189">As-tu par son trépas repoussé cet outrage ?</l>
           </sp>
-          <sp xml:id="I03-11" who="SOZAME">
+          <sp who="SOZAME" xml:id="I03-11">
             <speaker>SOZAME.</speaker>
             <l n="190" xml:id="l190">J’osai l’en menacer. Ma fille eut le courage</l>
             <l n="191" xml:id="l191">De me forcer à fuir les transports violents</l>
@@ -455,21 +470,21 @@
             <l n="201" xml:id="l201">C’est un crime en Médie, ainsi qu’à Babylone,</l>
             <l n="202" xml:id="l202">D’oser parler en homme à l’héritier du trône...</l>
           </sp>
-          <sp xml:id="I03-12" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-12">
             <speaker>HERMODAN.</speaker>
             <l n="203" xml:id="l203">Ô de la servitude effets avilissants !</l>
             <l n="204" xml:id="l204">Quoi ! La plainte est un crime à la Cour des Persans !</l>
           </sp>
-          <sp xml:id="I03-13" who="SOZAME">
+          <sp who="SOZAME" xml:id="I03-13">
             <speaker>SOZAME.</speaker>
             <l n="205" xml:id="l205">Le premier de l’État, quand il a pu déplaire,</l>
             <l n="206" xml:id="l206">S’il est persécuté, doit souffrir et se taire.</l>
           </sp>
-          <sp xml:id="I03-14" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-14">
             <speaker>HERMODAN.</speaker>
             <l n="207" xml:id="l207">Comment recherchas-tu cette basse grandeur ?</l>
           </sp>
-          <sp xml:id="I03-15" who="SOZAME">
+          <sp who="SOZAME" xml:id="I03-15">
             <speaker>SOZAME.</speaker>
             <stage type="[N/A]">Les deux vieillards se lèvent.</stage>
             <l n="208" xml:id="l208">Ce souvenir honteux soulève encor mon coeur.</l>
@@ -500,7 +515,7 @@
             <l n="233" xml:id="l233">Voilà ce qui tantôt rappelant mes alarmes,</l>
             <l n="234" xml:id="l234">À rouvert un moment la source de mes larmes.</l>
           </sp>
-          <sp xml:id="I03-16" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-16">
             <speaker>HERMODAN.</speaker>
             <l n="235" xml:id="l235">Que peux-tu craindre ici ? Qu’a-t-elle à regretter ?</l>
             <l n="236" xml:id="l236">Nous valons pour le moins ce qu’elle a su quitter ;</l>
@@ -509,7 +524,7 @@
             <l n="239" xml:id="l239">La franchise qui règne en nos déserts heureux</l>
             <l n="240" xml:id="l240">Fait mépriser la Cour et ses fers dangereux.</l>
           </sp>
-          <sp xml:id="I03-17" who="SOZAME">
+          <sp who="SOZAME" xml:id="I03-17">
             <speaker>SOZAME.</speaker>
             <l n="241" xml:id="l241">Je mourrais trop content si ma chère Obéide</l>
             <l n="242" xml:id="l242">Haïssait comme moi cette Cour si perfide.</l>
@@ -520,24 +535,27 @@
             <l n="247" xml:id="l247">Cache-les à ton fils ; et que de ses amours</l>
             <l n="248" xml:id="l248">Mes chagrins inquiets n’altèrent point le cours.</l>
           </sp>
-          <sp xml:id="I03-18" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I03-18">
             <speaker>HERMODAN.</speaker>
             <l n="249" xml:id="l249">Va, je te le promets ; mais apprends qu’on devine</l>
             <l n="250" xml:id="l250">Dans ces rustiques lieux ton illustre origine.</l>
             <l n="251" xml:id="l251">Tu n’en es pas moins cher à nos simples esprits.</l>
             <l n="252" xml:id="l252">Je tairai tout le reste, et surtout à mon fils ;</l>
-            <l n="253" xml:id="l253" part="I">Il s’en alarmerait.</l>
+            <l n="253" part="I" xml:id="l253">Il s’en alarmerait.</l>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCÈNE IV. Hermodan, Sozame, Indatire.<listPerson type="configuration" xml:id="conf4"><person corresp="#INDATIRE"/><person corresp="#SOZAME"/><person corresp="#HERMODAN"/></listPerson></head>
-          <sp xml:id="I04-1" who="INDATIRE">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCÈNE IV. Hermodan, Sozame, Indatire.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#INDATIRE"/>
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/></listPerson></head>
+          <sp who="INDATIRE" xml:id="I04-1">
             <speaker>INDATIRE.</speaker>
             <l part="F">Obéide se donne ;</l>
             <l n="254" xml:id="l254">Obéide est à moi, si ta bonté l’ordonne,</l>
-            <l n="255" xml:id="l255" part="I">Si mon père y souscrit.</l>
+            <l n="255" part="I" xml:id="l255">Si mon père y souscrit.</l>
           </sp>
-          <sp xml:id="I04-2" who="SOZAME">
+          <sp who="SOZAME" xml:id="I04-2">
             <speaker>SOZAME.</speaker>
             <l part="F">Nous l’approuvons tous deux.</l>
             <l n="256" xml:id="l256">Notre bonheur, mon fils, est de te voir heureux.</l>
@@ -545,9 +563,13 @@
             <l n="258" xml:id="l258">Il me fait citoyen de ta noble patrie.</l>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Sozame, Hermodan, Indatire, Un Scythe.<listPerson type="configuration" xml:id="conf5"><person corresp="#LESCYTHE"/><person corresp="#HERMODAN"/><person corresp="#INDATIRE"/><person corresp="#SOZAME"/></listPerson></head>
-          <sp xml:id="I05-1" who="LESCYTHE">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Sozame, Hermodan, Indatire, Un Scythe.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#SCYTHES"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#INDATIRE"/>
+            <person corresp="#SOZAME"/></listPerson></head>
+          <sp who="SCYTHES" xml:id="I05-1">
             <speaker>LE SCYTHE.</speaker>
             <l n="259" xml:id="l259">Respectables vieillards, sachez que nos hameaux</l>
             <l n="260" xml:id="l260">Seront bientôt remplis de nos hôtes nouveaux.</l>
@@ -556,15 +578,15 @@
             <l n="263" xml:id="l263">Il nous demande à tous en quels lieux est caché</l>
             <l n="264" xml:id="l264">Ce vieillard malheureux qu’il a longtemps cherché.</l>
           </sp>
-          <sp xml:id="I05-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I05-2">
             <speaker>HERMODAN, à Sozame.</speaker>
             <l n="265" xml:id="l265">Ô ciel ! Jusqu’en mes bras il viendrait te poursuivre !</l>
           </sp>
-          <sp xml:id="I05-3" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I05-3">
             <speaker>INDATIRE.</speaker>
             <l n="266" xml:id="l266">Lui poursuivre Sozame ! Il cesserait de vivre.</l>
           </sp>
-          <sp xml:id="I05-4" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="I05-4">
             <speaker>LE SCYTHE.</speaker>
             <l n="267" xml:id="l267">Ce généreux Persan ne vient point défier</l>
             <l n="268" xml:id="l268">Un peuple de pasteurs innocent et guerrier.</l>
@@ -579,7 +601,7 @@
             <l n="277" xml:id="l277">Celui-ci paraît fier, mais sensible, mais tendre ;</l>
             <l n="278" xml:id="l278">Il veut cacher les pleurs que je l’ai vu répandre.</l>
           </sp>
-          <sp xml:id="I05-5" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="I05-5">
             <speaker>HERMODAN, à Sozame.</speaker>
             <l n="279" xml:id="l279">Ses pleurs me sont suspects, ainsi que ses présents.</l>
             <l n="280" xml:id="l280">Pardonne à mes soupçons, mais je crains les Persans.</l>
@@ -590,22 +612,22 @@
             <l n="285" xml:id="l285">D’un prince quelquefois le malheureux ministre</l>
             <l n="286" xml:id="l286">Pleure en obéissant à son ordre sinistre.</l>
           </sp>
-          <sp xml:id="I05-6" who="SOZAME">
+          <sp who="SOZAME" xml:id="I05-6">
             <speaker>SOZAME.</speaker>
             <l n="287" xml:id="l287">Oubliant tous les Rois dans ces heureux climats,</l>
             <l n="288" xml:id="l288">Je suis oublié d’eux, et je ne les crains pas.</l>
           </sp>
-          <sp xml:id="I05-7" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I05-7">
             <speaker>INDATIRE, à Sozame.</speaker>
             <l n="289" xml:id="l289">Nous mourrions à tes pieds, avant qu’un téméraire</l>
             <l n="290" xml:id="l290">Pût manquer seulement de respect à mon père.</l>
           </sp>
-          <sp xml:id="I05-8" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="I05-8">
             <speaker>LE SCYTHE.</speaker>
             <l n="291" xml:id="l291">S’il vient pour te trahir, va, nous l’en punirons.</l>
             <l n="292" xml:id="l292">Si c’est un exilé, nous le protégerons.</l>
           </sp>
-          <sp xml:id="I05-9" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="I05-9">
             <speaker>INDATIRE.</speaker>
             <l n="293" xml:id="l293">Ouvrons en paix nos coeurs à la pure allégresse.</l>
             <l n="294" xml:id="l294">Que nous fait d’un Persan la joie ou la tristesse ?</l>
@@ -621,15 +643,17 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Obéide, Sulma.<listPerson type="configuration" xml:id="conf7"><person corresp="#SULMA"/><person corresp="#OBEIDE"/></listPerson></head>
-          <sp xml:id="II01-1" who="SULMA">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE PREMIÈRE. Obéide, Sulma.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#SULMA"/>
+            <person corresp="#OBEIDE"/></listPerson></head>
+          <sp who="SULMA" xml:id="II01-1">
             <speaker>SULMA.</speaker>
-            <l n="303" xml:id="l303" part="I">Vous y résolvez-vous ?</l>
+            <l n="303" part="I" xml:id="l303">Vous y résolvez-vous ?</l>
           </sp>
-          <sp xml:id="II01-2" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II01-2">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Oui, j’aurai le courage</l>
             <l n="304" xml:id="l304">D’ensevelir mes jours en ce désert sauvage.</l>
@@ -658,7 +682,7 @@
             <l n="327" xml:id="l327">La gloire de me vaincre et d’imiter mon père,</l>
             <l n="328" xml:id="l328">En m’en donnant la force est mon noble salaire.</l>
           </sp>
-          <sp xml:id="II01-3" who="SULMA">
+          <sp who="SULMA" xml:id="II01-3">
             <speaker>SULMA.</speaker>
             <l n="329" xml:id="l329">Votre rare vertu passe votre malheur ;</l>
             <l n="330" xml:id="l330">Dans votre abaissement je vois votre grandeur.</l>
@@ -669,7 +693,7 @@
             <l n="335" xml:id="l335">On souffre en sa patrie ; elle peut nous déplaire ;</l>
             <l n="336" xml:id="l336">Mais quand on l’a perdue, alors elle est bien chère.</l>
           </sp>
-          <sp xml:id="II01-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II01-4">
             <speaker>OBÉIDE.</speaker>
             <l n="337" xml:id="l337">Si la Perse a pour toi des charmes si puissants,</l>
             <l n="338" xml:id="l338">je te contrains pas, quitte moi, j’y consens ;</l>
@@ -687,7 +711,7 @@
             <l n="350" xml:id="l350">La superbe Ecbatane et ses peuples heureux.</l>
             <l n="351" xml:id="l351">Laisse dans ces déserts ta fidèle Obéide.</l>
           </sp>
-          <sp xml:id="II01-5" who="SULMA">
+          <sp who="SULMA" xml:id="II01-5">
             <speaker>SULMA.</speaker>
             <l n="352" xml:id="l352">Ah ! Que la mort plutôt frappe cette perfide,</l>
             <l n="353" xml:id="l353">Si jamais je conçois le criminel dessein</l>
@@ -698,7 +722,7 @@
             <l n="358" xml:id="l358">Que je vois tant d’appas, de gloire, de grandeur,</l>
             <l n="359" xml:id="l359">D’un soldat de Scythie être ici le partage.</l>
           </sp>
-          <sp xml:id="II01-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II01-6">
             <speaker>OBÉIDE.</speaker>
             <l n="360" xml:id="l360">Après mon infortune, après l’indigne outrage</l>
             <l n="361" xml:id="l361">Qu’a fait à ma famille, à mon âge, à mon nom,</l>
@@ -707,14 +731,14 @@
             <l n="364" xml:id="l364">Fait toujours rejaillir sur la faible innocence,</l>
             <l n="365" xml:id="l365">Morte pour mon pays, et cachée en ces lieux,</l>
             <l n="366" xml:id="l366">Tous les humains, Sulma, sont égaux à mes yeux ;</l>
-            <l n="367" xml:id="l367" part="I">Tout m’est indifférent !</l>
+            <l n="367" part="I" xml:id="l367">Tout m’est indifférent !</l>
           </sp>
-          <sp xml:id="II01-7" who="SULMA">
+          <sp who="SULMA" xml:id="II01-7">
             <speaker>SULMA.</speaker>
             <l part="F">Ah ! Contrainte inutile !</l>
             <l n="368" xml:id="l368">Est-ce avec des sanglots qu’on montre un coeur tranquille ?</l>
           </sp>
-          <sp xml:id="II01-8" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II01-8">
             <speaker>OBÉIDE.</speaker>
             <l n="369" xml:id="l369">Hélas ! Veux-tu m’ôter, en croyant m’éblouir,</l>
             <l n="370" xml:id="l370">Ce malheureux repos dont je cherche à jouir !</l>
@@ -722,11 +746,11 @@
             <l n="372" xml:id="l372">Il ne l’ordonne point, mais je sais trop l’entendre.</l>
             <l n="373" xml:id="l373">Le fils de son ami doit être préféré.</l>
           </sp>
-          <sp xml:id="II01-9" who="SULMA">
+          <sp who="SULMA" xml:id="II01-9">
             <speaker>SULMA.</speaker>
-            <l n="374" xml:id="l374" part="I">Votre choix est donc fait !</l>
+            <l n="374" part="I" xml:id="l374">Votre choix est donc fait !</l>
           </sp>
-          <sp xml:id="II01-10" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II01-10">
             <speaker>OBÉIDE.</speaker>
             <note type="C">De jeunes filles dressent un autel au fond du théâtre.</note>
             <l part="F">Tu vois l’autel sacré.</l>
@@ -734,14 +758,17 @@
             <l n="376" xml:id="l376">Ignorant de l’hymen les chaînes dangereuses,</l>
             <l n="377" xml:id="l377">Tranquilles, sans regrets, sans cruel souvenir.</l>
           </sp>
-          <sp xml:id="II01-11" who="SULMA">
+          <sp who="SULMA" xml:id="II01-11">
             <speaker>SULMA.</speaker>
             <l n="378" xml:id="l378">D’où vient qu’à cet aspect vous paraissez frémir ?</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Obéide, Sulma, Indatire.<listPerson type="configuration" xml:id="conf8"><person corresp="#INDATIRE"/><person corresp="#OBEIDE"/><person corresp="#SULMA"/></listPerson></head>
-          <sp xml:id="II02-1" who="INDATIRE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Obéide, Sulma, Indatire.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#INDATIRE"/>
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SULMA"/></listPerson></head>
+          <sp who="INDATIRE" xml:id="II02-1">
             <speaker>INDATIRE.</speaker>
             <l n="379" xml:id="l379">Cet autel me rappelle en ces forêts si chères ;</l>
             <l n="380" xml:id="l380">Tu conduis tous mes pas, je devance nos pères.</l>
@@ -762,14 +789,14 @@
             <l n="395" xml:id="l395">Préfères-tu nos moeurs aux moeurs de ton Empire ?</l>
             <l n="396" xml:id="l396">La sincère Obéide aime-t-elle Indatire ?</l>
           </sp>
-          <sp xml:id="II02-2" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II02-2">
             <speaker>OBÉIDE.</speaker>
             <l n="397" xml:id="l397">Je connais tes vertus, j’estime ta valeur,</l>
             <l n="398" xml:id="l398">Et de ton coeur ouvert la naïve candeur ;</l>
             <l n="399" xml:id="l399">Je te l’ai déjà dit, je l’ai dit à mon père ;</l>
             <l n="400" xml:id="l400">Et son choix et le mien doivent te satisfaire.</l>
           </sp>
-          <sp xml:id="II02-3" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="II02-3">
             <speaker>INDATIRE.</speaker>
             <l n="401" xml:id="l401">Non, tu sembles parler un langage étranger ;</l>
             <l n="402" xml:id="l402">Et même en m’approuvant, tu viens de m’affliger.</l>
@@ -782,13 +809,13 @@
             <l n="409" xml:id="l409">Dis-moi, chère Obéide, aurais-je le malheur</l>
             <l n="410" xml:id="l410">Que le ciel t’eût fait naître au sein de la grandeur ?</l>
           </sp>
-          <sp xml:id="II02-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II02-4">
             <speaker>OBÉIDE.</speaker>
             <l n="411" xml:id="l411">Ce n’est point ton malheur, c’est le mien... - Ma mémoire</l>
             <l n="412" xml:id="l412">Ne me retrace plus cette trompeuse gloire.</l>
-            <l n="413" xml:id="l413" part="I">Je l’oublie à jamais.</l>
+            <l n="413" part="I" xml:id="l413">Je l’oublie à jamais.</l>
           </sp>
-          <sp xml:id="II02-5" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="II02-5">
             <speaker>INDATIRE.</speaker>
             <l part="F">Plus ton coeur adoré</l>
             <l n="414" xml:id="l414">En perd le souvenir, plus je m’en souviendrai.</l>
@@ -801,52 +828,58 @@
             <l n="421" xml:id="l421">Il n’a pour ornement que des tissus de fleurs,</l>
             <l n="422" xml:id="l422">Présents de la nature, images de nos coeurs.</l>
           </sp>
-          <sp xml:id="II02-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II02-6">
             <speaker>OBÉIDE.</speaker>
             <l n="423" xml:id="l423">Va, je crois que des Cieux le grand et juste maître</l>
             <l n="424" xml:id="l424">Préfère ce saint culte, et cet autel champêtre,</l>
             <l n="425" xml:id="l425">À nos temples fameux que l’orgueil a bâtis.</l>
             <l n="426" xml:id="l426">Les Dieux qu’on y fait d’or y sont bien mal servis.</l>
           </sp>
-          <sp xml:id="II02-7" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="II02-7">
             <speaker>INDATIRE.</speaker>
             <l n="427" xml:id="l427">Sais-tu que ces Persans venus sur ces rivages</l>
             <l n="428" xml:id="l428">Veulent voir notre fête et nos riants bocages ?</l>
             <l n="429" xml:id="l429">Par la main des vertus ils nous verront unis.</l>
           </sp>
-          <sp xml:id="II02-8" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II02-8">
             <speaker>OBÉIDE.</speaker>
-            <l n="430" xml:id="l430" part="I">Les Persans ! - Que dis-tu ? - Les Persans !</l>
+            <l n="430" part="I" xml:id="l430">Les Persans ! - Que dis-tu ? - Les Persans !</l>
           </sp>
-          <sp xml:id="II02-9" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="II02-9">
             <speaker>INDATIRE.</speaker>
             <l part="F">Tu frémis !</l>
             <l n="431" xml:id="l431">Quelle pâleur, ô ciel ! Sur ton front répandue !</l>
             <l n="432" xml:id="l432">Des esclaves d’un roi peux-tu craindre la vue ?</l>
           </sp>
-          <sp xml:id="II02-10" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II02-10">
             <speaker>OBÉIDE.</speaker>
-            <l n="433" xml:id="l433" part="I">Ah ! Ma chère Sulma !</l>
+            <l n="433" part="I" xml:id="l433">Ah ! Ma chère Sulma !</l>
           </sp>
-          <sp xml:id="II02-11" who="SULMA">
+          <sp who="SULMA" xml:id="II02-11">
             <speaker>SULMA.</speaker>
             <l part="F">Votre père et le sien</l>
             <l n="434" xml:id="l434">Viennent former ici votre éternel lien !</l>
           </sp>
-          <sp xml:id="II02-12" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="II02-12">
             <speaker>INDATIRE.</speaker>
             <l n="435" xml:id="l435">Nos parents, nos amis, tes compagnes fidèles.</l>
             <l n="436" xml:id="l436">Viennent tous consacrer nos fêtes solennelles.</l>
           </sp>
-          <sp xml:id="II02-13" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II02-13">
             <speaker>OBÉIDE, à Sulma.</speaker>
-            <l n="437" xml:id="l437" part="I">Allons, - je l’ai voulu.</l>
+            <l n="437" part="I" xml:id="l437">Allons, - je l’ai voulu.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Obéide, Sulma, Indatire, Sozame, Hermodan.<listPerson type="configuration" xml:id="conf9"><person corresp="#HERMODAN"/><person corresp="#SOZAME"/><person corresp="#INDATIRE"/><person corresp="#OBEIDE"/><person corresp="#SULMA"/><person corresp="#SCYTHES"/></listPerson></head>
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Obéide, Sulma, Indatire, Sozame, Hermodan.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#HERMODAN"/>
+            <person corresp="#SOZAME"/>
+            <person corresp="#INDATIRE"/>
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SULMA"/>
+            <person corresp="#SCYTHES"/></listPerson></head>
           <stage type="[N/A]">Des filles couronnées de fleurs, et des Scythes sans armes font un demi-cercle autour de l’autel.</stage>
-          <sp xml:id="II03-1" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="II03-1">
             <speaker>HERMODAN.</speaker>
             <l part="F">Voici l’autel sacré,</l>
             <l n="438" xml:id="l438">L’autel de la nature à l’amour préparé,</l>
@@ -855,12 +888,12 @@
             <l n="440" xml:id="l440">Nous n’avons point ici de plus pompeux mystères ;</l>
             <l n="441" xml:id="l441">Notre culte, Obéide, est simple comme vous.</l>
           </sp>
-          <sp xml:id="II03-2" who="SOZAME">
+          <sp who="SOZAME" xml:id="II03-2">
             <speaker>SOZAME, à Obéide.</speaker>
             <l n="442" xml:id="l442">De la main de ton père accepte ton époux.</l>
             <stage type="[N/A]">Obéide et Indatire mettent la main sur l’autel.</stage>
           </sp>
-          <sp xml:id="II03-3" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="II03-3">
             <speaker>INDATIRE.</speaker>
             <l n="443" xml:id="l443">Je jure à ma patrie, à mon père, à moi-même,</l>
             <l n="444" xml:id="l444">À nos Dieux éternels, à cet objet que j’aime,</l>
@@ -869,21 +902,21 @@
             <l n="447" xml:id="l447">Et, toujours plus épris, et toujours plus fidèle,</l>
             <l n="448" xml:id="l448">De vivre, de combattre, et de mourir pour elle.</l>
           </sp>
-          <sp xml:id="II03-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II03-4">
             <speaker>OBÉIDE.</speaker>
             <l n="449" xml:id="l449">Je me soumets, grands Dieux, à vos augustes lois ;</l>
             <l n="450" xml:id="l450">Je jure d’être à lui. - Ciel ! Qu’est-ce que je vois !</l>
             <stage type="[N/A]">Ici Athamare et des Persans paraissent dans le fond.</stage>
           </sp>
-          <sp xml:id="II03-5" who="SULMA">
+          <sp who="SULMA" xml:id="II03-5">
             <speaker>SULMA.</speaker>
-            <l n="451" xml:id="l451" part="I">Ah ! Madame.</l>
+            <l n="451" part="I" xml:id="l451">Ah ! Madame.</l>
           </sp>
-          <sp xml:id="II03-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="II03-6">
             <speaker>OBÉIDE.</speaker>
             <l part="M">Je meurs, qu’on m’emporte.</l>
           </sp>
-          <sp xml:id="II03-7" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="II03-7">
             <speaker>INDATIRE.</speaker>
             <l part="F">Ah ! Sozame,</l>
             <l n="452" xml:id="l452">Quelle terreur subite a donc frappé son âme ?</l>
@@ -891,9 +924,14 @@
             <stage type="exit">Les femmes Scythes sortent avec Indatire.</stage>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Sozame, Hermodan, Athamare, Hircan, Scythes.<listPerson type="configuration" xml:id="conf10"><person corresp="#SOZAME"/><person corresp="#ATHAMARE"/><person corresp="#HERMODAN"/><person corresp="#HIRCAN"/><person corresp="#SCYTHES"/></listPerson></head>
-          <sp xml:id="II04-1" who="SOZAME">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Sozame, Hermodan, Athamare, Hircan, Scythes.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#SOZAME"/>
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#HIRCAN"/>
+            <person corresp="#SCYTHES"/></listPerson></head>
+          <sp who="SOZAME" xml:id="II04-1">
             <speaker>SOZAME.</speaker>
             <l n="454" xml:id="l454">Scythes, demeurez tous... Voici donc de mes jours</l>
             <l n="455" xml:id="l455">Le jour le plus étrange et le plus effroyable.</l>
@@ -908,7 +946,7 @@
             <l n="463" xml:id="l463">Je demeure étonné de l’audace inouïe</l>
             <l n="464" xml:id="l464">Qui t’amène si loin pour hasarder ta vie.</l>
           </sp>
-          <sp xml:id="II04-2" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="II04-2">
             <speaker>ATHAMARE.</speaker>
             <l n="465" xml:id="l465">Peuple juste, écoutez ; je m’en remets à vous.</l>
             <l n="466" xml:id="l466">Le neveu de Cyrus vous fait juge entre nous.</l>
@@ -941,11 +979,11 @@
             <l n="493" xml:id="l493">Qui met à tes genoux sa faute et ses douleurs,</l>
             <l n="494" xml:id="l494">Et qui s’honore encore de les baigner de pleurs.</l>
           </sp>
-          <sp xml:id="II04-3" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="II04-3">
             <speaker>HERMODAN.</speaker>
             <l n="495" xml:id="l495">Je me sens attendri d’un spectacle si rare.</l>
           </sp>
-          <sp xml:id="II04-4" who="SOZAME">
+          <sp who="SOZAME" xml:id="II04-4">
             <speaker>SOZAME.</speaker>
             <l n="496" xml:id="l496">Tu ne me séduis point, malheureux Athamare.</l>
             <l n="497" xml:id="l497">Si le repentir seul avait pu t’amener.</l>
@@ -962,14 +1000,16 @@
             <l n="508" xml:id="l508">De ne pas révéler ton imprudence audace.</l>
             <l n="509" xml:id="l509">Ami, courons chercher et ma fille et ton fils.</l>
           </sp>
-          <sp xml:id="II04-5" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="II04-5">
             <speaker>HERMODAN.</speaker>
             <l n="510" xml:id="l510">Viens, redoublons les noeuds qui nous ont tous unis.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Athamare, Hircan.<listPerson type="configuration" xml:id="conf11"><person corresp="#ATHAMARE"/><person corresp="#HIRCAN"/></listPerson></head>
-          <sp xml:id="II05-1" who="ATHAMARE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Athamare, Hircan.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#HIRCAN"/></listPerson></head>
+          <sp who="ATHAMARE" xml:id="II05-1">
             <speaker>ATHAMARE.</speaker>
             <l n="511" xml:id="l511">Je demeure immobile. Ô ciel ! Ô destinée !</l>
             <l n="512" xml:id="l512">Ô passion fatale à me perdre obstinée !</l>
@@ -983,9 +1023,9 @@
             <l n="520" xml:id="l520">Pour qui brûlaient ici les flambeaux d’hyménée ?</l>
             <l n="521" xml:id="l521">Ciel ! Quel temps je prenais ! À cet aspect d’horreur</l>
             <l n="522" xml:id="l522">Mes remords douloureux se changent en fureur.</l>
-            <l n="523" xml:id="l523" part="I">Grands dieux, s’il était vrai !</l>
+            <l n="523" part="I" xml:id="l523">Grands dieux, s’il était vrai !</l>
           </sp>
-          <sp xml:id="II05-2" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="II05-2">
             <speaker>HIRCAN.</speaker>
             <l part="F">Dans les lieux où vous êtes</l>
             <l n="524" xml:id="l524">Gardez-vous d’écouter ces fureurs indiscrètes.</l>
@@ -999,7 +1039,7 @@
             <l n="532" xml:id="l532">Ils savent la défendre ; ils aiment la vengeance ;</l>
             <l n="533" xml:id="l533">Ils ne pardonnent point quand ils sont offensés.</l>
           </sp>
-          <sp xml:id="II05-3" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="II05-3">
             <speaker>ATHAMARE.</speaker>
             <l n="534" xml:id="l534">Tu t’abuses, ami ; je les connais assez ;</l>
             <l n="535" xml:id="l535">J’en ai vu dans nos camps, j’en ai vu dans nos villes,</l>
@@ -1007,11 +1047,11 @@
             <l n="537" xml:id="l537">Qui briguaient, en vantant leurs stériles climats</l>
             <l n="538" xml:id="l538">L’honneur d’être comptés au rang de nos soldats.</l>
           </sp>
-          <sp xml:id="II05-4" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="II05-4">
             <speaker>HIRCAN.</speaker>
-            <l n="539" xml:id="l539" part="I">Mais, souverains chez eux...</l>
+            <l n="539" part="I" xml:id="l539">Mais, souverains chez eux...</l>
           </sp>
-          <sp xml:id="II05-5" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="II05-5">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Ah ! C’est trop contredire</l>
             <l n="540" xml:id="l540">Le dépit qui me ronge, et l’amour qui m’inspire.</l>
@@ -1026,19 +1066,19 @@
             <l n="549" xml:id="l549">Pour mourir à ses pieds d’amour et de fureur,</l>
             <l n="550" xml:id="l550">Si ce coeur déchiré ne peut fléchir son coeur.</l>
           </sp>
-          <sp xml:id="II05-6" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="II05-6">
             <speaker>HIRCAN.</speaker>
-            <l n="551" xml:id="l551" part="I">Mais si vous écoutiez...</l>
+            <l n="551" part="I" xml:id="l551">Mais si vous écoutiez...</l>
           </sp>
-          <sp xml:id="II05-7" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="II05-7">
             <speaker>ATHAMARE.</speaker>
             <l part="F"> Non - je n’écoute qu’elle.</l>
           </sp>
-          <sp xml:id="II05-8" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="II05-8">
             <speaker>HIRCAN.</speaker>
-            <l n="552" xml:id="l552" part="I">Attendez.</l>
+            <l n="552" part="I" xml:id="l552">Attendez.</l>
           </sp>
-          <sp xml:id="II05-9" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="II05-9">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Que j’attende ? Et que de la cruelle</l>
             <l n="553" xml:id="l553">Un rival méprisable, à mes yeux possesseur,</l>
@@ -1050,11 +1090,11 @@
             <l n="559" xml:id="l559">Dans son coeur autrefois j’ai vu trop de noblesse,</l>
             <l n="560" xml:id="l560">Pour croire qu’à ce point son orgueil se rabaisse.</l>
           </sp>
-          <sp xml:id="II05-10" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="II05-10">
             <speaker>HIRCAN.</speaker>
             <l n="561" xml:id="l561">Mais si dans ce choix même elle eût mis sa fierté !</l>
           </sp>
-          <sp xml:id="II05-11" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="II05-11">
             <speaker>ATHAMARE.</speaker>
             <l n="562" xml:id="l562">De ce doute offensant je suis trop irrité.</l>
             <l n="563" xml:id="l563">Allons : si mes remords n’ont pu fléchir son père,</l>
@@ -1068,33 +1108,35 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Athamare, Hircan.<listPerson type="configuration" xml:id="conf13"><person corresp="#ATHAMARE"/><person corresp="#HIRCAN"/></listPerson></head>
-          <sp xml:id="III01-1" who="ATHAMARE">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE PREMIÈRE. Athamare, Hircan.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#HIRCAN"/></listPerson></head>
+          <sp who="ATHAMARE" xml:id="III01-1">
             <speaker>ATHAMARE.</speaker>
             <l n="571" xml:id="l571">Quoi ! Je ne puis la voir ! Ô tendresse ! Ô courroux !</l>
-            <l n="572" xml:id="l572" part="I">Que d’affronts redoublés !</l>
+            <l n="572" part="I" xml:id="l572">Que d’affronts redoublés !</l>
           </sp>
-          <sp xml:id="III01-2" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-2">
             <speaker>HIRCAN.</speaker>
             <l part="F">Seigneur contraignez vous.</l>
           </sp>
-          <sp xml:id="III01-3" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-3">
             <speaker>ATHAMARE.</speaker>
-            <l n="573" xml:id="l573" part="I">Me contraindre ! Qui ? Moi !</l>
+            <l n="573" part="I" xml:id="l573">Me contraindre ! Qui ? Moi !</l>
           </sp>
-          <sp xml:id="III01-4" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-4">
             <speaker>HIRCAN.</speaker>
             <l part="F">Ses compagnes tremblantes</l>
             <l n="574" xml:id="l574">Rappelaient ses esprits sur ses lèvres mourantes...</l>
           </sp>
-          <sp xml:id="III01-5" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-5">
             <speaker>ATHAMARE.</speaker>
-            <l n="575" xml:id="l575" part="I">Elle était en danger ? Obéide !</l>
+            <l n="575" part="I" xml:id="l575">Elle était en danger ? Obéide !</l>
           </sp>
-          <sp xml:id="III01-6" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-6">
             <speaker>HIRCAN.</speaker>
             <l part="F">Oui, Seigneur ;</l>
             <l n="576" xml:id="l576">Et, ranimant à peine un reste de chaleur,</l>
@@ -1104,22 +1146,22 @@
             <l n="580" xml:id="l580">La Médie avait vu combattre sous nos lois.</l>
             <l n="581" xml:id="l581">Son père et son époux sont encore auprès d’elle.</l>
           </sp>
-          <sp xml:id="III01-7" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-7">
             <speaker>ATHAMARE.</speaker>
-            <l n="582" xml:id="l582" part="I">Qui ! Son époux, un Scythe !</l>
+            <l n="582" part="I" xml:id="l582">Qui ! Son époux, un Scythe !</l>
           </sp>
-          <sp xml:id="III01-8" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-8">
             <speaker>HIRCAN.</speaker>
             <l part="F">Eh quoi, cette nouvelle</l>
             <l n="583" xml:id="l583">À votre oreille encor, Seigneur, n’a pu voler !</l>
           </sp>
-          <sp xml:id="III01-9" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-9">
             <speaker>ATHAMARE.</speaker>
             <l n="584" xml:id="l584">Eh ! Qui des miens, hors toi, m’ose jamais parler ?</l>
             <l n="585" xml:id="l585">De mes honteux secrets quel autre a pu s’instruire ?</l>
-            <l n="586" xml:id="l586" part="I">Son époux, me dis-tu ?</l>
+            <l n="586" part="I" xml:id="l586">Son époux, me dis-tu ?</l>
           </sp>
-          <sp xml:id="III01-10" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-10">
             <speaker>HIRCAN.</speaker>
             <l part="F"> Le vaillant Indatire,</l>
             <l n="587" xml:id="l587">Jeune, et de ces cantons l’espérance et l’honneur,</l>
@@ -1136,7 +1178,7 @@
             <l n="598" xml:id="l598">Sous le fardeau des ans affaiblie et pesante,</l>
             <l n="599" xml:id="l599">Quand vous avez sur vous attiré ses regards.</l>
           </sp>
-          <sp xml:id="III01-11" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-11">
             <speaker>ATHAMARE.</speaker>
             <l n="600" xml:id="l600">Mon coeur, à ce récit, ouvert de toutes parts,</l>
             <l n="601" xml:id="l601">De tant d’impressions sent l’atteinte subite ;</l>
@@ -1156,14 +1198,14 @@
             <l n="615" xml:id="l615">Elle aura rassemblé ces objets de terreur ;</l>
             <l n="616" xml:id="l616">Elle imite son père, et je lui fais horreur.</l>
           </sp>
-          <sp xml:id="III01-12" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-12">
             <speaker>HIRCAN.</speaker>
             <l n="617" xml:id="l617">Il serait bien affreux, j’ose ici vous le dire,</l>
             <l n="618" xml:id="l618">Que vous eussiez quitté le soin de votre Empire,</l>
             <l n="619" xml:id="l619">Chargé d’un repentir si noble et si profond,</l>
             <l n="620" xml:id="l620">Pour venir en Scythie essuyer une affront.</l>
           </sp>
-          <sp xml:id="III01-13" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-13">
             <speaker>ATHAMARE.</speaker>
             <l n="621" xml:id="l621">Ah ! Lorsqu’elle m’a vu, si son âme surprise</l>
             <l n="622" xml:id="l622">D’une ombre de pitié s’était au moins éprise,</l>
@@ -1176,11 +1218,11 @@
             <l n="629" xml:id="l629">Mais, dis-tu, dans le mal qui menaçait sa vie,</l>
             <l n="630" xml:id="l630">Sa bouche a prononcé le nom de sa patrie !</l>
           </sp>
-          <sp xml:id="III01-14" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-14">
             <speaker>HIRCAN.</speaker>
-            <l n="631" xml:id="l631" part="I">Elle l’aime sans doute.</l>
+            <l n="631" part="I" xml:id="l631">Elle l’aime sans doute.</l>
           </sp>
-          <sp xml:id="III01-15" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-15">
             <speaker>ATHAMARE.</speaker>
             <l part="F"> Ah ! Pour me secourir</l>
             <l n="632" xml:id="l632">C’est une arme du moins qu’elle daigne m’offrir.</l>
@@ -1189,30 +1231,30 @@
             <l n="635" xml:id="l635">Lui coûtera bientôt un sanglant repentir.</l>
             <l n="636" xml:id="l636">C’est un crime trop grand pour ne le pas punir.</l>
           </sp>
-          <sp xml:id="III01-16" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-16">
             <speaker>HIRCAN.</speaker>
             <l n="637" xml:id="l637">Pensez-vous être encor dans les murs d’Ecbatane ?</l>
             <l n="638" xml:id="l638">Là votre voix décide, elle absout ou condamne.</l>
             <l n="639" xml:id="l639">Ici vous péririez : vous êtes dans des lieux</l>
             <l n="640" xml:id="l640">Que jadis arrosa le sang de vos aïeux.</l>
           </sp>
-          <sp xml:id="III01-17" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-17">
             <speaker>ATHAMARE.</speaker>
-            <l n="641" xml:id="l641" part="I">Eh bien ! J’y périrai.</l>
+            <l n="641" part="I" xml:id="l641">Eh bien ! J’y périrai.</l>
           </sp>
-          <sp xml:id="III01-18" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-18">
             <speaker>HIRCAN.</speaker>
             <l part="F">Quelle fatale ivresse !</l>
             <l n="642" xml:id="l642">Âge des passions ! Trop aveugle jeunesse !</l>
             <l n="643" xml:id="l643">Où conduis-tu les coeurs à leurs penchants livrés ?</l>
           </sp>
-          <sp xml:id="III01-19" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-19">
             <speaker>ATHAMARE.</speaker>
             <l n="644" xml:id="l644">Qui vois-je donc paraître en ces champs abhorrés ?</l>
             <stage type="[N/A]">Indatire passe dans le fond du théâtre, à la tête d’une troupe de guerriers.</stage>
             <l n="645" xml:id="l645">Que veut le fer en main cette troupe rustique ?</l>
           </sp>
-          <sp xml:id="III01-20" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-20">
             <speaker>HIRCAN.</speaker>
             <l n="646" xml:id="l646">On m’a dit qu’en ces lieux c’est un usage antique.</l>
             <l n="647" xml:id="l647">Ce sont de simples jeux par le temps consacrés,</l>
@@ -1223,52 +1265,55 @@
             <l n="652" xml:id="l652">Et les moeurs de ce peuple ont des sévérités</l>
             <l n="653" xml:id="l653">Qui pourraient des Persans condamner la licence.</l>
           </sp>
-          <sp xml:id="III01-21" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-21">
             <speaker>ATHAMARE.</speaker>
             <l n="654" xml:id="l654">Grands dieux ! Vous me voulez conduire en sa présence.</l>
             <l n="655" xml:id="l655">Cette fête du moins m’apprend que vos secours</l>
             <l n="656" xml:id="l656">Ont dissipé l’orage élevé sur ses jours.</l>
-            <l n="657" xml:id="l657" part="I">Oui, mes yeux la verront.</l>
+            <l n="657" part="I" xml:id="l657">Oui, mes yeux la verront.</l>
           </sp>
-          <sp xml:id="III01-22" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="III01-22">
             <speaker>HIRCAN.</speaker>
             <l part="F">Oui, Seigneur, Obéide</l>
             <l n="658" xml:id="l658">Marche vers la cabane où son père réside.</l>
-            <l n="659" xml:id="l659" part="I">Je l’aperçois.</l>
+            <l n="659" part="I" xml:id="l659">Je l’aperçois.</l>
           </sp>
-          <sp xml:id="III01-23" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III01-23">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Va, cours, obtiens, si tu le peux,</l>
             <l n="660" xml:id="l660">De ce père implacable un pardon généreux. -</l>
             <l n="661" xml:id="l661">Des chaumes ! Des roseaux ! Voilà donc sa retraite !</l>
             <l n="662" xml:id="l662">Ah ! Peut-être elle y vit tranquille et satisfaite.</l>
-            <l n="663" xml:id="l663" part="I">Et moi...</l>
+            <l n="663" part="I" xml:id="l663">Et moi...</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. Obéide, Sulma, Athamare.<listPerson type="configuration" xml:id="conf14"><person corresp="#ATHAMARE"/><person corresp="#OBEIDE"/><person corresp="#SULMA"/></listPerson></head>
-          <sp xml:id="III02-1" who="ATHAMARE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. Obéide, Sulma, Athamare.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SULMA"/></listPerson></head>
+          <sp who="ATHAMARE" xml:id="III02-1">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Non, demeurez, ne vous détournez pas.</l>
             <l n="664" xml:id="l664">De vos regards du moins honorez mon trépas.</l>
             <l n="665" xml:id="l665">Qu’à vos genoux tremblants un malheureux périsse !</l>
           </sp>
-          <sp xml:id="III02-2" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-2">
             <speaker>OBÉIDE.</speaker>
             <l n="666" xml:id="l666">Ah ! Sulma, qu’en tes bras mon désespoir finisse !</l>
             <l n="667" xml:id="l667">C’en est trop. - Laisse-moi, fatal persécuteur ;</l>
             <l n="668" xml:id="l668">Va, c’est toi qui reviens pour m’arracher le coeur.</l>
           </sp>
-          <sp xml:id="III02-3" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-3">
             <speaker>ATHAMARE.</speaker>
-            <l n="669" xml:id="l669" part="I">Écoute un seul moment.</l>
+            <l n="669" part="I" xml:id="l669">Écoute un seul moment.</l>
           </sp>
-          <sp xml:id="III02-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-4">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Et le dois-je, barbare ?</l>
             <l n="670" xml:id="l670">Dans l’état où je suis que peut dire Athamare ?</l>
           </sp>
-          <sp xml:id="III02-5" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-5">
             <speaker>ATHAMARE.</speaker>
             <l n="671" xml:id="l671">Tu sais que mes forfaits, que tes calamités,</l>
             <l n="672" xml:id="l672">Ta malheureuse fuite en ces bord écartés,</l>
@@ -1299,7 +1344,7 @@
             <l n="697" xml:id="l697">Ils savent pardonner. Va, ta bonté doit plaindre</l>
             <l n="698" xml:id="l698">Ton criminel amant que tu vois sans le craindre.</l>
           </sp>
-          <sp xml:id="III02-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-6">
             <speaker>OBÉIDE.</speaker>
             <l n="699" xml:id="l699">Que m’as-tu dit, cruel ? Et pourquoi de si loin</l>
             <l n="700" xml:id="l700">Viens-tu de me troubler prendre le triste soin,</l>
@@ -1314,16 +1359,16 @@
             <l n="709" xml:id="l709">Sous la loi de l’hymen Obéide respire ;</l>
             <l n="710" xml:id="l710">Prends pitié de mon sort, - et respecte Indatire.</l>
           </sp>
-          <sp xml:id="III02-7" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-7">
             <speaker>ATHAMARE.</speaker>
-            <l n="711" xml:id="l711" part="I">Un Scythe ! Un vil mortel !</l>
+            <l n="711" part="I" xml:id="l711">Un Scythe ! Un vil mortel !</l>
           </sp>
-          <sp xml:id="III02-8" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-8">
             <speaker>OBÉIDE.</speaker>
             <l part="F"> Pourquoi méprises-tu</l>
             <l n="712" xml:id="l712">Un homme, un citoyen - qui te passe en vertu ?</l>
           </sp>
-          <sp xml:id="III02-9" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-9">
             <speaker>ATHAMARE.</speaker>
             <l n="713" xml:id="l713">Non, c’est pousser trop loin ta haine et ton outrage.</l>
             <l n="714" xml:id="l714">Non, les Dieux ont brisé cet infâme esclavage.</l>
@@ -1334,7 +1379,7 @@
             <l n="719" xml:id="l719">Et je jure à ces Dieux de ton honneur jaloux</l>
             <l n="720" xml:id="l720">Qu’Indatire jamais ne sera ton époux.</l>
           </sp>
-          <sp xml:id="III02-10" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-10">
             <speaker>OBÉIDE.</speaker>
             <l n="721" xml:id="l721">Tu ne saurais changer a loi de sa contrée :</l>
             <l n="722" xml:id="l722">Elle seule y commande, elle est toujours sacrée.</l>
@@ -1345,11 +1390,11 @@
             <l n="727" xml:id="l727">Du pouvoir paternel oubliant tous les droits,</l>
             <l n="728" xml:id="l728">En m’offrant un époux n’a point forcé mon choix.</l>
           </sp>
-          <sp xml:id="III02-11" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-11">
             <speaker>ATHAMARE.</speaker>
-            <l n="729" xml:id="l729" part="I">Ah ! Cruelle !...</l>
+            <l n="729" part="I" xml:id="l729">Ah ! Cruelle !...</l>
           </sp>
-          <sp xml:id="III02-12" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-12">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Arrachée au reste de la terre,</l>
             <l n="730" xml:id="l730">J’étais morte pour toi, je vivais pour mon père.</l>
@@ -1359,88 +1404,88 @@
             <l n="734" xml:id="l734">Si tout finit pou moi, toi seul en es la cause.</l>
             <l n="735" xml:id="l735">Toi seul m’as condamné à vivre en ces déserts.</l>
           </sp>
-          <sp xml:id="III02-13" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-13">
             <speaker>ATHAMARE.</speaker>
-            <l n="736" xml:id="l736" part="I">Je t’en viens arracher.</l>
+            <l n="736" part="I" xml:id="l736">Je t’en viens arracher.</l>
           </sp>
-          <sp xml:id="III02-14" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-14">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Laisse moi dans mes fers ;</l>
-            <l n="737" xml:id="l737" part="I">Je me les suis donnés.</l>
+            <l n="737" part="I" xml:id="l737">Je me les suis donnés.</l>
           </sp>
-          <sp xml:id="III02-15" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-15">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Tes mains n’ont point encore</l>
             <l n="738" xml:id="l738">Formé l’indigne noeud dont un Scythe s’honore.</l>
           </sp>
-          <sp xml:id="III02-16" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-16">
             <speaker>OBÉIDE.</speaker>
-            <l n="739" xml:id="l739" part="I">J’ai fait serment au ciel.</l>
+            <l n="739" part="I" xml:id="l739">J’ai fait serment au ciel.</l>
           </sp>
-          <sp xml:id="III02-17" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-17">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Il ne reçoit pas ;</l>
             <l n="740" xml:id="l740">C’est pour l’anéantir qu’il a guidé mes pas.</l>
           </sp>
-          <sp xml:id="III02-18" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-18">
             <speaker>OBÉIDE.</speaker>
-            <l n="741" xml:id="l741" part="I">Ah ! - c’est pour mon malheur. -</l>
+            <l n="741" part="I" xml:id="l741">Ah ! - c’est pour mon malheur. -</l>
           </sp>
-          <sp xml:id="III02-19" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-19">
             <speaker>ATHAMARE.</speaker>
-            <l n="742" xml:id="l742" part="I">Elle était de t’aimer.</l>
+            <l n="742" part="I" xml:id="l742">Elle était de t’aimer.</l>
           </sp>
-          <sp xml:id="III02-20" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-20">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Périsse la mémoire</l>
             <l n="743" xml:id="l743">De mes malheurs passés, de tes cruels amours !</l>
           </sp>
-          <sp xml:id="III02-21" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-21">
             <speaker>ATHAMARE.</speaker>
             <l n="744" xml:id="l744">Obéide à la haine a consacré ses jours !</l>
           </sp>
-          <sp xml:id="III02-22" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-22">
             <speaker>OBÉIDE.</speaker>
             <l n="745" xml:id="l745">Mes jours étaient affreux ; si l’hymen en dispose,</l>
             <l n="746" xml:id="l746">Si tout fiait pour moi, toi seul en es la cause ;</l>
             <l n="747" xml:id="l747">Toi seul as préparé ma mort dans ces déserts.[4]</l>
           </sp>
-          <sp xml:id="III02-23" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-23">
             <speaker>ATHAMARE.</speaker>
-            <l n="748" xml:id="l748" part="I">Je t’en viens arracher.</l>
+            <l n="748" part="I" xml:id="l748">Je t’en viens arracher.</l>
           </sp>
-          <sp xml:id="III02-24" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-24">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Rien ne rompra mes fers ;</l>
-            <l n="749" xml:id="l749" part="I">Je me les suis donnés.</l>
+            <l n="749" part="I" xml:id="l749">Je me les suis donnés.</l>
           </sp>
-          <sp xml:id="III02-25" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-25">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Tes mains n’ont point encore</l>
             <l n="750" xml:id="l750">Formé l’indigne noeud dont un Scythe s’honore.</l>
           </sp>
-          <sp xml:id="III02-26" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-26">
             <speaker>OBÉIDE.</speaker>
-            <l n="751" xml:id="l751" part="I">J’ai fait serment au ciel.</l>
+            <l n="751" part="I" xml:id="l751">J’ai fait serment au ciel.</l>
           </sp>
-          <sp xml:id="III02-27" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-27">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Il ne le reçoit pas.</l>
             <l n="752" xml:id="l752">C’est pour l’anéantir qu’il a guidé mes pas.</l>
           </sp>
-          <sp xml:id="III02-28" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-28">
             <speaker>OBÉIDE.</speaker>
-            <l n="753" xml:id="l753" part="I">Ah ! - c’est pour mon malheur. -</l>
+            <l n="753" part="I" xml:id="l753">Ah ! - c’est pour mon malheur. -</l>
           </sp>
-          <sp xml:id="III02-29" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-29">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Obtiendrais-tu d’un père</l>
             <l n="754" xml:id="l754">Qu’il laissât libre au moins une fille si chère,</l>
             <l n="755" xml:id="l755">Que son coeur envers moi ne fût point endurci,</l>
             <l n="756" xml:id="l756">Et qu’il cessât enfin de s’exiler ici ?</l>
-            <l n="757" xml:id="l757" part="I">Dis-lui...</l>
+            <l n="757" part="I" xml:id="l757">Dis-lui...</l>
           </sp>
-          <sp xml:id="III02-30" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-30">
             <speaker>OBÉIDE.</speaker>
             <l part="F">N’y compte pas. Le choix que j’ai dû faire</l>
             <l n="758" xml:id="l758">Devenait un parti conforme à ma misère :</l>
@@ -1448,45 +1493,48 @@
             <l n="760" xml:id="l760">Et Sozame jamais n’y pourrait consentir :</l>
             <l n="761" xml:id="l761">Sa vertu t’est connue ; elle est inébranlable.</l>
           </sp>
-          <sp xml:id="III02-31" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-31">
             <speaker>ATHAMARE.</speaker>
             <l n="762" xml:id="l762">Elle l’est dans la haine ; et lui seul est coupable.</l>
           </sp>
-          <sp xml:id="III02-32" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-32">
             <speaker>OBÉIDE.</speaker>
             <l n="763" xml:id="l763">Tu ne le fus que trop ; tu l’es de me revoir,</l>
             <l n="764" xml:id="l764">De m’aimer, d’attendrir un coeur au désespoir.</l>
             <l n="765" xml:id="l765">Destructeur malheureux d’une triste famille,</l>
             <l n="766" xml:id="l766">Laisse pleurer en paix et le père et la fille.</l>
-            <l n="767" xml:id="l767" part="I">Il vient ; sors.</l>
+            <l n="767" part="I" xml:id="l767">Il vient ; sors.</l>
           </sp>
-          <sp xml:id="III02-33" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-33">
             <speaker>ATHAMARE.</speaker>
             <l part="M">Je ne puis.</l>
           </sp>
-          <sp xml:id="III02-34" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-34">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Sors ; ne l’irrite pas.</l>
           </sp>
-          <sp xml:id="III02-35" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-35">
             <speaker>ATHAMARE.</speaker>
             <l n="768" xml:id="l768">Non, tous deux à l’envi donnez-moi le trépas.</l>
           </sp>
-          <sp xml:id="III02-36" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III02-36">
             <speaker>OBÉIDE.</speaker>
             <l n="769" xml:id="l769">Au nom de mes malheurs et de l’amour funeste</l>
             <l n="770" xml:id="l770">Qui des jours d’Obéide empoisonne le reste,</l>
             <l n="771" xml:id="l771">Fuis ; ne l’outrage plus par ton fatal aspect.</l>
           </sp>
-          <sp xml:id="III02-37" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="III02-37">
             <speaker>ATHAMARE.</speaker>
             <l n="772" xml:id="l772">Juge de mon amour ; il me force au respect.</l>
             <l n="773" xml:id="l773">J’obéis. - Allons voir quel sang je dois répandre.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Sozame, Obéide, Sulma.<listPerson type="configuration" xml:id="conf15"><person corresp="#SOZAME"/><person corresp="#OBEIDE"/><person corresp="#SULMA"/></listPerson></head>
-          <sp xml:id="III03-1" who="SOZAME">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Sozame, Obéide, Sulma.<listPerson type="configuration" xml:id="conf15">
+            <person corresp="#SOZAME"/>
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SULMA"/></listPerson></head>
+          <sp who="SOZAME" xml:id="III03-1">
             <speaker>SOZAME.</speaker>
             <l n="774" xml:id="l774">Dieux ! Athamare encore !- et tu viens de l’entendre</l>
             <l n="775" xml:id="l775">Ce fatal ennemi nous poursuivra toujours !</l>
@@ -1498,39 +1546,39 @@
             <l n="781" xml:id="l781">Qu’il ne se flatte pas que le déclin de l’âge</l>
             <l n="782" xml:id="l782">Rende un père insensible à ce nouvel outrage.</l>
           </sp>
-          <sp xml:id="III03-2" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III03-2">
             <speaker>OBÉIDE.</speaker>
             <l n="783" xml:id="l783">Mon père - il vous respecte - il ne me verra plus :</l>
             <l n="784" xml:id="l784">Pour jamais à le fuir mes voeux sont résolus.</l>
           </sp>
-          <sp xml:id="III03-3" who="SOZAME">
+          <sp who="SOZAME" xml:id="III03-3">
             <speaker>SOZAME.</speaker>
-            <l n="785" xml:id="l785" part="I">Indatire est à toi.</l>
+            <l n="785" part="I" xml:id="l785">Indatire est à toi.</l>
           </sp>
-          <sp xml:id="III03-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III03-4">
             <speaker>OBÉIDE.</speaker>
             <l part="M">Je le sais.</l>
           </sp>
-          <sp xml:id="III03-5" who="SOZAME">
+          <sp who="SOZAME" xml:id="III03-5">
             <speaker>SOZAME.</speaker>
             <l part="F"> Ton suffrage,</l>
             <l n="786" xml:id="l786">Dépendant de toi seule, a reçu son hommage.</l>
           </sp>
-          <sp xml:id="III03-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III03-6">
             <speaker>OBÉIDE.</speaker>
             <l n="787" xml:id="l787">J’ai cru vous plaire au moins ; - j’ai cru que sans fierté</l>
             <l n="788" xml:id="l788">Le fils de votre ami devait être accepté.</l>
           </sp>
-          <sp xml:id="III03-7" who="SOZAME">
+          <sp who="SOZAME" xml:id="III03-7">
             <speaker>SOZAME.</speaker>
             <l n="789" xml:id="l789">Sais-tu ce qu’Athamare à ma honte propose</l>
             <l n="790" xml:id="l790">Par un de ces Persans dont son pouvoir dispose ?</l>
           </sp>
-          <sp xml:id="III03-8" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III03-8">
             <speaker>OBÉIDE.</speaker>
-            <l n="791" xml:id="l791" part="I">Qu’a-t-il pu demander ?</l>
+            <l n="791" part="I" xml:id="l791">Qu’a-t-il pu demander ?</l>
           </sp>
-          <sp xml:id="III03-9" who="SOZAME">
+          <sp who="SOZAME" xml:id="III03-9">
             <speaker>SOZAME.</speaker>
             <l part="F">De violer ma foi,</l>
             <l n="792" xml:id="l792">De briser tes liens, de le suivre avec toi,</l>
@@ -1538,11 +1586,11 @@
             <l n="794" xml:id="l794">De mendier chez lui le prix de ton parjure,</l>
             <l n="795" xml:id="l795">D’acheter par la honte une ombre de grandeur.</l>
           </sp>
-          <sp xml:id="III03-10" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III03-10">
             <speaker>OBÉIDE.</speaker>
-            <l n="796" xml:id="l796" part="I">Comment recevez-vous cette offre ?</l>
+            <l n="796" part="I" xml:id="l796">Comment recevez-vous cette offre ?</l>
           </sp>
-          <sp xml:id="III03-11" who="SOZAME">
+          <sp who="SOZAME" xml:id="III03-11">
             <speaker>SOZAME.</speaker>
             <l part="F">Avec horreur.</l>
             <l n="797" xml:id="l797">Ma fille, au repentir il n’est aucune voie.</l>
@@ -1556,7 +1604,7 @@
             <l n="805" xml:id="l805">Et surtout, de leurs lois vengeurs impitoyables,</l>
             <l n="806" xml:id="l806">Ils n’ont jamais, ma fille, épargné des coupables.</l>
           </sp>
-          <sp xml:id="III03-12" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III03-12">
             <speaker>OBÉIDE.</speaker>
             <l n="807" xml:id="l807">Seigneur, vous vous borniez à me persuader ;</l>
             <l n="808" xml:id="l808">Pour la première fois pourquoi m’intimider ?</l>
@@ -1567,7 +1615,7 @@
             <l n="813" xml:id="l813">Je vois tout mon devoir - ainsi que ma misère.</l>
             <l n="814" xml:id="l814">Allez, - Vous n’avez point de reproche à me faire.</l>
           </sp>
-          <sp xml:id="III03-13" who="SOZAME">
+          <sp who="SOZAME" xml:id="III03-13">
             <speaker>SOZAME.</speaker>
             <l n="815" xml:id="l815">Pardonne à ma tendresse un reste de frayeur.</l>
             <l n="816" xml:id="l816">Triste et commun effet de l’âge et du malheur ?</l>
@@ -1580,40 +1628,42 @@
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="5">
-          <head>Scène IV. Obéide, Sulma.<listPerson type="configuration" xml:id="conf16"><person corresp="#SULMA"/><person corresp="#OBEIDE"/></listPerson></head>
-          <sp xml:id="III04-1" who="SULMA">
+        <div2 n="5" type="scene" xml:id="III04">
+          <head>Scène IV. Obéide, Sulma.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#SULMA"/>
+            <person corresp="#OBEIDE"/></listPerson></head>
+          <sp who="SULMA" xml:id="III04-1">
             <speaker>SULMA.</speaker>
             <l n="823" xml:id="l823">Quelle fête cruelle ! Ainsi dans ce séjour</l>
             <l n="824" xml:id="l824">Vos beaux jours enterrés sont perdus sans retour ?</l>
           </sp>
-          <sp xml:id="III04-2" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-2">
             <speaker>OBÉIDE.</speaker>
-            <l n="825" xml:id="l825" part="I">Ah dieux !</l>
+            <l n="825" part="I" xml:id="l825">Ah dieux !</l>
           </sp>
-          <sp xml:id="III04-3" who="SULMA">
+          <sp who="SULMA" xml:id="III04-3">
             <speaker>SULMA.</speaker>
             <l part="F">Votre pays, la cour qui vous vit naître,</l>
             <l n="826" xml:id="l826">Un prince généreux... qui vous plaisait peut-être,</l>
             <l n="827" xml:id="l827">Vous les abandonnez sans crainte et sans pitié ?</l>
           </sp>
-          <sp xml:id="III04-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-4">
             <speaker>OBÉIDE.</speaker>
             <l n="828" xml:id="l828">Mon destin l’a voulu - j’ai tout sacrifié.</l>
           </sp>
-          <sp xml:id="III04-5" who="SULMA">
+          <sp who="SULMA" xml:id="III04-5">
             <speaker>SULMA.</speaker>
             <l n="829" xml:id="l829">Haïriez-vous toujours la cour et la patrie ?</l>
           </sp>
-          <sp xml:id="III04-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-6">
             <speaker>OBÉIDE.</speaker>
             <l n="830" xml:id="l830">Malheureuse ! - Jamais je ne l’ai tant chérie.</l>
           </sp>
-          <sp xml:id="III04-7" who="SULMA">
+          <sp who="SULMA" xml:id="III04-7">
             <speaker>SULMA.</speaker>
-            <l n="831" xml:id="l831" part="I">Ouvrez-moi votre coeur : je le mérite.</l>
+            <l n="831" part="I" xml:id="l831">Ouvrez-moi votre coeur : je le mérite.</l>
           </sp>
-          <sp xml:id="III04-8" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-8">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Hélas !</l>
             <l n="832" xml:id="l832">Tu n’y découvrirais que d’horribles combats ;</l>
@@ -1626,11 +1676,11 @@
             <l n="839" xml:id="l839">Lorsque tous leurs assauts viennent se réunir,</l>
             <l n="840" xml:id="l840">Un coeur, un faible coeur les peut-il soutenir ?</l>
           </sp>
-          <sp xml:id="III04-9" who="SULMA">
+          <sp who="SULMA" xml:id="III04-9">
             <speaker>SULMA.</speaker>
-            <l n="841" xml:id="l841" part="I">Ecbatane... un grand prince...</l>
+            <l n="841" part="I" xml:id="l841">Ecbatane... un grand prince...</l>
           </sp>
-          <sp xml:id="III04-10" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-10">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Ah ! Fatal Athamare !</l>
             <l n="842" xml:id="l842">Quel démon t’a conduit dans ce séjour barbare ?</l>
@@ -1639,7 +1689,7 @@
             <l n="845" xml:id="l845">Pourquoi, renouvelant ma honte et ton injure.</l>
             <l n="846" xml:id="l846">De tes funestes mains déchirer ma blessure ?</l>
           </sp>
-          <sp xml:id="III04-11" who="SULMA">
+          <sp who="SULMA" xml:id="III04-11">
             <speaker>SULMA.</speaker>
             <l n="847" xml:id="l847">Madame, c’en est trop ; c’est trop vous immoler</l>
             <l n="848" xml:id="l848">À ces préjugés vains qui viennent vous troubler,</l>
@@ -1653,11 +1703,11 @@
             <l n="856" xml:id="l856">Ont jusqu’en ces déserts accompagné ses pas.</l>
             <l n="857" xml:id="l857">Athamare, après tout, n’est-il pas votre maître ?</l>
           </sp>
-          <sp xml:id="III04-12" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-12">
             <speaker>OBÉIDE.</speaker>
-            <l n="858" xml:id="l858" part="I">Non.</l>
+            <l n="858" part="I" xml:id="l858">Non.</l>
           </sp>
-          <sp xml:id="III04-13" who="SULMA">
+          <sp who="SULMA" xml:id="III04-13">
             <speaker>SULMA.</speaker>
             <l part="F">C’est en ses États que le ciel vous fît naître.</l>
             <l n="859" xml:id="l859">N’a-t-il donc pas le droit de briser un lien,</l>
@@ -1669,7 +1719,7 @@
             <l n="865" xml:id="l865">Que sa douleur farouche, à vous perdre obstinée,</l>
             <l n="866" xml:id="l866">Cesse enfin de lutter contre sa destinée.</l>
           </sp>
-          <sp xml:id="III04-14" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-14">
             <speaker>OBÉIDE.</speaker>
             <l n="867" xml:id="l867">Non, ce parti serait injuste et dangereux ;</l>
             <l n="868" xml:id="l868">Il coûterait du sang ; le succès est douteux ;</l>
@@ -1678,7 +1728,7 @@
             <l n="871" xml:id="l871">L’habitude à souffrir pourra fortifier</l>
             <l n="872" xml:id="l872">Mon courage éperdu qui craignait de plier.</l>
           </sp>
-          <sp xml:id="III04-15" who="SULMA">
+          <sp who="SULMA" xml:id="III04-15">
             <speaker>SULMA.</speaker>
             <l n="873" xml:id="l873">Vous pleurez cependant, et votre oeil qui s’égare</l>
             <l n="874" xml:id="l874">Parcourt avec horreur cette enceinte barbare,</l>
@@ -1686,17 +1736,17 @@
             <l n="876" xml:id="l876">Je vous vis descendue aux plus humbles emplois ;</l>
             <l n="877" xml:id="l877">Où d’un vain repentir le trait insupportable</l>
             <l n="878" xml:id="l878">Déchire de vos jours le tissu misérable. -</l>
-            <l n="879" xml:id="l879" part="I">Quel parti prenez vous ?</l>
+            <l n="879" part="I" xml:id="l879">Quel parti prenez vous ?</l>
           </sp>
-          <sp xml:id="III04-16" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-16">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Celui du désespoir.</l>
           </sp>
-          <sp xml:id="III04-17" who="SULMA">
+          <sp who="SULMA" xml:id="III04-17">
             <speaker>SULMA.</speaker>
-            <l n="880" xml:id="l880" part="I">Dans cet état affreux, que faire ?</l>
+            <l n="880" part="I" xml:id="l880">Dans cet état affreux, que faire ?</l>
           </sp>
-          <sp xml:id="III04-18" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="III04-18">
             <speaker>OBÉIDE.</speaker>
             <l part="F">- Mon devoir.</l>
             <l n="881" xml:id="l881">L’honneur de le remplir, le secret témoignage</l>
@@ -1706,23 +1756,25 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Athamare, Hircan.<listPerson type="configuration" xml:id="conf18"><person corresp="#ATHAMARE"/><person corresp="#HIRCAN"/></listPerson></head>
-          <sp xml:id="IV01-1" who="ATHAMARE">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE PREMIÈRE. Athamare, Hircan.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#HIRCAN"/></listPerson></head>
+          <sp who="ATHAMARE" xml:id="IV01-1">
             <speaker>ATHAMARE.</speaker>
             <l n="885" xml:id="l885">Penses-tu qu’Indatire osera me parler ?</l>
           </sp>
-          <sp xml:id="IV01-2" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="IV01-2">
             <speaker>HIRCAN.</speaker>
-            <l n="886" xml:id="l886" part="I">Il l’osera, seigneur.</l>
+            <l n="886" part="I" xml:id="l886">Il l’osera, seigneur.</l>
           </sp>
-          <sp xml:id="IV01-3" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV01-3">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Qu’il vienne : - Il doit trembler.</l>
           </sp>
-          <sp xml:id="IV01-4" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="IV01-4">
             <speaker>HIRCAN.</speaker>
             <l n="887" xml:id="l887">Les Scythes, ci-oyez-moi, connaissent peu la crainte ;</l>
             <l n="888" xml:id="l888">Mais d’un tel désespoir votre âme est-elle atteinte,</l>
@@ -1735,7 +1787,7 @@
             <l n="895" xml:id="l895">Mais qui, sur ses foyers, peut avec insolence</l>
             <l n="896" xml:id="l896">Braver impunément un prince et sa puissance ?</l>
           </sp>
-          <sp xml:id="IV01-5" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV01-5">
             <speaker>ATHAMARE.</speaker>
             <l n="897" xml:id="l897">Je m’abaisse, il est vrai ; mais je veux tout tenter.</l>
             <l n="898" xml:id="l898">Je descendrais plus bas pour la mieux mériter.</l>
@@ -1751,7 +1803,7 @@
             <l n="908" xml:id="l908">En connaissant l’hymen, ignore la tendresse.</l>
             <l n="909" xml:id="l909">Tous ces grossiers humains sont indignes d’aimer.</l>
           </sp>
-          <sp xml:id="IV01-6" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="IV01-6">
             <speaker>HIRCAN.</speaker>
             <l n="910" xml:id="l910">L’univers vous dément ; le ciel sait animer</l>
             <l n="911" xml:id="l911">Des mêmes passions tous les êtres du monde.</l>
@@ -1761,15 +1813,15 @@
             <l n="915" xml:id="l915">Le fond de l’homme reste, il est partout le même ;</l>
             <l n="916" xml:id="l916">Persan, Scythe, Indien, tout défend ce qu’il aime.</l>
           </sp>
-          <sp xml:id="IV01-7" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV01-7">
             <speaker>ATHAMARE.</speaker>
             <l n="917" xml:id="l917">Je le défendrai donc, je saurai le garder.</l>
           </sp>
-          <sp xml:id="IV01-8" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="IV01-8">
             <speaker>HIRCAN.</speaker>
-            <l n="918" xml:id="l918" part="I">Vous hasardez beaucoup.</l>
+            <l n="918" part="I" xml:id="l918">Vous hasardez beaucoup.</l>
           </sp>
-          <sp xml:id="IV01-9" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV01-9">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Que puis-je hasarder ?</l>
             <l n="919" xml:id="l919">Ma vie ? elle n’est rien sans l’objet qu’on m’arrache</l>
@@ -1779,33 +1831,35 @@
             <l n="923" xml:id="l923">Ces agrestes guerriers dont l’audace indiscrète</l>
             <l n="924" xml:id="l924">Pourrait inquiéter leur marche et leur retraite.</l>
           </sp>
-          <sp xml:id="IV01-10" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="IV01-10">
             <speaker>HIRCAN.</speaker>
             <l n="925" xml:id="l925">Ils mourront à vos pieds, et vous n’en doutez pas.</l>
           </sp>
-          <sp xml:id="IV01-11" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV01-11">
             <speaker>ATHAMARE.</speaker>
             <l n="926" xml:id="l926">Ils vaincront avec moi... Qui tourne ici ses pas ?</l>
           </sp>
-          <sp xml:id="IV01-12" who="HIRCAN">
+          <sp who="HIRCAN" xml:id="IV01-12">
             <speaker>HIRCAN.</speaker>
             <l n="927" xml:id="l927">Seigneur, je le connais, c’est lui, c’est Indatire.</l>
           </sp>
-          <sp xml:id="IV01-13" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV01-13">
             <speaker>ATHAMARE.</speaker>
             <l n="928" xml:id="l928">Allez : que loin de moi ma garde se retire ;</l>
             <l n="929" xml:id="l929">Qu’aucun n’ose approcher sans mes ordres exprès ;</l>
-            <l n="930" xml:id="l930" part="I">Mais qu’on soit prêt à tout.</l>
+            <l n="930" part="I" xml:id="l930">Mais qu’on soit prêt à tout.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Athamare, Indatire.<listPerson type="configuration" xml:id="conf19"><person corresp="#ATHAMARE"/><person corresp="#INDATIRE"/></listPerson></head>
-          <sp xml:id="IV02-1" who="ATHAMARE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Athamare, Indatire.<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#INDATIRE"/></listPerson></head>
+          <sp who="ATHAMARE" xml:id="IV02-1">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Habitant des forêts,</l>
             <l n="931" xml:id="l931">Sais-tu bien devant qui ton sort te fait paraître ?</l>
           </sp>
-          <sp xml:id="IV02-2" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-2">
             <speaker>INDATIRE.</speaker>
             <l n="932" xml:id="l932">On prétend qu’une ville en toi révère un maître,</l>
             <l n="933" xml:id="l933">Qu’on l’appelle Ecbatane, et que du mont Taurus</l>
@@ -1816,7 +1870,7 @@
             <l n="938" xml:id="l938">De guerriers soudoyés, et d’esclaves pompeux,</l>
             <l n="939" xml:id="l939">Que nous avons ici de citoyens paisibles.</l>
           </sp>
-          <sp xml:id="IV02-3" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-3">
             <speaker>ATHAMARE.</speaker>
             <l n="940" xml:id="l940">Il est vrai, j’ai sous moi des troupes invincibles :</l>
             <l n="941" xml:id="l941">Le dernier des Persans, de ma solde honoré,</l>
@@ -1824,31 +1878,31 @@
             <l n="943" xml:id="l943">Que tu ne saurais l’être aux lieux de ta naissance,</l>
             <l n="944" xml:id="l944">Où le ciel vous fit tous égaux par l’indigence.</l>
           </sp>
-          <sp xml:id="IV02-4" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-4">
             <speaker>INDATIRE.</speaker>
             <l n="945" xml:id="l945">Qui borne ses désirs est toujours riche assez.</l>
           </sp>
-          <sp xml:id="IV02-5" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-5">
             <speaker>ATHAMARE.</speaker>
             <l n="946" xml:id="l946">Ton coeur ne connaît point les voeux intéressés ;</l>
-            <l n="947" xml:id="l947" part="I">Mais la gloire, Indatire ?</l>
+            <l n="947" part="I" xml:id="l947">Mais la gloire, Indatire ?</l>
           </sp>
-          <sp xml:id="IV02-6" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-6">
             <speaker>INDATIRE.</speaker>
             <l part="F">Elle a pour moi des charmes.</l>
           </sp>
-          <sp xml:id="IV02-7" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-7">
             <speaker>ATHAMARE.</speaker>
             <l n="948" xml:id="l948">Elle habite à ma cour, à l’abri de mes armes :</l>
             <l n="949" xml:id="l949">On ne la trouve point dans le fond des déserts ;</l>
             <l n="950" xml:id="l950">Tu l’obtiens près de moi, tu l’as, si tu me sers.</l>
             <l n="951" xml:id="l951">Elle est sous mes drapeaux ; viens avec moi t’y rendre.</l>
           </sp>
-          <sp xml:id="IV02-8" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-8">
             <speaker>INDATIRE.</speaker>
             <l n="952" xml:id="l952">À servir sous un maître on me verrait descendre !</l>
           </sp>
-          <sp xml:id="IV02-9" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-9">
             <speaker>ATHAMARE.</speaker>
             <l n="953" xml:id="l953">Va, l’honneur de servir un maître généreux,</l>
             <l n="954" xml:id="l954">Qui met un digne prix aux exploits belliqueux,</l>
@@ -1857,7 +1911,7 @@
             <l n="957" xml:id="l957">Tu peux prétendre à tout en marchant sous ma loi :</l>
             <l n="958" xml:id="l958">J’ai parmi mes guerriers des Scythes comme toi.</l>
           </sp>
-          <sp xml:id="IV02-10" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-10">
             <speaker>INDATIRE.</speaker>
             <l n="959" xml:id="l959">Tu n’en as point. Apprends que ces indignes Scythes,</l>
             <l n="960" xml:id="l960">Voisins de ton pays, sont loin de nos limites.</l>
@@ -1878,35 +1932,35 @@
             <l n="975" xml:id="l975">Apprends à mieux juger de ce peuple équitable,</l>
             <l n="976" xml:id="l976">Égal à toi, sans doute, et non moins respectable.</l>
           </sp>
-          <sp xml:id="IV02-11" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-11">
             <speaker>ATHAMARE.</speaker>
             <l n="977" xml:id="l977">Élève ta patrie, et cherche à la vanter ;</l>
             <l n="978" xml:id="l978">C’est le recours du faible, on peut le supporter.</l>
             <l n="979" xml:id="l979">Ma fierté, que permet la grandeur souveraine</l>
             <l n="980" xml:id="l980">Ne daigne pas ici lutter contre la tienne. -</l>
-            <l n="981" xml:id="l981" part="I">Te crois-tu juste au moins ?</l>
+            <l n="981" part="I" xml:id="l981">Te crois-tu juste au moins ?</l>
           </sp>
-          <sp xml:id="IV02-12" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-12">
             <speaker>INDATIRE.</speaker>
             <l part="F">Oui, je puis m’en flatter.</l>
           </sp>
-          <sp xml:id="IV02-13" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-13">
             <speaker>ATHAMARE.</speaker>
             <l n="982" xml:id="l982">Rends-moi donc le trésor que tu viens de m’ôter ?</l>
           </sp>
-          <sp xml:id="IV02-14" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-14">
             <speaker>INDATIRE.</speaker>
-            <l n="983" xml:id="l983" part="I">À toi !</l>
+            <l n="983" part="I" xml:id="l983">À toi !</l>
           </sp>
-          <sp xml:id="IV02-15" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-15">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Rends à son maître une de ses sujettes</l>
             <l n="984" xml:id="l984">Qu’un indigne destin traîna dans ces retraites ;</l>
             <l n="985" xml:id="l985">Un bien dont nul mortel ne pourra me priver,</l>
             <l n="986" xml:id="l986">Et que sans injustice on ne peut m’enlever.</l>
-            <l n="987" xml:id="l987" part="I">Rends sur l’heure Obéide.</l>
+            <l n="987" part="I" xml:id="l987">Rends sur l’heure Obéide.</l>
           </sp>
-          <sp xml:id="IV02-16" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-16">
             <speaker>INDATIRE.</speaker>
             <l part="F">À ta superbe audace,</l>
             <l n="988" xml:id="l988">À tes discours altiers, à cet air de menace,</l>
@@ -1924,14 +1978,14 @@
             <l n="1000" xml:id="l1000">Qu’il rampe, j’y consens ; il est libre en Scythie.</l>
             <l n="1001" xml:id="l1001">Au moment qu’Obéide honora de ses pas</l>
             <l n="1002" xml:id="l1002">Le tranquille horizon qui borde nos états,</l>
-            <note type="L">Apanage :  Terme de féodalité. Terres ou certaines portions du domaine royal qu’on donne aux princes pour leur subsistance, mais qui reviennent à la couronne après l’extinction de leurs descendants mâles. [L]</note>
+            <note type="L">Apanage : Terme de féodalité. Terres ou certaines portions du domaine royal qu’on donne aux princes pour leur subsistance, mais qui reviennent à la couronne après l’extinction de leurs descendants mâles. [L]</note>
             <l n="1003" xml:id="l1003">La liberté, la paix, qui sont notre apanage,</l>
             <l n="1004" xml:id="l1004">L’heureuse égalité, les biens du premier âge,</l>
             <l n="1005" xml:id="l1005">Ces biens que des Persans aux mortels ont ravis,</l>
             <l n="1006" xml:id="l1006">Ces biens, perdus ailleurs, et par nous recueillis,</l>
             <l n="1007" xml:id="l1007">De la belle Obéide ont été le partage.</l>
           </sp>
-          <sp xml:id="IV02-17" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-17">
             <speaker>ATHAMARE.</speaker>
             <stage type="[N/A]">Fier et très passionné.</stage>
             <l n="1008" xml:id="l1008">Il en est un plus grand, celui que mon courage</l>
@@ -1947,7 +2001,7 @@
             <l n="1018" xml:id="l1018">L’heureuse liberté d’oser la regarder.</l>
             <l n="1019" xml:id="l1019">Ce trésor est à moi, barbare, il faut le rendre.</l>
           </sp>
-          <sp xml:id="IV02-18" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-18">
             <speaker>INDATIRE.</speaker>
             <l n="1020" xml:id="l1020">Imprudent étranger, ce que je viens d’entendre</l>
             <l n="1021" xml:id="l1021">Excite ma pitié plutôt que mon courroux.</l>
@@ -1960,9 +2014,9 @@
             <l n="1028" xml:id="l1028">Sors d’un asile saint, de paix et d’innocence ;</l>
             <l n="1029" xml:id="l1029">Fuis ; cesse de troubler, si loin de tes états,</l>
             <l n="1030" xml:id="l1030">Des mortels tes égaux qui ne t’offensent pas.</l>
-            <l n="1031" xml:id="l1031" part="I">Tu n’es pas prince ici.</l>
+            <l n="1031" part="I" xml:id="l1031">Tu n’es pas prince ici.</l>
           </sp>
-          <sp xml:id="IV02-19" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-19">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Ce sacré caractère</l>
             <l n="1032" xml:id="l1032">M’accompagne en tous lieux sans m’être nécessaire.</l>
@@ -1970,7 +2024,7 @@
             <l n="1034" xml:id="l1034">Pour remettre en mes mains le bien qu’on me ravit.</l>
             <l n="1035" xml:id="l1035">Cède Obéide, ou meurs, ou m’arrache la vie.</l>
           </sp>
-          <sp xml:id="IV02-20" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-20">
             <speaker>INDATIRE.</speaker>
             <l n="1036" xml:id="l1036">Quoi ! Nous t’avons en paix reçu dans ma patrie,</l>
             <l n="1037" xml:id="l1037">Ton accueil nous flattait, notre simplicité</l>
@@ -1978,54 +2032,60 @@
             <l n="1039" xml:id="l1039">Et tu veux me forcer, dans la même journée</l>
             <l n="1040" xml:id="l1040">De souiller par ta mort un si saint hyménée !</l>
           </sp>
-          <sp xml:id="IV02-21" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-21">
             <speaker>ATHAMARE.</speaker>
             <l n="1041" xml:id="l1041">Meurs, te dis-je, ou me tue : - On vient, retire-toi,</l>
-            <l n="1042" xml:id="l1042" part="I">Et si tu n’es un lâche...</l>
+            <l n="1042" part="I" xml:id="l1042">Et si tu n’es un lâche...</l>
           </sp>
-          <sp xml:id="IV02-22" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV02-22">
             <speaker>INDATIRE.</speaker>
             <l part="M">Ah ! c’en est trop...</l>
           </sp>
-          <sp xml:id="IV02-23" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV02-23">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Suis-moi,</l>
-            <l n="1043" xml:id="l1043" part="I">Je te fais cet honneur.</l>
+            <l n="1043" part="I" xml:id="l1043">Je te fais cet honneur.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Indatire, Hermodan, Sozame, Un Scythe.<listPerson type="configuration" xml:id="conf20"><person corresp="#HERMODAN"/><person corresp="#INDATIRE"/><person corresp="#SOZAME"/></listPerson></head>
-          <sp xml:id="IV03-1" who="HERMODAN">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Indatire, Hermodan, Sozame, Un Scythe.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#HERMODAN"/>
+            <person corresp="#INDATIRE"/>
+            <person corresp="#SOZAME"/></listPerson></head>
+          <sp who="HERMODAN" xml:id="IV03-1">
             <speaker>HERMODAN, à Indatire, qui est près de sortir.</speaker>
             <l part="F">Viens ; ma main paternelle,</l>
             <l n="1044" xml:id="l1044">Te remettra, mon fils, ton épouse fidèle.</l>
-            <l n="1045" xml:id="l1045" part="I">Viens, le festin t’attend.</l>
+            <l n="1045" part="I" xml:id="l1045">Viens, le festin t’attend.</l>
           </sp>
-          <sp xml:id="IV03-2" who="INDATIRE">
+          <sp who="INDATIRE" xml:id="IV03-2">
             <speaker>INDATIRE.</speaker>
             <l part="F">Bientôt je vous suivrai :</l>
             <l n="1046" xml:id="l1046">Allez. - Ô cher objet ! Je te mériterai.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. Hermodan, Sozame, Un Scythe.<listPerson type="configuration" xml:id="conf21"><person corresp="#SOZAME"/><person corresp="#HERMODAN"/><person corresp="#LESCYTHE"/></listPerson></head>
-          <sp xml:id="IV04-1" who="SOZAME">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. Hermodan, Sozame, Un Scythe.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#SCYTHES"/></listPerson></head>
+          <sp who="SOZAME" xml:id="IV04-1">
             <speaker>SOZAME.</speaker>
-            <l n="1047" xml:id="l1047" part="I">Pourquoi ne pas nous suivre ? Il diffère...</l>
+            <l n="1047" part="I" xml:id="l1047">Pourquoi ne pas nous suivre ? Il diffère...</l>
           </sp>
-          <sp xml:id="IV04-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV04-2">
             <speaker>HERMODAN.</speaker>
             <l part="F">Ah ! Sozame,</l>
             <l n="1048" xml:id="l1048">Cher ami, dans quel trouble il a jeté mon âme !</l>
             <l n="1049" xml:id="l1049">As-tu vu sur son front des signes de fureur ?</l>
           </sp>
-          <sp xml:id="IV04-3" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV04-3">
             <speaker>SOZAME.</speaker>
-            <l n="1050" xml:id="l1050" part="I">Que ! en serait l’objet ?</l>
+            <l n="1050" part="I" xml:id="l1050">Que ! en serait l’objet ?</l>
           </sp>
-          <sp xml:id="IV04-4" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV04-4">
             <speaker>HERMODAN.</speaker>
             <l part="F">Peut-être que mon coeur</l>
             <l n="1051" xml:id="l1051">Conçoit d’un vain danger la crainte imaginaire ;</l>
@@ -2033,12 +2093,12 @@
             <l n="1053" xml:id="l1053">Si mes yeux par les ans ne sont point affaiblis,</l>
             <l n="1054" xml:id="l1054">J’ai cru voir ce Persan qui menaçait mon fils.</l>
           </sp>
-          <sp xml:id="IV04-5" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV04-5">
             <speaker>SOZAME.</speaker>
             <l n="1055" xml:id="l1055">Tu me fais frissonner : - avançons ; Athamare</l>
-            <l n="1056" xml:id="l1056" part="I">Est capable de tout.</l>
+            <l n="1056" part="I" xml:id="l1056">Est capable de tout.</l>
           </sp>
-          <sp xml:id="IV04-6" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV04-6">
             <speaker>HERMODAN.</speaker>
             <l part="F"> La faiblesse s’empare</l>
             <l n="1057" xml:id="l1057">De mes esprits glacés, et mes sens éperdus</l>
@@ -2049,36 +2109,40 @@
             <l n="1060" xml:id="l1060">Je succombe. - Va, cours, en ce moment terrible,</l>
             <l n="1061" xml:id="l1061">Cours, assemble au drapeau nos braves combattants.</l>
           </sp>
-          <sp xml:id="IV04-7" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="IV04-7">
             <speaker>LE SCYTHE.</speaker>
             <l n="1062" xml:id="l1062">Rassure-toi, j’y vole, ils sont prêts en tout temps.</l>
           </sp>
-          <sp xml:id="IV04-8" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV04-8">
             <speaker>SOZAME, à Hermodan.</speaker>
             <l n="1063" xml:id="l1063">Ranime ta vertu, dissipe tes alarmes.</l>
           </sp>
-          <sp xml:id="IV04-9" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV04-9">
             <speaker>HERMODAN, se relevant à peine.</speaker>
-            <l n="1064" xml:id="l1064" part="I">Oui, j’ai pu me tromper ; oui, je renais.</l>
+            <l n="1064" part="I" xml:id="l1064">Oui, j’ai pu me tromper ; oui, je renais.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V. Hermodan, Sozame, Athamare, l’épée à la main, Hircan, Suite.<listPerson type="configuration" xml:id="conf22"><person corresp="#ATHAMARE"/><person corresp="#HERMODAN"/><person corresp="#SOZAME"/><person corresp="#HIRCAN"/></listPerson></head>
-          <sp xml:id="IV05-1" who="ATHAMARE">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V. Hermodan, Sozame, Athamare, l’épée à la main, Hircan, Suite.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#SOZAME"/>
+            <person corresp="#HIRCAN"/></listPerson></head>
+          <sp who="ATHAMARE" xml:id="IV05-1">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Aux armes !</l>
             <l n="1065" xml:id="l1065">Aux armes, compagnons, suivez-moi, paraissez !</l>
-            <l n="1066" xml:id="l1066" part="I">C’en est fait.</l>
+            <l n="1066" part="I" xml:id="l1066">C’en est fait.</l>
           </sp>
-          <sp xml:id="IV05-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV05-2">
             <speaker>HERMODAN, effrayé, en chancelant.</speaker>
             <l part="M">Quoi ! Barbare...</l>
           </sp>
-          <sp xml:id="IV05-3" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV05-3">
             <speaker>SOZAME.</speaker>
             <l part="M">Ô ciel !</l>
           </sp>
-          <sp xml:id="IV05-4" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV05-4">
             <speaker>ATHAMARE, à ses gardes.</speaker>
             <l part="F">Obéissez,</l>
             <l n="1067" xml:id="l1067">De sa retraite indigne enlevez Obéide ;</l>
@@ -2087,42 +2151,42 @@
             <l n="1070" xml:id="l1070">Se fasse un chemin prompt dans la foule des morts.</l>
             <l n="1071" xml:id="l1071">- C’est toi qui l’as voulu, Sozame inexorable.</l>
           </sp>
-          <sp xml:id="IV05-5" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV05-5">
             <speaker>SOZAME.</speaker>
-            <l n="1072" xml:id="l1072" part="I">J’ai fait ce que j’ai dû.</l>
+            <l n="1072" part="I" xml:id="l1072">J’ai fait ce que j’ai dû.</l>
           </sp>
-          <sp xml:id="IV05-6" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV05-6">
             <speaker>HERMODAN.</speaker>
             <l part="F">Va, ravisseur coupable,</l>
             <l n="1073" xml:id="l1073">Infidèle Persan, mon coeur saura venger</l>
             <l n="1074" xml:id="l1074">Le détestable affront dont tu viens nous charger.</l>
             <l n="1075" xml:id="l1075">Dans ce dessein, Sozame, il nous quittait sans doute.</l>
           </sp>
-          <sp xml:id="IV05-7" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV05-7">
             <speaker>ATHAMARE.</speaker>
-            <l n="1076" xml:id="l1076" part="I">Indatire ? Ton fils ?</l>
+            <l n="1076" part="I" xml:id="l1076">Indatire ? Ton fils ?</l>
           </sp>
-          <sp xml:id="IV05-8" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV05-8">
             <speaker>HERMODAN.</speaker>
             <l part="M">Oui, lui-même.</l>
           </sp>
-          <sp xml:id="IV05-9" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV05-9">
             <speaker>ATHAMARE.</speaker>
             <l part="F"> Il m’en coûte</l>
             <l n="1077" xml:id="l1077">D’affliger ta vieillesse et de percer ton coeur ;</l>
             <l n="1078" xml:id="l1078">Ton fils eût mérité de servir ma valeur.</l>
             <l n="1079" xml:id="l1079">Mais il a dû tomber sous la main qui l’immole.</l>
             <l n="1080" xml:id="l1080">Vieillard, ton fils n’est plus. Que ton coeur se console.</l>
-            <l n="1081" xml:id="l1081" part="I">Il est mort en brave homme.</l>
+            <l n="1081" part="I" xml:id="l1081">Il est mort en brave homme.</l>
           </sp>
-          <sp xml:id="IV05-10" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV05-10">
             <speaker>HERMODAN.</speaker>
             <l part="F">Achève tes fureurs ;</l>
             <l n="1082" xml:id="l1082">Achève. - N’oses-tu ? Quoi ! tu gémis, - Je meurs.</l>
-            <l n="1083" xml:id="l1083" part="I">Mon fils est mort, ami ! -</l>
+            <l n="1083" part="I" xml:id="l1083">Mon fils est mort, ami ! -</l>
             <stage type="action/fall">Il tombe sur le banc de gazon.</stage>
           </sp>
-          <sp xml:id="IV05-11" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV05-11">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Toi, père d’Obéide,</l>
             <l n="1084" xml:id="l1084">Auteur de tous mes maux, dont l’âpreté rigide,</l>
@@ -2130,26 +2194,28 @@
             <l n="1086" xml:id="l1086">Que je chéris encor quand tu m’as offensé,</l>
             <l n="1087" xml:id="l1087">Il faut dans ce moment la conduire et me suivre.</l>
           </sp>
-          <sp xml:id="IV05-12" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV05-12">
             <speaker>SOZAME.</speaker>
-            <l n="1088" xml:id="l1088" part="I">Moi ! Ma fille !</l>
+            <l n="1088" part="I" xml:id="l1088">Moi ! Ma fille !</l>
           </sp>
-          <sp xml:id="IV05-13" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="IV05-13">
             <speaker>ATHAMARE.</speaker>
             <l part="F">En ces lieux il t’est honteux de vivre :</l>
-            <l n="1089" xml:id="l1089" part="I">Attends mon ordre.</l>
+            <l n="1089" part="I" xml:id="l1089">Attends mon ordre.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
-          <head>SCÈNE VI. Sozame, Hermodan.<listPerson type="configuration" xml:id="conf23"><person corresp="#SOZAME"/><person corresp="#HERMODAN"/></listPerson></head>
-          <sp xml:id="IV06-1" who="SOZAME">
+        <div2 n="6" type="scene" xml:id="IV06">
+          <head>SCÈNE VI. Sozame, Hermodan.<listPerson type="configuration" xml:id="conf23">
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/></listPerson></head>
+          <sp who="SOZAME" xml:id="IV06-1">
             <speaker>SOZAME, se courbant vers Hermodan.</speaker>
             <l part="F">Tous mes malheurs et d’effroi !</l>
             <l n="1090" xml:id="l1090">Tous mes malheurs, ami, sont retombés sur toi. -</l>
             <l n="1091" xml:id="l1091">Il m’entend - il me voit - Il revient - il soupire -</l>
-            <l n="1092" xml:id="l1092" part="I">Hermodan !</l>
+            <l n="1092" part="I" xml:id="l1092">Hermodan !</l>
           </sp>
-          <sp xml:id="IV06-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV06-2">
             <speaker>HERMODAN, se relevant avec peine.</speaker>
             <l part="F">Mon ami, fais au moins que j’expire</l>
             <l n="1093" xml:id="l1093">Sur le corps étendu de mon fils expirant !</l>
@@ -2159,7 +2225,7 @@
             <l n="1097" xml:id="l1097">Viens, lorsque de mon fils j’aurai fermé les yeux,</l>
             <l n="1098" xml:id="l1098">Dans un même sépulcre enferme-nous tous deux.</l>
           </sp>
-          <sp xml:id="IV06-3" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV06-3">
             <speaker>SOZAME.</speaker>
             <l n="1099" xml:id="l1099">Trois amis y seront. La même sépulture.</l>
             <l n="1100" xml:id="l1100">Contiendra notre cendre ; oui, ma bouche le jure.</l>
@@ -2169,25 +2235,28 @@
             <l n="1104" xml:id="l1104">Allons, j’entends au loin la trompette guerrière,</l>
             <l n="1105" xml:id="l1105">Les tambours, les clairons, les cris des combattants.</l>
           </sp>
-          <sp xml:id="IV06-4" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV06-4">
             <speaker>HERMODAN.</speaker>
             <l n="1106" xml:id="l1106">Ah ! L’on venge mon fils. Je retrouve mes sens.</l>
             <l n="1107" xml:id="l1107">Nos Scythes sont armés... Dieux, punissez les crimes,</l>
             <l n="1108" xml:id="l1108">Dieux, combattez pour nous, et prenez vos victimes.</l>
-            <l n="1109" xml:id="l1109" part="I">Nous en mourrons pas seuls.</l>
+            <l n="1109" part="I" xml:id="l1109">Nous en mourrons pas seuls.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
-          <head>SCÈNE VII. Sozame, Hermodan, Obéide.<listPerson type="configuration" xml:id="conf24"><person corresp="#SOZAME"/><person corresp="#HERMODAN"/><person corresp="#OBEIDE"/></listPerson></head>
-          <sp xml:id="IV07-1" who="SOZAME">
+        <div2 n="7" type="scene" xml:id="IV07">
+          <head>SCÈNE VII. Sozame, Hermodan, Obéide.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#OBEIDE"/></listPerson></head>
+          <sp who="SOZAME" xml:id="IV07-1">
             <speaker>SOZAME.</speaker>
             <l part="F">Ô ma fille, est-ce vous ?</l>
           </sp>
-          <sp xml:id="IV07-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV07-2">
             <speaker>HERMODAN.</speaker>
-            <l n="1110" xml:id="l1110" part="I">Chère Obéide. - hélas !</l>
+            <l n="1110" part="I" xml:id="l1110">Chère Obéide. - hélas !</l>
           </sp>
-          <sp xml:id="IV07-3" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV07-3">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Je tombe à vos genoux.</l>
             <l n="1111" xml:id="l1111">Dans l’horreur du combat avec peine échappée</l>
@@ -2215,12 +2284,12 @@
             <l n="1131" xml:id="l1131">Si le Scythe sur moi veut assouvir sa rage,</l>
             <l n="1132" xml:id="l1132">Il le peut, je l’attends, je demeure en otage.</l>
           </sp>
-          <sp xml:id="IV07-4" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV07-4">
             <speaker>HERMODAN.</speaker>
             <l n="1133" xml:id="l1133">Ah ! Si mon triste sort pouvait être adouci,</l>
-            <l n="1134" xml:id="l1134" part="I">Il le serait par toi.</l>
+            <l n="1134" part="I" xml:id="l1134">Il le serait par toi.</l>
           </sp>
-          <sp xml:id="IV07-5" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV07-5">
             <speaker>SOZAME.</speaker>
             <l part="F">Que faisons nous ici ?</l>
             <l n="1135" xml:id="l1135">Armons-nous, de notre âge oublions la faiblesse.</l>
@@ -2228,23 +2297,27 @@
             <l n="1137" xml:id="l1137">Le courage demeure, et c’est dans un combat</l>
             <l n="1138" xml:id="l1138">Qu’un vieillard comme moi doit tomber en soldat.</l>
           </sp>
-          <sp xml:id="IV07-6" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV07-6">
             <speaker>HERMODAN.</speaker>
             <l n="1139" xml:id="l1139">On nous apporte encor de fatales nouvelles.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV08" type="scene" n="8">
-          <head>SCÈNE VIII. Sozame, Hermodan, Obéide, Un Scythe.<listPerson type="configuration" xml:id="conf25"><person corresp="#LESCYTHE"/><person corresp="#HERMODAN"/><person corresp="#OBEIDE"/><person corresp="#SOZAME"/></listPerson></head>
-          <sp xml:id="IV08-1" who="LESCYTHE">
+        <div2 n="8" type="scene" xml:id="IV08">
+          <head>SCÈNE VIII. Sozame, Hermodan, Obéide, Un Scythe.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#SCYTHES"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SOZAME"/></listPerson></head>
+          <sp who="SCYTHES" xml:id="IV08-1">
             <speaker>LE SCYTHE.</speaker>
-            <l n="1140" xml:id="l1140" part="I">Enfin nous l’emportons.</l>
+            <l n="1140" part="I" xml:id="l1140">Enfin nous l’emportons.</l>
           </sp>
-          <sp xml:id="IV08-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV08-2">
             <speaker>HERMODAN.</speaker>
             <l part="F">Déités immortelles,</l>
             <l n="1141" xml:id="l1141">Mon fils serait vengé ! n’est-ce point une erreur ?</l>
           </sp>
-          <sp xml:id="IV08-3" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="IV08-3">
             <speaker>LE SCYTHE.</speaker>
             <l n="1142" xml:id="l1142">Le ciel nous rend justice, et le Scythe est vainqueur.</l>
             <l n="1143" xml:id="l1143">La moitié des Persans à la mort est livrée.</l>
@@ -2252,60 +2325,60 @@
             <l n="1145" xml:id="l1145">Dans la sombre épaisseur de ces profonds taillis,</l>
             <l n="1146" xml:id="l1146">Où bientôt sans retour ils seront assaillis.</l>
           </sp>
-          <sp xml:id="IV08-4" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV08-4">
             <speaker>HERMODAN.</speaker>
             <l n="1147" xml:id="l1147">De mon malheureux fils le meurtrier barbare</l>
-            <l n="1148" xml:id="l1148" part="I">Serait-il échappé ?</l>
+            <l n="1148" part="I" xml:id="l1148">Serait-il échappé ?</l>
           </sp>
-          <sp xml:id="IV08-5" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="IV08-5">
             <speaker>LE SCYTHE.</speaker>
             <l part="F">Qui ? Ce fier Athamare ?</l>
             <l n="1149" xml:id="l1149">Sur nos Scythes mourants qu’a fait tomber sa main,</l>
             <l n="1150" xml:id="l1150">Épuisé, sans secours, enveloppé soudain,</l>
             <l n="1151" xml:id="l1151">Il est couvert de sang, il est chargé de chaînes.</l>
           </sp>
-          <sp xml:id="IV08-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV08-6">
             <speaker>OBÉIDE.</speaker>
-            <l n="1152" xml:id="l1152" part="I">Lui !</l>
+            <l n="1152" part="I" xml:id="l1152">Lui !</l>
           </sp>
-          <sp xml:id="IV08-7" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV08-7">
             <speaker>SOZAME.</speaker>
             <l part="F">Je l’avais prévu. - Puissances souveraines,</l>
             <l n="1153" xml:id="l1153">Princes audacieux, quel exemple pour vous !</l>
           </sp>
-          <sp xml:id="IV08-8" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV08-8">
             <speaker>HERMODAN.</speaker>
             <l n="1154" xml:id="l1154">De ce cruel enfin nous serons vengés tous ;</l>
             <l n="1155" xml:id="l1155">Nos lois, nos justes lois seront exécutées.</l>
           </sp>
-          <sp xml:id="IV08-9" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV08-9">
             <speaker>OBÉIDE.</speaker>
-            <l n="1156" xml:id="l1156" part="I">Ciel !... Quelles sont ces lois ?</l>
+            <l n="1156" part="I" xml:id="l1156">Ciel !... Quelles sont ces lois ?</l>
           </sp>
-          <sp xml:id="IV08-10" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV08-10">
             <speaker>HERMODAN.</speaker>
             <l part="F">Les dieux les ont dictées.</l>
           </sp>
-          <sp xml:id="IV08-11" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV08-11">
             <speaker>SOZAME, à part.</speaker>
             <l n="1157" xml:id="l1157">Ô comble de douleur et de nouveaux ennuis !</l>
           </sp>
-          <sp xml:id="IV08-12" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV08-12">
             <speaker>OBÉIDE, à Hermodan.</speaker>
             <l n="1158" xml:id="l1158">- Mais enfin, les Persans ne sont pas tous détruits.</l>
             <l n="1159" xml:id="l1159">On verrait Ecbatane en secourant son maître,</l>
             <l n="1160" xml:id="l1160">Du poids de sa grandeur vous accabler peut-être.</l>
           </sp>
-          <sp xml:id="IV08-13" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV08-13">
             <speaker>HERMODAN.</speaker>
             <l n="1161" xml:id="l1161">Ne crains rien : - Toi, jeune homme, et vous, braves guerriers,</l>
             <l n="1162" xml:id="l1162">Préparez votre autel entouré de lauriers.</l>
           </sp>
-          <sp xml:id="IV08-14" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV08-14">
             <speaker>OBÉIDE.</speaker>
-            <l n="1163" xml:id="l1163" part="I">Mon père !...</l>
+            <l n="1163" part="I" xml:id="l1163">Mon père !...</l>
           </sp>
-          <sp xml:id="IV08-15" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="IV08-15">
             <speaker>HERMODAN.</speaker>
             <l part="F">Il faut hâter ce juste sacrifice.</l>
             <l n="1164" xml:id="l1164">Mânes de mon cher fils, que ton ombre en jouisse !</l>
@@ -2317,52 +2390,56 @@
             <l n="1170" xml:id="l1170">Attend de mon pays, et demande de toi.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
-          <sp xml:id="IV08-16" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV08-16">
             <speaker>OBÉIDE.</speaker>
             <l n="1171" xml:id="l1171">Où suis-je ! Qu’a-t-il dit ! Où me vois-réduite !</l>
           </sp>
-          <sp xml:id="IV08-17" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV08-17">
             <speaker>SOZAME.</speaker>
             <l n="1172" xml:id="l1172">Dans quel abîme affreux hélas ! T’ai-je conduite !</l>
             <l n="1173" xml:id="l1173">Viens; je t’expliquerai ce mystère odieux.</l>
           </sp>
-          <sp xml:id="IV08-18" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV08-18">
             <speaker>OBÉIDE.</speaker>
             <l n="1174" xml:id="l1174">Je n’ose le prévoir : - je détourne les yeux.</l>
           </sp>
-          <sp xml:id="IV08-19" who="SOZAME">
+          <sp who="SOZAME" xml:id="IV08-19">
             <speaker>SOZAME.</speaker>
             <l n="1175" xml:id="l1175">Je frémis comme toi, je ne puis m’en défendre.</l>
           </sp>
-          <sp xml:id="IV08-20" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="IV08-20">
             <speaker>OBÉIDE.</speaker>
             <l n="1176" xml:id="l1176">Ah ! Laissez-moi mourir, Seigneur, sans vous entendre.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Obéide, Sozame, Hermodan, Troupe de Scythes armés de javelots.<listPerson type="configuration" xml:id="conf27"><person corresp="#OBEIDE"/><person corresp="#SOZAME"/><person corresp="#HERMODAN"/><person corresp="#LESCYTHE"/></listPerson></head>
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE PREMIÈRE. Obéide, Sozame, Hermodan, Troupe de Scythes armés de javelots.<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#SCYTHES"/></listPerson></head>
           <stage type="[N/A]">On apporte un autel couvert d’un crêpe et entouré de lauriers. Un Scythe met un glaive sur l’autel.</stage>
-          <sp xml:id="V01-1" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-1">
             <speaker>OBÉIDE, entre Sozame et Hermodan.</speaker>
             <l n="1177" xml:id="l1177">Vous vous taisez tous deux : craignez-vous de me dire</l>
             <l n="1178" xml:id="l1178">Ce qu’à mes sens glaces votre loi doit prescrire ?</l>
             <l n="1179" xml:id="l1179">Quel est cet appareil terrible et solennel ?</l>
           </sp>
-          <sp xml:id="V01-2" who="SOZAME">
+          <sp who="SOZAME" xml:id="V01-2">
             <speaker>SOZAME.</speaker>
             <l n="1180" xml:id="l1180">Ma fille - il faut parler - voici le même autel</l>
             <l n="1181" xml:id="l1181">Que le soleil naissant vit dans cette journée,</l>
             <l n="1182" xml:id="l1182">Orné de fleurs par moi pour ton saint hyménée,</l>
             <l n="1183" xml:id="l1183">Et voit d’un crêpe affreux couvert à son couchant.</l>
           </sp>
-          <sp xml:id="V01-3" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V01-3">
             <speaker>HERMODAN.</speaker>
-            <l n="1184" xml:id="l1184" part="I">As-tu chéri mon fils ?</l>
+            <l n="1184" part="I" xml:id="l1184">As-tu chéri mon fils ?</l>
           </sp>
-          <sp xml:id="V01-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-4">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Un vertueux penchant,</l>
             <l n="1185" xml:id="l1185">Mon amitié pour toi, mon respect pour Sozame,</l>
@@ -2370,7 +2447,7 @@
             <l n="1187" xml:id="l1187">M’ont rendu cher ton fils : - mon sort suivait son sort </l>
             <l n="1188" xml:id="l1188">J’honore sa mémoire, et j’ai pleuré sa mort.</l>
           </sp>
-          <sp xml:id="V01-5" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V01-5">
             <speaker>HERMODAN.</speaker>
             <l n="1189" xml:id="l1189">L’inviolable loi qui régit ma patrie,</l>
             <l n="1190" xml:id="l1190">Veut que de son époux une femme chérie,</l>
@@ -2382,23 +2459,23 @@
             <l n="1196" xml:id="l1196">Le coeur du criminel qui ravit son bonheur.</l>
             <l n="1197" xml:id="l1197">Le Ciel t’a réservé ce sacré ministère. -</l>
           </sp>
-          <sp xml:id="V01-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-6">
             <speaker>OBÉIDE.</speaker>
-            <l n="1198" xml:id="l1198" part="I">Moi ! - Je dois vous venger !</l>
+            <l n="1198" part="I" xml:id="l1198">Moi ! - Je dois vous venger !</l>
           </sp>
-          <sp xml:id="V01-7" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V01-7">
             <speaker>HERMODAN.</speaker>
             <l part="M">Oui, ma fille !</l>
           </sp>
-          <sp xml:id="V01-8" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-8">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Ah ! Mon père !...</l>
           </sp>
-          <sp xml:id="V01-9" who="SOZAME">
+          <sp who="SOZAME" xml:id="V01-9">
             <speaker>SOZAME.</speaker>
-            <l n="1199" xml:id="l1199" part="I">Où sommes nous réduits !</l>
+            <l n="1199" part="I" xml:id="l1199">Où sommes nous réduits !</l>
           </sp>
-          <sp xml:id="V01-10" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-10">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Peuple, écoutez ma voix. -</l>
             <l n="1200" xml:id="l1200">Je pourrais ajouter, sans offenser vos lois,</l>
@@ -2415,48 +2492,48 @@
             <l n="1211" xml:id="l1211">Commandez, mais jugez ; voyez si c’est à moi</l>
             <l n="1212" xml:id="l1212">D’immoler un guerrier qui dut être mon Roi.</l>
           </sp>
-          <sp xml:id="V01-11" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="V01-11">
             <speaker>LE SCYTHE.</speaker>
             <l n="1213" xml:id="l1213">Si tu n’oses frapper, si ta main trop timide</l>
             <l n="1214" xml:id="l1214">Hésite à nous donner le sang de l’homicide,</l>
             <l n="1215" xml:id="l1215">Il meurt dans des tourments pires que le trépas.</l>
             <l n="1216" xml:id="l1216">Tu connais nos moeurs, et nous n’hésitons pas.</l>
           </sp>
-          <sp xml:id="V01-12" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-12">
             <speaker>OBÉIDE.</speaker>
             <l n="1217" xml:id="l1217">Et si hais vos moeurs, et si je vous refuse !</l>
           </sp>
-          <sp xml:id="V01-13" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V01-13">
             <speaker>HERMODAN.</speaker>
             <l n="1218" xml:id="l1218">L’hymen t’a fait ma fille, et tu n’as point d’excuse ;</l>
             <l n="1219" xml:id="l1219">Il n’en mourra pas moins, tu vivras sans honneur.</l>
           </sp>
-          <sp xml:id="V01-14" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="V01-14">
             <speaker>LE SCYTHE.</speaker>
             <l n="1220" xml:id="l1220">D’un peuple qui t’aima tu deviendras l’horreur.</l>
           </sp>
-          <sp xml:id="V01-15" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V01-15">
             <speaker>HERMODAN.</speaker>
             <l n="1221" xml:id="l1221">Il vous faut de ma main cette grande victime !</l>
           </sp>
-          <sp xml:id="V01-16" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="V01-16">
             <speaker>LE SCYTHE.</speaker>
             <l n="1222" xml:id="l1222">Tremble de rejeter un droit si légitime.</l>
           </sp>
-          <sp xml:id="V01-17" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-17">
             <speaker>OBÉIDE, après quelques pas et un long silence.</speaker>
-            <l n="1223" xml:id="l1223" part="I">- Je l’accepte.</l>
+            <l n="1223" part="I" xml:id="l1223">- Je l’accepte.</l>
           </sp>
-          <sp xml:id="V01-18" who="SOZAME">
+          <sp who="SOZAME" xml:id="V01-18">
             <speaker>SOZAME.</speaker>
             <l part="M">Ah ! Grands dieux !</l>
           </sp>
-          <sp xml:id="V01-19" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="V01-19">
             <speaker>LE SCYTHE.</speaker>
             <l part="F">Devant les immortels</l>
-            <l n="1224" xml:id="l1224" part="I">En fais-tu le serment ?</l>
+            <l n="1224" part="I" xml:id="l1224">En fais-tu le serment ?</l>
           </sp>
-          <sp xml:id="V01-20" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-20">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Je le jure, cruels.</l>
             <l n="1225" xml:id="l1225">Je le jure, Hermodan. Tu demandes vengeance,</l>
@@ -2466,31 +2543,33 @@
             <l n="1229" xml:id="l1229">Qu’on me laisse en ces lieux m’expliquer à mon père ;</l>
             <l n="1230" xml:id="l1230">Et vous verrez après ce qui vous reste à faire.</l>
           </sp>
-          <sp xml:id="V01-21" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="V01-21">
             <speaker>LE SCYTHE, après avoir regardé tous ses compagnons.</speaker>
-            <l n="1231" xml:id="l1231" part="I">Nous y consentons tous.</l>
+            <l n="1231" part="I" xml:id="l1231">Nous y consentons tous.</l>
           </sp>
-          <sp xml:id="V01-22" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V01-22">
             <speaker>HERMODAN.</speaker>
             <l part="F">La veuve de mon fils</l>
             <l n="1232" xml:id="l1232">Se déclare soumise aux lois de mon pays ;</l>
             <l n="1233" xml:id="l1233">Et ma douleur profonde est un peu soulagée,</l>
             <l n="1234" xml:id="l1234">Si par ses nobles mains cette mort est vengée.</l>
-            <l n="1235" xml:id="l1235" part="I">Amis, retirons-nous.</l>
+            <l n="1235" part="I" xml:id="l1235">Amis, retirons-nous.</l>
           </sp>
-          <sp xml:id="V01-23" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V01-23">
             <speaker>OBÉIDE.</speaker>
             <l part="F">À ces autels sanglants</l>
             <l n="1236" xml:id="l1236">Je vous rappellerai quand il en sera temps.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Sozame, Obéide.<listPerson type="configuration" xml:id="conf28"><person corresp="#OBEIDE"/><person corresp="#SOZAME"/></listPerson></head>
-          <sp xml:id="V02-1" who="OBEIDE">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Sozame, Obéide.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SOZAME"/></listPerson></head>
+          <sp who="OBEIDE" xml:id="V02-1">
             <speaker>OBÉIDE.</speaker>
-            <l n="1237" xml:id="l1237" part="I">Eh bien, qu’ordonnez-vous ?</l>
+            <l n="1237" part="I" xml:id="l1237">Eh bien, qu’ordonnez-vous ?</l>
           </sp>
-          <sp xml:id="V02-2" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-2">
             <speaker>SOZAME.</speaker>
             <l part="F">Il fut un temps peut-être</l>
             <l n="1238" xml:id="l1238">Où le plaisir affreux de me venger d’un maître</l>
@@ -2500,18 +2579,18 @@
             <l n="1242" xml:id="l1242">Contre les malheureux ne peut être exercée,</l>
             <l n="1243" xml:id="l1243">Tous mes ressentiments sont changés en regrets.</l>
           </sp>
-          <sp xml:id="V02-3" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V02-3">
             <speaker>OBÉIDE.</speaker>
             <l n="1244" xml:id="l1244">Avez-vous bien connu mes sentiments secrets ?</l>
             <l n="1245" xml:id="l1245">Dans le fond de mon coeur avez-vous daigné lire ?</l>
           </sp>
-          <sp xml:id="V02-4" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-4">
             <speaker>SOZAME.</speaker>
             <l n="1246" xml:id="l1246">Mes yeux t’ont vu pleurer sur le sang d’Indatire ;</l>
             <l n="1247" xml:id="l1247">Mais je pleure sur toi dans ce moment cruel.</l>
-            <l n="1248" xml:id="l1248" part="I">J’abhorre tes serments.</l>
+            <l n="1248" part="I" xml:id="l1248">J’abhorre tes serments.</l>
           </sp>
-          <sp xml:id="V02-5" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V02-5">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Vous voyez cet autel,</l>
             <l n="1249" xml:id="l1249">Ce glaive dont ma main doit frapper Athamare ;</l>
@@ -2519,11 +2598,11 @@
             <l n="1251" xml:id="l1251">Après ce coup terrible, - et qu’il me faut porter,</l>
             <l n="1252" xml:id="l1252">Parlez : - sur son tombeau voulez-vous habiter ?</l>
           </sp>
-          <sp xml:id="V02-6" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-6">
             <speaker>SOZAME.</speaker>
-            <l n="1253" xml:id="l1253" part="I">J’y veux mourir.</l>
+            <l n="1253" part="I" xml:id="l1253">J’y veux mourir.</l>
           </sp>
-          <sp xml:id="V02-7" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V02-7">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Vivez, ayez-en le courage.</l>
             <l n="1254" xml:id="l1254">Les Persans, croyez-moi, vengeront leur outrage.</l>
@@ -2534,12 +2613,12 @@
             <l n="1259" xml:id="l1259">À ces tigres armés voulez-vous annoncer</l>
             <l n="1260" xml:id="l1260">Qu’au fond de leur repaire on pourrait les forcer ?</l>
           </sp>
-          <sp xml:id="V02-8" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-8">
             <speaker>SOZAME.</speaker>
             <l n="1261" xml:id="l1261">On en parle déjà ; les esprits les plus sages</l>
             <l n="1262" xml:id="l1262">Voudraient de leur patrie écarter ces orages.</l>
           </sp>
-          <sp xml:id="V02-9" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V02-9">
             <speaker>OBÉIDE.</speaker>
             <l n="1263" xml:id="l1263">Achevez donc, Seigneur, de les persuader.</l>
             <l n="1264" xml:id="l1264">Qu’ils méritent le sang qu’ils osent demander.</l>
@@ -2548,7 +2627,7 @@
             <l n="1267" xml:id="l1267">Que tous nos citoyens soient mis en liberté,</l>
             <l n="1268" xml:id="l1268">Et repassent les monts sur la foi d’un traité.</l>
           </sp>
-          <sp xml:id="V02-10" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-10">
             <speaker>SOZAME.</speaker>
             <l n="1269" xml:id="l1269">Je l’obtiendrai, ma fille, et j’ose t’en répondre ;</l>
             <l n="1270" xml:id="l1270">Mais ce traité sanglant ne sert qu’à nous confondre.</l>
@@ -2559,16 +2638,16 @@
             <l n="1275" xml:id="l1275">Ce sang que j’ai haï, mais que j’ai révéré,</l>
             <l n="1276" xml:id="l1276">Qui coupable envers nous n’en est pas moins sacré.</l>
           </sp>
-          <sp xml:id="V02-11" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V02-11">
             <speaker>OBÉIDE.</speaker>
             <l n="1277" xml:id="l1277">Il l’est : - Mais je suis Scythe, - et le fus pour vous plaire :</l>
             <l n="1278" xml:id="l1278">Le climat quelquefois change le caractère.</l>
           </sp>
-          <sp xml:id="V02-12" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-12">
             <speaker>SOZAME.</speaker>
-            <l n="1279" xml:id="l1279" part="I">Ma fille !</l>
+            <l n="1279" part="I" xml:id="l1279">Ma fille !</l>
           </sp>
-          <sp xml:id="V02-13" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V02-13">
             <speaker>OBÉIDE.</speaker>
             <l part="F">C’est assez, Seigneur, j’ai tout prévu.</l>
             <l n="1280" xml:id="l1280">J’ai pesé mes destins ; et tout est résolu.</l>
@@ -2577,11 +2656,11 @@
             <l n="1283" xml:id="l1283">Je tiendrai ma parole : - allez, il vous attend.</l>
             <l n="1284" xml:id="l1284">Qu’il me garde la sienne ; - il sera trop content.</l>
           </sp>
-          <sp xml:id="V02-14" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-14">
             <speaker>SOZAME.</speaker>
-            <l n="1285" xml:id="l1285" part="I">Tu me glaces d’horreur.</l>
+            <l n="1285" part="I" xml:id="l1285">Tu me glaces d’horreur.</l>
           </sp>
-          <sp xml:id="V02-15" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V02-15">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Allez, je la partage.</l>
             <l n="1286" xml:id="l1286">Seigneur, le temps est cher, achevez votre ouvrage ;</l>
@@ -2591,7 +2670,7 @@
             <l n="1290" xml:id="l1290">Sait garder une foi toujours inviolable.</l>
             <l n="1291" xml:id="l1291">Je vous en crois : - le reste est dans la main des Dieux.</l>
           </sp>
-          <sp xml:id="V02-16" who="SOZAME">
+          <sp who="SOZAME" xml:id="V02-16">
             <speaker>SOZAME.</speaker>
             <l n="1292" xml:id="l1292">Ils ne présagent rien qui ne soit odieux :</l>
             <l n="1293" xml:id="l1293">Tout est horrible ici. Ma faible voix encore</l>
@@ -2600,9 +2679,10 @@
             <l n="1296" xml:id="l1296">Quoi qu’il puisse arriver, ton père a trop vécu.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf29"><person corresp="#OBEIDE"/></listPerson></head>
-          <sp xml:id="V03-1" who="OBEIDE">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#OBEIDE"/></listPerson></head>
+          <sp who="OBEIDE" xml:id="V03-1">
             <speaker>OBÉIDE.</speaker>
             <l n="1297" xml:id="l1297">Ah ! C’est trop étouffer la fureur qui m’agite.</l>
             <l n="1298" xml:id="l1298">Tant de ménagement me déchire et m’irrite ;</l>
@@ -2612,13 +2692,15 @@
             <l n="1302" xml:id="l1302">Je fus esclave assez : - ma liberté s’approche.</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>Scène IV. OBÉIDE, SULMA.<listPerson type="configuration" xml:id="conf30"><person corresp="#OBEIDE"/><person corresp="#SULMA"/></listPerson></head>
-          <sp xml:id="V04-1" who="OBEIDE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>Scène IV. OBÉIDE, SULMA.<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SULMA"/></listPerson></head>
+          <sp who="OBEIDE" xml:id="V04-1">
             <speaker>OBÉIDE.</speaker>
-            <l n="1303" xml:id="l1303" part="I">Enfin je te revois.</l>
+            <l n="1303" part="I" xml:id="l1303">Enfin je te revois.</l>
           </sp>
-          <sp xml:id="V04-2" who="SULMA">
+          <sp who="SULMA" xml:id="V04-2">
             <speaker>SULMA.</speaker>
             <l part="F">Grands dieux ! Que j’ai tremblé</l>
             <l n="1304" xml:id="l1304">Lorsque disparaissant à mon oeil désolé,</l>
@@ -2627,17 +2709,17 @@
             <l n="1307" xml:id="l1307">Des flots de sang humain roulaient entre nous deux.</l>
             <l n="1308" xml:id="l1308">Quel jour ! Quel hyménée ! Et quel sort rigoureux !</l>
           </sp>
-          <sp xml:id="V04-3" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-3">
             <speaker>OBÉIDE.</speaker>
             <l n="1309" xml:id="l1309">Tu verras un spectacle encor plus effroyable.</l>
           </sp>
-          <sp xml:id="V04-4" who="SULMA">
+          <sp who="SULMA" xml:id="V04-4">
             <speaker>SULMA.</speaker>
             <l n="1310" xml:id="l1310">Ciel ! On m’aurait dit vrai ! - Quoi ! Votre main coupable</l>
             <l n="1311" xml:id="l1311">Immolerait l’amant que vous avez aimé,</l>
             <l n="1312" xml:id="l1312">Pour satisfaire un peuple à sa perte animé !</l>
           </sp>
-          <sp xml:id="V04-5" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-5">
             <speaker>OBÉIDE.</speaker>
             <l n="1313" xml:id="l1313">Moi ! Complaire à ce peuple, aux monstres de Scythie,</l>
             <l n="1314" xml:id="l1314">À ces brutes humains pétris de barbarie,</l>
@@ -2670,21 +2752,21 @@
             <l n="1341" xml:id="l1341">C’est moi qui suis esclave, et qui suis asservie</l>
             <l n="1342" xml:id="l1342">Aux plus durs des tyrans abhorrés dans l’Asie.</l>
           </sp>
-          <sp xml:id="V04-6" who="SULMA">
+          <sp who="SULMA" xml:id="V04-6">
             <speaker>SULMA.</speaker>
             <l n="1343" xml:id="l1343">Vous n’êtes point réduite à la nécessité</l>
             <l n="1344" xml:id="l1344">De servir d’instrument à leur férocité.</l>
           </sp>
-          <sp xml:id="V04-7" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-7">
             <speaker>OBÉIDE.</speaker>
             <l n="1345" xml:id="l1345">Si j’avais refusé ce ministère horrible,</l>
             <l n="1346" xml:id="l1346">Athamare expirait d’une mort plus terrible.</l>
           </sp>
-          <sp xml:id="V04-8" who="SULMA">
+          <sp who="SULMA" xml:id="V04-8">
             <speaker>SULMA.</speaker>
             <l n="1347" xml:id="l1347">Mais cet amour secret qui vous parle pour lui ?</l>
           </sp>
-          <sp xml:id="V04-9" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-9">
             <speaker>OBÉIDE.</speaker>
             <l n="1348" xml:id="l1348">Il m’a parlé toujours ; et s’il faut aujourd’hui</l>
             <l n="1349" xml:id="l1349">Exposer à tes yeux l’effroyable étendue,</l>
@@ -2698,31 +2780,31 @@
             <l n="1357" xml:id="l1357">Lorsque je l’idolâtre, il faudra qu’Obéide</l>
             <l n="1358" xml:id="l1358">Plonge au sein d’Athamare un couteau parricide !</l>
           </sp>
-          <sp xml:id="V04-10" who="SULMA">
+          <sp who="SULMA" xml:id="V04-10">
             <speaker>SULMA.</speaker>
             <l n="1359" xml:id="l1359">C’est un crime si grand, que ces Scythes cruels,</l>
             <l n="1360" xml:id="l1360">Qui du sang des humains arrosent les autels,</l>
             <l n="1361" xml:id="l1361">S’ils connaissaient l’amour qui vous a consumée,</l>
             <l n="1362" xml:id="l1362">Eux-même arrêteraient la main qu’ils ont armée.</l>
           </sp>
-          <sp xml:id="V04-11" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-11">
             <speaker>OBÉIDE.</speaker>
             <l n="1363" xml:id="l1363">Non, ils la porteraient dans ce coeur adoré,</l>
             <l n="1364" xml:id="l1364">Ils l’y tiendraient sanglante, et du glaive sacré</l>
             <l n="1365" xml:id="l1365">Il tourneraient l’acier enfoncé dans ses veines.</l>
           </sp>
-          <sp xml:id="V04-12" who="SULMA">
+          <sp who="SULMA" xml:id="V04-12">
             <speaker>SULMA.</speaker>
-            <l n="1366" xml:id="l1366" part="I">Se peut-il !...</l>
+            <l n="1366" part="I" xml:id="l1366">Se peut-il !...</l>
           </sp>
-          <sp xml:id="V04-13" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-13">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Telles sont leurs âmes inhumaines ;</l>
             <l n="1367" xml:id="l1367">Tel est l’homme sauvage à lui-même laissé ;</l>
             <l n="1368" xml:id="l1368">Il est simple, il est bon, s’il n’est point offensé.</l>
-            <l n="1369" xml:id="l1369" part="I">Sa vengeance est sans borne.</l>
+            <l n="1369" part="I" xml:id="l1369">Sa vengeance est sans borne.</l>
           </sp>
-          <sp xml:id="V04-14" who="SULMA">
+          <sp who="SULMA" xml:id="V04-14">
             <speaker>SULMA.</speaker>
             <l part="F">Et ce malheureux père,</l>
             <l n="1370" xml:id="l1370">Qui creusa sous vos pas ce gouffre de misère,</l>
@@ -2731,7 +2813,7 @@
             <l n="1373" xml:id="l1373">Peut-il bien seulement supporter qu’on propose</l>
             <l n="1374" xml:id="l1374">L’horrible extrémité dont lui-même est la cause ?</l>
           </sp>
-          <sp xml:id="V04-15" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-15">
             <speaker>OBÉIDE.</speaker>
             <l n="1375" xml:id="l1375">Il fait beaucoup pour moi. J’ose même espérer,</l>
             <l n="1376" xml:id="l1376">Des douleurs dont j’ai vu son coeur se déchirer,</l>
@@ -2739,33 +2821,39 @@
             <l n="1377" xml:id="l1377">Que ses pleurs obtiendront de ce Sénat agreste</l>
             <l n="1378" xml:id="l1378">Des adoucissements à leur arrêt funeste.</l>
           </sp>
-          <sp xml:id="V04-16" who="SULMA">
+          <sp who="SULMA" xml:id="V04-16">
             <speaker>SULMA.</speaker>
             <l n="1379" xml:id="l1379">Ah ! Vous rendez la vie à mes sens effrayés !</l>
             <l n="1380" xml:id="l1380">Je vous haïrais trop si vous obéissiez.</l>
             <l n="1381" xml:id="l1381">Le ciel ne verra point ce sanglant sacrifice.</l>
           </sp>
-          <sp xml:id="V04-17" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-17">
             <speaker>OBÉIDE.</speaker>
-            <l n="1382" xml:id="l1382" part="I">Sulma !...</l>
+            <l n="1382" part="I" xml:id="l1382">Sulma !...</l>
           </sp>
-          <sp xml:id="V04-18" who="SULMA">
+          <sp who="SULMA" xml:id="V04-18">
             <speaker>SULMA.</speaker>
             <l part="M">Vous frémissez.</l>
           </sp>
-          <sp xml:id="V04-19" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V04-19">
             <speaker>OBÉIDE.</speaker>
             <l part="F">- Il faut qu’il s’accomplisse.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Obéide, Sulma, Sozame, Hermodan, Scythes, armés, rangés au fond, en demi-cercle, près de l’autel.<listPerson type="configuration" xml:id="conf31"><person corresp="#SOZAME"/><person corresp="#HERMODAN"/><person corresp="#UNSCYTHE"/><person corresp="#OBEIDE"/><person corresp="#SULMA"/><person corresp="#ATHAMARE"/><person corresp="#LESCYTHE"/><person corresp="#SCYTHES"/></listPerson></head>
-          <sp xml:id="V05-1" who="SOZAME">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Obéide, Sulma, Sozame, Hermodan, Scythes, armés, rangés au fond, en demi-cercle, près de l’autel.<listPerson type="configuration" xml:id="conf31">
+            <person corresp="#SOZAME"/>
+            <person corresp="#HERMODAN"/>
+            <person corresp="#OBEIDE"/>
+            <person corresp="#SULMA"/>
+            <person corresp="#ATHAMARE"/>
+            <person corresp="#SCYTHES"/></listPerson></head>
+          <sp who="SOZAME" xml:id="V05-1">
             <speaker>SOZAME.</speaker>
             <l n="1383" xml:id="l1383">Ma fille, hélas ! du moins nos Persans assiégés</l>
             <l n="1384" xml:id="l1384">Des pièges de la mort seront tous dégagés.</l>
           </sp>
-          <sp xml:id="V05-2" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V05-2">
             <speaker>HERMODAN.</speaker>
             <l n="1385" xml:id="l1385">Des mânes de mon fils la victime attendue</l>
             <l n="1386" xml:id="l1386">Suffit à ma vengeance autant qu’elle m’est due.</l>
@@ -2773,36 +2861,36 @@
             <l n="1387" xml:id="l1387">De ce peuple, crois-moi, l’inflexible équité</l>
             <l n="1388" xml:id="l1388">Sait joindre la clémence à la sévérité.</l>
           </sp>
-          <sp xml:id="V05-3" who="UNSCYTHE">
+          <sp who="SCYTHES" xml:id="V05-3">
             <speaker>UN SCYTHE.</speaker>
             <l n="1389" xml:id="l1389">Et la loi des serments est une loi suprême,</l>
             <l n="1390" xml:id="l1390">Aussi chère à nos coeurs que la vengeance même.</l>
           </sp>
-          <sp xml:id="V05-4" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V05-4">
             <speaker>OBÉIDE.</speaker>
             <l n="1391" xml:id="l1391">C’est assez ; je vous crois. Vous avez donc juré</l>
             <l n="1392" xml:id="l1392">Que de tous les Persans le sang sera sacré,</l>
             <l n="1393" xml:id="l1393">Sitôt que cette main remplira vos vengeances ?</l>
           </sp>
-          <sp xml:id="V05-5" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V05-5">
             <speaker>HERMODAN.</speaker>
             <l n="1394" xml:id="l1394">Tous seront épargnés. Les célestes puissances</l>
             <l n="1395" xml:id="l1395">N’ont jamais vu de Scythe oser trahir sa foi.</l>
           </sp>
-          <sp xml:id="V05-6" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V05-6">
             <speaker>OBÉIDE.</speaker>
             <l n="1396" xml:id="l1396">Qu’Athamare à présent paraisse devant moi.</l>
             <stage type="[N/A]">On amène Athamare enchaîné : Obéide se place entre lui et Hermodan.</stage>
           </sp>
-          <sp xml:id="V05-7" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V05-7">
             <speaker>HERMODAN.</speaker>
-            <l n="1397" xml:id="l1397" part="I">Qu’on le traîne à l’autel.</l>
+            <l n="1397" part="I" xml:id="l1397">Qu’on le traîne à l’autel.</l>
           </sp>
-          <sp xml:id="V05-8" who="SULMA">
+          <sp who="SULMA" xml:id="V05-8">
             <speaker>SULMA.</speaker>
             <l part="M">Ah ! Dieux !</l>
           </sp>
-          <sp xml:id="V05-9" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="V05-9">
             <speaker>ATHAMARE.</speaker>
             <l part="F">Chère Obéide !</l>
             <l n="1398" xml:id="l1398">Prends ce fer, ne crains rien : que ton bras homicide</l>
@@ -2819,15 +2907,15 @@
             <l n="1409" xml:id="l1409">Si ta main, si tes yeux, si ton coeur qui s’égare,</l>
             <l n="1410" xml:id="l1410">S’effrayaient un moment en frappant Athamare.</l>
           </sp>
-          <sp xml:id="V05-10" who="SOZAME">
+          <sp who="SOZAME" xml:id="V05-10">
             <speaker>SOZAME.</speaker>
-            <l n="1411" xml:id="l1411" part="I">Ah, ma fille !...</l>
+            <l n="1411" part="I" xml:id="l1411">Ah, ma fille !...</l>
           </sp>
-          <sp xml:id="V05-11" who="SULMA">
+          <sp who="SULMA" xml:id="V05-11">
             <speaker>SULMA.</speaker>
             <l part="M">Ah ! Madame...</l>
           </sp>
-          <sp xml:id="V05-12" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V05-12">
             <speaker>OBÉIDE.</speaker>
             <l part="F">Ô Scythes inhumains !</l>
             <l n="1412" xml:id="l1412">Connaissez dans quel sang vous enfoncez mes mains.</l>
@@ -2836,11 +2924,11 @@
             <l n="1415" xml:id="l1415">Porte au plus grand excès dans ce coeur enivré</l>
             <l n="1416" xml:id="l1416">L’amour, le tendre amour dont il fut dévoré.</l>
           </sp>
-          <sp xml:id="V05-13" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="V05-13">
             <speaker>ATHAMARE.</speaker>
-            <l n="1417" xml:id="l1417" part="I">Je meurs heureux.</l>
+            <l n="1417" part="I" xml:id="l1417">Je meurs heureux.</l>
           </sp>
-          <sp xml:id="V05-14" who="OBEIDE">
+          <sp who="OBEIDE" xml:id="V05-14">
             <speaker>OBÉIDE.</speaker>
             <l part="F">L’hymen, cet hymen que j’abjure,</l>
             <l n="1418" xml:id="l1418">Dans un sang criminel doit laver son injure. -</l>
@@ -2851,40 +2939,40 @@
             <l n="1421" xml:id="l1421">Vis, mon cher Athamare, en mourant je l’ordonne.</l>
             <stage type="action/fall">Elle tombe à mi-corps sur l’autel.</stage>
           </sp>
-          <sp xml:id="V05-15" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V05-15">
             <speaker>HERMODAN.</speaker>
-            <l n="1422" xml:id="l1422" part="I">Obéide !</l>
+            <l n="1422" part="I" xml:id="l1422">Obéide !</l>
           </sp>
-          <sp xml:id="V05-16" who="SOZAME">
+          <sp who="SOZAME" xml:id="V05-16">
             <speaker>SOZAME.</speaker>
             <l part="M">Ô mon sang !</l>
           </sp>
-          <sp xml:id="V05-17" who="ATHAMARE">
+          <sp who="ATHAMARE" xml:id="V05-17">
             <speaker>ATHAMARE.</speaker>
             <l part="F">La force m’abandonne,</l>
             <l n="1423" xml:id="l1423">Mais il m’en reste assez pour me rejoindre à toi,</l>
-            <l n="1424" xml:id="l1424" part="I">Chère Obéide !</l>
+            <l n="1424" part="I" xml:id="l1424">Chère Obéide !</l>
             <stage type="[N/A]">Il veut saisir le fer.</stage>
           </sp>
-          <sp xml:id="V05-18" who="LESCYTHE">
+          <sp who="SCYTHES" xml:id="V05-18">
             <speaker>LE SCYTHE.</speaker>
             <l part="F">Arrête, et respecte la loi.</l>
             <l n="1425" xml:id="l1425">Ce fer serait souillé par des mains étrangères.</l>
             <stage type="[N/A]">Athamare tombe sur l’autel.</stage>
           </sp>
-          <sp xml:id="V05-19" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V05-19">
             <speaker>HERMODAN.</speaker>
             <l n="1426" xml:id="l1426">Dieux ! Vîtes-vous jamais deux plus malheureux pères !</l>
           </sp>
-          <sp xml:id="V05-20" who="SOZAME">
+          <sp who="SOZAME" xml:id="V05-20">
             <speaker>SOZAME, à Athamare.</speaker>
             <l n="1427" xml:id="l1427">Dieux ! De tous mes tourments tranchez l’horrible cours ;</l>
             <l n="1428" xml:id="l1428">Tu dois vivre, Athamare, et j’ai payé tes jours.</l>
             <l n="1429" xml:id="l1429">Auteur infortuné des maux de ma famille,</l>
             <l n="1430" xml:id="l1430">Ensevelis du moins le père avec la fille,</l>
-            <l n="1431" xml:id="l1431" part="I">Va, règne, malheureux !</l>
+            <l n="1431" part="I" xml:id="l1431">Va, règne, malheureux !</l>
           </sp>
-          <sp xml:id="V05-21" who="HERMODAN">
+          <sp who="HERMODAN" xml:id="V05-21">
             <speaker>HERMODAN.</speaker>
             <l part="F">Soumettons-nous au sort ;</l>
             <l n="1432" xml:id="l1432">Soumettons-nous au ciel, arbitre de la mort. -</l>

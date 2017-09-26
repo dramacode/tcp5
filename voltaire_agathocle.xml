@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Agathocle</title>
         <title type="sub">, tragédie</title>
-        <author born="1694" born_location="Paris" death="1778" death_location="Paris" academie="1746">
+        <author academie="1746" born="1694" born_location="Paris" death="1778" death_location="Paris">
           <surname>Voltaire</surname>
         </author>
         <date>1779</date>
@@ -34,7 +35,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -47,40 +48,42 @@
           <titlePart type="sub">TRAGÉDIE EN CINQ ACTES représentée le 31 mai 1779</titlePart>
         </docTitle>
         <docDate value="1734">1779</docDate>
-        <docAuthor id="VOLTAIRE" bio="voltaire">Voltaire</docAuthor>
+        <docAuthor bio="voltaire" id="VOLTAIRE">Voltaire</docAuthor>
         <docImprint>
           <privilege id="17**-**-**"/>
           <imprimeur id="***"/>
           <acheveImprime id="17**-**-**"/>
         </docImprint>
         <performance>
-        <premiere date="1779-05-31" location="Théâtre des Tuileries">Représentée pour la première fois au Théâtre des Tuileries el 31 mai 1779.</premiere>
-        <casting> Noms des principaux acteurs qui jouèrent dans Agathocle : Molé (Argide), brizard (Ysadan) ; Mmes Vestris (la Prêtresse), Sainval cadette (Ydace). Cette liste est incomplète. Nous n’avons trouvé aucun nom sur les registres de la Comédie-Française. (G. A.) </casting>
-        <recette>2389 livres</recette>
-      </performance>
+          <premiere date="1779-05-31" location="Théâtre des Tuileries">Représentée pour la première fois au Théâtre des Tuileries el 31 mai 1779.</premiere>
+          <casting> Noms des principaux acteurs qui jouèrent dans Agathocle : Molé (Argide), brizard (Ysadan) ; Mmes Vestris (la Prêtresse), Sainval cadette (Ydace). Cette liste est incomplète. Nous n’avons trouvé aucun nom sur les registres de la Comédie-Française. (G. A.) </casting>
+          <recette>2389 livres</recette>
+        </performance>
       </titlePage>
       <div xml:id="castList">
         <castList>
           <head> PERSONNAGES</head>
-          <castItem><role xml:id="AGATHOCLE" rend="male">AGATHOCLE</role>, tyran de Syracuse.</castItem>
-          <castItem><role xml:id="POLYCRATE" rend="male">POLYCRATE</role>, fils d’Agathocle.</castItem>
-          <castItem><role xml:id="ARGIDE" rend="male">ARGIDE</role>, fils d’Agathocle.</castItem>
-          <castItem><role xml:id="YDASAN" rend="male">YDASAN</role>, vieux guerrier au service de Carthage.</castItem>
-          <castItem><role xml:id="EGESTE" rend="male">ÉGESTE</role>, officier au service de Syracuse.</castItem>
-          <castItem><role xml:id="YDACE" rend="female">YDACE</role>, fille d’Ydasan.</castItem>
-          <castItem><role xml:id="ELPENOR" rend="male">ELPÉNOR</role>, conseiller du roi.</castItem>
-          <castItem><role xml:id="UnePRETRESSE" rend="female">Une PRÊTRESSE</role> de Cérès.</castItem>
-          <castItem><role xml:id="SUITEETSOLDATS" rend="">SUITE ET SOLDATS</role>.</castItem>
+          <castItem><role rend="male" xml:id="AGATHOCLE">AGATHOCLE</role>, tyran de Syracuse.</castItem>
+          <castItem><role rend="male" xml:id="POLYCRATE">POLYCRATE</role>, fils d’Agathocle.</castItem>
+          <castItem><role rend="male" xml:id="ARGIDE">ARGIDE</role>, fils d’Agathocle.</castItem>
+          <castItem><role rend="male" xml:id="YDASAN">YDASAN</role>, vieux guerrier au service de Carthage.</castItem>
+          <castItem><role rend="male" xml:id="EGESTE">ÉGESTE</role>, officier au service de Syracuse.</castItem>
+          <castItem><role rend="female" xml:id="YDACE">YDACE</role>, fille d’Ydasan.</castItem>
+          <castItem><role rend="male" xml:id="ELPENOR">ELPÉNOR</role>, conseiller du roi.</castItem>
+          <castItem><role rend="female" xml:id="PRETRESSE">Une PRÊTRESSE</role> de Cérès.</castItem>
+          <castItem><role xml:id="SOLDATS">SUITE ET SOLDATS</role>.</castItem>
         </castList>
-        <set location="Syracuse" country="Italie" periode="IVème avant JC" link="">La scène est dans une place, entre le palais du roi et les ruines d’un temple.</set>
+        <set country="Italie" link="" location="Syracuse" periode="IVème avant JC">La scène est dans une place, entre le palais du roi et les ruines d’un temple.</set>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE I. Ydasan, Égeste.<listPerson type="configuration" xml:id="conf1"><person corresp="#EGESTE"/><person corresp="#YDASAN"/></listPerson></head>
-          <sp xml:id="I01-1" who="EGESTE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE I. Ydasan, Égeste.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#EGESTE"/>
+            <person corresp="#YDASAN"/></listPerson></head>
+          <sp who="EGESTE" xml:id="I01-1">
             <speaker>ÉGESTE</speaker>
             <l n="1" xml:id="l1">De nos malheurs enfin le ciel a pris pitié ;</l>
             <l n="2" xml:id="l2">Il resserre aujourd’hui notre antique amitié.</l>
@@ -90,7 +93,7 @@
             <l n="6" xml:id="l6">Ont encor des appas pour un infortuné</l>
             <l n="7" xml:id="l7">Il est doux de rentrer dans sa chère patrie.</l>
           </sp>
-          <sp xml:id="I01-2" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-2">
             <speaker>YDASAN</speaker>
             <l n="8" xml:id="l8">Elle ne m’est plus chère, et sa gloire est flétrie :</l>
             <l n="9" xml:id="l9">Sa lâche servitude, et trente ans de malheurs,</l>
@@ -101,7 +104,7 @@
             <l n="14" xml:id="l14">A moins de dureté que le coeur des tyrans.</l>
             <l n="15" xml:id="l15">Va, je hais Syracuse, Agathocle, et la vie.</l>
           </sp>
-          <sp xml:id="I01-3" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-3">
             <speaker>YDASAN</speaker>
             <l n="16" xml:id="l16">Que veux-tu ? Dès longtemps la Sicile asservie</l>
             <l n="17" xml:id="l17">De l’heureux Agathocle a reconnu les lois ;</l>
@@ -123,7 +126,7 @@
             <l n="33" xml:id="l33">Mais si le même prix nous était présenté,</l>
             <l n="34" xml:id="l34">Ne dissimulons point, serait-il rejeté ?</l>
           </sp>
-          <sp xml:id="I01-4" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-4">
             <speaker>YDASAN</speaker>
             <l n="35" xml:id="l35">Il l’eût été par moi : j’aime mieux, cher Égeste,</l>
             <l n="36" xml:id="l36">Ma triste pauvreté que sa grandeur funeste.</l>
@@ -158,7 +161,7 @@
             <l n="65" xml:id="l65">Sous les pieds d’un tyran les mortels avilis :</l>
             <l n="66" xml:id="l66">Je mourrai libre au moins... Va, sers dans ton pays.</l>
           </sp>
-          <sp xml:id="I01-5" who="EGESTE">
+          <sp who="EGESTE" xml:id="I01-5">
             <speaker>ÉGESTE</speaker>
             <l n="67" xml:id="l67">Tu ne partiras point sans me coûter des larmes.</l>
             <l n="68" xml:id="l68">Sous ce roi que tu hais je porte ici les armes ;</l>
@@ -167,19 +170,19 @@
             <l n="71" xml:id="l71">J’ai vu ta fille Ydace ; et partageant ses peines,</l>
             <l n="72" xml:id="l72">Autant que je l’ai pu, j’ai soulagé ses chaînes.</l>
           </sp>
-          <sp xml:id="I01-6" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-6">
             <speaker>YDASAN</speaker>
             <l n="73" xml:id="l73">Tu m’attendris, Égeste... Est-ce auprès de ces murs</l>
             <l n="74" xml:id="l74">Qu’elle traîne ses jours et ses malheurs obscurs ?</l>
             <l n="75" xml:id="l75">Où la trouver ? Comment me rendrai-je auprès d’elle ?</l>
           </sp>
-          <sp xml:id="I01-7" who="EGESTE">
+          <sp who="EGESTE" xml:id="I01-7">
             <speaker>ÉGESTE</speaker>
             <l n="76" xml:id="l76">Dans les débris d’un temple est sa prison cruelle,</l>
             <l n="77" xml:id="l77">Auprès de cette place, et non loin du séjour,</l>
             <l n="78" xml:id="l78">De ce séjour superbe où le roi tient sa cour.</l>
           </sp>
-          <sp xml:id="I01-8" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-8">
             <speaker>YDASAN</speaker>
             <l n="79" xml:id="l79">Une cour ! des prisons ! quel fatal assemblage !</l>
             <l n="80" xml:id="l80">Ainsi le despotisme est près de l’esclavage.</l>
@@ -191,27 +194,27 @@
             <l n="86" xml:id="l86">Cette faible rançon que je fais apporter ?</l>
             <l n="87" xml:id="l87">Agathocle, ton roi, daignera-t-il m’entendre ?</l>
           </sp>
-          <sp xml:id="I01-9" who="EGESTE">
+          <sp who="EGESTE" xml:id="I01-9">
             <speaker>ÉGESTE</speaker>
             <l n="88" xml:id="l88">À ce détail indigne il ne veut plus descendre ;</l>
             <l n="89" xml:id="l89">Sa grandeur abandonne à l’un de ses enfants</l>
             <l n="90" xml:id="l90">Du lucre des combats les soins avilissants.</l>
           </sp>
-          <sp xml:id="I01-10" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-10">
             <speaker>YDASAN</speaker>
             <l n="91" xml:id="l91">À qui dans ma douleur faut-il que je m’adresse ?</l>
           </sp>
-          <sp xml:id="I01-11" who="EGESTE">
+          <sp who="EGESTE" xml:id="I01-11">
             <speaker>ÉGESTE</speaker>
             <l n="92" xml:id="l92">À son fils Polycrate, objet de sa tendresse,</l>
             <l n="93" xml:id="l93">Et déjà, nous dit-on, nommé son successeur,</l>
             <l n="94" xml:id="l94">Tout indigne qu’il est de cet excès d’honneur.</l>
           </sp>
-          <sp xml:id="I01-12" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-12">
             <speaker>YDASAN</speaker>
-            <l n="95" xml:id="l95" part="I">Je ne puis voir ce roi ?</l>
+            <l n="95" part="I" xml:id="l95">Je ne puis voir ce roi ?</l>
           </sp>
-          <sp xml:id="I01-13" who="EGESTE">
+          <sp who="EGESTE" xml:id="I01-13">
             <speaker>ÉGESTE</speaker>
             <l part="F">Sa sombre défiance</l>
             <l n="96" xml:id="l96">À tous les étrangers interdit sa présence ;</l>
@@ -232,24 +235,28 @@
             <l n="111" xml:id="l111">Elle suit en pleurant cette simple prêtresse</l>
             <l n="112" xml:id="l112">Qui de son esclavage adoucit la tristesse.</l>
           </sp>
-          <sp xml:id="I01-14" who="YDASAN">
+          <sp who="YDASAN" xml:id="I01-14">
             <speaker>YDASAN</speaker>
             <l n="113" xml:id="l113">Dans le saisissement que j’éprouve à la voir,</l>
             <l n="114" xml:id="l114">La consolation se mêle au désespoir.</l>
             <l n="115" xml:id="l115">C’est donc vous, ô ma fille ! Ô malheureuse Ydace !</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Ydasan, Ydace, Égeste, La Prêtresse.<listPerson type="configuration" xml:id="conf2"><person corresp="#YDACE"/><person corresp="#YDASAN"/><person corresp="#PRETRESSE"/><person corresp="#EGESTE"/></listPerson></head>
-          <sp xml:id="I02-1" who="YDACE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Ydasan, Ydace, Égeste, La Prêtresse.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#YDACE"/>
+            <person corresp="#YDASAN"/>
+            <person corresp="#PRETRESSE"/>
+            <person corresp="#EGESTE"/></listPerson></head>
+          <sp who="YDACE" xml:id="I02-1">
             <speaker>YDACE</speaker>
             <l n="116" xml:id="l116">Je baigne de mes pleurs vos genoux que j’embrasse :</l>
             <l n="117" xml:id="l117">Je vous ai vu, mon père, et vers vous j’ai volé.</l>
             <l n="118" xml:id="l118">Chez les Syracusains qui vous a rappelé ?</l>
             <l n="119" xml:id="l119">Y seriez-vous tombé dans mon état funeste ?</l>
-            <l n="120" xml:id="l120" part="I">Qu’y venez-vous chercher ?</l>
+            <l n="120" part="I" xml:id="l120">Qu’y venez-vous chercher ?</l>
           </sp>
-          <sp xml:id="I02-2" who="YDASAN">
+          <sp who="YDASAN" xml:id="I02-2">
             <speaker>YDASAN</speaker>
             <l part="F">Le seul bien qui me reste,</l>
             <stage type="toward">À la prêtresse.</stage>
@@ -260,45 +267,45 @@
             <l n="125" xml:id="l125">Qui donne aux grands du monde, en ces jours malheureux,</l>
             <l n="126" xml:id="l126">Un exemple si beau, si peu suivi par eux !</l>
           </sp>
-          <sp xml:id="I02-3" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I02-3">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="127" xml:id="l127">J’ai rempli faiblement le devoir qui m’engage.</l>
           </sp>
-          <sp xml:id="I02-4" who="YDASAN">
+          <sp who="YDASAN" xml:id="I02-4">
             <speaker>YDASAN</speaker>
             <l n="128" xml:id="l128">Je viens sauver ma fille, et la rendre à Carthage :</l>
-            <l n="129" xml:id="l129" part="I">Protégez-nous.</l>
+            <l n="129" part="I" xml:id="l129">Protégez-nous.</l>
           </sp>
-          <sp xml:id="I02-5" who="YDACE">
+          <sp who="YDACE" xml:id="I02-5">
             <speaker>YDACE</speaker>
             <l part="F">Hélas ! vos soins sont superflus ;</l>
-            <l n="130" xml:id="l130" part="I">Je suis esclave.</l>
+            <l n="130" part="I" xml:id="l130">Je suis esclave.</l>
           </sp>
-          <sp xml:id="I02-6" who="YDASAN">
+          <sp who="YDASAN" xml:id="I02-6">
             <speaker>YDASAN</speaker>
             <l part="F">Non, tu ne le seras plus ;</l>
-            <l n="131" xml:id="l131" part="I">Je viens te délivrer.</l>
+            <l n="131" part="I" xml:id="l131">Je viens te délivrer.</l>
           </sp>
-          <sp xml:id="I02-7" who="YDACE">
+          <sp who="YDACE" xml:id="I02-7">
             <speaker>YDACE</speaker>
             <l part="F">Ô le meilleur des pères !</l>
             <l n="132" xml:id="l132">Quoi ! vos bontés pour moi finiraient mes misères !</l>
           </sp>
-          <sp xml:id="I02-8" who="YDASAN">
+          <sp who="YDASAN" xml:id="I02-8">
             <speaker>YDASAN</speaker>
             <l n="133" xml:id="l133">Oui, de ta liberté j’ai rassemblé le prix.</l>
           </sp>
-          <sp xml:id="I02-9" who="YDACE">
+          <sp who="YDACE" xml:id="I02-9">
             <speaker>YDACE</speaker>
             <l n="134" xml:id="l134">Vous, hélas ! de vos biens les malheureux débris</l>
             <l n="135" xml:id="l135">Ne vous laisseraient plus qu’une indigence affreuse !</l>
           </sp>
-          <sp xml:id="I02-10" who="YDASAN">
+          <sp who="YDASAN" xml:id="I02-10">
             <speaker>YDASAN</speaker>
             <l n="136" xml:id="l136">Va, sois libre, il suffit, et ma mort est heureuse...</l>
             <l n="137" xml:id="l137">As-tu dans ta prison paru devant le roi ?</l>
           </sp>
-          <sp xml:id="I02-11" who="YDACE">
+          <sp who="YDACE" xml:id="I02-11">
             <speaker>YDACE</speaker>
             <l n="138" xml:id="l138">Non, comment pourrait-il s’abaisser jusqu’à moi ?</l>
             <l n="139" xml:id="l139">Comment un conquérant, du sein de la victoire,</l>
@@ -312,7 +319,7 @@
             <l n="147" xml:id="l147">Ses soins ont adouci ma fortune cruelle :</l>
             <l n="148" xml:id="l148">J’apprends à moins souffrir en souffrant auprès d’elle.</l>
           </sp>
-          <sp xml:id="I02-12" who="YDASAN">
+          <sp who="YDASAN" xml:id="I02-12">
             <speaker>YDASAN</speaker>
             <l n="149" xml:id="l149">Je vais trouver ce roi : j’espère que son coeur,</l>
             <l n="150" xml:id="l150">Quoiqu’il soit corrompu par trente ans de bonheur,</l>
@@ -320,33 +327,35 @@
             <l n="152" xml:id="l152">N’osera devant moi commettre une injustice :</l>
             <l n="153" xml:id="l153">Il se ressouviendra que je fus son égal.</l>
           </sp>
-          <sp xml:id="I02-13" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I02-13">
             <speaker>LA PRÊTRESSE</speaker>
-            <l n="154" xml:id="l154" part="I">Il l’a trop oublié.</l>
+            <l n="154" part="I" xml:id="l154">Il l’a trop oublié.</l>
           </sp>
-          <sp xml:id="I02-14" who="YDASAN">
+          <sp who="YDASAN" xml:id="I02-14">
             <speaker>YDASAN</speaker>
             <l part="F">Dans son faste royal</l>
             <l n="155" xml:id="l155">Il rougira peut-être en voyant ma misère.</l>
           </sp>
-          <sp xml:id="I02-15" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I02-15">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="156" xml:id="l156">J’en doute : mais allez, tendre et généreux père.</l>
             <l n="157" xml:id="l157">Que la simple vertu puisse enfin le toucher !</l>
             <l n="158" xml:id="l158">Surtout que de son trône on vous laisse approcher.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Ydace, La Prêtresse.<listPerson type="configuration" xml:id="conf3"><person corresp="#YDACE"/><person corresp="#PRETRESSE"/></listPerson></head>
-          <sp xml:id="I03-1" who="YDACE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Ydace, La Prêtresse.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#YDACE"/>
+            <person corresp="#PRETRESSE"/></listPerson></head>
+          <sp who="YDACE" xml:id="I03-1">
             <speaker>YDACE</speaker>
             <l n="159" xml:id="l159">De nos dieux méconnus prêtresse bienfaisante,</l>
             <l n="160" xml:id="l160">Au malheur qui me suit comme eux compatissante,</l>
             <l n="161" xml:id="l161">Contre un fils du tyran vous qui me protégez ;</l>
             <l n="162" xml:id="l162">Vous qui voyez l’abîme où mes pas sont plongés,</l>
-            <l n="163" xml:id="l163" part="I">Ne m’abandonnez pas.</l>
+            <l n="163" part="I" xml:id="l163">Ne m’abandonnez pas.</l>
           </sp>
-          <sp xml:id="I03-2" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I03-2">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">Hélas ! que puis-je faire ?</l>
             <l n="164" xml:id="l164">Des ministres des dieux le triste caractère,</l>
@@ -355,12 +364,12 @@
             <l n="167" xml:id="l167">Les autels de Cérès enterrés sous la cendre,</l>
             <l n="168" xml:id="l168">Mes prières, mes cris, pourront-ils vous défendre ?</l>
           </sp>
-          <sp xml:id="I03-3" who="YDACE">
+          <sp who="YDACE" xml:id="I03-3">
             <speaker>YDACE</speaker>
             <l n="169" xml:id="l169">Souffrira-t-on du moins que, loin de ce séjour,</l>
             <l n="170" xml:id="l170">Je retourne à Carthage où je reçus le jour ?</l>
           </sp>
-          <sp xml:id="I03-4" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I03-4">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="171" xml:id="l171">Agathocle en des mains avares, sanguinaires,</l>
             <l n="172" xml:id="l172">A remis le maintien de ses lois arbitraires.</l>
@@ -381,7 +390,7 @@
             <l n="187" xml:id="l187">Non, son père jamais ne fut plus tyrannique</l>
             <l n="188" xml:id="l188">Qu’en nommant héritier ce monstre despotique.</l>
           </sp>
-          <sp xml:id="I03-5" who="YDACE">
+          <sp who="YDACE" xml:id="I03-5">
             <speaker>YDACE</speaker>
             <l n="189" xml:id="l189">Ah ! d’où vient que les dieux, pour moi toujours cruels,</l>
             <l n="190" xml:id="l190">Ont exposé mes yeux à ses yeux criminels ?</l>
@@ -391,7 +400,7 @@
             <l n="194" xml:id="l194">S’est attendri du moins sur ma calamité ;</l>
             <l n="195" xml:id="l195">Pourrai-je dans Argide avoir quelque espérance ?</l>
           </sp>
-          <sp xml:id="I03-6" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I03-6">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="196" xml:id="l196">Argide a des vertus, et bien peu de puissance :</l>
             <l n="197" xml:id="l197">Polycrate est le maître ; il dévore le fruit</l>
@@ -405,7 +414,7 @@
             <l n="205" xml:id="l205">L’innocence succombe aux tendresses des grands ;</l>
             <l n="206" xml:id="l206">Et les plus dangereux ne sont pas les tyrans.</l>
           </sp>
-          <sp xml:id="I03-7" who="YDACE">
+          <sp who="YDACE" xml:id="I03-7">
             <speaker>YDACE</speaker>
             <l n="207" xml:id="l207">Ah ! que m’avez-vous dit ? Sa bonté généreuse</l>
             <l n="208" xml:id="l208">Serait un nouveau piège à cette malheureuse !</l>
@@ -415,11 +424,11 @@
             <l n="212" xml:id="l212">Dans l’amas. des tourments que ma jeunesse endure,</l>
             <l n="213" xml:id="l213">En est-il un nouveau dont je ressens les coups ?</l>
           </sp>
-          <sp xml:id="I03-8" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I03-8">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="214" xml:id="l214">L’amour est quelquefois le plus cruel de tous.</l>
           </sp>
-          <sp xml:id="I03-9" who="YDACE">
+          <sp who="YDACE" xml:id="I03-9">
             <speaker>YDACE</speaker>
             <l n="215" xml:id="l215">Quelle est donc ma ressource ? Eh ! pourquoi suis-je née ?</l>
             <l n="216" xml:id="l216">Exposée à l’opprobre, aux fers abandonnée,</l>
@@ -436,7 +445,7 @@
             <l n="227" xml:id="l227">Affermissez mon âme incertaine, affaiblie,</l>
             <l n="228" xml:id="l228">Contre le sentiment qui m’attache à la vie.</l>
           </sp>
-          <sp xml:id="I03-10" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="I03-10">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="229" xml:id="l229">Que ne puis-je plutôt par d’utiles secours</l>
             <l n="230" xml:id="l230">Vous aider à porter le fardeau de vos jours !</l>
@@ -451,19 +460,24 @@
             <l n="239" xml:id="l239">La beauté, la candeur, la fermeté modeste,</l>
             <l n="240" xml:id="l240">Ont dompté quelquefois le sort le plus funeste.</l>
           </sp>
-          <sp xml:id="I03-11" who="YDACE">
+          <sp who="YDACE" xml:id="I03-11">
             <speaker>YDACE</speaker>
             <l n="241" xml:id="l241">Je me jette en vos bras : mon esprit désolé</l>
             <l n="242" xml:id="l242">Croit, en vous écoutant, que les dieux m’ont parlé.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE I. Ydasan, Argide, Polycrate, Égeste.<listPerson type="configuration" xml:id="conf5"><person corresp="#YDASAN"/><person corresp="#EGESTE"/><person corresp="#POLYCRATE"/><person corresp="#ARGIDE"/><person corresp="#AGATHOCLE"/></listPerson></head>
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE I. Ydasan, Argide, Polycrate, Égeste.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#YDASAN"/>
+            <person corresp="#EGESTE"/>
+            <person corresp="#POLYCRATE"/>
+            <person corresp="#ARGIDE"/>
+            <person corresp="#AGATHOCLE"/></listPerson></head>
           <stage type="[N/A]">Agathocle passe dans le fond du théâtre : il semble parler à ses deux fils Polycrate et Argide ; il est entouré de courtisans et de gardes. Ydasan et Égeste sont sur le devant, près du temple.</stage>
-          <sp xml:id="II01-1" who="YDASAN">
+          <sp who="YDASAN" xml:id="II01-1">
             <speaker>YDASAN</speaker>
             <l n="243" xml:id="l243">C’est là ce vieux tyran si grand, si redoutable,</l>
             <l n="244" xml:id="l244">Qu’on croit si fortuné ! Son âge qui l’accable,</l>
@@ -477,7 +491,7 @@
             <l n="252" xml:id="l252">Semble cacher au peuple un monstre inabordable.</l>
             <l n="253" xml:id="l253">Sont-ce là ses deux fils dont tu m’as tant parlé ?</l>
           </sp>
-          <sp xml:id="II01-2" who="EGESTE">
+          <sp who="EGESTE" xml:id="II01-2">
             <speaker>ÉGESTE</speaker>
             <l n="254" xml:id="l254">Oui ; tu vois Polycrate à l’empire appelé :</l>
             <l n="255" xml:id="l255">On dit qu’il est plus dur et plus inaccessible</l>
@@ -490,54 +504,54 @@
             <l n="262" xml:id="l262">Saisissons ce moment, osons approcher d’eux ;</l>
             <l n="263" xml:id="l263">Mais surtout souviens-toi que Polycrate est maître.</l>
           </sp>
-          <sp xml:id="II01-3" who="YDASAN">
+          <sp who="YDASAN" xml:id="II01-3">
             <speaker>YDASAN</speaker>
             <l n="264" xml:id="l264">Devant lui, cher ami, qu’il est dur de paraître !</l>
           </sp>
-          <sp xml:id="II01-4" who="EGESTE">
+          <sp who="EGESTE" xml:id="II01-4">
             <speaker>ÉGESTE</speaker>
             <l n="265" xml:id="l265">Oublie, en lui parlant, l’esprit républicain.</l>
           </sp>
-          <sp xml:id="II01-5" who="YDASAN">
+          <sp who="YDASAN" xml:id="II01-5">
             <speaker>YDASAN</speaker>
             <stage type="[N/A]">Il marche vers Polycrate.</stage>
             <l n="266" xml:id="l266">Prince, vous connaissez les droits du genre humain ?</l>
           </sp>
-          <sp xml:id="II01-6" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II01-6">
             <speaker>POLYCRATE</speaker>
             <l n="267" xml:id="l267">Quel est cet étranger ? quel est ce téméraire ?</l>
           </sp>
-          <sp xml:id="II01-7" who="YDASAN">
+          <sp who="YDASAN" xml:id="II01-7">
             <speaker>YDASAN</speaker>
             <l n="268" xml:id="l268">Un homme, un citoyen, un vieux soldat, un père.</l>
           </sp>
-          <sp xml:id="II01-8" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II01-8">
             <speaker>POLYCRATE</speaker>
-            <l n="269" xml:id="l269" part="I">Que me demandes-tu ?</l>
+            <l n="269" part="I" xml:id="l269">Que me demandes-tu ?</l>
           </sp>
-          <sp xml:id="II01-9" who="YDASAN">
+          <sp who="YDASAN" xml:id="II01-9">
             <speaker>YDASAN</speaker>
             <l part="F">La justice, mon sang.</l>
             <l n="270" xml:id="l270">Je ne crois point blesser l’éclat de votre rang</l>
             <l n="271" xml:id="l271">Mais gardez les traités ; rendez la jeune Ydace,</l>
             <l n="272" xml:id="l272">Reste unique échappé des malheurs de ma race :</l>
-            <l n="273" xml:id="l273" part="I">J’en apporte le prix.</l>
+            <l n="273" part="I" xml:id="l273">J’en apporte le prix.</l>
           </sp>
-          <sp xml:id="II01-10" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II01-10">
             <speaker>POLYCRATE aux siens.</speaker>
             <l part="F">Qu’on dérobe à mes yeux</l>
             <l n="274" xml:id="l274">D’un vieillard indiscret l’aspect injurieux.</l>
           </sp>
-          <sp xml:id="II01-11" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II01-11">
             <speaker>ARGIDE</speaker>
             <l n="275" xml:id="l275">Mon frère, il ne vous fait qu’une juste demande.</l>
           </sp>
-          <sp xml:id="II01-12" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II01-12">
             <speaker>POLYCRATE</speaker>
             <l n="276" xml:id="l276">Soldats, qu’on obéisse alors que je commande.</l>
-            <l n="277" xml:id="l277" part="I">Qu’on l’éloigne.</l>
+            <l n="277" part="I" xml:id="l277">Qu’on l’éloigne.</l>
           </sp>
-          <sp xml:id="II01-13" who="YDASAN">
+          <sp who="YDASAN" xml:id="II01-13">
             <speaker>YDASAN</speaker>
             <l part="F">Ah ! grands dieux, rendez-moi donc le temps</l>
             <l n="278" xml:id="l278">Où ma main vous servait et frappait les tyrans.</l>
@@ -545,14 +559,17 @@
             <l n="280" xml:id="l280">Me laisse à leurs genoux expirer sans vengeance !</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Polycrate, Argide.<listPerson type="configuration" xml:id="conf6"><person corresp="#ARGIDE"/><person corresp="#POLYCRATE"/><person corresp="#ELPENOR"/></listPerson></head>
-          <sp xml:id="II02-1" who="ARGIDE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Polycrate, Argide.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#ARGIDE"/>
+            <person corresp="#POLYCRATE"/>
+            <person corresp="#ELPENOR"/></listPerson></head>
+          <sp who="ARGIDE" xml:id="II02-1">
             <speaker>ARGIDE</speaker>
             <l n="281" xml:id="l281">Vous pouviez lui répondre avec plus de bonté ;</l>
             <l n="282" xml:id="l282">Mon frère, un vieux soldat doit être respecté.</l>
           </sp>
-          <sp xml:id="II02-2" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-2">
             <speaker>POLYCRATE</speaker>
             <l n="283" xml:id="l283">Non, mon frère : apprenez que je perdrais la vie</l>
             <l n="284" xml:id="l284">Avant que ma captive à mes mains fût ravie.</l>
@@ -565,7 +582,7 @@
             <stage type="[N/A]">Après l’avoir regardé quelque temps en silence.</stage>
             <l n="291" xml:id="l291">Blâmez-vous ce dessein que mon coeur vous confie ?</l>
           </sp>
-          <sp xml:id="II02-3" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-3">
             <speaker>ARGIDE</speaker>
             <l n="292" xml:id="l292">Qui ? moi ! prétendez-vous que je vous justifie ?</l>
             <l n="293" xml:id="l293">Quel besoin auriez-vous de mon consentement ?</l>
@@ -574,22 +591,22 @@
             <l n="296" xml:id="l296">Agathocle aux autels aujourd’hui l’a jurée ;</l>
             <l n="297" xml:id="l297">Tous nos concitoyens nous ont été rendus :</l>
             <l n="298" xml:id="l298">Si ce Carthaginois n’a de vous qu’un refus,</l>
-            <l n="299" xml:id="l299" part="I">Vous rallumez la guerre.</l>
+            <l n="299" part="I" xml:id="l299">Vous rallumez la guerre.</l>
           </sp>
-          <sp xml:id="II02-4" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-4">
             <speaker>POLYCRATE</speaker>
             <l part="F">Et c’est à quoi j’aspire ;</l>
             <l n="300" xml:id="l300">La guerre est nécessaire à ce naissant empire ;</l>
-            <l n="301" xml:id="l301" part="I">Que serions-nous sans elle ?</l>
+            <l n="301" part="I" xml:id="l301">Que serions-nous sans elle ?</l>
           </sp>
-          <sp xml:id="II02-5" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-5">
             <speaker>ARGIDE</speaker>
             <l part="F">En des temps pleins d’horreurs,</l>
             <l n="302" xml:id="l302">La guerre a mis mon père au faîte des grandeurs :</l>
             <l n="303" xml:id="l303">Pour soutenir longtemps ce fragile édifice,</l>
             <l n="304" xml:id="l304">Il faut des lois, mon frère, il faut de la justice.</l>
           </sp>
-          <sp xml:id="II02-6" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-6">
             <speaker>POLYCRATE</speaker>
             <l n="305" xml:id="l305">Des lois ! c’est un vain nom dont je suis indigné !</l>
             <l n="306" xml:id="l306">Est-ce à l’abri des lois qu’Agathocle a régné ?</l>
@@ -597,54 +614,54 @@
             <l n="308" xml:id="l308">La loi de Syracuse est que l’on m’obéisse.</l>
             <l n="309" xml:id="l309">Agathocle fut maître, et je veux l’égaler.</l>
           </sp>
-          <sp xml:id="II02-7" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-7">
             <speaker>ARGIDE</speaker>
             <l n="310" xml:id="l310">L’exemple est dangereux ; il peut faire trembler :</l>
             <l n="311" xml:id="l311">Voyez Crésus en Perse, et Denys à Corinthe.</l>
           </sp>
-          <sp xml:id="II02-8" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-8">
             <speaker>POLYCRATE, après l’avoir regardé encore fixement.</speaker>
             <l n="312" xml:id="l312">Pensez-vous m’alarmer, m’inspirer votre crainte ?</l>
             <l n="313" xml:id="l313">Prétendez-vous instruire Agathocle et son fils ?</l>
             <l n="314" xml:id="l314">Je voulais un service, et non pas des avis ;</l>
-            <l n="315" xml:id="l315" part="I">J’avais compté sur vous...</l>
+            <l n="315" part="I" xml:id="l315">J’avais compté sur vous...</l>
           </sp>
-          <sp xml:id="II02-9" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-9">
             <speaker>ARGIDE</speaker>
             <l part="F">Je serai votre frère,</l>
             <l n="316" xml:id="l316">Votre ami véritable, ardent à vous complaire,</l>
             <l n="317" xml:id="l317">Quand vous exigerez de ma foi, de mon coeur,</l>
             <l n="318" xml:id="l318">Tout ce que d’un guerrier peut permettre l’honneur.</l>
           </sp>
-          <sp xml:id="II02-10" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-10">
             <speaker>POLYCRATE</speaker>
-            <l n="319" xml:id="l319" part="I">Eh bien ! servez-moi donc.</l>
+            <l n="319" part="I" xml:id="l319">Eh bien ! servez-moi donc.</l>
           </sp>
-          <sp xml:id="II02-11" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-11">
             <speaker>ARGIDE</speaker>
             <l part="F">Quel dessein vous anime ?</l>
             <l n="320" xml:id="l320">Vous voulez que je serve à vous noircir d’un crime ?</l>
           </sp>
-          <sp xml:id="II02-12" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-12">
             <speaker>POLYCRATE</speaker>
-            <l n="321" xml:id="l321" part="I">Un crime, dites-vous ?</l>
+            <l n="321" part="I" xml:id="l321">Un crime, dites-vous ?</l>
           </sp>
-          <sp xml:id="II02-13" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-13">
             <speaker>ARGIDE</speaker>
             <l part="F">Je ne puis autrement</l>
             <l n="322" xml:id="l322">Nommer l’atrocité de cet enlèvement.</l>
           </sp>
-          <sp xml:id="II02-14" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-14">
             <speaker>POLYCRATE</speaker>
-            <l n="323" xml:id="l323" part="I">Un crime ! vous osez...</l>
+            <l n="323" part="I" xml:id="l323">Un crime ! vous osez...</l>
           </sp>
-          <sp xml:id="II02-15" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-15">
             <speaker>ARGIDE</speaker>
             <l part="F">Oui, j’ose vous apprendre</l>
             <l n="324" xml:id="l324">La dure vérité que vous craignez d’entendre.</l>
             <l n="325" xml:id="l325">Et quel autre que moi la dira sans détour ?</l>
           </sp>
-          <sp xml:id="II02-16" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-16">
             <speaker>POLYCRATE</speaker>
             <l n="326" xml:id="l326">Va, c’est où t’attendait mon malheureux amour.</l>
             <l n="327" xml:id="l327">Traître ! tu n’as pas su me cacher mon injure</l>
@@ -660,7 +677,7 @@
             <l n="337" xml:id="l337">Plus coupable que moi tu m’osais condamner ;</l>
             <l n="338" xml:id="l338">Mais tu connais ton frère ; il sait peu pardonner.</l>
           </sp>
-          <sp xml:id="II02-17" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-17">
             <speaker>ARGIDE</speaker>
             <l n="339" xml:id="l339">Je te crois ; je connais ta féroce insolence ;</l>
             <l n="340" xml:id="l340">Tu crois du roi mon père exercer la puissance.</l>
@@ -671,38 +688,40 @@
             <l n="345" xml:id="l345">Et tes égarements, qui l’ont trop démenti,</l>
             <l n="346" xml:id="l346">T’ont remis dans le rang dont il était sorti.</l>
           </sp>
-          <sp xml:id="II02-18" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-18">
             <speaker>POLYCRATE</speaker>
             <l n="347" xml:id="l347">Ils m’ont laissé ce bras pour punir un perfide.</l>
           </sp>
-          <sp xml:id="II02-19" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="II02-19">
             <speaker>ELPÉNOR, arrivant, à Polycrate.</speaker>
-            <l n="348" xml:id="l348" part="I">Seigneur, le roi vous mande.</l>
+            <l n="348" part="I" xml:id="l348">Seigneur, le roi vous mande.</l>
           </sp>
-          <sp xml:id="II02-20" who="POLYCRATE">
+          <sp who="POLYCRATE" xml:id="II02-20">
             <speaker>POLYCRATE</speaker>
             <l part="F">Oui, j’obéis... Argide,</l>
             <l n="349" xml:id="l349">Voilà ton dernier trait ; mais tremble à mon retour.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
-          <sp xml:id="II02-21" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II02-21">
             <speaker>ARGIDE</speaker>
             <l n="350" xml:id="l350">Je t’attends : nous verrons avant la fin du jour</l>
             <l n="351" xml:id="l351">Si la férocité, la menace, et l’outrage,</l>
             <l n="352" xml:id="l352">Ou cachaient ta faiblesse, ou montraient ton courage.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Argide, Elpénor.<listPerson type="configuration" xml:id="conf7"><person corresp="#ELPENOR"/><person corresp="#ARGIDE"/></listPerson></head>
-          <sp xml:id="II03-1" who="ELPENOR">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Argide, Elpénor.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#ELPENOR"/>
+            <person corresp="#ARGIDE"/></listPerson></head>
+          <sp who="ELPENOR" xml:id="II03-1">
             <speaker>ELPÉNOR</speaker>
             <l n="353" xml:id="l353">Qu’ai-je entendu, seigneur ? et quel ardent courroux</l>
             <l n="354" xml:id="l354">Arme à mes yeux surpris et votre frère et vous ?</l>
             <l n="355" xml:id="l355">Hélas ! je vous ai vus ennemis dès l’enfance ;</l>
             <l n="356" xml:id="l356">Mais ai-je dû m’attendre à tant de violence ?</l>
-            <l n="357" xml:id="l357" part="I">Vous me faites frémir.</l>
+            <l n="357" part="I" xml:id="l357">Vous me faites frémir.</l>
           </sp>
-          <sp xml:id="II03-2" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II03-2">
             <speaker>ARGIDE</speaker>
             <l part="F">Vos conseils me sont chers ;</l>
             <l n="358" xml:id="l358">Mais j’appris de vous-même à braver les pervers :</l>
@@ -710,14 +729,14 @@
             <l n="360" xml:id="l360">Elpénor, condamnez ma franchise hautaine ;</l>
             <l n="361" xml:id="l361">Mon coeur, je l’avouerai, n’est pas fait pour la cour.</l>
           </sp>
-          <sp xml:id="II03-3" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="II03-3">
             <speaker>ELPÉNOR</speaker>
             <l n="362" xml:id="l362">Il est libre, il est grand ; mais, seigneur, si l’amour,</l>
             <l n="363" xml:id="l363">Mêlant à vos vertus ses faiblesses cruelles,</l>
             <l n="364" xml:id="l364">Allume entre vous deux ces fatales querelles !</l>
-            <l n="365" xml:id="l365" part="I">On le soupçonne au moins.</l>
+            <l n="365" part="I" xml:id="l365">On le soupçonne au moins.</l>
           </sp>
-          <sp xml:id="II03-4" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II03-4">
             <speaker>ARGIDE</speaker>
             <l part="F">Ah ! ne redoutez rien ;</l>
             <l n="366" xml:id="l366">Je ne sais point former un indigne lien.</l>
@@ -732,15 +751,15 @@
             <l n="375" xml:id="l375">Elpénor, croyez-moi, s’il faut qu’il m’asservisse,</l>
             <l n="376" xml:id="l376">Il ne peut m’entraîner à rien dont je rougisse.</l>
           </sp>
-          <sp xml:id="II03-5" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="II03-5">
             <speaker>ELPÉNOR</speaker>
             <l n="377" xml:id="l377">Je vous en crois sans peine, et mes regards discrets</l>
             <l n="378" xml:id="l378">De ce coeur généreux respectent les secrets.</l>
             <l n="379" xml:id="l379">Mais, seigneur, je voudrais qu’un peu de complaisance</l>
             <l n="380" xml:id="l380">Pût rassurer du roi la triste défiance :</l>
-            <l n="381" xml:id="l381" part="I">Il aime votre frère, il vous craint.</l>
+            <l n="381" part="I" xml:id="l381">Il aime votre frère, il vous craint.</l>
           </sp>
-          <sp xml:id="II03-6" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II03-6">
             <speaker>ARGIDE</speaker>
             <l part="F">Elpénor,</l>
             <l n="382" xml:id="l382">Il devrait m’estimer : et j’ose dire encor</l>
@@ -749,15 +768,17 @@
             <l n="385" xml:id="l385">Mais quel bruit ! quel tumulte ! et qu’est-ce que je vois !</l>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Argide, Ydace, Elpénor, La Prêtresse.<listPerson type="configuration" xml:id="conf8"><person corresp="#ARGIDE"/><person corresp="#YDACE"/></listPerson></head>
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Argide, Ydace, Elpénor, La Prêtresse.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#ARGIDE"/>
+            <person corresp="#YDACE"/></listPerson></head>
           <stage type="decor/entrance">On entend un grand bruit derrière la scène ; elle s’ouvre. Ydace paraît, la prêtresse la suit. Le peuple et les soldats avancent au fond du théâtre.</stage>
-          <sp xml:id="II04-1" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II04-1">
             <speaker>ARGIDE</speaker>
             <l n="386" xml:id="l386">Est-ce Ydace ? Elle-même en ce séjour d’effroi !</l>
             <l n="387" xml:id="l387">Est-ce vous qui fuyez, captive infortunée ?</l>
           </sp>
-          <sp xml:id="II04-2" who="YDACE">
+          <sp who="YDACE" xml:id="II04-2">
             <speaker>YDACE</speaker>
             <l n="388" xml:id="l388">Par d’horribles soldats indignement traînée,</l>
             <l n="389" xml:id="l389">Arrachée aux autels de mes dieux protecteurs,</l>
@@ -777,20 +798,20 @@
             <l n="403" xml:id="l403">Daignera jusqu’au bout, propice à ma misère,</l>
             <l n="404" xml:id="l404">Sauver ma liberté des transports de son frère.</l>
           </sp>
-          <sp xml:id="II04-3" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II04-3">
             <speaker>ARGIDE</speaker>
             <l n="405" xml:id="l405">Oui, oui, je défendrai contre ce furieux</l>
             <l n="406" xml:id="l406">Ce dépôt si sacré que je reçois des dieux.</l>
             <l n="407" xml:id="l407">Je vous prends sous ma garde au péril de ma vie.</l>
           </sp>
-          <sp xml:id="II04-4" who="YDACE">
+          <sp who="YDACE" xml:id="II04-4">
             <speaker>YDACE</speaker>
             <l n="408" xml:id="l408">Par vos rares vertus je suis plus asservie</l>
             <l n="409" xml:id="l409">Que par cet esclavage où me réduit le sort.</l>
             <l n="410" xml:id="l410">Je détestais le jour, et j’invoquais la mort ;</l>
-            <l n="411" xml:id="l411" part="I">Je vis par vous...</l>
+            <l n="411" part="I" xml:id="l411">Je vis par vous...</l>
           </sp>
-          <sp xml:id="II04-5" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="II04-5">
             <speaker>ARGIDE</speaker>
             <l part="F">Allez ; d’un tyran délivrée,</l>
             <l n="412" xml:id="l412">Revoyez loin de nous votre heureuse contrée.</l>
@@ -823,9 +844,11 @@
             <l n="434" xml:id="l434">C’est à toi de juger si l’amour m’avilit.</l>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Ydace, La Prêtresse.<listPerson type="configuration" xml:id="conf9"><person corresp="#YDACE"/><person corresp="#PRETRESSE"/></listPerson></head>
-          <sp xml:id="II05-1" who="YDACE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Ydace, La Prêtresse.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#YDACE"/>
+            <person corresp="#PRETRESSE"/></listPerson></head>
+          <sp who="YDACE" xml:id="II05-1">
             <speaker>YDACE</speaker>
             <l n="435" xml:id="l435">Grands dieux ! qui par ses mains brisez mon joug funeste,</l>
             <l n="436" xml:id="l436">Est-il dans votre Olympe une âme plus céleste ?</l>
@@ -835,12 +858,12 @@
             <l n="439" xml:id="l439">Hélas ! vous faisiez craindre à mon âme offensée</l>
             <l n="440" xml:id="l440">Que sa pure vertu ne fût intéressée !</l>
           </sp>
-          <sp xml:id="II05-2" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="II05-2">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="441" xml:id="l441">Je l’admire avec vous ; je crois voir aujourd’hui</l>
             <l n="442" xml:id="l442">Le sang de nos tyrans purifié par lui.</l>
           </sp>
-          <sp xml:id="II05-3" who="YDACE">
+          <sp who="YDACE" xml:id="II05-3">
             <speaker>YDACE</speaker>
             <l n="443" xml:id="l443">On dit qu’il fut nourri dans Sparte et dans Athènes ;</l>
             <l n="444" xml:id="l444">Il en a le courage et les vertus humaines.</l>
@@ -851,27 +874,27 @@
             <l n="449" xml:id="l449">Je n’ai point à rougir de ses soins généreux ;</l>
             <l n="450" xml:id="l450">Ils ne sont point l’effet d’un transport amoureux :</l>
             <l n="451" xml:id="l451">Ses sentiments sont purs, et je suis sans alarmes.</l>
-            <l n="452" xml:id="l452" part="I">Oui, mon bonheur commence.</l>
+            <l n="452" part="I" xml:id="l452">Oui, mon bonheur commence.</l>
           </sp>
-          <sp xml:id="II05-4" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="II05-4">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">Et vous versez des larmes !</l>
           </sp>
-          <sp xml:id="II05-5" who="YDACE">
+          <sp who="YDACE" xml:id="II05-5">
             <speaker>YDACE</speaker>
             <l n="453" xml:id="l453">Je pleure, je le dois : l’excès de ses bontés,</l>
-            <l n="454" xml:id="l454" part="I">Sa gloire, sa vertu... tout m’attendrit...</l>
+            <l n="454" part="I" xml:id="l454">Sa gloire, sa vertu... tout m’attendrit...</l>
           </sp>
-          <sp xml:id="II05-6" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="II05-6">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">Partez.</l>
           </sp>
-          <sp xml:id="II05-7" who="YDACE">
+          <sp who="YDACE" xml:id="II05-7">
             <speaker>YDACE</speaker>
             <l n="455" xml:id="l455">C’en est fait ; retournons aux lieux qui m’ont vu naître.</l>
             <l n="456" xml:id="l456">Faut-il que je vous quitte ! Ah ! que n’est-il mon maître !</l>
           </sp>
-          <sp xml:id="II05-8" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="II05-8">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="457" xml:id="l457">Croyez-moi, chère Ydace ; il vous faut dès ce jour</l>
             <l n="458" xml:id="l458">Fuir ces bords dangereux menacés par l’amour.</l>
@@ -880,7 +903,7 @@
             <l n="461" xml:id="l461">Préparons tout, craignons que son frère odieux</l>
             <l n="462" xml:id="l462">Ne ramène le crime en ces funestes lieux.</l>
           </sp>
-          <sp xml:id="II05-9" who="YDACE">
+          <sp who="YDACE" xml:id="II05-9">
             <speaker>YDACE</speaker>
             <l n="463" xml:id="l463">Dieux ! si vous protégez ce coeur faible et timide,</l>
             <l n="464" xml:id="l464">Dieux ! ne permettez pas qu’il ose aimer Argide !</l>
@@ -889,18 +912,20 @@
             <l n="467" xml:id="l467">Et de qui, malgré moi, le charme involontaire</l>
             <l n="468" xml:id="l468">Redoublerait encor ma honte et ma misère !</l>
           </sp>
-          <sp xml:id="II05-10" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="II05-10">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="469" xml:id="l469">Ô coeur pur et sensible, et né dans les malheur !</l>
             <l n="470" xml:id="l470">Va, crains la vertu même, et fuis loin des grandeurs.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I. La Prêtresse, Ydasan. <listPerson type="configuration" xml:id="conf11"><person corresp="#YDASAN"/><person corresp="#PRETRESSE"/></listPerson></head>
-          <sp xml:id="III01-1" who="YDASAN">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I. La Prêtresse, Ydasan. <listPerson type="configuration" xml:id="conf11">
+            <person corresp="#YDASAN"/>
+            <person corresp="#PRETRESSE"/></listPerson></head>
+          <sp who="YDASAN" xml:id="III01-1">
             <speaker>YDASAN</speaker>
             <l n="471" xml:id="l471">J’ai paru devant lui, je l’ai revu, ce roi,</l>
             <l n="472" xml:id="l472">Ce héros autrefois plus inconnu que moi</l>
@@ -920,7 +945,7 @@
             <l n="486" xml:id="l486">Ne pouvait devant lui retenir sa colère :</l>
             <l n="487" xml:id="l487">Le barbare est sorti la fureur dans les yeux.</l>
           </sp>
-          <sp xml:id="III01-2" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="III01-2">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="488" xml:id="l488">Tout est à redouter de cet audacieux.</l>
             <l n="489" xml:id="l489">Son père a pour lui seul une aveugle tendresse :</l>
@@ -940,11 +965,11 @@
             <l n="503" xml:id="l503">Votre sang malheureux, flétri, déshonoré,</l>
             <l n="504" xml:id="l504">Au lâche Polycrate allait être livré.</l>
           </sp>
-          <sp xml:id="III01-3" who="YDASAN">
+          <sp who="YDASAN" xml:id="III01-3">
             <speaker>YDASAN</speaker>
             <l n="505" xml:id="l505">Il eût fait cet affront à son malheureux père !</l>
           </sp>
-          <sp xml:id="III01-4" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="III01-4">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="506" xml:id="l506">Il l’osait : mais Argide est un dieu tutélaire,</l>
             <l n="507" xml:id="l507">Un dieu qui parmi nous aujourd’hui descendu,</l>
@@ -957,7 +982,7 @@
             <l n="514" xml:id="l514">Qu’un favorable dieu vous guide sur les ondes !</l>
             <l n="515" xml:id="l515">Souvenez-vous de moi sous un ciel plus heureux.</l>
           </sp>
-          <sp xml:id="III01-5" who="YDASAN">
+          <sp who="YDASAN" xml:id="III01-5">
             <speaker>YDASAN</speaker>
             <l n="516" xml:id="l516">Vos vertus, vos bontés, ont surpassé mes voeux.</l>
             <l n="517" xml:id="l517">Sans doute avec regret de vous je me sépare ;</l>
@@ -965,20 +990,23 @@
             <l n="519" xml:id="l519">Il me faut mourir libre, et j’y cours de ce pas.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II. La Prêtresse, Ydasan, Égeste.<listPerson type="configuration" xml:id="conf12"><person corresp="#EGESTE"/><person corresp="#YDASAN"/><person corresp="#PRETRESSE"/></listPerson></head>
-          <sp xml:id="III02-1" who="EGESTE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II. La Prêtresse, Ydasan, Égeste.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#EGESTE"/>
+            <person corresp="#YDASAN"/>
+            <person corresp="#PRETRESSE"/></listPerson></head>
+          <sp who="EGESTE" xml:id="III02-1">
             <speaker>ÉGESTE</speaker>
             <l n="520" xml:id="l520">Nous sommes tous perdus : ami, n’avance pas ;</l>
             <l n="521" xml:id="l521">La mort est désormais le recours qui nous reste.</l>
-            <l n="522" xml:id="l522" part="I">Argide, Polycrate, Ydace....</l>
+            <l n="522" part="I" xml:id="l522">Argide, Polycrate, Ydace....</l>
           </sp>
-          <sp xml:id="III02-2" who="YDASAN">
+          <sp who="YDASAN" xml:id="III02-2">
             <speaker>YDASAN</speaker>
             <l part="F">Ah, cher Égeste !</l>
             <l n="523" xml:id="l523">Ma fille ! Ydace ! parle, et donne-moi la mort.</l>
           </sp>
-          <sp xml:id="III02-3" who="EGESTE">
+          <sp who="EGESTE" xml:id="III02-3">
             <speaker>ÉGESTE</speaker>
             <l n="524" xml:id="l524">Nous conduisions Ydace ; elle approchait du port ;</l>
             <l n="525" xml:id="l525">Elle vous attendait pour quitter Syracuse :</l>
@@ -1002,21 +1030,21 @@
             <l n="543" xml:id="l543">Le vainqueur attendri secourt en gémissant</l>
             <l n="544" xml:id="l544">Le farouche ennemi qui meurt en menaçant.</l>
           </sp>
-          <sp xml:id="III02-4" who="YDASAN">
+          <sp who="YDASAN" xml:id="III02-4">
             <speaker>YDASAN</speaker>
             <l n="545" xml:id="l545">Tu ne m’as rien appris qui ne nous soit propice.</l>
-            <l n="546" xml:id="l546" part="I">Nous sommes tous vengés.</l>
+            <l n="546" part="I" xml:id="l546">Nous sommes tous vengés.</l>
           </sp>
-          <sp xml:id="III02-5" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="III02-5">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">Le ciel à fait justice ;</l>
             <l n="547" xml:id="l547">C’est un tyran de moins dans nos calamités.</l>
           </sp>
-          <sp xml:id="III02-6" who="YDASAN">
+          <sp who="YDASAN" xml:id="III02-6">
             <speaker>YDASAN</speaker>
-            <l n="548" xml:id="l548" part="I">Quittons ces lieux, marchons... Qu’ai-je à craindre ?</l>
+            <l n="548" part="I" xml:id="l548">Quittons ces lieux, marchons... Qu’ai-je à craindre ?</l>
           </sp>
-          <sp xml:id="III02-7" who="EGESTE">
+          <sp who="EGESTE" xml:id="III02-7">
             <speaker>ÉGESTE, l’arrêtant</speaker>
             <l part="F">Écoutez.</l>
             <l n="549" xml:id="l549">Le roi, qui dans ce fils mit sa seule espérance,</l>
@@ -1028,15 +1056,15 @@
             <l n="555" xml:id="l555">On saisit votre fille, et, dans son trouble affreux,</l>
             <l n="556" xml:id="l556">Le roi désespéré vous a proscrits tous deux.</l>
           </sp>
-          <sp xml:id="III02-8" who="YDASAN">
+          <sp who="YDASAN" xml:id="III02-8">
             <speaker>YDASAN</speaker>
             <l n="557" xml:id="l557">Ma fille, ton seul nom déchire mes entrailles !</l>
             <l n="558" xml:id="l558">J’espérais de mourir dans les champs de batailles :</l>
             <l n="559" xml:id="l559">Sous le fer des bourreaux allons-nous expirer ?...</l>
             <l n="560" xml:id="l560">Il faut qu’un vieux soldat meure sans murmurer.</l>
-            <l n="561" xml:id="l561" part="I">Mais toi ?</l>
+            <l n="561" part="I" xml:id="l561">Mais toi ?</l>
           </sp>
-          <sp xml:id="III02-9" who="EGESTE">
+          <sp who="EGESTE" xml:id="III02-9">
             <speaker>ÉGESTE</speaker>
             <l part="F">S’il commettait cette horrible injustice,</l>
             <l n="562" xml:id="l562">Je ne puis, Ydasan, que vous suivre au supplice :</l>
@@ -1045,7 +1073,7 @@
             <l n="565" xml:id="l565">Mais ne pouvez-vous pas, prêtresse qu’on révère,</l>
             <l n="566" xml:id="l566">Faire parler du moins votre saint caractère ?</l>
           </sp>
-          <sp xml:id="III02-10" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="III02-10">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="567" xml:id="l567">Ce temps n’est plus : j’ai vu que des dieux autrefois</l>
             <l n="568" xml:id="l568">On respectait l’empire, on écoutait la voix ;</l>
@@ -1056,16 +1084,19 @@
             <l n="573" xml:id="l573">À nos antiques droits ont déclaré la guerre :</l>
             <l n="574" xml:id="l574">Là rapine et l’orgueil sont les dieux de la terre.</l>
           </sp>
-          <sp xml:id="III02-11" who="EGESTE">
+          <sp who="EGESTE" xml:id="III02-11">
             <speaker>ÉGESTE</speaker>
             <l n="575" xml:id="l575">Séparons-nous : on vient. C’est Agathocle en pleurs :</l>
             <l n="576" xml:id="l576">Comme vous il est père, et je crains ses douleurs ;</l>
-            <l n="577" xml:id="l577" part="I">La vengeance les suit.</l>
+            <l n="577" part="I" xml:id="l577">La vengeance les suit.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Agathocle, suite. <listPerson type="configuration" xml:id="conf13"><person corresp="#AGATHOCLE"/><person corresp="#OFFICIER"/><person corresp="#ARGIDE"/></listPerson></head>
-          <sp xml:id="III03-1" who="AGATHOCLE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Agathocle, suite. <listPerson type="configuration" xml:id="conf13">
+            <person corresp="#AGATHOCLE"/>
+            <person corresp="#SOLDATS"/>
+            <person corresp="#ARGIDE"/></listPerson></head>
+          <sp who="AGATHOCLE" xml:id="III03-1">
             <speaker>AGATHOCLE</speaker>
             <l part="F">Qu’on ôte de ma vue</l>
             <l n="578" xml:id="l578">Ce malheureux objet qui m’indigne et me tue :</l>
@@ -1073,14 +1104,14 @@
             <l n="580" xml:id="l580">Qu’ils soient tous deux gardés, qu’ils soient chargés de fers.</l>
             <l n="581" xml:id="l581">Amenez devant moi ce criminel Argide.</l>
           </sp>
-          <sp xml:id="III03-2" who="OFFICIER">
+          <sp who="SOLDATS" xml:id="III03-2">
             <speaker>Un OFFICIER</speaker>
-            <l n="582" xml:id="l582" part="I">Votre fils ?</l>
+            <l n="582" part="I" xml:id="l582">Votre fils ?</l>
           </sp>
-          <sp xml:id="III03-3" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="III03-3">
             <speaker>AGATHOCLE</speaker>
             <l part="F">Lui ! mon fils ? non... mais ce parricide.</l>
-            <l n="583" xml:id="l583" part="I">Mon fils est mort !</l>
+            <l n="583" part="I" xml:id="l583">Mon fils est mort !</l>
             <stage type="[N/A]">On amène Argide enchaîné ; suite. Égeste éloigné avec les gardes.</stage>
             <stage type="toward">À Argide.</stage>
             <l part="F">Cruel ! il est mort par tes coups,</l>
@@ -1088,29 +1119,29 @@
             <l n="585" xml:id="l585">Et ce peuple aveuglé, qu’a séduit ton audace,</l>
             <l n="586" xml:id="l586">Applaudit à ton crime et demande ta grâce.</l>
           </sp>
-          <sp xml:id="III03-4" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="III03-4">
             <speaker>ARGIDE</speaker>
-            <l n="587" xml:id="l587" part="I">Seigneur, le peuple est juste.</l>
+            <l n="587" part="I" xml:id="l587">Seigneur, le peuple est juste.</l>
           </sp>
-          <sp xml:id="III03-5" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="III03-5">
             <speaker>AGATHOCLE</speaker>
             <l part="F">Il va voir aujourd’hui</l>
             <l n="588" xml:id="l588">Que son malheureux prince est plus juste que lui :</l>
             <l n="589" xml:id="l589">Traître ! je t’abandonne aux lois que j’ai portées.</l>
           </sp>
-          <sp xml:id="III03-6" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="III03-6">
             <speaker>ARGIDE</speaker>
             <l n="590" xml:id="l590">Si par l’équité seule elles furent dictées,</l>
             <l n="591" xml:id="l591">Elles décideront qu’en ce triste combat</l>
             <l n="592" xml:id="l592">J’ai sauvé l’innocence, et peut-être l’État.</l>
             <l n="593" xml:id="l593">Le nom de loi m’est cher, et ce nom me rassure.</l>
           </sp>
-          <sp xml:id="III03-7" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="III03-7">
             <speaker>AGATHOCLE</speaker>
             <l n="594" xml:id="l594">Tu redoubles ainsi ton crime et mon injure !</l>
             <l n="595" xml:id="l595">Tu ne m’aimas jamais, et crois me désarmer ?</l>
           </sp>
-          <sp xml:id="III03-8" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="III03-8">
             <speaker>ARGIDE</speaker>
             <l n="596" xml:id="l596">Mon coeur toujours soumis cherchait à vous aimer :</l>
             <l n="597" xml:id="l597">Il est pur, il n’a point de reproche à se faire.</l>
@@ -1124,36 +1155,37 @@
             <l n="605" xml:id="l605">Si dans ce jour affreux les remords peuvent naître,</l>
             <l n="606" xml:id="l606">Je n’en dois point sentir... vous en aurez peut-être.</l>
           </sp>
-          <sp xml:id="III03-9" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="III03-9">
             <speaker>AGATHOCLE</speaker>
             <l n="607" xml:id="l607">Quoi ! ton farouche orgueil ose encor m’insulter !</l>
           </sp>
-          <sp xml:id="III03-10" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="III03-10">
             <speaker>ARGIDE</speaker>
             <l n="608" xml:id="l608">Je ne sais que vous plaindre et que vous respecter.</l>
           </sp>
-          <sp xml:id="III03-11" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="III03-11">
             <speaker>AGATHOCLE, en gémissant.</speaker>
-            <l n="609" xml:id="l609" part="I">Tu m’arraches mon fils !</l>
+            <l n="609" part="I" xml:id="l609">Tu m’arraches mon fils !</l>
           </sp>
-          <sp xml:id="III03-12" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="III03-12">
             <speaker>ARGIDE</speaker>
             <l part="F">J’ai défendu ma vie,</l>
             <l n="610" xml:id="l610">Et je vous ai servi, vous, dis-je, et ma patrie.</l>
           </sp>
-          <sp xml:id="III03-13" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="III03-13">
             <speaker>AGATHOCLE</speaker>
             <l n="611" xml:id="l611">Fuis de mes yeux, barbare ; attends ton juste arrêt.</l>
           </sp>
-          <sp xml:id="III03-14" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="III03-14">
             <speaker>ARGIDE</speaker>
             <l n="612" xml:id="l612">Vous êtes souverain, commandez ; je suis prêt.</l>
             <stage type="[N/A]">On l’emmène.</stage>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV. Agathocle, Gardes. <listPerson type="configuration" xml:id="conf14"><person corresp="#AGATHOCLE"/></listPerson></head>
-          <sp xml:id="III04-1" who="AGATHOCLE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV. Agathocle, Gardes. <listPerson type="configuration" xml:id="conf14">
+            <person corresp="#AGATHOCLE"/></listPerson></head>
+          <sp who="AGATHOCLE" xml:id="III04-1">
             <speaker>AGATHOCLE</speaker>
             <l n="613" xml:id="l613">Que vais-je devenir ? Dans quel trouble il me jette !</l>
             <l n="614" xml:id="l614">Quoi donc ! sa fermeté tranquille et satisfaite,</l>
@@ -1198,11 +1230,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE I. Ydace, La Prêtresse, Gardes, dans le fond. <listPerson type="configuration" xml:id="conf16"><person corresp="#YDACE"/><person corresp="#PRETRESSE"/></listPerson></head>
-          <sp xml:id="IV01-1" who="YDACE">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE I. Ydace, La Prêtresse, Gardes, dans le fond. <listPerson type="configuration" xml:id="conf16">
+            <person corresp="#YDACE"/>
+            <person corresp="#PRETRESSE"/></listPerson></head>
+          <sp who="YDACE" xml:id="IV01-1">
             <speaker>YDACE</speaker>
             <l n="649" xml:id="l649">Non, je ne cache plus ma tendresse fatale ;</l>
             <l n="650" xml:id="l650">Je l’aimais, je l’avoue, et l’amour nous égale.</l>
@@ -1213,7 +1247,7 @@
             <l n="655" xml:id="l655">C’est un père outragé, c’est un maître absolu :</l>
             <l n="656" xml:id="l656">On dit qu’il a parlé ; mais qu’a-t-il résolu ?</l>
           </sp>
-          <sp xml:id="IV01-2" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="IV01-2">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="657" xml:id="l657">Il flottait incertain ; son âme s’est montrée</l>
             <l n="658" xml:id="l658">De douleur affaiblie, et de sang altérée.</l>
@@ -1226,30 +1260,30 @@
             <l n="665" xml:id="l665">Autour de lui rangés ses courtisans le craignent,</l>
             <l n="666" xml:id="l666">Et dans son désespoir il en est qui le plaignent.</l>
           </sp>
-          <sp xml:id="IV01-3" who="YDACE">
+          <sp who="YDACE" xml:id="IV01-3">
             <speaker>YDACE</speaker>
             <l n="667" xml:id="l667">Ils plaignent un tyran ! bas esprits ! vils flatteurs !</l>
             <l n="668" xml:id="l668">Ils n’osent plaindre Argide ! ils lui ferment leurs coeurs !</l>
             <l n="669" xml:id="l669">Ils croiraient faire un crime en prenant sa défense.</l>
           </sp>
-          <sp xml:id="IV01-4" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="IV01-4">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="670" xml:id="l670">L’affliction du maître impose à tous silence.</l>
           </sp>
-          <sp xml:id="IV01-5" who="YDACE">
+          <sp who="YDACE" xml:id="IV01-5">
             <speaker>YDACE, en poussant un cri et en pleurant.</speaker>
             <l n="671" xml:id="l671">Ah ! parlez-moi du moins, répondez à mes cris :</l>
             <l n="672" xml:id="l672">Est-il vrai qu’Agathocle ait condamné son fils ?</l>
           </sp>
-          <sp xml:id="IV01-6" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="IV01-6">
             <speaker>LA PRÊTRESSE</speaker>
-            <l n="673" xml:id="l673" part="I">Le bruit en a couru.</l>
+            <l n="673" part="I" xml:id="l673">Le bruit en a couru.</l>
           </sp>
-          <sp xml:id="IV01-7" who="YDACE">
+          <sp who="YDACE" xml:id="IV01-7">
             <speaker>YDACE</speaker>
             <l part="M">Je me meurs.</l>
           </sp>
-          <sp xml:id="IV01-8" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="IV01-8">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">Chère Ydace !</l>
             <l n="674" xml:id="l674">Ah ! revenez à vous ! un père qui menace</l>
@@ -1257,19 +1291,19 @@
             <l n="676" xml:id="l676">Ranimez vos esprits par le trouble égarés ;</l>
             <l n="677" xml:id="l677">Écartez de votre âme une image si noire.</l>
           </sp>
-          <sp xml:id="IV01-9" who="YDACE">
+          <sp who="YDACE" xml:id="IV01-9">
             <speaker>YDACE</speaker>
-            <l n="678" xml:id="l678" part="I">Argide est condamné !</l>
+            <l n="678" part="I" xml:id="l678">Argide est condamné !</l>
           </sp>
-          <sp xml:id="IV01-10" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="IV01-10">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">Non, je ne le puis croire.</l>
           </sp>
-          <sp xml:id="IV01-11" who="YDACE">
+          <sp who="YDACE" xml:id="IV01-11">
             <speaker>YDACE</speaker>
-            <l n="679" xml:id="l679" part="I">Je ne le crois que trop... C’en est fait.</l>
+            <l n="679" part="I" xml:id="l679">Je ne le crois que trop... C’en est fait.</l>
           </sp>
-          <sp xml:id="IV01-12" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="IV01-12">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">C’est ici</l>
             <l n="680" xml:id="l680">Que du sort qui l’attend on doit être éclairci :</l>
@@ -1280,15 +1314,20 @@
             <l n="685" xml:id="l685">Méprisés de nos grands, le peuple les révère :</l>
             <l n="686" xml:id="l686">J’y vois déjà venir votre malheureux père.</l>
           </sp>
-          <sp xml:id="IV01-13" who="YDACE">
+          <sp who="YDACE" xml:id="IV01-13">
             <speaker>YDACE</speaker>
             <l n="687" xml:id="l687">De votre saint asile on viendra l’arracher :</l>
             <l n="688" xml:id="l688">Aux regards du tyran qui pourra se cacher ?</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. Agathocle, d’un côté, suivi d’Elpénor ; Ydasan, Ydace, La Prêtresse, de l’autre côté, retirée dans les ruines du temple. <listPerson type="configuration" xml:id="conf17"><person corresp="#AGATHOCLE"/><person corresp="#PRETRESSE"/><person corresp="#YDASAN"/><person corresp="#YDACE"/><person corresp="#ELPENOR"/></listPerson></head>
-          <sp xml:id="IV02-1" who="AGATHOCLE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. Agathocle, d’un côté, suivi d’Elpénor ; Ydasan, Ydace, La Prêtresse, de l’autre côté, retirée dans les ruines du temple. <listPerson type="configuration" xml:id="conf17">
+            <person corresp="#AGATHOCLE"/>
+            <person corresp="#PRETRESSE"/>
+            <person corresp="#YDASAN"/>
+            <person corresp="#YDACE"/>
+            <person corresp="#ELPENOR"/></listPerson></head>
+          <sp who="AGATHOCLE" xml:id="IV02-1">
             <speaker>AGATHOCLE, à Elpénor ?</speaker>
             <l n="689" xml:id="l689">Oui, te dis-je, le traître irritait ma colère ;</l>
             <l n="690" xml:id="l690">Dans ses respects forcés il insultait son père :</l>
@@ -1301,9 +1340,9 @@
             <l n="696" xml:id="l696">C’en est trop ! qu’on me venge... Elpénor, obéis.</l>
             <l n="697" xml:id="l697">Qu’on me venge... Soldats, n’épargnez plus Argide :</l>
             <l n="698" xml:id="l698">Il faut enfin qu’un roi punisse un parricide.</l>
-            <l n="699" xml:id="l699" part="I">Qu’il meure.</l>
+            <l n="699" part="I" xml:id="l699">Qu’il meure.</l>
           </sp>
-          <sp xml:id="IV02-2" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="IV02-2">
             <speaker>LA PRÊTRESSE, sortant de l’asile, et se jetant aux genoux d’Agathocle.</speaker>
             <l part="F">Non, seigneur, non, vous ne voudrez pas</l>
             <l n="700" xml:id="l700">De deux fils en un jour contempler le trépas ;</l>
@@ -1320,11 +1359,11 @@
             <l n="711" xml:id="l711">Et ne vous privez point de l’unique secours</l>
             <l n="712" xml:id="l712">Que le ciel vous gardait dans vos malheureux jours.</l>
           </sp>
-          <sp xml:id="IV02-3" who="YDASAN">
+          <sp who="YDASAN" xml:id="IV02-3">
             <speaker>YDASAN</speaker>
             <l n="713" xml:id="l713">Cruel ! peux-tu frapper une fille innocente !</l>
           </sp>
-          <sp xml:id="IV02-4" who="YDACE">
+          <sp who="YDACE" xml:id="IV02-4">
             <speaker>YDACE</speaker>
             <l n="714" xml:id="l714">J’apporte ici ma tête, et votre main sanglante</l>
             <l n="715" xml:id="l715">Me sera favorable en me faisant mourir.</l>
@@ -1346,18 +1385,20 @@
             <l n="731" xml:id="l731">La vérité se montre à vos yeux détrompés ;</l>
             <l n="732" xml:id="l732">Elle a conduit nos voix... J’attends la mort ; frappez.</l>
           </sp>
-          <sp xml:id="IV02-5" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="IV02-5">
             <speaker>AGATHOCLE</speaker>
             <l n="733" xml:id="l733">Quoi ! ces trois ennemis insultent à ma perte !</l>
             <l n="734" xml:id="l734">Quoi ! sous leurs pas tremblants quand la tombe est ouverte,</l>
             <l n="735" xml:id="l735">Ils déchirent encor ce coeur désespéré !</l>
-            <l n="736" xml:id="l736" part="I">Qu’on les fasse sortir.</l>
+            <l n="736" part="I" xml:id="l736">Qu’on les fasse sortir.</l>
             <stage type="[N/A]">On les emmène.</stage>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. Agathocle, Elpénor.<listPerson type="configuration" xml:id="conf18"><person corresp="#AGATHOCLE"/><person corresp="#ELPENOR"/></listPerson></head>
-          <sp xml:id="IV03-1" who="AGATHOCLE">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. Agathocle, Elpénor.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#AGATHOCLE"/>
+            <person corresp="#ELPENOR"/></listPerson></head>
+          <sp who="AGATHOCLE" xml:id="IV03-1">
             <speaker>AGATHOCLE</speaker>
             <l part="F">Mon esprit égaré</l>
             <l n="737" xml:id="l737">De tout ce que j’entends reçoit d’affreux présages.</l>
@@ -1376,9 +1417,9 @@
             <l n="750" xml:id="l750">Dis-moi la vérité : je la crains, mais je l’aime.</l>
             <l n="751" xml:id="l751">Est-il vrai que mes fils se disputaient tous deux</l>
             <l n="752" xml:id="l752">Cette jeune beauté, cet objet dangereux,</l>
-            <l n="753" xml:id="l753" part="I">Cette esclave ?</l>
+            <l n="753" part="I" xml:id="l753">Cette esclave ?</l>
           </sp>
-          <sp xml:id="IV03-2" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="IV03-2">
             <speaker>ELPÉNOR</speaker>
             <l part="F">On prétend qu’ils ont brûlé pour elle :</l>
             <l n="754" xml:id="l754">Cet amour a produit leur sanglante querelle,</l>
@@ -1392,7 +1433,7 @@
             <l n="762" xml:id="l762">Avec tant de vertu ne soit qu’un parricide ;</l>
             <l n="763" xml:id="l763">Mais Polycrate enfin fut l’injuste agresseur.</l>
           </sp>
-          <sp xml:id="IV03-3" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="IV03-3">
             <speaker>AGATHOCLE</speaker>
             <l n="764" xml:id="l764">Tous deux sont criminels : ils m’ont percé le coeur.</l>
             <l n="765" xml:id="l765">L’un a subi la mort, et l’autre la mérite :</l>
@@ -1407,17 +1448,17 @@
             <l n="774" xml:id="l774">Des tourments que j’éprouve est à peine assouvie ;</l>
             <l n="775" xml:id="l775">On me hait ; et voilà le trait envenimé</l>
             <l n="776" xml:id="l776">Qui perce un coeur flétri dans l’ennui consumé...</l>
-            <l n="777" xml:id="l777" part="I">Mais Argide est mon fils.</l>
+            <l n="777" part="I" xml:id="l777">Mais Argide est mon fils.</l>
           </sp>
-          <sp xml:id="IV03-4" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="IV03-4">
             <speaker>ELPÉNOR</speaker>
             <l part="F">Et j’ose encor vous dire</l>
             <l n="778" xml:id="l778">Qu’il fut digne de l’être et digne de l’empire,</l>
             <l n="779" xml:id="l779">Incapable de feindre ainsi que de flatter,</l>
             <l n="780" xml:id="l780">De souffrir un affront et de le mériter,</l>
-            <l n="781" xml:id="l781" part="I">Vertueux et sensible...</l>
+            <l n="781" part="I" xml:id="l781">Vertueux et sensible...</l>
           </sp>
-          <sp xml:id="IV03-5" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="IV03-5">
             <speaker>AGATHOCLE</speaker>
             <l part="F">Ah ! qu’oses-tu prétendre ?</l>
             <l n="782" xml:id="l782">Lui, sensible ! À mes pleurs a-t-il daigné se rendre ?</l>
@@ -1425,16 +1466,16 @@
             <l n="784" xml:id="l784">A-t-il pour me fléchir tenté quelques efforts ?</l>
             <l n="785" xml:id="l785">Eh ! n’a-t-il pas bravé la douleur de son père ?</l>
           </sp>
-          <sp xml:id="IV03-6" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="IV03-6">
             <speaker>ELPÉNOR</speaker>
             <l n="786" xml:id="l786">Il est trop de fierté dans ce grand caractère ;</l>
-            <l n="787" xml:id="l787" part="I">Il ne sait point plier.</l>
+            <l n="787" part="I" xml:id="l787">Il ne sait point plier.</l>
           </sp>
-          <sp xml:id="IV03-7" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="IV03-7">
             <speaker>AGATHOCLE</speaker>
             <l part="F">Je dois savoir punir.</l>
           </sp>
-          <sp xml:id="IV03-8" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="IV03-8">
             <speaker>ELPÉNOR</speaker>
             <l n="788" xml:id="l788">Ne vous préparez point un horrible avenir :</l>
             <l n="789" xml:id="l789">La nature a parlé ; sa voix est toujours tendre.</l>
@@ -1444,22 +1485,24 @@
             <l n="793" xml:id="l793">Grandeur éblouissante, et que j’ai mal connue !</l>
             <l n="794" xml:id="l794">Jusqu’à quand votre éclat séduira-t-il ma vue ?</l>
           </sp>
-          <sp xml:id="IV03-9" who="ELPENOR">
+          <sp who="ELPENOR" xml:id="IV03-9">
             <speaker>ELPÉNOR</speaker>
             <l n="795" xml:id="l795">Du trouble où je vous vois que faut-il augurer ?</l>
-            <l n="796" xml:id="l796" part="I">Qu’ordonnez-vous d’un fils ?</l>
+            <l n="796" part="I" xml:id="l796">Qu’ordonnez-vous d’un fils ?</l>
           </sp>
-          <sp xml:id="IV03-10" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="IV03-10">
             <speaker>AGATHOCLE</speaker>
             <l part="F">Laisse-moi respirer.</l>
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE I. La Prêtresse, Ydasan, auprès du temple sur le devant du théâtre ; gardes, dans le fond.<listPerson type="configuration" xml:id="conf20"><person corresp="#PRETRESSE"/><person corresp="#YDASAN"/></listPerson></head>
-          <sp xml:id="V01-1" who="PRETRESSE">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE I. La Prêtresse, Ydasan, auprès du temple sur le devant du théâtre ; gardes, dans le fond.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#PRETRESSE"/>
+            <person corresp="#YDASAN"/></listPerson></head>
+          <sp who="PRETRESSE" xml:id="V01-1">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="797" xml:id="l797">Exemples étonnants des caprices du sort !</l>
             <l n="798" xml:id="l798">L’un à l’autre inconnus dans ce séjour de mort,</l>
@@ -1478,7 +1521,7 @@
             <l n="811" xml:id="l811">Sous sa puissante voix il faut que tout fléchisse ;</l>
             <l n="812" xml:id="l812">Et ce spectacle horrible, on l’appelle justice !</l>
           </sp>
-          <sp xml:id="V01-2" who="YDASAN">
+          <sp who="YDASAN" xml:id="V01-2">
             <speaker>YDASAN</speaker>
             <l n="813" xml:id="l813">Prêtresse, croyez-moi, ce violent courroux,</l>
             <l n="814" xml:id="l814">Rassasié de sang, n’ira point jusqu’à vous.</l>
@@ -1492,28 +1535,32 @@
             <l n="822" xml:id="l822">Ne peut précipiter ma mort que d’un moment.</l>
             <l n="823" xml:id="l823">Je vous quitte attendri ; pardonnez à mes larmes.</l>
           </sp>
-          <sp xml:id="V01-3" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="V01-3">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="824" xml:id="l824">On ne les permet point : ces délateurs en armes</l>
             <l n="825" xml:id="l825">Vont à notre tyran rapporter nos discours.</l>
           </sp>
-          <sp xml:id="V01-4" who="YDASAN">
+          <sp who="YDASAN" xml:id="V01-4">
             <speaker>YDASAN</speaker>
             <l n="826" xml:id="l826">Je le sais ; c’est l’usage établi dans les cours.</l>
             <l n="827" xml:id="l827">Grands dieux ! je vois paraître Argide avec Ydace !</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Ydasan, La Prêtresse, Argide, Ydace, gardes et assistants, dans le fond. <listPerson type="configuration" xml:id="conf21"><person corresp="#ARGIDE"/><person corresp="#YDASAN"/><person corresp="#YDACE"/><person corresp="#PRETRESSE"/></listPerson></head>
-          <sp xml:id="V02-1" who="ARGIDE">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Ydasan, La Prêtresse, Argide, Ydace, gardes et assistants, dans le fond. <listPerson type="configuration" xml:id="conf21">
+            <person corresp="#ARGIDE"/>
+            <person corresp="#YDASAN"/>
+            <person corresp="#YDACE"/>
+            <person corresp="#PRETRESSE"/></listPerson></head>
+          <sp who="ARGIDE" xml:id="V02-1">
             <speaker>ARGIDE</speaker>
             <l n="828" xml:id="l828">On le permet ; je viens chercher ici ma grâce.</l>
           </sp>
-          <sp xml:id="V02-2" who="YDASAN">
+          <sp who="YDASAN" xml:id="V02-2">
             <speaker>YDASAN</speaker>
-            <l n="829" xml:id="l829" part="I">Seigneur, que dites-vous ?</l>
+            <l n="829" part="I" xml:id="l829">Seigneur, que dites-vous ?</l>
           </sp>
-          <sp xml:id="V02-3" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="V02-3">
             <speaker>ARGIDE</speaker>
             <l part="F">Contre son ravisseur</l>
             <l n="830" xml:id="l830">J’ai défendu ta fille, et vengé son honneur ;</l>
@@ -1540,7 +1587,7 @@
             <l n="849" xml:id="l849">Conserve, s’il se peut, équitable avenir,</l>
             <l n="850" xml:id="l850">De l’amour le plus saint l’éternel souvenir !</l>
           </sp>
-          <sp xml:id="V02-4" who="YDACE">
+          <sp who="YDACE" xml:id="V02-4">
             <speaker>YDACE, à Ydasan.</speaker>
             <l n="851" xml:id="l851">Les sentiments d’Argide ont passé dans mon âme ;</l>
             <l n="852" xml:id="l852">Son courage m’élève, et sa vertu m’enflamme.</l>
@@ -1549,18 +1596,18 @@
             <l n="855" xml:id="l855">Non, Argide, avec vous la mort n’est point cruelle :</l>
             <l n="856" xml:id="l856">La vie est passagère, et la gloire immortelle.</l>
           </sp>
-          <sp xml:id="V02-5" who="YDASAN">
+          <sp who="YDASAN" xml:id="V02-5">
             <speaker>YDASAN</speaker>
-            <l n="857" xml:id="l857" part="I">Ah, mon prince ! ah, ma fille !</l>
+            <l n="857" part="I" xml:id="l857">Ah, mon prince ! ah, ma fille !</l>
           </sp>
-          <sp xml:id="V02-6" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="V02-6">
             <speaker>LA PRÊTRESSE</speaker>
             <l part="F">Infortunés époux !</l>
             <l n="858" xml:id="l858">Couple digne du ciel ! il est ouvert pour vous ;</l>
             <l n="859" xml:id="l859">Il voit un grand spectacle, et digne qu’on l’envie,</l>
             <l n="860" xml:id="l860">La vertu qui combat contre la tyrannie.</l>
           </sp>
-          <sp xml:id="V02-7" who="YDASAN">
+          <sp who="YDASAN" xml:id="V02-7">
             <speaker>YDASAN</speaker>
             <l n="861" xml:id="l861">Chère fille ! grand prince ! en quel horrible jour,</l>
             <l n="862" xml:id="l862">En quels horribles lieux me parlez-vous d’amour !</l>
@@ -1577,24 +1624,29 @@
             <l n="873" xml:id="l873">Voilà mes voeux pour vous, chers et tendres amants,</l>
             <l n="874" xml:id="l874">Et nos chants de l’hymen, et mes derniers serments.</l>
           </sp>
-          <sp xml:id="V02-8" who="PRETRESSE">
+          <sp who="PRETRESSE" xml:id="V02-8">
             <speaker>LA PRÊTRESSE</speaker>
             <l n="875" xml:id="l875">Notre heure est arrivée : Agathocle s’avance,</l>
             <l n="876" xml:id="l876">Il ajoute à la mort l’horreur de sa présence.</l>
           </sp>
-          <sp xml:id="V02-9" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="V02-9">
             <speaker>ARGIDE</speaker>
             <l n="877" xml:id="l877">Quoi ! sa cour l’environne, et son peuple le suit !</l>
           </sp>
-          <sp xml:id="V02-10" who="YDASAN">
+          <sp who="YDASAN" xml:id="V02-10">
             <speaker>YDASAN</speaker>
             <l n="878" xml:id="l878">Quel démon, quel dessein devant nous le conduit ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. Les précédents et Agathocle, entouré de sa cour. <listPerson type="configuration" xml:id="conf22"><person corresp="#AGATHOCLE"/><person corresp="#YDACE"/><person corresp="#EGESTE"/><person corresp="#YDASAN"/><person corresp="#ARGIDE"/></listPerson></head>
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. Les précédents et Agathocle, entouré de sa cour. <listPerson type="configuration" xml:id="conf22">
+            <person corresp="#AGATHOCLE"/>
+            <person corresp="#YDACE"/>
+            <person corresp="#EGESTE"/>
+            <person corresp="#YDASAN"/>
+            <person corresp="#ARGIDE"/></listPerson></head>
           <stage type="[N/A]">Le peuple se range sur les deux côtés du théâtre ; les grands prennent place aux côtés du trône, et sont debout. </stage>
-          <sp xml:id="V03-1" who="AGATHOCLE">
+          <sp who="AGATHOCLE" xml:id="V03-1">
             <speaker>AGATHOCLE</speaker>
             <l n="879" xml:id="l879">L’équité... c’est sa voix qui dicte la sentence...</l>
             <stage type="[N/A]">Il monte sur le trône, et les grands s’asseyent.</stage>
@@ -1649,23 +1701,23 @@
             <l n="927" xml:id="l927">Pardonne à ces grandeurs dont le ciel me délivre :</l>
             <l n="928" xml:id="l928">Le prince a disparu ; l’homme commence à vivre.</l>
           </sp>
-          <sp xml:id="V03-2" who="YDACE">
+          <sp who="YDACE" xml:id="V03-2">
             <speaker>YDACE, à la prêtresse.</speaker>
-            <l n="929" xml:id="l929" part="I">Ô dieux !</l>
+            <l n="929" part="I" xml:id="l929">Ô dieux !</l>
           </sp>
-          <sp xml:id="V03-3" who="EGESTE">
+          <sp who="EGESTE" xml:id="V03-3">
             <speaker>ÉGESTE</speaker>
             <l part="M">Quel changement !</l>
           </sp>
-          <sp xml:id="V03-4" who="YDASAN">
+          <sp who="YDASAN" xml:id="V03-4">
             <speaker>YDASAN</speaker>
             <l part="M">Quel prodige !</l>
           </sp>
-          <sp xml:id="V03-5" who="YDACE">
+          <sp who="YDACE" xml:id="V03-5">
             <speaker>YDACE</speaker>
             <l part="F">Heureux jour !</l>
           </sp>
-          <sp xml:id="V03-6" who="ARGIDE">
+          <sp who="ARGIDE" xml:id="V03-6">
             <speaker>ARGIDE</speaker>
             <l n="930" xml:id="l930">Vous m’étonnez, mon père ; et peut-être à mon tour</l>
             <l n="931" xml:id="l931">Je vais dans ce moment vous étonner vous-même...</l>
