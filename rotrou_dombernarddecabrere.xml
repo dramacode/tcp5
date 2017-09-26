@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,25 +42,27 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">DON BERNARD DE CABRERE</titlePart>
-        <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1647">M. DC. XLVII.</docDate>
-      <docAuthor bio="rotrou" id="ROTROU, Jean">de ROTROU</docAuthor>
-      <docImprint>
-        <privilege id="1637-02-07">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">DON BERNARD DE CABRERE</titlePart>
+          <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1647">M. DC. XLVII.</docDate>
+        <docAuthor bio="rotrou" id="ROTROU, Jean">de ROTROU</docAuthor>
+        <docImprint>
+          <privilege id="1637-02-07">
           <head>Extrait du Privilège du Roi.</head>
           <p>Par grâce et Privilège du Roi donné à Paris le 11 mars 1647. Signé ; par le Roi en son Conseil, LE BRUN, il est permis à ANTOINE DE SOMMAVILLE, Marchand Libraire à Paris, d’imprimer ou faire imprimer une pièce de comédie intitulée, Don Bernard de Cabrere, et ce durant le temps et espace de cinq ans, à compter du jour que le dit livre sera achevé d’imprimer. Et défenses à tous autres d’en vendre ni distribuer d’autre impression de celle qu’aura fait ou fait faire le dit de Sommaville, à peine de cinq cent livres d’amende, ainsi qu’il est plus amplement porté par les dites Lettres ci-dessus datées.</p>
           <p>Et ledit de Sommaville a associé audit privilège Toussaint Quinet, aussi marchand libraire à Paris, suivant accord fait entr-eux.</p>
         </privilege>
-        <imprimeur id="Sommaville">À PARIS, Chez ANTOINE DE SOMMAVILLE, Au Palais, dans la Galerie des Merciers, à l’Écu de France.</imprimeur>
-        <acheveImprimer>Achevé d’Imprimer pour la première fois, le vingt-unième jour d’octobre 1647.</acheveImprimer>
-      </docImprint>
-      <performance>
+          <imprimeur id="Sommaville">À PARIS, Chez ANTOINE DE SOMMAVILLE, Au Palais, dans la Galerie des Merciers, à l’Écu de France.</imprimeur>
+          <acheveImprimer>Achevé d’Imprimer pour la première fois, le vingt-unième jour d’octobre 1647.</acheveImprimer>
+        </docImprint>
+        <performance>
         <premiere date="1646" location="(inconnue)">Représenté pour la première fois en 1646.</premiere>
       </performance>
-      <div type="dedicace">
+      </titlePage>
+      <div type="dedication">
         <salute>À MONSEIGNEUR MONSEIGNEUR L’ÉMINENTISSIME CARDINAL MAZARIN</salute>
         <head>ELEGIE</head>
         <l>Soeur du Dieu des saisons que la mélancolie, </l>
@@ -192,22 +193,24 @@
         <l>Que qui verra l’ouvrage, en louera l’artisan, </l>
         <l>Et qu’il n’aura rival qui n’en soit partisan.</l>
       </div>
-      <castList>
-        <head>LES ACTEURS</head>
-        <castItem><role age="A" civil="M" id="DON-BERNARD" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="DONBERNARD">DON BERNARD DE CABRERE</role>, favori du roi.</castItem>
-        <castItem><role age="A" civil="M" id="DON-LOPE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="DONLOPE">DON LOPE DE LUNE</role>, ami de Don Bernard.<role n="DOROTHÉE" xml:id="DOROTHEE"/></castItem>
-        <castItem><role age="A" civil="M" id="DON-PEDRE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="LEROI">DON PEDRE</role>, roi d’Aragon.<role n="DON SANCHE" xml:id="DONSANCHE"/></castItem>
-        <castItem><role age="A" civil="F" id="INFANTE" rend="female" stat_amour="amoureux" statut="prince" type="H" xml:id="INFANTE">L’INFANTE</role>, sa soeur, maîtresse de Don Bernard.</castItem>
-        <castItem><role age="A" civil="F" id="LEONOR" rend="female" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="LEONOR">LÉONOR</role>, maîtresse du Roi.</castItem>
-        <castItem><role age="A" civil="F" id="IGNES" rend="female" stat_amour="néant" statut="suivant" type="H" xml:id="IGNES">IGNES</role>, suivante.</castItem>
-        <castItem><role age="A" civil="M" id="LE_COMTE" rend="male" stat_amour="néant" statut="capitaine" type="H" xml:id="LECOMTE">LE COMTE</role>, capitaine des gardes.</castItem>
-        <castItem><role age="A" civil="M" id="PEREZ" rend="male" stat_amour="néant" statut="secrétaire du roi" type="H" xml:id="LESECRETAIRE">PEREZ</role>, secrétaire du Roi.</castItem>
-        <castItem><role age="A" civil="M" id="LAZARILLE" rend="male" stat_amour="néant" statut="suivant" type="H" xml:id="LAZARILLE">LAZARILLE</role>, suivant de Don Lope.</castItem>
-        <castItem><role age="A" civil="M" id="GOUVERNEUR" rend="male" stat_amour="néant" statut="gouverneur" type="H" xml:id="LEGOUVERNEUR">LE GOUVERNEUR DE SARAGOSSE</role>.</castItem>
-        <castItem><role age="A" civil="G" id="SOLDATS" rend="group" stat_amour="néant" statut="soorlat" type="H" xml:id="GARDE">SOLDATS</role>.</castItem>
-        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="GARDES">GARDES</role>.</castItem>
-      </castList>
-      <set country="Italie" link="" location="Saragosse" periode="XIVème">La scène est à Saragosse, dans le Palais du Roi.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>LES ACTEURS</head>
+          <castItem><role xml:id="DONBERNARD" rend="male">DON BERNARD DE CABRERE</role>, favori du roi.</castItem>
+          <castItem><role xml:id="DONLOPE" rend="male">DON LOPE DE LUNE</role>, ami de Don Bernard.<role xml:id="DOROTHEE" rend=""/></castItem>
+          <castItem><role xml:id="LEROI" rend="male">DON PEDRE</role>, roi d’Aragon.<role xml:id="DONSANCHE" rend=""/></castItem>
+          <castItem><role xml:id="INFANTE" rend="female">L’INFANTE</role>, sa soeur, maîtresse de Don Bernard.</castItem>
+          <castItem><role xml:id="LEONOR" rend="female">LÉONOR</role>, maîtresse du Roi.</castItem>
+          <castItem><role xml:id="IGNES" rend="female">IGNES</role>, suivante.</castItem>
+          <castItem><role xml:id="LECOMTE" rend="male">LE COMTE</role>, capitaine des gardes.</castItem>
+          <castItem><role xml:id="LESECRETAIRE" rend="male">PEREZ</role>, secrétaire du Roi.</castItem>
+          <castItem><role xml:id="LAZARILLE" rend="male">LAZARILLE</role>, suivant de Don Lope.</castItem>
+          <castItem><role xml:id="LEGOUVERNEUR" rend="male">LE GOUVERNEUR DE SARAGOSSE</role>.</castItem>
+          <castItem><role xml:id="GARDE" rend="group">SOLDATS</role>.</castItem>
+          <castItem><role xml:id="GARDES" rend="group">GARDES</role>.</castItem>
+        </castList>
+        <set country="Italie" link="" location="Saragosse" periode="XIVème">La scène est à Saragosse, dans le Palais du Roi.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

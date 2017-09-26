@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,45 +41,49 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LE GARDIEN DE SOI-MÊME</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1654">M DC LXXXVIII. Avec Privilège du Roi.</docDate>
-      <docAuthor bio="scarron" id="SCARRON, Paul">DE Mr SCARRON.</docAuthor>
-      <docImprint>
-        <approbation value=""/>
-        <privilege value="">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LE GARDIEN DE SOI-MÊME</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1654">M DC LXXXVIII. Avec Privilège du Roi.</docDate>
+        <docAuthor bio="scarron" id="SCARRON, Paul">DE Mr SCARRON.</docAuthor>
+        <docImprint>
+          <approbation value=""/>
+          <privilege value="">
           <head/>
           <p/>
         </privilege>
-        <acheveImprime value=""/>
-        <printer id="LUYNE">À PARIS, Chez Guillaume de Luyne, Libraire Juré dans la Salle des Merciers, sous la montée de la Cour des Aides, à la justice.</printer>
-      </docImprint>
-      <performance>
+          <acheveImprime value=""/>
+          <printer id="LUYNE">À PARIS, Chez Guillaume de Luyne, Libraire Juré dans la Salle des Merciers, sous la montée de la Cour des Aides, à la justice.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1654" location="Hôtel de Bourgogne">Représenté pour le première fois en 1654 au Théâtre de l’Hôtel de Bourgogne.</premiere>
       </performance>
+      </titlePage>
       <div type="preface">
         <head/>
         <p/>
       </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="LE ROI" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="LEROI">LE ROI DE NAPLES</role>.</castItem>
-        <castItem><role age="A" civil="M" id="LE PRINCE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="LEPRINCE">LE PRINCE DE SICILE</role>.</castItem>
-        <castItem><role age="A" civil="M" id="ALCANDRE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="ALCANDRE">ALCANDRE</role>, fils du Roi de Sicile.</castItem>
-        <castItem><role age="A" civil="F" id="ISABELLE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="ISABELLE">ISABELLE</role>, fille du Roi de Naples.</castItem>
-        <castItem><role age="A" civil="F" id="CONSTANCE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="CONSTANCE">CONSTANCE</role>, nièce du Roi de Naples.</castItem>
-        <castItem><role age="A" civil="F" id="HÉLÈNE" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="HELENE">HÉLÈNE</role>.</castItem>
-        <castItem><role age="A" civil="F" id="SABINE" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="SABINE">SABINE</role>.</castItem>
-        <castItem><role age="A" civil="M" id="FILIPIN" rend="male" stat_amour="néant" statut="paysan" type="H" xml:id="FILIPIN">FILIPIN</role>, un Paysan pris pour Alcandre.</castItem>
-        <castItem><role age="A" civil="M" id="SULPICE" rend="male" stat_amour="néant" statut="écuyer" type="H" xml:id="SULPICE">SULPICE</role>, écuyer d’Alcandre.</castItem>
-        <castItem><role age="A" civil="M" id="LICASTE" rend="male" stat_amour="néant" statut="capitaine" type="H" xml:id="LICASTE">LICASTE</role>, capitaine des Gardes.</castItem>
-        <castItem><role age="A" civil="F" id="MAURICETTE" rend="female" stat_amour="néant" statut="paysan" type="H" xml:id="MAURICETTE">MAURICETTE</role>, Paysanne.</castItem>
-        <castItem><role age="A" civil="G" id="SOLDATS" rend="group" stat_amour="néant" statut="soldat" type="H" xml:id="SOLDAT">SOLDATS</role>.</castItem>
-        <castItem><role age="A" civil="G" id="PAYSANS" rend="group" stat_amour="néant" statut="paysan" type="H" xml:id="PAYSAN">PAYSANS</role>.</castItem>
-      </castList>
-      <set country="Italie" link="" location="Naples" periode="XVIIème">La Scène est dans un Château près de Naples.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="LEROI" rend="male">LE ROI DE NAPLES</role>.</castItem>
+          <castItem><role xml:id="LEPRINCE" rend="male">LE PRINCE DE SICILE</role>.</castItem>
+          <castItem><role xml:id="ALCANDRE" rend="male">ALCANDRE</role>, fils du Roi de Sicile.</castItem>
+          <castItem><role xml:id="ISABELLE" rend="female">ISABELLE</role>, fille du Roi de Naples.</castItem>
+          <castItem><role xml:id="CONSTANCE" rend="female">CONSTANCE</role>, nièce du Roi de Naples.</castItem>
+          <castItem><role xml:id="HELENE" rend="female">HÉLÈNE</role>.</castItem>
+          <castItem><role xml:id="SABINE" rend="female">SABINE</role>.</castItem>
+          <castItem><role xml:id="FILIPIN" rend="male">FILIPIN</role>, un Paysan pris pour Alcandre.</castItem>
+          <castItem><role xml:id="SULPICE" rend="male">SULPICE</role>, écuyer d’Alcandre.</castItem>
+          <castItem><role xml:id="LICASTE" rend="male">LICASTE</role>, capitaine des Gardes.</castItem>
+          <castItem><role xml:id="MAURICETTE" rend="female">MAURICETTE</role>, Paysanne.</castItem>
+          <castItem><role xml:id="SOLDAT" rend="group">SOLDATS</role>.</castItem>
+          <castItem><role xml:id="PAYSAN" rend="group">PAYSANS</role>.</castItem>
+        </castList>
+        <set country="Italie" link="" location="Naples" periode="XVIIème">La Scène est dans un Château près de Naples.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

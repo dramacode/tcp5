@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Médée</title>
         <title type="sub">, tragédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1634</date>
       </titleStmt>
       <publicationStmt>
@@ -47,13 +49,22 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">MÉDÉE</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1682">M. DC. LXXXII. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
-      <docImprint> <privilege id="1679-04-17"> <head>Extrait du privilège du Roi.</head> <p>Par Grâce et Privilège du Roi, donné à Saint-Germain-en-Laye, le 17 jour d’Avril, l’an de grâce 1679. Signe, par le Roi en son conseil, D’ALENCE, il est permis à GUILLAUME DE LUYNES, Libraire Juré de notre bonne ville de Paris, d’imprimer les Oeuvres de Théâtre des Sieurs Corneille frères, pendant le temps de dix années entières et accomplies : Et défenses sont faites à qui que ce soit de les imprimer sans le consentement dudit de Luyne, à peine de trois mille lires d’amende, de tous dépens, dommages, et intérêts, comme il est plus amplement porté par lesdites Lettres.</p> <p>Registré sur le livre de la Communauté, le 28 avril 1679, signé COUTEROT, syndic.</p> <p>Et ledit Luyne a fait part du Privilège ci-dessus à Estienne Loison, et Pierre Trabouillet, suivant l’accord fait entre eux.</p> </privilege> <acheveImprime id="1682-02-26">Achevé d’imprimer pour le première fois, le 26 Février 1682.</acheveImprime> <printer>À PARIS, Chez GULLAUME DE LUYNE, Libraire juré, au Palais, en la Galerie des Merciers, sous la montée de la Cour des Aides, à la Justice.</printer> </docImprint>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">MÉDÉE</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1682">M. DC. LXXXII. AVEC PRIVILÈGE DU ROI.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
+        <docImprint>
+          <privilege id="1679-04-17"> <head>Extrait du privilège du Roi.</head> <p>Par Grâce et Privilège du Roi, donné à Saint-Germain-en-Laye, le 17 jour d’Avril, l’an de grâce 1679. Signe, par le Roi en son conseil, D’ALENCE, il est permis à GUILLAUME DE LUYNES, Libraire Juré de notre bonne ville de Paris, d’imprimer les Oeuvres de Théâtre des Sieurs Corneille frères, pendant le temps de dix années entières et accomplies : Et défenses sont faites à qui que ce soit de les imprimer sans le consentement dudit de Luyne, à peine de trois mille lires d’amende, de tous dépens, dommages, et intérêts, comme il est plus amplement porté par lesdites Lettres.</p> <p>Registré sur le livre de la Communauté, le 28 avril 1679, signé COUTEROT, syndic.</p> <p>Et ledit Luyne a fait part du Privilège ci-dessus à Estienne Loison, et Pierre Trabouillet, suivant l’accord fait entre eux.</p> </privilege>
+          <acheveImprime id="1682-02-26">Achevé d’imprimer pour le première fois, le 26 Février 1682.</acheveImprime>
+          <printer>À PARIS, Chez GULLAUME DE LUYNE, Libraire juré, au Palais, en la Galerie des Merciers, sous la montée de la Cour des Aides, à la Justice.</printer>
+        </docImprint>
+        <performance>
+        <premiere date="1635" location="Théâtre du Marais">Représenté pour la première fois en 1635 au Théâtre du Marais.</premiere>
+      </performance>
+      </titlePage>
       <div type="preface">
         <head>EXAMEN</head>
         <p>Cette tragédie a été traitée en grec par Euripide, et en latin par Sénèque ; et c’est sur leur exemple que je me suis autorisé à en mettre le lieu dans une place publique, quelque peu de vraisemblance qu’il y ait à y faire parler des rois, et à y voir Médée prendre les desseins de sa vengeance. Elle en fait confidence, chez Euripide, à tout le choeur, composé de Corinthiennes sujettes de Créon, et qui devaient être du moins au nombre de quinze, à qui elle dit hautement qu’elle fera périr leur roi, leur princesse et son mari, sans qu’aucune d’elles ait la moindre pensée d’en donner avis à ce prince.</p>
@@ -69,23 +80,22 @@
         <p>J’ai feint que les feux que produit la robe de Médée, et qui font périr Créon et Créuse, étaient invisibles, parce que j’ai mis leurs personnes sur la scène dans la catastrophe. Ce spectacle de mourants m’était nécessaire pour remplir mon cinquième acte, qui sans cela n’eût pu atteindre à la longueur ordinaire des nôtres ; mais à dire le vrai, il n’a pas l’effet que demande la tragédie, et ces deux mourants importunent plus par leurs cris et par leurs gémissements, qu’ils ne font pitié par leur malheur. La raison en est qu’ils semblent l’avoir mérité par l’injustice qu’ils ont faite à Médée, qui attire si bien de son côté toute la faveur de l’auditoire, qu’on excuse sa vengeance après l’indigne traitement qu’elle a reçu de Créon et de son mari, et qu’on a plus de compassion du désespoir où ils l’ont réduite, que de tout ce qu’elle leur fait souffrir.</p>
         <p>Quant au style, il est fort inégal en ce poème: et ce que j’y ai mêlé du mien approche si peu de ce que j’ai traduit de Sénèque, qu’il n’est point besoin d’en mettre le texte en marge pour faire discerner au lecteur ce qui est de lui ou de moi. Le temps m’a donné le moyen d’amasser assez de forces pour ne laisser pas cette différence si visible dans le Pompée, où j’ai beaucoup pris de Lucain, et ne crois pas être demeuré fort au-dessous de lui quand il a fallu me passer de son secours.</p>
       </div>
-      <performance>
-        <premiere date="1635" location="Théâtre du Marais">Représenté pour la première fois en 1635 au Théâtre du Marais.</premiere>
-      </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="CRÉON" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="CREON">CRÉON</role>, roi de Corinthe.</castItem>
-        <castItem><role age="A" civil="M" id="AEGÉE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="AEGEE">AEGÉE</role>, roi d’Athènes.</castItem>
-        <castItem><role age="A" civil="M" id="JASON" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="JASON">JASON</role>, mari de Médée.</castItem>
-        <castItem><role age="A" civil="M" id="POLLUX" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="POLLUX">POLLUX</role>, Argonaute, ami de Jason.</castItem>
-        <castItem><role age="A" civil="F" id="CRÉUSE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="CREUSE">CRÉUSE</role>, fille de Créon.</castItem>
-        <castItem><role age="A" civil="F" id="MÉDÉE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="MEDEE">MÉDÉE</role>, femme de Jason.</castItem>
-        <castItem><role age="A" civil="F" id="CLÉONE" rend="female" stat_amour="néant" statut="gouvernante" type="H" xml:id="CLEONE">CLÉONE</role>, gouvernante de Créuse.</castItem>
-        <castItem><role age="A" civil="F" id="NÉRINE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="NERINE">NÉRINE</role>, suivante de Médée.</castItem>
-        <castItem><role age="A" civil="M" id="THEUDAS" rend="male" stat_amour="néant" statut="domestique" type="H" xml:id="THEUDAS">THEUDAS</role>, domestique de Créon.</castItem>
-        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="TroupesdeGardesdeCréon">Troupes de Gardes de Créon</role>.</castItem>
-      </castList>
-      <set country="Grèce" link="" location="Corinthe" periode="Temps mythologiques">La scène est à Corinthe.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="CREON" rend="male">CRÉON</role>, roi de Corinthe.</castItem>
+          <castItem><role xml:id="AEGEE" rend="male">AEGÉE</role>, roi d’Athènes.</castItem>
+          <castItem><role xml:id="JASON" rend="male">JASON</role>, mari de Médée.</castItem>
+          <castItem><role xml:id="POLLUX" rend="male">POLLUX</role>, Argonaute, ami de Jason.</castItem>
+          <castItem><role xml:id="CREUSE" rend="female">CRÉUSE</role>, fille de Créon.</castItem>
+          <castItem><role xml:id="MEDEE" rend="female">MÉDÉE</role>, femme de Jason.</castItem>
+          <castItem><role xml:id="CLEONE" rend="female">CLÉONE</role>, gouvernante de Créuse.</castItem>
+          <castItem><role xml:id="NERINE" rend="female">NÉRINE</role>, suivante de Médée.</castItem>
+          <castItem><role xml:id="THEUDAS" rend="male">THEUDAS</role>, domestique de Créon.</castItem>
+          <castItem><role xml:id="TroupesdeGardesdeCréon" rend="group">Troupes de Gardes de Créon</role>.</castItem>
+        </castList>
+        <set country="Grèce" link="" location="Corinthe" periode="Temps mythologiques">La scène est à Corinthe.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

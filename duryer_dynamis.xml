@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,36 +43,40 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">DYNAMIS</titlePart>
-        <titlePart type="sub">REINE DE CARIE.</titlePart>
-        <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1653">M. DC. LIII. AVEC PRIVILÈGE DU ROI. </docDate>
-      <docAuthor bio="duryer" id="DU RYER, Pierre">Par P. DU RYER </docAuthor>
-      <docImprint>
-        <privilege id="1650-08-26">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">DYNAMIS</titlePart>
+          <titlePart type="sub">REINE DE CARIE.</titlePart>
+          <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1653">M. DC. LIII. AVEC PRIVILÈGE DU ROI. </docDate>
+        <docAuthor bio="duryer" id="DU RYER, Pierre">Par P. DU RYER </docAuthor>
+        <docImprint>
+          <privilege id="1650-08-26">
           <head>Extrait du Privilège du Roi.</head>
           <p>Par grâce et privilège du Roi donné à Paris, le 26ème jour d’Août 1650. Signé, par le Roi en son Conseil, Le Brun. Il est permis à Antoine de Sommaville, Marchand Libraire à Paris, d’imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitulée, Dynamis, Tragicomédie de P. Du Ryer, pendant le temps et espace de sept ans entiers et accomplis. Et défenses sont faites à tous Imprimeurs, Libraires et autres, de contrefaire ledit Livre, ni le vendre ou exposer en vente d’autre impression que de celle qu’il a fait faire, à peine de trois mil livres d’amende, et de tous dépends, dommages et intérêts, ainsi qu’il est plus amplement porté par les dites Lettres, qui sont en vertu du présent extrait tenues pour bien et dûment signifiées, à ce qu’aucun n’en prétende cause d’ignorance. </p>
         </privilege>
-        <imprimeur id="Antoine Sommaville">À PARIS, Chez Antoine de Sommaville, Au Palais, dans la Salle aux Merciers, à l’Écu de France. </imprimeur>
-        <acheveImprime value="1652-12-28">Achevé d’imprimer pour la première fois, le 28. Décembre 1652. Les Exemplaires ont été fournis.</acheveImprime>
-      </docImprint>
-      <performance>
+          <imprimeur id="Antoine Sommaville">À PARIS, Chez Antoine de Sommaville, Au Palais, dans la Salle aux Merciers, à l’Écu de France. </imprimeur>
+          <acheveImprime value="1652-12-28">Achevé d’imprimer pour la première fois, le 28. Décembre 1652. Les Exemplaires ont été fournis.</acheveImprime>
+        </docImprint>
+        <performance>
         <premiere date="1650" location="(inconnue)">Représenté pour la première fois en 1650.</premiere>
       </performance>
-      <castList>
-        <head>LES ACTEURS.</head>
-        <castItem><role age="A" id="PROXENE" sex="2" stat_amour="amoureux" statut="prince" type="H" xml:id="PROXENE">PROXÈNE</role>, princesse amoureuse de Trasile. </castItem>
-        <castItem><role age="A" id="TRASILE" sex="1" stat_amour="amoureux" statut="prince" type="H" xml:id="TRASILE">TRASILE</role>, frère naturel de la reine.</castItem>
-        <castItem><role age="A" id="DYNAMIS" sex="2" stat_amour="amoureux" statut="reine" type="H" xml:id="DYNAMIS">DYNAMIS</role>, reine de Carie.</castItem>
-        <castItem><role age="A" id="POLIANTE" sex="1" stat_amour="amoureux" statut="roi" type="H" xml:id="POLIANTE">POLIANTE</role>, roi de Lycie, amoureux de la Reine. </castItem>
-        <castItem><role age="A" id="PROCLEE" sex="2" stat_amour="néant" statut="confident" type="H" xml:id="PROCLEE">PROCLÉE</role>, confidente de la Reine. </castItem>
-        <castItem><role age="A" id="EURISTENE" sex="1" stat_amour="néant" statut="fermier" type="H" xml:id="EURISTENE">EURISTÈNE</role>, vieux fermier du Roi de Carie.</castItem>
-        <castItem><role age="A" id="DEPUTES" sex="9" stat_amour="néant" statut="député" type="H" xml:id="DEPUTES">Des Députés</role>, des grands de l’État de Carie. </castItem>
-        <castItem><role age="A" id="ARCAS" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="ARCAS">ARCAS</role>, prince de Carie, amoureux de la Reine. </castItem>
-      </castList>
-      <set country="Turquie" link="" location="Halicarnasse" periode="IIème avant JC">La Scène est dans Halicarnasse capitale de la Carie.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>LES ACTEURS.</head>
+          <castItem><role xml:id="PROXENE" rend="female">PROXÈNE</role>, princesse amoureuse de Trasile. </castItem>
+          <castItem><role xml:id="TRASILE" rend="male">TRASILE</role>, frère naturel de la reine.</castItem>
+          <castItem><role xml:id="DYNAMIS" rend="female">DYNAMIS</role>, reine de Carie.</castItem>
+          <castItem><role xml:id="POLIANTE" rend="male">POLIANTE</role>, roi de Lycie, amoureux de la Reine. </castItem>
+          <castItem><role xml:id="PROCLEE" rend="female">PROCLÉE</role>, confidente de la Reine. </castItem>
+          <castItem><role xml:id="EURISTENE" rend="male">EURISTÈNE</role>, vieux fermier du Roi de Carie.</castItem>
+          <castItem><role xml:id="DEPUTES" rend="">Des Députés</role>, des grands de l’État de Carie. </castItem>
+          <castItem><role xml:id="ARCAS" rend="male">ARCAS</role>, prince de Carie, amoureux de la Reine. </castItem>
+        </castList>
+        <set country="Turquie" link="" location="Halicarnasse" periode="IIème avant JC">La Scène est dans Halicarnasse capitale de la Carie.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

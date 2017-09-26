@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,39 +47,43 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart part="main">LA HOLLANDE MALADE</titlePart>
-        <titlePart part="sub">COMÉDIE en UN ACTE</titlePart>
-      </docTitle>
-      <docDate value="1672">M. DC. LXXII. Avec Privilège du Roi.</docDate>
-      <docAuthor bio="poisson" id="POISSON, Raymond">DE MONSIEUR POISSON</docAuthor>
-      <docImprint>
-        <privilege id="16**-**-**"/>
-        <acheveImprime id="16**-**-**"/>
-        <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, au Palais de la Salle Royale, à l’Image Saint-Louis</printer>
-      </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart part="main">LA HOLLANDE MALADE</titlePart>
+          <titlePart part="sub">COMÉDIE en UN ACTE</titlePart>
+        </docTitle>
+        <docDate value="1672">M. DC. LXXII. Avec Privilège du Roi.</docDate>
+        <docAuthor bio="poisson" id="POISSON, Raymond">DE MONSIEUR POISSON</docAuthor>
+        <docImprint>
+          <privilege id="16**-**-**"/>
+          <acheveImprime id="16**-**-**"/>
+          <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, au Palais de la Salle Royale, à l’Image Saint-Louis</printer>
+        </docImprint>
+        <performance>
         <premiere date="1672-08" location="Hôtel de Bourgogne">Représentée pour la première fois en août 1672 à L’Hôtel de Bourgogne. </premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" id="LA HOLLANDE" sex="2" stat_amour="néant" statut="allegorie" type="P" xml:id="LAHOLLANDE">LA HOLLANDE</role>.</castItem>
-        <castItem><role age="A" id="BELINE" sex="2" stat_amour="néant" statut="suivante" type="H" xml:id="BELINE">BELINE</role>, sa suivante.</castItem>
-        <castItem><role age="A" id="MARILLE" sex="2" stat_amour="néant" statut="servante" type="H" xml:id="MARILLE">MARILLE</role>, servante de la Hollande.</castItem>
-        <castItem><role age="A" id="GOULEMER" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="GOULEMER">GOULEMER</role>, Matelot. </castItem>
-        <castItem><role age="A" id="FRELINGUE" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="FRELINGUE">FRELINGUE</role>, Hollandaise.</castItem>
-        <castItem><role age="A" id="BADZlN" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="BADZIN">BADZlN</role>, Hollandais.</castItem>
-        <castItem><role age="A" id="LA FLAMANDE" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="LAFLAMANDE">LA FLAMANDE</role>.</castItem>
-        <castItem><role age="A" id="L'HÔTE" sex="1" stat_amour="néant" statut="hôte" type="H" xml:id="LHOTE">L’HÔTE</role>.</castItem>
-        <castItem><role age="A" id="I. BOURGUEMESTRE" sex="1" stat_amour="néant" statut="bourgmestre" type="H" xml:id="BOURGUEMESTRE1">I. BOURGUEMESTRE</role>.</castItem>
-        <castItem><role age="A" id="II.BOURGUEMESTRE" sex="1" stat_amour="néant" statut="bourgmestre" type="H" xml:id="BOURGUEMESTRE2">II.BOURGUEMESTRE</role>.</castItem>
-        <castItem><role age="A" id="MÉDECIN FRANÇAIS" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="FRANCAIS">MÉDECIN FRANÇAIS</role>.</castItem>
-        <castItem><role age="A" id="MÉDECIN ESPAGNOL" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="ESPAGNOL">MÉDECIN ESPAGNOL</role>.</castItem>
-        <castItem><role age="A" id="MÉDECIN ANGLAIS" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="ANGLAIS">MÉDECIN ANGLAIS</role>.</castItem>
-        <castItem><role age="A" id="MÉDECIN ALLEMAND" sex="1" stat_amour="néant" statut="médecin" type="H" xml:id="ALLEMAND">MÉDECIN ALLEMAND</role>.</castItem>
-        <castItem><role age="A" id="PACOLE" sex="2" stat_amour="néant" statut="servante" type="H" xml:id="PACOLE">PACOLE</role>, servante.</castItem>
-      </castList>
-      <set country="Pays-Bas" link="" location="Amsterdam" periode="XVIIème">La Scène est à Amsterdam.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="LAHOLLANDE" rend="female">LA HOLLANDE</role>.</castItem>
+          <castItem><role xml:id="BELINE" rend="female">BELINE</role>, sa suivante.</castItem>
+          <castItem><role xml:id="MARILLE" rend="female">MARILLE</role>, servante de la Hollande.</castItem>
+          <castItem><role xml:id="GOULEMER" rend="male">GOULEMER</role>, Matelot. </castItem>
+          <castItem><role xml:id="FRELINGUE" rend="female">FRELINGUE</role>, Hollandaise.</castItem>
+          <castItem><role xml:id="BADZIN" rend="male">BADZlN</role>, Hollandais.</castItem>
+          <castItem><role xml:id="LAFLAMANDE" rend="female">LA FLAMANDE</role>.</castItem>
+          <castItem><role xml:id="LHOTE" rend="male">L’HÔTE</role>.</castItem>
+          <castItem><role xml:id="BOURGUEMESTRE1" rend="male">I. BOURGUEMESTRE</role>.</castItem>
+          <castItem><role xml:id="BOURGUEMESTRE2" rend="male">II.BOURGUEMESTRE</role>.</castItem>
+          <castItem><role xml:id="FRANCAIS" rend="male">MÉDECIN FRANÇAIS</role>.</castItem>
+          <castItem><role xml:id="ESPAGNOL" rend="male">MÉDECIN ESPAGNOL</role>.</castItem>
+          <castItem><role xml:id="ANGLAIS" rend="male">MÉDECIN ANGLAIS</role>.</castItem>
+          <castItem><role xml:id="ALLEMAND" rend="male">MÉDECIN ALLEMAND</role>.</castItem>
+          <castItem><role xml:id="PACOLE" rend="female">PACOLE</role>, servante.</castItem>
+        </castList>
+        <set country="Pays-Bas" link="" location="Amsterdam" periode="XVIIème">La Scène est à Amsterdam.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,28 +41,32 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">DON JUAN OU LE FESTIN DE PIERRE</titlePart>
-      </docTitle>
-      <docDate value="1713">M. DCC. XIII.</docDate>
-      <docAuthor bio="letellier" id="LE TELLIER, Jean-François"/>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">DON JUAN OU LE FESTIN DE PIERRE</titlePart>
+        </docTitle>
+        <docDate value="1713">M. DCC. XIII.</docDate>
+        <docAuthor bio="letellier" id="LE TELLIER, Jean-François"/>
+        <performance>
         <premiere date="1713" location="Foire Saint-Laurent">Représentée pour la première fois à la Foire Saint-Laurent et 1713.</premiere>
         <casting/>
       </performance>
-      <castList>
-        <head>ACTEURS.</head>
-        <castItem><role age="A" civil="M" id="DON JUAN" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="DONJUAN">DON JUAN</role>.</castItem>
-        <castItem><role age="A" civil="M" id="ARLEQUIN" rend="male" stat_amour="néant" statut="valet" type="H" xml:id="ARLEQUIN">ARLEQUIN</role>.</castItem>
-        <castItem><role age="A" civil="M" id="LE COMMANDEUR" rend="male" stat_amour="néant" statut="commandeur" type="H" xml:id="STATUE">LE COMMANDEUR</role>.</castItem>
-        <castItem><role age="A" civil="M" id="PIERROT" rend="male" stat_amour="néant" statut="paysan" type="H" xml:id="PIERROT">PIERROT</role>.</castItem>
-        <castItem><role age="A" civil="F" id="FANCHON" rend="female" stat_amour="néant" statut="paysan" type="H" xml:id="FANCHON">FANCHON</role>.</castItem>
-        <castItem><role age="A" civil="F" id="ISABELLE" rend="female" stat_amour="néant" statut="paysan" type="H" xml:id="ISABELLE">ISABELLE</role>.</castItem>
-        <castItem><role age="A" civil="F" id="COLOMBINE" rend="female" stat_amour="néant" statut="paysan" type="H" xml:id="COLOMBINE">COLOMBINE</role>.</castItem>
-        <castItem><role age="A" civil="M" id="UN BERGER" rend="male" stat_amour="néant" statut="berger" type="H" xml:id="BERGER">UN BERGER</role>.</castItem>
-        <castItem><role age="A" civil="F" id="UNE BERGÈRE" rend="female" stat_amour="néant" statut="berger" type="H" xml:id="BERGERE1">UNE BERGÈRE</role>.<role n="Une autre bergère" xml:id="BERGERE2"/></castItem>
-      </castList>
-      <set country="France" link="" location="Paris" periode="XVIIIème"/>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS.</head>
+          <castItem><role xml:id="DONJUAN" rend="male">DON JUAN</role>.</castItem>
+          <castItem><role xml:id="ARLEQUIN" rend="male">ARLEQUIN</role>.</castItem>
+          <castItem><role xml:id="STATUE" rend="male">LE COMMANDEUR</role>.</castItem>
+          <castItem><role xml:id="PIERROT" rend="male">PIERROT</role>.</castItem>
+          <castItem><role xml:id="FANCHON" rend="female">FANCHON</role>.</castItem>
+          <castItem><role xml:id="ISABELLE" rend="female">ISABELLE</role>.</castItem>
+          <castItem><role xml:id="COLOMBINE" rend="female">COLOMBINE</role>.</castItem>
+          <castItem><role xml:id="BERGER" rend="male">UN BERGER</role>.</castItem>
+          <castItem><role xml:id="BERGERE1" rend="female">UNE BERGÈRE</role>.<role xml:id="BERGERE2" rend=""/></castItem>
+        </castList>
+        <set country="France" link="" location="Paris" periode="XVIIIème"/>
+      </div>
     </front>
     <body>
       <div1 type="prologue" xml:id="A">

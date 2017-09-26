@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>La Suivante</title>
         <title type="sub">, comédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1634</date>
       </titleStmt>
       <publicationStmt>
@@ -47,30 +49,37 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LA SUIVANTE</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1634">1634</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id="163*-**-**"/> <acheveImprime id="163*-**-**"/> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LA SUIVANTE</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1634">1634</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id="163*-**-**"/>
+          <acheveImprime id="163*-**-**"/>
+        </docImprint>
+        <performance>
         <premiere date="1634" location="Hôtel de Bourgogne">Représenté pour la première fois zn 1634 au Théâtre de l’Hôtel de Bourgogne.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="GERASTE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="GERASTE">GÉRASTE</role>, père de Daphnis.</castItem>
-        <castItem><role age="A" civil="M" id="POLEMON" rend="male" stat_amour="n&quot;ant" statut="aristocrate" type="H" xml:id="POLEMON">POLÉMON</role>, oncle de Clarimond.</castItem>
-        <castItem><role age="A" civil="M" id="CLARIMOND" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="CLARIMOND">CLARIMOND</role>, amoureux de Daphnis.</castItem>
-        <castItem><role age="A" civil="M" id="FLORAME" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="FLORAME">FLORAME</role>, amant de Daphnis.</castItem>
-        <castItem><role age="A" civil="M" id="THEANTE" rend="male" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="THEANTE">THÉANTE</role>, aussi amoureux de Daphnis.</castItem>
-        <castItem><role age="A" civil="M" id="DAMON" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="DAMON">DAMON</role>, ami de Florame et de Théanthe.</castItem>
-        <castItem><role age="A" civil="F" id="DAPHNIS" rend="female" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="DAPHNIS">DAPHNIS</role>, maîtresse de Florame, aînée de Clarimond et de Théanthe.</castItem>
-        <castItem><role age="A" civil="F" id="AMARANTE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="AMARANTE">AMARANTE</role>, suivante de Daphnis.</castItem>
-        <castItem><role age="A" civil="F" id="CELIE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="CELIE">CÉLIE</role>, voisine de Géraste et sa confidente.</castItem>
-        <castItem><role age="A" civil="M" id="CLEON" rend="male" stat_amour="néant" statut="domestique" type="H" xml:id="CLEON">CLÉON</role>, domestique de Damon.</castItem>
-      </castList>
-      <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="GERASTE" rend="male">GÉRASTE</role>, père de Daphnis.</castItem>
+          <castItem><role xml:id="POLEMON" rend="male">POLÉMON</role>, oncle de Clarimond.</castItem>
+          <castItem><role xml:id="CLARIMOND" rend="male">CLARIMOND</role>, amoureux de Daphnis.</castItem>
+          <castItem><role xml:id="FLORAME" rend="male">FLORAME</role>, amant de Daphnis.</castItem>
+          <castItem><role xml:id="THEANTE" rend="male">THÉANTE</role>, aussi amoureux de Daphnis.</castItem>
+          <castItem><role xml:id="DAMON" rend="male">DAMON</role>, ami de Florame et de Théanthe.</castItem>
+          <castItem><role xml:id="DAPHNIS" rend="female">DAPHNIS</role>, maîtresse de Florame, aînée de Clarimond et de Théanthe.</castItem>
+          <castItem><role xml:id="AMARANTE" rend="female">AMARANTE</role>, suivante de Daphnis.</castItem>
+          <castItem><role xml:id="CELIE" rend="female">CÉLIE</role>, voisine de Géraste et sa confidente.</castItem>
+          <castItem><role xml:id="CLEON" rend="male">CLÉON</role>, domestique de Damon.</castItem>
+        </castList>
+        <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

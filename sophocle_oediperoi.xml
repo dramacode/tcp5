@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Oedipe roi</title><title type="sub">, tragédie.</title>
-        <author born="-496" born_location="" death="-406" death_location="" academie=""><surname>Sophocle</surname></author>
+        <title>Oedipe roi</title>
+        <title type="sub">, tragédie.</title>
+        <author born="-496" born_location="" death="-406" death_location="" academie="">
+          <surname>Sophocle</surname>
+        </author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE mars 2016</p>
@@ -37,33 +39,37 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">OEDIPE ROI</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-        <titlePart type="main">Traduction nouvelle de Leconte de Lisle</titlePart>
-      </docTitle>
-      <docDate value="1877">1877</docDate>
-      <docAuthor id="SOPHOCLE" bio="">SOPHOCLE.</docAuthor>
-      <docImprint>
-        <printer id="LEMERRE">Paris : impr. A. Lemerre</printer>
-      </docImprint>
-      <castList>
-        <head>LES ACTEURS</head>
-        <castItem><role xml:id="OEDIPE" rend="male" id="OEDIPE" sex="1" type="H" statut="roi" age="A" stat_amour="néant">Œdipe</role>.</castItem>
-        <castItem><role rend="male inferior" xml:id="LESACRIFICATEUR" id="LE SACRIFICATEUR" sex="1" type="H" statut="sacrificateur" age="A" stat_amour="néant">le sacrificateur</role>.</castItem>
-        <castItem><role xml:id="JOCASTE" rend="female senior" id="JOCASTE" sex="2" type="H" statut="roi" age="A" stat_amour="Oedipe">Jocaste</role>, mère et femme d’Oedipe.</castItem>
-        <castItem><role xml:id="CREON" rend="male senior" id="CRÉON" sex="2" type="H" statut="prince" age="A" stat_amour="néant">Créon</role>, oncle d’Oedipe, frère de Jocaste.</castItem>
-        <castItem><role xml:id="LECHOEUR" id="LE CHOEUR" sex="2" type="H" statut="prince" age="A" stat_amour="néant">le choeur</role>.</castItem>
-        <castItem><role xml:id="TIRESIAS" rend="inferior" id="TIRÉSIAS" sex="2" type="H" statut="roi" age="A" stat_amour="néant">Tirésias</role>.</castItem>
-        <castItem><role xml:id="LEMESSAGER" rend="inferior" id="LE MESSAGER" sex="1" type="H" statut="messager" age="A" stat_amour="néant">le messager</role>.</castItem>
-        <castItem><role xml:id="LESERVITEUR" rend="male veteran inferior" id="LE SERVITEUR" sex="1" type="H" statut="serviteur" age="V" stat_amour="néant">le serviteur</role>.
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">OEDIPE ROI</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+          <titlePart type="main">Traduction nouvelle de Leconte de Lisle</titlePart>
+        </docTitle>
+        <docDate value="1877">1877</docDate>
+        <docAuthor id="SOPHOCLE" bio="">SOPHOCLE.</docAuthor>
+        <docImprint>
+          <printer id="LEMERRE">Paris : impr. A. Lemerre</printer>
+        </docImprint>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>LES ACTEURS</head>
+          <castItem><role xml:id="OEDIPE" rend="male">Œdipe</role>.</castItem>
+          <castItem><role xml:id="LESACRIFICATEUR" rend="male inferior">le sacrificateur</role>.</castItem>
+          <castItem><role xml:id="JOCASTE" rend="female senior">Jocaste</role>, mère et femme d’Oedipe.</castItem>
+          <castItem><role xml:id="CREON" rend="male senior">Créon</role>, oncle d’Oedipe, frère de Jocaste.</castItem>
+          <castItem><role xml:id="LECHOEUR" rend="female">le choeur</role>.</castItem>
+          <castItem><role xml:id="TIRESIAS" rend="inferior">Tirésias</role>.</castItem>
+          <castItem><role xml:id="LEMESSAGER" rend="inferior">le messager</role>.</castItem>
+          <castItem><role xml:id="LESERVITEUR" rend="male veteran inferior">le serviteur</role>.
         </castItem>
-      </castList>
+        </castList>
+      </div>
     </front>
     <body>
-      
-        
-       <div1 type="act" xml:id="I" n="1"><head></head> <div2 xml:id="I01" type="scene" n="1">
+      <div1 type="act" xml:id="I" n="1">
+        <head/>
+        <div2 xml:id="I01" type="scene" n="1">
           <head>Oedipe, Le Sacrificateur.<listPerson type="configuration" xml:id="conf1"><person corresp="#OEDIPE"/><person corresp="#LESACRIFICATEUR"/></listPerson></head>
           <sp xml:id="I01-1" who="OEDIPE">
             <speaker>OEDIPE.</speaker>
@@ -315,8 +321,10 @@
             </p>
           </sp>
         </div2>
-        </div1>
-       <div1 type="act" xml:id="II" n="2"><head></head> <div2 xml:id="I03" type="scene" n="1">
+      </div1>
+      <div1 type="act" xml:id="II" n="2">
+        <head/>
+        <div2 xml:id="I03" type="scene" n="1">
           <head>Le Choeur, Oedipe.<listPerson type="configuration" xml:id="conf3"><person corresp="#LECHOEUR"/><person corresp="#OEDIPE"/></listPerson></head>
           <sp xml:id="I03-1" who="LECHOEUR">
             <speaker>LE CHOEUR.</speaker>
@@ -870,8 +878,10 @@
             </p>
           </sp>
         </div2>
-        </div1>
-       <div1 type="act" xml:id="III" n="3"><head></head> <div2 xml:id="I05" type="scene" n="1">
+      </div1>
+      <div1 type="act" xml:id="III" n="3">
+        <head/>
+        <div2 xml:id="I05" type="scene" n="1">
           <head>Le Choeur, Créon.<listPerson type="configuration" xml:id="conf5"><person corresp="#LECHOEUR"/><person corresp="#CREON"/><person corresp="#OEDIPE"/></listPerson></head>
           <sp xml:id="I05-1" who="LECHOEUR">
             <speaker>LE CHOEUR.</speaker>
@@ -1282,7 +1292,14 @@
           </sp>
         </div2>
         <div2 xml:id="I06" type="scene" n="2">
-          <head><listPerson type="configuration" xml:id="conf6"><person corresp="#JOCASTE"/><person corresp="#CREON"/><person corresp="#OEDIPE"/><person corresp="#LECHOEUR"/></listPerson></head>
+          <head>
+            <listPerson type="configuration" xml:id="conf6">
+              <person corresp="#JOCASTE"/>
+              <person corresp="#CREON"/>
+              <person corresp="#OEDIPE"/>
+              <person corresp="#LECHOEUR"/>
+            </listPerson>
+          </head>
           <sp xml:id="I06-1" who="JOCASTE">
             <speaker>JOCASTE.</speaker>
             <p>
@@ -1453,7 +1470,13 @@
           </sp>
         </div2>
         <div2 xml:id="I08" type="scene" n="4">
-          <head><listPerson type="configuration" xml:id="conf8"><person corresp="#OEDIPE"/><person corresp="#LECHOEUR"/><person corresp="#JOCASTE"/></listPerson></head>
+          <head>
+            <listPerson type="configuration" xml:id="conf8">
+              <person corresp="#OEDIPE"/>
+              <person corresp="#LECHOEUR"/>
+              <person corresp="#JOCASTE"/>
+            </listPerson>
+          </head>
           <sp xml:id="I08-1" who="OEDIPE">
             <speaker>OEDIPE.</speaker>
             <p>
@@ -1785,8 +1808,10 @@
             </p>
           </sp>
         </div2>
-        </div1>
-      <div1 type="act" xml:id="IV" n="4">  <head></head><div2 xml:id="I09" type="scene" n="1">
+      </div1>
+      <div1 type="act" xml:id="IV" n="4">
+        <head/>
+        <div2 xml:id="I09" type="scene" n="1">
           <head>La Choeur, Jocaste.<listPerson type="configuration" xml:id="conf9"><person corresp="#LECHOEUR"/><person corresp="#JOCASTE"/><person corresp="#LEMESSAGER"/></listPerson></head>
           <sp xml:id="I09-1" who="LECHOEUR">
             <speaker>LE CHOEUR.</speaker>
@@ -1920,7 +1945,14 @@
           </sp>
         </div2>
         <div2 xml:id="I10" type="scene" n="2">
-          <head><listPerson type="configuration" xml:id="conf10"><person corresp="#OEDIPE"/><person corresp="#JOCASTE"/><person corresp="#LEMESSAGER"/><person corresp="#LECHOEUR"/></listPerson></head>
+          <head>
+            <listPerson type="configuration" xml:id="conf10">
+              <person corresp="#OEDIPE"/>
+              <person corresp="#JOCASTE"/>
+              <person corresp="#LEMESSAGER"/>
+              <person corresp="#LECHOEUR"/>
+            </listPerson>
+          </head>
           <sp xml:id="I10-1" who="OEDIPE">
             <speaker>OEDIPE.</speaker>
             <p>
@@ -2858,8 +2890,10 @@
             </p>
           </sp>
         </div2>
-        </div1>
-       <div1 type="act" xml:id="V" n="5"><head></head> <div2 xml:id="I12" type="scene" n="1">
+      </div1>
+      <div1 type="act" xml:id="V" n="5">
+        <head/>
+        <div2 xml:id="I12" type="scene" n="1">
           <head>Le Choeur, Le Messager.<listPerson type="configuration" xml:id="conf12"><person corresp="#LECHOEUR"/><person corresp="#LEMESSAGER"/></listPerson></head>
           <sp xml:id="I12-1" who="LECHOEUR">
             <speaker>LE CHOEUR.</speaker>

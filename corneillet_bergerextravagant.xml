@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,34 +48,38 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LE BERGER EXTRAVAGANT</titlePart>
-        <titlePart type="sub">COMÉDIE MÊLÉE D’ORNEMENTS et de Musique. </titlePart>
-      </docTitle>
-      <docDate value="1652">1652</docDate>
-      <docAuthor bio="corneillet" id="CORNEILLE, Thomas">Thomas Corneille</docAuthor>
-      <docImprint>
-        <privilege id=""/>
-        <acheveImprime id=""/>
-      </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LE BERGER EXTRAVAGANT</titlePart>
+          <titlePart type="sub">COMÉDIE MÊLÉE D’ORNEMENTS et de Musique. </titlePart>
+        </docTitle>
+        <docDate value="1652">1652</docDate>
+        <docAuthor bio="corneillet" id="CORNEILLE, Thomas">Thomas Corneille</docAuthor>
+        <docImprint>
+          <privilege id=""/>
+          <acheveImprime id=""/>
+        </docImprint>
+        <performance>
         <premiere date="1652" location="(inconnue)">Représenté pour la première fois en 1652.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="LISIS" rend="male" stat_amour="néant" statut="berger" type="H" xml:id="LISIS">LISIS</role>, berger extravagant.</castItem>
-        <castItem><role age="A" civil="F" id="ANGELIQUE" rend="female" stat_amour="néant" statut="nymphe" type="D" xml:id="ANGELIQUE">ANGÉLIQUE</role>, nymphe, soeur de Montenor.</castItem>
-        <castItem><role age="A" civil="M" id="HIRCAN" rend="male" stat_amour="néant" statut="berger" type="H" xml:id="HIRCAN">HIRCAN</role>, frère de Lucide.</castItem>
-        <castItem><role age="A" civil="M" id="MONTENOR" rend="male" stat_amour="amoureux" statut="berger" type="H" xml:id="MONTENOR">MONTENOR</role>, berger, amant de Lucide.</castItem>
-        <castItem><role age="A" civil="M" id="ANSELME" rend="male" stat_amour="amoureux" statut="berger" type="H" xml:id="ANSELME">ANSELME</role>, berger, amant d’Angélique.</castItem>
-        <castItem><role age="A" civil="M" id="CLARIMOND" rend="male" stat_amour="amoureux" statut="berger" type="H" xml:id="CLARIMOND">CLARIMOND</role>, amant de Charite.</castItem>
-        <castItem><role age="A" civil="F" id="LUCIDE" rend="female" stat_amour="néant" statut="berger" type="H" xml:id="LUCIDE">LUCIDE</role>, bergère, soeur d’Hircan.</castItem>
-        <castItem><role age="A" civil="F" id="CHARITE" rend="female" stat_amour="néant" statut="berger" type="H" xml:id="CHARITE">CHARITE</role>, bergère, parente d’Angélique.</castItem>
-        <castItem><role age="A" civil="F" id="SINOPE" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="SINOPE">SINOPE</role>, demoiselle voisine d’Angélique.</castItem>
-        <castItem><role age="A" civil="F" id="CLORISE" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="CLORISE">CLORISE</role>, demoiselle voisine d’Angélique.</castItem>
-        <castItem><role age="A" civil="M" id="ADRIAN" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="ADRIAN">ADRIAN</role>, parent de Lisis.<role n="SATYRE" xml:id="SATYRE"/></castItem>
-      </castList>
-      <set country="France" link="" location="Brie" periode="(inconnue)">La Scène est en Brie.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="LISIS" rend="male">LISIS</role>, berger extravagant.</castItem>
+          <castItem><role xml:id="ANGELIQUE" rend="female">ANGÉLIQUE</role>, nymphe, soeur de Montenor.</castItem>
+          <castItem><role xml:id="HIRCAN" rend="male">HIRCAN</role>, frère de Lucide.</castItem>
+          <castItem><role xml:id="MONTENOR" rend="male">MONTENOR</role>, berger, amant de Lucide.</castItem>
+          <castItem><role xml:id="ANSELME" rend="male">ANSELME</role>, berger, amant d’Angélique.</castItem>
+          <castItem><role xml:id="CLARIMOND" rend="male">CLARIMOND</role>, amant de Charite.</castItem>
+          <castItem><role xml:id="LUCIDE" rend="female">LUCIDE</role>, bergère, soeur d’Hircan.</castItem>
+          <castItem><role xml:id="CHARITE" rend="female">CHARITE</role>, bergère, parente d’Angélique.</castItem>
+          <castItem><role xml:id="SINOPE" rend="female">SINOPE</role>, demoiselle voisine d’Angélique.</castItem>
+          <castItem><role xml:id="CLORISE" rend="female">CLORISE</role>, demoiselle voisine d’Angélique.</castItem>
+          <castItem><role xml:id="ADRIAN" rend="male">ADRIAN</role>, parent de Lisis.<role xml:id="SATYRE" rend=""/></castItem>
+        </castList>
+        <set country="France" link="" location="Brie" periode="(inconnue)">La Scène est en Brie.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,36 +41,40 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">PHALANTE</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1642">M. DC. XLII. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor bio="lacalprenede" id="LA CALPRENEDE, Gautier Costes de"/>
-      <docImprint>
-        <privilege id="1636-09-30">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">PHALANTE</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1642">M. DC. XLII. AVEC PRIVILÈGE DU ROI.</docDate>
+        <docAuthor bio="lacalprenede" id="LA CALPRENEDE, Gautier Costes de"/>
+        <docImprint>
+          <privilege id="1636-09-30">
           <head>Extrait du privilège du Roi</head>
           <p>Par grâce et Privilège du Roi, en date du 3. jour de Mai 1641. signé par le Roi, en son Conseil Le Brun. Il est permis à ANTOINE DE SOMMAVILLE Marchand Libraire à Paris, d’imprimer ou faire imprimer une pièce de Théâtre intitulée PHALANTE TRAGÉDIE, et ce durant le temps de cinq ans. Et défense sont faites à tous autres de quelque qualité et condition qu’ils soient d’en vendre d’autres que celle qu’aura fait imprimer ledit de SOMMAVILLE, sur les peines portées pas lesdites lettres.</p>
         </privilege>
-        <acheveImprime id="1641-11-12">Achevé d’imprimer le 16. jour de Novembre 1641.</acheveImprime>
-        <printer id="SOMMAVILLE">À PARIS, Chez ANTOINE DE SOMMAVILLE, au Palais, en la galerie des Merciers, à l’Ecu de France.</printer>
-      </docImprint>
-      <performance>
+          <acheveImprime id="1641-11-12">Achevé d’imprimer le 16. jour de Novembre 1641.</acheveImprime>
+          <printer id="SOMMAVILLE">À PARIS, Chez ANTOINE DE SOMMAVILLE, au Palais, en la galerie des Merciers, à l’Ecu de France.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1640" location="(inconnue)">Représenté la première fois en 1640.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role id="HÉLÈNE" sex="2" xml:id="HELENE">HÉLÈNE</role>, reine de Corinthe.</castItem>
-        <castItem><role id="PHALANTE" sex="1" xml:id="PHALANTE">PHALANTE</role>, prince étranger.</castItem>
-        <castItem><role id="PHILOXÈNE" sex="1" xml:id="PHILOXENE">PHILOXÈNE</role>, prince de Corinthe.</castItem>
-        <castItem><role id="TIMANDRE" sex="1" xml:id="TIMANDRE">TIMANDRE</role>, père de Philoxène.</castItem>
-        <castItem><role id="CLÉOMÈDE" sex="1" xml:id="CLEOMEDE">CLÉOMÈDE</role>, seigneur de Corinthe.</castItem>
-        <castItem><role id="ARATE" sex="1" xml:id="ARATE">ARATE</role>, seigneur de Corinthe.</castItem>
-        <castItem><role id="ARBANTE" sex="1" xml:id="ARBANTE">ARBANTE</role>, confident de Phalante.</castItem>
-        <castItem><role id="CLÉONE" sex="2" xml:id="CLEONE">CLÉONE</role>, demoiselle de la Reine.</castItem>
-        <castItem><role id="AMINTE" sex="2" xml:id="AMINTE">AMINTE</role>, demoiselle de la Reine.</castItem>
-      </castList>
-      <set country="Grèce" link="" location="Corinthe" periode="Temps mythologiques"/>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="HELENE" rend="female">HÉLÈNE</role>, reine de Corinthe.</castItem>
+          <castItem><role xml:id="PHALANTE" rend="male">PHALANTE</role>, prince étranger.</castItem>
+          <castItem><role xml:id="PHILOXENE" rend="male">PHILOXÈNE</role>, prince de Corinthe.</castItem>
+          <castItem><role xml:id="TIMANDRE" rend="male">TIMANDRE</role>, père de Philoxène.</castItem>
+          <castItem><role xml:id="CLEOMEDE" rend="male">CLÉOMÈDE</role>, seigneur de Corinthe.</castItem>
+          <castItem><role xml:id="ARATE" rend="male">ARATE</role>, seigneur de Corinthe.</castItem>
+          <castItem><role xml:id="ARBANTE" rend="male">ARBANTE</role>, confident de Phalante.</castItem>
+          <castItem><role xml:id="CLEONE" rend="female">CLÉONE</role>, demoiselle de la Reine.</castItem>
+          <castItem><role xml:id="AMINTE" rend="female">AMINTE</role>, demoiselle de la Reine.</castItem>
+        </castList>
+        <set country="Grèce" link="" location="Corinthe" periode="Temps mythologiques"/>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

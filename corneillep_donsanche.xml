@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Don Sanche d’Aragon</title>
         <title type="sub">, comédie héroïque</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1649</date>
       </titleStmt>
       <publicationStmt>
@@ -46,31 +48,38 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">DON SANCHE D’ARAGON</titlePart>
-        <titlePart type="sub">COMÉDIE HÉROÏQUE</titlePart>
-      </docTitle>
-      <docDate value="1649">1649</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id="**/**/16**"/> <acheveImprime id="**/**/16**"/> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">DON SANCHE D’ARAGON</titlePart>
+          <titlePart type="sub">COMÉDIE HÉROÏQUE</titlePart>
+        </docTitle>
+        <docDate value="1649">1649</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id="**/**/16**"/>
+          <acheveImprime id="**/**/16**"/>
+        </docImprint>
+        <performance>
         <premiere date="1649" location="Hôtel de Bourgogne">Représenté pour la première fois en 1649 au Théâtre de l’Hôtel de Bourgogne.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="F" id="ISABELLE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="ISABELLE">DONA ISABELLE</role>, reine de Castille.</castItem>
-        <castItem><role age="A" civil="F" id="LEONOR" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="LEONOR">DONA LÉONOR</role>, reine d’Aragon.</castItem>
-        <castItem><role age="A" civil="F" id="ELVIRE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="ELVIRE">DONA ELVIRE</role>, princesse d’Aragon.</castItem>
-        <castItem><role age="A" civil="F" id="BLANCHE" rend="female" stat_amour="néant" statut="dame d'honneur" type="H" xml:id="BLANCHE">BLANCHE</role>, dame d’honneur de la reine de Castille.</castItem>
-        <castItem><role age="A" civil="M" id="CARLOS" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="CARLOS">CARLOS</role>, cavalier inconnu qui se trouve être Don Sanche, roi d’Aragon.</castItem>
-        <castItem><role age="A" civil="M" id="RAYMOND" rend="male" stat_amour="néant" statut="favori" type="H" xml:id="RAYMOND">DON RAYMOND DE MONCADE</role>, favori du défunt roi d’Aragon.</castItem>
-        <castItem><role age="A" civil="M" id="LOPE" rend="male" stat_amour="néant" statut="grand de Casille" type="H" xml:id="LOPE">DON LOPE DE GUSMAN</role>, grand de Castille.</castItem>
-        <castItem><role age="A" civil="M" id="MANRIQUE" rend="male" stat_amour="néant" statut="grand de Casille" type="H" xml:id="MANRIQUE">DON MANRIQUE DE LARE</role>, grand de Castille.</castItem>
-        <castItem><role age="A" civil="M" id="ALVAR" rend="male" stat_amour="néant" statut="grand de Casille" type="H" xml:id="ALVAR">DON ALVAR DE LUNE</role>, grand de Castille.</castItem>
-        <castItem><role age="A" civil="M" id="GARDE" rend="male" stat_amour="néant" statut="garde" type="H" xml:id="GARDE">Un garde</role>.</castItem>
-      </castList>
-      <set country="Espagne" link="" location="Valladolid" periode="XVème">La scène est à Valladolid.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="ISABELLE" rend="female">DONA ISABELLE</role>, reine de Castille.</castItem>
+          <castItem><role xml:id="LEONOR" rend="female">DONA LÉONOR</role>, reine d’Aragon.</castItem>
+          <castItem><role xml:id="ELVIRE" rend="female">DONA ELVIRE</role>, princesse d’Aragon.</castItem>
+          <castItem><role xml:id="BLANCHE" rend="female">BLANCHE</role>, dame d’honneur de la reine de Castille.</castItem>
+          <castItem><role xml:id="CARLOS" rend="male">CARLOS</role>, cavalier inconnu qui se trouve être Don Sanche, roi d’Aragon.</castItem>
+          <castItem><role xml:id="RAYMOND" rend="male">DON RAYMOND DE MONCADE</role>, favori du défunt roi d’Aragon.</castItem>
+          <castItem><role xml:id="LOPE" rend="male">DON LOPE DE GUSMAN</role>, grand de Castille.</castItem>
+          <castItem><role xml:id="MANRIQUE" rend="male">DON MANRIQUE DE LARE</role>, grand de Castille.</castItem>
+          <castItem><role xml:id="ALVAR" rend="male">DON ALVAR DE LUNE</role>, grand de Castille.</castItem>
+          <castItem><role xml:id="GARDE" rend="male">Un garde</role>.</castItem>
+        </castList>
+        <set country="Espagne" link="" location="Valladolid" periode="XVème">La scène est à Valladolid.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

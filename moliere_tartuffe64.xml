@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Le Tartuffe</title>
         <title type="sub"> ou l’hypocrite, comédie</title>
-        <author academie="" born="1622" born_location="Paris" death="1673" death_location="Paris"><surname>Molière</surname></author>
+        <author academie="" born="1622" born_location="Paris" death="1673" death_location="Paris">
+          <surname>Molière</surname>
+        </author>
       </titleStmt>
       <publicationStmt>
         <p>publié par Paul FIEVRE, février 2016.</p>
@@ -39,26 +40,32 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LE TARTUFFE ou L’HYPOCRITE</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-        <titlePart type="sub">[version de 1664 reconstruite par Georges Forestier et Isabelle Grellet]</titlePart>
-      </docTitle>
-      <docDate value="2011">MM. XI. SANS PRIVILÈGE DU ROI</docDate>
-      <docAuthor bio="moliere" id="MOLIERE">par J.B.P DE MOLIÈRE</docAuthor>
-      <docImprint> <printer id="RIBOU">Imprimé aux dépens de l’Exhumeur, et ne se vend pas À PARIS Chez les descendants de JEAN RIBOU, au Palais, vis-à-vis La Porte de l’Église de la Sainte Chapelle, à l’Image S. Louis.</printer> </docImprint>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="V" id="MADAME PERNELLE" rend="veteran female" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="MADAMEPERNELLE" >MADAME PERNELLE</role>, mère d’Orgon.</castItem>
-        <castItem><role age="A" id="ELMIRE" sex="2" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="ELMIRE">ELMIRE</role>, femme d’Orgon.</castItem>
-        <castItem><role age="A" id="ORGON" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="ORGON" rend="male">ORGON </role>, mari d’Elmire.</castItem>
-        <castItem><role age="J" id="DAMIS" rend="junior male" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="DAMIS">DAMIS</role>, fils d’Orgon.</castItem>
-        <castItem><role age="A" id="CLÉANTE" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="CLEANTE" rend="male">CLÉANTE</role>, beau-frère d’Orgon.</castItem>
-        <castItem><role age="A" id="TARTUFFE" sex="1" stat_amour="néant" statut="dévot" type="H" xml:id="TARTUFFE" rend="male">TARTUFFE</role>, faux dévot.</castItem>
-        <castItem><role age="A" id="DORINE" sex="2" stat_amour="néant" statut="suivante" type="H" xml:id="DORINE" rend="female inferior">DORINE</role>, suivante.</castItem>
-        <castItem><role age="A" id="FLIPOTE" sex="2" stat_amour="néant" statut="servante" type="H" xml:id="FLIPOTE" rend="female inferior">FLIPOTE</role>, servante de Mme Pernelle.</castItem>
-      </castList>
-      <set country="France" link="" location="Paris" periode="XVIIème">Le Scène est à Paris</set>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LE TARTUFFE ou L’HYPOCRITE</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+          <titlePart type="sub">[version de 1664 reconstruite par Georges Forestier et Isabelle Grellet]</titlePart>
+        </docTitle>
+        <docDate value="2011">MM. XI. SANS PRIVILÈGE DU ROI</docDate>
+        <docAuthor bio="moliere" id="MOLIERE">par J.B.P DE MOLIÈRE</docAuthor>
+        <docImprint>
+          <printer id="RIBOU">Imprimé aux dépens de l’Exhumeur, et ne se vend pas À PARIS Chez les descendants de JEAN RIBOU, au Palais, vis-à-vis La Porte de l’Église de la Sainte Chapelle, à l’Image S. Louis.</printer>
+        </docImprint>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="MADAMEPERNELLE" rend="veteran female">MADAME PERNELLE</role>, mère d’Orgon.</castItem>
+          <castItem><role xml:id="ELMIRE" rend="female">ELMIRE</role>, femme d’Orgon.</castItem>
+          <castItem><role xml:id="ORGON" rend="male">ORGON </role>, mari d’Elmire.</castItem>
+          <castItem><role xml:id="DAMIS" rend="junior male">DAMIS</role>, fils d’Orgon.</castItem>
+          <castItem><role xml:id="CLEANTE" rend="male">CLÉANTE</role>, beau-frère d’Orgon.</castItem>
+          <castItem><role xml:id="TARTUFFE" rend="male">TARTUFFE</role>, faux dévot.</castItem>
+          <castItem><role xml:id="DORINE" rend="female inferior">DORINE</role>, suivante.</castItem>
+          <castItem><role xml:id="FLIPOTE" rend="female inferior">FLIPOTE</role>, servante de Mme Pernelle.</castItem>
+        </castList>
+        <set country="France" link="" location="Paris" periode="XVIIème">Le Scène est à Paris</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

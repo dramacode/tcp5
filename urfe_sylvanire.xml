@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>La Sylvanire</title><title type="sub"> ou la morte vive, fable bocagère</title>
-        <author born="1558" born_location="Marseille" death="1625" death_location="Villefranche-sur-Mer" academie=""><surname>d’Urfé</surname><forename> Honoré</forename></author>
+        <title>La Sylvanire</title>
+        <title type="sub"> ou la morte vive, fable bocagère</title>
+        <author born="1558" born_location="Marseille" death="1625" death_location="Villefranche-sur-Mer" academie="">
+          <surname>d’Urfé</surname>
+          <forename> Honoré</forename>
+        </author>
         <date>1627</date>
       </titleStmt>
       <publicationStmt>
@@ -38,39 +42,43 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">SYLVANIRE</titlePart>
-        <titlePart type="sub">ou la MORTE VIVE</titlePart>
-        <titlePart type="sub">FABLE BOCAGÈRE</titlePart>
-      </docTitle>
-      <docDate value="1627">M. DC. XXVII.</docDate>
-      <docAuthor id="URFE, Honore d'" bio="urfe">De messire HONORÉ d’URFÉ, Marquis de Bagé et Verromé, Comte de Chasteau-neuf, Baron de Chasteau-Morand, et Chevalier de l’Ordre de Savoye, etc.</docAuthor>
-      <docImprint>
-        <privilege id=""/>
-        <printer id="FOUET">À Paris, chez Robert FOUET, rue Saint Jacques. Au Temps, et à l’Occasion.</printer>
-        <acheveImprime id="1627"/>
-      </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">SYLVANIRE</titlePart>
+          <titlePart type="sub">ou la MORTE VIVE</titlePart>
+          <titlePart type="sub">FABLE BOCAGÈRE</titlePart>
+        </docTitle>
+        <docDate value="1627">M. DC. XXVII.</docDate>
+        <docAuthor id="URFE, Honore d'" bio="urfe">De messire HONORÉ d’URFÉ, Marquis de Bagé et Verromé, Comte de Chasteau-neuf, Baron de Chasteau-Morand, et Chevalier de l’Ordre de Savoye, etc.</docAuthor>
+        <docImprint>
+          <privilege id=""/>
+          <printer id="FOUET">À Paris, chez Robert FOUET, rue Saint Jacques. Au Temps, et à l’Occasion.</printer>
+          <acheveImprime id="1627"/>
+        </docImprint>
+        <performance>
         <premiere date="1617-01-16" location="(inconnue)">Représenté pour la première fois le 16 janvier 1617.</premiere>
       </performance>
-      <castList>
-        <head>PERSONNAGES</head>
-        <castItem><role xml:id="FORTUNE" id="FORTUNE" sex="2" type="D" statut="allégorie" age="A" stat_amour="néant">FORTUNE</role>, prologue.</castItem>
-        <castItem><role xml:id="AGLANTE" id="AGLANTE" sex="1" type="H" statut="berger" age="A" stat_amour="néant">AGLANTE</role>, berger.</castItem>
-        <castItem><role xml:id="ALCIRON" id="ALCIRON" sex="1" type="H" statut="berger" age="A" stat_amour="néant">ALCIRON</role>, berger.</castItem>
-        <castItem><role xml:id="HYLAS" id="HYLAS" sex="1" type="H" statut="berger" age="A" stat_amour="néant">HYLAS</role>, berger.</castItem>
-        <castItem><role xml:id="TIRINTE" id="TIRINTE" sex="1" type="H" statut="berger" age="A" stat_amour="néant">TIRINTE</role>, berger.</castItem>
-        <castItem><role xml:id="ADRASTE" id="ADRASTE" sex="1" type="H" statut="berger" age="A" stat_amour="néant">ADRASTE</role>, berger fol.</castItem>
-        <castItem><role xml:id="SYLVANIRE" rend="junior" id="SYLVANIRE" sex="2" type="F" statut="berger" age="J" stat_amour="néant">SYLVANIRE</role>, bergère.</castItem>
-        <castItem><role xml:id="FOSSINDE" id="FOSSINDE" sex="2" type="F" statut="berger" age="A" stat_amour="néant">FOSSINDE</role>, bergère.</castItem>
-        <castItem><role xml:id="MENANDRE" id="MÉNANDRE" sex="1" type="H" statut="berger" age="A" stat_amour="néant">MÉNANDRE</role>, père de Sylvanire.</castItem>
-        <castItem><role xml:id="LERICE" id="LERICE" sex="2" type="F" statut="berger" age="A" stat_amour="néant">LERICE</role>, mère de Sylvanire.</castItem>
-        <castItem><role xml:id="UNMESSAGER" id="UN MESSAGER" sex="1" type="H" statut="messager" age="A" stat_amour="néant">UN MESSAGER</role>.</castItem>
-        <castItem><role xml:id="SATYRE" id="SATYRE" sex="1" type="D" statut="satyre" age="A" stat_amour="néant">SATYRE</role>.</castItem>
-        <castItem><role xml:id="ECHO" id="ÉCHO" sex="2" type="D" statut="nymphe" age="A" stat_amour="néant">ÉCHO</role>.</castItem>
-        <castItem><role xml:id="LECHOEURDEBERGERS" id="CHOEUR" sex="9" type="H" statut="choeur" age="A" stat_amour="néant">LE CHOEUR DE BERGERS</role>.</castItem>
-      </castList>
-      <set location="Lille" country="France" periode="(inconnue)" link="">La scène est à Lille.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>PERSONNAGES</head>
+          <castItem><role xml:id="FORTUNE" rend="female">FORTUNE</role>, prologue.</castItem>
+          <castItem><role xml:id="AGLANTE" rend="male">AGLANTE</role>, berger.</castItem>
+          <castItem><role xml:id="ALCIRON" rend="male">ALCIRON</role>, berger.</castItem>
+          <castItem><role xml:id="HYLAS" rend="male">HYLAS</role>, berger.</castItem>
+          <castItem><role xml:id="TIRINTE" rend="male">TIRINTE</role>, berger.</castItem>
+          <castItem><role xml:id="ADRASTE" rend="male">ADRASTE</role>, berger fol.</castItem>
+          <castItem><role xml:id="SYLVANIRE" rend="junior">SYLVANIRE</role>, bergère.</castItem>
+          <castItem><role xml:id="FOSSINDE" rend="female">FOSSINDE</role>, bergère.</castItem>
+          <castItem><role xml:id="MENANDRE" rend="male">MÉNANDRE</role>, père de Sylvanire.</castItem>
+          <castItem><role xml:id="LERICE" rend="female">LERICE</role>, mère de Sylvanire.</castItem>
+          <castItem><role xml:id="MESSAGER" rend="male">UN MESSAGER</role>.</castItem>
+          <castItem><role xml:id="SATYRE" rend="male">SATYRE</role>.</castItem>
+          <castItem><role xml:id="ECHO" rend="female">ÉCHO</role>.</castItem>
+          <castItem><role xml:id="CHOEUR" rend="">LE CHOEUR DE BERGERS</role>.</castItem>
+        </castList>
+        <set location="Lille" country="France" periode="(inconnue)" link="">La scène est à Lille.</set>
+      </div>
     </front>
     <body>
       <div1 xml:id="I" type="prologue" n="1">
@@ -2708,7 +2716,7 @@
             <l n="1988" xml:id="l1988">Troupeaux de qui le lait</l>
             <l n="1989" xml:id="l1989">Presque en toute saison</l>
             <l n="1990" xml:id="l1990">Inonde ma maison :</l>
-            <note tpe="L">Cérès : Dans le polythéisme gréco-romain, déesse qui présidait aux moissons. [L]</note>
+            <note type="L">Cérès : Dans le polythéisme gréco-romain, déesse qui présidait aux moissons. [L]</note>
             <l n="1991" xml:id="l1991">Qui des biens de Cérès</l>
             <note type="L">Pomone : Nymphe et fausse divinité des Anciens, qu’ils croyaient présider aux jardins ; ils feignent qu’ils fut mariée à Vertumne, qu’ils avaient pour ce sujet en grande vénération. [F]</note>
             <l n="1992" xml:id="l1992">Et de ceux de Pommone</l>
@@ -8375,7 +8383,7 @@
             <l n="5841" xml:id="l5841">Dites-le moi tous deux</l>
             <l n="5842" xml:id="l5842">Quelles sont ces deux belles ?</l>
           </sp>
-          <sp xml:id="V01-7" who="AGLANTE_TIRINTE">
+          <sp xml:id="V01-7" who="AGLANTE TIRINTE">
             <speaker>AGLANTE, TIRINTE</speaker>
             <l n="5843" xml:id="l5843" part="I">Belles.</l>
           </sp>
@@ -8416,7 +8424,7 @@
             <l n="5866" xml:id="l5866">Dont amour se servit</l>
             <l n="5867" xml:id="l5867">Pour faire vos conquêtes.</l>
           </sp>
-          <sp xml:id="V01-12" who="AGLANTE_TIRINTE">
+          <sp xml:id="V01-12" who="AGLANTE TIRINTE">
             <speaker>AGLANTE, TIRINTE</speaker>
             <l n="5868" xml:id="l5868" part="I">Beau.</l>
           </sp>
@@ -9088,7 +9096,7 @@
             <speaker>MÉNANDRE</speaker>
             <l n="6332" xml:id="l6332">Prends courage ma fille,</l>
             <l n="6333" xml:id="l6333">Allons jusques au temple</l>
-            <note tye="L">Esculape : dieu romain de la médecine (Asclepios en grec). Selon le mythe grec, il est le fils d’Apollon et de Coronis.</note>
+            <note type="L">Esculape : dieu romain de la médecine (Asclepios en grec). Selon le mythe grec, il est le fils d’Apollon et de Coronis.</note>
             <l n="6334" xml:id="l6334">De ce grand Esculape.</l>
           </sp>
           <sp xml:id="V05-2" who="SYLVANIRE">

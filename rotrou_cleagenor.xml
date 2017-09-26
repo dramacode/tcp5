@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,36 +42,40 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">CLÉAGÉNOR et DORISTÉE</titlePart>
-        <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1634"> M. DC.XXX IV</docDate>
-      <docAuthor bio="rotrou" id="ROTROU, Jean">PAR Mr DE ROTROU </docAuthor>
-      <docImprint>
-        <privilege id="16**-**-**"/>
-        <imprimeur id="SOMMAVILLE">Chez ANTOINE DE SOMMAVILLE, à l’Écu de France et AUGUSTIN COURBE, au Palais, dans la salle des Merciers, à la Palme.</imprimeur>
-        <acheveImprime id="16**-**-**"> </acheveImprime>
-      </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">CLÉAGÉNOR et DORISTÉE</titlePart>
+          <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1634"> M. DC.XXX IV</docDate>
+        <docAuthor bio="rotrou" id="ROTROU, Jean">PAR Mr DE ROTROU </docAuthor>
+        <docImprint>
+          <privilege id="16**-**-**"/>
+          <imprimeur id="SOMMAVILLE">Chez ANTOINE DE SOMMAVILLE, à l’Écu de France et AUGUSTIN COURBE, au Palais, dans la salle des Merciers, à la Palme.</imprimeur>
+          <acheveImprime id="16**-**-**"> </acheveImprime>
+        </docImprint>
+        <performance>
         <premiere date="1634" location="(inconnue)">Représenté pour la première fois en 1634.</premiere>
       </performance>
-      <castList>
-        <head>PERSONNAGES</head>
-        <castItem><role age="A" civil="M" id="CLEAGENOR" rend="male" stat_amour="néant" statut="serviteur" type="H" xml:id="CLEAGENOR">CLÉAGÉNOR</role>, serviteur de Doristée.</castItem>
-        <castItem><role age="A" civil="M" id="THEANDRE" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="THEANDRE">THÉANDRE</role>, ami de Cléagénor.</castItem>
-        <castItem><role age="A" civil="M" id="OZANOR" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="OZANOR">OZANOR</role>, ami de Ménandre.</castItem>
-        <castItem><role age="A" civil="F" id="DORISTEE" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="DORISTEE">DORISTÉE</role>, maîtresse de Cléagénor.</castItem>
-        <castItem><role age="A" civil="M" id="VOLEUR1" rend="male" stat_amour="néant" statut="voleur" type="H" xml:id="VOLEUR1">PREMIER VOLEUR</role>.</castItem>
-        <castItem><role age="A" civil="M" id="VOLEUR2" rend="male" stat_amour="néant" statut="voleur" type="H" xml:id="VOLEUR2">DEUXIÈME VOLEUR</role>.</castItem>
-        <castItem><role age="A" civil="G" id="ARCHERS" rend="group" stat_amour="néant" statut="archer" type="H" xml:id="ARCHERS">ARCHERS</role>.</castItem>
-        <castItem><role age="A" civil="F" id="PHILEMOND" rend="female" stat_amour="néant" statut="page" type="H" xml:id="PHILEMOND">PHILEMOND</role>, Doristée en habit de Page.</castItem>
-        <castItem><role age="A" civil="M" id="CONSEILLER" rend="male" stat_amour="néant" statut="conseiller" type="H" xml:id="CONSEILLER">LE CONSEILLER</role>.</castItem>
-        <castItem><role age="A" civil="F" id="DORANTE" rend="female" stat_amour="néant" statut="bourgeois" type="H" xml:id="DORANTE">DORANTE</role>, femme de Théandre.</castItem>
-        <castItem><role age="A" civil="D" id="DIANE" stat_amour="néant" statut="suivante" type="H" xml:id="DIANE">DIANE</role>, damoiselle de Dorante.</castItem>
-        <castItem><role age="A" civil="M" id="PHILACTE" rend="male" stat_amour="néant" statut="serviteur" type="H" xml:id="PHILACTE">PHILACTE</role>, serviteur de Théandre.</castItem>
-      </castList>
-      <set country="(inconnu)" link="" location="(non indiqué)" periode="(inconnue)"/>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>PERSONNAGES</head>
+          <castItem><role xml:id="CLEAGENOR" rend="male">CLÉAGÉNOR</role>, serviteur de Doristée.</castItem>
+          <castItem><role xml:id="THEANDRE" rend="male">THÉANDRE</role>, ami de Cléagénor.</castItem>
+          <castItem><role xml:id="OZANOR" rend="male">OZANOR</role>, ami de Ménandre.</castItem>
+          <castItem><role xml:id="DORISTEE" rend="female">DORISTÉE</role>, maîtresse de Cléagénor.</castItem>
+          <castItem><role xml:id="VOLEUR1" rend="male">PREMIER VOLEUR</role>.</castItem>
+          <castItem><role xml:id="VOLEUR2" rend="male">DEUXIÈME VOLEUR</role>.</castItem>
+          <castItem><role xml:id="ARCHERS" rend="group">ARCHERS</role>.</castItem>
+          <castItem><role xml:id="PHILEMOND" rend="female">PHILEMOND</role>, Doristée en habit de Page.</castItem>
+          <castItem><role xml:id="CONSEILLER" rend="male">LE CONSEILLER</role>.</castItem>
+          <castItem><role xml:id="DORANTE" rend="female">DORANTE</role>, femme de Théandre.</castItem>
+          <castItem><role xml:id="DIANE" rend="">DIANE</role>, damoiselle de Dorante.</castItem>
+          <castItem><role xml:id="PHILACTE" rend="male">PHILACTE</role>, serviteur de Théandre.</castItem>
+        </castList>
+        <set country="(inconnu)" link="" location="(non indiqué)" periode="(inconnue)"/>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

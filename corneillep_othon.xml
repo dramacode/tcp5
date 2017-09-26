@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Othon</title>
         <title type="sub">, tragédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
-        <author><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
+        <author>
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <publisher>Théâtre Classique</publisher>
@@ -47,36 +52,44 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">OTHON</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1665">M. DC. LXV. Avec PRIVILÈGE DU ROI.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id="1664-11-28"> <head>Extrait du privilège du Roi</head> <p>Par grâce et privilège du Roi donné à Paris le dernier octobre 1664 signé par le Roi en son conseil GUITONNEAU, il est permis à Guillaume de Luyne Marchand libraire de faire imprimer une pièce de théâtre, de le composition du sieur Corneille, intitulée Othon ; pendant sept ans, et défenses sont faites à tous autres de l’imprimer, à peine de dix mille livres d’amende confiscation des exemplaires, et tous dépens dommages et intérêts, comme il est plus long porté par les dites lettres.</p> <p>Registré sur le livre de la Communauté des libraires, le 28 novembre 1664.</p> <p>Signé E. MARTIN. Syndic.</p> <p>Et le dit Luyne a fait part pour moitié du présent privilège à Thomas Jolly, et Louis Billaine, devant l’accord fait entre eux.</p> <p>Les exemplaires ont été fournis.</p> </privilege> <acheveImprime id="1665-02-05">Achevé d’imprimer le 5 février 1665.</acheveImprime> <printer id="LUYNES">À Paris, Chez GUILLAUME DE LUYNES, Libraire-juré, au Palais de la Salle des Merciers, à la Justice.</printer> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">OTHON</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1665">M. DC. LXV. Avec PRIVILÈGE DU ROI.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id="1664-11-28"> <head>Extrait du privilège du Roi</head> <p>Par grâce et privilège du Roi donné à Paris le dernier octobre 1664 signé par le Roi en son conseil GUITONNEAU, il est permis à Guillaume de Luyne Marchand libraire de faire imprimer une pièce de théâtre, de le composition du sieur Corneille, intitulée Othon ; pendant sept ans, et défenses sont faites à tous autres de l’imprimer, à peine de dix mille livres d’amende confiscation des exemplaires, et tous dépens dommages et intérêts, comme il est plus long porté par les dites lettres.</p> <p>Registré sur le livre de la Communauté des libraires, le 28 novembre 1664.</p> <p>Signé E. MARTIN. Syndic.</p> <p>Et le dit Luyne a fait part pour moitié du présent privilège à Thomas Jolly, et Louis Billaine, devant l’accord fait entre eux.</p> <p>Les exemplaires ont été fournis.</p> </privilege>
+          <acheveImprime id="1665-02-05">Achevé d’imprimer le 5 février 1665.</acheveImprime>
+          <printer id="LUYNES">À Paris, Chez GUILLAUME DE LUYNES, Libraire-juré, au Palais de la Salle des Merciers, à la Justice.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1664-08-03" location="Château de Fontainebleau">Représentée pour la première fois le 3 août 1664 au Château de Fontainebleau. Repris le 5 novembre 1664 à l’Hôtel de Bourgogne</premiere>
       </performance>
+      </titlePage>
       <div type="preface">
         <head>AU LECTEUR</head>
         <p>Si mes amis ne me trompent, cette pièce égale ou passe la meilleure des miennes. Quantité de suffrages illustres et solides se sont déclarés pour elle, et si j’ose y mêler le mien, je vous dirai que vous y trouverez quelque justesse dans la conduite, et un peu de bon sens dans le raisonnement. Quand aux vers, on n’en a point vu de moi que j’ai travaillé avec plus de soin. Le sujet est tiré de Tacite, qui commence ses histoires par celle-ci, et je n’en ai encore mis aucune sur le théâtre à qui j’ai gardé plus de fidélité, et prêté plus d’invention. les caractères de ceux que j’y fais parler y sont les mêmes que chez cet incomparable auteur, que j’ai traduit tant qu’il m’a été possible. J’ai tâché de faire paraître les vertus de mon héros en tout leur éclat, sans en dissimuler les vies non plus que lui, et je me suis contenté des les attribuer à une politique de Cour, où quand le souverain se plonge dans les débauches, et que sa faveur n’est qu’à ce prix, il y a presse à qui sera de la partie. J’y ai conservé les événements, et pris la liberté de changer la manière dont ils arrivent, pour en jeter tout le crime sur un méchant homme, qu’on soupçonna dès lors d’avoir donné des ordres secrets pour la mort de Vinius, tant leur inimitié était forte et déclarée. Othon avait promis à ce Consul, d’épouser sa fille s’il le pouvait faire choisir, à Galba son successeur, et comme il se vit Empereur sans son ministère, il se crut dégagé de cette promesse, et ne l’épousa point. Je n’ai pas voulu aller plus loin que l’Histoire, et je puis dire qu’on a point encore vu de pièce, où il se propose tant de mariages pour n’en conclure aucun. Ce sont intrigues de Cabinet qui se détruisent les unes les autres. J’en dirai devantage, quand mes libraires joindrant celle-ci aux recueils qu’ils ont fait de celles de ma façon qui l’ont précédée.</p>
       </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="GALBA" rend="male" stat_amour="néant" statut="empereur" type="H" xml:id="GALBA">GALBA</role>, empereur de Rome.</castItem>
-        <castItem><role age="A" civil="M" id="VINIUS" rend="male" stat_amour="néant" statut="consul" type="H" xml:id="VINIUS">VINIUS</role>, consul.</castItem>
-        <castItem><role age="A" civil="M" id="OTHON" rend="male" stat_amour="néant" statut="sénateur" type="H" xml:id="OTHON">OTHON</role>, sénateur romain, amant de Pautine.</castItem>
-        <castItem><role age="A" civil="M" id="LACUS" rend="male" stat_amour="néant" statut="préfet romain" type="H" xml:id="LACUS">LACUS</role>, préfet du Prétoire.</castItem>
-        <castItem><role age="A" civil="F" id="CAMILLE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="CAMILLE">CAMILLE</role>, nièce de Galba.</castItem>
-        <castItem><role age="A" civil="F" id="PLAUTINE" rend="female" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="PLAUTINE">PLAUTINE</role>, fille de Vinius, amante d’Othon.</castItem>
-        <castItem><role age="A" civil="M" id="MARTIAN" rend="male" stat_amour="néant" statut="affranchi" type="H" xml:id="MARTIAN">MARTIAN</role>, affranchi de Galba.</castItem>
-        <castItem><role age="A" civil="M" id="ALBIN" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ALBIN">ALBIN</role>, ami d’Othon.</castItem>
-        <castItem><role age="A" civil="F" id="ALBIANE" rend="female" stat_amour="néant" statut="dame d'honneur" type="H" xml:id="ALBIANE">ALBIANE</role>, soeur d’Albin, et dame d’honneur de Camille.</castItem>
-        <castItem><role age="A" civil="F" id="FLAVIE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="FLAVIE">FLAVIE</role>, amie de Plautine.</castItem>
-        <castItem><role age="A" civil="M" id="ATTICUS" rend="male" stat_amour="néant" statut="soldat" type="H" xml:id="ATTICUS">ATTICUS</role>, soldat romain.</castItem>
-        <castItem><role age="A" civil="M" id="RUTO" rend="male" stat_amour="néant" statut="soldat" type="H" xml:id="RUTILE">RUTILE</role>, soldat romain.</castItem>
-      </castList>
-      <set country="Italie" link="" location="Rome" periode="Ier avant JC">La scène est à Rome dans le Palais Impérial.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="GALBA" rend="male">GALBA</role>, empereur de Rome.</castItem>
+          <castItem><role xml:id="VINIUS" rend="male">VINIUS</role>, consul.</castItem>
+          <castItem><role xml:id="OTHON" rend="male">OTHON</role>, sénateur romain, amant de Pautine.</castItem>
+          <castItem><role xml:id="LACUS" rend="male">LACUS</role>, préfet du Prétoire.</castItem>
+          <castItem><role xml:id="CAMILLE" rend="female">CAMILLE</role>, nièce de Galba.</castItem>
+          <castItem><role xml:id="PLAUTINE" rend="female">PLAUTINE</role>, fille de Vinius, amante d’Othon.</castItem>
+          <castItem><role xml:id="MARTIAN" rend="male">MARTIAN</role>, affranchi de Galba.</castItem>
+          <castItem><role xml:id="ALBIN" rend="male">ALBIN</role>, ami d’Othon.</castItem>
+          <castItem><role xml:id="ALBIANE" rend="female">ALBIANE</role>, soeur d’Albin, et dame d’honneur de Camille.</castItem>
+          <castItem><role xml:id="FLAVIE" rend="female">FLAVIE</role>, amie de Plautine.</castItem>
+          <castItem><role xml:id="ATTICUS" rend="male">ATTICUS</role>, soldat romain.</castItem>
+          <castItem><role xml:id="RUTILE" rend="male">RUTILE</role>, soldat romain.</castItem>
+        </castList>
+        <set country="Italie" link="" location="Rome" periode="Ier avant JC">La scène est à Rome dans le Palais Impérial.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

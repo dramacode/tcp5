@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -45,39 +44,47 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LE CID</titlePart>
-        <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1637">M. DC. XXXVII.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
-      <docImprint> <privilege date="1637-01-21"> <head>Extrait du privil[èg]e du Roi.</head> <p>Par grâce et privilège du roi, il est permis à Augustin Courbé, marchand libraire à Paris, d’imprimer ou faire imprimer, et exposer en vente, un livre intitulé "Le Cid tragi-comédie" Par Mr CORNEILLE, et défenses sont faites à tous imprimeurs, libraires et autres, d’imprimer, ni faire imprimer ledit livre sans sa permission, et de ceux qui auront droit de lui, et cependant le temps de vingt ans à compter du jour que ledit livre sera achevé d’imprimer pour la première fois, à peine aux contrevenants, de quinze cent livres d’amende, confiscation des exemplaires qui se trouverons contrefaits, et de tous dépens, dommages et intérêts, ainsi qu’il est contenu plus au long aux dites lettres de privilège. donné à Paris le vingt et unième janvier mille six cent trente-sept.</p> <p>Et ledit Courbé associé avec lui audit privilège, François Targa, suivant le contrat passé entre eux par devant notaire du Châtelet de Paris.</p> </privilege> <acheveImprime id="1637-03-23">Achevé d’imprimé ce 23 mars 1637. Les exemplaires ont été fournis ainsi qu’il est porté par le privilège.</acheveImprime> <printer id="COURBÉ">À Paris, chez Augustin Courbé, imprimeur et libraire de Monseigneur frère du roi, dans le petite salle du Palais, à la Palme.</printer> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LE CID</titlePart>
+          <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1637">M. DC. XXXVII.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
+        <docImprint>
+          <privilege date="1637-01-21"> <head>Extrait du privil[èg]e du Roi.</head> <p>Par grâce et privilège du roi, il est permis à Augustin Courbé, marchand libraire à Paris, d’imprimer ou faire imprimer, et exposer en vente, un livre intitulé "Le Cid tragi-comédie" Par Mr CORNEILLE, et défenses sont faites à tous imprimeurs, libraires et autres, d’imprimer, ni faire imprimer ledit livre sans sa permission, et de ceux qui auront droit de lui, et cependant le temps de vingt ans à compter du jour que ledit livre sera achevé d’imprimer pour la première fois, à peine aux contrevenants, de quinze cent livres d’amende, confiscation des exemplaires qui se trouverons contrefaits, et de tous dépens, dommages et intérêts, ainsi qu’il est contenu plus au long aux dites lettres de privilège. donné à Paris le vingt et unième janvier mille six cent trente-sept.</p> <p>Et ledit Courbé associé avec lui audit privilège, François Targa, suivant le contrat passé entre eux par devant notaire du Châtelet de Paris.</p> </privilege>
+          <acheveImprime id="1637-03-23">Achevé d’imprimé ce 23 mars 1637. Les exemplaires ont été fournis ainsi qu’il est porté par le privilège.</acheveImprime>
+          <printer id="COURBÉ">À Paris, chez Augustin Courbé, imprimeur et libraire de Monseigneur frère du roi, dans le petite salle du Palais, à la Palme.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1637-01-04" location="Théâtre du Marais">Représentée pour la première fois le 4 janvier 1637 au Théâtre du Marais.</premiere>
       </performance>
-      <div type="dedicace">
+      </titlePage>
+      <div type="dedication">
         <salute>À Madame de Combalet.</salute>
         <head>Madame,</head>
         <p>Ce portrait vivant que je vous offre, représente un héros assez reconnaissable aux lauriers dont il est couvert. Sa vie a été une suite continuelle de victoires, son corps porté dans son armée a gagné des batailles après sa mort, et son nom au bout de six cent ans vient encore triompher en France. Il y a trouvé une réception trop favorable pour se repentir d’être sorti de son pays, et d’avoir appris à parler une autre langue que la sienne. Ce succès a passé mes plus ambitieuses espérances, et m’a surpris d’abord, mais il a cessé de m’étonner depuis que j’ai vu la satisfaction que vous avez témoignée, quand il a paru devant vous ; alors j’ai osé me promettre de lui tout ce qui en est arrivé, et j’ai cru qu’après les éloges dont vous l’avez honoré, cet applaudissement universel ne lui pouvait manquer. Et véritablement, MADAME, on ne peut douter avec raison de ce que vaut une chose qui a le bonheur de vous plaire : le jugement que vous en faites est la marque assurée de son prix ; et comme vous donnez toujours libéralement aux véritables beautés l’estime qu’elles méritent, les fausses n’ont jamais le pouvoir de vous éblouir. Mais votre générosité ne s’arrête pas à des louanges stériles pour les ouvrages qui vous agréent, elle prend plaisir à s’étendre utilement sur ceux qui les produisent, et ne dédaigne point d’employer en leur faveur ce grand crédit que votre qualité et vos vertus vous ont acquis. J’en ai ressenti des effets qui me sont trop avantageux pour m’en taire, et je ne vous dois pas moins de remerciements pour moi que pour le CID. C’est une reconnaissance qui m’est glorieuse, puisqu’il m’est impossible de publier que je vous ai de grands obligations, sans publier en même temps que vous m’avez assez estimé pour vouloir que je vous en eusse. Aussi, MADAME, si je souhaite quelque durée pour cet heureux effort de ma plume, ce n’est point pour apprendre mon nom à la postérité, mais seulement pour laisser des marques éternelles de ce que je dois, et faire lire à ceux qui naîtront dans les autres siècles la protestation que je fais d’être toute ma vie, Madame,</p>
         <p>Votre très humble et très obéissant serviteur.</p>
         <signed>CORNEILLE.</signed>
       </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="DON FERNAND" n="Le Roi" rend="male superior" stat_amour="néant" statut="roi" type="H" xml:id="FERNAND">DON FERNAND</role>, premier roi de Castille. </castItem>
-        <castItem><role age="A" civil="F" id="L'INFANTE" n="L’Infante" rend="female junior" stat_amour="rodrigue" statut="infante" type="H" xml:id="INFANTE">DONA URRAQUE</role>, infante de Castille. </castItem>
-        <castItem><role age="A" civil="M" id="DON DIEGUE" n="Don Diègue" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="DIEGUE">DON DIÈGUE</role>, père de Don Rodrigue. </castItem>
-        <castItem><role age="A" civil="M" id="LE COMTE" n="Don Gomes" rend="male" stat_amour="néant" statut="comte" type="H" xml:id="COMTE">DON GOMES</role>, comte de Gormas, père de Chimène. </castItem>
-        <castItem><role age="A" civil="M" id="DON RODRIGUE" n="Rodrigue" rend="male junior" stat_amour="chimène" statut="aristocrate" type="H" xml:id="RODRIGUE">DON RODRIGUE</role>, amant de Chimène. </castItem>
-        <castItem><role age="A" civil="M" id="DON SANCHE" n="Don Sanche" rend="male junior" stat_amour="chimène" statut="aristocrate" type="H" xml:id="SANCHE">DON SANCHE</role>, amoureux de Chimène. </castItem>
-        <castItem><role age="A" civil="M" id="DON ARIAS" n="Don Arias" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ARIAS">DON ARIAS</role>, gentilhomme castillan. </castItem>
-        <castItem><role age="A" civil="M" id="DON ALONSE" n="Don Alonse" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ALONSE">DON ALONSE</role>, gentilhomme castillan. </castItem>
-        <castItem><role age="A" civil="F" id="CHIMÈNE" n="Chimène" rend="female junior" stat_amour="néant" statut="aristocrate" type="H" xml:id="CHIMENE">CHIMÈNE</role>, maîtresse de Don Rodrigue, et de Don Sanche. </castItem>
-        <castItem><role age="A" civil="F" id="LÉONOR" n="Léonor" rend="female inferior" stat_amour="néant" statut="gouvernante" type="H" xml:id="LEONOR">LÉONOR</role>, gouvernante de l’Infante. </castItem>
-        <castItem><role age="A" civil="F" id="ELVIRE" n="Elvire" rend="female inferior" stat_amour="néant" statut="gouvernante" type="H" xml:id="ELVIRE">ELVIRE</role>, suivante de Chimène. </castItem>
-        <castItem><role age="A" civil="M" id="UN PAGE" n="Un page" rend="male inferior" stat_amour="néant" statut="page" type="H" xml:id="PAGE">UN PAGE</role> de l’Infante.</castItem>
-      </castList>
-      <set country="Espagne" link="" location="Séville" periode="XIème">La scène est à Séville.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="FERNAND" rend="male superior">DON FERNAND</role>, premier roi de Castille. </castItem>
+          <castItem><role xml:id="INFANTE" rend="female junior">DONA URRAQUE</role>, infante de Castille. </castItem>
+          <castItem><role xml:id="DIEGUE" rend="male">DON DIÈGUE</role>, père de Don Rodrigue. </castItem>
+          <castItem><role xml:id="COMTE" rend="male">DON GOMES</role>, comte de Gormas, père de Chimène. </castItem>
+          <castItem><role xml:id="RODRIGUE" rend="male junior">DON RODRIGUE</role>, amant de Chimène. </castItem>
+          <castItem><role xml:id="SANCHE" rend="male junior">DON SANCHE</role>, amoureux de Chimène. </castItem>
+          <castItem><role xml:id="ARIAS" rend="male">DON ARIAS</role>, gentilhomme castillan. </castItem>
+          <castItem><role xml:id="ALONSE" rend="male">DON ALONSE</role>, gentilhomme castillan. </castItem>
+          <castItem><role xml:id="CHIMENE" rend="female junior">CHIMÈNE</role>, maîtresse de Don Rodrigue, et de Don Sanche. </castItem>
+          <castItem><role xml:id="LEONOR" rend="female inferior">LÉONOR</role>, gouvernante de l’Infante. </castItem>
+          <castItem><role xml:id="ELVIRE" rend="female inferior">ELVIRE</role>, suivante de Chimène. </castItem>
+          <castItem><role xml:id="PAGE" rend="male inferior">UN PAGE</role> de l’Infante.</castItem>
+        </castList>
+        <set country="Espagne" link="" location="Séville" periode="XIème">La scène est à Séville.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

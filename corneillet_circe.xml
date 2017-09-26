@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="../Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="../Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Circé</title>
         <title type="sub">, tragédie</title>
-        <author academie="1685" born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" key="Corneille, Thomas (1625-1709)"><surname>Corneille, Thomas</surname><forename> Thomas</forename></author>
+        <author academie="1685" born="1625" born_location="Rouen" death="1709" death_location="Les Andelys" key="Corneille, Thomas (1625-1709)">
+          <surname>Corneille, Thomas</surname>
+          <forename> Thomas</forename>
+        </author>
         <date>1677</date>
       </titleStmt>
       <publicationStmt>
@@ -46,49 +48,57 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">CIRCÉ</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-        <titlePart type="sub">ORNÉE de MACHINES, de Changements de Théâtre, et de Musique.</titlePart>
-      </docTitle>
-      <docDate value="1677">M. DC. LXXVII.</docDate>
-      <docAuthor bio="corneillet" id="CORNEILLE, Thomas">par Monsieur Thomas Corneille</docAuthor>
-      <docImprint> <privilege id=""> <head/> <p>Avec Privilège des États de Holl. et Westf.</p> </privilege> <acheveImprime id=""/> <printer id="CHATELAIN">À AMSTERDAM, Chez les Frères Chatelain, près de la Maison de Ville. Nouvelle Édition reliée, augmentée des Pièces dont l’Avis au Lecteur fait mention, et enrichie de tailles douces. </printer> </docImprint>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">CIRCÉ</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+          <titlePart type="sub">ORNÉE de MACHINES, de Changements de Théâtre, et de Musique.</titlePart>
+        </docTitle>
+        <docDate value="1677">M. DC. LXXVII.</docDate>
+        <docAuthor bio="corneillet" id="CORNEILLE, Thomas">par Monsieur Thomas Corneille</docAuthor>
+        <docImprint>
+          <privilege id=""> <head/> <p>Avec Privilège des États de Holl. et Westf.</p> </privilege>
+          <acheveImprime id=""/>
+          <printer id="CHATELAIN">À AMSTERDAM, Chez les Frères Chatelain, près de la Maison de Ville. Nouvelle Édition reliée, augmentée des Pièces dont l’Avis au Lecteur fait mention, et enrichie de tailles douces. </printer>
+        </docImprint>
+        <performance>
+        <premiere date="1677-02-12" location="Hôtel Guénégaud">Représenté pour la première fois le 1er février 1677 au Théâtre Guénégaud.</premiere>
+      </performance>
+      </titlePage>
       <div type="preface">
         <head>ARGUMENT. </head>
         <p>Le Sujet de cette Pièce est tiré du 14 Livre des Métamorphoses d’Ovide. Glaucus de simple Pêcheur qu’il était, ayant été changé en Dieu marin, devint éperdument amoureux de Silla, Fille de Phorcus, et ne pouvant toucher son coeur, il alla implorer le secours de Circé, qui prit le parti pour elle, et employa tout le pouvoir de ses charmes pour s’en faire aimer. </p>
         <p>Le dépit de n’avoir pu en venir à bout, porta si loin son ressentiment, que pour se venger, elle empoisonna une fontaine où Silla avait accoutumé de s’aller baigner. Cette malheureuse Nymphe ne s’y fut pas si tôt plongée, qu’elle vit naître des chiens, qui s’attachant à son corps, l’effrayèrent par leurs aboiements ; et l’horreur qu’elle eut d’elle-même dans ce déplorable état, fut si forte, qu’elle s’alla précipiter dans la mer, où elle fut changée en un rocher qui a conservé son nom, et contre qui les flots se brisant, imitent par le bruit qu’ils font les aboiements des chiens qui avaient fait son supplice. </p>
         <p>Je n’ai rien ajouté à cette Fable, que Mélicerte aimé de Silla, et cette même Silla changée en Néréide après tous ses malheurs, pour avoir lieu de finir la pièce par un spectacle de réjouissance. Le succès en a été grand, et il ne s’en faut pas étonner, puisqu’on n’a rien vu jusqu’ici de si beau, ni de si surprenant, que les Machines qui en ont fait le principal ornement.</p>
       </div>
-      <performance>
-        <premiere date="1677-02-12" location="Hôtel Guénégaud">Représenté pour la première fois le 1er février 1677 au Théâtre Guénégaud.</premiere>
-      </performance>
-      <castList>
-        <head>ACTEURS DU PROLOGUE.</head>
-        <castItem><role civil="D" id="MARS" xml:id="MARS">MARS</role>.</castItem>
-        <castItem><role civil="P" id="LA-FORTUNE" xml:id="LAFORTUNE">LA FORTUNE</role>.</castItem>
-        <castItem><role civil="P" id="LE RENOMMEE" xml:id="LARENOMMEE">LA RENOMMÉE</role>.</castItem>
-        <castItem><role civil="P" id="L-AMOUR" xml:id="LAMOUR">L’AMOUR</role>.</castItem>
-        <castItem><role civil="P" id="LA-GLOIRE" xml:id="LAGLOIRE">LA GLOIRE</role>.<role n="La Comédie" xml:id="LACOMEDIE"/><role n="La Musique" xml:id="LAMUSIQUE"/><role n="Les Arts" xml:id="ARTS"/><role n="Les Plaisirs" xml:id="PLAISIRS"/></castItem>
-      </castList>
-      <castList>
-        <head>ACTEURS DE LA TRAGÉDIE.</head>
-        <castItem><role civil="D" id="JUPITER" xml:id="JUPITER">JUPITER</role>.</castItem>
-        <castItem><role civil="D" id="NEPTUNE" xml:id="NEPTUNE">NEPTUNE</role>.</castItem>
-        <castItem><role civil="P" id="LE-SOLEIL" xml:id="LESOLEIL">LE SOLIEL</role>.</castItem>
-        <castItem><role civil="D" id="VENUS" xml:id="VENUS">VÉNUS</role>.</castItem>
-        <castItem><role civil="D" id="GLAUCUS" xml:id="GLAUCUS">GLAUCUS</role>, amant de Silla, Dieu Marin.</castItem>
-        <castItem><role civil="D" id="PALEMON" xml:id="PALEMON">PALÉMON</role>, confident de Glaucus, Dieu Marin.</castItem>
-        <castItem><role civil="F" id="CIRCE" rend="female" xml:id="CIRCE">CIRCÉ</role>, fille du Soleil.</castItem>
-        <castItem><role civil="F" id="SILLA" rend="female" xml:id="SILLA">SILLA</role>.</castItem>
-        <castItem><role civil="N" id="DORINE" xml:id="DORINE">DORINE</role>, Nymphe de Circé. .</castItem>
-        <castItem><role civil="N" id="FLORISE" xml:id="FLORISE">FLORISE</role>, Nymphe de Circé..</castItem>
-        <castItem><role civil="N" id="ASTERIE" xml:id="ASTERIE">ASTÉRIE</role>, Nymphe de Circé.</castItem>
-        <castItem><role civil="N" id="CELIE" xml:id="CELIE">CÉLIE</role>, Nymphe de Silla.</castItem>
-        <castItem><role civil="N" id="MELISSE" xml:id="MELISSE">MÉLISSE</role>, Nymphe de Silla.</castItem>
-        <castItem>CINQ SATYRES.<role n="Premier satyre" xml:id="SATYRE1"/><role n="Second satyre" xml:id="SATYRE2"/><role n="Troisième satyre" xml:id="SATYRE3"/><role n="Quatrième satyre" xml:id="SATYRE4"/><role n="Cinquième satyre" xml:id="SATYRE5"/><role n="Mélicerte" xml:id="MELICERTE"/><role n="Le faune" xml:id="FAUNE"/><role n="La dryade" xml:id="DRYADE"/><role n="Silvie" xml:id="SILVIE"/><role n="Tircis" xml:id="TIRCIS"/><role n="SOLEIL" xml:id="SOLEIL"/><role n="SYLVAIN" xml:id="SYLVAIN"/><role n="DIVININITÉS" xml:id="DIVINITES"/></castItem>
-      </castList>
-      <set country="Pays mythologique" link="" location="Lieu mythologique" periode="Temps mythologiques"/>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS DU PROLOGUE.</head>
+          <castItem><role xml:id="MARS" rend="">MARS</role>.</castItem>
+          <castItem><role xml:id="LAFORTUNE" rend="">LA FORTUNE</role>.</castItem>
+          <castItem><role xml:id="LARENOMMEE" rend="">LA RENOMMÉE</role>.</castItem>
+          <castItem><role xml:id="LAMOUR" rend="">L’AMOUR</role>.</castItem>
+          <castItem><role xml:id="LAGLOIRE" rend="">LA GLOIRE</role>.<role xml:id="LACOMEDIE" rend=""/><role xml:id="LAMUSIQUE" rend=""/><role xml:id="ARTS" rend=""/><role xml:id="PLAISIRS" rend=""/></castItem>
+        </castList>
+        <castList>
+          <head>ACTEURS DE LA TRAGÉDIE.</head>
+          <castItem><role xml:id="JUPITER" rend="">JUPITER</role>.</castItem>
+          <castItem><role xml:id="NEPTUNE" rend="">NEPTUNE</role>.</castItem>
+          <castItem><role xml:id="LESOLEIL" rend="">LE SOLIEL</role>.</castItem>
+          <castItem><role xml:id="VENUS" rend="">VÉNUS</role>.</castItem>
+          <castItem><role xml:id="GLAUCUS" rend="">GLAUCUS</role>, amant de Silla, Dieu Marin.</castItem>
+          <castItem><role xml:id="PALEMON" rend="">PALÉMON</role>, confident de Glaucus, Dieu Marin.</castItem>
+          <castItem><role xml:id="CIRCE" rend="female">CIRCÉ</role>, fille du Soleil.</castItem>
+          <castItem><role xml:id="SILLA" rend="female">SILLA</role>.</castItem>
+          <castItem><role xml:id="DORINE" rend="">DORINE</role>, Nymphe de Circé. .</castItem>
+          <castItem><role xml:id="FLORISE" rend="">FLORISE</role>, Nymphe de Circé..</castItem>
+          <castItem><role xml:id="ASTERIE" rend="">ASTÉRIE</role>, Nymphe de Circé.</castItem>
+          <castItem><role xml:id="CELIE" rend="">CÉLIE</role>, Nymphe de Silla.</castItem>
+          <castItem><role xml:id="MELISSE" rend="">MÉLISSE</role>, Nymphe de Silla.</castItem>
+          <castItem>CINQ SATYRES.<role xml:id="SATYRE1" rend=""/><role xml:id="SATYRE2" rend=""/><role xml:id="SATYRE3" rend=""/><role xml:id="SATYRE4" rend=""/><role xml:id="SATYRE5" rend=""/><role xml:id="MELICERTE" rend=""/><role xml:id="FAUNE" rend=""/><role xml:id="DRYADE" rend=""/><role xml:id="SILVIE" rend=""/><role xml:id="TIRCIS" rend=""/><role xml:id="SOLEIL" rend=""/><role xml:id="SYLVAIN" rend=""/><role xml:id="DIVINITES" rend=""/></castItem>
+        </castList>
+        <set country="Pays mythologique" link="" location="Lieu mythologique" periode="Temps mythologiques"/>
+      </div>
     </front>
     <body>
       <div1 n="1" type="prologue" xml:id="A">

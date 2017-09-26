@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,23 +47,25 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">L’ACTRICE NOUVELLE</titlePart>
-        <titlePart type="sub">COMÉDIE EN UN ACTE</titlePart>
-      </docTitle>
-      <docDate value="1722">M. DCC. XXII.</docDate>
-      <docAuthor bio="" id="POISSON, Philippe">[Philippe Poisson]</docAuthor>
-      <docImprint>
-        <privilege id="">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">L’ACTRICE NOUVELLE</titlePart>
+          <titlePart type="sub">COMÉDIE EN UN ACTE</titlePart>
+        </docTitle>
+        <docDate value="1722">M. DCC. XXII.</docDate>
+        <docAuthor bio="" id="POISSON, Philippe">[Philippe Poisson]</docAuthor>
+        <docImprint>
+          <privilege id="">
           <head/>
           <p/>
         </privilege>
-        <acheveImprime id=""/>
-        <printer id=""/>
-      </docImprint>
-      <performance>
+          <acheveImprime id=""/>
+          <printer id=""/>
+        </docImprint>
+        <performance>
         <premiere date="" location=""/>
       </performance>
+      </titlePage>
       <div type="preface">
         <head>AVIS DU LIBRAIRE.</head>
         <p>Cete petite pièce que je donne aujourd’hui au public fut envoyée il y a quatre à cinq ans aux Comédiens de Paris par un Auteur anonyme, Monsieur Quinault l’Ainé l’un des Semainiers, en fit la Lecture à la Troupe, et comme ce gracieux Comédien a le talent de prendre les inflexions de voix de qui bon lui semble en lisant le rôle de la nouvelle Actrice, il donna quelques tons d’une comédienne dont les talents pour le Théâtre font autant les délices du Public que ses grâces, et son esprit font les charmes de ceux qui la voient dans un moins grand jour. Cette actrice n’était pas présente à la lecture ; mais en ayant appris quelques circonstances et croyant se reconnaître à quelques uns de ses traits, elle obtint par ses cabales un Ordre qui défendit à ses camarades de représenter cette pièce, et les priva par une imagination chimérique de l’avantage réel que leur aurait procuré une nouveauté aussi agréable.</p>
@@ -82,21 +83,23 @@
         <l>Elle en fit d’un seul mot hier un sous-traitant.</l>
         <p>Cette application pourrait peut être convenir à la maîtresse d’un Ministre, mais quel rapport peut elle avoir une comédienne qui n’a daigné jusqu’à présent exercer son Empire que sur quelques uns de nos beaux esprits.</p>
       </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" id="LA BARONNE" sex="2" stat_amour="néant" statut="baronne" type="H" xml:id="LABARONNE">LA BARONNE</role>.</castItem>
-        <castItem><role age="A" id="LA COMTESSE" sex="2" stat_amour="néant" statut="comtesse" type="H" xml:id="LACOMTESSE">LA COMTESSE</role>.</castItem>
-        <castItem><role age="A" id="L'ACTRICE NOUVELLE" sex="2" stat_amour="néant" statut="comédien" type="H" xml:id="LACTRICE">L’ACTRICE NOUVELLE</role>.</castItem>
-        <castItem><role age="A" id="LE CHEVALIER" sex="1" stat_amour="néant" statut="chevalier" type="H" xml:id="LECHEVALIER">LE CHEVALIER</role>.</castItem>
-        <castItem><role age="A" id="LE CONSEILLER" sex="1" stat_amour="néant" statut="conseiller" type="H" xml:id="LECONSEILLER">LE CONSEILLER</role>.</castItem>
-        <castItem><role age="A" id="LE FINANCIER" sex="1" stat_amour="néant" statut="financier" type="H" xml:id="LEFINANCIER">LE FINANCIER</role>.</castItem>
-        <castItem><role age="A" id="ABBE BIDET" sex="1" stat_amour="néant" statut="abbé" type="H" xml:id="LABBE">L’ABBE BIDET</role>.</castItem>
-        <castItem><role age="A" id="FRONTIN" sex="1" stat_amour="néant" statut="valet" type="H" xml:id="FRONTIN">FRONTIN</role>, valet de l’actrice.</castItem>
-        <castItem><role age="A" id="LISETTE" sex="2" stat_amour="néant" statut="suivante" type="H" xml:id="LISETTE">LISETTE</role>, suivante de la Baronne.</castItem>
-        <castItem><role age="A" id="UN LAQUAIS" sex="1" stat_amour="néant" statut="laquais" type="H" xml:id="LAQUAIS">UN LAQUAIS</role>, du Conseiller.</castItem>
-        <castItem><role age="A" id="PLUSIEURS LAQUAIS" sex="9" stat_amour="néant" statut="laquais" type="H" xml:id="PlusieurslaquaisdelaBaronne">Plusieurs laquais de la Baronne</role>.</castItem>
-      </castList>
-      <set country="France" link="" location="Paris" periode="XVIIème">La scène est à chez la Baronne. </set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="LABARONNE" rend="female">LA BARONNE</role>.</castItem>
+          <castItem><role xml:id="LACOMTESSE" rend="female">LA COMTESSE</role>.</castItem>
+          <castItem><role xml:id="LACTRICE" rend="female">L’ACTRICE NOUVELLE</role>.</castItem>
+          <castItem><role xml:id="LECHEVALIER" rend="male">LE CHEVALIER</role>.</castItem>
+          <castItem><role xml:id="LECONSEILLER" rend="male">LE CONSEILLER</role>.</castItem>
+          <castItem><role xml:id="LEFINANCIER" rend="male">LE FINANCIER</role>.</castItem>
+          <castItem><role xml:id="LABBE" rend="male">L’ABBE BIDET</role>.</castItem>
+          <castItem><role xml:id="FRONTIN" rend="male">FRONTIN</role>, valet de l’actrice.</castItem>
+          <castItem><role xml:id="LISETTE" rend="female">LISETTE</role>, suivante de la Baronne.</castItem>
+          <castItem><role xml:id="LAQUAIS" rend="male">UN LAQUAIS</role>, du Conseiller.</castItem>
+          <castItem><role xml:id="PlusieurslaquaisdelaBaronne" rend="">Plusieurs laquais de la Baronne</role>.</castItem>
+        </castList>
+        <set country="France" link="" location="Paris" periode="XVIIème">La scène est à chez la Baronne. </set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

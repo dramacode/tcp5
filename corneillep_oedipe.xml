@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Oedipe</title>
         <title type="sub">, tragédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <publisher>Théâtre Classique</publisher>
@@ -46,17 +48,23 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">OEDIPE</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1659">M. DC. LIX. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Par P. CORNEILLE</docAuthor>
-      <docImprint> <privilege id="1659-02-10"> <head>EXTRAIT DU PRIVILÈGE DU ROI.</head> <p>Par grâce et privilège du Roi, donné à Paris le 10 février 1649. Il est permis au Sieur CORNEILLE de faire imprimer une tragédie de sa composition, intitulée L’OEDIPE, pendant le temps de sept années, à commencer du jour qu’elle sera achevée d’imprimer. Et défenses sont faites à toutes personnes de quelque qualité et condition qu’elle soient, de l’imprimer, vendre, ni débiter, d’autre impression que de celle qui sera faite, ou ceux qui auront droit de lui, à peine de mille livre d’amende, de tous dépens, dommages et intérêts, comme il est plus amplement porté par lesdites lettres.</p> <p>Le dit Sieur CORNEILLE a cédé le droit de son privilège ci-dessus à AUGUSTIN COURBÉ et GUILLAUME DE LUYNE Marchands Libraires, pour en jouir suivant l’accord fait entre eux.</p> <p>Registré sur le livre de la Communauté le 1 mars 1659. Signé, BECHET, Syndic.</p> <p>Les exemplaires ont été fournis.</p> </privilege> <acheveImprime id="1659-03-26">Achevé d’imprimer pour la première fois le 26 [Mars] 1659, à ROUEN, par L. MAURY.</acheveImprime> <printer id="COURBE, LUYNES">Imprimé à Rouen, et de vend À PARIS, Chez Augustin COURBÉ, au Palais, en la Galerie des Merciers, à la Palme, et Guillaume de LUYNES, Libraire juré dans le même Galerie, à la Justice.</printer> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">OEDIPE</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1659">M. DC. LIX. AVEC PRIVILÈGE DU ROI.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Par P. CORNEILLE</docAuthor>
+        <docImprint>
+          <privilege id="1659-02-10"> <head>EXTRAIT DU PRIVILÈGE DU ROI.</head> <p>Par grâce et privilège du Roi, donné à Paris le 10 février 1649. Il est permis au Sieur CORNEILLE de faire imprimer une tragédie de sa composition, intitulée L’OEDIPE, pendant le temps de sept années, à commencer du jour qu’elle sera achevée d’imprimer. Et défenses sont faites à toutes personnes de quelque qualité et condition qu’elle soient, de l’imprimer, vendre, ni débiter, d’autre impression que de celle qui sera faite, ou ceux qui auront droit de lui, à peine de mille livre d’amende, de tous dépens, dommages et intérêts, comme il est plus amplement porté par lesdites lettres.</p> <p>Le dit Sieur CORNEILLE a cédé le droit de son privilège ci-dessus à AUGUSTIN COURBÉ et GUILLAUME DE LUYNE Marchands Libraires, pour en jouir suivant l’accord fait entre eux.</p> <p>Registré sur le livre de la Communauté le 1 mars 1659. Signé, BECHET, Syndic.</p> <p>Les exemplaires ont été fournis.</p> </privilege>
+          <acheveImprime id="1659-03-26">Achevé d’imprimer pour la première fois le 26 [Mars] 1659, à ROUEN, par L. MAURY.</acheveImprime>
+          <printer id="COURBE, LUYNES">Imprimé à Rouen, et de vend À PARIS, Chez Augustin COURBÉ, au Palais, en la Galerie des Merciers, à la Palme, et Guillaume de LUYNES, Libraire juré dans le même Galerie, à la Justice.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1659-01-24" location="Hôtel de Bourgogne">Représenté pour la première fois le 24 janvier 1659 au Théâtre de l’Hôtel de Bourgogne.</premiere>
       </performance>
-      <div type="dedicace">
+      </titlePage>
+      <div type="dedication">
         <salute>Vers présentés à MONSEIGNEUR LE PROCUREUR GÉNÉRAL FOUQUET, SURINTENDANT DES FINANCES.</salute>
         <l>Laisse aller ton essor jusqu’à ce grand génie</l>
         <l>Qui te rappelle au jour dont les ans l’ont bannie,</l>
@@ -149,21 +157,23 @@
         <p>Au reste, je ne vous dissimulerai point qu’après avoir arrêté mon choix sur ce sujet, dans la confiance que j’aurais pour moi les suffrages de tous les savants, qui l’ont regardé comme le chef-d’oeuvre de l’Antiquité, et que les pensées de ces grand génies qui l’ont traité en Grec et en Latin, ma faciliterait les moyens d’en venir à bout assez tôt pour le faire représenter pour le Carnaval, je n’ai pas laissé de trembler, quand je l’ai envisagé de près, et un peu plus à loisir que je n’avais fait en le choisissant. J’ai reconnu que ce qui avait passé pour miraculeux dans ce siècles éloignés, pourrait sembler horrible au nôtre, et que cette éloquente et curieuse description de la manière dont ce malheureux Prince se crève les yeux, et le spectacle de ces mêmes yeux crevés dont le sang lui distille sur le visage, qui occupe tout le cinquième acte chez ces incomparables originaux, ferait soulever la délicatesse de nos Dames qui composent la plus belle partie de notre auditoire, et dont le dégoût attire aisément la censure de ceux qui les accompagne ; et qu’enfin l’amour n’ayant point de part dans ce sujet, ni le femmes d’emploi, il était dénué des principaux ornements qui nous gagnent d’ordinaire la voix publique. J’ai tâché de remédier à ces désordres au moins mal que j’ai pu, en épargnant d’un côté à mes auditeurs ce dangereux spectacle, et y ajoutant de l’autre l’heureux épisode des amours de Thésée et de Dircé, que je fais fille de Laius, et seule héritière de la couronne, supposé que son frère qu’on avait exposé aux bêtes sauvages en eut été dévoré, comme on le croyait. J’ai retranché le nombre des Oracles qui pouvait être importun, et donner trop de jour à OEdipe pour se connaître : j’ai rendu la réponses de Laius évoqué par Tirésie assez obscure dans sa clarté pour faire un nouveau noud, et qui peut être n’est pas moins beau que celui de nos Anciens : j’ai cherché même des raisons pour justifier ce qu’Aristote y trouve sans raisons, et qu’il excuse en ce qu’il arrive au commencement de la Fable, et j’ai fait en sorte qu’OEdipe, encore qu’il se souvienne d’avoir combattu trois hommes au lieu de même où fut tué Laius, et dans le même temps de sa mort, bien loin de s’en croire l’auteur, la croit avoir vengée sur trois brigands, à qui le bruit commun l’attribue.</p>
         <p>Cela m’a fait perdre l’avantage que je m’étais promis, de n’être souvent que le traducteur de ces grands hommes qui m’ont précédé. Comme j’ai pris une autre route que la leur, il m’a été impossible de me rencontrer avec eux : mais en récompense, j’ai eu le bonheur de faire avouer à la plupart de mes auditeurs, que je n’ai fait aucune pièce de théâtre où il se trouve tant d’Art qu’en celle-ci ; bien que ce ne soit qu’un ouvrage de deux mois, que l’impatience française m’a fait précipiter, par un juste empressement d’exécuter les ordres favorables que j’ai reçus.</p>
       </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="OEDIPE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="OEDIPE">OEDIPE</role>, roi de Thèbes, fils et mari de Jocaste.</castItem>
-        <castItem><role age="A" civil="M" id="THESEE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="THESEE">THÉSÉE</role>, prince d’Athènes et amoureux de Dircé.</castItem>
-        <castItem><role age="A" civil="F" id="JOCASTE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="JOCASTE">JOCASTE</role>, reine de Thèbes, femme et mère d’Oedipe.</castItem>
-        <castItem><role age="A" civil="F" id="DIRCE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="DIRCE">DIRCÉ</role>, princesse de Thèbes, fille de Laius et de Jocaste, sœur d’Oedipe et amante de Thésée.</castItem>
-        <castItem><role age="A" civil="F" id="CLEANTE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="CLEANTE">CLÉANTE</role>, confident d’Oedipe.</castItem>
-        <castItem><role age="A" civil="M" id="DYMAS" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="DYMAS">DYMAS</role>, confident d’Oedipe.</castItem>
-        <castItem><role age="V" civil="M" id="PHORBAS" rend="male veteran" stat_amour="néant" statut="bourgeois" type="H" xml:id="PHORBAS">PHORBAS</role>, vieillard Thébain.</castItem>
-        <castItem><role age="V" civil="M" id="IPHICRATE" rend="male veteran" stat_amour="néant" statut="bourgeois" type="H" xml:id="IPHICRATE">IPHICRATE</role>, vieillard de Corinthe.</castItem>
-        <castItem><role age="A" civil="F" id="NERINE" rend="female" stat_amour="néant" statut="dame d'honneur" type="H" xml:id="NERINE">NÉRINE</role>, dame d’honneur de la reine.</castItem>
-        <castItem><role age="A" civil="F" id="MEGARE" rend="female" stat_amour="néant" statut="dame d'honneur" type="H" xml:id="MEGARE">MÉGARE</role>, fille d’honneur de Dircé.</castItem>
-        <castItem><role age="A" civil="M" id="UN-PAGE" rend="male" stat_amour="néant" statut="page" type="H" xml:id="PAGE">UN PAGE</role>.</castItem>
-      </castList>
-      <set country="Grèce" link="" location="Thèbes" periode="Temps mythologiques">La scène est à Thèbes.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="OEDIPE" rend="male">OEDIPE</role>, roi de Thèbes, fils et mari de Jocaste.</castItem>
+          <castItem><role xml:id="THESEE" rend="male">THÉSÉE</role>, prince d’Athènes et amoureux de Dircé.</castItem>
+          <castItem><role xml:id="JOCASTE" rend="female">JOCASTE</role>, reine de Thèbes, femme et mère d’Oedipe.</castItem>
+          <castItem><role xml:id="DIRCE" rend="female">DIRCÉ</role>, princesse de Thèbes, fille de Laius et de Jocaste, sœur d’Oedipe et amante de Thésée.</castItem>
+          <castItem><role xml:id="CLEANTE" rend="female">CLÉANTE</role>, confident d’Oedipe.</castItem>
+          <castItem><role xml:id="DYMAS" rend="male">DYMAS</role>, confident d’Oedipe.</castItem>
+          <castItem><role xml:id="PHORBAS" rend="male veteran">PHORBAS</role>, vieillard Thébain.</castItem>
+          <castItem><role xml:id="IPHICRATE" rend="male veteran">IPHICRATE</role>, vieillard de Corinthe.</castItem>
+          <castItem><role xml:id="NERINE" rend="female">NÉRINE</role>, dame d’honneur de la reine.</castItem>
+          <castItem><role xml:id="MEGARE" rend="female">MÉGARE</role>, fille d’honneur de Dircé.</castItem>
+          <castItem><role xml:id="PAGE" rend="male">UN PAGE</role>.</castItem>
+        </castList>
+        <set country="Grèce" link="" location="Thèbes" periode="Temps mythologiques">La scène est à Thèbes.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

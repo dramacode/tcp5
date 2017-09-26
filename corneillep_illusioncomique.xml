@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>L’Illusion comique</title>
         <title type="sub">, comédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1636</date>
       </titleStmt>
       <publicationStmt>
@@ -47,17 +49,23 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">L’ILLUSION COMIQUE</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1639">M. DC. XXXVI. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id="1639-02-11"> <head>Extrait du privilège du Roi</head> <p>Par grace et privilège du Roi, il est permis à François Targa, marchand libraire à Paris, d’imprimer ou faire imprimer, L’illusion Comique Comédie par Mr CORNEILLE, et défenses sont faites à tous imprimeurs libraires, et autres, d’imprimer, ni faire imprimer, le dit livre sans sa permission, ou de ceux qui en ont droit de lui, et cependant le temps de sept ans à compter du jour que le dit livre sera achevé d’imprimer pour la première fois, à peine aux contrevenants de trois mille livres d’amende, confiscation des exemplaires qui se trouveront contrefaits, et à tous dépens, dommages et intérêts, ainsi qu’il est contenu plus au long aux dites lettres du privilège. Donné à Paris le onzième février six cent trente neuf.</p> <p>Par le Roi en son Conseil, signé CONRART.</p> </privilege> <acheveImprime id="1639-03-16">Achevé d’imprimer ce 16 mars 1639. Les exemplaires ont été fournis ainsi qu’il est porté par le privilège.</acheveImprime> <printer id="TARGA">À PARIS, chez Francois TARGA, au premier pilier de la grand-salle du Palais devant la Chapelle, au soleil d’or.</printer> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">L’ILLUSION COMIQUE</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1639">M. DC. XXXVI. AVEC PRIVILÈGE DU ROI.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id="1639-02-11"> <head>Extrait du privilège du Roi</head> <p>Par grace et privilège du Roi, il est permis à François Targa, marchand libraire à Paris, d’imprimer ou faire imprimer, L’illusion Comique Comédie par Mr CORNEILLE, et défenses sont faites à tous imprimeurs libraires, et autres, d’imprimer, ni faire imprimer, le dit livre sans sa permission, ou de ceux qui en ont droit de lui, et cependant le temps de sept ans à compter du jour que le dit livre sera achevé d’imprimer pour la première fois, à peine aux contrevenants de trois mille livres d’amende, confiscation des exemplaires qui se trouveront contrefaits, et à tous dépens, dommages et intérêts, ainsi qu’il est contenu plus au long aux dites lettres du privilège. Donné à Paris le onzième février six cent trente neuf.</p> <p>Par le Roi en son Conseil, signé CONRART.</p> </privilege>
+          <acheveImprime id="1639-03-16">Achevé d’imprimer ce 16 mars 1639. Les exemplaires ont été fournis ainsi qu’il est porté par le privilège.</acheveImprime>
+          <printer id="TARGA">À PARIS, chez Francois TARGA, au premier pilier de la grand-salle du Palais devant la Chapelle, au soleil d’or.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1636" location="Hôtel de Bourgogne">Représenté pour la première fois en 1636 au Théâtre de l’Hôtel de Bourgogne.</premiere>
       </performance>
-      <div type="dedicace">
+      </titlePage>
+      <div type="dedication">
         <salute>À Mademoiselle M. F. D. R. </salute>
         <head>Mademoiselle, </head>
         <p>Voici un étrange monstre que je vous dédie. Le premier acte n’est qu’un prologue; les trois suivants font une comédie imparfaite, le dernier est une tragédie: et tout cela, cousu ensemble, fait une comédie. Qu’on en nomme l’invention bizarre et extravagante tant qu’on voudra, elle est nouvelle; et souvent la grâce de la nouveauté, parmi nos Français, n’est pas un petit degré de bonté. Son succès ne m’a point fait de honte sur le théâtre, et j’ose dire que la représentation de cette pièce capricieuse ne vous a point déplu, puisque vous m’avez commandé de vous en adresser l’épître quand elle irait sous la presse. Je suis au désespoir de vous la présenter en si mauvais état, qu’elle en est méconnaissable: la quantité de fautes que l’imprimeur a ajoutées aux miennes la déguise, ou pour mieux dire, la change entièrement. C’est l’effet de mon absence de Paris, d’où mes affaires m’ont rappelé sur le point qu’il l’imprimait, et m’ont obligé d’en abandonner les épreuves à sa discrétion. Je vous conjure de ne la lire point que vous n’ayez pris la peine de corriger ce que vous trouverez marqué ensuite de cette épître. Ce n’est pas que j’y aie employé toutes les fautes qui s’y sont coulées; le nombre en est si grand qu’il eût épouvanté le lecteur: j’ai seulement choisi celles qui peuvent apporter quelque corruption notable au sens, et qu’on ne peut pas deviner aisément. Pour les autres, qui ne sont que contre la rime, ou l’orthographe, ou la ponctuation, j’ai cru que le lecteur judicieux y suppléerait sans beaucoup de difficulté, et qu’ainsi il n’était pas besoin d’en charger cette première feuille. Cela m’apprendra à ne hasarder plus de pièces à l’impression durant mon absence. Ayez assez de bonté pour ne dédaigner pas celle-ci, toute déchirée qu’elle est; et vous m’obligerez d’autant plus à demeurer toute ma vie, </p>
@@ -72,27 +80,29 @@
         <l>Iratusque Chremes tumido delitigat ore. </l>
         <p>Je ne m’étendrai pas davantage sur ce poème: tout irrégulier qu’il est, il faut qu’il ait quelque mérite, puisqu’il a surmonté l’injure des temps, et qu’il paraît encore sur nos théâtres, bien qu’il y ait plus de trente années qu’il est au monde, et qu’une si longue révolution en ait enseveli beaucoup sous la poussière, qui semblaient avoir plus de droit que lui de prétendre à une si heureuse durée. </p>
       </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="ALCANDRE" n="Alcandre" rend="male exterior" stat_amour="néant" statut="magicien" type="H" xml:id="ALCANDRE">ALCANDRE</role>, magicien.</castItem>
-        <castItem><role age="A" civil="M" id="PRIDAMANT" n="Pridamant" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="PRIDAMANT">PRIDAMANT</role>, père de Clindor.</castItem>
-        <castItem><role age="A" civil="M" id="DORANTE" n="Dorante" rend="male" stat_amour="néant" statut="bourgeois" type="H" xml:id="DORANTE">DORANTE</role>, ami de Pridamant.</castItem>
-        <castItem><role age="A" civil="M" id="MATAMORE" n="Matamore" rend="male" stat_amour="amoureux" statut="capitaine" type="H" xml:id="MATAMORE">MATAMORE</role>, capitaine gascon, amoureux d’Isabelle.</castItem>
-        <castItem><role age="A" civil="M" id="CLINDOR" n="Clindor" rend="male junior" stat_amour="amoureux" statut="suivant" type="H" xml:id="CLINDOR">CLINDOR</role>, suivant de Capitan, et amant d’Isabelle.</castItem>
-        <castItem><role age="A" civil="M" id="ADRASTE" n="Adraste" rend="male junior" stat_amour="néant" statut="aristocrate" type="H" xml:id="ADRASTE">ADRASTE</role>, gentilhomme, amoureux d’Isabelle.</castItem>
-        <castItem><role age="V" civil="M" id="GERONTE" n="Géronte" rend="male veteran" stat_amour="néant" statut="bourgeois" type="H" xml:id="GERONTE">GÉRONTE</role>, père d’Isabelle.</castItem>
-        <castItem><role age="A" civil="F" id="ISABELLE" n="Isabelle" rend="female junior" stat_amour="néant" statut="bourgeois" type="H" xml:id="ISABELLE">ISABELLE</role>, fille de Géronte.</castItem>
-        <castItem><role age="A" civil="F" id="LYSE" n="Lyse" rend="female inferior" stat_amour="néant" statut="aristocrate" type="H" xml:id="LYSE">LYSE</role>.</castItem>
-        <castItem><role age="A" civil="M" id="LE-GEÔLIER" n="Geôlier" rend="male exterior" stat_amour="néant" statut="geôlier" type="H" xml:id="GEOLIER">LE GEÔLIER</role>, de Bordeaux.</castItem>
-        <castItem><role age="A" civil="M" id="PAGE" n="page de Matamore" rend="male inferior" stat_amour="néant" statut="page" type="H" xml:id="PAGE">PAGE du CAPITAN</role>.</castItem>
-        <castItem>CLINDOR, représentant Théagène, seigneur anglais.</castItem>
-        <castItem>ISABELLE, représentant Hyppolyte, femme de Théagène.</castItem>
-        <castItem>LYSE, représentant Clarine, suivante d’Hippolyte.</castItem>
-        <castItem><role age="A" civil="M" id="ERASTE" n="Éraste" rend="male inferior" stat_amour="néant" statut="écuyer" type="H" xml:id="ERASTE">ERASTE</role>, écuyer de Florilame.</castItem>
-        <castItem><role age="A" civil="G" id="DOMESTIQUES_ADRESTE" n="domestiques d’Adreste" rend="group" stat_amour="néant" statut="domestique" type="H" xml:id="DOMESTIQUES_ADRESTE">Troupe de domestiques d’Adreste</role>.</castItem>
-        <castItem><role age="A" civil="G" id="DOMESTIQUES_FLORILAME" n="domestiques de Floriflame" rend="group" stat_amour="néant" statut="domestique" type="H" xml:id="DOMESTIQUES_FLORILAME">Troupes de domestiques de Florilame</role>.</castItem>
-      </castList>
-      <set country="France" location="Touraine" periode="XVIIème">La scène est en Touraine, en une compagnie proche de la grotte de magicien.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="ALCANDRE" rend="male exterior">ALCANDRE</role>, magicien.</castItem>
+          <castItem><role xml:id="PRIDAMANT" rend="male">PRIDAMANT</role>, père de Clindor.</castItem>
+          <castItem><role xml:id="DORANTE" rend="male">DORANTE</role>, ami de Pridamant.</castItem>
+          <castItem><role xml:id="MATAMORE" rend="male">MATAMORE</role>, capitaine gascon, amoureux d’Isabelle.</castItem>
+          <castItem><role xml:id="CLINDOR" rend="male junior">CLINDOR</role>, suivant de Capitan, et amant d’Isabelle.</castItem>
+          <castItem><role xml:id="ADRASTE" rend="male junior">ADRASTE</role>, gentilhomme, amoureux d’Isabelle.</castItem>
+          <castItem><role xml:id="GERONTE" rend="male veteran">GÉRONTE</role>, père d’Isabelle.</castItem>
+          <castItem><role xml:id="ISABELLE" rend="female junior">ISABELLE</role>, fille de Géronte.</castItem>
+          <castItem><role xml:id="LYSE" rend="female inferior">LYSE</role>.</castItem>
+          <castItem><role xml:id="GEOLIER" rend="male exterior">LE GEÔLIER</role>, de Bordeaux.</castItem>
+          <castItem><role xml:id="PAGE" rend="male inferior">PAGE du CAPITAN</role>.</castItem>
+          <castItem>CLINDOR, représentant Théagène, seigneur anglais.</castItem>
+          <castItem>ISABELLE, représentant Hyppolyte, femme de Théagène.</castItem>
+          <castItem>LYSE, représentant Clarine, suivante d’Hippolyte.</castItem>
+          <castItem><role xml:id="ERASTE" rend="male inferior">ERASTE</role>, écuyer de Florilame.</castItem>
+          <castItem><role xml:id="DOMESTIQUES_ADRESTE" rend="group">Troupe de domestiques d’Adreste</role>.</castItem>
+          <castItem><role xml:id="DOMESTIQUES_FLORILAME" rend="group">Troupes de domestiques de Florilame</role>.</castItem>
+        </castList>
+        <set country="France" location="Touraine" periode="XVIIème">La scène est en Touraine, en une compagnie proche de la grotte de magicien.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

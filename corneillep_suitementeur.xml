@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>La Suite du Menteur</title>
         <title type="sub">, comédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1645</date>
       </titleStmt>
       <publicationStmt>
@@ -47,27 +49,35 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LA SUITE DU MENTEUR</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1645">1645</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id="166*-**-**"/> <acheveImprime id="166*-**-**"/> <printer id="*"/> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LA SUITE DU MENTEUR</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1645">1645</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id="166*-**-**"/>
+          <acheveImprime id="166*-**-**"/>
+          <printer id="*"/>
+        </docImprint>
+        <performance>
         <premiere date="1644" location="Théâtre du Marais">Première représentation en 1644 au Théâtre du Marais.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="DORANTE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="DORANTE">DORANTE</role>.</castItem>
-        <castItem><role age="A" civil="M" id="CLITON" rend="male" stat_amour="néant" statut="valet" type="H" xml:id="CLITON">CLITON</role>, valet de Dorante.</castItem>
-        <castItem><role age="A" civil="M" id="CLÉANDRE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="CLEANDRE">CLÉANDRE</role>, gentilhomme de Lyon.</castItem>
-        <castItem><role age="A" civil="F" id="MÉLISSE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="MELISSE">MÉLISSE</role>, soeur de Cléandre.</castItem>
-        <castItem><role age="A" civil="M" id="PHILISTE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="PHILISTE">PHILISTE</role>, ami de Dorante et amoureux de Mélisse.</castItem>
-        <castItem><role age="A" civil="F" id="LYSE" rend="female" stat_amour="néant" statut="femme de chambre" type="H" xml:id="LYSE">LYSE</role>, femme de chambre de Mélisse.</castItem>
-        <castItem><role age="A" civil="M" id="PREVOT" rend="male" stat_amour="néant" statut="prévôt" type="H" xml:id="PREVOT">UN PRÉVÔT</role>.</castItem>
-      </castList>
-      <set country="France" link="" location="Lyon" periode="XVIIème">La scène est à Lyon.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="DORANTE" rend="male">DORANTE</role>.</castItem>
+          <castItem><role xml:id="CLITON" rend="male">CLITON</role>, valet de Dorante.</castItem>
+          <castItem><role xml:id="CLEANDRE" rend="male">CLÉANDRE</role>, gentilhomme de Lyon.</castItem>
+          <castItem><role xml:id="MELISSE" rend="female">MÉLISSE</role>, soeur de Cléandre.</castItem>
+          <castItem><role xml:id="PHILISTE" rend="male">PHILISTE</role>, ami de Dorante et amoureux de Mélisse.</castItem>
+          <castItem><role xml:id="LYSE" rend="female">LYSE</role>, femme de chambre de Mélisse.</castItem>
+          <castItem><role xml:id="PREVOT" rend="male">UN PRÉVÔT</role>.</castItem>
+        </castList>
+        <set country="France" link="" location="Lyon" periode="XVIIème">La scène est à Lyon.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

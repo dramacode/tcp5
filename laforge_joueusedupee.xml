@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -48,24 +47,26 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LA JOUEUSE DUPÉE</titlePart>
-        <titlePart type="sub">OU L’INTRIGUE DES ACADÉMIES</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1664">M. DC LXIV.</docDate>
-      <docAuthor bio="laforge" id="LA FORGE">par Jean de La Forge</docAuthor>
-      <docImprint>
-        <privilege id="">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LA JOUEUSE DUPÉE</titlePart>
+          <titlePart type="sub">OU L’INTRIGUE DES ACADÉMIES</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1664">M. DC LXIV.</docDate>
+        <docAuthor bio="laforge" id="LA FORGE">par Jean de La Forge</docAuthor>
+        <docImprint>
+          <privilege id="">
           <head/>
           <p/>
         </privilege>
-        <acheveImprime id=""/>
-        <printer id=""/>
-      </docImprint>
-      <performance>
+          <acheveImprime id=""/>
+          <printer id=""/>
+        </docImprint>
+        <performance>
         <premiere date="1664" location="Théâtre du Marais">Représenté pour la première fois en 1664 au Théâtre du Marais.</premiere>
       </performance>
+      </titlePage>
       <div type="preface">
         <head>NOTICE SUR J. DE LA FORGE de Victor FOURNEL (1875)</head>
         <p>On manque de renseignements précis sur J. de la Forge, l’auteur de la Joueuse dupée. Nous ne connaissons à peu près de lui que ses ouvrages, et ceux-là ne sont pas nombreux puisqu’ils ne comprennent que cette petite comédie, et le Cercle des femmes savantes, dialogue en vers héroïques, qu’il avait publié l’année précédente. Le Cercle des femmes savantes (Paris, P. Trabouillet, CG3, in-12) est un document précieux pour l’histoire de la société polie. La clef qui le termine donne les noms de soixante-sept savantes dont il y est question sous des noms empruntés et sous une forme élogieuse. C’est un véritable supplément au Grand Dictionnaire de Somaize. Il est dédié à la comtesse de Fiesque, nommée l’illustre Axiamire dans le cours de l’ouvrage, et qui était une célébrité du monde précieux. Jean de la Forge se rattachait probablement lui-même à cette société : il y tenait du moins par ses goûts et par ses protecteurs, sinon par des relations directes, car il n’est même pas mentionné dans le Grand Dictionnaire de Somaize.</p>
@@ -97,18 +98,20 @@
         <p>3. Voir les deux pièces de Palaprat : À M. de la Chapelle, pour le prier de prévenir M. d’Argenson en ma faveur sur un jeu qui était chez moi. - Au comte de Maurepas, sur ce que Mgr de Pontchartrain m’avait fait ordonner... de faire cesser mon jeu (1698).</p>
         <p>4. Traduction française, 1727, t. I, p.200.</p>
       </div>
-      <castList>
-        <head>PERSONNAGES.</head>
-        <castItem><role age="A" id="CLIDAMANT" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="CLIDAMANT">CLIDAMANT</role>, amant de Cléonice.</castItem>
-        <castItem><role age="A" id="TURLUPIN" sex="1" stat_amour="néant" statut="valet" type="H" xml:id="TURLUPIN">TURLUPIN</role>, valet de Clidamant.</castItem>
-        <castItem><role age="A" id="LE MARQUIS" sex="1" stat_amour="néant" statut="marquis" type="H" xml:id="LEMARQUIS">LE MARQUIS</role>, joueur.</castItem>
-        <castItem><role age="A" id="URANIE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="URANIE">URANIE</role>, joueuse.</castItem>
-        <castItem><role age="A" id="CLÉONICE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="CLEONICE">CLÉONICE</role>, fille d’Uranie.</castItem>
-        <castItem><role age="A" id="LISETTE" sex="1" stat_amour="néant" statut="suivante" type="H" xml:id="LISETTE">LISETTE</role>, suivante.</castItem>
-        <castItem><role age="A" id="POLIXÈNE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="POLIXENE">POLIXÈNE</role>, précieuse.</castItem>
-        <castItem><role age="A" id="VALÈRE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="VALERE">VALÈRE</role>, père de Cléonice.</castItem>
-      </castList>
-      <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>PERSONNAGES.</head>
+          <castItem><role xml:id="CLIDAMANT" rend="male">CLIDAMANT</role>, amant de Cléonice.</castItem>
+          <castItem><role xml:id="TURLUPIN" rend="male">TURLUPIN</role>, valet de Clidamant.</castItem>
+          <castItem><role xml:id="LEMARQUIS" rend="male">LE MARQUIS</role>, joueur.</castItem>
+          <castItem><role xml:id="URANIE" rend="male">URANIE</role>, joueuse.</castItem>
+          <castItem><role xml:id="CLEONICE" rend="male">CLÉONICE</role>, fille d’Uranie.</castItem>
+          <castItem><role xml:id="LISETTE" rend="male">LISETTE</role>, suivante.</castItem>
+          <castItem><role xml:id="POLIXENE" rend="male">POLIXÈNE</role>, précieuse.</castItem>
+          <castItem><role xml:id="VALERE" rend="male">VALÈRE</role>, père de Cléonice.</castItem>
+        </castList>
+        <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

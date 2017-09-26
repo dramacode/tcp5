@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Médée</title>
         <title type="sub">, tragédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <publisher>Théâtre Classique</publisher>
@@ -45,37 +47,45 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">MÉDÉE</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1639">M. DC. XXXIX. AVEC PRIVILÈRE DU ROI.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
-      <docImprint> <privilege id="1639-02-11"> <head>Extrait du privilège du Roi.</head> <p>Par grâce et privilège du Roi, il est permis à François Targa, marchand libraire à Paris, d’imprimer ou faire imprimer, et exposer en vente, un livre intitulé Médée Tragédie par Mr CORNEILLE ; et défenses sont faite à tous imprimeurs libraires, et autres, d’imprimer, ni faire imprimer le dit livre sans sa permission, ou de ceux qui auront droit de lui, et cependant le temps de sept ans à compter du jour que ledit livre sera achevé d’imprimer pour la première fois, à peine aux contrevenants, de trois mille livres d’amende, confiscation des exemplaires qui se trouveront contrefaits, et de tous dépens, dommages et intérêts, ainsi qu’il est contenu plus au long aux dites lettres de privilège. Donné à Parsi le onzième février six cent trente neuf.</p> <p>Par le Roi en son conseil,</p> <p>Signé, CONRARD.</p> </privilege> <acheveImprime id="1639-03-16">Achevé d’imprimer ce 16 mars 1639. Les exemplaires ont été fournis ainsi qu’il est porté par le privilège.</acheveImprime> <printer id="TARGA">À PARIS, Chez François Targa, au premier pilier de la grand’Salle du Palais, devant la Chapelle, au Soleil d’Or.</printer> </docImprint>
-      <div type="dedicace">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">MÉDÉE</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1639">M. DC. XXXIX. AVEC PRIVILÈRE DU ROI.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
+        <docImprint>
+          <privilege id="1639-02-11"> <head>Extrait du privilège du Roi.</head> <p>Par grâce et privilège du Roi, il est permis à François Targa, marchand libraire à Paris, d’imprimer ou faire imprimer, et exposer en vente, un livre intitulé Médée Tragédie par Mr CORNEILLE ; et défenses sont faite à tous imprimeurs libraires, et autres, d’imprimer, ni faire imprimer le dit livre sans sa permission, ou de ceux qui auront droit de lui, et cependant le temps de sept ans à compter du jour que ledit livre sera achevé d’imprimer pour la première fois, à peine aux contrevenants, de trois mille livres d’amende, confiscation des exemplaires qui se trouveront contrefaits, et de tous dépens, dommages et intérêts, ainsi qu’il est contenu plus au long aux dites lettres de privilège. Donné à Parsi le onzième février six cent trente neuf.</p> <p>Par le Roi en son conseil,</p> <p>Signé, CONRARD.</p> </privilege>
+          <acheveImprime id="1639-03-16">Achevé d’imprimer ce 16 mars 1639. Les exemplaires ont été fournis ainsi qu’il est porté par le privilège.</acheveImprime>
+          <printer id="TARGA">À PARIS, Chez François Targa, au premier pilier de la grand’Salle du Palais, devant la Chapelle, au Soleil d’Or.</printer>
+        </docImprint>
+        <performance>
+        <premiere date="1635" location="Théâtre du Marais">Représenté pour la première fois en 1635 au Théâtre du Marais.</premiere>
+      </performance>
+      </titlePage>
+      <div type="dedication">
         <salute>À Monsieur P.T.N.G.</salute>
         <head>Monsieur,</head>
         <p>Je vous donne Médée toute méchante qu’elle est, et ne vous dirai rien pour sa justification. Je vous la donne pour telle que vous la voudrez prendre, sans tâcher à prévenir, ou violenter vos sentiments par un étalage des préceptes de l’art qui doivent être fort mal entendus, et fort mal pratiqués quand il ne nous sont pas arriver au but que l’art se propose. Celui de la poésie dramatique est de plaire, et les règles qu’elle nous prescrit ne sont que des adresses pour en faciliter les moyens au poète, et non pas des raisons qui puissent persuader aux spectateurs qu’une chose soit agréable, quand elle leur déplaît. Ici vous trouverez le crime en son char de triomphe, et peu de personnages sur la scène dont les moeurs ne soient plus mauvaises que bonnes ; mais la peinture et la poésie ont cela de commun entre beaucoup d’autres choses, que l’une fait souvent de beaux portraits d’une femme laide, et l’autre de belles imitations d’une action qu’il ne faut pas imiter. Dans la portraiture il n’est pas question si un visage est beau, mais s’il ressemble, et dans la poésie, il ne faut pas considérer si les moeurs sont vertueuses, mais si elles sont pareilles à celles de la personne qu’elle introduit. Aussi nous décrit-elle indifféremment les bonnes et les mauvaises actions sans nous proposer les dernières pour exemple, et si elle nous en veut faire quelque horreur, ce n’est point par leur punition qu’elle n’affecte pas de nous faire voir, mais par leur laideur qu’elle s’efforce de nous représenter au naturel. Il n’est pas besoin d’avertir ici la public que celles de cette tragédie ne sont pas à imiter, elle paraissent assez à découvert pour n’en faire envie à personne. je n’examine point si elles sont vraisemblables ou non, cette difficulté qui est la plus délicate de la poésie est peut être le moins entendue, demanderait un discours trop long pour une épitre : il me suffit qu’elles sont autorisés ou par la vérité de l’histoire, ou par l’opinion commune des anciens. Elles vous ont agréé autrefois sur le théâtre, j’espère qu’elle vous satisferont encore aucunement sur le papier, et demeure</p>
         <p>Monsieur,</p>
         <p>Votre très humble serviteur, CORNEILLE.</p>
       </div>
-      <performance>
-        <premiere date="1635" location="Théâtre du Marais">Représenté pour la première fois en 1635 au Théâtre du Marais.</premiere>
-      </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="CRÉON" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="CREON">CRÉON</role>, roi de Corinthe.</castItem>
-        <castItem><role age="A" civil="M" id="AEGÉE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="AEGEE">AEGÉE</role>, roi d’Athènes.</castItem>
-        <castItem><role age="A" civil="M" id="JASON" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="JASON">JASON</role>, mari de Médée.</castItem>
-        <castItem><role age="A" civil="M" id="POLLUX" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="POLLUX">POLLUX</role>, Argonaute, ami de Jason.</castItem>
-        <castItem><role age="A" civil="F" id="CRÉUSE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="CREUSE">CRÉUSE</role>, fille de Créon.</castItem>
-        <castItem><role age="A" civil="F" id="MÉDÉE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="MEDEE">MÉDÉE</role>, femme de Jason.</castItem>
-        <castItem><role age="A" civil="F" id="CLÉONE" rend="female" stat_amour="néant" statut="gouvernante" type="H" xml:id="CLEONE">CLÉONE</role>, gouvernante de Créuse.</castItem>
-        <castItem><role age="A" civil="F" id="NÉRINE" rend="female" stat_amour="néant" statut="suivante" type="H" xml:id="NERINE">NÉRINE</role>, suivante de Médée.</castItem>
-        <castItem><role age="A" civil="M" id="THEUDAS" rend="male" stat_amour="néant" statut="domestique" type="H" xml:id="THEUDAS">THEUDAS</role>, domestique de Créon.</castItem>
-        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="GARDES">TROUPES, des Gardes de Créon</role>.</castItem>
-      </castList>
-      <set country="Grèce" link="" location="Corinthe" periode="Temps mythologiques">La scène est à Corinthe.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="CREON" rend="male">CRÉON</role>, roi de Corinthe.</castItem>
+          <castItem><role xml:id="AEGEE" rend="male">AEGÉE</role>, roi d’Athènes.</castItem>
+          <castItem><role xml:id="JASON" rend="male">JASON</role>, mari de Médée.</castItem>
+          <castItem><role xml:id="POLLUX" rend="male">POLLUX</role>, Argonaute, ami de Jason.</castItem>
+          <castItem><role xml:id="CREUSE" rend="female">CRÉUSE</role>, fille de Créon.</castItem>
+          <castItem><role xml:id="MEDEE" rend="female">MÉDÉE</role>, femme de Jason.</castItem>
+          <castItem><role xml:id="CLEONE" rend="female">CLÉONE</role>, gouvernante de Créuse.</castItem>
+          <castItem><role xml:id="NERINE" rend="female">NÉRINE</role>, suivante de Médée.</castItem>
+          <castItem><role xml:id="THEUDAS" rend="male">THEUDAS</role>, domestique de Créon.</castItem>
+          <castItem><role xml:id="GARDES" rend="group">TROUPES, des Gardes de Créon</role>.</castItem>
+        </castList>
+        <set country="Grèce" link="" location="Corinthe" periode="Temps mythologiques">La scène est à Corinthe.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,40 +42,44 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LE PRINCE CORSAIRE.</titlePart>
-        <titlePart type="sub">TRAGI-COMÉDIE.</titlePart>
-      </docTitle>
-      <docDate value="1650">M DC L. AVEC PRIVILÈGE DU ROI. </docDate>
-      <docAuthor bio="scarron" id="SCARRON, Paul">par Monsieur SCARRON</docAuthor>
-      <docImprint>
-        <approbation value=""/>
-        <privilege value="1649-11-10">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LE PRINCE CORSAIRE.</titlePart>
+          <titlePart type="sub">TRAGI-COMÉDIE.</titlePart>
+        </docTitle>
+        <docDate value="1650">M DC L. AVEC PRIVILÈGE DU ROI. </docDate>
+        <docAuthor bio="scarron" id="SCARRON, Paul">par Monsieur SCARRON</docAuthor>
+        <docImprint>
+          <approbation value=""/>
+          <privilege value="1649-11-10">
           <head>EXTRAIT DU PRIVILÈGE DU ROI.</head>
           <p>Par grâce et Privilège du Roi donné à Paris le 10. jour de novembre 1649. Signé, Par le Roi en son Conseil, Le Brun. Il est permis à Toussaint Quinet Marchand Libraire à Paris, d’imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre intitulée, L’Héritier Ridicule, Comédie du Sieur Scarron, pendant le temps de cinq ans entiers et accomplis. Et défenses sont faites à tous Imprimeurs, Libraires et autres, de contrefaire ledit Livre, ni le vendre ou exposer en vente d’autre impression que de celle qu’il a fait faire, à peine de trois mil livres d’amende, et de tous dépens dommages et intérêts, ainsi qu’il est plus amplement porté pas lesdites Lettres, qui sont en vertu du présent Extrait tenues pour bien et dûment signifiées, à ce qu’aucun n’en prétende cause d’ignorance.</p>
         </privilege>
-        <acheveImprime value=""/>
-        <printer id="">À PARIS, Suivant la copie imprimée.</printer>
-      </docImprint>
-      <performance>
+          <acheveImprime value=""/>
+          <printer id="">À PARIS, Suivant la copie imprimée.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1658" location="(inconnue)">Représenté pour la première fois le 1 août 1659 au théâtre du Petit Bourbon.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS.</head>
-        <castItem><role age="A" civil="M" id="OROSMANE" rend="male" stat_amour="Élise" statut="prince" type="H" xml:id="OROSMANE">OROSMANE</role>, Prince Corsaire, amant de la Princesse Élise, et enfin reconnu, sous le nom d’Alcandre, pour fils de Nicanor.</castItem>
-        <castItem><role age="A" civil="F" id="ÉLISE" rend="female" stat_amour="Orosmane" statut="prince" type="H" xml:id="ELISE">ÉLISE</role>, Princesse de Chypre, Maîtresse d’Orosmane.</castItem>
-        <castItem><role age="A" civil="F" id="ALCIONNE" rend="female" stat_amour="Amintas" statut="prince" type="H" xml:id="ALCIONNE">ALCIONNE</role>, autre Princesse de Chypre, Soeur d’Élise, maîtresse d’Amintas.</castItem>
-        <castItem><role age="A" civil="M" id="AMINTAS" rend="male" stat_amour="Alcionne" statut="prince" type="H" xml:id="AMINTAS">AMINTAS</role>, fils de Nicanor, frère d’Orosmane, amant de la Princesse Alcionne. </castItem>
-        <castItem><role age="A" civil="M" id="NICANOR" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="NICANOR">NICANOR</role>, père d’Orosmane, et d’Amintas, et Oncle des Princesses.</castItem>
-        <castItem><role age="A" civil="M" id="SÉBASTE" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="SEBASTE">SÉBASTE</role>, Confident d’Orosmane.</castItem>
-        <castItem><role age="A" civil="M" id="ARGANTE" rend="male" stat_amour="néant" statut="lieutenant" type="H" xml:id="ARGANTE">ARGANTE</role>, lieutenant du même Orosmane.</castItem>
-        <castItem><role age="A" civil="F" id="CLARICE" rend="female" stat_amour="néant" statut="confident" type="H" xml:id="CLARICE">CLARICE</role>, confidente des Princesses.</castItem>
-        <castItem><role age="A" civil="M" id="CRITON" rend="male" stat_amour="néant" statut="confident" type="H" xml:id="CRITON">CRITON</role>, confident d’Amintas.</castItem>
-        <castItem><role age="A" civil="M" id="LICAS" rend="male" stat_amour="néant" statut="capitaine" type="H" xml:id="LICAS">LICAS</role>, capitaine des Gardes de Nicanor.</castItem>
-        <castItem><role age="A" civil="G" id="GARDES" rend="group" stat_amour="néant" statut="garde" type="H" xml:id="GARDES">GARDES de Nicanor</role>.</castItem>
-        <castItem><role age="A" civil="G" id="CORSAIRES" rend="group" stat_amour="néant" statut="corsaire" type="H" xml:id="CORSAIRES">CORSAIRES de la flotte d’Orosmane</role>.</castItem>
-      </castList>
-      <set country="Chypre" link="" location="Paphos" periode="XVIIème">La Scène est à Paphos, Ville de l’Île de Chypre, dans le Palais.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS.</head>
+          <castItem><role xml:id="OROSMANE" rend="male">OROSMANE</role>, Prince Corsaire, amant de la Princesse Élise, et enfin reconnu, sous le nom d’Alcandre, pour fils de Nicanor.</castItem>
+          <castItem><role xml:id="ELISE" rend="female">ÉLISE</role>, Princesse de Chypre, Maîtresse d’Orosmane.</castItem>
+          <castItem><role xml:id="ALCIONNE" rend="female">ALCIONNE</role>, autre Princesse de Chypre, Soeur d’Élise, maîtresse d’Amintas.</castItem>
+          <castItem><role xml:id="AMINTAS" rend="male">AMINTAS</role>, fils de Nicanor, frère d’Orosmane, amant de la Princesse Alcionne. </castItem>
+          <castItem><role xml:id="NICANOR" rend="male">NICANOR</role>, père d’Orosmane, et d’Amintas, et Oncle des Princesses.</castItem>
+          <castItem><role xml:id="SEBASTE" rend="male">SÉBASTE</role>, Confident d’Orosmane.</castItem>
+          <castItem><role xml:id="ARGANTE" rend="male">ARGANTE</role>, lieutenant du même Orosmane.</castItem>
+          <castItem><role xml:id="CLARICE" rend="female">CLARICE</role>, confidente des Princesses.</castItem>
+          <castItem><role xml:id="CRITON" rend="male">CRITON</role>, confident d’Amintas.</castItem>
+          <castItem><role xml:id="LICAS" rend="male">LICAS</role>, capitaine des Gardes de Nicanor.</castItem>
+          <castItem><role xml:id="GARDES" rend="group">GARDES de Nicanor</role>.</castItem>
+          <castItem><role xml:id="CORSAIRES" rend="group">CORSAIRES de la flotte d’Orosmane</role>.</castItem>
+        </castList>
+        <set country="Chypre" link="" location="Paphos" periode="XVIIème">La Scène est à Paphos, Ville de l’Île de Chypre, dans le Palais.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

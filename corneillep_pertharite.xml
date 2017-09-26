@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Pertharite</title>
         <title type="sub"> roi des Lombards, tragédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1653</date>
       </titleStmt>
       <publicationStmt>
@@ -47,28 +49,36 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">PERTHARITE</titlePart>
-        <titlePart type="sub">ROI DES LOMBARDS</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1653">M. DC. LIII. AVEC PRIVILEGE DU ROI.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id="164*-**-**"> <head>Extrait du Privilège du Roi</head> <p>Par Grace et privilège du Roi, donné à Paris le 24 décembre 1651,. Signé par le Roi en son conseil, MARTIN, ils est permis au sieur CORNEILLE avocat en notre cour de parlement de Rouen, de faire imprimer qu’il voudra choisir trois pièces de théâtre, intitulées, Pertharite roi des Lombards, Don Bertran de Cigarral, L’Amour à la mode, pendant le temps et espace de neuf ans, à compter du jour qu’elles seront achevées d’imprimer ; défendant, très expressément à toutes personnes de quelque qualité et condition qu’elles puissent être, d’imprimer ou contrefaire les dites trois pièces de théâtre, à peine aux contrevenants de deux mille livres d’amende, dépens, dommages et intérêts, et confiscation des exemplaires qui se trouveront d’autre impression que ce qu’il aura fait faire, ainsi qu’il est plus long porté par lesdites lettres.</p> <p>Et le dit Sieur Corneille a cédé et transporté le privilège ci-dessus, à Guillaume de Lyunes marchand libraire à Paris, suivant l’accord fait entre eux.</p> </privilege> <acheveImprime id="1653-04-16">Achevé d’imprimer le 30 avril 1653.</acheveImprime> <printer id="MAURRY">À ROUEN, chez Laurent MAURRY, près le Palais. Et se vend à Paris Chez GUILLAUME DE LUYES, au Palais, sous la montée de la Cour des Aides.</printer> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">PERTHARITE</titlePart>
+          <titlePart type="sub">ROI DES LOMBARDS</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1653">M. DC. LIII. AVEC PRIVILEGE DU ROI.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id="164*-**-**"> <head>Extrait du Privilège du Roi</head> <p>Par Grace et privilège du Roi, donné à Paris le 24 décembre 1651,. Signé par le Roi en son conseil, MARTIN, ils est permis au sieur CORNEILLE avocat en notre cour de parlement de Rouen, de faire imprimer qu’il voudra choisir trois pièces de théâtre, intitulées, Pertharite roi des Lombards, Don Bertran de Cigarral, L’Amour à la mode, pendant le temps et espace de neuf ans, à compter du jour qu’elles seront achevées d’imprimer ; défendant, très expressément à toutes personnes de quelque qualité et condition qu’elles puissent être, d’imprimer ou contrefaire les dites trois pièces de théâtre, à peine aux contrevenants de deux mille livres d’amende, dépens, dommages et intérêts, et confiscation des exemplaires qui se trouveront d’autre impression que ce qu’il aura fait faire, ainsi qu’il est plus long porté par lesdites lettres.</p> <p>Et le dit Sieur Corneille a cédé et transporté le privilège ci-dessus, à Guillaume de Lyunes marchand libraire à Paris, suivant l’accord fait entre eux.</p> </privilege>
+          <acheveImprime id="1653-04-16">Achevé d’imprimer le 30 avril 1653.</acheveImprime>
+          <printer id="MAURRY">À ROUEN, chez Laurent MAURRY, près le Palais. Et se vend à Paris Chez GUILLAUME DE LUYES, au Palais, sous la montée de la Cour des Aides.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1651" location="Hôtel de Bourgogne">Représenté pour la première fois en 1651 au Théâtre de l’Hôtel de Bourgogne.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="PERTHARITE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="PERTHARITE">PERTHARITE</role>, roi des Lombards.</castItem>
-        <castItem><role age="A" civil="M" id="GRIMOALD" rend="male" stat_amour="néant" statut="comte" type="H" xml:id="GRIMOALD">GRIMOALD</role>, Comte de Bénévent, ayant conquis le royaume des Lombards.</castItem>
-        <castItem><role age="A" civil="M" id="GARIBALDE" rend="male" stat_amour="néant" statut="duc" type="H" xml:id="GARIBALDE">GARIBALDE</role>, duc de Turin.</castItem>
-        <castItem><role age="A" civil="M" id="UNULPHE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="UNULPHE">UNULPHE</role>, seigneur Lombard.</castItem>
-        <castItem><role age="A" civil="F" id="RODELINDE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="RODELINDE">RODELINDE</role>, femme de Pertharite.</castItem>
-        <castItem><role age="A" civil="F" id="EDVIGE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="EDWIGE">ÉDVIGE</role>, soeur de Pertharite.</castItem>
-        <castItem><role age="A" civil="G" id="SOLDATS" rend="group" stat_amour="néant" statut="soldat" type="H" xml:id="SOLDAT">Soldats</role>.</castItem>
-      </castList>
-      <set country="Italie" link="" location="Milan" periode="VIIème">La scène est à Milan.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="PERTHARITE" rend="male">PERTHARITE</role>, roi des Lombards.</castItem>
+          <castItem><role xml:id="GRIMOALD" rend="male">GRIMOALD</role>, Comte de Bénévent, ayant conquis le royaume des Lombards.</castItem>
+          <castItem><role xml:id="GARIBALDE" rend="male">GARIBALDE</role>, duc de Turin.</castItem>
+          <castItem><role xml:id="UNULPHE" rend="male">UNULPHE</role>, seigneur Lombard.</castItem>
+          <castItem><role xml:id="RODELINDE" rend="female">RODELINDE</role>, femme de Pertharite.</castItem>
+          <castItem><role xml:id="EDWIGE" rend="female">ÉDVIGE</role>, soeur de Pertharite.</castItem>
+          <castItem><role xml:id="SOLDAT" rend="group">Soldats</role>.</castItem>
+        </castList>
+        <set country="Italie" link="" location="Milan" periode="VIIème">La scène est à Milan.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

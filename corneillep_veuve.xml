@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>La Veuve</title>
         <title type="sub"> ou le traître trahi, comédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1631</date>
       </titleStmt>
       <publicationStmt>
@@ -46,14 +48,23 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LA VEUVE OU LE TRAÎTRE TRAHI</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1634">M. DC. XXXIV. Avec Privilège du Roi.</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
-      <docImprint> <privilege id="1634-03-09"> <head>Extrait du Privilège du Roi.</head> <p>Par grâce et Privilège du Roi, il est permis à François Targa, Marchand Libraire à Paris d’imprimer u faire imprimer un livre intitulé, La Veuve, ou le Traître trahi, faisant défenses à tous libraires, imprimeurs et autres de quelque qualité que ce soient, d’imprimer ou faire imprimer ledit livre, le vendre, faire vendre, débiter ni distribuer par notre dit Royaume, durant la temps de six ans, sur peine aux contrevenants de cinq cent livres d’amende, de confiscation des exemplaires, et tous dépens dommages et intérêts, comme il est contenu es lettres, données à Paris le 9 mars, mille six cent trente quatre.</p> <p>FARDOIL.</p> </privilege> <acheveImprime id="1634-03-13">Achevé d’imprimer le treizième jour de Mars mille six cent trente quatre.</acheveImprime> <printer id="TARGA">À PARIS, Chez FRANÇOIS TARGA, au premier pilier de la grand-salle du Palais devant la Chapelle, au Soleil d’Or.</printer> </docImprint>
-      <div type="dedicace">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LA VEUVE OU LE TRAÎTRE TRAHI</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1634">M. DC. XXXIV. Avec Privilège du Roi.</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre"/>
+        <docImprint>
+          <privilege id="1634-03-09"> <head>Extrait du Privilège du Roi.</head> <p>Par grâce et Privilège du Roi, il est permis à François Targa, Marchand Libraire à Paris d’imprimer u faire imprimer un livre intitulé, La Veuve, ou le Traître trahi, faisant défenses à tous libraires, imprimeurs et autres de quelque qualité que ce soient, d’imprimer ou faire imprimer ledit livre, le vendre, faire vendre, débiter ni distribuer par notre dit Royaume, durant la temps de six ans, sur peine aux contrevenants de cinq cent livres d’amende, de confiscation des exemplaires, et tous dépens dommages et intérêts, comme il est contenu es lettres, données à Paris le 9 mars, mille six cent trente quatre.</p> <p>FARDOIL.</p> </privilege>
+          <acheveImprime id="1634-03-13">Achevé d’imprimer le treizième jour de Mars mille six cent trente quatre.</acheveImprime>
+          <printer id="TARGA">À PARIS, Chez FRANÇOIS TARGA, au premier pilier de la grand-salle du Palais devant la Chapelle, au Soleil d’Or.</printer>
+        </docImprint>
+        <performance>
+        <premiere date="1634" location="Tripot de la Sphère">Représenté pour la première fois en 1634 au Tripot de la Sphère.</premiere>
+      </performance>
+      </titlePage>
+      <div type="dedication">
         <salute>À MADAME DE LA MAISON-FORT.</salute>
         <head>Madame, </head>
         <p>Le bon accueil qu’autrefois cette Veuve a reçu de vous l’oblige à vous remercier, et l’enhardit à vous demander la faveur de votre protection. Étant exposée aux coups de l’envie et de la médisance, elle n’en peut trouver de plus assurée que celle d’une personne sur qui ces deux monstres n’ont jamais de prise. Elle espère que vous ne la méconnaîtrez pas pour être dépouillée de tous autres ornements que les siens, et que vous la traiterez aussi bien qu’alors que la grâce de la représentation la mettait en son jour. Pourvu qu’elle vous puisse divertir encore une heure, elle trop contente, et se bannira sans regret du théâtre pour avoir une place dans votre cabinet. Elle honteuse de vous ressembler si peu, et a de grands sujets d’appréhender qu’on ne l’accuse de peu de jugement de se présenter devant vous, dont les perfections la feront paraître d’autant plus imparfaite ; mais quand elle considère qu’elles en sont en un si haut point, qu’on n’en peut avoir de légères teintures sans des privilèges tout particuliers du ciel, elle se rassure entièrement, et n’ose plus craindre qu’il se rencontre des esprits assez injustes pour lui imputer à défaut le manque des choses qui sont au dessus des forces de la nature : en effet, MADAME, quelque difficulté que vous fassiez de croire aux miracles, il faut que vous en reconnaissiez en vous même, ou que vous ne vous connaissiez pas, puisqu’il est tout vrai que des vertus et des qualités si peu commune que les vôtres ne sauraient avoir d’autre nom. Ce n’est pas mon dessein d’en faire ici les éloges ; outre qu’il serait superflu de particulariser ce que tout le monde sait, la bassesse de mon discours profanerait des choses si relevées. Ma plume est trop faible pour entreprendre de voler si haut ; c’est assez pour elle de vous rendre mes devoirs, et de vous protester, avec plus de vérité que d’éloquence, que je serai toute ma vie, </p>
@@ -516,25 +527,24 @@
         <l>Chacun sans t’offenser peut se rendre ton maître,</l>
         <l>Comme depuis un an chacun l’est de ta soeur.</l>
       </div>
-      <performance>
-        <premiere date="1634" location="Tripot de la Sphère">Représenté pour la première fois en 1634 au Tripot de la Sphère.</premiere>
-      </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" civil="M" id="PHILISTE" rend="male" stat_amour="Clarice" statut="aristocrate" type="H" xml:id="PHILISTE">PHILISTE</role>, amant de Clarice.</castItem>
-        <castItem><role age="A" civil="M" id="ALCIDON" rend="male" stat_amour="Doris" statut="aristocrate" type="H" xml:id="ALCIDON">ALCIDON</role>, ami de Philiste et amant de Doris.</castItem>
-        <castItem><role age="A" civil="M" id="CELIDAN" rend="male" stat_amour="Doris" statut="aristocrate" type="H" xml:id="CELIDAN">CÉLIDAN</role>, ami d’Alcidon et amoureux de Doris.</castItem>
-        <castItem><role age="A" civil="F" id="CLARICE" rend="female" stat_amour="Philiste" statut="aristocrate" type="H" xml:id="CLARICE">CLARICE</role>, veuve d’Alcandre et maîtresse de Philiste.</castItem>
-        <castItem><role age="A" civil="F" id="CHRYSANTE" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="CHRYSANTE">CHRYSANTE</role>, mère de Doris.</castItem>
-        <castItem><role age="A" civil="F" id="DORIS" rend="female" stat_amour="néant" statut="aristocrate" type="H" xml:id="DORIS">DORIS</role>, soeur de Philiste.</castItem>
-        <castItem><role age="A" civil="F" id="NOURRICE" rend="female" stat_amour="néant" statut="nourrice" type="H" xml:id="NOURRICE">LA NOURRICE de Clarice</role>.</castItem>
-        <castItem><role age="A" civil="M" id="GERON" rend="male" stat_amour="Doris" statut="bourgeois" type="H" xml:id="GERON">GÉRON</role>, agent de Florange, amoureux de Doris.</castItem>
-        <castItem><role age="A" civil="M" id="LYCAS" rend="male" stat_amour="néant" statut="dosmestique" type="H" xml:id="LYCAS">LYCAS</role>, domestique de Philiste.</castItem>
-        <castItem><role age="A" civil="M" id="POLYMAS" rend="male" stat_amour="néant" statut="dosmestique" type="H" xml:id="POLYMAS">POLYMAS</role>, domestique de Clarice.</castItem>
-        <castItem><role age="A" civil="M" id="DORASTE" rend="male" stat_amour="néant" statut="dosmestique" type="H" xml:id="DORASTE">DORASTE</role>, domestique de Clarice.</castItem>
-        <castItem><role age="A" civil="M" id="LISTOR" rend="male" stat_amour="néant" statut="dosmestique" type="H" xml:id="LISTOR">LISTOR</role>, domestique de Clarice.</castItem>
-      </castList>
-      <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris.</set>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="PHILISTE" rend="male">PHILISTE</role>, amant de Clarice.</castItem>
+          <castItem><role xml:id="ALCIDON" rend="male">ALCIDON</role>, ami de Philiste et amant de Doris.</castItem>
+          <castItem><role xml:id="CELIDAN" rend="male">CÉLIDAN</role>, ami d’Alcidon et amoureux de Doris.</castItem>
+          <castItem><role xml:id="CLARICE" rend="female">CLARICE</role>, veuve d’Alcandre et maîtresse de Philiste.</castItem>
+          <castItem><role xml:id="CHRYSANTE" rend="female">CHRYSANTE</role>, mère de Doris.</castItem>
+          <castItem><role xml:id="DORIS" rend="female">DORIS</role>, soeur de Philiste.</castItem>
+          <castItem><role xml:id="NOURRICE" rend="female">LA NOURRICE de Clarice</role>.</castItem>
+          <castItem><role xml:id="GERON" rend="male">GÉRON</role>, agent de Florange, amoureux de Doris.</castItem>
+          <castItem><role xml:id="LYCAS" rend="male">LYCAS</role>, domestique de Philiste.</castItem>
+          <castItem><role xml:id="POLYMAS" rend="male">POLYMAS</role>, domestique de Clarice.</castItem>
+          <castItem><role xml:id="DORASTE" rend="male">DORASTE</role>, domestique de Clarice.</castItem>
+          <castItem><role xml:id="LISTOR" rend="male">LISTOR</role>, domestique de Clarice.</castItem>
+        </castList>
+        <set country="France" link="" location="Paris" periode="XVIIème">La scène est à Paris.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">
@@ -3097,7 +3107,7 @@
           </sp>
           <sp who="CELIDAN" xml:id="IV03-2">
             <speaker>CÉLIDAN.</speaker>
-            <l  n="1299" part="I" xml:id="l1299">Modère cette ardeur, tout beau.</l>
+            <l n="1299" part="I" xml:id="l1299">Modère cette ardeur, tout beau.</l>
           </sp>
           <sp who="ALCIDON" xml:id="IV03-3">
             <speaker>ALCIDON.</speaker>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -43,36 +42,40 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">SOPHONISBE</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1635">M. DCC. XXXV. Avec privilège du Roi.</docDate>
-      <docAuthor bio="mairet" id="MAIRET, Jean">Jean Mairet</docAuthor>
-      <docImprint>
-        <privilege id="164*-**-**"/>
-        <acheveImprime id="164*-**-**"/>
-        <printer id="">À PARIS, Chez Pierre ROCOLET, au Palais en la galire des Prisonniers, aux Armes de la Ville.</printer>
-      </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">SOPHONISBE</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1635">M. DCC. XXXV. Avec privilège du Roi.</docDate>
+        <docAuthor bio="mairet" id="MAIRET, Jean">Jean Mairet</docAuthor>
+        <docImprint>
+          <privilege id="164*-**-**"/>
+          <acheveImprime id="164*-**-**"/>
+          <printer id="">À PARIS, Chez Pierre ROCOLET, au Palais en la galire des Prisonniers, aux Armes de la Ville.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1629" location="(inconnue)">Représenté pour la première fois en en 1629.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" id="SYPHAX" sex="1" stat_amour="néant" statut="roi" type="H" xml:id="SYPHAX">SYPHAX</role>, roi de Numidie.</castItem>
-        <castItem><role age="A" id="PHILON" sex="1" stat_amour="néant" statut="général" type="H" xml:id="PHILON">PHILON</role>, général de Syphax.</castItem>
-        <castItem><role age="A" id="MASSINISSE" sex="1" stat_amour="amoureux" statut="aristocrate" type="H" xml:id="MASSINISSE">MASSINISSE</role>, ennemi de Syphax.</castItem>
-        <castItem><role age="A" id="SCIPION" sex="1" stat_amour="néant" statut="consul" type="H" xml:id="SCIPION">SCIPION</role>, consul romain.</castItem>
-        <castItem><role age="A" id="LÉLIE" sex="1" stat_amour="néant" statut="lieutenant" type="H" xml:id="LELIE">LÉLIE</role>, lieutenant de Scipion.</castItem>
-        <castItem><role age="A" id="CALIODORE" sex="1" stat_amour="néant" statut="domestique" type="H" xml:id="CALIODORE">CALIODORE</role>, domestique de Sophonisbe.</castItem>
-        <castItem><role age="A" id="ARISTON" sex="1" stat_amour="néant" statut="soldat" type="H" xml:id="ARISTON">ARISTON</role>, soldat romain.</castItem>
-        <castItem><role age="A" id="SOPHONISBE" sex="1" stat_amour="amoureux" statut="roi" type="H" xml:id="SOPHONISBE">SOPHONISBE</role>, femme de Syphax, et amoureuse de Massinisse.</castItem>
-        <castItem><role age="A" id="CORISBÉ" sex="1" stat_amour="néant" statut="confident" type="H" xml:id="CORISBE">CORISBÉ</role>, confidente de Sophonisbe.</castItem>
-        <castItem><role age="A" id="PHÉNICE" sex="1" stat_amour="néant" statut="confident" type="H" xml:id="PHENICE">PHÉNICE</role>, confidente de Sophonisbe.</castItem>
-        <castItem><role age="A" id="PHILIPPE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="PHILIPPE">PHILIPPE</role>.</castItem>
-        <castItem><role age="A" id="SOLDATS" sex="1" stat_amour="néant" statut="soldat" type="H" xml:id="SOLDATS">SOLDATS</role>.</castItem>
-      </castList>
-      <set country="Algérie" link="" location="Cirta" periode="IIIème avant JC">Le Scène est dans Cyrte, ville de Numidie.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="SYPHAX" rend="male">SYPHAX</role>, roi de Numidie.</castItem>
+          <castItem><role xml:id="PHILON" rend="male">PHILON</role>, général de Syphax.</castItem>
+          <castItem><role xml:id="MASSINISSE" rend="male">MASSINISSE</role>, ennemi de Syphax.</castItem>
+          <castItem><role xml:id="SCIPION" rend="male">SCIPION</role>, consul romain.</castItem>
+          <castItem><role xml:id="LELIE" rend="male">LÉLIE</role>, lieutenant de Scipion.</castItem>
+          <castItem><role xml:id="CALIODORE" rend="male">CALIODORE</role>, domestique de Sophonisbe.</castItem>
+          <castItem><role xml:id="ARISTON" rend="male">ARISTON</role>, soldat romain.</castItem>
+          <castItem><role xml:id="SOPHONISBE" rend="male">SOPHONISBE</role>, femme de Syphax, et amoureuse de Massinisse.</castItem>
+          <castItem><role xml:id="CORISBE" rend="male">CORISBÉ</role>, confidente de Sophonisbe.</castItem>
+          <castItem><role xml:id="PHENICE" rend="male">PHÉNICE</role>, confidente de Sophonisbe.</castItem>
+          <castItem><role xml:id="PHILIPPE" rend="male">PHILIPPE</role>.</castItem>
+          <castItem><role xml:id="SOLDATS" rend="male">SOLDATS</role>.</castItem>
+        </castList>
+        <set country="Algérie" link="" location="Cirta" periode="IIIème avant JC">Le Scène est dans Cyrte, ville de Numidie.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

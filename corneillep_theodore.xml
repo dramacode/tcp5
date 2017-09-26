@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Théodore</title>
         <title type="sub">, vierge et martyre, tragédie chrétienne</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
         <date>1645</date>
       </titleStmt>
       <publicationStmt>
@@ -47,30 +49,38 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">THÉODORE</titlePart>
-        <titlePart type="main">VIERGE et MARTYRE</titlePart>
-        <titlePart type="sub">TRAGÉDIE CHRÉTIENNE</titlePart>
-      </docTitle>
-      <docDate value="1646">1646</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id="164*-**-**"/> <acheveImprime id="164*-**-**"/> <printer id=""/> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">THÉODORE</titlePart>
+          <titlePart type="main">VIERGE et MARTYRE</titlePart>
+          <titlePart type="sub">TRAGÉDIE CHRÉTIENNE</titlePart>
+        </docTitle>
+        <docDate value="1646">1646</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id="164*-**-**"/>
+          <acheveImprime id="164*-**-**"/>
+          <printer id=""/>
+        </docImprint>
+        <performance>
         <premiere date="1645" location="Théâtre du Marais">Représenté pour la première fois en 1645 au Théâtre du Marais.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role id="VALENS" xml:id="VALENS">VALENS</role>, gouverneur d’Antioche.</castItem>
-        <castItem><role id="PLACIDE" xml:id="PLACIDE">PLACIDE</role>, fils de Valens et amoureux de Théodore.</castItem>
-        <castItem><role id="CLEOBULE" xml:id="CLEOBULE">CLÉOBULE</role>, ami de Placide.</castItem>
-        <castItem><role id="DIDYME" xml:id="DIDYME">DIDYME</role>, amoureux de Théodore.</castItem>
-        <castItem><role id="PAULIN" xml:id="PAULIN">PAULIN</role>, confident de Valens.</castItem>
-        <castItem><role id="LYCANTE" xml:id="LYCANTE">LYCANTE</role>, capitaine d’une cohorte romaine.</castItem>
-        <castItem><role id="MARCELLE" xml:id="MARCELLE">MARCELLE</role>, femme de Valens.</castItem>
-        <castItem><role id="THEODORE" xml:id="THEODORE">THÉODORE</role>, princesse d’Antioche.</castItem>
-        <castItem><role id="STEPHANIE" xml:id="STEPHANIE">STÉPHANIE</role>, confidente de Marcelle.</castItem>
-      </castList>
-      <set country="Turquie" link="" location="Antioche" periode="IVème">La scène est à Antioche, dans le palais du Gouverneur.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="VALENS" rend="">VALENS</role>, gouverneur d’Antioche.</castItem>
+          <castItem><role xml:id="PLACIDE" rend="">PLACIDE</role>, fils de Valens et amoureux de Théodore.</castItem>
+          <castItem><role xml:id="CLEOBULE" rend="">CLÉOBULE</role>, ami de Placide.</castItem>
+          <castItem><role xml:id="DIDYME" rend="">DIDYME</role>, amoureux de Théodore.</castItem>
+          <castItem><role xml:id="PAULIN" rend="">PAULIN</role>, confident de Valens.</castItem>
+          <castItem><role xml:id="LYCANTE" rend="">LYCANTE</role>, capitaine d’une cohorte romaine.</castItem>
+          <castItem><role xml:id="MARCELLE" rend="">MARCELLE</role>, femme de Valens.</castItem>
+          <castItem><role xml:id="THEODORE" rend="">THÉODORE</role>, princesse d’Antioche.</castItem>
+          <castItem><role xml:id="STEPHANIE" rend="">STÉPHANIE</role>, confidente de Marcelle.</castItem>
+        </castList>
+        <set country="Turquie" link="" location="Antioche" periode="IVème">La scène est à Antioche, dans le palais du Gouverneur.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

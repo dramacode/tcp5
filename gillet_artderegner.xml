@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -44,29 +43,31 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">L’ART DE RÉGNER</titlePart>
-        <titlePart type="sub">OU LE SAGE GOUVERNEUR</titlePart>
-        <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1645">M.DC.XXXXV. Avec Privilège du Roi.</docDate>
-      <docAuthor bio="gillet" id="GILLET DE LA TESSONNERIE"/>
-      <docImprint>
-        <approbation id="">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">L’ART DE RÉGNER</titlePart>
+          <titlePart type="sub">OU LE SAGE GOUVERNEUR</titlePart>
+          <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1645">M.DC.XXXXV. Avec Privilège du Roi.</docDate>
+        <docAuthor bio="gillet" id="GILLET DE LA TESSONNERIE"/>
+        <docImprint>
+          <approbation id="">
           <head/>
           <p>.</p>
         </approbation>
-        <privilege id="">
+          <privilege id="">
           <head>Extrait du Privilège du roi</head>
           <p>Par grâce et privilège du Roi donné à Paris, le 25 jour d’avril 1645. Signé par le roi en son conseil LE BRUN, il est permis à Toussaint Quinet, Marchand Libraire à Paris d’imprimer ou faire imprimer vendre et distribuer une pièce de théâtre intitulée L’Art de Régner, ou le Sage Gouverneur, Tragi-Comédie, durent le temps et l’espace de cinq ans, à compter du jour que la dite pièce sera achevé d’imprimer, défenses sont faites à tous imprimeurs, libraires et autres de contrefaire ladite pièce, n’y en vendre, ou exposer en vente à peine de trois mille livres d’amende, de tous dépens dommages et intérêts, ainsi qu’il est plus amplement porté par lesdites lettres, qui sont en vertu du présent extrait, tenue pour vue et dûment signifiée, à ce qu’aucun n’en prétende cause d’ignorance.</p>
         </privilege>
-        <acheveImprime id="1645-05-28">Achevé d’imprimer pour la première fois le 28 mai 1645. LEs exemplaires ont été fournis.</acheveImprime>
-        <printer id="QUINET">À PARIS, Chez TOUSSAINT QUINET, au Palais sous la montée de la Cour des Aides.</printer>
-      </docImprint>
-      <performance>
+          <acheveImprime id="1645-05-28">Achevé d’imprimer pour la première fois le 28 mai 1645. LEs exemplaires ont été fournis.</acheveImprime>
+          <printer id="QUINET">À PARIS, Chez TOUSSAINT QUINET, au Palais sous la montée de la Cour des Aides.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1656" location="Théâtre du Marais">Représenté pour la première fois en 1656 au Théâtre du Marais.</premiere>
       </performance>
-      <div type="dedicace">
+      </titlePage>
+      <div type="dedication">
         <salute>À MONSEIGNEUR LE MARÉCHAL DE BASOMPIÈRE.</salute>
         <head>MONSEIGNEUR,</head>
         <p>Après avoir fait cet ouvrage pour le Roi toute la France m’a sollicité de le remettre entre vos mains, et l’envie de la satisfaire jointe à la complaisance que nous devons avoir pour notre gloire, m’a fait prendre ses sentiments pour une loi. Aussi puisque son dessein regarde une personne sacrée il ne fallait pas lui représenter par un ministère moins Auguste. Ce sujet héroïque voulait un protecteur illustre comme vous, et c’est un tableau qui n’ayant pas les grâces du coloris et du dessein, demandait un homme généralement approuvé pour faire valoir l’idée du Peintre.</p>
@@ -101,55 +102,57 @@
         <p>Pour toi Lecteur excuse les fautes de l’Impression que je n’ai pu corriger pendant que je donnais toutes mes veilles à l’ouvrage que tu verras de moi cet hiver. C’est dans ce Poème que j’ai concerté depuis deux ans que tu remarqueras des Élévations plus nobles, des Conceptions plus achevées et des expressions plus nettes et plus hardies. Je l’ai entrepris pour payer une partie des obligations dont ma maison est redevable à une Illustre personne qui n’a pas l’esprit moins charmant que les yeux, et j’ai pris tous les soins imaginables pour faire que ce présent s’accordât avec la perfection de celle à qui je le donne, et que l’offrande se ressentit en quelque façon du mérite de son Autel.</p>
         <p>* Pour ne donner aucune idée de la République dans un ouvrage qui se déclare pour l’état Monarchique, la nature du Poème et la Majesté de la Scène dépouillent Fabie de la qualité de Consul pour lui donner le titre de Souverain.</p>
       </div>
-      <castList>
-        <head>PERSONNAGES. ACTE PREMIER</head>
-        <castItem><role age="V" civil="M" id="LE SAGE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="LEGOUVERNEUR">LE SAGE</role>, Il paraît à tous les actes. </castItem>
-        <castItem><role age="V" civil="M" id="LE PRINCE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="LEPRINCE">LE PRINCE</role>, Il paraît à tous les actes. </castItem>
-        <castItem><role age="V" civil="M" id="PHILIPPE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="PHILIPPE">PHILIPPE</role>, Roi de Macédoine. </castItem>
-        <castItem><role age="V" civil="M" id="ALEXANDRE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="ALEXANDRE">ALEXANDRE</role>, Fils de Philippe. </castItem>
-        <castItem><role age="V" civil="M" id="ATALLE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="ATALLE">ATALLE</role>, favori de Philippe. </castItem>
-        <castItem><role age="V" civil="M" id="MINERVE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="MINERVE">MINERVE</role>, Dame Macédonienne. </castItem>
-        <castItem><role age="V" civil="M" id="MÉGARE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="MEGARE">MÉGARE</role>, Confidente de Minerve. </castItem>
-      </castList>
-      <castList>
-        <head>PERSONNAGES. ACTE SECOND</head>
-        <castItem><role age="V" civil="M" id="FABIE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="FABIE">FABIE</role>, Commandant l’Armée des Romains.</castItem>
-        <castItem><role age="V" civil="M" id="CAMILLE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="CAMILLE">CAMILLE</role>, Capitaine Romain. </castItem>
-        <castItem><role age="V" civil="M" id="ARBAS" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="ARBAS">ARBAS</role>, Confident de CAMILLE.</castItem>
-        <castItem><role age="V" civil="M" id="MIRANDE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="MIRANDE">MIRANDE</role>, Soldat Romain. </castItem>
-        <castItem><role age="V" civil="M" id="LUCIPE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="LUCIPE">LUCIPE</role>, Amante de CAMILLE. </castItem>
-      </castList>
-      <castList>
-        <head>PERSONNAGES. ACTE TROISIÈME</head>
-        <castItem><role age="V" civil="M" id="CÉSAR" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="CESAR">CÉSAR</role>, Empereur de Rome. </castItem>
-        <castItem><role age="V" civil="M" id="PTOLOMÉE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="PTOLOMEE">PTOLOMÉE</role>, Roi d’Égypte. </castItem>
-        <castItem><role age="V" civil="M" id="CLÉOPÂTRE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="CLEOPATRE">CLÉOPÂTRE</role>, Soeur de Ptolomée. </castItem>
-        <castItem><role age="V" civil="M" id="ACHILLE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="ACHILLE">ACHILLE</role>, de la Cour de Ptolomée. </castItem>
-        <castItem><role age="V" civil="M" id="SEPTIME" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="SEPTIME">SEPTIME</role>, de la Cour de Ptolomée. </castItem>
-        <castItem><role age="V" civil="M" id="DEUX PRINCES" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="DEUXPRINCES">DEUX PRINCES</role>, qui s’offrent à César. </castItem>
-      </castList>
-      <castList>
-        <head>PERSONNAGES. ACTE QUATRIÈME</head>
-        <castItem><role age="V" civil="M" id="ALEXANDRE" rend="male veteran" stat_amour="néant" statut="" type="H">ALEXANDRE</role>.</castItem>
-        <castItem><role age="V" civil="M" id="STATIRA" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="STATIRA">STATIRA</role>, Fille de Darie. </castItem>
-        <castItem><role age="V" civil="M" id="BÉRÉNICE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="BERENICE">BÉRÉNICE</role>, Soeur de Statira. </castItem>
-        <castItem><role age="V" civil="M" id="OROONDATE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="OROONDATE">OROONDATE</role>, Prince Persan, Amant de Statira.</castItem>
-        <castItem><role age="V" civil="M" id="CLITE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="CLITE">CLITE</role>, De la Cour d’Alexandre. </castItem>
-        <castItem><role age="V" civil="M" id="AMINTAS" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="AMINTAS">AMINTAS</role>, De la Cour d’Alexandre. </castItem>
-        <castItem><role age="V" civil="M" id="HARMIN" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="HARMIN">HARMIN</role>, Gentilhomme de Perse. </castItem>
-      </castList>
-      <castList>
-        <head>PERSONNAGES. ACTE CINQUIÈME</head>
-        <castItem><role age="V" civil="M" id="PERSÉE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="PERSEE">PERSÉE</role>, Roi de Macédoine. </castItem>
-        <castItem><role age="V" civil="M" id="ALCMÈNE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="ALCMENE">ALCMÈNE</role>, Femme de Persée. </castItem>
-        <castItem><role age="V" civil="M" id="EUCTÉE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="EUCTEE">EUCTÉE</role>, Conseiller de Persée. </castItem>
-        <castItem><role age="V" civil="M" id="LE CANDIOT" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="LECANDIOT">LE CANDIOT</role>, Muet. </castItem>
-        <castItem><role age="V" civil="M" id="EUDÉE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="EUDEE">EUDÉE</role>, Conseiller de Persée. </castItem>
-        <castItem><role age="V" civil="M" id="PAUL ÉMILE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="PAULEMILE">PAUL ÉMILE</role>, Général des Armées des Romains.</castItem>
-        <castItem><role age="V" civil="M" id="TIBERE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="TIBERE">TIBERE</role>, Romain. </castItem>
-        <castItem><role age="V" civil="M" id="UN ÉDILE" rend="male veteran" stat_amour="néant" statut="" type="H" xml:id="UNEDILE">UN ÉDILE</role>. </castItem>
-      </castList>
-      <set country="Grèce" link="" location="Athènes" periode="Temps mythologiques">La Scène est dans un Palais d’Athènes. </set>
+      <div xml:id="castList">
+        <castList>
+          <head>PERSONNAGES. ACTE PREMIER</head>
+          <castItem><role xml:id="LEGOUVERNEUR" rend="male veteran">LE SAGE</role>, Il paraît à tous les actes. </castItem>
+          <castItem><role xml:id="LEPRINCE" rend="male veteran">LE PRINCE</role>, Il paraît à tous les actes. </castItem>
+          <castItem><role xml:id="PHILIPPE" rend="male veteran">PHILIPPE</role>, Roi de Macédoine. </castItem>
+          <castItem><role xml:id="ALEXANDRE" rend="male veteran">ALEXANDRE</role>, Fils de Philippe. </castItem>
+          <castItem><role xml:id="ATALLE" rend="male veteran">ATALLE</role>, favori de Philippe. </castItem>
+          <castItem><role xml:id="MINERVE" rend="male veteran">MINERVE</role>, Dame Macédonienne. </castItem>
+          <castItem><role xml:id="MEGARE" rend="male veteran">MÉGARE</role>, Confidente de Minerve. </castItem>
+        </castList>
+        <castList>
+          <head>PERSONNAGES. ACTE SECOND</head>
+          <castItem><role xml:id="FABIE" rend="male veteran">FABIE</role>, Commandant l’Armée des Romains.</castItem>
+          <castItem><role xml:id="CAMILLE" rend="male veteran">CAMILLE</role>, Capitaine Romain. </castItem>
+          <castItem><role xml:id="ARBAS" rend="male veteran">ARBAS</role>, Confident de CAMILLE.</castItem>
+          <castItem><role xml:id="MIRANDE" rend="male veteran">MIRANDE</role>, Soldat Romain. </castItem>
+          <castItem><role xml:id="LUCIPE" rend="male veteran">LUCIPE</role>, Amante de CAMILLE. </castItem>
+        </castList>
+        <castList>
+          <head>PERSONNAGES. ACTE TROISIÈME</head>
+          <castItem><role xml:id="CESAR" rend="male veteran">CÉSAR</role>, Empereur de Rome. </castItem>
+          <castItem><role xml:id="PTOLOMEE" rend="male veteran">PTOLOMÉE</role>, Roi d’Égypte. </castItem>
+          <castItem><role xml:id="CLEOPATRE" rend="male veteran">CLÉOPÂTRE</role>, Soeur de Ptolomée. </castItem>
+          <castItem><role xml:id="ACHILLE" rend="male veteran">ACHILLE</role>, de la Cour de Ptolomée. </castItem>
+          <castItem><role xml:id="SEPTIME" rend="male veteran">SEPTIME</role>, de la Cour de Ptolomée. </castItem>
+          <castItem><role xml:id="DEUXPRINCES" rend="male veteran">DEUX PRINCES</role>, qui s’offrent à César. </castItem>
+        </castList>
+        <castList>
+          <head>PERSONNAGES. ACTE QUATRIÈME</head>
+          <castItem><role rend="male veteran">ALEXANDRE</role>.</castItem>
+          <castItem><role xml:id="STATIRA" rend="male veteran">STATIRA</role>, Fille de Darie. </castItem>
+          <castItem><role xml:id="BERENICE" rend="male veteran">BÉRÉNICE</role>, Soeur de Statira. </castItem>
+          <castItem><role xml:id="OROONDATE" rend="male veteran">OROONDATE</role>, Prince Persan, Amant de Statira.</castItem>
+          <castItem><role xml:id="CLITE" rend="male veteran">CLITE</role>, De la Cour d’Alexandre. </castItem>
+          <castItem><role xml:id="AMINTAS" rend="male veteran">AMINTAS</role>, De la Cour d’Alexandre. </castItem>
+          <castItem><role xml:id="HARMIN" rend="male veteran">HARMIN</role>, Gentilhomme de Perse. </castItem>
+        </castList>
+        <castList>
+          <head>PERSONNAGES. ACTE CINQUIÈME</head>
+          <castItem><role xml:id="PERSEE" rend="male veteran">PERSÉE</role>, Roi de Macédoine. </castItem>
+          <castItem><role xml:id="ALCMENE" rend="male veteran">ALCMÈNE</role>, Femme de Persée. </castItem>
+          <castItem><role xml:id="EUCTEE" rend="male veteran">EUCTÉE</role>, Conseiller de Persée. </castItem>
+          <castItem><role xml:id="LECANDIOT" rend="male veteran">LE CANDIOT</role>, Muet. </castItem>
+          <castItem><role xml:id="EUDEE" rend="male veteran">EUDÉE</role>, Conseiller de Persée. </castItem>
+          <castItem><role xml:id="PAULEMILE" rend="male veteran">PAUL ÉMILE</role>, Général des Armées des Romains.</castItem>
+          <castItem><role xml:id="TIBERE" rend="male veteran">TIBERE</role>, Romain. </castItem>
+          <castItem><role xml:id="UNEDILE" rend="male veteran">UN ÉDILE</role>. </castItem>
+        </castList>
+        <set country="Grèce" link="" location="Athènes" periode="Temps mythologiques">La Scène est dans un Palais d’Athènes. </set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -49,38 +48,42 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LA BRADAMANTE</titlePart>
-        <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1637">M. DC. XXXVII AVEC PRIVILÈGE DU ROI. </docDate>
-      <docAuthor bio="lacalprenede" id="LA CALPRENEDE, Gautier Costes de">Par de la CALPRENÈDE.</docAuthor>
-      <docImprint>
-        <privilege id="1637-02-07">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LA BRADAMANTE</titlePart>
+          <titlePart type="sub">TRAGI-COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1637">M. DC. XXXVII AVEC PRIVILÈGE DU ROI. </docDate>
+        <docAuthor bio="lacalprenede" id="LA CALPRENEDE, Gautier Costes de">Par de la CALPRENÈDE.</docAuthor>
+        <docImprint>
+          <privilege id="1637-02-07">
           <head>Extrait du Privilège du Roi.</head>
           <p>Par grâce et Privilège du Roi, donné à Paris le 7. Février 1637. Signé, Par le Roi en son Conseil, de Monssaux, il est permis à Antoine de Sommaville, Marchand Libraire à Paris, d’imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitulée, La Bradamante, Tragi-comédie, durant le temps et espace de neuf ans, à compter du jour qu’elle sera achevée d’imprimer. Et défenses sont faites à tous Imprimeurs, Libraires, et autres, de contrefaire ladite pièce, n’y en vendre ou exposer en vente de contrefaite, à peine de trois mil livres d’amende, de tous ses dépens, dommages et intérêts, ainsi qu’il est plus amplement porté par lesdites Lettres, qui sont, en vertu du présent Extrait, tenues pour bien et dûment signifiées, à ce qu’aucun n’en prétende cause d’ignorance. </p>
         </privilege>
-        <acheveImprime id="1637-02-20">Achevé d’imprimer pour la première fois, le 20. février 1637.</acheveImprime>
-        <printer id="SOMMAVILLE">À PARIS, Chez ANTOINE DE SOMMAVILLE, au Palais, dans la petite salle, à l’Écu de France. </printer>
-      </docImprint>
-      <performance>
+          <acheveImprime id="1637-02-20">Achevé d’imprimer pour la première fois, le 20. février 1637.</acheveImprime>
+          <printer id="SOMMAVILLE">À PARIS, Chez ANTOINE DE SOMMAVILLE, au Palais, dans la petite salle, à l’Écu de France. </printer>
+        </docImprint>
+        <performance>
         <premiere date="1636" location="(inconnue)">Représenté pour la première fois à Paris en 1636.</premiere>
       </performance>
-      <castList>
-        <head>LES ACTEURS</head>
-        <castItem><role id="CHARLES" sex="1" xml:id="CHARLES">CHARLES</role>, Roi de France.</castItem>
-        <castItem><role id="LÉON" sex="1" xml:id="LEON">LÉON</role>, Prince de Grèce.</castItem>
-        <castItem><role id="ROGER" sex="1" xml:id="ROGER">ROGER</role>, Serviteur de Bradamante.</castItem>
-        <castItem><role id="AYMON" sex="1" xml:id="AYMON">AYMON</role>, Père de Bradamante.</castItem>
-        <castItem><role id="RENAUD" sex="1" xml:id="RENAUD">RENAUD</role>, Frère de Bradamante.</castItem>
-        <castItem><role id="BRADAMANTE" sex="2" xml:id="BRADAMANTE">BRADAMANTE</role>.</castItem>
-        <castItem><role id="HIPALQUE" sex="2" xml:id="HIPALQUE">HIPALQUE</role>, Suivante de Bradamante.</castItem>
-        <castItem><role id="MARPHISE" sex="2" xml:id="MARPHISE">MARPHISE</role>, Soeur de Roger.</castItem>
-        <castItem><role id="NAYMES" sex="1" xml:id="NAYMES">NAYMES</role>, Seigneur Français.</castItem>
-        <castItem><role id="ZÉNON" sex="1" xml:id="ZENON">ZÉNON</role>, Ami de Léon.</castItem>
-        <castItem><role id="AMBASSADEURS" sex="9" xml:id="AMBASSADEURS">AMBASSADEURS</role> de Bulgarie. </castItem>
-      </castList>
-      <set country="France" link="" location="France" periode="IXème"/>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>LES ACTEURS</head>
+          <castItem><role xml:id="CHARLES" rend="male">CHARLES</role>, Roi de France.</castItem>
+          <castItem><role xml:id="LEON" rend="male">LÉON</role>, Prince de Grèce.</castItem>
+          <castItem><role xml:id="ROGER" rend="male">ROGER</role>, Serviteur de Bradamante.</castItem>
+          <castItem><role xml:id="AYMON" rend="male">AYMON</role>, Père de Bradamante.</castItem>
+          <castItem><role xml:id="RENAUD" rend="male">RENAUD</role>, Frère de Bradamante.</castItem>
+          <castItem><role xml:id="BRADAMANTE" rend="female">BRADAMANTE</role>.</castItem>
+          <castItem><role xml:id="HIPALQUE" rend="female">HIPALQUE</role>, Suivante de Bradamante.</castItem>
+          <castItem><role xml:id="MARPHISE" rend="female">MARPHISE</role>, Soeur de Roger.</castItem>
+          <castItem><role xml:id="NAYMES" rend="male">NAYMES</role>, Seigneur Français.</castItem>
+          <castItem><role xml:id="ZENON" rend="male">ZÉNON</role>, Ami de Léon.</castItem>
+          <castItem><role xml:id="AMBASSADEURS" rend="">AMBASSADEURS</role> de Bulgarie. </castItem>
+        </castList>
+        <set country="France" link="" location="France" periode="IXème"/>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

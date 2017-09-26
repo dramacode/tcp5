@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,55 +41,59 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">AMADIS</titlePart>
-        <titlePart type="sub">TRAGÉDIE en musique.</titlePart>
-      </docTitle>
-      <docDate value="1684">M. DCC. LIV. AVEC APPROBATION ET PRIVILÈGE DU ROI.</docDate>
-      <docAuthor bio="quinault" id="QUINAULT, Philippe"/>
-      <docImprint>
-        <privilege id="1759-10-20">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">AMADIS</titlePart>
+          <titlePart type="sub">TRAGÉDIE en musique.</titlePart>
+        </docTitle>
+        <docDate value="1684">M. DCC. LIV. AVEC APPROBATION ET PRIVILÈGE DU ROI.</docDate>
+        <docAuthor bio="quinault" id="QUINAULT, Philippe"/>
+        <docImprint>
+          <privilege id="1759-10-20">
           <head>APPROBATION</head>
           <p>J’ai lu, par ordre de Monseigneur le Chancelier, la Tragédie d’AMADIS, nouevlle réimpression dque le public ne peut voir qu’avec plaisir. À Versailles, le 20 octobre 1759.</p>
           <p>DE MONCRIF</p>
         </privilege>
-        <acheveImprime id="16**-**-**"/>
-        <printer id="DELORMEL">À Paris, chez V. DELORMEL et FILS, Imprimeur de ladite Académis, rue du Foin, à l’Image Sainte-Geneviève. On trouvera des livres de Paroles à la Salle de l’Opéra.</printer>
-      </docImprint>
-      <performance>
+          <acheveImprime id="16**-**-**"/>
+          <printer id="DELORMEL">À Paris, chez V. DELORMEL et FILS, Imprimeur de ladite Académis, rue du Foin, à l’Image Sainte-Geneviève. On trouvera des livres de Paroles à la Salle de l’Opéra.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1684-01-15" location="Théâtre du Palais-Royal">Représenté pour la première fois 15 janvier 1684 devant S. M., au Théâtre du Palais-Royal.</premiere>
       </performance>
-      <castList>
-        <head>ACTEURS DU PROLOGUE</head>
-        <castItem><role age="A" id="" sex="2" stat_amour="néant" statut="magicien" type="H">URGANDE</role>, célèbre enchanteresse, épouse d’Alquif.</castItem>
-        <castItem><role age="A" id="" sex="1" stat_amour="néant" statut="magicien" type="H" xml:id="ALQUIF">ALQUIF</role>, célèbre enchanteur, époux d’Urgande.</castItem>
-        <castItem><role age="A" id="" sex="2" stat_amour="néant" statut="suivant" type="H">Suivantes d’Urgande</role>.</castItem>
-        <castItem><role age="A" id="" n="suivants d’Alquif" sex="1" stat_amour="néant" statut="suivant" type="H" xml:id="ALQUIFSUITE">Suivants d’Alquif</role>.</castItem>
-      </castList>
-      <castList>
-        <head>ACTEURS DE LA TRAGÉDIE</head>
-        <castItem><role age="J" id="AMADIS" n="Amadis" rend="junior male" sex="2" stat_amour="néant" statut="prince" type="H" xml:id="AMADIS">AMADIS</role>, fils du roi Périon de Gaule.</castItem>
-        <castItem><role age="J" id="ORIANE" n="Oriane" rend="junior female" sex="2" stat_amour="néant" statut="prince" type="H" xml:id="ORIANE">ORIANE</role>, fille de Lisvart, roi de la Grande Bretagne.</castItem>
-        <castItem><role age="J" id="FLORESTAN" n="Florestan" rend="junior male" sex="1" stat_amour="néant" statut="prince" type="H" xml:id="FLORESTAN">FLORESTAN</role>, fils naturel du roi Périon de Gaule.</castItem>
-        <castItem><role age="A" id="CORISANDE" n="Corisande" rend="female" sex="2" stat_amour="néant" statut="roi" type="H" xml:id="CORISANDE">CORISANDE</role>, souveraine de Gravesande.</castItem>
-        <castItem><role age="A" id="TROUPES DE CHEVALIERS" n="Chevaliers" sex="9" stat_amour="néant" statut="chevalier" type="H" xml:id="CHEVALIERS">TROUPES DE CHEVALIERS</role> combattants dans des jeux à l’honneur d’Oriane.</castItem>
-        <castItem><role age="A" id="ARCALAÜS" n="Arcalaüs" rend="male" sex="1" stat_amour="néant" statut="chevalier" type="H" xml:id="ARCALAUS">ARCALAÜS</role>, chevalier enchanteur, frère d’Arcabonne et d’Ardan Canile.</castItem>
-        <castItem><role age="A" id="ARCABONNE" n="Arcabonne" rend="female" sex="2" stat_amour="néant" statut="magicien" type="H" xml:id="ARCABONNE">ARCABONNE</role>, enchanteresse, soeur d’Arcalaüs et d’Ardan Canile.</castItem>
-        <castItem><role age="A" id="TROUPE DE SUIVANTS D'ARCALAÜS" n="suite d’Arcalaüs" sex="9" stat_amour="néant" statut="soldat" type="H" xml:id="ARCALAUSSUITE">Troupes de suivants et de soldats d’Arcalaüs</role>.</castItem>
-        <castItem><role age="A" id="TROUPE DE DEMONS" n="Démons" sex="9" stat_amour="néant" statut="démon" type="H" xml:id="DEMONS">Troupes de démons sous la figure de monstres terribles, de nymphes agréables, de bergers et bergères</role>.</castItem>
-        <castItem><role age="A" id="TROUPE DE CAPTIFS" n="captifs" sex="9" stat_amour="néant" statut="captif" type="H" xml:id="CAPTIFS">Troupe de captifs</role>.</castItem>
-        <castItem><role age="A" id="TROUPE DE CAPTIVES" n="captives" sex="9" stat_amour="néant" statut="captifs" type="H" xml:id="CAPTIVES">Troupe de captives</role>.</castItem>
-        <castItem><role age="A" id="TROPE DE GEÔLIERS" n="geoliers" sex="9" stat_amour="néant" statut="geôlier" type="H" xml:id="GEOLIERS">Troupe de geôliers</role>.</castItem>
-        <castItem><role age="A" id="DEMONS VOLANTS" sex="9" stat_amour="néant" statut="démon" type="H">Démons volants qui conduisent Arcabonne</role>.</castItem>
-        <castItem><role age="A" id="L'OMBRE D'ARDAN CANILE" n="l’ombre d’Ardan Canile" rend="male" sex="1" stat_amour="néant" statut="ombre" type="F" xml:id="ARDANCANILE">L’OMBRE D’ARDAN CANILE</role>.</castItem>
-        <castItem><role age="A" id="URGANDE" n="Urgande" rend="female" sex="2" stat_amour="néant" statut="enchanteur" type="H" xml:id="URGANDE">URGANDE</role>, célèbre enchanteresse, amie d’Amadis.</castItem>
-        <castItem><role age="A" id="TROUPE DE SUIVANTS D'URGANDE" n="suite d’Urgande" sex="9" stat_amour="néant" statut="suivant" type="H" xml:id="URGANDESUITE">Troupe de suivantes d’Urgande</role>.</castItem>
-        <castItem><role age="A" id="TROUPE DE DEMONS INFERNAUX" sex="9" stat_amour="néant" statut="démon" type="H">Troupe de démons infernaux</role>.</castItem>
-        <castItem><role age="A" id="TROUPE DE DEMONS DE L'AIR" sex="9" stat_amour="néant" statut="démon" type="H">Troupe de démons de l’air</role>.</castItem>
-        <castItem><role age="A" id="TROUPE DE HEROS ET D'HEROÏNES" n="Héros et héroïnes" sex="9" stat_amour="néant" statut="héros" type="H" xml:id="HEROS">Troupe de héros et d’héroïnes, enchantés dans la chambre défendue du palais d’Appolidon</role>.</castItem>
-      </castList>
-      <set country="Pays mythologique" link="" location="Palais de Cérès" periode="Temps mythologiques">Le théâtre représente la Palais de Cérès.</set>
-      <note>Musique de Jean-Baptiste Lully.</note>
+        <note>Musique de Jean-Baptiste Lully.</note>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS DU PROLOGUE</head>
+          <castItem><role rend="female">URGANDE</role>, célèbre enchanteresse, épouse d’Alquif.</castItem>
+          <castItem><role xml:id="ALQUIF" rend="male">ALQUIF</role>, célèbre enchanteur, époux d’Urgande.</castItem>
+          <castItem><role rend="female">Suivantes d’Urgande</role>.</castItem>
+          <castItem><role xml:id="ALQUIFSUITE" rend="male">Suivants d’Alquif</role>.</castItem>
+        </castList>
+        <castList>
+          <head>ACTEURS DE LA TRAGÉDIE</head>
+          <castItem><role xml:id="AMADIS" rend="junior male">AMADIS</role>, fils du roi Périon de Gaule.</castItem>
+          <castItem><role xml:id="ORIANE" rend="junior female">ORIANE</role>, fille de Lisvart, roi de la Grande Bretagne.</castItem>
+          <castItem><role xml:id="FLORESTAN" rend="junior male">FLORESTAN</role>, fils naturel du roi Périon de Gaule.</castItem>
+          <castItem><role xml:id="CORISANDE" rend="female">CORISANDE</role>, souveraine de Gravesande.</castItem>
+          <castItem><role xml:id="CHEVALIERS" rend="">TROUPES DE CHEVALIERS</role> combattants dans des jeux à l’honneur d’Oriane.</castItem>
+          <castItem><role xml:id="ARCALAUS" rend="male">ARCALAÜS</role>, chevalier enchanteur, frère d’Arcabonne et d’Ardan Canile.</castItem>
+          <castItem><role xml:id="ARCABONNE" rend="female">ARCABONNE</role>, enchanteresse, soeur d’Arcalaüs et d’Ardan Canile.</castItem>
+          <castItem><role xml:id="ARCALAUSSUITE" rend="">Troupes de suivants et de soldats d’Arcalaüs</role>.</castItem>
+          <castItem><role xml:id="DEMONS" rend="">Troupes de démons sous la figure de monstres terribles, de nymphes agréables, de bergers et bergères</role>.</castItem>
+          <castItem><role xml:id="CAPTIFS" rend="">Troupe de captifs</role>.</castItem>
+          <castItem><role xml:id="CAPTIVES" rend="">Troupe de captives</role>.</castItem>
+          <castItem><role xml:id="GEOLIERS" rend="">Troupe de geôliers</role>.</castItem>
+          <castItem><role rend="">Démons volants qui conduisent Arcabonne</role>.</castItem>
+          <castItem><role xml:id="ARDANCANILE" rend="male">L’OMBRE D’ARDAN CANILE</role>.</castItem>
+          <castItem><role xml:id="URGANDE" rend="female">URGANDE</role>, célèbre enchanteresse, amie d’Amadis.</castItem>
+          <castItem><role xml:id="URGANDESUITE" rend="">Troupe de suivantes d’Urgande</role>.</castItem>
+          <castItem><role rend="">Troupe de démons infernaux</role>.</castItem>
+          <castItem><role rend="">Troupe de démons de l’air</role>.</castItem>
+          <castItem><role xml:id="HEROS" rend="">Troupe de héros et d’héroïnes, enchantés dans la chambre défendue du palais d’Appolidon</role>.</castItem>
+        </castList>
+        <set country="Pays mythologique" link="" location="Palais de Cérès" periode="Temps mythologiques">Le théâtre représente la Palais de Cérès.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="prologue" xml:id="I">

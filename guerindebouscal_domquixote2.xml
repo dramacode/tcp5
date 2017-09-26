@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -50,47 +48,51 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">DON QUICHOTTE DE LA MANCHE [suite]</titlePart>
-        <titlePart type="sub">SECONDE PARTIE</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1640">M. DC. XL. AVEC PRIVILÈGE DU ROY.</docDate>
-      <docAuthor bio="guérin" id="GUERIN de BOUSCAL, Daniel">de Mr GUÉRIN.</docAuthor>
-      <docImprint>
-        <privilege id="1639-05-28">
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">DON QUICHOTTE DE LA MANCHE [suite]</titlePart>
+          <titlePart type="sub">SECONDE PARTIE</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1640">M. DC. XL. AVEC PRIVILÈGE DU ROY.</docDate>
+        <docAuthor bio="guérin" id="GUERIN de BOUSCAL, Daniel">de Mr GUÉRIN.</docAuthor>
+        <docImprint>
+          <privilege id="1639-05-28">
           <head>Extrait du Privilège du Roi.</head>
           <p>Par grâce et Privilège du Roi, donné à Paris le 28. jour de Mai 1639. Signé par le Roi en son Conseil, DE MONCEAUX : Il est permis à TOUSSAINCT QUINET, Marchand Libraire à Paris, d’imprimer ou faire imprimer, vendre et distribuer une pièce de Théâtre, intitulée Don Quichotte de la Manche, durant le temps et espace de trois ans, à compter du jour qu’elle sera achevée d’imprimer. Et défenses sont faites à tous Imprimeurs, Libraires et autres, de contrefaire ladite pièce, ni en vendre ou exposer en vente de contrefaite, à peine aux contrevenants de trois mil livres d’amende, et de tous ses dépens, dommages et intérêts, ainsi qu’il est plus au long porté par lesdites lettres, qui sont en vertu du présent Extrait tenues pour bien et dûment signifiées ; à ce qu’aucun n’en prétende cause d’ignorance.</p>
           <p>Et ledit Quinet a associé au Privilège ci-dessus daté, Antoine de Sommaville aussi Marchand Libraire à Paris, suivant l’accord fait entr’eux.</p>
         </privilege>
-        <acheveImprime id="1640-07-15">Achevé d’imprimer pour la première fois, le 15. Juillet mil six cent quarante. Les Exemplaires ont été fournis.</acheveImprime>
-        <printer id="SOMMAVILLE">À PARIS, Chez ANTOINE DE SOMMAVILLE, au Palais, dans la Galerie des Merciers, à l’Ecu de France.</printer>
-      </docImprint>
-      <performance>
+          <acheveImprime id="1640-07-15">Achevé d’imprimer pour la première fois, le 15. Juillet mil six cent quarante. Les Exemplaires ont été fournis.</acheveImprime>
+          <printer id="SOMMAVILLE">À PARIS, Chez ANTOINE DE SOMMAVILLE, au Palais, dans la Galerie des Merciers, à l’Ecu de France.</printer>
+        </docImprint>
+        <performance>
         <premiere date="1645" location="(inconnue)"/>
       </performance>
-      <castList>
-        <head>ACTEURS.</head>
-        <castItem><role age="A" id="DON QUICHOTTE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="DONQUICHOTTE">DON QUICHOTTE</role>.</castItem>
-        <castItem><role age="A" id="SANCHE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="SANCHE">SANCHE</role>.</castItem>
-        <castItem><role age="A" id="LA NIÈCE" sex="2" stat_amour="néant" statut="aristocrate" type="H" xml:id="LANIECE">LA NIÈCE</role> de Don Quichotte.</castItem>
-        <castItem><role age="A" id="THÉRÈSE" sex="2" stat_amour="néant" statut="bourgeois" type="H" xml:id="THERESE">THÉRÈSE</role>, femme de Sanche.</castItem>
-        <castItem><role age="A" id="DON LOPE" sex="1" stat_amour="néant" statut="aristocrate" type="H" xml:id="DONLOPE">DON LOPE</role>, ami de Don Quichotte, et déguisé en chevalier.</castItem>
-        <castItem><role age="A" id="LE BARBIER" sex="1" stat_amour="néant" statut="barbier" type="H" xml:id="LEBARBIER">LE BARBIER</role>.</castItem>
-        <castItem><role age="A" id="LE DUC" sex="1" stat_amour="néant" statut="duc" type="H" xml:id="LEDUC">LE DUC</role> et sa suite.</castItem>
-        <castItem><role age="A" id="LA DUCHESSE" sex="2" stat_amour="néant" statut="duc" type="H" xml:id="LADUCHESSE">LA DUCHESSE</role>.</castItem>
-        <castItem><role age="A" id="L'AUMONIER" sex="1" stat_amour="néant" statut="aumonier" type="H" xml:id="LAUMONIER">L’AUMONIER</role> du Duc.</castItem>
-        <castItem><role age="A" id="RODRIGUE" sex="1" stat_amour="néant" statut="dame d'honneur" type="H" xml:id="RODRIGUE">RODRIGUE</role>, Dame d’honneur de la Duchesse.</castItem>
-        <castItem><role age="A" id="DEUX HÉRAUTS" sex="9" stat_amour="néant" statut="héraut" type="H" xml:id="HERAULT1">DEUX HÉRAUTS</role><role xml:id="HERAULT2"/> du Sophy.</castItem>
-        <castItem><role age="A" id="DEUX INFANTES" sex="9" stat_amour="néant" statut="infante" type="H" xml:id="INFANTE1">DEUX INFANTES</role> de Perse.<role xml:id="INFANTE2"/></castItem>
-        <castItem><role age="A" id="UN DÉMON" sex="1" stat_amour="néant" statut="démon" type="D" xml:id="LEDIABLE">UN DÉMON</role>.</castItem>
-        <castItem><role age="A" id="LIRGANDÉE" sex="1" stat_amour="néant" statut="enchanteur" type="H" xml:id="LIRGANDEE">LIRGANDÉE</role>, enchanteur.</castItem>
-        <castItem><role age="A" id="ALQUIF" sex="1" stat_amour="néant" statut="enchanteur" type="H" xml:id="ALQUIF">ALQUIF</role>, enchanteur.</castItem>
-        <castItem><role age="A" id="ARCHELAUS" sex="1" stat_amour="néant" statut="enchanteur" type="H" xml:id="ARCHELAUS">ARCHELAUS</role>, enchanteur.</castItem>
-        <castItem><role age="A" id="MERLIN" sex="1" stat_amour="néant" statut="enchanteur" type="H" xml:id="MERLIN">MERLIN</role>, enchanteur.</castItem>
-        <castItem><role age="A" id="DULCINÉE" sex="2" stat_amour="néant" statut="suivante" type="H" xml:id="DULCINEE">DULCINÉE</role>.</castItem>
-      </castList>
-      <set country="Espagne" link="" location="La Manche" periode="XVIème">La scène est à La Manche.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS.</head>
+          <castItem><role xml:id="DONQUICHOTTE" rend="male">DON QUICHOTTE</role>.</castItem>
+          <castItem><role xml:id="SANCHE" rend="male">SANCHE</role>.</castItem>
+          <castItem><role xml:id="LANIECE" rend="female">LA NIÈCE</role> de Don Quichotte.</castItem>
+          <castItem><role xml:id="THERESE" rend="female">THÉRÈSE</role>, femme de Sanche.</castItem>
+          <castItem><role xml:id="DONLOPE" rend="male">DON LOPE</role>, ami de Don Quichotte, et déguisé en chevalier.</castItem>
+          <castItem><role xml:id="LEBARBIER" rend="male">LE BARBIER</role>.</castItem>
+          <castItem><role xml:id="LEDUC" rend="male">LE DUC</role> et sa suite.</castItem>
+          <castItem><role xml:id="LADUCHESSE" rend="female">LA DUCHESSE</role>.</castItem>
+          <castItem><role xml:id="LAUMONIER" rend="male">L’AUMONIER</role> du Duc.</castItem>
+          <castItem><role xml:id="RODRIGUE" rend="male">RODRIGUE</role>, Dame d’honneur de la Duchesse.</castItem>
+          <castItem><role xml:id="HERAULT1" rend="">DEUX HÉRAUTS</role><role xml:id="HERAULT2" rend=""/> du Sophy.</castItem>
+          <castItem><role xml:id="INFANTE1" rend="">DEUX INFANTES</role> de Perse.<role xml:id="INFANTE2" rend=""/></castItem>
+          <castItem><role xml:id="LEDIABLE" rend="male">UN DÉMON</role>.</castItem>
+          <castItem><role xml:id="LIRGANDEE" rend="male">LIRGANDÉE</role>, enchanteur.</castItem>
+          <castItem><role xml:id="ALQUIF" rend="male">ALQUIF</role>, enchanteur.</castItem>
+          <castItem><role xml:id="ARCHELAUS" rend="male">ARCHELAUS</role>, enchanteur.</castItem>
+          <castItem><role xml:id="MERLIN" rend="male">MERLIN</role>, enchanteur.</castItem>
+          <castItem><role xml:id="DULCINEE" rend="female">DULCINÉE</role>.</castItem>
+        </castList>
+        <set country="Espagne" link="" location="La Manche" periode="XVIème">La scène est à La Manche.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

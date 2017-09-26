@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>La Conquête de la Toison d’or</title>
         <title type="sub">, tragédie</title>
-        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)"><surname>Corneille, Pierre</surname><forename> Pierre</forename></author>
+        <author academie="1647" born="1606" born_location="Rouen" death="1684" death_location="Paris" key="Corneille, Pierre (1606-1684)">
+          <surname>Corneille, Pierre</surname>
+          <forename> Pierre</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <publisher>Théâtre Classique</publisher>
@@ -46,47 +48,55 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LA CONQUÊTE DE LA TOISON D’OR</titlePart>
-        <titlePart type="sub">TRAGÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1661">1661</docDate>
-      <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
-      <docImprint> <privilege id=""/> <acheveImprime id=""/> <printer id=""/> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LA CONQUÊTE DE LA TOISON D’OR</titlePart>
+          <titlePart type="sub">TRAGÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1661">1661</docDate>
+        <docAuthor bio="corneillep" id="CORNEILLE, Pierre">Pierre Corneille</docAuthor>
+        <docImprint>
+          <privilege id=""/>
+          <acheveImprime id=""/>
+          <printer id=""/>
+        </docImprint>
+        <performance>
         <premiere date="1661-02-19" location="Théâtre du Marais">Représenté pour la première fois le 19 février 1661 au Théâtre du Marais.</premiere>
       </performance>
-      <castList>
-        <head>Acteurs </head>
-        <castItem><role age="A" civil="F" id="FRANCE" rend="female" stat_amour="néant" statut="personnification" type="A" xml:id="LAFRANCE">LA FRANCE</role>.</castItem>
-        <castItem><role age="allégorie" civil="F" id="VICTOIRE" rend="female" stat_amour="néant" statut="allégorie" type="A" xml:id="LAVICTOIRE">LA VICTOIRE</role>.</castItem>
-        <castItem><role age="A" civil="M" id="MARS" rend="male" stat_amour="néant" statut="dieu" type="D" xml:id="MARS">MARS</role>.</castItem>
-        <castItem><role age="A" civil="F" id="PAIX" rend="female" stat_amour="néant" statut="allégorie" type="A" xml:id="LAPAIX">LA PAIX</role>.</castItem>
-        <castItem><role age="A" civil="F" id="HYMENEE" rend="female" stat_amour="néant" statut="dieu" type="D" xml:id="LHYMENEE">L’HYMÉNÉE</role>.</castItem>
-        <castItem> <role age="A" civil="F" id="ENVIE" rend="female" stat_amour="néant" statut="allégorie" type="A" xml:id="LENVIE">L’ENVIE</role> </castItem>
-        <castItem> <role age="A" civil="F" id="DISCORDE" rend="female" stat_amour="néant" statut="allégorie" type="H" xml:id="LADISCORDE">LA DISCORDE</role> </castItem>
-        <castItem> <role age="A" civil="G" id="CHOEUR_MUSIQUE" rend="group" stat_amour="néant" statut="choeur" type="H" xml:id="LECHOEURdemusique">LE CHOEUR de musique</role> </castItem>
-        <castItem><role age="A" civil="M" id="AAETE" rend="male" stat_amour="néant" statut="roi" type="H" xml:id="AAETE">AAETE</role>, roi de Colchos, fils du Soleil.</castItem>
-        <castItem><role age="A" civil="M" id="ABSYRTE" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="ABSYRTE">ABSYRTE</role>, fils d’Aaete.</castItem>
-        <castItem><role age="A" civil="F" id="CHALCIOPE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="CHALCIOPE">CHALCIOPE</role>, fille d’Aaete, veuve de Phryxus.</castItem>
-        <castItem><role age="A" civil="F" id="MÉDÉE" rend="female" stat_amour="néant" statut="prince" type="H" xml:id="MEDEE">MÉDÉE</role>, fille d’Aaete, amante de Jason.</castItem>
-        <castItem><role age="A" civil="F" id="HYPSIPYLE" rend="female" stat_amour="néant" statut="roi" type="H" xml:id="HYPSIPYLE">HYPSIPYLE</role>, reine de Lemnos.</castItem>
-        <castItem><role age="A" civil="M" id="JASON" rend="male" stat_amour="néant" statut="prince" type="H" xml:id="JASON">JASON</role>, prince de Thessalie, chef des Argonautes.</castItem>
-        <castItem><role age="A" civil="M" id="PÉLÉE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="PELEE">PÉLÉE</role>, argonaute.</castItem>
-        <castItem><role age="A" civil="M" id="IPHITE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="IPHITE">IPHITE</role>, argonaute.</castItem>
-        <castItem><role age="A" civil="M" id="ORPHÉE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ORPHEE">ORPHÉE</role>, argonaute.</castItem>
-        <castItem><role age="A" civil="M" id="ZÉTHÈS" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="ZETHES">ZÉTHÈS</role>, argonaute allié, fils de Borée et d’Orithye.</castItem>
-        <castItem><role age="A" civil="M" id="CALAIS" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="CALAIS">CALAIS</role>, argonaute allié, fils de Borée et d’Orithye.</castItem>
-        <castItem><role age="A" civil="M" id="GLAUQUE" rend="male" stat_amour="néant" statut="aristocrate" type="H" xml:id="GLAUQUE">GLAUQUE</role>, argonaute allié, fils de Borée et d’Orithye.</castItem>
-        <castItem><role age="A" civil="M" id="SOLEIL" rend="male" stat_amour="néant" statut="dieu" type="D" xml:id="SOLEIL">SOLEIL</role>.</castItem>
-        <castItem><role age="A" civil="F" id="IRIS" rend="female" stat_amour="néant" statut="dieu" type="D" xml:id="IRIS">IRIS</role>.</castItem>
-        <castItem><role age="A" civil="F" id="JUNON" rend="female" stat_amour="néant" statut="dieu" type="D" xml:id="JUNON">JUNON</role>.</castItem>
-        <castItem><role age="A" civil="M" id="JUPITER" rend="male" stat_amour="néant" statut="dieu" type="D" xml:id="JUPITER">JUPITER</role>.</castItem>
-        <castItem><role age="A" civil="G" id="TRITONS" rend="group" stat_amour="néant" statut="dieu" type="D" xml:id="DeuxTRITONS">Deux TRITONS</role>.</castItem>
-        <castItem><role age="A" civil="G" id="SIRENES" rend="group" stat_amour="néant" statut="dieu" type="D" xml:id="DeuxSIRENES">Deux SIRÈNES</role>.</castItem>
-        <castItem><role age="A" civil="M" id="VENTS" rend="male" stat_amour="néant" statut="personnification" type="D" xml:id="QuatreVENTS">Quatre VENTS</role>.<role n="LA PAIX" xml:id="PAIX"/><role n="LA FRANCE" xml:id="FRANCE"/><role n="LA VICTOIRE" xml:id="VICTOIRE"/><role n="L’HYMÉNÉE" xml:id="HYMENEE"/><role n="LA DISCORDE" xml:id="DISCORDE"/><role n="L’ENVIE" xml:id="ENVIE"/><role n="L’AMOUR" xml:id="AMOUR"/><role n="UNE VOIX" xml:id="VOIX"/><role n="SIRÈNES" xml:id="SIRENES"/><role n="PALLAS" xml:id="PALLAS"/><role n="CHŒUR" xml:id="CHOEUR"/></castItem>
-      </castList>
-      <set country="Georgie" link="" location="Colchos" periode="Temps mythologiques">La scène est à Colchos.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>Acteurs </head>
+          <castItem><role xml:id="LAFRANCE" rend="female">LA FRANCE</role>.</castItem>
+          <castItem><role xml:id="LAVICTOIRE" rend="female">LA VICTOIRE</role>.</castItem>
+          <castItem><role xml:id="MARS" rend="male">MARS</role>.</castItem>
+          <castItem><role xml:id="LAPAIX" rend="female">LA PAIX</role>.</castItem>
+          <castItem><role xml:id="LHYMENEE" rend="female">L’HYMÉNÉE</role>.</castItem>
+          <castItem> <role xml:id="LENVIE" rend="female">L’ENVIE</role> </castItem>
+          <castItem> <role xml:id="LADISCORDE" rend="female">LA DISCORDE</role> </castItem>
+          <castItem> <role xml:id="LECHOEURdemusique" rend="group">LE CHOEUR de musique</role> </castItem>
+          <castItem><role xml:id="AAETE" rend="male">AAETE</role>, roi de Colchos, fils du Soleil.</castItem>
+          <castItem><role xml:id="ABSYRTE" rend="male">ABSYRTE</role>, fils d’Aaete.</castItem>
+          <castItem><role xml:id="CHALCIOPE" rend="female">CHALCIOPE</role>, fille d’Aaete, veuve de Phryxus.</castItem>
+          <castItem><role xml:id="MEDEE" rend="female">MÉDÉE</role>, fille d’Aaete, amante de Jason.</castItem>
+          <castItem><role xml:id="HYPSIPYLE" rend="female">HYPSIPYLE</role>, reine de Lemnos.</castItem>
+          <castItem><role xml:id="JASON" rend="male">JASON</role>, prince de Thessalie, chef des Argonautes.</castItem>
+          <castItem><role xml:id="PELEE" rend="male">PÉLÉE</role>, argonaute.</castItem>
+          <castItem><role xml:id="IPHITE" rend="male">IPHITE</role>, argonaute.</castItem>
+          <castItem><role xml:id="ORPHEE" rend="male">ORPHÉE</role>, argonaute.</castItem>
+          <castItem><role xml:id="ZETHES" rend="male">ZÉTHÈS</role>, argonaute allié, fils de Borée et d’Orithye.</castItem>
+          <castItem><role xml:id="CALAIS" rend="male">CALAIS</role>, argonaute allié, fils de Borée et d’Orithye.</castItem>
+          <castItem><role xml:id="GLAUQUE" rend="male">GLAUQUE</role>, argonaute allié, fils de Borée et d’Orithye.</castItem>
+          <castItem><role xml:id="SOLEIL" rend="male">SOLEIL</role>.</castItem>
+          <castItem><role xml:id="IRIS" rend="female">IRIS</role>.</castItem>
+          <castItem><role xml:id="JUNON" rend="female">JUNON</role>.</castItem>
+          <castItem><role xml:id="JUPITER" rend="male">JUPITER</role>.</castItem>
+          <castItem><role xml:id="DeuxTRITONS" rend="group">Deux TRITONS</role>.</castItem>
+          <castItem><role xml:id="DeuxSIRENES" rend="group">Deux SIRÈNES</role>.</castItem>
+          <castItem><role xml:id="QuatreVENTS" rend="male">Quatre VENTS</role>.<role xml:id="PAIX" rend=""/><role xml:id="FRANCE" rend=""/><role xml:id="VICTOIRE" rend=""/><role xml:id="HYMENEE" rend=""/><role xml:id="DISCORDE" rend=""/><role xml:id="ENVIE" rend=""/><role xml:id="AMOUR" rend=""/><role xml:id="VOIX" rend=""/><role xml:id="SIRENES" rend=""/><role xml:id="PALLAS" rend=""/><role xml:id="CHOEUR" rend=""/></castItem>
+        </castList>
+        <set country="Georgie" link="" location="Colchos" periode="Temps mythologiques">La scène est à Colchos.</set>
+      </div>
     </front>
     <body>
       <div n="1" type="prologue" xml:id="A">
@@ -184,149 +194,25 @@
         <div n="2" type="scene" xml:id="A02">
           <head>SCÈNE II. Mars, la France, la Victoire.</head>
           <spGrp type="song">
-            <sp who="MARS" xml:id="A02-1">
-              <speaker>MARS.</speaker>
-              <l n="67" xml:id="l67">France ingrate, tu veux la paix !</l>
-              <l n="68" xml:id="l68">Et pour toute reconnaissance</l>
-              <l n="69" xml:id="l69">D’avoir en tant de lieux étendu ta puissance,</l>
-              <l n="70" xml:id="l70">Tu murmures de mes bienfaits !</l>
-              <l n="71" xml:id="l71">Encore un lustre ou deux, et sous tes destinées</l>
-              <l n="72" xml:id="l72">J’aurais rangé le sort des têtes couronnées ;</l>
-              <l n="73" xml:id="l73">Ton état n’aurait eu pour bornes que ton choix ;</l>
-              <l n="74" xml:id="l74">Et tu devais tenir pour assuré présage,</l>
-              <l n="75" xml:id="l75">Voyant toute l’Europe apprendre ton langage,</l>
-              <l n="76" xml:id="l76">Que toute cette Europe allait prendre tes lois.</l>
-              <l n="77" xml:id="l77">Tu renonces à cette gloire ;</l>
-              <l n="78" xml:id="l78">La Paix a pour toi plus d’appâts,</l>
-              <l n="79" xml:id="l79">Et tu dédaignes la Victoire</l>
-              <l n="80" xml:id="l80">Que j’ai de ma main propre attachée à tes pas !</l>
-              <l n="81" xml:id="l81">Vois dans quels fers sous moi la Discorde et l’Envie</l>
-              <l n="82" xml:id="l82">Tiennent cette Paix asservie.</l>
-              <l n="83" xml:id="l83">La Victoire t’a dit comme on peut m’apaiser ;</l>
-              <l n="84" xml:id="l84">J’en veux bien faire encor ta compagne éternelle ;</l>
-              <l n="85" xml:id="l85">Mais sache que je la rappelle,</l>
-              <l n="86" xml:id="l86">Si tu manques d’en bien user.</l>
-              <stage>Avant que de disparaître, ce dieu, en colère contre la France, lui fait voir la Paix, qu’elle demande avec tant d’ardeur, prisonnière dans son palais, entre les mains de la Discorde et de l’Envie, qu’il lui a donnée pour garder. Ce palais a pour colonnes des canons, qui ont pour bases des mortiers, et des boulets pour chapiteaux; le tout accompagné, pour ornement, de trompettes, de tambours, et autres instruments de guerre entrelacés ensemble et découpés à jour, qui font comme un second rang de colonnes. Le lambris est composé de trophée d’armes, et de tout ce qui peut désigner et embellir la demeure de ce dieu des batailles.</stage>
-            </sp>
+            <sp who="MARS" xml:id="A02-1"><speaker>MARS.</speaker><l n="67" xml:id="l67">France ingrate, tu veux la paix !</l><l n="68" xml:id="l68">Et pour toute reconnaissance</l><l n="69" xml:id="l69">D’avoir en tant de lieux étendu ta puissance,</l><l n="70" xml:id="l70">Tu murmures de mes bienfaits !</l><l n="71" xml:id="l71">Encore un lustre ou deux, et sous tes destinées</l><l n="72" xml:id="l72">J’aurais rangé le sort des têtes couronnées ;</l><l n="73" xml:id="l73">Ton état n’aurait eu pour bornes que ton choix ;</l><l n="74" xml:id="l74">Et tu devais tenir pour assuré présage,</l><l n="75" xml:id="l75">Voyant toute l’Europe apprendre ton langage,</l><l n="76" xml:id="l76">Que toute cette Europe allait prendre tes lois.</l><l n="77" xml:id="l77">Tu renonces à cette gloire ;</l><l n="78" xml:id="l78">La Paix a pour toi plus d’appâts,</l><l n="79" xml:id="l79">Et tu dédaignes la Victoire</l><l n="80" xml:id="l80">Que j’ai de ma main propre attachée à tes pas !</l><l n="81" xml:id="l81">Vois dans quels fers sous moi la Discorde et l’Envie</l><l n="82" xml:id="l82">Tiennent cette Paix asservie.</l><l n="83" xml:id="l83">La Victoire t’a dit comme on peut m’apaiser ;</l><l n="84" xml:id="l84">J’en veux bien faire encor ta compagne éternelle ;</l><l n="85" xml:id="l85">Mais sache que je la rappelle,</l><l n="86" xml:id="l86">Si tu manques d’en bien user.</l><stage>Avant que de disparaître, ce dieu, en colère contre la France, lui fait voir la Paix, qu’elle demande avec tant d’ardeur, prisonnière dans son palais, entre les mains de la Discorde et de l’Envie, qu’il lui a donnée pour garder. Ce palais a pour colonnes des canons, qui ont pour bases des mortiers, et des boulets pour chapiteaux; le tout accompagné, pour ornement, de trompettes, de tambours, et autres instruments de guerre entrelacés ensemble et découpés à jour, qui font comme un second rang de colonnes. Le lambris est composé de trophée d’armes, et de tout ce qui peut désigner et embellir la demeure de ce dieu des batailles.</stage></sp>
           </spGrp>
         </div>
         <div n="3" type="scene" xml:id="A03">
           <head>SCÈNE III. La Paix, La Discorde, L’Envie, La France, La Vicroire.</head>
           <spGrp type="song">
-            <sp who="PAIX" xml:id="A03-1">
-              <speaker>LA PAIX.</speaker>
-              <l n="87" xml:id="l87">En vain à tes soupirs il est inexorable :</l>
-              <l n="88" xml:id="l88">Un dieu plus fort que lui me va rejoindre à toi ;</l>
-              <l n="89" xml:id="l89">Et tu devras bientôt ce succès adorable</l>
-              <l n="90" xml:id="l90">À cette reine incomparable</l>
-              <l n="91" xml:id="l91">Dont les soins et l’exemple ont formé ton grand roi.</l>
-              <l n="92" xml:id="l92">Ses tendresses de soeur, ses tendresses de mère,</l>
-              <l n="93" xml:id="l93">Peuvent tout sur un fils, peuvent tout sur un frère.</l>
-              <l n="94" xml:id="l94">Bénis, France, bénis ce pouvoir fortuné ;</l>
-              <l n="95" xml:id="l95">Bénis le choix qu’il fait d’une reine comme elle :</l>
-              <l n="96" xml:id="l96">Cent rois en sortiront, dont la gloire immortelle</l>
-              <l n="97" xml:id="l97">Fera trembler sous toi l’univers étonné,</l>
-              <l n="98" xml:id="l98">Et dans tout l’avenir sur leur front couronné</l>
-              <l n="99" xml:id="l99">Portera l’image fidèle</l>
-              <l n="100" xml:id="l100">De celui qu’elle t’a donné.</l>
-              <l n="101" xml:id="l101">Ce dieu dont le pouvoir suprême</l>
-              <l n="102" xml:id="l102">Etouffe d’un coup d’oeil les plus vieux différends,</l>
-              <l n="103" xml:id="l103">Ce dieu par qui l’amour plaît à la vertu même,</l>
-              <l n="104" xml:id="l104">Et qui borne souvent l’espoir des conquérants,</l>
-              <l n="105" xml:id="l105">Le blond et pompeux Hyménée</l>
-              <l n="106" xml:id="l106">Prépare en ta faveur l’éclatante journée</l>
-              <l n="107" xml:id="l107">Où sa main doit briser mes fers.</l>
-              <l n="108" xml:id="l108">Ces monstres insolents dont je suis prisonnière,</l>
-              <l n="109" xml:id="l109">Prisonniers à leur tour au fond de leurs enfers,</l>
-              <l n="110" xml:id="l110">Ne pourront mêler d’ombre à sa vive lumière.</l>
-              <l n="111" xml:id="l111">À tes cantons les plus déserts</l>
-              <l n="112" xml:id="l112">Je rendrai leur beauté première ;</l>
-              <l n="113" xml:id="l113">Et dans les doux torrents d’une allégresse entière</l>
-              <l n="114" xml:id="l114">Tu verras s’abîmer tes maux les plus amers.</l>
-              <l n="115" xml:id="l115">Tu vois comme déjà ces deux hautes puissances,</l>
-              <l n="116" xml:id="l116">Que Mars semblait plonger en d’immortels discords,</l>
-              <l n="117" xml:id="l117">Ont malgré ses fureurs assemblé sur tes bords</l>
-              <l n="118" xml:id="l118">Les sublimes intelligences</l>
-              <l n="119" xml:id="l119">Qui de leurs grands états meuvent les vastes corps.</l>
-              <l n="120" xml:id="l120">Les surprenantes harmonies</l>
-              <l n="121" xml:id="l121">De ces miraculeux génies</l>
-              <l n="122" xml:id="l122">Savent tout balancer, savent tout soutenir.</l>
-              <l n="123" xml:id="l123">Leur prudence était due à cet illustre ouvrage,</l>
-              <l n="124" xml:id="l124">Et jamais on n’eût pu fournir,</l>
-              <l n="125" xml:id="l125">Aux intérêts divers de la Seine et du Tage,</l>
-              <l n="126" xml:id="l126">Ni zèle plus savant en l’art de réunir,</l>
-              <l n="127" xml:id="l127">Ni savoir mieux instruit du commun avantage.</l>
-              <l n="128" xml:id="l128">Par ces organes seuls ces dignes potentats</l>
-              <l n="129" xml:id="l129">Se font eux-mêmes leurs arbitres ;</l>
-              <l n="130" xml:id="l130">Aux conquêtes par eux ils donnent d’autres titres,</l>
-              <l n="131" xml:id="l131">Et des bornes à leurs états.</l>
-              <l n="132" xml:id="l132">Ce dieu même qu’attend ma longue impatience</l>
-              <l n="133" xml:id="l133">N’a droit de m’affranchir que par leur conférence :</l>
-              <l n="134" xml:id="l134">Sans elle son pouvoir serait mal reconnu.</l>
-              <l n="135" xml:id="l135">Mais enfin je le vois, leur accord me l’envoie.</l>
-              <l n="136" xml:id="l136">France, ouvre ton coeur à la joie ;</l>
-              <l n="137" xml:id="l137">Et vous, monstres, fuyez ; ce grand jour est venu.</l>
-              <stage>L’Hyménée paraît, couronné de leurs, portant en sa main droite un dard semé de lys et de roses, et en la gauche le portrait de la Reine peint sur son bouclier.</stage>
-            </sp>
+            <sp who="PAIX" xml:id="A03-1"><speaker>LA PAIX.</speaker><l n="87" xml:id="l87">En vain à tes soupirs il est inexorable :</l><l n="88" xml:id="l88">Un dieu plus fort que lui me va rejoindre à toi ;</l><l n="89" xml:id="l89">Et tu devras bientôt ce succès adorable</l><l n="90" xml:id="l90">À cette reine incomparable</l><l n="91" xml:id="l91">Dont les soins et l’exemple ont formé ton grand roi.</l><l n="92" xml:id="l92">Ses tendresses de soeur, ses tendresses de mère,</l><l n="93" xml:id="l93">Peuvent tout sur un fils, peuvent tout sur un frère.</l><l n="94" xml:id="l94">Bénis, France, bénis ce pouvoir fortuné ;</l><l n="95" xml:id="l95">Bénis le choix qu’il fait d’une reine comme elle :</l><l n="96" xml:id="l96">Cent rois en sortiront, dont la gloire immortelle</l><l n="97" xml:id="l97">Fera trembler sous toi l’univers étonné,</l><l n="98" xml:id="l98">Et dans tout l’avenir sur leur front couronné</l><l n="99" xml:id="l99">Portera l’image fidèle</l><l n="100" xml:id="l100">De celui qu’elle t’a donné.</l><l n="101" xml:id="l101">Ce dieu dont le pouvoir suprême</l><l n="102" xml:id="l102">Etouffe d’un coup d’oeil les plus vieux différends,</l><l n="103" xml:id="l103">Ce dieu par qui l’amour plaît à la vertu même,</l><l n="104" xml:id="l104">Et qui borne souvent l’espoir des conquérants,</l><l n="105" xml:id="l105">Le blond et pompeux Hyménée</l><l n="106" xml:id="l106">Prépare en ta faveur l’éclatante journée</l><l n="107" xml:id="l107">Où sa main doit briser mes fers.</l><l n="108" xml:id="l108">Ces monstres insolents dont je suis prisonnière,</l><l n="109" xml:id="l109">Prisonniers à leur tour au fond de leurs enfers,</l><l n="110" xml:id="l110">Ne pourront mêler d’ombre à sa vive lumière.</l><l n="111" xml:id="l111">À tes cantons les plus déserts</l><l n="112" xml:id="l112">Je rendrai leur beauté première ;</l><l n="113" xml:id="l113">Et dans les doux torrents d’une allégresse entière</l><l n="114" xml:id="l114">Tu verras s’abîmer tes maux les plus amers.</l><l n="115" xml:id="l115">Tu vois comme déjà ces deux hautes puissances,</l><l n="116" xml:id="l116">Que Mars semblait plonger en d’immortels discords,</l><l n="117" xml:id="l117">Ont malgré ses fureurs assemblé sur tes bords</l><l n="118" xml:id="l118">Les sublimes intelligences</l><l n="119" xml:id="l119">Qui de leurs grands états meuvent les vastes corps.</l><l n="120" xml:id="l120">Les surprenantes harmonies</l><l n="121" xml:id="l121">De ces miraculeux génies</l><l n="122" xml:id="l122">Savent tout balancer, savent tout soutenir.</l><l n="123" xml:id="l123">Leur prudence était due à cet illustre ouvrage,</l><l n="124" xml:id="l124">Et jamais on n’eût pu fournir,</l><l n="125" xml:id="l125">Aux intérêts divers de la Seine et du Tage,</l><l n="126" xml:id="l126">Ni zèle plus savant en l’art de réunir,</l><l n="127" xml:id="l127">Ni savoir mieux instruit du commun avantage.</l><l n="128" xml:id="l128">Par ces organes seuls ces dignes potentats</l><l n="129" xml:id="l129">Se font eux-mêmes leurs arbitres ;</l><l n="130" xml:id="l130">Aux conquêtes par eux ils donnent d’autres titres,</l><l n="131" xml:id="l131">Et des bornes à leurs états.</l><l n="132" xml:id="l132">Ce dieu même qu’attend ma longue impatience</l><l n="133" xml:id="l133">N’a droit de m’affranchir que par leur conférence :</l><l n="134" xml:id="l134">Sans elle son pouvoir serait mal reconnu.</l><l n="135" xml:id="l135">Mais enfin je le vois, leur accord me l’envoie.</l><l n="136" xml:id="l136">France, ouvre ton coeur à la joie ;</l><l n="137" xml:id="l137">Et vous, monstres, fuyez ; ce grand jour est venu.</l><stage>L’Hyménée paraît, couronné de leurs, portant en sa main droite un dard semé de lys et de roses, et en la gauche le portrait de la Reine peint sur son bouclier.</stage></sp>
           </spGrp>
         </div>
         <div n="4" type="scene" xml:id="A04">
           <head>SCÈNE IV. L’Hyménée, La Paix, la Discorde, l’Envie, La France, La Victoire, Choeur de musique.</head>
           <spGrp type="song">
-            <sp who="DISCORDE" xml:id="A04-1">
-              <speaker>LA DISCORDE.</speaker>
-              <l n="138" xml:id="l138">En vain tu le veux croire, orgueilleuse captive :</l>
-              <l n="139" xml:id="l139">Pourrions-nous fuir le secours qui t’arrive ?</l>
-            </sp>
-            <sp who="ENVIE" xml:id="A04-2">
-              <speaker>L’ENVIE.</speaker>
-              <l n="140" xml:id="l140">Pourrions-nous craindre un dieu qui contre nos fureurs</l>
-              <l n="141" xml:id="l141">Ne prend pour armes que des fleurs ?</l>
-            </sp>
-            <sp who="HYMENEE" xml:id="A04-3">
-              <speaker>L’HYMÉNÉE.</speaker>
-              <l n="142" xml:id="l142">Oui, monstres, oui, craignez cette main vengeresse ;</l>
-              <l n="143" xml:id="l143">Mais craignez encor plus cette grande princesse</l>
-              <l n="144" xml:id="l144">Pour qui je viens allumer mon flambeau :</l>
-              <l n="145" xml:id="l145">Pourriez-vous soutenir les traits de son visage ?</l>
-              <l n="146" xml:id="l146">Fuyez, monstres, à son image ;</l>
-              <l n="147" xml:id="l147">Fuyez, et que l’enfer, qui fut votre berceau,</l>
-              <l n="148" xml:id="l148">Vous serve à jamais de tombeau.</l>
-              <l n="149" xml:id="l149">Et vous, noirs instruments d’un indigne esclavage,</l>
-              <l n="150" xml:id="l150">Tombez, fers odieux, à ce divin aspect,</l>
-              <l n="151" xml:id="l151">Et pour lui rendre un prompt hommage,</l>
-              <l n="152" xml:id="l152">Anéantissez-vous de honte ou de respect.</l>
-              <stage>Il présente ce portrait aux yeux de la Discorde et de l’Envie, qui trébuchent aussitôt aux enfers, et ensuite il le présente aux chaînes qui tiennent la Paix prisonnière, lesquelles tombent et se brisent tout à l’heure.</stage>
-            </sp>
-            <sp who="PAIX" xml:id="A04-4">
-              <speaker>LA PAIX.</speaker>
-              <l n="153" xml:id="l153">Dieu des sacrés plaisirs, vous venez de me rendre</l>
-              <l n="154" xml:id="l154">Un bien dont les dieux même ont lieu d’être jaloux ;</l>
-              <l n="155" xml:id="l155">Mais ce n’est pas assez, il est temps de descendre,</l>
-              <l n="156" xml:id="l156">Et de remplir les voeux qu’en terre on fait pour nous.</l>
-            </sp>
-            <sp who="HYMENEE" xml:id="A04-5">
-              <speaker>L’HYMÉNÉE.</speaker>
-              <l n="157" xml:id="l157">Il en est temps, déesse, et c’est trop faire attendre</l>
-              <l n="158" xml:id="l158">Les effets d’un espoir si doux.</l>
-              <l n="159" xml:id="l159">Vous donc, mes ministres fidèles,</l>
-              <l n="160" xml:id="l160">Venez, amours, et prêtez-nous vos ailes.</l>
-              <stage>Quatre Amours descendent du ciel, deux de chaque côtés, et s’attachent à l’Hyménée et à la Paix pour les apporter en terre.</stage>
-            </sp>
-            <sp who="FRANCE" xml:id="A04-6">
-              <speaker>LA FRANCE.</speaker>
-              <l n="161" xml:id="l161">Peuple, fais voir ta joie à ces divinités</l>
-              <l n="162" xml:id="l162">Qui vont tarir le cours de tes calamités.</l>
-            </sp>
-            <sp who="CHOEUR" xml:id="A04-7">
-              <speaker>CHOEUR DE MUSIQUE.</speaker>
-              <stage>L’Hyménée, la Paix et les quatre amours descendent cependant qu’il chante.</stage>
-              <l n="163" xml:id="l163">Descends, Hymen, et ramène sur terre</l>
-              <l n="164" xml:id="l164">Les délices avec la paix ;</l>
-              <l n="165" xml:id="l165">Descends, objet divin de nos plus doux souhaits,</l>
-              <l n="166" xml:id="l166">Et par tes feux éteins ceux de la guerre.</l>
-              <stage>Après que l’Hyménée et la Paix sont descendus, les quatre Amours remontent du ciel, premièrement de droit il tous quatre ensemble, et puis se séparant deu à deux et croisant leur vol, en sorte que ceux qui sont au côté droit se retirent à gauche dans les nues, et ceux qui sont au gauche se perdent dans celles du côté droit.</stage>
-            </sp>
+            <sp who="DISCORDE" xml:id="A04-1"><speaker>LA DISCORDE.</speaker><l n="138" xml:id="l138">En vain tu le veux croire, orgueilleuse captive :</l><l n="139" xml:id="l139">Pourrions-nous fuir le secours qui t’arrive ?</l></sp>
+            <sp who="ENVIE" xml:id="A04-2"><speaker>L’ENVIE.</speaker><l n="140" xml:id="l140">Pourrions-nous craindre un dieu qui contre nos fureurs</l><l n="141" xml:id="l141">Ne prend pour armes que des fleurs ?</l></sp>
+            <sp who="HYMENEE" xml:id="A04-3"><speaker>L’HYMÉNÉE.</speaker><l n="142" xml:id="l142">Oui, monstres, oui, craignez cette main vengeresse ;</l><l n="143" xml:id="l143">Mais craignez encor plus cette grande princesse</l><l n="144" xml:id="l144">Pour qui je viens allumer mon flambeau :</l><l n="145" xml:id="l145">Pourriez-vous soutenir les traits de son visage ?</l><l n="146" xml:id="l146">Fuyez, monstres, à son image ;</l><l n="147" xml:id="l147">Fuyez, et que l’enfer, qui fut votre berceau,</l><l n="148" xml:id="l148">Vous serve à jamais de tombeau.</l><l n="149" xml:id="l149">Et vous, noirs instruments d’un indigne esclavage,</l><l n="150" xml:id="l150">Tombez, fers odieux, à ce divin aspect,</l><l n="151" xml:id="l151">Et pour lui rendre un prompt hommage,</l><l n="152" xml:id="l152">Anéantissez-vous de honte ou de respect.</l><stage>Il présente ce portrait aux yeux de la Discorde et de l’Envie, qui trébuchent aussitôt aux enfers, et ensuite il le présente aux chaînes qui tiennent la Paix prisonnière, lesquelles tombent et se brisent tout à l’heure.</stage></sp>
+            <sp who="PAIX" xml:id="A04-4"><speaker>LA PAIX.</speaker><l n="153" xml:id="l153">Dieu des sacrés plaisirs, vous venez de me rendre</l><l n="154" xml:id="l154">Un bien dont les dieux même ont lieu d’être jaloux ;</l><l n="155" xml:id="l155">Mais ce n’est pas assez, il est temps de descendre,</l><l n="156" xml:id="l156">Et de remplir les voeux qu’en terre on fait pour nous.</l></sp>
+            <sp who="HYMENEE" xml:id="A04-5"><speaker>L’HYMÉNÉE.</speaker><l n="157" xml:id="l157">Il en est temps, déesse, et c’est trop faire attendre</l><l n="158" xml:id="l158">Les effets d’un espoir si doux.</l><l n="159" xml:id="l159">Vous donc, mes ministres fidèles,</l><l n="160" xml:id="l160">Venez, amours, et prêtez-nous vos ailes.</l><stage>Quatre Amours descendent du ciel, deux de chaque côtés, et s’attachent à l’Hyménée et à la Paix pour les apporter en terre.</stage></sp>
+            <sp who="FRANCE" xml:id="A04-6"><speaker>LA FRANCE.</speaker><l n="161" xml:id="l161">Peuple, fais voir ta joie à ces divinités</l><l n="162" xml:id="l162">Qui vont tarir le cours de tes calamités.</l></sp>
+            <sp who="CHOEUR" xml:id="A04-7"><speaker>CHOEUR DE MUSIQUE.</speaker><stage>L’Hyménée, la Paix et les quatre amours descendent cependant qu’il chante.</stage><l n="163" xml:id="l163">Descends, Hymen, et ramène sur terre</l><l n="164" xml:id="l164">Les délices avec la paix ;</l><l n="165" xml:id="l165">Descends, objet divin de nos plus doux souhaits,</l><l n="166" xml:id="l166">Et par tes feux éteins ceux de la guerre.</l><stage>Après que l’Hyménée et la Paix sont descendus, les quatre Amours remontent du ciel, premièrement de droit il tous quatre ensemble, et puis se séparant deu à deux et croisant leur vol, en sorte que ceux qui sont au côté droit se retirent à gauche dans les nues, et ceux qui sont au gauche se perdent dans celles du côté droit.</stage></sp>
           </spGrp>
         </div>
         <div n="5" type="scene" xml:id="A05">
@@ -1050,57 +936,10 @@
             <person corresp="#CHOEUR"/>
             </listPerson></head>
           <spGrp type="song">
-            <sp who="ORPHEE" xml:id="I06-1">
-              <speaker>ORPHÉE chante.</speaker>
-              <l n="603" xml:id="l603">Femme et soeur du maître des dieux,</l>
-              <l n="604" xml:id="l604">De qui le seul regard fait nos destins propices,</l>
-              <l n="605" xml:id="l605">Nous as-tu jusqu’ici guidés sous tes auspices</l>
-              <l n="606" xml:id="l606">Pour nous voir périr en ces lieux ?</l>
-              <l n="607" xml:id="l607">Contre des bras mortels tout ce qu’ont pu nos armes,</l>
-              <l n="608" xml:id="l608">Nous l’avons fait dans les combats :</l>
-              <l n="609" xml:id="l609">Contre les monstres et les charmes</l>
-              <l n="610" xml:id="l610">C’est à toi maintenant de nous prêter ton bras.</l>
-            </sp>
-            <sp who="IRIS" xml:id="I06-2">
-              <speaker>IRIS.</speaker>
-              <l n="611" xml:id="l611">Princes, ne perdez pas courage ;</l>
-              <l n="612" xml:id="l612">Les deux mêmes divinités</l>
-              <l n="613" xml:id="l613">Qui vous ont garantis sur les flots irrités</l>
-              <l n="614" xml:id="l614">Prennent votre défense en ce climat sauvage.</l>
-              <l n="615" xml:id="l615">Les voici toutes deux, qui de leur propre voix</l>
-              <l n="616" xml:id="l616">Vous apprendront sous quelles lois</l>
-              <l n="617" xml:id="l617">Le destin vous promet cette illustre conquête ;</l>
-              <l n="618" xml:id="l618">Elles sauront vous la faciliter :</l>
-              <l n="619" xml:id="l619">Écoutez leurs conseils, et tenez l’âme prête</l>
-              <l n="620" xml:id="l620">À les exécuter.</l>
-            </sp>
-            <sp who="JUNON" xml:id="I06-3">
-              <speaker>JUNON.</speaker>
-              <l n="621" xml:id="l621">Tous vos bras et toutes vos armes</l>
-              <l n="622" xml:id="l622">Ne peuvent rien contre les charmes</l>
-              <l n="623" xml:id="l623">Que Médée en fureur verse sur la toison :</l>
-              <l n="624" xml:id="l624">L’amour seul aujourd’hui peut faire ce miracle ;</l>
-              <l n="625" xml:id="l625">Et dragon ni taureaux ne vous feront obstacle,</l>
-              <l n="626" xml:id="l626">Pourvu qu’elle s’apaise en faveur de Jason.</l>
-              <l n="627" xml:id="l627">Prête à descendre en terre afin de l’y réduire,</l>
-              <l n="628" xml:id="l628">J’ai pris et le visage et l’habit de sa soeur.</l>
-              <l n="629" xml:id="l629">Rien ne vous peut servir si vous n’avez son coeur ;</l>
-              <l n="630" xml:id="l630">Et si vous le gagnez, rien ne vous sauroit nuire.</l>
-            </sp>
-            <sp who="PALLAS" xml:id="I06-4">
-              <speaker>PALLAS.</speaker>
-              <l n="631" xml:id="l631">Pour vous secourir en ces lieux,</l>
-              <l n="632" xml:id="l632">Junon change de forme et va descendre en terre ;</l>
-              <l n="633" xml:id="l633">Et pour vous protéger Pallas remonte aux cieux,</l>
-              <l n="634" xml:id="l634">Où Mars et quelques autres dieux</l>
-              <l n="635" xml:id="l635">Vont presser contre vous le maître du tonnerre.</l>
-              <l n="636" xml:id="l636">Le soleil, de son fils embrassant l’intérêt,</l>
-              <l n="637" xml:id="l637">Voudra faire changer l’arrêt</l>
-              <l n="638" xml:id="l638">Qui vous laisse espérer la toison demandée ;</l>
-              <l n="639" xml:id="l639">Mais quoi qu’il puisse faire, assurez-vous qu’enfin</l>
-              <l n="640" xml:id="l640">L’amour fera votre destin,</l>
-              <l n="641" xml:id="l641">Et vous donnera tout, s’il vous donne Médée.</l>
-            </sp>
+            <sp who="ORPHEE" xml:id="I06-1"><speaker>ORPHÉE chante.</speaker><l n="603" xml:id="l603">Femme et soeur du maître des dieux,</l><l n="604" xml:id="l604">De qui le seul regard fait nos destins propices,</l><l n="605" xml:id="l605">Nous as-tu jusqu’ici guidés sous tes auspices</l><l n="606" xml:id="l606">Pour nous voir périr en ces lieux ?</l><l n="607" xml:id="l607">Contre des bras mortels tout ce qu’ont pu nos armes,</l><l n="608" xml:id="l608">Nous l’avons fait dans les combats :</l><l n="609" xml:id="l609">Contre les monstres et les charmes</l><l n="610" xml:id="l610">C’est à toi maintenant de nous prêter ton bras.</l></sp>
+            <sp who="IRIS" xml:id="I06-2"><speaker>IRIS.</speaker><l n="611" xml:id="l611">Princes, ne perdez pas courage ;</l><l n="612" xml:id="l612">Les deux mêmes divinités</l><l n="613" xml:id="l613">Qui vous ont garantis sur les flots irrités</l><l n="614" xml:id="l614">Prennent votre défense en ce climat sauvage.</l><l n="615" xml:id="l615">Les voici toutes deux, qui de leur propre voix</l><l n="616" xml:id="l616">Vous apprendront sous quelles lois</l><l n="617" xml:id="l617">Le destin vous promet cette illustre conquête ;</l><l n="618" xml:id="l618">Elles sauront vous la faciliter :</l><l n="619" xml:id="l619">Écoutez leurs conseils, et tenez l’âme prête</l><l n="620" xml:id="l620">À les exécuter.</l></sp>
+            <sp who="JUNON" xml:id="I06-3"><speaker>JUNON.</speaker><l n="621" xml:id="l621">Tous vos bras et toutes vos armes</l><l n="622" xml:id="l622">Ne peuvent rien contre les charmes</l><l n="623" xml:id="l623">Que Médée en fureur verse sur la toison :</l><l n="624" xml:id="l624">L’amour seul aujourd’hui peut faire ce miracle ;</l><l n="625" xml:id="l625">Et dragon ni taureaux ne vous feront obstacle,</l><l n="626" xml:id="l626">Pourvu qu’elle s’apaise en faveur de Jason.</l><l n="627" xml:id="l627">Prête à descendre en terre afin de l’y réduire,</l><l n="628" xml:id="l628">J’ai pris et le visage et l’habit de sa soeur.</l><l n="629" xml:id="l629">Rien ne vous peut servir si vous n’avez son coeur ;</l><l n="630" xml:id="l630">Et si vous le gagnez, rien ne vous sauroit nuire.</l></sp>
+            <sp who="PALLAS" xml:id="I06-4"><speaker>PALLAS.</speaker><l n="631" xml:id="l631">Pour vous secourir en ces lieux,</l><l n="632" xml:id="l632">Junon change de forme et va descendre en terre ;</l><l n="633" xml:id="l633">Et pour vous protéger Pallas remonte aux cieux,</l><l n="634" xml:id="l634">Où Mars et quelques autres dieux</l><l n="635" xml:id="l635">Vont presser contre vous le maître du tonnerre.</l><l n="636" xml:id="l636">Le soleil, de son fils embrassant l’intérêt,</l><l n="637" xml:id="l637">Voudra faire changer l’arrêt</l><l n="638" xml:id="l638">Qui vous laisse espérer la toison demandée ;</l><l n="639" xml:id="l639">Mais quoi qu’il puisse faire, assurez-vous qu’enfin</l><l n="640" xml:id="l640">L’amour fera votre destin,</l><l n="641" xml:id="l641">Et vous donnera tout, s’il vous donne Médée.</l></sp>
           </spGrp>
           <sp who="JASON" xml:id="I06-5">
             <speaker>JASON.</speaker>
@@ -1555,48 +1394,10 @@
             <person corresp="#CHOEUR"/>
             </listPerson></head>
           <spGrp type="song">
-            <sp who="SIRENES" xml:id="II04-1">
-              <speaker>CHANT DES SIRÈNES.</speaker>
-              <l n="900" xml:id="l900">Telle Vénus sortit du sein de l’onde,</l>
-              <l n="901" xml:id="l901">Pour faire régner dans le monde</l>
-              <l n="902" xml:id="l902">Les jeux et les plaisirs, les grâces et l’amour ;</l>
-              <l n="903" xml:id="l903">Telle tous les matins l’aurore</l>
-              <l n="904" xml:id="l904">Sur le sein émaillé de Flore</l>
-              <l n="905" xml:id="l905">Verse la rosée et le jour.</l>
-              <l n="906" xml:id="l906">Objet divin, qui vas de ce rivage</l>
-              <l n="907" xml:id="l907">Bannir ce qu’il a de sauvage,</l>
-              <l n="908" xml:id="l908">Pour y faire régner les grâces et l’amour,</l>
-              <l n="909" xml:id="l909">Telle et plus adorable encore</l>
-              <l n="910" xml:id="l910">Que n’est Vénus, que n’est l’aurore,</l>
-              <l n="911" xml:id="l911">Tu vas y faire un nouveau jour.</l>
-            </sp>
-            <sp who="ABSYRTE" xml:id="II04-2">
-              <speaker>ABSYRTE.</speaker>
-              <l n="912" xml:id="l912">Quelle beauté, mes soeurs, dans ce trône enfermée,</l>
-              <l n="913" xml:id="l913">De son premier coup d’oeil a mon âme charmée ?</l>
-              <l n="914" xml:id="l914">Quel coeur pourroit tenir contre de tels appas ?</l>
-            </sp>
-            <sp who="HYPSIPYLE" xml:id="II04-3">
-              <speaker>HYPSIPYLE.</speaker>
-              <l n="915" xml:id="l915">Juste ciel, il me voit, et ne s’avance pas !</l>
-            </sp>
-            <sp who="GLAUQUE" xml:id="II04-4">
-              <speaker>GLAUQUE.</speaker>
-              <l n="916" xml:id="l916">Allez, tritons, allez, sirènes ;</l>
-              <l n="917" xml:id="l917">Allez, vents, et rompez vos chaînes ;</l>
-              <l n="918" xml:id="l918">Neptune est satisfait,</l>
-              <l n="919" xml:id="l919">Et l’ordre qu’il vous donne a son entier effet.</l>
-              <l n="920" xml:id="l920">Jason, vois les bontés de ce même Neptune,</l>
-              <l n="921" xml:id="l921">Qui pour achever ta fortune,</l>
-              <l n="922" xml:id="l922">A sauvé du naufrage, et renvoie à tes voeux</l>
-              <l n="923" xml:id="l923">La princesse qui seule est digne de ta flamme.</l>
-              <l n="924" xml:id="l924">À son aspect rallume tous tes feux ;</l>
-              <l n="925" xml:id="l925">Et pour répondre aux siens, rends-lui toute ton âme.</l>
-              <l n="926" xml:id="l926">Et toi, qui jusques à Colchos</l>
-              <l n="927" xml:id="l927">Dois à tant de beautés un assuré passage,</l>
-              <l n="928" xml:id="l928">Fleuve, pour un moment retire un peu tes flots,</l>
-              <l n="929" xml:id="l929">Et laisse approcher ton rivage.</l>
-            </sp>
+            <sp who="SIRENES" xml:id="II04-1"><speaker>CHANT DES SIRÈNES.</speaker><l n="900" xml:id="l900">Telle Vénus sortit du sein de l’onde,</l><l n="901" xml:id="l901">Pour faire régner dans le monde</l><l n="902" xml:id="l902">Les jeux et les plaisirs, les grâces et l’amour ;</l><l n="903" xml:id="l903">Telle tous les matins l’aurore</l><l n="904" xml:id="l904">Sur le sein émaillé de Flore</l><l n="905" xml:id="l905">Verse la rosée et le jour.</l><l n="906" xml:id="l906">Objet divin, qui vas de ce rivage</l><l n="907" xml:id="l907">Bannir ce qu’il a de sauvage,</l><l n="908" xml:id="l908">Pour y faire régner les grâces et l’amour,</l><l n="909" xml:id="l909">Telle et plus adorable encore</l><l n="910" xml:id="l910">Que n’est Vénus, que n’est l’aurore,</l><l n="911" xml:id="l911">Tu vas y faire un nouveau jour.</l></sp>
+            <sp who="ABSYRTE" xml:id="II04-2"><speaker>ABSYRTE.</speaker><l n="912" xml:id="l912">Quelle beauté, mes soeurs, dans ce trône enfermée,</l><l n="913" xml:id="l913">De son premier coup d’oeil a mon âme charmée ?</l><l n="914" xml:id="l914">Quel coeur pourroit tenir contre de tels appas ?</l></sp>
+            <sp who="HYPSIPYLE" xml:id="II04-3"><speaker>HYPSIPYLE.</speaker><l n="915" xml:id="l915">Juste ciel, il me voit, et ne s’avance pas !</l></sp>
+            <sp who="GLAUQUE" xml:id="II04-4"><speaker>GLAUQUE.</speaker><l n="916" xml:id="l916">Allez, tritons, allez, sirènes ;</l><l n="917" xml:id="l917">Allez, vents, et rompez vos chaînes ;</l><l n="918" xml:id="l918">Neptune est satisfait,</l><l n="919" xml:id="l919">Et l’ordre qu’il vous donne a son entier effet.</l><l n="920" xml:id="l920">Jason, vois les bontés de ce même Neptune,</l><l n="921" xml:id="l921">Qui pour achever ta fortune,</l><l n="922" xml:id="l922">A sauvé du naufrage, et renvoie à tes voeux</l><l n="923" xml:id="l923">La princesse qui seule est digne de ta flamme.</l><l n="924" xml:id="l924">À son aspect rallume tous tes feux ;</l><l n="925" xml:id="l925">Et pour répondre aux siens, rends-lui toute ton âme.</l><l n="926" xml:id="l926">Et toi, qui jusques à Colchos</l><l n="927" xml:id="l927">Dois à tant de beautés un assuré passage,</l><l n="928" xml:id="l928">Fleuve, pour un moment retire un peu tes flots,</l><l n="929" xml:id="l929">Et laisse approcher ton rivage.</l></sp>
           </spGrp>
           <sp who="ABSYRTE" xml:id="II04-5">
             <speaker>ABSYRTE.</speaker>
@@ -2362,14 +2163,7 @@
             <l n="1351" xml:id="l1351">Je ne veux plus mourir ; monstres, n’avancez pas.</l>
           </sp>
           <spGrp type="song">
-            <sp who="VOIX" xml:id="III05-2">
-              <speaker>UNE VOIX, derrière le théâtre.</speaker>
-              <l n="1352" xml:id="l1352">Monstres, n’avancez pas, une reine l’ordonne ;</l>
-              <l n="1353" xml:id="l1353">Respectez ses appas ;</l>
-              <l n="1354" xml:id="l1354">Suivez les lois qu’elle vous donne :</l>
-              <l n="1355" xml:id="l1355">Monstres, n’avancez pas.</l>
-              <stage>Les monstres s’arrêtent sitôt que cette voix chante.</stage>
-            </sp>
+            <sp who="VOIX" xml:id="III05-2"><speaker>UNE VOIX, derrière le théâtre.</speaker><l n="1352" xml:id="l1352">Monstres, n’avancez pas, une reine l’ordonne ;</l><l n="1353" xml:id="l1353">Respectez ses appas ;</l><l n="1354" xml:id="l1354">Suivez les lois qu’elle vous donne :</l><l n="1355" xml:id="l1355">Monstres, n’avancez pas.</l><stage>Les monstres s’arrêtent sitôt que cette voix chante.</stage></sp>
           </spGrp>
           <sp who="HYPSIPYLE" xml:id="III05-3">
             <speaker>HYPSIPYLE.</speaker>
@@ -2379,13 +2173,7 @@
             <l n="1359" xml:id="l1359">Ces monstres tout à coup deviennent impuissants ?</l>
           </sp>
           <spGrp type="song">
-            <sp who="VOIX" xml:id="III05-4">
-              <speaker>LA VOIX.</speaker>
-              <l n="1360" xml:id="l1360">C’est l’amour qui fait ce miracle,</l>
-              <l n="1361" xml:id="l1361">Et veut plus faire en ta faveur.</l>
-              <l n="1362" xml:id="l1362">N’y mets donc point d’obstacle :</l>
-              <l n="1363" xml:id="l1363">Aime qui t’aime, et donne coeur pour coeur.</l>
-            </sp>
+            <sp who="VOIX" xml:id="III05-4"><speaker>LA VOIX.</speaker><l n="1360" xml:id="l1360">C’est l’amour qui fait ce miracle,</l><l n="1361" xml:id="l1361">Et veut plus faire en ta faveur.</l><l n="1362" xml:id="l1362">N’y mets donc point d’obstacle :</l><l n="1363" xml:id="l1363">Aime qui t’aime, et donne coeur pour coeur.</l></sp>
           </spGrp>
           <sp who="HYPSIPYLE" xml:id="III05-5">
             <speaker>HYPSIPYLE.</speaker>
@@ -2607,49 +2395,7 @@
             <person corresp="#CHOEUR"/>
             </listPerson></head>
           <spGrp type="song">
-            <sp who="MEDEE" xml:id="IV02-1">
-              <speaker>MÉDÉE.</speaker>
-              <l n="1480" xml:id="l1480">Tranquille et vaste solitude,</l>
-              <l n="1481" xml:id="l1481">Qu’à votre calme heureux j’ose en vain recourir !</l>
-              <l n="1482" xml:id="l1482">Et que la rêverie est mal propre à guérir</l>
-              <l n="1483" xml:id="l1483">D’une peine qui plaît la flatteuse habitude !</l>
-              <l n="1484" xml:id="l1484">J’en viens soupirer seule au pied de vos rochers ;</l>
-              <l n="1485" xml:id="l1485">Et j’y porte avec moi dans mes voeux les plus chers</l>
-              <l n="1486" xml:id="l1486">Mes ennemis les plus à craindre :</l>
-              <l n="1487" xml:id="l1487">Plus je crois les dompter, plus je leur obéis ;</l>
-              <l n="1488" xml:id="l1488">Ma flamme s’en redouble ; et plus je veux l’éteindre,</l>
-              <l n="1489" xml:id="l1489">Plus moi-même je m’y trahis.</l>
-              <l n="1490" xml:id="l1490">C’est en vain que toute alarmée</l>
-              <l n="1491" xml:id="l1491">J’envisage à quels maux expose un inconstant :</l>
-              <l n="1492" xml:id="l1492">L’amour tremble à regret dans mon esprit flottant ;</l>
-              <l n="1493" xml:id="l1493">Et timide à l’aimer, je meurs d’en être aimée.</l>
-              <l n="1494" xml:id="l1494">Ainsi j’adore et crains son manquement de foi ;</l>
-              <l n="1495" xml:id="l1495">Je m’offre et me refuse à ce que je prévoi :</l>
-              <l n="1496" xml:id="l1496">Son change me plaît et m’étonne.</l>
-              <l n="1497" xml:id="l1497">Dans l’espoir le plus doux j’ai tout à soupçonner ;</l>
-              <l n="1498" xml:id="l1498">Et bien que tout mon coeur obstinément se donne,</l>
-              <l n="1499" xml:id="l1499">Ma raison n’ose me donner.</l>
-              <l n="1500" xml:id="l1500">Silence, raison importune ;</l>
-              <l n="1501" xml:id="l1501">Est-il temps de parler quand mon coeur s’est donné ?</l>
-              <l n="1502" xml:id="l1502">Du bien que tu lui veux ce lâche est si gêné,</l>
-              <l n="1503" xml:id="l1503">Que ton meilleur avis lui tient lieu d’infortune.</l>
-              <l n="1504" xml:id="l1504">Ce que tu mets d’obstacle à ses désirs mutins</l>
-              <l n="1505" xml:id="l1505">Anime leur révolte et le livre aux destins,</l>
-              <l n="1506" xml:id="l1506">Contre qui tu prends sa défense :</l>
-              <l n="1507" xml:id="l1507">Ton effort odieux ne sert qu’à les hâter ;</l>
-              <l n="1508" xml:id="l1508">Et ton cruel secours lui porte par avance</l>
-              <l n="1509" xml:id="l1509">Tous les maux qu’il doit redouter.</l>
-              <l n="1510" xml:id="l1510">Parle toutefois pour sa gloire ;</l>
-              <l n="1511" xml:id="l1511">Donne encor quelques lois à qui te fait la loi :</l>
-              <l n="1512" xml:id="l1512">Tyrannise un tyran qui triomphe de toi,</l>
-              <l n="1513" xml:id="l1513">Et par un faux trophée usurpe sa victoire.</l>
-              <l n="1514" xml:id="l1514">S’il est vrai que l’amour te vole tout mon coeur,</l>
-              <l n="1515" xml:id="l1515">Exile de mes yeux cet insolent vainqueur,</l>
-              <l n="1516" xml:id="l1516">Dérobe-lui tout mon visage ;</l>
-              <l n="1517" xml:id="l1517">Et si mon âme cède à mes feux trop ardents,</l>
-              <l n="1518" xml:id="l1518">Sauve tout le dehors du honteux esclavage</l>
-              <l n="1519" xml:id="l1519">Qui t’enlève tout le dedans.</l>
-            </sp>
+            <sp who="MEDEE" xml:id="IV02-1"><speaker>MÉDÉE.</speaker><l n="1480" xml:id="l1480">Tranquille et vaste solitude,</l><l n="1481" xml:id="l1481">Qu’à votre calme heureux j’ose en vain recourir !</l><l n="1482" xml:id="l1482">Et que la rêverie est mal propre à guérir</l><l n="1483" xml:id="l1483">D’une peine qui plaît la flatteuse habitude !</l><l n="1484" xml:id="l1484">J’en viens soupirer seule au pied de vos rochers ;</l><l n="1485" xml:id="l1485">Et j’y porte avec moi dans mes voeux les plus chers</l><l n="1486" xml:id="l1486">Mes ennemis les plus à craindre :</l><l n="1487" xml:id="l1487">Plus je crois les dompter, plus je leur obéis ;</l><l n="1488" xml:id="l1488">Ma flamme s’en redouble ; et plus je veux l’éteindre,</l><l n="1489" xml:id="l1489">Plus moi-même je m’y trahis.</l><l n="1490" xml:id="l1490">C’est en vain que toute alarmée</l><l n="1491" xml:id="l1491">J’envisage à quels maux expose un inconstant :</l><l n="1492" xml:id="l1492">L’amour tremble à regret dans mon esprit flottant ;</l><l n="1493" xml:id="l1493">Et timide à l’aimer, je meurs d’en être aimée.</l><l n="1494" xml:id="l1494">Ainsi j’adore et crains son manquement de foi ;</l><l n="1495" xml:id="l1495">Je m’offre et me refuse à ce que je prévoi :</l><l n="1496" xml:id="l1496">Son change me plaît et m’étonne.</l><l n="1497" xml:id="l1497">Dans l’espoir le plus doux j’ai tout à soupçonner ;</l><l n="1498" xml:id="l1498">Et bien que tout mon coeur obstinément se donne,</l><l n="1499" xml:id="l1499">Ma raison n’ose me donner.</l><l n="1500" xml:id="l1500">Silence, raison importune ;</l><l n="1501" xml:id="l1501">Est-il temps de parler quand mon coeur s’est donné ?</l><l n="1502" xml:id="l1502">Du bien que tu lui veux ce lâche est si gêné,</l><l n="1503" xml:id="l1503">Que ton meilleur avis lui tient lieu d’infortune.</l><l n="1504" xml:id="l1504">Ce que tu mets d’obstacle à ses désirs mutins</l><l n="1505" xml:id="l1505">Anime leur révolte et le livre aux destins,</l><l n="1506" xml:id="l1506">Contre qui tu prends sa défense :</l><l n="1507" xml:id="l1507">Ton effort odieux ne sert qu’à les hâter ;</l><l n="1508" xml:id="l1508">Et ton cruel secours lui porte par avance</l><l n="1509" xml:id="l1509">Tous les maux qu’il doit redouter.</l><l n="1510" xml:id="l1510">Parle toutefois pour sa gloire ;</l><l n="1511" xml:id="l1511">Donne encor quelques lois à qui te fait la loi :</l><l n="1512" xml:id="l1512">Tyrannise un tyran qui triomphe de toi,</l><l n="1513" xml:id="l1513">Et par un faux trophée usurpe sa victoire.</l><l n="1514" xml:id="l1514">S’il est vrai que l’amour te vole tout mon coeur,</l><l n="1515" xml:id="l1515">Exile de mes yeux cet insolent vainqueur,</l><l n="1516" xml:id="l1516">Dérobe-lui tout mon visage ;</l><l n="1517" xml:id="l1517">Et si mon âme cède à mes feux trop ardents,</l><l n="1518" xml:id="l1518">Sauve tout le dehors du honteux esclavage</l><l n="1519" xml:id="l1519">Qui t’enlève tout le dedans.</l></sp>
           </spGrp>
         </div>
         <div n="3" type="scene" xml:id="IV03">
@@ -3012,17 +2758,7 @@
           </sp>
           <stage>Le ciel s’ouvre et fait voior le palais de Vénus , composé de Termes à face humaine et revêtus de gazes d’or, qui lui servent de colonnes ; le lambris n’en est pas moins riche. L’Amour y araît seul, et sitôt qu’il a parlé, il s’élance ne l’air, et traverse le théâtre en volant, non pas d’un côté à l’autre, comme se font les vols ordinaires, mais d’un bout à l’autre, en tirant vers les spectateurs, ce qui n’a point encore été pratique en France de cette manière.</stage>
           <spGrp type="song">
-            <sp who="AMOUR" xml:id="IV05-2">
-              <speaker>L’AMOUR.</speaker>
-              <l n="1764" xml:id="l1764">Cessez de m’accuser, soupçonneuse déesse ; </l>
-              <l n="1765" xml:id="l1765">Je sais tenir promesse :</l>
-              <l n="1766" xml:id="l1766">C’est en vain que les dieux s’assemblent chez leur roi ;</l>
-              <l n="1767" xml:id="l1767">Je vais bien leur faire connoître</l>
-              <l n="1768" xml:id="l1768">Que je suis, quand je veux, leur véritable maître,</l>
-              <l n="1769" xml:id="l1769">Et que de ce grand jour le destin est à moi.</l>
-              <l n="1770" xml:id="l1770">Toi, si tu sais aimer, ne crains rien de funeste ;</l>
-              <l n="1771" xml:id="l1771">Obéis à Médée, et j’aurai soin du reste.</l>
-            </sp>
+            <sp who="AMOUR" xml:id="IV05-2"><speaker>L’AMOUR.</speaker><l n="1764" xml:id="l1764">Cessez de m’accuser, soupçonneuse déesse ; </l><l n="1765" xml:id="l1765">Je sais tenir promesse :</l><l n="1766" xml:id="l1766">C’est en vain que les dieux s’assemblent chez leur roi ;</l><l n="1767" xml:id="l1767">Je vais bien leur faire connoître</l><l n="1768" xml:id="l1768">Que je suis, quand je veux, leur véritable maître,</l><l n="1769" xml:id="l1769">Et que de ce grand jour le destin est à moi.</l><l n="1770" xml:id="l1770">Toi, si tu sais aimer, ne crains rien de funeste ;</l><l n="1771" xml:id="l1771">Obéis à Médée, et j’aurai soin du reste.</l></sp>
           </spGrp>
           <sp who="JUNON" xml:id="IV05-3">
             <speaker>JUNON.</speaker>
@@ -3554,14 +3290,7 @@
             <l n="2073" xml:id="l2073">De partager leur gloire ou leur confusion.</l>
           </sp>
           <spGrp type="song">
-            <sp who="ORPHEE" xml:id="V05-3">
-              <speaker>ORPHÉE, chante.</speaker>
-              <l n="2074" xml:id="l2074">Hâtez-vous, enfants de Borée,</l>
-              <l n="2075" xml:id="l2075">Demi-dieux, hâtez-vous,</l>
-              <l n="2076" xml:id="l2076">Et faites voir qu’en tous lieux, contre tous,</l>
-              <l n="2077" xml:id="l2077">À vos exploits la victoire assurée</l>
-              <l n="2078" xml:id="l2078">Suit l’effort de vos moindres coups.</l>
-            </sp>
+            <sp who="ORPHEE" xml:id="V05-3"><speaker>ORPHÉE, chante.</speaker><l n="2074" xml:id="l2074">Hâtez-vous, enfants de Borée,</l><l n="2075" xml:id="l2075">Demi-dieux, hâtez-vous,</l><l n="2076" xml:id="l2076">Et faites voir qu’en tous lieux, contre tous,</l><l n="2077" xml:id="l2077">À vos exploits la victoire assurée</l><l n="2078" xml:id="l2078">Suit l’effort de vos moindres coups.</l></sp>
           </spGrp>
           <sp who="MEDEE" xml:id="V05-4">
             <speaker>MÉDÉE.</speaker>
@@ -3571,15 +3300,7 @@
             <l n="2082" xml:id="l2082">Et pratiquez mieux l’art de les encourager.</l>
           </sp>
           <spGrp type="song">
-            <sp who="ORPHEE" xml:id="V05-5">
-              <speaker>ORPHÉE.</speaker>
-              <stage>Il chante ce second couplet cependant que Zéthès et Calïs fondent l’un après l’autre sur le dragon, et le combattent en milieu de l’air. Ils se relèvent aussitôt qu’ils ont tâché de lui porter une atteinte, et tournent face en même temps pour revenir à la charge. Médée ets au milieu des deux, qui pare leurs coups, et fait tourner le dragon vers l’un et vers l’autre, quivant qu’ils se présentent.</stage>
-              <l n="2083" xml:id="l2083">Combattez, race d’Orithye,</l>
-              <l n="2084" xml:id="l2084">Demi-dieux, combattez,</l>
-              <l n="2085" xml:id="l2085">Et faites voir que vos bras indomptés</l>
-              <l n="2086" xml:id="l2086">Se font partout une heureuse sortie</l>
-              <l n="2087" xml:id="l2087">Des périls les plus redoutés.</l>
-            </sp>
+            <sp who="ORPHEE" xml:id="V05-5"><speaker>ORPHÉE.</speaker><stage>Il chante ce second couplet cependant que Zéthès et Calïs fondent l’un après l’autre sur le dragon, et le combattent en milieu de l’air. Ils se relèvent aussitôt qu’ils ont tâché de lui porter une atteinte, et tournent face en même temps pour revenir à la charge. Médée ets au milieu des deux, qui pare leurs coups, et fait tourner le dragon vers l’un et vers l’autre, quivant qu’ils se présentent.</stage><l n="2083" xml:id="l2083">Combattez, race d’Orithye,</l><l n="2084" xml:id="l2084">Demi-dieux, combattez,</l><l n="2085" xml:id="l2085">Et faites voir que vos bras indomptés</l><l n="2086" xml:id="l2086">Se font partout une heureuse sortie</l><l n="2087" xml:id="l2087">Des périls les plus redoutés.</l></sp>
           </spGrp>
           <sp who="ZETHES" xml:id="V05-6">
             <speaker>Zéthès.</speaker>
@@ -3651,25 +3372,7 @@
             <l n="2119" xml:id="l2119">Toutes deux à ma perte à l’envi s’engager !</l>
           </sp>
           <spGrp type="song">
-            <sp who="JUNON" xml:id="V06-2">
-              <speaker>JUNON, dans son char.</speaker>
-              <l n="2120" xml:id="l2120">On vous abuse, Aæte ; et Médée elle-même,</l>
-              <l n="2121" xml:id="l2121">Dans l’amour qui la force à suivre ce qu’elle aime,</l>
-              <l n="2122" xml:id="l2122">S’abuse comme vous.</l>
-              <l n="2123" xml:id="l2123">Chalciope n’a point de part en cet ouvrage :</l>
-              <l n="2124" xml:id="l2124">Dans un coin du jardin, sous un épais nuage,</l>
-              <l n="2125" xml:id="l2125">Je l’enveloppe encor d’un sommeil assez doux,</l>
-              <l n="2126" xml:id="l2126">Cependant qu’en sa place ayant pris son visage,</l>
-              <l n="2127" xml:id="l2127">Dans l’esprit de sa soeur j’ai porté les grands coups</l>
-              <l n="2128" xml:id="l2128">Qui donnent à Jason ce dernier avantage.</l>
-              <l n="2129" xml:id="l2129">Junon a tout fait seule ; et je remonte aux cieux</l>
-              <l n="2130" xml:id="l2130">Presser le souverain des dieux</l>
-              <l n="2131" xml:id="l2131">D’approuver ce qu’il m’a plu faire.</l>
-              <l n="2132" xml:id="l2132">Mettez votre esprit en repos ;</l>
-              <l n="2133" xml:id="l2133">Si le destin vous est contraire</l>
-              <l n="2134" xml:id="l2134">Lemnos peut réparer la perte de Colchos.</l>
-              <stage>junon remonte au ciel dans ce même char.</stage>
-            </sp>
+            <sp who="JUNON" xml:id="V06-2"><speaker>JUNON, dans son char.</speaker><l n="2120" xml:id="l2120">On vous abuse, Aæte ; et Médée elle-même,</l><l n="2121" xml:id="l2121">Dans l’amour qui la force à suivre ce qu’elle aime,</l><l n="2122" xml:id="l2122">S’abuse comme vous.</l><l n="2123" xml:id="l2123">Chalciope n’a point de part en cet ouvrage :</l><l n="2124" xml:id="l2124">Dans un coin du jardin, sous un épais nuage,</l><l n="2125" xml:id="l2125">Je l’enveloppe encor d’un sommeil assez doux,</l><l n="2126" xml:id="l2126">Cependant qu’en sa place ayant pris son visage,</l><l n="2127" xml:id="l2127">Dans l’esprit de sa soeur j’ai porté les grands coups</l><l n="2128" xml:id="l2128">Qui donnent à Jason ce dernier avantage.</l><l n="2129" xml:id="l2129">Junon a tout fait seule ; et je remonte aux cieux</l><l n="2130" xml:id="l2130">Presser le souverain des dieux</l><l n="2131" xml:id="l2131">D’approuver ce qu’il m’a plu faire.</l><l n="2132" xml:id="l2132">Mettez votre esprit en repos ;</l><l n="2133" xml:id="l2133">Si le destin vous est contraire</l><l n="2134" xml:id="l2134">Lemnos peut réparer la perte de Colchos.</l><stage>junon remonte au ciel dans ce même char.</stage></sp>
           </spGrp>
           <sp who="AAETE" xml:id="V06-3">
             <speaker>AAETE.</speaker>
@@ -3738,80 +3441,10 @@
             <l n="2166" xml:id="l2166">De quelle ardeur tu prends les intérêts d’un fils.</l>
           </sp>
           <spGrp type="song">
-            <sp who="SOLEIL" xml:id="V07-2">
-              <speaker>LE SOLEIL.</speaker>
-              <l n="2167" xml:id="l2167">Je plains ton infortune, et ne puis davantage :</l>
-              <l n="2168" xml:id="l2168">Un noir destin s’oppose à tes justes desseins,</l>
-              <l n="2169" xml:id="l2169">Et depuis Phaéton, ce brillant attelage</l>
-              <l n="2170" xml:id="l2170">Ne peut passer en d’autres mains :</l>
-              <l n="2171" xml:id="l2171">Sous un ordre éternel qui gouverne ma route,</l>
-              <l n="2172" xml:id="l2172">Je dispense en esclave et les nuits et les jours.</l>
-              <l n="2173" xml:id="l2173">Mais enfin ton père t’écoute,</l>
-              <l n="2174" xml:id="l2174">Et joint ses voeux aux tiens pour un plus fort secours.</l>
-              <stage>Ici s’ouvre le ceil de Jupiter, et le soleil continue en lui adressant sa parole.</stage>
-              <l n="2175" xml:id="l2175">Maître absolu des destinées,</l>
-              <l n="2176" xml:id="l2176">Change leurs dures lois en faveur de mon sang,</l>
-              <l n="2177" xml:id="l2177">Et laisse-lui garder son rang</l>
-              <l n="2178" xml:id="l2178">Parmi les têtes couronnées.</l>
-              <l n="2179" xml:id="l2179">C’est toi qui règles les états,</l>
-              <l n="2180" xml:id="l2180">C’est toi qui départs les couronnes ;</l>
-              <l n="2181" xml:id="l2181">Et quand le sort jaloux met un monarque à bas,</l>
-              <l n="2182" xml:id="l2182">Il détruit ton ouvrage, et fait des attentats</l>
-              <l n="2183" xml:id="l2183">Qui dérobent ce que tu donnes.</l>
-            </sp>
-            <sp who="JUNON" xml:id="V07-3">
-              <speaker>JUNON.</speaker>
-              <l n="2184" xml:id="l2184">Je ne mets point d’obstacle à de si justes voeux ;</l>
-              <l n="2185" xml:id="l2185">Mais laissez ma puissance entière ;</l>
-              <l n="2186" xml:id="l2186">Et si l’ordre du sort se rompt à sa prière,</l>
-              <l n="2187" xml:id="l2187">D’un hymen que j’ai fait ne rompez pas les noeuds.</l>
-              <l n="2188" xml:id="l2188">Comme je ne veux point détruire son Aæte,</l>
-              <l n="2189" xml:id="l2189">Ne détruisez pas mes héros :</l>
-              <l n="2190" xml:id="l2190">Assurez à ses jours gloire, sceptre, repos ;</l>
-              <l n="2191" xml:id="l2191">Assurez-lui tous les biens qu’il souhaite ;</l>
-              <l n="2192" xml:id="l2192">Mais de la même main assurez à Jason</l>
-              <l n="2193" xml:id="l2193">Médée et la toison.</l>
-            </sp>
-            <sp who="JUPITER" xml:id="V07-4">
-              <speaker>JUPITER.</speaker>
-              <l n="2194" xml:id="l2194">Des arrêts du destin l’ordre est invariable,</l>
-              <l n="2195" xml:id="l2195">Rien ne sauroit le rompre en faveur de ton fils,</l>
-              <l n="2196" xml:id="l2196">Soleil ; et ce trésor surpris</l>
-              <l n="2197" xml:id="l2197">Lui rend de ses états la perte inévitable.</l>
-              <l n="2198" xml:id="l2198">Mais la même légèreté</l>
-              <l n="2199" xml:id="l2199">Qui donne Jason à Médée</l>
-              <l n="2200" xml:id="l2200">Servira de supplice à l’infidélité</l>
-              <l n="2201" xml:id="l2201">Où pour lui contre un père elle s’est hasardée.</l>
-              <l n="2202" xml:id="l2202">Persès dans la Scythie arme un bras souverain ;</l>
-              <l n="2203" xml:id="l2203">Sitôt qu’il paraîtra, quittez ces lieux, Aæte,</l>
-              <l n="2204" xml:id="l2204">Et par une prompte retraite,</l>
-              <l n="2205" xml:id="l2205">Épargnez tout le sang qui coulerait en vain.</l>
-              <l n="2206" xml:id="l2206">De Lemnos faites votre asile ;</l>
-              <l n="2207" xml:id="l2207">Le ciel veut qu’Hypsipyle</l>
-              <l n="2208" xml:id="l2208">Réponde aux voeux d’Absyrte, et qu’un sceptre dotal</l>
-              <l n="2209" xml:id="l2209">Adoucisse le cours d’un peu de temps fatal.</l>
-              <l n="2210" xml:id="l2210">Car enfin de votre perfide</l>
-              <l n="2211" xml:id="l2211">Doit sortir un Médus qui vous doit rétablir ;</l>
-              <l n="2212" xml:id="l2212">À rentrer dans Colchos il sera votre guide ;</l>
-              <l n="2213" xml:id="l2213">Et mille grands exploits qui doivent l’ennoblir,</l>
-              <l n="2214" xml:id="l2214">Feront de tous vos maux les assurés remèdes,</l>
-              <l n="2215" xml:id="l2215">Et donneront naissance à l’empire des Mèdes.</l>
-              <stage>Le palais de Jupiter et celui du Soleil se referment.</stage>
-            </sp>
-            <sp who="SOLEIL" xml:id="V07-5">
-              <speaker>LE SOLEIL.</speaker>
-              <l n="2216" xml:id="l2216">Ne vous permettez plus d’inutiles soupirs,</l>
-              <l n="2217" xml:id="l2217">Puisque le ciel répare et venge votre perte,</l>
-              <l n="2218" xml:id="l2218">Et qu’une autre couronne offerte</l>
-              <l n="2219" xml:id="l2219">Ne peut plus vous souffrir de justes déplaisirs.</l>
-              <l n="2220" xml:id="l2220">Adieu. J’ai trop longtemps détourné ma carrière,</l>
-              <l n="2221" xml:id="l2221">Et trop perdu pour vous en ces lieux de moments</l>
-              <l n="2222" xml:id="l2222">Qui devoient ailleurs ma lumière.</l>
-              <l n="2223" xml:id="l2223">Allez, heureux amants,</l>
-              <l n="2224" xml:id="l2224">Pour qui Jupiter montre une faveur entière ;</l>
-              <l n="2225" xml:id="l2225">Hâtez-vous d’obéir à ses commandements.</l>
-              <stage>Il disparaît en baissant, comme pour fondre dans la mer.</stage>
-            </sp>
+            <sp who="SOLEIL" xml:id="V07-2"><speaker>LE SOLEIL.</speaker><l n="2167" xml:id="l2167">Je plains ton infortune, et ne puis davantage :</l><l n="2168" xml:id="l2168">Un noir destin s’oppose à tes justes desseins,</l><l n="2169" xml:id="l2169">Et depuis Phaéton, ce brillant attelage</l><l n="2170" xml:id="l2170">Ne peut passer en d’autres mains :</l><l n="2171" xml:id="l2171">Sous un ordre éternel qui gouverne ma route,</l><l n="2172" xml:id="l2172">Je dispense en esclave et les nuits et les jours.</l><l n="2173" xml:id="l2173">Mais enfin ton père t’écoute,</l><l n="2174" xml:id="l2174">Et joint ses voeux aux tiens pour un plus fort secours.</l><stage>Ici s’ouvre le ceil de Jupiter, et le soleil continue en lui adressant sa parole.</stage><l n="2175" xml:id="l2175">Maître absolu des destinées,</l><l n="2176" xml:id="l2176">Change leurs dures lois en faveur de mon sang,</l><l n="2177" xml:id="l2177">Et laisse-lui garder son rang</l><l n="2178" xml:id="l2178">Parmi les têtes couronnées.</l><l n="2179" xml:id="l2179">C’est toi qui règles les états,</l><l n="2180" xml:id="l2180">C’est toi qui départs les couronnes ;</l><l n="2181" xml:id="l2181">Et quand le sort jaloux met un monarque à bas,</l><l n="2182" xml:id="l2182">Il détruit ton ouvrage, et fait des attentats</l><l n="2183" xml:id="l2183">Qui dérobent ce que tu donnes.</l></sp>
+            <sp who="JUNON" xml:id="V07-3"><speaker>JUNON.</speaker><l n="2184" xml:id="l2184">Je ne mets point d’obstacle à de si justes voeux ;</l><l n="2185" xml:id="l2185">Mais laissez ma puissance entière ;</l><l n="2186" xml:id="l2186">Et si l’ordre du sort se rompt à sa prière,</l><l n="2187" xml:id="l2187">D’un hymen que j’ai fait ne rompez pas les noeuds.</l><l n="2188" xml:id="l2188">Comme je ne veux point détruire son Aæte,</l><l n="2189" xml:id="l2189">Ne détruisez pas mes héros :</l><l n="2190" xml:id="l2190">Assurez à ses jours gloire, sceptre, repos ;</l><l n="2191" xml:id="l2191">Assurez-lui tous les biens qu’il souhaite ;</l><l n="2192" xml:id="l2192">Mais de la même main assurez à Jason</l><l n="2193" xml:id="l2193">Médée et la toison.</l></sp>
+            <sp who="JUPITER" xml:id="V07-4"><speaker>JUPITER.</speaker><l n="2194" xml:id="l2194">Des arrêts du destin l’ordre est invariable,</l><l n="2195" xml:id="l2195">Rien ne sauroit le rompre en faveur de ton fils,</l><l n="2196" xml:id="l2196">Soleil ; et ce trésor surpris</l><l n="2197" xml:id="l2197">Lui rend de ses états la perte inévitable.</l><l n="2198" xml:id="l2198">Mais la même légèreté</l><l n="2199" xml:id="l2199">Qui donne Jason à Médée</l><l n="2200" xml:id="l2200">Servira de supplice à l’infidélité</l><l n="2201" xml:id="l2201">Où pour lui contre un père elle s’est hasardée.</l><l n="2202" xml:id="l2202">Persès dans la Scythie arme un bras souverain ;</l><l n="2203" xml:id="l2203">Sitôt qu’il paraîtra, quittez ces lieux, Aæte,</l><l n="2204" xml:id="l2204">Et par une prompte retraite,</l><l n="2205" xml:id="l2205">Épargnez tout le sang qui coulerait en vain.</l><l n="2206" xml:id="l2206">De Lemnos faites votre asile ;</l><l n="2207" xml:id="l2207">Le ciel veut qu’Hypsipyle</l><l n="2208" xml:id="l2208">Réponde aux voeux d’Absyrte, et qu’un sceptre dotal</l><l n="2209" xml:id="l2209">Adoucisse le cours d’un peu de temps fatal.</l><l n="2210" xml:id="l2210">Car enfin de votre perfide</l><l n="2211" xml:id="l2211">Doit sortir un Médus qui vous doit rétablir ;</l><l n="2212" xml:id="l2212">À rentrer dans Colchos il sera votre guide ;</l><l n="2213" xml:id="l2213">Et mille grands exploits qui doivent l’ennoblir,</l><l n="2214" xml:id="l2214">Feront de tous vos maux les assurés remèdes,</l><l n="2215" xml:id="l2215">Et donneront naissance à l’empire des Mèdes.</l><stage>Le palais de Jupiter et celui du Soleil se referment.</stage></sp>
+            <sp who="SOLEIL" xml:id="V07-5"><speaker>LE SOLEIL.</speaker><l n="2216" xml:id="l2216">Ne vous permettez plus d’inutiles soupirs,</l><l n="2217" xml:id="l2217">Puisque le ciel répare et venge votre perte,</l><l n="2218" xml:id="l2218">Et qu’une autre couronne offerte</l><l n="2219" xml:id="l2219">Ne peut plus vous souffrir de justes déplaisirs.</l><l n="2220" xml:id="l2220">Adieu. J’ai trop longtemps détourné ma carrière,</l><l n="2221" xml:id="l2221">Et trop perdu pour vous en ces lieux de moments</l><l n="2222" xml:id="l2222">Qui devoient ailleurs ma lumière.</l><l n="2223" xml:id="l2223">Allez, heureux amants,</l><l n="2224" xml:id="l2224">Pour qui Jupiter montre une faveur entière ;</l><l n="2225" xml:id="l2225">Hâtez-vous d’obéir à ses commandements.</l><stage>Il disparaît en baissant, comme pour fondre dans la mer.</stage></sp>
           </spGrp>
           <sp who="HYPSIPYLE" xml:id="V07-6">
             <speaker>HYPSIPYLE.</speaker>

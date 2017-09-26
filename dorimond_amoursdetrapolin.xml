@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Les amours de trapolin</title>
         <title type="sub">, comédie</title>
-        <author academie="" born="1628" born_location="" death="1673" death_location=""><surname>Dorimond</surname><forename> Nicolas Drouin dit</forename></author>
+        <author academie="" born="1628" born_location="" death="1673" death_location="">
+          <surname>Dorimond</surname>
+          <forename> Nicolas Drouin dit</forename>
+        </author>
       </titleStmt>
       <publicationStmt>
         <editor>Édition critique établie par Daphné Dinard dans le cadre d’un mémoire de master 2 sous la direction de Georges Forestier (2013-2014)</editor>
@@ -41,34 +43,42 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">LES AMOURS DE TRAPOLIN</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1662">M. DC. LXII. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor bio="DORIMONT" id="DORIMOND, Nicolas Drouin dit"/>
-      <docImprint> <privilege value=""> <head>EXTRAIT DU PRIVILÈGE DU ROI.</head> <p>Par grâce et privilège du Roi, donné à Paris le vingt-sixième Mars 1661. Signé, Par le Roi en son Conseil, DE FAYES. Il est permis au Sieur DORIMOND, Comédien de Mademoiselle, de faire imprimer une pièce de théâtre intitulée La Comédie de la Comédie et les Amours de Trapolin, par lui composée et représentée par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu’il voudra choisir, pendant cinq années. Et défenses sont faites à tous autres de l’imprimer ni vendre d’autre édition que celle de l’exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d’amende, de tous dépens, dommages et intérêts, comme il est porté plus amplement par lesdites Lettres de Privilège.</p> <p>Et ledit Sieur Dorimond a cédé et transporté son privilège à Jean Ribou, et Gabriel Quinet, marchands libraires à Paris, pour en jouir suivant l’accord fait entre eux.</p> <p>Registré sur le Livre de la Communauté, suivant l’Arrest de la Cour.</p> <p>Signé JOSSE, Syndic.</p> <p>Les Exemplaires ont été fournis.</p> </privilege> <acheveImprime value="1662-01-22">Achevé d’imprimer pour la première fois, le 22. Janvier 1662.</acheveImprime> <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, sur le Quai des Augustins, à L’Image Saint Louis.</printer> </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">LES AMOURS DE TRAPOLIN</titlePart>
+          <titlePart type="sub">COMÉDIE</titlePart>
+        </docTitle>
+        <docDate value="1662">M. DC. LXII. AVEC PRIVILÈGE DU ROI.</docDate>
+        <docAuthor bio="DORIMONT" id="DORIMOND, Nicolas Drouin dit"/>
+        <docImprint>
+          <privilege value=""> <head>EXTRAIT DU PRIVILÈGE DU ROI.</head> <p>Par grâce et privilège du Roi, donné à Paris le vingt-sixième Mars 1661. Signé, Par le Roi en son Conseil, DE FAYES. Il est permis au Sieur DORIMOND, Comédien de Mademoiselle, de faire imprimer une pièce de théâtre intitulée La Comédie de la Comédie et les Amours de Trapolin, par lui composée et représentée par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu’il voudra choisir, pendant cinq années. Et défenses sont faites à tous autres de l’imprimer ni vendre d’autre édition que celle de l’exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d’amende, de tous dépens, dommages et intérêts, comme il est porté plus amplement par lesdites Lettres de Privilège.</p> <p>Et ledit Sieur Dorimond a cédé et transporté son privilège à Jean Ribou, et Gabriel Quinet, marchands libraires à Paris, pour en jouir suivant l’accord fait entre eux.</p> <p>Registré sur le Livre de la Communauté, suivant l’Arrest de la Cour.</p> <p>Signé JOSSE, Syndic.</p> <p>Les Exemplaires ont été fournis.</p> </privilege>
+          <acheveImprime value="1662-01-22">Achevé d’imprimer pour la première fois, le 22. Janvier 1662.</acheveImprime>
+          <printer id="RIBOU">À PARIS, Chez JEAN RIBOU, sur le Quai des Augustins, à L’Image Saint Louis.</printer>
+        </docImprint>
+        <performance>
         <premiere date="(non indiqué)" location="(non indiqué)"/>
       </performance>
-      <div type="dedicace">
+        <note>Ce texte est édité dans le même volume avec "La Comédie de la Comédie" du même auteur.</note>
+      </titlePage>
+      <div type="dedication">
         <salute>À MONSIEUR DE VAISSÉ.</salute>
         <head>MONSIEUR,</head>
         <p>Les belles qualités que vous possédez attirent l’admiration de tous ceux qui vous connaissent, et sont ordinairement le digne sujet d’une louange légitime. Mais, MONSIEUR, je viens vous confesser que je suis hors d’état de m’acquitter de ce que je vous dois, que les muses m’ont refusé le présent qui pourrait être digne de vous et de l’honneur que vous m’avez fait tant de fois de souhaiter mes ouvrages, et de les souffrir, m’a donné autant de sujet d’étonnement que de reconnaissance : Je vous prie donc de fermer les yeux sur le présent que je vous faits, qui n’est pas digne de vous, et qui pour un Gentilhomme, dont la valeur s’est signalée en milles belles occasions, et qui porte d’illustres cicatrices, qui sont les beaux témoignages du service que vous avez rendu à la France, il fallait un ouvrage plus sublime ; mais l’ardeur que j’ai de vous donner quelques preuves de la vénération et de l’estime que j’ai conservée pour vous a précipité mon dessein, et m’a fait vous dédier cette comédie, moins pour la vanité de la faire paraître au public, que pour celle de montrer à tout le monde que je suis, MONSIEUR,</p>
         <p>Votre très humble et très obéissant serviteur,</p>
         <p>DORIMOND.</p>
       </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role age="A" id="L'IGNORANCE" sex="2" stat_amour="néant" statut="allégorie" type="P" xml:id="IGNORANCE">L’IGNORANCE</role>.</castItem>
-        <castItem><role age="A" id="TRAPOLIN" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="TRAPOLIN">TRAPOLIN</role>.</castItem>
-        <castItem><role age="A" id="LE DOCTEUR" sex="1" stat_amour="néant" statut="docteur" type="H" xml:id="LEDOCTEUR">LE DOCTEUR</role>.</castItem>
-        <castItem><role age="A" id="PHILOSOPHIE" sex="2" stat_amour="néant" statut="allégorie" type="H" xml:id="PHILOSOPHIE">PHILOSOPHIE</role>, fille du Docteur.</castItem>
-        <castItem><role age="A" id="POÉSIE" sex="2" stat_amour="néant" statut="allégorie" type="H" xml:id="POESIE">POÉSIE</role>.</castItem>
-        <castItem><role age="A" id="GALANTERIE" sex="2" stat_amour="néant" statut="allégorie" type="H" xml:id="GALANTERIE">GALANTERIE</role>, Cousine.</castItem>
-      </castList>
-      <set country="(non indiqué)" link="" location="(non indiqué)" periode="(inconnu)"/>
-      <note>Ce texte est édité dans le même volume avec "La Comédie de la Comédie" du même auteur.</note>
+      <div xml:id="castList">
+        <castList>
+          <head>ACTEURS</head>
+          <castItem><role xml:id="IGNORANCE" rend="female">L’IGNORANCE</role>.</castItem>
+          <castItem><role xml:id="TRAPOLIN" rend="male">TRAPOLIN</role>.</castItem>
+          <castItem><role xml:id="LEDOCTEUR" rend="male">LE DOCTEUR</role>.</castItem>
+          <castItem><role xml:id="PHILOSOPHIE" rend="female">PHILOSOPHIE</role>, fille du Docteur.</castItem>
+          <castItem><role xml:id="POESIE" rend="female">POÉSIE</role>.</castItem>
+          <castItem><role xml:id="GALANTERIE" rend="female">GALANTERIE</role>, Cousine.</castItem>
+        </castList>
+        <set country="(non indiqué)" link="" location="(non indiqué)" periode="(inconnu)"/>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">

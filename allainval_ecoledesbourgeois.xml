@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -42,37 +41,41 @@
   </teiHeader>
   <text>
     <front>
-      <docTitle>
-        <titlePart type="main">L’ÉCOLE DES BOURGEOIS</titlePart>
-        <titlePart type="sub">COMÉDIE en TROIS ACTES avec un PROLOGUE</titlePart>
-      </docTitle>
-      <docDate value="1728">M. DCC XXVIII.</docDate>
-      <docAuthor bio="allainval" id="Abbé d'ALLAINVAL">par M. d’ALLAINVAL</docAuthor>
-      <docImprint>
-        <privilege id=""/>
-        <acheveImprime id=""/>
-        <editor id="">À PARIS, Département Étrangers, chez tous les Libraires.</editor>
-      </docImprint>
-      <performance>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">L’ÉCOLE DES BOURGEOIS</titlePart>
+          <titlePart type="sub">COMÉDIE en TROIS ACTES avec un PROLOGUE</titlePart>
+        </docTitle>
+        <docDate value="1728">M. DCC XXVIII.</docDate>
+        <docAuthor bio="allainval" id="Abbé d'ALLAINVAL">par M. d’ALLAINVAL</docAuthor>
+        <docImprint>
+          <privilege id=""/>
+          <acheveImprime id=""/>
+          <editor id="">À PARIS, Département Étrangers, chez tous les Libraires.</editor>
+        </docImprint>
+        <performance>
         <premiere date="1728-09-20" location="Théâtre de la rue des Fossés Saint-Germain ">Représentée la 1ère fois le lundi 20 septembre 1728, par les comédiens ordinaires de sa Majesté au Théâtre de la rue des Fossés Saint-Germain.</premiere>
       </performance>
-      <castList>
-        <head>PERSONNAGES</head>
-        <castItem><role age="A" id="MONSIEUR MATHIEU" sex="1" stat_amour="néant" statut="bourgeois" type="H" xml:id="MONSIEURMATHIEU">MONSIEUR MATHIEU</role>, frère de Madame Abraham.</castItem>
-        <castItem><role age="J" id="DAMIS" rend="junior" sex="1" stat_amour="amant" statut="bourgeois" type="H" xml:id="DAMIS">DAMIS</role>, amant de Benjamine.</castItem>
-        <castItem><role age="A" id="LE COMMISSAIRE" sex="1" stat_amour="néant" statut="commissaire" type="H" xml:id="LECOMMISSAIRE">UN COMMISSAIRE</role>, parent de Madame Abraham.</castItem>
-        <castItem><role age="A" id="UN NOTAIRE" sex="1" stat_amour="néant" statut="notaire" type="H" xml:id="LENOTAIRE">UN NOTAIRE</role>, parent de Madame Abraham.</castItem>
-        <castItem><role age="A" id="PICARD" sex="1" stat_amour="néant" statut="laquais" type="H" xml:id="PICARD">PICARD</role>, laquais de Madame Abraham.</castItem>
-        <castItem><role age="A" id="LE MARQUIS de MONCADE" sex="1" stat_amour="amoureux rival" statut="marquis" type="H" xml:id="LEMARQUIS">LE MARQUIS de MONCADE</role>.</castItem>
-        <castItem><role age="A" id="UN-COMMANDEUR" sex="1" stat_amour="néant" statut="commandeur" type="H" xml:id="LECOMMANDEUR">UN COMMANDEUR</role>, ami du Marquis.</castItem>
-        <castItem><role age="A" id="LE COMTE" sex="1" stat_amour="néant" statut="comte" type="H" xml:id="LECOMTE">UN COMTE</role>, ami du Marquis.</castItem>
-        <castItem><role age="A" id="MONSIEUR POT-DE-VIN" sex="1" stat_amour="néant" statut="intendant" type="H" xml:id="MONSIEURPOTDEVIN">MONSIEUR POT-DE-VIN</role>, intendant du Marquis.</castItem>
-        <castItem><role age="A" id="UN COUREUR" sex="1" stat_amour="néant" statut="coureur" type="H" xml:id="LECOUREUR">UN COUREUR</role> du marquis.</castItem>
-        <castItem><role age="A" id="MADAME ABRAHAM" sex="2" stat_amour="néant" statut="" type="H" xml:id="MADAMEABRAHAM">Madame ABRAHAM</role>.</castItem>
-        <castItem><role age="J" id="BENJAMINE" rend="junior" sex="2" stat_amour="néant" statut="" type="H" xml:id="BENJAMINE">BENJAMINE</role>, sa fille.</castItem>
-        <castItem><role age="A" id="MARTON" sex="2" stat_amour="amant" statut="suivante" type="H" xml:id="MARTHON">MARTON</role>, suivante de Benjamine.</castItem>
-      </castList>
-      <set country="France" link="" location="Paris" periode="XVIIIème">La scène est à Paris, chez Madame Abraham.</set>
+      </titlePage>
+      <div xml:id="castList">
+        <castList>
+          <head>PERSONNAGES</head>
+          <castItem><role xml:id="MONSIEURMATHIEU" rend="male">MONSIEUR MATHIEU</role>, frère de Madame Abraham.</castItem>
+          <castItem><role xml:id="DAMIS" rend="junior">DAMIS</role>, amant de Benjamine.</castItem>
+          <castItem><role xml:id="LECOMMISSAIRE" rend="male">UN COMMISSAIRE</role>, parent de Madame Abraham.</castItem>
+          <castItem><role xml:id="LENOTAIRE" rend="male">UN NOTAIRE</role>, parent de Madame Abraham.</castItem>
+          <castItem><role xml:id="PICARD" rend="male">PICARD</role>, laquais de Madame Abraham.</castItem>
+          <castItem><role xml:id="LEMARQUIS" rend="male">LE MARQUIS de MONCADE</role>.</castItem>
+          <castItem><role xml:id="LECOMMANDEUR" rend="male">UN COMMANDEUR</role>, ami du Marquis.</castItem>
+          <castItem><role xml:id="LECOMTE" rend="male">UN COMTE</role>, ami du Marquis.</castItem>
+          <castItem><role xml:id="MONSIEURPOTDEVIN" rend="male">MONSIEUR POT-DE-VIN</role>, intendant du Marquis.</castItem>
+          <castItem><role xml:id="LECOUREUR" rend="male">UN COUREUR</role> du marquis.</castItem>
+          <castItem><role xml:id="MADAMEABRAHAM" rend="female">Madame ABRAHAM</role>.</castItem>
+          <castItem><role xml:id="BENJAMINE" rend="junior">BENJAMINE</role>, sa fille.</castItem>
+          <castItem><role xml:id="MARTHON" rend="female">MARTON</role>, suivante de Benjamine.</castItem>
+        </castList>
+        <set country="France" link="" location="Paris" periode="XVIIIème">La scène est à Paris, chez Madame Abraham.</set>
+      </div>
     </front>
     <body>
       <div1 n="1" type="act" xml:id="I">
