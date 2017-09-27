@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>La veuve indécise</title>
         <title type="sub">, opéra comique</title>
-        <author born="1720" born_location="Ham" death="1757" death_location="Paris" academie="">
+        <author academie="" born="1720" born_location="Ham" death="1757" death_location="Paris">
           <surname>Vadé</surname>
           <forename> Jean-Joseph</forename>
         </author>
@@ -55,39 +56,29 @@
           <titlePart type="sub">PARODIE DE LA VEUVE COQUETTE.</titlePart>
         </docTitle>
         <docDate value="1758">1758.</docDate>
-        <docAuthor id="VADÉ, Jean-Joseph" bio="vade">PAR M. VADÉ.</docAuthor>
-        <docImprint>
-          <privilege date="">
-          <head/>
-        </privilege>
-          <acheveImprime id=""/>
-          <printer/>
-        </docImprint>
+        <docAuthor bio="vade" id="VADÉ, Jean-Joseph">PAR M. VADÉ.</docAuthor>
         <performance>
-        <premiere date="1759" location="Théâtre de l'Opéra comique">Représenté pour la première fois sur le théâtre de l’Opéra Comique, le 24 Septembre 1759.</premiere>
-      </performance>
+          <premiere date="1759" location="Théâtre de l'Opéra comique">Représenté pour la première fois sur le théâtre de l’Opéra Comique, le 24 Septembre 1759.</premiere>
+        </performance>
       </titlePage>
-      <div type="preface">
-        <head/>
-        <p class="texte"/>
-      </div>
       <div xml:id="castList">
         <castList>
           <head>ACTEURS</head>
-          <castItem><role xml:id="ALISON" rend="female">ALISON</role>, Veuve.</castItem>
-          <castItem><role xml:id="SUSON" rend="female">SUSON</role>, sa Cousine.</castItem>
-          <castItem><role xml:id="MATHURIN" rend="male">MATHURIN</role>, amoureux d’Alison.</castItem>
-          <castItem><role xml:id="COLIN" rend="male">COLIN</role>, amoureux d’Alison.</castItem>
+          <castItem><role rend="female" xml:id="ALISON">ALISON</role>, Veuve.</castItem>
+          <castItem><role rend="female" xml:id="SUSON">SUSON</role>, sa Cousine.</castItem>
+          <castItem><role rend="male" xml:id="MATHURIN">MATHURIN</role>, amoureux d’Alison.</castItem>
+          <castItem><role rend="male" xml:id="COLIN">COLIN</role>, amoureux d’Alison.</castItem>
         </castList>
-        <set location="France" country="France" periode="XVIIIème" link=""/>
+        <set country="France" link="" location="France" periode="XVIIIème"/>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE UNIQUE</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf1"><person corresp="#ALISON"/></listPerson></head>
-          <sp xml:id="I01-1" who="ALISON">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#ALISON"/></listPerson></head>
+          <sp who="ALISON" xml:id="I01-1">
             <speaker>ALISON.</speaker>
             <stage type="[N/A]">ARIETTE.</stage>
             <l n="1" xml:id="l1">D’un triste veuvage</l>
@@ -105,22 +96,24 @@
             <l n="13" xml:id="l13">Qui des deux choisir ?</l>
             <l n="14" xml:id="l14">Mais je présage</l>
             <l n="15" xml:id="l15">Que le repentir</l>
-            <l n="16" xml:id="l16">Pourrait venir.  </l>
+            <l n="16" xml:id="l16">Pourrait venir. </l>
             <p>
               <s>Allons à ce sujet consulter ma cousine, et profitons de ses conseils.</s>
             </p>
             <stage type="exit">Elle sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II. Mathurin, Colin.<listPerson type="configuration" xml:id="conf2"><person corresp="#MATHURIN"/><person corresp="#COLIN"/></listPerson></head>
-          <sp xml:id="I02-1" who="MATHURIN">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Mathurin, Colin.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#MATHURIN"/>
+            <person corresp="#COLIN"/></listPerson></head>
+          <sp who="MATHURIN" xml:id="I02-1">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Oui, te dis je ; son penchant pour moi la détermine.</s>
             </p>
           </sp>
-          <sp xml:id="I02-2" who="COLIN">
+          <sp who="COLIN" xml:id="I02-2">
             <speaker>COLIN.</speaker>
             <p>
               <s>Oh ! </s>
@@ -128,7 +121,7 @@
             </p>
             <stage type="[N/A]">DUO.</stage>
           </sp>
-          <sp xml:id="I02-3" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I02-3">
             <speaker>MATHURIN.</speaker>
             <l n="17" xml:id="l17">N’y prétends pas.</l>
             <l n="18" xml:id="l18">De ma richesse</l>
@@ -140,7 +133,7 @@
             <l n="24" xml:id="l24">Ces vains débats ;</l>
             <l n="25" xml:id="l25">N’y prétends pas.</l>
           </sp>
-          <sp xml:id="I02-4" who="COLIN">
+          <sp who="COLIN" xml:id="I02-4">
             <speaker>COLIN.</speaker>
             <l n="26" xml:id="l26">N’y prétends pas ;</l>
             <l n="27" xml:id="l27">Car ma tendresse</l>
@@ -153,46 +146,46 @@
             <l n="33" xml:id="l33">Suivre ses pas;</l>
             <l n="34" xml:id="l34">N’y prétends pas.</l>
           </sp>
-          <sp xml:id="I02-5" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I02-5">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Mais quel droit as-tu pour y prétendre ?</s>
             </p>
           </sp>
-          <sp xml:id="I02-6" who="COLIN">
+          <sp who="COLIN" xml:id="I02-6">
             <speaker>COLIN.</speaker>
             <p>
               <s>Eh ! </s>
               <s>Quel droit as-tu, toi, de me la contester ?</s>
             </p>
           </sp>
-          <sp xml:id="I02-7" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I02-7">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Moi ? </s>
               <s>J’étais l’ami du défunt ; elle m’aimait aussi dès ce temps-là : ainsi j’ai pour moi l’ancienneté.</s>
             </p>
           </sp>
-          <sp xml:id="I02-8" who="COLIN">
+          <sp who="COLIN" xml:id="I02-8">
             <speaker>COLIN.</speaker>
             <p>
               <s>Oh ! </s>
               <s>Moi, c’est depuis son veuvage qu’elle m’aime ; ainsi j’ai pour moi la nouveauté.</s>
             </p>
           </sp>
-          <sp xml:id="I02-9" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I02-9">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Arrange-toi comme tu voudras, mais je n’en démordrai pas.</s>
             </p>
           </sp>
-          <sp xml:id="I02-10" who="COLIN">
+          <sp who="COLIN" xml:id="I02-10">
             <speaker>COLIN.</speaker>
             <p>
               <s>Ni moi non plus.</s>
             </p>
           </sp>
-          <sp xml:id="I02-11" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I02-11">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Eh ! </s>
@@ -200,20 +193,20 @@
               <s>Tu veux donc te faire frotter ?</s>
             </p>
           </sp>
-          <sp xml:id="I02-12" who="COLIN">
+          <sp who="COLIN" xml:id="I02-12">
             <speaker>COLIN.</speaker>
             <p>
               <s>Par qui ?</s>
             </p>
           </sp>
-          <sp xml:id="I02-13" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I02-13">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Par moi.</s>
             </p>
             <stage type="[N/A]">DUO.</stage>
           </sp>
-          <sp xml:id="I02-14" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I02-14">
             <speaker>MATHURIN.</speaker>
             <l n="35" xml:id="l35">Ah ! voyons donc ;</l>
             <l n="36" xml:id="l36">C’est tout de bon :</l>
@@ -225,7 +218,7 @@
             <l n="42" xml:id="l42">Tais toi, poltron,</l>
             <l n="43" xml:id="l43">Poltron, poltron.</l>
           </sp>
-          <sp xml:id="I02-15" who="COLIN">
+          <sp who="COLIN" xml:id="I02-15">
             <speaker>COLIN.</speaker>
             <l n="44" xml:id="l44">Tu le veux donc ?</l>
             <l n="45" xml:id="l45">Oui, tout de bon :</l>
@@ -238,93 +231,97 @@
             <l n="52" xml:id="l52">Poltron, poltron.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Alison, Suson, Mathurin, Colin.<listPerson type="configuration" xml:id="conf3"><person corresp="#SUSON"/><person corresp="#ALISON"/><person corresp="#MATHURIN"/><person corresp="#COLIN"/><person corresp="#MATHURINetCOLIN"/></listPerson></head>
-          <sp xml:id="I03-1" who="SUSON">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Alison, Suson, Mathurin, Colin.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#SUSON"/>
+            <person corresp="#ALISON"/>
+            <person corresp="#MATHURIN"/>
+            <person corresp="#COLIN"/> </listPerson></head>
+          <sp who="SUSON" xml:id="I03-1">
             <speaker>SUSON, accourant.</speaker>
             <p>
               <s>Pourquoi donc tout ce bruit ?</s>
             </p>
           </sp>
-          <sp xml:id="I03-2" who="ALISON">
+          <sp who="ALISON" xml:id="I03-2">
             <speaker>ALISON.</speaker>
             <p>
               <s>Pourquoi donc tout ce vacarme ?</s>
             </p>
           </sp>
-          <sp xml:id="I03-3" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-3">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>C’est lui qui veut me disputer ton coeur.</s>
             </p>
           </sp>
-          <sp xml:id="I03-4" who="COLIN">
+          <sp who="COLIN" xml:id="I03-4">
             <speaker>COLIN.</speaker>
             <p>
               <s>C’est lui qui prétend l’emporter sur moi.</s>
             </p>
           </sp>
-          <sp xml:id="I03-5" who="ALISON">
+          <sp who="ALISON" xml:id="I03-5">
             <speaker>ALISON.</speaker>
             <p>
               <s>Mais vraiment cela me fait honneur.</s>
             </p>
           </sp>
-          <sp xml:id="I03-6" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-6">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>C’est votre faute aussi.</s>
             </p>
           </sp>
-          <sp xml:id="I03-7" who="ALISON">
+          <sp who="ALISON" xml:id="I03-7">
             <speaker>ALISON.</speaker>
             <p>
-              <s>Pourquoi donc ?  </s>
+              <s>Pourquoi donc ? </s>
             </p>
           </sp>
-          <sp xml:id="I03-8" who="COLIN">
+          <sp who="COLIN" xml:id="I03-8">
             <speaker>COLIN.</speaker>
             <p>
               <s>Sans doute, depuis six mois que vous nous bercez d’espérance.</s>
             </p>
           </sp>
-          <sp xml:id="I03-9" who="SUSON">
+          <sp who="SUSON" xml:id="I03-9">
             <speaker>SUSON.</speaker>
             <p>
               <s>Ils ont raison ; pourquoi ne pas se déterminer ?</s>
             </p>
           </sp>
-          <sp xml:id="I03-10" who="ALISON">
+          <sp who="ALISON" xml:id="I03-10">
             <speaker>ALISON.</speaker>
             <p>
               <s>Cela t’est bien aisé à dire ; mais je considère bien des choses.</s>
             </p>
           </sp>
-          <sp xml:id="I03-11" who="SUSON">
+          <sp who="SUSON" xml:id="I03-11">
             <speaker>SUSON.</speaker>
             <p>
               <s>Quoi ?</s>
             </p>
           </sp>
-          <sp xml:id="I03-12" who="ALISON">
+          <sp who="ALISON" xml:id="I03-12">
             <speaker>ALISON.</speaker>
             <p>
               <s>Ce n’est pas un marché d’un jour ; j’ai le bonheur d’être veuve : si j’étais sûre de l’être une seconde fois, je n’y regarderais pas de si près.</s>
             </p>
           </sp>
-          <sp xml:id="I03-13" who="SUSON">
+          <sp who="SUSON" xml:id="I03-13">
             <speaker>SUSON.</speaker>
             <p>
               <s>Tu plaisantes, mais il faut une fin.</s>
             </p>
           </sp>
-          <sp xml:id="I03-14" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-14">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Sans doute il faut une fin.</s>
             </p>
           </sp>
-          <sp xml:id="I03-15" who="COLIN">
+          <sp who="COLIN" xml:id="I03-15">
             <speaker>COLIN.</speaker>
             <note type="L">Barguigner : se dit figurément en choses spirituelles des irrésolutions d’esprit, quand un homme a du mal à se résoudre, à donner quelque parole, à conclure une affaire, à se défaire de quelque engagement. [F]</note>
             <p>
@@ -333,102 +330,102 @@
               <s>Dites-nous vos sentiments une bonne fois.</s>
             </p>
           </sp>
-          <sp xml:id="I03-16" who="ALISON">
+          <sp who="ALISON" xml:id="I03-16">
             <speaker>ALISON.</speaker>
             <stage type="[N/A]">ARIETTE en Dialogue.</stage>
             <l n="53" xml:id="l53">Te vais faire un heureux.</l>
           </sp>
-          <sp xml:id="I03-17" who="SUSON">
+          <sp who="SUSON" xml:id="I03-17">
             <speaker>SUSON.</speaker>
             <l n="54" xml:id="l54">Lequel des deux....</l>
           </sp>
-          <sp xml:id="I03-18" who="MATHURINetCOLIN">
+          <sp who="MATHURIN COLIN" xml:id="I03-18">
             <speaker>MATHURIN et COLIN.</speaker>
-            <l n="55" xml:id="l55">Aimes tu mieux ?  </l>
+            <l n="55" xml:id="l55">Aimes tu mieux ? </l>
           </sp>
-          <sp xml:id="I03-19" who="COLIN">
+          <sp who="COLIN" xml:id="I03-19">
             <speaker>COLIN.</speaker>
             <l n="56" xml:id="l56">Que mon ardeur</l>
             <l n="57" xml:id="l57">Touche ton coeur.</l>
           </sp>
-          <sp xml:id="I03-20" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-20">
             <speaker>MATHURIN.</speaker>
             <l n="58" xml:id="l58">À mon amour</l>
             <l n="59" xml:id="l59">Cède en ce jour.</l>
           </sp>
-          <sp xml:id="I03-21" who="ALISON">
+          <sp who="ALISON" xml:id="I03-21">
             <speaker>ALISON.</speaker>
             <l n="60" xml:id="l60">Je vais choisir.</l>
           </sp>
-          <sp xml:id="I03-22" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-22">
             <speaker>MATHURIN.</speaker>
             <l n="61" xml:id="l61">Ah ! Je le crois,</l>
             <l n="62" xml:id="l62">Ce sera moi ?</l>
           </sp>
-          <sp xml:id="I03-23" who="COLIN">
+          <sp who="COLIN" xml:id="I03-23">
             <speaker>COLIN.</speaker>
             <l n="63" xml:id="l63">Ce sera moi ;</l>
             <l n="64" xml:id="l64">J’aurai sa foi.</l>
             <l n="65" xml:id="l65">Décide-toi,</l>
             <l n="66" xml:id="l66">Décide-toi.</l>
           </sp>
-          <sp xml:id="I03-24" who="ALISON">
+          <sp who="ALISON" xml:id="I03-24">
             <speaker>ALISON.</speaker>
-            <l n="67" xml:id="l67" part="I">Mais !</l>
+            <l n="67" part="I" xml:id="l67">Mais !</l>
           </sp>
-          <sp xml:id="I03-25" who="COLIN">
+          <sp who="COLIN" xml:id="I03-25">
             <speaker>COLIN.</speaker>
             <l part="F">Quoi !</l>
           </sp>
-          <sp xml:id="I03-26" who="ALISON">
+          <sp who="ALISON" xml:id="I03-26">
             <speaker>ALISON.</speaker>
-            <l n="68" xml:id="l68" part="I">Mais !</l>
+            <l n="68" part="I" xml:id="l68">Mais !</l>
           </sp>
-          <sp xml:id="I03-27" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-27">
             <speaker>MATHURIN.</speaker>
             <l part="F">Quoi !</l>
           </sp>
-          <sp xml:id="I03-28" who="SUSON">
+          <sp who="SUSON" xml:id="I03-28">
             <speaker>SUSON.</speaker>
             <l n="69" xml:id="l69">Décide-toi.</l>
           </sp>
-          <sp xml:id="I03-29" who="ALISON">
+          <sp who="ALISON" xml:id="I03-29">
             <speaker>ALISON.</speaker>
             <l n="70" xml:id="l70">Oh ! Non, ma foi.</l>
           </sp>
-          <sp xml:id="I03-30" who="COLIN">
+          <sp who="COLIN" xml:id="I03-30">
             <speaker>COLIN.</speaker>
             <l n="71" xml:id="l71">Ce sera moi,</l>
-            <l n="72" xml:id="l72">J’aurai sa foi.  </l>
+            <l n="72" xml:id="l72">J’aurai sa foi. </l>
           </sp>
-          <sp xml:id="I03-31" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-31">
             <speaker>MATHURIN.</speaker>
             <l n="73" xml:id="l73">Oh ! Je le crois,</l>
             <l n="74" xml:id="l74">Ce sera moi ?</l>
           </sp>
-          <sp xml:id="I03-32" who="MATHURINetCOLIN">
+          <sp who="MATHURIN COLIN" xml:id="I03-32">
             <speaker>MATHURIN et COLIN.</speaker>
             <l n="75" xml:id="l75">Décide-toi.</l>
           </sp>
-          <sp xml:id="I03-33" who="ALISON">
+          <sp who="ALISON" xml:id="I03-33">
             <speaker>ALISON.</speaker>
             <l n="76" xml:id="l76">Oh ! non, ma foi.</l>
           </sp>
-          <sp xml:id="I03-34" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-34">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Il n’y a qu’un mot qui serve. </s>
               <s>Voyons.</s>
             </p>
           </sp>
-          <sp xml:id="I03-35" who="COLIN">
+          <sp who="COLIN" xml:id="I03-35">
             <speaker>COLIN.</speaker>
             <p>
               <s>Que de façons ! </s>
               <s>Parlez.</s>
             </p>
           </sp>
-          <sp xml:id="I03-36" who="ALISON">
+          <sp who="ALISON" xml:id="I03-36">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oh ! </s>
@@ -444,32 +441,32 @@
             <l n="81" xml:id="l81">Que l’on vous préfère</l>
             <l n="82" xml:id="l82">À tout autre Amant.</l>
           </sp>
-          <sp xml:id="I03-37" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-37">
             <speaker>MATHURIN.</speaker>
             <l n="83" xml:id="l83">Quel aveu charmant!</l>
           </sp>
-          <sp xml:id="I03-38" who="COLIN">
+          <sp who="COLIN" xml:id="I03-38">
             <speaker>COLIN.</speaker>
             <l n="84" xml:id="l84">Ah ! Dieux, Quel tourment!</l>
           </sp>
-          <sp xml:id="I03-39" who="ALISON">
+          <sp who="ALISON" xml:id="I03-39">
             <speaker>ALISON, à Colin.</speaker>
             <l n="85" xml:id="l85">Ta flamme m’est chère ;</l>
             <l n="86" xml:id="l86">Chut ! C’est un mystère :</l>
             <l n="87" xml:id="l87">Ton amour constant</l>
-            <l n="88" xml:id="l88">Mérite assurément,  </l>
+            <l n="88" xml:id="l88">Mérite assurément, </l>
             <l n="89" xml:id="l89">Que l’on te préfère</l>
             <l n="90" xml:id="l90">À tout autre amant.</l>
           </sp>
-          <sp xml:id="I03-40" who="COLIN">
+          <sp who="COLIN" xml:id="I03-40">
             <speaker>COLIN.</speaker>
             <l n="91" xml:id="l91">Quel retour charmant !</l>
           </sp>
-          <sp xml:id="I03-41" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-41">
             <speaker>MATHURIN.</speaker>
             <l n="92" xml:id="l92">Ô Dieux ! Quel tourment !</l>
           </sp>
-          <sp xml:id="I03-42" who="ALISON">
+          <sp who="ALISON" xml:id="I03-42">
             <speaker>ALISON.</speaker>
             <l n="93" xml:id="l93">Que pour me plaire</l>
             <l n="94" xml:id="l94">Chacun persévère :</l>
@@ -478,7 +475,7 @@
             <l n="97" xml:id="l97">Un coeur qui diffère</l>
             <l n="98" xml:id="l98">Agit prudemment.</l>
           </sp>
-          <sp xml:id="I03-43" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I03-43">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Ingrate ! </s>
@@ -487,49 +484,52 @@
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I04" type="scene" n="4">
-          <head>SCENE IV. Suson, Alison, Colin.<listPerson type="configuration" xml:id="conf4"><person corresp="#SUSON"/><person corresp="#COLIN"/><person corresp="#ALISON"/></listPerson></head>
-          <sp xml:id="I04-1" who="SUSON">
+        <div2 n="4" type="scene" xml:id="I04">
+          <head>SCENE IV. Suson, Alison, Colin.<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#SUSON"/>
+            <person corresp="#COLIN"/>
+            <person corresp="#ALISON"/></listPerson></head>
+          <sp who="SUSON" xml:id="I04-1">
             <speaker>SUSON.</speaker>
             <p>
               <s>Quoi ! </s>
               <s>Toujours balancer !</s>
             </p>
           </sp>
-          <sp xml:id="I04-2" who="COLIN">
+          <sp who="COLIN" xml:id="I04-2">
             <speaker>COLIN.</speaker>
             <p>
               <s>Jarni, pourquoi faut-il que je sois amoureux ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-3" who="ALISON">
+          <sp who="ALISON" xml:id="I04-3">
             <speaker>ALISON.</speaker>
             <p>
               <s>Suson, conseille moi.</s>
             </p>
           </sp>
-          <sp xml:id="I04-4" who="COLIN">
+          <sp who="COLIN" xml:id="I04-4">
             <speaker>COLIN.</speaker>
             <p>
               <s>Que voulez-vous qu’elle vous dise ? </s>
               <s>C’est votre coeur qui doit vous conseiller.</s>
             </p>
           </sp>
-          <sp xml:id="I04-5" who="SUSON">
+          <sp who="SUSON" xml:id="I04-5">
             <speaker>SUSON.</speaker>
             <p>
               <s>C’est bien dit. </s>
               <s>Que ne prends-tu Colin !</s>
             </p>
           </sp>
-          <sp xml:id="I04-6" who="ALISON">
+          <sp who="ALISON" xml:id="I04-6">
             <speaker>ALISON.</speaker>
             <p>
               <s>J’aurais bien aimé Mathurin, mais, non ; il me semble que tu as raison : Colin est mieux mon fait. </s>
               <s>Va je te prends.</s>
             </p>
           </sp>
-          <sp xml:id="I04-7" who="COLIN">
+          <sp who="COLIN" xml:id="I04-7">
             <speaker>COLIN.</speaker>
             <p>
               <s>Que je suis satisfait ! </s>
@@ -553,7 +553,7 @@
             <l n="112" xml:id="l112">Dans le plaisir</l>
             <l n="113" xml:id="l113">Je suis homme à l’épreuve,</l>
             <l n="114" xml:id="l114">Un vrai mari de veuve.</l>
-            <l n="115" xml:id="l115">Demandez au canton  </l>
+            <l n="115" xml:id="l115">Demandez au canton </l>
             <l n="116" xml:id="l116">Si je suis bon luron,</l>
             <l n="117" xml:id="l117">Si je suis franc garçon ;</l>
             <l n="118" xml:id="l118">On ne vous dira pas, non ;</l>
@@ -561,19 +561,19 @@
             <l n="120" xml:id="l120">Vous diront : Colin est bon,</l>
             <l n="121" xml:id="l121">Bon, bon, bon, bon.</l>
           </sp>
-          <sp xml:id="I04-8" who="ALISON">
+          <sp who="ALISON" xml:id="I04-8">
             <speaker>ALISON.</speaker>
             <p>
               <s>Suson, ai-je bien fait ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-9" who="SUSON">
+          <sp who="SUSON" xml:id="I04-9">
             <speaker>SUSON.</speaker>
             <p>
               <s>Oui, j’approuve ton choix ?</s>
             </p>
           </sp>
-          <sp xml:id="I04-10" who="ALISON">
+          <sp who="ALISON" xml:id="I04-10">
             <speaker>ALISON.</speaker>
             <p>
               <s>Mathurin va faire le diable. </s>
@@ -581,7 +581,7 @@
               <s>Il peut nous nuire, et je crains...</s>
             </p>
           </sp>
-          <sp xml:id="I04-11" who="COLIN">
+          <sp who="COLIN" xml:id="I04-11">
             <speaker>COLIN.</speaker>
             <p>
               <s>Ne craignez rien. </s>
@@ -590,41 +590,43 @@
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I05" type="scene" n="5">
-          <head>SCÈNE V. Suson, Alison.<listPerson type="configuration" xml:id="conf5"><person corresp="#ALISON"/><person corresp="#SUSON"/></listPerson></head>
-          <sp xml:id="I05-1" who="ALISON">
+        <div2 n="5" type="scene" xml:id="I05">
+          <head>SCÈNE V. Suson, Alison.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#ALISON"/>
+            <person corresp="#SUSON"/></listPerson></head>
+          <sp who="ALISON" xml:id="I05-1">
             <speaker>ALISON, rêvant.</speaker>
             <p>
               <s>Oui, oui, je serais mieux...</s>
             </p>
           </sp>
-          <sp xml:id="I05-2" who="SUSON">
+          <sp who="SUSON" xml:id="I05-2">
             <speaker>SUSON.</speaker>
             <p>
               <s>À quoi rêves tu ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-3" who="ALISON">
+          <sp who="ALISON" xml:id="I05-3">
             <speaker>ALISON.</speaker>
             <p>
               <s>C’est que...</s>
             </p>
           </sp>
-          <sp xml:id="I05-4" who="SUSON">
+          <sp who="SUSON" xml:id="I05-4">
             <speaker>SUSON.</speaker>
             <p>
               <s>Eh ! </s>
               <s>Bien ?</s>
             </p>
           </sp>
-          <sp xml:id="I05-5" who="ALISON">
+          <sp who="ALISON" xml:id="I05-5">
             <speaker>ALISON.</speaker>
             <p>
               <s>C’est que... </s>
               <s>Tiens, il faut te le dire, Colin ne m’aura pas.</s>
             </p>
           </sp>
-          <sp xml:id="I05-6" who="SUSON">
+          <sp who="SUSON" xml:id="I05-6">
             <speaker>SUSON.</speaker>
             <p>
               <s>Bon ! </s>
@@ -632,26 +634,26 @@
               <s>Et tu viens de le lui promettre.</s>
             </p>
           </sp>
-          <sp xml:id="I05-7" who="ALISON">
+          <sp who="ALISON" xml:id="I05-7">
             <speaker>ALISON.</speaker>
             <p>
               <s>C’est vrai ; mais j’ai eu tort.</s>
             </p>
           </sp>
-          <sp xml:id="I05-8" who="SUSON">
+          <sp who="SUSON" xml:id="I05-8">
             <speaker>SUSON.</speaker>
             <p>
               <s>Que peux-tu lui reprocher. </s>
               <s>Il est jeune, il t’aime....</s>
             </p>
           </sp>
-          <sp xml:id="I05-9" who="ALISON">
+          <sp who="ALISON" xml:id="I05-9">
             <speaker>ALISON.</speaker>
             <p>
               <s>Mais il n’a rien.</s>
             </p>
           </sp>
-          <sp xml:id="I05-10" who="SUSON">
+          <sp who="SUSON" xml:id="I05-10">
             <speaker>SUSON.</speaker>
             <stage type="[N/A]">ARIETTE.</stage>
             <l n="122" xml:id="l122">Dans le Mariage</l>
@@ -667,29 +669,29 @@
             <l n="132" xml:id="l132">Toujours empressé.</l>
             <l n="133" xml:id="l133">Jamais courroucé,</l>
             <l n="134" xml:id="l134">Le mari demande ;</l>
-            <l n="135" xml:id="l135">La femme commande,  </l>
+            <l n="135" xml:id="l135">La femme commande, </l>
             <l n="136" xml:id="l136">Et voit les plaisirs</l>
             <l n="137" xml:id="l137">Prévenir ses désirs.</l>
           </sp>
-          <sp xml:id="I05-11" who="ALISON">
+          <sp who="ALISON" xml:id="I05-11">
             <speaker>ALISON.</speaker>
             <p>
               <s>Tu as beau dire, je crois pourtant que Mathurin ferait mieux mon affaire.</s>
             </p>
           </sp>
-          <sp xml:id="I05-12" who="SUSON">
+          <sp who="SUSON" xml:id="I05-12">
             <speaker>SUSON.</speaker>
             <p>
               <s>Quel esprit indécis !</s>
             </p>
           </sp>
-          <sp xml:id="I05-13" who="ALISON">
+          <sp who="ALISON" xml:id="I05-13">
             <speaker>ALISON.</speaker>
             <p>
               <s>Dis-lui que je veux lui parler.</s>
             </p>
           </sp>
-          <sp xml:id="I05-14" who="SUSON">
+          <sp who="SUSON" xml:id="I05-14">
             <speaker>SUSON.</speaker>
             <p>
               <s>J’y cours de ce pas.</s>
@@ -697,9 +699,10 @@
             <stage type="exit">Elle sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I06" type="scene" n="6">
-          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf6"><person corresp="#ALISON"/></listPerson></head>
-          <sp xml:id="I06-1" who="ALISON">
+        <div2 n="6" type="scene" xml:id="I06">
+          <head>SCÈNE VI.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#ALISON"/></listPerson></head>
+          <sp who="ALISON" xml:id="I06-1">
             <speaker>ALISON seule.</speaker>
             <stage type="[N/A]">ARIETTE.</stage>
             <l n="138" xml:id="l138">Il est convenable</l>
@@ -719,58 +722,60 @@
             <l n="152" xml:id="l152">Il m’épousera.</l>
           </sp>
         </div2>
-        <div2 xml:id="I07" type="scene" n="7">
-          <head>SCENE VII. Mathurin, Alison.<listPerson type="configuration" xml:id="conf7"><person corresp="#MATHURIN"/><person corresp="#ALISON"/></listPerson></head>
-          <sp xml:id="I07-1" who="MATHURIN">
+        <div2 n="7" type="scene" xml:id="I07">
+          <head>SCENE VII. Mathurin, Alison.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#MATHURIN"/>
+            <person corresp="#ALISON"/></listPerson></head>
+          <sp who="MATHURIN" xml:id="I07-1">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Suson vient de me dire que vous vouliez me parler.</s>
             </p>
           </sp>
-          <sp xml:id="I07-2" who="ALISON">
+          <sp who="ALISON" xml:id="I07-2">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oui, cela est vrai.</s>
             </p>
           </sp>
-          <sp xml:id="I07-3" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I07-3">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Et est-il vrai encore ce qu’elle m’a dit ?</s>
             </p>
           </sp>
-          <sp xml:id="I07-4" who="ALISON">
+          <sp who="ALISON" xml:id="I07-4">
             <speaker>ALISON.</speaker>
             <p>
               <s>Quoi ?</s>
             </p>
           </sp>
-          <sp xml:id="I07-5" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I07-5">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Que vous aviez, enfin, rendu justice à mon amour.</s>
             </p>
           </sp>
-          <sp xml:id="I07-6" who="ALISON">
+          <sp who="ALISON" xml:id="I07-6">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oui, cela est vrai.</s>
             </p>
           </sp>
-          <sp xml:id="I07-7" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I07-7">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Ah ! </s>
               <s>Si tu savais à quel point ma flamme...</s>
             </p>
           </sp>
-          <sp xml:id="I07-8" who="ALISON">
+          <sp who="ALISON" xml:id="I07-8">
             <speaker>ALISON.</speaker>
             <p>
               <s>Elle est entre nous mutuelle.</s>
             </p>
           </sp>
-          <sp xml:id="I07-9" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I07-9">
             <speaker>MATHURIN.</speaker>
             <stage type="[N/A]">ARIETTE.</stage>
             <l n="153" xml:id="l153">Chère Alison, Mon coeur gémissait.</l>
@@ -796,66 +801,68 @@
             <stage type="[N/A]">Récitatif obligé.</stage>
             <l n="173" xml:id="l173">Je vais tout disposer pour notre Mariage.</l>
           </sp>
-          <sp xml:id="I07-10" who="ALISON">
+          <sp who="ALISON" xml:id="I07-10">
             <speaker>ALISON.</speaker>
-            <l n="174" xml:id="l174" part="I">Ne tarde pas.</l>
+            <l n="174" part="I" xml:id="l174">Ne tarde pas.</l>
           </sp>
-          <sp xml:id="I07-11" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I07-11">
             <speaker>MATHURIN.</speaker>
             <l part="F">Je reviendrai bientôt.</l>
-            <l n="175" xml:id="l175">Souffre que sur ta main mon amour prenne un gage,  </l>
+            <l n="175" xml:id="l175">Souffre que sur ta main mon amour prenne un gage, </l>
           </sp>
-          <sp xml:id="I07-12" who="ALISON">
+          <sp who="ALISON" xml:id="I07-12">
             <speaker>ALISON.</speaker>
-            <l n="176" xml:id="l176" part="I">Volontiers.</l>
+            <l n="176" part="I" xml:id="l176">Volontiers.</l>
           </sp>
-          <sp xml:id="I07-13" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I07-13">
             <speaker>MATHURIN.</speaker>
             <l part="F">Mon rival sera ma foi bien sot.</l>
             <stage type="exit">Il sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I08" type="scene" n="8">
-          <head>SCÈNE VIII. Suson, Alison.<listPerson type="configuration" xml:id="conf8"><person corresp="#SUSON"/><person corresp="#ALISON"/></listPerson></head>
-          <sp xml:id="I08-1" who="SUSON">
+        <div2 n="8" type="scene" xml:id="I08">
+          <head>SCÈNE VIII. Suson, Alison.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#SUSON"/>
+            <person corresp="#ALISON"/></listPerson></head>
+          <sp who="SUSON" xml:id="I08-1">
             <speaker>SUSON.</speaker>
             <p>
               <s>Eh ! </s>
               <s>Bien, cousine, es-tu contente ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-2" who="ALISON">
+          <sp who="ALISON" xml:id="I08-2">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oui.</s>
             </p>
           </sp>
-          <sp xml:id="I08-3" who="SUSON">
+          <sp who="SUSON" xml:id="I08-3">
             <speaker>SUSON.</speaker>
             <p>
               <s>Ton choix est donc fait ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-4" who="ALISON">
+          <sp who="ALISON" xml:id="I08-4">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oui.</s>
             </p>
           </sp>
-          <sp xml:id="I08-5" who="SUSON">
+          <sp who="SUSON" xml:id="I08-5">
             <speaker>SUSON.</speaker>
             <p>
               <s>Quel effort ! </s>
               <s>Et c’est sans retour ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-6" who="ALISON">
+          <sp who="ALISON" xml:id="I08-6">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oui, oui, ne crains rien.</s>
             </p>
           </sp>
-          <sp xml:id="I08-7" who="SUSON">
+          <sp who="SUSON" xml:id="I08-7">
             <speaker>SUSON.</speaker>
             <p>
               <s>Au bout du compte, tu as fort bien fait.</s>
@@ -863,7 +870,7 @@
             <stage type="[N/A]">ARIETTE.</stage>
             <l n="177" xml:id="l177">Eh ! pourquoi tant attendre,</l>
             <l n="178" xml:id="l178">S’il faut passer par là ?</l>
-            <l n="179" xml:id="l179">Le soin de se défendre  </l>
+            <l n="179" xml:id="l179">Le soin de se défendre </l>
             <l n="180" xml:id="l180">Ne sert pas de cela.</l>
             <l n="181" xml:id="l181">C’est un meuble nécessaire</l>
             <l n="182" xml:id="l182">Que d’avoir un époux.</l>
@@ -879,69 +886,69 @@
               <s>Cousine, allons de la gaieté, pense à ton hymen.</s>
             </p>
           </sp>
-          <sp xml:id="I08-8" who="ALISON">
+          <sp who="ALISON" xml:id="I08-8">
             <speaker>ALISON.</speaker>
             <p>
               <s>Je n’y pense que trop.</s>
             </p>
           </sp>
-          <sp xml:id="I08-9" who="SUSON">
+          <sp who="SUSON" xml:id="I08-9">
             <speaker>SUSON.</speaker>
             <p>
               <s>Comment !</s>
             </p>
           </sp>
-          <sp xml:id="I08-10" who="ALISON">
+          <sp who="ALISON" xml:id="I08-10">
             <speaker>ALISON.</speaker>
             <p>
               <s>Je ne sais... mais...</s>
             </p>
           </sp>
-          <sp xml:id="I08-11" who="SUSON">
+          <sp who="SUSON" xml:id="I08-11">
             <speaker>SUSON.</speaker>
             <p>
               <s>Tu ne voudrais pas te dédire, peut-être?</s>
             </p>
           </sp>
-          <sp xml:id="I08-12" who="ALISON">
+          <sp who="ALISON" xml:id="I08-12">
             <speaker>ALISON.</speaker>
             <p>
               <s>Pourquoi non ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-13" who="SUSON">
+          <sp who="SUSON" xml:id="I08-13">
             <speaker>SUSON.</speaker>
             <p>
               <s>Mais, tu deviens donc folle ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-14" who="ALISON">
+          <sp who="ALISON" xml:id="I08-14">
             <speaker>ALISON.</speaker>
             <p>
               <s>Il y va de ma liberté.</s>
             </p>
           </sp>
-          <sp xml:id="I08-15" who="SUSON">
+          <sp who="SUSON" xml:id="I08-15">
             <speaker>SUSON.</speaker>
             <p>
               <s>Tout comme il vous plaira. </s>
               <s>Je ne vous conçois plus.</s>
             </p>
           </sp>
-          <sp xml:id="I08-16" who="ALISON">
+          <sp who="ALISON" xml:id="I08-16">
             <speaker>ALISON.</speaker>
             <p>
               <s>Qu’est-ce que cela te fait ? </s>
               <s>Tu peux t’engager, si tu veux.</s>
             </p>
           </sp>
-          <sp xml:id="I08-17" who="SUSON">
+          <sp who="SUSON" xml:id="I08-17">
             <speaker>SUSON.</speaker>
             <p>
               <s>Mais enfin, pour qui penches-tu ?</s>
             </p>
           </sp>
-          <sp xml:id="I08-18" who="ALISON">
+          <sp who="ALISON" xml:id="I08-18">
             <speaker>ALISON.</speaker>
             <p>
               <s>Je suis encore indécise. </s>
@@ -950,38 +957,38 @@
               <s>Un mari comme celui-là ne durerait pas six mois.</s>
             </p>
           </sp>
-          <sp xml:id="I08-19" who="SUSON">
+          <sp who="SUSON" xml:id="I08-19">
             <speaker>SUSON.</speaker>
             <p>
               <s>C’est donc pourquoi il faut s’en tenir à Colin.</s>
             </p>
           </sp>
-          <sp xml:id="I08-20" who="ALISON">
+          <sp who="ALISON" xml:id="I08-20">
             <speaker>ALISON.</speaker>
             <p>
               <s>Mais je te l’ai dit, il n’a pas de bien.</s>
             </p>
           </sp>
-          <sp xml:id="I08-21" who="SUSON">
+          <sp who="SUSON" xml:id="I08-21">
             <speaker>SUSON.</speaker>
             <p>
               <s>Si ces deux-là ne te conviennent pas, cherches en un troisième.</s>
             </p>
           </sp>
-          <sp xml:id="I08-22" who="ALISON">
+          <sp who="ALISON" xml:id="I08-22">
             <speaker>ALISON.</speaker>
             <p>
               <s>Ne pense pas rire, chacun d’eux n’a que la moitié des qualités que je voudrais trouver dans un mari, et c’est ce qui cause mon embarras.</s>
             </p>
           </sp>
-          <sp xml:id="I08-23" who="SUSON">
+          <sp who="SUSON" xml:id="I08-23">
             <speaker>SUSON.</speaker>
             <p>
               <s>Il faut te décider. </s>
               <s>J’attends que tu aies fait ton choix pour faire le mien, et je m’en ennuie à la fin.</s>
             </p>
           </sp>
-          <sp xml:id="I08-24" who="ALISON">
+          <sp who="ALISON" xml:id="I08-24">
             <speaker>ALISON.</speaker>
             <p>
               <s>En ce cas, choisis toi-même qui tu voudras ; car je ne veux plus ni de l’un ni de l’autre.</s>
@@ -989,9 +996,10 @@
             <stage type="exit">Elle sort.</stage>
           </sp>
         </div2>
-        <div2 xml:id="I09" type="scene" n="9">
-          <head>SCÈNE IX.<listPerson type="configuration" xml:id="conf9"><person corresp="#SUSON"/></listPerson></head>
-          <sp xml:id="I09-1" who="SUSON">
+        <div2 n="9" type="scene" xml:id="I09">
+          <head>SCÈNE IX.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#SUSON"/></listPerson></head>
+          <sp who="SUSON" xml:id="I09-1">
             <speaker>SUSON, seule.</speaker>
             <stage type="[N/A]">ARIETTE.</stage>
             <l n="191" xml:id="l191">Un aveu mérité</l>
@@ -1011,46 +1019,49 @@
             <l n="205" xml:id="l205">La volupté.</l>
           </sp>
         </div2>
-        <div2 xml:id="I10" type="scene" n="10">
-          <head>SCÈNE X. Suson, Mathurin, Colin.<listPerson type="configuration" xml:id="conf10"><person corresp="#MATHURIN"/><person corresp="#COLIN"/><person corresp="#SUSON"/></listPerson></head>
-          <sp xml:id="I10-1" who="MATHURIN">
+        <div2 n="10" type="scene" xml:id="I10">
+          <head>SCÈNE X. Suson, Mathurin, Colin.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#MATHURIN"/>
+            <person corresp="#COLIN"/>
+            <person corresp="#SUSON"/></listPerson></head>
+          <sp who="MATHURIN" xml:id="I10-1">
             <speaker>MATHURIN, à Colin.</speaker>
             <p>
               <s>Je te fais compliment.</s>
             </p>
           </sp>
-          <sp xml:id="I10-2" who="COLIN">
+          <sp who="COLIN" xml:id="I10-2">
             <speaker>COLIN, à Mathurin.</speaker>
             <p>
               <s>Oh ! </s>
               <s>Je te félicite.</s>
             </p>
           </sp>
-          <sp xml:id="I10-3" who="SUSON">
+          <sp who="SUSON" xml:id="I10-3">
             <speaker>SUSON, à part.</speaker>
             <p>
               <s>C’est bon ; chacun de son côté s’imagine avoir réussi.</s>
             </p>
           </sp>
-          <sp xml:id="I10-4" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-4">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>On se rend à tes voeux.</s>
             </p>
           </sp>
-          <sp xml:id="I10-5" who="COLIN">
+          <sp who="COLIN" xml:id="I10-5">
             <speaker>COLIN.</speaker>
             <p>
               <s>Point du tout ; c’est à ton mérite.</s>
             </p>
           </sp>
-          <sp xml:id="I10-6" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-6">
             <speaker>MATHURIN, à part.</speaker>
             <p>
               <s>Il pense l’épouser.</s>
             </p>
           </sp>
-          <sp xml:id="I10-7" who="COLIN">
+          <sp who="COLIN" xml:id="I10-7">
             <speaker>COLIN.</speaker>
             <p>
               <s>Il croit l’emporter sur moi. </s>
@@ -1058,20 +1069,20 @@
               <s>Je veux m’en divertir.</s>
             </p>
           </sp>
-          <sp xml:id="I10-8" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-8">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Je ne puis m’empêcher de rire.</s>
             </p>
           </sp>
-          <sp xml:id="I10-9" who="SUSON">
+          <sp who="SUSON" xml:id="I10-9">
             <speaker>SUSON. </speaker>
             <p>
               <s>Oui, oui, le chose est fort plaisante.</s>
             </p>
             <stage type="[N/A]">DUO.</stage>
           </sp>
-          <sp xml:id="I10-10" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-10">
             <speaker>MATHURIN.</speaker>
             <l n="206" xml:id="l206">On la lui garde,</l>
             <l n="207" xml:id="l207">Ah ! Ah ! Ah ! Ah !</l>
@@ -1082,7 +1093,7 @@
             <l n="211" xml:id="l211">Vois-tu cela ?</l>
             <l n="212" xml:id="l212">On t’en ratissera.</l>
           </sp>
-          <sp xml:id="I10-11" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-11">
             <speaker>COLIN.</speaker>
             <l n="213" xml:id="l213">C’est lui qui l’aura.</l>
             <l n="214" xml:id="l214">Ah ! Ah ! Ah ! Ah !</l>
@@ -1092,39 +1103,39 @@
             <l n="218" xml:id="l218">Vois-tu cela ?</l>
             <l n="219" xml:id="l219">On t’en ratissera.</l>
           </sp>
-          <sp xml:id="I10-12" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-12">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Tiens, vois-tu : si Alison ne prononce pas en ma faveur, je perds cent écus.</s>
             </p>
           </sp>
-          <sp xml:id="I10-13" who="COLIN">
+          <sp who="COLIN" xml:id="I10-13">
             <speaker>COLIN.</speaker>
             <p>
               <s>J’y consens.</s>
             </p>
           </sp>
-          <sp xml:id="I10-14" who="SUSON">
+          <sp who="SUSON" xml:id="I10-14">
             <speaker>SUSON.</speaker>
             <p>
               <s>Hé bien ! </s>
               <s>Ils sont perdus.</s>
             </p>
           </sp>
-          <sp xml:id="I10-15" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-15">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Pourquoi donc ?</s>
             </p>
           </sp>
-          <sp xml:id="I10-16" who="SUSON">
+          <sp who="SUSON" xml:id="I10-16">
             <speaker>SUSON.</speaker>
             <p>
               <s>C’est qu’à vous deux ma cousine renonce.</s>
             </p>
             <stage type="[N/A]">DUO.</stage>
           </sp>
-          <sp xml:id="I10-17" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-17">
             <speaker>MATHURIN.</speaker>
             <l n="220" xml:id="l220">Ah ! La diablesse !</l>
             <l n="221" xml:id="l221">Pauvre Colin !</l>
@@ -1134,7 +1145,7 @@
             <l n="225" xml:id="l225">Nous met d’accord.</l>
             <l n="226" xml:id="l226">Elle a tort.</l>
           </sp>
-          <sp xml:id="I10-18" who="COLIN">
+          <sp who="COLIN" xml:id="I10-18">
             <speaker>COLIN.</speaker>
             <l n="227" xml:id="l227">Ah ! La tigresse !</l>
             <l n="228" xml:id="l228">Pauvre Mathurin !</l>
@@ -1144,20 +1155,20 @@
             <l n="232" xml:id="l232">Nous met d’accord.</l>
             <l n="233" xml:id="l233">Très tort.</l>
           </sp>
-          <sp xml:id="I10-19" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-19">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Morgué, v’là qu’est fini, je n’y pense plus.</s>
             </p>
           </sp>
-          <sp xml:id="I10-20" who="SUSON">
+          <sp who="SUSON" xml:id="I10-20">
             <speaker>SUSON.</speaker>
             <p>
               <s>Eh ! </s>
               <s>Bien, tiens, si tu veux.....</s>
             </p>
           </sp>
-          <sp xml:id="I10-21" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I10-21">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Si je veux... </s>
@@ -1165,13 +1176,13 @@
               <s>Si tu veux toi-même : je ne demande pas mieux ; accepte ma main.</s>
             </p>
           </sp>
-          <sp xml:id="I10-22" who="SUSON">
+          <sp who="SUSON" xml:id="I10-22">
             <speaker>SUSON.</speaker>
             <p>
               <s>Ma cousine fait une sottise ; je me garderai bien de l’imiter.</s>
             </p>
           </sp>
-          <sp xml:id="I10-23" who="COLIN">
+          <sp who="COLIN" xml:id="I10-23">
             <speaker>COLIN.</speaker>
             <p>
               <s>Vous avez raison.</s>
@@ -1183,72 +1194,76 @@
             </p>
             <stage type="forte">Haut.</stage>
             <p>
-              <s>Mais la voici.  </s>
+              <s>Mais la voici. </s>
             </p>
           </sp>
         </div2>
-        <div2 xml:id="I11" type="scene" n="11">
-          <head>SCÈNE XI. Ssuson, Alison, Colin, Mathurin.<listPerson type="configuration" xml:id="conf11"><person corresp="#SUSON"/><person corresp="#ALISON"/><person corresp="#COLIN"/><person corresp="#MATHURIN"/><person corresp="#ENSEMBLE"/></listPerson></head>
-          <sp xml:id="I11-1" who="SUSON">
+        <div2 n="11" type="scene" xml:id="I11">
+          <head>SCÈNE XI. Ssuson, Alison, Colin, Mathurin.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#SUSON"/>
+            <person corresp="#ALISON"/>
+            <person corresp="#COLIN"/>
+            <person corresp="#MATHURIN"/> </listPerson></head>
+          <sp who="SUSON" xml:id="I11-1">
             <speaker>SUSON.</speaker>
             <p>
               <s>Alison, viens donc vite.</s>
             </p>
           </sp>
-          <sp xml:id="I11-2" who="ALISON">
+          <sp who="ALISON" xml:id="I11-2">
             <speaker>ALISON.</speaker>
             <p>
               <s>Pourquoi faut-il doubler le pas ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-3" who="SUSON">
+          <sp who="SUSON" xml:id="I11-3">
             <speaker>SUSON.</speaker>
             <p>
               <s>Mathurin.</s>
             </p>
           </sp>
-          <sp xml:id="I11-4" who="ALISON">
+          <sp who="ALISON" xml:id="I11-4">
             <speaker>ALISON.</speaker>
             <p>
               <s>Mathurin.</s>
             </p>
           </sp>
-          <sp xml:id="I11-5" who="COLIN">
+          <sp who="COLIN" xml:id="I11-5">
             <speaker>COLIN.</speaker>
             <p>
               <s>Épouse ta cousine.</s>
             </p>
           </sp>
-          <sp xml:id="I11-6" who="ALISON">
+          <sp who="ALISON" xml:id="I11-6">
             <speaker>ALISON.</speaker>
             <p>
               <s>Bon ! </s>
               <s>Quel conte !</s>
             </p>
           </sp>
-          <sp xml:id="I11-7" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I11-7">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Eh ! </s>
               <s>Non, non, ce n’est point un conte.</s>
             </p>
           </sp>
-          <sp xml:id="I11-8" who="ALISON">
+          <sp who="ALISON" xml:id="I11-8">
             <speaker>ALISON.</speaker>
             <p>
               <s>Plaît-il ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-9" who="SUSON">
+          <sp who="SUSON" xml:id="I11-9">
             <speaker>SUSON.</speaker>
             <p>
               <s>C’est en honneur.</s>
             </p>
           </sp>
-          <sp xml:id="I11-10" who="ALISON">
+          <sp who="ALISON" xml:id="I11-10">
             <speaker>ALISON.</speaker>
             <p>
-              <s>Ô Dieux !  </s>
+              <s>Ô Dieux ! </s>
             </p>
             <stage type="[N/A]">ARIETTE.</stage>
             <l n="234" xml:id="l234">Quelle insolence !</l>
@@ -1263,7 +1278,7 @@
             <l n="243" xml:id="l243">Romprait l’alliance</l>
             <l n="244" xml:id="l244">Qu’on me faisait prévoir.</l>
           </sp>
-          <sp xml:id="I11-11" who="SUSON">
+          <sp who="SUSON" xml:id="I11-11">
             <speaker>SUSON.</speaker>
             <p>
               <s>Dame, arrange-toi donc. </s>
@@ -1271,32 +1286,32 @@
               <s>Après cela tu le regrettes ; on n’a jamais vu d’esprit comme le tien.</s>
             </p>
           </sp>
-          <sp xml:id="I11-12" who="ALISON">
+          <sp who="ALISON" xml:id="I11-12">
             <speaker>ALISON.</speaker>
             <p>
               <s>Taisez-vous.</s>
             </p>
           </sp>
-          <sp xml:id="I11-13" who="SUSON">
+          <sp who="SUSON" xml:id="I11-13">
             <speaker>SUSON.</speaker>
             <p>
               <s>La chose n’est pas faite ; si tu veux, je te céderai mes droits.</s>
             </p>
           </sp>
-          <sp xml:id="I11-14" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I11-14">
             <speaker>MATHURIN, à Suson.</speaker>
             <p>
               <s>Mais qu’est-ce que vous faites donc, vous, à votre tour ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-15" who="COLIN">
+          <sp who="COLIN" xml:id="I11-15">
             <speaker>COLIN.</speaker>
             <p>
               <s>Pourquoi donc cela ? </s>
               <s>Vous êtes si bien ensemble ; et pargué, tenez vous y.</s>
             </p>
           </sp>
-          <sp xml:id="I11-16" who="SUSON">
+          <sp who="SUSON" xml:id="I11-16">
             <speaker>SUSON, bas à Mathurin.</speaker>
             <p>
               <s>Ne crains rien ; c’est pour l’amener où nous voulons. </s>
@@ -1307,19 +1322,19 @@
               <s>Le coeur t’en dit-il ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-17" who="COLIN">
+          <sp who="COLIN" xml:id="I11-17">
             <speaker>COLIN.</speaker>
             <p>
               <s>Fi donc, encore une fois.</s>
             </p>
           </sp>
-          <sp xml:id="I11-18" who="SUSON">
+          <sp who="SUSON" xml:id="I11-18">
             <speaker>SUSON.</speaker>
             <p>
               <s>Moi, je prendrai Colin.</s>
             </p>
           </sp>
-          <sp xml:id="I11-19" who="ALISON">
+          <sp who="ALISON" xml:id="I11-19">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oui-dà.</s>
@@ -1341,128 +1356,128 @@
             <l n="258" xml:id="l258">Enfin justifie</l>
             <l n="259" xml:id="l259">L’excès de vos feux.</l>
           </sp>
-          <sp xml:id="I11-20" who="COLIN">
+          <sp who="COLIN" xml:id="I11-20">
             <speaker>COLIN.</speaker>
             <p>
               <s>Vous avez raison ; aussi bien quand vous le voudriez, je ne le voudrais plus.</s>
             </p>
           </sp>
-          <sp xml:id="I11-21" who="ALISON">
+          <sp who="ALISON" xml:id="I11-21">
             <speaker>ALISON.</speaker>
             <p>
               <s>Toi ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-22" who="COLIN">
+          <sp who="COLIN" xml:id="I11-22">
             <speaker>COLIN.</speaker>
             <p>
               <s>Non, et je vais de ce pas trouver Claudine.</s>
             </p>
           </sp>
-          <sp xml:id="I11-23" who="ALISON">
+          <sp who="ALISON" xml:id="I11-23">
             <speaker>ALISON.</speaker>
             <p>
               <s>Tu l’aimes donc ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-24" who="COLIN">
+          <sp who="COLIN" xml:id="I11-24">
             <speaker>COLIN.</speaker>
             <p>
               <s>Oh ! </s>
               <s>Que cela ne vous inquiète pas.</s>
             </p>
           </sp>
-          <sp xml:id="I11-25" who="ALISON">
+          <sp who="ALISON" xml:id="I11-25">
             <speaker>ALISON.</speaker>
             <p>
               <s>Perfide.</s>
             </p>
           </sp>
-          <sp xml:id="I11-26" who="COLIN">
+          <sp who="COLIN" xml:id="I11-26">
             <speaker>COLIN.</speaker>
             <p>
               <s>À la bonne heure ; mais j’ai pris mon parti.</s>
             </p>
           </sp>
-          <sp xml:id="I11-27" who="ALISON">
+          <sp who="ALISON" xml:id="I11-27">
             <speaker>ALISON.</speaker>
             <p>
               <s>Écoute moi donc.</s>
             </p>
           </sp>
-          <sp xml:id="I11-28" who="COLIN">
+          <sp who="COLIN" xml:id="I11-28">
             <speaker>COLIN.</speaker>
             <p>
               <s>Non.</s>
             </p>
           </sp>
-          <sp xml:id="I11-29" who="ALISON">
+          <sp who="ALISON" xml:id="I11-29">
             <speaker>ALISON.</speaker>
             <p>
               <s>Colin ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-30" who="COLIN">
+          <sp who="COLIN" xml:id="I11-30">
             <speaker>COLIN.</speaker>
             <p>
               <s>Adieu.</s>
             </p>
           </sp>
-          <sp xml:id="I11-31" who="ALISON">
+          <sp who="ALISON" xml:id="I11-31">
             <speaker>ALISON.</speaker>
             <p>
               <s>Viens donc, j’ai quelque chose à te dire.</s>
             </p>
           </sp>
-          <sp xml:id="I11-32" who="COLIN">
+          <sp who="COLIN" xml:id="I11-32">
             <speaker>COLIN.</speaker>
             <p>
               <s>Qu’est-ce que c’est ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-33" who="ALISON">
+          <sp who="ALISON" xml:id="I11-33">
             <speaker>ALISON, lui tendant le main.</speaker>
             <p>
               <s>Touche-là, je te donne la préférence.</s>
             </p>
           </sp>
-          <sp xml:id="I11-34" who="COLIN">
+          <sp who="COLIN" xml:id="I11-34">
             <speaker>COLIN.</speaker>
             <p>
               <s>Je crois bien, parce que je suis tout seul.</s>
             </p>
           </sp>
-          <sp xml:id="I11-35" who="ALISON">
+          <sp who="ALISON" xml:id="I11-35">
             <speaker>ALISON.</speaker>
             <p>
               <s>Non, c’est parce que je t’aime.</s>
             </p>
           </sp>
-          <sp xml:id="I11-36" who="COLIN">
+          <sp who="COLIN" xml:id="I11-36">
             <speaker>COLIN.</speaker>
             <p>
               <s>Est-il bien vrai ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-37" who="ALISON">
+          <sp who="ALISON" xml:id="I11-37">
             <speaker>ALISON.</speaker>
             <p>
               <s>Oui.</s>
             </p>
           </sp>
-          <sp xml:id="I11-38" who="COLIN">
+          <sp who="COLIN" xml:id="I11-38">
             <speaker>COLIN.</speaker>
             <p>
               <s>Puis-je compter sur toi ?</s>
             </p>
           </sp>
-          <sp xml:id="I11-39" who="ALISON">
+          <sp who="ALISON" xml:id="I11-39">
             <speaker>ALISON.</speaker>
             <p>
               <s>J’en fais serment.</s>
             </p>
           </sp>
-          <sp xml:id="I11-40" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I11-40">
             <speaker>MATHURIN, à Colin.</speaker>
             <note type="L">Jarni : ou Jarnidieu. Sorte de jurement. Les paysans de la comédie disent jarnigoi, jarnigué, jarniguienne, jerniguienne. Corruption de je renie Dieu. [L]</note>
             <p>
@@ -1471,7 +1486,7 @@
               <s>Prends-là au mot.</s>
             </p>
           </sp>
-          <sp xml:id="I11-41" who="COLIN">
+          <sp who="COLIN" xml:id="I11-41">
             <speaker>COLIN.</speaker>
             <p>
               <s>Tu as raison.</s>
@@ -1482,13 +1497,13 @@
               <s>C’est fait ; allons vite chez le notaire.</s>
             </p>
           </sp>
-          <sp xml:id="I11-42" who="MATHURIN">
+          <sp who="MATHURIN" xml:id="I11-42">
             <speaker>MATHURIN.</speaker>
             <p>
               <s>Ne faisons qu’une seule noce pour nous quatre, et vive le joie.</s>
             </p>
           </sp>
-          <sp xml:id="I11-43" who="ENSEMBLE">
+          <sp who="SUSON ALISON COLIN MATHURIN" xml:id="I11-43">
             <speaker>QUATUOR.</speaker>
             <l n="260" xml:id="l260">Tu m’obtiens,</l>
             <l n="261" xml:id="l261">Je t’obtiens.</l>
@@ -1499,10 +1514,10 @@
             <l n="266" xml:id="l266">Sont dans nos liens.</l>
           </sp>
         </div2>
-        <div2 xml:id="I12" type="interlude" n="12">
+        <div2 n="12" type="interlude" xml:id="I12">
           <head>VAUDEVILLE.</head>
           <stage type="[N/A]">Ce Vaudeville est de M. NAU.</stage>
-          <sp xml:id="I12-1" who="ENSEMBLE">
+          <sp who="SUSON ALISON COLIN MATHURIN" xml:id="I12-1">
             <speaker>ENSEMBLE.</speaker>
             <stage type="music">Air : La raison propose.</stage>
             <l n="267" xml:id="l267">Une fille à dix-huit ans</l>
@@ -1541,7 +1556,7 @@
             <l n="297" xml:id="l297">C’est une sottise</l>
             <l n="298" xml:id="l298">Que d’être indécise.</l>
           </sp>
-          <sp xml:id="I12-2" who="COLIN">
+          <sp who="COLIN" xml:id="I12-2">
             <speaker>COLIN, à Alison.</speaker>
             <l n="299" xml:id="l299">Balancez à m’épouser,</l>
             <l n="300" xml:id="l300">J’y consens, ma chère,</l>
@@ -1552,7 +1567,7 @@
             <l n="303" xml:id="l303">Mais puisque votre moulin</l>
             <l n="304" xml:id="l304">Ne peut aller sans Colin,</l>
             <l n="305" xml:id="l305">C’est une sottise</l>
-            <l n="306" xml:id="l306">Que d’être indécise.  </l>
+            <l n="306" xml:id="l306">Que d’être indécise. </l>
             <stage type="[N/A]">AU PARTERRE.</stage>
             <l n="307" xml:id="l307">Voici le moment, Messieurs,</l>
             <l n="308" xml:id="l308">D’une épreuve rude.</l>

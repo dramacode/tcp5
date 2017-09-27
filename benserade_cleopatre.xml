@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Cléopâtre</title>
         <title type="sub">, tragédie</title>
-        <author born="1613" born_location="Lyons-la-Forêt" death="1691" death_location="Gentilly" academie="1674">
+        <author academie="1674" born="1613" born_location="Lyons-la-Forêt" death="1691" death_location="Gentilly">
           <surname>Bensérade</surname>
           <forename> Isaac de</forename>
         </author>
@@ -41,7 +42,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="tragedy">Tragédie</term>
+          <term subtype="tragedy" type="genre">Tragédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -55,19 +56,19 @@
           <titlePart type="sub">dédiée à Monseigneur L’Eminentissime Cardinal Duc de Richelieu.</titlePart>
         </docTitle>
         <docDate value="1636">M. DC. XXXVI. AVEC PRIVILÈGE DU ROI.</docDate>
-        <docAuthor id="BENSERADE, Isaac de" bio="benserade"/>
+        <docAuthor bio="benserade" id="BENSERADE, Isaac de"/>
         <docImprint>
           <privilege id="1636-02-22">
-          <head>Extrait du privilège du Roi</head>
-          <p>Par grâce et privilège du roi en date du vingt-deuxième jour de février mille six cent trente-six, signé par le Roi en son conseil Chapelain, il est permis au sieur Isaac de Bensérade écuyer, de faire imprimer une tragédie de sa composition, intitulée CLEOPATRE, ou à ceux qui auront droit de lui, de défenses sont faites à tous autres libraires et imprimeurs de contrefaire le livre, ni en vendre et distribuer d’autres que de ceux qu’aura fait faire le dit Sieur Bensérade, ou ceux qui auront droit de lui, et ce durant le temps et espace de neuf ans, à compter du jour que le dit livre sera achevé d’imprimer, à peine de trois mille livres d’amende, et de tous dépends dommage et intérêts, ainsi qu’il est plus au long dans les dites lettres.</p>
-          <p>Et le dit sieur de Bensérade a cédé, et transporté le susdit privilège à ANTOINE DE SOMMAVILLE, marchand libraire à Paris, pour jouir par lui du dit privilège de temps ci mentionné suivant l’accord fait entre eux.</p>
-        </privilege>
-          <acheveImprime id="1636-03-29">Achevé d’imprimer le 29. jour  de mars 1636.</acheveImprime>
+            <head>Extrait du privilège du Roi</head>
+            <p>Par grâce et privilège du roi en date du vingt-deuxième jour de février mille six cent trente-six, signé par le Roi en son conseil Chapelain, il est permis au sieur Isaac de Bensérade écuyer, de faire imprimer une tragédie de sa composition, intitulée CLEOPATRE, ou à ceux qui auront droit de lui, de défenses sont faites à tous autres libraires et imprimeurs de contrefaire le livre, ni en vendre et distribuer d’autres que de ceux qu’aura fait faire le dit Sieur Bensérade, ou ceux qui auront droit de lui, et ce durant le temps et espace de neuf ans, à compter du jour que le dit livre sera achevé d’imprimer, à peine de trois mille livres d’amende, et de tous dépends dommage et intérêts, ainsi qu’il est plus au long dans les dites lettres.</p>
+            <p>Et le dit sieur de Bensérade a cédé, et transporté le susdit privilège à ANTOINE DE SOMMAVILLE, marchand libraire à Paris, pour jouir par lui du dit privilège de temps ci mentionné suivant l’accord fait entre eux.</p>
+          </privilege>
+          <acheveImprime id="1636-03-29">Achevé d’imprimer le 29. jour de mars 1636.</acheveImprime>
           <printer id="Antoine de Sommaville">À PARIS, chez ANTOINE de SOMMAVILLE, au Palais dans la petite salle à l’Ecu de France.</printer>
         </docImprint>
         <performance>
-        <premiere date="1635" location="(inconnue)">Représenté pour la première fois en 1635.</premiere>
-      </performance>
+          <premiere date="1635" location="(inconnue)">Représenté pour la première fois en 1635.</premiere>
+        </performance>
       </titlePage>
       <div type="dedication">
         <salute>À Monseigneur l’Eminentissime CARDINAL DUC DE RICHELIEU</salute>
@@ -80,56 +81,60 @@
         <head>SONNET POUR DUC DE RICHELIEU</head>
         <titre>CLÉOPÂTRE parle.</titre>
         <sonnet>
-          <stanza type="quatrain" n="1">
-            <l n="1" xml:id="l1">Je reviens des enfers d’une démarche grave,</l>
-            <l n="2" xml:id="l2">Non pour suivre les pas d’un César, mais d’un dieu,</l>
-            <l n="3" xml:id="l3">Ce que je refusais de faire pour Octave,</l>
-            <l n="4" xml:id="l4">Ma générosité le fait pour Richelieu.</l>
+          <stanza n="1" type="quatrain">
+            <l>Je reviens des enfers d’une démarche grave,</l>
+            <l>Non pour suivre les pas d’un César, mais d’un dieu,</l>
+            <l>Ce que je refusais de faire pour Octave,</l>
+            <l>Ma générosité le fait pour Richelieu.</l>
           </stanza>
-          <stanza type="quatrain" n="2">
-            <l n="5" xml:id="l5">Qu’il triomphe de moi, qu’il me traite en esclave,</l>
-            <l n="6" xml:id="l6">Rien ne peut m’empêcher de le suivre en tout lieu,</l>
-            <l n="7" xml:id="l7">Et le char d’un vainqueur si puissant, et si brave</l>
-            <l n="8" xml:id="l8">Mérite qu’une reine en soutienne l’essieu.</l>
+          <stanza n="2" type="quatrain">
+            <l>Qu’il triomphe de moi, qu’il me traite en esclave,</l>
+            <l>Rien ne peut m’empêcher de le suivre en tout lieu,</l>
+            <l>Et le char d’un vainqueur si puissant, et si brave</l>
+            <l>Mérite qu’une reine en soutienne l’essieu.</l>
           </stanza>
-          <stanza type="tercet" n="1">
-            <l n="9" xml:id="l9">Ha ! Grand duc, si le maître, et d’Antoine, et de moi,</l>
-            <l n="10" xml:id="l10">Eut eu les qualités que l’on remarque en toi,</l>
-            <l n="11" xml:id="l11">Et ces rares vertus dont l’éclat te renomme,</l>
+          <stanza n="1" type="tercet">
+            <l>Ha ! Grand duc, si le maître, et d’Antoine, et de moi,</l>
+            <l>Eut eu les qualités que l’on remarque en toi,</l>
+            <l>Et ces rares vertus dont l’éclat te renomme,</l>
           </stanza>
-          <stanza type="tercet" n="2">
-            <l n="12" xml:id="l12">J’aurais plutôt choisi les fers que le tombeau,</l>
-            <l n="13" xml:id="l13">Oui j’aurais voulu vivre, et la superbe Rome</l>
-            <l n="14" xml:id="l14">Aurait vu Cléopâtre autrement qu’en tableau.</l>
+          <stanza n="2" type="tercet">
+            <l>J’aurais plutôt choisi les fers que le tombeau,</l>
+            <l>Oui j’aurais voulu vivre, et la superbe Rome</l>
+            <l>Aurait vu Cléopâtre autrement qu’en tableau.</l>
           </stanza>
         </sonnet>
       </div>
       <div xml:id="castList">
         <castList>
           <head>ACTEURS</head>
-          <castItem><role xml:id="MARCANTOINE" rend="male">MARC-ANTOINE</role>, Triumvir.</castItem>
-          <castItem><role xml:id="LUCILE" rend="male">LUCILE</role>, son ami.</castItem>
-          <castItem><role xml:id="DIRCET" rend="male">DIRCET</role>, garde d’Antoine.</castItem>
-          <castItem><role xml:id="GARDES" rend="">GARDES</role> d’Antoine.</castItem>
-          <castItem><role xml:id="CLEOPATRE" rend="female">CLÉOPÂTRE</role>, reine d’Egypte.</castItem>
-          <castItem><role xml:id="ERAS" rend="female">ERAS</role>, confidente de Cléopâtre.</castItem>
-          <castItem><role xml:id="CHARMION" rend="female">CHARMION</role>, confidente de Cléopâtre.</castItem>
-          <castItem><role xml:id="CALISTE" rend="female">CALISTE</role>, confidente de Cléopâtre.</castItem>
-          <castItem><role xml:id="CESARlejeune" rend="male">CÉSAR le jeune</role>, Triumvir.</castItem>
-          <castItem><role xml:id="AGRIPPE" rend="male">AGRIPPE</role>, son lieutenant.</castItem>
-          <castItem><role xml:id="EROS" rend="male">EROS</role>, affranchi d’Antoine.</castItem>
-          <castItem><role xml:id="EPAPHRODITE" rend="male">EPAPHRODITE</role>, affranchi de César.</castItem>
-          <castItem><role xml:id="SUITEdeCESAR" rend="">SUITE de CÉSAR</role>.</castItem>
+          <castItem><role rend="male" xml:id="ANTOINE">MARC-ANTOINE</role>, Triumvir.</castItem>
+          <castItem><role rend="male" xml:id="LUCILE">LUCILE</role>, son ami.</castItem>
+          <castItem><role rend="male" xml:id="DIRCET">DIRCET</role>, garde d’Antoine.</castItem>
+          <castItem><role xml:id="GARDES">GARDES</role> d’Antoine.</castItem>
+          <castItem><role rend="female" xml:id="CLEOPATRE">CLÉOPÂTRE</role>, reine d’Egypte.</castItem>
+          <castItem><role rend="female" xml:id="ERAS">ERAS</role>, confidente de Cléopâtre.</castItem>
+          <castItem><role rend="female" xml:id="CHARMION">CHARMION</role>, confidente de Cléopâtre.</castItem>
+          <castItem><role rend="female" xml:id="CALISTE">CALISTE</role>, confidente de Cléopâtre.</castItem>
+          <castItem><role rend="male" xml:id="CESAR">CÉSAR le jeune</role>, Triumvir.</castItem>
+          <castItem><role rend="male" xml:id="AGRIPE">AGRIPPE</role>, son lieutenant.</castItem>
+          <castItem><role rend="male" xml:id="EROS">EROS</role>, affranchi d’Antoine.</castItem>
+          <castItem><role rend="male" xml:id="EPAPHRODITE">EPAPHRODITE</role>, affranchi de César.</castItem>
+          <castItem><role xml:id="DEPUTES">SUITE de CÉSAR</role>.</castItem>
         </castList>
-        <set location="Alexandrie" country="Egypte" periode="Ier avant JC" link="">La scène est à Alexandrie.</set>
+        <set country="Egypte" link="" location="Alexandrie" periode="Ier avant JC">La scène est à Alexandrie.</set>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="act" n="1">
+      <div1 n="1" type="act" xml:id="I">
         <head>ACTE I</head>
-        <div2 xml:id="I01" type="scene" n="1">
-          <head>SCÈNE I. Marc-Antoine, Lucile, Dircet, et autres gardes d’Antoine.<listPerson type="configuration" xml:id="conf1"><person corresp="#ANTOINE"/><person corresp="#LUCILE"/><person corresp="#DIRCET"/><person corresp="#MARCANTOINE"/><person corresp="#GARDES"/></listPerson></head>
-          <sp xml:id="I01-1" who="ANTOINE">
+        <div2 n="1" type="scene" xml:id="I01">
+          <head>SCÈNE I. Marc-Antoine, Lucile, Dircet, et autres gardes d’Antoine.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#ANTOINE"/>
+            <person corresp="#LUCILE"/>
+            <person corresp="#DIRCET"/>
+            <person corresp="#GARDES"/></listPerson></head>
+          <sp who="ANTOINE" xml:id="I01-1">
             <speaker>ANTOINE.</speaker>
             <l n="1" xml:id="l1">Trouves-tu ma misère à quelque autre commune ?</l>
             <l n="2" xml:id="l2">Ne puis-je pas sans peur défier la fortune ?</l>
@@ -149,11 +154,11 @@
             <l n="16" xml:id="l16">Pour éviter mon bras ont eu recours au leur ?</l>
             <l n="17" xml:id="l17">Hélas leur désespoir vaut mieux que mon attente !</l>
           </sp>
-          <sp xml:id="I01-2" who="LUCILE">
+          <sp who="LUCILE" xml:id="I01-2">
             <speaker>LUCILE.</speaker>
-            <l n="18" xml:id="l18" part="I">Ce sont traits de fortune.</l>
+            <l n="18" part="I" xml:id="l18">Ce sont traits de fortune.</l>
           </sp>
-          <sp xml:id="I01-3" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I01-3">
             <speaker>ANTOINE.</speaker>
             <l part="F">Ha qu’elle est inconstante !</l>
             <l n="19" xml:id="l19">Vois comme elle a changé, tout vivait sous ma loi,</l>
@@ -171,11 +176,11 @@
             <l n="31" xml:id="l31">Tu ne t’éloignes point de mon sort rigoureux,</l>
             <l n="32" xml:id="l32">Sans toi je me dirais tout à fait malheureux.</l>
           </sp>
-          <sp xml:id="I01-4" who="LUCILE">
+          <sp who="LUCILE" xml:id="I01-4">
             <speaker>LUCILE.</speaker>
-            <l n="33" xml:id="l33" part="I">Je serais bien ingrat.</l>
+            <l n="33" part="I" xml:id="l33">Je serais bien ingrat.</l>
           </sp>
-          <sp xml:id="I01-5" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I01-5">
             <speaker>ANTOINE.</speaker>
             <l part="F">Moins que cette inhumaine</l>
             <l n="34" xml:id="l34">Qui trahit ma fortune, et qui cause ma peine,</l>
@@ -202,7 +207,7 @@
             <l n="55" xml:id="l55">Et la mer sous nos pieds rougit de toutes parts</l>
             <l n="56" xml:id="l56">De la honte du chef, et du sang des soldats.</l>
           </sp>
-          <sp xml:id="I01-6" who="LUCILE">
+          <sp who="LUCILE" xml:id="I01-6">
             <speaker>LUCILE.</speaker>
             <l n="57" xml:id="l57">Si depuis qu’à ses yeux votre âme est asservie</l>
             <l n="58" xml:id="l58">Tous vos faits ont terni l’honneur de votre vie,</l>
@@ -212,9 +217,9 @@
             <l n="62" xml:id="l62">Nous ne sommes vaincus que par notre faiblesse :</l>
             <l n="63" xml:id="l63">Chassez de votre esprit ces injustes soupçons,</l>
             <l n="64" xml:id="l64">Le sort vous persécuté en assez de façons ;</l>
-            <l n="65" xml:id="l65" part="I">La reine vous trahit ?</l>
+            <l n="65" part="I" xml:id="l65">La reine vous trahit ?</l>
           </sp>
-          <sp xml:id="I01-7" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I01-7">
             <speaker>ANTOINE.</speaker>
             <l part="F">Oui me trahit, Lucile,</l>
             <l n="66" xml:id="l66">De tous mes ennemis elle est la plus subtile,</l>
@@ -227,11 +232,11 @@
             <l n="73" xml:id="l73">Mais me voir lâchement trahi de Cléopâtre,</l>
             <l n="74" xml:id="l74">C’était là le seul coup qui me pouvait abattre.</l>
           </sp>
-          <sp xml:id="I01-8" who="LUCILE">
+          <sp who="LUCILE" xml:id="I01-8">
             <speaker>LUCILE.</speaker>
-            <l n="75" xml:id="l75" part="I">Trahi d’elle ? Et comment ?</l>
+            <l n="75" part="I" xml:id="l75">Trahi d’elle ? Et comment ?</l>
           </sp>
-          <sp xml:id="I01-9" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I01-9">
             <speaker>ANTOINE.</speaker>
             <l part="F">Par des voeux complaisants,</l>
             <l n="76" xml:id="l76">S’entendre avec César, lui faire des présents,</l>
@@ -257,31 +262,31 @@
             <l n="96" xml:id="l96">Mes armes trouveront d’heureux événements,</l>
             <l n="97" xml:id="l97">Il faut que je succombe, ou que César recule.</l>
           </sp>
-          <sp xml:id="I01-10" who="LUCILE">
+          <sp who="LUCILE" xml:id="I01-10">
             <speaker>LUCILE.</speaker>
             <l n="98" xml:id="l98">Ce beau dessein vous rend digne du sang d’Hercule.</l>
           </sp>
-          <sp xml:id="I01-11" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I01-11">
             <speaker>ANTOINE.</speaker>
             <l n="99" xml:id="l99">Enfin je veux, Lucile, en ce dernier effort</l>
             <l n="100" xml:id="l100">Ou gagner, ou me perdre, être vainqueur, ou mort,</l>
             <l n="101" xml:id="l101">Si le sort me poursuit je pourrai me réduire</l>
             <l n="102" xml:id="l102">Au point où sa rigueur ne me saura plus nuire.</l>
           </sp>
-          <sp xml:id="I01-12" who="LUCILE">
+          <sp who="LUCILE" xml:id="I01-12">
             <speaker>LUCILE.</speaker>
             <l n="103" xml:id="l103">Je vous suivrai partout, les hommes généreux</l>
             <l n="104" xml:id="l104">Savent bien n’être plus quand ils sont malheureux.</l>
           </sp>
-          <sp xml:id="I01-13" who="DIRCET">
+          <sp who="DIRCET" xml:id="I01-13">
             <speaker>DIRCET.</speaker>
             <l n="105" xml:id="l105">En ce noble dessein où l’honneur vous engage,</l>
             <l n="106" xml:id="l106">Nous ferons voir aussi des effets de courage,</l>
             <l n="107" xml:id="l107">Et quoi que tout vous quitte en ce malheur commun,</l>
             <l n="108" xml:id="l108">Cent se perdront encor pour en conserver un.</l>
-            <l n="109" xml:id="l109" part="I">Mais j’aperçois la reine.</l>
+            <l n="109" part="I" xml:id="l109">Mais j’aperçois la reine.</l>
           </sp>
-          <sp xml:id="I01-14" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I01-14">
             <speaker>ANTOINE.</speaker>
             <l part="F">À l’aspect de ses charmes</l>
             <l n="110" xml:id="l110">Quel juste désespoir ne mettrait bas les armes ?</l>
@@ -291,9 +296,16 @@
             <l n="114" xml:id="l114">Et je crois qu’elle m’aime, à cause qu’elle est belle.</l>
           </sp>
         </div2>
-        <div2 xml:id="I02" type="scene" n="2">
-          <head>SCÈNE II.  Cléopâtre, Antoine, Lucile, Eras, Charmion, Dircet, et autres gardes.<listPerson type="configuration" xml:id="conf2"><person corresp="#CLEOPATRE"/><person corresp="#ANTOINE"/><person corresp="#LUCILE"/><person corresp="#DIRCET"/><person corresp="#GARDES"/><person corresp="#ERAS"/><person corresp="#CHARMION"/></listPerson></head>
-          <sp xml:id="I02-1" who="CLEOPATRE">
+        <div2 n="2" type="scene" xml:id="I02">
+          <head>SCÈNE II. Cléopâtre, Antoine, Lucile, Eras, Charmion, Dircet, et autres gardes.<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#CLEOPATRE"/>
+            <person corresp="#ANTOINE"/>
+            <person corresp="#LUCILE"/>
+            <person corresp="#DIRCET"/>
+            <person corresp="#GARDES"/>
+            <person corresp="#ERAS"/>
+            <person corresp="#CHARMION"/></listPerson></head>
+          <sp who="CLEOPATRE" xml:id="I02-1">
             <speaker>CLÉOPÂTRE à Antoine.</speaker>
             <l n="115" xml:id="l115">Avez-vous résolu de sortir aujourd’hui</l>
             <l n="116" xml:id="l116">Pour combler tous mes sens de frayeur, et d’ennui ?</l>
@@ -309,7 +321,7 @@
             <l n="125" xml:id="l125">Qu’il combatte sans vous, s’il gagne la victoire</l>
             <l n="126" xml:id="l126">Il en aura la peine, et vous aurez la gloire.</l>
           </sp>
-          <sp xml:id="I02-2" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-2">
             <speaker>ANTOINE.</speaker>
             <l n="127" xml:id="l127">La guerre est l’exercice où mes bras sont vieillis,</l>
             <l n="128" xml:id="l128">Et je hais les lauriers que je n’ai pas cueillis,</l>
@@ -338,7 +350,7 @@
             <l n="151" xml:id="l151">Son bonheur, et le mien naîtra de mon trépas,</l>
             <l n="152" xml:id="l152">Il vous possédera, je ne le verrai pas.</l>
           </sp>
-          <sp xml:id="I02-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I02-3">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="153" xml:id="l153">Es-tu las de ma vie, et quand je serai morte</l>
             <l n="154" xml:id="l154">Verras-tu mieux, cruel, l’amour que je te porte ?</l>
@@ -347,12 +359,12 @@
             <l n="157" xml:id="l157">Tu verras si je t’aime, et si je te respecte,</l>
             <l n="158" xml:id="l158">Oui je veux cesser d’être, ou de t’être suspecte.</l>
           </sp>
-          <sp xml:id="I02-4" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-4">
             <speaker>ANTOINE.</speaker>
             <l n="159" xml:id="l159">Vivez, et que le ciel change vos maux en biens,</l>
             <l n="160" xml:id="l160">Que vos jours soient heureux, et plus longs que les miens.</l>
           </sp>
-          <sp xml:id="I02-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I02-5">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="161" xml:id="l161">Votre soupçon injuste est contraire à l’envie</l>
             <l n="162" xml:id="l162">Que vous semblez avoir de prolonger ma vie,</l>
@@ -365,7 +377,7 @@
             <l n="169" xml:id="l169">Ne vous assurent pas que je suis demeurée</l>
             <l n="170" xml:id="l170">Dans la fidélité que je vous ai jurée ?</l>
           </sp>
-          <sp xml:id="I02-6" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-6">
             <speaker>ANTOINE.</speaker>
             <l n="171" xml:id="l171">Ha ce discours me donne un remords éternel !</l>
             <l n="172" xml:id="l172">Ici l’accusateur est le plus criminel,</l>
@@ -390,23 +402,23 @@
             <l n="191" xml:id="l191">Et puis quand mon malheur viendrait de vos appas,</l>
             <l n="192" xml:id="l192">Je serais malheureux, si je ne l’étais pas.</l>
           </sp>
-          <sp xml:id="I02-7" who="LUCILE">
+          <sp who="LUCILE" xml:id="I02-7">
             <speaker>LUCILE.</speaker>
-            <l n="193" xml:id="l193" part="I">Nous tardons bien longtemps.</l>
+            <l n="193" part="I" xml:id="l193">Nous tardons bien longtemps.</l>
           </sp>
-          <sp xml:id="I02-8" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-8">
             <speaker>ANTOINE continue.</speaker>
             <l part="F">Mais votre foi m’assure,</l>
             <l n="194" xml:id="l194">Mon soupçon vous offense, et lui fait une injure,</l>
             <l n="195" xml:id="l195">Et quand je souffrirais un tourment infini,</l>
             <l n="196" xml:id="l196">Ma peine serait douce, et mon crime impuni.</l>
           </sp>
-          <sp xml:id="I02-9" who="LUCILE">
+          <sp who="LUCILE" xml:id="I02-9">
             <speaker>LUCILE tout bas.</speaker>
             <l n="197" xml:id="l197">Qu’une femme aisément le séduit, et l’abuse !</l>
             <l n="198" xml:id="l198">Absente, elle est coupable, et présente, il s’accuse.</l>
           </sp>
-          <sp xml:id="I02-10" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I02-10">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="199" xml:id="l199">Puisqu’un juste remords vous réduit à ce point,</l>
             <l n="200" xml:id="l200">Pour votre châtiment ne m’abandonnez point,</l>
@@ -415,7 +427,7 @@
             <l n="203" xml:id="l203">Que sans vous notre armée achève son dessein,</l>
             <l n="204" xml:id="l204">Et soyez en le chef sans en être la main.</l>
           </sp>
-          <sp xml:id="I02-11" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-11">
             <speaker>ANTOINE.</speaker>
             <l n="205" xml:id="l205">S’il est vrai qu’un grand coeur quand sa faute est punie</l>
             <l n="206" xml:id="l206">Souffre moins dans le mal que dans l’ignominie,</l>
@@ -432,12 +444,12 @@
             <l n="217" xml:id="l217">Mon coeur n’affecte plus cette grandeur suprême,</l>
             <l n="218" xml:id="l218">Ma honte c’est ma gloire, et pour tout dire, j’aime.</l>
           </sp>
-          <sp xml:id="I02-12" who="LUCILE">
+          <sp who="LUCILE" xml:id="I02-12">
             <speaker>LUCILE, tout bas.</speaker>
             <l n="219" xml:id="l219">Qu’amour en peu de temps rend un coeur abattu,</l>
             <l n="220" xml:id="l220">Et que ce puissant vice affaiblit la vertu !</l>
           </sp>
-          <sp xml:id="I02-13" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-13">
             <speaker>ANTOINE, à Lucile.</speaker>
             <l n="221" xml:id="l221">Tu vois que mes projets sont réduits en fumée,</l>
             <l n="222" xml:id="l222">Lucile, prends le soin de conduire l’armée,</l>
@@ -450,7 +462,7 @@
             <l n="229" xml:id="l229">Antoine absolument possède Cléopâtre,</l>
             <l n="230" xml:id="l230">N’ayant plus à gagner, il n’a plus à combattre.</l>
           </sp>
-          <sp xml:id="I02-14" who="LUCILE">
+          <sp who="LUCILE" xml:id="I02-14">
             <speaker>LUCILE.</speaker>
             <l n="231" xml:id="l231">Est-ce là le moyen de disputer sa mort ?</l>
             <l n="232" xml:id="l232">Sans vous pourrons-nous faire un généreux effort ?</l>
@@ -481,29 +493,32 @@
             <l n="257" xml:id="l257">Et pour moi je mourrai plus content que tout autre,</l>
             <l n="258" xml:id="l258">Si mon sang à l’honneur de se mêler au vôtre.</l>
           </sp>
-          <sp xml:id="I02-15" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-15">
             <speaker>ANTOINE.</speaker>
             <l n="259" xml:id="l259">Un discours prononcé si généreusement</l>
             <l n="260" xml:id="l260">Ne peut-il révoquer votre commandement ?</l>
             <l n="261" xml:id="l261">Ma reine, permettez sans ternir ma louange,</l>
             <l n="262" xml:id="l262">Que ce bras vous défende, et que ce bras me venge.</l>
           </sp>
-          <sp xml:id="I02-16" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I02-16">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="263" xml:id="l263">Malgré moi j’y consens, à la charge, Seigneur,</l>
             <l n="264" xml:id="l264">Que vous refroidirez cette bouillante ardeur ;</l>
             <l n="265" xml:id="l265">Ne vous engagez point dans le péril des armes,</l>
             <l n="266" xml:id="l266">Épargnez votre sang pour épargner mes larmes.</l>
           </sp>
-          <sp xml:id="I02-17" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="I02-17">
             <speaker>ANTOINE la baisant.</speaker>
             <l n="267" xml:id="l267">Ce baiser secondé d’un seul de vos regards</l>
             <l n="268" xml:id="l268">Me peut faire aujourd’hui vaincre mille Césars.</l>
           </sp>
         </div2>
-        <div2 xml:id="I03" type="scene" n="3">
-          <head>SCÈNE III. Cléopâtre, Eras, Charmion.<listPerson type="configuration" xml:id="conf3"><person corresp="#CLEOPATRE"/><person corresp="#ERAS"/><person corresp="#CHARMION"/></listPerson></head>
-          <sp xml:id="I03-1" who="CLEOPATRE">
+        <div2 n="3" type="scene" xml:id="I03">
+          <head>SCÈNE III. Cléopâtre, Eras, Charmion.<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#CLEOPATRE"/>
+            <person corresp="#ERAS"/>
+            <person corresp="#CHARMION"/></listPerson></head>
+          <sp who="CLEOPATRE" xml:id="I03-1">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="269" xml:id="l269">Doux appui de mes jours, fidèles confidentes,</l>
             <l n="270" xml:id="l270">À qui mes passions sont toutes évidentes,</l>
@@ -522,15 +537,15 @@
             <l n="282" xml:id="l282">Et que son ennemi lui ravit sa maîtresse,</l>
             <l n="283" xml:id="l283">Son esprit défiant se peut l’imaginer.</l>
           </sp>
-          <sp xml:id="I03-2" who="ERAS">
+          <sp who="ERAS" xml:id="I03-2">
             <speaker>ERAS.</speaker>
             <l n="284" xml:id="l284">Madame, il a raison de vous en soupçonner.</l>
           </sp>
-          <sp xml:id="I03-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-3">
             <speaker>CLÉOPÂTRE.</speaker>
-            <l n="285" xml:id="l285" part="I">Que dites-vous ?</l>
+            <l n="285" part="I" xml:id="l285">Que dites-vous ?</l>
           </sp>
-          <sp xml:id="I03-4" who="ERAS">
+          <sp who="ERAS" xml:id="I03-4">
             <speaker>ERAS.</speaker>
             <l part="F">Il sait que sa maîtresse l’aime,</l>
             <l n="286" xml:id="l286">Mais croit-il votre coeur ennemi de soi-même ?</l>
@@ -549,7 +564,7 @@
             <l n="299" xml:id="l299">Et qu’il est naturel de trahir en ce point,</l>
             <l n="300" xml:id="l300">Trahissez le, Madame, et ne le trompez point.</l>
           </sp>
-          <sp xml:id="I03-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-5">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="301" xml:id="l301">Je n’attendais de vous qu’une amitié fidèle</l>
             <l n="302" xml:id="l302">Qui me fit supporter ma fortune cruelle,</l>
@@ -572,16 +587,16 @@
             <l n="319" xml:id="l319">Qu’il prenne, qu’il usurpe, et qu’il ravisse aux miens</l>
             <l n="320" xml:id="l320">La puissance, et l’espoir de rentrer dans leurs biens.</l>
           </sp>
-          <sp xml:id="I03-6" who="CHARMION">
+          <sp who="CHARMION" xml:id="I03-6">
             <speaker>CHARMION.</speaker>
             <l n="321" xml:id="l321">Que votre majesté pense au doux nom de mère,</l>
-            <l n="322" xml:id="l322" part="I">Songez à vos enfants.</l>
+            <l n="322" part="I" xml:id="l322">Songez à vos enfants.</l>
           </sp>
-          <sp xml:id="I03-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-7">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">Oublierai-je leur père ?</l>
           </sp>
-          <sp xml:id="I03-8" who="CHARMION">
+          <sp who="CHARMION" xml:id="I03-8">
             <speaker>CHARMION.</speaker>
             <l n="323" xml:id="l323">Mais si le pauvre Antoine est sensible à son mal,</l>
             <l n="324" xml:id="l324">Doit-il pas souhaiter d’avoir un tel rival ?</l>
@@ -594,7 +609,7 @@
             <l n="331" xml:id="l331">Et que vos chers enfants, ce trésor précieux,</l>
             <l n="332" xml:id="l332">Puissent devoir la vie, et le sceptre à vos yeux.</l>
           </sp>
-          <sp xml:id="I03-9" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="I03-9">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="333" xml:id="l333">En vain tous vos discours assaillent ma constance,</l>
             <l n="334" xml:id="l334">Ils ne pourront jamais forcer ma résistance ;</l>
@@ -603,11 +618,14 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="2">
+      <div1 n="2" type="act" xml:id="II">
         <head>ACTE II</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE I. César, Agripe, suite de César.<listPerson type="configuration" xml:id="conf5"><person corresp="#CESAR"/><person corresp="#AGRIPE"/><person corresp="#SUITEdeCESAR"/></listPerson></head>
-          <sp xml:id="II01-1" who="CESAR">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE I. César, Agripe, suite de César.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#CESAR"/>
+            <person corresp="#AGRIPE"/>
+          </listPerson></head>
+          <sp who="CESAR" xml:id="II01-1">
             <speaker>CÉSAR.</speaker>
             <l n="337" xml:id="l337">Rome, il faut obéir, cette grandeur suprême</l>
             <l n="338" xml:id="l338">Qui t’élevait au ciel te rabaisse elle-même,</l>
@@ -630,7 +648,7 @@
             <l n="355" xml:id="l355">Agripe, dont l’avis n’est jamais rejeté,</l>
             <l n="356" xml:id="l356">Fais-je en ce projet noble une témérité ?</l>
           </sp>
-          <sp xml:id="II01-2" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="II01-2">
             <speaker>AGRIPE.</speaker>
             <l n="357" xml:id="l357">En de plus hauts desseins vous n’en pourriez pas faire,</l>
             <l n="358" xml:id="l358">Qui peut autant que vous n’est jamais téméraire,</l>
@@ -647,12 +665,12 @@
             <l n="369" xml:id="l369">Son espoir est à bas, sa dernière déroute</l>
             <l n="370" xml:id="l370">Assure vos desseins dans leur superbe route.</l>
           </sp>
-          <sp xml:id="II01-3" who="CESAR">
+          <sp who="CESAR" xml:id="II01-3">
             <speaker>CÉSAR.</speaker>
             <l n="371" xml:id="l371">Quelque avantage heureux que nous ayons sur lui,</l>
             <l n="372" xml:id="l372">Je ne fais point de cas du succès d’aujourd’hui.</l>
           </sp>
-          <sp xml:id="II01-4" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="II01-4">
             <speaker>AGRIPE.</speaker>
             <l n="373" xml:id="l373">Qu’un homme soit chéri de la bonne fortune,</l>
             <l n="374" xml:id="l374">Sa faveur la plus rare il l’estime commune,</l>
@@ -665,7 +683,7 @@
             <l n="381" xml:id="l381">Qui d’un si beau destin ne serait idolâtre ?</l>
             <l n="382" xml:id="l382">Gagner tout sans rien perdre, et vaincre sans combattre.</l>
           </sp>
-          <sp xml:id="II01-5" who="CESAR">
+          <sp who="CESAR" xml:id="II01-5">
             <speaker>CÉSAR.</speaker>
             <l n="383" xml:id="l383">Mets-tu cette victoire en un illustre rang ?</l>
             <l n="384" xml:id="l384">Je l’estimerais plus m’ayant coûté du sang,</l>
@@ -684,7 +702,7 @@
             <l n="397" xml:id="l397">Dans sa condition je plains le sort des maîtres,</l>
             <l n="398" xml:id="l398">Ceux qu’il a fait ingrats, ma vertu les fait traîtres.</l>
           </sp>
-          <sp xml:id="II01-6" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="II01-6">
             <speaker>AGRIPE.</speaker>
             <l n="399" xml:id="l399">Ce n’est point ressentir un courage abattu</l>
             <l n="400" xml:id="l400">De trahir le péché pour suivre la vertu :</l>
@@ -709,7 +727,7 @@
             <l n="419" xml:id="l419">Et n’ont pas cru commettre une infidélité</l>
             <l n="420" xml:id="l420">Abandonnant celui que les dieux ont quitté.</l>
           </sp>
-          <sp xml:id="II01-7" who="CESAR">
+          <sp who="CESAR" xml:id="II01-7">
             <speaker>CÉSAR.</speaker>
             <l n="421" xml:id="l421">Le sort qui d’une palme absolument dispose</l>
             <l n="422" xml:id="l422">Ne favorise guère une mauvaise cause,</l>
@@ -720,7 +738,7 @@
             <l n="427" xml:id="l427">Dans le juste dessein qui m’anime le coeur</l>
             <l n="428" xml:id="l428">De punir ce superbe, et de venger ma soeur.</l>
           </sp>
-          <sp xml:id="II01-8" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="II01-8">
             <speaker>AGRIPE.</speaker>
             <l n="429" xml:id="l429">Puisque sa bonne humeur travaille à votre gloire,</l>
             <l n="430" xml:id="l430">Il faut jusqu’à la fin poursuivre la victoire,</l>
@@ -741,16 +759,16 @@
             <l n="445" xml:id="l445">Antoine est en ce rang, vous le devez détruire,</l>
             <l n="446" xml:id="l446">Ou le mettre en état de ne vous pouvoir nuire.</l>
           </sp>
-          <sp xml:id="II01-9" who="CESAR">
+          <sp who="CESAR" xml:id="II01-9">
             <speaker>CÉSAR.</speaker>
             <l n="447" xml:id="l447">J’approuve ce conseil dont l’exécution</l>
             <l n="448" xml:id="l448">Est un des plus grands points de ta commission.</l>
           </sp>
-          <sp xml:id="II01-10" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="II01-10">
             <speaker>AGRIPE.</speaker>
-            <l n="449" xml:id="l449" part="I">Vous m’honorez beaucoup.</l>
+            <l n="449" part="I" xml:id="l449">Vous m’honorez beaucoup.</l>
           </sp>
-          <sp xml:id="II01-11" who="CESAR">
+          <sp who="CESAR" xml:id="II01-11">
             <speaker>CÉSAR.</speaker>
             <l part="F">Presse, et force à se rendre</l>
             <l n="450" xml:id="l450">Cette ville en état de ne se plus défendre,</l>
@@ -764,9 +782,11 @@
             <l n="458" xml:id="l458">Et qu’on cherche la place où fut Alexandrie.</l>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Antoine, Lucile.<listPerson type="configuration" xml:id="conf6"><person corresp="#ANTOINE"/><person corresp="#LUCILE"/></listPerson></head>
-          <sp xml:id="II02-1" who="ANTOINE">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Antoine, Lucile.<listPerson type="configuration" xml:id="conf6">
+            <person corresp="#ANTOINE"/>
+            <person corresp="#LUCILE"/></listPerson></head>
+          <sp who="ANTOINE" xml:id="II02-1">
             <speaker>ANTOINE.</speaker>
             <l n="459" xml:id="l459">Perfide, coeur ingrat, par ce dernier effort</l>
             <l n="460" xml:id="l460">Enfin ta trahison a conspiré ma mort,</l>
@@ -797,15 +817,15 @@
             <l n="485" xml:id="l485">Dans la fin de mes jours son triomphe s’achève,</l>
             <l n="486" xml:id="l486">Ma mort borne sa gloire, et ma chute l’élève.</l>
           </sp>
-          <sp xml:id="II02-2" who="LUCILE">
+          <sp who="LUCILE" xml:id="II02-2">
             <speaker>LUCILE.</speaker>
             <l n="487" xml:id="l487">La fortune est contraire aux projets les plus saints,</l>
             <l n="488" xml:id="l488">Et puisqu’elle n’a pas secondé vos desseins,</l>
             <l n="489" xml:id="l489">Dans la condition qui vous rend déplorable</l>
             <l n="490" xml:id="l490">Une honteuse paix vous serait honorable,</l>
-            <l n="491" xml:id="l491" part="I">Qu’on en parle à César.</l>
+            <l n="491" part="I" xml:id="l491">Qu’on en parle à César.</l>
           </sp>
-          <sp xml:id="II02-3" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="II02-3">
             <speaker>ANTOINE.</speaker>
             <l part="F">Ha jour infortuné !</l>
             <l n="492" xml:id="l492">Recevrais-je d’autrui ce que j’ai tant donné !</l>
@@ -826,16 +846,16 @@
             <l n="507" xml:id="l507">Le mauvais traitement qu’il voit que je lui fais</l>
             <l n="508" xml:id="l508">Est un juste prétexte à refuser la paix.</l>
           </sp>
-          <sp xml:id="II02-4" who="LUCILE">
+          <sp who="LUCILE" xml:id="II02-4">
             <speaker>LUCILE.</speaker>
             <l n="509" xml:id="l509">Il sait bien appliquer l’honneur d’une victoire,</l>
             <l n="510" xml:id="l510">Moins il en usera, plus il aura de gloire.</l>
           </sp>
-          <sp xml:id="II02-5" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="II02-5">
             <speaker>ANTOINE.</speaker>
-            <l n="511" xml:id="l511" part="I">Il veut régner tout seul.</l>
+            <l n="511" part="I" xml:id="l511">Il veut régner tout seul.</l>
           </sp>
-          <sp xml:id="II02-6" who="LUCILE">
+          <sp who="LUCILE" xml:id="II02-6">
             <speaker>LUCILE.</speaker>
             <l part="F">Qu’il en ait le plaisir,</l>
             <l n="512" xml:id="l512">Et vengez-vous de lui par son propre désir,</l>
@@ -856,14 +876,14 @@
             <l n="527" xml:id="l527">Il n’est rien plus honteux qu’un sceptre que l’on perd,</l>
             <l n="528" xml:id="l528">Qui le quitte est plus roi que celui qui s’en sert.</l>
           </sp>
-          <sp xml:id="II02-7" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="II02-7">
             <speaker>ANTOINE.</speaker>
             <l n="529" xml:id="l529">Et bien quand de deux maux j’éviterai le pire,</l>
             <l n="530" xml:id="l530">Quand j’aurai dépouillé ce vénérable Empire</l>
             <l n="531" xml:id="l531">Qui fait qu’en mille endroits mon nom est respecté,</l>
             <l n="532" xml:id="l532">Où trouverai-je après un lieu de sûreté ?</l>
           </sp>
-          <sp xml:id="II02-8" who="LUCILE">
+          <sp who="LUCILE" xml:id="II02-8">
             <speaker>LUCILE.</speaker>
             <l n="533" xml:id="l533">Partout où l’on verra luire votre présence,</l>
             <l n="534" xml:id="l534">Ne possédant plus rien vivez en assurance,</l>
@@ -872,7 +892,7 @@
             <l n="537" xml:id="l537">César sera contraint de ne vous plus poursuivre,</l>
             <l n="538" xml:id="l538">Ne lui pouvant plus nuire, il vous laissera vivre,</l>
           </sp>
-          <sp xml:id="II02-9" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="II02-9">
             <speaker>ANTOINE.</speaker>
             <l n="539" xml:id="l539">Ne crois point que César m’exemptât du trépas,</l>
             <l n="540" xml:id="l540">Tandis que je vivrais il ne régnerait pas,</l>
@@ -881,11 +901,11 @@
             <l n="543" xml:id="l543">Et donnant à sa gloire un solide soutien</l>
             <l n="544" xml:id="l544">Troublerait mon repos pour assurer le sien.</l>
           </sp>
-          <sp xml:id="II02-10" who="LUCILE">
+          <sp who="LUCILE" xml:id="II02-10">
             <speaker>LUCILE.</speaker>
-            <l n="545" xml:id="l545" part="I">Rendez-vous donc à lui.</l>
+            <l n="545" part="I" xml:id="l545">Rendez-vous donc à lui.</l>
           </sp>
-          <sp xml:id="II02-11" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="II02-11">
             <speaker>ANTOINE.</speaker>
             <l part="F">Je savais bien, Lucile,</l>
             <l n="546" xml:id="l546">Que tu ne m’offrirais qu’un remède inutile,</l>
@@ -915,13 +935,17 @@
             <l n="570" xml:id="l570">Pour une seule mort tes pleurs m’en donnent mille.</l>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Cléopâtre, ses filles, Dircet.<listPerson type="configuration" xml:id="conf7"><person corresp="#CLEOPATRE"/><person corresp="#DIRCET"/><person corresp="#ERAS"/><person corresp="#CHARMION"/></listPerson></head>
-          <sp xml:id="II03-1" who="CLEOPATRE">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Cléopâtre, ses filles, Dircet.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#CLEOPATRE"/>
+            <person corresp="#DIRCET"/>
+            <person corresp="#ERAS"/>
+            <person corresp="#CHARMION"/></listPerson></head>
+          <sp who="CLEOPATRE" xml:id="II03-1">
             <speaker>CLÉOPÂTRE, à Dircet.</speaker>
-            <l n="571" xml:id="l571" part="I">Comment, on la trahi ?</l>
+            <l n="571" part="I" xml:id="l571">Comment, on la trahi ?</l>
           </sp>
-          <sp xml:id="II03-2" who="DIRCET">
+          <sp who="DIRCET" xml:id="II03-2">
             <speaker>DIRCET.</speaker>
             <l part="F">Que votre majesté</l>
             <l n="572" xml:id="l572">Apprenne le succès de cette lâcheté.</l>
@@ -932,12 +956,12 @@
             <l n="577" xml:id="l577">Ont monté sur les tours afin de voir combattre,</l>
             <l n="578" xml:id="l578">Et du toit des maisons il s’est fait un théâtre.</l>
           </sp>
-          <sp xml:id="II03-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-3">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="579" xml:id="l579">Nous étions lors au temple, où je priais les dieux</l>
             <l n="580" xml:id="l580">De nous favoriser d’un succès glorieux.</l>
           </sp>
-          <sp xml:id="II03-4" who="DIRCET">
+          <sp who="DIRCET" xml:id="II03-4">
             <speaker>DIRCET.</speaker>
             <l n="581" xml:id="l581">De ces lieux élevés le peuple voit sans peine</l>
             <l n="582" xml:id="l582">Le combat préparé sur l’une, et l’autre plaine,</l>
@@ -956,11 +980,11 @@
             <l n="595" xml:id="l595">On les voit toutes deux lentement s’approcher,</l>
             <l n="596" xml:id="l596">L’une, et l’autre s’embrasse, au lieu de s’accrocher.</l>
           </sp>
-          <sp xml:id="II03-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-5">
             <speaker>CLÉOPÂTRE.</speaker>
-            <l n="597" xml:id="l597" part="I">Dieux quelle perfidie !</l>
+            <l n="597" part="I" xml:id="l597">Dieux quelle perfidie !</l>
           </sp>
-          <sp xml:id="II03-6" who="DIRCET">
+          <sp who="DIRCET" xml:id="II03-6">
             <speaker>DIRCET.</speaker>
             <l part="F">En ce puissant orage</l>
             <l n="598" xml:id="l598">Antoine reste ferme, il ne perd point courage,</l>
@@ -978,9 +1002,9 @@
             <l n="610" xml:id="l610">Qu’il déteste le sort, qu’il vous appelle ingrate ;</l>
             <l n="611" xml:id="l611">Car dans son désespoir qui se fait craindre à tous</l>
             <l n="612" xml:id="l612">Son esprit furieux n’en accuse que vous.</l>
-            <l n="613" xml:id="l613" part="I">Je m’en vais le trouver.</l>
+            <l n="613" part="I" xml:id="l613">Je m’en vais le trouver.</l>
           </sp>
-          <sp xml:id="II03-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-7">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">De tout je suis la cause,</l>
             <l n="614" xml:id="l614">Quoique d’un vain bonheur la fortune dispose,</l>
@@ -989,16 +1013,16 @@
             <l n="617" xml:id="l617">De tant de perfidie on m’estime capable,</l>
             <l n="618" xml:id="l618">Et parce que je souffre on me juge coupable.</l>
           </sp>
-          <sp xml:id="II03-8" who="ERAS">
+          <sp who="ERAS" xml:id="II03-8">
             <speaker>ERAS.</speaker>
             <l n="619" xml:id="l619">Vous n’êtes pas, Madame, ici trop sûrement,</l>
             <l n="620" xml:id="l620">Sa fureur pourrait bien pêcher innocemment.</l>
           </sp>
-          <sp xml:id="II03-9" who="CHARMION">
+          <sp who="CHARMION" xml:id="II03-9">
             <speaker>CHARMION.</speaker>
-            <l n="621" xml:id="l621" part="I">Il faudrait s’éloigner.</l>
+            <l n="621" part="I" xml:id="l621">Il faudrait s’éloigner.</l>
           </sp>
-          <sp xml:id="II03-10" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="II03-10">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">Envoyons Diomède</l>
             <l n="622" xml:id="l622">L’avertir que la mort est mon dernier remède,</l>
@@ -1015,11 +1039,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="3">
+      <div1 n="3" type="act" xml:id="III">
         <head>ACTE III</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE I. Antoine, Eros.<listPerson type="configuration" xml:id="conf9"><person corresp="#ANTOINE"/><person corresp="#EROS"/></listPerson></head>
-          <sp xml:id="III01-1" who="ANTOINE">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE I. Antoine, Eros.<listPerson type="configuration" xml:id="conf9">
+            <person corresp="#ANTOINE"/>
+            <person corresp="#EROS"/></listPerson></head>
+          <sp who="ANTOINE" xml:id="III01-1">
             <speaker>ANTOINE dans une chambre et ses armes sur la table.</speaker>
             <l n="633" xml:id="l633">Armes, brillants éclairs des foudres de la guerre,</l>
             <l n="634" xml:id="l634">Dont l’éclat redoutable a fait pâlir la terre,</l>
@@ -1054,7 +1080,7 @@
             <l n="663" xml:id="l663">Tu m’as promis la mort en ma nécessité,</l>
             <l n="664" xml:id="l664">C’est le prix dont tu dois payer ta liberté.</l>
           </sp>
-          <sp xml:id="III01-2" who="EROS">
+          <sp who="EROS" xml:id="III01-2">
             <speaker>EROS.</speaker>
             <l n="665" xml:id="l665">Ma liberté me sert de légitime excuse,</l>
             <l n="666" xml:id="l666">Reprenez ma franchise, ou souffrez que j’en use,</l>
@@ -1075,7 +1101,7 @@
             <l n="681" xml:id="l681">Qu’à vos sévérités je serve de victime,</l>
             <l n="682" xml:id="l682">Je souffre sans regret, si je souffre sans crime.</l>
           </sp>
-          <sp xml:id="III01-3" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III01-3">
             <speaker>ANTOINE.</speaker>
             <l n="683" xml:id="l683">Que de ton aide, ami, je suis mal assisté,</l>
             <l n="684" xml:id="l684">Et que je suis trahi de ta fidélité,</l>
@@ -1096,7 +1122,7 @@
             <l n="699" xml:id="l699">Ces vains titres passés causent-ils ton refus ?</l>
             <l n="700" xml:id="l700">Et dois-je toujours être à cause que je fus ?</l>
           </sp>
-          <sp xml:id="III01-4" who="EROS">
+          <sp who="EROS" xml:id="III01-4">
             <speaker>EROS.</speaker>
             <l n="701" xml:id="l701">Prenez d’autres que moi pour vous être homicides,</l>
             <l n="702" xml:id="l702">Un seul vous est fidèle, et cent vous sont perfides :</l>
@@ -1110,9 +1136,9 @@
             <l n="710" xml:id="l710">C’est assez que je vive afin que je le pleure,</l>
             <l n="711" xml:id="l711">Sans que ces lâches mains lui creusent un tombeau,</l>
             <l n="712" xml:id="l712">Que je sois son esclave, et non pas son bourreau,</l>
-            <l n="713" xml:id="l713" part="I">J’embrasse ses genoux.</l>
+            <l n="713" part="I" xml:id="l713">J’embrasse ses genoux.</l>
           </sp>
-          <sp xml:id="III01-5" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III01-5">
             <speaker>ANTOINE.</speaker>
             <l part="F">Contente mon envie,</l>
             <l n="714" xml:id="l714">C’est me donner beaucoup que de m’ôter la vie,</l>
@@ -1131,27 +1157,27 @@
             <l n="727" xml:id="l727">Que ton coeur s’amollisse à mon funeste aspect,</l>
             <l n="728" xml:id="l728">Et donne à la pitié ce qu’il nie au respect.</l>
           </sp>
-          <sp xml:id="III01-6" who="EROS">
+          <sp who="EROS" xml:id="III01-6">
             <speaker>EROS.</speaker>
-            <l n="729" xml:id="l729" part="I">Vous voulez donc mourir ?</l>
+            <l n="729" part="I" xml:id="l729">Vous voulez donc mourir ?</l>
           </sp>
-          <sp xml:id="III01-7" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III01-7">
             <speaker>ANTOINE.</speaker>
             <l part="F">Cléopâtre m’appelle,</l>
             <l n="730" xml:id="l730">Dans son teint plus hideux la mort me semble belle,</l>
             <l n="731" xml:id="l731">Et je veux à ce triste, et déplorable jour</l>
             <l n="732" xml:id="l732">Faire voir un triomphe, et d’honneur, et d’amour.</l>
           </sp>
-          <sp xml:id="III01-8" who="EROS">
+          <sp who="EROS" xml:id="III01-8">
             <speaker>EROS.</speaker>
-            <l n="733" xml:id="l733" part="I">Et de plus par ma main ?</l>
+            <l n="733" part="I" xml:id="l733">Et de plus par ma main ?</l>
           </sp>
-          <sp xml:id="III01-9" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III01-9">
             <speaker>ANTOINE.</speaker>
             <l part="F">Oui si j’ai la puissance</l>
             <l n="734" xml:id="l734">D’obtenir cet effet de ton obéissance.</l>
           </sp>
-          <sp xml:id="III01-10" who="EROS">
+          <sp who="EROS" xml:id="III01-10">
             <speaker>EROS à l’écart.</speaker>
             <l n="735" xml:id="l735">Réduit malgré moi-même à cette extrémité,</l>
             <l n="736" xml:id="l736">Mon coeur, obéissons à la nécessité,</l>
@@ -1164,15 +1190,15 @@
             <l n="743" xml:id="l743">Quand d’un oeil menaçant elle nous vient saisir,</l>
             <l n="744" xml:id="l744">Je m’en vais contenter votre sanglant désir.</l>
           </sp>
-          <sp xml:id="III01-11" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III01-11">
             <speaker>ANTOINE en l’embrassant.</speaker>
-            <l n="745" xml:id="l745" part="I">Ô rare serviteur !</l>
+            <l n="745" part="I" xml:id="l745">Ô rare serviteur !</l>
           </sp>
-          <sp xml:id="III01-12" who="EROS">
+          <sp who="EROS" xml:id="III01-12">
             <speaker>EROS.</speaker>
             <l part="F">Donnez-moi votre épée.</l>
           </sp>
-          <sp xml:id="III01-13" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III01-13">
             <speaker>ANTOINE.</speaker>
             <l n="746" xml:id="l746">Ami, jamais ta main ne fut mieux occupée,</l>
             <l n="747" xml:id="l747">Frappe, et souffre au dessein où mon coeur se résout,</l>
@@ -1182,7 +1208,7 @@
             <l n="751" xml:id="l751">Frappe, sans prolonger mon trépas d’un moment,</l>
             <l n="752" xml:id="l752">Et que mon dernier mot soit un commandement.</l>
           </sp>
-          <sp xml:id="III01-14" who="EROS">
+          <sp who="EROS" xml:id="III01-14">
             <speaker>EROS.</speaker>
             <l n="753" xml:id="l753">Vous voulez que ce fer vous ôte la lumière ?</l>
             <l n="754" xml:id="l754">Vous attendez la mort de ma main meurtrière ?</l>
@@ -1190,11 +1216,11 @@
             <l n="756" xml:id="l756">Octroyez un pardon au crime que je fais.</l>
             <stage type="[N/A]">Il se met à genoux.</stage>
           </sp>
-          <sp xml:id="III01-15" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III01-15">
             <speaker>ANTOINE.</speaker>
             <l n="757" xml:id="l757">Frappe, je te pardonne une si belle offense.</l>
           </sp>
-          <sp xml:id="III01-16" who="EROS">
+          <sp who="EROS" xml:id="III01-16">
             <speaker>EROS.</speaker>
             <stage type="die">Il se tue.</stage>
             <l n="758" xml:id="l758">Vous me pardonnez donc ma désobéissance,</l>
@@ -1202,9 +1228,10 @@
             <l n="760" xml:id="l760">Me l’offrant me punit de ne vous l’offrir pas.</l>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf10"><person corresp="#ANTOINE"/></listPerson></head>
-          <sp xml:id="III02-1" who="ANTOINE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>SCÈNE II.<listPerson type="configuration" xml:id="conf10">
+            <person corresp="#ANTOINE"/></listPerson></head>
+          <sp who="ANTOINE" xml:id="III02-1">
             <speaker>ANTOINE, seul.</speaker>
             <l n="761" xml:id="l761">Que fais-tu ? Mais déjà de ce noble courage</l>
             <l n="762" xml:id="l762">Dans les flots de son sang la vie a fait naufrage.</l>
@@ -1260,25 +1287,28 @@
             <l n="808" xml:id="l808">Et j’aurais vécu plus, si j’eusse moins vécu.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. Antoine, Dircet et autres gardes accourent.<listPerson type="configuration" xml:id="conf11"><person corresp="#DIRCET"/><person corresp="#ANTOINE"/><person corresp="#GARDES"/></listPerson></head>
-          <sp xml:id="III03-1" who="DIRCET">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. Antoine, Dircet et autres gardes accourent.<listPerson type="configuration" xml:id="conf11">
+            <person corresp="#DIRCET"/>
+            <person corresp="#ANTOINE"/>
+            <person corresp="#GARDES"/></listPerson></head>
+          <sp who="DIRCET" xml:id="III03-1">
             <speaker>DIRCET.</speaker>
-            <l n="809" xml:id="l809" part="I">Ô tragique spectacle !</l>
+            <l n="809" part="I" xml:id="l809">Ô tragique spectacle !</l>
           </sp>
-          <sp xml:id="III03-2" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III03-2">
             <speaker>ANTOINE.</speaker>
             <l part="F">Ha douleur violente !</l>
             <l n="810" xml:id="l810">Amis, rendez ma mort, ou plus douce, ou moins lente,</l>
             <l n="811" xml:id="l811">Exercez sur ce corps un effet d’amitié,</l>
             <l n="812" xml:id="l812">Et faites par un meurtre un acte de pitié.</l>
           </sp>
-          <sp xml:id="III03-3" who="DIRCET">
+          <sp who="DIRCET" xml:id="III03-3">
             <speaker>DIRCET.</speaker>
             <l n="813" xml:id="l813">Hélas ! Notre empereur, quel désespoir vous porte</l>
             <l n="814" xml:id="l814">À ce cruel dessein ? La reine n’est pas morte.</l>
           </sp>
-          <sp xml:id="III03-4" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III03-4">
             <speaker>ANTOINE.</speaker>
             <l n="815" xml:id="l815">Est-il possible, ô dieux, que ne puis-je guérir,</l>
             <l n="816" xml:id="l816">Ha je meurs maintenant du regret de mourir !</l>
@@ -1286,25 +1316,26 @@
             <l n="818" xml:id="l818">Que devant mon trépas l’on me porte vers elle,</l>
             <l n="819" xml:id="l819">Pour jouir des douceurs de nos derniers propos.</l>
           </sp>
-          <sp xml:id="III03-5" who="DIRCET">
+          <sp who="DIRCET" xml:id="III03-5">
             <speaker>DIRCET.</speaker>
-            <l n="820" xml:id="l820" part="I">Quel est ce corps sanglant ?</l>
+            <l n="820" part="I" xml:id="l820">Quel est ce corps sanglant ?</l>
           </sp>
-          <sp xml:id="III03-6" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III03-6">
             <speaker>ANTOINE.</speaker>
             <l part="F">Celui du brave Eros,</l>
             <l n="821" xml:id="l821">Il a plongé pour moi ce fer dans ses entrailles,</l>
-            <l n="822" xml:id="l822" part="I">Rendez-lui les devoirs.</l>
+            <l n="822" part="I" xml:id="l822">Rendez-lui les devoirs.</l>
           </sp>
           <stage type="[N/A]">Il est porté vers Cléopâtre.</stage>
-          <sp xml:id="III03-7" who="DIRCET">
+          <sp who="DIRCET" xml:id="III03-7">
             <speaker>DIRCET.</speaker>
             <l part="F">Dieux que de funérailles !</l>
           </sp>
         </div2>
-        <div2 xml:id="III04" type="scene" n="4">
-          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf12"><person corresp="#LUCILE"/></listPerson></head>
-          <sp xml:id="III04-1" who="LUCILE">
+        <div2 n="4" type="scene" xml:id="III04">
+          <head>SCÈNE IV.<listPerson type="configuration" xml:id="conf12">
+            <person corresp="#LUCILE"/></listPerson></head>
+          <sp who="LUCILE" xml:id="III04-1">
             <speaker>LUCILE, seul.</speaker>
             <l n="823" xml:id="l823">La ville est à César, les habitants troublés</l>
             <l n="824" xml:id="l824">Se vont rendre au vainqueur, et lui portent les clés,</l>
@@ -1320,9 +1351,11 @@
             <l n="834" xml:id="l834">Juste ciel que ne suis-je ou sans vie, ou sans langue !</l>
           </sp>
         </div2>
-        <div2 xml:id="III05" type="scene" n="5">
-          <head> SCÈNE V. Cléopâtre, ses filles, Antoine mourant.<listPerson type="configuration" xml:id="conf13"><person corresp="#ANTOINE"/><person corresp="#CLEOPATRE"/></listPerson></head>
-          <sp xml:id="III05-1" who="ANTOINE">
+        <div2 n="5" type="scene" xml:id="III05">
+          <head> SCÈNE V. Cléopâtre, ses filles, Antoine mourant.<listPerson type="configuration" xml:id="conf13">
+            <person corresp="#ANTOINE"/>
+            <person corresp="#CLEOPATRE"/></listPerson></head>
+          <sp who="ANTOINE" xml:id="III05-1">
             <speaker>ANTOINE ayant la tête sur les genoux de Cléopâtre.</speaker>
             <l n="835" xml:id="l835">Ne verse point sur moi tant d’inutiles pleurs,</l>
             <l n="836" xml:id="l836">Par ton affliction n’accrois point mes douleurs,</l>
@@ -1330,7 +1363,7 @@
             <l n="838" xml:id="l838">Et je meurs satisfait puisque tu vis encore,</l>
             <l n="839" xml:id="l839">Ajoute la constance à tes autres vertus.</l>
           </sp>
-          <sp xml:id="III05-2" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III05-2">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="840" xml:id="l840">Où l’irai-je chercher quand tu ne seras plus ?</l>
             <l n="841" xml:id="l841">Mes seules cruautés ont ouvert cette plaie,</l>
@@ -1338,11 +1371,11 @@
             <l n="843" xml:id="l843">Mes pleurs, ni mes soupirs ne te peuvent guérir,</l>
             <l n="844" xml:id="l844">Et tu meurs en effet quand je feins de mourir.</l>
           </sp>
-          <sp xml:id="III05-3" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III05-3">
             <speaker>ANTOINE.</speaker>
-            <l n="845" xml:id="l845" part="I">Console-toi, mon coeur.</l>
+            <l n="845" part="I" xml:id="l845">Console-toi, mon coeur.</l>
           </sp>
-          <sp xml:id="III05-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III05-4">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">Sévères destinées,</l>
             <l n="846" xml:id="l846">Retranchez-vous si tôt le fil de ses années !</l>
@@ -1357,7 +1390,7 @@
             <l n="855" xml:id="l855">Tu dois cette blessure au bruit d’un faux trépas,</l>
             <l n="856" xml:id="l856">Et je te vois mourant, et ne t’imite pas.</l>
           </sp>
-          <sp xml:id="III05-5" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III05-5">
             <speaker>ANTOINE.</speaker>
             <l n="857" xml:id="l857">La mort que je me donne égale une victoire,</l>
             <l n="858" xml:id="l858">Ne suis donc point mes pas pour partager ma gloire,</l>
@@ -1382,7 +1415,7 @@
             <l n="877" xml:id="l877">Je veux que de tes yeux son âme soit atteinte,</l>
             <l n="878" xml:id="l878">Et je fais mon désir de ce qui fut ma crainte.</l>
           </sp>
-          <sp xml:id="III05-6" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III05-6">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="879" xml:id="l879">Qu’un autre amant reçut des gages de ma foi ?</l>
             <l n="880" xml:id="l880">Perds ce cruel soupçon, qu’il meure devant toi,</l>
@@ -1390,7 +1423,7 @@
             <l n="882" xml:id="l882">Et que je suis fidèle autant que malheureuse,</l>
             <l n="883" xml:id="l883">Que toi seul es l’objet qui cause mon souci.</l>
           </sp>
-          <sp xml:id="III05-7" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III05-7">
             <speaker>ANTOINE.</speaker>
             <l n="884" xml:id="l884">Pour mourir doucement je le veux croire ainsi.</l>
             <l n="885" xml:id="l885">Adieu je n’en puis plus, les forces me défaillent,</l>
@@ -1398,11 +1431,11 @@
             <l n="887" xml:id="l887">C’est en vain que mes sens tâchent de résister,</l>
             <l n="888" xml:id="l888">Heureux qui d’un tel coup se laisse surmonter !</l>
           </sp>
-          <sp xml:id="III05-8" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III05-8">
             <speaker>CLÉOPÂTRE.</speaker>
-            <l n="889" xml:id="l889" part="I">Ô dieux !</l>
+            <l n="889" part="I" xml:id="l889">Ô dieux !</l>
           </sp>
-          <sp xml:id="III05-9" who="ANTOINE">
+          <sp who="ANTOINE" xml:id="III05-9">
             <speaker>ANTOINE.</speaker>
             <l part="F">Puisque le ciel veut que je t’abandonne,</l>
             <l n="890" xml:id="l890">Chéris Antoine, et suis les avis qu’il te donne,</l>
@@ -1417,21 +1450,24 @@
             <l n="898" xml:id="l898">L’amour m’ouvre les yeux, mais la mort les referme.</l>
             <stage type="die">Il meurt.</stage>
           </sp>
-          <sp xml:id="III05-10" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III05-10">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="899" xml:id="l899">Ô sensible douleur ! Quoi je perds mon appui ?</l>
             <l n="900" xml:id="l900">Dieux ma vigueur me laisse, et je meurs comme lui.</l>
             <stage type="[N/A]">Elle pâme.</stage>
           </sp>
         </div2>
-        <div2 xml:id="III06" type="scene" n="6">
-          <head>SCÈNE VI. Eras, Charmion, Cléopâtre.<listPerson type="configuration" xml:id="conf14"><person corresp="#ERAS"/><person corresp="#CHARMION"/><person corresp="#CLEOPATRE"/></listPerson></head>
-          <sp xml:id="III06-1" who="ERAS">
+        <div2 n="6" type="scene" xml:id="III06">
+          <head>SCÈNE VI. Eras, Charmion, Cléopâtre.<listPerson type="configuration" xml:id="conf14">
+            <person corresp="#ERAS"/>
+            <person corresp="#CHARMION"/>
+            <person corresp="#CLEOPATRE"/></listPerson></head>
+          <sp who="ERAS" xml:id="III06-1">
             <speaker>ERAS.</speaker>
             <l n="901" xml:id="l901">Elle va rendre l’âme, ha cruelle infortuné !</l>
             <l n="902" xml:id="l902">Que nos pleurs soient communs, notre perte est commune.</l>
           </sp>
-          <sp xml:id="III06-2" who="CHARMION">
+          <sp who="CHARMION" xml:id="III06-2">
             <speaker>CHARMION.</speaker>
             <l n="903" xml:id="l903">Pouvons-nous par des pleurs rendre le sort plus doux,</l>
             <l n="904" xml:id="l904">Et soulager un mort, une mourante, et nous ?</l>
@@ -1440,11 +1476,11 @@
             <l n="907" xml:id="l907">Comme une seule vie anime deux amants,</l>
             <l n="908" xml:id="l908">Un seul trépas aussi termine leurs tourments.</l>
           </sp>
-          <sp xml:id="III06-3" who="ERAS">
+          <sp who="ERAS" xml:id="III06-3">
             <speaker>ERAS.</speaker>
-            <l n="909" xml:id="l909" part="I">Madame, elle revient.</l>
+            <l n="909" part="I" xml:id="l909">Madame, elle revient.</l>
           </sp>
-          <sp xml:id="III06-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III06-4">
             <speaker>CLÉOPÂTRE, revenue à soi.</speaker>
             <l part="F">Qui m’a rendu la vie,</l>
             <l n="910" xml:id="l910">Et les tristes douleurs dont elle était suivie ?</l>
@@ -1481,16 +1517,16 @@
             <l n="941" xml:id="l941">Permets que je diffère un trépas plein de charmes,</l>
             <l n="942" xml:id="l942">Et que devant mon sang je répande mes larmes.</l>
           </sp>
-          <sp xml:id="III06-5" who="ERAS">
+          <sp who="ERAS" xml:id="III06-5">
             <speaker>ERAS.</speaker>
             <l n="943" xml:id="l943">Que votre majesté modère ses ennuis,</l>
-            <l n="944" xml:id="l944" part="I">Consolez-vous, madame.</l>
+            <l n="944" part="I" xml:id="l944">Consolez-vous, madame.</l>
           </sp>
-          <sp xml:id="III06-6" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III06-6">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">En l’état où je suis ?</l>
           </sp>
-          <sp xml:id="III06-7" who="ERAS">
+          <sp who="ERAS" xml:id="III06-7">
             <speaker>ERAS.</speaker>
             <l n="945" xml:id="l945">Mais, Madame, songez que la mort est commune,</l>
             <l n="946" xml:id="l946">Tout ce que voit le ciel subit cette fortune,</l>
@@ -1513,11 +1549,11 @@
             <l n="963" xml:id="l963">Lors vous eussiez loué sa générosité,</l>
             <l n="964" xml:id="l964">Et ce que vous pleurez vous l’eussiez souhaité.</l>
           </sp>
-          <sp xml:id="III06-8" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III06-8">
             <speaker>CLÉOPÂTRE.</speaker>
-            <l n="965" xml:id="l965" part="I">Il est vrai.</l>
+            <l n="965" part="I" xml:id="l965">Il est vrai.</l>
           </sp>
-          <sp xml:id="III06-9" who="CHARMION">
+          <sp who="CHARMION" xml:id="III06-9">
             <speaker>CHARMION.</speaker>
             <l part="F">Cessez donc de le plaindre, Madame,</l>
             <l n="966" xml:id="l966">Puisqu’il meurt généreux pour ne pas vivre infâme :</l>
@@ -1531,9 +1567,9 @@
             <l n="974" xml:id="l974">Qu’il soit dans votre coeur, lui dans votre mémoire,</l>
             <l n="975" xml:id="l975">Ne demeurez point ferme en ce frivole ennui,</l>
             <l n="976" xml:id="l976">Et sauvez ce qui reste, et de vous et de lui</l>
-            <l n="977" xml:id="l977" part="I">Vos chers enfants.</l>
+            <l n="977" part="I" xml:id="l977">Vos chers enfants.</l>
           </sp>
-          <sp xml:id="III06-10" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="III06-10">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">Non, non, sois plus femme que mère,</l>
             <l n="978" xml:id="l978">Ils te doivent la vie, et tu la dois au père,</l>
@@ -1554,11 +1590,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="IV" type="act" n="4">
+      <div1 n="4" type="act" xml:id="IV">
         <head>ACTE IV</head>
-        <div2 xml:id="IV01" type="scene" n="1">
-          <head>SCÈNE I. César, sa suite, les députés d’Alexandrie.<listPerson type="configuration" xml:id="conf16"><person corresp="#CESAR"/><person corresp="#DEPUTES"/></listPerson></head>
-          <sp xml:id="IV01-1" who="CESAR">
+        <div2 n="1" type="scene" xml:id="IV01">
+          <head>SCÈNE I. César, sa suite, les députés d’Alexandrie.<listPerson type="configuration" xml:id="conf16">
+            <person corresp="#CESAR"/>
+            <person corresp="#DEPUTES"/></listPerson></head>
+          <sp who="CESAR" xml:id="IV01-1">
             <speaker>CÉSAR recevant les clefs de la ville des mains des députés à genoux devant son tribunal.</speaker>
             <l n="993" xml:id="l993">J’élève qui s’abaisse, et quoi qu’on se propose</l>
             <l n="994" xml:id="l994">Devant moi l’on n’est rien pour être quelque chose :</l>
@@ -1601,7 +1639,7 @@
             <l n="1031" xml:id="l1031">Bref qu’elle espère tout d’un vainqueur indulgent,</l>
             <l n="1032" xml:id="l1032">Elle est reine, et César triomphe en l’obligeant.</l>
           </sp>
-          <sp xml:id="IV01-2" who="DEPUTES">
+          <sp who="DEPUTES" xml:id="IV01-2">
             <speaker>Les Députés s’en allant.</speaker>
             <l n="1033" xml:id="l1033">Redoutable empereur, notre ville est ravie,</l>
             <l n="1034" xml:id="l1034">Et vous prenez nos coeurs en nous donnant la vie,</l>
@@ -1609,9 +1647,12 @@
             <l n="1036" xml:id="l1036">À perdre en vous servant ce que vous nous donnez.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV02" type="scene" n="2">
-          <head>SCÈNE II. César, Epaphrodite, Agripe.<listPerson type="configuration" xml:id="conf17"><person corresp="#EPAPHRODITE"/><person corresp="#CESAR"/><person corresp="#AGRIPE"/></listPerson></head>
-          <sp xml:id="IV02-1" who="EPAPHRODITE">
+        <div2 n="2" type="scene" xml:id="IV02">
+          <head>SCÈNE II. César, Epaphrodite, Agripe.<listPerson type="configuration" xml:id="conf17">
+            <person corresp="#EPAPHRODITE"/>
+            <person corresp="#CESAR"/>
+            <person corresp="#AGRIPE"/></listPerson></head>
+          <sp who="EPAPHRODITE" xml:id="IV02-1">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1037" xml:id="l1037">Faut-il goûter si peu le fruit d’une victoire,</l>
             <l n="1038" xml:id="l1038">Et pour cacher leur honte obscurcir votre gloire ?</l>
@@ -1630,11 +1671,11 @@
             <l n="1051" xml:id="l1051">Et si ce mouvement ne s’altère, ô César !</l>
             <l n="1052" xml:id="l1052">Rome en verra bien peu derrière votre char.</l>
           </sp>
-          <sp xml:id="IV02-2" who="CESAR">
+          <sp who="CESAR" xml:id="IV02-2">
             <speaker>CÉSAR.</speaker>
-            <l n="1053" xml:id="l1053" part="I">De quoi m’accuses-tu ?</l>
+            <l n="1053" part="I" xml:id="l1053">De quoi m’accuses-tu ?</l>
           </sp>
-          <sp xml:id="IV02-3" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="IV02-3">
             <speaker>EPAPHRODITE.</speaker>
             <l part="F">D’avoir trop de clémence,</l>
             <l n="1054" xml:id="l1054">Aux grands cette vertu nuit dans son abondance,</l>
@@ -1653,7 +1694,7 @@
             <l n="1067" xml:id="l1067">Usez de ce qui reste, et pour votre bonheur</l>
             <l n="1068" xml:id="l1068">Dans Rome promenez leur honte, et votre honneur.</l>
           </sp>
-          <sp xml:id="IV02-4" who="CESAR">
+          <sp who="CESAR" xml:id="IV02-4">
             <speaker>CÉSAR.</speaker>
             <l n="1069" xml:id="l1069">Estimes-tu César si peu jaloux de gloire</l>
             <l n="1070" xml:id="l1070">Qu’il refusât le prix d’une telle victoire ?</l>
@@ -1668,14 +1709,14 @@
             <l n="1079" xml:id="l1079">Je fais que tous ses maux lui passent pour des biens,</l>
             <l n="1080" xml:id="l1080">Et pour mieux l’éblouir je dore ses liens.</l>
           </sp>
-          <sp xml:id="IV02-5" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="IV02-5">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1081" xml:id="l1081">Ce noble stratagème, et cette douce amorce</l>
             <l n="1082" xml:id="l1082">Font voir que votre esprit égale votre force,</l>
             <l n="1083" xml:id="l1083">Et qu’on est téméraire en un degré pareil,</l>
             <l n="1084" xml:id="l1084">Ou tenant contre vous, ou vous donnant conseil.</l>
           </sp>
-          <sp xml:id="IV02-6" who="CESAR">
+          <sp who="CESAR" xml:id="IV02-6">
             <speaker>CÉSAR.</speaker>
             <l n="1085" xml:id="l1085">Suivant ton beau conseil j’oubliais ma victoire,</l>
             <l n="1086" xml:id="l1086">Je perdais Cléopâtre, et le prix de ma gloire,</l>
@@ -1702,7 +1743,7 @@
             <l n="1107" xml:id="l1107">Titre, honneur, dignité, couronne, sceptre, bien,</l>
             <l n="1108" xml:id="l1108">Et je lui laisse tout pour ne lui laisser rien.</l>
           </sp>
-          <sp xml:id="IV02-7" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="IV02-7">
             <speaker>AGRIPE.</speaker>
             <l n="1109" xml:id="l1109">Ainsi de belles fleurs l’hostie est couronnée,</l>
             <l n="1110" xml:id="l1110">Alors qu’au sacrifice en pompe elle est menée,</l>
@@ -1712,11 +1753,11 @@
             <l n="1114" xml:id="l1114">Des signes évidents d’un sinistre message,</l>
             <l n="1115" xml:id="l1115">Ses soupirs sont témoins d’un regret violent.</l>
           </sp>
-          <sp xml:id="IV02-8" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="IV02-8">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1116" xml:id="l1116">Il porte, ce me semble, un coutelas sanglant.</l>
           </sp>
-          <sp xml:id="IV02-9" who="CESAR">
+          <sp who="CESAR" xml:id="IV02-9">
             <speaker>CÉSAR.</speaker>
             <l n="1117" xml:id="l1117">Dieux c’est celui d’Antoine, ha funeste spectacle !</l>
             <l n="1118" xml:id="l1118">Que la constance ici trouve un puissant obstacle,</l>
@@ -1726,9 +1767,11 @@
             <l n="1122" xml:id="l1122">Et change en vérité ce qui n’était que feinte.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV03" type="scene" n="3">
-          <head>SCÈNE III. César, Dircet, Agripe, Epaprodite.<listPerson type="configuration" xml:id="conf18"><person corresp="#DIRCET"/><person corresp="#CESAR"/></listPerson></head>
-          <sp xml:id="IV03-1" who="DIRCET">
+        <div2 n="3" type="scene" xml:id="IV03">
+          <head>SCÈNE III. César, Dircet, Agripe, Epaprodite.<listPerson type="configuration" xml:id="conf18">
+            <person corresp="#DIRCET"/>
+            <person corresp="#CESAR"/></listPerson></head>
+          <sp who="DIRCET" xml:id="IV03-1">
             <speaker>DIRCET tenant l’épée sanglante d’Antoine.</speaker>
             <l n="1123" xml:id="l1123">Voila cet ennemi de notre commun bien,</l>
             <l n="1124" xml:id="l1124">L’homicide cruel de son maître, et du mien,</l>
@@ -1737,7 +1780,7 @@
             <l n="1127" xml:id="l1127">L’inhumain à vos yeux se montre sans besoin,</l>
             <l n="1128" xml:id="l1128">Et sert contre soi-même à vos yeux de témoin.</l>
           </sp>
-          <sp xml:id="IV03-2" who="CESAR">
+          <sp who="CESAR" xml:id="IV03-2">
             <speaker>CÉSAR.</speaker>
             <l n="1129" xml:id="l1129">Objet triste, et funeste ! Ici je le confesse,</l>
             <l n="1130" xml:id="l1130">Mon coeur ne peut cacher la douleur qui le presse,</l>
@@ -1750,7 +1793,7 @@
             <l n="1137" xml:id="l1137">Je n’ai su l’accident que par la voix commune</l>
             <l n="1138" xml:id="l1138">Qui ne pénètre pas une telle infortune.</l>
           </sp>
-          <sp xml:id="IV03-3" who="DIRCET">
+          <sp who="DIRCET" xml:id="IV03-3">
             <speaker>DIRCET.</speaker>
             <l n="1139" xml:id="l1139">Sans hommes, sans vaisseaux, sans armes, et sans biens,</l>
             <l n="1140" xml:id="l1140">Attaqué par vos gens, et trahi par les siens</l>
@@ -1805,11 +1848,11 @@
             <l n="1189" xml:id="l1189">Enfin nous le portons au sépulcre où la reine</l>
             <l n="1190" xml:id="l1190">S’efforçait d’abréger et sa vie, et sa peine.</l>
           </sp>
-          <sp xml:id="IV03-4" who="CESAR">
+          <sp who="CESAR" xml:id="IV03-4">
             <speaker>CÉSAR.</speaker>
-            <l n="1191" xml:id="l1191" part="I">Vous laissa-t-elle entrer ?</l>
+            <l n="1191" part="I" xml:id="l1191">Vous laissa-t-elle entrer ?</l>
           </sp>
-          <sp xml:id="IV03-5" who="DIRCET">
+          <sp who="DIRCET" xml:id="IV03-5">
             <speaker>DIRCET.</speaker>
             <l part="F">Non, du haut du tombeau</l>
             <l n="1192" xml:id="l1192">Ses filles d’une corde attiraient ce fardeau,</l>
@@ -1822,11 +1865,11 @@
             <l n="1199" xml:id="l1199">Tendait ses bras mourants, les raidissait exprès,</l>
             <l n="1200" xml:id="l1200">Se soulevait un peu, mais retombait après.</l>
           </sp>
-          <sp xml:id="IV03-6" who="CESAR">
+          <sp who="CESAR" xml:id="IV03-6">
             <speaker>CÉSAR.</speaker>
-            <l n="1201" xml:id="l1201" part="I">Son coeur aimait encore ?</l>
+            <l n="1201" part="I" xml:id="l1201">Son coeur aimait encore ?</l>
           </sp>
-          <sp xml:id="IV03-7" who="DIRCET">
+          <sp who="DIRCET" xml:id="IV03-7">
             <speaker>DIRCET.</speaker>
             <l part="F">Il conservait sa flamme,</l>
             <l n="1202" xml:id="l1202">La blessure du corps n’avait pas guéri l’âme,</l>
@@ -1843,15 +1886,18 @@
             <l n="1213" xml:id="l1213">Par son commandement j’apporte cette épée</l>
             <l n="1214" xml:id="l1214">Au sang d’un empereur tout fraîchement trempée.</l>
           </sp>
-          <sp xml:id="IV03-8" who="CESAR">
+          <sp who="CESAR" xml:id="IV03-8">
             <speaker>CÉSAR.</speaker>
             <l n="1215" xml:id="l1215">Elle honore César d’un présent sans égal,</l>
             <l n="1216" xml:id="l1216">Dis-lui qu’elle m’oblige, et que je plains son mal.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV04" type="scene" n="4">
-          <head>SCÈNE IV. César, Agripe, Epaphrodite<listPerson type="configuration" xml:id="conf19"><person corresp="#CESAR"/><person corresp="#AGRIPE"/><person corresp="#EPAPHRODITE"/></listPerson></head>
-          <sp xml:id="IV04-1" who="CESAR">
+        <div2 n="4" type="scene" xml:id="IV04">
+          <head>SCÈNE IV. César, Agripe, Epaphrodite<listPerson type="configuration" xml:id="conf19">
+            <person corresp="#CESAR"/>
+            <person corresp="#AGRIPE"/>
+            <person corresp="#EPAPHRODITE"/></listPerson></head>
+          <sp who="CESAR" xml:id="IV04-1">
             <speaker>CÉSAR tenant l’épée d’Antoine.</speaker>
             <l n="1217" xml:id="l1217">Dieux par ce triste exemple où le malheur préside,</l>
             <l n="1218" xml:id="l1218">La fortune me rend, et superbe, et timide !</l>
@@ -1879,7 +1925,7 @@
             <note type="L">Inclination : Se dit aussi de l’amour, du penchant, de l’attachement qu’on a pour quelqu’un. [F]</note>
             <l n="1240" xml:id="l1240">Lui laisse encor pour toi de l’inclination.</l>
           </sp>
-          <sp xml:id="IV04-2" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="IV04-2">
             <speaker>AGRIPE.</speaker>
             <l n="1241" xml:id="l1241">Que vous sert cette plainte injuste autant que vaine ?</l>
             <l n="1242" xml:id="l1242">Entrons dedans la ville, et visitez la reine :</l>
@@ -1889,16 +1935,17 @@
             <l n="1246" xml:id="l1246">Ce qu’elle a dans l’esprit, et dessus le visage :</l>
             <l n="1247" xml:id="l1247">Soyez toujours César contre ses forts appas.</l>
           </sp>
-          <sp xml:id="IV04-3" who="CESAR">
+          <sp who="CESAR" xml:id="IV04-3">
             <speaker>CÉSAR.</speaker>
             <l n="1248" xml:id="l1248">Ces faibles ennemis ne m’épouvantent pas,</l>
             <l n="1249" xml:id="l1249">Et ne peuvent ôter un ornement si rare</l>
             <l n="1250" xml:id="l1250">Au triomphe pompeux que Rome nous prépare.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV05" type="scene" n="5">
-          <head>SCÈNE V.<listPerson type="configuration" xml:id="conf20"><person corresp="#CLEOPATRE"/></listPerson></head>
-          <sp xml:id="IV05-1" who="CLEOPATRE">
+        <div2 n="5" type="scene" xml:id="IV05">
+          <head>SCÈNE V.<listPerson type="configuration" xml:id="conf20">
+            <person corresp="#CLEOPATRE"/></listPerson></head>
+          <sp who="CLEOPATRE" xml:id="IV05-1">
             <speaker>CLEOPATRE, vêtue de deuil, et dans une chambre tendue de deuil.</speaker>
             <l n="1251" xml:id="l1251">Diadèmes, grandeurs, rangs, titres absolus,</l>
             <l n="1252" xml:id="l1252">Puisque vous me quittez ne m’importunez plus,</l>
@@ -1944,23 +1991,25 @@
             <l n="1292" xml:id="l1292">Tout ce qu’ils m’ont ôté son trépas me rend.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV06" type="scene" n="6">
-          <head>SCÈNE VI. Eras, Cléopâtre.<listPerson type="configuration" xml:id="conf21"><person corresp="#ERAS"/><person corresp="#CLEOPATRE"/></listPerson></head>
-          <sp xml:id="IV06-1" who="ERAS">
+        <div2 n="6" type="scene" xml:id="IV06">
+          <head>SCÈNE VI. Eras, Cléopâtre.<listPerson type="configuration" xml:id="conf21">
+            <person corresp="#ERAS"/>
+            <person corresp="#CLEOPATRE"/></listPerson></head>
+          <sp who="ERAS" xml:id="IV06-1">
             <speaker>ERAS.</speaker>
-            <l n="1293" xml:id="l1293" part="I">César est ici bas.</l>
+            <l n="1293" part="I" xml:id="l1293">César est ici bas.</l>
           </sp>
-          <sp xml:id="IV06-2" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV06-2">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">Que venez-vous m’apprendre ?</l>
           </sp>
-          <sp xml:id="IV06-3" who="ERAS">
+          <sp who="ERAS" xml:id="IV06-3">
             <speaker>ERAS.</speaker>
             <l n="1294" xml:id="l1294">Que le vainqueur, madame, au vaincu se vient rendre,</l>
             <l n="1295" xml:id="l1295">Qu’il ne tient qu’aux attraits de votre majesté</l>
             <l n="1296" xml:id="l1296">De conserver son sceptre, et notre liberté.</l>
           </sp>
-          <sp xml:id="IV06-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV06-4">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1297" xml:id="l1297">Espoir faux, et flatteur des âmes affligées !</l>
             <l n="1298" xml:id="l1298">Les plus grandes beautés sont ici négligées,</l>
@@ -1969,16 +2018,18 @@
             <l n="1301" xml:id="l1301">Mon oeil lançait des feux, il n’a plus que des larmes,</l>
             <l n="1302" xml:id="l1302">Et le tombeau d’Antoine est celui de mes charmes,</l>
             <l n="1303" xml:id="l1303">Il ne m’en reste pas pour le rendre adouci,</l>
-            <l n="1304" xml:id="l1304" part="I">Ni pour vaincre un vainqueur.</l>
+            <l n="1304" part="I" xml:id="l1304">Ni pour vaincre un vainqueur.</l>
           </sp>
-          <sp xml:id="IV06-5" who="ERAS">
+          <sp who="ERAS" xml:id="IV06-5">
             <speaker>ERAS.</speaker>
             <l part="F">Madame, le voici.</l>
           </sp>
         </div2>
-        <div2 xml:id="IV07" type="scene" n="7">
-          <head>SCÈNE VII. Cléopâtre, César.<listPerson type="configuration" xml:id="conf22"><person corresp="#CLEOPATRE"/><person corresp="#CESAR"/></listPerson></head>
-          <sp xml:id="IV07-1" who="CLEOPATRE">
+        <div2 n="7" type="scene" xml:id="IV07">
+          <head>SCÈNE VII. Cléopâtre, César.<listPerson type="configuration" xml:id="conf22">
+            <person corresp="#CLEOPATRE"/>
+            <person corresp="#CESAR"/></listPerson></head>
+          <sp who="CLEOPATRE" xml:id="IV07-1">
             <speaker>CLÉOPÂTRE aux pieds de César.</speaker>
             <l n="1305" xml:id="l1305">Seigneur (car vous portez cette qualité haute,</l>
             <l n="1306" xml:id="l1306">Le ciel qui vous chérit vous la donne, et me l’ôte)</l>
@@ -1993,7 +2044,7 @@
             <l n="1315" xml:id="l1315">Soyez content, songez remerciant les dieux</l>
             <l n="1316" xml:id="l1316">Que vous seriez cruel étant plus glorieux.</l>
           </sp>
-          <sp xml:id="IV07-2" who="CESAR">
+          <sp who="CESAR" xml:id="IV07-2">
             <speaker>CÉSAR, la relevant.</speaker>
             <l n="1317" xml:id="l1317">Si vous ne saviez pas de quelle douceur j’use</l>
             <l n="1318" xml:id="l1318">Vers ceux que je surmonte, et que la guerre abuse,</l>
@@ -2012,7 +2063,7 @@
             <l n="1331" xml:id="l1331">Le hasard fait toujours le succès des combats,</l>
             <l n="1332" xml:id="l1332">Ne m’en accusez point, ni ne m’en louez pas.</l>
           </sp>
-          <sp xml:id="IV07-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV07-3">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1333" xml:id="l1333">La louange s’applique en une telle sorte</l>
             <l n="1334" xml:id="l1334">Que moins l’on en désire, et plus on en remporte,</l>
@@ -2031,12 +2082,12 @@
             <l n="1347" xml:id="l1347">Il devait seconder tes desseins généreux,</l>
             <l n="1348" xml:id="l1348">Mais quoi s’il fut coupable, il était amoureux.</l>
           </sp>
-          <sp xml:id="IV07-4" who="CESAR">
+          <sp who="CESAR" xml:id="IV07-4">
             <speaker>CÉSAR.</speaker>
             <l n="1349" xml:id="l1349">Excusez si mes faits vous ont coûté des larmes,</l>
             <l n="1350" xml:id="l1350">On ne peut réprimer l’insolence des armes.</l>
           </sp>
-          <sp xml:id="IV07-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV07-5">
             <speaker>CLEOPATRE, continue.</speaker>
             <l n="1351" xml:id="l1351">L’amour, divin César, est un puissant démon,</l>
             <l n="1352" xml:id="l1352">Qui n’en ressent la force en respecte le nom,</l>
@@ -2051,12 +2102,12 @@
             <l n="1361" xml:id="l1361">Je captivai son âme, il me fit sa maîtresse</l>
             <l n="1362" xml:id="l1362">Par un aveuglement plutôt que par faiblesse.</l>
           </sp>
-          <sp xml:id="IV07-6" who="CESAR">
+          <sp who="CESAR" xml:id="IV07-6">
             <speaker>CÉSAR.</speaker>
             <l n="1363" xml:id="l1363">S’il eut eu ce défaut, sa gloire, et vos appas</l>
             <l n="1364" xml:id="l1364">Au temple de l’estime auraient un lieu plus bas.</l>
           </sp>
-          <sp xml:id="IV07-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV07-7">
             <speaker>CLEOPATRE, continue.</speaker>
             <l n="1365" xml:id="l1365">Sa puissante vertu justement animée</l>
             <l n="1366" xml:id="l1366">Au dessein de punir mon frère Ptolemée,</l>
@@ -2086,11 +2137,11 @@
             <l n="1387" xml:id="l1387">Renouvelle (mon coeur) ce qu’autrefois tu fis,</l>
             <l n="1388" xml:id="l1388">Et laissez-moi chercher le père dans le fils.</l>
           </sp>
-          <sp xml:id="IV07-8" who="CESAR">
+          <sp who="CESAR" xml:id="IV07-8">
             <speaker>CÉSAR.</speaker>
-            <l n="1389" xml:id="l1389" part="I">Espérez tout de moi.</l>
+            <l n="1389" part="I" xml:id="l1389">Espérez tout de moi.</l>
           </sp>
-          <sp xml:id="IV07-9" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV07-9">
             <speaker>CLEOPATRE en pleurant.</speaker>
             <l part="F">Je veux dans ma misère</l>
             <l n="1390" xml:id="l1390">Obtenir deux faveurs, c’est tout ce que j’espère,</l>
@@ -2098,11 +2149,11 @@
             <l n="1392" xml:id="l1392">Que je retrouve Antoine en mourant comme lui,</l>
             <l n="1393" xml:id="l1393">C’est la moindre faveur que vous me puissiez faire.</l>
           </sp>
-          <sp xml:id="IV07-10" who="CESAR">
+          <sp who="CESAR" xml:id="IV07-10">
             <speaker>CÉSAR.</speaker>
             <l n="1394" xml:id="l1394">Je vous ferai, madame, éprouver le contraire.</l>
           </sp>
-          <sp xml:id="IV07-11" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV07-11">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1395" xml:id="l1395">L’autre que mes enfants soient moins infortunés,</l>
             <l n="1396" xml:id="l1396">Et qu’à votre triomphe ils ne soient point menés,</l>
@@ -2117,12 +2168,12 @@
             <l n="1405" xml:id="l1405">Fasse voir sans flétrir vos lauriers, ni vos palmes,</l>
             <l n="1406" xml:id="l1406">Votre vie assurée, et vos provinces calmes.</l>
           </sp>
-          <sp xml:id="IV07-12" who="CESAR">
+          <sp who="CESAR" xml:id="IV07-12">
             <speaker>CÉSAR.</speaker>
             <l n="1407" xml:id="l1407">Espérez de vous voir dans vos adversités,</l>
             <l n="1408" xml:id="l1408">Et vous, et vos enfants royalement traités.</l>
           </sp>
-          <sp xml:id="IV07-13" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="IV07-13">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1409" xml:id="l1409">Ce cruel ne m’a pas seulement regardée,</l>
             <l n="1410" xml:id="l1410">Dieux de quelles fureurs me sens-je possédée !</l>
@@ -2131,11 +2182,13 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="V" type="act" n="5">
+      <div1 n="5" type="act" xml:id="V">
         <head>ACTE V</head>
-        <div2 xml:id="V01" type="scene" n="1">
-          <head>SCÈNE I. Cléopâtre, ses filles, Epaphrodite.<listPerson type="configuration" xml:id="conf24"><person corresp="#CLEOPATRE"/><person corresp="#EPAPHRODITE"/></listPerson></head>
-          <sp xml:id="V01-1" who="CLEOPATRE">
+        <div2 n="1" type="scene" xml:id="V01">
+          <head>SCÈNE I. Cléopâtre, ses filles, Epaphrodite.<listPerson type="configuration" xml:id="conf24">
+            <person corresp="#CLEOPATRE"/>
+            <person corresp="#EPAPHRODITE"/></listPerson></head>
+          <sp who="CLEOPATRE" xml:id="V01-1">
             <speaker>CLÉOPÂTRE, à Epaphrodite.</speaker>
             <l n="1413" xml:id="l1413">Ton esprit, je l’avoue, ô sage Epaphrodite,</l>
             <l n="1414" xml:id="l1414">Change par ses raisons ce que le mien médite,</l>
@@ -2150,7 +2203,7 @@
             <l n="1423" xml:id="l1423">Si mon oeil baigne encor ce teint défiguré,</l>
             <l n="1424" xml:id="l1424">Il pleure seulement de ce qu’il a pleuré.</l>
           </sp>
-          <sp xml:id="V01-2" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V01-2">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1425" xml:id="l1425">Ce changement soudain m’étonnerait, Madame,</l>
             <l n="1426" xml:id="l1426">Si je méconnaissais les forces de votre âme</l>
@@ -2163,7 +2216,7 @@
             <l n="1433" xml:id="l1433">Et rendu par vos pleurs la nature contente,</l>
             <l n="1434" xml:id="l1434">Antoine satisfait, la vertu triomphante.</l>
           </sp>
-          <sp xml:id="V01-3" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V01-3">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1435" xml:id="l1435">Le ciel qui fit mon coeur propre à lui résister</l>
             <l n="1436" xml:id="l1436">Pour avoir plus d’honneur à me persécuter,</l>
@@ -2186,7 +2239,7 @@
             <l n="1453" xml:id="l1453">Je veux vivre ou mourir si mon vainqueur l’ordonne,</l>
             <l n="1454" xml:id="l1454">Et je mets à ses pieds ma vie, et ma couronne.</l>
           </sp>
-          <sp xml:id="V01-4" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V01-4">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1455" xml:id="l1455">L’on ne se peut servir d’un charme plus puissant,</l>
             <l n="1456" xml:id="l1456">Et votre majesté s’élève en s’abaissant ;</l>
@@ -2195,7 +2248,7 @@
             <l n="1459" xml:id="l1459">César peut n’user pas d’un titre glorieux,</l>
             <l n="1460" xml:id="l1460">Il porte un coeur, Madame, et vous avez des yeux.</l>
           </sp>
-          <sp xml:id="V01-5" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V01-5">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1461" xml:id="l1461">Pour faire ce beau coup dont mon bien se limite</l>
             <l n="1462" xml:id="l1462">J’ai trop d’adversités, et trop peu de mérite,</l>
@@ -2210,27 +2263,30 @@
             <l n="1471" xml:id="l1471">Que je lui sacrifie un sceptre, et mes enfants,</l>
             <l n="1472" xml:id="l1472">Et suis ses pas vainqueurs, ou même triomphants.</l>
           </sp>
-          <sp xml:id="V01-6" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V01-6">
             <speaker>EPAPHRODITE.</speaker>
-            <l n="1473" xml:id="l1473" part="I">Madame, j’obéis.</l>
+            <l n="1473" part="I" xml:id="l1473">Madame, j’obéis.</l>
           </sp>
-          <sp xml:id="V01-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V01-7">
             <speaker>CLÉOPÂTRE.</speaker>
             <l part="F">Le ciel soit ton salaire.</l>
           </sp>
-          <sp xml:id="V01-8" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V01-8">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1474" xml:id="l1474">Je n’en recherche point que l’honneur de vous plaire.</l>
           </sp>
         </div2>
-        <div2 xml:id="V02" type="scene" n="2">
-          <head>SCÈNE II. Cléopâtre, Eras, Charmion.<listPerson type="configuration" xml:id="conf25"><person corresp="#CHARMION"/><person corresp="#CLEOPATRE"/><person corresp="#ERAS"/></listPerson></head>
-          <sp xml:id="V02-1" who="CHARMION">
+        <div2 n="2" type="scene" xml:id="V02">
+          <head>SCÈNE II. Cléopâtre, Eras, Charmion.<listPerson type="configuration" xml:id="conf25">
+            <person corresp="#CHARMION"/>
+            <person corresp="#CLEOPATRE"/>
+            <person corresp="#ERAS"/></listPerson></head>
+          <sp who="CHARMION" xml:id="V02-1">
             <speaker>CHARMION.</speaker>
             <l n="1475" xml:id="l1475">Il est sorti, Madame, et son éloignement</l>
             <l n="1476" xml:id="l1476">Vous donne le moyen de parler librement.</l>
           </sp>
-          <sp xml:id="V02-2" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-2">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1477" xml:id="l1477">Aidons-nous du secours dont les dieux nous obligent,</l>
             <l n="1478" xml:id="l1478">Et vengeons-nous sur nous de ceux qui nous affligent,</l>
@@ -2249,7 +2305,7 @@
             <l n="1491" xml:id="l1491">De l’argus importun que je viens d’éloigner,</l>
             <l n="1492" xml:id="l1492">Et lui cache mon deuil pour te le témoigner.</l>
           </sp>
-          <sp xml:id="V02-3" who="ERAS">
+          <sp who="ERAS" xml:id="V02-3">
             <speaker>ERAS.</speaker>
             <l n="1493" xml:id="l1493">Puisque César, Madame, a de si fortes armes</l>
             <l n="1494" xml:id="l1494">Qu’il résiste à vos yeux aussi bien qu’à vos larmes,</l>
@@ -2260,11 +2316,11 @@
             <l n="1499" xml:id="l1499">Il faut d’un beau trépas limiter notre ennui,</l>
             <l n="1500" xml:id="l1500">Et triompher de nous pour triompher de lui.</l>
           </sp>
-          <sp xml:id="V02-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-4">
             <speaker>CLÉOPÂTRE.</speaker>
-            <l n="1501" xml:id="l1501" part="I">N’est-ce pas mon dessein ?</l>
+            <l n="1501" part="I" xml:id="l1501">N’est-ce pas mon dessein ?</l>
           </sp>
-          <sp xml:id="V02-5" who="CHARMION">
+          <sp who="CHARMION" xml:id="V02-5">
             <speaker>CHARMION.</speaker>
             <l part="F">Que tardons-nous, Madame ?</l>
             <l n="1502" xml:id="l1502">Suivons un empereur, et dégageons notre âme,</l>
@@ -2273,25 +2329,25 @@
             <l n="1505" xml:id="l1505">Mourons quelque douleur qui nous puisse être offerte,</l>
             <l n="1506" xml:id="l1506">Et cherchons le salut où l’on trouve la perte.</l>
           </sp>
-          <sp xml:id="V02-6" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-6">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1507" xml:id="l1507">Je ne puis trop louer vos généreux propos,</l>
             <l n="1508" xml:id="l1508">Mais leurs tristes effets blesseraient mon repos.</l>
             <l n="1509" xml:id="l1509">N’irritez point le ciel, n’avancez point votre heure,</l>
             <l n="1510" xml:id="l1510">Ne suivez point mes pas, c’est assez que je meure,</l>
             <l n="1511" xml:id="l1511">Usez heureusement le fil de vos beaux jours,</l>
-            <l n="1512" xml:id="l1512" part="I">Vivez après ma mort.</l>
+            <l n="1512" part="I" xml:id="l1512">Vivez après ma mort.</l>
           </sp>
-          <sp xml:id="V02-7" who="ERAS">
+          <sp who="ERAS" xml:id="V02-7">
             <speaker>ERAS.</speaker>
             <l part="F">Nous vous suivrons toujours.</l>
           </sp>
-          <sp xml:id="V02-8" who="CHARMION">
+          <sp who="CHARMION" xml:id="V02-8">
             <speaker>CHARMION.</speaker>
             <l n="1513" xml:id="l1513">Non, non, notre destin sera conforme au vôtre,</l>
             <l n="1514" xml:id="l1514">Arrêtant votre mort vous concluez la nôtre.</l>
           </sp>
-          <sp xml:id="V02-9" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-9">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1515" xml:id="l1515">Donc le ciel adorable en ses faits merveilleux,</l>
             <l n="1516" xml:id="l1516">Qui m’avait mis en main cet empire orgueilleux,</l>
@@ -2304,7 +2360,7 @@
             <l n="1523" xml:id="l1523">Nos pas nous vont conduire en un séjour de biens,</l>
             <l n="1524" xml:id="l1524">Je suivrai ceux d’Antoine, et vous suivrez les miens.</l>
           </sp>
-          <sp xml:id="V02-10" who="ERAS">
+          <sp who="ERAS" xml:id="V02-10">
             <speaker>ERAS.</speaker>
             <l n="1525" xml:id="l1525">De quel genre de mort choisirons nous la peine ?</l>
             <l n="1526" xml:id="l1526">Je veux servir d’exemple à notre grande reine,</l>
@@ -2313,12 +2369,12 @@
             <l n="1529" xml:id="l1529">Nous suffoquerons-nous ? Ou bien rendrons-nous l’âme</l>
             <l n="1530" xml:id="l1530">Comme cette romaine avalant de la flamme ?</l>
           </sp>
-          <sp xml:id="V02-11" who="CHARMION">
+          <sp who="CHARMION" xml:id="V02-11">
             <speaker>CHARMION.</speaker>
             <l n="1531" xml:id="l1531">On nous ôte les fers, les poisons, et les feux,</l>
             <l n="1532" xml:id="l1532">Mais il nous reste encor des mains et des cheveux.</l>
           </sp>
-          <sp xml:id="V02-12" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V02-12">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1533" xml:id="l1533">Le ciel veut que la mort doucement nous saisisse,</l>
             <l n="1534" xml:id="l1534">Sa haine à cette fois nous l’a rendu propice,</l>
@@ -2332,16 +2388,18 @@
             <l n="1542" xml:id="l1542">Qu’elle paraisse au moins noble, riche, et pompeuse.</l>
           </sp>
         </div2>
-        <div2 xml:id="V03" type="scene" n="3">
-          <head>SCÈNE III. César, Agripe.<listPerson type="configuration" xml:id="conf26"><person corresp="#CESAR"/><person corresp="#AGRIPE"/></listPerson></head>
-          <sp xml:id="V03-1" who="CESAR">
+        <div2 n="3" type="scene" xml:id="V03">
+          <head>SCÈNE III. César, Agripe.<listPerson type="configuration" xml:id="conf26">
+            <person corresp="#CESAR"/>
+            <person corresp="#AGRIPE"/></listPerson></head>
+          <sp who="CESAR" xml:id="V03-1">
             <speaker>CÉSAR.</speaker>
             <l n="1543" xml:id="l1543">Agrippe, elle est à nous, rien ne m’a surmonté,</l>
             <l n="1544" xml:id="l1544">J’ai fait céder la force à la subtilité,</l>
             <l n="1545" xml:id="l1545">Et j’ai fait voir trompant cette fine adversaire</l>
             <l n="1546" xml:id="l1546">Qu’à la vertu souvent le vice est nécessaire.</l>
           </sp>
-          <sp xml:id="V03-2" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V03-2">
             <speaker>AGRIPE.</speaker>
             <l n="1547" xml:id="l1547">Avoir pu résister à de si forts appas ?</l>
             <l n="1548" xml:id="l1548">Ce combat est plus grand que vos autres combats ?</l>
@@ -2350,7 +2408,7 @@
             <l n="1551" xml:id="l1551">Se détourner d’un feu si subtil, et si prompt,</l>
             <l n="1552" xml:id="l1552">C’est le plus beau laurier qui ceigne votre front.</l>
           </sp>
-          <sp xml:id="V03-3" who="CESAR">
+          <sp who="CESAR" xml:id="V03-3">
             <speaker>CÉSAR.</speaker>
             <l n="1553" xml:id="l1553">Mon coeur dans ces attraits où le plus fort s’engage</l>
             <l n="1554" xml:id="l1554">Est un rocher battu des vents, et de l’orage :</l>
@@ -2367,7 +2425,7 @@
             <l n="1565" xml:id="l1565">Elle ne s’efforçait en se faisant plus belle,</l>
             <l n="1566" xml:id="l1566">Qu’à me rendre vaincu, moi qu’à triompher d’elle.</l>
           </sp>
-          <sp xml:id="V03-4" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V03-4">
             <speaker>AGRIPE.</speaker>
             <l n="1567" xml:id="l1567">Aux combats où l’amour attaque, et presse un coeur,</l>
             <l n="1568" xml:id="l1568">La palme est au plus lâche, et qui fuit est vainqueur,</l>
@@ -2383,7 +2441,7 @@
             <l n="1577" xml:id="l1577">Il fallait toutefois pour mieux sécher ses larmes</l>
             <l n="1578" xml:id="l1578">Vous feindre habilement esclave de ses charmes.</l>
           </sp>
-          <sp xml:id="V03-5" who="CESAR">
+          <sp who="CESAR" xml:id="V03-5">
             <speaker>CÉSAR.</speaker>
             <l n="1579" xml:id="l1579">Elle qui sait qu’amour ne m’a jamais atteint,</l>
             <l n="1580" xml:id="l1580">Connaissant mon humeur eut vu que j’eusse feint,</l>
@@ -2392,19 +2450,22 @@
             <l n="1583" xml:id="l1583">Et j’ai lu dans ses yeux le vrai contentement</l>
             <l n="1584" xml:id="l1584">Que son âme a goûté d’un si doux compliment.</l>
           </sp>
-          <sp xml:id="V03-6" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V03-6">
             <speaker>AGRIPE.</speaker>
-            <l n="1585" xml:id="l1585" part="I">Vous l’avez bien trompée.</l>
+            <l n="1585" part="I" xml:id="l1585">Vous l’avez bien trompée.</l>
           </sp>
-          <sp xml:id="V03-7" who="CESAR">
+          <sp who="CESAR" xml:id="V03-7">
             <speaker>CÉSAR.</speaker>
             <l part="F">Une telle visite.</l>
             <l n="1586" xml:id="l1586">Mais quelle occasion amène Epaphrodite ?</l>
           </sp>
         </div2>
-        <div2 xml:id="V04" type="scene" n="4">
-          <head>SCÈNE IV. Epaphrodite, César, Agripe<listPerson type="configuration" xml:id="conf27"><person corresp="#EPAPHRODITE"/><person corresp="#CESAR"/><person corresp="#AGRIPE"/></listPerson></head>
-          <sp xml:id="V04-1" who="EPAPHRODITE">
+        <div2 n="4" type="scene" xml:id="V04">
+          <head>SCÈNE IV. Epaphrodite, César, Agripe<listPerson type="configuration" xml:id="conf27">
+            <person corresp="#EPAPHRODITE"/>
+            <person corresp="#CESAR"/>
+            <person corresp="#AGRIPE"/></listPerson></head>
+          <sp who="EPAPHRODITE" xml:id="V04-1">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1587" xml:id="l1587">J’avais charge, ô César ! D’adoucir des malheurs,</l>
             <l n="1588" xml:id="l1588">De consoler la reine, et de sécher ses pleurs,</l>
@@ -2415,11 +2476,11 @@
             <l n="1593" xml:id="l1593">Je crois que de sa part ce billet vous va dire</l>
             <l n="1594" xml:id="l1594">Que vous gagnez un coeur aussi bien qu’un empire.</l>
           </sp>
-          <sp xml:id="V04-2" who="CESAR">
+          <sp who="CESAR" xml:id="V04-2">
             <speaker>CÉSAR.</speaker>
-            <l n="1595" xml:id="l1595" part="I">Deviez-vous l’éloigner ?</l>
+            <l n="1595" part="I" xml:id="l1595">Deviez-vous l’éloigner ?</l>
           </sp>
-          <sp xml:id="V04-3" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V04-3">
             <speaker>EPAPHRODITE.</speaker>
             <l part="F">Ne la soupçonnez pas,</l>
             <l n="1596" xml:id="l1596">Allez jusques dans Rome elle suivra vos pas,</l>
@@ -2428,7 +2489,7 @@
             <l n="1599" xml:id="l1599">Vous plaisant elle règne, et son ambition</l>
             <l n="1600" xml:id="l1600">Se termine en l’honneur de votre affection.</l>
           </sp>
-          <sp xml:id="V04-4" who="CESAR">
+          <sp who="CESAR" xml:id="V04-4">
             <speaker>CÉSAR.</speaker>
             <l n="1601" xml:id="l1601">Étrange passion que l’on ne peut contraindre !</l>
             <l n="1602" xml:id="l1602">Agripe, en vérité je commence à la plaindre</l>
@@ -2452,17 +2513,17 @@
             <l n="1619" xml:id="l1619">C’est le ressentiment d’une âme généreuse</l>
             <l n="1620" xml:id="l1620">Des beautés du trépas seulement amoureuse.</l>
           </sp>
-          <sp xml:id="V04-5" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V04-5">
             <speaker>AGRIPE.</speaker>
             <l n="1621" xml:id="l1621">Cette femme est subtile, et les traits de sa main</l>
             <l n="1622" xml:id="l1622">Témoignent que son coeur brasse un mauvais dessein.</l>
           </sp>
-          <sp xml:id="V04-6" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V04-6">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1623" xml:id="l1623">Son âme à la douleur ne se met plus en proie,</l>
             <l n="1624" xml:id="l1624">Et son front est le siège où préside la joie.</l>
           </sp>
-          <sp xml:id="V04-7" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V04-7">
             <speaker>AGRIPE.</speaker>
             <l n="1625" xml:id="l1625">Croyez que le visage en déguise l’esprit,</l>
             <l n="1626" xml:id="l1626">Il se faut défier d’un affligé qui rit,</l>
@@ -2475,12 +2536,12 @@
             <l n="1633" xml:id="l1633">Peut-être qu’elle trame un dessein différent,</l>
             <l n="1634" xml:id="l1634">Et qu’imitant le cygne elle chante en mourant.</l>
           </sp>
-          <sp xml:id="V04-8" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V04-8">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1635" xml:id="l1635">Quand elle suspendrait sa tristesse, et ses larmes,</l>
             <l n="1636" xml:id="l1636">Que peut contre sa vie un désespoir sans armes ?</l>
           </sp>
-          <sp xml:id="V04-9" who="CESAR">
+          <sp who="CESAR" xml:id="V04-9">
             <speaker>CÉSAR.</speaker>
             <l n="1637" xml:id="l1637">Ôtez le fer, la flamme, éloignez de ses yeux</l>
             <l n="1638" xml:id="l1638">Tout ce que la nature a de pernicieux,</l>
@@ -2494,9 +2555,12 @@
             <l n="1646" xml:id="l1646">C’est l’âme de ma gloire ainsi que de son corps.</l>
           </sp>
         </div2>
-        <div2 xml:id="V05" type="scene" n="5">
-          <head>SCÈNE V. Cléopâtre, ses filles.<listPerson type="configuration" xml:id="conf28"><person corresp="#CLEOPATRE"/><person corresp="#ERAS"/><person corresp="#CHARMION"/></listPerson></head>
-          <sp xml:id="V05-1" who="CLEOPATRE">
+        <div2 n="5" type="scene" xml:id="V05">
+          <head>SCÈNE V. Cléopâtre, ses filles.<listPerson type="configuration" xml:id="conf28">
+            <person corresp="#CLEOPATRE"/>
+            <person corresp="#ERAS"/>
+            <person corresp="#CHARMION"/></listPerson></head>
+          <sp who="CLEOPATRE" xml:id="V05-1">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1647" xml:id="l1647">Que nos destins sont doux ! Que la mort a de charmes !</l>
             <l n="1648" xml:id="l1648">Je n’ai point de soupirs, je ne vois point de larmes,</l>
@@ -2544,7 +2608,7 @@
             <l n="1689" xml:id="l1689">Non, non, d’ailleurs la honte augmente mon ennui,</l>
             <l n="1690" xml:id="l1690">Je n’ai peur que d’Antoine, et pourtant je le suis.</l>
           </sp>
-          <sp xml:id="V05-2" who="ERAS">
+          <sp who="ERAS" xml:id="V05-2">
             <speaker>ERAS.</speaker>
             <l n="1691" xml:id="l1691">Ce n’est pas mon dessein comme lâche, et peureuse,</l>
             <l n="1692" xml:id="l1692">De vous dissuader une mort généreuse,</l>
@@ -2561,7 +2625,7 @@
             <l n="1703" xml:id="l1703">Souffrez que je sois ferme, et que ma vertu brille,</l>
             <l n="1704" xml:id="l1704">En vous voyant mourir j’aurais peur d’être fille.</l>
           </sp>
-          <sp xml:id="V05-3" who="CHARMION">
+          <sp who="CHARMION" xml:id="V05-3">
             <speaker>CHARMION.</speaker>
             <l n="1705" xml:id="l1705">Que ce soit moi, Madame, ou le bras de la mort,</l>
             <l n="1706" xml:id="l1706">Exerce la rigueur de son premier effort,</l>
@@ -2570,7 +2634,7 @@
             <l n="1709" xml:id="l1709">Les dieux ne sont en vain si longtemps suppliés,</l>
             <l n="1710" xml:id="l1710">Voyez moi de ce pas tomber morte à vos pieds.</l>
           </sp>
-          <sp xml:id="V05-4" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V05-4">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1711" xml:id="l1711">Quoi pour voir ces bas lieux où tout mortel dévale,</l>
             <l n="1712" xml:id="l1712">L’ordre en est différent, et la suite inégale ?</l>
@@ -2595,21 +2659,21 @@
             <l n="1729" xml:id="l1729">S’il eut eu plus de force, il me serait plus cher,</l>
             <l n="1730" xml:id="l1730">Et la nature ailleurs le devait attacher.</l>
           </sp>
-          <sp xml:id="V05-5" who="ERAS">
+          <sp who="ERAS" xml:id="V05-5">
             <speaker>ERAS.</speaker>
             <l n="1731" xml:id="l1731">Madame, qu’avec vous je quitte la lumière,</l>
             <l n="1732" xml:id="l1732">Non, non, je veux, ma soeur, la suivre la première,</l>
             <l n="1733" xml:id="l1733">Et c’est à moi l’honneur de ce second trépas,</l>
             <l n="1734" xml:id="l1734">Ô mort ! Dépêche-toi que je ne pleure pas.</l>
           </sp>
-          <sp xml:id="V05-6" who="CHARMION">
+          <sp who="CHARMION" xml:id="V05-6">
             <speaker>CHARMION.</speaker>
             <l n="1735" xml:id="l1735">Je verrai la vertu dont vous êtes pourvue,</l>
             <l n="1736" xml:id="l1736">La mienne va paraître, et ne sera point vue,</l>
             <l n="1737" xml:id="l1737">Ma constance fera des efforts superflus,</l>
             <l n="1738" xml:id="l1738">Et sera sans témoins en paressant le plus ?</l>
           </sp>
-          <sp xml:id="V05-7" who="CLEOPATRE">
+          <sp who="CLEOPATRE" xml:id="V05-7">
             <speaker>CLÉOPÂTRE.</speaker>
             <l n="1739" xml:id="l1739">Que César est trompé, qu’il perd dans sa victoire,</l>
             <l n="1740" xml:id="l1740">Que sa froideur sûre est fatale à sa gloire,</l>
@@ -2626,18 +2690,21 @@
             <l n="1751" xml:id="l1751">Je sens bien que la mort achève mon martyre,</l>
             <l n="1752" xml:id="l1752">Portez-moi sur mon lit qu’à mon aise j’expire.</l>
           </sp>
-          <sp xml:id="V05-8" who="ERAS">
+          <sp who="ERAS" xml:id="V05-8">
             <speaker>ERAS.</speaker>
             <l n="1753" xml:id="l1753">Je vous suis au chemin que vous allez tenir ?</l>
           </sp>
-          <sp xml:id="V05-9" who="CHARMION">
+          <sp who="CHARMION" xml:id="V05-9">
             <speaker>CHARMION.</speaker>
             <l n="1754" xml:id="l1754">J’ai bien peur que mon rang ne soit long à venir.</l>
           </sp>
         </div2>
-        <div2 xml:id="V06" type="scene" n="6">
-          <head>SCÈNE VI. César, Epaphrodite, Agripe.<listPerson type="configuration" xml:id="conf29"><person corresp="#CESAR"/><person corresp="#AGRIPE"/><person corresp="#EPAPHRODITE"/></listPerson></head>
-          <sp xml:id="V06-1" who="CESAR">
+        <div2 n="6" type="scene" xml:id="V06">
+          <head>SCÈNE VI. César, Epaphrodite, Agripe.<listPerson type="configuration" xml:id="conf29">
+            <person corresp="#CESAR"/>
+            <person corresp="#AGRIPE"/>
+            <person corresp="#EPAPHRODITE"/></listPerson></head>
+          <sp who="CESAR" xml:id="V06-1">
             <speaker>CÉSAR, à Epaphrodite.</speaker>
             <l n="1755" xml:id="l1755">Courez y promptement, qu’est-ce qui vous retarde ?</l>
             <l n="1756" xml:id="l1756">Voyez ce qu’elle fait, et renforcez sa garde,</l>
@@ -2656,7 +2723,7 @@
             <l n="1769" xml:id="l1769">On ne croirait jamais ce que mon bras a fait,</l>
             <l n="1770" xml:id="l1770">Et l’on pourrait douter qu’Antoine fut défait.</l>
           </sp>
-          <sp xml:id="V06-2" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V06-2">
             <speaker>AGRIPE.</speaker>
             <l n="1771" xml:id="l1771">Vous pensez qu’une femme est faible, et ne peut nuire,</l>
             <note type="L">Déjanire : Fille d’OEnée, roi de Calydon, en Étolie, fut épousée par Hercule qui en eu Hyllus. [B]</note>
@@ -2664,7 +2731,7 @@
             <l n="1773" xml:id="l1773">Le pouvoir de ce sexe est par tout reconnu,</l>
             <l n="1774" xml:id="l1774">Car, mais Epaphrodite est bien tôt revenu.</l>
           </sp>
-          <sp xml:id="V06-3" who="EPAPHRODITE">
+          <sp who="EPAPHRODITE" xml:id="V06-3">
             <speaker>EPAPHRODITE.</speaker>
             <l n="1775" xml:id="l1775">Accourez, ô César ! Tout le monde est en peine,</l>
             <l n="1776" xml:id="l1776">On ne saurait ni voir, ni parler à la reine,</l>
@@ -2673,18 +2740,19 @@
             <l n="1779" xml:id="l1779">L’on n’y saurait entrer qu’on n’en rompe la porte,</l>
             <l n="1780" xml:id="l1780">Et nous n’oserions pas en user de la sorte,</l>
             <l n="1781" xml:id="l1781">Craignant de profaner par ce peu de respect</l>
-            <l n="1782" xml:id="l1782" part="I">La majesté du lieu.</l>
+            <l n="1782" part="I" xml:id="l1782">La majesté du lieu.</l>
           </sp>
-          <sp xml:id="V06-4" who="CESAR">
+          <sp who="CESAR" xml:id="V06-4">
             <speaker>CÉSAR.</speaker>
             <l part="F">Tout ceci m’est suspect,</l>
             <l n="1783" xml:id="l1783">Allons tout de ce pas contenter notre envie,</l>
             <l n="1784" xml:id="l1784">Et regretter sa mort, ou conserver sa vie.</l>
           </sp>
         </div2>
-        <div2 xml:id="V07" type="scene" n="7">
-          <head>SCÈNE VII.<listPerson type="configuration" xml:id="conf30"><person corresp="#CHARMION"/></listPerson></head>
-          <sp xml:id="V07-1" who="CHARMION">
+        <div2 n="7" type="scene" xml:id="V07">
+          <head>SCÈNE VII.<listPerson type="configuration" xml:id="conf30">
+            <person corresp="#CHARMION"/></listPerson></head>
+          <sp who="CHARMION" xml:id="V07-1">
             <speaker>CHARMION.</speaker>
             <stage type="[N/A]">On tire un rideau, et Cléopâtre parée, est sur un beau lit, Eras à ses pieds.</stage>
             <l n="1785" xml:id="l1785">Enfin j’aurai le bien qu’elles ont obtenu,</l>
@@ -2714,9 +2782,12 @@
             <l n="1806" xml:id="l1806">N’importe, on ne peut plus m’empêcher de mourir.</l>
           </sp>
         </div2>
-        <div2 xml:id="V08" type="scene" n="8">
-          <head>SCÈNE VIII et DERNIÈRE. César, Agripe, Charmion.<listPerson type="configuration" xml:id="conf31"><person corresp="#CESAR"/><person corresp="#CHARMION"/><person corresp="#AGRIPE"/></listPerson></head>
-          <sp xml:id="V08-1" who="CESAR">
+        <div2 n="8" type="scene" xml:id="V08">
+          <head>SCÈNE VIII et DERNIÈRE. César, Agripe, Charmion.<listPerson type="configuration" xml:id="conf31">
+            <person corresp="#CESAR"/>
+            <person corresp="#CHARMION"/>
+            <person corresp="#AGRIPE"/></listPerson></head>
+          <sp who="CESAR" xml:id="V08-1">
             <speaker>CÉSAR entrant dans la chambre, et voyant Cléopâtre morte.</speaker>
             <l n="1807" xml:id="l1807">Dort-elle, ou si la parque a fini sa misère ?</l>
             <l n="1808" xml:id="l1808">Je ne puis discerner la soeur d’avec le frère,</l>
@@ -2727,11 +2798,11 @@
             <l n="1812" xml:id="l1812">Faut-il prêter main forte à ce projet infâme ?</l>
             <l n="1813" xml:id="l1813">Pourquoi n’empêchiez-vous qu’il fut exécuté.</l>
           </sp>
-          <sp xml:id="V08-2" who="CHARMION">
+          <sp who="CHARMION" xml:id="V08-2">
             <speaker>CHARMION tombant morte.</speaker>
             <l n="1814" xml:id="l1814">Il est digne de nous, et de sa majesté.</l>
           </sp>
-          <sp xml:id="V08-3" who="CESAR">
+          <sp who="CESAR" xml:id="V08-3">
             <speaker>CÉSAR.</speaker>
             <l n="1815" xml:id="l1815">La superbe réponse ! Elle tombe expirée,</l>
             <l n="1816" xml:id="l1816">Ô généreuse fille ! ô chose inespérée !</l>
@@ -2746,22 +2817,22 @@
             <l n="1825" xml:id="l1825">Je refuse l’honneur que vous me décernés,</l>
             <l n="1826" xml:id="l1826">Et vous me faites tort si vous me couronnez.</l>
           </sp>
-          <sp xml:id="V08-4" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V08-4">
             <speaker>AGRIPE.</speaker>
             <l n="1827" xml:id="l1827">Permettez que votre âme ait des transports contraires ?</l>
             <l n="1828" xml:id="l1828">Et quoi des ennemis sont-ils si nécessaires ?</l>
             <l n="1829" xml:id="l1829">Rome sera contente, et ravie en son coeur</l>
             <l n="1830" xml:id="l1830">Du tableau des vaincus, et du front du vainqueur,</l>
-            <l n="1831" xml:id="l1831" part="I">C’est ce qu’elle demande.</l>
+            <l n="1831" part="I" xml:id="l1831">C’est ce qu’elle demande.</l>
           </sp>
-          <sp xml:id="V08-5" who="CESAR">
+          <sp who="CESAR" xml:id="V08-5">
             <speaker>CÉSAR.</speaker>
             <l part="F">Ô la noble aventure !</l>
             <l n="1832" xml:id="l1832">Que vainqueur en effet je triomphe en peinture,</l>
             <l n="1833" xml:id="l1833">J’eusse été glorieux si la reine eut vécu,</l>
             <l n="1834" xml:id="l1834">Mais les romains diront, il dit qu’il a vaincu.</l>
           </sp>
-          <sp xml:id="V08-6" who="AGRIPE">
+          <sp who="AGRIPE" xml:id="V08-6">
             <speaker>AGRIPE.</speaker>
             <l n="1835" xml:id="l1835">Souffrez cet accident, votre honneur n’eut pu croître,</l>
             <l n="1836" xml:id="l1836">Vos ennemis sont morts, vous demeurez le maître,</l>
@@ -2770,7 +2841,7 @@
             <l n="1839" xml:id="l1839">Et de voir élevé si haut l’aigle de Rome,</l>
             <l n="1840" xml:id="l1840">Quoi qu’il ne soit posé que sur le front d’un homme.</l>
           </sp>
-          <sp xml:id="V08-7" who="CESAR">
+          <sp who="CESAR" xml:id="V08-7">
             <speaker>CÉSAR.</speaker>
             <l n="1841" xml:id="l1841">Je sais bien que ma gloire est en son plus haut point,</l>
             <l n="1842" xml:id="l1842">Mais ce bel ornement y devait être joint :</l>
