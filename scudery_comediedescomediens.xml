@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://oeuvres.github.io/Teinte/teinte.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>La Comédie des comédiens</title>
         <title type="sub">, comédie</title>
-        <author born="1601" born_location="Le Havre" death="1667" death_location="Paris" academie="1649">
+        <author academie="1649" born="1601" born_location="Le Havre" death="1667" death_location="Paris">
           <surname>Scudéry</surname>
           <forename> Georges de</forename>
         </author>
@@ -41,7 +42,7 @@
       </langUsage>
       <textClass>
         <keywords>
-          <term type="genre" subtype="comedy">Comédie</term>
+          <term subtype="comedy" type="genre">Comédie</term>
         </keywords>
       </textClass>
     </profileDesc>
@@ -54,19 +55,19 @@
           <titlePart type="sub">POÈME DE NOUVELLE INVENTION.</titlePart>
         </docTitle>
         <docDate value="1635">M. DC. XXXV. AVEC PRIVILÈGE DU ROI.</docDate>
-        <docAuthor id="SCUDERY, Georges de" bio="scudery">par Monsieur de Scudéry</docAuthor>
+        <docAuthor bio="scudery" id="SCUDERY, Georges de">par Monsieur de Scudéry</docAuthor>
         <docImprint>
           <privilege id="20/04/1635">
-          <head>Extrait du Privilège du Roi.</head>
-          <p>Par grâce et privilège du Roi, donné à Paris, en date du 20 Avril 1635. II est permis à Augustin Courbé marchant libraire à Paris, d’imprimer vendre et distribuer "La Comédie des Comédìens" poème de nouvelle invention, par Mr. de Scudéry, et défenses font faites à tous autres imprimeurs et autres personnes de quelque qualité et condition qu’ils soient, d’imprimer vendre ni distribuer dudit livre d’autre impression que celle qu’il aura fait ou fait faire le dit Courbé ou autre ayant droit de lui, et ce pendant le temps de sept ans à peine aux contrevenants de mille livres d’amende et de confiscation de tous les exemplaire imprimés, ainsi qu’il est porté plus amplement par les dites Lettres de privilège par le Roi et son Conseil. </p>
-          <signed>Signe CONRART.</signed>
-        </privilege>
+            <head>Extrait du Privilège du Roi.</head>
+            <p>Par grâce et privilège du Roi, donné à Paris, en date du 20 Avril 1635. II est permis à Augustin Courbé marchant libraire à Paris, d’imprimer vendre et distribuer "La Comédie des Comédìens" poème de nouvelle invention, par Mr. de Scudéry, et défenses font faites à tous autres imprimeurs et autres personnes de quelque qualité et condition qu’ils soient, d’imprimer vendre ni distribuer dudit livre d’autre impression que celle qu’il aura fait ou fait faire le dit Courbé ou autre ayant droit de lui, et ce pendant le temps de sept ans à peine aux contrevenants de mille livres d’amende et de confiscation de tous les exemplaire imprimés, ainsi qu’il est porté plus amplement par les dites Lettres de privilège par le Roi et son Conseil. </p>
+            <signed>Signe CONRART.</signed>
+          </privilege>
           <acheveImprime id="01/09/1635"/>
           <printer id="Augustin Courbé">À Paris, Chez Augustin COURBÉ, imprimeur et libraire de Monseigneur Frère du Roi, dans la petite salle du Palais, à la Palme.</printer>
         </docImprint>
         <performance>
-        <premiere date="1634-11" location="Hôtel de Bourgogne">Représenté pour le première fois en novembre 1634 au Théâtre de l’Hôtel de Bourgogne.</premiere>
-      </performance>
+          <premiere date="1634-11" location="Hôtel de Bourgogne">Représenté pour le première fois en novembre 1634 au Théâtre de l’Hôtel de Bourgogne.</premiere>
+        </performance>
       </titlePage>
       <div type="dedication">
         <salute>À MONSIEUR, MONSIEUR LE MARQUIS DE COALIN, COLONEL GÉNÉRAL DES SUISSES.</salute>
@@ -81,27 +82,27 @@
       <div xml:id="castList">
         <castList>
           <head>ACTEURS</head>
-          <castItem><role xml:id="BELLEOMBRE" rend="male">BELLE-OMBRE</role>.</castItem>
-          <castItem><role xml:id="ARLEQUIN" rend="male">ARLEQUIN</role>.</castItem>
-          <castItem><role xml:id="LETAMBOUR" rend="male">LE TAMBOUR</role>.</castItem>
-          <castItem><role xml:id="BELLEFLEUR" rend="male">BELLE-FLEUR</role>.</castItem>
-          <castItem><role xml:id="BELLEEPINE" rend="male">BELLE-ÉPINE</role>.</castItem>
-          <castItem><role xml:id="LAFEMMEDEBELLEEPINE" rend="female">LA FEMME DE BELLE-ÉPINE</role>.</castItem>
-          <castItem><role xml:id="BEAUSEJOUR" rend="male">BEAU-SÉJOUR</role>.</castItem>
-          <castItem><role xml:id="BEAUSOLEIL" rend="male">BEAU-SOLEIL</role>.</castItem>
-          <castItem><role xml:id="LAFEMMEDEBEAUSOLEIL" rend="female">LA FEMME DE BEAU-SOLEIL</role>.</castItem>
-          <castItem><role xml:id="MONSIEURDEBLANDIMAR" rend="male">MONSIEUR DE BLANDIMAR</role>.</castItem>
-          <castItem><role xml:id="SONHOTE" rend="male">SON HÔTE</role>.</castItem>
+          <castItem><role rend="male" xml:id="BELLEOMBRE">BELLE-OMBRE</role>.</castItem>
+          <castItem><role rend="male" xml:id="ARLEQUIN">ARLEQUIN</role>.</castItem>
+          <castItem><role rend="male" xml:id="LETAMBOUR">LE TAMBOUR</role>.</castItem>
+          <castItem><role rend="male" xml:id="BELLEFLEUR">BELLE-FLEUR</role>.</castItem>
+          <castItem><role rend="male" xml:id="BELLEEPINE">BELLE-ÉPINE</role>.</castItem>
+          <castItem><role rend="female" xml:id="LAFEMMEDEBELLEEPINE">LA FEMME DE BELLE-ÉPINE</role>.</castItem>
+          <castItem><role rend="male" xml:id="BEAUSEJOUR">BEAU-SÉJOUR</role>.</castItem>
+          <castItem><role rend="male" xml:id="BEAUSOLEIL">BEAU-SOLEIL</role>.</castItem>
+          <castItem><role rend="female" xml:id="LAFEMMEDEBEAUSOLEIL">LA FEMME DE BEAU-SOLEIL</role>.</castItem>
+          <castItem><role rend="male" xml:id="MONSIEURDEBLANDIMARE">MONSIEUR DE BLANDIMAR</role>.</castItem>
+          <castItem><role rend="male" xml:id="SONHOTE">SON HÔTE</role>.</castItem>
         </castList>
-        <set location="Lyon" country="France" periode="XVIIème" link=""/>
+        <set country="France" link="" location="Lyon" periode="XVIIème"/>
       </div>
     </front>
     <body>
-      <div1 xml:id="I" type="prologue" n="1">
+      <div1 n="1" type="prologue" xml:id="I">
         <head>PROLOGUE</head>
-        <div2 xml:id="I01" type="scene" n="1">
+        <div2 n="1" type="scene" xml:id="I01">
           <head/>
-          <sp xml:id="I01-1" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="I01-1">
             <speaker>[MONSIEUR DE BLANDIMARE]</speaker>
             <note type="L">Mondory : Guillaume Desgilbert, commédien (1594-1653), interpète Mairet, Scudéry, Corneille, Rotrou ; il teint le rôle de Rodrique à la première du Cid de Corneille</note>
             <p>
@@ -113,11 +114,12 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="II" type="act" n="1">
+      <div1 n="1" type="act" xml:id="II">
         <head>ACTE I</head>
-        <div2 xml:id="II01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf1"><person corresp="#BELLEOMBRE"/></listPerson></head>
-          <sp xml:id="II01-1" who="BELLEOMBRE">
+        <div2 n="1" type="scene" xml:id="II01">
+          <head>SCÈNE PREMIÈRE.<listPerson type="configuration" xml:id="conf1">
+            <person corresp="#BELLEOMBRE"/></listPerson></head>
+          <sp who="BELLEOMBRE" xml:id="II01-1">
             <speaker>BELLE OMBRE.</speaker>
             <p>
               <s>Je meure s’il n’est vrai que tout ce qui reluit n’est pas or : et que les belles apparences sont le plus souvent trompeuses, avant qu’avoir goûté la forme de vie que je mène, je me l’imaginais la plus agréable de toutes : et je croyais indubitablement la comédie aussi plaisante à faire, qu’à voir : mais l’expérience m’a contraint de changer d’opinion : et certes il faudrait que j’eusse le goût bien malade, pour ne savoir pas faire la différence de ces deux choses, puisque l’une commence, continue, et finit avec plaisir, et que l’autre au contraire, est suivie de mille incommodités. </s>
@@ -126,9 +128,11 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="II02" type="scene" n="2">
-          <head>SCÈNE II. Arlequin, Le Tambour/<listPerson type="configuration" xml:id="conf2"><person corresp="#ARLEQUIN"/><person corresp="#LETAMBOUR"/></listPerson></head>
-          <sp xml:id="II02-1" who="ARLEQUIN">
+        <div2 n="2" type="scene" xml:id="II02">
+          <head>SCÈNE II. Arlequin, Le Tambour/<listPerson type="configuration" xml:id="conf2">
+            <person corresp="#ARLEQUIN"/>
+            <person corresp="#LETAMBOUR"/></listPerson></head>
+          <sp who="ARLEQUIN" xml:id="II02-1">
             <speaker>ARLEQUIN.</speaker>
             <p>
               <s>Nous pouvons bien bander notre caisse, et notre tambour débander la sienne : car désormais je ne vois point d’apparence que nous fassions rien ici, il n’est grande ni petite rue, que nous n’ayons visitée quatre fois, avec plus de soin, que si nous eussions eu ordre du Magistrat de faire la patrouille : mais le tout inutilement, et puissai-je ne souper d’aujourd’hui, à voir le peu d’émotion que ma présence leur apporte, si l’on ne dirait que je suis bourgeois comme eux, ou qu’ils font tous arlequins comme moi. </s>
@@ -136,27 +140,36 @@
             </p>
           </sp>
         </div2>
-        <div2 xml:id="II03" type="scene" n="3">
-          <head>SCÈNE III. Tous LES COMÉDIENS;<listPerson type="configuration" xml:id="conf3"><person corresp="#BELLEFLEUR"/><person corresp="#ARLEQUIN"/><person corresp="#BELLEEPINE"/><person corresp="#BEAUSEJOUR"/><person corresp="#MADAMEBELLEEPINE"/><person corresp="#BEAUSOLEIL"/><person corresp="#LABELLEEPINE"/><person corresp="#MADAMEBEAUSOLEIL"/><person corresp="#BELLEOMBRE"/></listPerson></head>
-          <sp xml:id="II03-1" who="BELLEFLEUR">
+        <div2 n="3" type="scene" xml:id="II03">
+          <head>SCÈNE III. Tous LES COMÉDIENS;<listPerson type="configuration" xml:id="conf3">
+            <person corresp="#BELLEFLEUR"/>
+            <person corresp="#ARLEQUIN"/>
+            <person corresp="#BELLEEPINE"/>
+            <person corresp="#BEAUSEJOUR"/>
+            <person corresp="#MADAMEBELLEEPINE"/>
+            <person corresp="#BEAUSOLEIL"/>
+            <person corresp="#LABELLEEPINE"/>
+            <person corresp="#MADAMEBEAUSOLEIL"/>
+            <person corresp="#BELLEOMBRE"/></listPerson></head>
+          <sp who="BELLEFLEUR" xml:id="II03-1">
             <speaker>BELLE FLEUR.</speaker>
             <p>
               <s>Ha, ha, te voilà sur l’histoire, à ce que j’entends.</s>
             </p>
           </sp>
-          <sp xml:id="II03-2" who="ARLEQUIN">
+          <sp who="ARLEQUIN" xml:id="II03-2">
             <speaker>ARLEQUIN.</speaker>
             <p>
               <s>Oui ; et plus véritable à mon grand regret, que celle de Pline, qui rapporte ce que je viens de dire : car il est indubitable, que nous ne gagnerons rien ici.</s>
             </p>
           </sp>
-          <sp xml:id="II03-3" who="BELLEEPINE">
+          <sp who="BELLEEPINE" xml:id="II03-3">
             <speaker>BELLE ÉPINE.</speaker>
             <p>
               <s>Voilà les plus mauvaises nouvelles que tu nous pouvais apprendre : il est vrai qu’elles ne me surprennent point, car je les avais bien prévues. </s>
             </p>
           </sp>
-          <sp xml:id="II03-4" who="BEAUSEJOUR">
+          <sp who="BEAUSEJOUR" xml:id="II03-4">
             <speaker>BEAU SÉJOUR.</speaker>
             <note type="L">Nostradamus : astrologue né en 1503, à Saint-Rémi-en-Provence, d’une famille juive, mort en 1566, étudia la médecine à Montpellier, s’établit à Salon, où il ne tarda à se faire une grande réputation comme médecin. Il combattit les épidémies à Aix et Lyon mais fut obligé de s’éloigner à cause de la jalousie de ses confrères. Dans sa retraite, il s’imagina être doué du don de prophétie et publia sous le titre de Centuries un recueil de prédictions qui obtint le plus grand succès.</note>
             <note type="L">Cassandre : fille de Priam et d’Hécube. Apollon amoureux de cette princesse, lui avait permis de lui demander tout ce qu’elle voudrait pour le prix de sa complaisance : elle le pria de lui accorder le don de prophétie ; mais lorsqu’Applon eut rempli sa promesse, elle refuse de tenir sa parole, et le dieu, ne pouvant lui ôter le don de prédire, empêcha que ses prédictions fussent jamais crues. [B]</note>
@@ -164,37 +177,37 @@
               <s>Voici un de ces prophètes, qui prédisent les choses arrivées : et Tiercelet de Nostradamus, si vous prévoyez le malheur de la troupe que ne l’en avertissiez vous ?</s>
             </p>
           </sp>
-          <sp xml:id="II03-5" who="MADAMEBELLEEPINE">
+          <sp who="MADAMEBELLEEPINE" xml:id="II03-5">
             <speaker>LA BELLE-ÉPINE.</speaker>
             <p>
               <s>Ce qui m’en empêcha, fut que je connaissais que j’ai parmi vous autres le malheur de Cassandre, qui bien que toujours véritable, ne fut pourtant jamais crue : mais vous pourriez bien avoir la punition des Troyens, il est vrai que j’y aurai ma part comme elle.</s>
             </p>
           </sp>
-          <sp xml:id="II03-6" who="BEAUSOLEIL">
+          <sp who="BEAUSOLEIL" xml:id="II03-6">
             <speaker>BEAU SOLEIL.</speaker>
             <p>
               <s>Voilà à mon avis, le plus grand nombre de tes humanités, et de tes fleurs de rhétorique étalé, et pour peu qu’on te pressât encore, tu serais contraint de recourir, à l’éloquence de ton pays, c’est à dire aux phrases périgourdines.</s>
             </p>
           </sp>
-          <sp xml:id="II03-7" who="LABELLEEPINE">
+          <sp who="LABELLEEPINE" xml:id="II03-7">
             <speaker>BELLE ÉPINE.</speaker>
             <p>
               <s>Monsieur de Beau-Soleil, si mon mari n’a pas la langue si bien pendue que vous, il a d’autres parties en lui, qui le rendent recommandable.</s>
             </p>
           </sp>
-          <sp xml:id="II03-8" who="MADAMEBEAUSOLEIL">
+          <sp who="MADAMEBEAUSOLEIL" xml:id="II03-8">
             <speaker>LA BEAU SOLEIL.</speaker>
             <p>
               <s>Nous le devons croire puisque vous le dites, Mademoiselle de Belle Épine, car il n’en a point de si cachées, dont vous ne puissiez parler comme savante.</s>
             </p>
           </sp>
-          <sp xml:id="II03-9" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II03-9">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>La repartie n’est pas mauvaise, mais elle me semble un peu bien libre pour une femme.</s>
             </p>
           </sp>
-          <sp xml:id="II03-10" who="MADAMEBEAUSOLEIL">
+          <sp who="MADAMEBEAUSOLEIL" xml:id="II03-10">
             <speaker>LA BEAU SOLEIL.</speaker>
             <note type="L">Lanturlu : mot dont on se sert pour se moquer de ce qu’on dit. C’est aussi une sorte de vaudeville, fait du temps du Cardinal de Richelieu. [F]</note>
             <p>
@@ -202,22 +215,25 @@
               <s>Le troisième prenant un ton plus haut, et trop fort pour son haleine, s’engage inconsidérément, à la censure des poèmes, que nous aurons représentés : l’un sera trop ennuyeux pour sa longueur, l’autre manque de jugement en sa conduite, celui-là est plat et trop stérile en pensées, celui-là au contraire à force d’en avoir s’embarrasse, et parle Galimatias ; un est défectueux en ce qu’il ne s’attache pas aux règles des anciens, ce qui témoigne ion ignorance ; l’autre pour les avoir trop religieusement observées, est froid, et presque du tout sans action ; celui-ci ne lie pas son discours, et fait des fautes au langage, celui-là n’a pas la politesse de la Cour ; l’un manque des ornements de la poésie ; l’autre est trop abondant en fables; ce qui sent plus le pédant que l’honnête homme, et plus l’huile que l’ambre gris ; enfin, il n’en échappe pas à la langue de ce critique, qui faisant ainsi le procès à tant de bons esprits, sans les ouïr en leurs défenses, montre qu’il est aussi mauvais juge en matière de vers, que le font en la connaissance de l’honnêteté des femmes, ceux qui nous soupçonnent d’en manquer.</s>
             </p>
           </sp>
-          <sp xml:id="II03-11" who="BELLEFLEUR">
+          <sp who="BELLEFLEUR" xml:id="II03-11">
             <speaker>BELLE-FLEUR.</speaker>
             <p>
               <s>Je meure si elle n’habille ses raisons de bonne grâce ; et bien que cinq heures aient sonné, depuis qu’elle parle, je m’étais résolu de ne l’interrompre point ; mais puisqu’une femme a pu s’imposer silence elle-même, faisons en autant, et, rentrons ; et bien que nous ayons accoutumé ailleurs d’avoir achevé à cette heure, ne laisse pas Belle-Ombre, de te tenir encore quelque temps à la porte ; car peut-être, ce que nous jugeons stupidité, ne se trouvera que paresse, et le bien ne vient jamais tard, quand il arrive.</s>
             </p>
           </sp>
-          <sp xml:id="II03-12" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II03-12">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>Si nous repaissons de cette espérance seule, nous avons la mine de ne souper que de vent.</s>
             </p>
           </sp>
         </div2>
-        <div2 xml:id="II04" type="scene" n="4">
-          <head>SCÈNE IV. Monsieur de Blandimare, L’Hôte,<listPerson type="configuration" xml:id="conf4"><person corresp="#MONSIEURDEBLANDIMARE"/><person corresp="#LHOTE"/><person corresp="#MONSIEURDEBLANDIMAR"/></listPerson></head>
-          <sp xml:id="II04-1" who="MONSIEURDEBLANDIMARE">
+        <div2 n="4" type="scene" xml:id="II04">
+          <head>SCÈNE IV. Monsieur de Blandimare, L’Hôte,<listPerson type="configuration" xml:id="conf4">
+            <person corresp="#MONSIEURDEBLANDIMARE"/>
+            <person corresp="#LHOTE"/>
+            <person corresp="#MONSIEURDEBLANDIMAR"/></listPerson></head>
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II04-1">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Il faut avouer, que la jeunesse et la prudence, ne se trouvent que bien rarement ensemble, comme en cet âge bouillant, le corps est rempli de force, l’esprit l’est d’inconsidération. </s>
@@ -226,34 +242,37 @@
               <s>Les Lettres où nous le destinions, lui ont semblé une occupation trop basse, et trop endormie, pour sa vivacité, il a voulu porter les armes, et le faisant, a couru toute l’Europe : et certes comme ce métier n’était pas indigne de sa naissance, nous supportions son erreur, mais lorsque nous pensions qu’il dût faire sa retraite, il est reparti de nouveau, sans que nous ayons pu découvrir sa route, et mon frère m’ayant supplié en mourant, d’avoir foin d’en faire la recherche, il n’est forme de vie où la débauche puisse réduire un jeune homme, dans laquelle je n’ai tâché de le rencontrer : mais tout inutilement, de sorte qu’ennuyé d’un si long voyage, enfin me voici dans Lyon, mais si las, qu’il ne m’est pas possible d’en partir de deux ou trois jours, pour revoir après notre ville, la plus belle du monde, Paris.</s>
             </p>
           </sp>
-          <sp xml:id="II04-2" who="LHOTE">
+          <sp who="LHOTE" xml:id="II04-2">
             <speaker>L’HÔTE.</speaker>
             <p>
               <s>Monsieur, je suis marri que vos peines n’ont été plus fructueuses ; mais il faut s’armer de patience, et vous divertir. Les affiches que vous voyez à ce coin, vous montrent qu’il y a des comédies en cette ville, et le jeu de Paume où ils représentent, n’est qu’à trois pas d’ici, vous ferez bien d’y aller prendre votre part du passe-temps.</s>
             </p>
           </sp>
-          <sp xml:id="II04-3" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II04-3">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Quoi que je n’aie pas grande envie de rire je suivrai pourtant votre conseil, et je m’y en vais.</s>
             </p>
           </sp>
-          <sp xml:id="II04-4" who="LHOTE">
+          <sp who="LHOTE" xml:id="II04-4">
             <speaker>L’HÔTE</speaker>
             <p>
               <s>Et moi vous faire à souper pour le retour.</s>
             </p>
           </sp>
         </div2>
-        <div2 xml:id="II05" type="scene" n="5">
-          <head>SCÈNE V. Belle-Ombre, Monsieur de Blandimare.<listPerson type="configuration" xml:id="conf5"><person corresp="#BELLEOMBRE"/><person corresp="#MONSIEURDEBLANDIMARE"/><person corresp="#MONSIEURDEBLANDIMAR"/></listPerson></head>
-          <sp xml:id="II05-1" who="BELLEOMBRE">
+        <div2 n="5" type="scene" xml:id="II05">
+          <head>SCÈNE V. Belle-Ombre, Monsieur de Blandimare.<listPerson type="configuration" xml:id="conf5">
+            <person corresp="#BELLEOMBRE"/>
+            <person corresp="#MONSIEURDEBLANDIMARE"/>
+            <person corresp="#MONSIEURDEBLANDIMAR"/></listPerson></head>
+          <sp who="BELLEOMBRE" xml:id="II05-1">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>Je crois que toute la ville est en dévotion aujourd’hui, et qu’on leur a ordonné pour se mortifier, de ne venir point à la comédie : enfin la patience m’échappe ; mais silence, voici un oiseau qui a la mine de se venir jeter dans nos filets peut-être comme les canards, les autres feront le même à son exemple.</s>
             </p>
           </sp>
-          <sp xml:id="II05-2" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II05-2">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <stage type="read">Il lit l’affiche.</stage>
             <p>
@@ -261,26 +280,26 @@
               <s>Ho cela s’entend sans le dire, cette qualité, et celle de Gentilhomme ordinaire de la Chambre, sont à bon marché maintenant ; mais aussi les gages n’en sont pas grands ; que prend-on ?</s>
             </p>
           </sp>
-          <sp xml:id="II05-3" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II05-3">
             <speaker>BELLE-OMBRE.</speaker>
             <note>Sol : pièce de menue monnaie qui vaut douze deniers.</note>
             <p>
               <s>Huit sols.</s>
             </p>
           </sp>
-          <sp xml:id="II05-4" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II05-4">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Commencera-ton bientôt ?</s>
             </p>
           </sp>
-          <sp xml:id="II05-5" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II05-5">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>Oui Monsieur, on s’y en va; toute la compagnie est dans un jeu de Paume voisin, et comme elle viendra tout à coup entrez, et retenez place de bonne heure.</s>
             </p>
           </sp>
-          <sp xml:id="II05-6" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II05-6">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Ô Dieu, qu’est-ce que je vois ? </s>
@@ -288,13 +307,13 @@
               <s>Es-tu mon neveu, ou quelque Démon sous fa forme ?</s>
             </p>
           </sp>
-          <sp xml:id="II05-7" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II05-7">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>Mon oncle je vous demande pardon, encore que j’ai peine à croire, que ce que je fais soit une faute.</s>
             </p>
           </sp>
-          <sp xml:id="II05-8" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II05-8">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <note>Les Métamorphoses d’Ovide est un ouvrage de grand renom qui décrit les aventures des Dieux et héros antiques.</note>
             <p>
@@ -302,25 +321,25 @@
               <s>Ha certes voilà une belle métamorphose, bien quelle ne soit pas dans Ovide, qui d’un Gentilhomme de bonne maison, a fait en toi un voleur.</s>
             </p>
           </sp>
-          <sp xml:id="II05-9" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II05-9">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>Ha mon oncle, Dieu me damne si je le suis.</s>
             </p>
           </sp>
-          <sp xml:id="II05-10" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II05-10">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Ô mon ami ne jure point une chose qu’on ne peut croire ; les portiers ne sont pas reçus à se purger par serment sur ce sujet l’occasion est trop belle, la tentation de l’argent trop puissante, et le larcin de cette nature, trop difficile à prouver ; en un mot, le titre de voleur est une qualité annexée à celle de portier de comédie : et un homme fidèle de cette profession, est comme la pierre philosophale, le mouvement perpétuel, ou la quadrature du cercle ; c’est à dire, une chose possible et non trouvée.</s>
             </p>
           </sp>
-          <sp xml:id="II05-11" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II05-11">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>Mais mon oncle, est-on blâmable pour être comédien ?</s>
             </p>
           </sp>
-          <sp xml:id="II05-12" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="II05-12">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <note type="L">Pomme de pin : cabaret parisien est vis à vis de l’église de la Madeleine, près du pont Notre-Dame. [note Oeuvres de Boileau, 1747, Tome I, Satire IV, p.57]</note>
             <p>
@@ -328,7 +347,7 @@
               <s>Mais ce que je veux que tu fasses, est que tu te souviennes, que je loge à la Pomme de Pin, et qu’à ce soir tu m’y conduise toute la troupe, pour venir souper avec moi : peut-être ma conversation ne leur sera pas inutile : Adieu.</s>
             </p>
           </sp>
-          <sp xml:id="II05-13" who="BELLEOMBRE">
+          <sp who="BELLEOMBRE" xml:id="II05-13">
             <speaker>BELLE-OMBRE.</speaker>
             <p>
               <s>Très humble serviteur mon oncle. </s>
@@ -337,37 +356,44 @@
           </sp>
         </div2>
       </div1>
-      <div1 xml:id="III" type="act" n="2">
+      <div1 n="2" type="act" xml:id="III">
         <head>ACTE II</head>
-        <div2 xml:id="III01" type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Monsieur de Blandimare, tous les Comédiens.<listPerson type="configuration" xml:id="conf7"><person corresp="#MONSIEURDEBLANDIMARE"/><person corresp="#MADAMEBEAUSOLEIL"/><person corresp="#BEAUSEJOUR"/><person corresp="#BELLEEPINE"/><person corresp="#BELLEFLEUR"/><person corresp="#BEAUSOLEIL"/><person corresp="#MONSIEURDEBLANDIMAR"/></listPerson></head>
-          <sp xml:id="III01-1" who="MONSIEURDEBLANDIMARE">
+        <div2 n="1" type="scene" xml:id="III01">
+          <head>SCÈNE PREMIÈRE. Monsieur de Blandimare, tous les Comédiens.<listPerson type="configuration" xml:id="conf7">
+            <person corresp="#MONSIEURDEBLANDIMARE"/>
+            <person corresp="#MADAMEBEAUSOLEIL"/>
+            <person corresp="#BEAUSEJOUR"/>
+            <person corresp="#BELLEEPINE"/>
+            <person corresp="#BELLEFLEUR"/>
+            <person corresp="#BEAUSOLEIL"/>
+            <person corresp="#MONSIEURDEBLANDIMAR"/></listPerson></head>
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III01-1">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Qu’on apporte à laver, nous ne faisons plus rien à table. </s>
               <s>ça, donnez moi la main, Mademoiselle de Beau...</s>
             </p>
           </sp>
-          <sp xml:id="III01-2" who="MADAMEBEAUSOLEIL">
+          <sp who="MADAMEBEAUSOLEIL" xml:id="III01-2">
             <speaker>MADAME DE BEAU-SOLEIL.</speaker>
             <p>
               <s>De Beau-soleil, à votre service Monsieur.</s>
             </p>
           </sp>
-          <sp xml:id="III01-3" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III01-3">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>La faute de ma mémoire est fort excusable, car toutes les terres des comédiens, ont tant de rapport aux noms, qu’il est bien difficile qu’on ne les prenne l’un pour l’autre. </s>
               <s>Monsieur de Bellerose, de Belleville, Beauchateau, Belleroche, Beaulieu, Beaupré, Bellefleur, Belle-Épine, Beau-Séjour, Beau-Soleil, Belle-Ombre, en fin, eux seuls possèdent, toutes les beautés de la nature.</s>
             </p>
           </sp>
-          <sp xml:id="III01-4" who="MADAMEBEAUSOLEIL">
+          <sp who="MADAMEBEAUSOLEIL" xml:id="III01-4">
             <speaker>MADAME DE BEAU-SOLEIL.</speaker>
             <p>
               <s>Pour nous punir en quelque façon de la faute que nous avons commise, en recevant Monsieur votre neveu, votre bel esprit a semblé avoir pris a tâche, pendant tout le souper, le mépris de la comédie : mais nous nous en consolons, par la connaissance que nous avons de la bonté de votre jugement, qui fans doute, vous fait avoir dans l’âme, des sentiments de notre profession, tous contraires, à ce que la raillerie, vous met à la bouche sur ce sujet.</s>
             </p>
           </sp>
-          <sp xml:id="III01-5" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III01-5">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Tant s’en faut que je la méprise, que je tiens qu’à moins que d’avoir renoncé au sens commun, il n’est pas possible qu’on ne l’estime quand elle est bien faite mais je vous dirai librement, que j’ai le même goût pour les comédies, que pour les vers, pour les melons, et pour les amis ; c’est à dire, que s’ils ne sont excellents, ils ne valent rien du tout. </s>
@@ -376,38 +402,38 @@
               <s>Or jugez maintenant, si un homme de cette sorte, est beaucoup moins rare que le phoenix ?</s>
             </p>
           </sp>
-          <sp xml:id="III01-6" who="BEAUSEJOUR">
+          <sp who="BEAUSEJOUR" xml:id="III01-6">
             <speaker>BEAU-SÉJOUR.</speaker>
             <p>
               <s>Ce que vous nous venez de dire, est l’idée de la perfection, qui ne se trouve point aux hommes : mais si j’ose bien assurer que notre troupe n’en est pas tant éloignée ; et comme vous savez parfaitement faire le discernement des bonnes et des mauvaises choses, si vous nous aviez vu représenter, peut-être seriez vous de mon avis.</s>
             </p>
           </sp>
-          <sp xml:id="III01-7" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III01-7">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>À dire vrai l’on connaît le Lion par l’ongle : mais les nuits sont longues, et ennuyeuses, quand vous m’aurez fait la faveur d’en employer une demie-heure à réciter des vers devant moi, il nous restera encore assez pour dormir.</s>
             </p>
           </sp>
-          <sp xml:id="III01-8" who="BELLEEPINE">
+          <sp who="BELLEEPINE" xml:id="III01-8">
             <speaker>BELLE-ÉPINE.</speaker>
             <p>
               <s>Vous pouvez tout sur notre obéissance.</s>
             </p>
           </sp>
-          <sp xml:id="III01-9" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III01-9">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Quelles pièces avez-vous ?</s>
             </p>
           </sp>
-          <sp xml:id="III01-10" who="BELLEFLEUR">
+          <sp who="BELLEFLEUR" xml:id="III01-10">
             <speaker>BELLE-FLEUR.</speaker>
             <note type="L">HARDY Alexandre [15??-1630] : auteur célèbre de tragédies sous le règne d’Henri IV. Il aurait écrit plusieurs centaines de pièces mais il n’en est resté qu’une quarantaine. Il est le prédécesseur des Corneille, Rotrou, Scudéry... [B]</note>
             <p>
               <s>Toutes celles de feu Hardy.</s>
             </p>
           </sp>
-          <sp xml:id="III01-11" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III01-11">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Il faut donner cet aveu à la mémoire de cet auteur, qu’il avait un puissant génie, et une veine prodigieusement abondante (comme huit cents poèmes de sa façon en font foi) et certes à lui seul appartient la gloire, d’avoir le premier relevé le théâtre français, tombé depuis tant d’années. </s>
@@ -415,149 +441,158 @@
               <s>Et s’il eut aussi bien travaillé par divertissement, que par nécessité, ses ouvrages auraient sans doute, été inimitables : mais il avait trop de part à la pauvreté de ceux de sa profession, et c’est ce que produit l’ignorance de notre siècle, et le mépris de la vertu.</s>
             </p>
           </sp>
-          <sp xml:id="III01-12" who="BEAUSOLEIL">
+          <sp who="BEAUSOLEIL" xml:id="III01-12">
             <speaker>BEAU-SOLEIL.</speaker>
             <note type="C">"Ligdamon" et "Le Trompeur puni" sont de Scudéry lui-même. "Mélite", "Clitandre" et "La Veuve" sont de Pierre Corneille.</note>
             <p>
               <s>Nous avons encor tout ce jeu imprimé, La Pyrame de Théophile, poème, qui n’est mauvais qu’en ce qu’il a été trop bon : car excepté ceux qui n’ont point de mémoire, il ne se trouve personne qui ne le sache par coeur, de sorte que ses raretés, empêchent qu’il ne soit rare. Nous avons aussi la Sylvie, la Chriseïde, et la Sylvanire, Les Folies de Cardenio, L’infidèle Confidente, et la Philis de Scire, les Bergeries de Monsieur de Racan , Ligdamon, le Trompeur Puni, Mélite, Clitandre, la Veuve, la Bague de l’oubli, et tout ce qu’ont mis en lumière les plus beaux esprits du temps, mais pour maintenant, il suffira que nous vous fassions ouïr une Églogue Pastorale à l’auteur du Trompeur puni, nous l’avons apprise parce qu’elle est bonne, et sans dessein de nous en servir au théâtre, pour lequel elle n’a pas été composée : prenez la peine de l’entendre.</s>
             </p>
           </sp>
-          <sp xml:id="III01-13" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III01-13">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Vous n’avez pas mal choisi, pour rencontrer mon approbation car ce gentilhomme dont vous parlez, est à mon gré un de ceux qui portent une épée, qui s’aide le mieux d’une plume: mais commencez quand il vous plaira.</s>
             </p>
           </sp>
         </div2>
-        <div2 xml:id="III02" type="scene" n="2">
-          <head>EGLOGUE. Tancrède, Iris, Alcidon, Clorice.<listPerson type="configuration" xml:id="conf8"><person corresp="#TANCREDE"/><person corresp="#IRIS"/><person corresp="#CLORICE"/><person corresp="#ALCIDON"/><person corresp="#CLORlCE"/></listPerson></head>
-          <sp xml:id="III02-1" who="TANCREDE">
+        <div2 n="2" type="scene" xml:id="III02">
+          <head>EGLOGUE. Tancrède, Iris, Alcidon, Clorice.<listPerson type="configuration" xml:id="conf8">
+            <person corresp="#TANCREDE"/>
+            <person corresp="#IRIS"/>
+            <person corresp="#CLORICE"/>
+            <person corresp="#ALCIDON"/>
+            <person corresp="#CLORlCE"/></listPerson></head>
+          <sp who="TANCREDE" xml:id="III02-1">
             <speaker>TANCRÈDE.</speaker>
-            <l n="1" xml:id="l1">Que faites cous Iris dans cette forêt sombre</l>
-            <l n="2" xml:id="l2">Où nul soleil que vous n’a jamais pénétré</l>
+            <l>Que faites cous Iris dans cette forêt sombre</l>
+            <l>Où nul soleil que vous n’a jamais pénétré</l>
           </sp>
-          <sp xml:id="III02-2" who="IRIS">
+          <sp who="IRIS" xml:id="III02-2">
             <speaker>IRIS.</speaker>
-            <l n="3" xml:id="l3">J’y cherchais ce qui fuit, c’est à dire de l’ombre,</l>
-            <l n="4" xml:id="l4">Et fuyais seulement ce que j’ai rencontré.</l>
+            <l>J’y cherchais ce qui fuit, c’est à dire de l’ombre,</l>
+            <l>Et fuyais seulement ce que j’ai rencontré.</l>
           </sp>
-          <sp xml:id="III02-3" who="CLORICE">
+          <sp who="CLORICE" xml:id="III02-3">
             <speaker>CLORICE.</speaker>
-            <l n="4" xml:id="l4">Plus parfait que Pâris, cher miracle des hommes,</l>
-            <l n="5" xml:id="l5">Pourquoi haïssez-vous mon visage et mon nom ?</l>
+            <l>Plus parfait que Pâris, cher miracle des hommes,</l>
+            <l>Pourquoi haïssez-vous mon visage et mon nom ?</l>
           </sp>
-          <sp xml:id="III02-4" who="TANCREDE">
+          <sp who="TANCREDE" xml:id="III02-4">
             <speaker>TANCRÈDE.</speaker>
             <note type="L">Pâris : prince troyen qui dut élire la déesse la plus belle en offrant une pomme à la plus belle ; il choisit Vénus.</note>
-            <l n="6" xml:id="l6">Si j’étais ce Troyen, et que j’eusse cent pommes,</l>
-            <l n="7" xml:id="l7">Vous en auriez autant, que Pallas, que Junon.</l>
+            <l>Si j’étais ce Troyen, et que j’eusse cent pommes,</l>
+            <l>Vous en auriez autant, que Pallas, que Junon.</l>
           </sp>
-          <sp xml:id="III02-5" who="ALCIDON">
+          <sp who="ALCIDON" xml:id="III02-5">
             <speaker>ALCIDON.</speaker>
-            <l n="8" xml:id="l8">Reine de mes désirs, tu te vois refusée,</l>
-            <l n="9" xml:id="l9">Et moi qui te chéris, je me vois méprisé.</l>
+            <l>Reine de mes désirs, tu te vois refusée,</l>
+            <l>Et moi qui te chéris, je me vois méprisé.</l>
           </sp>
-          <sp xml:id="III02-6" who="CLORlCE">
+          <sp who="CLORlCE" xml:id="III02-6">
             <speaker>CLORlCE.</speaker>
-            <l n="10" xml:id="l10">Si guérir d’un refus, est chose tant aisée,</l>
-            <l n="11" xml:id="l11">Que ne te guéris-tu, te voyant refuser</l>
+            <l>Si guérir d’un refus, est chose tant aisée,</l>
+            <l>Que ne te guéris-tu, te voyant refuser</l>
           </sp>
-          <sp xml:id="III02-7" who="IRIS">
+          <sp who="IRIS" xml:id="III02-7">
             <speaker>IRIS.</speaker>
-            <l n="12" xml:id="l12">Quitte cher Alcidon, quitte cette farouche</l>
-            <l n="13" xml:id="l13">Qui ne mérite pas de captiver ta foi.</l>
+            <l>Quitte cher Alcidon, quitte cette farouche</l>
+            <l>Qui ne mérite pas de captiver ta foi.</l>
           </sp>
-          <sp xml:id="III02-8" who="ALCIDON">
+          <sp who="ALCIDON" xml:id="III02-8">
             <speaker>ALCIDON.</speaker>
-            <l n="14" xml:id="l14">Veux-tu que la raison se trouve dans ta bouche,</l>
-            <l n="15" xml:id="l15">Ne me parle point d’elle, et dis cela de toi.</l>
+            <l>Veux-tu que la raison se trouve dans ta bouche,</l>
+            <l>Ne me parle point d’elle, et dis cela de toi.</l>
           </sp>
-          <sp xml:id="III02-9" who="TANCREDE">
+          <sp who="TANCREDE" xml:id="III02-9">
             <speaker>TANCRÈDE.</speaker>
-            <l n="16" xml:id="l16">Ha Glaçon animé, tu veux meurtrir Tancrède,</l>
-            <l n="17" xml:id="l17">Ton abord méprisant, en porte la façon.</l>
+            <l>Ha Glaçon animé, tu veux meurtrir Tancrède,</l>
+            <l>Ton abord méprisant, en porte la façon.</l>
           </sp>
-          <sp xml:id="III02-10" who="IRIS">
+          <sp who="IRIS" xml:id="III02-10">
             <speaker>IRIS.</speaker>
             <note type="L">Frede : froide.</note>
-            <l n="18" xml:id="l18">Berger, ne te plains pas de rencontrer frede</l>
-            <l n="19" xml:id="l19">Il faut que je le sois, si je suis un glaçon.</l>
+            <l>Berger, ne te plains pas de rencontrer frede</l>
+            <l>Il faut que je le sois, si je suis un glaçon.</l>
           </sp>
-          <sp xml:id="III02-11" who="CLORICE">
+          <sp who="CLORICE" xml:id="III02-11">
             <speaker>CLORICE.</speaker>
             <note type="C">Air : est noté "aer" dans l’édition originale.</note>
-            <l n="20" xml:id="l20">Las, réponds à ma voix, alors qu’elle t’approche</l>
-            <l n="21" xml:id="l21">Un rocher endurci, ne doit pas craindre l’air,</l>
+            <l>Las, réponds à ma voix, alors qu’elle t’approche</l>
+            <l>Un rocher endurci, ne doit pas craindre l’air,</l>
           </sp>
-          <sp xml:id="III02-12" who="TANCREDE">
+          <sp who="TANCREDE" xml:id="III02-12">
             <speaker>TANCRÈDE.</speaker>
-            <l n="22" xml:id="l22">Discours doncques fort peu car étant une roche</l>
-            <l n="23" xml:id="l23">Après deux ou trois mots, je ne puis pins parler.</l>
+            <l>Discours doncques fort peu car étant une roche</l>
+            <l>Après deux ou trois mots, je ne puis pins parler.</l>
           </sp>
-          <sp xml:id="III02-13" who="ALCIDON">
+          <sp who="ALCIDON" xml:id="III02-13">
             <speaker>ALCIDON.</speaker>
-            <l n="24" xml:id="l24">Puisque tout mes souhaits, ont la raison pour règle</l>
-            <l n="25" xml:id="l25">Permets moi de te voir, bel astre sans parler.</l>
+            <l>Puisque tout mes souhaits, ont la raison pour règle</l>
+            <l>Permets moi de te voir, bel astre sans parler.</l>
           </sp>
-          <sp xml:id="III02-14" who="CLORICE">
+          <sp who="CLORICE" xml:id="III02-14">
             <speaker>CLORICE.</speaker>
-            <l n="26" xml:id="l26">Ferme plutôt les yeux car n’étant point une aigle,</l>
-            <l n="27" xml:id="l27">Je pourrais t’aveugler, si je suis un soleil.</l>
+            <l>Ferme plutôt les yeux car n’étant point une aigle,</l>
+            <l>Je pourrais t’aveugler, si je suis un soleil.</l>
           </sp>
-          <sp xml:id="III02-15" who="IRIS">
+          <sp who="IRIS" xml:id="III02-15">
             <speaker>IRIS.</speaker>
-            <l n="28" xml:id="l28">Ingrat, si tu me fuis, le torrent de mes larmes,</l>
-            <l n="29" xml:id="l29">Te suivra pas à pas, afin de t’abîmer.</l>
+            <l>Ingrat, si tu me fuis, le torrent de mes larmes,</l>
+            <l>Te suivra pas à pas, afin de t’abîmer.</l>
           </sp>
-          <sp xml:id="III02-16" who="ALCIDON">
+          <sp who="ALCIDON" xml:id="III02-16">
             <speaker>ALCIDON.</speaker>
-            <l n="30" xml:id="l30">Cherche ailleurs que dans l’eau, du secours et des armes,</l>
-            <l n="31" xml:id="l31">Car le feu que je sens pourrait tarir la Mer.</l>
+            <l>Cherche ailleurs que dans l’eau, du secours et des armes,</l>
+            <l>Car le feu que je sens pourrait tarir la Mer.</l>
           </sp>
-          <sp xml:id="III02-17" who="TANCREDE">
+          <sp who="TANCREDE" xml:id="III02-17">
             <speaker>TANCRÈDE.</speaker>
-            <l n="32" xml:id="l32">Enfin je ne puis plus souffrir ton arrogance,</l>
-            <l n="33" xml:id="l33">Adieu méchante Iris, qui ma raison surprit.</l>
+            <l>Enfin je ne puis plus souffrir ton arrogance,</l>
+            <l>Adieu méchante Iris, qui ma raison surprit.</l>
           </sp>
-          <sp xml:id="III02-18" who="IRIS">
+          <sp who="IRIS" xml:id="III02-18">
             <speaker>IRIS.</speaker>
-            <l n="34" xml:id="l34">Va, ne me blâme point de cette répugnance,</l>
-            <l n="35" xml:id="l35">Qui vient de mon mérite, et de ton peu d’esprit/</l>
+            <l>Va, ne me blâme point de cette répugnance,</l>
+            <l>Qui vient de mon mérite, et de ton peu d’esprit/</l>
           </sp>
-          <sp xml:id="III02-19" who="CLORICE">
+          <sp who="CLORICE" xml:id="III02-19">
             <speaker>CLORICE.</speaker>
-            <l n="36" xml:id="l36">Enflammé d’un dépit, que tu portes dans l’âme,</l>
-            <l n="37" xml:id="l37">Souffre moi de te suivre, et de te consoler.</l>
+            <l>Enflammé d’un dépit, que tu portes dans l’âme,</l>
+            <l>Souffre moi de te suivre, et de te consoler.</l>
           </sp>
-          <sp xml:id="III02-20" who="TANCREDE">
+          <sp who="TANCREDE" xml:id="III02-20">
             <speaker>TANCRÈDE.</speaker>
-            <l n="38" xml:id="l38">On ne m’approche point, puisque je suis de flamme,</l>
-            <l n="39" xml:id="l39">Ou bien ne te plains plus, si tu te sens brûler.</l>
+            <l>On ne m’approche point, puisque je suis de flamme,</l>
+            <l>Ou bien ne te plains plus, si tu te sens brûler.</l>
           </sp>
-          <sp xml:id="III02-21" who="ALCIDON">
+          <sp who="ALCIDON" xml:id="III02-21">
             <speaker>ALCIDON.</speaker>
-            <l n="40" xml:id="l40">Elle court en pleurant, après un insensible ;</l>
-            <l n="41" xml:id="l41">Arrête ce ruisseau, qui te fera mourir.</l>
+            <l>Elle court en pleurant, après un insensible ;</l>
+            <l>Arrête ce ruisseau, qui te fera mourir.</l>
           </sp>
-          <sp xml:id="III02-22" who="CLORICE">
+          <sp who="CLORICE" xml:id="III02-22">
             <speaker>CLORICE.</speaker>
-            <l n="42" xml:id="l42">Tu demandes Berger, une chose impossible,</l>
-            <l n="43" xml:id="l43">Où vois-tu qu’un ruisseau, puisse être sans courir ?</l>
+            <l>Tu demandes Berger, une chose impossible,</l>
+            <l>Où vois-tu qu’un ruisseau, puisse être sans courir ?</l>
           </sp>
-          <sp xml:id="III02-23" who="IRIS">
+          <sp who="IRIS" xml:id="III02-23">
             <speaker>IRIS.</speaker>
-            <l n="44" xml:id="l44">Ha cruel Alcidon, tu vas fuyant infâme ;</l>
-            <l n="45" xml:id="l45">Mais en vain, je t’aurai d’un cours précipité.</l>
+            <l>Ha cruel Alcidon, tu vas fuyant infâme ;</l>
+            <l>Mais en vain, je t’aurai d’un cours précipité.</l>
           </sp>
-          <sp xml:id="III02-24" who="ALCIDON">
+          <sp who="ALCIDON" xml:id="III02-24">
             <speaker>ALCIDON.</speaker>
-            <l n="46" xml:id="l46">Fâcheuse, tu dis vrai, car étant une femme,</l>
-            <l n="47" xml:id="l47">Rien ne peut s’égaler, à ta légèreté.</l>
+            <l>Fâcheuse, tu dis vrai, car étant une femme,</l>
+            <l>Rien ne peut s’égaler, à ta légèreté.</l>
           </sp>
         </div2>
-        <div2 xml:id="III03" type="scene" n="3">
-          <head>SCÈNE III. <listPerson type="configuration" xml:id="conf9"><person corresp="#MONSIEURDEBLANDIMARE"/><person corresp="#BEAUSOLEIL"/><person corresp="#BELLEEPINE"/><person corresp="#MADAMEBEAUSOLEIL"/></listPerson></head>
-          <sp xml:id="III03-1" who="MONSIEURDEBLANDIMARE">
+        <div2 n="3" type="scene" xml:id="III03">
+          <head>SCÈNE III. <listPerson type="configuration" xml:id="conf9">
+            <person corresp="#MONSIEURDEBLANDIMARE"/>
+            <person corresp="#BEAUSOLEIL"/>
+            <person corresp="#BELLEEPINE"/>
+            <person corresp="#MADAMEBEAUSOLEIL"/></listPerson></head>
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III03-1">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Ha certes il faut avouer que voilà réciter de bonne grâce : et qu’en vous autres, j’ai trouvé ce que je cherchais depuis si longtemps. </s>
@@ -567,25 +602,25 @@
               <s>Non, non tant s’en faut qu’elle me soit en horreur, que voyant comme elle en est son lustre parmi vous, je loue le jugement de mon neveu, de s’être mis en votre Troupe: et pour vous montrer que j’ai ce que je dis, aussi bien dans le coeur, que dans la bouche, et que bien, loin de soupçonner votre profession d’ignominie, je la tiens fort glorieuse ; je la veux embrasser moi-même, si vous me voulez recevoir.</s>
             </p>
           </sp>
-          <sp xml:id="III03-2" who="BEAUSOLEIL">
+          <sp who="BEAUSOLEIL" xml:id="III03-2">
             <speaker>BEAU-SOLEIL.</speaker>
             <p>
               <s>Monsieur, nous acceptons cet honneur avecques joie, et nous en reconnaissons indignes.</s>
             </p>
           </sp>
-          <sp xml:id="III03-3" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III03-3">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Mais n’avez vous point de poème qui n’aie déjà été vu ?</s>
             </p>
           </sp>
-          <sp xml:id="III03-4" who="BEAUSOLEIL">
+          <sp who="BEAUSOLEIL" xml:id="III03-4">
             <speaker>BEAU-SOLEIL.</speaker>
             <p>
               <s>Oui, Monsieur, il nous reste une TRAGI-COMÉDIE PASTORALE, intitulée, L’AMOUR CACHÉ PAR L’AMOUR.</s>
             </p>
           </sp>
-          <sp xml:id="III03-5" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III03-5">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Elle est de ma connaissance, et de la composition de celui dont nous avons parlé, il m’a fait la faveur de me la donner écrite de sa main. </s>
@@ -593,31 +628,31 @@
               <s>Et comme je vous ai dit, que je chéris tout ce qui vient de cet auteur, peu s’en faut, que je ne le sache entier, de sorte, que si vous trouvez bon, j’en jouerai demain un rôle, pour faire mon coup d’essai.</s>
             </p>
           </sp>
-          <sp xml:id="III03-6" who="BELLEEPINE">
+          <sp who="BELLEEPINE" xml:id="III03-6">
             <speaker>BELLE-ÉPINE.</speaker>
             <p>
               <s>C’est à vous d’ordonner tout ce qui vous plaira dans la Troupe : mais craignant de vous apporter de l’importunité, nous allons vous donner le bonsoir.</s>
             </p>
           </sp>
-          <sp xml:id="III03-7" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III03-7">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Je ne vous prie point de coucher ici, parce que vous serez plus commodément chez vous : mais pour ces Demoiselles, à qui le serein pourrait faire mal en s’en allant, je leur offre, et ma chambre, et mon lit s’il leur agrée.</s>
             </p>
           </sp>
-          <sp xml:id="III03-8" who="MADAMEBEAUSOLEIL">
+          <sp who="MADAMEBEAUSOLEIL" xml:id="III03-8">
             <speaker>MADAME BEAU-SOLEIL.</speaker>
             <p>
               <s>Sans accepter cette courtoisie, nous vous en restons obligées, nous doutant bien, que nos maris s’y opposeraient.</s>
             </p>
           </sp>
-          <sp xml:id="III03-9" who="MONSIEURDEBLANDIMARE">
+          <sp who="MONSIEURDEBLANDIMARE" xml:id="III03-9">
             <speaker>MONSIEUR DE BLANDIMARE.</speaker>
             <p>
               <s>Adieu Mesdames, bonsoir Messieurs.</s>
             </p>
           </sp>
-          <sp xml:id="III03-10" who="BEAUSOLEIL">
+          <sp who="BEAUSOLEIL" xml:id="III03-10">
             <speaker>BEAU-SOLEIL.</speaker>
             <p>
               <s>Monsieur nous sommes vos très-humbles serviteurs.</s>
